@@ -32,7 +32,7 @@ jobs:
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add pocasi.txt zpravy.txt
+          git add *.txt
           # Zkusí vytvořit commit. Pokud se nic nezměnilo, nevyhodí chybu.
           git commit -m "Automatická aktualizace dat pro e-paper" || exit 0
           git push

@@ -1,4 +1,7 @@
-Pocasi v Praze
-Teplota: 15°C
-Stav: Polojasno
-Vitr: 5 m/s
+23.03.|15|3|0.0|MRAKY|2
+24.03.|17|3|0.0|MRAKY|3
+25.03.|17|7|0.7|DEST|6
+26.03.|8|4|7.5|DEST|5
+27.03.|6|2|2.1|DEST|5
+28.03.|10|3|0.0|MRAKY|3
+29.03.|9|2|0.0|MRAKY|5

@@ -4,32 +4,34 @@ from datetime import datetime
 from bs4 import BeautifulSoup
 
 # --- FUNKCE PRO VYTĚŽENÍ TEXTU PŘÍMO Z ČLÁNKU ---
-def stahni_text_clanku(url):
+def stahni_text_clanku(url, perex):
     hlavicky = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120.0.0.0 Safari/537.36"}
     try:
         odpoved = requests.get(url, headers=hlavicky, timeout=10)
         soup = BeautifulSoup(odpoved.content, 'html.parser')
         
-        # Najdeme všechny odstavce (tag <p>)
         odstavce = soup.find_all('p')
         obsah = ""
         
         for p in odstavce:
             text = p.get_text().strip()
-            # Vyfiltrujeme krátké nesmysly (jako "Sdílet", "Tisk" atd.)
             if len(text) > 40:
                 obsah += text + "\n"
         
-        # Ořízneme to na 1500 znaků, aby nám to nezbořilo paměť v ESP32
+        # OCHRANA: Pokud nás web zablokoval nebo je text moc krátký, použijeme aspoň shrnutí (perex)
+        if "Enable JavaScript" in obsah or len(obsah) < 100:
+            return perex + "\n\n(Pozn: Celý text web zablokoval)"
+        
+        # Oříznutí kvůli paměti ESP32
         if len(obsah) > 1500:
             obsah = obsah[:1500] + "...\n(Pokracovani na webu)"
             
         return obsah
     except Exception:
-        return "Nepodarilo se nacist text clanku."
+        return perex + "\n\n(Pozn: Chyba při stahování celého textu)"
 
 # --- FUNKCE PRO STAHOVÁNÍ ZPRÁV (RSS) ---
-def stahni_zpravy(rss_url, limit=3): # Taháme jen 3 články, protože teď budou dlouhé
+def stahni_zpravy(rss_url, limit=3):
     hlavicky = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120.0.0.0 Safari/537.36"}
     try:
         odpoved = requests.get(rss_url, headers=hlavicky, timeout=10)
@@ -43,15 +45,24 @@ def stahni_zpravy(rss_url, limit=3): # Taháme jen 3 články, protože teď bud
             return "Zadne clanky nenalezeny."
 
         for item in items[:limit]:
-            titulek = item.find('title').text.strip()
-            odkaz = item.find('link').text.strip()
+            titulek_el = item.find('title')
+            odkaz_el = item.find('link')
+            popis_el = item.find('description')
             
-            # Formátování titulku, ať je to hezky vidět
+            titulek = titulek_el.text.strip() if titulek_el is not None and titulek_el.text else "Bez titulku"
+            odkaz = odkaz_el.text.strip() if odkaz_el is not None and odkaz_el.text else ""
+            
+            # Vyčištění perexu (často obsahuje HTML tagy)
+            perex_raw = popis_el.text.strip() if popis_el is not None and popis_el.text else ""
+            perex = BeautifulSoup(perex_raw, "html.parser").get_text() if perex_raw else ""
+            
             vysledny_text += f"=== {titulek} ===\n"
             
-            # Tady zavoláme naši novou funkci, která vleze do odkazu pro text
-            text_clanku = stahni_text_clanku(odkaz)
-            vysledny_text += f"{text_clanku}\n\n"
+            if odkaz:
+                text_clanku = stahni_text_clanku(odkaz, perex)
+                vysledny_text += f"{text_clanku}\n\n"
+            else:
+                vysledny_text += f"{perex}\n\n"
             
         return vysledny_text
     except Exception as e:
@@ -91,10 +102,11 @@ def stahni_pocasi():
         return f"Nepodarilo se stahnout pocasi.\nChyba: {e}"
 
 if __name__ == "__main__":
-    print("Spoustim stahovani realnych dat (vcetne textu)...")
+    print("Spoustim stahovani realnych dat s ochranou proti blokaci...")
     
-    text_svet = stahni_zpravy("https://www.irozhlas.cz/rss/irozhlas/svet")
-    text_cr = stahni_zpravy("https://www.irozhlas.cz/rss/irozhlas/zpravy-domov")
+    # Změněno zpět na ČT24, které by mělo být přátelštější
+    text_svet = stahni_zpravy("https://ct24.ceskatelevize.cz/rss/svet")
+    text_cr = stahni_zpravy("https://ct24.ceskatelevize.cz/rss/domaci")
     text_tech = stahni_zpravy("https://www.lupa.cz/rss/clanky/")
     text_pocasi = stahni_pocasi()
 

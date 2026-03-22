@@ -18,11 +18,9 @@ def stahni_text_clanku(url, perex):
             if len(text) > 40:
                 obsah += text + "\n"
         
-        # OCHRANA: Pokud nás web zablokoval nebo je text moc krátký, použijeme aspoň shrnutí (perex)
         if "Enable JavaScript" in obsah or len(obsah) < 100:
             return perex + "\n\n(Pozn: Celý text web zablokoval)"
         
-        # Oříznutí kvůli paměti ESP32
         if len(obsah) > 1500:
             obsah = obsah[:1500] + "...\n(Pokracovani na webu)"
             
@@ -31,7 +29,7 @@ def stahni_text_clanku(url, perex):
         return perex + "\n\n(Pozn: Chyba při stahování celého textu)"
 
 # --- FUNKCE PRO STAHOVÁNÍ ZPRÁV (RSS) ---
-def stahni_zpravy(rss_url, limit=3):
+def stahni_zpravy(rss_url, limit=5): # ZVÝŠENO NA 5 ČLÁNKŮ
     hlavicky = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120.0.0.0 Safari/537.36"}
     try:
         odpoved = requests.get(rss_url, headers=hlavicky, timeout=10)
@@ -42,7 +40,7 @@ def stahni_zpravy(rss_url, limit=3):
         
         vysledny_text = ""
         if not items:
-            return "Zadne clanky nenalezeny."
+            return "|T|Žádné zprávy|P|Nebyly nalezeny žádné články.|X|Zkuste to později.|E|"
 
         for item in items[:limit]:
             titulek_el = item.find('title')
@@ -52,21 +50,23 @@ def stahni_zpravy(rss_url, limit=3):
             titulek = titulek_el.text.strip() if titulek_el is not None and titulek_el.text else "Bez titulku"
             odkaz = odkaz_el.text.strip() if odkaz_el is not None and odkaz_el.text else ""
             
-            # Vyčištění perexu (často obsahuje HTML tagy)
             perex_raw = popis_el.text.strip() if popis_el is not None and popis_el.text else ""
             perex = BeautifulSoup(perex_raw, "html.parser").get_text() if perex_raw else ""
             
-            vysledny_text += f"=== {titulek} ===\n"
-            
-            if odkaz:
-                text_clanku = stahni_text_clanku(odkaz, perex)
-                vysledny_text += f"{text_clanku}\n\n"
+            # Aby perex nebyl moc dlouhý do menu, zkrátíme ho případně na 100 znaků
+            if len(perex) > 100:
+                perex_kratky = perex[:100] + "..."
             else:
-                vysledny_text += f"{perex}\n\n"
+                perex_kratky = perex
+            
+            text_clanku = stahni_text_clanku(odkaz, perex) if odkaz else perex
+            
+            # SPECIÁLNÍ FORMÁTOVÁNÍ PRO ČTEČKU (T = Titulek, P = Perex, X = Text, E = Konec článku)
+            vysledny_text += f"|T|{titulek}|P|{perex_kratky}|X|{text_clanku}|E|"
             
         return vysledny_text
     except Exception as e:
-        return f"Chyba pri stahovani z {rss_url}:\n{e}"
+        return f"|T|Chyba stahování|P|Něco se pokazilo.|X|{e}|E|"
 
 # --- FUNKCE PRO STAHOVÁNÍ POČASÍ ---
 def stahni_pocasi():
@@ -102,12 +102,11 @@ def stahni_pocasi():
         return f"Nepodarilo se stahnout pocasi.\nChyba: {e}"
 
 if __name__ == "__main__":
-    print("Spoustim stahovani realnych dat s ochranou proti blokaci...")
+    print("Spoustim stahovani (5 clanku s tajnymi znackami pro menu)...")
     
-    # Změněno zpět na ČT24, které by mělo být přátelštější
-    text_svet = stahni_zpravy("https://ct24.ceskatelevize.cz/rss/svet")
-    text_cr = stahni_zpravy("https://ct24.ceskatelevize.cz/rss/domaci")
-    text_tech = stahni_zpravy("https://www.lupa.cz/rss/clanky/")
+    text_svet = stahni_zpravy("https://ct24.ceskatelevize.cz/rss/svet", limit=5)
+    text_cr = stahni_zpravy("https://ct24.ceskatelevize.cz/rss/domaci", limit=5)
+    text_tech = stahni_zpravy("https://www.lupa.cz/rss/clanky/", limit=5)
     text_pocasi = stahni_pocasi()
 
     with open("zpravy_svet.txt", "w", encoding="utf-8") as f: f.write(text_svet)
@@ -115,4 +114,4 @@ if __name__ == "__main__":
     with open("zpravy_tech.txt", "w", encoding="utf-8") as f: f.write(text_tech)
     with open("pocasi.txt", "w", encoding="utf-8") as f: f.write(text_pocasi)
         
-    print("Hotovo! Aktualni data byla ulozena.")
+    print("Hotovo! Data jsou pripravena pro ESP32.")

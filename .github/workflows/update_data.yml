@@ -1,0 +1,38 @@
+name: Update E-paper Data
+
+on:
+  schedule:
+    # Cron výraz: '0 * * * *' znamená, že se to spustí každou celou hodinu.
+    # Můžeš to změnit třeba na každé 4 hodiny: '0 */4 * * *'
+    - cron: '0 * * * *' 
+  workflow_dispatch: # Tohle ti přidá na GitHubu tlačítko, abys to mohl spustit i ručně, kdykoli chceš!
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repozitare
+        uses: actions/checkout@v3
+
+      - name: Priprava Pythonu
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Instalace knihoven
+        run: pip install requests
+
+      - name: Spusteni Python skriptu
+        env:
+          WEATHER_API_KEY: ${{ secrets.WEATHER_API_KEY }}
+          NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
+        run: python data_fetcher.py
+
+      - name: Ulozeni a nahrani novych texaku zpatky do repozitare
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add pocasi.txt zpravy.txt
+          # Zkusí vytvořit commit. Pokud se nic nezměnilo, nevyhodí chybu.
+          git commit -m "Automatická aktualizace dat pro e-paper" || exit 0
+          git push

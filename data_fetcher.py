@@ -29,7 +29,7 @@ def stahni_text_clanku(url, perex):
         return perex + "\n\n(Pozn: Chyba při stahování celého textu)"
 
 # --- FUNKCE PRO STAHOVÁNÍ ZPRÁV (RSS) ---
-def stahni_zpravy(rss_url, limit=5): # ZVÝŠENO NA 5 ČLÁNKŮ
+def stahni_zpravy(rss_url, limit=10): # ZVÝŠENO NA 10 ČLÁNKŮ
     hlavicky = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120.0.0.0 Safari/537.36"}
     try:
         odpoved = requests.get(rss_url, headers=hlavicky, timeout=10)
@@ -104,9 +104,9 @@ def stahni_pocasi():
 if __name__ == "__main__":
     print("Spoustim stahovani (5 clanku s tajnymi znackami pro menu)...")
     
-    text_svet = stahni_zpravy("https://ct24.ceskatelevize.cz/rss/svet", limit=5)
-    text_cr = stahni_zpravy("https://ct24.ceskatelevize.cz/rss/domaci", limit=5)
-    text_tech = stahni_zpravy("https://www.lupa.cz/rss/clanky/", limit=5)
+    text_svet = stahni_zpravy("https://ct24.ceskatelevize.cz/rss/svet", limit=10)
+    text_cr = stahni_zpravy("https://ct24.ceskatelevize.cz/rss/domaci", limit=10)
+    text_tech = stahni_zpravy("https://www.lupa.cz/rss/clanky/", limit=10)
     text_pocasi = stahni_pocasi()
 
     with open("zpravy_svet.txt", "w", encoding="utf-8") as f: f.write(text_svet)

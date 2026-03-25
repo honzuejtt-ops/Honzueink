@@ -1,8 +1,6 @@
-=== KURZY ===
+=== KURZY (CZK) ===
 
-1 EUR = 24,445 CZK
-1 USD = 21,091 CZK
+Euro: 24,445 CZK
+Dolar: 21.09 CZK
 
-Bitcoin = 70 971.41 USD
-Zlato (oz) = 4 512.80 USD
-Stribro (oz) = 71.45 USD
+Chyba kurzu: 'NoneType' object is not subscriptable

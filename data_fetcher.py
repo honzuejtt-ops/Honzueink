@@ -10,196 +10,125 @@ def stahni_text_clanku(url, perex):
     try:
         odpoved = requests.get(url, headers=hlavicky, timeout=10)
         soup = BeautifulSoup(odpoved.content, 'html.parser')
-        
         odstavce = soup.find_all('p')
         obsah = ""
-        
         for p in odstavce:
             text = p.get_text().strip()
             if len(text) > 40:
                 obsah += text + "\n"
-        
         if "Enable JavaScript" in obsah or len(obsah) < 100:
             return perex + "\n\n(Pozn: Celý text web zablokoval)"
-        
         if len(obsah) > 1500:
             obsah = obsah[:1500] + "...\n(Pokracovani na webu)"
-            
         return obsah
     except Exception:
         return perex + "\n\n(Pozn: Chyba při stahování celého textu)"
 
-# --- FUNKCE PRO STAHOVÁNÍ ZPRÁV (RSS) ---
+# --- FUNKCE PRO ZPRÁVY ---
 def stahni_zpravy(rss_url, limit=10):
-    hlavicky = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120.0.0.0 Safari/537.36"}
+    hlavicky = {"User-Agent": "Mozilla/5.0"}
     try:
         odpoved = requests.get(rss_url, headers=hlavicky, timeout=10)
-        odpoved.raise_for_status()
-        
         root = ET.fromstring(odpoved.content)
         items = root.findall('.//item')
-        
         vysledny_text = ""
-        if not items:
-            return "|T|Žádné zprávy|P|Nebyly nalezeny žádné články.|X|Zkuste to později.|E|"
-
         for item in items[:limit]:
-            titulek_el = item.find('title')
-            odkaz_el = item.find('link')
-            popis_el = item.find('description')
-            
-            titulek = titulek_el.text.strip() if titulek_el is not None and titulek_el.text else "Bez titulku"
-            odkaz = odkaz_el.text.strip() if odkaz_el is not None and odkaz_el.text else ""
-            
-            perex_raw = popis_el.text.strip() if popis_el is not None and popis_el.text else ""
-            perex = BeautifulSoup(perex_raw, "html.parser").get_text() if perex_raw else ""
-            
-            if len(perex) > 100:
-                perex_kratky = perex[:100] + "..."
-            else:
-                perex_kratky = perex
-            
+            titulek = item.find('title').text.strip() if item.find('title') is not None else "Bez titulku"
+            odkaz = item.find('link').text.strip() if item.find('link') is not None else ""
+            perex_raw = item.find('description').text.strip() if item.find('description') is not None else ""
+            perex = BeautifulSoup(perex_raw, "html.parser").get_text()
+            perex_kratky = perex[:100] + "..." if len(perex) > 100 else perex
             text_clanku = stahni_text_clanku(odkaz, perex) if odkaz else perex
-            
             vysledny_text += f"|T|{titulek}|P|{perex_kratky}|X|{text_clanku}|E|"
-            
         return vysledny_text
     except Exception as e:
         return f"|T|Chyba stahování|P|Něco se pokazilo.|X|{e}|E|"
 
-# --- FUNKCE PRO STAHOVÁNÍ POČASÍ ---
+# --- FUNKCE PRO POČASÍ ---
 def stahni_pocasi():
-    url = "https://api.open-meteo.com/v1/forecast?latitude=50.088&longitude=14.4208&daily=weathercode,temperature_2m_max,temperature_2m_min,precipitation_sum,windspeed_10m_max&timezone=Europe%2FBerlin"
+    url = "https://api.open-meteo.com/v1/forecast?latitude=50.088&longitude=14.4208&daily=weathercode,temperature_2m_max,temperature_2m_min,precipitation_sum,windspeed_10m_max&timezone=Europe/Berlin"
     try:
-        odpoved = requests.get(url, timeout=10)
-        data = odpoved.json()
-        daily = data['daily']
-        
+        data = requests.get(url, timeout=10).json()['daily']
         vysledny_text = ""
         for i in range(7):
-            datum_str = daily['time'][i]
-            dt = datetime.strptime(datum_str, "%Y-%m-%d")
-            datum_format = dt.strftime("%d.%m.")
-            
-            t_max = round(daily['temperature_2m_max'][i])
-            t_min = round(daily['temperature_2m_min'][i])
-            srazky = daily['precipitation_sum'][i]
-            vitr_ms = round(daily['windspeed_10m_max'][i] / 3.6)
-            kod_pocasi = daily['weathercode'][i]
-            
-            if kod_pocasi in [0, 1]: ikona = "SLUNCE"
-            elif kod_pocasi in [2, 3]: ikona = "MRAKY"
-            elif kod_pocasi in [61, 63, 65, 80, 81, 82]: ikona = "DEST"
-            elif kod_pocasi in [95, 96, 99]: ikona = "BOURKA"
-            elif kod_pocasi in [71, 73, 75, 85, 86]: ikona = "SNIH"
-            else: ikona = "OBLACNO"
-
-            vysledny_text += f"{datum_format}|{t_max}|{t_min}|{srazky}|{ikona}|{vitr_ms}\n"
-            
+            dt = datetime.strptime(data['time'][i], "%Y-%m-%d").strftime("%d.%m.")
+            ikona = "OBLACNO"
+            kod = data['weathercode'][i]
+            if kod in [0, 1]: ikona = "SLUNCE"
+            elif kod in [2, 3]: ikona = "MRAKY"
+            elif kod in [61, 63, 65]: ikona = "DEST"
+            vysledny_text += f"{dt}|{round(data['temperature_2m_max'][i])}|{round(data['temperature_2m_min'][i])}|{data['precipitation_sum'][i]}|{ikona}|{round(data['windspeed_10m_max'][i]/3.6)}\n"
         return vysledny_text
-    except Exception as e:
-        return f"Nepodarilo se stahnout pocasi.\nChyba: {e}"
+    except Exception as e: return f"Chyba pocasi: {e}"
 
-# --- FUNKCE PRO STAHOVÁNÍ KURZŮ ---
+# --- FUNKCE PRO KURZY (BTC v CZK, Kovy v 1g CZK) ---
 def stahni_kurzy():
-    vysledek = "=== KURZY ===\n\n"
+    vysledek = "=== KURZY (CZK) ===\n\n"
+    hlavicky = {"User-Agent": "Mozilla/5.0"}
     try:
-        # ČNB Kurzy pro EUR a USD
+        # 1. Získáme kurz USD z ČNB pro přepočet kovů
         res_cnb = requests.get("https://www.cnb.cz/cs/financni-trhy/devizovy-trh/kurzy-devizoveho-trhu/kurzy-devizoveho-trhu/denni_kurz.txt", timeout=10)
         lines = res_cnb.text.split('\n')
-        eur = usd = "N/A"
+        usd_rate = 1.0
+        eur_rate = "N/A"
         for line in lines:
-            if "|EUR|" in line: eur = line.split('|')[-1].strip()
-            if "|USD|" in line: usd = line.split('|')[-1].strip()
+            if "|USD|" in line: usd_rate = float(line.split('|')[-1].replace(',', '.'))
+            if "|EUR|" in line: eur_rate = line.split('|')[-1]
         
-        vysledek += f"1 EUR = {eur} CZK\n"
-        vysledek += f"1 USD = {usd} CZK\n\n"
+        vysledek += f"Euro: {eur_rate} CZK\n"
+        vysledek += f"Dolar: {usd_rate:.2f} CZK\n\n"
 
-        # Yahoo Finance pro krypto a kovy
-        hlavicky = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120.0.0.0 Safari/537.36"}
-        
+        # Funkce pro Yahoo Finance
         def get_yahoo(ticker):
             url = f"https://query1.finance.yahoo.com/v8/finance/chart/{ticker}"
-            r = requests.get(url, headers=hlavicky, timeout=10)
-            data = r.json()
-            cena = data['chart']['result'][0]['meta']['regularMarketPrice']
-            return f"{cena:,.2f}".replace(',', ' ')
+            data = requests.get(url, headers=hlavicky, timeout=10).json()
+            return data['chart']['result'][0]['meta']['regularMarketPrice']
 
-        vysledek += f"Bitcoin = {get_yahoo('BTC-USD')} USD\n"
-        vysledek += f"Zlato (oz) = {get_yahoo('GC=F')} USD\n"
-        vysledek += f"Stribro (oz) = {get_yahoo('SI=F')} USD\n"
+        # Bitcoin přímo v CZK
+        btc_czk = get_yahoo('BTC-CZK')
+        vysledek += f"BTC: {btc_czk:,.0f} CZK\n".replace(',', ' ')
 
-    except Exception as e:
-        vysledek += f"Nepodarilo se stahnout kurzy.\nChyba: {e}"
-    
+        # Zlato a Stříbro (v USD/oz) -> přepočet na 1g v CZK (1 oz = 31.1035 g)
+        gold_usd_oz = get_yahoo('GC=F')
+        silver_usd_oz = get_yahoo('SI=F')
+        
+        gold_czk_g = (gold_usd_oz * usd_rate) / 31.1035
+        silver_czk_g = (silver_usd_oz * usd_rate) / 31.1035
+
+        vysledek += f"Zlato (1g): {gold_czk_g:.0f} CZK\n"
+        vysledek += f"Stribro (1g): {silver_czk_g:.2f} CZK\n"
+
+    except Exception as e: vysledek += f"Chyba kurzu: {e}"
     return vysledek
 
-# --- FUNKCE PRO SLUNCE A MĚSÍC (ASTRO) ---
+# --- FUNKCE PRO ASTRO ---
 def stahni_astro():
     vysledek = "=== SLUNCE A MESIC ===\n\n"
     try:
-        # Sunrise/Sunset API (lokace Praha)
-        url = "https://api.sunrisesunset.io/json?lat=50.088&lng=14.4208&timezone=Europe/Prague"
-        res = requests.get(url, timeout=10).json()
-        r = res['results']
+        r = requests.get("https://api.sunrisesunset.io/json?lat=50.088&lng=14.4208&timezone=Europe/Prague", timeout=10).json()['results']
+        def to_24h(t): return datetime.strptime(t, "%I:%M:%S %p").strftime("%H:%M")
         
-        # Převod AM/PM na 24h formát
-        def to_24h(t_str):
-            try:
-                return datetime.strptime(t_str, "%I:%M:%S %p").strftime("%H:%M")
-            except:
-                return t_str
-
-        vychod = to_24h(r['sunrise'])
-        zapad = to_24h(r['sunset'])
-        zlata_vecer = to_24h(r['golden_hour'])
+        vysledek += f"Vychod: {to_24h(r['sunrise'])}\n"
+        vysledek += f"Zapad: {to_24h(r['sunset'])}\n"
+        vysledek += f"Zlata hod.: {to_24h(r['golden_hour'])}\n\n"
         
-        vysledek += f"Vychod slunce: {vychod}\n"
-        vysledek += f"Zapad slunce: {zapad}\n"
-        vysledek += f"Zlata hodinka (vecer): od {zlata_vecer}\n\n"
-        
-        # Fáze měsíce výpočtem z aktuálního data
-        dt = datetime.now()
-        diff = dt - datetime(2001, 1, 1)
-        days = diff.days + (diff.seconds / 86400.0)
-        lunations = 0.20439731 + (days * 0.03386319269)
-        faze = lunations % 1.0
-        
-        if faze < 0.03 or faze > 0.97: nazev_faze = "Nov"
-        elif faze < 0.22: nazev_faze = "Dorustajici srpek"
-        elif faze < 0.28: nazev_faze = "Prvni ctvrt"
-        elif faze < 0.47: nazev_faze = "Dorustajici mesic"
-        elif faze < 0.53: nazev_faze = "Uplnek"
-        elif faze < 0.72: nazev_faze = "Couvajici mesic"
-        elif faze < 0.78: nazev_faze = "Posledni ctvrt"
-        else: nazev_faze = "Ubyvajici srpek"
-
-        # Výpočet osvětlení měsíce v procentech
+        # Fáze měsíce (zjednodušený výpočet)
+        diff = datetime.now() - datetime(2001, 1, 1)
+        faze = (0.20439731 + (diff.days + diff.seconds/86400.0) * 0.03386319269) % 1.0
         osvetleni = round((0.5 * (1 - math.cos(2 * math.pi * faze))) * 100)
         
-        vysledek += f"Faze mesice: {nazev_faze}\n"
-        vysledek += f"Osvetleni: {osvetleni} %\n"
-
-    except Exception as e:
-        vysledek += f"Nepodarilo se stahnout astro data.\nChyba: {e}"
-        
+        nazvy = ["Nov", "Dorustajici srpek", "Prvni ctvrt", "Dorustajici mesic", "Uplnek", "Couvajici mesic", "Posledni ctvrt", "Ubyvajici srpek"]
+        idx = int(((faze + 0.0625) % 1.0) * 8)
+        vysledek += f"Mesic: {nazvy[idx]}\nOsvetleni: {osvetleni}%\n"
+    except Exception as e: vysledek += f"Chyba astro: {e}"
     return vysledek
 
 if __name__ == "__main__":
-    print("Spoustim stahovani clanku, pocasi, kurzu a astro dat...")
-    
-    text_svet = stahni_zpravy("https://ct24.ceskatelevize.cz/rss/svet", limit=10)
-    text_cr = stahni_zpravy("https://ct24.ceskatelevize.cz/rss/domaci", limit=10)
-    text_tech = stahni_zpravy("https://www.lupa.cz/rss/clanky/", limit=10)
-    text_pocasi = stahni_pocasi()
-    text_kurzy = stahni_kurzy()
-    text_astro = stahni_astro()
-
-    with open("zpravy_svet.txt", "w", encoding="utf-8") as f: f.write(text_svet)
-    with open("zpravy_cr.txt", "w", encoding="utf-8") as f: f.write(text_cr)
-    with open("zpravy_tech.txt", "w", encoding="utf-8") as f: f.write(text_tech)
-    with open("pocasi.txt", "w", encoding="utf-8") as f: f.write(text_pocasi)
-    with open("kurzy.txt", "w", encoding="utf-8") as f: f.write(text_kurzy)
-    with open("astro.txt", "w", encoding="utf-8") as f: f.write(text_astro)
-        
-    print("Hotovo! Vsechna data vcetne kurzu.txt a astro.txt jsou pripravena pro ESP32.")
+    print("Stahuji vsechna data...")
+    with open("zpravy_svet.txt", "w", encoding="utf-8") as f: f.write(stahni_zpravy("https://ct24.ceskatelevize.cz/rss/svet"))
+    with open("zpravy_cr.txt", "w", encoding="utf-8") as f: f.write(stahni_zpravy("https://ct24.ceskatelevize.cz/rss/domaci"))
+    with open("zpravy_tech.txt", "w", encoding="utf-8") as f: f.write(stahni_zpravy("https://www.lupa.cz/rss/clanky/"))
+    with open("pocasi.txt", "w", encoding="utf-8") as f: f.write(stahni_pocasi())
+    with open("kurzy.txt", "w", encoding="utf-8") as f: f.write(stahni_kurzy())
+    with open("astro.txt", "w", encoding="utf-8") as f: f.write(stahni_astro())
+    print("Hotovo! Data jsou na disku.")

@@ -61,46 +61,53 @@ def stahni_pocasi():
         return vysledny_text
     except Exception as e: return f"Chyba pocasi: {e}"
 
-# --- FUNKCE PRO KURZY (BTC v CZK, Kovy v 1g CZK) ---
+# --- FUNKCE PRO STAHOVÁNÍ KURZŮ ---
 def stahni_kurzy():
     vysledek = "=== KURZY (CZK) ===\n\n"
-    hlavicky = {"User-Agent": "Mozilla/5.0"}
     try:
-        # 1. Získáme kurz USD z ČNB pro přepočet kovů
+        # 1. Získáme kurz z ČNB
         res_cnb = requests.get("https://www.cnb.cz/cs/financni-trhy/devizovy-trh/kurzy-devizoveho-trhu/kurzy-devizoveho-trhu/denni_kurz.txt", timeout=10)
         lines = res_cnb.text.split('\n')
         usd_rate = 1.0
         eur_rate = "N/A"
         for line in lines:
             if "|USD|" in line: usd_rate = float(line.split('|')[-1].replace(',', '.'))
-            if "|EUR|" in line: eur_rate = line.split('|')[-1]
+            if "|EUR|" in line: eur_rate = line.split('|')[-1].strip()
         
         vysledek += f"Euro: {eur_rate} CZK\n"
         vysledek += f"Dolar: {usd_rate:.2f} CZK\n\n"
 
-        # Funkce pro Yahoo Finance
+        # 2. Bitcoin přes Binance API (super stabilní)
+        try:
+            btc_data = requests.get("https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT", timeout=10).json()
+            btc_czk = float(btc_data['price']) * usd_rate
+            vysledek += f"BTC: {btc_czk:,.0f} CZK\n".replace(',', ' ')
+        except Exception:
+            vysledek += "BTC: Chyba stahovani\n"
+
+        # 3. Kovy přes Yahoo (s vylepšenou hlavičkou)
         def get_yahoo(ticker):
-            url = f"https://query1.finance.yahoo.com/v8/finance/chart/{ticker}"
-            data = requests.get(url, headers=hlavicky, timeout=10).json()
+            h = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/120.0.0.0 Safari/537.36"}
+            url = f"https://query2.finance.yahoo.com/v8/finance/chart/{ticker}"
+            data = requests.get(url, headers=h, timeout=10).json()
             return data['chart']['result'][0]['meta']['regularMarketPrice']
 
-        # Bitcoin přímo v CZK
-        btc_czk = get_yahoo('BTC-CZK')
-        vysledek += f"BTC: {btc_czk:,.0f} CZK\n".replace(',', ' ')
+        try:
+            gold_czk_g = (get_yahoo('GC=F') * usd_rate) / 31.1035
+            vysledek += f"Zlato (1g): {gold_czk_g:.0f} CZK\n"
+        except Exception:
+            vysledek += "Zlato: Chyba stahovani\n"
 
-        # Zlato a Stříbro (v USD/oz) -> přepočet na 1g v CZK (1 oz = 31.1035 g)
-        gold_usd_oz = get_yahoo('GC=F')
-        silver_usd_oz = get_yahoo('SI=F')
+        try:
+            silver_czk_g = (get_yahoo('SI=F') * usd_rate) / 31.1035
+            vysledek += f"Stribro (1g): {silver_czk_g:.2f} CZK\n"
+        except Exception:
+            vysledek += "Stribro: Chyba stahovani\n"
+
+    except Exception as e: 
+        vysledek += f"Kriticka chyba kurzu: {e}"
         
-        gold_czk_g = (gold_usd_oz * usd_rate) / 31.1035
-        silver_czk_g = (silver_usd_oz * usd_rate) / 31.1035
-
-        vysledek += f"Zlato (1g): {gold_czk_g:.0f} CZK\n"
-        vysledek += f"Stribro (1g): {silver_czk_g:.2f} CZK\n"
-
-    except Exception as e: vysledek += f"Chyba kurzu: {e}"
     return vysledek
-
 # --- FUNKCE PRO ASTRO ---
 def stahni_astro():
     vysledek = "=== SLUNCE A MESIC ===\n\n"

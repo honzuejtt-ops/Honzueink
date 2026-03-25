@@ -1,3 +1,8 @@
 === KURZY (CZK) ===
 
-Kriticka chyba kurzu: HTTPSConnectionPool(host='www.cnb.cz', port=443): Read timed out. (read timeout=10)
+Euro: 24,445 CZK
+Dolar: 21.09 CZK
+
+BTC: Chyba stahovani
+Zlato (1g): 3046 CZK
+Stribro (1g): 47.95 CZK

@@ -1,6 +1,3 @@
 === KURZY (CZK) ===
 
-Euro: 24,445 CZK
-Dolar: 21.09 CZK
-
-Chyba kurzu: 'NoneType' object is not subscriptable
+Kriticka chyba kurzu: HTTPSConnectionPool(host='www.cnb.cz', port=443): Read timed out. (read timeout=10)

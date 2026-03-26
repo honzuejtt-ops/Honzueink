@@ -1,8 +1,1 @@
-=== KURZY (CZK) ===
-
-Euro: 24,445 CZK
-Dolar: 21.09 CZK
-
-BTC: nedostupne
-Zlato (1g): 3004 CZK
-Stribro (1g): 46.49 CZK
+24,445|21.09|N/A|3004|46.26

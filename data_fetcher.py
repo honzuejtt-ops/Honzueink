@@ -68,7 +68,7 @@ def stahni_pocasi():
         return res
     except Exception as e: return f"Chyba pocasi: {e}"
 
-# --- FUNKCE PRO KURZY (BTC OPRAVEN NA BINANCE API) ---
+# --- FUNKCE PRO KURZY (Vícestupňové stahování BTC) ---
 def stahni_kurzy():
     try:
         res_cnb = requests.get("https://www.cnb.cz/cs/financni-trhy/devizovy-trh/kurzy-devizoveho-trhu/kurzy-devizoveho-trhu/denni_kurz.txt", timeout=10)
@@ -77,13 +77,19 @@ def stahni_kurzy():
             if "|USD|" in line: usd_rate = float(line.split('|')[-1].replace(',', '.'))
             if "|EUR|" in line: eur_rate = line.split('|')[-1].strip()
 
+        # Dvojitá kontrola BTC (nejdřív CoinDesk, pak Binance)
+        btc_str = "N/A"
         try:
-            # Binance API - spolehlivejsi nez CoinDesk
-            btc_data = requests.get("https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT", timeout=5).json()
-            btc_czk = float(btc_data['price']) * usd_rate
+            btc_data = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json", timeout=5).json()
+            btc_czk = float(btc_data['bpi']['USD']['rate_float']) * usd_rate
             btc_str = f"{btc_czk:,.0f}".replace(',', ' ')
-        except Exception as e: 
-            btc_str = "N/A"
+        except Exception:
+            try:
+                btc_data = requests.get("https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT", timeout=5).json()
+                btc_czk = float(btc_data['price']) * usd_rate
+                btc_str = f"{btc_czk:,.0f}".replace(',', ' ')
+            except Exception:
+                pass
 
         def get_metal(ticker):
             h = {"User-Agent": "Mozilla/5.0"}
@@ -99,7 +105,7 @@ def stahni_kurzy():
         return f"{eur_rate}|{usd_rate:.2f}|{btc_str}|{gold_str}|{silver_str}"
     except Exception: return "Chyba|Chyba|Chyba|Chyba|Chyba"
 
-# --- FUNKCE PRO ASTRO (NOVĚ JAKO TEXT NA 7 DNÍ) ---
+# --- FUNKCE PRO ASTRO (TEXT NA 7 DNÍ) ---
 def stahni_astro():
     url = "https://api.open-meteo.com/v1/forecast?latitude=50.088&longitude=14.4208&daily=sunrise,sunset&timezone=Europe/Berlin"
     try:
@@ -112,7 +118,6 @@ def stahni_astro():
             vychod = data['sunrise'][i].split('T')[1]
             zapad = data['sunset'][i].split('T')[1]
             
-            # Vypocet faze mesice pro dany den
             target_date = datetime.strptime(dt_str, "%Y-%m-%d")
             diff = target_date - datetime(2001, 1, 1)
             faze_raw = (0.20439731 + (diff.days) * 0.03386319269) % 1.0

@@ -3,6 +3,7 @@ import xml.etree.ElementTree as ET
 from datetime import datetime
 from bs4 import BeautifulSoup
 import math
+import json
 
 # --- FUNKCE PRO VYTĚŽENÍ TEXTU PŘÍMO Z ČLÁNKU ---
 def stahni_text_clanku(url, perex):
@@ -40,9 +41,9 @@ def stahni_zpravy(rss_url, limit=10):
         return vysledny_text
     except Exception as e: return f"|T|Chyba|P|Něco se pokazilo.|X|{e}|E|"
 
-# --- FUNKCE PRO POČASÍ ---
+# --- FUNKCE PRO POČASÍ (Obohaceno o Východ a Západ slunce) ---
 def stahni_pocasi():
-    url = "https://api.open-meteo.com/v1/forecast?latitude=50.088&longitude=14.4208&daily=weathercode,temperature_2m_max,temperature_2m_min,precipitation_sum,windspeed_10m_max&timezone=Europe/Berlin"
+    url = "https://api.open-meteo.com/v1/forecast?latitude=50.088&longitude=14.4208&daily=weathercode,temperature_2m_max,temperature_2m_min,precipitation_sum,windspeed_10m_max,sunrise,sunset&timezone=Europe/Berlin"
     try:
         data = requests.get(url, timeout=10).json()['daily']
         res = ""
@@ -55,11 +56,19 @@ def stahni_pocasi():
             elif kod in [61, 63, 65, 80, 81, 82]: ikona = "DEST"
             elif kod in [95, 96, 99]: ikona = "BOURKA"
             elif kod in [71, 73, 75, 85, 86]: ikona = "SNIH"
-            res += f"{dt}|{round(data['temperature_2m_max'][i])}|{round(data['temperature_2m_min'][i])}|{data['precipitation_sum'][i]}|{ikona}|{round(data['windspeed_10m_max'][i]/3.6)}\n"
+            
+            tmax = round(data['temperature_2m_max'][i])
+            tmin = round(data['temperature_2m_min'][i])
+            srazky = data['precipitation_sum'][i]
+            vitr = round(data['windspeed_10m_max'][i]/3.6)
+            vychod = data['sunrise'][i].split('T')[1]
+            zapad = data['sunset'][i].split('T')[1]
+            
+            res += f"{dt}|{tmax}|{tmin}|{srazky}|{ikona}|{vitr}|{vychod}|{zapad}\n"
         return res
     except Exception as e: return f"Chyba pocasi: {e}"
 
-# --- FUNKCE PRO KURZY (NOVÁ DATA PRO C++ UI) ---
+# --- FUNKCE PRO KURZY (BTC OPRAVEN NA BINANCE API) ---
 def stahni_kurzy():
     try:
         res_cnb = requests.get("https://www.cnb.cz/cs/financni-trhy/devizovy-trh/kurzy-devizoveho-trhu/kurzy-devizoveho-trhu/denni_kurz.txt", timeout=10)
@@ -69,10 +78,12 @@ def stahni_kurzy():
             if "|EUR|" in line: eur_rate = line.split('|')[-1].strip()
 
         try:
-            btc = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json", timeout=5).json()
-            btc_czk = btc['bpi']['USD']['rate_float'] * usd_rate
+            # Binance API - spolehlivejsi nez CoinDesk
+            btc_data = requests.get("https://api.binance.com/api/v3/ticker/price?symbol=BTCUSDT", timeout=5).json()
+            btc_czk = float(btc_data['price']) * usd_rate
             btc_str = f"{btc_czk:,.0f}".replace(',', ' ')
-        except: btc_str = "N/A"
+        except Exception as e: 
+            btc_str = "N/A"
 
         def get_metal(ticker):
             h = {"User-Agent": "Mozilla/5.0"}
@@ -85,21 +96,44 @@ def stahni_kurzy():
         try: silver_str = f"{(get_metal('SI=F') * usd_rate)/31.1035:.2f}"
         except: silver_str = "N/A"
 
-        # Posíláme jako data: EUR|USD|BTC|Zlato|Stribro
         return f"{eur_rate}|{usd_rate:.2f}|{btc_str}|{gold_str}|{silver_str}"
     except Exception: return "Chyba|Chyba|Chyba|Chyba|Chyba"
 
-# --- FUNKCE PRO ASTRO ---
+# --- FUNKCE PRO ASTRO (NOVĚ JAKO TEXT NA 7 DNÍ) ---
 def stahni_astro():
+    url = "https://api.open-meteo.com/v1/forecast?latitude=50.088&longitude=14.4208&daily=sunrise,sunset&timezone=Europe/Berlin"
     try:
-        r = requests.get("https://api.sunrisesunset.io/json?lat=50.088&lng=14.4208&timezone=Europe/Prague", timeout=10).json()['results']
-        def to_24h(t): return datetime.strptime(t, "%I:%M:%S %p").strftime("%H:%M")
-        diff = datetime.now() - datetime(2001, 1, 1)
-        faze_raw = (0.20439731 + (diff.days + diff.seconds/86400.0) * 0.03386319269) % 1.0
-        osvetleni = round((0.5 * (1 - math.cos(2 * math.pi * faze_raw))) * 100)
-        idx = int(((faze_raw + 0.0625) % 1.0) * 8) 
-        return f"{to_24h(r['sunrise'])}|{to_24h(r['sunset'])}|{to_24h(r['golden_hour'])}|{idx}|{osvetleni}"
-    except Exception: return "Chyba|Chyba|Chyba|0|0"
+        data = requests.get(url, timeout=10).json()['daily']
+        res = "ASTROLOGICKA PREDPOVED\n\n"
+        
+        for i in range(7):
+            dt_str = data['time'][i]
+            dt_zobrazeni = datetime.strptime(dt_str, "%Y-%m-%d").strftime("%d. %m.")
+            vychod = data['sunrise'][i].split('T')[1]
+            zapad = data['sunset'][i].split('T')[1]
+            
+            # Vypocet faze mesice pro dany den
+            target_date = datetime.strptime(dt_str, "%Y-%m-%d")
+            diff = target_date - datetime(2001, 1, 1)
+            faze_raw = (0.20439731 + (diff.days) * 0.03386319269) % 1.0
+            osvetleni = round((0.5 * (1 - math.cos(2 * math.pi * faze_raw))) * 100)
+            
+            if faze_raw < 0.03 or faze_raw > 0.97: faze_nazev = "Nov"
+            elif faze_raw < 0.22: faze_nazev = "Dorustajici srpek"
+            elif faze_raw < 0.28: faze_nazev = "Prvni ctvrt"
+            elif faze_raw < 0.47: faze_nazev = "Dorustajici Mesic"
+            elif faze_raw < 0.53: faze_nazev = "Uplnek"
+            elif faze_raw < 0.72: faze_nazev = "Couvajici Mesic"
+            elif faze_raw < 0.78: faze_nazev = "Posledni ctvrt"
+            else: faze_nazev = "Couvajici srpek"
+            
+            res += f"[{dt_zobrazeni}]\n"
+            res += f"Slunce: {vychod} - {zapad}\n"
+            res += f"Mesic: {faze_nazev} ({osvetleni}%)\n"
+            res += "-" * 20 + "\n"
+            
+        return res
+    except Exception as e: return f"Chyba pri stahovani astro dat: {e}"
 
 if __name__ == "__main__":
     print("Spoustim stahovani...")

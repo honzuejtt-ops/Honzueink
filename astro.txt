@@ -1,9 +1,5 @@
 ASTROLOGICKA PREDPOVED
 
-[28. 03.]
-Slunce: 05:47 - 18:27
-Mesic: Dorustajici Mesic (72%)
---------------------
 [29. 03.]
 Slunce: 05:45 - 18:28
 Mesic: Dorustajici Mesic (81%)
@@ -27,4 +23,8 @@ Mesic: Uplnek (100%)
 [03. 04.]
 Slunce: 05:34 - 18:36
 Mesic: Uplnek (99%)
+--------------------
+[04. 04.]
+Slunce: 05:32 - 18:38
+Mesic: Couvajici Mesic (97%)
 --------------------

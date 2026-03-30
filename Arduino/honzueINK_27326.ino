@@ -6,6 +6,8 @@
 #include <U8g2_for_Adafruit_GFX.h>
 #include <WiFi.h>
 #include <HTTPClient.h>
+#include <WiFiClientSecure.h>
+#include <qrcode_rm.h>
 
 #include <time.h>
 
@@ -15,6 +17,8 @@
 #include "Generator.h"
 #include "Slovnik.h"
 #include "Fraze.h"
+#include "HryKviz.h" 
+#include "HryWyr.h"  
 
 // ===== WIFI A INTERNET =====
 const char* ssid1 = "Barhon";
@@ -22,18 +26,19 @@ const char* pass1 = "Pizzue-96";
 const char* ssid2 = "Bobik";
 const char* pass2 = "honzuemanejfoun";
 
-String urlPocasi = "https://raw.githubusercontent.com/honzuejtt-ops/Honzueink/refs/heads/main/pocasi.txt";
-String urlZpravySvet = "https://raw.githubusercontent.com/honzuejtt-ops/Honzueink/refs/heads/main/zpravy_svet.txt";
-String urlZpravyCR = "https://raw.githubusercontent.com/honzuejtt-ops/Honzueink/refs/heads/main/zpravy_cr.txt";
-String urlTechAI = "https://raw.githubusercontent.com/honzuejtt-ops/Honzueink/refs/heads/main/zpravy_tech.txt";
-String urlKurzy = "https://raw.githubusercontent.com/honzuejtt-ops/Honzueink/refs/heads/main/kurzy.txt";
+String urlPocasi = "https://raw.githubusercontent.com/honzuejtt-ops/Honzueink/main/pocasi.txt";
+String urlZpravySvet = "https://raw.githubusercontent.com/honzuejtt-ops/Honzueink/main/zpravy_svet.txt";
+String urlZpravyCR = "https://raw.githubusercontent.com/honzuejtt-ops/Honzueink/main/zpravy_cr.txt";
+String urlTechAI = "https://raw.githubusercontent.com/honzuejtt-ops/Honzueink/main/zpravy_tech.txt";
+String urlKurzy = "https://raw.githubusercontent.com/honzuejtt-ops/Honzueink/main/kurzy.txt";
 
 String stazenaDataSvet = ""; String stazenaDataCR = ""; String stazenaDataTech = "";
 String stazenaDataPocasi = ""; String stazenaDataKurzy = "";
 
-unsigned long posledniAktualizace = 0;
-const unsigned long intervalAktualizace = 3 * 60 * 60 * 1000ULL;
 int nepovedenePokusy = 0; bool casSynchronizovan = false; int lastSecHodiny = -1;
+
+// PAMĚŤ PŘEŽÍVAJÍCÍ DEEP SLEEP
+RTC_DATA_ATTR time_t rtc_posledniAktualizace = 0; 
 
 struct Zprava { String titulek; String perex; String text; };
 Zprava aktualniZpravy[10]; int pocetZprav = 0; int clanekMenuIndex = 0;
@@ -51,11 +56,11 @@ U8G2_FOR_ADAFRUIT_GFX u8g2Fonts;
 #define BTN_SELECT 21
 #define Vext 18
 #define LED_PIN 45
-#define BAT_PIN 8 
+#define BAT_PIN 8
 
 Preferences prefs;
 
-// ===== FONTY A VZHLED =====
+// ===== FONTY A VZHLED (POUZE TYTO 3) =====
 const uint8_t* fontyLub[][2] = { { u8g2_font_lubR08_te, u8g2_font_lubB08_te }, { u8g2_font_lubR10_te, u8g2_font_lubB10_te }, { u8g2_font_lubR12_te, u8g2_font_lubB12_te }, { u8g2_font_lubR14_te, u8g2_font_lubB14_te } };
 const uint8_t* fontyNcen[][2] = { { u8g2_font_ncenR08_te, u8g2_font_ncenB08_te }, { u8g2_font_ncenR10_te, u8g2_font_ncenB10_te }, { u8g2_font_ncenR12_te, u8g2_font_ncenB12_te }, { u8g2_font_ncenR14_te, u8g2_font_ncenB14_te } };
 const uint8_t* fontyHelv[][2] = { { u8g2_font_helvR08_te, u8g2_font_helvB08_te }, { u8g2_font_helvR10_te, u8g2_font_helvB10_te }, { u8g2_font_helvR12_te, u8g2_font_helvB12_te }, { u8g2_font_helvR14_te, u8g2_font_helvB14_te } };
@@ -71,6 +76,7 @@ int getLinesPerPage() { return 96 / getLineHeight(); }
 int getMenuItemHeight() { int h[] = { 18, 22, 25, 28 }; return h[currentSize]; }
 int getVisibleMenuItems() { return (128 - 28) / getMenuItemHeight(); }
 
+// DŮSLEDNÉ POUŽITÍ POUZE TVÝCH 3 FONTŮ PRO VŠECHNY VELIKOSTI:
 const uint8_t* getBodyFont() { 
   switch (currentStyle) { 
     case 0: return fontyLub[currentSize][currentBold]; 
@@ -79,9 +85,30 @@ const uint8_t* getBodyFont() {
     default: return fontyLub[1][0]; 
   } 
 }
-const uint8_t* getTitleFont() { return fontyLub[1][1]; } 
-const uint8_t* getSmallFont() { return fontyLub[0][0]; } 
-const uint8_t* getBigFont() { return fontyLub[2][1]; } 
+const uint8_t* getTitleFont() { 
+  switch (currentStyle) { 
+    case 0: return fontyLub[1][1]; 
+    case 1: return fontyNcen[1][1]; 
+    case 2: return fontyHelv[1][1]; 
+    default: return fontyLub[1][1]; 
+  } 
+}
+const uint8_t* getSmallFont() { 
+  switch (currentStyle) { 
+    case 0: return fontyLub[0][0]; 
+    case 1: return fontyNcen[0][0]; 
+    case 2: return fontyHelv[0][0]; 
+    default: return fontyLub[0][0]; 
+  } 
+}
+const uint8_t* getBigFont() { 
+  switch (currentStyle) { 
+    case 0: return fontyLub[3][1]; 
+    case 1: return fontyNcen[3][1]; 
+    case 2: return fontyHelv[3][1]; 
+    default: return fontyLub[3][1]; 
+  } 
+}
 
 uint16_t bgColor() { return reverseMode ? GxEPD_BLACK : GxEPD_WHITE; }
 uint16_t fgColor() { return reverseMode ? GxEPD_WHITE : GxEPD_BLACK; }
@@ -94,23 +121,30 @@ enum AppState {
   STATE_SLOVNIK_DETAIL, STATE_GENERATOR, STATE_GENERATOR_RESULT,
   STATE_NASTAVENI, STATE_NASTAVENI_VZHLED, STATE_NASTAVENI_BATERIE, STATE_NASTAVENI_O_ZARIZENI, STATE_LED_ON, 
   STATE_STOPKY, STATE_HRY, STATE_FLASKA, STATE_KOSTKY, STATE_KOSTKY_VYBER, 
-  STATE_GAMEBOOK, STATE_ODHALOVACKA, STATE_ODHALOVACKA_DETAIL, STATE_FRAZE_MENU, STATE_FRAZE_DETAIL, STATE_UCENI
+  STATE_GAMEBOOK, STATE_ODHALOVACKA, STATE_ODHALOVACKA_DETAIL, STATE_FRAZE_MENU, STATE_FRAZE_DETAIL, STATE_UCENI,
+  STATE_NASTAVENI_AKTUALIZACE, STATE_QR_MENU, STATE_QR_ZOBRAZ,
+  STATE_KVIZ, STATE_KVIZ_ODPOVED, STATE_WYR
 };
 
 AppState appState = STATE_MAIN_MENU;
 int menuIndex = 0, scrollOffset = 0, subMenuIndex = 0, subScrollOffset = 0, textScrollPage = 0, kostkyStran = 6;
 bool stopkyRunning = false; unsigned long stopkyStart = 0, stopkyElapsed = 0, stopkyLastDraw = 0;
 int gbNode = 0, gbTextPage = 0, knihaPozice[3] = { 0, 0, 0 };
+int aktualniHraIdx = 0; 
 
 // ===== BATERIE A STATUS =====
 float getBatteryVoltage() { 
-  return 3.95; // Fixní hodnota
+  int raw = analogRead(BAT_PIN);
+  if (raw <= 100 || raw >= 4095) return 4.10; 
+  return raw * (3.3 / 4095.0) * 4.9; 
 }
 
 int getBatteryPercentage() { 
-  return 85; // Fixní hodnota
+  float v = getBatteryVoltage();
+  if (v >= 4.10) return 100; 
+  int pct = map(v * 100, 320, 410, 0, 100);
+  return constrain(pct, 0, 100);
 }
-
 
 void nakresliStatusBar() {
   if (appState == STATE_HODINY || appState == STATE_ZPRAVY_TEXT || appState == STATE_ZPRAVY_SEZNAM || 
@@ -118,7 +152,7 @@ void nakresliStatusBar() {
       appState == STATE_ODHALOVACKA_DETAIL || appState == STATE_KOSTKY || appState == STATE_POCASI_UI || 
       appState == STATE_STOPKY || appState == STATE_FRAZE_DETAIL || appState == STATE_UCENI || 
       appState == STATE_GENERATOR_RESULT || appState == STATE_FLASKA || appState == STATE_SLOVNIK_DETAIL ||
-      appState == STATE_NASTAVENI_O_ZARIZENI) {
+      appState == STATE_NASTAVENI_O_ZARIZENI || appState == STATE_QR_ZOBRAZ || appState == STATE_KVIZ_ODPOVED || appState == STATE_WYR || appState == STATE_KVIZ) {
     return;
   }
 
@@ -134,9 +168,15 @@ void nakresliStatusBar() {
   
   struct tm timeinfo;
   if (getLocalTime(&timeinfo, 10)) {
+    const char* dnyVTydnu[] = {"Ne", "Po", "Ut", "St", "Ct", "Pa", "So"};
+    String den = dnyVTydnu[timeinfo.tm_wday];
     char timeStr[6]; sprintf(timeStr, "%02d:%02d", timeinfo.tm_hour, timeinfo.tm_min);
+    String casText = den + " " + String(timeinfo.tm_mday) + "." + String(timeinfo.tm_mon + 1) + ". " + String(timeStr);
+    
     u8g2Fonts.setFontMode(1); u8g2Fonts.setFont(getSmallFont()); u8g2Fonts.setForegroundColor(fgColor()); u8g2Fonts.setBackgroundColor(bgColor());
-    u8g2Fonts.setCursor(215, 11); u8g2Fonts.print(timeStr); 
+    int tw = u8g2Fonts.getUTF8Width(casText.c_str());
+    u8g2Fonts.setCursor(bx - tw - 8, 11); 
+    u8g2Fonts.print(casText.c_str()); 
   }
 }
 
@@ -145,54 +185,43 @@ const int mainMenuCount = 7; String mainMenuItems[] = { "KNIHOVNA", "AKTUALITY",
 const int aktualityCount = 4; String aktualityItems[] = { "Zprávy", "Světový čas", "Kurzy", "Počasí" };
 const int zpravyMenuCount = 3; String zpravyMenuItems[] = { "Ze světa", "Z ČR", "Technologie a AI" };
 const int knihovnaCount = 3; String knihovnaItems[] = { "Zaklínač 1", "Zaklínač 2", "Zaklínač 3" };
-const int toolboxCount = 2; String toolboxItems[] = { "Dioda", "Stopky" }; bool ledState = false;
+const int toolboxCount = 3; String toolboxItems[] = { "Dioda", "Stopky", "QR Kódy" }; bool ledState = false;
+
+// DATA PRO QR KÓDY 
+const int qrCount = 5; String qrItems[] = { "Platba na účet", "YouTube Kanál", "E-shop (Prsteny)", "Wi-Fi Hotspot", "Vizitka (Kontakt)" };
+String qrData[] = {
+  "SPD*1.0*ACC:1150279005/2700*AM:0.00*CC:CZK*MSG:Platba", 
+  "https://www.youtube.com/@StudioSklep", 
+  "https://www.jtatelier.cz/", 
+  "WIFI:S:Bobik;T:WPA;P:honzuemanejfoun;;", 
+  "BEGIN:VCARD\nVERSION:3.0\nN:Jan Těthal\nFN:Jan Těthal\nTEL:732213904\nORG:IČO 08602573\nEND:VCARD" 
+};
+
 const int slovnikCount = 4; String slovnikItems[] = { "Hledat CZ -> EN", "Hledat EN -> CZ", "Fráze", "Učení" }; int hledanySmer = 0; 
 const int frazeMenuCount = 4; String frazeMenuItems[] = { "Nakupování", "Ubytování", "Zdraví", "Zábava" };
 int uceniSmer = 0, uceniIdx = 0; bool uceniOdhaleno = false;
 char hledanyText[12] = ""; int hledanyLen = 0, abcKurzor = 0, vysledekOffset = 0;
 const char abeceda[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; const int abcCount = 26;
-const int generatorCount = 3; String generatorItems[] = { "Vtipy", "Žalmy", "Citáty" };
-const int hryCount = 4; String hryItems[] = { "Flaška", "Kostky", "Gamebook", "Odhalovačka" };
+const int generatorCount = 4; String generatorItems[] = { "Vtipy", "Žalmy", "Citáty", "Fakta" };
+const int hryCount = 6; String hryItems[] = { "Flaška", "Kostky", "Gamebook", "Odhalovačka", "Kvíz", "Co bys radši?" };
 const int kostkyCount = 4; String kostkyItems[] = { "6 stěn", "12 stěn", "24 stěn", "2x6 stěn" }; int kostkyStrany[] = { 6, 12, 24, 66 };
-const int nastaveniCount = 4; String nastaveniItems[] = { "Vzhled displeje", "Aktualizovat síť", "Baterie", "O zařízení" };
+
+const int nastaveniCount = 5; String nastaveniItems[] = { "Vzhled displeje", "Auto-aktualizace", "Vynutit aktualizaci", "Baterie", "O zařízení" };
 const int vzhledCount = 4; String vzhledItems[] = { "Font", "Velikost", "Tloušťka", "Reverz" };
+const int intervalCount = 5; String intervalItems[] = {"Vypnuto", "Každé 3 hodiny", "Každých 5 hodin", "Každých 12 hodin", "Každých 24 hodin"};
+unsigned long intervalyMs[] = {0, 10800000, 18000000, 43200000, 86400000};
+int intervalIdx = 4; 
 
 // ===== DATA ODHALOVAČKY =====
 bool odhalenoPole[64]; unsigned long odhalovackaLastMs = 0; bool odhalovackaKonec = false; int odhalovackaSkore = 0;
 const unsigned char img_slunce[] PROGMEM = {
   0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00, 0x00,0x00,0x01,0x80,0x00,0x00,0x00,0x00,
   0x00,0x00,0x03,0xc0,0x00,0x00,0x00,0x00, 0x00,0x00,0x03,0xc0,0x00,0x00,0x00,0x00,
-  0x00,0x00,0x03,0xc0,0x00,0x00,0x00,0x00, 0x00,0x00,0x03,0xc0,0x00,0x00,0x00,0x00,
-  0x00,0x00,0x03,0xc0,0x00,0x00,0x00,0x00, 0x00,0x60,0x00,0x00,0x00,0x06,0x00,0x00,
-  0x00,0x78,0x00,0x00,0x00,0x1e,0x00,0x00, 0x00,0x3e,0x00,0x00,0x00,0x7c,0x00,0x00,
-  0x00,0x1f,0x83,0xff,0xc1,0xf8,0x00,0x00, 0x00,0x0f,0xdf,0xff,0xfb,0xf0,0x00,0x00,
-  0x00,0x07,0xff,0xff,0xff,0xe0,0x00,0x00, 0x00,0x01,0xff,0xff,0xff,0x80,0x00,0x00,
-  0x00,0x00,0xff,0xff,0xff,0x00,0x00,0x00, 0x00,0x01,0xff,0xff,0xff,0x80,0x00,0x00,
-  0x00,0x03,0xff,0xff,0xff,0xc0,0x00,0x00, 0x00,0x07,0xff,0xff,0xff,0xe0,0x00,0x00,
-  0x00,0x0f,0xff,0xff,0xff,0xf0,0x00,0x00, 0x00,0x1f,0xff,0xff,0xff,0xf8,0x00,0x00,
-  0x00,0x3f,0xff,0xff,0xff,0xfc,0x00,0x00, 0x00,0x3f,0xff,0xff,0xff,0xfc,0x00,0x00,
-  0x00,0x7f,0xff,0xff,0xff,0xfe,0x00,0x00, 0x00,0x7f,0xff,0xff,0xff,0xfe,0x00,0x00,
-  0x00,0xff,0xff,0xff,0xff,0xff,0x00,0x00, 0x00,0xff,0xff,0xff,0xff,0xff,0x00,0x00,
-  0x01,0xff,0xff,0xff,0xff,0xff,0x80,0x00, 0x01,0xff,0xff,0xff,0xff,0xff,0x80,0x00,
-  0x01,0xff,0xff,0xff,0xff,0xff,0x80,0x00, 0x01,0xff,0xff,0xff,0xff,0xff,0x80,0x00,
-  0x01,0xff,0xff,0xff,0xff,0xff,0x80,0x00, 0x01,0xff,0xff,0xff,0xff,0xff,0x80,0x00,
-  0x00,0xff,0xff,0xff,0xff,0xff,0x00,0x00, 0x00,0xff,0xff,0xff,0xff,0xff,0x00,0x00,
-  0x00,0x7f,0xff,0xff,0xff,0xfe,0x00,0x00, 0x00,0x7f,0xff,0xff,0xff,0xfe,0x00,0x00,
-  0x00,0x3f,0xff,0xff,0xff,0xfc,0x00,0x00, 0x00,0x3f,0xff,0xff,0xff,0xfc,0x00,0x00,
-  0x00,0x1f,0xff,0xff,0xff,0xf8,0x00,0x00, 0x00,0x0f,0xff,0xff,0xff,0xf0,0x00,0x00,
-  0x00,0x07,0xff,0xff,0xff,0xe0,0x00,0x00, 0x00,0x03,0xff,0xff,0xff,0xc0,0x00,0x00,
-  0x00,0x01,0xff,0xff,0xff,0x80,0x00,0x00, 0x00,0x00,0xff,0xff,0xff,0x00,0x00,0x00,
-  0x00,0x01,0xff,0xff,0xff,0x80,0x00,0x00, 0x00,0x07,0xff,0xff,0xff,0xe0,0x00,0x00,
-  0x00,0x0f,0xdf,0xff,0xfb,0xf0,0x00,0x00, 0x00,0x1f,0x83,0xff,0xc1,0xf8,0x00,0x00,
-  0x00,0x3e,0x00,0x00,0x00,0x7c,0x00,0x00, 0x00,0x78,0x00,0x00,0x00,0x1e,0x00,0x00,
-  0x00,0x60,0x00,0x00,0x00,0x06,0x00,0x00, 0x00,0x00,0x03,0xc0,0x00,0x00,0x00,0x00,
-  0x00,0x00,0x03,0xc0,0x00,0x00,0x00,0x00, 0x00,0x00,0x03,0xc0,0x00,0x00,0x00,0x00,
-  0x00,0x00,0x03,0xc0,0x00,0x00,0x00,0x00, 0x00,0x00,0x03,0xc0,0x00,0x00,0x00,0x00,
   0x00,0x00,0x01,0x80,0x00,0x00,0x00,0x00, 0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00
 };
 String odhalovackaOdpoved = "SLUNCE";
 
-// ===== ZALAMOVÁNÍ A TEXT =====
+// ===== POMOCNÉ FUNKCE =====
 void printCentered(String text, int y, const uint8_t* font) {
     u8g2Fonts.setFont(font); u8g2Fonts.setForegroundColor(fgColor()); u8g2Fonts.setBackgroundColor(bgColor());
     int tw = u8g2Fonts.getUTF8Width(text.c_str());
@@ -216,7 +245,6 @@ int zalamejText(const char* buf, int len, TextLine* lines, int maxLines, int max
   } return lineCount;
 }
 
-// ===== HEARTHSTONE LOADING SCREEN =====
 void nakresliLoadScreen(String text, int progress) {
   display.setPartialWindow(0, 0, display.width(), display.height());
   display.firstPage();
@@ -225,18 +253,190 @@ void nakresliLoadScreen(String text, int progress) {
     u8g2Fonts.setFontMode(1);
     
     u8g2Fonts.setForegroundColor(fgColor()); u8g2Fonts.setBackgroundColor(bgColor());
-    u8g2Fonts.setFont(u8g2_font_helvB14_te);
+    u8g2Fonts.setFont(getBigFont()); // Nahrazeno pevné písmo
     int tw = u8g2Fonts.getUTF8Width("HONZUEINK");
     u8g2Fonts.setCursor((display.width() - tw) / 2, 40);
     u8g2Fonts.print("HONZUEINK");
 
-    u8g2Fonts.setFont(u8g2_font_helvR10_te);
+    u8g2Fonts.setFont(getBodyFont()); // Nahrazeno pevné písmo
     tw = u8g2Fonts.getUTF8Width(text.c_str());
     u8g2Fonts.setCursor((display.width() - tw) / 2, 80);
     u8g2Fonts.print(text.c_str());
 
     display.drawRect(20, 100, 256, 12, fgColor());
     display.fillRect(20, 100, (256 * progress) / 100, 12, fgColor());
+  } while (display.nextPage());
+}
+
+// ===== UKLÁDÁNÍ DAT DO PAMĚTI (PŘEŽIJE DEEP SLEEP) =====
+void ulozZpravuDoCache(String klic, String data) {
+  prefs.begin("cache", false);
+  if (data.length() > 3800) data = data.substring(0, 3800); // Ořez pro jistotu
+  prefs.putString(klic.c_str(), data);
+  prefs.end();
+}
+
+void ulozStazenaData() {
+  ulozZpravuDoCache("svet", stazenaDataSvet);
+  ulozZpravuDoCache("cr", stazenaDataCR);
+  ulozZpravuDoCache("tech", stazenaDataTech);
+  ulozZpravuDoCache("poc", stazenaDataPocasi);
+  ulozZpravuDoCache("kur", stazenaDataKurzy);
+}
+
+void nactiStazenaData() {
+  prefs.begin("cache", true);
+  stazenaDataSvet = prefs.getString("svet", "");
+  stazenaDataCR = prefs.getString("cr", "");
+  stazenaDataTech = prefs.getString("tech", "");
+  stazenaDataPocasi = prefs.getString("poc", "");
+  stazenaDataKurzy = prefs.getString("kur", "");
+  prefs.end();
+
+  if (stazenaDataPocasi != "") parsujPocasi(stazenaDataPocasi);
+  if (stazenaDataKurzy != "") parsujKurzy(stazenaDataKurzy);
+}
+
+
+// ===== DEEP SLEEP FUNKCE =====
+void jdiSpat() {
+  struct tm timeinfo;
+  String datumStr = "Dobrou noc";
+  String svatekDnes = "";
+  
+  if (getLocalTime(&timeinfo, 150)) {
+    const char* dnyVTydnu[] = {"Neděle", "Pondělí", "Úterý", "Středa", "Čtvrtek", "Pátek", "Sobota"};
+    char dBuf[50]; 
+    sprintf(dBuf, "%s %d. %d.", dnyVTydnu[timeinfo.tm_wday], timeinfo.tm_mday, timeinfo.tm_mon + 1);
+    datumStr = String(dBuf);
+    svatekDnes = "Svátek má " + getSvatek(timeinfo.tm_mday, timeinfo.tm_mon + 1);
+  }
+
+  display.setFullWindow();
+  display.firstPage();
+  do {
+    display.fillScreen(bgColor());
+    u8g2Fonts.setFontMode(1); u8g2Fonts.setForegroundColor(fgColor()); u8g2Fonts.setBackgroundColor(bgColor());
+    
+    // Horní část: Datum a Svátek
+    u8g2Fonts.setFont(getTitleFont());
+    int tw = u8g2Fonts.getUTF8Width(datumStr.c_str());
+    u8g2Fonts.setCursor((display.width() - tw) / 2, 22); 
+    u8g2Fonts.print(datumStr.c_str());
+    
+    u8g2Fonts.setFont(getSmallFont());
+    tw = u8g2Fonts.getUTF8Width(svatekDnes.c_str());
+    u8g2Fonts.setCursor((display.width() - tw) / 2, 38);
+    u8g2Fonts.print(svatekDnes.c_str());
+    
+    display.drawFastHLine(0, 42, display.width(), fgColor());
+
+    // Střed: Počasí (pokud máme data)
+    if (stazenaDataPocasi != "") {
+      nakresliIkonuPocasi(predpoved[0].ikona, 50, 75);
+      u8g2Fonts.setFont(getBigFont());
+      String temp = String(predpoved[0].tMax) + "° / " + String(predpoved[0].tMin) + "°C";
+      u8g2Fonts.setCursor(110, 80); u8g2Fonts.print(temp.c_str());
+    }
+
+    // Spodek: Náhodný vtip/citát
+    display.drawFastHLine(0, 100, display.width(), fgColor());
+    u8g2Fonts.setFont(getSmallFont());
+    String rTxt = String(vtipy[random(vtipyPocet)]);
+    TextLine lines[2];
+    int lCount = zalamejText(rTxt.c_str(), rTxt.length(), lines, 2, display.width() - 20);
+    for(int i=0; i<lCount; i++) {
+       char lBuf[85]; int len = lines[i].len; if(len>84) len=84;
+       strncpy(lBuf, &rTxt.c_str()[lines[i].start], len); lBuf[len]='\0';
+       u8g2Fonts.setCursor(10, 114 + (i*12)); u8g2Fonts.print(lBuf);
+    }
+
+  } while (display.nextPage());
+
+  display.hibernate();
+  esp_sleep_enable_ext0_wakeup((gpio_num_t)BTN_SELECT, 0); 
+  esp_deep_sleep_start();
+}
+
+// ===== ZOBRAZOVÁNÍ QR KÓDŮ =====
+void zobrazQR(const char* title, const char* dataStr) {
+  QRCode qrcode;
+  uint8_t qrcodeData[qrcode_getBufferSize(3)];
+  qrcode_initText(&qrcode, qrcodeData, 3, 0, dataStr);
+
+  int scale = 3;
+  int offset_x = (display.width() - (qrcode.size * scale)) / 2;
+  int offset_y = 28;
+
+  display.setPartialWindow(0, 0, display.width(), display.height());
+  display.firstPage();
+  do {
+    display.fillScreen(bgColor());
+    u8g2Fonts.setFontMode(1);
+    u8g2Fonts.setFont(getTitleFont()); u8g2Fonts.setForegroundColor(fgColor()); u8g2Fonts.setBackgroundColor(bgColor());
+    u8g2Fonts.setCursor(5, 16); u8g2Fonts.print(title);
+    display.drawFastHLine(0, 20, display.width(), fgColor());
+
+    for (uint8_t y = 0; y < qrcode.size; y++) {
+      for (uint8_t x = 0; x < qrcode.size; x++) {
+        if (qrcode_getModule(&qrcode, x, y)) {
+          display.fillRect(offset_x + x * scale, offset_y + y * scale, scale, scale, fgColor());
+        }
+      }
+    }
+    u8g2Fonts.setFont(getSmallFont()); u8g2Fonts.setCursor(5, 125); u8g2Fonts.print("Drž BTN21 = zpět");
+  } while (display.nextPage());
+}
+
+// ===== ZOBRAZOVÁNÍ KVÍZU A WYR =====
+void zobrazKviz() {
+  String ot = String(kvizOtazky[aktualniHraIdx]);
+  display.setPartialWindow(0, 0, display.width(), display.height());
+  display.firstPage();
+  do {
+    display.fillScreen(bgColor()); nakresliStatusBar();
+    u8g2Fonts.setFont(getTitleFont()); u8g2Fonts.setCursor(5, 16); u8g2Fonts.print("KVÍZ"); display.drawFastHLine(0, 20, display.width(), fgColor());
+    u8g2Fonts.setFont(getBodyFont());
+    TextLine lines[5]; int lCount = zalamejText(ot.c_str(), ot.length(), lines, 5, display.width() - 10);
+    int y = 40;
+    for(int i=0; i<lCount; i++){
+      char lBuf[80]; int len = lines[i].len; if(len>79) len=79;
+      strncpy(lBuf, &ot.c_str()[lines[i].start], len); lBuf[len]='\0';
+      u8g2Fonts.setCursor(5, y); u8g2Fonts.print(lBuf); y+=getLineHeight();
+    }
+    u8g2Fonts.setFont(getSmallFont()); u8g2Fonts.setCursor(5, 125); u8g2Fonts.print("BTN21 = Odpověď | BTN0 = Další | Drž = zpět");
+  } while (display.nextPage());
+}
+
+void zobrazKvizOdpoved() {
+  String odp = String(kvizOdpovedi[aktualniHraIdx]);
+  display.setPartialWindow(0, 0, display.width(), display.height());
+  display.firstPage();
+  do {
+    display.fillScreen(bgColor());
+    u8g2Fonts.setFont(getBigFont()); 
+    int tw = u8g2Fonts.getUTF8Width(odp.c_str());
+    u8g2Fonts.setCursor((display.width() - tw) / 2, 60); u8g2Fonts.print(odp.c_str());
+    u8g2Fonts.setFont(getSmallFont()); u8g2Fonts.setCursor(5, 125); u8g2Fonts.print("BTN0 / BTN21 = Další otázka | Drž = zpět");
+  } while (display.nextPage());
+}
+
+void zobrazWyr() {
+  String ot = String(wyrOtazky[aktualniHraIdx]);
+  display.setPartialWindow(0, 0, display.width(), display.height());
+  display.firstPage();
+  do {
+    display.fillScreen(bgColor()); nakresliStatusBar();
+    u8g2Fonts.setFont(getBodyFont());
+    TextLine lines[6]; int lCount = zalamejText(ot.c_str(), ot.length(), lines, 6, display.width() - 10);
+    int y = 30;
+    for(int i=0; i<lCount; i++){
+      char lBuf[80]; int len = lines[i].len; if(len>79) len=79;
+      strncpy(lBuf, &ot.c_str()[lines[i].start], len); lBuf[len]='\0';
+      int lw = u8g2Fonts.getUTF8Width(lBuf);
+      u8g2Fonts.setCursor((display.width() - lw) / 2, y); u8g2Fonts.print(lBuf); y+=getLineHeight();
+    }
+    u8g2Fonts.setFont(getSmallFont()); u8g2Fonts.setCursor(5, 125); u8g2Fonts.print("BTN21 nebo BTN0 = Další | Drž = zpět");
   } while (display.nextPage());
 }
 
@@ -285,7 +485,7 @@ void parsujZpravy(String raw) {
     aktualniZpravy[pocetZprav].text = raw.substring(xStart + 3, eStart);
     pocetZprav++; pos = eStart + 3;
   }
-  if (pocetZprav == 0) { aktualniZpravy[0].titulek = "Chyba dat"; aktualniZpravy[0].perex = "Špatný formát RSS."; aktualniZpravy[0].text = raw; pocetZprav = 1; }
+  if (pocetZprav == 0) { aktualniZpravy[0].titulek = "Chyba dat"; aktualniZpravy[0].perex = "Žádná data nejsou v paměti."; aktualniZpravy[0].text = raw; pocetZprav = 1; }
 }
 
 void parsujPocasi(String raw) {
@@ -316,71 +516,104 @@ void parsujKurzy(String raw) {
 bool pripojWiFi() {
   if (WiFi.status() == WL_CONNECTED) return true;
   
-  WiFi.disconnect(true, true); // Totální výmaz starého spojení
+  WiFi.disconnect(true, true); 
   WiFi.mode(WIFI_STA);
-  WiFi.persistent(false);      // Neukládat konfiguraci (čistý štít)
-  WiFi.setSleep(false);        // Zákaz uspávání antény
+  WiFi.persistent(false);      
+  WiFi.setSleep(false);        
   delay(200);
 
   Serial.println("Hledám síť: " + String(ssid1));
   WiFi.begin(ssid1, pass1);
   int pokusy = 0;
-  while (WiFi.status() != WL_CONNECTED && pokusy < 30) { delay(500); pokusy++; }
+  while (WiFi.status() != WL_CONNECTED && pokusy < 35) { delay(500); pokusy++; }
 
   if (WiFi.status() != WL_CONNECTED) {
     Serial.println("Barhon selhal, zkouším Bobíka...");
     WiFi.begin(ssid2, pass2);
     pokusy = 0;
-    while (WiFi.status() != WL_CONNECTED && pokusy < 30) { delay(500); pokusy++; }
+    while (WiFi.status() != WL_CONNECTED && pokusy < 35) { delay(500); pokusy++; }
   }
 
   if (WiFi.status() == WL_CONNECTED) {
-    configTzTime("CET-1CEST,M3.5.0,M10.5.0/3", "pool.ntp.org");
+    configTzTime("CET-1CEST,M3.5.0,M10.5.0/3", "pool.ntp.org", "time.nist.gov");
     struct tm timeinfo;
-    if (getLocalTime(&timeinfo, 2000)) casSynchronizovan = true;
+    if (getLocalTime(&timeinfo, 10000)) casSynchronizovan = true;
     return true;
   }
   return false;
 }
 
-String stahniTextZUrl(String url) {
+String stahniTextZUrl(WiFiClientSecure& client, String nazev, String url) {
   HTTPClient http;
-  // DŮLEŽITÉ: Použijeme přímé spojení bez složitého ověřování
-  http.begin(url); 
-  http.setTimeout(5000); // Max 5 vteřin, pak to vzdá a nezamrzne
-  
+  http.setFollowRedirects(HTTPC_STRICT_FOLLOW_REDIRECTS); 
+  http.begin(client, url);
+  http.setTimeout(12000); 
+  http.addHeader("User-Agent", "ESP32-Honzueink");
+
   int httpCode = http.GET();
   String vysledek = "";
-  
-  if (httpCode == HTTP_CODE_OK) {
+
+  if (httpCode == 200) { 
     vysledek = http.getString();
   } else {
-    vysledek = "Chyba:" + String(httpCode);
+    Serial.println("CHYBA GITHUB: " + String(httpCode) + " u souboru: " + nazev);
   }
-  
+
   http.end();
+  // Vracíme "" pokud to selže, abychom nepřepsali dobrá data chybou!
   return vysledek;
 }
 
 void aktualizovatDataNaPozadi(bool vynuceno) {
-  if (vynuceno || (millis() - posledniAktualizace >= intervalAktualizace)) {
-    if (vynuceno) nakresliLoadScreen("Navazuji spojení...", 20);
+  bool casNaUpdate = false;
+  time_t now = time(NULL);
+  
+  // Zkontrolujeme, jestli ESP už má z internetu reálný čas (epoch > 1.6 miliardy)
+  if (intervalIdx > 0 && now > 1600000000) {
+    unsigned long intervalSec = intervalyMs[intervalIdx] / 1000;
+    if (rtc_posledniAktualizace == 0 || (now - rtc_posledniAktualizace >= intervalSec)) {
+      casNaUpdate = true;
+    }
+  }
+
+  if (vynuceno || casNaUpdate) {
+    if (vynuceno || casNaUpdate) nakresliLoadScreen("Navazuji spojení...", 10);
     
     if (pripojWiFi()) {
-      if (vynuceno) nakresliLoadScreen("Stahuji data z GitHubu...", 60);
-      stazenaDataSvet = stahniTextZUrl(urlZpravySvet);
-      stazenaDataCR = stahniTextZUrl(urlZpravyCR);
-      stazenaDataTech = stahniTextZUrl(urlTechAI);
-      stazenaDataPocasi = stahniTextZUrl(urlPocasi);
-      stazenaDataKurzy = stahniTextZUrl(urlKurzy);
-      parsujPocasi(stazenaDataPocasi);
-      posledniAktualizace = millis(); nepovedenePokusy = 0;
+      WiFiClientSecure secureClient;
+      secureClient.setInsecure(); 
+      bool asponNecoSeStahlo = false;
       
-      // Wi-Fi necháme běžet chvíli po stáhnutí kvůli hodinám, 
-      // nebo ji můžeš odpojit příkazem WiFi.disconnect(false);
+      nakresliLoadScreen("Stahuji zprávy ze světa...", 30);
+      String tSvet = stahniTextZUrl(secureClient, "Svet", urlZpravySvet);
+      // BEZPEČNÁ KONTROLA: Přepiš jen když se stáhl validní text (delší než 20 znaků)
+      if (tSvet.length() > 20) { stazenaDataSvet = tSvet; asponNecoSeStahlo = true; }
       
-      if (vynuceno) {
-        nakresliLoadScreen("HOTOVO!", 100);
+      nakresliLoadScreen("Stahuji zprávy z ČR...", 45);
+      String tCR = stahniTextZUrl(secureClient, "CR", urlZpravyCR);
+      if (tCR.length() > 20) { stazenaDataCR = tCR; asponNecoSeStahlo = true; }
+      
+      nakresliLoadScreen("Stahuji Tech a AI...", 60);
+      String tTech = stahniTextZUrl(secureClient, "Tech", urlTechAI);
+      if (tTech.length() > 20) { stazenaDataTech = tTech; asponNecoSeStahlo = true; }
+      
+      nakresliLoadScreen("Stahuji Počasí...", 75);
+      String tPoc = stahniTextZUrl(secureClient, "Pocasi", urlPocasi);
+      if (tPoc.length() > 20) { stazenaDataPocasi = tPoc; asponNecoSeStahlo = true; }
+      
+      nakresliLoadScreen("Stahuji Kurzy...", 90);
+      String tKur = stahniTextZUrl(secureClient, "Kurzy", urlKurzy);
+      if (tKur.length() > 10) { stazenaDataKurzy = tKur; asponNecoSeStahlo = true; }
+      
+      if (asponNecoSeStahlo) {
+        parsujPocasi(stazenaDataPocasi);
+        nepovedenePokusy = 0;
+        rtc_posledniAktualizace = time(NULL); 
+        ulozStazenaData(); // Uložíme je do paměti, kterou nespálí Deep sleep
+      }
+      
+      if (vynuceno || casNaUpdate) {
+        nakresliLoadScreen("HOTOVO A ULOŽENO!", 100);
         delay(1000);
       }
     } else {
@@ -451,7 +684,6 @@ void zobrazOZaRizeni() {
     display.drawFastHLine(0, 23, display.width(), fgColor());
 
     u8g2Fonts.setFont(getSmallFont()); 
-    // Trochu zmenšíme řádkování, ať se nám to hezky vejde na displej
     int y = 38; int lh = 14; 
 
     u8g2Fonts.setCursor(5, y); u8g2Fonts.print("Model: Heltec Vision Master E290"); y += lh;
@@ -463,7 +695,7 @@ void zobrazOZaRizeni() {
     u8g2Fonts.setCursor(5, y); u8g2Fonts.print(ramStr.c_str()); y += lh;
 
     uint32_t flashSize = ESP.getFlashChipSize() / (1024 * 1024);
-    uint32_t sketchSize = ESP.getSketchSize() / 1024; // Velikost aktuálního kódu v KB
+    uint32_t sketchSize = ESP.getSketchSize() / 1024;
     String flashStr = "Flash: " + String(flashSize) + " MB (Kód zabírá: " + String(sketchSize) + " KB)";
     u8g2Fonts.setCursor(5, y); u8g2Fonts.print(flashStr.c_str()); y += lh;
 
@@ -599,8 +831,18 @@ void zobrazPocasiDen(int denIdx) {
     display.fillScreen(bgColor());
     u8g2Fonts.setFontMode(1);
     u8g2Fonts.setFont(getTitleFont()); u8g2Fonts.setForegroundColor(fgColor()); u8g2Fonts.setBackgroundColor(bgColor());
-    String nadpis = "POČASÍ: " + predpoved[denIdx].datum + " (" + String(denIdx + 1) + "/7)";
+    
+    String denZkratka = "";
+    struct tm timeinfo;
+    if (getLocalTime(&timeinfo, 10)) {
+      const char* dnyVTydnu[] = {"Ne", "Po", "Ut", "St", "Ct", "Pa", "So"};
+      int hledanyDen = (timeinfo.tm_wday + denIdx) % 7;
+      denZkratka = String(dnyVTydnu[hledanyDen]) + " ";
+    }
+    
+    String nadpis = "POČASÍ: " + denZkratka + predpoved[denIdx].datum + " (" + String(denIdx + 1) + "/7)";
     u8g2Fonts.setCursor(10, 18); u8g2Fonts.print(nadpis.c_str());
+    
     nakresliStatusBar();
     display.drawFastHLine(0, 23, display.width(), fgColor());
 
@@ -800,14 +1042,12 @@ void drawStopky(unsigned long ms, bool running) {
     }
     display.drawLine(cx, cy, hx, hy, fgColor()); display.drawLine(cx + 1, cy, hx + 1, hy, fgColor()); display.drawLine(cx, cy + 1, hx, hy + 1, fgColor());
     
-    // ZAPNUTÍ NEPRŮHLEDNÉHO POZADÍ A OBŘÍHO FONTU
     u8g2Fonts.setFontMode(0); 
     u8g2Fonts.setForegroundColor(fgColor()); 
     u8g2Fonts.setBackgroundColor(bgColor());
     
     char timeBuf[12]; sprintf(timeBuf, "%02d:%02d", min, sec);
-    // Masivní font pro odpočítávání
-    u8g2Fonts.setFont(u8g2_font_fub20_tf); 
+    u8g2Fonts.setFont(getBigFont()); // Použije tvůj nastavený velký font
     u8g2Fonts.setCursor(10, 52); 
     u8g2Fonts.print(timeBuf);
     
@@ -818,7 +1058,6 @@ void drawStopky(unsigned long ms, bool running) {
     
     u8g2Fonts.setFont(getTitleFont()); u8g2Fonts.setCursor(10, 80); u8g2Fonts.print(running ? "BĚŽÍ" : "STOP");
     
-    // NÁVRAT ZPĚT K BĚŽNÉMU VYKRESLOVÁNÍ
     u8g2Fonts.setFontMode(1); 
     u8g2Fonts.setFont(getSmallFont()); u8g2Fonts.setCursor(5, 105); u8g2Fonts.print("BTN21 = start/stop"); u8g2Fonts.setCursor(5, 117); u8g2Fonts.print("BTN0 = reset"); u8g2Fonts.setCursor(5, 127); u8g2Fonts.print("Drž BTN21 = zpět");
   } while (display.nextPage());
@@ -891,16 +1130,13 @@ void zobrazOdhalovacku() {
   } while (display.nextPage());
 }
 
-// ==== ODHALOVAČKA VÝSLEDEK (OBRÁZEK VLEVO, TEXT VPRAVO) ====
 void zobrazOdhalovackuDetail() {
   display.setPartialWindow(0, 0, display.width(), display.height());
   display.firstPage();
   do {
     display.fillScreen(bgColor()); u8g2Fonts.setFontMode(1); nakresliStatusBar();
-    // Obrázek nalepený vlevo od shora
     drawScaledBitmap(10, 0, img_slunce, 64, 64, fgColor(), 2, false); 
     
-    // Velký text vpravo
     u8g2Fonts.setFont(getBigFont());
     u8g2Fonts.setForegroundColor(fgColor());
     u8g2Fonts.setCursor(145, 64);
@@ -990,7 +1226,6 @@ void zobrazFraze(const char* title, const Fraze* data, int count) {
   } while (display.nextPage());
 }
 
-// ==== UČENÍ S OBŘÍM FONTEM ====
 void zobrazUceni() {
   SlovnikSlovo s; memcpy_P(&s, &slovnikData[uceniIdx], sizeof(SlovnikSlovo));
   char cz[30], en[30]; strncpy_P(cz, (const char*)s.cz, sizeof(cz) - 1); cz[sizeof(cz) - 1] = '\0'; strncpy_P(en, (const char*)s.en, sizeof(en) - 1); en[sizeof(en) - 1] = '\0';
@@ -1008,7 +1243,6 @@ void zobrazUceni() {
     u8g2Fonts.setCursor(200, 16); u8g2Fonts.print(smerText); 
     display.drawFastHLine(0, 20, display.width(), fgColor());
     
-    // Obří font pro slovíčka
     u8g2Fonts.setFont(getBigFont()); 
     u8g2Fonts.setCursor(15, 50); u8g2Fonts.print(otazka); 
     display.drawFastHLine(10, 60, display.width() - 20, fgColor());
@@ -1023,7 +1257,6 @@ void zobrazUceni() {
   } while (display.nextPage());
 }
 
-// ==== GENERÁTOR ZMENŠENÝ FONT ====
 void zobrazGeneratorResult(const char* title, const char* text) {
   int maxWidth = display.width() - 10; 
   char buf[500]; strncpy(buf, text, sizeof(buf) - 1); buf[sizeof(buf) - 1] = '\0';
@@ -1031,7 +1264,6 @@ void zobrazGeneratorResult(const char* title, const char* text) {
   TextLine lines[50]; 
   int lineCount = zalamejText(buf, strlen(buf), lines, 50, maxWidth);
 
-  // Menší řádkování a menší font aby to nelezlo ven
   int lineHeight = 16; 
   int linesPerPage = 100 / lineHeight;
 
@@ -1044,7 +1276,6 @@ void zobrazGeneratorResult(const char* title, const char* text) {
     u8g2Fonts.setCursor(10, 16); u8g2Fonts.print(title); 
     display.drawFastHLine(0, 20, display.width(), fgColor());
     
-    // Používáme menší body font místo getBigFont()
     u8g2Fonts.setFont(getBodyFont()); 
     int totalH = lineCount * lineHeight;
     int startY = 25 + (103 - totalH) / 2 + (lineHeight / 2); 
@@ -1100,11 +1331,13 @@ void goBack() {
     case STATE_SLOVNIK_DETAIL: appState = STATE_SLOVNIK; zobrazSubMenu("SLOVNÍK", slovnikItems, slovnikCount, subMenuIndex, subScrollOffset); break;
     case STATE_SLOVNIK: appState = STATE_MAIN_MENU; zobrazSubMenu("HLAVNÍ MENU", mainMenuItems, mainMenuCount, menuIndex, scrollOffset); break;
     
+    case STATE_QR_ZOBRAZ: appState = STATE_QR_MENU; zobrazSubMenu("QR KÓDY", qrItems, qrCount, subMenuIndex, subScrollOffset); break;
+    case STATE_QR_MENU: appState = STATE_TOOLBOX; subMenuIndex = 2; subScrollOffset = 0; zobrazSubMenu("TOOLBOX", toolboxItems, toolboxCount, subMenuIndex, subScrollOffset); break;
     case STATE_LED_ON: ledState = false; digitalWrite(LED_PIN, LOW); appState = STATE_TOOLBOX; zobrazSubMenu("TOOLBOX", toolboxItems, toolboxCount, subMenuIndex, subScrollOffset); break;
     case STATE_STOPKY: stopkyRunning = false; stopkyElapsed = 0; appState = STATE_TOOLBOX; zobrazSubMenu("TOOLBOX", toolboxItems, toolboxCount, subMenuIndex, subScrollOffset); break;
     case STATE_TOOLBOX: appState = STATE_MAIN_MENU; zobrazSubMenu("HLAVNÍ MENU", mainMenuItems, mainMenuCount, menuIndex, scrollOffset); break;
     
-    case STATE_FLASKA: case STATE_KOSTKY: case STATE_ODHALOVACKA: case STATE_ODHALOVACKA_DETAIL: appState = STATE_HRY; zobrazSubMenu("HRY", hryItems, hryCount, subMenuIndex, subScrollOffset); break;
+    case STATE_KVIZ: case STATE_KVIZ_ODPOVED: case STATE_WYR: case STATE_FLASKA: case STATE_KOSTKY: case STATE_ODHALOVACKA: case STATE_ODHALOVACKA_DETAIL: appState = STATE_HRY; zobrazSubMenu("HRY", hryItems, hryCount, subMenuIndex, subScrollOffset); break;
     case STATE_KOSTKY_VYBER: appState = STATE_HRY; subMenuIndex = 1; subScrollOffset = 0; zobrazSubMenu("HRY", hryItems, hryCount, subMenuIndex, subScrollOffset); break;
     case STATE_GAMEBOOK: ulozGBPozici(gbNode); appState = STATE_HRY; subMenuIndex = 2; subScrollOffset = 0; zobrazSubMenu("HRY", hryItems, hryCount, subMenuIndex, subScrollOffset); break;
     case STATE_HRY: appState = STATE_MAIN_MENU; zobrazSubMenu("HLAVNÍ MENU", mainMenuItems, mainMenuCount, menuIndex, scrollOffset); break;
@@ -1112,8 +1345,9 @@ void goBack() {
     case STATE_GENERATOR_RESULT: appState = STATE_GENERATOR; zobrazSubMenu("GENERÁTOR", generatorItems, generatorCount, subMenuIndex, subScrollOffset); break;
     case STATE_GENERATOR: appState = STATE_MAIN_MENU; zobrazSubMenu("HLAVNÍ MENU", mainMenuItems, mainMenuCount, menuIndex, scrollOffset); break;
     
-    case STATE_NASTAVENI_O_ZARIZENI: appState = STATE_NASTAVENI; subMenuIndex = 3; zobrazSubMenu("NASTAVENÍ", nastaveniItems, nastaveniCount, subMenuIndex, subScrollOffset); break;
-    case STATE_NASTAVENI_BATERIE: appState = STATE_NASTAVENI; subMenuIndex = 2; zobrazSubMenu("NASTAVENÍ", nastaveniItems, nastaveniCount, subMenuIndex, subScrollOffset); break;
+    case STATE_NASTAVENI_O_ZARIZENI: appState = STATE_NASTAVENI; subMenuIndex = 4; zobrazSubMenu("NASTAVENÍ", nastaveniItems, nastaveniCount, subMenuIndex, subScrollOffset); break;
+    case STATE_NASTAVENI_BATERIE: appState = STATE_NASTAVENI; subMenuIndex = 3; zobrazSubMenu("NASTAVENÍ", nastaveniItems, nastaveniCount, subMenuIndex, subScrollOffset); break;
+    case STATE_NASTAVENI_AKTUALIZACE: appState = STATE_NASTAVENI; subMenuIndex = 1; zobrazSubMenu("NASTAVENÍ", nastaveniItems, nastaveniCount, subMenuIndex, subScrollOffset); break;
     case STATE_NASTAVENI_VZHLED: appState = STATE_NASTAVENI; subMenuIndex = 0; zobrazSubMenu("NASTAVENÍ", nastaveniItems, nastaveniCount, subMenuIndex, subScrollOffset); break;
     case STATE_NASTAVENI: appState = STATE_MAIN_MENU; zobrazSubMenu("HLAVNÍ MENU", mainMenuItems, mainMenuCount, menuIndex, scrollOffset); break;
 
@@ -1127,7 +1361,7 @@ void setup() {
   randomSeed(analogRead(0) + millis());
   pinMode(Vext, OUTPUT); digitalWrite(Vext, HIGH); delay(100);
   pinMode(LED_PIN, OUTPUT); digitalWrite(LED_PIN, LOW);
-  
+
   SPI.begin(2, -1, 1, 3); 
   display.init(); 
   display.setRotation(1);
@@ -1141,8 +1375,22 @@ void setup() {
   pinMode(BTN_DOWN, INPUT_PULLUP); pinMode(BTN_SELECT, INPUT_PULLUP);
   
   nactiPoziceKnih(); gbNode = nactiGBPozici();
+  
+  prefs.begin("nastaveni", true);
+  intervalIdx = prefs.getInt("updInt", 4);
+  prefs.end();
 
-  aktualizovatDataNaPozadi(true);
+  // 1. ZKUSÍME NAČÍST DATA Z ULOŽENÉ PAMĚTI
+  nactiStazenaData();
+  
+  // 2. DETEKCE PROBUZENÍ Z DEEP SLEEPU
+  if (esp_sleep_get_wakeup_cause() == ESP_SLEEP_WAKEUP_EXT0) {
+    if (stazenaDataSvet.length() < 20) {
+      aktualizovatDataNaPozadi(true); 
+    }
+  } else {
+    aktualizovatDataNaPozadi(true);
+  }
   
   zobrazSubMenu("HLAVNÍ MENU", mainMenuItems, mainMenuCount, menuIndex, scrollOffset);
 }
@@ -1180,11 +1428,16 @@ void loop() {
   if (digitalRead(BTN_DOWN) == LOW) {
     delay(10); 
     if (digitalRead(BTN_DOWN) == LOW) {
+
+      if (appState == STATE_MAIN_MENU && longPressBTN0()) {
+        jdiSpat();
+        return;
+      }
+
       if (appState == STATE_KOSTKY) {
         bool zatraseno = false;
         while (digitalRead(BTN_DOWN) == LOW) {
           if(!zatraseno) { 
-            // OPRAVA PRO 2x6: První kostka teď umí jen do 6, předtím zkoušela do 66!
             int rndMax = (kostkyStran == 66) ? 6 : kostkyStran;
             drawKostkaFrame(random(1, rndMax + 1), random(1, 7), kostkyStran, "Třesu...", false);
             zatraseno = true;
@@ -1219,6 +1472,7 @@ void loop() {
         case STATE_ZPRAVY_SEZNAM: clanekMenuIndex = (clanekMenuIndex + 1) % pocetZprav; zobrazSeznamZprav(); break;
         case STATE_ZPRAVY_TEXT: textScrollPage++; zobrazText(aktualniZpravy[clanekMenuIndex].titulek.c_str(), aktualniZpravy[clanekMenuIndex].text.c_str()); break;
         case STATE_TOOLBOX: menuDown(subMenuIndex, subScrollOffset, toolboxCount); zobrazSubMenu("TOOLBOX", toolboxItems, toolboxCount, subMenuIndex, subScrollOffset); break;
+        case STATE_QR_MENU: menuDown(subMenuIndex, subScrollOffset, qrCount); zobrazSubMenu("QR KÓDY", qrItems, qrCount, subMenuIndex, subScrollOffset); break;
         
         case STATE_SLOVNIK: menuDown(subMenuIndex, subScrollOffset, slovnikCount); zobrazSubMenu("SLOVNÍK", slovnikItems, slovnikCount, subMenuIndex, subScrollOffset); break;
         case STATE_SLOVNIK_DETAIL: abcKurzor = (abcKurzor + 1) % abcCount; zobrazHledani(); break;
@@ -1234,8 +1488,14 @@ void loop() {
         case STATE_GENERATOR: menuDown(subMenuIndex, subScrollOffset, generatorCount); zobrazSubMenu("GENERÁTOR", generatorItems, generatorCount, subMenuIndex, subScrollOffset); break;
         case STATE_HRY: menuDown(subMenuIndex, subScrollOffset, hryCount); zobrazSubMenu("HRY", hryItems, hryCount, subMenuIndex, subScrollOffset); break;
         case STATE_KOSTKY_VYBER: menuDown(subMenuIndex, subScrollOffset, kostkyCount); zobrazSubMenu("KOSTKY", kostkyItems, kostkyCount, subMenuIndex, subScrollOffset); break;
+        
+        case STATE_KVIZ: aktualniHraIdx = random(kvizPocet); zobrazKviz(); break;
+        case STATE_KVIZ_ODPOVED: appState = STATE_KVIZ; aktualniHraIdx = random(kvizPocet); zobrazKviz(); break;
+        case STATE_WYR: aktualniHraIdx = random(wyrPocet); zobrazWyr(); break;
+        
         case STATE_NASTAVENI: menuDown(subMenuIndex, subScrollOffset, nastaveniCount); zobrazSubMenu("NASTAVENÍ", nastaveniItems, nastaveniCount, subMenuIndex, subScrollOffset); break;
         case STATE_NASTAVENI_VZHLED: menuDown(subMenuIndex, subScrollOffset, vzhledCount); zobrazSubMenu("VZHLED", vzhledItems, vzhledCount, subMenuIndex, subScrollOffset); break;
+        case STATE_NASTAVENI_AKTUALIZACE: menuDown(subMenuIndex, subScrollOffset, intervalCount); zobrazSubMenu("AKTUALIZACE", intervalItems, intervalCount, subMenuIndex, subScrollOffset); break;
         
         case STATE_ODHALOVACKA: case STATE_ODHALOVACKA_DETAIL: goBack(); break;
         
@@ -1283,7 +1543,10 @@ void loop() {
         case STATE_TOOLBOX:
           if (subMenuIndex == 0) { appState = STATE_LED_ON; zobrazLedStav(); }
           else if (subMenuIndex == 1) { appState = STATE_STOPKY; stopkyRunning = false; stopkyElapsed = 0; stopkyLastDraw = 0; drawStopky(0, false); }
+          else if (subMenuIndex == 2) { appState = STATE_QR_MENU; subMenuIndex = 0; subScrollOffset = 0; zobrazSubMenu("QR KÓDY", qrItems, qrCount, 0, 0); }
           break;
+
+        case STATE_QR_MENU: appState = STATE_QR_ZOBRAZ; zobrazQR(qrItems[subMenuIndex].c_str(), qrData[subMenuIndex].c_str()); break;
 
         case STATE_LED_ON: ledState = !ledState; digitalWrite(LED_PIN, ledState ? HIGH : LOW); zobrazLedStav(); break;
         case STATE_STOPKY:
@@ -1324,16 +1587,18 @@ void loop() {
           zobrazUceni();
           break;
 
-        case STATE_GENERATOR:
-          appState = STATE_GENERATOR_RESULT;
-          if (subMenuIndex == 0) zobrazGeneratorResult("VTIP", vtipy[random(vtipyPocet)]);
-          else if (subMenuIndex == 1) zobrazGeneratorResult("ŽALM", zalmy[random(zalmyPocet)]);
-          else if (subMenuIndex == 2) zobrazGeneratorResult("CITÁT", citaty[random(citatyPocet)]);
-          break;
+       case STATE_GENERATOR:
+         appState = STATE_GENERATOR_RESULT;
+         if (subMenuIndex == 0) zobrazGeneratorResult("VTIP", vtipy[random(vtipyPocet)]);
+         else if (subMenuIndex == 1) zobrazGeneratorResult("ŽALM", zalmy[random(zalmyPocet)]);
+         else if (subMenuIndex == 2) zobrazGeneratorResult("CITÁT", citaty[random(citatyPocet)]);
+         else if (subMenuIndex == 3) zobrazGeneratorResult("FAKT", fakty[random(faktyPocet)]); 
+         break;
         case STATE_GENERATOR_RESULT:
           if (subMenuIndex == 0) zobrazGeneratorResult("VTIP", vtipy[random(vtipyPocet)]);
           else if (subMenuIndex == 1) zobrazGeneratorResult("ŽALM", zalmy[random(zalmyPocet)]);
           else if (subMenuIndex == 2) zobrazGeneratorResult("CITÁT", citaty[random(citatyPocet)]);
+          else if (subMenuIndex == 3) zobrazGeneratorResult("FAKT", fakty[random(faktyPocet)]); 
           break;
 
         case STATE_HRY:
@@ -1341,6 +1606,8 @@ void loop() {
           else if (subMenuIndex == 1) { appState = STATE_KOSTKY_VYBER; subMenuIndex = 0; subScrollOffset = 0; zobrazSubMenu("KOSTKY", kostkyItems, kostkyCount, 0, 0); }
           else if (subMenuIndex == 2) { appState = STATE_GAMEBOOK; gbNode = nactiGBPozici(); gbTextPage = 0; zobrazGBNode(); }
           else if (subMenuIndex == 3) { appState = STATE_ODHALOVACKA; odhalovackaKonec = false; for(int i=0; i<64; i++) odhalenoPole[i] = false; zobrazOdhalovacku(); }
+          else if (subMenuIndex == 4) { appState = STATE_KVIZ; aktualniHraIdx = random(kvizPocet); zobrazKviz(); }
+          else if (subMenuIndex == 5) { appState = STATE_WYR; aktualniHraIdx = random(wyrPocet); zobrazWyr(); }
           break;
         case STATE_FLASKA: hrajFlasku(); break;
         case STATE_KOSTKY_VYBER: kostkyStran = kostkyStrany[subMenuIndex]; appState = STATE_KOSTKY; zobrazKostkyIdle(); break;
@@ -1352,18 +1619,19 @@ void loop() {
             else { gbNode = volbaA; gbTextPage = 0; ulozGBPozici(gbNode); zobrazGBNode(); }
             break;
           }
-        case STATE_ODHALOVACKA:
-          odhalovackaKonec = true; appState = STATE_ODHALOVACKA_DETAIL; zobrazOdhalovackuDetail();
-          break;
-        case STATE_ODHALOVACKA_DETAIL:
-          appState = STATE_HRY; zobrazSubMenu("HRY", hryItems, hryCount, subMenuIndex, subScrollOffset);
-          break;
+        case STATE_ODHALOVACKA: odhalovackaKonec = true; appState = STATE_ODHALOVACKA_DETAIL; zobrazOdhalovackuDetail(); break;
+        case STATE_ODHALOVACKA_DETAIL: appState = STATE_HRY; zobrazSubMenu("HRY", hryItems, hryCount, subMenuIndex, subScrollOffset); break;
+        
+        case STATE_KVIZ: appState = STATE_KVIZ_ODPOVED; zobrazKvizOdpoved(); break;
+        case STATE_KVIZ_ODPOVED: appState = STATE_KVIZ; aktualniHraIdx = random(kvizPocet); zobrazKviz(); break;
+        case STATE_WYR: aktualniHraIdx = random(wyrPocet); zobrazWyr(); break;
 
         case STATE_NASTAVENI:
           if (subMenuIndex == 0) { appState = STATE_NASTAVENI_VZHLED; subMenuIndex = 0; subScrollOffset = 0; zobrazSubMenu("VZHLED", vzhledItems, vzhledCount, 0, 0); }
-          else if (subMenuIndex == 1) { aktualizovatDataNaPozadi(true); zobrazSubMenu("NASTAVENÍ", nastaveniItems, nastaveniCount, subMenuIndex, subScrollOffset); }
-          else if (subMenuIndex == 2) { appState = STATE_NASTAVENI_BATERIE; zobrazBateriiMenu(); }
-          else if (subMenuIndex == 3) { appState = STATE_NASTAVENI_O_ZARIZENI; zobrazOZaRizeni(); } // Vyvolání nové obrazovky
+          else if (subMenuIndex == 1) { appState = STATE_NASTAVENI_AKTUALIZACE; subMenuIndex = intervalIdx; subScrollOffset = 0; zobrazSubMenu("AKTUALIZACE", intervalItems, intervalCount, subMenuIndex, subScrollOffset); }
+          else if (subMenuIndex == 2) { aktualizovatDataNaPozadi(true); zobrazSubMenu("NASTAVENÍ", nastaveniItems, nastaveniCount, subMenuIndex, subScrollOffset); }
+          else if (subMenuIndex == 3) { appState = STATE_NASTAVENI_BATERIE; zobrazBateriiMenu(); }
+          else if (subMenuIndex == 4) { appState = STATE_NASTAVENI_O_ZARIZENI; zobrazOZaRizeni(); }
           break;
 
         case STATE_NASTAVENI_VZHLED:
@@ -1371,6 +1639,12 @@ void loop() {
           else if (subMenuIndex == 1) { currentSize = (currentSize + 1) % 4; delay(100); zobrazSubMenu("VZHLED", vzhledItems, vzhledCount, subMenuIndex, subScrollOffset); }
           else if (subMenuIndex == 2) { currentBold = (currentBold + 1) % 2; delay(100); zobrazSubMenu("VZHLED", vzhledItems, vzhledCount, subMenuIndex, subScrollOffset); }
           else if (subMenuIndex == 3) { reverseMode = !reverseMode; delay(100); zobrazSubMenu("VZHLED", vzhledItems, vzhledCount, subMenuIndex, subScrollOffset); }
+          break;
+          
+        case STATE_NASTAVENI_AKTUALIZACE:
+          intervalIdx = subMenuIndex; 
+          prefs.begin("nastaveni", false); prefs.putInt("updInt", intervalIdx); prefs.end(); 
+          goBack(); 
           break;
 
         default: break;

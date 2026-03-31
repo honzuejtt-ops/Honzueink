@@ -1,9 +1,5 @@
 ASTROLOGICKA PREDPOVED
 
-[31. 03.]
-Slunce: 06:40 - 19:32
-Mesic: Dorustajici Mesic (94%)
---------------------
 [01. 04.]
 Slunce: 06:38 - 19:33
 Mesic: Dorustajici Mesic (98%)
@@ -27,4 +23,8 @@ Mesic: Couvajici Mesic (92%)
 [06. 04.]
 Slunce: 06:27 - 19:41
 Mesic: Couvajici Mesic (85%)
+--------------------
+[07. 04.]
+Slunce: 06:25 - 19:43
+Mesic: Couvajici Mesic (77%)
 --------------------

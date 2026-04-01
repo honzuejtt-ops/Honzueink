@@ -20,7 +20,8 @@ jobs:
           python-version: '3.10'
 
       - name: Instalace knihoven
-        run: pip install requests beautifulsoup4
+        # TADY JE TA ZMĚNA: Přidáno slůvko trafilatura nakonec řádku
+        run: pip install requests beautifulsoup4 trafilatura
 
       - name: Spusteni Python skriptu
         env:

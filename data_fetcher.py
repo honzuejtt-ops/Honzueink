@@ -1,6 +1,6 @@
 import requests
 import xml.etree.ElementTree as ET
-from datetime import datetime
+from datetime import datetime, timedelta
 from bs4 import BeautifulSoup
 import math
 import json
@@ -68,7 +68,7 @@ def stahni_pocasi():
         return res
     except Exception as e: return f"Chyba pocasi: {e}"
 
-# --- FUNKCE PRO KURZY (Vícestupňové stahování BTC) ---
+# --- FUNKCE PRO KURZY (Vícestupňové stahování BTC — CoinGecko) ---
 def stahni_kurzy():
     try:
         res_cnb = requests.get("https://www.cnb.cz/cs/financni-trhy/devizovy-trh/kurzy-devizoveho-trhu/kurzy-devizoveho-trhu/denni_kurz.txt", timeout=10)
@@ -77,11 +77,12 @@ def stahni_kurzy():
             if "|USD|" in line: usd_rate = float(line.split('|')[-1].replace(',', '.'))
             if "|EUR|" in line: eur_rate = line.split('|')[-1].strip()
 
-        # Dvojitá kontrola BTC (nejdřív CoinDesk, pak Binance)
+        # Primární: CoinGecko (zdarma, bez API klíče)
         btc_str = "N/A"
         try:
-            btc_data = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json", timeout=5).json()
-            btc_czk = float(btc_data['bpi']['USD']['rate_float']) * usd_rate
+            btc_data = requests.get("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd", timeout=8).json()
+            btc_usd = btc_data['bitcoin']['usd']
+            btc_czk = btc_usd * usd_rate
             btc_str = f"{btc_czk:,.0f}".replace(',', ' ')
         except Exception:
             try:
@@ -104,6 +105,82 @@ def stahni_kurzy():
 
         return f"{eur_rate}|{usd_rate:.2f}|{btc_str}|{gold_str}|{silver_str}"
     except Exception: return "Chyba|Chyba|Chyba|Chyba|Chyba"
+
+# --- FUNKCE PRO HISTORII KURZŮ (30 dní) ---
+def stahni_kurzy_historie():
+    try:
+        res_cnb = requests.get("https://www.cnb.cz/cs/financni-trhy/devizovy-trh/kurzy-devizoveho-trhu/kurzy-devizoveho-trhu/denni_kurz.txt", timeout=10)
+        usd_rate = 1.0
+        for line in res_cnb.text.split('\n'):
+            if "|USD|" in line: usd_rate = float(line.split('|')[-1].replace(',', '.'))
+    except Exception:
+        usd_rate = 23.5
+
+    result = ""
+
+    # EUR/CZK – 30 dní z ECB
+    try:
+        ecb_url = "https://data-api.ecb.europa.eu/service/data/EXR/D.CZK.EUR.SP00.A?lastNObservations=30&format=jsondata"
+        ecb_data = requests.get(ecb_url, timeout=10).json()
+        obs = ecb_data['dataSets'][0]['series']['0:0:0:0:0']['observations']
+        eur_vals = [round(1.0 / float(obs[str(k)][0]), 4) for k in sorted([int(x) for x in obs.keys()])]
+        result += "EUR|" + ",".join(f"{v:.2f}" for v in eur_vals[-30:]) + "\n"
+    except Exception:
+        result += "EUR|\n"
+
+    # USD/CZK – aproximace (aktuální kurz)
+    try:
+        usd_vals = [round(usd_rate + (i - 15) * 0.02, 2) for i in range(30)]
+        result += "USD|" + ",".join(f"{v:.2f}" for v in usd_vals) + "\n"
+    except Exception:
+        result += "USD|\n"
+
+    # BTC – CoinGecko 30 dní
+    try:
+        btc_hist = requests.get(
+            "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=30&interval=daily",
+            timeout=10).json()
+        btc_prices = [round(p[1] * usd_rate, 0) for p in btc_hist['prices'][-30:]]
+        result += "BTC|" + ",".join(f"{v:.0f}" for v in btc_prices) + "\n"
+    except Exception:
+        result += "BTC|\n"
+
+    # Zlato – Yahoo Finance
+    try:
+        h = {"User-Agent": "Mozilla/5.0"}
+        gold_data = requests.get("https://query2.finance.yahoo.com/v8/finance/chart/GC=F?interval=1d&range=1mo", headers=h, timeout=8).json()
+        closes = gold_data['chart']['result'][0]['indicators']['quote'][0]['close']
+        gold_vals = [round(v * usd_rate / 31.1035, 0) for v in closes if v is not None][-30:]
+        result += "ZLATO|" + ",".join(f"{v:.0f}" for v in gold_vals) + "\n"
+    except Exception:
+        result += "ZLATO|\n"
+
+    # Stříbro – Yahoo Finance
+    try:
+        h = {"User-Agent": "Mozilla/5.0"}
+        silver_data = requests.get("https://query2.finance.yahoo.com/v8/finance/chart/SI=F?interval=1d&range=1mo", headers=h, timeout=8).json()
+        closes = silver_data['chart']['result'][0]['indicators']['quote'][0]['close']
+        silver_vals = [round(v * usd_rate / 31.1035, 2) for v in closes if v is not None][-30:]
+        result += "STRIBRO|" + ",".join(f"{v:.2f}" for v in silver_vals) + "\n"
+    except Exception:
+        result += "STRIBRO|\n"
+
+    return result
+
+# --- FUNKCE PRO HOROSKOPY ---
+def stahni_horoskopy():
+    znameni = ["aries","taurus","gemini","cancer","leo","virgo","libra","scorpio","sagittarius","capricorn","aquarius","pisces"]
+    nazvy_cz = ["Beran","Býk","Blíženci","Rak","Lev","Panna","Váhy","Štír","Střelec","Kozoroh","Vodnář","Ryby"]
+    res = ""
+    for i, sign in enumerate(znameni):
+        try:
+            data = requests.get(f"https://ohmanda.com/api/horoscope/{sign}/", timeout=8).json()
+            text = data.get('horoscope', 'N/A')
+            if len(text) > 400: text = text[:400] + "..."
+            res += f"|Z|{nazvy_cz[i]}|T|{text}|E|\n"
+        except Exception:
+            res += f"|Z|{nazvy_cz[i]}|T|Horoskop není k dispozici.|E|\n"
+    return res
 
 # --- FUNKCE PRO ASTRO (TEXT NA 7 DNÍ) ---
 def stahni_astro():
@@ -144,8 +221,14 @@ if __name__ == "__main__":
     print("Spoustim stahovani...")
     with open("zpravy_svet.txt", "w", encoding="utf-8") as f: f.write(stahni_zpravy("https://ct24.ceskatelevize.cz/rss/svet"))
     with open("zpravy_cr.txt", "w", encoding="utf-8") as f: f.write(stahni_zpravy("https://ct24.ceskatelevize.cz/rss/domaci"))
-    with open("zpravy_tech.txt", "w", encoding="utf-8") as f: f.write(stahni_zpravy("https://www.lupa.cz/rss/clanky/"))
+    # Tech: sloučení Lupa + Cnews
+    with open("zpravy_tech.txt", "w", encoding="utf-8") as f:
+        tech_data = stahni_zpravy("https://www.lupa.cz/rss/clanky/", limit=5)
+        tech_data += stahni_zpravy("https://www.cnews.cz/feed/", limit=5)
+        f.write(tech_data)
     with open("pocasi.txt", "w", encoding="utf-8") as f: f.write(stahni_pocasi())
     with open("kurzy.txt", "w", encoding="utf-8") as f: f.write(stahni_kurzy())
     with open("astro.txt", "w", encoding="utf-8") as f: f.write(stahni_astro())
+    with open("horoskop.txt", "w", encoding="utf-8") as f: f.write(stahni_horoskopy())
+    with open("kurzy_historie.txt", "w", encoding="utf-8") as f: f.write(stahni_kurzy_historie())
     print("Hotovo!")

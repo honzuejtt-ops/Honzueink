@@ -29,7 +29,11 @@ def stahni_text_clanku(url, perex):
             # Přeskočit krátké odstavce, video placeholdery, navigaci a galerie
             if len(text) < 40:
                 continue
-            if re.search(r'(Video se připravuje|Fotogalerie \d+|Sdílet|Přihlásit|Komentáře|Cookie|Reklama)', text, re.I):
+            if re.search(r'(Video se připravuje|Fotogalerie \d+|Sdílet|Přihlásit|Komentáře|Cookie|Reklama|Zobrazit nové|Zobrazit další|Skrýt dny|Filtr:)', text, re.I):
+                continue
+            if re.match(r'^\d+\.\s*\d+\.\s*\d{4}$', text.strip()):
+                continue
+            if text.strip() in ('Vše', 'Důležité', 'Foto', 'Video', 'Sociální sítě'):
                 continue
             # Přeskočit řádky vypadající jako navigační menu (hodně slov / zkratky)
             if re.match(r'^([A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ][a-záčďéěíňóřšťúůýž]+ ){4,}', text):
@@ -41,8 +45,8 @@ def stahni_text_clanku(url, perex):
 
         if "Enable JavaScript" in obsah or len(obsah) < 100:
             return perex + "\n\n(Pozn: Celý text web zablokoval)"
-        if len(obsah) > 2500:
-            obsah = obsah[:2500] + "...\n(Pokracovani na webu)"
+        if len(obsah) > 4000:
+            obsah = obsah[:4000] + "...\n(Pokracovani na webu)"
         return obsah
     except Exception:
         return perex + "\n\n(Pozn: Chyba při stahování)"
@@ -250,13 +254,13 @@ def stahni_horoskopy():
 
 if __name__ == "__main__":
     print("Spoustim stahovani...")
-    svet_data = stahni_zpravy("https://ct24.ceskatelevize.cz/rss/svet", limit=15)
-    cr_data = stahni_zpravy("https://ct24.ceskatelevize.cz/rss/domaci", limit=15)
-    tech_data = stahni_zpravy("https://www.lupa.cz/rss/clanky/", limit=8)
-    tech_data += stahni_zpravy("https://www.cnews.cz/feed/", limit=7)
+    svet_data = stahni_zpravy("https://ct24.ceskatelevize.cz/rss/svet", limit=10)
+    cr_data = stahni_zpravy("https://ct24.ceskatelevize.cz/rss/domaci", limit=10)
+    tech_data = stahni_zpravy("https://www.lupa.cz/rss/clanky/", limit=5)
+    tech_data += stahni_zpravy("https://www.cnews.cz/feed/", limit=5)
 
-    bulvar_data = stahni_zpravy("https://www.blesk.cz/rss", limit=10)
-    bulvar_data += stahni_zpravy("https://www.super.cz/rss.xml", limit=5)
+    bulvar_data = stahni_zpravy("https://www.ahaonline.cz/rss.asp", limit=5)
+    bulvar_data += stahni_zpravy("https://www.extra.cz/rss", limit=5)
 
     with open("zpravy_svet.txt", "w", encoding="utf-8") as f: f.write(svet_data)
     with open("zpravy_cr.txt", "w", encoding="utf-8") as f: f.write(cr_data)

@@ -40,6 +40,17 @@ String stazenaDataHoroskop = ""; String stazenaDataKurzyHistorie = "";
 
 int nepovedenePokusy = 0; bool casSynchronizovan = false; int lastSecHodiny = -1;
 
+// Globální sdílený TLS klient
+WiFiClientSecure sharedClient;
+bool sharedClientInitialized = false;
+
+void initSharedClient() {
+  if (!sharedClientInitialized) {
+    sharedClient.setInsecure();
+    sharedClientInitialized = true;
+  }
+}
+
 // PAMĚŤ PŘEŽÍVAJÍCÍ DEEP SLEEP
 RTC_DATA_ATTR time_t rtc_posledniAktualizace = 0; 
 
@@ -776,65 +787,64 @@ bool pripojWiFi() {
   WiFi.setTxPower(WIFI_POWER_19_5dBm);
   WiFi.persistent(false);      
   WiFi.setSleep(false);        
-  delay(200);
+  delay(100);
 
   Serial.println("Hledám síť: " + String(ssid1));
   WiFi.begin(ssid1, pass1);
   int pokusy = 0;
-  while (WiFi.status() != WL_CONNECTED && pokusy < 35) { delay(500); pokusy++; }
+  while (WiFi.status() != WL_CONNECTED && pokusy < 20) { delay(500); pokusy++; }
 
   if (WiFi.status() != WL_CONNECTED) {
     Serial.println("Barhon selhal, zkouším Bobíka...");
     WiFi.begin(ssid2, pass2);
     pokusy = 0;
-    while (WiFi.status() != WL_CONNECTED && pokusy < 35) { delay(500); pokusy++; }
+    while (WiFi.status() != WL_CONNECTED && pokusy < 20) { delay(500); pokusy++; }
   }
 
   if (WiFi.status() == WL_CONNECTED) {
     configTzTime("CET-1CEST,M3.5.0,M10.5.0/3", "pool.ntp.org", "time.nist.gov");
     struct tm timeinfo;
-    if (getLocalTime(&timeinfo, 10000)) casSynchronizovan = true;
+    if (getLocalTime(&timeinfo, 3000)) casSynchronizovan = true;
     return true;
   }
   return false;
 }
 
 String stahniTextZUrl(String nazev, String url) {
-  WiFiClientSecure client;
-  client.setInsecure();
+  initSharedClient();
   HTTPClient http;
-  http.setFollowRedirects(HTTPC_STRICT_FOLLOW_REDIRECTS); 
-  http.begin(client, url);
-  http.setTimeout(12000); 
+  http.setFollowRedirects(HTTPC_STRICT_FOLLOW_REDIRECTS);
+  http.setReuse(true);
+  http.begin(sharedClient, url);
+  http.setTimeout(8000);
   http.addHeader("User-Agent", "ESP32-Honzueink");
+  http.addHeader("Connection", "keep-alive");
 
   int httpCode = http.GET();
   String vysledek = "";
 
-  if (httpCode == 200) { 
+  if (httpCode == 200) {
     vysledek = http.getString();
   } else {
     Serial.println("CHYBA GITHUB: " + String(httpCode) + " u souboru: " + nazev);
   }
-
   http.end();
-  client.stop();
+  // NEDĚLÁME sharedClient.stop() — držíme spojení pro další soubory!
 
-  // Retry jednou při selhání (prázdný výsledek)
+  // Retry pouze jednou, BEZ nového klienta
   if (vysledek.length() == 0) {
-    delay(500);
-    WiFiClientSecure client2;
-    client2.setInsecure();
+    delay(300);
     HTTPClient http2;
     http2.setFollowRedirects(HTTPC_STRICT_FOLLOW_REDIRECTS);
-    http2.begin(client2, url);
-    http2.setTimeout(12000);
+    http2.setReuse(true);
+    http2.begin(sharedClient, url);
+    http2.setTimeout(8000);
     http2.addHeader("User-Agent", "ESP32-Honzueink");
+    http2.addHeader("Connection", "keep-alive");
     int httpCode2 = http2.GET();
     if (httpCode2 == 200) { vysledek = http2.getString(); }
     else { Serial.println("RETRY CHYBA: " + String(httpCode2) + " u souboru: " + nazev); }
     http2.end();
-    client2.stop();
   }
 
   // Vracíme "" pokud to selže, abychom nepřepsali dobrá data chybou!
@@ -854,44 +864,45 @@ void aktualizovatDataNaPozadi(bool vynuceno) {
   }
 
   if (vynuceno || casNaUpdate) {
-    if (vynuceno || casNaUpdate) nakresliLoadScreen("Navazuji spojení...", 10);
+    nakresliLoadScreen("Navazuji spojení...", 5);
     
     if (pripojWiFi()) {
       bool asponNecoSeStahlo = false;
+      sharedClientInitialized = false; // Reset klienta pro čerstvé spojení
+      sharedClient.stop(); // Zavřeme případné předchozí spojení
       
-      nakresliLoadScreen("Stahuji zprávy ze světa...", 20);
-      String tSvet = stahniTextZUrl(secureClient, "Svet", urlZpravySvet);
+      nakresliLoadScreen("Stahuji zprávy ze světa...", 15);
+      String tSvet = stahniTextZUrl("Svet", urlZpravySvet);
       // BEZPEČNÁ KONTROLA: Přepiš jen když se stáhl validní text (delší než 20 znaků)
       if (tSvet.length() > 20) { stazenaDataSvet = tSvet; asponNecoSeStahlo = true; }
-      delay(200);
       
-      nakresliLoadScreen("Stahuji zprávy z ČR...", 35);
-      String tCR = stahniTextZUrl(secureClient, "CR", urlZpravyCR);
+      nakresliLoadScreen("Stahuji zprávy z ČR...", 28);
+      String tCR = stahniTextZUrl("CR", urlZpravyCR);
       if (tCR.length() > 20) { stazenaDataCR = tCR; asponNecoSeStahlo = true; }
-      delay(200);
       
-      nakresliLoadScreen("Stahuji Tech a AI...", 48);
-      String tTech = stahniTextZUrl(secureClient, "Tech", urlTechAI);
+      nakresliLoadScreen("Stahuji Tech a AI...", 42);
+      String tTech = stahniTextZUrl("Tech", urlTechAI);
       if (tTech.length() > 20) { stazenaDataTech = tTech; asponNecoSeStahlo = true; }
-      delay(200);
       
-      nakresliLoadScreen("Stahuji Počasí...", 60);
-      String tPoc = stahniTextZUrl(secureClient, "Pocasi", urlPocasi);
+      nakresliLoadScreen("Stahuji Počasí...", 55);
+      String tPoc = stahniTextZUrl("Pocasi", urlPocasi);
       if (tPoc.length() > 20) { stazenaDataPocasi = tPoc; asponNecoSeStahlo = true; }
-      delay(200);
       
-      nakresliLoadScreen("Stahuji Kurzy...", 72);
-      String tKur = stahniTextZUrl(secureClient, "Kurzy", urlKurzy);
+      nakresliLoadScreen("Stahuji Kurzy...", 68);
+      String tKur = stahniTextZUrl("Kurzy", urlKurzy);
       if (tKur.length() > 10) { stazenaDataKurzy = tKur; asponNecoSeStahlo = true; }
 
-      nakresliLoadScreen("Stahuji Horoskop...", 82);
-      String tHoro = stahniTextZUrl(secureClient, "Horoskop", urlHoroskop);
+      nakresliLoadScreen("Stahuji Horoskop...", 80);
+      String tHoro = stahniTextZUrl("Horoskop", urlHoroskop);
       if (tHoro.length() > 20) { stazenaDataHoroskop = tHoro; asponNecoSeStahlo = true; }
 
       nakresliLoadScreen("Stahuji hist. kurzů...", 92);
-      String tKHist = stahniTextZUrl(secureClient, "KurzyHist", urlKurzyHistorie);
+      String tKHist = stahniTextZUrl("KurzyHist", urlKurzyHistorie);
       if (tKHist.length() > 10) { stazenaDataKurzyHistorie = tKHist; asponNecoSeStahlo = true; }
       
+      // Uklidíme sdílený klient po dokončení všech stahování
+      sharedClient.stop();
+      sharedClientInitialized = false;
       if (asponNecoSeStahlo) {
         parsujPocasi(stazenaDataPocasi);
         parsujKurzy(stazenaDataKurzy);
@@ -900,10 +911,8 @@ void aktualizovatDataNaPozadi(bool vynuceno) {
         ulozStazenaData(); // Uložíme je do paměti, kterou nespálí Deep sleep
       }
       
-      if (vynuceno || casNaUpdate) {
-        nakresliLoadScreen("HOTOVO A ULOŽENO!", 100);
-        delay(1000);
-      }
+      nakresliLoadScreen(asponNecoSeStahlo ? "HOTOVO A ULOŽENO!" : "Stažení selhalo!", 100);
+      delay(800);
     } else {
       if (vynuceno) {
         nakresliLoadScreen("Wi-Fi nenalezena!", 0);

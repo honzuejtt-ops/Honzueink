@@ -13,11 +13,11 @@
 #include <time.h>
 
 #include "TextLine.h"
-#include "Gamebook.h"
-#include "Knihy.h"
-#include "Generator.h"
-#include "Slovnik.h"
-#include "Fraze.h"
+#include "gamebook.h"
+#include "knihy.h"
+#include "generator.h"
+#include "slovnik.h"
+#include "fraze.h"
 #include "HryKviz.h" 
 #include "HryWyr.h"  
 
@@ -42,7 +42,7 @@ String stazenaDataBulvar = "";
 String stazenaDataPocasi = ""; String stazenaDataKurzy = "";
 String stazenaDataHoroskop = ""; String stazenaDataKurzyHistorie = "";
 
-int nepovedenePokusy = 0; bool casSynchronizovan = false; int lastSecHodiny = -1;
+bool casSynchronizovan = false; int lastSecHodiny = -1;
 
 // Globální sdílený TLS klient
 WiFiClientSecure sharedClient;
@@ -59,7 +59,7 @@ void initSharedClient() {
 RTC_DATA_ATTR time_t rtc_posledniAktualizace = 0; 
 
 struct Zprava { String titulek; String datum; String perex; String text; };
-Zprava aktualniZpravy[15]; int pocetZprav = 0; int clanekMenuIndex = 0;
+Zprava aktualniZpravy[20]; int pocetZprav = 0; int clanekMenuIndex = 0;
 
 struct PocasiDen { String datum; int tMax; int tMin; String srazky; String ikona; int vitr; String vychod; String zapad; };
 PocasiDen predpoved[7]; int pocasiDen = 0;
@@ -151,11 +151,9 @@ enum AppState {
 
 AppState appState = STATE_MAIN_MENU;
 int menuIndex = 0, scrollOffset = 0, subMenuIndex = 0, subScrollOffset = 0, textScrollPage = 0, kostkyStran = 6;
-bool stopkyRunning = false; unsigned long stopkyStart = 0, stopkyElapsed = 0, stopkyLastDraw = 0;
 int gbNode = 0, gbTextPage = 0, knihaPozice[3] = { 0, 0, 0 };
 int aktualniHraIdx = 0;
 int kvizKatIdx = 0; int kvizObtIdx = 0; int kvizKatScrollOffset = 0; int grafMenuIndex = 0; int horoskopMenuIndex = 0; int horoskopScrollPage = 0;
-int refreshMode = 1; // 0=Pomalá (full), 1=Střední (partial, default), 2=Rychlá (partial fast)
 
 // ===== BATERIE A STATUS =====
 float getBatteryVoltage() { 
@@ -237,7 +235,7 @@ String qrData[] = {
 const int slovnikCount = 4; String slovnikItems[] = { "Hledat CZ -> EN", "Hledat EN -> CZ", "Fráze", "Učení" }; int hledanySmer = 0; 
 const int frazeMenuCount = 4; String frazeMenuItems[] = { "Nakupování", "Ubytování", "Zdraví", "Zábava" };
 int uceniSmer = 0, uceniIdx = 0; bool uceniOdhaleno = false;
-char hledanyText[12] = ""; int hledanyLen = 0, abcKurzor = 0, vysledekOffset = 0;
+char hledanyText[12] = ""; int hledanyLen = 0, abcKurzor = 0;
 const char abeceda[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; const int abcCount = 26;
 const int generatorCount = 4; String generatorItems[] = { "Vtipy", "Žalmy", "Citáty", "Fakta" };
 const int hryCount = 6; String hryItems[] = { "Flaška", "Kostky", "Gamebook", "Odhalovačka", "Kvíz", "Co bys radši?" };
@@ -257,7 +255,7 @@ const char* grafNazvy[] = { "EUR/CZK", "USD/CZK", "BTC/CZK", "Zlato CZK/g", "Str
 const int grafCount = 5;
 
 const int nastaveniCount = 5; String nastaveniItems[] = { "Vzhled displeje", "Auto-aktualizace", "Vynutit aktualizaci", "Baterie", "O zařízení" };
-const int vzhledCount = 5; String vzhledItems[] = { "Font", "Velikost", "Tloušťka", "Reverz", "Rychlost displeje" };
+const int vzhledCount = 4; String vzhledItems[] = { "Font", "Velikost", "Tloušťka", "Reverz" };
 const int intervalCount = 5; String intervalItems[] = {"Vypnuto", "Každé 3 hodiny", "Každých 5 hodin", "Každých 12 hodin", "Každých 24 hodin"};
 unsigned long intervalyMs[] = {0, 10800000, 18000000, 43200000, 86400000};
 int intervalIdx = 4; 
@@ -320,11 +318,10 @@ void nakresliLoadScreen(String text, int progress) {
 
 // ===== UKLÁDÁNÍ DAT DO PAMĚTI (PŘEŽIJE DEEP SLEEP) =====
 void ulozZpravuDoCache(String klic, String data) {
-  // Omezujeme na 15000 B kvůli RAM – větší String by mohl způsobit fragmentaci haldy
-  if (data.length() > 15000) {
-    int lastE = data.substring(0, 15000).lastIndexOf("|E|");
+  if (data.length() > 20000) {
+    int lastE = data.substring(0, 20000).lastIndexOf("|E|");
     if (lastE > 0) data = data.substring(0, lastE + 3);
-    else data = data.substring(0, 15000);
+    else data = data.substring(0, 20000);
   }
   String path = "/" + klic + ".dat";
   File f = LittleFS.open(path, "w");
@@ -380,8 +377,20 @@ void jdiSpat() {
     char dBuf[50]; 
     sprintf(dBuf, "%s %d. %d.", dnyVTydnu[timeinfo.tm_wday], timeinfo.tm_mday, timeinfo.tm_mon + 1);
     datumStr = String(dBuf);
-    svatekDnes = "Svátek má: " + getSvatek(timeinfo.tm_mday, timeinfo.tm_mon + 1);
+    String sv = getSvatek(timeinfo.tm_mday, timeinfo.tm_mon + 1);
+    if (sv.length() > 0) svatekDnes = "Svátek má: " + sv;
   }
+
+  // Náhodná kategorie textu: 0=Vtip, 1=Žalm, 2=Citát, 3=Fakt
+  char katBuf[600];
+  const char* katNazev;
+  switch (random(4)) {
+    case 0: strncpy(katBuf, vtipy[random(vtipyPocet)], sizeof(katBuf)-1); katNazev = "Vtip"; break;
+    case 1: strncpy(katBuf, zalmy[random(zalmyPocet)], sizeof(katBuf)-1); katNazev = "Zalm"; break;
+    case 2: strncpy(katBuf, citaty[random(citatyPocet)], sizeof(katBuf)-1); katNazev = "Citat"; break;
+    default: strncpy(katBuf, fakty[random(faktyPocet)], sizeof(katBuf)-1); katNazev = "Fakt"; break;
+  }
+  katBuf[sizeof(katBuf)-1] = '\0';
 
   display.setFullWindow();
   display.firstPage();
@@ -389,57 +398,60 @@ void jdiSpat() {
     display.fillScreen(bgColor());
     u8g2Fonts.setFontMode(1); u8g2Fonts.setForegroundColor(fgColor()); u8g2Fonts.setBackgroundColor(bgColor());
     
-    // Horní část: Datum (tučně, velké, na střed)
+    // Datum (velké, vycentrované)
     u8g2Fonts.setFont(getBigFont());
     int tw = u8g2Fonts.getUTF8Width(datumStr.c_str());
-    u8g2Fonts.setCursor((display.width() - tw) / 2, 26); 
+    u8g2Fonts.setCursor((display.width() - tw) / 2, 22); 
     u8g2Fonts.print(datumStr.c_str());
     
-    // Svátek (malé, na střed)
-    u8g2Fonts.setFont(getBodyFont());
-    tw = u8g2Fonts.getUTF8Width(svatekDnes.c_str());
-    u8g2Fonts.setCursor((display.width() - tw) / 2, 44);
-    u8g2Fonts.print(svatekDnes.c_str());
-    
-    display.drawFastHLine(10, 50, display.width() - 20, fgColor());
+    // Svátek (malé, vycentrované)
+    if (svatekDnes.length() > 0) {
+      u8g2Fonts.setFont(getBodyFont());
+      tw = u8g2Fonts.getUTF8Width(svatekDnes.c_str());
+      u8g2Fonts.setCursor((display.width() - tw) / 2, 36);
+      u8g2Fonts.print(svatekDnes.c_str());
+    }
 
-    // Střed: Počasí (ikona vlevo od středu, teplota vpravo od středu)
+    display.drawFastHLine(10, 42, display.width() - 20, fgColor());
+
+    // Počasí (ikona vpravo, teplota vlevo-středem)
     if (stazenaDataPocasi != "" && predpoved[0].tMax != 0) {
-      // Ikona počasí
-      nakresliIkonuPocasi(predpoved[0].ikona, 60, 78);
-      // Teplota (velká, na střed-vpravo)
+      nakresliIkonuPocasi(predpoved[0].ikona, 258, 63);
       u8g2Fonts.setFont(getBigFont());
       String temp = String(predpoved[0].tMax) + "° / " + String(predpoved[0].tMin) + "°";
       tw = u8g2Fonts.getUTF8Width(temp.c_str());
-      u8g2Fonts.setCursor((display.width() + 20 - tw) / 2 + 40, 83);
+      u8g2Fonts.setCursor((230 - tw) / 2, 65);
       u8g2Fonts.print(temp.c_str());
-      // Přísluní (malé)
       u8g2Fonts.setFont(getSmallFont());
-      String astro = "☀ " + predpoved[0].vychod + " — " + predpoved[0].zapad;
+      String astro = "Vychod " + predpoved[0].vychod + "  Zapad " + predpoved[0].zapad;
       tw = u8g2Fonts.getUTF8Width(astro.c_str());
-      u8g2Fonts.setCursor((display.width() - tw) / 2, 97);
+      u8g2Fonts.setCursor((display.width() - tw) / 2, 81);
       u8g2Fonts.print(astro.c_str());
     } else {
-      u8g2Fonts.setFont(getTitleFont());
-      const char* noData = "Data nejsou k dispozici";
+      u8g2Fonts.setFont(getBodyFont());
+      const char* noData = "Pocasi neni k dispozici";
       tw = u8g2Fonts.getUTF8Width(noData);
-      u8g2Fonts.setCursor((display.width() - tw) / 2, 78);
+      u8g2Fonts.setCursor((display.width() - tw) / 2, 65);
       u8g2Fonts.print(noData);
     }
 
-    display.drawFastHLine(10, 103, display.width() - 20, fgColor());
+    display.drawFastHLine(10, 88, display.width() - 20, fgColor());
 
-    // Spodek: Náhodný vtip/citát (malé písmo, zalamované)
+    // Kategorie (vpravo) a obsah (vycentrovaný, 2 řádky)
     u8g2Fonts.setFont(getSmallFont());
-    String rTxt = String(vtipy[random(vtipyPocet)]);
+    tw = u8g2Fonts.getUTF8Width(katNazev);
+    u8g2Fonts.setCursor(display.width() - tw - 4, 98);
+    u8g2Fonts.print(katNazev);
+
+    String rTxt = String(katBuf);
     TextLine lines[2];
-    int lCount = zalamejText(rTxt.c_str(), rTxt.length(), lines, 2, display.width() - 16);
-    for(int i=0; i<lCount; i++) {
-       char lBuf[90]; int len = lines[i].len; if(len>89) len=89;
-       strncpy(lBuf, &rTxt.c_str()[lines[i].start], len); lBuf[len]='\0';
-       int lw = u8g2Fonts.getUTF8Width(lBuf);
-       u8g2Fonts.setCursor((display.width() - lw) / 2, 115 + (i*12));
-       u8g2Fonts.print(lBuf);
+    int lCount = zalamejText(rTxt.c_str(), rTxt.length(), lines, 2, display.width() - 10);
+    for (int i = 0; i < lCount; i++) {
+      char lBuf[100]; int llen = lines[i].len; if (llen > 99) llen = 99;
+      strncpy(lBuf, &rTxt.c_str()[lines[i].start], llen); lBuf[llen] = '\0';
+      int lw = u8g2Fonts.getUTF8Width(lBuf);
+      u8g2Fonts.setCursor((display.width() - lw) / 2, 110 + (i * 13));
+      u8g2Fonts.print(lBuf);
     }
 
   } while (display.nextPage());
@@ -647,16 +659,13 @@ void zobrazHoroskopDetail(int idx) {
 
 // ===== GRAF KURZŮ =====
 void zobrazKurzGraf() {
-  // Parsování kurzy_historie.txt
-  // Formát: MENA|h1,h2,...,h30
   String raw = stazenaDataKurzyHistorie;
   const char* menaNames[] = { "EUR", "USD", "BTC", "ZLATO", "STRIBRO" };
   String targetMena = menaNames[grafMenuIndex];
   
-  // Najít řádek pro danou měnu
   float hodnoty[30]; int pocet = 0;
   int lineStart = 0;
-  while (lineStart < raw.length() && pocet == 0) {
+  while (lineStart < (int)raw.length() && pocet == 0) {
     int lineEnd = raw.indexOf('\n', lineStart);
     if (lineEnd == -1) lineEnd = raw.length();
     String line = raw.substring(lineStart, lineEnd);
@@ -664,7 +673,7 @@ void zobrazKurzGraf() {
     if (pipePos > 0 && line.substring(0, pipePos) == targetMena) {
       String data = line.substring(pipePos + 1);
       int dPos = 0;
-      while (dPos < data.length() && pocet < 30) {
+      while (dPos < (int)data.length() && pocet < 30) {
         int comma = data.indexOf(',', dPos);
         if (comma == -1) comma = data.length();
         String val = data.substring(dPos, comma);
@@ -681,51 +690,60 @@ void zobrazKurzGraf() {
   do {
     display.fillScreen(bgColor());
     u8g2Fonts.setFontMode(1); u8g2Fonts.setForegroundColor(fgColor()); u8g2Fonts.setBackgroundColor(bgColor());
-    // Záhlaví
-    String nadpis = String(grafNazvy[grafMenuIndex]) + " - 30 dni";
+    String nadpis = String(grafNazvy[grafMenuIndex]) + " / 30 dni";
     u8g2Fonts.setFont(getTitleFont()); u8g2Fonts.setCursor(5, 16); u8g2Fonts.print(nadpis.c_str());
     display.drawFastHLine(0, 20, display.width(), fgColor());
 
     if (pocet < 2) {
       u8g2Fonts.setFont(getBodyFont()); u8g2Fonts.setCursor(5, 70); u8g2Fonts.print("Data nejsou k dispozici");
     } else {
-      // Najít min/max
       float vMin = hodnoty[0], vMax = hodnoty[0];
       for (int i = 1; i < pocet; i++) { if (hodnoty[i] < vMin) vMin = hodnoty[i]; if (hodnoty[i] > vMax) vMax = hodnoty[i]; }
       float rozsah = vMax - vMin; if (rozsah < 0.001f) rozsah = 1.0f;
-      
+
+      // Menší graf — pravý panel (x=232-290) pro aktuální hodnotu
+      int gX = 44, gY = 26, gW = 182, gH = 72;
+      char buf[20];
+
       // Osa Y popisky
       u8g2Fonts.setFont(getSmallFont());
-      int gX = 45, gY = 25, gW = 235, gH = 80;
-      char buf[20];
       if (vMax > 10000) sprintf(buf, "%.0f", vMax); else if (vMax > 100) sprintf(buf, "%.1f", vMax); else sprintf(buf, "%.2f", vMax);
       u8g2Fonts.setCursor(2, gY + 8); u8g2Fonts.print(buf);
       if (vMin > 10000) sprintf(buf, "%.0f", vMin); else if (vMin > 100) sprintf(buf, "%.1f", vMin); else sprintf(buf, "%.2f", vMin);
       u8g2Fonts.setCursor(2, gY + gH); u8g2Fonts.print(buf);
-      
+
       // Osa X popisky
-      u8g2Fonts.setCursor(gX, 115); u8g2Fonts.print("pred 30d");
-      u8g2Fonts.setCursor(gX + gW - 30, 115); u8g2Fonts.print("dnes");
-      
-      // Kreslit čárový graf
+      u8g2Fonts.setCursor(gX, 110); u8g2Fonts.print("-30d");
+      u8g2Fonts.setCursor(gX + gW - 18, 110); u8g2Fonts.print("dnes");
+
+      // Osy grafu
+      display.drawFastVLine(gX, gY, gH, fgColor());
+      display.drawFastHLine(gX, gY + gH, gW, fgColor());
+
+      // Čárový graf
       int prevX = -1, prevY = -1;
       for (int i = 0; i < pocet; i++) {
         int px = gX + (i * gW) / (pocet - 1);
         int py = gY + gH - (int)(((hodnoty[i] - vMin) / rozsah) * gH);
         if (prevX >= 0) {
           display.drawLine(prevX, prevY, px, py, fgColor());
-          display.drawLine(prevX, prevY + 1, px, py + 1, fgColor()); // Tučnější čára
+          display.drawLine(prevX, prevY + 1, px, py + 1, fgColor());
         }
         prevX = px; prevY = py;
       }
-      // Zvýraznit poslední hodnotu
       display.fillCircle(prevX, prevY, 3, fgColor());
+
+      // Aktuální hodnota v pravém panelu
       if (hodnoty[pocet-1] > 10000) sprintf(buf, "%.0f", hodnoty[pocet-1]);
       else if (hodnoty[pocet-1] > 100) sprintf(buf, "%.1f", hodnoty[pocet-1]);
       else sprintf(buf, "%.2f", hodnoty[pocet-1]);
-      u8g2Fonts.setCursor(prevX - 20, prevY - 6); u8g2Fonts.print(buf);
+      int rpX = gX + gW + 8;
+      u8g2Fonts.setFont(getSmallFont());
+      u8g2Fonts.setCursor(rpX, gY + 10); u8g2Fonts.print("Dnes:");
+      u8g2Fonts.setFont(getTitleFont());
+      u8g2Fonts.setCursor(rpX, gY + 26); u8g2Fonts.print(buf);
     }
-    u8g2Fonts.setFont(getSmallFont()); u8g2Fonts.setCursor(5, 127); u8g2Fonts.print("BTN0=dalsi mena | Drz BTN21=zpet");
+    u8g2Fonts.setFont(getSmallFont()); u8g2Fonts.setCursor(5, 125); u8g2Fonts.print("BTN0=dalsi | Drz BTN21=zpet");
   } while (display.nextPage());
 }
 
@@ -765,7 +783,7 @@ int nactiGBPozici() { prefs.begin("gb", true); int n = prefs.getInt("node", 0); 
 // ===== PARSOVÁNÍ DAT =====
 void parsujZpravy(String raw) {
   pocetZprav = 0; int pos = 0;
-  while (pocetZprav < 15) {
+  while (pocetZprav < 20) {
     int tStart = raw.indexOf("|T|", pos); if (tStart == -1) break;
     int dStart = raw.indexOf("|D|", tStart);
     int pStart = raw.indexOf("|P|", tStart);
@@ -852,7 +870,6 @@ String stahniTextZUrl(String nazev, String url) {
   http.begin(sharedClient, url);
   http.setTimeout(8000);
   http.addHeader("User-Agent", "ESP32-Honzueink");
-  http.addHeader("Connection", "keep-alive");
 
   int httpCode = http.GET();
   String vysledek = "";
@@ -874,7 +891,6 @@ String stahniTextZUrl(String nazev, String url) {
     http2.begin(sharedClient, url);
     http2.setTimeout(8000);
     http2.addHeader("User-Agent", "ESP32-Honzueink");
-    http2.addHeader("Connection", "keep-alive");
     int httpCode2 = http2.GET();
     if (httpCode2 == 200) { vysledek = http2.getString(); }
     else { Serial.println("RETRY CHYBA: " + String(httpCode2) + " u souboru: " + nazev); }
@@ -883,43 +899,6 @@ String stahniTextZUrl(String nazev, String url) {
 
   // Vracíme "" pokud to selže, abychom nepřepsali dobrá data chybou!
   return vysledek;
-}
-
-// Stáhne všechny články z folder struktury (index.txt + clanek_00.txt, clanek_01.txt, ...)
-static const int MAX_ARTICLES_PER_CATEGORY = 15;
-static const int MAX_CATEGORY_DATA_LENGTH = 14000;
-
-String stahniKategoriiZeSloky(String slozka) {
-  String indexUrl = urlBase + slozka + "/index.txt";
-  String indexData = stahniTextZUrl(slozka + "/index", indexUrl);
-  if (indexData.length() < 2) return "";
-
-  // Počet článků = počet neprázdných řádků v index.txt
-  int pocetClanku = 0;
-  unsigned int pos = 0;
-  while (pos < indexData.length()) {
-    int nl = indexData.indexOf('\n', pos);
-    unsigned int end = (nl == -1) ? indexData.length() : (unsigned int)nl;
-    if (end > pos) pocetClanku++;
-    if (nl == -1) break;
-    pos = (unsigned int)nl + 1;
-  }
-  if (pocetClanku > MAX_ARTICLES_PER_CATEGORY) pocetClanku = MAX_ARTICLES_PER_CATEGORY;
-
-  String result = "";
-  for (int i = 0; i < pocetClanku; i++) {
-    char soubor[32];
-    sprintf(soubor, "/clanek_%02d.txt", i);
-    String articleUrl = urlBase + slozka + String(soubor);
-    String clanek = stahniTextZUrl(slozka + String(soubor), articleUrl);
-    clanek.trim();
-    if (clanek.length() > 10) {
-      result += clanek;
-      if (!result.endsWith("|E|")) result += "|E|";
-      if (result.length() > MAX_CATEGORY_DATA_LENGTH) break;
-    }
-  }
-  return result;
 }
 
 void aktualizovatDataNaPozadi(bool vynuceno) {
@@ -988,7 +967,6 @@ void aktualizovatDataNaPozadi(bool vynuceno) {
       if (asponNecoSeStahlo) {
         parsujPocasi(stazenaDataPocasi);
         parsujKurzy(stazenaDataKurzy);
-        nepovedenePokusy = 0;
         rtc_posledniAktualizace = time(NULL); 
         ulozStazenaData(); // Uložíme je do paměti, kterou nespálí Deep sleep
       }
@@ -1001,6 +979,9 @@ void aktualizovatDataNaPozadi(bool vynuceno) {
         delay(2000);
       }
     }
+    // Vypnout WiFi rádio pro úsporu baterie
+    WiFi.disconnect(true);
+    WiFi.mode(WIFI_OFF);
   }
 }
 
@@ -1292,7 +1273,8 @@ void zobrazSeznamZprav() {
 }
 
 void zobrazText(const char* title, const char* text) {
-  char buf[3500]; strncpy_P(buf, text, sizeof(buf) - 1); buf[sizeof(buf) - 1] = '\0';
+  // Na ESP32 je PROGMEM mapovaná do adresního prostoru — strncpy funguje pro obě paměti
+  static char buf[4500]; strncpy(buf, text, sizeof(buf) - 1); buf[sizeof(buf) - 1] = '\0';
   int len = strlen(buf); int maxWidth = display.width() - 10;
   int lineHeight = getLineHeight(); int linesPerPage = getLinesPerPage();
   TextLine lines[200]; int lineCount = zalamejText(buf, len, lines, 200, maxWidth);
@@ -1970,7 +1952,7 @@ void loop() {
         case STATE_SLOVNIK:
           textScrollPage = 0;
           if (subMenuIndex == 0 || subMenuIndex == 1) {
-            appState = STATE_SLOVNIK_DETAIL; hledanySmer = subMenuIndex; hledanyLen = 0; hledanyText[0] = '\0'; abcKurzor = 0; vysledekOffset = 0; zobrazHledani();
+            appState = STATE_SLOVNIK_DETAIL; hledanySmer = subMenuIndex; hledanyLen = 0; hledanyText[0] = '\0'; abcKurzor = 0; zobrazHledani();
           } else if (subMenuIndex == 2) {
             appState = STATE_FRAZE_MENU; subMenuIndex = 0; subScrollOffset = 0; zobrazSubMenu("FRÁZE", frazeMenuItems, frazeMenuCount, 0, 0);
           } else if (subMenuIndex == 3) {
@@ -1978,7 +1960,7 @@ void loop() {
           }
           break;
         case STATE_SLOVNIK_DETAIL:
-          if (hledanyLen < 11) { hledanyText[hledanyLen] = abeceda[abcKurzor] + 32; hledanyLen++; hledanyText[hledanyLen] = '\0'; vysledekOffset = 0; }
+          if (hledanyLen < 11) { hledanyText[hledanyLen] = abeceda[abcKurzor] + 32; hledanyLen++; hledanyText[hledanyLen] = '\0'; }
           zobrazHledani();
           break;
         case STATE_FRAZE_MENU:
@@ -2064,7 +2046,6 @@ void loop() {
           else if (subMenuIndex == 1) { currentSize = (currentSize + 1) % 4; delay(100); zobrazSubMenu("VZHLED", vzhledItems, vzhledCount, subMenuIndex, subScrollOffset); }
           else if (subMenuIndex == 2) { currentBold = (currentBold + 1) % 2; delay(100); zobrazSubMenu("VZHLED", vzhledItems, vzhledCount, subMenuIndex, subScrollOffset); }
           else if (subMenuIndex == 3) { reverseMode = !reverseMode; delay(100); zobrazSubMenu("VZHLED", vzhledItems, vzhledCount, subMenuIndex, subScrollOffset); }
-          else if (subMenuIndex == 4) { refreshMode = (refreshMode + 1) % 3; delay(100); zobrazSubMenu("VZHLED", vzhledItems, vzhledCount, subMenuIndex, subScrollOffset); }
           break;
           
         case STATE_NASTAVENI_AKTUALIZACE:

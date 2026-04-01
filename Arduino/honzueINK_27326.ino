@@ -305,7 +305,11 @@ void nakresliLoadScreen(String text, int progress) {
 // ===== UKLÁDÁNÍ DAT DO PAMĚTI (PŘEŽIJE DEEP SLEEP) =====
 void ulozZpravuDoCache(String klic, String data) {
   prefs.begin("cache", false);
-  if (data.length() > 3800) data = data.substring(0, 3800); // Ořez pro jistotu
+  if (data.length() > 15000) {
+    int lastE = data.substring(0, 15000).lastIndexOf("|E|");
+    if (lastE > 0) data = data.substring(0, lastE + 3);
+    else data = data.substring(0, 15000);
+  }
   prefs.putString(klic.c_str(), data);
   prefs.end();
 }
@@ -333,6 +337,7 @@ void nactiStazenaData() {
 
   if (stazenaDataPocasi != "") parsujPocasi(stazenaDataPocasi);
   if (stazenaDataKurzy != "") parsujKurzy(stazenaDataKurzy);
+  if (stazenaDataSvet != "") parsujZpravy(stazenaDataSvet);
 }
 
 
@@ -731,6 +736,7 @@ void parsujZpravy(String raw) {
 }
 
 void parsujPocasi(String raw) {
+  if (raw.length() < 5) return;
   int pos = 0;
   for (int i = 0; i < 7; i++) {
     int n1 = raw.indexOf('|', pos); int n2 = raw.indexOf('|', n1 + 1); int n3 = raw.indexOf('|', n2 + 1);
@@ -746,6 +752,7 @@ void parsujPocasi(String raw) {
 }
 
 void parsujKurzy(String raw) {
+  if (raw.length() < 5) return;
   int n1 = raw.indexOf('|'); int n2 = raw.indexOf('|', n1 + 1);
   int n3 = raw.indexOf('|', n2 + 1); int n4 = raw.indexOf('|', n3 + 1);
   if (n1 > 0 && n4 > 0) {
@@ -760,6 +767,7 @@ bool pripojWiFi() {
   
   WiFi.disconnect(true, true); 
   WiFi.mode(WIFI_STA);
+  WiFi.setTxPower(WIFI_POWER_19_5dBm);
   WiFi.persistent(false);      
   WiFi.setSleep(false);        
   delay(200);
@@ -785,7 +793,9 @@ bool pripojWiFi() {
   return false;
 }
 
-String stahniTextZUrl(WiFiClientSecure& client, String nazev, String url) {
+String stahniTextZUrl(String nazev, String url) {
+  WiFiClientSecure client;
+  client.setInsecure();
   HTTPClient http;
   http.setFollowRedirects(HTTPC_STRICT_FOLLOW_REDIRECTS); 
   http.begin(client, url);
@@ -802,6 +812,25 @@ String stahniTextZUrl(WiFiClientSecure& client, String nazev, String url) {
   }
 
   http.end();
+  client.stop();
+
+  // Retry jednou při selhání (prázdný výsledek)
+  if (vysledek.length() == 0) {
+    delay(500);
+    WiFiClientSecure client2;
+    client2.setInsecure();
+    HTTPClient http2;
+    http2.setFollowRedirects(HTTPC_STRICT_FOLLOW_REDIRECTS);
+    http2.begin(client2, url);
+    http2.setTimeout(12000);
+    http2.addHeader("User-Agent", "ESP32-Honzueink");
+    int httpCode2 = http2.GET();
+    if (httpCode2 == 200) { vysledek = http2.getString(); }
+    else { Serial.println("RETRY CHYBA: " + String(httpCode2) + " u souboru: " + nazev); }
+    http2.end();
+    client2.stop();
+  }
+
   // Vracíme "" pokud to selže, abychom nepřepsali dobrá data chybou!
   return vysledek;
 }
@@ -822,26 +851,28 @@ void aktualizovatDataNaPozadi(bool vynuceno) {
     if (vynuceno || casNaUpdate) nakresliLoadScreen("Navazuji spojení...", 10);
     
     if (pripojWiFi()) {
-      WiFiClientSecure secureClient;
-      secureClient.setInsecure(); 
       bool asponNecoSeStahlo = false;
       
       nakresliLoadScreen("Stahuji zprávy ze světa...", 20);
       String tSvet = stahniTextZUrl(secureClient, "Svet", urlZpravySvet);
       // BEZPEČNÁ KONTROLA: Přepiš jen když se stáhl validní text (delší než 20 znaků)
       if (tSvet.length() > 20) { stazenaDataSvet = tSvet; asponNecoSeStahlo = true; }
+      delay(200);
       
       nakresliLoadScreen("Stahuji zprávy z ČR...", 35);
       String tCR = stahniTextZUrl(secureClient, "CR", urlZpravyCR);
       if (tCR.length() > 20) { stazenaDataCR = tCR; asponNecoSeStahlo = true; }
+      delay(200);
       
       nakresliLoadScreen("Stahuji Tech a AI...", 48);
       String tTech = stahniTextZUrl(secureClient, "Tech", urlTechAI);
       if (tTech.length() > 20) { stazenaDataTech = tTech; asponNecoSeStahlo = true; }
+      delay(200);
       
       nakresliLoadScreen("Stahuji Počasí...", 60);
       String tPoc = stahniTextZUrl(secureClient, "Pocasi", urlPocasi);
       if (tPoc.length() > 20) { stazenaDataPocasi = tPoc; asponNecoSeStahlo = true; }
+      delay(200);
       
       nakresliLoadScreen("Stahuji Kurzy...", 72);
       String tKur = stahniTextZUrl(secureClient, "Kurzy", urlKurzy);

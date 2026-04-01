@@ -30,11 +30,13 @@ String urlPocasi = "https://raw.githubusercontent.com/honzuejtt-ops/Honzueink/ma
 String urlZpravySvet = "https://raw.githubusercontent.com/honzuejtt-ops/Honzueink/main/zpravy_svet.txt";
 String urlZpravyCR = "https://raw.githubusercontent.com/honzuejtt-ops/Honzueink/main/zpravy_cr.txt";
 String urlTechAI = "https://raw.githubusercontent.com/honzuejtt-ops/Honzueink/main/zpravy_tech.txt";
+String urlZpravyBulvar = "https://raw.githubusercontent.com/honzuejtt-ops/Honzueink/main/zpravy_bulvar.txt";
 String urlKurzy = "https://raw.githubusercontent.com/honzuejtt-ops/Honzueink/main/kurzy.txt";
 String urlHoroskop = "https://raw.githubusercontent.com/honzuejtt-ops/Honzueink/main/horoskop.txt";
 String urlKurzyHistorie = "https://raw.githubusercontent.com/honzuejtt-ops/Honzueink/main/kurzy_historie.txt";
 
 String stazenaDataSvet = ""; String stazenaDataCR = ""; String stazenaDataTech = "";
+String stazenaDataBulvar = "";
 String stazenaDataPocasi = ""; String stazenaDataKurzy = "";
 String stazenaDataHoroskop = ""; String stazenaDataKurzyHistorie = "";
 
@@ -54,8 +56,8 @@ void initSharedClient() {
 // PAMĚŤ PŘEŽÍVAJÍCÍ DEEP SLEEP
 RTC_DATA_ATTR time_t rtc_posledniAktualizace = 0; 
 
-struct Zprava { String titulek; String perex; String text; };
-Zprava aktualniZpravy[10]; int pocetZprav = 0; int clanekMenuIndex = 0;
+struct Zprava { String titulek; String datum; String perex; String text; };
+Zprava aktualniZpravy[15]; int pocetZprav = 0; int clanekMenuIndex = 0;
 
 struct PocasiDen { String datum; int tMax; int tMin; String srazky; String ikona; int vitr; String vychod; String zapad; };
 PocasiDen predpoved[7]; int pocasiDen = 0;
@@ -216,7 +218,7 @@ void nakresliStatusBar() {
 // ===== MENU DATA =====
 const int mainMenuCount = 7; String mainMenuItems[] = { "KNIHOVNA", "AKTUALITY", "TOOLBOX", "SLOVNÍK", "GENERÁTOR", "HRY", "NASTAVENÍ" };
 const int aktualityCount = 5; String aktualityItems[] = { "Zprávy", "Světový čas", "Kurzy", "Počasí", "Horoskop" };
-const int zpravyMenuCount = 3; String zpravyMenuItems[] = { "Ze světa", "Z ČR", "Technologie a AI" };
+const int zpravyMenuCount = 4; String zpravyMenuItems[] = { "Ze světa", "Z ČR", "Technologie a AI", "Bulvár" };
 const int knihovnaCount = 3; String knihovnaItems[] = { "Zaklínač 1", "Zaklínač 2", "Zaklínač 3" };
 const int toolboxCount = 3; String toolboxItems[] = { "Dioda", "Stopky", "QR Kódy" }; bool ledState = false;
 
@@ -330,6 +332,7 @@ void ulozStazenaData() {
   ulozZpravuDoCache("svet", stazenaDataSvet);
   ulozZpravuDoCache("cr", stazenaDataCR);
   ulozZpravuDoCache("tech", stazenaDataTech);
+  ulozZpravuDoCache("bulv", stazenaDataBulvar);
   ulozZpravuDoCache("poc", stazenaDataPocasi);
   ulozZpravuDoCache("kur", stazenaDataKurzy);
   ulozZpravuDoCache("horo", stazenaDataHoroskop);
@@ -341,6 +344,7 @@ void nactiStazenaData() {
   stazenaDataSvet = prefs.getString("svet", "");
   stazenaDataCR = prefs.getString("cr", "");
   stazenaDataTech = prefs.getString("tech", "");
+  stazenaDataBulvar = prefs.getString("bulv", "");
   stazenaDataPocasi = prefs.getString("poc", "");
   stazenaDataKurzy = prefs.getString("kur", "");
   stazenaDataHoroskop = prefs.getString("horo", "");
@@ -740,16 +744,25 @@ int nactiGBPozici() { prefs.begin("gb", true); int n = prefs.getInt("node", 0); 
 // ===== PARSOVÁNÍ DAT =====
 void parsujZpravy(String raw) {
   pocetZprav = 0; int pos = 0;
-  while (pocetZprav < 10) { 
+  while (pocetZprav < 15) {
     int tStart = raw.indexOf("|T|", pos); if (tStart == -1) break;
-    int pStart = raw.indexOf("|P|", tStart); int xStart = raw.indexOf("|X|", pStart); int eStart = raw.indexOf("|E|", xStart);
+    int dStart = raw.indexOf("|D|", tStart);
+    int pStart = raw.indexOf("|P|", tStart);
+    int xStart = raw.indexOf("|X|", pStart);
+    int eStart = raw.indexOf("|E|", xStart);
     if (pStart == -1 || xStart == -1 || eStart == -1) break;
-    aktualniZpravy[pocetZprav].titulek = raw.substring(tStart + 3, pStart);
+    if (dStart != -1 && dStart > tStart && dStart < pStart) {
+      aktualniZpravy[pocetZprav].titulek = raw.substring(tStart + 3, dStart);
+      aktualniZpravy[pocetZprav].datum = raw.substring(dStart + 3, pStart);
+    } else {
+      aktualniZpravy[pocetZprav].titulek = raw.substring(tStart + 3, pStart);
+      aktualniZpravy[pocetZprav].datum = "";
+    }
     aktualniZpravy[pocetZprav].perex = raw.substring(pStart + 3, xStart);
     aktualniZpravy[pocetZprav].text = raw.substring(xStart + 3, eStart);
     pocetZprav++; pos = eStart + 3;
   }
-  if (pocetZprav == 0) { aktualniZpravy[0].titulek = "Chyba dat"; aktualniZpravy[0].perex = "Žádná data nejsou v paměti."; aktualniZpravy[0].text = raw; pocetZprav = 1; }
+  if (pocetZprav == 0) { aktualniZpravy[0].titulek = "Chyba dat"; aktualniZpravy[0].datum = ""; aktualniZpravy[0].perex = "Žádná data nejsou v paměti."; aktualniZpravy[0].text = raw; pocetZprav = 1; }
 }
 
 void parsujPocasi(String raw) {
@@ -896,9 +909,13 @@ void aktualizovatDataNaPozadi(bool vynuceno) {
       String tHoro = stahniTextZUrl("Horoskop", urlHoroskop);
       if (tHoro.length() > 20) { stazenaDataHoroskop = tHoro; asponNecoSeStahlo = true; }
 
-      nakresliLoadScreen("Stahuji hist. kurzů...", 92);
+      nakresliLoadScreen("Stahuji hist. kurzů...", 88);
       String tKHist = stahniTextZUrl("KurzyHist", urlKurzyHistorie);
       if (tKHist.length() > 10) { stazenaDataKurzyHistorie = tKHist; asponNecoSeStahlo = true; }
+
+      nakresliLoadScreen("Stahuji Bulvár...", 94);
+      String tBulvar = stahniTextZUrl("Bulvar", urlZpravyBulvar);
+      if (tBulvar.length() > 20) { stazenaDataBulvar = tBulvar; asponNecoSeStahlo = true; }
       
       // Uklidíme sdílený klient po dokončení všech stahování
       sharedClient.stop();
@@ -1184,6 +1201,15 @@ void zobrazSeznamZprav() {
       char tBuf[80]; int l = tLines[i].len; if (l > 79) l = 79;
       strncpy(tBuf, &tit[tLines[i].start], l); tBuf[l] = '\0';
       u8g2Fonts.setCursor(5, y); u8g2Fonts.print(tBuf); y += 14;
+    }
+
+    if (aktualniZpravy[clanekMenuIndex].datum.length() > 0) {
+      u8g2Fonts.setFont(getSmallFont());
+      String datumStr = aktualniZpravy[clanekMenuIndex].datum;
+      int dw = u8g2Fonts.getUTF8Width(datumStr.c_str());
+      u8g2Fonts.setCursor(display.width() - dw - 5, 18);
+      u8g2Fonts.print(datumStr.c_str());
+      u8g2Fonts.setFont(getTitleFont());
     }
 
     u8g2Fonts.setFont(getSmallFont());
@@ -1851,7 +1877,7 @@ void loop() {
 
         case STATE_ZPRAVY_MENU:
           appState = STATE_ZPRAVY_SEZNAM; clanekMenuIndex = 0;
-          if (subMenuIndex == 0) parsujZpravy(stazenaDataSvet); else if (subMenuIndex == 1) parsujZpravy(stazenaDataCR); else if (subMenuIndex == 2) parsujZpravy(stazenaDataTech);
+          if (subMenuIndex == 0) parsujZpravy(stazenaDataSvet); else if (subMenuIndex == 1) parsujZpravy(stazenaDataCR); else if (subMenuIndex == 2) parsujZpravy(stazenaDataTech); else if (subMenuIndex == 3) parsujZpravy(stazenaDataBulvar);
           zobrazSeznamZprav();
           break;
 

@@ -18,29 +18,40 @@ def stahni_text_clanku(url, perex):
             text = p.get_text().strip()
             if len(text) > 40: obsah += text + "\n"
         if "Enable JavaScript" in obsah or len(obsah) < 100: return perex + "\n\n(Pozn: Celý text web zablokoval)"
-        if len(obsah) > 1500: obsah = obsah[:1500] + "...\n(Pokracovani na webu)"
+        if len(obsah) > 3000: obsah = obsah[:3000] + "...\n(Pokracovani na webu)"
         return obsah
     except Exception: return perex + "\n\n(Pozn: Chyba při stahování)"
 
 # --- FUNKCE PRO ZPRÁVY (RSS) ---
-def stahni_zpravy(rss_url, limit=10):
+def stahni_zpravy(rss_url, limit=15):
+    from email.utils import parsedate_to_datetime
     hlavicky = {"User-Agent": "Mozilla/5.0"}
     try:
         odpoved = requests.get(rss_url, headers=hlavicky, timeout=10)
         root = ET.fromstring(odpoved.content)
         items = root.findall('.//item')
         vysledny_text = ""
-        if not items: return "|T|Žádné zprávy|P|Nebyly nalezeny.|X|Zkuste to později.|E|"
+        if not items: return "|T|Žádné zprávy|D||P|Nebyly nalezeny.|X|Zkuste to později.|E|"
         for item in items[:limit]:
             titulek = item.find('title').text.strip() if item.find('title') is not None else "Bez titulku"
             odkaz = item.find('link').text.strip() if item.find('link') is not None else ""
+
+            pub_date_el = item.find('pubDate')
+            datum_cas = ""
+            if pub_date_el is not None and pub_date_el.text:
+                try:
+                    dt = parsedate_to_datetime(pub_date_el.text.strip())
+                    datum_cas = dt.strftime("%-d.%-m. %H:%M")
+                except Exception:
+                    datum_cas = pub_date_el.text.strip()[:16]
+
             perex_raw = item.find('description').text.strip() if item.find('description') is not None else ""
             perex = BeautifulSoup(perex_raw, "html.parser").get_text()
             perex_kratky = perex[:100] + "..." if len(perex) > 100 else perex
             text_clanku = stahni_text_clanku(odkaz, perex) if odkaz else perex
-            vysledny_text += f"|T|{titulek}|P|{perex_kratky}|X|{text_clanku}|E|"
+            vysledny_text += f"|T|{titulek}|D|{datum_cas}|P|{perex_kratky}|X|{text_clanku}|E|"
         return vysledny_text
-    except Exception as e: return f"|T|Chyba|P|Něco se pokazilo.|X|{e}|E|"
+    except Exception as e: return f"|T|Chyba|D||P|Něco se pokazilo.|X|{e}|E|"
 
 # --- FUNKCE PRO POČASÍ (Obohaceno o Východ a Západ slunce) ---
 def stahni_pocasi():
@@ -252,7 +263,8 @@ def uloz_clanky_do_slozky(slozka, obsah):
     index_radky = []
     for idx, clanek in enumerate(clanky):
         try:
-            titulek = clanek.split("|T|")[1].split("|P|")[0].strip() if "|T|" in clanek else "Bez titulku"
+            titulek_raw = clanek.split("|T|")[1].split("|P|")[0].strip() if "|T|" in clanek else "Bez titulku"
+            titulek = titulek_raw.split("|D|")[0].strip()
             soubor = f"clanek_{idx:02d}.txt"
             with open(os.path.join(slozka, soubor), "w", encoding="utf-8") as f:
                 f.write(clanek.strip() + "|E|")
@@ -264,17 +276,22 @@ def uloz_clanky_do_slozky(slozka, obsah):
 
 if __name__ == "__main__":
     print("Spoustim stahovani...")
-    svet_data = stahni_zpravy("https://ct24.ceskatelevize.cz/rss/svet")
-    cr_data = stahni_zpravy("https://ct24.ceskatelevize.cz/rss/domaci")
-    tech_data = stahni_zpravy("https://www.lupa.cz/rss/clanky/", limit=5)
-    tech_data += stahni_zpravy("https://www.cnews.cz/feed/", limit=5)
+    svet_data = stahni_zpravy("https://ct24.ceskatelevize.cz/rss/svet", limit=15)
+    cr_data = stahni_zpravy("https://ct24.ceskatelevize.cz/rss/domaci", limit=15)
+    tech_data = stahni_zpravy("https://www.lupa.cz/rss/clanky/", limit=8)
+    tech_data += stahni_zpravy("https://www.cnews.cz/feed/", limit=7)
+
+    bulvar_data = stahni_zpravy("https://www.blesk.cz/rss", limit=10)
+    bulvar_data += stahni_zpravy("https://www.super.cz/rss.xml", limit=5)
 
     with open("zpravy_svet.txt", "w", encoding="utf-8") as f: f.write(svet_data)
     with open("zpravy_cr.txt", "w", encoding="utf-8") as f: f.write(cr_data)
     with open("zpravy_tech.txt", "w", encoding="utf-8") as f: f.write(tech_data)
+    with open("zpravy_bulvar.txt", "w", encoding="utf-8") as f: f.write(bulvar_data)
     uloz_clanky_do_slozky("zpravy_svet", svet_data)
     uloz_clanky_do_slozky("zpravy_cr", cr_data)
     uloz_clanky_do_slozky("zpravy_tech", tech_data)
+    uloz_clanky_do_slozky("zpravy_bulvar", bulvar_data)
 
     with open("pocasi.txt", "w", encoding="utf-8") as f: f.write(stahni_pocasi())
     with open("kurzy.txt", "w", encoding="utf-8") as f: f.write(stahni_kurzy())

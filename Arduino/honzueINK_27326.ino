@@ -28,11 +28,14 @@ const char* ssid2 = "Bobik";
 const char* pass2 = "honzuemanejfoun";
 
 const String urlBase = "https://raw.githubusercontent.com/honzuejtt-ops/Honzueink/main/";
+String urlZpravySvet = urlBase + "zpravy_svet.txt";
+String urlZpravyCR = urlBase + "zpravy_cr.txt";
+String urlTechAI = urlBase + "zpravy_tech.txt";
+String urlZpravyBulvar = urlBase + "zpravy_bulvar.txt";
 String urlPocasi = urlBase + "pocasi.txt";
 String urlKurzy = urlBase + "kurzy.txt";
 String urlHoroskop = urlBase + "horoskop.txt";
 String urlKurzyHistorie = urlBase + "kurzy_historie.txt";
-// Zprávy se stahují z folder struktury: zpravy_svet/, zpravy_cr/, zpravy_tech/, zpravy_bulvar/
 
 String stazenaDataSvet = ""; String stazenaDataCR = ""; String stazenaDataTech = "";
 String stazenaDataBulvar = "";
@@ -947,16 +950,16 @@ void aktualizovatDataNaPozadi(bool vynuceno) {
       sharedClient.stop(); // Zavřeme případné předchozí spojení
       
       nakresliLoadScreen("Stahuji zprávy ze světa...", 15);
-      String tSvet = stahniKategoriiZeSloky("zpravy_svet");
+      String tSvet = stahniTextZUrl("Svet", urlZpravySvet);
       // BEZPEČNÁ KONTROLA: Přepiš jen když se stáhl validní text (delší než 20 znaků)
       if (tSvet.length() > 20) { stazenaDataSvet = tSvet; asponNecoSeStahlo = true; }
       
       nakresliLoadScreen("Stahuji zprávy z ČR...", 28);
-      String tCR = stahniKategoriiZeSloky("zpravy_cr");
+      String tCR = stahniTextZUrl("CR", urlZpravyCR);
       if (tCR.length() > 20) { stazenaDataCR = tCR; asponNecoSeStahlo = true; }
       
       nakresliLoadScreen("Stahuji Tech a AI...", 42);
-      String tTech = stahniKategoriiZeSloky("zpravy_tech");
+      String tTech = stahniTextZUrl("Tech", urlTechAI);
       if (tTech.length() > 20) { stazenaDataTech = tTech; asponNecoSeStahlo = true; }
       
       nakresliLoadScreen("Stahuji Počasí...", 55);
@@ -976,7 +979,7 @@ void aktualizovatDataNaPozadi(bool vynuceno) {
       if (tKHist.length() > 10) { stazenaDataKurzyHistorie = tKHist; asponNecoSeStahlo = true; }
 
       nakresliLoadScreen("Stahuji Bulvár...", 94);
-      String tBulvar = stahniKategoriiZeSloky("zpravy_bulvar");
+      String tBulvar = stahniTextZUrl("Bulvar", urlZpravyBulvar);
       if (tBulvar.length() > 20) { stazenaDataBulvar = tBulvar; asponNecoSeStahlo = true; }
       
       // Uklidíme sdílený klient po dokončení všech stahování

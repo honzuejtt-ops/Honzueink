@@ -1,0 +1,1 @@
+|T|Bulvár se načítá|D||P|Data budou stažena při příštím spuštění.|X|Počkejte na automatickou aktualizaci.|E|

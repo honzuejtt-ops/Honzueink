@@ -2,6 +2,7 @@
 #include <SPI.h>
 #include <math.h>
 #include <Preferences.h>
+#include <LittleFS.h>
 #include <GxEPD2_BW.h>
 #include <U8g2_for_Adafruit_GFX.h>
 #include <WiFi.h>
@@ -316,14 +317,16 @@ void nakresliLoadScreen(String text, int progress) {
 
 // ===== UKLÁDÁNÍ DAT DO PAMĚTI (PŘEŽIJE DEEP SLEEP) =====
 void ulozZpravuDoCache(String klic, String data) {
-  prefs.begin("cache", false);
+  // Omezujeme na 15000 B kvůli RAM – větší String by mohl způsobit fragmentaci haldy
   if (data.length() > 15000) {
     int lastE = data.substring(0, 15000).lastIndexOf("|E|");
     if (lastE > 0) data = data.substring(0, lastE + 3);
     else data = data.substring(0, 15000);
   }
-  prefs.putString(klic.c_str(), data);
-  prefs.end();
+  String path = "/" + klic + ".dat";
+  File f = LittleFS.open(path, "w");
+  if (f) { f.print(data); f.close(); }
+  else { Serial.println("LittleFS: nelze zapsat " + path); }
 }
 
 void ulozStazenaData() {
@@ -337,21 +340,29 @@ void ulozStazenaData() {
   ulozZpravuDoCache("khist", stazenaDataKurzyHistorie);
 }
 
-void nactiStazenaData() {
-  prefs.begin("cache", true);
-  stazenaDataSvet = prefs.getString("svet", "");
-  stazenaDataCR = prefs.getString("cr", "");
-  stazenaDataTech = prefs.getString("tech", "");
-  stazenaDataBulvar = prefs.getString("bulv", "");
-  stazenaDataPocasi = prefs.getString("poc", "");
-  stazenaDataKurzy = prefs.getString("kur", "");
-  stazenaDataHoroskop = prefs.getString("horo", "");
-  stazenaDataKurzyHistorie = prefs.getString("khist", "");
-  prefs.end();
+String nactiSouborZFS(const char* path) {
+  if (!LittleFS.exists(path)) return "";
+  File f = LittleFS.open(path, "r");
+  if (!f) return "";
+  String s = f.readString();
+  f.close();
+  return s;
+}
 
-  if (stazenaDataPocasi != "") parsujPocasi(stazenaDataPocasi);
-  if (stazenaDataKurzy != "") parsujKurzy(stazenaDataKurzy);
-  if (stazenaDataSvet != "") parsujZpravy(stazenaDataSvet);
+void nactiStazenaData() {
+  stazenaDataSvet          = nactiSouborZFS("/svet.dat");
+  stazenaDataCR            = nactiSouborZFS("/cr.dat");
+  stazenaDataTech          = nactiSouborZFS("/tech.dat");
+  stazenaDataBulvar        = nactiSouborZFS("/bulv.dat");
+  stazenaDataPocasi        = nactiSouborZFS("/poc.dat");
+  stazenaDataKurzy         = nactiSouborZFS("/kur.dat");
+  stazenaDataHoroskop      = nactiSouborZFS("/horo.dat");
+  stazenaDataKurzyHistorie = nactiSouborZFS("/khist.dat");
+
+  if (stazenaDataPocasi    != "") parsujPocasi(stazenaDataPocasi);
+  if (stazenaDataKurzy     != "") parsujKurzy(stazenaDataKurzy);
+  if (stazenaDataSvet      != "") parsujZpravy(stazenaDataSvet);
+  if (stazenaDataHoroskop  != "") parsujHoroskopy(stazenaDataHoroskop);
 }
 
 
@@ -1744,6 +1755,7 @@ void setup() {
   randomSeed(analogRead(0) + millis());
   pinMode(Vext, OUTPUT); digitalWrite(Vext, HIGH); delay(100);
   pinMode(LED_PIN, OUTPUT); digitalWrite(LED_PIN, LOW);
+  analogSetPinAttenuation(BAT_PIN, ADC_11db);
 
   SPI.begin(2, -1, 1, 3); 
   display.init(); 
@@ -1762,6 +1774,10 @@ void setup() {
   prefs.begin("nastaveni", true);
   intervalIdx = prefs.getInt("updInt", 4);
   prefs.end();
+
+  if (!LittleFS.begin(true)) { // true = formátuj pokud selhá montáž
+    Serial.println("LittleFS: kritická chyba montáže!");
+  }
 
   // 1. ZKUSÍME NAČÍST DATA Z ULOŽENÉ PAMĚTI
   nactiStazenaData();

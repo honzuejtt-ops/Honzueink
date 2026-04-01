@@ -1,1 +1,0 @@
-|T|Chyba|D||P|Něco se pokazilo.|X|syntax error: line 1, column 0|E|

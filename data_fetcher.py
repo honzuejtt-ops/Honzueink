@@ -3,51 +3,21 @@ import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta
 from bs4 import BeautifulSoup
 import json
+import trafilatura
 
 # --- FUNKCE PRO VYTĚŽENÍ TEXTU PŘÍMO Z ČLÁNKU ---
 def stahni_text_clanku(url, perex):
-    import re
-    hlavicky = {"User-Agent": "Mozilla/5.0"}
     try:
-        odpoved = requests.get(url, headers=hlavicky, timeout=10)
-        soup = BeautifulSoup(odpoved.content, 'html.parser')
-
-        # Odstraníme nerelevantní elementy (navigace, zápatí, komentáře, reklamy, galerie)
-        for tag in soup.find_all(['nav', 'footer', 'header', 'aside', 'script', 'style',
-                                   'form', 'button', 'iframe', 'noscript']):
-            tag.decompose()
-        for cls in ['comment', 'comments', 'footer', 'header', 'nav', 'menu', 'sidebar',
-                    'advertisement', 'ad', 'social', 'share', 'related', 'tags',
-                    'gallery', 'fotogalerie', 'video', 'newsletter']:
-            for tag in soup.find_all(class_=re.compile(cls, re.I)):
-                tag.decompose()
-
-        odstavce = soup.find_all('p')
-        obsah = ""
-        for p in odstavce:
-            text = p.get_text().strip()
-            # Přeskočit krátké odstavce, video placeholdery, navigaci a galerie
-            if len(text) < 40:
-                continue
-            if re.search(r'(Video se připravuje|Fotogalerie \d+|Sdílet|Přihlásit|Komentáře|Cookie|Reklama|Zobrazit nové|Zobrazit další|Skrýt dny|Filtr:)', text, re.I):
-                continue
-            if re.match(r'^\d+\.\s*\d+\.\s*\d{4}$', text.strip()):
-                continue
-            if text.strip() in ('Vše', 'Důležité', 'Foto', 'Video', 'Sociální sítě'):
-                continue
-            # Přeskočit řádky vypadající jako navigační menu (hodně slov / zkratky)
-            if re.match(r'^([A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ][a-záčďéěíňóřšťúůýž]+ ){4,}', text):
-                continue
-            obsah += text + "\n"
-
-        # Sanitizace — odstraníme duplicitní prázdné řádky a přebytečné bílé znaky
-        obsah = re.sub(r'\n{3,}', '\n\n', obsah).strip()
-
-        if "Enable JavaScript" in obsah or len(obsah) < 100:
-            return perex + "\n\n(Pozn: Celý text web zablokoval)"
-        if len(obsah) > 4000:
-            obsah = obsah[:4000] + "...\n(Pokracovani na webu)"
-        return obsah
+        # Trafilatura umí stránku stáhnout i chytře najít hlavní článek
+        stazeno = trafilatura.fetch_url(url)
+        obsah = trafilatura.extract(stazeno, include_comments=False, include_tables=False)
+        
+        if obsah:
+            if len(obsah) > 4000:
+                return obsah[:4000] + "...\n(Pokracovani na webu)"
+            return obsah
+            
+        return perex + "\n\n(Pozn: Z tohoto webu nelze obsah přímo vyčíst)"
     except Exception:
         return perex + "\n\n(Pozn: Chyba při stahování)"
 

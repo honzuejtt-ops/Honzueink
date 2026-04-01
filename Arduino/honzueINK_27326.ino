@@ -139,7 +139,8 @@ int menuIndex = 0, scrollOffset = 0, subMenuIndex = 0, subScrollOffset = 0, text
 bool stopkyRunning = false; unsigned long stopkyStart = 0, stopkyElapsed = 0, stopkyLastDraw = 0;
 int gbNode = 0, gbTextPage = 0, knihaPozice[3] = { 0, 0, 0 };
 int aktualniHraIdx = 0;
-int kvizKatIdx = 0; int kvizObtIdx = 0; int grafMenuIndex = 0; int horoskopMenuIndex = 0;
+int kvizKatIdx = 0; int kvizObtIdx = 0; int kvizKatScrollOffset = 0; int grafMenuIndex = 0; int horoskopMenuIndex = 0;
+int refreshMode = 1; // 0=Pomalá (full), 1=Střední (partial, default), 2=Rychlá (partial fast)
 
 // ===== BATERIE A STATUS =====
 float getBatteryVoltage() { 
@@ -228,7 +229,7 @@ const int hryCount = 6; String hryItems[] = { "Flaška", "Kostky", "Gamebook", "
 const int kostkyCount = 4; String kostkyItems[] = { "6 stěn", "12 stěn", "24 stěn", "2x6 stěn" }; int kostkyStrany[] = { 6, 12, 24, 66 };
 
 // Kvíz kategorie a obtížnost
-String kvizKategorieItems[] = { "Kultura", "Věda", "Všeobecný", "Osobnosti", "Sport", "Příroda" };
+String kvizKategorieItems[] = { "Kultura", "Věda", "Všeobecný", "Osobnosti", "Sport", "Příroda", "Vše (All-in)" };
 String kvizObtiznostItems[] = { "Za 100 bodů", "Za 200 bodů", "Za 300 bodů" };
 
 // Horoskop
@@ -241,7 +242,7 @@ const char* grafNazvy[] = { "EUR/CZK", "USD/CZK", "BTC/CZK", "Zlato CZK/g", "Str
 const int grafCount = 5;
 
 const int nastaveniCount = 5; String nastaveniItems[] = { "Vzhled displeje", "Auto-aktualizace", "Vynutit aktualizaci", "Baterie", "O zařízení" };
-const int vzhledCount = 4; String vzhledItems[] = { "Font", "Velikost", "Tloušťka", "Reverz" };
+const int vzhledCount = 5; String vzhledItems[] = { "Font", "Velikost", "Tloušťka", "Reverz", "Rychlost displeje" };
 const int intervalCount = 5; String intervalItems[] = {"Vypnuto", "Každé 3 hodiny", "Každých 5 hodin", "Každých 12 hodin", "Každých 24 hodin"};
 unsigned long intervalyMs[] = {0, 10800000, 18000000, 43200000, 86400000};
 int intervalIdx = 4; 
@@ -453,6 +454,11 @@ void zobrazQR(const char* title, const char* dataStr) {
 
 // ===== ZOBRAZOVÁNÍ KVÍZU A WYR =====
 void nastaviNahodnyKvizIdx() {
+  // All-in: náhodná otázka ze všech kategorií
+  if (kvizKatIdx == 6) {
+    aktualniHraIdx = random(kvizPocet);
+    return;
+  }
   // Najdeme otázky odpovídající zvolené kategorii a obtížnosti
   int matching[30]; int count = 0;
   int targetDiff = kvizObtiznosti[kvizObtIdx];
@@ -1594,6 +1600,7 @@ void zobrazLedStav() {
 bool longPress() { unsigned long start = millis(); while (digitalRead(BTN_SELECT) == LOW) { if (millis() - start > 500) { while (digitalRead(BTN_SELECT) == LOW) delay(10); return true; } delay(10); } return false; }
 bool longPressBTN0() { unsigned long start = millis(); while (digitalRead(BTN_DOWN) == LOW) { if (millis() - start > 500) { while (digitalRead(BTN_DOWN) == LOW) delay(10); return true; } delay(10); } return false; }
 void menuDown(int& idx, int& scr, int count) { int visible = getVisibleMenuItems(); idx = (idx + 1) % count; if (idx >= scr + visible) scr++; if (idx == 0) scr = 0; }
+int scrollForIdx(int idx) { int v = getVisibleMenuItems(); return (idx >= v) ? idx - v + 1 : 0; }
 
 void goBack() {
   switch (appState) {
@@ -1619,11 +1626,13 @@ void goBack() {
     case STATE_STOPKY: stopkyRunning = false; stopkyElapsed = 0; appState = STATE_TOOLBOX; zobrazSubMenu("TOOLBOX", toolboxItems, toolboxCount, subMenuIndex, subScrollOffset); break;
     case STATE_TOOLBOX: appState = STATE_MAIN_MENU; zobrazSubMenu("HLAVNÍ MENU", mainMenuItems, mainMenuCount, menuIndex, scrollOffset); break;
     
-    case STATE_KVIZ: case STATE_KVIZ_ODPOVED: case STATE_WYR: case STATE_WYR_VYSLEDEK: case STATE_FLASKA: case STATE_KOSTKY: case STATE_ODHALOVACKA: case STATE_ODHALOVACKA_DETAIL: appState = STATE_HRY; zobrazSubMenu("HRY", hryItems, hryCount, subMenuIndex, subScrollOffset); break;
+    case STATE_KVIZ: case STATE_KVIZ_ODPOVED: appState = STATE_HRY; subMenuIndex = 4; subScrollOffset = scrollForIdx(4); zobrazSubMenu("HRY", hryItems, hryCount, subMenuIndex, subScrollOffset); break;
+    case STATE_WYR: case STATE_WYR_VYSLEDEK: appState = STATE_HRY; subMenuIndex = 5; subScrollOffset = scrollForIdx(5); zobrazSubMenu("HRY", hryItems, hryCount, subMenuIndex, subScrollOffset); break;
+    case STATE_FLASKA: case STATE_KOSTKY: case STATE_ODHALOVACKA: case STATE_ODHALOVACKA_DETAIL: appState = STATE_HRY; zobrazSubMenu("HRY", hryItems, hryCount, subMenuIndex, subScrollOffset); break;
     case STATE_KOSTKY_VYBER: appState = STATE_HRY; subMenuIndex = 1; subScrollOffset = 0; zobrazSubMenu("HRY", hryItems, hryCount, subMenuIndex, subScrollOffset); break;
     case STATE_GAMEBOOK: ulozGBPozici(gbNode); appState = STATE_HRY; subMenuIndex = 2; subScrollOffset = 0; zobrazSubMenu("HRY", hryItems, hryCount, subMenuIndex, subScrollOffset); break;
-    case STATE_KVIZ_OBTIZNOST: appState = STATE_KVIZ_KATEGORIE; zobrazSubMenu("KATEGORIE KVÍZU", kvizKategorieItems, kvizKategoriiCount, kvizKatIdx, 0); break;
-    case STATE_KVIZ_KATEGORIE: appState = STATE_HRY; subMenuIndex = 4; subScrollOffset = 0; zobrazSubMenu("HRY", hryItems, hryCount, subMenuIndex, subScrollOffset); break;
+    case STATE_KVIZ_OBTIZNOST: appState = STATE_KVIZ_KATEGORIE; zobrazSubMenu("KATEGORIE KVÍZU", kvizKategorieItems, kvizKategoriiCount, kvizKatIdx, kvizKatScrollOffset); break;
+    case STATE_KVIZ_KATEGORIE: appState = STATE_HRY; subMenuIndex = 4; subScrollOffset = scrollForIdx(4); zobrazSubMenu("HRY", hryItems, hryCount, subMenuIndex, subScrollOffset); break;
     case STATE_HRY: appState = STATE_MAIN_MENU; zobrazSubMenu("HLAVNÍ MENU", mainMenuItems, mainMenuCount, menuIndex, scrollOffset); break;
     
     case STATE_HOROSKOP_DETAIL: appState = STATE_HOROSKOP_MENU; zobrazSubMenu("HOROSKOP", horoskopItems, horoskopCount, horoskopMenuIndex, 0); break;
@@ -1782,7 +1791,7 @@ void loop() {
         case STATE_WYR: aktualniHraIdx = random(wyrPocet); zobrazWyr(); break;
         case STATE_WYR_VYSLEDEK: appState = STATE_WYR; aktualniHraIdx = random(wyrPocet); zobrazWyr(); break;
         
-        case STATE_KVIZ_KATEGORIE: kvizKatIdx = (kvizKatIdx + 1) % kvizKategoriiCount; zobrazSubMenu("KATEGORIE KVÍZU", kvizKategorieItems, kvizKategoriiCount, kvizKatIdx, 0); break;
+        case STATE_KVIZ_KATEGORIE: menuDown(kvizKatIdx, kvizKatScrollOffset, kvizKategoriiCount); zobrazSubMenu("KATEGORIE KVÍZU", kvizKategorieItems, kvizKategoriiCount, kvizKatIdx, kvizKatScrollOffset); break;
         case STATE_KVIZ_OBTIZNOST: kvizObtIdx = (kvizObtIdx + 1) % 3; zobrazSubMenu("OBTÍŽNOST", kvizObtiznostItems, 3, kvizObtIdx, 0); break;
         
         case STATE_HOROSKOP_MENU: horoskopMenuIndex = (horoskopMenuIndex + 1) % horoskopCount; zobrazSubMenu("HOROSKOP", horoskopItems, horoskopCount, horoskopMenuIndex, 0); break;
@@ -1905,11 +1914,12 @@ void loop() {
           else if (subMenuIndex == 1) { appState = STATE_KOSTKY_VYBER; subMenuIndex = 0; subScrollOffset = 0; zobrazSubMenu("KOSTKY", kostkyItems, kostkyCount, 0, 0); }
           else if (subMenuIndex == 2) { appState = STATE_GAMEBOOK; gbNode = nactiGBPozici(); gbTextPage = 0; zobrazGBNode(); }
           else if (subMenuIndex == 3) { appState = STATE_ODHALOVACKA; odhalovackaKonec = false; for(int i=0; i<64; i++) odhalenoPole[i] = false; zobrazOdhalovacku(); }
-          else if (subMenuIndex == 4) { appState = STATE_KVIZ_KATEGORIE; kvizKatIdx = 0; kvizObtIdx = 0; subScrollOffset = 0; zobrazSubMenu("KATEGORIE KVÍZU", kvizKategorieItems, kvizKategoriiCount, 0, 0); }
+          else if (subMenuIndex == 4) { appState = STATE_KVIZ_KATEGORIE; kvizKatIdx = 0; kvizObtIdx = 0; kvizKatScrollOffset = 0; zobrazSubMenu("KATEGORIE KVÍZU", kvizKategorieItems, kvizKategoriiCount, 0, 0); }
           else if (subMenuIndex == 5) { appState = STATE_WYR; aktualniHraIdx = random(wyrPocet); zobrazWyr(); }
           break;
         case STATE_KVIZ_KATEGORIE:
-          appState = STATE_KVIZ_OBTIZNOST; kvizObtIdx = 0; zobrazSubMenu("OBTÍŽNOST", kvizObtiznostItems, 3, 0, 0);
+          if (kvizKatIdx == 6) { nastaviNahodnyKvizIdx(); appState = STATE_KVIZ; zobrazKviz(); }
+          else { appState = STATE_KVIZ_OBTIZNOST; kvizObtIdx = 0; zobrazSubMenu("OBTÍŽNOST", kvizObtiznostItems, 3, 0, 0); }
           break;
         case STATE_KVIZ_OBTIZNOST:
           nastaviNahodnyKvizIdx(); appState = STATE_KVIZ; zobrazKviz();
@@ -1949,6 +1959,7 @@ void loop() {
           else if (subMenuIndex == 1) { currentSize = (currentSize + 1) % 4; delay(100); zobrazSubMenu("VZHLED", vzhledItems, vzhledCount, subMenuIndex, subScrollOffset); }
           else if (subMenuIndex == 2) { currentBold = (currentBold + 1) % 2; delay(100); zobrazSubMenu("VZHLED", vzhledItems, vzhledCount, subMenuIndex, subScrollOffset); }
           else if (subMenuIndex == 3) { reverseMode = !reverseMode; delay(100); zobrazSubMenu("VZHLED", vzhledItems, vzhledCount, subMenuIndex, subScrollOffset); }
+          else if (subMenuIndex == 4) { refreshMode = (refreshMode + 1) % 3; delay(100); zobrazSubMenu("VZHLED", vzhledItems, vzhledCount, subMenuIndex, subScrollOffset); }
           break;
           
         case STATE_NASTAVENI_AKTUALIZACE:

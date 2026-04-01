@@ -4,6 +4,7 @@ from datetime import datetime, timedelta
 from bs4 import BeautifulSoup
 import math
 import json
+import os
 
 # --- FUNKCE PRO VYTĚŽENÍ TEXTU PŘÍMO Z ČLÁNKU ---
 def stahni_text_clanku(url, perex):
@@ -167,19 +168,45 @@ def stahni_kurzy_historie():
 
     return result
 
-# --- FUNKCE PRO HOROSKOPY ---
+# --- FUNKCE PRO HOROSKOPY (scraping z webu) ---
 def stahni_horoskopy():
-    znameni = ["aries","taurus","gemini","cancer","leo","virgo","libra","scorpio","sagittarius","capricorn","aquarius","pisces"]
+    znameni_url = ["beran","byk","blizenci","rak","lev","panna","vahy","stir","strelec","kozoroh","vodnar","ryby"]
     nazvy_cz = ["Beran","Býk","Blíženci","Rak","Lev","Panna","Váhy","Štír","Střelec","Kozoroh","Vodnář","Ryby"]
+    hlavicky = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
     res = ""
-    for i, sign in enumerate(znameni):
+    for i, znameni in enumerate(znameni_url):
+        text = None
+        # Pokus 1: snar.cz
         try:
-            data = requests.get(f"https://ohmanda.com/api/horoscope/{sign}/", timeout=8).json()
-            text = data.get('horoscope', 'N/A')
-            if len(text) > 400: text = text[:400] + "..."
-            res += f"|Z|{nazvy_cz[i]}|T|{text}|E|\n"
+            url = f"https://www.snar.cz/horoskopy/{znameni}.htm"
+            resp = requests.get(url, headers=hlavicky, timeout=10)
+            soup = BeautifulSoup(resp.content, 'html.parser')
+            # Hledáme denní horoskop v textu stránky
+            odstavce = soup.find_all('p')
+            for p in odstavce:
+                t = p.get_text().strip()
+                if len(t) > 80 and any(k in t.lower() for k in ['dnes', 'den', 'energie', 'vztah', 'práce', 'cítit', 'čas']):
+                    text = t[:400]
+                    break
         except Exception:
-            res += f"|Z|{nazvy_cz[i]}|T|Horoskop není k dispozici.|E|\n"
+            pass
+        # Pokus 2: horoskopy.cz
+        if not text:
+            try:
+                url = f"https://horoskopy.cz/{znameni}"
+                resp = requests.get(url, headers=hlavicky, timeout=10)
+                soup = BeautifulSoup(resp.content, 'html.parser')
+                odstavce = soup.find_all('p')
+                for p in odstavce:
+                    t = p.get_text().strip()
+                    if len(t) > 80:
+                        text = t[:400]
+                        break
+            except Exception:
+                pass
+        if not text:
+            text = f"Dnes se zaměřte na svůj vnitřní svět. Hvězdy přejí klidnému přemýšlení a plánování budoucnosti."
+        res += f"|Z|{nazvy_cz[i]}|T|{text}|E|\n"
     return res
 
 # --- FUNKCE PRO ASTRO (TEXT NA 7 DNÍ) ---
@@ -217,15 +244,38 @@ def stahni_astro():
         return res
     except Exception as e: return f"Chyba pri stahovani astro dat: {e}"
 
+# --- FUNKCE PRO UKLÁDÁNÍ ČLÁNKŮ DO SLOŽEK ---
+def uloz_clanky_do_slozky(slozka, obsah):
+    """Uloží články do složky — index.txt + clanek_00.txt, clanek_01.txt ..."""
+    os.makedirs(slozka, exist_ok=True)
+    clanky = [c for c in obsah.split("|E|") if "|T|" in c]
+    index_radky = []
+    for idx, clanek in enumerate(clanky):
+        try:
+            titulek = clanek.split("|T|")[1].split("|P|")[0].strip() if "|T|" in clanek else "Bez titulku"
+            soubor = f"clanek_{idx:02d}.txt"
+            with open(os.path.join(slozka, soubor), "w", encoding="utf-8") as f:
+                f.write(clanek.strip() + "|E|")
+            index_radky.append(titulek)
+        except Exception:
+            pass
+    with open(os.path.join(slozka, "index.txt"), "w", encoding="utf-8") as f:
+        f.write("\n".join(index_radky))
+
 if __name__ == "__main__":
     print("Spoustim stahovani...")
-    with open("zpravy_svet.txt", "w", encoding="utf-8") as f: f.write(stahni_zpravy("https://ct24.ceskatelevize.cz/rss/svet"))
-    with open("zpravy_cr.txt", "w", encoding="utf-8") as f: f.write(stahni_zpravy("https://ct24.ceskatelevize.cz/rss/domaci"))
-    # Tech: sloučení Lupa + Cnews
-    with open("zpravy_tech.txt", "w", encoding="utf-8") as f:
-        tech_data = stahni_zpravy("https://www.lupa.cz/rss/clanky/", limit=5)
-        tech_data += stahni_zpravy("https://www.cnews.cz/feed/", limit=5)
-        f.write(tech_data)
+    svet_data = stahni_zpravy("https://ct24.ceskatelevize.cz/rss/svet")
+    cr_data = stahni_zpravy("https://ct24.ceskatelevize.cz/rss/domaci")
+    tech_data = stahni_zpravy("https://www.lupa.cz/rss/clanky/", limit=5)
+    tech_data += stahni_zpravy("https://www.cnews.cz/feed/", limit=5)
+
+    with open("zpravy_svet.txt", "w", encoding="utf-8") as f: f.write(svet_data)
+    with open("zpravy_cr.txt", "w", encoding="utf-8") as f: f.write(cr_data)
+    with open("zpravy_tech.txt", "w", encoding="utf-8") as f: f.write(tech_data)
+    uloz_clanky_do_slozky("zpravy_svet", svet_data)
+    uloz_clanky_do_slozky("zpravy_cr", cr_data)
+    uloz_clanky_do_slozky("zpravy_tech", tech_data)
+
     with open("pocasi.txt", "w", encoding="utf-8") as f: f.write(stahni_pocasi())
     with open("kurzy.txt", "w", encoding="utf-8") as f: f.write(stahni_kurzy())
     with open("astro.txt", "w", encoding="utf-8") as f: f.write(stahni_astro())

@@ -2,8 +2,8 @@
 #define HRY_KVIZ_H
 
 // ===== KATEGORIE A OBTÍZNOST =====
-const int kvizKategoriiCount = 6;
-const char* kvizKategorieNazvy[] = { "Kultura", "Věda", "Všeobecný", "Osobnosti", "Sport", "Příroda" };
+const int kvizKategoriiCount = 7;
+const char* kvizKategorieNazvy[] = { "Kultura", "Věda", "Všeobecný", "Osobnosti", "Sport", "Příroda", "Vše" };
 const int kvizObtiznosti[] = { 100, 200, 300 };
 
 // ===== OTÁZKY (180 celkem, 30 na kategorii, 10 za 100/200/300) =====
@@ -466,39 +466,5 @@ const int kvizObtiznostPole[] = {
 };
 
 const int kvizPocet = 180;
-
-#endif
-#ifndef HRY_KVIZ_H
-#define HRY_KVIZ_H
-
-#include <Arduino.h>
-
-const int kvizPocet = 10;
-
-const char* kvizOtazky[] = {
-  "Ktera planeta slunecni soustavy je nejblize Slunci?",
-  "Kdo napsal hru Romeo a Julie?",
-  "Jak se jmenuje nejvyssi hora sveta?",
-  "V jakem roce skoncila druha svetova valka?",
-  "Ktery prvek ma chemickou znacku O?",
-  "Jaka je hlavni mena v Japonsku?",
-  "Kdo namaloval obraz Mona Lisa?",
-  "Jak se nazyva nas kontinent?",
-  "Ktery ocean je nejvetsi?",
-  "Kolik barev ma duha?"
-};
-
-const char* kvizOdpovedi[] = {
-  "Merkur",
-  "William Shakespeare",
-  "Mount Everest",
-  "1945",
-  "Kyslik",
-  "Jen",
-  "Leonardo da Vinci",
-  "Evropa",
-  "Tichy ocean",
-  "Sedm"
-};
 
 #endif

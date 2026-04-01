@@ -26,14 +26,12 @@ const char* pass1 = "Pizzue-96";
 const char* ssid2 = "Bobik";
 const char* pass2 = "honzuemanejfoun";
 
-String urlPocasi = "https://raw.githubusercontent.com/honzuejtt-ops/Honzueink/main/pocasi.txt";
-String urlZpravySvet = "https://raw.githubusercontent.com/honzuejtt-ops/Honzueink/main/zpravy_svet.txt";
-String urlZpravyCR = "https://raw.githubusercontent.com/honzuejtt-ops/Honzueink/main/zpravy_cr.txt";
-String urlTechAI = "https://raw.githubusercontent.com/honzuejtt-ops/Honzueink/main/zpravy_tech.txt";
-String urlZpravyBulvar = "https://raw.githubusercontent.com/honzuejtt-ops/Honzueink/main/zpravy_bulvar.txt";
-String urlKurzy = "https://raw.githubusercontent.com/honzuejtt-ops/Honzueink/main/kurzy.txt";
-String urlHoroskop = "https://raw.githubusercontent.com/honzuejtt-ops/Honzueink/main/horoskop.txt";
-String urlKurzyHistorie = "https://raw.githubusercontent.com/honzuejtt-ops/Honzueink/main/kurzy_historie.txt";
+const String urlBase = "https://raw.githubusercontent.com/honzuejtt-ops/Honzueink/main/";
+String urlPocasi = urlBase + "pocasi.txt";
+String urlKurzy = urlBase + "kurzy.txt";
+String urlHoroskop = urlBase + "horoskop.txt";
+String urlKurzyHistorie = urlBase + "kurzy_historie.txt";
+// Zprávy se stahují z folder struktury: zpravy_svet/, zpravy_cr/, zpravy_tech/, zpravy_bulvar/
 
 String stazenaDataSvet = ""; String stazenaDataCR = ""; String stazenaDataTech = "";
 String stazenaDataBulvar = "";
@@ -152,7 +150,7 @@ int menuIndex = 0, scrollOffset = 0, subMenuIndex = 0, subScrollOffset = 0, text
 bool stopkyRunning = false; unsigned long stopkyStart = 0, stopkyElapsed = 0, stopkyLastDraw = 0;
 int gbNode = 0, gbTextPage = 0, knihaPozice[3] = { 0, 0, 0 };
 int aktualniHraIdx = 0;
-int kvizKatIdx = 0; int kvizObtIdx = 0; int kvizKatScrollOffset = 0; int grafMenuIndex = 0; int horoskopMenuIndex = 0;
+int kvizKatIdx = 0; int kvizObtIdx = 0; int kvizKatScrollOffset = 0; int grafMenuIndex = 0; int horoskopMenuIndex = 0; int horoskopScrollPage = 0;
 int refreshMode = 1; // 0=Pomalá (full), 1=Střední (partial, default), 2=Rychlá (partial fast)
 
 // ===== BATERIE A STATUS =====
@@ -613,14 +611,23 @@ void zobrazHoroskopDetail(int idx) {
     display.drawFastHLine(0, 22, display.width(), fgColor());
     String text = (horoskopy[idx].length() > 0) ? horoskopy[idx] : "Data nejsou k dispozici.";
     u8g2Fonts.setFont(getBodyFont());
-    TextLine lines[6]; int lCount = zalamejText(text.c_str(), text.length(), lines, 6, display.width() - 10);
+    int lpp = getLinesPerPage();
+    TextLine allLines[50]; int totalLines = zalamejText(text.c_str(), text.length(), allLines, 50, display.width() - 10);
+    int totalPages = (totalLines + lpp - 1) / lpp; if (totalPages < 1) totalPages = 1;
+    if (horoskopScrollPage >= totalPages) horoskopScrollPage = 0;
+    int startLine = horoskopScrollPage * lpp;
     int y = 38;
-    for(int i=0; i<lCount; i++){
-      char lBuf[80]; int len = lines[i].len; if(len>79) len=79;
-      strncpy(lBuf, &text.c_str()[lines[i].start], len); lBuf[len]='\0';
-      u8g2Fonts.setCursor(5, y); u8g2Fonts.print(lBuf); y+=getLineHeight();
+    for (int i = 0; i < lpp && (startLine + i) < totalLines; i++) {
+      int li = startLine + i;
+      char lBuf[80]; int len = allLines[li].len; if (len > 79) len = 79;
+      strncpy(lBuf, &text.c_str()[allLines[li].start], len); lBuf[len] = '\0';
+      u8g2Fonts.setCursor(5, y); u8g2Fonts.print(lBuf); y += getLineHeight();
     }
-    u8g2Fonts.setFont(getSmallFont()); u8g2Fonts.setCursor(5, 125); u8g2Fonts.print("BTN0=další znak | Drž BTN21=zpět");
+    u8g2Fonts.setFont(getSmallFont());
+    u8g2Fonts.setCursor(5, 125); u8g2Fonts.print("BTN0=strana|BTN21=znak|Drž=zpět");
+    String pageInfo = String(horoskopScrollPage + 1) + "/" + String(totalPages);
+    int piw = u8g2Fonts.getUTF8Width(pageInfo.c_str());
+    u8g2Fonts.setCursor(display.width() - piw - 3, 125); u8g2Fonts.print(pageInfo.c_str());
   } while (display.nextPage());
 }
 
@@ -864,6 +871,43 @@ String stahniTextZUrl(String nazev, String url) {
   return vysledek;
 }
 
+// Stáhne všechny články z folder struktury (index.txt + clanek_00.txt, clanek_01.txt, ...)
+static const int MAX_ARTICLES_PER_CATEGORY = 15;
+static const int MAX_CATEGORY_DATA_LENGTH = 14000;
+
+String stahniKategoriiZeSloky(String slozka) {
+  String indexUrl = urlBase + slozka + "/index.txt";
+  String indexData = stahniTextZUrl(slozka + "/index", indexUrl);
+  if (indexData.length() < 2) return "";
+
+  // Počet článků = počet neprázdných řádků v index.txt
+  int pocetClanku = 0;
+  unsigned int pos = 0;
+  while (pos < indexData.length()) {
+    int nl = indexData.indexOf('\n', pos);
+    unsigned int end = (nl == -1) ? indexData.length() : (unsigned int)nl;
+    if (end > pos) pocetClanku++;
+    if (nl == -1) break;
+    pos = (unsigned int)nl + 1;
+  }
+  if (pocetClanku > MAX_ARTICLES_PER_CATEGORY) pocetClanku = MAX_ARTICLES_PER_CATEGORY;
+
+  String result = "";
+  for (int i = 0; i < pocetClanku; i++) {
+    char soubor[32];
+    sprintf(soubor, "/clanek_%02d.txt", i);
+    String articleUrl = urlBase + slozka + String(soubor);
+    String clanek = stahniTextZUrl(slozka + String(soubor), articleUrl);
+    clanek.trim();
+    if (clanek.length() > 10) {
+      result += clanek;
+      if (!result.endsWith("|E|")) result += "|E|";
+      if (result.length() > MAX_CATEGORY_DATA_LENGTH) break;
+    }
+  }
+  return result;
+}
+
 void aktualizovatDataNaPozadi(bool vynuceno) {
   bool casNaUpdate = false;
   time_t now = time(NULL);
@@ -880,21 +924,28 @@ void aktualizovatDataNaPozadi(bool vynuceno) {
     nakresliLoadScreen("Navazuji spojení...", 5);
     
     if (pripojWiFi()) {
+      // NTP re-sync pokud ještě nebyl synchronizován
+      if (!casSynchronizovan) {
+        configTzTime("CET-1CEST,M3.5.0,M10.5.0/3", "pool.ntp.org", "time.nist.gov");
+        struct tm timeinfo;
+        if (getLocalTime(&timeinfo, 5000)) casSynchronizovan = true;
+      }
+
       bool asponNecoSeStahlo = false;
       sharedClientInitialized = false; // Reset klienta pro čerstvé spojení
       sharedClient.stop(); // Zavřeme případné předchozí spojení
       
       nakresliLoadScreen("Stahuji zprávy ze světa...", 15);
-      String tSvet = stahniTextZUrl("Svet", urlZpravySvet);
+      String tSvet = stahniKategoriiZeSloky("zpravy_svet");
       // BEZPEČNÁ KONTROLA: Přepiš jen když se stáhl validní text (delší než 20 znaků)
       if (tSvet.length() > 20) { stazenaDataSvet = tSvet; asponNecoSeStahlo = true; }
       
       nakresliLoadScreen("Stahuji zprávy z ČR...", 28);
-      String tCR = stahniTextZUrl("CR", urlZpravyCR);
+      String tCR = stahniKategoriiZeSloky("zpravy_cr");
       if (tCR.length() > 20) { stazenaDataCR = tCR; asponNecoSeStahlo = true; }
       
       nakresliLoadScreen("Stahuji Tech a AI...", 42);
-      String tTech = stahniTextZUrl("Tech", urlTechAI);
+      String tTech = stahniKategoriiZeSloky("zpravy_tech");
       if (tTech.length() > 20) { stazenaDataTech = tTech; asponNecoSeStahlo = true; }
       
       nakresliLoadScreen("Stahuji Počasí...", 55);
@@ -914,7 +965,7 @@ void aktualizovatDataNaPozadi(bool vynuceno) {
       if (tKHist.length() > 10) { stazenaDataKurzyHistorie = tKHist; asponNecoSeStahlo = true; }
 
       nakresliLoadScreen("Stahuji Bulvár...", 94);
-      String tBulvar = stahniTextZUrl("Bulvar", urlZpravyBulvar);
+      String tBulvar = stahniKategoriiZeSloky("zpravy_bulvar");
       if (tBulvar.length() > 20) { stazenaDataBulvar = tBulvar; asponNecoSeStahlo = true; }
       
       // Uklidíme sdílený klient po dokončení všech stahování
@@ -1670,7 +1721,7 @@ void goBack() {
     case STATE_KVIZ_KATEGORIE: appState = STATE_HRY; subMenuIndex = 4; subScrollOffset = scrollForIdx(4); zobrazSubMenu("HRY", hryItems, hryCount, subMenuIndex, subScrollOffset); break;
     case STATE_HRY: appState = STATE_MAIN_MENU; zobrazSubMenu("HLAVNÍ MENU", mainMenuItems, mainMenuCount, menuIndex, scrollOffset); break;
     
-    case STATE_HOROSKOP_DETAIL: appState = STATE_HOROSKOP_MENU; zobrazSubMenu("HOROSKOP", horoskopItems, horoskopCount, horoskopMenuIndex, 0); break;
+    case STATE_HOROSKOP_DETAIL: horoskopScrollPage = 0; appState = STATE_HOROSKOP_MENU; zobrazSubMenu("HOROSKOP", horoskopItems, horoskopCount, horoskopMenuIndex, 0); break;
     case STATE_HOROSKOP_MENU: appState = STATE_AKTUALITY; subMenuIndex = 4; subScrollOffset = 0; zobrazSubMenu("AKTUALITY", aktualityItems, aktualityCount, subMenuIndex, subScrollOffset); break;
     case STATE_KURZY_GRAF: appState = STATE_KURZY; zobrazKurzyUI(); break;
     
@@ -1830,7 +1881,7 @@ void loop() {
         case STATE_KVIZ_OBTIZNOST: kvizObtIdx = (kvizObtIdx + 1) % 3; zobrazSubMenu("OBTÍŽNOST", kvizObtiznostItems, 3, kvizObtIdx, 0); break;
         
         case STATE_HOROSKOP_MENU: horoskopMenuIndex = (horoskopMenuIndex + 1) % horoskopCount; zobrazSubMenu("HOROSKOP", horoskopItems, horoskopCount, horoskopMenuIndex, 0); break;
-        case STATE_HOROSKOP_DETAIL: horoskopMenuIndex = (horoskopMenuIndex + 1) % horoskopCount; zobrazHoroskopDetail(horoskopMenuIndex); break;
+        case STATE_HOROSKOP_DETAIL: horoskopScrollPage++; zobrazHoroskopDetail(horoskopMenuIndex); break;
         case STATE_KURZY_GRAF: grafMenuIndex = (grafMenuIndex + 1) % grafCount; zobrazKurzGraf(); break;
         
         case STATE_NASTAVENI: menuDown(subMenuIndex, subScrollOffset, nastaveniCount); zobrazSubMenu("NASTAVENÍ", nastaveniItems, nastaveniCount, subMenuIndex, subScrollOffset); break;
@@ -1977,8 +2028,8 @@ void loop() {
         case STATE_WYR: appState = STATE_WYR_VYSLEDEK; zobrazWyrVysledek(); break;
         case STATE_WYR_VYSLEDEK: appState = STATE_WYR; aktualniHraIdx = random(wyrPocet); zobrazWyr(); break;
         
-        case STATE_HOROSKOP_MENU: appState = STATE_HOROSKOP_DETAIL; zobrazHoroskopDetail(horoskopMenuIndex); break;
-        case STATE_HOROSKOP_DETAIL: horoskopMenuIndex = (horoskopMenuIndex + 1) % horoskopCount; zobrazHoroskopDetail(horoskopMenuIndex); break;
+        case STATE_HOROSKOP_MENU: appState = STATE_HOROSKOP_DETAIL; horoskopScrollPage = 0; zobrazHoroskopDetail(horoskopMenuIndex); break;
+        case STATE_HOROSKOP_DETAIL: horoskopScrollPage = 0; horoskopMenuIndex = (horoskopMenuIndex + 1) % horoskopCount; zobrazHoroskopDetail(horoskopMenuIndex); break;
         case STATE_KURZY_GRAF: grafMenuIndex = (grafMenuIndex + 1) % grafCount; zobrazKurzGraf(); break;
 
         case STATE_NASTAVENI:

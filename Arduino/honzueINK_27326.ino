@@ -151,6 +151,8 @@ enum AppState {
 
 AppState appState = STATE_MAIN_MENU;
 int menuIndex = 0, scrollOffset = 0, subMenuIndex = 0, subScrollOffset = 0, textScrollPage = 0, kostkyStran = 6;
+bool stopkyRunning = false; unsigned long stopkyStart = 0, stopkyElapsed = 0, stopkyLastDraw = 0;
+int refreshMode = 1; // 0=Pomalá (full), 1=Střední (partial, default), 2=Rychlá (partial fast)
 int gbNode = 0, gbTextPage = 0, knihaPozice[3] = { 0, 0, 0 };
 int aktualniHraIdx = 0;
 int kvizKatIdx = 0; int kvizObtIdx = 0; int kvizKatScrollOffset = 0; int grafMenuIndex = 0; int horoskopMenuIndex = 0; int horoskopScrollPage = 0;

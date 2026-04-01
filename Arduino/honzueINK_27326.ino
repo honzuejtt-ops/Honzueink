@@ -271,7 +271,11 @@ void nakresliLoadScreen(String text, int progress) {
 // ===== UKLÁDÁNÍ DAT DO PAMĚTI (PŘEŽIJE DEEP SLEEP) =====
 void ulozZpravuDoCache(String klic, String data) {
   prefs.begin("cache", false);
-  if (data.length() > 3800) data = data.substring(0, 3800); // Ořez pro jistotu
+  if (data.length() > 15000) {
+    int lastE = data.substring(0, 15000).lastIndexOf("|E|");
+    if (lastE > 0) data = data.substring(0, lastE + 3);
+    else data = data.substring(0, 15000);
+  }
   prefs.putString(klic.c_str(), data);
   prefs.end();
 }
@@ -295,6 +299,7 @@ void nactiStazenaData() {
 
   if (stazenaDataPocasi != "") parsujPocasi(stazenaDataPocasi);
   if (stazenaDataKurzy != "") parsujKurzy(stazenaDataKurzy);
+  if (stazenaDataSvet != "") parsujZpravy(stazenaDataSvet);
 }
 
 
@@ -318,37 +323,45 @@ void jdiSpat() {
     display.fillScreen(bgColor());
     u8g2Fonts.setFontMode(1); u8g2Fonts.setForegroundColor(fgColor()); u8g2Fonts.setBackgroundColor(bgColor());
     
-    // Horní část: Datum a Svátek
-    u8g2Fonts.setFont(getTitleFont());
+    // Horní část: Datum (getBigFont, centrovaný)
+    u8g2Fonts.setFont(getBigFont());
     int tw = u8g2Fonts.getUTF8Width(datumStr.c_str());
-    u8g2Fonts.setCursor((display.width() - tw) / 2, 22); 
+    u8g2Fonts.setCursor((display.width() - tw) / 2, 25); 
     u8g2Fonts.print(datumStr.c_str());
     
-    u8g2Fonts.setFont(getSmallFont());
+    // Svátek (getBodyFont, centrovaný)
+    u8g2Fonts.setFont(getBodyFont());
     tw = u8g2Fonts.getUTF8Width(svatekDnes.c_str());
-    u8g2Fonts.setCursor((display.width() - tw) / 2, 38);
+    u8g2Fonts.setCursor((display.width() - tw) / 2, 40);
     u8g2Fonts.print(svatekDnes.c_str());
     
     display.drawFastHLine(0, 42, display.width(), fgColor());
 
-    // Střed: Počasí (pokud máme data)
+    // Střed: Počasí (pokud máme data) — blok centrovaný
     if (stazenaDataPocasi != "") {
-      nakresliIkonuPocasi(predpoved[0].ikona, 50, 75);
       u8g2Fonts.setFont(getBigFont());
       String temp = String(predpoved[0].tMax) + "° / " + String(predpoved[0].tMin) + "°C";
-      u8g2Fonts.setCursor(110, 80); u8g2Fonts.print(temp.c_str());
+      int tw2 = u8g2Fonts.getUTF8Width(temp.c_str());
+      int iconW = 50;
+      int gap = 8;
+      int blockW = iconW + gap + tw2;
+      int startX = (display.width() - blockW) / 2;
+      nakresliIkonuPocasi(predpoved[0].ikona, startX + iconW / 2, 68);
+      u8g2Fonts.setCursor(startX + iconW + gap, 75);
+      u8g2Fonts.print(temp.c_str());
     }
 
-    // Spodek: Náhodný vtip/citát
+    // Spodek: Náhodný vtip/citát (getSmallFont, centrovaný)
     display.drawFastHLine(0, 100, display.width(), fgColor());
     u8g2Fonts.setFont(getSmallFont());
     String rTxt = String(vtipy[random(vtipyPocet)]);
     TextLine lines[2];
     int lCount = zalamejText(rTxt.c_str(), rTxt.length(), lines, 2, display.width() - 20);
-    for(int i=0; i<lCount; i++) {
-       char lBuf[85]; int len = lines[i].len; if(len>84) len=84;
-       strncpy(lBuf, &rTxt.c_str()[lines[i].start], len); lBuf[len]='\0';
-       u8g2Fonts.setCursor(10, 114 + (i*12)); u8g2Fonts.print(lBuf);
+    for (int i = 0; i < lCount; i++) {
+       char lBuf[85]; int len = lines[i].len; if (len > 84) len = 84;
+       strncpy(lBuf, &rTxt.c_str()[lines[i].start], len); lBuf[len] = '\0';
+       int lw = u8g2Fonts.getUTF8Width(lBuf);
+       u8g2Fonts.setCursor((display.width() - lw) / 2, 114 + (i * 12)); u8g2Fonts.print(lBuf);
     }
 
   } while (display.nextPage());
@@ -395,6 +408,9 @@ void zobrazKviz() {
   display.firstPage();
   do {
     display.fillScreen(bgColor()); nakresliStatusBar();
+    u8g2Fonts.setFontMode(1);
+    u8g2Fonts.setForegroundColor(fgColor());
+    u8g2Fonts.setBackgroundColor(bgColor());
     u8g2Fonts.setFont(getTitleFont()); u8g2Fonts.setCursor(5, 16); u8g2Fonts.print("KVÍZ"); display.drawFastHLine(0, 20, display.width(), fgColor());
     u8g2Fonts.setFont(getBodyFont());
     TextLine lines[5]; int lCount = zalamejText(ot.c_str(), ot.length(), lines, 5, display.width() - 10);
@@ -414,6 +430,9 @@ void zobrazKvizOdpoved() {
   display.firstPage();
   do {
     display.fillScreen(bgColor());
+    u8g2Fonts.setFontMode(1);
+    u8g2Fonts.setForegroundColor(fgColor());
+    u8g2Fonts.setBackgroundColor(bgColor());
     u8g2Fonts.setFont(getBigFont()); 
     int tw = u8g2Fonts.getUTF8Width(odp.c_str());
     u8g2Fonts.setCursor((display.width() - tw) / 2, 60); u8g2Fonts.print(odp.c_str());
@@ -427,6 +446,9 @@ void zobrazWyr() {
   display.firstPage();
   do {
     display.fillScreen(bgColor()); nakresliStatusBar();
+    u8g2Fonts.setFontMode(1);
+    u8g2Fonts.setForegroundColor(fgColor());
+    u8g2Fonts.setBackgroundColor(bgColor());
     u8g2Fonts.setFont(getBodyFont());
     TextLine lines[6]; int lCount = zalamejText(ot.c_str(), ot.length(), lines, 6, display.width() - 10);
     int y = 30;
@@ -489,6 +511,7 @@ void parsujZpravy(String raw) {
 }
 
 void parsujPocasi(String raw) {
+  if (raw.length() < 5) return;
   int pos = 0;
   for (int i = 0; i < 7; i++) {
     int n1 = raw.indexOf('|', pos); int n2 = raw.indexOf('|', n1 + 1); int n3 = raw.indexOf('|', n2 + 1);
@@ -504,6 +527,7 @@ void parsujPocasi(String raw) {
 }
 
 void parsujKurzy(String raw) {
+  if (raw.length() < 5) return;
   int n1 = raw.indexOf('|'); int n2 = raw.indexOf('|', n1 + 1);
   int n3 = raw.indexOf('|', n2 + 1); int n4 = raw.indexOf('|', n3 + 1);
   if (n1 > 0 && n4 > 0) {
@@ -518,6 +542,7 @@ bool pripojWiFi() {
   
   WiFi.disconnect(true, true); 
   WiFi.mode(WIFI_STA);
+  WiFi.setTxPower(WIFI_POWER_19_5dBm);
   WiFi.persistent(false);      
   WiFi.setSleep(false);        
   delay(200);
@@ -543,7 +568,9 @@ bool pripojWiFi() {
   return false;
 }
 
-String stahniTextZUrl(WiFiClientSecure& client, String nazev, String url) {
+String stahniTextZUrl(String nazev, String url) {
+  WiFiClientSecure client;
+  client.setInsecure();
   HTTPClient http;
   http.setFollowRedirects(HTTPC_STRICT_FOLLOW_REDIRECTS); 
   http.begin(client, url);
@@ -560,6 +587,25 @@ String stahniTextZUrl(WiFiClientSecure& client, String nazev, String url) {
   }
 
   http.end();
+  client.stop();
+
+  // Retry jednou při selhání (prázdný výsledek)
+  if (vysledek.length() == 0) {
+    delay(500);
+    WiFiClientSecure client2;
+    client2.setInsecure();
+    HTTPClient http2;
+    http2.setFollowRedirects(HTTPC_STRICT_FOLLOW_REDIRECTS);
+    http2.begin(client2, url);
+    http2.setTimeout(12000);
+    http2.addHeader("User-Agent", "ESP32-Honzueink");
+    int httpCode2 = http2.GET();
+    if (httpCode2 == 200) { vysledek = http2.getString(); }
+    else { Serial.println("RETRY CHYBA: " + String(httpCode2) + " u souboru: " + nazev); }
+    http2.end();
+    client2.stop();
+  }
+
   // Vracíme "" pokud to selže, abychom nepřepsali dobrá data chybou!
   return vysledek;
 }
@@ -580,29 +626,31 @@ void aktualizovatDataNaPozadi(bool vynuceno) {
     if (vynuceno || casNaUpdate) nakresliLoadScreen("Navazuji spojení...", 10);
     
     if (pripojWiFi()) {
-      WiFiClientSecure secureClient;
-      secureClient.setInsecure(); 
       bool asponNecoSeStahlo = false;
       
       nakresliLoadScreen("Stahuji zprávy ze světa...", 30);
-      String tSvet = stahniTextZUrl(secureClient, "Svet", urlZpravySvet);
+      String tSvet = stahniTextZUrl("Svet", urlZpravySvet);
       // BEZPEČNÁ KONTROLA: Přepiš jen když se stáhl validní text (delší než 20 znaků)
       if (tSvet.length() > 20) { stazenaDataSvet = tSvet; asponNecoSeStahlo = true; }
+      delay(200);
       
       nakresliLoadScreen("Stahuji zprávy z ČR...", 45);
-      String tCR = stahniTextZUrl(secureClient, "CR", urlZpravyCR);
+      String tCR = stahniTextZUrl("CR", urlZpravyCR);
       if (tCR.length() > 20) { stazenaDataCR = tCR; asponNecoSeStahlo = true; }
+      delay(200);
       
       nakresliLoadScreen("Stahuji Tech a AI...", 60);
-      String tTech = stahniTextZUrl(secureClient, "Tech", urlTechAI);
+      String tTech = stahniTextZUrl("Tech", urlTechAI);
       if (tTech.length() > 20) { stazenaDataTech = tTech; asponNecoSeStahlo = true; }
+      delay(200);
       
       nakresliLoadScreen("Stahuji Počasí...", 75);
-      String tPoc = stahniTextZUrl(secureClient, "Pocasi", urlPocasi);
+      String tPoc = stahniTextZUrl("Pocasi", urlPocasi);
       if (tPoc.length() > 20) { stazenaDataPocasi = tPoc; asponNecoSeStahlo = true; }
+      delay(200);
       
       nakresliLoadScreen("Stahuji Kurzy...", 90);
-      String tKur = stahniTextZUrl(secureClient, "Kurzy", urlKurzy);
+      String tKur = stahniTextZUrl("Kurzy", urlKurzy);
       if (tKur.length() > 10) { stazenaDataKurzy = tKur; asponNecoSeStahlo = true; }
       
       if (asponNecoSeStahlo) {

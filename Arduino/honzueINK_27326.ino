@@ -31,9 +31,12 @@ String urlZpravySvet = "https://raw.githubusercontent.com/honzuejtt-ops/Honzuein
 String urlZpravyCR = "https://raw.githubusercontent.com/honzuejtt-ops/Honzueink/main/zpravy_cr.txt";
 String urlTechAI = "https://raw.githubusercontent.com/honzuejtt-ops/Honzueink/main/zpravy_tech.txt";
 String urlKurzy = "https://raw.githubusercontent.com/honzuejtt-ops/Honzueink/main/kurzy.txt";
+String urlHoroskop = "https://raw.githubusercontent.com/honzuejtt-ops/Honzueink/main/horoskop.txt";
+String urlKurzyHistorie = "https://raw.githubusercontent.com/honzuejtt-ops/Honzueink/main/kurzy_historie.txt";
 
 String stazenaDataSvet = ""; String stazenaDataCR = ""; String stazenaDataTech = "";
 String stazenaDataPocasi = ""; String stazenaDataKurzy = "";
+String stazenaDataHoroskop = ""; String stazenaDataKurzyHistorie = "";
 
 int nepovedenePokusy = 0; bool casSynchronizovan = false; int lastSecHodiny = -1;
 
@@ -123,27 +126,38 @@ enum AppState {
   STATE_STOPKY, STATE_HRY, STATE_FLASKA, STATE_KOSTKY, STATE_KOSTKY_VYBER, 
   STATE_GAMEBOOK, STATE_ODHALOVACKA, STATE_ODHALOVACKA_DETAIL, STATE_FRAZE_MENU, STATE_FRAZE_DETAIL, STATE_UCENI,
   STATE_NASTAVENI_AKTUALIZACE, STATE_QR_MENU, STATE_QR_ZOBRAZ,
-  STATE_KVIZ, STATE_KVIZ_ODPOVED, STATE_WYR
+  STATE_KVIZ, STATE_KVIZ_ODPOVED, STATE_WYR,
+  // Nové stavy (přidávají se na konec aby se neposunovaly indexy)
+  STATE_KVIZ_KATEGORIE, STATE_KVIZ_OBTIZNOST,
+  STATE_WYR_VYSLEDEK,
+  STATE_HOROSKOP_MENU, STATE_HOROSKOP_DETAIL,
+  STATE_KURZY_GRAF
 };
 
 AppState appState = STATE_MAIN_MENU;
 int menuIndex = 0, scrollOffset = 0, subMenuIndex = 0, subScrollOffset = 0, textScrollPage = 0, kostkyStran = 6;
 bool stopkyRunning = false; unsigned long stopkyStart = 0, stopkyElapsed = 0, stopkyLastDraw = 0;
 int gbNode = 0, gbTextPage = 0, knihaPozice[3] = { 0, 0, 0 };
-int aktualniHraIdx = 0; 
+int aktualniHraIdx = 0;
+int kvizKatIdx = 0; int kvizObtIdx = 0; int grafMenuIndex = 0; int horoskopMenuIndex = 0;
 
 // ===== BATERIE A STATUS =====
 float getBatteryVoltage() { 
   int raw = analogRead(BAT_PIN);
-  if (raw <= 100 || raw >= 4095) return 4.10; 
-  return raw * (3.3 / 4095.0) * 4.9; 
+  if (raw <= 100 || raw >= 4095) return 0.0;  // Vrať 0 místo fake hodnoty
+  return raw * (3.3 / 4095.0) * 2.0;  // Správný dělič 100k/100k = násobek 2.0
 }
 
 int getBatteryPercentage() { 
   float v = getBatteryVoltage();
-  if (v >= 4.10) return 100; 
-  int pct = map(v * 100, 320, 410, 0, 100);
-  return constrain(pct, 0, 100);
+  if (v <= 0.1) return -1;  // Indikace "neznámé" (baterie nepřipojena / neplatné čtení)
+  if (v >= 4.20) return 100;
+  if (v <= 3.20) return 0;
+  // Nelineární mapování pro Li-pol baterii:
+  if (v >= 4.00) return 80 + (int)((v - 4.00) / 0.20 * 20);
+  if (v >= 3.80) return 50 + (int)((v - 3.80) / 0.20 * 30);
+  if (v >= 3.60) return 20 + (int)((v - 3.60) / 0.20 * 30);
+  return (int)((v - 3.20) / 0.40 * 20);
 }
 
 void nakresliStatusBar() {
@@ -152,7 +166,9 @@ void nakresliStatusBar() {
       appState == STATE_ODHALOVACKA_DETAIL || appState == STATE_KOSTKY || appState == STATE_POCASI_UI || 
       appState == STATE_STOPKY || appState == STATE_FRAZE_DETAIL || appState == STATE_UCENI || 
       appState == STATE_GENERATOR_RESULT || appState == STATE_FLASKA || appState == STATE_SLOVNIK_DETAIL ||
-      appState == STATE_NASTAVENI_O_ZARIZENI || appState == STATE_QR_ZOBRAZ || appState == STATE_KVIZ_ODPOVED || appState == STATE_WYR || appState == STATE_KVIZ) {
+      appState == STATE_NASTAVENI_O_ZARIZENI || appState == STATE_QR_ZOBRAZ || appState == STATE_KVIZ_ODPOVED ||
+      appState == STATE_WYR || appState == STATE_KVIZ || appState == STATE_WYR_VYSLEDEK ||
+      appState == STATE_HOROSKOP_DETAIL || appState == STATE_KURZY_GRAF) {
     return;
   }
 
@@ -161,10 +177,15 @@ void nakresliStatusBar() {
   display.fillRect(bx+bw, by+2, 2, 6, fgColor());
   
   int pct = getBatteryPercentage(); int bars = 0;
-  if (pct >= 66) bars = 3; else if (pct >= 33) bars = 2; else if (pct >= 10) bars = 1;
-  
-  if (bars == 0) display.drawLine(bx, by, bx+bw, by+bh, fgColor());
-  else for(int i=0; i<bars; i++) display.fillRect(bx + 2 + (i*6), by + 2, 4, bh - 4, fgColor());
+  if (pct < 0) {
+    // Neznámý stav — nakresli otazník
+    u8g2Fonts.setFontMode(1); u8g2Fonts.setFont(getSmallFont()); u8g2Fonts.setForegroundColor(fgColor()); u8g2Fonts.setBackgroundColor(bgColor());
+    u8g2Fonts.setCursor(bx + 5, by + 9); u8g2Fonts.print("?");
+  } else {
+    if (pct >= 66) bars = 3; else if (pct >= 33) bars = 2; else if (pct >= 10) bars = 1;
+    if (bars == 0) display.drawLine(bx, by, bx+bw, by+bh, fgColor());
+    else for(int i=0; i<bars; i++) display.fillRect(bx + 2 + (i*6), by + 2, 4, bh - 4, fgColor());
+  }
   
   struct tm timeinfo;
   if (getLocalTime(&timeinfo, 10)) {
@@ -182,7 +203,7 @@ void nakresliStatusBar() {
 
 // ===== MENU DATA =====
 const int mainMenuCount = 7; String mainMenuItems[] = { "KNIHOVNA", "AKTUALITY", "TOOLBOX", "SLOVNÍK", "GENERÁTOR", "HRY", "NASTAVENÍ" };
-const int aktualityCount = 4; String aktualityItems[] = { "Zprávy", "Světový čas", "Kurzy", "Počasí" };
+const int aktualityCount = 5; String aktualityItems[] = { "Zprávy", "Světový čas", "Kurzy", "Počasí", "Horoskop" };
 const int zpravyMenuCount = 3; String zpravyMenuItems[] = { "Ze světa", "Z ČR", "Technologie a AI" };
 const int knihovnaCount = 3; String knihovnaItems[] = { "Zaklínač 1", "Zaklínač 2", "Zaklínač 3" };
 const int toolboxCount = 3; String toolboxItems[] = { "Dioda", "Stopky", "QR Kódy" }; bool ledState = false;
@@ -205,6 +226,19 @@ const char abeceda[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; const int abcCount = 26;
 const int generatorCount = 4; String generatorItems[] = { "Vtipy", "Žalmy", "Citáty", "Fakta" };
 const int hryCount = 6; String hryItems[] = { "Flaška", "Kostky", "Gamebook", "Odhalovačka", "Kvíz", "Co bys radši?" };
 const int kostkyCount = 4; String kostkyItems[] = { "6 stěn", "12 stěn", "24 stěn", "2x6 stěn" }; int kostkyStrany[] = { 6, 12, 24, 66 };
+
+// Kvíz kategorie a obtížnost
+String kvizKategorieItems[] = { "Kultura", "Věda", "Všeobecný", "Osobnosti", "Sport", "Příroda" };
+String kvizObtiznostItems[] = { "Za 100 bodů", "Za 200 bodů", "Za 300 bodů" };
+
+// Horoskop
+const int horoskopCount = 12;
+String horoskopItems[] = { "Beran", "Býk", "Blíženci", "Rak", "Lev", "Panna", "Váhy", "Štír", "Střelec", "Kozoroh", "Vodnář", "Ryby" };
+String horoskopy[12];
+
+// Graf kurzů: 0=EUR, 1=USD, 2=BTC, 3=Zlato, 4=Stříbro
+const char* grafNazvy[] = { "EUR/CZK", "USD/CZK", "BTC/CZK", "Zlato CZK/g", "Stribro CZK/g" };
+const int grafCount = 5;
 
 const int nastaveniCount = 5; String nastaveniItems[] = { "Vzhled displeje", "Auto-aktualizace", "Vynutit aktualizaci", "Baterie", "O zařízení" };
 const int vzhledCount = 4; String vzhledItems[] = { "Font", "Velikost", "Tloušťka", "Reverz" };
@@ -282,6 +316,8 @@ void ulozStazenaData() {
   ulozZpravuDoCache("tech", stazenaDataTech);
   ulozZpravuDoCache("poc", stazenaDataPocasi);
   ulozZpravuDoCache("kur", stazenaDataKurzy);
+  ulozZpravuDoCache("horo", stazenaDataHoroskop);
+  ulozZpravuDoCache("khist", stazenaDataKurzyHistorie);
 }
 
 void nactiStazenaData() {
@@ -291,6 +327,8 @@ void nactiStazenaData() {
   stazenaDataTech = prefs.getString("tech", "");
   stazenaDataPocasi = prefs.getString("poc", "");
   stazenaDataKurzy = prefs.getString("kur", "");
+  stazenaDataHoroskop = prefs.getString("horo", "");
+  stazenaDataKurzyHistorie = prefs.getString("khist", "");
   prefs.end();
 
   if (stazenaDataPocasi != "") parsujPocasi(stazenaDataPocasi);
@@ -309,7 +347,7 @@ void jdiSpat() {
     char dBuf[50]; 
     sprintf(dBuf, "%s %d. %d.", dnyVTydnu[timeinfo.tm_wday], timeinfo.tm_mday, timeinfo.tm_mon + 1);
     datumStr = String(dBuf);
-    svatekDnes = "Svátek má " + getSvatek(timeinfo.tm_mday, timeinfo.tm_mon + 1);
+    svatekDnes = "Svátek má: " + getSvatek(timeinfo.tm_mday, timeinfo.tm_mon + 1);
   }
 
   display.setFullWindow();
@@ -318,37 +356,57 @@ void jdiSpat() {
     display.fillScreen(bgColor());
     u8g2Fonts.setFontMode(1); u8g2Fonts.setForegroundColor(fgColor()); u8g2Fonts.setBackgroundColor(bgColor());
     
-    // Horní část: Datum a Svátek
-    u8g2Fonts.setFont(getTitleFont());
+    // Horní část: Datum (tučně, velké, na střed)
+    u8g2Fonts.setFont(getBigFont());
     int tw = u8g2Fonts.getUTF8Width(datumStr.c_str());
-    u8g2Fonts.setCursor((display.width() - tw) / 2, 22); 
+    u8g2Fonts.setCursor((display.width() - tw) / 2, 26); 
     u8g2Fonts.print(datumStr.c_str());
     
-    u8g2Fonts.setFont(getSmallFont());
+    // Svátek (malé, na střed)
+    u8g2Fonts.setFont(getBodyFont());
     tw = u8g2Fonts.getUTF8Width(svatekDnes.c_str());
-    u8g2Fonts.setCursor((display.width() - tw) / 2, 38);
+    u8g2Fonts.setCursor((display.width() - tw) / 2, 44);
     u8g2Fonts.print(svatekDnes.c_str());
     
-    display.drawFastHLine(0, 42, display.width(), fgColor());
+    display.drawFastHLine(10, 50, display.width() - 20, fgColor());
 
-    // Střed: Počasí (pokud máme data)
-    if (stazenaDataPocasi != "") {
-      nakresliIkonuPocasi(predpoved[0].ikona, 50, 75);
+    // Střed: Počasí (ikona vlevo od středu, teplota vpravo od středu)
+    if (stazenaDataPocasi != "" && predpoved[0].tMax != 0) {
+      // Ikona počasí
+      nakresliIkonuPocasi(predpoved[0].ikona, 60, 78);
+      // Teplota (velká, na střed-vpravo)
       u8g2Fonts.setFont(getBigFont());
-      String temp = String(predpoved[0].tMax) + "° / " + String(predpoved[0].tMin) + "°C";
-      u8g2Fonts.setCursor(110, 80); u8g2Fonts.print(temp.c_str());
+      String temp = String(predpoved[0].tMax) + "° / " + String(predpoved[0].tMin) + "°";
+      tw = u8g2Fonts.getUTF8Width(temp.c_str());
+      u8g2Fonts.setCursor((display.width() + 20 - tw) / 2 + 40, 83);
+      u8g2Fonts.print(temp.c_str());
+      // Přísluní (malé)
+      u8g2Fonts.setFont(getSmallFont());
+      String astro = "☀ " + predpoved[0].vychod + " — " + predpoved[0].zapad;
+      tw = u8g2Fonts.getUTF8Width(astro.c_str());
+      u8g2Fonts.setCursor((display.width() - tw) / 2, 97);
+      u8g2Fonts.print(astro.c_str());
+    } else {
+      u8g2Fonts.setFont(getTitleFont());
+      const char* noData = "Data nejsou k dispozici";
+      tw = u8g2Fonts.getUTF8Width(noData);
+      u8g2Fonts.setCursor((display.width() - tw) / 2, 78);
+      u8g2Fonts.print(noData);
     }
 
-    // Spodek: Náhodný vtip/citát
-    display.drawFastHLine(0, 100, display.width(), fgColor());
+    display.drawFastHLine(10, 103, display.width() - 20, fgColor());
+
+    // Spodek: Náhodný vtip/citát (malé písmo, zalamované)
     u8g2Fonts.setFont(getSmallFont());
     String rTxt = String(vtipy[random(vtipyPocet)]);
     TextLine lines[2];
-    int lCount = zalamejText(rTxt.c_str(), rTxt.length(), lines, 2, display.width() - 20);
+    int lCount = zalamejText(rTxt.c_str(), rTxt.length(), lines, 2, display.width() - 16);
     for(int i=0; i<lCount; i++) {
-       char lBuf[85]; int len = lines[i].len; if(len>84) len=84;
+       char lBuf[90]; int len = lines[i].len; if(len>89) len=89;
        strncpy(lBuf, &rTxt.c_str()[lines[i].start], len); lBuf[len]='\0';
-       u8g2Fonts.setCursor(10, 114 + (i*12)); u8g2Fonts.print(lBuf);
+       int lw = u8g2Fonts.getUTF8Width(lBuf);
+       u8g2Fonts.setCursor((display.width() - lw) / 2, 115 + (i*12));
+       u8g2Fonts.print(lBuf);
     }
 
   } while (display.nextPage());
@@ -389,13 +447,31 @@ void zobrazQR(const char* title, const char* dataStr) {
 }
 
 // ===== ZOBRAZOVÁNÍ KVÍZU A WYR =====
+void nastaviNahodnyKvizIdx() {
+  // Najdeme otázky odpovídající zvolené kategorii a obtížnosti
+  int matching[30]; int count = 0;
+  int targetDiff = kvizObtiznosti[kvizObtIdx];
+  for (int i = 0; i < kvizPocet && count < 30; i++) {
+    if (kvizKategoriePole[i] == kvizKatIdx && kvizObtiznostPole[i] == targetDiff) {
+      matching[count++] = i;
+    }
+  }
+  if (count > 0) aktualniHraIdx = matching[random(count)];
+  else aktualniHraIdx = random(kvizPocet); // Fallback na náhodnou
+}
+
 void zobrazKviz() {
   String ot = String(kvizOtazky[aktualniHraIdx]);
+  // Zobrazit kategorii a obtížnost v záhlaví
+  String katLabel = String(kvizKategorieNazvy[kvizKategoriePole[aktualniHraIdx]]) + " / " + String(kvizObtiznostPole[aktualniHraIdx]);
   display.setPartialWindow(0, 0, display.width(), display.height());
   display.firstPage();
   do {
-    display.fillScreen(bgColor()); nakresliStatusBar();
-    u8g2Fonts.setFont(getTitleFont()); u8g2Fonts.setCursor(5, 16); u8g2Fonts.print("KVÍZ"); display.drawFastHLine(0, 20, display.width(), fgColor());
+    display.fillScreen(bgColor());
+    u8g2Fonts.setFontMode(1); u8g2Fonts.setForegroundColor(fgColor()); u8g2Fonts.setBackgroundColor(bgColor());
+    u8g2Fonts.setFont(getTitleFont()); u8g2Fonts.setCursor(5, 16); u8g2Fonts.print("KVÍZ");
+    u8g2Fonts.setFont(getSmallFont()); u8g2Fonts.setCursor(60, 16); u8g2Fonts.print(katLabel.c_str());
+    display.drawFastHLine(0, 20, display.width(), fgColor());
     u8g2Fonts.setFont(getBodyFont());
     TextLine lines[5]; int lCount = zalamejText(ot.c_str(), ot.length(), lines, 5, display.width() - 10);
     int y = 40;
@@ -404,7 +480,7 @@ void zobrazKviz() {
       strncpy(lBuf, &ot.c_str()[lines[i].start], len); lBuf[len]='\0';
       u8g2Fonts.setCursor(5, y); u8g2Fonts.print(lBuf); y+=getLineHeight();
     }
-    u8g2Fonts.setFont(getSmallFont()); u8g2Fonts.setCursor(5, 125); u8g2Fonts.print("BTN21 = Odpověď | BTN0 = Další | Drž = zpět");
+    u8g2Fonts.setFont(getSmallFont()); u8g2Fonts.setCursor(5, 125); u8g2Fonts.print("BTN21=Odpověď | BTN0=Další | Drž=zpět");
   } while (display.nextPage());
 }
 
@@ -414,29 +490,195 @@ void zobrazKvizOdpoved() {
   display.firstPage();
   do {
     display.fillScreen(bgColor());
+    u8g2Fonts.setFontMode(1); u8g2Fonts.setForegroundColor(fgColor()); u8g2Fonts.setBackgroundColor(bgColor());
+    u8g2Fonts.setFont(getTitleFont()); u8g2Fonts.setCursor(5, 16); u8g2Fonts.print("SPRÁVNÁ ODPOVĚĎ:");
+    display.drawFastHLine(0, 20, display.width(), fgColor());
     u8g2Fonts.setFont(getBigFont()); 
     int tw = u8g2Fonts.getUTF8Width(odp.c_str());
-    u8g2Fonts.setCursor((display.width() - tw) / 2, 60); u8g2Fonts.print(odp.c_str());
+    if (tw > display.width() - 10) {
+      // Příliš dlouhá odpověď — použij menší font
+      u8g2Fonts.setFont(getTitleFont());
+      u8g2Fonts.setCursor(5, 65); u8g2Fonts.print(odp.c_str());
+    } else {
+      u8g2Fonts.setCursor((display.width() - tw) / 2, 70); u8g2Fonts.print(odp.c_str());
+    }
     u8g2Fonts.setFont(getSmallFont()); u8g2Fonts.setCursor(5, 125); u8g2Fonts.print("BTN0 / BTN21 = Další otázka | Drž = zpět");
   } while (display.nextPage());
 }
 
 void zobrazWyr() {
   String ot = String(wyrOtazky[aktualniHraIdx]);
+  String mozA = String(wyrMoznostiA[aktualniHraIdx]);
+  String mozB = String(wyrMoznostiB[aktualniHraIdx]);
   display.setPartialWindow(0, 0, display.width(), display.height());
   display.firstPage();
   do {
     display.fillScreen(bgColor()); nakresliStatusBar();
+    u8g2Fonts.setFontMode(1); u8g2Fonts.setForegroundColor(fgColor()); u8g2Fonts.setBackgroundColor(bgColor());
+    u8g2Fonts.setFont(getTitleFont()); u8g2Fonts.setCursor(5, 16); u8g2Fonts.print("CO BYS RADŠI?");
+    display.drawFastHLine(0, 20, display.width(), fgColor());
     u8g2Fonts.setFont(getBodyFont());
-    TextLine lines[6]; int lCount = zalamejText(ot.c_str(), ot.length(), lines, 6, display.width() - 10);
-    int y = 30;
+    TextLine lines[4]; int lCount = zalamejText(ot.c_str(), ot.length(), lines, 4, display.width() - 10);
+    int y = 38;
     for(int i=0; i<lCount; i++){
       char lBuf[80]; int len = lines[i].len; if(len>79) len=79;
       strncpy(lBuf, &ot.c_str()[lines[i].start], len); lBuf[len]='\0';
       int lw = u8g2Fonts.getUTF8Width(lBuf);
       u8g2Fonts.setCursor((display.width() - lw) / 2, y); u8g2Fonts.print(lBuf); y+=getLineHeight();
     }
-    u8g2Fonts.setFont(getSmallFont()); u8g2Fonts.setCursor(5, 125); u8g2Fonts.print("BTN21 nebo BTN0 = Další | Drž = zpět");
+    display.drawFastHLine(0, 84, display.width(), fgColor());
+    u8g2Fonts.setFont(getSmallFont());
+    u8g2Fonts.setCursor(5, 96); u8g2Fonts.print("A: "); u8g2Fonts.print(mozA.c_str());
+    u8g2Fonts.setCursor(5, 109); u8g2Fonts.print("B: "); u8g2Fonts.print(mozB.c_str());
+    u8g2Fonts.setCursor(5, 125); u8g2Fonts.print("BTN21=Výsledek | BTN0=Další | Drž=zpět");
+  } while (display.nextPage());
+}
+
+void zobrazWyrVysledek() {
+  int pct = wyrProcenta[aktualniHraIdx];
+  String mozA = String(wyrMoznostiA[aktualniHraIdx]);
+  String mozB = String(wyrMoznostiB[aktualniHraIdx]);
+  display.setPartialWindow(0, 0, display.width(), display.height());
+  display.firstPage();
+  do {
+    display.fillScreen(bgColor());
+    u8g2Fonts.setFontMode(1); u8g2Fonts.setForegroundColor(fgColor()); u8g2Fonts.setBackgroundColor(bgColor());
+    u8g2Fonts.setFont(getTitleFont()); u8g2Fonts.setCursor(5, 18); u8g2Fonts.print("VÝSLEDEK PRŮZKUMU");
+    display.drawFastHLine(0, 22, display.width(), fgColor());
+    u8g2Fonts.setFont(getBodyFont());
+    String lineA = String(pct) + "% volí: " + mozA;
+    String lineB = String(100 - pct) + "% volí: " + mozB;
+    u8g2Fonts.setCursor(5, 45); u8g2Fonts.print(lineA.c_str());
+    u8g2Fonts.setCursor(5, 65); u8g2Fonts.print(lineB.c_str());
+    // Vizuální pruh výsledku
+    int barY = 78; int barH = 14; int barMaxW = 256;
+    display.fillRect(5, barY, (pct * barMaxW) / 100, barH, fgColor());
+    display.drawRect(5, barY, barMaxW, barH, fgColor());
+    u8g2Fonts.setFont(getSmallFont());
+    u8g2Fonts.setCursor(8, barY + 10); u8g2Fonts.setForegroundColor(bgColor()); u8g2Fonts.print(String(pct) + "%");
+    u8g2Fonts.setForegroundColor(fgColor());
+    u8g2Fonts.setCursor(5, 110); u8g2Fonts.print("Zdroj: globální průzkum veřejného mínění");
+    u8g2Fonts.setCursor(5, 125); u8g2Fonts.print("BTN0 = Další otázka | Drž BTN21 = zpět");
+  } while (display.nextPage());
+}
+
+// ===== HOROSKOP =====
+void parsujHoroskopy(String raw) {
+  for (int i = 0; i < 12; i++) horoskopy[i] = "";
+  int pos = 0;
+  for (int i = 0; i < 12; i++) {
+    int tStart = raw.indexOf("|T|", pos);
+    int eStart = raw.indexOf("|E|", tStart + 3);
+    if (tStart == -1 || eStart == -1) break;
+    horoskopy[i] = raw.substring(tStart + 3, eStart);
+    pos = eStart + 3;
+  }
+}
+
+void zobrazHoroskopDetail(int idx) {
+  display.setPartialWindow(0, 0, display.width(), display.height());
+  display.firstPage();
+  do {
+    display.fillScreen(bgColor());
+    u8g2Fonts.setFontMode(1); u8g2Fonts.setForegroundColor(fgColor()); u8g2Fonts.setBackgroundColor(bgColor());
+    u8g2Fonts.setFont(getTitleFont());
+    String nadpis = "HOROSKOP: " + horoskopItems[idx];
+    u8g2Fonts.setCursor(5, 18); u8g2Fonts.print(nadpis.c_str());
+    display.drawFastHLine(0, 22, display.width(), fgColor());
+    String text = (horoskopy[idx].length() > 0) ? horoskopy[idx] : "Data nejsou k dispozici.";
+    u8g2Fonts.setFont(getBodyFont());
+    TextLine lines[6]; int lCount = zalamejText(text.c_str(), text.length(), lines, 6, display.width() - 10);
+    int y = 38;
+    for(int i=0; i<lCount; i++){
+      char lBuf[80]; int len = lines[i].len; if(len>79) len=79;
+      strncpy(lBuf, &text.c_str()[lines[i].start], len); lBuf[len]='\0';
+      u8g2Fonts.setCursor(5, y); u8g2Fonts.print(lBuf); y+=getLineHeight();
+    }
+    u8g2Fonts.setFont(getSmallFont()); u8g2Fonts.setCursor(5, 125); u8g2Fonts.print("BTN0=další znak | Drž BTN21=zpět");
+  } while (display.nextPage());
+}
+
+// ===== GRAF KURZŮ =====
+void zobrazKurzGraf() {
+  // Parsování kurzy_historie.txt
+  // Formát: MENA|h1,h2,...,h30
+  String raw = stazenaDataKurzyHistorie;
+  const char* menaNames[] = { "EUR", "USD", "BTC", "ZLATO", "STRIBRO" };
+  String targetMena = menaNames[grafMenuIndex];
+  
+  // Najít řádek pro danou měnu
+  float hodnoty[30]; int pocet = 0;
+  int lineStart = 0;
+  while (lineStart < raw.length() && pocet == 0) {
+    int lineEnd = raw.indexOf('\n', lineStart);
+    if (lineEnd == -1) lineEnd = raw.length();
+    String line = raw.substring(lineStart, lineEnd);
+    int pipePos = line.indexOf('|');
+    if (pipePos > 0 && line.substring(0, pipePos) == targetMena) {
+      String data = line.substring(pipePos + 1);
+      int dPos = 0;
+      while (dPos < data.length() && pocet < 30) {
+        int comma = data.indexOf(',', dPos);
+        if (comma == -1) comma = data.length();
+        String val = data.substring(dPos, comma);
+        val.trim();
+        if (val.length() > 0) hodnoty[pocet++] = val.toFloat();
+        dPos = comma + 1;
+      }
+    }
+    lineStart = lineEnd + 1;
+  }
+
+  display.setPartialWindow(0, 0, display.width(), display.height());
+  display.firstPage();
+  do {
+    display.fillScreen(bgColor());
+    u8g2Fonts.setFontMode(1); u8g2Fonts.setForegroundColor(fgColor()); u8g2Fonts.setBackgroundColor(bgColor());
+    // Záhlaví
+    String nadpis = String(grafNazvy[grafMenuIndex]) + " - 30 dni";
+    u8g2Fonts.setFont(getTitleFont()); u8g2Fonts.setCursor(5, 16); u8g2Fonts.print(nadpis.c_str());
+    display.drawFastHLine(0, 20, display.width(), fgColor());
+
+    if (pocet < 2) {
+      u8g2Fonts.setFont(getBodyFont()); u8g2Fonts.setCursor(5, 70); u8g2Fonts.print("Data nejsou k dispozici");
+    } else {
+      // Najít min/max
+      float vMin = hodnoty[0], vMax = hodnoty[0];
+      for (int i = 1; i < pocet; i++) { if (hodnoty[i] < vMin) vMin = hodnoty[i]; if (hodnoty[i] > vMax) vMax = hodnoty[i]; }
+      float rozsah = vMax - vMin; if (rozsah < 0.001f) rozsah = 1.0f;
+      
+      // Osa Y popisky
+      u8g2Fonts.setFont(getSmallFont());
+      int gX = 45, gY = 25, gW = 235, gH = 80;
+      char buf[20];
+      if (vMax > 10000) sprintf(buf, "%.0f", vMax); else if (vMax > 100) sprintf(buf, "%.1f", vMax); else sprintf(buf, "%.2f", vMax);
+      u8g2Fonts.setCursor(2, gY + 8); u8g2Fonts.print(buf);
+      if (vMin > 10000) sprintf(buf, "%.0f", vMin); else if (vMin > 100) sprintf(buf, "%.1f", vMin); else sprintf(buf, "%.2f", vMin);
+      u8g2Fonts.setCursor(2, gY + gH); u8g2Fonts.print(buf);
+      
+      // Osa X popisky
+      u8g2Fonts.setCursor(gX, 115); u8g2Fonts.print("pred 30d");
+      u8g2Fonts.setCursor(gX + gW - 30, 115); u8g2Fonts.print("dnes");
+      
+      // Kreslit čárový graf
+      int prevX = -1, prevY = -1;
+      for (int i = 0; i < pocet; i++) {
+        int px = gX + (i * gW) / (pocet - 1);
+        int py = gY + gH - (int)(((hodnoty[i] - vMin) / rozsah) * gH);
+        if (prevX >= 0) {
+          display.drawLine(prevX, prevY, px, py, fgColor());
+          display.drawLine(prevX, prevY + 1, px, py + 1, fgColor()); // Tučnější čára
+        }
+        prevX = px; prevY = py;
+      }
+      // Zvýraznit poslední hodnotu
+      display.fillCircle(prevX, prevY, 3, fgColor());
+      if (hodnoty[pocet-1] > 10000) sprintf(buf, "%.0f", hodnoty[pocet-1]);
+      else if (hodnoty[pocet-1] > 100) sprintf(buf, "%.1f", hodnoty[pocet-1]);
+      else sprintf(buf, "%.2f", hodnoty[pocet-1]);
+      u8g2Fonts.setCursor(prevX - 20, prevY - 6); u8g2Fonts.print(buf);
+    }
+    u8g2Fonts.setFont(getSmallFont()); u8g2Fonts.setCursor(5, 127); u8g2Fonts.print("BTN0=dalsi mena | Drz BTN21=zpet");
   } while (display.nextPage());
 }
 
@@ -584,29 +826,38 @@ void aktualizovatDataNaPozadi(bool vynuceno) {
       secureClient.setInsecure(); 
       bool asponNecoSeStahlo = false;
       
-      nakresliLoadScreen("Stahuji zprávy ze světa...", 30);
+      nakresliLoadScreen("Stahuji zprávy ze světa...", 20);
       String tSvet = stahniTextZUrl(secureClient, "Svet", urlZpravySvet);
       // BEZPEČNÁ KONTROLA: Přepiš jen když se stáhl validní text (delší než 20 znaků)
       if (tSvet.length() > 20) { stazenaDataSvet = tSvet; asponNecoSeStahlo = true; }
       
-      nakresliLoadScreen("Stahuji zprávy z ČR...", 45);
+      nakresliLoadScreen("Stahuji zprávy z ČR...", 35);
       String tCR = stahniTextZUrl(secureClient, "CR", urlZpravyCR);
       if (tCR.length() > 20) { stazenaDataCR = tCR; asponNecoSeStahlo = true; }
       
-      nakresliLoadScreen("Stahuji Tech a AI...", 60);
+      nakresliLoadScreen("Stahuji Tech a AI...", 48);
       String tTech = stahniTextZUrl(secureClient, "Tech", urlTechAI);
       if (tTech.length() > 20) { stazenaDataTech = tTech; asponNecoSeStahlo = true; }
       
-      nakresliLoadScreen("Stahuji Počasí...", 75);
+      nakresliLoadScreen("Stahuji Počasí...", 60);
       String tPoc = stahniTextZUrl(secureClient, "Pocasi", urlPocasi);
       if (tPoc.length() > 20) { stazenaDataPocasi = tPoc; asponNecoSeStahlo = true; }
       
-      nakresliLoadScreen("Stahuji Kurzy...", 90);
+      nakresliLoadScreen("Stahuji Kurzy...", 72);
       String tKur = stahniTextZUrl(secureClient, "Kurzy", urlKurzy);
       if (tKur.length() > 10) { stazenaDataKurzy = tKur; asponNecoSeStahlo = true; }
+
+      nakresliLoadScreen("Stahuji Horoskop...", 82);
+      String tHoro = stahniTextZUrl(secureClient, "Horoskop", urlHoroskop);
+      if (tHoro.length() > 20) { stazenaDataHoroskop = tHoro; asponNecoSeStahlo = true; }
+
+      nakresliLoadScreen("Stahuji hist. kurzů...", 92);
+      String tKHist = stahniTextZUrl(secureClient, "KurzyHist", urlKurzyHistorie);
+      if (tKHist.length() > 10) { stazenaDataKurzyHistorie = tKHist; asponNecoSeStahlo = true; }
       
       if (asponNecoSeStahlo) {
         parsujPocasi(stazenaDataPocasi);
+        parsujKurzy(stazenaDataKurzy);
         nepovedenePokusy = 0;
         rtc_posledniAktualizace = time(NULL); 
         ulozStazenaData(); // Uložíme je do paměti, kterou nespálí Deep sleep
@@ -802,7 +1053,7 @@ void zobrazKurzyUI() {
     u8g2Fonts.setFont(getBodyFont()); u8g2Fonts.setCursor(160, 85); u8g2Fonts.print("Stříbro (1g):");
     u8g2Fonts.setFont(getTitleFont()); u8g2Fonts.setCursor(160, 102); u8g2Fonts.print(kurzStribro + " Kč");
 
-    u8g2Fonts.setFont(getSmallFont()); u8g2Fonts.setCursor(5, 125); u8g2Fonts.print("Drž BTN21 = zpět");
+    u8g2Fonts.setFont(getSmallFont()); u8g2Fonts.setCursor(5, 125); u8g2Fonts.print("BTN0=Grafy 30d | Drž BTN21=zpět");
   } while (display.nextPage());
 }
 
@@ -1337,10 +1588,16 @@ void goBack() {
     case STATE_STOPKY: stopkyRunning = false; stopkyElapsed = 0; appState = STATE_TOOLBOX; zobrazSubMenu("TOOLBOX", toolboxItems, toolboxCount, subMenuIndex, subScrollOffset); break;
     case STATE_TOOLBOX: appState = STATE_MAIN_MENU; zobrazSubMenu("HLAVNÍ MENU", mainMenuItems, mainMenuCount, menuIndex, scrollOffset); break;
     
-    case STATE_KVIZ: case STATE_KVIZ_ODPOVED: case STATE_WYR: case STATE_FLASKA: case STATE_KOSTKY: case STATE_ODHALOVACKA: case STATE_ODHALOVACKA_DETAIL: appState = STATE_HRY; zobrazSubMenu("HRY", hryItems, hryCount, subMenuIndex, subScrollOffset); break;
+    case STATE_KVIZ: case STATE_KVIZ_ODPOVED: case STATE_WYR: case STATE_WYR_VYSLEDEK: case STATE_FLASKA: case STATE_KOSTKY: case STATE_ODHALOVACKA: case STATE_ODHALOVACKA_DETAIL: appState = STATE_HRY; zobrazSubMenu("HRY", hryItems, hryCount, subMenuIndex, subScrollOffset); break;
     case STATE_KOSTKY_VYBER: appState = STATE_HRY; subMenuIndex = 1; subScrollOffset = 0; zobrazSubMenu("HRY", hryItems, hryCount, subMenuIndex, subScrollOffset); break;
     case STATE_GAMEBOOK: ulozGBPozici(gbNode); appState = STATE_HRY; subMenuIndex = 2; subScrollOffset = 0; zobrazSubMenu("HRY", hryItems, hryCount, subMenuIndex, subScrollOffset); break;
+    case STATE_KVIZ_OBTIZNOST: appState = STATE_KVIZ_KATEGORIE; zobrazSubMenu("KATEGORIE KVÍZU", kvizKategorieItems, kvizKategoriiCount, kvizKatIdx, 0); break;
+    case STATE_KVIZ_KATEGORIE: appState = STATE_HRY; subMenuIndex = 4; subScrollOffset = 0; zobrazSubMenu("HRY", hryItems, hryCount, subMenuIndex, subScrollOffset); break;
     case STATE_HRY: appState = STATE_MAIN_MENU; zobrazSubMenu("HLAVNÍ MENU", mainMenuItems, mainMenuCount, menuIndex, scrollOffset); break;
+    
+    case STATE_HOROSKOP_DETAIL: appState = STATE_HOROSKOP_MENU; zobrazSubMenu("HOROSKOP", horoskopItems, horoskopCount, horoskopMenuIndex, 0); break;
+    case STATE_HOROSKOP_MENU: appState = STATE_AKTUALITY; subMenuIndex = 4; subScrollOffset = 0; zobrazSubMenu("AKTUALITY", aktualityItems, aktualityCount, subMenuIndex, subScrollOffset); break;
+    case STATE_KURZY_GRAF: appState = STATE_KURZY; zobrazKurzyUI(); break;
     
     case STATE_GENERATOR_RESULT: appState = STATE_GENERATOR; zobrazSubMenu("GENERÁTOR", generatorItems, generatorCount, subMenuIndex, subScrollOffset); break;
     case STATE_GENERATOR: appState = STATE_MAIN_MENU; zobrazSubMenu("HLAVNÍ MENU", mainMenuItems, mainMenuCount, menuIndex, scrollOffset); break;
@@ -1489,13 +1746,23 @@ void loop() {
         case STATE_HRY: menuDown(subMenuIndex, subScrollOffset, hryCount); zobrazSubMenu("HRY", hryItems, hryCount, subMenuIndex, subScrollOffset); break;
         case STATE_KOSTKY_VYBER: menuDown(subMenuIndex, subScrollOffset, kostkyCount); zobrazSubMenu("KOSTKY", kostkyItems, kostkyCount, subMenuIndex, subScrollOffset); break;
         
-        case STATE_KVIZ: aktualniHraIdx = random(kvizPocet); zobrazKviz(); break;
-        case STATE_KVIZ_ODPOVED: appState = STATE_KVIZ; aktualniHraIdx = random(kvizPocet); zobrazKviz(); break;
+        case STATE_KVIZ: nastaviNahodnyKvizIdx(); zobrazKviz(); break;
+        case STATE_KVIZ_ODPOVED: appState = STATE_KVIZ; nastaviNahodnyKvizIdx(); zobrazKviz(); break;
         case STATE_WYR: aktualniHraIdx = random(wyrPocet); zobrazWyr(); break;
+        case STATE_WYR_VYSLEDEK: appState = STATE_WYR; aktualniHraIdx = random(wyrPocet); zobrazWyr(); break;
+        
+        case STATE_KVIZ_KATEGORIE: kvizKatIdx = (kvizKatIdx + 1) % kvizKategoriiCount; zobrazSubMenu("KATEGORIE KVÍZU", kvizKategorieItems, kvizKategoriiCount, kvizKatIdx, 0); break;
+        case STATE_KVIZ_OBTIZNOST: kvizObtIdx = (kvizObtIdx + 1) % 3; zobrazSubMenu("OBTÍŽNOST", kvizObtiznostItems, 3, kvizObtIdx, 0); break;
+        
+        case STATE_HOROSKOP_MENU: horoskopMenuIndex = (horoskopMenuIndex + 1) % horoskopCount; zobrazSubMenu("HOROSKOP", horoskopItems, horoskopCount, horoskopMenuIndex, 0); break;
+        case STATE_HOROSKOP_DETAIL: horoskopMenuIndex = (horoskopMenuIndex + 1) % horoskopCount; zobrazHoroskopDetail(horoskopMenuIndex); break;
+        case STATE_KURZY_GRAF: grafMenuIndex = (grafMenuIndex + 1) % grafCount; zobrazKurzGraf(); break;
         
         case STATE_NASTAVENI: menuDown(subMenuIndex, subScrollOffset, nastaveniCount); zobrazSubMenu("NASTAVENÍ", nastaveniItems, nastaveniCount, subMenuIndex, subScrollOffset); break;
         case STATE_NASTAVENI_VZHLED: menuDown(subMenuIndex, subScrollOffset, vzhledCount); zobrazSubMenu("VZHLED", vzhledItems, vzhledCount, subMenuIndex, subScrollOffset); break;
         case STATE_NASTAVENI_AKTUALIZACE: menuDown(subMenuIndex, subScrollOffset, intervalCount); zobrazSubMenu("AKTUALIZACE", intervalItems, intervalCount, subMenuIndex, subScrollOffset); break;
+        
+        case STATE_KURZY: appState = STATE_KURZY_GRAF; grafMenuIndex = 0; zobrazKurzGraf(); break;
         
         case STATE_ODHALOVACKA: case STATE_ODHALOVACKA_DETAIL: goBack(); break;
         
@@ -1530,6 +1797,7 @@ void loop() {
           else if (subMenuIndex == 1) { appState = STATE_HODINY; lastSecHodiny = -1; zobrazSvetovyCas(); }
           else if (subMenuIndex == 2) { appState = STATE_KURZY; parsujKurzy(stazenaDataKurzy); zobrazKurzyUI(); }
           else if (subMenuIndex == 3) { appState = STATE_POCASI_UI; pocasiDen = 0; zobrazPocasiDen(pocasiDen); }
+          else if (subMenuIndex == 4) { appState = STATE_HOROSKOP_MENU; horoskopMenuIndex = 0; parsujHoroskopy(stazenaDataHoroskop); zobrazSubMenu("HOROSKOP", horoskopItems, horoskopCount, 0, 0); }
           break;
 
         case STATE_ZPRAVY_MENU:
@@ -1606,8 +1874,14 @@ void loop() {
           else if (subMenuIndex == 1) { appState = STATE_KOSTKY_VYBER; subMenuIndex = 0; subScrollOffset = 0; zobrazSubMenu("KOSTKY", kostkyItems, kostkyCount, 0, 0); }
           else if (subMenuIndex == 2) { appState = STATE_GAMEBOOK; gbNode = nactiGBPozici(); gbTextPage = 0; zobrazGBNode(); }
           else if (subMenuIndex == 3) { appState = STATE_ODHALOVACKA; odhalovackaKonec = false; for(int i=0; i<64; i++) odhalenoPole[i] = false; zobrazOdhalovacku(); }
-          else if (subMenuIndex == 4) { appState = STATE_KVIZ; aktualniHraIdx = random(kvizPocet); zobrazKviz(); }
+          else if (subMenuIndex == 4) { appState = STATE_KVIZ_KATEGORIE; kvizKatIdx = 0; kvizObtIdx = 0; subScrollOffset = 0; zobrazSubMenu("KATEGORIE KVÍZU", kvizKategorieItems, kvizKategoriiCount, 0, 0); }
           else if (subMenuIndex == 5) { appState = STATE_WYR; aktualniHraIdx = random(wyrPocet); zobrazWyr(); }
+          break;
+        case STATE_KVIZ_KATEGORIE:
+          appState = STATE_KVIZ_OBTIZNOST; kvizObtIdx = 0; zobrazSubMenu("OBTÍŽNOST", kvizObtiznostItems, 3, 0, 0);
+          break;
+        case STATE_KVIZ_OBTIZNOST:
+          nastaviNahodnyKvizIdx(); appState = STATE_KVIZ; zobrazKviz();
           break;
         case STATE_FLASKA: hrajFlasku(); break;
         case STATE_KOSTKY_VYBER: kostkyStran = kostkyStrany[subMenuIndex]; appState = STATE_KOSTKY; zobrazKostkyIdle(); break;
@@ -1623,8 +1897,13 @@ void loop() {
         case STATE_ODHALOVACKA_DETAIL: appState = STATE_HRY; zobrazSubMenu("HRY", hryItems, hryCount, subMenuIndex, subScrollOffset); break;
         
         case STATE_KVIZ: appState = STATE_KVIZ_ODPOVED; zobrazKvizOdpoved(); break;
-        case STATE_KVIZ_ODPOVED: appState = STATE_KVIZ; aktualniHraIdx = random(kvizPocet); zobrazKviz(); break;
-        case STATE_WYR: aktualniHraIdx = random(wyrPocet); zobrazWyr(); break;
+        case STATE_KVIZ_ODPOVED: appState = STATE_KVIZ; nastaviNahodnyKvizIdx(); zobrazKviz(); break;
+        case STATE_WYR: appState = STATE_WYR_VYSLEDEK; zobrazWyrVysledek(); break;
+        case STATE_WYR_VYSLEDEK: appState = STATE_WYR; aktualniHraIdx = random(wyrPocet); zobrazWyr(); break;
+        
+        case STATE_HOROSKOP_MENU: appState = STATE_HOROSKOP_DETAIL; zobrazHoroskopDetail(horoskopMenuIndex); break;
+        case STATE_HOROSKOP_DETAIL: horoskopMenuIndex = (horoskopMenuIndex + 1) % horoskopCount; zobrazHoroskopDetail(horoskopMenuIndex); break;
+        case STATE_KURZY_GRAF: grafMenuIndex = (grafMenuIndex + 1) % grafCount; zobrazKurzGraf(); break;
 
         case STATE_NASTAVENI:
           if (subMenuIndex == 0) { appState = STATE_NASTAVENI_VZHLED; subMenuIndex = 0; subScrollOffset = 0; zobrazSubMenu("VZHLED", vzhledItems, vzhledCount, 0, 0); }

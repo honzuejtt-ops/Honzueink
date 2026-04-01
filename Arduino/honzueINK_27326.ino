@@ -1273,6 +1273,7 @@ void zobrazSeznamZprav() {
 }
 
 void zobrazText(const char* title, const char* text) {
+  // Na ESP32 je PROGMEM mapovaná do adresního prostoru — strncpy funguje pro obě paměti
   static char buf[4500]; strncpy(buf, text, sizeof(buf) - 1); buf[sizeof(buf) - 1] = '\0';
   int len = strlen(buf); int maxWidth = display.width() - 10;
   int lineHeight = getLineHeight(); int linesPerPage = getLinesPerPage();

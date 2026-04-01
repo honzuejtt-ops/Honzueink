@@ -6,19 +6,46 @@ import json
 
 # --- FUNKCE PRO VYTĚŽENÍ TEXTU PŘÍMO Z ČLÁNKU ---
 def stahni_text_clanku(url, perex):
+    import re
     hlavicky = {"User-Agent": "Mozilla/5.0"}
     try:
         odpoved = requests.get(url, headers=hlavicky, timeout=10)
         soup = BeautifulSoup(odpoved.content, 'html.parser')
+
+        # Odstraníme nerelevantní elementy (navigace, zápatí, komentáře, reklamy, galerie)
+        for tag in soup.find_all(['nav', 'footer', 'header', 'aside', 'script', 'style',
+                                   'form', 'button', 'iframe', 'noscript']):
+            tag.decompose()
+        for cls in ['comment', 'comments', 'footer', 'header', 'nav', 'menu', 'sidebar',
+                    'advertisement', 'ad', 'social', 'share', 'related', 'tags',
+                    'gallery', 'fotogalerie', 'video', 'newsletter']:
+            for tag in soup.find_all(class_=re.compile(cls, re.I)):
+                tag.decompose()
+
         odstavce = soup.find_all('p')
         obsah = ""
         for p in odstavce:
             text = p.get_text().strip()
-            if len(text) > 40: obsah += text + "\n"
-        if "Enable JavaScript" in obsah or len(obsah) < 100: return perex + "\n\n(Pozn: Celý text web zablokoval)"
-        if len(obsah) > 4000: obsah = obsah[:4000] + "...\n(Pokracovani na webu)"
+            # Přeskočit krátké odstavce, video placeholdery, navigaci a galerie
+            if len(text) < 40:
+                continue
+            if re.search(r'(Video se připravuje|Fotogalerie \d+|Sdílet|Přihlásit|Komentáře|Cookie|Reklama)', text, re.I):
+                continue
+            # Přeskočit řádky vypadající jako navigační menu (hodně slov / zkratky)
+            if re.match(r'^([A-ZÁČĎÉĚÍŇÓŘŠŤÚŮÝŽ][a-záčďéěíňóřšťúůýž]+ ){4,}', text):
+                continue
+            obsah += text + "\n"
+
+        # Sanitizace — odstraníme duplicitní prázdné řádky a přebytečné bílé znaky
+        obsah = re.sub(r'\n{3,}', '\n\n', obsah).strip()
+
+        if "Enable JavaScript" in obsah or len(obsah) < 100:
+            return perex + "\n\n(Pozn: Celý text web zablokoval)"
+        if len(obsah) > 2500:
+            obsah = obsah[:2500] + "...\n(Pokracovani na webu)"
         return obsah
-    except Exception: return perex + "\n\n(Pozn: Chyba při stahování)"
+    except Exception:
+        return perex + "\n\n(Pozn: Chyba při stahování)"
 
 # --- FUNKCE PRO ZPRÁVY (RSS) ---
 def stahni_zpravy(rss_url, limit=15):
@@ -26,7 +53,10 @@ def stahni_zpravy(rss_url, limit=15):
     hlavicky = {"User-Agent": "Mozilla/5.0"}
     try:
         odpoved = requests.get(rss_url, headers=hlavicky, timeout=10)
-        root = ET.fromstring(odpoved.content)
+        try:
+            root = ET.fromstring(odpoved.content)
+        except ET.ParseError:
+            return ""
         items = root.findall('.//item')
         vysledny_text = ""
         if not items: return "|T|Žádné zprávy|D||P|Nebyly nalezeny.|X|Zkuste to později.|E|"

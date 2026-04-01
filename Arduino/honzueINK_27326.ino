@@ -140,7 +140,7 @@ enum AppState {
   STATE_NASTAVENI, STATE_NASTAVENI_VZHLED, STATE_NASTAVENI_BATERIE, STATE_NASTAVENI_O_ZARIZENI, STATE_LED_ON, 
   STATE_STOPKY, STATE_HRY, STATE_FLASKA, STATE_KOSTKY, STATE_KOSTKY_VYBER, 
   STATE_GAMEBOOK, STATE_ODHALOVACKA, STATE_ODHALOVACKA_DETAIL, STATE_FRAZE_MENU, STATE_FRAZE_DETAIL, STATE_UCENI,
-  STATE_NASTAVENI_AKTUALIZACE, STATE_QR_MENU, STATE_QR_ZOBRAZ,
+  STATE_NASTAVENI_AKTUALIZACE, STATE_NASTAVENI_INTERVAL, STATE_QR_MENU, STATE_QR_ZOBRAZ,
   STATE_KVIZ, STATE_KVIZ_ODPOVED, STATE_WYR,
   // Nové stavy (přidávají se na konec aby se neposunovaly indexy)
   STATE_KVIZ_KATEGORIE, STATE_KVIZ_OBTIZNOST,
@@ -256,8 +256,9 @@ String horoskopy[12];
 const char* grafNazvy[] = { "EUR/CZK", "USD/CZK", "BTC/CZK", "Zlato CZK/g", "Stribro CZK/g" };
 const int grafCount = 5;
 
-const int nastaveniCount = 5; String nastaveniItems[] = { "Vzhled displeje", "Auto-aktualizace", "Vynutit aktualizaci", "Baterie", "O zařízení" };
-const int vzhledCount = 4; String vzhledItems[] = { "Font", "Velikost", "Tloušťka", "Reverz" };
+const int nastaveniCount = 4; String nastaveniItems[] = { "Vzhled displeje", "Aktualizace", "Baterie", "O zařízení" };
+const int vzhledCount = 5; String vzhledItems[] = { "Font", "Velikost", "Tloušťka", "Reverz", "Refresh" };
+const int aktualizaceCount = 2; String aktualizaceItems[] = { "Interval", "Vynutit nyní" };
 const int intervalCount = 5; String intervalItems[] = {"Vypnuto", "Každé 3 hodiny", "Každých 5 hodin", "Každých 12 hodin", "Každých 24 hodin"};
 unsigned long intervalyMs[] = {0, 10800000, 18000000, 43200000, 86400000};
 int intervalIdx = 4; 
@@ -384,12 +385,12 @@ void jdiSpat() {
   }
 
   // Náhodná kategorie textu: 0=Vtip, 1=Žalm, 2=Citát, 3=Fakt
-  char katBuf[600];
+  char katBuf[1200];
   const char* katNazev;
   switch (random(4)) {
     case 0: strncpy(katBuf, vtipy[random(vtipyPocet)], sizeof(katBuf)-1); katNazev = "Vtip"; break;
-    case 1: strncpy(katBuf, zalmy[random(zalmyPocet)], sizeof(katBuf)-1); katNazev = "Zalm"; break;
-    case 2: strncpy(katBuf, citaty[random(citatyPocet)], sizeof(katBuf)-1); katNazev = "Citat"; break;
+    case 1: strncpy(katBuf, zalmy[random(zalmyPocet)], sizeof(katBuf)-1); katNazev = "Žalm"; break;
+    case 2: strncpy(katBuf, citaty[random(citatyPocet)], sizeof(katBuf)-1); katNazev = "Citát"; break;
     default: strncpy(katBuf, fakty[random(faktyPocet)], sizeof(katBuf)-1); katNazev = "Fakt"; break;
   }
   katBuf[sizeof(katBuf)-1] = '\0';
@@ -410,49 +411,27 @@ void jdiSpat() {
     if (svatekDnes.length() > 0) {
       u8g2Fonts.setFont(getBodyFont());
       tw = u8g2Fonts.getUTF8Width(svatekDnes.c_str());
-      u8g2Fonts.setCursor((display.width() - tw) / 2, 36);
+      u8g2Fonts.setCursor((display.width() - tw) / 2, 38);
       u8g2Fonts.print(svatekDnes.c_str());
     }
 
-    display.drawFastHLine(10, 42, display.width() - 20, fgColor());
+    display.drawFastHLine(10, 46, display.width() - 20, fgColor());
 
-    // Počasí (ikona vpravo, teplota vlevo-středem)
-    if (stazenaDataPocasi != "" && predpoved[0].tMax != 0) {
-      nakresliIkonuPocasi(predpoved[0].ikona, 258, 63);
-      u8g2Fonts.setFont(getBigFont());
-      String temp = String(predpoved[0].tMax) + "° / " + String(predpoved[0].tMin) + "°";
-      tw = u8g2Fonts.getUTF8Width(temp.c_str());
-      u8g2Fonts.setCursor((230 - tw) / 2, 65);
-      u8g2Fonts.print(temp.c_str());
-      u8g2Fonts.setFont(getSmallFont());
-      String astro = "Vychod " + predpoved[0].vychod + "  Zapad " + predpoved[0].zapad;
-      tw = u8g2Fonts.getUTF8Width(astro.c_str());
-      u8g2Fonts.setCursor((display.width() - tw) / 2, 81);
-      u8g2Fonts.print(astro.c_str());
-    } else {
-      u8g2Fonts.setFont(getBodyFont());
-      const char* noData = "Pocasi neni k dispozici";
-      tw = u8g2Fonts.getUTF8Width(noData);
-      u8g2Fonts.setCursor((display.width() - tw) / 2, 65);
-      u8g2Fonts.print(noData);
-    }
-
-    display.drawFastHLine(10, 88, display.width() - 20, fgColor());
-
-    // Kategorie (vpravo) a obsah (vycentrovaný, 2 řádky)
+    // Kategorie (label) a obsah textu generátoru (5 řádků, getBodyFont)
     u8g2Fonts.setFont(getSmallFont());
     tw = u8g2Fonts.getUTF8Width(katNazev);
-    u8g2Fonts.setCursor(display.width() - tw - 4, 98);
+    u8g2Fonts.setCursor(display.width() - tw - 4, 58);
     u8g2Fonts.print(katNazev);
 
     String rTxt = String(katBuf);
-    TextLine lines[2];
-    int lCount = zalamejText(rTxt.c_str(), rTxt.length(), lines, 2, display.width() - 10);
+    TextLine lines[5];
+    int lCount = zalamejText(rTxt.c_str(), rTxt.length(), lines, 5, display.width() - 10);
+    u8g2Fonts.setFont(getBodyFont());
     for (int i = 0; i < lCount; i++) {
-      char lBuf[100]; int llen = lines[i].len; if (llen > 99) llen = 99;
+      char lBuf[120]; int llen = lines[i].len; if (llen > 119) llen = 119;
       strncpy(lBuf, &rTxt.c_str()[lines[i].start], llen); lBuf[llen] = '\0';
       int lw = u8g2Fonts.getUTF8Width(lBuf);
-      u8g2Fonts.setCursor((display.width() - lw) / 2, 110 + (i * 13));
+      u8g2Fonts.setCursor((display.width() - lw) / 2, 62 + (i * 14));
       u8g2Fonts.print(lBuf);
     }
 
@@ -1022,10 +1001,18 @@ void zobrazBateriiMenu() {
     
     int pct = getBatteryPercentage(); float v = getBatteryVoltage();
     u8g2Fonts.setFont(getBigFont()); u8g2Fonts.setForegroundColor(fgColor()); u8g2Fonts.setBackgroundColor(bgColor());
-    u8g2Fonts.setCursor(10, 50); u8g2Fonts.print(String(pct) + " %");
+    if (pct < 0) {
+      u8g2Fonts.setCursor(10, 50); u8g2Fonts.print("N/A");
+    } else {
+      u8g2Fonts.setCursor(10, 50); u8g2Fonts.print(String(pct) + " %");
+    }
     
     u8g2Fonts.setFont(getBodyFont());
-    u8g2Fonts.setCursor(10, 75); u8g2Fonts.print("Napětí: " + String(v, 2) + " V");
+    if (v < 0.1) {
+      u8g2Fonts.setCursor(10, 75); u8g2Fonts.print("Napětí: N/A");
+    } else {
+      u8g2Fonts.setCursor(10, 75); u8g2Fonts.print("Napětí: " + String(v, 2) + " V");
+    }
     
     u8g2Fonts.setFont(getSmallFont());
     u8g2Fonts.setCursor(10, 95); u8g2Fonts.print("EASYLANDER, Li-pol 2500 mAh");
@@ -1591,7 +1578,7 @@ void zobrazFraze(const char* title, const Fraze* data, int count) {
     int y = 32;
     for (int i = 0; i < 4 && (startIdx + i) < count; i++) {
       Fraze f; memcpy_P(&f, &data[startIdx + i], sizeof(Fraze));
-      char cz[60], en[60]; strncpy_P(cz, (const char*)f.cz, sizeof(cz) - 1); cz[sizeof(cz) - 1] = '\0'; strncpy_P(en, (const char*)f.en, sizeof(en) - 1); en[sizeof(en) - 1] = '\0';
+      char cz[80], en[80]; strncpy_P(cz, (const char*)f.cz, sizeof(cz) - 1); cz[sizeof(cz) - 1] = '\0'; strncpy_P(en, (const char*)f.en, sizeof(en) - 1); en[sizeof(en) - 1] = '\0';
       u8g2Fonts.setFont(getBodyFont()); u8g2Fonts.setCursor(5, y); u8g2Fonts.print(cz); y += 11;
       u8g2Fonts.setFont(getSmallFont()); u8g2Fonts.setCursor(15, y); u8g2Fonts.print(en); y += 14;
     }
@@ -1720,14 +1707,15 @@ void goBack() {
     case STATE_HRY: appState = STATE_MAIN_MENU; zobrazSubMenu("HLAVNÍ MENU", mainMenuItems, mainMenuCount, menuIndex, scrollOffset); break;
     
     case STATE_HOROSKOP_DETAIL: horoskopScrollPage = 0; appState = STATE_HOROSKOP_MENU; zobrazSubMenu("HOROSKOP", horoskopItems, horoskopCount, horoskopMenuIndex, 0); break;
-    case STATE_HOROSKOP_MENU: appState = STATE_AKTUALITY; subMenuIndex = 4; subScrollOffset = 0; zobrazSubMenu("AKTUALITY", aktualityItems, aktualityCount, subMenuIndex, subScrollOffset); break;
+    case STATE_HOROSKOP_MENU: appState = STATE_AKTUALITY; subMenuIndex = 4; subScrollOffset = scrollForIdx(4); zobrazSubMenu("AKTUALITY", aktualityItems, aktualityCount, subMenuIndex, subScrollOffset); break;
     case STATE_KURZY_GRAF: appState = STATE_KURZY; zobrazKurzyUI(); break;
     
     case STATE_GENERATOR_RESULT: appState = STATE_GENERATOR; zobrazSubMenu("GENERÁTOR", generatorItems, generatorCount, subMenuIndex, subScrollOffset); break;
     case STATE_GENERATOR: appState = STATE_MAIN_MENU; zobrazSubMenu("HLAVNÍ MENU", mainMenuItems, mainMenuCount, menuIndex, scrollOffset); break;
     
-    case STATE_NASTAVENI_O_ZARIZENI: appState = STATE_NASTAVENI; subMenuIndex = 4; zobrazSubMenu("NASTAVENÍ", nastaveniItems, nastaveniCount, subMenuIndex, subScrollOffset); break;
-    case STATE_NASTAVENI_BATERIE: appState = STATE_NASTAVENI; subMenuIndex = 3; zobrazSubMenu("NASTAVENÍ", nastaveniItems, nastaveniCount, subMenuIndex, subScrollOffset); break;
+    case STATE_NASTAVENI_O_ZARIZENI: appState = STATE_NASTAVENI; subMenuIndex = 3; zobrazSubMenu("NASTAVENÍ", nastaveniItems, nastaveniCount, subMenuIndex, subScrollOffset); break;
+    case STATE_NASTAVENI_BATERIE: appState = STATE_NASTAVENI; subMenuIndex = 2; zobrazSubMenu("NASTAVENÍ", nastaveniItems, nastaveniCount, subMenuIndex, subScrollOffset); break;
+    case STATE_NASTAVENI_INTERVAL: appState = STATE_NASTAVENI_AKTUALIZACE; subMenuIndex = 0; subScrollOffset = 0; zobrazSubMenu("AKTUALIZACE", aktualizaceItems, aktualizaceCount, 0, 0); break;
     case STATE_NASTAVENI_AKTUALIZACE: appState = STATE_NASTAVENI; subMenuIndex = 1; zobrazSubMenu("NASTAVENÍ", nastaveniItems, nastaveniCount, subMenuIndex, subScrollOffset); break;
     case STATE_NASTAVENI_VZHLED: appState = STATE_NASTAVENI; subMenuIndex = 0; zobrazSubMenu("NASTAVENÍ", nastaveniItems, nastaveniCount, subMenuIndex, subScrollOffset); break;
     case STATE_NASTAVENI: appState = STATE_MAIN_MENU; zobrazSubMenu("HLAVNÍ MENU", mainMenuItems, mainMenuCount, menuIndex, scrollOffset); break;
@@ -1770,13 +1758,10 @@ void setup() {
   nactiStazenaData();
   
   // 2. DETEKCE PROBUZENÍ Z DEEP SLEEPU
-  if (esp_sleep_get_wakeup_cause() == ESP_SLEEP_WAKEUP_EXT0) {
-    if (stazenaDataSvet.length() < 20) {
-      aktualizovatDataNaPozadi(true); 
-    }
-  } else {
+  if (esp_sleep_get_wakeup_cause() != ESP_SLEEP_WAKEUP_EXT0) {
     aktualizovatDataNaPozadi(true);
   }
+  // Po probuzení z deep sleep: použijeme uložená data z cache, nestahujeme automaticky
   
   zobrazSubMenu("HLAVNÍ MENU", mainMenuItems, mainMenuCount, menuIndex, scrollOffset);
 }
@@ -1889,7 +1874,8 @@ void loop() {
         
         case STATE_NASTAVENI: menuDown(subMenuIndex, subScrollOffset, nastaveniCount); zobrazSubMenu("NASTAVENÍ", nastaveniItems, nastaveniCount, subMenuIndex, subScrollOffset); break;
         case STATE_NASTAVENI_VZHLED: menuDown(subMenuIndex, subScrollOffset, vzhledCount); zobrazSubMenu("VZHLED", vzhledItems, vzhledCount, subMenuIndex, subScrollOffset); break;
-        case STATE_NASTAVENI_AKTUALIZACE: menuDown(subMenuIndex, subScrollOffset, intervalCount); zobrazSubMenu("AKTUALIZACE", intervalItems, intervalCount, subMenuIndex, subScrollOffset); break;
+        case STATE_NASTAVENI_AKTUALIZACE: menuDown(subMenuIndex, subScrollOffset, aktualizaceCount); zobrazSubMenu("AKTUALIZACE", aktualizaceItems, aktualizaceCount, subMenuIndex, subScrollOffset); break;
+        case STATE_NASTAVENI_INTERVAL: menuDown(subMenuIndex, subScrollOffset, intervalCount); zobrazSubMenu("INTERVAL", intervalItems, intervalCount, subMenuIndex, subScrollOffset); break;
         
         case STATE_KURZY: appState = STATE_KURZY_GRAF; grafMenuIndex = 0; zobrazKurzGraf(); break;
         
@@ -2037,10 +2023,9 @@ void loop() {
 
         case STATE_NASTAVENI:
           if (subMenuIndex == 0) { appState = STATE_NASTAVENI_VZHLED; subMenuIndex = 0; subScrollOffset = 0; zobrazSubMenu("VZHLED", vzhledItems, vzhledCount, 0, 0); }
-          else if (subMenuIndex == 1) { appState = STATE_NASTAVENI_AKTUALIZACE; subMenuIndex = intervalIdx; subScrollOffset = 0; zobrazSubMenu("AKTUALIZACE", intervalItems, intervalCount, subMenuIndex, subScrollOffset); }
-          else if (subMenuIndex == 2) { aktualizovatDataNaPozadi(true); zobrazSubMenu("NASTAVENÍ", nastaveniItems, nastaveniCount, subMenuIndex, subScrollOffset); }
-          else if (subMenuIndex == 3) { appState = STATE_NASTAVENI_BATERIE; zobrazBateriiMenu(); }
-          else if (subMenuIndex == 4) { appState = STATE_NASTAVENI_O_ZARIZENI; zobrazOZaRizeni(); }
+          else if (subMenuIndex == 1) { appState = STATE_NASTAVENI_AKTUALIZACE; subMenuIndex = 0; subScrollOffset = 0; zobrazSubMenu("AKTUALIZACE", aktualizaceItems, aktualizaceCount, 0, 0); }
+          else if (subMenuIndex == 2) { appState = STATE_NASTAVENI_BATERIE; zobrazBateriiMenu(); }
+          else if (subMenuIndex == 3) { appState = STATE_NASTAVENI_O_ZARIZENI; zobrazOZaRizeni(); }
           break;
 
         case STATE_NASTAVENI_VZHLED:
@@ -2048,9 +2033,15 @@ void loop() {
           else if (subMenuIndex == 1) { currentSize = (currentSize + 1) % 4; delay(100); zobrazSubMenu("VZHLED", vzhledItems, vzhledCount, subMenuIndex, subScrollOffset); }
           else if (subMenuIndex == 2) { currentBold = (currentBold + 1) % 2; delay(100); zobrazSubMenu("VZHLED", vzhledItems, vzhledCount, subMenuIndex, subScrollOffset); }
           else if (subMenuIndex == 3) { reverseMode = !reverseMode; delay(100); zobrazSubMenu("VZHLED", vzhledItems, vzhledCount, subMenuIndex, subScrollOffset); }
+          else if (subMenuIndex == 4) { refreshMode = (refreshMode + 1) % 3; delay(100); zobrazSubMenu("VZHLED", vzhledItems, vzhledCount, subMenuIndex, subScrollOffset); }
           break;
           
         case STATE_NASTAVENI_AKTUALIZACE:
+          if (subMenuIndex == 0) { appState = STATE_NASTAVENI_INTERVAL; subMenuIndex = intervalIdx; subScrollOffset = 0; zobrazSubMenu("INTERVAL", intervalItems, intervalCount, subMenuIndex, subScrollOffset); }
+          else if (subMenuIndex == 1) { aktualizovatDataNaPozadi(true); goBack(); }
+          break;
+
+        case STATE_NASTAVENI_INTERVAL:
           intervalIdx = subMenuIndex; 
           prefs.begin("nastaveni", false); prefs.putInt("updInt", intervalIdx); prefs.end(); 
           goBack(); 

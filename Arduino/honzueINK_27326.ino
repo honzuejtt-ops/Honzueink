@@ -501,6 +501,36 @@ void nactiStazenaData() {
 }
 
 
+// ===== GENERÁTOR — NAČTENÍ S FALLBACKEM NA SD =====
+// Pokud je SD dostupná a soubor existuje, načte náhodný řádek z SD (uživatel může obsah upravit).
+// Jinak vrátí položku z PROGMEM pole (zabudovaná data).
+static String _nahodnyTextGeneratoru(const char* sdCesta, const char** pole, int pocet) {
+  if (sdReady) {
+    String s = nactiNahodnyRadek(sdCesta);
+    if (s.length() > 0) return s;
+  }
+  return String(pole[random(pocet)]);
+}
+
+// ===== ARCHIVACE ZPRÁV NA SD KARTU =====
+// Uloží stažená data zpráv do datovaného souboru na SD kartě:
+// /eindata/zpravy/YYYY-MM-DD/{klic}.txt
+// Soubor lze kdykoliv zpětně otevřít přes prohlížeč SD a zobrazit jako seznam zpráv.
+void archivujZpravuNaSD(const char* klic, const String& data) {
+  if (!sdReady) return;
+  struct tm timeinfo;
+  if (!getLocalTime(&timeinfo, 150)) return;
+  char datumBuf[12];
+  sprintf(datumBuf, "%04d-%02d-%02d", timeinfo.tm_year + 1900, timeinfo.tm_mon + 1, timeinfo.tm_mday);
+  if (!SD.exists("/eindata/zpravy")) SD.mkdir("/eindata/zpravy");
+  String slozka = String("/eindata/zpravy/") + datumBuf;
+  if (!SD.exists(slozka.c_str())) SD.mkdir(slozka.c_str());
+  String cesta = slozka + "/" + klic + ".txt";
+  File f = SD.open(cesta.c_str(), FILE_WRITE);
+  if (f) { f.print(data); f.close(); }
+  else { Serial.println("SD archiv: nelze zapsat " + cesta); }
+}
+
 // ===== DEEP SLEEP FUNKCE =====
 void jdiSpat() {
   struct tm timeinfo;
@@ -516,14 +546,17 @@ void jdiSpat() {
     if (sv.length() > 0) svatekDnes = "Svátek má: " + sv;
   }
 
-  // Náhodná kategorie textu: 0=Vtip, 1=Žalm, 2=Citát, 3=Fakt
+  // Náhodná kategorie textu: 0=Vtip, 1=Žalm, 2=Citát, 3=Fakt (SD má přednost před PROGMEM)
   char katBuf[1200];
   const char* katNazev;
-  switch (random(4)) {
-    case 0: strncpy(katBuf, vtipy[random(vtipyPocet)], sizeof(katBuf)-1); katNazev = "Vtip"; break;
-    case 1: strncpy(katBuf, zalmy[random(zalmyPocet)], sizeof(katBuf)-1); katNazev = "Žalm"; break;
-    case 2: strncpy(katBuf, citaty[random(citatyPocet)], sizeof(katBuf)-1); katNazev = "Citát"; break;
-    default: strncpy(katBuf, fakty[random(faktyPocet)], sizeof(katBuf)-1); katNazev = "Fakt"; break;
+  { String _s;
+    switch (random(4)) {
+      case 0: _s = _nahodnyTextGeneratoru("/eindata/generator/vtipy.txt", vtipy, vtipyPocet); katNazev = "Vtip"; break;
+      case 1: _s = _nahodnyTextGeneratoru("/eindata/generator/zalmy.txt", zalmy, zalmyPocet); katNazev = "Žalm"; break;
+      case 2: _s = _nahodnyTextGeneratoru("/eindata/generator/citaty.txt", citaty, citatyPocet); katNazev = "Citát"; break;
+      default: _s = _nahodnyTextGeneratoru("/eindata/generator/fakty.txt", fakty, faktyPocet); katNazev = "Fakt"; break;
+    }
+    strncpy(katBuf, _s.c_str(), sizeof(katBuf)-1);
   }
   katBuf[sizeof(katBuf)-1] = '\0';
 
@@ -1044,19 +1077,19 @@ void aktualizovatDataNaPozadi(bool vynuceno) {
       nakresliLoadScreen("Stahuji zprávy ze světa...", 15);
       {
         String tmp = stahniTextZUrl("Svet", urlZpravySvet);
-        if (tmp.length() > 20) { ulozZpravuDoCache("svet", tmp); asponNecoSeStahlo = true; }
+        if (tmp.length() > 20) { ulozZpravuDoCache("svet", tmp); archivujZpravuNaSD("svet", tmp); asponNecoSeStahlo = true; }
       }
       
       nakresliLoadScreen("Stahuji zprávy z ČR...", 28);
       {
         String tmp = stahniTextZUrl("CR", urlZpravyCR);
-        if (tmp.length() > 20) { ulozZpravuDoCache("cr", tmp); asponNecoSeStahlo = true; }
+        if (tmp.length() > 20) { ulozZpravuDoCache("cr", tmp); archivujZpravuNaSD("cr", tmp); asponNecoSeStahlo = true; }
       }
       
       nakresliLoadScreen("Stahuji Tech a AI...", 42);
       {
         String tmp = stahniTextZUrl("Tech", urlTechAI);
-        if (tmp.length() > 20) { ulozZpravuDoCache("tech", tmp); asponNecoSeStahlo = true; }
+        if (tmp.length() > 20) { ulozZpravuDoCache("tech", tmp); archivujZpravuNaSD("tech", tmp); asponNecoSeStahlo = true; }
       }
       
       nakresliLoadScreen("Stahuji Počasí...", 55);
@@ -2243,16 +2276,16 @@ void loop() {
 
        case STATE_GENERATOR:
          appState = STATE_GENERATOR_RESULT;
-         if (subMenuIndex == 0) zobrazGeneratorResult("VTIP", vtipy[random(vtipyPocet)]);
-         else if (subMenuIndex == 1) zobrazGeneratorResult("ŽALM", zalmy[random(zalmyPocet)]);
-         else if (subMenuIndex == 2) zobrazGeneratorResult("CITÁT", citaty[random(citatyPocet)]);
-         else if (subMenuIndex == 3) zobrazGeneratorResult("FAKT", fakty[random(faktyPocet)]); 
+         if (subMenuIndex == 0) zobrazGeneratorResult("VTIP", _nahodnyTextGeneratoru("/eindata/generator/vtipy.txt", vtipy, vtipyPocet).c_str());
+         else if (subMenuIndex == 1) zobrazGeneratorResult("ŽALM", _nahodnyTextGeneratoru("/eindata/generator/zalmy.txt", zalmy, zalmyPocet).c_str());
+         else if (subMenuIndex == 2) zobrazGeneratorResult("CITÁT", _nahodnyTextGeneratoru("/eindata/generator/citaty.txt", citaty, citatyPocet).c_str());
+         else if (subMenuIndex == 3) zobrazGeneratorResult("FAKT", _nahodnyTextGeneratoru("/eindata/generator/fakty.txt", fakty, faktyPocet).c_str());
          break;
         case STATE_GENERATOR_RESULT:
-          if (subMenuIndex == 0) zobrazGeneratorResult("VTIP", vtipy[random(vtipyPocet)]);
-          else if (subMenuIndex == 1) zobrazGeneratorResult("ŽALM", zalmy[random(zalmyPocet)]);
-          else if (subMenuIndex == 2) zobrazGeneratorResult("CITÁT", citaty[random(citatyPocet)]);
-          else if (subMenuIndex == 3) zobrazGeneratorResult("FAKT", fakty[random(faktyPocet)]); 
+          if (subMenuIndex == 0) zobrazGeneratorResult("VTIP", _nahodnyTextGeneratoru("/eindata/generator/vtipy.txt", vtipy, vtipyPocet).c_str());
+          else if (subMenuIndex == 1) zobrazGeneratorResult("ŽALM", _nahodnyTextGeneratoru("/eindata/generator/zalmy.txt", zalmy, zalmyPocet).c_str());
+          else if (subMenuIndex == 2) zobrazGeneratorResult("CITÁT", _nahodnyTextGeneratoru("/eindata/generator/citaty.txt", citaty, citatyPocet).c_str());
+          else if (subMenuIndex == 3) zobrazGeneratorResult("FAKT", _nahodnyTextGeneratoru("/eindata/generator/fakty.txt", fakty, faktyPocet).c_str());
           break;
 
         case STATE_HRY:
@@ -2304,6 +2337,20 @@ void loop() {
               }
               nactiSDSlozku();
               zobrazSDProhlizec();
+            } else {
+              // Otevření souboru: pokud jde o archiv zpráv (obsahuje |T|), zobrazíme jako seznam zpráv
+              String cestaSouboru = (sdCurrentPath == "/") ? (String("/") + sel.name) : (sdCurrentPath + "/" + sel.name);
+              File fSd = SD.open(cestaSouboru.c_str());
+              if (fSd) {
+                String obsah = fSd.readString();
+                fSd.close();
+                if (obsah.indexOf("|T|") >= 0) {
+                  parsujZpravy(obsah);
+                  clanekMenuIndex = 0;
+                  appState = STATE_ZPRAVY_SEZNAM;
+                  zobrazSeznamZprav();
+                }
+              }
             }
           }
           break;

@@ -1789,6 +1789,11 @@ void setup() {
   // 2. DETEKCE PROBUZENÍ Z DEEP SLEEPU
   if (esp_sleep_get_wakeup_cause() != ESP_SLEEP_WAKEUP_EXT0) {
     aktualizovatDataNaPozadi(true);
+    // Po sérii partial refresh během stahování je nutný full refresh,
+    // jinak dispej zůstane zaseknutý na "HOTOVO A ULOŽENO!"
+    display.setFullWindow();
+    display.firstPage();
+    do { display.fillScreen(bgColor()); } while (display.nextPage());
   }
   // Po probuzení z deep sleep: použijeme uložená data z cache, nestahujeme automaticky
   

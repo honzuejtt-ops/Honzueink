@@ -13,6 +13,19 @@ def stahni_text_clanku(url, perex):
         obsah = trafilatura.extract(stazeno, include_comments=False, include_tables=False)
         
         if obsah:
+            # --- DETEKCE PAYWALLU A REKLAM ---
+            paywall_klicova_slova = [
+                "vstup do clubu a získáš", "přístup k exkluzivnímu obsahu", 
+                "předplatím si za", "čtení bez omezení", "idnes premium", 
+                "kč / týden", "účtuje se jednou", "odemkněte článek",
+                "kupte si předplatné", "zakoupením získáte"
+            ]
+            
+            obsah_maly = obsah.lower()
+            for slovo in paywall_klicova_slova:
+                if slovo in obsah_maly:
+                    return perex + "\n\n(Pozn: Článek je uzamčen za paywallem/předplatným)"
+            
             if len(obsah) > 4000:
                 return obsah[:4000] + "...\n(Pokracovani na webu)"
             return obsah

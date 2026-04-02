@@ -1,5 +1,6 @@
 #include <Arduino.h>
 #include <SPI.h>
+#include <SD.h>
 #include <math.h>
 #include <Preferences.h>
 #include <LittleFS.h>
@@ -74,6 +75,11 @@ U8G2_FOR_ADAFRUIT_GFX u8g2Fonts;
 #define LED_PIN 45
 #define BAT_PIN 7      // GPIO7 = BAT_ADC na Heltec Vision Master E290
 #define ADC_CTRL 46    // GPIO46 = ADC_CTRL, povoluje bateriový dělič (HIGH = zapnuto)
+
+// SD karta — sdílí SPI sběrnici s displejem (MOSI=1, SCK=2)
+// Zapoj: SD.MISO → GPIO8, SD.CS → GPIO9, SD.MOSI → GPIO1, SD.CLK → GPIO2
+#define SD_MISO_PIN 8
+#define SD_CS_PIN   9
 
 Preferences prefs;
 
@@ -355,6 +361,83 @@ void nakresliLoadScreen(String text, int progress) {
     display.drawRect(20, 100, 256, 12, fgColor());
     display.fillRect(20, 100, (256 * progress) / 100, 12, fgColor());
   } while (display.nextPage());
+}
+
+// ===== UKLÁDÁNÍ DAT DO PAMĚTI (PŘEŽIJE DEEP SLEEP) =====
+void zobrazSDInfo() {
+  bool cteckaOk = SD.begin(SD_CS_PIN);
+  uint8_t cardType = cteckaOk ? SD.cardType() : CARD_NONE;
+
+  Serial.println("=== SD KARTA ===");
+  if (!cteckaOk) {
+    Serial.println("SD: ctecka NENALEZENA nebo karta chybi!");
+  } else {
+    Serial.print("SD: karta nalezena, typ: ");
+    if      (cardType == CARD_MMC)  Serial.println("MMC");
+    else if (cardType == CARD_SD)   Serial.println("SDSC");
+    else if (cardType == CARD_SDHC) Serial.println("SDHC");
+    else                             Serial.println("NEZNAMY");
+    Serial.print("Velikost: ");
+    Serial.print((unsigned long)(SD.cardSize() / (1024ULL * 1024ULL)));
+    Serial.println(" MB");
+  }
+
+  display.setFullWindow();
+  display.firstPage();
+  do {
+    display.fillScreen(bgColor());
+    u8g2Fonts.setFontMode(1);
+    u8g2Fonts.setForegroundColor(fgColor());
+    u8g2Fonts.setBackgroundColor(bgColor());
+
+    u8g2Fonts.setFont(getTitleFont());
+    int tw = u8g2Fonts.getUTF8Width("SD KARTA");
+    u8g2Fonts.setCursor((display.width() - tw) / 2, 20);
+    u8g2Fonts.print("SD KARTA");
+
+    u8g2Fonts.setFont(getBodyFont());
+
+    if (!cteckaOk) {
+      tw = u8g2Fonts.getUTF8Width("Ctecka: NENALEZENA");
+      u8g2Fonts.setCursor((display.width() - tw) / 2, 50);
+      u8g2Fonts.print("Ctecka: NENALEZENA");
+      tw = u8g2Fonts.getUTF8Width("Zkontroluj zapojeni");
+      u8g2Fonts.setCursor((display.width() - tw) / 2, 70);
+      u8g2Fonts.print("Zkontroluj zapojeni");
+      tw = u8g2Fonts.getUTF8Width("MISO=GPIO8  CS=GPIO9");
+      u8g2Fonts.setCursor((display.width() - tw) / 2, 90);
+      u8g2Fonts.print("MISO=GPIO8  CS=GPIO9");
+    } else {
+      tw = u8g2Fonts.getUTF8Width("Ctecka: OK");
+      u8g2Fonts.setCursor((display.width() - tw) / 2, 50);
+      u8g2Fonts.print("Ctecka: OK");
+
+      String typStr = "Typ: ";
+      if      (cardType == CARD_MMC)  typStr += "MMC";
+      else if (cardType == CARD_SD)   typStr += "SDSC";
+      else if (cardType == CARD_SDHC) typStr += "SDHC";
+      else                             typStr += "neznamy";
+      tw = u8g2Fonts.getUTF8Width(typStr.c_str());
+      u8g2Fonts.setCursor((display.width() - tw) / 2, 70);
+      u8g2Fonts.print(typStr.c_str());
+
+      String sizStr = "Velikost: " + String((unsigned long)(SD.cardSize() / (1024ULL * 1024ULL))) + " MB";
+      tw = u8g2Fonts.getUTF8Width(sizStr.c_str());
+      u8g2Fonts.setCursor((display.width() - tw) / 2, 90);
+      u8g2Fonts.print(sizStr.c_str());
+    }
+
+    u8g2Fonts.setFont(getSmallFont());
+    tw = u8g2Fonts.getUTF8Width("Pokracuj stiskem tlacitka...");
+    u8g2Fonts.setCursor((display.width() - tw) / 2, 120);
+    u8g2Fonts.print("Pokracuj stiskem tlacitka...");
+  } while (display.nextPage());
+
+  // Počkáme na stisk libovolného tlačítka
+  while (digitalRead(BTN_DOWN) == HIGH && digitalRead(BTN_SELECT) == HIGH) {
+    delay(50);
+  }
+  delay(200); // debounce
 }
 
 // ===== UKLÁDÁNÍ DAT DO PAMĚTI (PŘEŽIJE DEEP SLEEP) =====
@@ -1792,7 +1875,7 @@ void setup() {
   pinMode(ADC_CTRL, OUTPUT); digitalWrite(ADC_CTRL, LOW);
   analogSetPinAttenuation(BAT_PIN, ADC_11db);
 
-  SPI.begin(2, -1, 1, 3); 
+  SPI.begin(2, SD_MISO_PIN, 1, 3); 
   display.init(); 
   display.setRotation(1);
   
@@ -1803,6 +1886,9 @@ void setup() {
   u8g2Fonts.begin(display); 
   u8g2Fonts.setFontMode(1);
   pinMode(BTN_DOWN, INPUT_PULLUP); pinMode(BTN_SELECT, INPUT_PULLUP);
+
+  // SD karta: detekce a zobrazení stavu (stiskni tlačítko pro pokračování)
+  zobrazSDInfo();
   
   nactiPoziceKnih(); gbNode = nactiGBPozici();
   

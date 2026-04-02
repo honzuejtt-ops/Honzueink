@@ -155,7 +155,8 @@ enum AppState {
   STATE_KVIZ_KATEGORIE, STATE_KVIZ_OBTIZNOST,
   STATE_WYR_VYSLEDEK,
   STATE_HOROSKOP_MENU, STATE_HOROSKOP_DETAIL,
-  STATE_KURZY_GRAF
+  STATE_KURZY_GRAF,
+  STATE_SD_BROWSER
 };
 
 AppState appState = STATE_MAIN_MENU;
@@ -165,6 +166,14 @@ int refreshMode = 1; // 0=Pomalá (full), 1=Střední (partial, default), 2=Rych
 int gbNode = 0, gbTextPage = 0, knihaPozice[3] = { 0, 0, 0 };
 int aktualniHraIdx = 0;
 int kvizKatIdx = 0; int kvizObtIdx = 0; int kvizKatScrollOffset = 0; int grafMenuIndex = 0; int horoskopMenuIndex = 0; int horoskopScrollPage = 0;
+
+// ===== SD PROHLÍŽEČ =====
+String sdCurrentPath = "/";
+int sdBrowserIndex = 0;
+int sdBrowserScrollOffset = 0;
+struct SdEntry { char name[30]; bool isDir; uint32_t size; };
+SdEntry sdEntries[50];
+int sdEntryCount = 0;
 
 // ===== BATERIE A STATUS =====
 // Cache pro čtení baterie — měříme max 1× za 60 sekund (čtení trvá ~50 ms)
@@ -266,7 +275,7 @@ void nakresliStatusBar() {
 }
 
 // ===== MENU DATA =====
-const int mainMenuCount = 7; String mainMenuItems[] = { "KNIHOVNA", "AKTUALITY", "TOOLBOX", "SLOVNÍK", "GENERÁTOR", "HRY", "NASTAVENÍ" };
+const int mainMenuCount = 8; String mainMenuItems[] = { "KNIHOVNA", "AKTUALITY", "TOOLBOX", "SLOVNÍK", "GENERÁTOR", "HRY", "SD KARTA", "NASTAVENÍ" };
 const int aktualityCount = 5; String aktualityItems[] = { "Zprávy", "Světový čas", "Kurzy", "Počasí", "Horoskop" };
 const int zpravyMenuCount = 3; String zpravyMenuItems[] = { "Ze světa", "Z ČR", "Technologie a AI" };
 const int knihovnaCount = 3; String knihovnaItems[] = { "Zaklínač 1", "Zaklínač 2", "Zaklínač 3" };
@@ -1812,6 +1821,93 @@ void zobrazRefreshToast() {
   delay(1500);
 }
 
+// ==== SD PROHLÍŽEČ SOUBORŮ ====
+String formatFileSize(uint32_t bytes) {
+  if (bytes < 1024) return String(bytes) + " B";
+  else if (bytes < 1024UL * 1024UL) return String(bytes / 1024) + " KB";
+  else return String(bytes / (1024UL * 1024UL)) + " MB";
+}
+
+void nactiSDSlozku() {
+  sdEntryCount = 0;
+  sdBrowserIndex = 0;
+  sdBrowserScrollOffset = 0;
+  if (!sdReady) return;
+  File dir = SD.open(sdCurrentPath.c_str());
+  if (!dir || !dir.isDirectory()) { if (dir) dir.close(); return; }
+  if (sdCurrentPath != "/") {
+    strncpy(sdEntries[sdEntryCount].name, "..", sizeof(sdEntries[0].name) - 1);
+    sdEntries[sdEntryCount].name[sizeof(sdEntries[0].name) - 1] = '\0';
+    sdEntries[sdEntryCount].isDir = true;
+    sdEntries[sdEntryCount].size = 0;
+    sdEntryCount++;
+  }
+  File entry = dir.openNextFile();
+  while (entry && sdEntryCount < 50) {
+    const char* fname = entry.name();
+    const char* lastSlash = strrchr(fname, '/');
+    if (lastSlash) fname = lastSlash + 1;
+    strncpy(sdEntries[sdEntryCount].name, fname, sizeof(sdEntries[0].name) - 1);
+    sdEntries[sdEntryCount].name[sizeof(sdEntries[0].name) - 1] = '\0';
+    sdEntries[sdEntryCount].isDir = entry.isDirectory();
+    sdEntries[sdEntryCount].size = entry.size();
+    sdEntryCount++;
+    entry.close();
+    entry = dir.openNextFile();
+  }
+  if (entry) entry.close();
+  dir.close();
+}
+
+void zobrazSDProhlizec() {
+  int itemH = getMenuItemHeight();
+  int visible = getVisibleMenuItems();
+  display.setPartialWindow(0, 0, display.width(), display.height());
+  display.firstPage();
+  do {
+    display.fillScreen(bgColor());
+    u8g2Fonts.setFontMode(1);
+    u8g2Fonts.setFont(getTitleFont()); u8g2Fonts.setForegroundColor(fgColor()); u8g2Fonts.setBackgroundColor(bgColor());
+    String pathLabel = "SD: " + sdCurrentPath;
+    if (pathLabel.length() > 20) pathLabel = "SD: ..." + sdCurrentPath.substring(sdCurrentPath.length() - 15);
+    u8g2Fonts.setCursor(5, 18); u8g2Fonts.print(pathLabel.c_str());
+    nakresliStatusBar();
+    display.drawFastHLine(0, 23, display.width(), fgColor());
+    if (!sdReady) {
+      u8g2Fonts.setFont(getBodyFont()); u8g2Fonts.setForegroundColor(fgColor()); u8g2Fonts.setBackgroundColor(bgColor());
+      u8g2Fonts.setCursor(5, 60); u8g2Fonts.print("SD karta není dostupná!");
+      u8g2Fonts.setFont(getSmallFont()); u8g2Fonts.setCursor(5, 125); u8g2Fonts.print("Drž BTN21 = zpět");
+    } else if (sdEntryCount == 0) {
+      u8g2Fonts.setFont(getBodyFont()); u8g2Fonts.setForegroundColor(fgColor()); u8g2Fonts.setBackgroundColor(bgColor());
+      u8g2Fonts.setCursor(5, 60); u8g2Fonts.print("(prázdná složka)");
+      u8g2Fonts.setFont(getSmallFont()); u8g2Fonts.setCursor(5, 125); u8g2Fonts.print("Drž BTN21 = zpět");
+    } else {
+      u8g2Fonts.setFont(getBodyFont());
+      for (int i = 0; i < visible; i++) {
+        int idx = i + sdBrowserScrollOffset;
+        if (idx >= sdEntryCount) break;
+        int y = 28 + itemH + (i * itemH);
+        if (idx == sdBrowserIndex) {
+          display.fillRect(0, y - itemH + 4, display.width(), itemH, fgColor());
+          u8g2Fonts.setForegroundColor(bgColor()); u8g2Fonts.setBackgroundColor(fgColor());
+        } else {
+          u8g2Fonts.setForegroundColor(fgColor()); u8g2Fonts.setBackgroundColor(bgColor());
+        }
+        String label;
+        if (sdEntries[idx].isDir) {
+          label = String("[D] ") + sdEntries[idx].name;
+        } else {
+          label = String("[F] ") + sdEntries[idx].name + " (" + formatFileSize(sdEntries[idx].size) + ")";
+        }
+        u8g2Fonts.setCursor(5, y); u8g2Fonts.print(label.c_str());
+      }
+      u8g2Fonts.setForegroundColor(fgColor()); u8g2Fonts.setBackgroundColor(bgColor());
+      u8g2Fonts.setFont(getSmallFont());
+      u8g2Fonts.setCursor(5, 125); u8g2Fonts.print("BTN0=pohyb | BTN21=vstup | Drž=zpět");
+    }
+  } while (display.nextPage());
+}
+
 // ==== TLAČÍTKA A NÁVRATY ====
 bool longPress() { unsigned long start = millis(); while (digitalRead(BTN_SELECT) == LOW) { if (millis() - start > 500) { while (digitalRead(BTN_SELECT) == LOW) delay(10); return true; } delay(10); } return false; }
 bool longPressBTN0() { unsigned long start = millis(); while (digitalRead(BTN_DOWN) == LOW) { if (millis() - start > 500) { while (digitalRead(BTN_DOWN) == LOW) delay(10); return true; } delay(10); } return false; }
@@ -1854,6 +1950,18 @@ void goBack() {
     case STATE_HOROSKOP_DETAIL: horoskopScrollPage = 0; appState = STATE_HOROSKOP_MENU; zobrazSubMenu("HOROSKOP", horoskopItems, horoskopCount, horoskopMenuIndex, 0); break;
     case STATE_HOROSKOP_MENU: appState = STATE_AKTUALITY; subMenuIndex = 4; subScrollOffset = scrollForIdx(4); zobrazSubMenu("AKTUALITY", aktualityItems, aktualityCount, subMenuIndex, subScrollOffset); break;
     case STATE_KURZY_GRAF: appState = STATE_KURZY; zobrazKurzyUI(); break;
+    
+    case STATE_SD_BROWSER:
+      if (sdCurrentPath == "/") {
+        appState = STATE_MAIN_MENU;
+        zobrazSubMenu("HLAVNÍ MENU", mainMenuItems, mainMenuCount, menuIndex, scrollOffset);
+      } else {
+        int lastSlash = sdCurrentPath.lastIndexOf('/');
+        sdCurrentPath = (lastSlash > 0) ? sdCurrentPath.substring(0, lastSlash) : "/";
+        nactiSDSlozku();
+        zobrazSDProhlizec();
+      }
+      break;
     
     case STATE_GENERATOR_RESULT: appState = STATE_GENERATOR; zobrazSubMenu("GENERÁTOR", generatorItems, generatorCount, subMenuIndex, subScrollOffset); break;
     case STATE_GENERATOR: appState = STATE_MAIN_MENU; zobrazSubMenu("HLAVNÍ MENU", mainMenuItems, mainMenuCount, menuIndex, scrollOffset); break;
@@ -2031,6 +2139,16 @@ void loop() {
         
         case STATE_KURZY: appState = STATE_KURZY_GRAF; grafMenuIndex = 0; zobrazKurzGraf(); break;
         
+        case STATE_SD_BROWSER:
+          if (sdEntryCount > 0) {
+            int visible = getVisibleMenuItems();
+            sdBrowserIndex = (sdBrowserIndex + 1) % sdEntryCount;
+            if (sdBrowserIndex >= sdBrowserScrollOffset + visible) sdBrowserScrollOffset++;
+            if (sdBrowserIndex == 0) sdBrowserScrollOffset = 0;
+            zobrazSDProhlizec();
+          }
+          break;
+        
         case STATE_ODHALOVACKA: case STATE_ODHALOVACKA_DETAIL: goBack(); break;
         
         default: break;
@@ -2054,7 +2172,8 @@ void loop() {
           else if (menuIndex == 3) { appState = STATE_SLOVNIK; zobrazSubMenu("SLOVNÍK", slovnikItems, slovnikCount, 0, 0); }
           else if (menuIndex == 4) { appState = STATE_GENERATOR; zobrazSubMenu("GENERÁTOR", generatorItems, generatorCount, 0, 0); }
           else if (menuIndex == 5) { appState = STATE_HRY; zobrazSubMenu("HRY", hryItems, hryCount, 0, 0); }
-          else if (menuIndex == 6) { appState = STATE_NASTAVENI; zobrazSubMenu("NASTAVENÍ", nastaveniItems, nastaveniCount, 0, 0); }
+          else if (menuIndex == 6) { appState = STATE_SD_BROWSER; sdCurrentPath = "/"; nactiSDSlozku(); zobrazSDProhlizec(); }
+          else if (menuIndex == 7) { appState = STATE_NASTAVENI; zobrazSubMenu("NASTAVENÍ", nastaveniItems, nastaveniCount, 0, 0); }
           break;
 
         case STATE_KNIHOVNA: textScrollPage = knihaPozice[subMenuIndex]; appState = STATE_KNIHOVNA_DETAIL; zobrazText(knihovnaItems[subMenuIndex].c_str(), knihy[subMenuIndex]); break;
@@ -2172,6 +2291,22 @@ void loop() {
         case STATE_HOROSKOP_MENU: appState = STATE_HOROSKOP_DETAIL; horoskopScrollPage = 0; zobrazHoroskopDetail(horoskopMenuIndex); break;
         case STATE_HOROSKOP_DETAIL: horoskopScrollPage = 0; horoskopMenuIndex = (horoskopMenuIndex + 1) % horoskopCount; zobrazHoroskopDetail(horoskopMenuIndex); break;
         case STATE_KURZY_GRAF: grafMenuIndex = (grafMenuIndex + 1) % grafCount; zobrazKurzGraf(); break;
+
+        case STATE_SD_BROWSER:
+          if (sdReady && sdEntryCount > 0) {
+            SdEntry& sel = sdEntries[sdBrowserIndex];
+            if (sel.isDir) {
+              if (strcmp(sel.name, "..") == 0) {
+                int lastSlash = sdCurrentPath.lastIndexOf('/');
+                sdCurrentPath = (lastSlash > 0) ? sdCurrentPath.substring(0, lastSlash) : "/";
+              } else {
+                sdCurrentPath = (sdCurrentPath == "/") ? (String("/") + sel.name) : (sdCurrentPath + "/" + sel.name);
+              }
+              nactiSDSlozku();
+              zobrazSDProhlizec();
+            }
+          }
+          break;
 
         case STATE_NASTAVENI:
           if (subMenuIndex == 0) { appState = STATE_NASTAVENI_VZHLED; subMenuIndex = 0; subScrollOffset = 0; zobrazSubMenu("VZHLED", vzhledItems, vzhledCount, 0, 0); }

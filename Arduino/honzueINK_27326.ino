@@ -1790,7 +1790,7 @@ void setup() {
   pinMode(LED_PIN, OUTPUT); digitalWrite(LED_PIN, LOW);
   // ADC_CTRL (GPIO46): ovládá bateriový dělič — LOW = vypnuto (šetří energii)
   pinMode(ADC_CTRL, OUTPUT); digitalWrite(ADC_CTRL, LOW);
-  analogSetPinAttenuation(BAT_PIN, ADC_ATTEN_DB_12);
+  analogSetPinAttenuation(BAT_PIN, ADC_11db);
 
   SPI.begin(2, -1, 1, 3); 
   display.init(); 

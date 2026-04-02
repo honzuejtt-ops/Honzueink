@@ -69,47 +69,6 @@ def stahni_zpravy(rss_url, limit=15):
     except Exception as e: return f"|T|Chyba|D||P|Něco se pokazilo.|X|{e}|E|"
 
 # --- FUNKCE PRO WEBY BEZ RSS (Refresher, Antiyoutuber atd.) ---
-def stahni_bez_rss(zdroj_url, limit=5):
-    hlavicky = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
-    }
-    try:
-        odpoved = requests.get(zdroj_url, headers=hlavicky, timeout=10)
-        soup = BeautifulSoup(odpoved.content, 'html.parser')
-        
-        nalezeno = []
-        for a_tag in soup.find_all('a', href=True):
-            odkaz = a_tag['href']
-            titulek = a_tag.get_text().replace('\n', ' ').strip()
-            titulek = re.sub(r'\s+', ' ', titulek)
-            
-            # Filtry proti nesmyslům na hlavní straně
-            if odkaz in ['/', '#', zdroj_url, zdroj_url + '/']:
-                continue
-            if "Hlas moderní generace" in titulek or "Zprávy ze světa" in titulek:
-                continue
-                
-            if len(titulek) > 25:
-                if odkaz.startswith('/'):
-                    odkaz = zdroj_url.rstrip('/') + odkaz
-                elif not odkaz.startswith('http'):
-                    continue
-                    
-                if not any(o['url'] == odkaz for o in nalezeno):
-                    nalezeno.append({"url": odkaz, "titulek": titulek})
-                    
-        vysledny_text = ""
-        if not nalezeno:
-            return f"|T|Žádné články z webu|D||P|Nebyly nalezeny odkazy.|X||E|"
-            
-        for clanek in nalezeno[:limit]:
-            text_clanku = stahni_text_clanku(clanek['url'], "")
-            vysledny_text += f"|T|{clanek['titulek']}|D|Dnes|P|Článek stažen přímo z webu...|X|{text_clanku}|E|"
-            
-        return vysledny_text
-    except Exception as e:
-        return f"|T|Chyba stahování|D||P||X|{e}|E|"
-
 # --- FUNKCE PRO POČASÍ ---
 def stahni_pocasi():
     url = "https://api.open-meteo.com/v1/forecast?latitude=50.088&longitude=14.4208&daily=weathercode,temperature_2m_max,temperature_2m_min,precipitation_sum,windspeed_10m_max,sunrise,sunset&timezone=Europe/Berlin"
@@ -277,17 +236,10 @@ if __name__ == "__main__":
     tech_data = stahni_zpravy("https://www.lupa.cz/rss/clanky/", limit=5)
     tech_data += stahni_zpravy("https://www.cnews.cz/feed/", limit=5)
 
-    # 2. Bulvár a weby pro mladé (uloženo dohromady)
-    bulvar_data = stahni_zpravy("https://www.ahaonline.cz/rss.asp", limit=5)
-    bulvar_data += stahni_zpravy("https://www.extra.cz/rss", limit=5)
-    bulvar_data += stahni_bez_rss("https://refresher.cz", limit=4)
-    bulvar_data += stahni_bez_rss("https://www.antiyoutuber.cz", limit=4)
-
-    # 3. Ukládání do souborů
+    # 2. Ukládání do souborů
     with open("zpravy_svet.txt", "w", encoding="utf-8") as f: f.write(svet_data)
     with open("zpravy_cr.txt", "w", encoding="utf-8") as f: f.write(cr_data)
     with open("zpravy_tech.txt", "w", encoding="utf-8") as f: f.write(tech_data)
-    with open("zpravy_bulvar.txt", "w", encoding="utf-8") as f: f.write(bulvar_data)
 
     with open("pocasi.txt", "w", encoding="utf-8") as f: f.write(stahni_pocasi())
     with open("kurzy.txt", "w", encoding="utf-8") as f: f.write(stahni_kurzy())

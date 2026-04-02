@@ -227,12 +227,34 @@ def stahni_horoskopy():
         res += f"|Z|{nazvy_cz[i]}|T|{text}|E|\n"
     return res
 
+def stahni_zpravy_multi(zdroje, celkovy_limit=10):
+    """Stáhne zprávy z více RSS zdrojů, dokud nedosáhne limitu."""
+    vsechny = ""
+    pocet = 0
+    for rss_url, limit_per_source in zdroje:
+        if pocet >= celkovy_limit:
+            break
+        zbyvajici = celkovy_limit - pocet
+        limit = min(limit_per_source, zbyvajici)
+        data = stahni_zpravy(rss_url, limit=limit)
+        novy_pocet = data.count("|E|")
+        if novy_pocet > 0:
+            vsechny += data
+            pocet += novy_pocet
+    return vsechny
+
 if __name__ == "__main__":
     print("Spoustim stahovani z webu a RSS...")
     
     # 1. Běžné zprávy a tech
-    svet_data = stahni_zpravy("https://ct24.ceskatelevize.cz/rss/svet", limit=10)
-    cr_data = stahni_zpravy("https://ct24.ceskatelevize.cz/rss/domaci", limit=10)
+    svet_data = stahni_zpravy_multi([
+        ("https://ct24.ceskatelevize.cz/rss/svet", 10),
+        ("https://www.novinky.cz/rss/zahranicni", 5),
+    ], celkovy_limit=10)
+    cr_data = stahni_zpravy_multi([
+        ("https://ct24.ceskatelevize.cz/rss/domaci", 10),
+        ("https://www.novinky.cz/rss/domaci", 5),
+    ], celkovy_limit=10)
     tech_data = stahni_zpravy("https://www.lupa.cz/rss/clanky/", limit=5)
     tech_data += stahni_zpravy("https://www.cnews.cz/feed/", limit=5)
 

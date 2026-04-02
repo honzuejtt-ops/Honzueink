@@ -156,10 +156,22 @@ int aktualniHraIdx = 0;
 int kvizKatIdx = 0; int kvizObtIdx = 0; int kvizKatScrollOffset = 0; int grafMenuIndex = 0; int horoskopMenuIndex = 0; int horoskopScrollPage = 0;
 
 // ===== BATERIE A STATUS =====
-float getBatteryVoltage() { 
-  int raw = analogRead(BAT_PIN);
-  if (raw <= 100 || raw >= 4095) return 0.0;  // Vrať 0 místo fake hodnoty
-  return raw * (3.3 / 4095.0) * 2.0;  // Správný dělič 100k/100k = násobek 2.0
+float getBatteryVoltage() {
+  // Zapnout Vext pro napájení bateriového děliče na Heltec deskách
+  pinMode(Vext, OUTPUT);
+  digitalWrite(Vext, LOW);  // LOW = zapnuto na Heltec deskách
+  delay(10);  // Krátká pauza pro stabilizaci
+
+  // Průměr z 16 čtení pro stabilitu
+  long sum = 0;
+  for (int i = 0; i < 16; i++) {
+    sum += analogRead(BAT_PIN);
+    delay(2);
+  }
+  int raw = sum / 16;
+
+  if (raw <= 100 || raw >= 4095) return 0.0;
+  return raw * (3.3 / 4095.0) * 2.0;
 }
 
 int getBatteryPercentage() { 
@@ -1149,10 +1161,10 @@ void zobrazKurzyUI() {
     u8g2Fonts.setCursor(10, 65); u8g2Fonts.print("1 USD = " + kurzUsd + " Kč");
     u8g2Fonts.setCursor(10, 85); u8g2Fonts.print("1 BTC = " + kurzBtc + " Kč");
 
-    u8g2Fonts.setCursor(160, 45); u8g2Fonts.print("Zlato (1g):");
-    u8g2Fonts.setFont(getTitleFont()); u8g2Fonts.setCursor(160, 62); u8g2Fonts.print(kurzZlato + " Kč");
-    u8g2Fonts.setFont(getBodyFont()); u8g2Fonts.setCursor(160, 85); u8g2Fonts.print("Stříbro (1g):");
-    u8g2Fonts.setFont(getTitleFont()); u8g2Fonts.setCursor(160, 102); u8g2Fonts.print(kurzStribro + " Kč");
+    u8g2Fonts.setCursor(170, 45); u8g2Fonts.print("Zlato (1g):");
+    u8g2Fonts.setFont(getTitleFont()); u8g2Fonts.setCursor(170, 62); u8g2Fonts.print(kurzZlato + " Kč");
+    u8g2Fonts.setFont(getBodyFont()); u8g2Fonts.setCursor(170, 85); u8g2Fonts.print("Stříbro (1g):");
+    u8g2Fonts.setFont(getTitleFont()); u8g2Fonts.setCursor(170, 102); u8g2Fonts.print(kurzStribro + " Kč");
 
     u8g2Fonts.setFont(getSmallFont()); u8g2Fonts.setCursor(5, 125); u8g2Fonts.print("BTN0=Grafy 30d | Drž BTN21=zpět");
   } while (display.nextPage());
@@ -1670,6 +1682,21 @@ void zobrazLedStav() {
   } while (display.nextPage());
 }
 
+void zobrazRefreshToast() {
+  const char* refreshNazvy[] = {"Pomalý (full)", "Střední (partial)", "Rychlý (fast)"};
+  display.setPartialWindow(0, 0, display.width(), display.height());
+  display.firstPage();
+  do {
+    display.fillScreen(bgColor());
+    u8g2Fonts.setFontMode(1);
+    u8g2Fonts.setForegroundColor(fgColor());
+    u8g2Fonts.setBackgroundColor(bgColor());
+    printCentered("REFRESH", 45, getTitleFont());
+    printCentered(String(refreshNazvy[refreshMode]), 75, getBodyFont());
+  } while (display.nextPage());
+  delay(1500);
+}
+
 // ==== TLAČÍTKA A NÁVRATY ====
 bool longPress() { unsigned long start = millis(); while (digitalRead(BTN_SELECT) == LOW) { if (millis() - start > 500) { while (digitalRead(BTN_SELECT) == LOW) delay(10); return true; } delay(10); } return false; }
 bool longPressBTN0() { unsigned long start = millis(); while (digitalRead(BTN_DOWN) == LOW) { if (millis() - start > 500) { while (digitalRead(BTN_DOWN) == LOW) delay(10); return true; } delay(10); } return false; }
@@ -1716,11 +1743,11 @@ void goBack() {
     case STATE_GENERATOR_RESULT: appState = STATE_GENERATOR; zobrazSubMenu("GENERÁTOR", generatorItems, generatorCount, subMenuIndex, subScrollOffset); break;
     case STATE_GENERATOR: appState = STATE_MAIN_MENU; zobrazSubMenu("HLAVNÍ MENU", mainMenuItems, mainMenuCount, menuIndex, scrollOffset); break;
     
-    case STATE_NASTAVENI_O_ZARIZENI: appState = STATE_NASTAVENI; subMenuIndex = 3; zobrazSubMenu("NASTAVENÍ", nastaveniItems, nastaveniCount, subMenuIndex, subScrollOffset); break;
-    case STATE_NASTAVENI_BATERIE: appState = STATE_NASTAVENI; subMenuIndex = 2; zobrazSubMenu("NASTAVENÍ", nastaveniItems, nastaveniCount, subMenuIndex, subScrollOffset); break;
+    case STATE_NASTAVENI_O_ZARIZENI: appState = STATE_NASTAVENI; subMenuIndex = 3; subScrollOffset = scrollForIdx(3); zobrazSubMenu("NASTAVENÍ", nastaveniItems, nastaveniCount, subMenuIndex, subScrollOffset); break;
+    case STATE_NASTAVENI_BATERIE: appState = STATE_NASTAVENI; subMenuIndex = 2; subScrollOffset = scrollForIdx(2); zobrazSubMenu("NASTAVENÍ", nastaveniItems, nastaveniCount, subMenuIndex, subScrollOffset); break;
     case STATE_NASTAVENI_INTERVAL: appState = STATE_NASTAVENI_AKTUALIZACE; subMenuIndex = 0; subScrollOffset = 0; zobrazSubMenu("AKTUALIZACE", aktualizaceItems, aktualizaceCount, 0, 0); break;
-    case STATE_NASTAVENI_AKTUALIZACE: appState = STATE_NASTAVENI; subMenuIndex = 1; zobrazSubMenu("NASTAVENÍ", nastaveniItems, nastaveniCount, subMenuIndex, subScrollOffset); break;
-    case STATE_NASTAVENI_VZHLED: appState = STATE_NASTAVENI; subMenuIndex = 0; zobrazSubMenu("NASTAVENÍ", nastaveniItems, nastaveniCount, subMenuIndex, subScrollOffset); break;
+    case STATE_NASTAVENI_AKTUALIZACE: appState = STATE_NASTAVENI; subMenuIndex = 1; subScrollOffset = scrollForIdx(1); zobrazSubMenu("NASTAVENÍ", nastaveniItems, nastaveniCount, subMenuIndex, subScrollOffset); break;
+    case STATE_NASTAVENI_VZHLED: appState = STATE_NASTAVENI; subMenuIndex = 0; subScrollOffset = 0; zobrazSubMenu("NASTAVENÍ", nastaveniItems, nastaveniCount, subMenuIndex, subScrollOffset); break;
     case STATE_NASTAVENI: appState = STATE_MAIN_MENU; zobrazSubMenu("HLAVNÍ MENU", mainMenuItems, mainMenuCount, menuIndex, scrollOffset); break;
 
     default: appState = STATE_MAIN_MENU; zobrazSubMenu("HLAVNÍ MENU", mainMenuItems, mainMenuCount, menuIndex, scrollOffset); break;
@@ -2036,7 +2063,7 @@ void loop() {
           else if (subMenuIndex == 1) { currentSize = (currentSize + 1) % 4; delay(100); zobrazSubMenu("VZHLED", vzhledItems, vzhledCount, subMenuIndex, subScrollOffset); }
           else if (subMenuIndex == 2) { currentBold = (currentBold + 1) % 2; delay(100); zobrazSubMenu("VZHLED", vzhledItems, vzhledCount, subMenuIndex, subScrollOffset); }
           else if (subMenuIndex == 3) { reverseMode = !reverseMode; delay(100); zobrazSubMenu("VZHLED", vzhledItems, vzhledCount, subMenuIndex, subScrollOffset); }
-          else if (subMenuIndex == 4) { refreshMode = (refreshMode + 1) % 3; delay(100); zobrazSubMenu("VZHLED", vzhledItems, vzhledCount, subMenuIndex, subScrollOffset); }
+          else if (subMenuIndex == 4) { refreshMode = (refreshMode + 1) % 3; zobrazRefreshToast(); zobrazSubMenu("VZHLED", vzhledItems, vzhledCount, subMenuIndex, subScrollOffset); }
           break;
           
         case STATE_NASTAVENI_AKTUALIZACE:

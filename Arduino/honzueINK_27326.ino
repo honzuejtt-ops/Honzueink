@@ -31,14 +31,12 @@ const String urlBase = "https://raw.githubusercontent.com/honzuejtt-ops/Honzuein
 String urlZpravySvet = urlBase + "zpravy_svet.txt";
 String urlZpravyCR = urlBase + "zpravy_cr.txt";
 String urlTechAI = urlBase + "zpravy_tech.txt";
-String urlZpravyBulvar = urlBase + "zpravy_bulvar.txt";
 String urlPocasi = urlBase + "pocasi.txt";
 String urlKurzy = urlBase + "kurzy.txt";
 String urlHoroskop = urlBase + "horoskop.txt";
 String urlKurzyHistorie = urlBase + "kurzy_historie.txt";
 
 String stazenaDataSvet = ""; String stazenaDataCR = ""; String stazenaDataTech = "";
-String stazenaDataBulvar = "";
 String stazenaDataPocasi = ""; String stazenaDataKurzy = "";
 String stazenaDataHoroskop = ""; String stazenaDataKurzyHistorie = "";
 
@@ -220,7 +218,7 @@ void nakresliStatusBar() {
 // ===== MENU DATA =====
 const int mainMenuCount = 7; String mainMenuItems[] = { "KNIHOVNA", "AKTUALITY", "TOOLBOX", "SLOVNÍK", "GENERÁTOR", "HRY", "NASTAVENÍ" };
 const int aktualityCount = 5; String aktualityItems[] = { "Zprávy", "Světový čas", "Kurzy", "Počasí", "Horoskop" };
-const int zpravyMenuCount = 4; String zpravyMenuItems[] = { "Ze světa", "Z ČR", "Technologie a AI", "Bulvár" };
+const int zpravyMenuCount = 3; String zpravyMenuItems[] = { "Ze světa", "Z ČR", "Technologie a AI" };
 const int knihovnaCount = 3; String knihovnaItems[] = { "Zaklínač 1", "Zaklínač 2", "Zaklínač 3" };
 const int toolboxCount = 3; String toolboxItems[] = { "Dioda", "Stopky", "QR Kódy" }; bool ledState = false;
 
@@ -336,7 +334,6 @@ void ulozStazenaData() {
   ulozZpravuDoCache("svet", stazenaDataSvet);
   ulozZpravuDoCache("cr", stazenaDataCR);
   ulozZpravuDoCache("tech", stazenaDataTech);
-  ulozZpravuDoCache("bulv", stazenaDataBulvar);
   ulozZpravuDoCache("poc", stazenaDataPocasi);
   ulozZpravuDoCache("kur", stazenaDataKurzy);
   ulozZpravuDoCache("horo", stazenaDataHoroskop);
@@ -356,7 +353,6 @@ void nactiStazenaData() {
   stazenaDataSvet          = nactiSouborZFS("/svet.dat");
   stazenaDataCR            = nactiSouborZFS("/cr.dat");
   stazenaDataTech          = nactiSouborZFS("/tech.dat");
-  stazenaDataBulvar        = nactiSouborZFS("/bulv.dat");
   stazenaDataPocasi        = nactiSouborZFS("/poc.dat");
   stazenaDataKurzy         = nactiSouborZFS("/kur.dat");
   stazenaDataHoroskop      = nactiSouborZFS("/horo.dat");
@@ -910,46 +906,53 @@ void aktualizovatDataNaPozadi(bool vynuceno) {
       sharedClient.stop(); // Zavřeme případné předchozí spojení
       
       nakresliLoadScreen("Stahuji zprávy ze světa...", 15);
-      String tSvet = stahniTextZUrl("Svet", urlZpravySvet);
-      // BEZPEČNÁ KONTROLA: Přepiš jen když se stáhl validní text (delší než 20 znaků)
-      if (tSvet.length() > 20) { stazenaDataSvet = tSvet; asponNecoSeStahlo = true; }
+      {
+        String tmp = stahniTextZUrl("Svet", urlZpravySvet);
+        if (tmp.length() > 20) { ulozZpravuDoCache("svet", tmp); asponNecoSeStahlo = true; }
+      }
       
       nakresliLoadScreen("Stahuji zprávy z ČR...", 28);
-      String tCR = stahniTextZUrl("CR", urlZpravyCR);
-      if (tCR.length() > 20) { stazenaDataCR = tCR; asponNecoSeStahlo = true; }
+      {
+        String tmp = stahniTextZUrl("CR", urlZpravyCR);
+        if (tmp.length() > 20) { ulozZpravuDoCache("cr", tmp); asponNecoSeStahlo = true; }
+      }
       
       nakresliLoadScreen("Stahuji Tech a AI...", 42);
-      String tTech = stahniTextZUrl("Tech", urlTechAI);
-      if (tTech.length() > 20) { stazenaDataTech = tTech; asponNecoSeStahlo = true; }
+      {
+        String tmp = stahniTextZUrl("Tech", urlTechAI);
+        if (tmp.length() > 20) { ulozZpravuDoCache("tech", tmp); asponNecoSeStahlo = true; }
+      }
       
       nakresliLoadScreen("Stahuji Počasí...", 55);
-      String tPoc = stahniTextZUrl("Pocasi", urlPocasi);
-      if (tPoc.length() > 20) { stazenaDataPocasi = tPoc; asponNecoSeStahlo = true; }
+      {
+        String tmp = stahniTextZUrl("Pocasi", urlPocasi);
+        if (tmp.length() > 20) { ulozZpravuDoCache("poc", tmp); asponNecoSeStahlo = true; }
+      }
       
       nakresliLoadScreen("Stahuji Kurzy...", 68);
-      String tKur = stahniTextZUrl("Kurzy", urlKurzy);
-      if (tKur.length() > 10) { stazenaDataKurzy = tKur; asponNecoSeStahlo = true; }
+      {
+        String tmp = stahniTextZUrl("Kurzy", urlKurzy);
+        if (tmp.length() > 10) { ulozZpravuDoCache("kur", tmp); asponNecoSeStahlo = true; }
+      }
 
       nakresliLoadScreen("Stahuji Horoskop...", 80);
-      String tHoro = stahniTextZUrl("Horoskop", urlHoroskop);
-      if (tHoro.length() > 20) { stazenaDataHoroskop = tHoro; asponNecoSeStahlo = true; }
+      {
+        String tmp = stahniTextZUrl("Horoskop", urlHoroskop);
+        if (tmp.length() > 20) { ulozZpravuDoCache("horo", tmp); asponNecoSeStahlo = true; }
+      }
 
       nakresliLoadScreen("Stahuji hist. kurzů...", 88);
-      String tKHist = stahniTextZUrl("KurzyHist", urlKurzyHistorie);
-      if (tKHist.length() > 10) { stazenaDataKurzyHistorie = tKHist; asponNecoSeStahlo = true; }
-
-      nakresliLoadScreen("Stahuji Bulvár...", 94);
-      String tBulvar = stahniTextZUrl("Bulvar", urlZpravyBulvar);
-      if (tBulvar.length() > 20) { stazenaDataBulvar = tBulvar; asponNecoSeStahlo = true; }
+      {
+        String tmp = stahniTextZUrl("KurzyHist", urlKurzyHistorie);
+        if (tmp.length() > 10) { ulozZpravuDoCache("khist", tmp); asponNecoSeStahlo = true; }
+      }
       
       // Uklidíme sdílený klient po dokončení všech stahování
       sharedClient.stop();
       sharedClientInitialized = false;
       if (asponNecoSeStahlo) {
-        parsujPocasi(stazenaDataPocasi);
-        parsujKurzy(stazenaDataKurzy);
+        nactiStazenaData(); // Načte z LittleFS zpět do RAM jen to co potřebujeme
         rtc_posledniAktualizace = time(NULL); 
-        ulozStazenaData(); // Uložíme je do paměti, kterou nespálí Deep sleep
       }
       
       nakresliLoadScreen(asponNecoSeStahlo ? "HOTOVO A ULOŽENO!" : "Stažení selhalo!", 100);
@@ -1917,7 +1920,7 @@ void loop() {
 
         case STATE_ZPRAVY_MENU:
           appState = STATE_ZPRAVY_SEZNAM; clanekMenuIndex = 0;
-          if (subMenuIndex == 0) parsujZpravy(stazenaDataSvet); else if (subMenuIndex == 1) parsujZpravy(stazenaDataCR); else if (subMenuIndex == 2) parsujZpravy(stazenaDataTech); else if (subMenuIndex == 3) parsujZpravy(stazenaDataBulvar);
+          if (subMenuIndex == 0) parsujZpravy(stazenaDataSvet); else if (subMenuIndex == 1) parsujZpravy(stazenaDataCR); else if (subMenuIndex == 2) parsujZpravy(stazenaDataTech);
           zobrazSeznamZprav();
           break;
 

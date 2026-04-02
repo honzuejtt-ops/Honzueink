@@ -158,8 +158,7 @@ int kvizKatIdx = 0; int kvizObtIdx = 0; int kvizKatScrollOffset = 0; int grafMen
 // ===== BATERIE A STATUS =====
 float getBatteryVoltage() {
   // Zapnout Vext pro napájení bateriového děliče na Heltec deskách
-  pinMode(Vext, OUTPUT);
-  digitalWrite(Vext, LOW);  // LOW = zapnuto na Heltec deskách
+  digitalWrite(Vext, LOW);  // LOW = zapnuto na Heltec deskách (pinMode nastaven v setup())
   delay(10);  // Krátká pauza pro stabilizaci
 
   // Průměr z 16 čtení pro stabilitu

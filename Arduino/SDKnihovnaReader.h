@@ -30,8 +30,10 @@
 
 // -------------------------------------------------------------------
 // spocitejRadky()
-// Spočítá počet řádků v souboru na SD kartě.
+// Spočítá počet řádků v souboru na SD kartě (počítá znaky '\n').
 // Vrátí 0 pokud soubor neexistuje.
+// Poznámka: soubory zapsané funkcemi exportXxxNaSD() vždy končí '\n',
+//           takže výsledek odpovídá počtu záznamů.
 // -------------------------------------------------------------------
 int spocitejRadky(const char* cesta) {
   File f = SD.open(cesta);
@@ -41,7 +43,6 @@ int spocitejRadky(const char* cesta) {
   while (f.available()) {
     if (f.read() == '\n') pocet++;
   }
-  // Pokud soubor nekončí '\n', ale má obsah, poslední řádek přičteme také
   f.close();
   return pocet;
 }
@@ -147,14 +148,20 @@ bool pripravSD() {
   // První spuštění — vytvoříme celou adresářovou strukturu
   Serial.println("SD: první spuštění, vytváříme strukturu /eindata/ ...");
 
-  if (!_vytvorSlozku(EINDATA_ROOT))           return false;
-  if (!_vytvorSlozku("/eindata/slovnik"))      return false;
-  if (!_vytvorSlozku("/eindata/generator"))    return false;
-  if (!_vytvorSlozku("/eindata/gamebook"))     return false;
-  if (!_vytvorSlozku("/eindata/knihy"))        return false;
-  if (!_vytvorSlozku("/eindata/fraze"))        return false;
-  if (!_vytvorSlozku("/eindata/kviz"))         return false;
-  if (!_vytvorSlozku("/eindata/hry"))          return false;
+  const char* slozky[] = {
+    EINDATA_ROOT,
+    "/eindata/slovnik",
+    "/eindata/generator",
+    "/eindata/gamebook",
+    "/eindata/knihy",
+    "/eindata/fraze",
+    "/eindata/kviz",
+    "/eindata/hry"
+  };
+  const int pocetSlozek = sizeof(slozky) / sizeof(slozky[0]);
+  for (int i = 0; i < pocetSlozek; i++) {
+    if (!_vytvorSlozku(slozky[i])) return false;
+  }
 
   // Export dat z PROGMEM headerů do souborů na SD kartě
   Serial.println("SD: exportujeme data z paměti na SD kartu ...");

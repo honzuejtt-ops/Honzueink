@@ -21,6 +21,10 @@
 #include "fraze.h"
 #include "HryKviz.h" 
 #include "HryWyr.h"  
+#include "SDKnihovnaReader.h"
+
+// ===== SD KARTA — STAV =====
+bool sdReady = false; // true pokud SD karta funguje a /eindata/ je připravena
 
 // ===== WIFI A INTERNET =====
 const char* ssid1 = "Barhon";
@@ -1889,6 +1893,8 @@ void setup() {
 
   // SD karta: detekce a zobrazení stavu (stiskni tlačítko pro pokračování)
   zobrazSDInfo();
+  // Připrav SD kartu — při prvním spuštění vytvoří strukturu a exportuje data z PROGMEM
+  sdReady = pripravSD();
   
   nactiPoziceKnih(); gbNode = nactiGBPozici();
   

@@ -4,11 +4,11 @@ from datetime import datetime, timedelta
 from bs4 import BeautifulSoup
 import json
 import trafilatura
+import re
 
-# --- FUNKCE PRO VYTĚŽENÍ TEXTU PŘÍMO Z ČLÁNKU ---
+# --- FUNKCE PRO VYTĚŽENÍ TEXTU PŘÍMO Z ČLÁNKU (Trafilatura) ---
 def stahni_text_clanku(url, perex):
     try:
-        # Trafilatura umí stránku stáhnout i chytře najít hlavní článek
         stazeno = trafilatura.fetch_url(url)
         obsah = trafilatura.extract(stazeno, include_comments=False, include_tables=False)
         
@@ -55,7 +55,49 @@ def stahni_zpravy(rss_url, limit=15):
         return vysledny_text
     except Exception as e: return f"|T|Chyba|D||P|Něco se pokazilo.|X|{e}|E|"
 
-# --- FUNKCE PRO POČASÍ (Obohaceno o Východ a Západ slunce) ---
+# --- FUNKCE PRO WEBY BEZ RSS (Refresher, Antiyoutuber atd.) ---
+def stahni_bez_rss(zdroj_url, limit=5):
+    hlavicky = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    }
+    try:
+        odpoved = requests.get(zdroj_url, headers=hlavicky, timeout=10)
+        soup = BeautifulSoup(odpoved.content, 'html.parser')
+        
+        nalezeno = []
+        for a_tag in soup.find_all('a', href=True):
+            odkaz = a_tag['href']
+            titulek = a_tag.get_text().replace('\n', ' ').strip()
+            titulek = re.sub(r'\s+', ' ', titulek)
+            
+            # Filtry proti nesmyslům na hlavní straně
+            if odkaz in ['/', '#', zdroj_url, zdroj_url + '/']:
+                continue
+            if "Hlas moderní generace" in titulek or "Zprávy ze světa" in titulek:
+                continue
+                
+            if len(titulek) > 25:
+                if odkaz.startswith('/'):
+                    odkaz = zdroj_url.rstrip('/') + odkaz
+                elif not odkaz.startswith('http'):
+                    continue
+                    
+                if not any(o['url'] == odkaz for o in nalezeno):
+                    nalezeno.append({"url": odkaz, "titulek": titulek})
+                    
+        vysledny_text = ""
+        if not nalezeno:
+            return f"|T|Žádné články z webu|D||P|Nebyly nalezeny odkazy.|X||E|"
+            
+        for clanek in nalezeno[:limit]:
+            text_clanku = stahni_text_clanku(clanek['url'], "")
+            vysledny_text += f"|T|{clanek['titulek']}|D|Dnes|P|Článek stažen přímo z webu...|X|{text_clanku}|E|"
+            
+        return vysledny_text
+    except Exception as e:
+        return f"|T|Chyba stahování|D||P||X|{e}|E|"
+
+# --- FUNKCE PRO POČASÍ ---
 def stahni_pocasi():
     url = "https://api.open-meteo.com/v1/forecast?latitude=50.088&longitude=14.4208&daily=weathercode,temperature_2m_max,temperature_2m_min,precipitation_sum,windspeed_10m_max,sunrise,sunset&timezone=Europe/Berlin"
     try:
@@ -82,7 +124,7 @@ def stahni_pocasi():
         return res
     except Exception as e: return f"Chyba pocasi: {e}"
 
-# --- FUNKCE PRO KURZY (Vícestupňové stahování BTC — CoinGecko) ---
+# --- FUNKCE PRO KURZY ---
 def stahni_kurzy():
     try:
         res_cnb = requests.get("https://www.cnb.cz/cs/financni-trhy/devizovy-trh/kurzy-devizoveho-trhu/kurzy-devizoveho-trhu/denni_kurz.txt", timeout=10)
@@ -91,7 +133,6 @@ def stahni_kurzy():
             if "|USD|" in line: usd_rate = float(line.split('|')[-1].replace(',', '.'))
             if "|EUR|" in line: eur_rate = line.split('|')[-1].strip()
 
-        # Primární: CoinGecko (zdarma, bez API klíče)
         btc_str = "N/A"
         try:
             btc_data = requests.get("https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd", timeout=8).json()
@@ -120,7 +161,7 @@ def stahni_kurzy():
         return f"{eur_rate}|{usd_rate:.2f}|{btc_str}|{gold_str}|{silver_str}"
     except Exception: return "Chyba|Chyba|Chyba|Chyba|Chyba"
 
-# --- FUNKCE PRO HISTORII KURZŮ (30 dní) ---
+# --- FUNKCE PRO HISTORII KURZŮ ---
 def stahni_kurzy_historie():
     try:
         res_cnb = requests.get("https://www.cnb.cz/cs/financni-trhy/devizovy-trh/kurzy-devizoveho-trhu/kurzy-devizoveho-trhu/denni_kurz.txt", timeout=10)
@@ -132,7 +173,6 @@ def stahni_kurzy_historie():
 
     result = ""
 
-    # EUR/CZK – 30 dní z ECB
     try:
         ecb_url = "https://data-api.ecb.europa.eu/service/data/EXR/D.CZK.EUR.SP00.A?lastNObservations=30&format=jsondata"
         ecb_data = requests.get(ecb_url, timeout=10).json()
@@ -142,14 +182,12 @@ def stahni_kurzy_historie():
     except Exception:
         result += "EUR|\n"
 
-    # USD/CZK – aproximace (aktuální kurz)
     try:
         usd_vals = [round(usd_rate + (i - 15) * 0.02, 2) for i in range(30)]
         result += "USD|" + ",".join(f"{v:.2f}" for v in usd_vals) + "\n"
     except Exception:
         result += "USD|\n"
 
-    # BTC – CoinGecko 30 dní
     try:
         btc_hist = requests.get(
             "https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=30&interval=daily",
@@ -159,7 +197,6 @@ def stahni_kurzy_historie():
     except Exception:
         result += "BTC|\n"
 
-    # Zlato – Yahoo Finance
     try:
         h = {"User-Agent": "Mozilla/5.0"}
         gold_data = requests.get("https://query2.finance.yahoo.com/v8/finance/chart/GC=F?interval=1d&range=1mo", headers=h, timeout=8).json()
@@ -169,7 +206,6 @@ def stahni_kurzy_historie():
     except Exception:
         result += "ZLATO|\n"
 
-    # Stříbro – Yahoo Finance
     try:
         h = {"User-Agent": "Mozilla/5.0"}
         silver_data = requests.get("https://query2.finance.yahoo.com/v8/finance/chart/SI=F?interval=1d&range=1mo", headers=h, timeout=8).json()
@@ -181,7 +217,7 @@ def stahni_kurzy_historie():
 
     return result
 
-# --- FUNKCE PRO HOROSKOPY (scraping z webu) ---
+# --- FUNKCE PRO HOROSKOPY ---
 def stahni_horoskopy():
     znameni_url = ["beran","byk","blizenci","rak","lev","panna","vahy","stir","strelec","kozoroh","vodnar","ryby"]
     nazvy_cz = ["Beran","Býk","Blíženci","Rak","Lev","Panna","Váhy","Štír","Střelec","Kozoroh","Vodnář","Ryby"]
@@ -189,12 +225,10 @@ def stahni_horoskopy():
     res = ""
     for i, znameni in enumerate(znameni_url):
         text = None
-        # Pokus 1: snar.cz
         try:
             url = f"https://www.snar.cz/horoskopy/{znameni}.htm"
             resp = requests.get(url, headers=hlavicky, timeout=10)
             soup = BeautifulSoup(resp.content, 'html.parser')
-            # Hledáme denní horoskop v textu stránky
             odstavce = soup.find_all('p')
             for p in odstavce:
                 t = p.get_text().strip()
@@ -203,7 +237,6 @@ def stahni_horoskopy():
                     break
         except Exception:
             pass
-        # Pokus 2: horoskopy.cz
         if not text:
             try:
                 url = f"https://horoskopy.cz/{znameni}"
@@ -223,15 +256,21 @@ def stahni_horoskopy():
     return res
 
 if __name__ == "__main__":
-    print("Spoustim stahovani...")
+    print("Spoustim stahovani z webu a RSS...")
+    
+    # 1. Běžné zprávy a tech
     svet_data = stahni_zpravy("https://ct24.ceskatelevize.cz/rss/svet", limit=10)
     cr_data = stahni_zpravy("https://ct24.ceskatelevize.cz/rss/domaci", limit=10)
     tech_data = stahni_zpravy("https://www.lupa.cz/rss/clanky/", limit=5)
     tech_data += stahni_zpravy("https://www.cnews.cz/feed/", limit=5)
 
+    # 2. Bulvár a weby pro mladé (uloženo dohromady)
     bulvar_data = stahni_zpravy("https://www.ahaonline.cz/rss.asp", limit=5)
     bulvar_data += stahni_zpravy("https://www.extra.cz/rss", limit=5)
+    bulvar_data += stahni_bez_rss("https://refresher.cz", limit=4)
+    bulvar_data += stahni_bez_rss("https://www.antiyoutuber.cz", limit=4)
 
+    # 3. Ukládání do souborů
     with open("zpravy_svet.txt", "w", encoding="utf-8") as f: f.write(svet_data)
     with open("zpravy_cr.txt", "w", encoding="utf-8") as f: f.write(cr_data)
     with open("zpravy_tech.txt", "w", encoding="utf-8") as f: f.write(tech_data)
@@ -241,4 +280,5 @@ if __name__ == "__main__":
     with open("kurzy.txt", "w", encoding="utf-8") as f: f.write(stahni_kurzy())
     with open("horoskop.txt", "w", encoding="utf-8") as f: f.write(stahni_horoskopy())
     with open("kurzy_historie.txt", "w", encoding="utf-8") as f: f.write(stahni_kurzy_historie())
-    print("Hotovo!")
+    
+    print("Vsechno uspesne stazeno a ulozeno!")

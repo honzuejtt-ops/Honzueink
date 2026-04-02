@@ -19,12 +19,21 @@
 #include "HryWyr.h"
 
 // -------------------------------------------------------------------
+// Interní pomocná funkce — odstraní soubor (pokud existuje) a otevře ho
+// čistě pro zápis, aby FILE_WRITE nezačínal v append módu za starými daty.
+// -------------------------------------------------------------------
+static File _sdZapisStart(const char* cesta) {
+  if (SD.exists(cesta)) SD.remove(cesta);
+  return SD.open(cesta, FILE_WRITE);
+}
+
+// -------------------------------------------------------------------
 // exportSlovnikNaSD()
 // Zapíše slovníkové páry CZ|EN do /eindata/slovnik/slovnik.txt
 // Formát: jeden záznam na řádek, odděleno znakem |
 // -------------------------------------------------------------------
 void exportSlovnikNaSD() {
-  File f = SD.open("/eindata/slovnik/slovnik.txt", FILE_WRITE);
+  File f = _sdZapisStart("/eindata/slovnik/slovnik.txt");
   if (!f) {
     Serial.println("SD export: chyba otevření slovnik.txt");
     return;
@@ -51,7 +60,7 @@ void exportGeneratorNaSD() {
   File f;
 
   // Vtipy
-  f = SD.open("/eindata/generator/vtipy.txt", FILE_WRITE);
+  f = _sdZapisStart("/eindata/generator/vtipy.txt");
   if (f) {
     for (int i = 0; i < vtipyPocet; i++) f.println(vtipy[i]);
     f.close();
@@ -63,7 +72,7 @@ void exportGeneratorNaSD() {
   }
 
   // Žalmy
-  f = SD.open("/eindata/generator/zalmy.txt", FILE_WRITE);
+  f = _sdZapisStart("/eindata/generator/zalmy.txt");
   if (f) {
     for (int i = 0; i < zalmyPocet; i++) f.println(zalmy[i]);
     f.close();
@@ -75,7 +84,7 @@ void exportGeneratorNaSD() {
   }
 
   // Citáty
-  f = SD.open("/eindata/generator/citaty.txt", FILE_WRITE);
+  f = _sdZapisStart("/eindata/generator/citaty.txt");
   if (f) {
     for (int i = 0; i < citatyPocet; i++) f.println(citaty[i]);
     f.close();
@@ -87,7 +96,7 @@ void exportGeneratorNaSD() {
   }
 
   // Fakty
-  f = SD.open("/eindata/generator/fakty.txt", FILE_WRITE);
+  f = _sdZapisStart("/eindata/generator/fakty.txt");
   if (f) {
     for (int i = 0; i < faktyPocet; i++) f.println(fakty[i]);
     f.close();
@@ -105,7 +114,7 @@ void exportGeneratorNaSD() {
 // Formát: text|volbaA|volbaB|popisA|popisB (jeden uzel na řádek)
 // -------------------------------------------------------------------
 void exportGamebookNaSD() {
-  File f = SD.open("/eindata/gamebook/gamebook.txt", FILE_WRITE);
+  File f = _sdZapisStart("/eindata/gamebook/gamebook.txt");
   if (!f) {
     Serial.println("SD export: chyba otevření gamebook.txt");
     return;
@@ -144,7 +153,7 @@ void exportKnihyNaSD() {
   const int pocetKnih = 3;
 
   for (int k = 0; k < pocetKnih; k++) {
-    File f = SD.open(soubory[k], FILE_WRITE);
+    File f = _sdZapisStart(soubory[k]);
     if (!f) {
       Serial.print("SD export: chyba knihy ");
       Serial.println(k + 1);
@@ -180,7 +189,7 @@ void exportFrazeNaSD() {
   const char* nazvy[] = { "nakup", "ubyt", "zdravi", "zabava" };
 
   for (int k = 0; k < 4; k++) {
-    File f = SD.open(soubory[k], FILE_WRITE);
+    File f = _sdZapisStart(soubory[k]);
     if (!f) {
       Serial.print("SD export: chyba fráze ");
       Serial.println(nazvy[k]);
@@ -208,7 +217,7 @@ void exportFrazeNaSD() {
 // Formát: otazka|odpoved|kategorieIdx|obtiznost (jeden záznam na řádek)
 // -------------------------------------------------------------------
 void exportKvizNaSD() {
-  File f = SD.open("/eindata/kviz/otazky.txt", FILE_WRITE);
+  File f = _sdZapisStart("/eindata/kviz/otazky.txt");
   if (!f) {
     Serial.println("SD export: chyba otevření kviz/otazky.txt");
     return;
@@ -234,7 +243,7 @@ void exportKvizNaSD() {
 // Formát: otazka|moznostA|moznostB|procento (jeden záznam na řádek)
 // -------------------------------------------------------------------
 void exportHryNaSD() {
-  File f = SD.open("/eindata/hry/wyr.txt", FILE_WRITE);
+  File f = _sdZapisStart("/eindata/hry/wyr.txt");
   if (!f) {
     Serial.println("SD export: chyba otevření hry/wyr.txt");
     return;

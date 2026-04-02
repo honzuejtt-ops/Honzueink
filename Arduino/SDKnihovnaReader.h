@@ -37,10 +37,11 @@ int spocitejRadky(const char* cesta) {
   File f = SD.open(cesta);
   if (!f) return 0;
   int pocet = 0;
+  // Počítáme znaky nového řádku přímo — bez alokace Stringu na každý řádek
   while (f.available()) {
-    f.readStringUntil('\n');
-    pocet++;
+    if (f.read() == '\n') pocet++;
   }
+  // Pokud soubor nekončí '\n', ale má obsah, poslední řádek přičteme také
   f.close();
   return pocet;
 }

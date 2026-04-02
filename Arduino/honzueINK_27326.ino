@@ -72,7 +72,8 @@ U8G2_FOR_ADAFRUIT_GFX u8g2Fonts;
 #define BTN_SELECT 21
 #define Vext 18
 #define LED_PIN 45
-#define BAT_PIN 8
+#define BAT_PIN 7      // GPIO7 = BAT_ADC na Heltec Vision Master E290
+#define ADC_CTRL 46    // GPIO46 = ADC_CTRL, povoluje bateriový dělič (HIGH = zapnuto)
 
 Preferences prefs;
 
@@ -156,33 +157,55 @@ int aktualniHraIdx = 0;
 int kvizKatIdx = 0; int kvizObtIdx = 0; int kvizKatScrollOffset = 0; int grafMenuIndex = 0; int horoskopMenuIndex = 0; int horoskopScrollPage = 0;
 
 // ===== BATERIE A STATUS =====
-float getBatteryVoltage() {
-  // Zapnout Vext pro napájení bateriového děliče na Heltec deskách
-  digitalWrite(Vext, LOW);  // LOW = zapnuto na Heltec deskách (pinMode nastaven v setup())
-  delay(10);  // Krátká pauza pro stabilizaci
+// Cache pro čtení baterie — měříme max 1× za 60 sekund (čtení trvá ~50 ms)
+static float cachedBatVoltage = -1.0;
+static unsigned long lastBatReadMs = 0;
 
-  // Průměr z 16 čtení pro stabilitu
+float getBatteryVoltage() {
+  // Vrátit cache pokud je čerstvá (< 60 s)
+  if (cachedBatVoltage >= 0.0 && millis() - lastBatReadMs < 60000UL) return cachedBatVoltage;
+
+  // Zapnout bateriový dělič přes ADC_CTRL (GPIO46, HIGH = zapnuto)
+  digitalWrite(ADC_CTRL, HIGH);
+  delay(20);  // Stabilizace napětí na děliči
+
+  // Průměr z 16 kalibrovaných čtení (analogReadMilliVolts = factory eFuse kalibrace)
   long sum = 0;
   for (int i = 0; i < 16; i++) {
-    sum += analogRead(BAT_PIN);
+    sum += analogReadMilliVolts(BAT_PIN);
     delay(2);
   }
-  int raw = sum / 16;
+  digitalWrite(ADC_CTRL, LOW);  // Vypnout dělič — úspora energie
 
-  if (raw <= 100 || raw >= 4095) return 0.0;
-  return raw * (3.3 / 4095.0) * 2.0;
+  float mvAvg = (float)sum / 16.0f;
+  if (mvAvg < 100.0f) {
+    cachedBatVoltage = 0.0f;
+  } else {
+    // Dělič R1=390kΩ, R2=100kΩ → poměr (390+100)/100 = 4.9
+    cachedBatVoltage = (mvAvg / 1000.0f) * 4.9f;
+  }
+  lastBatReadMs = millis();
+  return cachedBatVoltage;
 }
 
-int getBatteryPercentage() { 
+int getBatteryPercentage() {
+  static int lastPct = -2;  // -2 = neinicializováno
   float v = getBatteryVoltage();
-  if (v <= 0.1) return -1;  // Indikace "neznámé" (baterie nepřipojena / neplatné čtení)
-  if (v >= 4.20) return 100;
-  if (v <= 3.20) return 0;
+  if (v <= 0.1f) { lastPct = -1; return -1; }  // neznámý stav / baterie nepřipojena
+
+  int pct;
+  if (v >= 4.20f) pct = 100;
+  else if (v <= 3.20f) pct = 0;
   // Nelineární mapování pro Li-pol baterii:
-  if (v >= 4.00) return 80 + (int)((v - 4.00) / 0.20 * 20);
-  if (v >= 3.80) return 50 + (int)((v - 3.80) / 0.20 * 30);
-  if (v >= 3.60) return 20 + (int)((v - 3.60) / 0.20 * 30);
-  return (int)((v - 3.20) / 0.40 * 20);
+  else if (v >= 4.00f) pct = 80 + (int)((v - 4.00f) / 0.20f * 20);
+  else if (v >= 3.80f) pct = 50 + (int)((v - 3.80f) / 0.20f * 30);
+  else if (v >= 3.60f) pct = 20 + (int)((v - 3.60f) / 0.20f * 30);
+  else pct = (int)((v - 3.20f) / 0.40f * 20);
+
+  // Hystereze ±2 % — zabrání blikání ikony při malých výkyvech napětí
+  if (lastPct >= 0 && abs(pct - lastPct) <= 2) pct = lastPct;
+  lastPct = pct;
+  return pct;
 }
 
 void nakresliStatusBar() {
@@ -207,9 +230,15 @@ void nakresliStatusBar() {
     u8g2Fonts.setFontMode(1); u8g2Fonts.setFont(getSmallFont()); u8g2Fonts.setForegroundColor(fgColor()); u8g2Fonts.setBackgroundColor(bgColor());
     u8g2Fonts.setCursor(bx + 5, by + 9); u8g2Fonts.print("?");
   } else {
-    if (pct >= 66) bars = 3; else if (pct >= 33) bars = 2; else if (pct >= 10) bars = 1;
-    if (bars == 0) display.drawLine(bx, by, bx+bw, by+bh, fgColor());
-    else for(int i=0; i<bars; i++) display.fillRect(bx + 2 + (i*6), by + 2, 4, bh - 4, fgColor());
+    // 4 úrovně: 75%+ = 4 bary, 50%+ = 3, 25%+ = 2, 10%+ = 1, <10% = kritická (křížek)
+    if (pct >= 75) bars = 4; else if (pct >= 50) bars = 3; else if (pct >= 25) bars = 2; else if (pct >= 10) bars = 1;
+    if (bars == 0) {
+      // Kritická baterie — zobraz diagonální čáru
+      display.drawLine(bx + 1, by + 1, bx + bw - 2, by + bh - 2, fgColor());
+    } else {
+      // Každý bar: šířka 3 px, mezera 1 px → 4*(3+1)=16 px + 2 px okraj = 18 px (vejde do bw=20)
+      for (int i = 0; i < bars; i++) display.fillRect(bx + 2 + (i * 4), by + 2, 3, bh - 4, fgColor());
+    }
   }
   
   struct tm timeinfo;
@@ -1759,7 +1788,9 @@ void setup() {
   randomSeed(analogRead(0) + millis());
   pinMode(Vext, OUTPUT); digitalWrite(Vext, HIGH); delay(100);
   pinMode(LED_PIN, OUTPUT); digitalWrite(LED_PIN, LOW);
-  analogSetPinAttenuation(BAT_PIN, ADC_11db);
+  // ADC_CTRL (GPIO46): ovládá bateriový dělič — LOW = vypnuto (šetří energii)
+  pinMode(ADC_CTRL, OUTPUT); digitalWrite(ADC_CTRL, LOW);
+  analogSetPinAttenuation(BAT_PIN, ADC_ATTEN_DB_12);
 
   SPI.begin(2, -1, 1, 3); 
   display.init(); 

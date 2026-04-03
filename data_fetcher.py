@@ -2,7 +2,7 @@ import os
 import shutil
 import requests
 import xml.etree.ElementTree as ET
-from datetime import datetime, timedelta
+from datetime import datetime
 from bs4 import BeautifulSoup
 import json
 import trafilatura
@@ -31,8 +31,8 @@ def stahni_text_clanku(url, perex):
                 if slovo in obsah_maly:
                     return perex + "\n\n(Pozn: Článek je uzamčen za paywallem/předplatným)"
             
-            if len(obsah) > 4000:
-                return obsah[:4000] + "...\n(Pokracovani na webu)"
+            if len(obsah) > 6000:
+                return obsah[:6000] + "...\n(Pokracovani na webu)"
             return obsah
             
         return perex + "\n\n(Pozn: Z tohoto webu nelze obsah přímo vyčíst)"
@@ -248,6 +248,67 @@ def stahni_zpravy_multi(zdroje, celkovy_limit=10):
             pocet += novy_pocet
     return vsechny
 
+def extrahuj_titulky(text):
+    """Vrátí set titulků ze zpravodajského textu ve formátu |T|...|E|."""
+    titulky = set()
+    pos = 0
+    while True:
+        t_start = text.find("|T|", pos)
+        if t_start == -1:
+            break
+        p_start = text.find("|P|", t_start + 3)
+        if p_start == -1:
+            break
+        d_start = text.find("|D|", t_start + 3)
+        konec = d_start if (d_start != -1 and d_start < p_start) else p_start
+        titulek = text[t_start + 3:konec].strip()
+        titulky.add(titulek)
+        e_pos = text.find("|E|", konec)
+        if e_pos == -1:
+            break
+        pos = e_pos + 3
+    return titulky
+
+def extrahuj_bloky(text):
+    """Vrátí list (titulek, blok) ze zpravodajského textu."""
+    bloky = []
+    pos = 0
+    while True:
+        t_start = text.find("|T|", pos)
+        if t_start == -1:
+            break
+        e_end = text.find("|E|", t_start)
+        if e_end == -1:
+            break
+        e_end += 3
+        blok = text[t_start:e_end]
+        p_start = blok.find("|P|")
+        if p_start == -1:
+            pos = e_end
+            continue
+        d_start = blok.find("|D|")
+        konec = d_start if (d_start != -1 and d_start < p_start) else p_start
+        titulek = blok[3:konec].strip()
+        bloky.append((titulek, blok))
+        pos = e_end
+    return bloky
+
+def uloz_archiv_deduplikovane(archiv_cesta, nova_data):
+    """Připojí do archivního souboru pouze zprávy s novým titulkem."""
+    existujici_titulky = set()
+    if os.path.exists(archiv_cesta):
+        with open(archiv_cesta, 'r', encoding='utf-8') as f:
+            existujici_titulky = extrahuj_titulky(f.read())
+    nove_bloky = extrahuj_bloky(nova_data)
+    pridano = 0
+    with open(archiv_cesta, 'a', encoding='utf-8') as f:
+        for titulek, blok in nove_bloky:
+            if titulek not in existujici_titulky:
+                f.write(blok + "\n")
+                existujici_titulky.add(titulek)
+                pridano += 1
+    return pridano
+
 if __name__ == "__main__":
     print("Spoustim stahovani z webu a RSS...")
 
@@ -260,32 +321,22 @@ if __name__ == "__main__":
 
     # 1. Běžné zprávy a tech
     svet_data = stahni_zpravy_multi([
-        ("https://ct24.ceskatelevize.cz/rss/svet", 10),
-        ("https://www.novinky.cz/rss/zahranicni", 5),
-    ], celkovy_limit=10)
+        ("https://ct24.ceskatelevize.cz/rss/svet", 15),
+        ("https://www.novinky.cz/rss/zahranicni", 10),
+    ], celkovy_limit=20)
     cr_data = stahni_zpravy_multi([
-        ("https://ct24.ceskatelevize.cz/rss/domaci", 10),
-        ("https://www.novinky.cz/rss/domaci", 5),
-    ], celkovy_limit=10)
-    tech_data = stahni_zpravy("https://www.lupa.cz/rss/clanky/", limit=5)
-    tech_data += stahni_zpravy("https://www.cnews.cz/feed/", limit=5)
+        ("https://ct24.ceskatelevize.cz/rss/domaci", 15),
+        ("https://www.novinky.cz/rss/domaci", 10),
+    ], celkovy_limit=20)
+    tech_data = stahni_zpravy("https://www.lupa.cz/rss/clanky/", limit=10)
+    tech_data += stahni_zpravy("https://www.cnews.cz/feed/", limit=10)
 
     # 2. Archivace a ukládání zpráv do eindata/zpravy/aktualni/ a archiv/dnes/
     dnes = datetime.now().strftime('%Y-%m-%d')
     archiv_dnes = os.path.join(archiv_dir, dnes)
     os.makedirs(archiv_dnes, exist_ok=True)
 
-    # Archivace včerejšího dne: pokud starší aktualni/ data existují, zkopírujeme je
-    vcera = (datetime.now() - timedelta(days=1)).strftime('%Y-%m-%d')
-    archiv_vcera = os.path.join(archiv_dir, vcera)
-    os.makedirs(archiv_vcera, exist_ok=True)
-    for soubor in ['zpravy_svet.txt', 'zpravy_cr.txt', 'zpravy_tech.txt']:
-        stary = os.path.join(zpravy_dir, soubor)
-        cilovy_vcera = os.path.join(archiv_vcera, soubor)
-        if os.path.exists(stary) and not os.path.exists(cilovy_vcera):
-            shutil.copy2(stary, cilovy_vcera)
-
-    # Uložení dnešních zpráv
+    # Uložení aktuálních zpráv (přepis)
     for soubor, data in [
         ('zpravy_svet.txt', svet_data),
         ('zpravy_cr.txt',   cr_data),
@@ -293,8 +344,19 @@ if __name__ == "__main__":
     ]:
         with open(os.path.join(zpravy_dir, soubor), 'w', encoding='utf-8') as f:
             f.write(data)
-        with open(os.path.join(archiv_dnes, soubor), 'w', encoding='utf-8') as f:
-            f.write(data)
+        archiv_cesta = os.path.join(archiv_dnes, soubor)
+        pridano = uloz_archiv_deduplikovane(archiv_cesta, data)
+        print(f"  Archiv {dnes}/{soubor}: +{pridano} novych")
+
+    # Promazat archivní složky starší 7 dní
+    for slozka in os.listdir(archiv_dir):
+        try:
+            datum_slozky = datetime.strptime(slozka, '%Y-%m-%d')
+            if (datetime.now() - datum_slozky).days > 7:
+                shutil.rmtree(os.path.join(archiv_dir, slozka))
+                print(f"  Smazán starý archiv: {slozka}")
+        except ValueError:
+            pass
 
     # 3. Ukládání cache dat (počasí, kurzy, horoskopy)
     with open(os.path.join(cache_dir, 'pocasi.txt'),         'w', encoding='utf-8') as f: f.write(stahni_pocasi())

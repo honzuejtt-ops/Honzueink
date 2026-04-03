@@ -649,10 +649,74 @@ void ulozAktualniZpravuNaSD(const char* soubor, const String& data) {
   else { Serial.println("SD aktualni: nelze zapsat " + cesta); }
 }
 
-// Uloží datovanou kopii zpráv do archivu na SD kartě:
-// /eindata/zpravy/archiv/YYYY-MM-DD/{soubor}
-void archivujZpravuNaSD(const char* soubor, const String& data) {
-  if (!sdReady) return;
+// Pomocná funkce — spočítá djb2 hash ze Stringu
+uint32_t djb2Hash(const String& s) {
+  uint32_t h = 5381;
+  for (int i = 0; i < (int)s.length(); i++) h = ((h << 5) + h) + s[i];
+  return h;
+}
+
+// Načte hashe titulků z jednoho archivního souboru na SD
+int nactiHasheTitulku(const char* cesta, uint32_t* pole, int maxPole) {
+  int count = 0;
+  if (!SD.exists(cesta)) return 0;
+  File f = SD.open(cesta);
+  if (!f) return 0;
+  String buf = "";
+  while (f.available() && count < maxPole) {
+    char c = f.read();
+    buf += c;
+    int tS = buf.indexOf("|T|");
+    int pS = buf.indexOf("|P|");
+    if (tS >= 0 && pS > tS) {
+      int dS = buf.indexOf("|D|", tS + 3);
+      int konec = (dS >= 0 && dS < pS) ? dS : pS;
+      String tit = buf.substring(tS + 3, konec);
+      tit.trim();
+      pole[count++] = djb2Hash(tit);
+      int eP = buf.indexOf("|E|", konec);
+      if (eP >= 0) buf = buf.substring(eP + 3);
+      else {
+        while (f.available()) {
+          char c2 = f.read(); buf += c2;
+          if (buf.endsWith("|E|")) { buf = ""; break; }
+          if (buf.length() > 500) buf = buf.substring(buf.length() - 10);
+        }
+      }
+    }
+    if (buf.length() > 500) buf = buf.substring(buf.length() - 10);
+  }
+  f.close();
+  return count;
+}
+
+// Načte hashe ze VŠECH archivních denních složek (pro deduplikaci přes celý archiv)
+int nactiVsechnyArchivniHashe(uint32_t* pole, int maxPole) {
+  int count = 0;
+  File archDir = SD.open("/eindata/zpravy/archiv");
+  if (!archDir || !archDir.isDirectory()) { if (archDir) archDir.close(); return 0; }
+  File entry = archDir.openNextFile();
+  while (entry && count < maxPole) {
+    if (entry.isDirectory()) {
+      const char* fname = entry.name();
+      const char* lastSlash = strrchr(fname, '/');
+      if (lastSlash) fname = lastSlash + 1;
+      const char* soubory[] = { "zpravy_svet.txt", "zpravy_cr.txt", "zpravy_tech.txt" };
+      for (int s = 0; s < 3 && count < maxPole; s++) {
+        String cesta = String("/eindata/zpravy/archiv/") + fname + "/" + soubory[s];
+        count += nactiHasheTitulku(cesta.c_str(), pole + count, maxPole - count);
+      }
+    }
+    entry.close();
+    entry = archDir.openNextFile();
+  }
+  archDir.close();
+  return count;
+}
+
+// Archivuje zprávy do denní složky — připojí jen zprávy s novým titulkem (deduplikace)
+void archivujDeduplikovane(const char* soubor, const String& novaData) {
+  if (!sdReady || novaData.length() < 10) return;
   struct tm timeinfo;
   if (!getLocalTime(&timeinfo, 150)) return;
   char datumBuf[12];
@@ -660,11 +724,103 @@ void archivujZpravuNaSD(const char* soubor, const String& data) {
   if (!_zajistiSlozku("/eindata/zpravy") || !_zajistiSlozku("/eindata/zpravy/archiv")) return;
   String slozka = String("/eindata/zpravy/archiv/") + datumBuf;
   if (!_zajistiSlozku(slozka.c_str())) return;
-  String cesta = slozka + "/" + soubor;
-  if (SD.exists(cesta.c_str())) SD.remove(cesta.c_str());
-  File f = SD.open(cesta.c_str(), FILE_WRITE);
-  if (f) { f.print(data); f.close(); }
-  else { Serial.println("SD archiv: nelze zapsat " + cesta); }
+  String archivCesta = slozka + "/" + soubor;
+
+  const int MAX_HASH = 300;
+  uint32_t existHash[MAX_HASH];
+  int hashCount = nactiVsechnyArchivniHashe(existHash, MAX_HASH);
+
+  File fApp = SD.open(archivCesta.c_str(), FILE_APPEND);
+  if (!fApp) fApp = SD.open(archivCesta.c_str(), FILE_WRITE);
+  if (!fApp) return;
+
+  int pos = 0, pridano = 0;
+  while (pos < (int)novaData.length()) {
+    int tS = novaData.indexOf("|T|", pos);
+    if (tS == -1) break;
+    int eE = novaData.indexOf("|E|", tS);
+    if (eE == -1) break;
+    eE += 3;
+    int dS = novaData.indexOf("|D|", tS + 3);
+    int pS = novaData.indexOf("|P|", tS + 3);
+    if (pS == -1) { pos = eE; continue; }
+    int konecTit = (dS >= 0 && dS < pS) ? dS : pS;
+    String tit = novaData.substring(tS + 3, konecTit);
+    tit.trim();
+    uint32_t h = djb2Hash(tit);
+    bool dup = false;
+    for (int i = 0; i < hashCount; i++) { if (existHash[i] == h) { dup = true; break; } }
+    if (!dup) {
+      fApp.print(novaData.substring(tS, eE) + "\n");
+      if (hashCount < MAX_HASH) existHash[hashCount++] = h;
+      pridano++;
+    }
+    pos = eE;
+  }
+  fApp.close();
+  Serial.println("Archiv " + String(datumBuf) + "/" + String(soubor) + ": +" + String(pridano) + " novych");
+}
+
+// Rekurzivně smaže obsah složky a složku samotnou
+void smazSlozku(const char* cesta) {
+  File dir = SD.open(cesta);
+  if (!dir || !dir.isDirectory()) { if (dir) dir.close(); return; }
+  File entry = dir.openNextFile();
+  while (entry) {
+    const char* fname = entry.name();
+    const char* lastSlash = strrchr(fname, '/');
+    if (lastSlash) fname = lastSlash + 1;
+    String fullPath = String(cesta) + "/" + fname;
+    if (entry.isDirectory()) {
+      entry.close();
+      smazSlozku(fullPath.c_str());
+    } else {
+      entry.close();
+      SD.remove(fullPath.c_str());
+    }
+    entry = dir.openNextFile();
+  }
+  dir.close();
+  SD.rmdir(cesta);
+}
+
+// Smaže archivní složky starší než 7 dní
+void promazArchivStarsi7Dni() {
+  if (!sdReady) return;
+  struct tm timeinfo;
+  if (!getLocalTime(&timeinfo, 150)) return;
+  time_t ted = mktime(&timeinfo);
+  File archDir = SD.open("/eindata/zpravy/archiv");
+  if (!archDir || !archDir.isDirectory()) { if (archDir) archDir.close(); return; }
+  String keSmazani[30];
+  int smazCount = 0;
+  File entry = archDir.openNextFile();
+  while (entry && smazCount < 30) {
+    if (entry.isDirectory()) {
+      const char* fname = entry.name();
+      const char* lastSlash = strrchr(fname, '/');
+      if (lastSlash) fname = lastSlash + 1;
+      if (strlen(fname) == 10 && fname[4] == '-' && fname[7] == '-') {
+        struct tm archTm = {};
+        archTm.tm_year = atoi(fname) - 1900;
+        archTm.tm_mon  = atoi(fname + 5) - 1;
+        archTm.tm_mday = atoi(fname + 8);
+        archTm.tm_hour = 12;
+        time_t archTime = mktime(&archTm);
+        double rozdilDni = difftime(ted, archTime) / 86400.0;
+        if (rozdilDni > 7.0) {
+          keSmazani[smazCount++] = String("/eindata/zpravy/archiv/") + fname;
+        }
+      }
+    }
+    entry.close();
+    entry = archDir.openNextFile();
+  }
+  archDir.close();
+  for (int i = 0; i < smazCount; i++) {
+    Serial.println("Mazu stary archiv: " + keSmazani[i]);
+    smazSlozku(keSmazani[i].c_str());
+  }
 }
 
 // ===== DEEP SLEEP FUNKCE =====
@@ -1278,19 +1434,19 @@ void aktualizovatDataNaPozadi(bool vynuceno) {
       nakresliLoadScreen("Stahuji zprávy ze světa...", 15);
       {
         String tmp = stahniTextZUrl("Svet", urlZpravySvet);
-        if (tmp.length() > 20) { ulozZpravuDoCache("svet", tmp); ulozAktualniZpravuNaSD("zpravy_svet.txt", tmp); archivujZpravuNaSD("zpravy_svet.txt", tmp); asponNecoSeStahlo = true; }
+        if (tmp.length() > 20) { ulozZpravuDoCache("svet", tmp); ulozAktualniZpravuNaSD("zpravy_svet.txt", tmp); archivujDeduplikovane("zpravy_svet.txt", tmp); asponNecoSeStahlo = true; }
       }
       
       nakresliLoadScreen("Stahuji zprávy z ČR...", 28);
       {
         String tmp = stahniTextZUrl("CR", urlZpravyCR);
-        if (tmp.length() > 20) { ulozZpravuDoCache("cr", tmp); ulozAktualniZpravuNaSD("zpravy_cr.txt", tmp); archivujZpravuNaSD("zpravy_cr.txt", tmp); asponNecoSeStahlo = true; }
+        if (tmp.length() > 20) { ulozZpravuDoCache("cr", tmp); ulozAktualniZpravuNaSD("zpravy_cr.txt", tmp); archivujDeduplikovane("zpravy_cr.txt", tmp); asponNecoSeStahlo = true; }
       }
       
       nakresliLoadScreen("Stahuji Tech a AI...", 42);
       {
         String tmp = stahniTextZUrl("Tech", urlTechAI);
-        if (tmp.length() > 20) { ulozZpravuDoCache("tech", tmp); ulozAktualniZpravuNaSD("zpravy_tech.txt", tmp); archivujZpravuNaSD("zpravy_tech.txt", tmp); asponNecoSeStahlo = true; }
+        if (tmp.length() > 20) { ulozZpravuDoCache("tech", tmp); ulozAktualniZpravuNaSD("zpravy_tech.txt", tmp); archivujDeduplikovane("zpravy_tech.txt", tmp); asponNecoSeStahlo = true; }
       }
       
       nakresliLoadScreen("Stahuji Počasí...", 55);
@@ -1322,7 +1478,8 @@ void aktualizovatDataNaPozadi(bool vynuceno) {
       sharedClientInitialized = false;
       if (asponNecoSeStahlo) {
         nactiStazenaData(); // Načte z LittleFS zpět do RAM jen to co potřebujeme
-        rtc_posledniAktualizace = time(NULL); 
+        rtc_posledniAktualizace = time(NULL);
+        promazArchivStarsi7Dni();
       }
       
       nakresliLoadScreen(asponNecoSeStahlo ? "HOTOVO A ULOŽENO!" : "Stažení selhalo!", 100);
@@ -1636,7 +1793,7 @@ void zobrazSeznamZprav() {
 
 void zobrazText(const char* title, const char* text) {
   // Na ESP32 je PROGMEM mapovaná do adresního prostoru — strncpy funguje pro obě paměti
-  static char buf[4500]; strncpy(buf, text, sizeof(buf) - 1); buf[sizeof(buf) - 1] = '\0';
+  static char buf[6500]; strncpy(buf, text, sizeof(buf) - 1); buf[sizeof(buf) - 1] = '\0';
   int len = strlen(buf); int maxWidth = display.width() - 10;
   int lineHeight = getLineHeight(); int linesPerPage = getLinesPerPage();
   TextLine lines[200]; int lineCount = zalamejText(buf, len, lines, 200, maxWidth);
@@ -2357,11 +2514,10 @@ void setup() {
   // 1. ZKUSÍME NAČÍST DATA Z ULOŽENÉ PAMĚTI
   nactiStazenaData();
   
-  // 2. DETEKCE PROBUZENÍ Z DEEP SLEEPU
-  if (esp_sleep_get_wakeup_cause() != ESP_SLEEP_WAKEUP_EXT0) {
-    aktualizovatDataNaPozadi(true);
-  }
-  // Po probuzení z deep sleep: použijeme uložená data z cache, nestahujeme automaticky
+  // 2. Při restartu (ne deep sleep) — NEPŘIPOJOVAT se k WiFi automaticky.
+  // Pouze zkontrolovat SD složky (to už udělal pripravSD() výše).
+  // Aktualizaci si uživatel vynutí sám přes Nastavení → Aktualizace → Vynutit nyní.
+  // (Automatická periodická aktualizace v loop() zůstává funkční podle nastaveného intervalu.)
   
   zobrazSubMenu("HLAVNÍ MENU", mainMenuItems, mainMenuCount, menuIndex, scrollOffset);
 }

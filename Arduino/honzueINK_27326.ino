@@ -1261,9 +1261,12 @@ void aktualizovatDataNaPozadi(bool vynuceno) {
       }
 
       // Uvolníme globální Stringy před stahováním — šetříme RAM pro HTTP+TLS
-      stazenaDataSvet = ""; stazenaDataCR = ""; stazenaDataTech = "";
-      stazenaDataPocasi = ""; stazenaDataKurzy = "";
-      stazenaDataHoroskop = ""; stazenaDataKurzyHistorie = "";
+      // Na ESP32 Arduino: přiřazení prázdného String() uvolní interní buffer
+      { String prazdny;
+        stazenaDataSvet = prazdny; stazenaDataCR = prazdny; stazenaDataTech = prazdny;
+        stazenaDataPocasi = prazdny; stazenaDataKurzy = prazdny;
+        stazenaDataHoroskop = prazdny; stazenaDataKurzyHistorie = prazdny;
+      }
 
       bool asponNecoSeStahlo = false;
       sharedClientInitialized = false; // Reset klienta pro čerstvé spojení

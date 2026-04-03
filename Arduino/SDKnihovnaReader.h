@@ -27,6 +27,8 @@
 
 // Kořenová složka datové struktury na SD kartě
 #define EINDATA_ROOT "/eindata"
+// Markerový soubor pro detekci prvního spuštění (pokud neexistuje, exportují se PROGMEM data)
+#define SD_MARKER_FILE "/eindata/slovnik/slovnik.txt"
 
 // -------------------------------------------------------------------
 // spocitejRadky()
@@ -245,7 +247,7 @@ bool pripravSD() {
 
   // Pokud /eindata/ už měla obsah, neexportujeme PROGMEM data znovu.
   // Kontrolujeme markerový soubor — pokud chybí, je to první spuštění.
-  if (SD.exists("/eindata/slovnik/slovnik.txt")) {
+  if (SD.exists(SD_MARKER_FILE)) {
     Serial.println("SD: /eindata/ existuje, data jsou připravena");
     return true;
   }

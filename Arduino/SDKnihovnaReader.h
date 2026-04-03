@@ -150,13 +150,15 @@ bool pripravSD() {
 
   const char* slozky[] = {
     EINDATA_ROOT,
+    "/eindata/cache",
     "/eindata/slovnik",
     "/eindata/generator",
     "/eindata/gamebook",
     "/eindata/knihy",
     "/eindata/fraze",
     "/eindata/kviz",
-    "/eindata/hry"
+    "/eindata/hry",
+    "/eindata/zpravy"
   };
   const int pocetSlozek = sizeof(slozky) / sizeof(slozky[0]);
   for (int i = 0; i < pocetSlozek; i++) {

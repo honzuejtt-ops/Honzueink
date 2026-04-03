@@ -1432,13 +1432,14 @@ int stahniDoSouboru(const String& nazev, const String& url, const char* cesta, b
     WiFiClient* stream = http.getStreamPtr();
     int totalWritten = 0;
     uint8_t buf[2048];
-    int contentLen = http.getSize(); // -1 pro chunked transfer
+    // contentLen: kladné = známá velikost, -1 = chunked (ukončí http.connected())
+    int contentLen = http.getSize();
     unsigned long lastData = millis();
 
     while (http.connected() && (contentLen > 0 || contentLen == -1)) {
       size_t avail = stream->available();
       if (avail) {
-        int toRead = ((int)avail < (int)sizeof(buf)) ? (int)avail : (int)sizeof(buf);
+        size_t toRead = (avail < sizeof(buf)) ? avail : sizeof(buf);
         int bytesRead = stream->readBytes(buf, toRead);
         if (bytesRead > 0) {
           f.write(buf, bytesRead);
@@ -1455,6 +1456,7 @@ int stahniDoSouboru(const String& nazev, const String& url, const char* cesta, b
     f.close();
     http.end();
 
+    // Práh > 20 B odpovídá originálnímu kódu (tmp.length() > 20 u stahniTextZUrl)
     if (totalWritten > 20) {
       Serial.println("Staženo " + nazev + ": " + String(totalWritten) + " B");
       return totalWritten;

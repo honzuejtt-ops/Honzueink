@@ -411,8 +411,7 @@ void nakresliLoadScreen(String text, int progress) {
 }
 
 // ===== UKLÁDÁNÍ DAT DO PAMĚTI (PŘEŽIJE DEEP SLEEP) =====
-void zobrazSDInfo() {
-  bool cteckaOk = SD.begin(SD_CS_PIN);
+void zobrazSDInfo(bool cteckaOk) {
   uint8_t cardType = cteckaOk ? SD.cardType() : CARD_NONE;
 
   Serial.println("=== SD KARTA ===");
@@ -488,23 +487,40 @@ void zobrazSDInfo() {
 }
 
 // ===== UKLÁDÁNÍ DAT DO PAMĚTI (PŘEŽIJE DEEP SLEEP) =====
-void ulozZpravuDoCache(String klic, String data) {
-  if (data.length() > 20000) {
-    int lastE = data.substring(0, 20000).lastIndexOf("|E|");
-    if (lastE > 0) data = data.substring(0, lastE + 3);
-    else data = data.substring(0, 20000);
+void ulozZpravuDoCache(const String& klic, const String& data) {
+  // Ořízne data na max 20000 znaků (hledá konec poslední zprávy |E|)
+  int maxLen = data.length();
+  if (maxLen > 20000) {
+    int lastE = data.lastIndexOf("|E|", 20000);
+    maxLen = (lastE > 0) ? lastE + 3 : 20000;
   }
   if (sdReady) {
     // SD je primární úložiště — přepíšeme soubor čistě
     String path = "/eindata/cache/" + klic + ".dat";
     if (SD.exists(path.c_str())) SD.remove(path.c_str());
     File f = SD.open(path.c_str(), FILE_WRITE);
-    if (f) { f.print(data); f.close(); return; }
+    if (f) {
+      // Zapisujeme po částech místo celého Stringu — šetříme RAM
+      const int CHUNK = 2048;
+      for (int pos = 0; pos < maxLen; pos += CHUNK) {
+        int len = min(CHUNK, maxLen - pos);
+        f.write((const uint8_t*)data.c_str() + pos, len);
+      }
+      f.close();
+      return;
+    }
   }
   // Fallback: LittleFS (pokud SD není dostupná)
   String path = "/" + klic + ".dat";
   File f = LittleFS.open(path, "w");
-  if (f) { f.print(data); f.close(); }
+  if (f) {
+    const int CHUNK = 2048;
+    for (int pos = 0; pos < maxLen; pos += CHUNK) {
+      int len = min(CHUNK, maxLen - pos);
+      f.write((const uint8_t*)data.c_str() + pos, len);
+    }
+    f.close();
+  }
   else { Serial.println("LittleFS: nelze zapsat " + path); }
 }
 
@@ -610,13 +626,22 @@ void nactiSeznamKnih() {
   }
 }
 
+// Interní pomocná funkce — zajistí existenci složky, vrátí false při chybě
+static bool _zajistiSlozku(const char* cesta) {
+  if (SD.exists(cesta)) return true;
+  if (!SD.mkdir(cesta)) {
+    Serial.print("SD: chyba mkdir "); Serial.println(cesta);
+    return false;
+  }
+  return true;
+}
+
 // ===== ARCHIVACE A UKLÁDÁNÍ ZPRÁV NA SD KARTU =====
 // Uloží stažená data zpráv do aktuální složky na SD:
 // /eindata/zpravy/aktualni/{soubor}
 void ulozAktualniZpravuNaSD(const char* soubor, const String& data) {
   if (!sdReady) return;
-  if (!SD.exists("/eindata/zpravy")) SD.mkdir("/eindata/zpravy");
-  if (!SD.exists("/eindata/zpravy/aktualni")) SD.mkdir("/eindata/zpravy/aktualni");
+  if (!_zajistiSlozku("/eindata/zpravy") || !_zajistiSlozku("/eindata/zpravy/aktualni")) return;
   String cesta = String("/eindata/zpravy/aktualni/") + soubor;
   if (SD.exists(cesta.c_str())) SD.remove(cesta.c_str());
   File f = SD.open(cesta.c_str(), FILE_WRITE);
@@ -632,10 +657,9 @@ void archivujZpravuNaSD(const char* soubor, const String& data) {
   if (!getLocalTime(&timeinfo, 150)) return;
   char datumBuf[12];
   sprintf(datumBuf, "%04d-%02d-%02d", timeinfo.tm_year + 1900, timeinfo.tm_mon + 1, timeinfo.tm_mday);
-  if (!SD.exists("/eindata/zpravy")) SD.mkdir("/eindata/zpravy");
-  if (!SD.exists("/eindata/zpravy/archiv")) SD.mkdir("/eindata/zpravy/archiv");
+  if (!_zajistiSlozku("/eindata/zpravy") || !_zajistiSlozku("/eindata/zpravy/archiv")) return;
   String slozka = String("/eindata/zpravy/archiv/") + datumBuf;
-  if (!SD.exists(slozka.c_str())) SD.mkdir(slozka.c_str());
+  if (!_zajistiSlozku(slozka.c_str())) return;
   String cesta = slozka + "/" + soubor;
   if (SD.exists(cesta.c_str())) SD.remove(cesta.c_str());
   File f = SD.open(cesta.c_str(), FILE_WRITE);
@@ -1174,7 +1198,7 @@ bool pripojWiFi() {
   return false;
 }
 
-String stahniTextZUrl(String nazev, String url) {
+String stahniTextZUrl(const String& nazev, const String& url) {
   initSharedClient();
   HTTPClient http;
   http.setFollowRedirects(HTTPC_STRICT_FOLLOW_REDIRECTS);
@@ -1236,9 +1260,17 @@ void aktualizovatDataNaPozadi(bool vynuceno) {
         if (getLocalTime(&timeinfo, 5000)) casSynchronizovan = true;
       }
 
+      // Uvolníme globální Stringy před stahováním — šetříme RAM pro HTTP+TLS
+      stazenaDataSvet = ""; stazenaDataCR = ""; stazenaDataTech = "";
+      stazenaDataPocasi = ""; stazenaDataKurzy = "";
+      stazenaDataHoroskop = ""; stazenaDataKurzyHistorie = "";
+
       bool asponNecoSeStahlo = false;
       sharedClientInitialized = false; // Reset klienta pro čerstvé spojení
       sharedClient.stop(); // Zavřeme případné předchozí spojení
+      
+      Serial.print("Volná halda před stahováním: ");
+      Serial.println(ESP.getFreeHeap());
       
       nakresliLoadScreen("Stahuji zprávy ze světa...", 15);
       {
@@ -2304,10 +2336,10 @@ void setup() {
   u8g2Fonts.setFontMode(1);
   pinMode(BTN_DOWN, INPUT_PULLUP); pinMode(BTN_SELECT, INPUT_PULLUP);
 
-  // SD karta: detekce a zobrazení stavu (stiskni tlačítko pro pokračování)
-  zobrazSDInfo();
-  // Připrav SD kartu — při prvním spuštění vytvoří strukturu a exportuje data z PROGMEM
+  // SD karta: inicializace a zobrazení stavu (stiskni tlačítko pro pokračování)
+  // pripravSD() volá SD.begin() a ověří/vytvoří adresářovou strukturu
   sdReady = pripravSD();
+  zobrazSDInfo(sdReady);
   
   nactiPoziceKnih(); gbNode = nactiGBPozici();
   

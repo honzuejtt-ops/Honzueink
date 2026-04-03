@@ -193,35 +193,12 @@ static bool _vytvorSlozku(const char* cesta) {
 }
 
 // -------------------------------------------------------------------
-// pripravSD()
-// Hlavní funkce volaná v setup() hned po inicializaci SPI.
-//
-// Postup:
-//   1. Inicializuje SD kartu
-//   2. Zkontroluje existenci složky /eindata/
-//   3. Pokud neexistuje — vytvoří celou adresářovou strukturu
-//      a naplní soubory daty z PROGMEM headerů
-//   4. Vrátí true pokud vše proběhlo v pořádku, false při chybě
-//
-// Pokud /eindata/ již existuje, funkce skončí rychle bez zápisu.
+// zajistiSDSlozky()
+// Ověří a vytvoří všechny potřebné podsložky /eindata/.
+// Volá se vždy (nejen při prvním spuštění), aby opravila chybějící složky.
+// Vrátí true pokud je vše OK.
 // -------------------------------------------------------------------
-bool pripravSD() {
-  // Inicializace SD karty (SPI je již spuštěno v setup())
-  if (!SD.begin(SD_CS_PIN)) {
-    Serial.println("SD: karta nenalezena nebo chyba inicializace");
-    return false;
-  }
-  Serial.println("SD: karta OK");
-
-  // Pokud /eindata/ již existuje, data jsou připravena — není třeba nic dělat
-  if (SD.exists(EINDATA_ROOT)) {
-    Serial.println("SD: /eindata/ existuje, data jsou připravena");
-    return true;
-  }
-
-  // První spuštění — vytvoříme celou adresářovou strukturu
-  Serial.println("SD: první spuštění, vytváříme strukturu /eindata/ ...");
-
+static bool zajistiSDSlozky() {
   const char* slozky[] = {
     EINDATA_ROOT,
     "/eindata/cache",
@@ -240,9 +217,41 @@ bool pripravSD() {
   for (int i = 0; i < pocetSlozek; i++) {
     if (!_vytvorSlozku(slozky[i])) return false;
   }
+  return true;
+}
 
-  // Export dat z PROGMEM headerů do souborů na SD kartě
-  Serial.println("SD: exportujeme data z paměti na SD kartu ...");
+// -------------------------------------------------------------------
+// pripravSD()
+// Hlavní funkce volaná v setup() hned po inicializaci SPI.
+//
+// Postup:
+//   1. Inicializuje SD kartu
+//   2. Vždy ověří a vytvoří chybějící podsložky /eindata/
+//   3. Pokud chybí markerový soubor (slovnik.txt) — naplní SD
+//      daty z PROGMEM headerů (první spuštění)
+//   4. Vrátí true pokud vše proběhlo v pořádku, false při chybě
+// -------------------------------------------------------------------
+bool pripravSD() {
+  // Inicializace SD karty (SPI je již spuštěno v setup())
+  if (!SD.begin(SD_CS_PIN)) {
+    Serial.println("SD: karta nenalezena nebo chyba inicializace");
+    return false;
+  }
+  Serial.println("SD: karta OK");
+
+  // Vždy ověříme a vytvoříme chybějící podsložky
+  // (_vytvorSlozku přeskočí existující, vytvoří chybějící)
+  if (!zajistiSDSlozky()) return false;
+
+  // Pokud /eindata/ už měla obsah, neexportujeme PROGMEM data znovu.
+  // Kontrolujeme markerový soubor — pokud chybí, je to první spuštění.
+  if (SD.exists("/eindata/slovnik/slovnik.txt")) {
+    Serial.println("SD: /eindata/ existuje, data jsou připravena");
+    return true;
+  }
+
+  // První spuštění — naplníme soubory daty z PROGMEM headerů
+  Serial.println("SD: první spuštění, exportujeme data z paměti na SD kartu ...");
   exportSlovnikNaSD();
   exportGeneratorNaSD();
   exportGamebookNaSD();

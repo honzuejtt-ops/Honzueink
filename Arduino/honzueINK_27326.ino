@@ -175,6 +175,20 @@ struct SdEntry { char name[30]; bool isDir; uint32_t size; };
 SdEntry sdEntries[50];
 int sdEntryCount = 0;
 
+// ===== SD KVÍZ — aktuální otázka načtená ze SD =====
+String sdKvizOtazka = "", sdKvizOdpoved = "", sdKvizKatLabel = "";
+bool kvizZSD = false;
+
+// ===== SD WYR — aktuální otázka načtená ze SD =====
+String sdWyrOtazka = "", sdWyrMozA = "", sdWyrMozB = "";
+int sdWyrProcenta = 50;
+bool wyrZSD = false;
+
+// ===== SD GAMEBOOK — aktuálně načtený uzel ze SD =====
+String gbTextSD = "", gbPopisASD = "", gbPopisBSD = "";
+int gbVolbaASD = -1, gbVolbaBSD = -1;
+bool gbZSD = false;
+
 // ===== BATERIE A STATUS =====
 // Cache pro čtení baterie — měříme max 1× za 60 sekund (čtení trvá ~50 ms)
 static float cachedBatVoltage = -1.0;
@@ -460,6 +474,14 @@ void ulozZpravuDoCache(String klic, String data) {
     if (lastE > 0) data = data.substring(0, lastE + 3);
     else data = data.substring(0, 20000);
   }
+  if (sdReady) {
+    // SD je primární úložiště — přepíšeme soubor čistě
+    String path = "/eindata/cache/" + klic + ".dat";
+    if (SD.exists(path.c_str())) SD.remove(path.c_str());
+    File f = SD.open(path.c_str(), FILE_WRITE);
+    if (f) { f.print(data); f.close(); return; }
+  }
+  // Fallback: LittleFS (pokud SD není dostupná)
   String path = "/" + klic + ".dat";
   File f = LittleFS.open(path, "w");
   if (f) { f.print(data); f.close(); }
@@ -485,14 +507,25 @@ String nactiSouborZFS(const char* path) {
   return s;
 }
 
+// Načte datový soubor cache — SD primárně, LittleFS jako záloha
+String nactiSouborZCache(const char* klic) {
+  if (sdReady) {
+    String sdPath = String("/eindata/cache/") + klic + ".dat";
+    File f = SD.open(sdPath.c_str());
+    if (f) { String s = f.readString(); f.close(); if (s.length() > 0) return s; }
+  }
+  String lfPath = String("/") + klic + ".dat";
+  return nactiSouborZFS(lfPath.c_str());
+}
+
 void nactiStazenaData() {
-  stazenaDataSvet          = nactiSouborZFS("/svet.dat");
-  stazenaDataCR            = nactiSouborZFS("/cr.dat");
-  stazenaDataTech          = nactiSouborZFS("/tech.dat");
-  stazenaDataPocasi        = nactiSouborZFS("/poc.dat");
-  stazenaDataKurzy         = nactiSouborZFS("/kur.dat");
-  stazenaDataHoroskop      = nactiSouborZFS("/horo.dat");
-  stazenaDataKurzyHistorie = nactiSouborZFS("/khist.dat");
+  stazenaDataSvet          = nactiSouborZCache("svet");
+  stazenaDataCR            = nactiSouborZCache("cr");
+  stazenaDataTech          = nactiSouborZCache("tech");
+  stazenaDataPocasi        = nactiSouborZCache("poc");
+  stazenaDataKurzy         = nactiSouborZCache("kur");
+  stazenaDataHoroskop      = nactiSouborZCache("horo");
+  stazenaDataKurzyHistorie = nactiSouborZCache("khist");
 
   if (stazenaDataPocasi    != "") parsujPocasi(stazenaDataPocasi);
   if (stazenaDataKurzy     != "") parsujKurzy(stazenaDataKurzy);
@@ -510,6 +543,17 @@ static String _nahodnyTextGeneratoru(const char* sdCesta, const char** pole, int
     if (s.length() > 0) return s;
   }
   return String(pole[random(pocet)]);
+}
+
+// ===== KNIHY — NAČTENÍ S FALLBACKEM NA SD =====
+// Čte obsah knihy ze souboru na SD kartě; fallback na PROGMEM pole.
+static String _nactiKnihuObsah(int idx) {
+  if (sdReady) {
+    String cesta = String("/eindata/knihy/kniha_") + (idx + 1) + ".txt";
+    File f = SD.open(cesta.c_str());
+    if (f) { String s = f.readString(); f.close(); if (s.length() > 0) return s; }
+  }
+  return String(knihy[idx]);
 }
 
 // ===== ARCHIVACE ZPRÁV NA SD KARTU =====
@@ -639,12 +683,39 @@ void zobrazQR(const char* title, const char* dataStr) {
 
 // ===== ZOBRAZOVÁNÍ KVÍZU A WYR =====
 void nastaviNahodnyKvizIdx() {
-  // All-in: náhodná otázka ze všech kategorií
+  // Zkusíme načíst ze SD (reservoir sampling s filtrací kategorie/obtížnosti)
+  if (sdReady) {
+    File f = SD.open("/eindata/kviz/otazky.txt");
+    if (f) {
+      String vybrany = ""; int pocet = 0;
+      while (f.available()) {
+        String r = f.readStringUntil('\n'); r.trim();
+        if (r.length() == 0) continue;
+        int p1 = r.indexOf('|'); int p2 = r.indexOf('|', p1 + 1); int p3 = r.indexOf('|', p2 + 1);
+        if (p1 < 0 || p2 < 0 || p3 < 0) continue;
+        int kat = r.substring(p2 + 1, p3).toInt(); int obt = r.substring(p3 + 1).toInt();
+        bool match = (kvizKatIdx == 6) || (kat == kvizKatIdx && obt == kvizObtiznosti[kvizObtIdx]);
+        if (!match) continue;
+        pocet++;
+        if (random(pocet) == 0) vybrany = r;
+      }
+      f.close();
+      if (vybrany.length() > 0) {
+        int p1 = vybrany.indexOf('|'); int p2 = vybrany.indexOf('|', p1 + 1); int p3 = vybrany.indexOf('|', p2 + 1);
+        int kat = vybrany.substring(p2 + 1, p3).toInt(); int obt = vybrany.substring(p3 + 1).toInt();
+        sdKvizOtazka = vybrany.substring(0, p1);
+        sdKvizOdpoved = vybrany.substring(p1 + 1, p2);
+        sdKvizKatLabel = String(kvizKategorieNazvy[kat < kvizKategoriiCount - 1 ? kat : 0]) + " / " + String(obt);
+        kvizZSD = true; return;
+      }
+    }
+  }
+  // Fallback: PROGMEM pole
+  kvizZSD = false;
   if (kvizKatIdx == 6) {
     aktualniHraIdx = random(kvizPocet);
     return;
   }
-  // Najdeme otázky odpovídající zvolené kategorii a obtížnosti
   int matching[30]; int count = 0;
   int targetDiff = kvizObtiznosti[kvizObtIdx];
   for (int i = 0; i < kvizPocet && count < 30; i++) {
@@ -653,13 +724,12 @@ void nastaviNahodnyKvizIdx() {
     }
   }
   if (count > 0) aktualniHraIdx = matching[random(count)];
-  else aktualniHraIdx = random(kvizPocet); // Fallback na náhodnou
+  else aktualniHraIdx = random(kvizPocet);
 }
 
 void zobrazKviz() {
-  String ot = String(kvizOtazky[aktualniHraIdx]);
-  // Zobrazit kategorii a obtížnost v záhlaví
-  String katLabel = String(kvizKategorieNazvy[kvizKategoriePole[aktualniHraIdx]]) + " / " + String(kvizObtiznostPole[aktualniHraIdx]);
+  String ot = kvizZSD ? sdKvizOtazka : String(kvizOtazky[aktualniHraIdx]);
+  String katLabel = kvizZSD ? sdKvizKatLabel : (String(kvizKategorieNazvy[kvizKategoriePole[aktualniHraIdx]]) + " / " + String(kvizObtiznostPole[aktualniHraIdx]));
   display.setPartialWindow(0, 0, display.width(), display.height());
   display.firstPage();
   do {
@@ -681,7 +751,7 @@ void zobrazKviz() {
 }
 
 void zobrazKvizOdpoved() {
-  String odp = String(kvizOdpovedi[aktualniHraIdx]);
+  String odp = kvizZSD ? sdKvizOdpoved : String(kvizOdpovedi[aktualniHraIdx]);
   display.setPartialWindow(0, 0, display.width(), display.height());
   display.firstPage();
   do {
@@ -702,10 +772,38 @@ void zobrazKvizOdpoved() {
   } while (display.nextPage());
 }
 
+void nastaviNahodnyWyrZSD() {
+  if (sdReady) {
+    File f = SD.open("/eindata/hry/wyr.txt");
+    if (f) {
+      String vybrany = ""; int pocet = 0;
+      while (f.available()) {
+        String r = f.readStringUntil('\n'); r.trim();
+        if (r.length() == 0) continue;
+        pocet++;
+        if (random(pocet) == 0) vybrany = r;
+      }
+      f.close();
+      if (vybrany.length() > 0) {
+        int p1 = vybrany.indexOf('|'); int p2 = vybrany.indexOf('|', p1 + 1); int p3 = vybrany.indexOf('|', p2 + 1);
+        if (p1 >= 0 && p2 >= 0 && p3 >= 0) {
+          sdWyrOtazka = vybrany.substring(0, p1);
+          sdWyrMozA = vybrany.substring(p1 + 1, p2);
+          sdWyrMozB = vybrany.substring(p2 + 1, p3);
+          sdWyrProcenta = vybrany.substring(p3 + 1).toInt();
+          wyrZSD = true; return;
+        }
+      }
+    }
+  }
+  wyrZSD = false;
+  aktualniHraIdx = random(wyrPocet);
+}
+
 void zobrazWyr() {
-  String ot = String(wyrOtazky[aktualniHraIdx]);
-  String mozA = String(wyrMoznostiA[aktualniHraIdx]);
-  String mozB = String(wyrMoznostiB[aktualniHraIdx]);
+  String ot = wyrZSD ? sdWyrOtazka : String(wyrOtazky[aktualniHraIdx]);
+  String mozA = wyrZSD ? sdWyrMozA : String(wyrMoznostiA[aktualniHraIdx]);
+  String mozB = wyrZSD ? sdWyrMozB : String(wyrMoznostiB[aktualniHraIdx]);
   display.setPartialWindow(0, 0, display.width(), display.height());
   display.firstPage();
   do {
@@ -731,9 +829,9 @@ void zobrazWyr() {
 }
 
 void zobrazWyrVysledek() {
-  int pct = wyrProcenta[aktualniHraIdx];
-  String mozA = String(wyrMoznostiA[aktualniHraIdx]);
-  String mozB = String(wyrMoznostiB[aktualniHraIdx]);
+  int pct = wyrZSD ? sdWyrProcenta : wyrProcenta[aktualniHraIdx];
+  String mozA = wyrZSD ? sdWyrMozA : String(wyrMoznostiA[aktualniHraIdx]);
+  String mozB = wyrZSD ? sdWyrMozB : String(wyrMoznostiB[aktualniHraIdx]);
   display.setPartialWindow(0, 0, display.width(), display.height());
   display.firstPage();
   do {
@@ -1594,11 +1692,40 @@ void drawStopky(unsigned long ms, bool running) {
   } while (display.nextPage());
 }
 
+// Načte gamebook uzel ze SD souboru (jeden uzel = jeden řádek ve formátu text|volbaA|volbaB|popisA|popisB).
+void nactiGBNodeZSD(int node) {
+  if (!sdReady) { gbZSD = false; return; }
+  String r = nactiRadekZSD("/eindata/gamebook/gamebook.txt", node);
+  if (r.length() == 0) { gbZSD = false; return; }
+  // Najdeme první 4 pozice znaku '|' (text neobsahuje '|')
+  int p[4] = {-1, -1, -1, -1}; int cnt = 0;
+  for (int i = 0; i < (int)r.length() && cnt < 4; i++) {
+    if (r[i] == '|') p[cnt++] = i;
+  }
+  if (cnt < 4) { gbZSD = false; return; }
+  gbTextSD   = r.substring(0, p[0]);
+  gbVolbaASD = r.substring(p[0] + 1, p[1]).toInt();
+  gbVolbaBSD = r.substring(p[1] + 1, p[2]).toInt();
+  gbPopisASD = r.substring(p[2] + 1, p[3]);
+  gbPopisBSD = r.substring(p[3] + 1);
+  gbZSD = true;
+}
+
 void zobrazGBNode() {
-  GBNode node; memcpy_P(&node, &gamebook[gbNode], sizeof(GBNode));
-  char buf[600]; strncpy_P(buf, (const char*)node.text, sizeof(buf) - 1); buf[sizeof(buf) - 1] = '\0';
-  char popisA[60], popisB[60]; strncpy_P(popisA, (const char*)node.popisA, sizeof(popisA) - 1); popisA[sizeof(popisA) - 1] = '\0'; strncpy_P(popisB, (const char*)node.popisB, sizeof(popisB) - 1); popisB[sizeof(popisB) - 1] = '\0';
-  int volbaA, volbaB; memcpy_P(&volbaA, &gamebook[gbNode].volbaA, sizeof(int)); memcpy_P(&volbaB, &gamebook[gbNode].volbaB, sizeof(int));
+  nactiGBNodeZSD(gbNode);
+  char buf[600]; char popisA[60], popisB[60]; int volbaA, volbaB;
+  if (gbZSD) {
+    strncpy(buf, gbTextSD.c_str(), sizeof(buf) - 1); buf[sizeof(buf) - 1] = '\0';
+    strncpy(popisA, gbPopisASD.c_str(), sizeof(popisA) - 1); popisA[sizeof(popisA) - 1] = '\0';
+    strncpy(popisB, gbPopisBSD.c_str(), sizeof(popisB) - 1); popisB[sizeof(popisB) - 1] = '\0';
+    volbaA = gbVolbaASD; volbaB = gbVolbaBSD;
+  } else {
+    GBNode node; memcpy_P(&node, &gamebook[gbNode], sizeof(GBNode));
+    strncpy_P(buf, (const char*)node.text, sizeof(buf) - 1); buf[sizeof(buf) - 1] = '\0';
+    strncpy_P(popisA, (const char*)node.popisA, sizeof(popisA) - 1); popisA[sizeof(popisA) - 1] = '\0';
+    strncpy_P(popisB, (const char*)node.popisB, sizeof(popisB) - 1); popisB[sizeof(popisB) - 1] = '\0';
+    memcpy_P(&volbaA, &gamebook[gbNode].volbaA, sizeof(int)); memcpy_P(&volbaB, &gamebook[gbNode].volbaB, sizeof(int));
+  }
   bool konec = (volbaA == -1 && volbaB == -1);
   int maxWidth = display.width() - 10; int lineHeight = getLineHeight(); int textAreaHeight = konec ? 90 : 70;
   int linesPerPage = textAreaHeight / lineHeight; TextLine lines[80];
@@ -2114,7 +2241,9 @@ void loop() {
       }
       if (appState == STATE_GAMEBOOK) {
         if (longPressBTN0()) {
-          int volbaB; memcpy_P(&volbaB, &gamebook[gbNode].volbaB, sizeof(int));
+          int volbaB;
+          if (gbZSD) volbaB = gbVolbaBSD;
+          else { memcpy_P(&volbaB, &gamebook[gbNode].volbaB, sizeof(int)); }
           if (volbaB >= 0) { gbNode = volbaB; gbTextPage = 0; ulozGBPozici(gbNode); zobrazGBNode(); }
         } else { gbTextPage++; zobrazGBNode(); }
         return;
@@ -2130,7 +2259,7 @@ void loop() {
       switch (appState) {
         case STATE_MAIN_MENU: menuDown(menuIndex, scrollOffset, mainMenuCount); zobrazSubMenu("HLAVNÍ MENU", mainMenuItems, mainMenuCount, menuIndex, scrollOffset); break;
         case STATE_KNIHOVNA: menuDown(subMenuIndex, subScrollOffset, knihovnaCount); zobrazSubMenu("KNIHOVNA", knihovnaItems, knihovnaCount, subMenuIndex, subScrollOffset); break;
-        case STATE_KNIHOVNA_DETAIL: textScrollPage++; ulozPoziciKnihy(subMenuIndex, textScrollPage); zobrazText(knihovnaItems[subMenuIndex].c_str(), knihy[subMenuIndex]); break;
+        case STATE_KNIHOVNA_DETAIL: textScrollPage++; ulozPoziciKnihy(subMenuIndex, textScrollPage); { static String _kb; _kb = _nactiKnihuObsah(subMenuIndex); zobrazText(knihovnaItems[subMenuIndex].c_str(), _kb.c_str()); } break;
         case STATE_AKTUALITY: menuDown(subMenuIndex, subScrollOffset, aktualityCount); zobrazSubMenu("AKTUALITY", aktualityItems, aktualityCount, subMenuIndex, subScrollOffset); break;
         case STATE_ZPRAVY_MENU: menuDown(subMenuIndex, subScrollOffset, zpravyMenuCount); zobrazSubMenu("ZPRÁVY", zpravyMenuItems, zpravyMenuCount, subMenuIndex, subScrollOffset); break;
         case STATE_ZPRAVY_SEZNAM: clanekMenuIndex = (clanekMenuIndex + 1) % pocetZprav; zobrazSeznamZprav(); break;
@@ -2155,8 +2284,8 @@ void loop() {
         
         case STATE_KVIZ: nastaviNahodnyKvizIdx(); zobrazKviz(); break;
         case STATE_KVIZ_ODPOVED: appState = STATE_KVIZ; nastaviNahodnyKvizIdx(); zobrazKviz(); break;
-        case STATE_WYR: aktualniHraIdx = random(wyrPocet); zobrazWyr(); break;
-        case STATE_WYR_VYSLEDEK: appState = STATE_WYR; aktualniHraIdx = random(wyrPocet); zobrazWyr(); break;
+        case STATE_WYR: nastaviNahodnyWyrZSD(); zobrazWyr(); break;
+        case STATE_WYR_VYSLEDEK: appState = STATE_WYR; nastaviNahodnyWyrZSD(); zobrazWyr(); break;
         
         case STATE_KVIZ_KATEGORIE: menuDown(kvizKatIdx, kvizKatScrollOffset, kvizKategoriiCount); zobrazSubMenu("KATEGORIE KVÍZU", kvizKategorieItems, kvizKategoriiCount, kvizKatIdx, kvizKatScrollOffset); break;
         case STATE_KVIZ_OBTIZNOST: kvizObtIdx = (kvizObtIdx + 1) % 3; zobrazSubMenu("OBTÍŽNOST", kvizObtiznostItems, 3, kvizObtIdx, 0); break;
@@ -2209,7 +2338,7 @@ void loop() {
           else if (menuIndex == 7) { appState = STATE_NASTAVENI; zobrazSubMenu("NASTAVENÍ", nastaveniItems, nastaveniCount, 0, 0); }
           break;
 
-        case STATE_KNIHOVNA: textScrollPage = knihaPozice[subMenuIndex]; appState = STATE_KNIHOVNA_DETAIL; zobrazText(knihovnaItems[subMenuIndex].c_str(), knihy[subMenuIndex]); break;
+        case STATE_KNIHOVNA: textScrollPage = knihaPozice[subMenuIndex]; appState = STATE_KNIHOVNA_DETAIL; { static String _kb; _kb = _nactiKnihuObsah(subMenuIndex); zobrazText(knihovnaItems[subMenuIndex].c_str(), _kb.c_str()); } break;
 
         case STATE_AKTUALITY:
           if (subMenuIndex == 0) { appState = STATE_ZPRAVY_MENU; subMenuIndex = 0; subScrollOffset = 0; zobrazSubMenu("ZPRÁVY", zpravyMenuItems, zpravyMenuCount, 0, 0); }
@@ -2294,7 +2423,7 @@ void loop() {
           else if (subMenuIndex == 2) { appState = STATE_GAMEBOOK; gbNode = nactiGBPozici(); gbTextPage = 0; zobrazGBNode(); }
           else if (subMenuIndex == 3) { appState = STATE_ODHALOVACKA; odhalovackaKonec = false; for(int i=0; i<64; i++) odhalenoPole[i] = false; zobrazOdhalovacku(); }
           else if (subMenuIndex == 4) { appState = STATE_KVIZ_KATEGORIE; kvizKatIdx = 0; kvizObtIdx = 0; kvizKatScrollOffset = 0; zobrazSubMenu("KATEGORIE KVÍZU", kvizKategorieItems, kvizKategoriiCount, 0, 0); }
-          else if (subMenuIndex == 5) { appState = STATE_WYR; aktualniHraIdx = random(wyrPocet); zobrazWyr(); }
+          else if (subMenuIndex == 5) { appState = STATE_WYR; nastaviNahodnyWyrZSD(); zobrazWyr(); }
           break;
         case STATE_KVIZ_KATEGORIE:
           if (kvizKatIdx == 6) { nastaviNahodnyKvizIdx(); appState = STATE_KVIZ; zobrazKviz(); }
@@ -2308,7 +2437,9 @@ void loop() {
         case STATE_KOSTKY: hrajKostku(kostkyStran); break;
         case STATE_GAMEBOOK:
           {
-            int volbaA; memcpy_P(&volbaA, &gamebook[gbNode].volbaA, sizeof(int));
+            int volbaA;
+            if (gbZSD) volbaA = gbVolbaASD;
+            else { memcpy_P(&volbaA, &gamebook[gbNode].volbaA, sizeof(int)); }
             if (volbaA == -1) { gbNode = 0; gbTextPage = 0; ulozGBPozici(0); zobrazGBNode(); }
             else { gbNode = volbaA; gbTextPage = 0; ulozGBPozici(gbNode); zobrazGBNode(); }
             break;
@@ -2319,7 +2450,7 @@ void loop() {
         case STATE_KVIZ: appState = STATE_KVIZ_ODPOVED; zobrazKvizOdpoved(); break;
         case STATE_KVIZ_ODPOVED: appState = STATE_KVIZ; nastaviNahodnyKvizIdx(); zobrazKviz(); break;
         case STATE_WYR: appState = STATE_WYR_VYSLEDEK; zobrazWyrVysledek(); break;
-        case STATE_WYR_VYSLEDEK: appState = STATE_WYR; aktualniHraIdx = random(wyrPocet); zobrazWyr(); break;
+        case STATE_WYR_VYSLEDEK: appState = STATE_WYR; nastaviNahodnyWyrZSD(); zobrazWyr(); break;
         
         case STATE_HOROSKOP_MENU: appState = STATE_HOROSKOP_DETAIL; horoskopScrollPage = 0; zobrazHoroskopDetail(horoskopMenuIndex); break;
         case STATE_HOROSKOP_DETAIL: horoskopScrollPage = 0; horoskopMenuIndex = (horoskopMenuIndex + 1) % horoskopCount; zobrazHoroskopDetail(horoskopMenuIndex); break;

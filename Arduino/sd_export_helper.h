@@ -141,7 +141,7 @@ void exportGamebookNaSD() {
 // -------------------------------------------------------------------
 // exportKnihyNaSD()
 // Zapíše každou knihu jako samostatný soubor do /eindata/knihy/
-// Formát: surový text z PROGMEM (bez změn)
+// Formát: první řádek = název knihy, zbytek = text
 // -------------------------------------------------------------------
 void exportKnihyNaSD() {
   const char* soubory[] = {
@@ -150,6 +150,11 @@ void exportKnihyNaSD() {
     "/eindata/knihy/kniha_3.txt"
   };
   const char* zdroje[] = { kniha1, kniha2, kniha3 };
+  const char* nazvy[]  = {
+    "Zaklínač: Brokilonský les",
+    "Zaklínač: Cesta do Oxenfurtu",
+    "Zaklínač: Kaer Morhen"
+  };
   const int pocetKnih = 3;
 
   for (int k = 0; k < pocetKnih; k++) {
@@ -159,7 +164,9 @@ void exportKnihyNaSD() {
       Serial.println(k + 1);
       continue;
     }
-    // Čteme PROGMEM text znak po znaku a zapisujeme na SD
+    // První řádek = název knihy
+    f.println(nazvy[k]);
+    // Zbytek souboru = text knihy (PROGMEM)
     const char* ptr = zdroje[k];
     char c;
     while ((c = pgm_read_byte(ptr++)) != '\0') {

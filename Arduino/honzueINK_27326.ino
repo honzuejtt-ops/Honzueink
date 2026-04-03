@@ -33,13 +33,13 @@ const char* ssid2 = "Bobik";
 const char* pass2 = "honzuemanejfoun";
 
 const String urlBase = "https://raw.githubusercontent.com/honzuejtt-ops/Honzueink/main/";
-String urlZpravySvet = urlBase + "zpravy_svet.txt";
-String urlZpravyCR = urlBase + "zpravy_cr.txt";
-String urlTechAI = urlBase + "zpravy_tech.txt";
-String urlPocasi = urlBase + "pocasi.txt";
-String urlKurzy = urlBase + "kurzy.txt";
-String urlHoroskop = urlBase + "horoskop.txt";
-String urlKurzyHistorie = urlBase + "kurzy_historie.txt";
+String urlZpravySvet = urlBase + "eindata/zpravy/aktualni/zpravy_svet.txt";
+String urlZpravyCR   = urlBase + "eindata/zpravy/aktualni/zpravy_cr.txt";
+String urlTechAI     = urlBase + "eindata/zpravy/aktualni/zpravy_tech.txt";
+String urlPocasi     = urlBase + "eindata/cache/pocasi.txt";
+String urlKurzy      = urlBase + "eindata/cache/kurzy.txt";
+String urlHoroskop   = urlBase + "eindata/cache/horoskop.txt";
+String urlKurzyHistorie = urlBase + "eindata/cache/kurzy_historie.txt";
 
 String stazenaDataSvet = ""; String stazenaDataCR = ""; String stazenaDataTech = "";
 String stazenaDataPocasi = ""; String stazenaDataKurzy = "";
@@ -156,14 +156,17 @@ enum AppState {
   STATE_WYR_VYSLEDEK,
   STATE_HOROSKOP_MENU, STATE_HOROSKOP_DETAIL,
   STATE_KURZY_GRAF,
-  STATE_SD_BROWSER
+  STATE_SD_BROWSER,
+  // Nové stavy pro archiv zpráv, SD prohlížeč textu/obrázků
+  STATE_ARCHIV_DATUMY, STATE_ARCHIV_ZPRAVY_MENU,
+  STATE_SD_TEXT_VIEW, STATE_SD_BMP_VIEW
 };
 
 AppState appState = STATE_MAIN_MENU;
 int menuIndex = 0, scrollOffset = 0, subMenuIndex = 0, subScrollOffset = 0, textScrollPage = 0, kostkyStran = 6;
 bool stopkyRunning = false; unsigned long stopkyStart = 0, stopkyElapsed = 0, stopkyLastDraw = 0;
 int refreshMode = 1; // 0=Pomalá (full), 1=Střední (partial, default), 2=Rychlá (partial fast)
-int gbNode = 0, gbTextPage = 0, knihaPozice[3] = { 0, 0, 0 };
+int gbNode = 0, gbTextPage = 0, buchaPozice[15] = {};
 int aktualniHraIdx = 0;
 int kvizKatIdx = 0; int kvizObtIdx = 0; int kvizKatScrollOffset = 0; int grafMenuIndex = 0; int horoskopMenuIndex = 0; int horoskopScrollPage = 0;
 
@@ -174,6 +177,20 @@ int sdBrowserScrollOffset = 0;
 struct SdEntry { char name[30]; bool isDir; uint32_t size; };
 SdEntry sdEntries[50];
 int sdEntryCount = 0;
+
+// ===== ARCHIV ZPRÁV =====
+String archivDatumy[30];
+int    archivDatumCount        = 0;
+int    archivDatumIndex        = 0;
+int    archivDatumScrollOffset = 0;
+int    archivZpravySubIndex    = 0;
+int    archivZpravyScrollOffset = 0;
+String archivAktualniDatum     = "";
+bool   zpravyZArchivu          = false;
+
+// ===== SD TEXT / BMP PROHLÍŽEČ =====
+String sdTextViewBuffer = "";
+String sdTextViewTitle  = "";
 
 // ===== SD KVÍZ — aktuální otázka načtená ze SD =====
 String sdKvizOtazka = "", sdKvizOdpoved = "", sdKvizKatLabel = "";
@@ -249,7 +266,8 @@ void nakresliStatusBar() {
       appState == STATE_GENERATOR_RESULT || appState == STATE_FLASKA || appState == STATE_SLOVNIK_DETAIL ||
       appState == STATE_NASTAVENI_O_ZARIZENI || appState == STATE_QR_ZOBRAZ || appState == STATE_KVIZ_ODPOVED ||
       appState == STATE_WYR || appState == STATE_KVIZ || appState == STATE_WYR_VYSLEDEK ||
-      appState == STATE_HOROSKOP_DETAIL || appState == STATE_KURZY_GRAF) {
+      appState == STATE_HOROSKOP_DETAIL || appState == STATE_KURZY_GRAF ||
+      appState == STATE_SD_TEXT_VIEW || appState == STATE_SD_BMP_VIEW) {
     return;
   }
 
@@ -291,8 +309,10 @@ void nakresliStatusBar() {
 // ===== MENU DATA =====
 const int mainMenuCount = 8; String mainMenuItems[] = { "KNIHOVNA", "AKTUALITY", "TOOLBOX", "SLOVNÍK", "GENERÁTOR", "HRY", "SD KARTA", "NASTAVENÍ" };
 const int aktualityCount = 5; String aktualityItems[] = { "Zprávy", "Světový čas", "Kurzy", "Počasí", "Horoskop" };
-const int zpravyMenuCount = 3; String zpravyMenuItems[] = { "Ze světa", "Z ČR", "Technologie a AI" };
-const int knihovnaCount = 3; String knihovnaItems[] = { "Zaklínač 1", "Zaklínač 2", "Zaklínač 3" };
+const int zpravyMenuCount = 4; String zpravyMenuItems[] = { "Ze světa", "Z ČR", "Technologie a AI", "Archiv" };
+// Dynamická knihovna — naplněna při vstupu do KNIHOVNA
+String dynamicKnihovnaItems[15];
+int    dynamicKnihovnaCount = 0;
 const int toolboxCount = 3; String toolboxItems[] = { "Dioda", "Stopky", "QR Kódy" }; bool ledState = false;
 
 // DATA PRO QR KÓDY 
@@ -518,10 +538,25 @@ String nactiSouborZCache(const char* klic) {
   return nactiSouborZFS(lfPath.c_str());
 }
 
+// Načte zprávy ze SD aktualni — primární zdroj
+String nactiSouborZAktualni(const char* soubor) {
+  if (!sdReady) return "";
+  String cesta = String("/eindata/zpravy/aktualni/") + soubor;
+  File f = SD.open(cesta.c_str());
+  if (f) { String s = f.readString(); f.close(); return s; }
+  return "";
+}
+
 void nactiStazenaData() {
-  stazenaDataSvet          = nactiSouborZCache("svet");
-  stazenaDataCR            = nactiSouborZCache("cr");
-  stazenaDataTech          = nactiSouborZCache("tech");
+  // Zprávy — SD aktualni má přednost před cache
+  stazenaDataSvet  = nactiSouborZAktualni("zpravy_svet.txt");
+  if (stazenaDataSvet.length() == 0)  stazenaDataSvet  = nactiSouborZCache("svet");
+  stazenaDataCR    = nactiSouborZAktualni("zpravy_cr.txt");
+  if (stazenaDataCR.length() == 0)    stazenaDataCR    = nactiSouborZCache("cr");
+  stazenaDataTech  = nactiSouborZAktualni("zpravy_tech.txt");
+  if (stazenaDataTech.length() == 0)  stazenaDataTech  = nactiSouborZCache("tech");
+
+  // Cache data (počasí, kurzy, horoskopy)
   stazenaDataPocasi        = nactiSouborZCache("poc");
   stazenaDataKurzy         = nactiSouborZCache("kur");
   stazenaDataHoroskop      = nactiSouborZCache("horo");
@@ -547,29 +582,62 @@ static String _nahodnyTextGeneratoru(const char* sdCesta, const char** pole, int
 
 // ===== KNIHY — NAČTENÍ S FALLBACKEM NA SD =====
 // Čte obsah knihy ze souboru na SD kartě; fallback na PROGMEM pole.
+// Formát souboru: první řádek = název, zbytek = text.
 static String _nactiKnihuObsah(int idx) {
   if (sdReady) {
     String cesta = String("/eindata/knihy/kniha_") + (idx + 1) + ".txt";
     File f = SD.open(cesta.c_str());
-    if (f) { String s = f.readString(); f.close(); if (s.length() > 0) return s; }
+    if (f) {
+      f.readStringUntil('\n'); // Přeskočí název (první řádek)
+      String s = f.readString();
+      f.close();
+      if (s.length() > 0) return s;
+    }
   }
-  return String(knihy[idx]);
+  if (idx >= 0 && idx < 3) return String(knihy[idx]);
+  return "";
 }
 
-// ===== ARCHIVACE ZPRÁV NA SD KARTU =====
-// Uloží stažená data zpráv do datovaného souboru na SD kartě:
-// /eindata/zpravy/YYYY-MM-DD/{klic}.txt
-// Soubor lze kdykoliv zpětně otevřít přes prohlížeč SD a zobrazit jako seznam zpráv.
-void archivujZpravuNaSD(const char* klic, const String& data) {
+// Načte seznam knih ze SD karty (název = první řádek souboru).
+void nactiSeznamKnih() {
+  dynamicKnihovnaCount = nactiSeznamKnih(dynamicKnihovnaItems, 15);
+  if (dynamicKnihovnaCount == 0) {
+    // Fallback: statické názvy z PROGMEM
+    dynamicKnihovnaItems[0] = "Zaklínač: Brokilonský les";
+    dynamicKnihovnaItems[1] = "Zaklínač: Cesta do Oxenfurtu";
+    dynamicKnihovnaItems[2] = "Zaklínač: Kaer Morhen";
+    dynamicKnihovnaCount = 3;
+  }
+}
+
+// ===== ARCHIVACE A UKLÁDÁNÍ ZPRÁV NA SD KARTU =====
+// Uloží stažená data zpráv do aktuální složky na SD:
+// /eindata/zpravy/aktualni/{soubor}
+void ulozAktualniZpravuNaSD(const char* soubor, const String& data) {
+  if (!sdReady) return;
+  if (!SD.exists("/eindata/zpravy")) SD.mkdir("/eindata/zpravy");
+  if (!SD.exists("/eindata/zpravy/aktualni")) SD.mkdir("/eindata/zpravy/aktualni");
+  String cesta = String("/eindata/zpravy/aktualni/") + soubor;
+  if (SD.exists(cesta.c_str())) SD.remove(cesta.c_str());
+  File f = SD.open(cesta.c_str(), FILE_WRITE);
+  if (f) { f.print(data); f.close(); }
+  else { Serial.println("SD aktualni: nelze zapsat " + cesta); }
+}
+
+// Uloží datovanou kopii zpráv do archivu na SD kartě:
+// /eindata/zpravy/archiv/YYYY-MM-DD/{soubor}
+void archivujZpravuNaSD(const char* soubor, const String& data) {
   if (!sdReady) return;
   struct tm timeinfo;
   if (!getLocalTime(&timeinfo, 150)) return;
   char datumBuf[12];
   sprintf(datumBuf, "%04d-%02d-%02d", timeinfo.tm_year + 1900, timeinfo.tm_mon + 1, timeinfo.tm_mday);
   if (!SD.exists("/eindata/zpravy")) SD.mkdir("/eindata/zpravy");
-  String slozka = String("/eindata/zpravy/") + datumBuf;
+  if (!SD.exists("/eindata/zpravy/archiv")) SD.mkdir("/eindata/zpravy/archiv");
+  String slozka = String("/eindata/zpravy/archiv/") + datumBuf;
   if (!SD.exists(slozka.c_str())) SD.mkdir(slozka.c_str());
-  String cesta = slozka + "/" + klic + ".txt";
+  String cesta = slozka + "/" + soubor;
+  if (SD.exists(cesta.c_str())) SD.remove(cesta.c_str());
   File f = SD.open(cesta.c_str(), FILE_WRITE);
   if (f) { f.print(data); f.close(); }
   else { Serial.println("SD archiv: nelze zapsat " + cesta); }
@@ -1019,8 +1087,8 @@ String getSvatek(int d, int m) {
 }
 
 // ===== PREFERENCES =====
-void ulozPoziciKnihy(int idx, int page) { knihaPozice[idx] = page; prefs.begin("knihy", false); char key[8]; sprintf(key, "k%d", idx); prefs.putInt(key, page); prefs.end(); }
-void nactiPoziceKnih() { prefs.begin("knihy", true); for (int i = 0; i < 3; i++) { char key[8]; sprintf(key, "k%d", i); knihaPozice[i] = prefs.getInt(key, 0); } prefs.end(); }
+void ulozPoziciKnihy(int idx, int page) { if (idx >= 0 && idx < 15) buchaPozice[idx] = page; prefs.begin("knihy", false); char key[8]; sprintf(key, "k%d", idx); prefs.putInt(key, page); prefs.end(); }
+void nactiPoziceKnih() { prefs.begin("knihy", true); for (int i = 0; i < 15; i++) { char key[8]; sprintf(key, "k%d", i); buchaPozice[i] = prefs.getInt(key, 0); } prefs.end(); }
 void ulozGBPozici(int node) { prefs.begin("gb", false); prefs.putInt("node", node); prefs.end(); }
 int nactiGBPozici() { prefs.begin("gb", true); int n = prefs.getInt("node", 0); prefs.end(); return n; }
 
@@ -1175,19 +1243,19 @@ void aktualizovatDataNaPozadi(bool vynuceno) {
       nakresliLoadScreen("Stahuji zprávy ze světa...", 15);
       {
         String tmp = stahniTextZUrl("Svet", urlZpravySvet);
-        if (tmp.length() > 20) { ulozZpravuDoCache("svet", tmp); archivujZpravuNaSD("svet", tmp); asponNecoSeStahlo = true; }
+        if (tmp.length() > 20) { ulozZpravuDoCache("svet", tmp); ulozAktualniZpravuNaSD("zpravy_svet.txt", tmp); archivujZpravuNaSD("zpravy_svet.txt", tmp); asponNecoSeStahlo = true; }
       }
       
       nakresliLoadScreen("Stahuji zprávy z ČR...", 28);
       {
         String tmp = stahniTextZUrl("CR", urlZpravyCR);
-        if (tmp.length() > 20) { ulozZpravuDoCache("cr", tmp); archivujZpravuNaSD("cr", tmp); asponNecoSeStahlo = true; }
+        if (tmp.length() > 20) { ulozZpravuDoCache("cr", tmp); ulozAktualniZpravuNaSD("zpravy_cr.txt", tmp); archivujZpravuNaSD("zpravy_cr.txt", tmp); asponNecoSeStahlo = true; }
       }
       
       nakresliLoadScreen("Stahuji Tech a AI...", 42);
       {
         String tmp = stahniTextZUrl("Tech", urlTechAI);
-        if (tmp.length() > 20) { ulozZpravuDoCache("tech", tmp); archivujZpravuNaSD("tech", tmp); asponNecoSeStahlo = true; }
+        if (tmp.length() > 20) { ulozZpravuDoCache("tech", tmp); ulozAktualniZpravuNaSD("zpravy_tech.txt", tmp); archivujZpravuNaSD("zpravy_tech.txt", tmp); asponNecoSeStahlo = true; }
       }
       
       nakresliLoadScreen("Stahuji Počasí...", 55);
@@ -2068,6 +2136,60 @@ void zobrazSDProhlizec() {
   } while (display.nextPage());
 }
 
+// ==== BMP PROHLÍŽEČ — ZOBRAZENÍ 1-BITOVÉHO BMP NA E-INK ====
+bool zobrazBmpZSD(const char* cesta) {
+  File f = SD.open(cesta);
+  if (!f) return false;
+
+  uint8_t header[54];
+  if (f.read(header, 54) < 54) { f.close(); return false; }
+  if (header[0] != 'B' || header[1] != 'M') { f.close(); return false; }
+
+  uint32_t dataOffset = (uint32_t)header[10] | ((uint32_t)header[11] << 8) |
+                        ((uint32_t)header[12] << 16) | ((uint32_t)header[13] << 24);
+  int32_t bmpW = (int32_t)(header[18] | ((uint32_t)header[19] << 8) |
+                            ((uint32_t)header[20] << 16) | ((uint32_t)header[21] << 24));
+  int32_t bmpH = (int32_t)(header[22] | ((uint32_t)header[23] << 8) |
+                            ((uint32_t)header[24] << 16) | ((uint32_t)header[25] << 24));
+  uint16_t bpp = header[28] | ((uint16_t)header[29] << 8);
+
+  if (bpp != 1 || bmpW <= 0) { f.close(); return false; }
+
+  bool flipped = (bmpH > 0);
+  int32_t absH = flipped ? bmpH : -bmpH;
+
+  int rowBytes = ((bmpW + 31) / 32) * 4;
+  long totalBytes = (long)rowBytes * absH;
+  if (totalBytes > 6144) { f.close(); return false; } // BMP příliš velký
+
+  static uint8_t bmpBuf[6144];
+  f.seek(dataOffset);
+  f.read(bmpBuf, (size_t)totalBytes);
+  f.close();
+
+  int dispW = min(bmpW, (int32_t)display.width());
+  int dispH = min(absH, (int32_t)display.height());
+
+  display.setFullWindow();
+  display.firstPage();
+  do {
+    display.fillScreen(bgColor());
+    for (int y = 0; y < dispH; y++) {
+      int bmpRow = flipped ? (absH - 1 - y) : y;
+      uint8_t* row = bmpBuf + (long)bmpRow * rowBytes;
+      for (int x = 0; x < dispW; x++) {
+        bool pixel = (row[x / 8] >> (7 - (x & 7))) & 1;
+        if (pixel) display.drawPixel(x, y, fgColor());
+      }
+    }
+    u8g2Fonts.setFontMode(1); u8g2Fonts.setFont(getSmallFont());
+    u8g2Fonts.setForegroundColor(fgColor()); u8g2Fonts.setBackgroundColor(bgColor());
+    u8g2Fonts.setCursor(5, 125); u8g2Fonts.print("Drz BTN21 = zpet");
+  } while (display.nextPage());
+
+  return true;
+}
+
 // ==== TLAČÍTKA A NÁVRATY ====
 bool longPress() { unsigned long start = millis(); while (digitalRead(BTN_SELECT) == LOW) { if (millis() - start > 500) { while (digitalRead(BTN_SELECT) == LOW) delay(10); return true; } delay(10); } return false; }
 bool longPressBTN0() { unsigned long start = millis(); while (digitalRead(BTN_DOWN) == LOW) { if (millis() - start > 500) { while (digitalRead(BTN_DOWN) == LOW) delay(10); return true; } delay(10); } return false; }
@@ -2076,11 +2198,19 @@ int scrollForIdx(int idx) { int v = getVisibleMenuItems(); return (idx >= v) ? i
 
 void goBack() {
   switch (appState) {
-    case STATE_KNIHOVNA_DETAIL: ulozPoziciKnihy(subMenuIndex, textScrollPage); appState = STATE_KNIHOVNA; zobrazSubMenu("KNIHOVNA", knihovnaItems, knihovnaCount, subMenuIndex, subScrollOffset); break;
+    case STATE_KNIHOVNA_DETAIL: ulozPoziciKnihy(subMenuIndex, textScrollPage); appState = STATE_KNIHOVNA; zobrazSubMenu("KNIHOVNA", dynamicKnihovnaItems, dynamicKnihovnaCount, subMenuIndex, subScrollOffset); break;
     case STATE_KNIHOVNA: appState = STATE_MAIN_MENU; zobrazSubMenu("HLAVNÍ MENU", mainMenuItems, mainMenuCount, menuIndex, scrollOffset); break;
     
     case STATE_ZPRAVY_TEXT: appState = STATE_ZPRAVY_SEZNAM; zobrazSeznamZprav(); break;
-    case STATE_ZPRAVY_SEZNAM: clanekMenuIndex = 0; appState = STATE_ZPRAVY_MENU; zobrazSubMenu("ZPRÁVY", zpravyMenuItems, zpravyMenuCount, subMenuIndex, subScrollOffset); break;
+    case STATE_ZPRAVY_SEZNAM:
+      clanekMenuIndex = 0;
+      if (zpravyZArchivu) {
+        appState = STATE_ARCHIV_ZPRAVY_MENU;
+        zobrazSubMenu(("ARCHIV: " + archivAktualniDatum).c_str(), zpravyMenuItems, 3, archivZpravySubIndex, archivZpravyScrollOffset);
+      } else {
+        appState = STATE_ZPRAVY_MENU; zobrazSubMenu("ZPRÁVY", zpravyMenuItems, zpravyMenuCount, subMenuIndex, subScrollOffset);
+      }
+      break;
     case STATE_ZPRAVY_MENU: appState = STATE_AKTUALITY; subMenuIndex = 0; subScrollOffset = 0; zobrazSubMenu("AKTUALITY", aktualityItems, aktualityCount, subMenuIndex, subScrollOffset); break;
     case STATE_POCASI_UI: pocasiDen = 0; appState = STATE_AKTUALITY; zobrazSubMenu("AKTUALITY", aktualityItems, aktualityCount, subMenuIndex, subScrollOffset); break;
     case STATE_HODINY: case STATE_KURZY: appState = STATE_AKTUALITY; zobrazSubMenu("AKTUALITY", aktualityItems, aktualityCount, subMenuIndex, subScrollOffset); break;
@@ -2121,6 +2251,19 @@ void goBack() {
         nactiSDSlozku();
         zobrazSDProhlizec();
       }
+      break;
+
+    case STATE_SD_TEXT_VIEW: case STATE_SD_BMP_VIEW:
+      appState = STATE_SD_BROWSER; zobrazSDProhlizec(); break;
+
+    case STATE_ARCHIV_ZPRAVY_MENU:
+      appState = STATE_ARCHIV_DATUMY;
+      zobrazSubMenu("ARCHIV ZPRÁV", archivDatumy, archivDatumCount, archivDatumIndex, archivDatumScrollOffset);
+      break;
+    case STATE_ARCHIV_DATUMY:
+      subMenuIndex = 3; subScrollOffset = scrollForIdx(3);
+      appState = STATE_ZPRAVY_MENU;
+      zobrazSubMenu("ZPRÁVY", zpravyMenuItems, zpravyMenuCount, subMenuIndex, subScrollOffset);
       break;
     
     case STATE_GENERATOR_RESULT: appState = STATE_GENERATOR; zobrazSubMenu("GENERÁTOR", generatorItems, generatorCount, subMenuIndex, subScrollOffset); break;
@@ -2258,12 +2401,15 @@ void loop() {
 
       switch (appState) {
         case STATE_MAIN_MENU: menuDown(menuIndex, scrollOffset, mainMenuCount); zobrazSubMenu("HLAVNÍ MENU", mainMenuItems, mainMenuCount, menuIndex, scrollOffset); break;
-        case STATE_KNIHOVNA: menuDown(subMenuIndex, subScrollOffset, knihovnaCount); zobrazSubMenu("KNIHOVNA", knihovnaItems, knihovnaCount, subMenuIndex, subScrollOffset); break;
-        case STATE_KNIHOVNA_DETAIL: textScrollPage++; ulozPoziciKnihy(subMenuIndex, textScrollPage); { static String _kb; _kb = _nactiKnihuObsah(subMenuIndex); zobrazText(knihovnaItems[subMenuIndex].c_str(), _kb.c_str()); } break;
+        case STATE_KNIHOVNA: menuDown(subMenuIndex, subScrollOffset, dynamicKnihovnaCount); zobrazSubMenu("KNIHOVNA", dynamicKnihovnaItems, dynamicKnihovnaCount, subMenuIndex, subScrollOffset); break;
+        case STATE_KNIHOVNA_DETAIL: textScrollPage++; ulozPoziciKnihy(subMenuIndex, textScrollPage); { static String _kb; _kb = _nactiKnihuObsah(subMenuIndex); zobrazText(dynamicKnihovnaItems[subMenuIndex].c_str(), _kb.c_str()); } break;
         case STATE_AKTUALITY: menuDown(subMenuIndex, subScrollOffset, aktualityCount); zobrazSubMenu("AKTUALITY", aktualityItems, aktualityCount, subMenuIndex, subScrollOffset); break;
         case STATE_ZPRAVY_MENU: menuDown(subMenuIndex, subScrollOffset, zpravyMenuCount); zobrazSubMenu("ZPRÁVY", zpravyMenuItems, zpravyMenuCount, subMenuIndex, subScrollOffset); break;
         case STATE_ZPRAVY_SEZNAM: clanekMenuIndex = (clanekMenuIndex + 1) % pocetZprav; zobrazSeznamZprav(); break;
         case STATE_ZPRAVY_TEXT: textScrollPage++; zobrazText(aktualniZpravy[clanekMenuIndex].titulek.c_str(), aktualniZpravy[clanekMenuIndex].text.c_str()); break;
+        case STATE_SD_TEXT_VIEW: textScrollPage++; zobrazText(sdTextViewTitle.c_str(), sdTextViewBuffer.c_str()); break;
+        case STATE_ARCHIV_DATUMY: menuDown(archivDatumIndex, archivDatumScrollOffset, archivDatumCount); zobrazSubMenu("ARCHIV ZPRÁV", archivDatumy, archivDatumCount, archivDatumIndex, archivDatumScrollOffset); break;
+        case STATE_ARCHIV_ZPRAVY_MENU: menuDown(archivZpravySubIndex, archivZpravyScrollOffset, 3); zobrazSubMenu(("ARCHIV: " + archivAktualniDatum).c_str(), zpravyMenuItems, 3, archivZpravySubIndex, archivZpravyScrollOffset); break;
         case STATE_TOOLBOX: menuDown(subMenuIndex, subScrollOffset, toolboxCount); zobrazSubMenu("TOOLBOX", toolboxItems, toolboxCount, subMenuIndex, subScrollOffset); break;
         case STATE_QR_MENU: menuDown(subMenuIndex, subScrollOffset, qrCount); zobrazSubMenu("QR KÓDY", qrItems, qrCount, subMenuIndex, subScrollOffset); break;
         
@@ -2328,7 +2474,7 @@ void loop() {
       switch (appState) {
         case STATE_MAIN_MENU:
           subMenuIndex = 0; subScrollOffset = 0; textScrollPage = 0;
-          if (menuIndex == 0) { appState = STATE_KNIHOVNA; zobrazSubMenu("KNIHOVNA", knihovnaItems, knihovnaCount, 0, 0); }
+          if (menuIndex == 0) { nactiSeznamKnih(); appState = STATE_KNIHOVNA; zobrazSubMenu("KNIHOVNA", dynamicKnihovnaItems, dynamicKnihovnaCount, 0, 0); }
           else if (menuIndex == 1) { appState = STATE_AKTUALITY; zobrazSubMenu("AKTUALITY", aktualityItems, aktualityCount, 0, 0); }
           else if (menuIndex == 2) { appState = STATE_TOOLBOX; zobrazSubMenu("TOOLBOX", toolboxItems, toolboxCount, 0, 0); }
           else if (menuIndex == 3) { appState = STATE_SLOVNIK; zobrazSubMenu("SLOVNÍK", slovnikItems, slovnikCount, 0, 0); }
@@ -2338,7 +2484,7 @@ void loop() {
           else if (menuIndex == 7) { appState = STATE_NASTAVENI; zobrazSubMenu("NASTAVENÍ", nastaveniItems, nastaveniCount, 0, 0); }
           break;
 
-        case STATE_KNIHOVNA: textScrollPage = knihaPozice[subMenuIndex]; appState = STATE_KNIHOVNA_DETAIL; { static String _kb; _kb = _nactiKnihuObsah(subMenuIndex); zobrazText(knihovnaItems[subMenuIndex].c_str(), _kb.c_str()); } break;
+        case STATE_KNIHOVNA: textScrollPage = buchaPozice[subMenuIndex]; appState = STATE_KNIHOVNA_DETAIL; { static String _kb; _kb = _nactiKnihuObsah(subMenuIndex); zobrazText(dynamicKnihovnaItems[subMenuIndex].c_str(), _kb.c_str()); } break;
 
         case STATE_AKTUALITY:
           if (subMenuIndex == 0) { appState = STATE_ZPRAVY_MENU; subMenuIndex = 0; subScrollOffset = 0; zobrazSubMenu("ZPRÁVY", zpravyMenuItems, zpravyMenuCount, 0, 0); }
@@ -2349,9 +2495,42 @@ void loop() {
           break;
 
         case STATE_ZPRAVY_MENU:
-          appState = STATE_ZPRAVY_SEZNAM; clanekMenuIndex = 0;
-          if (subMenuIndex == 0) parsujZpravy(stazenaDataSvet); else if (subMenuIndex == 1) parsujZpravy(stazenaDataCR); else if (subMenuIndex == 2) parsujZpravy(stazenaDataTech);
-          zobrazSeznamZprav();
+          clanekMenuIndex = 0;
+          if (subMenuIndex == 3) {
+            // Archiv zpráv
+            archivDatumCount = nactiArchivDatumy(archivDatumy, 30);
+            if (archivDatumCount == 0) { archivDatumy[0] = "(Archiv je prázdný)"; archivDatumCount = 1; }
+            archivDatumIndex = 0; archivDatumScrollOffset = 0;
+            appState = STATE_ARCHIV_DATUMY;
+            zobrazSubMenu("ARCHIV ZPRÁV", archivDatumy, archivDatumCount, 0, 0);
+          } else {
+            zpravyZArchivu = false;
+            appState = STATE_ZPRAVY_SEZNAM;
+            if (subMenuIndex == 0) parsujZpravy(stazenaDataSvet);
+            else if (subMenuIndex == 1) parsujZpravy(stazenaDataCR);
+            else if (subMenuIndex == 2) parsujZpravy(stazenaDataTech);
+            zobrazSeznamZprav();
+          }
+          break;
+
+        case STATE_ARCHIV_DATUMY:
+          if (archivDatumCount > 0 && archivDatumy[archivDatumIndex].length() >= 8) {
+            archivAktualniDatum = archivDatumy[archivDatumIndex];
+            archivZpravySubIndex = 0; archivZpravyScrollOffset = 0;
+            appState = STATE_ARCHIV_ZPRAVY_MENU;
+            zobrazSubMenu(("ARCHIV: " + archivAktualniDatum).c_str(), zpravyMenuItems, 3, 0, 0);
+          }
+          break;
+
+        case STATE_ARCHIV_ZPRAVY_MENU:
+          {
+            const char* soubory[] = { "zpravy_svet.txt", "zpravy_cr.txt", "zpravy_tech.txt" };
+            String cesta = String("/eindata/zpravy/archiv/") + archivAktualniDatum + "/" + soubory[archivZpravySubIndex];
+            File fArc = SD.open(cesta.c_str());
+            if (fArc) { String obsah = fArc.readString(); fArc.close(); parsujZpravy(obsah); }
+            else { aktualniZpravy[0].titulek = "Žádná data"; aktualniZpravy[0].datum = ""; aktualniZpravy[0].perex = "Archiv pro " + archivAktualniDatum + " není dostupný."; aktualniZpravy[0].text = ""; pocetZprav = 1; }
+            zpravyZArchivu = true; clanekMenuIndex = 0; appState = STATE_ZPRAVY_SEZNAM; zobrazSeznamZprav();
+          }
           break;
 
         case STATE_ZPRAVY_SEZNAM: appState = STATE_ZPRAVY_TEXT; textScrollPage = 0; zobrazText(aktualniZpravy[clanekMenuIndex].titulek.c_str(), aktualniZpravy[clanekMenuIndex].text.c_str()); break;
@@ -2469,17 +2648,35 @@ void loop() {
               nactiSDSlozku();
               zobrazSDProhlizec();
             } else {
-              // Otevření souboru: pokud jde o archiv zpráv (obsahuje |T|), zobrazíme jako seznam zpráv
               String cestaSouboru = (sdCurrentPath == "/") ? (String("/") + sel.name) : (sdCurrentPath + "/" + sel.name);
-              File fSd = SD.open(cestaSouboru.c_str());
-              if (fSd) {
-                String obsah = fSd.readString();
-                fSd.close();
-                if (obsah.indexOf("|T|") >= 0) {
-                  parsujZpravy(obsah);
-                  clanekMenuIndex = 0;
-                  appState = STATE_ZPRAVY_SEZNAM;
-                  zobrazSeznamZprav();
+              // Zjistíme příponu souboru
+              String extStr = cestaSouboru.substring(cestaSouboru.lastIndexOf('.'));
+              extStr.toLowerCase();
+              if (extStr == ".bmp") {
+                // Zobrazit BMP obrázek
+                appState = STATE_SD_BMP_VIEW;
+                bool ok = zobrazBmpZSD(cestaSouboru.c_str());
+                if (!ok) {
+                  // BMP nejde zobrazit — zobrazíme chybovou zprávu a zůstaneme v browseru
+                  appState = STATE_SD_BROWSER;
+                  zobrazSDProhlizec();
+                }
+              } else if (extStr == ".txt") {
+                // Otevření TXT: zprávy (|T| formát) nebo plain text
+                File fSd = SD.open(cestaSouboru.c_str());
+                if (fSd) {
+                  String obsah = fSd.readString();
+                  fSd.close();
+                  if (obsah.indexOf("|T|") >= 0) {
+                    zpravyZArchivu = false; parsujZpravy(obsah); clanekMenuIndex = 0;
+                    appState = STATE_ZPRAVY_SEZNAM; zobrazSeznamZprav();
+                  } else {
+                    sdTextViewTitle = sel.name;
+                    sdTextViewBuffer = obsah;
+                    textScrollPage = 0;
+                    appState = STATE_SD_TEXT_VIEW;
+                    zobrazText(sdTextViewTitle.c_str(), sdTextViewBuffer.c_str());
+                  }
                 }
               }
             }

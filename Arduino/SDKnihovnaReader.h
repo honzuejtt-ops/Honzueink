@@ -105,6 +105,80 @@ bool existujeSD() {
 }
 
 // -------------------------------------------------------------------
+// nactiCelySoubor()
+// Načte celý obsah souboru ze SD karty do Stringu.
+// Vrátí prázdný String pokud soubor neexistuje.
+// -------------------------------------------------------------------
+String nactiCelySoubor(const char* cesta) {
+  File f = SD.open(cesta);
+  if (!f) return "";
+  String s = f.readString();
+  f.close();
+  return s;
+}
+
+// -------------------------------------------------------------------
+// nactiArchivDatumy()
+// Prochází složku /eindata/zpravy/archiv/ a vrátí počet nalezených
+// datumových podsložek (formát YYYY-MM-DD).
+// Výsledky se zapisují do pole archivDatumy[], max. maxCount položek.
+// -------------------------------------------------------------------
+int nactiArchivDatumy(String archivDatumy[], int maxCount) {
+  int count = 0;
+  if (!SD.exists("/eindata/zpravy/archiv")) return 0;
+  File dir = SD.open("/eindata/zpravy/archiv");
+  if (!dir || !dir.isDirectory()) { if (dir) dir.close(); return 0; }
+  File entry = dir.openNextFile();
+  while (entry && count < maxCount) {
+    if (entry.isDirectory()) {
+      const char* fname = entry.name();
+      const char* lastSlash = strrchr(fname, '/');
+      if (lastSlash) fname = lastSlash + 1;
+      if (strlen(fname) >= 10) {
+        archivDatumy[count] = String(fname);
+        count++;
+      }
+    }
+    entry.close();
+    entry = dir.openNextFile();
+  }
+  if (entry) entry.close();
+  dir.close();
+  // Seřadit sestupně (nejnovější první) — jednoduchý bubble sort
+  for (int i = 0; i < count - 1; i++) {
+    for (int j = 0; j < count - i - 1; j++) {
+      if (archivDatumy[j] < archivDatumy[j + 1]) {
+        String tmp = archivDatumy[j];
+        archivDatumy[j] = archivDatumy[j + 1];
+        archivDatumy[j + 1] = tmp;
+      }
+    }
+  }
+  return count;
+}
+
+// -------------------------------------------------------------------
+// nactiSeznamKnih()
+// Prochází soubory /eindata/knihy/kniha_N.txt a načte jejich názvy
+// z prvního řádku. Vrátí počet nalezených knih (max. maxCount).
+// -------------------------------------------------------------------
+int nactiSeznamKnih(String nazvy[], int maxCount) {
+  int count = 0;
+  for (int n = 1; n <= maxCount; n++) {
+    String cesta = String("/eindata/knihy/kniha_") + n + ".txt";
+    File f = SD.open(cesta.c_str());
+    if (!f) break;
+    String radek = f.readStringUntil('\n');
+    f.close();
+    radek.trim();
+    if (radek.length() == 0) radek = "Kniha " + String(n);
+    nazvy[count] = radek;
+    count++;
+  }
+  return count;
+}
+
+// -------------------------------------------------------------------
 // Interní pomocná funkce — vytvoří složku, pokud ještě neexistuje.
 // -------------------------------------------------------------------
 static bool _vytvorSlozku(const char* cesta) {
@@ -158,7 +232,9 @@ bool pripravSD() {
     "/eindata/fraze",
     "/eindata/kviz",
     "/eindata/hry",
-    "/eindata/zpravy"
+    "/eindata/zpravy",
+    "/eindata/zpravy/aktualni",
+    "/eindata/zpravy/archiv"
   };
   const int pocetSlozek = sizeof(slozky) / sizeof(slozky[0]);
   for (int i = 0; i < pocetSlozek; i++) {

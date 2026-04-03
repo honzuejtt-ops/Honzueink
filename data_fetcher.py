@@ -1,3 +1,5 @@
+import os
+import shutil
 import requests
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta
@@ -5,6 +7,9 @@ from bs4 import BeautifulSoup
 import json
 import trafilatura
 import re
+
+# Kořenová cesta k SD kartě (nebo lokální složce při spuštění v CI/locálně)
+SD_CESTA = os.environ.get('SD_CESTA', './eindata')
 
 # --- FUNKCE PRO VYTĚŽENÍ TEXTU PŘÍMO Z ČLÁNKU (Trafilatura) ---
 def stahni_text_clanku(url, perex):
@@ -245,7 +250,14 @@ def stahni_zpravy_multi(zdroje, celkovy_limit=10):
 
 if __name__ == "__main__":
     print("Spoustim stahovani z webu a RSS...")
-    
+
+    # --- Vytvoření adresářové struktury ---
+    zpravy_dir   = os.path.join(SD_CESTA, 'zpravy', 'aktualni')
+    cache_dir    = os.path.join(SD_CESTA, 'cache')
+    archiv_dir   = os.path.join(SD_CESTA, 'zpravy', 'archiv')
+    for d in (zpravy_dir, cache_dir, archiv_dir):
+        os.makedirs(d, exist_ok=True)
+
     # 1. Běžné zprávy a tech
     svet_data = stahni_zpravy_multi([
         ("https://ct24.ceskatelevize.cz/rss/svet", 10),
@@ -258,14 +270,39 @@ if __name__ == "__main__":
     tech_data = stahni_zpravy("https://www.lupa.cz/rss/clanky/", limit=5)
     tech_data += stahni_zpravy("https://www.cnews.cz/feed/", limit=5)
 
-    # 2. Ukládání do souborů
-    with open("zpravy_svet.txt", "w", encoding="utf-8") as f: f.write(svet_data)
-    with open("zpravy_cr.txt", "w", encoding="utf-8") as f: f.write(cr_data)
-    with open("zpravy_tech.txt", "w", encoding="utf-8") as f: f.write(tech_data)
+    # 2. Archivace a ukládání zpráv do eindata/zpravy/aktualni/ a archiv/dnes/
+    dnes = datetime.now().strftime('%Y-%m-%d')
+    archiv_dnes = os.path.join(archiv_dir, dnes)
+    os.makedirs(archiv_dnes, exist_ok=True)
 
-    with open("pocasi.txt", "w", encoding="utf-8") as f: f.write(stahni_pocasi())
-    with open("kurzy.txt", "w", encoding="utf-8") as f: f.write(stahni_kurzy())
-    with open("horoskop.txt", "w", encoding="utf-8") as f: f.write(stahni_horoskopy())
-    with open("kurzy_historie.txt", "w", encoding="utf-8") as f: f.write(stahni_kurzy_historie())
-    
+    # Archivace včerejšího dne: pokud starší aktualni/ data existují, zkopírujeme je
+    vcera = (datetime.now() - timedelta(days=1)).strftime('%Y-%m-%d')
+    archiv_vcera = os.path.join(archiv_dir, vcera)
+    os.makedirs(archiv_vcera, exist_ok=True)
+    for soubor in ['zpravy_svet.txt', 'zpravy_cr.txt', 'zpravy_tech.txt']:
+        stary = os.path.join(zpravy_dir, soubor)
+        cilovy_vcera = os.path.join(archiv_vcera, soubor)
+        if os.path.exists(stary) and not os.path.exists(cilovy_vcera):
+            shutil.copy2(stary, cilovy_vcera)
+
+    # Uložení dnešních zpráv
+    for soubor, data in [
+        ('zpravy_svet.txt', svet_data),
+        ('zpravy_cr.txt',   cr_data),
+        ('zpravy_tech.txt', tech_data),
+    ]:
+        with open(os.path.join(zpravy_dir, soubor), 'w', encoding='utf-8') as f:
+            f.write(data)
+        with open(os.path.join(archiv_dnes, soubor), 'w', encoding='utf-8') as f:
+            f.write(data)
+
+    # 3. Ukládání cache dat (počasí, kurzy, horoskopy)
+    with open(os.path.join(cache_dir, 'pocasi.txt'),         'w', encoding='utf-8') as f: f.write(stahni_pocasi())
+    with open(os.path.join(cache_dir, 'kurzy.txt'),          'w', encoding='utf-8') as f: f.write(stahni_kurzy())
+    with open(os.path.join(cache_dir, 'horoskop.txt'),       'w', encoding='utf-8') as f: f.write(stahni_horoskopy())
+    with open(os.path.join(cache_dir, 'kurzy_historie.txt'), 'w', encoding='utf-8') as f: f.write(stahni_kurzy_historie())
+
     print("Vsechno uspesne stazeno a ulozeno!")
+    print(f"  Zpravy: {zpravy_dir}")
+    print(f"  Archiv: {archiv_dnes}")
+    print(f"  Cache:  {cache_dir}")

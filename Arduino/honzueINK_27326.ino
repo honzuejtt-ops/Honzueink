@@ -2137,6 +2137,8 @@ void zobrazSDProhlizec() {
 }
 
 // ==== BMP PROHLÍŽEČ — ZOBRAZENÍ 1-BITOVÉHO BMP NA E-INK ====
+// Maximální velikost BMP dat v bajtech (296×128 1-bit = 5120 B + zarovnání)
+#define BMP_MAX_BUFFER_SIZE 6144
 bool zobrazBmpZSD(const char* cesta) {
   File f = SD.open(cesta);
   if (!f) return false;
@@ -2160,9 +2162,9 @@ bool zobrazBmpZSD(const char* cesta) {
 
   int rowBytes = ((bmpW + 31) / 32) * 4;
   long totalBytes = (long)rowBytes * absH;
-  if (totalBytes > 6144) { f.close(); return false; } // BMP příliš velký
+  if (totalBytes > BMP_MAX_BUFFER_SIZE) { f.close(); return false; } // BMP příliš velký
 
-  static uint8_t bmpBuf[6144];
+  static uint8_t bmpBuf[BMP_MAX_BUFFER_SIZE];
   f.seek(dataOffset);
   f.read(bmpBuf, (size_t)totalBytes);
   f.close();
@@ -2527,9 +2529,21 @@ void loop() {
             const char* soubory[] = { "zpravy_svet.txt", "zpravy_cr.txt", "zpravy_tech.txt" };
             String cesta = String("/eindata/zpravy/archiv/") + archivAktualniDatum + "/" + soubory[archivZpravySubIndex];
             File fArc = SD.open(cesta.c_str());
-            if (fArc) { String obsah = fArc.readString(); fArc.close(); parsujZpravy(obsah); }
-            else { aktualniZpravy[0].titulek = "Žádná data"; aktualniZpravy[0].datum = ""; aktualniZpravy[0].perex = "Archiv pro " + archivAktualniDatum + " není dostupný."; aktualniZpravy[0].text = ""; pocetZprav = 1; }
-            zpravyZArchivu = true; clanekMenuIndex = 0; appState = STATE_ZPRAVY_SEZNAM; zobrazSeznamZprav();
+            if (fArc) {
+              String obsah = fArc.readString();
+              fArc.close();
+              parsujZpravy(obsah);
+            } else {
+              aktualniZpravy[0].titulek = "Žádná data";
+              aktualniZpravy[0].datum   = "";
+              aktualniZpravy[0].perex   = "Archiv pro " + archivAktualniDatum + " není dostupný.";
+              aktualniZpravy[0].text    = "";
+              pocetZprav = 1;
+            }
+            zpravyZArchivu = true;
+            clanekMenuIndex = 0;
+            appState = STATE_ZPRAVY_SEZNAM;
+            zobrazSeznamZprav();
           }
           break;
 

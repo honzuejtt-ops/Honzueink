@@ -29,12 +29,6 @@
 #define EINDATA_ROOT "/eindata"
 
 // -------------------------------------------------------------------
-// Struktury pro archiv a dynamické knihy
-// -------------------------------------------------------------------
-struct ArchivDatum { char datum[12]; };
-struct SDKniha    { char nazev[52]; };
-
-// -------------------------------------------------------------------
 // spocitejRadky()
 // Spočítá počet řádků v souboru na SD kartě (počítá znaky '\n').
 // Vrátí 0 pokud soubor neexistuje.

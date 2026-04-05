@@ -1393,6 +1393,78 @@ String stahniTextZUrl(const String& nazev, const String& url) {
   return vysledek;
 }
 
+// Streamuje HTTP odpověď přímo do souboru na SD/LittleFS — šetří RAM během TLS stahování.
+// Místo http.getString() (celý soubor v RAM) čteme po 2KB blocích → špička jen ~2 KB místo ~70 KB.
+// Vrátí počet zapsaných bajtů, 0 při chybě.
+int stahniDoSouboru(const String& nazev, const String& url, const char* cesta, bool naSD) {
+  for (int pokus = 0; pokus < 2; pokus++) {
+    if (pokus > 0) delay(300);
+    initSharedClient();
+    HTTPClient http;
+    http.setFollowRedirects(HTTPC_STRICT_FOLLOW_REDIRECTS);
+    http.setReuse(true);
+    http.begin(sharedClient, url);
+    http.setTimeout(8000);
+    http.addHeader("User-Agent", "ESP32-Honzueink");
+
+    int httpCode = http.GET();
+    if (httpCode != 200) {
+      Serial.println((pokus == 0 ? "CHYBA GITHUB: " : "RETRY CHYBA: ") + String(httpCode) + " u souboru: " + nazev);
+      http.end();
+      continue;
+    }
+
+    // Otevřeme výstupní soubor
+    File f;
+    if (naSD) {
+      if (SD.exists(cesta)) SD.remove(cesta);
+      f = SD.open(cesta, FILE_WRITE);
+    } else {
+      f = LittleFS.open(cesta, "w");
+    }
+    if (!f) {
+      Serial.println("Nelze otevřít soubor: " + String(cesta));
+      http.end();
+      return 0;
+    }
+
+    // Streamujeme odpověď po částech — na haldě jen 2 KB buffer místo celého souboru
+    WiFiClient* stream = http.getStreamPtr();
+    int totalWritten = 0;
+    uint8_t buf[2048];
+    // contentLen: kladné = známá velikost, -1 = chunked (ukončí http.connected())
+    int contentLen = http.getSize();
+    unsigned long lastData = millis();
+
+    while (http.connected() && (contentLen > 0 || contentLen == -1)) {
+      size_t avail = stream->available();
+      if (avail) {
+        size_t toRead = (avail < sizeof(buf)) ? avail : sizeof(buf);
+        int bytesRead = stream->readBytes(buf, toRead);
+        if (bytesRead > 0) {
+          f.write(buf, bytesRead);
+          totalWritten += bytesRead;
+          if (contentLen > 0) contentLen -= bytesRead;
+          lastData = millis();
+        }
+      } else {
+        delay(1);
+        if (millis() - lastData > 8000) break; // timeout
+      }
+    }
+
+    f.close();
+    http.end();
+
+    // Práh > 20 B odpovídá originálnímu kódu (tmp.length() > 20 u stahniTextZUrl)
+    if (totalWritten > 20) {
+      Serial.println("Staženo " + nazev + ": " + String(totalWritten) + " B");
+      return totalWritten;
+    }
+  }
+  return 0;
+}
+
 void aktualizovatDataNaPozadi(bool vynuceno) {
   bool casNaUpdate = false;
   time_t now = time(NULL);
@@ -1430,55 +1502,83 @@ void aktualizovatDataNaPozadi(bool vynuceno) {
       
       Serial.print("Volná halda před stahováním: ");
       Serial.println(ESP.getFreeHeap());
-      
+
+      // === STREAMING STAHOVÁNÍ — HTTP → soubor přímo, na haldě jen 2 KB buffer ===
+      // Zprávy streamujeme do aktuálního adresáře na SD (nebo LittleFS cache pokud SD chybí)
+      bool aktualniOK = sdReady && _zajistiSlozku("/eindata/zpravy") && _zajistiSlozku("/eindata/zpravy/aktualni");
+
       nakresliLoadScreen("Stahuji zprávy ze světa...", 15);
-      {
-        String tmp = stahniTextZUrl("Svet", urlZpravySvet);
-        if (tmp.length() > 20) { ulozZpravuDoCache("svet", tmp); ulozAktualniZpravuNaSD("zpravy_svet.txt", tmp); archivujDeduplikovane("zpravy_svet.txt", tmp); asponNecoSeStahlo = true; }
+      if (aktualniOK) {
+        if (stahniDoSouboru("Svet", urlZpravySvet, "/eindata/zpravy/aktualni/zpravy_svet.txt", true) > 0) asponNecoSeStahlo = true;
+      } else {
+        if (stahniDoSouboru("Svet", urlZpravySvet, "/svet.dat", false) > 0) asponNecoSeStahlo = true;
       }
-      
+
       nakresliLoadScreen("Stahuji zprávy z ČR...", 28);
-      {
-        String tmp = stahniTextZUrl("CR", urlZpravyCR);
-        if (tmp.length() > 20) { ulozZpravuDoCache("cr", tmp); ulozAktualniZpravuNaSD("zpravy_cr.txt", tmp); archivujDeduplikovane("zpravy_cr.txt", tmp); asponNecoSeStahlo = true; }
+      if (aktualniOK) {
+        if (stahniDoSouboru("CR", urlZpravyCR, "/eindata/zpravy/aktualni/zpravy_cr.txt", true) > 0) asponNecoSeStahlo = true;
+      } else {
+        if (stahniDoSouboru("CR", urlZpravyCR, "/cr.dat", false) > 0) asponNecoSeStahlo = true;
       }
-      
+
       nakresliLoadScreen("Stahuji Tech a AI...", 42);
-      {
-        String tmp = stahniTextZUrl("Tech", urlTechAI);
-        if (tmp.length() > 20) { ulozZpravuDoCache("tech", tmp); ulozAktualniZpravuNaSD("zpravy_tech.txt", tmp); archivujDeduplikovane("zpravy_tech.txt", tmp); asponNecoSeStahlo = true; }
+      if (aktualniOK) {
+        if (stahniDoSouboru("Tech", urlTechAI, "/eindata/zpravy/aktualni/zpravy_tech.txt", true) > 0) asponNecoSeStahlo = true;
+      } else {
+        if (stahniDoSouboru("Tech", urlTechAI, "/tech.dat", false) > 0) asponNecoSeStahlo = true;
       }
-      
+
+      // Ostatní data → přímo do cache na SD (nebo LittleFS)
       nakresliLoadScreen("Stahuji Počasí...", 55);
-      {
-        String tmp = stahniTextZUrl("Pocasi", urlPocasi);
-        if (tmp.length() > 20) { ulozZpravuDoCache("poc", tmp); asponNecoSeStahlo = true; }
+      if (sdReady) {
+        if (stahniDoSouboru("Pocasi", urlPocasi, "/eindata/cache/poc.dat", true) > 0) asponNecoSeStahlo = true;
+      } else {
+        if (stahniDoSouboru("Pocasi", urlPocasi, "/poc.dat", false) > 0) asponNecoSeStahlo = true;
       }
-      
+
       nakresliLoadScreen("Stahuji Kurzy...", 68);
-      {
-        String tmp = stahniTextZUrl("Kurzy", urlKurzy);
-        if (tmp.length() > 10) { ulozZpravuDoCache("kur", tmp); asponNecoSeStahlo = true; }
+      if (sdReady) {
+        if (stahniDoSouboru("Kurzy", urlKurzy, "/eindata/cache/kur.dat", true) > 0) asponNecoSeStahlo = true;
+      } else {
+        if (stahniDoSouboru("Kurzy", urlKurzy, "/kur.dat", false) > 0) asponNecoSeStahlo = true;
       }
 
       nakresliLoadScreen("Stahuji Horoskop...", 80);
-      {
-        String tmp = stahniTextZUrl("Horoskop", urlHoroskop);
-        if (tmp.length() > 20) { ulozZpravuDoCache("horo", tmp); asponNecoSeStahlo = true; }
+      if (sdReady) {
+        if (stahniDoSouboru("Horoskop", urlHoroskop, "/eindata/cache/horo.dat", true) > 0) asponNecoSeStahlo = true;
+      } else {
+        if (stahniDoSouboru("Horoskop", urlHoroskop, "/horo.dat", false) > 0) asponNecoSeStahlo = true;
       }
 
       nakresliLoadScreen("Stahuji hist. kurzů...", 88);
-      {
-        String tmp = stahniTextZUrl("KurzyHist", urlKurzyHistorie);
-        if (tmp.length() > 10) { ulozZpravuDoCache("khist", tmp); asponNecoSeStahlo = true; }
+      if (sdReady) {
+        if (stahniDoSouboru("KurzyHist", urlKurzyHistorie, "/eindata/cache/khist.dat", true) > 0) asponNecoSeStahlo = true;
+      } else {
+        if (stahniDoSouboru("KurzyHist", urlKurzyHistorie, "/khist.dat", false) > 0) asponNecoSeStahlo = true;
       }
-      
-      // Uklidíme sdílený klient po dokončení všech stahování
+
+      // Uklidíme TLS klient — uvolní ~40 KB RAM pro načtení a zpracování dat
       sharedClient.stop();
       sharedClientInitialized = false;
+
+      Serial.print("Volná halda po stažení (TLS uvolněno): ");
+      Serial.println(ESP.getFreeHeap());
+
       if (asponNecoSeStahlo) {
-        nactiStazenaData(); // Načte z LittleFS zpět do RAM jen to co potřebujeme
+        // Načteme data z SD/LittleFS zpět do RAM pro parsování a zobrazení
+        nactiStazenaData();
         rtc_posledniAktualizace = time(NULL);
+
+        // Záloha zpráv do cache .dat (truncated fallback pro případ ztráty aktuálního adresáře)
+        if (stazenaDataSvet.length() > 20)  ulozZpravuDoCache("svet", stazenaDataSvet);
+        if (stazenaDataCR.length() > 20)    ulozZpravuDoCache("cr", stazenaDataCR);
+        if (stazenaDataTech.length() > 20)  ulozZpravuDoCache("tech", stazenaDataTech);
+
+        // Archivace s deduplikací — nyní WiFi/TLS uvolněno, dostatek RAM
+        if (stazenaDataSvet.length() > 20)  archivujDeduplikovane("zpravy_svet.txt", stazenaDataSvet);
+        if (stazenaDataCR.length() > 20)    archivujDeduplikovane("zpravy_cr.txt", stazenaDataCR);
+        if (stazenaDataTech.length() > 20)  archivujDeduplikovane("zpravy_tech.txt", stazenaDataTech);
+
         promazArchivStarsi7Dni();
       }
       
@@ -2509,6 +2609,14 @@ void setup() {
 
   if (!LittleFS.begin(true)) { // true = formátuj pokud selhá montáž
     Serial.println("LittleFS: kritická chyba montáže!");
+  }
+
+  // Diagnostika paměti — pomáhá identifikovat dostupné zdroje
+  Serial.print("Volná halda: "); Serial.print(ESP.getFreeHeap() / 1024); Serial.println(" KB");
+  if (psramFound()) {
+    Serial.print("PSRAM nalezena: "); Serial.print(ESP.getPsramSize() / 1024); Serial.println(" KB");
+  } else {
+    Serial.println("PSRAM: není k dispozici");
   }
 
   // 1. ZKUSÍME NAČÍST DATA Z ULOŽENÉ PAMĚTI

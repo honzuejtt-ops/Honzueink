@@ -4,12 +4,26 @@ import requests
 import xml.etree.ElementTree as ET
 from datetime import datetime
 from bs4 import BeautifulSoup
-import json
 import trafilatura
 import re
+import time
 
 # Kořenová cesta k SD kartě (nebo lokální složce při spuštění v CI/locálně)
 SD_CESTA = os.environ.get('SD_CESTA', './eindata')
+
+# Sdileny HTTP klient + jednoduche retry
+SESSION = requests.Session()
+
+def get_with_retry(url, headers=None, timeout=10, retries=3, backoff=1.2):
+    last_err = None
+    for attempt in range(retries):
+        try:
+            return SESSION.get(url, headers=headers, timeout=timeout)
+        except requests.RequestException as e:
+            last_err = e
+            if attempt < retries - 1:
+                time.sleep(backoff * (attempt + 1))
+    raise last_err
 
 # --- FUNKCE PRO VYTĚŽENÍ TEXTU PŘÍMO Z ČLÁNKU (Trafilatura) ---
 def stahni_text_clanku(url, perex):
@@ -31,8 +45,8 @@ def stahni_text_clanku(url, perex):
                 if slovo in obsah_maly:
                     return perex + "\n\n(Pozn: Článek je uzamčen za paywallem/předplatným)"
             
-            if len(obsah) > 6000:
-                return obsah[:6000] + "...\n(Pokracovani na webu)"
+            if len(obsah) > 10000:
+                return obsah[:10000] + "...\n(Pokracovani na webu)"
             return obsah
             
         return perex + "\n\n(Pozn: Z tohoto webu nelze obsah přímo vyčíst)"
@@ -44,7 +58,7 @@ def stahni_zpravy(rss_url, limit=15):
     from email.utils import parsedate_to_datetime
     hlavicky = {"User-Agent": "Mozilla/5.0"}
     try:
-        odpoved = requests.get(rss_url, headers=hlavicky, timeout=10)
+        odpoved = get_with_retry(rss_url, headers=hlavicky, timeout=10, retries=3)
         try:
             root = ET.fromstring(odpoved.content)
         except ET.ParseError:
@@ -233,20 +247,36 @@ def stahni_horoskopy():
     return res
 
 def stahni_zpravy_multi(zdroje, celkovy_limit=10):
-    """Stáhne zprávy z více RSS zdrojů, dokud nedosáhne limitu."""
-    vsechny = ""
-    pocet = 0
+    """Stáhne zprávy z více RSS zdrojů, deduplikuje podle titulku a zaloguje průběh."""
+    vybrane = []  # (dt, titulek, blok)
+    titulky = set()
+    pocet_unikat = 0
     for rss_url, limit_per_source in zdroje:
-        if pocet >= celkovy_limit:
+        if pocet_unikat >= celkovy_limit:
             break
-        zbyvajici = celkovy_limit - pocet
+        zbyvajici = celkovy_limit - pocet_unikat
         limit = min(limit_per_source, zbyvajici)
         data = stahni_zpravy(rss_url, limit=limit)
-        novy_pocet = data.count("|E|")
-        if novy_pocet > 0:
-            vsechny += data
-            pocet += novy_pocet
-    return vsechny
+        bloky = extrahuj_bloky(data)
+        pridano = 0
+        duplikaty = 0
+        for b in bloky:
+            titulek = b["titulek"]
+            if titulek in titulky:
+                duplikaty += 1
+                continue
+            dt = parse_datum_na_datetime(b["datum_raw"])
+            vybrane.append((dt, titulek, b["blok"]))
+            titulky.add(titulek)
+            pridano += 1
+            pocet_unikat += 1
+            if pocet_unikat >= celkovy_limit:
+                break
+        print(f"  RSS {rss_url}: raw={len(bloky)} pridano={pridano} dup={duplikaty}")
+
+    vybrane.sort(key=lambda x: x[0], reverse=True)
+    vysledny_text = "".join(b[2] for b in vybrane[:celkovy_limit])
+    return vysledny_text
 
 def extrahuj_titulky(text):
     """Vrátí set titulků ze zpravodajského textu ve formátu |T|...|E|."""
@@ -270,7 +300,7 @@ def extrahuj_titulky(text):
     return titulky
 
 def extrahuj_bloky(text):
-    """Vrátí list (titulek, blok) ze zpravodajského textu."""
+    """Vrátí list dictů: titulek, datum_raw, blok."""
     bloky = []
     pos = 0
     while True:
@@ -289,25 +319,155 @@ def extrahuj_bloky(text):
         d_start = blok.find("|D|")
         konec = d_start if (d_start != -1 and d_start < p_start) else p_start
         titulek = blok[3:konec].strip()
-        bloky.append((titulek, blok))
+        datum_raw = ""
+        if d_start != -1 and p_start > d_start + 3:
+            datum_raw = blok[d_start + 3:p_start].strip()
+        bloky.append({
+            "titulek": titulek,
+            "datum_raw": datum_raw,
+            "blok": blok
+        })
         pos = e_end
     return bloky
 
-def uloz_archiv_deduplikovane(archiv_cesta, nova_data):
-    """Připojí do archivního souboru pouze zprávy s novým titulkem."""
+def parse_datum_na_datetime(datum_raw):
+    """
+    Převede datum článku na datetime.
+    Podporuje např.: '2026-04-03 12:34', '3.4.2026 12:34', '3.4. 12:34', '3.4.'.
+    Když chybí rok, použije aktuální.
+    """
+    if not datum_raw:
+        return datetime.now().replace(second=0, microsecond=0)
+
+    s = datum_raw.strip().replace(",", " ").replace("T", " ")
+    s = re.sub(r"\s+", " ", s)
+
+    m = re.search(r"(\d{4})-(\d{2})-(\d{2})(?:\s+(\d{1,2}):(\d{2}))?", s)
+    if m:
+        y, mo, d = int(m.group(1)), int(m.group(2)), int(m.group(3))
+        hh, mm = int(m.group(4) or 0), int(m.group(5) or 0)
+        try:
+            return datetime(y, mo, d, hh, mm)
+        except ValueError:
+            pass
+
+    m = re.search(r"(\d{1,2})\.(\d{1,2})\.(\d{4})?(?:\s+(\d{1,2}):(\d{2}))?", s)
+    if m:
+        d, mo = int(m.group(1)), int(m.group(2))
+        y = int(m.group(3)) if m.group(3) else datetime.now().year
+        hh, mm = int(m.group(4) or 0), int(m.group(5) or 0)
+        try:
+            return datetime(y, mo, d, hh, mm)
+        except ValueError:
+            pass
+
+    return datetime.now().replace(second=0, microsecond=0)
+
+def uloz_archiv_deduplikovane_po_dnech(archiv_dir, soubor, nova_data):
+    """
+    Uloží články do archiv/YYYY-MM-DD/{soubor} podle data článku.
+    V cílovém souboru zachová deduplikaci podle titulku a řadí od nejnovějších.
+    """
+    os.makedirs(archiv_dir, exist_ok=True)
     existujici_titulky = set()
-    if os.path.exists(archiv_cesta):
-        with open(archiv_cesta, 'r', encoding='utf-8') as f:
-            existujici_titulky = extrahuj_titulky(f.read())
+    for den in os.listdir(archiv_dir):
+        p = os.path.join(archiv_dir, den, soubor)
+        if os.path.exists(p):
+            with open(p, 'r', encoding='utf-8') as f:
+                existujici_titulky |= extrahuj_titulky(f.read())
+
     nove_bloky = extrahuj_bloky(nova_data)
+    podle_dne = {}
     pridano = 0
-    with open(archiv_cesta, 'a', encoding='utf-8') as f:
-        for titulek, blok in nove_bloky:
-            if titulek not in existujici_titulky:
-                f.write(blok + "\n")
-                existujici_titulky.add(titulek)
-                pridano += 1
+
+    for item in nove_bloky:
+        titulek = item["titulek"]
+        if titulek in existujici_titulky:
+            continue
+
+        dt = parse_datum_na_datetime(item["datum_raw"])
+        den = dt.strftime("%Y-%m-%d")
+        item["dt"] = dt
+        podle_dne.setdefault(den, []).append(item)
+        existujici_titulky.add(titulek)
+        pridano += 1
+
+    for den, items in podle_dne.items():
+        den_dir = os.path.join(archiv_dir, den)
+        os.makedirs(den_dir, exist_ok=True)
+        archiv_cesta = os.path.join(den_dir, soubor)
+
+        exist = []
+        if os.path.exists(archiv_cesta):
+            with open(archiv_cesta, 'r', encoding='utf-8') as f:
+                for old in extrahuj_bloky(f.read()):
+                    old["dt"] = parse_datum_na_datetime(old["datum_raw"])
+                    exist.append(old)
+
+        merged = {}
+        for old in exist:
+            merged[old["titulek"]] = old
+        for new in items:
+            merged[new["titulek"]] = new
+
+        serazene = sorted(merged.values(), key=lambda x: x["dt"], reverse=True)
+        with open(archiv_cesta, 'w', encoding='utf-8') as f:
+            for x in serazene:
+                f.write(x["blok"] + "\n")
+
     return pridano
+
+def oprav_existujici_archiv(archiv_dir):
+    """
+    Fixne špatně datované články v archivu:
+    - článek přesune do správné YYYY-MM-DD složky dle |D|
+    - v každém souboru setřídí od nejnovějšího
+    """
+    if not os.path.isdir(archiv_dir):
+        return
+
+    soubory = ('zpravy_svet.txt', 'zpravy_cr.txt', 'zpravy_tech.txt')
+    agregace = {s: {} for s in soubory}
+
+    for den in os.listdir(archiv_dir):
+        den_dir = os.path.join(archiv_dir, den)
+        if not os.path.isdir(den_dir):
+            continue
+        for soubor in soubory:
+            cesta = os.path.join(den_dir, soubor)
+            if not os.path.exists(cesta):
+                continue
+            with open(cesta, 'r', encoding='utf-8') as f:
+                for item in extrahuj_bloky(f.read()):
+                    dt = parse_datum_na_datetime(item["datum_raw"])
+                    spravny_den = dt.strftime("%Y-%m-%d")
+                    item["dt"] = dt
+                    item["spravny_den"] = spravny_den
+                    key = (spravny_den, item["titulek"])
+                    agregace[soubor][key] = item
+
+    # Přepis celé struktury jen pro zprávy soubory
+    for den in os.listdir(archiv_dir):
+        den_dir = os.path.join(archiv_dir, den)
+        if os.path.isdir(den_dir):
+            for soubor in soubory:
+                p = os.path.join(den_dir, soubor)
+                if os.path.exists(p):
+                    os.remove(p)
+
+    for soubor in soubory:
+        by_day = {}
+        for (_, _), item in agregace[soubor].items():
+            by_day.setdefault(item["spravny_den"], []).append(item)
+
+        for den, items in by_day.items():
+            den_dir = os.path.join(archiv_dir, den)
+            os.makedirs(den_dir, exist_ok=True)
+            p = os.path.join(den_dir, soubor)
+            items_sorted = sorted(items, key=lambda x: x["dt"], reverse=True)
+            with open(p, 'w', encoding='utf-8') as f:
+                for x in items_sorted:
+                    f.write(x["blok"] + "\n")
 
 if __name__ == "__main__":
     print("Spoustim stahovani z webu a RSS...")
@@ -319,7 +479,7 @@ if __name__ == "__main__":
     for d in (zpravy_dir, cache_dir, archiv_dir):
         os.makedirs(d, exist_ok=True)
 
-    # 1. Běžné zprávy a tech
+    # 1. Běžné zprávy a tech/ai
     svet_data = stahni_zpravy_multi([
         ("https://ct24.ceskatelevize.cz/rss/svet", 15),
         ("https://www.novinky.cz/rss/zahranicni", 10),
@@ -328,13 +488,18 @@ if __name__ == "__main__":
         ("https://ct24.ceskatelevize.cz/rss/domaci", 15),
         ("https://www.novinky.cz/rss/domaci", 10),
     ], celkovy_limit=20)
-    tech_data = stahni_zpravy("https://www.lupa.cz/rss/clanky/", limit=10)
-    tech_data += stahni_zpravy("https://www.cnews.cz/feed/", limit=10)
+    tech_data = stahni_zpravy_multi([
+        ("https://www.lupa.cz/rss/clanky/", 8),
+        ("https://www.cnews.cz/feed/", 8),
+        ("https://www.root.cz/rss/clanky/", 6),
+        ("https://www.zive.cz/rss/sc-47/default.aspx", 6),
+        ("https://venturebeat.com/category/ai/feed/", 5),
+        ("https://openai.com/news/rss.xml", 4),
+        ("https://blog.google/technology/ai/rss/", 4),
+    ], celkovy_limit=30)
 
-    # 2. Archivace a ukládání zpráv do eindata/zpravy/aktualni/ a archiv/dnes/
-    dnes = datetime.now().strftime('%Y-%m-%d')
-    archiv_dnes = os.path.join(archiv_dir, dnes)
-    os.makedirs(archiv_dnes, exist_ok=True)
+    # 2. Archivace a ukládání zpráv do eindata/zpravy/aktualni/ a archiv/YYYY-MM-DD dle data článku
+    oprav_existujici_archiv(archiv_dir)
 
     # Uložení aktuálních zpráv (přepis)
     for soubor, data in [
@@ -344,9 +509,8 @@ if __name__ == "__main__":
     ]:
         with open(os.path.join(zpravy_dir, soubor), 'w', encoding='utf-8') as f:
             f.write(data)
-        archiv_cesta = os.path.join(archiv_dnes, soubor)
-        pridano = uloz_archiv_deduplikovane(archiv_cesta, data)
-        print(f"  Archiv {dnes}/{soubor}: +{pridano} novych")
+        pridano = uloz_archiv_deduplikovane_po_dnech(archiv_dir, soubor, data)
+        print(f"  Archiv {soubor}: +{pridano} novych (trideni podle data clanku)")
 
     # Promazat archivní složky starší 7 dní
     for slozka in os.listdir(archiv_dir):
@@ -366,5 +530,5 @@ if __name__ == "__main__":
 
     print("Vsechno uspesne stazeno a ulozeno!")
     print(f"  Zpravy: {zpravy_dir}")
-    print(f"  Archiv: {archiv_dnes}")
+    print(f"  Archiv: {archiv_dir}")
     print(f"  Cache:  {cache_dir}")

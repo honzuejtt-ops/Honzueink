@@ -1,3 +1,4 @@
+
 #ifndef SDKNIHOVNA_READER_H
 #define SDKNIHOVNA_READER_H
 
@@ -164,20 +165,65 @@ int nactiArchivDatumy(String archivDatumy[], int maxCount) {
 // Prochází soubory /eindata/knihy/kniha_N.txt a načte jejich názvy
 // z prvního řádku. Vrátí počet nalezených knih (max. maxCount).
 // -------------------------------------------------------------------
-int nactiSeznamKnih(String nazvy[], int maxCount) {
-  int count = 0;
-  for (int n = 1; n <= maxCount; n++) {
-    String cesta = String("/eindata/knihy/kniha_") + n + ".txt";
-    File f = SD.open(cesta.c_str());
-    if (!f) break;
-    String radek = f.readStringUntil('\n');
-    f.close();
-    radek.trim();
-    if (radek.length() == 0) radek = "Kniha " + String(n);
-    nazvy[count] = radek;
-    count++;
+static bool _jeReadmeSoubor(const char* fname) {
+  if (!fname) return false;
+  const char* p = "README";
+  for (int i = 0; p[i] != '\0'; i++) {
+    char c = fname[i];
+    if (c == '\0') return false;
+    if (c >= 'a' && c <= 'z') c = c - ('a' - 'A');
+    if (c != p[i]) return false;
   }
+  return true;
+}
+
+static bool _jeDatovyTxtSoubor(const char* fname) {
+  if (!fname) return false;
+  int n = strlen(fname);
+  if (n < 4) return false;
+  char a = fname[n - 4], b = fname[n - 3], c = fname[n - 2], d = fname[n - 1];
+  bool txt = (a == '.' && (b == 't' || b == 'T') && (c == 'x' || c == 'X') && (d == 't' || d == 'T'));
+  return txt && !_jeReadmeSoubor(fname);
+}
+
+int nactiSeznamKnihSD(String nazvy[], String cesty[], int maxCount) {
+  int count = 0;
+  if (!SD.exists("/eindata/knihy")) return 0;
+  File dir = SD.open("/eindata/knihy");
+  if (!dir || !dir.isDirectory()) { if (dir) dir.close(); return 0; }
+  File entry = dir.openNextFile();
+  while (entry && count < maxCount) {
+    if (!entry.isDirectory()) {
+      const char* full = entry.name();
+      const char* lastSlash = strrchr(full, '/');
+      const char* fname = lastSlash ? (lastSlash + 1) : full;
+      if (_jeDatovyTxtSoubor(fname)) {
+        String cesta = String("/eindata/knihy/") + fname;
+        String radek = "";
+        File f = SD.open(cesta.c_str());
+        if (f) {
+          radek = f.readStringUntil('\n');
+          f.close();
+        }
+        radek.trim();
+        if (radek.length() == 0) radek = String(fname);
+        nazvy[count] = radek;
+        cesty[count] = cesta;
+        count++;
+      }
+    }
+    entry.close();
+    entry = dir.openNextFile();
+  }
+  if (entry) entry.close();
+  dir.close();
   return count;
+}
+
+int nactiSeznamKnih(String nazvy[], int maxCount) {
+  String tmpCesty[20];
+  if (maxCount > 20) maxCount = 20;
+  return nactiSeznamKnihSD(nazvy, tmpCesty, maxCount);
 }
 
 // -------------------------------------------------------------------
@@ -223,6 +269,121 @@ static bool zajistiSDSlozky() {
 }
 
 // -------------------------------------------------------------------
+// zajistiSlovnikJazyky()
+// Vytvoří jazykové soubory slovníku, pokud chybí.
+// Formát řádku: LEVA|PRAVA
+// -------------------------------------------------------------------
+static void _zapisPokudNeexistuje(const char* cesta, const char* obsah) {
+  if (SD.exists(cesta)) return;
+  File f = SD.open(cesta, FILE_WRITE);
+  if (!f) return;
+  f.print(obsah);
+  f.close();
+}
+
+static void _zapisVzdy(const char* cesta, const char* obsah) {
+  if (SD.exists(cesta)) SD.remove(cesta);
+  File f = SD.open(cesta, FILE_WRITE);
+  if (!f) return;
+  f.print(obsah);
+  f.close();
+}
+
+static void zajistiSlovnikJazyky() {
+  _zapisPokudNeexistuje("/eindata/slovnik/cz_en.txt",
+    "ahoj|hello\n"
+    "dekuji|thank you\n"
+    "prosim|please\n");
+  _zapisPokudNeexistuje("/eindata/slovnik/cz_it.txt",
+    "ahoj|ciao\n"
+    "dekuji|grazie\n"
+    "prosim|per favore\n");
+  _zapisPokudNeexistuje("/eindata/slovnik/cz_de.txt",
+    "ahoj|hallo\n"
+    "dekuji|danke\n"
+    "prosim|bitte\n");
+  _zapisPokudNeexistuje("/eindata/slovnik/cz_es.txt",
+    "ahoj|hola\n"
+    "dekuji|gracias\n"
+    "prosim|por favor\n");
+  _zapisPokudNeexistuje("/eindata/slovnik/cz_fr.txt",
+    "ahoj|bonjour\n"
+    "dekuji|merci\n"
+    "prosim|s'il vous plait\n");
+  _zapisPokudNeexistuje("/eindata/slovnik/cz_sv.txt",
+    "ahoj|hej\n"
+    "dekuji|tack\n"
+    "prosim|snalla\n");
+  _zapisPokudNeexistuje("/eindata/slovnik/cz_uk.txt",
+    "ahoj|privit\n"
+    "dekuji|dyakuyu\n"
+    "prosim|bud laska\n");
+}
+
+static void zajistiNavodyVDataSlozkach() {
+  _zapisVzdy("/eindata/README_FORMAT.txt",
+    "eINK data slozky (struzny navod)\n"
+    "- Knihy: /eindata/knihy\n"
+    "- Gamebook: /eindata/gamebook\n"
+    "- Generator: /eindata/generator\n"
+    "- Kviz: /eindata/kviz\n"
+    "- Hry (WYR): /eindata/hry\n"
+    "- Slovnik: /eindata/slovnik\n"
+    "V jednotlivych slozkach najdes README_FORMAT.txt s detaily.\n");
+
+  _zapisVzdy("/eindata/knihy/README_FORMAT.txt",
+    "KNIHY - format\n"
+    "Soubor: libovolny_nazev.txt\n"
+    "1. radek = nazev knihy (zobrazi se v menu)\n"
+    "2.+ radek = text knihy\n"
+    "README*.txt se do knihovny nezarazuje.\n");
+
+  _zapisVzdy("/eindata/gamebook/README_FORMAT.txt",
+    "GAMEBOOK - format\n"
+    "Doporuceny format souboru:\n"
+    "1. radek = nazev gamebooku (zobrazi se v menu)\n"
+    "Dalsi radky = uzly ve formatu:\n"
+    "text|volbaA|volbaB|popisA|popisB\n"
+    "Priklad:\n"
+    "Stojis na krizovatce.|1|2|Jit doleva|Jit doprava\n"
+    "Konec.|-1|-1||\n"
+    "Pozn.: Pokud 1. radek vypada jako uzel, bere se jako uzel (kompatibilita).\n");
+
+  _zapisVzdy("/eindata/generator/README_FORMAT.txt",
+    "GENERATOR - format\n"
+    "Kazdy radek = 1 polozka.\n"
+    "Doporucene soubory: vtipy.txt, zalmy.txt, citaty.txt, fakty.txt\n"
+    "Muzes upravovat radky nebo vkladat cele TXT soubory.\n");
+
+  _zapisVzdy("/eindata/kviz/README_FORMAT.txt",
+    "KVIZ - format\n"
+    "Kazdy radek:\n"
+    "otazka|odpoved|kategorie|obtiznost\n"
+    "kategorie: 0..5 (Kultura, Veda, Vseobecny, Osobnosti, Sport, Priroda)\n"
+    "obtiznost: 100 / 200 / 300\n"
+    "Priklad:\n"
+    "Hlavni mesto Italie?|Rim|2|100\n"
+    "Muzes doplnovat nove radky i cele soubory.\n");
+
+  _zapisVzdy("/eindata/hry/README_FORMAT.txt",
+    "HRY - WYR format\n"
+    "Soubor: wyr.txt (nebo jiny .txt)\n"
+    "Kazdy radek:\n"
+    "otazka|moznostA|moznostB|procentaA\n"
+    "Priklad:\n"
+    "Co bys radsi?|Kavu|Caj|55\n"
+    "procentaA je 0..100.\n");
+
+  _zapisVzdy("/eindata/slovnik/README_FORMAT.txt",
+    "SLOVNIK - format\n"
+    "Kazdy radek:\n"
+    "cz|preklad\n"
+    "Priklad:\n"
+    "ahoj|hello\n"
+    "Doporucene soubory: cz_en.txt, cz_de.txt, cz_it.txt, cz_es.txt, cz_fr.txt, cz_sv.txt, cz_uk.txt\n");
+}
+
+// -------------------------------------------------------------------
 // pripravSD()
 // Hlavní funkce volaná v setup() hned po inicializaci SPI.
 //
@@ -244,6 +405,8 @@ bool pripravSD() {
   // Vždy ověříme a vytvoříme chybějící podsložky
   // (_vytvorSlozku přeskočí existující, vytvoří chybějící)
   if (!zajistiSDSlozky()) return false;
+  zajistiSlovnikJazyky();
+  zajistiNavodyVDataSlozkach();
 
   // Pokud /eindata/ už měla obsah, neexportujeme PROGMEM data znovu.
   // Kontrolujeme markerový soubor — pokud chybí, je to první spuštění.

@@ -1,4 +1,5 @@
 #include <Arduino.h>
+struct ArchivClanek;
 #include <SPI.h>
 #include <SD.h>
 #include <math.h>
@@ -9,6 +10,7 @@
 #include <WiFi.h>
 #include <HTTPClient.h>
 #include <WiFiClientSecure.h>
+#include <WebServer.h>
 #include <qrcode_rm.h>
 
 #include <time.h>
@@ -25,6 +27,9 @@
 
 // ===== SD KARTA — STAV =====
 bool sdReady = false; // true pokud SD karta funguje a /eindata/ je připravena
+bool littlefsReady = false; // true pokud je interni LittleFS uspesne pripojen
+static const char* TZ_PRAGUE = "CET-1CEST,M3.5.0/2,M10.5.0/3";
+const bool LOCAL_ARCHIVE_ON_DEVICE = false; // Archiv resi primarne Python/GitHub, na ESP volitelne vypnuto kvuli rychlosti.
 
 // ===== WIFI A INTERNET =====
 const char* ssid1 = "Barhon";
@@ -50,6 +55,17 @@ bool casSynchronizovan = false; int lastSecHodiny = -1;
 // Globální sdílený TLS klient
 WiFiClientSecure sharedClient;
 bool sharedClientInitialized = false;
+WebServer webServer(80);
+bool webUploadServerReady = false;
+bool webUploadMode = false;
+bool webUploadApMode = false;
+bool webUploadNeedsRefresh = false;
+String webUploadLastMsg = "";
+String webUploadStaIp = "";
+String webUploadApIp = "";
+
+const char* uploadApSsid = "HonzueINK-Upload";
+const char* uploadApPass = "honzue1234";
 
 void initSharedClient() {
   if (!sharedClientInitialized) {
@@ -60,6 +76,7 @@ void initSharedClient() {
 
 // PAMĚŤ PŘEŽÍVAJÍCÍ DEEP SLEEP
 RTC_DATA_ATTR time_t rtc_posledniAktualizace = 0; 
+RTC_DATA_ATTR int rtc_posledniPlanovanaAktualizace = 0; // YYYYMMDD
 
 struct Zprava { String titulek; String datum; String perex; String text; };
 Zprava aktualniZpravy[20]; int pocetZprav = 0; int clanekMenuIndex = 0;
@@ -112,6 +129,14 @@ const uint8_t* getBodyFont() {
     default: return fontyLub[1][0]; 
   } 
 }
+const uint8_t* getBodyBoldFont() {
+  switch (currentStyle) {
+    case 0: return fontyLub[currentSize][1];
+    case 1: return fontyNcen[currentSize][1];
+    case 2: return fontyHelv[currentSize][1];
+    default: return fontyLub[1][1];
+  }
+}
 const uint8_t* getTitleFont() { 
   switch (currentStyle) { 
     case 0: return fontyLub[1][1]; 
@@ -127,6 +152,14 @@ const uint8_t* getSmallFont() {
     case 2: return fontyHelv[0][0]; 
     default: return fontyLub[0][0]; 
   } 
+}
+const uint8_t* getSmallBoldFont() {
+  switch (currentStyle) {
+    case 0: return fontyLub[0][1];
+    case 1: return fontyNcen[0][1];
+    case 2: return fontyHelv[0][1];
+    default: return fontyLub[0][1];
+  }
 }
 const uint8_t* getBigFont() { 
   switch (currentStyle) { 
@@ -148,8 +181,8 @@ enum AppState {
   STATE_SLOVNIK_DETAIL, STATE_GENERATOR, STATE_GENERATOR_RESULT,
   STATE_NASTAVENI, STATE_NASTAVENI_VZHLED, STATE_NASTAVENI_BATERIE, STATE_NASTAVENI_O_ZARIZENI, STATE_LED_ON, 
   STATE_STOPKY, STATE_HRY, STATE_FLASKA, STATE_KOSTKY, STATE_KOSTKY_VYBER, 
-  STATE_GAMEBOOK, STATE_ODHALOVACKA, STATE_ODHALOVACKA_DETAIL, STATE_FRAZE_MENU, STATE_FRAZE_DETAIL, STATE_UCENI,
-  STATE_NASTAVENI_AKTUALIZACE, STATE_NASTAVENI_INTERVAL, STATE_QR_MENU, STATE_QR_ZOBRAZ,
+  STATE_GAMEBOOK_MENU, STATE_GAMEBOOK, STATE_ODHALOVACKA, STATE_ODHALOVACKA_DETAIL, STATE_FRAZE_MENU, STATE_FRAZE_DETAIL, STATE_UCENI, STATE_SLOVNIK_JAZYK,
+  STATE_NASTAVENI_AKTUALIZACE, STATE_NASTAVENI_INTERVAL, STATE_NASTAVENI_AUTOUSPANI, STATE_QR_MENU, STATE_QR_ZOBRAZ,
   STATE_KVIZ, STATE_KVIZ_ODPOVED, STATE_WYR,
   // Nové stavy (přidávají se na konec aby se neposunovaly indexy)
   STATE_KVIZ_KATEGORIE, STATE_KVIZ_OBTIZNOST,
@@ -159,13 +192,55 @@ enum AppState {
   STATE_SD_BROWSER,
   // Nové stavy pro archiv zpráv, SD prohlížeč textu/obrázků
   STATE_ARCHIV_DATUMY, STATE_ARCHIV_ZPRAVY_MENU,
-  STATE_SD_TEXT_VIEW, STATE_SD_BMP_VIEW
+  STATE_SD_TEXT_VIEW, STATE_SD_BMP_VIEW,
+  STATE_WEB_UPLOAD
 };
 
 AppState appState = STATE_MAIN_MENU;
 int menuIndex = 0, scrollOffset = 0, subMenuIndex = 0, subScrollOffset = 0, textScrollPage = 0, kostkyStran = 6;
 bool stopkyRunning = false; unsigned long stopkyStart = 0, stopkyElapsed = 0, stopkyLastDraw = 0;
-int refreshMode = 1; // 0=Pomalá (full), 1=Střední (partial, default), 2=Rychlá (partial fast)
+int refreshMode = 2; // 0=Pomalá (full), 1=Střední (partial), 2=Rychlá (výchozí)
+int refreshDrawCounter = 0;
+unsigned long lastUserActivityMs = 0;
+
+void beginUiFrame(bool partialPreferred = true) {
+  bool useFull = true;
+  bool cleanBeforeDraw = false;
+  if (refreshMode == 0) {
+    // Cisty rezim: vzdy full refresh (minimalni ghosting i na slunci).
+    useFull = true;
+  } else if (refreshMode == 1) {
+    // Stredni rezim: vetsinou partial, pravidelne full cisteni.
+    if (partialPreferred) {
+      refreshDrawCounter++;
+      useFull = (refreshDrawCounter % 10 == 0);
+      cleanBeforeDraw = useFull;
+    } else {
+      useFull = true;
+    }
+  } else {
+    // Rychly rezim: maximalni odezva, full refresh prakticky nikdy.
+    if (partialPreferred) {
+      useFull = false;
+    } else {
+      useFull = false;
+    }
+  }
+
+  if (useFull && cleanBeforeDraw) {
+    // Jednorazovy "clean pass" pred kreslenim realneho snimku.
+    // V praxi omezuje duchy po full refreshi ve strednim rezimu.
+    display.setFullWindow();
+    display.firstPage();
+    do {
+      display.fillScreen(bgColor());
+    } while (display.nextPage());
+  }
+
+  if (useFull) display.setFullWindow();
+  else display.setPartialWindow(0, 0, display.width(), display.height());
+  display.firstPage();
+}
 int gbNode = 0, gbTextPage = 0, buchaPozice[15] = {};
 int aktualniHraIdx = 0;
 int kvizKatIdx = 0; int kvizObtIdx = 0; int kvizKatScrollOffset = 0; int grafMenuIndex = 0; int horoskopMenuIndex = 0; int horoskopScrollPage = 0;
@@ -195,16 +270,23 @@ String sdTextViewTitle  = "";
 // ===== SD KVÍZ — aktuální otázka načtená ze SD =====
 String sdKvizOtazka = "", sdKvizOdpoved = "", sdKvizKatLabel = "";
 bool kvizZSD = false;
+String aktivniKvizSoubor = "/eindata/kviz/otazky.txt";
 
 // ===== SD WYR — aktuální otázka načtená ze SD =====
 String sdWyrOtazka = "", sdWyrMozA = "", sdWyrMozB = "";
 int sdWyrProcenta = 50;
 bool wyrZSD = false;
+String aktivniWyrSoubor = "/eindata/hry/wyr.txt";
 
 // ===== SD GAMEBOOK — aktuálně načtený uzel ze SD =====
 String gbTextSD = "", gbPopisASD = "", gbPopisBSD = "";
 int gbVolbaASD = -1, gbVolbaBSD = -1;
 bool gbZSD = false;
+String aktivniGamebookSoubor = "/eindata/gamebook/gamebook.txt";
+bool aktivniGamebookMaTitulek = false;
+String dynamicGamebookItems[15];
+String dynamicGamebookFiles[15];
+int dynamicGamebookCount = 0;
 
 // ===== BATERIE A STATUS =====
 // Cache pro čtení baterie — měříme max 1× za 60 sekund (čtení trvá ~50 ms)
@@ -244,13 +326,17 @@ int getBatteryPercentage() {
   if (v <= 0.1f) { lastPct = -1; return -1; }  // neznámý stav / baterie nepřipojena
 
   int pct;
-  if (v >= 4.20f) pct = 100;
+  // Kalibrace pro tvoji sestavu: 4.04 V bereme jako 100 %.
+  if (v >= 4.04f) pct = 100;
   else if (v <= 3.20f) pct = 0;
   // Nelineární mapování pro Li-pol baterii:
-  else if (v >= 4.00f) pct = 80 + (int)((v - 4.00f) / 0.20f * 20);
+  else if (v >= 3.95f) pct = 80 + (int)((v - 3.95f) / 0.09f * 20); // 3.95..4.04 => 80..100
   else if (v >= 3.80f) pct = 50 + (int)((v - 3.80f) / 0.20f * 30);
   else if (v >= 3.60f) pct = 20 + (int)((v - 3.60f) / 0.20f * 30);
   else pct = (int)((v - 3.20f) / 0.40f * 20);
+
+  if (pct < 0) pct = 0;
+  if (pct > 100) pct = 100;
 
   // Hystereze ±2 % — zabrání blikání ikony při malých výkyvech napětí
   if (lastPct >= 0 && abs(pct - lastPct) <= 2) pct = lastPct;
@@ -267,7 +353,8 @@ void nakresliStatusBar() {
       appState == STATE_NASTAVENI_O_ZARIZENI || appState == STATE_QR_ZOBRAZ || appState == STATE_KVIZ_ODPOVED ||
       appState == STATE_WYR || appState == STATE_KVIZ || appState == STATE_WYR_VYSLEDEK ||
       appState == STATE_HOROSKOP_DETAIL || appState == STATE_KURZY_GRAF ||
-      appState == STATE_SD_TEXT_VIEW || appState == STATE_SD_BMP_VIEW) {
+      appState == STATE_SD_TEXT_VIEW || appState == STATE_SD_BMP_VIEW ||
+      appState == STATE_WEB_UPLOAD) {
     return;
   }
 
@@ -312,6 +399,7 @@ const int aktualityCount = 5; String aktualityItems[] = { "Zprávy", "Světový 
 const int zpravyMenuCount = 4; String zpravyMenuItems[] = { "Ze světa", "Z ČR", "Technologie a AI", "Archiv" };
 // Dynamická knihovna — naplněna při vstupu do KNIHOVNA
 String dynamicKnihovnaItems[15];
+String dynamicKnihovnaFiles[15];
 int    dynamicKnihovnaCount = 0;
 const int toolboxCount = 3; String toolboxItems[] = { "Dioda", "Stopky", "QR Kódy" }; bool ledState = false;
 
@@ -325,9 +413,13 @@ String qrData[] = {
   "BEGIN:VCARD\nVERSION:3.0\nN:Jan Těthal\nFN:Jan Těthal\nTEL:732213904\nORG:IČO 08602573\nEND:VCARD" 
 };
 
-const int slovnikCount = 4; String slovnikItems[] = { "Hledat CZ -> EN", "Hledat EN -> CZ", "Fráze", "Učení" }; int hledanySmer = 0; 
+const int slovnikCount = 3; String slovnikItems[] = { "Hledat", "Fráze", "Učení" }; int hledanySmer = 0; 
 const int frazeMenuCount = 4; String frazeMenuItems[] = { "Nakupování", "Ubytování", "Zdraví", "Zábava" };
 int uceniSmer = 0, uceniIdx = 0; bool uceniOdhaleno = false;
+const int slovnikLangCount = 7;
+String slovnikLangNazvy[slovnikLangCount] = { "Anglictina", "Italstina", "Nemcina", "Spanelstina", "Francouzstina", "Svedstina", "Ukrajinstina" };
+String slovnikLangSoubory[slovnikLangCount] = { "cz_en.txt", "cz_it.txt", "cz_de.txt", "cz_es.txt", "cz_fr.txt", "cz_sv.txt", "cz_uk.txt" };
+int slovnikLangIdx = 0;
 char hledanyText[12] = ""; int hledanyLen = 0, abcKurzor = 0;
 const char abeceda[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; const int abcCount = 26;
 const int generatorCount = 4; String generatorItems[] = { "Vtipy", "Žalmy", "Citáty", "Fakta" };
@@ -347,12 +439,16 @@ String horoskopy[12];
 const char* grafNazvy[] = { "EUR/CZK", "USD/CZK", "BTC/CZK", "Zlato CZK/g", "Stribro CZK/g" };
 const int grafCount = 5;
 
-const int nastaveniCount = 4; String nastaveniItems[] = { "Vzhled displeje", "Aktualizace", "Baterie", "O zařízení" };
-const int vzhledCount = 5; String vzhledItems[] = { "Font", "Velikost", "Tloušťka", "Reverz", "Refresh" };
-const int aktualizaceCount = 2; String aktualizaceItems[] = { "Interval", "Vynutit nyní" };
+const int nastaveniCount = 5; String nastaveniItems[] = { "Aktualizace", "Vzhled displeje", "Auto uspání", "Baterie", "O zařízení" };
+const int vzhledCount = 5; String vzhledItems[] = { "Velikost", "Tloušťka", "Font", "Refresh", "Reverz" };
+const int aktualizaceCount = 4; String aktualizaceItems[] = { "Vynutit nyní", "Interval", "Denní hodina", "Web nahrávání" };
 const int intervalCount = 5; String intervalItems[] = {"Vypnuto", "Každé 3 hodiny", "Každých 5 hodin", "Každých 12 hodin", "Každých 24 hodin"};
 unsigned long intervalyMs[] = {0, 10800000, 18000000, 43200000, 86400000};
 int intervalIdx = 4; 
+int updateHour = -1; // -1 vypnuto, 0..23
+const int autoSleepCount = 7; String autoSleepItems[] = { "Po 1 minutě", "Po 5 minutách", "Po 10 minutách", "Po 15 minutách", "Po 30 minutách", "Po 1 hodině", "Nikdy" };
+unsigned long autoSleepMs[] = { 60000UL, 300000UL, 600000UL, 900000UL, 1800000UL, 3600000UL, 0UL };
+int autoSleepIdx = 6; // default: nikdy
 
 // ===== DATA ODHALOVAČKY =====
 bool odhalenoPole[64]; unsigned long odhalovackaLastMs = 0; bool odhalovackaKonec = false; int odhalovackaSkore = 0;
@@ -388,8 +484,7 @@ int zalamejText(const char* buf, int len, TextLine* lines, int maxLines, int max
 }
 
 void nakresliLoadScreen(String text, int progress) {
-  display.setPartialWindow(0, 0, display.width(), display.height());
-  display.firstPage();
+  beginUiFrame(true);
   do {
     display.fillScreen(bgColor());
     u8g2Fonts.setFontMode(1);
@@ -511,6 +606,7 @@ void ulozZpravuDoCache(const String& klic, const String& data) {
     }
   }
   // Fallback: LittleFS (pokud SD není dostupná)
+  if (!littlefsReady) return;
   String path = "/" + klic + ".dat";
   File f = LittleFS.open(path, "w");
   if (f) {
@@ -535,6 +631,7 @@ void ulozStazenaData() {
 }
 
 String nactiSouborZFS(const char* path) {
+  if (!littlefsReady) return "";
   if (!LittleFS.exists(path)) return "";
   File f = LittleFS.open(path, "r");
   if (!f) return "";
@@ -596,12 +693,628 @@ static String _nahodnyTextGeneratoru(const char* sdCesta, const char** pole, int
   return String(pole[random(pocet)]);
 }
 
+static bool _endsWithTxt(const char* s) {
+  if (!s) return false;
+  int n = strlen(s);
+  if (n < 4) return false;
+  char a = s[n - 4], b = s[n - 3], c = s[n - 2], d = s[n - 1];
+  return (a == '.' && (b == 't' || b == 'T') && (c == 'x' || c == 'X') && (d == 't' || d == 'T'));
+}
+
+static bool _isReadmeTxt(const char* s) {
+  if (!s) return false;
+  // case-insensitive prefix "README"
+  const char* p = "README";
+  for (int i = 0; p[i] != '\0'; i++) {
+    char c = s[i];
+    if (c == '\0') return false;
+    if (c >= 'a' && c <= 'z') c = c - ('a' - 'A');
+    if (c != p[i]) return false;
+  }
+  return true;
+}
+
+static bool _isDataTxtFile(const char* baseName) {
+  return _endsWithTxt(baseName) && !_isReadmeTxt(baseName);
+}
+
+static int _countCharInString(const String& s, char c) {
+  int cnt = 0;
+  for (int i = 0; i < (int)s.length(); i++) if (s[i] == c) cnt++;
+  return cnt;
+}
+
+static bool _gamebookHasTitleLine(const char* path) {
+  if (!sdReady) return false;
+  File f = SD.open(path);
+  if (!f) return false;
+  String first = f.readStringUntil('\n');
+  f.close();
+  first.trim();
+  if (first.length() == 0) return false;
+  // Uzel gamebooku má obvykle 4 oddělovače '|'. Pokud je to méně, bereme to jako titulek.
+  return _countCharInString(first, '|') < 4;
+}
+
+static String _firstTxtInDir(const char* dirPath, const char* preferredFallback) {
+  if (!sdReady) return String(preferredFallback);
+  File dir = SD.open(dirPath);
+  if (!dir || !dir.isDirectory()) {
+    if (dir) dir.close();
+    return String(preferredFallback);
+  }
+  String vybrany = "";
+  File entry = dir.openNextFile();
+  while (entry) {
+    if (!entry.isDirectory()) {
+      const char* full = entry.name();
+      const char* base = strrchr(full, '/');
+      base = base ? (base + 1) : full;
+      if (_isDataTxtFile(base)) {
+        vybrany = String(dirPath);
+        if (!vybrany.endsWith("/")) vybrany += "/";
+        vybrany += base;
+        entry.close();
+        break;
+      }
+    }
+    entry.close();
+    entry = dir.openNextFile();
+  }
+  if (entry) entry.close();
+  dir.close();
+  if (vybrany.length() == 0) return String(preferredFallback);
+  return vybrany;
+}
+
+static void obnovAktivniDatoveSoubory() {
+  aktivniGamebookSoubor = _firstTxtInDir("/eindata/gamebook", "/eindata/gamebook/gamebook.txt");
+  aktivniGamebookMaTitulek = _gamebookHasTitleLine(aktivniGamebookSoubor.c_str());
+  aktivniKvizSoubor = _firstTxtInDir("/eindata/kviz", "/eindata/kviz/otazky.txt");
+  // Preferujeme explicitně wyr.txt, ale pokud není, vezmeme první TXT ve složce.
+  if (sdReady && SD.exists("/eindata/hry/wyr.txt")) aktivniWyrSoubor = "/eindata/hry/wyr.txt";
+  else aktivniWyrSoubor = _firstTxtInDir("/eindata/hry", "/eindata/hry/wyr.txt");
+}
+
+static void nactiSeznamGamebooku() {
+  dynamicGamebookCount = 0;
+  if (sdReady) {
+    File dir = SD.open("/eindata/gamebook");
+    if (dir && dir.isDirectory()) {
+      File entry = dir.openNextFile();
+      while (entry && dynamicGamebookCount < 15) {
+        if (!entry.isDirectory()) {
+          const char* full = entry.name();
+          const char* base = strrchr(full, '/');
+          base = base ? (base + 1) : full;
+          if (_isDataTxtFile(base)) {
+            String path = "/eindata/gamebook/";
+            path += base;
+            String title = "";
+            File gf = SD.open(path.c_str());
+            if (gf) {
+              title = gf.readStringUntil('\n');
+              gf.close();
+              title.trim();
+            }
+            if (title.length() == 0 || _countCharInString(title, '|') >= 4) {
+              title = String(base);
+            }
+            dynamicGamebookFiles[dynamicGamebookCount] = path;
+            dynamicGamebookItems[dynamicGamebookCount] = title;
+            dynamicGamebookCount++;
+          }
+        }
+        entry.close();
+        entry = dir.openNextFile();
+      }
+      if (entry) entry.close();
+      dir.close();
+    } else if (dir) {
+      dir.close();
+    }
+  }
+
+  if (dynamicGamebookCount == 0) {
+    dynamicGamebookFiles[0] = "/eindata/gamebook/gamebook.txt";
+    dynamicGamebookItems[0] = "Zaklinac";
+    dynamicGamebookCount = 1;
+  }
+}
+
+static String _generatorPathForCategory(const char* fallbackPath, const char* key) {
+  if (!sdReady) return String(fallbackPath);
+  File dir = SD.open("/eindata/generator");
+  if (!dir || !dir.isDirectory()) {
+    if (dir) dir.close();
+    return String(fallbackPath);
+  }
+  String vybrany = "";
+  File entry = dir.openNextFile();
+  while (entry) {
+    if (!entry.isDirectory()) {
+      const char* full = entry.name();
+      const char* base = strrchr(full, '/');
+      base = base ? (base + 1) : full;
+      if (_endsWithTxt(base)) {
+        String nm = String(base);
+        nm.toLowerCase();
+        if (nm.indexOf(key) >= 0) {
+          vybrany = "/eindata/generator/";
+          vybrany += base;
+          entry.close();
+          break;
+        }
+      }
+    }
+    entry.close();
+    entry = dir.openNextFile();
+  }
+  if (entry) entry.close();
+  dir.close();
+  if (vybrany.length() == 0) return String(fallbackPath);
+  return vybrany;
+}
+
+static String _basenameOnly(const String& in) {
+  int p1 = in.lastIndexOf('/');
+  int p2 = in.lastIndexOf('\\');
+  int p = (p1 > p2) ? p1 : p2;
+  return (p >= 0) ? in.substring(p + 1) : in;
+}
+
+static bool _isSafeUploadName(const String& name) {
+  if (name.length() < 1 || name.length() > 64) return false;
+  if (name.indexOf("..") >= 0) return false;
+  for (int i = 0; i < (int)name.length(); i++) {
+    char c = name[i];
+    bool ok = (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') ||
+              (c >= '0' && c <= '9') || c == '_' || c == '-' || c == '.';
+    if (!ok) return false;
+  }
+  return true;
+}
+
+static bool _endsWithTxtString(const String& s) {
+  if (s.length() < 4) return false;
+  String low = s;
+  low.toLowerCase();
+  return low.endsWith(".txt");
+}
+
+static String _uploadDirFromKind(const String& kind) {
+  if (kind == "knihy") return "/eindata/knihy/";
+  if (kind == "gamebook") return "/eindata/gamebook/";
+  if (kind == "slovnik") return "/eindata/slovnik/";
+  if (kind == "generator") return "/eindata/generator/";
+  if (kind == "kviz") return "/eindata/kviz/";
+  if (kind == "hry" || kind == "wyr") return "/eindata/hry/";
+  return "";
+}
+
+static String _htmlEscape(const String& in) {
+  String out = in;
+  out.replace("&", "&amp;");
+  out.replace("<", "&lt;");
+  out.replace(">", "&gt;");
+  out.replace("\"", "&quot;");
+  return out;
+}
+
+static String _listFilesHtmlForKind(const String& kind) {
+  String dirPath = _uploadDirFromKind(kind);
+  if (dirPath.length() == 0) return "<p>Neplatny typ slozky.</p>";
+  if (!sdReady) return "<p>SD neni dostupna.</p>";
+  File dir = SD.open(dirPath.c_str());
+  if (!dir || !dir.isDirectory()) {
+    if (dir) dir.close();
+    return "<p>Slozka neexistuje: " + dirPath + "</p>";
+  }
+  String html = "<h3>Soubory ve slozce: " + _htmlEscape(dirPath) + "</h3>";
+  html += "<table border='1' cellpadding='6' cellspacing='0' style='border-collapse:collapse;font-family:sans-serif;'>"
+          "<tr><th>Soubor</th><th>Velikost</th><th>Akce</th></tr>";
+  int cnt = 0;
+  File entry = dir.openNextFile();
+  while (entry && cnt < 200) {
+    if (!entry.isDirectory()) {
+      const char* full = entry.name();
+      const char* base = strrchr(full, '/');
+      base = base ? (base + 1) : full;
+      String name = String(base);
+      String escName = _htmlEscape(name);
+      String k = kind; if (k.length() == 0) k = "knihy";
+      html += "<tr><td>" + escName + "</td><td>" + String((unsigned long)entry.size()) + " B</td><td>";
+      html += "<a href='/view?kind=" + k + "&filename=" + name + "'>Zobrazit</a>";
+      html += " | ";
+      html += "<a href='/delete-file?kind=" + k + "&filename=" + name + "' onclick=\"return confirm('Opravdu smazat " + escName + "?');\">Smazat</a>";
+      html += "</td></tr>";
+      cnt++;
+    }
+    entry.close();
+    entry = dir.openNextFile();
+  }
+  if (entry) entry.close();
+  dir.close();
+  if (cnt == 0) html += "<tr><td colspan='3'>(prazdne)</td></tr>";
+  html += "</table>";
+  return html;
+}
+
+static void obnovDynamickyObsahPoUploadu() {
+  obnovAktivniDatoveSoubory();
+  nactiSeznamKnih();
+  nactiSeznamGamebooku();
+}
+
+static void _sendWebUploadHome() {
+  String html =
+    "<!doctype html><html><head><meta charset='utf-8'><title>HonzueINK Upload</title></head><body>"
+    "<h2>HonzueINK - Web nahravani</h2>"
+    "<form id='upf' method='POST' action='/upload' enctype='multipart/form-data'>"
+    "<label>Typ: </label><select name='kind'>"
+    "<option value='knihy'>Knihy</option>"
+    "<option value='gamebook'>Gamebook</option>"
+    "<option value='slovnik'>Slovnik</option>"
+    "<option value='generator'>Generator</option>"
+    "<option value='kviz'>Kviz</option>"
+    "<option value='hry'>WYR/Hry</option>"
+    "</select><br><br>"
+    "<label>Jmeno souboru (.txt): </label><input type='text' name='filename' /><br><br>"
+    "<input type='file' name='file' accept='.txt,text/plain' required /><br><br>"
+    "<button type='submit'>Nahrat</button>"
+    "</form>"
+    "<hr>"
+    "<h3>Smazat soubor</h3>"
+    "<form id='delf' method='POST' action='/delete'>"
+    "<label>Typ: </label><select name='kind'>"
+    "<option value='knihy'>Knihy</option>"
+    "<option value='gamebook'>Gamebook</option>"
+    "<option value='slovnik'>Slovnik</option>"
+    "<option value='generator'>Generator</option>"
+    "<option value='kviz'>Kviz</option>"
+    "<option value='hry'>WYR/Hry</option>"
+    "</select><br><br>"
+    "<label>Jmeno souboru (.txt): </label><input type='text' name='filename' required /><br><br>"
+    "<button type='submit'>Smazat</button>"
+    "</form>"
+    "<p><a href='/status'>Status</a> | <a href='/reload'>Reload indexu</a></p>"
+    "<p>Vypis souboru: "
+    "<a href='/list?kind=knihy'>knihy</a> | "
+    "<a href='/list?kind=gamebook'>gamebook</a> | "
+    "<a href='/list?kind=slovnik'>slovnik</a> | "
+    "<a href='/list?kind=generator'>generator</a> | "
+    "<a href='/list?kind=kviz'>kviz</a> | "
+    "<a href='/list?kind=hry'>hry</a></p>"
+    "<p>Priklady/formaty: "
+    "<a href='/example?kind=root'>root</a> | "
+    "<a href='/example?kind=knihy'>knihy</a> | "
+    "<a href='/example?kind=gamebook'>gamebook</a> | "
+    "<a href='/example?kind=slovnik'>slovnik</a> | "
+    "<a href='/example?kind=generator'>generator</a> | "
+    "<a href='/example?kind=kviz'>kviz</a> | "
+    "<a href='/example?kind=hry'>hry</a></p>"
+    "<script>"
+    "document.getElementById('upf').addEventListener('submit', function(e){"
+    "var k=this.kind.value||'knihy';"
+    "var n=(this.filename.value||'').trim();"
+    "this.action='/upload?kind='+encodeURIComponent(k)+'&filename='+encodeURIComponent(n);"
+    "});"
+    "document.getElementById('delf').addEventListener('submit', function(e){"
+    "var k=this.kind.value||'knihy';"
+    "var n=(this.filename.value||'').trim();"
+    "this.action='/delete?kind='+encodeURIComponent(k)+'&filename='+encodeURIComponent(n);"
+    "if(!confirm('Opravdu smazat '+n+'?')) e.preventDefault();"
+    "});"
+    "</script>"
+    "</body></html>";
+  webServer.send(200, "text/html; charset=utf-8", html);
+}
+
+static void startWebUploadServer() {
+  if (webUploadServerReady) return;
+
+  webServer.on("/", HTTP_GET, []() { _sendWebUploadHome(); });
+  webServer.on("/status", HTTP_GET, []() {
+    time_t now = time(NULL);
+    struct tm t;
+    bool okTime = getLocalTime(&t, 20);
+    String js = "{";
+    js += "\"sdReady\":" + String(sdReady ? "true" : "false");
+    js += ",\"wifiConnected\":" + String((WiFi.status() == WL_CONNECTED) ? "true" : "false");
+    js += ",\"staIp\":\"" + WiFi.localIP().toString() + "\"";
+    js += ",\"apIp\":\"" + WiFi.softAPIP().toString() + "\"";
+    js += ",\"epoch\":" + String((long)now);
+    js += ",\"timeOk\":" + String(okTime ? "true" : "false");
+    js += "}";
+    webServer.send(200, "application/json", js);
+  });
+  webServer.on("/reload", HTTP_GET, []() {
+    obnovDynamickyObsahPoUploadu();
+    webUploadLastMsg = "Index obsahu obnoven.";
+    webServer.send(200, "text/plain; charset=utf-8", "OK: index obnoven");
+  });
+  webServer.on("/list", HTTP_GET, []() {
+    String kind = webServer.arg("kind");
+    if (kind.length() == 0) kind = "knihy";
+    String body = "<!doctype html><html><head><meta charset='utf-8'><title>Vypis souboru</title></head><body>";
+    body += _listFilesHtmlForKind(kind);
+    body += "<p><a href='/'>Zpet</a></p></body></html>";
+    webServer.send(200, "text/html; charset=utf-8", body);
+  });
+  webServer.on("/view", HTTP_GET, []() {
+    String kind = webServer.arg("kind");
+    if (kind.length() == 0) kind = "knihy";
+    String dir = _uploadDirFromKind(kind);
+    if (dir.length() == 0) { webServer.send(400, "text/plain; charset=utf-8", "Neplatny typ slozky."); return; }
+    String fileName = _basenameOnly(webServer.arg("filename"));
+    if (!_isSafeUploadName(fileName) || !_endsWithTxtString(fileName)) {
+      webServer.send(400, "text/plain; charset=utf-8", "Neplatne jmeno souboru.");
+      return;
+    }
+    String path = dir + fileName;
+    String txt = nactiCelySoubor(path.c_str());
+    if (txt.length() == 0 && !SD.exists(path.c_str())) {
+      webServer.send(404, "text/plain; charset=utf-8", "Soubor nenalezen.");
+      return;
+    }
+    String body = "<!doctype html><html><head><meta charset='utf-8'><title>Zobrazeni souboru</title></head><body>";
+    body += "<h3>" + _htmlEscape(path) + "</h3>";
+    body += "<pre style='white-space:pre-wrap;font-family:monospace;'>";
+    body += _htmlEscape(txt);
+    body += "</pre><p><a href='/list?kind=" + kind + "'>Zpet na vypis</a> | <a href='/'>Domu</a></p></body></html>";
+    webServer.send(200, "text/html; charset=utf-8", body);
+  });
+  webServer.on("/delete-file", HTTP_GET, []() {
+    String kind = webServer.arg("kind");
+    if (kind.length() == 0) kind = "knihy";
+    String dir = _uploadDirFromKind(kind);
+    if (dir.length() == 0) { webServer.send(400, "text/plain; charset=utf-8", "Neplatny typ slozky."); return; }
+    String fileName = _basenameOnly(webServer.arg("filename"));
+    if (!_isSafeUploadName(fileName) || !_endsWithTxtString(fileName) || _isReadmeTxt(fileName.c_str())) {
+      webServer.send(400, "text/plain; charset=utf-8", "Neplatny soubor pro smazani.");
+      return;
+    }
+    String path = dir + fileName;
+    if (!SD.exists(path.c_str())) { webServer.send(404, "text/plain; charset=utf-8", "Soubor neexistuje."); return; }
+    if (!SD.remove(path.c_str())) { webServer.send(500, "text/plain; charset=utf-8", "Mazani selhalo."); return; }
+    obnovDynamickyObsahPoUploadu();
+    webUploadLastMsg = "OK: smazano " + path;
+    webUploadNeedsRefresh = true;
+    String body = "<!doctype html><html><head><meta charset='utf-8'><title>Smazano</title></head><body>";
+    body += "<h3>" + _htmlEscape(webUploadLastMsg) + "</h3>";
+    body += "<p><a href='/list?kind=" + kind + "'>Zpet na vypis</a> | <a href='/'>Domu</a></p></body></html>";
+    webServer.send(200, "text/html; charset=utf-8", body);
+  });
+  webServer.on("/delete", HTTP_POST, []() {
+    if (!sdReady) {
+      webServer.send(500, "text/plain; charset=utf-8", "Chyba: SD neni dostupna.");
+      return;
+    }
+    String kind = webServer.arg("kind");
+    if (kind.length() == 0) kind = "knihy";
+    String dir = _uploadDirFromKind(kind);
+    if (dir.length() == 0) {
+      webServer.send(400, "text/plain; charset=utf-8", "Chyba: neplatny typ slozky.");
+      return;
+    }
+    String fileName = _basenameOnly(webServer.arg("filename"));
+    if (!_isSafeUploadName(fileName) || !_endsWithTxtString(fileName)) {
+      webServer.send(400, "text/plain; charset=utf-8", "Chyba: neplatne jmeno souboru (.txt).");
+      return;
+    }
+    if (_isReadmeTxt(fileName.c_str())) {
+      webServer.send(403, "text/plain; charset=utf-8", "README soubory nelze mazat pres web.");
+      return;
+    }
+    String path = dir + fileName;
+    if (!SD.exists(path.c_str())) {
+      webServer.send(404, "text/plain; charset=utf-8", "Soubor neexistuje: " + path);
+      return;
+    }
+    if (!SD.remove(path.c_str())) {
+      webServer.send(500, "text/plain; charset=utf-8", "Mazani selhalo: " + path);
+      return;
+    }
+    obnovDynamickyObsahPoUploadu();
+    webUploadLastMsg = "OK: smazano " + path;
+    webUploadNeedsRefresh = true;
+    String html =
+      "<!doctype html><html><head><meta charset='utf-8'><title>Mazani</title></head><body>"
+      "<h3>" + webUploadLastMsg + "</h3><p><a href='/'>Zpet na upload</a></p></body></html>";
+    webServer.send(200, "text/html; charset=utf-8", html);
+  });
+  webServer.on("/example", HTTP_GET, []() {
+    String kind = webServer.arg("kind");
+    String path = "/eindata/README_FORMAT.txt";
+    if (kind == "knihy") path = "/eindata/knihy/README_FORMAT.txt";
+    else if (kind == "gamebook") path = "/eindata/gamebook/README_FORMAT.txt";
+    else if (kind == "slovnik") path = "/eindata/slovnik/README_FORMAT.txt";
+    else if (kind == "generator") path = "/eindata/generator/README_FORMAT.txt";
+    else if (kind == "kviz") path = "/eindata/kviz/README_FORMAT.txt";
+    else if (kind == "hry" || kind == "wyr") path = "/eindata/hry/README_FORMAT.txt";
+    String txt = nactiCelySoubor(path.c_str());
+    if (txt.length() == 0) {
+      webServer.send(404, "text/plain; charset=utf-8", "README_FORMAT nenalezen: " + path);
+      return;
+    }
+    webServer.send(200, "text/plain; charset=utf-8", txt);
+  });
+
+  webServer.on(
+    "/upload", HTTP_POST,
+    []() {
+      String msg = webUploadLastMsg.length() ? webUploadLastMsg : "Upload OK";
+      String html =
+        "<!doctype html><html><head><meta charset='utf-8'><title>Upload vysledek</title></head><body>"
+        "<h3>" + msg + "</h3><p><a href='/'>Zpet na upload</a></p></body></html>";
+      webServer.send(200, "text/html; charset=utf-8", html);
+      webUploadNeedsRefresh = true;
+    },
+    []() {
+      static File upFile;
+      static String finalPath = "";
+      static String tmpPath = "";
+      static bool failed = false;
+
+      HTTPUpload& upload = webServer.upload();
+      if (upload.status == UPLOAD_FILE_START) {
+        failed = false;
+        webUploadLastMsg = "";
+        if (!sdReady) {
+          failed = true;
+          webUploadLastMsg = "Chyba: SD neni dostupna.";
+          return;
+        }
+
+        String kind = webServer.arg("kind");
+        if (kind.length() == 0) kind = "knihy";
+        String dir = _uploadDirFromKind(kind);
+        if (dir.length() == 0) {
+          failed = true;
+          webUploadLastMsg = "Chyba: neplatny typ slozky.";
+          Serial.println("WEB UPLOAD: invalid kind");
+          return;
+        }
+
+        String fileName = webServer.arg("filename");
+        if (fileName.length() == 0) fileName = upload.filename;
+        fileName = _basenameOnly(fileName);
+        if (!_isSafeUploadName(fileName) || !_endsWithTxtString(fileName)) {
+          failed = true;
+          webUploadLastMsg = "Chyba: neplatne jmeno souboru (.txt).";
+          Serial.println("WEB UPLOAD: invalid filename");
+          return;
+        }
+
+        finalPath = dir + fileName;
+        tmpPath = finalPath + ".tmp";
+        Serial.println("WEB UPLOAD START -> " + finalPath);
+        if (SD.exists(tmpPath.c_str())) SD.remove(tmpPath.c_str());
+        upFile = SD.open(tmpPath.c_str(), FILE_WRITE);
+        if (!upFile) {
+          failed = true;
+          webUploadLastMsg = "Chyba: nelze otevrit docasny soubor.";
+          Serial.println("WEB UPLOAD: cannot open tmp");
+          return;
+        }
+      } else if (upload.status == UPLOAD_FILE_WRITE) {
+        if (!failed && upFile) {
+          size_t wr = upFile.write(upload.buf, upload.currentSize);
+          if (wr != upload.currentSize) {
+            failed = true;
+            webUploadLastMsg = "Chyba: zapis na SD selhal.";
+            upFile.close();
+          }
+        }
+      } else if (upload.status == UPLOAD_FILE_END) {
+        if (!failed && upFile) {
+          upFile.close();
+          if (SD.exists(finalPath.c_str())) SD.remove(finalPath.c_str());
+          if (!SD.rename(tmpPath.c_str(), finalPath.c_str())) {
+            failed = true;
+            webUploadLastMsg = "Chyba: nelze prejmenovat temp soubor.";
+            Serial.println("WEB UPLOAD: rename failed");
+          } else {
+            obnovDynamickyObsahPoUploadu();
+            webUploadLastMsg = "OK: nahrano do " + finalPath;
+            Serial.println("WEB UPLOAD OK -> " + finalPath);
+          }
+        }
+      } else if (upload.status == UPLOAD_FILE_ABORTED) {
+        failed = true;
+        if (upFile) upFile.close();
+        if (tmpPath.length() && SD.exists(tmpPath.c_str())) SD.remove(tmpPath.c_str());
+        webUploadLastMsg = "Upload prerusen.";
+      }
+    }
+  );
+
+  webServer.begin();
+  webUploadServerReady = true;
+}
+
+static void stopWebUploadServer() {
+  if (!webUploadServerReady) return;
+  webServer.stop();
+  webUploadServerReady = false;
+}
+
+static void zobrazWebUpload() {
+  String mode = webUploadApMode ? "AP" : "STA";
+  String ip = webUploadApMode ? webUploadApIp : webUploadStaIp;
+  if (ip.length() == 0) ip = webUploadApMode ? WiFi.softAPIP().toString() : WiFi.localIP().toString();
+  String line1 = "Web upload (" + mode + ")";
+  String line2 = "http://" + ip + "/";
+  beginUiFrame(true);
+  do {
+    display.fillScreen(bgColor());
+    u8g2Fonts.setFontMode(1); u8g2Fonts.setForegroundColor(fgColor()); u8g2Fonts.setBackgroundColor(bgColor());
+    printCentered(line1, 30, getTitleFont());
+    printCentered(line2, 52, getSmallBoldFont());
+    printCentered("Nahraj .txt soubory v browseru", 74, getSmallFont());
+    printCentered("BTN21 = zkusit STA | BTN0 = obnovit", 108, getSmallFont());
+    printCentered("Drz BTN21 = konec", 122, getSmallFont());
+  } while (display.nextPage());
+}
+
+static void startWebUploadApOnly() {
+  WiFi.disconnect(true, true);
+  delay(120);
+  WiFi.mode(WIFI_AP);
+  delay(120);
+  bool apOk = WiFi.softAP(uploadApSsid, uploadApPass);
+  webUploadApMode = apOk;
+  webUploadApIp = WiFi.softAPIP().toString();
+  if (!apOk) webUploadLastMsg = "AP mode se nepodarilo spustit.";
+  else webUploadLastMsg = "AP aktivni: " + webUploadApIp;
+}
+
+static bool trySwitchWebUploadToSta() {
+  if (webUploadApMode) {
+    WiFi.softAPdisconnect(true);
+    webUploadApMode = false;
+    delay(120);
+  }
+  bool ok = pripojWiFi();
+  if (ok && WiFi.status() == WL_CONNECTED) {
+    webUploadStaIp = WiFi.localIP().toString();
+    webUploadLastMsg = "STA aktivni: " + webUploadStaIp;
+    return true;
+  }
+  // fallback zpet na AP
+  startWebUploadApOnly();
+  webUploadLastMsg = "STA selhalo, navrat do AP: " + webUploadApIp;
+  return false;
+}
+
+static void startWebUploadMode() {
+  // Defaultne vzdy AP (nejspolehlivejsi).
+  startWebUploadApOnly();
+  startWebUploadServer();
+  webUploadMode = true;
+  appState = STATE_WEB_UPLOAD;
+  zobrazWebUpload();
+}
+
+static void stopWebUploadMode() {
+  stopWebUploadServer();
+  webUploadMode = false;
+  if (webUploadApMode) {
+    WiFi.softAPdisconnect(true);
+    WiFi.mode(WIFI_OFF);
+    webUploadApMode = false;
+  }
+  webUploadStaIp = "";
+  webUploadApIp = "";
+}
+
 // ===== KNIHY — NAČTENÍ S FALLBACKEM NA SD =====
 // Čte obsah knihy ze souboru na SD kartě; fallback na PROGMEM pole.
 // Formát souboru: první řádek = název, zbytek = text.
 static String _nactiKnihuObsah(int idx) {
   if (sdReady) {
-    String cesta = String("/eindata/knihy/kniha_") + (idx + 1) + ".txt";
+    String cesta = (idx >= 0 && idx < 15) ? dynamicKnihovnaFiles[idx] : "";
+    if (cesta.length() == 0) cesta = String("/eindata/knihy/kniha_") + (idx + 1) + ".txt";
     File f = SD.open(cesta.c_str());
     if (f) {
       f.readStringUntil('\n'); // Přeskočí název (první řádek)
@@ -616,12 +1329,15 @@ static String _nactiKnihuObsah(int idx) {
 
 // Načte seznam knih ze SD karty (název = první řádek souboru).
 void nactiSeznamKnih() {
-  dynamicKnihovnaCount = nactiSeznamKnih(dynamicKnihovnaItems, 15);
+  dynamicKnihovnaCount = nactiSeznamKnihSD(dynamicKnihovnaItems, dynamicKnihovnaFiles, 15);
   if (dynamicKnihovnaCount == 0) {
     // Fallback: statické názvy z PROGMEM
     dynamicKnihovnaItems[0] = "Zaklínač: Brokilonský les";
+    dynamicKnihovnaFiles[0] = "/eindata/knihy/kniha_1.txt";
     dynamicKnihovnaItems[1] = "Zaklínač: Cesta do Oxenfurtu";
+    dynamicKnihovnaFiles[1] = "/eindata/knihy/kniha_2.txt";
     dynamicKnihovnaItems[2] = "Zaklínač: Kaer Morhen";
+    dynamicKnihovnaFiles[2] = "/eindata/knihy/kniha_3.txt";
     dynamicKnihovnaCount = 3;
   }
 }
@@ -714,51 +1430,248 @@ int nactiVsechnyArchivniHashe(uint32_t* pole, int maxPole) {
   return count;
 }
 
-// Archivuje zprávy do denní složky — připojí jen zprávy s novým titulkem (deduplikace)
-void archivujDeduplikovane(const char* soubor, const String& novaData) {
-  if (!sdReady || novaData.length() < 10) return;
+struct ArchivClanek {
+  String blok;
+  String titulek;
+  uint32_t hash;
+  long sortKey;
+};
+
+// Velké pomocné buffery mimo stack (ESP32 task stack je omezený).
+static const int MAX_HASH_GLOBAL = 1200;
+static const int MAX_MERGE_CLANKU_GLOBAL = 260;
+static uint32_t g_existHash[MAX_HASH_GLOBAL];
+
+static long _archivSortKeyZDneCasu(int y, int m, int d, int hh, int mm) {
+  return (long)y * 100000000L + (long)m * 1000000L + (long)d * 10000L + (long)hh * 100L + (long)mm;
+}
+
+static bool _jeCislice(char c) { return c >= '0' && c <= '9'; }
+
+// Z textu data (|D|) vytáhne den + čas a vrátí složku YYYY-MM-DD.
+// Podporuje např.: "2026-04-03 12:34", "3.4.2026 12:34", "3.4. 12:34", "3.4."
+static bool _normalizujDatumZClanku(const String& datumRaw, String& outDatumSlozka, long& outSortKey) {
+  if (datumRaw.length() == 0) return false;
+  String d = datumRaw;
+  d.trim();
+  d.replace(",", " ");
+  d.replace("T", " ");
+
+  int y = -1, m = -1, day = -1, hh = 0, mm = 0;
+
+  // 1) Preferovaný formát YYYY-MM-DD [HH:MM]
+  for (int i = 0; i + 9 < (int)d.length(); i++) {
+    if (_jeCislice(d[i]) && _jeCislice(d[i + 1]) && _jeCislice(d[i + 2]) && _jeCislice(d[i + 3]) &&
+        d[i + 4] == '-' &&
+        _jeCislice(d[i + 5]) && _jeCislice(d[i + 6]) &&
+        d[i + 7] == '-' &&
+        _jeCislice(d[i + 8]) && _jeCislice(d[i + 9])) {
+      y = d.substring(i, i + 4).toInt();
+      m = d.substring(i + 5, i + 7).toInt();
+      day = d.substring(i + 8, i + 10).toInt();
+      break;
+    }
+  }
+
+  // 2) České datum D.M.[YYYY]
+  if (y < 0 || m < 0 || day < 0) {
+    int p1 = d.indexOf('.');
+    if (p1 > 0) {
+      int p2 = d.indexOf('.', p1 + 1);
+      if (p2 > p1) {
+        day = d.substring(0, p1).toInt();
+        m = d.substring(p1 + 1, p2).toInt();
+
+        int i = p2 + 1;
+        while (i < (int)d.length() && d[i] == ' ') i++;
+        if (i + 3 < (int)d.length() && _jeCislice(d[i]) && _jeCislice(d[i + 1]) && _jeCislice(d[i + 2]) && _jeCislice(d[i + 3])) {
+          y = d.substring(i, i + 4).toInt();
+        } else {
+          struct tm nowTm;
+          if (!getLocalTime(&nowTm, 120)) return false;
+          y = nowTm.tm_year + 1900;
+        }
+      }
+    }
+  }
+
+  // Čas HH:MM (pokud je)
+  for (int i = 0; i + 4 < (int)d.length(); i++) {
+    if (_jeCislice(d[i]) && _jeCislice(d[i + 1]) && d[i + 2] == ':' && _jeCislice(d[i + 3]) && _jeCislice(d[i + 4])) {
+      hh = d.substring(i, i + 2).toInt();
+      mm = d.substring(i + 3, i + 5).toInt();
+      break;
+    }
+  }
+
+  if (y < 2000 || y > 2100 || m < 1 || m > 12 || day < 1 || day > 31 || hh < 0 || hh > 23 || mm < 0 || mm > 59) {
+    return false;
+  }
+
+  char dbuf[12];
+  sprintf(dbuf, "%04d-%02d-%02d", y, m, day);
+  outDatumSlozka = String(dbuf);
+  outSortKey = _archivSortKeyZDneCasu(y, m, day, hh, mm);
+  return true;
+}
+
+static long _sortKeyZBloku(const String& blok) {
+  int dS = blok.indexOf("|D|");
+  int pS = blok.indexOf("|P|", dS >= 0 ? dS + 3 : 0);
+  if (dS < 0 || pS < 0 || pS <= dS + 3) return 0;
+  String datumRaw = blok.substring(dS + 3, pS);
+  String slozka = "";
+  long key = 0;
+  if (_normalizujDatumZClanku(datumRaw, slozka, key)) return key;
+  return 0;
+}
+
+static String _datumSlozkaZBlokuNeboDnes(const String& blok) {
+  int dS = blok.indexOf("|D|");
+  int pS = blok.indexOf("|P|", dS >= 0 ? dS + 3 : 0);
+  if (dS >= 0 && pS > dS + 3) {
+    String datumRaw = blok.substring(dS + 3, pS);
+    String slozka = "";
+    long key = 0;
+    if (_normalizujDatumZClanku(datumRaw, slozka, key)) return slozka;
+  }
   struct tm timeinfo;
-  if (!getLocalTime(&timeinfo, 150)) return;
-  char datumBuf[12];
-  sprintf(datumBuf, "%04d-%02d-%02d", timeinfo.tm_year + 1900, timeinfo.tm_mon + 1, timeinfo.tm_mday);
-  if (!_zajistiSlozku("/eindata/zpravy") || !_zajistiSlozku("/eindata/zpravy/archiv")) return;
-  String slozka = String("/eindata/zpravy/archiv/") + datumBuf;
-  if (!_zajistiSlozku(slozka.c_str())) return;
-  String archivCesta = slozka + "/" + soubor;
+  if (getLocalTime(&timeinfo, 120)) {
+    char datumBuf[12];
+    sprintf(datumBuf, "%04d-%02d-%02d", timeinfo.tm_year + 1900, timeinfo.tm_mon + 1, timeinfo.tm_mday);
+    return String(datumBuf);
+  }
+  return "1970-01-01";
+}
 
-  const int MAX_HASH = 300;
-  uint32_t existHash[MAX_HASH];
-  int hashCount = nactiVsechnyArchivniHashe(existHash, MAX_HASH);
+static bool _najdiClanekVPoli(ArchivClanek* arr, int count, uint32_t h) {
+  for (int i = 0; i < count; i++) if (arr[i].hash == h) return true;
+  return false;
+}
 
-  File fApp = SD.open(archivCesta.c_str(), FILE_APPEND);
-  if (!fApp) fApp = SD.open(archivCesta.c_str(), FILE_WRITE);
-  if (!fApp) return;
+static void _seradClanekPoleDesc(ArchivClanek* arr, int count) {
+  for (int i = 0; i < count - 1; i++) {
+    int best = i;
+    for (int j = i + 1; j < count; j++) {
+      if (arr[j].sortKey > arr[best].sortKey) best = j;
+    }
+    if (best != i) {
+      ArchivClanek t = arr[i];
+      arr[i] = arr[best];
+      arr[best] = t;
+    }
+  }
+}
 
-  int pos = 0, pridano = 0;
-  while (pos < (int)novaData.length()) {
-    int tS = novaData.indexOf("|T|", pos);
-    if (tS == -1) break;
-    int eE = novaData.indexOf("|E|", tS);
-    if (eE == -1) break;
+static int _nactiClanekBlokyZeSouboru(const char* cesta, ArchivClanek* out, int maxOut) {
+  if (!SD.exists(cesta)) return 0;
+  File f = SD.open(cesta, FILE_READ);
+  if (!f) return 0;
+  String data = f.readString();
+  f.close();
+
+  int count = 0;
+  int pos = 0;
+  while (pos < (int)data.length() && count < maxOut) {
+    int tS = data.indexOf("|T|", pos);
+    if (tS < 0) break;
+    int eE = data.indexOf("|E|", tS);
+    if (eE < 0) break;
     eE += 3;
-    int dS = novaData.indexOf("|D|", tS + 3);
-    int pS = novaData.indexOf("|P|", tS + 3);
-    if (pS == -1) { pos = eE; continue; }
-    int konecTit = (dS >= 0 && dS < pS) ? dS : pS;
-    String tit = novaData.substring(tS + 3, konecTit);
-    tit.trim();
-    uint32_t h = djb2Hash(tit);
-    bool dup = false;
-    for (int i = 0; i < hashCount; i++) { if (existHash[i] == h) { dup = true; break; } }
-    if (!dup) {
-      fApp.print(novaData.substring(tS, eE) + "\n");
-      if (hashCount < MAX_HASH) existHash[hashCount++] = h;
-      pridano++;
+    String blok = data.substring(tS, eE);
+
+    int dS = blok.indexOf("|D|");
+    int pS = blok.indexOf("|P|", dS >= 0 ? dS + 3 : 0);
+    int konecTit = (dS >= 0 && pS > dS) ? dS : pS;
+    if (pS > 0 && konecTit > 3) {
+      String tit = blok.substring(3, konecTit);
+      tit.trim();
+      out[count].blok = blok;
+      out[count].titulek = tit;
+      out[count].hash = djb2Hash(tit);
+      out[count].sortKey = _sortKeyZBloku(blok);
+      count++;
     }
     pos = eE;
   }
-  fApp.close();
-  Serial.println("Archiv " + String(datumBuf) + "/" + String(soubor) + ": +" + String(pridano) + " novych");
+  return count;
+}
+
+static bool _zapisSerazeneClanky(const String& cesta, ArchivClanek* arr, int count) {
+  if (SD.exists(cesta.c_str())) SD.remove(cesta.c_str());
+  File f = SD.open(cesta.c_str(), FILE_WRITE);
+  if (!f) return false;
+  for (int i = 0; i < count; i++) {
+    f.print(arr[i].blok);
+    f.print("\n");
+  }
+  f.close();
+  return true;
+}
+
+static void _pridejClanekDoDneSouboru(const String& den, const char* soubor, const ArchivClanek& cl) {
+  String slozka = String("/eindata/zpravy/archiv/") + den;
+  if (!_zajistiSlozku(slozka.c_str())) return;
+  String cesta = slozka + "/" + soubor;
+
+  // Safe-mode: jen append (deduplikace uz probehla pred volanim).
+  File f = SD.open(cesta.c_str(), FILE_APPEND);
+  if (!f) f = SD.open(cesta.c_str(), FILE_WRITE);
+  if (!f) return;
+  f.print(cl.blok);
+  f.print("\n");
+  f.close();
+}
+
+// Archivuje zprávy do denní složky — připojí jen zprávy s novým titulkem (deduplikace)
+void archivujDeduplikovane(const char* soubor, const String& novaData) {
+  if (!sdReady || novaData.length() < 10) return;
+  if (!_zajistiSlozku("/eindata/zpravy") || !_zajistiSlozku("/eindata/zpravy/archiv")) return;
+
+  int hashCount = nactiVsechnyArchivniHashe(g_existHash, MAX_HASH_GLOBAL);
+
+  int pridanoCelkem = 0;
+
+  int pos = 0;
+  while (pos < (int)novaData.length()) {
+    int tS = novaData.indexOf("|T|", pos);
+    if (tS < 0) break;
+    int eE = novaData.indexOf("|E|", tS);
+    if (eE < 0) break;
+    eE += 3;
+    String blok = novaData.substring(tS, eE);
+
+    int dS = blok.indexOf("|D|");
+    int pS = blok.indexOf("|P|", dS >= 0 ? dS + 3 : 0);
+    int konecTit = (dS >= 0 && pS > dS) ? dS : pS;
+    if (pS <= 0 || konecTit <= 3) { pos = eE; continue; }
+
+    String tit = blok.substring(3, konecTit);
+    tit.trim();
+    uint32_t h = djb2Hash(tit);
+    bool dup = false;
+    for (int i = 0; i < hashCount; i++) { if (g_existHash[i] == h) { dup = true; break; } }
+    if (dup) { pos = eE; continue; }
+
+    String cilDatum = _datumSlozkaZBlokuNeboDnes(blok);
+    ArchivClanek cl;
+    cl.blok = blok;
+    cl.titulek = tit;
+    cl.hash = h;
+    cl.sortKey = _sortKeyZBloku(blok);
+    _pridejClanekDoDneSouboru(cilDatum, soubor, cl);
+    if (hashCount < MAX_HASH_GLOBAL) g_existHash[hashCount++] = h;
+    pridanoCelkem++;
+    pos = eE;
+  }
+
+  Serial.println("Archiv " + String(soubor) + ": +" + String(pridanoCelkem) + " novych (podle data clanku)");
+}
+
+// Projde archiv a přesune články do správných složek podle |D| + seřadí je od nejnovějších.
+void opravArchivDataceASerazeni() {
+  // Safe-mode: migrace celeho archivu je docasne vypnuta kvuli stabilite.
+  Serial.println("Archiv: auto-oprava vypnuta (safe mode)");
 }
 
 // Rekurzivně smaže obsah složky a složku samotnou
@@ -843,10 +1756,10 @@ void jdiSpat() {
   const char* katNazev;
   { String _s;
     switch (random(4)) {
-      case 0: _s = _nahodnyTextGeneratoru("/eindata/generator/vtipy.txt", vtipy, vtipyPocet); katNazev = "Vtip"; break;
-      case 1: _s = _nahodnyTextGeneratoru("/eindata/generator/zalmy.txt", zalmy, zalmyPocet); katNazev = "Žalm"; break;
-      case 2: _s = _nahodnyTextGeneratoru("/eindata/generator/citaty.txt", citaty, citatyPocet); katNazev = "Citát"; break;
-      default: _s = _nahodnyTextGeneratoru("/eindata/generator/fakty.txt", fakty, faktyPocet); katNazev = "Fakt"; break;
+      case 0: _s = _nahodnyTextGeneratoru(_generatorPathForCategory("/eindata/generator/vtipy.txt", "vtip").c_str(), vtipy, vtipyPocet); katNazev = "Vtip"; break;
+      case 1: _s = _nahodnyTextGeneratoru(_generatorPathForCategory("/eindata/generator/zalmy.txt", "zalm").c_str(), zalmy, zalmyPocet); katNazev = "Žalm"; break;
+      case 2: _s = _nahodnyTextGeneratoru(_generatorPathForCategory("/eindata/generator/citaty.txt", "citat").c_str(), citaty, citatyPocet); katNazev = "Citát"; break;
+      default: _s = _nahodnyTextGeneratoru(_generatorPathForCategory("/eindata/generator/fakty.txt", "fakt").c_str(), fakty, faktyPocet); katNazev = "Fakt"; break;
     }
     strncpy(katBuf, _s.c_str(), sizeof(katBuf)-1);
   }
@@ -931,9 +1844,10 @@ void zobrazQR(const char* title, const char* dataStr) {
 
 // ===== ZOBRAZOVÁNÍ KVÍZU A WYR =====
 void nastaviNahodnyKvizIdx() {
+  obnovAktivniDatoveSoubory();
   // Zkusíme načíst ze SD (reservoir sampling s filtrací kategorie/obtížnosti)
   if (sdReady) {
-    File f = SD.open("/eindata/kviz/otazky.txt");
+    File f = SD.open(aktivniKvizSoubor.c_str());
     if (f) {
       String vybrany = ""; int pocet = 0;
       while (f.available()) {
@@ -1021,8 +1935,9 @@ void zobrazKvizOdpoved() {
 }
 
 void nastaviNahodnyWyrZSD() {
+  obnovAktivniDatoveSoubory();
   if (sdReady) {
-    File f = SD.open("/eindata/hry/wyr.txt");
+    File f = SD.open(aktivniWyrSoubor.c_str());
     if (f) {
       String vybrany = ""; int pocet = 0;
       while (f.available()) {
@@ -1296,6 +2211,143 @@ void parsujZpravy(String raw) {
   if (pocetZprav == 0) { aktualniZpravy[0].titulek = "Chyba dat"; aktualniZpravy[0].datum = ""; aktualniZpravy[0].perex = "Žádná data nejsou v paměti."; aktualniZpravy[0].text = raw; pocetZprav = 1; }
 }
 
+int spocitejZpravyVRaw(const String& raw) {
+  int count = 0, pos = 0;
+  while (true) {
+    int t = raw.indexOf("|T|", pos);
+    if (t < 0) break;
+    int e = raw.indexOf("|E|", t + 3);
+    if (e < 0) break;
+    count++;
+    pos = e + 3;
+  }
+  return count;
+}
+
+int nactiHashTitulkuZRaw(const String& raw, uint32_t* out, int maxOut) {
+  int count = 0, pos = 0;
+  while (count < maxOut) {
+    int t = raw.indexOf("|T|", pos);
+    if (t < 0) break;
+    int d = raw.indexOf("|D|", t + 3);
+    int p = raw.indexOf("|P|", t + 3);
+    int e = raw.indexOf("|E|", t + 3);
+    if (p < 0 || e < 0) break;
+    int endTit = (d >= 0 && d < p) ? d : p;
+    if (endTit > t + 3) {
+      String tit = raw.substring(t + 3, endTit);
+      tit.trim();
+      out[count++] = djb2Hash(tit);
+    }
+    pos = e + 3;
+  }
+  return count;
+}
+
+int spocitejNoveZpravyVuciStarym(const String& oldRaw, const String& newRaw) {
+  const int MAX_H = 160;
+  uint32_t oldH[MAX_H];
+  int oldCount = nactiHashTitulkuZRaw(oldRaw, oldH, MAX_H);
+
+  int count = 0, pos = 0;
+  while (true) {
+    int t = newRaw.indexOf("|T|", pos);
+    if (t < 0) break;
+    int d = newRaw.indexOf("|D|", t + 3);
+    int p = newRaw.indexOf("|P|", t + 3);
+    int e = newRaw.indexOf("|E|", t + 3);
+    if (p < 0 || e < 0) break;
+    int endTit = (d >= 0 && d < p) ? d : p;
+    if (endTit > t + 3) {
+      String tit = newRaw.substring(t + 3, endTit);
+      tit.trim();
+      uint32_t h = djb2Hash(tit);
+      bool dup = false;
+      for (int i = 0; i < oldCount; i++) { if (oldH[i] == h) { dup = true; break; } }
+      if (!dup) count++;
+    }
+    pos = e + 3;
+  }
+  return count;
+}
+
+String prvniTitulekZRaw(const String& raw) {
+  int t = raw.indexOf("|T|");
+  if (t < 0) return "";
+  int d = raw.indexOf("|D|", t + 3);
+  int p = raw.indexOf("|P|", t + 3);
+  int konec = (d >= 0 && p > d) ? d : p;
+  if (konec <= t + 3) return "";
+  String tit = raw.substring(t + 3, konec);
+  tit.trim();
+  return tit;
+}
+
+void zobrazSouhrnAktualizace(int nSvet, int nCR, int nTech, const String& topTitulek) {
+  beginUiFrame(false);
+  do {
+    display.fillScreen(bgColor());
+    u8g2Fonts.setFontMode(1);
+    u8g2Fonts.setForegroundColor(fgColor());
+    u8g2Fonts.setBackgroundColor(bgColor());
+
+    u8g2Fonts.setFont(getTitleFont());
+    u8g2Fonts.setCursor(8, 18);
+    u8g2Fonts.print("AKTUALIZACE HOTOVA");
+    display.drawFastHLine(0, 23, display.width(), fgColor());
+    int splitX = display.width() / 2;
+    display.drawFastVLine(splitX, 24, display.height() - 24, fgColor());
+
+    u8g2Fonts.setFont(getBodyFont());
+    u8g2Fonts.setCursor(10, 44); u8g2Fonts.print("Nove clanky:");
+    u8g2Fonts.setCursor(10, 62); u8g2Fonts.print("Svet: " + String(nSvet));
+    u8g2Fonts.setCursor(10, 78); u8g2Fonts.print("CR:   " + String(nCR));
+    u8g2Fonts.setCursor(10, 94); u8g2Fonts.print("Tech: " + String(nTech));
+
+    String top = topTitulek;
+    if (top.length() == 0) top = "(nezjisteno)";
+    if (top.length() > 260) top = top.substring(0, 260) + "...";
+
+    int rightX = splitX + 8;
+    int rightW = display.width() - rightX - 8;
+
+    u8g2Fonts.setFont(getSmallBoldFont());
+    TextLine lines[5];
+    int lCount = zalamejText(top.c_str(), top.length(), lines, 5, rightW);
+    int lineH = getLineHeight();
+    int topAreaY = 28;   // o radek vys, vice prostoru pro titulek
+    int topAreaH = 94;
+    int blockH = lCount * lineH;
+    int y = topAreaY + ((topAreaH - blockH) / 2) + lineH;
+    for (int i = 0; i < lCount; i++) {
+      char b[150];
+      int len = lines[i].len;
+      if (len > 149) len = 149;
+      strncpy(b, &top.c_str()[lines[i].start], len);
+      b[len] = '\0';
+      int tw = u8g2Fonts.getUTF8Width(b);
+      int cx = rightX + (rightW - tw) / 2;
+      if (cx < rightX) cx = rightX;
+      u8g2Fonts.setCursor(cx, y);
+      u8g2Fonts.print(b);
+      y += lineH;
+    }
+    u8g2Fonts.setFont(getSmallFont());
+    u8g2Fonts.setCursor(10, 128);
+    u8g2Fonts.print("BTN0/BTN21 = pokracovat");
+  } while (display.nextPage());
+
+  // Nezavirat automaticky; ochrana proti "probliknuti":
+  // 1) nejdriv pockat na uvolneni tlacitek po predchozi akci
+  while (digitalRead(BTN_DOWN) == LOW || digitalRead(BTN_SELECT) == LOW) { delay(30); }
+  delay(120);
+  // 2) potom cekat na novy vedomy stisk
+  while (digitalRead(BTN_DOWN) == HIGH && digitalRead(BTN_SELECT) == HIGH) { delay(30); }
+  delay(120);
+  // 3) a az nakonec na uvolneni
+  while (digitalRead(BTN_DOWN) == LOW || digitalRead(BTN_SELECT) == LOW) { delay(30); }
+}
+
 void parsujPocasi(String raw) {
   if (raw.length() < 5) return;
   int pos = 0;
@@ -1331,24 +2383,64 @@ bool pripojWiFi() {
   WiFi.setTxPower(WIFI_POWER_19_5dBm);
   WiFi.persistent(false);      
   WiFi.setSleep(false);        
-  delay(100);
+  delay(250);
 
-  Serial.println("Hledám síť: " + String(ssid1));
-  WiFi.begin(ssid1, pass1);
-  int pokusy = 0;
-  while (WiFi.status() != WL_CONNECTED && pokusy < 20) { delay(500); pokusy++; }
+  // Nejprve ověříme, které SSID jsou opravdu vidět.
+  bool maSsid1 = false, maSsid2 = false;
+  int n = WiFi.scanNetworks(false, true);
+  for (int i = 0; i < n; i++) {
+    String s = WiFi.SSID(i);
+    if (s == ssid1) maSsid1 = true;
+    if (s == ssid2) maSsid2 = true;
+  }
+  WiFi.scanDelete();
 
-  if (WiFi.status() != WL_CONNECTED) {
-    Serial.println("Barhon selhal, zkouším Bobíka...");
-    WiFi.begin(ssid2, pass2);
-    pokusy = 0;
-    while (WiFi.status() != WL_CONNECTED && pokusy < 20) { delay(500); pokusy++; }
+  auto pripojNa = [&](const char* ssid, const char* pass) -> bool {
+    Serial.println("Pripojuji: " + String(ssid));
+    WiFi.disconnect(true, true);
+    delay(200);
+    WiFi.begin(ssid, pass);
+    int pokusy = 0;
+    while (WiFi.status() != WL_CONNECTED && pokusy < 24) { delay(500); pokusy++; }
+    if (WiFi.status() == WL_CONNECTED) {
+      Serial.println("WiFi OK: " + String(ssid) + " | IP: " + WiFi.localIP().toString());
+      return true;
+    }
+    Serial.println("WiFi FAIL (" + String(ssid) + "), status: " + String((int)WiFi.status()));
+    return false;
+  };
+
+  if (maSsid1 && pripojNa(ssid1, pass1)) {
+    // connected
+  } else if (maSsid2 && pripojNa(ssid2, pass2)) {
+    // connected
+  } else {
+    // Když scan selže/nevrátí nic, zkusíme fallback pokusy i tak.
+    if (pripojNa(ssid1, pass1) || pripojNa(ssid2, pass2)) {
+      // connected
+    }
   }
 
   if (WiFi.status() == WL_CONNECTED) {
-    configTzTime("CET-1CEST,M3.5.0,M10.5.0/3", "pool.ntp.org", "time.nist.gov");
+    setenv("TZ", TZ_PRAGUE, 1);
+    tzset();
+    configTzTime(TZ_PRAGUE, "pool.ntp.org", "time.google.com", "time.nist.gov");
     struct tm timeinfo;
-    if (getLocalTime(&timeinfo, 3000)) casSynchronizovan = true;
+    bool ok = false;
+    for (int i = 0; i < 3; i++) {
+      if (getLocalTime(&timeinfo, 2500)) { ok = true; break; }
+      delay(200);
+    }
+    casSynchronizovan = ok;
+    Serial.print("NTP sync: "); Serial.println(ok ? "OK" : "FAIL");
+    if (ok) {
+      time_t epoch = time(NULL);
+      Serial.print("Epoch: "); Serial.println((long)epoch);
+      char buf[40];
+      strftime(buf, sizeof(buf), "%Y-%m-%d %H:%M:%S", &timeinfo);
+      Serial.print("Local CZ time: "); Serial.println(buf);
+      Serial.print("TZ: "); Serial.println(TZ_PRAGUE);
+    }
     return true;
   }
   return false;
@@ -1395,6 +2487,7 @@ String stahniTextZUrl(const String& nazev, const String& url) {
 
 void aktualizovatDataNaPozadi(bool vynuceno) {
   bool casNaUpdate = false;
+  bool triggerPlanovane = false;
   time_t now = time(NULL);
   
   // Zkontrolujeme, jestli ESP už má z internetu reálný čas (epoch > 1.6 miliardy)
@@ -1405,13 +2498,27 @@ void aktualizovatDataNaPozadi(bool vynuceno) {
     }
   }
 
+  // Denni aktualizace v pevnou hodinu (max 1x za den)
+  if (!vynuceno && updateHour >= 0 && now > 1600000000) {
+    struct tm t;
+    if (getLocalTime(&t, 50)) {
+      int dnes = (t.tm_year + 1900) * 10000 + (t.tm_mon + 1) * 100 + t.tm_mday;
+      if (t.tm_hour >= updateHour && rtc_posledniPlanovanaAktualizace != dnes) {
+        casNaUpdate = true;
+        triggerPlanovane = true;
+      }
+    }
+  }
+
   if (vynuceno || casNaUpdate) {
     nakresliLoadScreen("Navazuji spojení...", 5);
     
     if (pripojWiFi()) {
       // NTP re-sync pokud ještě nebyl synchronizován
       if (!casSynchronizovan) {
-        configTzTime("CET-1CEST,M3.5.0,M10.5.0/3", "pool.ntp.org", "time.nist.gov");
+        setenv("TZ", TZ_PRAGUE, 1);
+        tzset();
+        configTzTime(TZ_PRAGUE, "pool.ntp.org", "time.google.com", "time.nist.gov");
         struct tm timeinfo;
         if (getLocalTime(&timeinfo, 5000)) casSynchronizovan = true;
       }
@@ -1425,6 +2532,8 @@ void aktualizovatDataNaPozadi(bool vynuceno) {
       }
 
       bool asponNecoSeStahlo = false;
+      int noveSvet = 0, noveCR = 0, noveTech = 0;
+      String topTitulek = "";
       sharedClientInitialized = false; // Reset klienta pro čerstvé spojení
       sharedClient.stop(); // Zavřeme případné předchozí spojení
       
@@ -1433,20 +2542,41 @@ void aktualizovatDataNaPozadi(bool vynuceno) {
       
       nakresliLoadScreen("Stahuji zprávy ze světa...", 15);
       {
+        String oldRaw = nactiSouborZAktualni("zpravy_svet.txt");
         String tmp = stahniTextZUrl("Svet", urlZpravySvet);
-        if (tmp.length() > 20) { ulozZpravuDoCache("svet", tmp); ulozAktualniZpravuNaSD("zpravy_svet.txt", tmp); archivujDeduplikovane("zpravy_svet.txt", tmp); asponNecoSeStahlo = true; }
+        if (tmp.length() > 20) {
+          noveSvet = spocitejNoveZpravyVuciStarym(oldRaw, tmp);
+          if (topTitulek.length() == 0) topTitulek = prvniTitulekZRaw(tmp);
+          ulozZpravuDoCache("svet", tmp); ulozAktualniZpravuNaSD("zpravy_svet.txt", tmp);
+          if (LOCAL_ARCHIVE_ON_DEVICE) archivujDeduplikovane("zpravy_svet.txt", tmp);
+          asponNecoSeStahlo = true;
+        }
       }
       
       nakresliLoadScreen("Stahuji zprávy z ČR...", 28);
       {
+        String oldRaw = nactiSouborZAktualni("zpravy_cr.txt");
         String tmp = stahniTextZUrl("CR", urlZpravyCR);
-        if (tmp.length() > 20) { ulozZpravuDoCache("cr", tmp); ulozAktualniZpravuNaSD("zpravy_cr.txt", tmp); archivujDeduplikovane("zpravy_cr.txt", tmp); asponNecoSeStahlo = true; }
+        if (tmp.length() > 20) {
+          noveCR = spocitejNoveZpravyVuciStarym(oldRaw, tmp);
+          String t0 = prvniTitulekZRaw(tmp);
+          if (t0.length() > 0) topTitulek = t0; // Preferujeme domácí top zprávu.
+          ulozZpravuDoCache("cr", tmp); ulozAktualniZpravuNaSD("zpravy_cr.txt", tmp);
+          if (LOCAL_ARCHIVE_ON_DEVICE) archivujDeduplikovane("zpravy_cr.txt", tmp);
+          asponNecoSeStahlo = true;
+        }
       }
       
       nakresliLoadScreen("Stahuji Tech a AI...", 42);
       {
+        String oldRaw = nactiSouborZAktualni("zpravy_tech.txt");
         String tmp = stahniTextZUrl("Tech", urlTechAI);
-        if (tmp.length() > 20) { ulozZpravuDoCache("tech", tmp); ulozAktualniZpravuNaSD("zpravy_tech.txt", tmp); archivujDeduplikovane("zpravy_tech.txt", tmp); asponNecoSeStahlo = true; }
+        if (tmp.length() > 20) {
+          noveTech = spocitejNoveZpravyVuciStarym(oldRaw, tmp);
+          ulozZpravuDoCache("tech", tmp); ulozAktualniZpravuNaSD("zpravy_tech.txt", tmp);
+          if (LOCAL_ARCHIVE_ON_DEVICE) archivujDeduplikovane("zpravy_tech.txt", tmp);
+          asponNecoSeStahlo = true;
+        }
       }
       
       nakresliLoadScreen("Stahuji Počasí...", 55);
@@ -1479,28 +2609,40 @@ void aktualizovatDataNaPozadi(bool vynuceno) {
       if (asponNecoSeStahlo) {
         nactiStazenaData(); // Načte z LittleFS zpět do RAM jen to co potřebujeme
         rtc_posledniAktualizace = time(NULL);
+        if (triggerPlanovane) {
+          struct tm t;
+          if (getLocalTime(&t, 50)) {
+            rtc_posledniPlanovanaAktualizace = (t.tm_year + 1900) * 10000 + (t.tm_mon + 1) * 100 + t.tm_mday;
+          }
+        }
+        // opravArchivDataceASerazeni(); // docasne vypnuto kvuli stabilite
         promazArchivStarsi7Dni();
       }
-      
-      nakresliLoadScreen(asponNecoSeStahlo ? "HOTOVO A ULOŽENO!" : "Stažení selhalo!", 100);
-      delay(800);
+      if (vynuceno) {
+        if (topTitulek.length() == 0) topTitulek = asponNecoSeStahlo ? "Aktualizace dokoncena" : "Stazeni selhalo";
+        zobrazSouhrnAktualizace(noveSvet, noveCR, noveTech, topTitulek);
+      } else {
+        nakresliLoadScreen(asponNecoSeStahlo ? "HOTOVO A ULOŽENO!" : "Stažení selhalo!", 100);
+        delay(800);
+      }
     } else {
       if (vynuceno) {
         nakresliLoadScreen("Wi-Fi nenalezena!", 0);
         delay(2000);
       }
     }
-    // Vypnout WiFi rádio pro úsporu baterie
-    WiFi.disconnect(true);
-    WiFi.mode(WIFI_OFF);
+    // Vypnout WiFi rádio pro úsporu baterie (pokud neběží web upload režim)
+    if (!webUploadMode) {
+      WiFi.disconnect(true);
+      WiFi.mode(WIFI_OFF);
+    }
   }
 }
 
 // ===== ZOBRAZOVÁNÍ MENU A DAT =====
 void zobrazSubMenu(const char* title, String items[], int count, int selIndex, int scrOffset) {
   int visible = getVisibleMenuItems(); int itemH = getMenuItemHeight();
-  display.setPartialWindow(0, 0, display.width(), display.height());
-  display.firstPage();
+  beginUiFrame(true);
   do {
     display.fillScreen(bgColor());
     u8g2Fonts.setFontMode(1);
@@ -1618,8 +2760,7 @@ void drawTime(int x, int y, int size, int h, int m, int s, bool showSec) {
 void zobrazSvetovyCas() {
   struct tm timeinfo;
   bool gotTime = getLocalTime(&timeinfo, 10);
-  display.setPartialWindow(0, 0, display.width(), display.height());
-  display.firstPage();
+  beginUiFrame(true);
   do {
     display.fillScreen(bgColor());
     u8g2Fonts.setFontMode(1);
@@ -1748,8 +2889,7 @@ void zobrazPocasiDen(int denIdx) {
 }
 
 void zobrazSeznamZprav() {
-  display.setPartialWindow(0, 0, display.width(), display.height());
-  display.firstPage();
+  beginUiFrame(true);
   do {
     display.fillScreen(bgColor());
     u8g2Fonts.setFontMode(1);
@@ -1800,8 +2940,7 @@ void zobrazText(const char* title, const char* text) {
   int totalPages = (lineCount + linesPerPage - 1) / linesPerPage; if (totalPages < 1) totalPages = 1;
   if (textScrollPage >= totalPages) textScrollPage = 0;
   int startLine = textScrollPage * linesPerPage;
-  display.setPartialWindow(0, 0, display.width(), display.height());
-  display.firstPage();
+  beginUiFrame(true);
   do {
     display.fillScreen(bgColor());
     u8g2Fonts.setFontMode(1);
@@ -1954,8 +3093,10 @@ void drawStopky(unsigned long ms, bool running) {
 
 // Načte gamebook uzel ze SD souboru (jeden uzel = jeden řádek ve formátu text|volbaA|volbaB|popisA|popisB).
 void nactiGBNodeZSD(int node) {
+  obnovAktivniDatoveSoubory();
   if (!sdReady) { gbZSD = false; return; }
-  String r = nactiRadekZSD("/eindata/gamebook/gamebook.txt", node);
+  int lineIdx = node + (aktivniGamebookMaTitulek ? 1 : 0);
+  String r = nactiRadekZSD(aktivniGamebookSoubor.c_str(), lineIdx);
   if (r.length() == 0) { gbZSD = false; return; }
   // Najdeme první 4 pozice znaku '|' (text neobsahuje '|')
   int p[4] = {-1, -1, -1, -1}; int cnt = 0;
@@ -2088,20 +3229,43 @@ String odstranDiakritiku(String s) {
   } return out;
 }
 
+String aktualniSlovnikCesta() {
+  return String("/eindata/slovnik/") + slovnikLangSoubory[slovnikLangIdx];
+}
+
+bool parseSlovnikPair(const String& lineRaw, String& left, String& right) {
+  String line = lineRaw;
+  line.trim();
+  int sep = line.indexOf('|');
+  if (sep <= 0 || sep >= line.length() - 1) return false;
+  left = line.substring(0, sep);
+  right = line.substring(sep + 1);
+  left.trim(); right.trim();
+  return left.length() > 0 && right.length() > 0;
+}
+
 void zobrazHledani() {
-  int shody[10]; int shodCount = 0;
-  for (int i = 0; i < slovnikDataCount && shodCount < 10; i++) {
-    SlovnikSlovo s; memcpy_P(&s, &slovnikData[i], sizeof(SlovnikSlovo));
-    char zdroj[50]; if (hledanySmer == 0) strncpy_P(zdroj, (const char*)s.cz, sizeof(zdroj) - 1); else strncpy_P(zdroj, (const char*)s.en, sizeof(zdroj) - 1);
-    zdroj[sizeof(zdroj) - 1] = '\0';
-    String cistyZdroj = odstranDiakritiku(String(zdroj)); cistyZdroj.toLowerCase(); String hledaneStr = String(hledanyText); hledaneStr.toLowerCase();
-    if (hledanyLen > 0 && cistyZdroj.startsWith(hledaneStr)) { shody[shodCount] = i; shodCount++; }
+  String vysledky[10];
+  int shodCount = 0;
+  String hledaneStr = String(hledanyText); hledaneStr.toLowerCase();
+  File f = SD.open(aktualniSlovnikCesta().c_str());
+  if (f) {
+    while (f.available() && shodCount < 10) {
+      String left, right;
+      if (!parseSlovnikPair(f.readStringUntil('\n'), left, right)) continue;
+      String src = (hledanySmer == 0) ? left : right;
+      String dst = (hledanySmer == 0) ? right : left;
+      String cistyZdroj = odstranDiakritiku(src); cistyZdroj.toLowerCase();
+      if (hledanyLen > 0 && cistyZdroj.startsWith(hledaneStr)) {
+        vysledky[shodCount++] = src + " = " + dst;
+      }
+    }
+    f.close();
   }
-  display.setPartialWindow(0, 0, display.width(), display.height());
-  display.firstPage();
+  beginUiFrame(true);
   do {
     display.fillScreen(bgColor()); u8g2Fonts.setFontMode(1); nakresliStatusBar();
-    u8g2Fonts.setFont(getBodyFont()); u8g2Fonts.setCursor(5, 16); u8g2Fonts.print(hledanySmer == 0 ? "HLEDAT (CZ): " : "HLEDAT (EN): ");
+    u8g2Fonts.setFont(getBodyFont()); u8g2Fonts.setCursor(5, 16); u8g2Fonts.print(hledanySmer == 0 ? "HLEDAT (CZ): " : "HLEDAT (JZ): ");
     u8g2Fonts.print(hledanyText); u8g2Fonts.print("_"); display.drawFastHLine(0, 20, display.width(), fgColor());
     u8g2Fonts.setFont(getSmallFont());
     for (int i = 0; i < abcCount; i++) {
@@ -2116,9 +3280,7 @@ void zobrazHledani() {
     else {
       int y = 74;
       for (int i = 0; i < shodCount; i++) {
-        int idx = shody[i]; SlovnikSlovo s; memcpy_P(&s, &slovnikData[idx], sizeof(SlovnikSlovo));
-        char cz[30], en[30]; strncpy_P(cz, (const char*)s.cz, sizeof(cz) - 1); cz[sizeof(cz) - 1] = '\0'; strncpy_P(en, (const char*)s.en, sizeof(en) - 1); en[sizeof(en) - 1] = '\0';
-        u8g2Fonts.setCursor(5, y); String preklad = (hledanySmer == 0) ? (String(cz) + " = " + String(en)) : (String(en) + " = " + String(cz)); u8g2Fonts.print(preklad.c_str()); y += 10;
+        u8g2Fonts.setCursor(5, y); u8g2Fonts.print(vysledky[i].c_str()); y += 10;
       }
     }
     u8g2Fonts.setFont(getSmallFont()); u8g2Fonts.setCursor(5, 125); u8g2Fonts.print("BTN0=písmeno BTN21=potvrď Drž=zpět");
@@ -2145,9 +3307,12 @@ void zobrazFraze(const char* title, const Fraze* data, int count) {
 }
 
 void zobrazUceni() {
-  SlovnikSlovo s; memcpy_P(&s, &slovnikData[uceniIdx], sizeof(SlovnikSlovo));
-  char cz[30], en[30]; strncpy_P(cz, (const char*)s.cz, sizeof(cz) - 1); cz[sizeof(cz) - 1] = '\0'; strncpy_P(en, (const char*)s.en, sizeof(en) - 1); en[sizeof(en) - 1] = '\0';
-  const char* otazka = (uceniSmer == 0) ? cz : en; const char* odpoved = (uceniSmer == 0) ? en : cz; const char* smerText = (uceniSmer == 0) ? "CZ -> EN" : "EN -> CZ";
+  String pair = nactiNahodnyRadek(aktualniSlovnikCesta().c_str());
+  String left = "", right = "";
+  if (!parseSlovnikPair(pair, left, right)) { left = "slovnik"; right = "prazdny"; }
+  const char* otazka = (uceniSmer == 0) ? left.c_str() : right.c_str();
+  const char* odpoved = (uceniSmer == 0) ? right.c_str() : left.c_str();
+  const char* smerText = (uceniSmer == 0) ? "CZ -> JAZYK" : "JAZYK -> CZ";
   
   display.setPartialWindow(0, 0, display.width(), display.height());
   display.firstPage();
@@ -2228,8 +3393,7 @@ void zobrazLedStav() {
 
 void zobrazRefreshToast() {
   const char* refreshNazvy[] = {"Pomalý (full)", "Střední (partial)", "Rychlý (fast)"};
-  display.setPartialWindow(0, 0, display.width(), display.height());
-  display.firstPage();
+  beginUiFrame(true);
   do {
     display.fillScreen(bgColor());
     u8g2Fonts.setFontMode(1);
@@ -2239,6 +3403,21 @@ void zobrazRefreshToast() {
     printCentered(String(refreshNazvy[refreshMode]), 75, getBodyFont());
   } while (display.nextPage());
   delay(1500);
+}
+
+void zobrazPlanHodinaToast() {
+  String label = (updateHour < 0) ? "Vypnuto" : (String(updateHour) + ":00");
+  beginUiFrame(true);
+  do {
+    display.fillScreen(bgColor());
+    u8g2Fonts.setFontMode(1);
+    u8g2Fonts.setForegroundColor(fgColor());
+    u8g2Fonts.setBackgroundColor(bgColor());
+    printCentered("DENNI AKTUALIZACE", 44, getTitleFont());
+    printCentered(label, 78, getBigFont());
+    printCentered("BTN21 = zmenit", 112, getSmallFont());
+  } while (display.nextPage());
+  delay(350);
 }
 
 // ==== SD PROHLÍŽEČ SOUBORŮ ====
@@ -2411,9 +3590,10 @@ void goBack() {
     case STATE_AKTUALITY: appState = STATE_MAIN_MENU; zobrazSubMenu("HLAVNÍ MENU", mainMenuItems, mainMenuCount, menuIndex, scrollOffset); break;
 
     case STATE_FRAZE_DETAIL: appState = STATE_FRAZE_MENU; zobrazSubMenu("FRÁZE", frazeMenuItems, frazeMenuCount, subMenuIndex, subScrollOffset); break;
-    case STATE_FRAZE_MENU: appState = STATE_SLOVNIK; subMenuIndex = 2; subScrollOffset = 0; zobrazSubMenu("SLOVNÍK", slovnikItems, slovnikCount, subMenuIndex, subScrollOffset); break;
-    case STATE_UCENI: appState = STATE_SLOVNIK; subMenuIndex = 3; subScrollOffset = 0; zobrazSubMenu("SLOVNÍK", slovnikItems, slovnikCount, subMenuIndex, subScrollOffset); break;
-    case STATE_SLOVNIK_DETAIL: appState = STATE_SLOVNIK; zobrazSubMenu("SLOVNÍK", slovnikItems, slovnikCount, subMenuIndex, subScrollOffset); break;
+    case STATE_FRAZE_MENU: appState = STATE_SLOVNIK_JAZYK; subMenuIndex = 1; subScrollOffset = 0; zobrazSubMenu("SLOVNÍK", slovnikItems, slovnikCount, subMenuIndex, subScrollOffset); break;
+    case STATE_UCENI: appState = STATE_SLOVNIK_JAZYK; subMenuIndex = 2; subScrollOffset = 0; zobrazSubMenu("SLOVNÍK", slovnikItems, slovnikCount, subMenuIndex, subScrollOffset); break;
+    case STATE_SLOVNIK_DETAIL: appState = STATE_SLOVNIK_JAZYK; subMenuIndex = 0; subScrollOffset = 0; zobrazSubMenu("SLOVNÍK", slovnikItems, slovnikCount, subMenuIndex, subScrollOffset); break;
+    case STATE_SLOVNIK_JAZYK: appState = STATE_SLOVNIK; subMenuIndex = slovnikLangIdx; subScrollOffset = 0; zobrazSubMenu("JAZYK SLOVNÍKU", slovnikLangNazvy, slovnikLangCount, subMenuIndex, subScrollOffset); break;
     case STATE_SLOVNIK: appState = STATE_MAIN_MENU; zobrazSubMenu("HLAVNÍ MENU", mainMenuItems, mainMenuCount, menuIndex, scrollOffset); break;
     
     case STATE_QR_ZOBRAZ: appState = STATE_QR_MENU; zobrazSubMenu("QR KÓDY", qrItems, qrCount, subMenuIndex, subScrollOffset); break;
@@ -2426,7 +3606,8 @@ void goBack() {
     case STATE_WYR: case STATE_WYR_VYSLEDEK: appState = STATE_HRY; subMenuIndex = 5; subScrollOffset = scrollForIdx(5); zobrazSubMenu("HRY", hryItems, hryCount, subMenuIndex, subScrollOffset); break;
     case STATE_FLASKA: case STATE_KOSTKY: case STATE_ODHALOVACKA: case STATE_ODHALOVACKA_DETAIL: appState = STATE_HRY; zobrazSubMenu("HRY", hryItems, hryCount, subMenuIndex, subScrollOffset); break;
     case STATE_KOSTKY_VYBER: appState = STATE_HRY; subMenuIndex = 1; subScrollOffset = 0; zobrazSubMenu("HRY", hryItems, hryCount, subMenuIndex, subScrollOffset); break;
-    case STATE_GAMEBOOK: ulozGBPozici(gbNode); appState = STATE_HRY; subMenuIndex = 2; subScrollOffset = 0; zobrazSubMenu("HRY", hryItems, hryCount, subMenuIndex, subScrollOffset); break;
+    case STATE_GAMEBOOK: ulozGBPozici(gbNode); appState = STATE_GAMEBOOK_MENU; zobrazSubMenu("GAMEBOOK", dynamicGamebookItems, dynamicGamebookCount, subMenuIndex, subScrollOffset); break;
+    case STATE_GAMEBOOK_MENU: appState = STATE_HRY; subMenuIndex = 2; subScrollOffset = 0; zobrazSubMenu("HRY", hryItems, hryCount, subMenuIndex, subScrollOffset); break;
     case STATE_KVIZ_OBTIZNOST: appState = STATE_KVIZ_KATEGORIE; zobrazSubMenu("KATEGORIE KVÍZU", kvizKategorieItems, kvizKategoriiCount, kvizKatIdx, kvizKatScrollOffset); break;
     case STATE_KVIZ_KATEGORIE: appState = STATE_HRY; subMenuIndex = 4; subScrollOffset = scrollForIdx(4); zobrazSubMenu("HRY", hryItems, hryCount, subMenuIndex, subScrollOffset); break;
     case STATE_HRY: appState = STATE_MAIN_MENU; zobrazSubMenu("HLAVNÍ MENU", mainMenuItems, mainMenuCount, menuIndex, scrollOffset); break;
@@ -2463,11 +3644,13 @@ void goBack() {
     case STATE_GENERATOR_RESULT: appState = STATE_GENERATOR; zobrazSubMenu("GENERÁTOR", generatorItems, generatorCount, subMenuIndex, subScrollOffset); break;
     case STATE_GENERATOR: appState = STATE_MAIN_MENU; zobrazSubMenu("HLAVNÍ MENU", mainMenuItems, mainMenuCount, menuIndex, scrollOffset); break;
     
-    case STATE_NASTAVENI_O_ZARIZENI: appState = STATE_NASTAVENI; subMenuIndex = 3; subScrollOffset = scrollForIdx(3); zobrazSubMenu("NASTAVENÍ", nastaveniItems, nastaveniCount, subMenuIndex, subScrollOffset); break;
-    case STATE_NASTAVENI_BATERIE: appState = STATE_NASTAVENI; subMenuIndex = 2; subScrollOffset = scrollForIdx(2); zobrazSubMenu("NASTAVENÍ", nastaveniItems, nastaveniCount, subMenuIndex, subScrollOffset); break;
-    case STATE_NASTAVENI_INTERVAL: appState = STATE_NASTAVENI_AKTUALIZACE; subMenuIndex = 0; subScrollOffset = 0; zobrazSubMenu("AKTUALIZACE", aktualizaceItems, aktualizaceCount, 0, 0); break;
-    case STATE_NASTAVENI_AKTUALIZACE: appState = STATE_NASTAVENI; subMenuIndex = 1; subScrollOffset = scrollForIdx(1); zobrazSubMenu("NASTAVENÍ", nastaveniItems, nastaveniCount, subMenuIndex, subScrollOffset); break;
-    case STATE_NASTAVENI_VZHLED: appState = STATE_NASTAVENI; subMenuIndex = 0; subScrollOffset = 0; zobrazSubMenu("NASTAVENÍ", nastaveniItems, nastaveniCount, subMenuIndex, subScrollOffset); break;
+    case STATE_NASTAVENI_O_ZARIZENI: appState = STATE_NASTAVENI; subMenuIndex = 4; subScrollOffset = scrollForIdx(4); zobrazSubMenu("NASTAVENÍ", nastaveniItems, nastaveniCount, subMenuIndex, subScrollOffset); break;
+    case STATE_NASTAVENI_BATERIE: appState = STATE_NASTAVENI; subMenuIndex = 3; subScrollOffset = scrollForIdx(3); zobrazSubMenu("NASTAVENÍ", nastaveniItems, nastaveniCount, subMenuIndex, subScrollOffset); break;
+    case STATE_NASTAVENI_AUTOUSPANI: appState = STATE_NASTAVENI; subMenuIndex = 2; subScrollOffset = scrollForIdx(2); zobrazSubMenu("NASTAVENÍ", nastaveniItems, nastaveniCount, subMenuIndex, subScrollOffset); break;
+    case STATE_NASTAVENI_INTERVAL: appState = STATE_NASTAVENI_AKTUALIZACE; subMenuIndex = 1; subScrollOffset = 0; zobrazSubMenu("AKTUALIZACE", aktualizaceItems, aktualizaceCount, 1, 0); break;
+    case STATE_NASTAVENI_AKTUALIZACE: appState = STATE_NASTAVENI; subMenuIndex = 0; subScrollOffset = 0; zobrazSubMenu("NASTAVENÍ", nastaveniItems, nastaveniCount, 0, 0); break;
+    case STATE_WEB_UPLOAD: stopWebUploadMode(); appState = STATE_NASTAVENI_AKTUALIZACE; subMenuIndex = 3; subScrollOffset = 0; zobrazSubMenu("AKTUALIZACE", aktualizaceItems, aktualizaceCount, subMenuIndex, subScrollOffset); break;
+    case STATE_NASTAVENI_VZHLED: appState = STATE_NASTAVENI; subMenuIndex = 1; subScrollOffset = scrollForIdx(1); zobrazSubMenu("NASTAVENÍ", nastaveniItems, nastaveniCount, subMenuIndex, subScrollOffset); break;
     case STATE_NASTAVENI: appState = STATE_MAIN_MENU; zobrazSubMenu("HLAVNÍ MENU", mainMenuItems, mainMenuCount, menuIndex, scrollOffset); break;
 
     default: appState = STATE_MAIN_MENU; zobrazSubMenu("HLAVNÍ MENU", mainMenuItems, mainMenuCount, menuIndex, scrollOffset); break;
@@ -2477,6 +3660,15 @@ void goBack() {
 // ===== SETUP =====
 void setup() {
   Serial.begin(115200);
+  setenv("TZ", TZ_PRAGUE, 1);
+  tzset();
+  // --- VLOŽ TESTOVACÍ KÓD SEM ---
+  Serial.println("--- KONTROLA PAMETI ---");
+  Serial.print("Celkova PSRAM: ");
+  Serial.println(ESP.getPsramSize());
+  Serial.print("Volna PSRAM: ");
+  Serial.println(ESP.getFreePsram());
+  // ------------------------------
   randomSeed(analogRead(0) + millis());
   pinMode(Vext, OUTPUT); digitalWrite(Vext, HIGH); delay(100);
   pinMode(LED_PIN, OUTPUT); digitalWrite(LED_PIN, LOW);
@@ -2496,19 +3688,33 @@ void setup() {
   u8g2Fonts.setFontMode(1);
   pinMode(BTN_DOWN, INPUT_PULLUP); pinMode(BTN_SELECT, INPUT_PULLUP);
 
-  // SD karta: inicializace a zobrazení stavu (stiskni tlačítko pro pokračování)
+  // SD karta: inicializace na pozadí (bez blokující obrazovky při startu)
   // pripravSD() volá SD.begin() a ověří/vytvoří adresářovou strukturu
   sdReady = pripravSD();
-  zobrazSDInfo(sdReady);
+  obnovAktivniDatoveSoubory();
   
   nactiPoziceKnih(); gbNode = nactiGBPozici();
   
   prefs.begin("nastaveni", true);
   intervalIdx = prefs.getInt("updInt", 4);
+  updateHour = prefs.getInt("updHour", -1);
+  autoSleepIdx = prefs.getInt("sleepIdx", 6);
+  slovnikLangIdx = prefs.getInt("dictLang", 0);
   prefs.end();
+  if (autoSleepIdx < 0 || autoSleepIdx >= autoSleepCount) autoSleepIdx = 6;
+  if (slovnikLangIdx < 0 || slovnikLangIdx >= slovnikLangCount) slovnikLangIdx = 0;
+  lastUserActivityMs = millis();
 
-  if (!LittleFS.begin(true)) { // true = formátuj pokud selhá montáž
-    Serial.println("LittleFS: kritická chyba montáže!");
+  // LittleFS init: nejdriv bez formatu, pak jednorazovy pokus s formatem.
+  littlefsReady = LittleFS.begin(false);
+  if (!littlefsReady) {
+    Serial.println("LittleFS: montaz selhala, zkousim opravu formatem...");
+    littlefsReady = LittleFS.begin(true);
+  }
+  if (!littlefsReady) {
+    Serial.println("LittleFS: nelze pripojit ani po formatu (cache pojede jen ze SD).");
+  } else {
+    Serial.println("LittleFS: OK");
   }
 
   // 1. ZKUSÍME NAČÍST DATA Z ULOŽENÉ PAMĚTI
@@ -2525,6 +3731,13 @@ void setup() {
 // ===== LOOP =====
 void loop() {
   aktualizovatDataNaPozadi(false);
+  if (webUploadMode && webUploadServerReady) {
+    webServer.handleClient();
+    if (webUploadNeedsRefresh) {
+      webUploadNeedsRefresh = false;
+      zobrazWebUpload();
+    }
+  }
 
   if (appState == STATE_ODHALOVACKA && !odhalovackaKonec) {
     if (millis() - odhalovackaLastMs > 150) { 
@@ -2555,6 +3768,7 @@ void loop() {
   if (digitalRead(BTN_DOWN) == LOW) {
     delay(10); 
     if (digitalRead(BTN_DOWN) == LOW) {
+      lastUserActivityMs = millis();
 
       if (appState == STATE_MAIN_MENU && longPressBTN0()) {
         jdiSpat();
@@ -2590,6 +3804,11 @@ void loop() {
         while (digitalRead(BTN_DOWN) == LOW) delay(10); return;
       }
 
+      if (appState == STATE_SLOVNIK_DETAIL && longPressBTN0()) {
+        hledanySmer = 1 - hledanySmer;
+        zobrazHledani();
+        return;
+      }
       if (longPressBTN0()) { goBack(); return; }
 
       switch (appState) {
@@ -2606,8 +3825,9 @@ void loop() {
         case STATE_TOOLBOX: menuDown(subMenuIndex, subScrollOffset, toolboxCount); zobrazSubMenu("TOOLBOX", toolboxItems, toolboxCount, subMenuIndex, subScrollOffset); break;
         case STATE_QR_MENU: menuDown(subMenuIndex, subScrollOffset, qrCount); zobrazSubMenu("QR KÓDY", qrItems, qrCount, subMenuIndex, subScrollOffset); break;
         
-        case STATE_SLOVNIK: menuDown(subMenuIndex, subScrollOffset, slovnikCount); zobrazSubMenu("SLOVNÍK", slovnikItems, slovnikCount, subMenuIndex, subScrollOffset); break;
+        case STATE_SLOVNIK: menuDown(subMenuIndex, subScrollOffset, slovnikLangCount); zobrazSubMenu("JAZYK SLOVNÍKU", slovnikLangNazvy, slovnikLangCount, subMenuIndex, subScrollOffset); break;
         case STATE_SLOVNIK_DETAIL: abcKurzor = (abcKurzor + 1) % abcCount; zobrazHledani(); break;
+        case STATE_SLOVNIK_JAZYK: menuDown(subMenuIndex, subScrollOffset, slovnikCount); zobrazSubMenu("SLOVNÍK", slovnikItems, slovnikCount, subMenuIndex, subScrollOffset); break;
         case STATE_FRAZE_MENU: menuDown(subMenuIndex, subScrollOffset, frazeMenuCount); zobrazSubMenu("FRÁZE", frazeMenuItems, frazeMenuCount, subMenuIndex, subScrollOffset); break;
         case STATE_FRAZE_DETAIL:
           textScrollPage++;
@@ -2619,6 +3839,7 @@ void loop() {
         case STATE_UCENI: uceniSmer = 1 - uceniSmer; zobrazUceni(); break;
         case STATE_GENERATOR: menuDown(subMenuIndex, subScrollOffset, generatorCount); zobrazSubMenu("GENERÁTOR", generatorItems, generatorCount, subMenuIndex, subScrollOffset); break;
         case STATE_HRY: menuDown(subMenuIndex, subScrollOffset, hryCount); zobrazSubMenu("HRY", hryItems, hryCount, subMenuIndex, subScrollOffset); break;
+        case STATE_GAMEBOOK_MENU: menuDown(subMenuIndex, subScrollOffset, dynamicGamebookCount); zobrazSubMenu("GAMEBOOK", dynamicGamebookItems, dynamicGamebookCount, subMenuIndex, subScrollOffset); break;
         case STATE_KOSTKY_VYBER: menuDown(subMenuIndex, subScrollOffset, kostkyCount); zobrazSubMenu("KOSTKY", kostkyItems, kostkyCount, subMenuIndex, subScrollOffset); break;
         
         case STATE_KVIZ: nastaviNahodnyKvizIdx(); zobrazKviz(); break;
@@ -2637,6 +3858,8 @@ void loop() {
         case STATE_NASTAVENI_VZHLED: menuDown(subMenuIndex, subScrollOffset, vzhledCount); zobrazSubMenu("VZHLED", vzhledItems, vzhledCount, subMenuIndex, subScrollOffset); break;
         case STATE_NASTAVENI_AKTUALIZACE: menuDown(subMenuIndex, subScrollOffset, aktualizaceCount); zobrazSubMenu("AKTUALIZACE", aktualizaceItems, aktualizaceCount, subMenuIndex, subScrollOffset); break;
         case STATE_NASTAVENI_INTERVAL: menuDown(subMenuIndex, subScrollOffset, intervalCount); zobrazSubMenu("INTERVAL", intervalItems, intervalCount, subMenuIndex, subScrollOffset); break;
+        case STATE_NASTAVENI_AUTOUSPANI: menuDown(subMenuIndex, subScrollOffset, autoSleepCount); zobrazSubMenu("AUTO USPANI", autoSleepItems, autoSleepCount, subMenuIndex, subScrollOffset); break;
+        case STATE_WEB_UPLOAD: zobrazWebUpload(); break;
         
         case STATE_KURZY: appState = STATE_KURZY_GRAF; grafMenuIndex = 0; zobrazKurzGraf(); break;
         
@@ -2662,6 +3885,7 @@ void loop() {
   if (digitalRead(BTN_SELECT) == LOW) {
     delay(10); 
     if (digitalRead(BTN_SELECT) == LOW) {
+      lastUserActivityMs = millis();
       if (longPress()) { goBack(); return; }
 
       switch (appState) {
@@ -2670,7 +3894,7 @@ void loop() {
           if (menuIndex == 0) { nactiSeznamKnih(); appState = STATE_KNIHOVNA; zobrazSubMenu("KNIHOVNA", dynamicKnihovnaItems, dynamicKnihovnaCount, 0, 0); }
           else if (menuIndex == 1) { appState = STATE_AKTUALITY; zobrazSubMenu("AKTUALITY", aktualityItems, aktualityCount, 0, 0); }
           else if (menuIndex == 2) { appState = STATE_TOOLBOX; zobrazSubMenu("TOOLBOX", toolboxItems, toolboxCount, 0, 0); }
-          else if (menuIndex == 3) { appState = STATE_SLOVNIK; zobrazSubMenu("SLOVNÍK", slovnikItems, slovnikCount, 0, 0); }
+          else if (menuIndex == 3) { appState = STATE_SLOVNIK; zobrazSubMenu("JAZYK SLOVNÍKU", slovnikLangNazvy, slovnikLangCount, 0, 0); }
           else if (menuIndex == 4) { appState = STATE_GENERATOR; zobrazSubMenu("GENERÁTOR", generatorItems, generatorCount, 0, 0); }
           else if (menuIndex == 5) { appState = STATE_HRY; zobrazSubMenu("HRY", hryItems, hryCount, 0, 0); }
           else if (menuIndex == 6) { appState = STATE_SD_BROWSER; sdCurrentPath = "/"; nactiSDSlozku(); zobrazSDProhlizec(); }
@@ -2756,13 +3980,9 @@ void loop() {
 
         case STATE_SLOVNIK:
           textScrollPage = 0;
-          if (subMenuIndex == 0 || subMenuIndex == 1) {
-            appState = STATE_SLOVNIK_DETAIL; hledanySmer = subMenuIndex; hledanyLen = 0; hledanyText[0] = '\0'; abcKurzor = 0; zobrazHledani();
-          } else if (subMenuIndex == 2) {
-            appState = STATE_FRAZE_MENU; subMenuIndex = 0; subScrollOffset = 0; zobrazSubMenu("FRÁZE", frazeMenuItems, frazeMenuCount, 0, 0);
-          } else if (subMenuIndex == 3) {
-            appState = STATE_UCENI; uceniIdx = random(slovnikDataCount); uceniOdhaleno = false; zobrazUceni();
-          }
+          slovnikLangIdx = subMenuIndex;
+          prefs.begin("nastaveni", false); prefs.putInt("dictLang", slovnikLangIdx); prefs.end();
+          appState = STATE_SLOVNIK_JAZYK; subMenuIndex = 0; subScrollOffset = 0; zobrazSubMenu("SLOVNÍK", slovnikItems, slovnikCount, 0, 0);
           break;
         case STATE_SLOVNIK_DETAIL:
           if (hledanyLen < 11) { hledanyText[hledanyLen] = abeceda[abcKurzor] + 32; hledanyLen++; hledanyText[hledanyLen] = '\0'; }
@@ -2783,28 +4003,37 @@ void loop() {
           else if (subMenuIndex == 3) zobrazFraze("ZÁBAVA", frazeZabava, frazeZabavaCount);
           break;
         case STATE_UCENI:
-          if (uceniOdhaleno) { uceniIdx = random(slovnikDataCount); uceniOdhaleno = false; } else { uceniOdhaleno = true; }
+          if (uceniOdhaleno) { uceniOdhaleno = false; } else { uceniOdhaleno = true; }
           zobrazUceni();
+          break;
+        case STATE_SLOVNIK_JAZYK:
+          if (subMenuIndex == 0) {
+            appState = STATE_SLOVNIK_DETAIL; hledanySmer = 0; hledanyLen = 0; hledanyText[0] = '\0'; abcKurzor = 0; zobrazHledani();
+          } else if (subMenuIndex == 1) {
+            appState = STATE_FRAZE_MENU; subMenuIndex = 0; subScrollOffset = 0; zobrazSubMenu("FRÁZE", frazeMenuItems, frazeMenuCount, 0, 0);
+          } else if (subMenuIndex == 2) {
+            appState = STATE_UCENI; uceniOdhaleno = false; zobrazUceni();
+          }
           break;
 
        case STATE_GENERATOR:
          appState = STATE_GENERATOR_RESULT;
-         if (subMenuIndex == 0) zobrazGeneratorResult("VTIP", _nahodnyTextGeneratoru("/eindata/generator/vtipy.txt", vtipy, vtipyPocet).c_str());
-         else if (subMenuIndex == 1) zobrazGeneratorResult("ŽALM", _nahodnyTextGeneratoru("/eindata/generator/zalmy.txt", zalmy, zalmyPocet).c_str());
-         else if (subMenuIndex == 2) zobrazGeneratorResult("CITÁT", _nahodnyTextGeneratoru("/eindata/generator/citaty.txt", citaty, citatyPocet).c_str());
-         else if (subMenuIndex == 3) zobrazGeneratorResult("FAKT", _nahodnyTextGeneratoru("/eindata/generator/fakty.txt", fakty, faktyPocet).c_str());
+         if (subMenuIndex == 0) zobrazGeneratorResult("VTIP", _nahodnyTextGeneratoru(_generatorPathForCategory("/eindata/generator/vtipy.txt", "vtip").c_str(), vtipy, vtipyPocet).c_str());
+         else if (subMenuIndex == 1) zobrazGeneratorResult("ŽALM", _nahodnyTextGeneratoru(_generatorPathForCategory("/eindata/generator/zalmy.txt", "zalm").c_str(), zalmy, zalmyPocet).c_str());
+         else if (subMenuIndex == 2) zobrazGeneratorResult("CITÁT", _nahodnyTextGeneratoru(_generatorPathForCategory("/eindata/generator/citaty.txt", "citat").c_str(), citaty, citatyPocet).c_str());
+         else if (subMenuIndex == 3) zobrazGeneratorResult("FAKT", _nahodnyTextGeneratoru(_generatorPathForCategory("/eindata/generator/fakty.txt", "fakt").c_str(), fakty, faktyPocet).c_str());
          break;
         case STATE_GENERATOR_RESULT:
-          if (subMenuIndex == 0) zobrazGeneratorResult("VTIP", _nahodnyTextGeneratoru("/eindata/generator/vtipy.txt", vtipy, vtipyPocet).c_str());
-          else if (subMenuIndex == 1) zobrazGeneratorResult("ŽALM", _nahodnyTextGeneratoru("/eindata/generator/zalmy.txt", zalmy, zalmyPocet).c_str());
-          else if (subMenuIndex == 2) zobrazGeneratorResult("CITÁT", _nahodnyTextGeneratoru("/eindata/generator/citaty.txt", citaty, citatyPocet).c_str());
-          else if (subMenuIndex == 3) zobrazGeneratorResult("FAKT", _nahodnyTextGeneratoru("/eindata/generator/fakty.txt", fakty, faktyPocet).c_str());
+          if (subMenuIndex == 0) zobrazGeneratorResult("VTIP", _nahodnyTextGeneratoru(_generatorPathForCategory("/eindata/generator/vtipy.txt", "vtip").c_str(), vtipy, vtipyPocet).c_str());
+          else if (subMenuIndex == 1) zobrazGeneratorResult("ŽALM", _nahodnyTextGeneratoru(_generatorPathForCategory("/eindata/generator/zalmy.txt", "zalm").c_str(), zalmy, zalmyPocet).c_str());
+          else if (subMenuIndex == 2) zobrazGeneratorResult("CITÁT", _nahodnyTextGeneratoru(_generatorPathForCategory("/eindata/generator/citaty.txt", "citat").c_str(), citaty, citatyPocet).c_str());
+          else if (subMenuIndex == 3) zobrazGeneratorResult("FAKT", _nahodnyTextGeneratoru(_generatorPathForCategory("/eindata/generator/fakty.txt", "fakt").c_str(), fakty, faktyPocet).c_str());
           break;
 
         case STATE_HRY:
           if (subMenuIndex == 0) { appState = STATE_FLASKA; hrajFlasku(); }
           else if (subMenuIndex == 1) { appState = STATE_KOSTKY_VYBER; subMenuIndex = 0; subScrollOffset = 0; zobrazSubMenu("KOSTKY", kostkyItems, kostkyCount, 0, 0); }
-          else if (subMenuIndex == 2) { appState = STATE_GAMEBOOK; gbNode = nactiGBPozici(); gbTextPage = 0; zobrazGBNode(); }
+          else if (subMenuIndex == 2) { nactiSeznamGamebooku(); appState = STATE_GAMEBOOK_MENU; subMenuIndex = 0; subScrollOffset = 0; zobrazSubMenu("GAMEBOOK", dynamicGamebookItems, dynamicGamebookCount, 0, 0); }
           else if (subMenuIndex == 3) { appState = STATE_ODHALOVACKA; odhalovackaKonec = false; for(int i=0; i<64; i++) odhalenoPole[i] = false; zobrazOdhalovacku(); }
           else if (subMenuIndex == 4) { appState = STATE_KVIZ_KATEGORIE; kvizKatIdx = 0; kvizObtIdx = 0; kvizKatScrollOffset = 0; zobrazSubMenu("KATEGORIE KVÍZU", kvizKategorieItems, kvizKategoriiCount, 0, 0); }
           else if (subMenuIndex == 5) { appState = STATE_WYR; nastaviNahodnyWyrZSD(); zobrazWyr(); }
@@ -2819,6 +4048,14 @@ void loop() {
         case STATE_FLASKA: hrajFlasku(); break;
         case STATE_KOSTKY_VYBER: kostkyStran = kostkyStrany[subMenuIndex]; appState = STATE_KOSTKY; zobrazKostkyIdle(); break;
         case STATE_KOSTKY: hrajKostku(kostkyStran); break;
+        case STATE_GAMEBOOK_MENU:
+          aktivniGamebookSoubor = dynamicGamebookFiles[subMenuIndex];
+          aktivniGamebookMaTitulek = _gamebookHasTitleLine(aktivniGamebookSoubor.c_str());
+          gbNode = nactiGBPozici();
+          gbTextPage = 0;
+          appState = STATE_GAMEBOOK;
+          zobrazGBNode();
+          break;
         case STATE_GAMEBOOK:
           {
             int volbaA;
@@ -2889,29 +4126,51 @@ void loop() {
           break;
 
         case STATE_NASTAVENI:
-          if (subMenuIndex == 0) { appState = STATE_NASTAVENI_VZHLED; subMenuIndex = 0; subScrollOffset = 0; zobrazSubMenu("VZHLED", vzhledItems, vzhledCount, 0, 0); }
-          else if (subMenuIndex == 1) { appState = STATE_NASTAVENI_AKTUALIZACE; subMenuIndex = 0; subScrollOffset = 0; zobrazSubMenu("AKTUALIZACE", aktualizaceItems, aktualizaceCount, 0, 0); }
-          else if (subMenuIndex == 2) { appState = STATE_NASTAVENI_BATERIE; zobrazBateriiMenu(); }
-          else if (subMenuIndex == 3) { appState = STATE_NASTAVENI_O_ZARIZENI; zobrazOZaRizeni(); }
+          if (subMenuIndex == 0) { appState = STATE_NASTAVENI_AKTUALIZACE; subMenuIndex = 0; subScrollOffset = 0; zobrazSubMenu("AKTUALIZACE", aktualizaceItems, aktualizaceCount, 0, 0); }
+          else if (subMenuIndex == 1) { appState = STATE_NASTAVENI_VZHLED; subMenuIndex = 0; subScrollOffset = 0; zobrazSubMenu("VZHLED", vzhledItems, vzhledCount, 0, 0); }
+          else if (subMenuIndex == 2) { appState = STATE_NASTAVENI_AUTOUSPANI; subMenuIndex = autoSleepIdx; subScrollOffset = 0; zobrazSubMenu("AUTO USPANI", autoSleepItems, autoSleepCount, subMenuIndex, subScrollOffset); }
+          else if (subMenuIndex == 3) { appState = STATE_NASTAVENI_BATERIE; zobrazBateriiMenu(); }
+          else if (subMenuIndex == 4) { appState = STATE_NASTAVENI_O_ZARIZENI; zobrazOZaRizeni(); }
           break;
 
         case STATE_NASTAVENI_VZHLED:
-          if (subMenuIndex == 0) { currentStyle = (currentStyle + 1) % 3; delay(100); zobrazSubMenu("VZHLED", vzhledItems, vzhledCount, subMenuIndex, subScrollOffset); }
-          else if (subMenuIndex == 1) { currentSize = (currentSize + 1) % 4; delay(100); zobrazSubMenu("VZHLED", vzhledItems, vzhledCount, subMenuIndex, subScrollOffset); }
-          else if (subMenuIndex == 2) { currentBold = (currentBold + 1) % 2; delay(100); zobrazSubMenu("VZHLED", vzhledItems, vzhledCount, subMenuIndex, subScrollOffset); }
-          else if (subMenuIndex == 3) { reverseMode = !reverseMode; delay(100); zobrazSubMenu("VZHLED", vzhledItems, vzhledCount, subMenuIndex, subScrollOffset); }
-          else if (subMenuIndex == 4) { refreshMode = (refreshMode + 1) % 3; zobrazRefreshToast(); zobrazSubMenu("VZHLED", vzhledItems, vzhledCount, subMenuIndex, subScrollOffset); }
+          if (subMenuIndex == 0) { currentSize = (currentSize + 1) % 4; delay(100); zobrazSubMenu("VZHLED", vzhledItems, vzhledCount, subMenuIndex, subScrollOffset); }
+          else if (subMenuIndex == 1) { currentBold = (currentBold + 1) % 2; delay(100); zobrazSubMenu("VZHLED", vzhledItems, vzhledCount, subMenuIndex, subScrollOffset); }
+          else if (subMenuIndex == 2) { currentStyle = (currentStyle + 1) % 3; delay(100); zobrazSubMenu("VZHLED", vzhledItems, vzhledCount, subMenuIndex, subScrollOffset); }
+          else if (subMenuIndex == 3) { refreshMode = (refreshMode + 1) % 3; zobrazRefreshToast(); zobrazSubMenu("VZHLED", vzhledItems, vzhledCount, subMenuIndex, subScrollOffset); }
+          else if (subMenuIndex == 4) { reverseMode = !reverseMode; delay(100); zobrazSubMenu("VZHLED", vzhledItems, vzhledCount, subMenuIndex, subScrollOffset); }
           break;
           
         case STATE_NASTAVENI_AKTUALIZACE:
-          if (subMenuIndex == 0) { appState = STATE_NASTAVENI_INTERVAL; subMenuIndex = intervalIdx; subScrollOffset = 0; zobrazSubMenu("INTERVAL", intervalItems, intervalCount, subMenuIndex, subScrollOffset); }
-          else if (subMenuIndex == 1) { aktualizovatDataNaPozadi(true); goBack(); }
+          if (subMenuIndex == 0) { aktualizovatDataNaPozadi(true); goBack(); }
+          else if (subMenuIndex == 1) { appState = STATE_NASTAVENI_INTERVAL; subMenuIndex = intervalIdx; subScrollOffset = 0; zobrazSubMenu("INTERVAL", intervalItems, intervalCount, subMenuIndex, subScrollOffset); }
+          else if (subMenuIndex == 2) {
+            updateHour++;
+            if (updateHour > 23) updateHour = -1;
+            prefs.begin("nastaveni", false); prefs.putInt("updHour", updateHour); prefs.end();
+            zobrazPlanHodinaToast();
+            zobrazSubMenu("AKTUALIZACE", aktualizaceItems, aktualizaceCount, subMenuIndex, subScrollOffset);
+          }
+          else if (subMenuIndex == 3) {
+            startWebUploadMode();
+          }
           break;
 
         case STATE_NASTAVENI_INTERVAL:
           intervalIdx = subMenuIndex; 
           prefs.begin("nastaveni", false); prefs.putInt("updInt", intervalIdx); prefs.end(); 
           goBack(); 
+          break;
+
+        case STATE_NASTAVENI_AUTOUSPANI:
+          autoSleepIdx = subMenuIndex;
+          prefs.begin("nastaveni", false); prefs.putInt("sleepIdx", autoSleepIdx); prefs.end();
+          goBack();
+          break;
+
+        case STATE_WEB_UPLOAD:
+          trySwitchWebUploadToSta();
+          zobrazWebUpload();
           break;
 
         default: break;
@@ -2929,6 +4188,14 @@ void loop() {
     if (currentSec != lastSec) {
       drawStopky(currentMs, true);
       stopkyLastDraw = currentMs;
+    }
+  }
+
+  // ===== AUTO USPANI PRI NEAKTIVITE =====
+  if (!webUploadMode && appState != STATE_WEB_UPLOAD && autoSleepIdx >= 0 && autoSleepIdx < autoSleepCount && autoSleepMs[autoSleepIdx] > 0) {
+    if (millis() - lastUserActivityMs >= autoSleepMs[autoSleepIdx]) {
+      jdiSpat();
+      return;
     }
   }
 }

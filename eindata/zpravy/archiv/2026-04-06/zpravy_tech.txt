@@ -117,6 +117,9 @@ N = 100 ; počet samplů t = 1s ; doba samplování R = 100/1 = 100 Hz ; samplov
 Samozřejmě si můžeme průběh FFT kosinu vizualizovat:
 from scipy.fft import fft import numpy as np import matplotlib.pyplot as plt # signál t = np.cos(np.linspace(0, 2.0*np.pi, 100)) # rychlá Fourierova transformace f = fft(t) # vykreslení výsledného signál...
 (Pokracovani na webu)|E|
+|T|Announcing the OpenAI Safety Fellowship|D|6.4. 10:00|P|A pilot program to support independent safety and alignment research and develop the next generation of talent|X|A pilot program to support independent safety and alignment research and develop the next generation of talent
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Triumf modderů: Vysněné procesory Bartlett Lake bez E-Core se proti vůli Intelu povedlo zprovoznit v Z790 deskách|D|6.4. 04:00|P|Nehybridní CPU Intelu se samými velkými jádry, které se stalo snem nadšenců majících v nelibosti jádra E-Core, už se skoro dá používat v osobních počí...|X|Intel minulý měsíc vydal procesory s kódovým označením Bartlett Lake, poměrně zajímavé nové čipy vyvinuté pro starý socket LGA 1700. Mají stejnou 7nm technologii a jádra jako Core 13. a 14. generace „Raptor Lake“, ale bez jader E-Core – místo toho poskytují 12 jader P-Core a 24 vláken. Bartlett Lake mnozí vyhlíželi jako upgrade pro svá PC, ale procesory nefungují v běžných deskách. Vypadá to však, že se je podařilo rozběhat modderům.
 Intel procesory Bartlett Lake uvedl jako řešení čistě pro průmyslové/embedded a podobné úlohy, takže podpora existuje jen ve vybraných deskách pro tyto trhy. Hned po vydání je někteří nadšenci zkoušeli v deskách pro PC (s čipsety Z690, Z790, B760, B660, H610), ale potvrdili, že v nich odmítají fungovat. Neuspěly ani pokusy upravit BIOSy nahrazením mikrokódu a dalších součástí.
 Bartlett Lake přece jen půjde?
@@ -136,3 +139,6 @@ Je samozřejmě otázka, jak spolehlivě bude deska s UEFI firmwarem takříkaj�
 Vedle toho je také dobré připomenout, že s atraktivitou procesorů Bartlett Lake to není zas tak jednoduché. Teoreticky by o ně hodně uživatelů mělo zájem, protože poskytují 12 velkých jader (pro ty, kdo nechtějí akceptovat jádra E-Core za jejich náhradu). Jenž v praxi je tu dost problémů – kromě komplikací a možných rizik neoficiálního UEFI firmwaru tyto procesory například nemají odemčený násobič pro přetaktování.
 Možná největší překážkou ale může být cena. Ta je poměrně vysoká (16 až 18 tisíc Kč za 12jádro) a tyto procesory jednoduše nevycházejí moc výhodně, pokud jdete po poměru cena/výkon. Uživatelé, kteří aktuálně zkouší Core 9 273PQE rozběhnout, to provádějí v podstatě z nadšeneckého zápalu. Pokud máte LGA 1700 desku a prostě chcete nějaký upgrade pro praktické použití a hraní, Bartlett Lake nejspíš přes tento překvapivý úspěch v moddingu BIOSů není to, co hledáte.
 Overclock.net (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16)|E|
+|T|Industrial policy for the Intelligence Age|D|6.4. 02:30|P|Explore our ambitious, people-first industrial policy ideas for the AI era—focused on expanding opportunity, sharing prosperity, and building resilien...|X|Explore our ambitious, people-first industrial policy ideas for the AI era—focused on expanding opportunity, sharing prosperity, and building resilient institutions as advanced intelligence evolves.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|

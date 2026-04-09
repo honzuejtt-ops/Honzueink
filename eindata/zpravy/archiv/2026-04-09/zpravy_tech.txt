@@ -1,4 +1,70 @@
 |T|Chyba|D||P|Něco se pokazilo.|X|'NoneType' object has no attribute 'strip'|E|
+|T|Programování s AI, jak funguje Unicode a jak na QUIC, zápisky z InstallFestu|D|9.4. 22:00|P|O víkendu na konci března proběhla v Praze na Karlově náměstí tradiční konference InstallFest. Mluvilo se o protokolu QUIC, uložení klíčů v hardwaru, ...|X|David Čermák: Rychlý úvod do protokolu QUIC
+QUIC je složitý protokol a dostat ho do malého embedded zařízení není jednoduché. QUIC také není nic nového, podle služby Cloudflare Radar je v Česku zastoupen jednou třetinou spojení. Dvěma třetinami stále dominuje TLS 1.3.
+HTTPS spojuje spolehlivost TCP a šifrování pomocí TLS. Je to hezky propojené a je to krásné, ale dalo by se to dělat rychleji.
+To je také hlavní cíl protokolu QUIC: rychlost, multiplexované datové proudy a identifikace spojení, která je důležitá pro migraci spojení.
+V klasickém HTTPS probíhá spousta kroků, nejprve TCP handshake, poté TLS handshake a teprve někdy v osmém paketu putují samotná data. Vidíte, že by se to určitě dalo dělat celé rychleji.
+V případě QUIC se používá takzvané RTT 1, kdy se nejprve pošle inicializace, pak odpověď serveru a už ve třetím paketu putují data. Je možné to dělat za určitých okolností ještě rychleji pomocí 0-RTT.
+Už v prvním paketu od klienta je možné poslat validní data, ale počítá se s tím, že už bylo spojení navázáno dříve a obě strany mají uložené session tickety. Při dalším spojení už je možné rovnou posílat data.
+Použití 0-RTT ale umožňuje replay attack, kdy útočník zaznamená přenášený paket a pak ho může znovu kdykoliv zopakovat. Proto se tato funkce zapíná jen v případě, že chceme posílat požadavky neměnící stav serveru. Pokud přijde nebezpečný požadavek, server ho může odmítnout a vyžádat si plnohodnotné spojení.
+Pro integraci do embedded zařízení je možné použít celou řadu knihoven: ngtcp2
+©, picoquic
+©, quiche
+(Rust) a esp-http3
+(C++). Logicky se díváme hlavně na spotřebu paměti, ale také na integraci s TLS API.
+V některých případech totiž potřebujeme krypto primitiva.
+Dmitrii Misharov: OpenSSL a práce s klíči v hardwaru
+Soukromé klíče jsou obvykle uloženy v běžných souborech. Klíče se načtou do paměti a software s nimi může pracovat, je to jednoduché a běžné. Někdy to ale nestačí a potřebujeme s klíči zacházet lepším způsobem.
+Jsme nuceni pracovat s klíči bezpečněji, pokud to po nás vyžaduje regulace a legislativa. V případě uložení v souborech je tu totiž riziko úniku klíče, které lze eliminovat speciálním hardwarem zvaným HSM (Hardware Security Module).
+HSM je specializované kryptografické zařízení, které se stará o uložení klíčů a provádí kryptografické operace. Podstatné je, že generuje a chrání klíče, které nemůže útočník jednoduše ukrást.
+Software pak potřebuje s takovým HSM mluvit a aplikace nemohou ovládat hardware přímo. Potřebujeme nějaké standardizované API, abychom s takovým zařízením mohli komunikovat.
+Takovému standardu se říká PKCS#11, což je rozhraní v jazyce C, které umožňuje přenášet kryptografické informace.
+Původně vzniklo v RSA Laboratories v roce 1994 a od roku 2013 je spravováno organizací OASIS. Původní určení bylo pro komunikaci se smart kartami, hardwarovými tokeny a bezpečnostními zařízeními. Jde o opravdu starý standard, což vysvětluje také jeho starou terminologii.
+Důležité je, že aplikace nikdy nevidí soukromý klíč a jen požaduje: tohle zašifruj, tohle podepiš a podobně. OpenSSL nabízí tuto funkcionalitu, klíče přitom mohou ležet kdykoliv. OpenSSL pak potřebuje jakýsi most k těmto datům a právě PKCS#11 je jedním z těchto mostů.
+OpenSSL nespravuje klíče v HSM, nezabývá se celým životním cyklem klíčů. Dokáže používat už existující klíče.
+Pro správu klíčů v HSM je stále potřeba využívat nástroje dodané výrobcem zařízení.
+Pokud potřebujete další nástroj pro ladění komunikace pomocí PKCS#11, můžete použít utilitu pkcs11-tool
+. Pořád to není nástroj pro správu klíčů, ale dokáže vám podat podrobné informace.
+Při nasazení HSM nejsou hlavním problémem algoritmy, ale nastavení, důvěryhodnost a dokumentované postupy. Stále jsou v procesu hodně zapojené nástroje od dodavatele.
+Klíče jsou uložené ve specializovaném HSM, které je sice nedokáže exportovat, ale to neznamená, že je není možné v případě havárie obnovit. Existují různé postupy, které zahrnují sestavení klíče z uložených klíčových slov nebo z většího množství smart karet.
+Josef Reidinger: Code assisted AI a praxe
+Josef Reidinger pracuje v SUSE a při práci používá Gemini Pro, protože jeho zaměstnavatel se musí chránit proti právním postihům. Placená verze zaručuje, že se na používaných datech nebude model učit.
+Brání se tím zejména úniku dat zákazníků.
+V praxi používá VSCode bez agentů, kdy AI nemůže přímo zasahovat do kódu, ale vždy vytvoří jen patch. Já si ho můžu prohlédnout a přijmout celý nebo ho ještě před přijetím upravit.
+Širší možnosti má pak gemini-cli
+, který už může spouštět příkazy a dělat mnoho věcí. Je to trochu strašidelné, proto to pouštím v kontejneru.
+Ukazuje se, že AI je v odpovědích velmi nekonzistentní. Jeden den vám odpoví něco jiného než druhý den.
+Nebo při code review najde jednou důležitou věc a jindy si jí vůbec nevšimne. To jen pokud máte nové kontextové okno, pokud máte stejné, tak to má tendenci se držet svých předchozích zjištění.
+AI je vlastně švýcarský nůž, kterým je možné udělat spoustu věcí. Klasický specializovaný nástroj je ale stále schopen dosáhnout lepších výsledků.
+Důležité je vždy ověřovat výsledky, někdy si AI vymýšlí a dělá chyby.
+Při přímých úpravách kódu se AI chová jako snaživý student, který jde nad rámec zadání. Snaží se měnit ještě další kód, který se mu nějak nelíbí, přestože jsem to po něm nechtěl.
+Někdy je tak lepší zavřít kontextové okno a začít znovu.
+AI je možné použít pro napovídání v editoru, což už přes standardní LSP funguje dlouho správně. Pokud na stejnou úlohu nasadíme AI, začne halucinovat a vymyslí si vlastní metody, které neexistují. Horší je to u jazyků se striktním typováním, třeba v Rustu.
+Naopak v Ruby není LSP tak účinné a AI může být zajímavější.
+Příjemné je použití AI na generování dokumentace, jejíž příprava téměř žádného vývojáře nebaví. Výhodou je, že AI rozumí více jazykům, takže se není třeba zabývat přechodem mezi jazyky. Já to používám jako kostru, do které doplním další informace.
+Ve vygenerované dokumentaci se obvykle dozvíte, co daná funkce dělá, ale už ne proč to dělá.
+Osvědčilo se použití AI pro vytvoření bindingů mezi programovacími jazyky. Máme docela pokročilou knihovnu napsanou v C++, ale potřebujeme ji volat v Rustu.
+Ukázalo se, že AI se naučí vzorec z existujícího kódu a poté umí automaticky sekat další. Dělá méně chyb než já, protože já při kopírování občas na něco zapomenu.
+Pořád je potřeba ho ale kontrolovat, jestli jeho práce dává smysl.
+Standardně se code review provádí lidskými silami, ale generovaného kódu přibývá, takže je potřeba zapojit AI. Mně osobně to příliš nevyhovuje, protože to je nekonzistentní.
+Navíc mají modely tendenci psát příliš mnoho komentářů a označovat i drobnosti. Je možné to ale udělat i obráceně, nejprve kód projít ručně a poté pro kontrolu ještě nechat stejnou práci udělat AI.
+Klasický vtip říká, že dvěma nejsložitějšími věcmi při programování jsou: pojmenování, invalidace keše a chyba off-by-one. Největší problémy mi dělá pojmenování, které je ovlivněno spoustou pravidel daného jazyka.
+AI umí vyprodukovat různá doporučení různých délek. Někdy mě až překvapí, co to umí navrhnout.
+AI umí nabídnout i obecné konzultace, ale je třeba dát pozor na to, že se snaží vždycky vyhovět. Nikdy to neřekne, že je to úplný nesmysl.
+Přesto dokáže přijít s dobrými nápady a navést třeba na neznámou knihovnu nebo užitečnou metodu. Je možné do AI například vložit velký výstup s chybou a on se pokusí poradit řešení. Často to funguje efektivněji než vyhledávání.
+Ondřej Caletka: Jak funguje Unicode
+Počítače jsou digitální stroje, tedy pracují pouze s čísly. Drtivá většina počítačů používá binární soustavu, ve které používáme jen nulu a jedničku. Tuhle nedokonalost kompenzujeme tím, že máme těch bitů hodně.
+Měli jsme tu 8bitové počítače, dnes používáme 64bitové. Stále je ale základní jednotkou jeden bajt, tedy osmice bitů.
+Abychom lépe rozuměli tomu, co se děje uvnitř počítačů, vymysleli jsme si osmičkovou a šestnáctkovou soustavu. Převádět to na desítkovou soustavu je nevhodné, protože pracujeme s mocninami dvojky.
+V šestnáctkové soustavě potřebujeme symbol pro vyšší hodnoty než devítku, pro ty používáme písmena A až F.
+Samotná data však nestačí, vždy záleží na reprezentaci. Potřebujeme tedy vědět, co jednotlivé informace znamenají, zda jde o skupinu čísel, jedno číslo, kladné číslo nebo číslo desetinné. Může jít také o velké číslo rozdělené do více bajtů, pak ukládáme buď nejprve nejméně významnou část (Little Endian) nebo naopak nejvýznamnější (Big Endian). Máme jeden vnitřní stav počítače, ale záleží na tom, jaký mu dáme význam.
+Jakákoliv počítačová informace je číslo a některé počítačové informace je zakázáno šířit. Například 128bitový šifrovací klíč AACS pro HD DVD a Blu-ray. Kdokoliv takové číslo zveřejnil, po tom šli, protože tohle se šířit nesmí.
+Někdo přišel s nápadem, že klíč zakóduje pomocí RGB do vlajky zvané Free speech flag.
+ASCII je American Standard Code for Information Interchange a jde o nejrozšířenější kódovou tabulku pro převod uložených čísel do tabulky znaků. Každému kódu je přiřazen jeden znak americké abecedy, číslice, další symboly a řídicí znaky. Je dobré znát tabulku alespoň částečně zpaměti.
+Tabulka je už dneska vlastně zastaralá, protože umožňuje zobrazit jen znaky americké abecedy a i tam jsou nějaké problémy.
+Když se podíváte na teletext, najdete v něm stranu 899, kde najdete hvězdičky střídané s písmenem U a text: „Optimální synchronizace dekodéru“. Teletex kóduje binární data do nevyužitých televizních řádků a umožňuje přenést 40 znaků na 24 řádcích. Kombinace těchto testovacích znaků U a * se používá, protože pravidelně střídá jedničky a nuly. Díky tomu jste si mohli sesynchrnonizovat svůj analogový dekodér.
+ASCII nám v mnoha případech nestačí, často potřebujeme do tabulky přidat další znaky – například pro češtinu. ASCII je 7bitové kódování, takže tím nejjednodušším je rozšířit tabulku ještě o druhou polovinu využívající osmý bit. Tak vznikla kódová stránka CP437, která doplňuje řadu různých zna...
+(Pokracovani na webu)|E|
 |T|Pozorujete lepší mobilní signál ve vlacích? Dopravci upravili s pomocí dotace stovky vagonů|D|9.4. 17:45|P||X|Ve vlacích vyšších kategorií v Česku by mělo být snazší připojení k mobilním datům i telefonování. Železniční dopravci v uplynulých dnech ukončili úpravy některých vagonů za účelem zlepšení příjmu signálu mobilních sítí. Využili k tomu dotace od Ministerstva průmyslu a obchodu. Dotační program administroval Český telekomunikační úřad, který v tiskové zprávě oznámil jeho úspěšné završení.
 Úpravy vozů v rámci programu byly ukončeny k poslednímu březnu. Cílem programu bylo vybavit stovky železničních vozů pro osobní přepravu, které jezdí na hlavních železničních koridorech kategorie TEN-T, opakovači nebo propustnými okny pro zajištění dostupnosti mobilního signálu uvnitř vozů. Cestující v takto upravených vagonech už by tak reálně měli pociťovat kvalitnější a méně přerušovaný přístup k mobilním hlasovým i datovým službám.
 V soupravách opakovače, u starších vagonů laser

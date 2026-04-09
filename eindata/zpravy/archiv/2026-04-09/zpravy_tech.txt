@@ -1,4 +1,258 @@
 |T|Chyba|D||P|Něco se pokazilo.|X|'NoneType' object has no attribute 'strip'|E|
+|T|Nejrychlejší herní procesor AMD bude za 23 tisíc. Oficiální cena je nakonec níž, než se zdálo|D|9.4. 16:08|P|Dlouho žádaný 16jádrový procesor s 3D V-Cache u obou CPU čipletů bude stát o dost víc než „obyčejné“ X3D verze. Ale nakonec to není tak moc, jak říkal...|X|AMD tento měsíc vydá procesor Ryzen 9 9950X3D2 Dual Edition, který je prvním modelem, jenž spojí maximální počet jader (pro platformu AM5) s dvěma cache čiplety, takže z 3D V-Cache mohou profitovat všechna jádra. Před pár dny jsme psali o prvních úkazech na internetu, které naznačovaly cenovku 1000 $. AMD teď už uvolnilo informaci o „MSRP“ oficiálně a ukazuje se, že tak vysoko nepůjde. Avšak relativně drahá tato speciální edice bude.
+Cena Dual Edition oficiálně
+Oficiálně oznámení cena je o desetinu nižší – 899 $. Oficiální částky pro náš trh obvykle AMD nestanovuje, pokud se ale tato cena převede podle aktuálního kurzu a připočítá se DPH, vycházela by tuzemská cena aktuálně na 22 700 Kč. Na Slovensku pak 945 €. Těžko říct, zda se u tohoto modelu dá čekat, že časem v průběhu měsíců zlevní pod úroveň doporučené částky jako jiné procesory Ryzen.
+Znamená to, že procesor je o dvě stě dolarů dražší než model Ryzen 9 9950X3D s jen jedním cache čipletem. Model 9950X3D2 Dual Edition tak bude vyčnívat a obvykle asi nárůst výkonu, který s ním dostanete, nebude odpovídat zvýšení ceny o téměř 29 % proti modelu 9950X3D. Tedy pokud počítáme s oficiální doporučenou cenou 699 $. Reálně ale díky slevám bude rozdíl ještě o nějaká procenta větší – u nás 9950X3D stojí ve velkých obchodech okolo 16 600 Kč, proti čemuž by doporučená cena modelu Dual Edition byla o 37 % vyšší.
+Což samozřejmě u nejvyššího modelu nabídky není nic divného a je třeba pamatovat, že třeba ceny špičkových herních grafických karet v posledních letech vyšplhaly na mnohem horší úrovně (GeForce RTX 5090 původně měla stát 1999 $, reálně se pohybuje mezi třemi a čtyřmi tisíci dolarů).
+Na ohlášeném termínu vydání se zatím nic nezměnilo, AMD uvádí, že se Ryzen 9 9950X3D2 Dual Edition začne prodávat 22. 4., ale je možné, že recenze budou publikovány i o pár dní dříve. Asi bude zajímavé vidět, jaké se podaří najít úlohy, v nichž by se 192 MB 3D V-Cache projevilo skutečně transformativním nárůstem výkonu.
+Procesory Ryzen 9 7950X3D a 9950X3D byly kritizovány kvůli tomu, že jsou kvůli použitelnosti 3D V-Cache jen pro polovinu jader asymetrické a v jistém smyslu hybridní trochu jako procesory Intel. Za tím asi často stála vyřčená či nevyřčená domněnka, že s 3D V-Cache pro všechna jádra by procesor fungoval výrazně lépe. Teď se ukáže, jak moc to bylo opodstatněno. Je ale pravda, že Ryzen 9 9950X3D Dual Edition alespoň nebude závislý na softwarové vrstvě dohlížející na přiřazení her a aplikací na ty správné skupiny jader, jako to je u model 7950X3D a 9950X3D.
+Zdroj: techPowerUp|E|
+|T|Testujeme Apple AirPods Max 2. Prvními dojmy připomínají předchůdce, ale překvapilo nás ANC|D|9.4. 15:45|P|Do redakce nám dorazily nová sluchátka Apple AirPods Max 2 • Pouštíme se do podrobné recenze, ale mezitím vám přinášíme první dojmy • Budeme rádi, kdy...|X|Do redakce nám před pár dny dorazila sluchátka AirPods Max 2, která začínáme testovat a za pár dní se dočkáte plné recenze. V tomto článku se zaměříme na první dojmy a vy nám můžete dát vědět, co by vás konkrétně zajímalo v chystané recenzi.
+V českých obchodech stojí až Kč
+Porovnat ceny
+Hned v úvodu je třeba vysvětlit mírný chaos ve značení sluchátek. Model se totiž nazývá AirPods Max 2, ale ve skutečnosti jde již o 3. generaci. Ta první přišla v roce 2020, její nástupce z roku 2024 pak přidal USB-C konektor, nové barvy a vylepšení prostorového zvuku. Přesto se tehdy Apple novinkou rozhodl jako novou generaci neoznačovat. Tudíž až letošní novinka oficiálně nese název AirPods Max 2.
+Apple AirPods Max 2 se vzhledově nijak nezměnily proti předchozím modelům. Hlavní změny přišly uvnitř.
+Hned po vybalení sluchátek ale zjistíte, že designově se zde nezměnilo vůbec nic, a to včetně barev, rozměrů i i větší hmotnosti 386 gramů. To však i znamená stejně kvalitní zpracování včetně hliníkových náušníků s měkčením z paměťové pěny, nerezového rámu a mostu z textilní síťoviny, která je příjemná na hlavě.
+Ačkoliv AirPods Max 2 mají být tím nejlepším (a jediným), co Apple nabízí v segmentu náhlavních sluchátek, ve skutečnosti jen dohání to, kde Apple zaspal. Většina přidané výbavy a funkcí jsou již známé funkce ze špuntových sluchátek AirPods Pro 2 a 3.
+Stejně jako předchůdce, ani nový model nejde nijak složit. Při cestování lze využít ochranného magnetického pouzdra, ale to chrání pouze hliníkové náušníky před poškrábáním. Samotný most zůstává bez ochrany.
+Alfou a omegou je zde hlavně nový čip H2, který známe z klasických AirPods 4 či AirPods Pro 3. I díky němu je zde znatelně vylepšené ANC, ale přibyl i adaptivní režim, kdy sluchátka kombinují režim propustnosti s aktivním potlačením hluku a samy je využívají na základě okolních podmínek a automaticky třeba tlumí hlasité zvuky, což mi u předchozí generace chybělo.
+Hodit se bude také přidaná automatická detekce konverzací, kdy sluchátka poznají řeč a přepnou z ANC do transparentního režimu, ale zpočátku je nutné si na tuto funkci trochu zvyknout, ne vždy totiž funguje 100% spolehlivě.
+Sluchátka jsou sice těžší, ale most z textilní síťoviny a náušníky z paměťové pěny přispívají k tomu, že sluchátka budou pohodlné i při delším nošení.
+Co se prvních dojmů ze zvuku týče, hrají nové AirPods Max o něco živěji, čemuž zřejmě napomohl i přidaný zesilovač se širokým rozsahem, ale i vylepšená adaptivni ekvalizace díky čipu H2. Znatelně jsou výraznější basy, což se může hodit u určitého typu hudby, ale skvělé jsou i třeba u filmů a her. To všechno ještě otestujeme podrobně v detailní recenzi.
+Co ale zaznamenalo obrovský posun je vylepšené ANC využívající soustavy 9 mikrofonů. Zde Apple zase dohání roky ujíždějící vlak v podobě konkurence od Bose či Sony. Proti předchozí generaci je rozdíl v kvalitě ANC propastný a dokáže skvěle tlumit jak hluboké monotónní tóny, tak i běžnou řeč. Rozhodně je i o úroveň dále, než malé AirPods Pro 3.
+AirPods Max 2 stejně jako jiná sluchátka od Applu nemají vlastní obslužnou aplikaci, ale na iOS se ovládají přímo v nastavení systému.
+Trochu ale zamrzí funkce, které se nezměnily, jako je třeba stále stejná výdrž udávaných 20 hodin. Stále stejné, podivné pouzdro, které už od první generace budí velké kontroverze svým designem. Pozitivum je, že navzdory tomu, že oficiální 2. generace přichází 6 let po té první, cenově zlevnily, ale lidovou cenu rozhodně nečekejte. Aktuálně se prodávají za 13 990 Kč a na výběr je pětice různých barev od konzervativní tmavě inkoustové až po zábavné barvy jako je oranžová či fialová.
+Jak jsme zmínili, tak sluchátka dále testujeme a naše hlubší zkušenosti s ergonomií, se zvukem, potlačením hluku shrneme v dalším článku. Pokud vás konkrétního něco zajímá, dejte nám určitě vědět v komentářích.
+Technické parametry
+- Typ: Bezdrátová náhlavní sluchátka
+- Konstrukce: hliník, nerezová ocel, síťovina
+- Připojení: Bluetooth 5.3
+- Podporované kodeky: AAC, SBC
+- Hi-Res audio: Ano, až 24bit / 48 kHz lossless při kabelovém připojení
+- Aktivní potlačení hluku (ANC): Ano, adaptivní
+- Režim propustnosti okolí (Ambient): Ano
+- Mikrofony: 9× mikrofon
+- Měniče: 40 mm
+- Zesilovače: Duální (pro každý měnič samostatně)
+- Prostorový zvuk: Spatial Audio s podporou Dolby Atmos
+- Automatické přepínání zařízení: Ano v rámci ekosystému Apple
+- Ovládání: digitální korunkou a tlačítkem
+- Detekce nasazení: Ano
+- Speciální funkce: Detekce konverzací, tlumení hlasitých zvuků, spoušť fotoaparátu
+- Výdrž sluchátek: 20 hodin s ANC
+- Nabíjení: USB-C
+- Hmotnost sluchátek: cca 386 g
+- Barvy: temně inkoustová, hvězdně bílá, modrá, fialová, oranžová|E|
+|T|Artemis II: Podívejte se na unikátní infračervené video ze startu rakety SLS. Zachycuje jinak neviditelné detaily|D|9.4. 14:46|P|Užitečné odkazy
+
+
+	Artemis II Arrow – Aktuální poloha lodi ve 3D
+	Artemis II Tracker (neoficiální)
+	Živý přenos z lodi, komentovaný přenos
+
+
+
+
+Oživeno...|X|Oživeno 16:30 | Loď Orion je ve čtvrtek odpoledne téměř v polovině cesty zpět k Zemi a NASA v archivu zveřejnila efektní video ze samotného startu rakety SLS, jak jej zachytily infračervené kamery (NIR / blízké infračervené spektrum, 800-2500 nm).
+Ve stabilizovaném a na polovinu zpomaleném videu vidíme v detailu úvodní zapálení motorů a poté proud horkých plynů okolo trysek ve vysokém přiblížení. Tyto záběry slouží k inspekci, jak probíhá hoření a jak je na tom integrita pláště prvního stupně a nejbližšího okolí.
+Na záběrech uvidíte v ohromném detailu jak hoření v tryskách vodíkových motorů RS-25, tak postranní boostery na tuhé hliníkové palivo.
+Zdroj videa: NASA
+Středa 8. dubna 2026
+Oživeno 18:45 | Posádka měla zkraje mise trošku problémy s produkty MIcrosoftu, však to znáte... Ale humory stranou. Loď řídí palubní počítač, posádka má ale své osobní počítače. Něco si o nich povíme. A také o tom, jak posílají fotky zpět k Zemi.
+Oživeno 12:00 | Loď Orion během noci provedla úspěšnou korekci návratové dráhy a mise Artemis II se pomalu chýlí ke svému konci. Příběh ale rozhodně nekončí, už příští rok nás totiž čeká Artemis III a test spojení Orionu s lunárním modulem.
+NASA zve Američany na slavnostní vytažení prvního stupně v pořadí už třetí rakety SLS, který poté zamíří z New Orleans na Floridu do největší montážní haly svého druhu na světě VAB.
+Oživeno 11:30 | Jakou techniku posádka používala k fotografickému průzkumu Měsíce? Rozebíráme to v podrobném technickém článku na Digiaréně, kde vám ukážeme i konkrétní objektivy.
+Úterý 7. dubna 2026
+Oživeno 22:00 | NASA potvrdila, že Orion opustil vliv Měsíce a opět převážila gravitace Země. Teď už tedy loď padá zpět. Splashdown v pátek 10. dubna místního času.
+Oživeno 17:30 | Archiv NASA se postupně plní úřasnými záběry ze západu i východu Země, detailní topografií Měsíce a také zatměním Slunce. NASA posádku vyzbrojila full-frame zrcadlovkou Nikon D5 s 400mm teleobjektivem a níže si můžete rpohlédnout, jak stroj fungoval v praxi během průletu lodi za Měsícem
+Oživeno 15:15 | Na první fotografie průletu okolo Měsíce ve vysokém rozlišení jsme si nakonec museli počkat až do odpoledních hodin. Ale stojí za to. Kdyby je nezveřejnila NASA, tak si snad pomyslíme, že je vytvořil některý z obrázkových generátorů. Vypadají totiž opravdu jako ilustrace z AI.
+Západ Země
+Na prvním snímku vidíme západ Země poté, co se Orion včera hluboko v noci zanořil do stínu Měsíce. Na druhém snímku je pak zatmění Slunce z bezprostřední blízkosti.
+Zatmění Slunce
+Oživeno 01:26 | Oblet Měsíce se podařil a Orion opět navázal spojení s telekomunikační sítí DSN na zemském povrchu. Nepříliš kvalitní obrázky z živého přenosu v příštích hodinách doplní fotografie ve vysokém rozlišení.
+Orion se vynořil ze stínu Měsíce a NASA s ním úspěšně obnovila spojení
+Posádka nyní bude pokračovat v pozorování Měsíce a zatmění Slunce. Vše skončí až hluboko v noci našeho času. Viz podrobný rozpis obletu níže v článku.
+Sedmý den mise by měl být pro astronauty volnější. Orion opustí oblast působení Měsíce (znovu převáží vliv Země) a podle situace provede první korekční návratový zážeh motoru. Během osmého dne nás čeká demonstrace radiačního stínění a ruční pilotáže. Devátý den je na pořadu další drobný korekční zážeh a desátý den mise Orion konečně přistává zpět na Zemi.
+Oživeno 01:20 | Krátce před očekávanou obnovou signálu se podívejme do velínu mise. Fanoušky open-source jistě potěší. že hlavní obrazovku vzadu na stěně vyplňuje... Oblíbený videopřehrávač VLC s animací Měsíce (označen zeleným obdélníkem).
+VLC mají rádi i v NASA
+Oživeno 00:40 | Několik minut před tím, než se Orion dostal na odvrácenou stranu Měsíce a NASA ztratila dle plánu rádiové spojení s lodí, jsme se mohli pokochat živými záběry, na kterých je vidět v jedné řadě Orion, Měsíc a zcela vpravo Země. Tahle to vypadalo přesně 180 sekund před ztrátou signálu.
+Orion, Měsíc a Země v jedné řadě a v živém přenosu
+O přenos dat z lodi se po většinu cesty k Měsíci a zpět stará síť pozemských parabol DSN (Deep Space Network). Krátce před tím, než loď zmizela v měsíčním stínu, to byla anténa DSS 34 v australské Canbeře. Přehled o tom, jaká mise právě teď zatěžuje které zařízení, najdete na webu DSN Now.
+Jedním z experimentů na palubě je nicméně i O2O (Orion Artemis II Optical Communications System) pro laserovou komunikaci se Zemí. Test byl úspěšný a posádka v minulých dnech přenesla gigabajty dat. Laserová vysílačka má velikost domečku pro kočky a zvládne datový tok až 260 Mb/s k Zemi a 20 Mb/s zpět.
+DSN Now – telemetrii z Orionu přenáší zařízení DSS 34 v australské Canbeře
+Pondělí 6. dubna 2026
+Oživeno 22:00 | Mise Artemis II v 19:56 překonala rekord ve vzdálenosti lidí od Země. Od dubna 1970 jej s hodnotou 400 171 km držela mise Apollo 13. Artemis II by se měla dostat až na hodnotu 406 771 km.
+Oživeno 21:10 | Software, ve kterém bude posádka pracovat. Vlevo nahoře je seznam úkolů, dole jsou jednotlivé úkoly podrobněji rozepsané. Schematicky popsaný obraz Měsíce má pomoci navigovat oči a objektivy do správných míst. Dole pak jsou vypsané náležitosti, které má záznam o pozorování obsahovat (ale to by nemělo být potřeba, astronauti záznam průletu trénovali několik měsíců).
+Oživeno 19:20 | Živý přenos NASA můžete sledovat třeba na X.com:
+Oživeno 17:40 | Posádku do nového dne přivítal Jim Lovell – astronaut misí Gemini VII, Gemini XII, Apollo 8 a Apollo 13. Apollo 8 mělo podobný úkol jako dnes Artemis II – poprvé ukázalo Měsíc zblízka a jeho fotka celé Země inspirovala a sjednotila lidi po celém světě.
+Lovell přivítal astronauty „v jeho staré čtvrti“, předal jim pomyslnou pochodeň a připomněl, že i přes všechny úkoly, které je při obletu čekají, nemají zapomenout užít si výhled. Celé znění vzkazu na Nasa.gov.
+Pro posádku Artemis to byla emotivní chvilka – zejména protože Lovell krátce po nahrání vzkazu (v srpnu 2025) zemřel.
+Oživeno 13:00 | Dnešní přiblížení k Měsíci má následující plán (převedeno na středoevropský čas):
+- 16:50 – Plánovaný budíček pro astronauty
+- 19:00 – Začíná přenos z průletu kolem Měsíce na platformě NASA+, posádka uvidí přivrácenou i odvrácenou stranu
+- 19:56 – Posádka překoná rekord v největší vzdálenosti lidí od Země, který dříve stanovila mise Apollo 13 v roce 1970. Posádka má připravený projev (audio)
+- 20:15 – Posádka konfiguruje kabinu lodi Orion pro operace při průletu
+- 20:45 – Začíná pozorování Měsíce
+- úterý 00:44 – Loď zamíří za Měsíc, předpokládaná ztráta komunikace (přibližně na 40 minut)
+- 01:02 – Největší přiblížení Orionu k Měsíci (6 550 km). Prý to bude jako byste drželi basketbalový míč v natažené paži
+- 01:07 – Orion dosahuje maximální vzdálenosti od Země (cca 406 773 km). Dál ještě lidé nebyli.
+- 01:25 – „Východ Země“
+- 02:35 až 03:32 – posádka prožije téměř hodinové zatmění Slunce.
+- 03:20 – Končí pozorování Měsíce, v následujících hodinách bychom se měli dočkat prvních fotek
+Oživeno 9:00 | Posádka úspěšně upravila dráhu lodi Orion a otestovala záchranné skafandry OCSS. Dnes loď vstoupí do sféry vlivu Měsíce a provede oblet jeho odvrácené strany. Astronauti při tom překonají rekord Apolla 13 v největší vzdálenosti lidí od Země. Během manévru dojde k plánované ztrátě spojení, maximálnímu přiblížení k povrchu a následnému pozorování „východu Země“.
+Neděle 5. dubna 2026
+Oživeno 20:15 | Pátý den mise načala posádka ve vzdálenosti zhruba 105 tisíc km od Měsíce a promluvil k ní astronaut Charlie Duke, člen posádky mise Apollo 16 a desátý člověk, který kráčel po povrchu Měsíce.
+Hlavním úkolem dne je testování záchranných obleků Orion, včetně zkoušky pohyblivosti či simulace poklesu tlaku. Později přijde na řadu korekční manévr a vstup do sféry gravitačního vlivu Měsíce.
+Oživeno 12:00 | Kolik ta legrace vlastně stojí? Artemis patří k nejsložitějším projektům NASA. A také nejdražším. V auditu IG-22-003 (PDF) z listopadu 2021 se hned na třetí straně dočteme, že agentura očekávala celkové náklady programu do konce roku 2025 ve výši 93 miliard dolarů.
+Cenu jediné mise Artemis včetně prvních dvou uskutečněných letů I a II pak tehdejší auditoři odhadli na částku 4,1 miliard dolarů. Obsahuje náklady na stavbu a provoz raketového nosiče SLS (více než polovina rozpočtu) a lodi Orion (modul pro posádku a servisní modul).
+Start nosiče Space Launch System je extrémně drahý, protože si na sebe nedokáže sám vydělat. Na rozdíl od těžkých/super nosičů Falcon Heavy, New Glenn a (snad brzy) Starshipu totiž nevynáší komerční zboží různého typu, ale je to raketa postavená výhradně pro lety na Měsíc.
+Autoři auditu zároveň už tehdy přiznali, že celkové náklady programu prakticky nelze vyčíslit, protože se prolíná napříč agenturou a je rozprostřený na tak velké časové období, že bude cena nakonec ještě mnohem vyšší. Dokládá to i další zpráva z letošního ledna (PDF), podle které projekty spojené s programem Artemis překračují rozpočet o téměř 7 miliard dolarů.
+Oživeno 10:22 | Astronauti pořídili další fotografii skrz okénko lodi Orion. Tentokrát neměli v hledáčku Zemi, ale povážlivě se přibližující Měsíc. Snímek sice na první pohled vypadá úplně stejně, jako když ho vyfotíte z louky za domem, ale zdání klame!
+Pohled na Měsíc z kajuty lodi Orion
+Ve skutečnosti totiž posádka nyní na Měsíc kouká oproti pozorovateli na Zemi z boku a vidí ho tak, jako nikdo před nimi – včetně posádek Apollo.
+NASA tak například upozorňuje, že je na fotce při pravém okraji vidět Východní moře (Mare Orientale), které se nachází na rozhraní přivrácené a odvrácené strany. Ze Země je proto téměř nepozorovatelné.
+Východní moře je ze Země prakticky nepozorovatelné
+Oživeno 08:00 | Níže v článku jsme si sice už vysvětlili, jak se astronauti na misi Artemis II stravují, ale teď nám svoji svačinku ukázali přímo z paluby. Je pestrá, předvařená a připravená pro podmínky v kosmu.
+Sobota 4. dubna 2026
+Oživeno 22:45 | Artemis II není jen návratem k Měsíci, ale přináší i několik premiér. Tou první je složení posádky. Orion je v tuto chvíli už okolo 300 tisíc kilometrů od Země a takhle daleko byli...
+(Pokracovani na webu)|E|
+|T|Ženské sex symboly současnosti. Čtyřicet hvězd, které se ve filmech nestyděly|D|9.4. 14:45|P|Sex symbol dnes už neznamená jen odhalené tělo nebo jedna provokativní scéna. Film i publikum se posunuly a přitažlivost se dnes rodí z kombinace char...|X|Ukázat všechny listy najednou
+Scarlett Johansson
+Scarlett Johansson dokáže s přehledem přecházet mezi komorními filmy a velkými hollywoodskými produkcemi, aniž by ztratila vlastní výraz. Její přitažlivost stojí na kombinaci specifického hlasu, klidného projevu a vizáže, která odkazuje ke klasickému Hollywoodu, ale působí současně a sebevědomě.
+Výraznou podobu jejího sexappealu zachycuje Match Point, kde jako Nola Rice ztělesňuje moderní femme fatale. Postava, která naruší zdánlivě dokonalý svět hlavního hrdiny, stojí na napětí a nevyřčených emocích. Johansson tu ukazuje, že její síla není v okázalosti, ale v tom, jak dokáže ovládnout scénu pouhou přítomností.
+Match Point – Hra osudu
+Hodnocení Kinobox.cz : 79 %
+Žánr: Thrillery
+Původní název: Match Point
+Režie: Woody Allen
+Hrají: Jonathan Rhys Meyers, Emily Mortimer, Penelope Wilton, Miranda Raison, Margaret Tyzack, Rupert Penry-Jones, Toby Kebbell, Alexander Armstrong, Victoria Principal, Scarlett Johansson
+Původ a premiéra: Velká Británie, 2005
+Délka: 124 minut
+Kde si film můžete pustit: Zrovna není nikde dostupný online
+Pokračování 2 / 40 Margot Robbie
+Margot Robbie spojuje klasickou hollywoodskou krásu a současné sebevědomí. Její přitažlivost stojí na přirozeném šarmu i schopnosti ovládnout scénu bez zbytečné okázalosti. Postupně si vybudovala pozici herečky, která dokáže využít svůj obraz, ale zároveň ho nepodřizuje jediné poloze.
+Zlomovým momentem byl Vlk z Wall Street, kde jako Naomi okamžitě přitáhla pozornost. Postava, která kombinuje svůdnost s dominancí, stojí na jistotě a kontrole, s níž dokáže obrátit dynamiku vztahů ve svůj prospěch. Robbie tu ukazuje typ přitažlivosti, který není pasivní, ale aktivně formuje dění kolem sebe.
+Vlk z Wall Street
+Hodnocení Kinobox.cz : 86 %
+Žánr: Drama
+Původní název: The Wolf of Wall Street
+Režie: Martin Scorsese
+Hrají: Leonardo DiCaprio, Jonah Hill, Margot Robbie, Kyle Chandler, Rob Reiner, Matthew McConaughey, Kenneth Choi, Brian Sacca, Cristin Milioti, Aya Cash
+Původ a premiéra: USA, 2013
+Délka: 180 minut
+Kde si film můžete pustit: Oneplay (dabing), Apple TV (dabing a titulky), DaFilms (bez dabingu a titulků), Google (dabing a titulky), KVIFF (titulky), Prima plus (bez dabingu a titulků)
+Pokračování 3 / 40 Emma Stone
+Emma Stone patří k herečkám, které stojí na přitažlivosti vycházející z energie a autenticity. Nepůsobí jako klasický sex symbol, spíš jako osobnost, která dokáže zaujmout přirozeností, výrazem a schopností jít do role naplno. Její magnetismus stojí na kombinaci lehkosti a intenzity, která se v různých polohách neustále proměňuje.
+Výraznou podobu toho ukazuje Chudáčci, kde jako Bella Baxter objevuje svět i samu sebe. Postava stojí na svobodě a otevřenosti, s níž přistupuje k vlastnímu tělu i emocím. Stone tu ukazuje typ přitažlivosti, který není založený na stylizaci, ale na upřímnosti a odvaze jít až na hranici.
+Chudáčci
+Hodnocení Kinobox.cz : 80 %
+Žánr: Romantické filmy
+Původní název: Poor Things
+Režie: Yorgos Lanthimos
+Hrají: Emma Stone, Mark Ruffalo, Willem Dafoe, Ramy Youssef, Jerrod Carmichael, Christopher Abbott, Suzy Bemba, Kathryn Hunter, Damien Bonnard, Vicki Pepperdine
+Původ a premiéra: USA, 2023
+Délka: 141 minut
+Kde si film můžete pustit: Disney+ (titulky), Apple TV (titulky), Google (titulky), Rakuten (titulky), Sweet (titulky)
+Pokračování 4 / 40 Sydney Sweeney
+Sydney Sweeney si vybudovala silnou pozici díky kombinaci výrazné fyzické přítomnosti a ochoty jít v rolích až na hranici komfortu. Její přitažlivost působí okamžitě, ale nestojí jen na vzhledu – opírá se o emoce, které nejsou vždy příjemné ani uhlazené. Právě tahle otevřenost ji odlišuje od tradičních hollywoodských vzorců.
+Zásadním momentem je seriál Euforie, kde jako Cassie pracuje s křehkostí i silnou potřebou být přijímaná. Postava, která se pohybuje mezi touhou a nejistotou, stojí na intenzivních emocích a neustálém napětí. Sweeney tu ukazuje přitažlivost, která funguje na první pohled, ale zůstává i ve chvíli, kdy se věci začnou rozpadat.
+Euforie
+Hodnocení Kinobox.cz : 83 %
+Žánr: Drama seriály
+Původní název: Euphoria
+Hrají: Zendaya, Hunter Schafer, Sydney Sweeney, Algee Smith, Alexa Demie, Angus Cloud, Barbie Ferreira, Jacob Elordi, Maude Apatow, Javon Walton
+Původ a premiéra: USA, 2019
+Délka: 61 minut
+Kde si film můžete pustit: HBO Max (dabing a titulky)
+Pokračování 5 / 40 Angelina Jolie
+Angelina Jolie vstoupila do nového milénia s aurou nebezpečí a nespoutanosti, která v tehdejším Hollywoodu působila nezvykle silně. Její výrazná vizáž a sebevědomé vystupování rychle vytvořily typ přitažlivosti, který kombinoval krásu s dominancí a odstupem. I dnes zůstává jednou z klíčových postav, které definovaly podobu moderního filmového sex symbolu.
+Její magnetismus dobře vystihuje historické drama Sedmý hřích, kde pracuje s motivem svůdnosti jako nástroje manipulace. Postava ženy, která si podřizuje okolí, ukazuje, že její přitažlivost nestojí jen na vzhledu, ale především na energii a kontrole, kterou dokáže přenést na celé vyprávění.
+Sedmý hřích
+Hodnocení Kinobox.cz : 55 %
+Žánr: Thrillery
+Původní název: Original Sin
+Režie: Michael Cristofer
+Hrají: Angelina Jolie, Antonio Banderas, Jack Thompson, Allison Mackie, Joan Pringle, Thomas Jane, James Haven
+Původ a premiéra: USA, 2001
+Délka: 118 minut
+Kde si film můžete pustit: Zrovna není nikde dostupný online
+Pokračování 6 / 40 Anya Taylor-Joy
+S Anyou Taylor-Joy přišel do mainstreamu typ přitažlivosti, který působí až nepatřičně – jako by do klasického Hollywoodu vůbec nepatřil. Její výraz stojí na kontrastu křehkosti a chladné inteligence, přičemž právě tahle kombinace vytváří napětí, které nejde přehlédnout. Nepůsobí jako tradiční kráska, ale jako někdo, kdo pravidla spíš ohýbá než následuje.
+Zlom přišel s minisérií Dámský gambit, kde jako Beth Harmon proměnila šachy v hypnotickou podívanou. Postava, která stojí na soustředění, kontrole a vnitřním tlaku, ukazuje jiný typ přitažlivosti – klidný, přesný a nekompromisní. Taylor-Joy tu dokazuje, že i čistě intelektuální energie může mít silný magnetický efekt.
+Dámský gambit
+Hodnocení Kinobox.cz : 88 %
+Žánr: Drama seriály
+Původní název: The Queen's Gambit
+Hrají: Anya Taylor-Joy, Moses Ingram, Bill Camp, Thomas Brodie-Sangster, Marielle Heller, Rebecca Root, Harry Melling
+Původ a premiéra: USA, 2020
+Kde si film můžete pustit: Netflix (titulky)
+Pokračování 7 / 40 Monica Bellucci
+Monica Bellucci představuje v evropském filmu archetyp nadčasové ženské přitažlivosti. Její kouzlo nikdy nestálo na trendech, ale na výrazné fyzické přítomnosti, klidu a jistotě, s níž dokáže ovládnout prostor. Patří k herečkám, u nichž je nahota přirozenou součástí vyprávění, nikoliv prvoplánovým efektem.
+Zásadním momentem její kariéry je Maléna. Postava tiché ženy procházející sicilským městečkem se stala ztělesněním touhy i závisti okolí. Film ukazuje, jak silný může být samotný obraz – Bellucci tu téměř nemluví, přesto si podmaňuje každou scénu. Ikonická pasáž na náměstí, kdy jí muži mlčky podávají zapalovače, patří k nejsilnějším momentům filmového magnetismu.
+Maléna
+Hodnocení Kinobox.cz : 72 %
+Žánr: Drama
+Původní název: Malena
+Režie: Giuseppe Tornatore
+Hrají: Monica Bellucci, Giuseppe Sulfaro, Luciano Federico, Matilde Piana, Gaetano Aronica, Gabriella Di Luzio, Marcello Catalano, Elisa Morucci, Domenico Gennaro, Pietro Notarianni
+Původ a premiéra: Itálie, 2000
+Délka: 109 minut
+Kde si film můžete pustit: Amazon Obchod (dabing a titulky)
+Pokračování 8 / 40 Zendaya
+Zendaya představuje typ přitažlivosti, který stojí na kombinaci elegance, kontroly a přirozené autority. Nepůsobí prvoplánově, spíš jako někdo, kdo si prostor bere bez námahy – stačí postoj, pohled a scéna se kolem ní srovná. Její síla je v tom, jak přesně dávkuje emoce i odstup.
+Nejvýrazněji to ukazuje Rivalové, kde jako Tashi rozehrává vztahovou hru postavenou na napětí a manipulaci. Postava, která má věci pod kontrolou a nenechá se zatlačit, stojí na klidu a jistotě. Zendaya tu ukazuje přitažlivost, která není okázalá, ale o to víc dominantní.
+Rivalové
+Hodnocení Kinobox.cz : 71 %
+Žánr: Sportovní filmy
+Původní název: Challengers
+Režie: Luca Guadagnino
+Hrají: Zendaya, Mike Faist, Josh O'Connor, Darnell Appling, Jake Jensen, Bryan Doo, Shane T Harris, Nada Despotovich, Joan Mcshane, Chris Fowler
+Původ a premiéra: USA, 2024
+Délka: 132 minut
+Kde si film můžete pustit: HBO Max (dabing a titulky), Apple TV (dabing a titulky), Amazon (dabing a titulky), Amazon Obchod (dabing a titulky), Rakuten (dabing a titulky)
+Pokračování 9 / 40 Charlize Theron
+Přitažlivost Charlize Theron stojí na kombinaci elegance, klidu a vnitřní síly. Její výraz působí chladně a kontrolovaně, ale zároveň dokáže přecházet do fyzicky náročných a drsných rolí, aniž by ztratila svou přirozenou autoritu.
+Dobře to ukazuje drama Hlava v oblacích, kde jako Gilda žije naplno i v době, kdy se kolem ní hroutí svět. Postava, která se řídí vlastními pravidly a nenechá se svazovat konvencemi, stojí na sebevědomí a přirozené dominanci. Theron tu ukazuje, že její přitažlivost nevychází z okázalosti, ale z toho, jak pevně má své místo pod kontrolou.
+Hlava v oblacích
+Hodnocení Kinobox.cz : 67 %
+Původní název: Head in the Clouds
+Režie: John Duigan
+Hrají: Charlize Theron, Penélope Cruz, Stuart Townsend, Thomas Kretschmann, Karine Vanasse, David La Haye, Steven Berkoff, Sophie Desmarais
+Původ a premiéra: Velká Británie, 2004
+Délka: 121 minut
+Kde si film můžete pustit: Zrovna není nikde dostupný online
+Pokračování 10 / 40 Vanessa Kirby
+U Vanessy Kirby se potkává chladná elegance s velkou emocionální otevřeností. Její přitažlivost nevychází z okázalosti, ale z výrazných rysů a pohledu, který se během vteřiny dokáže změnit z klidného v úplně zlomený. Právě tenhle kontrast drží pozornost i v tichých scénách.
+Silně to vyniká ve filmu Střípky ženy, kde jako Martha prochází ztrátou, kterou nejde jednoduše popsat. Postava stojí na potlačených emocích a postupném vyrovnávání se s realitou. Kirby tu ukazuje přitažlivost, která nevychází z efektu, ale z intenzity a...
+(Pokracovani na webu)|E|
+|T|Pokud vyjde počasí, zítra si přivstaňte. Na ranní obloze bude zářit kometa. Poradíme, kde ji hledat|D|9.4. 13:56|P|Kometu C/2025 R3 nejlépe spatříte mezi čtvrtou a pátou hodinou ranní • Na ranní obloze ji naleznete v oblasti známého souhvězdí Pegasa • Tento objekt ...|X|Na ranní obloze se v těchto dnech odehrává nenápadné, ale mimořádně atraktivní představení. Kometa C/2025 R3 (PanSTARRS) postupně zjasňuje a v těchto dnech nastává nejlepší šance spatřit ji i z území Česka. Unikátní příležitost nepotrvá dlouho, zhruba do 21. dubna, a vyžaduje trochu disciplíny. Kdo si nepřivstane, o podívanou zkrátka přijde.
+Ideální čas pro pozorování je mezi čtvrtou a pátou hodinou ranní. Úplně nejlepší pohled se naskytne kolem půl páté, tedy přibližně hodinu před východem Slunce, nicméně přesný čas se liší podle lokality a data.
+Poloha komety C/2025 R3 (PanSTARRS) zítra nad ránem v programu Stellarium
+Vlasatice se nachází nízko nad východoseverovýchodním horizontem. Ačkoli každým dnem zjasňuje, zároveň klesá čím dál níž k obzoru. Sledování navíc komplikuje svítání, v jehož sílícím světle se postupně ztrácí.
+Kdy a kde hledat kometu C/2025 R3 (PanSTARRS)
+Vyhledejte tmavé stanoviště s nerušeným výhledem od východu k severovýchodu. Hlavním záchytným bodem je souhvězdí Pegasa. Úkaz najdete nízko nad obzorem, nedaleko výrazného uskupení hvězd zvaného Pegasův čtverec. Hledejte konkrétně v oblasti mezi hvězdami Markab a Scheat. Na pohled se jeví jako mlhavý, nevýrazný obláček. Počítejte ale s tím, že se poloha komety každým dnem mírně mění.
+Předpověď počasí na příští dny:
+Podle Fyzikálního ústavu v Opavě by kometa přibližně od 10. dubna mohla zjasnit natolik, že ji zkušenější pozorovatelé spatří i bez dalekohledu. Podstatně lepší zážitek ale slibuje divadelní kukátko nebo obyčejný triedr, který zvýrazní nejen jasnou hlavu, ale i náznak jinak sotva patrného ohonu.
+Poprvé a možná i naposledy
+Pokud budete chtít úkaz vyfotit mobilem, najděte si místo s tmavou oblohou. Stativ a delší expozice udělají své – na snímku se objeví malý zelenomodrý bod. V neděli 26. dubna proletí nejblíže Zemi, to už ale bude prakticky nepozorovatelná. Poté bude viditelná na večerní obloze, ale už jen z jižní polokoule.
+C/2025 R3 (PanSTARRS) pochází ze vzdáleného Oortova oblaku a naší sluneční soustavou prolétá poprvé. Kvůli její dráze ji gravitace po průletu kolem Slunce pravděpodobně vymrští do mezihvězdného prostoru. Jde tak doslova o její první a zároveň poslední návštěvu. Takže neváhejte, ranní vstávání za tu jedinečnou podívanou stojí!|E|
+|T|Tmavý systém a světlé aplikace. Jak v macOS smíchat různé motivy|D|9.4. 12:45|P|Líbí se mi tmavý motiv macOS, ale u některých interních aplikací zase tak dobře nevypadá, případně je méně čitelný. Standardně však systém nedovoluje ...|X|Líbí se mi tmavý motiv macOS, ale u některých interních aplikací zase tak dobře nevypadá, případně je méně čitelný. Standardně však systém nedovoluje oddělit barevné nastavení softwaru. Existuje však trik, jak toho dosáhnout.
+Světlý a tmavý Finder
+Stačí nastavit systému tmavý motiv a jednotlivé aplikace pak individuálně zesvětlit. Slouží k tomu tento terminálový příkaz:
+defaults write com.apple.iCal NSRequiresAquaSystemAppearance -bool YES
+Ten přepíše nastavení vzhledu aplikace Kalendář (iCal) na světlý motiv Aqua. Po jeho zadání je nutné aplikaci restartovat. Pokud nastavení chcete zrušit, použijte příkaz:
+defaults delete com.apple.iCal NSRequiresAquaSystemAppearance
+Protože ale podobné přikazování není pohodlné, navíc se špatně zjišťují přesné názvy aplikací, lze si práci ulehčit utilitkou Gray, která je volně ke stažení na GitHubu. Stáhněte zip, rozbalte, přesuňte do složky Aplikace a spusťte. Pak uvidíte seznam všech aplikací a poklepáním jim můžete změnit nastavení vzhledu.
+Aplikace Gray
+Gray je pět let stará aplikace původně psaná pro macOS Mojave, ale funguje i v aktuální verzi Tahoe. Řada aplikací třetích stran má individuální nastavení v sobě, takže pro ně bude Gray zbytečný. To jen výchozí applovské aplikace se ve většině případů řídí systémovým nastavením.|E|
+|T|Konec výpadků ve vlacích? České dráhy a Leo Express vylepšily mobilní signál ve stovkách vozů|D|9.4. 11:57|P|Cestování vlakem v Česku bude opět o něco pohodlnější. Stovky vlaků na českých železnicích díky dotacím zlepšily mobilní signál a 5G dostupnost během ...|X|Železniční dopravci České dráhy a Leo Express upravili 384 vozů novými úpravami pro zlepšení dostupnosti mobilního signálu. Využili k tomu dotace z Národního plánu obnovy přesahující 180 milionů korun.
+“Cílem výzvy je vybavení železničních vozů pro osobní přepravu operujících převážně na železničních koridorech TEN-T opakovači nebo propustnými okny pro zajištění dostupnosti mobilního signálu uvnitř vozů. Největší užitek z této výzvy tak mají cestující ve vlakových vozech, kteří díky ní získávají kvalitní a pokud možno nepřerušovaný přístup k mobilním hlasovým i datovým službám, a to nejen prostřednictvím nových sítí 5. generace,” informoval Český telekomunikační úřad.
+České dráhy opakovači vybavily podle serveru Lupa.cz 151 vozů v celkem 27 jednotkách Pendolino, Railjet a InterPanter. V dalších 208 vozech byla provedena laserová úprava oken pro zlepšení propustnosti signálu. Tato úprava se týká 41 vozů s kupé, 24 jídelních vozů a 143 velkoprostorových vozů.
+Společnost Leo Express opakovače instalovala do pěti pětivozových jednotek Stadler Flirt.|E|
+|T|SPIR: Trh online reklamy loni stoupl o desetinu na 70,7 miliardy korun|D|9.4. 10:57|P|Zadavatelé v roce 2025 investovali do internetové reklamy rekordních 70,7 miliard korun v kombinaci ceníkových a čistých cen. Částka znamená meziroční...|X|Zadavatelé v roce 2025 investovali do internetové reklamy rekordních 70,7 miliard korun v kombinaci ceníkových a čistých cen. Částka znamená meziroční nárůst o 10,6 %, meziročně přitom stoupaly všechny formy online reklamy, tedy display reklama, reklama ve vyhledávání i katalogy a řádková inzerce, uvádí Sdružení pro internetový rozvoj (SPIR) v tiskové zprávě.
+„Digitální trh stále roste vlivem více faktorů,“ komentuje Michal Hanák, předseda předsednictva SPIR. Podle něj nejde jen o loňské oživení ekonomiky. „Lidé na internetu utrácejí stále více peněz, takže přirozeně roste i objem prostředků směřujících do marketingu a reklamy, které toto nákupní chování podporují. Objem online inzerce sílí i díky růstu ceny jednotlivých formátů. Zajímavý bude v dalších letech zejména search, který se může dramaticky změnit vlivem rostoucího vlivu AI, kde ale zatím není vykrystalizovaný business model,“ hodnotí.
+Největší část investic směřovala i v roce 2025 do celoplošné (display) reklamy, která dosáhla objemu 51,1 miliardy Kč v kombinovaných cenách. Tento formát zahrnuje jak reklamu v obsahových sítích (např. Seznam Sklik, Google Ads nebo Facebook), tak RTB a nativní formáty. Na druhém místě zůstává reklama ve vyhledávání s celkovými investicemi 18,2 miliardy Kč v reálných cenách. Katalogové zápisy a řádková inzerce přinesly médiím tržby 1,3 miliardy Kč v ceníkových cenách.
+Pro rok 2026 SPIR odhaduje růst o 7,4 %, což by mělo znamenat celkové investice ve výši 76 miliard Kč. Účastníci výzkumu však tradičně volí spíše opatrné prognózy.|E|
 |T|Hráči se mají na co těšit: Android 17 přinese dlouho očekávanou novinku|D|9.4. 10:36|P|Mobilní hry jsou stále populárnější a výkon smartphonu je už srovnatelný s některými staršími počítači nebo herními konzolemi. Stále problematická je ...|X|Na telefonech už dávno nezahrajete jen hry s jednoduchou grafikou, ale vývojáři pro ně portují i velké hry, jako je hororovka Alien: Isolation nebo strategie Total War od studia Creative Assembly. Ovládání komplexnějších her na displeji telefonu rozhodně není intuitivní, což může vyřešit pořízení herního gamepadu, jenže ten obvykle nešlo jednoduše personalizovat, a tento problém chce vyřešit Google v nadcházející verzi operačního systému Android.
 Android 17 přinese personalizace pro gamepady
 Pokud čas od času hrajete na telefonu s Androidem a využíváte gamepad, tak víte, že ovládání u některých her je poměrně nedomyšlené a obvykle není jednoduchý způsob, jak si tlačítka a páčky na ovladačích přizpůsobit podle sebe. Naštěstí Google tento dlouholetý problém vyřešil v beta verzi Androidu 17.

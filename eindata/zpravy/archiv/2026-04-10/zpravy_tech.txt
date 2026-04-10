@@ -1,4 +1,146 @@
 |T|Chyba|D||P|Něco se pokazilo.|X|'NoneType' object has no attribute 'strip'|E|
+|T|Záchrana pro přehlížený segment levných notebooků: Parametry všech procesorů Intel Wildcat Lake|D|10.04.2026 17:00|P|Už máme parametry všech modelů procesorů Intel Core 300 „Wildcat Lake“, které oživí segment levných notebooků. Díky nové architektuře taktu až 4,8 GHz...|X|Před časem unikly testy procesorů Intel Wildcat Lake, což bude taková nenápadná, ale důležitá novinka Intelu. Jde totiž o procesory, které mají stejnou technologickou výbavu včetně procesorových jader a 1,8nm procesu jako vyšší procesory Core Ultra 300 Panther Lake, ale bez nákladné čipletové výroby. Přinesou tak konečně moderní CPU se stále slušným jednovláknovým výkonem do levných notebooků. Teď už máme informace o všech modelech.
+Modely a parametry Wildcat Lake
+Wildcat Lake jsou založené na stejné stavbě, jako tradiční mobilní procesory Core řady U – jako procesor s externím čipsetem na stejném pouzdru, k jehož připojení ale není využito žádné pokročilé pouzdření. Jinak se už ale od Panther Lake liší jen nižším počtem jader a slabou konfigurací GPU (a málo výkonnou NPU, takže nepodporují technologie Copilot+ PC). Jejich architekturu jsme probírali zde:
+Intel v lednu při jejich odhalení neřekl nic k jednotlivým modelům, ale ty teď prozradil leaker s přezdívkou Jaykihn. Z předchozích úniků jsme znali dva a poté se ještě objevil třetí, ve skutečnosti ale bude modelů Wildcat Lake šest.
+Vypadá to, že Wildcat Lake bude v jednovláknovém (ne mnohovláknovém, pochopitelně) výkonu ještě o něco blíž dražším Core Ultra 300 Panther Lake, než ukazovaly předchozí úniky. Nejvýkonnější verze procesoru ponese označení Core 7 360 a jeho maximální boost na velkém jádru P-Core je 4,8 GHz pro jedno jádro a 4,7 GHz pro dvě jádra, jejich základní takt je 1,5 GHz. Procesor má jako téměř všechna Wildcat Lake jen 2 P-Core a čtyři jádra LP E-Core. Ta mají takt 1,4 GHz až 3,6 GHz a procesor má 6MB L3 cache.
+Integrované GPU má 2 jádra Xe Core (256 shaderů) architektury Xe3, jehož maximální takt je 2,6 GHz (a uváděný teoretický výkon v AI 21 TOPS). Jednotka NPU bude mít takt zdá se až 4,2 GHz, ale jen jednu dlaždici, s celkovým výkonem jen 17 TOPS.
+Stejná konfigurace bude na trhu také jako procesor Core 7 350. Ten má podle Jaykihna zřejmě zcela stejné parametry, takže pro většinu uživatelů bude stejně dobrý. Rozdíl je zřejmě v tom, že model 360 je zařazen do programu SIPP (Stable IT Platform Program), což znamená určitou validaci navíc a zejména to, že procesor bude pro výrobce notebooků dostupný déle (nejméně 15 měsíců po nahrazení novou generací), aby notebooky pro velké firmy mohly mít dlouhé cykly dostupnosti v nezměněné konfiguraci (žádné procesory Wildcat Lake ovšem nepodporují vPro). Nejde o nic, co by chybělo běžnému uživateli.
+Pod touto konfigurací pak bude dvojice modelů Core 5 330 a Core 5 320 – opět se liší tím, že vyšší podporuj SIPP, jinak mají stejné parametry. 2+6 jader i 2 Xe Core jsou zachována. Tyto modely mají o 200 MHz nižší boost (4,6 GHz na jedno jádro, 4,5 GHz pro dvě jádra P-Core, 3,4 GHz u čtyř jader LP E-Core), zatímco základní takty jsou stejné. Takt GPU je 2,5 GHz (což dává výkon 20 TOPS) a NPU 4,0 GHz (16 TOPS). Je možné, že tyto dva modely jsou míněné pro nejmasovější prodej a takt 4,6 GHz zhruba ukazuje úroveň, kterou teď Intel na svém 1,8nm procesu dosahuje bez větších problémů, zatímco 4,8–5,1 GHz u vyšších modelů Wildcat Lake a Panther Lake už vyžaduje binning a zvládne je menší díl křemíku.
+Poslední procesor s plným počtem jader a jednotek v GPU je Core 5 315, které už existuje jen ve verzi nepodporující SIPP. Boosty jader P-Core jsou opět nižší – 4,4 GHz pro jedno, 4,3 GHz u dvou jader, maximum jader LP E-Core je 3,3 GHz. Takt GPU je snížen na 2,3 GHz (18 TOPS) a NPU na 3,8 GHz (což dává 15 TOPS).
+Nejlevnějším modelem Wildcat Lake bude prozatím procesor označený Core 3 304. Ten má jedno P-Core vypnuté, takže má aktivní jen jedno velké jádro s maximálním taktem 4,3 GHz. Počet jader LP E-Core (4 s maximálním taktem 3,3 GHz) je zachován a i tento procesor má 6MB L3 cache. Základní takty jsou jinak u všech modelů stejné, i zde tedy 1,5 GHz u P-Core a 1,4 GHz u E-Core.
+Tento model má ale také vypnutou polovinu GPU, takže zbývá jediné Xe Core (128 shaderů) s taktem 2,3 GHz (9 TOPS). NPU je ponechána na stejné konfiguraci jako u modelu 315.
+TDP všech těchto modelů je 15W, s maximální turbo spotřebou 35 W. Jsou tedy relativně úspornější než vyšší modely mobilních procesorů Intel, ale v mnohovláknové zátěži (nebo kombinované zátěži s GPU) se stále mohou docela „rozjet“. Jak dobře budou fungovat co do provozních vlastností jako je zahřívání, hlučnost a výdrž na baterie, to už bude záviset na konstrukci individuálních notebooků.
+Tyto procesory by měly v noteboocích nahrazovat zejména různé „Core 100“ a starší procesory generací Alder Lake, Raptor Lake a Meteor Lake, které Intel stále udržuje v prodeji, protože čipletová Core Ultra 200 jsou příliš drahá na výrobu. V tomto segmentu by mělo jít o zlepšení co do jednovláknového výkonu, ale asi i v mobilitě.
+Wildcat Lake ale asi stále bude cenově postaveno o trošku výš než nejlevnější procesory Intelu s „malými jádry“ pocházející z linie Atomů – jako různé starší Celerony, Pentia a později „Intel Processory“. Například čipy jako řada Intel N100 nejspíš zůstanou v nabídce jako stupeň pod modely Wildcat Lake nadále.
+Wildcat Lake by mělo být docela přínosem i proto, že AMD do tohoto levnějšího segmentu nové procesory příliš netlačí – jeho nejnovější generace s jádry Zen 4 a zejména Zen 5 jsou spíše až ve vyšších patrech a v nejlevnějších modelech se dál prodávají SoC s jádry Zen 3 nebo dokonce Zen 2 (APU Mendocino), u nichž je zejména jednovláknový výkon už hodně pozadu za dnešními standardy. Wildcat Lake snad v levných noteboocích pozvedne úroveň a také přiměje AMD ke zlepšením.
+Zdroj: Jaykihn|E|
+|T|MacBook Neo je nejdůležitější počítač roku. Levné notebooky s Windows, tohle musíte okopírovat (Podcast Živě)|D|10.04.2026 16:45|P|Macbook Neo je podle Lukáše nejdůležitějším modelem za dlouhou dobu. Ukazuje totiž, jak může vypadat dobrý, a přitom levný notebook. Americká firma se...|X|Macbook Neo je podle Lukáše nejdůležitějším modelem za dlouhou dobu. Ukazuje totiž, jak může vypadat dobrý, a přitom levný notebook. Americká firma se uchýlila ke kompromisům na správných místech. Neo nabízí dostatečný výkon do kanceláře, celodenní výdrž, skvělý displej a barevné šasi.
+Základní verzi si studenti a studentky mohou pořídit za zhruba 14 tisíc korun. V této cenové hladině konkurence s Windows lape po dechu. Výrobce notebooků s Windows Lukáš kritizuje zejména za špatné displeje. Apple v Neu ošidil porty, k počítači připojíte jediný monitor a klávesnice není podsvícená. Pro cílovou skupinu ale nejde o zásadní překážky.
+Program pořadu
+- 01:13 – První dojmy
+- 08:15 – Displej za 1*
+- 19:13 – Výkon pro kancelář
+- 27:16 – Dobrá klávesnice, chudá výbava
+- 36:27 – V Česku bez Apple Intelligence
+Zdroje a další informace: hudba od Nihilora
+Podcast Živě najdete také na Spotify, kde se můžete přihlásit k odběru, stejně tak ve službách Apple Podcasts a YouTube Music. Pořad lze odebírat i prostřednictvím RSS. Budeme rádi za zpětnou vazbu. Pokud se vám podcast líbí, sdílejte jej.
+V našem podcastovém kanále najdete také videopořad Týden Živě. Ve zvukové podobě zde vychází každé pondělí.|E|
+|T|Tohle jsou nejoblíbenější nové filmy a seriály. Bez vykopávek, které jste už dávno viděli|D|10.04.2026 15:45|P|Nevýhodou žebříčků postavených na sledovanosti je, že jsou plné prastarých kousků, které už každý viděl. Tady proto najdete pouze nové filmy a seriály...|X|Ukázat všechny listy najednou
+30. Marshals: Příběh z Yellowstonu
+Kayce Dutton po smrti manželky opouští Yellowstone a vstupuje do elitní jednotky federálních maršálů v Montaně. Bývalý příslušník Navy SEALs a zkušený kovboj spojuje vojenský výcvik s instinktem člověka, který vyrostl na ranči. Mise ho nutí volit mezi povinností a rodinou, mezi klidem domova a rolí poslední obranné linie. Drsná krajina odráží vnitřní napětí, které si nese z minulosti, a ukazuje, že spravedlnost na americkém Západě má často vysokou cenu.
+Hodnocení Kinobox.cz : 65 %
+Žánr: Drama seriály
+Původní název: Y: Marshals
+Hrají: Luke Grimes, Logan Marshall-Green
+Původ a premiéra: USA, 2026
+Délka: 60 minut
+Kde si film můžete pustit: SkyShowtime (dabing a titulky)
+Pokračování 2 / 30 29. Demoliční četa
+Nevlastní bratři Jonny a James spolu roky nemluvili. Spojí je až smrt jejich otce, soukromého detektiva, který zemřel při podezřelé nehodě na Havaji. Jonny, bývalý policista, se po útoku neznámých mužů vydává na ostrov, aby zjistil, co se skutečně stalo. Znovu se setkává s Jamesem, elitním vojákem, a společně se noří do otcova případu. Pátrání je zavede k mocnému developerovi, plánům na kontroverzní kasino a k napojení na mafii. Staré křivdy mezi bratry znovu vyplouvají na povrch, zatímco kolem nich houstne síť intrik, která ohrožuje jejich rodinu i celý ostrov.
+Hodnocení Kinobox.cz : 70 %
+Žánr: Akční filmy
+Původní název: The Wrecking Crew
+Režie: Ángel Manuel Soto
+Hrají: Dave Bautista, Jason Momoa, Temuera Morrison, Morena Baccarin, Roimata Fox, Frankie Adams, Claes Bang, Jacob Batalon, Maia Kealoha, Stephen Root
+Původ a premiéra: USA, 2026
+Délka: 124 minut
+Kde si film můžete pustit: Amazon (dabing a titulky)
+Pokračování 3 / 30 28. Vřískot 7
+Sidney Prescott si v tichém městečku vybudovala nový život a věřila, že minulost už ji nedožene. Klid ale naruší návrat masky Ghostface. Nový vrah míří přímo na ni a chce dokončit to, co kdysi začalo. Když se jeho terčem stane i její dcera, promění se obavy ve skutečnou hrozbu. Sidney ví, že útěk nic nevyřeší. Aby ochránila rodinu, musí se znovu postavit strachu, který ji pronásleduje od mládí. Stará traumata ožívají a město, které působilo bezpečně, zaplní napětí a nedůvěra.
+Hodnocení Kinobox.cz : 50 %
+Žánr: Horory
+Původní název: Scream 7
+Režie: Kevin Williamson
+Hrají: Neve Campbell, Isabel May, Celeste O'Connor, Asa Germann, Mckenna Grace, Sam Rechner, Anna Camp, Mason Gooding, Courteney Cox, Roger L. Jackson
+Původ a premiéra: USA, 2026
+Kde si film můžete pustit: Zrovna není nikde dostupný online
+Pokračování 4 / 30 27. Star Trek: Akademie Hvězdné flotily
+Skupina mladých kadetů nastupuje na Akademii Hvězdné flotily. Jejich cílem je stát se důstojníky Federace. Pod dohledem instruktorů procházejí náročným výcvikem, budují přátelství, soupeří spolu a prožívají první lásky. Do jejich studia však zasáhne nový nepřítel, který ohrozí nejen Akademii, ale i celou Federaci. Kadeti tak musí obstát nejen ve zkouškách, ale i ve skutečném nebezpečí.
+Hodnocení Kinobox.cz : 51 %
+Žánr: Sci-fi seriály
+Původní název: Star Trek: Starfleet Academy
+Hrají: Holly Hunter, Sandro Rosta, Karim Diane, Kerrice Brooks, George Hawkins, Bella Shepard, Zoë Steiner, Gina Yashere, Robert Picardo, Tig Notaro
+Původ a premiéra: USA, 2026
+Délka: 58 minut
+Kde si film můžete pustit: SkyShowtime (dabing a titulky)
+Pokračování 5 / 30 26. Spasitel
+Učitel přírodopisu Ryland Grace se probudí na palubě vesmírné lodi vzdálené světelné roky od Země. Nepamatuje si, kdo je ani proč je v kosmu sám. Jak se mu vrací paměť, zjišťuje, že Slunce rychle slábne a lidstvu hrozí hlad i doba ledová. Příčinou je mimozemská forma života, která mění energii hvězd.
+Svět proto vyslal výpravu k hvězdě Tau Ceti, která jako jediná zůstává stabilní. A Grace se stává klíčem k záchraně Země. V izolaci musí spoléhat na vědu, vlastní důvtip i odvahu. Nečekané setkání udělá z jeho osamělé mise víc než jen boj o přežití.
+Hodnocení Kinobox.cz : 89 %
+Žánr: Sci-fi filmy
+Původní název: Project Hail Mary
+Režie: Phil Lord, Christopher Miller
+Hrají: Ryan Gosling, James Ortiz, Sandra Hüller, Lionel Boyce, Isla McRae, Milana Vayntrub, Ken Leung, Priya Kansara, Mia Soteriou, Annelle Olaleye
+Původ a premiéra: USA, 2026
+Délka: 157 minut
+Kde si film můžete pustit: Zrovna není nikde dostupný online
+Pokračování 6 / 30 25. Nevěsta!
+Chicago třicátých let zahalí kouř a stíny laboratoří, když osamělý Frankenstein požádá uznávaného vědce o pomoc se stvořením partnerky. Společně vrátí život mladé ženě, která zemřela násilnou smrtí, a na svět vstoupí Nevěsta. Jenže nová bytost se odmítne podřídit jejich představám. Objeví vlastní vůli, touhu i vzdor a rychle naruší hranici mezi vědou a morálkou. Z odvážného experimentu vyroste vášnivý a nebezpečný vztah, který přitáhne pozornost policie i veřejnosti a rozvíří společnost. Temná gotická atmosféra rámuje příběh o svobodě, identitě a síle, kterou už nikdo nedokáže zkrotit.
+Hodnocení Kinobox.cz : 64 %
+Žánr: Horory
+Původní název: The Bride!
+Režie: Maggie Gyllenhaal
+Hrají: Jessie Buckley, Christian Bale, Peter Sarsgaard, Annette Bening, Jake Gyllenhaal, Penélope Cruz, Jeannie Berlin, John Magaro, Julianne Hough, Louis Cancelmi
+Původ a premiéra: USA, 2026
+Kde si film můžete pustit: Apple TV (dabing a titulky)
+Pokračování 7 / 30 24. Love Story
+Antologický seriál mapuje slavné milostné příběhy, které zaujaly celý svět. První řada sleduje vztah Johna F. Kennedyho Jr. a Carolyn Bessette – jejich rychlé sblížení, manželství pod drobnohledem médií i tragický konec. Příběh ukazuje chemii silného páru i tlak společnosti, který jejich lásku provázel od začátku až do konce.
+Hodnocení Kinobox.cz : 79 %
+Žánr: Drama seriály
+Hrají: Sarah Pidgeon, Paul Kelly, Grace Gummer, Naomi Watts, Alessandro Nivola, Leila George, Sydney Lemmon
+Původ a premiéra: USA, 2026
+Délka: 63 minut
+Kde si film můžete pustit: Disney+ (titulky)
+Pokračování 8 / 30 23. Krása
+Svět vrcholové módy ochromí série brutálních a nevysvětlitelných úmrtí slavných supermodelek a supermodelů. Do Paříže proto přijíždějí agenti FBI Cooper Madsen a Jordan Bennettová, kteří mají zjistit, kdo tahá za nitky. Stopy je přivedou k šokujícímu odhalení: mezi elitou se šíří pohlavně přenosný virus přezdívaný Krása, jenž promění obyčejné lidi v dokonalé bytosti s bezchybným vzhledem. Za oslnivou fasádou se však skrývá smrtící účinek. Jak se nákaza šíří z Paříže do dalších světových metropolí a společnost propadá posedlosti krásou, dvojice vyšetřovatelů závodí s časem, aby zastavila epidemii, která může přepsat samotnou definici lidskosti.
+Hodnocení Kinobox.cz : 63 %
+Žánr: Drama seriály
+Původní název: The Beauty
+Hrají: Evan Peters, Anthony Ramos, Jeremy Pope, Ashton Kutcher, Rebecca Hall
+Původ a premiéra: USA, 2026
+Délka: 39 minut
+Kde si film můžete pustit: Disney+ (titulky)
+Pokračování 9 / 30 22. Smutný song
+Mike a Claire jsou neúspěšní muzikanti, kteří se živí jako hudební imitátoři. Když se do sebe zamilují, spojí síly a založí tribute kapelu s písněmi Neila Diamonda v čele s hitem „Sweet Caroline“. Z malých pódií se postupně dostanou blíž k vysněnému úspěchu. Jenže s rostoucí slávou přichází i tlak a tvrdé zkoušky. Příběh inspirovaný skutečnými událostmi ukazuje, že na lásku a splněné sny není nikdy pozdě.
+Hodnocení Kinobox.cz : 69 %
+Žánr: Životopisné filmy
+Původní název: Song Sung Blue
+Režie: Craig Brewer
+Hrají: Hugh Jackman, Kate Hudson, Michael Imperioli, Fisher Stevens, Jim Belushi, Ella Anderson, King Princess, Mustafa Shakir, Hudson Hilbert Hensley, Shyaporn Theerakulstit
+Původ a premiéra: USA, 2025
+Délka: 132 minut
+Kde si film můžete pustit: Apple TV (dabing a titulky), Amazon Obchod (dabing a titulky), Rakuten (dabing a titulky)
+Pokračování 10 / 30 21. Jeho a její
+Anna je bývalá moderátorka zpráv. Přežívá v dusném horku Atlanty daleko od přátel i novinářské práce. Z letargie ji vytrhne vražda v Dahlonega, ospalém městečku na severu Georgie, kde vyrůstala. Návrat domů ji postaví proti Jacku Harperovi, detektivovi, který vyšetřování vede a Annu považuje za možnou podezřelou. Jejich střet se mění v nervózní souboj o pravdu, v němž se mísí osobní minulost s profesní posedlostí. Každý z nich skládá vlastní verzi událostí, jenže každá mince má dvě strany a někdo zjevně lže.
+Hodnocení Kinobox.cz : 73 %
+Žánr: Krimi seriály
+Původní název: His & Hers
+Hrají: Tessa Thompson, Jon Bernthal, Pablo Schreiber, Crystal R. Fox, Rebecca Rittenhouse, Sunita Mani
+Původ a premiéra: USA, 2026
+Délka: 43 minut
+Kde si film můžete pustit: Netflix (dabing a titulky)
+Pokračování 11 / 30 20. V úkrytu
+Michael Mason býval elitním vládním zabijákem. Dnes žije v izolaci na odlehlém skotském ostrově a skrývá svou minulost. Jediný kontakt se světem pro něj představuje Jessie a její strýc, kteří mu vozí zásoby. Když jejich loď během bouře ztroskotá, Mason dívku zachrání, ale tím prozradí svůj úkryt. Spustí tím řetězec nebezpečných událostí. Musí převzít odpovědnost za Jessiinu bezpečnost a čelit digitálnímu dohledovému systému i lidem z tajného programu Black Kites, kteří ho léta hledají. Mason zjišťuje, že před minulostí už dál utíkat nemůže.
+Hodnocení Kinobox.cz : 59 %
+Žánr: Akční filmy
+Původní název: Shelter
+Režie: Ric Roman Waugh
+Hrají: Jason Statham, Bodhi Rae Breathnach, Bill Nighy, Naomi Ackie, Daniel Mays, Gordon Alexander, Harriet Walter, Bronson Webb, Derek Carroll, Tom Wu
+Původ a premiéra: USA, 2026
+Kde si film můžete pustit: Zrovna není nikde dostupný online
+Pokračování 12 / 30 19. Zlom vaz, bav se, neumři
+Do zapadlé restaurace v Los Angeles vtrhne muž s bombou. Tvrdí, že přichází z budoucnosti, aby odvrátil technologickou chybu, jež zničí lidstvo. Hosty vezme jako rukojmí, ale místo peněz chce jejich účast. Potřebuje přesně vybranou skupinu nespokojených cizinců, kteří mu během jediné noci pomohou zastavit vzpouru umělé inteligence. Každý z nich má v jeho plánu své místo, i když tomu zatím nerozumí. Napětí roste, čas ubíhá a otázka, zda před nimi stojí vizionář, nebo fanatik, visí ve vzduchu stejně hrozivě jako tikající nálož. Komorní thrill...
+(Pokracovani na webu)|E|
+|T|Aplikace, které mají miliardu stažení. Co LinkedInu trvalo 21 let, to ChatGPT zvládl za 27 měsíců|D|10.04.2026 14:45|P|Dosažení hranice jedné miliardy uživatelů trvá dnes nepoměrně kratší dobu • Moderní aplikace umělé inteligence dokážou tento milník překonat nejrychle...|X|Miliarda aktivních uživatelů je v digitálním světě považována za magickou metu. Zatímco produktům, jako jsou Windows nebo kancelářský balík Office, trvala tato cesta přes dvacet let, s nástupem chytrých telefonů se situace radikálně změnila. Průkopnický Facebook pokořil tento milník v říjnu 2012 za necelých devět let existence a dnes má více než tři miliardy uživatelů. Síť LinkedIn si počkala na nasbírání miliardy registrovaných dlouhých 21 let.
+Čas nutný k překonání magické hranice se v průběhu let zkracuje. Mapy Google potřebovaly 15 let, Vyhledávač Google, Gmail a Telegram to zvládly za 12 let. S nástupem mobilních zařízení se tempo výrazně zrychlilo. YouTube si na první miliardu počkal přes osm let, WhatsApp na ni dosáhl zhruba za 7 let, Instagram za necelých osm let a čínský WeChat za něco málo přes sedm let. Stále ale šlo o éru, kdy růst vyžadoval postupné budování uživatelské základny.
+Hitem se stala okamžitá konzumace
+Zlom přinesla druhá polovina minulé dekády, kdy TikTok zvládl překonat vysněnou metu za přibližně 5,1 roku. Klíčem k úspěchu se stal algoritmus, který nabízí obsah, aniž by uživatel musel budovat síť kontaktů. Hodnota aplikace se tak přesunula od komunity k okamžité konzumaci zábavy. Mezitím Disk Google překonal vysněný milník po 6 letech a Facebook Messenger 4,9 roku od spuštění.
+ChatGPT překonal miliardu stažení v rekordním čase
+Zcela novou éru odstartovala umělá inteligence a dravě rostoucí e-commerce platformy. Čínské tržiště Temu ohlásilo miliardu stažení své mobilní aplikace za pouhých 32 měsíců. ChatGPT následně doslova přepsal historické tabulky – hranice miliardy stažení aplikace padla za nevídaných 27 měsíců a 40 měsíců od spuštění následovala i miliarda aktivních uživatelů. Důvod je zřejmý: aplikace místo zábavy nabízí přímý užitek a šetří čas.
+Recept na miliardu: Staňte se digitální drogou
+Zásadní posun spočívá v tom, že moderní miliardové aplikace jsou zdarma (alespoň zdánlivě, často za ně platíme soukromím či osobními daty), globálně dostupné od prvního dne, úzce provázané s každodenním životem a optimalizované pro mobily. A především jsou návykové.
+Nutno však dodat, že jednotlivá čísla nejsou zcela srovnatelná. Tradiční platformy jako Facebook či WhatsApp měří svůj úspěch poměrně přísně pomocí měsíčně aktivních uživatelů (MAU). Profesní síť LinkedIn naproti tomu operuje s registrovanými účty, zatímco reálná aktivní základna zůstává nižší. Moderní dravci typu Temu nebo revoluční ChatGPT pak rádi vykazují hrubý kumulativní počet stažení.|E|
 |T|Ovládací panely prý z Windows nadobro zmizí, Microsoft aplikaci Nastavení ladí velmi opatrně|D|10.04.2026 14:22|P|V roce 2007 ještě neexistoval Google Chrome ani Spotify, ve Windows Vista se ale objevily Ovládací panely. Po 19 letech vypadají prakticky stejně, Mic...|X|Windows Vista vyšly před více než 19 lety a mimo jiné přinesly přepracované ovládací panely. Na rozdíl od Windows XP seřadily jednotlivá nastavení do tematických nabídek. Asi nikdo při této změně nečekal, že Ovládací panely budou i v roce 2026 vypadat prakticky totožně, byť většina okolního systému bude využívat zcela rozdílný designový jazyk. Microsoft na změně prý pracuje.
 Hlavně neuspěchat
 March Rogers má mimo jiné na starost právě vzhled systému Windows 11 a na síti X se pochlubil, že Microsoft pracuje na mnoha designových vylepšeních. Mimo jiné by mělo jít právě o problémy s konzistentností. V diskuzi zareagoval i na uživatele, který upozornil právě na zastaralou nabídku Ovládacích panelů.

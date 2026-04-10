@@ -1,4 +1,41 @@
 |T|Chyba|D||P|Něco se pokazilo.|X|'NoneType' object has no attribute 'strip'|E|
+|T|Dubnový akční tarif T-Mobilu nabídne 150 minut, 150 SMS a 5 GB dat za 335 Kč měsíčně|D|10.04.2026 17:45|P||X|T-Mobile i v roce 2026 pokračuje s nabídkou akčního tarifu, s nímž se pokusí oslovit nové zájemce nebo zákazníky přecházející od konkurence. Aktuální výhodný tarif znamená slevu z běžně nabízeného tarifu Next Data 5 GB z aktuální generace tarifů Next (2024). Ten obsahuje 150 volných minut a 150 volných SMS do všech sítí, a k tomu 5 GB dat.
+Operátor nabízí proti běžné ceně 485 Kč měsíčně propagační slevu 150 Kč (sleva 31 %), což znamená, že zákazník bude za uvedené služby po celou dobu využívání tarifu platit měsíční paušál 335 Kč. Tuto nabídku lze aktivovat výhradně na webu operátora nejpozději do 30. dubna 2026 (nebo do dalšího prodloužení platnosti). Tarif lze následně se zvýhodněnou cenu používat po dobu pěti let.
+I po vyčerpání přiděleného objemu dat lze určitým minimalistickým způsobem datově fungovat, a to díky službě „Pořád online“, která je ale rychlostně přiškrcena na 256 kbit/s. Navíc je potřeba ji aktivovat každý měsíc pořád dokola v aplikaci Můj T-Mobile.
+Mezi dlouhodobě sledovanými akčními tarify T-Mobilu jde o jednu z výhodnějších nabídek, ale k odpovídající ceně má stále daleko. Reálná hodnota daného tarifu vzhledem k obsaženým jednotkám je přibližně 240 Kč.
+Akční tarif si tradičně nemůže aktivovat úplně kdokoli, kdo by podle jeho propozic usoudil, že je pro něj cenově zajímavý. Nabídka je určena pouze pro nové zákazníky, zákazníky přecházející se svým mobilním číslem od jiného operátora nebo zákazníky předplacené služby Twist, kteří by chtěli migrovat na paušál.
+Mapujeme historii akčních tarifů T-Mobilu:
+- Únor 2025 až duben 2026: 150 minut, 150 SMS a 5 GB za 335 Kč
+- Leden 2025: 150 minut, 150 SMS a 5 GB za 335 Kč; neomez. minuty i SMS, neomez. data (prvních 5 GB plnou rychlostí, pak 8 Mbit/s) za 595 Kč
+- Listopad, prosinec 2024: neom. minuty a SMS, 8 GB dat (neom. o víkendu) za 495 Kč; neomez. data (prvních 30 GB plnou rychlostí, pak 10 Mbit/s) za 545 Kč
+- Září, říjen 2024: 150 minut, 150 SMS a 5 GB dat za 365 Kč
+- Červenec 2024: neomez. minuty a SMS, 8 GB dat (neomez. o víkendu) za 520 Kč
+- Červen 2024: neomezené minuty, neomezené SMS, 10 GB dat za 520 Kč
+- Květen 2024: 150 minut, 150 SMS a 1 GB za 250 Kč
+- Duben 2024: 150 minut, 150 SMS a 5 GB dat za 345 Kč
+- Březen 2024: neomezené minuty, neomezené SMS, 6 GB dat za 449 Kč
+- Únor 2024: neomezené minuty, neomezené SMS, 1 GB dat za 357 Kč
+- Leden 2024: 150 minut, 150 SMS a 12 GB dat za 487 Kč
+- Listopad, prosinec 2023: 150 minut, 150 SMS a 5 GB dat za 345 Kč
+- Září 2023: neomezené minuty, neomezené SMS, 7 GB dat za 469 Kč
+- Červenec, srpen 2023: neomezené minuty, neomezené SMS, 1 GB dat za 357 Kč
+- Květen, červen 2023: neomezené minuty, neomezené SMS, 3 GB dat za 392 Kč
+- Duben 2023: 150 minut, 150 SMS a 12 GB dat za 499 Kč
+Akční tarif se v nabídkách operátorů objevuje několikrát do roka, občas se mohou měnit jeho parametry i cena. Jeho úkolem je přilákat k operátorovi zejména zákazníky konkurentů, proto se mu v interní hantýrce říká „akviziční tarif“. Aktivuje se obvykle výhradně online prostřednictvím internetu a je určen pouze pro nové zákazníky nebo zákazníky přecházející od jiných operátorů. O co totiž žádný ze tří operátorů bez rozdílu nestojí – že by si jejich stávající zákazníci dosud platící drahé paušály díky akční nabídce o něco snížili svoji měsíční útratu.
+Jaké ceny tarifů považujeme za přiměřené
+(Jde o hypotézu, u českých operátorů žádné takové veřejné tarify neexistují)
+- 500 Kč: neom. data (rychlost min. 10 Mbit/s), neom. minuty + SMS do všech sítí
+- 300 Kč: 10 GB dat, neomezené minuty + SMS do všech sítí
+- 150 Kč: 10 GB dat
+- 150 Kč: neomezené minuty + SMS do všech sítí
+- cena dodatečného 1 GB dat max. 20 Kč
+- cena dodatečné 1 minuty hovoru max. 1 Kč
+- cena dodatečné 1 SMS max. 0,50 Kč
+Jak zjistit skutečnou hodnotu mobilního tarifu u českých operátorů:
+Skutečná hodnota mobilních tarifů v Česku je 50 % jejich ceníkové ceny. Právě takové nabídky dostávají zákazníci odcházející k jinému operátorovi. Podobně jako v supermarketech u slevových akcí se slevová cena nabízená v masovém měřítku stává cenou běžnou. Není důvod, proč platit víc.
+Proto má operátor v nabídce ošetřeno, aby na akční tarif oficiálně nebylo možné přejít z jiného, aktuálně používaného paušálního tarifu. Výjimkou jsou předplacené karty Twist, z nichž vám operátor číslo na akviziční tarif převede. Právě tento postup – převod stávajícího tarifu na Twist kartu a následnou migraci na akční tarif – využívají zájemci o akční nabídku, kteří už u daného operátora jsou a nechtějí přijít o své číslo.
+Další možností je přenesení stávajícího čísla k jinému operátorovi a následný návrat k původnímu operátorovi. Často nejsnazším řešením může být dohoda zákazníka s retenčním oddělením vlastního operátora, kde se dá bez větších problémů dostat na 50 % původní ceníkové ceny tarifu. To je zároveň obecně skutečná hodnota v Česku nabízených tarifů, která zhruba odpovídá i cenovým hladinám v ostatních evropských zemích.
+Aktualizováno 10. dubna 2026 po prodloužení platnosti nabízeného akčního tarifu.|E|
 |T|Záchrana pro přehlížený segment levných notebooků: Parametry všech procesorů Intel Wildcat Lake|D|10.04.2026 17:00|P|Už máme parametry všech modelů procesorů Intel Core 300 „Wildcat Lake“, které oživí segment levných notebooků. Díky nové architektuře taktu až 4,8 GHz...|X|Před časem unikly testy procesorů Intel Wildcat Lake, což bude taková nenápadná, ale důležitá novinka Intelu. Jde totiž o procesory, které mají stejnou technologickou výbavu včetně procesorových jader a 1,8nm procesu jako vyšší procesory Core Ultra 300 Panther Lake, ale bez nákladné čipletové výroby. Přinesou tak konečně moderní CPU se stále slušným jednovláknovým výkonem do levných notebooků. Teď už máme informace o všech modelech.
 Modely a parametry Wildcat Lake
 Wildcat Lake jsou založené na stejné stavbě, jako tradiční mobilní procesory Core řady U – jako procesor s externím čipsetem na stejném pouzdru, k jehož připojení ale není využito žádné pokročilé pouzdření. Jinak se už ale od Panther Lake liší jen nižším počtem jader a slabou konfigurací GPU (a málo výkonnou NPU, takže nepodporují technologie Copilot+ PC). Jejich architekturu jsme probírali zde:

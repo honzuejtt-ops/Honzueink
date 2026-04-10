@@ -175,10 +175,23 @@ def stahni_kurzy_historie():
         result += "EUR|\n"
 
     try:
-        usd_vals = [round(usd_rate + (i - 15) * 0.02, 2) for i in range(30)]
+        # Frankfurter API — zdarma, bez klíče, reálná historická data USD/CZK
+        usd_hist = requests.get(
+            "https://api.frankfurter.app/last30d?base=USD&symbols=CZK",
+            timeout=10).json()
+        # rates je dict {datum: {CZK: hodnota}}, seřadíme podle data
+        usd_vals = [round(v["CZK"], 2) for _, v in sorted(usd_hist["rates"].items())]
         result += "USD|" + ",".join(f"{v:.2f}" for v in usd_vals) + "\n"
     except Exception:
-        result += "USD|\n"
+        try:
+            # Fallback: ECB API (USD vůči CZK přes EUR pivot)
+            ecb_usd_url = "https://data-api.ecb.europa.eu/service/data/EXR/D.USD.CZK.SP00.A?lastNObservations=30&format=jsondata"
+            ecb_usd = requests.get(ecb_usd_url, timeout=10).json()
+            obs_usd = ecb_usd['dataSets'][0]['series']['0:0:0:0:0']['observations']
+            usd_vals = [round(float(obs_usd[str(k)][0]), 2) for k in sorted([int(x) for x in obs_usd.keys()])]
+            result += "USD|" + ",".join(f"{v:.2f}" for v in usd_vals[-30:]) + "\n"
+        except Exception:
+            result += "USD|\n"
 
     try:
         btc_hist = requests.get(

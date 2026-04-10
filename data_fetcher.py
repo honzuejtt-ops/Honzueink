@@ -75,9 +75,10 @@ def stahni_zpravy(rss_url, limit=15):
             if pub_date_el is not None and pub_date_el.text:
                 try:
                     dt = parsedate_to_datetime(pub_date_el.text.strip())
-                    datum_cas = dt.strftime("%-d.%-m. %H:%M")
+                    # Datum s rokem = jednoznačné archivování do správné denní složky
+                    datum_cas = dt.strftime("%d.%m.%Y %H:%M")
                 except Exception:
-                    datum_cas = pub_date_el.text.strip()[:16]
+                    datum_cas = ""  # Neparsovatelné datum → prázdné, archivuje se jako dnes
 
             perex_raw = item.find('description').text.strip() if item.find('description') is not None else ""
             perex = BeautifulSoup(perex_raw, "html.parser").get_text()
@@ -246,10 +247,13 @@ def stahni_horoskopy():
         res += f"|Z|{nazvy_cz[i]}|T|{text}|E|\n"
     return res
 
-def stahni_zpravy_multi(zdroje, celkovy_limit=10):
-    """Stáhne zprávy z více RSS zdrojů, deduplikuje podle titulku a zaloguje průběh."""
+def stahni_zpravy_multi(zdroje, celkovy_limit=10, exclude_titulky=None):
+    """Stáhne zprávy z více RSS zdrojů, deduplikuje podle titulku a zaloguje průběh.
+    exclude_titulky: set titulků které se mají přeskočit (cross-category deduplikace).
+    """
     vybrane = []  # (dt, titulek, blok)
-    titulky = set()
+    # Inicializujeme titulky rovnou s vyloučenými - při shodě se blok přeskočí
+    titulky = set(exclude_titulky) if exclude_titulky else set()
     pocet_unikat = 0
     for rss_url, limit_per_source in zdroje:
         if pocet_unikat >= celkovy_limit:
@@ -484,10 +488,15 @@ if __name__ == "__main__":
         ("https://ct24.ceskatelevize.cz/rss/svet", 15),
         ("https://www.novinky.cz/rss/zahranicni", 10),
     ], celkovy_limit=20)
+
+    # Cross-category deduplikace: zprávy ze světa se neobjeví v ČR sekci
+    svet_titulky = {b["titulek"] for b in extrahuj_bloky(svet_data)}
+    print(f"  Světové zprávy: {len(svet_titulky)} unikátních titulků (budou vynechány v ČR)")
+
     cr_data = stahni_zpravy_multi([
         ("https://ct24.ceskatelevize.cz/rss/domaci", 15),
         ("https://www.novinky.cz/rss/domaci", 10),
-    ], celkovy_limit=20)
+    ], celkovy_limit=20, exclude_titulky=svet_titulky)
     tech_data = stahni_zpravy_multi([
         ("https://www.lupa.cz/rss/clanky/", 8),
         ("https://www.cnews.cz/feed/", 8),

@@ -1,3 +1,109 @@
+|T|Blíží se finále mise Artemis II. Průlet zemskou atmosférou bude kritický|D|10.04.2026 13:05|P|Program Artemis není jen pokračováním legendárního programu Apollo; je to nová éra, ve které se lidstvo vrací k Měsíci s cílem vybudovat trvalou příto...|X|Článek
+Přistání modulu Orion se čtyřmi astronauty na palubě se očekává v sobotu ve 2:07 SELČ ve vodách Tichého oceánu nedaleko San Diega. V cílové oblasti bude s předstihem čekat loď amerického námořnictva USS John P. Murtha. Potápěči zajistí kabinu, připojí k ní nafukovací plošinu („přední verandu“) a astronauti budou do dvou hodin od přistání vrtulníkem dopraveni na loď k lékařské prohlídce. Orion bude následně vtažen do zaplavitelného doku lodi.
+Více než devět dní trvající mise Artemis II (přesněji má trvat 9 dní, 1 hodinu a 32 minut) má za úkol komplexně otestovat loď Orion a raketu SLS pro budoucí mise, završené přistáním lidí a vybudováním základny na měsíčním povrchu.
+(Pozn.: všechny konkrétní časy v tomto článku jsou uvedeny v SELČ; dny mise odpovídají tamnímu času.)
+Na palubě lodi typu Orion, kterou sama posádka loni v září pojmenovala Integrity, cestují čtyři vyslanci lidstva: velitel Reid Wiseman, pilot Victor Glover (první afroamerický astronaut u Měsíce) a dva letoví specialisté: Christina Kochová (první žena u Měsíce) a Kanaďan Jeremy Hansen (první neamerický astronaut u Měsíce). Projděme si nyní podrobněji jednotlivé základní fáze letu.
+1. Start a „tanec“ u Země (1.–2. den mise)
+Vše začalo na Floridě v Kennedyho vesmírném středisku. Obří raketa SLS (Space Launch System), generující tah přes 39 milionů newtonů (přibližně čtyři miliony kilogramů), se odlepila z jeho rampy 39B a vynesla loď Orion na oběžnou dráhu kolem Země.
+* 2. dubna, 0:35 – Start mise Artemis II z rampy 39B.
+* 2. dubna, 0:37 – Oddělení pomocných raket SRB.
+* 2. dubna, 0:43 – Vypnutí hlavních motorů SLS (MECO) a oddělení centrálního stupně.
+* 2. dubna, 0:59 – Rozvinutí 4 „křídel“ solárních panelů lodi Orion.
+* 2. dubna, 1:24 – Zážeh horního stupně SLS zvaného ICPS (Interim Cryogenic Propulsion Stage), který loď vynesl na stabilní eliptickou orbitu s perigeem ve výšce 160 km.
+* 2. dubna, 2:23 – Druhý zážeh ICPS, který Orion posunul na vysokou eliptickou dráhu (HEO) s vrcholem ve vzdálenosti asi 71 000 km od Země.
+Tato fáze u Země byla kritická pro prověření systémů podpory života. Proběhla zde také unikátní demonstrace blízkých operací (Prox Ops), při níž Victor Glover manuálně pilotoval Orion v blízkosti vyhořelého stupně ICPS. Tento nácvik je klíčový pro budoucí spojování lodí a modulů na oběžné dráze Měsíce.
+* 2. dubna, 3:59 – Proběhlo oddělení Orionu od ICPS a zahájení testů manuálního řízení.
+* 2. dubna, 5:10 – Ukončení Prox Ops a návrat k automatickému letu.
+* 2. dubna, 14:19 – Krátký zážeh pro úpravu perigea před odletem k Měsíci.
+2. Cesta k našemu nejbližšímu sousedovi (2.–5. den mise)
+Poté, co pozemní týmy potvrdily stoprocentní stav lodi, přišel okamžik pravdy: manévr zvaný Trans-lunární injekce (TLI). Evropský servisní modul (ESM) zažehl svůj hlavní motor a poslal posádku na cestu po tzv. volné návratové dráze. Gravitace Měsíce totiž během průletu po takové dráze loď přirozeně „vystřelí“ zpět k Zemi bez nutnosti dalšího velkého zážehu motoru.
+Po TLI také následovala ukázka manuálního pilotování v „hlubokém“ vesmíru, a to v sobotu 4. dubna. Během 41 minut posádka testovala různé režimy trysek a pohyblivost lodi Orion ve volném prostoru.
+* 3. dubna, 2:12 – Zážeh TLI trvající téměř 6 minut, nasměrování k Měsíci.
+* 4. dubna, 0:42 – Na tento čas byla naplánována první korekce dráhy (OTC-1), která byla nakonec zrušena pro vysokou přesnost letu.
+* 5. dubna, 0:47 – Druhá korekce dráhy (OTC-2) pro upřesnění příletu k Měsíci.
+* 6. dubna, 5:58 – Třetí a finální korekce dráhy (OTC-3) před vstupem do lunární sféry vlivu.
+Během přeletu posádka testovala skafandry Orion Crew Survival System a prováděla experimenty jako AVATAR (simulace reakcí orgánů na radiaci) nebo ARCHeR (sledování biorytmů a spánku).
+Astronauti si také museli poradit s technickými potížemi: toaleta lodi Orion (UWMS – Universal Waste Management System) vykazovala nestabilitu, některé její části zamrzaly a nakonec se z ní linul nepříjemný zápach spáleniny, což posádku občas nutilo využívat záložní systémy s vaky a nálevkami. „Vesmírná instalatérka“ Christina Kochová však nakonec tento problém vyřešila.
+3. Rekordy a odvrácená strana Měsíce (6. den mise)
+Šestý letový den byl vrcholem mise. Orion vstoupil do sféry, kde dominovala gravitace Měsíce.
+* 6. dubna, 6:41 – Orion vstoupil do lunární sféry gravitačního vlivu.
+* 6. dubna, 19:56 – Došlo k překonání vzdálenostního rekordu mise Apollo 13 (400 171 km). Artemis II se už tehdy stala od Země nejvzdálenější pilotovanou misí v historii.
+* 7. dubna, 0:46 – Začátek rádiového klidu (přibližně 40 minut). Loď zmizela za (od Země) odvrácenou stranou Měsíce.
+* 7. dubna, 1:02 – Nastalo nejbližší přiblížení k povrchu Měsíce ve výšce přibližně 6 545 km.
+* 7. dubna, 1:07 – Dosažena maximální vzdálenost od Země (cca 406 771 km).
+* 7. dubna, 1:24 – Obnovení signálu a pozorování úchvatného východu Země zpoza Měsíce.
+Během průletu posádka fotografovala cca 30 vědeckých cílů, včetně pánví Orientale a Hertzsprung. Lidské oko dokáže zachytit barevné nuance (odstíny modré a hnědé), které automatickým sondám unikají a které napovídají mnohé o mineralogickém složení povrchu. Astronauti také navrhli pojmenovat dva menší krátery jako Integrity (podle jména lodi) a Carroll (na počest zesnulé manželky velitele Wisemana).
+Fascinujícím momentem bylo o hodinu později zatmění Slunce (úvodní video našeho článku), kdy se z pohledu Orionu sluneční disk schoval za Měsíc, což astronautům umožnilo asi hodinu studovat sluneční korónu a záblesky dopadů meteoritů na temnou část Měsíce.
+* 7. dubna, 2:35 – Začátek pozorování zatmění Slunce (trvalo 57 minut).
+* 7. dubna, 3:32 – Konec pozorování zatmění.
+4. Návrat domů a průkopnický vesmírný rozhovor (7.–10. den mise)
+Cesta zpět trvá již čtvrtý den. Posádka si během návratu užila zasloužený odpočinek, ale také provedla historicky první komunikační spojení mezi pilotovanou lodí u Měsíce a Mezinárodní vesmírnou stanicí (ISS), kdy si Christina Kochová popovídala se svou „astro-sestrou“ Jessicou Meirovou, se kterou se v roce 2019 „prošla“ ve skafandrech ve volném kosmickém prostoru mimo ISS.
+Posádka také podnikla řadu dalších testů a experimentů, např. sledování radiace a kontrolu ventilace, a začala uklízet kokpit a ukládat vybavení na zpáteční cestu.
+* 7. dubna kolem 19:25 – Orion opouští gravitační sféru Měsíce a směřuje k Zemi.
+* 7. dubna, 20:35 až 21:05 – První rádiový most Orion – ISS.
+* 8. dubna, 2:03 – První korekce návratové dráhy (RTC-1).
+* 10. dubna, 5:08 – Druhá korekce návratové dráhy (RTC-2).
+The Orion spacecraft’s thrusters ignited for the second return trajectory correction burn to fine‑tune the spacecraft’s path toward Earth.
+— NASA Artemis (@NASAArtemis) April 10, 2026
+Splashdown of Artemis II is expected around 8:07pm ET on Friday, April 10 (0007 UTC on Saturday, April 11), off the coast of San Diego. pic.twitter.com/VuRw7IVqpP
+Co dále (v pátek večer našeho času) nastane:
+* 10. dubna, 19:50 – Začátek konfigurace kabiny Orion pro vstup do atmosféry.
+* 10. dubna, 21:08 – Třetí a finální korekce dráhy (RTC-3).
+Na palubě nechyběla ani trocha zábavy, mj. v podobě maskota jménem Rise (plyšová figurka Měsíce s kšiltovkou v podobě Země, která obsahuje paměťovou kartu s 5 647 889 jmény pozemšťanů), kterého navrhl osmiletý školák Lucas Ye. Posádka si také pochutnávala na menu zahrnujícím 189 položek, od hovězího až po kanadský javorový sirup.
+5. Finále: Ohnivý sestup atmosférou, Pacifik jako konečný cíl (10. den mise)
+Závěrečná fáze bude asi tradičně tou nejdramatičtější v rámci každé pilotované mise. Orion vletí do atmosféry rychlostí přibližně 38 400 km/h.
+Díky zkušenostem s chováním tepelného štítu při předchozí (bezpilotní) misi Artemis I, jak připomněl portál Space.com, NASA zvolila strmější profil sestupu, aby loď strávila ve fázi „vysokého žáru“ méně času (loď se tak vyhne mj. tradiční fázi částečného odražení od atmosféry, které je často používáno při návratu kosmických lodí s lidskou posádkou), přestože bude zřejmě vystavena nárazově vyšším teplotám, což by ale bezpečnost posádky nemělo ohrozit.
+V nejvíce horké fázi sestupu kosmické lodi se atmosféra kolem ní změní v horké plazma, které agresivně působí zejména na tepelný štít lodi.
+Klíčové parametry návratu podle NASA:
+● Maximální teplota plazmatu: 2700–2800 °C (nárazově možná až ~3800 °C).
+● Tepelný štít: Využívá ablativní materiál Avcoat, který se při vysokých teplotách postupně odpařuje, a tím odvádí teplo pryč od kabiny s posádkou.
+● Komunikační blackout: Vrstva horkých ionizovaných plynů (plazmatu) kolem lodi na cca 6 minut zcela zablokuje rádiové spojení s řídicím střediskem.
+Moon joy [noun]
+— NASA (@NASA) April 10, 2026
+the feeling of intense happiness and excitement that only comes from a mission to the Moon
+The Artemis II crew bring us endless Moon joy. pic.twitter.com/7vrS1lLd0C
+Následné časové údaje jsou přibližné:
+* 11. dubna, 1:33 – Oddělení velitelského modulu od Evropského servisního modulu, který shoří v atmosféře. Velitelský modul pak zapálí korekční trysky, které ho nasměrují na dráhu poměrně rychlého sestupu.
+* 11. dubna, 1:53 – Vstup do atmosféry ve výšce 122 km. Astronauti budou vystaveni přetížení až 4 G, nouzově možná až kolem 7-7,5 G.
+* 11. dubna, 1:56 – Ve výšce 11 km bude odhozen přední kryt pomocí 3 malých extrakčních padáků a poté začne pracovní sekvence dalších 8 padáků (2 brzdicí/stabilizační + 3 pomocné/pilotní + 3 hlavní/velké oranžovo-bílé padáky), které postupně zbrzdí původně nadzvukový pád Orionu na přijatelných cca 27–30 km/h.
+* 11. dubna, 2:07 – Velitelský modul s posádkou dopadne do Tichého oceánu zhruba 100 km od San Diega.
+* 11. dubna, 10:30 – Tisková konference v Johnson Space Center.
+Mise Artemis II díky pečlivému otestování nové lodi a chování posádky za letu prokázala, že lidstvo je připraveno na další velké kroky: otestování lunárního modulu na oběžné dráze kolem Země (plánováno na rok 2027 při misi Artemis III) a samotné přistání na Měsíci (mělo by proběhnout v roce 2028 jako hlavní cíl mise Artemis I...
+(Pokracovani na webu)|E|
+|T|S Američany má za Írán vyjednávat Arakčí a Kalíbáf|D|10.04.2026 13:05|P|Íránská delegace v čele s ministrem zahraničí Abbásem Arakčím a předsedou parlamentu Mohammadem-Bakrem Kalíbáfem dorazila podle listu The Wall Street ...|X|Článek
+Prvním diplomatickým vítězstvím Pákistánu – kromě toho, že se rozhovory v Islámábádu po úterním uzavření dvoutýdenního příměří vůbec uskuteční – je podle agentury Reuters vyřazení Arakčího a Kalíbáfa z amerického, ale především izraelského seznamu cílů. Islámábád se o to postaral už před časem, nejspíš kvůli obavám, aby bylo na íránské straně s kým jednat.
+Arakčí i Kalíbaf mají dohromady podle listu The Wall Street Journal v Íránu podporu jak reformátorů, tak konzervativců i prakticky všemocných revolučních gard.
+Arakčí (63), syn íránského obchodníka s koberci z Isfahánu, bojoval v íránsko-irácké válce, ale stal se z něj kariérní diplomat. Působil jako velvyslanec ve Finsku a v Japonsku.
+Diplomatický přístup ho neopouští ani v rámci íránské politické scény. Je znám tím, že vychází dobře jak s reformátory kolem prezidenta Masúda Pezeškjána, tak konzervativci, kteří se shromáždili okolo někdejšího nejvyššího íránského vůdce Alího Chameneího, jenž ale přišel o život v první den americko-izraelských úderů na Írán.
+S vyjednáváním s Američany má Arakčí bohaté zkušenosti. Účastnil se rozhovorů o dohodě o íránském jaderném programu z roku 2015, kterou ale Trump během svého prvního mandátu vypověděl. Dalších rozhovorů se zástupci USA se šéf íránské diplomacie zúčastnil loni v dubnu a v květnu a později vedl také jednání o íránském jaderném programu rovněž s Británií, Německem a Francií.
+Západní diplomaté podle deníku The Wall Street Journal oceňují jeho profesionalitu, klid a pragmatismus. Během jednání o jaderném programu překvapil znalostmi technických detailů.
+Kalíbáf velel divizi
+Arakčímu bude po boku stát šéf parlamentu Mohammad-Bakr Kalíbaf (64). Loni v létě byl znovuzvolen na šesté funkční období v řadě. Patří mezi konzervativce, kteří se zasazují o ideologické principy z raných dnů islámské revoluce v roce 1979.
+Má bohaté vojenské zkušenosti: aktivně se zúčastnil irácko-íránské války, nejprve velel brigádě, později divizi. V letech 1997 až 2000 byl velitelem letectva íránských revolučních gard, poté až do roku 2005 zastával funkci šéfa policie.
+Kalíbafa, který byl od roku 2005 do roku 2017 starostou Teheránu, opakovaně kritizovali za korupci, ale nikdy proti němu nebylo vzneseno žádné formální obvinění. Nejostřejším výzvám k rezignaci tak čelil v roce 2022, kdy se i se svou rodinou vydal během ramadánu na nákupy do Turecka.
+Očekává se, že americkou delegaci povede viceprezident J. D. Vance, chybět by neměli také „univerzální“ vyjednavač Steve Witkoff a zeť amerického prezidenta Donalda Trumpa Jared Kushner.
+Zatímco s Witkoffem a Kushnerem se íránští vyjednavači opakovaně setkali, s viceprezidentem Vancem nemají prakticky žádné zkušenosti.|E|
+|T|Nejvyšší správní soud zasáhl do sporu o dotaci pro firmu z Agrofertu|D|10.04.2026 12:58|P|Nejvyšší správní soud (NSS) nařídil znovu otevřít spor kolem dotace 1,6 milionu korun z evropských fondů pro drůbežářský podnik Schrom Farms z holding...|X|Článek
+Dotace sloužila k modernizaci farmy v Bílovci na Novojičínsku. Firma ji dostala v roce 2018. Státní zemědělský intervenční fond později zahájil řízení o vrácení dotace a ministerstvo zemědělství potvrdilo, že ji firma musí vrátit.
+Důvodem byl střet zájmů tehdejšího premiéra Andreje Babiše (ANO), který nyní stojí znovu v čele vlády. Agrofert měl v době prvního premiérského působení vložený ve svěřenském fondu, podle auditu Evropské komise ale holding nadále ovládal, což později vedlo k řadě soudních sporů mezi firmami a státem.
+V případě Schrom Farms dvakrát zasáhl městský soud ve prospěch firmy. Nejprve zrušil rozhodnutí o vrácení dotace a uložil zahájit jako první krok přezkumné řízení. Podruhé zrušil rozhodnutí o zahájení přezkumného řízení, a to právě kvůli opožděnosti.
+Ministerstvo zemědělství v kasační stížnosti poukázalo na rozpor mezi evropským nařízením, které stanovuje čtyřletou lhůtu, a zákonem o Státním zemědělském intervenčním fondu, podle kterého fond zahájí řízení o vrácení dotace „nejpozději do deseti let ode dne jejího vyplacení“. Městský soud se řídil čtyřletou lhůtou, proto řízení považoval za opožděné.
+„Tyto závěry považuje Nejvyšší správní soud za zkratkovité a neodůvodněné,“ stojí v aktuálním rozsudku.
+Městský soud se nevypořádal se všemi okolnostmi a argumenty ministerstva zemědělství. NSS proto jeho rozhodnutí pokládal za nepřezkoumatelné, zrušil ho a spor vrátil k městskému soudu. NSS sice mohl sám vynést verdikt, ale udělat to nechtěl, protože takový postup by mohl vést „nepřípustně k překvapivému rozhodnutí“.
+Dotacemi pro firmy z Agrofertu se správní soudy zabývají opakovaně. Ze série rozhodnutí NSS plyne, že Babišův střet zájmů v době jeho prvního premiérského působení znemožňoval firmám z koncernu Agrofert nejenom přijímat dotace, ale také ucházet se o zakázky malého rozsahu z veřejných zdrojů.
+Po svém opětovném jmenování do čela vlády vložil Babiš letos v únoru veškeré akcie holdingu Agrofert do soukromého svěřenského fondu RSVP Trust. Potenciální střet zájmů tím pokládá za vyřešený, opozice to ale zpochybňuje.
+Ministerstvo pro místní rozvoj v březnu informovalo Evropskou komisi, že o případném Babišově střetu zájmů za aktuálních podmínek rozhodne úřad vyplácející dotace až poté, co případně holding Agrofert o finanční podporu zažádá.|E|
+|T|Za brutální útok na pražském sídlišti poslal soud muže do vazby|D|10.04.2026 12:52|P|Soud v Praze v pátek poslal do vazby 36letého muže obviněného z brutálního napadení o rok mladšího muže na sídlišti v Kobylisích. Napadený skončil v n...|X|Článek
+„Šestatřicetiletý muž byl obviněn z trestného činu těžké ublížení na zdraví a výtržnictví. Dopoledne rozhodl Obvodní soud pro Prahu 8 o jeho vzetí do vazby,“ informovala policie na síti X.
+Samotný incident se stal minulý týden ve čtvrtek ve Frýdlantské ulici. Útok se odehrál v prostoru mezi vchody panelových domů, kde se v tu dobu běžně pohybují lidé.
+Násilník oběť opakovaně udeřil do hlavy, napadený utrpěl těžké poranění mozku a zlomeniny v obličeji a po operaci zůstává v ohrožení života. Do vyšetřování se zapojilo i oddělení vražd.
+Pachatel nechal zraněného muže ležet na místě a utekl. Následovalo vyhlášení pátrání, načež policie podezřelého (ročník 1990) v pondělí dopadla.
+Podle prvotních informací se mohlo jednat o náhodný incident, po zadržení se ale podezřelý přiznal k tomu, že napadeného znal a útočil kvůli křivdě z minulosti.|E|
+|T|V Prostějově opravují kašnu, poškozené dno propouštělo vodu|D|10.04.2026 12:49|P|V Prostějově začala oprava kašny na náměstí Spojenců, která má poškozené dno a prosakuje z ní voda. Kvůli špatnému technickému stavu kašna proto nemoh...|X|Článek
+„Komplexní rekonstrukce kašny na náměstí Spojenců byla naposledy provedena v roce 2008, kdy proběhly práce s celkovými náklady přibližně 1,2 milionu korun. Od té doby město pravidelně provádí menší opravy vnitřního betonového povrchu a obnovu nátěru, které jsou nutné pro každoroční jarní uvedení kašny do provozu,“ uvedl Pospíšil.
+„Vůbec se tomu nedivím, že se kašna opravuje každý rok, protože když se na podzim vypustí, stane se doslova cvičištěm pro mládež. Když tam někdo pustí malé děcko, to asi ten povrch nerozdupe, ale často tam je vidět mladíky předvádět bůhvíjaké kousky. Sotva se to ale může uhlídat,“ podělil se muž, který bydlí nedaleko.
+Loni město objednalo pouze provizorní opravu, která špatný technický stav kašny vyřešila jen dočasně. „Důvodem nynější opravy je především poškození dna kašny, kvůli němuž by při jejím napuštění docházelo k úniku vody. Bez provedení opravy by nebylo možné kašnu v letošním roce zprovoznit,“ vysvětlil Pospíšil.
+Odborníci z kašny odstraní všechny poškozené vrstvy a celou ji upraví. Zakázka zahrnuje také opravu obložení kašny a pročištění trysek. „Po dokončení prací by měla být kašna opět připravena k provozu a sloužit návštěvníkům i obyvatelům města během nadcházející sezony,“ doplnil primátor František Jura (ANO).|E|
 |T|Dolce & Gabbana bez Gabbany. Zakladatel rezignoval, firma hledá cestu z dluhů|D|10.4. 12:32|P|Konec jedné éry. Stefano Gabbana, spoluzakladatel módního domu Dolce & Gabbana, rezignoval na funkci předsedy společnosti. K samotné rezignaci došlo u...|X|Článek
 Třiašedesátiletý módní návrhář Gabbana vlastní stejně jako jeho bývalý partner, sedmašedesátiletý Domenico Dolce, čtyřicetiprocentní podíl ve firmě, kterou společně před 41 lety založili. Obchodními partnery zůstali i poté, co se před dvaceti lety rozešli. Zbývajících 20 procent drží Dolceho rodina.
 Funkce předsedy se v lednu ujal Alfonso Dolce, Domenicův bratr a současný generální ředitel. Management má posílit také Stefano Cantino, bývalý generální ředitel Gucci.
@@ -44,6 +150,23 @@ Státům pod nálety íránských dronů Ukrajina nabídla levnější řešení
 „V těch zemích, které nám otevřely své systémy protivzdušné obrany, naši experti dokázali velmi rychle poradit, jak jejich systémy posílit. V některých případech jsme se přímo podělili o své zkušenosti s reálnou obranou,“ citoval prezidentova slova web Mezha.
 Zelenskyj neprozradil konkrétní státy, ve kterých se Ukrajinci zapojili do obrany. Nicméně už na konci března podepsal smlouvy na bezpečnostní spolupráci se Saúdským královstvím, Katarem a Spojenými arabskými emiráty.
 Už dříve však uvedl, že na Blízký východ odjelo 228 dronových expertů, za což země zmítaná konfliktem s Ruskem získala zbraně na ochranu energetické infrastruktury, ropu a v některých případech i finanční dohody.|E|
+|T|Aplikaci Telegram v Rusku téměř úplně zablokovaly tamní úřady|D|10.04.2026 10:56|P|Ruské úřady v pátek téměř úplně zablokovaly komunikační platformu Telegram. Úroveň anomálií, svědčící o blokování telegramu, k ránu dosáhla 95 procent...|X|Ruské úřady v pátek téměř úplně zablokovaly komunikační platformu Telegram. Úroveň anomálií, svědčící o blokování telegramu, k ránu dosáhla 95 procent, informoval server Agentstvo. Ruské úřady podle portálu nyní blokují Telegram dokonce přísněji než západní aplikace pro zasílání zpráv WhatsApp nebo Signal.
+O tom, že ruské úřady zesílily blokování Telegramu bezmála na sto procent, informoval podle serveru The Moscow Times také Michail Klimarev z nevládní Společnosti na obranu internetu. Zatímco na konci března se úroveň výpadků pohybovala okolo 80 procent, nyní dosáhla 95 procent.
+„Zdá se, že Telegram úplně zablokovali na území Ruska,“ usoudil Klimarev, i když připustil, že údajů je zatím příliš málo, než aby se dal vytvořit úplný obraz situace.
+Jde o zatím nejsilnější blokování platformy od začátku roku, napsal portál. Stovky lidí, především z Moskvy, Petrohradu a Samarské oblasti, si stěžují, že nemohou zasílat, ani dostávat zprávy a stahovat obsah.
+Cenzurní úřad Roskomnadzor začal blokovat Telegram v létě 2025 pod záminkou boje proti podvodníkům a snahám zapojit Rusy do sabotáží. Nejprve omezil volání, později přeposílání zpráv. Letos v únoru regulátor blokování přitvrdil a obvinil Telegram, že nespolupracuje s ruskými úřady a nepřijímá dostatečná opatření proti zneužívání platformy.
+Zakladatel Telegramu vyzývá k „digitálnímu odporu“
+V dubnu dostupnost Telegramu v Rusku klesla na pětinu a provoz na platformě poklesl na desetinu. Na zablokování Telegramu prý naléhaly silové rezorty, ale mnozí Rusové nadále platformu používají díky službě vzdáleného připojení (VPN), zakladatel Telegramu Pavel Durov odhadl jejich počet na 65 milionů lidí.
+Durov také vybízel ke kladení „digitálního odporu“ a vydal aktualizaci, která pomáhá obcházet blokování tím, že maskuje provoz Telegramu pod prohlížečem Chrome.
+O tom, že bezmála polovina Rusů nadále používá Telegram, svědčí i údaje z průzkumu nezávislého střediska Levada, dodaly The Moscow Times.
+Blokování je nezbytné, tvrdí Rusové
+Ruští představitelé tvrdí, že potírání VPN a komunikačních aplikací, jako jsou WhatsApp a Telegram, je nezbytné z bezpečnostních důvodů, protože Rusko čelí smrtícím útokům ukrajinských dronů hluboko na svém území i údajným pokusům o sabotáž ze strany západních zpravodajských služeb.
+Rusko zpomalilo Telegram, který má více než miliardu aktivních uživatelů a je široce používán i na Ukrajině. S Durovem vede trestní řízení kvůli obviněním z terorismu.
+Ruští představitelé tvrdí, že aplikaci infiltrovaly zpravodajské služby Ukrajiny a členských států NATO a že kvůli tomu zemřeli ruští vojáci. Telegram tato tvrzení popřel a uvedl, že Moskva se snaží donutit Rusy používat státem podporovanou komunikační aplikaci MAX. Snaha Kremlu prosadit tuto aplikaci některé Rusy pobouřila a někteří komentátoři dávají pokles obliby ruského vládce Vladimira Putina právě do souvislosti s blokováním Telegramu a obecněji internetu.
+Internet a Telegram v Rusku podle pozorovatelů nahradily nezávislá média, které úřady přiměly skončit po ruské invazi na Ukrajinu. Válka pokračující pátým rokem zesílila represe, které mají umlčet veškeré projevy nesouhlasu.
+Reakce Zelenského
+Ukrajinský prezident Volodymyr Zelenskyj míní, že blokování Telegramu v Rusku by mohlo souviset s preventivním umlčením kritiků před další nepopulární mobilizací, anebo s přípravami na ukončení války, ve které Moskva nedosáhla svých cílů.
+„Proč Rusové zavírají Telegram? Myslím, že kvůli tomu, aby přijali nepopulární rozhodnutí. Možná o ukončení války, anebo naopak o jejím vystupňování, kdy budou ještě potřebovat velkou mobilizaci. Pak lidé z Moskvy a Petrohradu půjdou na frontu a zpět do Moskvy a Petrohradu se budou vracet mrtvoly,“ řekl Zelenskyj podle agentury Unian. Připustil, že kromě obou zmíněných možností mohou být ve hře i další důvody.|E|
 |T|Rada EU schválila český plán na využití fondu SAFE pro vojenské účely|D|10.4. 10:29|P|Rada EU, která zastupuje členské státy, oznámila, že schválila český plán na využití prostředků z evropského finančního nástroje SAFE, který byl zříze...|X|Rada EU, která zastupuje členské státy, oznámila, že schválila český plán na využití prostředků z evropského finančního nástroje SAFE, který byl zřízen loni a umožňuje půjčky na vojenské vybavení. Česká republika může využít částku 2,06 miliardy eur (50,3 miliardy korun). Česká strana dokument ještě v lednu upravovala, proto se schvalování protáhlo.
 Rada schválila i francouzský plán. Jediný plán, který tedy stále čeká na posouzení od Evropské komise a následný souhlas Rady EU, je plán Maďarska.
 Podrobnosti připravujeme.|E|

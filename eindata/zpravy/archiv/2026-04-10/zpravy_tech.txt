@@ -1,4 +1,198 @@
 |T|Chyba|D||P|Něco se pokazilo.|X|'NoneType' object has no attribute 'strip'|E|
+|T|Ovládací panely prý z Windows nadobro zmizí, Microsoft aplikaci Nastavení ladí velmi opatrně|D|10.04.2026 14:22|P|V roce 2007 ještě neexistoval Google Chrome ani Spotify, ve Windows Vista se ale objevily Ovládací panely. Po 19 letech vypadají prakticky stejně, Mic...|X|Windows Vista vyšly před více než 19 lety a mimo jiné přinesly přepracované ovládací panely. Na rozdíl od Windows XP seřadily jednotlivá nastavení do tematických nabídek. Asi nikdo při této změně nečekal, že Ovládací panely budou i v roce 2026 vypadat prakticky totožně, byť většina okolního systému bude využívat zcela rozdílný designový jazyk. Microsoft na změně prý pracuje.
+Hlavně neuspěchat
+March Rogers má mimo jiné na starost právě vzhled systému Windows 11 a na síti X se pochlubil, že Microsoft pracuje na mnoha designových vylepšeních. Mimo jiné by mělo jít právě o problémy s konzistentností. V diskuzi zareagoval i na uživatele, který upozornil právě na zastaralou nabídku Ovládacích panelů.
+Vypíchnul konkrétně síťová nastavení a konfiguraci tiskáren. Rogers odpověděl: „Postupně převádíme všechny staré prvky Ovládacích panelů do moderní aplikace Nastavení. Děláme to opatrně, protože existuje mnoho různých síťových a tiskových zařízení a ovladačů, u kterých musíme zajistit, že se během tohoto procesu nic neporuší.“
+Je dobře, že Microsoft ladí svůj systém opravdu pečlivě a nesnaží se nic uspěchat. Na Ovládací panely, které nekorespondují se zbytkem systému, zatím uživatelé upozorňují jen od Windows 8. Nyní to ale vypadá, že se vše chýlí ke zdárnému konci, a Ovládacích panelů se zbavíme nadobro. O konfiguraci systému, periferií či aplikací se bude starat již pouze perfektně vyladěné a přehledné Nastavení.
+Zdroj: Techspot|E|
+|T|Anthropic se lekl vlastní AI a prozatím ji nezveřejní. Mythos by ohrozil všechny současné systémy|D|10.04.2026 13:50|P|Model Claude Mythos Preview se naučil chyby v kódu nejen hledat, ale především je velmi efektivně zneužívat. Našel 27 let starou chybu v systému, kter...|X|Společnost Anthropic se pochlubila novým modelem Claude Mythos Preview, který je podle všeho nejschopnější AI v oblasti kybernetické bezpečnosti. Mythos dokáže autonomně vyhledávat bezpečnostní zranitelnosti v jakémkoliv kódu, případně je i zneužít. Kvůli obavám z možného zneužití Anthropic tento model veřejně nepublikuje a místo toho spouští Project Glasswing. V rámci něj nabídne Claude Mythos velkým technologickým firmám a open-source vývojářům.
+Až příliš chytrý
+Předchozí modely jako Opus 4.6 uměly zranitelnosti hledat, ale úspěšnost při jejich zneužití se blížila nule. Mythos Preview to ale mění. Výzkumníci nabídli stejnou sadu zranitelností v prohlížeči Firefox oběma modelům Opus 4.6 a Claude Mythos Preview. Prvnímu z nich se reálné zneužití chyb povedlo 2× z několika stovek pokusů, naopak Mythos uspěl 181×.
+Claude Mythos Preview v posledních týdnech rovněž procházel některé aplikace či systémy s otevřeným zdrojovým kódem a hledal v nich chyby. V systému OpenBSD, který je považován za jeden z nejbezpečnějších, našel 27 let starou chybu v implementaci TCP protokolu. Ta umožňuje shodit libovolný počítač odesláním několika upravených packetů.
+V knihovně FFmpeg odhalil Mythos 16 let starou chybu v kodeku H.264. V linuxovém kernelu se povedlo zřetězit několik chyb a získat tím plná administrátorská oprávnění v systému. Anthropic dále uvádí, že v každém ze současných webových prohlížečů našel Mythos několik kritických zranitelností, které následně dokázal zneužít.
+Pokud by byl Claude Mythos Preview publikován se současnými schopnostmi, ohrozilo by to kyberbezpečnost na všech úrovních. V ohrožení by se ocitly běžné aplikace, ale i kritická infrastruktura. I proto zatím Anthropic svůj poslední model nebude zveřejňovat a zpřístupní jej vybraným technologickým společnostem. Ty jej budou moci využít k prověření a opravám svých aplikací a systémů. Anthropic jim k tomu rozdá 100 milionů v kreditech do své platformy. Další 4 miliony potom Anthropic rozdá mezi open-source vývojáře.
+Zdroj: Anthropic|E|
+|T|DOPLNĚNO: Kvůli financování ČT a ČRo vznikne pracovní skupina. Stát je spojovat nebude|D|10.04.2026 13:48|P|Ministr kultury Oto Klempíř se v pátek sešel s generálním ředitelem České televize Hynkem Chudárkem a ředitelem Českého rozhlasu Reném Zavoralem. Před...|X|Ministr kultury Oto Klempíř se v pátek sešel s generálním ředitelem České televize Hynkem Chudárkem a ředitelem Českého rozhlasu Reném Zavoralem. Představil jim hlavní teze nového zákona, který na ministerstvu vzniká. Koncesionářské poplatky mají být zrušeny a nahrazeny platbou ze státního rozpočtu s valorizačním mechanismem.
+Chystaný zákon stojí podle Klempíře na čtyřech klíčových bodech. Česká televize a Český rozhlas zůstanou samostatnými institucemi, o jejich slučování se neuvažuje. Koncesionářské poplatky se zruší a nahradí je platba ze státního rozpočtu. Zákon má zároveň zavést mechanismus zajišťující valorizaci financování a dostatečnou předvídatelnost. Kontrolu nad fungováním médií budou i nadále vykonávat mediální rady.
+Ministr se s řediteli dohodl na pravidelných konzultacích během přípravy zákona. „Jakmile návrh schválí koaliční rada, nahrajeme jej do systému a projde standardní legislativní cestou,“ uvedl Klempíř.
+Ředitel České televize Chudárek, který o schůzku usiloval již dříve, v samostatném prohlášení zdůraznil, že pro management ČT zůstává financování prostřednictvím poplatků preferovanou formou. „Zásadní pro nás je nejen forma, ale také výše rozpočtu v takové výši, abychom byli schopní poskytovat veřejnou službu jako doposud, dostát všem smluvním závazkům a plnit schválené dlouhodobé pětileté plány,“ doplnil Chudárek.
+Obě strany se zároveň dohodly na vzniku širší pracovní skupiny složené z odborníků České televize, Českého rozhlasu a ministerstva kultury. „S řediteli jsme se dohodli na častějším kontaktu, abychom mohli průběžně probírat jednotlivé detaily připravovaného zákona,“ sdělil Klempíř na Facebooku.
+Očekává se ještě vyjádření ředitele Českého rozhlasu.
+15:46 – Článek jsme aktualizovali a doplnili o sdělení ministra kultury.|E|
+|T|Netflix a další na víkend: Žraločí smršť, Star Wars: Maul nebo Privilegia. A Banda začala finální sezónu|D|10.04.2026 13:45|P||X|Žraločí smršť
+Pobřežní město bojuje uprostřed katastrofického hurikánu s hněvem přírody a náporem žraloků. Zatímco se obyvatelé potýkají s přívalovým deštěm, troskami a tmou, musí se semknout, aby přežili i útoky smrtících predátorů a dostali se z bouře živí. Film, který si můžete pustit na Netflixu, režíruje dravý milovník zábavných krváků Tommy Wirkola.
+Hodnocení Kinobox.cz: 64 %
+- Originální název: Thrash
+- Horory (2026)
+- CZ titulky • CZ dabing
+- Netflix
+Pokračování 2 / 6
+Privilegia
+Mladá vězenkyně začne v touze po nové šanci pracovat v luxusním pařížském hotelu. V něm ale vládnou bezohledné ambice a zrada. Novinka HBO nabídne celkem šest epizod.
+Hodnocení Kinobox.cz: 66 %
+- Originální název: Privileges
+- Drama seriály (2026)
+- 6 epizod (nové od 27. 3. 2026)
+- CZ titulky
+- HBO Max
+Pokračování 3 / 6
+Star Wars: Maul – Pán stínů
+Maul po událostech Klonových válek plánuje obnovit svůj zločinecký syndikát na planetě nedotčené Impériem. Zde se jeho cesty zkříží s rozčarovanou mladou padawankou Jedi. Ta by mohla zaujmout místo učedníka, kterého hledá, aby mu pomohl v jeho neúnavné honbě za pomstou. Nový seriál ze světa Star Wars adaptuje původní vizi George Lucase pro Epizody VII–IX.
+Hodnocení Kinobox.cz: 68 %
+- Originální název: Star Wars: Maul – Shadow Lord
+- Animované seriály (2026)
+- 10 epizod (nové od 6. 4. 2026)
+- CZ titulky • CZ dabing
+- Disney+
+Pokračování 4 / 6
+Banda
+Co kdyby nejznámější superhrdinové byli jen bandou zkorumpovaných násilníků? Kdo by je zastavil? Jedině parta všehoschopných chlápků, kteří hledají osobní mstu. Závěrečná řada megahitu od Amazonu v hlavní roli s Karlem Urbanem.
+Hodnocení Kinobox.cz: 89 %
+- Originální název: The Boys
+- Komiksové seriály (2019)
+- 40 epizod (nové od 8. 4. 2026)
+- CZ titulky • CZ dabing
+- Amazon
+Pokračování 5 / 6
+Jedna chyba za druhou
+Gangsteři přinutí dva naprosto neschopné sourozence ke spolupráci a svět organizovaného zločinu brzy pozná nejzmatenější duo, jaké kdy viděl. Ideální zábava pro milovníky trochu praštěných krimi komedií.
+Hodnocení Kinobox.cz: 62 %
+- Originální název: Big Mistakes
+- Komediální seriály (2026)
+- 8 epizod (nové od 9. 4. 2026)
+- CZ titulky • CZ dabing
+- Netflix
+Pokračování 6 / 6
+Další zajímavé tituly na streamovacích službách
+Hledá se Harry: Ze zákulisí čar a kouzel (Finding Harry: The Craft Behind the Magic) – Pohled do zákulisí seriálu Harry Potter z produkce HBO. Příběh vyprávěný tvůrci, kteří oživují legendární svět. (72 %) • HBO Max
+Věř mi: Falešný prorok (Trust Me: The False Prophet) – Dokumentární seriál o skutečném zločinu, ve kterém bývalá členka sekty a filmař proniknou do polygamní komunity, aby dostali samozvaného proroka před soud. (78 %) • Netflix
+Transformers Jedna (Transformers One) – Animovaný příběh nás vrátí do doby, kdy vznikala rodná planeta Autobotů - Cybetron. Prozradí, jak se z bratrů Optima Prime a Megatrona stali nepřátelé. (80 %) • Netflix
+Zatracení (The Damned) – Vdova musí učinit nemožné rozhodnutí, když se během obzvlášť kruté zimy během 19. století u pobřeží její chudé islandské rybářské vesnice potopí loď. Jakýkoli pokus o záchranu přeživších totiž riskuje, že se hladovějícím vesničanům ještě více ztenčí jejich zásoby jídla. (57 %) • Netflix
+Freaky Tales – Hvězda NBA, zkorumpovaný policajt, ženské rapové duo, teenage punkeři, neonacisté a výběrčí dluhů směřují v roce 1987 v Oaklandu v Kalifornii k nevyhnutelnému střetu. (62 %) • SkyShowtime
+Tento článek je součástí balíčku PREMIUM+
+Odemkněte si exkluzivní obsah a videa bez reklam na devíti webech.
+Chci Premium a Živě.cz bez reklam
+Od 58 Kč měsíčně|E|
+|T|Škoda s partnery představila zvonek, který přelstí chytrá sluchátka s potlačením hluku|D|10.04.2026 13:36|P|Automobilka Škoda, vědci z Univerzity v Salfordu a partneři ukázali zvonek na kolo, který pronikne přes chytré algoritmy sluchátek s aktivním potlačov...|X|Automobilka Škoda, vědci z Univerzity v Salfordu a partneři ukázali zvonek na kolo, který pronikne přes chytré algoritmy sluchátek s aktivním potlačováním hluku (ANC). Zvonek je přitom plně mechanický. „Jedná se o chytrý analogový trik, který přelstí algoritmy umělé inteligence v těchto sluchátkách,“ říká Ben Edwards z agentury AMV BBDO, která se na rozvoji nápadu podílela.
+Prostřednictvím akustických testů ANC technologie výzkumný tým identifikoval úzké frekvenční pásmo, bezpečnostní mezeru („safety gap“), která dovede filtry ANC sluchátek proniknout. Jde o rozmezí frekvencí 750–780 Hz. Odborníci tak zvonek s názvem DuoBell naladili právě i na tuto frekvenci. Má ale i další rezonátor, který je naladěný na vyšší frekvenci a díky speciálně navrženému kladívkovému mechanismu vytváří rychlé a nepravidelné údery. Tím generuje zvukové vlny, které ANC algoritmy nedovedou vyhodnotit dostatečně rychle, aby je potlačily.
+Na nápadu pracovala i agentura PHD a na přípravě prototypu se podílela produkční společnost Unit 9. Projekt reaguje na stoupající počet nehod cyklistů s chodci, na kterém se podílí i obliba sluchátek s aktivním potlačováním zvuku.
+Partneři testovali zvonek v Londýně, v němž má sluchátka s aktivním potlačováním hluku nosit až polovina chodců. Měření podle Škody ukázala, že chodci se sluchátky s aktivní funkcí potlačování hluku měli po aktivaci zvonku DuoBell až o 22 metrů více prostoru k reakci.
+Testy probíhaly s kurýry společnosti Deliveroo v průběhu února. Podle firem si je kurýři chtěli ponechat. Automobilka chce dát k dispozici výzkumné poznatky a zjištění, které za vývojem stojí.|E|
+|T|Artemis II: Mise míří do finále. Orion dopadne do vod Tichého oceánu ve dvě ráno našeho času|D|10.04.2026 13:33|P|Užitečné odkazy
+
+
+	Artemis II Arrow – Aktuální poloha lodi ve 3D
+	Artemis II Tracker (neoficiální)
+	Živý přenos z lodi, komentovaný přenos
+
+
+
+
+Oživeno...|X|Oživeno 15:45 | Jak bude vypadat přistání:
+- 42 minut před dopadem nad Havajskými ostrovy Orion odhazuje Evropský servisní modul a poprvé od složení rakety obnaží svůj tepelný štít
+- Orion dosahuje maximální rychlosti 23 864 km/h
+- Orion vstupuje do atmosféry 13 minut před dopadem ve výšce 122 km
+- Teplený štít čelí v maximu teplotám až 2760 °C
+- Ve výšce 7-11 km Orion odhazuje čelní poklop
+- Ve výšce 6,7 km se začínají vytahovat padáky. Nejprve pomocné, poté hlavní
+- Dopad
+Nejpozději do dvou hodin po dopadu vyzvednou posádku záchranáři v helikoptéře a odvezou je na výsadkovou loď USS John P. Murtha. Čeká je tam první zdravotní prohlídka.
+Vertikální schéma přistání
+Poté je námořníci dopraví na pobřeží, kde už na ně bude čekat letecký speciál, který je odveze do Johnsonova centra NASA v Houstonu. Čtveřici astronautů dnes proto čeká opravdu hodně náročný páteční tah.
+Detailní pohled na sekvenci zpomalení pádu pomocí padáků
+Živý přenos z přistání bude vedle NASA na YouTube (přenos si můžete spustit v záhlaví článku) a sociálních sítích přenášet také Netflix (odkaz na přenos), Apple TV, Amazon Prime, HBO MAx, Discovery a další.
+Dopadová trajektorie
+Oživeno 15:30 | Mise Artemis II míří do velkého finále. NASA očekává dopad do vod Tichého oceánu západně od San Diega (Kalifornie) dnes v 17:07 pacifického letního času (sobota, 02:07 SELČ). Diváci z Česka se neobejdou bez pořádné dávky kofeinu.
+Projekce přistávací trajektorie (UTC čas)
+Astronomické weby se už plní grafy, odkud bude možné Orion pozorovat a jak bude vypadat návratová trajektorie. Přehledná data najdete třeba na stránkách Heavens Above. Evropané budou mít nicméně ve finální fázi smůlu. Vzhledem k místu přistání totiž bude Orion klesat nad Pacifikem směrem k pobřeží Kalifornie.
+Čtvrtek 9. dubna 2026
+Oživeno 16:30 | Loď Orion je ve čtvrtek odpoledne téměř v polovině cesty zpět k Zemi a NASA v archivu zveřejnila efektní video ze samotného startu rakety SLS, jak jej zachytily infračervené kamery (NIR / blízké infračervené spektrum, 800-2500 nm).
+Ve stabilizovaném a na polovinu zpomaleném videu vidíme v detailu úvodní zapálení motorů a poté proud horkých plynů okolo trysek ve vysokém přiblížení. Tyto záběry slouží k inspekci, jak probíhá hoření a jak je na tom integrita pláště prvního stupně a nejbližšího okolí.
+Na záběrech uvidíte v ohromném detailu jak hoření v tryskách vodíkových motorů RS-25, tak postranní boostery na tuhé hliníkové palivo.
+Zdroj videa: NASA
+Středa 8. dubna 2026
+Oživeno 18:45 | Posádka měla zkraje mise trošku problémy s produkty MIcrosoftu, však to znáte... Ale humory stranou. Loď řídí palubní počítač, posádka má ale své osobní počítače. Něco si o nich povíme. A také o tom, jak posílají fotky zpět k Zemi.
+Oživeno 12:00 | Loď Orion během noci provedla úspěšnou korekci návratové dráhy a mise Artemis II se pomalu chýlí ke svému konci. Příběh ale rozhodně nekončí, už příští rok nás totiž čeká Artemis III a test spojení Orionu s lunárním modulem.
+NASA zve Američany na slavnostní vytažení prvního stupně v pořadí už třetí rakety SLS, který poté zamíří z New Orleans na Floridu do největší montážní haly svého druhu na světě VAB.
+Oživeno 11:30 | Jakou techniku posádka používala k fotografickému průzkumu Měsíce? Rozebíráme to v podrobném technickém článku na Digiaréně, kde vám ukážeme i konkrétní objektivy.
+Úterý 7. dubna 2026
+Oživeno 22:00 | NASA potvrdila, že Orion opustil vliv Měsíce a opět převážila gravitace Země. Teď už tedy loď padá zpět. Splashdown v pátek 10. dubna místního času.
+Oživeno 17:30 | Archiv NASA se postupně plní úřasnými záběry ze západu i východu Země, detailní topografií Měsíce a také zatměním Slunce. NASA posádku vyzbrojila full-frame zrcadlovkou Nikon D5 s 400mm teleobjektivem a níže si můžete rpohlédnout, jak stroj fungoval v praxi během průletu lodi za Měsícem
+Oživeno 15:15 | Na první fotografie průletu okolo Měsíce ve vysokém rozlišení jsme si nakonec museli počkat až do odpoledních hodin. Ale stojí za to. Kdyby je nezveřejnila NASA, tak si snad pomyslíme, že je vytvořil některý z obrázkových generátorů. Vypadají totiž opravdu jako ilustrace z AI.
+Západ Země
+Na prvním snímku vidíme západ Země poté, co se Orion včera hluboko v noci zanořil do stínu Měsíce. Na druhém snímku je pak zatmění Slunce z bezprostřední blízkosti.
+Zatmění Slunce
+Oživeno 01:26 | Oblet Měsíce se podařil a Orion opět navázal spojení s telekomunikační sítí DSN na zemském povrchu. Nepříliš kvalitní obrázky z živého přenosu v příštích hodinách doplní fotografie ve vysokém rozlišení.
+Orion se vynořil ze stínu Měsíce a NASA s ním úspěšně obnovila spojení
+Posádka nyní bude pokračovat v pozorování Měsíce a zatmění Slunce. Vše skončí až hluboko v noci našeho času. Viz podrobný rozpis obletu níže v článku.
+Sedmý den mise by měl být pro astronauty volnější. Orion opustí oblast působení Měsíce (znovu převáží vliv Země) a podle situace provede první korekční návratový zážeh motoru. Během osmého dne nás čeká demonstrace radiačního stínění a ruční pilotáže. Devátý den je na pořadu další drobný korekční zážeh a desátý den mise Orion konečně přistává zpět na Zemi.
+Oživeno 01:20 | Krátce před očekávanou obnovou signálu se podívejme do velínu mise. Fanoušky open-source jistě potěší. že hlavní obrazovku vzadu na stěně vyplňuje... Oblíbený videopřehrávač VLC s animací Měsíce (označen zeleným obdélníkem).
+VLC mají rádi i v NASA
+Oživeno 00:40 | Několik minut před tím, než se Orion dostal na odvrácenou stranu Měsíce a NASA ztratila dle plánu rádiové spojení s lodí, jsme se mohli pokochat živými záběry, na kterých je vidět v jedné řadě Orion, Měsíc a zcela vpravo Země. Tahle to vypadalo přesně 180 sekund před ztrátou signálu.
+Orion, Měsíc a Země v jedné řadě a v živém přenosu
+O přenos dat z lodi se po většinu cesty k Měsíci a zpět stará síť pozemských parabol DSN (Deep Space Network). Krátce před tím, než loď zmizela v měsíčním stínu, to byla anténa DSS 34 v australské Canbeře. Přehled o tom, jaká mise právě teď zatěžuje které zařízení, najdete na webu DSN Now.
+Jedním z experimentů na palubě je nicméně i O2O (Orion Artemis II Optical Communications System) pro laserovou komunikaci se Zemí. Test byl úspěšný a posádka v minulých dnech přenesla gigabajty dat. Laserová vysílačka má velikost domečku pro kočky a zvládne datový tok až 260 Mb/s k Zemi a 20 Mb/s zpět.
+DSN Now – telemetrii z Orionu přenáší zařízení DSS 34 v australské Canbeře
+Pondělí 6. dubna 2026
+Oživeno 22:00 | Mise Artemis II v 19:56 překonala rekord ve vzdálenosti lidí od Země. Od dubna 1970 jej s hodnotou 400 171 km držela mise Apollo 13. Artemis II by se měla dostat až na hodnotu 406 771 km.
+Oživeno 21:10 | Software, ve kterém bude posádka pracovat. Vlevo nahoře je seznam úkolů, dole jsou jednotlivé úkoly podrobněji rozepsané. Schematicky popsaný obraz Měsíce má pomoci navigovat oči a objektivy do správných míst. Dole pak jsou vypsané náležitosti, které má záznam o pozorování obsahovat (ale to by nemělo být potřeba, astronauti záznam průletu trénovali několik měsíců).
+Oživeno 19:20 | Živý přenos NASA můžete sledovat třeba na X.com:
+Oživeno 17:40 | Posádku do nového dne přivítal Jim Lovell – astronaut misí Gemini VII, Gemini XII, Apollo 8 a Apollo 13. Apollo 8 mělo podobný úkol jako dnes Artemis II – poprvé ukázalo Měsíc zblízka a jeho fotka celé Země inspirovala a sjednotila lidi po celém světě.
+Lovell přivítal astronauty „v jeho staré čtvrti“, předal jim pomyslnou pochodeň a připomněl, že i přes všechny úkoly, které je při obletu čekají, nemají zapomenout užít si výhled. Celé znění vzkazu na Nasa.gov.
+Pro posádku Artemis to byla emotivní chvilka – zejména protože Lovell krátce po nahrání vzkazu (v srpnu 2025) zemřel.
+Oživeno 13:00 | Dnešní přiblížení k Měsíci má následující plán (převedeno na středoevropský čas):
+- 16:50 – Plánovaný budíček pro astronauty
+- 19:00 – Začíná přenos z průletu kolem Měsíce na platformě NASA+, posádka uvidí přivrácenou i odvrácenou stranu
+- 19:56 – Posádka překoná rekord v největší vzdálenosti lidí od Země, který dříve stanovila mise Apollo 13 v roce 1970. Posádka má připravený projev (audio)
+- 20:15 – Posádka konfiguruje kabinu lodi Orion pro operace při průletu
+- 20:45 – Začíná pozorování Měsíce
+- úterý 00:44 – Loď zamíří za Měsíc, předpokládaná ztráta komunikace (přibližně na 40 minut)
+- 01:02 – Největší přiblížení Orionu k Měsíci (6 550 km). Prý to bude jako byste drželi basketbalový míč v natažené paži
+- 01:07 – Orion dosahuje maximální vzdálenosti od Země (cca 406 773 km). Dál ještě lidé nebyli.
+- 01:25 – „Východ Země“
+- 02:35 až 03:32 – posádka prožije téměř hodinové zatmění Slunce.
+- 03:20 – Končí pozorování Měsíce, v následujících hodinách bychom se měli dočkat prvních fotek
+Oživeno 9:00 | Posádka úspěšně upravila dráhu lodi Orion a otestovala záchranné skafandry OCSS. Dnes loď vstoupí do sféry vlivu Měsíce a provede oblet jeho odvrácené strany. Astronauti při tom překonají rekord Apolla 13 v největší vzdálenosti lidí od Země. Během manévru dojde k plánované ztrátě spojení, maximálnímu přiblížení k povrchu a následnému pozorování „východu Země“.
+Neděle 5. dubna 2026
+Oživeno 20:15 | Pátý den mise načala posádka ve vzdálenosti zhruba 105 tisíc km od Měsíce a promluvil k ní astronaut Charlie Duke, člen posádky mise Apollo 16 a desátý člověk, který kráčel po povrchu Měsíce.
+Hlavním úkolem dne je testování záchranných obleků Orion, včetně zkoušky pohyblivosti či simulace poklesu tlaku. Později přijde na řadu korekční manévr a vstup do sféry gravitačního vlivu Měsíce.
+Oživeno 12:00 | Kolik ta legrace vlastně stojí? Artemis patří k nejsložitějším projektům NASA. A také nejdražším. V auditu IG-22-003 (PDF) z listopadu 2021 se hned na třetí straně dočteme, že agentura očekávala celkové náklady programu do konce roku 2025 ve výši 93 miliard dolarů.
+Cenu jediné mise Artemis včetně prvních dvou uskutečněných letů I a II pak tehdejší auditoři odhadli na částku 4,1 miliard dolarů. Obsahuje náklady na stavbu a provoz raketového nosiče SLS (více než polovina rozpočtu) a lodi Orion (modul pro...
+(Pokracovani na webu)|E|
+|T|Těmto starým Kindlům za měsíc skončí podpora. Čtečky však vyhazovat nemusíte|D|10.04.2026 12:45|P|Amazon končí podporu nejstarších čteček e-knih. • Na Kindlech z let 2007 až 2012 již nepůjde kupovat a stahovat knihy. • Nestanou se z nich těžítka, s...|X|Amazon začal uživatelům nejstarších Kindlů posílat e-mailová upozornění, že jejich čtečky e-knih k 20. květnu 2026 ztratí podporu. Od tohoto data v nich nebude možné kupovat, půjčovat ani stahovat nové tituly z oficiálního obchodu. A pokud uživatelé zařízení resetují, nebudou jej moci znovu přidat ke svému účtu.
+Konec podpory firma následně potvrdila pro PCMag, kterému upřesnila, že se změna týká všech modelů od první generace až po čtečky vydané v roce 2012. Konkrétně tak jde o čtečky a tablety:
+- Kindle (2007)
+- Kindle DX a DX Graphite (2009 a 2010)
+- Kindle Keyboard (2010)
+- Kindle 4 (2011)
+- Kindle Touch (2011)
+- Kindle 5 (2012)
+- Kindle Paperwhite (2012)
+- Kindle Fire (2011)
+- Kindle Fire 2 (2012)
+- Kindle Fire HD 7 (2012)
+- Kindle Fire HD 8.9 (2012)
+Ze zařízení se tím ale nestanou těžítka. Nadále je bude možné přes USB naplnit e-knihami koupenými či staženými jinde. Pro hračičky je to i dobrá příležitost, jak čtečky vybavit alternativním softwarem. Populární KOReader podporuje všechny zmíněné Kindly s výjimkou první generace a doplní do nich nové funkce, například podporu formátu EPUB.
+Zdroje a další informace:
+PCMag|E|
+|T|Gesta vs. tlačítka aneb jak ovládáte Android? Jeden způsob šetří místo, druhý hraje na jistotu|D|10.04.2026 11:45|P||X|Zatímco uživatelé iPhonů nemají na výběr, u Androidů si můžete vybrat mezi dvěma metodami ovládání. Buď se spolehnete na gesta, nebo na tlačítka ve spodní liště. Každá z metod má své silné a slabší stránky. Kterou preferujete vy?
+Výhody a nevýhody tlačítek
+Když se bavíme o ovládání s využitím dotykových tlačítek, zobrazí se vám ve spodní liště tři klasické ikony – Zpět, Domů a Poslední aplikace. Nespornou výhodou je maximální přesnost, nemusíte gesta zkoušet metodou „pokus-omyl“. Stisknete tlačítko a vše hned funguje.
+Androidy vám dají na výběr. Ovládáte je raději tlačítky nebo gesty?
+Další výhodou je i kombinace více akcí po sobě, které fungují okamžitě. Potřebujete-li se vrátit o tři webové stránky nazpět, nejsnáze to uděláte zpětnou šipkou, a rozhodně ne gesty. Klepnutí na přesné místo (tzv. „svalová paměť“ je šikovná věc) je ve většině případů rychlejší než posunutí prstu, u něhož systém vyhodnocuje směr i rychlost tahu. Navíc nad tím ani nemusíte přemýšlet. Tlačítka jsou navíc konzistentní v rámci celého systému. Bez ohledu na aplikaci víte, co jejich stisk udělá.
+Jaké mají nevýhody? Z displejové plochy vám ukrajují trochu více místa než užší panel s gesty. U některých telefonů může být problém s přesunutím zpětné šipky tak, aby vyhovovala pravákům (tedy aby ji bylo možné umístit vpravo, ovšem i to se poslední dobou zlepšilo).
+Stále více telefonů už umí posunout zpětnou šipku na pravý kraj lišty, i Pixely
+V minulosti se u tlačítek zmiňovalo i vypalování OLED displejů, u moderních smartphonů se však grafika tlačítek pravidelně posouvá (tzv. pixel shifting), takže obavy nejsou na místě. Vizuálně mohou tlačítka uživatelům připomínat „starou školu“, tedy dobu, kdy měly Androidy pod displejem fyzická tlačítka. Gesta působí moderněji.
+Výhody a nevýhody gest
+Gesta u Androidů zmenší spodní lištu, takže zbude trochu více místa pro obsah na displeji. Na výšku se však bavíme o rozdílu v řádu několika milimetrů.
+Gesto pro návrat zpět může být prediktivní nebo vám šipkou naznačí posun o úroveň zpět. U Androidů si upravíte i citlivost gest
+Mezi výhody patří plynulejší přecházení mezi aplikacemi. Když přejíždíte palcem po spodní lince do stran, přecházíte mezi posledními spuštěnými aplikacemi – není tedy třeba otevírat nabídku posledních spuštěných aplikací. U gest si navíc můžete nastavit citlivost na pohyb prstu. V případě tzv. prediktivního gesta zpět vidíte při potažení (zleva i zprava) náhled plochy nebo předchozí aplikace, abyste věděli, kam se vracíte. Gesta mohou být vítaná i u těch uživatelů, kteří k Androidu přešli z iPhonu.
+Nevýhody? Pokud aplikace samy o sobě používají gesta, například při potažení do stran (filtry, boční nabídky), může docházet ke kolizím a nespolehlivosti. Gesta mohou být nespolehlivá i tehdy, když třeba používáte pouzdra s vysokými okraji, která mohou omezit pohyb prstu, popř. máte nalepenou fólii na displeji a nastavenou vysokou citlivost dotykové plochy.
+Gesta mohou být trhaná, navíc je každý výrobce může mít implementovaná trochu jinak. Pro začátečníky a méně zkušené může být dost náročné si na gesta zvyknout. Tlačítka jsou přímočařejší a jednodušší na pochopení.
+Jak to mám já a jak to máte vy?
+Sám za sebe jsem si u Androidů na gesta nikdy nezvykl, a to už se mezi telefony pohybuji nějaký ten pátek. Možná je to i proto, že je zpracování gest na Androidu mi přijde o něco horší než na iPhonech. U nich jsou gesta lépe provázaná s iOS a haptickou odezvou, mají plynulejší animace, a to i při přepínání mezi aplikacemi přejetím prstu.
+Gesto zpět sice na iPhonu funguje jen při přejetí prstu z levého okraje obrazovky doprava (opačně nikoliv), přesto na mě gesta v iOS působí vyladěnějším dojmem. A to i přesto že univerzální gesto zpět u iPhonů vlastě neexistuje – je to vždy na bedrech vývojářů aplikací.
+U iPhonů jsem se s gesty naučil pracovat, ale u Androidů vždy přepínám na tlačítka a v dohledné době na tom neplánuju nic měnit. A jak to máte vy?|E|
 |T|ChatGPT má levnější „neomezený“ tarif Pro. Stojí 2490 Kč měsíčně|D|10.04.2026 10:45|P|ChatGPT Pro můžete mít za 2490 Kč nebo 4990 Kč měsíčně. • Tarify se liší v limitech agentní funkce Codex. • V ostatních ohledech jsou stejné.|X|Po několika týdnech spekulací nakonec OpenAI skutečně přinesla o polovinu levnější tarif Pro. Stojí 2490 Kč měsíčně (oproti 4990 Kč) a liší se v limitech agentní funkce Codex, která slouží k programování či jiné práci, jež se bude na základě textových zadání vykonávat pomocí AI.
 Firma nikde neuvádí přesné limity. Víme však, že levnější tarif Pro může provést pětkrát více práce než Plus. Dočasně až do 31. května je kapacita navýšena na desetinásobek. Dražší Pro pak odvede dvacetkrát více práce než Plus. V jiných ohledech se neliší, obě verze Pro mají neomezený přístup k modelům Instant i Thinking.
 ChatGPT zároveň mění limity Codexu u tarifu Plus. OpenAI znovu neuvádí žádná konkrétní čísla, ale mluví o změně vyvážení. Plus by měl teď vykonat více relací během týdne spíš než delší relace během jednoho dne.

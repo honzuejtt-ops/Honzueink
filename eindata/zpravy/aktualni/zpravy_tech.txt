@@ -1,4 +1,190 @@
-|T|ChatGPT má levnější „neomezený“ tarif Pro. Stojí 2490 Kč měsíčně|D|10.04.2026 10:45|P|ChatGPT Pro můžete mít za 2490 Kč nebo 4990 Kč měsíčně. • Tarify se liší v limitech agentní funkce Codex. • V ostatních ohledech jsou stejné.|X|Po několika týdnech spekulací nakonec OpenAI skutečně přinesla o polovinu levnější tarif Pro. Stojí 2490 Kč měsíčně (oproti 4990 Kč) a liší se v limitech agentní funkce Codex, která slouží k programování či jiné práci, jež se bude na základě textových zadání vykonávat pomocí AI.
+|T|Ovládací panely prý z Windows nadobro zmizí, Microsoft aplikaci Nastavení ladí velmi opatrně|D|10.04.2026 14:22|P|V roce 2007 ještě neexistoval Google Chrome ani Spotify, ve Windows Vista se ale objevily Ovládací panely. Po 19 letech vypadají prakticky stejně, Mic...|X|Windows Vista vyšly před více než 19 lety a mimo jiné přinesly přepracované ovládací panely. Na rozdíl od Windows XP seřadily jednotlivá nastavení do tematických nabídek. Asi nikdo při této změně nečekal, že Ovládací panely budou i v roce 2026 vypadat prakticky totožně, byť většina okolního systému bude využívat zcela rozdílný designový jazyk. Microsoft na změně prý pracuje.
+Hlavně neuspěchat
+March Rogers má mimo jiné na starost právě vzhled systému Windows 11 a na síti X se pochlubil, že Microsoft pracuje na mnoha designových vylepšeních. Mimo jiné by mělo jít právě o problémy s konzistentností. V diskuzi zareagoval i na uživatele, který upozornil právě na zastaralou nabídku Ovládacích panelů.
+Vypíchnul konkrétně síťová nastavení a konfiguraci tiskáren. Rogers odpověděl: „Postupně převádíme všechny staré prvky Ovládacích panelů do moderní aplikace Nastavení. Děláme to opatrně, protože existuje mnoho různých síťových a tiskových zařízení a ovladačů, u kterých musíme zajistit, že se během tohoto procesu nic neporuší.“
+Je dobře, že Microsoft ladí svůj systém opravdu pečlivě a nesnaží se nic uspěchat. Na Ovládací panely, které nekorespondují se zbytkem systému, zatím uživatelé upozorňují jen od Windows 8. Nyní to ale vypadá, že se vše chýlí ke zdárnému konci, a Ovládacích panelů se zbavíme nadobro. O konfiguraci systému, periferií či aplikací se bude starat již pouze perfektně vyladěné a přehledné Nastavení.
+Zdroj: Techspot|E||T|Anthropic se lekl vlastní AI a prozatím ji nezveřejní. Mythos by ohrozil všechny současné systémy|D|10.04.2026 13:50|P|Model Claude Mythos Preview se naučil chyby v kódu nejen hledat, ale především je velmi efektivně zneužívat. Našel 27 let starou chybu v systému, kter...|X|Společnost Anthropic se pochlubila novým modelem Claude Mythos Preview, který je podle všeho nejschopnější AI v oblasti kybernetické bezpečnosti. Mythos dokáže autonomně vyhledávat bezpečnostní zranitelnosti v jakémkoliv kódu, případně je i zneužít. Kvůli obavám z možného zneužití Anthropic tento model veřejně nepublikuje a místo toho spouští Project Glasswing. V rámci něj nabídne Claude Mythos velkým technologickým firmám a open-source vývojářům.
+Až příliš chytrý
+Předchozí modely jako Opus 4.6 uměly zranitelnosti hledat, ale úspěšnost při jejich zneužití se blížila nule. Mythos Preview to ale mění. Výzkumníci nabídli stejnou sadu zranitelností v prohlížeči Firefox oběma modelům Opus 4.6 a Claude Mythos Preview. Prvnímu z nich se reálné zneužití chyb povedlo 2× z několika stovek pokusů, naopak Mythos uspěl 181×.
+Claude Mythos Preview v posledních týdnech rovněž procházel některé aplikace či systémy s otevřeným zdrojovým kódem a hledal v nich chyby. V systému OpenBSD, který je považován za jeden z nejbezpečnějších, našel 27 let starou chybu v implementaci TCP protokolu. Ta umožňuje shodit libovolný počítač odesláním několika upravených packetů.
+V knihovně FFmpeg odhalil Mythos 16 let starou chybu v kodeku H.264. V linuxovém kernelu se povedlo zřetězit několik chyb a získat tím plná administrátorská oprávnění v systému. Anthropic dále uvádí, že v každém ze současných webových prohlížečů našel Mythos několik kritických zranitelností, které následně dokázal zneužít.
+Pokud by byl Claude Mythos Preview publikován se současnými schopnostmi, ohrozilo by to kyberbezpečnost na všech úrovních. V ohrožení by se ocitly běžné aplikace, ale i kritická infrastruktura. I proto zatím Anthropic svůj poslední model nebude zveřejňovat a zpřístupní jej vybraným technologickým společnostem. Ty jej budou moci využít k prověření a opravám svých aplikací a systémů. Anthropic jim k tomu rozdá 100 milionů v kreditech do své platformy. Další 4 miliony potom Anthropic rozdá mezi open-source vývojáře.
+Zdroj: Anthropic|E||T|DOPLNĚNO: Kvůli financování ČT a ČRo vznikne pracovní skupina. Stát je spojovat nebude|D|10.04.2026 13:48|P|Ministr kultury Oto Klempíř se v pátek sešel s generálním ředitelem České televize Hynkem Chudárkem a ředitelem Českého rozhlasu Reném Zavoralem. Před...|X|Ministr kultury Oto Klempíř se v pátek sešel s generálním ředitelem České televize Hynkem Chudárkem a ředitelem Českého rozhlasu Reném Zavoralem. Představil jim hlavní teze nového zákona, který na ministerstvu vzniká. Koncesionářské poplatky mají být zrušeny a nahrazeny platbou ze státního rozpočtu s valorizačním mechanismem.
+Chystaný zákon stojí podle Klempíře na čtyřech klíčových bodech. Česká televize a Český rozhlas zůstanou samostatnými institucemi, o jejich slučování se neuvažuje. Koncesionářské poplatky se zruší a nahradí je platba ze státního rozpočtu. Zákon má zároveň zavést mechanismus zajišťující valorizaci financování a dostatečnou předvídatelnost. Kontrolu nad fungováním médií budou i nadále vykonávat mediální rady.
+Ministr se s řediteli dohodl na pravidelných konzultacích během přípravy zákona. „Jakmile návrh schválí koaliční rada, nahrajeme jej do systému a projde standardní legislativní cestou,“ uvedl Klempíř.
+Ředitel České televize Chudárek, který o schůzku usiloval již dříve, v samostatném prohlášení zdůraznil, že pro management ČT zůstává financování prostřednictvím poplatků preferovanou formou. „Zásadní pro nás je nejen forma, ale také výše rozpočtu v takové výši, abychom byli schopní poskytovat veřejnou službu jako doposud, dostát všem smluvním závazkům a plnit schválené dlouhodobé pětileté plány,“ doplnil Chudárek.
+Obě strany se zároveň dohodly na vzniku širší pracovní skupiny složené z odborníků České televize, Českého rozhlasu a ministerstva kultury. „S řediteli jsme se dohodli na častějším kontaktu, abychom mohli průběžně probírat jednotlivé detaily připravovaného zákona,“ sdělil Klempíř na Facebooku.
+Očekává se ještě vyjádření ředitele Českého rozhlasu.
+15:46 – Článek jsme aktualizovali a doplnili o sdělení ministra kultury.|E||T|Netflix a další na víkend: Žraločí smršť, Star Wars: Maul nebo Privilegia. A Banda začala finální sezónu|D|10.04.2026 13:45|P||X|Žraločí smršť
+Pobřežní město bojuje uprostřed katastrofického hurikánu s hněvem přírody a náporem žraloků. Zatímco se obyvatelé potýkají s přívalovým deštěm, troskami a tmou, musí se semknout, aby přežili i útoky smrtících predátorů a dostali se z bouře živí. Film, který si můžete pustit na Netflixu, režíruje dravý milovník zábavných krváků Tommy Wirkola.
+Hodnocení Kinobox.cz: 64 %
+- Originální název: Thrash
+- Horory (2026)
+- CZ titulky • CZ dabing
+- Netflix
+Pokračování 2 / 6
+Privilegia
+Mladá vězenkyně začne v touze po nové šanci pracovat v luxusním pařížském hotelu. V něm ale vládnou bezohledné ambice a zrada. Novinka HBO nabídne celkem šest epizod.
+Hodnocení Kinobox.cz: 66 %
+- Originální název: Privileges
+- Drama seriály (2026)
+- 6 epizod (nové od 27. 3. 2026)
+- CZ titulky
+- HBO Max
+Pokračování 3 / 6
+Star Wars: Maul – Pán stínů
+Maul po událostech Klonových válek plánuje obnovit svůj zločinecký syndikát na planetě nedotčené Impériem. Zde se jeho cesty zkříží s rozčarovanou mladou padawankou Jedi. Ta by mohla zaujmout místo učedníka, kterého hledá, aby mu pomohl v jeho neúnavné honbě za pomstou. Nový seriál ze světa Star Wars adaptuje původní vizi George Lucase pro Epizody VII–IX.
+Hodnocení Kinobox.cz: 68 %
+- Originální název: Star Wars: Maul – Shadow Lord
+- Animované seriály (2026)
+- 10 epizod (nové od 6. 4. 2026)
+- CZ titulky • CZ dabing
+- Disney+
+Pokračování 4 / 6
+Banda
+Co kdyby nejznámější superhrdinové byli jen bandou zkorumpovaných násilníků? Kdo by je zastavil? Jedině parta všehoschopných chlápků, kteří hledají osobní mstu. Závěrečná řada megahitu od Amazonu v hlavní roli s Karlem Urbanem.
+Hodnocení Kinobox.cz: 89 %
+- Originální název: The Boys
+- Komiksové seriály (2019)
+- 40 epizod (nové od 8. 4. 2026)
+- CZ titulky • CZ dabing
+- Amazon
+Pokračování 5 / 6
+Jedna chyba za druhou
+Gangsteři přinutí dva naprosto neschopné sourozence ke spolupráci a svět organizovaného zločinu brzy pozná nejzmatenější duo, jaké kdy viděl. Ideální zábava pro milovníky trochu praštěných krimi komedií.
+Hodnocení Kinobox.cz: 62 %
+- Originální název: Big Mistakes
+- Komediální seriály (2026)
+- 8 epizod (nové od 9. 4. 2026)
+- CZ titulky • CZ dabing
+- Netflix
+Pokračování 6 / 6
+Další zajímavé tituly na streamovacích službách
+Hledá se Harry: Ze zákulisí čar a kouzel (Finding Harry: The Craft Behind the Magic) – Pohled do zákulisí seriálu Harry Potter z produkce HBO. Příběh vyprávěný tvůrci, kteří oživují legendární svět. (72 %) • HBO Max
+Věř mi: Falešný prorok (Trust Me: The False Prophet) – Dokumentární seriál o skutečném zločinu, ve kterém bývalá členka sekty a filmař proniknou do polygamní komunity, aby dostali samozvaného proroka před soud. (78 %) • Netflix
+Transformers Jedna (Transformers One) – Animovaný příběh nás vrátí do doby, kdy vznikala rodná planeta Autobotů - Cybetron. Prozradí, jak se z bratrů Optima Prime a Megatrona stali nepřátelé. (80 %) • Netflix
+Zatracení (The Damned) – Vdova musí učinit nemožné rozhodnutí, když se během obzvlášť kruté zimy během 19. století u pobřeží její chudé islandské rybářské vesnice potopí loď. Jakýkoli pokus o záchranu přeživších totiž riskuje, že se hladovějícím vesničanům ještě více ztenčí jejich zásoby jídla. (57 %) • Netflix
+Freaky Tales – Hvězda NBA, zkorumpovaný policajt, ženské rapové duo, teenage punkeři, neonacisté a výběrčí dluhů směřují v roce 1987 v Oaklandu v Kalifornii k nevyhnutelnému střetu. (62 %) • SkyShowtime
+Tento článek je součástí balíčku PREMIUM+
+Odemkněte si exkluzivní obsah a videa bez reklam na devíti webech.
+Chci Premium a Živě.cz bez reklam
+Od 58 Kč měsíčně|E||T|Škoda s partnery představila zvonek, který přelstí chytrá sluchátka s potlačením hluku|D|10.04.2026 13:36|P|Automobilka Škoda, vědci z Univerzity v Salfordu a partneři ukázali zvonek na kolo, který pronikne přes chytré algoritmy sluchátek s aktivním potlačov...|X|Automobilka Škoda, vědci z Univerzity v Salfordu a partneři ukázali zvonek na kolo, který pronikne přes chytré algoritmy sluchátek s aktivním potlačováním hluku (ANC). Zvonek je přitom plně mechanický. „Jedná se o chytrý analogový trik, který přelstí algoritmy umělé inteligence v těchto sluchátkách,“ říká Ben Edwards z agentury AMV BBDO, která se na rozvoji nápadu podílela.
+Prostřednictvím akustických testů ANC technologie výzkumný tým identifikoval úzké frekvenční pásmo, bezpečnostní mezeru („safety gap“), která dovede filtry ANC sluchátek proniknout. Jde o rozmezí frekvencí 750–780 Hz. Odborníci tak zvonek s názvem DuoBell naladili právě i na tuto frekvenci. Má ale i další rezonátor, který je naladěný na vyšší frekvenci a díky speciálně navrženému kladívkovému mechanismu vytváří rychlé a nepravidelné údery. Tím generuje zvukové vlny, které ANC algoritmy nedovedou vyhodnotit dostatečně rychle, aby je potlačily.
+Na nápadu pracovala i agentura PHD a na přípravě prototypu se podílela produkční společnost Unit 9. Projekt reaguje na stoupající počet nehod cyklistů s chodci, na kterém se podílí i obliba sluchátek s aktivním potlačováním zvuku.
+Partneři testovali zvonek v Londýně, v němž má sluchátka s aktivním potlačováním hluku nosit až polovina chodců. Měření podle Škody ukázala, že chodci se sluchátky s aktivní funkcí potlačování hluku měli po aktivaci zvonku DuoBell až o 22 metrů více prostoru k reakci.
+Testy probíhaly s kurýry společnosti Deliveroo v průběhu února. Podle firem si je kurýři chtěli ponechat. Automobilka chce dát k dispozici výzkumné poznatky a zjištění, které za vývojem stojí.|E||T|Artemis II: Mise míří do finále. Orion dopadne do vod Tichého oceánu ve dvě ráno našeho času|D|10.04.2026 13:33|P|Užitečné odkazy
+
+
+	Artemis II Arrow – Aktuální poloha lodi ve 3D
+	Artemis II Tracker (neoficiální)
+	Živý přenos z lodi, komentovaný přenos
+
+
+
+
+Oživeno...|X|Oživeno 15:45 | Jak bude vypadat přistání:
+- 42 minut před dopadem nad Havajskými ostrovy Orion odhazuje Evropský servisní modul a poprvé od složení rakety obnaží svůj tepelný štít
+- Orion dosahuje maximální rychlosti 23 864 km/h
+- Orion vstupuje do atmosféry 13 minut před dopadem ve výšce 122 km
+- Teplený štít čelí v maximu teplotám až 2760 °C
+- Ve výšce 7-11 km Orion odhazuje čelní poklop
+- Ve výšce 6,7 km se začínají vytahovat padáky. Nejprve pomocné, poté hlavní
+- Dopad
+Nejpozději do dvou hodin po dopadu vyzvednou posádku záchranáři v helikoptéře a odvezou je na výsadkovou loď USS John P. Murtha. Čeká je tam první zdravotní prohlídka.
+Vertikální schéma přistání
+Poté je námořníci dopraví na pobřeží, kde už na ně bude čekat letecký speciál, který je odveze do Johnsonova centra NASA v Houstonu. Čtveřici astronautů dnes proto čeká opravdu hodně náročný páteční tah.
+Detailní pohled na sekvenci zpomalení pádu pomocí padáků
+Živý přenos z přistání bude vedle NASA na YouTube (přenos si můžete spustit v záhlaví článku) a sociálních sítích přenášet také Netflix (odkaz na přenos), Apple TV, Amazon Prime, HBO MAx, Discovery a další.
+Dopadová trajektorie
+Oživeno 15:30 | Mise Artemis II míří do velkého finále. NASA očekává dopad do vod Tichého oceánu západně od San Diega (Kalifornie) dnes v 17:07 pacifického letního času (sobota, 02:07 SELČ). Diváci z Česka se neobejdou bez pořádné dávky kofeinu.
+Projekce přistávací trajektorie (UTC čas)
+Astronomické weby se už plní grafy, odkud bude možné Orion pozorovat a jak bude vypadat návratová trajektorie. Přehledná data najdete třeba na stránkách Heavens Above. Evropané budou mít nicméně ve finální fázi smůlu. Vzhledem k místu přistání totiž bude Orion klesat nad Pacifikem směrem k pobřeží Kalifornie.
+Čtvrtek 9. dubna 2026
+Oživeno 16:30 | Loď Orion je ve čtvrtek odpoledne téměř v polovině cesty zpět k Zemi a NASA v archivu zveřejnila efektní video ze samotného startu rakety SLS, jak jej zachytily infračervené kamery (NIR / blízké infračervené spektrum, 800-2500 nm).
+Ve stabilizovaném a na polovinu zpomaleném videu vidíme v detailu úvodní zapálení motorů a poté proud horkých plynů okolo trysek ve vysokém přiblížení. Tyto záběry slouží k inspekci, jak probíhá hoření a jak je na tom integrita pláště prvního stupně a nejbližšího okolí.
+Na záběrech uvidíte v ohromném detailu jak hoření v tryskách vodíkových motorů RS-25, tak postranní boostery na tuhé hliníkové palivo.
+Zdroj videa: NASA
+Středa 8. dubna 2026
+Oživeno 18:45 | Posádka měla zkraje mise trošku problémy s produkty MIcrosoftu, však to znáte... Ale humory stranou. Loď řídí palubní počítač, posádka má ale své osobní počítače. Něco si o nich povíme. A také o tom, jak posílají fotky zpět k Zemi.
+Oživeno 12:00 | Loď Orion během noci provedla úspěšnou korekci návratové dráhy a mise Artemis II se pomalu chýlí ke svému konci. Příběh ale rozhodně nekončí, už příští rok nás totiž čeká Artemis III a test spojení Orionu s lunárním modulem.
+NASA zve Američany na slavnostní vytažení prvního stupně v pořadí už třetí rakety SLS, který poté zamíří z New Orleans na Floridu do největší montážní haly svého druhu na světě VAB.
+Oživeno 11:30 | Jakou techniku posádka používala k fotografickému průzkumu Měsíce? Rozebíráme to v podrobném technickém článku na Digiaréně, kde vám ukážeme i konkrétní objektivy.
+Úterý 7. dubna 2026
+Oživeno 22:00 | NASA potvrdila, že Orion opustil vliv Měsíce a opět převážila gravitace Země. Teď už tedy loď padá zpět. Splashdown v pátek 10. dubna místního času.
+Oživeno 17:30 | Archiv NASA se postupně plní úřasnými záběry ze západu i východu Země, detailní topografií Měsíce a také zatměním Slunce. NASA posádku vyzbrojila full-frame zrcadlovkou Nikon D5 s 400mm teleobjektivem a níže si můžete rpohlédnout, jak stroj fungoval v praxi během průletu lodi za Měsícem
+Oživeno 15:15 | Na první fotografie průletu okolo Měsíce ve vysokém rozlišení jsme si nakonec museli počkat až do odpoledních hodin. Ale stojí za to. Kdyby je nezveřejnila NASA, tak si snad pomyslíme, že je vytvořil některý z obrázkových generátorů. Vypadají totiž opravdu jako ilustrace z AI.
+Západ Země
+Na prvním snímku vidíme západ Země poté, co se Orion včera hluboko v noci zanořil do stínu Měsíce. Na druhém snímku je pak zatmění Slunce z bezprostřední blízkosti.
+Zatmění Slunce
+Oživeno 01:26 | Oblet Měsíce se podařil a Orion opět navázal spojení s telekomunikační sítí DSN na zemském povrchu. Nepříliš kvalitní obrázky z živého přenosu v příštích hodinách doplní fotografie ve vysokém rozlišení.
+Orion se vynořil ze stínu Měsíce a NASA s ním úspěšně obnovila spojení
+Posádka nyní bude pokračovat v pozorování Měsíce a zatmění Slunce. Vše skončí až hluboko v noci našeho času. Viz podrobný rozpis obletu níže v článku.
+Sedmý den mise by měl být pro astronauty volnější. Orion opustí oblast působení Měsíce (znovu převáží vliv Země) a podle situace provede první korekční návratový zážeh motoru. Během osmého dne nás čeká demonstrace radiačního stínění a ruční pilotáže. Devátý den je na pořadu další drobný korekční zážeh a desátý den mise Orion konečně přistává zpět na Zemi.
+Oživeno 01:20 | Krátce před očekávanou obnovou signálu se podívejme do velínu mise. Fanoušky open-source jistě potěší. že hlavní obrazovku vzadu na stěně vyplňuje... Oblíbený videopřehrávač VLC s animací Měsíce (označen zeleným obdélníkem).
+VLC mají rádi i v NASA
+Oživeno 00:40 | Několik minut před tím, než se Orion dostal na odvrácenou stranu Měsíce a NASA ztratila dle plánu rádiové spojení s lodí, jsme se mohli pokochat živými záběry, na kterých je vidět v jedné řadě Orion, Měsíc a zcela vpravo Země. Tahle to vypadalo přesně 180 sekund před ztrátou signálu.
+Orion, Měsíc a Země v jedné řadě a v živém přenosu
+O přenos dat z lodi se po většinu cesty k Měsíci a zpět stará síť pozemských parabol DSN (Deep Space Network). Krátce před tím, než loď zmizela v měsíčním stínu, to byla anténa DSS 34 v australské Canbeře. Přehled o tom, jaká mise právě teď zatěžuje které zařízení, najdete na webu DSN Now.
+Jedním z experimentů na palubě je nicméně i O2O (Orion Artemis II Optical Communications System) pro laserovou komunikaci se Zemí. Test byl úspěšný a posádka v minulých dnech přenesla gigabajty dat. Laserová vysílačka má velikost domečku pro kočky a zvládne datový tok až 260 Mb/s k Zemi a 20 Mb/s zpět.
+DSN Now – telemetrii z Orionu přenáší zařízení DSS 34 v australské Canbeře
+Pondělí 6. dubna 2026
+Oživeno 22:00 | Mise Artemis II v 19:56 překonala rekord ve vzdálenosti lidí od Země. Od dubna 1970 jej s hodnotou 400 171 km držela mise Apollo 13. Artemis II by se měla dostat až na hodnotu 406 771 km.
+Oživeno 21:10 | Software, ve kterém bude posádka pracovat. Vlevo nahoře je seznam úkolů, dole jsou jednotlivé úkoly podrobněji rozepsané. Schematicky popsaný obraz Měsíce má pomoci navigovat oči a objektivy do správných míst. Dole pak jsou vypsané náležitosti, které má záznam o pozorování obsahovat (ale to by nemělo být potřeba, astronauti záznam průletu trénovali několik měsíců).
+Oživeno 19:20 | Živý přenos NASA můžete sledovat třeba na X.com:
+Oživeno 17:40 | Posádku do nového dne přivítal Jim Lovell – astronaut misí Gemini VII, Gemini XII, Apollo 8 a Apollo 13. Apollo 8 mělo podobný úkol jako dnes Artemis II – poprvé ukázalo Měsíc zblízka a jeho fotka celé Země inspirovala a sjednotila lidi po celém světě.
+Lovell přivítal astronauty „v jeho staré čtvrti“, předal jim pomyslnou pochodeň a připomněl, že i přes všechny úkoly, které je při obletu čekají, nemají zapomenout užít si výhled. Celé znění vzkazu na Nasa.gov.
+Pro posádku Artemis to byla emotivní chvilka – zejména protože Lovell krátce po nahrání vzkazu (v srpnu 2025) zemřel.
+Oživeno 13:00 | Dnešní přiblížení k Měsíci má následující plán (převedeno na středoevropský čas):
+- 16:50 – Plánovaný budíček pro astronauty
+- 19:00 – Začíná přenos z průletu kolem Měsíce na platformě NASA+, posádka uvidí přivrácenou i odvrácenou stranu
+- 19:56 – Posádka překoná rekord v největší vzdálenosti lidí od Země, který dříve stanovila mise Apollo 13 v roce 1970. Posádka má připravený projev (audio)
+- 20:15 – Posádka konfiguruje kabinu lodi Orion pro operace při průletu
+- 20:45 – Začíná pozorování Měsíce
+- úterý 00:44 – Loď zamíří za Měsíc, předpokládaná ztráta komunikace (přibližně na 40 minut)
+- 01:02 – Největší přiblížení Orionu k Měsíci (6 550 km). Prý to bude jako byste drželi basketbalový míč v natažené paži
+- 01:07 – Orion dosahuje maximální vzdálenosti od Země (cca 406 773 km). Dál ještě lidé nebyli.
+- 01:25 – „Východ Země“
+- 02:35 až 03:32 – posádka prožije téměř hodinové zatmění Slunce.
+- 03:20 – Končí pozorování Měsíce, v následujících hodinách bychom se měli dočkat prvních fotek
+Oživeno 9:00 | Posádka úspěšně upravila dráhu lodi Orion a otestovala záchranné skafandry OCSS. Dnes loď vstoupí do sféry vlivu Měsíce a provede oblet jeho odvrácené strany. Astronauti při tom překonají rekord Apolla 13 v největší vzdálenosti lidí od Země. Během manévru dojde k plánované ztrátě spojení, maximálnímu přiblížení k povrchu a následnému pozorování „východu Země“.
+Neděle 5. dubna 2026
+Oživeno 20:15 | Pátý den mise načala posádka ve vzdálenosti zhruba 105 tisíc km od Měsíce a promluvil k ní astronaut Charlie Duke, člen posádky mise Apollo 16 a desátý člověk, který kráčel po povrchu Měsíce.
+Hlavním úkolem dne je testování záchranných obleků Orion, včetně zkoušky pohyblivosti či simulace poklesu tlaku. Později přijde na řadu korekční manévr a vstup do sféry gravitačního vlivu Měsíce.
+Oživeno 12:00 | Kolik ta legrace vlastně stojí? Artemis patří k nejsložitějším projektům NASA. A také nejdražším. V auditu IG-22-003 (PDF) z listopadu 2021 se hned na třetí straně dočteme, že agentura očekávala celkové náklady programu do konce roku 2025 ve výši 93 miliard dolarů.
+Cenu jediné mise Artemis včetně prvních dvou uskutečněných letů I a II pak tehdejší auditoři odhadli na částku 4,1 miliard dolarů. Obsahuje náklady na stavbu a provoz raketového nosiče SLS (více než polovina rozpočtu) a lodi Orion (modul pro...
+(Pokracovani na webu)|E||T|Těmto starým Kindlům za měsíc skončí podpora. Čtečky však vyhazovat nemusíte|D|10.04.2026 12:45|P|Amazon končí podporu nejstarších čteček e-knih. • Na Kindlech z let 2007 až 2012 již nepůjde kupovat a stahovat knihy. • Nestanou se z nich těžítka, s...|X|Amazon začal uživatelům nejstarších Kindlů posílat e-mailová upozornění, že jejich čtečky e-knih k 20. květnu 2026 ztratí podporu. Od tohoto data v nich nebude možné kupovat, půjčovat ani stahovat nové tituly z oficiálního obchodu. A pokud uživatelé zařízení resetují, nebudou jej moci znovu přidat ke svému účtu.
+Konec podpory firma následně potvrdila pro PCMag, kterému upřesnila, že se změna týká všech modelů od první generace až po čtečky vydané v roce 2012. Konkrétně tak jde o čtečky a tablety:
+- Kindle (2007)
+- Kindle DX a DX Graphite (2009 a 2010)
+- Kindle Keyboard (2010)
+- Kindle 4 (2011)
+- Kindle Touch (2011)
+- Kindle 5 (2012)
+- Kindle Paperwhite (2012)
+- Kindle Fire (2011)
+- Kindle Fire 2 (2012)
+- Kindle Fire HD 7 (2012)
+- Kindle Fire HD 8.9 (2012)
+Ze zařízení se tím ale nestanou těžítka. Nadále je bude možné přes USB naplnit e-knihami koupenými či staženými jinde. Pro hračičky je to i dobrá příležitost, jak čtečky vybavit alternativním softwarem. Populární KOReader podporuje všechny zmíněné Kindly s výjimkou první generace a doplní do nich nové funkce, například podporu formátu EPUB.
+Zdroje a další informace:
+PCMag|E||T|Gesta vs. tlačítka aneb jak ovládáte Android? Jeden způsob šetří místo, druhý hraje na jistotu|D|10.04.2026 11:45|P||X|Zatímco uživatelé iPhonů nemají na výběr, u Androidů si můžete vybrat mezi dvěma metodami ovládání. Buď se spolehnete na gesta, nebo na tlačítka ve spodní liště. Každá z metod má své silné a slabší stránky. Kterou preferujete vy?
+Výhody a nevýhody tlačítek
+Když se bavíme o ovládání s využitím dotykových tlačítek, zobrazí se vám ve spodní liště tři klasické ikony – Zpět, Domů a Poslední aplikace. Nespornou výhodou je maximální přesnost, nemusíte gesta zkoušet metodou „pokus-omyl“. Stisknete tlačítko a vše hned funguje.
+Androidy vám dají na výběr. Ovládáte je raději tlačítky nebo gesty?
+Další výhodou je i kombinace více akcí po sobě, které fungují okamžitě. Potřebujete-li se vrátit o tři webové stránky nazpět, nejsnáze to uděláte zpětnou šipkou, a rozhodně ne gesty. Klepnutí na přesné místo (tzv. „svalová paměť“ je šikovná věc) je ve většině případů rychlejší než posunutí prstu, u něhož systém vyhodnocuje směr i rychlost tahu. Navíc nad tím ani nemusíte přemýšlet. Tlačítka jsou navíc konzistentní v rámci celého systému. Bez ohledu na aplikaci víte, co jejich stisk udělá.
+Jaké mají nevýhody? Z displejové plochy vám ukrajují trochu více místa než užší panel s gesty. U některých telefonů může být problém s přesunutím zpětné šipky tak, aby vyhovovala pravákům (tedy aby ji bylo možné umístit vpravo, ovšem i to se poslední dobou zlepšilo).
+Stále více telefonů už umí posunout zpětnou šipku na pravý kraj lišty, i Pixely
+V minulosti se u tlačítek zmiňovalo i vypalování OLED displejů, u moderních smartphonů se však grafika tlačítek pravidelně posouvá (tzv. pixel shifting), takže obavy nejsou na místě. Vizuálně mohou tlačítka uživatelům připomínat „starou školu“, tedy dobu, kdy měly Androidy pod displejem fyzická tlačítka. Gesta působí moderněji.
+Výhody a nevýhody gest
+Gesta u Androidů zmenší spodní lištu, takže zbude trochu více místa pro obsah na displeji. Na výšku se však bavíme o rozdílu v řádu několika milimetrů.
+Gesto pro návrat zpět může být prediktivní nebo vám šipkou naznačí posun o úroveň zpět. U Androidů si upravíte i citlivost gest
+Mezi výhody patří plynulejší přecházení mezi aplikacemi. Když přejíždíte palcem po spodní lince do stran, přecházíte mezi posledními spuštěnými aplikacemi – není tedy třeba otevírat nabídku posledních spuštěných aplikací. U gest si navíc můžete nastavit citlivost na pohyb prstu. V případě tzv. prediktivního gesta zpět vidíte při potažení (zleva i zprava) náhled plochy nebo předchozí aplikace, abyste věděli, kam se vracíte. Gesta mohou být vítaná i u těch uživatelů, kteří k Androidu přešli z iPhonu.
+Nevýhody? Pokud aplikace samy o sobě používají gesta, například při potažení do stran (filtry, boční nabídky), může docházet ke kolizím a nespolehlivosti. Gesta mohou být nespolehlivá i tehdy, když třeba používáte pouzdra s vysokými okraji, která mohou omezit pohyb prstu, popř. máte nalepenou fólii na displeji a nastavenou vysokou citlivost dotykové plochy.
+Gesta mohou být trhaná, navíc je každý výrobce může mít implementovaná trochu jinak. Pro začátečníky a méně zkušené může být dost náročné si na gesta zvyknout. Tlačítka jsou přímočařejší a jednodušší na pochopení.
+Jak to mám já a jak to máte vy?
+Sám za sebe jsem si u Androidů na gesta nikdy nezvykl, a to už se mezi telefony pohybuji nějaký ten pátek. Možná je to i proto, že je zpracování gest na Androidu mi přijde o něco horší než na iPhonech. U nich jsou gesta lépe provázaná s iOS a haptickou odezvou, mají plynulejší animace, a to i při přepínání mezi aplikacemi přejetím prstu.
+Gesto zpět sice na iPhonu funguje jen při přejetí prstu z levého okraje obrazovky doprava (opačně nikoliv), přesto na mě gesta v iOS působí vyladěnějším dojmem. A to i přesto že univerzální gesto zpět u iPhonů vlastě neexistuje – je to vždy na bedrech vývojářů aplikací.
+U iPhonů jsem se s gesty naučil pracovat, ale u Androidů vždy přepínám na tlačítka a v dohledné době na tom neplánuju nic měnit. A jak to máte vy?|E||T|ChatGPT má levnější „neomezený“ tarif Pro. Stojí 2490 Kč měsíčně|D|10.04.2026 10:45|P|ChatGPT Pro můžete mít za 2490 Kč nebo 4990 Kč měsíčně. • Tarify se liší v limitech agentní funkce Codex. • V ostatních ohledech jsou stejné.|X|Po několika týdnech spekulací nakonec OpenAI skutečně přinesla o polovinu levnější tarif Pro. Stojí 2490 Kč měsíčně (oproti 4990 Kč) a liší se v limitech agentní funkce Codex, která slouží k programování či jiné práci, jež se bude na základě textových zadání vykonávat pomocí AI.
 Firma nikde neuvádí přesné limity. Víme však, že levnější tarif Pro může provést pětkrát více práce než Plus. Dočasně až do 31. května je kapacita navýšena na desetinásobek. Dražší Pro pak odvede dvacetkrát více práce než Plus. V jiných ohledech se neliší, obě verze Pro mají neomezený přístup k modelům Instant i Thinking.
 ChatGPT zároveň mění limity Codexu u tarifu Plus. OpenAI znovu neuvádí žádná konkrétní čísla, ale mluví o změně vyvážení. Plus by měl teď vykonat více relací během týdne spíš než delší relace během jednoho dne.
 Novou nabídkou tak OpenAI reaguje na konkurenční Anthropic. Jeho Claude už od počátku má dva nejvyšší tarify Max, které mají stejnou dolarovou cenu 100 a 200 dolarů a liší se od levnějšího Pro v tom, že mají pěti- a dvacetinásobně nižší limity.
@@ -7,42 +193,14 @@ OpenAI|E||T|Značka Czech Digital Group mizí z trhu, společnost zanikla fúzí
 Projekt fúze byl připravený od konce letošního února a rozhodným dnem byla středa 1. dubna. Veškerý majetek, závazky i práva podle notářského zápisu přešly na nástupnickou společnost České Radiokomunikace.
 Značka Czech Digital Group byla součástí digitalizace televizního vysílání v České republice už od prvních experimentů. V srpnu 2000 společnost zahájila testovací vysílání na 46. kanálu v Praze a v okolí, rok poté začala testovat interaktivní aplikace a v červenci 2004 jí přidělil Český telekomunikační úřad kmitočty na tehdejší přechodný Multiplex B. Na přelomu října a listopadu 2008 se tato síť transformovala na finální DVB-T Multiplex 3.
 Výstavbu a provoz sítě zajišťovaly pro Czech Digital Group už tehdy České Radiokomunikace. Na konci listopadu 2010 firmu kompletně odkoupily od společnosti SP D Corporation. České Radiokomunikace po právní stránce zachovaly název operátora a jeho samostatné fungování, ale jinak správu, obchod a provoz reálně zajišťoval nový majitel. Toto uspořádání vydrželo také při přechodu na DVB-T2, kdy se z Multiplexu 3 stal Multiplex 23.
-Stoprocentním vlastníkem akcií Českých Radiokomunikací je londýnský investiční fond Cordiant Digital Infrastructure, který firmu koupil v roce 2021 od australské skupiny Macquarie.|E||T|V Číně poprvé vzlétl těžkotonážní dron Changying-8. Uveze 3500 kilogramů nákladu (video)|D|10.04.2026 09:45|P|Čínská společnost Norinco vyvíjí autonomní nákladní dron Changying-8, který je největší na světě, pokud jako měřítko použijeme oficiální maximální vzl...|X|Čínská společnost Norinco vyvíjí autonomní nákladní dron Changying-8, který je největší na světě, pokud jako měřítko použijeme oficiální maximální vzletovou hmotnost 7 tun. Rekordní letoun před pár dny zvládl svůj první let v Čeng-čou ve střední Číně. Podle ohlasů jde o významný milník budování těžké autonomní logistiky, na kterou, jak se zdá, bude asijský obr stále více spoléhat.
-Changying-8 nebo také CY-8 a Norinco Luca vzlétl poslední březnový den a podle dostupných informací uveze úctyhodných 3,5 tun nákladu. V tomto směru jej už ale pokoří třeba robotický S-70UAS U-Hawk, tedy plně automatizovaná verze legendární americké helikoptéry Black Hawk. Mimochodem, i k nim Sikorsky dodává plug-in systém pro dálkové ovládání.
-Čínské zpravodajství zdůrazňuje, že je kompletně postavený z místních komponent, a to včetně turbovrtulových motorů, avioniky a strukturních prvků. V této třídě je už země zcela soběstačná.
-První let trval třicet minut
-První let trval asi 30 minut. Při vzletu potřeboval asi 280 metrů dráhy, což je podstatně méně než oficiálně udávaných 500 metrů. Test potvrdil, že dron zvládá stabilní provoz s autonomním řízením, palubními kontrolními systémy a dohledem pozemních operátorů.
-S délkou 17 metrů, rozpětím křídel 25 metrů a doletem přes 3 tisíce kilometrů je Changying-8 srovnatelný s malými pilotovanými nákladními letadly.
-Vnitřní nákladní prostor je souvislý a má objem zhruba 18 metrů krychlových. Jeho obsluhu zjednodušují nákladní dveře v zadní i v přední části trupu. Naložení celého nákladu je možné zvládnout za 15 minut.
-Rozšíření logistiky v nízkých hladinách
-Luca je navržená pro autonomní a semiautonomní operace s dohledem lidských operátorů. Podstatně rozšiřuje možnosti čínské logistiky v nízkých výškách, která operuje nezávisle na tradiční infrastruktuře letišť. Praktická konstrukce dovoluje provoz v rozmanitých podmínkách, od vysokohorského prostředí až po ostrovní logistiku s omezenými letištními plochami.
-Kromě vojenských operací se těžký nákladní dron může uplatnit i v civilních misích. V nouzových situacích může díky své nosnosti převážet například humanitární pomoc, jako je zdravotnické vybavení, přístřešky nebo zásoby potravin.|E||T|První vesnice v Česku má svého AI starostu. Poradí, odpoví a je nonstop k dispozici|D|10.04.2026 09:43|P|V Ratiboř mají starostu, který nikdy nespí. Jeho AI verze odpovídá na dotazy během několika sekund a pokud nezná odpověď, nezačne si vymýšlet jako jin...|X|V Ratiboři kousek od Vsetína představili na České poměry netradiční novinku – digitální verzi tamního starosty Martina Žabčíka. Tento „AI starosta“ je k dispozici v místním informačním centru, kde dokáže nonstop odpovídat na otázky týkající se života v obci.
+Stoprocentním vlastníkem akcií Českých Radiokomunikací je londýnský investiční fond Cordiant Digital Infrastructure, který firmu koupil v roce 2021 od australské skupiny Macquarie.|E||T|První vesnice v Česku má svého AI starostu. Poradí, odpoví a je nonstop k dispozici|D|10.04.2026 09:43|P|V Ratiboř mají starostu, který nikdy nespí. Jeho AI verze odpovídá na dotazy během několika sekund a pokud nezná odpověď, nezačne si vymýšlet jako jin...|X|V Ratiboři kousek od Vsetína představili na České poměry netradiční novinku – digitální verzi tamního starosty Martina Žabčíka. Tento „AI starosta“ je k dispozici v místním informačním centru, kde dokáže nonstop odpovídat na otázky týkající se života v obci.
 Oproti skutečnému člověku reaguje během několika sekund a pokud si není jistý odpovědí, nezačne zalucinovat jako jiné AI nástroje.
 Odpoví, poradí a nevymýšlí si
 Digitální dvojník je napojený na obecní databázi, takže má přístup k informacím jako jsou místní poplatky, investice nebo plánované opravy. Martin Žabčík propůjčil AI starostovi nejen svůj hlas, ale také podobu. Zadání dotazu probíhá stisknutím tlačítka a položení dotazu tak, jako byste se ptali reálné osoby.
 „Při komunikaci s digitálním dvojníkem mohou využívat výhod umělé inteligence i ti, kdo nejsou zvyklí používat počítače a chytré telefony,“ říká podle Valašského deníku Martin Gazda, ředitel zlínské společnosti AI Produkce, která technologii vyvinula ve spolupráci s firmou Digiregion.
 Podle něj nebude do budoucna AI starosta výjimkou. Už nyní společnost jedná s více než desítkou dalších obcí a je tak více než možné, že do budoucna uvidíme AI starostu ve více obcích či městech.
 „Věřím, že si lidé AI starostu oblíbí už jen proto, že bude k dispozici kdykoli během otevírací doby informačního centra a také nonstop přes telefon. Rutinní dotazy na mě nebo na úřad může vyřídit můj digitální dvojník a já s kolegy se můžeme věnovat náročnějším činnostem, které zpříjemní lidem život v obci,“ doplnil starosta obce Martin Žabčík.
-zdroj: Valašský deník, obec Ratiboř|E||T|Chytrá váha české značky Salente zlevnila na 311 Kč. Měří 15 parametrů a nevyžaduje cloud|D|10.04.2026 08:45|P|Chytrá váha české značky Salente SlimFit zlevnila na 311 Kč. • Měří 15 parametrů a data pošle do mobilu i bez cloudu. • Údaje umí synchronizovat s eko...|X|Chytrá váha Salente SlimFit v Alze zlevnila na 311 Kč, výhodněji ji nikde jinde nekoupíte. Jde zároveň o jedno z nejdostupnějších zařízení své kategorie. Váha je k dispozici také v černé variantě za stejnou cenu. Salente je česká značka patřící společnosti Abacus Electric, které patří také Evolveo vyrábějící mobily a počítačovou techniku. Výrobky ale pochopitelně pocházejí z Číny.
-Salente SlimFit měří 28 × 28 × 2,2 cm, napájí se třemi AAA bateriemi a má podsvícený displej zobrazující pouze hmotnost (do 180 kg). Dalších 14 veličin pak zobrazuje až v mobilní aplikaci MovingLife spárované přes Bluetooth. Váha sleduje také:
-- BMI index
-- Procentuální zastoupení tělesného tuku, vody, kostí, kosterního svalstva, svalů a bílkovin
-- Poměr viscerálního tuku (vnitřního orgánového tuku nacházejícího se v dutině břišní) a podkožního tuku
-- Hodnotu LBM (rozdíl mezi celkovou hmotností těla a množstvím tuku v těle)
-- Hodnotu BMR (bazální metabolický výdej, resp. minimální množství kalorií nutné k udržení základních životních funkcí jako je srdeční činnost a dýchání)
-- Hodnotu AMR (aktivní metabolický výdej, resp. součet BMR a množství kalorií, které tělo potřebuje k základnímu pohybu a aktivitě)
-- Metabolický věk
-- Somatotyp (ektomorf, mezomorf a endomorf)
-S výjimkou hmotnosti je ale nutné další údaje brát s rezervou. Váha má gumové nožičky, takže na povrchu neklouže. Horní stranu zase kryje 5mm bezpečnostní sklo, které se dobře udržuje.
-Aplikace MovingLife umí naměřené údaje synchronizovat s ekosystémy Apple Zdraví a Google Health Connect. Navíc nevyžaduje cloud. Při spuštění sice nabízí registraci, ale je možné používat i lokální účet. Váha bohužel nemá žádnou interní paměť, takže údaje se do mobilu zapíšou jen při vážení se spuštěnou aplikací. Váha se mimochodem umí spárovat s až osmi mobily. Každý člen domácnosti si tak může nainstalovat MovingLife a měřit jen vlastní hmotnost.
-V akci za 639 Kč je mimochodem také pokročilejší model Salente BodyFit s větším displejem, který zobrazuje i další údaje. Alza zlevnila také další diagnostické váhy, například Omron, Sencor nebo TrueLife, všechny je najdete zde.
-Přes WhatsApp a Telegram vás upozorníme na novou slevu
-Slevové akce někdy netrvají dlouho nebo obchody mohou mít jen malé množství zlevněných produktů. Než se k článku dostanete, může být pozdě.
-Hlídač slev má ale své kanály v komunikátorech WhatsApp a Telegram. Klikněte na odkaz, otevře se v aplikaci. Jakmile vydáme článek o slevě, hned o tom dostanete zprávu. O akci se tak dozvíte v době, kdy je ještě stoprocentně platná.
-Jsme také na sociálních sítích Facebook, Threads, X, Bluesky, Mastodon, Discord a můžete odebírat naše RSS se slevami.
-WhatsApp má u kanálů vypnuté upozornění na nové zprávy. Musíte to změnit sami přes ikonu zvonku v pravém horním rohu aplikace. Viz žlutá šipka:
-Našli jste sami zajímavou slevu? Napište nám.
-Za nákup, který uskutečníte prostřednictvím odkazu v článku, může Živě dostat provizi.|E||T|YouTube chystá další nepříjemnou změnu. Reklamy na televizích budou násobně otravnější|D|10.04.2026 08:36|P|Google dál pokračuje ve válce proti blokátorům reklam na YouTube. Dosud byl největší důraz kladen na mobilní aplikaci, nyní se ale pozornost přesouvá ...|X|YouTube je stále největší video platformou na světě a denně na ní sledují obsah stovky milionů lidí. Forma inzerce je však stále otravnější a Google každý rok zhoršuje podmínky pro neplatící uživatele. Dosud se delší reklamní formáty vyhýbaly televizním aplikacím, což se začíná měnit.
+zdroj: Valašský deník, obec Ratiboř|E||T|YouTube chystá další nepříjemnou změnu. Reklamy na televizích budou násobně otravnější|D|10.04.2026 08:36|P|Google dál pokračuje ve válce proti blokátorům reklam na YouTube. Dosud byl největší důraz kladen na mobilní aplikaci, nyní se ale pozornost přesouvá ...|X|YouTube je stále největší video platformou na světě a denně na ní sledují obsah stovky milionů lidí. Forma inzerce je však stále otravnější a Google každý rok zhoršuje podmínky pro neplatící uživatele. Dosud se delší reklamní formáty vyhýbaly televizním aplikacím, což se začíná měnit.
 YouTube se chystá přitvrdit
 Google si všímá změn ve způsobech, jakými uživatelé sledují videa na YouTube. Stále větší procento lidí konzumuje obsah na televizích, zatímco ještě před několika roky byla platforma nejvyužívanější na mobilních telefonech. Ty nejotravnější formáty se dosud televizím vyhýbaly, ale to bude brzy minulostí.
 YouTube se chystá zavést 90sekundové nepřeskočitelné reklamy, které se dle diskuzí na Redditu objevují v krátkých i dlouhých videích. Dosud byly na televizích standardem spoty o délce 30 sekund, takže se jedná o trojnásobné navýšení délky, což je obrovský nárůst zejména v případě, kdy sledujete jen desetiminutové video.
@@ -50,37 +208,7 @@ Důvod této nepopulární změny je prostý – Google chce zvýšit příjmy z
 Nekonečná válka proti adblockům
 Velkým trnem v oku jsou pro Google adblocky, které jednoduše zablokují komerční sdělení ve videích, aniž byste za ně museli cokoli platit. Použití těchto nástrojů porušuje komunitní pravidla YouTube, to však nebrání tomu, aby je uživatelé platformy nadále využívali.
 YouTube má nástroje, jak znepříjemnit využívání blokátorů reklam, a jedním z nich je nasazení několikahodinových nepřeskočitelných spotů, které se často objeví znovu i po obnovení stránky ve snaze se jich zbavit.
-zdroj: 9to5google|E||T|GoPro na výletu k Měsíci. Jak malé kamery na Orionu přežijí start rakety, vakuum, zimu i brutální datové limity|D|10.04.2026 07:45|P||X|Orion má podle prezentace obrazového systému pro Artemis II dohromady 28 kamer a optických systémů. Čtyři kamery míří z konců solárních panelů na loď, další jsou v kabině, fotoaparáty Nikon má k dispozici posádka a zvlášť je vedený i NatGeo payload se čtyřmi ručními GoPro Hero 11.
-Oznámení firmy GoPro potvrzuje ještě čtyři speciálně upravené kamery GoPro namontované zvenku na křídlech solárních panelů Orionu. NASA jim říká SAW Cam 1-4 (Solar Array Wing Camera) a jejich rozmístění je vidět na obrázku níže.
-Vnitřní a venkovní GoPra nejsou jedno a totéž. Zatímco v případě ručních kamer pro National Geographic, tedy pro záběry posádky uvnitř kabiny, se jedná o Hero 11, venku se nacházejí k nepoznání upravené kusy integrované do Orion Imagery System.
-SAW CAM je upravené GoPro Hero 4 Black Jedná se o modifikované kamerky GoPro Hero 4 Black pro snímání Země, Měsíce i samotné lodi během kritických fází mise.
-Volba zdánlivě staršího modelu má své opodstatnění, SAW kamery totiž pro Lockheed Martin – jednoho z výrobců lodi Orion – dlouhé roky vyvíjela společnost Redwire, která původní GoPro upravila k nepoznání. Inženýři vytáhli elektronické obvody a snímač z původního plastového pouzdra a vše umístili do nové hliníkové schránky s vlastním termálním managementem a stíněním.
-Při startu je přetížení ten nejmenší problém Když se řekne, že kamera musí přežít start rakety, většina lidí si představí hlavně obrovské přetížení. Jenže to je zjednodušení. Ano, Space Launch System se při Artemis I dostal krátce před vypnutím hlavních motorů zhruba na 3,25 G.
-Jenže pro techniku na konci solárních panelů nejsou problémem jen samotná „géčka“, ale spíše vibrace, akustický nápor a fakt, že kamera sedí na konci dlouhé skládací konstrukce. NASA u systému z Artemis I přímo řešila, zda se kamery při startu a rozkládání panelů nerozkmitají, zda kabeláž nepřekáží a zda se konstrukce nebude otřásat při manévrech.
-Právě proto není možné, že by venkovní GoPro byl sériový model koupený v obchodě. Z původní kamery zbyl jen základ, ale i to je pro firmu GoPro skvělá reklama.
-Když jde s daty do tuhého Zvenku to vypadá jednoduše: kamera něco natočí a pošle to na Zemi. Ve skutečnosti je to ale mnohem složitější. U Artemis I kamery na panelech ukládaly fotky a video do interní paměti, soubory posílaly přes Wi-Fi a nižší kvalitu uměly i streamovat.
-Dvě řídicí jednotky fungovaly jako přístupové body a mezi servisním modulem a kabinou běželo spojení přes WiGig, aby systém fungoval i ve chvílích, kdy klasická kabeláž není ideální. NASA to tehdy označila za první použití Wi-Fi na misi v lunární orbitě.
-Jenže dostat data z kamery ještě neznamená dostat je na Zemi. Prezentace pro Artemis II to říká na rovinu: rádiová S-band linka (DSN – Deep Space Network) je omezený a sdílený zdroj s rychlostí v řádu jednotek Mb/s. Na lodi je primárně vyhrazená pro kritickou infrastrukturu. Poblíž Země ji sice doplňuje až o dva řády rychlejší rádiová síť NSN (používá ji třeba ISS), jenže ta přestává fungovat už pár tisící kilometrů od Země.
-Orion má do třetice k dispozici ještě laserový vysílač O2O, ten nicméně vyžaduje perfektní ostření a sledování lodi. V každém případě, NASA s jeho pomocí hned první dny přenesla gigabajty dat.
-V praxi je živě streamovaný obraz z lodi silně komprimovaný a s občasnými výpadky. Snímky ve vysokém rozlišení proto dostáváme až se zpožděním. Bylo to ostatně vidět i při obletu Měsíce. Obraz ze SAW kamer NASA veřejně streamovala až do posledního okamžiku, než se loď dostala do zákrytu Měsíce, obrazová kvalita ale nestála za nic. Snímků ve vysokém rozlišení z vnějších kamer (včetně těch v tomto článku) jsme se proto dočkali s mnohahodinovým zpožděním.
-To je přesně ten moment, kdy se odděluje marketing od reality. Dnešní GoPro umí UHD, ale ve vesmíru nestačí video natočit. Musíte ho přenést přes palubní síť, nacpat do úzkého komunikačního okna, ale zároveň neomezit ostatní systémy lodi. NASA není organizace, která by kvůli pár lajkům na ohrozila celý Orion.
-Zima vlastně nevadí, najdou se horší problémy Často se říká, že technika ve vesmíru musí přežít strašný mráz. To je pravda, ale chlad je jen malá část problému. Ve vakuu chybí vzduch, takže nefunguje běžné chlazení . Kamera se může na slunci přehřívat a ve stínu naopak rychle teplotně spadnout. K tomu přidejme radiaci, která dovede rozhodit elektroniku i bez mechanického poškození.
-Inženýři proto vložili čipy do masivních hliníkových krytů. Mají integrované termální systémy, které brání zamrznutí optiky ve stínu, a jsou vybavené těžkým stíněním proti kosmické radiaci.
-U běžných plastů by totiž ve vakuu hrozil tzv. outgassing, tedy uvolňování těkavých molekul polymerů ve formě plynu, který pak zakalí čočku. Tu Redwire také vyměnil za tvrzené a radiačně odolné sklo. Malé čočky z mobilů jsou totiž často kompozitní a lepidlo by působením UV záření hnědlo. Chybí zde prostě ochranná vrstva zemské atmosféry.
-A konečně pomohla i jednodušší výrobní technologie čipů s většími tranzistory ve starším GoPro, částice kosmického záření totiž musí mít o to větší náboj, aby došlo k elektrické chybě na mikroskopických tranzistorech a z logické nuly se stala jednička, která pak způsobí pád firmwaru nebo obecně chyby v obrazu.
-V oficiálním podcastu NASA k Artemis imagery otevřeně zaznívá, že v hlubokém vesmíru mohou těžké ionty některé kamery rozhodit natolik, že je musí středisko na dálku resetovat.
-Kamery na solárních panelech nemají žádné vlastní baterie a nepotřebují SD karty – jsou pevně zapojené do datové a napájecí sítě lodi, takže přenášejí surová data rovnou do palubních počítačů.
-Kamery nebojují jen s chladem, ale s nepřátelským prostředím jako celkem. A i proto je důležité, že systém není pasivní. Řídicí středisko kamery sleduje, přepíná jejich výstupy, stahuje záznamy, uvolňuje místo v úložišti a v případě potřeby umí systém znovu nahodit.
-Je to obrovská poklona technickému základu GoPro z roku 2014, který po úpravách hardwaru a firmwaru dodnes plní roli spolehlivých vesmírných očí.
-Kamery se samy neotáčejí Na solárních panelech nejsou žádné filmové gimbaly . Kamery jsou pevně uchycené a záběr se mění tím, jak se natáčejí samotná křídla panelů. NASA v podcastu vysvětluje, že rotace panelů dává různou perspektivu na kapsli, Měsíc i Zemi.
-A v některých fázích letu, kdy si Orion může pomoct energií z interních baterií, lze panely natáčet i s ohledem na lepší záběr, nejen na okamžitý energetický zisk. Je to jednoduché, elegantní a hlavně lehčí než přidávat další mechaniku ke každé kameře.
-To je ostatně důvod, proč záběry z Orionu působí tak neobvykle. Kamera nesedí někde na boku kabiny, ale na špičce dlouhého ramene. Výsledkem jsou obrazy, které ukazují loď v kontextu Měsíce a Země, nejen anonymní černotu s kusem plechu. Z technického pohledu je to přitom pořád hlavně inspekční nástroj . To, že z něj lezou mimořádně fotogenické snímky, je tak trochu bonus.
-GoPro nejsou na Orionu samy NASA sází na pestrost. Co kdyby se ukázalo, že některý model správně nefunguje? Díky tomu, že posádka má různé vybavení, profesionální technikou Nikon počínaje a iPhone 17 Pro max konče, je nejen celý systém zálohován, ale také nabízí různou perspektivu.
-Malé robustní kamery zvenku pro inspekci a efektní celky. Ruční GoPro uvnitř pro dokument a „lidský“ pohled z kabiny. A vedle toho velké foťáky pro snímky, které mají ambici přežít jako ikonické fotografie mise.
-Na GoPro na Orionu je nejzajímavější právě to, jak málo jsou to ve skutečnosti „obyčejná GoPro“. Aby malá kamera mohla letět k Měsíci, musí přežít start, vibrace, vakuum, teplotní extrémy, radiaci i brutálně omezený datový rozpočet. A přitom ještě dodat obraz, který má technickou hodnotu pro inženýry i vizuální hodnotu pro celý svět. Na papíře je to akční kamerka. V realitě je to jeden z nejzajímavějších kusů fototechniky, které dnes létají vesmírem.
-Zdroje a další informace:
-X ,
-NASA|E||T|Hry zadarmo, nebo se slevou: Balík strategií z přelomu tisíciletí za dvě stovky a simulátor hrobaře zdarma|D|10.04.2026 05:10|P|Na všech herních platformách je každou chvíli nějaká slevová akce. Každý týden proto vybíráme ty nejatraktivnější, které by vám neměly uniknout. Pokud...|X|Ukázat všechny listy najednou
+zdroj: 9to5google|E||T|Hry zadarmo, nebo se slevou: Balík strategií z přelomu tisíciletí za dvě stovky a simulátor hrobaře zdarma|D|10.04.2026 05:10|P|Na všech herních platformách je každou chvíli nějaká slevová akce. Každý týden proto vybíráme ty nejatraktivnější, které by vám neměly uniknout. Pokud...|X|Ukázat všechny listy najednou
 Graveyard Keeper zdarma na PC, PlayStationu i Xboxu
 Studio Lazy Bear Games čerstvě oznámilo pokračování svého simulátoru hrobaře, kde opravujete a dál se staráte o zašlý hřbitov se vším, co k tomu patří. Graveyard Keeper jde v mnohém dál, než byste na první pohled čekali, za pixelartovou tváří se skrývá komplexní záležitost na desítky hodin. Aby se na pokračování mohl řádně připravit úplně každý, vývojáři nyní rozdávají první díl zdarma. A to nejen na Steamu , ale také na PlayStationu a Xboxu . Hra vám po aktivaci zůstane v knihovně natrvalo. Nabídka platí do 13. dubna.
 Pokračování 2 / 15 GOG – Strategy Games Promo
@@ -260,99 +388,7 @@ Android 17 je v současnosti ve třetí beta verzi a dokončen by měl být v č
 Zdroj: Android Authority, Android Police|E||T|Allegro a Shoptet spouštějí nativní integraci, české e-shopy tak můžou rychleji na tržiště|D|09.04.2026 10:21|P|Allegro a Shoptet spustily nativní integraci, která umožňuje prodejcům aktivovat prodej na polském marketplace přímo z administrace Shoptetu. Ten je d...|X|Allegro a Shoptet spustily nativní integraci, která umožňuje prodejcům aktivovat prodej na polském marketplace přímo z administrace Shoptetu. Ten je dominantní platformou pro tvorbu e-shopů v Česku, která pohání k 45 tisícům českých a slovenských internetových obchodů.
 Má jít o první krok širší strategie, do budoucna firma podle svého vyjádření plánuje obdobné napojení dalších tržišť.
 „Marketplaces jsou jedním z významných prodejních kanálů v e-commerce. E-shopaři ale dnes narážejí na složitou implementaci, technickou náročnost a potřebu používat externí nástroje,“ komentuje ředitel společnosti Shoptet Jan Hospodka. Podle Allegra tak firmy získají přístup k 21 milionům zákazníků napříč střední a východní Evropou.
-Vývoj integrace trval přibližně devět měsíců. Nová funkce je dostupná přímo z hlavního menu administrace. Podmínkou je mít v Shoptetu nastavené skladové hospodářství a podporu cizích měn.|E||T|Zabydlujeme Linux – 7. díl: sledování systému a poznatky z delšího používání|D|09.04.2026 09:54|P|V sedmém a zároveň posledním díle se podíváme na pár užitečných utilit pro sledování vytížení procesoru a grafického jádra, a shrneme obecné poznatky ...|X|Všechny díly:
-- Zabydlujeme Linux – 1. díl: Proč přejít z Windows a jak vybrat správnou distribuci
-- Zabydlujeme Linux – 2. díl: Formátujeme disky a instalujeme dual-boot s Windows bez nervů
-- Zabydlujeme Linux – 3. díl: Instalujeme písma a nastavujeme Firefox pro procházení webu
-- Zabydlujeme Linux – 4. díl: Příručka hlavně pro psavce, aneb není QWERTZ jako QWERTZ
-- Zabydlujeme Linux – 5. díl: Hraní bez Windows? Překvapivě dobré, ale drobné mouchy zůstávají
-- Zabydlujeme Linux – 6. díl: Jak na přehrávání videa a amatérskou práci s fotografiemi
-Jak sledovat vytížení procesoru a GPU
-Správce úloh ve Windows je dost vymakaný. Umí sledovat nejen vytížení procesoru a paměti, ale i grafického jádra, jednotlivých disků, a síťový provoz. V Linuxu tohle všechno jde také, ale budete na to potřebovat několik utilit.
-Linux Mint standardně obsahuje Sledování systému (System Monitor) z GNOME. Aplikace umí ukázat grafy vytížení procesoru po jednotlivých jádrech, využití paměti a swapu, a přenosové rychlosti sítě a čtení a zápisy na všech discích dohromady.
-Osobně mám raději htop. Nenechte se odradit tím, že běží v terminálu. V práci jej máme na všech serverech, dal by se označit za zlatý standard. Zobrazuje sice vytížení pouze aktuální, nikoliv graf historie, ale lépe vám zviditelní, jakou část paměti váš počítač reálně používá, včetně vyrovnávacích pamětí operačního systému (to je ta žlutá část pruhu Mem). Oproti Sledování systému navíc zobrazuje i aktuální frekvence a teploty jednotlivých procesorových jader.
-Malá odbočka – Sledování systému a htop hlásí každý jiný objem zaplněné paměti. Není to chyba, každá aplikace to počítá lehce jinak. Obě také ukazují nižší kapacitu paměti, než systém reálně má: v mém případě 15,5 GB. Zbylých zhruba 500 MB je rezervováno kernelem, a pro operační systém není viditelných a využitelných. Srovnání, kolik paměti který operační systém „žere“, tedy může být trochu ošemetné, nějakých pár set megabajtů vám ale Linux ve srovnání s Windows ušetří.
-O něco sofistikovanější pohled nabízí btop. Zobrazuje graf nedávné historie vytížení, a sleduje i zátěž GPU, takže se může hodit, když ve hře hledáte ideální kompromis mezi kvalitou a framerate pro váš stroj. Podrobnější informace o vytížení grafického jádra vám podá nvtop. Historicky vznikl jako utilita pro karty GeForce, dnes ale podporuje i akcelerátory od AMD a Intelu.
-Ukazuje zvlášť vytížení grafického jádra a zaplněnost jeho paměti, takže lépe vidíte, jak moc si můžete dovolit přidat například na kvalitě textur. Že karta běží v režimu PCI Express Gen 1, není chyba – na plnou rychlosti PCIe 3.0 karta přepíná až při vytížení. Dynamický je i údaj o limitu spotřeby, který je u GeForce GTX 1060 nastavitelný v rozmezí 78–182 wattů; na toto nastavení se podíváme v příští kapitole článku.
-K tématu monitorování mám už jen poslední věc, a to je sledování vytížení jednotlivých disků. K tomu lze použít utilitu nmon. Ta má několik režimů podle toho, co chcete sledovat, pro režim Disk I/O je třeba po startu stisknout klávesu D.
-Výstup může být lehce matoucí, protože graf zobrazuje jak disky, tak jednotlivé oddíly na nich. V případě na screenshotu zrovna probíhá minimální aktivita na oddílu /dev/sdb1, a hodně se zapisuje na /dev/sdc3.
-Nastavení limitu spotřeby pro GeForce
-Následující část je určena pouze pro grafické karty Nvidia. Majitelům grafických karet AMD se omlouvám, aktuálně nemám k dispozici žádný funkční Radeon z poslední dekády.
-Nastavení již zmíněného limitu spotřeby má určitá úskalí. Oficiální grafická utilita „Nvidia X Server Settings“ to neumí. Oficiální utilita nvidia-smi to umí, ale ovládá se pouze textovými příkazy, které si ukážeme níže. Neoficiální utilita GreenWithEnvy má grafické rozhraní, je ale poslední zhruba tři roky neudržovaná, a nefunguje pod Waylandem. Nezávisle na tom, který postup zvolíte, limit vydrží nastavený pouze do restartu.
-Pokud byste chtěli nastavení aplikovat při každém startu, tentokrát nestačí vytvořit si skript spouštěný po přihlášení. Jelikož nastavení limitu vyžaduje oprávnění roota, je v takovém případě nutné vytvořit systémovou službu pro systemd, která proběhne po každém startu.
-Jednorázové nastavení
-Pro zjištění podporovaného rozmezí hodnot pro vaši kartu spusťte:
-nvidia-smi -q -d POWER
-Ve výpisu hledejte tyto řádky:
-Default Power Limit : 156.00 W
-Min Power Limit : 78.00 W
-Max Power Limit : 182.00 W
-Limit nastavíte příkazem:
-sudo nvidia-smi -pl 170
-Číslo udává spotřebu ve wattech, v tomto příkladu tedy 170 W.
-Systémová služba
-S oprávněním roota (sudo) vytvořte soubor /etc/systemd/system/nvidia-powerlimit.service, a uložte do něj následující obsah:
-[Unit]
-Description=Set NVIDIA GPU power limit
-After=multi-user.target
-[Service]
-Type=oneshot
-ExecStart=/usr/bin/nvidia-smi -pl 170
-[Install]
-WantedBy=multi-user.target
-Aktivujte službu:
-sudo systemctl daemon-reload
-sudo systemctl enable nvidia-powerlimit.service
-Po restartu bude limit spotřeby nastaven na 170 wattů, což ověříte například v nvtop.
-Regulace ventilátorů pomocí GreenWithEnvy
-K jedné věci se opuštěná neoficiální utilita přece jenom hodí, a to je regulace ventilátorů. GeForce GTX 1060 (a předpokládám, že i většina dalších moderních karet) v nečinnosti větráky úplně zastavuje, a spouští jen při nárůstu teploty. Při přehrávání některých filmů jsem narazil na otravné chování, kdy teplota kolísá právě okolo hraniční teploty, takže větráky se střídavě rozbíhají a zastavují.
-Chtěl jsem proto předefinovat teplotní křivku, podle níž se ventilátor řídí, aby nechala kartu zahřát třeba na 60 °C, než větráky spustí. Oficiální nástroj od Nvidie, který je součástí ovladačů, to ale neumí, umožňuje pouze nastavit statické otáčky.
-Pokud použijete GWE, neudělejte stejnou chybu jako já. Původně jsem nadefinoval pouze bod 60 ˚C, 0 %. Nástroj potom zobrazuje křivku, která od 60 ke 100 ˚C míří strmě nahoru. Že tomu tak není, jsem zjistil až tehdy, kdy jsem profil zapomněl přepnout, a při hraní Cyberpunku 2077 se podivoval, že je karta podezřele tichá. Větráky se nerozeběhly, a před upečením ve vlastní šťávě kartu uchránila pouze tepelná ochrana, která při dosažení 99 ˚C omezuje výkon. Je tedy potřeba poctivě definovat i polohu křivky s maximálními otáčkami.
-Shrnutí zkušeností a závěr
-Přechod z Windows 10 na Linux Mint jsem provedl okolo Nového roku. Nyní je konec března, a zatím jsem se k Windows nevrátil. Ne snad, že bych zapomněl, jak vypadají a fungují – stále je dennodenně používám na pracovním počítači. Ale zkrátka jsem zatím nenarazil na takový problém, který by mě donutil se vrátit. Není v tom ani negativní sentiment vůči Microsoftu, který by mě nutil snášet nepohodlí. K „hejtrům“ této společnosti a jejích produktů jsem nikdy nepatřil (jedinou výjimkou jsou Microsoft Teams), její současná situace je především smutná.
-Můj počítač je pořád můj počítač. Prostředí Cinnamon funguje hodně podobně jako Windows, není to žádná exotika. Ani nemám pocit, že bych prozkoumával neprobádané území, jako když jsem poprvé zkoušel nějakou linuxovou distribuci asi tak před dvaceti lety. Linux Mint je vlastně docela nudný operační systém, což je dobře. To je mé hlavní příjemné překvapení.
-Aktualizace systému
-V diskuzi pod prvním dílem seriálu mi někdo prorokoval, že dříve nebo později mi systém rozbije nějaká aktualizace. Však to se děje i v „lepších rodinách“ (čti: Windows 11), a v poslední době až nepříjemně často. Na Garbage PC běží Linux Mint už téměř osm měsíců, a za tu dobu vím jen o jedné věci, kterou rozbila aktualizace, konkrétně ta velká z 22.2 na 22.3 – nastavení klávesy Compose, o kterém jsem referoval ve čtvrtém díle. Jinak nic. A není to tím, že by aktualizací bylo poskrovnu; v podstatě každý den přicházejí nové verze od minimálně jednoho, dvou balíčků. Pokud si nezapnete automatické aktualizace, je to až otravné.
-Kompatibilita software
-Problémy v této oblasti se daly čekat, přece jenom je to jiný operační systém.
-Zatímco hry nainstalované přes Steam nebo Heroic fungují, pozor na to, že mody k nim fungovat nemusejí. Některé vyžadují další knihovny typu Visual C++ Redistributable, které v daném prefixu Wine/Protonu nejsou standardně obsaženy. Na stejný problém můžete narazit i s nezávislými utilitami typu neoficiálních editorů map nebo savegame editorů. Možná je zvládnete přes Wine rozchodit, ale bude to práce navíc, takže nakonec možná raději využijete dual boot nebo virtuální stroj.
-Kdo se těšil na českou herní událost roku, Pigeon Come: Bentleyrance, mohl být oprávněně zklamaný. Podpora pro Linux je prý v plánu, dosud vydané verze ale oficiálně fungují pouze na Windows. Pomocí Wine se sice hra spustí, ale už nepřehraje úvodní videosekvenci.
-Bezpečnost
-Co je pravdy na tom, že Linux je přirozeně bezpečnější než Windows? Teoreticky by tomu tak být mělo, zdráhal bych se ale vynášet obecné soudy. Z vlastní zkušenosti nicméně mohu potvrdit, že používání Linuxu chrání proti nákaze pohlavně přenosnými chorobami, zvlášť když se zmíním, že o tom píšu články.
-Výhled do budoucna
-Zatímco údaj na počítadle stažení přímo nevypovídá o tom, kolik uživatelů reálně na Linux přešlo nebo přechází, Linux Mint nabízí i hmatatelnější údaj: objem finančních příspěvků. Graf níže jsem típnul z oficiálních stránek 31. ledna, kdy ještě byla vidět historie za celé tři roky.
-Od září 2025 získává projekt výrazně větší objem prostředků, než by odpovídalo dlouhodobému průměru. Za leden je to oproti předchozímu roku dvojnásobek, za březen to zatím vypadá na zhruba 50 % navíc. Znamená to, že Linux Mint může být v budoucnu ještě lepší.
-Lék na bledou budoucnost hraní na PC?
-Řekněme si na rovinu, že situace pro hráče a příznivce osobních počítačů není v poslední době úplně dobrá. V životní fázi, kdy má člověk čas a chuť hrát, typicky nemá peníze, a hraní se v poslední době stává sakra drahým koníčkem. Zdražily operační paměti, grafické karty, SSD, magnetické pevné disky, chystá se zdražování procesorů, a to ještě otřesům v dodavatelských řetězcích spotřební elektroniky není konec. Ani konzole nejsou v bezpečí. Roz...
-(Pokracovani na webu)|E||T|Rusové panikaří, Apple je odstřihnul od všech plateb: rozjíždí se černý trh s dárkovými kartami|D|09.04.2026 09:46|P|Překupníci si za dárkové karty účtují násobky cen. Vznikají i bizarní webové služby, které přeprodávají virtuální čísla zahraničních platebních karet.|X|K 1. dubnu přestaly v Rusku fungovat veškeré platby Applu – uživatelé nemohou standardní cestou zaplatit za aplikace ani za předplatné. Velká část aplikací tak postupně přestává fungovat a Rusové se musí spoléhat pouze na bezplatné verze. Aktivní předplatná sice fungují, po jejich skončení ale nepůjdou obnovit.
-Zpřísnění sankcí
-Ruský trh spadá v rámci Applu pod irskou pobočku a vztahují se na ni evropská sankční pravidla. Ty již v minulosti do značné míry omezily působení Applu v Rusku, doposud se však netýkaly placení za služby. Uživatelé sice nemohli platit pomocí spárované platební karty, ale bylo možné prostřednictvím operátorů dobít kredit na svůj Apple účet.
-Z něj se strhávaly platby za nové aplikace, předplatné a další obsah. I tato možnost byla ale k 1. dubnu zrušena. Ještě před samotným zavedením zpřísněných pravidel tak mnozí uživatelé převáděli na svoje Apple účty co nejvíc kreditů, které nyní mohou využívat.
-5× dražší dárkové karty
-Rusové, kteří na svých Apple účtech nemají dostatek kreditů na následující platby, začali hledat cesty, jak opatření obcházet. Výrazně tak stoupla poptávka po fyzických dárkových kartách, které překupníci skoupili dlouho před 1. dubnem.
-Nyní je na online tržištích nabízí s obrovskými přirážkami – podle webu Kommersant se karta s kreditem 1 000 rublů prodává asi za šestinásobek. S jejich zmenšující se zásobou navíc ceny rostou. E-shopy do svých nabídek zařadili virtuální dárkové karty, opět s tučnými přirážkami.
-Dalším způsobem, kterým uživatelé v Rusku sankce obcházejí, je využívání zahraničních platebních karet, především z postsovětských republik. Na ty se sankce nevztahují a části Rusů jsou dobře dostupné, opět především prostřednictvím podnikavých překupníků.
-Byť z ruského App Store v posledních týdnech a měsících zmizely prakticky všechny VPN aplikace, uživatelé hledají bezplatné open-source aplikace. Ty umožňují v nastavení telefonů, tabletů a počítačů od Applu změnit region účtu a případně využít získanou zahraniční kartu. V Rusku velmi rychle vzniklo i několik online služeb, které za poplatek zpřístupňují virtuální čísla těchto zahraničních platebních karet, které lze pro dobití kreditu v Apple účtu použít.
-Zdroj: TUAW|E||T|Ostravský startup věří v AI místo zkušeného technika, s investici se má rozšířit po Evropě i Americe|D|09.04.2026 08:53|P|Ostravský startup Edmund získal 2,5 milionu eur (61 milionů Kč) na rozšíření své platformy pro AI diagnostiku průmyslových strojů do Evropy a Spojenýc...|X|Ostravský startup Edmund získal 2,5 milionu eur (61 milionů Kč) na rozšíření své platformy pro AI diagnostiku průmyslových strojů do Evropy a Spojených států. Systém pomáhá továrnám rychleji obnovit výrobu po poruchách a udržet provozní znalosti i při obměně personálu.
-Platforma propojuje řídicí programy strojů, technickou dokumentaci, servisní záznamy a data ze strojů v reálném čase do jedné vrstvy, přes kterou mohou inženýři diagnostikovat poruchy. „Skutečnou výzvou není nedostatek dat, ale nedostatek kontextu. Budujeme AI agenty, kteří rozumí tomu, jak stroje skutečně fungují, až na úroveň řídicího programu. Místo prohledávání dokumentace nebo čekání na experta mohou inženýři jednat okamžitě,“ říká spoluzakladatel a CEO Jakub Szlaur. Investici vede fond Forward.one, přidávají se University2Ventures a čeští Tensor Ventures.
-Odstávky v továrnách jsou nákladné a až 80 % jejich délky tráví odborníci hledáním příčiny poruchy, nikoliv samotnou opravou. Edmund slibuje zkrátit tuto diagnostickou fázi až o 90 %, tedy z hodin nebo dní na minuty. „Edmund řeší jeden z nejvíce přehlížených problémů průmyslové údržby: jak se znalosti předávají a uplatňují pod tlakem,“ uvádí Beau Anne-Chilla, partnerka fondu Forward.one.
-Firmu založili v roce 2023 Jakub Szlaur, Benjamin Przeczek a Miroslav Marek v Praze. Pohybuje se v prostředí, kde továrny přecházejí od mechanických strojů k elektronicky řízeným, softwarově definovaným systémům a produkují stále větší objemy dat, ale zkušených inženýrů ubývá. Jen v Evropě zůstávají desítky tisíc pozic neobsazeny a přibližně pětina současných pracovníků odejde do důchodu v příštím desetiletí. Edmund do roka od vzniku přešel z prototypu do komerčních nasazení, mimo jiné v automobilovém průmyslu, a jako výchozí základnu pro další expanzi si zvolil střední a východní Evropu.|E||T|Škoda vyvinula zvonek, kterým cyklisté přelstí sluchátka s ANC|D|09.04.2026 08:45|P||X|ANC (aktivní potlačení hluku) je skvělá technologie. Sluchátka s ANC vás odříznou od únavného hluku, skvěle fungují ve vlaku, v letadle, ale lidé je používají i tam, kde vznikají problémy.
-Podle dat Transport for London se jen v roce 2024 zvýšil počet střetů cyklistů s chodci o 24 %. Mohou za to rostoucí počty cyklistů, ale experti část problému připisují také sluchátkům s ANC. V ulicích Londýna je nosí až polovina chodců. Omezují schopnost chodců vnímat dění v okolí a reagovat na něj, mnohá z nich jsou tak efektivní, že jimi nepronikne ani zacinkání běžného zvonku na kolo.
-A tak Škoda ve spolupráci s University of Salford vyvinula DuoBell – analogové řešení digitálního problému, tedy plně mechanický zvonek, který ošálí chytré algoritmy sluchátek a výrazně zvýší šanci, že chodec jeho zvuk zaznamená.
-Klíčem k úspěchu nové konstrukce bylo odhalit, jak fungují algoritmy potlačování hluku. Výzkumný tým identifikoval úzké frekvenční pásmo, bezpečnostní mezeru 750–780 Hz, která dovede filtry ANC sluchátek proniknout. Zvonek tedy generuje zvukové vlny, které ANC algoritmy nedovedou vyhodnotit dostatečně rychle, aby je potlačily. Ale je tu ještě druhý rezonátor (proto název DuoBell), který zvoní jako klasický a snadno rozpoznatelný cyklistický zvonek.
-Měření ukázala, že chodci se sluchátky s ANC sluchátky měli po aktivaci zvonku DuoBell až o 22 metrů více prostoru k reakci, což představuje důležitou bezpečnostní rezervu. V praktických testech v ulicích Londýna ve spolupráci s rozvážkovou službou Deliveroo, se zvonek osvědčil natolik, že si jej kurýři chtěli ponechat.
-Škoda neplánuje DuoBell vyrábět, místo toho kompletní technická data a výsledky výzkumu poskytla k volnému užití. Cílem je, aby koncept převzali výrobci cyklistického příslušenství, implementovali jej do svých produktů a pomohli tak rychleji zvýšit bezpečnost v městském provozu.|E||T|Svět domén v roce 2025: od kvantity ke kvalitě a bezpečnosti|D|09.04.2026 04:30|P|Společnosti InterNetX a Sedo vydaly publikaci Global Domain Report 2026, která mapuje vývoj globálního doménového ekosystému v roce 2025 a nabízí stra...|X|Globální doménový prostor dosáhl v roce 2025 nového historického maxima s celkovým počtem 386,9 milionu registrovaných domén, což představuje meziroční nárůst o 3,4 %. Trh vykazuje známky zralosti, kde je dřívější explozivní až spekulativní růst nahrazen stabilní dynamikou poháněnou technologickými inovacemi (zejména AI, byť i zde najdeme čas od času spekulativní vlny), přísnější regulací a přípravou na nové kolo programu gTLD v roce 2026.
-Dominantním hráčem zůstává přípona .com, říká Global Domain Report 2026, avšak výrazný rozmach zaznamenávají nové gTLD (+29,9 %) a vybrané ccTLD. Byznysový sentiment pro rok 2026 je optimistický, přičemž 45 % respondentů podle zprávy očekává další nárůst registračních aktivit.
-Současný stav doménového světa reflektuje přechod od kvantity ke kvalitě a bezpečnosti. Přestože trh roste stabilně, dochází k vnitřním posunům v podílech jednotlivých segmentů. Dominanci v TLD si udržuje doména .com (161 mil. registrací), do první desítky se poprvé probojovaly domény .xyz (8,1 mil. registrací) a .top (5,7 mil. registrací), což vytlačilo tradiční národní domény jako .br (Brazílie) a .au (Austrálie).
-Pokud se podíváme na počty evropských ccTLD, tak .cz s počtem 1 515 860 domén těsně unikl zápis do TOP 10.
-Zpráva uvádí, že AI už není pouze trendem, ale stává se motorem doménového trhu. Doména .ai (čistě technicky ccTLD ostrova Anguilla) dosáhla v lednu 2026 přes jeden milion registrací s meziročním růstem 67 %. Klíčový moment byl červenec 2023, kdy byl spuštěn model ChatGPT pro veřejnost.
-Dále zpráva uvádí, že nástroje pro vibe coding dramaticky usnadnily tvorbu webové prezentace i pro netechnické uživatele, což vedlo k oživení trhu v druhém čtvrtletí 2025. Autonomní agenti AI začínají provádět nezávisle jednotlivé transakce. Domény v AI světě začaly sloužit jako stabilní „štítek původu“ a ověřené koncové body API, staly se tak stabilními a verifikovatelnými identifikátory v celém ekosystému.
-Zda opravdu může být doména zárukou identity a signálem důvěry pro automatizované agenty (a v konečném důsledku i pro uživatele) uvidíme v brzké budoucnosti, ale přiznám se, že jsem k tomu lehce skeptický.
-Výsledky českých aukcí domén, které probíhají každý den a v nedávné době byly obohaceny o nové funkce, (zatím) nedosahují částky, kterou někdo zaplatil za law.ai, ale když se podíváme na výsledky aukcí v roce 2026, tak je vidět, že o „propadlé“ domény je zájem. První místa obsadily domény gol.cz (198 000,–Kč), nejlevnejsi.cz (151 000,–Kč), veda.cz (91 000,–Kč), vaclavklaus.cz (59 000,– Kč), nebo erotickemasaze.cz (52 000,–Kč).
-Nové generické top-level domény (new gTLD) přidané od roku 2014 (například .shop, .online, .top, .xyz) prošly bouřlivou dekádou, která zahrnovala počáteční nárůst, korekci, čištění portfolia a od roku 2022 opět růst. Dnes tvoří 12,4 % celkového trhu s téměř 48 miliony domén. Nejde tak už o exotický okraj doménového vesmíru. Nicméně jak zpráva uvádí, data crawlerů odhalují, že vysoké počty registrací ne vždy odpovídají aktivním webům. U new gTLD je míra aktivního využití 62,9 %, zatímco 12,3 % domén je zaparkováno (u gTLD jen 5,6 %). .xyz má obrovský počet registrací, ale relativně málo aktivních webů.
-ICANN v současné době připravuje další kolo programu pro nové generické domény nejvyšší úrovně (s uzávěrkou zřejmě v červnu 2026), včetně potenciálních domén pro města a jeho vypsání se očekává v dubnu 2026. V roce 2012 došlo úpravou pravidel k povolení registrace domén také pro konkrétní města (cityTLD) jako je například .amsterdam, .london, .berlin, .tokyo, nebo .nyc. Stále více měst a regionů po celém světě používá vlastní městskou doménu nejvyšší úrovně, a to nejen pro webové stránky místní samosprávy, ale také často pro místní podniky, restaurace, organizace a média, které chtějí přilákat návštěvníky ze svého města a vidí tak v „městské doméně“ další možnost pro propagace a odlišení. Podle zprávy v počtu cityTLD registrací vede žebříček .berlin, .tokyo a .hamburg.
-Zpráva také uvádí, že WIPO (World Intellectual Property Organization) zaznamenala v roce 2025 historicky nejvyšší počet případů sporů o doménová jména: přes 6 200 případů. Za 25 let existence systému UDRP bylo vyřešeno přes 80 000 sporů. Dominuje .com s 5 713 případy, ale nová gTLD silně přibývají: .shop (447 případů), .online (189), .top (159). Z celkového počtu jich jen 5 % bylo zamítnuto, v 15 % případů došlo k vyrovnání a u 79 % případů došlo k převedení na žalobce a pokračování sporu.
-Závěrem zpráva předpokládá, že registry i registrátoři se z „pouhých“ prodavačů domén budou specializovat (pokud zvládnou ustát tlak v podobě NIS2 a dalších regulačních aktivit) k balíčkování služeb, které budou obsahovat verifikaci držitele, potvrzení identity držitele a další bezpečnostní vrstvy. Primárním konzumentem bude stále více stroj a nikoliv člověk.|E||T|OpenAI a Python: pracujeme so súbormi, shellom, MCP a audiom|D|08.04.2026 22:00|P|V tomto článku si ukážeme ďalšie možnosti OpenAI Python knižnice pre prácu so súbormi, shellom, MCP servermi a audiom, ktoré nám ponúka moderné Respon...|X|Zopakujme si, že potrebujeme mať účet na portáli platform.openai.com, zakúpený minimálny kredit 5 USD, vygenerovaný API kľúč a nastavenú environmentálnu premennú OPENAI_API_KEY
+Vývoj integrace trval přibližně devět měsíců. Nová funkce je dostupná přímo z hlavního menu administrace. Podmínkou je mít v Shoptetu nastavené skladové hospodářství a podporu cizích měn.|E||T|OpenAI a Python: pracujeme so súbormi, shellom, MCP a audiom|D|08.04.2026 22:00|P|V tomto článku si ukážeme ďalšie možnosti OpenAI Python knižnice pre prácu so súbormi, shellom, MCP servermi a audiom, ktoré nám ponúka moderné Respon...|X|Zopakujme si, že potrebujeme mať účet na portáli platform.openai.com, zakúpený minimálny kredit 5 USD, vygenerovaný API kľúč a nastavenú environmentálnu premennú OPENAI_API_KEY
 .
 Co se dozvíte v článku
 Z Python knižníc potrebujeme openai

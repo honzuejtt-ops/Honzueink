@@ -1,4 +1,3 @@
-|T|Chyba|D||P|Něco se pokazilo.|X|'NoneType' object has no attribute 'strip'|E|
 |T|Programování s AI, jak funguje Unicode a jak na QUIC, zápisky z InstallFestu|D|9.4. 22:00|P|O víkendu na konci března proběhla v Praze na Karlově náměstí tradiční konference InstallFest. Mluvilo se o protokolu QUIC, uložení klíčů v hardwaru, ...|X|David Čermák: Rychlý úvod do protokolu QUIC
 QUIC je složitý protokol a dostat ho do malého embedded zařízení není jednoduché. QUIC také není nic nového, podle služby Cloudflare Radar je v Česku zastoupen jednou třetinou spojení. Dvěma třetinami stále dominuje TLS 1.3.
 HTTPS spojuje spolehlivost TCP a šifrování pomocí TLS. Je to hezky propojené a je to krásné, ale dalo by se to dělat rychleji.

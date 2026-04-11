@@ -1,4 +1,4 @@
-|T|Artemis II: Zbývají minuty. Orion dopadne do vod Tichého oceánu ve dvě ráno našeho času|D|10.04.2026 23:57|P|Užitečné odkazy
+|T|Splashdown! Astronauti přistáli poblíž Kalifornie. Pak nastala vtipná situace. Nefungoval telefon a záchrana se protáhla|D|11.04.2026 01:37|P|Užitečné odkazy
 
 
 	Artemis II Arrow – Aktuální poloha lodi ve 3D
@@ -8,16 +8,24 @@
 
 
 
-Oživeno...|X|Oživeno 02:01 | Šestiminutové drama skončilo, posádka navázala spojení.
-Pohled z pozemních infračervených kamer
-Oživeno 01:55 | Nastává VLDR – Very Low Data Rate. Česky a jednodušeji řečeno, Orion při průletu horními vrstvami atmosféry na šest minut ztrácí signál. Chybí holt Starlink. I když těžko říci, jestli by při velikosti modulu pomohl – na rozdíl od mohutného Starshipu jej bude téměř celý obtékat plazma a rušit signál.
-Ihned po tomto políčku z živého přenosu obraz vypadává a nastává šestiminutový blackout. Nahoře ve středu už září plazma, která postupně obklopí loď a zamezí rádiovému přenosu
+Oživeno...|X|Oživeno 03:35 | Potápěči pod lodí nafoukli speciální vak pro stabilizaci při extrakci astronautů. Ty pak odveze jednoho po druhém helikoptéra na výsadkovou loď USS John P. Murtha, která kotví opodál. Tam absolvují zdravotní prohlídku a poté odletí na pevninu a zpět do ústředí NASA v Houstonu.
+Čtyři astronauti (v oranžových kombinézách) jsou už na nafukovacím pontonu
+Oživeno 02:45 | Toto je dobré připomenutí, na jak malém prostoru se čtveřice tísnila celých 9 dnů a několik hodin. Kosmická loď a nafukovací člun námořníků.
+Orion – Integrity a srovnání velikosti s člunem
+Oživeno 02:24 | Jedinou roztomilou komplikací při přistání byl nefunkční satelitní telefon, kterým se má posádka spojit se záchranáři. Ti krouží okolo na rychlých člunech a čekají na hovor. Po navázání spojení může posádka vypnout loď. Rádiová komunikace s NASA ale samozřejmě funguje.
+Čekejte prosím, volané číslo neodpovídá...
+Oživeno 02:07 | Splashdown! Loď Orion – Integrity naprosto příkladně prolétla atmosférou a přistála do vod Tichého oceánu nedaleko pobřeží jižní Kalifornie.
+Roztažení padáků a klidné přostání do vod pobliž San Diega
+Oživeno 02:01 | Šestiminutové drama skončilo, posádka navázala spojení.
+Pohled z infračervených kamer na palubě letadla
+Oživeno 01:55 | Nastává blackout. Orion při průletu horními vrstvami atmosféry na šest minut ztrácí signál.
+Ihned po tomto políčku z živého přenosu obraz vypadává. Nahoře ve středu už září plazma, která postupně obklopí loď
+Chybí holt Starlink. I když těžko říci, jestli by při velikosti modulu pomohl – na rozdíl od mohutného Starshipu jej bude téměř celý obtékat plazma a rušit signál.
 Musíme se spokojit alespoň s real-time animací
 Oživeno 01:38 | Během návratu Artemis I dostal štít lodi pořádně zabrat a začal se rozpadat. Musel totiž odolávat vysokým teplotám poměrně dlouhou dobu. Orion na misi Artemis II má stejný štít, loď proto bude klesat po kratší (ale rychlejší) trajektorii.
-Po oddělení ESM jsme přišli o venkovní kamery, a tak si musíme vystačit s obrazem skrze okénko kabiny modulu pro posádku.
+Po oddělení ESM jsme přišli o venkovní kamery, a tak si musíme vystačit s obrazem skrze okénko kabiny modulu pro posádku
 Příští a přespříští rok na misích Artemis III a IV se NASA vrátí k původní trajektorii, lodě totiž dostanou nový a ještě odolnější štít.
 Oživeno 01:35 | Sloužil dobře! Evropský servisní modul, který se deset dnů staral o pohon, energii, komunikaci a další kritické systémy, se odpojil od modulu pro posádku. Tím se i poprvé od sestavení lodi obnažil kompozitní tepelný štít, který v příštích minutách sehraje klíčovou roli. Při průchodu svrchními vrstvami atmosféry se rozpálí až na 2760 °C.
-Okamžik oddělení modulu s posádkou od ESM a pravděpodobně také poslední záběr z vesmíru. Kamery se totiž nachází na jeho solárních panelech
 Oživeno 01:24 | Záchranné vrtulníky se připravují na vylovení posádky. Ta se zatím chystá na oddělení Evropského servisního modulu v příštích minutách.
 Pátek 10. dubna 2026
 Oživeno 15:45 | Jak bude vypadat přistání:
@@ -69,14 +77,7 @@ Pondělí 6. dubna 2026
 Oživeno 22:00 | Mise Artemis II v 19:56 překonala rekord ve vzdálenosti lidí od Země. Od dubna 1970 jej s hodnotou 400 171 km držela mise Apollo 13. Artemis II by se měla dostat až na hodnotu 406 771 km.
 Oživeno 21:10 | Software, ve kterém bude posádka pracovat. Vlevo nahoře je seznam úkolů, dole jsou jednotlivé úkoly podrobněji rozepsané. Schematicky popsaný obraz Měsíce má pomoci navigovat oči a objektivy do správných míst. Dole pak jsou vypsané náležitosti, které má záznam o pozorování obsahovat (ale to by nemělo být potřeba, astronauti záznam průletu trénovali několik měsíců).
 Oživeno 19:20 | Živý přenos NASA můžete sledovat třeba na X.com:
-Oživeno 17:40 | Posádku do nového dne přivítal Jim Lovell – astronaut misí Gemini VII, Gemini XII, Apollo 8 a Apollo 13. Apollo 8 mělo podobný úkol jako dnes Artemis II – poprvé ukázalo Měsíc zblízka a jeho fotka celé Země inspirovala a sjednotila lidi po celém světě.
-Lovell přivítal astronauty „v jeho staré čtvrti“, předal jim pomyslnou pochodeň a připomněl, že i přes všechny úkoly, které je při obletu čekají, nemají zapomenout užít si výhled. Celé znění vzkazu na Nasa.gov.
-Pro posádku Artemis to byla emotivní chvilka – zejména protože Lovell krátce po nahrání vzkazu (v srpnu 2025) zemřel.
-Oživeno 13:00 | Dnešní přiblížení k Měsíci má následující plán (převedeno na středoevropský čas):
-- 16:50 – Plánovaný budíček pro astronauty
-- 19:00 – Začíná přenos z průletu kolem Měsíce na platformě NASA+, posádka uvidí přivrácenou i odvrácenou stranu
-- 19:56 – Posádka překoná rekord v největší vzdálenosti lidí od Země, který dříve stanovila mise Apollo 13 v roce 1970. Posádka má připravený projev (audio)
-- 20:15 – Posádka konfiguruje kabinu lodi Orion pro operace při průletu...
+Oživeno 17:40 | Posádku do nového dne přivítal Jim Lovell – astronaut misí Gemini VII, Gemini XII, Apollo 8 a Apollo 13. Apollo 8 mělo podobný úkol jako dnes Artemis II – poprvé ukázalo Měsíc zblízka...
 (Pokracovani na webu)|E||T|Dubnový akční tarif T-Mobilu nabídne 150 minut, 150 SMS a 5 GB dat za 335 Kč měsíčně|D|10.04.2026 17:45|P||X|T-Mobile i v roce 2026 pokračuje s nabídkou akčního tarifu, s nímž se pokusí oslovit nové zájemce nebo zákazníky přecházející od konkurence. Aktuální výhodný tarif znamená slevu z běžně nabízeného tarifu Next Data 5 GB z aktuální generace tarifů Next (2024). Ten obsahuje 150 volných minut a 150 volných SMS do všech sítí, a k tomu 5 GB dat.
 Operátor nabízí proti běžné ceně 485 Kč měsíčně propagační slevu 150 Kč (sleva 31 %), což znamená, že zákazník bude za uvedené služby po celou dobu využívání tarifu platit měsíční paušál 335 Kč. Tuto nabídku lze aktivovat výhradně na webu operátora nejpozději do 30. dubna 2026 (nebo do dalšího prodloužení platnosti). Tarif lze následně se zvýhodněnou cenu používat po dobu pěti let.
 I po vyčerpání přiděleného objemu dat lze určitým minimalistickým způsobem datově fungovat, a to díky službě „Pořád online“, která je ale rychlostně přiškrcena na 256 kbit/s. Navíc je potřeba ji aktivovat každý měsíc pořád dokola v aplikaci Můj T-Mobile.

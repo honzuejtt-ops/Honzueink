@@ -1,4 +1,83 @@
-|T|Dubnový akční tarif T-Mobilu nabídne 150 minut, 150 SMS a 5 GB dat za 335 Kč měsíčně|D|10.04.2026 17:45|P||X|T-Mobile i v roce 2026 pokračuje s nabídkou akčního tarifu, s nímž se pokusí oslovit nové zájemce nebo zákazníky přecházející od konkurence. Aktuální výhodný tarif znamená slevu z běžně nabízeného tarifu Next Data 5 GB z aktuální generace tarifů Next (2024). Ten obsahuje 150 volných minut a 150 volných SMS do všech sítí, a k tomu 5 GB dat.
+|T|Artemis II: Zbývají minuty. Orion dopadne do vod Tichého oceánu ve dvě ráno našeho času|D|10.04.2026 23:57|P|Užitečné odkazy
+
+
+	Artemis II Arrow – Aktuální poloha lodi ve 3D
+	Artemis II Tracker (neoficiální)
+	Živý přenos z lodi, komentovaný přenos
+
+
+
+
+Oživeno...|X|Oživeno 02:01 | Šestiminutové drama skončilo, posádka navázala spojení.
+Pohled z pozemních infračervených kamer
+Oživeno 01:55 | Nastává VLDR – Very Low Data Rate. Česky a jednodušeji řečeno, Orion při průletu horními vrstvami atmosféry na šest minut ztrácí signál. Chybí holt Starlink. I když těžko říci, jestli by při velikosti modulu pomohl – na rozdíl od mohutného Starshipu jej bude téměř celý obtékat plazma a rušit signál.
+Ihned po tomto políčku z živého přenosu obraz vypadává a nastává šestiminutový blackout. Nahoře ve středu už září plazma, která postupně obklopí loď a zamezí rádiovému přenosu
+Musíme se spokojit alespoň s real-time animací
+Oživeno 01:38 | Během návratu Artemis I dostal štít lodi pořádně zabrat a začal se rozpadat. Musel totiž odolávat vysokým teplotám poměrně dlouhou dobu. Orion na misi Artemis II má stejný štít, loď proto bude klesat po kratší (ale rychlejší) trajektorii.
+Po oddělení ESM jsme přišli o venkovní kamery, a tak si musíme vystačit s obrazem skrze okénko kabiny modulu pro posádku.
+Příští a přespříští rok na misích Artemis III a IV se NASA vrátí k původní trajektorii, lodě totiž dostanou nový a ještě odolnější štít.
+Oživeno 01:35 | Sloužil dobře! Evropský servisní modul, který se deset dnů staral o pohon, energii, komunikaci a další kritické systémy, se odpojil od modulu pro posádku. Tím se i poprvé od sestavení lodi obnažil kompozitní tepelný štít, který v příštích minutách sehraje klíčovou roli. Při průchodu svrchními vrstvami atmosféry se rozpálí až na 2760 °C.
+Okamžik oddělení modulu s posádkou od ESM a pravděpodobně také poslední záběr z vesmíru. Kamery se totiž nachází na jeho solárních panelech
+Oživeno 01:24 | Záchranné vrtulníky se připravují na vylovení posádky. Ta se zatím chystá na oddělení Evropského servisního modulu v příštích minutách.
+Pátek 10. dubna 2026
+Oživeno 15:45 | Jak bude vypadat přistání:
+- 42 minut před dopadem nad Havajskými ostrovy Orion odhazuje Evropský servisní modul a poprvé od složení rakety obnaží svůj tepelný štít
+- Orion dosahuje maximální rychlosti 23 864 km/h
+- Orion vstupuje do atmosféry 13 minut před dopadem ve výšce 122 km
+- Tepelný štít čelí v maximu teplotám až 2760 °C
+- Ve výšce 7-11 km Orion odhazuje čelní poklop
+- Ve výšce 6,7 km se začínají vytahovat padáky. Nejprve pomocné, poté hlavní
+- Přistání
+Nejpozději do dvou hodin po dopadu vyzvednou posádku záchranáři v helikoptéře a odvezou je na výsadkovou loď USS John P. Murtha. Čeká je tam první zdravotní prohlídka.
+Vertikální schéma přistání
+Poté je námořníci dopraví na pobřeží, kde už na ně bude čekat letecký speciál, který je odveze do Johnsonova centra NASA v Houstonu. Čtveřici astronautů dnes proto čeká opravdu hodně náročný páteční tah.
+Detailní pohled na sekvenci zpomalení pádu pomocí padáků
+Živý přenos z přistání bude NASA vysílat jako doposud na YouTube (přenos si můžete spustit v záhlaví článku) a sociálních sítích, ale zapojí se také Netflix (odkaz na přenos), Apple TV, Amazon Prime, HBO Max, Discovery a další.
+Dopadová trajektorie
+Oživeno 15:30 | Mise Artemis II míří do velkého finále. NASA očekává dopad do vod Tichého oceánu západně od San Diega (Kalifornie) dnes v 17:07 pacifického letního času (sobota, 02:07 SELČ). Diváci z Česka se neobejdou bez pořádné dávky kofeinu.
+Projekce přistávací trajektorie (UTC čas)
+Astronomické weby se už plní grafy, odkud bude možné Orion pozorovat a jak bude vypadat návratová trajektorie. Přehledná data najdete třeba na stránkách Heavens Above. Evropané budou mít nicméně ve finální fázi smůlu. Vzhledem k místu přistání totiž bude Orion klesat nad Pacifikem směrem k pobřeží Kalifornie.
+Čtvrtek 9. dubna 2026
+Oživeno 16:30 | Loď Orion je ve čtvrtek odpoledne téměř v polovině cesty zpět k Zemi a NASA v archivu zveřejnila efektní video ze samotného startu rakety SLS, jak jej zachytily infračervené kamery (NIR / blízké infračervené spektrum, 800-2500 nm).
+Ve stabilizovaném a na polovinu zpomaleném videu vidíme v detailu úvodní zapálení motorů a poté proud horkých plynů okolo trysek ve vysokém přiblížení. Tyto záběry slouží k inspekci, jak probíhá hoření a jak je na tom integrita pláště prvního stupně a nejbližšího okolí.
+Na záběrech uvidíte v ohromném detailu jak hoření v tryskách vodíkových motorů RS-25, tak postranní boostery na tuhé hliníkové palivo.
+Zdroj videa: NASA
+Středa 8. dubna 2026
+Oživeno 18:45 | Posádka měla zkraje mise trošku problémy s produkty MIcrosoftu, však to znáte... Ale humory stranou. Loď řídí palubní počítač, posádka má ale své osobní počítače. Něco si o nich povíme. A také o tom, jak posílají fotky zpět k Zemi.
+Oživeno 12:00 | Loď Orion během noci provedla úspěšnou korekci návratové dráhy a mise Artemis II se pomalu chýlí ke svému konci. Příběh ale rozhodně nekončí, už příští rok nás totiž čeká Artemis III a test spojení Orionu s lunárním modulem.
+NASA zve Američany na slavnostní vytažení prvního stupně v pořadí už třetí rakety SLS, který poté zamíří z New Orleans na Floridu do největší montážní haly svého druhu na světě VAB.
+Oživeno 11:30 | Jakou techniku posádka používala k fotografickému průzkumu Měsíce? Rozebíráme to v podrobném technickém článku na Digiaréně, kde vám ukážeme i konkrétní objektivy.
+Úterý 7. dubna 2026
+Oživeno 22:00 | NASA potvrdila, že Orion opustil vliv Měsíce a opět převážila gravitace Země. Teď už tedy loď padá zpět. Splashdown v pátek 10. dubna místního času.
+Oživeno 17:30 | Archiv NASA se postupně plní úřasnými záběry ze západu i východu Země, detailní topografií Měsíce a také zatměním Slunce. NASA posádku vyzbrojila full-frame zrcadlovkou Nikon D5 s 400mm teleobjektivem a níže si můžete rpohlédnout, jak stroj fungoval v praxi během průletu lodi za Měsícem
+Oživeno 15:15 | Na první fotografie průletu okolo Měsíce ve vysokém rozlišení jsme si nakonec museli počkat až do odpoledních hodin. Ale stojí za to. Kdyby je nezveřejnila NASA, tak si snad pomyslíme, že je vytvořil některý z obrázkových generátorů. Vypadají totiž opravdu jako ilustrace z AI.
+Západ Země
+Na prvním snímku vidíme západ Země poté, co se Orion včera hluboko v noci zanořil do stínu Měsíce. Na druhém snímku je pak zatmění Slunce z bezprostřední blízkosti.
+Zatmění Slunce
+Oživeno 01:26 | Oblet Měsíce se podařil a Orion opět navázal spojení s telekomunikační sítí DSN na zemském povrchu. Nepříliš kvalitní obrázky z živého přenosu v příštích hodinách doplní fotografie ve vysokém rozlišení.
+Orion se vynořil ze stínu Měsíce a NASA s ním úspěšně obnovila spojení
+Posádka nyní bude pokračovat v pozorování Měsíce a zatmění Slunce. Vše skončí až hluboko v noci našeho času. Viz podrobný rozpis obletu níže v článku.
+Sedmý den mise by měl být pro astronauty volnější. Orion opustí oblast působení Měsíce (znovu převáží vliv Země) a podle situace provede první korekční návratový zážeh motoru. Během osmého dne nás čeká demonstrace radiačního stínění a ruční pilotáže. Devátý den je na pořadu další drobný korekční zážeh a desátý den mise Orion konečně přistává zpět na Zemi.
+Oživeno 01:20 | Krátce před očekávanou obnovou signálu se podívejme do velínu mise. Fanoušky open-source jistě potěší. že hlavní obrazovku vzadu na stěně vyplňuje... Oblíbený videopřehrávač VLC s animací Měsíce (označen zeleným obdélníkem).
+VLC mají rádi i v NASA
+Oživeno 00:40 | Několik minut před tím, než se Orion dostal na odvrácenou stranu Měsíce a NASA ztratila dle plánu rádiové spojení s lodí, jsme se mohli pokochat živými záběry, na kterých je vidět v jedné řadě Orion, Měsíc a zcela vpravo Země. Tahle to vypadalo přesně 180 sekund před ztrátou signálu.
+Orion, Měsíc a Země v jedné řadě a v živém přenosu
+O přenos dat z lodi se po většinu cesty k Měsíci a zpět stará síť pozemských parabol DSN (Deep Space Network). Krátce před tím, než loď zmizela v měsíčním stínu, to byla anténa DSS 34 v australské Canbeře. Přehled o tom, jaká mise právě teď zatěžuje které zařízení, najdete na webu DSN Now.
+Jedním z experimentů na palubě je nicméně i O2O (Orion Artemis II Optical Communications System) pro laserovou komunikaci se Zemí. Test byl úspěšný a posádka v minulých dnech přenesla gigabajty dat. Laserová vysílačka má velikost domečku pro kočky a zvládne datový tok až 260 Mb/s k Zemi a 20 Mb/s zpět.
+DSN Now – telemetrii z Orionu přenáší zařízení DSS 34 v australské Canbeře
+Pondělí 6. dubna 2026
+Oživeno 22:00 | Mise Artemis II v 19:56 překonala rekord ve vzdálenosti lidí od Země. Od dubna 1970 jej s hodnotou 400 171 km držela mise Apollo 13. Artemis II by se měla dostat až na hodnotu 406 771 km.
+Oživeno 21:10 | Software, ve kterém bude posádka pracovat. Vlevo nahoře je seznam úkolů, dole jsou jednotlivé úkoly podrobněji rozepsané. Schematicky popsaný obraz Měsíce má pomoci navigovat oči a objektivy do správných míst. Dole pak jsou vypsané náležitosti, které má záznam o pozorování obsahovat (ale to by nemělo být potřeba, astronauti záznam průletu trénovali několik měsíců).
+Oživeno 19:20 | Živý přenos NASA můžete sledovat třeba na X.com:
+Oživeno 17:40 | Posádku do nového dne přivítal Jim Lovell – astronaut misí Gemini VII, Gemini XII, Apollo 8 a Apollo 13. Apollo 8 mělo podobný úkol jako dnes Artemis II – poprvé ukázalo Měsíc zblízka a jeho fotka celé Země inspirovala a sjednotila lidi po celém světě.
+Lovell přivítal astronauty „v jeho staré čtvrti“, předal jim pomyslnou pochodeň a připomněl, že i přes všechny úkoly, které je při obletu čekají, nemají zapomenout užít si výhled. Celé znění vzkazu na Nasa.gov.
+Pro posádku Artemis to byla emotivní chvilka – zejména protože Lovell krátce po nahrání vzkazu (v srpnu 2025) zemřel.
+Oživeno 13:00 | Dnešní přiblížení k Měsíci má následující plán (převedeno na středoevropský čas):
+- 16:50 – Plánovaný budíček pro astronauty
+- 19:00 – Začíná přenos z průletu kolem Měsíce na platformě NASA+, posádka uvidí přivrácenou i odvrácenou stranu
+- 19:56 – Posádka překoná rekord v největší vzdálenosti lidí od Země, který dříve stanovila mise Apollo 13 v roce 1970. Posádka má připravený projev (audio)
+- 20:15 – Posádka konfiguruje kabinu lodi Orion pro operace při průletu...
+(Pokracovani na webu)|E||T|Dubnový akční tarif T-Mobilu nabídne 150 minut, 150 SMS a 5 GB dat za 335 Kč měsíčně|D|10.04.2026 17:45|P||X|T-Mobile i v roce 2026 pokračuje s nabídkou akčního tarifu, s nímž se pokusí oslovit nové zájemce nebo zákazníky přecházející od konkurence. Aktuální výhodný tarif znamená slevu z běžně nabízeného tarifu Next Data 5 GB z aktuální generace tarifů Next (2024). Ten obsahuje 150 volných minut a 150 volných SMS do všech sítí, a k tomu 5 GB dat.
 Operátor nabízí proti běžné ceně 485 Kč měsíčně propagační slevu 150 Kč (sleva 31 %), což znamená, že zákazník bude za uvedené služby po celou dobu využívání tarifu platit měsíční paušál 335 Kč. Tuto nabídku lze aktivovat výhradně na webu operátora nejpozději do 30. dubna 2026 (nebo do dalšího prodloužení platnosti). Tarif lze následně se zvýhodněnou cenu používat po dobu pěti let.
 I po vyčerpání přiděleného objemu dat lze určitým minimalistickým způsobem datově fungovat, a to díky službě „Pořád online“, která je ale rychlostně přiškrcena na 256 kbit/s. Navíc je potřeba ji aktivovat každý měsíc pořád dokola v aplikaci Můj T-Mobile.
 Mezi dlouhodobě sledovanými akčními tarify T-Mobilu jde o jednu z výhodnějších nabídek, ale k odpovídající ceně má stále daleko. Reálná hodnota daného tarifu vzhledem k obsaženým jednotkám je přibližně 240 Kč.
@@ -238,87 +317,7 @@ Od 58 Kč měsíčně|E||T|Škoda s partnery představila zvonek, který přelst
 Prostřednictvím akustických testů ANC technologie výzkumný tým identifikoval úzké frekvenční pásmo, bezpečnostní mezeru („safety gap“), která dovede filtry ANC sluchátek proniknout. Jde o rozmezí frekvencí 750–780 Hz. Odborníci tak zvonek s názvem DuoBell naladili právě i na tuto frekvenci. Má ale i další rezonátor, který je naladěný na vyšší frekvenci a díky speciálně navrženému kladívkovému mechanismu vytváří rychlé a nepravidelné údery. Tím generuje zvukové vlny, které ANC algoritmy nedovedou vyhodnotit dostatečně rychle, aby je potlačily.
 Na nápadu pracovala i agentura PHD a na přípravě prototypu se podílela produkční společnost Unit 9. Projekt reaguje na stoupající počet nehod cyklistů s chodci, na kterém se podílí i obliba sluchátek s aktivním potlačováním zvuku.
 Partneři testovali zvonek v Londýně, v němž má sluchátka s aktivním potlačováním hluku nosit až polovina chodců. Měření podle Škody ukázala, že chodci se sluchátky s aktivní funkcí potlačování hluku měli po aktivaci zvonku DuoBell až o 22 metrů více prostoru k reakci.
-Testy probíhaly s kurýry společnosti Deliveroo v průběhu února. Podle firem si je kurýři chtěli ponechat. Automobilka chce dát k dispozici výzkumné poznatky a zjištění, které za vývojem stojí.|E||T|Artemis II: Mise míří do finále. Orion dopadne do vod Tichého oceánu ve dvě ráno našeho času|D|10.04.2026 13:33|P|Užitečné odkazy
-
-
-	Artemis II Arrow – Aktuální poloha lodi ve 3D
-	Artemis II Tracker (neoficiální)
-	Živý přenos z lodi, komentovaný přenos
-
-
-
-
-Oživeno...|X|Oživeno 15:45 | Jak bude vypadat přistání:
-- 42 minut před dopadem nad Havajskými ostrovy Orion odhazuje Evropský servisní modul a poprvé od složení rakety obnaží svůj tepelný štít
-- Orion dosahuje maximální rychlosti 23 864 km/h
-- Orion vstupuje do atmosféry 13 minut před dopadem ve výšce 122 km
-- Teplený štít čelí v maximu teplotám až 2760 °C
-- Ve výšce 7-11 km Orion odhazuje čelní poklop
-- Ve výšce 6,7 km se začínají vytahovat padáky. Nejprve pomocné, poté hlavní
-- Dopad
-Nejpozději do dvou hodin po dopadu vyzvednou posádku záchranáři v helikoptéře a odvezou je na výsadkovou loď USS John P. Murtha. Čeká je tam první zdravotní prohlídka.
-Vertikální schéma přistání
-Poté je námořníci dopraví na pobřeží, kde už na ně bude čekat letecký speciál, který je odveze do Johnsonova centra NASA v Houstonu. Čtveřici astronautů dnes proto čeká opravdu hodně náročný páteční tah.
-Detailní pohled na sekvenci zpomalení pádu pomocí padáků
-Živý přenos z přistání bude NASA vysílat jako doposud na YouTube (přenos si můžete spustit v záhlaví článku) a sociálních sítích, ale zapojí se také Netflix (odkaz na přenos), Apple TV, Amazon Prime, HBO Max, Discovery a další.
-Dopadová trajektorie
-Oživeno 15:30 | Mise Artemis II míří do velkého finále. NASA očekává dopad do vod Tichého oceánu západně od San Diega (Kalifornie) dnes v 17:07 pacifického letního času (sobota, 02:07 SELČ). Diváci z Česka se neobejdou bez pořádné dávky kofeinu.
-Projekce přistávací trajektorie (UTC čas)
-Astronomické weby se už plní grafy, odkud bude možné Orion pozorovat a jak bude vypadat návratová trajektorie. Přehledná data najdete třeba na stránkách Heavens Above. Evropané budou mít nicméně ve finální fázi smůlu. Vzhledem k místu přistání totiž bude Orion klesat nad Pacifikem směrem k pobřeží Kalifornie.
-Čtvrtek 9. dubna 2026
-Oživeno 16:30 | Loď Orion je ve čtvrtek odpoledne téměř v polovině cesty zpět k Zemi a NASA v archivu zveřejnila efektní video ze samotného startu rakety SLS, jak jej zachytily infračervené kamery (NIR / blízké infračervené spektrum, 800-2500 nm).
-Ve stabilizovaném a na polovinu zpomaleném videu vidíme v detailu úvodní zapálení motorů a poté proud horkých plynů okolo trysek ve vysokém přiblížení. Tyto záběry slouží k inspekci, jak probíhá hoření a jak je na tom integrita pláště prvního stupně a nejbližšího okolí.
-Na záběrech uvidíte v ohromném detailu jak hoření v tryskách vodíkových motorů RS-25, tak postranní boostery na tuhé hliníkové palivo.
-Zdroj videa: NASA
-Středa 8. dubna 2026
-Oživeno 18:45 | Posádka měla zkraje mise trošku problémy s produkty MIcrosoftu, však to znáte... Ale humory stranou. Loď řídí palubní počítač, posádka má ale své osobní počítače. Něco si o nich povíme. A také o tom, jak posílají fotky zpět k Zemi.
-Oživeno 12:00 | Loď Orion během noci provedla úspěšnou korekci návratové dráhy a mise Artemis II se pomalu chýlí ke svému konci. Příběh ale rozhodně nekončí, už příští rok nás totiž čeká Artemis III a test spojení Orionu s lunárním modulem.
-NASA zve Američany na slavnostní vytažení prvního stupně v pořadí už třetí rakety SLS, který poté zamíří z New Orleans na Floridu do největší montážní haly svého druhu na světě VAB.
-Oživeno 11:30 | Jakou techniku posádka používala k fotografickému průzkumu Měsíce? Rozebíráme to v podrobném technickém článku na Digiaréně, kde vám ukážeme i konkrétní objektivy.
-Úterý 7. dubna 2026
-Oživeno 22:00 | NASA potvrdila, že Orion opustil vliv Měsíce a opět převážila gravitace Země. Teď už tedy loď padá zpět. Splashdown v pátek 10. dubna místního času.
-Oživeno 17:30 | Archiv NASA se postupně plní úřasnými záběry ze západu i východu Země, detailní topografií Měsíce a také zatměním Slunce. NASA posádku vyzbrojila full-frame zrcadlovkou Nikon D5 s 400mm teleobjektivem a níže si můžete rpohlédnout, jak stroj fungoval v praxi během průletu lodi za Měsícem
-Oživeno 15:15 | Na první fotografie průletu okolo Měsíce ve vysokém rozlišení jsme si nakonec museli počkat až do odpoledních hodin. Ale stojí za to. Kdyby je nezveřejnila NASA, tak si snad pomyslíme, že je vytvořil některý z obrázkových generátorů. Vypadají totiž opravdu jako ilustrace z AI.
-Západ Země
-Na prvním snímku vidíme západ Země poté, co se Orion včera hluboko v noci zanořil do stínu Měsíce. Na druhém snímku je pak zatmění Slunce z bezprostřední blízkosti.
-Zatmění Slunce
-Oživeno 01:26 | Oblet Měsíce se podařil a Orion opět navázal spojení s telekomunikační sítí DSN na zemském povrchu. Nepříliš kvalitní obrázky z živého přenosu v příštích hodinách doplní fotografie ve vysokém rozlišení.
-Orion se vynořil ze stínu Měsíce a NASA s ním úspěšně obnovila spojení
-Posádka nyní bude pokračovat v pozorování Měsíce a zatmění Slunce. Vše skončí až hluboko v noci našeho času. Viz podrobný rozpis obletu níže v článku.
-Sedmý den mise by měl být pro astronauty volnější. Orion opustí oblast působení Měsíce (znovu převáží vliv Země) a podle situace provede první korekční návratový zážeh motoru. Během osmého dne nás čeká demonstrace radiačního stínění a ruční pilotáže. Devátý den je na pořadu další drobný korekční zážeh a desátý den mise Orion konečně přistává zpět na Zemi.
-Oživeno 01:20 | Krátce před očekávanou obnovou signálu se podívejme do velínu mise. Fanoušky open-source jistě potěší. že hlavní obrazovku vzadu na stěně vyplňuje... Oblíbený videopřehrávač VLC s animací Měsíce (označen zeleným obdélníkem).
-VLC mají rádi i v NASA
-Oživeno 00:40 | Několik minut před tím, než se Orion dostal na odvrácenou stranu Měsíce a NASA ztratila dle plánu rádiové spojení s lodí, jsme se mohli pokochat živými záběry, na kterých je vidět v jedné řadě Orion, Měsíc a zcela vpravo Země. Tahle to vypadalo přesně 180 sekund před ztrátou signálu.
-Orion, Měsíc a Země v jedné řadě a v živém přenosu
-O přenos dat z lodi se po většinu cesty k Měsíci a zpět stará síť pozemských parabol DSN (Deep Space Network). Krátce před tím, než loď zmizela v měsíčním stínu, to byla anténa DSS 34 v australské Canbeře. Přehled o tom, jaká mise právě teď zatěžuje které zařízení, najdete na webu DSN Now.
-Jedním z experimentů na palubě je nicméně i O2O (Orion Artemis II Optical Communications System) pro laserovou komunikaci se Zemí. Test byl úspěšný a posádka v minulých dnech přenesla gigabajty dat. Laserová vysílačka má velikost domečku pro kočky a zvládne datový tok až 260 Mb/s k Zemi a 20 Mb/s zpět.
-DSN Now – telemetrii z Orionu přenáší zařízení DSS 34 v australské Canbeře
-Pondělí 6. dubna 2026
-Oživeno 22:00 | Mise Artemis II v 19:56 překonala rekord ve vzdálenosti lidí od Země. Od dubna 1970 jej s hodnotou 400 171 km držela mise Apollo 13. Artemis II by se měla dostat až na hodnotu 406 771 km.
-Oživeno 21:10 | Software, ve kterém bude posádka pracovat. Vlevo nahoře je seznam úkolů, dole jsou jednotlivé úkoly podrobněji rozepsané. Schematicky popsaný obraz Měsíce má pomoci navigovat oči a objektivy do správných míst. Dole pak jsou vypsané náležitosti, které má záznam o pozorování obsahovat (ale to by nemělo být potřeba, astronauti záznam průletu trénovali několik měsíců).
-Oživeno 19:20 | Živý přenos NASA můžete sledovat třeba na X.com:
-Oživeno 17:40 | Posádku do nového dne přivítal Jim Lovell – astronaut misí Gemini VII, Gemini XII, Apollo 8 a Apollo 13. Apollo 8 mělo podobný úkol jako dnes Artemis II – poprvé ukázalo Měsíc zblízka a jeho fotka celé Země inspirovala a sjednotila lidi po celém světě.
-Lovell přivítal astronauty „v jeho staré čtvrti“, předal jim pomyslnou pochodeň a připomněl, že i přes všechny úkoly, které je při obletu čekají, nemají zapomenout užít si výhled. Celé znění vzkazu na Nasa.gov.
-Pro posádku Artemis to byla emotivní chvilka – zejména protože Lovell krátce po nahrání vzkazu (v srpnu 2025) zemřel.
-Oživeno 13:00 | Dnešní přiblížení k Měsíci má následující plán (převedeno na středoevropský čas):
-- 16:50 – Plánovaný budíček pro astronauty
-- 19:00 – Začíná přenos z průletu kolem Měsíce na platformě NASA+, posádka uvidí přivrácenou i odvrácenou stranu
-- 19:56 – Posádka překoná rekord v největší vzdálenosti lidí od Země, který dříve stanovila mise Apollo 13 v roce 1970. Posádka má připravený projev (audio)
-- 20:15 – Posádka konfiguruje kabinu lodi Orion pro operace při průletu
-- 20:45 – Začíná pozorování Měsíce
-- úterý 00:44 – Loď zamíří za Měsíc, předpokládaná ztráta komunikace (přibližně na 40 minut)
-- 01:02 – Největší přiblížení Orionu k Měsíci (6 550 km). Prý to bude jako byste drželi basketbalový míč v natažené paži
-- 01:07 – Orion dosahuje maximální vzdálenosti od Země (cca 406 773 km). Dál ještě lidé nebyli.
-- 01:25 – „Východ Země“
-- 02:35 až 03:32 – posádka prožije téměř hodinové zatmění Slunce.
-- 03:20 – Končí pozorování Měsíce, v následujících hodinách bychom se měli dočkat prvních fotek
-Oživeno 9:00 | Posádka úspěšně upravila dráhu lodi Orion a otestovala záchranné skafandry OCSS. Dnes loď vstoupí do sféry vlivu Měsíce a provede oblet jeho odvrácené strany. Astronauti při tom překonají rekord Apolla 13 v největší vzdálenosti lidí od Země. Během manévru dojde k plánované ztrátě spojení, maximálnímu přiblížení k povrchu a následnému pozorování „východu Země“.
-Neděle 5. dubna 2026
-Oživeno 20:15 | Pátý den mise načala posádka ve vzdálenosti zhruba 105 tisíc km od Měsíce a promluvil k ní astronaut Charlie Duke, člen posádky mise Apollo 16 a desátý člověk, který kráčel po povrchu Měsíce.
-Hlavním úkolem dne je testování záchranných obleků Orion, včetně zkoušky pohyblivosti či simulace poklesu tlaku. Později přijde na řadu korekční manévr a vstup do sféry gravitačního vlivu Měsíce.
-Oživeno 12:00 | Kolik ta legrace vlastně stojí? Artemis patří k nejsložitějším projektům NASA. A také nejdražším. V auditu IG-22-003 (PDF) z listopadu 2021 se hned na třetí straně dočteme, že agentura očekávala celkové náklady programu do konce roku 2025 ve výši 93 miliard dolarů.
-Cenu jediné mise Artemis včetně prvních dvou uskutečněných letů I a II pak tehdejší auditoři odhadli na částku 4,1 miliard dolarů. Obsahuje náklady na stavbu a provoz raketového nosiče SLS (více než polovina rozpočtu) a ...
-(Pokracovani na webu)|E||T|Těmto starým Kindlům za měsíc skončí podpora. Čtečky však vyhazovat nemusíte|D|10.04.2026 12:45|P|Amazon končí podporu nejstarších čteček e-knih. • Na Kindlech z let 2007 až 2012 již nepůjde kupovat a stahovat knihy. • Nestanou se z nich těžítka, s...|X|Amazon začal uživatelům nejstarších Kindlů posílat e-mailová upozornění, že jejich čtečky e-knih k 20. květnu 2026 ztratí podporu. Od tohoto data v nich nebude možné kupovat, půjčovat ani stahovat nové tituly z oficiálního obchodu. A pokud uživatelé zařízení resetují, nebudou jej moci znovu přidat ke svému účtu.
+Testy probíhaly s kurýry společnosti Deliveroo v průběhu února. Podle firem si je kurýři chtěli ponechat. Automobilka chce dát k dispozici výzkumné poznatky a zjištění, které za vývojem stojí.|E||T|Těmto starým Kindlům za měsíc skončí podpora. Čtečky však vyhazovat nemusíte|D|10.04.2026 12:45|P|Amazon končí podporu nejstarších čteček e-knih. • Na Kindlech z let 2007 až 2012 již nepůjde kupovat a stahovat knihy. • Nestanou se z nich těžítka, s...|X|Amazon začal uživatelům nejstarších Kindlů posílat e-mailová upozornění, že jejich čtečky e-knih k 20. květnu 2026 ztratí podporu. Od tohoto data v nich nebude možné kupovat, půjčovat ani stahovat nové tituly z oficiálního obchodu. A pokud uživatelé zařízení resetují, nebudou jej moci znovu přidat ke svému účtu.
 Konec podpory firma následně potvrdila pro PCMag, kterému upřesnila, že se změna týká všech modelů od první generace až po čtečky vydané v roce 2012. Konkrétně tak jde o čtečky a tablety:
 - Kindle (2007)
 - Kindle DX a DX Graphite (2009 a 2010)

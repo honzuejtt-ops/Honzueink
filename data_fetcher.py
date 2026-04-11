@@ -22,7 +22,7 @@ def get_with_retry(url, headers=None, timeout=10, retries=3, backoff=1.2):
         except requests.RequestException as e:
             last_err = e
             if attempt < retries - 1:
-"""  """                time.sleep(backoff * (attempt + 1))
+                time.sleep(backoff * (attempt + 1))
     raise last_err
 
 # --- FUNKCE PRO VYTĚŽENÍ TEXTU PŘÍMO Z ČLÁNKU (Trafilatura) ---

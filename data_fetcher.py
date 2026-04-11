@@ -22,7 +22,7 @@ def get_with_retry(url, headers=None, timeout=10, retries=3, backoff=1.2):
         except requests.RequestException as e:
             last_err = e
             if attempt < retries - 1:
-                time.sleep(backoff * (attempt + 1))
+"""  """                time.sleep(backoff * (attempt + 1))
     raise last_err
 
 # --- FUNKCE PRO VYTĚŽENÍ TEXTU PŘÍMO Z ČLÁNKU (Trafilatura) ---
@@ -175,20 +175,24 @@ def stahni_kurzy_historie():
         result += "EUR|\n"
 
     try:
-        # Frankfurter API — zdarma, bez klíče, reálná historická data USD/CZK
-        usd_hist = requests.get(
-            "https://api.frankfurter.app/last30d?base=USD&symbols=CZK",
-            timeout=10).json()
-        # rates je dict {datum: {CZK: hodnota}}, seřadíme podle data
-        usd_vals = [round(v["CZK"], 2) for _, v in sorted(usd_hist["rates"].items())]
-        result += "USD|" + ",".join(f"{v:.2f}" for v in usd_vals) + "\n"
+        from datetime import timedelta
+        end_d = datetime.now()
+        start_d = end_d - timedelta(days=45)
+        od_str = start_d.strftime("%d.%m.%Y")
+        do_str = end_d.strftime("%d.%m.%Y")
+        cnb_url = f"https://www.cnb.cz/cs/financni-trhy/devizovy-trh/kurzy-devizoveho-trhu/kurzy-devizoveho-trhu/vybrane.txt?od={od_str}&do={do_str}&mena=USD&format=txt"
+        cnb_data = requests.get(cnb_url, timeout=10).text
+        lines = cnb_data.strip().split('\n')[2:]
+        usd_vals = [round(float(line.split('|')[1].replace(',', '.')), 2) for line in lines if '|' in line]
+        result += "USD|" + ",".join(f"{v:.2f}" for v in usd_vals[-30:]) + "\n"
     except Exception:
         try:
-            # Fallback: ECB API (USD vůči CZK přes EUR pivot)
-            ecb_usd_url = "https://data-api.ecb.europa.eu/service/data/EXR/D.USD.CZK.SP00.A?lastNObservations=30&format=jsondata"
-            ecb_usd = requests.get(ecb_usd_url, timeout=10).json()
-            obs_usd = ecb_usd['dataSets'][0]['series']['0:0:0:0:0']['observations']
-            usd_vals = [round(float(obs_usd[str(k)][0]), 2) for k in sorted([int(x) for x in obs_usd.keys()])]
+            from datetime import timedelta
+            start_d = (datetime.now() - timedelta(days=45)).strftime("%Y-%m-%d")
+            usd_hist = requests.get(
+                f"https://api.frankfurter.dev/v1/{start_d}..?base=USD&symbols=CZK",
+                timeout=10).json()
+            usd_vals = [round(v["CZK"], 2) for _, v in sorted(usd_hist["rates"].items())]
             result += "USD|" + ",".join(f"{v:.2f}" for v in usd_vals[-30:]) + "\n"
         except Exception:
             result += "USD|\n"

@@ -1,4 +1,30 @@
-|T|Splashdown! Astronauti přistáli poblíž Kalifornie. Pak nastala vtipná situace. Nefungoval telefon a záchrana se protáhla|D|11.04.2026 01:37|P|Užitečné odkazy
+|T|Výrobce čipů Onsemi rozšíří aktivity v Česku, kupuje brněnskou firmu navrhující procesory|D|11.04.2026 07:45|P|Americký výrobce čipů Onsemi posílí své aktivity v České republice • . • Firma podle informací e15 kupuje část brněnské společnosti Codasip zaměřenou ...|X|Codasip byl na prodej od loňského léta, firma na trhu hledala kupce a hlavní zájemci byli dva. Kromě Onsemi to byla nizozemská společnost NXP Semiconductors, která podobně jako Onsemi zaměstnává odborníky v kancelářích v Brně a Rožnově.
+Codasip se nakonec rozdělí na dvě části. Jedna z nich, kterou převezme Onsemi, se bude věnovat návrhu úsporných procesorů na technologii RISC-V, jež je otevřenou alternativou k všudypřítomné technologii ARM.
+Pokračování článku patří k prémiovému obsahu pro předplatitele
+Chci Premium a Živě.cz bez reklam
+Od 58 Kč měsíčně|E||T|Český simulátor hackera Zero Trust vychází z reálné praxe. Pomůžete zákonu, nebo zbohatnete na dark webu?|D|11.04.2026 06:45|P||X|Chtěli jste si někdy bez rizika vyzkoušet, jaké to je být hackerem, vyvíjet vlastní viry, útočit na banky a vydělávat nechutné peníze? Ve hře Zero Trust od českého vývojáře Tomáše Fišera dostanete příležitost. Pracuje se skutečnými technikami, jako je hledání děr v obranných systémech, sociální inženýrství nebo phishingové kampaně. Projekt nemá k dokončení daleko, na PC by měl vyjít maximálně za 5 měsíců, tedy před koncem září. Prozatím si Zero Trust můžete přidat do seznamu přání na Steamu nebo se přidat ke komunitě na Discordu.
+I když je hra postavená na reálných praktikách a procesech, systémy jsou upravené tak, aby hraní bylo hlavně zábavné. Čeká vás příběhová kampaň, kterou do jisté míry píšete sami. Je totiž na vás, jestli si zvolíte cestu etického hackera a pomůžete zákonu chytat skutečné zločince, nebo si naopak dáte za cíl nahrabat co největší množství peněz. Nebo to zkusíte zahrát na obě strany?
+Zero Trust slibuje simulaci všech hlavních systémů včetně bezpečnostních agentur, napadaných společností i toku financí, ať už fiat měn nebo krypta. Vaše činy nezůstávají bez povšimnutí. Díry v bezpečnosti se protistrana snaží záplatovat, jak se dá. Když si nebudete dávat pozor a zanecháte dostatek stop, mohou se vám na kobylku dostat strážci zákona.
+Abyste nezaostávali za konkurencí, je potřeba neustále vyvíjet svůj software, vytvářet nové a účinnější viry, což se neobejde bez dostatku financí. Získat je bude možné různými způsoby. Můžete svoje výtvory třeba prodat na dark webu nebo nabídnou k prodeji data, která se vám podařilo ukořistit během některého z útoků.
+Finance se hodí nejen k vývoji softwaru, k provedení náročnějších operací budou potřeba i hardwarové upgrady. S větší výpočetní silou si můžete dovolit mnohem víc, než se strojem, který vám dá Zero Trust do rukou v úvodu.|E||T|Pozor, pokud používáte CPU-Z a HWMonitor. Hackeři je napadli, mohli jste si stáhnout malware|D|11.04.2026 06:00|P|Pozor: Web hostující programy CPU-Z a HWMonitor byl napaden a několik hodin šířil infikované verze těchto utilit. Pokud jste je v posledních dnech sta...|X|Nadšenci či pokročilejší uživatelé počítačů asi budou znát nástroje CPU-Z a případně HWMonitor, což je příbuzná utilita hostované na stejném webu CPUID.com. Pokud jste ale tento týden stáhli jejich nové verze nebo instalátory, mohli jste být infikováni malwarem. Web CPUID.com byl totiž napaden hackery, kteří ho po určitý čas používali k distribuci svého škodlivého kódu. Pokud jste ve čtvrtek nebo pátek tyto programy stáhli, můžete být obětí.
+Web hostující CPU-Z a HWMonitor byl kompromitován útočníky
+Napadení si všimli uživatelé, kterým začaly antivirové programy hlásit, že stažený instalátor HWMonitoru nebo CPU-Z je škodlivý software. Nešlo bohužel o klamný poplach, jak to někdy bývá, v tomto případě antimalwarové programy udělaly svou práci. Web CPUID.com byl totiž napaden a neznámým hackerům se povedl průnik, po kterém na web nakladli falešné odkazy, které návštěvníkům podvrhávaly infikované verze zmíněných programů obsahující škodlivý software (zřejmě v březnu odhalený STX Rat).
+Ty by neměly mít obvyklý podpis, protože na této úrovni infrastruktura projektů kompromitována nebyla, ale pokud si uživatel změny či absence podpisu nevšiml, mohl program nainstalovat a velká část by si asi problému nevšimla.
+Zdá se, že autory úroku byla stejná skupina, která v březnu kompromitovala FTP software Filezilla, pro šíření a ovládání malwaru totiž jsou použité stejné domény Detaily o malwaru, který byl do programů vpraven a jeho analýze najdete zde a dále pak. Zdá se, že jeho prvním cílem je pokud možno nedetekovaně ukrást přihlašovací údaje z prohlížeče (Google Chrome), ale je také možné, že všechny jeho nekalé cíle nebyly ještě zběžnou analýzou odhaleny. Až s určitým zpožděním bylo zjištěno, že rovněž do počítače instaluje zadní vrátka umožňující útočníkům vzdálený přístup do vašeho počítače.
+V tuto chvíli by již stahování těchto programů z webu CPUID.com mělo být bezpečné. Podle správce byl web kompromitován zhruba šest hodin mezi večerem 9. 4. a ránem 10. 4., ale není jasné, zda je to míněno v evropském čase a lepší asi bude se nespoléhat na úplně přesné časové zařazení. Podle analýzy byly infikované jak instalátory, tak archivy „portable“ verzí obou aplikací.
+Hi, Investigations are still ongoing, but it appears that a secondary feature (basically a side API) was compromised for approximately six hours between April 9 and April 10, causing the main website to randomly display malicious links (our signed original files were not compromised). The breach was found and has since been fixed. Sorry for the inconvenience.
+V případě, že jste měli smůlu a zrovna jste program stáhli (a tudíž pravděpodobně byli infikováni), budete asi potřebovat čistou instalaci či vyčištění Windows – zkuste, zda váš antivirový software infekci při scanu disku nenajde. Malware je pokročilý ve snaze ujít pozornosti, používá ke své činnosti upravenou knihovnu, která je za normálních okolností (v nepodvržené formě, samozřejmě) součástí Windows a většinu operací provádí v paměti, aby neponechával tolik stop v souborovém systému. Navíc se snaží trvale zůstat v systému.
+Až budete mít systém čistý, musíte si ovšem také změnit hesla uložená v internetovém prohlížeči. Protože jakmile je jednou malware stihl poslat na servery útočníka, už vám odstranění infekce samo o sobě nepomůže proti jejich zneužití.
+Zdroje: techPowerUp, Reddit, Doc TB, vx-underground (1, 2)|E||T|Robotický vodicí pes díky GPT-4 rozumí příkazům a umí mluvit. Pomáhá nevidomým lépe chápat okolí|D|11.04.2026 05:45|P|Vědci vyvinuli nového robotického vodicího psa vybaveného jazykovým modelem • Inteligentní společník zrakově postiženým lidem předem srozumitelně vysv...|X|K neocenitelným pomocníkům zrakově postižených patří vodicí psi, nicméně jejich schopnosti mají své přirozené limity. Shiqi Zhang a jeho tým z Binghamtonské univerzity proto přicházejí s robotickou alternativou, která posouvá hranice asistenčních technologií. Nový systém totiž nespoléhá jen na navigaci, ale staví také na schopnosti komunikovat, vysvětlovat a reagovat v reálném čase.
+Tým vyvinul chytrého robotického psa, který využívá velký jazykový model GPT-4. Uživatel díky tomu může dávat hlasové pokyny a robot na ně odpovídá přirozeným jazykem. Oproti klasickému psovi, který zvládne jen omezený počet (zhruba 20) povelů, jde o zásadní kvalitativní skok.
+Mluvící robotický pes
+Umělý společník není jen navigátorem z bodu A do bodu B. Ještě než vyrazí na cestu, srozumitelně popíše dostupné trasy i odhadovaný čas přesunu. Během chůze pak nepřetržitě analyzuje a slovně komentuje okolí. Upozorňuje na překážky a aktuální dění kolem, hlásí odbočky a například popíše dlouhou chodbu.
+Vědci pro tento přístup používají označení „verbalizace plánu“ a „verbalizace scény“. Člověk se zrakovým postižením díky tomu nezískává jen navigaci, ale i lepší prostorovou orientaci. „To je pro nevidomé nesmírně důležité, protože bez zraku člověk ztrácí přehled o tom, co se kolem něj děje,“ vysvětluje docent Shiqi Zhang.
+Experti uspořádali praktický test v rozlehlých kancelářských prostorech, kde si sedm nevidomých dobrovolníků vyzkoušelo navigaci do zasedací místnosti. Účastníci po absolvované trase vyplnili dotazník, v němž hodnotili, jak je robot užitečný, zda mu dobře rozumí a jak snadno se ovládá.
+Budoucnost asistenčních technologií
+Z jejich odpovědí jednoznačně vyplynulo, že nejlépe fungovalo spojení úvodního plánování a živého komentování během chůze. Dobrovolníci byli z novinky upřímně nadšení: „Vidí v tom obrovský potenciál a doufají, že se to jednou dostane do běžného života,“ uvádí Zhang. Simulovaná studie následně potvrdila, že konverzační vedení zvyšuje důvěru uživatelů a dává jim větší pocit kontroly.
+Bohužel bude ještě nějakou dobu trvat, než budeme takové robotické asistenty potkávat na ulici. Vědci nyní plánují rozšířit testování do složitějších prostředí, a to včetně venkovních prostor a tras na delší vzdálenosti. Chtějí také zvýšit autonomii stroje, aby lépe zvládal samostatné rozhodování.
+Studie představená na prestižní vědecké konferenci AAAI jasně ukazuje směr, kterým se budou ubírat asistenční technologie. Pokud se podaří překonat technické i bezpečnostní výzvy, může robotický vodicí pes představovat významný krok k větší samostatnosti lidí se zrakovým handicapem.|E||T|Splashdown! Astronauti přistáli poblíž Kalifornie. Pak nastala vtipná situace. Nefungoval telefon a záchrana se protáhla|D|11.04.2026 01:37|P|Užitečné odkazy
 
 
 	Artemis II Arrow – Aktuální poloha lodi ve 3D
@@ -78,43 +104,7 @@ Oživeno 22:00 | Mise Artemis II v 19:56 překonala rekord ve vzdálenosti lidí
 Oživeno 21:10 | Software, ve kterém bude posádka pracovat. Vlevo nahoře je seznam úkolů, dole jsou jednotlivé úkoly podrobněji rozepsané. Schematicky popsaný obraz Měsíce má pomoci navigovat oči a objektivy do správných míst. Dole pak jsou vypsané náležitosti, které má záznam o pozorování obsahovat (ale to by nemělo být potřeba, astronauti záznam průletu trénovali několik měsíců).
 Oživeno 19:20 | Živý přenos NASA můžete sledovat třeba na X.com:
 Oživeno 17:40 | Posádku do nového dne přivítal Jim Lovell – astronaut misí Gemini VII, Gemini XII, Apollo 8 a Apollo 13. Apollo 8 mělo podobný úkol jako dnes Artemis II – poprvé ukázalo Měsíc zblízka...
-(Pokracovani na webu)|E||T|Dubnový akční tarif T-Mobilu nabídne 150 minut, 150 SMS a 5 GB dat za 335 Kč měsíčně|D|10.04.2026 17:45|P||X|T-Mobile i v roce 2026 pokračuje s nabídkou akčního tarifu, s nímž se pokusí oslovit nové zájemce nebo zákazníky přecházející od konkurence. Aktuální výhodný tarif znamená slevu z běžně nabízeného tarifu Next Data 5 GB z aktuální generace tarifů Next (2024). Ten obsahuje 150 volných minut a 150 volných SMS do všech sítí, a k tomu 5 GB dat.
-Operátor nabízí proti běžné ceně 485 Kč měsíčně propagační slevu 150 Kč (sleva 31 %), což znamená, že zákazník bude za uvedené služby po celou dobu využívání tarifu platit měsíční paušál 335 Kč. Tuto nabídku lze aktivovat výhradně na webu operátora nejpozději do 30. dubna 2026 (nebo do dalšího prodloužení platnosti). Tarif lze následně se zvýhodněnou cenu používat po dobu pěti let.
-I po vyčerpání přiděleného objemu dat lze určitým minimalistickým způsobem datově fungovat, a to díky službě „Pořád online“, která je ale rychlostně přiškrcena na 256 kbit/s. Navíc je potřeba ji aktivovat každý měsíc pořád dokola v aplikaci Můj T-Mobile.
-Mezi dlouhodobě sledovanými akčními tarify T-Mobilu jde o jednu z výhodnějších nabídek, ale k odpovídající ceně má stále daleko. Reálná hodnota daného tarifu vzhledem k obsaženým jednotkám je přibližně 240 Kč.
-Akční tarif si tradičně nemůže aktivovat úplně kdokoli, kdo by podle jeho propozic usoudil, že je pro něj cenově zajímavý. Nabídka je určena pouze pro nové zákazníky, zákazníky přecházející se svým mobilním číslem od jiného operátora nebo zákazníky předplacené služby Twist, kteří by chtěli migrovat na paušál.
-Mapujeme historii akčních tarifů T-Mobilu:
-- Únor 2025 až duben 2026: 150 minut, 150 SMS a 5 GB za 335 Kč
-- Leden 2025: 150 minut, 150 SMS a 5 GB za 335 Kč; neomez. minuty i SMS, neomez. data (prvních 5 GB plnou rychlostí, pak 8 Mbit/s) za 595 Kč
-- Listopad, prosinec 2024: neom. minuty a SMS, 8 GB dat (neom. o víkendu) za 495 Kč; neomez. data (prvních 30 GB plnou rychlostí, pak 10 Mbit/s) za 545 Kč
-- Září, říjen 2024: 150 minut, 150 SMS a 5 GB dat za 365 Kč
-- Červenec 2024: neomez. minuty a SMS, 8 GB dat (neomez. o víkendu) za 520 Kč
-- Červen 2024: neomezené minuty, neomezené SMS, 10 GB dat za 520 Kč
-- Květen 2024: 150 minut, 150 SMS a 1 GB za 250 Kč
-- Duben 2024: 150 minut, 150 SMS a 5 GB dat za 345 Kč
-- Březen 2024: neomezené minuty, neomezené SMS, 6 GB dat za 449 Kč
-- Únor 2024: neomezené minuty, neomezené SMS, 1 GB dat za 357 Kč
-- Leden 2024: 150 minut, 150 SMS a 12 GB dat za 487 Kč
-- Listopad, prosinec 2023: 150 minut, 150 SMS a 5 GB dat za 345 Kč
-- Září 2023: neomezené minuty, neomezené SMS, 7 GB dat za 469 Kč
-- Červenec, srpen 2023: neomezené minuty, neomezené SMS, 1 GB dat za 357 Kč
-- Květen, červen 2023: neomezené minuty, neomezené SMS, 3 GB dat za 392 Kč
-- Duben 2023: 150 minut, 150 SMS a 12 GB dat za 499 Kč
-Akční tarif se v nabídkách operátorů objevuje několikrát do roka, občas se mohou měnit jeho parametry i cena. Jeho úkolem je přilákat k operátorovi zejména zákazníky konkurentů, proto se mu v interní hantýrce říká „akviziční tarif“. Aktivuje se obvykle výhradně online prostřednictvím internetu a je určen pouze pro nové zákazníky nebo zákazníky přecházející od jiných operátorů. O co totiž žádný ze tří operátorů bez rozdílu nestojí – že by si jejich stávající zákazníci dosud platící drahé paušály díky akční nabídce o něco snížili svoji měsíční útratu.
-Jaké ceny tarifů považujeme za přiměřené
-(Jde o hypotézu, u českých operátorů žádné takové veřejné tarify neexistují)
-- 500 Kč: neom. data (rychlost min. 10 Mbit/s), neom. minuty + SMS do všech sítí
-- 300 Kč: 10 GB dat, neomezené minuty + SMS do všech sítí
-- 150 Kč: 10 GB dat
-- 150 Kč: neomezené minuty + SMS do všech sítí
-- cena dodatečného 1 GB dat max. 20 Kč
-- cena dodatečné 1 minuty hovoru max. 1 Kč
-- cena dodatečné 1 SMS max. 0,50 Kč
-Jak zjistit skutečnou hodnotu mobilního tarifu u českých operátorů:
-Skutečná hodnota mobilních tarifů v Česku je 50 % jejich ceníkové ceny. Právě takové nabídky dostávají zákazníci odcházející k jinému operátorovi. Podobně jako v supermarketech u slevových akcí se slevová cena nabízená v masovém měřítku stává cenou běžnou. Není důvod, proč platit víc.
-Proto má operátor v nabídce ošetřeno, aby na akční tarif oficiálně nebylo možné přejít z jiného, aktuálně používaného paušálního tarifu. Výjimkou jsou předplacené karty Twist, z nichž vám operátor číslo na akviziční tarif převede. Právě tento postup – převod stávajícího tarifu na Twist kartu a následnou migraci na akční tarif – využívají zájemci o akční nabídku, kteří už u daného operátora jsou a nechtějí přijít o své číslo.
-Další možností je přenesení stávajícího čísla k jinému operátorovi a následný návrat k původnímu operátorovi. Často nejsnazším řešením může být dohoda zákazníka s retenčním oddělením vlastního operátora, kde se dá bez větších problémů dostat na 50 % původní ceníkové ceny tarifu. To je zároveň obecně skutečná hodnota v Česku nabízených tarifů, která zhruba odpovídá i cenovým hladinám v ostatních evropských zemích.
-Aktualizováno 10. dubna 2026 po prodloužení platnosti nabízeného akčního tarifu.|E||T|Záchrana pro přehlížený segment levných notebooků: Parametry všech procesorů Intel Wildcat Lake|D|10.04.2026 17:00|P|Už máme parametry všech modelů procesorů Intel Core 300 „Wildcat Lake“, které oživí segment levných notebooků. Díky nové architektuře taktu až 4,8 GHz...|X|Před časem unikly testy procesorů Intel Wildcat Lake, což bude taková nenápadná, ale důležitá novinka Intelu. Jde totiž o procesory, které mají stejnou technologickou výbavu včetně procesorových jader a 1,8nm procesu jako vyšší procesory Core Ultra 300 Panther Lake, ale bez nákladné čipletové výroby. Přinesou tak konečně moderní CPU se stále slušným jednovláknovým výkonem do levných notebooků. Teď už máme informace o všech modelech.
+(Pokracovani na webu)|E||T|Záchrana pro přehlížený segment levných notebooků: Parametry všech procesorů Intel Wildcat Lake|D|10.04.2026 17:00|P|Už máme parametry všech modelů procesorů Intel Core 300 „Wildcat Lake“, které oživí segment levných notebooků. Díky nové architektuře taktu až 4,8 GHz...|X|Před časem unikly testy procesorů Intel Wildcat Lake, což bude taková nenápadná, ale důležitá novinka Intelu. Jde totiž o procesory, které mají stejnou technologickou výbavu včetně procesorových jader a 1,8nm procesu jako vyšší procesory Core Ultra 300 Panther Lake, ale bez nákladné čipletové výroby. Přinesou tak konečně moderní CPU se stále slušným jednovláknovým výkonem do levných notebooků. Teď už máme informace o všech modelech.
 Modely a parametry Wildcat Lake
 Wildcat Lake jsou založené na stejné stavbě, jako tradiční mobilní procesory Core řady U – jako procesor s externím čipsetem na stejném pouzdru, k jehož připojení ale není využito žádné pokročilé pouzdření. Jinak se už ale od Panther Lake liší jen nižším počtem jader a slabou konfigurací GPU (a málo výkonnou NPU, takže nepodporují technologie Copilot+ PC). Jejich architekturu jsme probírali zde:
 Intel v lednu při jejich odhalení neřekl nic k jednotlivým modelům, ale ty teď prozradil leaker s přezdívkou Jaykihn. Z předchozích úniků jsme znali dva a poté se ještě objevil třetí, ve skutečnosti ale bude modelů Wildcat Lake šest.
@@ -139,112 +129,7 @@ Program pořadu
 - 36:27 – V Česku bez Apple Intelligence
 Zdroje a další informace: hudba od Nihilora
 Podcast Živě najdete také na Spotify, kde se můžete přihlásit k odběru, stejně tak ve službách Apple Podcasts a YouTube Music. Pořad lze odebírat i prostřednictvím RSS. Budeme rádi za zpětnou vazbu. Pokud se vám podcast líbí, sdílejte jej.
-V našem podcastovém kanále najdete také videopořad Týden Živě. Ve zvukové podobě zde vychází každé pondělí.|E||T|Tohle jsou nejoblíbenější nové filmy a seriály. Bez vykopávek, které jste už dávno viděli|D|10.04.2026 15:45|P|Nevýhodou žebříčků postavených na sledovanosti je, že jsou plné prastarých kousků, které už každý viděl. Tady proto najdete pouze nové filmy a seriály...|X|Ukázat všechny listy najednou
-30. Marshals: Příběh z Yellowstonu
-Kayce Dutton po smrti manželky opouští Yellowstone a vstupuje do elitní jednotky federálních maršálů v Montaně. Bývalý příslušník Navy SEALs a zkušený kovboj spojuje vojenský výcvik s instinktem člověka, který vyrostl na ranči. Mise ho nutí volit mezi povinností a rodinou, mezi klidem domova a rolí poslední obranné linie. Drsná krajina odráží vnitřní napětí, které si nese z minulosti, a ukazuje, že spravedlnost na americkém Západě má často vysokou cenu.
-Hodnocení Kinobox.cz : 65 %
-Žánr: Drama seriály
-Původní název: Y: Marshals
-Hrají: Luke Grimes, Logan Marshall-Green
-Původ a premiéra: USA, 2026
-Délka: 60 minut
-Kde si film můžete pustit: SkyShowtime (dabing a titulky)
-Pokračování 2 / 30 29. Demoliční četa
-Nevlastní bratři Jonny a James spolu roky nemluvili. Spojí je až smrt jejich otce, soukromého detektiva, který zemřel při podezřelé nehodě na Havaji. Jonny, bývalý policista, se po útoku neznámých mužů vydává na ostrov, aby zjistil, co se skutečně stalo. Znovu se setkává s Jamesem, elitním vojákem, a společně se noří do otcova případu. Pátrání je zavede k mocnému developerovi, plánům na kontroverzní kasino a k napojení na mafii. Staré křivdy mezi bratry znovu vyplouvají na povrch, zatímco kolem nich houstne síť intrik, která ohrožuje jejich rodinu i celý ostrov.
-Hodnocení Kinobox.cz : 70 %
-Žánr: Akční filmy
-Původní název: The Wrecking Crew
-Režie: Ángel Manuel Soto
-Hrají: Dave Bautista, Jason Momoa, Temuera Morrison, Morena Baccarin, Roimata Fox, Frankie Adams, Claes Bang, Jacob Batalon, Maia Kealoha, Stephen Root
-Původ a premiéra: USA, 2026
-Délka: 124 minut
-Kde si film můžete pustit: Amazon (dabing a titulky)
-Pokračování 3 / 30 28. Vřískot 7
-Sidney Prescott si v tichém městečku vybudovala nový život a věřila, že minulost už ji nedožene. Klid ale naruší návrat masky Ghostface. Nový vrah míří přímo na ni a chce dokončit to, co kdysi začalo. Když se jeho terčem stane i její dcera, promění se obavy ve skutečnou hrozbu. Sidney ví, že útěk nic nevyřeší. Aby ochránila rodinu, musí se znovu postavit strachu, který ji pronásleduje od mládí. Stará traumata ožívají a město, které působilo bezpečně, zaplní napětí a nedůvěra.
-Hodnocení Kinobox.cz : 50 %
-Žánr: Horory
-Původní název: Scream 7
-Režie: Kevin Williamson
-Hrají: Neve Campbell, Isabel May, Celeste O'Connor, Asa Germann, Mckenna Grace, Sam Rechner, Anna Camp, Mason Gooding, Courteney Cox, Roger L. Jackson
-Původ a premiéra: USA, 2026
-Kde si film můžete pustit: Zrovna není nikde dostupný online
-Pokračování 4 / 30 27. Star Trek: Akademie Hvězdné flotily
-Skupina mladých kadetů nastupuje na Akademii Hvězdné flotily. Jejich cílem je stát se důstojníky Federace. Pod dohledem instruktorů procházejí náročným výcvikem, budují přátelství, soupeří spolu a prožívají první lásky. Do jejich studia však zasáhne nový nepřítel, který ohrozí nejen Akademii, ale i celou Federaci. Kadeti tak musí obstát nejen ve zkouškách, ale i ve skutečném nebezpečí.
-Hodnocení Kinobox.cz : 51 %
-Žánr: Sci-fi seriály
-Původní název: Star Trek: Starfleet Academy
-Hrají: Holly Hunter, Sandro Rosta, Karim Diane, Kerrice Brooks, George Hawkins, Bella Shepard, Zoë Steiner, Gina Yashere, Robert Picardo, Tig Notaro
-Původ a premiéra: USA, 2026
-Délka: 58 minut
-Kde si film můžete pustit: SkyShowtime (dabing a titulky)
-Pokračování 5 / 30 26. Spasitel
-Učitel přírodopisu Ryland Grace se probudí na palubě vesmírné lodi vzdálené světelné roky od Země. Nepamatuje si, kdo je ani proč je v kosmu sám. Jak se mu vrací paměť, zjišťuje, že Slunce rychle slábne a lidstvu hrozí hlad i doba ledová. Příčinou je mimozemská forma života, která mění energii hvězd.
-Svět proto vyslal výpravu k hvězdě Tau Ceti, která jako jediná zůstává stabilní. A Grace se stává klíčem k záchraně Země. V izolaci musí spoléhat na vědu, vlastní důvtip i odvahu. Nečekané setkání udělá z jeho osamělé mise víc než jen boj o přežití.
-Hodnocení Kinobox.cz : 89 %
-Žánr: Sci-fi filmy
-Původní název: Project Hail Mary
-Režie: Phil Lord, Christopher Miller
-Hrají: Ryan Gosling, James Ortiz, Sandra Hüller, Lionel Boyce, Isla McRae, Milana Vayntrub, Ken Leung, Priya Kansara, Mia Soteriou, Annelle Olaleye
-Původ a premiéra: USA, 2026
-Délka: 157 minut
-Kde si film můžete pustit: Zrovna není nikde dostupný online
-Pokračování 6 / 30 25. Nevěsta!
-Chicago třicátých let zahalí kouř a stíny laboratoří, když osamělý Frankenstein požádá uznávaného vědce o pomoc se stvořením partnerky. Společně vrátí život mladé ženě, která zemřela násilnou smrtí, a na svět vstoupí Nevěsta. Jenže nová bytost se odmítne podřídit jejich představám. Objeví vlastní vůli, touhu i vzdor a rychle naruší hranici mezi vědou a morálkou. Z odvážného experimentu vyroste vášnivý a nebezpečný vztah, který přitáhne pozornost policie i veřejnosti a rozvíří společnost. Temná gotická atmosféra rámuje příběh o svobodě, identitě a síle, kterou už nikdo nedokáže zkrotit.
-Hodnocení Kinobox.cz : 64 %
-Žánr: Horory
-Původní název: The Bride!
-Režie: Maggie Gyllenhaal
-Hrají: Jessie Buckley, Christian Bale, Peter Sarsgaard, Annette Bening, Jake Gyllenhaal, Penélope Cruz, Jeannie Berlin, John Magaro, Julianne Hough, Louis Cancelmi
-Původ a premiéra: USA, 2026
-Kde si film můžete pustit: Apple TV (dabing a titulky)
-Pokračování 7 / 30 24. Love Story
-Antologický seriál mapuje slavné milostné příběhy, které zaujaly celý svět. První řada sleduje vztah Johna F. Kennedyho Jr. a Carolyn Bessette – jejich rychlé sblížení, manželství pod drobnohledem médií i tragický konec. Příběh ukazuje chemii silného páru i tlak společnosti, který jejich lásku provázel od začátku až do konce.
-Hodnocení Kinobox.cz : 79 %
-Žánr: Drama seriály
-Hrají: Sarah Pidgeon, Paul Kelly, Grace Gummer, Naomi Watts, Alessandro Nivola, Leila George, Sydney Lemmon
-Původ a premiéra: USA, 2026
-Délka: 63 minut
-Kde si film můžete pustit: Disney+ (titulky)
-Pokračování 8 / 30 23. Krása
-Svět vrcholové módy ochromí série brutálních a nevysvětlitelných úmrtí slavných supermodelek a supermodelů. Do Paříže proto přijíždějí agenti FBI Cooper Madsen a Jordan Bennettová, kteří mají zjistit, kdo tahá za nitky. Stopy je přivedou k šokujícímu odhalení: mezi elitou se šíří pohlavně přenosný virus přezdívaný Krása, jenž promění obyčejné lidi v dokonalé bytosti s bezchybným vzhledem. Za oslnivou fasádou se však skrývá smrtící účinek. Jak se nákaza šíří z Paříže do dalších světových metropolí a společnost propadá posedlosti krásou, dvojice vyšetřovatelů závodí s časem, aby zastavila epidemii, která může přepsat samotnou definici lidskosti.
-Hodnocení Kinobox.cz : 63 %
-Žánr: Drama seriály
-Původní název: The Beauty
-Hrají: Evan Peters, Anthony Ramos, Jeremy Pope, Ashton Kutcher, Rebecca Hall
-Původ a premiéra: USA, 2026
-Délka: 39 minut
-Kde si film můžete pustit: Disney+ (titulky)
-Pokračování 9 / 30 22. Smutný song
-Mike a Claire jsou neúspěšní muzikanti, kteří se živí jako hudební imitátoři. Když se do sebe zamilují, spojí síly a založí tribute kapelu s písněmi Neila Diamonda v čele s hitem „Sweet Caroline“. Z malých pódií se postupně dostanou blíž k vysněnému úspěchu. Jenže s rostoucí slávou přichází i tlak a tvrdé zkoušky. Příběh inspirovaný skutečnými událostmi ukazuje, že na lásku a splněné sny není nikdy pozdě.
-Hodnocení Kinobox.cz : 69 %
-Žánr: Životopisné filmy
-Původní název: Song Sung Blue
-Režie: Craig Brewer
-Hrají: Hugh Jackman, Kate Hudson, Michael Imperioli, Fisher Stevens, Jim Belushi, Ella Anderson, King Princess, Mustafa Shakir, Hudson Hilbert Hensley, Shyaporn Theerakulstit
-Původ a premiéra: USA, 2025
-Délka: 132 minut
-Kde si film můžete pustit: Apple TV (dabing a titulky), Amazon Obchod (dabing a titulky), Rakuten (dabing a titulky)
-Pokračování 10 / 30 21. Jeho a její
-Anna je bývalá moderátorka zpráv. Přežívá v dusném horku Atlanty daleko od přátel i novinářské práce. Z letargie ji vytrhne vražda v Dahlonega, ospalém městečku na severu Georgie, kde vyrůstala. Návrat domů ji postaví proti Jacku Harperovi, detektivovi, který vyšetřování vede a Annu považuje za možnou podezřelou. Jejich střet se mění v nervózní souboj o pravdu, v němž se mísí osobní minulost s profesní posedlostí. Každý z nich skládá vlastní verzi událostí, jenže každá mince má dvě strany a někdo zjevně lže.
-Hodnocení Kinobox.cz : 73 %
-Žánr: Krimi seriály
-Původní název: His & Hers
-Hrají: Tessa Thompson, Jon Bernthal, Pablo Schreiber, Crystal R. Fox, Rebecca Rittenhouse, Sunita Mani
-Původ a premiéra: USA, 2026
-Délka: 43 minut
-Kde si film můžete pustit: Netflix (dabing a titulky)
-Pokračování 11 / 30 20. V úkrytu
-Michael Mason býval elitním vládním zabijákem. Dnes žije v izolaci na odlehlém skotském ostrově a skrývá svou minulost. Jediný kontakt se světem pro něj představuje Jessie a její strýc, kteří mu vozí zásoby. Když jejich loď během bouře ztroskotá, Mason dívku zachrání, ale tím prozradí svůj úkryt. Spustí tím řetězec nebezpečných událostí. Musí převzít odpovědnost za Jessiinu bezpečnost a čelit digitálnímu dohledovému systému i lidem z tajného programu Black Kites, kteří ho léta hledají. Mason zjišťuje, že před minulostí už dál utíkat nemůže.
-Hodnocení Kinobox.cz : 59 %
-Žánr: Akční filmy
-Původní název: Shelter
-Režie: Ric Roman Waugh
-Hrají: Jason Statham, Bodhi Rae Breathnach, Bill Nighy, Naomi Ackie, Daniel Mays, Gordon Alexander, Harriet Walter, Bronson Webb, Derek Carroll, Tom Wu
-Původ a premiéra: USA, 2026
-Kde si film můžete pustit: Zrovna není nikde dostupný online
-Pokračování 12 / 30 19. Zlom vaz, bav se, neumři
-Do zapadlé restaurace v Los Angeles vtrhne muž s bombou. Tvrdí, že přichází z budoucnosti, aby odvrátil technologickou chybu, jež zničí lidstvo. Hosty vezme jako rukojmí, ale místo peněz chce jejich účast. Potřebuje přesně vybranou skupinu nespokojených cizinců, kteří mu během jediné noci pomohou zastavit vzpouru umělé inteligence. Každý z nich má v jeho plánu své místo, i když tomu zatím nerozumí. Napětí roste, čas ubíhá a otázka, zda před nimi stojí vizionář, nebo fanatik, visí ve vzduchu stejně hrozivě jako tikající nálož. Komorní thrill...
-(Pokracovani na webu)|E||T|DOPLNĚNO: Kvůli financování ČT a ČRo vznikne pracovní skupina. Stát je spojovat nebude|D|10.04.2026 15:03|P|Ministr kultury Oto Klempíř se v pátek sešel s generálním ředitelem České televize Hynkem Chudárkem a ředitelem Českého rozhlasu Reném Zavoralem. Před...|X|Ministr kultury Oto Klempíř se v pátek sešel s generálním ředitelem České televize Hynkem Chudárkem a ředitelem Českého rozhlasu Reném Zavoralem. Představil jim hlavní teze nového zákona, který na ministerstvu vzniká. Koncesionářské poplatky mají být zrušeny a nahrazeny platbou ze státního rozpočtu s valorizačním mechanismem.
+V našem podcastovém kanále najdete také videopořad Týden Živě. Ve zvukové podobě zde vychází každé pondělí.|E||T|DOPLNĚNO: Kvůli financování ČT a ČRo vznikne pracovní skupina. Stát je spojovat nebude|D|10.04.2026 15:03|P|Ministr kultury Oto Klempíř se v pátek sešel s generálním ředitelem České televize Hynkem Chudárkem a ředitelem Českého rozhlasu Reném Zavoralem. Před...|X|Ministr kultury Oto Klempíř se v pátek sešel s generálním ředitelem České televize Hynkem Chudárkem a ředitelem Českého rozhlasu Reném Zavoralem. Představil jim hlavní teze nového zákona, který na ministerstvu vzniká. Koncesionářské poplatky mají být zrušeny a nahrazeny platbou ze státního rozpočtu s valorizačním mechanismem.
 Chystaný zákon stojí podle Klempíře na čtyřech klíčových bodech. Česká televize a Český rozhlas zůstanou samostatnými institucemi, o jejich slučování se neuvažuje. Koncesionářské poplatky se zruší a nahradí je platba ze státního rozpočtu. Zákon má zároveň zavést mechanismus zajišťující valorizaci financování a dostatečnou předvídatelnost. Kontrolu nad fungováním médií budou i nadále vykonávat mediální rady.
 Ministr se s řediteli dohodl na pravidelných konzultacích během přípravy zákona. „Jakmile návrh schválí koaliční rada, nahrajeme jej do systému a projde standardní legislativní cestou,“ uvedl Klempíř.
 Ředitel České televize Chudárek, který o schůzku usiloval již dříve, v samostatném prohlášení zdůraznil, že pro management ČT zůstává financování prostřednictvím poplatků preferovanou formou. „Zásadní pro nás je nejen forma, ale také výše rozpočtu v takové výši, abychom byli schopní poskytovat veřejnou službu jako doposud, dostát všem smluvním závazkům a plnit schválené dlouhodobé pětileté plány,“ doplnil Chudárek.
@@ -318,22 +203,7 @@ Od 58 Kč měsíčně|E||T|Škoda s partnery představila zvonek, který přelst
 Prostřednictvím akustických testů ANC technologie výzkumný tým identifikoval úzké frekvenční pásmo, bezpečnostní mezeru („safety gap“), která dovede filtry ANC sluchátek proniknout. Jde o rozmezí frekvencí 750–780 Hz. Odborníci tak zvonek s názvem DuoBell naladili právě i na tuto frekvenci. Má ale i další rezonátor, který je naladěný na vyšší frekvenci a díky speciálně navrženému kladívkovému mechanismu vytváří rychlé a nepravidelné údery. Tím generuje zvukové vlny, které ANC algoritmy nedovedou vyhodnotit dostatečně rychle, aby je potlačily.
 Na nápadu pracovala i agentura PHD a na přípravě prototypu se podílela produkční společnost Unit 9. Projekt reaguje na stoupající počet nehod cyklistů s chodci, na kterém se podílí i obliba sluchátek s aktivním potlačováním zvuku.
 Partneři testovali zvonek v Londýně, v němž má sluchátka s aktivním potlačováním hluku nosit až polovina chodců. Měření podle Škody ukázala, že chodci se sluchátky s aktivní funkcí potlačování hluku měli po aktivaci zvonku DuoBell až o 22 metrů více prostoru k reakci.
-Testy probíhaly s kurýry společnosti Deliveroo v průběhu února. Podle firem si je kurýři chtěli ponechat. Automobilka chce dát k dispozici výzkumné poznatky a zjištění, které za vývojem stojí.|E||T|Těmto starým Kindlům za měsíc skončí podpora. Čtečky však vyhazovat nemusíte|D|10.04.2026 12:45|P|Amazon končí podporu nejstarších čteček e-knih. • Na Kindlech z let 2007 až 2012 již nepůjde kupovat a stahovat knihy. • Nestanou se z nich těžítka, s...|X|Amazon začal uživatelům nejstarších Kindlů posílat e-mailová upozornění, že jejich čtečky e-knih k 20. květnu 2026 ztratí podporu. Od tohoto data v nich nebude možné kupovat, půjčovat ani stahovat nové tituly z oficiálního obchodu. A pokud uživatelé zařízení resetují, nebudou jej moci znovu přidat ke svému účtu.
-Konec podpory firma následně potvrdila pro PCMag, kterému upřesnila, že se změna týká všech modelů od první generace až po čtečky vydané v roce 2012. Konkrétně tak jde o čtečky a tablety:
-- Kindle (2007)
-- Kindle DX a DX Graphite (2009 a 2010)
-- Kindle Keyboard (2010)
-- Kindle 4 (2011)
-- Kindle Touch (2011)
-- Kindle 5 (2012)
-- Kindle Paperwhite (2012)
-- Kindle Fire (2011)
-- Kindle Fire 2 (2012)
-- Kindle Fire HD 7 (2012)
-- Kindle Fire HD 8.9 (2012)
-Ze zařízení se tím ale nestanou těžítka. Nadále je bude možné přes USB naplnit e-knihami koupenými či staženými jinde. Pro hračičky je to i dobrá příležitost, jak čtečky vybavit alternativním softwarem. Populární KOReader podporuje všechny zmíněné Kindly s výjimkou první generace a doplní do nich nové funkce, například podporu formátu EPUB.
-Zdroje a další informace:
-PCMag|E||T|Značka Czech Digital Group mizí z trhu, společnost zanikla fúzí s Českými Radiokomunikacemi|D|10.04.2026 10:03|P|Akciová společnost Czech Digital Group, která provozovala celoplošnou DVB-T2 síť Multiplex 23, byla ve čtvrtek 9. dubna vymazána z obchodního rejstřík...|X|Akciová společnost Czech Digital Group, která provozovala celoplošnou DVB-T2 síť Multiplex 23, byla ve čtvrtek 9. dubna vymazána z obchodního rejstříku. Zanikla totiž po fúzi s mateřskou společností České Radiokomunikace. Pro diváky se nic nemění.
+Testy probíhaly s kurýry společnosti Deliveroo v průběhu února. Podle firem si je kurýři chtěli ponechat. Automobilka chce dát k dispozici výzkumné poznatky a zjištění, které za vývojem stojí.|E||T|Značka Czech Digital Group mizí z trhu, společnost zanikla fúzí s Českými Radiokomunikacemi|D|10.04.2026 10:03|P|Akciová společnost Czech Digital Group, která provozovala celoplošnou DVB-T2 síť Multiplex 23, byla ve čtvrtek 9. dubna vymazána z obchodního rejstřík...|X|Akciová společnost Czech Digital Group, která provozovala celoplošnou DVB-T2 síť Multiplex 23, byla ve čtvrtek 9. dubna vymazána z obchodního rejstříku. Zanikla totiž po fúzi s mateřskou společností České Radiokomunikace. Pro diváky se nic nemění.
 Projekt fúze byl připravený od konce letošního února a rozhodným dnem byla středa 1. dubna. Veškerý majetek, závazky i práva podle notářského zápisu přešly na nástupnickou společnost České Radiokomunikace.
 Značka Czech Digital Group byla součástí digitalizace televizního vysílání v České republice už od prvních experimentů. V srpnu 2000 společnost zahájila testovací vysílání na 46. kanálu v Praze a v okolí, rok poté začala testovat interaktivní aplikace a v červenci 2004 jí přidělil Český telekomunikační úřad kmitočty na tehdejší přechodný Multiplex B. Na přelomu října a listopadu 2008 se tato síť transformovala na finální DVB-T Multiplex 3.
 Výstavbu a provoz sítě zajišťovaly pro Czech Digital Group už tehdy České Radiokomunikace. Na konci listopadu 2010 firmu kompletně odkoupily od společnosti SP D Corporation. České Radiokomunikace po právní stránce zachovaly název operátora a jeho samostatné fungování, ale jinak správu, obchod a provoz reálně zajišťoval nový majitel. Toto uspořádání vydrželo také při přechodu na DVB-T2, kdy se z Multiplexu 3 stal Multiplex 23.
@@ -477,10 +347,7 @@ Znamená to, že procesor je o dvě stě dolarů dražší než model Ryzen 9 99
 Což samozřejmě u nejvyššího modelu nabídky není nic divného a je třeba pamatovat, že třeba ceny špičkových herních grafických karet v posledních letech vyšplhaly na mnohem horší úrovně (GeForce RTX 5090 původně měla stát 1999 $, reálně se pohybuje mezi třemi a čtyřmi tisíci dolarů).
 Na ohlášeném termínu vydání se zatím nic nezměnilo, AMD uvádí, že se Ryzen 9 9950X3D2 Dual Edition začne prodávat 22. 4., ale je možné, že recenze budou publikovány i o pár dní dříve. Asi bude zajímavé vidět, jaké se podaří najít úlohy, v nichž by se 192 MB 3D V-Cache projevilo skutečně transformativním nárůstem výkonu.
 Procesory Ryzen 9 7950X3D a 9950X3D byly kritizovány kvůli tomu, že jsou kvůli použitelnosti 3D V-Cache jen pro polovinu jader asymetrické a v jistém smyslu hybridní trochu jako procesory Intel. Za tím asi často stála vyřčená či nevyřčená domněnka, že s 3D V-Cache pro všechna jádra by procesor fungoval výrazně lépe. Teď se ukáže, jak moc to bylo opodstatněno. Je ale pravda, že Ryzen 9 9950X3D Dual Edition alespoň nebude závislý na softwarové vrstvě dohlížející na přiřazení her a aplikací na ty správné skupiny jader, jako to je u model 7950X3D a 9950X3D.
-Zdroj: techPowerUp|E||T|Konec výpadků ve vlacích? České dráhy a Leo Express vylepšily mobilní signál ve stovkách vozů|D|09.04.2026 11:57|P|Cestování vlakem v Česku bude opět o něco pohodlnější. Stovky vlaků na českých železnicích díky dotacím zlepšily mobilní signál a 5G dostupnost během ...|X|Železniční dopravci České dráhy a Leo Express upravili 384 vozů novými úpravami pro zlepšení dostupnosti mobilního signálu. Využili k tomu dotace z Národního plánu obnovy přesahující 180 milionů korun.
-“Cílem výzvy je vybavení železničních vozů pro osobní přepravu operujících převážně na železničních koridorech TEN-T opakovači nebo propustnými okny pro zajištění dostupnosti mobilního signálu uvnitř vozů. Největší užitek z této výzvy tak mají cestující ve vlakových vozech, kteří díky ní získávají kvalitní a pokud možno nepřerušovaný přístup k mobilním hlasovým i datovým službám, a to nejen prostřednictvím nových sítí 5. generace,” informoval Český telekomunikační úřad.
-České dráhy opakovači vybavily podle serveru Lupa.cz 151 vozů v celkem 27 jednotkách Pendolino, Railjet a InterPanter. V dalších 208 vozech byla provedena laserová úprava oken pro zlepšení propustnosti signálu. Tato úprava se týká 41 vozů s kupé, 24 jídelních vozů a 143 velkoprostorových vozů.
-Společnost Leo Express opakovače instalovala do pěti pětivozových jednotek Stadler Flirt.|E||T|SPIR: Trh online reklamy loni stoupl o desetinu na 70,7 miliardy korun|D|09.04.2026 10:57|P|Zadavatelé v roce 2025 investovali do internetové reklamy rekordních 70,7 miliard korun v kombinaci ceníkových a čistých cen. Částka znamená meziroční...|X|Zadavatelé v roce 2025 investovali do internetové reklamy rekordních 70,7 miliard korun v kombinaci ceníkových a čistých cen. Částka znamená meziroční nárůst o 10,6 %, meziročně přitom stoupaly všechny formy online reklamy, tedy display reklama, reklama ve vyhledávání i katalogy a řádková inzerce, uvádí Sdružení pro internetový rozvoj (SPIR) v tiskové zprávě.
+Zdroj: techPowerUp|E||T|SPIR: Trh online reklamy loni stoupl o desetinu na 70,7 miliardy korun|D|09.04.2026 10:57|P|Zadavatelé v roce 2025 investovali do internetové reklamy rekordních 70,7 miliard korun v kombinaci ceníkových a čistých cen. Částka znamená meziroční...|X|Zadavatelé v roce 2025 investovali do internetové reklamy rekordních 70,7 miliard korun v kombinaci ceníkových a čistých cen. Částka znamená meziroční nárůst o 10,6 %, meziročně přitom stoupaly všechny formy online reklamy, tedy display reklama, reklama ve vyhledávání i katalogy a řádková inzerce, uvádí Sdružení pro internetový rozvoj (SPIR) v tiskové zprávě.
 „Digitální trh stále roste vlivem více faktorů,“ komentuje Michal Hanák, předseda předsednictva SPIR. Podle něj nejde jen o loňské oživení ekonomiky. „Lidé na internetu utrácejí stále více peněz, takže přirozeně roste i objem prostředků směřujících do marketingu a reklamy, které toto nákupní chování podporují. Objem online inzerce sílí i díky růstu ceny jednotlivých formátů. Zajímavý bude v dalších letech zejména search, který se může dramaticky změnit vlivem rostoucího vlivu AI, kde ale zatím není vykrystalizovaný business model,“ hodnotí.
 Největší část investic směřovala i v roce 2025 do celoplošné (display) reklamy, která dosáhla objemu 51,1 miliardy Kč v kombinovaných cenách. Tento formát zahrnuje jak reklamu v obsahových sítích (např. Seznam Sklik, Google Ads nebo Facebook), tak RTB a nativní formáty. Na druhém místě zůstává reklama ve vyhledávání s celkovými investicemi 18,2 miliardy Kč v reálných cenách. Katalogové zápisy a řádková inzerce přinesly médiím tržby 1,3 miliardy Kč v ceníkových cenách.
 Pro rok 2026 SPIR odhaduje růst o 7,4 %, což by mělo znamenat celkové investice ve výši 76 miliard Kč. Účastníci výzkumu však tradičně volí spíše opatrné prognózy.|E||T|Allegro a Shoptet spouštějí nativní integraci, české e-shopy tak můžou rychleji na tržiště|D|09.04.2026 10:21|P|Allegro a Shoptet spustily nativní integraci, která umožňuje prodejcům aktivovat prodej na polském marketplace přímo z administrace Shoptetu. Ten je d...|X|Allegro a Shoptet spustily nativní integraci, která umožňuje prodejcům aktivovat prodej na polském marketplace přímo z administrace Shoptetu. Ten je dominantní platformou pro tvorbu e-shopů v Česku, která pohání k 45 tisícům českých a slovenských internetových obchodů.

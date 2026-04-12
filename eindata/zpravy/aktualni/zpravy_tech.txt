@@ -1,4 +1,48 @@
-|T|Blue Origin úspěšně otestoval lunární loď ve vakuové komoře. Teď už míří na Floridu. SpaceX naopak nabírá zpoždění|D|12.04.2026 05:45|P|Blue Origin se na sociálních sítích pochlubil úspěšným dokončením klíčového tlakového testu TVAC, který v posledních týdnech absolvoval první prototyp...|X|Blue Origin se na sociálních sítích pochlubil úspěšným dokončením klíčového tlakového testu TVAC, který v posledních týdnech absolvoval první prototyp jeho lunárního nákladního modulu Blue Moon – Endurance.
+|T|iPhone si pamatuje víc, než byste čekali. Oživil i smazané zprávy ze Signalu|D|12.04.2026 08:45|P||X|Když jde u smartphonů o soukromí, záleží na každém detailu, třeba i na jednom přepínači v nastavení. Pro mnoho uživatelů představuje Signal klíčovou aplikaci v situacích, kdy vyžadují absolutní důvěrnost komunikace. Uživatelé iPhonů však dlouho žili v iluzi neproniknutelného soukromí, protože opomíjeli zásadní rozdíl mezi bezpečností samotné aplikace a vlastnostmi operačního systému.
+Iluze soukromí v iOS. Signal sice podporuje šifrování, má mizející zprávy a aplikaci můžete odinstalovat. Všechny notifikace (včetně doručených zpráv ze Signalu) ukládá do interní databáze notifikací. A pokud obsahují i obsah zprávy, soukromá komunikace vlastně neexistuje
+Americkým vyšetřovatelům se totiž po získání fyzického přístupu k iPhonu podařilo obnovit smazané zprávy ze Signalu, a to i přesto, že aplikace byla z telefonu již delší dobu odstraněná a zprávy byly původně odesílány v režimu „mizejících zpráv“. Jako nečekaný pomocník se nakonec ukázala interní databáze oznámení (tzv. push notifikací) v systému iOS. Z té se totiž podařilo získat všechny texty ze zpráv, které se konkrétnímu uživateli zobrazily v notifikačním centru.
+iOS vidí to, co mu aplikace pošle
+Signal umožňuje upravit podobu oznámení a náhledu zpráv na zamykací obrazovce iPhonu, ale uživatelé to kvůli pohodlí často nevyužívají, nebo o této možnosti v nastavení ani nevědí. Ve výchozím stavu se zobrazuje jméno uživatele i jeho zpráva, popřípadě jen jméno či generické upozornění na příchozí zprávu. Právě to by soukromí konverzace ochránilo. Dalším úskalím je fakt, že po smazání aplikace komunikační platforma o tomto kroku neví a na dané číslo nadále předává odeslané zprávy. iPhone je sice uživateli již nezobrazí, ukládají se však do uživatelsky běžně nedostupné systémové databáze. A tady je dokáží najít ti nejpovolanější.
+Z toho je patrné, že se tímto způsobe podaří „odtajnit“ jen doručené zprávy, nikoliv ty odeslané. I to však může při odhalování nekalých praktik výrazně pomoci. Navíc je třeba brát v úvahu, že na druhé straně může být opět iPhone s aplikací Signal a identickým nastavením, a tedy i se shodným systémovým přístupem k historii notifikací.
+Apple ani Signal se k incidentu oficiálně nevyjádřili, pozornost však budí načasování aktualizace iOS 26.4.1, která před pár dny upravila způsob validace tokenů pro push notifikace. Lze předpokládat, že Apple do budoucna omezí ukládání oznámení z aplikací, které již v iPhonu neexistují. Nicméně ukládání historie notifikací do lokálních seznamů a záloh prozatím přetrvává.
+Tento problém se navíc netýká pouze Signalu. Pokud u iPhonu vyžadujete maximální možnou míru soukromí, je nezbytné, aby obsah notifikací zůstal za všech okolností skrytý. Operační systém totiž vidí do všeho, co mu aplikace předají k zobrazení.|E||T|Jak vybrat bezzrcadlovku. Nekupujete jen foťák, ale celý systém. Volba bajonetu je důležitější než snímač|D|12.04.2026 07:45|P|Volba nové bezzrcadlovky není jednoduchá, protože při focení nebo natáčení videa hraje často větší roli příslušenství (typicky objektivy) než samotné ...|X|Volba nové bezzrcadlovky není jednoduchá, protože při focení nebo natáčení videa hraje často větší roli příslušenství (typicky objektivy) než samotné tělo. Při výběru je tedy potřeba zvažovat hodně detailů.
+Dnes si bezzrcadlovku koupí nejen ti, kdo se seriózně věnují focení, ale jde o univerzální nástroj jak pro zachycení rodinné dovolené, tak pro profesionální nahrávání videa. Bezzrcadlovky skvěle poslouží i všem mezi těmito dvěma póly, mají vyladěné a dostatečně jednoduché ovládání téměř pro každého, kvalitou předčí mobily i kompakty a s různým příslušenstvím odemknou potenciál kvalitně zaznamenat jakoukoli událost.
+Co to vůbec bezzrcadlovka je? Od kompaktu se odlišuje tím, že lze měnit objektivy, je dražší a určená pro náročnější uživatele. Od zrcadlovky zase tím, že chybí zrcátko, které směřuje světlo do optického hledáčku a na mechanismus ostření. U bezzrcadlovky dostanete elektronický hledáček a technologicky přesnější ostření na snímači. Obecně bezzrcadlovky nahradily zrcadlovky a v upravené podobě či s novými objektivy kompletně zastoupily jejich místo.
+V tabulce sice vypisujeme pouze těla, ale běžně budete foťák kupovat v setu s objektivem. Výrobci často nabízejí výhodné kombinace, bývají zaměřené spíše na začátečníky.
+O bezzrcadlovce můžete uvažovat, pokud chcete kvalitně zvěčnit různé rodinné události, dovolené, stejně tak, když se chcete o focení a nahrávání videa naučit více. Poslouží pro různé projekty, stačí jeden objektiv, abyste pořizovali profesionálně vypadající fotky, a s gimbalem zase můžete mít video jako od zkušeného kameramana. Případně stačí dokoupit mikrofony a můžete nahrávat třeba podcast s videem. Situací, pro se které bezzrcadlovka hodí, je dnes opravdu hodně. Ale výběr není vůbec snadný, zejména pokud vybíráte svůj první přístroj.
+Pokračování článku patří k prémiovému obsahu pro předplatitele
+Chci Premium a Živě.cz bez reklam
+Od 58 Kč měsíčně|E||T|Jak Samsungy změní aktualizace na One UI 8.5. Těšte se na pohodlnější ovládání a snazší vyhledávání|D|12.04.2026 06:45|P||X|Řada Galaxy S26 od Samsungu přišla na trh s prostředím One UI 8.5, které přináší novinky podzimní verze Androidu 16 včetně vylepšeného prostředí od Samsungu. Protože aktualizace One UI 8.5 dorazí i do starších telefonů, můžeme si s předstihem ukázat, jak se systém po aktualizaci promění. Na screenshotech bude vlevo vidět aktuální vzhled u One UI 8, nová podoba v prostředí One UI 8.5 bude vždy umístěná vpravo.
+Ovládací centrum u One UI 8 (vlevo) má pevně daný počet prvků, které můžete přemisťovat. V prostředí One UI 8.5 můžete prvky mazat a nebo dokonce na konec přidávat další zástupce
+Hlavní novinkou jsou možnosti úprav horní lišty. I nadále ji můžete sloučit do jednoho celku nebo ponechat výchozí rozdělení na dvě části, navíc si však s jednotlivými prvky lze více vyhrát. Na obrazovce rychlého přístupu si v editačním režimu můžete přeskupit všechny položky podle vlastního uvážení. Wi-Fi a Bluetooth jsou rozděleny na samostatné přepínače a veškeré prvky lze volně přesouvat. Nově je také možné jednotlivé položky z ovládacího centra odebrat a ponechat si jen ty funkce, které skutečně používáte.
+Úpravy horní lišty a vyhledávání
+Přibyla také nabídka pro přidávání ovládacích prvků, jež se vkládají do tohoto panelu. Ikony lze umístit mezi další drobné zástupce pro rychlé spuštění, nebo je mít v ovládacím centru samostatně. Nové vizuální prvky jsou dynamické, lze jim měnit velikost, a díky zaoblenějšímu, „pilulkovitému“ designu působí moderněji.
+Editační režim ovládacího centra vám dá plnou kontrolu i nad velikostí prvků
+Změnou prošla i hlavní nabídka, která nově obsahuje menší vyhledávací políčko (připomínající styl iPhonů) s tlačítkem pro hlasové vyhledávání. Hlasem tak lze najednou prohledávat nejen obsah telefonu (aplikace, nastavení, internet, Samsung Members), ale také Spotify nebo YouTube. Nabídka pro třídění a úklid hlavního menu se přesunula do pravého horního rohu.
+Hlavní menu má přepracované vyhledávací políčko i s tlačítkem pro hlasové vyhledávání
+Podobně přepracované vyhledávací políčko se objevuje i v Nastavení. Je vycentrované, tedy lépe dostupné při jednoručním ovládání – a rovněž obsahuje tlačítko pro hlasové zadávání.
+U One UI 8.5 se na displej vejde více položek nastavení
+Ve One UI 8 bylo nutné využít ikonu lupy, která po displeji poněkud putovala. Položky v nastavení už nejsou tak vysoké, takže se jich na displeji najednou vejde dvanáct (když odrolujete položku se svým uživatelským jménem) místo dosavadních devíti, a to při stejné velikosti písma – přičemž ve One UI 8.5 přibyla jedna velikost písma navíc. Ve správě baterie nově uvidíte průměrnou spotřebu baterie za uplynulý týden i přehled spotřeby pro jednotlivé dny.
+Detailnější správa výdrže baterie včetně průměrné denní spotřeby
+Aplikace Telefon dostala poloprůhlednou spodní lištu se třemi kartami. Oblíbené kontakty se nyní zobrazují jako karty, které lze ručně přepnout zpět na seznam.
+Nová podoba aplikace Telefon
+Výrazně jinak vypadá i aplikace Moje soubory, která klade větší důraz na náhledy posledních souborů a nabízí rychlý přístup ke staženým souborům.
+Nová verze aplikace Moje soubory
+Přístupy k jednotlivým typům dat jsou soustředěny v horní liště a vyhledávání opět využívá vycentrované políčko.
+Now Brief nám u One UI 8.5 zobrazuje více položek
+Funkce Now Brief na první pohled nabízí více obsahu, ale při bližším prozkoumání přibyly pouze Hudba a podcasty. Tato funkce je nicméně poněkud nevyzpytatelná – nikdy nevíte, co při příštím spuštění zobrazí.
+Dvě nové Galaxy AI funkce, které však nepodporují češtinu
+Z funkcí Galaxy AI přibyly dvě novinky, které však s češtinou nevycházejí: Now Nudge a souhrny oznámení. Ze stejného důvodu není pro české uživatele relevantní ani vylepšený Bixby.
+Asistent fotografií si nově poradí i s textovými prompty (i v češtině)
+Největší změnou v oblasti AI je nový Asistent fotografií. Například objekty určené ke smazání z fotky již nemusíte vybírat ručně – stačí je popsat textovým promptem. Upravené kopie obrázků lze ukládat a dále upravovat nebo se vracet k historii úprav. Do fotky lze dokonce vložit skutečný objekt z jiné fotky, čímž vznikne věrohodnější výsledek v případech, kdy AI nedokáže daný objekt přesvědčivě vygenerovat.
+Budík vás může vzbudit tapetou s aktuálním počasím
+U budíků lze nově nastavit tapetu s aktuálním počasím – jakmile vás telefon probudí, hned na displeji uvidíte, co je právě venku za počasí. Všímáme si i nového grafického rozhraní u funkce Auracast (Zvukové vysílání), které můžete, nejen vysílat, ale také poslouchat. Quick Share může při sdílení fotek doporučit osoby, které jsou na nich zachyceny. V režimu DeX lze nově očekávat více ploch s aplikacemi pro rychlé přepínání, přičemž si systém při příštím spuštění zapamatuje velikost aplikačních oken.
+Nová podoba a možnost sdílení přes Auracast alias Zvukové vysílání
+Při nahrávání obrazovky je nově možné vybrat pouze konkrétní část displeje, například z důvodu ochrany soukromí. Telefon sám odhadne, co chcete nahrávat, a nabídne příslušný výběrový obdélník, který lze před spuštěním záznamu ještě upravit.
+Nahrávat už je možné jen část displeje telefonu
+V prostředí si všímáme i plynulejších animací a dalších drobností, které navazují na výše uvedené změny.
+Přechod z One UI 8 na One UI 8.5 rozhodně není tak výrazný jako v minulosti (navíc se bavíme o přechodu o „půlverzi“), přesto lze potvrdit, že Samsung své prostředí po vizuální stránce opět lehce „zmodernizoval“.
+Zdroje a další informace: Samsung, autorský článek|E||T|Blue Origin úspěšně otestoval lunární loď ve vakuové komoře. Teď už míří na Floridu. SpaceX naopak nabírá zpoždění|D|12.04.2026 05:45|P|Blue Origin se na sociálních sítích pochlubil úspěšným dokončením klíčového tlakového testu TVAC, který v posledních týdnech absolvoval první prototyp...|X|Blue Origin se na sociálních sítích pochlubil úspěšným dokončením klíčového tlakového testu TVAC, který v posledních týdnech absolvoval první prototyp jeho lunárního nákladního modulu Blue Moon – Endurance.
 Nyní jej čeká cesta zpět na Floridu, kde společnost poblíž Kennedyho vesmírného střediska montuje své obří rakety New Glenn. Jedna z nich v následujících měsících vyšle Endurance k Měsíci, kde snad úspěšně přistane.
 TVAC, tedy Thermal VAcuum Chamber je speciální podtlaková komora, ve které se testuje integrita kosmických dílů v podmínkách, které co nejvěrněji připomínají vesmír.
 Podobná zařízení dokážou vytvořit téměř dokonalé vakuum, ale také upraví teplotu v rozsahu až několika set stupňů Celsia oběma směry. Od hodnot méně než -100 °C po 250 °C. Expertem na podobné komory je pochopitelně NASA, která jich má hned několik.
@@ -17,133 +61,7 @@ Toto musí umět HLS, než se vydá k Měsíci
 Musí zvládnout přečerpávání paliva na oběžné dráze (spojení dvou starshipů dohromady), musí zvládnout přinejmenším jeden úspěšný let a přistání na Měsíci bez posádky a do třetice musí zvládnout nejen demonstraci s vypouštěním maket družic Starlink, ale zároveň udržet při životě posádku.
 Zhruba tohoto bychom se měli dočkat už za dva roky. Současný stav Starshipu tomu ale úplně neodpovídá a zpoždění se už počítá přinejmenším na rok
 To je vývoj na dekádu! SpaceX společně s NASA na to ale mají už jen dva roky a loni slibované zvýšení tempa testů největší rakety všech dob se zatím nekoná. Možná tedy nakonec skutečně slízne smetanu Blue Origin, s jehož vlastními lunárními moduly se přitom původně počítalo až na pozdějších misích programu Artemis.
-Pokud chce mít Trump astronauty na Měsíci do konce vlastního mandátu, někdo tady musí násobně zrychlit vývoj, opět posunout harmonogram, anebo přepsat projektovou dokumentaci celé mise Artemis IV.|E||T|Dohrajete je za víkend. Vybrali jsme nejlepší hry do deseti hodin|D|12.04.2026 05:10|P|Po zážitcích z obrovských virtuálních světů na desítky i stovky hodin se hodí jednou za čas zpomalit. Her, které si naplno vychutnáte za jeden nebo dv...|X|Ukázat všechny listy najednou
-A Short Hike
-Na krátkou procházku se vydáme s Claire, která na pohled připomíná kombinaci ptáka a člověka. Máme namířeno do Hawk Peak Provincial parku, kde její teta May pracuje jako strážce. Claire má zrovna den volna, a tak ho plánuje strávit v barvité přírodě zdejšího okolí. Zároveň ale očekává velmi důležitý telefonát a se signálem to v parku není žádná sláva. Proto se musí dostat na jeho nejvyšší bod.
-Hodnocení recenzentů: 88 % (z 17 recenzí Metacritic)
-Hodnocení na Steamu: Extrémně kladné (99 % od 18 230 hráčů)
-Oficiální web hry
-Platformy: PC, PlayStation 4, Xbox One, Nintendo Switch
-Žánry: adventura, nezávislá hra
-Herní režim: jeden hráč
-Oficiální čeština na PC: bez češtiny
-Herní engine: Unity 2021
-Vývojář: adamgryu
-Datum vydání: 18. 8. 2020
-Digitální distribuce: Steam , Epic , PlayStation , Xbox , Nintendo
-Pokračování 2 / 27 Viewfinder
-Fotky jsou pro mnoho lidí důležitými vzpomínkami na minulost. Co byste řekli na to, kdybyste si zachycený okamžik mohli promítnout do reality? Přesně na tomto principu funguje řešení hádanek ve Viewfinderu. V každé úrovni dostanete do rukou pár fotek, s jejichž použitím se musíte dostat k dalšímu terminálu. Ta pravá zábava začíná v moment, kdy získáte foťák a obrázky si můžete tvořit sami.
-Viewfinder se dělí na několik kapitol, z nichž má každá svoji unikátní herní mechaniku. S procházením se také dozvíte detaily o příbězích vědátorů, kteří mají stvoření tohoto neobyčejného světa na svědomí.
-Hodnocení recenzentů: 84 % (z 31 recenzí Metacritic)
-Hodnocení na Steamu: Velmi kladné (94 % od 10 830 hráčů)
-Oficiální web hry
-Platformy: PC, PlayStation 5, PlayStation 4, Xbox Series, Nintendo Switch
-Žánry: adventura, nezávislá hra, plošinovka, puzzle
-Herní režim: jeden hráč
-Oficiální čeština na PC: bez češtiny
-Herní engine: Unity
-Vydavatel: Thunderful
-Vývojář: Sad Owl Studios
-Datum vydání: 18. 7. 2023
-Digitální distribuce: Steam , Epic , PlayStation , Xbox , Nintendo
-Pokračování 3 / 27 Stray
-V tajemném kyberpunkovém městě prosvíceném neony jste ztraceni bez rodiny. Musíte přežít jako toulavá kočka a překonat nástrahy temných uliček. Namísto lidí narazíte spíš na droidy a další stvoření, která mají ke člověku docela daleko. V jednom z nich ale najdete spojence.
-Společnost vám bude dělat malý létající droid B12, který podá pomocnou ruku během nebezpečných situací. I když hrajete za obyčejnou kočku, ne každý je nadšený z toho, že se touláte jeho obydlím nebo částmi města, kde nemá nikdo co dělat. Abyste se takových situací vyvarovali, musíte na to jít pěkně potichu.
-Hodnocení recenzentů: 83 % (z 99 recenzí Metacritic)
-Hodnocení na Steamu: Extrémně kladné (97 % od 150 623 hráčů)
-Oficiální web hry
-Platformy: PC, PlayStation 5, PlayStation 4, Xbox Series X, Xbox One, Nintendo Switch
-Žánry: adventura, nezávislá hra, plošinovka
-Herní režim: jeden hráč
-Oficiální čeština na PC: bez češtiny
-Herní engine: Unreal Engine 4
-Vydavatel: Annapurna Interactive
-Vývojář: BlueTwelve Studio
-Datum vydání: 19. 7. 2022
-Digitální distribuce: Steam , PlayStation , Xbox , Nintendo
-Pokračování 4 / 27 Twelve Minutes
-Důkaz, že hra nepotřebuje obrovský otevřený svět, aby zaujala hráče. Tady se totiž vše odehrává v jednom malém bytě. Z top-down pohledu prožijete příběh muže chyceného v časové smyčce, do jehož bytu vpadne zloděj a pro něj nebo jeho manželku to nedopadne dobře. Tím to ale teprve začíná.
-Pokud se děj dostane do slepé uličky, začínáte zase znovu. Můžete ale využít nově nabytých znalostí a podle toho se připravit. Hra na vaše počínání také náležitě reaguje. I když se tedy může zdát, že máte vyhráno, následné události vás opět mohou překvapit.
-Hodnocení recenzentů: 76 % (z 60 recenzí Metacritic)
-Hodnocení na Steamu: Spíše kladné (72 % od 7 206 hráčů)
-Oficiální web hry
-Platformy: PC, PlayStation 5, PlayStation 4, Xbox One, Xbox Series X, Nintendo Switch
-Žánry: adventura, nezávislá hra, hra point-and-click, puzzle
-Herní režim: jeden hráč
-Oficiální čeština na PC: bez češtiny
-Herní engine: Unity
-Vydavatel: Annapurna Interactive
-Vývojář: Luis Antonio
-Datum vydání: 19. 8. 2021
-Digitální distribuce: Steam , PlayStation , Xbox , Nintendo
-Pokračování 5 / 27 Uncharted: Drake's Fortune
-Nathan Drake je vášnivým lovcem pokladů. Nyní má v hledáčku zatím největší úlovek své kariéry. V rakvi sira Francise Drakea našel vodítko, které ho má dovést ke ztracenému El Doradu. Po dalším pátrání se dostává na zapomenutý ostrov v Pacifiku. Není ale sám, kdo po pokladu pátrá, a tak někdy není jiné možnosti, než se chopit zbraně a probít se o kousek blíž tomuto ztracenému pokladu.
-Série Uncharted herní dobou celkově patří mezi kratší zážitky v porovnání s dnešními blockbustery. První díl už znatelně zestárl, ale kde jinde by měl nováček začít? Navíc když balení prvních tří dílů ve vylepšené podobě jednoduše seženete na PlayStationu. PCčkáři si musejí vystačit s posledním pokračováním a samostatným přídavkem Lost Legacy, které ale nejsou o nic horší, než jejich předchůdci.
-Hodnocení recenzentů: 88 % (z 66 recenzí Metacritic)
-Hodnocení hráčů: 77 % (z 4 671 hodnocení)
-Oficiální web hry
-Platforma: PlayStation 3, PlayStation 4
-Žánry: adventura, plošinovka, střílečka
-Herní režim: jeden hráč
-Herní engine: Naughty Dog Engine
-Vývojář: Naughty Dog, SCE/WWS
-Datum vydání: 16. 11. 2007
-Digitální distribuce: PlayStation
-Pokračování 6 / 27 Firewatch
-Henry utíká před svým složitým životem do divočiny Wyomingu, kde přijímá letní práci požárního hlídače. Z vrcholu věže sleduje kouř a pomáhá chránit okolní přírodu. Jedinou spojku s okolním světem představuje vysílačka a hlas jeho nadřízené Delilah. Právě ona bude Henrymu pomáhat během nejteplejšího a nejsuššího léta za poslední roky.
-Záhadná událost však Henryho vyláká z bezpečí rozhledny do divoké a neznámé krajiny. Stylizovaná grafika dodává lesu jedinečnou atmosféru, kde hráči objevují užitečné předměty i hrozby, kterým se musí vyhnout. Budování vztahu s Delilah ovlivní každé rozhodnutí, což tvoří důležitý základ tajemného příběhu.
-Hodnocení recenzentů: 81 % (z 65 recenzí Metacritic)
-Hodnocení na Steamu: Velmi kladné (90 % od 91 258 hráčů)
-Oficiální web hry
-Platformy: PC, PlayStation 4, Xbox One, Nintendo Switch
-Žánry: adventura, nezávislá hra
-Herní režim: jeden hráč
-Oficiální čeština na PC: bez češtiny
-Herní engine: Unity
-Vydavatel: Panic Inc.
-Vývojář: Campo Santo
-Datum vydání: 9. 2. 2016
-Digitální distribuce: Steam , PlayStation , Xbox , Nintendo
-Pokračování 7 / 27 Oxenfree
-S nadpřirozenem si není radno zahrávat. Na vlastní kůži se o tom přesvědčí parta přátel, kteří nevědomky otevřou duchovní portál na odlehlém ostrově, který dříve sloužil jako vojenská základna. Tahle povedená partička se rozhodla, že je to ideální místo na pořádání párty. Od zábavy se ale rychle přesuneme k prověřování záhad v kůži Alex.
-Skrz onen portál můžete nahlédnout do tragické minulosti ostrova. Zároveň skrz něj přichází i zrůdnosti, které hodlají vyřídit cokoliv, co se jim postaví do cesty. Jak se s nimi vypořádáte, je čistě na vás. Příběh Oxenfree se větví s každým rozhodnutím. Není to jen o střetech s nadpřirozenem. Budete řešit také osobní spory či zažehnávat krize.
-Hodnocení recenzentů: 80 % (z 49 recenzí Metacritic)
-Hodnocení na Steamu: Velmi kladné (91 % od 9 437 hráčů)
-Oficiální web hry
-Platformy: PC, PlayStation 4, Xbox One, iOS, Android, Nintendo Switch
-Žánry: adventura, nezávislá hra, RPG
-Herní režim: jeden hráč
-Oficiální čeština na PC: bez češtiny
-Herní engine: Unity
-Vývojář: Night School Studio
-Datum vydání: 14. 1. 2016
-Digitální distribuce: Steam , Epic , PlayStation , Xbox , Nintendo , Google Play , Apple App Store
-Pokračování 8 / 27 Superliminal
-V Superliminal vše stojí a padá na perspektivě. Velikost objektů se mění podle toho, odkud se na ně díváte a co se nachází na pozadí. V tomhle surrealistickém světě díky tomu budete moci rozlousknout i hádanky, které by v běžné situaci byly neřešitelné. K tomu je potřeba, abyste se oprostili od pravidel reálného světa.
-Poté, co se vám podařilo usnout u televize, se probouzíte ve 3 ráno se vzpomínkou na snovou terapii doktora Pierce. Opravdu jste se ale probudili? Nemůžete si být jistí, jestli jste se do doktorovy terapie zapojili nebo si jen matně vybavujete jeho reklamu v televizi. A jestli opravdu sníte, je vůbec možnost, abyste se z tohoto podivného světa ještě někdy probudili?
-Hodnocení recenzentů: 74 % (z 35 recenzí Metacritic)
-Hodnocení na Steamu: Velmi kladné (94 % od 27 167 hráčů)
-Oficiální web hry
-Platformy: PC, PlayStation 4, PlayStation 5, Xbox One, Nintendo Switch, iOS, Android
-Žánry: adventura, nezávislá hra, puzzle
-Herní režimy: jeden hráč, více hráčů, kooperace
-Oficiální čeština na PC: bez češtiny
-Herní engine: Unity
-Vývojář: Pillow Castle Games
-Datum vydání: 12. 11. 2019
-Digitální distribuce: Steam , Epic , PlayStation , Xbox , Nintendo , Google Play , Apple App Store
-Pokračování 9 / 27 Ghostrunner
-Akční parkour, ve kterém se snažíte vyšplhat na věž Dharma, poslední baštu lidské civilizace, jde provedením ve stopách kultovního Mirror's Edge. Krajinu postihla neznámá katastrofa a člověk mimo věž nemá šanci na přežití. Ani ve věži ale není život žádný med, protože tady vládne Mara. Její nelidské počínání nezůstane bez následků, povstává odpor, jehož součástí se staneme jako kybernetický nindža Jack.
-Zatímco nepřátelské jednotky vás kropí laserovými projektily, musíte si vystačit s ostřím svojí katany, které většinu vojáků přetne vejpůl jedním švihem. Sám Jack toho ale také moc nevydrží. Jeho nejsilnější vlastností je bleskový pohyb. Kromě běhání mu nedělá problém přeskakovat široké propasti nebo přeběhnout po stěnách. Není radno se zastavovat, protože se tak stanete snadným cílem.
-Hodnocení recenzentů: 81 % (z 65 recenzí Metacritic)
-Hodnocení na Steamu: Velmi kladné (91 % od 46 057 hráčů)
-Oficiální web hry
-Platformy: PC, PlayStation 4, PlayStation 5, Xbox One, Xbox Series X, Nintendo Switch
-Žánry: adventura, plošinovka, střílečka
-Herní režim: jeden hráč
-Oficiální čeština na PC: bez češtiny
-Herní engine: Unreal Engin...
-(Pokracovani na webu)|E||T|Daňové přiznání s pomocí AI, Francie skončí s Windows a přejde na Linux|D|11.04.2026 22:00|P|Nové patche od Valve zrychlí hry na grafikách s malým množstvím vRAM, týden v GNOME #244 nejen o Blueprintu pro PyPI, konverze 360° videí přes Vulkan ...|X|Francie končí s Windows, přejde na Linux
+Pokud chce mít Trump astronauty na Měsíci do konce vlastního mandátu, někdo tady musí násobně zrychlit vývoj, opět posunout harmonogram, anebo přepsat projektovou dokumentaci celé mise Artemis IV.|E||T|Daňové přiznání s pomocí AI, Francie skončí s Windows a přejde na Linux|D|11.04.2026 22:00|P|Nové patche od Valve zrychlí hry na grafikách s malým množstvím vRAM, týden v GNOME #244 nejen o Blueprintu pro PyPI, konverze 360° videí přes Vulkan ...|X|Francie končí s Windows, přejde na Linux
 Sladká Francie pokračuje v posilování národní a evropské role, tedy odstavování závislosti na obvykle amerických či čínských technologiích, dalším krokem. Příslušné úřady dostaly za úkol připravit přechod země a jejích úřadů od platformy Windows na Linux, a to pro pracovní stanice úředníků.
 Nejde přitom jen o odklon od Windows, ale odklon od technologií Microsoftu včetně Teams a obecně cloudových služeb v rukou zejména amerických IT korporací, povinných dodržovat americké zákony. Konkrétní plány čekejme od Francouzů na podzim a uvidíme, třeba se jednou budeme inspirovat.
 Týden v GNOME #244: Blueprint pro PyPI
@@ -160,21 +78,7 @@ Konverze 360° videí přes Vulkan pro FFmpeg
 Jednou z posledních novinek projektu FFmpeg, je podpora pro konverzi 360° videí s pomocí API Vulkan, pročež lze předpokládat efektivnější běh, než jaký umí standardní CPU implementace. Podpora není plně hotova v tuto chvíli kód zvládá významnou podskupinu formátů, které se pro 360° video používají, ale očekávat lze do budoucna další pokrok. Podporována je aplikace fisheye, dual fisheye a dalších typů 360° projekcí video obsahu.
 Daňové přiznání s pomocí AI, plánuje finmini
 Lidem s daněmi nově pomůže i umělá inteligence, hlásí Ministerstvo financí, resp. finanční správa. K dispozici je beta verze aplikace, kam jen 1. nahrajte vaše dokumenty – 2. zkontrolujte vyplněné údaje – 3. vytvoříte soubor, který bude sloužit k podání finančnímu úřadu, hlásí systém.
-Doklady lze naskenovat či vyfotit, o vše ostatní se postará AI. Kdyby uživatele zajímalo, jaká, tak hned pod tím se píše,že: „Nahrané dokumenty budou zpracovány v zabezpečeném prostředí s využitím technologie Microsoft Azure Open AI“. Před použitím jistě také nebude od věci přečíst si podmínky služby.|E||T|Nahradí to kameramany? Pás kamer zvládne švenkování lépe než člověk|D|11.04.2026 15:45|P||X|Při natáčení sportovní události jako je tenisový, hokejový nebo fotbalový zápas je potřeba se spolehnout na kamery s lidskými operátory, kteří je vždy namíří na místo, kde se ve hře odehrává to důležité. Ručně pohybují s kamerou, sledují akci, zoomují. Takových kameramanů je na jedné akci více, aby ji pokryli z více úhlů.
-Někteří teď mohou být nahrazeni pásem kamer z dílen norského startupu Muybridge. Je to dlouhá řada levných kamer, které neustále snímají obraz. Mají ovšem tu výhodu, že pomocí strojového učení sledují hráče, nebo tenisový míček, a díky tomu plynule přepínají mezi jednotlivými kamerami. Výsledkem je plynulý přechod obrazu připomínající švenkování kamery. Ovšem v tomto případě není potřeba žádný operátor, vše je automatizované.
-Takhle to vypadá v praxi:
-Jak vidíte na ukázce, ovládání počítačem je rychlé a chybí pohyb kamery do stran, takže zde nedochází ani k pohybovému rozmazání obrazu. Ze sledování tohoto záznamu má člověk zcela jiný pocit.
-Ukázka hardwaru a trackování hráče v obslužném softwaru – všimněte si, že kolem hráče je více rámečků, sleduje jej každá z kamer v dosahu, až počítač vybere tu s ideálním záběrem.
-Pás kamer je možné připevnit v podstatě kdekoli, jejich výhodou je cena – nejsou díky moderním technologiím příliš drahé. Tím, že je obraz téměř neustále v pohybu, se skryje mnoho optických nedostatků a o zbytek se postará software. I tak je integrace do různých sportů otázkou, obklopit takovými kamerami několikakilometrovou trať F1 nebo pro ně hledat nerušivé místo na stadionu NHL nebude jednoduchý úkol.|E||T|Nizozemský vývojář oživil Doom pomocí CSS a ukázal, že i webový prohlížeč zvládne plnohodnotný 3D engine|D|11.04.2026 11:45|P|Nizozemský vývojář vytvořil pro kultovní střílečku plně funkční engine v CSS • Zatímco JavaScript zajišťuje logiku, vykreslování 3D světa obstarávají ...|X|Legendární střílečka Doom se dočkala dalšího nečekaného návratu. Nizozemský vývojář Niels Leenheer ji dokázal oživit způsobem, který by ještě před pár lety zněl jako vtip: pomocí kaskádových stylů (CSS). Každou zeď, výbušný barel, podlahu i nepřítele tvoří obyčejné HTML prvky, které prohlížeč skládá do trojrozměrného světa.
-Herní logiku, včetně pohybu a umělé inteligence, sice nadále zajišťuje JavaScript, nicméně vizuální stránka je výhradní doménou kaskádových stylů. Vykreslování prostředí vychází z původních dat z herních souborů (WAD) a browser pak pomocí matematických funkcí jako hypot() a atan2() počítá rozměry i natočení jednotlivých stěn.
-Doom naprogramovaný v CSS
-CSS nemá vlastní koncept kamery, což Leenheer chytře obešel tím, že pohybuje herním světem opačným směrem, než se hýbe hráč. Podlahy tvoří prvky otočené o 90 °, nepřátelé se natáčejí vždy čelem k hráči a vystřelené projektily využívají CSS animace. Mnohé efekty, které by dříve vyžadovaly grafické API, zde obstarává čistě stylování.
-Doom naprogramovaný v CSS
-Na hranu možností posouvají tento projekt nejnovější specifikace kaskádových stylů. Autor zdůrazňuje například využití pravidla @property pro plynulé animace a nové ukotvování pozic (anchor positioning) pro správné zobrazení zbraně v responzivním rozhraní.
-Na mobilních zařízeních sice hra funguje, ale moderní prohlížeče nejsou na tolik 3D ploch optimalizované a například mobilní Safari občas padalo. Proto bylo nezbytné zavést algoritmy pro skrývání objektů mimo zorné pole. Hra je překvapivě responzivní a uživatelské rozhraní se dynamicky přizpůsobuje menším displejům.
-Zkuste si hru v prohlížeči
-Samozřejmě nejde o náhradu moderních technologií jako WebGL. Výkon naráží na limity prohlížečů a složitější mapy systém pořádně potrápí. Přesto jde o fascinující demonstraci možností současného CSS. Projekt je jasným důkazem pokroku webových technologií i toho, že hranice jejich využití často končí jen u představivosti vývojářů.
-Pokud si chcete hru vyzkoušet na vlastní kůži, autor ji zpřístupnil online přímo na adrese cssdoom.wtf. A jestliže vás zajímá, jak přesně to funguje pod kapotou, Leenheer se štědře podělil o své know-how. Kompletní zdrojové kódy totiž publikoval na GitHubu, kde si je můžete detailně prostudovat.|E||T|Jeden z mála vítězů krátké války v Zálivu: Britská robotická věž Rapid Sentry proti íránským dronům|D|11.04.2026 09:45|P|Britské ministerstvo obrany nedávno oznámilo, že vojáci speciálního pluku Královského letectva RAF Regiment se stali prvními „esy“ dronových bojů, kdy...|X|Britské ministerstvo obrany nedávno oznámilo, že vojáci speciálního pluku Královského letectva RAF Regiment se stali prvními „esy“ dronových bojů, když sestřelili pět a více íránských dronů. Kromě důvodu k oslavám je to potvrzení trendu s narůstajícím významem pozemní obrany proti bezpilotním strojům, které ohrožují lidi a infrastrukturu.
+Doklady lze naskenovat či vyfotit, o vše ostatní se postará AI. Kdyby uživatele zajímalo, jaká, tak hned pod tím se píše,že: „Nahrané dokumenty budou zpracovány v zabezpečeném prostředí s využitím technologie Microsoft Azure Open AI“. Před použitím jistě také nebude od věci přečíst si podmínky služby.|E||T|Jeden z mála vítězů krátké války v Zálivu: Britská robotická věž Rapid Sentry proti íránským dronům|D|11.04.2026 09:45|P|Britské ministerstvo obrany nedávno oznámilo, že vojáci speciálního pluku Královského letectva RAF Regiment se stali prvními „esy“ dronových bojů, kdy...|X|Britské ministerstvo obrany nedávno oznámilo, že vojáci speciálního pluku Královského letectva RAF Regiment se stali prvními „esy“ dronových bojů, když sestřelili pět a více íránských dronů. Kromě důvodu k oslavám je to potvrzení trendu s narůstajícím významem pozemní obrany proti bezpilotním strojům, které ohrožují lidi a infrastrukturu.
 RAF Regiment dosáhl těchto úspěchů s využitím pokročilých senzorů, prostředků pro elektronický boj, a především s robotickou věží protivzdušné obrany Rapid Sentry, vybavenou raketami Martlet (LMM, Lightweight Multirole Missile).
 Jeden výstřel za 50 tisíc dolarů
 Jde o lehké a vysoce přesné střely o délce 1,3 m a váze 13 kg naváděné laserem, jejichž cena se pohybuje kolem 50 tisíc dolarů. Létají nadzvukovou rychlostí, mají dosah 6 až 8 kilometrů a v protivzdušné variantě jsou přímo určené pro boj s menšími drony.
@@ -288,7 +192,7 @@ Licence za kodek H.264 výrazně zdražuje. Doposud byl strop sto tisíc dolarů
 Nová technologie od Nvidie dokáže výrazně snížit velikost textur v paměti grafické karty. Jde o metodu Neural Texture Compression (NTC), která zvládá smrsknout například 6,5 GB na 970 MB. Mohlo by to řešit rostoucí nároky na VRAM. Pokud to Nvidia prosadí, půjde o další vniknutí AI do počítačové, respektive herní grafiky.
 Čína začne příští rok masově vyrábět paměti HBM3 a HBM3E. Půjde o verze s 12 vrstvami. Společnosti CXMT se to má podařit po třech letech od vstupu na trh. HBM se používají v AI akcelerátorech a jsou důvodem dnešní krize RAM. Vládci trhu SK Hynix, Samsung a Micron už začínají dodávat HBM4. Čína také dohnala západ v NAND čipech pro disky SSD, na Lupě jsme jeden takový otestovali.
 Asus vypustil na trh notebook Zenbook A16 s novým ARM procesorem Qualcomm Snapdragon X2 Elite Extreme. Půjde o konkurenci pro MacBooky. Stroj vyjde na rozumných 1 599 dolarů, v ceně je 48 GB RAM LPDDR5X, 1TB disk nebo 16” OLED se 120 Hz. Váha je 1,3 kilogramu. Menší 14” verze má Snapdragon X2 Elite, 16 GB RAM a cenu 1 150 dolarů. Uvidíme, zda to Qualcommu s ARMem pro Windows vyjde v druhé generaci. Testy výkonu jsou slibné.
-První kraj v Česku spouští fond s rizikovým kapitálem. Peníze mu dali CTP, Jan Barta nebo Česká spořitelna. JIC Ventures bude rozdělovat 400 milionů dolarů s cílem dál z Brna a okolí budovat technologický hub s vysokou přidanou hodnotou. Jihomoravský kraj poskytl 40 milionů, zbytek soukromý sektor.
+První kraj v Česku spouští fond s rizikovým kapitálem. Peníze mu dali CTP, Jan Barta nebo Česká spořitelna. JIC Ventures bude rozdělovat 400 milionů korun s cílem dál z Brna a okolí budovat technologický hub s vysokou přidanou hodnotou. Jihomoravský kraj poskytl 40 milionů, zbytek soukromý sektor.
 Intel nenápadně vydal dva nové procesory. Core Ultra 7 251HX má 18 jader a 18 vláken, P-jader je šest, frekvence 5,1 GHz a integrovaná grafika Xe3 má čtyři výpočetní jednotky. TPU dosahuje na 45 až 160 wattů. Core Ultra X9 378H spadá do kategorie Panther Lake s 16 jádry a 16 vlákny, přičemž P-jádra jsou pouze čtyři. Frekvence ja maximálně pět GHz, TDP 25 až 80 wattů.
 SanDisk vydal 2TB paměťovou kartu Extreme Pro UHS-II SD. Umí sekvenční čtení a zápis 310, respektive 305 MB/s. Cena je ale dva tisíce dolarů. Pokud sháníte levnější karty od stejné značky, zkuste to třeba zde.
 Amazon končí s podporou starších verzí Kindle a Kindle Fire. Jde o modely z roku 2012 a starší. Nepůjde stahovat nový obsah, nakupovat v Kindle Store a podobně.

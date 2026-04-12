@@ -1,4 +1,3 @@
-|T|Chyba|D||P|Něco se pokazilo.|X|'NoneType' object has no attribute 'strip'|E|
 |T|Daňové přiznání s pomocí AI, Francie skončí s Windows a přejde na Linux|D|11.04.2026 22:00|P|Nové patche od Valve zrychlí hry na grafikách s malým množstvím vRAM, týden v GNOME #244 nejen o Blueprintu pro PyPI, konverze 360° videí přes Vulkan ...|X|Francie končí s Windows, přejde na Linux
 Sladká Francie pokračuje v posilování národní a evropské role, tedy odstavování závislosti na obvykle amerických či čínských technologiích, dalším krokem. Příslušné úřady dostaly za úkol připravit přechod země a jejích úřadů od platformy Windows na Linux, a to pro pracovní stanice úředníků.
 Nejde přitom jen o odklon od Windows, ale odklon od technologií Microsoftu včetně Teams a obecně cloudových služeb v rukou zejména amerických IT korporací, povinných dodržovat americké zákony. Konkrétní plány čekejme od Francouzů na podzim a uvidíme, třeba se jednou budeme inspirovat.

@@ -1,4 +1,149 @@
-|T|Daňové přiznání s pomocí AI, Francie skončí s Windows a přejde na Linux|D|11.04.2026 22:00|P|Nové patche od Valve zrychlí hry na grafikách s malým množstvím vRAM, týden v GNOME #244 nejen o Blueprintu pro PyPI, konverze 360° videí přes Vulkan ...|X|Francie končí s Windows, přejde na Linux
+|T|Blue Origin úspěšně otestoval lunární loď ve vakuové komoře. Teď už míří na Floridu. SpaceX naopak nabírá zpoždění|D|12.04.2026 05:45|P|Blue Origin se na sociálních sítích pochlubil úspěšným dokončením klíčového tlakového testu TVAC, který v posledních týdnech absolvoval první prototyp...|X|Blue Origin se na sociálních sítích pochlubil úspěšným dokončením klíčového tlakového testu TVAC, který v posledních týdnech absolvoval první prototyp jeho lunárního nákladního modulu Blue Moon – Endurance.
+Nyní jej čeká cesta zpět na Floridu, kde společnost poblíž Kennedyho vesmírného střediska montuje své obří rakety New Glenn. Jedna z nich v následujících měsících vyšle Endurance k Měsíci, kde snad úspěšně přistane.
+TVAC, tedy Thermal VAcuum Chamber je speciální podtlaková komora, ve které se testuje integrita kosmických dílů v podmínkách, které co nejvěrněji připomínají vesmír.
+Podobná zařízení dokážou vytvořit téměř dokonalé vakuum, ale také upraví teplotu v rozsahu až několika set stupňů Celsia oběma směry. Od hodnot méně než -100 °C po 250 °C. Expertem na podobné komory je pochopitelně NASA, která jich má hned několik.
+Bude New Glenn náhradou za SLS?
+Blue Origin se v posledních několika málo letech opravdu daří. Společnost totiž během relativně krátké doby a bez většího povyku na sociálních sítích vyvinula raketový nosič, který po dalších úpravách zvládne i těžkotonážní let k Měsíci.
+Podle mnohých by to mohl být tedy právě New Glenn v plánované rozměrnější podobě, který jednou nahradí jednoúčelovou, a proto i velmi drahou raketu SLS pro současné mise Artemis.
+I s menším kašpárkem...
+Společnost si zároveň dala a příští roky stopku od vynášení turistů na oběžnou dráhu a plně se soustředí na lunární mise. Nabízí se tedy otázka, jestli nakonec ještě nedojde ke změnám i v samotném programu Artemis a astronauti nakonec nebudou na Měsíci přistávat právě v Blue Moonu.
+Endurance – první funkční prototyp nákladní lunární lodě Blue Moon MK1
+Blue Origin jej chce vyrobit ve dvou variantách. Nyní se soustředí na menší nákladní verzi MK1 a Endurance je právě její prototyp. V další fázi, pokud bude design fungovat, je v plánu mnohem mohutnější MK2, která kombinuje nákladní stupeň s malým habitatem pro posádku, ve kterém přežijí nehostinné podmínky Měsíce.
+Elone, tak kdy odstartuje ten Starship V3?
+Příští rok má loď Orion během mise Artemis III demonstrovat spojení s lunárním modulem. Doposud platí, že to má být upravený Starship HLS. Jenže ten je stále ve stavu prototypu a SpaceX nabírá další zpoždění.
+Třetí a už poměrně dospělá verze V3 měla podle odhadů letět nejprve v březnu, pak v dubnu a teď komunita tipuje, že to bude snad květen. To už jsme ale téměř v půli letošního roku a SpaceX by poté muselo nasadit doposud nevídané tempo.
+Než si totiž do Starshipu z Orionu ve vesmíru přesednou astronauti a použijí jej jako výtah na měsíční povrch a dočasnou základnu, musí raketa umět kousky, které jsou mnohem těžší než dosavadní a prakticky jen balistické lety.
+Toto musí umět HLS, než se vydá k Měsíci
+Musí zvládnout přečerpávání paliva na oběžné dráze (spojení dvou starshipů dohromady), musí zvládnout přinejmenším jeden úspěšný let a přistání na Měsíci bez posádky a do třetice musí zvládnout nejen demonstraci s vypouštěním maket družic Starlink, ale zároveň udržet při životě posádku.
+Zhruba tohoto bychom se měli dočkat už za dva roky. Současný stav Starshipu tomu ale úplně neodpovídá a zpoždění se už počítá přinejmenším na rok
+To je vývoj na dekádu! SpaceX společně s NASA na to ale mají už jen dva roky a loni slibované zvýšení tempa testů největší rakety všech dob se zatím nekoná. Možná tedy nakonec skutečně slízne smetanu Blue Origin, s jehož vlastními lunárními moduly se přitom původně počítalo až na pozdějších misích programu Artemis.
+Pokud chce mít Trump astronauty na Měsíci do konce vlastního mandátu, někdo tady musí násobně zrychlit vývoj, opět posunout harmonogram, anebo přepsat projektovou dokumentaci celé mise Artemis IV.|E||T|Dohrajete je za víkend. Vybrali jsme nejlepší hry do deseti hodin|D|12.04.2026 05:10|P|Po zážitcích z obrovských virtuálních světů na desítky i stovky hodin se hodí jednou za čas zpomalit. Her, které si naplno vychutnáte za jeden nebo dv...|X|Ukázat všechny listy najednou
+A Short Hike
+Na krátkou procházku se vydáme s Claire, která na pohled připomíná kombinaci ptáka a člověka. Máme namířeno do Hawk Peak Provincial parku, kde její teta May pracuje jako strážce. Claire má zrovna den volna, a tak ho plánuje strávit v barvité přírodě zdejšího okolí. Zároveň ale očekává velmi důležitý telefonát a se signálem to v parku není žádná sláva. Proto se musí dostat na jeho nejvyšší bod.
+Hodnocení recenzentů: 88 % (z 17 recenzí Metacritic)
+Hodnocení na Steamu: Extrémně kladné (99 % od 18 230 hráčů)
+Oficiální web hry
+Platformy: PC, PlayStation 4, Xbox One, Nintendo Switch
+Žánry: adventura, nezávislá hra
+Herní režim: jeden hráč
+Oficiální čeština na PC: bez češtiny
+Herní engine: Unity 2021
+Vývojář: adamgryu
+Datum vydání: 18. 8. 2020
+Digitální distribuce: Steam , Epic , PlayStation , Xbox , Nintendo
+Pokračování 2 / 27 Viewfinder
+Fotky jsou pro mnoho lidí důležitými vzpomínkami na minulost. Co byste řekli na to, kdybyste si zachycený okamžik mohli promítnout do reality? Přesně na tomto principu funguje řešení hádanek ve Viewfinderu. V každé úrovni dostanete do rukou pár fotek, s jejichž použitím se musíte dostat k dalšímu terminálu. Ta pravá zábava začíná v moment, kdy získáte foťák a obrázky si můžete tvořit sami.
+Viewfinder se dělí na několik kapitol, z nichž má každá svoji unikátní herní mechaniku. S procházením se také dozvíte detaily o příbězích vědátorů, kteří mají stvoření tohoto neobyčejného světa na svědomí.
+Hodnocení recenzentů: 84 % (z 31 recenzí Metacritic)
+Hodnocení na Steamu: Velmi kladné (94 % od 10 830 hráčů)
+Oficiální web hry
+Platformy: PC, PlayStation 5, PlayStation 4, Xbox Series, Nintendo Switch
+Žánry: adventura, nezávislá hra, plošinovka, puzzle
+Herní režim: jeden hráč
+Oficiální čeština na PC: bez češtiny
+Herní engine: Unity
+Vydavatel: Thunderful
+Vývojář: Sad Owl Studios
+Datum vydání: 18. 7. 2023
+Digitální distribuce: Steam , Epic , PlayStation , Xbox , Nintendo
+Pokračování 3 / 27 Stray
+V tajemném kyberpunkovém městě prosvíceném neony jste ztraceni bez rodiny. Musíte přežít jako toulavá kočka a překonat nástrahy temných uliček. Namísto lidí narazíte spíš na droidy a další stvoření, která mají ke člověku docela daleko. V jednom z nich ale najdete spojence.
+Společnost vám bude dělat malý létající droid B12, který podá pomocnou ruku během nebezpečných situací. I když hrajete za obyčejnou kočku, ne každý je nadšený z toho, že se touláte jeho obydlím nebo částmi města, kde nemá nikdo co dělat. Abyste se takových situací vyvarovali, musíte na to jít pěkně potichu.
+Hodnocení recenzentů: 83 % (z 99 recenzí Metacritic)
+Hodnocení na Steamu: Extrémně kladné (97 % od 150 623 hráčů)
+Oficiální web hry
+Platformy: PC, PlayStation 5, PlayStation 4, Xbox Series X, Xbox One, Nintendo Switch
+Žánry: adventura, nezávislá hra, plošinovka
+Herní režim: jeden hráč
+Oficiální čeština na PC: bez češtiny
+Herní engine: Unreal Engine 4
+Vydavatel: Annapurna Interactive
+Vývojář: BlueTwelve Studio
+Datum vydání: 19. 7. 2022
+Digitální distribuce: Steam , PlayStation , Xbox , Nintendo
+Pokračování 4 / 27 Twelve Minutes
+Důkaz, že hra nepotřebuje obrovský otevřený svět, aby zaujala hráče. Tady se totiž vše odehrává v jednom malém bytě. Z top-down pohledu prožijete příběh muže chyceného v časové smyčce, do jehož bytu vpadne zloděj a pro něj nebo jeho manželku to nedopadne dobře. Tím to ale teprve začíná.
+Pokud se děj dostane do slepé uličky, začínáte zase znovu. Můžete ale využít nově nabytých znalostí a podle toho se připravit. Hra na vaše počínání také náležitě reaguje. I když se tedy může zdát, že máte vyhráno, následné události vás opět mohou překvapit.
+Hodnocení recenzentů: 76 % (z 60 recenzí Metacritic)
+Hodnocení na Steamu: Spíše kladné (72 % od 7 206 hráčů)
+Oficiální web hry
+Platformy: PC, PlayStation 5, PlayStation 4, Xbox One, Xbox Series X, Nintendo Switch
+Žánry: adventura, nezávislá hra, hra point-and-click, puzzle
+Herní režim: jeden hráč
+Oficiální čeština na PC: bez češtiny
+Herní engine: Unity
+Vydavatel: Annapurna Interactive
+Vývojář: Luis Antonio
+Datum vydání: 19. 8. 2021
+Digitální distribuce: Steam , PlayStation , Xbox , Nintendo
+Pokračování 5 / 27 Uncharted: Drake's Fortune
+Nathan Drake je vášnivým lovcem pokladů. Nyní má v hledáčku zatím největší úlovek své kariéry. V rakvi sira Francise Drakea našel vodítko, které ho má dovést ke ztracenému El Doradu. Po dalším pátrání se dostává na zapomenutý ostrov v Pacifiku. Není ale sám, kdo po pokladu pátrá, a tak někdy není jiné možnosti, než se chopit zbraně a probít se o kousek blíž tomuto ztracenému pokladu.
+Série Uncharted herní dobou celkově patří mezi kratší zážitky v porovnání s dnešními blockbustery. První díl už znatelně zestárl, ale kde jinde by měl nováček začít? Navíc když balení prvních tří dílů ve vylepšené podobě jednoduše seženete na PlayStationu. PCčkáři si musejí vystačit s posledním pokračováním a samostatným přídavkem Lost Legacy, které ale nejsou o nic horší, než jejich předchůdci.
+Hodnocení recenzentů: 88 % (z 66 recenzí Metacritic)
+Hodnocení hráčů: 77 % (z 4 671 hodnocení)
+Oficiální web hry
+Platforma: PlayStation 3, PlayStation 4
+Žánry: adventura, plošinovka, střílečka
+Herní režim: jeden hráč
+Herní engine: Naughty Dog Engine
+Vývojář: Naughty Dog, SCE/WWS
+Datum vydání: 16. 11. 2007
+Digitální distribuce: PlayStation
+Pokračování 6 / 27 Firewatch
+Henry utíká před svým složitým životem do divočiny Wyomingu, kde přijímá letní práci požárního hlídače. Z vrcholu věže sleduje kouř a pomáhá chránit okolní přírodu. Jedinou spojku s okolním světem představuje vysílačka a hlas jeho nadřízené Delilah. Právě ona bude Henrymu pomáhat během nejteplejšího a nejsuššího léta za poslední roky.
+Záhadná událost však Henryho vyláká z bezpečí rozhledny do divoké a neznámé krajiny. Stylizovaná grafika dodává lesu jedinečnou atmosféru, kde hráči objevují užitečné předměty i hrozby, kterým se musí vyhnout. Budování vztahu s Delilah ovlivní každé rozhodnutí, což tvoří důležitý základ tajemného příběhu.
+Hodnocení recenzentů: 81 % (z 65 recenzí Metacritic)
+Hodnocení na Steamu: Velmi kladné (90 % od 91 258 hráčů)
+Oficiální web hry
+Platformy: PC, PlayStation 4, Xbox One, Nintendo Switch
+Žánry: adventura, nezávislá hra
+Herní režim: jeden hráč
+Oficiální čeština na PC: bez češtiny
+Herní engine: Unity
+Vydavatel: Panic Inc.
+Vývojář: Campo Santo
+Datum vydání: 9. 2. 2016
+Digitální distribuce: Steam , PlayStation , Xbox , Nintendo
+Pokračování 7 / 27 Oxenfree
+S nadpřirozenem si není radno zahrávat. Na vlastní kůži se o tom přesvědčí parta přátel, kteří nevědomky otevřou duchovní portál na odlehlém ostrově, který dříve sloužil jako vojenská základna. Tahle povedená partička se rozhodla, že je to ideální místo na pořádání párty. Od zábavy se ale rychle přesuneme k prověřování záhad v kůži Alex.
+Skrz onen portál můžete nahlédnout do tragické minulosti ostrova. Zároveň skrz něj přichází i zrůdnosti, které hodlají vyřídit cokoliv, co se jim postaví do cesty. Jak se s nimi vypořádáte, je čistě na vás. Příběh Oxenfree se větví s každým rozhodnutím. Není to jen o střetech s nadpřirozenem. Budete řešit také osobní spory či zažehnávat krize.
+Hodnocení recenzentů: 80 % (z 49 recenzí Metacritic)
+Hodnocení na Steamu: Velmi kladné (91 % od 9 437 hráčů)
+Oficiální web hry
+Platformy: PC, PlayStation 4, Xbox One, iOS, Android, Nintendo Switch
+Žánry: adventura, nezávislá hra, RPG
+Herní režim: jeden hráč
+Oficiální čeština na PC: bez češtiny
+Herní engine: Unity
+Vývojář: Night School Studio
+Datum vydání: 14. 1. 2016
+Digitální distribuce: Steam , Epic , PlayStation , Xbox , Nintendo , Google Play , Apple App Store
+Pokračování 8 / 27 Superliminal
+V Superliminal vše stojí a padá na perspektivě. Velikost objektů se mění podle toho, odkud se na ně díváte a co se nachází na pozadí. V tomhle surrealistickém světě díky tomu budete moci rozlousknout i hádanky, které by v běžné situaci byly neřešitelné. K tomu je potřeba, abyste se oprostili od pravidel reálného světa.
+Poté, co se vám podařilo usnout u televize, se probouzíte ve 3 ráno se vzpomínkou na snovou terapii doktora Pierce. Opravdu jste se ale probudili? Nemůžete si být jistí, jestli jste se do doktorovy terapie zapojili nebo si jen matně vybavujete jeho reklamu v televizi. A jestli opravdu sníte, je vůbec možnost, abyste se z tohoto podivného světa ještě někdy probudili?
+Hodnocení recenzentů: 74 % (z 35 recenzí Metacritic)
+Hodnocení na Steamu: Velmi kladné (94 % od 27 167 hráčů)
+Oficiální web hry
+Platformy: PC, PlayStation 4, PlayStation 5, Xbox One, Nintendo Switch, iOS, Android
+Žánry: adventura, nezávislá hra, puzzle
+Herní režimy: jeden hráč, více hráčů, kooperace
+Oficiální čeština na PC: bez češtiny
+Herní engine: Unity
+Vývojář: Pillow Castle Games
+Datum vydání: 12. 11. 2019
+Digitální distribuce: Steam , Epic , PlayStation , Xbox , Nintendo , Google Play , Apple App Store
+Pokračování 9 / 27 Ghostrunner
+Akční parkour, ve kterém se snažíte vyšplhat na věž Dharma, poslední baštu lidské civilizace, jde provedením ve stopách kultovního Mirror's Edge. Krajinu postihla neznámá katastrofa a člověk mimo věž nemá šanci na přežití. Ani ve věži ale není život žádný med, protože tady vládne Mara. Její nelidské počínání nezůstane bez následků, povstává odpor, jehož součástí se staneme jako kybernetický nindža Jack.
+Zatímco nepřátelské jednotky vás kropí laserovými projektily, musíte si vystačit s ostřím svojí katany, které většinu vojáků přetne vejpůl jedním švihem. Sám Jack toho ale také moc nevydrží. Jeho nejsilnější vlastností je bleskový pohyb. Kromě běhání mu nedělá problém přeskakovat široké propasti nebo přeběhnout po stěnách. Není radno se zastavovat, protože se tak stanete snadným cílem.
+Hodnocení recenzentů: 81 % (z 65 recenzí Metacritic)
+Hodnocení na Steamu: Velmi kladné (91 % od 46 057 hráčů)
+Oficiální web hry
+Platformy: PC, PlayStation 4, PlayStation 5, Xbox One, Xbox Series X, Nintendo Switch
+Žánry: adventura, plošinovka, střílečka
+Herní režim: jeden hráč
+Oficiální čeština na PC: bez češtiny
+Herní engine: Unreal Engin...
+(Pokracovani na webu)|E||T|Daňové přiznání s pomocí AI, Francie skončí s Windows a přejde na Linux|D|11.04.2026 22:00|P|Nové patche od Valve zrychlí hry na grafikách s malým množstvím vRAM, týden v GNOME #244 nejen o Blueprintu pro PyPI, konverze 360° videí přes Vulkan ...|X|Francie končí s Windows, přejde na Linux
 Sladká Francie pokračuje v posilování národní a evropské role, tedy odstavování závislosti na obvykle amerických či čínských technologiích, dalším krokem. Příslušné úřady dostaly za úkol připravit přechod země a jejích úřadů od platformy Windows na Linux, a to pro pracovní stanice úředníků.
 Nejde přitom jen o odklon od Windows, ale odklon od technologií Microsoftu včetně Teams a obecně cloudových služeb v rukou zejména amerických IT korporací, povinných dodržovat americké zákony. Konkrétní plány čekejme od Francouzů na podzim a uvidíme, třeba se jednou budeme inspirovat.
 Týden v GNOME #244: Blueprint pro PyPI
@@ -55,8 +200,7 @@ Hlídač slev má ale své kanály v komunikátorech WhatsApp a Telegram. Klikn�
 Jsme také na sociálních sítích Facebook, Threads, X, Bluesky, Mastodon, Discord a můžete odebírat naše RSS se slevami.
 WhatsApp má u kanálů vypnuté upozornění na nové zprávy. Musíte to změnit sami přes ikonu zvonku v pravém horním rohu aplikace. Viz žlutá šipka:
 Našli jste sami zajímavou slevu? Napište nám.
-Za nákup, který uskutečníte prostřednictvím odkazu v článku, může Živě dostat provizi.|E||T|Toto je 50 nejstahovanějších a nejoblíbenějších aplikací pro iPhone a Android v Česku|D|11.04.2026 08:45|P||X|Google Play a App Store pravidelně zveřejňují žebříčky nejoblíbenějších a nejvíce stahovaných aplikací. Vybrali jsme z nich 25 nejlepších aplikací pro Android a 25 nejlepších aplikací pro iOS. Najdete mezi nimi i vy svého favorita? Celý žebříček si můžete prohlédnout v galerii na začátku článku.
-Zdroje a další informace: Apple Store, Google Play|E||T|Pozor, pokud používáte CPU-Z a HWMonitor. Hackeři je napadli, mohli jste si stáhnout malware|D|11.04.2026 06:00|P|Pozor: Web hostující programy CPU-Z a HWMonitor byl napaden a několik hodin šířil infikované verze těchto utilit. Pokud jste je v posledních dnech sta...|X|Nadšenci či pokročilejší uživatelé počítačů asi budou znát nástroje CPU-Z a případně HWMonitor, což je příbuzná utilita hostované na stejném webu CPUID.com. Pokud jste ale tento týden stáhli jejich nové verze nebo instalátory, mohli jste být infikováni malwarem. Web CPUID.com byl totiž napaden hackery, kteří ho po určitý čas používali k distribuci svého škodlivého kódu. Pokud jste ve čtvrtek nebo pátek tyto programy stáhli, můžete být obětí.
+Za nákup, který uskutečníte prostřednictvím odkazu v článku, může Živě dostat provizi.|E||T|Pozor, pokud používáte CPU-Z a HWMonitor. Hackeři je napadli, mohli jste si stáhnout malware|D|11.04.2026 06:00|P|Pozor: Web hostující programy CPU-Z a HWMonitor byl napaden a několik hodin šířil infikované verze těchto utilit. Pokud jste je v posledních dnech sta...|X|Nadšenci či pokročilejší uživatelé počítačů asi budou znát nástroje CPU-Z a případně HWMonitor, což je příbuzná utilita hostované na stejném webu CPUID.com. Pokud jste ale tento týden stáhli jejich nové verze nebo instalátory, mohli jste být infikováni malwarem. Web CPUID.com byl totiž napaden hackery, kteří ho po určitý čas používali k distribuci svého škodlivého kódu. Pokud jste ve čtvrtek nebo pátek tyto programy stáhli, můžete být obětí.
 Web hostující CPU-Z a HWMonitor byl kompromitován útočníky
 Napadení si všimli uživatelé, kterým začaly antivirové programy hlásit, že stažený instalátor HWMonitoru nebo CPU-Z je škodlivý software. Nešlo bohužel o klamný poplach, jak to někdy bývá, v tomto případě antimalwarové programy udělaly svou práci. Web CPUID.com byl totiž napaden a neznámým hackerům se povedl průnik, po kterém na web nakladli falešné odkazy, které návštěvníkům podvrhávaly infikované verze zmíněných programů obsahující škodlivý software (zřejmě v březnu odhalený STX Rat).
 Ty by neměly mít obvyklý podpis, protože na této úrovni infrastruktura projektů kompromitována nebyla, ale pokud si uživatel změny či absence podpisu nevšiml, mohl program nainstalovat a velká část by si asi problému nevšimla.
@@ -80,17 +224,7 @@ TDP všech těchto modelů je 15W, s maximální turbo spotřebou 35 W. Jsou ted
 Tyto procesory by měly v noteboocích nahrazovat zejména různé „Core 100“ a starší procesory generací Alder Lake, Raptor Lake a Meteor Lake, které Intel stále udržuje v prodeji, protože čipletová Core Ultra 200 jsou příliš drahá na výrobu. V tomto segmentu by mělo jít o zlepšení co do jednovláknového výkonu, ale asi i v mobilitě.
 Wildcat Lake ale asi stále bude cenově postaveno o trošku výš než nejlevnější procesory Intelu s „malými jádry“ pocházející z linie Atomů – jako různé starší Celerony, Pentia a později „Intel Processory“. Například čipy jako řada Intel N100 nejspíš zůstanou v nabídce jako stupeň pod modely Wildcat Lake nadále.
 Wildcat Lake by mělo být docela přínosem i proto, že AMD do tohoto levnějšího segmentu nové procesory příliš netlačí – jeho nejnovější generace s jádry Zen 4 a zejména Zen 5 jsou spíše až ve vyšších patrech a v nejlevnějších modelech se dál prodávají SoC s jádry Zen 3 nebo dokonce Zen 2 (APU Mendocino), u nichž je zejména jednovláknový výkon už hodně pozadu za dnešními standardy. Wildcat Lake snad v levných noteboocích pozvedne úroveň a také přiměje AMD ke zlepšením.
-Zdroj: Jaykihn|E||T|MacBook Neo je nejdůležitější počítač roku. Levné notebooky s Windows, tohle musíte okopírovat (Podcast Živě)|D|10.04.2026 16:45|P|Macbook Neo je podle Lukáše nejdůležitějším modelem za dlouhou dobu. Ukazuje totiž, jak může vypadat dobrý, a přitom levný notebook. Americká firma se...|X|Macbook Neo je podle Lukáše nejdůležitějším modelem za dlouhou dobu. Ukazuje totiž, jak může vypadat dobrý, a přitom levný notebook. Americká firma se uchýlila ke kompromisům na správných místech. Neo nabízí dostatečný výkon do kanceláře, celodenní výdrž, skvělý displej a barevné šasi.
-Základní verzi si studenti a studentky mohou pořídit za zhruba 14 tisíc korun. V této cenové hladině konkurence s Windows lape po dechu. Výrobce notebooků s Windows Lukáš kritizuje zejména za špatné displeje. Apple v Neu ošidil porty, k počítači připojíte jediný monitor a klávesnice není podsvícená. Pro cílovou skupinu ale nejde o zásadní překážky.
-Program pořadu
-- 01:13 – První dojmy
-- 08:15 – Displej za 1*
-- 19:13 – Výkon pro kancelář
-- 27:16 – Dobrá klávesnice, chudá výbava
-- 36:27 – V Česku bez Apple Intelligence
-Zdroje a další informace: hudba od Nihilora
-Podcast Živě najdete také na Spotify, kde se můžete přihlásit k odběru, stejně tak ve službách Apple Podcasts a YouTube Music. Pořad lze odebírat i prostřednictvím RSS. Budeme rádi za zpětnou vazbu. Pokud se vám podcast líbí, sdílejte jej.
-V našem podcastovém kanále najdete také videopořad Týden Živě. Ve zvukové podobě zde vychází každé pondělí.|E||T|DOPLNĚNO: Kvůli financování ČT a ČRo vznikne pracovní skupina. Stát je spojovat nebude|D|10.04.2026 15:03|P|Ministr kultury Oto Klempíř se v pátek sešel s generálním ředitelem České televize Hynkem Chudárkem a ředitelem Českého rozhlasu Reném Zavoralem. Před...|X|Ministr kultury Oto Klempíř se v pátek sešel s generálním ředitelem České televize Hynkem Chudárkem a ředitelem Českého rozhlasu Reném Zavoralem. Představil jim hlavní teze nového zákona, který na ministerstvu vzniká. Koncesionářské poplatky mají být zrušeny a nahrazeny platbou ze státního rozpočtu s valorizačním mechanismem.
+Zdroj: Jaykihn|E||T|DOPLNĚNO: Kvůli financování ČT a ČRo vznikne pracovní skupina. Stát je spojovat nebude|D|10.04.2026 15:03|P|Ministr kultury Oto Klempíř se v pátek sešel s generálním ředitelem České televize Hynkem Chudárkem a ředitelem Českého rozhlasu Reném Zavoralem. Před...|X|Ministr kultury Oto Klempíř se v pátek sešel s generálním ředitelem České televize Hynkem Chudárkem a ředitelem Českého rozhlasu Reném Zavoralem. Představil jim hlavní teze nového zákona, který na ministerstvu vzniká. Koncesionářské poplatky mají být zrušeny a nahrazeny platbou ze státního rozpočtu s valorizačním mechanismem.
 Chystaný zákon stojí podle Klempíře na čtyřech klíčových bodech. Česká televize a Český rozhlas zůstanou samostatnými institucemi, o jejich slučování se neuvažuje. Koncesionářské poplatky se zruší a nahradí je platba ze státního rozpočtu. Zákon má zároveň zavést mechanismus zajišťující valorizaci financování a dostatečnou předvídatelnost. Kontrolu nad fungováním médií budou i nadále vykonávat mediální rady.
 Ministr se s řediteli dohodl na pravidelných konzultacích během přípravy zákona. „Jakmile návrh schválí koaliční rada, nahrajeme jej do systému a projde standardní legislativní cestou,“ uvedl Klempíř.
 Ředitel České televize Chudárek, který o schůzku usiloval již dříve, v samostatném prohlášení zdůraznil, že pro management ČT zůstává financování prostřednictvím poplatků preferovanou formou. „Zásadní pro nás je nejen forma, ale také výše rozpočtu v takové výši, abychom byli schopní poskytovat veřejnou službu jako doposud, dostát všem smluvním závazkům a plnit schválené dlouhodobé pětileté plány,“ doplnil Chudárek.

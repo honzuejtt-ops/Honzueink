@@ -610,6 +610,10 @@ if __name__ == "__main__":
         ("https://blog.google/technology/ai/rss/", 20),
     ], celkovy_limit=200)
 
+    pozit_data = stahni_zpravy_multi([
+        ("https://pozitivni-zpravy.cz/feed/", 100),
+    ], celkovy_limit=100)
+
     # 2. Archivace a ukládání zpráv do eindata/zpravy/aktualni/ a archiv/YYYY-MM-DD dle data článku
     oprav_existujici_archiv(archiv_dir)
 
@@ -618,6 +622,7 @@ if __name__ == "__main__":
         ('zpravy_svet.txt', svet_data),
         ('zpravy_cr.txt',   cr_data),
         ('zpravy_tech.txt', tech_data),
+        ('zpravy_pozit.txt', pozit_data),
     ]:
         # Uložíme index (pro rychlé ESP32)
         idx_name = soubor.replace('.txt', '.idx')

@@ -1,0 +1,11 @@
+Článek
+Firma uvedla, že zaznamenala podezřelou aktivitu spojenou s přístupem k informacím o rezervacích. „Jakmile jsme tuto aktivitu odhalili, podnikli jsme kroky k omezení problému,“ uvedla společnost.
+Došlo například k aktualizaci PIN kódů rezervací, aby je nikdo nemohl zneužít. Dotčení zákazníci o tom byli samozřejmě informováni, upřesnil server Guardian.
+Booking neupřesnil, jaká data přesně unikla. Podle informací zaslaných klientům se mohlo jednat o „určité informace o rezervaci“ spojené s minulými pobyty. Konkrétně jde například o jména zákazníků, e-mailové adresy, telefonní čísla, poštovní adresy, detaily rezervací či komunikaci s ubytovateli.
+Dobrou zprávou ale je, že podle společnosti nedošlo k úniku finančních údajů.
+I když mezi uniklými daty nemají být přihlašovací údaje uživatelů, není od věci z preventivních důvodů svá hesla změnit.
+Otazník zatím visí nad tím, kolika lidí se incident týká. Booking, který nabízí více než 30 milionů ubytovacích zařízení po celém světě, přesný počet zasažených uživatelů nezveřejnil.
+Útoky pod hlavičkou Bookingu
+Nejde přitom o ojedinělý problém. Platforma se v posledních letech potýká s rostoucím počtem kybernetických útoků a podvodů, které cílí přímo na koncové klienty.
+Častým scénářem jsou situace, kdy podvodníci kontaktují zákazníky a pod záminkou „ověření“ nebo „předautorizace“ po nich požadují platební údaje.
+Podobný incident se odehrál už v roce 2018, kdy útočníci pomocí phishingu získali přístup k účtům hotelových zaměstnanců. Tehdy unikla data více než čtyř tisíc klientů a firma čelila pokutě 475 tisíc eur (11,6 milionu korun) za opožděné nahlášení.

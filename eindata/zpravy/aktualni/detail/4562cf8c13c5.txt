@@ -1,0 +1,22 @@
+I v éře digitálních technologií občas potřebujeme poctivé ocelové svaly. Pásový přepravník Crawler-Transporter 2, padesátiletý veterán s novým srdcem, opět dokázal na svých bedrech dopravit k odpalovací rampě náklad těžší než patnáct Soch svobody. Vozil raketoplány, byl i u startu měsíční mise Artemis II.
+Příběh tohoto mechanického behemota se začal psát už v roce 1963 v Ohiu, kdy inženýři navrhli stroj schopný pohnout nejtěžšími předměty světa. Od té doby se jeho siluety staly neodmyslitelným symbolem Kennedyho vesmírného střediska, kde nejprve sloužily programu Apollo a později tři desetiletí věrně převážely raketoplány.
+Aktuální použití pro misi Artemis I je však výsledkem rozsáhlé modernizace, kterou prošel konkrétně exemplář označovaný jako CT-2. Aby si poradil s novou raketou SLS, museli technici kompletně přepracovat jeho vnitřnosti, vyměnit ložiska za odolnější a posílit konstrukci tak, aby zvládla o padesát procent vyšší zátěž než původní návrh z šedesátých let.
+Fascinující je zejména preciznost, s jakou se tento kolos o velikosti baseballového vnitřního pole pohybuje. Na své osm hodin trvající pouti k rampě 39B udržuje CT-2 náklad v naprosté rovině díky sofistikovanému hydraulickému systému. Ten musí neustále vyrovnávat sklon terénu, protože každá odpalovací rampa stojí na vrcholu umělého kopce.
+Inženýři během přesunu bedlivě sledují vibrace a rychlost omezují tak, aby raketa zažila tu nejhladší možnou jízdu, což v praxi znamená tempo kolem kilometru a čtvrt za hodinu. Stroj s nádrží na téměř 19 000 litrů nafty se plazí krajinou a každých deset metrů spálí přibližně tři až čtyři litry paliva.
+Asi si dovedete představit, že oprava pásů bude náročná operace...
+Rakety samotné se crawler ani nedotýká, pouze podpírá mobilní vypouštěcí plošinu. To z něj dělá univerzálního dělníka schopného i v budoucnu vozit jakákoli další plavidla bez nutnosti dalších úprav. NASA tak v tomto stroji našla pomocníka během éry pionýrských letů na Měsíc i pro plánované cesty k Marsu.
+Ačkoli CT-2 vypadá jako relikt minulosti, jeho současná kapacita přes 8100 tun z něj stále dělá nejsilnější transportér svého druhu na světě. Po úspěšném startu z 1. dubna se tento obr nyní pomalu vrací na své parkoviště, kde bude čekat na další příležitost.
+CT-2 má své méně známé, ale téměř identické dvojče s označením CT-1. Oba stroje vznikly současně pro program Apollo, ale jejich cesty se časem rozdělily. Pásovec CT-1 zůstal v konfiguraci bližší staršímu návrhu pro raketoplány, CT-2 prošel zmiňovaným posílením, které zahrnuje i masivnější hydraulické válce o průměru 58 centimetrů. CT-1 dnes slouží pro lehčí úkoly, CT-2 zůstává jediným svalovcem schopným unést plnou váhu nové měsíční rakety.
+NASA Crawler-Transporter 2
+- hmotnost (bez nákladu): cca 3 016 tun
+- nosnost: až 8 200 tun
+- rozměry: cca 40 × 35 × 6 až 8 m
+- max. rychlost: bez nákladu cca 3,2 km/h, s nákladem asi 1,6 km/h
+- spotřeba paliva: až 400 l/km
+- objem palivové nádrže: cca 19 000 litrů
+- výkon: cca 4 000 kW
+- princip pohonu: diesel-elektrický (jako lokomotiva), dva spalovací motory V16 (ALCO 251C), dva AC generátory napájí 16 trakčních elektromotorů
+- počet pásů: 4, každý má 57 článků, šířka 2,3 m, jednotlivé pásy se řídí nezávisle
+- vyrovnávání platformy: hydraulický nivelační systém
+- rok uvedení do provozu: 1965
+Zdroje a další informace: NASA

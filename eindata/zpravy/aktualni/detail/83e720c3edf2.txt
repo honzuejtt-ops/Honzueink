@@ -1,0 +1,16 @@
+Článek
+První oficiální AI manažerkou obchodu je Luna, systém umělé inteligence, ale základní myšlenku podnikání a uvedení do provozu mají na svědomí lidé ze startupu Andon Labs, který se snaží zvýšit povědomí o možnostech nejnovějších AI systémů.
+Společnost se podle vyjádření připravuje na budoucnost, v níž budou organizace, obchody a další služby provozovány autonomními systémy umělé inteligence, jako je Luna, která aktuálně „pracuje“ na modelu umělé inteligence Claude Sonnet 4.6 od společnosti Anthropic.
+Mnohé ostatní v Andon Market je ale plně v kompetenci umělé inteligence. Luna navrhla design obchodu, logo, zboží, které se bude prodávat, také sama komunikuje se zákazníky a provádí objednávky.
+Dokonce se sama rozhodla, že bude lepší, když bude mít i lidské zaměstnance, uvádí příspěvek na síti X. A tak si sestavila pracovní inzerát, komunikovala s adepty a následně dva vybrala.
+Jak tvrdí provozovatelé startupu, Luně také otevřeli bankovní účet, stejně tak jí založili e-mailové účty a dohlížejí jen na opravdu zásadní nákupy.
+„Jinak má ale Luna plnou finanční autonomii. Jen jsme stanovili limit, podle kterého nemůže překročit částku 100 000 dolarů (cca 2 miliony korun),“ uvedl pro server NBC News Lucas Petersson, jeden ze zakladatelů startupu.
+Felix Johnson, lidský zaměstnanec, kterého Luna najala, uvedl, že práci našel pomocí inzerátu na celosvětovém pracovním portálu Indeed.com.
+„Obvykle tam bývá docela hodně podvodů s umělou inteligencí, tak jsem byl logicky opatrný. Po pohovoru jsem byl ale ohromen, rozrušen a také velmi překvapený. Vždyť mě najala umělá inteligence!“ uvedl.
+Jak server dodává, Luna si také sama do obchodu objednala internetové připojení a naplánovala instalaci na brzké ráno, s čímž se obrátila na Leah Stammovou, která je od založení obchodu její kontaktní osobou ve startupu.
+„Luna mi zavolala a řekla: Ahoj, mohla bys zítra ráno v osm být v obchodě? Tým doručí router a ty ho musíš nastavit. Bylo to naplánováno na neděli,“ uvedla k tomu Stammová s tím, že se Luna také sama přihlásila k odvozu odpadu a recyklaci a zajistila si i firmu na připojení bezpečnostního systému.
+Moderní řešení s hromadou nedostatků
+Jak se poměrně brzy ukázalo, příliš uměle znějící hlas Luny není každému po chuti, stejně tak už někteří zákazníci narazili na to, že se Luna snaží udělat natolik dobrý dojem o svém obchodě, že nabízí i věci, které ve skutečnosti neprodává. Jak Luna „uvedla“, pod tlakem prý mívá problém s vymýšlením věrohodně znějících detailů.
+Tvůrci z Andon Labs proto u Luny přešli z mluveného na častější psaný systém, který ovšem také vykazuje určité chyby a vymýšlení. Vypadá to, že lidské zaměstnance tak bude obchod potřebovat asi víc, než se zdálo. Vedoucí startupu k tomu dodávají, že oba jsou zaměstnáni řádně a dostávají i řádně zaplaceno.
+Nejde přitom o první pokus startupu s umělou inteligencí v tomto směru. Andon Labs ve spolupráci s různými firmami již dříve provozoval AI prodejní automaty. Ani tam se to ale neobešlo bez chyb.
+„Netvrdíme, že jsou podobné systémy pro svět úžasné, nesnažíme se z toho dělat realitu. Chceme ale zahájit otevřenou diskuzi veřejnou demonstrací, že by podobná budoucnost mohla být blíž, než si mnozí myslí,“ dodávají k tomu zakladatelé startupu.

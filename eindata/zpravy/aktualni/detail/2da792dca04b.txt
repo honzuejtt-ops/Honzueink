@@ -1,0 +1,10 @@
+Ministerstvo financí ve spolupráci s finanční správou spustilo novou aplikaci, která má pomocí umělé inteligence usnadnit podání daňového přiznání. Zatím je k dispozici pouze v testovací betaverzi a určená je pouze pro zaměstnance nebo studenty na brigádě. Jakmile úřady získají zpětnou vazbu, mohly by ji otevřít i pro jiné druhy příjmů, například z podnikání, nájmu nebo obchodů s cennými papíry či jinými nástroji.
+Nástroj z dodaných PDF, naskenovaných nebo vyfocených podkladů umí vyčíst potřebné údaje a vyplní je pak do formuláře. Jde především o:
+- potvrzení o zdanitelných příjmech od vašeho zaměstnavatele
+- doklady o darech, úrocích, penzijním spoření či životním pojištění
+- potvrzení druhého rodiče v případě, že uplatňujete daňové zvýhodnění na děti
+Pokud budou ve formuláři nějaké údaje chybět, pomůcka je zřetelně označí výstražným trojúhelníčkem. Uživatel zároveň může automaticky zapsané údaje upravit. Je to ostatně také on, kdo ruční za jejich správnost.
+Aplikace v současnosti není nijak napojená na státní registry, takže pracuje výhradně s informacemi z podkladů. Proto ani není dostupná skrz portál Moje daně. Jakmile ale betatest skončí, časem by se AI nástroj mohl objevit i v portálu. V současnosti však umí vygenerovat datový soubor XML, který skrz datovku nebo Moje daně je možné rovnou podat, případně se dá také vytisknou listinná forma.
+Aplikace rozpoznala celkovou hodnotu darů
+Listinná forma je však už po zákonném termínu, přiznání bylo nutné podat do 1. dubna. Elektronicky jej lze podávat do 4. května a při využití daňového poradce nebo v případě povinného auditu do 1. července.
+„Netestujeme jen samotné předvyplňování přiznání, ale i uživatelskou přívětivost aplikace a srozumitelnost nově formulovaných doprovodných textů nápovědy. Tato pomůcka reprezentuje naši vizi, jakým směrem chceme rozvíjet podporu občanů při plnění jejich daňových povinností,“ uvádí Simona Hornochová, generální ředitelka finanční správy.

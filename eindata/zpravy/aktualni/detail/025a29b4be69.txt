@@ -1,0 +1,27 @@
+Průchodnost terénem
+Šetrná k trávníku
+Rychlost sekání
+NetRTK trvale zdarma
+Výborné zabezpečení
+Terénní vzorek pneumatik nabírá vlhkou hlínu
+V těsných prostorech často dlouho přemýšlí nad cestou
+9,5
+Po robotických sekačkách koukám řadu let, ale nemyslel jsem si, že budou kdy využitelné pro mé podmínky. Příliš složitý tvar mého pozemku nefandí ukrývání obvodového drátu, různé terásky, potůčky, prudká převýšení či rozložité stromy s kořeny vystupujícími z trávy dokážou znejistit i člověka s ruční sekačkou natož robota, který se orientuje s omezenými prostředky.
+Po několika týdnech zápřahu sekačky Segway Navimow X450 v tomto těžkém terénu mohu s klidným svědomím prohlásit, že svým slibům dokáže dostát a reálně jsem nenašel terén, který by ji srazil na kolena.
+Její pohon na všechna čtyři kola (4WD) dává šanci na průchodnost terénem, navíc se umí v případě X4 přední kola nezávisle na sobě natočit, takže se pak sekačka plynule otáčí okolo zadní osy a manévruje v těsných situacích, aniž by drásala trávník. Díky dvěma žacím diskům s celkem dvanácti břity dále zvládá záběr o šířce 43 cm, což je na úrovni běžných benzínových či akumulátorových sekaček.
+Futuristický design sekačky dává najevo rychlost a terénní schopnosti
+Tato složitější zástavba přední nápravy pak také znamená větší tělo sekačky. Je citelně větší než Mammotion Luba 3 AWD (také dva rotující žací disky a pohon na všechna kola) nebo nový Roborock RockMow Z1 (stejné nezávislé natáčení přední nápravy a pohon všech kol, ale jen jeden žací disk). Půdorysem i hmotností 30 kg připomíná spíš výkonnou ruční sekačku než menší vysavač jako ostatní menší robotické sekačky.
+Segway Navimow X450
+maximální plocha: 5000 m² • šířka záběru 43 cm (dva kotouče, 12 nožů) • výška sečení 2 – 9,5 cm, v krocích po 0,5 cm • maximální sklon: 84 % (40°) • minimální šířka kanálu: 1 m • pohon: 4WD se dvěma nezávislými motory • navigace: EFLS NRTK (NRTK + 360° vizuální systém + VIO) • detekce objektů: VisionFence (360° RGB kamera + ToF) • adaptabilita na počasí: předpověď počasí + Dešťový senzor • kapacita baterie: 15 Ah • doba nabíjení: 100 min • sledování: GPS + Apple Find My • integrace chytré domácnosti: Alexa, Google Home, Home Assistant • rozměry: 850 × 610 × 351 mm • hmotnost 29,2 kg • odolnost IP66 • příslušenství: 36 náhradních břitů se šroubky, vruty do země pro uchycení základny, pásky se suchým zipem a hřeby do země pro uchycení kabelu • záruka: zařízení: 3 roky / baterie: 2 roky
+zapůjčil Segway Navimow
+V českých obchodech stojí až Kč
+Porovnat ceny
+Ač jde o nejvyšší model v nabídce Segway Navimow, kupodivu nenaskakuje na aktuální módní trend Lidarů a věří si i bez jeho využití. Polohu určuje pomocí GPS/RTK s podporou NetRTK a také trojicí kamer pokrývajících 360° okolo sekačky. Kamery se použijí, když třeba pod hustými stromy zeslábne signál GPS, a jak jsem si ověřil, ani ve tmě se sekačka úplně pod stromy neztratí. Pouze pro detekci překážek přímo před sekačkou používá optický ToF senzor s krátkým dosahem. Kamery také přes AI rozpoznávají předměty na trávě, aby nepřejely zapomenutou hračku, položenou deku nebo zaskočeného ježka. Tuto celkovou fúzi mnoha různých senzorů označuje Navimow jako EFLS NRTK pro lokalizaci a VisionFence pro rozpoznávání objektů.
+Přední kameru a hloubkový senzor doplňují kamery po stranách hlídající celý prostor okolo sekačky
+V pokračování pro předplatitele také najdete
+Instalace a mapování pozemku
+Zkušenosti ze sekání
+Zabezpečení proti zcizení
+Průběžná údržba a tipy k používání
+Chci Premium a Živě.cz bez reklam
+Od 58 Kč měsíčně

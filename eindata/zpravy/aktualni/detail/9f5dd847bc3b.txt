@@ -1,0 +1,31 @@
+Řada Galaxy S26 od Samsungu přišla na trh s prostředím One UI 8.5, které přináší novinky podzimní verze Androidu 16 včetně vylepšeného prostředí od Samsungu. Protože aktualizace One UI 8.5 dorazí i do starších telefonů, můžeme si s předstihem ukázat, jak se systém po aktualizaci promění. Na screenshotech bude vlevo vidět aktuální vzhled u One UI 8, nová podoba v prostředí One UI 8.5 bude vždy umístěná vpravo.
+Ovládací centrum u One UI 8 (vlevo) má pevně daný počet prvků, které můžete přemisťovat. V prostředí One UI 8.5 můžete prvky mazat a nebo dokonce na konec přidávat další zástupce
+Hlavní novinkou jsou možnosti úprav horní lišty. I nadále ji můžete sloučit do jednoho celku nebo ponechat výchozí rozdělení na dvě části, navíc si však s jednotlivými prvky lze více vyhrát. Na obrazovce rychlého přístupu si v editačním režimu můžete přeskupit všechny položky podle vlastního uvážení. Wi-Fi a Bluetooth jsou rozděleny na samostatné přepínače a veškeré prvky lze volně přesouvat. Nově je také možné jednotlivé položky z ovládacího centra odebrat a ponechat si jen ty funkce, které skutečně používáte.
+Úpravy horní lišty a vyhledávání
+Přibyla také nabídka pro přidávání ovládacích prvků, jež se vkládají do tohoto panelu. Ikony lze umístit mezi další drobné zástupce pro rychlé spuštění, nebo je mít v ovládacím centru samostatně. Nové vizuální prvky jsou dynamické, lze jim měnit velikost, a díky zaoblenějšímu, „pilulkovitému“ designu působí moderněji.
+Editační režim ovládacího centra vám dá plnou kontrolu i nad velikostí prvků
+Změnou prošla i hlavní nabídka, která nově obsahuje menší vyhledávací políčko (připomínající styl iPhonů) s tlačítkem pro hlasové vyhledávání. Hlasem tak lze najednou prohledávat nejen obsah telefonu (aplikace, nastavení, internet, Samsung Members), ale také Spotify nebo YouTube. Nabídka pro třídění a úklid hlavního menu se přesunula do pravého horního rohu.
+Hlavní menu má přepracované vyhledávací políčko i s tlačítkem pro hlasové vyhledávání
+Podobně přepracované vyhledávací políčko se objevuje i v Nastavení. Je vycentrované, tedy lépe dostupné při jednoručním ovládání – a rovněž obsahuje tlačítko pro hlasové zadávání.
+U One UI 8.5 se na displej vejde více položek nastavení
+Ve One UI 8 bylo nutné využít ikonu lupy, která po displeji poněkud putovala. Položky v nastavení už nejsou tak vysoké, takže se jich na displeji najednou vejde dvanáct (když odrolujete položku se svým uživatelským jménem) místo dosavadních devíti, a to při stejné velikosti písma – přičemž ve One UI 8.5 přibyla jedna velikost písma navíc. Ve správě baterie nově uvidíte průměrnou spotřebu baterie za uplynulý týden i přehled spotřeby pro jednotlivé dny.
+Detailnější správa výdrže baterie včetně průměrné denní spotřeby
+Aplikace Telefon dostala poloprůhlednou spodní lištu se třemi kartami. Oblíbené kontakty se nyní zobrazují jako karty, které lze ručně přepnout zpět na seznam.
+Nová podoba aplikace Telefon
+Výrazně jinak vypadá i aplikace Moje soubory, která klade větší důraz na náhledy posledních souborů a nabízí rychlý přístup ke staženým souborům.
+Nová verze aplikace Moje soubory
+Přístupy k jednotlivým typům dat jsou soustředěny v horní liště a vyhledávání opět využívá vycentrované políčko.
+Now Brief nám u One UI 8.5 zobrazuje více položek
+Funkce Now Brief na první pohled nabízí více obsahu, ale při bližším prozkoumání přibyly pouze Hudba a podcasty. Tato funkce je nicméně poněkud nevyzpytatelná – nikdy nevíte, co při příštím spuštění zobrazí.
+Dvě nové Galaxy AI funkce, které však nepodporují češtinu
+Z funkcí Galaxy AI přibyly dvě novinky, které však s češtinou nevycházejí: Now Nudge a souhrny oznámení. Ze stejného důvodu není pro české uživatele relevantní ani vylepšený Bixby.
+Asistent fotografií si nově poradí i s textovými prompty (i v češtině)
+Největší změnou v oblasti AI je nový Asistent fotografií. Například objekty určené ke smazání z fotky již nemusíte vybírat ručně – stačí je popsat textovým promptem. Upravené kopie obrázků lze ukládat a dále upravovat nebo se vracet k historii úprav. Do fotky lze dokonce vložit skutečný objekt z jiné fotky, čímž vznikne věrohodnější výsledek v případech, kdy AI nedokáže daný objekt přesvědčivě vygenerovat.
+Budík vás může vzbudit tapetou s aktuálním počasím
+U budíků lze nově nastavit tapetu s aktuálním počasím – jakmile vás telefon probudí, hned na displeji uvidíte, co je právě venku za počasí. Všímáme si i nového grafického rozhraní u funkce Auracast (Zvukové vysílání), které můžete, nejen vysílat, ale také poslouchat. Quick Share může při sdílení fotek doporučit osoby, které jsou na nich zachyceny. V režimu DeX lze nově očekávat více ploch s aplikacemi pro rychlé přepínání, přičemž si systém při příštím spuštění zapamatuje velikost aplikačních oken.
+Nová podoba a možnost sdílení přes Auracast alias Zvukové vysílání
+Při nahrávání obrazovky je nově možné vybrat pouze konkrétní část displeje, například z důvodu ochrany soukromí. Telefon sám odhadne, co chcete nahrávat, a nabídne příslušný výběrový obdélník, který lze před spuštěním záznamu ještě upravit.
+Nahrávat už je možné jen část displeje telefonu
+V prostředí si všímáme i plynulejších animací a dalších drobností, které navazují na výše uvedené změny.
+Přechod z One UI 8 na One UI 8.5 rozhodně není tak výrazný jako v minulosti (navíc se bavíme o přechodu o „půlverzi“), přesto lze potvrdit, že Samsung své prostředí po vizuální stránce opět lehce „zmodernizoval“.
+Zdroje a další informace: Samsung, autorský článek

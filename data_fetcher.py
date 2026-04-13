@@ -593,7 +593,7 @@ if __name__ == "__main__":
     ], celkovy_limit=200)
 
     # Cross-category deduplikace: zprávy ze světa se neobjeví v ČR sekci
-    svet_titulky = {b["titulek"] for b in extrahuj_bloky(svet_data)}
+    svet_titulky = {b["titulek"] for b in extrahuj_bloky(svet_data[1])}
     print(f"  Světové zprávy: {len(svet_titulky)} unikátních titulků (budou vynechány v ČR)")
 
     cr_data = stahni_zpravy_multi([

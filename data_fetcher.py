@@ -61,36 +61,43 @@ def stahni_zpravy(rss_url, limit=15):
     hlavicky = {"User-Agent": "Mozilla/5.0"}
     try:
         odpoved = get_with_retry(rss_url, headers=hlavicky, timeout=10, retries=3)
-        try:
-            root = ET.fromstring(odpoved.content)
-        except ET.ParseError:
-            return ""
-        items = root.findall('.//item')
+        # Použijeme BeautifulSoup pro parsování XML — je mnohem tolerantnější k jmenným prostorům WP
+        soup = BeautifulSoup(odpoved.content, 'xml')
+        items = soup.find_all('item')
+        
         vysledny_text = ""
-        if not items: return "|T|Žádné zprávy|D||P|Nebyly nalezeny.|X|Zkuste to později.|E|"
+        if not items: 
+            return "|T|Žádné zprávy|D||P|Nebyly nalezeny.|X|Zkuste to později.|E|"
+            
         for item in items[:limit]:
-            titulek = item.find('title').text.strip() if item.find('title') is not None else "Bez titulku"
-            odkaz = item.find('link').text.strip() if item.find('link') is not None else ""
+            titulek = item.find('title').get_text().strip() if item.find('title') else "Bez titulku"
+            odkaz = item.find('link').get_text().strip() if item.find('link') else ""
 
-            pub_date_el = item.find('pubDate')
+            # Datum
+            pub_date = item.find('pubDate')
             datum_cas = ""
-            if pub_date_el is not None and pub_date_el.text:
+            if pub_date and pub_date.get_text():
                 try:
-                    dt = parsedate_to_datetime(pub_date_el.text.strip())
-                    # Datum s rokem = jednoznačné archivování do správné denní složky
+                    dt = parsedate_to_datetime(pub_date.get_text().strip())
                     datum_cas = dt.strftime("%d.%m.%Y %H:%M")
                 except Exception:
                     datum_cas = datetime.now().strftime("%d.%m.%Y %H:%M")
             else:
                 datum_cas = datetime.now().strftime("%d.%m.%Y %H:%M")
 
-            perex_raw = item.find('description').text.strip() if item.find('description') is not None else ""
+            # Perex (description)
+            perex_el = item.find('description')
+            perex_raw = perex_el.get_text().strip() if perex_el else ""
             perex = BeautifulSoup(perex_raw, "html.parser").get_text()
-            perex_kratky = perex[:150] + "..." if len(perex) > 150 else perex
+            perex_kratky = (perex[:150] + "...") if len(perex) > 150 else perex
+            
+            # Plný text
             text_clanku = stahni_text_clanku(odkaz, perex) if odkaz else perex
             vysledny_text += f"|T|{titulek}|D|{datum_cas}|P|{perex_kratky}|X|{text_clanku}|E|"
+            
         return vysledny_text
-    except Exception as e: return f"|T|Chyba|D||P|Něco se pokazilo.|X|{e}|E|"
+    except Exception as e: 
+        return f"|T|Chyba|D||P|Něco se pokazilo.|X|{e}|E|"
 
 # --- FUNKCE PRO WEBY BEZ RSS (Refresher, Antiyoutuber atd.) ---
 # --- FUNKCE PRO POČASÍ ---
@@ -302,9 +309,10 @@ def stahni_horoskopy():
         res += f"|Z|{nazvy_cz[i]}|T|{text}|E|\n"
     return res
 
-def stahni_zpravy_multi(zdroje, celkovy_limit=10, exclude_titulky=None):
+def stahni_zpravy_multi(zdroje, celkovy_limit=10, exclude_titulky=None, max_age_days=1):
     """Stáhne zprávy z více RSS zdrojů, deduplikuje podle titulku a zaloguje průběh.
     exclude_titulky: set titulků které se mají přeskočit (cross-category deduplikace).
+    max_age_days: kolik dní zpětně se mají zprávy stahovat.
     """
     vybrane = []  # (dt, titulek, blok)
     # Inicializujeme titulky rovnou s vyloučenými - při shodě se blok přeskočí
@@ -326,8 +334,8 @@ def stahni_zpravy_multi(zdroje, celkovy_limit=10, exclude_titulky=None):
                 continue
             dt = parse_datum_na_datetime(b["datum_raw"])
             
-            # Ignorovat zprávy starší než 1 den (tj. propustí dnešní a včerejší)
-            if dt < datetime.now().replace(hour=0, minute=0, second=0, microsecond=0) - timedelta(days=1):
+            # Ignorovat zprávy starší než X dní
+            if dt < datetime.now().replace(hour=0, minute=0, second=0, microsecond=0) - timedelta(days=max_age_days):
                 continue
             
             vybrane.append((dt, titulek, b["blok"]))
@@ -610,9 +618,10 @@ if __name__ == "__main__":
         ("https://blog.google/technology/ai/rss/", 20),
     ], celkovy_limit=200)
 
+    # 3. Pozitivní zprávy (zde povolíme delší historii, 14 dní, protože nepíšou denně)
     pozit_data = stahni_zpravy_multi([
-        ("https://pozitivni-zpravy.cz/feed/", 100),
-    ], celkovy_limit=100)
+        ("https://pozitivni-zpravy.cz/feed/", 50),
+    ], celkovy_limit=50, max_age_days=14)
 
     # 2. Archivace a ukládání zpráv do eindata/zpravy/aktualni/ a archiv/YYYY-MM-DD dle data článku
     oprav_existujici_archiv(archiv_dir)

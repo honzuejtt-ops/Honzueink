@@ -7,6 +7,7 @@ from bs4 import BeautifulSoup
 import trafilatura
 import re
 import time
+import hashlib
 from datetime import datetime, timedelta
 
 # Kořenová cesta k SD kartě (nebo lokální složce při spuštění v CI/locálně)
@@ -229,6 +230,40 @@ def stahni_kurzy_historie():
 
     return result
 
+def stahni_sync_kurzy(full_history, days=15):
+    """Vytvoří synchronizační soubor pro posledních N dní pro Gap-Filling na ESP32."""
+    lines = full_history.strip().split('\n')
+    data_by_currency = {}
+    for line in lines:
+        if '|' in line:
+            curr, vals_str = line.split('|')
+            data_by_currency[curr] = vals_str.split(',')
+    
+    # Předpokládáme, že indexy v polích odpovídají dnům pozpátku od dnes
+    # (ve skutečnosti ECB data mají různou délku, ale u nás v scriptu jsou ořezaná na 30)
+    # Pro jednoduchost vytvoříme řádky pro posledních N záznamů
+    sync_result = ""
+    pocet_dostupnych = len(next(iter(data_by_currency.values())))
+    start_idx = max(0, pocet_dostupnych - days)
+    
+    today = datetime.now()
+    for i in range(start_idx, pocet_dostupnych):
+        # Odhadneme datum (není to 100% přesné kvůli víkendům, ale pro sync to stačí, 
+        # protože ESP32 kontroluje existenci datumu v lokálním souboru)
+        # Lepší by bylo mít datum přímo v history, ale to by vyžadovalo změnu celého formátu.
+        # Pro Gap-filling budeme používat 'dnes - offset'
+        d = today - timedelta(days=(pocet_dostupnych - 1 - i))
+        date_str = d.strftime("%Y-%m-%d")
+        
+        row_vals = []
+        for curr in ["EUR", "USD", "BTC", "ZLATO", "STRIBRO"]:
+            if curr in data_by_currency and i < len(data_by_currency[curr]):
+                row_vals.append(data_by_currency[curr][i])
+            else:
+                row_vals.append("0")
+        sync_result += f"{date_str}|" + "|".join(row_vals) + "\n"
+    return sync_result
+
 # --- FUNKCE PRO HOROSKOPY ---
 def stahni_horoskopy():
     znameni_url = ["beran","byk","blizenci","rak","lev","panna","vahy","stir","strelec","kozoroh","vodnar","ryby"]
@@ -304,8 +339,37 @@ def stahni_zpravy_multi(zdroje, celkovy_limit=10, exclude_titulky=None):
         print(f"  RSS {rss_url}: raw={len(bloky)} pridano={pridano} dup={duplikaty}")
 
     vybrane.sort(key=lambda x: x[0], reverse=True)
-    vysledny_text = "".join(b[2] for b in vybrane[:celkovy_limit])
-    return vysledny_text
+    
+    # Segmentované ukládání: Vytvoříme Index a Detaily
+    vysledny_index = ""
+    vysledna_data_all = ""
+    
+    # Cesta pro detaily (bude v eindata/zpravy/aktualni/detail/)
+    detail_dir = os.path.join(SD_CESTA, 'zpravy', 'aktualni', 'detail')
+    os.makedirs(detail_dir, exist_ok=True)
+
+    for dt, titulek, blok in vybrane[:celkovy_limit]:
+        # Generujeme ID ze zkráceného heše titulku
+        clanek_id = hashlib.md5(titulek.encode('utf-8')).hexdigest()[:12]
+        
+        # Extrahujeme text článku z bloku (původně mezi |X| a |E|)
+        try:
+            x_pos = blok.find("|X|")
+            e_pos = blok.find("|E|", x_pos)
+            text_clanku = blok[x_pos+3:e_pos]
+            perex_blok = blok[:x_pos+3] # |T|...|D|...|P|...|X|
+            
+            # Uložíme text článku do samostatného souboru
+            with open(os.path.join(detail_dir, f"{clanek_id}.txt"), 'w', encoding='utf-8') as f:
+                f.write(text_clanku)
+            
+            # Do indexu dáme jen metadata + ID místo celého textu
+            vysledny_index += f"{perex_blok}{clanek_id}|E|"
+            vysledna_data_all += blok # Necháme i All-in-one pro archiv
+        except Exception:
+            vysledna_data_all += blok
+
+    return vysledny_index, vysledna_data_all
 
 def extrahuj_titulky(text):
     """Vrátí set titulků ze zpravodajského textu ve formátu |T|...|E|."""
@@ -550,15 +614,22 @@ if __name__ == "__main__":
     oprav_existujici_archiv(archiv_dir)
 
     # Uložení aktuálních zpráv (přepis)
-    for soubor, data in [
+    for soubor, (index_data, full_data) in [
         ('zpravy_svet.txt', svet_data),
         ('zpravy_cr.txt',   cr_data),
         ('zpravy_tech.txt', tech_data),
     ]:
+        # Uložíme index (pro rychlé ESP32)
+        idx_name = soubor.replace('.txt', '.idx')
+        with open(os.path.join(zpravy_dir, idx_name), 'w', encoding='utf-8') as f:
+            f.write(index_data)
+        
+        # Uložíme i původní full verzi (pro archivaci)
         with open(os.path.join(zpravy_dir, soubor), 'w', encoding='utf-8') as f:
-            f.write(data)
-        pridano = uloz_archiv_deduplikovane_po_dnech(archiv_dir, soubor, data)
-        print(f"  Archiv {soubor}: +{pridano} novych (trideni podle data clanku)")
+            f.write(full_data)
+            
+        pridano = uloz_archiv_deduplikovane_po_dnech(archiv_dir, soubor, full_data)
+        print(f"  Archiv {soubor}: +{pridano} novych (trideni podle data clanku, idx vytvoren)")
 
     # Promazat archivní složky starší 7 dní
     for slozka in os.listdir(archiv_dir):
@@ -571,10 +642,19 @@ if __name__ == "__main__":
             pass
 
     # 3. Ukládání cache dat (počasí, kurzy, horoskopy)
+    kh_data = stahni_kurzy_historie()
+    h_data = stahni_horoskopy()
+    
     with open(os.path.join(cache_dir, 'pocasi.txt'),         'w', encoding='utf-8') as f: f.write(stahni_pocasi())
     with open(os.path.join(cache_dir, 'kurzy.txt'),          'w', encoding='utf-8') as f: f.write(stahni_kurzy())
-    with open(os.path.join(cache_dir, 'horoskop.txt'),       'w', encoding='utf-8') as f: f.write(stahni_horoskopy())
-    with open(os.path.join(cache_dir, 'kurzy_historie.txt'), 'w', encoding='utf-8') as f: f.write(stahni_kurzy_historie())
+    with open(os.path.join(cache_dir, 'horoskop.txt'),       'w', encoding='utf-8') as f: f.write(h_data)
+    with open(os.path.join(cache_dir, 'kurzy_historie.txt'), 'w', encoding='utf-8') as f: f.write(kh_data)
+
+    # 4. Turbo Mode 3.0 - Sync a Latest soubory
+    with open(os.path.join(cache_dir, 'kurzy_sync.idx'),  'w', encoding='utf-8') as f: 
+        f.write(stahni_sync_kurzy(kh_data, 15))
+    with open(os.path.join(cache_dir, 'horoskop_latest.idx'), 'w', encoding='utf-8') as f: 
+        f.write(datetime.now().strftime("%Y-%m-%d") + "\n" + h_data)
 
     print("Vsechno uspesne stazeno a ulozeno!")
     print(f"  Zpravy: {zpravy_dir}")

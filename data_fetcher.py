@@ -7,6 +7,7 @@ from bs4 import BeautifulSoup
 import trafilatura
 import re
 import time
+from datetime import datetime, timedelta
 
 # Kořenová cesta k SD kartě (nebo lokální složce při spuštění v CI/locálně)
 SD_CESTA = os.environ.get('SD_CESTA', './eindata')
@@ -78,7 +79,9 @@ def stahni_zpravy(rss_url, limit=15):
                     # Datum s rokem = jednoznačné archivování do správné denní složky
                     datum_cas = dt.strftime("%d.%m.%Y %H:%M")
                 except Exception:
-                    datum_cas = ""  # Neparsovatelné datum → prázdné, archivuje se jako dnes
+                    datum_cas = datetime.now().strftime("%d.%m.%Y %H:%M")
+            else:
+                datum_cas = datetime.now().strftime("%d.%m.%Y %H:%M")
 
             perex_raw = item.find('description').text.strip() if item.find('description') is not None else ""
             perex = BeautifulSoup(perex_raw, "html.parser").get_text()
@@ -287,6 +290,11 @@ def stahni_zpravy_multi(zdroje, celkovy_limit=10, exclude_titulky=None):
                 duplikaty += 1
                 continue
             dt = parse_datum_na_datetime(b["datum_raw"])
+            
+            # Ignorovat zprávy starší než 1 den (tj. propustí dnešní a včerejší)
+            if dt < datetime.now().replace(hour=0, minute=0, second=0, microsecond=0) - timedelta(days=1):
+                continue
+            
             vybrane.append((dt, titulek, b["blok"]))
             titulky.add(titulek)
             pridano += 1
@@ -461,6 +469,20 @@ def oprav_existujici_archiv(archiv_dir):
             with open(cesta, 'r', encoding='utf-8') as f:
                 for item in extrahuj_bloky(f.read()):
                     dt = parse_datum_na_datetime(item["datum_raw"])
+                    
+                    # Pokud by the datum chybělo/bylo rozbité, vygeneruje to dnešek. 
+                    # Zkusíme zachránit datum ze jména složky, v jaké zpráva byla.
+                    if not item["datum_raw"]:
+                        try:
+                            z_slozky = datetime.strptime(den, "%Y-%m-%d")
+                            dt = z_slozky.replace(hour=12)
+                        except ValueError:
+                            pass # Pokračujeme s dněškem
+                        
+                        uredne_datum = dt.strftime("%d.%m.%Y %H:%M")
+                        item["blok"] = re.sub(r"\|D\|.*?\|P\|", f"|D|{uredne_datum}|P|", item["blok"], count=1)
+                        item["datum_raw"] = uredne_datum
+
                     spravny_den = dt.strftime("%Y-%m-%d")
                     item["dt"] = dt
                     item["spravny_den"] = spravny_den
@@ -502,27 +524,27 @@ if __name__ == "__main__":
 
     # 1. Běžné zprávy a tech/ai
     svet_data = stahni_zpravy_multi([
-        ("https://ct24.ceskatelevize.cz/rss/svet", 15),
-        ("https://www.novinky.cz/rss/zahranicni", 10),
-    ], celkovy_limit=20)
+        ("https://ct24.ceskatelevize.cz/rss/svet", 100),
+        ("https://www.novinky.cz/rss/zahranicni", 100),
+    ], celkovy_limit=200)
 
     # Cross-category deduplikace: zprávy ze světa se neobjeví v ČR sekci
     svet_titulky = {b["titulek"] for b in extrahuj_bloky(svet_data)}
     print(f"  Světové zprávy: {len(svet_titulky)} unikátních titulků (budou vynechány v ČR)")
 
     cr_data = stahni_zpravy_multi([
-        ("https://ct24.ceskatelevize.cz/rss/domaci", 15),
-        ("https://www.novinky.cz/rss/domaci", 10),
-    ], celkovy_limit=20, exclude_titulky=svet_titulky)
+        ("https://ct24.ceskatelevize.cz/rss/domaci", 100),
+        ("https://www.novinky.cz/rss/domaci", 100),
+    ], celkovy_limit=200, exclude_titulky=svet_titulky)
     tech_data = stahni_zpravy_multi([
-        ("https://www.lupa.cz/rss/clanky/", 8),
-        ("https://www.cnews.cz/feed/", 8),
-        ("https://www.root.cz/rss/clanky/", 6),
-        ("https://www.zive.cz/rss/sc-47/default.aspx", 6),
-        ("https://venturebeat.com/category/ai/feed/", 5),
-        ("https://openai.com/news/rss.xml", 4),
-        ("https://blog.google/technology/ai/rss/", 4),
-    ], celkovy_limit=30)
+        ("https://www.lupa.cz/rss/clanky/", 30),
+        ("https://www.cnews.cz/feed/", 30),
+        ("https://www.root.cz/rss/clanky/", 30),
+        ("https://www.zive.cz/rss/sc-47/default.aspx", 30),
+        ("https://venturebeat.com/category/ai/feed/", 30),
+        ("https://openai.com/news/rss.xml", 20),
+        ("https://blog.google/technology/ai/rss/", 20),
+    ], celkovy_limit=200)
 
     # 2. Archivace a ukládání zpráv do eindata/zpravy/aktualni/ a archiv/YYYY-MM-DD dle data článku
     oprav_existujici_archiv(archiv_dir)

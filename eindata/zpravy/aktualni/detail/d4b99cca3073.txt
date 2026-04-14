@@ -1,0 +1,10 @@
+3D tiskáren není nikdy dost, a tak se čínský Bambu Lab pochlubil dalším přírůstkem do své rodiny. Tentokrát přišla řada na stárnoucího představitele střední třídy X.
+Firma nedávno ukončila prodej X1 Carbon a dnes představila jeho nástupce X2D. Jak už název napovídá, novinka nabízí tiskovou hlavu se dvěma tryskami. Je to ale trošku konstrukční kočkopes, té druhé totiž Bambu Lab říká „pomocná“ a má to své opodstatnění.
+Sekundární tryska není úplně rovnocenná
+Sekundární tryska má oddělený bowdenový extruder (mimo hlavu) na zádi a vytlačuje tedy filament v poměrně dlouhém vedení. Primární tryska má motorový extruder přímo v hlavě (direct-drive). Podle výrobce bylo cílem ušetřit hmotnost a vzhledem k ceně snížit i náklady.
+Tisková hlava X2D s primární a sekundární tryskou
+Přepínání trysek je mechanické a protože jsou vedle sebe, v závislosti na tom, kterou z nich použijete, dosáhnete i různého tiskového objemu.
+Největšího dosáhnete jen s hlavní tryskou (256×256×260 mm³). Při použití pomocné nebo obou trysek naráz pro multimateriálovou výrobu to dělá 235,5×256×256 mm³.
+Od 16 tisíc korun včetně poštovného
+Mašina X2D má aktivně vyhřívanou komoru do 65 °C pro tisk z náročnějších termoplastů, součástí je čistička výparů s aktivním uhlím, nechybí dvě kamery (komora, trysky), optická detekce překážek, napojení na internet a samozřejmě podpora pro automatický výměník strun AMS 2.
+Na evropském e-shopu Bambu Labu začíná cena na 655 eurech včetně poštovného, což po přepočtu dělá zhruba 16 tisíc korun.

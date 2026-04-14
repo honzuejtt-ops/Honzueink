@@ -1,0 +1,10 @@
+Honza Pinky Pinkas má rád kapesní vysílačky, a tak jednu virtuální vyrobil i pro ty, kteří žádnou nemají. Říká tomu Ketska a funguje jak na webu, tak ve formě mobilní aplikace pro Android a iOS.
+Jak už popis napovídá, Ketska je roztomilý hlasový komunikátor v podobě softwarové analogie klasické walkie-talkie. Ale nebojte se, anténu ani vysílač nepotřebujete, vše se totiž přenáší přes internet (WebRTC).
+Mapa virtuálních vysílaček v dosahu
+Po spuštění (registrace není nutná) uvidíte mapu s puntíky dalších uživatelů, kteří vysílají veřejně. Každý bude mít okolo sebe kružnici, která označuje fiktivní rádiový dosah. Ten samozřejmě můžete posuvníkem nastavit v od 1 do 100 kilometrů. Pokud se střetnete, můžete pokecat.
+Když zvýším signál, budu si moci popovídat s Ostravou i Prahou
+Pinky do aplikace přidal i několik rychlých signálů. Můžete si nastavit stavovou emoji, anebo vypustit do éteru virtuální pípnutí „EMO“ v podobě několika krátkých stavových animací.
+Rychlá vysílačka bez vysílačky
+Díky tomu, že aplikace nevyžaduje žádnou registraci, ale zároveň můžete vysílat i soukromě pro úzkou výseč kontaktů a kanálů, Ketska by mohla plnit roli nejen zábavného virtuálního „HAM rádia“, ale i praktického příležitostného komunikátoru ve skupině, aniž byste museli každému dávat svůj telefon a WhatsApp.
+Ketska v introvertním režimu – s minimálním dosahem 1 km –, ve kterém není žádný chatuchtivý kamarád. Pustím do éteru tedy alespoň jedno animované srdíčko
+Zatím ale trpí tím, čím trpí každá walkie-talkie. Protože má uměle omezený dosah, pravděpodobnost, že někoho potkáte i v tom největším 100km okruhu, je relativně malá. Aplikace je zároveň mladá a zatím se o ní moc neví, což třeba změní i tato naše zmínka.

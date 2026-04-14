@@ -1,0 +1,27 @@
+Nové procesory od Intelu výrazně zamíchaly kartami, mají hodně výkonu pro práci za nižší ceny oproti AMD. Doporučujeme je nyní do pracovních sestav včetně počítače pro střih videa, který s přechodem na Intel celý upravujeme.
+Nechcete moc číst? Tady jsme celou sestavu naskládali do nákupního košíku na Alze. Na konci článku jsou odkazy na další tři sestavy s jiným zaměřením:
+Procesor: Intel Core Ultra 7 270K Plus
+Procesor je pro jakoukoli pracovní počítačovou sestavu velmi důležitou komponentou, jeho výkon mívá nejvyšší vliv na celkový výkon počítače. Procesor totiž například připravuje data pro grafickou kartu, takže i pro střih videa a další podobnou práci doporučujeme rychlejší procesor, aby nebrzdil drahou grafiku.
+Jak načasovat koupi procesoru
+Intel s procesory Core Ultra 200 Plus sice nepřinesl nový křemík, ale zjednodušeně lehce zvýšil výkon při výrazném snížení cen. S troškou nadsázky bychom tento krok mohli označit jako výprodeje k vyprázdnění skladových zásob před nástupem nových procesorových generací.
+Intel chystá letos nebo zkraje roku 2027 nové procesory Nova Lake, od nichž se očekává další posun výkonu, a to zejména pro práci. Stejně tak někdy mezi létem 2026 a CESem 2027 nejspíše představí procesory Zen 6 i AMD, u jehož procesorů očekáváme 50% nárůst počtu jader. Výkon pro práci se tedy bude razantně zvyšovat.
+Do toho ještě můžeme připočítat aktuálně vysoké ceny za paměti, SSD, případně grafiky, přičemž se zdá, že postupně zlevňují. Z toho se jako ideální rozhodnutí jeví ještě chvíli s koupí počítače pro práci počkat. Pokud čekat nemůžete, navrhovaná sestava odvede dobrou práci a oproti předchozí variantě s AMD ušetříte 12 000 Kč.
+Grafická karta: Gigabyte GeForce RTX 5070 Ti Windforce OC V2 16G
+Grafická karta je pro střih videa stěžejní, dekódování a enkódování se z velké části akceleruje právě na ní, sázkou na jistotu je Nvidia enkodér čili NVENC. Rychlá grafika pomůže ušetřit čas a například zajistí lepší plynulost při náročných operacích s videem s náhledem v reálném čase. Sestava díky výkonné grafice může posloužit i na hraní her, ale výběr komponent na to není optimalizovaný – vyloženě herní sestava za stejnou částku by byla pro hraní her lepší. Záměrně doporučujeme dražší GeForce RTX 5070 Ti, jež má duální NVENC.
+Základní deska: Gigabyte Z890 Gaming X Wi-Fi7
+V této sestavě se za základní desku vyplatí trošku připlatit. Proč? Především kvůli konektivitě – rychlé porty USB4 nebo USB 3.2 Gen 2 výrazně zrychlí přenos dat, což je při práci s videem ve vysoké kvalitě či dalšími objemnými daty zásadní. Zejména profesionálové potřebují ušetřit každou sekundu času a to platí i při přenášení dat. Alternativně mohou využít i velmi rychlé Wi-Fi7 nebo 2,5Gb/s Ethernetu. Deska nabízí i dostatek konektorů pro připojení úložišť – konkrétně čtyři M.2 sloty a čtyři SATA konektory pro připojení pevných disků.
+Paměti RAM: Patriot Viper Venom 32GB Kit DDR5 6000 MHz CL30
+Do sestavy pro práci musíme dát aspoň 32 GB RAM, každopádně pokud znáte nároky používaných programů a velikosti projektů, zvolte si kapacitu RAM na míru. Když už připlácíme za kapacitu, volíme trošku rychlejší paměti, které pomohou i s některými typy produktivní práce. Při dnešních cenách za paměti zbytečně nepřeplácejte.
+Úložiště: Adata Legend 900 Pro 2TB
+I přes vyšší ceny úložišť neuvažujeme o tom, že bychom do pracovní sestavy dali kapacitu menší než 2 TB a že bychom sáhli po jiném disku než M.2 na standardu PCIe 4.0. Stále předpokládáme, že poslouží i jako systémový disk, dáte si na něj nejdůležitější aktuální projekty a případně pro další použijete starší či pomalejší úložiště. Aktuálně se však nevyplatí kupovat vyšší kapacity úložiště, už tak se za něj oproti dřívějším cenám značně přeplácí a základní deska má slotů M.2 dost.
+Chladič procesoru: Endorfy Navis F360
+Výkonný procesor se musí dobře chladit, aby mu v dlouhodobé pracovní zátěži neklesal výkon. S vodním AiO chladičem dostanete z Intelu Core Ultra 7 270K Plus maximum a vodní chlazení je jednoznačnou volbou, to samé jde říct o 360mm radiátoru. Ze sestavy půjde při dlouhodobé zátěži hodně tepla, takže vodní chlazení pomůže.
+Zdroj: Adata XPG Core Reactor II VE 850 W
+Zdroj je sice na danou sestavu trošku silnější, ale efektivitou, minimální hlučností nebo modulárním designem překoná konkurenci. K tomu má solidní cenu, takže oproti dobrému 750W zdroji připlatíte jen několik set korun za výborný 850W zdroj. Rovněž nabídne výkonovou rezervu pro přetaktování i pro výhledově výkonnější procesor a grafiku, a tak jistě poslouží i do příštích počítačových sestav. Dále může grafickou kartu napájet jediným kabelem bez redukce.
+Počítačová skříň: Endorfy Arx 700 Air
+Skříň jsme volili s ohledem na zbytek sestavy. Nejenže nabídne dostatečný prostor pro všechny komponenty, ale poskytne prostor je uchladit. Už má pět předinstalovaných ventilátorů, což ušetří dodatečné náklady i starosti, dokonce jde o větší 140mm modely. To pomůže s teplotami i hlučností sestavy.
+Celková cena: 61 024 Kč
+Výše popisovanou mašinu pro střih videa jsme naskládali do košíku na Alza.cz. Aktuálně vyjde na 61 024 Kč, ale ceny i dostupnost se mohou průběžně měnit.
+Stejným způsobem jsme postupovali i u dalších sestav:
+Doporučujeme sestavy
+Za nákup, který na Alze uskutečníte prostřednictvím odkazu v článku, může Živě.cz dostat provizi.

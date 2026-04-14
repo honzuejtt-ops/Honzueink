@@ -1,0 +1,17 @@
+Článek
+Prvním krokem při stavbě vlastní domácí sítě je výběr vhodného routeru. Ten obstarává prakticky veškerý síťový provoz, je to v podstatě brána do světa internetu. Nejlevnější modely se dají pořídit už za pár stovek, ty však zpravidla nic jiného než rozvod internetu neumějí.
+Dražší verze, jejichž cenovky se pohybují v řádech klidně i několika tisíc korun, naopak nabídnou pokročilejší možnosti nastavení a zpravidla mají také lepší dosah bezdrátového signálu.
+Vynikají také v množství nabízených prémiových funkcí. Pokročilejší routery jsou vybaveny USB porty, které dovolují připojit klasickou tiskárnu pro obsluhu celé sítě nebo externí pevný disk.
+Router s připojeným diskem pak zastane v domácnosti částečně i funkce NAS serveru. Ukládat je na něj možné prakticky cokoli – videa, hudbu, fotky i další soubory, a to z jakéhokoliv počítače v domácnosti.
+Pokročilejší modely dokonce dovolí zpřístupnit připojený disk i z prostředí internetu. Připojovat se k němu tak můžete i z dovolené nebo služební cesty, a to klidně i z druhého konce planety.
+Rychlost je klíčová
+Základní routery zpravidla nabízejí pouze pomalejší standard WiFi 5. Pokročilejší modely lákají už na WiFi 6, tedy na novější rychlostní standard technicky označovaný jako WiFi 802.11ax. Ten uživatelům přináší rychlejší připojení díky vyšší datové propustnosti a minimální prodlevu, tedy co nejnižší možnou latenci.
+Tím vám zároveň ušetří případné vrásky v situacích, kdy rozhodně nechcete, aby vám vypadl obraz či zvuk a ztratili jste kontakt, byť jen na chvíli. A je jedno, zda se bavíme o videokonferenci se šéfem, nebo učitelem ze školy.
+Pokud nechcete za pár let kupovat zase nový router, dívejte se po modelech s nejnovějším standardem WiFi 7, který výkonnostní laťku posouvá zase o úroveň výše. Modely se sedmou generací bezdrátových sítí si dříve mohly kvůli vysokým cenovkám pořídit tak maximálně firmy, cenově dostupnější modely se ale objevují na trhu stále častěji.
+Pro lepší představu: u modelů s WiFi 5 počítejte s reálnými rychlostmi v domácnosti okolo 300 až 900 Mb/s, v případě WiFi 6 je to zhruba 600 Mb/s až 1,5 Gb/s. Standard WiFi 7 ale běžně zvládá 2 až 10 Gb/s.
+Je však nutné počítat s tím, že standard WiFi musí podporovat i připojené zařízení. Pokud tedy například smartphone bude podporovat pouze WiFi 6, sice se k WiFi 7 routeru připojí, ale datové přenosy budou pomalejší – budou odpovídat standardu WiFi 6.
+Kupovat v dnešní době starší a levnější routery s WiFi 5 nemá prakticky již žádný smysl, ušetříte totiž maximálně pár stokorun. Ceny WiFi 6 routerů totiž startují už na ceně lehce přesahující 1000 Kč.
+Router s WiFi 7 vyjde případné zájemce zhruba na tři tisíce korun. Bavíme se přitom spíše o základních modelech s tímto standardem, pokročilejší modely jsou klidně i o několik tisíc korun dražší.
+Větší byty a domy
+Ve velkých bytech ale nemusí pro dostatečné pokrytí stačit ani ty sebelepší routery. Totéž platí o klasických panelákových bytech, ve kterých je od ostatních bytových jednotek rušen signál. V takovém případě se vyplatí zainvestovat do mesh systému.
+Je to vlastně systém bezdrátových krabiček, které se rozmístí do jednotlivých místností, aby šířily bezdrátový signál rovnoměrně všude tam, kde je to třeba.

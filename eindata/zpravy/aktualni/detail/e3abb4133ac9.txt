@@ -1,0 +1,17 @@
+Amazon Leo má zatím na nízkých oběžných drahách v provozu pouhých 238 družic – naprostý zlomek oproti konkurenčnímu Starlinku –, cloudový gigant ale přesto začíná oznamovat první služby pro podnikové klienty. A jde tvrdě po SpaceX.
+Starlink už několik let prodává palubní internetovou konektivitu pro aerolinky a impérium Steva Bezose to chce také a mnohem rychleji.
+SpaceX se chlubí, že v oblacích nabízí rychlosti 135-310 Mb/s pro stahování a 20-44 Mb/s pro nahrávání s poměrně solidní latencí méně než 99 ms.
+Pokud chce Amazon vstoupit do vod, které už okupuje jeden hegemon, musí nabídnout něco lepšího, a tak se firma na svém webu pochlubila novou plně-duplexní integrovanou anténou, která by měla i při běžných rychlostech linkových letadel okolo 1000 km/h utáhnout až 1 Gb/s pro stahování a 400 Mb/s pro nahrávání. Uvidíme, jaká nakonec bude realita.
+Bez fázovaného pole by lidé měli na zahradách velké vrčící paraboly
+Stejně jako v případě Starlinku se jedná o anténu s nízkým profilem v konstrukcí fázovaného pole, kdy se rádiový signál nesměruje k družicím mechanicky na pohyblivém gimbalu, ale čistě elektronicky – sčítáním celého pole drobných a fázově navzájem posunutých vysílačů.
+Technologie elektronického směrování rádiového laloku pomocí fázového posuvu umožnilo konstrukci typických plochých antén. Amazon se chlubí, že je ještě tenčí
+Tato technologie se už roky používá třeba u vojenských a velmi citlivých radarů, s nástupem satelitního internetu na nízkých oběžných drahách, kdy družice přelétne obzor během několika minut, ale našla uplatnění i v tomto segmentu.
+Velké paraboly a všemožné hybridně elektromechanické systémy na složitých (a poruchových) stativem pak mohla nahradit relativně malá a prakticky plochá anténa. Je to svým způsobem do jisté míry analogie přechodu od rozměrných rotačních lidarů na autonomních vozech k těm pevným, solid-state.
+Už získali Deltu a Leo prý odstartuje ještě letos
+Amazon se na webu chlubí, že se už dohodl s americkými aeroliniemi Delta a JetBlue a oproti Starlinku má jednu zjevnou výhodu. Do jeho rodiny patří největší veřejný cloud na světě AWS, Leo mu tedy bude z principu zdaleka nejblíže, protože pochopitelně staví na jeho infrastruktuře.
+Signál z letadla poletí nejprve do výšky několika set kilometrů, poté zpět do nejbližší pozemní přijímací stanice, odtud do infrastruktury AWS a teprve pak na internet. Delta nebo JetBlue proto mohou konektivitu použít i pro své vlastní citlivé provozní systémy, pokud běží na AWS. Nehrozí, že pakety budou cestovat na server přes kdejakou Horní Dolní, ale po páteřích Amazonu a jeho partnerů.
+Jedna z pozemních přijímacích stanic budovaného systému Amazon Leo
+Teď už jen zůstává otázkou, kdy firma Leo skutečně spustí jako běžně dostupnou službu přinejmenším v USA.
+V dubnu startují uzavřené zkoušky pro vybrané podnikové klienty a širší veřejnost by se snad mohla k Leu dostat někdy v polovině letošního roku. Alespoň podle šéfa Amazonu Andyho Jassyho, který to nedávno slíbil investorům.
+Zdroje a další informace:
+Amazon

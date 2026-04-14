@@ -1,0 +1,17 @@
+lo2s
+lo2s (Linux OTF2 Sampling) slouží k analýze výkonu procesů a systému. Generuje paralelní stopy ve formátu OTF2 (Open Trace Format 2), které lze vizualizovat v nástrojích typu Vampir. Nástroj je navržen s ohledem na nízkou režii při sběru dat.
+Kromě sledování vláken a jejich plánování na CPU sbírá data z hardwarových čítačů, sleduje spotřebu energie, aktivitu GPU od NVIDIA/AMD nebo I/O operace na úrovni blokového zařízení. Funguje v režimu monitorování konkrétního procesu a jeho potomků, nebo jako celosystémový monitor sledující každé logické jádro zvlášť.
+github.com/tud-zih-energy/lo2s, 1.8.0
+Eneru
+Eneru rozšiřuje možnosti balíku Network UPS Tools (NUT) o orchestraci vypínání. Umožňuje koordinované ukončení virtuálních strojů v libvirtu, kontejnerů (Docker/Podman) i vzdálených serverů přes SSH.
+Nabízí šest nezávislých spouštěčů (triggerů), včetně výpočtu rychlosti vybíjení baterie. Součástí je TUI rozhraní pro sledování stavu a podpora pro zasílání notifikací prostřednictvím knihovny Apprise do služeb jako Discord, Telegram nebo ntfy.
+github.com/m4r1k/Eneru, 5.0.0
+Network Monitor
+Network Monitor zobrazuje síťová spojení a statistiky přenosu dat. Nástroj je napsán v Rustu pro prostředí GTK4. Vypisuje aktivní spojení včetně PID, názvu procesu, použitého protokolu a rychlosti uploadu i downloadu.
+K dispozici je grafické rozhraní i konzolová verze nmt. Nástroj mapuje sockety na procesy čtením /proc souborového systému a překládá adresy na čitelnou podobu (např. localhost nebo mDNS).
+github.com/grigio/network-monitor, 0.5.0
+NsJail
+NsJail zajišťuje izolaci procesů v Linuxu pomocí jmenných prostorů (namespaces), cgroups a seccomp-bpf filtrů. Slouží k sandboxování síťových služeb, spouštění nedůvěryhodného kódu nebo pro účely fuzzingu.
+Podporuje různé režimy provozu, jako je jednoúčelové spuštění, síťový listener typu inetd nebo opakovaná exekuce. Konfigurace se definuje v souborech formátu Protobuf, kde lze určit přístup k souborovému systému, limity prostředků i povolená systémová volání.
+Blbinka
+Pokud už máte pocit, že vaše vlastní čtyři stěny na vás padají, WindowSwap vám dovolí legálně zírat z oken úplně cizích lidí. Jedním kliknutím vyměníte svou realitu za déšť v Londýně nebo rušnou ulici v Šanghaji. Je to v podstatě cestování pro líné introverty, žádné letenky, žádné kufry a žádná nutnost opustit svou komfortní zónu.

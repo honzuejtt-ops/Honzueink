@@ -1,3 +1,81 @@
+|T|Pingora: moderní reverzní proxy z dílny Cloudflare|D|14.04.2026 22:00|P|Pingora je framework napsaný v jazyce Rust, který slouží v Cloudflare jako reverzní proxy. Byl uvolněn pod svobodnou licencí, takže jej může použít ka...|X|V roce 2022 upoutalo mou pozornost oznámení společnosti Cloudflare, že postupně migruje svou proxy infrastrukturu z Nginx na vlastní řešení. V rámci Rust Talks tehdy vývojáři zmínili i možnost uvolnění této platformy jako open source.
+O několik měsíců později se tak skutečně stalo a Pingora byla představena jako framework napsaný v jazyce Rust. Dnes, o několik let později, je ke stažení již verze 0.8 a v tomto mini seriálu si ukážeme některé její typické scénáře použití.
+Od Nginx k Pingoře
+Nginx byl dlouhou dobu (a stále ještě je) jedním z etalonů světa reverzních proxy serverů a HTTP serverů. Nginx přinesl architekturu řízenou událostmi. Ta byla nejdříve podporována na FreeBSD prostřednictvím kqueue
+a později také v Linuxu 2.6 přes skupinu systémových volání rodiny epoll
+. Mám na mysli samozřejmě známý problém C10k, kdy starší platformy trpěly nákladným přepínáním kontextu a ukázalo se, že model „jedno vlákno na spojení“ není škálovatelný.
+Základem tohoto modelu je smyčka událostí, v jejímž rámci jeden pracovní proces (worker) obsluhuje více spojení současně, čímž výrazně snižuje režii spojenou s přepínáním kontextu. Pokud požadavek čeká na I/O, například na data od klienta, odloží se a proces může obsloužit jiný požadavek. Jakmile data na socket dorazí, proces se o tom dozví prostřednictvím události.
+Tento přístup funguje výborně, dokud je obsluha rychlá a neblokující. Jakmile se ale do běhu dostane složitější logika, začnou se projevovat jeho limity – běžící kód nelze zvenku přerušit, takže musí sám aktivně spolupracovat a vracet řízení zpět smyčce událostí. Když se tak nestane, je riziko, že taková úloha bude blokovat další zpracovávané požadavky.
+Při běžné zátěži reverzní proxy takový scénář většinou nehrozí, protože zpracování je jednoduché; řešíme primárně routing na backend, maximálně nějakou jednoduchou validaci hlaviček, rewrite či autentizaci a to v rámci nativní konfigurace a architektury.
+Nginx však umožňuje doplnit vlastní kód do jednotlivých fází zpracování požadavku. Je to možné zařídit buď pomocí vlastních modulů v jazyce C, nebo prostřednictvím skriptovacích jazyků, nejčastěji Lua (typicky ve spojení s frameworkem OpenResty), případně JavaScriptu.
+Jakmile ale do zpracování požadavku začneme vkládat složitější logiku (například WAF), můžeme narazit na limity tohoto přístupu. To však neznamená, že je tento model nepoužitelný – OpenResty se běžně nasazuje například v řešeních pro API gateway (např. Kong) a při správném návrhu funguje velmi dobře i ve velkém měřítku.
+Jak takové rozšíření pomocí jazyka Lua může vypadat, demonstruje následující příklad:
+location = /simple/article { set $upstream simple.simple.svc.cluster.local; . . limit_except POST { deny all; } access_by_lua_block { --- main local oidconf = { discovery = { jwks_uri = "https://keycloak.lab.local/auth/realms/lab/protocol/openid-connect/certs" }, { client_id="simple", } . local json, err = require("resty.openidc").bearer_jwt_verify(oidconf) if err or not json then ngx.status = 403 ngx.exit(ngx.HTTP_FORBIDDEN) end local roles = json.groups local group = f(roles) if group == nil then ngx.log(ngx.ERR, "Valid token but groups constraint has not been satisfied") ngx.exit(ngx.HTTP_FORBIDDEN) end; local username = json.username ngx.req.set_header("X-Simple-Admin", username) } if ($request_uri ~* "/simple/(.*)") { proxy_pass http://$upstream/$1; }
+Výše uvedená (zkrácená) konfigurace a kód autorizuje takové HTTP požadavky, které mají validní OAuth2 token. Informaci o uživateli, která je obsažena v username
+, se pošle na backend ve formě hlavičky. Autentizace nebo autorizace se tedy přesune na proxy, tím se přístup k API centralizuje a vývojáři backendu se touto citlivou částí nemusejí zabývat.
+I bez detailního rozboru je z této ukázky patrných hned několik problémů:
+- Implementace je součástí konfigurace samotného Nginx a není zřejmé, zda za něj odpovídá provozní nebo vývojový tým. Je fér poznamenat, že samotný kód v Lua může být v samostatném souboru a být volán v sekci
+location
+přesphase_by_lua_file
+. Stále však máme mix konfigurace a kódu. - Kód je spuštěn ve specifické fázi zpracování HTTP požadavku (viz
+access_by_lua_block
+). Pokud budeme chtít komplexnější chování, které postihne více fází, bude těžké udržet kód v takových mantinelech, aby byl přehledný a spravovatelný. - Lua obvykle není jazykem, který by firmy běžně používaly pro větší projekty, což může komplikovat správu takového kódu.
+Pak jsou tu další potenciální problematické body, které na první pohled vidět nejsou, ale hezky je shrnuje článek The Complex Dance of Lua and NGINX: Power, Pitfalls, and Performance Challenges z kterého bych vyzdvihl:
+- Globální proměnné v Lua modulech jsou sdílené napříč všemi požadavky obsluhovanými stejným procesem. Při jejich změně během obsluhy požadavků může docházet k souběhům a nekonzistentnímu stavu.
+- Implementace musí být striktně async a neblokující (viz první část článku).
+- Špatné zpracování OpenResty cosocketů (non-blocking network socketů) může vést k úniku prostředků, zamrzlým spojením a postupné degradaci výkonu celého řešení.
+Celý článek je publikován na stránkách F5, takže je vhodné jeho závěry brát s určitou rezervou, nicméně dobře shrnuje některé praktické problémy tohoto přístupu. Je důležité zdůraznit, že Nginx je primárně finální produkt „vše v jednom“ určený k nasazení a konfiguraci, který historicky dobře zapadá do unixové filozofie: dělat jednu věc a dělat ji dobře.
+Společnost Cloudflare server Nginx dlouhou dobu využívala, nicméně prudký rozvoj její infrastruktury, nárůst počtu klientů i objemu požadavků ukázaly, že tato technologie začala narážet na své limity v takto extrémních podmínkách. Jak jsem již naznačil, limity se projevily především v oblasti rozšiřitelnosti a složitější logiky. Ani pokročilé úpravy kódu situaci zásadně nezlepšily. Proto se společnost rozhodla navrhnout vlastní platformu, které by lépe odpovídala jejím nárokům.
+Na nové řešení byly kladeny mimo jiné následující požadavky:
+- proxy musí být rychlá a zároveň paměťově bezpečná,
+- implementace musí být snadno rozšiřitelná a dobře použitelná pro vývojáře,
+- řešení musí být dostatečně flexibilní, aby si poradilo i s HTTP provozem, který ne vždy striktně odpovídá RFC standardům,
+- měl by být zachován model zpracování požadavku podobný Nginx/OpenResty, tedy jednotlivé fáze života požadavku.
+Z těchto důvodů byl pro implementaci zvolen jazyk Rust. Vedle často zmiňované paměťové bezpečnosti a výkonu hraje roli také silný typový systém, kvalitní async ekosystém (například Tokio) a celková vyspělost nástrojů pro systémové programování.
+Je důležité zmínit, že Pingora není přímou náhradou za Nginx pro běžná nasazení, ale spíše frameworkem pro případy, kdy potřebujeme nad proxy vrstvou implementovat složitější logiku.
+Pingora se představuje
+Pingora je framework pro tvorbu reverzní proxy napsaný v jazyce Rust. Na rozdíl od Nginx nejde o konfiguraci, ale o plnohodnotnou aplikaci, ve které si chování proxy definujeme sami. Framework sám přitom řeší nízkoúrovňové detaily, jako je správa vláken nebo správu spojení, takže se na ně při vývoji nemusíme soustředit.
+Zároveň však zachovává model podobný Nginx/OpenResty – tedy jednotlivé fáze, do kterých můžeme zasahovat vlastní logikou. Výsledkem je prostředí, ve kterém máme podobnou kontrolu nad průběhem zpracování požadavku jako v OpenResty, ale bez nutnosti řešit infrastrukturní detaily a omezení daná konfiguračním modelem.
+Pingora jde ale ještě o krok dál – umožňuje totiž přirozeně oddělit samotné zpracování požadavků od ostatních částí aplikace, které se zpracováním přímo nesouvisejí a jejichž běh by mohl tento průběh blokovat.
+Například dynamická správa upstreamů v prostředí, kde se průběžně mění dostupné endpointy (třeba v Kubernetes), můžeme zpracovávat mimo samotný životní cyklus požadavku. Proxy pak pracuje jen s aktuálním stavem, který je průběžně aktualizován na pozadí. Ten lze sdílet a bezpečně měnit pomocí běžných synchronizačních primitiv nebo kanálů.
+Za zmínku stojí také některé další vlastnosti Pingory (úplný přehled je k dispozici v dokumentaci projektu):
+- podpora HTTP/1.1 a HTTP/2,
+- podpora komunikace přes gRPC a WebSocket,
+- možnost implementovat vlastní stragegie pro load balancing a selhání,
+- snadná integrace s monitorovacími nástroji (např. Prometheus nebo OpenTelemetry).
+Kdy tedy Pingoru v produkci (ne)použít? Pingora dává smysl zejména v těchto případech:
+- když potřebujeme implementovat komplexní logiku nad HTTP provozem,
+- pokud nám nestačí konfigurační model (Nginx, Envoy),
+- pokud chceme mít plnou kontrolu nad životním cyklem požadavku,
+- když už v týmu know-how v jazyce Rust.
+Naopak méně vhodná je:
+- pro běžné nasazení reverzní proxy,
+- pokud hledáme hotové řešení,
+- pokud tým nepracuje s Rustem.
+Pingora hello world!
+Dost bylo teorie, pojďme se na Pingoru podívat prakticky. V následujícím příkladu si ukážeme minimální reverzní proxy. Cílem není detailně rozebrat kód, ale ukázat, jak projekt sestavit a spustit. K jednotlivým částem implementace se vrátíme v dalším článku.
+Naše proxy bude naslouchat na portu 8000 a zpracovávat jednoduché HTTP/1.1 požadavky. Veškerá „konfigurace“ bude zadána přímo v kódu, což je pro samotnou demonstraci dostačující. Budeme také potřebovat jednoduchý backend pro náš upstream, který si snadno vytvoříme pomocí nástroje netcat
+. Příklad load balanceru je lehce upravená verze kódu z oficiální dokumentace projektu pro rychlý začátek.
+Založíme si tedy nový projekt v jazyce Rust, přidáme balíčky (crates) pingora, pingora-load-balancing a pingora-proxy:
+$ cargo new tiny-lb Creating binary (application) `tiny-lb` package $ cd tiny-lb/ $ cargo add pingora pingora-load-balancing pingora-proxy Updating crates.io index Adding pingora v0.8.0 to dependencies Features: - any_tls . . - time Adding pingora-load-balancing v0.8.0 to dependencies Features: - any_tls . . - v2 Adding pingora-proxy v0.8.0 to dependencies Features: - any_tls . . - sentry Updating crates.io index Lock...
+(Pokracovani na webu)|E|
+|T|Softwarová sklizeň (15. 4. 2026): monitorujte síťová spojení a datové přenosy|D|14.04.2026 22:00|P|Zanalyzujeme výkon procesů pomocí trasování, zautomatizujeme vypínání serverů i virtuálních strojů při výpadku proudu, budeme monitorovat síťový provo...|X|lo2s
+lo2s (Linux OTF2 Sampling) slouží k analýze výkonu procesů a systému. Generuje paralelní stopy ve formátu OTF2 (Open Trace Format 2), které lze vizualizovat v nástrojích typu Vampir. Nástroj je navržen s ohledem na nízkou režii při sběru dat.
+Kromě sledování vláken a jejich plánování na CPU sbírá data z hardwarových čítačů, sleduje spotřebu energie, aktivitu GPU od NVIDIA/AMD nebo I/O operace na úrovni blokového zařízení. Funguje v režimu monitorování konkrétního procesu a jeho potomků, nebo jako celosystémový monitor sledující každé logické jádro zvlášť.
+github.com/tud-zih-energy/lo2s, 1.8.0
+Eneru
+Eneru rozšiřuje možnosti balíku Network UPS Tools (NUT) o orchestraci vypínání. Umožňuje koordinované ukončení virtuálních strojů v libvirtu, kontejnerů (Docker/Podman) i vzdálených serverů přes SSH.
+Nabízí šest nezávislých spouštěčů (triggerů), včetně výpočtu rychlosti vybíjení baterie. Součástí je TUI rozhraní pro sledování stavu a podpora pro zasílání notifikací prostřednictvím knihovny Apprise do služeb jako Discord, Telegram nebo ntfy.
+github.com/m4r1k/Eneru, 5.0.0
+Network Monitor
+Network Monitor zobrazuje síťová spojení a statistiky přenosu dat. Nástroj je napsán v Rustu pro prostředí GTK4. Vypisuje aktivní spojení včetně PID, názvu procesu, použitého protokolu a rychlosti uploadu i downloadu.
+K dispozici je grafické rozhraní i konzolová verze nmt. Nástroj mapuje sockety na procesy čtením /proc souborového systému a překládá adresy na čitelnou podobu (např. localhost nebo mDNS).
+github.com/grigio/network-monitor, 0.5.0
+NsJail
+NsJail zajišťuje izolaci procesů v Linuxu pomocí jmenných prostorů (namespaces), cgroups a seccomp-bpf filtrů. Slouží k sandboxování síťových služeb, spouštění nedůvěryhodného kódu nebo pro účely fuzzingu.
+Podporuje různé režimy provozu, jako je jednoúčelové spuštění, síťový listener typu inetd nebo opakovaná exekuce. Konfigurace se definuje v souborech formátu Protobuf, kde lze určit přístup k souborovému systému, limity prostředků i povolená systémová volání.
+Blbinka
+Pokud už máte pocit, že vaše vlastní čtyři stěny na vás padají, WindowSwap vám dovolí legálně zírat z oken úplně cizích lidí. Jedním kliknutím vyměníte svou realitu za déšť v Londýně nebo rušnou ulici v Šanghaji. Je to v podstatě cestování pro líné introverty, žádné letenky, žádné kufry a žádná nutnost opustit svou komfortní zónu.|E|
 |T|Skládací iPhone bude kouzlit s displejem bez viditelného ohybu. Apple si pomůže speciálním lepidlem|D|14.04.2026 18:45|P||X|Apple byl při vývoji skládacího iPhonu doslova „posedlý“ tím, aby z vnitřního skládacího displeje odstranil viditelnou rýhu vznikající v místě ohybu. Ta totiž podle zákulisních vyjádření narušuje prémiový dojem z používání i celkovou kvalitu obrazu. Apple v minulosti testoval několik způsobů, jak tento nevzhledný vizuální prvek co nejvíce potlačit. Nakonec se to podařilo – a právě to dalo celému projektu zelenou. Překvapivě však za eliminací ohybu displeje nestojí ultratenké sklo, ale především speciální lepidlo.
 Vnitřní displej Samsungu Galaxy Z Fold7. Apple se celou dobu snažil o „vymazání“ viditelného ohybu displeje a nakonec se mu to podařilo. Za vším stojí speciální lepidlo, které je pružné a současně dostatečně odolné
 Není to však ledajaké lepidlo. Jde o speciální hmotu označovanou zkratkou OCA („Optically Clear Adhesive“, tedy „opticky čisté adhesivum“). Toto lepidlo si podle zdrojů zachovává viskoelastické vlastnosti i po aplikaci. Při ohýbání zůstává měkké, čímž snižuje únavu materiálu, zatímco při náhlém nárazu jeho tuhost vzroste a poskytne displeji potřebnou ochranu.
@@ -550,3 +628,6 @@ Těžit z této změny budou zatím zdá se jen grafické karty AMD Radeon a Int
 Samotné patche implementující toto zlepšení správy grafické paměti zatím zřejmě nebyly upstreamovány do jádra Linuxu a momentálně je tak k jejich využití či testování třeba opatchované jádro.
 Do SteamOSu by se ale asi vzhledem k provázanosti s Valve dostat mohly a tím pádem by měla být i snaha o jejich upstreamování, aby se na Linuxu lepší využití paměti hrami bylo standardním chováním. K tomu ovšem také distribuce budou potřebovat začlenit i příslušné utility. Už teď by zřejmě měly být integrovány v distribuci CachyOS (při použití KDE) od verze jádra 7.0rc7–2, dále jsou k dispozici patche pro distribuci Arch.
 Zdroje: techPowerUp, Github|E|
+|T|Trusted access for the next era of cyber defense|D|14.04.2026 00:00|P|OpenAI expands its Trusted Access for Cyber program, introducing GPT-5.4-Cyber to vetted defenders and strengthening safeguards as AI cybersecurity ca...|X|OpenAI expands its Trusted Access for Cyber program, introducing GPT-5.4-Cyber to vetted defenders and strengthening safeguards as AI cybersecurity capabilities advance.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|

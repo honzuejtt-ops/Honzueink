@@ -1,0 +1,27 @@
+Hora Cerro Paranal v Chile je domovem vlajkové lodě Evropské jižní observatoře. V sousedství čtyř velkých dalekohledů VLT nyní vyrostl jeden mnohem menší, který bude zcela netypicky v noci spát. Jeho pracovní doba totiž začíná až po východu Slunce.
+Dalekohled PoET spatřil první světlo a brzy se pustí do práce. Pod zkratkou PoET se skrývá Paranal solar ESPRESSO Telescope.
+Pracovat sice začne vždy po východu Slunce, ale „espresso“ neodkazuje na ranní kávu. Je to nedaleký spektrograf, který dokáže pracovat s jedním, ale i se všemi čtyřmi osmimetrovými dalekohledy VLT.
+ESPRESSO se věnuje hledání exoplanet a je v tomto ohledu tím vůbec nejlepším na planetě. Jeho úkolem je rozložit světlo vzdálených hvězd na spektrum. PoET mu pomůže, aby ze spektra vydoloval to nejlepší.
+Solární dalekohled
+Většina planet mimo Sluneční soustavu byla objevena nepřímými metodami na základě vlivu planety na mateřskou hvězdu. Bohužel jakékoliv „signály“ z hvězd jsou ovlivněny fyzikálními procesy a jsou tak více či méně variabilní.
+Může jít o hvězdnou aktivitu (skvrny, konvenkce), hvězdnou granulaci apod. Snadno se tak může stát, že to, co považujeme za exoplanetu, je ve skutečnosti jen šum způsobený samotnou hvězdou.
+Dalekohled PoET
+Pozorováním Slunce se mohou vědci učit, jak s těmito jevy pracovat, aby jejich dopad na spektrální měření byl co nejmenší. PoET není první snahou v této oblasti, ale je první, který je postaven tak, aby současně pozoroval celý sluneční disk i vybrané útvary na jeho povrchu.
+Na jedné konstrukci se ve skutečnosti nachází hned tři dalekohledy. Jeden hlavní o průměru 60 centimetrů a dva mnohem menší – vědecký refraktor (čočkový dalekohled) s průměrem 6 cm a zobrazovací refraktor o průměru 5 cm.
+Hlavní dalekohled bude pozorovat Slunce v různých prostorových měřítkách od 55 obloukových vteřin, což je typická velikost středně velké sluneční skvrny až po 1 obloukovou vteřinu, což je na úrovni jedné sluneční granule.
+Menší dalekohledy zobrazují celý sluneční disk a pomáhají také s výběrem cílů pro hlavní dalekohled.
+Granule je vrcholkem konvektivních proudů plazmatu, které neustále „bublají“ na povrchu Slunce (ve fotosféře).
+Sluneční skvrna je tmavší místo ve fotosféře, které může mít velikost i několika Zemí. Skvrny souvisí s magnetickým polem a nejvíce jich můžeme pozorovat v době slunečního maxima.
+PoET je se spektrografem ESPRESSO propojen optickými vlákny. První vlákno bude přijímat světlo z celého slunečního disku, druhé pak z vybraných oblastí na povrchu Slunce.
+Z metrů na centimetry
+Pokud nepočítáme exoplanety u pulsarů, je využití spektra hvězdy (měření radiálních rychlostí) nejstarší metoda detekce vzdálených planet. Ještě před prvními objevy ji astronomové využívali pro odhalování dvojhvězd. V případě planety je princip stejný.
+Planeta ve skutečnosti neobíhá okolo hvězdy. Obě tělesa obíhají okolo společného barycentra, chcete-li těžiště. Planeta je samozřejmě mnohem méně hmotná, takže se barycentum nachází uvnitř hvězdy, ale samozřejmě ne v jejím středu.
+Zatímco u planety máme pocit, že obíhá okolo hvězdy, samotná hvězda vykonává pohyb připomínající kymácení okolo barycentra, což znamená, že se k nám nepatrně přibližuje a zase se od nás vzdaluje. Tento pohyb je možné pozorovat díky Dopplerově jevu prostřednictvím posuvu spektrálních čar (viz video).
+V roce 1995 byla touto metodou objevena vůbec první exoplaneta u normální hvězdy – 51 Peg b. Za objevem stáli pozdější laureáti Nobelovy ceny Michel Mayor a Didier Queloz, kteří k tomu využili spektrograf ELODIE na observatoři Haute-Provence ve Francii. Jeho přesnost dosahovala 10 až 15 m/s.
+Průlom v hledání exoplanet přinesl spektrograf HARPS na observatoři La Silla v Chile, jehož přesnost dosáhla 1 m/s.
+Přesnost 10 cm/s
+ESPRESSO může pracovat s jedním dalekohledem VLT a dosáhnout přesnosti až 10 cm/s. Případně může pracovat se světlem ze všech čtyř teleskopů (odpovídá dalekohledu s průměrem 16 metrů), kdy přesnost klesne na 1 m/s, ale dostupnější jsou i slabší hvězdy.
+Amplituda výchylky radiálních rychlostí je závislá na hmotnosti hvězdy, planety, vzdálenosti planety od hvězdy, výstřednosti a sklonu dráhy vůči nám.
+Pro představu. Zmíněná 51 Peg b dosahuje amplitudy asi 56 m/s. Jupiter obíhající okolo Slunce necelých 13 m/s a Země jen 9 cm/s.
+Zejména při hledání kamenných planet hraje důležitou roli šum. Měli jsme pár případů, kdy byla hvězdná aktivita považována za planetu. Hvězdné granulace a oscilace mohou vytvářet signály o rychlosti až metrů za sekundu.
+Díky dalekohledu PoET se astronomové mohou pozorováním Slunce naučit se šumem lépe pracovat.

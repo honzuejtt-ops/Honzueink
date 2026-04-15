@@ -1,0 +1,18 @@
+Poprvé měl letět v roce 2021, pak se datum posunulo na rok 2022, 2024, 2025 a teď to vypadá, že se snad do vesmíru podívá nejdříve letos na podzim. Řeč je o malém bezpilotním raketoplánu Dream Chaser, který si NASA objednala pro několik nákladních letů na ISS.
+Stojí za ním coloradská společnost Sierra Space a čerstvě se pochlubila fotografií jednoho z posledních velkých testů před startem, které si kosmický kluzák před pár dny odbyl v Kennedyho vesmírném středisku na Floridě.
+Při prvním zkušebním letu vynese loď na nízkou oběžnou dráhu nosič Vulcan Centaur v prodloužené konfiguraci se čtyřmi boostery (VC4L) a v Sierra Space potřebovali mít jistotu, že se Dream Chaser nerozpadne už při startu.
+Na nákladní prostor totiž v prvních sekundách působí extrémní vibrace a nebylo by to poprvé, kdy by podobná mise selhala právě z těchto důvodů.
+Devadesátireproduktorový trhač bubínků
+Když potřebujete změřit, jak se družice nebo kosmická loď popere s otřesy, zavezete ji do jedné z několika akustických laboratoří NASA, kde vám inženýři obskládají náklad těmi nejsilnějšími reproduktory a sirénami na Zemi.
+V případě Dream Chaseru to bylo devadesát beden, za které by se nestyděli ani na Rock for People. Akustický výkon laboratoří NASA se různí, z dostupných údajů se ale pohybuje vysoko nad 100 dB a Chaser čelil hodnotám 140-150 dB. To už jsou tlaky, při kterých hrozí okamžité protržení ušních bubínků.
+Dream Chaser a sestava 90 reproduktorů během testování na mysu Canaveral
+Kosmická loď sice bubínek nemá, v prvních sekundách po startu nicméně musí přežít masivní zvukové vlny z raketových motorů, které se odrážejí od rampy a vrací se zpět.
+Nízké frekvence mohou narušit rozměrnější strukturu – v případě Chaseru by mohly odpadnout třeba keramické destičky tepelného štítu a poškodit se jeho otočná křidélka. Vyšší frekvence jsou zase nebezpečné pro drobnou elektroniku a jemné senzory. Mohou popraskat i desky plošných spojů uvnitř počítačů atp.
+Laboratoře NASA jako Reverberant Acoustic Test Facility v Ohiu, anebo Space Systems Processing Facility přímo na Floridě toto všechno mohou nasimulovat na míru podle profilu konkrétního raketového motoru a konstrukce nosiče.
+Malý raketoplán poletí nejdříve na podzim
+Dream Chaser se měl už před lety stát další lodí, která bude na ISS dopravovat náklad. NASA zaplatila vývoj v rámci programu CRS-2 (Commercial Resupply Services) a Chaser měl už roky sekundovat současným americkým nákladním lodím Cygnus (popelářský vůz, který po odpojení shoří v atmosféře i s odpadky) a Dragon.
+V Coloradu ale nakonec termín nedodrželi, konstrukce se totiž protáhla třeba kvůli komplikacím s tepelným štítem a softwarem, a tak NASA nechtěla riskovat osud ISS a rozhodla se, že Dream Chaser poprvé poletí jen na nízkou oběžnou dráhu a ke stanici se ještě nepřipojí – to nejdříve až v roce 2027.
+Těžký nosič Vulcan Centaur je americká náhrada za rakety Atlas a Delta. Měl by sloužit silovým složkám státu i komerčním klientům. Zatím má ale problémy s pomocnými boostery
+I tak to ale bude podívaná, kosmické kluzáky jsme tu totiž opravdu měli naposledy v dobách raketoplánů Space Shuttle.
+Odpověď na otázku, kdy přesně Dream Chaser opravdu poletí, je nyní na straně skupiny United Launch Alliance (Boeing, Lockheed Martin), kteří vyvíjejí těžkou nosnou raketu Vulcan Centaur. Poveze i malý raketoplán.
+Vulcan Centaur má za sebou čtyři starty a všechny až na ten první měly problémy s pomocnými boostery na tuhé palivo. Včetně posledního letu z letošního února. Dokud ULA vše neopraví, zpoždění budou nabírat i další mise ve frontě, vhodných raket s pětimetrovým prostorem pro náklad je totiž nedostatek.

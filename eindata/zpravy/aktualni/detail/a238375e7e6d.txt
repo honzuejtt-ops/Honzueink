@@ -1,0 +1,6 @@
+Uživatelé chytrých telefonů Apple iPhone mohou narazit na nepříjemný problém spjatý s českou klávesnicí, konkrétně se znakem háčku. Web The Register popsal případ amerického studenta, který si háček zvolil jako jeden ze znaků v rámci svého přístupového hesla do systému. Jenže Apple později háček odstranil a student se nemůže do svého iPhonu dostat.
+Student začátkem dubna aktualizoval svůj iPhone 13 verzi iOS 18 na iOS 26.4. Od té doby se do zařízení nemůže přihlásit. Verze iOS 18 totiž byla poslední, která umožňovala háček jakožto součást hesla zadat a používat ho. Student původně háček zvolil kvůli silnější bezpečnosti, takže místo čtyřmístného číselného kódu používal alfanumerický řetězec.
+Novější iOS mu v rámci zadání hesla neumožní háček napsat. V rámci české klávesnice se sice háček nadále nachází, ale zmizela možnost ho používat jako znak v heslu.
+Zmíněný nešťastný student tak nemá přístup ke svým datům. Applu mu zatím nijak neporadil a pouze doporučil restart do továrního nastavení, čímž by se sice šlo dostat k telefonu, ale ne datům.
+Je možné, že Apple časem vydá opravu tohoto problému. Jelikož ale tento způsob využití háčku zmizel po verzi iOS 18, která byla vydána v roce 2024, nemusí se tak stát.
+Takže se opět potvrdilo, že čeština je sice pěkný, ale složitý jazyk s mnoha specifiky, který dokáže cizincům komplikovat bytí.

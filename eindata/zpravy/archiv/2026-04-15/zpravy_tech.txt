@@ -1,3 +1,209 @@
+|T|Linux místo Windows. Francouzská státní správa po Teams a Zoomu odstřihne další americký produkt|D|15.04.2026 14:45|P|Francouzská státní správa přejde z Windows na Linux. • Migrace by měla být hotová do konce tohoto roku. • Země nechce být závislá na amerických produk...|X|Francie vyhlásila další krok ve snaze dosáhnout digitální suverenity. Státní správa letos přejde z Windows na Linux. V lednu se země rozhodla, že opustí americké komunikační služby jako Teams a Zoom. Do konce příštího roku je nahradí domácí videochat Visio.
+Francouzské státní správě je k dispozici celý balík open source nástrojů LaSuite, který svým zaměřením můžeme přirovnat k Microsoft 365 a Google Workspace.
+Vyměnit telekomunikační a kancelářské nástroje nicméně může působit jako snazší krok ve srovnání s migrací celého operačního systému. Instalaci provedou IT oddělení, tyto počítače je však potřeba vzdáleně spravovat a v neposlední řadě je nutné vyškolit přinejmenším stovky tisíc lidí. S Linuxem má ale země zkušenosti – Státní četnictvo (Gendarmerie nationale) od roku 2008 na svých počítačích nasadilo GendBuntu. Jde o vlastní distribuci založenou na Ubuntu.
+Gendbuntu vychází z Ubuntu
+Francie nicméně považuje za důležité, aby nebyla závislá na amerických a dalších technologiích. Po návratu Donalda Trumpa do role prezidenta Spojené státy nepůsobí jako spolehlivý partner. Evropa se o svou digitální suverenitu v minulosti nestarala. Proto je dnes z velké části závislá na amerických technologiích. Francie chce svůj technologický dluh aspoň v oblasti softwaru rychle dohnat.
+Prozatím detaily o přechodu na Linux neprozrazuje. Novinář Steven Vaughan-Nichols nicméně od svých zdrojů slyší, že státní správa použije distribuci odvozenou od GendBuntu. Nabídne LibreOffice 26.2, Firefox 140 ESR, Thunderbird 140 ESR a GIMP 3.
+Microsoft, Google nebo Amazon sice v Evropě postupně spouští tzv. nezávislá datacentra, ale má to háček. Stále je provozují americké firmy, které podléhají tamním zákonům. Data z těchto evropských datacenter si americké orgány činné v trestním řízení mohou vyžádat např. prostřednictvím CLOUD Act z roku 2018. Foreign Intelligence Surveillance Act firmy zase zavazuje k případné spolupráci s NSA.
+Francie ostatně přechod na Visio vysvětlila i tím, že nechce riskovat, aby informace z vědeckých výzkumů, strategických inovací a další byly vystaveny neevropským aktérům. Řekl to David Amiel, náměstek ministra pro veřejnou službu a státní reformu.
+Anne Le Hénanff, náměstkyně ministra pro umělou inteligenci a digitální technologie, přechod na Linux komentuje slovy (přeložil Deepl):
+„Digitální suverenita není volbou, je to strategická nutnost. Evropa si musí opatřit prostředky k naplnění svých ambicí a Francie jde příkladem tím, že urychluje přechod k suverénním, interoperabilním a udržitelným řešením. Snížením naší závislosti na řešeních mimo Evropu vysílá stát jasný signál: signál veřejné moci, která znovu přebírá kontrolu nad svými technologickými rozhodnutími ve prospěch své digitální suverenity.“
+Francie navíc odhaduje, že přechodem na open source ušetří. Např. provoz Visia bude ročně levnější až o milion eur na sto tisíc uživatelů a uživatelek ve srovnání s licencovanými zahraničními službami. Velké úspory hlásí také Šlesvicko-Holštýnsko, které by letos přechodem z Office na LibreOffice mělo ušetřit 15 milionů eur.
+Závislost Evropy na USA a Číně jsme nedávno dopodrobna rozebrali s byznysovým novinářem Janem Sedlákem. Rozhovor si můžete přečíst, ale také poslechnout:
+Peníze, které tečou neevropským firmám, by přitom podpořily domácí trh. Státům, organizacím a jednotlivcům by evropská řešení zajistila vyšší stupeň nezávislosti.|E|
+|T|Kosmický kluzák Dream Chaser má za sebou drastický test trhačem bubínků. Poprvé poletí snad na podzim|D|15.04.2026 13:45|P|Poprvé měl letět v roce 2021, pak se datum posunulo na rok 2022, 2024, 2025 a teď to vypadá, že se snad do vesmíru podívá nejdříve letos na podzim. Ře...|X|Poprvé měl letět v roce 2021, pak se datum posunulo na rok 2022, 2024, 2025 a teď to vypadá, že se snad do vesmíru podívá nejdříve letos na podzim. Řeč je o malém bezpilotním raketoplánu Dream Chaser, který si NASA objednala pro několik nákladních letů na ISS.
+Stojí za ním coloradská společnost Sierra Space a čerstvě se pochlubila fotografií jednoho z posledních velkých testů před startem, které si kosmický kluzák před pár dny odbyl v Kennedyho vesmírném středisku na Floridě.
+Při prvním zkušebním letu vynese loď na nízkou oběžnou dráhu nosič Vulcan Centaur v prodloužené konfiguraci se čtyřmi boostery (VC4L) a v Sierra Space potřebovali mít jistotu, že se Dream Chaser nerozpadne už při startu.
+Na nákladní prostor totiž v prvních sekundách působí extrémní vibrace a nebylo by to poprvé, kdy by podobná mise selhala právě z těchto důvodů.
+Devadesátireproduktorový trhač bubínků
+Když potřebujete změřit, jak se družice nebo kosmická loď popere s otřesy, zavezete ji do jedné z několika akustických laboratoří NASA, kde vám inženýři obskládají náklad těmi nejsilnějšími reproduktory a sirénami na Zemi.
+V případě Dream Chaseru to bylo devadesát beden, za které by se nestyděli ani na Rock for People. Akustický výkon laboratoří NASA se různí, z dostupných údajů se ale pohybuje vysoko nad 100 dB a Chaser čelil hodnotám 140-150 dB. To už jsou tlaky, při kterých hrozí okamžité protržení ušních bubínků.
+Dream Chaser a sestava 90 reproduktorů během testování na mysu Canaveral
+Kosmická loď sice bubínek nemá, v prvních sekundách po startu nicméně musí přežít masivní zvukové vlny z raketových motorů, které se odrážejí od rampy a vrací se zpět.
+Nízké frekvence mohou narušit rozměrnější strukturu – v případě Chaseru by mohly odpadnout třeba keramické destičky tepelného štítu a poškodit se jeho otočná křidélka. Vyšší frekvence jsou zase nebezpečné pro drobnou elektroniku a jemné senzory. Mohou popraskat i desky plošných spojů uvnitř počítačů atp.
+Laboratoře NASA jako Reverberant Acoustic Test Facility v Ohiu, anebo Space Systems Processing Facility přímo na Floridě toto všechno mohou nasimulovat na míru podle profilu konkrétního raketového motoru a konstrukce nosiče.
+Malý raketoplán poletí nejdříve na podzim
+Dream Chaser se měl už před lety stát další lodí, která bude na ISS dopravovat náklad. NASA zaplatila vývoj v rámci programu CRS-2 (Commercial Resupply Services) a Chaser měl už roky sekundovat současným americkým nákladním lodím Cygnus (popelářský vůz, který po odpojení shoří v atmosféře i s odpadky) a Dragon.
+V Coloradu ale nakonec termín nedodrželi, konstrukce se totiž protáhla třeba kvůli komplikacím s tepelným štítem a softwarem, a tak NASA nechtěla riskovat osud ISS a rozhodla se, že Dream Chaser poprvé poletí jen na nízkou oběžnou dráhu a ke stanici se ještě nepřipojí – to nejdříve až v roce 2027.
+Těžký nosič Vulcan Centaur je americká náhrada za rakety Atlas a Delta. Měl by sloužit silovým složkám státu i komerčním klientům. Zatím má ale problémy s pomocnými boostery
+I tak to ale bude podívaná, kosmické kluzáky jsme tu totiž opravdu měli naposledy v dobách raketoplánů Space Shuttle.
+Odpověď na otázku, kdy přesně Dream Chaser opravdu poletí, je nyní na straně skupiny United Launch Alliance (Boeing, Lockheed Martin), kteří vyvíjejí těžkou nosnou raketu Vulcan Centaur. Poveze i malý raketoplán.
+Vulcan Centaur má za sebou čtyři starty a všechny až na ten první měly problémy s pomocnými boostery na tuhé palivo. Včetně posledního letu z letošního února. Dokud ULA vše neopraví, zpoždění budou nabírat i další mise ve frontě, vhodných raket s pětimetrovým prostorem pro náklad je totiž nedostatek.|E|
+|T|Evropská aplikace na ověřování věku online je hotová, oznámila Evropská komise|D|15.04.2026 13:39|P|Naše aplikace pro ověřování věku online je technicky hotová brzy bude dostupná k používání, oznámila na tiskové konferenci předsedkyně Evropské komise...|X|Naše aplikace pro ověřování věku online je technicky hotová brzy bude dostupná k používání, oznámila na tiskové konferenci předsedkyně Evropské komise Ursula von der Leyen.
+Aplikace, která bude k dispozici pro telefony, tablety i desktopové počítače, podle ní má umožňovat prokazování věku na online službách. Svůj věk uživatel aplikaci prokáže pomocí svého průkazu totožnosti nebo pomocí služeb třetích stran, jakou jsou například banky.
+Při přihlašování k online službě, která bude ověření věku vyžadovat, pak má potvrdit zletilost bez toho, že by o uživateli prozradila jakékoli osobní informace, slíbila von der Leyen. Uživatele aplikace podle ní nebude možné žádným způsobem sledovat.
+„Online platformy se už nemohou na nic vymlouvat. Evropa nabízí zdarma jednoduché řešení, které může ochránit děti před škodlivým a nezákonným obsahem,“ řekla šéfka Komise. Komise nechala vyvinout vzorovou aplikaci (blueprint), kterou si budou moci členské státy přizpůsobit podle svého.
+Zdrojový kód vzorové aplikace Komise zveřejnila na GitHubu (verze pro Android, verze pro iOS), technickou dokumentaci a další informace pak publikovala na speciálním webu.
+Aplikaci v uplynulých měsících testovalo sedm evropských zemí: Francie, Dánsko, Řecko, Itálie, Španělsko, Kypr a Irsko. Tyto státy plánují aplikaci integrovat do svých národních identitních peněženek.
+Česko podle dřívějších vyjádření zdejších úřadů čeká s ověřováním věku na spuštění evropské peněženky digitální identity (EUDIW), které je v plánu na začátek roku 2028. Už teď je ale pravděpodobné, že EU nestihne v plánovaném termínu spusti aplikaci se všemi předpokládanými funkcemi.|E|
+|T|Američan řeší bizarní problém. Nemůže se přihlásit do iPhonu, protože v hesle použil český háček|D|15.04.2026 12:54|P|Uživatelé chytrých telefonů Apple iPhone mohou narazit na nepříjemný problém spjatý s českou klávesnicí, konkrétně se znakem háčku. Web The Register p...|X|Uživatelé chytrých telefonů Apple iPhone mohou narazit na nepříjemný problém spjatý s českou klávesnicí, konkrétně se znakem háčku. Web The Register popsal případ amerického studenta, který si háček zvolil jako jeden ze znaků v rámci svého přístupového hesla do systému. Jenže Apple později háček odstranil a student se nemůže do svého iPhonu dostat.
+Student začátkem dubna aktualizoval svůj iPhone 13 verzi iOS 18 na iOS 26.4. Od té doby se do zařízení nemůže přihlásit. Verze iOS 18 totiž byla poslední, která umožňovala háček jakožto součást hesla zadat a používat ho. Student původně háček zvolil kvůli silnější bezpečnosti, takže místo čtyřmístného číselného kódu používal alfanumerický řetězec.
+Novější iOS mu v rámci zadání hesla neumožní háček napsat. V rámci české klávesnice se sice háček nadále nachází, ale zmizela možnost ho používat jako znak v heslu.
+Zmíněný nešťastný student tak nemá přístup ke svým datům. Applu mu zatím nijak neporadil a pouze doporučil restart do továrního nastavení, čímž by se sice šlo dostat k telefonu, ale ne datům.
+Je možné, že Apple časem vydá opravu tohoto problému. Jelikož ale tento způsob využití háčku zmizel po verzi iOS 18, která byla vydána v roce 2024, nemusí se tak stát.
+Takže se opět potvrdilo, že čeština je sice pěkný, ale složitý jazyk s mnoha specifiky, který dokáže cizincům komplikovat bytí.|E|
+|T|Google bojuje o zkratku Alt+mezerník. Jeho AI vyhledávač pro Windows si vyzkoušíte i v Česku|D|15.04.2026 12:45|P|Program Google vyšel pro Windows, ale zatím jen v angličtině. • Vyhledávání na webu, nabízí AI, režim Lens nebo lokální vyhledávání. • Spouští se kláv...|X|Google se vytasil se zbrusu novým programem pro Windows 10 a 11. Eponymní aplikace slouží jako vyhledávač s AI Gemini. Jde přímo proti Copilotu nebo ChatGPT. Všechny tyto aplikace se totiž spouští stejnou klávesovou zkratkou Alt+mezerník.
+Jak jsme dříve informovali, vyhledávací klient byl od září dostupný v USA. Po měsících pilotního provozu je dostupný celosvětově. Takže si ho můžete stáhnout a používat i v Česku. Prozatím však program není lokalizovaný. Snažíme se zjistit, zda a kdy se to změní.
+AI složka je klíčová. Google podporuje režim Lens, s nímž vyhledáte obsah, který označíte na obrazovce. Můžete s ním také sdílet obrazovku či okno. Díky tomu vám snáze poradí s konkrétními problémy. Nám AI při sdílení obrazovky odmítala vygenerovat odpověď, což může být krátkodobá technická záležitost.
+Vyhledávač Google se vrací do Windows s příchutí Gemini
+Program můžete používat i bez přihlášení, kdy vedle výše zmíněných funkcí vyhledává další programy v počítači. Pak Google slouží jako rychlý spouštěč. Když se přihlásíte, tak najde vaše soubory v počítači i na Disku.
+Google kdysi vyvíjel celou řadu nativních programů pro Windows, jeho domovskou platformou je ovšem od začátku web. Nic neponechal náhodě, zahájil vývoj vlastního prohlížeče a první betaverzi uvolnil v září 2008. Od té doby si Chrome vydobyl dominantní postavení a na klasických počítačích se Google spoléhá na webové aplikace.
+Pro Windows dnes vyvíjí tedy hlavně Chrome, povinný klient pro Disk nebo Google Earth Pro. Kdysi měl fotogalerii Picasa, kecálek Talk nebo Google Music Manager pro nahrávání vlastní hudební kolekce do Play Music.
+V aktuálním kontextu je nicméně nejzajímavější, že v letech 2004–2011 existoval Google Desktop. K dispozici byl nejen pro Windows, nýbrž i pro macOS a Linux. Na plochu přidával miniaplikace včetně pole pro vyhledávání na webu a přehledu událostí z agregátoru Zprávy. Google Desktop rovněž prohledával lokální disk, což bylo ve své době užitečné, protože integrované vyhledávání ve Windows bylo pomalé.
+Vyhledávač Google vstupuje do Windows i s AI:|E|
+|T|Evropská komise posílá víc než miliardu do obranných projektů. Peníze míří na drony, kybernetiku i vesmír|D|15.04.2026 12:21|P|Evropský obranný fond (European Defence Fund, EDF) rozdělí v letošním roce rekordní sumu mezi projekty pokrývající umělou inteligenci, protidronové sy...|X|Evropský obranný fond (European Defence Fund, EDF) rozdělí v letošním roce rekordní sumu mezi projekty pokrývající umělou inteligenci, protidronové systémy, kybernetickou obranu a kosmické technologie, mezi oblastmi je mimo jiné Evropský vzdušný štít a Evropský kosmický štít.
+Mezi technologicky nejzajímavějšími projekty je AETHER, který se zaměřuje na systémy řízení pohonu a tepelného managementu pro drony. Jde o oblast, která rozhoduje o výdrži a spolehlivosti bojových bezpilotních prostředků. Jednou z klíčových iniciativ je projekt STRATUS, jenž vyvíjí systém kybernetické obrany s umělou inteligencí určený specificky pro roje dronů. Zahrnuje ukrajinského subdodavatele, který zajišťuje, že projekt těží z přímých zkušeností z bojiště.
+Malé a střední podniky tvoří více než 38 % účastníků letošního kola a získají přes 21 % celkových prostředků. Část projektů je nasměrována speciálně pro začínající a malé a střední podniky. Ty mohou získat až 60 tisíc eur na integraci inovací, peníze mají mimo jiné pomoci vstoupit na trh těm, kteří nemají předchozí zkušenosti s obranou.
+I zájem o program je vysoký, letos se jako reakce na výzvu přihlásilo 410 návrhů, o 37 % více než vloni. EU zároveň prohlubuje spolupráci s ukrajinským obranným průmyslem prostřednictvím Úřadu EU pro inovace v oblasti obrany v Kyjevě. Cílem je lépe začlenit Ukrajinu do evropské průmyslové základny.
+Grantové dohody s konsorcii má Komise podepsat do konce letošního roku. Evropský obranný fond disponuje rozpočtem 7,3 miliardy eur na období 2021–2027 a je hlavním nástrojem EU pro podporu spolupráce v oblasti obranného výzkumu a vývoje.|E|
+|T|Letošní březen je nejhorším měsícem v historii z pohledu kybernetické kriminality|D|15.04.2026 11:51|P|Březen byl v ohledu kyberkriminality nejhorší měsíc v historii. Policie evidovala 2 533 skutků, což znamená nárůst o 37,4 % oproti březnu roku 2025. O...|X|Březen byl v ohledu kyberkriminality nejhorší měsíc v historii. Policie evidovala 2 533 skutků, což znamená nárůst o 37,4 % oproti březnu roku 2025. Od začátku roku už v kategorii falešných bankéřů a policistů eviduje 728 případů se škodou přes 322 milionů korun.
+Pokud by tempo pokračovalo, Česko by dosáhlo loňských hodnot v polovině října. Průměrná škoda na oběť je přes 721 tisíc korun, maximální přesahuje 24 milionů. Průměrný rok narození oběti je 1980. Podle policie zároveň celkem 80 % podvedených tvoří ženy.
+Nejrizikovějším nástrojem je mobilní telefon, přes něj útočí podvodníci v drtivé většině. Takzvaný vishing, kdy se volající vydává za autoritu, například právě za policii nebo zástupce banky, nabobtnal meziročně do takové míry, že banky hlásí meziroční nárůst případů i na násobky a stal se z něj sofistikovaný byznys.|E|
+|T|Co se v roce 2026 nejvíc hraje na Xboxu. Tady jsou nejoblíbenější hry pro Xbox X/S i starší One|D|15.04.2026 11:45|P|Co se letos nejvíc hraje na Xboxu? Vyšli jsme z oficiálních žebříčků, které Xbox vydává, a našli nejoblíbenější hry pro modely X, S i starší One.|X|Ukázat všechny listy najednou
+30. Fallout 76
+Fallout zaměřený na online hraní zprvu sklízel zaslouženou kritiku. Bethesda to s ním ale ani po letech nevzdává a vypadá to, že neustálé rozšiřování tohoto postapokalyptického světa se jí vyplatilo. Po vydání úspěšné seriálové adaptace totiž Fallout 76 chytil druhý dech. S vývojem navíc nehodlají brzdit.
+Od svržení bomb uplynulo už 25 let. Svět se z této obrovské katastrofy ale vzpamatovává velmi těžko. My se společně s dalšími hráči podíváme, jak vypadá postnukleární Amerika. V otevřeném světě můžete procházet různé dějové linky. Zásadní součástí hry je ale také stavba vlastní základny, kde si postupem času můžete vytvořit i vlastní atomovku.
+Hodnocení recenzentů: 52 % (z 46 recenzí Metacritic)
+Hodnocení na Steamu: Spíše kladné (74 % od 76 336 hráčů)
+Oficiální web hry
+Hra v obchodě Xbox (999 Kč, součást Game Pass Essential)
+Platformy: Xbox One, PC, PlayStation 4
+Žánry: RPG, střílečka
+Herní režimy: více hráčů, kooperace, MMO
+Herní engine: Creation Engine
+Vydavatel: Bethesda Softworks
+Vývojář: Bethesda Game Studios
+Datum vydání: 14. 11. 2018
+Digitální distribuce: Xbox , Steam , PlayStation
+Pokračování 2 / 30 29. Among Us
+S partou přátel nebo náhodných hráčů se stáváte členy posádky vesmírné lodi. Každý z vás má své úkoly, které musí splnit. Zároveň někteří členové jsou ale podvodníci, jejichž cílem je vyvraždit všechny ostatní členy posádky. Během meetingů musíte vydedukovat podle chování ostatních, komu můžete věřit a koho byste naopak měli vyhodit do vesmírné prázdnoty.
+Hodnocení recenzentů: 85 % (z 9 recenzí Metacritic)
+Hodnocení na Steamu: Velmi kladné (92 % od 639 595 hráčů)
+Oficiální web hry
+Hra v obchodě Xbox (86 Kč, běžně 143 Kč, součást Game Pass Essential)
+Platformy: Xbox Series X, Xbox One, PC, PlayStation 5, PlayStation 4, iOS (iPhone/iPad), Nintendo Switch
+Žánry: nezávislá hra, strategie
+Herní režimy: jeden hráč, více hráčů, kooperace
+Herní engine: Unity 2022
+Vývojář: Innersloth
+Datum vydání: 16. 11. 2018
+Digitální distribuce: Xbox , Steam , Epic , PlayStation , Nintendo , Google Play , Apple App Store
+Pokračování 3 / 30 28. Fall Guys: Ultimate Knockout
+60 hráčů, jedna korunka a hromada překážek v cestě. To je ve zkratce roztomilý battle royale Fall Guys. Pokud vám něco říkají soutěže jako Drtivá porážka nebo Takešiho hrad, tak vám jistě rychle dojde, o co ve Fall Guys jde. Skrz několik kol, jejichž rozmanitost narůstá s každou novou sezónou, se musíte jako první dostat ke korunce.
+Vývojáři průběžně do hry přidávají tematická rozšíření spolu s novými sezónami, které jsou pro všechny hráče k dispozici zdarma. Po několika letech od vydání se obsah pěkně rozrostl a každý zápas díky tomu nepůsobí stereotypně. Do toho se navíc zapojují i různé výzvy a týmové herní módy.
+Hodnocení recenzentů: 81 % (z 52 recenzí Metacritic)
+Hodnocení na Steamu: Velmi kladné (81 % od 470 056 hráčů)
+Oficiální web hry
+Hra v obchodě Xbox (zdarma)
+Platformy: Xbox One, Xbox Series X, PC, PlayStation 4, PlayStation 5, Nintendo Switch
+Žánry: nezávislá hra, plošinovka, závodní hra
+Herní režimy: více hráčů, kooperace, battle royale
+Herní engine: Unity
+Vydavatel: Devolver Digital
+Vývojář: Mediatonic
+Datum vydání: 4. 8. 2020
+Digitální distribuce: Xbox , Steam , Epic , PlayStation , Nintendo
+Pokračování 4 / 30 27. Tom Clancy's Rainbow Six Siege X
+Rainbow Six Siege je výborná taktická akce s parádní atmosférou, destrukcí prostředí a důrazem na věrohodnost a týmovou souhru. Budete hledat výbušniny, zachraňovat rukojmí, odstraňovat nepohodlné cíle, čistit oblast a provádět další akce, které jsou denním chlebem speciálních jednotek.
+První minuta v každém zápase je věnována přípravě. Útočníci pomocí dronů hledají cíle, sledují pozice nepřátel a dostávají obecný přehled o situaci. Obránci naopak staví zátarasy, ostnaté dráty, barikádují okna a dveře a připravují se na útok. Komunikace je tu životně důležitou složkou. Rozhodně nechávejte otevřený kanál a nezapomínejte na mikrofon, abyste hráčům minimálně dokázali radit.
+Hodnocení recenzentů: 73 % (z 40 recenzí Metacritic)
+Hodnocení hráčů: 70 % (z 1 702 hodnocení)
+Oficiální web hry
+Hra v obchodě Xbox (zdarma)
+Platformy: Xbox One, Xbox Series X, PC, PlayStation 4, PlayStation 5
+Vydavatel: Ubisoft
+Vývojář: Ubisoft Montreal
+Datum vydání: 1. 12. 2015
+Pokračování 5 / 30 26. TheHunter: Call of the Wild
+Výlet do přírody s puškou na rameni a dalekohledem v ruce může znamenat jen dvě věci. Buď trpíte paranoiou, že vás někdo chce zabít, nebo se chystáte na lov. TheHunter je tím druhým případem, do své sbírky trofejí se pokoušíte získat tu nejparádnější kořist. Musíte na to ale pěkně pomalu. Stačí malé zaváhání a výstavní jelen vám vezme roha.
+Možnosti v TheHunter: Call of the Wild jsou velmi široké, což platí obzvlášť, pokud si pořídíte i rozšíření, kterých rozhodně není málo. S nimi navštívíte loviště v nejrůznějších částech světa a narazit tak můžete na celou řadu nových zvířecích druhů.
+Hodnocení recenzentů: 64 % (z 13 recenzí Metacritic)
+Hodnocení na Steamu: Velmi kladné (89 % od 164 134 hráčů)
+Oficiální web hry
+Hra v obchodě Xbox (599 Kč, součást Game Pass Premium)
+Platformy: Xbox One, PC, PlayStation 4
+Žánry: adventura, střílečka, simulátor, sportovní hra, strategie
+Herní režimy: jeden hráč, více hráčů, kooperace
+Herní engine: Apex
+Vydavatel: Avalanche Studios
+Vývojář: Expansive Worlds
+Datum vydání: 16. 2. 2017
+Digitální distribuce: Xbox , Steam , Epic , PlayStation
+Pokračování 6 / 30 25. Halo: The Master Chief Collection
+Pokud jste měli někdy chuť projít si začátek série Halo, není pro to lepší možnost než The Master Chief Collection. Legendární sága je zde spojená do jednoho balíku, který zahrnuje šest her – od obětavého boje týmu Noble Six v Halo: Reach až po vzestup nové hrozby v Halo 4. Hráči projdou 67 kampaněmi napříč Halo: Combat Evolved Anniversary, Halo 2: Anniversary, Halo 3, Halo 3: ODST a Halo 4, přičemž každá hra nabízí vlastní styl a atmosféru. Kolekce navíc přináší přes 120 multiplayerových map včetně původních z Halo: Combat Evolved, kooperativní režimy Spartan Ops a široké možnosti hraní díky komunitnímu obsahu ve Forge. Master Chief Collection není jen nostalgickou jízdou, ale i modernizovanou verzí jedné z nejzásadnějších sérií v historii videoher.
+Hodnocení recenzentů: 85 % (z 69 recenzí Metacritic)
+Hodnocení na Steamu: Velmi kladné (92 % od 233 909 hráčů)
+Oficiální web hry
+Hra v obchodě Xbox (275 Kč, běžně 1099 Kč, součást Game Pass Premium)
+Platformy: Xbox One, Xbox Series X, PC
+Žánr: střílečka
+Herní režimy: jeden hráč, více hráčů, kooperace, dělená obrazovka
+Herní engine: Halo Reach
+Vydavatel: Microsoft Game Studios
+Vývojář: 343 Industries
+Datum vydání: 11. 11. 2014
+Digitální distribuce: Xbox , Steam
+Pokračování 7 / 30 24. Call of Duty: Black Ops II
+Call of Duty: Black Ops II z roku 2012 přesunulo sérii do blízké budoucnosti. Studená válka dostává novou podobu a bojiště ovládají drony, roboti a vyspělé zbraňové systémy. Příběh sleduje Davida Masona, syna hrdiny z minulého dílu, který se snaží zastavit Raula Menendeze. Ten zneužije vojenskou infrastrukturu a obrátí technologickou převahu proti jejím tvůrcům.
+Black Ops II střídá několik hratelných postav. Hra ukazuje svět, kde stroje nahrazují vojáky a o výsledku konfliktu rozhodují algoritmy. Hráč může v klíčových momentech volit další postup, což ovlivní vývoj příběhu i jeho zakončení.
+Hodnocení recenzentů: 83 % (z 73 recenzí Metacritic)
+Hodnocení na Steamu: Velmi kladné (86 % od 22 593 hráčů)
+Oficiální web hry
+Hra v obchodě Xbox (1449 Kč)
+Platformy: Xbox 360, PC, PlayStation 3, Wii U
+Žánr: střílečka
+Herní režimy: jeden hráč, více hráčů, kooperace, dělená obrazovka
+Herní engine: IW Engine
+Vydavatel: Activision
+Vývojář: Treyarch
+Datum vydání: 13. 11. 2012
+Digitální distribuce: Steam
+Pokračování 8 / 30 23. MLB The Show 25
+Tento ročník baseballu přináší o něco větší posun k realitě díky systému ShowTech. S ním jsou animace hráčů o poznání rozmanitější a své schopnosti můžete otestovat s náročnější obtížností G.O.A.T.
+Předělaná je i Road to the Show. Začínáte jako nováček, propracováváte se skrz nižší ligy. Vaším cílem je samozřejmě samotný vrchol MLB. Svého hráče si můžete uzpůsobit výrazněji díky přepracovanému systému atributů a perkům, které mu jasně vytyčí jeho herní styl.
+Hodnocení recenzentů: 83 % (z 32 recenzí Metacritic)
+Hodnocení hráčů: 53 % (z 79 hodnocení)
+Oficiální web hry
+Hra v obchodě Xbox (1599 Kč)
+Platformy: Xbox Series X, PlayStation 5, Nintendo Switch
+Žánry: simulátor, sportovní hra
+Herní režimy: jeden hráč, více hráčů, kooperace
+Vydavatel: Sony Interactive Entertainment
+Vývojář: San Diego Studio
+Datum vydání: 18. 3. 2025
+Digitální distribuce: Xbox , PlayStation , Nintendo
+Pokračování 9 / 30 22. Overwatch 2
+Týmová střílečka Overwatch 2 nabízí více než čtyřicet unikátních hrdinů s jedinečnými schopnostmi. Musí se spojit ve společném boji proti globálním hrozbám. Vylepšená grafika má dynamičtější prostředí, propracovanějšími detaily postav a atmosférické efekty. Jednou z největších změn, kterou autoři v této verzi připravili, je snížení počtu hráčů v týmu z šesti hrdinů na pět.
+Novinkou je režim Push, ve kterém týmy soupeří o kontrolu nad robotem, kterého musí dotlačit co nejdál do nepřátelské základny. Hra také zahrnuje kooperativní příběhové mise pro čtyři hráče, kde se odhalují motivy útoků omnických robotů. Overwatch 2 je hra typu free-to-play a lze do ní přenést všechny dosavadní úspěchy a kosmetické předměty z prvního dílu.
+Hodnocení recenzentů: 79 % (z 53 recenzí Metacritic)
+Hodnocení na Steamu: Spíše záporné (29 % od 393 595 hráčů)
+Oficiální web hry
+Hra v obchodě Xbox (zdarma)
+Platformy: Xbox One, Xbox Series X, PC, PlayStation 4, PlayStation 5, Nintendo Switch
+Žánr: střílečka
+Herní režimy: více hráčů, kooperace
+Herní engine: Proprietary Engine
+Vydavatel: Blizzard Entertainment
+Vývojář: Blizzard Entertainment
+Datum vydání: 10. 8. 2023
+Digitální distribuce: Xbox , Steam , Nintendo
+Pokračování 10 / 30 21. EA Sports UFC 5
+I když je UFC sportovní značkou spada...
+(Pokracovani na webu)|E|
+|T|Nejlevnější router s Wi-Fi 7 koupíte jen za tisícovku. Je rychlý, má dobrou aplikaci a umí se spojit do mesh sítě|D|15.04.2026 10:45|P|Mercusys MR25BE lze v několika obchodech koupit už za 1000 Kč. • Jde o nejdostupnější router s podporou Wi-Fi 7. • Má všechny potřebné funkce, jednodu...|X|Mercusys MR25BE a MR25WBE (černý a bílý model) vyráběný TP-Linkem je nejlevnější router s podporou Wi-Fi 7 na českém trhu. V Alze cena spadla na 1039 Kč a je na něj tříletá záruka. V Suntechu je ještě o pár korun levnější a černá verze stojí na Maderu jen 954 Kč.
+V českých obchodech stojí až Kč
+Porovnat ceny
+V českých obchodech stojí až Kč
+Porovnat ceny
+Jde o základní model třídy BE3600, který bohužel nevyužívá potenciál Wi-Fi 7 naplno a není dramaticky lepší než routery s Wi-Fi 6. Především chybí podpora 6GHz pásma. Mercusys tak komunikuje jen v 2,4GHz (propustnost 688 Mb/s) a 5GHz (2880 Mb/s). Podporuje však 160MHz kanály, modulaci 4K-QAM a funkci Multi-Link Operation (MLO) pro spojení obou pásem dohromady, takže pokud máte mobil, tablet nebo počítač s Wi-Fi 7, tak spojení bude rychlejší než s ekvivalentním šestkovým routerem.
+Mercusys má čtyři neodnímatelné všesměrové antény s podporou beamformingu. Nabízí 2,5G WAN i jeden LAN, k tomu má další dva 1G LANy. USB pro připojení externího disku bohužel chybí. Router umí vytvořit i síť pro hosty s odděleným SSID. Stejně jako u mateřského TP-Linku potěší funkce EasyMesh pro jednoduchou tvorbu mesh sítí, stačí koupit další kompatibilní zařízení. Veškeré nastavení pak v češtině probíhá ve webovém rozhraní či prostřednictvím mobilní aplikace.
+Přes WhatsApp a Telegram vás upozorníme na novou slevu
+Slevové akce někdy netrvají dlouho nebo obchody mohou mít jen malé množství zlevněných produktů. Než se k článku dostanete, může být pozdě.
+Hlídač slev má ale své kanály v komunikátorech WhatsApp a Telegram. Klikněte na odkaz, otevře se v aplikaci. Jakmile vydáme článek o slevě, hned o tom dostanete zprávu. O akci se tak dozvíte v době, kdy je ještě stoprocentně platná.
+Jsme také na sociálních sítích Facebook, Threads, X, Bluesky, Mastodon, Discord a můžete odebírat naše RSS se slevami.
+WhatsApp má u kanálů vypnuté upozornění na nové zprávy. Musíte to změnit sami přes ikonu zvonku v pravém horním rohu aplikace. Viz žlutá šipka:
+Našli jste sami zajímavou slevu? Napište nám.
+Za nákup, který uskutečníte prostřednictvím odkazu v článku, může Živě dostat provizi.|E|
 |T|Francie dá sbohem Microsoftu, místo Windows chce nasadit Linux|D|15.04.2026 10:13|P|Kompletní státní správa má běžet na neamerických platformách. Vedle samotných operačních systémů to mají být i jednotlivé aplikace a platformy.|X|Francie zrychluje své dlouhodobé úsilí o digitální suverenitu bez závislosti na amerických technologických společnostech. Jedním z klíčových kroků je plánovaný přesun části státní správy ze systému Windows na Linux a širší zapojení open source softwaru. Jde o pokračování více než deset let trvající francouzské snahy, která v minulosti Linux přinesla třeba mezi četnictvo.
 Stoprocentní kontrola
 Podle představitelů francouzské vlády jde o strategické rozhodnutí s několika vrstvami. Nejviditelnější z nich je bezpečnost a kontrola nad daty. Vláda dlouhodobě upozorňuje na rizika spojená s proprietárními systémy, u nichž není k dispozici otevřený zdrojový kód. Stejně tak je pro státní instituce kritická menší kontrola nakládání s daty, například v cloudu. Open source umožňuje důkladnou kontrolu i úpravy podle konkrétních potřeb státní správy.

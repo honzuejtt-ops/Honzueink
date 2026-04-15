@@ -1,0 +1,19 @@
+Co je VPN a jak funguje
+Zkratka VPN znamená Virtual Private Network, tedy soukromá virtuální síť. Nad různými technologiemi datového spojení si zkrátka vytvoříte vlastní šifrovanou zabezpečenou síť. Nejčastěji ji využívají firmy. Pokud se zaměstnanec na cestách potřebuje připojit k prostředkům ve vnitřní síti, ať už databázím či souborům, VPN mu zajistí bezpečné propojení do této uzavřené firemní sítě.
+Obdobným způsobem se pokročilí uživatelé mohou z terénu přihlašovat do jinak izolované domácí sítě a přistupovat k souborům na NASu, spravovat chytrou domácnost či dělat jiné činnosti, které by jinak vyžadovaly fyzickou přítomnost.
+Díky tomu, že VPN skryjí původní IP adresu, bývají velmi často využívány pro virtuální změnu země, odkud se uživatel k internetové službě připojuje. Hodí se tedy především pro obcházení geoblockingu. Typické je například blokování filmů a seriálů streamovacími platformami (např. Netflix) pouze pro určité země, kdy vhodně zvolený VPN server toto omezení obejde. Nebo když není nějaká služba zatím dostupná v EU, případně když cestujete a chcete přistupovat k českým službám nefungujícím v zahraničí.
+Redakce doporučuje
+- Výborné rychlosti, důvěryhodné provozovatele a aplikace v češtině nabízí ProtonVPN
+- Maximální ochranu soukromí a zároveň nízké ceny najdete u VPN Mullvad
+Jestli se pro některou z VPN rozhodnete, budeme rádi, když si je pořídíte přes partnerské odkazy v našem článku.
+Změnou virtuální adresy se často můžete dostat k regionálním ceníkům služeb a produktů, a ve výsledku ušetřit. YouTube Premium, Netflix, Spotify nebo Steam jsou v zemích jako Indie, Turecko či Argentina výrazně levnější než u nás. Takové chování ale obvykle bývá v rozporu s podmínkami dané služby a hrozí její zablokování. Navíc nemusí stačit jen nová IP adresa, ale služba může vyžadovat i platbu místní kartou.
+Anonymita je jen částečná
+VPN funguje na principu šifrování dat a jejich tunelování mezi vaším zařízením a vzdáleným serverem. Datový provoz tak nemůže snadno odposlechnout poskytovatel internetu ani útočník na veřejné Wi-Fi síti. Toho lze do určité míry využít k anonymizaci přenosů. V zemích či sítích s cenzurou zase obejdete blokované adresy.
+Je však důležité si uvědomit, že VPN neznamená absolutní anonymitu. Poskytovatel VPN může také zaznamenávat aktivitu uživatelů, proto je zásadní vybírat důvěryhodné služby s transparentní politikou uchovávání dat (tzv. zero-log policy). Kromě toho vás mohou identifikovat i jiné faktory, například přihlášení do osobních účtů, cookies nebo otisky prohlížeče (fingerprinting).
+V pokračování pro předplatitele také najdete
+Jaké jsou hlavní důvody pro používání VPN
+Které protokoly VPN existují a které vybrat pro jaké účely
+Na co dá pozor u bezplatných VPN a které doporučujeme
+Jak se od sebe liší nejpoužívanější komerční VPN
+Chci Premium a Živě.cz bez reklam
+Od 58 Kč měsíčně

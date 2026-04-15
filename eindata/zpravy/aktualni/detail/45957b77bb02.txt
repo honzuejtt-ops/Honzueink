@@ -1,0 +1,3 @@
+OpenAI updates the Agents SDK with native sandbox execution and a model-native harness, helping developers build secure, long-running agents across files and tools.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

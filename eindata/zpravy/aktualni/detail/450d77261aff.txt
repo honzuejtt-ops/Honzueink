@@ -1,0 +1,9 @@
+Existuje nespočet herních klientů, u nichž si během chvíle můžete zakoupit digitální hry, ale jen málo z nich se může pyšnit obrovskou knihovnou titulů jako právě Steam. Ten mimo jiné exceluje i skvělým zákaznickým servisem, který se za chvíli rozšíří o další, velmi příjemnou novinku.
+Steam vám pohlídá cenu her
+Většina hráčů nakupuje hry výhradně ve slevách, protože při nich můžete ušetřit tisíce korun, protože ta by jinak v nejdražší Gold nebo Ultimate edici stála klidně 3 000 Kč. Ne každý může držet krok s harmonogramem slevových akcí, a tak přijde vhod ukazatel ceny za posledních 30 dnů.
+Na tom nyní pracuje Steam, což vyzradil web SteamDB, který analyzuje úpravy kódu platformy. Díky tomu víme, na čem Valve pracuje s velkým předstihem. Pokud se dočkáme implementace, uvidíte u každé hry cenu za posledních 30 dnů a můžete se tak dozvědět, zda se vyplatí počkat na slevu.
+Tato funkce už dlouhou dobu existuje právě na webu SteamDB, je tedy možné, že se Valve inspirovalo. Řešení třetí strany jde však o dost dál, protože můžete vidět historii cen her od jejího vydání až po současnost, a to v rámci většiny světových měn. O této možnosti ale ví jen malé procento hráčů.
+Vývoj AI chatbota
+Valve dokonce pracuje i na nástroji s interním označením SteamGPT, což by měl být AI rádce v rámci systému zákaznické podpory. Díky němu se může razantně zrychlit odbavení jednotlivých případů nebo refundací. Komplexnější problémy bude stále řešit člověk, takže nejde o bezhlavou implementaci AI s cílem ušetřit na zaměstnancích.
+Historie cen a interní chatbot jsou ve vývoji stále na začátku, ale už v blízké budoucnosti by Steam mohl integrovat nástroj na predikci FPS v rámci konkrétního hardwaru. Uvidíte tak, jak dobře vám poběží vybraná hra bez nutnosti spoléhat na YouTube videa.
+Zdroj: NotebookCheck, TechPowerUp

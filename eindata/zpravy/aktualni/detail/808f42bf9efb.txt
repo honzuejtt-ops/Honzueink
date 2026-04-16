@@ -1,0 +1,28 @@
+Jak poznáte starý telefon? Podle toho, že už nedostává aktualizace softwaru a ani po vizuální stránce už to nemusí „být ono“. Jak poznáte opravdu starý telefon? Třeba podle toho, že s ním odmítají spolupracovat aplikace, které jste až dosud běžně používali. Příkladem může být WhatsApp, který oznámil, že od letošního září bude jako minimální verzi vyžadovat Android 6.0 Marshmallow. Podpora starších verzí systému tím skončí.
+Když přijdete o podporu u komunikačních aplikací kvůli staré verzi Androidu, ještě nic není ztraceno. Některé aplikace nabízí ořezanou verzi nebo můžete používat webovou aplikaci
+Konkrétně jde o Android 5.x – hodně zastaralou verzi systému, která byla pro smartphony zpřístupněna už v roce 2014. WhatsApp tak krátce po startu nového školního roku začne vyžadovat o generaci novější verzi Androidu. Proč? Především kvůli moderním funkcím a zabezpečení. Staré telefony samy o sobě nedostávají aktualizace a trpí značně „děravým“ systémem, který postrádá moderní softwarové nástroje známé z vyšších verzí Androidu. Vývojářům se nevyplatí chybějící části kódu pro staré verze systému dopisovat ručně, a tak postupně zvedají minimální laťku.
+11 let starý Android už je opravdu starý
+Nehledě na to, že udržovat stabilní komunikační aplikaci na deset let starém hardwaru je pro vývojáře doslova noční můra. Především proto, že dnešní nároky na volnou operační paměť a výkon jsou úplně jinde. A tím, že aplikace přestane fungovat na starších verzích Androidu, vývojáři vlastně udělají službu všem ostatním uživatelům: jejich verze aplikace bude zase o něco modernější a bezpečnější.
+WhatsApp zvedá minimální laťku. Od září bude vyžadovat v mobilu alespoň Android 6.0 Marshmallow
+Používá ještě někdo 11 let starý Android? Ano, používá. Nepůjde o velká čísla, přesto se nemůžeme orientovat pouze podle statistik Googlu o tržním podílu jednotlivých verzí. Ty totiž měří zastoupení verzí systému na základě přístupů do Google Play – a právě zde se klidně může jednat o uživatele, kteří od telefonu nic extra nepotřebují, aplikace neinstalují a i po letech jim stávající přístroj (možná už s druhou vyměněnou baterií) na volání stačí.
+Meseenger.com končí
+Ke 14. dubnu 2026 skončilo i webové rozhraní Messenger.com, veškeré zprávy jsou dostupné na webovém rozhraní Facebooku. Mobilní aplikace Messenger se žádná změna nedotkla, a pokud nepoužíváte Facebook, je jedinou komunikační možností právě mobilní aplikace.
+WhatsApp uživatelům s předstihem zasílá zprávy o tom, že podpora jejich verze systému brzy skončí. Signal a Telegram zase zobrazují červenou informační lištu nebo vyskakovací okno, a to 30 dní před ukončením podpory. Poté na telefon přestanou chodit aktualizace a časem už ani aplikaci možná nespustíte. To vás tak vlastně donutí k tomu, abyste stávající telefon konečně vyměnili za novější. Nebo ne?
+Lite a webové aplikace
+Některé komunikační aplikace nabízejí i odlehčené verze (označované jako Lite), na které se základní omezení verzí systému nevztahuje. Typicky jde o Facebook Lite, Telegram X (alternativní klient postavený na jiném základu), Instagram Lite (není dostupný v Evropě) a TikTok Lite. Jedná se o aplikace navržené pro starší nebo méně výkonný hardware. Další možností, která je ale spíše nouzová, je nahradit aplikaci webovou verzí – za předpokladu, že webový prohlížeč v telefonu stále funguje a dosahuje alespoň přijatelné rychlosti.
+Webovou stránku si přidáte na plochu jako aplikaci, ale nezabírá žádné místo a neběží a pozadí. Musíte však překousnout chybějící upozornění v reálném čase. V obou případech by to však mělo být jen dočasné řešení. Tak starý Android dnes nedostává žádné aktualizace a jeho každodenní používání může už tak představovat závažné bezpečnostní riziko.
+Minimální verze Androidu u komunikačních aplikací:
+- KakaoTalk – Android 11 (od 13. dubna 2026)
+- Instagram – Android 9.0
+- TikTok – Android 9.0
+- Discord – Android 7.0
+- Facebook – Android 6.0
+- Messenger – Android 6.0
+- Telegram – Android 6.0
+- Signal – Android 6.0
+- Viber – Android 6.0
+- Skype – Android 6.0
+- WhatsApp – Android 6.0 (od 8. září 2026)
+- Snapchat – Android 5.1
+Pokud se podíváme na průřez komunikačními aplikacemi, minimální požadovaná verze systému se u jednotlivých z nich liší. Na Androidu 5.1 Lollipop ještě může běžet Snapchat, řada dalších aplikací pak vyžaduje Android 6.0. Nejnáročnější jsou aplikace od Mety (Facebook, Messenger, Instagram), které sice fungují už od Androidu 6.0, pro plnou funkčnost a stabilitu často potřebují minimálně Android 9.0.
+Naopak WhatsApp je relativně benevolentní, až do září poběží na téměř 12 let starých Androidech.

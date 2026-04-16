@@ -1,0 +1,44 @@
+Microsoft uvolnil dubnové aktualizace pro Windows, které se instalují povinně. V rámci tzv. záplatovacího úterý opravil 165 dílčích zranitelných míst a některé se týkají dalších produktů jako Office nebo platformy .NET.
+Windows 11 25H2 a 24H2 opět čeká balík různých vylepšení, optimalizací a oprav. Většina novinek je aktivována postupně. Následující výčet neobsahuje rutinní opravy.
+Obecné novinky
+- Inteligentní řízení aplikací (Smart App Control) lze zapnout, aniž byste museli provést čistou instalaci Windows.
+- Psaní hlasem podporuje přejmenovávání souborů v Průzkumníku.
+- Předčítání podporuje generování popisků obrázků pomocí Copilotu na všech počítačích. Dříve to šlo jen na strojích Copilot+.
+- Štítkování programů pro režim Application Control for Business je přesnější a spolehlivější.
+Uživatelské prostředí
+- Struktura stránky Nastavení | Systém | O systému byla upravena pro lepší přehlednost. Je na ní také odkaz do správy úložiště.
+- Karty s informacemi o hardwaru na domovské stránce Nastavení jsou jednodušší a odpovídají zmíněné sekci O systému.
+- Z předplatného Microsoft 365 je možné přejít na jiný tarif na stránce Nastavení | Účty. Tuto nabídku skryjete, když vypnete zobrazování doporučeného obsahu v Nastavení.
+- Dialogy v Nastavení | Účty | Jiní uživatelé byly přepracovány, aby vizuálně odpovídaly stylu Windows 11 a podporovaly tmavý režim zobrazení.
+Původní podoba dialogu Změnit typ účtu je poděděná po předchozích verzích Windows
+- Nastavení digitálního pera je modernější a čistší. Tlačítko na peru pak může simulovat stisk klávesy Copilot.
+- Položky v seznamu oprávnění přístupu ke složkám seřadíte podle objektu zabezpečení.
+- Byla odstraněna zbytečná chybová zpráva, která se mohla zobrazit v průběhu ověřování integrity systému (sfc /scannow).
+Technické změny
+- Monitory mohou hlásit obnovovací frekvenci vyšší než 1000 Hz.
+- Když obrazovka používá nativní připojení USB4, řadič USB může přejít do nejnižšího režimu odběru energie při uspání počítače. Pro notebooky to znamená pomalejší vyčerpání akumulátoru.
+- Zlepšila se spolehlivost čtení otisků prstů na některých zařízeních.
+- Zlepšila se spolehlivost načtení součástí hlavního panelu v nouzovém režimu.
+- Zlepšila se spolehlivost automatického otočení obrazu po probuzení počítače z režimu spánku.
+- Použití režimu HDR je spolehlivější, když obrazovka používá nestandardní informační bloky DisplayID 2.0.
+- Obrazovky podporující DisplayID přesněji hlásí velikost při použití API WMI.
+- Zlepšil se výkon načtení domovské stránky Nastavení.
+Teď už i tyto dialogy odpovídají stylu Windows 11
+- Zlepšila se spolehlivost stažení aktualizací, když vás k tomu systém vyzve při prohlížení Nastavení | Systém | Upřesnit.
+- Zlepšila se spolehlivost odblokování souborů stažených z internetu, aby Průzkumník mohl zobrazit jejich náhled.
+- Zlepšila se spolehlivost použití vlastního rozložení nabídky Start pomocí zásad skupiny, když soubor JSON obsahuje odkazy desktopAppLink.
+- Příkaz Set-RDSessionCollectionConfiguration pro PowerShell rozpoznává parametr DisableSeamlessLanguageBar.
+- Zlepšily se detekce a zápis čísel při použití hlasového ovládání v angličtině.
+- Zlepšila se spolehlivost nastavení a použití přirozených jazyků v Předčítání.
+- Zlepšily se stabilita a výkon použití aplikací typu x64 na počítačích architektury Arm, když běží ve Windows RE.
+- Zlepšilo se zpracování krátkých zpráv MIDI v případech, kdy byla aplikace spuštěna bez poskytnutí mezipaměti pro dlouhé zprávy.
+- Minimálním požadavkem pro použití sdílené tiskárny jsou nyní Windows 10 v1607 a Windows Server 2016.
+- Při použití Windows Update Standalone Installer mohla instalace ve specifických případech skončit chybou ERROR_BAD_PATHNAME. Tato chyba by se už neměla objevovat.
+Také březnová aktualizace přinesla spoustu technických vylepšení, aby různé části systému zrychlily nebo pracovaly spolehlivěji. Jejich přehled si můžete připomenout ve starším článku.
+Microsoft nedávno slíbil, že běžně bude pro instalaci aktualizací stačit jeden restart měsíčně
+Dubnové aktualizace pro Windows
+Následující servisní aktualizace vyšly 14. dubna 2026:
+- KB5083768 pro Windows 11 verze 26H1 (sestavení 28000.1836),
+- KB5083769 pro Windows 11 verze 24H2 a 25H2 (sestavení 26100.8246 a 26200.8246),
+- KB5082200 (ESU) pro Windows 10 verze 22H2 (sestavení 19045.7184).
+Microsoft shrnuje poslední změny ve Windows 11:

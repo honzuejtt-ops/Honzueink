@@ -1,6 +1,7 @@
 Co je VPN a jak funguje
-Zkratka VPN znamená Virtual Private Network, tedy soukromá virtuální síť. Nad různými technologiemi datového spojení si zkrátka vytvoříte vlastní šifrovanou zabezpečenou síť. Nejčastěji ji využívají firmy. Pokud se zaměstnanec na cestách potřebuje připojit k prostředkům ve vnitřní síti, ať už databázím či souborům, VPN mu zajistí bezpečné propojení do této uzavřené firemní sítě.
-Obdobným způsobem se pokročilí uživatelé mohou z terénu přihlašovat do jinak izolované domácí sítě a přistupovat k souborům na NASu, spravovat chytrou domácnost či dělat jiné činnosti, které by jinak vyžadovaly fyzickou přítomnost.
+Zkratka VPN znamená Virtual Private Network, tedy soukromá virtuální síť. Nad různými technologiemi datového spojení si zkrátka vytvoříte vlastní šifrovanou zabezpečenou síť.
+Nejčastěji ji využívají firmy. Pokud se zaměstnanec na cestách potřebuje připojit k prostředkům ve vnitřní síti, ať už databázím či souborům, VPN mu zajistí bezpečné propojení do této uzavřené firemní sítě. Tomuto použití se ale tento článek nevěnuje, budou nás v něm zajímat služby pro běžné uživatele.
+Ti pokročilí se ale i s nimi mohou z terénu přihlašovat do jinak izolované domácí sítě a přistupovat k souborům na NASu, spravovat chytrou domácnost či dělat jiné činnosti, které by jinak vyžadovaly fyzickou přítomnost.
 Díky tomu, že VPN skryjí původní IP adresu, bývají velmi často využívány pro virtuální změnu země, odkud se uživatel k internetové službě připojuje. Hodí se tedy především pro obcházení geoblockingu. Typické je například blokování filmů a seriálů streamovacími platformami (např. Netflix) pouze pro určité země, kdy vhodně zvolený VPN server toto omezení obejde. Nebo když není nějaká služba zatím dostupná v EU, případně když cestujete a chcete přistupovat k českým službám nefungujícím v zahraničí.
 Redakce doporučuje
 - Výborné rychlosti, důvěryhodné provozovatele a aplikace v češtině nabízí ProtonVPN

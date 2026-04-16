@@ -1,0 +1,17 @@
+Nedávný let čtyřčlenné posádky okolo Měsíce sice bezesporu vstoupí do dějin kosmonautiky, ale co naplat, když se rozburácí motory Starshipu, doposud to k obrazovkám vždy přitáhlo ještě o něco více diváků.
+Největší raketa všech dob se totiž vymyká nejen svou tonáží, ale i vzhledem.
+Sovětský Starship
+V celé historii letů do vesmíru mu vlastně může konkurovat snad jen jediné monstrum. Dílem i proto, že se už nikdy nedozvíme, jestli by vůbec fungovalo.
+Srovnání amerických a sovětských lunárních raket Saturn V a N1
+Řeč je samozřejmě o sovětském projektu třístupňové lunární rakety N1 z 60. let minulého století. Byla sice o píď kratší než americký Saturn V pro mise Apollo, první stupeň s třiceti motory NK-15 na petrolej a kyslík (RP1+LOX) o průměru dobrých sedmnácti metrů ale skutečně připomíná současný Starship. Jeho první stupeň Super Heavy jich má dokonce 33 (metan+LOX).
+N1 působí na historických fotografiích poměrně impozantně i z toho důvodu, že díky otevřeným spojům mezi stupni vypadá opravdu jako byste na sebe postavili několik různých raket.
+Desítky motorů ukočíroval až SpaceX
+Počet motorů ale nakonec přispěl i ke zkáze rakety, která se stala černou dírou sovětských konstruktérů a účetních. Na rozdíl od SpaceX totiž tehdy neměla Moskva k dispozici současné superpočítače a široké možnosti letové simulace a nesmírně komplikované synchronizace všech trysek.
+Někdejší sen slavného stavitele raket Sergeje Koroljova proto pokaždé skončil v plamenech. Moskva se v letech 1969-1972 pokusila vystřelit raketu celkem čtyřikrát, start nicméně pokaždé skončil kolosálním neúspěchem.
+Při druhém odpalu, 3. července 1969, došlo krátce po startu k poškození jednoho z čerpadel prvního stupně, palubní počítač Kontrol Raketnych Dvigatělej, postupně vypnul 29/30 motorů, a tak raketa vystoupala do výšky pouhých 200 metrů.
+Poté se N1 zřítila zpět na rampu a plné nádrže kerosinu a tekutého kyslíku explodovaly v ohnivé kouli, která se zapsala mezi nejsilnější nejaderné detonace v dějinách.
+Staré snímky obarvila AI
+V posledních dnech se na sociálních sítích objevily nové dobové fotografie N1 z roku 1969 od konstruktérů TsKBEM (dnes nejspíše pomalu bankrotující Energia).
+A protože dnes umí AI staré fotky obarvovat, prohlédněte si některé z nich od komunity i od nás.
+Na základní obarvování stačí Google Gemini
+Pomohl běžně dostupný chatbot Gemini a jeho obrázkový generátor Nano Banana. Fotky najdete v galerii v úvodu článku. Fotografie jsou pouze obarvené, ořezané a mírně zaostřené. V žádném případě nedošlo ke generativním destruktivním úpravám, které by si vymýšlely, co na předloze vůbec nebylo.

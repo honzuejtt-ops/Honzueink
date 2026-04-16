@@ -1,4 +1,142 @@
-|T|New ways to create personalized images in the Gemini app|D|16.04.2026 16:00|P|Example images made with Personal Intelligence|X|New ways to create personalized images in the Gemini app
+|T|T-Mobile pokryl další venkovská sídla mobilní 5G sítí. Doba výstavby se zkrátila na polovinu|D|16.04.2026 18:45|P||X|T-Mobile pokračuje v pokrývání tzv. „bílých míst“ – odlehlých oblastí v Česku, které mají špatný nebo zcela chybějící signál mobilních sítí. Jedná se o lokality s malou hustotou osídlení, které by se operátorům ekonomicky nevyplatilo pokrývat z vlastních zdrojů, a tak využívají rozvojového projektu Ministerstva průmyslu a obchodu, který je spolufinancován Evropskou unií.
+Pokrytí v lolalitě Vidoň zajistil příhradový stožár
+Díky této podpoře operátor postupně pokryje 5G sítí celkem 10 lokalit napříč celou zemí. Projekt se zaměřuje na vybudování pasivní infrastruktury základnových stanic. Ty umožní následné zajištění pokrytí 5G signálem v investičně náročných lokalitách na venkově. Cílem projektu je zlepšit kvalitu života, podpořit hospodářský rozvoj a zaměstnanost v odlehlých nebo málo osídlených lokalitách. Česko musí garantovat dokončení pokrytí do června 2026.
+Snazší povolování staveb
+Aktuálně má T-Mobile v rámci tohoto projektu připravené tři lokality z celkových deseti. Po Sudicích na Vysočině a Borku v Karlovarském kraji spouští pokrytí ve Vidoni na Královéhradecku. Realizaci zde předcházela intenzivní debata přímo se zástupci obce o potřebě lepšího pokrytí, která nakonec vyústila v úspěšné dokončení projektu.
+Pokrytí v lokalitě Sudice
+Operátorovi usnadnila výstavbu i pozměněná legislativa, která odbourala zdlouhavou administrativu spojenou s povolováním staveb u vysílačů do výšky 50 metrů. Místo dříve běžných tří až čtyř let dokáže dnes operátor realizovat výstavbu vysílače zhruba za rok a půl. Přesto operátor podle svých slov v některých lokalitách při výstavbě naráží na překážky, mnohdy i ze strany samotných rezidentů.
+Uvedená výzva je součástí většího pětiletého projektu, jehož cílem je pokrýt a dokrýt mobilním signálem celé území Česka včetně posílení silničních a železničních koridorů. Mobilní operátoři si v rámci projektu mohou pro výstavbu nových vysílačů vybírat ze seznamu celkem 1610 základních sídelních jednotek, jejichž seznam průběžně aktualizuje Český telekomunikační úřad (ČTÚ). Úřad v rámci projektu rovněž operátorům uložil tzv. licenční povinnost. Pokrývání bílých míst je tak pro operátory zároveň podmínkou pro získání prodloužené licence na používání vybraného frekvenčního spektra.
+Zdroje a další informace: TZ T-Mobile|E||T|Vivo X300 Ultra je v prodeji. Při nákupu profesionální fotosady můžete získat bonusy za více než 13 tisíc|D|16.04.2026 17:45|P||X|Vivo dnes na českém trhu začalo prodávat svůj špičkový fotomobil Vivo X300 Ultra. Smartphone se zaměřuje na fotografování a profesionální natáčení videa, ale zároveň obsahuje hardware, který jej řadí mezi nejlépe vybavené telefony současnosti. V prodeji je buď samostatný telefon v černé nebo zelené barvě za 46 999 Kč, nebo jako profesionální balíček s rozšiřujícím teleobjektivem a dalším příslušenstvím za 56 999 Kč.
+Společnost vivo dnes uvádí na český trh očekávanou novinku vivo X300 Ultra. Vrcholný model nabídky přináší špičkové technologie napříč zařízením. Fotovýbavě vévodí 200 MP teleobjektiv s 1/1.4“ snímačem. Výpočetní výkon zajišťuje čipset Snapdragon 8 Elite Gen 5. O výdrž se stará baterie s kapacitou 6600 mAh a podporou rychlého 100W nabíjení FlashCharge.
+Co obsahuje profesionální sada:
+- telefon Vivo X300 Ultra
+- rychlý nabíjecí adaptér 100W FlashCharge
+- telekonvertor ZEISS 400mm Telephoto Extender Gen 2 Ultra
+- rukojeť Grip Kit (s krytem, upevňovacími kroužky a poutkem)
+- úchyt na stativ Tripod Collar Ring
+Bonus na českém e-shopu Vivo a u vybraných partnerů:
+- 50% sleva: Sada s klecí Vivo SmallRig Pro Video Rig Kit (běžně 9999 Kč)
+- 50% sleva: Kožená brašna Photokit Leather Bag (běžně 2499 Kč)
+- výkupní bonus za starý telefon až 7000 Kč
+Zdroj: Vivo
+V období od 16. dubna do 31. května 2026 (nebo do vyprodání zásob) platí zaváděcí nabídka, v rámci které zákazníci při koupi profesionálního balíčku s telefonem získají navíc slevu 50 % na klecový úchyt Cinematic Video Kit, koženou brašnu a výkupní bonus na starý telefon až 7000 Kč.
+Součástí nabídky je vždy prodloužená záruka na 3 roky, pětiletá záruka na baterii a bezplatná ochrana displeje. V rámci této akce lze požádat o jednorázovou bezplatnou výměnu displeje do 12 měsíců od nákupu. Nabídka platí pouze pro zařízení Vivo X300 Ultra zakoupené ve výše uvedeném období z oficiální distribuce Vivo Česká republika –nelze ji uplatnit na výrobky dovezené z jiných zemí.
+Technické parametry
+Zdroje a další informace: TZ Vivo|E||T|A new way to explore the web with AI Mode in Chrome|D|16.04.2026 17:00|P|AI Mode in Chrome|X|A new way to explore the web with AI Mode in Chrome
+Finding information online can often feel like a constant game of “tab hopping.” You start searching in one tab, then open another to follow a specific idea or topic. Then you have to switch back to Search to keep your train of thought going.
+Our new Search experience in Chrome can change that. Today’s upgrades for AI Mode in Chrome make it easier to access and engage with content and dive deeper into what you find — all without losing your place or needing to switch tabs. It’s a more fluid way to discover and learn from the vast range of perspectives across the web.
+Introducing a better way to explore the web
+Now, when you're using AI Mode on Chrome desktop, clicking a link opens the webpage side-by-side with AI Mode. This makes it much easier to visit relevant websites, compare details and ask follow-up questions while still maintaining the context of your search.
+Let’s say you’re shopping for a coffee maker that fits in your cozy apartment and can make lattes. Just head to AI Mode in Search, describe what you’re looking for and you’ll get a range of options that fit your criteria. See a model you like? Open the retailer’s site alongside AI Mode and ask specific questions, like, "How easy is this to clean?" Using context from the page and from across the web, AI Mode will share the insights you’re looking for, helping you make an informed decision with ease.
+Or, perhaps you want to learn about the different McLaren Racing teams and how their pit crews train. With AI Mode in Chrome, you can easily explore related pages, like McLaren Racing’s official site, without breaking your flow. AI Mode is ready to handle your follow-up questions in real-time, creating a fluid process that helps you better digest each site you visit and uncover the next page to explore.
+Our early testers loved that they didn’t have to constantly switch tabs to get help with a comprehensive article or a long video. And they found that having both Search and the web side-by-side helped them stay focused on their tasks while exploring useful web pages.
+Search across your recent tabs and more
+We’re also making it possible to search across the Chrome tabs you’re already exploring. On Chrome desktop or mobile, you can tap the new “plus” menu in the search box on the New Tab page (or the existing plus menu within AI Mode) to select recent tabs and add them to your search. You aren't limited to one type of input, either: you can now mix and match multiple tabs, images or files (like PDFs) and bring that context into your AI Mode searches.
+Maybe you’re researching local hiking trails and have several related sites open already. You can add those tabs to your search and ask for similar kid-friendly trails in a different location.
+Or, if you’re studying for a statistics midterm, you can bring in context from open tabs with your class notes, lecture slides and academic papers and ask for more examples to illustrate a tricky concept. AI Mode will use those tabs to provide a tailored response and suggest more sites to explore.
+Finally, powerful tools in AI Mode, like Canvas or image creation, are accessible wherever you see the new plus menu in Chrome.
+All of today’s updates are now available in the U.S., and we’ll expand soon to more places around the world.|E||T|Vybíráme nejlepší fotomobily současnosti. Tohle si kupte místo foťáku|D|16.04.2026 16:45|P|Smartphony válcují nejen levné, ale už i pokročilé kompakty • Vlajkové modely jsou skoro jistota, dobře fotí ale i levnější přístroje • Po kterých fot...|X|Ačkoli s mobilem neuděláte stejnou fotografii jako s digitální zrcadlovkou nebo bezzrcadlovkou, přítomnost dvou a více fotojednotek ve smartphonu nabízí široké možnosti použití.
+Proč pro fotografování pořizovat smartphone?
+- Nechcete s sebou nosit další samostatné zařízení
+- Potřebujete mít fotoaparát vždy po ruce
+- Často sdílíte fotografie na sociálních sítích
+- Není pro vás důležité dlouhé ohnisko pro sportovní a wildlife fotografii
+- Nemáte problém s vyšší cenou, která leckdy překročí cenu základní bezzrcadlovky
+Pro výběr nejlepších fotomobilů jsme využili naše zkušenosti, které máme z testování smartphonů pro MobilManii, ale také časopis Computer.
+Samsung Galaxy S26 Ultra
+Více ohnisek, prosím!
+Samsung pro vlajkovou loď Galaxy S26 Ultra opět zvolil hned dvojici foťáků s teleobjektivy. V tomto přístupu se osamostatňuje, konkurence už má typicky jen jeden teleobjektiv. První z teleobjektivů má poměrně standardní přepočtené ohnisko 67 mm. Ten druhý má ovšem ohnisko 111 mm, což odpovídá skoro 5× optickému zoomu oproti hlavnímu foťáku. To je velmi univerzální řešení, jeden teleobjektiv slouží pro portréty, zatímco druhým můžete přiblížit třeba hory v dálce. Oproti předchůdci nevidíme změny.
+V českých obchodech stojí až Kč
+Porovnat ceny
+Co se týče fotografické výbavy, Samsung začíná s 200Mpx snímačem u hlavního foťáku. Ten je pochopitelně stabilizovaný, má standardní ohnisko a skvělou (mezigeneračně vylepšenou) světelnost F1,4. Ultraširokáč je opět 50Mpx s 13mm přepočteným ohniskem. První foťák s teleobjektivem má ohnisko zmíněných 67 mm, stabilizaci, světelnost F2,4 s menším 10Mpx 1/3,94" snímačem. Druhý má delší 111mm ohnisko, světelnost F2,9, ale větší, 50Mpx a stabilizovaný snímač. Parametry jsou velmi podobné jako u předloňského Galaxy S24 Ultra, takže pokud chcete ušetřit, i starší model je na focení velmi dobrý.
+V praxi je Samsung Galaxy S26 Ultra velmi univerzální, má skvělé video či hodně ohnisek, postupně jde o 13, 24, 67 a 111 mm, přičemž některé mezikroky lze dopočítat bez výrazné ztráty kvality. I když zde mluvíme především o focení, Samsung má opravdu skvělé video bez sebemenších chyb, zatímco konkurence v tomto ohledu není bezchybná.
+Vybrané parametry pro fotografování:
+- snímač: 200 Mpx, 4 objektivy
+- světelnost: F1,4
+- video: 8K 30 fps / 4K 120 fps
+- samostatná spoušť: ne
+- blesk: ano
+- stabilizace: optická pro hlavní foťák a oba teleobjektivy
+Pokračování 2 / 16
+Apple iPhone 17 Pro
+S vylepšeným teleobjektivem
+Největší novinkou ve fotovýbavě telefonu Apple iPhonu 17 Pro je přepracovaný foťák s teleobjektivem. Ten má nově 48Mpx namísto 12Mpx snímače, také větší plochu a očekávejte celkově lepší obrazovou kvalitu. Apple navíc snížil délku optického zoomu, nové přepočtené ohnisko 100 mm je zkrácené ze 120 mm. Díky tomu je univerzálnější. Větší zoom telefon řeší skrze digitální přiblížení, které je ale díky vyššímu rozlišení lepší. Můžeme tedy mluvit o kroku vpřed.
+V českých obchodech stojí až Kč
+Porovnat ceny
+Jako hlavní snímač stále poslouží stabilizovaný 48Mpx čip o velikosti 1/1,28" a s 24mm ohniskem a světelností F1,6. Ultraširokáč je taktéž 48Mpx, má ohnisko 13 mm a světelnost F2,2. Již zmíněný foťák s teleobjektivem má také rozlišení 48 Mpx, teleobjektiv má periskopickou konstrukci, 100mm ohnisko a speciální pokročilou stabilizaci obrazu.
+Jak už u Applu bývá zvykem, tak i iPhone 17 Pro (Max) excelují při focení i nahrávání videa. Mají mnoho dalších užitečných funkcí jako ostření pomocí Lidaru, záznam pro ProRes (RAW) a mnoho dalšího, co pomůže nadšencům i zkušeným fotografům.
+Vybrané parametry pro fotografování:
+- fotoaparát: 48Mpx, 3 objektivy
+- světelnost F1,6
+- video: 4K 120 fps
+- samostatná spoušť: ano
+- blesk: LED
+- stabilizace: na hlavním foťáku a foťáku s teleobjektivem
+Pokračování 3 / 16
+Xiaomi 17 Ultra
+Dokupte mu fotosadu
+Xiaomi se svou vlajkovým modelem dlouhodobě bojuje o přední příčky na žebříčku nejlepších fotomobilů. Výrobce u novinky Xiaomi 17 Ultra vyměnil dva teleobjektivy za jeden s optickým zoomem v rozsahu ohnisek 75–100 mm. Oproti konkurenci tak má několik výhod – vedle zoomu na teleobjektivu to je zachování velkého jednopalcového snímače na hlavním foťáku (ten dostal novější snímač) nebo dokoupitelná fotografická sada zahrnující grip s tlačítkem spouště a dodatečnou baterií.
+V českých obchodech stojí až Kč
+Porovnat ceny
+Xiaomi 17 Ultra nabídne 50Mpx snímač jednopalcového typu s vysokou světelností F1,7 a pochopitelně s OIS. Jako ultraširokáč poslouží také 50Mpx snímač s přepočteným ohniskem 14 mm a světelností F2,2. Foťák s teleobjektivem má 200Mpx snímač o velikosti 1/1,4", ohnisko 75 až 100 mm i OIS. Na předchozích generacích jsme mohli vidět dva teleobjektivy, jeden s ohniskem 70 mm a druhý s 100 mm, takže tady to je pokryté jediným kvalitním foťákem.
+Jedná se tedy o skvělého univerzála pro různé situace, nabídne kvalitní pokrytí pro focení od širokoúhlých scén až po možnost přiblížení vzdálených objektů. Navíc má i povedený digitální zoom. To doplňuje laserové ostření, spousta dalších vychytávek a zmíněná fotografická sada.
+Vybrané parametry pro fotografování:
+- fotoaparát: 50 Mpx, 3 objektivy
+- světelnost: F1,7
+- video: 8K 30 fps / 4K 120 fps
+- samostatná spoušť: má po zakoupení foto sady
+- blesk: diodový
+- stabilizace: optická u hlavního foťáku a teleobjektivu
+Pokračování 4 / 16
+Vivo X300 Pro
+Očaruje i profesionála
+Podobně jako u několika posledních generací, i tentokrát je zde velkou předností možnost fotit za minimálního osvětlení. Výrobce přidává ale i další bonusy. Vivo X300 Pro má nejen skvělý noční režim, ale nově se s ním intuitivněji fotí, kvalita fotek se aspoň trošku posunula ve všech ohledech a přibyla dokoupitelná sada fotografického příslušenství.
+V českých obchodech stojí až Kč
+Porovnat ceny
+První tajemství kvality fotek Viva tkví v použití velkých snímačů a vysoké světelnosti. Hlavní snímač má 1/1,28", přepočtené ohnisko 24 mm a nechybí optická stabilizace obrazu. 200Mpx foťák s teleobjektivem a periskopickou konstrukcí nabízí mírně delší ohnisko 85 mm. Ultraširokáč má solidní 50Mpx snímač a přepočtené 15mm ohnisko. Parametry tedy znějí podobně jako u minulé či předminulé generace.
+U nového telefonu z konce roku 2025 se skvělé podařilo odladit zpracování fotek. Při reálném nasazení je optický výstup Viva velmi přirozený, jemný i detailní. Má minimum vad na všech foťácích a výrobce v noci vždy odvede lepší práci než konkurence. K tomu je focení intuitivní a chová se podobně jako profesionální foťáky. Vivo navíc nabízí doukoupitelné vybavení jako grip pro lepší úchop s dodatečnými tlačítky a externí teleobjektiv s ohniskem 200 mm a s opravdu nádhernou kresbou.
+Vybrané parametry pro fotografování:
+- snímač: 50 Mpx, 3 objektivy
+- světelnost: F1,6
+- video: až 8K 30 fps
+- samostatná spoušť: ne (na gripu)
+- blesk: třídiodový
+- stabilizace: optická pro hlavní foťák a foťák s teleobjektivem
+Pokračování 5 / 16
+Honor Magic8 Pro
+Na fotky s propracovanější AI
+Výrobci u fotomobilů různě experimentují. Příkladem je irisová clona, která se u telefonů objevuje a potom zase mizí – například u předchozího modelu byla, ale novější Honor Magic8 Pro už ji opět postrádá. Telefon se naopak se soustředí na lepší zpracování fotek i videí pomocí AI a dalších algoritmů. Mezigeneračně totiž kromě trošku jiných čoček moc změn v hardwaru nevidíme.
+V českých obchodech stojí až Kč
+Porovnat ceny
+Fotografická výbava zahrnuje hlavní foťák, ultraširokáč a foťák s teleobjektivem. Poslední jmenovaný nabídne oproti loňsku trošku prodloužené 85mm přepočtené ohnisko. Honor to mění už čtvrtým rokem po sobě a stále hledá ideál. Foťák má vysoké 200Mpx rozlišení, které udělá povedené fotky i s digitálním zoomem, samozřejmě má OIS. Hlavní snímač se oproti předešlému modelu nezměnil, má velikost 1/1,3", 50Mpx rozlišení a samozřejmě optickou stabilizaci obrazu. Chybí jen irisová clona a mezigeneračně se zhoršila světelnost na F2,6. I ultraširokáč má stále 50Mpx rozlišení, 12mm ohnisko a stabilizací podobně jako konkurence nedisponuje.
+Honor má velmi dobrý mix foťáků, pokrývá častá ohniska a umí i vyšší (digitální) přiblížení díky vysokému rozlišení na foťáku s teleobjektivem. Opět se hodně spoléhá na AI, což lze zpozorovat zejména v situacích s nízkou hladinou osvětlení. V takových případech dokáže napravit to, co opticky nezvládne vykreslit, a AI vylepšení si často vede až překvapivě dobře.
+Vybrané parametry pro fotografování:
+- snímač: 50 Mpx, 3 objektivy
+- světelnost: F1,6
+- video: až 4K 120 fps
+- samostatná spoušť: ne
+- blesk: dvoudiodový
+- stabilizace: optická pro hlavní foťák a foťák s teleobjektivem
+Pokračování 6 / 16
+Motorola Signature
+Elegance a focení jdou dohromady
+Má aspiraci konkurovat vlajkovým lodím, ovšem s nižší cenou. Motorola Signature po hardwarové stránce nabízí téměř to nejlepší na trhu, přidává k tomu netradiční design, tenké tělo a zajímavé funkce. Nás budou především zajímat čtyři 50Mpx snímače.
+V českých obchodech stojí až Kč
+Porovnat ceny
+Základem fotomobilu je větší 1/1,28" 50Mpx snímač s ohniskem 23 mm, světelností F1,6 a optickou stabilizací obrazu. Dále je na řadě 50Mpx periskopický teleobjektiv s ohniskem 71 mm, optickou stabilizací a snímačem o velikosti 1/1,95". Další 50Mpx snímač s velikostí 1/2,76" je na ultraširokáči. Má 122° úhel záběru rovný 12mm ohnisku a světelnost F2,0. Čtvrtý a poslední 50Mpx snímač je zepředu v selfie kamerce.
+Motorola zde nejde za úplně špičkovým výkonem, ale snaží se hledat co nejmenší kompromisy, aby schopnosti vlajkových lodí nabídla za nižší ceny. Nečekejte tedy to úplně nejlepší, ale velmi dobrý poměr ceny a výkonu, který se u této novinky bude ještě zlepšovat, až zlevní podobně jako další již dříve představené špičkové fotomobily.
+Vybrané parametry pro fotografování:
+- snímač: 50 Mpx, 3 objektivy
+- světelnost: F1,6
+- video: 8K 30 fps / 4K 60 fps
+- samostatná spoušť: ne
+- blesk: diodový
+- stabilizace: optická u hlavního foťáku a teleobjektivu
+Pokračování 7 / 16
+Google Pixel 10 Pro
+AI hraje prim
+Mobily Pixel od Googlu již po několik g...
+(Pokracovani na webu)|E||T|New ways to create personalized images in the Gemini app|D|16.04.2026 16:00|P|Example images made with Personal Intelligence|X|New ways to create personalized images in the Gemini app
 Personal Intelligence makes the Gemini app feel tailored to you, not just a generic tool that works the same for everyone. Today, we’re introducing new ways for Gemini to use your interests and preferences with Nano Banana 2 and Google Photos to make image generation — one of your favorite ways to use Gemini — feel deeply personal. This lets you create unique images more easily, so you can spend more time creating and less time explaining.
 Powering your imagination
 One of the biggest hurdles in AI image generation is finding the right prompt. Previously, to get a result that felt truly personal, you had to write long, detailed descriptions and manually upload a reference photo just to give Gemini the right context.
@@ -221,23 +359,23 @@ Minimální verze Androidu u komunikačních aplikací:
 - WhatsApp – Android 6.0 (od 8. září 2026)
 - Snapchat – Android 5.1
 Pokud se podíváme na průřez komunikačními aplikacemi, minimální požadovaná verze systému se u jednotlivých z nich liší. Na Androidu 5.1 Lollipop ještě může běžet Snapchat, řada dalších aplikací pak vyžaduje Android 6.0. Nejnáročnější jsou aplikace od Mety (Facebook, Messenger, Instagram), které sice fungují už od Androidu 6.0, pro plnou funkčnost a stabilitu často potřebují minimálně Android 9.0.
-Naopak WhatsApp je relativně benevolentní, až do září poběží na téměř 12 let starých Androidech.|E||T|Takhle vypadal sovětský Starship. Připomíná sérii Red Alert a není divu, že pokaždé explodoval se sílou malé atomovky|D|16.04.2026 10:33|P|Nedávný let čtyřčlenné posádky okolo Měsíce sice bezesporu vstoupí do dějin kosmonautiky, ale co naplat, když se rozburácí motory Starshipu, doposud t...|X|Nedávný let čtyřčlenné posádky okolo Měsíce sice bezesporu vstoupí do dějin kosmonautiky, ale co naplat, když se rozburácí motory Starshipu, doposud to k obrazovkám vždy přitáhlo ještě o něco více diváků.
+Naopak WhatsApp je relativně benevolentní, až do září poběží na téměř 12 let starých Androidech.|E||T|Takhle vypadal sovětský Starship. Připomíná sérii Red Alert a není divu, že pokaždé explodoval se sílou malé atomovky|D|16.04.2026 10:33|P|Nedávný let čtyřčlenné posádky okolo Měsíce sice bezesporu vstoupí do dějin kosmonautiky, ale co naplat, když se rozburácejí motory Starshipu, doposud...|X|Nedávný let čtyřčlenné posádky okolo Měsíce sice bezesporu vstoupí do dějin kosmonautiky, ale co naplat, když se rozburácejí motory Starshipu, doposud to k obrazovkám vždy přitáhlo ještě o něco více diváků.
 Největší raketa všech dob se totiž vymyká nejen svou tonáží, ale i vzhledem.
 Sovětský Starship
-V celé historii letů do vesmíru mu vlastně může konkurovat snad jen jediné monstrum. Dílem i proto, že se už nikdy nedozvíme, jestli by vůbec fungovalo.
+V celé historii letů do vesmíru může Starshipu konkurovat snad jen jediné další a hodně podobné monstrum. Dílem i proto, že se už nikdy nedozvíme, jestli by nakonec vůbec fungovalo.
 Srovnání amerických a sovětských lunárních raket Saturn V a N1
-Řeč je samozřejmě o sovětském projektu třístupňové lunární rakety N1 z 60. let minulého století. Byla sice o píď kratší než americký Saturn V pro mise Apollo, první stupeň s třiceti motory NK-15 na petrolej a kyslík (RP1+LOX) o průměru dobrých sedmnácti metrů ale skutečně připomíná současný Starship. Jeho první stupeň Super Heavy jich má dokonce 33 (metan+LOX).
+Řeč je samozřejmě o sovětském projektu třístupňové lunární rakety N1 z 60. let minulého století. Byla sice o píď kratší než americký Saturn V pro mise Apollo, první stupeň s třiceti motory NK-15 na petrolej a kyslík (RP1+LOX) o průměru dobrých sedmnácti metrů ale skutečně připomíná současný Starship. Jeho první stupeň Super Heavy má dokonce ještě o tři motory více.
 N1 působí na historických fotografiích poměrně impozantně i z toho důvodu, že díky otevřeným spojům mezi stupni vypadá opravdu jako byste na sebe postavili několik různých raket.
-Desítky motorů ukočíroval až SpaceX
-Počet motorů ale nakonec přispěl i ke zkáze rakety, která se stala černou dírou sovětských konstruktérů a účetních. Na rozdíl od SpaceX totiž tehdy neměla Moskva k dispozici současné superpočítače a široké možnosti letové simulace a nesmírně komplikované synchronizace všech trysek.
-Někdejší sen slavného stavitele raket Sergeje Koroljova proto pokaždé skončil v plamenech. Moskva se v letech 1969-1972 pokusila vystřelit raketu celkem čtyřikrát, start nicméně pokaždé skončil kolosálním neúspěchem.
-Při druhém odpalu, 3. července 1969, došlo krátce po startu k poškození jednoho z čerpadel prvního stupně, palubní počítač Kontrol Raketnych Dvigatělej, postupně vypnul 29/30 motorů, a tak raketa vystoupala do výšky pouhých 200 metrů.
-Poté se N1 zřítila zpět na rampu a plné nádrže kerosinu a tekutého kyslíku explodovaly v ohnivé kouli, která se zapsala mezi nejsilnější nejaderné detonace v dějinách.
+Symfonii desítek motorů ukočíroval až SpaceX
+Počet motorů ale nakonec přispěl i ke zkáze rakety, která se stala černou dírou sovětských konstruktérů a účetních. Na rozdíl od SpaceX totiž tehdy Moskva neměla k dispozici současné superpočítače pro nesmírně složité simulace synchronizovaného hoření všech trysek naráz.
+Někdejší sen slavného stavitele raket Sergeje Koroljova proto pokaždé skončil v plamenech. Moskva se v letech 1969-1972 pokusila vystřelit raketu celkem čtyřikrát, start nicméně ve všech případech skončil kolosálním neúspěchem.
+Při druhém odpalu, 3. července 1969, došlo krátce po startu k poškození jednoho z čerpadel prvního stupně, palubní počítač Kontrol Raketnych Dvigatělej postupně vypnul 29 z 30 motorů, a tak raketa vystoupala do výšky pouhých 200 metrů.
+Poté se zřítila zpět na rampu a nádrže plné kerosinu a tekutého kyslíku explodovaly v ohnivé kouli, která se zapsala mezi ty nejsilnější nejaderné detonace v dějinách.
 Staré snímky obarvila AI
-V posledních dnech se na sociálních sítích objevily nové dobové fotografie N1 z roku 1969 od konstruktérů TsKBEM (dnes nejspíše pomalu bankrotující Energia).
-A protože dnes umí AI staré fotky obarvovat, prohlédněte si některé z nich od komunity i od nás.
+V posledních dnech se na sociálních sítích objevily nové dobové fotografie N1 z roku 1969 od raketových konstruktérů ze státní společnosti TsKBEM (dnes Energia).
+A protože současná AI umí staré fotky obarvovat, prohlédněte si některé z nich od komunity i od nás. Pomohl běžně dostupný chatbot Gemini a jeho obrázkový generátor Nano Banana. Fotky najdete v galerii v úvodu článku.
 Na základní obarvování stačí Google Gemini
-Pomohl běžně dostupný chatbot Gemini a jeho obrázkový generátor Nano Banana. Fotky najdete v galerii v úvodu článku. Fotografie jsou pouze obarvené, ořezané a mírně zaostřené. V žádném případě nedošlo ke generativním destruktivním úpravám, které by si vymýšlely, co na předloze vůbec nebylo.|E||T|Konec plošného skenování konverzací? Budeme pokračovat, hlásí i přes zrušení výjimky Google, Meta, Microsoft a Snap|D|16.04.2026 10:00|P|Česká europoslankyně Markéta Gregorová si na online platformy stěžuje regulátorům. V pozadí zatím probíhá bitva o nařízení, které má určit trvalá prav...|X|Když na začátku dubna vypršela platnost výjimky, která online platformám umožňovala dobrovolně skenovat obsah soukromých konverzací na přítomnost dětské pornografie, vypadalo to, že plošné prověřování našich soukromých zpráv na přítomnost dětské pornografie skončilo. Jenže to tak nejspíš není.
+Snímky jsou pouze obarvené, ořezané a mírně zaostřené. Dali jsme si pozor, aby nedošlo k destruktivním úpravám, které by si vymýšlely, co na předloze vůbec nebylo.|E||T|Konec plošného skenování konverzací? Budeme pokračovat, hlásí i přes zrušení výjimky Google, Meta, Microsoft a Snap|D|16.04.2026 10:00|P|Česká europoslankyně Markéta Gregorová si na online platformy stěžuje regulátorům. V pozadí zatím probíhá bitva o nařízení, které má určit trvalá prav...|X|Když na začátku dubna vypršela platnost výjimky, která online platformám umožňovala dobrovolně skenovat obsah soukromých konverzací na přítomnost dětské pornografie, vypadalo to, že plošné prověřování našich soukromých zpráv na přítomnost dětské pornografie skončilo. Jenže to tak nejspíš není.
 „Na našich relevantních komunikačních službách budeme nadále pokračovat v dobrovolných opatřeních,“ oznámily 3. dubna ve společném prohlášení firmy Google, Meta, Microsoft a Snap. Ačkoli to nenapsaly konkrétně, vypadá to, že ve skenování nadále pokračují a vypršení výjimky z pravidel na ochranu soukromí označují jen za záležitost, která „zpochybňuje právní jistotu“. Bitva o tzv. Chat Control tak nadále pokračuje.
 Firmy si mohou podobné chování dovolit, protože Evropská komise, která předložila návrh nařízení zavádějící skenování dokonce jako povinnost, zatím nevypadá, že by je za jejich počíná chtěla nějak sankcionovat. Podle serveru Euroactive mluvčí Komise odmítají i po opakovaných dotazech přímo říct, zda je postoj platforem nelegální. Nabízí se otázka: k čemu pak vlastně byla ona výjimka potřeba?
 Legálností postupu online firem se budou zabývat regulátoři v Česku. česká europoslankyně Markéta Gregorová (Piráti) oznámila, že kvůli podezření na porušení GDPR podala stížnosti českém Úřadu pro ochranu osobních údajů (ÚOOÚ) a Českému telekomunikačnímu úřadu (ČTÚ). „Boj proti zločinu je úkolem státu a policie pod dozorem nezávislých soudů, nikoliv algoritmu Googlu nebo Mety. Pokud budeme tolerovat, že velké firmy ignorují vypršení zákonů a dál šmírují naše zprávy, rezignujeme na základní principy právního státu,“ říká.
@@ -260,7 +398,9 @@ Výjimka sice padla, ale teď se v evropských institucích bojuje o návrh nař
 “První je to, že případné skenování bude cílené, tedy na základě žádosti policie vůči soudu a soudního potvrzení. Následně by mohla žádat o obsah některých komunikací,“ vypočítává.
 „Druhá zásadní věc: neprolamovat šifrování. V tom nám myslím Rada nebude ochotna vyjít vstříc, nicméně za mě je to naprosto zásadní. Lidé musí mít možnost používat komunikační služby, které šifrování nabízejí, bez toho, že by jim hrozilo prolomení,“ dodává.
 „Třetí věc je povolení skenování jen známého materiálu a nezahrnovat do něj také grooming a nové věci. A to především kvůli extrémně vysoké chybovosti AI nástrojů a technologií při vyhodnocování nových materiálů a groomingu,“ říká česká europoslankyně.
-Trialog má před sebou patrně ještě dlouhou cestu. „Upřímně jsme se ještě nedostali ke kontroverzním vodám,“ popisuje Gregorová. „Teď jsme pořád ještě u technických detailů fungování centra Evropské unie pro prvotní zachytávání potenciálních materiálů dětské pornografie. Jakmile dojdeme ke kontroverznějším částem — šmírování, ochrana šifrování a podobně — neumím si představit, že se to stihne do léta. Podle mě nás klidně až do června čekají technická vyjednávání. Pak přijdou parlamentní prázdniny a možná až od září to předpokládám znovu začne,“ předpovídá.|E||T|Další vstřícný krok pro hráče: Valve na Steamu připravuje hned několik praktických novinek|D|16.04.2026 09:25|P|Steam chystá užitečné novinky, ze kterých budou benefitovat hlavně hráči. Řeč je o sledování historie cen, nové AI podpoře nebo nástroji na odhad výko...|X|Existuje nespočet herních klientů, u nichž si během chvíle můžete zakoupit digitální hry, ale jen málo z nich se může pyšnit obrovskou knihovnou titulů jako právě Steam. Ten mimo jiné exceluje i skvělým zákaznickým servisem, který se za chvíli rozšíří o další, velmi příjemnou novinku.
+Trialog má před sebou patrně ještě dlouhou cestu. „Upřímně jsme se ještě nedostali ke kontroverzním vodám,“ popisuje Gregorová. „Teď jsme pořád ještě u technických detailů fungování centra Evropské unie pro prvotní zachytávání potenciálních materiálů dětské pornografie. Jakmile dojdeme ke kontroverznějším částem — šmírování, ochrana šifrování a podobně — neumím si představit, že se to stihne do léta. Podle mě nás klidně až do června čekají technická vyjednávání. Pak přijdou parlamentní prázdniny a možná až od září to předpokládám znovu začne,“ předpovídá.|E||T|Codex for (almost) everything|D|16.04.2026 10:00|P|The updated Codex app for macOS and Windows adds computer use, in-app browsing, image generation, memory, and plugins to accelerate developer workflow...|X|The updated Codex app for macOS and Windows adds computer use, in-app browsing, image generation, memory, and plugins to accelerate developer workflows.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Další vstřícný krok pro hráče: Valve na Steamu připravuje hned několik praktických novinek|D|16.04.2026 09:25|P|Steam chystá užitečné novinky, ze kterých budou benefitovat hlavně hráči. Řeč je o sledování historie cen, nové AI podpoře nebo nástroji na odhad výko...|X|Existuje nespočet herních klientů, u nichž si během chvíle můžete zakoupit digitální hry, ale jen málo z nich se může pyšnit obrovskou knihovnou titulů jako právě Steam. Ten mimo jiné exceluje i skvělým zákaznickým servisem, který se za chvíli rozšíří o další, velmi příjemnou novinku.
 Steam vám pohlídá cenu her
 Většina hráčů nakupuje hry výhradně ve slevách, protože při nich můžete ušetřit tisíce korun, protože ta by jinak v nejdražší Gold nebo Ultimate edici stála klidně 3 000 Kč. Ne každý může držet krok s harmonogramem slevových akcí, a tak přijde vhod ukazatel ceny za posledních 30 dnů.
 Na tom nyní pracuje Steam, což vyzradil web SteamDB, který analyzuje úpravy kódu platformy. Díky tomu víme, na čem Valve pracuje s velkým předstihem. Pokud se dočkáme implementace, uvidíte u každé hry cenu za posledních 30 dnů a můžete se tak dozvědět, zda se vyplatí počkat na slevu.
@@ -435,7 +575,9 @@ Další refresh 7nm procesorů?
 Ona „dlouhodobá podpora desktopové platformy“ může vypadat trochu jinak, něž čekáte, podobně jako je to třeba u socketu AM4. O tom se sice uvádí, že je stále podporován, ale od Ryzenů 5000 (a poté jejich X3D verze v roce 2022) pro něj nevyšel žádný nový čip. AMD jen vytváří lehce odlišné konfigurace starších produktů. Nebo prostě pokračuje v prodeji původních už několik let starých modelů.
 Něco podobného ta patrně bude u Intelu v případě zmíněného udržování socketu LGA 1700. Pokud byste doufali, že to znamená, že pro platformu nakonec vyjdou procesory Bartlett Lake s 12 jádry P-Core, nejspíš budete zklamáni, to se údajně pořád nechystá.
 Místo toho možná dokonce Intel pro socket LGA 1700 dokonce vydá další refresh (již druhý) desktopových procesorů Raptor Lake. Ty nejspíš nevyjdou jako Core 15. generace, neboť toto značení bylo opuštěno, ale jako Core řady 100 či podobně. Tyto refreshové (či rebrandované) modely by prý možná mohly vyjít začátkem roku 2027. Používat budou původní hybridní 7nm čipy, takže stále budou mít stejná jádra P-Core a E-Core jako modely z let 2021 až 2023.
-Zatím jde ale prý o velmi předběžnou informaci, takže není jisté, zda na tento refresh opravdu dojde. Bude asi záviset na tom, jak se letos vyvine situace na trhu. Intel by tento refresh možná mohl odpískat, kdyby v té době například trpěl velkým nedostatkem výrobních kapacit na 7nm procesu kvůli poptávce po serverových procesorech Xeon.|E||T|Accelerating the cyber defense ecosystem that protects us all|D|16.04.2026 00:00|P|Leading security firms and enterprises join OpenAI’s Trusted Access for Cyber, using GPT-5.4-Cyber and $10M in API grants to strengthen global cyber d...|X|Leading security firms and enterprises join OpenAI’s Trusted Access for Cyber, using GPT-5.4-Cyber and $10M in API grants to strengthen global cyber defense.
+Zatím jde ale prý o velmi předběžnou informaci, takže není jisté, zda na tento refresh opravdu dojde. Bude asi záviset na tom, jak se letos vyvine situace na trhu. Intel by tento refresh možná mohl odpískat, kdyby v té době například trpěl velkým nedostatkem výrobních kapacit na 7nm procesu kvůli poptávce po serverových procesorech Xeon.|E||T|Introducing GPT-Rosalind for life sciences research|D|16.04.2026 00:00|P|OpenAI introduces GPT-Rosalind, a frontier reasoning model built to accelerate drug discovery, genomics analysis, protein reasoning, and scientific re...|X|OpenAI introduces GPT-Rosalind, a frontier reasoning model built to accelerate drug discovery, genomics analysis, protein reasoning, and scientific research workflows.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Accelerating the cyber defense ecosystem that protects us all|D|16.04.2026 00:00|P|Leading security firms and enterprises join OpenAI’s Trusted Access for Cyber, using GPT-5.4-Cyber and $10M in API grants to strengthen global cyber d...|X|Leading security firms and enterprises join OpenAI’s Trusted Access for Cyber, using GPT-5.4-Cyber and $10M in API grants to strengthen global cyber defense.
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Productboard propouští třetinu zaměstnanců. Raději řez než pomalé krvácení, říká Palán o AI modelu firmy|D|15.04.2026 22:06|P|Český softwarový jednorožec Productboard se zbavil více než 30 procent svých zaměstnanců. Zakladatel a generální ředitel Hubert Palán ve středu oznámi...|X|Český softwarový jednorožec Productboard se zbavil více než 30 procent svých zaměstnanců. Zakladatel a generální ředitel Hubert Palán ve středu oznámil, že firma přechází na to, co nazývá „AI-only“ organizací. Jde o model, v němž má umělá inteligence nahradit velkou část procesní práce, kterou dosud vykonávali lidé.
 Palán propouštění přímo spojuje s nástupem AI. Podle něj umělá inteligence boří procesní vrstvu vývoje softwaru. Nástroje jako Productboard, který je určený k centralizaci informací, správě backlogů a sledování vývoje produktů, ztrácejí smysl v době, kdy tyto úkoly přebírají AI agenti. „Mechanika produktového vývoje se automatizuje,“ uvádí Palán ve svém vysvětlení.
@@ -877,15 +1019,7 @@ Smysl dává předplatné i pro noviny, nemusíte každé ráno do trafiky. Bylo
 Předplatné mezi služby zahrnující elektroniku přišlo s kabelovou televizí, přičemž se bavíme spíše o zahraničí, kde tyto nabídky byly dříve. Průkopníkem v této oblasti bylo HBO, které nabízelo nerušené sledování obsahu bez reklam, a služba se v USA v sedmdesátých letech velmi rychle uchytila. Také u nás měly placené kanály úspěch, například skrze sport, který byl na neplacených kanálech jen v omezeném množství. Dalším krokem bylo zavedení internetu.
 Pokračování článku patří k prémiovému obsahu pro předplatitele
 Chci Premium a Živě.cz bez reklam
-Od 58 Kč měsíčně|E||T|Čínský krystal otevírá cestu k navigaci ponorek a raket bez závislosti na satelitním signálu|D|15.04.2026 05:45|P|Čínští vědci vytvořili krystal generující krátkovlnné ultrafialové záření • Objev umožňuje budoucí sestrojení extrémně přesných thoriových jaderných h...|X|Satelitní navigace má nezanedbatelné slabiny, které se v mnoha situacích nedají obejít. Signál například nepronikne pod vodní hladinu ani hluboko do podzemí. Navíc ho lze poměrně snadno rušit či oklamat falešnými daty (takzvaný jamming a spoofing), což představuje obrovské bezpečnostní riziko.
-Tým vědců z univerzity v Sin-ťiangu nedávno vyvinul optický krystal z fluorovaného boritanu, který dokáže generovat extrémně krátkovlnné ultrafialové světlo. Objev umožňuje konstrukci mimořádně přesných jaderných hodin, díky nimž by se v budoucnu mohla navigace obejít bez závislosti na GPS, což je zásadní například pro ponorky, rakety nebo sondy ve vzdáleném vesmíru.
-Jaderné hodiny přesnější než atomové
-Současné navigační systémy stojí na precizním měření času. GPS funguje na principu výpočtu zpoždění signálu ze satelitů, přičemž platí, že čím přesnější jsou hodiny, tím přesnější je poloha. Dnešní atomové hodiny měří čas pomocí kmitů elektronů v obalu atomu.
-Jaderné hodiny využívají kvantový přechod v jádře izotopu thoria-229. Jádro je totiž mnohem stabilnější a odolnější vůči vnějším vlivům, ať už jde o teplotní výkyvy, vibrace nebo magnetická pole. Hodiny na bázi thoria mohou být díky tomu až tisíckrát přesnější. Problémem však dlouho bylo, že jejich „rozběhnutí“ vyžaduje specifické UV záření, ke kterému je potřeba speciální ultrafialový laser naladěný na vlnovou délku kolem 148,3 nanometru.
-K čemu je nový čínský krystal
-A právě zde nachází uplatnění nový krystal, který dokáže změnit vlnovou délku laserového světla na rekordních 145,2 nanometru. Toto extrémně krátkovlnné ultrafialové záření je zásadní složkou pro budoucí sestrojení přenosných thoriových jaderných hodin. Jde o významný posun oproti dosavadní hranici kolem 150 nanometrů – předchozí rekordní krystal (fluoroboritan draselno-beryllnatý) dominoval oboru už od 90. let.
-Mimořádně precizní měření času umožní polohu určovat podle toho, jak rychle, jakým směrem a jak dlouho se objekt pohybuje (tzv. inerciální navigace). Zařízení by jednoduše porovnávalo naměřené hodnoty s takovou přesností, že by odchylka od skutečné pozice byla zanedbatelná i po dlouhých týdnech plavby bez vynoření.
-Kromě využití v ponorkách, které už nebudou muset riskantně vyplouvat k hladině, aby si aktualizovaly souřadnice, a raketách odolných vůči rušení navigačních systémů, se počítá i s nasazením v kosmických sondách, které by díky tomu mohly v hlubokém vesmíru létat bez nutnosti neustálých korekcí ze Země. Technologie je zatím ve fázi výzkumu a GPS v dohledné době nenahradí, může však výrazně snížit závislost na tomto systému.|E||T|Česko spustilo kvantovou síť, kterou nelze odposlouchávat. Hrozí nám ale evropská ostuda, chybí peníze|D|15.04.2026 04:30|P|Konečně se podařilo rozjet síť pro distribuci kvantového klíče. Ta by se měla napojit na Evropu, ovšem na tuto část stále nebyl uvolněno konfinancován...|X|V Brně byl tento týden po několika peripetiích oficiálně zahájen provoz národní páteřní kvantové sítě CZQCI, která spojí tři největší města Prahu, Brno a Ostravu. Síť je určena pro takzvanou kvantovou distribuci klíče (QKD) zjednodušeně řečeno umožňující zabezpečit informace proti útokům kvantovými počítači. Tuzemská síť by se v budoucnu měla napojit na celoevropskou infrastrukturu EuroQCI. Pokud se na to ovšem najdou peníze. Jinak Česku hrozí, že jako jediná členská země připojena nebude, i když má geograficky strategickou pozici.
+Od 58 Kč měsíčně|E||T|Česko spustilo kvantovou síť, kterou nelze odposlouchávat. Hrozí nám ale evropská ostuda, chybí peníze|D|15.04.2026 04:30|P|Konečně se podařilo rozjet síť pro distribuci kvantového klíče. Ta by se měla napojit na Evropu, ovšem na tuto část stále nebyl uvolněno konfinancován...|X|V Brně byl tento týden po několika peripetiích oficiálně zahájen provoz národní páteřní kvantové sítě CZQCI, která spojí tři největší města Prahu, Brno a Ostravu. Síť je určena pro takzvanou kvantovou distribuci klíče (QKD) zjednodušeně řečeno umožňující zabezpečit informace proti útokům kvantovými počítači. Tuzemská síť by se v budoucnu měla napojit na celoevropskou infrastrukturu EuroQCI. Pokud se na to ovšem najdou peníze. Jinak Česku hrozí, že jako jediná členská země připojena nebude, i když má geograficky strategickou pozici.
 Princip kvantové distribuce klíče jsme popisovali zde. QKD operuje se s principem symetrického šifrování. Zašifrované informace putují běžnou telekomunikační sítí, zatímco vygenerovaný klíč je poslán kvantovým kanálem mezi specializovanými zařízeními (Alice & Bob). Pracuje se přímo se stavy fotonů a jejich měřením, tedy na fyzikální úrovni. Díky tomu je taková komunikace těžko prolomitelná a pokusy o odposlechy jsou detekovatelné.
 QKD má sloužit hlavně pro budoucnost a jako obrana proti metodě harvest now, decrypt later. Různí aktéři už dnes shromažďují informace s plánem je dešifrovat, jakmile se na trhu objeví dostatečně výkonné kvantové počítače. Kdy se tak stane (a pokud), nevíme.
 Jízda na mrtvém koni?

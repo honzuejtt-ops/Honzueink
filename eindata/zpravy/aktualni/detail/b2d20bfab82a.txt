@@ -1,0 +1,7 @@
+YouTube postupně uživatelům zpřístupňuje možnost, jak omezit zobrazování krátkých videí Shorts. Reaguje tím na dlouhodobou kritiku části uživatelů, kterým vertikální obsah vadí nebo ho vnímají jako návykový. Ve výsledku ale nejde o skutečné vypnutí, spíš o částečné omezení.
+Jen v aplikacích
+Nové nastavení se objevuje pouze v mobilní aplikaci, na webu k dispozici není. Stačí zamířit do Nastavení a překliknout se na možnost Organizace času. V sekci Denní limity se následně nachází možnost Limit pro feed videí Shorts. Pokud jej otevřete, objeví se na výběr několik možností, v našem případě do bylo 15 minut až 2 hodiny. YouTube sem ale postupně přidává i možnost Vypnout – uživatelé hlásí, že se jim v aplikaci zpřístupňuje nezávisle na aktualizaci.
+I když ale dojde k přepnutí na možnost Vypnout, jde spíše o změnu algoritmu. Ten přestane Shorts tolik tlačit do hlavního feedu, úplně je ale neodstraní. Z domovské obrazovky zmizí, v aplikaci ale stále zůstane záložka Shorts. Podle uživatelů v diskuzích se videa běžně načtou, namísto přehrání se ale zobrazí hláška o dosažení nastaveného limitu.
+Na Hacker News se opakuje názor, že jde o typický dark pattern, tedy zdánlivou kontrolu bez reálného efektu. Pokud má dojít k opravdovému odstranění Shorts, pak to bude možné především na desktopovém webu pomocí některého z doplňků prohlížeče.
+Google naoko reaguje na kritiku návykových vertikálních videí a s ním spojený doom scrolling, stále ale jde o klíčovou funkci konkurující TikToku nebo Reels.
+Zdroje: The Verge

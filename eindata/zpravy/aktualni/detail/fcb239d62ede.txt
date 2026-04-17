@@ -1,0 +1,14 @@
+Článek
+„Umělá inteligence funguje jako praktický pomocník, který výrazně zjednodušuje práci s formuláři. Pomáhá nejen s vyplňováním údajů, ale usnadňuje i orientaci v jejich struktuře,“ uvedla generální ředitelka finanční správy Simona Hornochová.
+Aplikace, která zatím nemá název, je dostupná na této adrese. Stačí do ní nahrát potřebné dokumenty – typicky potvrzení o zdanitelných příjmech od zaměstnavatele a podklady pro uplatnění daňových slev, odpočtů nebo daňového zvýhodnění, například potvrzení o darech či příspěvcích na penzijní spoření. Dokumenty mohou být ve formátu PDF, skenu nebo fotografie.
+„Z dokumentů aplikace rozpozná relevantní údaje a automaticky je přenese do příslušných polí formuláře daňového přiznání,“ vysvětlil mluvčí Generálního finančního ředitelství Patrik Madle.
+Uživatel má přitom všechna data pod kontrolou a může je kdykoli upravit. Před použitím je musí zkontrolovat a potvrdit. Aplikace pak vytvoří soubor s vyplněným formulářem, který lze podat prostřednictvím portálu Moje daně nebo datovou schránkou. „Vygenerovat je možné i soubor ve formátu PDF pro listinné podání,“ dodal Madle.
+Odpovědnost za správnost údajů ale nese vždy uživatel.
+Jen příjmy ze zaměstnání
+Testovací verze je určena lidem s příjmy výhradně ze zaměstnání, včetně těch s více zaměstnavateli, nebo studentům s brigádami. Využít ji mohou čeští daňoví rezidenti i nerezidenti bez příjmů ze zahraničí.
+„Aplikace naopak není určena pro poplatníky s dalšími druhy příjmů, například z podnikání, nájmu nebo obchodů s cennými papíry,“ upozornil Madle, že OSVČ novinku zatím využít nemohou. Pokud se pilotní provoz osvědčí a finanční správa získá dostatek zpětné vazby od uživatelů, plánuje funkci rozšířit i na další typy poplatníků.
+Ministerstvo financí i finanční správa uvádějí, že nynější verze funguje odděleně od státních registrů a nesbírá žádné údaje, aby nedošlo k jejich zneužití.
+Na vývoji aplikace spolupracovalo několik firem. Vedle nadnárodní společnosti Microsoft to byla česká technologická firma Datera zabývající se zpracováním dat a také ECN, která se věnuje vývoji webových aplikací. Finanční správa za vývoj zaplatila tři miliony korun.
+Samozřejmě platí, že si lidé mohou vyplnit přes portál Moje daně či jinak přiznání i bez pomoci umělé inteligence, stejně jako tomu bylo v minulých letech.
+Pokud přitom odvedli na daních více než museli a podali daňové přiznání po 1. dubnu, bude jim případný přeplatek vrácen do třiceti dnů. Nejpozději tedy do 3. června.
+Květnový termín pro podání přiznání není ještě definitivní. Je to podobné jako v minulých letech. Pokud lidé využívají daňového poradce, mají čas do 1. července.

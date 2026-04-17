@@ -1,0 +1,3 @@
+Ač už Finanční správa stejně jako většina ostatních největších státních úřadů funguje na jednotné doméně financnisprava.gov.cz, tak klíčový eGov nástroj Moje daně nadále běží na staré nepřehledné adrese adisspr.mfcr.cz/pmd/home.
+Letos se to ale změní a služba pro podávání daňových přiznání se také přestěhuje na gov.cz. Migrace probíhá ve třech etapách, protože úřad počítá s důkladnějším testováním.
+Během všech těchto fází ještě bude fungovat i původní doména, její zrušení chystá Finanční správa až někdy v neupřesněné budoucnosti.

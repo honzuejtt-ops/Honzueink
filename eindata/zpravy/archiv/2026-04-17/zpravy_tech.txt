@@ -1,3 +1,89 @@
+|T|Star Wars se vrací do kin. Mandalorian a Grogu mají finální trailer|D|17.04.2026 16:45|P||X|Star Wars se po letech vrací tam, kam patří – do kin. A to díky dříve trochu podceňovanému seriálu. Když na Disney+ začal vycházet seriál Mandalorian, zprvu působil jako vedlejší westernová odbočka, která si jen hraje s kulisami známého světa. K tomu patřil i specifický vizuál daný tehdy unikátním využitím obřích LED stěn. Ty místo klasického green screenu zobrazovaly digitální prostředí v reálném čase přímo na place. Nešlo o levné řešení, ale o tehdy revoluční přístup, na který si diváci i tvůrci teprve zvykali.
+Divácký úspěch první série byl ale natolik výrazný, že rychle přišly další dvě – a nakonec i celovečerní film s názvem Mandalorian a Grogu (Star Wars: The Mandalorian and Grogu). Právě Mandalorian Din Djarin a malý Grogu, fanoušky přezdívaný Baby Yoda, se stali symbolem novodobých Star Wars. Seriál stojí především na vztahu dvou postav, které si k sobě našly cestu navzdory rozdílnému původu i osudům.
+Z hlediska děje se přitom mnoho nemění. Impérium sice padlo, ale jeho zbytky zůstávají roztroušeny po celé galaxii. Nově vzniklá Republika se snaží chránit vše, za co povstalci bojovali, a proto se obrací na zkušeného mandaloriánského lovce odměn a jeho mladého učedníka.
+O režii se stará osvědčený Jon Favreau. Asi ho znáte jako herce, ale stojí i za filmy Iron Man, Kniha džunglí nebo Lví král. Scénář napsal spolu s Davem Filonim, jednou z klíčových postav současného Star Wars univerza, který stojí třeba i za seriálem Ahsoka.
+Očekávaný film podle finálního traileru sází na velké bitvy, silné emoce, ale hlavně na sehranou dvojici, která v posledních letech v podstatě táhne celé moderní Star Wars. A co je možná nejdůležitější, tak nepůsobí to jako přefouknutý seriál, ale jako plnohodnotný blockbuster, který má ambici znovu nastartovat filmovou část ságy. Na výsledek si musíme počkat do 21. května 2026, kdy film dorazí do kin.
+Zdroje a další informace: Disney, Falcon|E|
+|T|Apple, Nuvia i Qualcomm jsou passé: Elitní inženýři teď slibují přepsat pravidla s novými procesory Nuvacore|D|17.04.2026 16:26|P|Inženýři, kteří dali světu slibuje procesorová jádra Applu a poté architekturu Oryon, s níž se Arm dobývá do počítačů s Windows, se vracejí na místo č...|X|Jak známo, procesory Qualcomm Snapdradon X Elite i jejich druhá generace X2, která nyní přišla na trh, vděčí za svůj vznik stejným architektům CPU, kteří v Applu navrhovali oceňované čipy jako M1, než se „trhli“ a založili si startup Nuvia s cílem vyvinout podobně výkonná jádra Arm. Qualcomm Nuvii koupil, ale nedávno ho dva hlavní aktéři opustili. Teď se možná celá sága zopakuje, protože spouští novou firmu a opět libují revoluční procesory.
+Nuvia 2.0 Nuvacore chce opět převrátit svět CPU
+Když jsme psali od odchodu Johna Bruna a Gerarda Williamse III. z Qualcommu na začátku letošního roku, zakončili jsme s tím, že se tito architekti, stojící za úspěchem jader Oryon, nejspíš znovu vynoří v nějaké jiné velké firmě. Nakonec to dopadlo trochu jinak a je to spíš déjà vu: Oba zmínění založili ještě s Ramem Srinivasanem, což je další veterán z vývoje čipů Apple, zase startup. Ten má opět na programu vývoj vysoce výkonných procesorů a dokonce na Nuvii nepokrytě odkazuje – jmenuje se Nuvacore.
+Zatím ještě není úplně jasné, jak daleko to firma dopracuje, zatím bylo oznámeno jen její založení s tím, že za ní stojí financování ze Sequoia Capital a že shání inženýry (dle oznámení na Twitteru), přičemž vývojová centra bude mít v Silicon Valley, Austinu v Texasu a v Markhamu v Ontariu. V Austinu funguje řada vývojových týmů CPU, ze kterých by mohla Nuvacore lovit – například vývoj jader Armu i E-Core Intelu, a ve všech těchto městech je aktivní AMD.
+Web firmy je mimochodem Nuvacore s doménovou příponou „AI“. Těžko říct, zda je to jen povinná úlitba duchu doby, nebo se firma bude speciálně zaměřovat na použitá CPU v sektoru umělé inteligence. Procesory či procesorová jádra Nuvacore mají údajně být perfektní pro datacentrové úlohy v serverech, mají být „navržené pro výšky“, což je vzhledem k vizuálu implikující vesmír a oběžnou dráhu nejspíš současně odkaz na plány budování datacenter v kosmu coby nejnovější hype.
+Toto samozřejmě mnoho neříká a je třeba pamatovat, že servery měla oficiálně v programu i Nuvia a stejně její jádro skončilo v mobilech a noteboocích. Výkonné architektury jader CPU jsou do značné míry univerzální a uplatnit se mohou ve všech segmentech. Novacore pochopitelně slibuje, že její CPU architektury budou špičkové, ne-li nejlepší, i když v tuto chvíli samozřejmě nelze vědět, jak dopadnou v realitě.
+Gerrard Williams uvedl, že firma může eventuálně nabízet vlastní hotové procesory nebo i licenční jádra, která budou moci využít firmy jako Amazon, Microsoft, Google a tak dále pro vlastní čipy. Strategie je tedy otevřená. Nebo je firma možná ještě v tak raném stádiu, že neví, kam se vyvine. Má to prý záležet na tom, jaký model budou preferovat zákazníci.
+Arm nebo RISC-V?
+Co ještě nebylo sděleno, je jaké přesně procesory budou vyvíjené. Zakladatelé mají samozřejmě zkušenosti s výkonnými procesory s instrukční sadou Arm, nicméně většina startupů podobných Nuvacore (Rivos, Ventana, AheadComputing, což jsou zase exulanti z Intelu) v posledních letech oznamovala plány na procesory RISC-V.
+Instrukční sada RISC-V ovšem má výhody hlavně v tom, že je zadarmo a jinak je technologicky horší proti architektuře Arm, zjednodušeně bývá kritizována, že je poněkud akademická a stále poplatná překonaným konceptům z někdejší RISC éry. Naproti tomu aktuální instrukční sada Arm (Armv8, Armv9) je zaměřená na vývoj a vychází ze skutečných poznatků získaných během širokého nasazení počítačovém v průmyslu.
+Jádra Arm by každopádně byla nejatraktivnější pro firmy, které by chtěly Nuvacore eventuálně koupit. Lze je totiž hned využít nejen v serverech, ale i v mobilech a počítačích, zatímco pro RISC-V zatím existuje ekosystém jen v sektoru embedded jader. A eventuální prodej firmy je nejspíš opět něco, s čímž Gerard Williams III. a společníci kalkulují.
+Teprve uvidíme, zda kromě zrecyklovaného jména a stejného oboru podnikání Nuvacore také použije stejnou „exit strategy“, kdy ji za pár miliard dolarů koupí některý z existujících výrobců čipů, aby její technologií podpořil své existující procesory, jako to udělal Qualcomm se Snapdragony. To je samozřejmě za předpokladu, že se úspěch zopakuje a opět se vzniklému týmu povede vyrobit kvalitní konkurenceschopnou architekturu, což není úplně samozřejmé.
+Zdroje: Nuvacore, Bloomberg, Tom’s Hardware|E|
+|T|Hackeři, kteří vykradli Spotify, u soudu prohráli bez boje. Musí zaplatit 322 milionů dolarů|D|17.04.2026 15:45|P|Ze Spotify útočníci stáhli všechno, co se dalo. • Obří balík obsahuje hudební soubory, přebaly, metadata apod. • Piráti chtějí postupně všechny sdílet...|X|Oživeno 17. 4. 2026 | Krátce poté, co lidé kolem Anna’s Archive začali zveřejňovat první data stažená ze Spotify, už tato hudební služba spolu s největšími hudebními vydavateli připravila žalobu. A teď newyorský soud rychle přišel s drtivým verdiktem. Obžalovaný se totiž ani nedostavil, takže se nemohl hájit.
+Hackeři musí zaplatit celkem 322 milionů dolarů. Sony a UMG mají získat odškodné ve výši 7,5 milionu dolarů, Warner pak 7,2 milionu. Všechny tři společnosti se soudily kvůli porušení autorských práv na zhruba 50 skladeb, za každou mají dostat 150 tisíc. Spotify vysoudilo 300 milionů kvůli narušení technického opatření. Obžalovaný také musí smazat všechna nelegálně získaná data.
+Vedle toho se provozovatelům zablokuje přístup k deseti doménám annas-archive.org a alternativám s koncovkami .li, .se, .in, .pm, .gl, .ch, .pk, .gd a .vg. Registrátoři domén a poskytovatelé hostingu mají povinnost trvale zablokovat přístup k těmto doménám, deaktivovat autoritativní nameservery, ukončit hostingové služby a uchovat důkazy, které by mohly pomoci identifikovat provozovatele webu.
+Zde se také skrývá hlavní háček žaloby – nikdo totiž neví, kdo za Anna’s Archive stojí. Nikdo tak ani nepřevzal odpovědnost.
+Původní článek z 23. 12. 2025 | Hackerům sdruženým na Anna’s Archivu se podařilo napadnout systému Spotify a stáhnout z nich obří balík dat. Celkově 256 milionů skladeb (99,9 % celé knihovny) z 58,6 milionu alb od 15,4 milion interpretů. Útočníci ale získali též metadata, přebaly a informace o poslechovosti.
+Zpravodajská média se zaměřují zejména na ty hudební soubory, ty ovšem nejsou tolik podstatné. Hudební pirátství tady bylo dlouho před Spotify a aktuální hack nepřinesl něco, co by zde nebylo. Cenná jsou právě ona metadata, jak Spotify hudební nahrávky popisuje a štítkuje. Podle toho se jeho doporučovací algoritmy rozhodují, co vám ukážou ve vyhledávači, jaké skladby a interpreti by se vám mohli líbit, když máte rádi XYZ apod.
+Spotify už pro zahraniční média potvrdilo, že k hacku opravdu došlo. Firma už vyšetřuje, kdo za únikem stojí. Zároveň zablokovalo účty, ze kterých se měly data nelegálně stahovat. Škoda už ale byla napáchána.
+Anna’s Archive postupně zveřejní 300 terabajtů dat, na jejichž základě by si každý mohl vytvořit vlastní Spotify. Zatím jsou venku jen ona metadata čítající v zabalené podobě 200 GB. Následovat budou hudební soubory seřazené podle popularity. Těch nakonec bude „jen“ 86 milionů, ale mají zastupovat 99,6 % toho, co lidé poslouchají. Nejoblíbenější jsou uložené ve formátu Vorbis (160 kb/s), zbytek pak v Opusu (75 kb/s). Pak se zveřejní ještě přebaly a další soubory.
+Hackeři z Anna’s Archivu v minulosti podobně napadli a zveřejnili pirátské kopie e-knih nebo vědeckých prací, Spotify je ale jejich největší úlovek. Jejich cílem je uchovat kulturní dědictví a lidské znalosti pro budoucí generace, protože jinak hrozí, že se data někde ztratí, zůstanou nečitelná apod. Což je argument postavený dost na vodě. Spotify se zaměřuje na nejvíce mainstreamovou hudbu a ta se nikdy neztratí, protože je dostupná i ze spousty jiných zdrojů. A v lepší technické kvalitě.
+Spotify má s torrenty dlouhou historii
+Pikantní na celém útoku je to, že piráti dali Spotify tak trochu ochutnat jeho vlastní medicínu. Jak v minulosti vyplynulo z několika zdrojů, původní Spotify spuštěné v betaverzi v roce 2008 používalo mj. nelegální MP3 stažené z torrentových sítí. Ostatně šéf a zakladatel firmy Daniel Ek vedl společnost μTorrent vyvíjející nejznámější klientský program. Tu pak prodal BitTorrentu, což pomohlo financovat start Spotify.
+Spotify dokonce až do roku 2014 běželo na hybridní architektuře, kde část hudební knihovny fungovalo v režimu peer-to-peer a soubory se streamovaly z počítačů jeho uživatelů. Teď už jsou jeho veškerá hudební data uložená v Google Cloudu.|E|
+|T|Netflix a další na víkend: Finální řada Euforie, Svědectví po Příběhu služebnice, Bandi nebo Malcolm v nesnázích|D|17.04.2026 14:45|P||X|Bandi
+Po smrti matky, která byla jejich oporou a kotvou, se jedenáct sourozenců ve věku od sedmi do třiadvaceti let snaží zůstat pohromadě tváří v tvář nepřízni osudu. Pro některé z nich se však obchod s drogami jeví jako jediná cesta k přežití. Nové francouzské drama nabízí na Netflixu osm epizod.
+Hodnocení Kinobox.cz: 53 %
+- Originální název: Bandi
+- Drama seriály (2026)
+- 8 epizod (nové od 9. 4. 2026)
+- CZ titulky • CZ dabing
+- Netflix
+Pokračování 2 / 6
+Euforie
+Seriál Sama Levinsona popisuje pestré životy středoškolských studentů, kteří se točí na kolotoči zjitřených emocí a bojují každý se svými vnitřními běsy. Užívání drog, nepříliš bezpečný sex a zbytečné násilí nevyjímaje. Třetí a finální řada odstartovala na HBO Max.
+Hodnocení Kinobox.cz: 82 %
+- Originální název: Euphoria
+- Drama seriály (2019)
+- 18 epizod (nové od 13. 4. 2026)
+- CZ titulky • CZ dabing
+- HBO Max
+Pokračování 3 / 6
+Někdo to musí vědět
+Když se ztratí teenager, detektiv a jeho tým se v tomto dramatickém seriálu inspirovaném skutečnými událostmi pustí do neúnavného pátrání, aby záhadu vyřešili. Mrazivý thriller z Chile nabízí celkem osm epizod.
+Hodnocení Kinobox.cz: Zatím bez hodnocení
+- Originální název: Someone Has to Know
+- Drama seriály (2026)
+- 8 epizod (nové od 15. 4. 2026)
+- CZ titulky
+- Netflix
+Pokračování 4 / 6
+Malcolm v nesnázích: Život pořád není fér
+Po více než deseti letech, kdy se se svou dcerou záměrně vyhýbal své rodině, je Malcolm vtažen zpět do jejich světa, když Hal a Lois požadují jeho přítomnost na oslavě jejich čtyřicátého výročí. Návrat populární seriálové dramedie je exkluzivně na Disney Plus.
+Hodnocení Kinobox.cz: 74 %
+- Originální název: Malcolm in the Middle: Life's Still Unfair
+- Komediální seriály (2026)
+- 4 epizody (nové od 10. 4. 2026)
+- CZ titulky
+- Disney+
+Pokračování 5 / 6
+Svědectví
+Rostou v Gileadu a nemají jinou realitu. Nová generace mladých žen bojuje za svobodu v temné budoucnosti a hledá nové i staré spojence. Jedná se o pokračování Příběhu služebnice, které se odehrává po jeho konci, s novou generací pronásledovaných.
+Hodnocení Kinobox.cz: 80 %
+- Originální název: The Testaments
+- Drama seriály (2026)
+- 10 epizod (nové od 8. 4. 2026)
+- CZ titulky • CZ dabing
+- Disney+
+Pokračování 6 / 6
+Další zajímavé tituly na streamovacích službách
+Ronaldinho: Naprostý unikát (Ronaldinho: The One and Only) – Dokumentární seriál vypráví příběh jednoho z nejlepších fotbalistů všech dob. Díky exkluzivnímu nahlédnutí do jeho soukromého života a dosud nezveřejněným archivním materiálům poznáme hvězdu, která se skrývá za tímto hráčem. (74 %) • Netflix
+Úsměv 2 (Smile 2) – Popová hvězda Skye Riley zahajuje turné, které má upevnit její status jedné z aktuálně nejúspěšnějších zpěvaček. Svých patnáct minut slávy si však nemůže užívat naplno, protože se v jejím životě právě v téhle kritické chvíli začíná vyskytovat řada velmi drastických a nepochopitelných událostí, které přibývají jedna za druhou. (64 %) • Netflix
+Blue Moon – Večer 31. března 1943 se legendární textař Lorenz Hart potýká se svou otřesenou sebedůvěrou v baru Sardi's. Jeho bývalý spolupracovník Richard Rodgers mezi tím slaví premiéru svého průlomového muzikálu „Oklahoma!“. (64 %) • HBO Max
+Na dostřel (Striking Distance) – Při honičce na masového vraha je zabit Tomův otec. Tom se nikdy nedokáže smířit s oficiální verzí vyšetřování, ani s odhaleným pachatelem. Podle něj je vrahem policajt. Pak ale přichází jeho nový partner – půvabná Jo a do Toma vjede nový život. Navíc ho čeká vyřešení série vražd mladých žen, které mají vztah k jeho minulosti a definitivní odhalení pravdy o smrti jeho otce. (60 %) • Netflix
+Margo má problém vyjít (Margo's Got Money Troubles) – Margo je dcera bývalé servírky z Hooters a někdejšího profesionálního wrestlera. Touží se stát spisovatelkou, ale nyní musela zanechat vysoké školy. Narodilo se jí dítě, účty se vrší a možností, jak je poplatit, mnoho nezbývá. Za každou cenu potřebuje nalézt z této situace východisko. (65 %) • Apple TV+
+Tento článek je součástí balíčku PREMIUM+
+Odemkněte si exkluzivní obsah a videa bez reklam na devíti webech.
+Chci Premium a Živě.cz bez reklam
+Od 58 Kč měsíčně|E|
 |T|7 ways to travel smarter this summer, with help from Google|D|17.04.2026 14:00|P|Illustration showing a person with a Pixel phone in a beach town farmers' market by the water|X|7 ways to travel smarter this summer, with help from Google
 Summer travel season is right around the corner, and no matter where you’re headed, Google is ready to help each step of the way. Here are some of our latest tools to help you to plan memorable trips, find a great deal and dive into your next destination.
 1. Build a custom trip plan with AI Mode in Search

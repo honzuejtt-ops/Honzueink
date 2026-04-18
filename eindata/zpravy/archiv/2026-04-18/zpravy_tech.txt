@@ -1,3 +1,69 @@
+|T|Japonci se zajeli učit stavět drony na Ukrajinu. Výsledkem je dvoumetrový kluzák Shirana za 9 tisíc korun|D|18.04.2026 09:45|P|Hlad po rychlé a levné konstrukci dronů pro obranný sektor stále roste a reaguje na to i japonský startup JISDA. Jeho inženýři vyvinuli malý kluzák AC...|X|Hlad po rychlé a levné konstrukci dronů pro obranný sektor stále roste a reaguje na to i japonský startup JISDA. Jeho inženýři vyvinuli malý kluzák ACM-01 Shiraha za pouhých 70 tisíc jenů (9 tisíc korun).
+Shirana slouží primárně jako výcviková platforma k jednorázovému použití, případné poškození a snadné nahrazení. Nikoli k zachování na příště. Trup proto tvoří dřevěná kostra a křídla s rozpětím 1,9 metrů. Všechny komponenty pocházejí z domácí produkce na ostrovech.
+Japonci se inspirovali na Ukrajině
+Podle startupu je dřevěná konstrukce spíše daná záměrným rozhodnutím inženýrů a možnosti dodavatelského řetězce než technologickým omezením. Dřevo je v Japonsku snadno dostupné a nevyžaduje specializovanou výrobní infrastrukturu.
+JISDA nabízí Shiranu jakou součást širšího balíčku pro výcvik s drony Skill House. Vývoj probíhal v úzké spolupráci s Ukrajinou a přímo v terénu – od logistických uzlů v týlu až do blízkosti aktivních bojových zón.
+Japonští odborníci sledovali používání UAV v bojových podmínkách, jak se opotřebovávají a jak jsou flexibilní pro další úpravy kvůli rychlému vývoji technologií v prostředí dronové války.|E|
+|T|Co nového v aplikaci Mapy.com. Upozorní na obtížné úseky na pěších i cyklistických trasách|D|18.04.2026 08:45|P|Sledujeme nové funkce, které s aktualizacemi přibývají do oblíbené mobilní mapové a navigační aplikace Mapy.com od českého Seznamu.|X|Oživeno 17. dubna 2026 | Na obě hlavní mobilní platformy v těchto dnech míří aktualizace aplikace Mapy.com. Nabídne hned několik drobných vylepšení souvisejících s plánováním tras a legendou. Hlavní novinkou je zobrazení obtížných úseků na cyklistických i pěších trasách pomocí čárkované čáry a odstínů modré barvy.
+Obtížnost i sjízdnost je součástí plánovače tras, výletů i navigace. U některých druhů dopravy se nově zobrazuje i náročnost průjezdu. Na trase se vyskytuje také několik nových událostí: trajekt, kyvadlový vlak, brod, mýto, pluhování, bez poplatku a schody. Nově lze zobrazit vlastní místa z Moje Mapy trvale nad mapou i v navigaci, včetně Android Auto.
+Nové funkce Mapy.com mohou na obě hlavní mobilní platformy Android a iOS přicházet v rozdílné době a nemusí vždy přímo souviset s danou verzí aplikace. Aktuální verzí na Androidu je 26.4.1, na iOS verze 26.4.0.
+O aplikaci Mapy.com
+Mapy.com (původním názvem Mapy.cz) na desktopu používají lidé v Česku přes 25 let, mobilní aplikaci pak od roku 2011. Oproti zahraničním konkurentům se česká aplikace odlišuje celosvětovou turistickou mapou se vzhledem podobným klasické tištěné mapě.
+V aplikaci lze stahovat jednotlivé státy světa i pro offline použití (více než jeden stát pouze v placené verzi Premium). Mobilní aplikaci Mapy.com používá v hlavní sezoně až 4,4 milionu lidí za měsíc. Aplikace Mapy.com je dostupná pro systémy Android, iOS, Android Auto a platformu Apple CarPlay.
+Zdroj: Mapy.com
+Pokračování 2 / 49
+Vyfotí hory okolo, zároveň ukáže název, výšku i vzdálenost
+Oživeno 2. dubna 2026 | Na iOS dorazila nová verze 26.3.2, která vylepšuje CarPlay (indikuje offline trasy), POI (lepší informace a nová tlačítka u míst) a přepracovává funkci HorizontAR. Ta je dostupná již od loňského července, ale nově se naučila dvě další funkce.
+V náhledu už nejsou vidět jen nadmořské výšky okolních hor, na které míříte foťákem, ale po kliknutí se zobrazí i jejich vzdálenost od uživatele. Přibyla také spoušť, takže se vytvoří fotka s popisky. Dříve se musel dělat screenshot, jenže ten logicky nebyl v plném rozlišení foťáku, ale displeje.
+HorizontAR v aplikaci Mapy.com
+Obojí nabízí také placená aplikace PeakFinder, kterou jsme v minulosti na Mobilmanii doporučovali. Umí toho však víc, protože se specializuje jen na focení hor. PeakFinder funguje i offline, protože se topografická data stahují do mobilu. Můžete do aplikace importovat i starší fotky, neskenuje jen v reálném čase.
+Stejný pohled v PeakFinderu
+Pokračování 3 / 49
+Lepší přehled ve výletech – uložené trasy si organizujte do podsložek
+Oživeno 25. března 2026 | Nová funkce se tentokrát týká placené verze Mapy.com Premium, a to jak v mobilní, tak i desktopové verzi. Nově můžete své uložené body a trasy v sekci Moje Mapy organizovat i do podsložek. Díky tomu budete mít ve svých plánech a výletech ještě lepší přehled.
+Podsložky si můžete vytvořit v počítači a veškeré změny se vám automaticky synchronizují i v mobilu (platí to i naopak). V prémiové verzi si můžete uložená místa nebo trasy v Moje Mapy označit jako navštívené a přidat k nim i vlastní poznámku nebo zážitek.
+Pokračování 4 / 49
+Stahování mapových podkladů pro použití offline bude rychlejší
+Oživeno 12. února 2026 | Drobnou, ale o to užitečnější novinku technického rázu připravily Mapy.com do svojí únorové aktualizace. Stahování mapových podkladů do offlinového použití je rychlejší. Funkci ocení nejen uživatelé programu Premium, v němž jde mapy do offlinu stahovat bez omezení, ale i uživatelé bezplatné verze, neboť i zde jsou mapy jednoho vybraného státu k dispozici ke stažení.
+Vylepšení spočívá v tom, že při updatu offline map už nestahujete celý balík znovu. Aplikace začala rozdělovat data na vrstvy, takže se aktualizuje jen to, co se skutečně změnilo (například jen vrstevnice). Stahování tak bude rychlejší a nebude potřeba přenášet tolik dat.
+Reálná úspora bude záležet na státu, který zrovna aktualizujete. Mapy vypočetly úsporu na příkladu Švýcarska (kde vzhledem ke členitosti terénu probíhají zrovna u části s vrstevnicemi častější změny) až na 45 %.
+Pokračování 5 / 49
+Online mapy zobrazíte přímo na displeji Apple Watch
+Oživeno 17. prosince 2025 | Majitelé chytrých hodinek s logem nakousnutého jablka se dočkali. Počínaje dnešním dnem jsou Mapy.com v online podobě dostupné také pro Apple Watch. Na zápěstí si teď můžete vedle navigace zobrazit i trasu. Je třeba mít telefon s aplikací Mapy.com ve verzi Premium spárovaný s Apple Watch. Nechybí ani navigace či tmavý režim. Z velkých hodinkových platforem tak na online Mapy.com čeká už jen platforma Garmin.
+Navigace
+Navigace je dostupná jen v případě spárovaného telefonu s hodinkami. Hodinky slouží k zobrazovaní pokynu z navigace, běžící v aplikaci na telefonu. Funguje pro všechny druhy navigace: autem, pěšky, na kole. Místo hlasových pokynů nabízí haptickou odezvu zavibrováním. Nastavení vibrací najdete v aplikaci na telefonu (Menu, Nastavení, Hodinky).
+Stopař
+Funkce Stopař na hodinkách může běžet samostatně, i když hodinky nejsou připojené k telefonu. Stopař zaznamenává běžné statistické údaje o vzdálenosti, převýšení, rychlosti, tempu, tepu či aktuální nadmořské výšce. Aktivitu je pak možné z hodinek uložit a najdete ji následně v telefonu v Moje Mapy – Aktivity. K uložení z hodinek na telefon dojde až při jejich případném opětovném spárování.
+Mapa
+Je možné zobrazit mapu základní, turistickou, leteckou, zimní a dopravní (jako v mobilní aplikaci). Mapa zobrazuje vaši aktuální polohu a v případě záznamu aktivity i trasu. Mapu je možné přepnout do tmavého režimu.
+Pokračování 6 / 49
+Sdílení polohy teď funguje i mimo navigaci, hodí se ve městě i při turistice
+Oživeno 18. listopadu 2025 | Mapy.com přichází s novou verzí mobilní aplikace pro Android a iOS. Hlavní novinkou je funkce obecného sdílení polohy (i bez spuštěné navigace), která je dostupná všem uživatelům zdarma. Svoji polohu můžete sdílet dočasně nebo trvale – ostatní pak uvidí vaši polohu na mapě, stav baterie telefonu i čas poslední aktualizace polohy.
+Sdílení polohy v aplikaci Mapy.com
+Sdílení polohy umožňuje snadno sledovat aktuální polohu ostatních přímo v mapě, a přitom zachovává jednoduché ovládání. Kdykoli můžete zkontrolovat, kde se přátelé či rodina nacházejí, aniž by museli volat nebo posílat zprávy. Novinka se hodí například při situacích, kdy se skupina rozdělí nebo její členové postupují různým tempem – pěšky, na kole či jiným způsobem dopravy. Sdílení pomáhá udržet přehled o všech účastnících a zvýšit bezpečnost při pohybu v terénu.
+Sdílení polohy najdete v hlavním menu aplikace. V první kartě vidíte osoby, které s vámi sdílí svou polohu, ve druhé kartě můžete nastavit vlastní sdílení. To lze vylepšit o přesné sdílení (spotřebovává více baterie) nebo o funkci Najít telefon. Aplikace doporučuje tuto funkci zapnout dříve, než se mobil ztratí.
+Když se přihlásíte na jiném zařízení, uvidíte v něm polohu svého ztraceného telefonu – ale pouze tehdy, pokud aplikaci povolíte trvalý přístup k vaší poloze. Sdílení může být aktivní, dokud ho nevypnete, pouze po omezenou dobu, případně můžete požádat o vzájemné sdílení.
+Sdílení polohy v nastavení. Vidíte, kdo sdílí svou polohu s vámi, a podobně můžete přátelům nasdílet i svou vaši polohu. Můžete omezit dobu sdílení nebo požádat o vzájemné sdílení
+Následně stačí sdílení odeslat svým kontaktům jakýmkoliv způsobem – třeba e-mailem nebo přes WhatsApp či různé messengery. Příjemci dorazí zpráva: „Doprovázej mě na cestách. Na Mapy.cz teď vždycky uvidíš, kde právě jsem“ s odkazem, který se otevře, buď na webu, nebo v mobilní aplikaci, pokud máte v telefonu nainstalovanou aplikaci Mapy.com.
+Sdílení potřebuje neustálý přístup k vaší poloze, která se posléze sdílí prostřednictvím odkazu v textu
+Aplikace pro Android a iOS dále zlepšila viditelnost výsledků vyhledávání na mapě, které jsou nyní přehlednější a snadněji dohledatelné. Nová verze přidává také lepší vizualizaci omezení na trase, což pomůže při plánování výletů. Specifikem verze pro Android jsou odkazy na oficiální e-shopy dálničních známek přímo pro státy, kterými vede vaše plánovaná trasa. Tím se vyhnete podvodům u zprostředkovatelských webů, na kterých stojí dálniční známka daleko více než na oficiálních stránkách.
+Pokračování 7 / 49
+Nastavte si rychlostní limit pro svoje auto a plánujte v offline mapách
+Oživeno 20. října 2025 | Mapy.com přicházejí s novou verzí mobilní aplikace pro Android i iOS. Každá přináší několik drobnějších nových funkcí. V Premium (placené) verzi na obou platformách se objevuje funkce nastavení rychlostního limitu pro své vozidlo. Vylepšeno bylo také plánování v mapách, které máte uloženy offline (u bezplatné verze aplikace lze zdarma uložit mapu jednoho státu).
+Aktuální novinky:
+- Prémiové funkce – možnost nastavit maximální rychlost pro auto
+- Vylepšené plánování v offline mapách
+- Redesign tlačítek nad mapou – přehlednější a intuitivnější ovládání (pouze iOS)
+- Vylepšení navigace – optimalizace spotřeby baterie při navigaci (pouze iOS)
+- CarPlay – možnost vylistovat uložené trasy přímo z Moje Mapy (pouze iOS)
+Jednou z prémiových nových funkcí je nastavení maximální rychlosti vozidla
+Dopravní navigace se rozšiřuje do dalších států: nyní můžete sdílet informace s ostatními řidiči i při cestě za hranice, třeba cestou do Itálie nebo do Chorvatska. Dopravní informace v navigaci zahrnují policejní hlídky, radary a kamery, zúžení, práce na silnici, nehody a kyvadlovou dopravu.
+Aktualizace se nabídne automaticky, případně ji můžete provést ručně: otevřete App Store/Obchod Play, vyhledejte Mapy.com a klikněte na Aktualizovat.
+Pokračování 8 / 49
+Naplánujte si cesty vlakem a městskou hromadnou dopravou
+Oživeno 8. září 2025 | Mapy.com vylepšují svoji mobilní aplikaci o funkci, kterou ocení zejména nemotorizovaní uživatelé. S aplikací je nově možné naplánovat si cestu veřejnou hromadnou dopravou – a to nejen tou městskou, jako je metro, tramvaje (v Brně šaliny), autobusy, trolejbusy, ale i vlakem, lodí nebo lanovkou.
+Zvolíte si cíl cesty a a...
+(Pokracovani na webu)|E|
 |T|Zasponzorovali daňoví poplatníci EU americké firmě vývoj? Co znamená, že Onsemi kupuje čipovou firmu z Brna|D|18.04.2026 07:45|P|EU dotovala Codasip miliardami, teď ho kupují Američané • . • Onsemi v ČR posiluje, ale Evropa lobbuje proti cizím vlastníkům. • Akvizice může pohřbít...|X|Americká společnost Onsemi, která má díky výrobě čipů v Rožnově pod Radhoštěm silné kořeny v Česku, kupuje část brněnské firmy Codasip zaměřené na vývoj procesorů. Na první pohled může jít o velmi pozitivní zprávu, situace ale není tak jednoduchá. Codasip totiž představoval naději, že v čipovém byznysu ztrácející Evropa vybuduje vlastního silného dodavatele procesorů a sníží závislost na USA a Asii.
 Brněnský podnik i díky této vizi získal od Evropské unie granty a dotace v přislíbeném objemu přes devět miliard korun. Zapojil se například do tvorby evropského procesoru pro AI superpočítače a servery a je součástí dalších podobných projektů. Do určité míry šlo o budování specifické alternativy k podnikům jako Intel, AMD, Arm Holdings, Nvidia a podobně. Pokud by to vyšlo, Evropa by nemusela vše jen nakupovat, ale alespoň v některých oblastech si navrhovat vlastní procesory a případně je vyvážet.
 Nyní je na místě se ptát, zda evropská strategie na posílení polovodičového sektoru funguje. Na první pohled to vypadá, že evropští daňoví poplatníci zasponzorovali americkému kupci zajímavou technologii. Není jasné, co ve výsledku může nový majitel s evropskou základnou udělat a zda velká část aktivit nezmizí do zámoří.

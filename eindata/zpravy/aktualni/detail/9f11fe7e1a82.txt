@@ -1,0 +1,23 @@
+Jedním z nedostatků, na kterém se shodnou i fandové značky, je absence fyzických ovládacích prvků v interiéru vozů Tesla. Všechno řešíte na velkém displeji, ale ovládání hmatem je jistější a bezpečnější. Řešením jsou tlačítka S3XY Buttons.
+Jde o počin bulharské společnosti Enhance Automotive, jsou k dispozici ve druhé generaci a jejich hlavní účel je jasný: zjednodušit ovládání elektromobilů Tesla Model S, 3, X a Y – odtud název S3XY.
+Co to umí
+Tato tlačítka fungují jako chytré zkratky k funkcím, které jinak řidič musí hledat v nabídce na displeji. V současnosti nabízejí přístup k až 200 funkcím. Mezi ty nejoblíbenější patří:
+- Otevření přihrádky před spolujezdcem (Glovebox)
+- Změna úrovně rekuperace (např. 0 %, 50 %, 100 %)
+- Otevření předního a zadního kufru
+- Manuální spuštění předehřevu baterie před příjezdem k nabíječce třetí strany
+- Sklopení zpětných zrcátek
+- Změna jízdního režimu (Chill / Sport)
+- Ovládání médií (další skladba, hlasitost) nebo vnitřního osvětlení a klimatizace
+Jak to funguje
+Celé řešení se skládá z vlastních tlačítek a řídicí jednotky Commander. To je malá chytrá krabička (OBD2 dongle), která se připojuje do proprietárního diagnostického konektoru Tesly. Commander dokáže bezpečně číst data z CAN sběrnice vozidla a odesílat příkazy zpět do auta.
+Tlačítka komunikují s Commanderem přes Bluetooth 5.0, slibují dosah až 10 metrů a napájí je knoflíkové baterie CR2032 (vydrží dva roky). Každým buttonem lze ovládat až tři vstupy: krátký stisk, dvojitý stisk a podržení. Každý vstup může obsahovat až tři akce, takže např. lze jedním stiskem vypnout klimatizaci, otevřít okna a ztlumit hudbu. Fantazii se meze nekladou.
+Typicky se prodává sada Commander + čtyři tlačítka, ale připojit jich můžete až osm.
+Instalace
+Instalace je jednoduchá a zvládne ji každý. Nejprve Teslu vypnete pomocí nabídky na displeji. Pak se rozpojí specifický konektor v autě (u starších modelů je to pod plastovým krytem zezadu středové konzole, u novějších modelů s procesorem AMD Ryzen, Highland nebo Juniper je to pod přihrádkou spolujezdce v A-sloupku). Mezi tyto rozpojené kabely se zacvakne „pass-through“ kabel od Enhance, do kterého se zapojí Commander.
+Nyní jsou na řadě tlačítka. Ta jsou opatřena kvalitní lepicí páskou, která dovoluje jejich nalepení prakticky kamkoliv v interiéru vozu. Zde je ale třeba upozornit na velké riziko, pokud byste tlačítko nalepili na kryt airbagu. V takovém případě by se z něho při nehodě stala smrtící zbraň! Před nalepením si ověřte v manuálu, že je dané místo z tohoto hlediska bezpečné.
+Nastavení probíhá v aplikaci v telefonu (Android / Apple iOS). V nabídce aplikace si jednoduše vyberete, jaká funkce se má přiřadit ke krátkému stisku, co k dvojkliku a co k dlouhému podržení. Kromě nastavování slouží aplikace i jako alternativní přístrojová deska (tzv. S3XY Dash), která na displeji mobilu ukazuje rychlost, výkon, teplotu baterie a další skrytá data z auta.
+Ekosystém
+Enhance Automotive nezůstalo jen u tlačítek. Systém se rozrostl do celého chytrého ekosystému, který využívá jeden stejný Commander. Nabízejí také:
+Kde a za kolik
+Chytrá tlačítka najdete na českých e-shopech od 5097 Kč za sadu s Commanderem, případně od 1272 Kč za dvě další tlačítka. Nakoupit můžete ale také přímo u výrobce, který si za sadu s Commanderem řekne o 210 €.

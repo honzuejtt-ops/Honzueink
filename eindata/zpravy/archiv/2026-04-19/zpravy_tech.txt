@@ -1,3 +1,135 @@
+|T|Česko má kvantovou síť, kvantová komunikace mezi Zemí a vesmírnou stanicí, další kvantový satelit|D|19.04.2026 17:00|P|Pravidelný přehled novinek z rozsáhlého a rozvíjejícího se oboru kvantových počítačů, který vydáváme ve spolupráci s blogem Qubits.cz.|X|Kvantovky v Česku
+Česká republika tento týden (14. dubna 2026) oficiálně zprovoznila v Brně národní páteřní síť pro kvantovou distribuci klíčů (QKD) zvanou CZQCI, která propojuje Prahu, Brno a Ostravu. Síť má celkovou délku 622 kilometrů, obsahuje sedm uzlů (tři standardní a čtyři trusted nodes v Čáslavi, Žďáru nad Sázavou, České Třebové a Olomouci) a využívá infrastrukturu optických vláken ČD-Telematiky ve dvou vláknových párech a šesti optických linkách. Technologicky stojí na zařízeních japonské Toshiby (celkem 14 zařízení za přibližně 63 milionů korun) a generuje AES 256bitové klíče průměrně 33 kilobitů za sekundu při kvantové chybovosti pod pět procent. K síti jsou připojeny ČVUT (dvě fakulty), VUT, VŠB-TUO (s IT4Innovations superpočítačovým centrem), Palackého univerzita v Olomouci, CESNET a Akademie věd. Financování první fáze (přibližně 125 milionů korun + EU spolufinancování) bylo pokryto z Národního plánu obnovy a NextGenerationEU. Problém je ve druhé fázi: požadováno je minimálně 100 milionů korun (celková potřeba 200 milionů korun na čtyři roky) na propojení s evropskou sítí EuroQCI, avšak Ministerstvo průmyslu a obchodu uvádí, že v rozpočtu žádné peníze nejsou, navzdory dřívějším slibům bývalého ministra Marka Ženíška. EU má mít celkově sedm tisíc kilometrů QKD sítí provozovaných po roce 2030 s celkovými investicemi 193 milionů eur (z toho 97 milionů eur evropských fondů). Sousední státy, Polsko, Německo, Maďarsko, Rakousko, Slovensko, v projektu postoupily dál a bez českého zapojení by se propojení severu s jihem a východu se západem muselo vést přes Slovensko. Více zde.
+Kvantové počítače
+Q-CTRL přetavila architekturu Q-NEXUS, modulární kvantový framework, který nahrazuje monolitické soustavy qubitů specializovanými funkčními jednotkami: Quantum Processing Units (QPU) pro logické operace, Quantum Memory (QM) pro úložiště a Quantum State Factories (QSF) pro generování zdrojů. Klíčovým vhledem je, že qubity v algoritmech typu faktorizace RSA-2048 zůstávají nečinné během 96 až 97 procent všech logických cyklů. Q-NEXUS toho využívá segregováním pasivních qubitů do hierarchických paměťových vrstev a eliminací zbytečné aktivní korekce chyb. Paměť je rozdělena na Static Transversal Quantum Memory (STQM) s extra dlouhou koherencí na qubitech z uvězněných iontů, které nevyžadují aktivní korekci, a Random-Access Quantum Memory (RAQM) pro dlouhodobé ukládání na qubitech z neutrálních atomů. Pro faktorizaci RSA-2048 to podle analýzy vyžaduje 190 tisíc až 381 tisíc fyzických qubitů v závislosti na paměťové modalitě, což je přibližně 138× méně než u základních homogenních architektur. Pro specifické subrutiny dochází k 551× snížení logické chybovosti. Aplikačně specifické QPUs zkracují dobu faktorizace přibližně o 50 procent. Orchestraci zajišťuje Q-CHESS kompilátor, který synchronizuje mikrosekundové supravodivé QPU s milisekundovými paměťovými vrstvami prostřednictvím inteligentního plánování a out-of-order execution.
+Francouzský kvantový startup C12 představil ambiciózní roadmapu k dosažení utility-scale fault-tolerantního kvantového počítání do roku 2033 pomocí distinktivní architektury založené na purifikovaných nanotrubicích z uhlíku-12 hostujících spinové qubity. Klíčová technologická výhoda: izotopově čisté nanotrubice C-12 nemají jaderný spin, což zajišťuje výrazně lepší izolaci od šumu než tradiční polovodičové spin qubity. Qubity lze ladit v milisekundových škálách, což snižuje složitost klasického řízení. Roadmapa zahrnuje čtyři milníky: Aïdôs (2027) — 16 fyzických qubitů, jeden logický qubit, chybovost 10⁻³, sub-mikrosekundové gate speeds; Zélos (2030) — 236 fyzických qubitů, osm logických, chybovost 10⁻⁵, modulární chiplet architektura s integrovanou kryoelektronikou; Styx (2032) — 8 500 fyzických qubitů, 128+ logických, chybovost 10⁻⁶; Panopeia (2033) — 100 tisíc fyzických qubitů, 792+ logických, chybovost 10⁻⁷, cílený sub-wattový výkon na qubit. Hustota qubitů stoupá z 1,4/m² k 6 000/m².
+Kvantový software a algoritmy
+Výzkumný tým z Caltechu, Google Quantum AI, MIT a Oratomicu publikoval práci (preprint), která teoreticky demonstruje exponenciální kvantovou výhodu pro vybrané úkoly strojového učení. Klíčovou inovací je technika „quantum oracle sketching“, která umožňuje kvantovým systémům zpracovávat datové toky bez ukládání celého datasetu. Místo načtení kompletních dat do kvantové paměti systém sekvenčně zpracovává jednotlivé vzorky, aplikuje kvantové operace a poté je zahodí. Analyzované ML úlohy zahrnují klasifikaci (například sentiment analysis), redukci dimenzí a řešení lineárních soustav rovnic. Teoretické výsledky ukazují, že kvantové systémy s méně než 60 logickými qubity by dosahovaly srovnatelného výkonu jako klasické počítače, zatímco klasické systémy by vyžadovaly exponenciálně více paměti — redukce byla čtyři až šest řádů. Numerické simulace na reálných datech (recenze filmů, single-cell RNA sequencing) validovaly tyto výsledky. Výsledky jsou však založeny na simulacích, nikoli na kvantovém hardware.
+Nvidia vydala Ising, první rodinu open source AI modelů určených pro kvantové výpočty, které se zaměřují na dva kritické úkoly: kalibraci kvantových procesorů a dekódování kvantové korekce chyb. Ising Calibration je vision-language model, který automatizuje kontinuální kalibraci kvantových procesorů, interpretuje měření a zkracuje čas nastavování ze dnů na hodiny. Ising Decoding představuje dvě varianty 3D konvolučních neuronových sítí optimalizované buď pro rychlost, nebo pro přesnost dekódování chyb. Technické výsledky: až 2,5× rychlejší výkon pro kvantovou korekci chyb a třikrát vyšší přesnost oproti pyMatching, současnému open-source standardu. Modely se integrují s Nvidia CUDA-Q platformou, NVQLink QPU-GPU interconnectem a NIM mikroslužbami pro fine tuning.
+A IQM Quantum Computers představila automatizovaný přístup k ladění kvantových systémů založený na AI-řízené „agentické kalibraci“ s využitím modelů NVIDIA Ising. Z jejich pohledu, klíčovou inovací je paralelní zpracování, IQM visual agenti kontrolují kalibrační výsledky napříč qubity simultánně v každé fázi, nikoli sekvenčně. Tento přístup řeší nelineární růst interakcí mezi qubity, který se objevuje se škálováním kvantových procesorů, kde tradiční sekvenční kalibrační metody nestíhají udržet krok. Systémy by měly být schopny optimalizovat samy sebe, udržovat vyšší algoritmickou efektivitu a operovat konzistentně při vysoké fidelitě.
+A další, co to implementují následují, jako Infleqtion pro korekci kvantových chyb na jejich neutrálních atomech; Q-Ctrl pro fyzikálně-informované kalibrace; a další. Tohle znova ukazuje velmi silnou pozici Nvidie.
+ParityQC a IBM úspěšně provedly 52qubitovou kvantovou Fourierovu transformaci (QFT) na procesoru IBM Heron r3, což je významný nárůst oproti předchozím 27qubitovým implementacím z roku 2024. Klíčovou inovací je proprietární architektura ParityQC „Parity Twine“, která odstraňuje SWAP hradla (standardní způsob přesunu informací mezi qubity) a místo toho přesouvá paritní informace po hardwaru pomocí sekvencí CNOT hradel. Tento přístup nabízí super-exponenciální škálování výkonu O(exp(N²)) a je optimalizován pro specifické topologie jako IBM’s heavy-hexagonal topologie.
+Kvantová bezpečnost a komunikace
+StarkWare navrhuje kvantově-odolnou metodu QSB (Quantum-Safe Bitcoin) pro Bitcoin, která, na rozdíl od tradičního forku, funguje zcela v rámci stávajícího skriptovacího systému Bitcoinu bez protokolových úprav. Místo implementace standardních postkvantových algoritmů (typu ML-DSA nebo SLH-DSA) přístup využívá hash-based hádanky a Lamportovy podpisy vložené do skriptů. Bezpečnostní úroveň je přibližně 118 bitů. Uživatelé musí provádět off-chain výpočet na GPU hardware s odhadovanými náklady „několik stovek dolarů za transakci“, přičemž řeší hashové hádanky s obtížností přibližně jeden úspěch na 246 pokusů. Řešení respektuje stávající limity Bitcoin skriptu (201 non-push opcodes a 10 tisíc bajtů). Pozitivní je, že QSB nevyžaduje hard fork, takže jej lze nasadit postupně bez konsensu celé sítě. Nedostatky: vysoké náklady, zvýšená komplexnost pro uživatele, omezená kompatibilita s Lightning Network a nestandardní transakční formát, který ovlivňuje relay. Návrh se nezabývá problémem spících aktiv. QSB je pozicován jako přechodná strategie, nikoli jako trvalé řešení.
+Qubitrium, turecko-nizozemský startup, vypustil na oběžnou dráhu payload QubitCore jako součást mise SpaceX Transporter-16 (30. března 2026). CubeSat o velikosti krabičky od bot (přibližně 10 centimetrů na stranu, váha zhruba jeden kilogram, spotřeba několika wattů) obsahuje integrovanou jednotku pro kvantovou distribuci klíčů (QKD) pomocí protokolu BBM92 založeného na provázaných fotonech. V payloadu jsou sjednoceny generátor provázaných fotonů, optický přijímací modul s detektory a time-tagging elektronika. Mise je validační, nikoli plně operační, cílem je otestovat, zda provázané fotony lze spolehlivě generovat a měřit v kosmických podmínkách pomocí kompletně integrovaného miniaturizovaného hardware. Inženýři budou zkoumat dlouhodobou výkonnost, degradaci detektorů, účinky radiace a stabilitu korelace provázání. Další fáze zahrnuje payload druhé generace vybavený optickým teleskopem pro umožnění komunikace mezi satelitem a pozemskými stanicemi, později integrace kvantové paměti. Na rozdíl od státních programů (např. čínský Micius) jde o komerčně nasaditelný hardware, který směřuje od izolovaných demonstrací k opakovatelnému nasazení.
+Voyager Space a IBM úspěšně demonstrovaly postkvantově zabezpečené komunikační spojení mezi Zemí a Mezinárodní vesmírnou stanicí (ISS), čímž prokázaly, že satelitní data lze chránit před budoucími kvantovými hrozbami pomocí stávající infrastruktury. Demonstrace využila Space Edge Micro Datacenter, který byl na ISS vypuštěn v září 2025, a software IBM Quantum Safe Remediator, jenž funguje jako inteligentní proxy kolem legacy aplikací, interně překládá klasické šifrování, ale s okolním světem komunikuje ...
+(Pokracovani na webu)|E|
+|T|Recenze telefonu Honor Magic8 Pro. Špičkový výkon a zvuk, který jinde neuslyšíte|D|19.04.2026 16:44|P|Otestovali jsme Honor Magic8 Pro • Topmodel napěchovaný výkonem a umělou inteligencí • Fotoaparát není stoprocentní, ale chválíme za skvělý zvuk|X|Jasný displej s ochranou očí
+Slušná kvalita fotek
+Bohatá softwarová výbava
+Na mobil hodně kvalitní zvuk
+Selfie bez ostření
+Kvalita natáčených videí za očekáváním
+Výraznější zahřívání při hraní her
+Nižší kapacita baterie u modelu pro EU
+Honor se na nový rok připravil ve velkém stylu. Topmodel Honor Magic 8 Pro má prakticky vše, co si od telefonu vyšší třídy můžete přát. Vizuálně zaujme již na první pohled jasným displejem zakřiveným ze všech stran nebo obřím fotomodulem na zádech. To vše se skrývá v telefonu s kovovým rámem a nadstandardní baterií. V návrhu nechybí ani dedikovaná spoušť fotoaparátu s funkcí přiblížení ani „Dynamic Island“.
+Honor Magic8 Pro jsme otestovali v černé barevné variantě
+Pod kapotou čeká vysoký výkon a negativa se hledají jen těžko. Jedno tu přece jen je: v Číně má identický model výrazně větší baterii než verze pro EU. Kvůli omezením letecké přepravy baterií se musíme spokojit s kapacitou 6 270 mAh, což je i tak slušný nadstandard. Oproti již dobře vybavenému Magic 7 Pro přináší novinka další vylepšení, a to nejen v oblasti fotoaparátů. Vynikají například reproduktory, které při výrazných basech doslova rozvibrují celý telefon – a po pár desítkách minut poslouchání máte jasno, že lépe znějící smartphone jste zatím asi neslyšeli.
+V českých obchodech stojí až Kč
+Porovnat ceny
+Celkově vzato však telefonu chybí prvek, který by ho vymanil z komfortní zóny a jasně odlišil od konkurence. Ano, tím prvkem může být i zmiňovaný zvuk, jenže ten se marketingově neprodává snadno. Nestačí být ve všem velmi dobrý – zákazník potřebuje konkrétní důvod, proč si vybrat právě tento telefon. Navenek jde o ucelený balíček výkonu a funkcí, který vsází na jistotu ve všech ohledech: výkon, prostředí, fotoaparát i design. Je to výborný telefon, na který si rychle zvyknete, celkový dojem však trochu kazí cena – v námi testované paměťové variantě přesáhla 30 000 korun.
+Pokračování článku patří k prémiovému obsahu pro předplatitele
+Chci Premium a Živě.cz bez reklam
+Od 58 Kč měsíčně|E|
+|T|Tohle se fakt stalo. Nejlepší filmy podle skutečných událostí, kterým prostě neuvěříte|D|19.04.2026 15:45|P|Realita občas píše scénáře, které by Hollywood odmítl jako přehnané. Přesto vznikly filmy, které takové příběhy vyprávějí – o podvodech, náhodách, šíl...|X|Ukázat všechny listy najednou
+American Animals
+Čtveřice znuděných vysokoškoláků z amerického Kentucky dostane pocit, že jejich život je až příliš obyčejný. Místo brigády nebo cestování si proto vyberou jinou zábavu – naplánují krádež vzácného prvotisku z univerzitní knihovny. Inspiraci hledají ve filmech, sledují loupežné klasiky a snaží se napodobit jejich styl. Jenže nervozita, chyby a absolutní nepřipravenost postupně promění „geniální plán“ v bolestivě trapnou akci.
+Uvidíte konfrontaci filmových představ s tvrdou realitou. Tvůrci kombinují hrané scény s výpověďmi skutečných aktérů, kteří své mladické rozhodnutí komentují s odstupem let – a často si navzájem odporují. Výsledkem je také fascinující pohled na to, jak si lidé upravují vlastní vzpomínky. Je to příběh, kterému asi nikdo neuvěří, kdyby nebyl skutečný.
+Hodnocení Kinobox.cz : 68 %
+Žánr: Krimi filmy
+Režie: Bart Layton
+Hrají: Evan Peters, Barry Keoghan, Blake Jenner, Jared Abrahamson, Ann Dowd, Gary Basaraba, Lara Grice, Jane McNeill, Whitney Goin, Udo Kier
+Původ a premiéra: Velká Británie, 2018
+Délka: 117 minut
+Kde si film můžete pustit: Zrovna není nikde dostupný online
+Pokračování 2 / 21 Bernie
+Bernie Tiede je na první pohled ideální občan malého texaského městečka. Vždy upravený, ochotný pomoci, pracuje jako pohřební služebník a místní ho doslova milují. Když se spřátelí s bohatou, velmi nepříjemnou vdovou, nikdo tomu nepřikládá velký význam. Jenže jejich vztah postupně přeroste v dusivou závislost, která skončí vraždou. Bernie ženu zastřelí, její tělo schová… a dál žije, jako by se nic nestalo. Měsíce.
+Když se všechno provalí, obyvatelé města se za Bernieho postaví a odmítají přijmout, že by udělal něco zlého. Film balancuje mezi černou komedií a true crime a přesně ukazuje, že skutečný život někdy ignoruje logiku i morálku zároveň.
+Hodnocení Kinobox.cz : 60 %
+Žánr: Drama
+Režie: Richard Linklater
+Hrají: Jack Black, Shirley MacLaine, Matthew McConaughey, Tommy G. Kendrick, Gary Teague, Rick Dial, Mona Lee Fultz, Brady Coleman, Dale Dudley, Grant James
+Původ a premiéra: USA, 2011
+Délka: 100 minut
+Kde si film můžete pustit: Rakuten (dabing), Vodafone (bez dabingu a titulků)
+Pokračování 3 / 21 I Love You Phillip Morris
+Steven Russell žije spořádaný život – má rodinu, práci i jasně nalajnovanou budoucnost. Pak ale přijde autonehoda, která mu obrátí svět naruby. Rozhodne se přestat hrát roli, kterou nikdy nechtěl, a začne žít naplno. Problém je, že k tomu využívá podvody, falešné identity a nekonečnou kreativitu na hraně zákona. Když skončí ve vězení, potká Phillipa Morrise – a kvůli němu začne utíkat znovu a znovu.
+Skutečný Steven Jay Russel se proslavil mnoha bizarními útěky z vězení, které realizoval vždy v pátek třináctého. Vydával se za soudce, lékaře, údržbáře. Při jednom útěku přepadl banku – když ho zatkli, předstíral infarkt a v nemocnici tvrdil, že má AIDS. Další útěk se mu zdařil, když si přebarvil vězeňský mundúr na zeleno a vydával se za bachaře. Poslední útěk se mu povedl v roce 1998 a po něm následoval trest 144 let za mřížemi. Bylo mu naměřeno IQ 169.
+Hodnocení Kinobox.cz : 69 %
+Žánr: Drama
+Režie: Glenn Ficarra, John Requa
+Hrají: Jim Carrey, Ewan McGregor, Leslie Mann, Rodrigo Santoro, Brennan Brown, Nicholas Alexander, Nicholas Alexander, Tony Bentley, Michael Beasley, Sean Boyd
+Původ a premiéra: USA, 2009
+Délka: 98 minut
+Kde si film můžete pustit: iVysílání (titulky), KVIFF (titulky)
+Pokračování 4 / 21 Chyť mě, když to dokážeš
+Frank Abagnale Jr. je teenager, který se po rozpadu rodiny rozhodne vzít osud do vlastních rukou. Nevybere si ale obyčejnou cestu. V průběhu několika let se vydává za pilota letecké společnosti, lékaře i právníka, pohybuje se mezi elitami a bez větších problémů inkasuje miliony dolarů pomocí falešných šeků. Přitom mu je sotva dvacet a všechno stojí na drzosti, improvizaci a schopnosti přesvědčit okolí, že přesně tam patří.
+Výborné životopisné drama o Franku Abagnalovi, jednom z největších podvodníků a padělatelů všech dob, funguje jako připomínka, že největší slabinou složitých systémů je člověk. A když to někdo umí využít, realita začne připomínat nechtěnou komedii.
+Hodnocení Kinobox.cz : 86 %
+Žánr: Krimi filmy
+Původní název: Catch Me If You Can
+Režie: Steven Spielberg
+Hrají: Leonardo DiCaprio, Tom Hanks, Christopher Walken, Martin Sheen, Amy Adams, James Brolin, Brian Howe, Frank John Hughes, Steve Eastin, Chris Ellis
+Původ a premiéra: USA, 2002
+Délka: 141 minut
+Kde si film můžete pustit: Netflix (titulky), SkyShowtime (dabing a titulky), Apple TV (bez dabingu a titulků), Amazon Obchod (titulky), Google (bez dabingu a titulků), Rakuten (dabing a titulky), Sweet (dabing a titulky)
+Pokračování 5 / 21 Vlk z Wall Street
+Film je z doby, kdy na Wall Street vládla pravidla Divokého západu, jen místo pistolníků na koních se tu proháněly jachty a nahé blondýny a místo prachu nad prérií vířily vzduchem bankovky.
+Většina toho, co ve filmu působí přehnaně, má reálný základ – a v některých případech byla skutečnost prý ještě divočejší. Fascinující je i to, jak dlouho dokázal systém selhávat, než zasáhl. Vlk z Wall Street není jen portrétem jednoho manipulátora, ale i ukázkou prostředí, které mu to umožnilo.
+Hodnocení Kinobox.cz : 86 %
+Žánr: Drama
+Původní název: The Wolf of Wall Street
+Režie: Martin Scorsese
+Hrají: Leonardo DiCaprio, Jonah Hill, Margot Robbie, Kyle Chandler, Rob Reiner, Matthew McConaughey, Kenneth Choi, Brian Sacca, Cristin Milioti, Aya Cash
+Původ a premiéra: USA, 2013
+Délka: 180 minut
+Kde si film můžete pustit: Oneplay (dabing), Apple TV (dabing a titulky), DaFilms (bez dabingu a titulků), Google (dabing a titulky), KVIFF (titulky), Prima plus (bez dabingu a titulků)
+Pokračování 6 / 21 Pot a krev
+Parta svalnatých borců z Miami má pocit, že jim život něco dluží. Místo poctivé práce se proto rozhodnou pro rychlou zkratku – unesou bohatého podnikatele a chtějí ho donutit, aby na ně přepsal svůj majetek. Plán zní jednoduše, jenže provedení je všechno, jen ne profesionální. Série chyb, improvizací a naprosté neschopnosti postupně promění „akci století“ v groteskní katastrofu, která se vymyká zdravému rozumu.
+Film je dokonalá ukázka, jak absurdní kombinace hlouposti a sebevědomí může vést k reálným následkům. Často balancuje na hraně černé komedie, ale to, co působí jako parodie, se skutečně odehrálo.
+Hodnocení Kinobox.cz : 72 %
+Žánr: Akční filmy
+Původní název: Pain & Gain
+Režie: Michael Bay
+Hrají: Mark Wahlberg, Dwayne Johnson, Anthony Mackie, Tony Shalhoub, Ed Harris, Rob Corddry, Bar Paly, Rebel Wilson, Ken Jeong, Michael Rispoli
+Původ a premiéra: USA, 2013
+Délka: 130 minut
+Kde si film můžete pustit: SkyShowtime (dabing a titulky), Apple TV (dabing), Amazon Obchod (bez dabingu a titulků), Sweet (dabing)
+Pokračování 7 / 21 Muži, co zírají na kozy
+Americká armáda během studené války zkoumá možnosti, které znějí spíš jako scénář béčkového sci-fi. Psychické schopnosti, ovládání mysli, procházení zdí, zabíjení zvířat pouhým pohledem… Film sleduje novináře, který se dostane k bývalému členovi tajné jednotky a odhaluje, co všechno se v rámci těchto experimentů skutečně testovalo.
+Snímek může působit jako nadsázka, jenže vychází z reálných projektů americké armády, které se snažily využít parapsychologii pro vojenské účely. Co dnes působí skoro komicky, bylo kdysi myšlené naprosto vážně.
+Hodnocení Kinobox.cz : 61 %
+Žánr: Válečné filmy
+Původní název: The Men Who Stare at Goats
+Režie: Grant Heslov
+Hrají: George Clooney, Ewan McGregor, Robert Patrick, Stephen Lang, Jeff Bridges, Kevin Spacey
+Původ a premiéra: USA, 2009
+Délka: 93 minut
+Kde si film můžete pustit: Rakuten (bez dabingu a titulků), Vodafone (dabing)
+Pokračování 8 / 21 Medvěd na koksu
+Nad americkou Georgií se vysype z letadla zásilka kokainu. Většina skončí v lese, kde ji náhodou najde medvěd. Ten drogu sežere… a tím začíná série událostí, která působí jako čistý výmysl. Zvíře pod vlivem začne být extrémně agresivní a následuje chaos.
+Film vychází ze skutečných událostí z roku 1985. Představa, že někde v lese pobíhal medvěd nadopovaný kokainem, je natolik absurdní, že by ji většina scénářů neunesla. Přesto se to stalo.
+Hodnocení Kinobox.cz : 49 %
+Žánr: Horory
+Původní název: Cocaine Bear
+Režie: Elizabeth Banks
+Hrají: Keri Russell, O'Shea Jackson Jr., Jesse Tyler Ferguson, Alden Ehrenreich, Ray Liotta, Margo Martindale, Kristofer Hivju, Christian Convery, Brooklynn Prince, Kahyun Kim
+Původ a premiéra: USA, 2023
+Kde si film můžete pustit: Apple TV (dabing a titulky), Amazon Obchod (dabing a titulky), Rakuten (dabing a titulky)
+Pokračování 9 / 21 Argo
+Teherán, rok 1979. Americké velvyslanectví obsadí revoluční studenti a desítky lidí skončí jako rukojmí. Šest diplomatů ale stihne uprchnout a ukryje se u kanadského velvyslance. CIA musí vymyslet způsob, jak je dostat ze země, aniž by vzbudila podezření. A řešení? Předstírat natáčení hollywoodského sci-fi filmu, vytvořit falešnou produkci, scénář i štáb a pod touto zástěrkou uprchlíky vyvézt jako „filmaře hledající lokace“.
+I s odstupem to vypadá jako šílený nápad. Jenže ve skutečnosti právě tahle kombinace drzosti, improvizace a pochopení, jak fungují úřady i lidská psychika, nakonec vyšla.
+Hodnocení Kinobox.cz : 79 %
+Žánr: Thrillery
+Režie: Ben Affleck
+Hrají: Ben Affleck, Bryan Cranston, Alan Arkin, John Goodman, Victor Garber, Tate Donovan, Clea DuVall, Scoot McNairy, Rory Cochrane, Christopher Denham
+Původ a premiéra: USA, 2012
+Délka: 120 minut
+Kde si film můžete pustit: Apple TV (bez dabingu a titulků), Rakuten (dabing)
+Pokračování 10 / 21 Invaze: Operace Mincemeat
+Spojenci během druhé světové války potřebují odklonit pozornost nacistů od plánované invaze na Sicílii. Řešení, ke kterému se britská rozvědka uchýlí, působí na první dobrou absurdně: vezmou tělo mrtvého muže, vytvoří mu novou identitu důstojníka a „náhodou“ ho nechají vyplavit na pobřeží ve Španělsku. U něj jsou dokumenty s falešnými plány, které mají Němce přesvědčit, že útok přijde jinde.
+Film byl inspirovaný skutečným příběhem plánu oklamat Ně...
+(Pokracovani na webu)|E|
 |T|[AKTUALIZOVÁNO 19. 4.] Modely procesorů Nova Lake: Od 6 až po 52 jader, pět modelů s herní cache, 35 W až 175 W|D|19.04.2026 14:15|P|Máme informace o tom, kolik jader budou mít jednotlivé modely procesorů Intel Nova Lake pro desktop a také o tom, jaké modely chystá firma s velkou ca...|X|Na konci letošního nebo začátkem příštího roku by měl Intel po současném horším období opět vydat silnější a konkurenceschopnější procesory s generací Nova Lake. Ta přijde na rozdíl od nynějších Core Ultra 300 „Panther Lake“ i do desktopu, s novou platformou LGA 1954 (bohužel vyžadující nové desky). V neděli se na internet dostaly nové informace právě o chystaných desktopových modelech, už ukazující, kolik jader které modely dostanou.
 Desktopové procesory Core Ultra Series 4: Nové detaily
 Web VideoCardz uvádí, že se mu podařilo dostat k dokumentům, v nichž Intel tyto procesory představuje, patrně určeným pro partnery a OEM výrobce počítačů. Ty jednak potvrzují, že Nova Lake má vyjít jako Core Ultra 400, respektive Core Ultra Series 4 (o čemž se moc nepochybovalo). Ale zejména ukazují, jaké čipy pro Nova Lake jsou nachystané a kolikajádrové modely z nich Intel postaví pro různé segmenty trhu.

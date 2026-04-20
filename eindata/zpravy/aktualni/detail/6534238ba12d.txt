@@ -1,0 +1,52 @@
+Praktické použití textových režimů nabízených čipem ANTIC
+Co se dozvíte v článku
+- Praktické použití textových režimů nabízených čipem ANTIC
+- Struktura video RAM ve standardním textovém režimu
+- Demonstrační příklad: tisk znaků ve standardním textovém režimu
+- Volba znakové sady ve standardním textovém režimu
+- Demonstrační příklad: volba mezinárodní znakové sady
+- Demonstrační příklad: volba „náhodné“ stránky se znakovou sadou
+- Struktura video RAM v textových režimech GR.1 a GR.2
+- Demonstrační příklad: tisk 64 znaků ve čtyřech barvách
+- Které 64 znaky se budou tisknout a jak se určuje jejich barva?
+- Demonstrační příklad: výběr části ATASCII s malými znaky pro grafický režim GR.1
+- Struktura video RAM v textových režimech GR.12 a GR.13
+- Demonstrační příklad: tisk znaků v textovém režimu GR.12
+- Způsob výběru barvy pixelů v textových režimech GR.12 a GR.13
+- Definice vlastní znakové sady (naivní implementace)
+- Demonstrační příklad: zobrazení vlastních znaků v textovém režimu GR.12
+- Od textových režimů k režimům grafickým
+- Nejjednodušší případ: dvoubarevný grafický režim s rozlišením 80×48 pixelů
+- Příloha: Makefile pro překlad všech demonstračních příkladů
+- Repositář s demonstračními příklady
+- Odkazy na Internetu
+Na úvodní článek s představením základních vlastností čipu ANTIC dnes navážeme. Popíšeme si základní vlastností textových režimů podporovaných osmibitovými počítači Atari. Připomeňme si, že se jedná o celkem šest režimů:
+Na základě společných vlastností je možné tyto režimy rozdělit do tří podskupin (vždy po dvojicích):
+- V první podskupině je standardní textový režim GR.0 (ANTIC 2) a režim ANTIC 3. V těchto režimech se zobrazují monochromatické znaky o výše osmi resp. deseti obrazových řádků. Barva pozadí a popředí znaků má vždy stejný odstín, liší se jen intenzita. Režim GR.0 bude popsán ve druhé až šesté kapitole, protože se budeme zabývat i problematikou znakové sady.
+- Ve druhé podskupině jsou režimy GR.1 a GR.2 (ANTIC 6 a 7). Horizontální počet znaků je snížen na polovinu (stejně jako rozlišení) a zobrazit je možné jen 64 znaků (nikoli 128). Nejvyšší dva bity znaků určují jejich barvu, pátá je barva pozadí (implicitně černá). Těmito režimy se budeme zabývat v kapitole sedmé až desáté.
+- Režimy GR.12 a GR.13 (ANTIC 4 a 5) leží na pomezí mezi čistě textovými režimy a režimy grafickými. Znaky mají poloviční horizontální rozlišení a vždy dva bity v bitmapě znaku určují barvu pixelu. Tím lze rozlišit čtyři barvy; pátá barva je vybrána sedmým bitem kódu znaku. Výsledkem jsou „divné“ (špatně čitelné) znaky, ovšem modifikací znakové sady lze docílit mnoha zajímavých efektů. Režimy GR.12 a GR.13 se začneme zabývat v kapitole jedenácté.
+Připomeňme si, že pro nastavení nějakého režimu musíme vytvořit takzvaný display list, který je interpretován čipem ANTIC. Display list umožňuje specifikovat pro každý logický řádek nějaký textový či grafický režim. Prozatím budeme pro celou obrazovku používat vždy ten samý režim.
+Příkladem je nastavení display listu tak, aby se zobrazilo dvanáct řádků v textovém režimu GR.2:
+.include "atari.inc" .CODE .proc main lda #<dlist ; nižší byte adresy display listu sta SDLSTL lda #>dlist ; vyšší byte adresy display listu sta SDLSTH ldy #0 ; počitadlo zápisů lda #0 ; kód vypisovaného znaku clear: sta screen, y ; tisk znaku na zvolené místo na obrazovce clc adc #1 iny ; zvětšit hodnotu počitadla a offsetu cpy #20*12 ; test na koncovou hodnotu počitadla bne clear ; skok, pokud Y>20x12 loop: jmp loop .endproc dlist: .byte DL_BLK8, DL_BLK8, DL_BLK8 ; 3x8=24 prázdných obrazových řádků .byte DL_LMS+DL_CHR20x16x2 ; určení počáteční adresy obrazové paměti + jeden řádek režimu 7 .byte <screen, >screen ; počáteční adresa obrazové paměti .byte DL_CHR20x16x2 ; jeden řádek textového režimu 7 (GR.2) .byte DL_CHR20x16x2 ; jeden řádek textového režimu 7 (GR.2) .byte DL_CHR20x16x2 ; jeden řádek textového režimu 7 (GR.2) .byte DL_CHR20x16x2 ; jeden řádek textového režimu 7 (GR.2) .byte DL_CHR20x16x2 ; jeden řádek textového režimu 7 (GR.2) .byte DL_CHR20x16x2 ; jeden řádek textového režimu 7 (GR.2) .byte DL_CHR20x16x2 ; jeden řádek textového režimu 7 (GR.2) .byte DL_CHR20x16x2 ; jeden řádek textového režimu 7 (GR.2) .byte DL_CHR20x16x2 ; jeden řádek textového režimu 7 (GR.2) .byte DL_CHR20x16x2 ; jeden řádek textového režimu 7 (GR.2) .byte DL_CHR20x16x2 ; jeden řádek textového režimu 7 (GR.2) .byte DL_JVB, <dlist, >dlist ; skok na začátek display listu end: .BSS screen: .res 20*24 .segment "EXEHDR" .word $ffff ; uvodni sekvence bajtu v souboru XEX .word main ; zacatek kodoveho segmentu .word end - 1 ; konec kodoveho segmentu .segment "AUTOSTRT" ; segment s pocatecni adresou .word RUNAD ; naplni se pouze adresy RUNAD a RUNAD+1 .word RUNAD+1 .word main ; adresa vstupniho bodu do programu ; finito
+Výsledek:
+Struktura video RAM ve standardním textovém režimu
+Popis textových režimů začneme režimem, do kterého se osmibitové počítače Atari typicky přepnou po zapnutí (pokud ovšem uživatel neovlivní inicializační fázi). Tento režim je použit jak Atari BASICem, tak i dalšími vývojovými nástroji, například Atari Macroassemblerem atd.:
+V tomto režimu se zobrazuje 40 znaků na řádku a počet textových řádků je standardně nastaven na 24. Celkem je tedy možné zobrazit 40×24=960 bajtů. Každý znak je uložen v jednom bajtu, takže velikost video RAM je taktéž 960 bajtů (a v BASICu bývá namapována na adresy 40000 až 40960, což se dobře pamatuje).
+Znaková sada osmibitových Atari obsahuje 128 znaků. Pokud do video RAM zapíšeme znak s kódem vyšším než 128, je znak zobrazen inverzně, tj. nejvyšší bit znaku určuje způsob zobrazení a nikoli tvar znaku. Textový režim je monochromatický – pozadí i znaky mají stejný odstín barvy, ovšem odlišnou intenzitu. Ve výchozím nastavení se používá modrý odstín, ale může se jednat o libovolný jiný odstín z nabídky šestnácti barev. Barva se nastavuje registrem COLOR2, například:
+.include "atari.inc" .CODE .proc main lda #18 ; kod barvy sta COLOR2 ; ulozit do registru COLOR2 loop: jmp loop end: .endproc .segment "EXEHDR" .word $ffff ; uvodni sekvence bajtu v souboru XEX .word main ; zacatek kodoveho segmentu .word main::end - 1 ; konec kodoveho segmentu .segment "AUTOSTRT" ; segment s pocatecni adresou .word RUNAD ; naplni se pouze adresy RUNAD a RUNAD+1 .word RUNAD+1 .word main ; adresa vstupniho bodu do programu ; finito
+S výsledkem:
+Popř. při nastavení černé barvy:
+Demonstrační příklad: tisk znaků ve standardním textovém režimu
+V dnešním prvním demonstračním příkladu je explicitně nastaven display list tak, aby zobrazil standardní textový režim GR.0, ovšem pro zajímavost s menším počtem textových řádků. Display list tedy obsahuje všechny čtyři nezbytné části:
+- Několik prázdných řádků na začátku obrazovky
+- Nastavení počátku video RAM + nastavení prvního textového řádku
+- Dále nastavíme dalších 11 řádků (ne 23) do textového režimu
+- Skok na začátek display listu
+Dále se do video RAM zapíšou hodnoty 0 až 255 odpovídající 128 dostupným znakům v neinvertujícím i invertujícím zobrazení:
+Následuje úplný zdrojový kód tohoto demonstračního příkladu:
+.include "atari.inc" .CODE .proc main lda #<dlist ; nižší byte adresy display listu sta SDLSTL lda #>dlist ; vyšší byte adresy display listu sta SDLSTH ldy #0 ; počitadlo zápisů clear: tya ; kód vypisovaného znaku sta screen, y ; tisk znaku na zvolené místo na obrazovce iny ; zvětšit hodnotu počitadla a offsetu bne clear ; skok loop: jmp loop .endproc dlist: .byte DL_BLK8, DL_BLK8, DL_BLK8 ; 3x8=24 prázdných obrazových řádků .byte DL_LMS+DL_CHR40x8x1 ; určení počáteční adresy obrazové paměti + jeden řádek režimu 2 (GR.0) .byte <screen, >screen ; počáteční adresa obrazové paměti .byte DL_CHR40x8x1 ; jeden řádek textového režimu 2 (GR.0) .byte DL_CHR40x8x1 ; jeden řádek textového režimu 2 (GR.0) .byte DL_CHR40x8x1 ; jeden řádek textového režimu 2 (GR.0) .byte DL_CHR40x8x1 ; jeden řádek textového režimu 2 (GR.0) .byte DL_CHR40x8x1 ; jeden řádek textového režimu 2 (GR.0) .byte DL_CHR40x8x1 ; jeden řádek textového režimu 2 (GR.0) .byte DL_CHR40x8x1 ; jeden řádek textového režimu 2 (GR.0) .byte DL_CHR40x8x1 ; jeden řádek textového režimu 2 (GR.0) .byte DL_CHR40x8x1 ; jeden řádek textového režimu 2 (GR.0) .byte DL_CHR40x8x1 ; jeden řádek textového režimu 2 (GR.0) .byte DL_CHR40x8x1 ; jeden řádek textového režimu 2 (GR.0) .byte DL_JVB, <dlist, >dlist ; skok na začátek display listu end: .BSS screen: .res 40*24 .segment "EXEHDR" .word $ffff ; uvodni sekvence bajtu v souboru XEX .word main ; zacatek kodoveho segmentu .word end - 1 ; konec kodoveho segmentu .segment "AUTOSTRT" ; segment s pocatecni adresou .word RUNAD ; naplni se pouze adresy RUNAD a RUNAD+1 .word RUNAD+1 .word main ; adresa vstupniho bodu do programu ; finito
+Volba znakové sady ve standardním textovém režimu
+Jednou z důležitých vlastností čipu ANTIC je fakt, že (kromě patnácti řídicích registrů) načítá všechna ostatní data ze standardního adresního prostoru počítačů Atari, tedy buď z ROM nebo z RAM. Platí to i pro znakovou sadu. Připomeňme si, že znaková sada obsahuje bitmapy 128 znaků, přičemž každý znak je reprezentován maticí 8×8 pixelů. To tedy znamená, že celková velikost znakové sady je 128×8=1 kB. A umístění tohoto jednokilobajtového bloku je plně programovatelné. Konkrétně se číslo paměťové stránky, na které znaková sada začíná, zapisuje do řídicího registru CHBAS. Teoreticky by mělo být možné zvolit libovolnou stránku v rozsahu 0 až 255, ovšem existuje zde jedno omezení – stránka musí být sudá, tj. začátek znakové sady se musí nacházet na adrese dělitelné hodnotou 512. Umístění znakové sady lze snadno měnit, a to jak pro každý snímek, tak teoreticky pro každý textový řádek, což umožňuje realizaci různých triků.
+Demonstrační příklad: volba mezinárodní znakové sady
+V dalším demonstračním příkladu změníme adresu stránky uloženou v registru CHBAS. Nastavíme ji na hodnotu 204, protože na adrese 204×256=52224 je namapována ROM obsahující upravenou znakovou sadu, konkrétně takovou s...
+(Pokracovani na webu)

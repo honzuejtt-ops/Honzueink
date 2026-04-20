@@ -1,0 +1,9 @@
+Článek
+CloudEyE není žádná nová hrozba, pro tuzemské uživatele představoval největší nebezpečí prakticky během celého prvního čtvrtletí letošního roku. Jak dokládají statistiky antivirové společnosti Eset, v posledních týdnech ale množství detekcí dramaticky vystřelilo směrem vzhůru.
+Ještě v únoru tak tento nezvaný návštěvník stál za 15,87 % zachycených hrozeb, v březnu – podle zatím nejnovějších statistik Esetu – však jeho podíl vzrostl až na rekordních 58,60 %.
+Jak moc závažná tato útočná vlna je, dokládá i pohled na další škodlivé kódy, které se v Česku zaměřují na stroje s operačním systémem Windows. Ty dosahují podílu pouze v nižších jednotkách procent, CloudEyE tedy všechny ostatní hrozby v Česku doslova převálcoval.
+Formbook, Agent Tesla i SnakeStealer
+„S ohlédnutím na první čtvrtinu letošního roku zůstává jednoznačně nejvíce detekovaným škodlivým kódem v našem regionu. Na jednu stranu zcela upozadil všechny známé škodlivé kódy pro operační systém Windows, není to ale tak jednoznačné, jak by se mohlo zdát,“ konstatoval Martin Jirkal, vedoucí analytického týmu v pražské výzkumné pobočce Esetu.
+Narážel na to, že CloudEyE je totiž tzv. loader. „Poté, co napadne zařízení, do něj začne stahovat další malware, včetně obávaných infostealerů Formbook, Agent Tesla, SnakeStealer nebo škodlivých kódů Rescoms a PureLogs,“ zdůraznil Jirkal.
+Podceňovat tuto hrozbu tedy rozhodně není na místě, neboť v podstatě otevírá zadní vrátka do Windows. A těmi se pak může dostat do počítače celá plejáda těch nejobávanějších virů současnosti.
+Bezpečnostní experti proto i detailně zmapovali, jak tento nezvaný návštěvník v Česku doposud útočil. „Malware CloudEyE měl v Česku útočnou kampaň čtvrtého března a pak jsme mohli pozorovat nějaký další útok prakticky každý březnový týden,“ konstatoval Jirkal.

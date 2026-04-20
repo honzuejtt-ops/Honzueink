@@ -1,0 +1,20 @@
+Linux Mint přejde na delší vývojový cyklus
+Projekt Linux Mint oznámil, že od verze 23 přejde na delší vývojový cyklus, aby se mohl více zaměřit na opravy chyb a vylepšení desktopu. Vydání Linux Mint 23 se očekává v prosinci 2026, bude založeno na Ubuntu 26.04 LTS a poběží na jádře Linux 7.0.
+Novinkou bude také instalátor převzatý z LMDE, který nahradí dosavadní Ubiquity a nabídne širší podporu instalací (OEM, BIOS/EFI, Secure Boot či LVM/LUKS). Vývojáři zároveň zvažují podobu vydávacího modelu a plánují vedle betaverze i alfa verzi. Práce na ní už začaly a zahrnují například prostředí Cinnamon 6.7-unstable s novým spořičem obrazovky pro Wayland.
+Kódové označení Linux Mint 23 zatím nebylo stanoveno, ale vývojáři už potvrzují, že delší vývojový cyklus přináší výhody, zejména větší důraz na desktop, nástroje a aplikace.
+APT v Debianu zavádí funkci vrácení změn
+Projekt Debian (a jeho odvozené distribuce) využívá ke správě klasických balíčků Deb správce balíčků APT. Nástroj APT prošel významnou aktualizací a verze 3.2 nyní zahrnuje funkce vrácení zpět, zrušení a opakování. APT 3.2 je nyní nejnovější stabilní verzí správce balíčků Debianu.
+Hlavním vylepšením je rozšířená funkce historie, která zavádí několik nových příkazů:
+- apt history-rollback – vrátí změny balíčku zpět k dřívější transakci
+- apt history-list – zobrazí seznam předchozích transakcí s balíčky
+- apt history-info – zobrazí podrobné informace o konkrétní transakci
+- apt history-undo – zruší konkrétní transakci
+- apt history-redo – zopakuje dříve zrušenou transakci
+Kompletní seznam nedávných změn ve správci balíčků APT najdete v changelogu tohoto nástroje.
+AlmaLinux Kitten 10 přidává podporu i686 userspace
+AlmaLinux Kitten 10 přináší podporu i686 userspace v podobě 32bitových repozitářů a kontejnerových obrazů pro linux/386, avšak bez plné 32bitové instalace. Novinka cílí hlavně na vývojáře a firmy využívající starší software či specifické CI a kontejnerové scénáře. Pro většinu uživatelů standardního 64bitového AlmaLinuxu má tato změna minimální dopad.
+Pro vývojáře, dodavatele a podnikové prostředí závislé na starším 32bitovém softwaru však představuje podporované řešení bez nutnosti návratu k plnému 32bitovému systému. Stejný model se chystá i pro stabilní AlmaLinux 10, který má být podporován až do roku 2035.
+FreeBSD spouští testování notebooků
+Projekt FreeBSD spouští iniciativu Laptop Integration Testing, která má zlepšit podporu notebooků pomocí systematického testování v reálných scénářích. Do testování se může zapojit i komunita. Nástroj automaticky zjistí funkčnost hardwaru a odešle anonymizované výsledky do veřejné databáze kompatibility. Cílem je vytvořit přehlednou matici podporovaných zařízení a dlouhodobě zlepšovat fungování FreeBSD na různých noteboocích. Na základě tohoto projektu už vznikla stránka FreeBSD Laptop Compatibility.
+Nově vydáno
+Rubén Rodríguez oznámil vydání Trisquel GNU/Linux 12.0, významné aktualizace svobodné distribuce určené pro domácí uživatele, malé podniky a vzdělávací instituce. HAOS, nezávisle vyvinutý operační systém založený na Linuxu, který je optimalizován pro provoz aplikace Home Assistant, vyšel ve verzi 17.2. Projekt Deepin, který vyvíjí distribuci založenou na Debianu s vlastním grafickým prostředím Deepin Desktop Environment, oznámil vydání verze deepin 25.1.0. MODOS, minimalistická linuxová distribuce s pracovním prostředím Cinnamon, která vychází ze stabilní větve Debianu je k dispozici ve verzi s číslem 13.

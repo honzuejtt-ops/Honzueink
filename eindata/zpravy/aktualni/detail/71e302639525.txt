@@ -1,0 +1,15 @@
+Článek
+Až dosud se za limit přežití člověka považovalo šestihodinové vystavení tzv. teplotě vlhkého teploměru 35 °C. Tento ukazatel kombinuje teplotu a vlhkost vzduchu a vyjadřuje, na jakou nejnižší teplotu se může lidské tělo ochladit odpařováním potu.
+Hodnoty nad 35 °C se však na Zemi objevují jen výjimečně. Přesto při vlnách veder každoročně umírají tisíce lidí, a to i v případech, kdy tato hranice překročena není.
+Teplota vlhkého teploměru
+Teplota vlhkého teploměru (anglicky wet-bulb temperature) je fyzikální veličina, která vyjadřuje, na jakou nejnižší teplotu se může vzduch ochladit díky odpařování vody. Zohledňuje nejen samotnou teplotu vzduchu, ale i jeho vlhkost, a proto lépe vystihuje podmínky, které člověk skutečně pociťuje.
+Vědci z Univerzity v Sydney a Arizonské státní univerzity proto vyvinuli nový model nazvaný HEAT-Lim. Ten zohledňuje, jak lidské tělo zvládá regulovat teplotu v závislosti na věku. Cílem bylo určit, za jakých podmínek už může být horko pro zranitelné skupiny smrtelné.
+Model aplikovali v nové studii na podmínky extrémních vln veder z posledních let – v saudskoarabské Mekce (2024), thajském Bangkoku (2024), americkém Phoenixu (2023), australském Mount Isa (2019), pákistánské Larkaně (2015) nebo španělské Seville (2003).
+Tyto epizody patřily k nejintenzivnějším v historii. Maximální dosažené teploty se pohybovaly od 41,5 °C v Mount Isa až po 46,7 °C ve Phoenixu. Ve všech případech - kromě australského města - si vedra vyžádala nejméně tisíc obětí.
+Bez adaptace to nepůjde
+Výsledky ukazují, že pokud se zohlední nejen teplota a vlhkost, ale i schopnost těla ochlazovat se, byly všechny zkoumané vlny veder, zejména pro starší lidi, potenciálně smrtelné. Kritické podmínky tak mohou nastat i při nižších teplotách a sušším vzduchu, než se dosud předpokládalo.
+Lidské tělo se ochlazuje především pocením. Pokud je ale vzduch příliš teplý a vlhký, pot se nemůže účinně odpařovat a organismus se přehřívá, což může vést k úpalu. Starší lidé jsou obzvlášť ohrožení, protože jejich schopnost pocení je snížená a často také reagují pomaleji na varovné signály.
+„Vlny veder jsme dříve definovali hlavně podle teploty, částečně kvůli omezené dostupnosti dat. Tento model nám ale umožňuje mnohem lépe pochopit, jak mohou být tyto události smrtelné,“ uvedla hlavní autorka studie Sarah Perkins-Kirkpatricková.
+Podle ní byly výsledky překvapivé. „Tohle jsem opravdu nečekala. Pokud už dnes během vln veder překračujeme limity přežití, co přinese budoucnost, ve které se planeta ještě více oteplí?“ dodala.
+Kvůli klimatické změně jsou vlny veder stále častější, delší a intenzivnější. Už dnes si vyžádají desítky tisíc obětí ročně. Skutečná čísla přitom mohou být zejména v rozvojových a hustě osídlených oblastech výrazně vyšší.
+Adaptace měst na extrémní horko tak bude v příštích letech klíčová, zejména pokud chceme před tímto tichým zabijákem ochránit nejzranitelnější skupiny obyvatel.

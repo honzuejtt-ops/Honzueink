@@ -1,3 +1,108 @@
+|T|iPhone dnes vypadá jinak. Během posledních let z něj zmizela spousta výbavy i funkcí|D|20.04.2026 19:15|P||X|Když Apple vydává nové generace iPhonů, dostávají se do popředí nové funkce a hardwarové novinky. Často ale zapomínáme na položky ve specifikacích, o které jsme přišli. Za dlouhou historii iPhonů (první generace se objevila v prodeji už v roce 2007) je však seznam odebraných či změněných prvků už relativně obsáhlý.
+Z pohledu materiálů byl titan krokem vedle, v mobilním portfoliu Applu vydržel jen dva roky. Stejně jako zmenšená verze iPhonů
+Které z těchto funkcí a vlastností vám v moderních iPhonech chybí nejvíce?
+30pinový konektor (2007 – 2012) u iPhonů dlouho nevydržel – používal se do roku 2012, kdy jej nahradil Lightning. A to i u iPadů.
+Fotoaparát zarovnaný s tělem (2007 – 2014) byl před lety naprostou samozřejmostí. Od iPhonu 6 začaly čočky vyčnívat a iPhony postupně na rovném povrchu postrádaly maximální stabilitu.
+Kulatá tlačítka hlasitosti (2010 – 2013) byla inspirovaná Hi-Fi technikou, později je, i díky ztenčujícímu se rámu, nahradila podlouhlá tlačítka.
+Sluchátkový jack měl ještě iPhone SE první generace, poté jej Apple nadobro opustil
+Sluchátkový jack (2007 – 2016) chybí už od iPhonu 7. Přednost dostala plně bezdrátová sluchátka, záhy se tímto krokem inspirovali i výrobci Androidů.
+Hliníková záda (2012 – 2017) měl už první iPhone, později byl hliník na zádech využíván u několika dalších generací. Nakonec musel kvůli podpoře bezdrátového nabíjení ustoupit do pozadí.
+Otočení displeje na bok (2014 – 2017) na domovské obrazovce je u Androidů samozřejmostí. U iPhonů to však není možné již téměř deset let. Dříve tato funkce fungovala exkluzivně u modelů „Plus“.
+Face ID v domovském tlačítku se naposledy objevilo u iPhonu SE (2022)
+Touch ID v domovském tlačítku (2013 – 2022) odzvonilo s příchodem iPhonu X a Face ID. Ještě nějaký čas přežívalo u iPhonu SE. Jako jedna z mála odstraněných funkcí by se však mohla znovu objevit u skládacího iPhonu.
+Přepínač tichého režimu (2007 – 2023) nahradilo u moderních iPhonů programovatelné akční tlačítko. Chybí mu však hmatový vjem při přepnutí režimu.
+Ukázka funkce 3D Touch
+3D Touch (2015 – 2019) byla hardwarová vrstva displeje citlivá na tlak. Mnozí ji dodnes postrádají pro její rychlost i unikátní haptickou zpětnou vazbu. V roce 2018 ji nahradila haptika (Haptic Touch).
+Přibalená nabíječka (2007 – 2020) není součástí balení iPhonů od roku 2020 – oficiálně z ekologických důvodů. Záhy se k tomuto kroku přidali i výrobci Androidů.
+iPhone 13 mini udělal definitivní tečku za malými iPhony
+Zmenšené iPhony (2020 – 2022) vydržely v portfoliu Applu jen dva roky. O malé telefony nebyl zájem, prodávaly se velmi málo.
+Slot pro nano SIM (2012 – 2025 u iPhonu Air) je ztrátou především pro americké uživatele iPhonů 14 a novějších model. Zbytek světa o nanoSIM přišel až u iPhonu Air (ten nabízí jen eSIM), jiné iPhony prodávané v Evropě však stále mají slot pro fyzickou SIM.
+Konektor Lightning už dnes u iPhonů neexistuje. Od řady iPhone 15 se využívá USB-C
+Lightning (2012 – 2023)vydržel v iPhonech 11 let. Díky regulacím EU je dnes povinnou součástí iPhonů (od řady iPhone 15) USB-C.
+Titanový rám (2023 – 2024) měl být velkým lákadlem prémiových modelů, ale od iPhonu 17 Pro se Apple vrátil k hliníku. Aby snížil hmotnost a zlepšil odvod tepla.|E|
+|T|YouTube dává rodičům možnost omezit nekonečné scrollování jejich dětí s omezením Shorts|D|20.04.2026 18:58|P|YouTube nově umožňuje rodičům v Česku nastavit denní časový limit na sledování krátkých videí Shorts pro jejich dospívající děti. Nová funkce je dostu...|X|YouTube nově umožňuje rodičům v Česku nastavit denní časový limit na sledování krátkých videí Shorts pro jejich dospívající děti. Nová funkce je dostupná v rámci dozorovaného účtu a umožňuje omezit sledování Shorts nebo je vypnout úplně.
+Službu zavedl Google, pod nějž YouTube spadá, pro celou Evropu. Nastavení provedou rodiče v aplikaci přes Rodinné centrum. Po dosažení limitu teenagera aplikace upozorní a další Shorts mu po zbytek dne nezobrazí. YouTube zároveň oznámil, že zjednodušuje zakládání dozorovaných účtů, tak, že jej rodiče mohou vytvořit přímo na této platformě.
+YouTube spolu s Instagramem nedávno prohrál první kolo civilního soudního sporu ve Spojených státech, ve kterém uživatelka požadovala odškodnění za psychickou újmu způsobenou používaním těchto služeb. Obě firmy měly podle poroty své služby úmyslně nastavit tak, aby vyvolaly v uživatelích návykové chování. Žalobkyně známá pod iniciály K. G. M. před soudem řekla, že se stala na YouTube závislá v šesti letech a na Instagramu v devíti.|E|
+|T|Recenze sluchátek Apple AirPods Max 2: Stejné navenek, dospělejší zvuk a lepší ANC uvnitř|D|20.04.2026 17:45|P|Otestovali jsme sluchátka Apple AirPods Max 2 • Okoukaný design kompenzují lepším ANC a živějším zvukem • Díky čipu H2 přidaly i funkce z jiných model...|X|Vynikající ANC
+Živý zvuk a skvělé basy
+Kvalita zpracování a materiály
+Skvělá ergonomie
+Napojení na Apple ekosystém
+Vysoká cena
+Slabší výdrž baterie
+Větší váha
+Nejdou natvrdo vypnout
+7 /10
+Zdá se to skoro až neuvěřitelné, ale déle než 5 let trvalo Applu než představil nástupce svých náhlavních sluchátek Apple AirPods Max 2. Nutno zmínit, že ještě 2 roky zpět přišla vylepšená verze původních sluchátek s USB-C konektorem, ale tu ani Apple nepovažoval za novou generaci. Nový model tak máme až nyní a v této recenzi si ukážeme, co se zde změnilo.
+V českých obchodech stojí až Kč
+Porovnat ceny
+Vzhled, jaký dobře znáte
+Když přišla v roce 2020 první generace sluchátek od Applu, byla svým designem poměrně kontroverzní. Nyní tu máme nové AirPods Max 2 a nutno dodat, že Apple na nich po stránce designu nezměnil absolutně nic a to včetně zachované váhy 386 gramů. Na jednu stranu lze stejný design chápat, ostatně sluchátka mají originální design a na ulici si je s konkurencí rozhodně nespletete. Každý, kdo se trochu zajímá o technologické produkty pozná, že jde o sluchátka od Applu, a to i navzdory tomu, že na nich nenajdete logo nakousnutého jablka.
+Apple AirPods Max 2 se vzhledově nijak nezměnily proti předchozím modelům. Hlavní změny přišly uvnitř.
+Sluchátka mají příkladné zpracování. Mušle sluchátek jsou zde opět vyrobené z hliníku a na uších působí prémiově, přičemž jejich náušníky jsou vyplněny paměťovou pěnou, která je příjemná na dotyk a pohodlně sedí na uších. Navíc jsou zde připnuté pouze magneticky, takže je velmi snadné ji vyměnit, a to klidně i za jiné barvy. Navazující jezdce k mostu jsou z nerezové oceli, což sice sluchátkům přidává na váze, ale dodává na pevnosti. Samotný most je pak ze tkané síťoviny, která je neuvěřitelně pohodlná. V celku mně osobně sluchátka na hlavu sedly na první dobrou a nevadí mi je nosit ani dlouhé hodiny. Na větší váhu jsem si rychle zvykl a zapomněl.
+Veškeré ovládací prvky a konektory se nachází na pravé mušli, a to včetně signalizační LED diody.
+Z pohledu ovládání je zde hlavní pravé sluchátko, které na těle má všechny ovládací prvky. V přední části jde o tlačítko přepínání trasparentního/adaptivního režimu a ANC. V Zadní části pak otočná korunka pro regulaci hlasitosti, která je zároveň i tlačítkem a slouží pro pauzování či přepínání skladeb. Ve spodní části pak najdete USB-C konektor pro nabíjení či drátový poslech a signalizační LED diodku pro indikaci napájení či párovacího stavu. Na obou mušlích je rozmístěna soustava 9 mikrofonů a samozřejmě velké 40mm měniče pro samotný zvukový výstup.
+Stejně jako předchůdce, ani nový model nejde nijak složit. Při cestování lze využít ochranného magnetického pouzdra, ale to chrání pouze hliníkové náušníky před poškrábáním. Samotný most zůstává bez ochrany.
+V pokračování pro předplatitele také najdete
+Jaká je kvalita potlačení hluku
+Funkce a výbava
+Jak to hraje
+Celkové hodnocení a srovnání
+Chci Premium a Živě.cz bez reklam
+Od 58 Kč měsíčně|E|
+|T|Vyzkoušejte českou strategii o válečných doktorech. Medix kombinuje minimalistické bitvy s ručně kreslenou grafikou|D|20.04.2026 17:45|P||X|Vývojář Josef Šmíd představil svou novinku na konci loňského roku, nyní si Medix může vyzkoušet každý v rámci prvního playtestu, který probíhá při příležitosti středověkého festivalu na Steamu. Stačí, abyste zamířili na stránku hry, klikli na tlačítko „Zúčastnit se testování“ a můžete se pustit do práce mediků ve válečném období. Na hraní máte čas do 27. dubna.
+Test nabízí první dvě mise z kampaně, které by vás měly zabavit zhruba na 40 minut. Během nich okusíte úvod příběhu o IX. lékařské jednotce imperiální armády. Zatímco ve většině válečných strategií jde o to, abyste se svými vojsky převálcovali nepřítele, v Medix se musíte starat hlavně o zachraňování životů a organizaci přesunů tábora během chaotických ústupů před tlakem nepřítele.
+Taktéž v akci uvidíme minimalisticky zpracované a ručně kreslené grafické rozhraní. Účastníci testu také budou mít možnost podělit se o svoji zpětnou vazbu, což je aktuálně jedna z nejdůležitějších věcí pro vývojáře. „Je to poprvé, kdy si Medix může zahrát široká veřejnost. Nejdůležitější je teď zjistit, jestli jsou mechaniky pochopitelné a co v hráčích skutečně rezonuje,“ říká vývojář Josef Šmíd. Pokud se nezmění plány, měla by hra následně vyjít v plné verzi na PC a Mac ještě před koncem letošního roku.|E|
+|T|10 věcí, které nás štvou na Windows 11 a bohužel asi jen tak nepřestanou|D|20.04.2026 16:45|P|Reklama je víc než zákazník, kterého by systém měl respektovat. • Widgety jsou na špatném místě a jejich nabídka je chudá. • Windows postrádají dlouho...|X|Jedenáctky se částečně vzhlédly v macOS, konzervativní prostředí narušují častými aktualizacemi s někdy nezdokumentovanými změnami. Zatímco v první fázi života jim oproti Windows 10 funkce spíše chyběly, Microsoft situaci postupně napravil a zejména do aplikací přidává zajímavé funkce.
+Situaci ale zkazil dotěrnější reklamou, čímž zesílil roky nastupující trend. Tímto článkem navazujeme na pár let starý text o tom, co nám dlouhodobě vadí na Windows 10. Platí, že co uživatel, to názor. Pokud na systému shledáváte jiné nedostatky, podělte se o ně v diskuzi.
+1. Nenaplněné sliby
+Když něco slíbíte, měli byste to dodržet. K největším novinkám ve Windows 11 mělo patřit spouštění aplikací z Androidu. Microsoft po téměř dvou a půl letech od vydání první iterace systému oznámil, že jeho snahy o zprovoznění mobilních aplikací na počítačích končí.
+Za tu dobu byl Windows Subsystem for Android (WSA) testován v pár zemích, do Česka se nedostal nikdy. Zatímco dnes o Jedenáctkách můžeme říct, že nabízí dost zajímavého, aby se na ně vyplatilo přejít z Windows 10, v prvních měsících to tak nebylo. Tohle mohla být tak zásadní novinka, že by Microsoft nový operační systém části publika prodal.
+Microsoft nechtěl, abyste poznali rozdíl mezi nativními programy a aplikacemi z Androidu
+Jenže to se nestalo. Microsoft zjevně nechtěl čeřit vody, takže se nevytasil s okázalým oznámením. Na webu podpory jen potichu zveřejnil poznámku, že WSA skončil k 5. březnu 2025. Je to připomínka toho, že produkt byste nikdy neměli koupit kvůli slíbeným funkcím. Hleďte na parametry, které splňuje v době uvedení.
+WSA přitom mohl být jednou z ambicióznějších funkcí za poslední desetiletí. Důvěra se buduje dodržením slibů. Microsoft sliby v minulosti porušil několikrát včetně případu „zázračných“ technologií pro Windows Vista, které nedoručil. Před uvedením Windows 11 výrobce ukazoval více funkcí, které jsme pak v systému nenašli včetně celoobrazovkových widgetů a univerzálního ztlumení mikrofonu tlačítkem na hlavním panelu.
+Místo toho se v systému objevuje stále více reklam a nerespektujícího chování, jak se dozvíte v další kapitole.
+Pokračování 2 / 11
+2. Reklama je víc než zákazník
+Od Windows 8 se v operačním systému objevují reklamy ve velké míře. Najdeme je v Průzkumníku nebo nabídce Start. V mnoha svých aplikacích Microsoft odkazuje na jiné své produkty a služby. Je to trend nepřekvapivý, ale patrný. S ohledem na situaci Windows se nelze divit, že se staly prostředkem pro prodej finančně zajímavějších služeb.
+Microsoft je komerční subjekt, jehož cílem je zisk. Musí uspokojit akcionáře, kteří vyžadují růst. Windows dnes v portfoliu podniku tvoří jen okolo 12 % příjmů a tento podíl se postupně dále zmenšuje. Klasické počítače odchází z domácností a jejich morální zastarávání se zpomalilo. Microsoft vedle toho pochopil, že se nosí upgrady zdarma.
+To všechno jsou důvody, proč Windows z hlediska příjmů nejsou příliš perspektivním produktem. Ještě v nultých letech se vše v Microsoftu podřizovalo Windows, dnes se vše podřizuje novým finančním tahounům, tj. cloudu a online službám na bázi předplatného.
+Reklamy na různé služby od Microsoftu jsou ve Windows 11 obvyklé
+Proto všechny ty reklamy na OneDrive, předplatná Microsoft 365 a Game Passu, reklamní aplikace a časem možná odkazy na weby v nabídce Start. Situace se zhoršuje s tím, jak si Microsoft stále více uvědomuje, že by si rád sáhl na trh s reklamou, jako mu to ukazují Google nebo Meta.
+V roce 2024 vyšlo najevo, že bezplatný Outlook v masivním měřítku sbírá data a sdílí je s 800 partnery. Naše zprávy nečte, ale jinak je to velký slídil. A co hůř, Microsoft není ochotný říct, jestli sledování praktikuje také v placené verzi. Outlook přitom ve Windows nahradil Poštu.
+Edge se spustil a otevřel stránky z Chromu. Nikdo to po něm nechtěl
+Od roku 2023 se ve Windows 11 (ale i ve Windows 10) objevují reklamy na vyhledávání Bingem ve Chromu. Když odhlédneme od toho, že se tyto výzvy vrací, tak takové jednání hraničí s chováním malwaru. Microsoft detekuje, že používáte prohlížeč od Googlu a v něm nevyhledáváte Bingem. A tak do systému přidá malou aplikaci, která vás pak obtěžuje.
+Současně Microsoft uživatelky a uživatele stále častěji nerespektuje tím, že jim nedává možnost jeho nabídky odmítnout. Mnoho výzev v Edgi a Windows totiž postrádá tlačítko pro odmítnutí. A když ho mají, tak se vás Windows nebo Edge stejně po čase zeptají znovu. Je to zkrátka velký nátlak.
+Před časem jsme dokonce byli svědky případu, kdy Edge vykradl data z Chromu. Jednoduše se spustil s uživatelskou relací ze druhého prohlížeče, který byl v systému výchozí, aby vás přesvědčil, že už Chrome nepotřebujete. Vždyť vaše oblíbené položky a historii teď najdete v Edgi. Tohle bychom čekali od malwaru.
+Edge se opakovaně ptá, jestli nechcete nastavit Bing
+jako výchozí vyhledávač. Trvale návrh odmítnout nelze
+Letos v zimě sice šéf vývoje slíbil, že kvalitu Windows zlepší a bude naslouchat zpětné vazbě, ale začátkem dubna začal testovat další protiuživatelskou novinku. Edge se spustí po startu počítače, a když o to nestojíte, musíte takové chování vypnout.
+Jde o další způsob, jak vás donutit, abyste používali Edge. A v něm vám zase bude vnucován Bing, protože vyhledávání Bingem vede k zobrazení reklamy a z toho Microsoftu plyne příjem. Zákazník roky není na prvním místě a nejsme si jistí, co by se muselo stát, aby management situaci přehodnotil.
+Microsoft by podle nás měl základní verzi Windows poskytnout zdarma. Mluvili jsme o tom v Podcastu Živě:
+V další kapitole si řekneme, že na rozdíl od reklam si Microsoft nedává záležet na tom, aby uživatelské prostředí bylo konzistentní.
+Pokračování 3 / 11
+3. Nekonzistentní prostředí
+Windows obsahují i desítky let starý kód a prvky uživatelského rozhraní. Jejich síla spočívá především v dlouhodobé kompatibilitě. Tady vzniká problém, protože Microsoft nemůže všechno zahodit a začít znovu. Nedávné sliby o řešení konzistence jsou chvályhodné a alespoň vidíme snahu, která v posledních letech chyběla.
+Nedávno nás March Rogers, seniorní ředitel designu, ubezpečil, že migrace Ovládacích panelů bude pokračovat. Současně přiznal, že hrozí poškození zpětné kompatibility s některými zařízeními. Proto tento proces trvá roky a Windows dodnes obsahují jak Nastavení, tak starší Ovládací panely.
+Jeho vyjádření ukazuje, že ani při nejlepší snaze nebude prostředí ve Windows zřejmě nikdy plně konzistentní. Neznamená to, že by se vývojový tým neměl snažit. Spousta viditelných prvků by mohla být vyměněna a nejspíš by to nebylo složité. Např. nabídka pro automatické spuštění při připojení výměnného média pamatuje Windows 8.
+Ve tmavém režimu svítí méně světlých míst, ale pořád se nějaká najdou
+Už v éře Windows 10 bylo vidět, že se Microsoft o sjednocení vizuálního stylu prvků moc nesnažil. Redesign Fluent ani po dvou letech nebyl zdaleka hotový. Nejde přitom o to, aby byl plně přepracován i ten nejposlednější dialog, na který většina lidí nejspíš nenarazí. Jde o prvky, které máme běžně na očích.
+Druhá věc je, aby nové prvky byly jednotné a ani to se Microsoftu nedaří. Různé aplikace mají např. tendenci vytvářet vlastní podobu karet. Protežovaný Edge si razí vlastní cestu a vizuálním stylem Windows 11 se jen inspiruje.
+Radost nám nedělá ani málo přizpůsobitelná nabídka Start, které věnujeme další kapitolu.
+Pokračování 4 / 11
+4. Nabídka Start
+Nabídka Start se pod palbou různě silné kritiky nachází přinejmenším dvě desetiletí. Její vývoj jsme popsali v samostatném článku. Windows XP udělaly krok k pohodlnějšímu ovládání a nabídly často používané programy. Vista přidala textové vyhledávání. Některým lidem se tyto iterace nelíbily a radši zapínali klasický Start.
+Přesto nabídka do té doby kráčela po evoluční cestě a nedělala velké úkroky od první verze. Pak nastala éra dotekových obrazovek. Před více než 10 roky se Windows 8 pokusily o revoluci a vnesly celoobrazovkové dotekové rozhraní na klasické počítače, kde udělalo radost málokomu. Nabídka Start se transformovala na obrazovku Start.
+Nabídka Start po více než čtyřech letech od vydání Windows 11 prošla částečným redesignem
+Rozumnější přístup ukázaly Windows 10, kde už Start nemusel být celoobrazovkový. V této éře se měnil v detailech, jen ho jako stín minulosti doprovázely dlaždice. Těch aktivních bylo minimum. Statická dlaždice je jako běžná ikona a ovládání nepřekáží. Spíše jen působí zvláštně v kontextu doby. Hlavní bylo, že možnosti přizpůsobení a organizace nabídky nebyly malé.
+Ve Windows 11 je Start výrazně jiný a je obtížné pochopit, jak Microsoft došel právě k takovému výsledku. Nový Start bere správné prvky, ale staví z nich nefunkční dům. Největším kamenem úrazu je nepřizpůsobitelnost nabídky, která je v kontextu Windows nelogická a nepochopitelná. Dokonce ani neupravíte její velikost.
+V sekci Doporučené se zobrazovaly poslední soubory. Sotva jsme si na to zvykli,
+Microsoft sem napasoval návrhy na programy
+Microsoft před pár měsíci konečně představil novou verzi, která v rámci možností představuje poměrně velký krok vpřed. Tento Start je větší, pokud tedy máte větší obrazovku, umožňuje skrýt sekci Doporučené a přehled všech programů zobrazuje pod připnutými zástupci.
+Připnuté zástupce ale můžete organizovat maximálně do složek, jejichž otevření vyžaduje klepnutí navíc. Start ve Windows 10 přitom umožňoval organické rozvržení do skupin. S tím souviselo, že jste si mohli nabídku ručně zvětšit nebo změnit podle potřeby.
+Na první větší redesign jsme čekali více než čtyři roky od vydání Windows 11. Ani tak Microsoft nezareagoval na všechny připomínky. Start pořád nelze manuálně zvětšit či změnit. Bude-li Microsoft s vylepšováním pokračovat stejným tempem jako donedávna, tak si nabídka místo na našem seznamu zaslouží.
+To platí tím spíš, že upravený Start vstoupil do distribuce během října a listopadu. Ještě před pár týdny jeden redakční kolega tuto novou verzi k dispozici neměl. (A tak ji zapnul ručně.) Bez ohledu na dílčí zlepšení platí, že Start ve Windows 10 fungoval velmi dob...
+(Pokracovani na webu)|E|
 |T|ChatGPT ani Codex nefungují, problém není jen u vás|D|20.04.2026 16:00|P|Uživatelé na sociálních sítích a Redditu hlásí, že se nemohou připojit k ChatuGPT, případně jim chatbot nereaguje na povely. Výpadek zaznamenal také D...|X|Uživatelé na sociálních sítích a Redditu hlásí, že se nemohou připojit k ChatuGPT, případně jim chatbot nereaguje na povely. Výpadek zaznamenal také DownDetector. A nakonec jej potvrdili i samotní provozovatelé služby.
 Na statusové stránce OpenAI se před hodinou začaly množit červené puntíky značící nedostupnost klíčových systémů. Výpadek postihl ChatGPT, Codex i API. Problém ale nemají všichni uživatelé, já sám se do osobního i firemního účtu přihlásím.
 „Vyšetřujeme problém u uvedených služeb. Dotčení uživatelé momentálně nemají přístup k ChatGPT, Codexu a API Platformě,“ uvádí OpenAI.|E|

@@ -1,0 +1,3 @@
+Uživatelé na sociálních sítích a Redditu hlásí, že se nemohou připojit k ChatuGPT, případně jim chatbot nereaguje na povely. Výpadek zaznamenal také DownDetector. A nakonec jej potvrdili i samotní provozovatelé služby.
+Na statusové stránce OpenAI se před hodinou začaly množit červené puntíky značící nedostupnost klíčových systémů. Výpadek postihl ChatGPT, Codex i API. Problém ale nemají všichni uživatelé, já sám se do osobního i firemního účtu přihlásím.
+„Vyšetřujeme problém u uvedených služeb. Dotčení uživatelé momentálně nemají přístup k ChatGPT, Codexu a API Platformě,“ uvádí OpenAI.

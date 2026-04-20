@@ -1,0 +1,11 @@
+Chytrý spouštěč aplikací Raycast se před pár měsíci dostal do Windows. Psali jsme o něm v lednu a od té doby získal spoustu nových funkcí. Pár nejzajímavějších si proto přiblížíme.
+Vyhledávání souborů podporuje indexaci síťových a výměnných jednotek. Stačí, když je zahrnete v nastavení modulu File Search. Raycast umí zachovat indexy obsahu výměnných jednotek, i když je odpojíte. Nemusí tak pokaždé začínat od píky. Jestli vám ale takové chování nevyhovuje, můžete ho vypnout.
+V první betaverzi oproti macOS překladač chyběl. Výrobce ho ale slíbil a dodržel. Raycast pro Windows disponuje vlastním překladačem, zdarma je však jen po dobu betatestu. Do jednoho pole píšete, ve druhém se ukáže překlad. Nastavíte si i vlastní zkratku pro překlad mezi dvěma požadovanými jazyky, abyste je pak nemuseli ručně vybírat ze seznamu.
+Překladač se časem zařadí k placeným funkcím
+Když vyhledáváte soubory pomocí Raycastu, může být nepohodlné spouštět je v asociovaných programech. Tedy když si nejste jistí, co soubor obsahuje. Pro orientaci by stačil rychlý náhled. Quick Look je přesně o tomhle. Otevře multimédia, PDF nebo třeba soubory z Microsoft Office. Náhled ve výchozím stavu otevírá zkratka Ctrl+Z.
+Náhledy souborů se otevírají rychle
+Modul pro manipulaci s okny teď ovládá také virtuální plochy, byť zatím jen ve Windows 11 24H2 a novějších. S klávesovými zkratkami se rychle přepnete na požadovanou plochu. Možná zásadnější je přesouvání oken mezi plochami. Když otevřete Raycast nad aktivním oknem, rychle ho přesunete jinam.
+Okno přesunete na vybranou plochu
+Stejný úkon provedete myší v systémovém prostředí, multifunkční nástroj vám ale umožní nechat ruce na klávesnici. K dalším novinkám v modulu patří vytváření vlastních příkazů. S nimi umístíte okno na přesné místo na obrazovce a ve velikosti, která vám vyhovuje. Připomíná tím FancyZones, ale pro ty, kteří preferují klávesnici.
+Vytvořte si povel, který umístí okno na místo a ve velikosti, jakou potřebujete
+Nejčerstvějším přídavkem je v době psaní článku Hyperkey. Je to nástroj na přemapování kláves tak, abyste jediným stiskem nahradili kombinaci více modifikačních kláves. Pokud např. nepoužíváte Caps Lock, může jeho aktivace odpovídat souběžnému stisku kláves Ctrl+Alt+Win. Podporovány jsou i další modifikátory a funkční klávesy. Hyperkey do výbavy přidal Raycast 0.54, vydaný 15. dubna.

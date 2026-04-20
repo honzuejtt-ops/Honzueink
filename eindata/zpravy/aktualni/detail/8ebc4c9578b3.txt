@@ -1,0 +1,6 @@
+V roce 2025 přišli pořadatelé závodu Beijing E-Town Half Marathon s novinkou – vedle běžného běžeckého koridoru postavili ještě jeden – pro humanoidní roboty. Byl to technologický experiment, startovalo 21 strojů a většina závod nedokončila kvůli přehřívání, pádům, nebo se jim prostě vybila baterie. Za úspěch bylo považované dokončení a vítězný robot dosáhl času 2:40:42.
+Intermezzo: Letos 8. března padl světový rekord v půlmaratonu. Ugandský běžec Jacob Kiplimo v Lisabonu zaběhl v čase 57:20.
+Letošní ročník Beijing E-Town Half Marathon se konal o uplynulém víkendu a z hlediska lidských výkonů nebyl nijak extrémní. Zato robotické týmy udělaly za jediný rok obrovský skok. Bylo jich více než sto a nejlepší stoje byly poprvé rychlejší, než lidé.
+Celé stupně vítězů obsadila společnost Honor, nejrychlejší autonomní robot Lightning uběhl 21,1 km v čase 50 minut 26 sekund.
+Sprintující roboti jsou atrakcí pro diváky i běžce. Roboti od Honoru jsou ti červení:
+Podobně jako to automobilky dělají s Formulí 1, také Honor okamžitě využil příležitost spojit prototyp s běžnou produkcí. Šéf inženýrského týmu Du Xiaodi popsal, že přehřívání kloubů řeší technologie vapor chambre/odpařovací komora převzatá z produkčních mobilních telefonů, kde chladí procesory.

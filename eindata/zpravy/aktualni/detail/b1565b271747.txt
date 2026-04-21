@@ -1,0 +1,45 @@
+Roste počet útočníků, kteří zneužívají open-source emulátor QEMU k maskování škodlivé činnosti uvnitř virtuálních strojů. Spuštěním malwaru ve virtuálním stroji se útočníci vyhnou bezpečnostním kontrolám na koncových zařízeních a zanechávají v hostitelském systému jen minimální stopy. Tento přístup jim umožňuje udržet si dlouhodobý přístup, krást přihlašovací údaje, odcizovat data a nakonec nasadit ransomware.
+Nejde o úplně novou techniku, ale v poslední době se její využívání rozšiřuje. V průběhu let útočníci využívali QEMU k různým účelům, včetně provozu útočných nástrojů, vytváření skrytých síťových tunelů k infrastruktuře pro řízení a ovládání a nasazování zadních vrátek před spuštěním ransomwaru. Útočníci využívají virtualizace, protože poskytuje skryté prostředí, které výrazně ztěžuje detekci a forenzní analýzu, a útočníkům tak dává více času na to, aby mohli působit bez odhalení.
+Společnost Sophos se tomuto problému podrobně věnuje a vydala analýzu současné situace a popis jednotlivých útočných kampaní, které byly zaznamenány v posledních šesti měsících. Zneužití QEMU je opakující se technika, kterou útočníci používají již mnoho let,
+uvádí se ve zprávě. Naši analytici však zaznamenali nárůst případů, kdy byl QEMU využíván k obcházení bezpečnostních opatření, přičemž od konce roku 2025 byly identifikovány dvě odlišné kampaně: STAC4713 a STAC3725.
+Trvalé spojení a užitečné nástroje
+První jmenovaná kampaň byla poprvé zaznamenaná v listopadu 2025, je finančně motivovaná a spojená s ransomwarem PayoutsKing. V několika případech v rámci této kampaně byl nástroj QEMU využit jako skrytý zpětný SSH kanál k doručení nástrojů útočníků a získání přihlašovacích údajů k doménám.
+Počátečního přístupu útočníci získávají různým způsobem. Při starších incidentech útočníci využili nezabezpečené VPN sítě SonicWall, u nichž nebyla povolena vícefaktorová autentizace (MFA), zatímco při incidentu z ledna 2026 byla zneužita chyba zabezpečení v nástroji SolarWinds Web Help Desk (CVE-2025–26399). V únoru společnosti Microsoft a Huntress oznámily podobné případy, kdy tato chyba vedla k nasazení prostředí QEMU.
+K nasazení QEMU útočníci nejprve ve Windows vytvoří naplánovanou úlohu s názvem „TPMProfiler“. Tato úloha spustí virtuální stroj QEMU ( qemu-system-x86_64.exe
+) pod účtem SYSTEM prostřednictvím obrazu virtuálního pevného disku, který má neobvyklou příponu souboru. V předchozích incidentech se obraz disku vydával za soubor vault.db
+, ale v lednu 2026 se začal maskovat jako soubor DLL ( bisrv.dll
+).
+Naplánovaná úloha také zajišťuje trvalé připojení tím, že povoluje přesměrování z vlastních portů (32567, 22022) na port 22 (SSH). Při spuštění systému vytvoří obraz disku pomocí AdaptixC2 nebo OpenSSH reverzní SSH tunel ke vzdálené IP adrese. Tímto způsobem vznikne skrytý kanál pro vzdálený přístup do skrytého virtuálního stroje, čímž se obejde detekce na koncových bodech.
+Virtuální stroj spuštěný pomocí QEMU používá obraz disku s minimalistickou distribucí Alpine Linux 3.22.0, který obsahuje všechny potřebné nástroje užitečné pro útočníka. Sada nástrojů se v jednotlivých případech liší, obvykle však zahrnuje tinker2 (AdaptixC2), wg-obfuscator (vlastní nástroj pro zamlžování provozu WireGuard), BusyBox, Chisel a Rclone.
+Útočníci dále využívají uživatelské rozhraní služby Volume Shadow Copy Service ( vssuirun.exe
+) k vytvoření obsazu kopie diskového svazku. Dále využili příkazu print
+ke zkopírování databáze Active Directory ( NTDS.dit
+) a registrů SAM a SYSTEM do dočasných adresářů prostřednictvím protokolu SMB.
+Dále útočníci zneužívají k vyhledávání síťových sdílených adresářů a přístupu k souborům standardně dostupné nástroje, jako jsou Microsoft Paint, Poznámkový blok a Microsoft Edge, stejně jako volně dostupný nástroj třetí strany WizTree. Je velmi pravděpodobné, že tato kampaň souvisí s krádeží dat a šířením ransomwaru PayoutsKing.
+Individuální přístup a prodej
+Druhá popsaná kampaň se objevila v únoru 2026 a zneužívá zranitelnost CitrixBleed2 (CVE-2025–5777) k získání přístupu. Následně útočníci nainstalují škodlivého klienta ScreenConnect, aby si zajistili trvalý přístup. Poté nasazují virtuální stroj pomocí QEMU, aby nainstalovali další nástroje pro provádění průzkumu a krádeže přihlašovacích údajů.
+Po počátečním proniknutí do prostředí oběti prostřednictvím NetScaleru útočníci umístí do systému archiv ve formátu ZIP ( an.zip
+). Spustitelný soubor v archivu ( an.exe
+) vytvoří a spustí službu s názvem AppMgmt, která přidá nového lokálního správce ( CtxAppVCOMService
+) a nainstaluje klienta ScreenConnect prostřednictvím souboru .msi
+, který byl pravděpodobně rovněž součástí archivu.
+Spustitelný soubor klienta ScreenConnect ( ScreenConnect.ClientService.exe
+) naváže spojení se svým serverem ( vtps.us
+) a naváže relaci s oprávněními správce. Následně vytvoří archiv ZIP v adresáři oběti (např. C:\Users\<uživatelské jméno>\Documents\ScreenConnect\Files\qemu_custom.zip
+), který je rozbalen pomocí programu 7-Zip. Soubor qemu-system-x86_64.exe
+vybalený z tohoto archivu používá obraz virtuálního disku s názvem custom.qcow2
+k zavedení a spuštění virtuálního stroje s distribucí Alpine Linux na hostitelském počítači.
+Místo nasazení předem připravené sady nástrojů útočníci ručně instalují a kompilují ve virtuálním stroji celou sadu nástrojů pro útok, včetně utilit Impacket, KrbRelayx, Coercer, BloodHound.py, NetExec, Kerbrute, Metasploit a podpůrných knihoven pro jazyky Python, Rust, Ruby a C++.
+Mezi pozorované škodlivé aktivity patřilo stahování přihlašovacích údajů, výčet uživatelských jmen Kerberos pomocí Kerbrute, průzkum Active Directory pomocí BloodHound a spouštění FTP serverů pomocí pyftpdlib za účelem přípravy datového balíku a následného přenosu informací.
+Kromě aktivity v QEMU klient ScreenConnect přidává do registru klíč WDigest
+pro ukládání přihlašovacích údajů, instaluje nástroj FTK Imager k odstranění všech výjimek z Microsoft Defenderu, provádí příkazy pro zjišťování a instaluje zranitelný ovladač do jádra ( K7RKScan_1516.sys
+).
+Následné aktivity se u jednotlivých útoků lišily, což naznačuje, že zprostředkovatelé počátečního přístupu nejprve napadli prostředí obětí a poté přístup prodali dalším útočníkům. V jednom případě si útočníci udrželi přístup k prostředí nasazením nástrojů Total Software Deployment a Total Network Inventory, stejně jako dalšího neautorizovaného klienta ScreenConnect. V jiném případě útočníci použili NetBird k navázání šifrovaného peer-to-peer připojení, pokusili se získat cookies relace prohlížeče pomocí cookie_exporter.exe
+a spustili skript v PowerShellu k deaktivaci Microsoft Defenderu.
+Počet podobných zneužití roste
+Zneužití nástroje QEMU postupně přibývá a jde o rostoucí trend v oblasti obcházení bezpečnostních opatření, kdy útočníci využívají legitimní virtualizační software k utajení škodlivých aktivit. Podaří se tak aktivity skrýt před agenty nainstalovanými na koncových zařízeních a před nástroji pro sledování podezřelého síťového provozu.
+Skrytý virtuální stroj s předem nainstalovanou nebo zkompilovanou sadou nástrojů pro útoky umožňuje dlouhodobý přístup do sítě, díky čemuž je možné dále nasazovat malware, získávat přihlašovací údaje a pohybovat se v síti napříč systémy, aniž by zločinec zanechal stopy přímo na hostitelském počítači.
+Organizace by měly provést audit svých prostředí a zkontrolovat, zda neobsahují neoprávněné instalace QEMU, neočekávané naplánované úlohy (zejména ty, které běží pod účtem SYSTEM) a neobvyklá pravidla přesměrování portů směřující na port 22. Správci sítě by měli sledovat odchozí SSH tunely vycházející z nestandardních portů a vyhledávat obrazy virtuálních disků s neobvyklými příponami souborů (např. .db
+, .dll
+, .qcow2
+).

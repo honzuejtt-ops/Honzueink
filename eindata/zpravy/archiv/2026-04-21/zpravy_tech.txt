@@ -1,3 +1,68 @@
+|T|Skryté virtuální stroje: útočníci zneužívají QEMU k šíření malwaru|D|21.04.2026 22:00|P|Útočníci zneužívají otevřeného nástroje QEMU k ukrývání malwaru ve virtuálních strojích. Obcházejí tak detekci, kradou citlivá data a nasazují ransomw...|X|Roste počet útočníků, kteří zneužívají open-source emulátor QEMU k maskování škodlivé činnosti uvnitř virtuálních strojů. Spuštěním malwaru ve virtuálním stroji se útočníci vyhnou bezpečnostním kontrolám na koncových zařízeních a zanechávají v hostitelském systému jen minimální stopy. Tento přístup jim umožňuje udržet si dlouhodobý přístup, krást přihlašovací údaje, odcizovat data a nakonec nasadit ransomware.
+Nejde o úplně novou techniku, ale v poslední době se její využívání rozšiřuje. V průběhu let útočníci využívali QEMU k různým účelům, včetně provozu útočných nástrojů, vytváření skrytých síťových tunelů k infrastruktuře pro řízení a ovládání a nasazování zadních vrátek před spuštěním ransomwaru. Útočníci využívají virtualizace, protože poskytuje skryté prostředí, které výrazně ztěžuje detekci a forenzní analýzu, a útočníkům tak dává více času na to, aby mohli působit bez odhalení.
+Společnost Sophos se tomuto problému podrobně věnuje a vydala analýzu současné situace a popis jednotlivých útočných kampaní, které byly zaznamenány v posledních šesti měsících. Zneužití QEMU je opakující se technika, kterou útočníci používají již mnoho let,
+uvádí se ve zprávě. Naši analytici však zaznamenali nárůst případů, kdy byl QEMU využíván k obcházení bezpečnostních opatření, přičemž od konce roku 2025 byly identifikovány dvě odlišné kampaně: STAC4713 a STAC3725.
+Trvalé spojení a užitečné nástroje
+První jmenovaná kampaň byla poprvé zaznamenaná v listopadu 2025, je finančně motivovaná a spojená s ransomwarem PayoutsKing. V několika případech v rámci této kampaně byl nástroj QEMU využit jako skrytý zpětný SSH kanál k doručení nástrojů útočníků a získání přihlašovacích údajů k doménám.
+Počátečního přístupu útočníci získávají různým způsobem. Při starších incidentech útočníci využili nezabezpečené VPN sítě SonicWall, u nichž nebyla povolena vícefaktorová autentizace (MFA), zatímco při incidentu z ledna 2026 byla zneužita chyba zabezpečení v nástroji SolarWinds Web Help Desk (CVE-2025–26399). V únoru společnosti Microsoft a Huntress oznámily podobné případy, kdy tato chyba vedla k nasazení prostředí QEMU.
+K nasazení QEMU útočníci nejprve ve Windows vytvoří naplánovanou úlohu s názvem „TPMProfiler“. Tato úloha spustí virtuální stroj QEMU ( qemu-system-x86_64.exe
+) pod účtem SYSTEM prostřednictvím obrazu virtuálního pevného disku, který má neobvyklou příponu souboru. V předchozích incidentech se obraz disku vydával za soubor vault.db
+, ale v lednu 2026 se začal maskovat jako soubor DLL ( bisrv.dll
+).
+Naplánovaná úloha také zajišťuje trvalé připojení tím, že povoluje přesměrování z vlastních portů (32567, 22022) na port 22 (SSH). Při spuštění systému vytvoří obraz disku pomocí AdaptixC2 nebo OpenSSH reverzní SSH tunel ke vzdálené IP adrese. Tímto způsobem vznikne skrytý kanál pro vzdálený přístup do skrytého virtuálního stroje, čímž se obejde detekce na koncových bodech.
+Virtuální stroj spuštěný pomocí QEMU používá obraz disku s minimalistickou distribucí Alpine Linux 3.22.0, který obsahuje všechny potřebné nástroje užitečné pro útočníka. Sada nástrojů se v jednotlivých případech liší, obvykle však zahrnuje tinker2 (AdaptixC2), wg-obfuscator (vlastní nástroj pro zamlžování provozu WireGuard), BusyBox, Chisel a Rclone.
+Útočníci dále využívají uživatelské rozhraní služby Volume Shadow Copy Service ( vssuirun.exe
+) k vytvoření obsazu kopie diskového svazku. Dále využili příkazu print
+ke zkopírování databáze Active Directory ( NTDS.dit
+) a registrů SAM a SYSTEM do dočasných adresářů prostřednictvím protokolu SMB.
+Dále útočníci zneužívají k vyhledávání síťových sdílených adresářů a přístupu k souborům standardně dostupné nástroje, jako jsou Microsoft Paint, Poznámkový blok a Microsoft Edge, stejně jako volně dostupný nástroj třetí strany WizTree. Je velmi pravděpodobné, že tato kampaň souvisí s krádeží dat a šířením ransomwaru PayoutsKing.
+Individuální přístup a prodej
+Druhá popsaná kampaň se objevila v únoru 2026 a zneužívá zranitelnost CitrixBleed2 (CVE-2025–5777) k získání přístupu. Následně útočníci nainstalují škodlivého klienta ScreenConnect, aby si zajistili trvalý přístup. Poté nasazují virtuální stroj pomocí QEMU, aby nainstalovali další nástroje pro provádění průzkumu a krádeže přihlašovacích údajů.
+Po počátečním proniknutí do prostředí oběti prostřednictvím NetScaleru útočníci umístí do systému archiv ve formátu ZIP ( an.zip
+). Spustitelný soubor v archivu ( an.exe
+) vytvoří a spustí službu s názvem AppMgmt, která přidá nového lokálního správce ( CtxAppVCOMService
+) a nainstaluje klienta ScreenConnect prostřednictvím souboru .msi
+, který byl pravděpodobně rovněž součástí archivu.
+Spustitelný soubor klienta ScreenConnect ( ScreenConnect.ClientService.exe
+) naváže spojení se svým serverem ( vtps.us
+) a naváže relaci s oprávněními správce. Následně vytvoří archiv ZIP v adresáři oběti (např. C:\Users\<uživatelské jméno>\Documents\ScreenConnect\Files\qemu_custom.zip
+), který je rozbalen pomocí programu 7-Zip. Soubor qemu-system-x86_64.exe
+vybalený z tohoto archivu používá obraz virtuálního disku s názvem custom.qcow2
+k zavedení a spuštění virtuálního stroje s distribucí Alpine Linux na hostitelském počítači.
+Místo nasazení předem připravené sady nástrojů útočníci ručně instalují a kompilují ve virtuálním stroji celou sadu nástrojů pro útok, včetně utilit Impacket, KrbRelayx, Coercer, BloodHound.py, NetExec, Kerbrute, Metasploit a podpůrných knihoven pro jazyky Python, Rust, Ruby a C++.
+Mezi pozorované škodlivé aktivity patřilo stahování přihlašovacích údajů, výčet uživatelských jmen Kerberos pomocí Kerbrute, průzkum Active Directory pomocí BloodHound a spouštění FTP serverů pomocí pyftpdlib za účelem přípravy datového balíku a následného přenosu informací.
+Kromě aktivity v QEMU klient ScreenConnect přidává do registru klíč WDigest
+pro ukládání přihlašovacích údajů, instaluje nástroj FTK Imager k odstranění všech výjimek z Microsoft Defenderu, provádí příkazy pro zjišťování a instaluje zranitelný ovladač do jádra ( K7RKScan_1516.sys
+).
+Následné aktivity se u jednotlivých útoků lišily, což naznačuje, že zprostředkovatelé počátečního přístupu nejprve napadli prostředí obětí a poté přístup prodali dalším útočníkům. V jednom případě si útočníci udrželi přístup k prostředí nasazením nástrojů Total Software Deployment a Total Network Inventory, stejně jako dalšího neautorizovaného klienta ScreenConnect. V jiném případě útočníci použili NetBird k navázání šifrovaného peer-to-peer připojení, pokusili se získat cookies relace prohlížeče pomocí cookie_exporter.exe
+a spustili skript v PowerShellu k deaktivaci Microsoft Defenderu.
+Počet podobných zneužití roste
+Zneužití nástroje QEMU postupně přibývá a jde o rostoucí trend v oblasti obcházení bezpečnostních opatření, kdy útočníci využívají legitimní virtualizační software k utajení škodlivých aktivit. Podaří se tak aktivity skrýt před agenty nainstalovanými na koncových zařízeních a před nástroji pro sledování podezřelého síťového provozu.
+Skrytý virtuální stroj s předem nainstalovanou nebo zkompilovanou sadou nástrojů pro útoky umožňuje dlouhodobý přístup do sítě, díky čemuž je možné dále nasazovat malware, získávat přihlašovací údaje a pohybovat se v síti napříč systémy, aniž by zločinec zanechal stopy přímo na hostitelském počítači.
+Organizace by měly provést audit svých prostředí a zkontrolovat, zda neobsahují neoprávněné instalace QEMU, neočekávané naplánované úlohy (zejména ty, které běží pod účtem SYSTEM) a neobvyklá pravidla přesměrování portů směřující na port 22. Správci sítě by měli sledovat odchozí SSH tunely vycházející z nestandardních portů a vyhledávat obrazy virtuálních disků s neobvyklými příponami souborů (např. .db
+, .dll
+, .qcow2
+).|E|
+|T|Softwarová sklizeň (22. 4. 2026): omezte řádění agentů AI ve svém systému|D|21.04.2026 22:00|P|Sonda do světa otevřeného softwaru. Dnes si zabezpečíme práci s AI agenty, převedeme si text na řeč, uděláme si pořádek v citacích a podíváme se na je...|X|Mithril
+Bezpečnostní MCP (Model Context Protocol) server, který zásadně zvyšuje ochranu systému při práci s autonomními agenty AI tím, že nahrazuje neomezený a rizikový přístup k systémovému shellu sadou více než 160 validovaných a účelově vytvořených nástrojů.
+Namísto provádění nebezpečných řetězců příkazů skrze bash -c
+, které jsou náchylné k chybám, halucinacím parametrů nebo útokům typu prompt injection, Mithril striktně vyžaduje typované argumenty a validované vstupy pro každou operaci, jako je vyhledávání či čtení souborů.
+Veškerá aktivita agenta je navíc izolována v sandboxu na úrovni operačního systému, což spolehlivě omezuje přístup pouze na adresář daného projektu.
+github.com/radimsem/mithril, 0.1.0
+Speed of Sound
+Aplikace pro Linux, která využívá model Whisper od OpenAI k vysoce přesnému převodu řeči na text v reálném čase. Nástroj funguje lokálně a offline v jakémkoli aktivním textovém poli napříč prostředími GNOME i KDE (X11 i Wayland), přičemž k simulaci psaní využívá XDG Desktop Portal.
+Uživatelům umožňuje diktovat text stisknutím klávesové zkratky, podporuje více jazyků zároveň a nabízí možnost personalizace slovníku nebo následné úpravy textu pomocí LLM. Je ideálním pomocníkem pro rychlé zapisování poznámek či e-mailů bez nutnosti odesílat nahrávky do cloudu, čímž zajišťuje maximální soukromí a efektivitu při práci na desktopu.
+github.com/zugaldia/speedofsound, 0.12.0
+Zotero
+Osobní asistent pro výzkum dostupný pro všechny hlavní platformy, který slouží ke snadnému shromažďování, organizaci a citování odborných zdrojů. Aplikace dokáže automaticky rozpoznat a jedním kliknutím uložit materiály z webu, od akademických článků po knihy, a následně je třídit pomocí sbírek, štítků či chytrého vyhledávání.
+Software vyniká přímou integrací do textových editorů, jako jsou Word či Google Docs, kde okamžitě generuje bibliografie ve více než 9 000 citačních stylech. Díky volitelné synchronizaci mezi zařízeními, možnostem bezplatné týmové spolupráce a záštitě nezávislé neziskové organizace představuje Zotero bezpečný a efektivní nástroj pro správu dat, nad kterými má uživatel vždy plnou kontrolu.
+www.zotero.org, 9.0.0
+DbGate
+Správce databází pro Windows, macOS a Linux, který kombinuje podporu SQL i NoSQL systémů v jediném přehledném rozhraní. Aplikace postavená na moderních technologiích jako Electron a Svelte nabízí intuitivní tabulkové GUI pro současnou práci s více databázemi, a to jak přímo, tak přes SSH tunely.
+Vedle pokročilého SQL editoru s našeptávačem disponuje DbGate funkcemi, jako jsou vizuální návrhář dotazů, porovnávání schémat, tvorba grafů a robustní nástroje pro import i export dat (CSV, Excel, JSON) s podporou vlastních pluginů.
+github.com/dbgate/dbgate, 7.1.8
+Blbinka
+Potřebujete vyhnat divokou zvěř z velkoměsta a bojíte se, že by vám mohla ublížit? Naštěstí moderní technologie už umí vyřešit i tento problém.|E|
 |T|Oppo Find X9 Ultra odhaluje kompletní výbavu. Fotoaparát patří k absolutní špičce|D|21.04.2026 19:15|P||X|Oppo představuje na českém trhu svůj vlajkový fotomobil Oppo Find X9 Ultra. Je to poprvé, co čínský výrobce posílá model s přívlastkem „Ultra“ i na globální trhy. Tato řada se dlouhodobě profiluje jako platforma pro experimenty s mobilní fotografií a videem na hranici toho, co je konstrukčně možné. Hlavní inovací Find X9 Ultra je speciálně řešený periskopický teleobjektiv s 10× optickým zoomem. Českou cenu výrobce teprve zveřejní, podle našich neoficiálních informací by se měla vejít do 40 tisíc korun.
 Telefon je vyroben ve spolupráci s fotografickou značkou Hasselblad. Výrazný modul zadního fotoaparátu odkazuje na estetiku fotografické techniky. Vroubkování po obvodu vzniklo CNC frézováním a evokuje zaostřovací kroužek objektivu, hexagonální detail potom připomíná lamely clony. Důležitost fotoaparátu podtrhuje i fyzické tlačítko Quick Button v bočním rámečku, které slouží primárně pro ovládání fotoaparátu, ale můžete mu přiřadit i jiné funkce.
 Top čipset a chlazení s termoregulací

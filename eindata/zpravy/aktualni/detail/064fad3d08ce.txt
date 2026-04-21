@@ -1,0 +1,20 @@
+Mithril
+Bezpečnostní MCP (Model Context Protocol) server, který zásadně zvyšuje ochranu systému při práci s autonomními agenty AI tím, že nahrazuje neomezený a rizikový přístup k systémovému shellu sadou více než 160 validovaných a účelově vytvořených nástrojů.
+Namísto provádění nebezpečných řetězců příkazů skrze bash -c
+, které jsou náchylné k chybám, halucinacím parametrů nebo útokům typu prompt injection, Mithril striktně vyžaduje typované argumenty a validované vstupy pro každou operaci, jako je vyhledávání či čtení souborů.
+Veškerá aktivita agenta je navíc izolována v sandboxu na úrovni operačního systému, což spolehlivě omezuje přístup pouze na adresář daného projektu.
+github.com/radimsem/mithril, 0.1.0
+Speed of Sound
+Aplikace pro Linux, která využívá model Whisper od OpenAI k vysoce přesnému převodu řeči na text v reálném čase. Nástroj funguje lokálně a offline v jakémkoli aktivním textovém poli napříč prostředími GNOME i KDE (X11 i Wayland), přičemž k simulaci psaní využívá XDG Desktop Portal.
+Uživatelům umožňuje diktovat text stisknutím klávesové zkratky, podporuje více jazyků zároveň a nabízí možnost personalizace slovníku nebo následné úpravy textu pomocí LLM. Je ideálním pomocníkem pro rychlé zapisování poznámek či e-mailů bez nutnosti odesílat nahrávky do cloudu, čímž zajišťuje maximální soukromí a efektivitu při práci na desktopu.
+github.com/zugaldia/speedofsound, 0.12.0
+Zotero
+Osobní asistent pro výzkum dostupný pro všechny hlavní platformy, který slouží ke snadnému shromažďování, organizaci a citování odborných zdrojů. Aplikace dokáže automaticky rozpoznat a jedním kliknutím uložit materiály z webu, od akademických článků po knihy, a následně je třídit pomocí sbírek, štítků či chytrého vyhledávání.
+Software vyniká přímou integrací do textových editorů, jako jsou Word či Google Docs, kde okamžitě generuje bibliografie ve více než 9 000 citačních stylech. Díky volitelné synchronizaci mezi zařízeními, možnostem bezplatné týmové spolupráce a záštitě nezávislé neziskové organizace představuje Zotero bezpečný a efektivní nástroj pro správu dat, nad kterými má uživatel vždy plnou kontrolu.
+www.zotero.org, 9.0.0
+DbGate
+Správce databází pro Windows, macOS a Linux, který kombinuje podporu SQL i NoSQL systémů v jediném přehledném rozhraní. Aplikace postavená na moderních technologiích jako Electron a Svelte nabízí intuitivní tabulkové GUI pro současnou práci s více databázemi, a to jak přímo, tak přes SSH tunely.
+Vedle pokročilého SQL editoru s našeptávačem disponuje DbGate funkcemi, jako jsou vizuální návrhář dotazů, porovnávání schémat, tvorba grafů a robustní nástroje pro import i export dat (CSV, Excel, JSON) s podporou vlastních pluginů.
+github.com/dbgate/dbgate, 7.1.8
+Blbinka
+Potřebujete vyhnat divokou zvěř z velkoměsta a bojíte se, že by vám mohla ublížit? Naštěstí moderní technologie už umí vyřešit i tento problém.

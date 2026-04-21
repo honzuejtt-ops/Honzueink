@@ -1,0 +1,39 @@
+Microsoft ukázal, co nabídne povinná servisní aktualizace pro Windows 11, která vyjde 12. května. Před pár dny totiž pustil do oběhu její testovací verzi. Nese označení KB5083631, jde o systémové revize 26100.8313 a 26200.8313. Najdete ji v kanálu Release Preview. Čeká nás další kolečko opravování a zlepšování spolehlivosti.
+Ale nejen to, dočkáme se také slibovaného režimu Xbox. Když jsme o něm psali v listopadu, kdy byl zahájen veřejný betatest, tak se funkce nazývala Xbox Full Screen Experience. Režim Xbox, v angličtině Xbox mode, spustíte na libovolném počítači s Jedenáctkami.
+Pro hraní her by dle dřívějších informací měl uvolnit až dva gigabajty paměti. Nepoběží totiž systémové služby, které jsou při hraní zbytné. Vizuálním stylem se redmondští inspirovali u své herní konzole. Protože režim Xbox běží přes celou obrazovku, tak počítač se promění ve falešnou konzoli.
+Režim Xboxu můžete ovládat gamepadem
+Prostředí je pohodlně ovladatelné gamepadem. Spustíte ho z Game Baru, aplikace Xbox nebo klávesovou zkratkou Win+F11. Jeho vznik úzce souvisí s tím, že Microsoft o další generaci konzole uvažuje právě jako o převlečeném počítači. V říjnu se pak začaly prodávat herní handheldy s Windows 11 a testovací verzí herního rozhraní.
+Níže si v bodech projdeme vylepšení menšího charakteru. Pokud si chcete testovací verzi aktualizace nainstalovat, mějte na paměti, že aktivace novinek je řízená. Na našem počítači např. zatím nemůžeme vyzkoušet ani režim Xboxu.
+Obecné novinky
+- Instalace aplikací ze Storu by měla méně často končit chybami 0x80070057, 0x80240008 a 0x80073d28.
+- Plynulé diktování by se mělo vypínat s vyšší prodlevou.
+- Organizace mohou Enterprise State Roaming spravovat prostřednictvím zásad Zálohování Windows.
+- Windows Enterprise a Education přidávají dynamický seznam aplikací, které mají být ze systému odinstalovány.
+- Správci a autoři zásad App Control for Business mají větší kontrolu nad zpracováváním skriptů a dávkových souborů.
+- Nastavení kioskového režimu je jednodušší, pokud se mezi povolenými aplikacemi nachází Microsoft Edge.
+Uživatelské prostředí
+- Vlastní nastavení zobrazení složky by mělo být perzistentní napříč různými rozhraními pro prohlížení. Když si zvolíte řazení a zobrazení ikon, mělo by být stejné jak v Průzkumníku, tak např. v dialogu Otevřít.
+- Když Průzkumník spustíte v tmavém režimu, nemělo by probliknout bílé okno. Týká se to zobrazení Tento počítač a změny velikosti panelu s detaily.
+- Panel pro náhled umožňuje zobrazení náhledu souborů stažených z internetu poté, co vás upozorní na možné riziko.
+- Prostředí pro psaní hlasem bylo zjednodušeno a mělo by být intuitivnější.
+- Funkce Drag Tray se nyní nazývá Drop Tray (a momentálně je do češtiny nešikovně přeloženo jako Přetáhnout přihrádku). Jde o nabídku pro sdílení, která se objevuje v horní části obrazovky, když přesouváte soubor. Tato nabídka se dále zmenšuje, aby nepřekážela, když ji zrovna nechcete použít. Předvolby funkce se přesouvají do Nastavení | Systém | Multitasking.
+Částečně vysunutý panel Drop Tray bude o menší, aby nepřekážel
+- Na hlavním panelu můžete monitorovat chování autonomní AI. Jako první funkci podporuje Researcher z Microsoft 365 Copilot. Když agent plní úkol, ikonu doplní ukazatel průběhu. Podrobnější informace se ukáží, když ukazatel myši přesunete nad ikonu aplikace.
+Technické změny
+- Zlepšil se výkon spouštění aplikací, které automaticky startují po načtení systému.
+- Průzkumník se spouští rychleji. Neplatí to ale pro všechny trhy. Detaily Microsoft neuvádí.
+- Průzkumník podporuje archivy UU, CPIO, XAR a NUPKG.
+NUPKG patří k podporovaným archivům, které Průzkumník otevře
+- Zlepšila se stabilita pomocných procesů explorer.exe po zavření okna Průzkumníku.
+- Zlepšila se spolehlivost procesu explorer.exe včetně interakcí s nabídkami na hlavním panelu nebo odepínání položek v Průzkumníku.
+- Zlepšila se spolehlivost načtení oznamovací oblasti.
+- Zlepšila se spolehlivost skenování tváře při použití Windows Hello a uchování otisků prstů při upgradu systému.
+- Zlepšila se spolehlivost navigace klávesnicí v nabídce s emoji.
+- Zlepšil se výkon při procházení Nastavení | Systém | Úložiště | Disky a svazky, když máte v počítači velká úložiště.
+- Funkce Optimalizace doručení, kterou může používat Windows Update, by už neměla konzumovat nepřiměřený objem operační paměti.
+- Dostupnost a perzistence barevných profilů na podporovaných monitorech se zlepšila.
+- Maximální velikost oddílu při formátování na FAT32 se zvětšila z 32 GB na 2 TB. Platí pro formátování prostřednictvím příkazového řádku. (Microsoft funkci slíbil před necelými dvěma roky.)
+- Mění se způsob, jak jádro Windows důvěřuje ovladačům třetích stran. Povolené zůstávají ovladače z Windows Hardware Compatibility Program a ze seznamu důvěryhodných starších ovladačů. Jádro už ale automaticky nedůvěřuje starším ovladačům, které jsou tzv. cross‑signed. Ty nepodepsal Microsoft, získaly komerční certifikát od důvěryhodné autority. Ovladače se tímto mohly vyhnout oficiálnímu certifikačnímu procesu. Windows provedou audit, který potrvá aspoň 100 hodin a tři restarty počítače. Poté mohou být některé starší ovladače zablokovány. Mělo by jít o nízké procento.
+- Zlepšila se kompatibilita ovladačů třetích stran s procesem midisrv.exe.
+- Při použití kompatibilních zařízení ucítíte haptickou odezvu při akcích jako změna velikosti a připnutí okna. Haptickou odezvu podporují Surface Slim Pen 2, Asus Pen 3.0 a MSI Pen 2. Další zařízení jako Logitech MX Master 4, jsou závislá na aktualizaci výrobce.
+- Nastavení vlastních nástrojů pro zařízení jako Surface Dial v Nastavení je spolehlivější.

@@ -1,0 +1,17 @@
+Od GoPro jsme čekali představení 14. generace stěžejní řady Hero, dočkali jsme se ale zbrusu nových kamer Mission 1. Bourají zažité hranice kategorie akčních kamer a slibují výrazně vyšší obrazovou kvalitu. Kromě toho se zaměřují i na profesionální zpracování materiálu. Tohle osvěžení GoPro potřebovalo.
+Obrovský snímač
+Do nabídky se postupně dostanou tři modely Mission 1, které budou postaveny na stejném hardwarovém základu. Tím hlavním bude velký 1" snímač, který by měl být příslibem výrazně lepší obrazové kvality než na jakou jsme u akčních kamer zvyklí.
+O zpracování se potom bude starat výkonnější procesor GP3 z vlastní produkce. I díky tomu bude možné u nejvyššího modelu Mission 1 Pro pořizovat záznam v rozlišení 8K při 60 fps. Vedle toho bude k dispozici i formát Open Gate, kdy kamera využije celou plochu senzoru pro pozdější ořezy při postprocessingu. Při 4K budou všechny verze točit až při 240 fps a pro slowmo půjde použít 1080p při 960 fps. O stabilizaci se bude starat Hypersmooth, tedy technologie bez konkurence mezi současnými akčními kamerami.
+Od poslední generace řady Hero se modely Mission 1 výrazně nebudou odlišovat rozměry. Rozměry těla 72 × 56 × 35 mm jsou prakticky totožné. Nechybí voděodolnost i bez dodatečného pouzdra do hloubky 20 metrů.
+Jak už bylo zmíněno, nabídku rozšíří tři modely:
+- Mission 1: základní model se stejným snímačem a procesorem s maximálním formátem 8K@30fps.
+- Mission 1 Pro: totožné tělo i hardware, ale s maximem na 8K@30fps.
+- Mission 1 Pro ILS: stejné parametry s výměnnými objektivy
+Technicky nejzajímavějším modelem je bezpochyby právě poslední varianta ILS. Ta totiž namísto pevného integrovaného objektivu nabízí standardní bajonet Micro 4/3 (MFT). Kameru tak půjde vybavit libovolným objektivem podle potřeby. S plánovaným příslušenstvím jako jsou gripy, osvětlovací kity, mikrofony, či ND filtry tak půjde o kameru pro profesionální produkci.
+GoPro tak svoje akční portfolio rozšiřuje o kompaktní filmové kamery. Díky modelu ILS budou směle konkurovat například bezzrcadlovkám. O směřování mimo kategorii klasických akčních kamer hovoří i podpora 10bitové hloubky a Log profilu.
+GoPro slibuje perfektní výdrž, kdy má kamera na jednu baterii zvládnout 5 hodin záznamu při Full HD, asi 188 minut při 4K (4:3), asi 100 minut při 4K@120fps a asi 96 minut při 8K@30fps. Otázkou samozřejmě zůstává, jak budou kamery zvládat teplotní management, který bývá standardním problémem jak u bezzrcadlovek, tak u fotomobilů. Pokud se GoPro bude stíhat uchladit při kontinuálním záznamu ve vysokých rozlišeních, bude mít zásadní konkurenční výhodu.
+Na trh se nejdřív dostane základní varianta Mission 1 a vyšší verze Mission 1 Pro. Až během druhé půlky letošního roku na trh zamíří Mission 1 Pro ILS s výměnnými objektivy. Ceny jsou v kontextu směřování líbivé, v závorce uvádíme hrubý odhad podle aktuálních cen u modelů Hero13:
+- GoPro Mission 1: 599,99 USD (14 990 Kč)
+- GoPro Mission 1 Pro: 699,99 USD (16 990 Kč)
+- GoPro Mission 1 Pro ILS: 699,99 USD (16 990 Kč)
+Zdroj: GoPro

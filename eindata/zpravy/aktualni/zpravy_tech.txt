@@ -1,4 +1,200 @@
-|T|Tohle není reklama, ale mohla by být. Astronaut natočil dechberoucí video „západu Země“ na svůj iPhone|D|21.04.2026 17:45|P||X|Velitel mise Artemis 2, Reid Wiseman, zveřejnil video zachycující unikátní perspektivu tzv. „západu Země“. Tento záběr pořídil iPhonem 17 Pro Max během desetidenní cesty kosmické lodi Orion kolem Měsíce a zpět. Wiseman při pohledu z úzkého okna dokovacího průlezu impulsivně sáhl po telefonu, který měl po ruce, aby fascinující úkaz zachytil co nejrychleji. Video natočil s osminásobným přiblížením, které podle jeho kvaliifikovaného odhadu nejlépe odpovídá tomu, jak by tuto scénu vnímalo lidské oko.
+|T|Oppo Find X9 Ultra odhaluje kompletní výbavu. Fotoaparát patří k absolutní špičce|D|21.04.2026 19:15|P||X|Oppo představuje na českém trhu svůj vlajkový fotomobil Oppo Find X9 Ultra. Je to poprvé, co čínský výrobce posílá model s přívlastkem „Ultra“ i na globální trhy. Tato řada se dlouhodobě profiluje jako platforma pro experimenty s mobilní fotografií a videem na hranici toho, co je konstrukčně možné. Hlavní inovací Find X9 Ultra je speciálně řešený periskopický teleobjektiv s 10× optickým zoomem. Českou cenu výrobce teprve zveřejní, podle našich neoficiálních informací by se měla vejít do 40 tisíc korun.
+Telefon je vyroben ve spolupráci s fotografickou značkou Hasselblad. Výrazný modul zadního fotoaparátu odkazuje na estetiku fotografické techniky. Vroubkování po obvodu vzniklo CNC frézováním a evokuje zaostřovací kroužek objektivu, hexagonální detail potom připomíná lamely clony. Důležitost fotoaparátu podtrhuje i fyzické tlačítko Quick Button v bočním rámečku, které slouží primárně pro ovládání fotoaparátu, ale můžete mu přiřadit i jiné funkce.
+Top čipset a chlazení s termoregulací
+Na evropských trzích včetně toho českého budou v prodeji dvě barevné varianty. Liší se nejen samotným zbarvením, ale i materiálem zadního krytu: šedivá Tundra Umber má záda z vroubkované koženky, oranžová Canyon Orange je vyrobena z kompozitu s leteckým hliníkem. Každá varianta tak láká určitý typ uživatelů, ale přitom obě vypadají dobře. Telefon patří mezi těžší a větší zařízení, hmotnost se blíží 240 gramům. Použitý 6,82palcový LTPO AMOLED panel dostal individuální kalibraci z výroby a podle výrobce každý kus splňuje přísné limity přesnosti barev. Vyznačuje se také vysokým maximálním jasem 3600 nitů.
+Žádné kompromisy výrobce nepřipouští ani u výkonu. Telefon se bude prodávat v jediné paměťové variantě 12 + 512 GB. Chlazení nejvýkonnějšího současného mobilního procesoru Snapdragon 8 Elite Gen 5 obstarává systém parní komory a grafitu. Oppo navíc deklaruje vlastní termoregulační vrstvu, která má stabilizovat teplotní špičky při natáčení 8K videa nebo intenzivním hraní.
+Křemíko-uhlíková baterie disponuje kapacitou 7050 mAh. Výrobce ze svých laboratorních testů uvádí výdrž přes 30 hodin při streamování videa nebo navigaci. Vlastní řídicí čip baterie má optimalizovat vybíjení při nízkém stavu baterie a v nízkých teplotách. Oppo tvrdí, že baterie si po pěti letech pravidelného používání udrží více než 80 % původní kapacity.
+Špičkový fotoaparát a unikátní teleobjektiv
+Fotografická sestava Oppo Find X9 Ultra je naprosto špičková a prémiová. Na zádech najdeme rovnou čtyři plnohodnotné fotoaparáty plus pátý specializovaný modul pro měření přesnosti barev. Hlavní fotoaparát staví na snímači Sony LYT-901 o velikosti 1/1,12" s rozlišením 200 megapixelů. Světelnost f/1.5 by měla zajistit příjem světla srovnatelný se snímačem jednopalcového typu, který Oppo použilo u loňského modelu Find X8 Ultra – ale ten měl rozlišení „pouze“ 50 megapixelů (model se prodával jen v Asii).
+Ke 200megapixelovým snímkům se váže i možnost vyříznout z plného záběru 50megapixelový výřez při 2× přiblížení a kamera tak de facto nabízí i 47mm ekvivalent s tím, že výřez stále pracuje s plným počtem nativních pixelů. Snímač a jeho obrazový procesor průběžně kombinuje až tři expozice do jednoho snímku, aby udržel konzistentní HDR.
+3× teleobjektiv jde v podobném duchu ještě dál – také má 200 megapixelů, tentokrát na snímači OmniVision OV52A o velikosti 1/1,28". Výrobce to staví jako historicky největší snímač použitý v teleobjektivu smartphonu, větší než hlavní snímače řady konkurenčních modelů. Periskopická konstrukce si vyžádala speciální hranol s konvexní čočkou pro maximalizaci průchodu světla, výsledná světelnost je pro tento typ objektivu ohromujících f/2.2. Minimální zaostřovací vzdálenost 15 cm navíc umožňuje využít 3× teleobjektiv i pro makro fotografii.
+Unikátní konstrukce 10× teleobjektivu odráží světlo pětkrát přes hranoly, než dopadne na senzor
+Konstrukčně nejzajímavější je ale 10× teleobjektiv. Nativní 10× optický zoom v tenkém těle smartphonu je fyzikálně náročný problém – dlouhá ohnisková vzdálenost vyžaduje dlouhou optickou dráhu, jenže na tu není běžně v těle relativně malého telefonu prostor. Oppo to řeší konstrukcí, kde světlo podstupuje pět odrazů místo jednoho, čímž se zkrátí délka optického modulu o 30 %. Snímač Samsung JNL o velikosti 1/2,75" s rozlišením 50 megapixelů a světelností f/3.5 je zatím první realizací 50megapixelového 10× zoomu.
+Protože pětinásobné odrazy s sebou nesou riziko tzv. parazitního světla, hranol je složen ze tří dílů oddělených nanometrovou membránou a vzduchovou komorou. Výrobce tvrdí, že tímto způsobem eliminuje až 99,999 % parazitního světla. Stabilizaci nelze řešit pohybem hranolu (jako u klasického periskopického zoomu), proto Oppo zvolilo posun samotného snímače.
+Kombinací nativních ohnisek a výřezů pokrývá sestava fotoaparátu hodnoty 14, 23, 47, 70, 139, 230 a 460 mm, plus makro přes 3× teleobjektiv
+Čtvrtý fotoaparát z pěti je ultraširokoúhlý objektiv se snímačem Sony LYT-600 (1/1,95", 50 MP, f/2.0), disponuje autofokusem a pokrývá ekvivalentní ohnisko 14 mm. Pátý modul – 24kanálový multispektrální senzor – není určen pro zachycení samotného obrazu. Měří spektrální složení světla a dodává přesnější data pro vyvážení bílé napříč celou fotoaparátovou sestavou. Oproti první generaci tohoto modulu na Find X8 Ultra má mít 5,5× lepší dynamický rozsah a pracuje nepřetržitě i při nahrávání videa.
+Novinka cílí nejen na pořizování statických fotek, ale má také nemalé ambice v oblasti videa. Všechny fotoaparáty natáčejí 4K při 60 fps s Dolby Vision. Oba 200megapixelové snímače navíc zvládají 4K při 120 fps, využitelné pro zpomalenou projekci. Nově je k dispozici i 8K při 30 fps, a to jak přes hlavní, tak přes 3× teleobjektiv. Přepínání mezi objektivy za pohybu má být plynulé bez přeskoku obrazu.
+Pro postprodukci přibyl O-Log2, druhá generace logaritmického barevného profilu Oppo. Oproti předchůdci lépe zachovává detaily ve stínech a nese „hollywoodskou“ certifikaci ACES (Academy Color Encoding System), což usnadňuje sladění barev s profesionálními kamerami. Telefon navíc podporuje 3D LUT v široce používaném formátu .cube. Tyto barevné profily lze nahrát přímo do telefonu a sledovat výslednou barevnou podobu už v reálném čase při nahrávání videa, případně rovnou nechat zaznamenat („vypálit“) do výsledného souboru. Díky tomu nemusí být potřeba následná úprava barev v počítači.
+Rozšiřující fotokit
+Oppo Find X9 Ultra běží tradičně na vlastním prostředí ColorOS 16, které je postavena na Androidu 16. Na zamykací obrazovce přibyl nový prvek Live Space – notifikace se jedním tahem sbalí do jedné kapsle a přestanou zakrývat tapetu. AI Mind Space je systém pro průběžné ukládání a organizaci obsahu ze snímků obrazovky, fotografií a dokumentů. AI Bill Manager na něj navazuje automatickým rozpoznáváním plateb – digitálních i z fyzických dokladů přes fotoaparát – a jejich tříděním do měsíčního přehledu.
+Funkce AI Menu Translation přeloží restaurační jídelníček a vygeneruje vizualizace jídel (s limitem 30 použití měsíčně). Meziplatformní sdílení souborů pokrývá aplikace O+ Connect pro iOS, iPadOS, macOS a Windows. Oppo avizuje i budoucí nativní podporu Quick Share pro Apple zařízení bez nutnosti třetích stran.
+K telefonu je možné dokoupit sadu fotopříslušenství Hasselblad Earth Explorer Kit. Tvoří ji koženkové pouzdro s dvoupolohovým tlačítkem (polostiskem zaostří, plným stiskem vyfotí), fyzickým ovladačem zoomu a 67mm adaptérem pro standardní fotografické filtry. Součástí sady je telekonvertor (přídavný objektiv) se 16 skleněnými prvky v 11 skupinách (čtyři ED čočky pro potlačení chromatické aberace), který se připevní na 3× teleobjektiv a přináší 4,3× zvětšení. Výsledné ohnisko odpovídá přibližně 300 mm při 13× optickém zoomu. Kombinací s výřezem z 200Mpx snímače je dosažitelné ohnisko 600 mm.
+Technické parametry
+Zdroje a další informace: TZ Oppo|E||T|Přehled telefonů, které dostanou Android 16. Aktualizace už vydala většina velkých i menších značek|D|21.04.2026 18:15|P|Update na Android 16 mohou čekat majitelé mnoha zařízení • V tomto přehledu se dozvíte, zda dorazí i do vašeho telefonu • Článek pravidelně aktualizuj...|X|Asus
+Většina telefonů u Asusu má tradičně přislíbené dvě velké aktualizace, takže Zenfone 10 skončí na Androidu 15. Seznam modelů, u kterých očekáváme aktualizaci na Android 16, je tak relativně jasný.
+ZenFone 12 Ultra se účastnil beta testování, nyní už je pro něj Android 16 dostupný zcela veřejně
+Už bylo dříve jasné, že s aktualizacemi Asus určitě nebude mezi prvními. Tradičně však patří ke značkám, které vydávají aktualizace spíše později.
+Android 16 pro zařízení Asus:
+- Asus ROG Phone 8 – aktualizováno
+- Asus ROG Phone 8 Pro – aktualizováno
+- Asus Zenfone 11 Ultra – aktualizováno
+- Asus Zenfone 12 Ultra – aktualizováno
+- Asus ROG Phone 9 Pro – aktualizováno
+- Asus ROG Phone 9 – aktualizováno
+Aktualizace u značky Asus:
+- typicky dvě generace Androidu a minimálně dva roky bezpečnostních záplat
+Pokračování 2 / 22
+Fairphone
+Značka s „férovými“ a udržitelnými smartphony samozřejmě musí myslet, nejen na hardware, ale i na softwarovou podporu. Výrobce slíbil aktualizaci na Android 16 u modelu Fairphone 6, staršímu modelu Fairphone 5 však stále běží softwarová podpora, takže by měl update dostat také.
+Fairphone 6 je prvním telefonem značky, který dostal Android 16
+Android 16 pro zařízení Fairphone:
+- Fairphone 5
+- Fairphone 6 – aktualizováno
+Aktualizace u značky Fairphone:
+- pět až sedm let od vydání telefonů, u novějších modelů je avizovaná podpora delší
+Pokračování 3 / 22
+Google
+Google stojí za vývojem Androidu 16, a tak není překvapením, že jeho telefony byly prvními, na které už aktualizace dorazila. Tím to ale pro Google nekončí, protože ve druhé polovině roku na telefony dostane i další aktualizace, která do Androidu přinese výraznější novinky.
+Google už má aktualizováno na Android 16. Od Pixelu 6 až po nejnovější řadu Pixel 9
+Od Pixelu 8 se uživatelé mohou těšit ze sedmileté softwarové podpory, přičemž nejstarší aktualizované modely na Android 16 spadají do řady Pixel 6.
+Android 16 pro zařízení Google Pixel:
+- Google Pixel 6 – aktualizováno
+- Google Pixel 6 Pro – aktualizováno
+- Google Pixel 6a – aktualizováno
+- Google Pixel 7 – aktualizováno
+- Google Pixel 7 Pro – aktualizováno
+- Google Pixel 7a – aktualizováno
+- Google Pixel Fold – aktualizováno
+- Google Pixel Tablet – aktualizováno
+- Google Pixel 8 – aktualizováno
+- Google Pixel 8 Pro – aktualizováno
+- Google Pixel 8a – aktualizováno
+- Google Pixel 9 – aktualizováno
+- Google Pixel 9a – aktualizováno
+- Google Pixel 9 Pro – aktualizováno
+- Google Pixel 9 Pro XL – aktualizováno
+- Google Pixel 9 Pro Fold – aktualizováno
+Aktualizace u značky Google:
+- Sedm velkých aktualizací a sedm let bezpečnostních záplat (od Pixelu 8)
+- Až tři velké aktualizace a pět let bezpečnostních základ (starší modely)
+Pokračování 4 / 22
+HMD
+Značka HMD u svých smartphonů slibuje pouze dvě velké aktualizace. Prvním aktualizovaným telefonem by měl být HMD Skyline, ale ani u HMD není znám přesný harmonogram aktualizací.
+Prvním z aktualizovaných telefonů HMD by měl být HMD Skyline
+Android 16 pro zařízení HMD (očekáváme):
+- HMD Fusion
+- HMD Pulse
+- HMD Pulse Pro
+- HMD Pulse+
+- HMD Skyline
+Aktualizace u značky HMD:
+- typicky dvě velké aktualizace a dva až tři roky bezpečnostních záplat
+Pokračování 5 / 22
+Honor
+Honor v Česku nabízí několik desítek telefonů ve třech modelových řadách, přičemž dlouho u něj platila jen čtyřletá softwarová podpora. Od řady Honor 400 je softwarová podpoře šestiletá a od Honoru Magic 7 Pro pak dokonce sedmiletá.
+Beta testování Android 16 začalo u Honoru Magic7 Pro
+Honor má aktualizace tradičně spojené s novou verzí prostředí Magic OS, beta testování však začalo s novou verzí systému ale se starší verzí prostředí MagicOS 9. První aktualizované telefony Honor slibuje do konce roku 2025, pokud se aktualizace nenabízí klasickou cestou, můžete ji zkusit vyvolat přes aplikaci My Honor.
+Android 16 pro zařízení Honor:
+- Honor Magic7 Pro – aktualizováno
+- Honor 400 – aktualizováno
+- Honor 400 Pro – aktualizováno
+- Honor 400 Lite
+- Honor Magic V5 – aktualizováno
+- Honor 300
+- Honor 300 Pro
+- Honor 200 – aktualizováno
+- Honor 200 Pro – aktualizováno
+- Honor Magic V3 – aktualizováno
+- Honor Magic Vs3
+- Honor Magic 7
+- Honor Magic 7 Lite – aktualizováno
+- Honor Magic 6
+- Honor Magic 6 Pro – aktualizováno
+Honor Magic 5 Pro – aktualizováno
+- Honor X50 Pro
+- Honor X8c
+Aktualizace u značky Honor:
+- běžně dvě roky updatů a bezpečnostních záplat
+- novější modely (v závislosti na modelové řadě) až sedmiletá podpora
+Pokračování 6 / 22
+Huawei
+Huawei nemá přístup ke Google službám v Androidu, a tak se u něj bavíme o grafickém prostředí, které značka ráda vydává za svébytný operační systém, ale její EMUI je stále postaveno na Androidu. V Česku navíc značka nabízí tablety s operačním systémem Harmony OS.
+Huawei a Android, to je maximálně EMUI 15 postavené na Androidu 12. Pro Huawei je priorita vlastní operační systém Harmony OS
+Zatím poslední verze EMUI 15 se do oběhu dostala díky skládacímu telefonu Huawei Mate X6. Jenže už EMUI 14 vycházelo z Androidu 12, a u EMUI 15 tomu má být stejně. Pro Huawei je priorita vývoj vlastního systému Harmony OS, u levnějších telefonů využívá prostředí EMUI. Android 16 a Huawei tedy nejde dohromady.
+Aktualizace u značky Huawei:
+- Huawei nemá přístup k aktuálním Androidu 16, aktualizuje tedy primárně svou prostředí EMUI, popř. ji nahrazuje za Harmony OS
+Pokračování 7 / 22
+Infinix
+Značka Infinix v Česku nabízí telefony v modelových řadách Zero, Note, Hot a Smart. Značka u telefonů typicky poskytuje dvouletou podporu Androidu a tři roky bezpečnostních záplat. Android 16 je u Infinixu spojený s grafickým prostředím XOS 16.
+Infininx XOS 16 se objeví u nových telefonů a dorazí časem i na vybrané starší modely. Přesný harmonogram však výrobce neuvádí
+Android 16 pro zařízení Infinix (očekáváme):
+- Infinix Zero 40 5G
+- Infinix Note 40 Pro 5G
+- Infinix Note 40 5G
+Aktualizace u značky Infinix:
+- doba podpory se liší model od modelu
+- starší telefony maximálně dva roky updatů, novější telefony maximálně tři roky (pětiletá podpora se nevztahuje k telefonům nabízeným v Česku)
+Pokračování 8 / 22
+Motorola
+Motorola sice veřejně neuvedla, které telefony se dočkají updatu na Android 16, ale na webu podpory už Android 16 připsala k telefonům do kolonky „Budoucí verze softwaru“, které tuto aktualizaci dostanou. V řadě případů aktualizace čekají už jen na formální schválení.
+I tentokrát lze čekat update u skládacích véček posledních dvou generací, u vlajkových modely Edge posledních třech generací a také u několika vybraných modelů Moto G či na telefonu ThinkPhone 25. Zatím však neznáme přesný harmonogram aktualizací. Motorola uvádí, že společně s partnery pracuje na tom, aby se aktualizace do telefonů dostaly co nejdříve.
+Android 16 pro zařízení Motorola:
+- Motorola Razr 60 – aktualizováno
+- Motorola Razr 60 Ultra – aktualizováno
+- Motorola Razr 50 – aktualizobváno
+- Motorola Razr 50 Ultra – aktualizováno
+- Motorola Edge 60 Pro – aktualizováno
+- Motorola Edge 60
+- Motorola Edge 60 Fusion – aktualizováno
+- Motorola Edge 50 Ultra – aktualizováno
+- Motorola Edge 50 Pro – aktualizováno
+- Motorola Edge 50 Neo – aktualizováno
+- Motorola Edge 50 Fusion – aktualizováno
+- Motorola Edge 50 – aktualizováno
+- Motorola Edge 40 Pro
+- Moto G56
+- Moto G86 – aktualizováno
+- Moto G86 Power – aktualizováno
+- Moto G85
+- Moto G75 – aktualizováno
+- Moto G57 Power – aktualizováno
+- Moto G55
+- ThinkPhone 25 by Motorola
+Aktualizace u značky Motorola:
+- dva roky softwarových updatů, dva až tři roky bezpečnostních záplat
+- u levnějších telefonů je to častěji jeden update a dva roky zabezpečení
+Pokračování 9 / 22
+Nothing
+Značka Nothing má v portfoliu jen několik telefonů, které běží s prostředím Nothing OS. Android 16 je propojený s prostředím Nothing OS 4.0, která se do smartphonů značky dostane od podzimu 2025.
+Nothing OS 4.0 s Androidem 16 se do telefonů dostává od podzimu roku 2025
+Jako první dostane aktualizaci Nothing Phone (3), update se naopak nedostane na první telefon značky – Nothing Phone (1). Tento model zůstane na Androidu 15, přesto bude i nadále dostávat softwarové aktualizace.
+Android 16 pro zařízení Nothing:
+- CMF Phone 1 – aktualizováno
+- CMF Phone 2 Pro – aktualizováno
+- Nothing Phone (2) – aktualizováno
+- Nothing Phone (2a) – aktualizováno
+- Nothing Phone (2a) Plus – aktualizováno
+- Nothing Phone (3) – aktualizováno
+- Nothing Phone (3a) – aktualizováno
+- Nothing Phone (3a) Pro – aktualizováno
+Aktualizace u značky Nothing:
+- liší se model od modelu, typicky minimálně tři roky systémových aktualizací a čtyři roky bezpečnostních záplat
+Pokračování 10 / 22
+Nubia
+Smartphony značky Nubia využívají prostředí Nebula AIOS. S AIOS 1.5 je svázaný Android 15, s připravovaným AIOS 2 bude pevně svázaný Android 16. Aktualizace telefonů proběhnou v lednu, březnu a v únoru.
+Nubia pozvolně aktualizuje jen své nejvybavenější telefony za poslední dva roky, aktualizace dalších telefonů ale blíže nekomentuje
+Plány výrobce zahrnují aktualizace telefonů, které se v Česku oficiální cestou nenabízejí. Mimo nich se dá očekávat aktualizace u Nubie Air – opět bez jakéhokoliv časového harmonogramu.
+Android 16 pro zařízení Nubia (očekáváme):
+Aktualizace u značky Nubia
+- maximálně tři roky u vlajkových telefonů, jinak dva roky
+- U levnějších modelů dokonce nemusí dorazit aktualizace žádné
+Pokračování 11 / 22
+OnePlus
+Aktualizace na Android 16 s prostředím OxygenOS 16 dorazí, nejen na nejvýkonnější telefony posledních tří generací, ale také na vybrané modely řady Nord i na skládací telefony. Pro některé zařízení se však bude jednat o poslední velkou aktualizaci.
+Aktualizaci na OxygenOS 16 dostanou tyto modely (bez bližšího data)
+Jako první se update objevil u OnePlus 13. Přesný harmonogram aktualizací zatím neznáme.
+Android 16 pro zařízení OnePlus:
+- OnePlus 13 – aktualizováno
+- OnePlus 12 – aktualizováno
+- OnePlus 11 – aktualizováno
+- OnePlus 10 Pro – aktualizováno
+- OnePlus 13R – aktualizováno
+- OnePlus 12R – aktualizováno
+- OnePlus 11R
+- OnePlus Nord 5 – aktualizováno
+- OnePlus Nord 4 – aktualizováno
+- OnePlus...
+(Pokracovani na webu)|E||T|Tohle není reklama, ale mohla by být. Astronaut natočil dechberoucí video „západu Země“ na svůj iPhone|D|21.04.2026 17:45|P||X|Velitel mise Artemis 2, Reid Wiseman, zveřejnil video zachycující unikátní perspektivu tzv. „západu Země“. Tento záběr pořídil iPhonem 17 Pro Max během desetidenní cesty kosmické lodi Orion kolem Měsíce a zpět. Wiseman při pohledu z úzkého okna dokovacího průlezu impulsivně sáhl po telefonu, který měl po ruce, aby fascinující úkaz zachytil co nejrychleji. Video natočil s osminásobným přiblížením, které podle jeho kvaliifikovaného odhadu nejlépe odpovídá tomu, jak by tuto scénu vnímalo lidské oko.
 Záběr je v dnešní době všudypřítomných AI filtrů, digitálních vizualizací a snahy o bezchybnou dokonalost pravým opakem – surový, neupravený a o to působivější. Nejde o žádné propagační video, nýbrž o autentický záznam, na němž iPhone nejprve zaostřuje ze skla kabiny na Zemi, která se „schovává“ za Měsícem. V pozadí je slyšet atmosféra uvnitř lodi: cvakání fotoaparátů ostatních členů posádky i spontánní Wisemanova reakce: „Wow, člověče, to není možný.“
 Surový záznam lepší než upravené video
 Právě tato amatérská nedokonalost dodává záběru silnější emocionální náboj, než jakého by bylo schopno sebepropracovanější propagační video. Ukazuje totiž realitu vesmírného cestování tak, jak by ji spatřil každý z nás – telefonem v ruce.
@@ -303,7 +499,7 @@ Hrají: Tom Cruise, Dakota Fanning, Justin Chatwin, Miranda Otto, Tim Robbins, R
 Původ a premiéra: USA, 2005
 Délka: 117 minut
 Kde si film můžete pustit: Oneplay (dabing), SkyShowtime (dabing a titulky), Apple TV (dabing a titulky), Amazon Obchod (titulky), Canal+ (dabing a titulky), Google (bez dabingu a titulků), Prima plus (bez dabingu a titulků), Rakuten (bez dabingu...
-(Pokracovani na webu)|E||T|Výkonný aku šroubovák je za 620 Kč. Mova se nabíjí pomocí USB-C a v krabičce má 24 bitů|D|21.04.2026 10:45|P|Aku šroubovák Mova MSD008 zlevnil na 620 Kč. • Má silný motor s krouticím momentem 8 Nm. • Nechybí LED přisvícení, v balení je 24 bitů a USB-C kabel.|X|Zdroj: Mova Výkonný aku šroubovák je za 620 Kč. Mova se nabíjí pomocí USB-C a v krabičce má 24 bitů Hlídač slev 21. dubna 2026 Diskuze (3) Aku šroubovák Mova MSD008 zlevnil na 620 Kč.Má silný motor s krouticím momentem 8 Nm.Nechybí LED přisvícení, v balení je 24 bitů a USB-C kabel. Alza má spoustu slev na produkty značky Mova, která spadá pod známější brand Dreame produkující například robotické vysavače. Mova vyrábí i robotické sekačky a další zahradní techniku, v nabídce má ale také několik akumulátorových šroubováků určených k opravě drobné elektroniky. Zajímavý je hlavně model Mova MSD008 zlevněný na 620 Kč. Ještě minulý měsíc stál osm stovek.Obsahuje velký 4V (2200 mAh) akumulátor a elektromotor dosahující krouticího momentu až 8 Nm. To je na poměry hobby šroubováků nadstandard, nedávno doporučovaný Worx dosahoval jen 5 Nm. Mova umí krouťák nastavovat ve čtyřech úrovních.Zařízení obsahuje také LED svítilnu, nabíjí se pomocí USB-C, v balení má 24 bitů a prodlužovací nástavec. MSD001 MSD008 MSD002 otáčky až 210 rpm až 260 rpm až 230 rpm el. krouticí moment až 0,2 Nm až 8 Nm až 0,4 Nm ruční krouticí moment 3 Nm 12 Nm 20 Nm akumulátor 650 mAh 2200 mAh 650 mAh LED svítilna ne ano ne bitů 25 24 86 bity 28 mm: PH000, PH00, PH0, PH1, PH2, SL1.5, SL2.0, H0.7, H0.9, H1.5, H2.0, T2, T3, T4, T5H, T6H, T8H, T9H, T10H, P2, P5, Y0.6, W1.5, TW1, 2.3 25 mm: SL2, SL4, SL5, PZ1, PZ2, T10, T15, T20, T25, Y1, Y2, 2.3, PH1, PH2, S0, S1, H2.5, H3, H4, C1, C2, 6 50 mm: PH2, SL4 28 mm: PH0000, PH000, PH00, PH1, PH2, SL1.0, SL1.5, SL2.0, SL2.0, SL2.5, SL3.0, SL3.5, SL4.0, H0.7, H0.9, H1.0, H1.3, H1.5, H2.0, H2.5, H3.0, T2, T3, T4, T5, T6, T7, T8, T9, T10, T15, T20, T5H, T6H, T7H, T8H, T9H, T10H, T15H, T20H, P0.8, P0.8, P1.2, P1.5, Y0.6, Y1.0, Y1.5, Y2.0, Y2.3, Y3.0, 2, 2.3, 2.5, 2.7, 3, U2.0, U2.6, U3.0, U4.0, U6, S0, S1, S2, 0.8, 1, PZ000, PZ00, PZ0, PZ1, PZ2, PZ2.5 45 mm: PH0, PH1, H2.0, SL2.0, T8H, T10H další příslušenství - - 3× plastový otvírák (trsátko), 3× páčidlo, přísavka, lupa, magnetická podložka, magnetizér V Alze jsou v akci také dva alternativní modely s výrazně nižším výkonem, který ale na elektroniku stále stačí. Díky tomu jsou šroubováčky také menší, velikostí připomínají tlustší pero. Model MSD001 s 25 bity stojí 679 Kč. Velká sada MSD002 s 86 bity a dalším příslušenstvím je za 1062 Kč. Přes WhatsApp a Telegram vás upozorníme na novou slevu Slevové akce někdy netrvají dlouho nebo obchody mohou mít jen malé množství zlevněných produktů. Než se k článku dostanete, může být pozdě. Hlídač slev má ale své kanály v komunikátorech WhatsApp a Telegram. Klikněte na odkaz, otevře se v aplikaci. Jakmile vydáme článek o slevě, hned o tom dostanete zprávu. O akci se tak dozvíte v době, kdy je ještě stoprocentně platná. Jsme také na sociálních sítích Facebook, Threads, X, Bluesky, Mastodon, Discord a můžete odebírat naše RSS se slevami. WhatsApp má u kanálů vypnuté upozornění na nové zprávy. Musíte to změnit sami přes ikonu zvonku v pravém horním rohu aplikace. Viz žlutá šipka: Našli jste sami zajímavou slevu? Napište nám. Za nákup, který uskutečníte prostřednictvím odkazu v článku, může Živě dostat provizi. Vstoupit do diskuze (3) SlevyAlza.czBastleníRobotické vysavačeUSB-CAkumulátoryDreameAku šroubovákyMovaZahradní technika|E||T|Chcete šéfovat dohledu nad umělou inteligencí v Česku? ČTÚ hledá vedoucího nového týmu|D|21.04.2026 10:34|P|Český telekomunikační úřad (ČTÚ) se postupně vžívá do nových rolí, z jejichž pozice dohlíží a bude dohlížet na nové oblasti nad rámec tradičních telek...|X|Český telekomunikační úřad (ČTÚ) se postupně vžívá do nových rolí, z jejichž pozice dohlíží a bude dohlížet na nové oblasti nad rámec tradičních telekomunikací. Vedle DSA dostal na starost část regulace umělé inteligence, souvisí to s evropským AI Actem a tuzemským zákonem o umělé inteligenci. Na ČTÚ aktuálně vzniká tým, který bude na AI dohlížet. Úřad vypsal výběrové řízení na jeho šéfa. Oficiální název pozice je Vedoucí samostatného oddělení dozoru AI.
+(Pokracovani na webu)|E||T|Výkonný aku šroubovák je za 620 Kč. Mova se nabíjí pomocí USB-C a v krabičce má 24 bitů|D|21.04.2026 10:45|P|Aku šroubovák Mova MSD008 zlevnil na 620 Kč. • Má silný motor s krouticím momentem 8 Nm. • Nechybí LED přisvícení, v balení je 24 bitů a USB-C kabel.|X|Zdroj: Mova Výkonný aku šroubovák je za 620 Kč. Mova se nabíjí pomocí USB-C a v krabičce má 24 bitů Hlídač slev 21. dubna 2026 Diskuze (3) Aku šroubovák Mova MSD008 zlevnil na 620 Kč.Má silný motor s krouticím momentem 8 Nm.Nechybí LED přisvícení, v balení je 24 bitů a USB-C kabel. Alza má spoustu slev na produkty značky Mova, která spadá pod známější brand Dreame produkující například robotické vysavače. Mova vyrábí i robotické sekačky a další zahradní techniku, v nabídce má ale také několik akumulátorových šroubováků určených k opravě drobné elektroniky. Zajímavý je hlavně model Mova MSD008 zlevněný na 620 Kč. Ještě minulý měsíc stál osm stovek.Obsahuje velký 4V (2200 mAh) akumulátor a elektromotor dosahující krouticího momentu až 8 Nm. To je na poměry hobby šroubováků nadstandard, nedávno doporučovaný Worx dosahoval jen 5 Nm. Mova umí krouťák nastavovat ve čtyřech úrovních.Zařízení obsahuje také LED svítilnu, nabíjí se pomocí USB-C, v balení má 24 bitů a prodlužovací nástavec. MSD001 MSD008 MSD002 otáčky až 210 rpm až 260 rpm až 230 rpm el. krouticí moment až 0,2 Nm až 8 Nm až 0,4 Nm ruční krouticí moment 3 Nm 12 Nm 20 Nm akumulátor 650 mAh 2200 mAh 650 mAh LED svítilna ne ano ne bitů 25 24 86 bity 28 mm: PH000, PH00, PH0, PH1, PH2, SL1.5, SL2.0, H0.7, H0.9, H1.5, H2.0, T2, T3, T4, T5H, T6H, T8H, T9H, T10H, P2, P5, Y0.6, W1.5, TW1, 2.3 25 mm: SL2, SL4, SL5, PZ1, PZ2, T10, T15, T20, T25, Y1, Y2, 2.3, PH1, PH2, S0, S1, H2.5, H3, H4, C1, C2, 6 50 mm: PH2, SL4 28 mm: PH0000, PH000, PH00, PH1, PH2, SL1.0, SL1.5, SL2.0, SL2.0, SL2.5, SL3.0, SL3.5, SL4.0, H0.7, H0.9, H1.0, H1.3, H1.5, H2.0, H2.5, H3.0, T2, T3, T4, T5, T6, T7, T8, T9, T10, T15, T20, T5H, T6H, T7H, T8H, T9H, T10H, T15H, T20H, P0.8, P0.8, P1.2, P1.5, Y0.6, Y1.0, Y1.5, Y2.0, Y2.3, Y3.0, 2, 2.3, 2.5, 2.7, 3, U2.0, U2.6, U3.0, U4.0, U6, S0, S1, S2, 0.8, 1, PZ000, PZ00, PZ0, PZ1, PZ2, PZ2.5 45 mm: PH0, PH1, H2.0, SL2.0, T8H, T10H další příslušenství - - 3× plastový otvírák (trsátko), 3× páčidlo, přísavka, lupa, magnetická podložka, magnetizér V Alze jsou v akci také dva alternativní modely s výrazně nižším výkonem, který ale na elektroniku stále stačí. Díky tomu jsou šroubováčky také menší, velikostí připomínají tlustší pero. Model MSD001 s 25 bity stojí 679 Kč. Velká sada MSD002 s 86 bity a dalším příslušenstvím je za 1062 Kč. Přes WhatsApp a Telegram vás upozorníme na novou slevu Slevové akce někdy netrvají dlouho nebo obchody mohou mít jen malé množství zlevněných produktů. Než se k článku dostanete, může být pozdě. Hlídač slev má ale své kanály v komunikátorech WhatsApp a Telegram. Klikněte na odkaz, otevře se v aplikaci. Jakmile vydáme článek o slevě, hned o tom dostanete zprávu. O akci se tak dozvíte v době, kdy je ještě stoprocentně platná. Jsme také na sociálních sítích Facebook, Threads, X, Bluesky, Mastodon, Discord a můžete odebírat naše RSS se slevami. WhatsApp má u kanálů vypnuté upozornění na nové zprávy. Musíte to změnit sami přes ikonu zvonku v pravém horním rohu aplikace. Viz žlutá šipka: Našli jste sami zajímavou slevu? Napište nám. Za nákup, který uskutečníte prostřednictvím odkazu v článku, může Živě dostat provizi. Vstoupit do diskuze (3) SlevyAlza.czBastleníRobotické vysavačeUSB-CAkumulátoryDreameMovaZahradní technikaAku šroubováky|E||T|Chcete šéfovat dohledu nad umělou inteligencí v Česku? ČTÚ hledá vedoucího nového týmu|D|21.04.2026 10:34|P|Český telekomunikační úřad (ČTÚ) se postupně vžívá do nových rolí, z jejichž pozice dohlíží a bude dohlížet na nové oblasti nad rámec tradičních telek...|X|Český telekomunikační úřad (ČTÚ) se postupně vžívá do nových rolí, z jejichž pozice dohlíží a bude dohlížet na nové oblasti nad rámec tradičních telekomunikací. Vedle DSA dostal na starost část regulace umělé inteligence, souvisí to s evropským AI Actem a tuzemským zákonem o umělé inteligenci. Na ČTÚ aktuálně vzniká tým, který bude na AI dohlížet. Úřad vypsal výběrové řízení na jeho šéfa. Oficiální název pozice je Vedoucí samostatného oddělení dozoru AI.
 “Budete stát u zrodu nového útvaru – od nastavení vize, cílů a priorit oddělení až po konkrétní dopad na fungování AI v praxi. Propojíte právo, technologie i veřejný zájem. Budete u klíčových rozhodnutí v oblasti regulace AI. Budete spolupracovat s odborníky napříč obory a reprezentovat ČTÚ i na mezinárodní úrovni. A dáte směr týmu, který se teprve formuje,” láká ČTÚ případné zájemce.
 Výše platového tarifu činí 44 930 až 65 860 korun s příplatkem za vedení ve výši 13 500 korun. Výše osobního příplatku je až 65 860 korun. Nástup je od letošního července, žádosti lze posílat do desátého května.|E||T|GoPro nás nudilo, teď kompletně mění pravidla. Kamery Mission 1 jsou nejzajímavější AV technikou v posledních letech|D|21.04.2026 10:04|P|Akční kamery GoPro se v posledních generacích stávaly nudnějšími a bez zásadních výhod oproti konkurenci typu DJI nebo Insta360. Nyní to vypadá na mal...|X|Od GoPro jsme čekali představení 14. generace stěžejní řady Hero, dočkali jsme se ale zbrusu nových kamer Mission 1. Bourají zažité hranice kategorie akčních kamer a slibují výrazně vyšší obrazovou kvalitu. Kromě toho se zaměřují i na profesionální zpracování materiálu. Tohle osvěžení GoPro potřebovalo.
 Obrovský snímač
@@ -569,35 +765,7 @@ Konektor Lightning už dnes u iPhonů neexistuje. Od řady iPhone 15 se využív
 Lightning (2012 – 2023)vydržel v iPhonech 11 let. Díky regulacím EU je dnes povinnou součástí iPhonů (od řady iPhone 15) USB-C.
 Titanový rám (2023 – 2024) měl být velkým lákadlem prémiových modelů, ale od iPhonu 17 Pro se Apple vrátil k hliníku. Aby snížil hmotnost a zlepšil odvod tepla.|E||T|YouTube dává rodičům možnost omezit nekonečné scrollování jejich dětí s omezením Shorts|D|20.04.2026 18:58|P|YouTube nově umožňuje rodičům v Česku nastavit denní časový limit na sledování krátkých videí Shorts pro jejich dospívající děti. Nová funkce je dostu...|X|YouTube nově umožňuje rodičům v Česku nastavit denní časový limit na sledování krátkých videí Shorts pro jejich dospívající děti. Nová funkce je dostupná v rámci dozorovaného účtu a umožňuje omezit sledování Shorts nebo je vypnout úplně.
 Službu zavedl Google, pod nějž YouTube spadá, pro celou Evropu. Nastavení provedou rodiče v aplikaci přes Rodinné centrum. Po dosažení limitu teenagera aplikace upozorní a další Shorts mu po zbytek dne nezobrazí. YouTube zároveň oznámil, že zjednodušuje zakládání dozorovaných účtů, tak, že jej rodiče mohou vytvořit přímo na této platformě.
-YouTube spolu s Instagramem nedávno prohrál první kolo civilního soudního sporu ve Spojených státech, ve kterém uživatelka požadovala odškodnění za psychickou újmu způsobenou používaním těchto služeb. Obě firmy měly podle poroty své služby úmyslně nastavit tak, aby vyvolaly v uživatelích návykové chování. Žalobkyně známá pod iniciály K. G. M. před soudem řekla, že se stala na YouTube závislá v šesti letech a na Instagramu v devíti.|E||T|Recenze sluchátek Apple AirPods Max 2: Stejné navenek, dospělejší zvuk a lepší ANC uvnitř|D|20.04.2026 17:45|P|Otestovali jsme sluchátka Apple AirPods Max 2 • Okoukaný design kompenzují lepším ANC a živějším zvukem • Díky čipu H2 přidaly i funkce z jiných model...|X|Vynikající ANC
-Živý zvuk a skvělé basy
-Kvalita zpracování a materiály
-Skvělá ergonomie
-Napojení na Apple ekosystém
-Vysoká cena
-Slabší výdrž baterie
-Větší váha
-Nejdou natvrdo vypnout
-7 /10
-Zdá se to skoro až neuvěřitelné, ale déle než 5 let trvalo Applu než představil nástupce svých náhlavních sluchátek Apple AirPods Max 2. Nutno zmínit, že ještě 2 roky zpět přišla vylepšená verze původních sluchátek s USB-C konektorem, ale tu ani Apple nepovažoval za novou generaci. Nový model tak máme až nyní a v této recenzi si ukážeme, co se zde změnilo.
-V českých obchodech stojí až Kč
-Porovnat ceny
-Vzhled, jaký dobře znáte
-Když přišla v roce 2020 první generace sluchátek od Applu, byla svým designem poměrně kontroverzní. Nyní tu máme nové AirPods Max 2 a nutno dodat, že Apple na nich po stránce designu nezměnil absolutně nic a to včetně zachované váhy 386 gramů. Na jednu stranu lze stejný design chápat, ostatně sluchátka mají originální design a na ulici si je s konkurencí rozhodně nespletete. Každý, kdo se trochu zajímá o technologické produkty pozná, že jde o sluchátka od Applu, a to i navzdory tomu, že na nich nenajdete logo nakousnutého jablka.
-Apple AirPods Max 2 se vzhledově nijak nezměnily proti předchozím modelům. Hlavní změny přišly uvnitř.
-Sluchátka mají příkladné zpracování. Mušle sluchátek jsou zde opět vyrobené z hliníku a na uších působí prémiově, přičemž jejich náušníky jsou vyplněny paměťovou pěnou, která je příjemná na dotyk a pohodlně sedí na uších. Navíc jsou zde připnuté pouze magneticky, takže je velmi snadné ji vyměnit, a to klidně i za jiné barvy. Navazující jezdce k mostu jsou z nerezové oceli, což sice sluchátkům přidává na váze, ale dodává na pevnosti. Samotný most je pak ze tkané síťoviny, která je neuvěřitelně pohodlná. V celku mně osobně sluchátka na hlavu sedly na první dobrou a nevadí mi je nosit ani dlouhé hodiny. Na větší váhu jsem si rychle zvykl a zapomněl.
-Veškeré ovládací prvky a konektory se nachází na pravé mušli, a to včetně signalizační LED diody.
-Z pohledu ovládání je zde hlavní pravé sluchátko, které na těle má všechny ovládací prvky. V přední části jde o tlačítko přepínání trasparentního/adaptivního režimu a ANC. V Zadní části pak otočná korunka pro regulaci hlasitosti, která je zároveň i tlačítkem a slouží pro pauzování či přepínání skladeb. Ve spodní části pak najdete USB-C konektor pro nabíjení či drátový poslech a signalizační LED diodku pro indikaci napájení či párovacího stavu. Na obou mušlích je rozmístěna soustava 9 mikrofonů a samozřejmě velké 40mm měniče pro samotný zvukový výstup.
-Stejně jako předchůdce, ani nový model nejde nijak složit. Při cestování lze využít ochranného magnetického pouzdra, ale to chrání pouze hliníkové náušníky před poškrábáním. Samotný most zůstává bez ochrany.
-V pokračování pro předplatitele také najdete
-Jaká je kvalita potlačení hluku
-Funkce a výbava
-Jak to hraje
-Celkové hodnocení a srovnání
-Chci Premium a Živě.cz bez reklam
-Od 58 Kč měsíčně|E||T|Vyzkoušejte českou strategii o válečných doktorech. Medix kombinuje minimalistické bitvy s ručně kreslenou grafikou|D|20.04.2026 17:45|P||X|Vývojář Josef Šmíd představil svou novinku na konci loňského roku, nyní si Medix může vyzkoušet každý v rámci prvního playtestu, který probíhá při příležitosti středověkého festivalu na Steamu. Stačí, abyste zamířili na stránku hry, klikli na tlačítko „Zúčastnit se testování“ a můžete se pustit do práce mediků ve válečném období. Na hraní máte čas do 27. dubna.
-Test nabízí první dvě mise z kampaně, které by vás měly zabavit zhruba na 40 minut. Během nich okusíte úvod příběhu o IX. lékařské jednotce imperiální armády. Zatímco ve většině válečných strategií jde o to, abyste se svými vojsky převálcovali nepřítele, v Medix se musíte starat hlavně o zachraňování životů a organizaci přesunů tábora během chaotických ústupů před tlakem nepřítele.
-Taktéž v akci uvidíme minimalisticky zpracované a ručně kreslené grafické rozhraní. Účastníci testu také budou mít možnost podělit se o svoji zpětnou vazbu, což je aktuálně jedna z nejdůležitějších věcí pro vývojáře. „Je to poprvé, kdy si Medix může zahrát široká veřejnost. Nejdůležitější je teď zjistit, jestli jsou mechaniky pochopitelné a co v hráčích skutečně rezonuje,“ říká vývojář Josef Šmíd. Pokud se nezmění plány, měla by hra následně vyjít v plné verzi na PC a Mac ještě před koncem letošního roku.|E||T|11 věcí, které nás štvou na Windows 11 a bohužel asi jen tak nepřestanou|D|20.04.2026 16:45|P|Reklama je víc než zákazník, kterého by systém měl respektovat. • Widgety jsou na špatném místě a jejich nabídka je chudá. • Windows postrádají dlouho...|X|Jedenáctky se částečně vzhlédly v macOS, konzervativní prostředí narušují častými aktualizacemi s někdy nezdokumentovanými změnami. Zatímco v první fázi života jim oproti Windows 10 funkce spíše chyběly, Microsoft situaci postupně napravil a zejména do aplikací přidává zajímavé funkce.
+YouTube spolu s Instagramem nedávno prohrál první kolo civilního soudního sporu ve Spojených státech, ve kterém uživatelka požadovala odškodnění za psychickou újmu způsobenou používaním těchto služeb. Obě firmy měly podle poroty své služby úmyslně nastavit tak, aby vyvolaly v uživatelích návykové chování. Žalobkyně známá pod iniciály K. G. M. před soudem řekla, že se stala na YouTube závislá v šesti letech a na Instagramu v devíti.|E||T|11 věcí, které nás štvou na Windows 11 a bohužel asi jen tak nepřestanou|D|20.04.2026 16:45|P|Reklama je víc než zákazník, kterého by systém měl respektovat. • Widgety jsou na špatném místě a jejich nabídka je chudá. • Windows postrádají dlouho...|X|Jedenáctky se částečně vzhlédly v macOS, konzervativní prostředí narušují častými aktualizacemi s někdy nezdokumentovanými změnami. Zatímco v první fázi života jim oproti Windows 10 funkce spíše chyběly, Microsoft situaci postupně napravil a zejména do aplikací přidává zajímavé funkce.
 Situaci ale zkazil dotěrnější reklamou, čímž zesílil roky nastupující trend. Tímto článkem navazujeme na pár let starý text o tom, co nám dlouhodobě vadí na Windows 10. Platí, že co uživatel, to názor. Pokud na systému shledáváte jiné nedostatky, podělte se o ně v diskuzi.
 1. Nenaplněné sliby
 Když něco slíbíte, měli byste to dodržet. K největším novinkám ve Windows 11 mělo patřit spouštění aplikací z Androidu. Microsoft po téměř dvou a půl letech od vydání první iterace systému oznámil, že jeho snahy o zprovoznění mobilních aplikací na počítačích končí.

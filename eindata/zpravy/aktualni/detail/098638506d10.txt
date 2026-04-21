@@ -1,0 +1,175 @@
+Asus
+Většina telefonů u Asusu má tradičně přislíbené dvě velké aktualizace, takže Zenfone 10 skončí na Androidu 15. Seznam modelů, u kterých očekáváme aktualizaci na Android 16, je tak relativně jasný.
+ZenFone 12 Ultra se účastnil beta testování, nyní už je pro něj Android 16 dostupný zcela veřejně
+Už bylo dříve jasné, že s aktualizacemi Asus určitě nebude mezi prvními. Tradičně však patří ke značkám, které vydávají aktualizace spíše později.
+Android 16 pro zařízení Asus:
+- Asus ROG Phone 8 – aktualizováno
+- Asus ROG Phone 8 Pro – aktualizováno
+- Asus Zenfone 11 Ultra – aktualizováno
+- Asus Zenfone 12 Ultra – aktualizováno
+- Asus ROG Phone 9 Pro – aktualizováno
+- Asus ROG Phone 9 – aktualizováno
+Aktualizace u značky Asus:
+- typicky dvě generace Androidu a minimálně dva roky bezpečnostních záplat
+Pokračování 2 / 22
+Fairphone
+Značka s „férovými“ a udržitelnými smartphony samozřejmě musí myslet, nejen na hardware, ale i na softwarovou podporu. Výrobce slíbil aktualizaci na Android 16 u modelu Fairphone 6, staršímu modelu Fairphone 5 však stále běží softwarová podpora, takže by měl update dostat také.
+Fairphone 6 je prvním telefonem značky, který dostal Android 16
+Android 16 pro zařízení Fairphone:
+- Fairphone 5
+- Fairphone 6 – aktualizováno
+Aktualizace u značky Fairphone:
+- pět až sedm let od vydání telefonů, u novějších modelů je avizovaná podpora delší
+Pokračování 3 / 22
+Google
+Google stojí za vývojem Androidu 16, a tak není překvapením, že jeho telefony byly prvními, na které už aktualizace dorazila. Tím to ale pro Google nekončí, protože ve druhé polovině roku na telefony dostane i další aktualizace, která do Androidu přinese výraznější novinky.
+Google už má aktualizováno na Android 16. Od Pixelu 6 až po nejnovější řadu Pixel 9
+Od Pixelu 8 se uživatelé mohou těšit ze sedmileté softwarové podpory, přičemž nejstarší aktualizované modely na Android 16 spadají do řady Pixel 6.
+Android 16 pro zařízení Google Pixel:
+- Google Pixel 6 – aktualizováno
+- Google Pixel 6 Pro – aktualizováno
+- Google Pixel 6a – aktualizováno
+- Google Pixel 7 – aktualizováno
+- Google Pixel 7 Pro – aktualizováno
+- Google Pixel 7a – aktualizováno
+- Google Pixel Fold – aktualizováno
+- Google Pixel Tablet – aktualizováno
+- Google Pixel 8 – aktualizováno
+- Google Pixel 8 Pro – aktualizováno
+- Google Pixel 8a – aktualizováno
+- Google Pixel 9 – aktualizováno
+- Google Pixel 9a – aktualizováno
+- Google Pixel 9 Pro – aktualizováno
+- Google Pixel 9 Pro XL – aktualizováno
+- Google Pixel 9 Pro Fold – aktualizováno
+Aktualizace u značky Google:
+- Sedm velkých aktualizací a sedm let bezpečnostních záplat (od Pixelu 8)
+- Až tři velké aktualizace a pět let bezpečnostních základ (starší modely)
+Pokračování 4 / 22
+HMD
+Značka HMD u svých smartphonů slibuje pouze dvě velké aktualizace. Prvním aktualizovaným telefonem by měl být HMD Skyline, ale ani u HMD není znám přesný harmonogram aktualizací.
+Prvním z aktualizovaných telefonů HMD by měl být HMD Skyline
+Android 16 pro zařízení HMD (očekáváme):
+- HMD Fusion
+- HMD Pulse
+- HMD Pulse Pro
+- HMD Pulse+
+- HMD Skyline
+Aktualizace u značky HMD:
+- typicky dvě velké aktualizace a dva až tři roky bezpečnostních záplat
+Pokračování 5 / 22
+Honor
+Honor v Česku nabízí několik desítek telefonů ve třech modelových řadách, přičemž dlouho u něj platila jen čtyřletá softwarová podpora. Od řady Honor 400 je softwarová podpoře šestiletá a od Honoru Magic 7 Pro pak dokonce sedmiletá.
+Beta testování Android 16 začalo u Honoru Magic7 Pro
+Honor má aktualizace tradičně spojené s novou verzí prostředí Magic OS, beta testování však začalo s novou verzí systému ale se starší verzí prostředí MagicOS 9. První aktualizované telefony Honor slibuje do konce roku 2025, pokud se aktualizace nenabízí klasickou cestou, můžete ji zkusit vyvolat přes aplikaci My Honor.
+Android 16 pro zařízení Honor:
+- Honor Magic7 Pro – aktualizováno
+- Honor 400 – aktualizováno
+- Honor 400 Pro – aktualizováno
+- Honor 400 Lite
+- Honor Magic V5 – aktualizováno
+- Honor 300
+- Honor 300 Pro
+- Honor 200 – aktualizováno
+- Honor 200 Pro – aktualizováno
+- Honor Magic V3 – aktualizováno
+- Honor Magic Vs3
+- Honor Magic 7
+- Honor Magic 7 Lite – aktualizováno
+- Honor Magic 6
+- Honor Magic 6 Pro – aktualizováno
+Honor Magic 5 Pro – aktualizováno
+- Honor X50 Pro
+- Honor X8c
+Aktualizace u značky Honor:
+- běžně dvě roky updatů a bezpečnostních záplat
+- novější modely (v závislosti na modelové řadě) až sedmiletá podpora
+Pokračování 6 / 22
+Huawei
+Huawei nemá přístup ke Google službám v Androidu, a tak se u něj bavíme o grafickém prostředí, které značka ráda vydává za svébytný operační systém, ale její EMUI je stále postaveno na Androidu. V Česku navíc značka nabízí tablety s operačním systémem Harmony OS.
+Huawei a Android, to je maximálně EMUI 15 postavené na Androidu 12. Pro Huawei je priorita vlastní operační systém Harmony OS
+Zatím poslední verze EMUI 15 se do oběhu dostala díky skládacímu telefonu Huawei Mate X6. Jenže už EMUI 14 vycházelo z Androidu 12, a u EMUI 15 tomu má být stejně. Pro Huawei je priorita vývoj vlastního systému Harmony OS, u levnějších telefonů využívá prostředí EMUI. Android 16 a Huawei tedy nejde dohromady.
+Aktualizace u značky Huawei:
+- Huawei nemá přístup k aktuálním Androidu 16, aktualizuje tedy primárně svou prostředí EMUI, popř. ji nahrazuje za Harmony OS
+Pokračování 7 / 22
+Infinix
+Značka Infinix v Česku nabízí telefony v modelových řadách Zero, Note, Hot a Smart. Značka u telefonů typicky poskytuje dvouletou podporu Androidu a tři roky bezpečnostních záplat. Android 16 je u Infinixu spojený s grafickým prostředím XOS 16.
+Infininx XOS 16 se objeví u nových telefonů a dorazí časem i na vybrané starší modely. Přesný harmonogram však výrobce neuvádí
+Android 16 pro zařízení Infinix (očekáváme):
+- Infinix Zero 40 5G
+- Infinix Note 40 Pro 5G
+- Infinix Note 40 5G
+Aktualizace u značky Infinix:
+- doba podpory se liší model od modelu
+- starší telefony maximálně dva roky updatů, novější telefony maximálně tři roky (pětiletá podpora se nevztahuje k telefonům nabízeným v Česku)
+Pokračování 8 / 22
+Motorola
+Motorola sice veřejně neuvedla, které telefony se dočkají updatu na Android 16, ale na webu podpory už Android 16 připsala k telefonům do kolonky „Budoucí verze softwaru“, které tuto aktualizaci dostanou. V řadě případů aktualizace čekají už jen na formální schválení.
+I tentokrát lze čekat update u skládacích véček posledních dvou generací, u vlajkových modely Edge posledních třech generací a také u několika vybraných modelů Moto G či na telefonu ThinkPhone 25. Zatím však neznáme přesný harmonogram aktualizací. Motorola uvádí, že společně s partnery pracuje na tom, aby se aktualizace do telefonů dostaly co nejdříve.
+Android 16 pro zařízení Motorola:
+- Motorola Razr 60 – aktualizováno
+- Motorola Razr 60 Ultra – aktualizováno
+- Motorola Razr 50 – aktualizobváno
+- Motorola Razr 50 Ultra – aktualizováno
+- Motorola Edge 60 Pro – aktualizováno
+- Motorola Edge 60
+- Motorola Edge 60 Fusion – aktualizováno
+- Motorola Edge 50 Ultra – aktualizováno
+- Motorola Edge 50 Pro – aktualizováno
+- Motorola Edge 50 Neo – aktualizováno
+- Motorola Edge 50 Fusion – aktualizováno
+- Motorola Edge 50 – aktualizováno
+- Motorola Edge 40 Pro
+- Moto G56
+- Moto G86 – aktualizováno
+- Moto G86 Power – aktualizováno
+- Moto G85
+- Moto G75 – aktualizováno
+- Moto G57 Power – aktualizováno
+- Moto G55
+- ThinkPhone 25 by Motorola
+Aktualizace u značky Motorola:
+- dva roky softwarových updatů, dva až tři roky bezpečnostních záplat
+- u levnějších telefonů je to častěji jeden update a dva roky zabezpečení
+Pokračování 9 / 22
+Nothing
+Značka Nothing má v portfoliu jen několik telefonů, které běží s prostředím Nothing OS. Android 16 je propojený s prostředím Nothing OS 4.0, která se do smartphonů značky dostane od podzimu 2025.
+Nothing OS 4.0 s Androidem 16 se do telefonů dostává od podzimu roku 2025
+Jako první dostane aktualizaci Nothing Phone (3), update se naopak nedostane na první telefon značky – Nothing Phone (1). Tento model zůstane na Androidu 15, přesto bude i nadále dostávat softwarové aktualizace.
+Android 16 pro zařízení Nothing:
+- CMF Phone 1 – aktualizováno
+- CMF Phone 2 Pro – aktualizováno
+- Nothing Phone (2) – aktualizováno
+- Nothing Phone (2a) – aktualizováno
+- Nothing Phone (2a) Plus – aktualizováno
+- Nothing Phone (3) – aktualizováno
+- Nothing Phone (3a) – aktualizováno
+- Nothing Phone (3a) Pro – aktualizováno
+Aktualizace u značky Nothing:
+- liší se model od modelu, typicky minimálně tři roky systémových aktualizací a čtyři roky bezpečnostních záplat
+Pokračování 10 / 22
+Nubia
+Smartphony značky Nubia využívají prostředí Nebula AIOS. S AIOS 1.5 je svázaný Android 15, s připravovaným AIOS 2 bude pevně svázaný Android 16. Aktualizace telefonů proběhnou v lednu, březnu a v únoru.
+Nubia pozvolně aktualizuje jen své nejvybavenější telefony za poslední dva roky, aktualizace dalších telefonů ale blíže nekomentuje
+Plány výrobce zahrnují aktualizace telefonů, které se v Česku oficiální cestou nenabízejí. Mimo nich se dá očekávat aktualizace u Nubie Air – opět bez jakéhokoliv časového harmonogramu.
+Android 16 pro zařízení Nubia (očekáváme):
+Aktualizace u značky Nubia
+- maximálně tři roky u vlajkových telefonů, jinak dva roky
+- U levnějších modelů dokonce nemusí dorazit aktualizace žádné
+Pokračování 11 / 22
+OnePlus
+Aktualizace na Android 16 s prostředím OxygenOS 16 dorazí, nejen na nejvýkonnější telefony posledních tří generací, ale také na vybrané modely řady Nord i na skládací telefony. Pro některé zařízení se však bude jednat o poslední velkou aktualizaci.
+Aktualizaci na OxygenOS 16 dostanou tyto modely (bez bližšího data)
+Jako první se update objevil u OnePlus 13. Přesný harmonogram aktualizací zatím neznáme.
+Android 16 pro zařízení OnePlus:
+- OnePlus 13 – aktualizováno
+- OnePlus 12 – aktualizováno
+- OnePlus 11 – aktualizováno
+- OnePlus 10 Pro – aktualizováno
+- OnePlus 13R – aktualizováno
+- OnePlus 12R – aktualizováno
+- OnePlus 11R
+- OnePlus Nord 5 – aktualizováno
+- OnePlus Nord 4 – aktualizováno
+- OnePlus...
+(Pokracovani na webu)

@@ -1,0 +1,15 @@
+Článek
+Celá dohoda přitom není jen o penězích, ale i o dlouhodobé strategii. Anthropic se zavázala, že během příští dekády utratí přes 100 miliard dolarů (dva biliony korun) za technologie platformy Amazon Web Services (AWS).
+Klíčovou roli v tom sehrají i specializované AI čipy Trainium, na které Amazon v posledních letech výrazně sází.
+„Závazek Anthropicu provozovat své modely na AWS Trainium po příštích deset let ukazuje, jak daleko jsme se společně posunuli. Naším cílem je dál dodávat infrastrukturu, kterou zákazníci potřebují pro práci s generativní AI,“ uvedl šéf Amazonu Andy Jassy.
+Za rychlým tempem investic stojí jediné: obrovská poptávka. Firmy i běžní uživatelé čím dál častěji využívají pokročilé modely, jako je Claude od Anthropicu. A to si vybírá svou daň, jak zdůraznil server televizní stanice CNBC.
+Společnost přiznává, že prudký nárůst zájmu začal její infrastrukturu zatěžovat. „Dochází k nevyhnutelnému tlaku, který ovlivňuje spolehlivost i výkon,“ uvedla firma v oficiálním prohlášení. Nová dohoda s Amazonem má situaci rychle zlepšit.
+„Naši uživatelé nám říkají, že Claude je pro jejich práci stále důležitější. Musíme proto budovat infrastrukturu, která dokáže držet krok s rostoucí poptávkou,“ prohlásil Dario Amodei, šéf Anthropicu.
+Souboj technologických obrů
+Amazon má přitom rozehranou AI hru na více stolech. Před dvěma měsíci vedení společnosti oznámilo investici až 50 miliard dolarů (jeden bilion korun) do OpenAI, což je hlavní konkurent Anthropicu. Obě firmy se přitom připravují na možné vstupy na burzu, které by mohly přijít už letos.
+Napětí mezi rivaly je patrné i z veřejných vyjádření. Zástupci OpenAI nedávno kritizovali Anthropic za „strategickou chybu v podobě nedostatečného výpočetního výkonu“. Právě ten je dnes v AI světě jednou z nejcennějších komodit.
+Amazon už dříve naznačil, jak vážně to s AI myslí. Letos plánuje investovat přibližně 200 miliard dolarů (čtyři biliony korun) do kapitálových výdajů, především právě do infrastruktury pro umělou inteligenci.
+Raketový růst
+Anthropic mezitím roste raketovým tempem. Startup založený v roce 2021 bývalými zaměstnanci OpenAI dnes patří mezi nejvýznamnější hráče na trhu. Jeho roční příjmy přesahují 30 miliard dolarů a modely Claude si získávají stále širší okruh firemních zákazníků.
+Zajímavé je, že ačkoliv je AWS hlavním partnerem Anthropicu, firma spolupracuje i s dalšími technologickými giganty, jako jsou Microsoft, Google nebo Broadcom.
+Jedno je jisté – závod o umělou inteligenci se teprve rozjíždí. Firmy investují astronomické částky a snaží se zajistit dostatek výpočetního výkonu dřív než konkurence. A jak naznačují poslední kroky Amazonu, v sázce není jen technologická prestiž, ale i zásadní vliv na to, jak bude digitální svět vypadat v příštích letech.

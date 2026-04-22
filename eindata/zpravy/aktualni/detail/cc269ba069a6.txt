@@ -1,0 +1,18 @@
+Fotografie osob pořízené Androidem mohou být v dohledné budoucnosti prakticky bezchybné. Zaslouží se o to nová funkce aplikace Fotky Google, která je povinnou součástí každého certifikovaného Androidu. Objevila se v ní funkce Retuš, kterou Google uvedl na globální trhy, a hned druhý den, tedy dnes, dorazila i na první telefony v Česku. Aplikace v několika krocích umožní vylepšit pořízená selfie nebo fotografie osob zachycených zadním fotoaparátem, aniž byste k tomu potřebovali jakoukoli aplikaci třetí strany.
+Postup aktivace funkce Retuš v aplikaci Fotky Google
+Jak už to u Googlu bývá, pokud bychom vám o funkci nedali vědět, šance, že byste ji objevili sami, je minimální – je totiž dobře skrytá. Aktivujete ji tak, že v aplikaci Fotky Google otevřete libovolné selfie nebo fotografii, na níž jsou nějaké osoby. Následně stiskněte tlačítko Upravit, přepněte na kartu Akce a zvolte čtvrtou ikonu zprava – Retuš. Android vás v tu chvíli upozorní, že si nový režim musíte stáhnout (avizovaná velikost je přitom 0 MB), a teprve poté se můžete pustit do editace.
+Samostatně upravíte i několik obličejů
+Po krátké analýze fotografie se dozvíte, kolik obličejů můžete upravovat. Aplikace mě pustila ke čtyřem, podle zahraničních zdrojů by však měla zvládnout až šest. Každý obličej dostane vlastní kruhový výřez – stačí ho vybrat a pustit se do úprav. Stačí zvolit funkci, upravit intenzitu a uložit.
+Mezi dostupné úpravy patří:
+- vyčištění nedokonalostí pleti (dotykem na konkrétní místa)
+- vyhlazení celkové textury pleti
+- úprava kruhů pod očima
+- zvýraznění očí
+- zvýraznění a vybělení zubů
+- vylepšení obočí
+- vylepšení rtů
+Kdy se úpravy obličejů hodí? Nevyužijete je pokaždé, ale pokud nebudete při pohledu do zrcadla „v nejlepší formě“ (po ránu, akné, apod.), několika drobnými zásahy budete na fotkách vypadat o něco lépe. Google však novou funkci prezentuje tak, že mají vaše fotky zachytit to, „jak se cítíte“. Mezi řádky to ale znamená, že naše běžná podoba nemusí být dost dobrá – a to může být v dnešní době, zvláště u dětí a mladistvých, poměrně nebezpečné. Zejména tehdy, když tato myšlenka pochází od tak významné společnosti, jakou Google bezesporu je.
+Retuš u jednoho a u více obličejů. U jiných fotek nelze použít, a s úpravami by se to samozřejmě nemělo přehánět
+A protože na sociálních sítích musí být vše dokonalé, počítám s tím, že i já funkci občas využiji pro drobné úpravy. Na druhou stranu, nikdo vás do editace fotek netlačí (funkci byste navíc sami od sebe zřejmě nenašli) a retuš zároveň ukazuje sílu výpočetní fotografie od Googlu. Úpravy se na fotografii aplikují okamžitě a výsledek můžete uložit jako kopii.
+Dostupnost této šikovné funkce tentokrát není omezena jen na Pixely nebo high-end telefony od Samsungu. Funkce bude dostupná na všech zařízeních s Androidem, která mají alespoň 4 GB operační paměti a běží na Androidu 9 nebo novějším. Google je tedy tentokrát velmi štědrý – zatím jsme však novou funkci zaznamenali pouze u Galaxy S25 Ultra. U žádného dalšího redakčního telefonu se dosud neobjevila, což naznačuje, že ji Google v telefonech postupně zpřístupňuje. Do vašeho telefonu může dorazit klidně už dnes ale také i až za několik dní
+Až budete příště fotit sebe sama nebo ostatní osoby, nezapomeňte před publikací nebo sdílením na to, že můžete obličeje velmi jednoduše vylepšit – bez nutnosti speciální aplikace. Připomenout lze například editor Snapseed od Googlu, který postupem času přichází o exkluzivní funkce právě ve prospěch Fotek Google. Ty mají měsíčně více než 1,5 miliardy uživatelů, což z nich dělá jednu z nejpoužívanějších fotografických aplikací na světě. Do budoucna se navíc očekává, že stejné funkce získá i aplikace Fotky Google pro iOS – tentokrát však dostal přednost Android.

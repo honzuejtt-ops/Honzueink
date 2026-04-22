@@ -12,7 +12,7 @@ K nasazení QEMU útočníci nejprve ve Windows vytvoří naplánovanou úlohu s
 Naplánovaná úloha také zajišťuje trvalé připojení tím, že povoluje přesměrování z vlastních portů (32567, 22022) na port 22 (SSH). Při spuštění systému vytvoří obraz disku pomocí AdaptixC2 nebo OpenSSH reverzní SSH tunel ke vzdálené IP adrese. Tímto způsobem vznikne skrytý kanál pro vzdálený přístup do skrytého virtuálního stroje, čímž se obejde detekce na koncových bodech.
 Virtuální stroj spuštěný pomocí QEMU používá obraz disku s minimalistickou distribucí Alpine Linux 3.22.0, který obsahuje všechny potřebné nástroje užitečné pro útočníka. Sada nástrojů se v jednotlivých případech liší, obvykle však zahrnuje tinker2 (AdaptixC2), wg-obfuscator (vlastní nástroj pro zamlžování provozu WireGuard), BusyBox, Chisel a Rclone.
 Útočníci dále využívají uživatelské rozhraní služby Volume Shadow Copy Service ( vssuirun.exe
-) k vytvoření obsazu kopie diskového svazku. Dále využili příkazu print
+) k vytvoření obrazu kopie diskového svazku. Dále využili příkazu print
 ke zkopírování databáze Active Directory ( NTDS.dit
 ) a registrů SAM a SYSTEM do dočasných adresářů prostřednictvím protokolu SMB.
 Dále útočníci zneužívají k vyhledávání síťových sdílených adresářů a přístupu k souborům standardně dostupné nástroje, jako jsou Microsoft Paint, Poznámkový blok a Microsoft Edge, stejně jako volně dostupný nástroj třetí strany WizTree. Je velmi pravděpodobné, že tato kampaň souvisí s krádeží dat a šířením ransomwaru PayoutsKing.

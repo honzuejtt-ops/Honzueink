@@ -1,0 +1,3 @@
+OpenAI Privacy Filter is an open-weight model for detecting and redacting personally identifiable information (PII) in text with state-of-the-art accuracy
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

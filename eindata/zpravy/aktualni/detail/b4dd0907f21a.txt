@@ -1,0 +1,15 @@
+Endorfy Fera 5 je dle Heureky nejoblíbenější chladič pro procesory a v Alze mu patří druhé místo mezi vzduchovými chladiči. Dlouhodobě skvělý poměr cena/výkon je teď ještě lepší, protože na Smarty.cz tato komponenta zlevnila s kódem EXTRA20 jen na 487 Kč. Pod pět stovek ještě nikdy nezlevnila.
+V akci za 679 Kč je i varianta Fera 5 Black ARGB, která má černý pasiv a podsvícený ventilátor. U ní cena dosud nešla pod osm set korun. Endorfy na chladiče poskytuje šestiletou záruku.
+Fera 5 je věžový chladič s výškou 155 mm. Má hliníkový pasiv a základnu, k tomu čtyři měděné heatpipe. Standardně se dodává s jedním 120mm ventilátorem s PWM regulací, ale připnout se dá i druhý.
+Je kompatibilní se všemi moderními desktopovými paticemi, tedy:
+- AMD: AM5, AM4, AM3(+), AM2(+), FM2(+), FM1
+- Intel: LGA1700, LGA115X, LGA2011-3, LGA1366, LGA1851, LGA1200, LGA2066, LGA 2011, LGA774
+Výrobce jej dimenzuje pro chlazení procesorů s TDP až 220 W, ale pro ty nejžravější se hodí jiné a dražší modely. U úspornějších, kde ventilátor nepoběží na plné otáčky, ale nabídne příjemně tichý chod.
+V našem testu dokázala Fera držet krok s mnohem větším a několikanásobně dražším chladičem Noctua NH-D12L. Oba byly velmi tichý, avšak Noctua dokázala u čipů s TDP nad 125 W udržet o 3 °C nižší teploty.
+Přes WhatsApp a Telegram vás upozorníme na novou slevu
+Slevové akce někdy netrvají dlouho nebo obchody mohou mít jen malé množství zlevněných produktů. Než se k článku dostanete, může být pozdě.
+Hlídač slev má ale své kanály v komunikátorech WhatsApp a Telegram. Klikněte na odkaz, otevře se v aplikaci. Jakmile vydáme článek o slevě, hned o tom dostanete zprávu. O akci se tak dozvíte v době, kdy je ještě stoprocentně platná.
+Jsme také na sociálních sítích Facebook, Threads, X, Bluesky, Mastodon, Discord a můžete odebírat naše RSS se slevami.
+WhatsApp má u kanálů vypnuté upozornění na nové zprávy. Musíte to změnit sami přes ikonu zvonku v pravém horním rohu aplikace. Viz žlutá šipka:
+Našli jste sami zajímavou slevu? Napište nám.
+Za nákup, který uskutečníte prostřednictvím odkazu v článku, může Živě dostat provizi.

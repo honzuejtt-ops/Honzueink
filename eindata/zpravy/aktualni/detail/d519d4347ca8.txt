@@ -1,0 +1,69 @@
+Konvoluce dvourozměrných signálů
+Co se dozvíte v článku
+- Konvoluce dvourozměrných signálů
+- Jádro konvoluce vyjádřené maticí
+- Funkce signal.convolve
+- Rozmazání obrázku s využitím konvolučního jádra 3×3 hodnoty
+- Gaussovský filtr s konvolučním jádrem 3×3 prvky
+- Detekce hran ve vertikálním směru
+- Detekce hran v horizontálním směru
+- Sofistikovanější konvoluční jádra
+- Gaussovský filtr: vliv hodnoty sigma na provedenou operaci
+- Laplaceův filtr
+- Aplikace Laplaceova filtru na rastrový obrázek
+- Kombinace původního obrázku s výsledkem aplikace Laplaceova filtru
+- Sobelův operátor
+- Sobelův operátor nabízený knihovnou SciPy
+- Aplikace Sobelova filtru na rastrový obrázek
+- Kombinace původního obrázku a výsledku aplikace Sobelova operátoru
+- Otestování filtrů na zašuměném obrázku
+- Výsledky aplikace Gaussovského filtru
+- Repositář s demonstračními příklady
+- Odkazy na Internetu
+V pořadí již šestém článku o knihovně SciPy dokončíme popis operací, které je možné provádět s dvourozměrnými signály, tj. především s rastrovými obrázky. Připomeňme si, že minule jsme se zabývali transformacemi rastrových obrázků. Mezi tyto operace patří DFT (realizovaná jako FFT) a dále DCT i DST, tedy diskrétní kosinová a sinová transformace. Dnes si ukážeme zejména klasickou konvoluci s konvolučním jádrem zadaným maticí, ovšem nezapomeneme ani na funkce poskytované balíčkem ndimage, ve kterém se (kromě dalších funkcí) nachází i realizace užitečných filtrů.
+Jádro konvoluce vyjádřené maticí
+Jádro konvoluce je možné v případě, že se konvoluce aplikuje na rastrové obrázky, vyjádřit maticí. Při použití knihovny SciPy je matice většinou reprezentována n-rozměrným polem (nd-array) podporovaným knihovnou NumPy. Konvolučních filtrů tohoto typu existuje celá řada, od velmi primitivních, až po relativně sofistikované filtry. Jen pro zajímavost se na některá konvoluční jádra podívejme.
+Rozmazání obrázku tak, že se každý pixel zprůměruje se sousedními pixely (čtyřokolí). Výsledek se dělí pěti:
+[ 0, 1, 0 ] [ 1, 1, 1 ] [ 0, 1, 0 ]
+Rozmazání obrázku tak, že se každý pixel zprůměruje se sousedními pixely (osmiokolí). Výsledek se dělí devíti:
+[ 1, 1, 1 ] [ 1, 1, 1 ] [ 1, 1, 1 ]
+Gaussův filtr, výsledek se dělí šestnácti:
+[ 1, 2, 1 ] [ 2, 4, 2 ] [ 1, 2, 1 ]
+Jedna z možností realizace filtru pro zvýraznění změn v obraze:
+[ 0, -1, 0 ] [-1, 5, -1 ] [ 0, -1, 0 ]
+Detekce hran:
+[ 0, -1, 0 ] [-1, 4, -1 ] [ 0, -1, 0 ]
+Jedna z forem Laplaceova filtru:
+[ 0, 1, 0 ] [ 1, -4, 1 ] [ 0, 1, 0 ]
+Sobelovy operátory:
+[-1, 0, 1] [-2, 0, 2] [-1, 0, 1] [-1, -2, -1] [ 0, 0, 0] [ 1, 2, 1]
+Funkce signal.convolve
+Velmi často volanou operací, která se při zpracování signálů používá, je konvoluce (convolution). Ta může být provedena jak pro jednorozměrné signály (zvukové filtry atd.), tak i pro vícerozměrné signály (známé jsou konvoluční filtry v oblasti zpracování obrazu, které nás primárně zajímají právě v dnešním článku). Konvoluci dvou signálů, typicky zpracovávaného signálu a konvolučního jádra, lze vypočítat s využitím funkce nazvané přímočaře convolve (nalezneme ji v podbalíčku signal):
+Help on function convolve in module scipy.signal._signaltools: convolve(in1, in2, mode='full', method='auto') Convolve two N-dimensional arrays. Convolve `in1` and `in2`, with the output size determined by the `mode` argument. Parameters ---------- in1 : array_like First input. in2 : array_like Second input. Should have the same number of dimensions as `in1`. mode : str {'full', 'valid', 'same'}, optional A string indicating the size of the output: ``full`` The output is the full discrete linear convolution of the inputs. (Default) ``valid`` The output consists only of those elements that do not rely on the zero-padding. In 'valid' mode, either `in1` or `in2` must be at least as large as the other in every dimension. ``same`` The output is the same size as `in1`, centered with respect to the 'full' output. method : str {'auto', 'direct', 'fft'}, optional A string indicating which method to use to calculate the convolution. ``direct`` The convolution is determined directly from sums, the definition of convolution. ``fft`` The Fourier Transform is used to perform the convolution by calling `fftconvolve`. ``auto`` Automatically chooses direct or Fourier method based on an estimate of which is faster (default). See Notes for more detail. .. versionadded:: 0.19.0 Returns ------- convolve : array An N-dimensional array containing a subset of the discrete linear convolution of `in1` with `in2`.
+Rozmazání obrázku s využitím konvolučního jádra 3×3 hodnoty
+Při úpravách fotografií nebo naskenovaných obrázků se poměrně často můžeme setkat s požadavkem na odstranění šumu z obrazu nebo z jeho vybrané části. K tomuto účelu můžeme použít poměrně velké množství více či méně sofistikovaných filtrů, které lze pro odstranění šumu použít. Nejjednodušším a taktéž nejrychlejším filtrem, který dokáže odstranit vysoké frekvence v obrazu a tím i šum (bohužel spolu s ostrými hranami) je filtr, který pracuje velmi jednoduše – spočítá průměrnou hodnotu devíti sousedních pixelů tvořících blok o velikosti 3×3 pixely a tuto hodnotu uloží do pixelu ležícího přesně uprostřed bloku (operace je samozřejmě provedena pro všechny pixely v obrazu). Výsledkem je sice obraz s odstraněným vysokofrekvenčním šumem, ale současně s potlačením šumu došlo k rozmazání všech jednopixelových hran na přechody široké minimálně tři pixely. Z implementačního hlediska se jedná o konvoluční filtr, jehož konvoluční jádro je velmi jednoduché:
+1/9 1/9 1/9 1/9 1/9 1/9 1/9 1/9 1/9
+Nás ovšem nebudou zajímat absolutní hodnoty výsledky, takže klidně můžeme použít jádro:
+1 1 1 1 1 1 1 1 1
+Programová aplikace takového konvolučního jádra může vypadat následovně:
+import numpy as np import matplotlib.pyplot as plt from scipy.signal import convolve import scipy.datasets as datasets # načtení matice ascent = datasets.ascent() # matice 3x3 prvky obsahující jedničky (NEjedná se o jednotkovou matici) kernel = np.ones([3, 3]) print("Kernel:") print(kernel) # výpočet konvoluce filtered = convolve(ascent, kernel) # zobrazení výsledku plt.imshow(filtered, cmap="gray") plt.title("2D convolution") # uložení grafu s průběhem signálu plt.savefig("convolve_2d_1.png") # zobrazení grafu plt.show()
+A takto by měl vypadat výsledek:
+Gaussovský filtr s konvolučním jádrem 3×3 prvky
+Dalším typem filtru určeného k odstranění šumu z rastrových obrázků je Gaussovský filtr (Gaussian Blur), v němž se též provádí průměrování hodnot sousedních pixelů, ale, na rozdíl od filtru předchozího, jsou těmto pixelům přiřazeny různé váhy v závislosti na jejich vzdálenosti od středního pixelu. Váhy jsou zvoleny tak, aby (velmi nepřesně) aproximovaly Gaussovo rozložení v 2D:
+1 2 1 2 4 2 1 2 1
+Taktéž v tomto případě se jedná o konvoluční filtr, ovšem velikost konvolučního jádra je možné měnit. Běžně se používají velikosti jádra 3×3 či 5×5 pixelů, protože při větší velikosti jádra již mají vzdálenější pixely tak nízkou váhu, že se výpočet pouze zbytečně prodlužuje bez většího vlivu na výsledný obrázek.
+Opět se podívejme na jednoduchou implementaci tohoto filtru (později si ukážeme sofistikovanější řešení):
+import numpy as np import matplotlib.pyplot as plt from scipy.signal import convolve import scipy.datasets as datasets # načtení matice ascent = datasets.ascent() kernel = np.array([ [ 1, 2, 1 ], [ 2, 4, 2 ], [ 1, 2, 1 ], ]) print("Kernel:") print(kernel) # výpočet konvoluce filtered = convolve(ascent, kernel) # zobrazení výsledku plt.imshow(filtered, cmap="gray") plt.title("2D convolution") # uložení grafu s průběhem signálu plt.savefig("convolve_2d_2.png") # zobrazení grafu plt.show()
+Nyní bude výsledek vypadat takto:
+Detekce hran ve vertikálním směru
+Mezi další typy jednoduchých konvolučních filtrů patří filtry určené pro detekci hran v horizontálním či vertikálním směru (hledání hran v jiných směrech již vyžaduje sofistikovanější operace). Teoreticky lze konvoluční jádra těchto filtrů reprezentovat sloupcovým či řádkovým vektorem, nikoli maticí, ovšem pro porovnání s dalšími příklady budu stále používat matice 3×3 prvky. Detekce hran ve vertikálním směru tím nejjednodušším možným filtrem může vypadat například takto:
+import numpy as np import matplotlib.pyplot as plt from scipy.signal import convolve import scipy.datasets as datasets # načtení matice ascent = datasets.ascent() kernel = np.array([ [-1, -1, -1], [ 0, 0, 0], [ 1, 1, 1], ]) print("Kernel:") print(kernel) # výpočet konvoluce filtered = convolve(ascent, kernel) # zobrazení výsledku plt.imshow(filtered, cmap="gray") plt.title("2D convolution") # uložení grafu s průběhem signálu plt.savefig("convolve_2d_3.png") # zobrazení grafu plt.show()
+Výsledek provedené konvoluce:
+Detekce hran v horizontálním směru
+Pouhou transpozicí matice použité v předchozím příkladu lze realizovat hledání hran ve směru horizontálním. Podívejme se na upravený příklad, který tuto operaci provádí:
+import numpy as np import matplotlib.pyplot as plt from scipy.signal import convolve import scipy.datasets as datasets # načtení matice ascent = datasets.ascent() kernel = np.array([ [-1, 0, 1], [-1, 0, 1], [-1, 0, 1], ]) print("Kernel:") print(kernel) # výpočet konvoluce filtered = convolve(ascent, kernel) # zobrazení výsledku plt.imshow(filtered, cmap="gray") plt.title("2D convolution") # uložení grafu s průběhem signálu plt.savefig("convolve_2d_4.png") # zobrazení grafu plt.show()
+Nyní bude výsledek vypadat následovně:
+Sofistikovanější konvoluční jádra
+Knihovna SciPy nabízí v podbalíčku nazvaném ndimage filtry pro odstranění šumu i pro zvýraznění hran. Jedním z těchto filtrů je i výše zmíněný Gaussovský filtr, který je vypočten a aplikován funkcí gaussian_filter:
+gaussian_filter(input, sigma, order=0, output=None, mode='reflect', cval=0.0, truncate=4.0, *, radius=None, axes=None) Multidimensional Gaussian filter. Parameters ---------- input : array_like The input array. sigma : scalar or sequence of scalars Standard deviation for Gaussian kernel. The standard deviations...
+(Pokracovani na webu)

@@ -1,3 +1,93 @@
+|T|Pokusy s MeshCore: vlastní repeater, spojení přes republiku a klient Meshy|D|22.04.2026 22:00|P|Několik postřehů z používání decentralizované sítě MeshCore za poslední dva měsíce. Síť se neuvěřitelně rozrostla a já jsem přispěl stavbou vlastního ...|X|Před dvěma měsíci jsem psal článek o MeshCore, ale byl myšlen jako takový obecný úvod do této sítě spíše než moje osobní zkušenosti, proto jsem se rozhodl, že jej doplním o trochu osobnější pohled.
+Za ty dva měsíce se toho událo opravdu hodně. Síť se v České republice až neuvěřitelně rozvinula. Když se dívám na mapu repeaterů, nemůžu uvěřit, že je to ta samá síť. Snad k tomu nárůstu popularity přispěl i můj článek. Patří mezi ty nejčtenější, které jsem za poslední dobu napsal.
+Na mém blogu už si ho přečetlo téměř 1300 lidí a ještě násobky toho pak na Rootu. Téměř 1100 zhlédnutí má také přednáška Jindry o MeshCore. Stala se tak historicky nejúspěšnějším videem na serveru Vhsky.cz.
+Vlastní repeater
+Sever Brna už je tak hustě pokrytý, že se mi stává, že mi odpoví klidně šest repeaterů. Sám jsem k tomu přispěl repeaterem doma na střeše. Měl jsem sice na začátku štěstí, že 300 metrů od nás byl repeater ivanovice.meshcore.cz, takže s pokrytím doma jsem neměl problém, ale jak tomuto repeateru došly na konci zimy baterky, prostě umřel. Ponaučení je, že když závisíte na repeaterech ostatních, měli byste mít spojení alespoň na dva. Nebo mít vlastní. Jelikož spolehlivé spojení na další jsem neměl, rozhodl jsem si zprovoznit vlastní.
+Úplně se mi nechtělo bastlit vlastní řešení, takže jsem zvolil ověřené hotové řešení SenseCAP Solar Node P1 Pro. I tak jsem musel hodně věcí vyřešit: pořídit dlaždice na ukotvení, pořídit a k nim uchytit konzolu, vymyslet, jak na ni repeater připevnit, protože jeho držák je zjevně dělaný pro konzole a o podstatně větším průměru.
+Po rozjetí jsem také zjistil, že je repeater zarušený. Zhruba 300 metrů od domu máme 4/5G BTS společnosti CETIN, na střeše mám 5G modem. Repeater byl slyšet, ale sám neslyšel. Musel jsem tedy pořídit filtr a když jsem měnil jej, tak jsem vyměnil také pigtail a anténu a pořídil MikroTik Omnia. Tohle je výsledek:
+S výsledkem jsem spokojený. Repeater má kolem 30 sousedů (repeaterů, s kterými dokáže navázat spojení), což mi dává opravdu víc než dostatečné napojení na zbytek sítě. Spojení mám, byť celkem slabé i s repeaterem na Děvíně, což je nějakých 45 km daleko. To je pěkné na to, že nejsme na žádném kopci. Velmi dobré spojení mám díky prakticky přímé viditelnosti na Babí lom, což mi poskytuje spojení směrem na sever.
+Celorepubliková komunikace
+Spojení přes celou zemi bylo ještě před dvěma měsíci spíš zázrak. Dnes už to je téměř běžná věc. Když jsem si psal s Bycx (já v Brně, on u Hradce), byli jsme před dvěma měsíci rádi, že nějaká zpráva prošla. Často šlo o spojení jižní cestou Děvín → Hostýnské vrchy → Praděd…
+Dnes už to chodí severní cestou: Babí lom → Orlické hory → Hradec. Zpráva dokáže i s potvrzením dorazit během pár sekund. S Petrem Krčmářem jsem si byl schopen psát až do Liberce. Zajímavé bylo, že když byl na Ještědu, šlo spojení od něj přes Brdy. Jeden skok na víc než 100 km.
+Linuxový klient Meshy
+Co mě štvalo, byl stav klientů pro MeshCore na Linuxu. Problémy jsem popsal už v prvním článku. Fungují, ale způsob, jak je rozjet a propojit se zařízením, není moc uživatelsky přívětivý. Měl jsem pár nápadů, jak to zlepšit, a jeden večer mi to nedalo a řekl jsem si, že zkusím, jak by to opravdu fungovalo.
+Byl to na začátku takový osobní experiment, ale vyvinulo se to do docela seriózního projektu. Aplikaci jsem pojmenoval Meshy a dnes už je, co se týče funkcí, srovnatelná s oficiálním klientem. Je napsaná v GTK4 a libadwaita, dokáže se velmi dobře přizpůsobovat malým displejům a našla si tak své uživatele i mezi majiteli linuxových telefonů.
+Zatímco ostatní klienty mají problém s během v sandboxu, protože vyžadují přímý přístup k Bluetooth, Meshy je od začátku dělaná tak, aby dokázala běžet ve Flatpaku. Na komunikaci přes Bluetooth používá d-busové API BlueZ, pro připojení přes USB si dokáže vyexportovat pravidlo pro udev, které mu umožní se zařízením komunikovat. Spárování je tak doslova na pár kliknutí.
+Oproti oficiálnímu klientu běžícímu v Chromiu má také velmi slušnou spotřebu paměti: po startu se pohybuje někde na úrovni 100 MB, o moc níže už se při použití Pythonu, GTK4 a libadwaita asi nedostanu. Oficiální klient si ale po spuštění na mém počítači vezme rovnou 350 MB.
+I v některých funkcích je dnes lepší než oficiální klient. Umí třeba na mapě vykreslit trasu poslední úspěšné zprávy v chatu. Uživatel tak nemusí otevírat mapy se sítí MeshCore a luštit, kudy zpráva vlastně putovala. Pokud si vyžádáte polohu kontaktu, zobrazí vám ji na mapě společně s vaší polohou. Veškeré integrace map dělám přes knihovnu libshumate, kterou používají třeba GNOME Maps.
+Aktuálně má Meshy vlastní flatpak repozitář, který se aktualizuje s každým commitem v repozitáři. Děkuji Roští.cz za poskytnutí builderu jak pro x86_64, tak pro aarch64. Pomalu se dostávám do fáze, kdy bych chtěl dělat stabilní vydání, třeba s měsíční kadencí. Cílem je dostat Meshy také na Flathub.
+Největší překážkou momentálně je, že abych nainstaloval pravidlo pro udev pro připojení companiona přes USB, používám flatpak spawn a efektivně obcházím sandbox. To se lidem z Flathubu nebude líbit. Pravděpodobně budu muset v zájmu bezpečnosti tohle změnit a nechat přípravu v systému na uživateli.
+Nicméně psaní klienta pro MeshCore je opravdu zajímavá zkušenost. Teprve během toho jsem pronikl do toho, jak v něm věci v detailu fungují.
+(Původně napsáno pro Sešívaný blog.)|E|
+|T|SciPy: konvoluce, fitrace a další operace prováděné s dvourozměrnými signály|D|22.04.2026 22:00|P|Dokončíme popis operací, které je možné provádět s dvourozměrnými signály, tj. především s rastrovými obrázky. Ukážeme si zejména klasickou konvoluci ...|X|Konvoluce dvourozměrných signálů
+Co se dozvíte v článku
+- Konvoluce dvourozměrných signálů
+- Jádro konvoluce vyjádřené maticí
+- Funkce signal.convolve
+- Rozmazání obrázku s využitím konvolučního jádra 3×3 hodnoty
+- Gaussovský filtr s konvolučním jádrem 3×3 prvky
+- Detekce hran ve vertikálním směru
+- Detekce hran v horizontálním směru
+- Sofistikovanější konvoluční jádra
+- Gaussovský filtr: vliv hodnoty sigma na provedenou operaci
+- Laplaceův filtr
+- Aplikace Laplaceova filtru na rastrový obrázek
+- Kombinace původního obrázku s výsledkem aplikace Laplaceova filtru
+- Sobelův operátor
+- Sobelův operátor nabízený knihovnou SciPy
+- Aplikace Sobelova filtru na rastrový obrázek
+- Kombinace původního obrázku a výsledku aplikace Sobelova operátoru
+- Otestování filtrů na zašuměném obrázku
+- Výsledky aplikace Gaussovského filtru
+- Repositář s demonstračními příklady
+- Odkazy na Internetu
+V pořadí již šestém článku o knihovně SciPy dokončíme popis operací, které je možné provádět s dvourozměrnými signály, tj. především s rastrovými obrázky. Připomeňme si, že minule jsme se zabývali transformacemi rastrových obrázků. Mezi tyto operace patří DFT (realizovaná jako FFT) a dále DCT i DST, tedy diskrétní kosinová a sinová transformace. Dnes si ukážeme zejména klasickou konvoluci s konvolučním jádrem zadaným maticí, ovšem nezapomeneme ani na funkce poskytované balíčkem ndimage, ve kterém se (kromě dalších funkcí) nachází i realizace užitečných filtrů.
+Jádro konvoluce vyjádřené maticí
+Jádro konvoluce je možné v případě, že se konvoluce aplikuje na rastrové obrázky, vyjádřit maticí. Při použití knihovny SciPy je matice většinou reprezentována n-rozměrným polem (nd-array) podporovaným knihovnou NumPy. Konvolučních filtrů tohoto typu existuje celá řada, od velmi primitivních, až po relativně sofistikované filtry. Jen pro zajímavost se na některá konvoluční jádra podívejme.
+Rozmazání obrázku tak, že se každý pixel zprůměruje se sousedními pixely (čtyřokolí). Výsledek se dělí pěti:
+[ 0, 1, 0 ] [ 1, 1, 1 ] [ 0, 1, 0 ]
+Rozmazání obrázku tak, že se každý pixel zprůměruje se sousedními pixely (osmiokolí). Výsledek se dělí devíti:
+[ 1, 1, 1 ] [ 1, 1, 1 ] [ 1, 1, 1 ]
+Gaussův filtr, výsledek se dělí šestnácti:
+[ 1, 2, 1 ] [ 2, 4, 2 ] [ 1, 2, 1 ]
+Jedna z možností realizace filtru pro zvýraznění změn v obraze:
+[ 0, -1, 0 ] [-1, 5, -1 ] [ 0, -1, 0 ]
+Detekce hran:
+[ 0, -1, 0 ] [-1, 4, -1 ] [ 0, -1, 0 ]
+Jedna z forem Laplaceova filtru:
+[ 0, 1, 0 ] [ 1, -4, 1 ] [ 0, 1, 0 ]
+Sobelovy operátory:
+[-1, 0, 1] [-2, 0, 2] [-1, 0, 1] [-1, -2, -1] [ 0, 0, 0] [ 1, 2, 1]
+Funkce signal.convolve
+Velmi často volanou operací, která se při zpracování signálů používá, je konvoluce (convolution). Ta může být provedena jak pro jednorozměrné signály (zvukové filtry atd.), tak i pro vícerozměrné signály (známé jsou konvoluční filtry v oblasti zpracování obrazu, které nás primárně zajímají právě v dnešním článku). Konvoluci dvou signálů, typicky zpracovávaného signálu a konvolučního jádra, lze vypočítat s využitím funkce nazvané přímočaře convolve (nalezneme ji v podbalíčku signal):
+Help on function convolve in module scipy.signal._signaltools: convolve(in1, in2, mode='full', method='auto') Convolve two N-dimensional arrays. Convolve `in1` and `in2`, with the output size determined by the `mode` argument. Parameters ---------- in1 : array_like First input. in2 : array_like Second input. Should have the same number of dimensions as `in1`. mode : str {'full', 'valid', 'same'}, optional A string indicating the size of the output: ``full`` The output is the full discrete linear convolution of the inputs. (Default) ``valid`` The output consists only of those elements that do not rely on the zero-padding. In 'valid' mode, either `in1` or `in2` must be at least as large as the other in every dimension. ``same`` The output is the same size as `in1`, centered with respect to the 'full' output. method : str {'auto', 'direct', 'fft'}, optional A string indicating which method to use to calculate the convolution. ``direct`` The convolution is determined directly from sums, the definition of convolution. ``fft`` The Fourier Transform is used to perform the convolution by calling `fftconvolve`. ``auto`` Automatically chooses direct or Fourier method based on an estimate of which is faster (default). See Notes for more detail. .. versionadded:: 0.19.0 Returns ------- convolve : array An N-dimensional array containing a subset of the discrete linear convolution of `in1` with `in2`.
+Rozmazání obrázku s využitím konvolučního jádra 3×3 hodnoty
+Při úpravách fotografií nebo naskenovaných obrázků se poměrně často můžeme setkat s požadavkem na odstranění šumu z obrazu nebo z jeho vybrané části. K tomuto účelu můžeme použít poměrně velké množství více či méně sofistikovaných filtrů, které lze pro odstranění šumu použít. Nejjednodušším a taktéž nejrychlejším filtrem, který dokáže odstranit vysoké frekvence v obrazu a tím i šum (bohužel spolu s ostrými hranami) je filtr, který pracuje velmi jednoduše – spočítá průměrnou hodnotu devíti sousedních pixelů tvořících blok o velikosti 3×3 pixely a tuto hodnotu uloží do pixelu ležícího přesně uprostřed bloku (operace je samozřejmě provedena pro všechny pixely v obrazu). Výsledkem je sice obraz s odstraněným vysokofrekvenčním šumem, ale současně s potlačením šumu došlo k rozmazání všech jednopixelových hran na přechody široké minimálně tři pixely. Z implementačního hlediska se jedná o konvoluční filtr, jehož konvoluční jádro je velmi jednoduché:
+1/9 1/9 1/9 1/9 1/9 1/9 1/9 1/9 1/9
+Nás ovšem nebudou zajímat absolutní hodnoty výsledky, takže klidně můžeme použít jádro:
+1 1 1 1 1 1 1 1 1
+Programová aplikace takového konvolučního jádra může vypadat následovně:
+import numpy as np import matplotlib.pyplot as plt from scipy.signal import convolve import scipy.datasets as datasets # načtení matice ascent = datasets.ascent() # matice 3x3 prvky obsahující jedničky (NEjedná se o jednotkovou matici) kernel = np.ones([3, 3]) print("Kernel:") print(kernel) # výpočet konvoluce filtered = convolve(ascent, kernel) # zobrazení výsledku plt.imshow(filtered, cmap="gray") plt.title("2D convolution") # uložení grafu s průběhem signálu plt.savefig("convolve_2d_1.png") # zobrazení grafu plt.show()
+A takto by měl vypadat výsledek:
+Gaussovský filtr s konvolučním jádrem 3×3 prvky
+Dalším typem filtru určeného k odstranění šumu z rastrových obrázků je Gaussovský filtr (Gaussian Blur), v němž se též provádí průměrování hodnot sousedních pixelů, ale, na rozdíl od filtru předchozího, jsou těmto pixelům přiřazeny různé váhy v závislosti na jejich vzdálenosti od středního pixelu. Váhy jsou zvoleny tak, aby (velmi nepřesně) aproximovaly Gaussovo rozložení v 2D:
+1 2 1 2 4 2 1 2 1
+Taktéž v tomto případě se jedná o konvoluční filtr, ovšem velikost konvolučního jádra je možné měnit. Běžně se používají velikosti jádra 3×3 či 5×5 pixelů, protože při větší velikosti jádra již mají vzdálenější pixely tak nízkou váhu, že se výpočet pouze zbytečně prodlužuje bez většího vlivu na výsledný obrázek.
+Opět se podívejme na jednoduchou implementaci tohoto filtru (později si ukážeme sofistikovanější řešení):
+import numpy as np import matplotlib.pyplot as plt from scipy.signal import convolve import scipy.datasets as datasets # načtení matice ascent = datasets.ascent() kernel = np.array([ [ 1, 2, 1 ], [ 2, 4, 2 ], [ 1, 2, 1 ], ]) print("Kernel:") print(kernel) # výpočet konvoluce filtered = convolve(ascent, kernel) # zobrazení výsledku plt.imshow(filtered, cmap="gray") plt.title("2D convolution") # uložení grafu s průběhem signálu plt.savefig("convolve_2d_2.png") # zobrazení grafu plt.show()
+Nyní bude výsledek vypadat takto:
+Detekce hran ve vertikálním směru
+Mezi další typy jednoduchých konvolučních filtrů patří filtry určené pro detekci hran v horizontálním či vertikálním směru (hledání hran v jiných směrech již vyžaduje sofistikovanější operace). Teoreticky lze konvoluční jádra těchto filtrů reprezentovat sloupcovým či řádkovým vektorem, nikoli maticí, ovšem pro porovnání s dalšími příklady budu stále používat matice 3×3 prvky. Detekce hran ve vertikálním směru tím nejjednodušším možným filtrem může vypadat například takto:
+import numpy as np import matplotlib.pyplot as plt from scipy.signal import convolve import scipy.datasets as datasets # načtení matice ascent = datasets.ascent() kernel = np.array([ [-1, -1, -1], [ 0, 0, 0], [ 1, 1, 1], ]) print("Kernel:") print(kernel) # výpočet konvoluce filtered = convolve(ascent, kernel) # zobrazení výsledku plt.imshow(filtered, cmap="gray") plt.title("2D convolution") # uložení grafu s průběhem signálu plt.savefig("convolve_2d_3.png") # zobrazení grafu plt.show()
+Výsledek provedené konvoluce:
+Detekce hran v horizontálním směru
+Pouhou transpozicí matice použité v předchozím příkladu lze realizovat hledání hran ve směru horizontálním. Podívejme se na upravený příklad, který tuto operaci provádí:
+import numpy as np import matplotlib.pyplot as plt from scipy.signal import convolve import scipy.datasets as datasets # načtení matice ascent = datasets.ascent() kernel = np.array([ [-1, 0, 1], [-1, 0, 1], [-1, 0, 1], ]) print("Kernel:") print(kernel) # výpočet konvoluce filtered = convolve(ascent, kernel) # zobrazení výsledku plt.imshow(filtered, cmap="gray") plt.title("2D convolution") # uložení grafu s průběhem signálu plt.savefig("convolve_2d_4.png") # zobrazení grafu plt.show()
+Nyní bude výsledek vypadat následovně:
+Sofistikovanější konvoluční jádra
+Knihovna SciPy nabízí v podbalíčku nazvaném ndimage filtry pro odstranění šumu i pro zvýraznění hran. Jedním z těchto filtrů je i výše zmíněný Gaussovský filtr, který je vypočten a aplikován funkcí gaussian_filter:
+gaussian_filter(input, sigma, order=0, output=None, mode='reflect', cval=0.0, truncate=4.0, *, radius=None, axes=None) Multidimensional Gaussian filter. Parameters ---------- input : array_like The input array. sigma : scalar or sequence of scalars Standard deviation for Gaussian kernel. The standard deviations...
+(Pokracovani na webu)|E|
 |T|Jak Tim Cook za 15 let proměnil Apple. Česko vzal do první ligy a Prahu do mnoha reklam|D|22.04.2026 19:15|P||X|Tim Cook oznámil, že po patnácti letech ve vedení Applu končí. Do čela firmy se od prvního září postaví hardwarový expert John Ternus, který v Applu pracuje přes 20 let. Tim Cook však v Applu zanechal nesmazatelnou stopu a dovedl Apple tam, kde je dnes – na technologické špičce. Výrazně ovlivnil směřování značky, která je pro nás důležitá zejména z mobilního hlediska.
 Tim Cook a předtočená keynote z Apple Parku, což je preferovaný standard od roku 2020. Do té doby byly všechny keynote naživo před zaplněným sálem
 Tim Cook nastoupil do Applu již v roce 1998 a je za ním vidět spousta práce. Hned zpočátku vyprodal plné sklady firmy, posléze prakticky z nuly vybudoval dodavatelský řetězec v Číně. Investoval do technologií, kdykoli to bylo nutné, nakoupil obrovské zásoby pamětí, aby Applu nechyběly komponenty. Šéfem Applu se stal 24. srpna 2011.
@@ -103,6 +193,9 @@ Jsme také na sociálních sítích Facebook, Threads, X, Bluesky, Mastodon, Dis
 WhatsApp má u kanálů vypnuté upozornění na nové zprávy. Musíte to změnit sami přes ikonu zvonku v pravém horním rohu aplikace. Viz žlutá šipka:
 Našli jste sami zajímavou slevu? Napište nám.
 Za nákup, který uskutečníte prostřednictvím odkazu v článku, může Živě dostat provizi.|E|
+|T|Making ChatGPT better for clinicians|D|22.04.2026 15:00|P|OpenAI makes ChatGPT for Clinicians free for verified U.S. physicians, nurse practitioners, and pharmacists, supporting clinical care, documentation, ...|X|OpenAI makes ChatGPT for Clinicians free for verified U.S. physicians, nurse practitioners, and pharmacists, supporting clinical care, documentation, and research.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Zaměstnanci ČT a ČRo vyhlásili stávkovou pohotovost, ministr Klempíř zákon nestáhne|D|22.04.2026 14:53|P|Odbory a pracovníci České televize a Českého rozhlasu vyhlásili časově neomezenou stávkovou pohotovost. Reagují tak na chystaný vládní zákon o médiích...|X|Odbory a pracovníci České televize a Českého rozhlasu vyhlásili časově neomezenou stávkovou pohotovost. Reagují tak na chystaný vládní zákon o médiích veřejné služby, který má převést financování obou institucí pod státní rozpočet. Podle zástupců médií návrh postrádá záruky proti politickým zásahům a hrozí rozkolísáním rozpočtů.
 K odporu proti zákonu se v symbolických 11:59 připojili také studenti z více než 200 škol po celé České republice. V Praze se vydali na protestní pochod z Palachova náměstí k Ministerstvu kultury.
 Ministr kultury Oto Klempíř (za Motoristy) dnes ve Sněmovně označil protesty i kroky odborů za legitimní, stažení novely však odmítl. „Mají právo nejenom na to vyjádření, ale mají právo na vtip, mají právo to zesměšnit, mají právo se vyřádit,“ komentoval ministr studentské akce s tím, že on sám se schůzce s odboráři nevyhýbá, pokud bude věcná.

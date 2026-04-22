@@ -1,0 +1,5 @@
+We're introducing two TPU chips to meet increasingly demanding AI workloads, including autonomous AI agents that work on your behalf to get things done.
+AI agents need to reason, plan and execute multi-step workflows. TPU 8i is designed specifically to enable AI agents to complete this very quickly to provide a good user experience.
+Complementing TPU 8i, TPU 8t is optimized for training and can run even the most complex models on a single, massive pool of memory.
+Along with our full-stack purpose-built infrastructure — from networking to data centers and energy-efficient operations — they create the underlying engine that will allow us to bring highly responsive agentic AI to the masses.
+To find out more, learn about how our TPUs are redefining what’s possible with AI.

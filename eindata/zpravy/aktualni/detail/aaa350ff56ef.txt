@@ -1,0 +1,16 @@
+Článek
+Novinky měly možnost prostudovat usnesení o zahájení trestního řízení, kterým detektivové z Národní centrály proti organizovanému zločinu (NCOZ) programátora obvinili z drogových deliktů.
+Podle detektivů stál Jiřikovský za tržištěm Nucleus Market. A prý se mu velmi dařilo, jeho projekt se totiž před deseti lety stal jedním z celosvětově nejúspěšnějších tržišť celého světa. Podle tvrzení detektivů se na jeho tržišti zobchodovalo zboží za nejméně 88 milionů dolarů.
+Policisté programátorovi kladou za vinu, že si z uskutečněných transakcí bral provize ve výši 4-5 %, přičemž počítal s tím, že na tržišti se bude obchodovat zejména s drogami. Platby za zboží byly v bitcoinech.
+E-shop jako Amazon
+„Tržiště patřilo mezi celosvětově největší darknetová tržiště své doby a obchody s návykovými látkami tvořily dominantní část jeho aktivity prostřednictvím velkého počtu prodávajících, kteří nabízeli a realizovali prodej omamných a psychotropních látek vůči širokému okruhu kupujících z různých států,“ napsali policisté.
+Nebýt poněkud nestandardní nabídky, fungoval Nucleus Market jako klasická internetová tržiště s běžnými věcmi, ostatně jeden z „obchodníků“ z Francie řekl, že to byl „e-shop jako třeba Amazon“.
+Podle textu usnesení si měl Jiřikovský přijít na provizích na více než 68 milionů korun. Problematické ale může být, že ani policisté podle všeho přesně nevědí, co za obchody se vlastně na Nucleusu děly.
+Vychází z japonské studie
+Detektivové ke zmíněné částce došli hlavně na základě údajů z vědeckých studií, zejména z japonské práce „Measuring Dark Web Marketplaces via Bitcoin Transactions: From Birth to Independence“, jejímiž autory jsou Naoki Hiramoto a Yoichi Tsuchiya.
+Studii uveřejněnou už v roce 2020 získali na základě žádosti o právní pomoc přes justiční orgány Japonského císařství prostřednictvím Nejvyššího státního zastupitelství, Novinky přitom celé znění studie otevřely za pár vteřin díky akademickému přístupu.
+Výzkumníci sledovali obchody na různých darknetových tržištích včetně Nucleusu pomocí transakcí v bitcoinech, což jim umožnilo analyzovat objemy prodeje či data transakcí. Touto metodou dospěli k závěru, že na tržišti Nucleus se uskutečnily obchody celkem za 88,3 milionu dolarů.
+Jenže jak sama studie uvádí, mohou existovat sledované transakce, které s prodeji na darknetu nesouvisí. Navíc z informací o objemu prodejů nelze určit cenu, množství zboží ani kategorii produktů.
+Mezi drogami i předplatné Netflixu
+Tuto slabinu se policisté pokusili eliminovat tak, že vzali data z webu gwer.net, za nímž stojí dnes již kultovní anonymní osoba či osoby vystupující pod jménem Gwern Branwen. Na webu jsou texty o umělé inteligenci, darknetu, ale i třeba o poezii či mentálním cvičení.
+Z tohoto webu policisté získali data o nabídce na tržišti Nucleus, kde v sekci „Drogy“ mělo nabízet své zboží necelých 500 obchodníků a odehrálo se zde 40 tisíc obchodů, což je 93,5 % za sledované období na celém tržišti. Z toho pak dopočítali Jiřikovského zisk z prodejů drog.

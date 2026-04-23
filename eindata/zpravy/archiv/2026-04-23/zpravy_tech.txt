@@ -202,6 +202,27 @@ Společnosti se aktivně podílejí na jednotlivých výzkumných tématech, cen
 „NCUI představuje zásadní krok k tomu, aby se špičkový výzkum v oblasti umělé inteligence promítl do konkrétních inovací s dopadem na ekonomiku i společnost,“ dodává Michal Pěchouček, rektor ČVUT. „Nejde jen o spolupráci, ale o společný vývoj řešení pro konkrétní aplikační scénáře,“ doplňuje Tomáš Kroupa z FEL ČVUT.
 NCUI sdružuje celkem 36 partnerů napříč akademickou, aplikační i veřejnou sférou. Konsorcium tvoří 6 předních technických univerzit, 25 průmyslových partnerů včetně startupů, malých a středních podniků i velkých korporací, dále nemocnice, městské organizace a státní instituce. Neziskový sektor zastupuje prg.ai. Centrum má poskytovat také expertní zázemí pro rozhodování veřejné správy.
 Centrum koordinuje CIIRC v úzké spolupráci s Fakultou elektrotechnickou, podílejí se i další součásti ČVUT. ČVUT zdůrazňuje, že klade důraz na bezpečnou, důvěryhodnou, etickou a odpovědnou umělou inteligenci. Kromě koordinátora je mezi vysokými školami součástí projektu Vysoké učení technické v Brně, Univerzita Palackého v Olomouci, Univerzita Karlova, Vysoká škola báňská – Technická univerzita Ostrava a Západočeská univerzita v Plzni. Celkový rozpočet projektu přesahuje 500 milionů korun, z toho téměř 400 milionů proudí z programu SIGMA TAČR a část nákladů nesou průmysloví partneři.|E|
+|T|What is Codex?|D|23.04.2026 10:00|P|Learn how Codex helps you go beyond chat by automating tasks, connecting tools, and producing real outputs like docs and dashboards.|X|Learn how Codex helps you go beyond chat by automating tasks, connecting tools, and producing real outputs like docs and dashboards.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Automations|D|23.04.2026 10:00|P|Learn how to automate tasks in Codex using schedules and triggers to create reports, summaries, and recurring workflows without manual effort.|X|Learn how to automate tasks in Codex using schedules and triggers to create reports, summaries, and recurring workflows without manual effort.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Plugins and skills|D|23.04.2026 10:00|P|Learn how to use Codex plugins and skills to connect tools, access data, and follow repeatable workflows to automate tasks and improve results.|X|Learn how to use Codex plugins and skills to connect tools, access data, and follow repeatable workflows to automate tasks and improve results.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Working with Codex|D|23.04.2026 10:00|P|Learn how to set up your Codex workspace, create threads and projects, manage files, and start completing tasks with step-by-step guidance.|X|Learn how to set up your Codex workspace, create threads and projects, manage files, and start completing tasks with step-by-step guidance.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|How to get started with Codex|D|23.04.2026 10:00|P|Learn how to get started with Codex by setting up projects, creating threads, and completing your first tasks with step-by-step guidance.|X|Learn how to get started with Codex by setting up projects, creating threads, and completing your first tasks with step-by-step guidance.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Codex settings|D|23.04.2026 10:00|P|Learn how to configure Codex settings, including personalization, detail level, and permissions, to run tasks smoothly and customize your workflow.|X|Learn how to configure Codex settings, including personalization, detail level, and permissions, to run tasks smoothly and customize your workflow.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Top 10 uses for Codex at work|D|23.04.2026 10:00|P|Explore 10 practical Codex use cases to automate tasks, create deliverables, and turn real inputs into outputs across tools, files, and workflows.|X|Explore 10 practical Codex use cases to automate tasks, create deliverables, and turn real inputs into outputs across tools, files, and workflows.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Opatrný optimismus. Tesla se v prvním čtvrtletí vrátila k růstu, vyhlíží start produkce humanoidních robotů|D|23.04.2026 09:45|P|Zatímco uplynulý rok byl pro společnost Tesla sérií špatných zpráv, teď se zdá, že se situace obrací. Při konferenčním rozhovoru s investory oznámil m...|X|Zatímco uplynulý rok byl pro společnost Tesla sérií špatných zpráv, teď se zdá, že se situace obrací. Při konferenčním rozhovoru s investory oznámil management výsledky za uplynulé čtvrtletí a překonala očekávání analytiků.
 - Čistý zisk je o 17 % výše než před rokem: 477 milionů dolarů (9,9 miliardy korun).
 - Tržby vzrostly o 16 % na 22,4 miliardy dolarů.

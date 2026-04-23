@@ -1,0 +1,7 @@
+V rámci programu Windows Insider Microsoft uvolnil testovací verzi Windows 11 s označením 26220.8165. Ta přináší několik novinek týkající se správy disků a dalších úložišť v počítači. Kromě přepracovaného rozhraní v systémovém nastavení je to také odstranění limitu, který po 30 let neumožnil zformátovat úložiště se souborovým systémem FAT32 na kapacitu větší než 32 GB.
+Nově až 2 TB
+Pokud chcete flashku, externí disk nebo jiné úložiště využívající FAT32 zformátovat prostřednictvím některého z vestavěných nástrojů ve Windows, nelze nastavit větší kapacitu než 32 GB. Ať už se do formátovací utility prokliknete z Tohoto počítače nebo ze Správy úložišť, vždy narazíte na toto omezení. Stejně tak bylo možné formátovat až na 32 GB prostřednictvím příkazové řádky a příkazu format.
+Nově se tento limit zvyšuje na kapacitu až 2 TB, což je samotný technický limit FAT32. V testovacím sestavení to prozatím platí jen pro příkazovou řádku, postupně se ale dostane i do grafického rozhraní.
+Vyřeší to tak tradiční situaci, kdy potřebujete flashku pro update BIOSu či firmwaru zformátovanou jako FAT32, ale k dispozici máte jen větší flashky o kapacitě 64 GB či ještě víc. V takovém případě bylo nutné vytvořit oddíl s menší kapacitou a ten následně formátovat jako FAT32. To už nebude nutné.
+FAT32 ani zdaleka není ideální souborový systém. Problémem je jak limit velikosti jednoho souboru na hodnotě 4 GB, tak náchylnost k fragmentaci nebo absence žurnálování. Bohužel se s ním ještě dlouho nebudeme moci rozloučit například kvůli zmíněným servisním situacím.
+Zdroj: ExtremeTech

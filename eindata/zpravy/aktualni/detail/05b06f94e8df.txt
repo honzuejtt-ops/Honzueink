@@ -1,0 +1,30 @@
+Předplatitelé Živě Premium si mohou přečíst naši analýzu a podrobný rozbor (doslova pitvu) aktuálně nejprodávanější USB rychlonabíječky od Alzy, AlzaPower G610CCA Fast Charge 67W.
+S testy nabíječek budeme pokračovat. Abychom nemuseli v každém od začátku vysvětlovat základy, připravili jsme tento článek s popisem testovacího postupu, na který se budeme odkazovat.
+Analýza se skládá ze tří bloků. Tím prvním je ověření rychlonabíjecích protokolů, které zařízení nabízí. Následují zátěžové testy a vše uzavírá demontáž a rozborka součástek.
+1. Analýza protokolů
+Přenos elektřiny je dnes u rychlonabíječek už natolik chytrý, že běžný kapesní multimetr na proměření nestačí. Spotřebič se musí se zdrojem nejprve spojit na speciální komunikační lince CC a digitálně vyjednat, jaké napětí (a případně i proudy) potřebuje. Už dávno to není jen staré dobré „plus a mínus“ jako na tužkové baterii.
+V prvním bloku ověříme, jestli specifikace prodejce nelže a zařízení skutečně nabízí nabíjecí protokoly, které slibuje
+Abychom tedy ověřili, co skutečně elektrický zdroj umí, potřebujeme simulovat spotřebič, který se s ním pokusí spojit pomocí všech hlavních rychlonabíjecích protokolů a poté vypíše, jestli se to podařilo. Tuto roli v redakční dílně plní USB analyzátor ChargerLab Power-Z KM003C s barevným displejem a případně i desktopovou aplikací pro hlubší analýzu.
+Pro zajímavost, jedinou oficiální rodinou rychlonabíjení je USB PD – Power Delivery. Vše ostatní včetně QC (Qualcomm), FCP (Huawei), AFC/SFC (Samsung) i Applu je ve skutečnosti porušení normy organizace USB-IF; zvláště pak na starých konektorech USB-A. Tyto technologie se zrodily v mezidobí ohýbáním původní specifikace, když ještě nebylo USB PD hotové. Nelze než doufat, že postupně zmizí a výrobci budou používat jednotnou specifikaci naprosto na vše.
+Akumulátor v pozadí prozradil, že podporuje USB PD 3.0 s fixními napěťovými úrovněmi do 20 V/5A a PPS pro šetrné dobíjení telefonů po jemných krocích
+Techniku i politiku kolem rychlonabíjení podrobně vysvětlujeme v tomto článku:
+Vyjednávací USB triggery
+Pokročilý analyzátor doplňují tzv. USB triggery. Jedná se o prototypovací destičky pro modeláře, kutily a elektroinženýry, které si od zdroje rovnou vyjednají kýžené napětí. Buď jej nastavíme pomocí mechanických tlačítek, anebo u pokročilejších modelů strojově skrze komunikační sběrnice.
+USB PD trigger s podporou rozšířeného rozsahu EPR až na 48 V (240W USB-C)
+V redakci máme nepřeberné množství levných USB-C PD vyjednávačů z asijských tržišť za pár dolarů, ale také poměrně sofistikovanou desku ChargerLab Power-Z SINK240, která umožňuje tlačítky nebo skrze sběrnici I²C vyjednat až v současnosti nejnáročnější 48V (240 W) profil specifikace USB PD EPR.
+Další triggery v podobě propojovací části mezi zdrojem a měřící zátěží (vlevo) a malého modulu s displejem z Aliexpressu za pár dolarů
+Zmíněné vyjednávače můžeme použít třeba při zjišťování různých kombinací u vícekonektorových nabíječek. Typicky jde o otázky typu: pokud na jednom konektoru vyjednáme napětí 20 V, zvládneme to zároveň i na druhém? Hlavně je to ale naprosto nezbytná součástka pro následující blok zátěžových testů.
+2. Zátěžový test
+Pokud potřebuje kutil změřit, jestli baterie, akumulátor/powerbanka, fotovoltaický panel anebo právě USB rychlonabíječka unesou určitý výkon, pořídí si některou z mnoha cenově dostupných laboratorních tranzistorových zátěží.
+V redakční dílně tuto roli plní oblíbený model bastlířů Atorch DL24P, který dokáže proměnit v teplo až 180 W. Bohatě to stačí na simulaci silných spotřebičů, které budou zatěžovat všechny dnes hojně rozšířené USB rychlonabíječky v rozmezí 18–140 W.
+Regulovatelná 180W zátěž Atorch DL24P
+Zátěž má nicméně na vstupu pouze +/-, což pro chytrý přenos elektřiny skrze USB-C nestačí. Prostředníkem mezi nabíječkou a zátěží je proto už zmíněný USB trigger, který s procesorem zdroje vyjedná námi požadované napětí a uzavře elektrický obvod.
+Na displeji zátěže anebo skrze webové rozhraní (podporuje Bluetooth) pak můžeme zvyšovat a snižovat protékající proud, watty a sledovat, jak se nabíječka chová, jestli se při trvalém 67W odběru příliš nezahřívá a jestli je vyráběná elektřina v extrémních podmínkách stabilní.
+S běžným spotřebičem – třeba i zcela vybitým notebookem – bychom podobný hraniční scénář nedokázali nasimulovat. Power management laptopu není tak hloupý, aby snižoval životnost svých komponent a posílal do nitra naprosté maximum. Pro programovatelnou zátěž je to naopak její denní chléb.
+DL24P nabízí ovládání skrze Bluetooth, a tak jsme si napsali vlastní aplikaci pro záznam dat
+S malým stolním mařičem změříme také nejvyšší možný výkon nabíječky, při kterém se už z bezpečnostních důvodů automaticky vypne, aby zabránila poškození. To je další klíčová fáze našeho zátěžového testu nabíječek.
+A protože náš mařič obsahuje i drátovou termistorovou teplotní sondu, můžeme ji přilepit na plášť nabíječky a vedle elektrických veličin zaznamenávat i růst povrchové teploty v čase. Tu vnitřní jadernou pak ještě na závěr testu odhalí snímek z termokamery.
+3. Demontáž a rozborka
+Analýzu uzavíráme zdaleka nejzábavnějším blokem, ve kterém zdroj rozmontujeme a vyfotíme a okomentujeme jeho nitro.
+Začátek demontáže první rychlonabíječky v našem výběru
+USB GaN rychlonabíječky se v mnohém dramaticky liší od těch starých modelů. Musejí mít totiž uvnitř nejen speciální procesor pro vyjednávání, ale i další integrované obvody a čipy – včetně samotného spínacího GaN tranzistoru –, které se postarají o to, aby malá krabička dokázala co nejefektivnější nabíjet jak maličká 5V sluchátka, tak mnohem náročnější 20V notebook.

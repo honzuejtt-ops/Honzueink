@@ -1,0 +1,3 @@
+Behind the Google products you use every day are custom chips designed for one job: doing math at massive scale. They're called TPUs, or Tensor Processing Units.
+We designed TPUs from the ground up more than a decade ago specifically to run AI models. Basically, it takes a lot of math for AI models to work, and TPUs can do complex math super quickly: The newest generation of TPUs can process 121 exaflops of compute power with double the bandwidth of previous generations.
+Learn more about these tiny but mighty processors in the video below.

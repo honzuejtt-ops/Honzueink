@@ -1,0 +1,16 @@
+Před lety zaplavily trh první zdroje s polovodiči GaN, které usnadnily miniaturizaci a kapesní nabíječky pro mobil rázem utáhly i notebook. USB nabíječky začala nabízet i Alza pod vlastní značkou AlzaPower.
+Nejlevnější nabíječky se ale zahřívaly a trpěly nekvalitními komponentami. Při nákupu to proto byla ruská ruleta, komu bude sloužit na jedničku a kdo ji bude reklamovat. Doba ovšem pokročila, stejně tak schopnosti generických čínských fabrik, a tak si dnes i Alza může vybírat z toho lepšího, co nakonec pustí do oběhu.
+Nejprodávanější nabíječka AlzaPower
+Abychom zjistili, jestli tomu tak skutečně je, důkladně jsme otestovali aktuálně nejprodávanější 60W nabíječku pod značkou Alzy – AlzaPower G610CCA Fast Charge 67W.
+Změřili jsme schopnosti nabíječky a ověřili, jestli odpovídají udávané specifikaci. Provedli jsme také výkonový test, který hravě překoná to, jak ji doma zatížíte sebelepším mobilem a laptopem.
+Rychlonabíječka AlzaPower G610CCA Fast Charge 67W
+Na závěr nabíječku rozložíme a ukážeme vám fotografie jejího nitra, abyste mohli sami zhodnotit konstrukční a elektrické provedení. Dopředu prozradím, že se uvnitř skrývá poměrně komplexní integrovaný obvod a mikropočítač.
+Testovací metodiku podrobně popisujeme v tomto článku:
+Než ale ukážeme výsledky měření, musíme si model G610CCA stručně představit. Jedná se o rychlonabíječku střední třídy se třemi konektory. Nabízí 2× USB-C s výkonem do 67 W a 1× USB-A s výkonem do 18 W. Rozměry činí 44×31×73 mm (bez 230V kolíků; s kolíky 93 mm) a hmotnost 124 gramů.
+V pokračování pro předplatitele také najdete
+Analýza podporovaných rychlonabíjecích protokolů
+Test automatického vypnutí při extrémní zátěži
+Tepelný test při trvalém odběru 67 W
+Demontáž, rozbor a fotodokumentace nitra
+Chci Premium a Živě.cz bez reklam
+Od 58 Kč měsíčně

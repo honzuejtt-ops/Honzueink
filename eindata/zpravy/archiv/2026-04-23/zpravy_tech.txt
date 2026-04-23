@@ -1,3 +1,27 @@
+|T|Recenze sluchátek Huawei FreeBuds Pro 5: Kvalitní zvuk, účinné ANC a pár kompromisů|D|23.04.2026 17:45|P|Huawei FreeBuds Pro 5 nehrají na efekt, ale na celek. Nepřekvapí designem ani jednou zásadní funkcí, zato se snaží být dobré ve všem. V době, kdy konk...|X|Huawei FreeBuds Pro 5 nehrají na efekt, ale na celek. Nepřekvapí designem ani jednou zásadní funkcí, zato se snaží být dobré ve všem. V době, kdy konkurence často tlačí na extrémy, je to možná rozumnější přístup, než se na první pohled zdá.
+Plný, detailní a muzikální zvuk
+Velmi dobré ANC v běžném provozu
+Široká výbava včetně LDAC
+Komfortní konstrukce a vysoká odolnost
+Transparentní režim není špička
+Mikrofony nejsou zázrak v každé situaci
+Plný potenciál hlavně s Huawei
+Ovládání chce zvyk
+8 /10
+Huawei FreeBuds Pro 5 jsou přesně ten typ sluchátek, které vlastně vypadají jako běžný mezigenerační update. Design je povědomý, výrobce se chlubí výbavou a na první pohled vlastně není moc co řešit. Jenže druhý pohled je jiný – Huawei se snaží nabídnout co nejkompletnější balík: dobrý zvuk, silné ANC, spoustu funkcí, slušnou výdrž a pohodlnější konstrukci.
+V českých obchodech stojí až Kč
+Porovnat ceny
+Výsledkem je velmi dobře vybavený prémiový model za cenu, která je o něco nižší než u známých prémiovek od Sony, Bose nebo Applu. V testu se podíváme na silné stránky a také na pár drobností, které chybí k dokonalosti.
+Vzhled, konstrukce, pohodlí
+Huawei zůstává u oblíbeného stopkového tvaru, se kterým už před lety přišel Apple u svých AirPods Pro. V praxi je to osvědčený design, který drtivé většině lidí prostě sedí. FreeBuds Pro 5 výrobce přepracoval (mluví o analýze více než 10 000 uší), jsou proti předchozí generaci o 10 % menší a o 6 % lehčí. Ve výsledku nyní patří mezi nejpohodlnější špunty své třídy. V balení máte čtyři velikosti nástavců a citlivější jedince potěší, že krček je velmi krátký a do zvukovodu prakticky nezasahuje, což snižuje pocit ucpaných uší.
+V pokračování pro předplatitele také najdete
+Možnosti nastavení a funkce
+Hodnocení kvality ANC
+Ukázka kvality mikrofonů
+Jak to hraje
+Verdikt a doporučení
+Chci Premium a Živě.cz bez reklam
+Od 58 Kč měsíčně|E|
 |T|Přes 30 let jsme nemohli formátovat flashku s FAT32 na větší kapacitu. Toto umělé omezení Microsoft konečně zrušil|D|23.04.2026 17:28|P|Flashky a další úložiště bude možné formátovat až na kapacitu 2 TB. Tak velký oddíl sice nebude pravděpodobně potřeba, usnadní to ale mnohé servisní z...|X|V rámci programu Windows Insider Microsoft uvolnil testovací verzi Windows 11 s označením 26220.8165. Ta přináší několik novinek týkající se správy disků a dalších úložišť v počítači. Kromě přepracovaného rozhraní v systémovém nastavení je to také odstranění limitu, který po 30 let neumožnil zformátovat úložiště se souborovým systémem FAT32 na kapacitu větší než 32 GB.
 Nově až 2 TB
 Pokud chcete flashku, externí disk nebo jiné úložiště využívající FAT32 zformátovat prostřednictvím některého z vestavěných nástrojů ve Windows, nelze nastavit větší kapacitu než 32 GB. Ať už se do formátovací utility prokliknete z Tohoto počítače nebo ze Správy úložišť, vždy narazíte na toto omezení. Stejně tak bylo možné formátovat až na 32 GB prostřednictvím příkazové řádky a příkazu format.
@@ -154,6 +178,12 @@ Nová funkce je součástí aplikace pro Android i iOS, najdete ji po přihláš
 Mobilní aplikaci Email.cz od Seznamu používá zhruba půl milionu aktivních uživatelů na Androidu a čtvrt milionu na iOS. V obou mutacích aplikace zpřístupňuje přehled objednávek ve stejné struktuře jako webový klient, to znamená v sekci přehledu složek. Funkce se brzy objeví také v aplikaci Seznam.cz, jejíž nedílnou součástí je i nativní modul s e-mailovou schránkou.
 Druhým distribučním kanálem je widget na domovské stránce Seznam.cz v prohlížeči, kde bude přehled objednávek dostupný jako samostatná záložka v e-mailovém boxu. Díky tomuto vstupnímu bodu má uživatel poslední aktualizace svých objednávek hned na očích, aniž by musel otevírat schránku. Do budoucna chce Seznam v poště podobným způsobem třídit například vstupenky nebo jízdenky.
 Zdroje a další informace: TZ Seznam|E|
+|T|Introducing GPT-5.5|D|23.04.2026 11:00|P|Introducing GPT-5.5, our smartest model yet—faster, more capable, and built for complex tasks like coding, research, and data analysis across tools.|X|Introducing GPT-5.5, our smartest model yet—faster, more capable, and built for complex tasks like coding, research, and data analysis across tools.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|GPT-5.5 System Card|D|23.04.2026 11:00|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Chytrá stolní lampa Xiaomi zlevnila pod 800 Kč. Hezky svítí a dá se ovládat i mobilem|D|23.04.2026 10:45|P|Chytrá lampička Xiaomi Mi LED Desk Lamp 1S zlevnila na 759 Kč. • Ovládá se mobilem nebo hlasem a rozumí si s Apple HomeKit. • Má výborné recenze, prot...|X|Lampička Xiaomi Mi LED Desk Lamp 1S běžně stojí přes tisíc korun, teď je však v e-shopu výrobce k dostání za 799 Kč včetně dopravy domů. Ale ještě levněji ji česká pobočka Xiaomi prodává skrz Allegro, kde je jen za 759 Kč, rovněž s bezplatnou dopravou. Na Allegru ale bylo v době vydání článku už jen devět volných kusů.
 V českých obchodech stojí až Kč
 Porovnat ceny
@@ -312,3 +342,6 @@ Za pozitivní signál považuje zejména zájem mladé generace, která bývá s
 Zavoral k stávkové pohotovosti uvedl, že chápe obavy zaměstnanců a nebude jim bránit v jejich ústavním právu. Ujistil, že případná stávka by nenarušila vysílání veřejné služby.
 Připomínkové řízení k vládnímu návrhu zákona o médiích veřejné služby potrvá do poloviny května. Po jeho skončení by měla zahájit činnost avizovaná pracovní skupina složená ze zástupců vlády, ministerstva kultury, České televize a Českého rozhlasu.
 Stávková pohotovost, kterou v úterý vyhlásily odbory a zaměstnanci obou veřejnoprávních médií, pokračuje.|E|
+|T|GPT-5.5 Bio Bug Bounty|D|23.04.2026 00:00|P|Explore the GPT-5.5 Bio Bug Bounty: a red-teaming challenge to find universal jailbreaks for bio safety risks, with rewards up to $25,000.|X|Explore the GPT-5.5 Bio Bug Bounty: a red-teaming challenge to find universal jailbreaks for bio safety risks, with rewards up to $25,000.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|

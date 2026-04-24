@@ -1,0 +1,32 @@
+Vždy v pátek připravuje reportér Jan Sedlák výběr zajímavých zpráv ze světa IT. Co se událo v tomto týdnu?
+Babiš neříká pravdu. Tchaj-wan si z Česka udělal technologickou základnu pro část světa. Premiér uvedl, že hodnotová politika nic nepřinesla, Tchaj-wan ovšem v Česku investuje do čipových center, výroby serverů, vývojových poboček, výroby baterií a datových kabelů nebo se chystá nedaleko Ústí nad Labem rozjet továrnu navázanou na drážďanskou TSMC. Více o Tchaj-wanu a Česku také v naší reportáži.
+Baudiš s Kučerou prodali další firmu. Američané získali technologický klenot z Brna. Comprimato se stává součástí společnosti AJA Video Systems. Comprimato se soustředí na live encoding nebo kompresi videa, mezi zákazníky má Nokii, IMAX, ESPN a další. AJ vyvíjí technologie pro přenos a zpracování videa, takže si skrze brněnskou firmu doplní nabídku.
+První várka notebooků MacBook Neo se vyprodala. Čekací doby jsou v řádech týdnů. Hlavním problémem je nedostatek čipů A18 Pro, které pohání jak Neo, tak některé iPhony. O levné a kvalitně zpracovají notebooky je evidentně zájem a příchod Applu do tohoto segmentu zřejmě tradiční výrobce netěší.
+Windows 11 konečně budou umět formátovat oddíly FAT32 větší než 32 GB. Konkrétně se bude možné dostat na dva TB, a to skrze příkaz format v příkazovém řádku. Funkce míří do ostrého vydání.
+Anthropic uvedl AI model Claude Opus 4.7. Je opět o něco lepší a přesnější, ale spotřebovává větší množství tokenů. Anthropic dále uvedl Claude Design.Tento nástroj umožňuje pomocí AI vytvářet vizuální materiály.
+Čínská firma Moonshot AI vypustila model Kimi K2.6. V různých testech se dá zhruba srovnat s novým Opusem nebo GPT-5.4 a Gemini 3.1 Pro.
+AI asistent Google Gemini vyšel jako aplikace pro macOS. Nástroj lze používat přímo na ploše. Do budoucna lze čekat větší integraci, novou generaci Apple Siri má totiž pohánět právě Gemini.
+Amazon investuje dalších až 25 miliard dolarů do Anthropicu. Ten chce v následujících deseti letech investovat sto miliard dolarů do AWS, což je další odbytiště pro čipy Trainium a Inferentia. Amazon dříve s Anthropicem investoval skoro exkluzivně, nyní už vlastní podíl v OpenAI.
+SpaceX má opci na koupi firmy Cursor za 60 miliard dolarů. Platí to do konce roku. Ve hře je také 10 miliard dolarů v rámci partnerství.
+Čipová AI firma Cerebras se chystá na burzu. Jak jsme na Lupě ukázali, Cerebras dělá největší čipy na světě, jsou přes celý wafer. Mají SRAM, takže jsou velmi rychlé na inferenci. Dostupné jsou přes různé cloudy. Loňské tržby dělaly 510 milionů dolarů.
+Windows Recall má další závažný bezpečnostní problém, z nástroje lze číst data uživatelů. Na GitHubu je nástroj TotalRecall Reloaded, který k tomu nepotřebuje ani práva administrátora. Lze získat data uživatelé, které sbírá operační systém.
+Meta začala testovat předplatné WhatsAppu. Půjde o funkci WhatsApp Plus. Měsíční cena by měla být 2,49 eur. Za to dostanete věci jako nové barevné motivy, samolepky, ikony aplikace a podobně.
+Vyšel první router MikroTik s podporou Wi-Fi 7. Jedná se o model hAP be³ Media. Umí frekvenci šest GHz, má dva GB RAM nebo 2,5Gb ethernet.
+AMD se chystá znovu vydat populární procesor Ryzen 7 5800X3D. Jde o první model s 3D V-Cache. Jeho re-edice by se měla objevit letos v rámci desátého výroční platformy AM4. Ta se opět stala oblíbenou kvůli nedostatku pamětí, DDR4 lze sehnat levněji. 5800X3D z druhé roky podražil, opětovné spuštění výroby tak může situaci zlepšit.
+Je zde nový standard pamětí, který by měl pomoci v současné krizi. HUDIMM od ASRock je osekaná verze DDR5, místo dvou 32bitových kanálů používá jeden, což vede i ke snížení čipů na tištěném spoji. Propustnost je nižší, ale cena zajímavější. Uvidíme, zda se to chytne.
+Samsung končí s výrobou pamětí LPDDR4 a LPDDR4X. Kapacity alokuje na novější pětku. Je možné, že to bude mít dopad například na levnější telefony.
+Microsoft snižuje cenu Game Passu. Je to první viditelný krok nové šéfky divize Xbox, která kritizovala předchozí zdražení vedoucí k odchodu předplatitelů. Verze Ultimate už nestojí 669, ale 499 korun. PC verze vyjde na 319 korun, Essential na 239 a Premium na 329 korun. Microsoft zároveň nebude na Game Pass posílat nová Call of Duty v den vydání.
+Hackeři, kteří ze Spotify odcizili masivní databázi písniček, mají zaplatit odškodné 322 milionů dolarů. Je to výsledek soudu, ale není jasné, kdo by měl tuto sumu uhradit, k akci kolem webu Anna’s Archive se totiž nikdo nepřihlásil a není jasné, kdo za útokem stojí.
+Bývalý inženýr Samsungu jde na sedm let do vězení za vynášení informací do Číny. Dodal tam 600 tajných dokumentů pro výrobu pamětí DRAM, a to společnosti CXMT, která je v Číně hlavním tahounem v této oblasti. Dostal za to asi dva miliony dolarů. Čína pro pokroky v čipech používá i tyto metody, v kombinaci s vlastním vývojem nebo přeplácením lidí. Má to výsledky, třeba čipy NAND do SSD už mají na nejvyšší úrovni, viz náš test.
+Na webu je k dispozici databáze zvuků mechanických klávesnic. Na Listening Museum si lze vybrat konkrétní stroj a poslechnout si jeho stopu.
+Cisco uvedlo na trh univerzální kvantových switch. Investice do této oblasti tak postupně zesilují. Detaily jsou rozebrány zde.
+Vyšel Firefox 150. Jednou z hlavních změn je zlepšení editace PDF, nyní je možné například přesouvat stránky nebo je kopírovat.
+Je zde nový webový prohlížeč Brave Origin. Specializuje se na rychlost a minimalismus, vychází z Bravu a Chromia, blokuje reklamy a podobně a jednorázově vyjde na 60 dolarů. Verze pro Linux je zdarma.
+Z jádra Linuxu zmizí podpora starých síťových ovladačů. Týká se to třeba karet pro ISA nebo PCMCIA. Útočníci i díky AI v těchto ovladačích hledají zranitelnosti a zároveň se už tyto technologie zřejmě masově nepoužívají, takže je jednodušší se problému zbavit odstraněním.
+Čtení na Root.cz a Cnews.cz:
+- Postřehy z bezpečnosti: kritické zranitelnosti v Cisco ISE a Webex
+- Apple, Nuvia i Qualcomm jsou passé: Elitní inženýři teď slibují přepsat pravidla s novými procesory Nuvacore
+- Skryté virtuální stroje: útočníci zneužívají QEMU k šíření malwaru
+- Rust už v linuxovém jádře není experiment, použití AI dostává pravidla
+- Framework představil přepracovaný Laptop 13 Pro a dok pro externí grafiky
+- Pokusy s MeshCore: vlastní repeater, spojení přes republiku a klient Meshy

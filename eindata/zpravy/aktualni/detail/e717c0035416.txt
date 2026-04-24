@@ -1,0 +1,29 @@
+DJI představil novou modelovou řadu Lito. Cílí především na začátečníky, studenty a tvůrce obsahu, kteří hledají dostupný stroj, ale nechtějí dělat kompromisy v bezpečnosti.
+Dvojice novinek DJI Lito 1 a Lito X1 přináší do levného segmentu technologie, které byly doposud výsadou mnohem dražších modelů – včetně všesměrového vyhýbání překážkám a LiDARu.
+Co je řada Lito a kam patří?
+V hierarchii DJI se nová řada Lito usazuje mezi kompaktní „selfie“ dron DJI Neo a populární řadu Mini, která se zaměřuje na obrazovou kvalitu a maximálně vytěžuje legislativou stanovený limit 249 gramů. Pokud mám jedním slovem charakterizovat řadu Lito, tak je to blbuvzdornost.
+Vlevo Lito 1, vpravo Lito X1. Vizuální rozdíly jsou minimální - dívejte se na hlavní kameru a mřížky nad ní. Trochu posunutá je kamera, která hlídá dění nad strojem.
+Je to ideální volba pro někoho, kdo si poprvé kupuje dron a má strach, že s ním hned narazí do zdi nebo do stromu. S cenou začínající lehce nad hranicí 8 500 Kč se DJI snaží ovládnout segment dostupných dronů pro mladé. I s řadou Lito se DJI vejde do 249 gramů.
+DJI Lito X1: Prémiový základ s LiDARem
+Vyšší model Lito X1 je technicky velmi zajímavý hybrid. I když jde o základní řadu, DJI ho osadilo předním LiDARem. Ten ve spojení s všesměrovými senzory (Omnidirectional Obstacle Sensing) zajišťuje přesnou orientaci i v náročném terénu, kde běžné vizuální senzory mohou selhat.
+Snímač: 1/1.3" CMOS (stejná velikost jako u Mini 4 Pro nebo Air 3).
+Rozlišení: 48 MPx, 4K video s HDR. 10-bitový barevný profil D-Log M pro pokročilejší postprodukci.
+Úložiště: Interní paměť 42 GB (není tedy nutné hned kupovat SD kartu).
+DJI Lito 1: Dostupná vstupenka do světa DJI
+Levnější sourozenec Lito 1 sice postrádá LiDAR a pokročilý barevný profil, ale stále nabízí nadstandardní bezpečnostní prvky. I zde najdeme všesměrové senzory, které jsou v této cenové hladině unikátní.
+Snímač: 1/2" CMOS, 48 MPx.
+Video: 4K rozlišení, fotky až v 8K.
+Bezpečnost: Systém 5-lux omnidirectional sensing (zvládá detekovat překážky i za horšího osvětlení).
+Společné vlastnosti a chytré režimy
+Oba drony sdílejí platformu, která slibuje až 36 minut letu na jednu baterii a odolnost proti větru do rychlosti 10,7 m/s. Pro začátečníky jsou klíčové automatické režimy:
+- ActiveTrack: Sledování objektu, které díky senzorům funguje i při rychlosti 12 m/s.
+- QuickShots & MasterShots: Dron sám provede složité filmové manévry (kroužení, odlet).
+- QuickTransfer: Stahování videí do mobilu rychlostí až 50 MB/s přes Wi-Fi 6.
+Cena a dostupnost
+Nové modely jsou dostupné okamžitě. Ceny pro evropský trh jsou nastaveny velmi zajímavě:
+DJI řadou Lito ukazuje, že nechce dát šanci konkurentům ani v segmentu dronů pro začátečníky. Nasazení LiDARu a komplexního systému vyhýbání překážkám do dronu za deset tisíc korun je významný krok, který z dřívější „výsady profesionálů“ dělá standard pro každého začátečníka.
+Pro představu o ovladačích: vlevo RC2, který používá displej smartphonu, a RC-N3 s integrovaným panelem.
+Zdroje a další informace: DJI (
+1,
+2)
+Za nákup, který uskutečníte prostřednictvím odkazu v článku, může Živě dostat provizi.

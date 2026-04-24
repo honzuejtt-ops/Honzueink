@@ -1,3 +1,99 @@
+|T|Toto je 11 položek v nastavení iPhonu, které byste měli nechat vypnuté|D|24.04.2026 10:45|P|Omezte sledování polohy, analýzu dat a personalizaci reklam • Deaktivujte nepotřebné funkce jako probuzení zvednutím či oznámení • Vypněte zbytečné sl...|X|iPhone obsahuje mnoho skrytých nastavení, která mohou narušovat soukromí, zkracovat výdrž baterie nebo zpomalovat zařízení. Většina uživatelů si ani neuvědomuje, že některé funkce běží na pozadí. Pojďme se podívat na deset položek, které se vyplatí okamžitě vypnout, pokud chcete optimalizovat výkon svého iPhonu.
+Polohové služby
+Polohové služby mohou být užitečné, ale současně představují riziko pro soukromí a výdrž baterie. Mnoho aplikací sleduje polohu i tehdy, když je zrovna nepoužíváte. To znamená, že mohou sbírat údaje o tom, kde se pohybujete, a tyto informace využívat například pro cílenou reklamu. Proto je dobré pravidelně kontrolovat, které aplikace mají přístup k vaší poloze, a omezit jej pouze na ty, u kterých je to opravdu nutné – například navigace nebo počasí.
+Ochráníte tím své soukromí, ale také prodloužíte výdrž baterie. Pokud aplikace neustále na pozadí sledují polohu, může to výrazně ovlivnit spotřebu energie. Doporučujeme nastavit polohové služby u většiny aplikací na možnost Při používání aplikace nebo na Nikdy, pokud je opravdu nepotřebujete.
+- Kde to najdete: Nastavení – Soukromí a zabezpečení – Polohové služby – zde zkontrolujte seznam aplikací s přístupem k poloze.
+Kontrola polohových služeb
+Pokračování 2 / 11
+Pomoc při vylepšování hledání
+Toto nastavení umožňuje Applu sbírat anonymizovaná data o tom, jak používáte vyhledávání na svém zařízení. I když to může pomoci Applu zlepšovat funkčnost vyhledávání, znamená to také, že jsou některé informace o vašich dotazech a zvyklostech odesílány na jeho servery. Pokud je pro vás soukromí důležité, je lepší tuto funkci vypnout, protože nikdy nemáte stoprocentní kontrolu nad tím, jak jsou vaše data zpracovávána a využívána.
+Kromě soukromí má vypnutí tohoto nastavení i drobný pozitivní dopad na výkon a výdrž baterie. Když telefon neodesílá data na pozadí, snižuje se síťová aktivita a šetří se energie. Většina uživatelů si navíc rozdílů v přesnosti vyhledávání vůbec nevšimne. Pokud tedy nechcete, aby Apple analyzoval vyhledávací dotazy, pak je vypnutí této funkce rozumnou volbou.
+- Kde to najdete: Nastavení – Hledání – Pomáhat společnosti Apple vylepšovat hledání – zakázat.
+Pomáhání s vylepšováním hledání
+Pokračování 3 / 11
+Zamítněte žádosti o sledování
+Mnoho aplikací se snaží sledovat aktivity uživatele, aby mohly zobrazovat personalizované reklamy. Sledování znamená, že sbírají údaje o tom, co si prohlížíte, co nakupujete a jak používáte svůj telefon. Pokud nechcete, aby vás aplikace sledovaly a vytvářely o vás podrobný profil, je nejlepší tuto možnost vypnout. Tím výrazně omezíte množství sdílených osobních dat a snížíte riziko jejich zneužití.
+Další výhodou vypnutí sledování je menší množství cílené reklamy. Často se stává, že po návštěvě určitého webu vám internetové stránky začnou nabízet reklamy na stejný produkt všude, kam se podíváte. Když sledování vypnete, reklamy sice nezmizí úplně, ale budou méně vtíravé a méně přizpůsobené vašim zájmům. Navíc některé aplikace mohou být o něco rychlejší, protože nebudou neustále odesílat data o vašich aktivitách na servery reklamních společností.
+- Kde to najdete: Nastavení – Soukromí a zabezpečení – Sledování – vypnout přepínače u aplikací.
+Zakažte aplikacím sledování
+Pokračování 4 / 11
+Funkce Sdíleno s vámi
+Funkce Sdíleno s vámi v iOS automaticky zobrazuje obsah, který vám někdo poslal přes Zprávy, v jiných aplikacích, jako jsou Fotky, Safari, Hudba nebo Kalendář. To může být pohodlné, protože se nemusíte starat o ruční ukládání odkazů, obrázků nebo událostí. Na druhou stranu to však znamená, že určité soubory nebo informace mohou být sdíleny mezi aplikacemi bez vašeho souhlasu. Chcete-li mít větší kontrolu nad tím, co se kde zobrazuje, doporučujeme tuto funkci vypnout.
+Dalším důvodem pro deaktivaci je soukromí. Může se stát, že vám někdo pošle citlivé informace, obrázky nebo odkazy, které nechcete automaticky vidět ve Fotkách či jiných aplikacích. Pokud sdílíte zařízení s rodinou nebo kolegy, může tato funkce způsobit nechtěné situace, kdy se osobní obsah zobrazí na místech, kde byste ho nečekali. Vypnutím získáte větší kontrolu nad tím, kde a kdy se sdílený obsah objeví.
+- Kde to najdete: Nastavení – Aplikace – Zprávy – Sdíleno s vámi – Automatické sdílení – vypnout.
+Sdíleno s vámi
+Pokračování 5 / 11
+Deaktivujte sledování kondice
+Funkce Sledování kondice umožňuje iPhonu a hodinkám Apple Watch sledovat fyzickou aktivitu, jako je počet kroků, vystoupaná patra nebo pohybové vzorce. Tyto údaje mohou být užitečné pro fitness aplikace, ale pokud aktivně nesledujete svou kondici nebo nepoužíváte aplikace jako Zdraví či Kondice, pak není důvod, aby telefon tato data neustále shromažďoval. Vypnutím této funkce omezíte množství osobních informací, které zařízení sbírá, a snížíte tak možnost jejich zneužití nebo sdílení s aplikacemi třetích stran.
+Další výhodou vypnutí sledování pohybu je úspora baterie. Pokud iPhone nebude neustále analyzovat senzory pohybu a zaznamenávat data o vaší aktivitě, může se mírně prodloužit výdrž baterie. Jestliže tedy nevyužíváte fitness funkce, je rozumné sledování kondice vypnout.
+- Kde to najdete: Nastavení – Soukromí a zabezpečení – Pohyb a kondice – Sledování kondice – vypnout.
+Deaktivujte sledování kondice
+Pokračování 6 / 11
+Vypněte oznámení při sdílení obrazovky
+Mít povolená oznámení při sdílení obrazovky může být potenciálním rizikem pro vaše soukromí. Pokud sdílíte obrazovku například při hovoru přes FaceTime nebo prezentaci na televizi, pak mohou ostatní vidět všechna vaše příchozí oznámení, včetně e-mailů, zpráv a dalších soukromých upozornění. To může vést k nepříjemným situacím, kdy osobní nebo citlivé informace nechtěně uvidí někdo, kdo nemá být jejich příjemcem.
+Vypnutím této funkce zabráníte tomu, aby se oznámení objevovala během sdílení obrazovky, a získáte větší kontrolu nad svým soukromím. Kromě soukromí může vypnutí oznámení během sdílení obrazovky přispět i k profesionálnějšímu dojmu. Při prezentacích v práci nebo online schůzkách nebudou rušivé notifikace odvádět pozornost a nebude docházet k trapným momentům, kdy se například objeví osobní zpráva od manželky.
+- Kde to najdete: Nastavení – Oznámení – Sdílení obrazovky – Povolit oznámení – vypnout.
+Vypněte oznámení při sdílení obrazovky
+Pokračování 7 / 11
+Omezte analýzu
+Apple standardně sbírá analytická data o tom, jak používáte svůj iPhone a iCloud, a odesílá je zpět k dalšímu vylepšování služeb. Jde o informace o výkonu zařízení, chybách v systému a způsobu používání aplikací. I když Apple tvrdí, že tato data jsou anonymizovaná, stále jde o sběr vašich aktivit, který nemusí být pro běžného uživatele nutný. Vypnutím těchto funkcí zabráníte zbytečnému odesílání dat a získáte větší kontrolu nad svým soukromím.
+Dalším důvodem k deaktivaci těchto nastavení je úspora baterie a dat. Odesílání analytických informací probíhá na pozadí, což může mít vliv na výkon zařízení i spotřebu dat, zejména pokud používáte mobilní připojení. Pro běžného uživatele není sdílení analytických údajů nijak přínosné, a pokud se nesnažíte aktivně pomáhat Applu s vylepšováním softwaru, je rozumné tuto funkci vypnout. Výkon vašeho iPhonu tím nijak neutrpí, naopak můžete pocítit nepatrně menší zátěž systému a delší výdrž baterie.
+- Kde to najdete: Nastavení – Soukromí a zabezpečení – Analýza a vylepšování – vypnout přepínače Sdílet analýzu iPhonu a Sdílet analýzu iCloudu.
+Omezte analýzu
+Pokračování 8 / 11
+Vypněte personalizované reklamy
+Personalizovaná reklama umožňuje Applu zobrazovat reklamy na základě vašeho chování, polohy a používání aplikací. To znamená, že Apple sleduje, jaké aplikace používáte, které stránky navštěvujete nebo jaké nákupy provádíte, aby vám zobrazoval co nejrelevantnější reklamy. I když Apple tvrdí, že tato data nejsou spojena s vaší identitou, stále jde o sledování vašeho chování. Vypnutím této funkce zabráníte tomu, aby Apple využíval vaše osobní údaje pro reklamní účely.
+Další výhodou vypnutí personalizovaných reklam je snížení množství cílené reklamy, která se vám bude zobrazovat. Reklamy sice nezmizí úplně, ale nebudou přizpůsobené na základě vašich návyků, což znamená, že vás Apple nebude neustále sledovat, aby vám předkládal „správné“ nabídky. Vypnutí této funkce může také mírně snížit aktivitu telefonu na pozadí, což v konečném důsledku může vést k nepatrnému zlepšení výkonu a výdrže baterie.
+- Kde to najdete: Nastavení – Soukromí a zabezpečení – Reklama Apple – Osobní reklama – vypnout.
+Vypněte personalizované reklamy
+Pokračování 9 / 11
+Deaktivujte zbytečná oznámení
+Oznámení mohou být užitečná, ale pokud jich dostáváte příliš mnoho, mohou rušit a negativně ovlivnit vaši koncentraci i výdrž baterie. Spousta aplikací nás zasypává zbytečnými upozorněními, například doporučeními nebo oznámeními o novinkách, které uživatele nezajímají. Tím se telefon zbytečně často rozsvěcí a vibruje, což ovlivňuje jeho výdrž. Doporučujeme projít seznam aplikací v nastavení oznámení a vypnout upozornění u těch, od kterých je nepotřebujete.
+Kromě lepšího soustředění tím také zlepšíte životnost baterie. Každé oznámení znamená, že se aplikace na pozadí probudí, zkontroluje nové informace a zobrazí je na obrazovce. To vše spotřebovává energii a může zpomalit telefon, zejména pokud máte příliš mnoho aktivních aplikací.
+- Kde to najdete: Nastavení – Oznámení – projděte seznam aplikací, a u těch, od kterých nechcete dostávat oznámení, deaktivujte přepínač Povolit oznámení.
+Deaktivujte zbytečná oznámení
+Pokračování 10 / 11
+Zakažte probuzení zvednutím
+Funkce Probudit zvednutím automaticky rozsvítí obrazovku iPhonu pokaždé, když jej zvednete. To může být užitečné, pokud často kontrolujete mobil, ale zároveň to znamená, že se displej neustále zapíná i v situacích, kdy to nepotřebujete – například při nošení telefonu v kapse, kabelce nebo při náhodném pohybu. To může rychleji vybíjet baterii.
+Vypnutí této funkce pomáhá šetřit baterii a zároveň snižuje riziko nechtěného zapnutí telefonu. Pokud chcete iPhone probudit, stačí jednoduše klepnout...
+(Pokracovani na webu)|E|
+|T|Pozor na falešný Portály občana. Ukradne vám přihlašovací údaje a následně i peníze|D|24.04.2026 10:06|P|V Česku se množí podvody s nezaplacenými pokutami za překročení rychlosti. Navedou vás na falešný Portál občana, odkud z vás vysají citlivé informace ...|X|Tento týden se začaly objevovat podvodné stránky napodobující státní online službu Portál občana s cílem ukrást obětem peníze. Zprávy od útočníků uvádí, že je nutné zaplatit neexistující pokuty za překročení rychlosti.
+“Podvod se šíří formou smishingových zpráv odeslaných přes iMessage či RCS protokol – odesílatelem zprávy je často neznámý email či telefonní číslo se zahraniční předvolbou. Cílem podvodu je získání platebních údajů obětí, včetně zachycení vícefázového ověření. Takto získané údaje mohou být poté ihned zneužity k online transakcím, či k vytvoření klonu platební karty. Infrastruktura útoku je konzistentní se současnou vlnou phishingů cílících na kurýrní služby,” uvedla brněnská společnost Whalebone, která podvodné stránky zachytila skrze svůj threat intelligence.
+“Očekáváme růstovou tendenci tohoto typu útoku v následujících dnech a týdnech, s pravděpodobností eskalace i na další služby – včetně telefonních operátorů či kurýrních služeb,” doplnila podle serveru Lupa.cz firma.
+Whalebone dodává operátorům či poskytovatelům internetu technologii pro blokování hrozeb na úrovni DNS (a také provozuje evropskou DNS4EU), kde blokuje i aktuální domény falešného Portálu občana. Je tedy možné, že se některým uživatelům tento podvod nezobrazí.
+zdroj: Lupa.cz|E|
+|T|Známe ceny letošních OLED televizorů Samsungu: s nákupem pár měsíců počkejte|D|24.04.2026 09:55|P|Nové vlajkové OLED televizory Samsungu se postupně dostávají do prodeje i v Evropě, zároveň s tím se objevují první recenze.|X|Samsung bude v Evropě pro rok 2026 nabízet dvě špičkové řady OLED televizorů. S99H představuje evropskou vlajkovou řadu, zatímco evropská S95H stojí o kus níž. Aby to nebylo jednoduché, v USA se model odpovídající evropské S99H prodává pod označením S95H. Na český trh se tyto televizory zatím nedostaly, ceny už ale známe.
+OLED 2× jinak
+Obě řady používají OLED panely: u větších úhlopříček jde hlavně o vlastní QD-OLED, největší televizory mohou nabízet OLED panel typu WRGB z produkce LG. S99H se u nás bude prodávat ve velikostech 55, 65, 77 a 83 palců a S95H nabídne úhlopříčky 48, 55, 65 a 77 palců. V obou případech budou panely disponovat frekvencí až 165 Hz a matnou antireflexní úpravou.
+Televizory podporují HDR10, HLG a HDR10+, u vyššího modelu i HDR10+ Advanced, které jde přímo proti konkurenčnímu Dolby Vision 2. Jeho podpora samozřejmě u Samsungu chybí.
+Nejvýraznější rozdíl je v designu. U S99H Samsung vymyslel dvojitý rám, kdy běžný tenký rámeček kolem panelu doplňuje ještě kovový zadní plát. Ten tvoří druhý designový rám, který bude vypadat skvěle na zdi. Při postavení televizoru na stolek to může některé uživatele odradit.
+S95H naopak vsází na klasický vzhled. Vyšší model si vedle rámu vypůjčil i některé další funkce z řady The Frame, především možnost stahovat umělecká díla pro statickou projekci. Ta budou díky QD-OLEDu a matné úpravě vypadat výborně.
+První recenze
+Na webu se začínají objevovat první recenze nových televizorů, především nejvyššího modelu S99H. Skvěle hodnotí QD-OLED panel s perfektním vyladěním barev, vysokým jasem a kvalitou v HDR režimech. Panel tradičně vyniká černou barvou, uniformitou, i nízkým input lagem, což může být výhodou v případě hraní. Negativně je ale hodnocena matná úprava obrazovky, která sice účinně eliminuje odlesky, ale v osvětlené místnosti může posouvat černou směrem k šedé.
+Evropské ceny jsou nastaveny následovně. V závorce uvádíme hrubý přepočet na tuzemské ceny:
+S99H:
+- QE83S99H: 8,799 € (196 658 Kč)
+- QE77S99H: 5,799 € (129 608 Kč)
+- QE65S99H: 4,299 € (96 083 Kč)
+- QE55S99H: 3,099 € (69 263 Kč)
+S95H:
+- QE77S95H: 5,599 € (125 138 Kč)
+- QE65S95H: 4,099 € (91 613 Kč)
+- QE55S95H: 2,899 € (64 793 Kč)
+- QE48S95H: 2,299 € (51 383 Kč)
+Jako vždy ale platí, že tyto vysoké ceny začnou velmi rychle klesat. Po půlroce od uvedení na trh minimálně u velkých úhlopříček bude možné televizory zakoupit za částky blížící se polovině prvotních cen.
+Zdroj: Sammobile|E|
+|T|Konec píchání do prstu se blíží. V MIT pracují na hodinkách, které změří hladinu cukru v krvi světlem|D|24.04.2026 09:45|P|Neinvazivní metoda zjišťuje hladinu krevního cukru světlem • Optická technologie analyzuje tři konkrétní pásma pomocí Ramanovy spektroskopie • Sledová...|X|Život diabetiků provází bolestivé píchání do prstů a neustálé sledování hodnot. Vědci z Massachusettského technologického institutu (MIT) nedávno vyvinuli neinvazivní metodu sledování hladiny cukru v krvi. Nové zařízení využívá blízké infračervené světlo, které prosvěcuje kůži a obejde se bez nutnosti vpichu.
+Základem metody je Ramanova spektroskopie, tedy optická technika, která analyzuje, jak se světlo rozptyluje při průchodu tkání. Každá molekula totiž vykazuje odlišnou odezvu, a právě tyto jemné rozdíly umožňují určit chemické složení. Metoda se zaměřuje na zachycení specifického signálu glukózy pod povrchem kůže.
+Zásadní zjednodušení a vylepšení technologie
+Starší přístroje musely analyzovat zhruba tisíc spektrálních pásem, což vyžadovalo poměrně rozměrnou a drahou optiku. Vědecký tým ovšem zjistil, že ke spolehlivému stanovení hladiny krevního cukru stačí sledovat jen tři konkrétní pásma.
+Původní prototyp velikostí připomínal krabici od bot
+Kromě toho se podařilo odfiltrovat velkou část nechtěného signálu tím, že infračervené světlo svítí pod jiným úhlem, než pod jakým probíhá sběr signálu. Díky těmto vylepšením mohli odborníci radikálně zmenšit přístroj i výpočetní náročnost a také snížit výrobní náklady.
+Podle předběžných testů dosahuje zařízení přesnosti srovnatelné s běžně dostupnými senzory zaváděnými pod kůži. Původní prototyp sice velikostí připomínal krabici od bot, avšak současná testovaná verze je velká zhruba jako mobilní telefon. Výzkumníci model aktuálně zkoušejí na zdravých i prediabetických dobrovolnících a brzy proběhnou další důležité studie.
+Hodinky schopné měřit cukr v krvi na obzoru
+Klíčová studie, o které informoval odborný časopis Analytical Chemistry, trvala čtyři hodiny. Zdravý sedmadvacetiletý dobrovolník v jejím průběhu vypil dva glukózové nápoje a vědci mu každých pět minut snímali hodnoty, přičemž jedno měření trvalo něco málo přes 30 sekund.
+Ramanův senzor dosáhl překvapivě dobrých výsledků srovnatelných s monitory Dexcom G7 a Abbott Freestyle Libre 3. Průměrná relativní odchylka činila 11,69 %, přičemž za klinicky přijatelnou je považována odchylka pod 15 %. Je ale třeba zohlednit, že test proběhl pouze na jediném dobrovolníkovi a z těchto výsledků tedy nelze garantovat stoprocentní spolehlivost v běžné praxi.
+Konečným cílem projektu je zabudování této optické technologie do chytrých hodinek, což by znamenalo důležitý průlom v osobní medicíně. Vývojáři nyní usilovně pracují na tom, aby senzory fungovaly spolehlivě u lidí s jakýmkoli odstínem pleti. Pokud vše půjde podle plánu, dočkáme se během několika let neinvazivního měření na zápěstí.|E|
 |T|Výborný batoh za 719 Kč. Voděodolný Kingsons s objemem 30 litrů pojme notebook i oblečení na dlouhý výlet|D|24.04.2026 08:45|P|Kingsons Laptop Backpack 30L zlevnil o 20 % na 719 Kč. • Na dovolenou do něj dáte notebook, příslušenství i oblečení. • Je kvalitně vyrobený, může na ...|X|Běžně stojí devět stovek, teď se batoh Kingsons Laptop Backpack 30L znovu po delší době objevil v akci za 719 Kč. Alza bude mít až do pondělí slevy i na další batohy kvalitních značek jako Wenger, CabinZero, XD Design apod., ceny startují na 400 Kč.
 Kingsons s objemem 30 litrů patří mezi ty větší. Měří 51 × 31 × 19 cm a váží jedno kilo. S rezervou se tak kvalifikuje i jako příruční zavazadlo do letadla. Batoh je vyroben z polyesteru, je celý černý bez výrazných grafických prvků (s výjimkou loga výrobce) a má voděodolnou úpravu. Nechybí ani nastavitelný hrudní popruh nebo popruh pro nasazení na madlo kufru.
 Má trochu netradiční design. Notebook se ukládá do velké přední kapsy, jsou uvnitř i organizéry pro tablet, doklady, pero, příslušenství apod. Do hlavního velkoobjemového prostoru se ale nedostanete standardně shora, ale dvěma bočními zipy.

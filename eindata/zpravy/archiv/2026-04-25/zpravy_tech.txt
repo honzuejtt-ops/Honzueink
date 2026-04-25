@@ -1,3 +1,32 @@
+|T|Z Linuxu mizí podpora ISDN a Ham Radio, GCC posoudí využití AI/LLM ve vývoji|D|25.04.2026 22:00|P|Týden v KDE a zejména opravy pro Plasmu 6.6.5, týden v GNOME a libadwaita pro Android. Fwupd 2.1.2 s podporou dalšího hardwaru, GCC zřizuje pracovní s...|X|Týden v KDE: zejména opravy pro Plasmu 6.6.5
+Vývojáři projektu KDE za poslední týden zapracovali opět zejména na vylepšeních rozhraní tohoto desktopu a zlepšili energetickou efektivitu běhu. Do Plasmy 6.7 míří aktualizace menu Kicker, nově podporující položku „Nedávná umístění“ (Recent Location, ale screenshot v přehledu ukazuje Recent Places) a také rychlý způsob odstranění polože z menu a Dashboardu prostým tažením pryč.
+Mezi síťovými připojeními přibyla možnost je jednoduše duplikovat, vizuálních vylepšení doznává Discover (např. srozumitelnější tlačítko pro instalaci) a také systémová lišta, kde se při plném nabití akumulátoru zobrazuje už jen ikona napájecího profilu.
+Pro QtQuick / Kirigami aplikace je tu aktualizace v rámci Frameworks 6.26, která redukuje mírnou neostrost textů a prvků (platí pro menší měřítka škálování). Pro GPU Intel je aktivována volba „overlay planes“, uživatelé by měli pozorovat lepší výkon a nižší spotřebu při hraní her. Optimalizace pro „direct scan-out“ zase zlepšují energetickou efektivitu. Obě novinky míří do kompozitoru KWin.
+Řešeny jsou i různé scénáře vedoucí k padání desktopu a chyby v aplikacích, a to v rámci aktualizačního vydání Plasma 6.6.5, mimo jiné se týkající komponenty Plasma Login Manager, či aplikací Orca, Spectacle a systémových nastavení.
+Týden v GNOME: libadwaita pro Android
+Projekt GNOME má za uplynulý týden demo verzi knihovny libadwaita nově běžící i na Androidu. Jinak ale mezi novinkami tohoto týdne najdeme už jen aplikace třetích stran. Jde o Kotoba, na Flathubu dostupný off-line slovník mezi japonštinou a angličtinou nabízející nadstandardní funkcionalitu, novou Java/Kotlin knihovnu Stargate s podporu XDG Desktop Portalů pro JVM aplikace, nástroj Blood Pressure 1.0.0 pro sledování krevního tlaku a tepu a podporou vyhodnocovacích statistik či Rewaita ve verzi 1.1.2 pro úpravu barevných vzhledů GNOME, nyní s podporou Firefoxu a dalších témat.
+Solitaire 50.1 má nové překlady a chybějící karty v rámci Aisleriotu, Pipeline 4.0.0 se obejde bez externích stahovačů a přehrávačů (u Flatpaku je omezení výchozího nastavení), Parabolic 2026.4.0 je svižnější a umožňuje například specifikovat fps videa.
+Z Linuxu mizí podpora ISDN a Ham Radio
+Po starých síťových ovladačích či procesorech Baikal schválil Linus další čistku v kódu. Příští verze jádra už nebudou obsahovat podporu ISDN (Integrated Services Digital Network) a obecně amatérských zařízení typu Ham Radio.
+Jádro si odlehčí o něco přes 100 tisíc řádků kódu, který už nebude muset být udržován a jeho starý kód čelit AI analýzám chyb, což by zbytečně zatěžovalo vývojáře a správce.
+Fwupd 2.1.2 s podporou dalšího hardwaru
+Další nová verze Fwupd, konkrétně 2.1.2, je na světě a s ní i podpora dalších typů hardwaru, u nichž lze s Fwupd / LVFS provádět aktualizace firmwarů. Richard Hughes z Red Hatu v oznámení nové verze hlásí, že mezi nově podporované „kousky železa“ se nyní řadí dalších devět typů, plus je zde démos pro podporu modemů, které využívají ttyUSB a spousta dílčích oprav.
+- Elan TP IC type 0×19
+- Google Moonstone
+- myši HP 400 a 405
+- dokovací stanice Lenovo USB-4
+- dotykový řadič LX Semicon SW42101
+- USB huby Parade s řízením GPIO
+- zařízení Pixart PLP239
+- zařízení Raydium TP
+- kamerky Sunplus
+Godot má beta verzi 4.7 s podporou HDR výstupu a lepším ray-tracingem
+Godot 4.7 je v beta stádiu a odvážnější vývojáři mohou začít naplno využívat pokročilejší podporu ray-tracingu a zejména podporu HDR výstupu, který funguje na Linuxu s Waylandem (a samozřejmě i vhodným HDR displejem).
+Vývojáři enginu provedli refactoring v oblasti raytracing pipeline, vylepšili 2D fyziku, podporu dotykového ovládání na Waylandu a daší aspekty. Podrobnosti shrnuje oznámení na domovském webu projektu.
+GCC zřizuje pracovní skupinu pro posouzení politiky kolem AI/LLM
+GNU Compiler Collection (GCC) zakládá novou pracovní skupinu, jejímž úkolem bude posouzení pozitiv, negativ či přímo rizik nasazení AI a velkých jazykových modelů v vývoji balíku GCC.
+Z běžících diskusí v rámci projektu nevzešlo jednoznačné rozuzlení, jak se k tomuto fenoménu postavit, pročež si to na bedra vezme nová GCC Development AI Policy Working Group, která poté sdělí svá doporučení GCC Steering Committee.
+Novou pracovní skupinu povede Jonathan Wakely z Red Hatu. Kromě doporučení může být výstupem i doporučení prvních rychlých pravidel, zatímco jiná skupina bude problematiku dále zkoumat. První výstupy čekejme nejdříve někdy v příštích třech měsících. Podrobněji na Wiki projektu GCC. V tuto chvíli jde o návrh.|E|
 |T|Názor odborníka: Kamerový systém jako zdroj dat. AI pohlídá bezpečnost, spočítá lidi a pozná chybějící zboží|D|25.04.2026 17:45|P|Ještě před několika lety jsme bezpečnost vnímali především jako reakci na incident: narušení – poplach – zásah. Dnes se ale díky digitalizaci a AI pos...|X|Ještě před několika lety jsme bezpečnost vnímali především jako reakci na incident: narušení – poplach – zásah. Dnes se ale díky digitalizaci a AI posouváme do zcela jiné fáze. Bezpečnost je více proaktivní, řízená daty a spojená s provozem objektů.
 Jedním z klíčových trendů je využití AI a pokročilé videoanalytiky. Kamerové systémy už dávno neslouží jen k pasivnímu záznamu. Dokážou v reálném čase vyhodnocovat chování osob, rozpoznávat nestandardní situace, analyzovat pohyb v prostoru nebo upozornit na rizikové chování ještě před tím, než dojde k incidentu. Příkladem mohou být automatizované prodejny, kterých je v Česku dnes už mnoho desítek a které by bez AI nefungovaly – kamery zde spolehlivě detekují například pád osoby nebo vložení zboží mimo nákupní košík. Bezpečnost se tak posouvá od „hlídání“ k aktivní prevenci.
 Daniel Turnovský, technologický ředitel Securitas ČR.

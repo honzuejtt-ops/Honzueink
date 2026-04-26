@@ -73,6 +73,9 @@ Nizozemský Orange QS rozšířil investiční kolo seed na 15 milionů eur. Ora
 Turecko-nizozemský startup Qubitrium získal 2,25 milionů eur v seed+. Qubitrium se zaměřuje na kvantovou komunikace, včetně vlastních modulů pro satelity.
 Kanadský QuantumCore zase získal 10,7 milionu kanadských dolarů na vývoj hardwaru pro kvantové počítače, hlavně lepší vyčítání supravodivých qubitů.
 Jak vypadají kvantové čipy od Googlu:|E|
+|T|Our principles|D|26.04.2026 16:00|P|Our mission is to ensure that AGI benefits all of humanity. Sam Altman shares five principles that guide our work.|X|Our mission is to ensure that AGI benefits all of humanity. Sam Altman shares five principles that guide our work.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Normálně za peníze, dnes zadarmo nebo se slevou: Správce baterie, procvičování sluchu a rytíři|D|26.04.2026 15:45|P|V marketech se pravidelně objevují slevy na aplikace a hry • Vybírejte pro platformy Android i iOS • Na titulu můžete ušetřit desítky korun|X|Battery manager and monitor
 - platforma: Android
 - aktuální cena: 25 Kč

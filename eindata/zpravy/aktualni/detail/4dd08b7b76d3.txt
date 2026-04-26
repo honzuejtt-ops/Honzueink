@@ -1,0 +1,10 @@
+V únorovém vydání časopisu Computer jsme si pohráli s AI kamerou od nadace Raspberry Pi. V jejím nitru se skrývá snímač Sony IMX500 s NPU akcelerátorem, na kterém může běžet jednoduchá síť a detekovat objekty v obrazu, aniž by se zapotil stejnojmenný prototypovací mikropočítač.
+Zkraje jara jsem chtěl v hrátkách s umělou inteligencí pokračovat, do redakce totiž dorazila malá krabička a v ní ještě mnohem výkonnější rozšiřující deska AI HAT+ 2 pro Raspberry Pi 5.
+Pod masivním žebrovím chladiče se tentokrát nachází izraelský NPU akcelerátor Hailo-10H s výkonem 40 TOPS (rozlišení INT4) a 8GB RAM, do které se už vejdou i malé jazykové modely o velikosti do 6 miliard parametrů. Třeba zjednodušení chatboti Qwen, Llama a DeepSeek. Chatboti, kteří mohou běžet lokálně, docela rychle a ke všemu na Raspberry Pi. Neskutečné!
+Superpočítač o velikosti hromádky DVD
+Zdálo se, že program na závěr letošní zimy mám jasný, jenže pak zazvonil telefon a ozval se kolega Tomáš Holčík: „Nechceš si na dva týdny vyzkoušet DGX Spark?“
+DGX Spark je maličký a v mém domácím pracovním koutku se ztratil i vedle 13“ laptopu
+Pokud je AI kamera z úvodu článku pomyslná kánoe pro dva a rozšiřující destička AI HAT+ 2 o něco větší rodinný motorový člun, pak je loňská novinka ze stáje Nvidie letadlová loď USS Gerald R. Ford. Ovšem pouze výkonem, s rozměry 150×150×50 mm totiž připomíná spíše počítače řady NUC nebo Mac Mini a Mac Studio.
+Pokračování článku patří k prémiovému obsahu pro předplatitele
+Chci Premium a Živě.cz bez reklam
+Od 58 Kč měsíčně

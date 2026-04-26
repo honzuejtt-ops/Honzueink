@@ -1,0 +1,14 @@
+Článek
+V Plzni tento hackerský maraton pro programátory, designéry, vývojáře a další nadšence z řad studentů pořádá společnost Aimtec, v březnu se konal už podesáté. Je to hra, nicméně s vážným podtextem.
+„Snažíme se shánět projekty, které opravdu dávají smysl,“ řekl Novinkám Jiří Dobrý ze zmíněné firmy. „Dříve to bylo o tom, aby si studenti pohráli s technologiemi. To se změnilo. Poslední čtyři roky je hlavní myšlenka tato: ať se chytré hlavy rozhlíží kolem sebe, kde mohou pomoci. A když to jde, tak ať skutečně pomohou,“ konstatoval Dobrý.
+Řada nápadů skončí u prototypu, což ale není třeba případ komunikátoru pro děti s poruchou autistického spektra, který vznikl loni na základě požadavku plzeňské specializované základní a mateřské školy.
+„Máme tady děti s výrazně narušenou komunikační schopností, neví, jakým způsobem dávat najevo, že něco chtějí, potřebují,“ sdělila logopedka zmíněné mateřinky Lucie Zábranová. Komunikátory to řeknou za ně, stačí zmáčknout příslušný obrázek.
+Jenže komerční produkty stojí vyšší tisíce korun. „A nevyhovují nám ani provozně, obtížně se s nimi manipuluje,“ upozornila Zábranová.
+Této výzvy se chopila skupina plzeňských studentů na loňském hackathonu. „První prototyp jsme dali dohromady skutečně za víkend, trvalo to asi čtyřicet hodin,“ potvrdil Václav Straka z týmu Plajta. Zařízení pak ještě vylepšili. A škola je nadšená. „Po nás je to revoluce v komunikátorech – ty původní byly v praxi skoro nepoužitelné,“ potvrdila ředitelka Věra Krňoulová.
+Spásná morseovka
+Jiný – dva roky starý – příklad: klávesnice pro inteligentní mladou ženu, která po dětské obrně skončila na vozíku, špatně vidí a zvládá jen omezené spektrum pohybů.
+„Je ale schopná mačkat tlačítka a ovládá morseovku. Potřebovala tedy jednoduchou destičku s velkými barevnými tlačítky, která by jí umožnila dorozumívat se přepisem kódů morseovky,“ připomněl David Krásný z týmu, který se tohoto úkolu zhostil.
+Výsledkem je zařízení s pouhými pěti mohutnými tlačítky, které však disponuje celou řadou funkcí – od přeposílání napsaných zpráv na vybrané kontakty, e-mailem nebo esemeskou, až po listování v audioknihách či napojení na YouTube.
+Otevřená licence
+O komerčním využití autoři zmíněných zařízení příliš nepřemýšlejí. „Komunikátory jsme zhotovili tři,“ připomněl Václav Straka. „Můžeme jich udělat víc, ale chvíli to potrvá, nejsme žádná sériová výroba. Kdyby nás chtěl někdo kontaktovat, prosím. Může se do toho však pustit kdokoliv, všechny postupy jsou volně dostupné pod otevřenou licencí,“ vysvětlil Straka.
+Jiří Dobrý potvrdil: „Kdyby některý z produktů chtěl někdo vyrábět na obchodní bázi, bránit mu nebudeme. Nám to nevadí, hlavně když to bude dělat dobro. Ale licence musí zůstat otevřená i pro další kutily.“

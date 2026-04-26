@@ -1,4 +1,135 @@
-|T|Konec otravného ověřování e-mailu. Android to v aplikacích udělá za vás|D|26.04.2026 06:45|P||X|Určitě to znáte také: při první registraci do prakticky jakékoli mobilní aplikace zadáte e-mail a čekáte, až vám dorazí SMS nebo e-mail s číselným či alfanumerickým kódem, který následně přepíšete do aplikace. Pokud se při přepisování spletete, musíte celý postup opakovat. Samotné doručení ověřovacího e-mailu přitom někdy trvá velmi dlouho, nebo často skončí rovnou ve spamu.
+|T|Vychlazené pivečko i během blackoutu. Číňané prodávají UPS pro lednici, která ji udrží v provozu téměř čtyři dny|D|26.04.2026 09:45|P|Relativně štíhlá jednotka zajistí provoz lednice během výpadků elektřiny • Instalace nevyžaduje odborníka a samotný systém běží velmi tiše • Kapacitu ...|X|Výpadky elektřiny bývaly nepříjemností, dnes ale s rostoucí závislostí na technologiích představují čím dál větší problém. Stačí pár hodin a obsah lednice můžete rovnou vyhodit do koše. Právě na tento problém cílí řešení FridgePower čínské firmy Bluetti, které kombinuje baterii a záložní zdroj určený pro chladničky.
+Blok je tlustý jen 75 milimetrů a v pohotovostním režimu má extrémně nízký odběr (pouhé 4 W). Snadno ho schováte nahoru na lednici nebo připevníte na zeď. Stačí ho zapojit mezi chladničku a zásuvku. Odpadá tak složitá instalace, kvůli které byste museli volat elektrikáře. Akumulátor má kapacitu 2016 Wh, což běžné chladničce zajistí přibližně 22 hodin nepřetržitého provozu. To bohatě stačí na přečkání většiny výpadků proudu.
+Se třemi moduly nabídne až 88 hodin provozu
+Když vypadne proud, integrovaný záložní zdroj zareaguje bleskově během 10 milisekund. Spotřebič běží plynule dál, takže přepnutí ani nepostřehnete. Komu by základní výdrž nestačila, může systém rozšířit přikoupením až tří externích modulů BlueCell 200 a snadno tak zvýšit celkovou kapacitu až na 8064 Wh.
+BLUETTI FridgePower
+Jednotka využívá lithium-železo-fosfátové (LiFePO₄) články, které zvládnou 4000 nabíjecích cyklů, což odpovídá životnosti přibližně 10 let. Zařízení je velmi tiché – hladina hluku dosahuje pouhých 30 dB. Mobilní aplikace navíc umí sledovat místní předpověď počasí, a když zaregistruje blížící se bouřku, baterie se preventivně dobije na 100 %.
+Mobilní aplikace umí sledovat místní předpověď počasí
+Ačkoli má baterie chránit hlavně potraviny, najdete na ní také běžné zásuvky využitelné například pro napájení routeru či nabití notebooku nebo mobilního telefonu. Systém navíc snadno začleníte do chytré domácnosti, jelikož si rozumí s platformami Amazon Alexa a Google Home.
+Pořizovací cena není právě lidová
+Novinka je momentálně dostupná v crowdfundingové kampani na Kickstarteru. V akci „Super Early Bird“ ji pořídíte za zvýhodněnou cenu 759 dolarů (cca 15 680 Kč). Dodávky zákazníkům by měly začít už letos v červnu.
+Podobná zařízení ukazují, jak se mění přístup k domácí energetice. Místo velkých a drahých systémů přicházejí menší, specializovaná řešení, která zvládne používat prakticky kdokoli. FridgePower tak není jen ochranou potravin, ale i ukázkou toho, kam se bude ubírat decentralizovaná energetika v běžných domácnostech.|E||T|Vytáhnout kotvu, napnout plachty! Vybíráme nejlepší pirátské hry. Není jich moc, ale jsou zatraceně návykové|D|26.04.2026 08:45|P|Pořádných pirátských her je žalostně málo. Podobně jako u kovbojek jde o oblíbené téma, které by si zasloužilo mnohem větší využití. Přece jen ale exi...|X|Ukázat všechny listy najednou
+Sea of Thieves
+Sea of Thieves mělo při vydání nemalé problémy, ovšem po letech vylepšování a přidávání nového obsahu se z něj stalo skvělé námořní dobrodružství mořského vlka. Jestli si ho chcete užít naplno, rozhodně na vodu vyrazte s partou kamarádů. Začátky ale nejsou jednoduché. Bude chvíli trvat, než se dostanete za kormidlo pořádného korábu.
+Jako správný postrach moří můžete okrádat ostatní posádky, hledat poklady či pomáhat obchodníkům v přístavech. Sea of Thieves se v rámci rozšíření zdarma rozrostlo o velmi povedené linky, mezi kterými najdeme i stopu Opičího ostrova nebo Pirátů z Karibiku. Z původního zaměření na boje mezi posádkami hráčů se v průběhu let posunula více směrem k příběhovému obsahu, díky čemuž se otevřel prostor i pro sólové piráty.
+Hodnocení recenzentů: 69 % (z 71 recenzí Metacritic)
+Hodnocení na Steamu: Velmi kladné (89 % od 317 836 hráčů)
+Oficiální web hry
+Platformy: PC, PlayStation 5, Xbox One, Xbox Series X
+Žánry: adventura, simulátor
+Herní režimy: jeden hráč, více hráčů, kooperace
+Oficiální čeština na PC: bez češtiny
+Herní engine: Unreal Engine 4
+Vydavatel: Microsoft Game Studios
+Vývojář: Rare Ltd.
+Datum vydání: 20. 3. 2018
+Digitální distribuce: Steam , PlayStation , Xbox
+Pokračování 2 / 15 Windrose
+Život piráta se z dálky zdá jako pohádka plná svobody a dobrodružství. Přežít v této nebezpečné době ale není úplně brnkačka, což z první ruky poznáte v survivalu Windrose. Kromě přepadávání obchodníků a hledání pokladů se musíte starat i o základní potřeby. Hodit se bude pořádný příbytek na jednom z ostrovů, kde si budete schraňovat svůj lup a dostatek zásob.
+Vedle přežívání je hlavní součástí hry průzkum rozsáhlých moří a ostrovů. Cesta každého hráče se liší díky procedurálně generovaným biomům. Kobky plné tajemství ale tvůrci vytvořili ručně. Do hledání místních pokladů můžete vyrazit i s partou přátel na vlastních či dedikovaných serverech. I když Windrose podporuje hraní až v osmi lidech, vývojáři pro ideální zážitek doporučují čtyřčlennou partu.
+Hodnocení na Steamu: Velmi kladné (87 % od 14 568 hráčů)
+Oficiální web hry
+Platforma: PC
+Žánry: adventura, nezávislá hra, RPG
+Herní režimy: jeden hráč, více hráčů, kooperace
+Oficiální čeština na PC: bez češtiny
+Herní engine: Unreal Engine 5
+Vývojář: Kraken Express
+Datum vydání: 14. 4. 2026
+Digitální distribuce: Steam , Epic
+Pokračování 3 / 15 Assassin's Creed IV: Black Flag
+Black Flag není jen jedním z nejoblíbenějších dílů série Assassin's Creed, zároveň patří mezi nejlepší hry s pirátskou tematikou. V tropickém Karibiku konflikt mezi skrytými zabijáky a zlomyslnými templáři probíhá pouze na pozadí a pozornost si uzmuly střety mezi pirátskými posádkami a zdejšími mocnostmi.
+Do bitevní vřavy se zapojíte v roli Edwarda Kenwaye, který se v roce 1715 shodou náhod stane kapitánem lodi Jackdaw a jedním z pirátů, kteří chtějí pro nebojácné mořeplavce vybudovat svobodnou zemi. Čeká vás prozkoumávání zdejších vod, lodní bitvy, honičky na souši i hledání potopených pokladů.
+Hodnocení recenzentů: 88 % (z 36 recenzí Metacritic)
+Hodnocení na Steamu: Velmi kladné (88 % od 70 478 hráčů)
+Oficiální web hry
+Platformy: PC, PlayStation 4, PlayStation 3, Xbox 360, Xbox One, Wii U, Switch
+Žánr: akční adventura
+Herní režimy: jeden hráč
+Oficiální čeština na PC: rozhraní a titulky
+Herní engine: AnvilNext
+Vydavatel: Ubisoft
+Vývojář: Ubisoft
+Datum vydání: 29. 10. 2013
+Digitální distribuce: Steam , PlayStation , Xbox , Nintendo
+Pokračování 4 / 15 The Secret of Monkey Island: Special Edition
+První díl adventurní série o hledání Opičího ostrova se blíží ke svým čtyřicátým narozeninám. Je až s podivem, jak dobře tento komediální příběh nejen o pirátech zestárl a dodnes platí, že mezi klikacími adventurami jde o naprostou povinnost. Pokud by vás odrazovala retro grafika, v roce 2009 vyšla tato speciální edice s modernějším vzhledem a vylepšeným ovládáním.
+Příběh ovšem zůstává věrný originálu. Guybrush Threepwood se jednoho dne na ostrově Melee prostě rozhodne, že se stane pirátem. A tak si jde za svým snem, který pořádně startuje v místní krčmě plněním tří výzev. To hlavní ale přijde později. Ani v nejmenším nečeká, že se zvěsti o nemrtvém pirátovi LeChuckovi a jeho posádce stanou skutečností.
+Hodnocení recenzentů: 88 % (z 35 recenzí Metacritic)
+Hodnocení na Steamu: Extrémně kladné (95 % od 5 230 hráčů)
+Oficiální web hry
+Platformy: PC, PlayStation 3, Xbox 360, iOS
+Žánry: adventura, hra point-and-click, puzzle
+Herní režim: jeden hráč
+Oficiální čeština na PC: bez češtiny
+Vydavatel: LucasArts
+Vývojář: LucasArts
+Datum vydání: 15. 7. 2009
+Digitální distribuce: Steam
+Pokračování 5 / 15 Risen 2: Dark Waters
+Studio Piranha Bytes, autoři Gothicu, navázalo na svoje fantasy RPG další ikonickou sérií. Druhý Risen do známé formule přimíchal tematiku pirátů, ale zachovává to, díky čemu měli fanoušci předchozí hry rádi - rozvětvený příběh, hluboký RPG systém a krkolomné souboje. Čeká vás výprava na několik rozmanitých ostrovů s cílem zastavit řádění božských lordů hrozících zdecimováním zdejších zemí.
+I když se Dark Waters odehrávají jen pár let po prvním díle, zvládají obstát i samostatně. Jak se tenhle pirátský příběh nakonec vyvine, máte do jisté míry ve svých rukách. Vaše volby ovlivňují průběh děje, stejně tak se skrz odlišné příběhové větve můžete dostat k jiným schopnostem pro svého dobrodruha.
+Hodnocení recenzentů: 69 % (z 51 recenzí Metacritic)
+Hodnocení na Steamu: Velmi kladné (80 % od 3 434 hráčů)
+Oficiální web hry
+Platformy: PC, PlayStation 3, Xbox 360
+Žánry: adventura, RPG
+Herní režim: jeden hráč
+Oficiální čeština na PC: rozhraní a titulky
+Herní engine: Genome
+Vydavatel: Deep Silver
+Vývojář: Piranha Bytes
+Datum vydání: 24. 4. 2012
+Digitální distribuce: Steam
+Pokračování 6 / 15 Like a Dragon: Pirate Yakuza in Hawaii
+Série Like a Dragon je sama o sobě dost šílená. Snad nikdo ale nečekal, že se od boje mezi rodinami japonské mafie dostaneme až k pirátskému dobrodružství. Pirate Yakuza in Hawaii je překvapivě povedená námořní oddechovka, ve které se svojí posádkou musíte konkurenci ukázat, jak se žije život pravého piráta.
+Tváří hry je dobře známý blázen Goró Madžima. Jednoho dne se bez vzpomínek probouzí kdesi na ostrově nedaleko Havaje. I když si toho moc nepamatuje, smysl pro spravedlnost a bojové umění se nezapomíná, a tak velmi rychle začne práskat na hromadu každou partičku, která vystrčí růžky. Ani se nenaděje a už brázdí vody v nádherném korábu a bojuje o reputaci v pirátské zátoce Madlantis.
+Hodnocení recenzentů: 79 % (z 94 recenzí Metacritic)
+Hodnocení na Steamu: Velmi kladné (88 % od 6 033 hráčů)
+Oficiální web hry
+Platformy: PC, PlayStation 5, PlayStation 4, Xbox Series X, Xbox One
+Žánry: adventura, mlátička, RPG
+Herní režim: jeden hráč
+Oficiální čeština na PC: bez češtiny
+Herní engine: Dragon Engine
+Vydavatel: Sega
+Vývojář: Ryu ga Gotoku Studios
+Datum vydání: 21. 2. 2025
+Digitální distribuce: Steam , PlayStation , Xbox
+Pokračování 7 / 15 Pillars of Eternity II: Deadfire
+Když bohovi přeskočí v makovici, nikdy to nemůže dopadnout dobře. Aby následky řádění ve světě Pillars of Eternity byly co nejmenší, vyrážíme s posádkou dobrodruhů na souostroví Deadfire po jeho stopách, abychom zjistili, co vedlo k jeho probuzení a zničení pevnosti hlavního hrdiny.
+Deadfire je hutné RPG, ve kterém si můžete vyhrát nejen se složením vaší party, její výbavy a schopnostmi. Spravujete také svůj koráb, se kterým brázdíte vody obestírající souostroví. I když jde v základu o hru s real-time souboji, tvůrci dodatečně do hry přidali i režim, se kterým se Pillars of Eternity II promění v čistě tahové RPG.
+Hodnocení recenzentů: 88 % (z 71 recenzí Metacritic)
+Hodnocení na Steamu: Velmi kladné (87 % od 14 394 hráčů)
+Oficiální web hry
+Platformy: PC, PlayStation 4, Xbox One, Nintendo Switch
+Žánry: adventura, RPG
+Herní režim: jeden hráč
+Oficiální čeština na PC: bez češtiny
+Herní engine: Unity
+Vydavatel: Versus Evil
+Vývojář: Obsidian Entertainment
+Datum vydání: 8. 5. 2018
+Digitální distribuce: Steam , PlayStation
+Pokračování 8 / 15 SteamWorld Heist
+Univerzum SteamWorld jsme navštívili v několika různých žánrech. Heist ho zpracovává jakožto tahovou strategii, ve které se stanete kapitánem pirátské posádky poskládané z robotů fungujících na parní pohon. Každý z jejích členů vám dává trochu jiné možnosti, co na bojišti můžete vymyslet, ale i obyčejný útok může být velmi mocný, pokud s ním umíte zacházet. Sami totiž určujete trajektorii střel a díky odrážení kulek od povrchů můžete vystřihnout různé parádičky.
+Vedle toho jste vyzbrojeni speciálními schopnostmi a možností si své robotí podřízené vylepšovat. Důležitá je také volba zbraní. SteamWorld Heist je ale v otázce komplexnosti jednodušší záležitostí, takže pokud nejste v tomto žánru tolik znalí, tohle by pro vás mohl být ideální vstupní bod.
+Hodnocení recenzentů: 86 % (z 47 recenzí Metacritic)
+Hodnocení na Steamu: Velmi kladné (93 % od 4 160 hráčů)
+Oficiální web hry
+Platformy: PC, PlayStation 4, PlayStation Vita, Xbox One, 3DS, Wii U, iOS, Nintendo Switch
+Žánry: adventura, nezávislá hra, RPG, strategie, tahová hra
+Herní režim: jeden hráč
+Oficiální čeština na PC: bez češtiny
+Herní engine: sdl2
+Vydavatel: Image & Form
+Vývojář: Image & Form
+Datum vydání: 10. 12. 2015
+Digitální distribuce: Steam , PlayStation , Nintendo , Apple App Store
+Pokračování 9 / 15 Lego Pirates of the Caribbean: The Video Game
+Piráti z Karibiku v dobách své největší slávy měli ve světě videoher mnohem větší zastoupení. Do dnešních dní vydržela jen kostkovaná variace, která spojuje dohromady první čtyři díly, což dává smysl vzhledem k tomu, že vyšla jako doprovod pro Na vlnách podivna v roce 2011.
+Zahrajete si za všechny známé postavy v čele s Jackem Sparrowem. Nechybí ani Will Turner, Elizabeth nebo kapitán Barbossa a záporák Davy Jones. Jelikož jde o hru z úvodu éry akčních Lego plošinovek, ikonické scény zpracovává v odlehčeném stylu bez jakéhokoliv dabingu. Díky tomu je přístupný i mladším hráčům, protože posunky a situace pochopí každý bez...
+(Pokracovani na webu)|E||T|Konec otravného ověřování e-mailu. Android to v aplikacích udělá za vás|D|26.04.2026 06:45|P||X|Určitě to znáte také: při první registraci do prakticky jakékoli mobilní aplikace zadáte e-mail a čekáte, až vám dorazí SMS nebo e-mail s číselným či alfanumerickým kódem, který následně přepíšete do aplikace. Pokud se při přepisování spletete, musíte celý postup opakovat. Samotné doručení ověřovacího e-mailu přitom někdy trvá velmi dlouho, nebo často skončí rovnou ve spamu.
 Ukázková registrace v mobilní aplikaci v systému Android. E-mail se ověří automaticky a jako bonus si hned vytvoříte přístupový klíč
 Druhou možností jsou tzv. „kouzelné“ odkazy zasílané e-mailem či textovou zprávou, ale ani zde se nevyhnete přepínání mezi aplikacemi. Odkaz musíte otevřít v prohlížeči a poté se vrátit zpět do aplikace. Každá sekunda zpoždění je u obou postupů dalším důvodem, který vás může od používání aplikace spolehlivě odradit. Právě tento problém však má vyřešit nová funkce Verified Email.
 Registrace v aplikacích bude rychlejší

@@ -1,0 +1,11 @@
+Výpadky elektřiny bývaly nepříjemností, dnes ale s rostoucí závislostí na technologiích představují čím dál větší problém. Stačí pár hodin a obsah lednice můžete rovnou vyhodit do koše. Právě na tento problém cílí řešení FridgePower čínské firmy Bluetti, které kombinuje baterii a záložní zdroj určený pro chladničky.
+Blok je tlustý jen 75 milimetrů a v pohotovostním režimu má extrémně nízký odběr (pouhé 4 W). Snadno ho schováte nahoru na lednici nebo připevníte na zeď. Stačí ho zapojit mezi chladničku a zásuvku. Odpadá tak složitá instalace, kvůli které byste museli volat elektrikáře. Akumulátor má kapacitu 2016 Wh, což běžné chladničce zajistí přibližně 22 hodin nepřetržitého provozu. To bohatě stačí na přečkání většiny výpadků proudu.
+Se třemi moduly nabídne až 88 hodin provozu
+Když vypadne proud, integrovaný záložní zdroj zareaguje bleskově během 10 milisekund. Spotřebič běží plynule dál, takže přepnutí ani nepostřehnete. Komu by základní výdrž nestačila, může systém rozšířit přikoupením až tří externích modulů BlueCell 200 a snadno tak zvýšit celkovou kapacitu až na 8064 Wh.
+BLUETTI FridgePower
+Jednotka využívá lithium-železo-fosfátové (LiFePO₄) články, které zvládnou 4000 nabíjecích cyklů, což odpovídá životnosti přibližně 10 let. Zařízení je velmi tiché – hladina hluku dosahuje pouhých 30 dB. Mobilní aplikace navíc umí sledovat místní předpověď počasí, a když zaregistruje blížící se bouřku, baterie se preventivně dobije na 100 %.
+Mobilní aplikace umí sledovat místní předpověď počasí
+Ačkoli má baterie chránit hlavně potraviny, najdete na ní také běžné zásuvky využitelné například pro napájení routeru či nabití notebooku nebo mobilního telefonu. Systém navíc snadno začleníte do chytré domácnosti, jelikož si rozumí s platformami Amazon Alexa a Google Home.
+Pořizovací cena není právě lidová
+Novinka je momentálně dostupná v crowdfundingové kampani na Kickstarteru. V akci „Super Early Bird“ ji pořídíte za zvýhodněnou cenu 759 dolarů (cca 15 680 Kč). Dodávky zákazníkům by měly začít už letos v červnu.
+Podobná zařízení ukazují, jak se mění přístup k domácí energetice. Místo velkých a drahých systémů přicházejí menší, specializovaná řešení, která zvládne používat prakticky kdokoli. FridgePower tak není jen ochranou potravin, ale i ukázkou toho, kam se bude ubírat decentralizovaná energetika v běžných domácnostech.

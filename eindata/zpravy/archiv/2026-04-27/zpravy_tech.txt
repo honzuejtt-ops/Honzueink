@@ -1,3 +1,192 @@
+|T|Velké změny ve Windows Insider: kompletně se mění struktura, novinky nebudou vázané na build|D|27.04.2026 11:45|P|Windows Insider byl pro mnohé nepřehledným především nečitelností trojice různých kanálů. Ty se nyní mění jen na dva, které mají jasné určení.|X|Microsoft mění fungování programu Windows Insider a zavádí přehlednější strukturu testovacích verzí. Úpravy se týkají jak samotného rozdělení buildů, tak toho, jak se k uživatelům dostávají nové funkce. Směr je zřejmý. Zrychlit testování a oddělit experimenty od stabilnějších větví.
+Nové rozdělení: Experimental a Beta
+Microsoft v první řadě výrazně zjednodušuje model s mnoha testovacími kanály. Hlavní novinkou je větev označená jako Experimental. Ta slouží pro rychlé testovací experimenty bez jistoty, že se někdy objeví ve finální verzi Windows. Buildy v této větvi mohou obsahovat nedokončené nebo jen dočasné funkce a počítá se s tím, že nebudou vždy stabilní.
+Vedle ní zůstává kanál Beta, který je kompromisem mezi použitelností a novými funkcemi. Ty jsou blíž k finálnímu vydání, ale stále se ladí na základě zpětné vazby. Původní kanály Dev a Canary v této podobě končí a nahrazuje je jasnější rozdělení mezi experimentální a předprodukční verze.
+Mění se i způsob, jakým se novinky distribuují. Už nebudou pevně svázané s konkrétními buildy systému. Microsoft dál rozvíjí model postupného zapínání funkcí na straně serveru. V praxi to znamená, že dva uživatelé se stejnou verzí systému mohou mít k dispozici jinou sadu funkcí. Ty navíc bude možné pomocí běžných přepínačů vypínat či zapínat v nastavení programu Windows Insider.
+Microsoftu to umožňuje přesněji testovat jednotlivé změny a rychleji reagovat na problémy bez nutnosti vydávat nový build.
+Nové místo pro dokumentaci změn
+S reorganizací souvisí i přesun dokumentace pro nové buildy. Informace o verzích a změnách se sjednocují na nové platformě Windows Insider Program Documentation Hub, která má novinky zpřehlednit. Klasické release notes tak přestávají být jediným místem, kde hledat přehled změn.
+Pro testery změny znamenají především jednodušší a přehlednější strukturu programu. Kdo chce mít k dispozici nové funkce co nejrychleji a nebojí se testovat nedokončené nástroje, zapne si větev Experimental. Naopak uživatelé, kteří chtějí stabilnější systém s dostupnými novinkami, budou směřovat do kanálu Beta.
+Zdroj: Microsoft|E|
+|T|Každý čtvrtý článek na české Wikipedii editoval jediný člověk. Jmenuje se Harold a věnuje se jí 20 let|D|27.04.2026 11:42|P|Harold v průměru odešle 41 editací denně, někdy mnohem víc. Na svědomí má 1 % kompletné české Wikipedie.|X|Minulý týden proběhl v Brně pravidelný Wikiklub, na kterém se setkávají především zkušení Wikipedisté. Zajímavostí se podle facebookového příspěvku stalo především dvacetileté výročí jednoho z nejaktivnějších tuzemských wikipedistů – Harolda. Ten se do projektu zapojil 24. dubna 2006 a na kontě má stovky tisíc zásahů a editací na Wikipedii.
+Přes 40 editací denně
+Jak vypadá jeho práce si lze prohlédnout na jeho veřejném profilu, který eviduje každou aktivitu na Wikipedii. V průměru Harold zvládne 41 editací za den, často je to ale mnohem větší penzum. Podle Marka Blahuše stojí za 1 % celé české Wikipedie.
+Zdroj: Youtube.comO některá zajímavá čísla o české Wikipedii se podělil v jedné ze svých starších přednášek „Jak je důležité míti Harolda aneb Význam jednotlivce“. Z nich mimo jiné vyplývá, že:
+- 10 % české Wikipedie vytvořilo 6 nejaktivnějších wikipedistů
+- 50 % české Wikipedie napsalo 120 lidí
+- nejaktivnější uživatel Kacíř napsal 112 milionů znaků
+Nejčastější aktivitou je průběžná údržba článků, opravy faktických i formálních chyb, práce se šablonami, kategoriemi, odkazy, referencemi a kontrola změn. Nejde tak primárně o vytváření nových článků, ale korekce a aktualizace těch současných.
+Zdroj: @Wikipedie|E|
+|T|Miliardová skupina Bezvavlasy mění šéfa, povede ji obchodní ředitel z Electroluxu|D|27.04.2026 11:10|P|Skupina Bezvavlasy, která měla loni utržit zhruba miliardu korun a patří mezi největší české distributory profesionální vlasové kosmetiky, mění generá...|X|Skupina Bezvavlasy, která měla loni utržit zhruba miliardu korun a patří mezi největší české distributory profesionální vlasové kosmetiky, mění generálního ředitele. Od 1. května povede firmu Jiří Hendrych, který nahradí Daniela Horáka. Ten ve společnosti zůstává jako akcionář.
+CEO mění skupina v době náročné integrace s firmou Hair Servis, kterou koupila v roce 2023. Podle poslední tiskové zprávy s výsledky za první pololetí 2025 společnost vykázala tržby 471 milionů korun a provozní zisk EBITDA 7,3 milionu korun, čistá ztráta dosáhla 5,5 milionu korun. Firma tehdy uvedla, že její výsledky reflektují právě pokračující náročnou integraci s Hair Servis, a že by se měly v následujících měsících vylepšit. Centralizovala logistiku, sjednocovala systémy a propouštěla část zaměstnanců z lokálních skladů Hair Servis.
+Hendrych přichází z pozice obchodního ředitele Electroluxu, kde působil poslední čtyři roky. Větší část kariéry strávil přímo v segmentu beauty. Ve společnosti Sirowa vedl jako obchodní ředitel divizi značky Wella ve třech středoevropských zemích, ve firmě Coty byl obchodním ředitelem a vedl slovenskou pobočku. Nyní má mimo jiné skupinu připravit vstup na nové evropské trhy a rozvíjet velkoobchod.
+Odcházející Daniel Horák provedl společnost právě fází integrace, během níž došlo i ke vstupu na čtyři nové evropské trhy – do Rumunska, Chorvatska, Slovinska a Bulharska. Bezvavlasy vznikly jako e-shop v roce 2009 a patří k největším českým e-shopům ve svém segmentu. Provozují devět internetových obchodů, 20 velkoobchodních a dvě maloobchodní prodejny. Skupina dodává více než 20 tisícům kadeřníků. Působí v sedmi zemích střední a východní Evropy a její akcie se od září 2022 obchodují na pražské burze na trhu Start.|E|
+|T|Nucené aktualizace Windows půjde konečně navždy vypnout. A nejen to|D|27.04.2026 10:59|P|Microsoft po sérii problematických aktualizací otáčí a přináší zásadní změny, které vám konečně dají větší kontrolu nad tím, kdy a jak se váš počítač ...|X|Microsoftu se v posledních měsících opravdu nedaří a vydává jednu nepovedenou aktualizaci za druhou. Zatímco jedna pro mnohé znamenala ztrátu dat, druhá rozbila Wi-Fi a Bluetooth, třetí pro změnu způsobovala zamrzávání her a aplikací.
+Možná právě proto nyní Microsoft přichází s několika novinkami, které mají situaci uklidnit a mnohé z nekonečných aktualizací vysvobodit. Tou hlavní je možnost pozastavit aktualizace na konkrétní datum až na 35 dnů. Díky tomu se vyhnete nepříjemným momentům, kdy se počítač začne aktualizovat třeba během práce, pracovních cestách, na konferenci nebo v jiných nejméně vhodných chvílích.
+Pozastavení navíc půjde opakovaně prodlužovat, takže v praxi můžete automatické aktualizace odkládat prakticky neomezeně dlouho. Na druhou stranu je potřeba počítat s tím, že aktualizace často obsahují důležité bezpečnostní opravy, takže jejich úplné vypnutí nemusí být úplně ideální.
+Změny se dotknou takové nabídky napájení. Doteď se občas stávalo, že po aktualizaci nešlo počítač jednoduše vypnout nebo restartovat bez toho, aby se zároveň instalovaly další aktualizace. Nově bude vždy k dispozici samostatná volba pro klasické vypnutí a restart bez aktualizace.
+Na základě zpětné vazby také Microsoft zapracoval na přehlednosti aktualizací. Ty budou obsahovat více informací, aby bylo jasné, co přesně a jakou část systému či hardwaru upravují. Kromě toho chce sjednotit aktualizace ovladačů, .NET i firmwaru do jednoho pravidelného cyklu. Ideálně jednou měsíčně, v jednom měsíčním restartu.
+zdroj: blog.windows.com|E|
+|T|Firefox 150 opravuje enormních 271 zranitelných míst. Našla je zakázaná AI Claude Mythos|D|27.04.2026 10:45|P|Oživeno 24. 4. 2026 | Kulatá verze prohlížeče hlásí spoustu vylepšení. Firefox již dříve nabídl překladač stránek. Není tak dobrý jako cloudová konkur...|X|Ukázat všechny listy najednou
+Oživeno 24. 4. 2026 | Kulatá verze prohlížeče hlásí spoustu vylepšení. Firefox již dříve nabídl překladač stránek. Není tak dobrý jako cloudová konkurence, ale může fungovat bez připojení a slibuje naprosté soukromí. Na této technologii Mozilla staví překladač v reálném čase . Podporuje i češtinu.
+Nabízí povědomé prostředí, které znáte z Google Translate, Deeplu a spol. Na stránce se nachází dvě pole, přičemž do jednoho píšete a ve druhém se zobrazují výsledky. Překladač najdete psaním v adresním řádku, případně rovnou přejděte na adresu about:translations .
+Mozilla v zimě uzavřela partnerství s Anthropicem a jde o ukázku toho, jak může AI pomáhat se hledáním chyb v kódu. (A připomínka toho, že útočníci mají v AI silný nástroj.)
+Překladač ve Firefoxu je alternativa ke Google Translate s důrazem na soukromí
+Spolupracující subjekty použily Claude Opus 4.6. Ve Firefoxu 148 vývojový tým na základě výsledků skenu opravil 22 zranitelných míst. Mozilla pak získala přístup ke střežené betaverzi Claude Mythos . Tento pokročilejší model byl násobně úspěšnější. Verze 150 opravuje 271 zranitelných míst v prohlížeči .
+Novinek menšího charakteru Firefox nabízí celou řadu:
+Když vyberete více panelů, můžete skrze kontextovou nabídku najednou zkopírovat adresy příslušných stránek včetně jejich názvů.
+Když označíte více panelů, můžete zkopírovat všechny adresy ve výběru
+Integrovaná čtečka PDF podporuje změnu pořadí, mazání, vkládání a exportování stránek dokumentu.
+Režim rozděleného zobrazení vyvoláte i z kontextové nabídky odkazu na stránce. Kontextové nabídky panelu obsahují ovládací povely jako Prohodit panely .
+Do rozděleného zobrazení přidáte i stránky z odkazů
+Instalace webových aplikací je dostupná také v instalacích Firefoxu z Microsoft Storu.
+Moderní správce uživatelských profilů je nyní k dispozici ve všech instalacích včetně Windows 10. Poprvé se ukázal ve Firefoxu 144, viz předchozí kapitoly tohoto článku.
+Zálohování uživatelských profilů do souboru je nyní k dispozici ve Windows 10/11.
+Firefox pro Linux podporuje nabídku pro vkládání emoji z GTK.
+Verze prohlížeče pro Red Hat, Fedora, openSUSE a další distribuce vychází v novém balíčku RPM.
+Ve všech verzích Windows se nyní Firefox dotazuje na aktivaci polohy v nastavení systému, když o přístup žádá webová stránka a zjišťování je v systému zakázané.
+Novinky ve Firefoxu
+V pravidelně aktualizovaném článku sledujeme novinky v prohlížeči Firefox od verze 92. Co Mozilla postupně přidala, vzala nebo změnila, najdete v dalších listech.
+Pokračování 2 / 54 Firefox 149 rychleji načítá PDF a umí zobrazit dvě stránky vedle sebe
+Oživeno 24. 3. 2026 | Firefox 149 přináší některé nedávno slíbené novinky . Především se jedná o režim rozděleného zobrazení (Split View), díky němuž si prohlédnete dvě stránky vedle sebe a v jednom okně. Můžete tak třeba používat slovník při čtení článku. Nebo budete zkoumat vědeckou studii a vypisovat si poznámky do Dokumentů Google.
+Fantazii se meze nekladou. Funkce se aktivuje skrze kontextovou nabídku panelu. Klepněte tedy na ouško a vyberte Přidat rozdělené zobrazení . Máte-li otevřené další stránky, vyberete si jednu z nich. V opačném případě se ukáže nová karta a můžete např. klepnout na některou ze zkratek. Stránky se dají prohodit a znovu osamostatnit.
+Největší prohlížeče dnes prohlížení dvou stránek vedle sebe nabízí, Firefox je jeden z posledních
+Do sekce Firefox Labs, kterou najdete v nastavení prohlížeče, míří přidávání poznámek k otevřeným stránkám – v rozsahu až tisíc znaků. Chcete-li si tedy poznámky vyzkoušet, musíte je ručně zapnout. Firefox si poznámky pamatuje a při návratu na stránku vám tak připomene dřívější myšlenkové pochody.
+Poznámku přidáte buď prostřednictvím kontextové nabídky, nebo rovnou z náhledu panelu. Je-li se stránkou asociovaná poznámka, poznáte to podle symbolu lístku v oušku. Mozilla teď sbírá zpětnou vazbu a zejména ji zajímá, jak se bude přiřazeným zápiskům v praxi dařit přežívat změny adres. Poznámky by se měly objevit i po změně, ale mohou zde být limity.
+Poznámky indikuje symbol lístku v oušku panelu
+Mozilla dále hlásí, že:
+mnohé soubory PDF se načítají rychleji díky hardwarové akceleraci,
+prohlížeč automaticky zablokuje oznámení a zruší oprávnění přidělená webům, které služba Safe Browsing označí za škodlivé,
+na navigační lištu lze přidat tlačítko pro sdílení stránky,
+překladač podporuje bosenský, norský bokmål, srbský a thajský jazyk a zlepšuje překládání chorvatštiny,
+HTTP/3 lépe zvládá odesílání na nestabilních připojeních,
+nový panel s informacemi o důvěryhodnosti stránky kombinuje údaje o zabezpečení a o soukromí.
+Pokračování 3 / 54 Lid na AI vytáhl vidle, a tak Firefox 148 přináší tlačítko, které ji vypne
+Oživeno 24. 2. 2026 | Mozilla se AI nevyhýbá a před koncem loňského roku to potvrdil Anthony Enzor-DeMeo, nový ředitel organizace. Vyvolal tím vlnu nevole, po které vývojový tým přislíbil, že do Firefoxu implementuje přepínač pro vypnutí AI funkcí . Přináší ho Firefox 148 .
+V nastavení prohlížeče má svébytnou sekci AI a hned v úvodu spatříte příkaz Blokovat vylepšení pomocí AI . Když ho označíte, veškeré funkce využívající AI se vypnou. Můžete je také spravovat zvlášť:
+překládání,
+generování popisků obrázků v souborech PDF,
+návrhy na seskupení panelů,
+klíčové body v náhledech odkazů,
+chatboty v postranním panelu.
+Firefox má teď tlačítko, které kompletně vypne AI
+Enzor-DeMeo v prosinci uvedl, že se Firefox stane moderním AI prohlížečem . Deklaroval také nutnost budování důvěry s tím, že AI musí být vždycky volitelná. Lidé musí mít možnost ji vypnout.
+Hysterie ohledně proměny Firefoxu v AI prohlížeč proto nebyla na místě. Stejně tak nebylo na místě pohoršení nad tím, že Mozilla začne do Firefoxu implementovat AI. Tyto reakce musely pocházet od lidí, kteří prohlížeč s pandou červenou nepoužívají. Jinak by věděli, že Firefox AI funkce dávno nabízí – stačí si projít starší verze v tomto článku.
+Je nicméně správné, že Firefox získává centrální správu AI. Díky tomu ji můžete vypnout s jistotou, že jste nic nepřehlédli. Mozilla zavedením ukázala, že naslouchá zpětné vazbě své uživatelské základny. To by měla, pokud nechce její část ztratit. Už tak je podíl Firefoxu malý (a stále se tenčí ).
+Zpátky k Firefoxu 148. Přináší i následující drobná vylepšení:
+Čtečky obrazovky by od této verze měly lépe číst matematické vzorce v souborech PDF.
+Vylepšení, která se mohou použít bez instalace nové verze, se dají aktivovat i bez zapnutého sběru telemetrie. (V češtině jde o funkci Povolit Firefoxu vylepšovat funkce, výkon a stabilitu mezi aktualizacemi .)
+Tento typ vylepšení už není závislý na telemetrii
+Tapety se zobrazí i v kontejnerových a nových výchozích panelech.,
+Zálohovací mechanismus je nyní k dispozici také v instalacích ve Windows 10, kde je nastavené mazání dat při ukončení prohlížeče. Data určená ke smazání se zálohovat nebudou.
+Pokračování 4 / 54 Firefox 145 posiluje ochranu proti fingerprintingu. Čtečka PDF podporuje práci s komentáři
+Oživeno 12. 11. 2025 | Firefox 145 zlepšuje ochranu proti fingerprintingu . To je způsob, jak webové platformy identifikují konkrétní uživatele a uživatelky, což využívají pro cílení reklam. Mozilla se chlubí tím, že má nejpokročilejší ochranu. Není ale standardně aktivní ve všech instalacích.
+Zatím ji nasazuje pouze v anonymním režimu a v přísném režimu Rozšířené ochrany proti sledování . Díky novým opatřením se přibližný počet uživatelek a uživatelů, kteří se webům jeví jako unikátní, snižuje na zhruba 20 %. Bez ochrany je to kolem 60 % a s dosavadní ochranou to bylo zhruba 35 %, tvrdí Mozilla.
+Procento unikátních uživatelů, které vnímají weby, se díky ochraně snižuje
+Lepších výsledků z pohledu ochrany soukromí prohlížeč dosahuje posílením obrany písem, jejichž prostřednictvím se weby mohly dozvědět detaily o počítači – počet jader procesoru, počet současně rozpoznaných doteků displeje a rozměry hlavního panelu či docku. Ochranu proti fingerprintingu je disciplína náročná na vyvažování. Agresivnější ochrana totiž může rozbít funkce webů.
+Seznam dalších novinek je nabitý, ale často jde o maličkosti:
+Rozšířená ochrana proti sledování dále lépe chrání před sledováním založeným na přesměrování.
+Přísna ochrana proti sledování posiluje
+Čtečka PDF podporuje přidávání, úpravu a mazání komentářů. Všechny komentáře a poznámky si prohlédnete v postranní liště.
+Když ukazatel myši přesunete nad skupinu panelů, vysune se stručný přehled obsažených stránek.
+Správu hesel si můžete přidat do postranního panelu.
+Firefox přidává kopírování odkazů vedoucích ke zvýrazněnému textu na stránce. Označte slovo a v kontextové nabídce klepněte na Zkopírovat odkaz na zvýraznění .
+Překládání je kvalitnější mezi jazyky s odlišnými směry psaní.
+Novou kartu můžete vytapetovat novými obrázky, které přichází ve verzích pro světlý i tmavý režim.
+Mozilla vytvořila pár nových tapet s motivem Firefoxu
+V nastavení prohlížeče najdete novou předvolbu, díky které se nové panely z aplikací otevírají hned vedle aktuální stránky.
+Horizontální panely se zakulatily, aby odpovídaly podobě vertikálních panelů. Pro zlepšení konzistence byly mírně upraveny i další prvky uživatelského rozhraní.
+Ve většině instalací Firefoxu ve Windows byl zástupce na ploše nahrazen spouštěčem . Je to malý program, který spustí Firefox, pokud ho detekuje. V opačném případě vám nabídne instalaci. Mozilla tak chce usnadnit migraci na nový počítač v případech, kdy např. OneDrive synchronizuje obsah plochy. Nabídne tak i zástupce programu, který na novém počítači není nainstalovaný.
+Zástupce vymění malý program na spouštění Firefoxu
+Lokální modely používané pro překládání webů jsou efektivněji komprimované. Zaberou méně místa na úložišti a stažení je méně datově náročné.
+Pokud nemáte nainstalovaný ani jeden doplněk, klepnutí na tlačítko pro doplňky vás přesměruje na web Firefox Add-ons
+Firefox ve výchozím nastavení lépe podporuje autonomní AI. Agenty tak méně často selžou při plnění úloh. Detaily neznáme.
+Kontejner Matr...
+(Pokracovani na webu)|E|
+|T|Recenze telefonu Oppo Find X9 Ultra. Topmodel s dlouhým pohledem a duší fotografa|D|27.04.2026 10:15|P|Se smartphony, které mají v názvu „Ultra“, se roztrhl pytel, a to i v Evropě • Otestovali jsme fotograficky laděný model Oppo Find X9 Ultra • Je zaměř...|X|Variabilní fotoaparát, 10× zoom
+Velká křemíková baterie
+Povedený design, výkon na rozdávání
+Dlouhá softwarová podpora
+144Hz režim displeje se moc nepoužívá
+Hodně předinstalovaného bloatwaru
+Obří fotomodul na zádech
+Vyšší pořizovací cena
+Vloni to nevyšlo, letos už ano. Oppo již na veletrhu MWC avizovalo, že letošní topmodel Find X9 Ultra zamíří do Evropy, a díky podobně smýšlející konkurenci toto rozhodnutí nemohlo přijít v lepší čas. Novinka cílí především na fotograficky zaměřené uživatele, kteří chtějí při cestování nechat zrcadlovku doma a vše svěřit telefonu. A právě u tohoto testovaného modelu získáte natolik variabilní sadu fotoaparátů, že se na ni můžete ve většině situací plně spolehnout.
+Oppo Find X9 Ultra jsme otestovali v oranžové barevné variantě
+Hlavní lákadlo představuje unikátní teleobjektiv s desetinásobným optickým zoomem a netradiční konstrukcí, která se vešla do robustního fotomodulu. Ten ukrývá i dva 200Mpx fotoaparáty a 50Mpx širokáč. Oppo Find X9 Ultra sice podporuje přídavný telekonvertor, ale i mimo focení a profesionální natáčení videí (u obou je patrná spolupráce s legendární firmou Hasselblad) je to topmodel každým coulem. Má povedený displej, solidní zvukovou stránku a vysoký výkon s dostatečnou rezervou. V neposlední řadě dostanete odolný telefon, který již na první pohled působí velmi atraktivně.
+Trochu kazí dojem jedině masivní vystupující fotomodul, s nímž je však třeba počítat. Je to daň za použité fotoaparáty, které mezi konkurenčními telefony, vyjma značek Xiaomi a Vivo, prakticky nemají přímou konkurenci. Některé prvky telefonu jsou sice inspirovány Applem, celek ale funguje velmi dobře. Prostředí s Androidem 16 je dostatečně svižné a po odstranění zbytečného bloatwaru jej lze směle srovnávat s konkurencí. Určitou překážkou ale může být pořizovací cena, která narostla nebývale vysoko.
+Kompletní testy jsou na MobilManii přístupné jen předplatitelům. Tento článek pro všechny čtenáře odemkla společnost Oppo.
+Pokračování 2 / 8
+Design
+Oranžová vypadá stále neokoukaně. Oppo Find X9 Ultra je pořádný velikán. Jedná se o opravdu velký telefon s rozměry 163 × 77 × 8,65 mm. Zajímavostí je, že v námi testované oranžové barvě (Canyon Orange) je telefon tenčí než u druhého odstínu Tundra Umber, jehož záda pokrývá umělá kůže. Oranžová verze je tak na jednu stranu o zanedbatelný gram lehčí, zato ji však v některých krytech musíte „vycpat“ doplňkovou nálepkou.
+Dominantou zad je hlavně obrovský fotomodul. Při pohledu z boku můžete vidět, jak výrazně vystupuje, i boční akční tlačítko
+Zmiňovaná oranžová se nicméně povedla a hned vás zaujme. Boky telefonu jsou hliníkové a oranžová prostupuje úplně vším – od bočních tlačítek až po záda. Stačí je natočit proti světlu a ihned uvidíte jemný přiznaný vzor, který však ze zad z plastu vyztuženého skelnými vlákny nijak nevystupuje. Čeho si všimnete okamžitě, je obrovský fotomodul se čtyřmi objektivy. Jeden z nich je přitom zcela unikátní: jde o teleobjektiv s desetinásobným optickým přiblížením – to se u mobilů dnes jen tak nevidí.
+Součástí fotomodulu jsou čtyři fotoaparáty. Nad okolní povrch vystupuje velmi výrazně
+Právě ten patří k největším přednostem telefonu – na druhou stranu tvrzení, že se „vešel do těla“, je trochu přehnané. Fotomodul je totiž extrémně velký a z těla výrazně vystupuje. Oppo jej obklopilo vroubkováním, které však nezačíná hned u zadního krytu, opticky tak má zmírnit dojem mohutnosti modulu. V realitě je ale telefon v nejširším místě přes fotomodul téměř dvojnásobně silnější než u zbytku těla. Už jen proto by výrobci měli ve specifikacích uvádět třetí rozměr v nejširším místě. Situace se už téměř vymkla kontrole.
+Na pravém boku telefonu najdete dobře ovladatelné regulátory hlasitosti a zamykací klávesu
+Při držení telefonu mám prsty přirozeně o něco výše a tentokrát je musíte zapřít přímo pod objektivem. Naštěstí je telefon dobře vyvážený. Sice se může zdát, že se při držení snadno překlopí, ale jde jen o dojem. V reálu sedí v ruce pevně a jistě, škoda jen velké hmotnosti. Zvyknete si na ní, ale při změně telefonu vám hned dojde, jak byl telefon vlastně těžký. Díky velkému displeji s úhlopříčkou 6,82" však počítejte s tím, že jednoruční ovládání bude poněkud omezené. Palcem pohodlně dosáhnete tak akorát na zamykací tlačítko a na část displeje, na regulátory hlasitosti už se budete natahovat. Stisk tlačítek je přitom relativně jistý.
+Pohled na spodní hranu a rovnou část zad
+Prohlídka pravé strany odhalí rychlé tlačítko s vibrační odezvou pro spuštění fotoaparátu, které zároveň slouží jako spoušť. Při focení na výšku je k palci blíže než v režimu na šířku. Zde telefon trpí stejnou slabinou jako Camera Control u iPhonů – tento ovládací prvek by ideálně měl být umístěn blíže ke spodní hraně. Na druhém boku telefonu se nachází akční tlačítko Snap Key, jemuž lze přiřadit na podržení libovolnou funkci. Škoda, že to nejde i na stisknutí či na dvojnásobné stisknutí
+Toto je obsah doplňkové sady s krytem a telekonvertorem
+Například aktivaci tichého režimu, režimu Nerušit, překladač nebo spuštění fotoaparátu. Zamykací tlačítko jej dvojklikem spustit neumí, lze však nastavit rychlé spuštění dvojitým stiskem regulátorů hlasitosti a akční klávesu ponechat jiné aplikaci. Spodní hrana je vyhrazena konektoru USB-C, dvojici mikrofonů a hlavnímu reproduktoru, který v režimu stereo spolupracuje se sluchátkem s výdechem na horní hraně.
+Jak vypadá fotografický komplet pro zoomování
+Do šuplíčku lze najednou vložit dvě nano SIM karty, v systému však můžete počítat i s podporou eSIM. Na horní hraně nechybí ani infračervený port pro ovládání domácí elektroniky. Důležitá je také zvýšená odolnost a vyztužení těla (tzv. Armor Shield Architecture) pro případ náhodných pádů. Telefon splňuje odolnostní normy IP66, IP68 a IP69.
+V základní krabici tentokrát postrádáme přibalený ochranný kryt
+V základní krabici trochu překvapivě chybí alespoň základní kryt, na nějž jsme u čínských značek zvyklí. Na druhou stranu přibalená redukce z USB-C na USB-A nebývá u konkurence standardem, hodí se například pro připojení externího disku při natáčení v režimu O-Log2. Součástí balení je dále USB-C kabel a stručné uživatelské příručky.
+Pokračování 3 / 8
+Displej
+Povedený 144Hz displej. Zobrazování zajišťuje špičkový 6,82" displej ProXDR OLED s rozlišením QHD+. Ve výchozím nastavení je však kvůli úspoře baterie aktivní nižší rozlišení. Při přepnutí na vyšší rozlišení telefon upozorní na možné větší zahřívání a vyšší spotřebu baterie. Žádné zásadní dopady jsme však nepozorovali. Displej disponuje adaptivní obnovovací frekvencí 1 – 144 Hz a díky minimálnímu jasu 1 nitu vás v noci nebude oslňovat. Na přímém slunci naopak oceníte až tabulkových 1 800 nitů, při nichž displej zůstává bez problémů čitelný.
+Displej má úhlopříčku 6,82 palce a až 144Hz obnovovací frekvenci
+O jas se stará automatika, která volí typicky o něco nižší hodnoty, než na jaké jsme běžně zvyklí. Stačí ji však několikrát ručně upravit přes horní lištu a rychle se přizpůsobí vašim preferencím. Potěší podpora 10bitových barev i vysoká frekvence PWM modulace (2 160 Hz) pro korekci jasu, což ocení především uživatelé citliví na blikání displeje. Displej je certifikován pro HDR, HDR10+, Dolby Vision a HDR Vivid. S celkovou zobrazovací kvalitou budete maximálně spokojeni.
+Naměřené parametry displeje:
+- Minimální a maximální jas displeje: 0,95/1397 nitů (auto)/ 774 nitů (manuál)
+- Gamma: 2,18 (norma 2,2)
+- Průměrná a maximální barevná odchylka (ΔE): 5,70/9,38
+Naměřené barevné odchylky jsou trochu vyšší a týkají se režimu Živý, který má velmi blízko k barevnému prostoru DCI-P3. Živý a Přirozený režim má teplotu bílé okolo 7600K, můžete ji však nastavit na teplejší (7140K) nebo ještě na studenější podobu (8060 K). U Standardního režimu má bílá teplotu 7200K, studená 6800K a teplá pak 7600K.
+Barevný prostor Standardního a Přirozeného režimu displeje vzhledem ke standardu sRGB (první řádek), barevný prostor Živého režimu displeje vzhledem k DCI-P3
+Telefon má v základu aktivovaný režim Standardní, který společně s Přirozeným režimem na úkol červené vylepšuje modrou a zelenou. Rozdíly v barvách jsou minimálně. U Živého režimu zase vidíme velký důraz na modrou, kvůli které je lehce omezená zelená a výrazněji pak červená.
+Obnovovací frekvence je adaptivní a její chování v jednotlivých aplikacích si snadno ověříte v nastavení – stačí zvolit maximální frekvenci a podívat se na přiřazené hodnoty. Ty lze samozřejmě upravit podle vlastních potřeb. Režim 144 Hz je nicméně využit jen u několika her, přičemž běžné maximum zůstává na 120 Hz. Oppo tak plný potenciál 144Hz displeje nevyužívá a navíc při adaptivním přepínání některé režimy zcela chybějí. Je to tak převážně spíše marketingový prvek, a to je velká škoda.
+Součástí displeje je průstřel pro selfie, ovladače systému hledejte ve spodní liště. Zpětná šipka může být i vpravo
+Systém nabízí tři barevné režimy – Standardní, Přirozený a Živý. Ve výchozím stavu je aktivní Standardní, který má hodně blízko k Přirozenému. Vlastně by zde místo nich stačil jen jeden. U všech režimů lze dále upravovat barevnou teplotu. Barvy je možné přizpůsobovat okolnímu osvětlení a režim pro ochranu zraku se hodí zejména za šera a v noci. Přehled dalších certifikací displeje najdete přímo v nastavení telefonu, rozhodně toho není málo.
+Na displeji je od výroby nalepena základní ochranná fólie. Ultrazvuková čtečka otisků prstů může mít o různé animace. V displeji je umístěna „tak akorát“ a funguje na první přiložení
+Displej kryje odolné sklo Gorilla Glass Victus 2 a z výroby je chráněn předinstalovanou fólií, která má podle očekávání jen základní odolnost vůči škrábancům. K telefonu jsem se choval jako v bavlnce, ale přesto je na fólii asi pětice hlubších škrábanců. Jak k tomu telefon přenášený v kapse, netuším.
+Displejové režimy, rozlišení obrazovky a spousta funkcí pro ochranu zraku
+Součástí displeje je 50Mpx selfie kamera s automatickým ostřením a ultrazvuková čtečka otisků prstů, se kterou jsem neměl jediný p...
+(Pokracovani na webu)|E|
+|T|Prusa Research spustil předprodej toolchangeru INDX pro Core One. Čtyřmateriálový 3D tisk přijde na 16 tisíc|D|27.04.2026 09:58|P|Loni na podzim Prusa Research poprvé ukázal nový systém multimateriálového 3D tisku INDX. Vyvíjí je společně se švédským Bondtechem a ten také na přel...|X|Loni na podzim Prusa Research poprvé ukázal nový systém multimateriálového 3D tisku INDX. Vyvíjí je společně se švédským Bondtechem a ten také na přelomu roku spustil předprodej první várky Founders pro nejméně trpělivé fanoušky.
+V Holešovicích si dali na čas, ten ale nemarnili a INDX dále vylepšovali. Není divu, má to být totiž přesně ta „zázračná“ věc, pomocí které budou čelit sílícímu tlaku Číny na poli desktopového 3D tisku.
+Čtyřtryskový upgrade za 15 990 korun
+Na sklonku minulého týdne fabrika z pražských Holešovic konečně spustila předprodej vlastní konverzní sady pro vlajkovou loď Core One/+. První kusy by měly dorazit k tiskařům během letošního června.
+Upgrade s automatickým měničem čtyř trysek vyjde v předprodeji na 16 tisíc korun, osmitrysková varianta pak na 22 tisíc.
+Core One+ s upgradem na čtyřtryskový INDX
+Ceny nám od podzimu poněkud poskočily vzhůru, Prusa Research to nicméně vysvětluje obecným zdražováním komponent a výrobou v EU.
+Plnohodnotný toolchanger
+Na rozdíl od automatických výměníků strun MMU nebo AMS od Bambu Labu se v případě INDX jedná o plnohodnotný toolchanger, který se v základní koncepci podobá třeba stroji Prusa XL.
+To v praxi znamená, že extruder si automaticky vyzvedne nástroj s již zavedenou tiskovou strunou ze zásobníku a velmi rychle uvede jeho trysku do provozní teploty pomocí indukčního zahřívání. Rychlé je i chlazení, odpadl totiž masivní blok kovu, který akumuluje teplo.
+Řez tiskovým nástrojem
+INDX proto řeší dva základní neduhy prostých automatických měničů, které ale používají jednu trysku. Zaprvé, změna barvy bude mnohem rychlejší a za druhé, stejně jako na XL se otevírá cesta pro opravdu multimateriálový tisk, kdy se každá hmota tiskne s odlišnou teplotou, aniž by bylo třeba čekat na zdlouhavou úpravu teploty.
+13 miligramů odpadu
+INDX znamená ve světě Prusa Research změnu celé koncepce, tisková hlava – extruder – totiž vypadá a funguje diametrálně odlišně než dosavadní Nextruder. Přináší i některé nové vychytávky. Třeba automatické nastavení přítlaku, a tak by snad konečně mohlo odpadnout jeho ladění pro různě tvrdé filamenty pomocí otáček šroubu.
+Prusa Research se chlubí, že jedna změna vyprodukuje odpad o objemu zrnka rýže
+Druhou specialitou je pak minimum odpadu při čištění během změny trysky. Prusa Research se chlubí, že při výměně filamentu tryska vytlačí jen kapičku plastu o hmotnosti 13 miligramů do nového silikonového sběrače.
+Dosavadní čištění pomocí tisku tzv. čistících věží přímo na plátu vedlo třeba při stovkách změn často k tomu, že v extrémních případech se mohlo spotřebovat více materiálu na samotné čištění než na model, což dramaticky prodražilo barevný tisk jako takový.
+Dočkají se i majitelé větších strojů Core One L
+Později v průběhu roku se pak dočkají také majitelé rozměrnějších krabic Core One L. Nasazení INDX ubere z tiskového objemu 2 mm v ose X a 15 mm v ose Y.
+Zatímco u Core One to už může být v některých scénářích limitující, Elko má tiskový objem 300×300×330 mm (oproti 250 × 220 × 270 mm u základní verzi), úbytek 15 mm tedy nebude tak drastický.|E|
+|T|Studie tvrdí, že ovoce a zelenina zvyšují riziko rakoviny plic. Odborníci však upozorňují na zásadní chyby|D|27.04.2026 09:45|P|Nerecenzovaná studie tvrdí, že ovoce a zelenina zvyšují riziko rakoviny plic • Odborníci kritizují chybějící kontrolní skupinu i zcela nepodloženou hy...|X|Titulek o tom, že ovoce a zelenina způsobují rakovinu, působí jako aprílový žert, jenže tentokrát se opírá o reálný, byť metodologicky problematický výzkum z University of Southern California. Výsledky studie, které autoři zatím představili pouze na konferenci AACR Annual Meeting 2026, neprošly standardním recenzním řízením a zatím nevyšly v žádném vědeckém časopise. Přesto vyvolaly vlnu pozornosti, protože jdou proti desítkám let výživových doporučení.
+Způsobují ovoce a zelenina rakovinu?
+Studie naznačila možnou souvislost mezi konzumací ovoce, zeleniny a celozrnných obilovin a zvýšeným rizikem rakoviny plic. Tým pod vedením Jorgeho Nievy vyslovil hypotézu, že za tímto překvapivým zjištěním u mladých nekuřáků stojí pesticidy. Má to znamenat, že bychom se měli začít obávat potravin, které jsme dosud považovali za zdravé?
+Máme se bát ovoce a zeleniny
+Autoři analyzovali 187 pacientů mladších 50 let s rakovinou plic, většinou nekuřáků, z nichž 166 poskytlo údaje o svém stravování. Vědci pro hodnocení použili Healthy Eating Index (HEI), kde účastníci dosáhli průměrného skóre 65 ze 100, zatímco celostátní průměr je 57.
+Zkoumaní jedinci jedli více ovoce, zeleniny a celozrnných potravin než běžná populace. Právě z toho autoři vědecké práce odvodili hypotézu, že by roli mohly hrát pesticidy. Jenže to je čirá spekulace. Mezi „zajímavým pozorováním“ a „příčinou nemoci“ zeje propast, kterou práce nijak nepřeklenula.
+Hypotéza není podložená daty
+Problém je, že tuto hypotézu nepodkládají žádná přímá data. Badatelé totiž vůbec neměřili reálné hladiny chemikálií v potravinách ani v krvi nemocných. Pouze plošně odhadli pravděpodobnou expozici podle dat z jiných databází.
+Odborníci nad touto studií okamžitě zdvihli varovný prst a její závěry označili za nedostatečně podložené. Zmíněná analýza totiž zkoumala jen drobný vzorek mladých pacientů s rakovinou a postrádala jakoukoli kontrolní skupinu zdravých jedinců.
+Jak suše poznamenal statistik Baptiste Leurent, zjištění pravděpodobně jen odráží fakt, že mladší lidé a nekuřáci prostě jedí zdravěji než běžná populace. Vidíme tu ukázkovou záměnu korelace a kauzality, kdy práce našla statistickou souvislost, ale v žádném případě neprokázala příčinu a následek.
+Není důvod vyhýbat se ovoci a zelenině
+Kritika odborníků je v tomto případě mimořádně ostrá a oprávněná. Mimo jiné i proto, že jde o takzvaný retrospektivní přístup – vědci se dívají na pacienty zpětně, což ztěžuje odlišení příčiny od pouhé shody okolností či statistického šumu. Informace o stravě autoři získali z dotazníků o stravě a chování.
+Pokud se tedy začnete vyhýbat ovoci a zelenině z obavy před postřiky, uděláte svému tělu medvědí službu, protože reálné benefity této stravy dalece převažují jakákoli teoretická rizika. Rozsáhlé a dlouhodobé studie jasně potvrzují pravý opak.
+Vyšší příjem rostlinné stravy prokazatelně snižuje rizika srdečních chorob, mrtvice i mnoha běžných typů rakoviny. Proto doporučujeme zachovat chladnou hlavu a nenechat se zviklat jedním odbytým výzkumem. Pokud budete důsledně dbát na omývání plodů vodou, výrazně tím snížíte případná rizika a uděláte pro své zdraví maximum.|E|
 |T|Populární textový editor z Windows vyšel i na macOS. Notepad++ to ale bude mít těžké|D|27.04.2026 08:45|P|Vyšel Notepad++ for Mac, ale nestojí za ním původní autor Notepadu++. • Aplikace přinesla všechny funkce z Windows, podporuje i pluginy. • Existuje vš...|X|Už 23 let na Windows vychází textový editor Notepad++. Nedávno si prošel menším skandálem s napadenými aktualizačními servery, ale jinak je to stabilní a oblíbený software pro všechny, kterým nestačí standardní Poznámkový blok (aka Notepad), ale zároveň nechtějí kompletní vývojářské IDE. Od dubna už Notepad++ vychází i na macOS, ke stažení je zde.
 Nutno podotknout, že za editorem nestojí původní autor Don Ho. Projekt spravuje Andrey Letov, který portoval zdrojové kódy na novou platformu. Běží nativně na Intelu i Apple Siliconu a vyžaduje macOS 11 a novější.
 Notepad++ for Mac

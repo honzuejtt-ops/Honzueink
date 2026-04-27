@@ -1,0 +1,10 @@
+Microsoft mění fungování programu Windows Insider a zavádí přehlednější strukturu testovacích verzí. Úpravy se týkají jak samotného rozdělení buildů, tak toho, jak se k uživatelům dostávají nové funkce. Směr je zřejmý. Zrychlit testování a oddělit experimenty od stabilnějších větví.
+Nové rozdělení: Experimental a Beta
+Microsoft v první řadě výrazně zjednodušuje model s mnoha testovacími kanály. Hlavní novinkou je větev označená jako Experimental. Ta slouží pro rychlé testovací experimenty bez jistoty, že se někdy objeví ve finální verzi Windows. Buildy v této větvi mohou obsahovat nedokončené nebo jen dočasné funkce a počítá se s tím, že nebudou vždy stabilní.
+Vedle ní zůstává kanál Beta, který je kompromisem mezi použitelností a novými funkcemi. Ty jsou blíž k finálnímu vydání, ale stále se ladí na základě zpětné vazby. Původní kanály Dev a Canary v této podobě končí a nahrazuje je jasnější rozdělení mezi experimentální a předprodukční verze.
+Mění se i způsob, jakým se novinky distribuují. Už nebudou pevně svázané s konkrétními buildy systému. Microsoft dál rozvíjí model postupného zapínání funkcí na straně serveru. V praxi to znamená, že dva uživatelé se stejnou verzí systému mohou mít k dispozici jinou sadu funkcí. Ty navíc bude možné pomocí běžných přepínačů vypínat či zapínat v nastavení programu Windows Insider.
+Microsoftu to umožňuje přesněji testovat jednotlivé změny a rychleji reagovat na problémy bez nutnosti vydávat nový build.
+Nové místo pro dokumentaci změn
+S reorganizací souvisí i přesun dokumentace pro nové buildy. Informace o verzích a změnách se sjednocují na nové platformě Windows Insider Program Documentation Hub, která má novinky zpřehlednit. Klasické release notes tak přestávají být jediným místem, kde hledat přehled změn.
+Pro testery změny znamenají především jednodušší a přehlednější strukturu programu. Kdo chce mít k dispozici nové funkce co nejrychleji a nebojí se testovat nedokončené nástroje, zapne si větev Experimental. Naopak uživatelé, kteří chtějí stabilnější systém s dostupnými novinkami, budou směřovat do kanálu Beta.
+Zdroj: Microsoft

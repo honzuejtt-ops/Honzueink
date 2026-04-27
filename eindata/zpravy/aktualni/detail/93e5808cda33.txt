@@ -1,0 +1,10 @@
+Článek
+Podle samotné společnosti má novinka ambici posunout laťku otevřených modelů zase o něco výš. V testech zaměřených na obecné znalosti údajně překonává ostatní open-source konkurenty. Jediným výraznějším soupeřem zůstává uzavřený model Gemini-Pro-3.1 od Googlu, který však není veřejně přístupný.
+Nový model se má objevit i v odlehčené variantě označené jako „flash“. Aktuálně dostupné testovací verze mají firmě posloužit především k získání zpětné vazby od uživatelů a k dalšímu ladění systému.
+Termín uvedení finální verze zatím oznámen nebyl. Stejně jako předchozí generace zůstává i V4 otevřeným řešením, takže vývojáři mohou pracovat přímo s jeho kódem, upravovat ho a spouštět na vlastních zařízeních.
+Důraz na cenovou dostupnost
+Za projektem stojí investiční fond Zhejiang High-Flyer Asset Management, jehož spoluzakladatel Liang Wen-feng startup založil v roce 2023. Firma se tak během krátké doby dokázala zařadit mezi sledované hráče na poli AI.
+Značný ohlas vyvolal už dřívější chatbot R1, který zaujal kombinací výkonu a nižších nákladů. Přestože Čína čelí omezenému přístupu k mezinárodním talentům i špičkovým čipům, model dokázal konkurovat americkým řešením. Následné verze ale podle analytiků už tak výrazný náskok nepřinesly.
+Načasování představení nové verze přichází v citlivém období. Krátce předtím totiž Bílý dům obvinil Čínu z rozsáhlého zneužívání duševního vlastnictví amerických AI firem. Napětí by mohlo ovlivnit i vztahy mezi oběma zeměmi před plánovaným setkáním jejich prezidentů, jak upozornila agentura Reuters.
+Samotný DeepSeek se ocitl v centru pozornosti i kvůli podezření, že při vývoji využíval pokročilé čipy od Nvidie, jejichž export do Číny podléhá omezením. Vedle toho zazněla i obvinění ze strany OpenAI a Anthropicu, že firma mohla neoprávněně čerpat z jejich neveřejných modelů. DeepSeek sice přiznal využití čipů Nvidie, otázku případného porušení exportních pravidel však nekomentoval.
+Nový model má být zároveň optimalizován pro technologii čínské společnosti Huawei, konkrétně pro její čipy řady Ascend AI. Ty hrají klíčovou roli ve snaze Číny snížit závislost na amerických polovodičích.

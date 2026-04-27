@@ -1,0 +1,20 @@
+Loni na podzim Prusa Research poprvé ukázal nový systém multimateriálového 3D tisku INDX. Vyvíjí je společně se švédským Bondtechem a ten také na přelomu roku spustil předprodej první várky Founders pro nejméně trpělivé fanoušky.
+V Holešovicích si dali na čas, ten ale nemarnili a INDX dále vylepšovali. Není divu, má to být totiž přesně ta „zázračná“ věc, pomocí které budou čelit sílícímu tlaku Číny na poli desktopového 3D tisku.
+Čtyřtryskový upgrade za 15 990 korun
+Na sklonku minulého týdne fabrika z pražských Holešovic konečně spustila předprodej vlastní konverzní sady pro vlajkovou loď Core One/+. První kusy by měly dorazit k tiskařům během letošního června.
+Upgrade s automatickým měničem čtyř trysek vyjde v předprodeji na 16 tisíc korun, osmitrysková varianta pak na 22 tisíc.
+Core One+ s upgradem na čtyřtryskový INDX
+Ceny nám od podzimu poněkud poskočily vzhůru, Prusa Research to nicméně vysvětluje obecným zdražováním komponent a výrobou v EU.
+Plnohodnotný toolchanger
+Na rozdíl od automatických výměníků strun MMU nebo AMS od Bambu Labu se v případě INDX jedná o plnohodnotný toolchanger, který se v základní koncepci podobá třeba stroji Prusa XL.
+To v praxi znamená, že extruder si automaticky vyzvedne nástroj s již zavedenou tiskovou strunou ze zásobníku a velmi rychle uvede jeho trysku do provozní teploty pomocí indukčního zahřívání. Rychlé je i chlazení, odpadl totiž masivní blok kovu, který akumuluje teplo.
+Řez tiskovým nástrojem
+INDX proto řeší dva základní neduhy prostých automatických měničů, které ale používají jednu trysku. Zaprvé, změna barvy bude mnohem rychlejší a za druhé, stejně jako na XL se otevírá cesta pro opravdu multimateriálový tisk, kdy se každá hmota tiskne s odlišnou teplotou, aniž by bylo třeba čekat na zdlouhavou úpravu teploty.
+13 miligramů odpadu
+INDX znamená ve světě Prusa Research změnu celé koncepce, tisková hlava – extruder – totiž vypadá a funguje diametrálně odlišně než dosavadní Nextruder. Přináší i některé nové vychytávky. Třeba automatické nastavení přítlaku, a tak by snad konečně mohlo odpadnout jeho ladění pro různě tvrdé filamenty pomocí otáček šroubu.
+Prusa Research se chlubí, že jedna změna vyprodukuje odpad o objemu zrnka rýže
+Druhou specialitou je pak minimum odpadu při čištění během změny trysky. Prusa Research se chlubí, že při výměně filamentu tryska vytlačí jen kapičku plastu o hmotnosti 13 miligramů do nového silikonového sběrače.
+Dosavadní čištění pomocí tisku tzv. čistících věží přímo na plátu vedlo třeba při stovkách změn často k tomu, že v extrémních případech se mohlo spotřebovat více materiálu na samotné čištění než na model, což dramaticky prodražilo barevný tisk jako takový.
+Dočkají se i majitelé větších strojů Core One L
+Později v průběhu roku se pak dočkají také majitelé rozměrnějších krabic Core One L. Nasazení INDX ubere z tiskového objemu 2 mm v ose X a 15 mm v ose Y.
+Zatímco u Core One to už může být v některých scénářích limitující, Elko má tiskový objem 300×300×330 mm (oproti 250 × 220 × 270 mm u základní verzi), úbytek 15 mm tedy nebude tak drastický.

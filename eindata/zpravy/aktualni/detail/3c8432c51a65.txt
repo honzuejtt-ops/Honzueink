@@ -1,0 +1,66 @@
+Nejčastějším mobilním malwarem zůstal v březnu na platformě Android trojský kůň Hiddad s funkcemi adwaru (reklamního malwaru). Podobně jako v předchozích měsících se v čele pravidelné statistiky i v březnu udržel škodlivý kód Agent.FNM. Podle posledních informací bezpečnostních expertů mohou útočníci jeho pomocí napadnout nejen samotný chytrý telefon, ale také celou síť, ke které se připojuje. Vyplývá to z pravidelné analýzy softwarové společnosti ESET.
+Útočníci k šíření trojanu Hiddad využívají falešné verze mobilních her. I když je často mění, aby ztížili své odhalení, v případě trojského koně Hiddad i v březnu vsadili na škodlivou verzi RPG bojové hry Shadow Fight 2. Stále stejná verze škodlivé hry, kterou útočníci využívají k šíření škodlivého kódu, může podle bezpečnostních expertů poukazovat na to, že uživatelé nevěnují tolik pozornosti varovným ukazatelům, nebo hrozbu v podobě adwaru podceňují.
+Právě ale škodlivá reklama může být prvotní fází pro další typy útoků. „Po kliknutí nás mohou útočníci odvést na nebezpečné webové stránky obsahující další škodlivé kódy nebo můžeme rovnou stáhnout již daleko nebezpečnější malware. Kromě toho bychom neměli zapomínat ani na to, že adware mohou útočníci využívat ke sledování našich aktivit na internetu a ze získaných informací připravit další útoky,“ vysvětluje Martin Jirkal, vedoucí analytického týmu v pražské pobočce společnosti ESET.
+Napadený telefon součástí botnetu
+V evropských zemích se v březnu nadále objevoval také škodlivý kód Agent.FNM. Strategií útočníků je maskovat jej za populární streamovací aplikace, jako je Netflix nebo Amazon Prime. V březnu pak útočníci zkoušeli zneužít také jména méně známých služeb, jako jsou StreamFire a SportsFire. Cílem útoku je zneužít zařízení, tedy chytrý mobilní telefon, k útokům na jiné cíle. Útočníci přidají zařízení do takzvaného botnetu –rozsáhlé sítě napadených zařízení („zombies“), kterou ovládají útočníci. Mohou tak získat přístup i k sítím, ke kterým se prostřednictvím telefonu připojujete doma i v práci.
+Oběťmi útoků na Android mohou být často i děti. Rizikem nejsou jen falešné verze zmámých her pro platformu Android, útočníci zneužívají i velmi jednoduché aplikace nebo hry, kde mohou předpokládat, že se k nim dostanou i děti. V březnu to byl případ další varianty škodlivého kódu z rodiny Hiddad, který se maskoval v jednodušší hře Single Line – Drawing Puzzle, ve které musí hráč najednou spojit všechny definované body a nakreslit zadaný tvar bez toho, aby zvedl prst z obrazovky.
+Nejčastější hrozby pro Android – březen 2026
+- Android/Hiddad.BDJ trojan (16,15 %)
+- Android/Agent.FNM trojan (11,57 %)
+- Android/Hiddad.BDM trojan (4,81 %)
+- Android/Andreed trojan (2,05 %)
+- Android/Triada trojan (1,94 %)
+- Android/Spy.Banker.BCX trojan (1,41 %)
+- Android/TrojanDownloader.Agent.BHA trojan (1,28 %)
+- Android/TrojanDropper.Agent.MZU trojan (1,12 %)
+- Android/Spy.Banker.BGB trojan (1,02 %)
+- Android/TrojanDropper.Agent.NAA trojan (1,02 %)
+Zdroj: ESET
+Pokračování 2 / 30
+Únor 2026
+Nejčastějším mobilním malwarem zůstal v únoru na platformě Android trojský kůň Hiddad s funkcemi adwaru, a to včetně stejné falešné verze mobilní hry, jejímž prostřednictvím ho útočníci šířili už v lednu. Rizikem zůstal i škodlivý kód Agent.FNM, který útočníci vydávali za prémiovou verzi oblíbené streamovací služby Netflix. Kromě získání dat z napadených zařízení je cílem tohoto malwaru také zneužití telefonu oběti k dalším útokům. Vyplývá to z pravidelné analýzy softwarové společnosti ESET.
+V únoru zůstal největší kybernetickou hrozbou pro Android v Evropě trojský kůň Hiddad. Útočníci tentokrát nezměnili ani falešnou verzi hry, jejímž prostřednictvím škodlivý kód už od ledna šíří – i v únoru zvolili mobilní hru Shadow Fight 2 a svým obětem se snažili podstrčit její škodlivou verzi obsahující právě zmíněného trojského koně. Kromě mobilních her se trojský kůň opakovaně objevuje i ve falešných aplikacích k editování videí a zobrazování PDF souborů. Všechny tyto aplikace se zpravidla objevují v méně známých marketech třetích stran.
+„Bezplatný“ Netflix jako největší lákadlo
+Oproti minulému měsíci mírně vzrostl počet detekcí škodlivého kódu Agent.FNM, který se od nového roku drží v těsném závěsu za adwarem. Bezpečnostní experti zjistili, že poté, co infikuje zařízení, přidá ho do tzv. botnetu. Cílem útočníků je zneužít vaše zařízení k útokům na jiné cíle. Kromě mobilního telefonu mohou takto získat přístup i k sítím, ke kterým se připojujete, jak doma, tak například v práci. Škodlivý kód útočníci maskují za falešné verze streamovacích služeb. V únoru se nejčastěji jednalo o škodlivou imitaci služby Netflix.
+Také v případě třetího nejčastěji zachyceného únorového škodlivého kódu, trojského koně Triada, vsadili útočníci na populární aplikace, u kterých předpokládají, že je budou uživatelé a uživatelky nejvíce shánět a stahovat. Jednalo se o falešné verze nástrojů určených k práci s audio obsahem.
+Bezpečnostní experti varují, že škodlivý kód nemusí běžní uživatelé a uživatelky v zařízení vůbec odhalit. „První týden po stažení se aplikace chová standardně a nevykazuje žádné škodlivé aktivity. Po uplynutí této doby se ale v zařízení skryje a působí dojmem, že došlo k jejímu smazání. Díky této strategii pak mají útočníci zajištěný přístup k zařízení oběti bez toho, aniž by někdo pojal podezření,“ říká Martin Jirkal, vedoucí analytického týmu v pražské pobočce společnosti ESET.
+Nejčastější hrozby pro Android – únor 2026
+- Android/Hiddad.BDJ trojan (16,91 %)
+- Android/Agent.FNM trojan (12,15 %)
+- Android/Triada trojan (2,34 %)
+- Android/Agent.EQD trojan (2,15 %)
+- Android/Andreed trojan (1,96 %)
+- Android/Hiddad.BDE trojan (1,77 %)
+- Android/Agent.FJL trojan (1,69 %)
+- Android/Spy.SpinOk trojan (1,66 %)
+- Android/Agent.FNP trojan (1,49 %)
+- Android/TrojanDropper.Agent.NAA trojan (1,39 %)
+Zdroj: ESET
+Pokračování 3 / 30
+Leden 2026
+Poté, co byl na konci loňského roku největším rizikem špionážní škodlivý kód Agent.FNM, se v lednu na platformu Android vrátil ve velkém reklamní malware – trojský kůň Hiddad. V kontextu všech zachycených kybernetických hrozeb se objevil v pětině všech případů. Ani malware Agent.FNM však zatím není minulostí. Objevoval se konzistentně během celého měsíce ledna. Vyplývá to z pravidelné analýzy softwarové společnosti ESET.
+Zatímco ještě na konci roku převládal v Evropě špionážní škodlivý kód Agent.FNM, už v lednu ho opět vystřídal adware. V pětině všech zachycených škodlivých kódů se tentokrát totiž objevil trojský kůň Hiddad, který zobrazuje agresivní reklamu, skrývá se v zařízení a dokáže stahovat další hrozby.
+Adware (neboli reklamní malware) ke svému šíření využívá širokou paletu falešných verzí mobilních aplikací a her. Trojský kůň Hiddad se v lednu nejvíce skrýval ve škodlivých verzích hry Shadow Fight 2 a v nástrojích k editování videa či obrázků. Tento škodlivý kód se dokáže v systému Android dobře skrývat a není ho snadné odhalit. Umí sbírat informace o našem chování na internetu a o našem telefonu. Zároveň do zařízení stahuje další malware podle preferencí útočníka.
+Zdrojem malwaru může být i nekvalitní kamera
+Špionážní malware Agent.FNM byl v lednu druhým nejčastějším rizikem, a to konzistentně po celý sledovaný měsíc. V jednotkách procent případů zachytili bezpečnostní experti v lednu také škodlivý kód v mobilní aplikaci pro správu IP kamery. Podle jejich analýzy se sice jednalo o neznámého výrobce, aplikace byla nicméně dostupná v legitimních obchodech.
+„Rád bych zde poukázal ještě na jeden rozměr kyberhrozeb v případě platformy Android, a to jsou nekvalitní výrobky od neznámých značek s připojením k internetu. Pokud je škodlivý kód původem z legitimní aplikace výrobce, svědčí to o tom, že má velmi slabé zabezpečení. Obecně bych proto doporučoval nepořizovat si zařízení neznámých značek, i když by to znamenalo úsporu peněz – v konečném důsledku to za to nestojí,“ říká Martin Jirkal, vedoucí analytického týmu v pražské pobočce společnosti ESET.
+Nejčastější hrozby pro Android – leden 2026
+- Android/Hiddad.BDJ trojan (19,36 %)
+- Android/Agent.FNM trojan (8,67 %)
+- Android/TrojanDownloader.Agent.BEV trojan (3,50 %)
+- Android/Agent.FOA trojan (2,32 %)
+- Android/Andreed trojan (2,11 %)
+- Android/Agent.FNP trojan (2,01 %)
+- Android/TrojanDropper.Agent.NAA trojan (1,20 %)
+- Android/Spy.SpinOk trojan (1,14 %)
+- Android/TrojanDropper.Agent.JHA trojan (1,10 %)
+- Android/Spy.Banker.BGB trojan (1,10 %)
+Zdroj: ESET
+Pokračování 4 / 30
+Prosinec 2025
+Adware (škodlivý reklamní software) už není tím největším rizikem pro chytré telefony. Na konci roku v prosinci 2025 se v čele statistiky softwarových hrozeb pro operační systém Android umístil škodlivý kód s funkcemi spywaru, který ohrožoval zařízení v pětině všech detekovaných případů. Vyplývá to z pravidelné analýzy softwarové společnosti ESET.
+Útočníci šířili špionážní malware (neboli spyware) plošně přes velké množství škodlivých falešných aplikací, přičemž zneužívali hlavně jména známých streamovacích platforem, například Netflix, Spotify či Amazon Prime. Bezpečnostní experti ve výhledu pro rok 2026 proto varují nejen před již známými hrozbami, jako jsou falešné hry ukrývající adware, ale i před zcela novými případy pokročilejšího škodlivého kódu.
+Spyware typu Agent.FNM je nový typ malwaru, který sbírá informace o napadeném mobilním telefonu. Útočníci jeho prostřednictvím dokážou zjistit například výrobce a model zařízení, IP adresu, operátora nebo jaký typ internetového připojení využíváme. Získaná data pak mohou prodávat na černém trhu nebo využívat k přípravě dalších útoků. Spyware dokáže například také zpomalit internet na napadeném zařízení, a to na základě sledování, jak se na internetu chováme.
+Mobilní hrozby v letošním roce
+Bezpečnostní experti opakují důležitost stahování mobilních aplikací z prověřených zdrojů, ideálně z marketů zastřešených vývojáři velkých mobilních systémů. Nejrizikovější jsou z tohoto pohledu méně známé obchody třetích stran nebo různá internetová fóra a úlož...
+(Pokracovani na webu)

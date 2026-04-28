@@ -1,0 +1,14 @@
+Microsoft oznámil několik novinek pro OneDrive. Od května nebude přesouvat soubory do lokálního koše, pokud je smažete prostřednictvím webového rozhraní. Když tedy v prohlížeči odstraníte soubory, tak např. z počítače s Windows zmizí a nenajdete je už v systémovém koši. Pouze v tom cloudovém.
+Pokud ale soubory odstraníte při práci na počítači, do Koše se přesunou. Microsoft změnu chování služby vysvětluje zlepšením výkonu synchronizace a předvídatelností při obnově souborů. Změna bude zavedena postupně a jako první by se měly dočkat firmy a organizace, kde se vztahuje rovněž na SharePoint.
+Insiderská verze OneDrivu pro Windows podporuje synchronizaci až milionu souborů. Počítač ale musí splňovat následující minimální podmínky:
+- Windows 11, případně Windows Server 2022 a novější,
+- 16 GB operační paměti (doporučeno je 32 GB),
+- úložiště typu SSD,
+- procesory Intel i5, Ryzen 5 nebo Snapdragon X Plus a novější.
+Zařízení, která požadavky nesplní, budou moci nadále synchronizovat až 300 tisíc souborů. Tedy, můžete jich mít víc, ale zmíněné číslo představuje garanci spolehlivosti. Vyšší počty mohou působit zpoždění v synchronizaci.
+OneDrive a SharePoint dále přidávají podporu formátu Markdown v prohlížeči. Lokálně soubory upravujete v nástroji, který si zvolíte, ale při práci ve webovém rozhraní se spoléháte na schopnosti cloudové služby.
+OneDrive na webu korektně vykreslí dokumenty v Markdownu a podporuje i editaci
+Dokumenty v Markdownu OneDrive dříve zobrazil, ale nevykreslil správně všechny prvky. Úprava nebyla možná vůbec. Nově OneDrive podporuje režim úpravy a dokumenty správně zobrazí. Editor nabízí dvoupanelové rozhraní, kde vlevo vidíte zdrojový kód a vpravo naformátovaný dokument.
+Mezi režimy si můžete i vybrat a používat jen jeden. Distribuce je řízená a týká se jak spotřebitelského, tak firemního OneDrivu (a SharePointu). V tuto chvíli již možná máte nový editor k dispozici. V opačném případě vyčkejte, zavedení by nemělo trvat dlouho.
+Microsoft dále přepracoval uživatelské prostředí OneDrivu pro macOS. Odráží rozhodnutí Applu zavést vizuální styl Liquid Glass. Nabídky a dialogy tak působí nativně. Změnu zavedlo sestavení 26.017 a v tuto chvíli by již nové prostředí měli mít k dispozici všichni uživatelé a uživatelky macOS 26.
+Původní dialog je vlevo, nová podoba vpravo

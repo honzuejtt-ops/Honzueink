@@ -1,0 +1,49 @@
+Celebrating 20 years of Google Translate: Fun facts, tips and new features to try
+Twenty years ago, Google Translate began with a profound mission to help people understand one another, regardless of the language they speak. In the two decades since, we’ve worked to turn the science of language into the magic of connection. What started as a small experiment is now a global tool that helps people every day, from connecting with new people while traveling to learning a new language to support their career.
+To celebrate two decades of progress, here are 20 things you might not know about Translate and how people are using it around the world.
+1. Translate now has the pronunciation tool you’ve been asking for.
+To celebrate our 20th anniversary of Translate, today we’re launching one of our most requested features: pronunciation practice, so you can master your delivery on the Translate app for Android. You can already tap "ask" and "understand" to provide additional context and receive alternatives, and now you can use the new “pronunciation practice” tool, which uses AI to analyze your speech and provide instant feedback — helping you nail the right pronunciation before you start a real-world conversation. This is now available in the U.S. and India in English, Spanish and Hindi.
+2. We’ve been using AI and machine learning in Translate since the beginning.
+Translate was one of the initial experiments that kickstarted Google’s machine learning work decades ago within Google Research. In 2006, Translate relied on statistical machine learning, and a key part of making more fluent and natural translations was our research into how to maintain much larger-scale and more accurate language models (which capture how often words and short phrases occur) across trillions of words of data.
+In 2016, we pioneered a massive shift to neural networks to move beyond literal word-for-word translations (building on our research on Sequence-to-Sequence models and our initial work on Tensor Processing Units), proving that deep learning could work at a global scale to be truly helpful for people. And today we're using AI, our powerful Gemini models and more recent generations of our Tensor Processing Unit hardware to make Translate even more capable and helpful.
+3. Translate supports 95% of the world’s population.
+Translate works for almost 250 languages and more than 60,000 potential language pairs, including endangered and indigenous languages, ensuring more voices are heard as the world becomes more connected.
+4. More than 1 billion users ask Google for translation help each month.
+Translation is no longer a standalone task; it is now a fundamental part of how people discover and understand information across the web, and communicate with the world around them.
+5. People translate around 1 trillion words every month.
+There’s enough text translated across Translate, Search, Lens and Circle to Search every month to keep someone reading out loud 24/7 for the next 12,000 years.
+6. Your headphones can be your personal translator.
+With Live experiences, Translate can now be your personal translator on any headphones. By preserving the original tone and cadence of the person speaking, the technology stays out of the way so you can focus on the human connection. Live translate helps you get a quick translation when traveling, like better understanding a local speaking to you or listening to a tour guide.
+7. You can have real-time conversations enabled by Gemini models.
+With our latest audio to audio Gemini models, we’re moving from word for word text translations to enabling fluid real-time conversations with capabilities like Live translate. Because Gemini models track context and nuance, you can maintain that human connection and the pace of a real conversation.
+8. Over a third of Live translate sessions last longer than five minutes.
+People are clearly using AI to have longer, more meaningful conversations that were previously out of reach, whether for job interviews, catch-ups with family or cultural exchanges.
+9. Translate is helping people tune into big cultural moments.
+Language is no longer a barrier to joining and understanding global conversations and events. For example, fans are using Live translate with headphones to catch every lyric of the half-time performance at the big game, and people are following along with live speeches and national addresses in real time.
+10. We’re using AI to understand the trickiest phrases, even local slang.
+By bringing the power of our Gemini models into Translate, we’ve moved beyond literal definitions to help you get more natural translations that capture tricky idioms, local slang and the subtle context of local languages.
+11. People are using Translate to learn new languages.
+Translate isn't just for quick translations while traveling. About a third of people using Translate on mobile turn to the app to learn and practice a new language. To help, we've launched an AI-powered practice experience where you can include your specific learning goals and track your daily progress.
+12. People are becoming more confident and better speakers with the help of AI.
+AI has opened new doors for language learners to improve their speaking and comprehension skills. In fact, nearly half of the people who use the "Practice" feature every week are using it for speaking practice activities, which include interactive scenarios to help people build their confidence to speak naturally in real-world situations.
+13. You can use Translate offline.
+And if you want to put your new language skills to use abroad, you can download the languages you need to use Translate offline on Android and iOS, because we know the need for access doesn't stop when the signal does. Whether you’re navigating a remote trail or traveling in a new country, it ensures that even without a connection, you always have easy access to text translations. And, fun fact: English, Arabic, Spanish, French, Japanese, German, Hindi, Chinese, Russian and Italian are the most downloaded offline languages around the world.
+14. Visual translation has gone from a cool trick to daily travel essential.
+Lens takes the guesswork out of traveling. It uses your camera to overlay translations directly onto things like menus and signs, so you always know exactly what you’re ordering or where you’re going when traveling abroad.
+15. People love circling and translating on Android.
+Whether you’re curious about a K-Beauty routine or finally want to know what those trending lyrics actually mean, translation is one of the top ways people use Circle to Search on Android.
+16. The most translated language pairs might surprise you.
+English to Spanish remains the most common go-to language pair in Translate but other common language pairs include English to Indonesian, Portuguese, Arabic and Turkish. English to three distinct Indian languages — Hindi, Bengali and Malayalam — round out the list, reflecting a big increase in connectivity across the globe.
+17. You can use AI to help you finally understand what your kids are talking about.
+You’ve long been able to use translation tools right in Search, and we’re seeing even more unique ways of translating today than in years past, like people using AI Mode in Search to translate Gen Alpha slang. “Clock it,” “maxxing” and “mogging” are more searched for than ever, according to Google Trends data.
+18. We can even translate emojis.
+Are emojis the new global language? 🌎 We’re seeing that people are asking AI Mode to "translate" text into emojis more than ever before, turning a standard conversation into something more visual and playful.
+19. People are searching for ways to translate in American Sign Language.
+We’re also seeing more people turn to AI Mode in Search to get helpful ASL translations. According to Google Trends data, Search interest in sign language translation has been on the rise and hit an all-time high over the last five years, reflecting a growing effort to understand the unique nuances of ASL and its cultural importance.
+20. The most commonly translated phrases are about gratitude, connection and love.
+While the methods we use to communicate are becoming more diverse, the messages themselves remain incredibly consistent. This month, like many months for the past 20 years, the most commonly translated phrase on Google Translate wasn’t a business term or a technical query — it was simply: “Thank you.” Here are some of the other top Translate queries this month:
+- How are you?
+- I love you
+- Hello
+- Please
+After two decades of innovation, our mission for Translate remains the same: Connection. Whether you’re practicing a new phrase, translating a menu with your camera or having a real-time conversation, Translate removes the barriers to understanding.

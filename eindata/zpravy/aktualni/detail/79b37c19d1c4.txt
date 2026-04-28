@@ -1,10 +1,10 @@
 Aladinů není nikdy dost, fanoušci meteorologie proto dostali další web, na kterém najdou předpovědní mapky ze stejnojmenného numerického modelu ČHMÚ.
 Jmenuje se Aladin NWP, stojí za ním storm chaser Lukáš Ronge z Bourky.cz a zobrazí odhady až na 72 hodin dopředu, jak na tom budou jednotlivé počítané veličiny počínaje teplotou vzduchu a konče modelem oblačnosti.
 Nový ultimátní pohled na český předpovědní model Aladin
-Podobný vzhled má i starší oficiální aplikace, kterou dnes překrývá interaktivní mapová aplikace na novém webu ČHMÚ. Ta však nemusí každému vyhovovat.
+Podobný vzhled šachovnice má i nedávno modernizovaná aplikace Aladinu, kterou zároveň doplňuje interaktivní mapa přímo na novém webu ČHMÚ. Ta však nemusí každému vyhovovat.
 Šachovnice miniatur republiky s na první pohled zjevným vývojem situace v čase podá zpravidla rychlejší kontext.
 Pohled na Česko i širší region
-Rongeho verze nabízí oproti staršímu originálu hlavně hezčí kartografický vzhled, možnost změny rozměrů mapek, úpravu časového intervalu a vedle výchozího pohledu na Česko (1km rozlišení) se můžete přepnout i na širší region střední Evropy; byť s nižším horizontálním rozlišením (2,3 km).
+Rongeho verze nabízí oproti originálu několik dalších vychytávek. Třeba možnost změny rozměrů mapek, úpravu časového intervalu, srovnání s předchozími výpočty modelu a vedle výchozího pohledu na Česko (1km rozlišení) se můžete přepnout i na širší region střední Evropy; byť s nižším horizontálním rozlišením (2,3 km).
 Model oblačnosti ve střední Evropě pro středeční večer počítaný dnes o půlnoci
 Po klepnutí na miniaturu se zobrazí velký náhled, možnost klasické animace, srovnání a další funkce. Ne vždy sice všechno funguje na první dobrou, mapky jsou ale povedené a sám autor přiznává, že se zatím jedná o betaverzi.
 Výstupy z Aladina jsou otevřená data

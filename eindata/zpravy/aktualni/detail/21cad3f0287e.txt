@@ -1,0 +1,7 @@
+Článek
+Robot Ace vyvinutý společností Sony AI a poháněný umělou inteligencí vyhrál tři z pěti zápasů hraných proti elitním hráčům podle oficiálních pravidel. Dva zápasy proti profesionálům z top žebříčku prohrál.
+I tak šlo o zaznamenání dalšího milníku v robotice a především v oblasti vnímání a velmi rychlých reakcí, což bylo dlouho bráno jako jeden z nejtěžších úkolů v robotické technologii.
+Zaznamenaný úspěch byl publikován i v prestižním časopise Nature. „Hráli jsme postupem času se stále silnějšími hráči a poráželi jsme stále silnější hráče,“ neopomněl zmínit postupné zlepšení robota ředitel Sony AI v Curychu Peter Dürr.
+Samotný Ace má oproti dvounohým hráčům výhodu v podobě osmičlánkové paže na pohyblivé základně. Ke sledování hry používá místo očí snímky z několika kamer, které zachycují hrací plochu hned z několika úhlů a sledují polohu a rotaci míčku, uvádí server Guardian.
+Profesor Jan Peters z Německa, odborník na inteligentní autonomní systémy, který rovněž dříve pracoval na robotech využitelných pro hraní stolního tenisu, označil Ace a jeho dovednosti za opravdu působivé. Nicméně podotkl, že mnoho dalších milníků, které by byly využitelné pro širokou veřejnost, jako je například manipulace s předměty, máme podle něj teprve před sebou.
+„V příštím desetiletí však nastane okamžik, který změní svět podobně, jako ho změnil ChatGPT v roce 2022. Ale může být i mnohem blíže, než si myslíme,“ dodal.

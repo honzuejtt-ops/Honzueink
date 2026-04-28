@@ -1,0 +1,11 @@
+Nový Steam Machine i VR headset Steam Frame jsou ještě daleko, ale Valve už příští týden začne prodávat Steam Controller druhé generace. Herní ovladač dorazí 4. května v 19:00 našeho času a bude stát 99 eur (2450 Kč). Bere si to nejlepší z předchůdce i konkurenčních gamepadů a slibuje široké možnosti ovládání i nastavení.
+První generace byla trochu kompromisní, protože vsadila na velké dotykové plochy. Nástupce je má také, ale posunuly se níž směrem ke spodní straně gripů. Zato se na tělo dostaly obě analogové páčky i směrový D-pad. Jak uvádí výrobce, teď už má Controller všechny vstupy, které by hry mohly vyžadovat. Nabízí kompletní gamepadovou výbavu a trackpady mohou zastoupit myš.
+Steam Controller 2
+Obě páčky jsou magnetické (TMR), takže budou dlouhodobě spolehlivější a nehrozí jim drifting. Valve vylepšilo haptickou odezvu, která má být jemnější/přesnější. Zůstal gyroskop pro pohybové ovládání, což se hodí například k přesnějšímu míření. V gripech jsou nově úchopové senzory, které mohou (de)aktivovat gyroskop, případně je lze naprogramovat na jinou funkci. Přibylo tlačítko mezi trackpady pro rychlý přístup k oznámením a chatům. A vzadu zůstala čtyři programovatelná tlačítka.
+Steam Controller 2 funguje jako univerzální ovladač přes Bluetooth, přičemž je kompatibilní s Windows, Linuxem, macOS, Androidem i iOS. Plnou sílu ale ukáže jen na počítačích s klientskou aplikací Steam nebo zařízeních se Steam Linkem, takže se mu odemknou všechny možnosti ovládání a nastavení.
+Ovládací schéma
+Mimo Bluetooth pak ovladač používá i proprietární rádio pro kratší odezvu. Slouží k tomu dodávaný USB puk, který funguje jako přijímač, ale zároveň má magnetické piny a může gamepad také nabíjet. Na těle ale nechybí ani standardní USB-C.
+Takhle vypadal Steam Controller 1
+Steam Controller 2 obsahuje 8,39Wh akumulátor, s nímž vydrží 35 hodin hraní. Jak ale ověřil Gamers Nexus, výdrž může být klidně dvojnásobná. Recenze chválí také výbornou opravitelnost.
+Zdroje a další informace:
+Valve

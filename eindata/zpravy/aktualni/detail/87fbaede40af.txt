@@ -1,0 +1,6 @@
+Holešovický Průša spustil předprodej multimateriálového toolchangeru INDX, který poprvé ukázal veřejnosti loni na podzim na veletrhu Formnext. Novinka vznikla ve spolupráci se švédským Bondetech a k prvním zákazníkům by měla dorazit už v červnu. Oproti původním plánům si za ni zájemci ale připlatí.
+Konverzní čtyřtryskový kit za 16 tisíc
+Základ tvoří konverzní kit se čtyřmi nebo osmi INDX nástroji. Varianta se čtyřmi tryskami vychází na 15 990 Kč, zatímco osmihlavové řešení stojí zhruba 22 tisíc korun. Ve srovnání s cenami avizovanými loni v listopadu tak jde o zdražení, které Průša vysvětluje obecně rostoucími náklady i výrobou v rámci Evropské unie.
+Kit určený pro Prusa Core One+ obsahuje chytrou hlavu s indukční cívkou, 4 nebo 8 pasivních nástrojů s 0,4mm tryskou (další půjdou dokoupit samostatně), potřebný hardware a montážní komponenty pro upgrade stávající 3D tiskárny.
+Hlavní výhodou toolchangeru INDX oproti konkurenci (například systému Vortek od Bambu Lab) má být extrémní úspora materiálu při výměně trysek. Průša se chlubí tím, že při výměně vznikne asi jen 13 miligramů odpadu (0,013 g), a to jen kvůli stabilizaci tlaku v trysce. Navíc zcela odpadá potřeba čisticí věže.
+zdroj: Průša blog

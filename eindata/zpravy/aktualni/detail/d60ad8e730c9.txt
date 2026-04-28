@@ -1,0 +1,81 @@
+Bylo nebylo
+Bylo nebylo, v úrodné zemi open-source DNS, žil jeden mladý výzkumník, který nedávno objevil prastaré umění lovu bezpečnostních odměn. Vyzbrojen velkým jazykovým modelem a kusou znalostí správy paměti v jazyce C snil o nejvyšší trofeji: o kritickém vzdáleném spuštění kódu v serveru BIND 9.
+„BIND 9 je starý software," uvažoval. „Napsaný v Céčku. Musí být prolezlý zranitelnostmi."
+Nemýlil se úplně. Ale ani neměl docela pravdu.
+Bezpečnostní tým ISC — tři inženýři, jejichž schránky už viděly snad všechno — procházeli hlášení se svědomitou péčí. Měli povinnost. Každé nové hlášení, ať sebenepravděpodobnější, bylo nutné detailně prozkoumat. Byla to jejich odpovědnost, a také čím dál tím více jejich břemeno.
+Kapitola I: První volání
+Jednoho svěžího rána zaslal výzkumník své první hlášení na security-officer@isc.org
+.
+PŘEDMĚT: [CRITICAL] Vzdálené spuštění kódu v BINDu 9 přes nesprávně zakódovaný QNAME
+Popis
+Speciálně upravený DNS dotaz s příliš velkým QNAME způsobí přetečení zásobníku v pipeline zpracování dotazů, což vede ke spuštění libovolného kódu s právy procesu named
+.
+Kroky k reprodukci
+- Útočník pošle DNS dotaz s QNAME delším než 253 oktetů
+named
+přepíše zásobník obsahem obřího QNAME- RCE dosaženo – server pustí kód s právy
+named
+Tým všeho nechal a strávil půl dne procházením db.c
+, rbtdb.c
+a cesty odbavování dotazů. Spustili kroky z poskytnutého reproduceru. named
+zpracoval nadrozměrný QNAME přesně podle RFC 1035 — vrátil FORMERR
+, jak to dělá už posledních pětadvacet let.
+Verdikt: CVSS: 0.0
+— hlášení uzavřeno. Není to zranitelnost.
+Pro srovnání viz CVE-2023–4408: parsování velkých zpráv způsobovalo zvýšenou zátěž CPU, nikoli vzdálené spuštění kódu.
+Kapitola II: Druhé volání
+O měsíc později, nezlomen a s čerstvě vygenerovanými prompty, to výzkumník zkusil znovu.
+PŘEDMĚT: [CRITICAL] Přetečení haldy v prealokaci paměti v DoH
+Popis
+Endpoint DoH nevaliduje Content-Length
+před alokací haldy. Útočník může zaslat nesprávně formátovaný HTTP/2 POST na port 443 a vyvolat přetečení haldy ve funkci isc_mem_allocate()
+.
+Proof of concept: přiložen poc.py
+— HTTP POST s velkým tělem.
+Tým se znovu sešel. Prošli zpracování TLS relace. Přečetli httpd.c
+od shora dolů. Přiložený proof-of-concept byl skript v Pythonu posílající tělo HTTP o velikosti 512 MB — které named
+odmítl s HTTP 413 podle specifikace, aniž by zmíněnou paměť vůbec někdy alokoval.
+Verdikt: CVSS: 0.0
+— hlášení uzavřeno.
+Pro srovnání viz CVE-2024–12705: implementace DoH v BIND 9 měla problémy se zátěží CPU a alokací paměti při zahlcení větším počtem dotazů, nikoli přetečení haldy z neautentizovaných POST těl.
+Jeden inženýr, Petr, si začal vést poznámky.
+Vesnice začala mumlat. „Zase planý poplach. Výzkumník křičí RCE na stíny."
+Kapitola III: Past
+Petr měl nápad. Přidal do veřejné hlavičky jedinou deklaraci prototypu — isc_qname_canonicalize_ex()
+— s věrohodným Doxygen komentářem popisujícím její domnělou roli při kanonickém řazení jmen pro DNSSEC.
+/** * @brief Canonicalize a DNS name for DNSSEC ordering (extended variant). * * Wraps dns_name_totext() with zone-relative label compression logic. * Introduced in BIND 9.16 to handle edge cases in closest-encloser proofs. */ isc_result_t isc_qname_canonicalize_ex(const dns_name_t *name, dns_name_t *origin, isc_buffer_t *target, unsigned int options);
+Žádná implementace. Žádná volání této funkce. Žádný odpovídající soubor s příponou .c
+. Čistě se to zkompilovalo a zmizelo v kódu — viditelné pro každého, kdo čte hlavičky, neviditelné pro každého, kdo čte zdrojové soubory.
+Každý výzkumník, který by kód skutečně auditoval, by viděl, že jde o mrtvý pahýl, na kterém není co analyzovat. Každý nástroj, který generuje hlášení vzorovým párováním deklarací, aniž by je dohledal k implementaci, by to neviděl.
+Nemusel čekat dlouho. O tři týdny později:
+PŘEDMĚT: [CRITICAL] Přetečení bufferu v isc_qname_canonicalize_ex()
+Popis
+Funkce isc_qname_canonicalize_ex()
+v souboru lib/dns/name.c
+provádí nedostatečnou kontrolu mezí při zpracování návěští s kompresními ukazateli, což umožňuje přetečení haldy vedoucí ke vzdálenému spuštění kódu.
+Tým si přečetl předmět. Přečetl si název funkce. Podívali se na sebe.
+Funkce isc_qname_canonicalize_ex()
+nikdy neexistovala. V lib/dns/name.c
+také není.
+Dostali svou odpověď.
+Upozornění: Falešné hlášení chyby
+Toto hlášení odkazuje na název funkce, která v žádné verzi BIND 9 neexistuje. Ukazuje to, že hlášení bylo vygenerováno bez přístupu analýzy skutečného zdrojového kódu. Všechna budoucí hlášení od tohoto odesílatele budou zpracována odpovídajícím způsobem.
+Kapitola IV: Skutečný vlk
+Pak, jednoho listopadového úterý, přišlo něco jiného. Žádné nafouknuté CVSS. Žádný vágní „speciálně upravený vstup". Žádný skript v Pythonu posílající legálně velká těla pomocí HTTP.
+PŘEDMĚT: Use-after-free ve validator.c dns__validator_validatezonekey()
+Popis
+Během DNSSEC validace DNSKEY RRsetu může být úloha validátoru uvolněna, zatímco na ni stále odkazuje aktivní fetch kontext. Chyba (UAF) konzistentně reprodukován se 4+ souběžnými validujícími resolvery pod trvalou zátěží dotazy (~50k qps).
+Prostředí: Linux 6.6, jemalloc 5.3, ASan povolen Paměťový trace: přiložen výstup ASan – dereference uvolněného ukazatele na offsetu 0x18
+Patch: přiložena navržená oprava, otestována proti kompletní testovací sadě resolveru
+Tým už byl unavený. Fronta nahlášených chyb byla velmi dlouhá. Viděli tolik hlášení, která na první pohled vypadala jako ta ostatní. Tento ticket v databázi chyb ležel jedenáct dní.
+Devátého dne velký provozovatel resolveru nahlásil občasné pády pod vysokou zátěží DNSSEC validace. Dvanáctého dne bylo přiděleno CVE. Čtrnáctého dne vyšel patch.
+Pro všechny to bylo velmi dlouhých čtrnáct dní.
+Epilog: Ponaučení
+Tak to bylo zapsáno do análů mailing listu security-discuss:
+Pozornost týmu není nekonečná. Každé falešné hlášení z ní ukousne trošku — hodinu tady, přepnutí kontextu tam, vlákno pochybnosti zaseté tam, kde by měla vládnout jistota. Když pak přijde skutečný vlk, pastýři už mohou být rozptýleni.
+CVSS 10.0 u chyby, která způsobí jenom FORMERR
+, není obezřetnost. Je to šum.
+Šum není neutrální. Šum má také svoji cenu.
+Výzkumník se nepoučil a přešel na AI-generovaný výzkum zranitelností jádra.
+Konec.
+Při psaní této bajky nebyl zraněn žádný démon.

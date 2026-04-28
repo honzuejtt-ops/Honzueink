@@ -1,0 +1,18 @@
+GPU-T
+GPU-T je diagnostický nástroj pro grafické karty, inspirovaný programem GPU-Z pro Windows. Čte data přímo z linuxového jádra prostřednictvím sysfs, grafických API a vlastní JSON databáze GPU a zobrazuje technické specifikace hardwaru včetně velikosti čipu, počtu tranzistorů a data vydání konkrétního modelu.
+V reálném čase sleduje frekvence GPU a VRAM, teploty, otáčky ventilátorů i příkon. Kontroluje stav PCIe Resizable BAR, verze ovladačů a BIOSu, paměťový typ a šířku sběrnice. Prověří také podporu Vulkanu, OpenCL, ROCm nebo VA-API. Aktuálně plně funguje s AMD Radeon, podpora NVIDIA a Intel je v plánu.
+github.com/lseurttyuu/GPU-T, v0.1.4
+Protonup-rs
+Protonup-rs automatizuje instalaci a aktualizaci linuxových herních kompatibilních vrstev. Podporuje GE-Proton, DXVK, VKD3D-Proton, Luxtorpeda, Boxtron a další. Napsaný v Rustu nabízí interaktivní TUI rozhraní i neinteraktivní CLI režim vhodný pro skripty a automatizaci.
+Zvládne instalaci do Steamu (nativního i Flatpak), Lutris nebo libovolného vlastního adresáře. Základ tvoří knihovna libprotonup, kterou lze integrovat do dalších nástrojů. Přidání nové kompatibilní vrstvy je záměrně jednoduché, stačí doplnit konfigurační soubor.
+github.com/auyer/Protonup-rs, 0.12.1
+FontGet
+FontGet je multiplatformní správce písem pro příkazový řádek napsaný v Go. Umožňuje vyhledávat, instalovat a odebírat písma ze zdrojů Google Fonts, Nerd Fonts a Font Squirrel jediným příkazem. Distribuuje se jako jedna spustitelná binárka bez závislostí.
+Disponuje příkazy pro export a import seznamu písem do souboru a zálohu nainstalovaných písem do archivu ZIP. Hodí se jak pro každodenní práci, tak pro automatické nasazení předem definované sady písem na nové nebo přeinstalované stroje.
+github.com/Graphixa/FontGet, v2.4.0
+CleverSwitch
+CleverSwitch je malý multiplatformní démon, který synchronizuje přepínání hostitelů mezi klávesnicí a myší Logitech. Při stisku tlačítka Easy-Switch na klávesnici zachytí událost a okamžitě odešle příkaz k přepnutí i myši, takže obě zařízení přejdou na stejného hostitele najednou. Funguje vedle Logi Options+ nebo Solaar bez konfliktů a podporuje připojení přes USB přijímač i Bluetooth.
+Nabízí hook skripty, které se asynchronně spustí při přepnutí, připojení nebo odpojení zařízení. Prostřednictvím proměnných prostředí dostanou informaci o typu události, názvu zařízení i cílovém hostiteli, lze tak například automaticky přepnout vstup monitoru.
+github.com/MikalaiBarysevich/CleverSwitch, 1.1.1
+Blbinka
+Jestli máte pocit, že vás nikdo nevnímá, PointerPointer.com vás okamžitě vyléčí. Stačí pohnout myší a stránka vám zobrazí fotografii, kde někdo ukazuje prstem přesně na váš kurzor, pokaždé jiný člověk, pokaždé jiné místo na světě.

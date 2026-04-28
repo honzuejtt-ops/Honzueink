@@ -1,0 +1,5 @@
+Microsoft a OpenAI už potřetí během necelého roku upravují podmínky vzájemné spolupráce. Opět přitom jde o to, že druhá zmíněná společnost může uzavírat další partnerství.
+Tentokrát už Microsoft definitivně přišel o exkluzivní přístup k technologiím OpenAI. Jeho cloud Azure bude sice primárním hostitelem služeb jako ChatGPT, ale nikoliv výhradním. Pokud Microsoft nebude schopný nebo nebude chtít poskytnout dostatečnou kapacitu či funkce, OpenAI může všechny své produkty nasadit i na cizí cloudy.
+Microsoft bude mít licenci na všechny vyvinuté AI modely a produkty až do roku 2032, ale tato práva již také nejsou exkluzivní. Pokud OpenAI přijde například s GPT-6, může jej nabídnout i Amazonu, Oraclu a dalším.
+Mění se také dělení tržeb. Microsoft se už nebude dělit o příjmy z komerčního využívání modelů OpenAI v jeho vlastních službách jako Copilot. OpenAI se však o své příjmy bude dělit i nadále, a to až do roku 2030. Nově ale firmy stanovily strop, čili jakousi cílovou částku, po jejímž dosažení už OpenAI tuto povinnost mít nebude.
+Microsoft také nadále zůstane hlavním akcionářem OpenAI, v současnosti má zhruba 27% podíl.

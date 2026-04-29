@@ -3,6 +3,7 @@ Základem jsou tzv. NFC tagy. Malé samolepky s čipem, do kterého si uložíte
 Jak NFC tag nastavit?
 K nastavení NFC štítků není zapotřebí žádné speciální elektroniky. Vše zvládnete pohodlně přímo v mobilu. Pro iPhony a iPady poslouží aplikace Zkratky a automatizace, která je součástí systému. Dobře funguje také aplikace IFTTT, která nabízí i plno dalších automatizačních zkratek.
 Pro Android je pak skvělá aplikace NFC Tools, která sice nepatří mezi graficky nejlíbeznější, svůj účel ale plní. Pokročilejší uživatelé mohou sáhnout po aplikaci MacroDroid, která nabízí opravdu bohaté možnosti přizpůsobení a hodí se skvěle i nejen při práci s NFC štítky.
+NFC tag si můžete koupit například zde.
 1. Pracovní režim na jedno klepnutí
 Představte si situaci, kdy vás při práci neustále ruší nekončící příval notifikací. Nalepte NFC tag na stůl nebo notebook a nastavte si, aby po přiložení telefonu zapnul režim soustředění, ztlumil notifikace a filtroval nedůležité hovory. Při odchodu ho stejným způsobem opět vypnete.
 2. Odchod z domu bez starostlivých drobností
@@ -14,3 +15,4 @@ Je to jednoduché, rychlé a překvapivě efektivní.
 Jdete po náročném dni z práce a jen představa nastavování navigace domů a spouštění oblíbené hudby ve vás vyvolává hrozné pocity? Nalepte si NFC štítek do auta a jedním přiložením automaticky spustíte navigaci s trasou dolů, zapnete Bluetooth a váš oblíbený playlist či interpreta.
 5. Péče o domácnost a rostliny
 NFC tagy se hodí i pro praktické věci doma. Například na květináče můžete uložit informace o nutné péči nebo záznamy o posledním zalévání. Podobně poslouží i u čisticích prostředků nebo krmivu pro mazlíčky. Lísteček se záznamem nebo návodem se může snadno zničit nebo ztratit, přilepený NFC štítek nikoliv.
+Tento text obsahuje affiliate odkazy. Pokud se přes tyto odkazy na vybraných službách zaregistrujete, případně něco nakoupíte, získá z toho redakce malou provizi sloužící pro zajištění našeho fungování. Detaily o affiliate programech najdete zde.

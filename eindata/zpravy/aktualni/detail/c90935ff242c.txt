@@ -1,0 +1,11 @@
+Cybersecurity in the Intelligence Age
+An action plan for democratizing AI-powered cyber defense.
+Artificial intelligence is reshaping cybersecurity. The same capabilities that help defenders identify vulnerabilities, automate remediation, and respond faster are also being used by malicious actors to scale attacks, lower barriers to entry, and increase sophistication.
+The United States and its allies face a rapidly changing cyber threat environment, and private-sector innovators have an important responsibility to help meet that challenge. OpenAI takes that responsibility seriously, and today we’re publishing an Action Plan informed by conversations with cybersecurity and national security experts across federal and state government and major commercial entities. It consists of five pillars:
+- Democratizing cyber defense
+- Coordinating across government and industry
+- Strengthening security around frontier cyber capabilities
+- Preserving visibility and control in deployment
+- Enabling users to protect themselves
+Our plan describes how we will deepen our existing commitment by building the infrastructure needed to support cybersecurity defenders, organized around democratizing access to the defensive tools that trusted actors across society should be able to use. Building resilience in the Intelligence Age will require both working through democratic institutions and processes, and broadening access to the technologies that can help protect communities, critical systems, and our national security.
+Read the full plan here(opens in a new window).

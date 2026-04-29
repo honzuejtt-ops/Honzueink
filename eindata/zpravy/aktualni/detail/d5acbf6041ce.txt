@@ -1,3 +1,19 @@
-OpenAI GPT models, Codex, and Managed Agents are now available on AWS, enabling enterprises to build secure AI in their AWS environments.
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)
+OpenAI models, Codex, and Managed Agents come to AWS
+Today, OpenAI and AWS are expanding our strategic partnership to help enterprises build using OpenAI capabilities in their AWS environments. We’re excited to give AWS customers access to the best frontier models, agents, and tools, which will operate within the systems, security protocols, compliance requirements, and workflows they already use.
+The expanded partnership with Amazon brings together three key areas of work, all launching today in limited preview:
+- OpenAI models on AWS
+- Codex on AWS
+- Amazon Bedrock Managed Agents, powered by OpenAI
+Together, these capabilities give organizations more ways to use OpenAI across application development, software engineering, and agentic workflows—while building within the infrastructure, security, governance, and procurement workflows they already use on AWS.
+For many companies, using AI at scale requires bringing the best models to the systems their teams already use. That’s why we’re launching OpenAI models, including our best frontier model GPT‑5.5, on Amazon Bedrock.
+Customers can now build with OpenAI models in AWS, alongside the services, security controls, identity systems, and procurement processes they already rely on.
+For developers, that means more flexibility in how they build with OpenAI, from new AI applications to intelligence embedded in existing products to agentic workflows that can reason, take action, and support more complex business processes.
+For enterprises, it means a clear single path from experimentation to production, with OpenAI capabilities available in the AWS environments where their most important workloads already run.
+More than 4 million people now use Codex every week, and teams are using it across the software development lifecycle—to write code, explain systems, refactor applications, generate tests, modernize legacy codebases, and accelerate a broader set of professional workflows that extend beyond coding. Increasingly, they are also using Codex to accelerate research, analysis, and document-based work by connecting with the apps and tools they use every day, from summarizing source materials to creating briefs, slide decks, and spreadsheets.
+Codex is OpenAI’s frontier coding harness and product suite, and organizations can now power Codex with OpenAI models served directly from Amazon Bedrock. This allows any company with an AWS commit and Bedrock access to frictionlessly start using OpenAI’s powerful coding agent and products.
+Customers get started by configuring Codex to use Bedrock as the provider. This gives customers the enterprise-grade attributes they expect from AWS—including security, billing, and high availability. All customer data is processed by Amazon Bedrock, and eligible customers can apply Codex usage towards their AWS cloud commitments.
+Codex on Bedrock is available in limited preview. Customers can configure Codex to use Amazon Bedrock through the Bedrock API, starting with Codex CLI, the Codex desktop app, and Visual Studio Code extension.
+We are also launching Amazon Bedrock Managed Agents(opens in a new window), powered by OpenAI, giving enterprises a new way to deploy advanced agents within their trusted AWS environments.
+With Bedrock Managed Agents, organizations can build agents that maintain context, execute multi-step workflows, use tools, and take action across complex business processes. This helps customers move from experimentation to production faster, while keeping agent development aligned with the infrastructure, security, and operational standards they expect from AWS.
+For enterprises, Bedrock Managed Agents lets teams focus on making agents useful for real work, not assembling the infrastructure around them. It handles the harder parts of deployment, tool use, orchestration, and governance, with built-in integration across Amazon’s security and compliance controls. The result is a faster path from prototype to production for agents that can operate in real enterprise environments.
+Our strategic partnership with Amazon is focused on helping organizations deploy advanced AI at production scale. With OpenAI models, Codex, and Managed Agents now coming to Amazon Bedrock, customers have a faster, more secure path to putting AI to work across their business. We’re excited to see what your organizations build.

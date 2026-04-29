@@ -470,3 +470,6 @@ Zdroje: techPowerUp, 1usmus|E|
 |T|OpenAI models, Codex, and Managed Agents come to AWS|D|28.04.2026 00:00|P|OpenAI GPT models, Codex, and Managed Agents are now available on AWS, enabling enterprises to build secure AI in their AWS environments.|X|OpenAI GPT models, Codex, and Managed Agents are now available on AWS, enabling enterprises to build secure AI in their AWS environments.
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Our commitment to community safety|D|28.04.2026 00:00|P|Learn how OpenAI protects community safety in ChatGPT through model safeguards, misuse detection, policy enforcement, and collaboration with safety ex...|X|Learn how OpenAI protects community safety in ChatGPT through model safeguards, misuse detection, policy enforcement, and collaboration with safety experts.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|

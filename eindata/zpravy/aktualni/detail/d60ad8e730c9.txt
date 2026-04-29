@@ -65,7 +65,8 @@ Pak, jednoho listopadového úterý, přišlo něco jiného. Žádné nafouknut�
 PŘEDMĚT: Use-after-free ve validator.c dns__validator_validatezonekey()
 Popis
 Během DNSSEC validace DNSKEY RRsetu může být úloha validátoru uvolněna, zatímco na ni stále odkazuje aktivní fetch kontext. Chyba (UAF) konzistentně reprodukován se 4+ souběžnými validujícími resolvery pod trvalou zátěží dotazy (~50k qps).
-Prostředí: Linux 6.6, jemalloc 5.3, ASan povolen Paměťový trace: přiložen výstup ASan – dereference uvolněného ukazatele na offsetu 0x18
+Prostředí: Linux 6.6, jemalloc 5.3, ASan povolen
+Paměťový trace: přiložen výstup ASan – dereference uvolněného ukazatele na offsetu 0x18
 Patch: přiložena navržená oprava, otestována proti kompletní testovací sadě resolveru
 Tým už byl unavený. Fronta nahlášených chyb byla velmi dlouhá. Viděli tolik hlášení, která na první pohled vypadala jako ta ostatní. Tento ticket v databázi chyb ležel jedenáct dní.
 Devátého dne velký provozovatel resolveru nahlásil občasné pády pod vysokou zátěží DNSSEC validace. Dvanáctého dne bylo přiděleno CVE. Čtrnáctého dne vyšel patch.

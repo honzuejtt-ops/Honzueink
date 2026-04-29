@@ -1,0 +1,75 @@
+Administrace
+Co se dozvíte v článku
+Bloating tabulek může být problém. Skoro všude jsem se setkal se situací, kdy „mazací“ skript přestal fungovat (z různých důvodů), přičemž se tato chyba detekovala příliš pozdě, kdy dotčené tabulky měly místo jednotek GB například desítky GB. To už musí zaúřadovat VACUUM FULL
+, což často znamená vynucenou plánovanou odstávku (kvůli držení exkluzivního zámku). Je to letitý problém, který zkušenější uživatelé řešili buďto pečlivějším monitoringem, v některých případech partišningem (partitioning), případně extenzemi pg_repack
+a pg_squeeze
+.
+Autor posledně jmenované extenze Tonda (Antonín Houska) spolu s Alvarem (Alvaro Herrera) poslední dva roky pracovali na integraci pg_squeeze
+do jádra Postgresu. Paradoxně příkaz, který bude provádět zdrcnutí tabulek, se bude jmenovat REPACK
+. Základem je logická replikace – zadaná tabulka se lokálně zreplikuje (vytvoří se její nová kopie, a tím se zbaví vnitřního neobsazeného místa). Co je zásadní, je možnost použít volbu CONCURRENTLY
+. S touto volbou příkaz nepoužije exkluzivní zámek. Tudíž je možné jej použít za provozu. Nutnou podmínkou je existence primárního klíče (a unikátního indexu).
+REPACK (CONCURRENTLY, VERBOSE) obce; INFO: repacking "public.obce" in physical order INFO: "public.obce": found 0 removable, 6250 nonremovable row versions in 59 pages DETAIL: 0 dead row versions cannot be removed yet. CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s. REPACK
+Kromě toho, že příkaz REPACK
+nahrazuje příkaz VACUUM FULL
+, tak tento příkaz ještě nahrazuje příkaz CLUSTER
+, kterým se tabulka fyzicky (jednorázově) přeuspořádá podle zadaného indexu.
+Možná jste si všimli, že dotaz běžící pod příkazem EXPLAIN ANALYZE
+je výrazně pomalejší. Důvodem je měření času – executor, v tomto režimu, neustále poptává aktuální čas, a to má brutální režii. U větších dotazů se vyplatí použít volbu TIMING OFF
+. V 19 na x86 se místo systémového času použíjí takty CPU. Je to výrazně rychlejší – zatímco na osmnáctce mi jednoduchý testovací dotaz běžel 2.5× pomalejší v explainu, na devatenáctce pouze 1.5× pomaleji.
+Malou velkou změnou je vypnutí JIT ve výchozí konfiguraci. JIT se objevil v Postgresu 11, a v Postgresu 12 byl zapnutý ve výchozí konfiguraci. Bohužel se zjistilo, že většině uživatelů, kteří Postgres používají pro OLTP, dělá víc škody než užitku. Došlo to až do stavu, kdy se uživatelům doporučovalo, neoficiálně, po instalaci JIT vypnout. Je tam víc problémů. clang
+, na kterém je to postavené, v novějších verzích kompiluje lépe, ale pomaleji. Existují alternativní implementace JIT, ale všechny jsou více než méně experimentální. Druhým problémem je model, na jehož základě se JIT aktivuje.
+Tento model jednak nedokáže dobře odhadnout náročnost „jitifikace“ – inliningu, a navíc je citlivý na přestřelení odhadu počtu řádek. Ohledně modelu a citlivosti na odhady pochybuji, že se dá něco dělat. Alternativní implementace JIT mají výrazně nižší režii. Přijde mi to ale jako slepá cesta. Budoucnost vidím v integraci vektorového executoru a vektorových funkcí (tak jak to používá DuckDB). Může to znamenat, že Postgres bude mít duální implementace funkcí (pro skalární parametr, a pro vektor parametrů).
+Nově lze vytvořit replikační slot pro logickou replikaci, bez nutnosti mít konfiguraci wal_level=logical
+. Postačuje nastavení replica
+, což je výchozí nastavení. Jakmile je logický replikační slot aktivní, interně se úroveň zápisu do transakčního logu nastaví na logical
+. Jaký je aktuální stav zjistíte v konfigurační proměnné effective_wal_level
+.
+Další bombou je možnost zapínat nebo vypínat kontrolní součty (na úrovni datových stránek) za běhu. Kontrolní součty jsou v Postgresu už relativně dlouho, a ačkoliv na dnešním hardware je jejich režie zanedbatelná, tak určitě bude dost databází, kde nebudou zapnuté. Zapnutí kontrolních součtů vyžadovalo odstávku úměrnou velikosti databáze. Navíc se silně doporučuje po zapnutí součtů znovu zreplikovat všechny fyzické repliky. Výhodou je diagnostika, možnost identifikovat poškozené stránky (a přeskočit je), možnost vyrobit replikovaný server ze starého primárního příkazem pg_rewind
+.
+Naplánovat a provést delší odstávku někde nemusí být jednoduché (nebo to může být skoro nemožné). U jednoho mého klienta zapnutí kontrolních součtů na cca 2TB databázi trvalo cca 2 hodiny (na vlastním hardware z roku 2025). Zapnutí se provede voláním funkce pg_enable_data_checksums
+. Nastavením volitelných parametrů lze běh funkce zpomalit, tak aby nepřetěžovala IO. Vypnutí provede funkce pg_disable_data_checksums
+. Stav procesu můžeme vidět v pohledu pg_stat_progress_data_checksums
+.
+Snad se už konečně vyřešil problém s upgradem databází obsahující extrémně velký počet LO (large objects). Nově binární upgrade ( pg_upgrade
+) použije pro export metadat LO příkaz COPY
+místo původní sekvence příkazů:
+-- původní sekvence SELECT pg_catalog.lo_create('5432'); ALTER LARGE OBJECT 5432 OWNER TO alice; GRANT SELECT ON LARGE OBJECT 5432 TO bob; -- nově COPY pg_catalog.pg_largeobject_metadata (oid, lomowner, lomacl) FROM stdin; 5432 16384 {alice=rw/alice,bob=r/alice} \. COPY pg_catalog.pg_shdepend (dbid, classid, objid, objsubid, refclassid, refobjid, deptype) FROM stdin; 5 2613 5432 0 1260 16384 o 5 2613 5432 0 1260 16385 a \.
+Nová implementace by měla být řádově rychlejší.
+Konečně se dotáhlo do konce začlenění podpory více formátů v příkazu pg_dumpall
+. Postgres má dva základní příkazy pro export (backup) – pg_dump
+a pg_dumpall
+. Historicky tyto příkazy podporovaly pouze plain text
+formát. Postupem času pg_dump
+získal možnost exportu do custom
+, tar
+a dictionary
+formátu plus import příkazem pg_restore
+umožňoval paralelní import více tabulek. pg_dumpall
+byl díky podpoře pouze SQL formátu dost omezený.
+To se nyní změnilo, a v pg_dumpall
+jsou podporovány všechny formáty, které podporuje pg_dump
+. Vypadá to trochu jako workaround. V případě, že se použije jiný než plain text
+(SQL) formát, tak se vyrobí adresář, který do podadresářů uloží výstup z pg_dumpu
+. pg_restore
+umí s touto adresářovou strukturou pracovat. Tato možnost se dostala už do 18tky, ale byla na poslední chvíli stažena.
+V pg_rewind
+zredukovalo kopírování WAL logů z nového primárního serveru na budovanou repliku a to tak, že se budou kopírovat pouze WAL logy vzniklé po rozpadu replikace. V mnoha scénářích se tím výrazně urychlí běh tohoto příkazu.
+Doposud autovacuum vybíralo tabulky k vakuování na základě porovnání vypočítaných koeficientů a prahových hodnot. Pořadí vybraných tabulek záleželo na fyzickém pořadí v systémové tabulce pg_class
+. Nově se vakuum bude prioritizovat podle míry vzdálenosti od prahu. Dalším kritériem je stáří tabulky (počet transakcí od freeze). Stará implementace byla férová v tom, že garantovala, že každá tabulka bude zvakuovaná a že žádná tabulka nebude „předbíhat“ ve frontě. Na druhou stranu se mohlo stát, že tabulka s intenzivnějším provozem čekala příliš dlouho a došlo k zbytečnému bloatingu.
+Nová implementace se snaží být chytřejší. Uvidíme, jak to bude fungovat. Moje zkušenost je taková, že a) není dobré dávat do Postgresu příliš dynamická data, b) je dobré si nastavit počet aktivních autovacuum workerů tak, aby byla určitá rezerva, c) není dobré vytěžovat IO na maximum (je dobré mít dostatečně nadimenzované IO a mít nějakou rezervu). Skóre tabulek můžeme sledovat v pohledu pg_stat_autovacuum_score
+:
+SELECT * FROM pg_stat_autovacuum_scores WHERE score > 0.05; ┌─[ RECORD 1 ]────────┬──────────────────────┐ │ relid │ 1262 │ │ schemaname │ pg_catalog │ │ relname │ pg_database │ │ score │ 0.15936254737880529 │ │ xid_score │ 1e-07 │ │ mxid_score │ 0 │ │ vacuum_score │ 0.0793650769622719 │ │ vacuum_insert_score │ 0.003998400542165933 │ │ analyze_score │ 0.15936254737880529 │ │ do_vacuum │ f │ │ do_analyze │ f │ │ for_wraparound │ f │ ╞═[ RECORD 2 ]════════╪══════════════════════╡ │ relid │ 1214 │ │ schemaname │ pg_catalog │ │ relname │ pg_shdepend │ │ score │ 0.12 │ │ xid_score │ 1.15e-07 │ │ mxid_score │ 0 │ │ vacuum_score │ 0 │ │ vacuum_insert_score │ 0.006 │ │ analyze_score │ 0.12 │ │ do_vacuum │ f │ │ do_analyze │ f │ │ for_wraparound │ f │ └─────────────────────┴──────────────────────┘
+Nově autovacuum může použítVACUUM
+s podporou paralelismu.
+Přehled o aktuálním stavu recovery je k dispozici v pohledu pg_stat_recovery
+. V pohledu pg_stat_statements
+jsou dva nové sloupce generic_plan_calls
+a custom_plan_calls
+zobrazující kolikrát předpřipravený příkaz (prepared statement) použil generický nebo zákaznický plán. Nový sloupec wal_fpi_bytes
+zobrazuje velikost zápisu tzv. plných stránek do transakčního logu. Vysoká hodnota může signalizovat nepříjemně velkou četnost vynucených checkpointů (je nutné zvednout max_wal_size
+případně checkpoint_timeout
+). V novém pohledu pg_stat_lock
+uvidíme počet a celkový čas čekání na různé typy zámků. Zaznamenány jsou pouze ty situace, kdy se čeká na zámek déle než jednu sekundu (stejně jako např. log_lock_waits
+, které je v nyní ve výchozí konfiguraci zapnuté). Bohužel zámky, které trvají cca 100ms, mající nepříjemný dopad na dotazy kolem 10ms, zde neuvidíme:
+SELECT * FROM pg_stat_lock ; ┌──────────────────┬───────┬───────────┬───────────────────┬───────────────────────────────┐ │ locktype │ waits │ wait_time │ fastpath_exceeded │ stats_reset │ ╞══════════════════╪═══════╪═══════════╪═══════════════════╪═══════════════════════════════╡ │ relation │ 0 │ 0 │ 0 │ 2026-04-17 07:43:12.415431+02 │ │ extend │ 0 │ 0 │ 0 │ 2026-04-17 07:43:12.415431+02 │ │ frozenid │ 0 │ 0 │ 0 │ 2026-04-17 07:43:12.415431+02 │ │ page │ 0 │ 0 │ 0 │ 2026-04-17 07:43:12.415431+02 │ │ tuple │ 0 │ 0 │ 0 │ 2026-04-17 07:43:12.415431+02 │ │ transactionid │ 0 │ 0 │ 0 │ 2026-04-17 07:43:12.415431+02 │ │ virtualxid │ 0 │ 0 │ 0 │ 2026-04-17 07:43:12.415431+02 │ │ spectoken │ 0 │ 0 │ 0 │ 2026-04-17 07:43:12.415431+02 │ │ object │ 0 │ 0 │ 0 │ 2026-04-17 07:43:12.415431+02 │ │ userlock │ 0 │ 0 │ 0 │ 2026-04-17 07:43:12.415431+02 │ │ advisory │ 0 │ 0 │ 0 │ 2026-04-17 07:43:12.4154...
+(Pokracovani na webu)

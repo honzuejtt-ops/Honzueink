@@ -1,3 +1,137 @@
+|T|PostgreSQL 19: zmenšení tabulek pomocí REPACK bez obav|D|29.04.2026 22:00|P|O předchozích verzích jsem napsal, že změny byly primárně interní. Devatenáctka je jiná. Tam je viditelných změn opravdu hodně. Nová verze je pelmelem...|X|Administrace
+Co se dozvíte v článku
+Bloating tabulek může být problém. Skoro všude jsem se setkal se situací, kdy „mazací“ skript přestal fungovat (z různých důvodů), přičemž se tato chyba detekovala příliš pozdě, kdy dotčené tabulky měly místo jednotek GB například desítky GB. To už musí zaúřadovat VACUUM FULL
+, což často znamená vynucenou plánovanou odstávku (kvůli držení exkluzivního zámku). Je to letitý problém, který zkušenější uživatelé řešili buďto pečlivějším monitoringem, v některých případech partišningem (partitioning), případně extenzemi pg_repack
+a pg_squeeze
+.
+Autor posledně jmenované extenze Tonda (Antonín Houska) spolu s Alvarem (Alvaro Herrera) poslední dva roky pracovali na integraci pg_squeeze
+do jádra Postgresu. Paradoxně příkaz, který bude provádět zdrcnutí tabulek, se bude jmenovat REPACK
+. Základem je logická replikace – zadaná tabulka se lokálně zreplikuje (vytvoří se její nová kopie, a tím se zbaví vnitřního neobsazeného místa). Co je zásadní, je možnost použít volbu CONCURRENTLY
+. S touto volbou příkaz nepoužije exkluzivní zámek. Tudíž je možné jej použít za provozu. Nutnou podmínkou je existence primárního klíče (a unikátního indexu).
+REPACK (CONCURRENTLY, VERBOSE) obce; INFO: repacking "public.obce" in physical order INFO: "public.obce": found 0 removable, 6250 nonremovable row versions in 59 pages DETAIL: 0 dead row versions cannot be removed yet. CPU: user: 0.00 s, system: 0.00 s, elapsed: 0.00 s. REPACK
+Kromě toho, že příkaz REPACK
+nahrazuje příkaz VACUUM FULL
+, tak tento příkaz ještě nahrazuje příkaz CLUSTER
+, kterým se tabulka fyzicky (jednorázově) přeuspořádá podle zadaného indexu.
+Možná jste si všimli, že dotaz běžící pod příkazem EXPLAIN ANALYZE
+je výrazně pomalejší. Důvodem je měření času – executor, v tomto režimu, neustále poptává aktuální čas, a to má brutální režii. U větších dotazů se vyplatí použít volbu TIMING OFF
+. V 19 na x86 se místo systémového času použíjí takty CPU. Je to výrazně rychlejší – zatímco na osmnáctce mi jednoduchý testovací dotaz běžel 2.5× pomalejší v explainu, na devatenáctce pouze 1.5× pomaleji.
+Malou velkou změnou je vypnutí JIT ve výchozí konfiguraci. JIT se objevil v Postgresu 11, a v Postgresu 12 byl zapnutý ve výchozí konfiguraci. Bohužel se zjistilo, že většině uživatelů, kteří Postgres používají pro OLTP, dělá víc škody než užitku. Došlo to až do stavu, kdy se uživatelům doporučovalo, neoficiálně, po instalaci JIT vypnout. Je tam víc problémů. clang
+, na kterém je to postavené, v novějších verzích kompiluje lépe, ale pomaleji. Existují alternativní implementace JIT, ale všechny jsou více než méně experimentální. Druhým problémem je model, na jehož základě se JIT aktivuje.
+Tento model jednak nedokáže dobře odhadnout náročnost „jitifikace“ – inliningu, a navíc je citlivý na přestřelení odhadu počtu řádek. Ohledně modelu a citlivosti na odhady pochybuji, že se dá něco dělat. Alternativní implementace JIT mají výrazně nižší režii. Přijde mi to ale jako slepá cesta. Budoucnost vidím v integraci vektorového executoru a vektorových funkcí (tak jak to používá DuckDB). Může to znamenat, že Postgres bude mít duální implementace funkcí (pro skalární parametr, a pro vektor parametrů).
+Nově lze vytvořit replikační slot pro logickou replikaci, bez nutnosti mít konfiguraci wal_level=logical
+. Postačuje nastavení replica
+, což je výchozí nastavení. Jakmile je logický replikační slot aktivní, interně se úroveň zápisu do transakčního logu nastaví na logical
+. Jaký je aktuální stav zjistíte v konfigurační proměnné effective_wal_level
+.
+Další bombou je možnost zapínat nebo vypínat kontrolní součty (na úrovni datových stránek) za běhu. Kontrolní součty jsou v Postgresu už relativně dlouho, a ačkoliv na dnešním hardware je jejich režie zanedbatelná, tak určitě bude dost databází, kde nebudou zapnuté. Zapnutí kontrolních součtů vyžadovalo odstávku úměrnou velikosti databáze. Navíc se silně doporučuje po zapnutí součtů znovu zreplikovat všechny fyzické repliky. Výhodou je diagnostika, možnost identifikovat poškozené stránky (a přeskočit je), možnost vyrobit replikovaný server ze starého primárního příkazem pg_rewind
+.
+Naplánovat a provést delší odstávku někde nemusí být jednoduché (nebo to může být skoro nemožné). U jednoho mého klienta zapnutí kontrolních součtů na cca 2TB databázi trvalo cca 2 hodiny (na vlastním hardware z roku 2025). Zapnutí se provede voláním funkce pg_enable_data_checksums
+. Nastavením volitelných parametrů lze běh funkce zpomalit, tak aby nepřetěžovala IO. Vypnutí provede funkce pg_disable_data_checksums
+. Stav procesu můžeme vidět v pohledu pg_stat_progress_data_checksums
+.
+Snad se už konečně vyřešil problém s upgradem databází obsahující extrémně velký počet LO (large objects). Nově binární upgrade ( pg_upgrade
+) použije pro export metadat LO příkaz COPY
+místo původní sekvence příkazů:
+-- původní sekvence SELECT pg_catalog.lo_create('5432'); ALTER LARGE OBJECT 5432 OWNER TO alice; GRANT SELECT ON LARGE OBJECT 5432 TO bob; -- nově COPY pg_catalog.pg_largeobject_metadata (oid, lomowner, lomacl) FROM stdin; 5432 16384 {alice=rw/alice,bob=r/alice} \. COPY pg_catalog.pg_shdepend (dbid, classid, objid, objsubid, refclassid, refobjid, deptype) FROM stdin; 5 2613 5432 0 1260 16384 o 5 2613 5432 0 1260 16385 a \.
+Nová implementace by měla být řádově rychlejší.
+Konečně se dotáhlo do konce začlenění podpory více formátů v příkazu pg_dumpall
+. Postgres má dva základní příkazy pro export (backup) – pg_dump
+a pg_dumpall
+. Historicky tyto příkazy podporovaly pouze plain text
+formát. Postupem času pg_dump
+získal možnost exportu do custom
+, tar
+a dictionary
+formátu plus import příkazem pg_restore
+umožňoval paralelní import více tabulek. pg_dumpall
+byl díky podpoře pouze SQL formátu dost omezený.
+To se nyní změnilo, a v pg_dumpall
+jsou podporovány všechny formáty, které podporuje pg_dump
+. Vypadá to trochu jako workaround. V případě, že se použije jiný než plain text
+(SQL) formát, tak se vyrobí adresář, který do podadresářů uloží výstup z pg_dumpu
+. pg_restore
+umí s touto adresářovou strukturou pracovat. Tato možnost se dostala už do 18tky, ale byla na poslední chvíli stažena.
+V pg_rewind
+zredukovalo kopírování WAL logů z nového primárního serveru na budovanou repliku a to tak, že se budou kopírovat pouze WAL logy vzniklé po rozpadu replikace. V mnoha scénářích se tím výrazně urychlí běh tohoto příkazu.
+Doposud autovacuum vybíralo tabulky k vakuování na základě porovnání vypočítaných koeficientů a prahových hodnot. Pořadí vybraných tabulek záleželo na fyzickém pořadí v systémové tabulce pg_class
+. Nově se vakuum bude prioritizovat podle míry vzdálenosti od prahu. Dalším kritériem je stáří tabulky (počet transakcí od freeze). Stará implementace byla férová v tom, že garantovala, že každá tabulka bude zvakuovaná a že žádná tabulka nebude „předbíhat“ ve frontě. Na druhou stranu se mohlo stát, že tabulka s intenzivnějším provozem čekala příliš dlouho a došlo k zbytečnému bloatingu.
+Nová implementace se snaží být chytřejší. Uvidíme, jak to bude fungovat. Moje zkušenost je taková, že a) není dobré dávat do Postgresu příliš dynamická data, b) je dobré si nastavit počet aktivních autovacuum workerů tak, aby byla určitá rezerva, c) není dobré vytěžovat IO na maximum (je dobré mít dostatečně nadimenzované IO a mít nějakou rezervu). Skóre tabulek můžeme sledovat v pohledu pg_stat_autovacuum_score
+:
+SELECT * FROM pg_stat_autovacuum_scores WHERE score > 0.05; ┌─[ RECORD 1 ]────────┬──────────────────────┐ │ relid │ 1262 │ │ schemaname │ pg_catalog │ │ relname │ pg_database │ │ score │ 0.15936254737880529 │ │ xid_score │ 1e-07 │ │ mxid_score │ 0 │ │ vacuum_score │ 0.0793650769622719 │ │ vacuum_insert_score │ 0.003998400542165933 │ │ analyze_score │ 0.15936254737880529 │ │ do_vacuum │ f │ │ do_analyze │ f │ │ for_wraparound │ f │ ╞═[ RECORD 2 ]════════╪══════════════════════╡ │ relid │ 1214 │ │ schemaname │ pg_catalog │ │ relname │ pg_shdepend │ │ score │ 0.12 │ │ xid_score │ 1.15e-07 │ │ mxid_score │ 0 │ │ vacuum_score │ 0 │ │ vacuum_insert_score │ 0.006 │ │ analyze_score │ 0.12 │ │ do_vacuum │ f │ │ do_analyze │ f │ │ for_wraparound │ f │ └─────────────────────┴──────────────────────┘
+Nově autovacuum může použítVACUUM
+s podporou paralelismu.
+Přehled o aktuálním stavu recovery je k dispozici v pohledu pg_stat_recovery
+. V pohledu pg_stat_statements
+jsou dva nové sloupce generic_plan_calls
+a custom_plan_calls
+zobrazující kolikrát předpřipravený příkaz (prepared statement) použil generický nebo zákaznický plán. Nový sloupec wal_fpi_bytes
+zobrazuje velikost zápisu tzv. plných stránek do transakčního logu. Vysoká hodnota může signalizovat nepříjemně velkou četnost vynucených checkpointů (je nutné zvednout max_wal_size
+případně checkpoint_timeout
+). V novém pohledu pg_stat_lock
+uvidíme počet a celkový čas čekání na různé typy zámků. Zaznamenány jsou pouze ty situace, kdy se čeká na zámek déle než jednu sekundu (stejně jako např. log_lock_waits
+, které je v nyní ve výchozí konfiguraci zapnuté). Bohužel zámky, které trvají cca 100ms, mající nepříjemný dopad na dotazy kolem 10ms, zde neuvidíme:
+SELECT * FROM pg_stat_lock ; ┌──────────────────┬───────┬───────────┬───────────────────┬───────────────────────────────┐ │ locktype │ waits │ wait_time │ fastpath_exceeded │ stats_reset │ ╞══════════════════╪═══════╪═══════════╪═══════════════════╪═══════════════════════════════╡ │ relation │ 0 │ 0 │ 0 │ 2026-04-17 07:43:12.415431+02 │ │ extend │ 0 │ 0 │ 0 │ 2026-04-17 07:43:12.415431+02 │ │ frozenid │ 0 │ 0 │ 0 │ 2026-04-17 07:43:12.415431+02 │ │ page │ 0 │ 0 │ 0 │ 2026-04-17 07:43:12.415431+02 │ │ tuple │ 0 │ 0 │ 0 │ 2026-04-17 07:43:12.415431+02 │ │ transactionid │ 0 │ 0 │ 0 │ 2026-04-17 07:43:12.415431+02 │ │ virtualxid │ 0 │ 0 │ 0 │ 2026-04-17 07:43:12.415431+02 │ │ spectoken │ 0 │ 0 │ 0 │ 2026-04-17 07:43:12.415431+02 │ │ object │ 0 │ 0 │ 0 │ 2026-04-17 07:43:12.415431+02 │ │ userlock │ 0 │ 0 │ 0 │ 2026-04-17 07:43:12.415431+02 │ │ advisory │ 0 │ 0 │ 0 │ 2026-04-17 07:43:12.4154...
+(Pokracovani na webu)|E|
+|T|Podpora funkcionálního programování v Pythonu: dynamický výběr (dispatch)|D|29.04.2026 22:00|P|Dnes se zaměříme na popis techniky nazvané dynamický výběr (dynamic dispatch) v Pythonu. Ve standardní knihovně je podporován single dispatch, a to ja...|X|Podpora funkcionálního programování v Pythonu: dynamický výběr (dispatch)
+Co se dozvíte v článku
+- Podpora funkcionálního programování v Pythonu: dynamický výběr (dispatch)
+- Dynamický výběr – dynamic dispatch
+- Výběr na základě jediné hodnoty nebo více hodnot? single dispatch, multiple dispatch
+- Krátké zopakování – standardní knihovna functools
+- Dekorátor @singledispatch
+- Úplný zdrojový kód prvního demonstračního příkladu, změna názvu funkce
+- Rozpoznání parametru typu NoneType
+- Varianty funkcí s plnými typovými informacemi
+- Komplikovanější varianty využití dekorátoru @singledispatch
+- Dekorátor @singledispatchmethod: dynamický výběr metody
+- Základní způsob realizace dynamického výběru metody
+- Kombinace dekorátorů @staticmethod a @singledispatchmethod
+- Komplikovanější varianty využití dekorátoru @singledispatchmethod
+- Dynamický výběr na základě typů většího množství parametrů volané funkce
+- Balíček multipledispatch
+- Příklady použití dekorátoru @dispatch
+- Dynamický výběr a statické typové kontroly
+- Statické typové kontroly a dekorátor @dispatch z balíčku multipledispatch
+- Repositář s demonstračními příklady
+- Odkazy na Internetu
+Před třemi lety vycházel na Rootu krátký seriál Funkcionální programování v Pythonu, ve kterém jsme se zabývali různými funkcionálními technikami, které jsou dostupné pro multiparadigmatický jazyk Python. Tento jazyk se stal úspěšný mj. i proto, že se do značené míry dokáže přizpůsobit potřebám programátora. To v praxi znamená, že menší skripty a nástroje lze psát prakticky čistě imperativně (ovšem strukturovaně) a pro rozsáhlejší aplikace Python podporuje klasické třídně orientované objektově orientované programování (OOP).
+To ovšem není vše, protože i v Pythonu nalezneme poměrně velké množství vlastností převzatých z funkcionálních jazyků (asi nejviditelnější vlastnost: funkce jsou zde plnohodnotnými typy a tím pádem jsou v Pythonu podporovány funkce vyššího řádu, lokální funkce atd. atd.) a dokonce pro něho vznikly knihovny primárně určené pro podporu funkcionálního přístupu (příkladem je funzy, toolz atd).
+V seriálu jsme si popsali i mnoho funkcí a dekorátorů dostupných ve standardní knihovně functools. Dnes se zaměříme na popis programátorské techniky nazývané dynamický výběr (dynamic dispatch). Většinou se rozlišuje mezi dynamickým výběrem na základě jednoho (typicky prvního) parametru. V takovém případě se používá termín single dispatch. Podpora pro něj je součástí již výše zmíněné knihovny functools. Rozšířením této techniky vzniká multiple dispatch. Ten sice není ve standardní knihovně functools podporován, ale asi nebude velkým překvapením, že pro Python vznikly další knihovny, které multiple dispatch implementují. I s možnostmi těchto knihoven se dnes seznámíme.
+Dynamický výběr – dynamic dispatch
+V některých programovacích jazycích se můžeme setkat s termínem dynamický výběr (dynamic dispatch). Jedná se o techniku, která slouží k výběru nějaké polymorfní operace; typicky se jedná o volání funkce nebo metody, resp. přesněji řečeno o výběr varianty funkce nebo metody, která se má zavolat. Důležité přitom je, že tento výběr je proveden až v čase běhu aplikace (runtime) a nikoli už při překladu (compile time) nebo v případě Pythonu při načítání modulu s jeho průběžnou kompilací do bajtkódu.
+V tomto článku se omezíme na dvě polymorfní operace, a to konkrétně na již zmíněný výběr volání funkcí a metod, a to na základě typu předávaného parametru nebo většího množství parametrů. Jedná se o takzvaný ad-hoc polymorfismus (každá varianta volané funkce nebo metody se totiž může chovat odlišně, na rozdíl od generických funkcí, které jsou příkladem parametrického polymorfismu).
+Výběr na základě jediné hodnoty nebo více hodnot? single dispatch, multiple dispatch
+V základní knihovně programovacího jazyka Python najdeme implementaci dynamického výběru na základě typu prvního parametru funkce nebo druhého parametru metody. Tato technika dynamického výběru se nazývá single dispatch a její výhodou je snadná implementace (s využitím slovníku). Další předností single dispatche je jednoduché rozhodování na základě typu (typy tvoří hierarchickou strukturu). Ovšem v některých programovacích jazycích, mezi které patří různé dialekty LISPu nebo jazyk Julia, se setkáme i s možností výběru funkce či metody na základě typů všech parametrů. Tato technika se – zcela logicky – nazývá multiple dispatch. Přímo v základních knihovnách Pythonu multiple dispatch sice nenalezneme, ovšem existuje hned několik jeho realizací ve formě knihovny, kterou je možné snadno nainstalovat a používat. Obecně ovšem platí, že multiple dispatch je pomalejší a mohou nastat problémy s výběrem správné funkce (s ohledem na hierarchii datových typů).
+Krátké zopakování – standardní knihovna functools
+V úvodní kapitole jsme se zmínili o existenci standardní knihovny nazvané functools, která vývojářům, kteří používají programovací jazyk Python, nabízí některé funkcionální techniky. Konkrétně jsme se seznámili s funkcí vyššího řádu nazvanou reduce, která je zde definována (což je ostatně zajímavé, protože její „sesterské“ funkce map a filter jsou umístěny ve výchozím jmenném prostoru Pythonu a není je tedy nutné importovat – jednoduše se dají přímo zavolat).
+V knihovně functools nalezneme mnohé zajímavé funkce a dekorátory, jejichž jména i verze Pythonu, ve které byly uvedeny, jsou vypsány v tabulce:
+Dnes nás budou zajímat pouze dekorátory singledispatch a singledispatchmethod.
+Dekorátor @singledispatch
+V praktické části dnešního článku si nejdříve ukážeme, jakým způsobem se používá dekorátor nazvaný singledispatch (zapisuje se pochopitelně i se zavináčem na začátku):
+singledispatch(func) Single-dispatch generic function decorator. Transforms a function into a generic function, which can have different behaviours depending upon the type of its first argument. The decorated function acts as the default implementation, and additional implementations can be registered using the register() attribute of the generic function.
+V prvním demonstračním příkladu je definována jednoduchá funkce nazvaná function (což není rezervované klíčové slovo):
+def function(arg): print("Original function with argument", arg, "that has type", type(arg))
+Povšimněte si, že tato funkce akceptuje argument libovolného typu. Nyní tuto funkci obalíme dekorátorem @singledispatch:
+from functools import singledispatch @singledispatch def function(arg): print("Original function with argument", arg, "that has type", type(arg))
+Touto operací jsme získali novou funkci, která se ovšem chová dosti odlišným způsobem než původní funkce function! Nová funkce se taktéž používá jako dekorátor a umožňuje realizovat dynamický výběr na základě typu prvního (zde jediného) předaného parametru. Můžeme například rozlišit mezi voláním funkce s předáním parametru typu celé číslo, řetězec nebo seznam:
+@function.register def _(arg: int): print("Integer variant with argument:", arg) @function.register def _(arg: str): print("String variant with argument:", arg) @function.register def _(arg: list): print("List variant with argument:", arg)
+Příklad volání této funkce – ve skutečnosti se volá jedna z definovaných variant a určení, o kterou variantu se jedná, je ponecháno až na čas běhu (runtime):
+function(42) function("foo") function(["foo", "bar", "baz"]) function(1.4142) function(None)
+Výsledky by mohly vypadat následovně:
+Integer variant with argument: 42 String variant with argument: foo List variant with argument: ['foo', 'bar', 'baz'] Original function with argument 1.4142 that has type <class 'float'> Original function with argument None that has type <class 'NoneType'>
+V tomto případě se tedy zavolala první, druhá, třetí a následně dvakrát původní funkce.
+Úplný zdrojový kód prvního demonstračního příkladu, změna názvu funkce
+Úplný zdrojový kód demonstračního příkladu z předchozí kapitoly vypadá následovně:
+from functools import singledispatch @singledispatch def function(arg): print("Original function with argument", arg, "that has type", type(arg)) @function.register def _(arg: int): print("Integer variant with argument:", arg) @function.register def _(arg: str): print("String variant with argument:", arg) @function.register def _(arg: list): print("List variant with argument:", arg) function(42) function("foo") function(["foo", "bar", "baz"]) function(1.4142) function(None)
+Namísto jména function samozřejmě můžeme použít jakýkoli jiný platný identifikátor, například foo. Změní se jak jméno původní funkce, tak i všechny následující dekorátory:
+from functools import singledispatch @singledispatch def foo(arg): print("Original function foo with argument", arg, "that has type", type(arg)) @foo.register def _(arg: int): print("Integer variant with argument:", arg) @foo.register def _(arg: str): print("String variant with argument:", arg) @foo.register def _(arg: list): print("List variant with argument:", arg) foo(42) foo("foo") foo(["foo", "bar", "baz"]) foo(1.4142) foo(None)
+Výsledky by se neměly odlišovat od prvního příkladu:
+Integer variant with argument: 42 String variant with argument: foo List variant with argument: ['foo', 'bar', 'baz'] Original function foo with argument 1.4142 that has type <class 'float'> Original function foo with argument None that has type <class 'NoneType'>
+Rozpoznání parametru typu NoneType
+V programovacím jazyku Python se v hierarchii datových typů nachází i typ nazvaný NoneType, jehož jedinou hodnotou je None. I typ parametru nastaveného na None je snadné při dynamickém výběru rozpoznat, což si ukážeme v dalším demonstračním příkladu. Povšimněte si, že zapsaný typ je None a nikoli NoneType:
+from functools import singledispatch @singledispatch def function(arg): print("Original function with argument", arg, "that has type", type(arg)) @function.register def _(arg: int): print("Integer variant with argument:", arg) @function.register def _(arg: str): print("String variant with argument:", arg) @function.register def _(arg: list): print("List vari...
+(Pokracovani na webu)|E|
 |T|Cyklistickou aplikaci Rouvy kupuje od Pale Fire Capital globální obr Zwift|D|29.04.2026 18:30|P|Česká cyklistická aplikace Rouvy, virtuální trenažer, který staví trénink na reálných trasách a videích, má nového majitele. Stala se jím globální onl...|X|Česká cyklistická aplikace Rouvy, virtuální trenažer, který staví trénink na reálných trasách a videích, má nového majitele. Stala se jím globální online fitness platforma Zwift. Obě firmy si mají zachovat samostatný provoz, vlastní roadmapy i předplatné. Finanční podmínky transakce nebyly zveřejněny, uvádí firmy v tiskové zprávě.
 Spoluzakladatel a CEO Zwiftu Eric Min uvádí, že indoor cyklistika za poslední rok roste nejrychleji od pandemie covidu. „Vidíme, že stále více lidí se k cyklistice dostává poprvé právě prostřednictvím indoorového tréninku, přičemž hledají aktivitu, která podpoří jejich aktivní životní styl a zaměří se na zdraví v dlouhodobém horizontu,“ komentuje.
 Zwift je globální lídr v oblasti technologií ve sportu, který má podle loňských čísel víc než milion aktivních předplatitelů a víc než tři miliony lidí měli na platformě účet. „S podporou Zwiftu a jeho hardwarového ekosystému teď máme příležitost vytvářet ještě více zážitků ve světě indoor cyklistické reality,“ komentuje Petr Samek, spoluzakladatel a CEO. Přitom uvádí, že v Rouvy má figurovat stejný tým. Platformu Rouvy koupila v roce 2021 skupina Pale Fire Capital.

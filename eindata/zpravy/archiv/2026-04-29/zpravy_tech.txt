@@ -1,3 +1,123 @@
+|T|Z obyčejného kola elektrokolo za pět minut. Cyplore se ztratí i na silničním kole, váží jen 1,7 kg|D|29.04.2026 18:00|P|Konverzní kity, které z kola udělají elektrokolo, jsou velké téma a projekt Cyplore je nejnovějším příspěvkem. Prioritou jsou jednoduchá instalace a n...|X|Konverzní kity, které z kola udělají elektrokolo, jsou velké téma a projekt Cyplore je nejnovějším příspěvkem. Prioritou jsou jednoduchá instalace a nízká hmotnost.
+Vyměníte celé zadní kolo, motor je integrovaný v náboji. Baterie je maskovaná jako lahev s pitím a jako lahev s pitím ji připevníte dvěma šrouby do připravených závitů. Pak už jen zacvaknout konektory kabelů a na řídítka připevnit bezdrátový ovladač. Prvotní instalace prý zabere pět minut, každé další nasazení kola a baterie je otázkou minuty.
+Instalace kitu Cyplore:
+Cyplore míří na silniční a gravelové cyklisty, podmínkou je rám s pevnou osou 142 × 12mm (prochází uzavřenými patkami rámu a šroubuje se přímo do závitu v rámu). Základní verze Cyplore One se dodává se zapleteným karbonovým kolem a baterií, všechno dohromady váží 2,5 kg. Levnější varianta Cyplore Flex kromě baterie obsahuje samotný motor, který si můžete zaplést podle libosti. Flex váží 1,7 kg.
+Baterie o velikosti bidonu má udávaný dojezd kolem 50 kilometrů, což v souvislosti s maximální rychlostí 25 km/h vypadá na občasnou pomoc v kopcích. Ostatně po rovinkách silničáři typicky pojedou rychleji a přípomoc by ani nevyužili. V takovém případě se výrobce chlubí integrovanou spojkou, která odpojí motor a náboj pak má minimální odpor srovnatelný s obyčejným nábojem.
+Jinak by se měl Cyplore chovat jako moderní sofistikované elektrokolo – integrovaný wattmetr měří výkon šlapajících nohou a podle toho dávkuje elektrickou přípomoc. Plynule, bez cukání, jako kdyby vaše nohy najednou měly o 250 wattů vyšší výkon. Displej chybí, pokud chcete přesné informace, musíte do mobilní aplikace, nebo systém přes ANT+ připojíte k cyklopočítači. Ovladač slouží k zapnutí/vypnutí a přepínání mezi jízdními režimy Smooth, Agile, Auto a Training.
+Cena a dostupnost
+Cyplore právě rozjíždí kampaň na Kickstarteru. Zapletená varianta One se tam dá koupit za 779 dolarů (16 tis. Kč), verze Flex je za 599 dolarů (15 500 Kč). Později v běžném prodeji budou ceny vyšší: 1 149, resp. 1 519 dolarů.
+Cyplore ve zkratce:
+- výkon: 250W rated power
+- točivý moment: 23 Nm torque
+- dojezd: 50+ km
+- maximální rychlost přípomoci: v EU 25 km/h, v USA 32 km/h
+- nabíjení: konektor USB-C, doba nabíjení 60 minut, kapacita 111Wh, napětí
+- 36V
+- odolnost: IP65
+- hmotnost: varianta Cyplore One 2,5 kg, varianta Cyplore Flex 1,7 kg|E|
+|T|Vybrali jsme nejlepší Wi-Fi routery do domácnosti. Kvalitní lze koupit i za méně než tisíc korun|D|29.04.2026 16:45|P|Nejlevnější routery stojí šest stovek, nejdražší klidně dvacet tisíc. • Vybrali jsme ty nejlepší nebo nejvýhodnější, které podporují Wi-Fi 6 a novější...|X|Ukázat všechny listy najednou
+Chcete internet spolehlivě rozvést po celém domě? Pak je možná čas koupit nový Wi-Fi router, který zapojíte za modem a necháte práci na něm. Na trhu jsou desítky značek, stovky různých modelů, takže pokud se v nich trochu chcete orientovat, přečtěte si článek o tom, jak router vybrat a na co se zaměřit.
+V tomto textu vybereme konkrétní zařízení, která jsou cenově výhodná, případně technicky či designově na vysoké úrovni. Router už totiž nemusí vypadat jako brouk položený na záda s nohama nahoře. Routery s integrovanými anténami mohou dosahovat stejně dobrých výkonů a pokrytí, přitom nebudou tolik poutat pozornost. Nebo naopak pozornost schválně upoutají, protože už ani nepřipomínají síťová zařízení.
+Zaměřili jsme se pouze na routery určené primárně do domácností, které vyžadují jednu krabičku, případně meshe tvořené několika jednotkami. Kdo to se síťováním myslí opravdu vážně a bude chtít internet po celém domě i na zahradě, tak se stejně vydá cestou, že bude mít několik switchů, routerů nebo jen specializovaných access pointů.
+Co je mesh?
+V mesh sítích jsou routery vzájemně propojené a všechny stanice se pro koncové zařízení tváří jako jedna ucelená síť. Při přechodu z místnosti do místnosti nebo z patra do patra tak není potřeba síť měnit. Jednotlivé stanice si telefon nebo notebook předávají mezi sebou a díky tomu vůbec nedochází k přerušení připojení. Prodávají se přímo meshové sady s několika jednotkami, případně samostatné routery s podporou meshe, takže můžete později přikoupit další.
+Ve výběru jsou výhradně routery s podporou Wi-Fi 6 a novějších standardů. Doporučujeme spolehlivé značky s dlouhou podporou. Před nákupem zvažte, jak velký byt či dům budete pokrývat. Dnes už nemá smysl spoléhat se na jedno centrální zařízení, jehož signál dosáhne všude. Mesh sítě to dokrývání hluchých míst velmi zjednodušily. Výrobci jako Asus, TP-Link (a jeho Mercusys) nebo Cudy navíc umožňují do mesh sítí zapojit i jinak samostatné routery. Nemusíte tak nejprve koupit specializovanou sadu, ale vezmete jedno zařízení, a pak případně dokoupíte další podle potřeby.
+Výběr routerů je čistě redakční, v článku jsme produkty seřadili od nejlevnějších po nejdražší. Odkazy vedou na srovnávač cen Heureka.
+Mercusys MR62X
+Nejlevnější s Wi-Fi 6
+Mercusys MR62X se tu a tam objeví v akci za méně než šest set korun. Jde o nejzákladnější šestkový router, který se vyplatí koupit. Stojí za ním spolehlivý výrobce (TP-Link), takže bude mít několikaletou softwarovou podporu. Podporuje EasyMesh a je překvapivě malý, zato má vzhledem k tělu legračně dlouhé antény.
+V českých obchodech stojí až Kč
+Porovnat ceny
+Mercusys co do rychlostí patří k těm nejslabším routerům s Wi-Fi 6. Novější standard navíc poskytuje jen na 5GHz rozhraní, zatímco na 2,4GHz běží na starším Wi-Fi 5. Pokud ale doma nemáte gigabitový internet nebo desítky zařízení, bude vám levný Mercusys stačit.
+Základní parametry
+Bezdrát : Wi-Fi 6, AX1500
+Propustnost: 2,4 GHz (300 Mb/s), 5 GHz (1201 Mb/s)
+Mesh: ano, EasyMesh
+Ethernet : 3× 1 GbE
+Hardware : neznámý
+Další funkce: nic extra
+Pokračování 2 / 14 D-Link DWR-932W
+4G modem na cesty
+Router může být i mobilní. Tento D-Link je jedním z nejdostupnějších modelů s integrovaným 4G modemem, který mobilní síť rozdělí pro až 32 účastníků Wi-Fi. Jde o kapesní krabičku s rozměry 103 x 63 x 13 mm. Připomíná tlustý mobil a jeho úkolem je jej také nahradit.
+V českých obchodech stojí až Kč
+Porovnat ceny
+Ze všech smartphonů si dnes můžete vytvořit hotspot, jenže mobil se tím bude rychle vybíjet. Dedikovaný modem s routerem a 3000mAh akumulátorem ale na jedno nabití poskytne připojení až na 16 hodin. Pak doplníte energii pomocí USB-C.
+Existují i zařízení s 5G modemem nebo rychlejší Wi-Fi, ale D-Link bude pro většinu účelů bez problémů stačit. U mobilních modelů se s kompromisy počítá.
+Základní parametry
+Bezdrát : Wi-Fi 6, AX300
+Propustnost: 2,4 GHz (287 Mb/s), 4G/LTE (150/50 Mb/s)
+Mesh: ne
+Ethernet : ne
+Hardware : neznámý
+Další funkce: 3000mAh akumulátor, slot pro SIM kartu
+Pokračování 3 / 14 Cudy WR3000
+Rychlý a s podporou OpenWrt
+Jde o nejlevnější router s podporou Wi-Fi 6 a celkovou propustností 3000 Mb/s na trhu. Cudy WR3000 nabízí všechny důležité funkce, má webovou administraci i mobilní aplikaci, podporuje VPN nebo sítě pro hosty. Jde také o jedno z nejlevnější zařízení podporující technologii mesh, takže můžete koupit více podobných jednotek a vytvořit jednotnou síť v celém domě, mezi kterými se budou zařízení plynule přepínat. Vzadu najdeme jeden WAN a tři LAN, všechny v gigabitovém provedení.
+V českých obchodech stojí až Kč
+Porovnat ceny
+Cudy potěší také kutily, protože je jedním z routerů podporovaných komunitním systémem OpenWrt. Díky tomu získá skoro nesmrtelnou podporu a mnohem pokročilejší nastavení. Má sice jen 16MB úložiště, ale OpenWrt se do něj vejde. Jestli by se WR3000 něco dalo vytknout, tak jsou to neodnímatelné antény a chybějící USB, který by možnosti zařízení (zvlášť v kombinaci s OpenWrt) posunul ještě dál. Za necelou tisícovku je to i tak dobrá koupě.
+Jen pozor na to, že existuje řada různých modelů s označením WR3000 (v1 a v2), WR3000E (v1 a v2), WR3000H a WR3000S. Liší se v detailech, ale pokud chcete OpenWrt, musíte najít modely H, S, případně u prvních dvou pak první generaci zařízení. V e-shopech už ale často najdete spíš verzi 2.0.
+Základní parametry
+Bezdrát : Wi-Fi 6, AX3000
+Propustnost: 2,4 GHz (574 Mb/s), 5 GHz (2402 Mb/s)
+Mesh: ano, Cudy Mesh
+Ethernet : 4× 1 GbE
+Hardware : 1,2 GHz dualcore, 128 MB RAM, 128 MB flash
+Další funkce: nic extra
+Pokračování 4 / 14 MikroTik hAP ax S
+Nastavíte a neřešíte
+Tohle je nejzajímavější šestkový router od MikroTiku . Je maličký, má přitom z celé nabídky výrobce nejsilnější antény. Na těle je přitom ještě šest síťový konektorů a USB. Tahákem je posílené 5GHz pásmo, které má v praktických testech dosahovat propustnosti až 900 Mb/s.
+V českých obchodech stojí až Kč
+Porovnat ceny
+MikroTik hAP ax S pak zaujme i hračičky. Jednak pokročilým RouterOS 7, který dovolí nastavit první poslední, má ale také dlouhou podporu a výbornou stabilitu. Nezvyklé jsou také hned dva konektory s podporou PoE. Router lze standardně napájet adaptérem s kolíkovou koncovkou, ale v domácí síti se často hodí na nepřístupných místech řešit napájení pomocí Ethernetu. MikroTik v tomto případě má jeden vstupní a jeden výstupní PoE pro zřetězení další jednotky.
+Základní parametry
+Bezdrát : Wi-Fi 6, AX3000
+Propustnost: 2,4 GHz (574 Mb/s), 5 GHz (2402 Mb/s)
+Mesh: ne
+Ethernet : SFP (2,5 Gb/s), 5× 1 GbE
+Hardware : 1 GHz dualcore, 512 MB RAM, 256 MB flash
+Další funkce: 1× USB 2.0, 2× PoE
+Pokračování 5 / 14 Asus TUF Gaming AX3000 V2
+Herní router
+TUF Gaming ladí s designem herních notebooků, má i několik funkcí optimalizujících síťové přenosy ve prospěch multiplayerových klání, v základu je to stále kvalitní router i do běžné domácnosti. Asus je rychlý, umí se spojit do mesh sítí a má detailní webovou administraci i mobilní aplikaci.
+V českých obchodech stojí až Kč
+Porovnat ceny
+V naší recenzi uspěl s hodnocením 8,8/10. Potěšil nás dosahem signálu, nízkou spotřebou a obstojně rychlým USB, které po připojení flashky nebo externího disku promění router i v zálohovací centrum nebo síťové úložiště. Podporuje také 4G/5G modemy.
+Základní parametry
+Bezdrát : Wi-Fi 6, AX3000
+Propustnost: 2,4 GHz (574 Mb/s), 5 GHz (2402 Mb/s)
+Mesh: ano, AiMesh
+Ethernet : 1× 2,5 GbE, 4× 1 GbE
+Hardware : 1,7 GHz quadcore, 512 MB RAM, 256 MB flash
+Další funkce: 1× USB 3.2
+Pokračování 6 / 14 Mercusys MR47BE
+Dostupný třípásmový s Wi-Fi 7
+Mercusys MR47BE vyráběný TP-Linkem je jeden z nejlevnějších třípásmových routerů s podporou Wi-Fi 7 na českém trhu. Jde o základní model třídy BE9300, který komunikuje v pásmech 2,4; 5 i 6 GHz. Podporuje až 320MHz kanály, modulaci 4K-QAM a funkci Multi-Link Operation (MLO) pro spojení více pásem dohromady, takže pokud máte mobil, tablet nebo počítač s Wi-Fi 7, tak spojení bude rychlejší než s ekvivalentním šestkovým routerem.
+V českých obchodech stojí až Kč
+Porovnat ceny
+Mercusys má šest neodnímatelných všesměrových antén s podporou beamformingu. Nabízí 2,5GbE WAN a tři stejně rychlé LANy. USB pro připojení externího disku bohužel chybí. Router umí vytvořit i síť pro hosty s odděleným SSID. Stejně jako u mateřského TP-Linku potěší funkce EasyMesh pro jednoduchou tvorbu mesh sítí, stačí koupit další kompatibilní zařízení. Veškeré nastavení pak v češtině probíhá ve webovém rozhraní či prostřednictvím mobilní aplikace.
+Základní parametry
+Bezdrát : Wi-Fi 7, BE9300
+Propustnost: 2,4 GHz (574 Mb/s), 5 GHz (2882 Mb/s), 6 GHz (5764 Mb/s)
+Mesh: ano, EasyMesh
+Ethernet : 4× 2,5 GbE
+Hardware : neznámý
+Další funkce: nic extra
+Pokračování 7 / 14 MikroTik hAP be3 Media
+Legendární výrobce ze sebe vyždímal to nejlepší
+Čerstvá novinka lotyšského výrobce je jeho vůbec nejambicióznějším zařízením pro domácnosti. MikroTik hAP be3 Media má skoro vše, co budou nároční uživatelé potřebovat. Je třípásmový, takže konečně nabízí i frekvenci 6 GHz. Na těle má pět 2,5GbE portů, přičemž na jednom tradičně najdeme i napájení PoE. Standardně se ale dodává s kolíkovým adaptérem. Na boku pod krytem najdeme hned tři USB a také čtečku karet microSD.
+V českých obchodech stojí až Kč
+Porovnat ceny
+Uvnitř tiká čtyřjádrový procesor od Qualcommu s 2 GB RAM a 512MB úložištěm. MikroTik konečně přidal také podporu kontejnerových aplikací, takže zde máme zajímavou alternativu pro český Turris. Na hAP be3 Media tak můžou běžet zálohovací aplikace, hosting, trezory pro správu hesel apod.
+Vedle Wi-Fi 7 firma poprvé implementovala také Bluetooth a Thread (a Matter), protože chce, aby tento router byl i centrem chytré domácnosti. To vše pak běží na odladěném RouterOS v7, což je sám o sobě důvod, proč pokročilí uživatelé volí tuto značku.
+Základní parametry
+Bezdrát : Wi-Fi 7, BE9300
+Propustnost: 2,4 GHz (574 Mb/s), 5 GHz (2882 Mb/s), 6 GHz (5764 Mb/s)
+Mesh: ne
+Ethernet : 5× 2,5 GbE
+Hardware : 1,5 GHz quadcore, 2 GB RAM, 512 MB flash
+Další fun...
+(Pokracovani na webu)|E|
 |T|Corsair má 12+4pinový kabel, který zabrání roztavení konektorů GPU a funguje s jakýmkoli zdrojem|D|29.04.2026 16:37|P|Corsair ThermalProtect je aktivní ochrana proti přehřátí napájecích kabelů s grafikami GeForce, která je zabudovaná přímo v samotném kabelu, takže nep...|X|Před dvěma týdny jsme probírali speciální kabely ROG Equalizer od Asusu, které mají za cíl zabránit roztavení či spálení 12+4pinových konektorů u GPU a potažmo zdroje kvůli známé nespolehlivosti tohoto návrhu napájení grafických karet. Nevýhoda je, že zvýšená bezpečnost od Asusu stojí 50 $ navíc k investici do GPU a případně zdroje. Corsair teď také uvádí podobné řešení, které bude ovšem stát jenom polovinu.
 Corsair ThermalProtect
 Corsair je sám jedním z dodavatelů zdrojů, nicméně řešení, které firma teď uvádí pod označením Corsair ThermalProtect, není vázané jenom na její zdroje a má fungovat se všemi, které mají modulární konektor pro připojení přímého 12+4pinového kabelu 12VHPWR nebo pod novějším označením 12V-2×6. Zatím se má patrně prodávat jen samostatně, a to v bílé a černé variantě, není přibalován ke zdrojům Corsairu.

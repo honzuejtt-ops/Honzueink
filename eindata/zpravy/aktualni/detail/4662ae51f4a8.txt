@@ -1,0 +1,103 @@
+Ukázat všechny listy najednou
+Chcete internet spolehlivě rozvést po celém domě? Pak je možná čas koupit nový Wi-Fi router, který zapojíte za modem a necháte práci na něm. Na trhu jsou desítky značek, stovky různých modelů, takže pokud se v nich trochu chcete orientovat, přečtěte si článek o tom, jak router vybrat a na co se zaměřit.
+V tomto textu vybereme konkrétní zařízení, která jsou cenově výhodná, případně technicky či designově na vysoké úrovni. Router už totiž nemusí vypadat jako brouk položený na záda s nohama nahoře. Routery s integrovanými anténami mohou dosahovat stejně dobrých výkonů a pokrytí, přitom nebudou tolik poutat pozornost. Nebo naopak pozornost schválně upoutají, protože už ani nepřipomínají síťová zařízení.
+Zaměřili jsme se pouze na routery určené primárně do domácností, které vyžadují jednu krabičku, případně meshe tvořené několika jednotkami. Kdo to se síťováním myslí opravdu vážně a bude chtít internet po celém domě i na zahradě, tak se stejně vydá cestou, že bude mít několik switchů, routerů nebo jen specializovaných access pointů.
+Co je mesh?
+V mesh sítích jsou routery vzájemně propojené a všechny stanice se pro koncové zařízení tváří jako jedna ucelená síť. Při přechodu z místnosti do místnosti nebo z patra do patra tak není potřeba síť měnit. Jednotlivé stanice si telefon nebo notebook předávají mezi sebou a díky tomu vůbec nedochází k přerušení připojení. Prodávají se přímo meshové sady s několika jednotkami, případně samostatné routery s podporou meshe, takže můžete později přikoupit další.
+Ve výběru jsou výhradně routery s podporou Wi-Fi 6 a novějších standardů. Doporučujeme spolehlivé značky s dlouhou podporou. Před nákupem zvažte, jak velký byt či dům budete pokrývat. Dnes už nemá smysl spoléhat se na jedno centrální zařízení, jehož signál dosáhne všude. Mesh sítě to dokrývání hluchých míst velmi zjednodušily. Výrobci jako Asus, TP-Link (a jeho Mercusys) nebo Cudy navíc umožňují do mesh sítí zapojit i jinak samostatné routery. Nemusíte tak nejprve koupit specializovanou sadu, ale vezmete jedno zařízení, a pak případně dokoupíte další podle potřeby.
+Výběr routerů je čistě redakční, v článku jsme produkty seřadili od nejlevnějších po nejdražší. Odkazy vedou na srovnávač cen Heureka.
+Mercusys MR62X
+Nejlevnější s Wi-Fi 6
+Mercusys MR62X se tu a tam objeví v akci za méně než šest set korun. Jde o nejzákladnější šestkový router, který se vyplatí koupit. Stojí za ním spolehlivý výrobce (TP-Link), takže bude mít několikaletou softwarovou podporu. Podporuje EasyMesh a je překvapivě malý, zato má vzhledem k tělu legračně dlouhé antény.
+V českých obchodech stojí až Kč
+Porovnat ceny
+Mercusys co do rychlostí patří k těm nejslabším routerům s Wi-Fi 6. Novější standard navíc poskytuje jen na 5GHz rozhraní, zatímco na 2,4GHz běží na starším Wi-Fi 5. Pokud ale doma nemáte gigabitový internet nebo desítky zařízení, bude vám levný Mercusys stačit.
+Základní parametry
+Bezdrát : Wi-Fi 6, AX1500
+Propustnost: 2,4 GHz (300 Mb/s), 5 GHz (1201 Mb/s)
+Mesh: ano, EasyMesh
+Ethernet : 3× 1 GbE
+Hardware : neznámý
+Další funkce: nic extra
+Pokračování 2 / 14 D-Link DWR-932W
+4G modem na cesty
+Router může být i mobilní. Tento D-Link je jedním z nejdostupnějších modelů s integrovaným 4G modemem, který mobilní síť rozdělí pro až 32 účastníků Wi-Fi. Jde o kapesní krabičku s rozměry 103 x 63 x 13 mm. Připomíná tlustý mobil a jeho úkolem je jej také nahradit.
+V českých obchodech stojí až Kč
+Porovnat ceny
+Ze všech smartphonů si dnes můžete vytvořit hotspot, jenže mobil se tím bude rychle vybíjet. Dedikovaný modem s routerem a 3000mAh akumulátorem ale na jedno nabití poskytne připojení až na 16 hodin. Pak doplníte energii pomocí USB-C.
+Existují i zařízení s 5G modemem nebo rychlejší Wi-Fi, ale D-Link bude pro většinu účelů bez problémů stačit. U mobilních modelů se s kompromisy počítá.
+Základní parametry
+Bezdrát : Wi-Fi 6, AX300
+Propustnost: 2,4 GHz (287 Mb/s), 4G/LTE (150/50 Mb/s)
+Mesh: ne
+Ethernet : ne
+Hardware : neznámý
+Další funkce: 3000mAh akumulátor, slot pro SIM kartu
+Pokračování 3 / 14 Cudy WR3000
+Rychlý a s podporou OpenWrt
+Jde o nejlevnější router s podporou Wi-Fi 6 a celkovou propustností 3000 Mb/s na trhu. Cudy WR3000 nabízí všechny důležité funkce, má webovou administraci i mobilní aplikaci, podporuje VPN nebo sítě pro hosty. Jde také o jedno z nejlevnější zařízení podporující technologii mesh, takže můžete koupit více podobných jednotek a vytvořit jednotnou síť v celém domě, mezi kterými se budou zařízení plynule přepínat. Vzadu najdeme jeden WAN a tři LAN, všechny v gigabitovém provedení.
+V českých obchodech stojí až Kč
+Porovnat ceny
+Cudy potěší také kutily, protože je jedním z routerů podporovaných komunitním systémem OpenWrt. Díky tomu získá skoro nesmrtelnou podporu a mnohem pokročilejší nastavení. Má sice jen 16MB úložiště, ale OpenWrt se do něj vejde. Jestli by se WR3000 něco dalo vytknout, tak jsou to neodnímatelné antény a chybějící USB, který by možnosti zařízení (zvlášť v kombinaci s OpenWrt) posunul ještě dál. Za necelou tisícovku je to i tak dobrá koupě.
+Jen pozor na to, že existuje řada různých modelů s označením WR3000 (v1 a v2), WR3000E (v1 a v2), WR3000H a WR3000S. Liší se v detailech, ale pokud chcete OpenWrt, musíte najít modely H, S, případně u prvních dvou pak první generaci zařízení. V e-shopech už ale často najdete spíš verzi 2.0.
+Základní parametry
+Bezdrát : Wi-Fi 6, AX3000
+Propustnost: 2,4 GHz (574 Mb/s), 5 GHz (2402 Mb/s)
+Mesh: ano, Cudy Mesh
+Ethernet : 4× 1 GbE
+Hardware : 1,2 GHz dualcore, 128 MB RAM, 128 MB flash
+Další funkce: nic extra
+Pokračování 4 / 14 MikroTik hAP ax S
+Nastavíte a neřešíte
+Tohle je nejzajímavější šestkový router od MikroTiku . Je maličký, má přitom z celé nabídky výrobce nejsilnější antény. Na těle je přitom ještě šest síťový konektorů a USB. Tahákem je posílené 5GHz pásmo, které má v praktických testech dosahovat propustnosti až 900 Mb/s.
+V českých obchodech stojí až Kč
+Porovnat ceny
+MikroTik hAP ax S pak zaujme i hračičky. Jednak pokročilým RouterOS 7, který dovolí nastavit první poslední, má ale také dlouhou podporu a výbornou stabilitu. Nezvyklé jsou také hned dva konektory s podporou PoE. Router lze standardně napájet adaptérem s kolíkovou koncovkou, ale v domácí síti se často hodí na nepřístupných místech řešit napájení pomocí Ethernetu. MikroTik v tomto případě má jeden vstupní a jeden výstupní PoE pro zřetězení další jednotky.
+Základní parametry
+Bezdrát : Wi-Fi 6, AX3000
+Propustnost: 2,4 GHz (574 Mb/s), 5 GHz (2402 Mb/s)
+Mesh: ne
+Ethernet : SFP (2,5 Gb/s), 5× 1 GbE
+Hardware : 1 GHz dualcore, 512 MB RAM, 256 MB flash
+Další funkce: 1× USB 2.0, 2× PoE
+Pokračování 5 / 14 Asus TUF Gaming AX3000 V2
+Herní router
+TUF Gaming ladí s designem herních notebooků, má i několik funkcí optimalizujících síťové přenosy ve prospěch multiplayerových klání, v základu je to stále kvalitní router i do běžné domácnosti. Asus je rychlý, umí se spojit do mesh sítí a má detailní webovou administraci i mobilní aplikaci.
+V českých obchodech stojí až Kč
+Porovnat ceny
+V naší recenzi uspěl s hodnocením 8,8/10. Potěšil nás dosahem signálu, nízkou spotřebou a obstojně rychlým USB, které po připojení flashky nebo externího disku promění router i v zálohovací centrum nebo síťové úložiště. Podporuje také 4G/5G modemy.
+Základní parametry
+Bezdrát : Wi-Fi 6, AX3000
+Propustnost: 2,4 GHz (574 Mb/s), 5 GHz (2402 Mb/s)
+Mesh: ano, AiMesh
+Ethernet : 1× 2,5 GbE, 4× 1 GbE
+Hardware : 1,7 GHz quadcore, 512 MB RAM, 256 MB flash
+Další funkce: 1× USB 3.2
+Pokračování 6 / 14 Mercusys MR47BE
+Dostupný třípásmový s Wi-Fi 7
+Mercusys MR47BE vyráběný TP-Linkem je jeden z nejlevnějších třípásmových routerů s podporou Wi-Fi 7 na českém trhu. Jde o základní model třídy BE9300, který komunikuje v pásmech 2,4; 5 i 6 GHz. Podporuje až 320MHz kanály, modulaci 4K-QAM a funkci Multi-Link Operation (MLO) pro spojení více pásem dohromady, takže pokud máte mobil, tablet nebo počítač s Wi-Fi 7, tak spojení bude rychlejší než s ekvivalentním šestkovým routerem.
+V českých obchodech stojí až Kč
+Porovnat ceny
+Mercusys má šest neodnímatelných všesměrových antén s podporou beamformingu. Nabízí 2,5GbE WAN a tři stejně rychlé LANy. USB pro připojení externího disku bohužel chybí. Router umí vytvořit i síť pro hosty s odděleným SSID. Stejně jako u mateřského TP-Linku potěší funkce EasyMesh pro jednoduchou tvorbu mesh sítí, stačí koupit další kompatibilní zařízení. Veškeré nastavení pak v češtině probíhá ve webovém rozhraní či prostřednictvím mobilní aplikace.
+Základní parametry
+Bezdrát : Wi-Fi 7, BE9300
+Propustnost: 2,4 GHz (574 Mb/s), 5 GHz (2882 Mb/s), 6 GHz (5764 Mb/s)
+Mesh: ano, EasyMesh
+Ethernet : 4× 2,5 GbE
+Hardware : neznámý
+Další funkce: nic extra
+Pokračování 7 / 14 MikroTik hAP be3 Media
+Legendární výrobce ze sebe vyždímal to nejlepší
+Čerstvá novinka lotyšského výrobce je jeho vůbec nejambicióznějším zařízením pro domácnosti. MikroTik hAP be3 Media má skoro vše, co budou nároční uživatelé potřebovat. Je třípásmový, takže konečně nabízí i frekvenci 6 GHz. Na těle má pět 2,5GbE portů, přičemž na jednom tradičně najdeme i napájení PoE. Standardně se ale dodává s kolíkovým adaptérem. Na boku pod krytem najdeme hned tři USB a také čtečku karet microSD.
+V českých obchodech stojí až Kč
+Porovnat ceny
+Uvnitř tiká čtyřjádrový procesor od Qualcommu s 2 GB RAM a 512MB úložištěm. MikroTik konečně přidal také podporu kontejnerových aplikací, takže zde máme zajímavou alternativu pro český Turris. Na hAP be3 Media tak můžou běžet zálohovací aplikace, hosting, trezory pro správu hesel apod.
+Vedle Wi-Fi 7 firma poprvé implementovala také Bluetooth a Thread (a Matter), protože chce, aby tento router byl i centrem chytré domácnosti. To vše pak běží na odladěném RouterOS v7, což je sám o sobě důvod, proč pokročilí uživatelé volí tuto značku.
+Základní parametry
+Bezdrát : Wi-Fi 7, BE9300
+Propustnost: 2,4 GHz (574 Mb/s), 5 GHz (2882 Mb/s), 6 GHz (5764 Mb/s)
+Mesh: ne
+Ethernet : 5× 2,5 GbE
+Hardware : 1,5 GHz quadcore, 2 GB RAM, 512 MB flash
+Další fun...
+(Pokracovani na webu)

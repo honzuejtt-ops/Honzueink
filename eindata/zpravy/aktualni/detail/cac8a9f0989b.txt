@@ -1,0 +1,16 @@
+O tom, že v telefonu existuje NFC, ví pravděpodobně všichni. Daleko méně lidí však ví, že se NFC dá využít i mnohem kreativnějším způsobem než jen k bezkontaktním platbám. Možnosti využití jsou mnohem širší, stačí jen trocha kreativity a trocha času. Tady je několik praktických tipů, jak z NFC z mobilu dostat víc.
+Základem jsou tzv. NFC tagy. Malé samolepky s čipem, do kterého si uložíte konkrétní akci. Tu pak spustíte jednoduše tím, že k nim přiložíte telefon. Jsou malé, nenápadné a můžete je schovat prakticky kamkoliv.
+Jak NFC tag nastavit?
+K nastavení NFC štítků není zapotřebí žádné speciální elektroniky. Vše zvládnete pohodlně přímo v mobilu. Pro iPhony a iPady poslouží aplikace Zkratky a automatizace, která je součástí systému. Dobře funguje také aplikace IFTTT, která nabízí i plno dalších automatizačních zkratek.
+Pro Android je pak skvělá aplikace NFC Tools, která sice nepatří mezi graficky nejlíbeznější, svůj účel ale plní. Pokročilejší uživatelé mohou sáhnout po aplikaci MacroDroid, která nabízí opravdu bohaté možnosti přizpůsobení a hodí se skvěle i nejen při práci s NFC štítky.
+1. Pracovní režim na jedno klepnutí
+Představte si situaci, kdy vás při práci neustále ruší nekončící příval notifikací. Nalepte NFC tag na stůl nebo notebook a nastavte si, aby po přiložení telefonu zapnul režim soustředění, ztlumil notifikace a filtroval nedůležité hovory. Při odchodu ho stejným způsobem opět vypnete.
+2. Odchod z domu bez starostlivých drobností
+Pokud patříte mezi lidi, kteří před odchodem z domu přepínají telefon do režimu vyzvánění, zhasínají světla, vypínají Wi-Fi nebo zapínají mobilní data, mohou být tyto kroky časem otravné. Opět stačí vzít NFC štítek, přilepit ke dveřím a máte vystaráno. Jedním přiložením uděláte všechny akce, stejným způsobem pak může NFC tag fungovat i při návratu domů.
+3. Sdílení Wi-Fi během vteřiny
+„Prosímtě, jaké je heslo na Wi-Fi?“ Tuto větu slyšel určitě každý, kdo si domů pozval návštěvu. Namísto ručního diktování nebo sdílení skrze QR kód (který k mému překvapení stále spousta lidí neumí načíst) stačí heslo prostě nahrát do NFC štítku a přilepit třeba na konferenční stůl.
+Je to jednoduché, rychlé a překvapivě efektivní.
+4. Automatická navigace v autě
+Jdete po náročném dni z práce a jen představa nastavování navigace domů a spouštění oblíbené hudby ve vás vyvolává hrozné pocity? Nalepte si NFC štítek do auta a jedním přiložením automaticky spustíte navigaci s trasou dolů, zapnete Bluetooth a váš oblíbený playlist či interpreta.
+5. Péče o domácnost a rostliny
+NFC tagy se hodí i pro praktické věci doma. Například na květináče můžete uložit informace o nutné péči nebo záznamy o posledním zalévání. Podobně poslouží i u čisticích prostředků nebo krmivu pro mazlíčky. Lísteček se záznamem nebo návodem se může snadno zničit nebo ztratit, přilepený NFC štítek nikoliv.

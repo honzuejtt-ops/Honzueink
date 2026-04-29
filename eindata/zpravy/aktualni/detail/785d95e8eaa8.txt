@@ -1,0 +1,8 @@
+Pavel „Spajk“ Matějíček a jeho společnost BOIT vyvinuli nové rozšíření do prohlížečů založených na Chromiu (Chrome, Edge, Opera, Brave…). Jmenuje se BOIT Rizikové E-shopy a stáhnout jej můžete zdarma z Chrome Web Storu.
+Doplněk pomůže odhalit podvodné nebo podezřelé internetové obchody, na které vás mohou nalákat e-maily, sociální sítě nebo vyhledávače. Při návštěvě vás upozorní, že něco není v pořádku. Doplněk se řídí seznamem rizikových e-shopů, které eviduje Česká obchodní inspekce.
+Detekován podezřelý e-shop Garmins.cz
+Zároveň ale sám vyhledává různé podezřelé okolnosti, jako když obchod nemá IČO, obchodní podmínky, kontaktní údaje, přijímá jen platby převodem, má nerealistické slevy, chybí mu HTTPS nebo používá podivné domény. Doplněk upozornění zobrazí pomocí popup okna, ale také ikonkou v liště prohlížeče. Skrz něj je možné také obchod nahlásit, případně obchod přidat na whitelist, pokud je opravdu bezpečný.
+BOIT vznikl s přispěním Claude AI, ale stojí za ním i hromada lidského úsilí a testování. Zdrojové kódy jsou k dispozici na GitHubu. Rozšíření samo o sobě nesbírá žádná data a nesleduje uživatele. Autor upozorňuje, že se pouze pravidelně stahuje seznam rizikových obchodů z coi.gov.cz, ale jinak vše běží lokálně.
+Vývoj tím přitom nekončí. Spajk chce vylepšit detekci podezřelého chování, přidat podporu i pro slovenskou SOI, zahrnout další jazyky a chystá se i rozšíření pro další prohlížeče jako Firefox.
+Zdroje a další informace:
+Spajk

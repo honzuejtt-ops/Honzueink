@@ -1,0 +1,28 @@
+Včera jsme psali o kabelech od Corsairu, jejichž cílem je zabránit spálení či roztavení 12+4pinových konektorů na grafických kartách (zejména od Nvidie, která tyto konektory prosazuje u GPU) a zdrojích. Uniklo nám ale, že stejnou ochranu představila ještě předtím také firma Gigabyte u svých zdrojů. Prakticky všichni velcí výrobci grafických karet, kteří současně nabízejí zdroje, už takto přišli s nějakými náplastmi na problém konektorů 12V-2×6.
+Gigabyte T-Guard
+Řešení Gigabyte se jmenuje T-Guard a také pracuje na principu teplotní ochrany, tedy detekce přehřívání kabelu. Zdá se, že princip je stejný, jako ten použitý Corsairem (s tím, že řešení od Gigabyte bylo ale odhaleno dřív, už v polovině dubna). Také ochrana T-Guard přidává na kabel teplotní čidlo umístěné kousek za samotným konektorem na straně GPU. To funguje automaticky bez potřeby nějakého monitorovacího softwaru nebo nastavování. Gigabyte ale zřejmě kabel bude dodávat pouze se svými vlastními zdroji.
+Čidlo opět využívá sense vodiče, které 12+4pinové kabely používají (jsou to ony tenčí „+4“ vodiče) a v případě, kdy detekuje zvýšení teploty nad určitou mez, zastaví přívod napájení do GPU. Přesněji, Gigabyte mluví o throttlingu. Není ale jasné, zda kabel při přehřátí začne signalizovat sníženou kapacitu napájení, aby se příkon grafické karty pouze snížil, nebo zda dojde k úplnému přerušení.
+Se současnými grafickými kartami je ale zřejmě výsledek, že se samostatné GPU vypne. Gigabyte uvádí, že očekávaný projev je, že vám zhasne monitor (je škoda, že současné grafiky nejsou schopné po signalizaci throttlingu pomocí sense vodičů omezit výkon na třeba 75 W a zůstat v provozu).
+Výhodou tohoto způsobu odstavení GPU je, že zmizí zátěž a tím i zahřívání na 12+4pinovém kabelu do GPU a předejde se jeho zničení a poškození dalšího hardwaru (nebo v nejhorším případě vzniku požáru, což už bylo skutečně zaznamenáno), ale není okamžitě vypnutý či restartovaný celý počítač tím, že by zdroj odpojil všechno napájení.
+Gigabyte výslovně uvádí to, že PC poběží dál a je možné ho bezpečně vypnout až poté, co si pozavíráte programy a uložíte práci, kterou byste třeba měli na pozadí otevřenou. Potřebujete k tomu ale připojit monitor do výstupu integrované grafiky (takže smůla s procesory, které ji postrádají), nebo si nějak otevřít vzdálenou plochu, máte-li na to nastavený software.
+Tuto schopnost by mělo mít i řešení Corsairu. Kabely obou firem nejsou podle fotografií řešené úplně stejně. U Corsairu nejdou signální vodiče zdá se až ke zdroji, takže sense signály zřejmě striktně vzato „vidí“ jenom GPU a řešení se spoléhá na to, že bude skutečně reagovat vypnutím či snížením spotřeby, jak to vyžaduje standard. U Gigabyte zdá se sense vodiče jdou až do zdroje, ale nevíme, zda to ve skutečnosti dělá nějaký rozdíl a zda s nimi zdroj pracuje.
+Tyto kabely jsou dodávány jako součást zdrojů Gigabyte Gaming 750GM PG5, 850GM PG5 a 1000GM PG5, a také stejných tří modelů v edici „ICE“.
+Zdroje Gigabyte s kabely T-Guard:
+-
+Gigabyte Gaming 1000GM PG5
+-
+Gigabyte Gaming 850GM PG5
+-
+Gigabyte Gaming 750GM PG5
+-
+Gigabyte Gaming 1000GM PG5 Ice
+-
+Gigabyte Gaming 850GM PG5 Ice
+-
+Gigabyte Gaming 750GM PG5 Ice
+Nespolehlivost 12+4pinového napájení řeší čím dál víc výrobců
+Vedle Gigabyte má své řešení také MSI a Asus a už dříve začal teplotní senzory na kabely připojovat ASRock. Všichni z velkých výrobců základních desek, kteří jsou současně i významnými výrobci grafických karet, ale nabízejí shodou okolností i zdroje (takže mají přímou zkušenost, ale i žádosti o reklamace na obou stranách), tak už nějakým způsobem zareagovali na trvající problémy s tímto problémovým napájecím standardem. Lze to brát jako doklad, že nejde o umělou hysterii zveličující neexistující problém, jak se to občas snaží prezentovat apologeté Nvidie.
+Paradoxně už je to jen původce 12+4pinového standardu napájení (Nvidia), kdo se stále tváří, že problém neexistuje či je jen a pouze vinou uživatelů chybně instalujících kabely. Nvidia v rámci konsorcia PCI-SIG pouze provedla úpravu konektorů zkrácením sense pinů (což je rozdíl, stojící za přejmenováním z původního názvu 12VHPWR na 12V-2×6). Ta měla omezit šanci, že konektor bude používán neúplně zasunutý, nijak jinak ale bezpečnost vylepšena nebyla.
+Jak ukazují pokračující případy tavení a pálení konektorů, není to zdaleka dostatečné řešení a stejně tak nejsou dostatečnou ochranou ani dvoubarevné kabely, s nimiž je snadné si vizuálně ověřit, že je konektor zasunutý pořádně (tuto pomůcku ale kabely T-Guard také poskytují). Podle některých pozorování se mohou 12+4pinové konektory patrně kvůli malé velikosti či termálními cyklování dokonce samovolně vysouvat poté, co byly zprvu korektně zasunuty.
+Skutečným řešením by tak zřejmě bylo jen nahrazení dotyčných konektorů za jiné, které budou mít dostatečnou rezervu (standard 12V-2×6 ponechává na kontaktech jen asi 10 % rezervy pro případ nadměrného proudu, takže pokud proudové zatížení přestane být rovnoměrně rozprostřeno mezi šest kontaktů konektoru, dojde hned k překročení limitů). Funkční teplotní ochrany na kabelech by snad měly zabránit poškození hardwaru. Když k selháním dojde, nevýhodou ale je, že se kvůli nim budou grafiky při hraní vypínat. Snad to přispěje k tlaku, aby se začala řešit fundamentální příčina ve špatném návrhu samotných konektorů.
+Zdroj: Gigabyte

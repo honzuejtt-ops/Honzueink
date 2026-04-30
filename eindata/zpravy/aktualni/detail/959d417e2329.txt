@@ -2,16 +2,15 @@ Konverzní kity, které z kola udělají elektrokolo, jsou velké téma a projek
 Vyměníte celé zadní kolo, motor je integrovaný v náboji. Baterie je maskovaná jako lahev s pitím a jako lahev s pitím ji připevníte dvěma šrouby do připravených závitů. Pak už jen zacvaknout konektory kabelů a na řídítka připevnit bezdrátový ovladač. Prvotní instalace prý zabere pět minut, každé další nasazení kola a baterie je otázkou minuty.
 Instalace kitu Cyplore:
 Cyplore míří na silniční a gravelové cyklisty, podmínkou je rám s pevnou osou 142 × 12mm (prochází uzavřenými patkami rámu a šroubuje se přímo do závitu v rámu). Základní verze Cyplore One se dodává se zapleteným karbonovým kolem a baterií, všechno dohromady váží 2,5 kg. Levnější varianta Cyplore Flex kromě baterie obsahuje samotný motor, který si můžete zaplést podle libosti. Flex váží 1,7 kg.
-Baterie o velikosti bidonu má udávaný dojezd kolem 50 kilometrů, což v souvislosti s maximální rychlostí 25 km/h vypadá na občasnou pomoc v kopcích. Ostatně po rovinkách silničáři typicky pojedou rychleji a přípomoc by ani nevyužili. V takovém případě se výrobce chlubí integrovanou spojkou, která odpojí motor a náboj pak má minimální odpor srovnatelný s obyčejným nábojem.
+Baterie o velikosti bidonu má udávaný dojezd kolem 50 kilometrů , což v souvislosti s maximální rychlostí 25 km/h vypadá na občasnou pomoc v kopcích. Ostatně po rovinkách silničáři typicky pojedou rychleji a přípomoc by ani nevyužili. V takovém případě se výrobce chlubí integrovanou spojkou, která odpojí motor a náboj pak má minimální odpor srovnatelný s obyčejným nábojem.
 Jinak by se měl Cyplore chovat jako moderní sofistikované elektrokolo – integrovaný wattmetr měří výkon šlapajících nohou a podle toho dávkuje elektrickou přípomoc. Plynule, bez cukání, jako kdyby vaše nohy najednou měly o 250 wattů vyšší výkon. Displej chybí, pokud chcete přesné informace, musíte do mobilní aplikace, nebo systém přes ANT+ připojíte k cyklopočítači. Ovladač slouží k zapnutí/vypnutí a přepínání mezi jízdními režimy Smooth, Agile, Auto a Training.
-Cena a dostupnost
-Cyplore právě rozjíždí kampaň na Kickstarteru. Zapletená varianta One se tam dá koupit za 779 dolarů (16 tis. Kč), verze Flex je za 599 dolarů (15 500 Kč). Později v běžném prodeji budou ceny vyšší: 1 149, resp. 1 519 dolarů.
+Cena a dostupnost Cyplore právě rozjíždí kampaň na Kickstarteru . Zapletená varianta One se tam dá koupit za 779 dolarů (16 tis. Kč), verze Flex je za 599 dolarů (15 500 Kč). Později v běžném prodeji budou ceny vyšší: 1 149, resp. 1 519 dolarů.
 Cyplore ve zkratce:
-- výkon: 250W rated power
-- točivý moment: 23 Nm torque
-- dojezd: 50+ km
-- maximální rychlost přípomoci: v EU 25 km/h, v USA 32 km/h
-- nabíjení: konektor USB-C, doba nabíjení 60 minut, kapacita 111Wh, napětí
-- 36V
-- odolnost: IP65
-- hmotnost: varianta Cyplore One 2,5 kg, varianta Cyplore Flex 1,7 kg
+výkon: 250W rated power
+točivý moment: 23 Nm torque
+dojezd: 50+ km
+maximální rychlost přípomoci: v EU 25 km/h, v USA 32 km/h
+nabíjení: konektor USB-C, doba nabíjení 60 minut, kapacita 111Wh, napětí
+36V
+odolnost: IP65
+hmotnost: varianta Cyplore One 2,5 kg, varianta Cyplore Flex 1,7 kg

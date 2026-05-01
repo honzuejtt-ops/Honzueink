@@ -1,4 +1,131 @@
-|T|Večerní pálení čarodějnic bylo vidět i z vesmíru, připomíná ČHMÚ. Podívejte se ale na Slovinsko. To je úplně jiná liga|D|01.05.2026 10:17|P|Máme za sebou další Filipojakubskou noc, a protože nad regionem střední Evropy vyšlo počasí, meteorologové z ČHMÚ ještě včera večer přispěchali s druž...|X|Máme za sebou další Filipojakubskou noc, a protože nad regionem střední Evropy vyšlo počasí, meteorologové z ČHMÚ ještě včera večer přispěchali s družicovým záběrem Česka, ve kterém jsou ohně patrné jako tmavě fialové body.
+|T|Autor kultovního Hrotu vydal hororovou hru z fiktivního brněnského metra|D|01.05.2026 13:21|P|Český vývojář Spytihněv přinesl do Brna metro. Na Steamu vyšla jeho nová hra Brno Transit odehrávající se ve fiktivním brněnském podzemí. Jde o styliz...|X|Český vývojář Spytihněv přinesl do Brna metro. Na Steamu vyšla jeho nová hra Brno Transit odehrávající se ve fiktivním brněnském podzemí. Jde o stylizovaný horor se specifickou atmosférou a humorem. Hráči zatím titul hodnotí velmi pozitivně. Novinka vyjde na 8,99 eur, v zaváděcí slevě na 7,64 eur.
+“Brno Transit je příběhový psychologický horor o začínajícím řidiči metra, který je uvězněn v nejvlhčím metru na východ od všeho, na čem záleží,” popsal satiricky Spytihněv. Jde spíše o zážitkovou věc, hra se dá dohrát za asi hodinu a půl.
+Brněnské metro má zastávky jako Cejl, Bunkr, Sovinec, Zelný trh, U Jakuba, Svratka, Kraví hora, Divadlo, Motolice a Vodojem.
+Spytihněv je nejvíce známý díky jeho hře Hrot, střílečce z pohledu první osoby odehrávající se v kulisách socialistického Československa. Brno Transit vizuálně dost Hrot připomíná, také ma stylizované jednoduché kulisy a čerpá z palety šedé a hnědé. Publikoval také strategii Shrot vycházející z Dune 2 nebo českého klonu Paranoia.|E||T|Bosch myslí na stávající majitele elektrokol. Zdarma zvedne točivý moment na 120 Nm a nabídne třikrát rychlejší nabíječku|D|01.05.2026 11:45|P|Bosch eBike Systems oznamuje novinky pro letošní sezónu. A nebude to jen pro ty, kdo si koupí nové kolo – právě naopak, ta nejzásadnější zpráva se týk...|X|Bosch eBike Systems oznamuje novinky pro letošní sezónu. A nebude to jen pro ty, kdo si koupí nové kolo – právě naopak, ta nejzásadnější zpráva se týká i starších motorů (přehled najdete v tabulce na konci článku).
+Větší točivý moment a podpora
+Pohonné jednotky Performance Line CX a závodní CX-R dostávají možnost zvýšit točivý moment až na 120 Nm a maximální podporu až na 600 % (do rychlosti 15 km/h ve zvláštních jízdních situacích). Dále tak rostou schopnosti horských elektrokol v extrémních situacích, jako je jízda do strmého svahu, nebo při zdolávání náročných překážek.
+Nastavení je otázkou posuvníku v aplikaci eBike Flow.
+Update bude dostupný od 4. května, stačí aktualizovat obslužnou aplikaci eBike Flow. Nutno dodat, že někteří výrobci kol mohou hodnotu točivého momentu zastropovat na nižší hodnotě – přece jen jde o zásadní nárůst a některé komponenty na něj nemusí být dimenzované.
+Nastavitelný Extended Boost
+Funkce Extended Boost poskytuje rozhodující záběr, který je potřeba k jistému překonávání překážek, jako jsou kořeny, schody nebo kameny, i když není možné úplné otáčení pedálu – v textu se to špatně vysvětluje, ale představte si, že stojíte v pedálech, jen je jemně přikopáváte a kolo jede. V praxi je to převapivě intuitivní a každé takové přikopnutí může znamenat záběr až 2 metry. Dnes je hodnota pevně daná, ale od poloviny roku 2026 bude v aplikaci Bosch eBike Flow možné tuto délku nastavit pro každý jízdní režim.
+Sportovní jezdci si tak mohou přizpůsobit chování kola podle vlastních preferencí. Konečná hodnota natočení kol je dána souhrou nastavení aplikace, jízdního režimu a tlaku na pedál.
+Nová softwarová aktualizace Drivetrain Tensioner minimalizuje volnoběh pedálů pro okamžitý přenos síly a lepší kontrolu v náročném terénu (dostupná od poloviny roku 2026).
+Trick Check
+Palubní senzory se naučily z dostupných dat rozpoznat triky – skoky, jízdu po zadním kole, nebo naopak stoppies na předním kole. Nová funkce Trick Check zaznamená dobu trvání, výšku, vzdálenost nebo úhel a potvrdí úspěch akustickým signálem. Kromě toho se na displeji po dobu osmi vteřin zobrazuje poslední trik. Po jízdě se v aplikaci eBike Flow přehledně zobrazí všechny triky a nejlepší osobní výkony.
+Jumps, wheelies, manuals nebo stoppies? I tohle se kola s Boschem naučí s updatem.
+12A nabíječka
+Nová nabíječka 12A Charger výrazně zkracuje nabíjecí pauzy. Díky výkonu 500 W nabíjí třikrát rychleji než standardně dodávaný 4A model. Například velká baterie PowerTube 800 se dostane z nuly na 50 % za hodinu.
+Rychlejší nabíjení, více času na trailu.
+Moderní technologie GaN znamená, že novinka generuje výrazně méně odpadního tepla a také minimální rozměry a hmotnosti – váží méně než 1 kg a vejde se do batohu nebo malé brašny na kolo. 12A Charger je kompatibilní se všemi akumulátory Bosch v chytrém systému a bude k dispozici od konce roku 2026.
+Dostupnost novinek pro jednotlivé modely|E||T|Nejpirátěnější filmy: Co se teď nejvíc stahuje (aktualizace květen 2026)|D|01.05.2026 10:35|P|Vzali jsme týdenní přehledy nejstahovanějších filmů, které se objevují na torrentech, a spojili je do jednoho žebříčku. Tohle jsou aktuálně filmy, o k...|X|Ukázat všechny listy najednou
+30. Bugonia
+Dva bratranci Teddy a Don propadli konspiračním teoriím. Když Teddy uvěří, že šéfka biotechnologické firmy je mimozemšťanka a chce zničit Zemi, rozhodnou se jednat. Unesou ji a zavřou do odlehlého sklepa, kde z ní chtějí dostat přiznání.
+Místo odpovědí ale přichází čím dál větší napětí. Ve sklepě se rozehraje dusná psychologická hra plná nedůvěry, fanatismu a pochybností. Víra únosců naráží na realitu a hranice mezi pravdou a bludem se postupně rozmazávají.
+Hodnocení Kinobox.cz : 76 %
+Žánr: Komedie
+Režie: Yorgos Lanthimos
+Hrají: Jesse Plemons, Emma Stone, Alicia Silverstone, Stavros Halkias, Ash Smith, Roger Carvalho, Marc T. Lewis, J. Carmen Galindez Barrera, Cedric Dumornay
+Původ a premiéra: USA, 2025
+Kde si film můžete pustit: Apple TV (dabing a titulky), Amazon Obchod (dabing a titulky), Rakuten (dabing a titulky), Sweet (dabing a titulky)
+Pokračování 2 / 31 29. Útes
+V 19. století v Karibiku si bývalá pirátka vybudovala klidný život na odlehlém ostrově. Snaží se utajit svou minulost, ale všechno se změní, když se vrátí její bývalý kapitán, který se chce pomstít. Připlouvá s bandou bezohledných korzárů a ohrozí její rodinu i tajemství, které léta skrývala. Žena tak musí čelit vlastní krvavé minulosti a znovu využít schopnosti, díky nimž kdysi budila strach.
+Hodnocení Kinobox.cz : 59 %
+Žánr: Akční filmy
+Původní název: The Bluff
+Režie: Frank E. Flowers
+Hrají: Priyanka Chopra Jonas, Karl Urban, Ismael Cruz Cordova, Safia Oakley-Green, Pacharo Mzembe, Greg Hatton, Gideon Mzembe, Temuera Morrison, Angela Russo-Otstot, Vedanten Naidoo
+Původ a premiéra: USA, 2026
+Délka: 103 minut
+Kde si film můžete pustit: Amazon (dabing a titulky)
+Pokračování 3 / 31 28. Bouřlivé výšiny
+Na drsných yorkshirských vřesovištích vzniká láska bez hranic a bez slitování. Catherine Earnshaw a Heathcliff spojí silné pouto, které se z něhy mění v posedlost. Heathcliff, outsider bez původu, naráží na předsudky i vlastní hrdost. Catherine váhá mezi citem a společenským postavením. Jejich vztah pohání žárlivost, zrada a pomsta, které zasáhnou všechny kolem. Je to příběh o lásce, která dokáže člověka zničit.
+Hodnocení Kinobox.cz : 68 %
+Žánr: Romantické filmy
+Původní název: Wuthering Heights
+Režie: Emerald Fennell
+Hrají: Margot Robbie, Jacob Elordi, Hong Chau, Alison Oliver, Shazad Latif, Owen Cooper, Vy Nguyen, Charlotte Mellington, Ewan Mitchell, Martin Clunes
+Původ a premiéra: USA, 2026
+Kde si film můžete pustit: HBO Max (bez dabingu a titulků), Apple TV (dabing a titulky), Rakuten (dabing a titulky)
+Pokračování 4 / 31 27. Apex
+Sasha si po tragické události, která jí převrátila život, sbalí pár věcí a odjede na opačný konec světa. V drsné australské divočině chce umlčet výčitky a otestovat vlastní hranice. Divoká řeka, rozpálené skály i nekonečné pláně jí dávají zabrat. Jenže skutečné nebezpečí má lidskou tvář. Než si ale přizná, že jí hrozí nebezpečí, ocitne se uprostřed zvrácené hry na lovce a kořist. Izolace, která jí měla přinést klid, se mění v past.
+Hodnocení Kinobox.cz : 65 %
+Žánr: Thrillery
+Režie: Baltasar Kormákur
+Hrají: Charlize Theron, Taron Egerton, Eric Bana, Caitlin Stasey, Bessie Holland, Zachary Garred, Matt Whelan, Rob Carlton, Aaron Pedersen, Duncan Fellows
+Původ a premiéra: USA, 2026
+Délka: 96 minut
+Kde si film můžete pustit: Netflix (dabing a titulky)
+Pokračování 5 / 31 26. Hamnet
+Na pozadí anglického venkova a rušného Londýna se rozvíjí silné drama manželství mezi Williamem Shakespearem a jeho svobodomyslnou ženou Agnes. Jejich vášnivá láska přeroste v rodinný život se třemi dětmi, ale zatímco William buduje svou kariéru v divadle, Agnes sama čelí každodenním starostem a nástrahám doby. Když do jejich života zasáhne krutá ztráta syna Hamneta, otřese to základy jejich vztahu i celého světa, jak ho dosud znali. Ze smutku a bolesti se ale zrodí nový příběh – Hamlet. Tragédie se stane nejen Shakespearovým vrcholným dílem, ale i formou osobního vyrovnání se zármutkem a pokusem o smíření s minulostí.
+Hodnocení Kinobox.cz : 76 %
+Žánr: Historické filmy
+Režie: Chloé Zhao
+Hrají: Jessie Buckley, Paul Mescal, Emily Watson, Jacobi Jupe, Joe Alwyn, David Wilmot, Bodhi Rae Breathnach, Olivia Lynes, Noah Jupe, Justine Mitchell
+Původ a premiéra: Velká Británie, 2025
+Délka: 126 minut
+Kde si film můžete pustit: Apple TV (dabing a titulky), Amazon Obchod (dabing a titulky), Rakuten (dabing a titulky)
+Pokračování 6 / 31 25. Parazit z chlaďáku
+Travis a jeho kolegyně Naomi nastupují na běžnou noční směnu v samoobslužném skladu, který stojí na místě bývalé americké vojenské základny. Klid ale ukončí únik parazitické houby z dávno zapečetěného podzemí. Mikroorganismus, roky udržovaný v chladu, se s rostoucí teplotou probudí, rychle se množí a napadá lidi i zvířata. Dvojice mladých zaměstnanců musí spojit síly s vysloužilým specialistou na bioterorismus. Horor střídá černý humor, zelený sliz i ostré hlášky, zatímco ve hře je osud celého lidstva.
+Hodnocení Kinobox.cz : 57 %
+Žánr: Sci-fi filmy
+Původní název: Cold Storage
+Režie: Jonny Campbell
+Hrají: Georgina Campbell, Joe Keery, Liam Neeson, Sosie Bacon, Vanessa Redgrave, Lesley Manville, Ellora Torchia, Rob Collins, Darrell D'Silva, Justin Salinger
+Původ a premiéra: USA, 2026
+Délka: 99 minut
+Kde si film můžete pustit: Zrovna není nikde dostupný online
+Pokračování 7 / 31 24. Čarodějka: Druhá část
+Druhá část filmového muzikálu uzavírá příběh zvláštní přátelství mezi Elphabou, budoucí Zlou čarodějnicí ze Západu, a Glindou, ikonou dobra v zemi Oz. Zatímco jedna se skrývá a bojuje proti útlaku, druhá si užívá slávu a moc v roli veřejné hrdinky. Když se proti Elphabě zvedne rozzuřený dav, obě ženy stojí před volbou, která navždy změní nejen je, ale i celý Oz. Film přináší emotivní finále, které staví na síle přátelství, odvaze ke změně a otázce, kdo vlastně určuje, co je dobro a zlo. Výpravný muzikál je plný silných momentů, velkolepých scén a dramatických rozhodnutí.
+Hodnocení Kinobox.cz : 57 %
+Žánr: Hudební filmy
+Původní název: Wicked: For Good
+Režie: Jon M. Chu
+Hrají: Cynthia Erivo, Ariana Grande, Jeff Goldblum, Michelle Yeoh, Jonathan Bailey, Ethan Slater, Marissa Bode, Colman Domingo, Bowen Yang, Bronwyn James
+Původ a premiéra: USA, 2025
+Délka: 137 minut
+Kde si film můžete pustit: Apple TV (dabing a titulky), Amazon Obchod (dabing a titulky), Rakuten (dabing a titulky), Sweet (dabing a titulky)
+Pokračování 8 / 31 23. Hříšníci
+Dvojčata Smoke a Stack se v roce 1932 vracejí do rodného Mississippi, odhodlaní nechat za sebou krvavou minulost v Caponeho gangu a začít znovu. V kapse mají hotovost, v kufru bedny irského piva a v hlavě plán. Jenže místo klidu na ně čeká cosi mnohem temnějšího. Místní komunita skrývá zlo, které se živí nejen lidskou krví, ale i strachem a nenávistí. Hříšníci míchají jižanské gotické drama s hororem a jazzovou poezií.
+Hodnocení Kinobox.cz : 76 %
+Žánr: Horory
+Původní název: Sinners
+Režie: Ryan Coogler
+Hrají: Michael B. Jordan, Hailee Steinfeld, Miles Caton, Jack O'Connell, Wunmi Mosaku, Jayme Lawson, Omar Benson Miller, Delroy Lindo, Li Jun Li, Thomas Pang
+Původ a premiéra: USA, 2025
+Délka: 138 minut
+Kde si film můžete pustit: HBO Max (titulky), Apple TV (dabing a titulky), Google (dabing a titulky), Rakuten (dabing a titulky)
+Pokračování 9 / 31 22. V úkrytu
+Michael Mason býval elitním vládním zabijákem. Dnes žije v izolaci na odlehlém skotském ostrově a skrývá svou minulost. Jediný kontakt se světem pro něj představuje Jessie a její strýc, kteří mu vozí zásoby. Když jejich loď během bouře ztroskotá, Mason dívku zachrání, ale tím prozradí svůj úkryt. Spustí tím řetězec nebezpečných událostí. Musí převzít odpovědnost za Jessiinu bezpečnost a čelit digitálnímu dohledovému systému i lidem z tajného programu Black Kites, kteří ho léta hledají. Mason zjišťuje, že před minulostí už dál utíkat nemůže.
+Hodnocení Kinobox.cz : 59 %
+Žánr: Akční filmy
+Původní název: Shelter
+Režie: Ric Roman Waugh
+Hrají: Jason Statham, Bodhi Rae Breathnach, Bill Nighy, Naomi Ackie, Daniel Mays, Gordon Alexander, Harriet Walter, Bronson Webb, Derek Carroll, Tom Wu
+Původ a premiéra: USA, 2026
+Kde si film můžete pustit: Zrovna není nikde dostupný online
+Pokračování 10 / 31 21. Super Mario galaktický film
+Mario a Luigi si po porážce Bowsera užívají postavení hrdinů v Houbovém království. Snaží se mu pomoct na cestě k nápravě, klid ale naruší Bowser Jr., který chce otce osvobodit a obnovit rodinnou slávu. Když unesou princeznu Rosalinu a ohrozí i Peach, bratři se s novými i starými spojenci vydávají do vesmíru. Čekají je neznámé světy a výzvy, které rozhodnou o osudu celé galaxie.
+Hodnocení Kinobox.cz : 67 %
+Žánr: Animované filmy
+Původní název: The Super Mario Galaxy Movie
+Režie: Aaron Horvath, Michael Jelenic
+Hrají: Chris Pratt, Charlie Day, Anya Taylor-Joy, Jack Black, Keegan-Michael Key, Benny Safdie, Donald Glover, Luis Guzmán, Issa Rae, Kevin Michael Richardson
+Původ a premiéra: USA, 2026
+Délka: 98 minut
+Kde si film můžete pustit: Zrovna není nikde dostupný online
+Pokračování 11 / 31 20. Legenda o Aangovi: Poslední vládce větru
+Příběh se vrací do světa živlů několik let po pádu tyranie. Aang a jeho přátelé už dospěli a snaží se udržet křehký mír, za který tvrdě zaplatili. Když Aang objeví dávnou sílu, jež by mohla zachránit vzdušné nomády před zánikem, vydají se společně na nebezpečnou cestu. Katara, Zuko, Toph i Sokka mu znovu stojí po boku. Pátrání po prastarém tajemství může přinést naději, ale také ohrozit rovnováhu, kterou se jim podařilo vybojovat.
+Hodnocení Kinobox.cz : 55 %
+Žánr: Fantasy filmy
+Původní název: Avatar: Aang, The Last Airbender
+Režie: Lauren Montgomery
+Hrají: Eric Nam, Jessica Matten, Román Zaragoza, Dave Bautista, Steven Yeun, Dionne Quan, Taika Waititi, Geraldine Viswanathan, Dee Bradley Baker, Peta Sergeant
+Původ a premiéra: USA, 2026
+Délka: 99 minut
+Kde si film můžete pustit: Zrovna není nikde dostupný online
+Pokračování 12 / 31 19. Greenland 2: Útěk
+Po dopadu komety Clarke, která zdevastovala Zemi a uvrhla Evropu do mrazivé pustiny, našla ...
+(Pokracovani na webu)|E||T|Večerní pálení čarodějnic bylo vidět i z vesmíru, připomíná ČHMÚ. Podívejte se ale na Slovinsko. To je úplně jiná liga|D|01.05.2026 10:17|P|Máme za sebou další Filipojakubskou noc, a protože nad regionem střední Evropy vyšlo počasí, meteorologové z ČHMÚ ještě včera večer přispěchali s druž...|X|Máme za sebou další Filipojakubskou noc, a protože nad regionem střední Evropy vyšlo počasí, meteorologové z ČHMÚ ještě včera večer přispěchali s družicovým záběrem Česka, ve kterém jsou ohně patrné jako tmavě fialové body.
 Patrné jsou zejména v na německé straně hranic a v Čechách. Na Moravě snímky trošku kazí oblačnost.
 Vatry uvidíte i na družicovém portálu Eumetview
 Podobné záběry v nižším rozlišení najdete i na evropském družicovém portálu Eumetview, který v mapové aplikaci průběžně publikuje snímky z nejrůznějších přístrojů na družicích Meteosat a dalších.

@@ -1,0 +1,17 @@
+Bosch eBike Systems oznamuje novinky pro letošní sezónu. A nebude to jen pro ty, kdo si koupí nové kolo – právě naopak, ta nejzásadnější zpráva se týká i starších motorů (přehled najdete v tabulce na konci článku).
+Větší točivý moment a podpora
+Pohonné jednotky Performance Line CX a závodní CX-R dostávají možnost zvýšit točivý moment až na 120 Nm a maximální podporu až na 600 % (do rychlosti 15 km/h ve zvláštních jízdních situacích). Dále tak rostou schopnosti horských elektrokol v extrémních situacích, jako je jízda do strmého svahu, nebo při zdolávání náročných překážek.
+Nastavení je otázkou posuvníku v aplikaci eBike Flow.
+Update bude dostupný od 4. května, stačí aktualizovat obslužnou aplikaci eBike Flow. Nutno dodat, že někteří výrobci kol mohou hodnotu točivého momentu zastropovat na nižší hodnotě – přece jen jde o zásadní nárůst a některé komponenty na něj nemusí být dimenzované.
+Nastavitelný Extended Boost
+Funkce Extended Boost poskytuje rozhodující záběr, který je potřeba k jistému překonávání překážek, jako jsou kořeny, schody nebo kameny, i když není možné úplné otáčení pedálu – v textu se to špatně vysvětluje, ale představte si, že stojíte v pedálech, jen je jemně přikopáváte a kolo jede. V praxi je to převapivě intuitivní a každé takové přikopnutí může znamenat záběr až 2 metry. Dnes je hodnota pevně daná, ale od poloviny roku 2026 bude v aplikaci Bosch eBike Flow možné tuto délku nastavit pro každý jízdní režim.
+Sportovní jezdci si tak mohou přizpůsobit chování kola podle vlastních preferencí. Konečná hodnota natočení kol je dána souhrou nastavení aplikace, jízdního režimu a tlaku na pedál.
+Nová softwarová aktualizace Drivetrain Tensioner minimalizuje volnoběh pedálů pro okamžitý přenos síly a lepší kontrolu v náročném terénu (dostupná od poloviny roku 2026).
+Trick Check
+Palubní senzory se naučily z dostupných dat rozpoznat triky – skoky, jízdu po zadním kole, nebo naopak stoppies na předním kole. Nová funkce Trick Check zaznamená dobu trvání, výšku, vzdálenost nebo úhel a potvrdí úspěch akustickým signálem. Kromě toho se na displeji po dobu osmi vteřin zobrazuje poslední trik. Po jízdě se v aplikaci eBike Flow přehledně zobrazí všechny triky a nejlepší osobní výkony.
+Jumps, wheelies, manuals nebo stoppies? I tohle se kola s Boschem naučí s updatem.
+12A nabíječka
+Nová nabíječka 12A Charger výrazně zkracuje nabíjecí pauzy. Díky výkonu 500 W nabíjí třikrát rychleji než standardně dodávaný 4A model. Například velká baterie PowerTube 800 se dostane z nuly na 50 % za hodinu.
+Rychlejší nabíjení, více času na trailu.
+Moderní technologie GaN znamená, že novinka generuje výrazně méně odpadního tepla a také minimální rozměry a hmotnosti – váží méně než 1 kg a vejde se do batohu nebo malé brašny na kolo. 12A Charger je kompatibilní se všemi akumulátory Bosch v chytrém systému a bude k dispozici od konce roku 2026.
+Dostupnost novinek pro jednotlivé modely

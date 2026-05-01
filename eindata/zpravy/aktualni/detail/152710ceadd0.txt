@@ -1,0 +1,14 @@
+Článek
+Autonomní vozidla, robotické systémy, drony i projekt virtuální reality představila v úterý Fakulta elektrotechnická ČVUT během akce Defence Research Day. Největší pozornost přitom poutalo bezosádkové vozidlo TAROS V4 6×6, tedy nejnovější generace české autonomní platformy určené pro provoz v náročném terénu.
+Projekt vzniká ve spolupráci fakulty a státního podniku VOP CZ. Vozidlo má sloužit především tam, kde je nasazení člověka příliš riskantní nebo logisticky složité, například při průzkumu nebezpečného prostoru, přepravě materiálu, ochraně objektů nebo při krizových zásazích.
+„TAROS navazuje na dlouhodobý vývoj autonomních robotických systémů s cílem ověřovat jejich fungování i mimo laboratorní podmínky. Důležitá je schopnost pohybu a rozhodování v proměnlivém prostředí s omezenou dostupností navigačních či komunikačních systémů,“ uvedl profesor Jan Faigl, hlavní řešitel projektu.
+Označení V4 znamená čtvrtou generaci stroje. Nová verze má nabídnout vyšší nosnost, robustnější konstrukci a pokročilejší autonomní řízení. Platforma je koncipována jako modulární systém, který lze přizpůsobit různým typům úkolů.
+Podle vývojářů nemají podobné stroje člověka plně nahradit, ale převzít především nebezpečné nebo rutinní činnosti a snížit tak riziko při zásazích v náročném prostředí.
+Virtuální i rozšířená realita
+Vedle TAROSu představila fakulta také projekt virtuální reality pro výcvik specialistů na zneškodňování nevybuchlé munice, který vzniká ve spolupráci s ženisty Armády ČR. Uživatelé v simulovaném prostředí nacvičují rozpoznání hrozby, vyhodnocení rizik i volbu bezpečného postupu.
+„Nejde o to naučit se jeden konkrétní zásah, ale pochopit celý proces – jak munici identifikovat, jak k ní bezpečně přistoupit a jak se rozhodnout v dané situaci,“ uvedl profesor Jiří Žára.
+Další projekt s názvem HOLO-Swarm využívá rozšířenou realitu pro řízení operací v reálném čase. Uživatel s AR brýlemi vidí před sebou trojrozměrný model terénu, do kterého se promítají aktuální data, pohyb jednotek nebo plánované trasy dronů.
+„Klasické mapy jsou ploché a práce s nimi je omezená. My chceme dát uživateli prostorový pohled na situaci a možnost s ní interaktivně pracovat,“ popsal konstruktér David Sedláček.
+Další technologie
+Součástí programu byla také prezentace autonomních dronů a robotických systémů schopných fungovat bez GPS a bez přímého řízení, dalších pozemních platforem do složitého terénu nebo technologií pro detekci výstřelů, rušení GPS a bezpečnou komunikaci.
+Defence Research Day tak ukázal, že moderní bezpečnostní technologie dnes nevznikají jen v armádních podnicích a soukromých firmách, ale stále častěji také na českých univerzitách.

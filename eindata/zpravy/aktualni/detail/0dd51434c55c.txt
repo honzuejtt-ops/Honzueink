@@ -1,0 +1,9 @@
+V Národním technickém muzeu v Praze do pátého května poběží výstava k třicátému výročí organizace CESNET, které provozuje rozsáhlou akademickou síť zahrnující i datacentra a další infrastrukturu a která v minulosti sehrála klíčovou roli v připojení porevolučního Československa k internetu. Součástí výstavky je router Cisco IGS, který naši zemi v prosinci roku 1991 k této celosvětové síti poprvé připojil.
+Router si můžete prohlédnout v naší galerii. Součástí expozice byly i některé další technologie, s nimiž CESNET pracuje, jako třeba síťové FPGA karty, které jsou k dispozici tady.
+Česko se z ČVUT skrze IGS připojilo rychlostí 9,6 kilobitu za sekundu, později byla rychlost zvýšena na 19,2 kilobitu za sekundu.
+Cisco IGS neboli Integrated Gateway Server je jedním z prvních skutečně multiprotokolových routerů. Jeho součástí je procesor Motorola 68000 (někdy také 68020) s frekvencí 16 MHz, proprietární sběrnice, dva MB RAM (šlo rozšířit na čtyři), ROM pro zavedení systému, 32k NVRAM pro uložení konfigurace a čtyři konektory: sériový, AUX, Ethernet (15 pinů, pro RJ-45 je potřeba převodník) a Console.
+Přístroj je poháněn operačním systémem Cisco IOS, který uměl pracovat s protokoly jako IP, X.25, DECNET, AppleTalk, Novell IPX, XNS a dalšími.
+IGS byl jedním z důvodů, proč se z Cisca stal jeden z hegemonů síťového světa. I když to firma později měla těžké během .com bubliny, přežila a stále má významné postavení na trhu.
+Firma se na rané devadesátky pamatuje. Když Česko v roce 2024 navštívil výkonný prezident Chuck Robbins, zavítal i právě na CESNET.
+Na Lupě máme postupně rozšiřovaný seriál Příběhy z historie českého internetu, kde je možné se o počátcích globální sítě u nás dozvědět více.
+V Národním technickém muzeu dříve proběhla i výstava československých počítačů nebo čipů. Jednotlivé exponáty jsme rovněž zachytili v naší galerii:

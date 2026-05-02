@@ -1,0 +1,14 @@
+Komunitu bastlířů loni na podzim překvapila zpráva o nečekaném osudu Arduina, které pohltil americký Qualcomm. Drobný podnik z italské Monzy v posledních dvou dekádách dobil svět elektrokutilů všeho druhu, navrhl totiž design prototypovacích desek s čipy, které mohli zájemci programovat v jednoduchém a unifikovaném vývojovém prostředí.
+Arduino zároveň vše uvolnilo pod svobodnou licencí, takže i když dnes firma nabízí široké portfolio vlastních a relativně drahých desek, kutilové z celého světa se spíše setkávají s jejich asijskými klony za zlomek ceny. Postupně zahltily Aliexpress a další tržiště a zpřístupnily technologii široké veřejnosti.
+Bude Arduino i nadále open-source?
+Stručná rekapitulace dějin Arduina byla pro náš příběh naprosto klíčová, dnes si ho totiž spojujeme především s jednotným způsobem programování rozličných procesorů než s konkrétními prototypovacími destičkami.
+Mnozí se proto obávají, jestli Qualcomm časem neukončí dosavadní open-source směřování, a zároveň se ptají, proč po Arduinu zatoužil zrovna on. V kutilské scéně totiž není nikterak etablovaný a spojujeme si ho především s mobilními čipsety, modemy a s hardwarem pro podnikové klienty. Rozhodně ne s kroužkem mladých elektroniků z Třeboně.
+Prototypovací deska Arduino Uno Q s výkonným linuxovým CPU i maličkým mikrokontrolerem pro rychlé ovládání čidel a obvodů
+Ať už to ale nakonec dopadne jakkoliv, přinejmenším to poslední se Qualcomm s Arduinem pokusí změnit. Aby totiž nové duo ukonejšilo bastlíře, součástí podzimního oznámení byla i nová prototypovací deska Uno Q.
+Její vzhled vychází z ikonické řady Arduino Uno, která se před dlouhými lety stala v podstatě standardem prototypovacího mikropočítače pro začátečníky. Tím ale veškerá podobnost končí. Včetně ceny, která v tuzemských e-shopech začíná okolo tisícikoruny.
+V pokračování pro předplatitele také najdete
+- Jak Arduino Uno Q v nitru vlastně funguje
+- V prvním programu rozsvítíme matici LED
+- V druhém si vyzkoušíme komunikaci mezi MCU a výkonným CPU
+Chci Premium a Živě.cz bez reklam
+Od 58 Kč měsíčně

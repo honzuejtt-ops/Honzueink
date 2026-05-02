@@ -1,0 +1,7 @@
+V souvislosti s přeloženou Stravou mě zajímalo, jestli je možné v iOS nastavit jiný jazyk pro aplikaci, než jaký používám v systému. Mám takové výjimky na Macu, ale na iPhonu nebo iPadu podobná možnost není na první pohled vidět, byť se tam nachází.
+Může se to hodit uživatelům, kteří mají iOS anglicky, ale například české aplikace (typicky banku) by chtěli mít v rodném jazyce. Nebo naopak používají český systém, ale v aplikaci je tak špatný překlad, že by raději sáhli po originálu. Některé aplikace mají nastavení lokalizace v sobě, většinou se však bez možnosti volby řídí výchozím jazykem v systému.
+Abyste v aplikacích mohli používat více jazyků, musíte si jich do iOS také více přidat.
+- Jděte do Nastavení | Obecné | Jazyk a oblast.
+- V horní sekci Preferované jazyky přes tlačítko Přidat jazyk zvolte jinou než systémovou lokalizaci.
+- iOS vás pak vyzve, který jazyk má zůstat jako primární.
+Když pak budete chtít individuálně změnit jazyk pro danou aplikaci, běžte do Nastavení | Aplikace, tam najděte tu konkrétní a ve spodní části se objeví nová sekce Preferovaný jazyk, přes kterou si zvolte jinou lokalizaci.

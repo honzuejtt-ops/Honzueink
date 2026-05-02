@@ -1,3 +1,14 @@
+|T|Týden Živě: Claude se proměnil v CAD inženýra a jak snadno proměnit běžnou silničku v elektrokolo|D|02.05.2026 16:45|P|Anthropic vypustil do světa várku nových konektorů, pomocí kterých může jeho chatbot Claude přímo komunikovat s nejrůznějšími aplikacemi. Tentokrát př...|X|Anthropic vypustil do světa várku nových konektorů, pomocí kterých může jeho chatbot Claude přímo komunikovat s nejrůznějšími aplikacemi. Tentokrát přišla řada na Blender, Affinity nebo Autodesk Fusion.
+Druhá část pořadu bude patřit Filipovu „cyklopumpičkovému okénku,“ okomentuje totiž technologii Cyplore, která za pět minut promění silniční kol ov elektrokolo. Také nám poví, proč by měl cyklista vždy jet na chvostu pelotonu a jak na tom jsou české firmy, které se věnují chytrým cyklistickým trenažérům.
+O čem to dneska bude:
+- 00:00 Úvod a NZF
+- 00:24 Claude umí přímo ovládat aplikace
+- 10:17 Vlastní úchyt pro GoPro na helmu
+- 13:45 Cyklotrenažéry
+- 18:46 Elektrokolo ze silničky
+- 21:31 Jízda za sebou je věda
+- 24:47 Závěr
+Diskuzní videokomentáře redaktorů webů Živě.cz a MobilMania.cz, ve kterých rozebírají zajímavá témata týkající se počítačů, internetu, mobilních a jiných technologií. Videa můžete sledovat také na YouTube.|E|
 |T|Siri dostane v iOS 27 vlastní režim ve Fotoaparátu. Vizuální funkce budou hned po ruce|D|02.05.2026 14:45|P||X|Apple chystá s příchodem systému iOS výraznou proměnu aplikace Fotoaparát. Při focení bude hlavní novinkou specializovaný režim Siri, který se zařadí po boku stávajících fotografických režimů, jako jsou Foto, Video nebo Portrét. Cílem bude pořízení fotky a její rychlé využití jako součást promptu v Siri nebo v ChatGPT. Apple si od změny slibuje i snadnější přístup k funkcím tzv. vizuální inteligence, ke kterým se nyní dostanete gesty nebo podržením tlačítka Camera Control.
 Současné možnosti vizuální inteligence. Nová Siri dostane vlastní fotografický režim, takže budou nejen tyto ale i další AI funkce rychleji po ruce
 Vizuální inteligence se objevila už u iPhonu 16, a to prostřednictvím bočního tlačítka Camera Control. V nové verzi systému bude stejná funkce přímo součástí fotoaparátu. Podle zdrojů Apple přepracuje i tlačítko spouště. Dosavadní bílý kruh bude nahrazen tlačítkem s logem Apple Intelligence, aby uživatele i vizuálně nalákal na možnost používat různé AI funkce přímo ve fotoaparátu.

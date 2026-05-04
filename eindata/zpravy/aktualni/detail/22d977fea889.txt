@@ -1,0 +1,16 @@
+Reduce friction and latency for long-running jobs with Webhooks in Gemini API
+Today, we're making it easier and more efficient to build complex, long-running agentic applications with the Gemini API. We are introducing event-driven Webhooks, a push-based notification system that eliminates the need for inefficient polling.
+As Gemini shifts toward agentic workflows and high-volume processing — like Deep Research, long video generation, or processing thousands of prompts via the Batch API — operations can take minutes or even hours. Until now, developers had to rely on continuous polling (e.g., repeatedly callingGET
+operations) to check if a job was completed.
+Now, the Gemini API can simply push a real-time HTTP POST payload to your server the instant a task finishes.
+We’ve built this with reliability and security in mind. Our implementation strictly adheres to the Standard Webhooks specification. Every request is signed using webhook-signature
+, webhook-id
+, and webhook-timestamp
+headers, ensuring idempotency and preventing replay attacks. We also guarantee "at-least-once" delivery with automatic retries for up to 24 hours.
+How it works
+You can configure webhooks globally at the project level (secured via HMAC), or override them dynamically on a per-request basis to route specific jobs (secured via JWKS).
+Here's a quick example of how you can dynamically configure a webhook for a batch task using the Python SDK:
+Get started today
+This feature is available now for all developers using the Gemini API:
+- Read the guide: Check out the Webhooks documentation to explore the full event catalog and learn how to secure your endpoints.
+- Hands-on practice: We've prepared a comprehensive Cookbook to help you build an end-to-end integration with webhooks.

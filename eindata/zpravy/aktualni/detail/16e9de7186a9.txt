@@ -1,0 +1,14 @@
+V Alze ode dneška koupíte monitor Philips 27E1N1900AE jen za 4123 Kč , v ostatních e-shopech stojí o patnáct stovek více. Patří mezi nejdostupnější 4K obrazovky vůbec a je tou vůbec nejlevnější, která nabízí i vstup USB-C pro připojení notebooku.
+Philips nabízí 27" IPS panel s rozlišením 3840 × 2160 px, variabilní frekvencí 40–60 Hz a podporou HDR. S obyčejným LED podsvícením a maximálním jasem 350 nitů je ale podpora obsahu s vyšším dynamickým rozsahem spíš jen do počtu.
+Monitor zvládá 10bitovou barevnou hloubku (8bit + FRC) a pokrývá gamuty Adobe RGB na 91,4 %, DCI-P3 na 96,2 % a základní sRGB na 128,7 %. Slibuje přitom odchylku Delta E <2. Všechno to jsou výborné hodnoty vhodné i na grafickou práci.
+Philips disponuje dvěma HDMI 2.0, jedním DisplayPortem 1.4, sluchátkovým výstupem a stereo reproduktory s výkonem 2 × 2 W. Navíc obsahuje i vstup USB-C, kterým lze připojit notebook, takže se jedním kabelem protáhne obraz, zvuk, data a 65 W nabíjení. Monitor pak poslouží též jako dvouportový USB hub.
+Potěší počeštěné menu, výškově nastavitelný stojan, ale samozřejmostí je také VESA držák pro instalaci alternativního. Náročnější uživatelé ocení rozhraní DDC/CI, díky němuž je možné monitor ovládat a nastavovat prostřednictvím operačního systému, případně externích ulitit.
+Recenze na ITPro chválí opravdu dobré barevné podání monitoru i povedenou výbavu, ale na poměry IPS nemá moc široké pozorovací úhly a při pohledu z boku bude obraz trochu zkreslovat. Reproduktory jsou zde stejně jako u jiných levných monitorů jen do počtu.
+Philipsu se pak ani moc nepovedlo OSD nastavení, což ale lze vyřešit pomocí onoho DDC/CI. Pro Windows se k tomu hodí bezplatný nástroj Twinkle Tray nebo placený DisplayBuddy. Na macOS je etalonem BetterDisplay, případně dobrá je také aplikace MonitorControl.
+Přes WhatsApp a Telegram vás upozorníme na novou slevu
+Slevové akce někdy netrvají dlouho nebo obchody mohou mít jen malé množství zlevněných produktů. Než se k článku dostanete, může být pozdě.
+Hlídač slev má ale své kanály v komunikátorech WhatsApp a Telegram . Klikněte na odkaz, otevře se v aplikaci. Jakmile vydáme článek o slevě, hned o tom dostanete zprávu. O akci se tak dozvíte v době, kdy je ještě stoprocentně platná.
+Jsme také na sociálních sítích Facebook , Threads , X , Bluesky , Mastodon , Discord a můžete odebírat naše RSS se slevami.
+WhatsApp má u kanálů vypnuté upozornění na nové zprávy . Musíte to změnit sami přes ikonu zvonku v pravém horním rohu aplikace. Viz žlutá šipka:
+Našli jste sami zajímavou slevu? Napište nám .
+Za nákup, který uskutečníte prostřednictvím odkazu v článku, může Živě dostat provizi.

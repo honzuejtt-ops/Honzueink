@@ -1,0 +1,8 @@
+Článek
+Společnost PocketOS, která poskytuje software pro autopůjčovny, používala programovacího agenta Cursor, který fungoval na modelu Claude Opus 4.6 od společnosti Anthropic. Jak uvedl server Independent, tento model je v současnosti jedním z nejvýkonnějších nástrojů pro programování.
+Zakladatel společnosti Jer Crane celý incident označil za systémové selhání moderní AI infrastruktury, která to vše vůbec dopustila. AI agent podle něj pracoval na zcela rutinním úkolu, když se zcela „z vlastní iniciativy“ rozhodl vyřešit ho tak, že smazal databázi firmy.
+Příkaz k takovému kroku agentovi nikdo nedal, ani nežádal o dodatečné svolení. Když bylo agentovi předloženo, co udělal, prostě se omluvil.
+„Celé to trvalo pouhých devět sekund,“ uvedl později Crane na síti X. Nejironičtější na celé věci bylo, že agent poté, co byl požádán o podrobné vysvětlení celé akce, se kromě doznání vyznal i z toho, jaká všechna bezpečnostní pravidla porušil – včetně toho, které jasně nařizuje „nikdy nespouštět destruktivní/nevratné příkazy, pokud si je uživatel výslovně nevyžádá“.
+Výsledkem bylo, že společnost přišla o mnohé záznamy o zákaznících. Zmizely rezervace za poslední tři měsíce i registrace nových zákazníků, včetně záloh.
+„Jsme malá firma, naši zákazníci jsou malé firmy. Toto selhání se kaskádovitě promítlo na mnoha lidech, kteří neměli tušení, že je něco takového možné. Toto není příběh o jednom špatném agentovi nebo jednom systému. Celé toto odvětví integruje agenty umělé inteligence do celé infrastruktury rychleji, než se budují bezpečnostní systémy, které mají integraci hlídat,“ dodal Crane.
+Pár dní po incidentu zakladatel společnosti uvedl, že se data povedlo obnovit.

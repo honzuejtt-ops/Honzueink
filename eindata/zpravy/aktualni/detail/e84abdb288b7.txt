@@ -1,0 +1,11 @@
+AI Google Gemini dostává zásadní aktualizaci, která umožní generovat personalizované obrázky s využitím obsahu přímo z Fotek Google. Integrace je součástí širší strategie nazvané „Personal Intelligence“, zaměřené na propojení Gemini s dalšími aplikacemi od Googlu.
+Cílem je učinit generované scény relevantnější a osobnější. Díky přístupu k fotkám dokáže Gemini generovat AI obsah, ve kterém se objevují skuteční uživatelé a jejich blízcí. Odpadá tak nutnost opakovaně hledat a nahrávat fotografie osob, které chcete s využitím AI doplnit či upravit.
+Rychlejší a pohodlnější výsledky
+Při generování obrázků využije Gemini kontext získaný z propojených fotografií, samotnou tvorbu má na starosti obrazový model Google Nano Banana 2. Takto dokáže AI vyplnit konkrétní detaily o vzhledu a stylu osoby, „trefit“ se jí do vkusu oblečením, nebo se naopak vyhne pózám a prostředí, které pro ni nejsou typické.
+Novinka výrazně snižuje náročnost prompt engineeringu, tedy dlouhého a přesného textového popisu požadovaného obrázku. Uživatelé tak již nemusí strávit spoustu času dlouhým opisováním svého vzhledu, aby AI obrázky vypadaly reálně.
+Ochrana soukromí a obavy veřejnosti
+Takové spojení dvou služeb vyvolává pochopitelné obavy z narušení soukromí – vždyť mnozí ve Fotkách uchovávají své citlivé vzpomínky. Uživatelé proto začali vyjadřovat obavy – podobně jako v minulosti například u funkce Recall ve Windows.
+Google však trvá na tom, že zavedl důležité bezpečnostní mechanismy. Funkce je volitelná způsobem opt-in, což znamená, že uživatel sám aktivně zvolí, že chce Gemini spojit s dalšími službami od Googlu. Pokud nic nezapnete, Gemini nezačne sám od sebe zpracovávat vaše fotky.
+Společnost navíc uvádí, že Gemini přímo netrénuje na soukromé knihovně fotografií uživatele. K dalšímu zlepšování její umělé inteligence se využívají například jen vybrané prompty (zadání) nebo odpovědi modelu, ale ne fotografie samotné.
+Pro zvýšení důvěryhodnosti a transparentnosti Google implementoval tlačítko „Sources“ (Zdroje). To umožňuje uživatelům přesně vidět, který konkrétní obrázek vedl k výslednému vygenerovanému AI obsahu.
+V současnosti se funkce generování obrázků na základě Google Photos spouští nejprve pro oprávněné předplatitele Google AI primárně ve Spojených státech.

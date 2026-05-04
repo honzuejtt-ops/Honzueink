@@ -1,0 +1,9 @@
+Trh s drtí vysoké ceny operačních pamětí, přesto se nám výrobci snaží dát důvod, proč si pořídit nový procesor.
+Na trhu nejsou nové procesorové generace s přepracovanou architekturou, ale jen mírné modifikace starších modelů. Přesto díky agresivní cenové politice Intelu vidíme transformaci trhu a změnu rozložení sil, než ve druhé polovině roku či zkraje 2027 přijdou zcela nové generace.
+Celkem jsme zaznamenali uvedení tří desktopových procesorů, dvou od Intelu a jednoho od AMD. Intel ukázal modely Core Ultra 7270K Plus a Core Ultra 5250K Plus neboli Arrow Lake refresh, AMD zase představilo Ryzen 9 9950X3D2 s 3D V-Cache na obou čipletech s procesorovými jádry. Zatímco Intel se soustředí na levnější cenovou třídu, AMD uvádí prémiový model.
+Pár klíčových změn
+Nové procesory od Intelu se nedají považovat za novátorské, výrobce udělal jen několik málo změn. Tou první je zvýšení frekvence komunikace mezi jednotlivými dlaždicemi procesoru o 900 MHz, Intel byl při prvotním nastavování konzervativní a tento úkon můžete udělat v UEFI základní desky i s původními procesory. Díky tomuto se zrychlí komunikace, sníží latence a herní výkon naroste asi o 10 %, což není zanedbatelné – Intel dohání či předhání procesory AMD bez 3D V-Cache.
+Hlavní parametry nových desktopových procesorů Intelu.
+Pokračování článku patří k prémiovému obsahu pro předplatitele
+Chci Premium a Živě.cz bez reklam
+Od 58 Kč měsíčně

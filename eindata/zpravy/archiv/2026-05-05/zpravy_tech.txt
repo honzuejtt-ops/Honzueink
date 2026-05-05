@@ -1,3 +1,52 @@
+|T|Privátní cloud pro malou firmu, školu nebo úřad: kontejnerová architektura|D|05.05.2026 22:00|P|Pro menší firmy, které nepotřebují drahé a sofistikované cloudové prostředí někde v obrovském datacentru, existují některé zajímavé nástroje, které st...|X|Když začínal vcházet do širšího povědomí pojem cloud, říkal jsem si, že je to parádní nápad, jak získat úspory z rozsahu. Nakupujete ve velkém, takže máte levnější hardware, máte levnější elektřinu, levnější konektivitu, můžete sídlit v oblasti kde je chladno a ušetřit za chlazení, levnější pracovní síla, a navíc by jeden administrátor měl být chopen spravovat více strojů, díky automatizaci – prostě napíše jeden skript a je mu jedno, jestli je to pro deset, sto nebo tisíce serverů… Jenže při pohledu do ceníků se o cenové úspoře se mluvit nedá, a naopak se v nejisté politické situaci ukazuje, že cesta globalizace není tak růžová, jak se před pár lety zdála.
+Vše ve vlastní režii
+V jedné menší firmě jsem proto nastínil scénář, kdy využijeme maximálně běžný hardware. Nejdůležitější je server, který bude všechno řídit. Při dnešních výkonech počítačů je až komické, když vidím nabídky řešení s procesorem XEON, ECC RAM, polem RAID s dvěma řadiči a redundantními zdroji. Pro takto malé firmy to opravdu není potřeba.
+Na začátku je potřeba si spočítat co znamená, když nepojede půl dne jeden počítač, kde je účetnictví. Jsou jistě i jiné případy, ale tady se nic nestane. Maily máme externě, ve sdílené poštovní schránce, máme mobil a mobilní data jako zálohu i kdyby nejelo nic. Výroba jede z den předem nachystaného plánu, nikoliv z chaosu měnícího se z minuty na minutu.
+Jako server se vyčlenil nejsilnější počítač s 16 GB RAM a zhruba 500 GB NVMe diskem. Na tomto stroji pracuje zároveň účetní, a proto jsem tam nechal původní Windows 11 Pro, ve kterém je možné pustit hypervizor HYPER-V zdarma. Proxmox je jistě zajímavé věc, ale znamenalo by to komplikovanější cestu (grafické rozhraní, napojení tiskáren, RDP klienta, …).
+Uživatel (účetní) zde nemůže nic instalovat, na ploše má jedinou ikonu RDP klienta na další Windows 11, které běží v tomto HYPER-V jako hostitel, včetně emulace TPU a secure bootu. Bylo potřeba dokoupit jednu licenci s tím, že další upgrade jsou slibovány už navždy zdarma, tak uvidíme.
+V tomto virtuálním PC běží Chromium pro přístup k různým online službám (datovka, zpracování docházky, …), Thunderbird na poštu, LibreOffice a Pohoda jako účetní, výrobní a částečně mzdový program. Neběží zde žádné serverové služby, což kromě pár výjimek, licence explicitně zakazuje.
+Virtualizace
+Virtualizací se otevřela cesta, jak toto vyřešit přes další virtuální server, kam právě tyto služby dáme a využijeme světa Linuxu, open source a komunitního sdílení vědomostí. Jako základ jsem zvolil Debian, který mi přišel méně náročný na místo na disku (v současné době cca 60 GB a polovina je volná), CPU i paměti RAM.
+Pro znalejší/náročnější uživatele bych doporučil Ubuntu Pro s dalšími funkcemi. V základu chceme Sambu v roli řadiče domény, chceme nějakou reverzní proxy pro HTTPS hosting, jednoduchý webový server pro statický obsah, a další věci. Abychom nemuseli dělat další virtuální počítače, je vhodnější použít kontejnery.
+Populární je dnes nástroj Docker, pod kterým služby běží ve svých vlastních kontejnerech, kde sice mají celý operační systém, balíčky a nastaveni, ale procesy běží na společném jádru hostitele (Debianu). Proti tomu klasická virtualizace (VirtualBox, KVM, Hyper-V) simuluje celý hardware.
+Jako správce těchto prostředí v Dockeru slouží nástroj Portainer.io s přehledným grafickým rozhraním ve webovém prohlížeči.
+Instalace Portaineru
+Příprava adresářů
+Nejdříve si na hostiteli (Debianu) vytvoříme adresář pro data Portaineru, aby nám po restartu kontejneru nezmizelo nastavení:
+sudo mkdir -p /opt/portainer/data
+Nasazení stacku (Docker Compose)
+Vytvoříme si soubor docker-compose.yml
+v terminálu a použijeme ho pomocí:
+docker compose up -d
+Zde je kompletní konfigurace:
+version: '3.8' services: # Portainer - Grafické rozhraní pro Docker portainer: image: portainer/portainer-ce:latest container_name: portainer restart: always security_opt: - no-new-privileges:true volumes: - /etc/localtime:/etc/localtime:ro - /var/run/docker.sock:/var/run/docker.sock:ro - /opt/portainer/data:/data ports: - 9443:9443 # HTTPS rozhraní # Watchtower - Automatické aktualizace watchtower: image: containrrr/watchtower container_name: watchtower restart: always volumes: - /var/run/docker.sock:/var/run/docker.sock environment: # Kontrola aktualizací každých 24 hodin (86400 sekund) - WATCHTOWER_POLL_INTERVAL=86400 # Vymaže staré obrazy po aktualizaci (šetří místo na disku) - WATCHTOWER_CLEANUP=true # Watchtower bude aktualizovat i sám sebe - WATCHTOWER_INCLUDE_SELF=true
+Jak to funguje
+Portainer běží na portu 9443. Po instalaci na něj přistoupíte přes https://server:9443. Je potřeba ji otevřít a vytvořit uživatele. Pokud se na stránku nepřihlásíte do 12 minut od startu kontejneru, Portainer se z bezpečnostních důvodů uzamkne a bude nutné kontejner restartovat.
+Watchtower nemá žádné webové rozhraní. Běží tiše na pozadí. Jednou za den (podle intervalu) Watchtower „obejde“ všechny běžící kontejnery, podívá se na Docker Hub, jestli neexistuje novější verze (tag), a pokud ano:
+- Stáhne nový image,
+- vypne starý kontejner,
+- zapne nový kontejner se stejným nastavením,
+- volitelně smaže starý nepotřebný image.
+Tím získáme grafické rozhraní pro Docker, do kterého budeme postupně instalovat další služby jako Samba pro řadič domény a linuxovou variantu MS SQL serveru pro aplikace.
+Příště se podíváme na zálohování, kterým je dobré vždy začít práci s novým prostředím.|E|
+|T|Softwarová sklizeň (6. 5. 2026): dopřejte svému AI agentovi dlouhodobou paměť|D|05.05.2026 22:00|P|Sonda do světa otevřeného softwaru. Dnes si představíme nástroj pro správu dlouhodobé paměti AI agentů, vyzkoušíme moderní shell, řekneme si nástroji ...|X|remindb
+Nástroj pro správu dlouhodobé paměti AI agentů, který ukládá veškerá data do jediného SQLite souboru místo opakovaného čtení poznámek při každé relaci. Převádí obsah (Markdown, JSON, YAML aj.) do strukturovaného stromu, kde jednotlivé uzly mají metadata, prioritu a historii změn, takže agent může rychle vyhledávat relevantní informace bez zbytečného zpracování celého obsahu.
+Systém automaticky zvýrazňuje často používaná data, méně důležitá shrnuje a využívá efektivní vyhledávání i úsporné ukládání struktur. Díky tomu výrazně snižuje náklady na práci s kontextem a zrychluje práci agentů. Celé řešení je přenositelné jako jeden .db soubor bez potřeby serveru a lze jej sdílet mezi různými AI nástroji.
+github.com/radimsem/remindb, 0.1.3
+Brush
+Bo(u)rn(e) RUsty SHell je moderní shell napsaný v jazyce Rust, který je kompatibilní s bash a POSIX. Umožňuje spouštět existující skripty i použít konfiguraci ze souboru .bashrc
+beze změn, přičemž přidává moderní funkce jako zvýrazňování syntaxe a automatické návrhy příkazů při psaní.
+Projekt je důkladně testován vůči bashi a podporuje širokou škálu funkcí včetně vestavěných příkazů, expanzí, řízení procesů, přesměrování či programovatelného doplňování. Nabízí také pokročilé uživatelské rozhraní s konfiguračním souborem v TOML a integrací s nástroji jako fzf nebo VS Code.
+brush.sh, 0.4.0
+Vite+
+Nástroj (nově jako open-source), který sjednocuje celý vývojový řetězec pro webové aplikace do jednoho řešení. Kombinuje nástroje jako Vite, Vitest či další utility a zároveň spravuje i běhové prostředí a balíčkovací systém.
+Nabízí jednotné příkazy pro vývoj, testování, kontrolu kódu i produkční buildy, vše z jednoho konfiguračního souboru a kompatibilně s frameworky jako React, Vue.js nebo Svelte. Díky Rustovým nástrojům přináší výrazné zrychlení oproti tradičním nástrojům.
+viteplus.dev, 8.0
+Warp
+Vývojové prostředí pro AI agenty, které vzniklo přímo v terminálu a běží na Linuxu, Windows i macOS. Můžete využít vestavěného programovacího agenta Warpu nebo si přinést vlastního agenta pro příkazový řádek (Claude Code, Codex, Gemini CLI a další). Projekt využívá kombinaci licencí MIT a AGPLv3 a jeho cílem je urychlit vývoj i konkurenci vůči uzavřeným řešením.
+github.com/warpdotdev/warp, 0.1.3
+Blbinka
+Otevřít si robotickou restauraci se zdá jako cool nápad. No, nemusí to skončit podle očekávání.|E|
 |T|Zvenku nenápadná dodávka, za dvě hodiny mobilní vysílač. O2 na festivaly přijede s anténou na čtyřech kolech|D|05.05.2026 17:45|P||X|O2 se před letošní letní sezonou pochlubilo výbavou, pomocí které dokáže posílit kapacitu i rychlost sítě na místech s nárazovým vysokým výskytem lidí – typicky na hudebních festivalech a dalších krátkodobých eventech. Podobně se ale může hodit i v krizových situacích, například při povodních, kdy vypadne běžná mobilní síť. Jde o mobilní vysílač ukrytý do dodávky.
 Zvenku běžná dodávka, uvnitř se speciální technikou pro zbudování mobilního vysílače
 Nový „pojízdný“ typ základnové stanice provozuje O2 ve spolupráci se sesterskou společností CETIN. Vybavení je součástí speciálně upraveného užitkového automobilu Mercedes-Benz Sprinter 519 (4×4). Hlavní výhodou je možnost přijet s vybavením přímo na libovolné požadované místo, tedy tam, kam vede silnice, nebo aspoň zpevněná cesta. Na tomto místě se potom anténa postaví a zde už zůstává stacionárně (nehybně) po dobu svého využití. Nejde tedy o řešení, který by přímo vysílalo signál mobilní sítě v pohybu za jízdy.

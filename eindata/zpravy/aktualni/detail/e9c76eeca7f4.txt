@@ -1,0 +1,18 @@
+remindb
+Nástroj pro správu dlouhodobé paměti AI agentů, který ukládá veškerá data do jediného SQLite souboru místo opakovaného čtení poznámek při každé relaci. Převádí obsah (Markdown, JSON, YAML aj.) do strukturovaného stromu, kde jednotlivé uzly mají metadata, prioritu a historii změn, takže agent může rychle vyhledávat relevantní informace bez zbytečného zpracování celého obsahu.
+Systém automaticky zvýrazňuje často používaná data, méně důležitá shrnuje a využívá efektivní vyhledávání i úsporné ukládání struktur. Díky tomu výrazně snižuje náklady na práci s kontextem a zrychluje práci agentů. Celé řešení je přenositelné jako jeden .db soubor bez potřeby serveru a lze jej sdílet mezi různými AI nástroji.
+github.com/radimsem/remindb, 0.1.3
+Brush
+Bo(u)rn(e) RUsty SHell je moderní shell napsaný v jazyce Rust, který je kompatibilní s bash a POSIX. Umožňuje spouštět existující skripty i použít konfiguraci ze souboru .bashrc
+beze změn, přičemž přidává moderní funkce jako zvýrazňování syntaxe a automatické návrhy příkazů při psaní.
+Projekt je důkladně testován vůči bashi a podporuje širokou škálu funkcí včetně vestavěných příkazů, expanzí, řízení procesů, přesměrování či programovatelného doplňování. Nabízí také pokročilé uživatelské rozhraní s konfiguračním souborem v TOML a integrací s nástroji jako fzf nebo VS Code.
+brush.sh, 0.4.0
+Vite+
+Nástroj (nově jako open-source), který sjednocuje celý vývojový řetězec pro webové aplikace do jednoho řešení. Kombinuje nástroje jako Vite, Vitest či další utility a zároveň spravuje i běhové prostředí a balíčkovací systém.
+Nabízí jednotné příkazy pro vývoj, testování, kontrolu kódu i produkční buildy, vše z jednoho konfiguračního souboru a kompatibilně s frameworky jako React, Vue.js nebo Svelte. Díky Rustovým nástrojům přináší výrazné zrychlení oproti tradičním nástrojům.
+viteplus.dev, 8.0
+Warp
+Vývojové prostředí pro AI agenty, které vzniklo přímo v terminálu a běží na Linuxu, Windows i macOS. Můžete využít vestavěného programovacího agenta Warpu nebo si přinést vlastního agenta pro příkazový řádek (Claude Code, Codex, Gemini CLI a další). Projekt využívá kombinaci licencí MIT a AGPLv3 a jeho cílem je urychlit vývoj i konkurenci vůči uzavřeným řešením.
+github.com/warpdotdev/warp, 0.1.3
+Blbinka
+Otevřít si robotickou restauraci se zdá jako cool nápad. No, nemusí to skončit podle očekávání.

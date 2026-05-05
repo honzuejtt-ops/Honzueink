@@ -1,0 +1,10 @@
+Konkurence mezi konverzačními chatboty (ChatGPT nebo Google Gemini) je značná. Uložená historie může uživatelům bránit v přechodu ke konkurenci. Google se rozhodl s tímto omezením vypořádat.
+Konverzační chat Google Gemini trápil uživatele postupným zapomínáním. I když jste s ním celý večer řešili plány na dovolenou, pokud jste otevřeli nový chat, nepamatoval si nic. Chtěli-li jste téma rozvíjet, nezbývalo, než do nového chatu vložit informace znovu. Google ale představil vylepšení, které toto omezení z velké části eliminuje.
+Vzpomínky
+Novinka se nazývá Vzpomínky (Memories) a umožní učit se z vašich konverzací. Pokud toto nastavení ponecháte zapnuté, Gemini si bude klíčové informace pamatovat. Když začnete novou konverzaci, nebude vás vnímat jako někoho nového, ale jako dobrého známého.
+Pokud jste například často konverzovali na téma komiksových postav z vašeho oblíbeného seriálu a pak Gemini požádáte, aby navrhl téma narozeninové oslavy, může tuto informaci využít. Diskutujete o knihách, které čtete? Požádáte-li Gemini o doporučení nového čtiva, nebudete už muset znovu vypisovat, co se vám líbilo.
+Vzpomínky jsou ve výchozím stavu zapnuté, ale samozřejmě je můžete vypnout. Stačí přejít do Nastavení v aplikaci Gemini a vybrat „Osobní kontext“ (Personal context) a poté „Vzpomínky“ (Memory).
+Import dat z jiné AI
+Aby toho nebylo málo, Google se rozhodl ulehčit uživatelům přechod od jiného chatbotu k Gemini. Připravil nástroj pro import existujících chatů. Když do něj vložíte chaty z jiné služby, Gemini je načte a informace z nich dokáže využívat. Nemusíte tak začínat od nuly a vysvětlovat, že Pepa je bratranec a Anička je to milé děvče z obchodu.
+Obě novinky byly oficiálně oznámeny a jsou už dostupné v Česku. Zavádění ale probíhá postupně, já například na svém Gemini vidím pouze informaci, že služba u nás není dostupná. Novinky fungují pouze na osobních účtech Google.
+Zdroje a další informace: Google

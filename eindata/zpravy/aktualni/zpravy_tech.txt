@@ -1,4 +1,179 @@
-|T|Poslední místo, kde byste čekali dotykový displej. Turtle Beach vyrobil netradiční myš|D|05.05.2026 08:45|P|Turtle Beach Command Series MC7 obsahuje velký dotykový displej a 11 tlačítek. • K tomu má perfektní kolečko, které umí vše, co byste chtěli. • Láká t...|X|Americký výrobce periferií Turtle Beach představil novou myš Command Series MC7. Jeden zahraniční novinář ji nazval vrcholem overengineeringu, tedy samoúčelně komplikovanou. Má totiž všechno, na co si vzpomenete, a k tomu ještě něco navíc.
+|T|Dost bylo nekonečného vysvětlování. Gemini si zapamatuje, kdo jste a co máte rádi|D|05.05.2026 10:45|P|Konkurence mezi konverzačními chatboty (ChatGPT nebo Google Gemini) je značná. Uložená historie může uživatelům bránit v přechodu ke konkurenci. Googl...|X|Konkurence mezi konverzačními chatboty (ChatGPT nebo Google Gemini) je značná. Uložená historie může uživatelům bránit v přechodu ke konkurenci. Google se rozhodl s tímto omezením vypořádat.
+Konverzační chat Google Gemini trápil uživatele postupným zapomínáním. I když jste s ním celý večer řešili plány na dovolenou, pokud jste otevřeli nový chat, nepamatoval si nic. Chtěli-li jste téma rozvíjet, nezbývalo, než do nového chatu vložit informace znovu. Google ale představil vylepšení, které toto omezení z velké části eliminuje.
+Vzpomínky
+Novinka se nazývá Vzpomínky (Memories) a umožní učit se z vašich konverzací. Pokud toto nastavení ponecháte zapnuté, Gemini si bude klíčové informace pamatovat. Když začnete novou konverzaci, nebude vás vnímat jako někoho nového, ale jako dobrého známého.
+Pokud jste například často konverzovali na téma komiksových postav z vašeho oblíbeného seriálu a pak Gemini požádáte, aby navrhl téma narozeninové oslavy, může tuto informaci využít. Diskutujete o knihách, které čtete? Požádáte-li Gemini o doporučení nového čtiva, nebudete už muset znovu vypisovat, co se vám líbilo.
+Vzpomínky jsou ve výchozím stavu zapnuté, ale samozřejmě je můžete vypnout. Stačí přejít do Nastavení v aplikaci Gemini a vybrat „Osobní kontext“ (Personal context) a poté „Vzpomínky“ (Memory).
+Import dat z jiné AI
+Aby toho nebylo málo, Google se rozhodl ulehčit uživatelům přechod od jiného chatbotu k Gemini. Připravil nástroj pro import existujících chatů. Když do něj vložíte chaty z jiné služby, Gemini je načte a informace z nich dokáže využívat. Nemusíte tak začínat od nuly a vysvětlovat, že Pepa je bratranec a Anička je to milé děvče z obchodu.
+Obě novinky byly oficiálně oznámeny a jsou už dostupné v Česku. Zavádění ale probíhá postupně, já například na svém Gemini vidím pouze informaci, že služba u nás není dostupná. Novinky fungují pouze na osobních účtech Google.
+Zdroje a další informace: Google|E||T|Seká se vám prohlížeč? Možná za to může chyba YouTube, která sežere až 7 GB RAM|D|05.05.2026 10:20|P|V zatím nespecifikovaných případech si YouTube v nekonečné smyčce načítá některé prvky uživatelského rozhraní. Při tom bobtná využití operační paměti,...|X|Chyba v rozhraní YouTube na webu v posledních dnech výrazně zvyšuje nároky na paměť a v některých případech dokáže zahltit celý prohlížeč. Uživatelé napříč fóry i sociálními sítěmi popisují, že jediná otevřená karta s videem si vezme přes 7 GB RAM, což vede k výraznému zpomalení, zamrzání panelů nebo úplnému pádu aplikace. Videa se při sledování sekají nebo se zcela zastaví.
+Hlášení uživatelů se objevují u různých prohlížečů, včetně Chromu, Edge i Firefoxu, a týkají se jak Windows, tak dalších platforem. Typickým scénářem je postupné zvyšování využití paměti po načtení stránky, které pokračuje i bez další interakce. Výsledkem je stav, kdy systém začne být nestabilní a ostatní aplikace reagují se zpožděním.
+Načítací smyčka
+Podezření zatím míří na chybu v samotném webovém přehrávači nebo uživatelském rozhraní YouTube. Některé analýzy naznačují, že problém může souviset s takzvanou „layout loop“, tedy nekonečným cyklem přepočítávání rozložení stránky. Prohlížeč v takovém případě opakovaně renderuje stejné prvky, aniž by se dostal do stabilního stavu, což vede k rychlému nárůstu spotřeby paměti.
+Diskuze na Redditu i dalších fórech ukazují, že problém se objevuje náhodně a nepostihuje všechny uživatele stejně. Někomu se projeví po několika minutách přehrávání, jinde stačí otevřít stránku s videem. Dočasným řešením bývá obnovení karty nebo vypnutí některých rozšíření, ani to ale nemusí pomáhat.
+YouTube zatím oficiální vysvětlení neposkytl, ale podle všeho už o chybě ví. Vzhledem k rozsahu potíží se dá čekat, že oprava přijde formou úpravy webového rozhraní, bez nutnosti zásahu ze strany uživatelů. Do té doby ale může být sledování videí na desktopu pro část lidí výrazně méně komfortní než obvykle.
+Zdroj: Tomshardware|E||T|Děti si malují na obličej knír, jiné kradou občanky. Systémy pro ověření věku nejsou příliš spolehlivé|D|05.05.2026 10:15|P|Polovina dětí se i přes nové mechanismy pro ověření věku dostává ke škodlivému obsahu v online prostoru. Při jejich obcházení často používají nečekaně...|X|Velká Británie loni v létě zavedla ověřování věku při zakládání účtů či přístupu k některým internetovým službám. Vedle sociálních sítí to mohou být i hry či dokonce některé funkce operačních systémů v telefonech. Zpráva sdružení Internet Matters ale ukazuje, že nové mechanismy nejsou ani zdaleka stoprocentní a především účinně nebrání přístupu ke škodlivému obsahu.
+Kníry i postavy z her
+Průzkum provedený mezi 1 000 respondenty z řad dětí a mládeže ukázal, že pro 46 % z nich jsou nově zavedené systémy pro ověření věku snadno prolomitelné. Naopak jen 17 % respondentů považuje tyto mechanismy za obtížně oklamatelné. V průzkumu se objevily i způsoby, jakými se děti a mládež snaží virtuálně zvýšit svůj věk a projít tak kontrolou.
+Mezi tradiční metody patří využití cizí občanky, mnohé aplikace ale vyžadují i selfie pomocí kamery. Tam jsou děti vynalézavější – některé systémy obelstily přimalováním kníru na obličej, častější je ale využití postav z her.
+Znepokojivější je fakt, že 17 % rodičů deklarovalo napomáhání dětem při obcházení těchto systémů. Ty byly zavedeny právě proto, aby se nedostávaly ke škodlivému obsahu. Takřka polovina dětí (49 %) se ale i přes nová pravidla s tímto obsahem setkala. Dá se tak předpokládat, že technická řešení i nastavená pravidla se budou v budoucnu zpřísňovat.
+Velká Británie (a například Austrálie) v současné době slouží jako testovací půda pro systémy, které se chystá zavést i Evropská unie. Na konci dubna Evropská komise naléhavě vyzvala členské státy, aby aplikace pro ověřování věku zavedly co nejrychleji.
+Zdroj: The Register|E||T|Netflix a 30 nejoblíbenějších filmů a seriálů v květnu 2026. Mimoni, Harry Hole, Radiační poplach, Válečné monstrum…|D|05.05.2026 09:45|P|Tyto filmy a seriály jsou teď na českém Netflixu nejoblíbenější. Nerozlišujeme žánr, stáří ani hodnocení na filmových webech. Jde o souhrnnou oblíbeno...|X|Ukázat všechny listy najednou
+30. Neporazitelní
+Tři zcela odlišní hrdinové a jejich rodiny vezmou diváky na emocionální a zábavnou jízdu, při které s nadhledem řeší nelehké životní situace a s humorem bojují s nepřízní osudu, předsudky společnosti a zkostnatělým systémem.
+Snímek zaujal civilním pojetím a důrazem na emoce místo patosu. V českých kinech oslovil publikum, které má blízko ke sportovním příběhům o druhých šancích, a potvrdil, že domácí filmy dokážou uspět i bez velkých efektů.
+Hodnocení Kinobox.cz : 78 %
+Žánr: Drama
+Režie: Dan Pánek
+Hrají: Ivan Trojan, Lenka Vlasáková, Hynek Čermák, Natalia Germani, Tomáš Havlínek, Til Schweiger, Vanda Hybnerová, Jiří Lábus, Veronika Macková, Marek Holý
+Původ a premiéra: Česko, 2025
+Kde si film můžete pustit: Netflix
+Pokračování 2 / 30 29. Spolubydlící
+Devon přijíždí na univerzitu s nadějí, že si konečně najde přátele. Během prvních dnů pozná sebevědomou a nespoutanou Celeste. Rozhodnou se spolu bydlet a zpočátku si skvěle rozumí. Večírky a nové zážitky Devon dodají odvahu vystoupit ze své ulity.
+Postupně se ale ukáže i druhá stránka jejich vztahu. Celeste je bezohledná, nespolehlivá a často manipuluje. Drobné konflikty přerostou v tichý boj plný naschválů a pasivní agrese. Z nadějného přátelství se stane dusivé soužití.
+Hodnocení Kinobox.cz : 57 %
+Žánr: Komedie
+Původní název: Roommates
+Režie: Chandler Levack
+Hrají: Sadie Sandler, Chloe East, Billy Bryk, Sarah Sherman, Natasha Lyonne, Nick Kroll, Aidan Langford, Carol Kane, Janeane Garofalo, Martin Herlihy
+Původ a premiéra: USA, 2026
+Kde si film můžete pustit: Netflix (dabing a titulky)
+Pokračování 3 / 30 28. Té noci
+Tři sestry odjedou na dovolenou do Dominikánské republiky. Klid ale zničí nehoda, kdy nejmladší z nich, mladá a naivní matka samoživitelka, srazí autem muže. Z ráje se stane místo plné strachu. Sestry se ji snaží ochránit před vězením i před ztrátou dítěte. Každý jejich krok ale situaci jen zhorší. Rodina tak čelí těžké otázce: kam až zajdou, aby ochránily jednu z nich.
+Hodnocení Kinobox.cz : 57 %
+Žánr: Krimi seriály
+Původní název: That Night
+Hrají: Clara Galle, Claudia Salas, Paula Usero
+Původ a premiéra: Španělsko, 2026
+Kde si film můžete pustit: Netflix (dabing a titulky)
+Pokračování 4 / 30 27. Čmuchalové
+Aby splatili dluh, vrhnou se tři odvážní mladíci do podnikání s půjčováním peněz a zároveň se postaví bohatým a mocným, kteří se přiživují na slabých. Společně se rozhodnou zničit krutého lichváře, který sdírá z kůže chudé lidi.
+Hodnocení Kinobox.cz : 84 %
+Žánr: Thriller seriály
+Původní název: Bloodhounds
+Režie: Jason Kim
+Hrají: Woo Do-hwan, Lee Sang-yi, Heo Joon-ho, Park Sung-woong, Kim Sae-ron, Eugene Ko, Park Min-jung, Choi Si-won, Jeong Da-eun, Yun Yoo-sun
+Původ a premiéra: Jižní Korea, 2023
+Délka: 59 minut
+Kde si film můžete pustit: Netflix (dabing a titulky)
+Pokračování 5 / 30 26. Zrození alchymistky
+Dvanáctiletá Ariana vyrůstá v nehostinném sirotčinci, kde zažívá samotu i šikanu. Má výjimečný dar pro magii a touží zjistit, kdo byli její rodiče. Zlom nastane, když ji vyhledá alchymista Archivald a vezme ji do magického města Ayra na školu alchymistů. Ariana tu poprvé nachází přátele i pocit domova. Aby se však stala studentkou, musí složit náročné přijímací zkoušky. Ve škole objevuje nové znalosti i dávná tajemství. A když se objeví čarodějnice Murien, musí Ariana riskovat vše, aby odhalila pravdu o své minulosti.
+Hodnocení Kinobox.cz : 63 %
+Žánr: Fantasy filmy
+Režie: Petr Kubík, Lukáš Daniel Pařík
+Hrají: Magdalena Müller, Roman Zach, Petr Kubík, Dita Hořínková, Sára Korbelová, Cyril Dobrý, Simona Zmrzlá, Jiřina Daňhelová, Kryštof Koníček, Veronika Bartáková
+Původ a premiéra: Česko, 2025
+Délka: 110 minut
+Kde si film můžete pustit: Netflix
+Pokračování 6 / 30 25. Rozzum v divočině
+Robot Rozzum ztroskotá na pustém ostrově. Musí se rychle přizpůsobit drsné přírodě a naučit se v ní přežít. Postupně si buduje vztahy s místními zvířaty a jeho život nabere nečekaný směr, když se stane náhradním rodičem malého osiřelého housátka.
+Hodnocení Kinobox.cz : 86 %
+Žánr: Animované filmy
+Původní název: The Wild Robot
+Režie: Chris Sanders
+Hrají: Lupita Nyong'o, Pedro Pascal, Kit Connor, Bill Nighy, Stephanie Hsu, Matt Berry, Ving Rhames, Mark Hamill, Catherine O'Hara, Boone Storm
+Původ a premiéra: USA, 2024
+Délka: 102 minut
+Kde si film můžete pustit: Netflix (dabing a titulky), SkyShowtime (dabing a titulky), Apple TV (dabing a titulky), Amazon Obchod (dabing a titulky), Google (dabing a titulky), Rakuten (dabing a titulky), Sweet (dabing a titulky)
+Pokračování 7 / 30 24. Virgin River
+Zdravotní sestra po svém rozvodu odpoví na inzerát nabízející práci v odlehlém kalifornském městečku Virgin River. Zjistí, že život na maloměstě není tak jednoduchý, jak očekávala, a že se musí naučit léčit sama sebe, než se Virgin River stane jejím skutečným domovem.
+Hodnocení Kinobox.cz : 75 %
+Žánr: Romantické seriály
+Hrají: Alexandra Breckenridge, Martin Henderson, Colin Lawrence, Benjamin Hollingsworth, Lauren Hammersley, Tim Matheson, Grayson Maxwell Gurnsey, Sarah Dugdale, Annette O'Toole, Marco Grazzini
+Původ a premiéra: USA, 2019
+Délka: 45 minut
+Kde si film můžete pustit: Netflix (dabing a titulky)
+Pokračování 8 / 30 23. 180
+Nevinná hádka na silnici se během chvíle změní v tragédii, po které skončí syn v kritickém stavu v nemocnici. Otec, ochromený vinou a bezmocí, nedokáže zkrotit vztek a bolest. Touha po spravedlnosti se mu rychle vymkne z rukou a přeroste v posedlost pomstou. Čím dál víc se propadá do světa násilí, kde ztrácí pevnou půdu pod nohama i vlastní morální kompas. Intenzivní drama sleduje, jak snadno může jediný okamžik rozmetat obyčejný život a proměnit zoufalství v nebezpečné odhodlání.
+Hodnocení Kinobox.cz : 48 %
+Žánr: Thrillery
+Režie: Alex Yazbek
+Hrají: Prince Grootboom, Noxolo Dlamini, Danica Jones, Danica De La Rey, Warren Masemola, Desmond Dube, Fana Mokoena, Kabelo Thai, Bongile Mantsai, Zenobia Kloppers
+Původ a premiéra: Jižní Afrika, 2026
+Délka: 94 minut
+Kde si film můžete pustit: Netflix (dabing a titulky)
+Pokračování 9 / 30 22. Ronaldinho: Naprostý unikát
+Třídílný dokument sleduje Ronaldinha od dětství v brazilském Porto Alegre až po vrchol světového fotbalu. Využívá dosud nezveřejněné záběry a nahlíží i do jeho soukromí. Připomíná triumfy s brazilskou reprezentací a Barcelonou i zisk Zlatého míče. Nevyhýbá se ale ani krizím a kontroverzím mimo hřiště. Ukazuje příběh hráče, který ovlivnil moderní fotbal a hledal cestu zpět ke svým kořenům.
+Hodnocení Kinobox.cz : Zatím bez hodnocení
+Žánr: Dokumentární seriály
+Původní název: Ronaldinho: The One and Only
+Původ a premiéra: Brazílie, 2026
+Délka: 55 minut
+Kde si film můžete pustit: Netflix (dabing a titulky)
+Pokračování 10 / 30 21. Věř mi: Falešný prorok
+Dokument sleduje vzestup Samuela Batemana, který se po pádu Warrena Jeffse prohlásil za proroka Fundamentalistické církve Ježíše Krista Svatých posledních dnů. Odbornice na sekty a její manžel, filmař, se přestěhují do komunity v Short Creek v Utahu a postupně proniknou do jeho nejbližšího okruhu.
+Pod záminkou podpory rozdělené komunity odhalují manipulaci, zneužívání i strach, který Bateman udržuje mezi ženami a dívkami. Díky autentickým záběrům a svědectvím zevnitř seriál ukazuje, jak si samozvaný prorok budoval moc, a sleduje snahu dvojice shromáždit důkazy a dostat ho před soud.
+Hodnocení Kinobox.cz : 75 %
+Žánr: Dokumentární seriály
+Původní název: Trust Me: The False Prophet
+Původ a premiéra: USA, 2026
+Kde si film můžete pustit: Netflix (dabing a titulky)
+Pokračování 11 / 30 20. Jednorožčí akademie: Odhalená tajemství
+Sophia se s přáteli vrací na Akademii jednorožců, kde se začnou odhalovat dávná tajemství ohrožující rovnováhu Ostrova. Místo klidného školního roku ji čeká nebezpečná výprava plná skrytých sil, zrad a temnoty, která sílí ve stínech. S každým krokem se posouvá na hranici svých možností. Sophia musí čelit Grimorii i Ravenzelle a zároveň pochybnostem o vlastní síle. Magie, napětí i přátelství procházejí těžkou zkouškou a brzy se ukáže, že nic není takové, jak se zdá.
+Hodnocení Kinobox.cz : 63 %
+Žánr: Animované seriály
+Původní název: Unicorn Academy: Secrets Revealed
+Hrají: Sara Garcia, Sadie Laflamme-Snow, Kamaia Fairburn, Gabriella Kosmidis, Kari Wong, Kolton Stewart
+Původ a premiéra: Kanada, 2026
+Délka: 26 minut
+Kde si film můžete pustit: Netflix (dabing a titulky)
+Pokračování 12 / 30 19. Škola zlomených srdcí
+Nový pohled na střední školu Hartley po více než dvaceti letech. Audry musí s novými přáteli – outsidery Quinnim a Darrenem – napravit svou reputaci a zároveň se vypořádat s láskou, sexem a zlomeným srdcem.
+Hodnocení Kinobox.cz : 74 %
+Žánr: Drama seriály
+Původní název: Heartbreak High
+Režie: Gracie Otto, Jessie Oldfield, Adam Murfet
+Hrají: Ayesha Madon, James Majoos, Chloé Hayden, Asher Yasbincek, Thomas Weatherall, Sherry-Lee Watson, Gemma Chua-Tran, Josh Heuston, Will McDonald, Brodie Townsend
+Původ a premiéra: Austrálie, 2022
+Délka: 48 minut
+Kde si film můžete pustit: Netflix (dabing a titulky)
+Pokračování 13 / 30 18. K-pop: Lovkyně démonů
+Rumi, Mira a Zoey jsou megahvězdy skupiny, která plní stadiony fanoušky z celého světa. Ale když světla reflektorů pohasnou, mění se v trojici démonobijkyň Huntrix. Se svými magickými hlasy chrání svět před temnotou a snaží se vytvořit Zlatý Honmoon – ochranný štít proti dušezlodějům vedeným zlým démonem Gwi-Ma. Situace se ještě vyhrotí, když na scénu vstoupí Saja Boys – konkurenční boyband, který je ve skutečnosti partou démonů, snažících se vysávat z fanoušků energii.
+Hodnocení Kinobox.cz : 74 %
+Žánr: Animované filmy
+Původní název: KPop Demon Hunters
+Režie: Chris Appelhans, Maggie Kang
+Hrají: Arden Cho, May Hong, Ji-young Yoo, Ahn Hyo-seop, Yunjin Kim, Joel Kim Booster, Liza Koshy, Daniel Dae Kim, Ken Jeong, Lee Byung-hun
+Původ a premiéra: USA, 2025
+Délka: 95 minut
+Kde si film můžete pustit: Netflix (dabing a titulky)
+Pokračování 14 / 30 17. Nepřivolávej nic zlého
+Londýnská rodina Daltonových tráví dovolenou v Itálii, kde se seznámí s léka...
+(Pokracovani na webu)|E||T|Čeští meteorologové vyvracejí fámy o zásadním vlivu větrných elektráren na počasí a krajinu|D|05.05.2026 09:45|P|Český hydrometeorologický ústav se pustil do vyvracení fám ohledně větrných elektráren, které se už nějaký čas šíří i českým internetovým prostorem.
+
+...|X|Český hydrometeorologický ústav se pustil do vyvracení fám ohledně větrných elektráren, které se už nějaký čas šíří i českým internetovým prostorem.
+Typicky jde o nepodložená tvrzení, podle kterých dokážou rozsáhlé farmy větrníků citelně měnit ráz kontinentálního počasí, způsobují sucho, případně že turbulentní proudění za lopatkami zvyšuje pravděpodobnost vzniku tornád.
+Dvě nepravdy a jedno potvrzení
+ČHMÚ sepsal několik těchto nejtypičtějších dezinformací a uvádí je stručně na pravou míru s prosbou o další sdílení. Rádi pomůžeme.
+1. Velké větrné parky zabraňují proudění vlhkého vzduchu, proto u nás neprší: NE
+Meteorologové a klimatologové mají dlouhé sady naměřených dat o teplotě, větru, vlhkosti aj. Z těchto dat i z dalších modelů jasně vyplývá, že ani ty největší elektrárny nemají zásadní vliv na velkoškálové proudění větru a vlhkosti do ČR. Změna rozložení srážek v čase i prostoru je naopak vázána na probíhající klimatickou změnou.
+2. „Větrníky“ mohou způsobovat tornádo nebo ho zesílit: NE
+Větrné elektrárny do určité míry promíchávají přízemní vrstvu atmosféry (to má vliv třeba na teplotu během noci). Rozhodně ale nemohou způsobit vznik tornáda. Tornádogeneze je složitý, citlivý a komplexní proces, vázaný často na konkrétní bouřku nebo přeháňku a vhodné vlastnosti prostředí (velká vlhkost, proudění větru a jeho stáčení s výškou).
+Nic z toho ale ani velké větrné parky neovlivňují, navíc lokálně mají tendenci rychlost větru a vlhkost „po větru“ snižovat, ne zvyšovat.
+3. Větrné elektrárny zvyšují četnost blesků: ANO
+Toto je jeden z jasně prokázaných lokálních projevů, které větrné elektrárny opravdu mají. Jednoduše do nich a do blízkého okolí častěji uhodí blesk a to zejména v zimě.
+Kompletní znění v tweetu níže:
+Čeští hydrometeorologové pro více informací odkazují na obšírný text Davida Hansliana a Pavla Sedláka z Ústavu fyziky atmosféry Akademie věd ČR, kteří se vlivu větrných elektráren na krajinu a atmosféru věnovali už před šesti lety.|E||T|Aplikace Lidl Plus nefunguje? Tahle rychlá oprava vás zbaví problémů u pokladny|D|05.05.2026 09:43|P|Aplikace Lidl Plus opět zlobí a samovolně se ukončuje, což dokáže nepříjemně zkomplikovat nákup. Oprava už je na cestě, stačí jen udělat pár jednoduch...|X|Příznivce nakupování v řetězcích Lidl trápí v posledních dnech palčivý problém. Aplikace Lidl Plus, která slouží hlavně k aktivaci slev a načtení zákaznické karty, totiž bez zjevného důvodu padá. To dokáže znepříjemnit nákup, obzvlášť když stojíte u pokladny a telefon zkrátka nespolupracuje.
+Problémy hlásí lidé s telefony Android, kdy se aplikace okamžitě sama ukončuje a mnohdy není možné se dostat ani na domovskou obrazovku.
+Jak nefunkční aplikaci Lidl Plus opravit?
+Nejlepším řešením je podívat se do obchodu s aplikacemi, zda pro Lidl Plus není dostupná aktualizace. Verze 17.0.5 z 4. května 2026 by měla chybu opravovat, takže po jejím nainstalování by měl vše fungovat správně.
+Pokud nevíte, jak na to, stačí:
+-
+v seznamu aplikací podržet prst na ikoně Lidl Plus, dokud se neobjeví vyskakovací okno.
+-
+následně kliknout na ikonu informací, čímž se dostanete k přehledu informací o aplikaci.
+-
+zde stačí dole kliknout na „Detaily aplikace v obchodě“ a zkontrolovat dostupnost aktualizace.
+Tento postup by měl proběhnout bez ztráty dat i nutnosti se do Lidl Plus znovu přihlásit. Pokud ne, vyzkoušejte vymazat mezipaměť aplikace nebo data aplikace a následně se zkusit znovu přihlásit.
+Poznámka autora: mně osobně se toto stalo přímo u pokladny s hromadou lidí za mnou. Pani prodavačka poradila, že aplikace opět padá a jednou z možností, jak se problému u pokladny vyhnout, je si slevy aktivovat doma a u pokladny nadiktovat jen jméno, telefon či e-mail.|E||T|Dovolání neuspělo, za nezákonné rozhodnutí členů Rady ČT odpovídá Česká televize|D|05.05.2026 09:17|P|Nejvyšší soud odmítl dovolání České televize ve sporu o náhradu škody, kterou způsobili členové Rady ČT nezákonným odvoláním členů Dozorčí komise v li...|X|Nejvyšší soud odmítl dovolání České televize ve sporu o náhradu škody, kterou způsobili členové Rady ČT nezákonným odvoláním členů Dozorčí komise v listopadu 2020. Jen v posuzovaném případě musí televize uhradit žalobci několik set tisíc korun (pravomocně přiznaná částka, úroky plus úhrada nákladů na soudní řízení).
+Na nově publikované usnesení Nejvyššího soudu z poloviny dubna upozornil server Echo24.
+Soudní spory vyhráli také další nezákonně odvolaní členové poradního orgánu Rady ČT, který má právo nahlížet do televizních smluv a účetnictví. Celková škoda způsobená rozhodnutím Rady ČT představuje několik milionů korun.
+Důležitou rovinou celého sporu byla právní povaha rozhodnutí Rady ČT a to, kdo má za nezákonný akt ručit. Rada ČT totiž nemá právní subjektivitu a navenek je součástí České televize, jejíž vedení ale zároveň nemůže ovlivnit rozhodování kontrolního orgánu.
+Česká televize v dovolání argumentovala mimo jiné tím, že parlamentem volená Rada ČT vykonává státní správu, a odpovědnost by tedy měla nést Česká republika. Nejvyšší soud tento výklad odmítl a potvrdil ustálenou judikaturu, podle níž je Rada ČT orgánem České televize a její rozhodnutí o odvolání člena Dozorčí komise není výkonem státní moci, který by zakládal odpovědnost státu. Soud v této souvislosti odkázal na svá předchozí rozhodnutí ze 14. října 2025 a z 9. prosince 2025, v nichž obdobné spory řešil shodně.
+U Nejvyššího soudu neuspěl ani argument, že radní České televize jednali v omluvitelném právním omylu, protože šlo o složitou problematiku, k níž neexistovala judikatura ani odborná literatura. Nejvyšší soud konstatoval, že samotná složitost právní otázky zavinění nevylučuje. V odůvodnění rovněž připomněl, že každý subjekt, který se v řízení brání vlastním výkladem právního předpisu, musí počítat s tím, že soudy jeho výklad nemusí přijmout, a tento výsledek pak nelze prezentovat jako omluvitelný omyl.
+Spor se táhne od listopadu 2020, kdy Rada ČT na návrh tehdejší radní Hany Lipovské odvolala všech pět členů tehdejší Dozorčí komise. Čtyři z odvolaných členů se rozhodli své odvolání napadnout u soudu. Celé rozhodnutí Rady ČT později Nejvyšší správní soud zrušil pro nezákonnost. Tím se odvolaným členům otevřela cesta k žalobám o náhradu ušlého zisku. V posuzovaném případu požadoval odvolaný člen náhradu po České televizi i po českém státu prostřednictvím Ministerstva financí. Soudy nižší instance však potvrdily, že odpovědnost za škodu nese přímo veřejnoprávní instituce. Dovolání proti rozhodnutí odvolacího soudu podala už jen Česká televize. Proti rozhodnutí Nejvyššího soudu už není přípustný žádný opravný prostředek.
+Případ má přesah také do aktuální doplňovací volby členů Rady České televize. Obměňuje se v ní šest míst a znovu kandidují i členové, kteří v listopadu 2020 hlasovali pro soudem zrušené usnesení – Roman Bradáč, Pavel Matocha, Jiří Šlégr a Luboš Xaver Veselý. Poslanci je přesto posunuli na užší seznam finalistů. Už dříve sněmovna znovu zvolila do Rady ČT Vladimíra Karmazína, který pro nezákonné usnesení také hlasoval. Dalšího bývalého televizního radního Daniela Váňu poslanci zvolili do Rady Českého rozhlasu. Také on pro zrušené usnesení hlasoval.|E||T|Poslední místo, kde byste čekali dotykový displej. Turtle Beach vyrobil netradiční myš|D|05.05.2026 08:45|P|Turtle Beach Command Series MC7 obsahuje velký dotykový displej a 11 tlačítek. • K tomu má perfektní kolečko, které umí vše, co byste chtěli. • Láká t...|X|Americký výrobce periferií Turtle Beach představil novou myš Command Series MC7. Jeden zahraniční novinář ji nazval vrcholem overengineeringu, tedy samoúčelně komplikovanou. Má totiž všechno, na co si vzpomenete, a k tomu ještě něco navíc.
 Nabízí ergonomický tvar pro praváky, RGB podsvícení a 11 programovatelných tlačítek včetně klikatelného kolečka se setrvačníkem, nastavitelným odporem a náklonem do boků. Dvě hlavní tlačítka používají optické spínače Titan s životností až 150 milionů stisků. Vespod se nachází optický senzor Owl-Eye s citlivostí 30 000 dpi, zrychlením 70G a rychlostí 750 ips. K počítači se připojí přes Bluetooth, USB/RF dongle, případně i kabelem. V posledním případě se použije nejrychlejší polling rate nastavený na 8000 Hz.
 Na boční straně se pak nachází 2,25" dotykový displej, který může ukazovat různé statistiky, vytížení systému, poslouží k ovládání zvuku, OBS, přepínání profilů, nastavení myši nebo jako prostý spouštěč jiných funkcí.
 Turtle Beach nasadil také vyměnitelný 1000mAh akumulátor, který se do myši zasouvá jako kazeta. V balení jsou hned dva, přičemž ten druhý se nabíjí v donglu sloužícím pro bezdrátové připojení. Kvůli komplikované konstrukci je myš na poměry herních modelů dost těžká, váží 135 gramů.
@@ -388,11 +563,7 @@ Polstrování náušníků není tak bohaté, avšak otvor v nich je menší ne�
 Upevnění k hlavovému mostu a nastavení posuvu je také odlišné, nemá mechanickou aretaci, nicméně jde poměrně ztuha. Otočné jsou mušle v obou směrech, přesto však doléhají – právě kvůli odlišnému nasazení na hlavový most – kolem ucha jinak než zmíněné modely, což u mě osobně bylo příčinou horšího komfortu při delším poslechu. Sluchátka jako by „táhnou“ směrem dolů, není to však dáno jejich hmotností, která je vcelku nízká.
 Správné usazení na hlavě je u tohoto modelu velmi důležité. Nabídnou totiž velmi dobrou pasivní izolaci okolního hluku, takže správné usazení znamená jednak minimální pronikání okolních ruchů, jednak vyrovnanější reprodukci a především pak konzistentnější práci ANC.
 Právě potlačení hluku je asi nejslabším článkem HDB 630. Jeho účinnost je sice o něco nižší než je tomu v případě konkurenčních modelů, nicméně pro nejčastější využití v rámci hromadné dopravy či kancelářského šumu funguje velmi dobře.
-Pokud se ale ocitnete ve výrazně hlučnějším prostředí s ozvěnou a dlouhým dozvukem, kde je více středních a vysokých frekvencí, nemusí již sluchátka vše zvládnout na jedničku. Tady je to zkrátka o preferencích – účinnější ANC u konkurence, nebo lepší hudební přednes u HDB 630.|E||T|Miliardová IT skupina z Brna koupila další společnost, tentokrát z Ostravy|D|04.05.2026 11:38|P|Brněnská IT skupina Seyfor realizuje další z řady akvizic. Tentokrát jde o nákup minoritního podílu ve výši 40 procent v ostravské firmě Raynet, která...|X|Brněnská IT skupina Seyfor realizuje další z řady akvizic. Tentokrát jde o nákup minoritního podílu ve výši 40 procent v ostravské firmě Raynet, která vyvíjí stejnojmenný cloudový systém CRM.
-Raynet má nadále fungovat samostatně. Výkonným ředitelem společnosti zůstane Martin Bazala, který patří k několika spolumajitelům, jímž patří zbývající podíl 60 procent. Majoritu ovládají skrze entitu Raynet Partners.
-Raynet zatím zveřejnil čísla za finanční rok 2023, v němž zvýšil tržby z 87 na 116 milionů korun. Zisk po zdanění se dostal na necelých 27 milionů korun.
-“Akvizice Raynetu je dalším krokem v naší strategii budování silné evropské skupiny. Doplňujeme portfolio o klíčovou oblast CRM a zároveň získáváme partnera s kvalitním produktem a silnou pozicí na trhu. Věříme, že společně dokážeme urychlit jeho další rozvoj a využít potenciál Raynetu i na zahraničních trzích. Zejména v posledních dvou letech výrazně posilujeme naši mezinárodní pozici díky akvizicím a zaměření na spolupráci jednotlivých firem napříč skupinou. Tento přístup nám umožňuje efektivně růst a zároveň stavět na silných značkách, které jsou v různých evropských regionech již etablované,” uvedl Martin Cígler, ředitel Seyforu.
-Seyfor (dříve Solitea), kterou ovládají Cígler a slovenští Sandberg Capital, v posledních letech realizovala výrazné množství akvizic a patří k největším konsolidátorům tuzemského trhu s IT. Zároveň skrze nákupy expanduje v zahraničí, například na Balkáně a v Maďarsku. Cílem je vytvořit evropskou skupinu. Zisk EBITDA se v posledním roce dostal k hranici jedné miliardy korun.|E||T|CETIN a O2 mají vlastního transformera. Mobilní vysílač na kolech rozjede signál kdekoliv během pár hodin|D|04.05.2026 11:01|P|CETIN a O2 si nechaly postavit speciálně upravený Mercedes-Benz, který se během chvíle promění v mobilní vysílač a zajistí signál v kritických místech...|X|Český Cetin si ve spolupráci s O2 pořídil zajímavou „hračku“. Jedná se o speciálně upravenou dodávku Mercedes-Benz Sprinter, která dokáže během krátké doby fungovat jako plnohodnotný mobilní vysílač. Stačí ho zaparkovat a během zhruba dvou hodin se promění v plně funkční BTS, lidově řečeno „sajt“.
+Pokud se ale ocitnete ve výrazně hlučnějším prostředí s ozvěnou a dlouhým dozvukem, kde je více středních a vysokých frekvencí, nemusí již sluchátka vše zvládnout na jedničku. Tady je to zkrátka o preferencích – účinnější ANC u konkurence, nebo lepší hudební přednes u HDB 630.|E||T|CETIN a O2 mají vlastního transformera. Mobilní vysílač na kolech rozjede signál kdekoliv během pár hodin|D|04.05.2026 11:01|P|CETIN a O2 si nechaly postavit speciálně upravený Mercedes-Benz, který se během chvíle promění v mobilní vysílač a zajistí signál v kritických místech...|X|Český Cetin si ve spolupráci s O2 pořídil zajímavou „hračku“. Jedná se o speciálně upravenou dodávku Mercedes-Benz Sprinter, která dokáže během krátké doby fungovat jako plnohodnotný mobilní vysílač. Stačí ho zaparkovat a během zhruba dvou hodin se promění v plně funkční BTS, lidově řečeno „sajt“.
 Mobilní transformer pro krizová místa
 Hlavním využitím je pokrytí míst, kde běžná infrastruktura buď nestačí nebo selhala. Typicky může jít o velké akce jako koncerty či demonstrace, ale také o krizové situace, jako například oblasti poškozené přírodními katastrofami. V takových případech je zapotřebí rychle posílat síť nebo nahradit nefunkční vysílače.
 Technicky jde o poměrně komplexní řešení ukryté v dodávce. Na střeše je teleskopický stožár, který se vysune do výšky 12 metrů a nese antény i další technologie pro přenos signálu. Instalovat je možné několik typů antén pro vysílání na všech frekvencích, na které má O2 licenci (700, 800, 900, 1 800, 2 100, 2 500 a 3 700 MHz). V případě nutnosti je dodávka vybavena i internetem od Starlinku.

@@ -1,0 +1,13 @@
+Příznivce nakupování v řetězcích Lidl trápí v posledních dnech palčivý problém. Aplikace Lidl Plus, která slouží hlavně k aktivaci slev a načtení zákaznické karty, totiž bez zjevného důvodu padá. To dokáže znepříjemnit nákup, obzvlášť když stojíte u pokladny a telefon zkrátka nespolupracuje.
+Problémy hlásí lidé s telefony Android, kdy se aplikace okamžitě sama ukončuje a mnohdy není možné se dostat ani na domovskou obrazovku.
+Jak nefunkční aplikaci Lidl Plus opravit?
+Nejlepším řešením je podívat se do obchodu s aplikacemi, zda pro Lidl Plus není dostupná aktualizace. Verze 17.0.5 z 4. května 2026 by měla chybu opravovat, takže po jejím nainstalování by měl vše fungovat správně.
+Pokud nevíte, jak na to, stačí:
+-
+v seznamu aplikací podržet prst na ikoně Lidl Plus, dokud se neobjeví vyskakovací okno.
+-
+následně kliknout na ikonu informací, čímž se dostanete k přehledu informací o aplikaci.
+-
+zde stačí dole kliknout na „Detaily aplikace v obchodě“ a zkontrolovat dostupnost aktualizace.
+Tento postup by měl proběhnout bez ztráty dat i nutnosti se do Lidl Plus znovu přihlásit. Pokud ne, vyzkoušejte vymazat mezipaměť aplikace nebo data aplikace a následně se zkusit znovu přihlásit.
+Poznámka autora: mně osobně se toto stalo přímo u pokladny s hromadou lidí za mnou. Pani prodavačka poradila, že aplikace opět padá a jednou z možností, jak se problému u pokladny vyhnout, je si slevy aktivovat doma a u pokladny nadiktovat jen jméno, telefon či e-mail.

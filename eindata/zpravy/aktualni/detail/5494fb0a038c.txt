@@ -1,0 +1,23 @@
+Tiché sekání a pohyb
+Lidar zajistí přesnou polohu
+4G modul
+Apple Find My
+Přes GPS hlídá sekání mimo hlavní mapu
+Nemá fyzický senzor deště
+Pohon jen na zadní kola omezuje schopnosti
+75 /10
+Letošní rok je ve znamení příchodu lidarů i do levnější kategorie robotických sekaček. Ty tak nepotřebují dobrý výhled na oblohu s GPS satelity a zvládnou sekat i v těsných prostorech u domů či ve stínu hustých stromů. Na druhou stranu se nemohou spolehnout na absolutní přesné souřadnice ze satelitů a svou polohu určují relativně podle toho, co vidí.
+Zatímco dražší modely kombinují lidar s GPS/RTK pro rovnoměrnější přesnost, ty levné kromě nízké ceny zaujmou i velmi jednoduchou instalací. Stačí je položit na trávník a stisknout tlačítko. Samy si zmapují plochu trávníku a rovnou ji posekají.
+Segway Navimow i210E Lidar
+doporučená plocha: 1000 m² • navigace a detekce objektů: lidar + 140° RGB kamera • pohon: dvě zadní kola • stoupavost: 45% (24°) • vertikální překážka: až 3 cm • výška sekání: 2 – 7 cm pro dané zóny • žací disk: 6 nožů, záběr 22 cm • hlučnost: 59 dB • Odolnost: IP66 • Detekce počasí: jen internetová • Chytrá domácnost: Alexa, Google Home, Home Assistant • ochrana: GPS hranice zóny, PIN, Apple Find My • připojení: Wi-Fi, Bluetooth, 4G (rok zdarma) • akumulátor: 5,1 Ah (na jedno nabití 265 m²) • Rychlost sekání: 145 m²/h • Rozměry: 63,5 × 44,5 × 28,7 cm • Hmotnost 14,7 kg • záruka: 3 roky sekačka, 2 roky akumulátor
+Sekačka Navimow i210 Lidar nás zaujala hlavně extrémně tichým chodem, slušnou průchodností terénem i bez pohonu všech kol a dobrou orientací v členitém terénu bez jednoznačných hranic v podobě plotů či hustých keřů po obvodu. Sice nepotřebuje GPS pro sekání, ale dokáže poznat, když ji odvezete daleko.
+V českých obchodech stojí až Kč
+Porovnat ceny
+Odmítne tak posekat zahradu ve městě, když má zmapované okolí chalupy. Nejlépe ji bude na rovném udržovaném trávníku s dobrými hranicemi, ale troufne si na víc. Díky lidaru se nebojí pod stromy či těsně u vysokých domů a plotů. Poradí si s mírným svahem, ale jen s pohonem zadních kol ji netrapte náročnějšími podmínkami.
+Není lidar jako lidar Lidar je doslova světelný radar. Také měří vzdálenost vysíláním paprsků (tady laserových) a dobou přijetí jejich odrazů ve snímači. Sekačka si s jeho pomocí vytvoří 3D mapu scény a následně podle ní určuje, kde se zrovna na trávníku nachází. Podobně fungují i robotické vysvače, které ale mají jednodušší práci díky stěnám a menším plochám domácností.
+V pokračování pro předplatitele také najdete
+Druhy lidarů a jejich schopnosti
+Reálné zkušenosti ze sekání na zahradě
+Srovnání modelu s konkurencí na trhu
+Chci Premium a Živě.cz bez reklam
+Od 58 Kč měsíčně

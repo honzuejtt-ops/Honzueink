@@ -1,0 +1,6 @@
+Článek
+Technologie sofistikovaného asistovaného a autonomního řízení se v automobilovém průmyslu stávají stále důležitějšími. Jejich vývoj je přitom poměrně pracný a nákladný, americký koncern General Motors však našel užitečnou pomoc v jiné moderní technologii.
+Mary Barra, generální ředitelka GM, měla během zhodnocení čtvrtletních výsledků automobilky odhalit, že takřka 90 % kódu vytvořeného týmem pro autonomní řízení bylo vygenerováno pomocí AI, jak uvádí web Carscoops. Nečekané odhalení přitom podle generální ředitelky ukazuje, jak vážně koncern GM přistupuje k uplatnění AI.
+Společnost General Motors přitom dlouhodobě nabízí funkci Super Cruise, která řidičům již nyní umožňuje sundat ruce z volantu a nechat vůz řídit na vybraných úsecích dálnic samostatně, ovšem pod podmínkou sledování provozu. Systém je dostupný v 23 modelech a zákazníci už s ním měli zdolat přes 1,6 miliardy kilometrů.
+V roce 2028 však automobilka slibuje uvedení nové generace systému Super Cruise, která by již měla dovolit sundat ruce z volantu bez nutnosti sledovat vozovku. Prvním vozem s tímto systémem by se měl stát Cadillac Escalade IQ.
+Nová generace systému bude pracovat s Lidarem, radary i kamerami kolem vozu, přičemž okolní motoristy na autonomní řízení upozorní tyrkysová světla na různých místech automobilu.

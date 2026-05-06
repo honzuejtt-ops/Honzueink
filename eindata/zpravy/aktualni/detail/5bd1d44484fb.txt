@@ -1,0 +1,22 @@
+Bezpečnostní experti ze společnosti Palo Alto Networks upozornili na znepokojivý fakt: prohlížeč Microsoft Edge uchovává všechna uložená hesla v operační paměti v nešifrované podobě. Reakce Microsoftu? Nejde o chybu, ale o vlastnost.
+Většina moderních prohlížečů ukládá hesla v šifrované podobě a do paměti je načítá až ve chvíli potřeby. Microsoft Edge však zvolil jinou cestu: do paměti RAM nahraje kompletní databázi uložených přihlašovacích údajů hned po startu aplikace. Je tedy úplně jedno, zda v dané relaci navštívíte banku, nebo jen čtete zprávy – vaše citlivé údaje jsou v paměti fyzicky přítomné v čitelném formátu.
+Například Google Chrome, ačkoliv používá stejné jádro Chromium, se chová výrazně obezřetněji. Hesla dešifruje pouze na vyžádání a využívá funkci App-Bound Encryption, která uzamyká dešifrovací klíče ke konkrétnímu ověřenému procesu. To výrazně komplikuje jejich zneužití jinými aplikacemi.
+Absurdní divadlo s Windows Hello
+Zarážející je bezpečnostní paradox v uživatelském rozhraní. Pokud chcete své heslo vidět přímo v nastavení Edge, prohlížeč po vás bude vyžadovat biometrické ověření přes Windows Hello (otisk prstu nebo PIN).
+Aplikace demonstrující využití zranitelnosti
+Tato ochrana je však v tuto chvíli v podstatě jen „kosmetická“. Zatímco uživatel musí přikládat prst k senzoru, stejný proces prohlížeče už dávno drží toto heslo (i všechna ostatní) v RAM zcela nekrytě. Pro útočníka, který dokáže číst paměť procesů, je biometrická závora irelevantní.
+Jaké je reálné riziko?
+Otázka bezpečnosti se zde láme na tom, v jakém prostředí počítač používáte.
+Sdílená prostředí a terminálové servery: Zde je riziko kritické. Pokud útočník získá administrátorská práva na serveru, kde pracuje více uživatelů, může pomocí technik „memory scrapingu“ vysát hesla z paměti všech běžících procesů Edge. To platí i pro uživatele, kteří jsou sice odpojení, ale jejich relace na pozadí stále běží.
+Osobní počítače: Pokud na počítači pracujete sami, může se zdát riziko malé. Pokud však dojde k nákaze malwarem, který má dostatečná oprávnění ke čtení paměti jiných procesů, Edge mu servíruje kompletní databázi hesel bez nutnosti dalšího dešifrování.
+Nabízí se otázka, zda není jedno, že Chrome heslo v paměti také na chvíli „ukáže“. Rozdíl tu ale je. V Chromu se nešifrovaný text objeví pouze během automatického vyplňování nebo při zobrazení hesla.
+Okno příležitosti pro útočníka je extrémně malé a útok musí být přesně cílený na konkrétní moment. V případě Edge je útok statický – útočník nemusí na nic čekat, hesla jsou v paměti dostupná po celou dobu běhu prohlížeče. Čas je v kyberbezpečnosti klíčovou veličinou a Edge ho dává útočníkům opravdu mnoho.
+Jak se bránit
+Jelikož Microsoft toto chování označil za by design (záměr, vlastnost), nelze v blízké době očekávat změnu. Uživatelé, kteří chtějí mít své údaje pod lepší kontrolou, mají několik alternativ:
+-
+Externí správci hesel: Aplikace jako Bitwarden, 1Password nebo KeePassXC jsou navrženy tak, aby citlivá data v paměti agresivně promazávaly ihned po jejich použití.
+-
+Passkeys: Přechod na biometrické klíče zcela eliminuje potřebu ukládat klasická hesla, čímž tento typ útoku zneškodňuje v základu.
+-
+Hlavní heslo ve Firefoxu: Prohlížeč od Mozilly nabízí funkci „Master Password“. Dokud jej nezadáte, databáze hesel zůstává zašifrovaná a nedostane se do RAM v čitelné podobě.
+Ačkoliv pro běžného domácího uživatele nejde o důvod k okamžité panice, pro firemní sféru a sdílené pracovní stanice jde o bezpečnostní slabinu, kterou by administrátoři neměli ignorovat. Udělat útočníkovi práci co nejtěžší je základní pravidlo bezpečnosti a Microsoft Edge mu ji v tomto případě až příliš usnadňuje.

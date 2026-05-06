@@ -1,0 +1,10 @@
+Článek
+Za růstem stojí především zvýšený zájem čínských technologických firem o domácí řešení. Ty se stále častěji poohlížejí po alternativách k americkým produktům, což společnosti Huawei otevírá dveře k posílení podílu na trhu.
+Právě letos by se podle dostupných informací mohl stát lídrem v oblasti AI čipů v Číně.
+Klíčovým produktem je nová generace procesoru Ascend 950PR, který se do sériové výroby dostal letos v březnu. Většina objednávek směřuje právě na tento model, přičemž firma už nyní podle Financial Times připravuje jeho vylepšenou verzi s označením 950DT, plánovanou na závěr roku.
+Huawei se tímto krokem snaží proniknout do segmentu, kde dlouhodobě dominovala americká Nvidia. Té však situaci komplikují regulační omezení jak ze strany Spojených států, tak Číny. Výsledkem je prostor pro rychlejší expanzi domácí konkurence.
+Čínská vláda navíc podle dostupných informací podporuje využívání lokálních technologií a omezuje nasazení zahraničních čipů.
+Situace kolem Nvidie zůstává složitá. Přestože firma získala povolení k prodeji některých produktů do Číny, dodávky podle zdrojů zatím neprobíhají kvůli dalším regulatorním překážkám. Huawei tak získává čas i prostor pro posilování své pozice, i když jeho čipy zatím technologicky zaostávají za nejpokročilejšími řešeními amerického konkurenta přibližně o dvě generace.
+Tlak v Evropě
+Současně se Huawei musí vyrovnávat i s tlakem ze zahraničí. Evropská unie totiž zpřísňuje přístup k technologické bezpečnosti a členským státům doporučuje, aby při budování telekomunikační infrastruktury nevyužívaly zařízení od čínských firem, včetně Huawei. Opatření je součástí širší strategie zaměřené na ochranu kritické infrastruktury a snížení závislosti na dodavatelích, které Brusel označuje za rizikové.
+Nová pravidla se přitom netýkají pouze mobilních sítí. Evropské instituce zvažují také omezit financování energetických projektů využívajících čínské technologie, například v oblasti fotovoltaiky. Právě některá zařízení mohou podle Bruselu představovat bezpečnostní riziko, včetně možnosti narušení stability energetické sítě.

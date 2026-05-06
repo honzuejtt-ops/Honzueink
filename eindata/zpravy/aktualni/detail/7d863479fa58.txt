@@ -1,0 +1,17 @@
+Článek
+Podle hackerů bylo zasaženo přibližně 9000 vzdělávacích institucí a odcizeno mělo být až 275 milionů záznamů. O útoku informovali prostřednictvím příspěvku na darknetu.
+Dopady útoku nyní řeší i některé nizozemské univerzity a vysoké školy. Mnohé z nich zatím nevědí, zda se únik týká i jejich systémů. Canvas v Nizozemsku využívají například Maastricht University, Universiteit van Amsterdam, VU Amsterdam nebo Erasmus Universiteit Rotterdam.
+Maastrichtská univerzita už studentům a zaměstnancům rozeslala upozornění e-mailem. Uvedla, že si je útoku vědoma, ale zatím není jasné, zda byla data jejích uživatelů skutečně odcizena. Zároveň škola uvedla, že systém Canvas zůstává bezpečný k používání.
+Chtějí výkupné
+Útočníci mezitím zveřejnili na darknetu výhrůžnou zprávu adresovanou společnosti Instructure. „Instructure Holdings, toto je poslední varování,“ napsala skupina ShinyHunters. „Ozvěte se do 6. května, jinak začneme zveřejňovat data a přijdou i další nepříjemné digitální problémy.“
+Hackeři chtějí tedy po provozovateli Canvasu evidentně výkupné, aby odcizená data nezveřejnili. Detaily jejich podmínek ale zveřejněny nebyly, stejně jako částka, kterou požadují.
+Podle společnosti Instructure mezi uniklými údaji figurují jména, studentská čísla nebo e-mailové adresy. Hackeři se údajně dostali také k soukromým zprávám, které si uživatelé přes Canvas posílali. Firma zároveň tvrdí, že nebyla odcizena hesla, data narození, doklady totožnosti ani bankovní údaje.
+Zástupci společnosti zatím neupřesnili, zda se budou snažit s hackery vyjednávat.
+Protřelá hackerská skupina
+Skupina ShinyHunters není ve světě kyberkriminality neznámým jménem. Letos se o ní psalo také v souvislosti s útokem na telekomunikačního operátora Odido, při němž unikla data milionů nizozemských zákazníků.
+V posledních měsících přitom nejde o jediný podobný incident, jak připomněl server NOS. Do médií se dostaly i další případy úniku zákaznických dat, například u společností Booking.com, Basic-Fit nebo Rituals.
+Jak funguje darknet
+Darknet původně vznikl s ušlechtilou myšlenkou, mělo jít o prostor na internetu bez regulací a státního dohledu. Nejprve tedy sloužil především jako anonymní digitální prostor v zemích, kde panuje na sítích tvrdá cenzura, a k těmto účelům slouží i nyní.
+Postupně však darknet začal přitahovat zločince, kteří pod rouškou anonymity mohli prodávat prakticky jakékoli zboží bez omezení – na internetovém černém trhu tak není problém sehnat drogy, zbraně, léky, padělané dokumenty, škodlivý software či odcizené osobní údaje běžných uživatelů.
+K darknetu se lidé mohou připojit prostřednictvím speciálních internetových prohlížečů, jež jsou schopny pracovat přes šifrované sítě a nabízejí konfiguraci komunikačních protokolů a portů.
+Jako platidlo zde slouží virtuální mince, nejčastěji bitcoiny, ethereum či monero, díky kterým jsou kupující a prodávající prakticky nevystopovatelní. Ochránci zákona tedy mají jen velmi omezené možnosti, jak obchodování na černém internetovém trhu zarazit.

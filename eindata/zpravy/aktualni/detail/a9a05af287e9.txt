@@ -1,0 +1,12 @@
+Článek
+Lidový soud ve městě Chang-čou na východě Číny minulý týden rozhodl ve prospěch pracovníka technologické společnosti, který byl v roce 2022 přijat jako dozor kontrolující výstupy umělé inteligence. Následně byl ale jedním z jazykových modelů nahrazen a nakonec propuštěn.
+„Důvody pro ukončení pracovního poměru uvedené společnosti nespadaly mezi negativní okolnosti ani nesplňovaly zákonnou podmínku, která by znemožňovala pokračování v plnění pracovní smlouvy,“ cituje z vyjádření server Independent.
+Z podrobnějších informací byl pracovník, známý jen jako Zhou, přijat na pozici supervizora zajištění kvality s měsíčním platem cca 2691 liber (asi 76 tisíc korun). Kromě výstupů AI dohlížel také na kvalitu obsahu, aby nebylo porušováno soukromí a nešlo o nelegální obsah.
+Poté, co po něm práci převzal jazykový model, byl Zhou přeložen na jinou pozici s nižším ohodnocením, cca 1614 liber měsíčně (asi 46 tisíc korun). Jeho smlouva byla následně ukončena poté, co nabízenou nižší pozici odmítl.
+Zhou se obrátil na rozhodčí soud, který uznal, že jeho propuštění bylo nezákonné a podpořil nárok na vyšší ohodnocení. Společnost, jež s tím nesouhlasila, se obrátila na nižší lidový soud, který rozhodl ve prospěch propuštěného zaměstnance. Stejně tak učinil i lidový soud v Chang-čou, ke kterému se společnost odvolala posléze.
+Výsledným rozhodnutím bylo, že používání umělé inteligence není omluvou pro rušení pracovních smluv.
+Koho nahradí AI?
+Umělá inteligence zabírá na světových pracovních trzích stále větší podíl. Pracovních míst, ze kterých vytlačuje lidi, rychle přibývá. Je ale stále velká řada míst, kterých se AI jen tak nedotkne, natož aby je výrazněji ohrozila.
+Podle průzkumu Světového ekonomického fóra z minulého roku zhruba 40 % zaměstnavatelů očekává snížení počtu zaměstnanců v oblastech, kde může AI automatizovat potřebné úkoly.
+Jak vyplynulo z analýzy, kterou v minulém roce zpracovala společnost Microsoft, na nejohroženějších pozicích jsou v první desítce překladatelé (jejich práci zvládne z 98 % AI), ale také třeba historici, matematici či korektoři (91 %). Z 85 % by mohla umělá inteligence „zefektivnit“ i práci spisovatelů.
+Z celých 83 % by zvládla zastoupit i novinářskou práci. Více než polovinu práce by zvládla i u editorů (78 %), hlasatelů a rozhlasových dýdžejů (74 %), webových vývojářů (73 %), osobních finančních poradců (69 %), ale také archivářů (66 %) nebo PR specialistů (63 %).

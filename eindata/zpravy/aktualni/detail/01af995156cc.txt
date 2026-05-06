@@ -1,0 +1,59 @@
+DLI – největší zbraň osmibitových Atari?
+Co se dozvíte v článku
+- DLI – největší zbraň osmibitových Atari?
+- Základ pro všechny další demonstrační příklady využívající DLI
+- Instrukce DLI v display listu
+- Display list, který v polovině obrazovky vyvolá DLI
+- Realizace obsluhy přerušení DLI
+- Změna barvy pozadí pro dolní polovinu obrazovky
+- Nastavení přerušovacího vektoru pro DLI
+- Úplný zdrojový kód druhého demonstračního příkladu
+- WSYNC – čekání na dokončení vykreslení celého obrazového řádku
+- Nejjednodušší realizace změny barvy pozadí na dvou odlišným místech na obrazovce
+- Úplný zdrojový kód třetího demonstračního příkladu
+- Opakovaná změna barvy pozadí: vylepšená verze, ve které není CPU zdržován čekáním na HSYNC
+- Úplný zdrojový kód třetího demonstračního příkladu
+- Zjednodušená varianta DLI: přepínání mezi dvěma barvami pozadí
+- Úplný zdrojový kód čtvrtého demonstračního příkladu
+- Realizace zobrazení osmi spritů namísto čtyř spritů
+- Úplný zdrojový kód dnešního posledního demonstračního příkladu
+- Příloha: Makefile pro překlad všech demonstračních příkladů
+- Repositář s demonstračními příklady
+- Odkazy na Internetu
+Ústředním prvkem osmibitových domácích mikropočítačů Atari je mikroprocesor MOS 6502. Z pohledu výpočetního výkonu se nejedná (a ani nejednalo) o nejrychlejší dostupný osmibitový CPU, což však konkrétně v případě Atari nevadilo, protože MOS 6502 byl doplněn o další čipy: ANTIC, GTIA a POKEY. Pravděpodobně nejdůležitější je ANTIC s vlastní instrukční sadou a přímým přístupem do operační paměti.
+Připomeňme si, že display list slouží pro nastavení textových a grafických režimů pro každý logický řádek na obrazovce zvlášť. Ovšem navíc je možné u každého zobrazovaného řádku povolit přerušení DLI (Display-List Interrupt), které se provede při vykreslování řádku popř. je možné počkat až na horizontální zpětný běh elektronového paprsku na televizní obrazovce.
+To je sice zajímavá technologie, ale proč by se vůbec mělo jednat o největší zbraň osmibitových Atari? Jen díky DLI je možné zobrazit větší počet barev (klidně i všech 128 dostupných barev, popř. scrollující barvy), současně zobrazit více než 128 různých znaků, zobrazit více než 4/5 spritů (což si dnes ukážeme), zobrazit sprity naprosto libovolnými barvami atd. Záleží jen na schopnostech programátora, jakým způsobem DLI využije.
+Základ pro všechny další demonstrační příklady využívající DLI
+V rámci navazujících kapitol si ukážeme několik demonstračních příkladů, ve kterých se bude DLI využívat. Všechny tyto příklady budou postaveny na stejném základu, jenž je vypsán pod tímto odstavcem. Příklad obsahuje čtyři hlavní části: nastavení display listu, vyplnění obrazovky vzorem (všemi znaky v přímé i inverzní podobě), vlastní display list a paměťový prostor rezervovaný pro video RAM (960 bajtů). Mělo by se jednat o známé techniky podrobně popsané v předchozích třech článcích:
+; --------------------------------------------------------------------- ; Výpis všech 128 znaků v přímé i inverzní podobě v režimu GR.0. ; --------------------------------------------------------------------- .include "atari.inc" .CODE .proc main lda #<dlist ; nižší byte adresy display listu sta SDLSTL lda #>dlist ; vyšší byte adresy display listu sta SDLSTH ldy #0 ; počitadlo zápisů fill_screen: tya ; kód vypisovaného znaku sta screen, y ; tisk znaku na zvolené místo na obrazovce sta screen+40*12, y iny ; zvětšit hodnotu počitadla a offsetu bne fill_screen ; skok loop: jmp loop .endproc dlist: .byte DL_BLK8, DL_BLK8, DL_BLK8 ; 3x8=24 prázdných obrazových řádků .byte DL_LMS+DL_CHR40x8x1 ; určení počáteční adresy obrazové paměti + jeden řádek režimu 2 (GR.0) .byte <screen, >screen ; počáteční adresa obrazové paměti .res 23, DL_CHR40x8x1 ; opakovat řádky textového režimu 2 (GR.0) .byte DL_JVB, <dlist, >dlist ; skok na začátek display listu end: .BSS screen: .res 40*24 .segment "EXEHDR" .word $ffff ; uvodni sekvence bajtu v souboru XEX .word main ; zacatek kodoveho segmentu .word end - 1 ; konec kodoveho segmentu .segment "AUTOSTRT" ; segment s pocatecni adresou .word RUNAD ; naplni se pouze adresy RUNAD a RUNAD+1 .word RUNAD+1 .word main ; adresa vstupniho bodu do programu ; finito
+Po překladu a spuštění tohoto demonstračního příkladu by měla obrazovka Atari vypadat následovně:
+Instrukce DLI v display listu
+Připomeňme si, že vykreslování herního pole (playfield) čipem ANTIC probíhá (zjednodušeně řečeno) následujícím způsobem:
+- Přečte se instrukce display listu, což je jedna hodnota typu bajt nebo hodnota následovaná dvoubajtovou adresou
+- Instrukce se provede, což znamená buď vykreslení řádku (text či grafika) nebo skok na jinou instrukci display listu
+Existuje několik typů instrukcí, které lze do display listu zapsat, zejména:
+- Vykreslení prázdných řádků vybarvených barvou okraje (border)
+- Vykreslení textového řádku (písma) nebo grafického řádku (40, 80, 160 či 320 pixelů)
+- Skok na jinou instrukci display listu
+- Nastavení začátku obrazové paměti + vykreslení textového nebo grafického řádku (kupodivu se jedná o jedinou instrukci)
+To však není vše, protože u každé instrukce display listu je možné jejím nejvyšším bitem nastavit, že se má provést DLI, tj. vyvolat přerušovací rutina. Můžeme si tedy nastavit pomocnou konstantu (je již definována v include souborech):
+DL_DLI = 128
+Funkce čipu ANTIC je ve skutečnosti taktéž odlišná:
+- Přečte se instrukce display listu, což je jedna hodnota typu bajt nebo hodnota následovaná dvoubajtovou adresou
+- Instrukce se provede, což znamená buď vykreslení řádku (text či grafika) nebo skok na jinou instrukci display listu
+- Pokud je nastaven nejvyšší bit instrukce (DL_DLI), automaticky se zavolá subrutina pro obsluhu DLI. Co se v této subrutině děje, je plnou zodpovědností programátora.
+Display list, který v polovině obrazovky vyvolá DLI
+Podívejme se nyní, jak by mohl vypadat zápis display listu v případě, že při každém vykreslení obrazovky budeme chtít, aby se zhruba v její polovině vyvolala subrutina DLI. Je to snadné, protože původní display list již známe a postačuje nám k jedné instrukci představované konstantou DL_CHR40×8×1 přičíst konstantu DL_DLI:
+dlist: .byte DL_BLK8, DL_BLK8, DL_BLK8 ; 3x8=24 prázdných obrazových řádků .byte DL_LMS+DL_CHR40x8x1 ; určení počáteční adresy obrazové paměti + jeden řádek režimu 2 (GR.0) .byte <screen, >screen ; počáteční adresa obrazové paměti .byte DL_CHR40x8x1 ; opakovat řádky textového režimu 2 (GR.0) .byte DL_CHR40x8x1 ; opakovat řádky textového režimu 2 (GR.0) .byte DL_CHR40x8x1 ; opakovat řádky textového režimu 2 (GR.0) .byte DL_CHR40x8x1 ; opakovat řádky textového režimu 2 (GR.0) .byte DL_CHR40x8x1 ; opakovat řádky textového režimu 2 (GR.0) .byte DL_CHR40x8x1 ; opakovat řádky textového režimu 2 (GR.0) .byte DL_CHR40x8x1 ; opakovat řádky textového režimu 2 (GR.0) .byte DL_CHR40x8x1 ; opakovat řádky textového režimu 2 (GR.0) .byte DL_CHR40x8x1 ; opakovat řádky textového režimu 2 (GR.0) .byte DL_CHR40x8x1 ; opakovat řádky textového režimu 2 (GR.0) .byte DL_DLI+DL_CHR40x8x1 ; GR.0 ovšem navíc s povolením DLI .byte DL_CHR40x8x1 ; opakovat řádky textového režimu 2 (GR.0) .byte DL_CHR40x8x1 ; opakovat řádky textového režimu 2 (GR.0) .byte DL_CHR40x8x1 ; opakovat řádky textového režimu 2 (GR.0) .byte DL_CHR40x8x1 ; opakovat řádky textového režimu 2 (GR.0) .byte DL_CHR40x8x1 ; opakovat řádky textového režimu 2 (GR.0) .byte DL_CHR40x8x1 ; opakovat řádky textového režimu 2 (GR.0) .byte DL_CHR40x8x1 ; opakovat řádky textového režimu 2 (GR.0) .byte DL_CHR40x8x1 ; opakovat řádky textového režimu 2 (GR.0) .byte DL_CHR40x8x1 ; opakovat řádky textového režimu 2 (GR.0) .byte DL_CHR40x8x1 ; opakovat řádky textového režimu 2 (GR.0) .byte DL_CHR40x8x1 ; opakovat řádky textového režimu 2 (GR.0) .byte DL_CHR40x8x1 ; opakovat řádky textového režimu 2 (GR.0) .byte DL_JVB, <dlist, >dlist ; skok na začátek display listu
+Samozřejmě je možné použít zkrácený zápis založený na instrukci assembleru .res, který dokáže bajt (či jinou hodnotu) n-krát zopakovat. Alternativní způsob zápisu display listu tedy může vypadat následovně:
+dlist: .byte DL_BLK8, DL_BLK8, DL_BLK8 ; 3x8=24 prázdných obrazových řádků .byte DL_LMS+DL_CHR40x8x1 ; určení počáteční adresy obrazové paměti + jeden řádek režimu 2 (GR.0) .byte <screen, >screen ; počáteční adresa obrazové paměti .res 10, DL_CHR40x8x1 ; opakovat řádky textového režimu 2 (GR.0) .byte DL_DLI+DL_CHR40x8x1 ; GR.0 ovšem navíc s povolením DLI .res 12, DL_CHR40x8x1 ; opakovat řádky textového režimu 2 (GR.0) .byte DL_JVB, <dlist, >dlist ; skok na začátek display listu
+Realizace obsluhy přerušení DLI
+Dále si musíme ukázat, jak vlastně bude vypadat vlastní obsluha přerušení DLI. Jedná se o běžnou subrutinu, která musí končit instrukcí RTI (Return from Interrupt):
+; --------------------------------------------------------------------- ; obsluha DLI ; --------------------------------------------------------------------- dli: ... ... ... rti ; návrat z DLI
+Subrutina nesmí navenek měnit žádné pracovní registry, tudíž ani akumulátor. V praxi tedy bude základ subrutiny DLI vypadat takto:
+; --------------------------------------------------------------------- ; obsluha DLI ; --------------------------------------------------------------------- dli: pha ; uschovat akumulátor ... ... ... pla ; obnovit akumulátor rti ; návrat z DLI
+Změna barvy pozadí pro dolní polovinu obrazovky
+Podívejme se na konkrétní subrutinu DLI, která modifikuje HW registr COLPF2, což je registr čipu GTIA. Zápisem nějaké hodnoty do tohoto registru se ihned změní barva vykreslování pozadí (výchozí barva je modrá – typicky Atarácká barva):
+; --------------------------------------------------------------------- ; obsluha DLI ; --------------------------------------------------------------------- dli: pha ; uschovat akumulátor lda #$c4 ; barva pozadí sta COLPF2 ; přímo nastavit zápisem do HW registru pla ; obnovit akumulátor rti ; návrat z DLI
+DLI je vyvoláno zhruba v polovině obrazovky, takže její druhá polovina bude mít barvu 0×c4. O...
+(Pokracovani na webu)

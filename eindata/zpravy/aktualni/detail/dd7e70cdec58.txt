@@ -1,0 +1,46 @@
+Ukázat všechny listy najednou
+Proč si stahovat videa z YouTube? Stahování videí se hodí například při cestování, v místech se slabým internetovým připojením nebo tam, kde není dostupný evropský roaming. Může také sloužit jako záloha pro případ, že by video bylo z platformy odstraněno. Videa si můžete také převést do formátů pro mobily a tablety. Některé nástroje navíc umožňují stáhnout jen zvukovou stopu nebo titulky.
+Nezapomeňte, že stahování z YouTube je v rozporu s podmínkami Googlu . Oficiálně to je možné jen v případech, kdy to služba výslovně dovoluje nebo kdy máte písemný souhlas Googlu a případného nositele práv.
+Youtube Downloader HD: Jednoduché stahování
+Aplikace Youtube Downloader HD je zdarma a bez jakýchkoli reklam. Nabízí jednoduché rozhraní, do kterého stačí zkopírovat URL videa a zvolit kvalitu. Výsledné video si navíc můžete převést do formátu MP4, který přehraje většina mobilních zařízení.
+Youtube Downloader HD
+Nástroj dokáže stahovat videa v rozlišení až 4K při 30 či 60 snímcích za sekundu (pokud to dovoluje zdroj). Jestliže zvolíte vyšší rozlišení, než je u daného videa k dispozici, aplikace automaticky zvolí nejvyšší dostupnou variantu. Youtube Downloader HD je k dispozici pro operační systémy Windows, macOS a Linux.
+Pokračování 2 / 10 Yt-dlp: Stahování v příkazovém řádku
+Yt-dlp je fork nástroje youtube-dl založený na nyní neaktivním youtube-dlc. Tento projekt se zaměřuje na přidávání nových funkcí, opravy chyb a udržování kódu v aktuálním stavu.
+yt-dlp
+Jak je vidět na obrázku, jedná se o nástroj pracující v příkazovém řádku. Můžete ho tak snadno využít v rámci nejrůznějších skriptů například pro automatické stahování. Je k dispozici pro operační systémy Windows Vista (!) a vyšší, Linux a macOS.
+Pokračování 3 / 10 jDownloader: vhodný i pro méně zkušené
+JDownloader je pokročilý správce, se kterým snadno stáhnete videa z YouTube i dalších platforem. Podpora více vláken stahování výrazně urychluje, což se hodí hlavně u objemných videí v nejvyšším rozlišení. Program automaticky ukládá i titulky nebo zvuk, takže se na video můžete podívat offline nebo si ho převést na jiný formát.
+jDownloader
+JDownloader umí obejít i některá omezení stahovacích serverů, například čekací doby nebo nutnost manuálního zadávání CAPTCHA kódů. Program je open-source a podporuje široké spektrum služeb, včetně YouTube, Vimeo a dalších populárních platforem. Díky přehlednému rozhraní a automatickému načítání odkazů ho zvládnou i začátečníci.
+Pokračování 4 / 10 YTD: Vnucuje placenou verzi
+YTD umožňuje stahovat videa ze služeb Facebook, DailyMotion, Vimeo, Yahoo Video a mnoha dalších a převádět je do jiných formátů – například jako videa pro iPad, iPhone či PSP. Vyznačuje se poměrně jednoduchým uživatelským rozhraním a schopností zachytávat zkopírované „kompatibilní“ adresy ze schránky.
+YTD
+Největší nevýhodou je agresivní vnucování placené verze Pro. Na její propagaci narazíte nejen ve formě reklamního banneru v okně aplikace a červených štítků na různých místech uživatelského rozhraní, ale bohužel také v podobě vyskakujících oken webového prohlížeče.
+Pokračování 5 / 10 4k Video Downloader: Stahování s plným komfortem
+4k Video Downloader umí stahovat video, zvuk, titulky, kanály a seznamy skladeb z YouTube ve vysoké kvalitě a ukládat je do počítače. Program je zdarma pro stahování videí a playlistů o maximálním počtu 25 položek. Pokud potřebujete stahovat víc, připravte si 14,52 eur (cca 370 Kč) za neomezenou verzi.
+4k Video Downloader
+Kromě stahování videí v rozlišení až 8K ve formátech MP4 a MKV umí 4k Video Downloader také extrahovat zvukovou stopu ve formátech MP3, M4A a OGG. U zahraničních videí se může hodit možnost stažení titulků, pokud jsou k dispozici. Aplikaci lze stáhnout ve verzi pro Windows, macOS, Ubuntu a Android.
+Pokračování 6 / 10 Youtube Video and Audio Downloader: Doplněk pro Firefox
+Youtube Video and Audio Downloader je open-source doplněk pro stahování videí z Youtube pomocí správce stahování ve Firefoxu ve všech dostupných formátech (FLV, MP4, WebM a 3GP) s kvalitou videa dle vašeho výběru. Díky javascriptové knihovně navíc umí z FLV videí vytáhnout původní zvukovou stopu.
+Youtube Video and Audio Downloader
+Doplněk umí stahovat titulky k videu ve všech dostupných jazycích (jsou-li dostupné), přičemž preferovaný jazyk lze zvolit v nastavení. Pro stažení stačí na stránce s videem klepnout na tlačítko doplňku a zvolit možnost Quick download . Aplikace následně pomocí nativního správce stáhne video v nejvyšším dostupném rozlišení.
+Pokračování 7 / 10 SaveFrom: Stačí připsat ss
+Pokud nechcete nic instalovat, můžete využít webovou službu SaveFrom , na kterou se dostanete přidáním písmenek ss před slovo youtube v adresním řádku. Nabízí však stahování v rozlišeních jen 720p a 360p, což v řadě případů nebude příliš použitelné.
+SaveFromPokračování 8 / 10 Clipconverter.cc: Stahování přes webovou službu
+Clipconverter.cc funguje jako SaveFrom s tím rozdílem, že si budete muset pamatovat (resp. bude nutné zkopírovat) adresu. Na úvodní stránce vložíte odkaz na video a zvolíte cílový formát – na výběr je MP4, 3GP, AVI, MOV a MKV. Nechybí ani možnost uložení zvukové stopy do formátu MP3, M4A či AAC.
+Clipconverter.cc
+Podle zvoleného formátu pak lze provádět další nastavení – například u videí si můžete nechat vystřihnout jen určitou část. Po klepnutí na tlačítko Continue dostanete na výběr dostupná rozlišení s informací o předpokládané velikosti souboru. Má to ale háček: Clipconverter.cc si neporadí s videy zařazenými do kategorie hudba.
+Pokračování 9 / 10 SaveSubs a DownSub: Stahování titulků
+YouTube u některých videí nabízí titulky, které si můžete nechat automaticky přeložit. Pokud nepotřebujete video, ale vystačíte si s titulky, můžete využít online službu SaveSubs . Jednou z jejích výhod jsou poměrně časté aktualizace, díky kterým drží krok s případnými změnami.
+SaveSubs
+Princip fungování je velmi podobný tomu, co můžete znát z jiných webových služeb – stačí zkopírovat adresu videa a stisknout tlačítko Download . Aplikace poté načte dostupné titulky a zobrazí jejich nabídku – stahovat můžete ve formátech TXT, SRT, VTT, ale i mnoha dalších. Jde o velmi prosté a účinné řešení.
+DownSub je online nástroj určený ke stahování titulků z YouTube a dalších video platforem, jako jsou Vlive, VIU, Facebook nebo Dailymotion. Stačí vložit odkaz na video a služba automaticky vygeneruje dostupné titulky ve formátech SRT, TXT nebo VTT. Podporuje také automatický překlad, což umožňuje snadno získat titulky v různých jazycích. DownSub je rychlá a jednoduchá cesta, jak titulky získat.
+Pokračování 10 / 10 By Click Downloader: Stahování stiskem Ctrl+C
+Pomocí aplikace By Click Downloader lze stahovat videa z YouTube, Vimea, DailyMotion a Facebooku, nicméně měla by fungovat téměř na jakémkoli webu. Podporuje různé formáty souborů – například MP3, MP4 či AVI. Nabízí také funkci pro stahování seznamů skladeb a kanálů.
+By Click Downloader
+Uživatelské rozhraní možná na první pohled překvapí poněkud „kolotočářským“ dojmem, avšak zaslouží pochvalu za lokalizaci do češtiny. Stačí zkopírovat adresu videa do schránky a By Click Downloader ji dokáže zachytit a nabídne další zpracování. V nastavení si zvolíte kvalitu videa, formát i cílovou složku.
+Tento článek je součástí balíčku PREMIUM+
+Odemkněte si exkluzivní obsah a videa bez reklam na devíti webech.
+Chci Premium a Živě.cz bez reklam
+Od 58 Kč měsíčně

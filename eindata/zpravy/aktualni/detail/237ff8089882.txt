@@ -1,0 +1,20 @@
+Článek
+Témata dnešního dílu:
+- Jakých pacientů se arytmie nejčastěji týkají (6:55)
+- Proč chytré hodinky nezachytí arytmii? (13:25)
+- Jak funguje hrudní pás Kardi AI? (19:35)
+- Jak se k hrudnímu pásu dostat? (26:05)
+Kardiovaskulární onemocnění jsou nejčastější příčinou úmrtí v tuzemsku, každý rok v jejich důsledku zemře více než 40 tisíc lidí. Mezi nejčastější příčiny úmrtí patří ischemická choroba srdeční (např. infarkt myokardu), srdeční selhání a cévní mozkové příhody, například mrtvice.
+Za poslední dekádu sice klesl počet akutních koronárních syndromů a infarktů přibližně o třetinu, stejně jako výskyt srdečních arytmií. Arytmie označuje nepravidelný, příliš rychlý nebo pomalý srdeční rytmus. Samy o sobě nemusí být bezprostředně život ohrožující, ale mohou vést k srdečnímu selhání a zvyšují riziko cévní mozkové příhody (mrtvice).
+„Arytmií existuje skutečně celá řada. Nejčastější arytmií u dospělého člověka je fibrilace síni, která se projevuje takovým nepravidelným a většinou rychlým tepem. Fibrilace síní postihuje v České republice asi půl milionu lidí, každý rok přibývá asi 7 až 10 tisíc navíc,“ vysvětluje v úvodu podcastu kardiolog Tomáš Skála.
+Pro detekci arytmií je naprosto nezbytné vyšetření EKG (elektrokardiografie), které zaznamenává elektrickou aktivitu srdce a umožňuje rozlišit jednotlivé typy poruch srdečního rytmu, včetně fibrilace síní. Standardní EKG však zachycuje pouze krátký časový úsek (přibližně 10 sekund), a proto nemusí odhalit arytmie, které se objevují jen občas. Normální nález na EKG tak nevylučuje jejich přítomnost, zejména u fibrilace síní, která může probíhat skrytě a bez příznaků.
+Jak vůbec můžeme zjistit, že arytmii máme? Část pacientů zaznamená občasné bušení srdce a zajde tak za svým praktikem, který ho popřípadě může poslat za kardiologem. Následně může pacient nosit tzv. holter, který nejčastěji po dobu 24 hodin nepřetržitě monitoruje srdeční činnost.
+„Pokud má pacient štěstí, arytmie se zachytí během jednoho dne. Ale u krátkého EKG máte například u fibrilace síní šanci zhruba jedno procento, u jednodenního holteru je šance na detekci 3 až 5 procent. To znamená, že jednorázové vyšetření nezachytí všechny pacienty s arytmií a je často nutné monitorování opakovat,“ upozorňuje kardiolog Skála.
+AI pomáhá odhalit skryté arytmie
+Kardi AI spojuje umělou inteligenci a hrudní pás, který umožňuje dlouhodobější záznam EKG. Výhoda oproti holteru je především v délce měření, protože tento hrudní pás je pohodlný, lze s ním vykonávat téměř všechny každodenní aktivity včetně sportu a plavání.
+Díky tomu si mohou pacienti pořídit mnohem více záznamů než při klasickém holterovském vyšetření, čímž se zvyšuje šance na zachycení arytmie. Například u 29 procent uživatelů byla detekována arytmie, přičemž většina z nich neměla žádnou předchozí diagnózu a považovala se za zdravou. Klasické jednodenní Holterovo EKG by přitom zachytilo arytmii jen u menší části těchto pacientů.
+„Když vezmete jednodenní holter, tak šance, že najdete fibrilaci síni, je 3 až procnet. Když budete monitorovat jeden den versus jeden měsíc, pravděpodobnost, že najdete arytmie, se zvýší zhruba pětkrát. My jsme byli sami překvapeni, u kolika procent pacientů jsme našli nějakou formu arytmie. Umělá inteligence, kterou používáme, automaticky hledá a analyzuje naměřená data a upozorňuje jak uživatele, tak lékaře o tom, že je tam arytmie,“ doplňuje Skála.
+Více o tom, proč záznam tepu z chytrých hodinek nestačí k odhalení arytmie a zda se k zařízení Kardi AI může dostat každý, se dozvíte v dnešní epizodě, kterou si můžete přehrát v úvodu článku nebo v podcastových aplikacích.
+Moderátorka Kristýna Léblová a kapacity z medicínského prostředí. Neklepat vychází každý druhý čtvrtek.
+Odebírejte podcast také na Spotify, Apple Podcastech či platformě Podcasty.cz a zapněte si upozornění na nové díly.
+Poslechněte si také naše další podcasty:

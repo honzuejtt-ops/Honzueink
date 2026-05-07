@@ -1,0 +1,14 @@
+Každý správný sportovec má po ruce 3D tiskárnu a výkonný herní desktop. Proč? Jednoduše proto, aby mohl propalovat kilowatthodiny generováním působivých modelů z nedělního výšlapu na Sněžku. Modelů, které si pak vytiskne a vystaví na chlubící poličku v pracovně.
+Asi tak by se dala s mírnou nadsázkou popsat docela povedená aplikace TrailPrint3D. Jedná se o doplněk pro modelační software Blender a stáhnete jej z katalogu Printables, kde najdete i obrázkový návod krok za krokem.
+Záznam lyžování na Stravě, ze kterého chci vytvořit 3D model
+Nejnovější Blender má sice trošku odlišné rozhraní, konfiguraci ale levou zadní zvládne i naprostý začátečník.
+Nahrajete trasu v GPX a doplněk vytvoří 3D model
+Stačí mít po ruce GPX záznam libovolné sportovní aktivity a TrailPrint3D ji promítne nad plastickou krajinu ve formě modelu v několika možných ořezech. Výsledek už můžete exportovat ve formátu STL, kterému rozumí všechny programy pro 3D tisk.
+A takhle vypadá výsledek. Vlevo 3D model, vpravo postranní panel doplňku s hromadou parametrů. Tmavší zelené plochy je zalesnění, doplněk totiž umí generovat i hranice obcí, les, vodstvo a ledovce
+Doplněk stahuje všechna pomocná data, tedy výškový model a další popisné informace o krajině, z otevřených zdrojů a nabízí hromadu dalších parametrů včetně rozlišení a výškového měřítka pro zvýraznění převýšení.
+Bez hromady RAM to raději nezkoušejte
+Jen je třeba myslet na to, že Blender v zátěži velmi rád zamrzá a při generování plastické krajinky z nedělního výletu to bude výpočet opravdu extrémní.
+Zvláště pokud zvýšíte políčko Resolution třeba o několik bodů. Složitost modelu totiž neroste lineárně, ale spíše exponenciálně, tvorba proto poskočí z několika sekund na minuty a software požádá váš systém bez problému o deset a více GB RAM!
+Blender rád zamrzá a je hladový. Na měřítko/kvalitu modelu opravdu pozor, nároky na RAM a CPU totiž rostou exponenciálně
+Samotný doplněk je ale velmi povedený a softwarový 3D model nakonec ocení i ti, kteří žádnou tiskárnu nemají. Je hezký sám o sobě.
+Plugin je zdarma, pokud se vám nicméně zalíbí, můžete autorovi přispět přes Patreon a Buy me a Coffee.

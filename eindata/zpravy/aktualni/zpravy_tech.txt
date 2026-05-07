@@ -1,4 +1,45 @@
-|T|Tohle je 10 nejprodávanějších telefonů současnosti. Oblíbené jsou špičkové modely i lowendy za pár tisíc|D|07.05.2026 17:45|P|Podívejte se na nejprodávanější telefony současnosti • Žebříčku tradičně dominují iPhony a Samsungy • V Top 10 se objevuje i levný model od Redmi|X|Ukázat všechny listy najednou
+|T|Fitbit Air je minimalistický náramek bez displeje. S pomocí Gemini potichu hlídá vaše zdraví|D|07.05.2026 18:45|P||X|Fitbit oznámil svůj dosud nejmenší a nejdostupnější fitness tracker. Zařízení nemá displej, který by uživatele rušil notifikacemi, a umožňuje mu plně se soustředit. Náramek má pouze vibrační motor (pro budíky a notifikace, které si navolíte) a jednu LED diodu. Díky lehkému profilu a kompaktním rozměrům je navržen pro nepřetržité pohodlné nošení a na jedno nabití vydrží až týden. Komunikuje s telefonem a univerzální platformou Google Health, která nahradila původní aplikaci Fitbit.
+Náramek Fitbit Air je minimalistický doplněk na zápěstí. Nabízet se bude se třemi druhy řemínků – Performance Loop Band, Active Band a Elevated Modern Band
+Tělo náramku váží 5,2 gramu, společně s řemínkem pak pouhých 12 gramů. Mimo telefonu jej lze také samostatně spárovat s hodinkami Pixel Watch – ty lze nosit třeba přes den a v noci nebo při cvičení je vyměnit za Fitbit Air. Ten je navíc voděodolný až do hloubky 50 metrů (5 ATM).
+Aby vás displej nerušil
+Absence displeje znamená, že si uživatel musí veškerá měření, konkrétně srdeční tep, okysličení krve, regeneraci, kvalitu spánku a další, prohlížet v telefonu. Mobilní aplikace automaticky rozpozná běžné fyzické aktivity a po jejich skončení zobrazí přehledné shrnutí tréninku. Postupem času se naučí návyky uživatele a měl by se v hlídání aktivit průběžně zlepšovat.
+Zdravotní trenér je součástí prémiového předplatného Google Health
+Náramek využívá umělou inteligenci Google Health Coach postavenou na asistentovi Gemini, která je součástí předplatného Health Premium (dříve Fitbit Premium). Při nákupu náramku dostanete tříměsíční předplatné zdarma. Funkce poskytuje personalizované rady a umí sestavit přehled spánkových trendů nebo analyzovat dopady cvičení na tělo.
+Náramek je již možné předobjednat, do prodeje půjde 26. května. Jeho cena startuje na 100 dolarech, tedy přibližně na 2 500 korunách včetně daně. Fitbit z Česka v roce 2023 odešel, takže jej na webu českého Googlu zakoupit nelze, ale je možné, že by se mohl náramek dostat do Česka časem, pokud jej sem prodejci začnou dovážet.|E||T|Dnes je světový den hesel. Ideální čas na jejich kontrolu a aktualizaci nejen v mobilu|D|07.05.2026 18:45|P||X|První čtvrtek v květnu, který letos připadá na 7. května, je považován za Mezinárodní den hesel. Právě dnes je tedy ideální příležitost zkontrolovat to, na co často zapomínáme – svá hesla. A začít můžeme u chytrého telefonu. Ať už jde o PIN kód k SIM kartě, přístupový kód k iPhonu, hesla k e-mailovým schránkám, mobilnímu bankovnictví nebo k účtům, ke kterým jsme přihlášeni v mobilu.
+Správce hesel v Androidu vám pomůže zkontrolovat vaše hesla. Varuje na jejich opakované používání, na slabá i prolomená hesla. Najdete jej v Nastavení – Zabezpečení a soukromí – Další nastavení zabezpečení – Hesla, klíče a automatické vyplnění – Google – Kontrola
+Pravidelná kontrola či změna hesel by měla být samozřejmou rutinou – jenže na ni spousta z nás zapomíná. Zkuste tomu proto věnovat čas alespoň dnes. Krádež hesla je totiž pro případné útočníky nejjednodušším způsobem, jak získat přístup k vašim uživatelským datům. Stačí připomenout, že u řady služeb pravidelně unikají na internet databáze obsahující i uživatelská hesla.
+Chyby, které děláme u hesel
+Hesla používáme v telefonech prakticky každý den, přesto mnoho z nás jen „recykluje" několik oblíbených kombinací a používá je doslova na všechno. To je přitom velké bezpečnostní riziko. Pokud dojde k prolomení jednoho účtu, může útočník pomocí vaší e-mailové adresy a odcizeného hesla získat přístup i do dalších služeb.
+Nejčastěji používaná hesla v Česku:
+- Heslo1234
+- admin
+- 123456
+- qwert1234
+- Automaty123
+- 123456789
+- Pokus123
+- 12345678
+- qwert123
+- michal
+- 12345
+- gauner123
+- frenky
+- ledovec3
+- maminka123
+- jarecek
+- Asdfg121
+- Heslo123
+- heslo
+- Heslo
+Zdroj: Nordpass
+Pokud jste u důležitých účtů (bankovnictví, sociální sítě, e-mail) dlouho heslo neměnili, přikročte ke změně co nejdříve. Zařízení s Androidem vám navíc dokážou ukázat hesla, u nichž hrozí riziko úniku. I v případě, kdy používáme více různých hesel, často spoléháme na jednoduché kombinace, které si snadno zapamatujeme.
+Jak vylepšit svá hesla
+- Začněte využívat správce hesel – pomohou vám vygenerovat silná hesla, bezpečně je uloží a vy k nim budete mít přístup přes biometrii. Hesla by měla mít alespoň dvanáct znaků a kombinovat malá a velká písmena, čísla a speciální znaky.
+- Projděte si svá stávající hesla a ta nejslabší změňte. Vyhněte se kombinacím, které patří v Česku k nejpoužívanějším.
+- Nastavte si pro každý účet jedinečné heslo. Podobná hesla napříč službami představují závažné bezpečnostní riziko.
+- Typickým nešvarem je psaní hesel na papírek vložený do pouzdra telefonu. Případnému zloději pak ke všem vašim účtům stačí jediná krádež telefonu.
+- Zapněte biometrické ověření pro přístup do telefonu a u důležitých účtů aktivujte dvoufaktorové ověření – přihlášení potvrdíte zadáním kódu zaslaného e-mailem, SMS zprávou nebo do autentizační aplikace.
+- U vybraných aplikací můžete v jejich nastavení přepnout na přihlašování přes tzv. přístupové klíče (passkeys). Místo hesla k přihlášení použijete otisk prstu.|E||T|Tohle je 10 nejprodávanějších telefonů současnosti. Oblíbené jsou špičkové modely i lowendy za pár tisíc|D|07.05.2026 17:45|P|Podívejte se na nejprodávanější telefony současnosti • Žebříčku tradičně dominují iPhony a Samsungy • V Top 10 se objevuje i levný model od Redmi|X|Ukázat všechny listy najednou
 Counterpoint publikoval statistiky nejprodávanějších telefonů za první čtvrtletí roku 2026 , v nichž dominuje iPhone 17 . Tento model se s 6% podílem umístil na prvním místě. Těžil především z vylepšení úložiště, fotoaparátu a vyšší obnovovací frekvence displeje. Další pozice patří taktéž Applu – na druhém místě se nachází iPhone 17 Pro Max , na třetím pak menší iPhone 17 Pro . Čtvrtý telefon od Applu, iPhone 16 , obsadil šesté místo.
 Nejprodávanější telefony v 1. čtvrtletí roku 2026. I tentokrát dominují iPhony a levnější Samsungy
 Zbývající pozice vyplňují cenově dostupné Samsungy – Galaxy A07, Galaxy A17 (v LTE i 5G variantě), Galaxy A56 a Galaxy A36 . Nejlevnějšímu „áčku" se dařilo v rozvojových regionech, především díky šestileté softwarové podpoře. TOP 10 uzavírá telefon značky Redmi, která je jako jediná v tomto žebříčku zastoupena mimo dvou výše zmíněných gigantů. Konkrétně jde o cenově dostupný Redmi A5 .

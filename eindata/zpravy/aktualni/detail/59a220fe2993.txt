@@ -1,0 +1,35 @@
+První čtvrtek v květnu, který letos připadá na 7. května, je považován za Mezinárodní den hesel. Právě dnes je tedy ideální příležitost zkontrolovat to, na co často zapomínáme – svá hesla. A začít můžeme u chytrého telefonu. Ať už jde o PIN kód k SIM kartě, přístupový kód k iPhonu, hesla k e-mailovým schránkám, mobilnímu bankovnictví nebo k účtům, ke kterým jsme přihlášeni v mobilu.
+Správce hesel v Androidu vám pomůže zkontrolovat vaše hesla. Varuje na jejich opakované používání, na slabá i prolomená hesla. Najdete jej v Nastavení – Zabezpečení a soukromí – Další nastavení zabezpečení – Hesla, klíče a automatické vyplnění – Google – Kontrola
+Pravidelná kontrola či změna hesel by měla být samozřejmou rutinou – jenže na ni spousta z nás zapomíná. Zkuste tomu proto věnovat čas alespoň dnes. Krádež hesla je totiž pro případné útočníky nejjednodušším způsobem, jak získat přístup k vašim uživatelským datům. Stačí připomenout, že u řady služeb pravidelně unikají na internet databáze obsahující i uživatelská hesla.
+Chyby, které děláme u hesel
+Hesla používáme v telefonech prakticky každý den, přesto mnoho z nás jen „recykluje" několik oblíbených kombinací a používá je doslova na všechno. To je přitom velké bezpečnostní riziko. Pokud dojde k prolomení jednoho účtu, může útočník pomocí vaší e-mailové adresy a odcizeného hesla získat přístup i do dalších služeb.
+Nejčastěji používaná hesla v Česku:
+- Heslo1234
+- admin
+- 123456
+- qwert1234
+- Automaty123
+- 123456789
+- Pokus123
+- 12345678
+- qwert123
+- michal
+- 12345
+- gauner123
+- frenky
+- ledovec3
+- maminka123
+- jarecek
+- Asdfg121
+- Heslo123
+- heslo
+- Heslo
+Zdroj: Nordpass
+Pokud jste u důležitých účtů (bankovnictví, sociální sítě, e-mail) dlouho heslo neměnili, přikročte ke změně co nejdříve. Zařízení s Androidem vám navíc dokážou ukázat hesla, u nichž hrozí riziko úniku. I v případě, kdy používáme více různých hesel, často spoléháme na jednoduché kombinace, které si snadno zapamatujeme.
+Jak vylepšit svá hesla
+- Začněte využívat správce hesel – pomohou vám vygenerovat silná hesla, bezpečně je uloží a vy k nim budete mít přístup přes biometrii. Hesla by měla mít alespoň dvanáct znaků a kombinovat malá a velká písmena, čísla a speciální znaky.
+- Projděte si svá stávající hesla a ta nejslabší změňte. Vyhněte se kombinacím, které patří v Česku k nejpoužívanějším.
+- Nastavte si pro každý účet jedinečné heslo. Podobná hesla napříč službami představují závažné bezpečnostní riziko.
+- Typickým nešvarem je psaní hesel na papírek vložený do pouzdra telefonu. Případnému zloději pak ke všem vašim účtům stačí jediná krádež telefonu.
+- Zapněte biometrické ověření pro přístup do telefonu a u důležitých účtů aktivujte dvoufaktorové ověření – přihlášení potvrdíte zadáním kódu zaslaného e-mailem, SMS zprávou nebo do autentizační aplikace.
+- U vybraných aplikací můžete v jejich nastavení přepnout na přihlašování přes tzv. přístupové klíče (passkeys). Místo hesla k přihlášení použijete otisk prstu.

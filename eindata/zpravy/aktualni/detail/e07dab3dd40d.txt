@@ -1,0 +1,14 @@
+Bezpečnostní expert Alexander Hanff si všiml, že Google v desktopových verzích Chromu začal stahovat malý jazykový model Gemini Nano. Děje se tak na pozadí bez vědomí uživatele. Na disku se objeví 4GB balík dat pro lokální AI a po smazání se opět automaticky stáhne.
+Podobné chování lze vysledovat na sociálních sítích už od loňska, ale nyní Google zřejmě tuto funkci rozšířil mezi více lidí. Sama firma o ní mluví od května 2025 s tím, že se stane integrovanou součástí Chromu 149 (aktuální ostrá verze je 148).
+Co Gemini Nano dělá a jak jej vypnout?
+Generativní AI má na počítačích pomáhat s psaním či úpravou textu, varováním před podvody, bude tvořit souhrny webových stránek nebo organizovat karty v prohlížeči. To vše lokálně bez posílání dat do cloudu, stojí v oficiální nápovědě.
+- Měla by jít vypnout přímo v Nastavení | Systém | AI za zařízení. 👉 chrome://settings/system
+- Pokud to nejde přímo v Nastavení, je nutné sáhnout do experimentálního menu a tam u položky Enables optimization guide on device nastavit Disable. 👉 chrome://flags/#optimization-guide-on-device-model
+- Alternativou je pak stahování deaktivovat přímo v operačním systému, tj. v registrech Windows nebo konfiguračních souborech na macOS a Linuxu. Postup je v oficiální nápovědě.
+Jak smazat soubor s AI modelem?
+Vypnutím funkce by se měl soubor automaticky smazat. Pokud k tomu však nedojde, můžete se jej zbavit ručně. Hledejte soubor weight.bin, který má přibližně 4 GB.
+- Ve Windows se nachází ve složce %LOCALAPPDATA%\Google\Chrome\User Data\OptGuideOnDeviceModel.
+- Na macOS jej najdete v ~/Library/Application Support/Google/Chrome/OptGuideOnDeviceModel
+- V Linuxu bude v ~/.config/google-chrome/OptGuideOnDeviceModel
+Je Gemini Nano nebezpečné?
+Protože jde o lokální model, který se stará o práci s texty/jazykem přímo na koncovém zařízení, tak uživatelům žádné riziko vynášení dat ven nehrozí. Jde spíš o etický problém, že Google ve výchozím stavu stahuje data a aktivuje kontroverzní AI funkci, aniž by mu to uživatelé museli nejprve schválit. Lokální AI navíc zvýší spotřebu zařízení, což u notebooků zkrátí jejich výdrž.

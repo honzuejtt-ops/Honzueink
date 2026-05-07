@@ -1,0 +1,32 @@
+Vzhled a zpracování:
+Endorfy Thock V2 Compact Wireless na první pohled ladí s moderním designovým jazykem dalších Endorfy periférií. Tmavě šedé až černo-šedé šasi po bocích doplňují signifikatní prvky pro Endorfy, tedy logo na přední straně a trojúhelníkový motiv vespod, ke které se ještě vrátím. Celkově působí klávesnice poctivým dojmem, za což může poděkovat hlavně vyztuženému hliníkovému tělu.
+Samotné PBT klávesy jsou z matného plastu s příjemným dotekem a jemným zakulacením. To se může zdát jako hloupost, ale v konečném důsledku hodně napomáhá pohodlí při stisku. Přestože se jedná o 60% klávesnici, svými dokáže být docela buřtík. Pro výškové polohování jsou zde nožičky, které drží na těle klávesnice pomocí magnetů. Drží pevně, pokud je ale ztratíte, máte s polohováním zkrátka smůlu.
+Spodní strana má mimo výřez pro kabel i otvor pro USB přijímač, který je opět uchycen magneticky. Pravý bok skrývá přepínač pro vypnutí, připojení kabelem nebo pomocí Bluetooth/USB přijímače. Osobně mi trochu vadila dvojice LED na přední straně. Jedna signalizuje zapnutí/stav baterie a druhá aktivní Caps Lock. Zapnutou klávesnici dokáže indikovat podsvícení a Caps Lock může svítit přímo konkrétní klávesa, čímž bychom se vyhli otravnému svícení zeleného světla do očí.
+Parametry:
+Switche a používání:
+Endorfy pokračuje v nasazování spínačů „vlastní“ výroby (vyvinuté ve spolupráci se společností Gateron) Yellow s lineárním stiskem a poměrně zajímavým zvukovým projevem. Poprvé jsme je mohli vidět u modelu Celeris 1800, kde fungovaly skvěle. Zvuk kláves místy připomíná až „keramický“ klik, což je do jisté míry způsobeno i třemi vrstvami pěny (dvě PORON a jedna IXPE).
+Spínače mají dvoustupňovou pružinu, dvojici vodicích lišt a tovární lubrikaci, takže působí jistě a precizně už od prvního stisku. Co se týče čísel, pro jejich aktivaci je třeba síla 49±15 g, celková dráha stisku činí 3,6 mm. Díky hot-swap paticím můžete spínače kdykoliv měnit. Ostatně pár náhradních jich najdete přímo v balení. U takto vysoké klávesnice mi osobně trochu chyběla opěrka zápěstí. Klávesnici ale lze pohodlně používat i bez ní.
+Multimediální zkratky:
+Endorfy Thock V2 compact Wireless seženete v ANSI provedení s českým i anglickým layoutem. Diakritiku tak ocení hlavně ti, kteří v rozložení českých znaků tápají. Vzhledem k 60% rozložení je zapotřebí počítat s ústupky v podobě chybějících samostatných šipek nebo absence horní řady kláves F1 až F12. Vše je zkrátka zmenšené pro co největší místo na stole.
+Absenci fyzických kláves však nahrazuje opravdu široká škála klávesových zkratek. Osobně se mi líbí umístění FN tlačítka na pravý spodní roh, kde mi dává větší smysl než třeba mezi levým Windows a Altem.
+Klávesových zkratek je tu opravdu požehnaně. Možná až tolik, že budete zpočátku tápat a bloudit, než požadovanou akci najdete. Všechny zkratky jsou ale naštěstí dobře popsané a přehled těch důležitých najdete i na zadní straně klávesnice. Zvláštně řešeny jsou například zkratky pro screenshot, Del nebo Page Up/Down, kdy je zapotřebí funkční klávesu pár sekund držet.
+Software:
+Nedílnou součástí každé periferie je dnes doprovodný software a ani v případě Thock V2 Compact Wireless tomu není jinak. Stažením softwaru se vám odemkne přístup k podrobnějšímu přizpůsobení RGB podsvícení, tvorbě maker, programování jednotlivých kláves a mnoho dalšího.
+Software je rozdělen do čtyř kategorií:
+-
+Illumination – správa ARGB podsvícení. K dispozici je 18 předpřipravených režimů, přičemž nechybí ani možnost tvorby vlastního.
+-
+Buttons – úprava funkcí jednotlivých kláves. Zde si změníte například výchozí nastavení multimediální tlačítek nebo chování bočních tlačítek.
+-
+Macros – prostá tvorba vlastních maker s poměrně širokými možnostmi přizpůsobení
+-
+Other – drobné nastavení klávesnice jako zamknutí klávesy Windows, export/import profilů, aktivace N-Key a další.
+-
+Dual-Function Mode – změna chování tlačítek na jiné klávesy.
+Výdrž:
+Příjemným překvapením je samotná výdrž. Ta se samozřejmě liší podle toho, zda klávesnici používáte přes 2,4GHz přijímač nebo Bluetooth a jak intenzivně využíváte podsvícení. Endorfy do Thock V2 Compact Wireless dostal 2 500mAh baterii, která by měla zajistit až 90 hodin výdrže (přes Bluetooth) při vypnutém podsvícení a 125Hz polling rate.
+Na nízký stav baterie vás klávesnice upozorní blikající LEDkou na přední straně (přesně tou, která zbytečně oslňuje). Nemělo by se tak stát, že by klávesnice sama ztuhla úplně bez varování.
+Závěrečné hodnocení:
+Jak tedy novou Thock V2 Compact Wireless zhodnotit? Klávesnice sází na povedený minimalistický design, který zároveň jasně naznačuje, že nejde jen o obyčejný kancelářský kousek, ale o poctivě zpracované herní příslušenství. U dřívěji testovaného Celeris 1800 mi vadilo ono nepříjemné vrzání, které hodně kazilo celkový dojem. Zde je konstrukce pevná a velmi bytelná.
+Pochvalu si Endorfy zaslouží za vlastní spínače Yellow, které si vás získají oným specifickým zvukem. Líbilo se mi také chytře umístěné funkční tlačítko, česká lokalizace a přepínač na boční straně. Na druhou stranu klávesových zkratek dokáže být až mnoho a je občas lehké se v nich ztratit. To je ale u takto kompaktních klávesnic nevyhnutelný kompromis.
+Celkově vzato jde o velmi povedenou klávesnici, za kterou nedáte mnoho peněz a která vám skvěle poslouží při dlouhých herních seancích. V současnosti ji lze sehnat za přibližně jedenáct stovek, za podobnou cenu pak dostanete drátovou verzi s numerickým blokem. K mání je i bezdrátová, avšak ta už stojí o pár set korun více.

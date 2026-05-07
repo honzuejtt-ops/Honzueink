@@ -1,0 +1,8 @@
+Sociální sítě v posledních dvou dnech zaplavily stížnosti na Google Chrome. Prohlížeč totiž bez souhlasu uživatele či upozornění začal stahovat velký soubor využívaný odlehčeným jazykovým modelem Gemini Nano. Ukládá se do systémové složky a jeho smazání nepomáhá.
+Přes 4 GB
+Soubor se jmenuje weights.bin a na Windows se stahuje do složky %LOCALAPPDATA%\Google\Chrome\User Data\OptGuideOnDeviceModel. Pokud dojde k ručnímu smazání, během několika minut si Chrome začne soubor stahovat znovu. Je potřebný k běhu lokálního jazykového modelu, který Google do svého prohlížeče integruje už od roku 2024.
+Novinkou je ale takto objemný soubor, jehož velikost překračuje 4 GB. Zatímco dříve jsme považovali webové prohlížeče za menší aplikace, integrace jazykových modelů to postupně změní.
+Google zatím na kritiku žádným způsobem nereagoval a reagovat ani nemusí. Zapracování lokálního jazykového modelu nijak neodporuje podmínkám služby.
+Pouhé smazání nestačí
+Protože Gemini Nano inkriminovaný soubor vyžaduje ke svému běhu, jeho pouhé smazání z disku nic neřeší – stáhne se znovu. Je třeba zamířit do nastavení chrome://flags a zde vyhledat položku Enables optimization guide on device. Z rozbalovací nabídky následně vyberte možnost Disabled. Následně existující soubor fyzicky z disku smažte. Minimálně jako dočasné opatření tato možnost funguje, není ale vyloučeno budoucí znovustažení při další aktualizaci prohlížeče.
+Zdroj: Neowin

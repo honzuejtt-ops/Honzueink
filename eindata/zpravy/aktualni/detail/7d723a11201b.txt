@@ -1,0 +1,12 @@
+Článek
+Nová pravidla jsou součástí úprav evropského AI Actu a mají reagovat na rychlé šíření podobných technologií na internetu i sociálních sítích. Zákaz se bude týkat nejen samotného používání těchto systémů k vytváření explicitního obsahu, ale také jejich uvádění na evropský trh bez dostatečných ochranných opatření.
+Evropské instituce v dohodě výslovně zmiňují obsah zobrazující sexuální zneužívání dětí nebo materiály zachycující intimní partie či sexuálně explicitní aktivity identifikovatelných osob bez jejich souhlasu.
+Opatření se přitom vztahuje na fotografie, videa i audiozáznamy vytvořené pomocí AI.
+Změny až od prosince
+Firmy budou muset své systémy novým pravidlům přizpůsobit nejpozději do 2. prosince 2026. Stejné datum je spojeno také s účinností zákazu těchto aplikací v rámci EU.
+Debata kolem podobných nástrojů v posledních měsících zesílila hlavně po aféře kolem sociální sítě X miliardáře Elona Muska. Uživatelé tam prostřednictvím chatbota Grok upravovali a vytvářeli sexualizované snímky žen i dětí bez jejich vědomí. Případ vyvolal několik vyšetřování, včetně šetření britského mediálního regulátora Ofcom.
+Evropská unie současně upravuje i další části pravidel pro umělou inteligenci. Některé povinnosti pro takzvané vysoce rizikové AI systémy se odloží, aby firmy i úřady získaly více času na přípravu technických standardů a praktických pravidel.
+Například systémy využívané v biometrice, vzdělávání, zaměstnání, policii nebo při správě hranic mají nově podléhat přísnějším pravidlům až od prosince 2027. U některých bezpečnostních komponent pak až od srpna 2028.
+Obsah vytvořený AI
+Součástí dohody je také odklad povinného označování obsahu vytvořeného umělou inteligencí pomocí takzvaného watermarkingu. Technologie má umožnit jednodušší rozpoznání a dohledání AI generovaného obsahu.
+Podle europoslanců má nová úprava zároveň zjednodušit některé administrativní povinnosti pro firmy a startupy vyvíjející AI v Evropě. Unie se totiž snaží najít rovnováhu mezi regulací rychle se rozvíjejících technologií a podporou evropských inovací.

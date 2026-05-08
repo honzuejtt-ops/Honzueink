@@ -1,3 +1,16 @@
+|T|Ideální notebook nesmí šetřit na displeji a klávesnici. Výkonu už máme dost (Podcast Živě)|D|08.05.2026 16:45|P|Je toho dost, co by náš vysněný počítač měl umět. Nechceme ale zázraky. Každý laptop by podle Petra měl podporovat biometrii, vždyť nejlacinější čtečk...|X|Je toho dost, co by náš vysněný počítač měl umět. Nechceme ale zázraky. Každý laptop by podle Petra měl podporovat biometrii, vždyť nejlacinější čtečky otisků prstů stojí pár dolarů. Místo toho na levnějších strojích pořád píšeme hesla a PINy.
+Dávno víme, že displeje s poměrem stran 16:9 nejsou ideální na práci. Notebooky s displeji 3:2 se občas objeví, ale tenhle poměr by měl být běžnější. Zejména Lukáš pak volá po kvalitnějších obrazovkách obecně. Nemusí používat technologii OLED, dobrými IPS by nás výrobci nezarmoutili. Jenže ty vyklidily pole.
+S procesory jsme asi nejspokojenější, zato výrobci notebooků extrémně šidí operační paměť. Dělali to už v době, kdy byla levná, takže v blízké době změnu nečekáme. Jenže 8 GB je pro Windows 11 minimum, kterému byste se stejně měli vyhnout. Chce to aspoň 16 GB, ideálně víc.
+Program pořadu
+- 01:17 – Morální zastarávání
+- 04:10 – Displeje
+- 12:55 – Šasi
+- 20:03 – Výkon
+- 31:56 – Biometrie a klávesnice
+- 49:45 – Bezdrátové napájení
+Zdroje a další informace: hudba od Nihilora
+Podcast Živě najdete také na Spotify, kde se můžete přihlásit k odběru, stejně tak ve službách Apple Podcasts a YouTube Music. Pořad lze odebírat i prostřednictvím RSS. Budeme rádi za zpětnou vazbu. Pokud se vám podcast líbí, sdílejte jej.
+V našem podcastovém kanále najdete také videopořad Týden Živě. Ve zvukové podobě zde vychází každé pondělí.|E|
 |T|Microsoft hráčům doporučoval 32 GB RAM. Po kritice tohle tvrzení smazal|D|08.05.2026 15:45|P|Na hraní je vhodné upgradovat na 32 GB RAM, říkal Microsoft. • Nyní to už netvrdí, reagoval na rozhořčená média a fanoušky. • Také smazal zmínku, že C...|X|Microsoft v březnu na svých stránkách publikoval dokument s radami, jak by měl vypadat herní počítač. „Pro většinu hráčů je 16 GB RAM praktickým výchozím bodem. Přechod na 32 GB RAM se vyplatí, pokud zároveň s hraním používáte Discord, webové prohlížeče nebo streamovací nástroje. Tato dodatečná paměť také poskytuje novějším hrám více prostoru, protože nároky na paměť neustále rostou ,“ stálo v něm.
 Doporučení, proti kterému nelze nic říct. Jenže to rozmázla americká média, následně se toho chytili lidé na Redditu a sociálních sítích. Rozhořčení uživatelé pak na Microsoft šli s napřaženými vidlemi. Proč?
 Firma stále v minimálních doporučených požadavcích na Windows 11 uvádí jen 4 GB RAM, byť systém na takovém hardwaru rozhodně provozovat nechcete. Dvojnásobných 8 GB je základní minimum, lépe se ale žije s 16 GB, kdy už počítač bude mít rezervu i pro náročnější aplikace a hry.
@@ -5,6 +18,13 @@ Jako rudý hadr na býka pak tvrzení Microsoftu působilo i s ohledem na aktuá
 Jenže realita je taková, že pro hraní s dostatečnou rezervou i pro vedle běžící aplikace je opravdu vhodné mít 32 GB RAM, ať už je paměťová krize, či nikoliv. Vždyť už i nové hry mají takovou kapacitu v doporučených požadavcích .
 Microsoft tedy mohl původní tvrzení zachovat a normálně si jej obhájit. Větší pozdvižení měla způsobit jiná stránka, na které Microsoft mluvil o vhodnosti Copilot+ PC ke hraní. Tato certifikace totiž vůbec nic neříká o herním výkonu. Copilot+ PC musí splňovat jen požadavky na 16 GB RAM, 256GB SSD a NPU s výkonem 40+ TOPS. O výkonu procesoru, a hlavně grafiky, tam vůbec nejde. Certifikaci mají i levné notebooky se Snapdragonem X, přičemž ty se k hraní rozhodně nehodí. Nakonec ale Microsoft smazal i tuto stránku.|E|
 |T|See what happens when creative legends use AI to make ads for small businesses|D|08.05.2026 15:00|P|black and white card with headshots of susan credle, jayonta jenkins and tiffany rolfe|X|Today we're launching The Small Brief, an initiative bringing together three ad industry icons to champion a local businesses they love. Their mission is to build breakthrough, studio-quality campaigns that elevate incredible businesses while highlighting the storytelling power of AI and inspiring other creatives and small businesses to explore it for themselves.
+We gave the creatives unlimited access to Flow, Google’s AI creative studio, to bring these brand stories to life. Here are the icons and the businesses they're supporting.
+- Jayanta Jenkins: Archangels
+- Tiffany Rolfe: South Ferry
+- Susan Credle: Stonewood Farm
+Google's AI tools help small businesses achieve big-brand impact by empowering them to create studio-quality ads with their unique voice and style, find their next customers and streamline workflows.
+We’ll reveal the final campaigns and share a deeper look into each creative's process in June.|E|
+|T|See what happens when creative legends use AI to make ads for small businesses.|D|08.05.2026 15:00|P|black and white card with headshots of susan credle, jayonta jenkins and tiffany rolfe|X|Today we're launching The Small Brief, an initiative bringing together three ad industry icons to champion a local businesses they love. Their mission is to build breakthrough, studio-quality campaigns that elevate incredible businesses while highlighting the storytelling power of AI and inspiring other creatives and small businesses to explore it for themselves.
 We gave the creatives unlimited access to Flow, Google’s AI creative studio, to bring these brand stories to life. Here are the icons and the businesses they're supporting.
 - Jayanta Jenkins: Archangels
 - Tiffany Rolfe: South Ferry

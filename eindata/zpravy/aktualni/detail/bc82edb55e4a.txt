@@ -1,0 +1,8 @@
+Fanoušky map a energetických sítí jistě zaujme další a tentokrát opravdu téměř ultimátní webová aplikace OpenGridWorks.
+Ve formě 3D glóbu zobrazí všechny známé elektrárny, rozvodny, propojovací distribuční sítě, ale také podmořské telekomunikační kabely, některé družicové konstelace a datová centra.
+Pohled na Evropu a její elektroenergetickou síť a datová centra
+Ohromný detail až na úroveň jednotlivých ulic
+Typy elektráren jsou barevně rozlišené podle zdroje výroby elektřiny, rozměry pak zase odpovídají objemu výroby. Podobně aplikace člení další prvky v mapě. Třeba elektrické vedení aj.
+Detailní přiblížení na Prahu se svítícími puntíky datových center
+OpenGridWorks čerpá napříč informace veřejně dostupnými zdroji, základem jsou ale databáze z OpenStreetMap, kterou nakonec uvidíte, pokud se přiblížíte až na úroveň jednotlivých ulic.
+K dispozici je nicméně hromada dalších filtrů, mapových podkladů a vrstev, které získáte po bezplatné registraci účtu.

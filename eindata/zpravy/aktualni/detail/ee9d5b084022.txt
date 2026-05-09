@@ -1,0 +1,15 @@
+Nedávno jsme si ukázali, co v praxi svede kapesní superpočítač DGX Spark od Nvidie. Na pracovním stole byste si jej téměř nevšimli – má rozměry hromádky DVD –, pod hliníkovým šasi se ale skrývá 128 GB RAM, 4TB SSD a superčip GB10. Kombinuje v sobě armové CPU a GPU pro výpočty z ranku AI.
+Spark má dostatečnou paměť k tomu, aby pojmul velké jazykové modely podobné ChatGPT, ale zároveň i výkon, abyste si je mohli přeučit a ohýbat pro své potřeby. A co víc, díky své úsporné konstrukci vás zároveň na sklonku účtovacího období za elektřinu nepošle do exekuce.
+Má vlastně jen jednu vadu na kráse, která ale bude pro běžného domácího kutila poměrně zásadní. Cena se pohybuje okolo 120 tisíc korun a vzhledem k situaci na trhu hrozí, že bude dokonce ještě stoupat.
+Populární britský mikropočítač v cenové spirále
+V dalším pokračování našeho seriálu o programování elektroniky se proto vrátíme zpět na zemi a špičkového Sparka nahradíme za mnohem menší, a hlavně 26× levnější destičku Raspberry Pi AI HAT+ 2.
+Pod desku se vejde i oficiální aktivní chladič pro Raspberry Pi 5, samotné Hailo-10H se nicméně chladí pouze pasivně. Při nepřetržitém používání náročnějších neuronek se může pořádně rozpálit
+Jak už název napovídá, jedná se o druhou generaci AI akcelerátoru pro linuxový mikropočítač Raspberry Pi 5. Deska totiž s centrálním procesorem komunikuje skrze rychlé rozhraní PCIe 3.0, které je k dispozici až na tomto modelu. A než budu pokračovat, nejspíše část z vás rovnou odradím, i tady totiž bohužel kvůli situaci ve světě letí cena střemhlav vzhůru.
+Když jsem AI HAT+ 2 v půli ledna a ihned po uvedení na trh kupoval do naší redakční dílny, rozšiřující deska mě přišla na 3 309 korun.
+Jaká je situace o čtvrt roku později? Poměrně drastická, oficiální český distributor RPishop totiž akcelerátor zkraje dubna prodával za částku 4 609 korun. Cena tedy poskočila o třináct stovek a zatím nevidím žádné světlo na konci tunelu.
+V pokračování pro předplatitele také najdete
+- Co umí akcelerátor Hailo-10H
+- Jak vypadá chatbot, který běží přímo na Raspberry Pi
+- Ukázka a projekt na GitHubu s kompletním videochatbotem
+Chci Premium a Živě.cz bez reklam
+Od 58 Kč měsíčně

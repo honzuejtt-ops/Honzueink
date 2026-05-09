@@ -1,0 +1,21 @@
+Total Commander není třeba představovat. Jedná se o jeden z nejsilnějších nástrojů pro práci se soubory. Právě vyšla nová verze 11.57, která přináší zajímavé vychytávky.
+Christian Ghisler, autor aplikace Total Commander, si nezakládá na tom, aby jeho výtvor měl co nejvyšší číslo v hlavní verzi. Po dlouhých 33 letech vývoje je nejnovější vydání označené jako 11.57. Přesto přináší pár užitečných funkcí.
+Kompletní seznam změn najdete na webu autora. Počet záznamů od předchozí verze přesahuje číslo 200. Jedná se jako obvykle o opravy chyb, ale také o mnohá vylepšení. Pojďme se podívat na ty nejzajímavější.
+Hlavní změny
+Adminem snadno a rychle: Stačí před příkaz v příkazové řádce nebo v parametrech tlačítka napsat hvězdičku *
+(např. *cmd.exe
+) a TC jej spustí s právy správce.
+Vylepšené vytváření souborů a složek (Shift+F4 / F7): Nyní je možné hromadně vytvářet soubory/složky pomocí čítačů a rozsahů přímo v dialogu (např. <1-10>test[C].txt vytvoří 10 souborů).
+Rychlejší práce s velkými adresáři: Byl implementován „virtuální listbox“ pro načítání obsahu, což výrazně zrychluje zobrazení složek s obrovským množstvím souborů.
+Lepší práce s archivy: TC obsahuje nejnovější verze 7-zip 26.1.0.0 a unrar 7.22.0. Díky tomu je rychlejší porovnávání a funkce „Synchronizovat soubory“ je nyní výrazně rychlejší při porovnávání obsahu v archivech 7z a solid archivech RAR (díky efektivnějšímu využití 7z knihovny).
+TC si nyní dokáže zapamatovat poslední dvě hesla k archivům. To šetří čas při kopírování dat mezi dvěma různě zašifrovanými archivy.
+Vyhledávání na více FTP: V dialogu „Hledat soubory“ je nově možné prohledávat více FTP cest najednou (oddělených středníkem).
+Lepší Hex/Binary zobrazení: Lister vylepšil podporu kódování UTF-8 v hexadecimálním režimu a opravil chyby při zobrazení vícebajtových znaků na konci řádků.
+OneDrive ikony: Vylepšené zobrazení stavových ikon OneDrive v tmavém režimu (nyní s alfa kanálem, takže nepůsobí „zubatě“).
+Nové parametry %A, %S a %R: Interní příkazy nyní podporují indexování a rozsahy (např. %S+5-7 vloží 5. až 7. vybraný soubor). To je skvělé pro komplexní skripty na tlačítkové liště.
+Integrace s Everything: Vylepšená detekce a spouštění nástroje Everything, i když běží pod administrátorským účtem.
+Nové WM_USER zprávy: Pro vývojáře pluginů a externích nástrojů přibylo mnoho nových dotazů (např. zjištění typu otevřeného archivu nebo počtu vybraných souborů přes API).
+A drobnost na závěr: TC už nebude psát matoucí hlášku „Disk je plný“ při pokusu kopírovat soubor větší než 4 GB na disk se systémem FAT32. Teď na rovinu napíše: „Soubor je příliš velký pro cílový souborový systém.“
+Total Commander
+První verze aplikace vyšla v roce 1993 pod názvem Windows Commander. Ke změně na aktuální název Total Commander došlo v roce 2002 kvůli obavám z ochrany známky Windows. První verze byla 16bitová, postupně došlo k aktualizaci na 32bitovou a v současnosti na 64bitovou verzi.
+Aplikace navazuje na vzory, jako je Norton Commander z dob DOSu. Výjimečnost Total Commanderu je i v licenčních podmínkách, kdy má uživatel právo bezplatných aktualizací i po mnoha letech. V dnešní éře předplatných jde o zcela unikátní obchodní model. Autor nabízí i verzi pro Android, která je zcela zdarma.

@@ -1,0 +1,18 @@
+|T|Umělá inteligence diskriminuje ve zdravotnictví chudé|D|09.05.2026 00:12|P|Keňa chtěla modernizovat zdravotnictví a pomocí umělé inteligence (AI) zajistit dostupnější péči i lidem z nejchudších vrstev. Ambiciózní projekt prez...|X|Článek
+Nový systém zdravotního pojištění byl v Keni spuštěn na podzim roku 2024. Měl nahradit desítky let starý model a rozšířit zdravotní péči hlavně mezi pracovníky neformální ekonomiky – tedy farmáře, pouliční prodejce nebo příležitostné dělníky, kteří tvoří většinu tamní pracovní síly.
+Prezident Ruto během kampaně sliboval, že „žádný Keňan nezůstane stranou“ a každý získá přístup k dostupné zdravotní péči. Realita je ale podle reportérů z Africa Uncensored, Lighthouse Reports a deníku The Guardian výrazně jiná.
+Místo úlevy přišla vlna frustrace. Výše zdravotních příspěvků se totiž neurčuje podle skutečných příjmů, ale pomocí algoritmu strojového učení, který odhaduje finanční situaci domácností na základě různých ukazatelů.
+Jaký máte typ toalety?
+Lidé tak musí odpovídat na otázky typu: Jaký mají typ toalety? Z čeho je jejich střecha? Vlastní rádio? Právě podobné údaje pak systém používá k výpočtu toho, kolik mají za zdravotní pojištění platit.
+Podle investigativního auditu systém často chyboval právě u nejchudších rodin. Některým domácnostem byly vypočítány odvody odpovídající až 10 nebo 20 procentům jejich příjmů.
+„Lidé umírají, lidé trpí,“ popsala situaci dobrovolnice Grace Amani, která pomáhá obyvatele registrovat do systému. „Mysleli si, že jim to pomůže.“
+Právě ona každý den navštěvuje domácnosti v Nairobi a sleduje, jak rodiny, které mají problém zaplatit jídlo nebo nájem, dostávají k úhradě částky, které si jednoduše nemohou dovolit. Podle jejích slov někteří nemocní lidé tak nedostanou léčbu jen proto, že nezaplatili sumu vypočítanou algoritmem.
+Stížnosti se množí
+Na sociálních sítích se mezitím množí stížnosti obyvatel. Jeden z uživatelů napsal, že zatímco dříve platil 500 keňských šilinků (80 Kč), nový systém po něm chce více než dvojnásobek. Jiná samoživitelka reagovala slovy: „Bože, smiluj se nade mnou.“
+Systém je založený na metodě známé jako proxy means testing (PMT), kterou dlouhodobě podporuje Světová banka. Ta odhaduje příjmy domácností podle jejich majetku a životních podmínek místo skutečných výdělků.
+Podobné modely se v posledních letech rozšířily v Africe, Asii i Latinské Americe. Kritici ale upozorňují, že jsou velmi nepřesné a často chybně zařazují právě nejzranitelnější obyvatele.
+Rozvojový ekonom Stephen Kidd upozornil, že chudoba není něco, co lze jednoduše spočítat podle plechové střechy nebo vlastnictví rádia. „Působí to jako loterie,“ řekl. „A loterie není dobrý způsob budování důvěry.“
+Vládu varovali ještě před spuštěním
+Podle zjištění reportérů přitom keňská vláda dostala ještě před spuštěním systému varování od datové poradenské společnosti IDinsight. Ta ve své zprávě upozornila, že model je „nespravedlivý zejména vůči nízkopříjmovým domácnostem“ a že neodpovídá aktuální ekonomické situaci v zemi.
+Navzdory tomu byl systém spuštěn. Z více než 20 milionů registrovaných lidí dnes pravidelně platí příspěvky jen asi čtvrtina. Některé nemocnice navíc podle médií čelí finančním problémům, protože slíbené platby od státu nepřicházejí.
+Jedním z nejostřejších kritiků se stal i lékař Brian Lishenga. „Je to experiment, který selhal,“ uvedl. „Je to opravdu špatný nástroj pro identifikaci chudých domácností. Ale skvělý nástroj pro to, aby se vláda zbavila odpovědnosti.“|E|

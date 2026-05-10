@@ -1,0 +1,15 @@
+NASA v posledních týdnech postupně zveřejnila všechny fotografie z nedávné mise okolo Měsíce Artemis II. Jak už to ale u státních agentur bývá, vyznat se v gigabajtech dat není vždy úplně nejsnazší.
+Samotná NASA nabízí hned několik obrázkových rozcestníků pro běžné smrtelníky v čele s images.nasa gov a nasa.gov/images (ano, to jsou opravdu zcela rozdílené weby), jenže ani v nich zdaleka nedohledáte vše.
+Západ Země v časosběrném videu
+Ze surových dat lze přitom vytvořit úžasná odvozená díla, jak to v praxi v týdnu ukázal třeba fanoušek kosmonautiky a fotograf Riccardo Rossi, který ze záběru Země na horizontu Měsíce vytvořil působivé časosběrné video (viz tweet níže).
+Tady pomůže i otevřená licence NASA, americké federální agentury totiž musejí ze zákona publikovat vytvořená data tak, aby je mohl využít úplně kdokoliv a (téměř) jakkoliv. Nutno podotknout, že Evropa a přeneseně i Česko objevují smysl otevřených dat až v posledních letech a daňový poplatník konečně nemusí v mnoha případech platit za díla, která vznikla s využitím společných peněz.
+Ale zpět k časosběrnému videu. Podstatné je to, že Rossi uvádí identifikátory fotografií z paluby Orionu, které vzájemně stabilizoval a použil při tvorbě animace: ART002-E-20957 až ART002-E-21293.
+To je standardní pojmenovávání snímků NASA, které se skládá ze zkratky mise (ART002, tedy Artemis II), typu média (E, tedy Electronic; snímek z digitálního fotoaparátu) a pořadového čísla.
+Jak se dostat k 12 tisícům záběrů z mise Artemis II
+Kde tyto záběry dohledat v plném rozlišení? Cest je opět hromada, NASA je totiž kvůli své velikosti doslova rozsypaný čaj. Jednou z nich je agenturní vyhledávač Gateway to Astronaut Photography of Earth, který eviduje desítky tisíc snímků a nabízí i API pro strojové vyhledávání.
+Přístup ke surovým snímkům ze zrcadlovek v rozlišení 5568×3712 pixelů
+Podstatné je to, že v zápatí najdete sekci Search Using Other Methods a možnost NASA Photo ID Search, která slouží pro fulltextové vyhledávání oněch jednotných identifikátorů.
+Záběry z mise Artemis II si tak můžete vypsat prostým vyhledáním klíčového výrazu ART002.
+S využitím API a Pythonu si můžete všechny fotky stáhnout. Toto je ideáloní úloha pro vibe coding
+Web po několika sekundách práce zobrazí mohutný seznam více než 12 tisíc odkazů na fotografie z letu okolo Měsíce.
+Jsou to surová data bez metadat, můžete si ale nechat zobrazit i miniatury (budou se načítat postupně) a poté stáhnout plnoformátovou fotografii třeba pro tisk a tapetu na plochu počítače nebo mobilu.

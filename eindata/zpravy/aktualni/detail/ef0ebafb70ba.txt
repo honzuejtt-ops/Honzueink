@@ -1,0 +1,10 @@
+Ukrajinská Celebra Tech se pochlubila novým vylepšením laseru Tryzub pro ničení celého spektra nepřátelských dronů. Nedávno jej nainstalovala na mobilní platformu pro snadné přesuny na bojišti.
+Název laseru „Tryzub“ odkazuje na ukrajinský státní symbol a odborná komunita o něm ví poslední dva roky. Prvních demonstrací jsme se dočkali loni, kdy jej Kyjev ukázal při ničení pozemního cíle a oslnění kamery FPV dronu na optickém vlákně. Byl to jeden z pokusů, jak ničit inovované letouny odolné proti rádiovému rušení.
+Z oblohy sundá i šáhida. Největší výzvou jsou FPV
+Podle údajů Celera Tech dokáže Tryzub zlikvidovat průzkumné drony na vzdálenost až 1,5 kilometru. Proti rychlým FPV dronům je účinný přibližně na 800 až 900 metrů. Zároveň už nyní dosáhne do vzdálenosti okolo 5 kilometrů.
+To by mu umožnilo účinně zasahovat také íránsko-ruské šáhidy, které patří mezi největší hrozby pro ukrajinská města a energetickou infrastrukturu. Rusko je nasazuje v masových útocích téměř nepřetržitě.
+Je vyzbrojený AI a jednou by mohl ničit i miny
+Vývojáři postupně odstranili řadu problémů, které omezovaly laserové protidronové systémy v reálném boji. Tryzub využívá automatické vyhledávání a sledování cílů, koncové navádění pomocí AI a také propojení s radary. To je zásadní rozdíl oproti jednodušším laserům závislým pouze na vlastních optických senzorech.
+Nová mobilní varianta útočného laseru Tryzub
+Radar totiž může předat přesná data o trajektorii protivníkova dronu ještě dříve, než jej laser zachytí vlastními senzory. Ruční zaměřování malých FPV stíhaček by bylo naopak velmi složité až nemožné..
+Celý systém je umístěn na přívěsné platformě, takže jej lze rychle přesouvat mezi ohroženými oblastmi. Do budoucna by mohl Tryzub nalézt i další využití. Například při odminování. Výkonné varianty se tak možná stanou univerzálními nástroji moderního bojiště.

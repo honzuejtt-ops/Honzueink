@@ -1,0 +1,35 @@
+Při prvním spuštění iPhonu nebo po obnovení továrního nastavení máte v rukou úplně čistý telefon. Jeho součástí je spousta režimů a funkcí, které Apple z různých důvodů nezapíná automaticky – hlavně proto, aby vás telefon příliš neobtěžoval a co nejdéle vydržel na jedno nabití. V některých případech však Apple přehlíží výhody, které by plynuly z toho, že některé funkce ve výchozím stavu rovnou zapnul.
+Nový nebo resetovaný iPhone? Toto jsou první funkce které musíte zapnout nebo změnit jejich výchozí podobu
+V tomto článku se zaměříme na funkce a možnosti v nastavení, které byste si při prvním spuštění telefonu rozhodně měli zapnout nebo upravit, abyste o nic podstatného nepřišli.
+Zapněte ochranu proti krádeži
+iPhony disponují sofistikovanými mechanismy, které přidají další vrstvu ochrany v případě, že je iPhone odcizen nebo někdo odpozoruje vaše heslo. K čemu jsou ale tyto ochrany, když jsou ve výchozím stavu vypnuté?
+Ochranu proti odcizení telefonu musíte zapnout ručně, bohužel
+V Nastavení – Face ID a kód – Ochrana odcizených zařízení si funkci povolte. Při změně klíčových nastavení na místě, které iPhone považuje za neznámé, pak musíte počkat, než uplyne časová bezpečnostní prodleva. Je to funkce, kterou doufejme nikdy nebudete potřebovat – pokud se však s vaším iPhonem stane něco neočekávaného, za její existenci budete rádi.
+Skryjte Ovládací centrum z lockscreenu
+Bezpečnost telefonu by měla být hlavní prioritou, a z tohoto pohledu je až překvapivé, že Apple umožňuje spustit Ovládací centrum přímo ze zamykací obrazovky. Prakticky kdokoliv tak může bez zadání zámku přistupovat k funkcím vašeho telefonu – třeba zapnout nebo vypnout Wi-Fi (vypne se do druhého dne), AirDrop, změnit hlasitost nebo jas displeje. Nic takového by ale neměl mít možnost dělat každý, kdo se vašeho telefonu dotkne.
+Ovládací centrum nemá na zamykací obrazovce (kvůli bezpečnosti) co dělat
+Přejděte do Nastavení – Face ID a kód, odrolujte úplně dolů a vypněte přepínač Ovládací centrum. Když už tam budete, vypněte i všechny další funkce, které nechcete mít přístupné při uzamčeném telefonu. Od této chvíle se vám Ovládací centrum zobrazí pouze tehdy, když máte iPhone odemčený. Podobně si upravte i náhledy oznámení (Nastavení – Oznámení – Náhledy), aby se zobrazovaly jen po odemčení. Nikdo tak nebude moct koukat na obsah notifikací, které patří jen vám.
+Pryč s cvakáním, sem s haptikou
+Klávesnice na iPhonech ve výchozím nastavení působí mrtvě – při psaní vydává cvakání, které je dost nepříjemné. Takto cvakat na veřejnosti je spíše trapné než žádoucí. Přitom iPhony disponují skvělou haptickou odezvou, a není nám jasné, proč ji Apple nezapíná automaticky.
+Vypněte cvakání, zapněte haptiku. Takto by to mělo být už od začátku
+Přejděte do Nastavení – Zvuky a haptika – Odezva klávesnice a přepínače nastavte přesně opačně: otravný zvuk vypněte a aktivujte haptiku. V tu chvíli budete mít z psaní na klávesnici iPhonu úplně jiný pocit.
+Zastavte nepořádek na plochách
+Jakmile do iPhonu začnete instalovat nové aplikace, jejich ikony se začnou „sypat" na plochu. Když jich přibude velká spousta, plochy se stanou velmi nepřehledné – přestože všechny aplikace můžete pohodlně procházet přes Knihovnu aplikací, kde je obsah přehledně rozdělený podle kategorie.
+Přehlednost hned ze startu – nenechte si plnit plochy všemi aplikacemi, ale přetáhněte si na ní jen ty vybrané
+Jak plnění ploch ikonami zastavit? V Nastavení – Plocha a Knihovna aplikací nastavte, aby nově stažené aplikace zůstávaly pouze v Knihovně aplikací. Na plochách vám pak zůstanou jen ty aplikace, které si tam ručně přesunete.
+Nastavte si nouzové kontakty
+Ze zamykací obrazovky se bez odemčení iPhonu vždy dostanete k tzv. nouzovým kontaktům. Pokud se vám něco stane, můžete je rychle vytočit bez zbytečného přemýšlení. Kontakty jsou součástí funkcí Nouzové SOS a Zdravotní ID, takže je škoda si je nevytvořit hned od začátku.
+Nouzový kontakt a Zdravotní ID – obojí je přístupné bez odemknutí telefonu. Nikdy nevíte, kdy se to může hodit
+Přejděte do Nastavení – Tíseň SOS – Nastavit nouzové kontakty, popř. do Nastavení – Zdraví – Zdravotní ID. Nejprve si vytvoříte Zdravotní ID, jehož součástí jsou nouzové kontakty. A když už jste u toho, rovnou vyplňte i další údaje ve zdravotním ID – nikdy nevíte, kdy se může hodit, aby o vás někdo věděl, jaké pravidelně užíváte léky, na co jste alergičtí, jaké máte zdravotní problémy nebo třeba jakou máte krevní skupinu.
+Omezte Liquid Glass
+Nejnovější grafické rozhraní iPhonů je natolik odlišné od toho předchozího, že se nesetkalo s úplně vřelým přijetím. Průhledný efekt Liquid Glass lze změnit v Nastavení – Zobrazení a jas – Liquid Glass na možnost Tónovaný.
+Proč omezovat Liquid Glass? Je to hlavně kvůli čitelnosti. Apple přidává omezení prakticky každou větší aktualizaci iOS – pro své vlastní dobro, pokud nejste s čitelností spokojeni, vypněte, co se dá
+V Nastavení – Zpřístupnění – Displej a velikost textu najdete další užitečné funkce, například Snížení průhlednosti, Vyšší kontrast nebo Omezení světelných efektů. Pokud chcete na displeji vidět text co nejlépe, bez některého z těchto přepínačů to půjde jen těžko. Přitom by stačilo málo – přidat systémový přepínač, který by Liquid Glass celkově vypnul. Toho se ale pravděpodobně nedočkáme, a tak je nutné využít všechny dostupné možnosti, které Apple nabízí.
+Omezte aktualizace na pozadí
+Systém iOS je nastaven tak, že si aplikace průběžně aktualizují svůj obsah na pozadí, i když je právě nepoužíváte. Když je pak spustíte, mají v sobě již načtena aktuální data. Pokud je ale tato funkce trvale zapnutá, může rychleji vyčerpat baterii a spotřebovávat cenná data z FUP limitu.
+Aktualizace na pozadí rozhodně nejsou povinné. Vyberte si aplikace nebo zohledněte typ sítě
+V Nastavení – Obecné – Aktualizace na pozadí změňte výchozí nastavení „Wi-Fi a mobilní data“ buď čistě na Wi-Fi, nebo aktualizace vypněte úplně. O notifikace z aplikací nepřijdete a baterie vám vydrží déle. Pokud to chcete dotáhnout do extrému, můžete aktualizace ponechat zapnuté jen u vybraných aplikací.
+Upravte kvalitu a formáty fotek a videí
+Velkou chybou je spokojit se s výchozím nastavením formátů a rozlišení fotoaparátu. Například u iPhonu Pro je focení do běžného komprimovaného formátu skutečná škoda – Apple totiž ani u těchto špičkových modelů nezapíná maximální možnou kvalitu. V Nastavení – Fotoaparát – Formáty je proto vhodné zapnout Apple ProRAW (pro fotografie) nebo Apple ProRes (pro video).
+Upravte si formáty fotek a videí. Ty základní mohou být poddimenzované nebo naopak nemyslí na co největší kompatibilitu
+U fotek zase myslete na to, že je v základu aktivní nejefektivnější formát HEIC, se kterou mohou mít některá zařízení problémy. Tady by se možná hodil kompatibilní režim JPEG. U základních modelů iPhonu zase u videa přepněte na něco lepšího, než je výchozí rozlišení 1080p při 30 fps. Volte 1080p při 60 fps, nebo rovnou 4K při 30 fps. Rozdíl v kvalitě natočených videí pocítíte okamžitě.

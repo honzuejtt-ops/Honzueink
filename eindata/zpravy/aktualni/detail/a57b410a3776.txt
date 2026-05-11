@@ -1,0 +1,7 @@
+Český úřad zeměměřický a katastrální se před pár dny pochlubil aktualizací svých mapových dat, která jsou dnes k dispozici pro každého zájemce zdarma pod svobodnou licencí CC.
+Fanoušci opravdu velkých PDF si mohou stáhnout třeba 4. vydání fyzickogeografické mapy ČR v měřítku 1:500 000 (stav k roku 2025). Je to přesně ta mapa, kterou znáte z kabinetů zeměpisů a její nejčerstvější podobu si můžete stáhnout jako jeden 351MB dokument .
+Mapa České republiky 1:500 000 jako jedno obří PDF
+Doporučuji ji ale neotevírat v prohlížeči Chrome, který má s rozměrnými PDF problém. Edge na Windows odvede mnohem lepší práci. Nejlepší pak specializované prohlížeče od Adobe apod.
+Další hotové aktualizované mapy:
+Aktualizovaná surová databáze Data50 Vedle hotové – rasterizované – mapy pro prohlížení a tisk se ČÚZK pochlubil také aktualizací surových vektorových mapových dat v produktu Data50 (měřítko 1:50 000). Jedná se o databáze ve formátu SHP, které zahrnují 69 typů geografických dat (plochy, linie, body), ze kterých si můžete postavit mapu na míru.
+Vrstva Vodní plocha z balíku Data50 načtení v QGISSHP je jedním ze standardních formátu pro výměnu kartografických informací a s jejich prohlížením pomůže třeba bezplatný GIS editor QGIS . Produkty ČÚZK včetně balíku Data50 ale můžete prohlížet i online v Geoprohlížeči úřadu.

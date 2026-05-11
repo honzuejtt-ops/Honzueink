@@ -1,0 +1,7 @@
+Článek
+Technologie, která má sloužit veřejné bezpečnosti, tak zároveň otevírá otázky kolem ochrany soukromí a rizika jejího zneužití. Informuje o tom web Carscoops.
+Analýza Institutu pro spravedlnost identifikovala minimálně 14 konkrétních případů, kdy policisté využili technologii společností, jako je Flock Safety, k neoprávněnému sledování svých současných či bývalých partnerů nebo cizích osob.
+S rostoucím počtem instalovaných kamerových systémů se očekává nárůst podobných incidentů. Zásadním zjištěním analýzy je fakt, že k odhalení pochybení nedošlo prostřednictvím interních kontrolních mechanismů, policejních auditů nebo hlášení kolegů. Ve většině případů na zneužití upozornily samy oběti. To naznačuje, že značné množství případů neoprávněného přístupu k datům o pohybu vozidel může zůstávat neodhaleno.
+V potvrzených případech byli policisté postiženi obviněním z přestupků, propuštěním ze zaměstnání nebo sami rezignovali. Systém však podle analýz naráží na slabiny v konečné vymahatelnosti odpovědnosti.
+Ztráta místa u konkrétního policejního sboru totiž v mnoha státech USA automaticky neznamená odebrání profesní certifikace. Proces jejího odnětí probíhá odděleně od pracovněprávního řízení, je časově náročný a nemusí vést k trvalému zákazu výkonu služby.
+V současnosti navíc neexistuje veřejná evidence, která by potvrzovala, zda konkrétní policisté o certifikaci skutečně přišli. Bez definitivního odejmutí licence mají možnost ucházet se o místo u jiné bezpečnostní agentury, což ztěžuje úplné vyvození důsledků za profesní pochybení.

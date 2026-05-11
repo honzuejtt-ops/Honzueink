@@ -1,0 +1,13 @@
+Článek
+Po celá desetiletí se v učebnicích biologie uvádí jednoduché pravidlo: DNA vzniká kopírováním DNA matrice. Poté, co jeden enzym rozplete dvoušroubovici DNA na dva samostatné řetězce, vytvoří jiný enzym, tzv. polymeráza, pro každý řetězec komplementární sekvenci, bázi po bázi.
+Zjednodušeně řečeno, takto vzniknou dvě kopie původní DNA. Ta se následně překládá do RNA a ta následně do proteinů. Vědci tento směr překladu nazývají centrální dogma.
+Nový výzkum toho, jak se bakterie brání před viry, však nyní ukazuje, že toto pravidlo syntézy není absolutní. V časopisu Science popisuje tým ze Stanfordovy univerzity v USA bakteriální enzym (DRT), který syntetizuje dlouhou repetitivní sekvenci DNA bez nukleových kyselin z jiné DNA jako šablony, přičemž jako vodítko používá svou vlastní strukturu.
+„Tento výzkum je průlomový,“ říká Philip Kranzusch, biochemik z Harvard Medical School, který se zabývá bakteriální obranou. Použití proteinu jako šablony pro syntézu DNA je podle Adi Millmanové, věnující se biotechnologiím na MIT, „významným koncepčním posunem od klasického centrálního dogmatu“, v němž informace proudí jedním směrem od nukleových kyselin, tedy DNA, k proteinům.
+I když nejde o objev, který by přepsal vědecké učebnice, rozhodně přidává jednu, nebo možná rovnou tři zajímavé nové kapitoly. Má to dopad na chování bakterií, biologickou evoluci a stavební kameny života.
+Neobvyklý obranný mechanismus bakterií
+Hlavním podnětem pro tuto studii bylo zkoumání obranných reverzních transkriptáz (DRT), které bakterie používají k odrážení útoků virů. Vědci již u těchto polymeráz zaznamenali jisté neobvyklé chování při tvorbě DNA.
+Konkrétně tým naklonoval systém DRT3 v bakterii Escherichia coli (E. coli) a zkoumal jeho chování ve zkumavkách i v živých buňkách. Tím odhalil tři součásti stroje na tvorbu DNA: dva enzymy nazývané Drt3a a Drt3b a úsek nekódující RNA.
+Právě Drt3b se ukázal být velkým překvapením, protože byl schopen syntetizovat novou DNA bez jakékoliv předlohy, pomocí které by mohl seřadit jednotlivé nukleové kyseliny v nově vznikající DNA. Jedná se o mechanismus typu „vše v jednom“, který dosud nebyl nikdy pozorován.
+„Samotný protein slouží jako předloha pro sekvenci DNA,“ vysvětluje biochemik ze Stanfordu Alex Gao. „To bylo docela překvapení. Jedná se o zásadně nový způsob, jakým život vytváří DNA.“
+Co to znamená do budoucna
+V tuto chvíli si vědci nejsou zcela jisti, jak bakterie využívají DRT3 k ochraně před napadajícími viry. A i když se to může jevit jako velmi specifický případ použití, neznamená to, že nemůžeme najít i jiné způsoby, jak to využít.

@@ -1,0 +1,6 @@
+Projekt evropské sociální sítě W, který na začátku letošního roku oznámila původem německá právnička žijící ve Švýcarsku Anna Zeiter, po měsících příprav chystá spuštění veřejné betaverze. Má k němu dojít 17. června 2026, píše služba v e-mailech lidem, kteří si na ní s předstihem registrovali uživatelská jména.
+W má být ryze evropskou alternativou k velkým sociálním sítím jako je Facebook či X (dříve Twitter). Je založena na opensourcovém AT protokolu (běží na něm i sociální síť Bluesky), který má umožňovat snadnou správu identity a uživatelských dat.
+Na rozdíl od majoritních sítí nemá podle serveru Lupa.cz W sbírat žádná data o uživatelích. Zároveň ale při založení účtu vyžaduje ověření identity, a to prostřednictvím separátní služby W Identity (aplikace už je dostupná pro Android a iOS). Ta požaduje telefonní číslo, e-mailovou adresu, datum narození a ověření totožnosti uživatele prostřednictvím průkazu nebo pasu a pořízením selfie.
+Data uživatelů se budou ukládat výhradně na serverech v Evropě a W se bude řídit přísnými evropskými pravidly na ochranu osobních údajů, slibuje služba.
+Do veřejné betaverze bude uživatele, kteří se registrovali na čekací listině, zvát postupně. Jako první přicházejí už teď na řadu vybraní politici a další veřejné osobnosti. Další lidé se mohou na seznam zájemců zařadit na webu W.
+zdroj: Lupa.cz

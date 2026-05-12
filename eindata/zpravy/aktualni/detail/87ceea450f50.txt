@@ -1,0 +1,5 @@
+Český výrobce vozů Škoda Auto řeší bezpečnostní incident. Týká se německé pobočky, jejíž oficiální e-shop byl napaden útočníky, kteří získali dočasný přístup.
+O problému informovala sama pobočka v Německu s tím, že na incident narazil interní bezpečnostní tým. Provoz webu byl dočasně pozastaven a byla aplikována záplata. Probíhá další vyšetřování.
+Útočníci zneužili nespecifikovanou bezpečnostní chybu v e-commerce platformě, na níž německý e-shop Škody běžel. Tato chyba umožnila eskalaci práv a obejití ověřovacích mechanismů. Je možné, že šlo o zranitelnost typu zero-day.
+Škoda uvedla, že útočníci v rámci útoku získali data zákazníků, jde o jména, hesla, e-mailové adresy, telefonní čísla, historii objednávek, adresy a podobně. Údaje nebyly uloženy v plaintextu a nemělo by tedy být možné je jednoduše dále zneužít. Údaje o kreditních kartách neunikly, ty se v e-shopu neukládají a jdou přes platební brány.
+Škoda Auto nemá bezpečnostní incidenty poprvé. V minulosti například řešila to, že se k vozům této značky lze dostat na dálku, sledovat polohu v reálném čase nebo spouštět některé funkce. Velký leak dat postihl i celou skupinu Volkswagen.

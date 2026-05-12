@@ -1,0 +1,18 @@
+VIIPER
+VIIPER (Virtual Input over IP EmulatoR) je framework pro emulaci virtuálních USB zařízení, jako jsou herní ovladače, klávesnice nebo myši. Využívá protokol USBIP k vytvoření virtuálních vstupů, které jsou pro operační systém i aplikace k nerozeznání od skutečného hardwaru. Díky běhu v uživatelském prostoru nevyžaduje psaní vlastních ovladačů a umožňuje ovládat zařízení i vzdáleně po síti.
+Nástroj podporuje emulaci ovladačů Xbox 360, DualShock 4 (PS4) a standardních HID periferií s nízkou latencí pod 1 ms. Vývojáři mohou využít buď samostatný server s TCP API, nebo knihovnu libVIIPER pro přímou integraci do vlastních aplikací v C# nebo C++.
+github.com/Alia5/VIIPER, v0.6.0
+pwdsafety
+pwdsafety je nástroj pro příkazovou řádku napsaný v Go, který slouží k prověření síly a bezpečnosti vašich hesel. Veškerá analýza probíhá lokálně. Heslo kontroluje proti databázi běžně používaných řetězců (včetně jejich zrcadlově obrácených variant) a analyzuje jeho entropii i celkovou předvídatelnost.
+Při hodnocení bere v úvahu délku, poměr unikátních znaků a přítomnost čísel, symbolů či kombinaci malých a velkých písmen. Výsledkem je skóre na stupnici 0 až 100 s označením síly (od „Very weak“ po „Very strong“). Pokud je zadané heslo vyhodnoceno jako nedostatečné, program automaticky vygeneruje návrh nového hesla.
+github.com/edoardottt/pwdsafety, v0.4.2
+Liftoff (lo)
+Liftoff, známý také pod příkazem lo, je rychlý spouštěč projektů pro vývojáře, který se snaží eliminovat rutinní kroky při zahajování práce. Nástroj automaticky detekuje použité technologie v adresáři (Node.js, Rust, Python, Go, Java) a dokáže jedním příkazem nainstalovat chybějící závislosti a projekt rovnou spustit, aniž by uživatel musel ručně volat správce balíčků.
+Užitečnou funkcí jsou tzv. Launchpady, které umožňují seskupit více souvisejících projektů (např. backend a frontend) a spouštět je hromadně. Liftoff také podporuje Docker Compose, interaktivní TUI menu pro výběr projektů a režim „Watch“, který monitoruje systémové prostředky běžícího procesu.
+github.com/notliad/liftoff, 0.5.0
+afreq.sh
+afreq.sh je démon pro automatickou správu frekvence a výkonových profilů CPU na Linuxu. Byl inspirován nástrojem auto-cpufreq, ale na rozdíl od něj je napsán v čistém POSIX shellu s využitím standardních unixových nástrojů. Cílem je nabídnout lehkou alternativu s minimem závislostí, která je snadno rozšiřitelná a vhodná i pro velmi osekané systémy.
+Démon v reálném čase monitoruje zátěž procesoru a stav napájení (AC/baterie) a podle toho přepíná mezi úspornými a výkonnými režimy. Součástí balíku je i nástroj perfmod, což je tenký wrapper, který vynutí maximální výkon pouze po dobu běhu konkrétního zvoleného programu. Konfigurace probíhá přes jednoduchý textový soubor a podporuje spouštění vlastních hook skriptů při změnách stavu.
+github.com/eylles/afreq.sh, 0.5.0
+Blbinka
+Pokud i po použití pwdsafety máte pocit, že jsou vaše hesla příliš nudná, zkuste The Password Game. Začíná to nevinně požadavkem na pět znaků, ale brzy se přistihnete, jak v hesle musíte mít aktuální fázi měsíce, výsledek dnešního Wordle, římské číslice, jejichž součin je přesně 35, nebo dokonce emoji kuřete, které musíte krmit, jinak hra končí.

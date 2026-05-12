@@ -1,0 +1,91 @@
+… v Pythonu: to není lenost, ale produkční kód
+Co se dozvíte v článku
+- … v Pythonu: to není lenost, ale produkční kód
+- Objektový systém jazyka Python a literál …
+- Je tedy … pouze jmenným aliasem pro Ellipsis?
+- Způsoby využití … v Pythonu
+- Definice funkce s dočasným tělem
+- Využití … jako výchozí hodnoty volitelného parametru funkce
+- Specifikace datového typu n-tice s neznámým počtem prvků
+- Specifikace typu a dalších vlastností atributu bez uvedení výchozí hodnoty (Pydantic)
+- Příklad složitějšího modelu, ve kterém jsou definovány atributy bez výchozí hodnoty
+- Typová informace: funkce akceptující neznámý počet a typ parametrů
+- Využití Callable[…, ]
+- Praktické příklady využití typu Callable[…, ]
+- Indexování využívané v knihovně Numpy (n-rozměrná pole)
+- Další příklady využití … při indexování n-rozměrných polí
+- Využití … při komunikaci mezi procesy nebo vlákny
+- Příklad využití … v komunikaci mezi vlákny s využitím sdílené fronty
+- Upozornění: … není to samé jako _
+- Trojice teček v dalších programovacích jazycích
+- Repositář s demonstračními příklady
+- Odkazy na Internetu
+V případě, že na prezentaci či v nějakém repositáři naleznete následující definice funkcí (zapsané v různých programovacích jazycích), pravděpodobně budete předpokládat, že tyto funkce nejsou dokončeny a že zdrojové kódy s těmito funkcemi nebudou bez dalšího rozšiřování přeložitelné nebo spustitelné:
+void foo() { ... } fn foo() { ... } func foo() { ... } fn void foo() { ...; } def foo(): ...
+V prvních třech případech (což jsou konkrétně příklady napsané v C, Rustu, Go a C3) budete mít naprostou pravdu – takto zapsané funkce nejenom že neobsahují tělo, ale navíc jsou v nich zapsány „trojtečky“ (ellipsis), které nejsou korektním příkazem ani výrazem.
+Ovšem v případě posledním je tomu jinak. Poslední funkce je totiž zapsána v Pythonu a tento jazyk má trojtečky … definovány jako literál. Pochopitelně jsou stanovena i syntaktická a sémantická pravidla použití tohoto literálu. A právě s těmito pravidly a způsoby použití se setkáme v dnešním článku. Znaky … se totiž v Pythonu mohou použít na více místech, mnohdy tam, kde bychom je vlastně ani nečekali. A navíc můžeme pomocí … vyřešit některé zapeklitější sémantické problémy, například schopnost zjistit, zda byl do funkce předán parametr.
+Objektový systém jazyka Python a literál …
+Při spuštění interpretru programovacího jazyka Python je (kromě dalších hodnot) inicializována i hodnota uložená do proměnné nazvané Ellipsis. Tato hodnota je jedináčkem (singleton) a je typu ellipsis (pozor na rozdíl velké/malé písmeno na začátku).
+Přímo v REPLu máme pochopitelně přístup k nápovědě o Ellipsis i ellipsis:
+help(Ellipsis)
+Po zadání tohoto příkazu by se měla zobrazit nápověda ke třídě ellipsis:
+class ellipsis(object) | The type of the Ellipsis singleton. | | Methods defined here: | | __reduce__(self, /) | Helper for pickle. | | __repr__(self, /) | Return repr(self). | | ---------------------------------------------------------------------- | Static methods defined here: | | __new__(*args, **kwargs) | Create and return a new object. See help(type) for accurate signature.
+O existenci proměnné Ellipsis (a hodnoty do ní přiřazené) se taktéž můžeme velmi snadno přesvědčit:
+print(Ellipsis)
+Mělo by se vypsat:
+Ellipsis
+Důležité je, že literál … je při inicializaci interpretru nastaven na stejnou hodnotu, jaká je uložena v proměnné Ellipsis:
+print(Ellipsis) print(...)
+V tomto případě se vypíšou dva naprosto stejné řádky:
+Ellipsis Ellipsis
+To ovšem ještě vůbec nic neříká o tom, že jsou obě hodnoty stejného typu. Ověření typů tedy musí proběhnout odlišně:
+print(type(Ellipsis)) print(type(...))
+<class 'ellipsis'> <class 'ellipsis'>
+Navíc se snadno přesvědčíme o tom, že se jedná nejenom o stejné hodnoty, ale i o shodný objekt ležící ve stejném místě operační paměti. K tomuto účelu využijeme standardní funkci id:
+print(id(Ellipsis)) print(id(...)) print(id(Ellipsis) == id(...))
+9918048 9918048 True
+Je tedy … pouze jmenným aliasem pro Ellipsis?
+Z demonstračních příkladů uvedených v předchozích kapitolách by se mohlo zdát, že trojice teček … je pouze jmenným aliasem pro proměnnou Ellipsis. Ovšem to není úplně přesné, protože s Ellipsis je možné skutečně pracovat jako s běžnou proměnnou, což mj. znamená, že je do ní možné přiřadit novou hodnotu. Ostatně si to můžeme velmi snadno ukázat. Následující příklad je zcela korektní:
+print(Ellipsis) print(Ellipsis == ...) print() Ellipsis=42 print(Ellipsis) print(Ellipsis == ...)
+Po spuštění výše uvedeného skriptu se nejdříve vypíše původní hodnota přiřazená do proměnné Ellipsis i to, zda je tato hodnota totožná s hodnotou reprezentovanou literálem …:
+Ellipsis True
+Ovšem další dva řádky vypsané skriptem prozradí, že nám prakticky nic nebrání v tom, abychom hodnotu uloženou do proměnné Ellipsis přepsali jinou hodnotou (interpret nás na chybu neupozorní, protože se jedná o zcela korektní operaci):
+42 False
+Ovšem literál … se chová jinak než běžná proměnná. To především znamená, že ho není možné použít na levé straně přiřazovacího příkazu, což si opět snadno ověříme:
+print(Ellipsis) print(Ellipsis == ...) print() ...=42 print(Ellipsis) print(Ellipsis == ...)
+Interpret programovacího jazyka Python v tomto případě vypíše chybu (dokonce chybu na úrovni syntaxe) již při pokusu o načtení zdrojového kódu:
+File "/home/ptisnovs/src/most-popular-python-libs/ellipsis/ellipsis_assignment_2.py", line 5 ...=42 ^^^ SyntaxError: cannot assign to ellipsis here. Maybe you meant '==' instead of '='?
+Způsoby využití … v Pythonu
+V programovacím jazyku Python se zápis tří teček používá v několika oblastech. Přitom ovšem platí, že každé použití … má poněkud odlišný sémantický význam, který bude popsán (včetně demonstračních příkladů) v navazujících kapitolách:
+- Trojtečku je možné použít v těle funkce jako jediný výraz (ne příkaz). Takové funkce lze zavolat, ovšem z pohledu sémantiky se jedná o funkce, které se ještě budou měnit.
+- Trojtečka se taktéž může využít jako výchozí hodnota volitelného parametru funkce. Poté lze v čase běhu detekovat, jestli byl do funkce parametr předán či nikoli (což je možná lepší, než definovat None jako výchozí hodnotu).
+- Ve FastAPI či při použití knihovny Pydantic se trojtečka používá v definicích modelů resp. atributů modelů.
+- Trojtečku lze taktéž využít při definicích typů, konkrétně při definici typu funkce s libovolným počtem či typy parametrů.
+- V knihovně Numpy se trojtečka zapisuje resp. může zapisovat při indexaci prvků n-rozměrných polí.
+- Trojtečku je taktéž možné použít při komunikaci mezi vlákny nebo procesy, přičemž trojtečka sémanticky reprezentuje žádost o ukončení vlákna/procesu či naopak informaci o tom, že se vlákno/proces po odeslání trojtečky ukončí.
+Definice funkce s dočasným tělem
+Připomeňme si, že programovací jazyk Python je poměrně unikátní v tom, že se v něm nepoužívají klasické příkazové bloky známé z jiných programovacích jazyků. Namísto toho blok začíná dvojtečkou a kód bloku musí být vhodným způsobem odsazen (a typicky ukončen prázdným řádkem). Jak se ovšem v takovém případě zapíše „prázdný blok“? Většinou se setkáme s použitím (rezervovaného) klíčového slova pass, které bylo do jazyka přidáno právě z tohoto důvodu:
+def foo(): pass
+Ovšem naprosto stejným postupem můžeme do těla funkce zapsat jakoukoli hodnotu (libovolného typu), například:
+def foo(): 42 print(foo())
+Po spuštění je ověřeno, že 42 má význam pouze ze syntaktického hlediska. Tato hodnota je vyhodnocena, ale není vrácena (chybí příkaz return):
+None
+Klíčové slovo pass se používá tehdy, pokud funkci již nechceme dále modifikovat – je to její finální podoba (některé funkce nebo metody skutečně pouze musí existovat, ale mohou mít prázdné tělo). Pokud ovšem budete chtít naznačit, že se funkce ještě v budoucnu rozšíří, je lepší použít tento způsob zápisu:
+def foo(): ...
+Samozřejmě si můžeme uvést i nepatrně složitější příklad, ve kterém se kombinuje hned několik (mírně pokročilejších) vlastností Pythonu:
+from typing import Union, overload @overload def add(a: int, b: int) -> int: ... @overload def add(a: str, b: str) -> str: ... def add(a: Union[int, str], b: Union[int, str]) -> Union[int, str]: """Funkce s typovými anotacemi.""" return a + b # zavolání funkce add s argumenty různých typů print(add(1, 2)) print(add("foo", "bar"))
+Využití … jako výchozí hodnoty volitelného parametru funkce
+Poměrně často se v praxi můžeme setkat s funkcemi s volitelnými parametry. V případě, že tento parametr nebo tyto parametry nejsou předány při volání funkce, zapíše se do nich nějaká předem zvolená výchozí hodnota. U plně volitelných parametrů se mnohdy jako výchozí hodnota používá None, což má ovšem jednu nevýhodu – tímto způsobem totiž nelze odlišit explicitní předání None (to je totiž mnohdy zcela validní hodnota) od neuvedení parametru:
+def bar(arg = None): if arg is None: print("No value provided!") else: print("Value provided", arg) bar(42) bar(None) bar()
+Povšimněte si, že volání funkce s předáním None skutečně nebylo odlišeno od volání bez předání parametru:
+Value provided 42 No value provided! No value provided!
+Tento problém lze do jisté míry vyřešit tak, že výchozí hodnotou parametru budou právě tři tečky:
+def bar(arg = ...): if arg is ...: print("No value provided!") else: print("Value provided", arg) bar(42) bar(None) bar()
+Nyní lze snadno rozlišit volání s předáním None od volání bez uvedení parametru:
+Value provided 42 Value provided None No value provided!
+def bar(arg = ...): if arg is ...: print("No value provided!") else: print("Value provided", arg) bar(42) bar(Ellipsis) bar(...) bar()
+Nyní se od sebe neodliší poslední tři volání:
+Value provided 42 No value provided! No value provided! No value provided!
+Specifikace datového typu n-tice s neznámým počtem prvků
+Se zápisem tří teček se setkáme i u specifikace datového typu n-tice s neznámým počtem prvků. U n-tic je totiž nutné uvádět typ každého z prvků zvlášť (na rozdíl od seznamů). Ovšem pokud mají mít prvky stejný typ a souč...
+(Pokracovani na webu)

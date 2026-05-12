@@ -1,4 +1,111 @@
-|T|Novější fotomobil neznamená lepší fotky. Dnešní telefony je vylepšují tak moc, až vypadají hůř|D|12.05.2026 18:15|P||X|Fotoaparáty byly u prvních iPhonů a Androidů vlastně jen doplňkem, až postupem času se ukázalo, jak důležité je mít vždy po ruce kvalitní fotoaparát. Fotografické možnosti smartphonů se tak začaly postupně vylepšovat. Přibývaly další objektivy a zvětšovaly se fotočipy – a tak jsme se dostali do éry moderních smartphonů, jejichž fotomodul už se nemůže zvětšovat, protože by se nám telefony už nevešly do kapsy.
+|T|… v Pythonu: to není lenost, ale produkční kód|D|12.05.2026 22:00|P|Jeden známý okomentoval můj kód psaný v Pythonu slovy: „kdy to dokončíš, aby to šlo spustit?“ Vysvětlilo se, že myslí výpustky („trojtečky“, …), které...|X|… v Pythonu: to není lenost, ale produkční kód
+Co se dozvíte v článku
+- … v Pythonu: to není lenost, ale produkční kód
+- Objektový systém jazyka Python a literál …
+- Je tedy … pouze jmenným aliasem pro Ellipsis?
+- Způsoby využití … v Pythonu
+- Definice funkce s dočasným tělem
+- Využití … jako výchozí hodnoty volitelného parametru funkce
+- Specifikace datového typu n-tice s neznámým počtem prvků
+- Specifikace typu a dalších vlastností atributu bez uvedení výchozí hodnoty (Pydantic)
+- Příklad složitějšího modelu, ve kterém jsou definovány atributy bez výchozí hodnoty
+- Typová informace: funkce akceptující neznámý počet a typ parametrů
+- Využití Callable[…, ]
+- Praktické příklady využití typu Callable[…, ]
+- Indexování využívané v knihovně Numpy (n-rozměrná pole)
+- Další příklady využití … při indexování n-rozměrných polí
+- Využití … při komunikaci mezi procesy nebo vlákny
+- Příklad využití … v komunikaci mezi vlákny s využitím sdílené fronty
+- Upozornění: … není to samé jako _
+- Trojice teček v dalších programovacích jazycích
+- Repositář s demonstračními příklady
+- Odkazy na Internetu
+V případě, že na prezentaci či v nějakém repositáři naleznete následující definice funkcí (zapsané v různých programovacích jazycích), pravděpodobně budete předpokládat, že tyto funkce nejsou dokončeny a že zdrojové kódy s těmito funkcemi nebudou bez dalšího rozšiřování přeložitelné nebo spustitelné:
+void foo() { ... } fn foo() { ... } func foo() { ... } fn void foo() { ...; } def foo(): ...
+V prvních třech případech (což jsou konkrétně příklady napsané v C, Rustu, Go a C3) budete mít naprostou pravdu – takto zapsané funkce nejenom že neobsahují tělo, ale navíc jsou v nich zapsány „trojtečky“ (ellipsis), které nejsou korektním příkazem ani výrazem.
+Ovšem v případě posledním je tomu jinak. Poslední funkce je totiž zapsána v Pythonu a tento jazyk má trojtečky … definovány jako literál. Pochopitelně jsou stanovena i syntaktická a sémantická pravidla použití tohoto literálu. A právě s těmito pravidly a způsoby použití se setkáme v dnešním článku. Znaky … se totiž v Pythonu mohou použít na více místech, mnohdy tam, kde bychom je vlastně ani nečekali. A navíc můžeme pomocí … vyřešit některé zapeklitější sémantické problémy, například schopnost zjistit, zda byl do funkce předán parametr.
+Objektový systém jazyka Python a literál …
+Při spuštění interpretru programovacího jazyka Python je (kromě dalších hodnot) inicializována i hodnota uložená do proměnné nazvané Ellipsis. Tato hodnota je jedináčkem (singleton) a je typu ellipsis (pozor na rozdíl velké/malé písmeno na začátku).
+Přímo v REPLu máme pochopitelně přístup k nápovědě o Ellipsis i ellipsis:
+help(Ellipsis)
+Po zadání tohoto příkazu by se měla zobrazit nápověda ke třídě ellipsis:
+class ellipsis(object) | The type of the Ellipsis singleton. | | Methods defined here: | | __reduce__(self, /) | Helper for pickle. | | __repr__(self, /) | Return repr(self). | | ---------------------------------------------------------------------- | Static methods defined here: | | __new__(*args, **kwargs) | Create and return a new object. See help(type) for accurate signature.
+O existenci proměnné Ellipsis (a hodnoty do ní přiřazené) se taktéž můžeme velmi snadno přesvědčit:
+print(Ellipsis)
+Mělo by se vypsat:
+Ellipsis
+Důležité je, že literál … je při inicializaci interpretru nastaven na stejnou hodnotu, jaká je uložena v proměnné Ellipsis:
+print(Ellipsis) print(...)
+V tomto případě se vypíšou dva naprosto stejné řádky:
+Ellipsis Ellipsis
+To ovšem ještě vůbec nic neříká o tom, že jsou obě hodnoty stejného typu. Ověření typů tedy musí proběhnout odlišně:
+print(type(Ellipsis)) print(type(...))
+<class 'ellipsis'> <class 'ellipsis'>
+Navíc se snadno přesvědčíme o tom, že se jedná nejenom o stejné hodnoty, ale i o shodný objekt ležící ve stejném místě operační paměti. K tomuto účelu využijeme standardní funkci id:
+print(id(Ellipsis)) print(id(...)) print(id(Ellipsis) == id(...))
+9918048 9918048 True
+Je tedy … pouze jmenným aliasem pro Ellipsis?
+Z demonstračních příkladů uvedených v předchozích kapitolách by se mohlo zdát, že trojice teček … je pouze jmenným aliasem pro proměnnou Ellipsis. Ovšem to není úplně přesné, protože s Ellipsis je možné skutečně pracovat jako s běžnou proměnnou, což mj. znamená, že je do ní možné přiřadit novou hodnotu. Ostatně si to můžeme velmi snadno ukázat. Následující příklad je zcela korektní:
+print(Ellipsis) print(Ellipsis == ...) print() Ellipsis=42 print(Ellipsis) print(Ellipsis == ...)
+Po spuštění výše uvedeného skriptu se nejdříve vypíše původní hodnota přiřazená do proměnné Ellipsis i to, zda je tato hodnota totožná s hodnotou reprezentovanou literálem …:
+Ellipsis True
+Ovšem další dva řádky vypsané skriptem prozradí, že nám prakticky nic nebrání v tom, abychom hodnotu uloženou do proměnné Ellipsis přepsali jinou hodnotou (interpret nás na chybu neupozorní, protože se jedná o zcela korektní operaci):
+42 False
+Ovšem literál … se chová jinak než běžná proměnná. To především znamená, že ho není možné použít na levé straně přiřazovacího příkazu, což si opět snadno ověříme:
+print(Ellipsis) print(Ellipsis == ...) print() ...=42 print(Ellipsis) print(Ellipsis == ...)
+Interpret programovacího jazyka Python v tomto případě vypíše chybu (dokonce chybu na úrovni syntaxe) již při pokusu o načtení zdrojového kódu:
+File "/home/ptisnovs/src/most-popular-python-libs/ellipsis/ellipsis_assignment_2.py", line 5 ...=42 ^^^ SyntaxError: cannot assign to ellipsis here. Maybe you meant '==' instead of '='?
+Způsoby využití … v Pythonu
+V programovacím jazyku Python se zápis tří teček používá v několika oblastech. Přitom ovšem platí, že každé použití … má poněkud odlišný sémantický význam, který bude popsán (včetně demonstračních příkladů) v navazujících kapitolách:
+- Trojtečku je možné použít v těle funkce jako jediný výraz (ne příkaz). Takové funkce lze zavolat, ovšem z pohledu sémantiky se jedná o funkce, které se ještě budou měnit.
+- Trojtečka se taktéž může využít jako výchozí hodnota volitelného parametru funkce. Poté lze v čase běhu detekovat, jestli byl do funkce parametr předán či nikoli (což je možná lepší, než definovat None jako výchozí hodnotu).
+- Ve FastAPI či při použití knihovny Pydantic se trojtečka používá v definicích modelů resp. atributů modelů.
+- Trojtečku lze taktéž využít při definicích typů, konkrétně při definici typu funkce s libovolným počtem či typy parametrů.
+- V knihovně Numpy se trojtečka zapisuje resp. může zapisovat při indexaci prvků n-rozměrných polí.
+- Trojtečku je taktéž možné použít při komunikaci mezi vlákny nebo procesy, přičemž trojtečka sémanticky reprezentuje žádost o ukončení vlákna/procesu či naopak informaci o tom, že se vlákno/proces po odeslání trojtečky ukončí.
+Definice funkce s dočasným tělem
+Připomeňme si, že programovací jazyk Python je poměrně unikátní v tom, že se v něm nepoužívají klasické příkazové bloky známé z jiných programovacích jazyků. Namísto toho blok začíná dvojtečkou a kód bloku musí být vhodným způsobem odsazen (a typicky ukončen prázdným řádkem). Jak se ovšem v takovém případě zapíše „prázdný blok“? Většinou se setkáme s použitím (rezervovaného) klíčového slova pass, které bylo do jazyka přidáno právě z tohoto důvodu:
+def foo(): pass
+Ovšem naprosto stejným postupem můžeme do těla funkce zapsat jakoukoli hodnotu (libovolného typu), například:
+def foo(): 42 print(foo())
+Po spuštění je ověřeno, že 42 má význam pouze ze syntaktického hlediska. Tato hodnota je vyhodnocena, ale není vrácena (chybí příkaz return):
+None
+Klíčové slovo pass se používá tehdy, pokud funkci již nechceme dále modifikovat – je to její finální podoba (některé funkce nebo metody skutečně pouze musí existovat, ale mohou mít prázdné tělo). Pokud ovšem budete chtít naznačit, že se funkce ještě v budoucnu rozšíří, je lepší použít tento způsob zápisu:
+def foo(): ...
+Samozřejmě si můžeme uvést i nepatrně složitější příklad, ve kterém se kombinuje hned několik (mírně pokročilejších) vlastností Pythonu:
+from typing import Union, overload @overload def add(a: int, b: int) -> int: ... @overload def add(a: str, b: str) -> str: ... def add(a: Union[int, str], b: Union[int, str]) -> Union[int, str]: """Funkce s typovými anotacemi.""" return a + b # zavolání funkce add s argumenty různých typů print(add(1, 2)) print(add("foo", "bar"))
+Využití … jako výchozí hodnoty volitelného parametru funkce
+Poměrně často se v praxi můžeme setkat s funkcemi s volitelnými parametry. V případě, že tento parametr nebo tyto parametry nejsou předány při volání funkce, zapíše se do nich nějaká předem zvolená výchozí hodnota. U plně volitelných parametrů se mnohdy jako výchozí hodnota používá None, což má ovšem jednu nevýhodu – tímto způsobem totiž nelze odlišit explicitní předání None (to je totiž mnohdy zcela validní hodnota) od neuvedení parametru:
+def bar(arg = None): if arg is None: print("No value provided!") else: print("Value provided", arg) bar(42) bar(None) bar()
+Povšimněte si, že volání funkce s předáním None skutečně nebylo odlišeno od volání bez předání parametru:
+Value provided 42 No value provided! No value provided!
+Tento problém lze do jisté míry vyřešit tak, že výchozí hodnotou parametru budou právě tři tečky:
+def bar(arg = ...): if arg is ...: print("No value provided!") else: print("Value provided", arg) bar(42) bar(None) bar()
+Nyní lze snadno rozlišit volání s předáním None od volání bez uvedení parametru:
+Value provided 42 Value provided None No value provided!
+def bar(arg = ...): if arg is ...: print("No value provided!") else: print("Value provided", arg) bar(42) bar(Ellipsis) bar(...) bar()
+Nyní se od sebe neodliší poslední tři volání:
+Value provided 42 No value provided! No value provided! No value provided!
+Specifikace datového typu n-tice s neznámým počtem prvků
+Se zápisem tří teček se setkáme i u specifikace datového typu n-tice s neznámým počtem prvků. U n-tic je totiž nutné uvádět typ každého z prvků zvlášť (na rozdíl od seznamů). Ovšem pokud mají mít prvky stejný typ a souč...
+(Pokracovani na webu)|E||T|Softwarová sklizeň (13. 5. 2026): emulujte virtuální USB zařízení po síti|D|12.05.2026 22:00|P|Vytvoříme virtuální USB zařízení ovládaná přes IP, prověříme skutečnou bezpečnost svých hesel, bleskově spustíme vývojářské projekty a optimalizujeme ...|X|VIIPER
+VIIPER (Virtual Input over IP EmulatoR) je framework pro emulaci virtuálních USB zařízení, jako jsou herní ovladače, klávesnice nebo myši. Využívá protokol USBIP k vytvoření virtuálních vstupů, které jsou pro operační systém i aplikace k nerozeznání od skutečného hardwaru. Díky běhu v uživatelském prostoru nevyžaduje psaní vlastních ovladačů a umožňuje ovládat zařízení i vzdáleně po síti.
+Nástroj podporuje emulaci ovladačů Xbox 360, DualShock 4 (PS4) a standardních HID periferií s nízkou latencí pod 1 ms. Vývojáři mohou využít buď samostatný server s TCP API, nebo knihovnu libVIIPER pro přímou integraci do vlastních aplikací v C# nebo C++.
+github.com/Alia5/VIIPER, v0.6.0
+pwdsafety
+pwdsafety je nástroj pro příkazovou řádku napsaný v Go, který slouží k prověření síly a bezpečnosti vašich hesel. Veškerá analýza probíhá lokálně. Heslo kontroluje proti databázi běžně používaných řetězců (včetně jejich zrcadlově obrácených variant) a analyzuje jeho entropii i celkovou předvídatelnost.
+Při hodnocení bere v úvahu délku, poměr unikátních znaků a přítomnost čísel, symbolů či kombinaci malých a velkých písmen. Výsledkem je skóre na stupnici 0 až 100 s označením síly (od „Very weak“ po „Very strong“). Pokud je zadané heslo vyhodnoceno jako nedostatečné, program automaticky vygeneruje návrh nového hesla.
+github.com/edoardottt/pwdsafety, v0.4.2
+Liftoff (lo)
+Liftoff, známý také pod příkazem lo, je rychlý spouštěč projektů pro vývojáře, který se snaží eliminovat rutinní kroky při zahajování práce. Nástroj automaticky detekuje použité technologie v adresáři (Node.js, Rust, Python, Go, Java) a dokáže jedním příkazem nainstalovat chybějící závislosti a projekt rovnou spustit, aniž by uživatel musel ručně volat správce balíčků.
+Užitečnou funkcí jsou tzv. Launchpady, které umožňují seskupit více souvisejících projektů (např. backend a frontend) a spouštět je hromadně. Liftoff také podporuje Docker Compose, interaktivní TUI menu pro výběr projektů a režim „Watch“, který monitoruje systémové prostředky běžícího procesu.
+github.com/notliad/liftoff, 0.5.0
+afreq.sh
+afreq.sh je démon pro automatickou správu frekvence a výkonových profilů CPU na Linuxu. Byl inspirován nástrojem auto-cpufreq, ale na rozdíl od něj je napsán v čistém POSIX shellu s využitím standardních unixových nástrojů. Cílem je nabídnout lehkou alternativu s minimem závislostí, která je snadno rozšiřitelná a vhodná i pro velmi osekané systémy.
+Démon v reálném čase monitoruje zátěž procesoru a stav napájení (AC/baterie) a podle toho přepíná mezi úspornými a výkonnými režimy. Součástí balíku je i nástroj perfmod, což je tenký wrapper, který vynutí maximální výkon pouze po dobu běhu konkrétního zvoleného programu. Konfigurace probíhá přes jednoduchý textový soubor a podporuje spouštění vlastních hook skriptů při změnách stavu.
+github.com/eylles/afreq.sh, 0.5.0
+Blbinka
+Pokud i po použití pwdsafety máte pocit, že jsou vaše hesla příliš nudná, zkuste The Password Game. Začíná to nevinně požadavkem na pět znaků, ale brzy se přistihnete, jak v hesle musíte mít aktuální fázi měsíce, výsledek dnešního Wordle, římské číslice, jejichž součin je přesně 35, nebo dokonce emoji kuřete, které musíte krmit, jinak hra končí.|E||T|Novější fotomobil neznamená lepší fotky. Dnešní telefony je vylepšují tak moc, až vypadají hůř|D|12.05.2026 18:15|P||X|Fotoaparáty byly u prvních iPhonů a Androidů vlastně jen doplňkem, až postupem času se ukázalo, jak důležité je mít vždy po ruce kvalitní fotoaparát. Fotografické možnosti smartphonů se tak začaly postupně vylepšovat. Přibývaly další objektivy a zvětšovaly se fotočipy – a tak jsme se dostali do éry moderních smartphonů, jejichž fotomodul už se nemůže zvětšovat, protože by se nám telefony už nevešly do kapsy.
 Fotomobily ušly dlouhou cestu, ale ty nejnovější nemusí fotit nejlépe. Ukazuje se, že post-processing zbytečně vylepšuje i fotky, které jsou dostatečně kvalitní. Fotky ze starších telefonů tak mohou vypadat přirozeněji i přesto, že nejsou dokonalé
 Je třeba se ale zastavit u jednoho paradoxu, protože novější fotomobil ještě neznamená lepší fotomobil. Ten několik let starý může pořizovat kvalitnější fotografie a je to vedlejší efekt toho, jakým směrem se fotomobily v posledních několika letech ubíraly.
 Problém jménem výpočetní fotografie
@@ -118,7 +225,57 @@ Zda se bude dát urvat něco hodně cenného i letos, teprve uvidíme. Každopá
 Nebojte se zúčastnit, nestojí to nic
 Většinou platí, že zadarmo vám nikdo nic nedá, ale tyto rozdávačky Epicu jsou vcelku výjimka. Zatím nevíme o tom, že by s nimi byly spojené nějaké háčky a zkušenosti jsou s nimi dobré. Tyto akce firma pořádá už dlouhá léta (od konce roku 2018). Pokud stihnete v termínu akce kliknout na dotyčné tlačítko na stránce hry v obchodu, je hra vaše napořád.
 Jediné, co potřebujete, je mít u Epic Games Store zaregistrovaný účet, přičemž samotnou aplikaci (klienta Epic Games Store) není třeba mít nainstalovanou. Můžete hry sbírat do budoucna i bez nainstalovaného klienta (třeba pro děti). Klient samotný je zadarmo, pokud si získané úlovky budete chtít zahrát. Firma Epic Games Store „sběr“ her zadarmo ani nikdy nepodmiňovala tím, že by váš účet musel v obchodě někdy utratit nějaké opravdové peníze, ani není třeba vyplňovat údaje platební karty.
-Zdroj: Epic Games Store|E||T|Nejlevnější 32" QD OLED se skvělým zvukem. Test monitoru Dell S3225QC|D|12.05.2026 14:45|P|Tento monitor Dell potvrzuje, že není nutné mít ty nejlepší parametry, ale pomůže mít skvělé ty důležité parametry. Třeba výborný prostorový zvuk.|X|Tento monitor Dell potvrzuje, že není nutné mít ty nejlepší parametry, ale pomůže mít skvělé ty důležité parametry. Třeba výborný prostorový zvuk.
+Zdroj: Epic Games Store|E||T|How finance teams use Codex|D|12.05.2026 15:00|P|See how finance teams can use Codex to build MBRs, reporting packs, variance bridges, model checks, and planning scenarios from real work inputs.|X|How finance teams use Codex
+See how finance teams can use Codex to build review-ready assets for monthly business reviews, reporting, variance analysis, and planning.
+With Codex, finance teams can just build things. Start with the close workbooks, revenue and expense dashboards, forecast updates, prior MBRs, and owner notes you already use. Codex can help turn that context into tangible assets your team can review, refine, and share, no coding required. Use it to spend less time assembling the first pass and more time shaping the story, checking the numbers, and preparing for the decisions ahead.
+Learn more about using Codex for everyday work in our on-demand webinar(opens in a new window).
+Ready to try Codex with real finance work? Start with a copy-ready prompt, then use the fully built example to see how that same prompt gets stronger with real files, systems, constraints, and review expectations. Each use case also includes suggested skills and plugins to help Codex work across your tech stack, so your team can get to a reviewable first pass faster and spend more time on the judgment, analysis, and decisions that matter.
+Turn close outputs, forecast updates, and owner commentary into a CFO-ready monthly business review narrative.
+- Review close workbooks, dashboards, forecast updates, prior MBRs, and owner notes.
+- Identify key variances, what changed since forecast, risks, and CFO prep questions.
+- Draft the narrative with source-backed numbers and owner follow-ups.
+Swap in the real month or quarter, business team, close workbook, dashboards, forecast update, prior MBR, and owner notes. Tell Codex what audience the narrative is for, which metrics matter most, and how every number should be cited. Ask it to flag missing support, stale prior-month language, risks, and CFO prep questions.
+Suggested plugins: Google Drive, SharePoint, Box, Spreadsheets, Presentations, Documents, Slack, Teams, Gmail, Outlook Email.
+Example:
+Prepare Acme’s April management business review story for the Enterprise Sales team. Use “April Close Workbook.xlsx,” “April Revenue Dashboard,” “April Forecast Update,” “March MBR Deck.pptx,” owner notes in “April MBR Owner Inputs,” #finance-close from April 22 through April 30, and any related close context I provide.
+Draft an executive-ready narrative with key revenue and expense variances, what changed since forecast, risks, CFO prep questions, and follow-ups by owner. Cite a workbook tab, dashboard, or source note for every material number. Create the draft as a Microsoft Word document named “Monthly Business Review Narrative.”
+Improve model reliability before high-stakes reviews by catching formula, structure, source, and assumption issues.
+- Review workbook structure, formulas, hardcodes, links, checks, and output tabs.
+- Make safe cleanup changes and flag assumptions that require finance-owner review.
+- Return a cleaned model where appropriate plus a severity-ranked QA memo.
+Swap in the actual model name, audience, and supporting source files. Tell Codex which tabs matter most, what kinds of cleanup are safe, and which business assumptions should not be changed without review. Ask for both a cleaned workbook and a severity-ranked QA memo.
+Suggested plugins: Spreadsheets, Google Drive, SharePoint, Box, Documents, Slack, Teams, Gmail, Outlook Email.
+Example:
+Clean and review “FY27 Operating Plan Model.xlsx” before it goes to the leadership team. Check workbook structure, formulas, hardcodes, broken links, circular references, sign conventions, period labels, source tie-outs, model checks, and output tabs.
+Make safe cleanup changes where appropriate, but do not change business assumptions without calling them out. Return a cleaned workbook if safe, plus a QA memo with high-risk issues, fixes made, remaining assumptions, and cells or tabs that need finance-owner review. Pay special attention to the “Revenue Drivers,” “Headcount Plan,” “Cash Forecast,” and “Exec Summary” tabs.
+Speed recurring executive reporting by refreshing metrics, commentary, and open questions from the latest source materials.
+- Review the latest forecast model, KPI dashboard, prior pack, cash view, and owner inputs.
+- Update metrics, deltas, charts, and commentary.
+- Summarize what changed, what remains open, and which sections need executive review.
+Swap in the reporting period, latest forecast model, KPI dashboard, prior pack, cash view, forecast notes, and owner inputs. Tell Codex which slides or sections should be refreshed, what should stay unchanged, and how open assumptions or missing owner inputs should be flagged.
+Suggested plugins: Presentations, Spreadsheets, Google Drive, SharePoint, Box, Documents, Slack, Teams, Gmail, Outlook Email.
+Example:
+Refresh Acme’s May CFO reporting pack. Use “May Forecast Model.xlsx,” “May KPI Dashboard,” “April Board Pack.pptx,” “May Cash View,” “Forecast Notes - May,” owner inputs in “CFO Pack Open Questions,” and related discussion from #cfo-staff.
+Update the key metrics, deltas, charts, and commentary. Create a CFO-ready pack summary that explains what changed since the April board pack, what still needs owner input, which assumptions remain open, and which slides or sections need executive review. Do not invent metrics. Flag any number that cannot be tied back to the forecast model, KPI dashboard, cash view, or owner notes.
+Turn budget, forecast, and actuals movement into a clear variance bridge leaders can trust and act on.
+- Review close workbooks, budgets, forecasts, dashboards, trackers, and owner notes.
+- Build a driver bridge across revenue, margin, opex, cash flow, and balance-sheet items where relevant.
+- Flag unsupported variances and draft owner-ready follow-up questions.
+Swap in the comparison period, actuals, budget, prior forecast, dashboards, trackers, and finance owner notes. Tell Codex which P&L, cash flow, or balance-sheet lines to bridge and how to handle unsupported variances. Ask it to separate confirmed drivers from questions for owners.
+Suggested plugins: Spreadsheets, Google Drive, SharePoint, Box, Documents, Slack, Teams, Gmail, Outlook Email.
+Example:
+Explain Acme’s April forecast-to-actual movement. Use “April Close Workbook.xlsx,” “FY26 Budget.xlsx,” “March Forecast.xlsx,” “April Revenue Dashboard,” “April Opex Tracker,” “April Cash View,” and finance owner notes from #finance-close.
+Build a variance bridge across revenue, gross margin, opex, EBITDA, free cash flow, and balance-sheet drivers where relevant. Draft owner-ready follow-up questions, reconcile source breaks, and flag any variance that is not supported by a source. Cite the workbook tab, dashboard, tracker, or owner note behind each material driver.
+Help finance teams update forecasts and compare scenarios quickly as assumptions, actuals, and leadership priorities change.
+- Review the operating model, driver model, headcount plan, cash forecast, actuals, and assumptions.
+- Build base, downside, and upside scenarios with key sensitivities.
+- Summarize cash impact, hiring implications, trigger points, and approval needs.
+Swap in the forecast or operating plan, driver model, headcount plan, cash forecast, latest actuals, approved assumptions, and leadership notes. Tell Codex which scenarios to build, what assumptions require approval, and what outputs leadership needs to compare. Ask for cash impact, hiring implications, trigger points, and a sensitivity table.
+Suggested plugins: Spreadsheets, Google Drive, SharePoint, Box, Documents, Presentations (optional), Slack, Teams, Gmail, Outlook Email.
+Example:
+Refresh Acme’s FY27 forecast for the Enterprise business. Use “FY27 Operating Plan Model.xlsx,” “Revenue Driver Model.xlsx,” “Headcount Plan.xlsx,” “13 Week Cash Forecast.xlsx,” April actuals, approved planning assumptions in “FY27 Planning Assumptions,” and leadership notes from #fy27-planning.
+Create base, downside, and upside scenarios with the key revenue, margin, hiring, and cash drivers. Summarize cash impact, hiring implications, trigger points, and your recommendation. Include a sensitivity table and list assumptions that need approval before the plan is shared. Do not overwrite business assumptions without flagging them for review.
+Continue exploring Codex for work with these resources:|E||T|Nejlevnější 32" QD OLED se skvělým zvukem. Test monitoru Dell S3225QC|D|12.05.2026 14:45|P|Tento monitor Dell potvrzuje, že není nutné mít ty nejlepší parametry, ale pomůže mít skvělé ty důležité parametry. Třeba výborný prostorový zvuk.|X|Tento monitor Dell potvrzuje, že není nutné mít ty nejlepší parametry, ale pomůže mít skvělé ty důležité parametry. Třeba výborný prostorový zvuk.
 Skvělý zvuk
 Barevně přesný QD OLED
 Elegantní design
@@ -405,7 +562,29 @@ Karta si pravděpodobně zachová ostatní vlastnosti čipu Navi 44, jako je pod
 To, že GPU bude provozováno na nízkých taktech, by mohlo mít jednu velkou výhodu – bude energeticky efektivní a spotřeba by mohla být poměrně mírná. Zatímco referenční Radeon RX 9060 XT má TDP 150 W a model RX 9060 pak 132 W, karta Radeon RX 9050 by se mohla pohybovat někde mezi 100 a 120 W. To je ale jenom náš odhad, který se může mýlit – web VideoCardz zatím informaci o TDP této grafiky nezjistil. Ví se ale, že doporučený výkon zdroje se uvádí pouhých 450 W, což ukazuje na úspornou grafiku (model RX 9060 XT oficiálně vyžaduje 500W zdroj).
 VideoCardz uvádí, že má zatím informace o této kartě jen z jednoho zdroje, kterým je jeden z výrobců karet. Ten už nicméně má dokumenty se specifikacemi karty, které jsme uváděli výše. Je tedy slušná šance, že se potvrdí, i když firmy někdy dělají v parametrech úpravy – například TDP a frekvence se mohou měnit poměrně pozdě.
 Co zatím nevíme, je kdy AMD tuto grafickou kartu vydá a za jakou cenou. Firma Radeony často uváděla v červnu, přičemž by to mohlo být spojeno i s veletrhem Computex 2026, který se koná na začátku června (2. 6. až 5. 6.). Během jeho trvání bychom se mohli k Radeonu RX 9050 dovědět víc. Karty by měla být nejlevnějším modelem s architekturou RDNA 4 (a tedy podporujícím FSR 4.1).
-Zdroj: VideoCardz|E||T|What Parameter Golf taught us about AI-assisted research|D|12.05.2026 00:00|P|Parameter Golf brought together 1,000+ participants and 2,000+ submissions to explore AI-assisted machine learning research, coding agents, quantizati...|X|What Parameter Golf taught us
+Zdroj: VideoCardz|E||T|How NVIDIA engineers and researchers build with Codex|D|12.05.2026 00:00|P|Teams use Codex with GPT-5.5 to ship production systems and turn research ideas into runnable experiments.|X|How NVIDIA engineers and researchers build with Codex
+Teams use Codex with GPT‑5.5 to ship production systems and turn research ideas into runnable experiments.
+Results
+10x
+Speed improvement in end-to-end research workflows
+Results
+40k
+NVIDIANs with access to Codex
+At NVIDIA, engineers are using Codex as their default tool for complex engineering work, and to run end-to-end machine learning experiments. Codex, built on GPT‑5.5 and running in production on NVIDIA GB200 and GB300 infrastructure, can handle much longer, more autonomous sessions — going beyond execution to surface issues and ideas that weren't part of the original prompt.
+“Codex is our go-to tool for complex engineering tasks, and with GPT-5.5, it surfaces bugs and gaps in my program that other models weren’t able to find.”
+NVIDIA’s coding agents team helps engineers across the company adopt and use AI tools effectively in real-world development workflows. Codex with GPT‑5.5 has become their go-to tool for complex engineering tasks.
+“I’ve personally found Codex with GPT‑5.5 to be way more autonomous, with much less handholding,” explains Dennis Hannusch, a senior software engineer on the agents team. “I’m able to go for long sessions with multiple compactions and find that it still performs with top accuracy and manages to keep the work in context. And it’s great at tactically selecting the right tools as well as the right skills.”
+Hannusch has already used Codex to evolve an internal platform from an MVP into a production-ready system, improving scalability and reliability along the way, something that had proven difficult with earlier models.
+The team has also built an internal podcast recording app, similar to Riverside, spun up in just hours using Codex. “Given our privacy constraints, it would have taken us weeks to procure software,” Hannusch explains.
+Using the Codex desktop app with computer interaction, the system was also able to test the video and audio recording functionality as it was built. “I didn’t have to do anything—it was built and tested completely autonomously,” he says. “Codex has completely changed the threshold for what’s worth building.”
+“It’s been a 10x speed improvement just in terms of running experiments, because it’s able to handle the whole end-to-end machine learning research workflow.”
+For NVIDIA’s research teams, Codex has largely automated the research loop: from identifying research areas, to writing scripts for machine learning experiments, to running the experiments on remote machines.
+“GPT‑5.5 has been a massive unlock as a creative partner, especially when it comes to knowledge work,” says Shaunak Joshi, an AI researcher at NVIDIA.
+The team uses Codex as a research agent, pointing the model at a large corpus of relevant papers in areas like reinforcement learning. “GPT‑5.5 seems to be much more creative compared to competitors,” Joshi says. “It helped me trace snippets of evidence throughout the entire chain, and suggested a knowledge graph of the ideas that really helped me visualize how concepts tied together.”
+After identifying hypotheses, Codex writes the scripts on machine learning infrastructure to train models. The Codex app supports SSH, so Joshi has found that he no longer has to worry about log-in and setup on remote hosts; he can easily run large machine learning workloads from his laptop.
+“If you have an old codebase that isn’t that performant, Codex is really good at machine translation. So a lot of folks are taking their Python repository, sending it to GPT-5.5, and it’s rewriting it into Rust and making it like 20X more efficient.”
+Codex is accelerating work at NVIDIA across engineering and research teams, taking ideas from concept to execution and testing in a single workflow.
+“We’re just scratching the surface of what it can do,” Hannusch says. “I’m really excited to keep building real systems and see how far it can go.”|E||T|What Parameter Golf taught us about AI-assisted research|D|12.05.2026 00:00|P|Parameter Golf brought together 1,000+ participants and 2,000+ submissions to explore AI-assisted machine learning research, coding agents, quantizati...|X|What Parameter Golf taught us
 Lessons from 1,000+ participants, 2,000+ submissions, and an open machine learning challenge shaped by coding agents.
 We launched Parameter Golf to engage and support the machine learning research community in exploring a new, tightly constrained machine learning problem. We wanted the challenge to be interesting enough to reward real technical creativity, while remaining conceptually simple and easy to verify.
 Participants had to minimize held-out loss on a fixed FineWeb dataset while staying within a 16 MB artifact limit, including both model weights and training code, and a 10-minute training budget on 8×H100s. We provided a baseline, dataset, and evaluation scripts so participants could fork the repo, improve the model, and submit their results through GitHub.
@@ -435,7 +614,37 @@ At the same time, agent use created new issues for submission and scoring. Many 
 The volume of submissions also changed how we had to run the competition. We could not manually inspect every submission and still keep the leaderboard moving. During the challenge, we developed an internal Codex-based triage bot to monitor new submissions and flag them for human review. This became especially important during periods when we received hundreds of submissions a day.
 AI agents also became part of the community around the challenge. For much of the competition, @notapplica and their coding agent ran a “Live Updates” bulletin, tracking major events, explaining leaderboard approaches, and helping other participants follow the competition. Community review tools also appeared to help less experienced participants check whether their submissions were within the rules and avoid common invalid approaches.
 Our primary goal was to launch a challenge that eligible participants(opens in a new window) could take part in and experience machine learning research. Parameter Golf brought in a wide range of technically strong and creative submissions, and it gave us a clearer view of how open research competitions may change as AI agents become more capable and widely used.
-We are thinking about launching more challenges like this in the future. If you’re interested, please fill out the challenge participant form(opens in a new window).|E||T|Vývojáři jsou zahlcení: AI slop mění ekonomiku bezpečnosti|D|11.05.2026 22:00|P|Open-source projekty zavírají své programy odměn za objevení chyb. Generativní modely dramaticky zlevnily produkci věrohodně znějících hlášení, zatímc...|X|Čísla z curlu ukazují rozpad poměru signálu a šumu
+We are thinking about launching more challenges like this in the future. If you’re interested, please fill out the challenge participant form(opens in a new window).|E||T|AutoScout24 scales engineering with AI-powered workflows|D|12.05.2026 00:00|P|Learn how AutoScout24 Group uses Codex and ChatGPT to speed development cycles, improve code quality, and expand AI adoption.|X|AutoScout24 scales engineering with AI-powered workflows
+Codex and ChatGPT accelerate development cycles, improve code quality, and expand AI adoption across 2,000 employees.
+Results
+~10x
+Faster development cycles (weeks → days).
+Results
+~2,000
+Employees enabled with AI tools.
+Results
+~1,000
+Builder roles using Codex.
+AutoScout24 Group(opens in a new window) is the largest pan-European and Canadian online car marketplace, connecting more than 30 million monthly users with over two million vehicle listings. Operating across multiple brands—including AutoScout24 in Europe and AutoTrader.ca in Canada—the company supports a network of 45,000 dealer partners and employs around 2,000 people globally.
+As product expectations increased and system complexity grew, AutoScout24 Group faced mounting pressure to deliver faster innovation without compromising reliability. This is closely tied to the company’s goal of continuously improving how buyers search, evaluate, and purchase vehicles, and how dealers successfully market and sell their inventory. With large-scale migrations, legacy systems, and rising engineering demand, incremental improvements were no longer sufficient. The emergence of large language models presented a timely opportunity to fundamentally rethink how software is built, tested, and scaled—making OpenAI a natural partner in driving this transformation.
+“AI is changing how we build, but more importantly, it’s changing what we can deliver to our users and dealer partners. Faster iterations mean better experiences for buyers and more effective ways for dealers to reach and convert customers.”
+AutoScout24 Group implemented a dual-layer AI adoption strategy to balance broad enablement with deep technical impact. ChatGPT was rolled out across the organization, giving approximately 2,000 employees access to AI tools and establishing a strong baseline of AI literacy across functions.
+In parallel, the company embedded Codex into its engineering, data, and product workflows, equipping around 1,000 builder employees with a coding agent integrated directly into their daily processes. Codex was selected following a three-month evaluation across teams, where it demonstrated strong performance in usability, workflow compatibility, and measurable improvements in productivity and code quality.
+To ensure adoption at scale, AutoScout24 Group established a cross-functional AI Champions network. This group created a feedback loop between central leadership and individual teams, helping translate AI capabilities into practical, real-world use cases. The approach encouraged organic adoption and ensured AI was embedded into existing workflows rather than treated as a standalone tool.
+Codex quickly proved valuable across several high-impact use cases, including automated pull request reviews, large-scale refactoring, technical documentation, and post-incident analysis. Beyond engineering, AI tools enabled non-technical roles to prototype ideas and validate concepts independently, accelerating innovation across the organization. This ultimately supports faster delivery of improvements across the platform, benefiting both buyers and dealer partners.
+“Codex has emerged as a key enabler in our engineering workflows, delivering measurable impact in productivity, quality, and speed.”
+- Reduced development timelines from 2–3 weeks to 2–3 days for select projects
+- Increased engineering throughput, enabling faster iteration and experimentation
+- Improved code quality and consistency through automated reviews
+- Reduced manual workload in pull request reviews and documentation
+- Expanded innovation capacity by enabling non-engineering roles to prototype ideas
+- Combine broad AI access with deep workflow integration to maximize impact
+- Prioritize real-world use cases over top-down mandates to drive adoption
+- Establish cross-functional champions to scale knowledge organically
+- Evaluate AI tools rigorously using measurable engineering metrics
+- Focus on augmenting—not replacing—existing team capabilities
+AutoScout24 Group continues to expand its use of AI across both internal workflows and customer-facing products. Future efforts will focus on deeper integration of AI into core systems, enabling even greater automation and intelligence across the platform.
+As the company scales its AI capabilities, it aims to further enhance user experiences, empower teams across functions, and unlock new efficiencies in how products are built and delivered.|E||T|Vývojáři jsou zahlcení: AI slop mění ekonomiku bezpečnosti|D|11.05.2026 22:00|P|Open-source projekty zavírají své programy odměn za objevení chyb. Generativní modely dramaticky zlevnily produkci věrohodně znějících hlášení, zatímc...|X|Čísla z curlu ukazují rozpad poměru signálu a šumu
 Co se dozvíte v článku
 Projekt curl provozoval bug bounty od dubna 2019. Za necelých sedm let program vyplatil přes sto tisíc dolarů a potvrdil 87 reálných zranitelností. Podle Stenbergova oznámení byl poměr potvrzených hlášení zhruba do roku 2024 přes patnáct procent, v roce 2025 spadl pod pět. V blogu Death by a thousand slops z července 2025 Stenberg doplnil, že zjevně chybné reporty AI v roce 2025 tvořily přibližně pětinu všech oznámení.
 Ve své zprávě z 26. ledna 2026 formuluje důvod bez vytáček. Program na odměňování za hlášení chyb v curlu již není. Oficiálně končí 31. ledna 2026,

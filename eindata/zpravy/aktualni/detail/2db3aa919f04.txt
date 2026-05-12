@@ -1,0 +1,10 @@
+Apple právě vydal další „desetinnou“ aktualizaci systému iOS pro své iPhony. Nejnovější verze iOS 26.5 přináší mnoho drobných vylepšení, včetně nové tapety z edice Pride. V neposlední řadě dochází k opravám bezpečnostních rizik a chyb, na které se přišlo ve verzích předchozích.
+Hlavní očekávaná novinka – zprávy RCS s koncovým šifrováním, posílané mezi iOS a Androidem – se mezi zákazníky bude šířit postupně. Betaverzi šifrovaných RCS zpráv mají v tuto chvíli k dispozici uživatelé s iOS 26.5 u vybraných operátorů. V Česku je to zatím pouze T-Mobile, šifrování na redakčním iPhonu už funguje.
+Zabezpečení zpráv poznáte podle nové ikony zámku v chatech RCS a nápisu „Zašifrované“. Bubliny komunikace mezi iOS a Androidem zůstávají zelené. Šifrování je ve výchozím nastavení zapnuté a postupem času se automaticky aktivuje u všech nových i stávajících RCS konverzací.
+Kdy odejde SMS a kdy RCS zpráva?
+- Oba telefony (odesílatele i příjemce) umí RCS a mají aktivní data ⤏ komunikace jde přes RCS.
+- Oba telefony (odesílatele i příjemce) umí RCS, ale jeden z nich (nebo oba) mají vypnutá data ⤏ komunikace jde přes SMS, v případě multimediálního obsahu přes MMS.
+- RCS umí jenom jeden telefon (odesílatele nebo příjemce) ⤏ komunikace jde přes SMS či MMS.
+Jako vždy platí, že Apple v zájmu ochrany zákazníků nezveřejňuje, nekomentuje ani nepotvrzuje bezpečnostní problémy, dokud nejsou plně vyšetřené a nejsou k dispozici opravy nebo aktualizace. O všech opravách bezpečnostního rázu se tak dozvídáme až ex post, kdy už nehrozí potenciální zneužití.
+Aktualizaci by měl nabídnout sám iPhone, nebo ji můžete vyvolat ručně v nabídce Nastavení → Obecné → Aktualizace softwaru. Velikost aktualizačního balíku pro stažení je v případě iOS 26.5 na iPhonu 17 Pro zhruba 3,5 GB.
+Zdroje a další informace: Apple

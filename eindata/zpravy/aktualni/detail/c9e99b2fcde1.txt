@@ -1,0 +1,26 @@
+Googlebook je nová generace počítačů od Googlu.
+Před 15 lety tahle firma představila platformu Chromebook, která staví na cloudových aplikacích ve webovém prohlížeči. Notebooky s ChromeOS jsou levné, jednoduché, uchytily se ve školství a některých institucích, ale dá se mluvit o globálním úspěchu? V kontextu jiných produktů od Googlu spíše ne.
+Googlebook míří výš. Uzrál čas pro novou éru počítačů, která bude mít jako prioritu umělou inteligenci. Googlebook je platforma, která spojuje:
+- AI od Googlu
+- nejoblíbenější prohlížeč na světě (Chrome)
+- aplikace z Google Play (Android)
+- a prémiový hardware od výrobců, jako jsou Acer, ASUS, Dell, HP a Lenovo
+Vše zastřeší moderní operační systém. Stěžejní má být spolupráce se smartphony s Androidem. Aplikace mohou běžet přímo na Googlebooku, ale umí spustit také ty z telefonu – bez předchozí instalace, bez kompromisů v zobrazení či ovládání.
+Praktický příklad z tiskové zprávy: Pracujete na laptopu, dostanete hlad, spustíte aplikaci nainstalovanou v telefonu a objednáte si jídlo. Nebo Duolingo vyhodí notifikaci, uvidíte ji i na displeji Googlebooku, prokliknete ji a svoji jazykovou lekci absolvujete tam. To vše s plynulým přechodem mezi oběma zařízeními libovolným směrem, aniž byste ztratili rozepsanou zprávu, nebo napůl vyplněný formulář.
+Glowbar – barevný svítící proužek na vnější straně víka. Jednak podle něj poznáte Googlebook, ale také bude mít funkci – patrně bude indikovat zmeškané události, nebo stav baterie (podobně jako notifikační dioda u smartphonů).
+Googlebook má okamžitý přístup k souborům v telefonu a naopak, půjde je vyhledávat, zobrazovat, upravovat, kopírovat či přesouvat (funkce Quick Access).
+A dál?
+A dál nic. Více nevíme, jde o „sneak peek“, první představení platformy, více informací dostaneme později v průběhu roku.
+Nezvykle tiché jsou také internetové spekulace – v průběhu let se mluvilo o řadě projektů, které se v Googlu týkaly velkého operačního systému, který nahradí/zastřeší/spojí ChromeOS a Android. Ale jak to celé dopadlo, vlastně nevíme. Finální podobu Googlebooku se firmě povedlo utajit až do posledních chvil a k téhle předpremiéře došlo zřejmě proto, že teď se projekt rozprchne k jednotlivým výrobcům počítačů a už bude mimo moc Googlu utajit veškeré informace.
+Jaké jsou ambice projektu? Schopnosti operačního systému? Spustí komplexnější nativní aplikace? Vezme útokem Windows a Mac? Otázky, na které zatím nemáme odpovědi...
+Co víme o softwaru a hardwaru
+Opět: nic moc. Google razí myšlenku, že důležité jsou aplikace a služby. Naopak věci na pozadí (hardware a OS) jsou podružné, takže se o nich zatím nezmiňuje.
+Je pravděpodobné, že základem je architektura arm, čekejme tenké výkonné stroje s dlouhou výdrží. Máme se těšit na různé velikosti a typy konstrukce, všechny však mají spojovat prémiové materiály – má to znamenat vyšší ambice a třeba i vyšší ceny, než tomu je u současných Chromebooků?
+Jasné není ani to, zda budou Googlebooky a Chromebooky existovat vedle sebe, nebo novější platforma nahradí tu starší (osobně bych si vsadil na to druhé). Nevíme ani, zda Google nechá výrobu jen na partnerech, nebo vyrobí i svůj vlajkový Googlebook, podobně jako je tomu s Pixely mezi ostatními smartphony s Androidem.
+Nové AI funkce
+Zásadní informace chybí, zato novým AI funkcím se věnuje třetina tiskové zprávy a máme i videa – jeden delší teaser, za něj jsem přilepil čtyři podrobnější němé ukázky:
+V ukázkách vidíte:
+- Magic Pointer – Google říká, že kursor po desítky let nezměnil svoji podobu, ani funkci, ale to se teď mění. Stačí zatřást kursorem a hned se aktivují AI funkce – například když je kursor nad datem, nabídne se vložení události do kalendáře. Nebo vyberte dva obrázky a Magic Pointer vám nabídne jejich spojení pomocí generativní AI Nano Banana. Třeba když vyfotíte svůj obývák a na druhém obrázku je gauč z eshopu – výsledkem bude nový gauč u vás doma.
+- Create your Widget – funkce, kterou Google zároveň představuje pro Android. Umožňuje vytvořit si vlastní widget tím, že slovy popíšete jeho obsah a funkci. Gemini při tom může sahat na internet, nebo do vašich dat v propojených službách (např. Gmail a Kalendář). Jednoduchý odpočet směřující ke startu vašeho prvního maratonu. Nebo plánujete rodinné setkání v Berlíně? Gemini dokáže uspořádat informace o vašich letech a hotelech, rezervace restaurací a navigaci do jednoho praktického aktivního místa na ploše.
+- Quick Access – výše zmíněná spolupráce laptopu s mobilem, například si sáhnete pro právě vyfocené snímky, jako kdyby byly přímo v laptopu.
+- Cast My Apps – na liště operačního systému je tlačítko s ikonkou telefonu, po kliknutí se zobrazí appky nainstalované v mobilu, kliknutím je spustíte a používáte tak, jak byste to dělali na kapesním dotykovém displeji. Jen tady máte více prostoru a plnohodnotnou klávesnici.

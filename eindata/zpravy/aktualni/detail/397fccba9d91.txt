@@ -1,0 +1,6 @@
+V Česku brzy začne fungovat regulatorní sandbox pro umělou inteligenci. Firmy a organizace díky němu budou moci testovat své technologie v chráněném prostředí, kde jim nebudou hrozit pokuty, postihy a podobně. Podobný sandbox v únoru začal platit také pro fintech.
+Ředitel České agentury pro standardizaci, která bude AI sandbox provozovat, dnes potvrdil, že nástroj bude spuštěn během letošního srpna.
+AI sandbox je součástí zákona o umělé inteligenci, který připravila předchozí vláda. Sandbox poskytne testování AI za přítomnosti regulátora před uvedením na trhu nebo tréninkové kontrolované prostředí na podporu inovací a vývoje pro výrobce.
+Zřizovatelem sandboxu je Úřad pro technickou normalizaci, metrologii a státní zkušebnictví. Provozovatelem bude již zmíněná Česká agentura pro standardizaci.
+Startupy mají mít k sandboxu přístup zdarma, prostředky poskytne ministerstvo průmyslu a obchodu. Tento přístup k sandboxu ale nebude automatický, proběhne výběr.
+Na regulaci AI v Česku dohlíží několik úřadů. Kromě již zmíněných jde například o Český telekomunikační úřad, který pro účely AI staví specializovaný tým, pro něhož hledá ředitele.

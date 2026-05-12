@@ -1,0 +1,8 @@
+Windowsu se v posledních měsících opravdu nedaří. Snad i právě proto přišel Microsoft s projektem Windows K2, jehož cílem je systému vrátit zašlou slávu a výrazně jej zrychlit a zefektivnit.
+Součástí těchto snah je i nová funkce interně označovaná jako „LLP“ (Low Latency Profile). Ta má při běžném používání systému krátkodobě vyhnat procesor na maximální výkon, aby se aplikace otevíraly rychleji a systém reagoval okamžitě.
+Zrychlení až o 70 %
+Nejde o klasické přetaktování procesoru. Funkce má využívat jen krátké „výkonové pulzy“ trvající zhruba 1 až 3 sekundy. Během nich procesor dočasně zvýší takt na maximum. Podobný princip dnes používají technologie jako Intel Turbo Boost nebo AMD Precision Boost, Microsoft však chce, aby systém tento režim aktivoval agresivněji právě při otevírání aplikací a dalších krátkých úlohách.
+Nová funkce profilu s nízkou latencí je už testována v programu Windows Insider, přičemž nárůst výkonu může být extrémní. Systémové aplikace jako Microsoft Edge nebo Outlook se spouštějí až o 40 % rychleji, nabídka Start, Průzkumník souborů a kontextová menu se spouštění až o 70 % rychleji. Rychlejší by mělo být také otevírání aplikací třetích stran.
+Nevýhody? Samozřejmě jsou
+Vedle vyšší svižnosti však mohou přijít i nevýhody v podobě větší spotřeby energie, vyšších teplot nebo hlučnějšího chlazení, hlavně u notebooků. Je však důležité zmínit, že funkce nebyla zatím oficiálně představena a jde pouze o testovací verzi. Není proto jasné, kdy se novinka dostane do běžných verzí Windows 11. Podle zákulisních informací by se mohla objevit v některé z budoucích aktualizací systému.
+zdroj: Windows Central

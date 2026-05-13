@@ -1,0 +1,6 @@
+Článek
+Tento tzv. CubeSat vytvořily brněnské společnosti SpaceComputer a Spacemanic. Jejich společná mise představuje první krok směrem k tomu, že jednou bude možné vytvořit rozsáhlejší skupiny, tedy celé konstelace satelitů, které budou sloužit k podpoře výpočetních a kryptografických aplikací přímo ve vesmíru.
+„Tato mise představuje důležitý krok směrem k budoucnosti, ve které bude veřejná vesmírná infrastruktura disponovat robustním zabezpečením. Silný základ je klíčový pro to, aby se obrovské množství pozemních výpočetních kapacit přesunulo na oběžnou dráhu Země,“ uvedl Daniel Bar ze společnosti SpaceComputer.
+V podstatě jde o budování velice specifického internetu i s výpočetní sítí pro vesmír.
+Společnost SpaceComputer vyvinula pro družici výpočetní infrastrukturu Space Fabric, která kombinuje několik softwarových i hardwarových metod šifrování dat. Díky tomu, že všechny kryptografické klíče generuje uvnitř zabezpečených prvků až po vypuštění na oběžnou dráhu, nezůstávají na Zemi žádná citlivá data.
+Spacemanic má zase zkušenosti s vývojem minisatelitů.

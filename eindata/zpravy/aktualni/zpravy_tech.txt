@@ -1,4 +1,192 @@
-|T|Nvidia dává ke grafickým kartám zadarmo Jamese Bonda. A tentokrát i k levnějším modelům|D|13.05.2026 15:59|P|Ceny hardwaru a hlavně pamětí nejsou poslední dobou nakloněné stavbě herního počítače, ale aspoň se teď zase jednou dá ke grafické kartě dostat jako b...|X|Vypadá to, že vysoké ceny pamětí mají aspoň jedno malé pozitivum. Značně kvůli nim klesají prodeje PC komponent a výrobce grafických karet, respektive GPU – v tomto případě Nvidii – to tlačí k tomu, že ke kartám zase častěji přidávají hru zadarmo (nebo možná lépe-řečeno v ceně), aby přilákaly kupující. Už včera sice skončila akce, kdy kupující ke grafikám GeForce dostali hru Pragmata, ale dnes byla nahrazena novým bundlem.
+|T|Building a safe, effective sandbox to enable Codex on Windows|D|15.05.2026 00:00|P|Learn how OpenAI built a secure sandbox for Codex on Windows, enabling safe, efficient coding agents with controlled file access and network restricti...|X|Building a safe, effective sandbox to enable Codex on Windows
+By David Wiesen, Member of Technical Staff
+When I joined the Codex engineering team in September 2025, Codex for Windows didn’t have a sandbox implementation meaning that Windows users were forced to choose between two subpar options when using OpenAI's coding agents:
+- Approving nearly every command (even reads) that a coding agent wanted to run, which is inefficient and pesky. A major benefit of using Codex is that you don’t have to do all the tedious work yourself.
+- Enabling Full Access mode: letting Codex run all commands without approval or restrictions, which removes friction at the expense of oversight.
+Codex, our coding agent, runs on developer laptops—whether that's through the CLI, the IDE extension, or the desktop app. It manages a conversation between a human at a keyboard and a model running in the cloud to handle inference.
+Codex runs with the permissions of a real user by default, meaning it can do everything the user can do. This is powerful and potentially dangerous. The coding model may tell the harness to run commands locally, from running tests to reading or editing a file to creating a Git branch, so Codex's default mode attempts to find the right balance between effectiveness and safety. This default mode allows Codex to read files almost anywhere and write files within your workspace (i.e., the directory where you're running Codex), with no internet access unless you specify you want it. To achieve this automatic constraint of writing files and accessing the network within safe bounds, Codex needs a sandbox environment that actually enforces these constraints.
+A sandbox is a constrained execution environment. When a developer uses Codex, their computer's operating system launches a command with reduced permissions, and those constraints propagate down the process tree. Every Codex command is sandboxed from the start, and every descendant process stays inside the same boundary.
+Codex needs isolation features enforced by the computer's operating system to implement an effective sandbox. Some operating systems provide utilities that do this well (e.g., Seatbelt on MacOs, seccomp or bubblewrap on Linux); however, Windows doesn't currently provide this type of capability out of the box.
+To make Codex just as safe and delightful to use on Windows as it already is everywhere else, we needed to implement our own sandbox.
+Windows offers some tools and primitives for isolation. While none of them quite met our requirements, we looked at a number of potential solutions—namely, AppContainer, Windows Sandbox, and Mandatory Integrity Control labeling.
+AppContainer
+- What: AppContainer is the native Windows sandbox, a capability-based isolation model built for apps that know, up front, exactly what they need to access.
+- Why: Appealing because it offers a real OS boundary instead of best-effort restrictions.
+- Why not: Codex is not one tightly scoped app. It drives open-ended developer workflows: shells, Git, Python, package managers, build tools, and whatever other binaries the agent decides it needs. In practice, that made AppContainer the wrong shape for the problem. It was strong isolation, but for a much narrower class of workloads than “let an agent operate like a developer.”
+Windows Sandbox
+- What: Windows Sandbox is Microsoft’s disposable lightweight VM. You get a fresh Windows desktop with a strong isolation boundary, and whatever you do inside it disappears when the session ends.
+- Why: Interesting for obvious reasons—far more compatible with arbitrary software than AppContainer, and from a security perspective it's a much stronger box.
+- Why not: Codex needs to act directly on the user’s actual checkout, tools, and environment, not inside a separate throwaway desktop that would need setup and host/guest bridging. It also had a fundamental product problem: Windows Sandbox isn't even available on Windows Home SKUs.
+Mandatory Integrity Control (MIC) integrity labeling
+- What: Windows has a concept called “integrity levels,” such as low, medium, and high, that determine how much the system trusts objects and processes. The basic rule is that a lower-integrity process cannot write to an object with a higher integrity level, even if the normal ACL would otherwise allow it. For example, a low-integrity process is treated as less trusted, so Windows blocks it from writing to normal medium-integrity objects, unless those objects are explicitly relabeled to allow it.
+- Why: MIC looked elegant on paper—run Codex at low integrity, relabel the writable roots as low integrity, and let Windows enforce no-writes everywhere else. That would've given us a non-admin path with a real OS mechanism behind it.
+- Why not: Like ACLs, integrity labels modify the real host filesystem, and in this case the semantic change is especially broad. Marking a workspace as low integrity does not just mean “Codex can write here.” It means low-integrity processes in general can write there. On a real developer machine, that turns the user’s actual checkout into a low-integrity sink for the host, which is much riskier than granting carefully targeted ACLs to one sandbox design. Even if medium-integrity developer tools continue to work, the underlying trust model of the workspace has changed in a way that's hard to contain and harder to justify.
+Having evaluated all of the options as non-starters, we started designing our own solution to bring a good Codex experience to Windows users.
+Our first working prototype used a combination of Windows concepts and tools to implement the isolation we needed. From the beginning, one goal was to make this work without requiring elevation, meaning that Codex would not need to prompt the user for administrator privileges just to set up or run the sandbox. That meant figuring out how to put reasonable limits on two things: file writes and network access.
+If we didn't limit file writes at all, we'd have a safety issue. If we limited file writes too much, the sandbox would hurt user productivity, needing to ask for constant approval. To solve this problem, we relied on two important Windows building blocks: SIDs and write-restricted tokens.
+A SID, or security identifier, is the identity Windows ties to permissions. Each user has a SID, groups have SIDs, and even a single login session gets its own SID. For example, a current logged-in session might have a SID like S-1-5-5-X-Y
+. The SID assigned to the local administrators group might be S-1-5-32-544
+.
+Windows also lets you create synthetic SIDs that don't correspond to a real user but can still appear in ACLs (access control lists), which define who can read/write/execute specific files or directories. That makes SIDs a useful primitive for our sandbox: we can create SIDs exclusively for the Codex sandbox to use, without interfering with anything else on the machine.
+Process tokens are security objects in Windows that define identity and privileges for a running process. They determine what actions a process can perform. A write-restricted token is a particular type of process token that makes Windows perform an additional access check on write operations.
+In order for a write to succeed, two checks must pass:
+- The normal user identity (the token “owner”) must be allowed to do it
+- At least one SID in the token’s restricted SID list must also be granted access
+In practice, these checks let us use ACLs to define exactly where the sandbox could modify the filesystem, which offered the granularity we needed around write operations.
+With SIDs and write-restricted tokens, our unelevated sandbox worked like this:
+- The sandbox setup created a synthetic SID called
+sandbox-write
+. - The
+sandbox-write
+SID was granted write, execute, and delete access to- The current working directory
+- Any additional
+writable_roots
+configured inconfig.toml
+.
+- The sandbox setup explicitly denied that same SID write access to “read-only within writable” locations such as:
+<cwd>/.git
+<cwd>/.codex
+<cwd>/.agents
+- Codex launched commands under a write-restricted token whose restricted SID list includes
+Everyone
+, the current logged in session SID, and thesandbox-write
+synthetic SID.
+This flow effectively solved limiting file writes and seemed promising. Now we needed a solution for limiting the sandbox's network access.
+Limiting network access is an important part of the sandbox; without it, malicious code could exfiltrate data from the machine up to the internet. Because we wanted to avoid an elevation requirement, we had limited options to strongly block network traffic. The tools we wanted to use, like Windows Firewall, generally could not be installed without admin permissions.
+Without Windows Firewall as an option, we limited what we could control. We tried to make the child environment fail-closed for the kinds of networked tools developers actually use, so that Git commands, package installers, etc., would fail in the sandbox and the user would have to approve any internet-facing operations. The idea was to poison the obvious escape hatches: send proxy-aware traffic to a dead endpoint, make Git’s HTTP(S) transport do the same, and make Git over SSH fail immediately. On top of that, we prepended a small denybin
+directory to PATH and reordered PATHEXT
+so stub SSH and SCP scripts would resolve before the real binaries.
+For example, here are some of the specific environment overrides we used to limit network access:
+HTTPS_PROXY=http://127.0.0.1:9
+ALL_PROXY=http://127.0.0.1:9
+GIT_HTTPS_PROXY=http://127.0.0.1:9
+NO_PROXY=localhost,127.0.0.1,::1
+GIT_SSH_COMMAND=cmd /c exit 1
+That caught a lot of normal tool-driven traffic, but it was still only advisory. A process could ignore the environment, bypass PATH, or just open sockets directly—too risky.
+As with any interesting software implementation, the first prototype had some pros and cons. While it got the job done with only a few standard Windows capabilities, allow...
+(Pokracovani na webu)|E||T|Vybrali jsme nejlepší chytré hodinky, které si v květnu 2026 můžete koupit|D|13.05.2026 18:45|P|Každý měsíc vybíráme nejlepší chytré hodinky v několika kategoriích • Dělíme je podle zaměření, ale i podle propojení s mobilními systémy • Nezapomněl...|X|Ukázat všechny listy najednou
+Apple Watch Ultra 3
+Nejlepší sportovní hodinky pro iPhone
+První verze modelu Ultra byla unikát, druhá měla na čem stavět a třetí přináší další vylepšení. Apple Watch Ultra 3 mají zatím největší displej, který kdy Apple v hodinkách použil. LTPO3 OLED displej slibuje lepší kvalitu zobrazení při bočních pohledech, má rozlišení 422 × 514 pixelů a vysoký maximální jas. Jeho obnovovací frekvence klesá až na 1 Hz.
+V českých obchodech stojí až Kč
+Porovnat ceny
+Hodinky nově podporují sítě 5G (byť ne v Česku) a také satelitní konektivitu. V rámci systému se objevuje watchOS 26 s rozhraním Liquid Glass. Do hodinek se dostávají nová gesta, spánkové skóre nebo detekce vysokého krevního tlaku. Na jedno nabití vydrží až 42 hodin, tedy o šest hodin déle než druhá generace. Celkově se jedná o nejlepší hodinky od Applu určené do terénu. Pořídíte je s titanovými, nylonovými nebo silikonovými řemínky.
+Pokud jsou pro vás některé funkce zbytečná a pořizovací cena zbytečně vysoká, podívejte se po základních hodinkách Apple Watch Series 11 .
+Základní parametry
+displej: LTPO OLED, 1,98" a rozlišení 514 × 422 pix, jas až 3 000 nitů
+výdrž baterie: téměř dva dny
+GPS: ano
+možnost instalovat aplikace: ano
+platby: ano, Apple Pay
+hudba: ano
+odolnost: vůči vodě do 100 m (WR100), MIL-STD810H, IP6X, potápění (EN13319)
+Pokračování 2 / 26 Samsung Galaxy Watch Ultra
+Nejlepší sportovní hodinky pro Samsungy
+Hodinky Samsung Galaxy Watch Ultra se rázem zapsaly mezi nejlepší modely se systémem Wear OS. Jsou vyrobeny z titanu a určené do extrémních teplot, podporují zvýšenou odolnost 10 ATM, IP68 a americký armádní standard MIL-STD810H. Dokážou fungovat i ve velké nadmořské výšce a problém jim nedělá ani slaná voda. Zobrazování zajišťuje 1,5" AMOLED displej s vysokou svítivostí až 3000 nitů, odolnost sklíčka zajišťuje safírové sklo. Hodinky na jedno nabití vydrží až dva a půl dne.
+V českých obchodech stojí až Kč
+Porovnat ceny
+nozí jim nedají odpustit barevnou kombinaci připomínající Apple Watch Ultra, nebo snahu o připodobnění k těmto hodinkám, i za cenu použitého kruhového displeje. V rámci nových metrik do hodinek přibylo skóre energie, Index AGEs s informacemi o metabolickém zdraví nebo multisportovní cvičení. Dřívější metriky hodinek od Samsungu i nadále zůstávají.
+Hodinky spojíte i s jinými Androidy. Pro některé funkce (EKG a krevní tlak) však potřebují aplikaci Samsung Health Monitor, kterou si stáhnete jen v Galaxy Storu do telefonů Samsung. Jen telefony této značky mají tak u hodinek dostupné všechny funkce. Pokud vám nestačí 32GB paměť hodinek, můžete je pořídit v 64GB kapacitě. Hledejte hodinky podle označení Galaxy Watch Ultra (2025) , ale musíte zvážit, zda jen kvůli dvojnásobné kapacitě úložiště a nové modré barvě zaplatíte několik tisíc navíc
+Základní parametry
+displej: dotykový 1,5" AMOLED, rozlišení 480 × 480 pixelů
+výdrž baterie: až 2 a půl dne
+GPS: ano
+možnost instalovat aplikace: ano
+platby: ano
+hudba: ano
+odolnost: vodotěsnost do 100 metrů (10 ATM), IP68, MIL-STD810H
+Pokračování 3 / 26 Samsung Galaxy Watch8 Classic
+Pro Samsungy a s nestárnoucí otočnou lunetou
+Pokud už jste někdy používali hodinky od Samsungu s otočnou lunetou, asi mi dáte za pravdu, že je to věc hodně návyková. Nemusíte rolovat v nabídkách prstem, otáčet malou boční korunkou nebo přejíždět po okraji displeje, ale vše si pohodlně nastavíte pomocí luneta, která při posunu decentně vibruje. Po dvou letech se vrací do Samsugnů a to do hodinek, které se snaží o klasické pojetí. Galaxy Watch8 Classic sice mají zaoblené čtvercové tělo s kulatým displejem, ale to doplňují kožené pásky (tentokrát s nestandardním uchycením), které dotváří „klasický“ styl.
+V českých obchodech stojí až Kč
+Porovnat ceny
+Watch8 Classic mají stále 3nm procesor, ale novější senzor pro měření, větší jas displeje nebo třeba nové akční tlačítko, které převzaly z modelu Ultra. Celkově jsou pak tenčí, vydrží o něco déle na baterii a díky novým řemínkům sedí lépe i na tenčím zápěstí. Nová generace hodinek oproti stávajícím funkcím monitoruje v noci cévní zátěž (také vám řekne, kdy máte jít spát) a přidává na zápěstí i běžeckého trenéra, který vyhodnotí váš testovací běh a zařadí vás do některé z deseti kategorií. Bonusem je pak měření antioxidačního indexu – to si ale hodinky musíte sundat ze zápěstí.
+Pokud chcete minimalistické a kompaktnější hodinky, nabízí se základní varianta Galaxy Watch8 ve 40mm a 44mm těle, Galaxy Watch8 Classic se prodávají jen ve 46mm variantě
+Základní parametry
+displej: dotykový 1,34" AMOLED, rozlišení 438 × 438 pixelů
+výdrž baterie: 1 až 1,5 dne
+GPS: ano
+možnost instalovat aplikace: ano
+platby: ano
+hudba: ano
+odolnost: 5 ATM, MIL-STD810H
+Pokračování 4 / 26 OnePlus Watch 3
+Nejlepší hodinky s vysokou výdrží a rychlým nabíjením
+Když chcete hodinky se systémem Wear OS a máte v kapse Android, musíte často překousnout jejich mizerou výdrž. Jeden nebo dva dny není při pohledu na Garminy a hodinky s polouzavřeným systémem nic světoborného. OnePlus však u hodinek používá dva procesory, kterými se dokáže dostat na daleko lepší výdrž. A nejnovějšími hodinkami na této duální architektuře jsou OnePlus Watch3 vyrobené z titanu a nerezové oceli.
+V českých obchodech stojí až Kč
+Porovnat ceny
+Zobrazování zajišťuje 1,5" AMOLED displej krytý safírem s jasem až 2 200 nitů, hodinky jsou navíc osazeny 631mAh baterií. Díky hlavnímu a úsporném procesoru dokáže běžet na jedno nabití při běžném používání tři až pět dní, což je až trojnásobek oproti jiným hodinkám s Wear OS. S aktivním Always On se ale výdrž zkracuje. K ovládání slouží otočná korunka, boční tlačítka a dotykový displej.
+Hodinky změří tep, okysličení krve, analyzují pohyb, změří teplotu, natočí EKG a detekují spánek. Navíc je samozřejmě monitoring více než 100 sportovních aktivit, přičemž některé z nich dokáží hodinky snadno rozpoznat. U vybraných aktivit pak sledují tempo či zóny srdečního tepu. Ve výbavě nechybí ani GPS, přehrávání hudby (uložené ve 32GB paměti) nebo bezkontaktní placení.
+Základní verze hodinek má rozměry 46 mm, OnePlus ještě uvedl do prodeje menší verzi hodinek OnePlus 3 43mm . Ta má nepatrně nižší cenovku a také kompletně přepracovaný design. Záležet tak bude na tloušťce vašeho zápěstí nebo na uživatelských preferencích.
+Základní parametry
+displej: dotykový 1,5" AMOLED, rozlišení 466 × 466 pixelů
+výdrž baterie: 3 až 5 dní
+GPS: ano
+možnost instalovat aplikace: ano
+platby: ano
+hudba: ano
+odolnost: 5 ATM, MIL-STD810H, IP68
+Pokračování 5 / 26 Garmin Venu X1
+Když chcete Apple Watch i Garminy najednou.
+Když se podíváte na hodinky Garmin Venu X1 , okamžitě vás napadne spojitost s hodinkami od Applu. Ve své podstatě se dá říci, že Garmin konečně reagoval na konkurenci a dostal na trh konkurenci k Apple Watch Ultra, která je však tenčí a zaměřená více na sportovní stránku věci. Apple Watch jsou tlustší a do popředí dávají stránku chytrých hodinek. U Venu X1 však můžete ochutnat to nejlepší z obou světů, aniž byste museli dělat nějaké extrémní ústupky. A to s textilním řemínkem.
+V českých obchodech stojí až Kč
+Porovnat ceny
+Zatímco Fénixy jsou spíše pro fajnšmekry, Venu X1 mají ambice na mainstreamové hodinky s velkým displejem, hranatým tělem, bezkontaktním placením, voláním ze zápěstí a plejádou funkcí, které u Garminu velmi dobře znáte. Navrch dostanete vysokou výdrž na jedno nabití a hodinky, které z aktuálního portfolia Garminu vyčnívají snad ve všech ohledech. Ano, stojí 20 tisíc, ale to Apple Watch Ultra také, mají tenké tělo a třeba i vestavěnou svítilnu nebo předinstalované offline mapy. Je možná jen škoda, že Garmin nezvolil atraktivnější název, Venu X1 je spíše ukázkou toho, že Garminu chyběla jakákoliv zajímavá inspirace.
+Základní parametry
+displej: dotykový 2" AMOLED, rozlišení 448× 486 pixelů
+výdrž baterie: až 8 dní
+GPS: ano
+možnost instalovat aplikace: ano
+platby: ano
+hudba: ano
+odolnost: 5 ATM
+Pokračování 6 / 26 Xiaomi Watch 5
+Wear OS hodinky s nejdelší výdrží
+Xiaomi Watch 5 převzaly štafetu hodinek s největší výdrží od OnePlus. Nové hodinky kombinují dvojici procesorů (Snapdragon W5 Gen 1 a nízkoenergetický koprocesor BES2800) a navíc jsou osazeny obří křemíkovou baterií (s 10% podílem křemíku). Na poměry chytrých hodinek je kapacita 930 mAh výrazným nadstandardem. Díky ní vydrží hodinky v chytrém režimu až 6 dní na jedno nabití – a to mluvíme o hodinkách s operačním systémem Wear OS, nikoli o nějaké uzavřené alternativě.
+V českých obchodech stojí až Kč
+Porovnat ceny
+Rám hodinek je vyroben z nerezové oceli, přičemž vnitřní stranu i displej kryje safírové sklo. O zobrazení se stará 1,54" OLED displej. V hardwarové výbavě nechybí podpora dvoupásmových polohových služeb (využitelná ve spojení s offline mapami) ani čip NFC umožňující bezkontaktní platby (Mi Pay). Hodinky slibují komplexní sledování zdraví a sportovních aktivit, rychlou kontrolu zdravotních ukazatelů jedním klepnutím a pokročilé analýzy tréninku.
+Součástí hodinek je hlasový asistent Gemini. Pohyby ruky a zápěstí slouží jako rychlá gesta – například dvojité poklepání, sevření prstů, lusknutí, zatřesení nebo otočení zápěstí – pomocí nichž lze přijmout hovor, ztlumit budík nebo na dálku pořídit fotografii.
+Základní parametry
+displej: dotykový 1,5" AMOLED, rozlišení 480× 480 pixelů
+výdrž baterie: až 6 dní
+GPS: ano
+možnost instalovat aplikace: ano
+platby: ano
+hudba: ano
+odolnost: 5 ATM
+Pokračování 7 / 26 Redmi Watch 6
+Levné hodinky s NFC za příplatek
+Značka Redmi nabízí v Česku cenově dostupné hodinky Redmi Watch 6 , u nichž si můžete připlatit za NFC. Pokud bezkontaktní platby přes Mi Pay nevyužijete, ušetříte několik set korun. Základ je u obou modelů shodný. Získáte hliníkové unibody s nerezovou korunkou a čtvercovým 2,07" AMOLED displejem chráněným sklem Panda Glass. Hodinky s voděodolností 5 ATM podporují dvoupásmové GPS a nabízejí více než 150 sportovních režimů.
+V českých obchodech stojí až Kč
+Porovnat ceny
+Hodinky změří okysličení krve, kvalitu spánku, srdeční tep a menstruační cyklus. Zároveň poslouží jako prodlouže...
+(Pokracovani na webu)|E||T|Novinářskou křepelku převzal Matěj Skalický za podcast Vinohradská 12|D|13.05.2026 17:46|P|Prestižní ocenění Novinářská křepelka za rok 2025 získal redaktor a moderátor Českého rozhlasu Matěj Skalický. Cenu, která vyzdvihuje perspektivní žur...|X|Prestižní ocenění Novinářská křepelka za rok 2025 získal redaktor a moderátor Českého rozhlasu Matěj Skalický. Cenu, která vyzdvihuje perspektivní žurnalisty do třiatřiceti let, převzal 13. května během slavnostního vyhlášení Novinářských cen v Praze. Uznání si vysloužil za svou práci na zpravodajském podcastu Vinohradská 12, který od března 2022 vede a moderuje.
+Sám laureát považuje ocenění primárně za výsledek kolektivního úsilí celé redakce. „Ceny si moc vážím a chtěl bych za ni ze srdce poděkovat. Vnímám to jako velké ocenění usilovné a vytrvalé práce celého týmu Vinohradské 12. Současně mám velkou radost, že tato cena míří právě do Českého rozhlasu, který mi otevřel cestu k novým formám audiožurnalistiky a je už 15 let mým druhým domovem,“ uvedl Matěj Skalický.
+Podle ředitele zpravodajství Ondřeje Suchana odvádí Skalický dlouhodobě mimořádný kus práce v rolích reportéra, editora i moderátora. „Právě tento podcast se stal jedním z nejposlouchanějších audiopořadů v českém éteru a ukazuje, jak silná může být veřejnoprávní žurnalistika, když je srozumitelná a poctivě připravená. V době, kdy jsou média veřejné služby pod výrazným tlakem, je takové ocenění důležité nejen pro Matěje, ale pro celý Český rozhlas,“ řekl Suchan.
+Matěj Skalický působí ve veřejnoprávním rozhlase od roku 2011, kdy začínal jako reportér domácích i zahraničních událostí a později se věnoval také vědecké žurnalistice. Přípravu zpravodajského podcastu Vinohradská 12, který každý všední den vysvětluje jedno aktuální téma v souvislostech, převzal po jeho zakladatelce Lence Kabrhelové. Audiožurnalistice a českému podcastovému trhu se věnuje rovněž akademicky ve své doktorské práci.
+Za posledních deset let putuje Novinářská křepelka do Českého rozhlasu už potřetí. V roce 2022 uspěl datový novinář Jan Cibulka a v roce 2017 novinářka Kristýna Guryčová. Samotná cena náleží novinářům za výrazný žurnalistický počin, dlouhodobou práci, průbojnost, důslednost nebo inovativní přístup k oboru. Ocenění aktuálně společně předávají Nadace Český literární fond a Nadace OSF. Na rozdíl od většiny kategorií Novinářské ceny nejde o veřejně vyhlašovanou soutěž, laureáty přímo vybírá Rada Novinářské ceny a odborná porota Nadace Český literární fond.|E||T|Srovnali jsme Mapy.com s šesti dalšími službami od Googlu, Applu, OSM... Která mapa je nejhezčí?|D|13.05.2026 16:45|P|Která klasická webová mapa se vám líbí nejvíce? • Srovnali jsme sedm velkých služeb v několika situacích. • Jak si vedou Apple, Google, Microsoft, Her...|X|Ukázat všechny listy najednou
+Google loni dramaticky přebarvil své mapy a s drobnými změnami přišly i další oblíbené portály. A tak jsme pro vás připravili další velký mapový souboj. Jak si povedou ve čtrnácti zkouškách počínaje zobrazením Evropy a Makarské a konče hledáním trasy z Kozojed do Kaprouna?
+Co uživatel, to jiný vkus a názor, jak dnes mají vypadat digitální mapy, a tak zhodnocení necháme na vás v anketě, kterou najdete na konci článku . My jen připravíme naprosto identické situace vždy v základní mapě, kterou služba nabízí, aby bylo srovnání co nejférovější.
+Do souboje povoláme tyto mapové portály v desktopovém webovém rozhraní a neutrálním pořadí podle abecedy:
+15 standardních situací
+Náš test se skládá z patnácti standardních situací, které používáme i v dalších podobných srovnávacích článcích. Odkazy na všechny pohledy najdete v tomto seznamu na GitHubu .
+Oproti dřívějším srovnáním jsme přidali navíc i české turistické Locus Map, které vycházejí z OpenStreetMap, ale vykreslují je podobným stylem jako Mapy.com.
+Takže dost řečí, jdeme na to. Prohlédněte si příklady níže, které jen stručně popíšeme, abychom vás nijak neovlivňovali. V závěru označte v anketě tu mapu, které se vám v těchto pohledech zamlouvala nejvíce.
+Kontinentální mapa: Evropa
+Začněme u nejmenšího měřítka a podívejme se, jak na naší šestici vypadá celý kontinent – ten náš, tedy Evropa. U všech služeb až na Apple Mapy, které podle pohybu na mapě neupravuje její URL, se jedná o zoom/přiblížení s hodnotou 5.
+Zoom: 5×
+Apple Mapy
+Bing Mapy
+Mapy Google
+Here WeGo
+Locus Map
+Mapy.com
+OpenStreetMap
+Tento článek je součástí balíčku PREMIUM+
+Odemkněte si exkluzivní obsah a videa bez reklam na devíti webech.
+Chci Premium a Živě.cz bez reklam
+Od 58 Kč měsíčně|E||T|Nvidia dává ke grafickým kartám zadarmo Jamese Bonda. A tentokrát i k levnějším modelům|D|13.05.2026 15:59|P|Ceny hardwaru a hlavně pamětí nejsou poslední dobou nakloněné stavbě herního počítače, ale aspoň se teď zase jednou dá ke grafické kartě dostat jako b...|X|Vypadá to, že vysoké ceny pamětí mají aspoň jedno malé pozitivum. Značně kvůli nim klesají prodeje PC komponent a výrobce grafických karet, respektive GPU – v tomto případě Nvidii – to tlačí k tomu, že ke kartám zase častěji přidávají hru zadarmo (nebo možná lépe-řečeno v ceně), aby přilákaly kupující. Už včera sice skončila akce, kdy kupující ke grafikám GeForce dostali hru Pragmata, ale dnes byla nahrazena novým bundlem.
 007 First Light k vybraným modelům GeForce RTX 5000
 Ode dneška (13. 5.) spustila Nvidia akci, kdy k nově koupené grafické kartě GeForce dostanete hru 007 First Light, což je, jak název napovídá, hra, kde se převtělíte do filmového agenta Jamese Bonda, a to v jeho mladém vydání. Mělo by jít o určitý „prequel“ či příběh jeho začátků.
 Hru dostanete jenom k vybraným modelům nové generace s architekturou Blackwell, ovšem zastoupené karty tentokrát jdou o něco níž do levnějšího cenového pásma. Bundle se týká GeForce RTX 5090, RTX 5080, RTX 5070 Ti a RTX 5070, ale nově také GeForce RTX 5060 Ti, ke které v předchozích akcích hra zadarmo nebyla. Nárok by měly mít i celé počítače s těmito kartami, ale také notebooky – u těch se akce týká modelů s GeForce RTX 5090, RTX 5080, RTX 5070 Ti, RTX 5070 a GeForce RTX 5060.
@@ -42,17 +230,14 @@ Aktuální krok je součástí širší snahy zpřehlednit nabídku značky Film
 FilmBox+ One má být základním kanálem pro oddechové filmy, klasické tituly, lokálně relevantní obsah a tematické filmové cykly. Tiskové podklady jako příklad uvádí český snímek Vyšehrad: Fylm, klasiku Hříšný tanec nebo rodinný titul Flintstoneovi.
 Stanice FilmBox+ Love & Crime má kombinovat romantické filmy, kriminální seriály, thrillery a příběhy se silnými ženskými postavami. FilmBox+ Hits nabídne populární filmy napříč žánry, nové snímky, premiéry z katalogu SPI International a známé herecké tváře. Filmbox+ Emotion bude stavět na dramatech, životopisných filmech, výrazných postavách a silných osobních příbězích. Akční žánr soustředí FilmBox+ Action, zatímco FilmBox+ Comedy se zaměří na komediální seriály, romantické komedie a rodinné komedie. FilmBox+ Festival má být určený pro nezávislou, autorskou, festivalovou a retro filmovou tvorbu.
 „FilmBox je jedním z klíčových pilířů našeho mezinárodního portfolia a má silné a stále rostoucí zastoupení ve střední a východní Evropě i na Balkáně. Tento rebranding je záměrným krokem do další fáze jeho rozvoje, kde se nově nastavená obsahová strategie vycházející z potřeb diváků a nová hodnotová nabídka propojují s moderním pojetím značky,“ uvedla Patrycja Gałązka Struzik, která řídí marketing v mateřské společnosti SPI International.|E||T|Analýza a pitva falešné 65W GaN USB-C rychlonabíječky z Aliexpressu. Šmejdům z tržišť se vyhněte širokým obloukem|D|13.05.2026 14:08|P|Před pár týdny jsme provedli zátěžový test a pitvu jedné z nejprodávanějších USB-C nabíječek na českém trhu. AlzaPower G610CCA Fast Charge 67W nedopad...|X|Před pár týdny jsme provedli zátěžový test a pitvu jedné z nejprodávanějších USB-C nabíječek na českém trhu. AlzaPower G610CCA Fast Charge 67W nedopadla vůbec špatně, při své kapesní velikosti si totiž bez problému poradí i s menším notebookem a má solidní konstrukci, která vám při zkratu nevypálí byt.
-Jen blázen by ale utrácel pětistovku za kus plastu, když asijští trhovci nabízejí na Aliexpressu a Temu kousky, které to samé slibují za 85 korun. Takhle velké weby by přece nenabízely nějaký šmejd, že?
-Rychlonabíječka z Číny, která lže úplně ve všem
-Nebudu vás napínat, pro jistotu připomínám, že mám rád sarkasmus a dílem asi i sebepoškozování, a tak tentokrát v košíku skončila ta největší zrůdnost, na kterou jsem narazil.
-Dnes si změříme model TRG-160, který slibuje výkon 65 W a prodejce jej k 13. květnu nabízí za 84,6 korun.
-Nabíječka nabízí jeden velký konektor USB-A a dva USB-C. Přinejmenším jeden slibuje rychlonabíjení PD (USB Power Delivery), ale je to čirá lež
-Malá kapesní nabíječka nabízí jeden velký port USB-A a dvojici malých USB-C s pochybnými popisky. Píše se na nich cosi o 33W PD, ale to je jistě jen omyl potiskové linky. Na plášti se totiž skví velký nápis 65W GaN.
-Také tento štítek s několika napěťovými profily je čistá lež. Při pitvě na druhém listu si ukážeme, že v nitru chybí čip pro rychlé nabíjení
-Každé malé dítě ví, že rychlonabíječky s polovodičovými prvky z nitridu gallia unesou mnohem větší zátěž, a tak v malém provedení utáhnou nejen váš mobil, ale zpravidla i laptop. Vše umocňuje technický štítek na opačné straně, který slibuje napěťové profily USB Power Delivery (nebo alespoň Quick Charge) 9V/7,2A, 12V/5,4A a 20V/3,25A.
+Jen blázen by ale utrácel pětistovku za kus plastu, když asijští trhovci nabízejí na Aliexpressu a Temu kousky, které to samé slibují za 85 korun . Takhle velké weby by přece nenabízely nějaký šmejd, že?
+Rychlonabíječka z Číny, která lže úplně ve všem Nebudu vás napínat, pro jistotu připomínám, že mám rád sarkasmus a dílem asi i sebepoškozování, a tak tentokrát v košíku skončila ta největší zrůdnost, na kterou jsem narazil.
+Dnes si změříme model TRG-160 , který slibuje výkon 65 W a prodejce jej k 13. květnu nabízí za 84,6 korun .
+Nabíječka nabízí jeden velký konektor USB-A a dva USB-C. Přinejmenším jeden slibuje rychlonabíjení PD (USB Power Delivery), ale je to čirá ležMalá kapesní nabíječka nabízí jeden velký port USB-A a dvojici malých USB-C s pochybnými popisky. Píše se na nich cosi o 33W PD , ale to je jistě jen omyl potiskové linky. Na plášti se totiž skví velký nápis 65W GaN .
+Také tento štítek s několika napěťovými profily je čistá lež. Při pitvě na druhém listu si ukážeme, že v nitru chybí čip pro rychlé nabíjeníKaždé malé dítě ví, že rychlonabíječky s polovodičovými prvky z nitridu gallia unesou mnohem větší zátěž, a tak v malém provedení utáhnou nejen váš mobil, ale zpravidla i laptop. Vše umocňuje technický štítek na opačné straně, který slibuje napěťové profily USB Power Delivery (nebo alespoň Quick Charge) 9V/7,2A , 12V/5,4A a 20V/3,25A .
 Co jsme zjistili při měření
-Jedná se o běžnou 10W 5V nabíječku s horní hranicí na 2 A při zátěži jen jednoho konektoru. Nabíječka nepodporuje rychlonabíjení a její řídící čipy nejsou typu GaN.
-V třicetiminutovém testu stabilně dodávala zhruba 9,5 W (5V/1,9A), i v této zátěži se ale docela zahřívala. Elektronika používá integrovaný čip pro základní ochranu před zkratem, přepětím a přehřátím, i tak ale uděláte nejlépe, když se podobným laciným šmejdům už z principu vyhnete širokým obloukem.
+Jedná se o běžnou 10W 5V nabíječku s horní hranicí na 2 A při zátěži jen jednoho konektoru. Nabíječka nepodporuje rychlonabíjení a její řídící čipy nejsou typu GaN .
+V třicetiminutovém testu stabilně dodávala zhruba 9,5 W (5V/1,9A), i v této zátěži se ale docela zahřívala. Elektronika používá integrovaný čip pro základní ochranu před zkratem, přepětím a přehřátím , i tak ale uděláte nejlépe, když se podobným laciným šmejdům už z principu vyhnete širokým obloukem.
 V pokračování pro předplatitele také najdete
 V čem všem údajná rychlonabíječka lže
 Jak dopadla v zátěžových testech
@@ -822,14 +1007,7 @@ Evropa se podle ní může poučit z příkladu Austrálie, která koncem loňsk
 Jenže i data australské vlády mluví o tom, že po prvních měsících vymáhání zákazu si většina dětí účty na sociálních sítích ponechala. Podle průzkumu státní komise pro online bezpečnost dětí rodiče potvrdili, že 7 z 10 dětí ve věku od 8 do 15 let má na sociálních sítích účty i po zákazu. Australské úřady z toho viní hlavně samotné sociální sítě, které podle nich nedělají dost, aby dětem v přístupu zabránily.
 Nedávný materiál think tanku Evropského parlamentu konstatoval, že jednou z příčin obcházení věkové hranice může být i používání VPN. „Někteří argumentují, že jde o mezeru v zákoně a že je potřeba ji zalepit a rozšířit povinnost ověřování věku i na VPN služby,“ říká zpráva.
 Dopady používání sociálních sítí na dětské zdraví nebo psychickou pohodu zatím nejsou vědecky zcela prozkoumané. Výzkumy českých odborníků z Masarykovy univerzity v Brně ale naznačují, že samotné časté používání sociálních sítí nutně nepřináší nic zlého, podstatné je, jaký obsah tam děti sledují.
-„Pokud dítě tráví i více hodin denně na sociálních sítích takzvaně smysluplně, nemusí to mít nutně negativní dopady na jeho well-being a nemusí to nutně způsobovat závislost,“ řekl Lupě profesor David Šmahel z týmu Interdisciplinární výzkum internetu a společnosti.|E||T|Logitech chystá novou cestovní myš. Má trackpad a zlomí se v pase|D|12.05.2026 08:45|P|Logitech podle uniklých materiálů připravuje novou notebookovou myš, která se evidentně inspirovala u oblíbené řady Surface Arc Mouse od Microsoftu. M...|X|Logitech podle uniklých materiálů připravuje novou notebookovou myš, která se evidentně inspirovala u oblíbené řady Surface Arc Mouse od Microsoftu. Má totiž skládací design, který z tenkého plochého těla udělá něco trochu více ergonomického.
-Jenže zatímco Arc se v pase lehce ohýbá a narovnává, novinka švýcarského výrobce se zlomí vejpůl, takže se do kapsy strčí složená jako cestovní zrcátko nebo pudřenka. Aby tělo bylo to nejtenčí, obsahuje jen dvě tlačítka a mezi nimi dotykovou plošu nazvanou Adaptive Touch Scrolling.
-Podobně jako u Arcu tak poslouží k vertikálnímu (a možná i horizontálnímu) rolování v dokumentech a na webech, případně by mohla nabídnout i podporu nějakých gest. Bližší informace o myši bohužel nemáme.
-Únik však pochází ze spolehlivého zdroje, totiž od německého magazín WinFuture, který již v minulosti v předstihu odhalil různé novinky od Logitechu. Naposledy například myš MX Master 4.|E||T|Škoda Auto řeší průšvih, hackeři získali přístup k e-shopu a ukradli hesla a údaje zákazníků|D|12.05.2026 08:06|P|Český výrobce vozů Škoda Auto řeší bezpečnostní incident. Týká se německé pobočky, jejíž oficiální e-shop byl napaden útočníky, kteří získali dočasný ...|X|Český výrobce vozů Škoda Auto řeší bezpečnostní incident. Týká se německé pobočky, jejíž oficiální e-shop byl napaden útočníky, kteří získali dočasný přístup.
-O problému informovala sama pobočka v Německu s tím, že na incident narazil interní bezpečnostní tým. Provoz webu byl dočasně pozastaven a byla aplikována záplata. Probíhá další vyšetřování.
-Útočníci zneužili nespecifikovanou bezpečnostní chybu v e-commerce platformě, na níž německý e-shop Škody běžel. Tato chyba umožnila eskalaci práv a obejití ověřovacích mechanismů. Je možné, že šlo o zranitelnost typu zero-day.
-Škoda uvedla, že útočníci v rámci útoku získali data zákazníků, jde o jména, hesla, e-mailové adresy, telefonní čísla, historii objednávek, adresy a podobně. Údaje nebyly uloženy v plaintextu a nemělo by tedy být možné je jednoduše dále zneužít. Údaje o kreditních kartách neunikly, ty se v e-shopu neukládají a jdou přes platební brány.
-Škoda Auto nemá bezpečnostní incidenty poprvé. V minulosti například řešila to, že se k vozům této značky lze dostat na dálku, sledovat polohu v reálném čase nebo spouštět některé funkce. Velký leak dat postihl i celou skupinu Volkswagen.|E||T|Díky nařízení EU padají bariéry mezi iPhonem a Androidem. Co všechno se v telefonech změní|D|12.05.2026 07:45|P||X|Evropská komise se pochlubila změnami u mobilních platforem, za nimiž stojí nařízení DMA (tzv. Akt o digitálních trzích). Některé avizované funkce jsou už u telefonů k dispozici, jiné se u iPhonů a Androidů připravují a objeví se v horizontu nadcházejících týdnů a měsíců. Evropská komise dodává, že se jedná jen o „ochutnávku“ výhod pravidel DMA pro interoperabilitu. Jejich cílem není podle vyjádření EU nic jiného, než to, aby se rozšířily možnosti výběru pro uživatele a vytvořilo více příležitostí pro všechny.
+„Pokud dítě tráví i více hodin denně na sociálních sítích takzvaně smysluplně, nemusí to mít nutně negativní dopady na jeho well-being a nemusí to nutně způsobovat závislost,“ řekl Lupě profesor David Šmahel z týmu Interdisciplinární výzkum internetu a společnosti.|E||T|Díky nařízení EU padají bariéry mezi iPhonem a Androidem. Co všechno se v telefonech změní|D|12.05.2026 07:45|P||X|Evropská komise se pochlubila změnami u mobilních platforem, za nimiž stojí nařízení DMA (tzv. Akt o digitálních trzích). Některé avizované funkce jsou už u telefonů k dispozici, jiné se u iPhonů a Androidů připravují a objeví se v horizontu nadcházejících týdnů a měsíců. Evropská komise dodává, že se jedná jen o „ochutnávku“ výhod pravidel DMA pro interoperabilitu. Jejich cílem není podle vyjádření EU nic jiného, než to, aby se rozšířily možnosti výběru pro uživatele a vytvořilo více příležitostí pro všechny.
 V EU je Android s iPhonem kamarád. Je to tak trochu „s donucením“ a hlavně díky pravidlům DMA. Google a Apple však zavedli, resp. musí zavést samostatně, i některé další změnyTím nejzásadnějším je plnohodnotný bezdrátový přenos dat při přecházení mezi iPhonem a smartphonem s Androidem . Podporuje bude celou řadu typů dat včetně kontaktů, událostí z kalendáře, fotek, dokumentů, Wi-Fi sítí, hesel a dokonce i dat z aplikací třetích stran. Kompletní přenos dat doplňuje meziplatformní přenos eSIM karet , který už je podporován řadou evropských operátorů.
 Důležité změny v Androidu a iOS Další důležitou funkcí je rychlá změna výchozího prohlížeče, přičemž EU se zasadila o snadný import dat z jednoho prohlížeče do druhého . Přenosy dat probíhají přímo mezi aplikacemi, takže není nutné využívat cloudové úložiště. Import dat už funguje v prohlížečích Chrome a Vivaldi, které nyní dokáží importovat data ze Safari – konkrétně jde například o historii prohlížení, záložky a uložená hesla.
 Hodinky a sluchátka k iPhonu? Plnou funkčnost mají často jen jen Apple Watch a AirPods. Nyní musí podobné funkce dostat i hodinky a sluchátka třetích stran
@@ -884,7 +1062,37 @@ Karta si pravděpodobně zachová ostatní vlastnosti čipu Navi 44, jako je pod
 To, že GPU bude provozováno na nízkých taktech, by mohlo mít jednu velkou výhodu – bude energeticky efektivní a spotřeba by mohla být poměrně mírná. Zatímco referenční Radeon RX 9060 XT má TDP 150 W a model RX 9060 pak 132 W, karta Radeon RX 9050 by se mohla pohybovat někde mezi 100 a 120 W. To je ale jenom náš odhad, který se může mýlit – web VideoCardz zatím informaci o TDP této grafiky nezjistil. Ví se ale, že doporučený výkon zdroje se uvádí pouhých 450 W, což ukazuje na úspornou grafiku (model RX 9060 XT oficiálně vyžaduje 500W zdroj).
 VideoCardz uvádí, že má zatím informace o této kartě jen z jednoho zdroje, kterým je jeden z výrobců karet. Ten už nicméně má dokumenty se specifikacemi karty, které jsme uváděli výše. Je tedy slušná šance, že se potvrdí, i když firmy někdy dělají v parametrech úpravy – například TDP a frekvence se mohou měnit poměrně pozdě.
 Co zatím nevíme, je kdy AMD tuto grafickou kartu vydá a za jakou cenou. Firma Radeony často uváděla v červnu, přičemž by to mohlo být spojeno i s veletrhem Computex 2026, který se koná na začátku června (2. 6. až 5. 6.). Během jeho trvání bychom se mohli k Radeonu RX 9050 dovědět víc. Karty by měla být nejlevnějším modelem s architekturou RDNA 4 (a tedy podporujícím FSR 4.1).
-Zdroj: VideoCardz|E||T|How NVIDIA engineers and researchers build with Codex|D|12.05.2026 00:00|P|Teams use Codex with GPT-5.5 to ship production systems and turn research ideas into runnable experiments.|X|How NVIDIA engineers and researchers build with Codex
+Zdroj: VideoCardz|E||T|AutoScout24 scales engineering with AI-powered workflows|D|12.05.2026 00:00|P|Learn how AutoScout24 Group uses Codex and ChatGPT to speed development cycles, improve code quality, and expand AI adoption.|X|AutoScout24 scales engineering with AI-powered workflows
+Codex and ChatGPT accelerate development cycles, improve code quality, and expand AI adoption across 2,000 employees.
+Results
+~10x
+Faster development cycles (weeks → days).
+Results
+~2,000
+Employees enabled with AI tools.
+Results
+~1,000
+Builder roles using Codex.
+AutoScout24 Group(opens in a new window) is the largest pan-European and Canadian online car marketplace, connecting more than 30 million monthly users with over two million vehicle listings. Operating across multiple brands—including AutoScout24 in Europe and AutoTrader.ca in Canada—the company supports a network of 45,000 dealer partners and employs around 2,000 people globally.
+As product expectations increased and system complexity grew, AutoScout24 Group faced mounting pressure to deliver faster innovation without compromising reliability. This is closely tied to the company’s goal of continuously improving how buyers search, evaluate, and purchase vehicles, and how dealers successfully market and sell their inventory. With large-scale migrations, legacy systems, and rising engineering demand, incremental improvements were no longer sufficient. The emergence of large language models presented a timely opportunity to fundamentally rethink how software is built, tested, and scaled—making OpenAI a natural partner in driving this transformation.
+“AI is changing how we build, but more importantly, it’s changing what we can deliver to our users and dealer partners. Faster iterations mean better experiences for buyers and more effective ways for dealers to reach and convert customers.”
+AutoScout24 Group implemented a dual-layer AI adoption strategy to balance broad enablement with deep technical impact. ChatGPT was rolled out across the organization, giving approximately 2,000 employees access to AI tools and establishing a strong baseline of AI literacy across functions.
+In parallel, the company embedded Codex into its engineering, data, and product workflows, equipping around 1,000 builder employees with a coding agent integrated directly into their daily processes. Codex was selected following a three-month evaluation across teams, where it demonstrated strong performance in usability, workflow compatibility, and measurable improvements in productivity and code quality.
+To ensure adoption at scale, AutoScout24 Group established a cross-functional AI Champions network. This group created a feedback loop between central leadership and individual teams, helping translate AI capabilities into practical, real-world use cases. The approach encouraged organic adoption and ensured AI was embedded into existing workflows rather than treated as a standalone tool.
+Codex quickly proved valuable across several high-impact use cases, including automated pull request reviews, large-scale refactoring, technical documentation, and post-incident analysis. Beyond engineering, AI tools enabled non-technical roles to prototype ideas and validate concepts independently, accelerating innovation across the organization. This ultimately supports faster delivery of improvements across the platform, benefiting both buyers and dealer partners.
+“Codex has emerged as a key enabler in our engineering workflows, delivering measurable impact in productivity, quality, and speed.”
+- Reduced development timelines from 2–3 weeks to 2–3 days for select projects
+- Increased engineering throughput, enabling faster iteration and experimentation
+- Improved code quality and consistency through automated reviews
+- Reduced manual workload in pull request reviews and documentation
+- Expanded innovation capacity by enabling non-engineering roles to prototype ideas
+- Combine broad AI access with deep workflow integration to maximize impact
+- Prioritize real-world use cases over top-down mandates to drive adoption
+- Establish cross-functional champions to scale knowledge organically
+- Evaluate AI tools rigorously using measurable engineering metrics
+- Focus on augmenting—not replacing—existing team capabilities
+AutoScout24 Group continues to expand its use of AI across both internal workflows and customer-facing products. Future efforts will focus on deeper integration of AI into core systems, enabling even greater automation and intelligence across the platform.
+As the company scales its AI capabilities, it aims to further enhance user experiences, empower teams across functions, and unlock new efficiencies in how products are built and delivered.|E||T|How NVIDIA engineers and researchers build with Codex|D|12.05.2026 00:00|P|Teams use Codex with GPT-5.5 to ship production systems and turn research ideas into runnable experiments.|X|How NVIDIA engineers and researchers build with Codex
 Teams use Codex with GPT‑5.5 to ship production systems and turn research ideas into runnable experiments.
 Results
 10x
@@ -936,34 +1144,4 @@ At the same time, agent use created new issues for submission and scoring. Many 
 The volume of submissions also changed how we had to run the competition. We could not manually inspect every submission and still keep the leaderboard moving. During the challenge, we developed an internal Codex-based triage bot to monitor new submissions and flag them for human review. This became especially important during periods when we received hundreds of submissions a day.
 AI agents also became part of the community around the challenge. For much of the competition, @notapplica and their coding agent ran a “Live Updates” bulletin, tracking major events, explaining leaderboard approaches, and helping other participants follow the competition. Community review tools also appeared to help less experienced participants check whether their submissions were within the rules and avoid common invalid approaches.
 Our primary goal was to launch a challenge that eligible participants(opens in a new window) could take part in and experience machine learning research. Parameter Golf brought in a wide range of technically strong and creative submissions, and it gave us a clearer view of how open research competitions may change as AI agents become more capable and widely used.
-We are thinking about launching more challenges like this in the future. If you’re interested, please fill out the challenge participant form(opens in a new window).|E||T|AutoScout24 scales engineering with AI-powered workflows|D|12.05.2026 00:00|P|Learn how AutoScout24 Group uses Codex and ChatGPT to speed development cycles, improve code quality, and expand AI adoption.|X|AutoScout24 scales engineering with AI-powered workflows
-Codex and ChatGPT accelerate development cycles, improve code quality, and expand AI adoption across 2,000 employees.
-Results
-~10x
-Faster development cycles (weeks → days).
-Results
-~2,000
-Employees enabled with AI tools.
-Results
-~1,000
-Builder roles using Codex.
-AutoScout24 Group(opens in a new window) is the largest pan-European and Canadian online car marketplace, connecting more than 30 million monthly users with over two million vehicle listings. Operating across multiple brands—including AutoScout24 in Europe and AutoTrader.ca in Canada—the company supports a network of 45,000 dealer partners and employs around 2,000 people globally.
-As product expectations increased and system complexity grew, AutoScout24 Group faced mounting pressure to deliver faster innovation without compromising reliability. This is closely tied to the company’s goal of continuously improving how buyers search, evaluate, and purchase vehicles, and how dealers successfully market and sell their inventory. With large-scale migrations, legacy systems, and rising engineering demand, incremental improvements were no longer sufficient. The emergence of large language models presented a timely opportunity to fundamentally rethink how software is built, tested, and scaled—making OpenAI a natural partner in driving this transformation.
-“AI is changing how we build, but more importantly, it’s changing what we can deliver to our users and dealer partners. Faster iterations mean better experiences for buyers and more effective ways for dealers to reach and convert customers.”
-AutoScout24 Group implemented a dual-layer AI adoption strategy to balance broad enablement with deep technical impact. ChatGPT was rolled out across the organization, giving approximately 2,000 employees access to AI tools and establishing a strong baseline of AI literacy across functions.
-In parallel, the company embedded Codex into its engineering, data, and product workflows, equipping around 1,000 builder employees with a coding agent integrated directly into their daily processes. Codex was selected following a three-month evaluation across teams, where it demonstrated strong performance in usability, workflow compatibility, and measurable improvements in productivity and code quality.
-To ensure adoption at scale, AutoScout24 Group established a cross-functional AI Champions network. This group created a feedback loop between central leadership and individual teams, helping translate AI capabilities into practical, real-world use cases. The approach encouraged organic adoption and ensured AI was embedded into existing workflows rather than treated as a standalone tool.
-Codex quickly proved valuable across several high-impact use cases, including automated pull request reviews, large-scale refactoring, technical documentation, and post-incident analysis. Beyond engineering, AI tools enabled non-technical roles to prototype ideas and validate concepts independently, accelerating innovation across the organization. This ultimately supports faster delivery of improvements across the platform, benefiting both buyers and dealer partners.
-“Codex has emerged as a key enabler in our engineering workflows, delivering measurable impact in productivity, quality, and speed.”
-- Reduced development timelines from 2–3 weeks to 2–3 days for select projects
-- Increased engineering throughput, enabling faster iteration and experimentation
-- Improved code quality and consistency through automated reviews
-- Reduced manual workload in pull request reviews and documentation
-- Expanded innovation capacity by enabling non-engineering roles to prototype ideas
-- Combine broad AI access with deep workflow integration to maximize impact
-- Prioritize real-world use cases over top-down mandates to drive adoption
-- Establish cross-functional champions to scale knowledge organically
-- Evaluate AI tools rigorously using measurable engineering metrics
-- Focus on augmenting—not replacing—existing team capabilities
-AutoScout24 Group continues to expand its use of AI across both internal workflows and customer-facing products. Future efforts will focus on deeper integration of AI into core systems, enabling even greater automation and intelligence across the platform.
-As the company scales its AI capabilities, it aims to further enhance user experiences, empower teams across functions, and unlock new efficiencies in how products are built and delivered.|E|
+We are thinking about launching more challenges like this in the future. If you’re interested, please fill out the challenge participant form(opens in a new window).|E|

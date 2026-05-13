@@ -1,0 +1,67 @@
+|T|Building a safe, effective sandbox to enable Codex on Windows|D|15.05.2026 00:00|P|Learn how OpenAI built a secure sandbox for Codex on Windows, enabling safe, efficient coding agents with controlled file access and network restricti...|X|Building a safe, effective sandbox to enable Codex on Windows
+By David Wiesen, Member of Technical Staff
+When I joined the Codex engineering team in September 2025, Codex for Windows didn’t have a sandbox implementation meaning that Windows users were forced to choose between two subpar options when using OpenAI's coding agents:
+- Approving nearly every command (even reads) that a coding agent wanted to run, which is inefficient and pesky. A major benefit of using Codex is that you don’t have to do all the tedious work yourself.
+- Enabling Full Access mode: letting Codex run all commands without approval or restrictions, which removes friction at the expense of oversight.
+Codex, our coding agent, runs on developer laptops—whether that's through the CLI, the IDE extension, or the desktop app. It manages a conversation between a human at a keyboard and a model running in the cloud to handle inference.
+Codex runs with the permissions of a real user by default, meaning it can do everything the user can do. This is powerful and potentially dangerous. The coding model may tell the harness to run commands locally, from running tests to reading or editing a file to creating a Git branch, so Codex's default mode attempts to find the right balance between effectiveness and safety. This default mode allows Codex to read files almost anywhere and write files within your workspace (i.e., the directory where you're running Codex), with no internet access unless you specify you want it. To achieve this automatic constraint of writing files and accessing the network within safe bounds, Codex needs a sandbox environment that actually enforces these constraints.
+A sandbox is a constrained execution environment. When a developer uses Codex, their computer's operating system launches a command with reduced permissions, and those constraints propagate down the process tree. Every Codex command is sandboxed from the start, and every descendant process stays inside the same boundary.
+Codex needs isolation features enforced by the computer's operating system to implement an effective sandbox. Some operating systems provide utilities that do this well (e.g., Seatbelt on MacOs, seccomp or bubblewrap on Linux); however, Windows doesn't currently provide this type of capability out of the box.
+To make Codex just as safe and delightful to use on Windows as it already is everywhere else, we needed to implement our own sandbox.
+Windows offers some tools and primitives for isolation. While none of them quite met our requirements, we looked at a number of potential solutions—namely, AppContainer, Windows Sandbox, and Mandatory Integrity Control labeling.
+AppContainer
+- What: AppContainer is the native Windows sandbox, a capability-based isolation model built for apps that know, up front, exactly what they need to access.
+- Why: Appealing because it offers a real OS boundary instead of best-effort restrictions.
+- Why not: Codex is not one tightly scoped app. It drives open-ended developer workflows: shells, Git, Python, package managers, build tools, and whatever other binaries the agent decides it needs. In practice, that made AppContainer the wrong shape for the problem. It was strong isolation, but for a much narrower class of workloads than “let an agent operate like a developer.”
+Windows Sandbox
+- What: Windows Sandbox is Microsoft’s disposable lightweight VM. You get a fresh Windows desktop with a strong isolation boundary, and whatever you do inside it disappears when the session ends.
+- Why: Interesting for obvious reasons—far more compatible with arbitrary software than AppContainer, and from a security perspective it's a much stronger box.
+- Why not: Codex needs to act directly on the user’s actual checkout, tools, and environment, not inside a separate throwaway desktop that would need setup and host/guest bridging. It also had a fundamental product problem: Windows Sandbox isn't even available on Windows Home SKUs.
+Mandatory Integrity Control (MIC) integrity labeling
+- What: Windows has a concept called “integrity levels,” such as low, medium, and high, that determine how much the system trusts objects and processes. The basic rule is that a lower-integrity process cannot write to an object with a higher integrity level, even if the normal ACL would otherwise allow it. For example, a low-integrity process is treated as less trusted, so Windows blocks it from writing to normal medium-integrity objects, unless those objects are explicitly relabeled to allow it.
+- Why: MIC looked elegant on paper—run Codex at low integrity, relabel the writable roots as low integrity, and let Windows enforce no-writes everywhere else. That would've given us a non-admin path with a real OS mechanism behind it.
+- Why not: Like ACLs, integrity labels modify the real host filesystem, and in this case the semantic change is especially broad. Marking a workspace as low integrity does not just mean “Codex can write here.” It means low-integrity processes in general can write there. On a real developer machine, that turns the user’s actual checkout into a low-integrity sink for the host, which is much riskier than granting carefully targeted ACLs to one sandbox design. Even if medium-integrity developer tools continue to work, the underlying trust model of the workspace has changed in a way that's hard to contain and harder to justify.
+Having evaluated all of the options as non-starters, we started designing our own solution to bring a good Codex experience to Windows users.
+Our first working prototype used a combination of Windows concepts and tools to implement the isolation we needed. From the beginning, one goal was to make this work without requiring elevation, meaning that Codex would not need to prompt the user for administrator privileges just to set up or run the sandbox. That meant figuring out how to put reasonable limits on two things: file writes and network access.
+If we didn't limit file writes at all, we'd have a safety issue. If we limited file writes too much, the sandbox would hurt user productivity, needing to ask for constant approval. To solve this problem, we relied on two important Windows building blocks: SIDs and write-restricted tokens.
+A SID, or security identifier, is the identity Windows ties to permissions. Each user has a SID, groups have SIDs, and even a single login session gets its own SID. For example, a current logged-in session might have a SID like S-1-5-5-X-Y
+. The SID assigned to the local administrators group might be S-1-5-32-544
+.
+Windows also lets you create synthetic SIDs that don't correspond to a real user but can still appear in ACLs (access control lists), which define who can read/write/execute specific files or directories. That makes SIDs a useful primitive for our sandbox: we can create SIDs exclusively for the Codex sandbox to use, without interfering with anything else on the machine.
+Process tokens are security objects in Windows that define identity and privileges for a running process. They determine what actions a process can perform. A write-restricted token is a particular type of process token that makes Windows perform an additional access check on write operations.
+In order for a write to succeed, two checks must pass:
+- The normal user identity (the token “owner”) must be allowed to do it
+- At least one SID in the token’s restricted SID list must also be granted access
+In practice, these checks let us use ACLs to define exactly where the sandbox could modify the filesystem, which offered the granularity we needed around write operations.
+With SIDs and write-restricted tokens, our unelevated sandbox worked like this:
+- The sandbox setup created a synthetic SID called
+sandbox-write
+. - The
+sandbox-write
+SID was granted write, execute, and delete access to- The current working directory
+- Any additional
+writable_roots
+configured inconfig.toml
+.
+- The sandbox setup explicitly denied that same SID write access to “read-only within writable” locations such as:
+<cwd>/.git
+<cwd>/.codex
+<cwd>/.agents
+- Codex launched commands under a write-restricted token whose restricted SID list includes
+Everyone
+, the current logged in session SID, and thesandbox-write
+synthetic SID.
+This flow effectively solved limiting file writes and seemed promising. Now we needed a solution for limiting the sandbox's network access.
+Limiting network access is an important part of the sandbox; without it, malicious code could exfiltrate data from the machine up to the internet. Because we wanted to avoid an elevation requirement, we had limited options to strongly block network traffic. The tools we wanted to use, like Windows Firewall, generally could not be installed without admin permissions.
+Without Windows Firewall as an option, we limited what we could control. We tried to make the child environment fail-closed for the kinds of networked tools developers actually use, so that Git commands, package installers, etc., would fail in the sandbox and the user would have to approve any internet-facing operations. The idea was to poison the obvious escape hatches: send proxy-aware traffic to a dead endpoint, make Git’s HTTP(S) transport do the same, and make Git over SSH fail immediately. On top of that, we prepended a small denybin
+directory to PATH and reordered PATHEXT
+so stub SSH and SCP scripts would resolve before the real binaries.
+For example, here are some of the specific environment overrides we used to limit network access:
+HTTPS_PROXY=http://127.0.0.1:9
+ALL_PROXY=http://127.0.0.1:9
+GIT_HTTPS_PROXY=http://127.0.0.1:9
+NO_PROXY=localhost,127.0.0.1,::1
+GIT_SSH_COMMAND=cmd /c exit 1
+That caught a lot of normal tool-driven traffic, but it was still only advisory. A process could ignore the environment, bypass PATH, or just open sockets directly—too risky.
+As with any interesting software implementation, the first prototype had some pros and cons. While it got the job done with only a few standard Windows capabilities, allow...
+(Pokracovani na webu)|E|

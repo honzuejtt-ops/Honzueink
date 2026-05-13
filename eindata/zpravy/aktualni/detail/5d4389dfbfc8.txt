@@ -1,0 +1,22 @@
+Ukázat všechny listy najednou
+Google loni dramaticky přebarvil své mapy a s drobnými změnami přišly i další oblíbené portály. A tak jsme pro vás připravili další velký mapový souboj. Jak si povedou ve čtrnácti zkouškách počínaje zobrazením Evropy a Makarské a konče hledáním trasy z Kozojed do Kaprouna?
+Co uživatel, to jiný vkus a názor, jak dnes mají vypadat digitální mapy, a tak zhodnocení necháme na vás v anketě, kterou najdete na konci článku . My jen připravíme naprosto identické situace vždy v základní mapě, kterou služba nabízí, aby bylo srovnání co nejférovější.
+Do souboje povoláme tyto mapové portály v desktopovém webovém rozhraní a neutrálním pořadí podle abecedy:
+15 standardních situací
+Náš test se skládá z patnácti standardních situací, které používáme i v dalších podobných srovnávacích článcích. Odkazy na všechny pohledy najdete v tomto seznamu na GitHubu .
+Oproti dřívějším srovnáním jsme přidali navíc i české turistické Locus Map, které vycházejí z OpenStreetMap, ale vykreslují je podobným stylem jako Mapy.com.
+Takže dost řečí, jdeme na to. Prohlédněte si příklady níže, které jen stručně popíšeme, abychom vás nijak neovlivňovali. V závěru označte v anketě tu mapu, které se vám v těchto pohledech zamlouvala nejvíce.
+Kontinentální mapa: Evropa
+Začněme u nejmenšího měřítka a podívejme se, jak na naší šestici vypadá celý kontinent – ten náš, tedy Evropa. U všech služeb až na Apple Mapy, které podle pohybu na mapě neupravuje její URL, se jedná o zoom/přiblížení s hodnotou 5.
+Zoom: 5×
+Apple Mapy
+Bing Mapy
+Mapy Google
+Here WeGo
+Locus Map
+Mapy.com
+OpenStreetMap
+Tento článek je součástí balíčku PREMIUM+
+Odemkněte si exkluzivní obsah a videa bez reklam na devíti webech.
+Chci Premium a Živě.cz bez reklam
+Od 58 Kč měsíčně

@@ -1,0 +1,18 @@
+Před pár týdny jsme provedli zátěžový test a pitvu jedné z nejprodávanějších USB-C nabíječek na českém trhu. AlzaPower G610CCA Fast Charge 67W nedopadla vůbec špatně, při své kapesní velikosti si totiž bez problému poradí i s menším notebookem a má solidní konstrukci, která vám při zkratu nevypálí byt.
+Jen blázen by ale utrácel pětistovku za kus plastu, když asijští trhovci nabízejí na Aliexpressu a Temu kousky, které to samé slibují za 85 korun. Takhle velké weby by přece nenabízely nějaký šmejd, že?
+Rychlonabíječka z Číny, která lže úplně ve všem
+Nebudu vás napínat, pro jistotu připomínám, že mám rád sarkasmus a dílem asi i sebepoškozování, a tak tentokrát v košíku skončila ta největší zrůdnost, na kterou jsem narazil.
+Dnes si změříme model TRG-160, který slibuje výkon 65 W a prodejce jej k 13. květnu nabízí za 84,6 korun.
+Nabíječka nabízí jeden velký konektor USB-A a dva USB-C. Přinejmenším jeden slibuje rychlonabíjení PD (USB Power Delivery), ale je to čirá lež
+Malá kapesní nabíječka nabízí jeden velký port USB-A a dvojici malých USB-C s pochybnými popisky. Píše se na nich cosi o 33W PD, ale to je jistě jen omyl potiskové linky. Na plášti se totiž skví velký nápis 65W GaN.
+Také tento štítek s několika napěťovými profily je čistá lež. Při pitvě na druhém listu si ukážeme, že v nitru chybí čip pro rychlé nabíjení
+Každé malé dítě ví, že rychlonabíječky s polovodičovými prvky z nitridu gallia unesou mnohem větší zátěž, a tak v malém provedení utáhnou nejen váš mobil, ale zpravidla i laptop. Vše umocňuje technický štítek na opačné straně, který slibuje napěťové profily USB Power Delivery (nebo alespoň Quick Charge) 9V/7,2A, 12V/5,4A a 20V/3,25A.
+Co jsme zjistili při měření
+Jedná se o běžnou 10W 5V nabíječku s horní hranicí na 2 A při zátěži jen jednoho konektoru. Nabíječka nepodporuje rychlonabíjení a její řídící čipy nejsou typu GaN.
+V třicetiminutovém testu stabilně dodávala zhruba 9,5 W (5V/1,9A), i v této zátěži se ale docela zahřívala. Elektronika používá integrovaný čip pro základní ochranu před zkratem, přepětím a přehřátím, i tak ale uděláte nejlépe, když se podobným laciným šmejdům už z principu vyhnete širokým obloukem.
+V pokračování pro předplatitele také najdete
+V čem všem údajná rychlonabíječka lže
+Jak dopadla v zátěžových testech
+Co se skryvá pod jejím plastovým obalem
+Chci Premium a Živě.cz bez reklam
+Od 58 Kč měsíčně

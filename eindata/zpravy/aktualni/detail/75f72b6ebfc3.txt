@@ -22,7 +22,7 @@ Co se dozvíte v článku
 - Odkazy na Internetu
 V případě, že na prezentaci či v nějakém repositáři naleznete následující definice funkcí (zapsané v různých programovacích jazycích), pravděpodobně budete předpokládat, že tyto funkce nejsou dokončeny a že zdrojové kódy s těmito funkcemi nebudou bez dalšího rozšiřování přeložitelné nebo spustitelné:
 void foo() { ... } fn foo() { ... } func foo() { ... } fn void foo() { ...; } def foo(): ...
-V prvních třech případech (což jsou konkrétně příklady napsané v C, Rustu, Go a C3) budete mít naprostou pravdu – takto zapsané funkce nejenom že neobsahují tělo, ale navíc jsou v nich zapsány „trojtečky“ (ellipsis), které nejsou korektním příkazem ani výrazem.
+V prvních čtyřech případech (což jsou konkrétně příklady napsané v C, Rustu, Go a C3) budete mít naprostou pravdu – takto zapsané funkce nejenom že neobsahují tělo, ale navíc jsou v nich zapsány „trojtečky“ (ellipsis), které nejsou korektním příkazem ani výrazem.
 Ovšem v případě posledním je tomu jinak. Poslední funkce je totiž zapsána v Pythonu a tento jazyk má trojtečky … definovány jako literál. Pochopitelně jsou stanovena i syntaktická a sémantická pravidla použití tohoto literálu. A právě s těmito pravidly a způsoby použití se setkáme v dnešním článku. Znaky … se totiž v Pythonu mohou použít na více místech, mnohdy tam, kde bychom je vlastně ani nečekali. A navíc můžeme pomocí … vyřešit některé zapeklitější sémantické problémy, například schopnost zjistit, zda byl do funkce předán parametr.
 Objektový systém jazyka Python a literál …
 Při spuštění interpretru programovacího jazyka Python je (kromě dalších hodnot) inicializována i hodnota uložená do proměnné nazvané Ellipsis. Tato hodnota je jedináčkem (singleton) a je typu ellipsis (pozor na rozdíl velké/malé písmeno na začátku).
@@ -87,5 +87,5 @@ def bar(arg = ...): if arg is ...: print("No value provided!") else: print("Valu
 Nyní se od sebe neodliší poslední tři volání:
 Value provided 42 No value provided! No value provided! No value provided!
 Specifikace datového typu n-tice s neznámým počtem prvků
-Se zápisem tří teček se setkáme i u specifikace datového typu n-tice s neznámým počtem prvků. U n-tic je totiž nutné uvádět typ každého z prvků zvlášť (na rozdíl od seznamů). Ovšem pokud mají mít prvky stejný typ a souč...
+Se zápisem tří teček se setkáme i u specifikace datového typu n-tice s neznámým počtem prvků. U n-tic je totiž nutné uvádět typ každého z prvků zvlášť (na rozdíl od seznamů). Ovšem pokud mají mít prvky stejný typ a so...
 (Pokracovani na webu)

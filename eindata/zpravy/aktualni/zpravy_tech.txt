@@ -1,70 +1,4 @@
-|T|Building a safe, effective sandbox to enable Codex on Windows|D|15.05.2026 00:00|P|Learn how OpenAI built a secure sandbox for Codex on Windows, enabling safe, efficient coding agents with controlled file access and network restricti...|X|Building a safe, effective sandbox to enable Codex on Windows
-By David Wiesen, Member of Technical Staff
-When I joined the Codex engineering team in September 2025, Codex for Windows didn’t have a sandbox implementation meaning that Windows users were forced to choose between two subpar options when using OpenAI's coding agents:
-- Approving nearly every command (even reads) that a coding agent wanted to run, which is inefficient and pesky. A major benefit of using Codex is that you don’t have to do all the tedious work yourself.
-- Enabling Full Access mode: letting Codex run all commands without approval or restrictions, which removes friction at the expense of oversight.
-Codex, our coding agent, runs on developer laptops—whether that's through the CLI, the IDE extension, or the desktop app. It manages a conversation between a human at a keyboard and a model running in the cloud to handle inference.
-Codex runs with the permissions of a real user by default, meaning it can do everything the user can do. This is powerful and potentially dangerous. The coding model may tell the harness to run commands locally, from running tests to reading or editing a file to creating a Git branch, so Codex's default mode attempts to find the right balance between effectiveness and safety. This default mode allows Codex to read files almost anywhere and write files within your workspace (i.e., the directory where you're running Codex), with no internet access unless you specify you want it. To achieve this automatic constraint of writing files and accessing the network within safe bounds, Codex needs a sandbox environment that actually enforces these constraints.
-A sandbox is a constrained execution environment. When a developer uses Codex, their computer's operating system launches a command with reduced permissions, and those constraints propagate down the process tree. Every Codex command is sandboxed from the start, and every descendant process stays inside the same boundary.
-Codex needs isolation features enforced by the computer's operating system to implement an effective sandbox. Some operating systems provide utilities that do this well (e.g., Seatbelt on MacOs, seccomp or bubblewrap on Linux); however, Windows doesn't currently provide this type of capability out of the box.
-To make Codex just as safe and delightful to use on Windows as it already is everywhere else, we needed to implement our own sandbox.
-Windows offers some tools and primitives for isolation. While none of them quite met our requirements, we looked at a number of potential solutions—namely, AppContainer, Windows Sandbox, and Mandatory Integrity Control labeling.
-AppContainer
-- What: AppContainer is the native Windows sandbox, a capability-based isolation model built for apps that know, up front, exactly what they need to access.
-- Why: Appealing because it offers a real OS boundary instead of best-effort restrictions.
-- Why not: Codex is not one tightly scoped app. It drives open-ended developer workflows: shells, Git, Python, package managers, build tools, and whatever other binaries the agent decides it needs. In practice, that made AppContainer the wrong shape for the problem. It was strong isolation, but for a much narrower class of workloads than “let an agent operate like a developer.”
-Windows Sandbox
-- What: Windows Sandbox is Microsoft’s disposable lightweight VM. You get a fresh Windows desktop with a strong isolation boundary, and whatever you do inside it disappears when the session ends.
-- Why: Interesting for obvious reasons—far more compatible with arbitrary software than AppContainer, and from a security perspective it's a much stronger box.
-- Why not: Codex needs to act directly on the user’s actual checkout, tools, and environment, not inside a separate throwaway desktop that would need setup and host/guest bridging. It also had a fundamental product problem: Windows Sandbox isn't even available on Windows Home SKUs.
-Mandatory Integrity Control (MIC) integrity labeling
-- What: Windows has a concept called “integrity levels,” such as low, medium, and high, that determine how much the system trusts objects and processes. The basic rule is that a lower-integrity process cannot write to an object with a higher integrity level, even if the normal ACL would otherwise allow it. For example, a low-integrity process is treated as less trusted, so Windows blocks it from writing to normal medium-integrity objects, unless those objects are explicitly relabeled to allow it.
-- Why: MIC looked elegant on paper—run Codex at low integrity, relabel the writable roots as low integrity, and let Windows enforce no-writes everywhere else. That would've given us a non-admin path with a real OS mechanism behind it.
-- Why not: Like ACLs, integrity labels modify the real host filesystem, and in this case the semantic change is especially broad. Marking a workspace as low integrity does not just mean “Codex can write here.” It means low-integrity processes in general can write there. On a real developer machine, that turns the user’s actual checkout into a low-integrity sink for the host, which is much riskier than granting carefully targeted ACLs to one sandbox design. Even if medium-integrity developer tools continue to work, the underlying trust model of the workspace has changed in a way that's hard to contain and harder to justify.
-Having evaluated all of the options as non-starters, we started designing our own solution to bring a good Codex experience to Windows users.
-Our first working prototype used a combination of Windows concepts and tools to implement the isolation we needed. From the beginning, one goal was to make this work without requiring elevation, meaning that Codex would not need to prompt the user for administrator privileges just to set up or run the sandbox. That meant figuring out how to put reasonable limits on two things: file writes and network access.
-If we didn't limit file writes at all, we'd have a safety issue. If we limited file writes too much, the sandbox would hurt user productivity, needing to ask for constant approval. To solve this problem, we relied on two important Windows building blocks: SIDs and write-restricted tokens.
-A SID, or security identifier, is the identity Windows ties to permissions. Each user has a SID, groups have SIDs, and even a single login session gets its own SID. For example, a current logged-in session might have a SID like S-1-5-5-X-Y
-. The SID assigned to the local administrators group might be S-1-5-32-544
-.
-Windows also lets you create synthetic SIDs that don't correspond to a real user but can still appear in ACLs (access control lists), which define who can read/write/execute specific files or directories. That makes SIDs a useful primitive for our sandbox: we can create SIDs exclusively for the Codex sandbox to use, without interfering with anything else on the machine.
-Process tokens are security objects in Windows that define identity and privileges for a running process. They determine what actions a process can perform. A write-restricted token is a particular type of process token that makes Windows perform an additional access check on write operations.
-In order for a write to succeed, two checks must pass:
-- The normal user identity (the token “owner”) must be allowed to do it
-- At least one SID in the token’s restricted SID list must also be granted access
-In practice, these checks let us use ACLs to define exactly where the sandbox could modify the filesystem, which offered the granularity we needed around write operations.
-With SIDs and write-restricted tokens, our unelevated sandbox worked like this:
-- The sandbox setup created a synthetic SID called
-sandbox-write
-. - The
-sandbox-write
-SID was granted write, execute, and delete access to- The current working directory
-- Any additional
-writable_roots
-configured inconfig.toml
-.
-- The sandbox setup explicitly denied that same SID write access to “read-only within writable” locations such as:
-<cwd>/.git
-<cwd>/.codex
-<cwd>/.agents
-- Codex launched commands under a write-restricted token whose restricted SID list includes
-Everyone
-, the current logged in session SID, and thesandbox-write
-synthetic SID.
-This flow effectively solved limiting file writes and seemed promising. Now we needed a solution for limiting the sandbox's network access.
-Limiting network access is an important part of the sandbox; without it, malicious code could exfiltrate data from the machine up to the internet. Because we wanted to avoid an elevation requirement, we had limited options to strongly block network traffic. The tools we wanted to use, like Windows Firewall, generally could not be installed without admin permissions.
-Without Windows Firewall as an option, we limited what we could control. We tried to make the child environment fail-closed for the kinds of networked tools developers actually use, so that Git commands, package installers, etc., would fail in the sandbox and the user would have to approve any internet-facing operations. The idea was to poison the obvious escape hatches: send proxy-aware traffic to a dead endpoint, make Git’s HTTP(S) transport do the same, and make Git over SSH fail immediately. On top of that, we prepended a small denybin
-directory to PATH and reordered PATHEXT
-so stub SSH and SCP scripts would resolve before the real binaries.
-For example, here are some of the specific environment overrides we used to limit network access:
-HTTPS_PROXY=http://127.0.0.1:9
-ALL_PROXY=http://127.0.0.1:9
-GIT_HTTPS_PROXY=http://127.0.0.1:9
-NO_PROXY=localhost,127.0.0.1,::1
-GIT_SSH_COMMAND=cmd /c exit 1
-That caught a lot of normal tool-driven traffic, but it was still only advisory. A process could ignore the environment, bypass PATH, or just open sockets directly—too risky.
-As with any interesting software implementation, the first prototype had some pros and cons. While it got the job done with only a few standard Windows capabilities, allow...
-(Pokracovani na webu)|E||T|Vybrali jsme nejlepší chytré hodinky, které si v květnu 2026 můžete koupit|D|13.05.2026 18:45|P|Každý měsíc vybíráme nejlepší chytré hodinky v několika kategoriích • Dělíme je podle zaměření, ale i podle propojení s mobilními systémy • Nezapomněl...|X|Ukázat všechny listy najednou
+|T|Vybrali jsme nejlepší chytré hodinky, které si v květnu 2026 můžete koupit|D|13.05.2026 18:45|P|Každý měsíc vybíráme nejlepší chytré hodinky v několika kategoriích • Dělíme je podle zaměření, ale i podle propojení s mobilními systémy • Nezapomněl...|X|Ukázat všechny listy najednou
 Apple Watch Ultra 3
 Nejlepší sportovní hodinky pro iPhone
 První verze modelu Ultra byla unikát, druhá měla na čem stavět a třetí přináší další vylepšení. Apple Watch Ultra 3 mají zatím největší displej, který kdy Apple v hodinkách použil. LTPO3 OLED displej slibuje lepší kvalitu zobrazení při bočních pohledech, má rozlišení 422 × 514 pixelů a vysoký maximální jas. Jeho obnovovací frekvence klesá až na 1 Hz.
@@ -111,13 +45,13 @@ platby: ano
 hudba: ano
 odolnost: 5 ATM, MIL-STD810H
 Pokračování 4 / 26 OnePlus Watch 3
-Nejlepší hodinky s vysokou výdrží a rychlým nabíjením
+Wear OS hodinky s vysokou výdrží a nejlepším poměrem cena/výkon.
 Když chcete hodinky se systémem Wear OS a máte v kapse Android, musíte často překousnout jejich mizerou výdrž. Jeden nebo dva dny není při pohledu na Garminy a hodinky s polouzavřeným systémem nic světoborného. OnePlus však u hodinek používá dva procesory, kterými se dokáže dostat na daleko lepší výdrž. A nejnovějšími hodinkami na této duální architektuře jsou OnePlus Watch3 vyrobené z titanu a nerezové oceli.
 V českých obchodech stojí až Kč
 Porovnat ceny
 Zobrazování zajišťuje 1,5" AMOLED displej krytý safírem s jasem až 2 200 nitů, hodinky jsou navíc osazeny 631mAh baterií. Díky hlavnímu a úsporném procesoru dokáže běžet na jedno nabití při běžném používání tři až pět dní, což je až trojnásobek oproti jiným hodinkám s Wear OS. S aktivním Always On se ale výdrž zkracuje. K ovládání slouží otočná korunka, boční tlačítka a dotykový displej.
 Hodinky změří tep, okysličení krve, analyzují pohyb, změří teplotu, natočí EKG a detekují spánek. Navíc je samozřejmě monitoring více než 100 sportovních aktivit, přičemž některé z nich dokáží hodinky snadno rozpoznat. U vybraných aktivit pak sledují tempo či zóny srdečního tepu. Ve výbavě nechybí ani GPS, přehrávání hudby (uložené ve 32GB paměti) nebo bezkontaktní placení.
-Základní verze hodinek má rozměry 46 mm, OnePlus ještě uvedl do prodeje menší verzi hodinek OnePlus 3 43mm . Ta má nepatrně nižší cenovku a také kompletně přepracovaný design. Záležet tak bude na tloušťce vašeho zápěstí nebo na uživatelských preferencích.
+Základní verze hodinek má rozměry 46 mm, OnePlus ještě uvedl do prodeje menší verzi hodinek OnePlus 3 43mm . Ta má nepatrně nižší cenovku a také kompletně přepracovaný design. Záležet tak bude na tloušťce vašeho zápěstí nebo na uživatelských preferencích. Do výběru jsme zařadili loňský model, i když se na trhu nabízí podobné modernější hodinky Oppo Watch X3 od mateřské značky. Mají lehčí tělo, odolnější materiály, vyšší jas displeje a novější verzi systému. Základní hardware a výdrž - tady se nic podstatného nezměnilo. Ale je nutné si za ně několik tisíc připlatit.
 Základní parametry
 displej: dotykový 1,5" AMOLED, rozlišení 466 × 466 pixelů
 výdrž baterie: 3 až 5 dní
@@ -141,7 +75,7 @@ platby: ano
 hudba: ano
 odolnost: 5 ATM
 Pokračování 6 / 26 Xiaomi Watch 5
-Wear OS hodinky s nejdelší výdrží
+Wear OS hodinky s největší baterií
 Xiaomi Watch 5 převzaly štafetu hodinek s největší výdrží od OnePlus. Nové hodinky kombinují dvojici procesorů (Snapdragon W5 Gen 1 a nízkoenergetický koprocesor BES2800) a navíc jsou osazeny obří křemíkovou baterií (s 10% podílem křemíku). Na poměry chytrých hodinek je kapacita 930 mAh výrazným nadstandardem. Díky ní vydrží hodinky v chytrém režimu až 6 dní na jedno nabití – a to mluvíme o hodinkách s operačním systémem Wear OS, nikoli o nějaké uzavřené alternativě.
 V českých obchodech stojí až Kč
 Porovnat ceny
@@ -157,10 +91,7 @@ hudba: ano
 odolnost: 5 ATM
 Pokračování 7 / 26 Redmi Watch 6
 Levné hodinky s NFC za příplatek
-Značka Redmi nabízí v Česku cenově dostupné hodinky Redmi Watch 6 , u nichž si můžete připlatit za NFC. Pokud bezkontaktní platby přes Mi Pay nevyužijete, ušetříte několik set korun. Základ je u obou modelů shodný. Získáte hliníkové unibody s nerezovou korunkou a čtvercovým 2,07" AMOLED displejem chráněným sklem Panda Glass. Hodinky s voděodolností 5 ATM podporují dvoupásmové GPS a nabízejí více než 150 sportovních režimů.
-V českých obchodech stojí až Kč
-Porovnat ceny
-Hodinky změří okysličení krve, kvalitu spánku, srdeční tep a menstruační cyklus. Zároveň poslouží jako prodlouže...
+Značka Redmi nabízí v Česku cenově dostupné hodinky Redmi Watch 6 , u nichž si můžete připlatit za NFC. Pokud bezkontaktní platby přes Mi Pay nevyužijete, ušetříte několik set korun. Základ je u obou modelů shodný. Získáte hliníkové unibody s nerezovou koru...
 (Pokracovani na webu)|E||T|Novinářskou křepelku převzal Matěj Skalický za podcast Vinohradská 12|D|13.05.2026 17:46|P|Prestižní ocenění Novinářská křepelka za rok 2025 získal redaktor a moderátor Českého rozhlasu Matěj Skalický. Cenu, která vyzdvihuje perspektivní žur...|X|Prestižní ocenění Novinářská křepelka za rok 2025 získal redaktor a moderátor Českého rozhlasu Matěj Skalický. Cenu, která vyzdvihuje perspektivní žurnalisty do třiatřiceti let, převzal 13. května během slavnostního vyhlášení Novinářských cen v Praze. Uznání si vysloužil za svou práci na zpravodajském podcastu Vinohradská 12, který od března 2022 vede a moderuje.
 Sám laureát považuje ocenění primárně za výsledek kolektivního úsilí celé redakce. „Ceny si moc vážím a chtěl bych za ni ze srdce poděkovat. Vnímám to jako velké ocenění usilovné a vytrvalé práce celého týmu Vinohradské 12. Současně mám velkou radost, že tato cena míří právě do Českého rozhlasu, který mi otevřel cestu k novým formám audiožurnalistiky a je už 15 let mým druhým domovem,“ uvedl Matěj Skalický.
 Podle ředitele zpravodajství Ondřeje Suchana odvádí Skalický dlouhodobě mimořádný kus práce v rolích reportéra, editora i moderátora. „Právě tento podcast se stal jedním z nejposlouchanějších audiopořadů v českém éteru a ukazuje, jak silná může být veřejnoprávní žurnalistika, když je srozumitelná a poctivě připravená. V době, kdy jsou média veřejné služby pod výrazným tlakem, je takové ocenění důležité nejen pro Matěje, ale pro celý Český rozhlas,“ řekl Suchan.
@@ -194,6 +125,7 @@ Akce se bude dát využít jen čtyři týdny, od 13.5. do 10. 6., kdy skončí.
 Podle Nvidie by se u nás na akci měly podílet obchody TSBohemia a výrobci/distributoři počítačů Digitor a HAL3000. Alza zatím hru zadarmo u grafik v nabídce nemá, ale Smarty.cz je zdá se zapojen také. Na Slovensku se na akci podílí Datacomp.sk.
 Tento kupon se pak uplatňuje v aplikaci Nvidia App, která by vám za něj měla dát kód na hru pro obchod Steam. Aplikace bude kontrolovat, zda v počítači opravdu je hardware, kterého se akce týká, což má být překážka proti přeprodávání kuponů. Nárok tedy nejde uplatnit předtím, než PC sestavíte nebo zapnete (aplikace samozřejmě nemůže zkontrolovat, jestli máte nainstalovanou přesně tu kartu kterou jste s kuponem koupili, kontroluje jen, zda je v PC něco patřícího na seznam).
 Pokud akci budete chtít využít, dejte si pozor na to, že i získaný kupon má omezenou platnost. Musíte ho do aplikace zadat do 8. 7. letošního roku, jinak vám propadne.
+Uvidíme, zde podobně nepřijdou s hrami zadarmo AMD nebo Intel. Aktuálně nějakou protinabídku nemají. Ke kartám a procesorům od AMD bylo donedávna možné získat hru Crimson Desert, ale tento bundle skončil 25. 4.
 Zdroj: Nvidia|E||T|Recenze jednohubky Punisher: Poslední zúčtování na Disney+|D|13.05.2026 15:45|P||X|V poslední sezóně Daredevila nám Jon Bernthal se svým Punisherem chyběl a objeví se až v novém Spidermanovi. Tam bude ale tak krotce přístupný mládeži, že hloubku této postavy nemá šanci ukázat.
 Proto si Jon Bernthal ve spolupráci s režisérem Reinaldo Marcus Greenem napsal krátkou něco přes 40 minut dlouhou specialitku Punisher: One Last Kill (Poslední zúčtování), kterou nyní můžete vidět na Disney+.
 A od první minuty vám bude jasné, že toto není ten dětský Disney+. I v traileru vám celou dobu svítí v rohu doporučující upozornění o rodičovské kontrole.
@@ -269,7 +201,73 @@ Nabídka nemusí být dostupná vždy
 Sekce věnovaná paměti bohužel není ve vývojářských možnostech dostupná na všech zařízeních . Dostupnost nástroje závisí na konkrétní značce telefonu a použité grafické nadstavbě. Zatímco na stařičkém telefonu OnePlus 5 se nám tato volba bez potíží zobrazovala, na novějším Xiaomi 12 s nadstavbou HyperOS 3 jsme ji hledali marně. Je to dáno tím, že výrobci v systému občas provádějí nešetrné zásahy.
 Na některých zařízeních (například u Google Pixelů) nemusí být sledování využití paměti standardně zapnuté. V takovém případě je nutné jej nejprve aktivovat a následně zařízení restartovat. Teprve pak bude možné se k datům dostat.
 Místo ukončování raději odinstalace Zavírat aplikace přes seznam naposledy spuštěných programů nemá smysl , protože to nezastaví běh skrytých služeb, navíc se proces po dalším spuštění (nebo na pozadí) opět nastartuje. Android totiž pracuje s operační pamětí jinak než klasické počítače a RAM záměrně využívá pro rychlejší spouštění aplikací. Samotné zaplnění není problém.
-Důležité proto není sledovat samotné číslo, ale hledat programy, které v pozadí ukrajují nečekaně velké porce. Pokud některý z nich dlouhodobě nepoužíváte, je rozumnější ho rovnou odinstalovat než ho neustále nuceně ukončovat. Telefon bude reagovat svižněji a systém bude o něco méně vytížený.|E||T|Václav Moravec chystá nový pořad, Česká televize trvá na konkurenční doložce|D|13.05.2026 10:56|P|Bývalý moderátor České televize Václav Moravec podle informací z médií plánuje na květen či červen svůj nový pořad. Konkurenční doložka v jeho smlouvě...|X|Bývalý moderátor České televize Václav Moravec podle informací z médií plánuje na květen či červen svůj nový pořad. Konkurenční doložka v jeho smlouvě s Českou televizí je však i nadále platná. Potvrdili to zástupci vedení televize na zasedání Rady ČT.
+Důležité proto není sledovat samotné číslo, ale hledat programy, které v pozadí ukrajují nečekaně velké porce. Pokud některý z nich dlouhodobě nepoužíváte, je rozumnější ho rovnou odinstalovat než ho neustále nuceně ukončovat. Telefon bude reagovat svižněji a systém bude o něco méně vytížený.|E||T|Building a safe, effective sandbox to enable Codex on Windows|D|13.05.2026 11:00|P|Learn how OpenAI built a secure sandbox for Codex on Windows, enabling safe, efficient coding agents with controlled file access and network restricti...|X|Building a safe, effective sandbox to enable Codex on Windows
+By David Wiesen, Member of Technical Staff
+When I joined the Codex engineering team in September 2025, Codex for Windows didn’t have a sandbox implementation meaning that Windows users were forced to choose between two subpar options when using OpenAI's coding agents:
+- Approving nearly every command (even reads) that a coding agent wanted to run, which is inefficient and pesky. A major benefit of using Codex is that you don’t have to do all the tedious work yourself.
+- Enabling Full Access mode: letting Codex run all commands without approval or restrictions, which removes friction at the expense of oversight.
+Codex, our coding agent, runs on developer laptops—whether that's through the CLI, the IDE extension, or the desktop app. It manages a conversation between a human at a keyboard and a model running in the cloud to handle inference.
+Codex runs with the permissions of a real user by default, meaning it can do everything the user can do. This is powerful and potentially dangerous. The coding model may tell the harness to run commands locally, from running tests to reading or editing a file to creating a Git branch, so Codex's default mode attempts to find the right balance between effectiveness and safety. This default mode allows Codex to read files almost anywhere and write files within your workspace (i.e., the directory where you're running Codex), with no internet access unless you specify you want it. To achieve this automatic constraint of writing files and accessing the network within safe bounds, Codex needs a sandbox environment that actually enforces these constraints.
+A sandbox is a constrained execution environment. When a developer uses Codex, their computer's operating system launches a command with reduced permissions, and those constraints propagate down the process tree. Every Codex command is sandboxed from the start, and every descendant process stays inside the same boundary.
+Codex needs isolation features enforced by the computer's operating system to implement an effective sandbox. Some operating systems provide utilities that do this well (e.g., Seatbelt on MacOs, seccomp or bubblewrap on Linux); however, Windows doesn't currently provide this type of capability out of the box.
+To make Codex just as safe and delightful to use on Windows as it already is everywhere else, we needed to implement our own sandbox.
+Windows offers some tools and primitives for isolation. While none of them quite met our requirements, we looked at a number of potential solutions—namely, AppContainer, Windows Sandbox, and Mandatory Integrity Control labeling.
+AppContainer
+- What: AppContainer is the native Windows sandbox, a capability-based isolation model built for apps that know, up front, exactly what they need to access.
+- Why: Appealing because it offers a real OS boundary instead of best-effort restrictions.
+- Why not: Codex is not one tightly scoped app. It drives open-ended developer workflows: shells, Git, Python, package managers, build tools, and whatever other binaries the agent decides it needs. In practice, that made AppContainer the wrong shape for the problem. It was strong isolation, but for a much narrower class of workloads than “let an agent operate like a developer.”
+Windows Sandbox
+- What: Windows Sandbox is Microsoft’s disposable lightweight VM. You get a fresh Windows desktop with a strong isolation boundary, and whatever you do inside it disappears when the session ends.
+- Why: Interesting for obvious reasons—far more compatible with arbitrary software than AppContainer, and from a security perspective it's a much stronger box.
+- Why not: Codex needs to act directly on the user’s actual checkout, tools, and environment, not inside a separate throwaway desktop that would need setup and host/guest bridging. It also had a fundamental product problem: Windows Sandbox isn't even available on Windows Home SKUs.
+Mandatory Integrity Control (MIC) integrity labeling
+- What: Windows has a concept called “integrity levels,” such as low, medium, and high, that determine how much the system trusts objects and processes. The basic rule is that a lower-integrity process cannot write to an object with a higher integrity level, even if the normal ACL would otherwise allow it. For example, a low-integrity process is treated as less trusted, so Windows blocks it from writing to normal medium-integrity objects, unless those objects are explicitly relabeled to allow it.
+- Why: MIC looked elegant on paper—run Codex at low integrity, relabel the writable roots as low integrity, and let Windows enforce no-writes everywhere else. That would've given us a non-admin path with a real OS mechanism behind it.
+- Why not: Like ACLs, integrity labels modify the real host filesystem, and in this case the semantic change is especially broad. Marking a workspace as low integrity does not just mean “Codex can write here.” It means low-integrity processes in general can write there. On a real developer machine, that turns the user’s actual checkout into a low-integrity sink for the host, which is much riskier than granting carefully targeted ACLs to one sandbox design. Even if medium-integrity developer tools continue to work, the underlying trust model of the workspace has changed in a way that's hard to contain and harder to justify.
+Having evaluated all of the options as non-starters, we started designing our own solution to bring a good Codex experience to Windows users.
+Our first working prototype used a combination of Windows concepts and tools to implement the isolation we needed. From the beginning, one goal was to make this work without requiring elevation, meaning that Codex would not need to prompt the user for administrator privileges just to set up or run the sandbox. That meant figuring out how to put reasonable limits on two things: file writes and network access.
+If we didn't limit file writes at all, we'd have a safety issue. If we limited file writes too much, the sandbox would hurt user productivity, needing to ask for constant approval. To solve this problem, we relied on two important Windows building blocks: SIDs and write-restricted tokens.
+A SID, or security identifier, is the identity Windows ties to permissions. Each user has a SID, groups have SIDs, and even a single login session gets its own SID. For example, a current logged-in session might have a SID like S-1-5-5-X-Y
+. The SID assigned to the local administrators group might be S-1-5-32-544
+.
+Windows also lets you create synthetic SIDs that don't correspond to a real user but can still appear in ACLs (access control lists), which define who can read/write/execute specific files or directories. That makes SIDs a useful primitive for our sandbox: we can create SIDs exclusively for the Codex sandbox to use, without interfering with anything else on the machine.
+Process tokens are security objects in Windows that define identity and privileges for a running process. They determine what actions a process can perform. A write-restricted token is a particular type of process token that makes Windows perform an additional access check on write operations.
+In order for a write to succeed, two checks must pass:
+- The normal user identity (the token “owner”) must be allowed to do it
+- At least one SID in the token’s restricted SID list must also be granted access
+In practice, these checks let us use ACLs to define exactly where the sandbox could modify the filesystem, which offered the granularity we needed around write operations.
+With SIDs and write-restricted tokens, our unelevated sandbox worked like this:
+- The sandbox setup created a synthetic SID called
+sandbox-write
+. - The
+sandbox-write
+SID was granted write, execute, and delete access to- The current working directory
+- Any additional
+writable_roots
+configured inconfig.toml
+.
+- The sandbox setup explicitly denied that same SID write access to “read-only within writable” locations such as:
+<cwd>/.git
+<cwd>/.codex
+<cwd>/.agents
+- Codex launched commands under a write-restricted token whose restricted SID list includes
+Everyone
+, the current logged in session SID, and thesandbox-write
+synthetic SID.
+This flow effectively solved limiting file writes and seemed promising. Now we needed a solution for limiting the sandbox's network access.
+Limiting network access is an important part of the sandbox; without it, malicious code could exfiltrate data from the machine up to the internet. Because we wanted to avoid an elevation requirement, we had limited options to strongly block network traffic. The tools we wanted to use, like Windows Firewall, generally could not be installed without admin permissions.
+Without Windows Firewall as an option, we limited what we could control. We tried to make the child environment fail-closed for the kinds of networked tools developers actually use, so that Git commands, package installers, etc., would fail in the sandbox and the user would have to approve any internet-facing operations. The idea was to poison the obvious escape hatches: send proxy-aware traffic to a dead endpoint, make Git’s HTTP(S) transport do the same, and make Git over SSH fail immediately. On top of that, we prepended a small denybin
+directory to PATH and reordered PATHEXT
+so stub SSH and SCP scripts would resolve before the real binaries.
+For example, here are some of the specific environment overrides we used to limit network access:
+HTTPS_PROXY=http://127.0.0.1:9
+ALL_PROXY=http://127.0.0.1:9
+GIT_HTTPS_PROXY=http://127.0.0.1:9
+NO_PROXY=localhost,127.0.0.1,::1
+GIT_SSH_COMMAND=cmd /c exit 1
+That caught a lot of normal tool-driven traffic, but it was still only advisory. A process could ignore the environment, bypass PATH, or just open sockets directly—too risky.
+As with any interesting software implementation, the first prototype had some pros and cons. While it got the job done with only a few standard Windows capabilities, allow...
+(Pokracovani na webu)|E||T|Václav Moravec chystá nový pořad, Česká televize trvá na konkurenční doložce|D|13.05.2026 10:56|P|Bývalý moderátor České televize Václav Moravec podle informací z médií plánuje na květen či červen svůj nový pořad. Konkurenční doložka v jeho smlouvě...|X|Bývalý moderátor České televize Václav Moravec podle informací z médií plánuje na květen či červen svůj nový pořad. Konkurenční doložka v jeho smlouvě s Českou televizí je však i nadále platná. Potvrdili to zástupci vedení televize na zasedání Rady ČT.
 Téma na jednání vnesl radní Ivan Tesař, kterého zajímalo, jak se moderátorovy plány na nový projekt slučují s jeho dosavadními závazky vůči televizi. Zástupci vedení ČT jasně deklarovali, že s Václavem Moravcem neuzavřeli žádnou dohodu o tom, že by jeho konkurenční doložka byla vypovězena či ukončena dohodou.
 Vedoucí kanceláře generálního ředitele České televize Jiří Hrabovský dodal, že k žádné změně nedošlo a veškeré informace čerpá televize pouze z Moravcových prohlášení v médiích. „Vůbec nemáme představu o nějakém pořadu ani o formátu, ani o tom, kdy, jak, co,“ uvedl Hrabovský na zasedání.
 Předmětem diskuse se stalo i finanční pozadí celého sporu. Radní Tesař upozornil na další mediální zprávy, podle kterých Václav Moravec posílá peníze vyplacené na základě konkurenční doložky zpět na účet České televize. K tomuto bodu se zástupce vedení odmítl detailněji vyjádřit s odkazem na opatrnost při komentování vztahů s bývalými zaměstnanci.
@@ -1092,29 +1090,7 @@ Codex quickly proved valuable across several high-impact use cases, including au
 - Evaluate AI tools rigorously using measurable engineering metrics
 - Focus on augmenting—not replacing—existing team capabilities
 AutoScout24 Group continues to expand its use of AI across both internal workflows and customer-facing products. Future efforts will focus on deeper integration of AI into core systems, enabling even greater automation and intelligence across the platform.
-As the company scales its AI capabilities, it aims to further enhance user experiences, empower teams across functions, and unlock new efficiencies in how products are built and delivered.|E||T|How NVIDIA engineers and researchers build with Codex|D|12.05.2026 00:00|P|Teams use Codex with GPT-5.5 to ship production systems and turn research ideas into runnable experiments.|X|How NVIDIA engineers and researchers build with Codex
-Teams use Codex with GPT‑5.5 to ship production systems and turn research ideas into runnable experiments.
-Results
-10x
-Speed improvement in end-to-end research workflows
-Results
-40k
-NVIDIANs with access to Codex
-At NVIDIA, engineers are using Codex as their default tool for complex engineering work, and to run end-to-end machine learning experiments. Codex, built on GPT‑5.5 and running in production on NVIDIA GB200 and GB300 infrastructure, can handle much longer, more autonomous sessions — going beyond execution to surface issues and ideas that weren't part of the original prompt.
-“Codex is our go-to tool for complex engineering tasks, and with GPT-5.5, it surfaces bugs and gaps in my program that other models weren’t able to find.”
-NVIDIA’s coding agents team helps engineers across the company adopt and use AI tools effectively in real-world development workflows. Codex with GPT‑5.5 has become their go-to tool for complex engineering tasks.
-“I’ve personally found Codex with GPT‑5.5 to be way more autonomous, with much less handholding,” explains Dennis Hannusch, a senior software engineer on the agents team. “I’m able to go for long sessions with multiple compactions and find that it still performs with top accuracy and manages to keep the work in context. And it’s great at tactically selecting the right tools as well as the right skills.”
-Hannusch has already used Codex to evolve an internal platform from an MVP into a production-ready system, improving scalability and reliability along the way, something that had proven difficult with earlier models.
-The team has also built an internal podcast recording app, similar to Riverside, spun up in just hours using Codex. “Given our privacy constraints, it would have taken us weeks to procure software,” Hannusch explains.
-Using the Codex desktop app with computer interaction, the system was also able to test the video and audio recording functionality as it was built. “I didn’t have to do anything—it was built and tested completely autonomously,” he says. “Codex has completely changed the threshold for what’s worth building.”
-“It’s been a 10x speed improvement just in terms of running experiments, because it’s able to handle the whole end-to-end machine learning research workflow.”
-For NVIDIA’s research teams, Codex has largely automated the research loop: from identifying research areas, to writing scripts for machine learning experiments, to running the experiments on remote machines.
-“GPT‑5.5 has been a massive unlock as a creative partner, especially when it comes to knowledge work,” says Shaunak Joshi, an AI researcher at NVIDIA.
-The team uses Codex as a research agent, pointing the model at a large corpus of relevant papers in areas like reinforcement learning. “GPT‑5.5 seems to be much more creative compared to competitors,” Joshi says. “It helped me trace snippets of evidence throughout the entire chain, and suggested a knowledge graph of the ideas that really helped me visualize how concepts tied together.”
-After identifying hypotheses, Codex writes the scripts on machine learning infrastructure to train models. The Codex app supports SSH, so Joshi has found that he no longer has to worry about log-in and setup on remote hosts; he can easily run large machine learning workloads from his laptop.
-“If you have an old codebase that isn’t that performant, Codex is really good at machine translation. So a lot of folks are taking their Python repository, sending it to GPT-5.5, and it’s rewriting it into Rust and making it like 20X more efficient.”
-Codex is accelerating work at NVIDIA across engineering and research teams, taking ideas from concept to execution and testing in a single workflow.
-“We’re just scratching the surface of what it can do,” Hannusch says. “I’m really excited to keep building real systems and see how far it can go.”|E||T|What Parameter Golf taught us about AI-assisted research|D|12.05.2026 00:00|P|Parameter Golf brought together 1,000+ participants and 2,000+ submissions to explore AI-assisted machine learning research, coding agents, quantizati...|X|What Parameter Golf taught us
+As the company scales its AI capabilities, it aims to further enhance user experiences, empower teams across functions, and unlock new efficiencies in how products are built and delivered.|E||T|What Parameter Golf taught us about AI-assisted research|D|12.05.2026 00:00|P|Parameter Golf brought together 1,000+ participants and 2,000+ submissions to explore AI-assisted machine learning research, coding agents, quantizati...|X|What Parameter Golf taught us
 Lessons from 1,000+ participants, 2,000+ submissions, and an open machine learning challenge shaped by coding agents.
 We launched Parameter Golf to engage and support the machine learning research community in exploring a new, tightly constrained machine learning problem. We wanted the challenge to be interesting enough to reward real technical creativity, while remaining conceptually simple and easy to verify.
 Participants had to minimize held-out loss on a fixed FineWeb dataset while staying within a 16 MB artifact limit, including both model weights and training code, and a 10-minute training budget on 8×H100s. We provided a baseline, dataset, and evaluation scripts so participants could fork the repo, improve the model, and submit their results through GitHub.
@@ -1144,4 +1120,26 @@ At the same time, agent use created new issues for submission and scoring. Many 
 The volume of submissions also changed how we had to run the competition. We could not manually inspect every submission and still keep the leaderboard moving. During the challenge, we developed an internal Codex-based triage bot to monitor new submissions and flag them for human review. This became especially important during periods when we received hundreds of submissions a day.
 AI agents also became part of the community around the challenge. For much of the competition, @notapplica and their coding agent ran a “Live Updates” bulletin, tracking major events, explaining leaderboard approaches, and helping other participants follow the competition. Community review tools also appeared to help less experienced participants check whether their submissions were within the rules and avoid common invalid approaches.
 Our primary goal was to launch a challenge that eligible participants(opens in a new window) could take part in and experience machine learning research. Parameter Golf brought in a wide range of technically strong and creative submissions, and it gave us a clearer view of how open research competitions may change as AI agents become more capable and widely used.
-We are thinking about launching more challenges like this in the future. If you’re interested, please fill out the challenge participant form(opens in a new window).|E|
+We are thinking about launching more challenges like this in the future. If you’re interested, please fill out the challenge participant form(opens in a new window).|E||T|How NVIDIA engineers and researchers build with Codex|D|12.05.2026 00:00|P|Teams use Codex with GPT-5.5 to ship production systems and turn research ideas into runnable experiments.|X|How NVIDIA engineers and researchers build with Codex
+Teams use Codex with GPT‑5.5 to ship production systems and turn research ideas into runnable experiments.
+Results
+10x
+Speed improvement in end-to-end research workflows
+Results
+40k
+NVIDIANs with access to Codex
+At NVIDIA, engineers are using Codex as their default tool for complex engineering work, and to run end-to-end machine learning experiments. Codex, built on GPT‑5.5 and running in production on NVIDIA GB200 and GB300 infrastructure, can handle much longer, more autonomous sessions — going beyond execution to surface issues and ideas that weren't part of the original prompt.
+“Codex is our go-to tool for complex engineering tasks, and with GPT-5.5, it surfaces bugs and gaps in my program that other models weren’t able to find.”
+NVIDIA’s coding agents team helps engineers across the company adopt and use AI tools effectively in real-world development workflows. Codex with GPT‑5.5 has become their go-to tool for complex engineering tasks.
+“I’ve personally found Codex with GPT‑5.5 to be way more autonomous, with much less handholding,” explains Dennis Hannusch, a senior software engineer on the agents team. “I’m able to go for long sessions with multiple compactions and find that it still performs with top accuracy and manages to keep the work in context. And it’s great at tactically selecting the right tools as well as the right skills.”
+Hannusch has already used Codex to evolve an internal platform from an MVP into a production-ready system, improving scalability and reliability along the way, something that had proven difficult with earlier models.
+The team has also built an internal podcast recording app, similar to Riverside, spun up in just hours using Codex. “Given our privacy constraints, it would have taken us weeks to procure software,” Hannusch explains.
+Using the Codex desktop app with computer interaction, the system was also able to test the video and audio recording functionality as it was built. “I didn’t have to do anything—it was built and tested completely autonomously,” he says. “Codex has completely changed the threshold for what’s worth building.”
+“It’s been a 10x speed improvement just in terms of running experiments, because it’s able to handle the whole end-to-end machine learning research workflow.”
+For NVIDIA’s research teams, Codex has largely automated the research loop: from identifying research areas, to writing scripts for machine learning experiments, to running the experiments on remote machines.
+“GPT‑5.5 has been a massive unlock as a creative partner, especially when it comes to knowledge work,” says Shaunak Joshi, an AI researcher at NVIDIA.
+The team uses Codex as a research agent, pointing the model at a large corpus of relevant papers in areas like reinforcement learning. “GPT‑5.5 seems to be much more creative compared to competitors,” Joshi says. “It helped me trace snippets of evidence throughout the entire chain, and suggested a knowledge graph of the ideas that really helped me visualize how concepts tied together.”
+After identifying hypotheses, Codex writes the scripts on machine learning infrastructure to train models. The Codex app supports SSH, so Joshi has found that he no longer has to worry about log-in and setup on remote hosts; he can easily run large machine learning workloads from his laptop.
+“If you have an old codebase that isn’t that performant, Codex is really good at machine translation. So a lot of folks are taking their Python repository, sending it to GPT-5.5, and it’s rewriting it into Rust and making it like 20X more efficient.”
+Codex is accelerating work at NVIDIA across engineering and research teams, taking ideas from concept to execution and testing in a single workflow.
+“We’re just scratching the surface of what it can do,” Hannusch says. “I’m really excited to keep building real systems and see how far it can go.”|E|

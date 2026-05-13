@@ -45,13 +45,13 @@ platby: ano
 hudba: ano
 odolnost: 5 ATM, MIL-STD810H
 Pokračování 4 / 26 OnePlus Watch 3
-Nejlepší hodinky s vysokou výdrží a rychlým nabíjením
+Wear OS hodinky s vysokou výdrží a nejlepším poměrem cena/výkon.
 Když chcete hodinky se systémem Wear OS a máte v kapse Android, musíte často překousnout jejich mizerou výdrž. Jeden nebo dva dny není při pohledu na Garminy a hodinky s polouzavřeným systémem nic světoborného. OnePlus však u hodinek používá dva procesory, kterými se dokáže dostat na daleko lepší výdrž. A nejnovějšími hodinkami na této duální architektuře jsou OnePlus Watch3 vyrobené z titanu a nerezové oceli.
 V českých obchodech stojí až Kč
 Porovnat ceny
 Zobrazování zajišťuje 1,5" AMOLED displej krytý safírem s jasem až 2 200 nitů, hodinky jsou navíc osazeny 631mAh baterií. Díky hlavnímu a úsporném procesoru dokáže běžet na jedno nabití při běžném používání tři až pět dní, což je až trojnásobek oproti jiným hodinkám s Wear OS. S aktivním Always On se ale výdrž zkracuje. K ovládání slouží otočná korunka, boční tlačítka a dotykový displej.
 Hodinky změří tep, okysličení krve, analyzují pohyb, změří teplotu, natočí EKG a detekují spánek. Navíc je samozřejmě monitoring více než 100 sportovních aktivit, přičemž některé z nich dokáží hodinky snadno rozpoznat. U vybraných aktivit pak sledují tempo či zóny srdečního tepu. Ve výbavě nechybí ani GPS, přehrávání hudby (uložené ve 32GB paměti) nebo bezkontaktní placení.
-Základní verze hodinek má rozměry 46 mm, OnePlus ještě uvedl do prodeje menší verzi hodinek OnePlus 3 43mm . Ta má nepatrně nižší cenovku a také kompletně přepracovaný design. Záležet tak bude na tloušťce vašeho zápěstí nebo na uživatelských preferencích.
+Základní verze hodinek má rozměry 46 mm, OnePlus ještě uvedl do prodeje menší verzi hodinek OnePlus 3 43mm . Ta má nepatrně nižší cenovku a také kompletně přepracovaný design. Záležet tak bude na tloušťce vašeho zápěstí nebo na uživatelských preferencích. Do výběru jsme zařadili loňský model, i když se na trhu nabízí podobné modernější hodinky Oppo Watch X3 od mateřské značky. Mají lehčí tělo, odolnější materiály, vyšší jas displeje a novější verzi systému. Základní hardware a výdrž - tady se nic podstatného nezměnilo. Ale je nutné si za ně několik tisíc připlatit.
 Základní parametry
 displej: dotykový 1,5" AMOLED, rozlišení 466 × 466 pixelů
 výdrž baterie: 3 až 5 dní
@@ -75,7 +75,7 @@ platby: ano
 hudba: ano
 odolnost: 5 ATM
 Pokračování 6 / 26 Xiaomi Watch 5
-Wear OS hodinky s nejdelší výdrží
+Wear OS hodinky s největší baterií
 Xiaomi Watch 5 převzaly štafetu hodinek s největší výdrží od OnePlus. Nové hodinky kombinují dvojici procesorů (Snapdragon W5 Gen 1 a nízkoenergetický koprocesor BES2800) a navíc jsou osazeny obří křemíkovou baterií (s 10% podílem křemíku). Na poměry chytrých hodinek je kapacita 930 mAh výrazným nadstandardem. Díky ní vydrží hodinky v chytrém režimu až 6 dní na jedno nabití – a to mluvíme o hodinkách s operačním systémem Wear OS, nikoli o nějaké uzavřené alternativě.
 V českých obchodech stojí až Kč
 Porovnat ceny
@@ -91,8 +91,5 @@ hudba: ano
 odolnost: 5 ATM
 Pokračování 7 / 26 Redmi Watch 6
 Levné hodinky s NFC za příplatek
-Značka Redmi nabízí v Česku cenově dostupné hodinky Redmi Watch 6 , u nichž si můžete připlatit za NFC. Pokud bezkontaktní platby přes Mi Pay nevyužijete, ušetříte několik set korun. Základ je u obou modelů shodný. Získáte hliníkové unibody s nerezovou korunkou a čtvercovým 2,07" AMOLED displejem chráněným sklem Panda Glass. Hodinky s voděodolností 5 ATM podporují dvoupásmové GPS a nabízejí více než 150 sportovních režimů.
-V českých obchodech stojí až Kč
-Porovnat ceny
-Hodinky změří okysličení krve, kvalitu spánku, srdeční tep a menstruační cyklus. Zároveň poslouží jako prodlouže...
+Značka Redmi nabízí v Česku cenově dostupné hodinky Redmi Watch 6 , u nichž si můžete připlatit za NFC. Pokud bezkontaktní platby přes Mi Pay nevyužijete, ušetříte několik set korun. Základ je u obou modelů shodný. Získáte hliníkové unibody s nerezovou koru...
 (Pokracovani na webu)

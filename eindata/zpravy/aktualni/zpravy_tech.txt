@@ -1,4 +1,135 @@
-|T|Garmin má nové nejlevnějších běžecké hodinky Forerunner, výrazně posouvají možnosti low-endových modelů|D|13.05.2026 07:56|P|Nejdostupnější běžecké hodinky Garminu budou stát lehce přes 6 tisíc a nabídnou většinu podstatných funkcí. Vyšší model 170 bude mít i verzi Music s o...|X|Garmin představil hodinky Forerunner 70 a Forerunner 170, dva nejdostupnější běžecké modely. Oba jsou určené hlavně pro začínající a rekreační běžce, výbavou se ale přibližují dražším Forerunnerům. Nabízejí 1,2" AMOLED displej, dotykové ovládání a pět fyzických tlačítek. Na hraně je jas displeje 1 000 nitů, který už může být hůře čitelný na přímém slunci. Pro dobrou čitelnost je solidní hodnotou 1 500 nitů, ideálem potom 2 000 nitů a víc.
+|T|Startup Rossum kupuje americká Coupa, česká technologie se schová do platformy pro autonomní řízení firemních výdajů|D|13.05.2026 10:31|P|Český AI startup Rossum koupila americká společnost Coupa Software, platforma pro autonomní správu firemních výdajů. Hodnotu transakce firmy nezveřejn...|X|Český AI startup Rossum koupila americká společnost Coupa Software, platforma pro autonomní správu firemních výdajů. Hodnotu transakce firmy nezveřejnily. Akvizice navazuje na partnerství obou firem, které trvá od roku 2024. To Rossum fungoval uvnitř platformy Coupa, kde automatizoval zpracování složitých faktur pro týmy závazků. Nyní budou jeho systémy rozšířeny celým portfoliem Coupa. To má umožnit plně autonomní řízení výdajů s pomocí agentní AI.
+Rossum spoluzaložili Tomáš Gogár, Petr Baudiš a Tomáš Tunys a soustředili se na automatizaci zpracování faktur a dalších transakčních dokumentů s AI. Firma patří mezi nejviditelnější české startupy. Vystavěla proprietární transakční velký jazykový model (T-LLM) trénovaný na desítkách milionů dokumentů, který se průběžně učí ze specifické dokumentové sady každého zákazníka. Získala několik investic a v roce 2021 zaujala se Series A investicí 100 milionů dolarů od General Catalyst – v té době šlo o jedno z největších kol v oblasti softwarové automatizace v Evropě.
+„Spojením naší proprietární transakční inteligence T-LLM s obrovským datasetem Coupa v hodnotě 10 bilionů dolarů jsme dobře připraveni vytvořit okamžitou hodnotu pro zákazníky a zásadně změnit, jak svět nakupuje a prodává,“ představuje si Gogár.
+Coupa letos slaví 20 let na trhu a její platformu používá více než 10 milionů nakupujících a dodavatelů. Společnost staví na komunitně generovaném datasetu v objemu 10 bilionů dolarů, na jehož základě poskytuje AI agenty pro automatizaci nákupních a transakčních procesů.|E||T|Chromebooky už nejsou in. Nové Google počítače Googlebook sázejí na Android, prémiový hardware a hloubkovou AI|D|13.05.2026 09:46|P|Google ukázal, jak si představuje budoucnost Androidu. Velkou roli v ní hraje všudypřítomné AI a zbrusu nové notebooky GoogleBook. Prémiová zařízení s...|X|Google letos stihnul ještě před tradiční I/O konferencí uspořádat The Android Show, na které se pochlubil svou vizí budoucnosti Androidu. Největší pozornost ale nakonec nepřitáhly nové funkce (a násilné tlačení AI uživatelům), ale představení takzvaných Googlebooků. Jde o zbrusu novou generaci notebooků postavených na Androidu s hlubokou integrací Gemini Intelligence.
+Prémiové AI stroje, které postupně nahradí Chromebooky
+O samotných Googleboocích toho Google zatím moc neprozradil. Z toho mála, co však víme, se má jednat o prémiová zařízení úzce propojená s Android telefony s jádrem Gemini Intelligence. Ta má uživatelům pomáhat prakticky při každodenní činnosti.
+Jednou z představených funkcí je například Magic Pointer. AI zde reaguje už na samotný pohyb kurzoru a nabízí chytré kontextové akce a doporučení. Například najetím kurzoru nad datum nabídne Googlebook automatické vložení události do kalendáře. Jiná AI funkce má pracovat s Nano Banana a automaticky navrhnout spojení dvou obrázků po jejich označení.
+Na vývoji Google spolupracuje s výrobci jako Acer, Asus, Dell, HP nebo Lenovo. První model by se měly objevit na trhu už letos na podzim. Více informací o Googlebooks zatím nevíme, pravděpodobně se však jedná o dříve avizovaný Aluminum OS, interní snahu společnosti sjednotit Android a ChromeOS do jedné ucelené platformy.
+Android bude ještě více o umělé inteligenci
+Velkou část prezentace zabral také samotný Android a nové funkce pod označením Gemini Intelligence. Zatímco jiní od násilného protlačování AI pomalu ustupují, Google jde přesně opačným směrem a chce umělou inteligenci dostat napříč celým ekosystémem. Od telefonů přes chytré hodinky až po auta nebo notebooky.
+Už nyní putuje umělá inteligence do Chromu, Android Auto dostalo příslib přepracovaného rozhraní založeného na Material 3 Expressive a mnoho dalšího. Google v konferenci naznačil, že letošní I/O bude ještě více zaměřené na umělou inteligenci než kdy předtím. V kontextu toho tak The Android Show vypadá jen jako začátek proměny Androidu v něco obřího, kde už nebude hlavní jen telefon, ale propojený AI ekosystém napříč všemi zařízeními.|E||T|Zastavte dům a prodejte auto. Lego chystá obří a pekelně drahou repliku hradu Minas Tirith ze série Pán prstenů|D|13.05.2026 09:45|P|Minas Tirith jde do prodeje zkraje června • Stavitelský skvost přijde skoro na 16 tisíc korun • Prohlédněte si dalších 15 nejdražších stavebnic Lego|X|Ukázat všechny listy najednou
+Stornujte zaplacené letní dovolené a zrušte hypotéky, Lego totiž zkraje června vypustí do prodeje jednu z největších stavebnic, která nesmí chybět v našem výběru nejdražších setů.
+Na své si přijdou fanoušci trilogie Pán prstenů, Dánové totiž připravili repliku skalního hradu Minas Tirith. Čítá 8278 kostiček , má rozměry 59×62×37 cm (v×š×h) a zájemce přijde na 15 799 korun . K dispozici bude od 4. června.
+Do detailu propracovaný skalní hrad. Další fotky najdete v galerii
+Fanoušci Pána prstenů ocení zejména hromadu detailů na stavbě včetně scének, které znají z knih i filmového zpracování. Minas Tirith je zároveň dalším přírůstkem do série Středozemě, ve které najdete také dioráma domova Bilba Pytlíka, Mordor nebo třeba roklinku.
+Na dalších listech si projděte výběr patnácti nejdražších stavebnic od dánského Lega, které vedle ceny zaujmou svoji velikostí, propracovaností nebo technickým aspektem
+Pokračování 2 / 16 Přehled nejdražších stavebnic jsme sestavili z nabídky na webu Lego a podle oficiálních cen na stránkách výrobce. Běžně se ale dají koupit i levněji.
+Přehlídka začíná na částce 11 499 Kč a u absolutně nejdražšího kousku končí nad hranicí pětadvaceti tisíc korun.
+Tropické akvárium (10366)
+Do populární série Lego Icons připlulo vizuálně atraktivní Tropické akvárium . Stavebnice cílí primárně na dospělé stavitele a milovníky podmořského světa (18+), kteří touží po efektu uklidňující přírody v obýváku, ale nechtějí řešit filtraci vody nebo krmení. Dánové vytvořili pestrobarevný ekosystém s tropickými útesy a barevnými korály i rybičkami.
+V českých obchodech stojí až Kč
+Porovnat ceny
+Tropické akvárium (10366)
+V krabici čeká 4154 kostiček . Místo minifigurek zde najdete mořské živočichy – poskládáte si čtyři exotické ryby, mořské plže či ústřici ukrývající perlu. Zajímavé jsou mechanické prvky. Otočením kliček nebo knoflíků můžete rozvlnit pestré korály a sasanky, nechat vynořit kraba z jeskyně, otevřít truhlu s pokladem nebo plynule rozpohybovat plovoucí pruhovanou rybu.
+Tropické akvárium (10366)
+Sestavené akvárium má rozměry 52 × 36 × 28 cm. Je to zajímavá stavebnice pro každého, kdo hledá výrazný interiérový doplněk, nebo třeba dárek pro fanoušky oceánografie. Za tento propracovaný set podmořského světa zaplatíte v oficiálním e-shopu 11 499 Kč .
+Pokračování 3 / 16 McLaren P1 (42172)
+Pro milovníky rychlých kol a špičkového inženýrství nabízí řada Lego Technic stavebnici legendárního vozu McLaren P1 . Je určena dospělým stavitelům od 18 let, kterým nabídne pohlcující konstrukční zážitek.
+V českých obchodech stojí až Kč
+Porovnat ceny
+McLaren P1 (42172)
+Stavebnice se skládá z 3893 dílků , ze kterých sestavíte propracovanou repliku. Těšit se můžete na detaily, jako je sedmistupňová převodovka s řadicím bubnem nebo detailní pístový motor V8. Jsou zde také výklopné motýlí dveře a nastavitelné zadní křídlo. Bonusem je speciální dílek s jedinečným sériovým číslem, který odemkne přístup k digitálnímu obsahu.
+McLaren P1 (42172)
+Hotový model v měřítku 1:8 měří 59 × 25 × 14 cm. Na webu výrobce je k mání za 11 499 Kč .
+Pokračování 4 / 16 Pán prstenů: Barad-dûr (10333)
+Vydejte se do temné Středozemě se stavebnicí Pán prstenů: Barad-dûr s katalogovým číslem 10333 ze série Lego Icons. Pevnost Temného pána Saurona představuje legendární filmovou lokaci, která ožívá v úchvatném měřítku. Set cílí primárně na dospělé stavitele a sběratele od osmnácti let.
+V českých obchodech stojí až Kč
+Porovnat ceny
+Pán prstenů: Barad-dûr (10333)
+Sada obsahuje 5471 dílků . Samotná věž je plná skrytých funkcí a nabízí detailní interiér. Najdete zde Glumovu skrýš, temnou kovárnu, vězení, trůnní sál s tajnou mapou i knihovnu. Sauronovo oko na vrcholku navíc svítí. Atmosféru podtrhuje deset minifigurek, mezi kterými nechybí Sauron, Ústa Sauronova, Frodo, Sam, Glum ani obávaný skřet Gothmog s věrnými doplňky.
+Pán prstenů: Barad-dûr (10333)
+Model má rozměry 83 × 45 × 30 centimetrů. Lego si za něj oficiálně řekně 11 599 Kč .
+Pokračování 5 / 16 Bradavický hrad (71043)
+Vstupte do magického světa čar a kouzel se stavebnicí Bradavický hrad . Jde o model ze série Lego Harry Potter. Dospělým sběratelům i vášnivým nadšencům nabídne skvělý zážitek ze stavění, při kterém ožijí ikonické scény a kouzelná atmosféra.
+V českých obchodech stojí až Kč
+Porovnat ceny
+Bradavický hrad (71043)
+Těšit se můžete na více než 6000 dílků , ze kterých sestavíte detailní hradní komplex. Během stavění objevíte Velkou síň s pohyblivým schodištěm, Tajemnou komnatu s baziliškem i Hagridovu chýši a Vrbu mlátičku. Život celému modelu vdechují čtyři minifigurky zakladatelů bradavických kolejí a 27 mikrofigurek studentů či profesorů. Magickou scénu doplňuje pětice mozkomorů, drak a pavouk Aragog.
+Bradavický hrad (71043)
+Sestavený model bude s rozměry 58 × 69 × 43 centimetrů nepřehlédnutelný. Za stavebnici zaplatíte v oficiálním e-shopu 11 999 Kč .
+Pokračování 6 / 16 Jabbův nákladní člun (75397)
+Přeneste se do nehostinných pouští a k ikonické scéně z filmu Star Wars: Návrat Jediho. Stavebnice Jabbův nákladní člun s katalogovým číslem 75397 oživuje slavné plavidlo zlověstného Hutta Jabby, známé jako Khetanna. Tento set ze sběratelské série je také primárně určen pro dospělé fanoušky.
+V českých obchodech stojí až Kč
+Porovnat ceny
+Jabbův nákladní člun (75397)
+V balení se nachází 3942 dílků . Sestavený model zaujme nastavitelnými plachtami a odklopnými boky, které odhalí propracovaný interiér s vězeňskou celou, zbrojnicí, detailním kokpitem i Jabbovou soukromou místností. Scénu oživí jedenáct sběratelských figurek, mezi nimiž nechybí princezna Leia, ikonický C-3PO, R2-D2 s barovým stolkem, Bib Fortuna a pochopitelně ani samotný vládce podsvětí Jabba Hutt.
+Jabbův nákladní člun (75397)
+Hotový křižník je obrovský, měří 77 × 25 × 25 centimetrů. K modelu navíc patří podstavec s informační cedulkou a pamětní kostkou k 25. výročí Lego Star Wars. Za tento sběratelský klenot zaplatíte 12 799 Kč .
+Pokračování 7 / 16 Pán prstenů: Roklinka (10316)
+Přeneste se do elfského údolí se stavebnicí Pán prstenů: Roklinka s katalogovým číslem 10316. Tento model ze série Lego Icons představuje poctu kultovní fantasy sérii. Stavebnice je navržena pro dospělé fanoušky a milovníky filmů.
+V českých obchodech stojí až Kč
+Porovnat ceny
+PÁN PRSTENŮ: ROKLINKA (10316)
+Čeká na vás úctyhodných 6167 dílků . Při stavění postupně odkryjete detaily, jako je Frodova ložnice, elfí kovárna, Elrondova pracovna či úlomky Narsilu. Scénu oživuje patnáct minifigurek, mezi kterými najdete kompletní Společenstvo prstenu, ale také Elronda, Arwen a Bilba Pytlíka. Figurky mají odnímatelné nohy, takže je můžete pohodlně usadit přímo do středu legendární Elrondovy rady.
+Pán prstenů: Roklinka (10316)
+Sestavená Roklinka měří 72 × 39 × 50 centimetrů. Komplex lze rozdělit na tři samostatné části – věž, radu a altán s řekou, což usnadňuje vystavení. Za výpravu do Středozemě zaplatíte v oficiálním e-shopu 12 799 Kč .
+Pokračování 8 / 16 Věž Avengerů (76269)
+Připomeňte si epické bitvy z filmové ságy Infinity se stavebnicí Věž Avengerů s katalogovým číslem 76269 z řady Lego Marvel. Jde o stavebnici, která zachycuje budovu Avengers Tower z filmového světa Marvel Cinematic Universe.
+V českých obchodech stojí až Kč
+Porovnat ceny
+Věž Avengerů (76269)
+Stavebnice se skládá z 5201 kostiček . Jedna strana a střecha jsou odnímatelné pro snadný přístup do interiéru. Fanoušci se mohou těšit na akční momenty, jako je souboj Kapitána Ameriky se sebou samým, Lokiho žezlo v laboratoři či start Quinjeta z hangáru. Model obsahuje také Leviathana a dvě vozidla Chitauri. Stavebnice obsahuje 31 minifigurek.
+Věž Avengerů (76269)
+Hotový model měří 90 × 34 × 25 centimetrů. V oficiálním e-shopu za něj zaplatíte 12 799 Kč .
+Pokračování 9 / 16 Lego Serious Play – Sada spojnic (2000431)
+Odpočiňte si od klasického skládání. Koncept Lego Serious Play – Sada spojnic cílí primárně na firemní workshopy, školní třídy a vzdělávací skupiny, kde hravou formou podporuje kreativní myšlení a týmovou komunikaci. Jde o ideální nástroj pro děti od šesti let i dospělé, kteří chtějí rozvíjet své sociální a emoční dovednosti.
+Lego Serious Play – Sada spojnic (2000431) (2000431)
+Sada obsahuje 2455 různorodých dílků . Nejsou zde minifigurky ani předem daný model, který máte sestavit. Jde skutečně o širokou škálu součástek a spojnic, které umožňují budovat komplexní struktury a vizualizovat abstraktní myšlenky. Součástí balení jsou tři plastové světle šedé nádoby určené pro třídění všech dílků. K plnému využití je nezbytné set kombinovat se Začátečnickou sadou a Sadou s krajinou a postavami.
+Jelikož se nejedná o tradiční model s jasně danými rozměry, výsledná velikost i podoba vašich výtvorů závisí čistě na fantazii a počtu účastníků. Nejde o běžný model na poličku, ale o nástroj pro řešení složitých problémů. Jde o edukační investici, která posune spolupráci ve vašem týmu na novou úroveň. V oficiálním e-shopu za tento set zaplatíte částku 13 999 Kč .
+Pokračování 10 / 16 Eiffelova věž (10307)
+Přeneste se do romantické Paříže a postavte si její nejznámější dominantu se stavebnicí Eiffelova věž s katalogovým číslem 10307. Tento model z řady Lego Icons je určen dospělým stavitelům starším osmnácti let.
+V českých obchodech stojí až Kč
+Porovnat ceny
+Eiffelova věž (10307)
+Těšit se můžete na úctyhodných 10 307 kostiček , které slibují dlouhý stavitelský zážitek. Konstrukce napodobuje skutečnou věž s jejími charakteristickými vzory, oblouky a typickými ocelovými prvky. Model je rozdělen na čtyři sekce a obsahuje tři vyhlídkové plošiny, výtahy či kancelář Gustava Eiffela. Realističnost umocňuje propracované znázornění pozemku pod věží s pařížskými lampami, lavičkami a okrasnými stromy.
+Eiffelova věž (10307)
+Výsledná stavba s výškou 149 centimetrů láme dosavadní rekordy. Na šířku zabere 57 centimetrů a její hloubka činí rovněž 57 centimetrů. Za tento architektonický klenot zaplatíte v oficiálním e-shopu 15 999 Kč .
+Pokračování 11 / 16 Útočný křižník Republiky třídy Venator (75...
+(Pokracovani na webu)|E||T|Čtečka PocketBook Era zlevnila. V našem testu porazila i Kindle|D|13.05.2026 08:45|P|Čtečka PocketBook Era zlevnila na 4157 Kč, běžně stojí pět tisíc. • Má 7" displej, české prostředí, tlačítka a další skvělou výbavu. • V našem testu v...|X|Čtečku PocketBook 700 Era teď můžete koupit v Alze jen za 4157 Kč . Jednou už stála i 4130 Kč, ale jinak je všude o několik stovek dražší a v průměru stojí přes pět tisíc. Aktuálně je levnější i než konkurenční Kindle Paperwhite 6, který na Amazonu ve verzi bez reklam standardně stojí 4500 Kč .
+PocketBook přitom může být pro mnohé uživatele lepší volbou, ostatně vyhrál náš loňský test čteček právě před čtečkami Kindle, Ony nebo Kobo. Era má stejně jako zmíněný Paperwhite sedmipalcový dotykový displej s podsvícením a rozlišením 300 ppi. Vsadil ale na jiný design. Kindle má bradu vespod, zatímco PocketBook se rozšiřuje na pravém boku, kde se dá snadno chytit palcem. A budou přitom po ruce i listovací tlačítka, zatímco konkurent se spoléhá jen na dotykové ovládání.
+Era má i jiné přednosti. Oproti Kindlu nabízí plně počeštěné prostředí a dokonce i obchod, kde se dají nakupovat české tituly. Kromě toho podporuje širší plejádu formátů včetně EPUB a PDF s ochranou Adobe DRM. Na palubě je reproduktor, takže čtečka umí přehrávat také audioknihy nebo má hlasové předčítání e-knih, byť to není moc kvalitní. Software pak obsahuje rovněž několik her a dalších funkcí včetně webového prohlížeče.
+PocketBook nabízí také vlastní cloudovou službu pro synchronizaci knihovny a nastavení, umí stahovat také knihy z osobního Dropboxu, ale do čtečky je nahrajete také bezdrátově či kabelem přímo z počítače.
+Kindle Paperwhite 6
+PocketBook 700 Era
+displej
+7", e-ink, 300 ppi, LED nasvícení, nastavitelná barevná teplota, automatický jas (jen Signature)
+7", e-ink, 300 ppi, LED nasvícení, nastavitelná barevná teplota, automatický jas
+úložiště
+16/32 GB
+16 GB
+výdrž
+až 12 týdnů
+až 4 týdny
+rozhraní
+USB-C 2.0, Wi-Fi 4, Bluetooth, Qi (jen Signature)
+USB-C 2.0, Wi-Fi 4, Bluetooth, reproduktor
+odolnost
+IPX8
+IPX8
+čeština
+ne
+ano
+fyzická tlačítka
+ne
+ano
+rozměry
+177 × 128 × 7,8 mm
+155 × 134 × 7,8 mm
+hmotnost
+211 g / 214 g (Signature)
+228 g
+barvy
+black, jade, raspberry
+stardust silver, sunset copper
+Samozřejmostí je voděodolné tělo a konektor USB-C. V Alze se dají koupit i magnetická pouzdra, která umí čtečku automaticky probudit a uspat, stojí okolo 400 Kč .
+Přes WhatsApp a Telegram vás upozorníme na novou slevu
+Slevové akce někdy netrvají dlouho nebo obchody mohou mít jen malé množství zlevněných produktů. Než se k článku dostanete, může být pozdě.
+Hlídač slev má ale své kanály v komunikátorech WhatsApp a Telegram . Klikněte na odkaz, otevře se v aplikaci. Jakmile vydáme článek o slevě, hned o tom dostanete zprávu. O akci se tak dozvíte v době, kdy je ještě stoprocentně platná.
+Jsme také na sociálních sítích Facebook , Threads , X , Bluesky , Mastodon , Discord a můžete odebírat naše RSS se slevami.
+WhatsApp má u kanálů vypnuté upozornění na nové zprávy . Musíte to změnit sami přes ikonu zvonku v pravém horním rohu aplikace. Viz žlutá šipka:
+Našli jste sami zajímavou slevu? Napište nám .
+Za nákup, který uskutečníte prostřednictvím odkazu v článku, může Živě dostat provizi.|E||T|Garmin má nové nejlevnější běžecké hodinky Forerunner, výrazně posouvají možnosti low-endových modelů|D|13.05.2026 07:56|P|Nejdostupnější běžecké hodinky Garminu budou stát lehce přes 6 tisíc a nabídnou většinu podstatných funkcí. Vyšší model 170 bude mít i verzi Music s o...|X|Garmin představil hodinky Forerunner 70 a Forerunner 170, dva nejdostupnější běžecké modely. Oba jsou určené hlavně pro začínající a rekreační běžce, výbavou se ale přibližují dražším Forerunnerům. Nabízejí 1,2" AMOLED displej, dotykové ovládání a pět fyzických tlačítek. Na hraně je jas displeje 1 000 nitů, který už může být hůře čitelný na přímém slunci. Pro dobrou čitelnost je solidní hodnotou 1 500 nitů, ideálem potom 2 000 nitů a víc.
 S lepší výbavou
 Forerunner 70 v podstatě nahrazuje starší Forerunner 55. Oproti němu přináší výrazně novější software a hlavně funkce, které jsou ve vyšších řadách standardem. Jsou to především pokročilejší sledování spánku, HRV, Pulse Ox, tréninkovou připravenost, stav tréninku, denní doporučené tréninky, a běžeckou dynamiku. Garmin přidal také rychlé návrhy tréninků, které se sestaví podle zadané délky a intenzity. Tím se z Forerunneru 70 stávají dobře použitelné běžecké hodinky, což u předchozího modelu 55 tak úplně neplatilo.
 Hlavní rozdíl mezi oběma novinkami je v senzorech a výbavě pro běžné používání. Forerunner 70 nemá Garmin Pay, barometr, kompas, gyroskop ani teploměr. Forerunner 170 jimi disponuje, navíc podporuje vybrané cyklistické funkce a ve verzi Music přidává offline hudbu se 4GB úložištěm. Oba modely používají optický snímač Elevate 4, což znamená absenci měření teploty pokožky. Stejně tak jim chybí duální GPS i SatIQ.
@@ -6,7 +137,12 @@ Průměrná výdrž
 Lepší výdrž má paradoxně levnější model. Forerunner 70 má zvládnout až 13 dní v režimu chytrých hodinek, 23 hodin s GPS a 16 hodin v režimu multiGNSS. Forerunner 170 vydrží až 10 dní, 19 hodin s GPS, 14 hodin s multiGNSS a u hudební verze 6,5 hodiny při přehrávání hudby. Rozdíl je dán absencí barometru a gyroskopu u levnějších Forerunnerů.
 Obě novinky mají tělo o rozměrech 42,6 × 42,6 × 11,9 mm, 20mm rychloupínací řemínek, vodotěsnost 5 ATM a hmotnost kolem 40 gramů.
 Garmin Forerunner 70 bude k dispozici za 6 290 Kč, Forerunner 170 za 7 690 Kč a nejdražší Forerunner 170 Music za 8 990 Kč. Prodávat se začnou 15. května.
-Zdroj: Garmin Rumors|E||T|Steve Jobs na pamětní dolarové minci. V USA takto uctili i další inovátory|D|13.05.2026 06:45|P|Americká mincovna od roku 2018 vydává pamětní mince věnované inovátorům. • Kalifornie nominovala Steva Jobse, jeho mince se již prodává. • Letošní sér...|X|Americká mincovna začala včera nabízet pamětní mince v hodnotě jednoho dolaru s podobiznou Steva Jobse. Na rubu mince je mladý zakladatel Applu, když sedí před krajinou s kopci porostlými duby. „Zachycen je v okamžiku zamyšlení. Jeho držení těla a výraz odrážejí, jak toto prostředí inspirovalo jeho vizi proměnit složitou technologii v něco stejně intuitivního a přirozeného, jako je sama příroda,“ uvádí mincovna. Na rubu je také jeho jméno a citát Make Something Wonderful (vytvořit něco úžasného).
+Zdroj: Garmin Rumors|E||T|Předplácíte si Discord Nitro? Teď k němu máte i startovní Xbox Game Pass bez dalších poplatků|D|13.05.2026 07:45|P||X|Po nedávném zlevnění nejdražších variant předplatného Xbox Game Pass přicházejí další novinky. Microsoft prohlubuje spolupráci s Discordem. První změna platí počínaje dneškem. Součástí předplatného Discord Nitro je i startovní varianta Game Passu, jejíž součástí je přes 50 her. Cena poplatků se přitom nemění . Ovšem pozor, musíte mít předplacené plnohodnotné Nitro za 9,99 € měsíčně, pro levnější Nitro Basic nabídka neplatí.
+Nový benefit je dostupný i pro uživatele v Česku a na Slovensku. V knihovně takto dostupných her najdete i velké tituly, jako je DayZ, Fallout 4, Stardew Valley nebo Grounded.
+Vedle klasického hraní můžete využít i deseti hodin streamingu přes Xbox Cloud Gaming každý měsíc. Do hry také bude jednodušší naskočit přímo z prostředí Discordu. Když někdo z vašeho seznamu přátel hraje hru, která je zároveň v Game Passu, můžete se na ni skrz jeho profil přímo prokliknout.
+Ke stávajícím výhodám předplatného Discord Nitro, jako jsou ozdoby profilu, streaming v HD nebo posílání větších souborů, přibývají s Game Passem další benefity v novém programu Nitro Rewards . Sem spadají slevy na nákup hardwaru od Logitechu, SteelSeries a KontrolFreek. A na závěr přihodí i větší množství Orbů, které fungují jako virtuální měna pro nákup kosmetických doplňků na profil a dalších odměn. V budoucnu hodlá Discord přidávat další bonusy.
+Pokud některou z novinek na Discordu nevidíte, nemusíte panikařit. Nitro Rewards se uživatelům aktivují postupně a někdy jejich zprovoznění může trvat i pár týdnů.
+Novinky brzy přijdou i v opačném směru. Předplatitelé Xbox Game Passu dostanou jako odměnu 250 orbů každý měsíc spolu se slevami při nákupech v digitálním obchodě Discordu. K tomu také získají lepší odměny za plnění questů.|E||T|Steve Jobs na pamětní dolarové minci. V USA takto uctili i další inovátory|D|13.05.2026 06:45|P|Americká mincovna od roku 2018 vydává pamětní mince věnované inovátorům. • Kalifornie nominovala Steva Jobse, jeho mince se již prodává. • Letošní sér...|X|Americká mincovna začala včera nabízet pamětní mince v hodnotě jednoho dolaru s podobiznou Steva Jobse. Na rubu mince je mladý zakladatel Applu, když sedí před krajinou s kopci porostlými duby. „Zachycen je v okamžiku zamyšlení. Jeho držení těla a výraz odrážejí, jak toto prostředí inspirovalo jeho vizi proměnit složitou technologii v něco stejně intuitivního a přirozeného, jako je sama příroda,“ uvádí mincovna. Na rubu je také jeho jméno a citát Make Something Wonderful (vytvořit něco úžasného).
 Líc nese Sochu svobody s nápisem In God We Trust (věříme v Boha) a značku ozubeného kola, která má symbolizovat průmysl a inovace. Letos vydané mince také obsahují Zvovec svobody s nápisem 250 připomínající 250. výročí od založení USA.
 Mince ražené ve Filadelfii a Denveru se prodávají v balíčku po 25 kusech za 61 dolarů nebo v měšci se 100 kusy za 154,50 dolaru. Každá domácnost si může takových sad koupit maximálně deset.
 Pamětní mince věnované inovátorům se vydávají od roku 2018. Jednotlivé státy vždy nominují některý vynález nebo osobnost, který je má reprezentovat. Kalifornie si zvolila Steva Jobse.

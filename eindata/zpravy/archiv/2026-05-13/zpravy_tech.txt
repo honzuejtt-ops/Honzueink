@@ -1,0 +1,88 @@
+|T|AI boti zpomalují možná i váš web. Jak to poznat a co s tím dělat?|D|13.05.2026 04:30|P|Webové crawlery tu byly vždycky. Jenže od vzniku ChatGPT se roboti nechovají jen jako hosté, ale často jako nájezdníci.|X|Pomáháme firmám zrychlovat weby. V posledních letech ale vidíme, že za pomalými servery často nestojí chyby vývojářů nebo podceněné železo. Stále častěji za pomalostí stojí nevyzpytatelná návštěvnost robotů.
+Možná si říkáte, že stačí nastavit robots.txt nebo podobná pravidla. Bejvávalo! Z pohledu dnešních botů je to často dobrá rada, nikoliv zákon. Na jednom českém e-shopu denně blokujeme přes 600 000 dotazů od botů. Je to enormní.
+Tahle nová generace automatizovaného provozu zpomaluje weby, zkresluje analytiku a vás stojí peníze. V tomto článku vám poskytnu data, která vidíme, ale také zkusím poradit, jak problémy s AI boty identifikovat a snad i efektivně řešit.
+Nová generace botů. Víc provozu, víc motivace, míň respektu
+Kdo dělá weby, zná boty jako své boty.
+Boti se vždy zaměřovali zejména na indexování obsahu pro vyhledávače. Vy na webu poskytnete data, oni vám za to dodají zákazníky. Představili se, docela respektovali pravidla, a když jste jim řekli „sem nechoď“, poslechli. Většinou.
+Podle zprávy společnosti HUMAN Security boti poprvé překonali lidský internetový provoz. Automatizovaný traffic prý meziročně roste osmkrát rychleji než ten lidský.
+Cloudflare Radar sice pro Českou republiku ukazuje zatím „jen“ 17 % robotického provozu, ale pozor! Jde o průměr přes všechny weby schovanými za Cloudflare. U jednotlivých projektů, které řešíme v PageSpeed.ONE, vidíme čísla výrazně vyšší.
+I staří dobří boti se činí. Crawling googlebota narostl o 96 % za jediný rok. AI boti samozřejmě rostou ještě více, protože rostou z ničeho. GPTBot od OpenAI vyrostl o 305 % a mohli bychom pokračovat.
+Motivace provozovatelů botů je nyní daleko silnější. Tyhle boti sbírají data pro trénink AI modelů, pro generování odpovědí v AI (nebo správněji LLM) chatech, nebo jednají jménem uživatelů jako AI agenti.
+Podle Cloudflare Radar sice tvoří uživatelské akce zatím jen asi 10 % provozu od AI, ale s rozjezdem AI agentů tohle číslo rychle poroste. Na rozdíl od stabilního trhu konvenčních vyhledávačů, kde desítky let vládl Google, zde zuří litý konkurenční boj.
+Důležité je ale říct, že nejde jen o AI crawlery. Obecně roste celý automatizovaný provoz na webu. Scrapery, cenové srovnávače, monitoring konkurence, bot farmy, které vám jen chtějí sestřelit web… AI je jen nejviditelnější část problému.
+Robots.txt? Jen dobrá rada, ne zákon
+Soubor robots.txt je v principu prosba. Říkáte crawlerům „sem prosím nechoďte“ nebo „chovejte se tak a tak“. Jenže, jak uvádí i samotný Cloudflare, „dodržování souboru robots.txt je dobrovolné. Někteří provozovatelé robotů mohou ignorovat vaše direktivy.” Tak jasně. Tohle se děje.
+U jednoho z našich klientů, e-shopu Balistas, máme nasazenou službu Cloudflare AI Crawl Control. Ta sleduje, kteří boti porušují direktivy v robots.txt. Výsledek? Stovky porušení za pouhý týden u jediného z webů tohoto klienta.
+Tohle není výjimka. Vidíme to na dalších projektech z oblasti e-commerce i jiných webech, o které se staráme.
+Crawl delay nebo IP adresy botů? Samy o sobě přestávájí fungovat
+Můj kolega Tomáš Svoboda, který se v našem týmu specializuje na backend a infrastrukturu, to shrnuje: „U crawl delay vidíme stále zvětšující se rozdíl mezi teorií a praxí. V teorii by to mělo fungovat tak, že bot stáhne stránku a dá si několik vteřin přestávku, než půjde na další. Ale například Googlebot to často nerespektuje.“
+U jiného klienta, e-shopu Postel.cz, jsme zase zaznamenali, jak crawler od Facebooku nastavený crawl delay (1 request za 10 sekund) zcela ignoruje a bombarduje web bez přestávky.
+A detekce botů podle IP adresy? Tomáš pokračuje: „Bot od Mety rotoval na jednom projektu 70 IP adres a za měsíc udělal na každé 100 tisíc dotazů.“ To je šest milionů requestů měsíčně od jednoho bota na jeden web. Dobře schovaného.
+Boti, respektive jejich vývojáři, jsou chytří. Rotují IP adresy koordinovaně tak, aby žádná jednotlivá adresa neměla podezřele velký počet dotazů. Na malém webu jsme viděli desítky IP adres, které se systematicky střídaly.
+A pak je tu nejzákeřnější kategorie. Maskovaní AI boti. Znovu dám slovo kolegovi Tomášovi Svobodovi: „AI boti se často ani nepodepíší. Maskují se, mění IP adresy a lokace, aby nešli zachytit."
+Maskování není něco, co vidíme jen my. Cloudflare loni publikoval detailní analýzu, jak Perplexity, jeden z AI startupů, používá nedeklarované, „stealth“ crawlery, které se záměrně vyhýbají direktivám zakazujícím procházení webů.
+Jak to celé pak vypadá v praxi a na číslech? Na e-shopu Balistas (10 jazykových mutací) denně blokujeme přes 600 000 dotazů od botů. Jak říká CMO Balistas, Marek Adamkovič: „To, co dříve řešily opravdu velké projekty, dnes dopadá i na střední a menší hráče. Nová realita e-commerce.“
+Ale pozor, nestačí prostě jen blokovat. Nechcete totiž přijít o přínosnou část provozu botů.
+Jednorázové peaky návštěv, kampaň to není
+Traffic z botů není rovnoměrně rozložený v čase. Vidíme něco, čemu interně říkáme „šílení botů“.
+Jde o krátké, intenzivní vlny, kdy bot pošle obrovské množství requestů najednou. Právě na e-shopech Balistas dokáže bot od Mety „vykouzlit“ až na 510 000 dotazů za den na jednu jazykovou mutaci.
+Zhruba 6 requestů za sekundu, nepřetržitě. Božínku, to už není crawling, to je skoro DDoS.
+Má to ale vliv na jednu věc, o které se v souvislosti s boty zase tak moc nemluví a o kterou se našim klientům staráme. Rychlost vašeho webu pro návštěvníky.
+Proč je to problém? Protože rychlost = peníze
+Když boti přetíží váš server, web se zpomalí pro všechny, tedy i pro vaše zákazníky. A pomalý web bolí víc, než si většina lidí myslí.
+Přetížený server znamená vyšší dobu odezvy (tedy zhoršení metriky TTFB, Time to First Byte), což se okamžitě promítne do uživatelských metrik, které Google sleduje v rámci sady Core Web Vitals.
+Horší metriky, pak značí horší pozice ve vyhledávání, horší uživatelský zážitek a nižší konverze. Studie Deloitte Digital ukázala, že každých 100 milisekund zrychlení webu může přinést:
+-
++ 5,2 % shlédnutí stránek na session
+-
++ 8,4 % na konverzním poměru
+-
++ 9,2 % na průměrné hodnotě objednávky
+My jsme si zase v praxi ověřili vliv Core Web Vitals na SEO, když se nám optimalizací povedlo zvýšit e-shopu deNatura návštěvnost z Googlu o 17 %.
+Rychlost prostě není jen IT metrika, je to součást byznysu vašeho webu.
+A tady vzniká další paradox. Vy (doufám!) investujete do optimalizace rychlosti, ladíte frontend, řešíte obrázky a skripty, a pak vám boti zatíží backend tak, že se to celé sesype jako domeček z karet. Třeba během Black Friday, což se jednomu za naši klientů stalo.
+K tomu přičtěte další problémy:
+-
+zkreslenou analytiku (provoz botů v Google Analytics není vždy správně odfiltrovaný)
+-
+vyšší náklady na hosting (vytížený server = potřeba silnějšího železa)
+-
+občasné výpadky dostupnosti, kdy web prostě přestane odpovídat
+Už jsem vás přesvědčil, že tomuto tématu se na vašich webech máte věnovat? Pojďme si teď říct, co se s tím dá dělat.
+Jak poznat, že je to i váš problém?
+Nejzákeřnější na tom celém je, že to nemusíte vůbec vědět. Web je pomalý, ale ne tak, že to vidíte vy sami v prohlížeči.
+Někdy je pomalejší jen o trochu, někdy jen v určité hodiny a někdy jen pro určité návštěvníky. Standardní nástroje jako Google Analytics nebo Google Search Console vám to samy od sebe neřeknou. Říkáte si možná: návštěvnost neroste, tak proč by měl být server vytížený?
+Typický scénář z naší praxe: U jednoho z velkých českých e-shopů jsme viděli, jak CPU serveru pravidelně naráželo na 100 % hranici. Odehrává se přitom žádná špička návštěvnosti od lidí, žádný deployment, žádná kampaň. Servery prostě nestíhaly a web se zpomalil natolik, že ho tým musel v pátek ve dvě ráno nouzově restartovat. Nevím jak vy, ale já bych tohle řešit nechtěl.
+Podívejte se na graf odezvy serveru (TTFB) z monitoringu rychlosti toho samého projektu. Metrika vyskočila z běžných hodnot na trojnásobek. A to v době, kdy lidský traffic nic zvláštního neukazoval.
+Na co si tedy musíte dáte pozor?
+-
+Zpomalení webu mimo špičky návštěvnostiPokud je váš web pomalý večer, v noci nebo o víkendu, kdy lidé tolik nenakupují, zpozorněte. Může jít o signál silného provozu botů.
+-
+Nárůst TTFB bez zjevné příčinyBackend náhle odpovídá pomaleji, nic jste neměnili. Raději zpozorněte a ujistěte se, zda máte data o provozu botů na vašem serveru.
+-
+Nedostupnost webuDějí se vám občasné výpadky, které nekorelují s ničím ve vašem deploy kalendáři nebo návštěvností. Vývojáři a experti na vaší infrastrukturu se diví? Opět možný signál, že boti „šílí“.
+-
+Rostoucí náklady na hostingČím vytíženější server, tím víc ho potřebujete škálovat. A zde platíte za kapacitu, kterou spotřebovávají boti, ne vaši zákazníci.
+U jednoho klientského projektu jsme po nasazení pravidel v Cloudflare viděli postupný pokles využití CPU serveru. Z trvale přetíženého stavu na zdravé hodnoty.
+Omezení botů někdy nefungují samy o sobě, ale v chytré kombinaci se jim stále daří. Zde například každá vlna pravidel (filtrace botů, rate limiting, geo-blocking) srazila zátěž o další kus:
+Co s tím? Strategie, ne jednorázovka
+Důležité je říct na rovinu: tohle se nevyřeší jedním nastavením a hotovo.
+Boti se mění, jejich chování se vyvíjí, nové crawlery přibývají každý měsíc. NaBalistas, ale i na dalších projektech, to s naší pomocí ladí dlouhodobě. Prakticky každý měsíc něco upravujeme. Jak říká Marek Adamkovič: „Nastavit → sledovat → upravit → znovu. Je to dlouhodobá hra."
+Na druhou stranu, nějaké základní kroky může udělat každý a výsledky uvidíte rychle. Čím začít?
+-
+Podívejte se na monitoring rychlosti webuPorovnejte špičky metriky TTFB se špičkami návštěvnosti. Pokud se neshodují, máte pravděpodobně problém s boty. Můžete použít třeba nášmonitoring nebo jakýkoliv jiný. Monitoring vám silně doporučuji i kvůli jiným důvodům. Případně si udělejte alespoň rychlý test rychlosti webu u nás nebo v PageSpeed Insights.
+-
+Nasaďte Cloudflare nebo podobnou službuI základní verze zdarma vám do jisté míry pomůže. Cache sama o sobě obslouží klidně až kolem 40 % provozu a odlehčí vašemu se...
+(Pokracovani na webu)|E|
+|T|Procesory Intel dostanou zpátky inovaci, s kterou přímo konkurovaly čipům Applu: On-Package Memory|D|13.05.2026 04:00|P|Intel Core Ultra generace 500 budou mít opět paměť integrovanou přímo v pouzdru procesoru pro lepší efektivitu a mobilitu jako u oceňované generace Lu...|X|Jedním z typických rysů Arm procesorů pro notebooky od Applu je tzv. On-Package Memory, čili paměť RAM integrovaná na pouzdru procesoru. Té se někdy chybně připisují větší přínosy než jaké skutečně má, ve skutečnosti nijak nezvyšuje výkon. Nicméně pomáhá energetické efektivitě a výdrži na baterii. Intel toto řešení také použil u procesorů Lunar Lake, poté ho ale zase opustil. Vypadá to však, že by se mohlo vrátit s generací Razor Lake.
+On-Package Memory se po stopce zase vrátí
+Zatímco procesorům Core Ultra 200V Lunar Lake pomohly paměti integrované na pouzdru procesoru vylepšit mobilitu a spotřebu v nečinnosti na takovou úroveň, že statečně konkurovaly tehdejším procesorům Applu, Intel toto řešení nepřevzal do procesorů Core Ultra 300 Panther Lake. Ty sice co do úspornosti a výdrže na baterii dopadly překvapivě dobře, ale docílily toho pouze s konvenčním osazením paměti LPDDR5X na základní desku. Takže se dá namítat, že s On-Package Memory mohly být lepší.
+Intel řešení použité v Lunar Lake ale před časem zavrhl a vypadalo to, že v tomto procesoru šlo jen o jednorázově vyzkoušenou technologii. Intelu na ní vadila nepružnost řešení. Firma musela paměti pro procesor nakupovat sama, osazovat je a pak celý výrobek mít ve svých skladových zásobách až do prodeje. Potíž byla mimo jiné v tom, že hodnota pamětí se přidávala k ceně procesoru, ale aby procesor neztratil konkurenceschopnost vůči CPU bez integrované paměti, Intel za paměť musel účtovat v podstatě jen nákupní cenu. To bylo těžko skousnutelné pro účetní a investory, protože ač marže na produktu zůstala v absolutních číslech stejná, procentuálně najednou vypadala hůře, a to akcionáři neodpouští, jakkoli to fakticky neškodilo.
+Chvíli to proto vypadalo, že výhodu nižší spotřeby a delší výdrže na baterie čipy Intel a na nich založené notebooky nebudou moci využít. Nyní se ale objevily informace, že se přece jenom vrátí. Podle leakera s přezdívkou Hase se On-Package Memory opět objeví na procesorech generace Razor Lake.
+Tuto informaci poté potvrdili další zdroje – čínský leaker s přezdívkou Golden Pig Upgrade Pack sdělil, že se skutečně má u Intelu vrátit. Zejména ji pak ale posvětil leaker s přezdívkou Jaykihn (vstupující na bývalém Twitteru), který je v posledních letech nejspolehlivějším zdrojem informací o plánech a budoucích procesorech Intelu.
+On-Package memory nebude použitá ve všech procesorech Razer Lake, ale konkrétně v Razer Lake-AX, což by měl být „Halo“ model – CPU s mimořádně výkonným integrovaným GPU a pravděpodobně také širší, 256bitovou či 384bitovou pamětí (BGA pouzdro procesoru totiž má mít 4326 kontaktů). Půjde tedy o konkurenci proti Ryzenu Max od AMD a procesorům řady Pro a Max od Applu. Právě u takovéhoto procesoru s širším než obvyklým řadičem pamětí asi pozitiva integrované paměti pro výdrž na baterii budou významnější.
+Zajímavé je, že Intel zdá se vyřešil onen problém, který jsme zmiňovali. U Razer Lake-AX to podle Golden Pig Upgrade Packa a Jaykihna nebude fungovat jako u Lunar Lake, které výrobci notebooků kupovali i s pamětí (kterou musel předtím koupit Intel). Procesor budou kupovat bez ní a paměť si budou pořizovat sami jako u běžných platforem – což je způsob, který výrobcům vyhovoval lépe (i když je otázka, zda to platí i dnes při obecném nedostatku pamětí, kdy menší výrobci počítačů mohou mít větší problém čipy sehnat, než Intel coby velký odběratel).
+Pouzdro procesoru má sice pozice s kontakty pro osazení pamětí, ale ty budou provedené tak, aby na ně paměť osadili až výrobci notebooku při jeho kompletaci tak, jak je nyní osazují (pájejí) na základní desku. Výrobní proces se tedy příliš nezmění a snad by tedy toto řešení nemělo mít ani nějaké negativní dopady na cenu zařízení. Je to právě díky tomu, že On-Package Memory není nějaká speciální nová technologie paměti, ale jde o klasické paměti LPDDR5X, jen osazené jinak než běžně. U Razer Lake-AX bude pouze třeba zajistit, aby pájení fungovalo spolehlivě a výrobci měli přístroje, které budou schopné ho provádět dostatečně precizně a neporušit při něm osazení samotného CPU na PCB notebooku.
+Ani z pohledu uživatele by tato verze On-Package Memory snad neměla mít nevýhody, pokud ji budeme srovnávat s obvyklým řešením, kdy je paměť LPDDR5X osazená na desce. V obou řešeních je nerozšiřitelná a uživatelsky nevyměnitelná. Lépe by na tom bylo jen řešení s moduly LPCAMM (s ním by upgrade možný byl), které ale zatím výrobci moc často stejně nevyužívají.
+Za dva roky?
+Procesory „Razor Lake“ jsou generací, která bude následovat po Nova Lake, které pro notebooky vyjde patrně začátkem roku 2027. Razor Lake by tedy mohlo jít na trh koncem roku 2027 nebo začátkem roku 2028, jako generace Core Ultra 500. Je nicméně možné, že „Halo“ verze AX přijde o něco později. Onen návrat On-Package Memory od Intelu na trh by tedy mohl nastat až za nějaké dva roky od dneška.|E|

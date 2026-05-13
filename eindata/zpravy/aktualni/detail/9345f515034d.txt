@@ -1,0 +1,32 @@
+Zde jsem volil univerzální řešení v podobě dvojice nástrojů: Kopia zálohuje a Rclone mapuje různé destinace. Rozhodl jsem se zálohovat na 1TB prostor na OneDrive, ale můžete podobně využít libovolné jiné úložiště, které Rclone podporuje.
+Rclone
+Rclone je takový švýcarský nůž na kdejaké vzdálené úložiště. Klidně vám zařídí síťovou cestu \\TEST\ONEDRIVE
+nebo třeba disk G:
+, na který připojí Google Disk. Ohromující je seznam podporovaných služeb, z nichž některé jsem ani neznal. Má grafické rozhraní, které se pouští příkazem:
+rclone rcd --rc-web-gui [--config rclone.conf]
+Raději jsem si soubor s konfigurací ukládal do vlastního adresáře, protože v něm jsou citlivé údaje (autorizační tokeny) a další věci, které chci mít pod kontrolou. Na nastavení je praktičtější jednoduchý textový průvodce, který se pouští pomocí:
+rclone config
+Na většinu otázek se odpovídá klávesou enter, což značí nechat výchozí hodnotu. O co bylo jednodušší nastavení, o to jsem strávil více času hledáním optimálních parametrů. Některé jsou totiž podporovány jen jako rozšíření režimu FUSE a v režimu přímé komunikace nefungují. Pro testovací účely jsem se nakonec ustálil na těchto dvou řádcích dávkového souboru rclone.bat
+:
+rclone about muj-onedrive: --config "rclone.conf" rclone.exe mount muj-onedrive: o: --config "rclone.conf" --network-mode --volname \\Zaloha\OneDrive --onedrive-chunk-size=60M --buffer-size 32M --vfs-cache-mode writes --vfs-cache-max-size 2G --vfs-cache-max-age 15m --vfs-read-chunk-size 32M --links
+Po tom se se nám tedy propojí třeba lokální NAS nebo OneDrive, můžeme pokračovat k druhé aplikaci a tou je Kopia.
+Kopia
+Kopia je zálohovací software, který přináší moderní přístup, rychlost a bezpečnost. Její vznik a fungování jsou úzce spjaty s potřebou efektivně spravovat obrovské objemy dat v cloudu bez ztráty kontroly nad soukromím proti podobné aplikaci jménem Restic.
+Projekt Kopia vznikl jako odpověď na limity stávajících nástrojů, zejména v oblasti uživatelské přívětivosti a rychlosti indexování. Je napsán v jazyce Go, což mu umožňuje běžet jako jediná binárka bez nutnosti instalovat složité závislosti. Zatímco mnoho jiných nástrojů vznikalo primárně pro příkazovou řádku, Kopia od začátku kladla důraz i na grafické rozhraní (KopiaUI), aby byla dostupná i běžným uživatelům, nejen správcům serverů.
+Algoritmus a vnitřní fungování
+Kopia umožňuje vytvářet šifrované snímky vašich dat a ukládat je do vzdáleného úložiště, na síťové úložiště nebo server, případně lokálně na místním počítači. Nevytváří obraz celého disku, ale spravuje adresářové struktury, které jsou pro vás důležité. Když spustíte zálohu, proběhne následující proces:
+Rozkouskování (chunking): Soubory jsou rozděleny na menší části. Kopia používá sofistikované algoritmy (např. Buzhash), které dokáží objevit identické bloky dat, i když se posunou v rámci souboru – například přidáním řádku do textového dokumentu.
+Adresace obsahu (Content-Addressable Storage): Každý kousek dat dostane unikátní haš (otisk). Pokud se tedy nachází na disku stejný kousek dat desetkrát, v záloze se objeví jen jednou.
+Šifrování a komprese: Před odesláním se data zkomprimují (např. pomocí Zstd) a zašifrují (standardně AES-256 nebo ChaCha20). Klíč k dešifrování má k dispozici jen uživatel, takže do repozitáře putují pouze nečitelná data.
+Výhodou nástroje Kopia je, že nepoužívá centrální databázi, která by se mohla poškodit a tím ohrozit zálohy. Metainformace o tom, kde co leží, jsou uloženy přímo v repozitáři se zálohou.
+Kopia při zálohování využívá službu VSS, takže zajistí konzistenci dat a pokud jsou správně nastaveny integrační nástroje ve virtuálních PC, dostanou také požadavek aby provedly snapshot. U MS SQL to raději jistím tak, že denně vytvářím soubor zálohy.
+Rozdíl mezi Kopia a Restic
+I když jsou si oba nástroje velmi podobné (oba jsou napsány v Go, oba používají deduplikaci a šifrování), existují mezi nimi zásadní rozdíly v přístupu.
+Restic je starší, extrémně konzervativní a sází na maximální jednoduchost a stabilitu. Kopia je oproti tomu výrazně odvážnější v inovacích. Od základu podporuje různé úrovně komprese, je výrazně rychlejší při práci s velkými metadaty (seznamy souborů) a nabízí mnohem více možností, jak vyladit výkon (např. kolik procesorových jader se má použít).
+Zatímco Restic vyžaduje pro připojení k mnoha cloudům externí nástroje, Kopia má v sobě přímo integrovanou podporu pro Rclone, což z ní dělá univerzálnější řešení.
+Nastavení zálohování
+Nastavení lze ladit přímo ve webovém rozhraní na URL http://server:1616/
+.V záložce Repository se zobrazuje aktuální nastavení a stav propojení s Rclone, takže pokud tam vidíte Connected To Repository, můžete vesele pokračovat do záložky Snapshots.
+Zde vyberete cestu, kterou chcete zálohovat (vytvářet její snímky) a periodu zálohování, včetně retencí. Můžete například dělat zálohy denně, ale nechávat si třeba ještě týdenní, měsíční a roční snímek. Takový přístup se hodí pro méně proměnlivá data. Naopak pro obraz disku se to příliš nehodí, protože se mění téměř celý, takže rozdílové zálohy zabírají poměrně hodně místa.
+Takto by to ovšem fungovalo, jen pokud bych byl trvale přihlášen, takže ještě bylo potřeba nastavit, aby Kopia běžela jako služba pomocí nástroje NSSM service editor.
+Pokud jste se dostali až sem a máte zálohy, můžeme přidávat další služby a povědět si něco více o Dockeru a jeho využití.

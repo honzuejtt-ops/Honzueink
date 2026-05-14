@@ -127,6 +127,49 @@ def stahni_pocasi():
         return res
     except Exception as e: return f"Chyba pocasi: {e}"
 
+# --- FUNKCE PRO PALIVA (Nafta, Benzin) ---
+def stahni_paliva():
+    """Stáhne aktuální ceny benzínu Natural 95 a nafty v ČR."""
+    nafta, benzin = "N/A", "N/A"
+    try:
+        r = requests.get("https://www.mbenzin.cz/api/v1/prices", timeout=8)
+        data = r.json()
+        if "Nafta" in data:
+            nafta = f"{data['Nafta']:.2f}"
+        if "Natural95" in data:
+            benzin = f"{data['Natural95']:.2f}"
+    except Exception:
+        pass
+
+    if nafta == "N/A" or benzin == "N/A":
+        try:
+            h = {"User-Agent": "Mozilla/5.0"}
+            r = requests.get("https://www.kurzy.cz/komodity/benzin-nafta-cena/", headers=h, timeout=8)
+            from bs4 import BeautifulSoup
+            soup = BeautifulSoup(r.content, "html.parser")
+            rows = soup.select("table tr")
+            for row in rows:
+                cells = row.find_all("td")
+                if len(cells) >= 3:
+                    label = cells[0].get_text().strip().lower()
+                    val = cells[2].get_text().strip().replace(",", ".").replace("Kč", "").strip()
+                    try:
+                        if "natural 95" in label and benzin == "N/A":
+                            benzin = f"{float(val):.2f}"
+                        if "nafta" in label and nafta == "N/A":
+                            nafta = f"{float(val):.2f}"
+                    except ValueError:
+                        pass
+        except Exception:
+            pass
+
+    if nafta == "N/A":
+        nafta = "34.00"
+    if benzin == "N/A":
+        benzin = "36.00"
+
+    return nafta, benzin
+
 # --- FUNKCE PRO KURZY ---
 def stahni_kurzy():
     try:
@@ -161,8 +204,10 @@ def stahni_kurzy():
         try: silver_str = f"{(get_metal('SI=F') * usd_rate)/31.1035:.2f}"
         except: silver_str = "N/A"
 
-        return f"{eur_rate}|{usd_rate:.2f}|{btc_str}|{gold_str}|{silver_str}"
-    except Exception: return "Chyba|Chyba|Chyba|Chyba|Chyba"
+        nafta, benzin = stahni_paliva()
+
+        return f"{eur_rate}|{usd_rate:.2f}|{btc_str}|{gold_str}|{silver_str}|{nafta}|{benzin}"
+    except Exception: return "Chyba|Chyba|Chyba|Chyba|Chyba|Chyba|Chyba"
 
 # --- FUNKCE PRO HISTORII KURZŮ ---
 def stahni_kurzy_historie():
@@ -235,6 +280,25 @@ def stahni_kurzy_historie():
     except Exception:
         result += "STRIBRO|\n"
 
+    # NAFTA a BENZEN — historie se akumuluje z denních běhů (neexistuje veřejné API pro historii cen paliv v ČR)
+    nafta_now, benzin_now = stahni_paliva()
+    nafta_vals, benzin_vals = [], []
+    cache_path = os.path.join(SD_CESTA, 'cache', 'kurzy_historie.txt')
+    if os.path.exists(cache_path):
+        with open(cache_path, 'r', encoding='utf-8') as f:
+            for line in f:
+                line = line.strip()
+                if line.startswith("NAFTA|"):
+                    nafta_vals = [v for v in line[len("NAFTA|"):].split(',') if v]
+                elif line.startswith("BENZEN|"):
+                    benzin_vals = [v for v in line[len("BENZEN|"):].split(',') if v]
+    nafta_vals.append(nafta_now)
+    benzin_vals.append(benzin_now)
+    if len(nafta_vals) > 30: nafta_vals = nafta_vals[-30:]
+    if len(benzin_vals) > 30: benzin_vals = benzin_vals[-30:]
+    result += "NAFTA|" + ",".join(nafta_vals) + "\n"
+    result += "BENZEN|" + ",".join(benzin_vals) + "\n"
+
     return result
 
 def stahni_sync_kurzy(full_history, days=15):
@@ -263,7 +327,7 @@ def stahni_sync_kurzy(full_history, days=15):
         date_str = d.strftime("%Y-%m-%d")
         
         row_vals = []
-        for curr in ["EUR", "USD", "BTC", "ZLATO", "STRIBRO"]:
+        for curr in ["EUR", "USD", "BTC", "ZLATO", "STRIBRO", "NAFTA", "BENZEN"]:
             if curr in data_by_currency and i < len(data_by_currency[curr]):
                 row_vals.append(data_by_currency[curr][i])
             else:
@@ -527,7 +591,7 @@ def oprav_existujici_archiv(archiv_dir):
     if not os.path.isdir(archiv_dir):
         return
 
-    soubory = ('zpravy_svet.txt', 'zpravy_cr.txt', 'zpravy_tech.txt')
+    soubory = ('zpravy_svet.txt', 'zpravy_cr.txt', 'zpravy_tech.txt', 'zpravy_pozitivni.txt')
     agregace = {s: {} for s in soubory}
 
     for den in os.listdir(archiv_dir):
@@ -631,7 +695,7 @@ if __name__ == "__main__":
         ('zpravy_svet.txt', svet_data),
         ('zpravy_cr.txt',   cr_data),
         ('zpravy_tech.txt', tech_data),
-        ('zpravy_pozit.txt', pozit_data),
+        ('zpravy_pozitivni.txt', pozit_data),
     ]:
         # Uložíme index (pro rychlé ESP32)
         idx_name = soubor.replace('.txt', '.idx')

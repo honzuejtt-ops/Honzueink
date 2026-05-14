@@ -1,0 +1,30 @@
+Pavan Davuluri, šéf vývoje Windows, v březnu veřejně slíbil, že jeho tým zlepší Windows 11 na základě zpětné vazby. Znamená to rovněž zrychlení systému, který je někdy pomalejší, než by musel být.
+Zdroje novináře Zaca Bowdena potvrzují, že to Microsoft myslí vážně. Iniciativě na zkvalitnění Jedenáctek interně přezdívá Windows K2. Tento projekt vznikl ve druhé polovině loňského roku a měl by napravit přemíru Copilotu, pomalý chod a nespolehlivost.
+Windows K2 je tedy kódové označení snahy o vylepšení Windows 11, nikoli označení některého z dalších vydání systému. Výsledky by se nicméně v kvalitě budoucích verzí měly odrazit. (Letos nás čekají Windows 11 26H2 – dále si nejsme jistí.)
+Vyšší úroveň kvality
+Nejde o to, aby se jednorázově zapracovalo na kvalitě softwaru, aby následně opět postupně upadala. Podle Bowdena se v týmu mění kultura. Soustředí se na tři pilíře. Pokud bude každý zohledněn, podepíše se to na kvalitě produktu.
+Tyto pilíře Davuluri popsal v březnu: výkon, spolehlivost a funkcionalita. První dvě kategorie jsou zřejmé, poslední se zaměřuje na uživatelský zážitek. Šéf vývoje např. slíbil, že hlavní panel bude znovu polohovatelný, vyhledávání bude podávat konzistentnější výsledky a sníží se počet oznámení.
+Vrátí se polohování hlavního panelu
+Windows K2 pracuje s uživatelskou zpětnou vazbou včetně té z programu Insider, analýzy telemetrie a focus groups se zákazníky a zákaznicemi. Vývojový tým dále vyhodnocuje svůj přístup v programování platformy, kterou používá miliarda lidí.
+Zatímco dříve byl soustředěný na kvantitu, teď by to mělo být obráceně. Nejde už o to, aby do Jedenáctek mířilo co nejvíce nových funkcí, ale aby přídavky nebyly plné chyb. Úroveň kvality, které musí nové funkce před nasazením dosáhnout, se zvýšila. Platí to také pro program Insider.
+Nové detaily
+Bowden přinesl pár detailů nad rámec zmíněného Davuluriho prohlášení. Novinář totiž viděl neveřejnou dokumentaci a vyplývá z ní, že výkon pro Microsoft představuje nejdůležitější pilíř.
+Výkon a spolehlivost
+- Microsoft si je vědomý, že výkon Průzkumníku a dalších aplikací, kontextových nabídek a dalších systémových prvků není vždycky dobrý.
+- Microsoft považuje SteamOS za benchmark pro hraní. Chce, aby Windows byly srovnatelně výkonné, a to v horizontu jednoho až dvou let.
+- Microsoft vnímá File Pilot a podobné nástroje jako benchmark pro práci se soubory. (File Pilot v posledních měsících zkoušíme a stran výkonu je s Průzkumníkem nesrovnatelný. Na povely reaguje okamžitě.)
+- Průzkumník by měl zrychlit při práci se soubory a chystá se funkce pro okamžité zobrazení výsledků vyhledávání na základě názvů souborů.
+- Windows Update by měl nejen vyžadovat maximálně jeden restart měsíčně, ale aktualizace ovladačů neproběhne při aktivním používání počítače, nýbrž až při restartování.
+- Microsoft chápe, že musí osekat „tuk“. Chce snížit paměťovou náročnost systému a jeho celkové nároky na hardware.
+Prostředí
+- Framework WinUI 3 je základním stavebním kamenem iniciativy Windows K2. Tým ho optimalizuje, aby se prvky uživatelského prostředí zobrazovaly co nejrychleji a co nejspolehlivěji.
+- WinUI 3 se použije pro modernizaci starších prvků, k nimž patří dialog Spustit a Ovládací panely.
+Přepracovaný dialog Spustit
+- Nový systémový kompozitor pro WinUI 3 sníží latenci a paměťovou zátěž uživatelského rozhraní. Prvky jako nabídka Start a hlavní panel by tak měly vždycky reagovat, a to i při vysokém zatížení.
+- Nabídka Start vzniká znovu od nuly a tentokrát využije WinUI 3. Díky tomu se bude otevírat až o 60 % rychleji oproti stávající verzi. Také v ní skryjete, co nepotřebujete, a dílčí prvky zvětšíte či zmenšíte.
+- Z nabídky Start zmizí reklamy.
+- V nabídce widgetů zase budou primární widgety a přehled zpráv se standardně v hlavní sekci nezobrazí.
+Ždímání procesoru
+Byl to opět Zac Bowden, který zjistil informace o jednom z plánovaných vylepšení. Říká se mu Low Latency Profile a zrychlí spuštění programů, otevírání nabídek a dalších systémových prvků. Dokonce se už skrytě nachází v programu Windows Insider a leaker @phantomofearth prozrazuje, jak ho zapnout. (Protože ještě nebyl oficiálně oznámen, nemusí být plně funkční.)
+Nezdá se, že by Microsoft v tomto případě vyřešil neefektivitu softwaru. Rychlejších reakcí totiž dosáhne dočasným zvýšením výkonu procesoru. Na maximální frekvenci poběží nejvýše tři sekundy.
+Podle interních informací se integrované aplikace jako Edge a Outlook spouští až o 40 % rychleji. U nabídky Start a dalších systémových prvků se doba potřebná pro zobrazení zkrátí až o 70 %. Low Latency Profile pochopitelně pozitivně dopadne na spouštění aplikací třetích stran, jen k tomu zatím Microsoft buď nemá data, nebo si je střeží.

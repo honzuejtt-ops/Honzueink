@@ -1,0 +1,5 @@
+Ve sbírce zákonů byl zveřejněn zákon o správě dat a řízeném přístupu k datům (zákon č. 60/2026 Sb.). Platit začne 27. května letošního roku a může jít o velký krok v tom, jak se ve státní správě bude nakládat s daty a jejich sdílením.
+Informace, které se shromažďují v informačních systémech veřejné správy, budou podle zákona sdílena prostřednictvím Národního katalogu dat a Geoportálu České republiky.
+Data budou propojena s cílem jejich efektivnějšího využívání. Zároveň je bude jednoduché vyhledat, a to i mimo původní resortní informační systémy. Správci dat budou muset zajistit popis dat a jejich identifikaci. Dále bude možné vidět, s jakými daty stát nakládá a k čemu se používají.
+Nový zákon zároveň implementuje evropské nařízení Data Governance Act (DGA) s cílem zpřístupnit velké množství dat, k nimž není obecný přístup.
+Jednotným informačním místem se stává Digitální a informační agentura (DIA), která nový zákon považuje za velmi významný. Zákon připravila předchozí vláda.

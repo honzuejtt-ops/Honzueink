@@ -1,0 +1,6 @@
+Článek
+Týmy z celé republiky během jara konstruovaly a programovaly autonomní roboty pro letošní soutěžní úlohu zvanou Tetris puzzle.
+„Cílem bylo během 90 sekund přesunout co nejvíce barevných dílů do vyznačených zón a sestavit z nich čtverce o čtyřdílných stranách u odpovídající barvy,“ vysvětlil hlavní organizátor Martin Hlinovský z katedry řídicí techniky FEL ČVUT.
+Doplnil, že klíčové bylo vymyslet strategii, jak získat maximum bodů. A potom navrhnout robota tak, aby ji dokázal spolehlivě splnit. Právě v tom byl nejlepší zmiňovaný tým Team STV ve složení Aaron Agulár, Lukáš Hrdina a Martin Mandera.
+Do jarní etapy Robosoutěže se letos přihlásilo rekordních 153 týmů, z nichž se 130 utkalo během tří dubnových předkol v Zengerově posluchárně FEL ČVUT. Nejlepších 16 týmů následně postoupilo do velkého finále. To proběhlo v neděli 10. května v Křižíkově pavilonu E na Výstavišti Praha Holešovice jako součást festivalu Maker Faire Prague za odborného dozoru zástupců FEL.
+„Letošní úloha se opravdu povedla. Bylo fascinující sledovat, že i velmi mladé týmy přemýšlejí strategicky a snaží se sestavovat celé čtverce místo jednoduchého přesouvání dílů. Soutěž byla díky tomu nesmírně dynamická a vyrovnaná,“ shrnul organizátor Martin Hlinkovský.

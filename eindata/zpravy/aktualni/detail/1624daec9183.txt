@@ -1,0 +1,21 @@
+Článek
+Tato událost, ač neplánovaná, nabízí fascinující pohled do světa nebeské mechaniky, zároveň však varuje před rostoucím problémem vesmírného odpadu, tvořeného lidmi.
+Raketový stupeň se vydal na vzdálenější cestu, než je obvyklé
+Vše začalo 15. ledna 2025, kdy raketa Falcon 9 vynesla do vesmíru speciální náklad tvořený lunárními moduly Blue Ghost a Hakuto-R. Zatímco první, větší stupeň rakety, se po startu vrátil na Zemi k opětovnému použití, horní stupeň (označený jako 2025-010D) po splnění svého úkolu zůstal na velmi protáhlé oběžné dráze kolem Země.
+Tento kus rakety, vyrobený hlavně z hliníkovo-lithiové slitiny (popř. pokročilých kompozitů) a vysoký zhruba jako pětipatrová budova, se od té doby nekontrolovaně „potuluje“ v prostoru mezi Zemí a Měsícem.
+Obíhá Zemi po elipse jednou za 26 dní, kdy se v jejím nejbližším bodě přibližuje k Zemi na 220 000 km a v bodě nejvzdálenějším odlétá až do vzdálenosti 510 000 km. A někde mezi oběma body jeho dráha protíná oběžnou dráhu Měsíce.
+Po více než roce a půl tohoto zvláštního „tance“ se 5. srpna 2026 cesty rakety a Měsíce s největší pravděpodobností protnou, konkrétně ráno kolem 6:44 světového (Greenwichského) času, jak upozornil server Science Alert. Jak to víme?
+Nezávislý astronom „detektivem“
+Předpověď nárazu není v tomto případě dílem vládní agentury, ale nezávislého astronoma Billa Graye, vývojáře softwaru Project Pluto.
+Sledování objektů takto daleko od Země je přitom nesmírně obtížné. Americká armáda sice používá radary k monitorování i velmi malých trosek v blízkosti Země, ale u Měsíce je radar prakticky slepý. Měsíc je totiž 400krát dále než nízká oběžná dráha, což znamená, že radarový signál, který by se od objektu vrátil k Zemi, je o mnoho řádů slabší.
+Gray se proto musel spolehnout na optická pozorování z teleskopů, které provádějí přehlídky asteroidů, a od amatérských astronomů, kterých do února 2026 nashromáždil celkem 1053.
+Největší neznámou v jeho výpočtech je tlak slunečního záření. Sluneční světlo do rakety totiž neustále jemně „tlačí“, přičemž raketa má poměrně velkou průřezovou plochu vzhledem ke své zbytkové hmotnosti. Navíc, protože se vyhořelý stupeň v prostoru všelijak převrací, tato síla na něj působí nepravidelně a v čase se mění, což dráhu činí mírně chaotickou.
+„Pohyby vesmírného odpadu pod vlivem gravitačních sil jsou většinou předvídatelné, ale sluneční tlak se sčítá a vnáší do výpočtů nejistotu,“ vysvětluje Gray.
+Project Pluto je astronomický software i název souvisejících webových stránek, které vyvíjí a spravuje nezávislý astronom Bill Gray.
+Tento software se specializuje na výpočet drah a sledování objektů v blízkosti Země (NEO), včetně asteroidů a úlomků vesmírného smetí. Project Pluto navíc zaplňuje mezeru v monitorování objektů na vysokých oběžných drahách (v prostoru mezi Zemí a Měsícem), které americká armáda svými radary sleduje jen obtížně kvůli jejich velké vzdálenosti.
+Co se stane v okamžiku srážky s Měsícem?
+Raketa má narazit do Měsíce v rychlosti přibližně 8700 km/h (2,4 km/s). Tento dopad vyvolá záblesk světla a vymrští mračno měsíčního prachu a úlomků hornin (tzv. ejecta). Samotný náraz proběhne pod úhlem 34 stupňů od svislice a očekává se, že vytvoří čerstvý kráter o průměru asi 16 až 18 metrů. Jelikož je Měsíc naprosto pusté místo, nehrozí zde v tomto směru nikomu a ničemu žádné riziko.
+Místem dopadu je kráter Einstein, rozlehlá oblast na samotném okraji přivrácené strany Měsíce. Ačkoliv bude Měsíc v době nárazu nad obzorem pro pozorovatele v Americe, tento záblesk bude relativně slabý a pravděpodobně nebude viditelný běžnými dalekohledy, jak uvedl magazín BBC Sky at Night.
+Hlavním svědkem tak bude sonda NASA Lunar Reconnaissance Orbiter (LRO), která obíhá kolem Měsíce a která by měla místo dopadu (zhruba o několik týdnů či měsíců později) vyfotografovat.
+Kolize poslouží vědcům
+Ačkoliv jde o neplánovanou kolizi, vědci v ní vidí příležitost. Podobné události navíc mají v historii lunárního výzkumu již svou tradici, jak připomněl magazín Sky & Telescope:

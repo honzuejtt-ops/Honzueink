@@ -1,0 +1,12 @@
+Alza zlevnila zdroj Raijintek Ampere 1000 v bílé variantě na 2499 Kč , černá je za 2699 Kč . Levněji dosud nikdy nebyl. Na trh přišel loni za cenu přes čtyři tisíce a v českých obchodech není moc levnějších modelů s výkonem 1000 W. A pokud jsou, tak ne s takovou účinností.
+Typicky budou obsahovat certifikaci 80Plus Gold, ale Ampere 1000 získal 80Plus Platinum. Má tedy 92% účinnost při 20% zatížení, 94% při 50% zatížení a 90% při 100% zatížení.
+Raijintek podporuje nejnovější standard ATX 3.1 a pro grafické karty nabízí konektor 12V-2x6 (PCIe 5.1), přes který může teoreticky vést až 600 W. Měl by tak stačit i na nejvýkonnější kartu GeForce RTX 5090, pro kterou ostatně Nvidia doporučuje 1000W zdroj, aby zůstala rezerva také pro procesor, paměti, disky a další komponenty.
+Dále nabízí dva osmipinové konektory, osm SATA a čtyři molexy. Všechny kabely jsou odpojitelné, nejsou však opletené. Používá 120mm ventilátor s tepelnou regulací, přičemž do 40% zátěže se vůbec nezapne. Ale také v plné zátěži je rozumně tichý. Zdroj obsahuje kvalitní japonské kondenzátory a jednu silnou 12V větev. Potěší též sedmiletá záruka.
+Verzi s výkonem 1000 W zatím žádné profi médium netestovalo, ale pod drobnohledem se objevila 1200W varianta. U ní TechPowerUp chválí právě tichý chod, záruku, silnou hlavní větev, účinnost nebo dobré potlačení zvlnění. Kritizoval jen trochu levnější zpracování, horší kabeláž nebo slabší korekci účiníku při nízkém zatížení. Za dva a půl tisíce ale lepší výkonný zdroj neseženete.
+Přes WhatsApp a Telegram vás upozorníme na novou slevu
+Slevové akce někdy netrvají dlouho nebo obchody mohou mít jen malé množství zlevněných produktů. Než se k článku dostanete, může být pozdě.
+Hlídač slev má ale své kanály v komunikátorech WhatsApp a Telegram . Klikněte na odkaz, otevře se v aplikaci. Jakmile vydáme článek o slevě, hned o tom dostanete zprávu. O akci se tak dozvíte v době, kdy je ještě stoprocentně platná.
+Jsme také na sociálních sítích Facebook , Threads , X , Bluesky , Mastodon , Discord a můžete odebírat naše RSS se slevami.
+WhatsApp má u kanálů vypnuté upozornění na nové zprávy . Musíte to změnit sami přes ikonu zvonku v pravém horním rohu aplikace. Viz žlutá šipka:
+Našli jste sami zajímavou slevu? Napište nám .
+Za nákup, který uskutečníte prostřednictvím odkazu v článku, může Živě dostat provizi.

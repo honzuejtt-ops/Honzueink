@@ -1,0 +1,19 @@
+Aktualizace Windows budou méně rušivé. V březnu to slíbil Pavan Davuluri, šéf vývoje Windows. Příslušné změny jsou nyní zaváděny v programu Insider v kanálech Dev a Experimental. Po testovacím cyklu zamíří na všechny počítače, ale časový harmonogram neznáme.
+V první vlně jde o pětici novinek. Microsoft je nastínil dříve, teď známe více detailů:
+1. Během instalace systému můžete přeskočit instalaci aktualizací.
+Nenainstalujte-li aktualizace během instalace systému, budou na vás čekat ve Windows Updatu
+2. Instalaci aktualizací odložíte až o 35 dní, a to prostřednictvím integrovaného kalendáře. Odložení můžete opakovat bez omezení. (Dosud jste aktualizace mohli pozastavit na nejvýše sedm dní a jen párkrát za sebou.)
+Jednorázově instalaci aktualizací pozastavíte až na 35 dní, ale odklad pak můžete provést znovu
+3. Počítač můžete vypnout či restartovat, aniž byste museli dokončit instalaci aktualizací. Tuto možnost Windows dávno nabízí, viz např. snímek v článku z loňského listopadu. Microsoft ale podotýká, že se povely Vypnout a Restartovat zobrazí vždy. V některých případech se zřejmě mohly skrýt, ale tak to už nebude. Správa napájení bude konzistentní a předvídatelná.
+Příkazy Vypnout a Restartovat se zobrazí vždy
+4. Microsoft loni výrazně zjednodušil schéma názvů dílčích aktualizací a ovladačů ve službě Windows Update. Jenže s ovladači to přehnal, takže není vždycky zřejmé, o jaký typ jde. Některé mají podobné nebo stejné (generické) názvy. V názvech jsou proto zase uváděny třídy zařízení.
+5. Ovladače, firmwary a aktualizace pro platformu .NET jsou vydávány v době, kdy vychází povinné, nepovinné či mimořádné servisní aktualizace pro Windows. Všechny aktualizace by se tak měly nainstalovat najednou a proces si vyžádá jediný restart měsíčně.
+Jeden restart měsíčně
+Poslední bod je dobré dovysvětlit. Pokud se na vašem počítači instalují pouze povinné aktualizace, tak vám Windows Update bude ovladače a nesystémové aktualizace nabízet pouze v souvislosti s povinnými aktualizacemi pro Windows. Což jsou ty, které vychází vždy během druhého úterý v měsíci.
+Pokud iniciujete instalaci volitelných aktualizací, pak se nesystémové aktualizace mohou nainstalovat také. Jestli volitelné aktualizace nevyhledáváte, nemusíte se tím zabývat a bude vám stačit jeden restart měsíčně.
+Nesystémové aktualizace počkají na ty systémové, abyste nemuseli restartovat jen kvůli nim
+Pokud ale aktualizace ve službě Windows Update často vyhledáváte, mohou se vám nesystémové aktualizace nabídnout dvakrát do měsíce. Jednou tedy s povinnou a podruhé s nepovinnou aktualizací pro Windows.
+Ani když se vám nesystémová aktualizace nabídne, neznamená to, že se hned musí nainstalovat. Ve Windows Updatu ji uvidíte schovanou v podnabídce. Automaticky se stáhne a s instalací se vyčká na povinnou systémovou aktualizaci, abyste si restartování odbyli při jednom. Ručně si ovšem můžete nainstalovat jakoukoli aktualizaci – a hlavně kdykoli. Na tom se nic nemění.
+Ještě poznámka ke kanálům Dev a Experimental. Microsoft zjednodušuje program Insider a zapojené počítače postupně převádí z kanálu Dev do kanálu Experimental. Než bude přechod kompletní a kanál Dev se stane součástí historie, oba vedle sebe koexistují. Dostávají stejný obsah.
+Rychlejší a spolehlivější instalace
+Microsoft tvrdí, že v posledních měsících postupně zmenšil distribuované aktualizace pro Windows. Jejich instalace je také rychlejší. Na dalším omezování objemu stahovaných dat bude letos dále pracovat. Pracuje také na tom, aby instalace končily úspěšně. V některých případech proto mohou naopak trvat déle, ale s vyšší šancí na zdárné dokončení.

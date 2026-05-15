@@ -697,18 +697,18 @@ if __name__ == "__main__":
 
     # 1. Běžné zprávy a tech/ai
     svet_data = stahni_zpravy_multi([
-        ("https://ct24.ceskatelevize.cz/rss/svet", 100),
-        ("https://www.novinky.cz/rss/zahranicni", 100),
-    ], celkovy_limit=200)
+        ("https://ct24.ceskatelevize.cz/rss/svet", 60),
+        ("https://www.novinky.cz/rss/zahranicni", 60),
+    ], celkovy_limit=100)
 
     # Cross-category deduplikace: zprávy ze světa se neobjeví v ČR sekci
     svet_titulky = {b["titulek"] for b in extrahuj_bloky(svet_data[1])}
     print(f"  Světové zprávy: {len(svet_titulky)} unikátních titulků (budou vynechány v ČR)")
 
     cr_data = stahni_zpravy_multi([
-        ("https://ct24.ceskatelevize.cz/rss/domaci", 100),
-        ("https://www.novinky.cz/rss/domaci", 100),
-    ], celkovy_limit=200, exclude_titulky=svet_titulky)
+        ("https://ct24.ceskatelevize.cz/rss/domaci", 60),
+        ("https://www.novinky.cz/rss/domaci", 60),
+    ], celkovy_limit=100, exclude_titulky=svet_titulky)
 
     # Obojsměrná deduplikace: odebereme i ČR titulky ze Světa
     cr_titulky = {b["titulek"] for b in extrahuj_bloky(cr_data[1])}
@@ -721,14 +721,14 @@ if __name__ == "__main__":
             svet_filtrovany_text += b["blok"]
         svet_data = (svet_data[0], svet_filtrovany_text)
     tech_data = stahni_zpravy_multi([
-        ("https://www.lupa.cz/rss/clanky/", 30),
-        ("https://www.cnews.cz/feed/", 30),
-        ("https://www.root.cz/rss/clanky/", 30),
-        ("https://www.zive.cz/rss/sc-47/default.aspx", 30),
-        ("https://venturebeat.com/category/ai/feed/", 30),
-        ("https://openai.com/news/rss.xml", 20),
-        ("https://blog.google/technology/ai/rss/", 20),
-    ], celkovy_limit=200)
+        ("https://www.lupa.cz/rss/clanky/", 20),
+        ("https://www.cnews.cz/feed/", 20),
+        ("https://www.root.cz/rss/clanky/", 20),
+        ("https://www.zive.cz/rss/sc-47/default.aspx", 20),
+        ("https://venturebeat.com/category/ai/feed/", 20),
+        ("https://openai.com/news/rss.xml", 15),
+        ("https://blog.google/technology/ai/rss/", 15),
+    ], celkovy_limit=100)
 
     # 3. Pozitivní zprávy
     pozit_data = stahni_zpravy_multi([

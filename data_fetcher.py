@@ -212,10 +212,13 @@ def stahni_kurzy_historie():
     try:
         res_cnb = requests.get("https://www.cnb.cz/cs/financni-trhy/devizovy-trh/kurzy-devizoveho-trhu/kurzy-devizoveho-trhu/denni_kurz.txt", timeout=10)
         usd_rate = 1.0
+        eur_rate = 24.0
         for line in res_cnb.text.split('\n'):
             if "|USD|" in line: usd_rate = float(line.split('|')[-1].replace(',', '.'))
+            if "|EUR|" in line: eur_rate = float(line.split('|')[-1].replace(',', '.'))
     except Exception:
         usd_rate = 23.5
+        eur_rate = 25.0
 
     result = ""
 
@@ -278,24 +281,41 @@ def stahni_kurzy_historie():
     except Exception:
         result += "STRIBRO|\n"
 
-    # NAFTA a BENZEN — historie se akumuluje z denních běhů (neexistuje veřejné API pro historii cen paliv v ČR)
-    nafta_now, benzin_now = stahni_paliva()
-    nafta_vals, benzin_vals = [], []
-    cache_path = os.path.join(SD_CESTA, 'cache', 'kurzy_historie.txt')
-    if os.path.exists(cache_path):
-        with open(cache_path, 'r', encoding='utf-8') as f:
-            for line in f:
-                line = line.strip()
-                if line.startswith("NAFTA|"):
-                    nafta_vals = [v for v in line[len("NAFTA|"):].split(',') if v]
-                elif line.startswith("BENZEN|"):
-                    benzin_vals = [v for v in line[len("BENZEN|"):].split(',') if v]
-    nafta_vals.append(nafta_now)
-    benzin_vals.append(benzin_now)
-    if len(nafta_vals) > 30: nafta_vals = nafta_vals[-30:]
-    if len(benzin_vals) > 30: benzin_vals = benzin_vals[-30:]
-    result += "NAFTA|" + ",".join(nafta_vals) + "\n"
-    result += "BENZEN|" + ",".join(benzin_vals) + "\n"
+    # NAFTA a BENZEN — historie z fuel-prices.eu (oficiální data Evropské komise, týdenní)
+    try:
+        h = {"User-Agent": "Mozilla/5.0"}
+        r = requests.get("https://www.fuel-prices.eu/Czechia/", headers=h, timeout=10)
+        soup = BeautifulSoup(r.content, "html.parser")
+        table = soup.find("table")
+        rows = table.find_all("tr") if table else []
+        nafta_hist, benzin_hist = [], []
+        for tr in rows[1:]:
+            tds = tr.find_all("td")
+            if len(tds) >= 3:
+                try:
+                    diesel_eur = float(tds[2].get_text().strip().replace("€", "").replace(",", ""))
+                    benzin_eur = float(tds[1].get_text().strip().replace("€", "").replace(",", ""))
+                    diesel_czk = round(diesel_eur * eur_rate, 2)
+                    benzin_czk = round(benzin_eur * eur_rate, 2)
+                    nafta_hist.append(diesel_czk)
+                    benzin_hist.append(benzin_czk)
+                except ValueError:
+                    continue
+        nafta_hist = list(reversed(nafta_hist))
+        benzin_hist = list(reversed(benzin_hist))
+        if len(nafta_hist) >= 2:
+            nafta_daily = []
+            benzin_daily = []
+            for i in range(30):
+                idx = min(i * len(nafta_hist) // 30, len(nafta_hist) - 1)
+                nafta_daily.append(str(nafta_hist[idx]))
+                benzin_daily.append(str(benzin_hist[idx]))
+            result += "NAFTA|" + ",".join(nafta_daily) + "\n"
+            result += "BENZEN|" + ",".join(benzin_daily) + "\n"
+        else:
+            result += "NAFTA|\nBENZEN|\n"
+    except Exception:
+        result += "NAFTA|\nBENZEN|\n"
 
     return result
 
@@ -670,6 +690,17 @@ if __name__ == "__main__":
         ("https://ct24.ceskatelevize.cz/rss/domaci", 100),
         ("https://www.novinky.cz/rss/domaci", 100),
     ], celkovy_limit=200, exclude_titulky=svet_titulky)
+
+    # Obojsměrná deduplikace: odebereme i ČR titulky ze Světa
+    cr_titulky = {b["titulek"] for b in extrahuj_bloky(cr_data[1])}
+    svet_bloky = extrahuj_bloky(svet_data[1])
+    svet_filtrovane = [b for b in svet_bloky if b["titulek"] not in cr_titulky]
+    if len(svet_filtrovane) < len(svet_bloky):
+        print(f"  Dedup Svět←ČR: odebráno {len(svet_bloky) - len(svet_filtrovane)} duplikátů")
+        svet_filtrovany_text = ""
+        for b in svet_filtrovane:
+            svet_filtrovany_text += b["blok"]
+        svet_data = (svet_data[0], svet_filtrovany_text)
     tech_data = stahni_zpravy_multi([
         ("https://www.lupa.cz/rss/clanky/", 30),
         ("https://www.cnews.cz/feed/", 30),

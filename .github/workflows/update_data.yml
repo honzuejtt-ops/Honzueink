@@ -2,25 +2,22 @@ name: Update E-paper Data
 
 on:
   schedule:
-    # Cron výraz: '0 * * * *' znamená, že se to spustí každou celou hodinu.
-    # Můžeš to změnit třeba na každé 4 hodiny: '0 */4 * * *'
     - cron: '0 * * * *' 
-  workflow_dispatch: # Tohle ti přidá na GitHubu tlačítko, abys to mohl spustit i ručně, kdykoli chceš!
+  workflow_dispatch:
 
 jobs:
   update-data:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repozitare
-        uses: actions/checkout@v3
+        uses: actions/checkout@v5
 
       - name: Priprava Pythonu
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v6
         with:
           python-version: '3.10'
 
       - name: Instalace knihoven
-        # TADY JE TA ZMĚNA: Přidáno slůvko trafilatura nakonec řádku
         run: pip install requests beautifulsoup4 trafilatura
 
       - name: Spusteni Python skriptu
@@ -29,12 +26,12 @@ jobs:
           NEWS_API_KEY: ${{ secrets.NEWS_API_KEY }}
         run: python data_fetcher.py
 
-      - name: Ulozeni a nahrani novych texaku zpatky do repozitare
+      - name: Ulozeni a nahrani novych dat zpatky do repozitare
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
           git add -A
           git diff --cached --quiet && echo "Zadne zmeny" && exit 0
           git commit -m "Automatická aktualizace dat pro e-paper"
-          git pull --rebase origin main
+          git pull --rebase -X ours origin main
           git push

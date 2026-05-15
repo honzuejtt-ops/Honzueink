@@ -286,30 +286,49 @@ def stahni_kurzy_historie():
         h = {"User-Agent": "Mozilla/5.0"}
         r = requests.get("https://www.fuel-prices.eu/Czechia/", headers=h, timeout=10)
         soup = BeautifulSoup(r.content, "html.parser")
-        table = soup.find("table")
-        rows = table.find_all("tr") if table else []
+        tables = soup.find_all("table")
         nafta_hist, benzin_hist = [], []
-        for tr in rows[1:]:
-            tds = tr.find_all("td")
-            if len(tds) >= 3:
-                try:
-                    diesel_eur = float(tds[2].get_text().strip().replace("€", "").replace(",", ""))
-                    benzin_eur = float(tds[1].get_text().strip().replace("€", "").replace(",", ""))
-                    diesel_czk = round(diesel_eur * eur_rate, 2)
-                    benzin_czk = round(benzin_eur * eur_rate, 2)
-                    nafta_hist.append(diesel_czk)
-                    benzin_hist.append(benzin_czk)
-                except ValueError:
-                    continue
+        candidate_table = None
+        for tbl in tables:
+            rows = tbl.find_all("tr")
+            for tr in rows:
+                tds = tr.find_all("td")
+                texts = [td.get_text().strip() for td in tds]
+                if len(tds) >= 3 and any("€" in t for t in texts):
+                    candidate_table = tbl
+                    break
+            if candidate_table:
+                break
+        if candidate_table:
+            rows = candidate_table.find_all("tr")
+            for tr in rows[1:]:
+                tds = tr.find_all("td")
+                if len(tds) >= 3:
+                    try:
+                        diesel_text = tds[2].get_text().strip().replace("€", "").replace(",", ".").replace("\xa0", "")
+                        benzin_text = tds[1].get_text().strip().replace("€", "").replace(",", ".").replace("\xa0", "")
+                        diesel_eur = float(diesel_text)
+                        benzin_eur = float(benzin_text)
+                        diesel_czk = round(diesel_eur * eur_rate, 2)
+                        benzin_czk = round(benzin_eur * eur_rate, 2)
+                        nafta_hist.append(diesel_czk)
+                        benzin_hist.append(benzin_czk)
+                    except (ValueError, IndexError):
+                        continue
         nafta_hist = list(reversed(nafta_hist))
         benzin_hist = list(reversed(benzin_hist))
         if len(nafta_hist) >= 2:
             nafta_daily = []
             benzin_daily = []
+            n = len(nafta_hist)
             for i in range(30):
-                idx = min(i * len(nafta_hist) // 30, len(nafta_hist) - 1)
-                nafta_daily.append(str(nafta_hist[idx]))
-                benzin_daily.append(str(benzin_hist[idx]))
+                t = i / 29.0 if 29 > 0 else 0
+                idx_f = t * (n - 1)
+                idx_lo = int(idx_f)
+                idx_hi = min(idx_lo + 1, n - 1)
+                frac = idx_f - idx_lo
+                nafta_daily.append(f"{nafta_hist[idx_lo] + (nafta_hist[idx_hi] - nafta_hist[idx_lo]) * frac:.2f}")
+                benzin_daily.append(f"{benzin_hist[idx_lo] + (benzin_hist[idx_hi] - benzin_hist[idx_lo]) * frac:.2f}")
             result += "NAFTA|" + ",".join(nafta_daily) + "\n"
             result += "BENZEN|" + ",".join(benzin_daily) + "\n"
         else:

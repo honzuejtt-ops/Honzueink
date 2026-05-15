@@ -730,10 +730,12 @@ if __name__ == "__main__":
         ("https://blog.google/technology/ai/rss/", 20),
     ], celkovy_limit=200)
 
-    # 3. Pozitivní zprávy (zde povolíme delší historii, 14 dní, protože nepíšou denně)
+    # 3. Pozitivní zprávy
     pozit_data = stahni_zpravy_multi([
-        ("https://pozitivni-zpravy.cz/feed/", 50),
-    ], celkovy_limit=50, max_age_days=14)
+        ("https://pozitivni-zpravy.cz/feed/", 20),
+        ("https://www.novinky.cz/rss/magazin", 30),
+        ("https://refresher.cz/rss", 20),
+    ], celkovy_limit=50, max_age_days=1)
 
     # 2. Archivace a ukládání zpráv do eindata/zpravy/aktualni/ a archiv/YYYY-MM-DD dle data článku
     oprav_existujici_archiv(archiv_dir)

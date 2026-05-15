@@ -10,4 +10,4 @@ Nova Lake-AX původně bylo ještě ambicióznější
 Bohužel to vypadá, že Intel dřívější plány na výkonná GPU zredukoval. Původně chtěl „Halo“ procesor s velkým iGPU vyrobit už v generaci Nova Lake-AX, která měla mít stejné pouzdro BGA s 4326 kontakty. Podle Jaykihna mělo Nova Lake-AX mít GPU dokonce s 48 Xe Core, což by znamenalo 6144 shaderů architektura Xe3P. Pak by šlo o nejvýkonnější grafiku, jakou kdy Intel vyrobil.
 Generace Nova Lake-AX byla ale bohužel zrušená a jak je vidět, v generaci Razor Lake-AX bude GPU mít jen dvoutřetinový počet výpočetních jednotek. Je možné, že právě příliš ambiciózní GPU ke zrušení přispělo.
 Generace procesorů Razor Lake by mělo vyjít jako Core Ultra generace 500, zřejmě na konci roku 2027 nebo začátkem roku 2028. Halo verze Razor Lake-AX pravděpodobně bude uvedena o něco později, pravděpodobně tedy půjde o produkt roku 2028.
-Zdroje: techPowerUp, Haze, Jaykihn
+Zdroje: techPowerUp, Haze, Jaykihn (1, 2)

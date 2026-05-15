@@ -79,11 +79,11 @@ def stahni_zpravy(rss_url, limit=15):
             if pub_date and pub_date.get_text():
                 try:
                     dt = parsedate_to_datetime(pub_date.get_text().strip())
-                    datum_cas = dt.strftime("%d.%m.%Y %H:%M")
+                    datum_cas = dt.strftime("%d.%-m. %H:%M")
                 except Exception:
-                    datum_cas = datetime.now().strftime("%d.%m.%Y %H:%M")
+                    datum_cas = datetime.now().strftime("%d.%-m. %H:%M")
             else:
-                datum_cas = datetime.now().strftime("%d.%m.%Y %H:%M")
+                datum_cas = datetime.now().strftime("%d.%-m. %H:%M")
 
             # Perex (description)
             perex_el = item.find('description')
@@ -129,39 +129,37 @@ def stahni_pocasi():
 
 # --- FUNKCE PRO PALIVA (Nafta, Benzin) ---
 def stahni_paliva():
-    """Stáhne aktuální ceny benzínu Natural 95 a nafty v ČR."""
+    """Stáhne aktuální ceny benzínu Natural 95 a nafty v ČR (Kč/l)."""
+    import re
     nafta, benzin = "N/A", "N/A"
+
+    # Zdroj 1: mbenzin.cz — státem regulovaná maximální cena (rychlé a spolehlivé)
     try:
-        r = requests.get("https://www.mbenzin.cz/api/v1/prices", timeout=8)
-        data = r.json()
-        if "Nafta" in data:
-            nafta = f"{data['Nafta']:.2f}"
-        if "Natural95" in data:
-            benzin = f"{data['Natural95']:.2f}"
+        h = {"User-Agent": "Mozilla/5.0"}
+        r = requests.get("https://www.mbenzin.cz/", headers=h, timeout=8)
+        html = r.text
+        m = re.search(r'<strong>Nafta:</strong>\s*(\d+[.,]\d+)', html)
+        if m: nafta = m.group(1).replace(",", ".")
+        m = re.search(r'<strong>Natural\s*95:</strong>\s*(\d+[.,]\d+)', html)
+        if m: benzin = m.group(1).replace(",", ".")
+        if nafta != "N/A" and benzin != "N/A":
+            return nafta, benzin
     except Exception:
         pass
 
-    if nafta == "N/A" or benzin == "N/A":
-        try:
-            h = {"User-Agent": "Mozilla/5.0"}
-            r = requests.get("https://www.kurzy.cz/komodity/benzin-nafta-cena/", headers=h, timeout=8)
-            from bs4 import BeautifulSoup
-            soup = BeautifulSoup(r.content, "html.parser")
-            rows = soup.select("table tr")
-            for row in rows:
-                cells = row.find_all("td")
-                if len(cells) >= 3:
-                    label = cells[0].get_text().strip().lower()
-                    val = cells[2].get_text().strip().replace(",", ".").replace("Kč", "").strip()
-                    try:
-                        if "natural 95" in label and benzin == "N/A":
-                            benzin = f"{float(val):.2f}"
-                        if "nafta" in label and nafta == "N/A":
-                            nafta = f"{float(val):.2f}"
-                    except ValueError:
-                        pass
-        except Exception:
-            pass
+    # Zdroj 2: kurzy.cz/komodity
+    try:
+        h = {"User-Agent": "Mozilla/5.0"}
+        r = requests.get("https://www.kurzy.cz/komodity/benzin-nafta-cena/", headers=h, timeout=8)
+        text = r.text
+        if nafta == "N/A":
+            m = re.search(r'[Nn]afta.*?(\d+[.,]\d+)', text)
+            if m: nafta = m.group(1).replace(",", ".")
+        if benzin == "N/A":
+            m = re.search(r'(?:Natural\s*95|Benzín).*?(\d+[.,]\d+)', text)
+            if m: benzin = m.group(1).replace(",", ".")
+    except Exception:
+        pass
 
     if nafta == "N/A":
         nafta = "34.00"
@@ -615,7 +613,7 @@ def oprav_existujici_archiv(archiv_dir):
                         except ValueError:
                             pass # Pokračujeme s dněškem
                         
-                        uredne_datum = dt.strftime("%d.%m.%Y %H:%M")
+                        uredne_datum = dt.strftime("%d.%-m. %H:%M")
                         item["blok"] = re.sub(r"\|D\|.*?\|P\|", f"|D|{uredne_datum}|P|", item["blok"], count=1)
                         item["datum_raw"] = uredne_datum
 

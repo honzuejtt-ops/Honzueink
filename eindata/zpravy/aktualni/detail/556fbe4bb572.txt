@@ -1,0 +1,9 @@
+Článek
+Zjednodušeně řečeno, buňky v lidském těle neustále vyhodnocují signály ze svého okolí a podle nich se rozhodují, zda se začnou dělit, růst nebo naopak zůstanou v klidu.
+Jedním z klíčových systémů, který tuto komunikaci řídí, je tzv. Wnt signalizační dráha. Je to mechanismus, který koordinuje miliardy buněk v těle. Stojí za tím, že se z jediné buňky vyvine celý organismus, a v dospělosti řídí obnovu tkání. Dosud nebylo jasné, jak přesně tento mechanismus funguje.
+Protein jako přepínač
+Nový výzkum nyní popsal, že buňka nereaguje na podněty plynule, ale spíše v režimu ano–ne po překročení určité rozhodovací hranice. Tento princip mění naše chápání vzájemného fungování buněk a umožňuje lépe porozumět situacím, kdy se buněčné rozhodování vymkne kontrole a může způsobit rakovinné bujení, uvedl první autor studie Miroslav Micka.
+Proces začíná na povrchu buňky, kde signál zachytí receptor ukotvený v tzv. buněčné membráně. Na něj se naváže protein Dishevelled (DVL), který přenáší informaci dále do buňky. Aby DVL mohl pokračovat dovnitř buňky, musí se nejprve chemicky upravit – na jeho povrchu se začnou hromadit drobné chemické skupiny, které postupně zvyšují jeho záporný náboj.
+A právě tady přichází moment, který rozhoduje. „Zjistili jsme, že protein DVL se chová jako přepínač – svou strukturu změní, jakmile záporný náboj na jeho povrchu překročí určitou prahovou hodnotu. Teprve v tu chvíli přeskupí svou strukturu a umožní další krok v přenosu signálu,“ doplnil Micka. Buňka tak dostává jasný pokyn, co má vlastně dělat.
+Důležitý je tedy onen bod zlomu, když je buňce vyslán signál. Dosud jej věda chápala jen částečně. Vědělo se sice, kudy signál prochází, ale odborníci jej chápali především jako plynulý regulační systém. Nový výzkum však ukázal, že jde spíše o proces založený na náhlé změně po překročení určitého prahu.
+Rozklíčování podobných mechanismů tak přibližuje medicínu účinnějším terapiím.

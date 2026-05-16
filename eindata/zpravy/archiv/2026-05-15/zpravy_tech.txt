@@ -508,3 +508,20 @@ To better understand how well ChatGPT serves people in these moments, we built a
 GPT‑5.5 Thinking outperforms earlier models on complex personal finance tasks. GPT‑5.5 Pro, available for people on ChatGPT Pro, achieves the best overall performance.
 This benchmark gives us a clearer way to measure progress, and we will continue to improve how ChatGPT handles complex personal finance tasks over time.
 “Connecting my finances in ChatGPT helped me figure out how to pay off our mortgage with a realistic monthly plan I could actually follow.”|E|
+|T|Databricks brings GPT-5.5 to enterprise agent workflows|D|15.5. 00:00|P|Databricks uses GPT-5.5 for enterprise agent workflows after the model set a new state of the art on the OfficeQA Pro benchmark.|X|Databricks brings GPT‑5.5 to enterprise agent workflows
+GPT‑5.5 set a new state of the art on OfficeQA Pro, Databricks’ benchmark for complex enterprise agent tasks.
+50%
+Accuracy on the OfficeQA Pro benchmark (state of the art)
+46%
+Reduction in errors on the OfficeQA Pro benchmark vs. GPT-5.4
+Databricks is making GPT‑5.5 available for customer agent workflows after the model established a new state of the art on OfficeQA Pro, the company’s benchmark for complex enterprise document tasks.
+OfficeQA Pro evaluates how models handle parsing, retrieval, and grounded reasoning across workflows involving scanned PDFs, legacy files, and long-context documents, tasks that frequently break production agent systems.
+In the agent-harness setting, GPT‑5.5 reduced errors by 46% compared to GPT‑5.4 and became the first model to surpass 50% accuracy on OfficeQA Pro.
+“Codex with 5.5 is now state-of-the-art amongst all the agents and models out there.”
+OfficeQA Pro includes large numbers of scanned or legacy enterprise documents, where small extraction errors during parsing can cascade downstream through the rest of the workflow. “Once you can’t extract a certain digit or number, that changes the entire trajectory of what the agent works with,” Singhvi explains.
+Databricks saw the largest gains from GPT‑5.5 in these parsing-heavy workflows. “Earlier models like 5.4 were unable to parse all the digits correctly, but it seems like 5.5 has a step-function lift in parsing older documents and scanned PDFs,” Singhvi says.
+The team also saw improvements in orchestration across multi-step tasks. “One thing that we saw with 5.4 is sometimes it would go on these unnecessary search detours, and that would cause very inefficient trajectories,” Singhvi says.
+Compared to earlier models, GPT‑5.5 was more reliable at retrieving relevant context and completing complex workflows without additional supervision.
+Databricks now makes GPT‑5.5 available through AI Unity Gateway, where customers use the model inside workflows built with AgentBricks and the Agent Supervisor API. In these systems, GPT‑5.5 orchestrates parsing, retrieval, and execution across specialized agents.
+“We’re going to see a lot of customers using AgentBricks and Agent Supervisor API for custom agent workflows,” Singhvi says. “Having GPT‑5.5 supervise these workflows is really exciting.”
+“GPT-5.5 has been great in terms of knowledge lift. It's a step size function change in terms of doing knowledge work for us.”|E|

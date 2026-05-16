@@ -1,0 +1,36 @@
+How business operations teams use Codex
+Explore how business operations teams can use Codex to turn scattered initiative context, metrics, trackers, and stakeholder input into decision-ready briefs, updates, packets, and tradeoff models.
+Business operations work often starts across project trackers, KPI dashboards, planning docs, meeting notes, Slack threads, spreadsheets, and executive asks. Codex helps pull that context together and produce the first usable version of the artifact: an off-track brief, strategic initiative update, leadership decision packet, progress update, or scenario model. Your team still owns the judgment and recommendation; Codex helps get the working draft in front of the right people faster.
+Learn more about using Codex for everyday work in our on-demand webinar(opens in a new window).
+Use these prompts to turn operating context into assets your team can review and act on. Give Codex the initiative docs, trackers, dashboards, stakeholder notes, decision history, and review expectations behind the work, then ask for a concrete first pass. From there, your team can pressure-test the evidence, sharpen the recommendation, resolve open questions, and move the work toward a decision.
+Use this when: A strategic initiative may be slipping and leaders need a concise brief on what changed, why it happened, and what decision is needed.
+Suggested plugins: Google Drive, Slack, Gmail, Documents, Spreadsheets, Presentations
+- Codex reviews the initiative context, KPI movement, project status, financial model, and stakeholder updates.
+- It identifies what changed, likely causes, execution gaps, risks, options, and owners.
+- It creates an executive-ready brief with a clear recommendation and decision ask.
+Diagnose whether Acme’s pricing rollout is off track. Use the executive ask, initiative docs, KPI dashboards, program tracker, financial model, meeting notes, pricing rollout discussion notes, and any related context I provide. Create an executive-ready brief with what changed, likely causes, options, tradeoffs, risks, owners, recommendation, and decision ask. Separate sourced facts from interpretation.
+Use this when: A recurring initiative update needs to become a clear leadership-ready readout with deltas, risks, blockers, and decisions needed.
+Suggested plugins: Google Drive, Slack, Gmail, Documents, Spreadsheets
+- Codex reviews the latest tracker, initiative materials, KPI changes, prior updates, owner notes, and decision history.
+- It identifies what changed, what is blocked, which decisions are open, and which items are stale.
+- It creates a leadership-ready update and a stakeholder-ready version for follow-up.
+Prepare this week’s strategic initiative update for Acme’s pricing rollout. Use the project tracker, pricing rollout docs, KPI changes, prior briefs, owner notes, decision log, stakeholder discussion notes, and any related context I provide. Draft a strategy brief plus a stakeholder-ready update with deltas, risks, blockers, decisions needed, next actions, and stale items to chase.
+Use this when: Leaders need a structured pre-read that turns analysis, debate, and open questions into a decision-ready packet.
+Suggested plugins: Google Drive, Slack, Gmail, Documents, Spreadsheets, Presentations, Google Calendar
+- Codex reviews the decision memo, supporting analysis, comments, models, dashboards, meeting notes, and open questions.
+- It organizes the decision around recommendation, rationale, options, tradeoffs, assumptions, risks, and unresolved issues.
+- It creates a review-ready decision packet or pre-read for leadership.
+Prepare the May 15 leadership decision packet for Acme’s support model change. Use the decision memo, source analysis, open comments, financial model, KPI dashboard, support model debate notes, prior meeting notes, and open questions I provide. Create a pre-read with recommendation, rationale, options, tradeoffs, assumptions, risks, decision log, and unresolved questions.
+Use this when: A business operations team needs to turn initiative trackers and leadership notes into a board, company, or executive progress update.
+Suggested plugins: Google Drive, Slack, Gmail, Documents, Spreadsheets, Presentations
+- Codex reviews the update outline, prior materials, initiative trackers, metric snapshots, leadership notes, and source docs.
+- It identifies the through-line, proof points, risks, watch items, and next milestones.
+- It creates a board-ready or company-ready progress update draft with review flags.
+Create Acme’s Q2 progress update. Use “Q2 Progress Outline,” the prior board deck, initiative trackers, metric snapshots, leadership notes, key background docs, and any related context I provide. Identify the through-line, draft slide copy or memo sections, add proof points, and call out risks, watch items, and next milestones. Flag any claims that need owner confirmation.
+Use this when: Leaders need to compare strategic paths with clear assumptions, tradeoffs, risks, ownership, and customer or business impact.
+Suggested plugins: Google Drive, Slack, Gmail, Documents, Spreadsheets, Presentations
+- Codex reviews the model, KPI context, planning docs, stakeholder notes, operational data, and decision criteria.
+- It stress-tests assumptions, compares scenarios, and maps tradeoffs across cost, timing, risk, ownership, and impact.
+- It creates a scenario model and recommendation packet for leadership review.
+Compare three paths for Acme’s customer support model. Use the financial model, KPI dashboard, planning docs, market context, stakeholder notes, support volume data, and any related context I provide. Stress-test assumptions, draft scenarios, create a prioritization matrix, and recommend a path. Include cost, timing, risk, ownership, customer impact, and assumptions leadership should inspect.
+Keep exploring Codex for work with these resources:

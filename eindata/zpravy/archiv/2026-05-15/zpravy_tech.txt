@@ -525,3 +525,111 @@ Compared to earlier models, GPT‑5.5 was more reliable at retrieving relevant c
 Databricks now makes GPT‑5.5 available through AI Unity Gateway, where customers use the model inside workflows built with AgentBricks and the Agent Supervisor API. In these systems, GPT‑5.5 orchestrates parsing, retrieval, and execution across specialized agents.
 “We’re going to see a lot of customers using AgentBricks and Agent Supervisor API for custom agent workflows,” Singhvi says. “Having GPT‑5.5 supervise these workflows is really exciting.”
 “GPT-5.5 has been great in terms of knowledge lift. It's a step size function change in terms of doing knowledge work for us.”|E|
+|T|How sales teams use Codex|D|15.5. 00:00|P|See how sales teams can use Codex to create pipeline briefs, meeting prep packets, forecast reviews, account plans, and stalled-deal diagnoses from re...|X|How sales teams use Codex
+Explore how sales teams can use Codex to turn account context, customer conversations, and deal signals into pipeline briefs, meeting packs, forecast reviews, and account plans.
+Sales work often lives across CRM fields, call notes, email threads, Slack discussions, decks, customer docs, and account signals. Codex helps pull that context together and produce the first usable version of the artifact, whether that is a prioritized account brief, meeting prep packet, forecast risk review, account strategy pack, or stalled-deal diagnosis. Sellers and managers still own the relationship strategy and judgment; Codex helps get the working draft in front of the team faster.
+Learn more about using Codex for everyday work in our on-demand webinar(opens in a new window).
+Use these prompts to turn everyday sales context into working assets your team can act on. Give Codex the account history, customer conversations, deal signals, open risks, and review expectations behind the work, then ask for a concrete first pass: a prep brief, follow-up note, forecast risk memo, account plan, or escalation plan. From there, your team can refine the strategy, pressure-test the evidence, and decide the next move.
+Use this when: A sales team needs to turn a broad list of underworked accounts into prioritized pipeline actions with clear triggers, stakeholders, and next steps.
+Suggested plugins: Gmail, Slack, Gong, Google Drive, Spreadsheets, Documents
+- Codex reviews account records, owner portfolios, call notes, email threads, usage signals, and relevant account context.
+- It ranks accounts by trigger, pain, stakeholder access, urgency, and likely next action.
+- It creates a review-ready pipeline prioritization brief with account summaries, outreach drafts, and next steps.
+Find pipeline opportunities from Acme’s underworked enterprise accounts. Use the Salesforce owner portfolio export, account signal spreadsheet, latest customer call transcripts, open email threads, Slack account mentions, GTM updates, account pages, and any related context I provide. Rank accounts by trigger, pain, stakeholder access, and next action. Create a prioritized account brief, stakeholder map, three-touch outreach sequence, and CRM-ready next steps for sales manager review.
+Use this when: A seller needs to prepare for a customer meeting and then quickly turn notes or a transcript into follow-up, internal recap, and CRM updates.
+Suggested plugins: Google Calendar, Gmail, Slack, Gong, Google Drive, Documents, Presentations
+- Codex reviews account history, prior conversations, open threads, usage or support context, and meeting goals.
+- It identifies customer priorities, likely questions, risks, open asks, and recommended meeting moves.
+- It creates a prep brief before the meeting and follow-up assets after notes or a transcript are available.
+Prepare for the May 12 Acme renewal meeting. Use the calendar invite, Salesforce account notes export, latest Gong call transcripts, open Gmail threads, usage dashboard, support escalation notes, renewal deck template, recent company news, and any related account context I provide. Create the meeting brief and questions. If post-meeting notes or a transcript exist, draft the customer follow-up, CRM-ready update, and internal Slack recap. If they do not exist yet, stop after the prep brief and tell me what to provide after the call. Do not invent dates or commitments.
+Use this when: A sales leader needs a sourced view of which deals should stay in commit, move to upside, or get pulled from forecast.
+Suggested plugins: Gmail, Slack, Gong, Google Drive, Spreadsheets, Documents
+- Codex reviews forecast snapshots, opportunity details, customer conversations, deal threads, and risk context.
+- It compares sourced facts against forecast position, stage, activity, customer urgency, blockers, and close path.
+- It creates a forecast review memo with deal recommendations, risk rationale, and owner follow-ups.
+Review Acme, Globex, and Initech for this week’s forecast call. Use Salesforce as the source of truth through the opportunity export, plus forecast snapshots, Gong notes, Slack deal threads, support escalations, legal status, recent email context, and anything else explaining deal risk. Tell me what should stay in commit, move to upside, or get pulled. Separate sourced facts from inferred risk and end with owner follow-ups.
+Use this when: An account plan is stale and the team needs a current strategy pack grounded in recent activity, customer signals, and open risks.
+Suggested plugins: Gmail, Slack, Gong, Google Drive, Documents, Presentations
+- Codex reviews recent account activity, opportunity context, customer conversations, usage notes, and prior plans.
+- It identifies stakeholder dynamics, discovery gaps, risks, objections, proof points, and value hypothesis.
+- It creates a refreshed account plan or deal strategy pack with next-best actions for the account team.
+Refresh the Acme enterprise account plan. Use the Salesforce account and opportunity export, Gong calls from the last 90 days, Slack account threads, Drive and Notion docs, approved solutions examples, usage notes, recent customer emails, and recent company news I provide. Create a deal strategy pack with stakeholder map, discovery gaps, risks, value hypothesis, objections, proof points, and next-best actions. Flag anything that needs AE or manager confirmation.
+Use this when: A deal is stuck and the team needs to understand the real blocker, prior attempts, escalation path, and next customer-facing move.
+Suggested plugins: Gmail, Slack, Gong, Google Drive, Documents
+- Codex reviews stage history, activity records, customer conversations, internal deal threads, and blocker context.
+- It identifies the likely blocker, prior attempts, missing information, internal experts, and assets that could unblock the deal.
+- It creates a deal diagnosis packet with customer-facing next steps and an internal escalation plan.
+Diagnose why the Acme expansion deal is stuck. Use Salesforce stage history, closed activities, Gong calls, Gmail threads, Slack deal threads, security notes, legal status, procurement notes, and any related account context I provide. Classify the real blocker, summarize prior attempts, find the right internal expert or asset, and draft a customer-facing next step plus internal escalation plan. Separate sourced facts from inferred blockers.
+Keep exploring Codex for work with these resources:|E|
+|T|How business operations teams use Codex|D|15.5. 00:00|P|See how business operations teams can use Codex to create initiative briefs, strategy updates, leadership decision packets, progress updates, and more...|X|How business operations teams use Codex
+Explore how business operations teams can use Codex to turn scattered initiative context, metrics, trackers, and stakeholder input into decision-ready briefs, updates, packets, and tradeoff models.
+Business operations work often starts across project trackers, KPI dashboards, planning docs, meeting notes, Slack threads, spreadsheets, and executive asks. Codex helps pull that context together and produce the first usable version of the artifact: an off-track brief, strategic initiative update, leadership decision packet, progress update, or scenario model. Your team still owns the judgment and recommendation; Codex helps get the working draft in front of the right people faster.
+Learn more about using Codex for everyday work in our on-demand webinar(opens in a new window).
+Use these prompts to turn operating context into assets your team can review and act on. Give Codex the initiative docs, trackers, dashboards, stakeholder notes, decision history, and review expectations behind the work, then ask for a concrete first pass. From there, your team can pressure-test the evidence, sharpen the recommendation, resolve open questions, and move the work toward a decision.
+Use this when: A strategic initiative may be slipping and leaders need a concise brief on what changed, why it happened, and what decision is needed.
+Suggested plugins: Google Drive, Slack, Gmail, Documents, Spreadsheets, Presentations
+- Codex reviews the initiative context, KPI movement, project status, financial model, and stakeholder updates.
+- It identifies what changed, likely causes, execution gaps, risks, options, and owners.
+- It creates an executive-ready brief with a clear recommendation and decision ask.
+Diagnose whether Acme’s pricing rollout is off track. Use the executive ask, initiative docs, KPI dashboards, program tracker, financial model, meeting notes, pricing rollout discussion notes, and any related context I provide. Create an executive-ready brief with what changed, likely causes, options, tradeoffs, risks, owners, recommendation, and decision ask. Separate sourced facts from interpretation.
+Use this when: A recurring initiative update needs to become a clear leadership-ready readout with deltas, risks, blockers, and decisions needed.
+Suggested plugins: Google Drive, Slack, Gmail, Documents, Spreadsheets
+- Codex reviews the latest tracker, initiative materials, KPI changes, prior updates, owner notes, and decision history.
+- It identifies what changed, what is blocked, which decisions are open, and which items are stale.
+- It creates a leadership-ready update and a stakeholder-ready version for follow-up.
+Prepare this week’s strategic initiative update for Acme’s pricing rollout. Use the project tracker, pricing rollout docs, KPI changes, prior briefs, owner notes, decision log, stakeholder discussion notes, and any related context I provide. Draft a strategy brief plus a stakeholder-ready update with deltas, risks, blockers, decisions needed, next actions, and stale items to chase.
+Use this when: Leaders need a structured pre-read that turns analysis, debate, and open questions into a decision-ready packet.
+Suggested plugins: Google Drive, Slack, Gmail, Documents, Spreadsheets, Presentations, Google Calendar
+- Codex reviews the decision memo, supporting analysis, comments, models, dashboards, meeting notes, and open questions.
+- It organizes the decision around recommendation, rationale, options, tradeoffs, assumptions, risks, and unresolved issues.
+- It creates a review-ready decision packet or pre-read for leadership.
+Prepare the May 15 leadership decision packet for Acme’s support model change. Use the decision memo, source analysis, open comments, financial model, KPI dashboard, support model debate notes, prior meeting notes, and open questions I provide. Create a pre-read with recommendation, rationale, options, tradeoffs, assumptions, risks, decision log, and unresolved questions.
+Use this when: A business operations team needs to turn initiative trackers and leadership notes into a board, company, or executive progress update.
+Suggested plugins: Google Drive, Slack, Gmail, Documents, Spreadsheets, Presentations
+- Codex reviews the update outline, prior materials, initiative trackers, metric snapshots, leadership notes, and source docs.
+- It identifies the through-line, proof points, risks, watch items, and next milestones.
+- It creates a board-ready or company-ready progress update draft with review flags.
+Create Acme’s Q2 progress update. Use “Q2 Progress Outline,” the prior board deck, initiative trackers, metric snapshots, leadership notes, key background docs, and any related context I provide. Identify the through-line, draft slide copy or memo sections, add proof points, and call out risks, watch items, and next milestones. Flag any claims that need owner confirmation.
+Use this when: Leaders need to compare strategic paths with clear assumptions, tradeoffs, risks, ownership, and customer or business impact.
+Suggested plugins: Google Drive, Slack, Gmail, Documents, Spreadsheets, Presentations
+- Codex reviews the model, KPI context, planning docs, stakeholder notes, operational data, and decision criteria.
+- It stress-tests assumptions, compares scenarios, and maps tradeoffs across cost, timing, risk, ownership, and impact.
+- It creates a scenario model and recommendation packet for leadership review.
+Compare three paths for Acme’s customer support model. Use the financial model, KPI dashboard, planning docs, market context, stakeholder notes, support volume data, and any related context I provide. Stress-test assumptions, draft scenarios, create a prioritization matrix, and recommend a path. Include cost, timing, risk, ownership, customer impact, and assumptions leadership should inspect.
+Keep exploring Codex for work with these resources:|E|
+|T|How data science teams use Codex|D|15.5. 00:00|P|See how data science teams can use Codex to build root-cause briefs, impact readouts, KPI memos, scoped analyses, and dashboard specs from real work i...|X|How data science teams use Codex
+See how data science teams can use Codex to turn questions, dashboards, and raw data into review-ready analysis assets.
+With Codex, data science teams can turn scattered inputs into usable analysis assets faster. Starting from dashboards, metric definitions, exports, experiment notes, and business context, Codex helps assemble a first draft of the deliverable—including charts, caveats, source links, and review questions—so teams can validate the work and share it with confidence.
+Learn more about using Codex for everyday work in our on-demand webinar(opens in a new window).
+Most data science work does not end with the query. It ends with an artifact someone can read, challenge, and act on. Use these prompts to have Codex turn dashboards, exports, metric definitions, and stakeholder context into a first draft of a real deliverable—whether that’s a root-cause brief, impact readout, KPI memo, or dashboard spec. Then apply your judgment where it matters most: validating the evidence, pressure-testing the caveats, and sharpening the recommendation.
+Use this when: A key metric moved unexpectedly and the team needs a source-backed brief that explains what changed, why it likely happened, and what to do next.
+Suggested plugins: Google Drive, Spreadsheets, Slack, Gmail, Documents
+- Codex reviews the metric definition, dashboard context, source exports, and recent business activity.
+- It breaks down movement by segment, cohort, channel, geography, and product surface where relevant.
+- It creates a review-ready root-cause brief that separates confirmed findings from hypotheses.
+Investigate why weekly paid subscriptions changed for Acme Pro and Acme Plus. Use the “Subscriptions KPI Dashboard,” “April Growth Launch Notes,” metric definitions from “Consumer Metrics Glossary,” recent growth-metrics discussion notes, subscription warehouse exports, and any related context I provide. Create an executive root-cause brief with likely drivers, supporting charts, segment cuts, caveats, recommended actions, and source links. Validate the numbers and flag anything uncertain.
+Use this when: A launch, experiment, or initiative needs a clear readout leaders can use to decide whether to scale, adjust, or stop.
+Suggested plugins: Google Drive, Spreadsheets, Slack, Gmail, Documents, Presentations
+- Codex reviews the initiative plan, success metrics, cohorts, dashboards, and customer signals.
+- It quantifies impact, checks guardrails, and inspects segment-level differences.
+- It creates a decision-ready readout with charts, caveats, methodology notes, and scale/change/stop guidance.
+Measure whether Acme’s April onboarding experiment improved activation. Use the “April Onboarding Experiment Plan,” experiment results export, onboarding funnel dashboard, customer cohort table, launch notes, and related team discussion context. Write a business impact readout with lift, guardrail metrics, segment differences, whether to scale or change the experiment, and the analysis steps used. Separate confirmed results from interpretation.
+Use this when: A stakeholder ask is broad, ambiguous, or underspecified and needs to become a scoped analysis asset.
+Suggested plugins: Google Drive, Spreadsheets, Slack, Gmail, Documents
+- Codex reviews the request, business question, metric definitions, available data, and surrounding context.
+- It scopes the analysis, identifies missing inputs, and runs a first pass using the provided data.
+- It creates a stakeholder-ready analysis asset with charts, caveats, validation notes, and analyst review questions.
+Turn the enterprise trial conversion request into a scoped analysis. Use the original request thread, metric definition, source-of-truth table exports, related dashboards, recent launch context, and any relevant notes I provide. Create an analysis plan, run the first-pass analysis, validate outputs, and draft a stakeholder-ready answer with caveats, charts, source links, and open questions for analyst review.
+Use this when: A recurring KPI review needs to become a leadership-ready memo focused on what changed, why it matters, and who should act.
+Suggested plugins: Google Drive, Spreadsheets, Slack, Gmail, Documents, Presentations
+- Codex reviews current KPI materials, prior reviews, owner notes, and planning context.
+- It identifies material changes, anomalies, likely drivers, risks, and data-quality issues.
+- It creates an executive KPI memo with source-backed charts, assumptions, and owner follow-ups.
+Prepare Acme’s May weekly business review. Use the “Self-Serve KPI Dashboard,” revenue and usage exports, metric definitions, last week’s WBR, owner notes, and any relevant planning context. Create an executive memo with what changed, why it matters, anomalies to inspect, owner follow-ups, and charts suitable for leadership. Include assumptions and data-quality checks.
+Use this when: A team needs a dashboard spec or first-pass dashboard plan that clarifies metrics, owners, quality checks, and the decisions the dashboard should support.
+Suggested plugins: Google Drive, Spreadsheets, Slack, Gmail, Documents, Presentations
+- Codex reviews the workflow, strategy brief, metrics, source data, dashboard examples, and stakeholder feedback.
+- It defines the KPI hierarchy, chart specs, filters, QA checks, owners, and monitoring plan.
+- It creates a dashboard spec or first-pass dashboard plan and flags gaps before publication.
+Build a decision dashboard spec for Acme’s enterprise onboarding funnel. Use the “Enterprise Onboarding Metrics Brief,” source data exports, existing dashboard examples, activation definitions, stakeholder notes, and current dashboard feedback. Define the KPI hierarchy, chart specs, filters, QA checks, owner handoffs, and monitoring plan. Create the dashboard spec and flag data gaps before publication.
+Keep exploring Codex for work with these resources:|E|

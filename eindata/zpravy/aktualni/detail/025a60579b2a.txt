@@ -1,0 +1,36 @@
+How sales teams use Codex
+Explore how sales teams can use Codex to turn account context, customer conversations, and deal signals into pipeline briefs, meeting packs, forecast reviews, and account plans.
+Sales work often lives across CRM fields, call notes, email threads, Slack discussions, decks, customer docs, and account signals. Codex helps pull that context together and produce the first usable version of the artifact, whether that is a prioritized account brief, meeting prep packet, forecast risk review, account strategy pack, or stalled-deal diagnosis. Sellers and managers still own the relationship strategy and judgment; Codex helps get the working draft in front of the team faster.
+Learn more about using Codex for everyday work in our on-demand webinar(opens in a new window).
+Use these prompts to turn everyday sales context into working assets your team can act on. Give Codex the account history, customer conversations, deal signals, open risks, and review expectations behind the work, then ask for a concrete first pass: a prep brief, follow-up note, forecast risk memo, account plan, or escalation plan. From there, your team can refine the strategy, pressure-test the evidence, and decide the next move.
+Use this when: A sales team needs to turn a broad list of underworked accounts into prioritized pipeline actions with clear triggers, stakeholders, and next steps.
+Suggested plugins: Gmail, Slack, Gong, Google Drive, Spreadsheets, Documents
+- Codex reviews account records, owner portfolios, call notes, email threads, usage signals, and relevant account context.
+- It ranks accounts by trigger, pain, stakeholder access, urgency, and likely next action.
+- It creates a review-ready pipeline prioritization brief with account summaries, outreach drafts, and next steps.
+Find pipeline opportunities from Acme’s underworked enterprise accounts. Use the Salesforce owner portfolio export, account signal spreadsheet, latest customer call transcripts, open email threads, Slack account mentions, GTM updates, account pages, and any related context I provide. Rank accounts by trigger, pain, stakeholder access, and next action. Create a prioritized account brief, stakeholder map, three-touch outreach sequence, and CRM-ready next steps for sales manager review.
+Use this when: A seller needs to prepare for a customer meeting and then quickly turn notes or a transcript into follow-up, internal recap, and CRM updates.
+Suggested plugins: Google Calendar, Gmail, Slack, Gong, Google Drive, Documents, Presentations
+- Codex reviews account history, prior conversations, open threads, usage or support context, and meeting goals.
+- It identifies customer priorities, likely questions, risks, open asks, and recommended meeting moves.
+- It creates a prep brief before the meeting and follow-up assets after notes or a transcript are available.
+Prepare for the May 12 Acme renewal meeting. Use the calendar invite, Salesforce account notes export, latest Gong call transcripts, open Gmail threads, usage dashboard, support escalation notes, renewal deck template, recent company news, and any related account context I provide. Create the meeting brief and questions. If post-meeting notes or a transcript exist, draft the customer follow-up, CRM-ready update, and internal Slack recap. If they do not exist yet, stop after the prep brief and tell me what to provide after the call. Do not invent dates or commitments.
+Use this when: A sales leader needs a sourced view of which deals should stay in commit, move to upside, or get pulled from forecast.
+Suggested plugins: Gmail, Slack, Gong, Google Drive, Spreadsheets, Documents
+- Codex reviews forecast snapshots, opportunity details, customer conversations, deal threads, and risk context.
+- It compares sourced facts against forecast position, stage, activity, customer urgency, blockers, and close path.
+- It creates a forecast review memo with deal recommendations, risk rationale, and owner follow-ups.
+Review Acme, Globex, and Initech for this week’s forecast call. Use Salesforce as the source of truth through the opportunity export, plus forecast snapshots, Gong notes, Slack deal threads, support escalations, legal status, recent email context, and anything else explaining deal risk. Tell me what should stay in commit, move to upside, or get pulled. Separate sourced facts from inferred risk and end with owner follow-ups.
+Use this when: An account plan is stale and the team needs a current strategy pack grounded in recent activity, customer signals, and open risks.
+Suggested plugins: Gmail, Slack, Gong, Google Drive, Documents, Presentations
+- Codex reviews recent account activity, opportunity context, customer conversations, usage notes, and prior plans.
+- It identifies stakeholder dynamics, discovery gaps, risks, objections, proof points, and value hypothesis.
+- It creates a refreshed account plan or deal strategy pack with next-best actions for the account team.
+Refresh the Acme enterprise account plan. Use the Salesforce account and opportunity export, Gong calls from the last 90 days, Slack account threads, Drive and Notion docs, approved solutions examples, usage notes, recent customer emails, and recent company news I provide. Create a deal strategy pack with stakeholder map, discovery gaps, risks, value hypothesis, objections, proof points, and next-best actions. Flag anything that needs AE or manager confirmation.
+Use this when: A deal is stuck and the team needs to understand the real blocker, prior attempts, escalation path, and next customer-facing move.
+Suggested plugins: Gmail, Slack, Gong, Google Drive, Documents
+- Codex reviews stage history, activity records, customer conversations, internal deal threads, and blocker context.
+- It identifies the likely blocker, prior attempts, missing information, internal experts, and assets that could unblock the deal.
+- It creates a deal diagnosis packet with customer-facing next steps and an internal escalation plan.
+Diagnose why the Acme expansion deal is stuck. Use Salesforce stage history, closed activities, Gong calls, Gmail threads, Slack deal threads, security notes, legal status, procurement notes, and any related account context I provide. Classify the real blocker, summarize prior attempts, find the right internal expert or asset, and draft a customer-facing next step plus internal escalation plan. Separate sourced facts from inferred blockers.
+Keep exploring Codex for work with these resources:

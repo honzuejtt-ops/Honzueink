@@ -1,4 +1,154 @@
-|T|Marek Olšák přešel z AMD do Valve, běží vývoj Plasmy 6.8|D|16.5. 22:00|P|Otevřený firmware Dasharo/Coreboot + openSIL pro Gigabyte MZ33-AR1, týden v KDE a nejen beta Plasmy 6.7, týden v GNOME #249 a soustředění na kvalitu, ...|X|Marek Olšák přešel z AMD do Valve
+|T|Webbův dalekohled našel pekelnou exoplanetu, prolétlo agenturami. Jak to ale funguje v praxi a proč nemáme její fotku|D|17.5. 05:45|P|Kosmický dalekohled Jamese Webba prozkoumal povrch exoplanety LHS 3844 b • Samotnou planetu ale nevidí, pozoruje jen spektrum • Povrch může připomínat...|X|Exoplaneta LHS 3844 b se před pár dny stala hotovou mediální hvězdou. Na titulních stranách mnoha zpravodajských webů se totiž objevila zpráva, která mohla evokovat dojem, že se Kosmický dalekohled Jamese Webba podíval přímo na povrch vzdáleného objektu.
+Nelze si to však vykládat doslovně. JWST je sice nejlepší kosmický dalekohled, který jsme kdy postavili, ale ani on ji nevidí přímo, takže vám její snímek neukážeme. Musíme se spokojit jen s odhadem vědců jako na obrázku níže.
+Exoplaneta LHS 3844 b
+JWST umí zakrýt vzdálené hvězdy a pozorovat jejich okolí a to včetně přímého pozorování jejich planet. Nutnou, avšak nepostačující podmínkou je, že musejí obíhat dál od svých hvězd.
+Exoplaneta LHS 3844 b v 3D vizualizaci NASA Eyes
+LHS 3844 b obíhá okolo své hvězdy naopak extrémně blízko. Je to typický představitel skupiny planet s ultrakrátkou orbitou kratší než jeden den.
+LHS 3844 b to zabere pouze 11 hodin, a přestože je mateřskou hvězdou chladný červený trpaslík, teplota na její denní straně dosahuje více než 700 °C. Exoplanetu objevila družice TESS hned na začátku své mise při pozorování mateřské hvězdy od června do srpna roku 2018.
+Poměrně malý satelit odhalil planetu díky tomu, že přechází před svou hvězdou a způsobuje periodické poklesy jasnosti. Měla by být 1,3× větší než Země.
+Vlevo družice TESS, vpravo JWST
+Dalším zkoumáním se můžeme podívat na zoubek atmosféře a pozorovat její fáze – analogii toho, co vidíme u Měsíce nebo Venuše. Samozřejmě ne přímo. Zkoumáme množství přícházejícího záření.
+Planetu sice nevidíme, ale víme, že tam je. Díky tomu také víme, že to, co pozorujeme, není pouhé záření hvězdy ale že k nám přichází také světlo odrážené od povrchu planety. Ale ne vždy!
+Jeden oběh planety
+V okamžiku, kdy planeta přechází před hvězdou, což v jejím případě trvá jen 31 minut, pozorujeme temnou noční stranu (analogie novu). Těleso částečně zakrývá povrch hvězdy, takže její jasnost klesá. Současně ale světlo hvězdy prochází případnou atmosférou planety, která v něm zanechá svůj otisk. Vědci tomu říkají transmisní spektrum. Touto metodou můžeme zkoumat složení atmosféry.
+Planeta se pohybuje dál a nachází se vedle hvězdy. Pozorujeme již neblokované světlo z hvězdy, ale také částečně světlo odrážené od tělesa (analogie první nebo poslední čtvrti).
+Fáze exoplanety při oběhu okolo hvězdy
+Těsně tak před tím, než planeta zmizí za hvězdou, pozorujeme většinu její osvětlené denní strany (analogie úplňku).
+Těleso pomalu mizí za hvězdou, ale to rozhodně není konec pozorování. Tohle je naopak druhá nejdůležitější fáze! Nyní k nám přichází pouze záření z hvězdy. Pokud tedy vezmeme data z doby krátce před úplňkem a odečteme je od dat, kdy je planeta za hvězdou, získáme její vlastní záření.
+Spektrum exoplanety
+Pokud už máme záření ze vzdálené exoplanety, můžeme ho rozložit na spektrum? Laura Kreidberg z Institutu Maxe Plancka a její tým to v nové studii udělali. Využili data z přístroje MIRI na palubě JWST.
+Teleskop se na hvězdu a planetu podíval celkem třikrát v letech 2023 a 2024. MIRI rozdělil část infračerveného záření v rozsahu od 5 do 12 mikrometrů na menší úseky vlnových délek a změřil jas v každém z nich.
+Astronomové tomu říkají tepelně emisní spektrum a můžeme jím zkoumat složení samotného povrchu, i když ho nevidíme.
+Cíl nebyl vybrán náhodně. Už dřívější pozorování dnes již nefungujícího infračerveného kosmického dalekohledu Spitzer ukázala, že LHS 3844 b může mít skalnatý povrch s nízkým albedem (odráží málo záření).
+Problém je, že výzkum atmosfér i povrchu exoplanet je stále spíše o hraní si a ověřování modelů. Pokud bychom zkoumali zemskou atmosféru z velmi velké vzdálenosti, vypadlo by nám několik modelů. Jeden z nich by hovořil o Zemi jako o planetě, která pravděpodobně má tenkou dusíkatou atmosféru. Nad dalšími modely bychom se pousmáli.
+Povrch LHS 3844 b
+Autoři pracovali se dvěma scénáři. První předpokládá povrch tvořený tmavou pevnou horninou složenou z čedičových nebo magmatických minerálů. Povrch je relativně mladý a vzniklý nedávnou geologickou aktivitou, například rozsáhlým vulkanismem.
+Druhý scénář rovněž předpokládá tmavý povrch podobný Měsíci nebo Merkuru. Zahrnuje však dlouhodobé kosmické zvětrávání, které vede k rozsáhlým oblastem pokrytým ztmavenou vrstvou regolitu ֪– jemného prachu známého také z Měsíce. Tato alternativa předpokládá, že povrch je starý a už velmi dlouho na něm neprobíhá významnější geologická aktivita.
+Simulace tepelně emisního spektra exoplanety LHS 3844 b
+Oba scénáře se liší mírou nedávné geologické aktivity, kterou vyžadují. Na Zemi a dalších aktivních tělesech Sluneční soustavy je typickým jevem při takové aktivitě odplyňování. Oxid siřičitý (SO₂) je plyn běžně spojovaný s vulkanismem. Pokud by byl na LHS 3844 b přítomen v rozumném množství, přístroj MIRI by jej měl detekovat. Nic takového však nezaznamenal. Nedávné období aktivity se proto zdá nepravděpodobné, což vede astronomy k upřednostnění druhého scénáře.
+„Prezentujeme zde tepelně emisní spektrum v rozsahu 5 až 12 μm získané pomocí JWST pro kamennou exoplanetu LHS 3844 b,“ uvádí autoři v abstraktu studie.
+„Nejlépe odpovídá tmavému povrchu s nízkým obsahem oxidu křemičitého, například bazaltu nebo jiným materiálům bohatým na olivín. Spektrum vylučuje povrchy pokryté čerstvými jemnozrnnými částicemi (prach); vesmírné zvětrávání však může tento prach ztmavit a učinit je slučitelnými s daty.
+Data také znevýhodňují přítomnost stopových koncentrací plynů CO₂ nebo SO₂ (...). V souhrnu lze říci, že tyto výsledky dobře odpovídají starému, kosmickými vlivy zvětralé mu povrchu, přičemž nevykazují žádné známky nahromaděných vulkanických plynů.“|E||T|Zachránit lidstvo, ubránit se hříčkám přírody. Vybíráme nejlepší strategie, kde jde hlavně o přežití|D|17.5. 05:10|P|Strategické hry nás často staví do role architekta nebo vojevůdce. V některých je ale výzvou samo o sobě to, abychom zvládli přežít. Dnes se podíváme ...|X|Ukázat všechny listy najednou
+RimWorld
+V RimWorldu vás čeká nelehký úkol. Stáváte se vůdcem mimozemské kolonie, kde máte pod kontrolou naprosto všechno. I když už hraním nějaký čas strávíte, nikdy si nemůžete být jisti, co vás čeká dál. Umělá inteligence totiž neustále rozvíjí příběhy každého člena skupiny. Připravuje pro vás také nejrůznější nástrahy v podobě napadání nepřáteli či přírodních katastrof.
+Pokud se vám vše kompletně nerozsype, tak si s jedním průchodem RimWorldu můžete vystačit donekonečna. Starat se musíte o každou drobnost. Kromě zajištění základních potřeb je nutné myslet na psychický stav, ekologii či klima. S tím, jak postupně dostáváte vše do rukou, se otevírají nové možnosti, díky kterým můžete ještě více rozvíjet svoji kolonii.
+Hodnocení recenzentů: 87 % (z 8 recenzí Metacritic)
+Hodnocení na Steamu: Extrémně kladné (97 % od 202 404 hráčů)
+Oficiální web hry
+Platforma: PC
+Žánry: nezávislá hra, strategie v reálném čase, simulátor, strategie
+Herní režim: jeden hráč
+Oficiální čeština na PC: rozhraní
+Herní engine: Unity
+Vydavatel: Ludeon Studios
+Vývojář: Ludeon Studios
+Datum vydání: 17. 10. 2018
+Digitální distribuce: Steam , Epic
+Pokračování 2 / 16 Surviving Mars
+Lidstvo konečně dospělo do stádia, kdy se může pustit do osídlování Marsu. Tato planeta ale není úplně ideální pro lidský život a je na vás, abyste vybudovali základnu, kde najdou její obyvatelé bezpečné útočiště. Nemůžete si ale dovolit plýtvat. Zdroje a finance jsou omezené, takže je nejdřív na místě zajistit ty nejdůležitější potřeby, a pokud bude všechno šlapat jako hodinky, můžete svoji základnu rozšířit na další části Marsu.
+Původně Surviving Mars vyšlo v roce 2018, po sedmi letech se ho Paradox rozhodl vydat v oprášené verzi s podtitulem Relaunched. Tu jedinou nyní najdete v digitálních obchodech. Mezi skalními fanoušky není příliš oblíbená, protože toho moc nemění a spíš jen rozbila komunitní modifikace. Také se její vydání neobešlo bez technických chyb, které alespoň po pár měsících vývojáři zvládli odstranit.
+Hodnocení recenzentů: 76 % (z 39 recenzí Metacritic)
+Hodnocení na Steamu: Velmi kladné (80 % od 28 478 hráčů)
+Oficiální web hry
+Platformy: PC, PlayStation 5, Xbox Series
+Žánry: simulátor, strategie
+Herní režim: jeden hráč
+Oficiální čeština na PC: bez češtiny
+Herní engine: HaemimontSol
+Vydavatel: Paradox Interactive
+Vývojář: Haemimont Games
+Datum vydání: 15. 3. 2018
+Digitální distribuce: Steam , Epic , PlayStation , Xbox
+Pokračování 3 / 16 Frostpunk
+Nastala nová doba ledová a celá planeta je pokrytá ledem. Vy se stáváte vůdcem jedné z posledních skupin přeživších a musíte zajistit, aby se udrželi při životě i nadále. To znamená sehnat dostatek jídla a tepla. Rozhodujete ale i o všem ostatním do posledního detailu včetně toho, jaká pravidla a zákony budou ve vaší komunitě platit.
+Lidé jsou nespokojení už od začátku a v průběhu hry se to s jejich mentálním stavem zrovna nelepší. Pokud jim budete jen přidávat práci a skrz zákony ze sebe dělat diktátora, může se jednoho dne stát, že vypukne vzpoura a je konec s celou komunitou. A pokud je na vás jedna osada málo, můžete se vrhnout na pokračování, kde spravujete mnohem větší oblast.
+Hodnocení recenzentů: 84 % (z 67 recenzí Metacritic)
+Hodnocení na Steamu: Velmi kladné (92 % od 111 732 hráčů)
+Oficiální web hry
+Platformy: PC, PlayStation 4, Xbox One, Nintendo Switch
+Žánry: nezávislá hra, simulátor, strategie
+Herní režim: jeden hráč
+Oficiální čeština na PC: bez češtiny
+Herní engine: Liquid Engine
+Vydavatel: 11 bit studios
+Vývojář: 11 bit studios
+Datum vydání: 24. 4. 2018
+Digitální distribuce: Steam , Epic , PlayStation
+Pokračování 4 / 16 Banished
+Když se pořádně rozjela vlna nezávislých her, Banished bylo jednou z prvních vlaštovek na poli strategií. Tým z Shining Rock Software tenhle žánr zkombinoval se survivalem, kdy vedete vesnici, ve které je jen málokdy dostatek všeho. Do vašeho snažení vám hází vidle změny ročních období, z nichž je jako v realitě nejkrušnější zima.
+Vaším cílem není vybudovat obrovské město ani dobývání nepřátelského území. Hlavní je, aby přežilo co nejvíc lidí, protože bez dostatku populace jen těžko budete shánět zdroje nebo se starat o dobytek. Jen zřídkakdy si k vám najde cestu obchodník, pro kterého ale musíte mít něco na výměnu. V Banished totiž neexistují peníze.
+Hodnocení recenzentů: 73 % (z 32 recenzí Metacritic)
+Hodnocení na Steamu: Velmi kladné (90 % od 37 678 hráčů)
+Oficiální web hry
+Platforma: PC
+Žánry: nezávislá hra, strategie v reálném čase, simulátor, strategie
+Herní režim: jeden hráč
+Oficiální čeština na PC: bez češtiny
+Vývojář: Shining Rock Software
+Datum vydání: 18. 2. 2014
+Digitální distribuce: Steam , Epic
+Pokračování 5 / 16 They Are Billions
+Ve vzdálené budoucnosti propukla zombie apokalypsa a zbývá jen pouhý zlomek lidstva. Nakažení jsou jim neustále v patách, a tak musejí využít všech dostupných prostředků, které na Zemi ještě zůstaly. Díky vašim strategickým schopnostem se musíte připravit na boj s vlnami nepřátel, které zastaví jedině silná obrana.
+Připravte se na to, že je velmi malá šance na přežití hned na první pokus. They Are Billions se ale i v dalších průchodech jen tak neohraje. Mapy jsou totiž náhodně generované a stejně tak se dějí odlišné události.
+Hodnocení recenzentů: 72 % (z 19 recenzí Metacritic)
+Hodnocení na Steamu: Velmi kladné (85 % od 45 636 hráčů)
+Oficiální web hry
+Platformy: PC, PlayStation 4, Xbox One, Nintendo Switch 2
+Žánry: nezávislá hra, strategie v reálném čase, RPG, strategie
+Herní režim: jeden hráč
+Oficiální čeština na PC: bez češtiny
+Vydavatel: BlitWorks
+Vývojář: Numantian Games
+Datum vydání: 9. 7. 2019
+Digitální distribuce: Steam , PlayStation , Nintendo
+Pokračování 6 / 16 Against the Storm
+Jedno město nestačí? V Against the Storm dostanete za úkol vybudovat propojenou říši soběstačných panství, která zvládnou odolat nebezpečím divočiny. Lidstvo se těžko vyrovnává s následky nekonečné bouře, ale teď konečně přišel čas vyrazit do protiútoku. Jenže na poprvé to nemusí vyjít. Každý neúspěch ale přináší vzácné zkušenosti a zdroje, které jsou při dalším pokusu neocenitelné.
+Against the Storm kombinuje základy survival strategií s rogue-lite žánrem. Kromě toho, že se snažíte své osady udržet při životě, je potřeba shánět suroviny pro odemčení permanentních zlepšováků. Průchod si navíc můžete okořenit různými modifikátory a s hraním zamíchá i to, ve kterém biomu zrovna stavíte.
+Hodnocení recenzentů: 91 % (z 18 recenzí Metacritic)
+Hodnocení na Steamu: Velmi kladné (94 % od 32 055 hráčů)
+Oficiální web hry
+Platformy: PC, PlayStation 5, PlayStation 4, Xbox Series X, Xbox One, Nintendo Switch
+Žánry: nezávislá hra, strategie v reálném čase, simulátor, strategie
+Herní režim: jeden hráč
+Oficiální čeština na PC: rozhraní a titulky
+Herní engine: Unity
+Vydavatel: Hooded Horse
+Vývojář: Eremite Games
+Datum vydání: 8. 12. 2023
+Digitální distribuce: Steam , Epic , PlayStation , Nintendo
+Pokračování 7 / 16 Northgard
+Vikingové dlouhá léta bloudili neobjevenými vodami, až se konečně doplavili na pevninu. Od této chvíle přebíráte otěže nad jejich osudem vy. Stavba základny a zajištění dostatku zdrojů pro přežití přichází na mysl jako první. Nový domov vás ale nepřivítá s otevřenou náručí. Nejdřív vám život znepříjemní divoká zvěř, později se musíte vypořádat i s nadpřirozenými silami.
+I Vikingové ale za sebou mají svého mytického pomocníka. Bohové jim nabídnou pomocnou ruku, pokud se k jejich oltářům dostane dostatek obětin. Jako ve správné real-time strategii se musíte starat o každý detail, aby ve vaší vesničce klapalo všechno, jak má. A to ještě předtím, než přijde krutá zima.
+Hodnocení recenzentů: 81 % (z 14 recenzí Metacritic)
+Hodnocení na Steamu: Velmi kladné (85 % od 54 038 hráčů)
+Oficiální web hry
+Platformy: PC, PlayStation 4, Xbox One, Nintendo Switch, iOS, Android
+Žánry: nezávislá hra, strategie v reálném čase, RPG, simulátor, strategie, tahová hra
+Herní režimy: jeden hráč, více hráčů, kooperace
+Oficiální čeština na PC: bez češtiny
+Herní engine: Heaps.io
+Vydavatel: Shiro Games
+Vývojář: Shiro Games
+Datum vydání: 22. 2. 2017
+Digitální distribuce: Steam , Epic , PlayStation , Nintendo , Google Play , Apple App Store
+Pokračování 8 / 16 Going Medieval
+Jak by vypadal středověk, kdyby lidstvo následky neskutečně smrtící nákazy téměř vymřelo? Takový scénář nastává v Going Medieval. Co si zbytek populace počne? Zvládne vůbec přežít? To záleží hlavně na vašich strategických schopnostech. Možností máte nepřeberně. Pokud budete schopným vládcem, můžete vybudovat celé hrady. Nebo myslíte, že je bezpečnější zašít se do podzemí? I to je díky systému 3D terénu možné.
+Going Medieval sice pracuje s minimalistickou grafikou, v ohledu mechanik je ale dost komplexní. S každým startem se do budování pustíte na úplně jiné mapě, kde se kromě prostředí mění i průběh událostí. Tvůrci si pro vás připravili dost překvapení, které vám i dobře promyšlený plán zvládnou znepříjemnit.
+Hodnocení recenzentů: 76 % (z 5 recenzí Metacritic)
+Hodnocení na Steamu: Velmi kladné (88 % od 16 521 hráčů)
+Platforma: PC
+Žánry: nezávislá hra, RPG, simulátor, strategie
+Herní režim: jeden hráč
+Oficiální čeština na PC: bez češtiny
+Herní engine: Unity
+Vydavatel: Mythwright
+Vývojář: Foxy Voxel
+Datum vydání: 17. 3. 2026
+Digitální distribuce: Steam , Epic
+Pokračování 9 / 16 Stranded: Alien Dawn
+Když ztroskotáte na pustém ostrově, je to hodně nepříjemné. Ještě o řád větší hrůza by ale bylo ztroskotání na úplně cizí planetě, což se skupince vašich svěřenců stane ve Stranded: Alien Dawn. Trosečníci mají hlad, netuší, jaká nebezpečí skrývá tento svět a s jeho průzkumem moc nepomůže ani extrémní počasí.
+Abyste se dožili druhého dne, bude to chtít hlavně bytelnou základnu, v jejichž útrobách si časem zařídíte i vlastní políčko pro pěstování plodin, abyste si alespoň trochu ušetřili problémů během loveckých výprav. O své svěřence se musíte náležitě starat po všech stránkách. Nemůžete je strhat neustálou prací. Vždy musíte být připraveni na změnu plánu. Nikdy nevíte, co na vás ...
+(Pokracovani na webu)|E||T|Marek Olšák přešel z AMD do Valve, běží vývoj Plasmy 6.8|D|16.5. 22:00|P|Otevřený firmware Dasharo/Coreboot + openSIL pro Gigabyte MZ33-AR1, týden v KDE a nejen beta Plasmy 6.7, týden v GNOME #249 a soustředění na kvalitu, ...|X|Marek Olšák přešel z AMD do Valve
 Phoronix informuje o tom, co štěbetá Markův profil na GitLabu Freedekstop.org. Marek Olšák, jeden z viditelných vývojářů linuxových ovladačů pro Radeony, už nepracuje pro AMD, ale pro Valve. V AMD ak vydržel necelých 13 let, kdy již předtím pracoval na Mesa/Gallium3D ovladačích.
 V létě 2013 jsem na jiném webu napsal toho: „Já osobně přeji Markovi hodně profesních úspěchů v AMD a budu se s milióny linuxových fanoušků těšit, co vše v letech budoucích pro Radeony v otevřeném ovladači, spolu s kolegy v AMD i mimo ni, zprovozní a vylepší.“. Marek moje přání zcela naplnil.
 Vypadá to, že zatímco AMD více a více inklinuje k AI akcelerátorům, jeho práce na grafických věcech bude pokračovat pod křídly firmy Valve, bez které už si to dnes ostatně ani neumíme představit a která sama GPU typu Radeon, integrovaná v APU ve Steam Decku léta používá. I v roce 2026 tedy na tomto místě Markovi děkuji a přeji hodně sil do další práce.

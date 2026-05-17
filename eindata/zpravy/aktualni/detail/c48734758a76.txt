@@ -1,0 +1,31 @@
+Exoplaneta LHS 3844 b se před pár dny stala hotovou mediální hvězdou. Na titulních stranách mnoha zpravodajských webů se totiž objevila zpráva, která mohla evokovat dojem, že se Kosmický dalekohled Jamese Webba podíval přímo na povrch vzdáleného objektu.
+Nelze si to však vykládat doslovně. JWST je sice nejlepší kosmický dalekohled, který jsme kdy postavili, ale ani on ji nevidí přímo, takže vám její snímek neukážeme. Musíme se spokojit jen s odhadem vědců jako na obrázku níže.
+Exoplaneta LHS 3844 b
+JWST umí zakrýt vzdálené hvězdy a pozorovat jejich okolí a to včetně přímého pozorování jejich planet. Nutnou, avšak nepostačující podmínkou je, že musejí obíhat dál od svých hvězd.
+Exoplaneta LHS 3844 b v 3D vizualizaci NASA Eyes
+LHS 3844 b obíhá okolo své hvězdy naopak extrémně blízko. Je to typický představitel skupiny planet s ultrakrátkou orbitou kratší než jeden den.
+LHS 3844 b to zabere pouze 11 hodin, a přestože je mateřskou hvězdou chladný červený trpaslík, teplota na její denní straně dosahuje více než 700 °C. Exoplanetu objevila družice TESS hned na začátku své mise při pozorování mateřské hvězdy od června do srpna roku 2018.
+Poměrně malý satelit odhalil planetu díky tomu, že přechází před svou hvězdou a způsobuje periodické poklesy jasnosti. Měla by být 1,3× větší než Země.
+Vlevo družice TESS, vpravo JWST
+Dalším zkoumáním se můžeme podívat na zoubek atmosféře a pozorovat její fáze – analogii toho, co vidíme u Měsíce nebo Venuše. Samozřejmě ne přímo. Zkoumáme množství přícházejícího záření.
+Planetu sice nevidíme, ale víme, že tam je. Díky tomu také víme, že to, co pozorujeme, není pouhé záření hvězdy ale že k nám přichází také světlo odrážené od povrchu planety. Ale ne vždy!
+Jeden oběh planety
+V okamžiku, kdy planeta přechází před hvězdou, což v jejím případě trvá jen 31 minut, pozorujeme temnou noční stranu (analogie novu). Těleso částečně zakrývá povrch hvězdy, takže její jasnost klesá. Současně ale světlo hvězdy prochází případnou atmosférou planety, která v něm zanechá svůj otisk. Vědci tomu říkají transmisní spektrum. Touto metodou můžeme zkoumat složení atmosféry.
+Planeta se pohybuje dál a nachází se vedle hvězdy. Pozorujeme již neblokované světlo z hvězdy, ale také částečně světlo odrážené od tělesa (analogie první nebo poslední čtvrti).
+Fáze exoplanety při oběhu okolo hvězdy
+Těsně tak před tím, než planeta zmizí za hvězdou, pozorujeme většinu její osvětlené denní strany (analogie úplňku).
+Těleso pomalu mizí za hvězdou, ale to rozhodně není konec pozorování. Tohle je naopak druhá nejdůležitější fáze! Nyní k nám přichází pouze záření z hvězdy. Pokud tedy vezmeme data z doby krátce před úplňkem a odečteme je od dat, kdy je planeta za hvězdou, získáme její vlastní záření.
+Spektrum exoplanety
+Pokud už máme záření ze vzdálené exoplanety, můžeme ho rozložit na spektrum? Laura Kreidberg z Institutu Maxe Plancka a její tým to v nové studii udělali. Využili data z přístroje MIRI na palubě JWST.
+Teleskop se na hvězdu a planetu podíval celkem třikrát v letech 2023 a 2024. MIRI rozdělil část infračerveného záření v rozsahu od 5 do 12 mikrometrů na menší úseky vlnových délek a změřil jas v každém z nich.
+Astronomové tomu říkají tepelně emisní spektrum a můžeme jím zkoumat složení samotného povrchu, i když ho nevidíme.
+Cíl nebyl vybrán náhodně. Už dřívější pozorování dnes již nefungujícího infračerveného kosmického dalekohledu Spitzer ukázala, že LHS 3844 b může mít skalnatý povrch s nízkým albedem (odráží málo záření).
+Problém je, že výzkum atmosfér i povrchu exoplanet je stále spíše o hraní si a ověřování modelů. Pokud bychom zkoumali zemskou atmosféru z velmi velké vzdálenosti, vypadlo by nám několik modelů. Jeden z nich by hovořil o Zemi jako o planetě, která pravděpodobně má tenkou dusíkatou atmosféru. Nad dalšími modely bychom se pousmáli.
+Povrch LHS 3844 b
+Autoři pracovali se dvěma scénáři. První předpokládá povrch tvořený tmavou pevnou horninou složenou z čedičových nebo magmatických minerálů. Povrch je relativně mladý a vzniklý nedávnou geologickou aktivitou, například rozsáhlým vulkanismem.
+Druhý scénář rovněž předpokládá tmavý povrch podobný Měsíci nebo Merkuru. Zahrnuje však dlouhodobé kosmické zvětrávání, které vede k rozsáhlým oblastem pokrytým ztmavenou vrstvou regolitu ֪– jemného prachu známého také z Měsíce. Tato alternativa předpokládá, že povrch je starý a už velmi dlouho na něm neprobíhá významnější geologická aktivita.
+Simulace tepelně emisního spektra exoplanety LHS 3844 b
+Oba scénáře se liší mírou nedávné geologické aktivity, kterou vyžadují. Na Zemi a dalších aktivních tělesech Sluneční soustavy je typickým jevem při takové aktivitě odplyňování. Oxid siřičitý (SO₂) je plyn běžně spojovaný s vulkanismem. Pokud by byl na LHS 3844 b přítomen v rozumném množství, přístroj MIRI by jej měl detekovat. Nic takového však nezaznamenal. Nedávné období aktivity se proto zdá nepravděpodobné, což vede astronomy k upřednostnění druhého scénáře.
+„Prezentujeme zde tepelně emisní spektrum v rozsahu 5 až 12 μm získané pomocí JWST pro kamennou exoplanetu LHS 3844 b,“ uvádí autoři v abstraktu studie.
+„Nejlépe odpovídá tmavému povrchu s nízkým obsahem oxidu křemičitého, například bazaltu nebo jiným materiálům bohatým na olivín. Spektrum vylučuje povrchy pokryté čerstvými jemnozrnnými částicemi (prach); vesmírné zvětrávání však může tento prach ztmavit a učinit je slučitelnými s daty.
+Data také znevýhodňují přítomnost stopových koncentrací plynů CO₂ nebo SO₂ (...). V souhrnu lze říci, že tyto výsledky dobře odpovídají starému, kosmickými vlivy zvětralé mu povrchu, přičemž nevykazují žádné známky nahromaděných vulkanických plynů.“

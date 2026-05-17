@@ -1,0 +1,15 @@
+Článek
+Potřebujete konzultaci, odborný dotaz nebo jen radu, jak se postavit k nějakému zdravotnímu neduhu, ale nemáte čas obíhat různé specialisty? V době umělé inteligence žádný problém. Stačí zadat dotaz chatbotovi a máte výsledek.
+Že se lidé radí s chatboty ohledně zdraví, není nic strašného. Je ale potřeba se zamyslet nad kvalitou výstupů a nebrat je jako jediný spolehlivý zdroj. Různé polopravdy nebo naopak i zcela zkreslené informace, jež AI často nabízí jako relevantní, totiž mohou ve výsledku místo pomoci zdraví poškodit.
+Nová studie, zveřejněná v lékařském časopise BMJ Open, na níž se podílel tým Lundquistova institutu pro biomedicínské inovace v Harbor-UCLA Medical Center v americké Kalifornii, se zaměřila na zjištění, jak nejpoužívanější chatboti (Grok, ChatGPT, Gemini, Meta AI, DeepSeek) zpracovávají informace o léčbě rakoviny a jak vypadají jejich výstupy.
+Odborníci zjistili, že téměř polovina odpovědí týkajících se léčby rakoviny byla experty, kteří je následně hodnotili, označena jako problematická, uvádí server Independent.
+Z toho bylo přesnějším hodnocením 30 procent označeno jako „poněkud problematických“ – šlo o data převážně přesná, ale neúplná. Zbytek, tedy necelých 20 procent, bylo označeno jako „vysoce problematické“ výstupy – šlo prakticky o chybná sdělení, která navíc ponechávala velký prostor pro subjektivní interpretaci uživatelů.
+Běžné uživatelské dotazy
+Výzkumný tým při testování chatbotů kladl stejné dotazy, na které by se lidé ptali, když by je zadávali do běžných vyhledávačů. Mezi ně patřilo i to, zda mobilní technologie 5G nebo antiperspiranty způsobují rakovinu, jak bezpečné jsou anabolické steroidy nebo dotaz, jak je to s vakcínami a jejich bezpečností.
+Padl i dotaz na doporučení alternativních možností vedle klasické chemoterapie - u těch zpočátku chatboti uváděli, že nejsou plnohodnotnou alternativou a mohou být vědecky nepodložené.
+I tak je ale dále nabízeli jako možné varianty léčby rakoviny, a to včetně akupunktury či bylinné medicíny, v nabídce byla i dieta proti rakovině. Někteří chatboti dokonce uváděli i jména klinik, kde se chemoterapií vůbec nezabývají a zaměřují se jen na alternativní postupy.
+„Při odpovídání na otázky v oblasti zdravotnictví si chatboti vedli poměrně špatně a byli často náchylní k dezinformacím. Jejich další využívání bez veřejného vzdělávání může vést k zesílení dezinformací v této oblasti,“ varovali odborníci.
+Proč tolik lidí spoléhá na chatboty?
+Odborníci k nepříliš povzbudivým výsledkům uvedli, že nepřesnost poskytovaných informací je mnohem nebezpečnější i kvůli tomu, že stále více lidí používá právě chatboty jako jediný zdroj informací.
+Přispívá k tomu i fakt, že pro stále větší procento lidí ve světovém měřítku je dostupnost zdravotní péče nejen časově, ale i finančně náročná.
+Celkovému negativnímu obrazu pak nepřispívá ani fakt, že nemalá skupina obyvatel chatbotům a jejich radám bezmezně věří a předpokládá, že informace jimi sdělené jsou odborně ověřené.

@@ -1,5 +1,5 @@
 Marek Olšák přešel z AMD do Valve
-Phoronix informuje o tom, co štěbetá Markův profil na GitLabu Freedekstop.org. Marek Olšák, jeden z viditelných vývojářů linuxových ovladačů pro Radeony, už nepracuje pro AMD, ale pro Valve. V AMD ak vydržel necelých 13 let, kdy již předtím pracoval na Mesa/Gallium3D ovladačích.
+Phoronix informuje o tom, co štěbetá Markův profil na GitLabu Freedesktop.org. Marek Olšák, jeden z viditelných vývojářů linuxových ovladačů pro Radeony, už nepracuje pro AMD, ale pro Valve. V AMD pak vydržel necelých 13 let, kdy již předtím pracoval na ovladačích Mesa/Gallium3D.
 V létě 2013 jsem na jiném webu napsal toho: „Já osobně přeji Markovi hodně profesních úspěchů v AMD a budu se s milióny linuxových fanoušků těšit, co vše v letech budoucích pro Radeony v otevřeném ovladači, spolu s kolegy v AMD i mimo ni, zprovozní a vylepší.“. Marek moje přání zcela naplnil.
 Vypadá to, že zatímco AMD více a více inklinuje k AI akcelerátorům, jeho práce na grafických věcech bude pokračovat pod křídly firmy Valve, bez které už si to dnes ostatně ani neumíme představit a která sama GPU typu Radeon, integrovaná v APU ve Steam Decku léta používá. I v roce 2026 tedy na tomto místě Markovi děkuji a přeji hodně sil do další práce.
 Týden v KDE: beta Plasmy 6.7, vývoj míří k verzi 6.8

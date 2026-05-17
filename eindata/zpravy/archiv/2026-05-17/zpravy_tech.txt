@@ -1,3 +1,44 @@
+|T|Režim Xbox promění počítače s Windows 11 ve falešné konzole. Ani v květnu se ale nezapomnělo na opravy a optimalizace|D|17.5. 11:45|P|Microsoft ve svých produktech v květnu opravil 139 zranitelných míst. • Do Windows 11 míří režim Xbox a mnoho oprav a optimalizací. • Maximální veliko...|X|Microsoft opravil 139 dílčích zranitelných míst ve Windows, Copilotu, .NET, Teams a dalších produktech. Květnové servisní aktualizace pro Windows navíc nesou opravu pro procesory architektury Zen 2, kterou poskytlo AMD. Útočník by kvůli chybě vyrovnávací paměti mohl získat zvýšené oprávnění.
+Windows 11 také v květnu nabízí řadu novinek a především oprav a optimalizací, protože vývojový tým se momentálně soustředí na základní uživatelský zážitek. Po dlouhodobé vlně kritiky Microsoft reaguje na negativní zpětnou vazbu. Níže vypichujeme nejdůležitější změny ve Windows 11 25H2 a 24H2. Distribuce je řízená.
+Obecné novinky
+- Režim Xbox (dříve Xbox Full Screen Experience) je dostupný na všech typech počítačů s Windows 11. Je inspirovaný konzolovým prostředím Xboxů a pohodlně ovladatelný gamepadem. Na klávesnici ho vyvoláte stiskem Win+F11. Režim je dostupný na vybraných trzích, jejich seznam ale Microsoft neposkytuje.
+Celoobrazovkový režim se pohodlně ovládá gamepadem
+- Instalace aplikací ze Storu by měla méně často končit chybami 0x80070057, 0x80240008 a 0x80073d28.
+- Organizace mohou Enterprise State Roaming spravovat prostřednictvím zásad Zálohování Windows.
+- Windows Enterprise a Education přidávají dynamický seznam aplikací, které mají být ze systému odinstalovány.
+- Správci a autoři zásad App Control for Business mají větší kontrolu nad zpracováváním skriptů a dávkových souborů.
+- Nastavení kioskového režimu je jednodušší, pokud se mezi povolenými aplikacemi nachází Microsoft Edge.
+Uživatelské prostředí
+- Vlastní nastavení zobrazení složky by mělo být perzistentní napříč různými rozhraními pro prohlížení. Když si zvolíte řazení a zobrazení ikon, mělo by být stejné jak v Průzkumníku, tak např. v dialogu Otevřít.
+- Když Průzkumník spustíte v tmavém režimu, nemělo by probliknout bílé okno. Týká se to zobrazení Tento počítač a změny velikosti panelu s detaily.
+- Prostředí pro psaní hlasem bylo zjednodušeno a mělo by být intuitivnější.
+- Funkce Drag Tray se nyní nazývá Drop Tray (do češtiny původně přeložena jako Přetáhnout přihrádku, nyní jako Odkládací zásobník). Jde o nabídku pro sdílení, která se objevuje v horní části obrazovky, když přesouváte soubor. Tato nabídka se dále zmenšuje, aby nepřekážela, když ji zrovna nechcete použít. Předvolby funkce se přesouvají do Nastavení | Systém | Multitasking.
+Odkládací zásobník je teď menší, pokud není vysunutý
+- Na hlavním panelu můžete monitorovat chování autonomní AI. Jako první funkci podporuje Researcher z Microsoft 365 Copilot. Když agent plní úkol, ikonu doplní ukazatel průběhu. Podrobnější informace se ukáží, když ukazatel myši přesunete nad ikonu aplikace.
+Technické změny
+- Zlepšil se výkon spouštění aplikací, které automaticky startují po načtení systému.
+- Průzkumník podporuje archivy UU, CPIO, XAR a NUPKG.
+- Zlepšila se stabilita pomocných procesů explorer.exe po zavření okna Průzkumníku.
+- Zlepšila se spolehlivost procesu explorer.exe včetně interakcí s nabídkami na hlavním panelu nebo odepínání položek v Průzkumníku.
+- Zlepšila se spolehlivost načtení oznamovací oblasti.
+- Zlepšila se spolehlivost skenování tváře při použití Windows Hello a uchování otisků prstů při upgradu systému.
+- Zlepšila se spolehlivost navigace klávesnicí v nabídce s emoji.
+- Zlepšil se výkon při procházení Nastavení | Systém | Úložiště | Disky a svazky, když máte v počítači velká úložiště.
+- Funkce Optimalizace doručení, kterou může používat Windows Update, by už neměla konzumovat nepřiměřený objem operační paměti.
+- Dostupnost a perzistence barevných profilů na podporovaných monitorech se zlepšila.
+Květen pokračuje v servisním režimu vývojového týmu Windows
+- Maximální velikost oddílu při formátování na FAT32 se zvětšila z 32 GB na 2 TB. Platí pro formátování prostřednictvím příkazového řádku. (Microsoft funkci slíbil před necelými dvěma roky.)
+- Mění se způsob, jak jádro Windows důvěřuje ovladačům třetích stran. Povolené zůstávají ovladače z Windows Hardware Compatibility Program a ze seznamu důvěryhodných starších ovladačů. Jádro už ale automaticky nedůvěřuje starším ovladačům, které jsou tzv. cross‑signed. Ty nepodepsal Microsoft, získaly komerční certifikát od důvěryhodné autority. Ovladače se tímto mohly vyhnout oficiálnímu certifikačnímu procesu. Windows provedou audit, který potrvá aspoň 100 hodin a tři restarty počítače. Poté může být nízké procento starších ovladačů zablokováno.
+- Zlepšila se kompatibilita ovladačů třetích stran s procesem midisrv.exe.
+- Při použití kompatibilních zařízení ucítíte haptickou odezvu při akcích jako změna velikosti a připnutí okna. Haptickou odezvu podporují Surface Slim Pen 2, Asus Pen 3.0 a MSI Pen 2. Další zařízení jako Logitech MX Master 4, jsou závislá na aktualizaci výrobce.
+- Nastavení vlastních nástrojů pro zařízení jako Surface Dial v Nastavení je spolehlivější.
+- Zlepšila se perzistence plynulého diktování v nastavení Psaní hlasem.
+Dubnové aktualizace pro Windows
+Následující servisní aktualizace vyšly 14. dubna 2026:
+- KB5089548 pro Windows 11 verze 26H1 (sestavení 28000.2113),
+- KB5089549 pro Windows 11 verze 24H2 a 25H2 (sestavení 26100.8457 a 26200.8457),
+- KB5087544 (ESU) pro Windows 10 verze 22H2 (sestavení 19045.7291).
+Microsoft shrnuje poslední změny ve Windows 11:|E|
 |T|Fotografická paměť je vědecky nepodložený mýtus. Zapomínání je superschopnost našeho mozku|D|17.5. 09:45|P|Vědecké výzkumy vyvracejí mýtus o existenci fotografické paměti • Mozek nepřehrává minulé události, ale pokaždé je znovu rekonstruuje • Schopnost zapo...|X|Hollywood nám už léta servíruje hrdiny, kteří se na něco jednou podívají a pak si to vybaví do posledního puntíku. Jenže realita je jiná – nejsou známy žádné vědecké důkazy o tom, že by fotografická paměť – ve smyslu dokonalého a trvalého záznamu reality – skutečně existovala. Jde spíše o rozšířený mýtus. Vyplývá to i z článku na webu The Conversation od Gabrielle Principe, profesorky psychologie na College of Charleston, která se zabývá výzkumem paměti a kognitivním vývojem dětí.
 Lidský mozek nefunguje jako záznamové zařízení , které by staticky přehrávalo minulost. Když si vybavíte minulou událost, nevytahujete hotový záznam, ale znovu jej skládáte z útržků vzpomínek a momentálních pocitů. Tento princip potvrzuje i současná kognitivní psychologie.
 Žádná fotografická paměť neexistuje Paměť si minulost neustále přetváří a upravuje detaily našich zážitků. Výsledek ovlivňuje nálada, očekávání, znalosti nebo to, co zrovna hledáme. Proto se stejná situace může po týdnu jevit trochu jinak než dnes a plyne z toho i známé rčení „Ráno moudřejší večera“.

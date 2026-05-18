@@ -44,8 +44,8 @@ Kód projektu Ujorm3 je detailně pokrytý jUnit testy. Integrační testy se po
 ) proti dockerizovaným databázím: PostgreSQL, MySQL, MariaDB, OracleFree a MSSQL Server. Podrobnější informace o knihovně Ujorm3 jsou uvedeny na domovské stránce projektu — včetně dalších příkladů.
 Referenční použití Ujorm3 najdete v projektu PetStore, který (kromě knihovny Ujorm) nemá prakticky žádné další Maven závislosti. Z projektu PetStore pak vznikl prototyp webové aplikace TopMovies pro filmové diváky — tato aplikace doporučuje filmy uživateli podle shody jeho hodnocení s virtuální skupinou s podobnými preferencemi. Kromě knihovny Ujorm nemá tento projekt také žádné jiné závislosti. Data se ukládají do databáze H2, volitelně do PostgreSQL. Projekt sice není veřejně dostupný, nicméně prototyp si můžete volně vyzkoušet na uvedeném odkazu (počet fiktivních uživatelů je omezen).
 Postřehy ze světa open-source.
-Přečteno 38 664×
+Přečteno 38 670×
 Přečteno 23 345×
-Přečteno 19 200×
+Přečteno 19 206×
 Přečteno 17 947×
 Přečteno 16 649×

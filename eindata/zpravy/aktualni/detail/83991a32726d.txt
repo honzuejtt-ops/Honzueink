@@ -1,0 +1,53 @@
+Pokud hrajete novější hry, už jste se určitě střetli s tím, že chcete hru spustit, ale ta po startu nejdříve kompiluje shadery, což může zabrat i několik minut. Důvodem je, že shadery se kompilují (překládají z kódu) na míru hardwaru. A kompilaci je nutné opakovat po všech aktualizacích ovladačů GPU, takže čekací obrazovku můžete vidět velmi často. Do Windows ale teď přichází zlepšovák, který by toto čekání měl z velké části eliminovat.
+Advanced Shader Delivery přichází na Radeony
+Microsoft loni na podzim oznámil novou funkci pro ekosystém DirectX, nazvanou Advanced Shader Delivery. Ta spočívá v tom, že shadery se už nekompilují na zařízení, ale jsou k dispozici na serverech. Hra je při spuštění stáhne a otravná lokální kompilace a čekací obrazovka se přeskočí.
+S dnešními rychlými připojeními by to mělo být mnohem rychlejší, často možná prakticky neznatelné proti kompilaci, která může trvat několik minut (tím déle, čím méně mnohovláknového výkonu vaše CPU má). Jde o poměrně náročnou úlohu, ostatně před dvěma lety právě kompilace shaderů byla tím, co odhalovalo degradaci a nestabilitu procesorů Raptor Lake.
+Microsoft uvádí jako příklad, že první spuštění (po instalaci nebo po aktualizaci ovladačů GPU) hry Forza Horizon 6 se zkrátí až o 95 % (naměřeno na PC s grafikou Radeon RX 7600 a procesorem AMD Ryzen 7 5800 – ten je 65W a potenciálně něco pomalejší než běžnější model 5800X). Zatímco první spuštění hry s kompilací na procesoru trvalo při testu téměř 1,5 minuty, s použitím Advanced Shader Delivery hra nastartovala za 4 sekundy.
+Shadery se kompilují lokálně na zařízení (PC) proto, že bývají specificky vázané na verzi ovladače, ale také na konkrétní architekturu GPU. Je nicméně možné je zkompilovat a umístit na servery vždy pro nejpopulárnější kombinace ovladačů (zejména těch aktuálních) a konfigurací GPU. Tento princip využívají tradičně například konzole (a Valve Steam Deck), které mají variabilitu hardwaru nízkou či dokonce nulovou. Funkce Advanced Shader Delivery ho přináší i na herní PC s platformou Windows.
+Od vydání v říjnu byla technologie Advanced Shader Delivery omezená jenom na herní handheldy ROG Xbox Ally. Tato zařízení používají procesory Ryzen a integrovanou grafiku AMD Radeon a nyní dochází k tomu, že infrastruktura pro stahování shaderů bude rozšířena i na běžné grafické karty AMD Radeon. Díky tomu Advanced Shader Delivery budou moci využít větší skupiny uživatelů.
+Pro RDNA 3.x a RDNA 4, zatím zkušební verze
+Podporu teď dostávají grafické karty Radeon RX 7000, RX 9000 a architekturami RDNA 3, RDNA 4 a také integrovaná GPU s architekturami RDNA 3 a RDNA 3.5 ve spolupráci s novým ovladačem AMD Adrenalin 26.5.2. Nejužitečnější to asi bude pro handheldy s integrovanými GPU, jelikož jejich méně výkonná a úsporná CPU nutně shadery kompilují déle.
+Jde zatím o preview verzi funkce, takže ji nedostanete automaticky. Vedle Windows 11 24H2 či novějších je také třeba nainstalovat aplikaci Xbox Insider Hub z Microsoft Store a v ní se přihlásit k testování preview funkcí (česky „Zkušební verze“, z nich potřebujete „PC Gaming Preview“). Dále je třeba Xbox Gaming Services verze 37.113.11003.0 nebo vyšší (aktualizaci této komponenty lze spustit v Microsoft Store poté, co se uděláte předchozí krok, v české verzi Windows se tento balíček jmenuje Herní služby).
+Advanced Shader Delivery lze momentálně využít ve vybraných hrách používajících DirectX. Je potřeba spolupráce vývojářů, takže tuto funkci zdá se aspoň zatím nelze zapnout globálně. Microsoft poskytuje pro integraci nástroje a podporu v Agility SDK. Částečný seznam podporovaných her můžete najít níže (jde ale o seznam z října 2025, nově na něm teď bude navíc minimálně zmíněná Forza Horizon 6).
+- Ark Survival Ascended
+- Avowed
+- Call of Duty: Black Ops 6
+- Clair Obscur: Expedition 33
+- Control
+- Dead Island 2
+- Deep Rock Galactic
+- Farming Simulator 25
+- Forspoken
+- Final Fantasy XVI
+- Forza Horizon 5
+- Forza Horizon 6
+- Forza Motorsport
+- Gears of War: Reloaded
+- Gears Tactics
+- Grounded 2
+- Grand Theft Auto V Enhanced
+- Lies of P
+- Metro Exodus
+- Microsoft Flight Simulator 2024
+- Monster Hunter Rise
+- Persona 3 Reload
+- Resident Evil 2 (2019)
+- Resident Evil 3
+- S.T.A.L.K.E.R. 2: Heart of Chornobyl
+- Sea of Thieves
+- Sniper Elite: Resistance
+- South of Midnight
+- The Elder Scrolls: Oblivion Remaster
+- Ninja Gaiden 4
+- The Callisto Protocol
+- The Outer Worlds 2
+- Silent Hill f
+- Keeper
+- Hogwarts Legacy
+Zatím asi největší omezení technologie je, že momentálně je svázaná s ekosystémem Xboxu a Microsoft Store (do čehož se počítá i předplatné Game Pass). Funguje tedy jenom s verzemi her, které získáte tímto kanálem, ale ne s hrami z Epic Games Store, GOGu a Steamu. Toto by nemělo být definitivní, protože Microsoft už dříve oznámil, že později bude přidána i podpora pro ostatní obchody. Obvykle asi většinu z her budete mít z nich, takže teď ještě Advanced Shader Delivery nevyužijete.
+Advanced Shader Delivery od dalších výrobců GPU?
+Grafiky Radeon a předtím handheldy ROG Xbox Ally nebudou jediný hardware, který funkci Advanced Shader Delivery na platformě Windows podporuje, nebo bude podporovat.
+Firma Intel oznámila plány na podporu Advanced Shader Delivery už před pár měsíci, nicméně měla by ji uvést do praxe až někdy později letos. V březnu ovšem v ovladačích grafických karet Intel Arc verze 101.8626 přidala obdobnou funkci stahování předkompilovaných shaderů. Ta by se ale měla týkat naopak jen vybraných her ze Steamu (seznam platný v březnu je zde) a mělo by jít o odlišnou funkci. Ale Intel plánuje později přidat i samotné Advanced Shader Delivery, patrně srovnatelné s tím, jak nyní fungují Radeony. Zmíněné stahování předkompilovaných shaderů v rámci Steamu je podporováno na grafikách Arc B580 a B570 (Battlemage) a na integrovaných GPU procesorů Core Ultra 200 „Lunar Lake“ a Core Ultra 300 „Panther Lake“, nikoliv na kartách Arc první generace (řady A). Podobně jako u AMD ji tedy zatím dostaly jenom novější architektury GPU. Je možné že Advanced Shader Delivery bude podobně podporována jen pro GPU architektury Battlemage/Xe2 a novější.
+Podporu by podle dřívějších informací od Microsoftu měl eventuálně dodat i Qualcomm pro svoje procesory Snapdragon X2 (opět tedy podpora jen v novější generaci, minimálně zatím). Nvidia také plánuje přidat podporu do svých ovladačů, ale až někdy v druhé polovině roku. Které z architektur budou podporovány, zatím nevíme jistě. Nvidia uvádí, že podporu dostanou GeForce RTX (což by mohlo znamenat všechny karty od generace RTX 2000, ale explicitně to řečeno není, tak teprve uvidíme).
+Nvidia však nedávno přišla s funkcí Automatic Shader Compilation. Ta ale provádí něco jiného – shadery se stále kompilují na vašem počítači, ale na pozadí. Znamená to, že se vám zkompilují hned po aktualizaci ovladačů GPU a ne až při následujícím spuštění hry či her. Ovšem toto řešení nezrychlí úplně první spuštění hry po její instalaci, první kompilaci hra musí udělat sama. A pokud si chcete spustit oblíbenou hru hned, jak se dokončí aktualizace ovladačů GPU, také vám nepomůže a na kompilaci budete čekat – v tom by funkce Advanced Shader Delivery měla výhodu.
+Zdroje: Microsoft, VideoCardz

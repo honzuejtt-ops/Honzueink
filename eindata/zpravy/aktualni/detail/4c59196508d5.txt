@@ -42,10 +42,10 @@ z JPA anotace: povinný atribut objektu (označený nullable=false
 final EntityContext CTX = EntityContext.ofDefault(); final EntityManager<Employee, Long> EMPLOYEE_EM = CTX.entityManager(Employee.class); List<Employee> select(Connection connection) { return SelectQuery.run(connection, EMPLOYEE_EM, query -> query .sql("SELECT") // Optional .columns(true) .column(MetaEmployee.city, MetaCity.name) // INNER JOIN .column(MetaEmployee.boss, MetaEmployee.name) // LEFT JOIN .where(MetaEmployee.id.whereGe(1L).and(MetaCity.id.whereGe(1L))) .tail("ORDER BY", MetaEmployee.id) .toList() ); }
 Kód projektu Ujorm3 je detailně pokrytý jUnit testy. Integrační testy se pouští Bash skriptem (v adresáři bin
 ) proti dockerizovaným databázím: PostgreSQL, MySQL, MariaDB, OracleFree a MSSQL Server. Podrobnější informace o knihovně Ujorm3 jsou uvedeny na domovské stránce projektu — včetně dalších příkladů.
-Referenční použití Ujorm3 najdete v projektu PetStore, který (kromě knihovny Ujorm) nemá prakticky žádné další Maven závislosti. Z projektu PetStore pak vznikl prototyp webové aplikace TopMovies pro filmové diváky — tato aplikace doporučuje filmy uživateli podle shody jeho hodnocení s virtuální skupinou s podobnými preferencemi. Kromě knihovny Ujorm nemá tento projekt také žádné jiné závislosti. Data se ukládají do databáze H2, volitelně do PostgreSQL. Projekt sice není veřejně dostupný, nicméně prototyp si můžete volně vyzkoušet na uvedeném odkazu (počet fiktivních uživatelů je omezen).
+Referenční použití Ujorm3 najdete v projektu PetStore, který využívá pro dependency injection lehkou knihovnu Avaje. Z projektu PetStore pak vznikl prototyp webové aplikace TopMovies pro filmové diváky — tato aplikace doporučuje filmy uživateli podle shody jeho hodnocení s virtuální skupinou s podobnými preferencemi. Data se ukládají do databáze H2, volitelně do PostgreSQL. Projekt sice není veřejně dostupný, nicméně prototyp si můžete volně vyzkoušet na uvedeném odkazu (počet fiktivních uživatelů je omezen).
 Postřehy ze světa open-source.
-Přečteno 38 670×
+Přečteno 38 676×
 Přečteno 23 345×
-Přečteno 19 206×
+Přečteno 19 207×
 Přečteno 17 947×
 Přečteno 16 649×

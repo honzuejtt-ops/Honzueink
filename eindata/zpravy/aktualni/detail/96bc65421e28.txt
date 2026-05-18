@@ -1,0 +1,57 @@
+Knihovna mpmath: práce s numerickými hodnotami s plovoucí řádovou čárkou
+Co se dozvíte v článku
+- Knihovna mpmath: práce s numerickými hodnotami s plovoucí řádovou čárkou
+- Reprezentace numerických hodnot v systému plovoucí řádové čárky
+- Role báze: použít dvojku nebo desítku?
+- Reprezentace numerických hodnot v knihovně mpmath
+- Ukázka přednastavených numerických hodnot
+- Vytvoření projektu, který bude využívat knihovnu mpmath
+- Základní balíček mpmath
+- Práce s reálnými čísly
+- Kontext, nastavení přesnosti a/nebo počtu platných cifer
+- Praktické příklady změny přesnosti či počtu platných cifer
+- Kontext a změna zaokrouhlovacího režimu
+- Funkce pro zpracování reálných hodnot
+- Detekce situace, kdy je výsledkem komplexní číslo
+- Iterativní výpočet hodnoty π
+- Nekonečna a hodnoty typu NaN
+- Dělení nulou
+- Rychlost výpočtů prováděných knihovnou mpmath
+- Jednoduchý benchmark
+- Repositář s demonstračními příklady
+- Odkazy na Internetu
+Připomeňme si, že v programovacím jazyku Python existují tři základní numerické datové typy, které jsou „vhodně“ pojmenovány takovým způsobem, že mohou mnohé programátory poměrně úspěšně zmást. Jedná se o datové typy int, float a complex. Numerický datový typ int umožňuje práci s celočíselnými typy s prakticky neomezeným rozsahem, na rozdíl od podobně pojmenovaného typu v jiných jazycích (C, C++, Java, Go, …), kde se jedná o celočíselný typ s předem specifikovaným omezeným rozsahem (například 32bitů či 64bitů).
+Druhý standardní numerický datový typ se v Pythonu jmenuje float, což může být opět matoucí, protože interně se jedná o céčkovský typ double, nikoli float. A konečně numerický typ complex sestává z dvojice hodnot typu float, které reprezentují reálnou a imaginární složku komplexního čísla. Komplexní jednotka se v Pythonu zapisuje znakem j a nikoli i:
+>>> type(10) <class 'int'> >>> type(10**10000000) <class 'int'> >>> type(3.14) <class 'float'> >>> type(1+2j) <class 'complex'> >>> type(1+2i) File "<stdin>", line 1 type(1+2i) SyntaxError: invalid decimal literal
+Jak již ovšem bylo napsáno v perexu tohoto článku, existují oblasti, v nichž se využívají takové numerické hodnoty, které není vhodné či dokonce vůbec možné reprezentovat s využitím základních (primitivních) datových typů, mezi něž typicky patří výše zmíněný celočíselný typ či typy (různé varianty int) a standardní typy numerických hodnot s plovoucí řádovou čárkou (různé varianty float, v Pythonu se konkrétně jedná o typ odpovídající dvojité přesnosti podle normy IEEE 754).
+Z tohoto důvodu se v některých vyšších programovacích jazycích setkáme s podporou takových numerických datových typů, které umožňují reprezentovat celočíselné hodnoty s libovolným rozsahem (to je právě případ Pythonu a jeho typu int) popř. hodnoty s desetinnou tečkou, které budou mít jak neomezený rozsah, tak i neomezenou (či volitelnou) přesnost (podporováno v Clojure i mnoha implementacích Scheme a LISPu). To ovšem není vše, protože se mnohdy setkáme i s datovým typem zlomek, kde jak čitatel, tak i jmenovatel mají neomezený rozsah (opět podporováno v Clojure, Scheme, LISPu a dalších vysokoúrovňových programovacích jazycích).
+Kromě základní trojice typů popsaných v předchozím textu je však možné ve standardní knihovně Pythonu nalézt realizaci dvou dalších numerických datových typů. Jedná se o typ nazvaný Decimal a o typ Fraction (pozor, je umístěný v modulu fractions, tedy s „s“ na konci). My si dnes představíme knihovnu mpmath a její datový typ mpf, jenž umožňuje pracovat s hodnotami, které mají plovoucí řádovou čárku, ovšem obecně neomezený rozsah a přesnost.
+Reprezentace numerických hodnot v systému plovoucí řádové čárky
+V této kapitole si v rychlosti připomeneme, jak vlastně interně vypadá reprezentace numerických hodnot v systému plovoucí řádové čárky (anglicky floating point, protože se v angličtině při zápisu čísel namísto čárky používá tečka). Systém plovoucí řádové čárky je založen na tom, že vybraná podmnožina reálných čísel (konkrétně se jedná o vybraná racionální čísla) může být vyjádřena vztahem se třemi proměnnými a dvojicí konstant:
+XFP = (-1)s × bexp-bias × m
+přičemž význam jednotlivých symbolů použitých v tomto vztahu je následující:
+- XFP značí reprezentovanou numerickou hodnotu z podmnožiny racionálních čísel (ta je zase podmnožinou čísel reálných). Díky vyhrazeným (speciálním) hodnotám je většinou možné rozlišit kladnou a zápornou nulu i kladné a záporné nekonečno, což je jeden z důležitých rozdílů oproti běžnému způsobu reprezentace celých čísel v dvojkovém doplňku. Také se většinou může uložit nečíselná hodnota: NaN – (Not a Number), která je výsledkem některých matematicky nedefinovaných operací, například 0/0 nebo 00.
+- b je báze, někdy také poněkud nesprávně nazývaná radix, u normy IEEE 754 je to vždy dvojka, protože výpočty s bází dvě jsou pro číslicové obvody nejjednodušší. V minulosti se však používaly i jiné báze, například 8, 16 nebo i 10, s nimi se však již dnes prakticky nesetkáme (o to relevantnější jsou však v dnešním článku, v němž se kromě jiného zmíníme i o balíčku decimal, jenž používá bázi 10).
+- exp je vždy kladná hodnota exponentu posunutého o hodnotu bias.
+- bias je hodnota, díky které je uložený exponent vždy kladný. Tato hodnota se většinou volí dle vztahu:
+bias=2eb-1-1, kde eb je počet bitů vyhrazených pro exponent. Pro specifické účely je však možné zvolit i jinou hodnotu. - m je mantisa, která je u formátů dle normy IEEE 754 vždy kladná (ovšem ne vždy tomu tak musí být).
+- s je znaménkový bit nabývající hodnoty 0 nebo 1. Pokud je tento bit nulový, je reprezentovaná hodnota XFP kladná, v opačném případě se jedná o zápornou hodnotu. Vzhledem k tomu, že je jeden bit vyhrazen na uložení znaménka, je možné rozlišit kladnou a zápornou nulu (některé systémy reprezentace hodnot ovšem bit znaménka používají v negované podobě, jen výjimečně se setkáme s hodnotami –1 a 1).
+Do tabulky zobrazené pod tímto odstavcem jsem se pokusil napsat všechny důležité formáty reprezentace exponentu a mantisy současně s uvedením báze. Ta je většinou dvojková, ovšem výjimkou je IBM 360 se šestnáctkovou bází a FP rutiny u osmibitových domácích mikropočítačů Atari s desítkovou bází:
+Role báze: použít dvojku nebo desítku?
+Většina formátů s plovoucí řádovou čárkou používá bázi s hodnotou 2 nebo 16. To ovšem v praxi vede k některým problémům, protože není možné přesně reprezentovat některá desetinná čísla. Ostatně si to můžete sami otestovat v interpretru jazyka Python na jednoduchém výpočtu:
+1.2-1.0 0.19999999999999996
+Mj. i kvůli tomuto problému se v některých oblastech používá báze nastavená na hodnotu 10. Tento formát velmi často nalezneme i u kalkulaček, navíc kombinovaný s mantisou uloženou v BCD (Binary Coded Decimal). Například slavná HP-35 používá vlastně velmi podobný formát, jako již zmíněné osmibitové mikropočítače Atari, ovšem s mnohem větší přesností:
+- Exponent je uložen jako dvojice BCD číslic, může tedy mít hodnotu 0 .. 99 (to je obvyklé u většiny kalkulaček).
+- Mantisa je uložena jako deset BCD číslic (jednodušší kalkulačky mají jen osm BCD číslic, popř. počítají s deseti číslicemi, ale zobrazují jich jen osm).
+- Další dva čtyřbitové „nibbly“ jsou použity pro uložení znaménka mantisy a exponentu (zde se ovšem poněkud plýtvá místem).
+Celkově je jedna numerická hodnota uložena v 56 bitech (14×4), což sice může vypadat jako plýtvání místem, ovšem musíme si uvědomit, že kalkulačky pracují pouze se dvěma či třemi registry, popř. v případě HP se zásobníkem se čtyřmi prvky (ale už ne s rozsáhlými vektory nebo maticemi). Použití báze nastavené na 10 a BCD má své výhody, především není nutné složitě kódovat vstup od uživatele na interní reprezentaci a naopak výsledky dekódovat zpět na displej (nehledě na to, že u báze rovné deseti je zcela přesně známá přesnost vyjádřená v počtu desetinných míst).
+Na DPD (Densely Packed Decimal) jsou založeny i standardizované formáty decimal32, decimal64 a decimal128, které jsou taktéž popsány v normě IEEE 754–2008. Základní vlastnosti těchto formátů jsou shrnuty v následující tabulce:
+Datový typ Decimal v Pythonu, který je dostupný ve standardním balíčku decimal, je postaven na podobném principu. Jedná se tedy o vhodným způsobem uložené hodnoty s plovoucí řádovou čárkou, přičemž základem exponentu (báze) je hodnota 10 a nikoli dnes obvyklejší hodnota 2. Navíc není typ Decimal omezen pouze na podporu HW (tedy na FPU jednotku), takže umožňuje specifikovat jak způsoby zaokrouhlení, tak i přesnost (počet cifer), chování při dělení nulou atd.
+Reprezentace numerických hodnot v knihovně mpmath
+Ústředním tématem dnešního článku je popis základních vlastností knihovny nazvané mpmath. V této knihovně se pracuje s několika reprezentacemi numerických hodnot. Základem, který nás bude dnes zajímat především, je typ pojmenovaný mpf, jenž je založen na reprezentaci reálné hodnoty ve formátu plovoucí řádové čárky. Ovšem k dispozici jsou i další numerické typy, především komplexní čísla mpc, což je dvojice hodnot typu mpf a dále mpi určený pro intervalovou aritmetiku (základní vlastnosti i způsoby použití si ukážeme příště).
+Abychom pochopili vlastnosti knihovny mpmath, je důležité vědět, jak jsou vlastně interně uloženy numerické hodnoty typu mpf. Skutečně je použit formát plovoucí řádové čárky, tj. numerická hodnota je reprezentována několika složkami. Konkrétně se jedná o čtveřici (sign, man, exp, bc). Kulaté závorky jsou použity naschvál, protože se skutečně jedná o běžnou Pythonovskou n-tici (tuple):
+Na tomto místě je vhodné si znovu uvědomit, že datový typ int má v Pythonu neomezený rozsah, takže (alespoň teoreticky) máme k dispozici i neomezený rozsah a přesnost hodnot typu mpf.
+Ukázka přednastavených numerických hodnot
+Podívejme se na příklady způsobu uložení některých numerických hodnot. Následující tabulka je přímo převzata z dokumentace ke knihovně mpmath, doplnil jsem jen způsob výpočtu:
+Přímo ve zdrojových kódech knihovny mpmath je definováno několik základních konstant a taktéž speciálních hodnot...
+(Pokracovani na webu)

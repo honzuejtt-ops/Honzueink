@@ -1,0 +1,6 @@
+Článek
+Přístroje se miniaturizují a jejich technické parametry zkvalitňují, což divadelníky vybízí k využívání. Jenže vzdor pokroku tu zatím zůstávají technologické mouchy. Jde mi tady o jeden parametr. O latenci.
+Latence neboli zpoždění. Obecně se jedná o čas, během něhož dorazí data z jednoho bodu do druhého. Z uživatelského hlediska to není v případě divadelního live cinema žádná věda: běží o to, zda se pohyb úst nerozchází s promluvou, zda jsou na plátně, které je součástí scénografie, synchronizovány.
+Právě asynchronnost mě rušila na představeních v úvodu jmenovaných inscenací. A zdaleka nejen u nich. Ve výsledku to vzbuzuje dojem nechtěného amatérismu: herci nebo k tomu speciálně určení operatéři ovládají během představení kamery, nejednou s nimi ne úplně jednoduše manipulují – a na plátně je pak zvuk „rozjetý“ s obrazem.
+Proč mám koukat na blbé kino v divadle? – slyšel jsem nejednou diváckou námitku vůči live cinema. Vysoká latence čili značné zpoždění tomu napomáhá. Latence je u bezdrátových technologií značná výzva, například u televizí se velmi řeší, zda při přenosu zvuku do bluetooth sluchátek nedojde k rušivému zpoždění. Inženýři vymýšlejí kodeky neboli způsoby přenosu dat, jež by asynchronnost minimalizovaly.
+Co z toho plyne pro divadlo? Dobře zvážit, zda dostupná technologie nepřinese namísto umocnění diváckého zážitku spíše jeho devalvaci.

@@ -1,0 +1,51 @@
+Udělej tu nejjednodušší věc, která by mohla fungovat. — Kent Beck, tvůrce extrémního programování a průkopník vývoje řízeného testy.
+Rád bych vám dnes představil finální verzi knihovny Ujorm3 s nově napsaným ORM modulem pro práci s objekty typu JavaBean a Record v kontextu relačních databází. Cílem tohoto modulu bylo transparentní řešení bez dalších závislostí, s podporou typově bezpečného sestavení SQL příkazů. Pro rychlou manipulaci s daty doménových objektů si knihovna kompiluje za běhu vlastní bajtový kód, čímž dosahuje výkonu srovnatelného s ručně psaným kódem. Jádro knihovny intenzivně využívá návrhový vzor Typed Key Pattern. Z původní verze knihovny Ujorm byla převzata zejména dvě rozhraní — Ujo
+a Key
+. Obě rozhraní aplikovala zmíněný vzor už v roce 2007, tedy ještě dříve, než tento vzor dostal své jméno.
+Návrhový vzor Typed Key Pattern představuje techniku pro čtení a zápis hodnot doménového objektu prostřednictvím API jeho klíčů, která nahrazuje tradiční gettery a settery interní mapou vlastností. Klíče jsou typově parametrizované deskriptory nesoucí informaci o datovém typu (případně výchozí hodnotě) a díky generikám zajišťují typovou bezpečnost bez přetypování; zároveň umožňují provádět nad atributy hromadné operace bez reflexe. Z hlediska interní reprezentace odpovídá tento přístup konceptu Typesafe Heterogeneous Container, který byl poprvé systematicky publikován Joshuou Blochem v květnu 2008 ve druhém vydání knihy Effective Java v návaznosti na zavedení generik do jazyka Java.
+Dovolím si připomenout některé základní informace z minulého blogu: výchozí mapování atributů entit na databázové sloupce se popisuje anotacemi JPA z balíčku Jakarta. Pro mapování atributů na sloupce se používá anotace @Column
+, pro mapování výčtového typu se používá @Enumerated
+. Název tabulky se deklaruje anotací @Table
+. Protože knihovna nepoužívá žádné binárně modifikované třídy, je pro částečné aktualizace sloupců v příkazu UPDATE třeba dodat seznam názvů modifikovaných atributů (například výčtem String[]
+) nebo původní objekt, ze kterého si knihovna tento seznam vytvoří sama. Jednu databázovou tabulku může obsluhovat několik tříd — typicky jde o podmnožinu entity.
+Jedním z cílů nové knihovny bylo nalézt optimální poměr mezi užitnou hodnotou a minimalistickým zdrojovým kódem. Autor věří, že právě takový přístup má pozitivní vliv na minimalizaci chyb a významně prodlužuje životnost knihovny. Z takového přístupu však plynou i jistá omezení. Například: Knihovna nepodporuje lazy-loading a při mapování relací podporuje pouze vazbu typu M:1.
+ORM modul knihovny Ujorm3 nabízí pro databázové příkazy sadu nástrojů s různými úrovněmi abstrakce. Vyberte si řešení, které nejlépe vyhovuje konkrétnímu požadavku:
+EntityManager
+— nejrychlejší způsob, jak zvládat CRUD operace s jednou tabulkou pomocí primárního klíče. Pro takové elementární případy si třída generuje SQL příkaz sama.SelectQuery
+— nástroj primárně určený pro vyhledávání dat včetně relací. Podporuje filtrování dat pomocí typově bezpečných objektů Criterion
+, které lze řadit do binárního stromu (pomocí operátorů AND a OR). Alternativou je použití metody bind()
+. Pro specifické případy lze ručně doplnit začátek a konec generovaného SQL příkazu.SqlQuery
+— nízkoúrovňová univerzální třída pro obecné požadavky. Umožňuje psaní nativního SQL při zachování bezpečnosti pomocí metod bind()
+, label()
+a column()
+. Pomocí generického mapovače dokáže knihovna automaticky naplnit i relační objekty. Poslední dvě třídy mají společného předka, který může sloužit jako základ pro případné další implementace.Ukažme si jednoduché příklady použití a začněme tím nízkoúrovňovým přístupem. Následující metoda vloží do databázové tabulky město (pomocí fluent API) a vrátí identifikátor vloženého řádku.
+public Long insertCity(String name, String country) { return SqlQuery.run(connection(), query -> query .sql(""" INSERT INTO city ( name, country_code) VALUES (:name, :countryCode ) """) .bind("name", name) .bind("countryCode", country) .executeInsert(rs -> rs.getLong(1)) .findFirst().orElseThrow()); }
+Další ukázka vyhledá zaměstnance a načte jejich data včetně názvu města. Třída ResultSetMapper
+podporuje vícevláknový přístup.
+static final ResultSetMapper EMPLOYEE_MAPPER = ResultSetMapper.of(Employee.class); public List<Employee> findEmployees(Connection connection, Long minId) { return SqlQuery.run(connection, query -> query .sql(""" SELECT e.id AS ${e.id} , e.name AS ${e.name} , c.name AS ${c.name} FROM employee e JOIN city c ON c.id = e.city_id WHERE e.id >= :id """) .label("e.id" , MetaEmployee.id) .label("e.name", MetaEmployee.name) .label("c.name", MetaEmployee.city, MetaCity.name) // Key Path mapping .bind("id", minId) .toStream(EMPLOYEE_MAPPER.mapper()) // Generic mapping including relations .toList()); }
+Třída MetaEmployee
+je automaticky generovaný metamodel, který vzniká pomocí volitelného APT pluginu ujorm-meta-processor
+. Mapování však lze zapsat i přímo do příkazu SQL SELECT na pozici jmenovky sloupce ve formátu tečkou oddělených názvů vlastností (properties, například boss.name
+). Je však třeba jej obalit uvozovkami (případně jinými znaky podle typu databáze). Pokud se název DB sloupce shoduje s atributem, je explicitní mapování zbytečné. Například:
+SELECT e.id, e.name, c.name AS "city.name" FROM ...
+Poslední ukázka provede podobný SELECT
+třídou SelectQuery
+. Metoda columns(true)
+tady načte všechny sloupce tabulky, včetně cizích klíčů. Metoda column(...)
+přidá do mapování další sloupec, umí i násobné relace. Typ relace je určen vlastností nullable
+z JPA anotace: povinný atribut objektu (označený nullable=false
+) generuje relaci typu INNER JOIN
+, jinak generuje LEFT JOIN
+. Začátek SQL příkazu lze (volitelně) změnit metodou sql()
+, konec lze (volitelně) doplnit metodou tail()
+.
+final EntityContext CTX = EntityContext.ofDefault(); final EntityManager<Employee, Long> EMPLOYEE_EM = CTX.entityManager(Employee.class); List<Employee> select(Connection connection) { return SelectQuery.run(connection, EMPLOYEE_EM, query -> query .sql("SELECT") // Optional .columns(true) .column(MetaEmployee.city, MetaCity.name) // INNER JOIN .column(MetaEmployee.boss, MetaEmployee.name) // LEFT JOIN .where(MetaEmployee.id.whereGe(1L).and(MetaCity.id.whereGe(1L))) .tail("ORDER BY", MetaEmployee.id) .toList() ); }
+Kód projektu Ujorm3 je detailně pokrytý jUnit testy. Integrační testy se pouští Bash skriptem (v adresáři bin
+) proti dockerizovaným databázím: PostgreSQL, MySQL, MariaDB, OracleFree a MSSQL Server. Podrobnější informace o knihovně Ujorm3 jsou uvedeny na domovské stránce projektu — včetně dalších příkladů.
+Referenční použití Ujorm3 najdete v projektu PetStore, který (kromě knihovny Ujorm) nemá prakticky žádné další Maven závislosti. Z projektu PetStore pak vznikl prototyp webové aplikace TopMovies pro filmové diváky — tato aplikace doporučuje filmy uživateli podle shody jeho hodnocení s virtuální skupinou s podobnými preferencemi. Kromě knihovny Ujorm nemá tento projekt také žádné jiné závislosti. Data se ukládají do databáze H2, volitelně do PostgreSQL. Projekt sice není veřejně dostupný, nicméně prototyp si můžete volně vyzkoušet na uvedeném odkazu (počet fiktivních uživatelů je omezen).
+Postřehy ze světa open-source.
+Přečteno 38 664×
+Přečteno 23 345×
+Přečteno 19 200×
+Přečteno 17 947×
+Přečteno 16 649×

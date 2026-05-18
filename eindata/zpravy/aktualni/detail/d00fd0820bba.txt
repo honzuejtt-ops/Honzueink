@@ -1,0 +1,5 @@
+Uživatelé si budou moci nastavit, jak dlouho zůstane zpráva po otevření dostupná, což má přinést vyšší úroveň soukromí a kontroly nad komunikací.
+WhatsApp připravuje novou funkci, která má zvýšit soukromí uživatelů a uživatelek. Aplikace testuje možnost automatického mazání zpráv hned po jejich přečtení, informuje portál onet.pl.
+Novinka navazuje na již existující mizející zprávy, které se dnes dají odstranit po 24 hodinách, sedmi nebo 90 dnech. Nově však bude možné nastavit režim „po přečtení“, při kterém se zpráva vymaže až po otevření příjemnkyní*příjemcem.
+Uživatel či uživatelka si zároveň bude moci vybrat, jak dlouho zůstane zpráva po přečtení dostupná, například pět minut, jednu hodinu nebo 12 hodin. Pokud si příjemkyně*příjemce zprávu vůbec neotevře, WhatsApp ji automaticky odstraní po 24 hodinách.
+Funkce je momentálně dostupná jen pro omezený počet testerů v beta verzi aplikace pro iOS. Mezi běžné uživatelstvo by se měla dostávat postupně.

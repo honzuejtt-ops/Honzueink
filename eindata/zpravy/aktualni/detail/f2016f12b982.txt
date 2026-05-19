@@ -1,0 +1,9 @@
+Současná maltská vláda spustila iniciativu AI for All (AI pro všechny), která má přispět k edukaci a zodpovědnému využívání služeb umělé inteligence mezi občany. V rámci ní se země dohodla s OpenAI na bezplatném přístupu k tarifu ChatGPT Plus, který je běžně zpoplatněn částkou 20 USD za měsíc.
+Až po dokončení kurzu
+Nárok na placenou AI na dobu jednoho roku nebude mít automaticky každý, podmínkou bude úspěšné dokončení kurzu používání AI. Na tom se podílela Maltská univerzita. Má pokrýt základy práce s AI a především pravidla zodpovědného používání v práci, ve škole i doma.
+Maltský ministr hospodářství, podnikání a strategických projektů Silvio Schembri uvedl: „Prostřednictvím tohoto kurzu AI pro všechny zajišťujeme, aby každý občan bez ohledu na své zázemí měl možnost získat dovednosti potřebné pro úspěch v digitálním světě. Spojením tohoto vzdělávání s bezplatným přístupem k nejpokročilejším digitálním nástrojům současnosti proměňujeme neznámý koncept v praktickou pomoc pro naše rodiny, studenty i pracovníky.“
+Malta se tím stává první zemí, kde OpenAI spouští podobně rozsáhlou národní spolupráci. Distribuci má spravovat Malta Digital Innovation Authority, přičemž účastníci budou potřebovat aktivní evropský účet eID.
+V Česku se s AI pro lidi zatím nepočítá
+OpenAI provozuje projekt AI for Countries, který má za úkol právě podporu vlád a případné zavádění AI na úrovni států a jeho institucí. Je tedy pravděpodobné, že obdobných spoluprací (byť ne v takovém rozsahu) bude v nejbližší době přibývat.
+V Česku s tím ale prozatím počítat nemusíme. Byť neznáme finanční podmínky dohody mezi OpenAI a vládou Malty, půjde o desítky milionů dolarů, které tamní vláda zaplatí za roční zpřístupnění. Při hypotetickém českém scénáři, kdy by OpenAI požadovala polovinu běžné ceny za roční využívání všemi obyvateli ve věku 16+, by to tuzemský rozpočet vyšlo na 23 mld. Kč.
+Zdroj: Engadget

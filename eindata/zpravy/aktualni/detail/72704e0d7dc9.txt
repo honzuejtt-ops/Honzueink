@@ -1,0 +1,8 @@
+Google od neděle postupně zavádí nový systém limitů AI chatbotu Gemini. Doposud se řídil tabulkou, která ukazovala, kolik operací můžete provést denně. Ne vždy to bylo úplně transparentní, protože limity se průběžně mění podle dostupné kapacity.
+Ale obecně platilo, že například u bezplatného tarifu jste mohli takřka neomezeně využívat základní textový model Fast, ale přemýšlecí Thinking už šlo použít zhruba třikrát až pětkrát za den, denně jste vygenerovali maximálně 20 obrázků apod. To se mění, protože firma přechází na limity využití založené a výpočetních zdrojích.
+Neplatí už různé limity pro jednotlivé operace, ale veškerá AI sdílí jeden limit. Navíc už není jen denní (ten se obnovuje každých 5 hodin), ale nově také týdenní. Jakmile vyčerpáte i ten, počkáte sedm dní. Případně si zaplatíte vyšší tarif.
+Vyčerpaný limit po dvou vygenerovaných obrázcích a dvou textových zadáních. Obrázky vzaly po dvou procentech, textové odpovědi po jednom
+Funguje to tak, že tarif Plus za 220 Kč nabídne 2× více výpočetních prostředků, Pro za 550 Kč pak 4× více a nejvyšší Ultra za 6890 Kč dokonce 80× více.
+Volnou kapacitu lze sledovat na stránce gemini.google.com/usage, ale tu možná ještě nevidíte, pokud vás Google nepřevedl na nový způsob účtování. V praxi se tedy přešlo na systém neviditelných tokenů. To znamená, že textová komunikace s chatbotem je poměrně úsporná, ale s generování obrázků, videí, zvuků nebo vyšší přemýšlecí modely spolknou více prostředků, takže rychleji narazíte na denní nebo týdenní strop.
+Oproti dřívějšku je hlavní změnou to, že například generováním obrázků můžete vyčerpat veškerou volnou kapacitu, takže už si s vámi Gemini nebude chtít povídat ani textově se základním modelem Fast.
+Dosavadní limity

@@ -1,0 +1,15 @@
+Tlačítko „Přihlásit se přes Google“ najdete ve většině moderních služeb. U registrace tím můžete elegantně přeskočit vyplňování e-mailu, hesla nebo dalších osobních údajů. Aplikace třetí strany si následně z vašeho Google účtu vezme potřebné informace a vy jen doplníte pár detailů. Jenže tato jednoduchost je vykoupena několika nevýhodami.
+1. Bezpečnostní riziko
+Google má z pohledu zabezpečení vysoké standardy. Při zapnutém dvoufázovém ověření je riziko kompromitace účtu relativně nízké. Problém ale nastává ve chvíli, kdy do procesu vstupuje služba třetí strany.
+Každá aplikace nebo web, přes který se přihlašujete, má vlastní úroveň zabezpečení. A ta nemusí být na stejné úrovni jako u Googlu. Pokud dojde k úniku dat u takové služby, mohou být ohroženy i informace napojené na váš Google účet.
+Útočník může získat například vaše jméno, e-mail, profilovou fotku nebo někdy i další údaje, které jste aplikaci povolili. To může vést k následným problémům, jako je zvýšené množství spamu nebo pokusy o phishing či malware útoky přes e-mail.
+V nejhorším případě, pokud by došlo ke kompromitaci samotného Google účtu, můžete přijít o přístup ke všem službám, kde jste se přes něj přihlásili. A právě to je jeden z hlavních důvodu pro tradiční přihlášení pomocí kombinace e-mailu a hesla.
+2. Různá pravidla pro práci s daty
+Přihlášení přes Google zároveň znamená, že dáváte službě třetí strany souhlas k zpracování vašich dat podle jejích vlastních podmínek. A ty se liší platformu od platformy. Některé služby si vezmou jen základní údaje, jako je jméno a e-mail. Jiné ale mohou požadovat i více informací, například adresu nebo telefonní číslo.
+Problém je, že uživatelé často tato oprávnění jen rychle odkliknou, aniž by řešili, co přesně sdílí. V případě úniku dat pak může být rozsah ohrožených informací mnohem větší, než by byl u samostatné registrace.
+3. Google má o vás k dispozici více dat
+Dalším méně viditelným aspektem je samotné propojení účtů. Pokud používáte Google přihlášení, zvyšuje se množství dat, která mohou být propojena s vaším hlavním Google profilem.
+To může zahrnovat informace o tom, jaké služby používáte, jak často je navštěvujete nebo jak se v nich chováte. Tyto údaje mohou být následně využívány pro personalizaci obsahu nebo cílenou reklamu. Pro někoho to nemusí být problém, jiní ale vnímají takovou míru propojení jako zásah do soukromí.
+Pohodlí versus kontrola
+Je ale fér říct, že přihlášení přes Google má své výhody. Je rychlé, pohodlné a v mnoha případech paradoxně i bezpečnější než používání slabých nebo opakovaných hesel. Na druhou stranu tím získáváte závislost na jednom účtu a jedné službě, která se stává klíčem k velké části vašeho digitálního života.
+Zdroj: AndroidPolice

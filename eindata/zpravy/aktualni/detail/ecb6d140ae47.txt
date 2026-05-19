@@ -1,0 +1,70 @@
+WordPressu se vytýká spousta věcí a nedostatků, mnohé právem. Nechme je stranou, tento text věnuji novým vlastnostem – mnohé z nich mažou nedostatky a nevýhody z minula, jiné jsou zase překvapivě agilní, což by jeden možná ani nečekal. První várka změn se týká UI a editoru Gutenberg, další pak LLM, AI, MCP…
+Co se dozvíte v článku
+Plány a jejich realizace
+Ovládání redakčního systému mnoho let neměnilo, ale v roce 2018 přibyl Gutenberg (aplikace psaná v Reactu) a později v roce 2022 princip Full Site Editing (FSE). Aplikace založená na Gutenbergu umožňuje vizuálně konfigurovat vzhled frontendu, používají se globální styly, patterny (vzory), šablony celků i částí… V tuzemsku se podle mých zkušeností moc nepoužívá, protože pořád dominuje Elementor nebo jiný zavedený vizuální builder.
+Plán rozvoje od roku 2018 byl stanoven do čtyř fází následovně:
+- Snazší editace – splněno Gutenbergem (sic!)
+- Snazší úpravy na míru, bloková témata – splnění zavedením FSE
+- Spolupráce více uživatelů v reálném čase – dokončuje se; zrovna toto je důvod, proč bylo vydání WP7 odloženo – současná práce více uživatelů ještě potřebuje doladit a v sedmé verzi navzdory očekávání a plánům není.
+- Přirozená práce s více jazyky obsahu – čeká nás
+Platí, že každá fáze staví na předchozí a potřebuje její splnění, jde o linearitu.
+Mnoho věcí nebylo explicitně pojmenováno a mezitím do systému přibyly nebo se tak stane v právě přicházející sedmé verzi.
+Editor
+V samotném Gutenbergu přibylo několik funkcí, které odpovídají Fázi 3 – tedy spolupráce uživatelů v reálném čase. Vzorem jsou online kancelářské balíky a idea je taková, že uživatelé pracují současně na stejném článku, komentují ho poznámkami na okraj, pracují s revizemi a doplňují si obsah „pod rukama“. Jedná se o alternativu k Dokumentům Google a podobným nástrojům. Ano, nesmějte se – Matt Mullenweg pořád tvrdí, že WordPress má být webovým operačním systémem a tohle je v souladu s jeho vizí.
+Přibyla spousta nových bloků v Gutenbergu (accordion, summary, drobečková a jiná navigace, délka čtení, počet slov, podpora pro zápis LaTeXem a další), mnoho nových patternů (vzorů), které jsou na rozdíl od bloků statické. Vylepšení současných bloků (lepší zadávání rozměrů, přidání rámečku, možnost vložit CSS přímo, globální stylování). Zde je patrný masivní tlak konkurence – vizuálních builderů v čele s Elementorem, ale také třeba Etchem (jehož hlasitý autor na core týmu nenechá nit suchou).
+V editoru lze aktivovat frontendovou šablonu a pracovat tak téměř „inline“, tedy WYSIWYG, což je další z kroků, který usnadní práci mnoha uživatelům, které trápí, že „to pak vypadá jinak než v editoru“.
+Knihovnou materiálů s volnou licencí napojenou už několik let do WordPressu je Openverse. Nyní k ní přibude možnost generovat obrázky na základě obsahu, a to díky LLM.
+V případě FSE a výchozí šablony je novinkou centrální správa písem, ale není využitelná pro všechny šablony, které mají svoje nastavení, nebo ho zajišťuje vizuální builder (Elementor). Platí ovšem, že v CSS nebo kódu se dnes už tyto záležitosti nenastavují!
+Modernější administrace
+Při přechodu mezi stránkami se využívá spekulativní načítání, takže mizí efekt načítání stránek a pohyb je plynulý, což vypadá hustě, ale hlavně je to rychlejší. Nové téma administrace se v kuloárech přetřásá už roky; v sedmé verzi se mění styl, ale zatím ne UI jako takové. Plánuje se i nová verze mediální knihovny, vše se pohybuje směrem k reactové aplikaci jakou je Gutenberg a FSE.
+V nové verzi se upozorňuje na příkazovou paletu, která nejen v editoru nabízí rychlý přístup k mnoha funkcím pomocí Ctrl-k. Ale je faktem, že to není horká novinka, spíše ji asi málokdo využívá.
+Globální vlastnosti systému
+- plnohodnotné REST API (již máme),
+- integrace AI technologií (viz dále),
+- integrace moderních vlastností prohlížečů + vylepšení performance,
+- usnadnění vývoje – nová interní API, snadné vytváření statických Gutenberg bloků přímo v PHP (což je bohužel novinka až nyní, jinak bylo potřeba zvládnout JS včetně Node.js),
+- vývojářské IDE WordPress Studio nebo Playground pro snadnější přispívání do core,
+- snadné vytváření lokální instalace přímo v prohlížeči – navštivte my.wordpress.net a jste uvnitř svého lokálního WordPressu, ze kterého si můžete udělat centrálu osobní agendy (založeno na Playground, ale určeno koncovým uživatelům); dokonce můžete přepnout vzhled na „desktop“.
+Co se nemění
+Mnoho věcí zatím zůstává nezměněných, většinou je to kvůli nedostatku priorit nebo zastánců, kteří by změnu nebo odstranění prosadili, například:
+- zbytečná závislost na jQuery
+- podpora XML-RPC a mrtvých věcí jako třeba PHP 7.4
+- absence rozšířených datových parametrů článků (např. uživatelská pole, podpora on-site SEO)
+- absence jakékoliv ochrany proti útokům šmejdů z vesmíru – antispam, ochrana přihlašování
+- scoping – oddělení backendu a frontendu při programování
+- možnost instalace pluginů z více repozitářů po vzoru linuxových distribucí
+- a mnoho dalších věcí, které se přejeme a zatím se nestaly
+Každopádně WordPress je navzdory kritice dominantním redakčním systémem a v nové verzi se své pozice v žádném případě nevzdává.
+AI je ve WordPressu
+Tohle je zásadní a nejde o generování textu, i když většina následujících příkladů se týká pouze „hloupých“ textových hrátek. Ale během roku 2026 budou všechny wordpressy a e-shopy na WooCommerce umět tohle (v době psaní článku jsou některé funkce zatím ještě v testovacích verzích jako pluginy a do jádra se teprve vydají):
+- Budou v sobě mít připojené AI modely (Claude, Gemini, …) a významná část nových funkcí, které se ve WP objeví, pojede na základě promptů, ne připraveného kódu. Zejména pro e-shopy to bude časoprostorový skok.
+- Z webového rozhraní, aplikace nebo VS Code zadáte prompt a budete se svým webem nebo e-shopem „konverzovat“.
+- Na WooCommerce tak nakoupíte z jakékoliv aplikace, která se bude umět napojit na MCP rozhraní, což už e-shopy považují za nový standard. Agentní nakupování is here.
+Já vím, že jste to slyšeli už několikrát, jenže tentokrát už to bude ve WordPressu, který pohání 27, 35 nebo 48 procent světových webů (podle toho, kdo statistiky interpretuje).
+Nové funkce pro zapojení AI
+Bylo potřeba doplnit tři chybějící prvky nad rámec současného REST API a autorizovaného přístupu (pomocí aplikačního hesla):
+- možnost připojit LLM/AI modely standardizovaně, aby k nim všechny pluginy mohly přistupovat stejně, tedy vytvořit abstraktní rozhraní, a to pomocí konektorů – je jich dost a přibývají
+- možnost určit pravidla hry, komunikace, bezpečnosti – jmenuje se to Ability API,
+- pro externí dotazy vytvořit rozhraní na bázi protokolu MCP, adaptéry; je jich hodně, v podstatě každý plugin si vytvořil vlastní, základem je ten hlavní pro WordPress
+Pomocí Ability API (což jsou konfigurace na úrovni kódu, které určuje programátor komponenty) se určí, k čemu smí AI model přistupovat, co smí dělat a jak to má udělat (základ pro prompt). Takové recepty pro jednotlivé úkoly/funkce.
+Vnější dotaz pak technicky probíhá po ose: MCP adaptér/REST API → Ability API → LLM připojený do WP provede úkol → vrátí odpověď v JSON. Zatím není možnost určit v administraci priority modelů LLM, takže pokud první v pořadí má vyčerpané limity a chcete použít ten druhý, ten první musíte zcela deaktivovat. Lze to upravit v kódu a věřím, že tento management je otázkou několika týdnů.
+Příklady interních funkcí založených na promptu pro LLM, které dnes máme k dispozici, se týkají Gutenbergu:
+- doplnění alt textů k obrázkům v článku,
+- vygenerování náhledového obrázku na základě analýzy textu,
+- generování anotací a perexů z obsahu článku, přepsání textu,
+- vytvoření sumarizace textu do prvního odstavce,
+- revize struktury textu a návrhy na úpravy.
+Nenechte se prosím zmást – já vím, že tohle umí chatboti už více než dva roky. Vím, že SEO pluginy mají své připojení na LLM, ale tady nejde o práci s texty. Jde o to, že se mění způsob práce s WordPressem a úpravy textu jsou nejsnadněji dosažitelné změny, aby bylo čím začít. Brzy lze čekat LLM modelem řízenou práci s komentáři (pokud tato funkce ještě bude existovat pro lidi) a automatickou kontrolu před publikováním článku.
+Kam nás to dovede?
+Samozřejmě největší změna spočívá v tom, že je možné využít vzdálený – agentní – přístup a instruovat web zvenku přes MCP protokol. Ten slouží k tomu, aby vnější tazatel, AI agent, získal informace o webu nebo z webu, a to bez balastních dat jako design, grafika, HTML, nebo aby web zvenku ovládal. Podstatné je, že tyto dotazy nejsou atomické, tedy „Kolik produktů máš, e-shope?“, ale „Kolik růžových kovových zvonků na kolo se prodalo v březnu a co k nim ještě doporučíš?“
+Během roku 2026 bude následovat, že váš agent řekne: „Dobře, objednávám, platím“. Během roku 2027 tohle do aplikace v mobilu jenom namluvíte. Konečně se dočkáme té absurdní vize, že se i naše ledničky naplní samy!
+Dnes můžeme využít LLM model pro realizaci úkolů uvnitř webu, s agentním přístupem ještě moc zkušeností nemáme, když se funkce teprve zabydluje. Ale bavme se něčem podobném:
+- zjišťování stavových informací nejen o webu jako takovém, ale o jeho obsahu (článcích, produktech),
+- vzdálený MCP management více webů bez nutnosti využívat pluginy jako MainWP (to už si ve WP-admin.cz ladíme do produkce),
+- pokyn pro opravu všech meta popisů vašich článků nebo produktů, a to tak, aby byly originální, „marketingové“ a splňovaly další parametry,
+- hodně nabrífovaný virtuální prodejce, dnes často jako AI bot,
+- dynamické produktové nabídky podle informací o vás, které pošlete v zadání přes okno chatu (mám dvě děti, máme problém s laktózou, chceme čerstvou zeleninu a ryby, připrav nám nákup na víkend),
+- o dost jednodušší ovládání WP pro lidi se speciálními potřebami,
+- kontrola on-site SEO dat proti opravdu aktuální rešerši hledaných frází nebo dotazů (automatizace třeba přes N8N se zapojením Search console a dalších nástrojů).
+Rizika při používání AI nástrojů, která jsou zmiňována, se týkají zejména nákladů na LLM, které ne...
+(Pokracovani na webu)

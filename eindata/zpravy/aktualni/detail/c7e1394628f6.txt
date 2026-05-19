@@ -1,0 +1,17 @@
+BudsLink
+Linuxová aplikace pro správu bezdrátových sluchátek značek Apple AirPods, Samsung Galaxy Buds, Sony či Nothing. Program rozšiřuje základní bluetooth funkce Linuxu o zobrazení stavu baterie sluchátek i nabíjecího pouzdra, ovládání aktivního potlačení hluku, ambientního režimu, gest nebo automatického pozastavení přehrávání při vyjmutí sluchátek z uší. Aplikace je dostupná přes Flathub a podporuje integraci s desktopovými prostředími KDE Plasma, GNOME a Cinnamon.
+github.com/maniacx/BudsLink, 0.1.4
+FreshRSS
+Lehká self-hosted čtečka RSS kanálů, která umožňuje pohodlné sledování novinek z webů na vlastním serveru. Nabízí podporu více uživatelů, anonymní režim čtení, vlastní štítky, API pro mobilní klienty i rozhraní příkazové řádky. Díky podpoře standardu WebSub dokáže přijímat okamžitá upozornění z kompatibilních služeb, jako jsou WordPress nebo Medium.
+FreshRSS zvládá také základní web scraping pomocí XPath pro stránky bez RSS kanálu a podporuje i zdroje v JSON. Nechybí možnosti sdílení článků přes HTML, RSS či OPML, více metod přihlášení včetně OpenID Connect a systém rozšíření pro další přizpůsobení funkcí i vzhledu.
+freshrss.org, 1.29.0
+Traefik
+Moderní reverzní proxy server a load balancer určený především pro prostředí s mikroslužbami, kontejnery a orchestrace jako Kubernetes, Docker Swarm nebo Consul. Automaticky sleduje změny ve službách a dynamicky vytváří směrování bez nutnosti ruční konfigurace a restartů.
+Podporuje HTTPS certifikáty přes Let’s Encrypt, WebSocket, HTTP/2, gRPC, různé load balancing algoritmy, retry mechanismy i monitoring pomocí Prometheus či Datadog. Traefik nabízí také přehledné webové rozhraní REST API a je distribuován jako jediný binární soubor nebo oficiální Docker image.
+traefik.io, 3.7.1
+LibrePlan
+Webová aplikace pro plánování, řízení a sledování projektů. Nabízí kolaborativní prostředí, ve kterém mohou členové týmu společně plánovat úkoly v reálném čase pomocí WBS struktur a správy zdrojů, jako jsou zaměstnanci či stroje. Systém podporuje automatické přidělování práce podle dovedností, opakovaně použitelné šablony projektů, sledování nákladů, odpracovaných hodin i analýzu průběhu projektů pomocí metodiky Earned Value Management.
+LibrePlan zvládá také outsourcing úkolů mezi firmami, správu materiálu, LDAP autentizaci a integraci s dalšími firemními nástroji prostřednictvím webových služeb.
+www.libreplan.dev, 1.6.0
+Blbinka
+Hra Minecraft se stala populární hlavně díky tomu, že v jejím otevřeném světě můžete dělat prakticky cokoli. Nově například i spustit Wayland.

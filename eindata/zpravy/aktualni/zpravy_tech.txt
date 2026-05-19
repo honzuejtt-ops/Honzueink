@@ -88,7 +88,7 @@ Gemini Spark in the Gemini app helps you navigate digital life and integrates wi
 From brainstorming out loud with conversational voice features, to bringing ideas to life visually exactly as you imagine in Google Pics, to streamlining email management with AI Inbox, to helping you navigate digital life with Gemini Spark — these latest updates help you save time so you can focus on the work that matters most.|E||T|I/O 2026: Welcome to the agentic Gemini era|D|19.5. 17:45|P|a series of colorful icons representing Google I/O against a black background|X|I/O 2026: Welcome to the agentic Gemini era
 Editor’s note: Below is an edited transcript of Google CEO Sundar Pichai’s remarks at Google I/O 2026, adapted to include more of what was announced on stage. See all the announcements in our collection.
 It’s been an extraordinary year since our last I/O, a period of relentless shipping, technology advances and hyper progress. We’re now in the part of the AI cycle where people want to see the value in the products they use every day. We’ve been really focused on that, and you’ll see that in the products and features we’re announcing today at I/O.
-Ten years since we pivoted the company to be AI-first, we still see AI as the most profound way to advance our mission and improve people’s lives at scale.That’s why we’ve been taking a differentiated, full-stack approach to AI innovation, from our custom silicon and secure foundation, to our world-class research and models, to our products and platforms that touch billions of people. This approach enables us to iterate and innovate faster in ways that are lighting up every part of the company.
+Ten years since we pivoted the company to be AI-first, we still see AI as the most profound way to advance our mission and improve people’s lives at scale. That’s why we’ve been taking a differentiated, full-stack approach to AI innovation, from our custom silicon and secure foundation, to our world-class research and models, to our products and platforms that touch billions of people. This approach enables us to iterate and innovate faster in ways that are lighting up every part of the company.
 What’s incredible is how people are using AI, whether it’s students prepping for final exams with the Gemini app, musicians and artists using generative AI models like Lyria and Veo as part of their creative flow, or developers coding and bringing their ideas to life.
 AI momentum across the full stack
 These stories of how people are using AI are the best measure of progress. To understand the scale at which people are adopting AI, there is another great proxy — tokens, the fundamental units of data our models process, many representing a problem being solved.
@@ -132,7 +132,7 @@ Of course, this only works at scale if more partners decide to watermark their o
 Gemini 3.5 Flash
 Gemini 3 launched a few months ago, with a full family of models. It’s our most adopted series yet. We've loved seeing developers use Flash as their daily driver, and build incredible experiences with Pro's deep reasoning and multimodal capabilities. We’ve been hard at work on improving these models, especially focused on agentic coding, long-horizon tasks and real-world workflows.
 Today, we’re introducing Gemini 3.5 Flash, our first in a series of models combining frontier intelligence with action. Two things I’d highlight:
-- When compared...
+- When compare...
 (Pokracovani na webu)|E||T|Gemini 3.5: frontier intelligence with action|D|19.5. 17:45|P|Gemini 3.5 text and multi-colored star icon on an abstract blue background.|X|Gemini 3.5: frontier intelligence with action
 Today, we’re introducing Gemini 3.5, our latest family of models combining frontier intelligence with action. This represents a major leap forward in building more capable, intelligent agents. We’re kicking off the series by releasing 3.5 Flash. It delivers frontier performance for agents and coding, excelling at complex long-horizon tasks that deliver real-world utility.
 3.5 Flash is available today to billions of people globally:
@@ -875,9 +875,9 @@ Referenční použití Ujorm3 najdete v projektu PetStore, který využívá pro
 Přikládám odkaz na jiné zpracování stejného tématu, tentokrát v angličtině:
 https://dev.to/pponec/native-sql-in-java-without-jdbc-boilerplate-meet-ujorm3-3ab2
 Postřehy ze světa open-source.
-Přečteno 38 752×
+Přečteno 38 754×
 Přečteno 23 365×
-Přečteno 19 217×
+Přečteno 19 218×
 Přečteno 17 955×
 Přečteno 16 655×|E||T|Zdroje Cooler Master zachrání GPU před roztavením konektoru. Obsahují ochranu, která v grafikách chybí|D|18.5. 06:00|P|Selhávání 12+4pinových konektorů na grafikách se zřejmě nelze spolehlivě vyhnout, ale zdroje Cooler Masteru mají funkci, která ho včas odhalí a bezpeč...|X|V poslední době výrobci zdrojů čím dál častěji přicházejí s nápady, jak zlepšit nespolehlivost konektorů 12V-2×6 na kabelech pro napájení grafických karet – což je asi namístě, jelikož tyto konektory se nepřestávají přehřívat. To může vést k poškození nejen kabelu, ale i zdroje a grafické karty, pokud budete jedním z uživatelů, kteří měli smůlu. Vlastní řešení teď představila firma Cooler Master a vypadá to na jedno z těch slibnějších.
 Cooler Master GPU Shield

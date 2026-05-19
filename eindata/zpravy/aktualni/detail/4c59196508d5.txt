@@ -46,7 +46,7 @@ Referenční použití Ujorm3 najdete v projektu PetStore, který využívá pro
 Přikládám odkaz na jiné zpracování stejného tématu, tentokrát v angličtině:
 https://dev.to/pponec/native-sql-in-java-without-jdbc-boilerplate-meet-ujorm3-3ab2
 Postřehy ze světa open-source.
-Přečteno 38 747×
+Přečteno 38 752×
 Přečteno 23 365×
 Přečteno 19 217×
 Přečteno 17 955×

@@ -1,0 +1,45 @@
+Ukázat všechny listy najednou
+Běžná nabídka funkcí v Chromu je nemalá a prohlížeč lze v mnoha ohledech přizpůsobit vlastním potřebám. Souběžně do něj Google pravidelně přidává nové funkce, které na odiv nevystavuje . Jsou totiž experimentální, z čehož vyplývá několik konsekvencí. Především nemusí pracovat spolehlivě.
+Nemusí ani nabízet odladěný uživatelský zážitek. Experimenty jsou někdy náčrty věcí budoucích. Ne vždycky se nápad uchytí tak, aby výrobce přesvědčil, že by bylo dobré funkci plošně nasadit. K nasazení někdy po měsících vývoje dojde, jindy se funkce ztratí. Některé funkce roky setrvávají v experimentálním stádiu.
+V tomto článku si přiblížíme skryté funkce, které považujeme za zajímavé. Najdete je na stránce chrome://flags . Je to adresa jako jakákoli jiná, kterou zadáte do adresního řádku a potvrdíte. Obsah na této stránce na rozdíl od zbytku prohlížeče není přeložený.
+Protože funkce nemusí být do detailu vyladěné, používejte je v přiměřené míře a za přispění zdravého rozumu. Použití je na vlastní nebezpečí. V praxi si nicméně nevybavujeme, že by experimentální funkce způsobily katastrofální poškození uživatelských dat. Zaznamenáte-li problémy s fungováním Chromu, funkci zase jednoduše vypnete.
+Stránka chrome://flags obsahuje skryté experimentální funkce
+Google sám testovací funkce vypíná a zapíná podle toho, co a jak zrovna potřebuje testovat. Můžete do toho ovšem manuálně zasáhnout. Zajímat vás budou dvě základní hodnoty, které najdete v rozbalovací nabídce u každé skryté funkce: zapnuto (enabled ) a vypnuto (disabled ). Ty jednoznačně aktivují či deaktivují funkci dle vašeho přání.
+Někdy je možností nastavení více. V tom případě to uvádíme u konkrétních tipů. Po aktivaci či deaktivaci vás prohlížeč vyzve k restartu, do té doby se změna konfigurace neprojeví. Klepněte pak vždy na modré tlačítko Restartovat .
+Pokračování 2 / 11 Vertikální karty
+Z jiných prohlížečů můžete znát vertikální navigaci. Standardně se karty zobrazují v záhlaví okna. Vertikální karty se ale štosují pod sebou – většinou po levé straně okna. Tím ušetří místo na výšku, které je na širokoúhlých obrazovkách cenné. Využije ho pak webová stránka.
+Chrome má oproti konkurenci roky zpoždění, ale vertikální karty konečně zavádí. Aktivujte funkci Vertical Tabs a v záhlaví okna pak v kontextové nabídce vyberte Zobrazit karty svisle . Google funkci postupně zavede všem , do té doby však experimentální předvolba slouží jako spolehlivý způsob, jak vertikální karty začít hned používat.
+Za zmínku stojí i sesterská funkce Vertical Tabs Expand On Hover . Standardně se postranní panel zobrazuje buď v plné šířce, nebo ho ručně sbalíte. Doplňková funkce umožní dočasné rozbalení panelu, když nad něj přesunete ukazatel myši. Dle našich zkušeností ale stav Enabled nemá kýžený efekt, tak raději zkuste Enabled with 350ms hover delay .
+Vertikální karty ušetří cenné místo na výškuPokračování 3 / 11 Čtečka v celém okně
+Google svou integrovanou čtečku článků hodně zlepšil. Pořád se ale otevírá v postranním panelu, což není zrovna pohodlné. Testuje ale režim čtení v celém okně, kdy se přeformátovaný článek otevře v aktuální kartě. Čtečka odebere balast a soustředí se na text. Podporuje také předčítání syntetickým hlasem.
+Když aktivujete předvolbu Reading Mode Experimental Immersive Mode , bude se čtečka otevírat v kartě. V nastavení se ale kdykoli přepnete zpátky do režimu postranního panelu. Čtečka dodnes nepodporuje obrázky. Někdejší experimentální funkce, která je v přeformátovaných článcích nechávala, dnes už korektně nefunguje.
+Čtečka nahrazuje původní článek, takže můžete číst pohodlně v celém okněPokračování 4 / 11 Skupiny v nové kartě
+Nová karta může být s pěknou tapetou esteticky příjemná, ale její prostor působí nevyužitě. Prohlížeče jako Vivaldi ukazují, že se sem vejdou všemožné widgety. Od Chromu se maximální přizpůsobení čekat nedá, cílí na střední proud. Google aspoň umožňuje přidat do nové karty widget se skupinami karet.
+Zobrazuje se hned pod zástupci oblíbených webů a umožňuje rychle pokračovat v relaci. V experimentálním nastavení aktivujte NTP Tab Groups Module .
+Modul se skupinami stránek v nové kartěPokračování 5 / 11 Plynulejší posouvání
+Posouvání po stránce dolů či nahoru může být trhané. Právě to řeší funkce Smooth Scrolling , což v překladu doslova znamená plynulé posouvání. Když budete otáčet kolečkem myši nebo stisknete šipku nahoru/dolů, bude posouvání animované tak, že působí plynuleji oproti standardnímu stavu.
+Posouvání je plynulejší, což vám statický snímek pochopitelně neukážePokračování 6 / 11 Rychlejší stahování
+Stahování v jednom vlákně nemusí vytěžit potenciál vaší přípojky. Když aktivujete funkci Parallel downloading , bude Chrome každý soubor stahovat nikoli v jednom kuse, ale souběžně po třech částech. Na stejném principu fungovaly a v některých případech dodnes fungují tzv. akcelerátory stahování.
+U malých souborů to nejspíš nepoznáte, rozdělení na tři úlohy však může být znatelné u velkých souborů. Nepočítejte s tím, že jde o zázračný všelék. Rychlost stahování ovlivňuje mnoho faktorů a tohle je jen určitá možnost, jak si polepšit.
+Stažení větších souborů může být rychlejšíPokračování 7 / 11 Vypněte zvuk klepnutím
+Chrome má s vypínáním zvuku na webech komplikovaný vztah, pokud jde o uživatelskou sféru. Aktuálně vám do rukou nástroj na vypnutí zvuku konkrétní otevřené stránky víceméně dává, a sice z kontextové nabídky ouška karty. Tenhle příkaz ale vypne zvuk pro celou doménu.
+Pokud ztišení někdy potřebujete, usnadněte si život. Funkce Tab audio muting UI control vám umožní vypnout zvuk pouze z konkrétní otevřené stránky, a to klepnutím na symbol reproduktoru v oušku karty. Umožňují to i některé další prohlížeče jako Firefox a Edge. Chrome už dříve ztišit kartu uměl, ale pak funkci zahodil.
+Klepnutím na reproduktor v oušku vypnete zvuk na stráncePokračování 8 / 11 Tmavý režim na každé stránce
+Tmavé režimy zobrazení jsou roky téměř standardem. Implementovaly je všechny velké operační systémy včetně Windows a nabízí je mnoho webových stránek. Ne ale každá. Zde na scénu přichází Auto Dark Mode for Web Contents . Když experimentální funkci zapnete, prohlížeč každý web převede do tmavého zobrazení.
+Počítejte s tím, že ne každý web bude vypadat dokonale, byť většinou je výsledek použitelný. Největší úskalí spočívá v tom, že režim nelze snadno vypnout. Musíte zase vypnout celou funkci na stránce chrome://flags a prohlížeč restartovat. Zkoušet můžete různé varianty inverze, byť pokud nestojíte o časově náročnější experimentování, vystačíte si se základním nastavením a hodnotou Enabled .
+Vynucený tmavý režim neprodukuje bezchybné výsledky, ale jsou většinou použitelnéPokračování 9 / 11 Link Preview
+Malá náhledová okna vám ukáží, kam míří odkaz na stránce, kde se zrovna nacházíte. Funkce Link Preview v praxi většinou vyžaduje klepnutí na odkaz při souběžném podržení nějaké klávesy. Variant je k dispozici víc:
+Enabled . Funguje stejně jako předvolba níže, musíte tedy podržet Alt a klepnout na odkaz.
+Enabled Alt + Click . Náhled vyvoláte klepnutím při podržení Altu.
+Enabled Alt + Hover . Náhled vyvoláte přesunutím ukazatele myši nad odkaz a podržením Altu.
+Enabled Long Press . Náhled vyvoláte delším stisknutím odkazu na stránce.
+V malém náhledovém okně bez ovládacích prvků se stránka načtePokračování 10 / 11 Fešnější kabát ve Windows 11
+Ačkoli jsou Windows 11 na trhu přes čtyři roky, Chrome některé vizuální úpravy, které odpovídají designovému stylu operačního systému, stále nechává na volitelné úrovni.
+Ve výchozím stavu prohlížeč pastelovými barvami zdobí záhlaví. Jedenáctky ovšem nabízejí a na řadě míst aplikují mírně průsvitný materiál Mica. Tohle lehce průsvitné záhlaví můžete mít také v Chromu, když aktivujete funkci Windows 11 Mica titlebar . Vrstva pokryje prostor za kartami.
+Teď je záhlaví mírně průsvitnéPokračování 11 / 11 Dotekové prostředí
+Chrome ve standardní konfiguraci není přizpůsobený dotekovým obrazovkám, dotekový režim nicméně ve výbavě má. A můžete ho vynutit, pokud potřebujete. Touch UI Layout nastavte na Enabled . Prvky uživatelského prostředí se trvale zvětší tak, aby byly pohodlně ovladatelné prstem.
+Zvětšené prvky se lépe ovládají prsty
+Tento článek je součástí balíčku PREMIUM+
+Odemkněte si exkluzivní obsah a videa bez reklam na devíti webech.
+Chci Premium a Živě.cz bez reklam
+Od 58 Kč měsíčně

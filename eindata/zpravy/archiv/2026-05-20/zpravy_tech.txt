@@ -1,3 +1,201 @@
+|T|Google si troufl na to, co by Apple nikdy neudělal. Nové funkce Gemini AI prezentoval na iPhonu|D|20.5. 17:45|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Insolvenční správce navrhuje ukončení provozu TV Barrandov, podnik je podle něj neudržitelný|D|20.5. 17:29|P|Zadlužená TV Barrandov se ocitla na hraně definitivního zániku. Insolvenční správce David Jánošík podal 19. května 2026 Městskému soudu v Praze návrh ...|X|Zadlužená TV Barrandov se ocitla na hraně definitivního zániku. Insolvenční správce David Jánošík podal 19. května 2026 Městskému soudu v Praze návrh na ukončení provozu akciové společnosti Barrandov Televizní Studio.
+Další fungování podniku považuje za ekonomicky i fakticky neudržitelné. Podle správce generuje společnost měsíční ztrátu v řádu několika milionů korun a její finanční situace se od února 2026 v důsledku drastického propadu příjmů z reklamy setrvale zhoršuje. S navrženým ukončením provozu už vyjádřil souhlas věřitelský výbor.
+Analýza hospodaření ukazuje, že zatímco průměrné měsíční tržby v roce 2025 přesahovaly 13 milionů korun, v prvním čtvrtletí roku 2026 zaznamenaly strmý pád. Náklady dlužníka, očištěné o nefinanční položky, přitom v letošním roce dosahují v průměru 13,5 milionu korun měsíčně a kvůli inflaci a rostoucím cenám energií mají spíše rostoucí tendenci, bez reálného prostoru pro jejich zásadní snížení.
+Kromě finanční tísně čelí televize také problémům s prostory pro podnikání. Nedávno podle insolvenčního správce obdržela výpověď z pronajatých prostor, přičemž výpovědní doba vyprší v červenci 2026.
+Správce David Jánošík ve svém podání soudu zdůraznil, že po prověření aktuální situace dlužníka dospěl k závěru, že neexistují podmínky pro další pokračování v činnosti. „Prověřil jsem aktuální situaci obchodního závodu dlužníka a mám za to, že jeho další provozování je ekonomicky ani fakticky neudržitelné,“ uvedl v žádosti.
+Tržby společnosti Barrandov Televizní Studio
+Situaci nyní komplikuje také neúplné složení věřitelského výboru. K 9. dubnu 2026 zanikla společnost Czech Digital Group, a.s., která se sloučila s nástupnickou společností České Radiokomunikace a.s., čímž zaniklo i její členství ve výboru. Společnosti Czech Digital Group stanice dlužila za šíření signálu.
+Věřitelský výbor je momentálně pouze dvoučlenný a tvoří jej společnosti Gomanold, a.s., v roli předsedy, a RN Pohledávková development, s.r.o.. Vzhledem k tomu, že zákon vyžaduje vyšší počet členů, bude muset insolvenční správce požádat soud o svolání schůze věřitelů za účelem doplňující volby. České Radiokomunikace už vyjádřily zájem funkci člena věřitelského výboru převzít.
+Správce naléhá na soud, aby o ukončení provozu rozhodl v co nejkratší lhůtě, jelikož některé kroky vedoucí k uzavření podniku v zájmu věřitelů podniká už nyní.
+Majitel televize Jan Čermák řekl agentuře ČTK, že vysílání by mělo ještě několik měsíců pokračovat prostřednictvím jiné společnosti z jeho holdingu. „Dcera S-24 holding si část služeb od BTS pronajme tak, abychom byli schopni udržet vysílání. Možná prodejní hodnota, a tedy výtěžek pro věřitele, je u běžící televize o dost vyšší. Bavíme se o provozu v řádu maximálně měsíců, během nichž se musí najít kupec,“ řekl ČTK Čermák.
+Společnost Barrandov Televizní Studio je od 23. dubna v konkurzu, protože se původní reorganizační plán nepodařilo uskutečnit. Tehdy Čermákův holding oznámil, že se vysílání celé skupiny omezí pouze na hlavní kanál a vedlejší programy Barrandov Kino a Barrandov Krimi zaniknou. „Projektu Restart TV Barrandov se nevzdáváme. Přestože původní provozní struktura končí, podařilo se nám zajistit technické i organizační řešení, které umožní zachovat vysílání na hlavním celoplošném kanálu,“ uvedl v dubnu Jan Čermák.
+Hlavní vysílací licence je držena společností S-24 akvizice II, s.r.o., která je součástí Čermákovy skupiny. Na zadluženou firmu Barrandov Televizní Studio jsou napsané už jenom licence stanic Barrandov Kino a Barrandov Krimi.|E|
+|T|10 skrytých nastavení Google Chromu, kterými prohlížeč vytuníte|D|20.5. 16:45|P|Ukážeme vám, jak si prohlížeč podmanit. • Chrome nabízí experimentální funkce. • Ty jsou trochu schované, ale můžete je využívat.|X|Ukázat všechny listy najednou
+Běžná nabídka funkcí v Chromu je nemalá a prohlížeč lze v mnoha ohledech přizpůsobit vlastním potřebám. Souběžně do něj Google pravidelně přidává nové funkce, které na odiv nevystavuje . Jsou totiž experimentální, z čehož vyplývá několik konsekvencí. Především nemusí pracovat spolehlivě.
+Nemusí ani nabízet odladěný uživatelský zážitek. Experimenty jsou někdy náčrty věcí budoucích. Ne vždycky se nápad uchytí tak, aby výrobce přesvědčil, že by bylo dobré funkci plošně nasadit. K nasazení někdy po měsících vývoje dojde, jindy se funkce ztratí. Některé funkce roky setrvávají v experimentálním stádiu.
+V tomto článku si přiblížíme skryté funkce, které považujeme za zajímavé. Najdete je na stránce chrome://flags . Je to adresa jako jakákoli jiná, kterou zadáte do adresního řádku a potvrdíte. Obsah na této stránce na rozdíl od zbytku prohlížeče není přeložený.
+Protože funkce nemusí být do detailu vyladěné, používejte je v přiměřené míře a za přispění zdravého rozumu. Použití je na vlastní nebezpečí. V praxi si nicméně nevybavujeme, že by experimentální funkce způsobily katastrofální poškození uživatelských dat. Zaznamenáte-li problémy s fungováním Chromu, funkci zase jednoduše vypnete.
+Stránka chrome://flags obsahuje skryté experimentální funkce
+Google sám testovací funkce vypíná a zapíná podle toho, co a jak zrovna potřebuje testovat. Můžete do toho ovšem manuálně zasáhnout. Zajímat vás budou dvě základní hodnoty, které najdete v rozbalovací nabídce u každé skryté funkce: zapnuto (enabled ) a vypnuto (disabled ). Ty jednoznačně aktivují či deaktivují funkci dle vašeho přání.
+Někdy je možností nastavení více. V tom případě to uvádíme u konkrétních tipů. Po aktivaci či deaktivaci vás prohlížeč vyzve k restartu, do té doby se změna konfigurace neprojeví. Klepněte pak vždy na modré tlačítko Restartovat .
+Pokračování 2 / 11 Vertikální karty
+Z jiných prohlížečů můžete znát vertikální navigaci. Standardně se karty zobrazují v záhlaví okna. Vertikální karty se ale štosují pod sebou – většinou po levé straně okna. Tím ušetří místo na výšku, které je na širokoúhlých obrazovkách cenné. Využije ho pak webová stránka.
+Chrome má oproti konkurenci roky zpoždění, ale vertikální karty konečně zavádí. Aktivujte funkci Vertical Tabs a v záhlaví okna pak v kontextové nabídce vyberte Zobrazit karty svisle . Google funkci postupně zavede všem , do té doby však experimentální předvolba slouží jako spolehlivý způsob, jak vertikální karty začít hned používat.
+Za zmínku stojí i sesterská funkce Vertical Tabs Expand On Hover . Standardně se postranní panel zobrazuje buď v plné šířce, nebo ho ručně sbalíte. Doplňková funkce umožní dočasné rozbalení panelu, když nad něj přesunete ukazatel myši. Dle našich zkušeností ale stav Enabled nemá kýžený efekt, tak raději zkuste Enabled with 350ms hover delay .
+Vertikální karty ušetří cenné místo na výškuPokračování 3 / 11 Čtečka v celém okně
+Google svou integrovanou čtečku článků hodně zlepšil. Pořád se ale otevírá v postranním panelu, což není zrovna pohodlné. Testuje ale režim čtení v celém okně, kdy se přeformátovaný článek otevře v aktuální kartě. Čtečka odebere balast a soustředí se na text. Podporuje také předčítání syntetickým hlasem.
+Když aktivujete předvolbu Reading Mode Experimental Immersive Mode , bude se čtečka otevírat v kartě. V nastavení se ale kdykoli přepnete zpátky do režimu postranního panelu. Čtečka dodnes nepodporuje obrázky. Někdejší experimentální funkce, která je v přeformátovaných článcích nechávala, dnes už korektně nefunguje.
+Čtečka nahrazuje původní článek, takže můžete číst pohodlně v celém okněPokračování 4 / 11 Skupiny v nové kartě
+Nová karta může být s pěknou tapetou esteticky příjemná, ale její prostor působí nevyužitě. Prohlížeče jako Vivaldi ukazují, že se sem vejdou všemožné widgety. Od Chromu se maximální přizpůsobení čekat nedá, cílí na střední proud. Google aspoň umožňuje přidat do nové karty widget se skupinami karet.
+Zobrazuje se hned pod zástupci oblíbených webů a umožňuje rychle pokračovat v relaci. V experimentálním nastavení aktivujte NTP Tab Groups Module .
+Modul se skupinami stránek v nové kartěPokračování 5 / 11 Plynulejší posouvání
+Posouvání po stránce dolů či nahoru může být trhané. Právě to řeší funkce Smooth Scrolling , což v překladu doslova znamená plynulé posouvání. Když budete otáčet kolečkem myši nebo stisknete šipku nahoru/dolů, bude posouvání animované tak, že působí plynuleji oproti standardnímu stavu.
+Posouvání je plynulejší, což vám statický snímek pochopitelně neukážePokračování 6 / 11 Rychlejší stahování
+Stahování v jednom vlákně nemusí vytěžit potenciál vaší přípojky. Když aktivujete funkci Parallel downloading , bude Chrome každý soubor stahovat nikoli v jednom kuse, ale souběžně po třech částech. Na stejném principu fungovaly a v některých případech dodnes fungují tzv. akcelerátory stahování.
+U malých souborů to nejspíš nepoznáte, rozdělení na tři úlohy však může být znatelné u velkých souborů. Nepočítejte s tím, že jde o zázračný všelék. Rychlost stahování ovlivňuje mnoho faktorů a tohle je jen určitá možnost, jak si polepšit.
+Stažení větších souborů může být rychlejšíPokračování 7 / 11 Vypněte zvuk klepnutím
+Chrome má s vypínáním zvuku na webech komplikovaný vztah, pokud jde o uživatelskou sféru. Aktuálně vám do rukou nástroj na vypnutí zvuku konkrétní otevřené stránky víceméně dává, a sice z kontextové nabídky ouška karty. Tenhle příkaz ale vypne zvuk pro celou doménu.
+Pokud ztišení někdy potřebujete, usnadněte si život. Funkce Tab audio muting UI control vám umožní vypnout zvuk pouze z konkrétní otevřené stránky, a to klepnutím na symbol reproduktoru v oušku karty. Umožňují to i některé další prohlížeče jako Firefox a Edge. Chrome už dříve ztišit kartu uměl, ale pak funkci zahodil.
+Klepnutím na reproduktor v oušku vypnete zvuk na stráncePokračování 8 / 11 Tmavý režim na každé stránce
+Tmavé režimy zobrazení jsou roky téměř standardem. Implementovaly je všechny velké operační systémy včetně Windows a nabízí je mnoho webových stránek. Ne ale každá. Zde na scénu přichází Auto Dark Mode for Web Contents . Když experimentální funkci zapnete, prohlížeč každý web převede do tmavého zobrazení.
+Počítejte s tím, že ne každý web bude vypadat dokonale, byť většinou je výsledek použitelný. Největší úskalí spočívá v tom, že režim nelze snadno vypnout. Musíte zase vypnout celou funkci na stránce chrome://flags a prohlížeč restartovat. Zkoušet můžete různé varianty inverze, byť pokud nestojíte o časově náročnější experimentování, vystačíte si se základním nastavením a hodnotou Enabled .
+Vynucený tmavý režim neprodukuje bezchybné výsledky, ale jsou většinou použitelnéPokračování 9 / 11 Link Preview
+Malá náhledová okna vám ukáží, kam míří odkaz na stránce, kde se zrovna nacházíte. Funkce Link Preview v praxi většinou vyžaduje klepnutí na odkaz při souběžném podržení nějaké klávesy. Variant je k dispozici víc:
+Enabled . Funguje stejně jako předvolba níže, musíte tedy podržet Alt a klepnout na odkaz.
+Enabled Alt + Click . Náhled vyvoláte klepnutím při podržení Altu.
+Enabled Alt + Hover . Náhled vyvoláte přesunutím ukazatele myši nad odkaz a podržením Altu.
+Enabled Long Press . Náhled vyvoláte delším stisknutím odkazu na stránce.
+V malém náhledovém okně bez ovládacích prvků se stránka načtePokračování 10 / 11 Fešnější kabát ve Windows 11
+Ačkoli jsou Windows 11 na trhu přes čtyři roky, Chrome některé vizuální úpravy, které odpovídají designovému stylu operačního systému, stále nechává na volitelné úrovni.
+Ve výchozím stavu prohlížeč pastelovými barvami zdobí záhlaví. Jedenáctky ovšem nabízejí a na řadě míst aplikují mírně průsvitný materiál Mica. Tohle lehce průsvitné záhlaví můžete mít také v Chromu, když aktivujete funkci Windows 11 Mica titlebar . Vrstva pokryje prostor za kartami.
+Teď je záhlaví mírně průsvitnéPokračování 11 / 11 Dotekové prostředí
+Chrome ve standardní konfiguraci není přizpůsobený dotekovým obrazovkám, dotekový režim nicméně ve výbavě má. A můžete ho vynutit, pokud potřebujete. Touch UI Layout nastavte na Enabled . Prvky uživatelského prostředí se trvale zvětší tak, aby byly pohodlně ovladatelné prstem.
+Zvětšené prvky se lépe ovládají prsty
+Tento článek je součástí balíčku PREMIUM+
+Odemkněte si exkluzivní obsah a videa bez reklam na devíti webech.
+Chci Premium a Živě.cz bez reklam
+Od 58 Kč měsíčně|E|
+|T|A new experiment brings better group meetings to Google Beam|D|20.5. 16:45|P|A small group meeting featuring two in-room participants and three participants on-screen.|X|A new experiment brings better group meetings to Google Beam
+While video conferencing tools keep us connected, users can still struggle to feel included in the conversation. Trying to read subtle emotions in a sea of tiny boxes may leave remote participants feeling like observers rather than engaged participants. Google Beam, our true-to-life video communication platform, helps you solve this problem by turning your meetings into a more active exchange.
+Today, we’re sharing a new experiment that brings better group meetings to Google Beam across more devices. Using HP Dimension’s immersive display, Google Beam renders participants joining from non-Beam devices in their true size, positioned as if they were sitting around a table with you. Paired with spatial audio that anchors each voice directly to the person speaking, colleagues look, sound, and feel more like they are in the same room.
+This optimization happens automatically, whether you join a meeting from home or the office. Our research suggests approaches like these help close the hybrid 'inclusion gap' by facilitating a 50% stronger sense of social connection and a 21% increase in reported ability to contribute to conversations.
+We’re also continuing to work with Google Workspace and Zoom to help elevate the meetings you have today on Google Beam.
+Stay tuned for more at beam.google.
+Elevating standard group meetings on Google Beam via Zoom.
+An experimental look at remote participants in true-to-life proportions on Google Beam.
+An experimental view of a hybrid meeting on Google Beam.|E|
+|T|Co se nejvíc hraje na PlayStationu. Tady jsou nejoblíbenější hry pro PS5 v roce 2026|D|20.5. 15:45|P|Co se letos nejvíc hraje na PlayStationu 5? Vyšli jsme z oficiálních žebříčků, které Sony vydává, a našli nejoblíbenější hry pro PS5.|X|Ukázat všechny listy najednou
+30. Battlefield 6
+Battlefield je masivní válečný zážitek, kde pěchotní přestřelky střídají zběsilé letecké souboje a dunění tanků. Hra nabízí rozmanité multiplayerové režimy od epického Conquestu přes Breakthrough a Rush až po rychlé bitvy v King of the Hill, Domination a Payload. Nově vylepšený Battlefield Portal umožňuje vytvářet vlastní mapy, pravidla i herní módy s pomocí skriptování a úprav prostředí, a sdílet je s komunitou.
+V příběhové kampani se elitní jednotka Marine Raiders vydává od písečných dun Sahary přes pláže Gibraltaru až po obranu New Yorku, aby odvrátila kolaps civilizace. Bojiště se rozprostírají po celém světě a v každé bitvě platí, že nejnebezpečnější zbraní není tank ani stíhačka, ale sehraný tým.
+Hodnocení recenzentů: 83 % (z 71 recenzí Metacritic)
+Hodnocení v PlayStation Store: 82 %
+Hodnocení na Steamu: Smíšené (64 % od 273 873 hráčů)
+Oficiální web hry
+Hra v obchodě PlayStation (1899 Kč)
+Platformy: PlayStation 5, PC, Xbox Series X
+Žánr: střílečka
+Herní režimy: jeden hráč, více hráčů
+Herní engine: Frostbite
+Vydavatel: Electronic Arts
+Vývojář: Battlefield Studios
+Datum vydání: 10. 10. 2025
+Digitální distribuce: PlayStation , Steam , Epic , Xbox
+Pokračování 2 / 30 29. Resident Evil 2
+Kompletní remake druhého dílu série Resident Evil předvedl, jak se mají dělat předělávky starších her. Společně s Leonem S. Kennedym a Claire Redfield se opět vydáváme do Raccoon City, jehož obyvatelé se začali transformovat do zombíků následky virové nákazy. Jejich hlavním úkolem je přežití a eventuálně odhalení dalších informací ohledně toho, co se ve městě vlastně přihodilo.
+Oproti originálu remake už nevyužívá statických kamer, ale zvolil tradiční pohled z třetí osoby. I přes změny Resident Evil 2 působí tím správným dojmem, kdy budete poznávat okolní prostředí, zatímco se po vás sápou zombíci. Munice a další výbavy není mnoho, takže si ji nemůžete dovolit plýtvat na každého, koho potkáte. Někdy ale jiná možnost není.
+Hodnocení recenzentů: 91 % (z 85 recenzí Metacritic)
+Hodnocení v PlayStation Store: 95 %
+Hodnocení na Steamu: Extrémně kladné (97 % od 146 489 hráčů)
+Oficiální web hry
+Hra v obchodě PlayStation (239 Kč, součást PS Plus Premium)
+Platformy: PlayStation 4, PlayStation 5, PC, Xbox One, Xbox Series X, iOS
+Žánry: adventura, střílečka
+Herní režim: jeden hráč
+Herní engine: RE Engine
+Vydavatel: Capcom
+Vývojář: Capcom R&D Division 1
+Datum vydání: 25. 1. 2019
+Digitální distribuce: PlayStation , Steam , Xbox , Apple App Store
+Pokračování 3 / 30 28. Clair Obscur: Expedition 33
+Jednou za rok se Malířka probudí a na svůj monolit namaluje číslo. Prokleté číslo. Každý v tomto věku se rozplyne v dým a zmizí ze světa. Rok po roce se čísla snižují a lidstvo mizí. Zítra přijde na řadu číslo 33. A zítra vyráží poslední výprava – zničit Malířku, aby už nikdy nemohla malovat smrt.
+RPG Clair Obscur: Expedition 33 originálně spojuje tahové souboje s real-time akcí. Hráči se ponoří do světa inspirovaného krásou a dekadencí Belle Époque. Gustave, Maelle a další členové expedice se utkávají s neobvyklými nepřáteli, objevují ztracené expedice a hledají spojence mezi bájnými bytostmi. Svět je plný tajemství, nádherných krajin a příběhů, které se noří do hlubin zoufalství i odvahy.
+Hodnocení recenzentů: 92 % (z 84 recenzí Metacritic)
+Hodnocení v PlayStation Store: 97 %
+Hodnocení na Steamu: Extrémně kladné (95 % od 174 058 hráčů)
+Oficiální web hry
+Hra v obchodě PlayStation (1189 Kč)
+Platformy: PlayStation 5, PC, Xbox Series X
+Žánry: adventura, nezávislá hra, RPG
+Herní režim: jeden hráč
+Herní engine: Unreal Engine 5
+Vývojář: Sandfall Interactive
+Datum vydání: 24. 4. 2025
+Digitální distribuce: PlayStation , Steam , Epic , Xbox
+Pokračování 4 / 30 27. Poppy Playtime: Chapter 2
+V noci se občas i úplně obyčejná místa promění v prostředí, kde byste rozhodně nechtěli přečkat ani chvíli. Poppy Playtime nám ukáže, jak vypadá noční opuštěná továrna na hračky. Ale zdá se, že na prohlídce nejsme sami. Po prvních setkáních je jasné, že zdejší výrobky nejsou jen obyčejné hračky a měli byste si na ně dávat velmi dobrý pozor.
+Druhá kapitola logické hororovky je pořádný macek, jehož dominantou je nádraží, jedna z nejoblíbenějších atrakcí. Namísto dětských radovánek nás ale čekají nepříjemné chvilky plné napětí, s jejichž řešením nám pomůže také zelená ruka, která umí přenášet energii.
+Hodnocení v PlayStation Store: 85 %
+Hodnocení na Steamu: Spíše kladné (73 % od 13 397 hráčů)
+Oficiální web hry
+Hra v obchodě PlayStation (213 Kč)
+Platforma: PC, PlayStation 4, PlayStation 5, Xbox One, Xbox Series, Nintendo Switch
+Žánry: adventura, nezávislá hra, puzzle
+Herní režim: jeden hráč
+Herní engine: Unreal Engine 5
+Vývojář: Mob Entertainment
+Datum vydání: 5. 5. 2022
+Digitální distribuce: PlayStation , Steam , Epic , Xbox , Nintendo
+Pokračování 5 / 30 26. Nioh 3
+Třetí díl temného akčního RPG vede hráče mezi válčící státy, kde krajině vládnou bandité a mezi troskami číhají démoničtí jókai. Otevřené prostředí láká k volnému průzkumu, zároveň ale udržuje neustálé napětí. Hráč prochází zlověstnými vesnicemi, kde se ve stínech skrývají podivné bytosti, přijímá výzvy v ještě nebezpečnější dimenzi Crucible a snaží se přežít v prokletém království, které trestá každé zaváhání.
+Klíčem k úspěchu je pružné přepínání mezi dvěma bojovými styly. Samurajský styl staví na přímých střetech tváří v tvář, styl Ninja naopak sází na rychlost, úhyby a speciální techniky. Hráč může styly kombinovat podle situace, nebo zůstat věrný jednomu z nich a přizpůsobit mu celou strategii.
+Hodnocení recenzentů: 86 % (z 102 recenzí Metacritic)
+Hodnocení v PlayStation Store: 89 %
+Hodnocení na Steamu: Spíše kladné (79 % od 10 760 hráčů)
+Oficiální web hry
+Hra v obchodě PlayStation (1899 Kč)
+Platformy: PlayStation 5, PC
+Žánry: adventura, mlátička, RPG
+Herní režimy: jeden hráč, více hráčů, kooperace
+Herní engine: Katana Engine
+Vydavatel: Koei Tecmo Games
+Vývojář: Team Ninja
+Datum vydání: 6. 2. 2026
+Digitální distribuce: PlayStation , Steam
+Pokračování 6 / 30 25. MOUSE: P.I. For Hire
+Když v myší metropoli zemře asistentka kouzelníka, rozjede se série nečekaných událostí, v jejichž středu stojí soukromé očko Jack Pepper. Do toho se ztratí sám kouzelník, z ulic mizí rejsci a každou chvíli se mu pletou do cesty podivíni z kultu. Plejáda nejen obyčejných zbraní nám pomůže s tím, abychom se v této animované střílečce dostali až k rozuzlení pravdy.
+Mouse: P.I. for Hire je především o akci, kterou zpracovává s animací seriálů pro děti z první poloviny minulého století. Tato kombinace funguje velmi dobře a ničemu neškodí ani volba zpracovat celou hru pouze v odstínech černé a bílé. Retro noirovou atmosféru skvěle doplňuje jazzový soundtrack, který bychom k poslechu doporučili i samostatně.
+Hodnocení recenzentů: 80 % (z 71 recenzí Metacritic)
+Hodnocení v PlayStation Store: 97 %
+Hodnocení na Steamu: Velmi kladné (94 % od 10 536 hráčů)
+Oficiální web hry
+Hra v obchodě PlayStation (699 Kč)
+Platformy: PlayStation 5, PlayStation 4, PC, Xbox Series X, Xbox One, Nintendo Switch 2
+Žánry: adventura, nezávislá hra, střílečka
+Herní režim: jeden hráč
+Herní engine: Unity
+Vydavatel: PlaySide Studios
+Vývojář: Fumi Games
+Datum vydání: 16. 4. 2026
+Digitální distribuce: PlayStation , Steam , Xbox , Nintendo
+Pokračování 7 / 30 24. God of War: Sons of Sparta
+Během prostoje při čekání na další pokračování epické ságy boha války jsme dostali odbočku v podobě dvojrozměrné akční plošinovky, ve které se vracíme do Kratova dětství. Tehdy ještě nebyl ten neochvějný zabiják, snažil se být správným Sparťanem a okolí města bránil od mytických potvor po boku svého bratra Deima. Při hledání jednoho z dalších cvičenců se ale jeho svět otřese v základech.
+Sons of Sparta vás protáhnou různorodým prostředím od místních lesů, přes stoky až do vysokých hor. Během toho pobijete řadu potvor z řecké mytologie včetně několika bossů. Proti samotným bohům se ale zatím Kratos nepostaví. Jelikož jde o metroidvanii, svět se nám otevírá spolu se získáváním nových schopností. Stejně jako boj je tedy i průzkum hlavní herní mechanikou.
+Hodnocení recenzentů: 64 % (z 80 recenzí Metacritic)
+Hodnocení v PlayStation Store: 83 %
+Hodnocení hráčů: 61 % (z 825 hodnocení)
+Oficiální web hry
+Hra v obchodě PlayStation (709 Kč)
+Platforma: PlayStation 5
+Žánry: adventura, plošinovka
+Herní režimy: jeden hráč, kooperace
+Vydavatel: Sony Interactive Entertainment
+Vývojář: Mega Cat Studios, SCE Santa Monica
+Datum vydání: 12. 2. 2026
+Digitální distribuce: PlayStation
+Pokračování 8 / 30 23. Marathon
+Nad ztracenou kolonií na Tau Ceti IV visí obří loď. Třicet tisíc lidí zmizelo beze stopy. Do hry vstupují Runneři, kybernetičtí žoldáci, kteří vyrážejí do nehostinného prostředí pro artefakty, výbavu a slávu. Každý výsadek je risk. Sbíráte kořist, plníte kontrakty a snažíte se uniknout dřív, než vás někdo připraví o všechno.
+Marathon stojí na výborném gunplayi, silném zvuku a propracovaných mapách s hádankami a skrytými odměnami. Šest typů Runnerů nabízí různé styly hry a dost prostoru pro úpravy výbavy. Problém je balanc. Hra vyžaduje hodně času, zahlcuje vás AI nepřáteli a úkoly rychle zevšední. Sólo hraní je náročné, ve třech funguje výrazně lépe.
+Marathon není revoluce, ale solidní extrakční střílečka s drsnou sci-fi atmosférou, která dokáže na dlouhé hodiny zabavit.
+Hodnocení recenzentů: 82 % (z 52 recenzí Metacritic)
+Hodnocení v PlayStation Store: 90 %
+Hodnocení na Steamu: Velmi kladné (85 % od 37 919 hráčů)
+Oficiální web hry
+Hra v obchodě PlayStation (899 Kč)
+Platformy: PlayStation 5, PC, Xbox Series X
+Žánr: střílečka
+Herní režimy: více hráčů, battle royale
+Herní engine: Tiger
+Vydavatel: Bungie
+Vývojář: Bungie
+Datum vydání: 5. 3. 2026
+Digitální distribuce: PlayStation , Steam , Xbox
+Pokračování 9 / 30 22. Avatar: Frontiers of Pandora
+Na planetě Pandora rozjelo lidstvo nejen misi z filmu s Jackem Sullym v hlavní roli. Na jedné ze základen trénovali několik mladých Na'vi, které unesli od jejich kmene. Cílem bylo mít je jako bojovníky ve svých jedn...
+(Pokracovani na webu)|E|
 |T|Pražská Kaya se zapojila do investice, která má pomoct rozšířit AI pracovníky po firmách|D|20.5. 15:32|P|Investiční fond Kaya VC se zapojil do investičního kola směřujícího do startupu Viktor v celkové výši 75 milionů dolarů (přes 1,5 miliardy Kč). Viktor...|X|Investiční fond Kaya VC se zapojil do investičního kola směřujícího do startupu Viktor v celkové výši 75 milionů dolarů (přes 1,5 miliardy Kč). Viktor vyvíjí takzvaného AI kolegu, který funguje uvnitř komunikačních platforem Slack a Microsoft Teams. Používají ho tisíce firem.
 Startup založili dva bývalí inženýři z Meta Platforms, Fryd Wiatrowski a Peter Albert. Před aktuální verzí produktu vyvinuli dvě předchozí iterace. „Deset týdnů po uvedení používá Viktora přes 2 000 organizací a dosáhl ročního revenue run rate 15 milionů dolarů. Většina zákazníků Viktora přirovnává k zaměstnanci, a to díky magickému produktovému zážitku postavenému na principech kontextu a spolupráce,“ uvádí Accel ve svém vyjádření k investici.
 Viktor je napojený na více než 3 000 firemních nástrojů včetně Google Drive, Airtable, Notion či Meta Ads. Uživatelé s ním komunikují stejně jako s kolegou: přidají ho do kanálu, napíší zprávu, případně se zapojí do vlákna, které začal někdo jiný. Podle firmy průměrný tým připojí Viktora ke 30 a více nástrojům a datovým zdrojům, tedy přibližně k tomu, k čemu by měl přístup nový zaměstnanec.

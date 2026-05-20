@@ -1,4 +1,197 @@
-|T|Pražská Kaya se zapojila do investice, která má pomoct rozšířit AI pracovníky po firmách|D|20.5. 15:32|P|Investiční fond Kaya VC se zapojil do investičního kola směřujícího do startupu Viktor v celkové výši 75 milionů dolarů (přes 1,5 miliardy Kč). Viktor...|X|Investiční fond Kaya VC se zapojil do investičního kola směřujícího do startupu Viktor v celkové výši 75 milionů dolarů (přes 1,5 miliardy Kč). Viktor vyvíjí takzvaného AI kolegu, který funguje uvnitř komunikačních platforem Slack a Microsoft Teams. Používají ho tisíce firem.
+|T|Google si troufl na to, co by Apple nikdy neudělal. Nové funkce Gemini AI prezentoval na iPhonu|D|20.5. 17:45|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Insolvenční správce navrhuje ukončení provozu TV Barrandov, podnik je podle něj neudržitelný|D|20.5. 17:29|P|Zadlužená TV Barrandov se ocitla na hraně definitivního zániku. Insolvenční správce David Jánošík podal 19. května 2026 Městskému soudu v Praze návrh ...|X|Zadlužená TV Barrandov se ocitla na hraně definitivního zániku. Insolvenční správce David Jánošík podal 19. května 2026 Městskému soudu v Praze návrh na ukončení provozu akciové společnosti Barrandov Televizní Studio.
+Další fungování podniku považuje za ekonomicky i fakticky neudržitelné. Podle správce generuje společnost měsíční ztrátu v řádu několika milionů korun a její finanční situace se od února 2026 v důsledku drastického propadu příjmů z reklamy setrvale zhoršuje. S navrženým ukončením provozu už vyjádřil souhlas věřitelský výbor.
+Analýza hospodaření ukazuje, že zatímco průměrné měsíční tržby v roce 2025 přesahovaly 13 milionů korun, v prvním čtvrtletí roku 2026 zaznamenaly strmý pád. Náklady dlužníka, očištěné o nefinanční položky, přitom v letošním roce dosahují v průměru 13,5 milionu korun měsíčně a kvůli inflaci a rostoucím cenám energií mají spíše rostoucí tendenci, bez reálného prostoru pro jejich zásadní snížení.
+Kromě finanční tísně čelí televize také problémům s prostory pro podnikání. Nedávno podle insolvenčního správce obdržela výpověď z pronajatých prostor, přičemž výpovědní doba vyprší v červenci 2026.
+Správce David Jánošík ve svém podání soudu zdůraznil, že po prověření aktuální situace dlužníka dospěl k závěru, že neexistují podmínky pro další pokračování v činnosti. „Prověřil jsem aktuální situaci obchodního závodu dlužníka a mám za to, že jeho další provozování je ekonomicky ani fakticky neudržitelné,“ uvedl v žádosti.
+Tržby společnosti Barrandov Televizní Studio
+Situaci nyní komplikuje také neúplné složení věřitelského výboru. K 9. dubnu 2026 zanikla společnost Czech Digital Group, a.s., která se sloučila s nástupnickou společností České Radiokomunikace a.s., čímž zaniklo i její členství ve výboru. Společnosti Czech Digital Group stanice dlužila za šíření signálu.
+Věřitelský výbor je momentálně pouze dvoučlenný a tvoří jej společnosti Gomanold, a.s., v roli předsedy, a RN Pohledávková development, s.r.o.. Vzhledem k tomu, že zákon vyžaduje vyšší počet členů, bude muset insolvenční správce požádat soud o svolání schůze věřitelů za účelem doplňující volby. České Radiokomunikace už vyjádřily zájem funkci člena věřitelského výboru převzít.
+Správce naléhá na soud, aby o ukončení provozu rozhodl v co nejkratší lhůtě, jelikož některé kroky vedoucí k uzavření podniku v zájmu věřitelů podniká už nyní.
+Majitel televize Jan Čermák řekl agentuře ČTK, že vysílání by mělo ještě několik měsíců pokračovat prostřednictvím jiné společnosti z jeho holdingu. „Dcera S-24 holding si část služeb od BTS pronajme tak, abychom byli schopni udržet vysílání. Možná prodejní hodnota, a tedy výtěžek pro věřitele, je u běžící televize o dost vyšší. Bavíme se o provozu v řádu maximálně měsíců, během nichž se musí najít kupec,“ řekl ČTK Čermák.
+Společnost Barrandov Televizní Studio je od 23. dubna v konkurzu, protože se původní reorganizační plán nepodařilo uskutečnit. Tehdy Čermákův holding oznámil, že se vysílání celé skupiny omezí pouze na hlavní kanál a vedlejší programy Barrandov Kino a Barrandov Krimi zaniknou. „Projektu Restart TV Barrandov se nevzdáváme. Přestože původní provozní struktura končí, podařilo se nám zajistit technické i organizační řešení, které umožní zachovat vysílání na hlavním celoplošném kanálu,“ uvedl v dubnu Jan Čermák.
+Hlavní vysílací licence je držena společností S-24 akvizice II, s.r.o., která je součástí Čermákovy skupiny. Na zadluženou firmu Barrandov Televizní Studio jsou napsané už jenom licence stanic Barrandov Kino a Barrandov Krimi.|E||T|10 skrytých nastavení Google Chromu, kterými prohlížeč vytuníte|D|20.5. 16:45|P|Ukážeme vám, jak si prohlížeč podmanit. • Chrome nabízí experimentální funkce. • Ty jsou trochu schované, ale můžete je využívat.|X|Ukázat všechny listy najednou
+Běžná nabídka funkcí v Chromu je nemalá a prohlížeč lze v mnoha ohledech přizpůsobit vlastním potřebám. Souběžně do něj Google pravidelně přidává nové funkce, které na odiv nevystavuje . Jsou totiž experimentální, z čehož vyplývá několik konsekvencí. Především nemusí pracovat spolehlivě.
+Nemusí ani nabízet odladěný uživatelský zážitek. Experimenty jsou někdy náčrty věcí budoucích. Ne vždycky se nápad uchytí tak, aby výrobce přesvědčil, že by bylo dobré funkci plošně nasadit. K nasazení někdy po měsících vývoje dojde, jindy se funkce ztratí. Některé funkce roky setrvávají v experimentálním stádiu.
+V tomto článku si přiblížíme skryté funkce, které považujeme za zajímavé. Najdete je na stránce chrome://flags . Je to adresa jako jakákoli jiná, kterou zadáte do adresního řádku a potvrdíte. Obsah na této stránce na rozdíl od zbytku prohlížeče není přeložený.
+Protože funkce nemusí být do detailu vyladěné, používejte je v přiměřené míře a za přispění zdravého rozumu. Použití je na vlastní nebezpečí. V praxi si nicméně nevybavujeme, že by experimentální funkce způsobily katastrofální poškození uživatelských dat. Zaznamenáte-li problémy s fungováním Chromu, funkci zase jednoduše vypnete.
+Stránka chrome://flags obsahuje skryté experimentální funkce
+Google sám testovací funkce vypíná a zapíná podle toho, co a jak zrovna potřebuje testovat. Můžete do toho ovšem manuálně zasáhnout. Zajímat vás budou dvě základní hodnoty, které najdete v rozbalovací nabídce u každé skryté funkce: zapnuto (enabled ) a vypnuto (disabled ). Ty jednoznačně aktivují či deaktivují funkci dle vašeho přání.
+Někdy je možností nastavení více. V tom případě to uvádíme u konkrétních tipů. Po aktivaci či deaktivaci vás prohlížeč vyzve k restartu, do té doby se změna konfigurace neprojeví. Klepněte pak vždy na modré tlačítko Restartovat .
+Pokračování 2 / 11 Vertikální karty
+Z jiných prohlížečů můžete znát vertikální navigaci. Standardně se karty zobrazují v záhlaví okna. Vertikální karty se ale štosují pod sebou – většinou po levé straně okna. Tím ušetří místo na výšku, které je na širokoúhlých obrazovkách cenné. Využije ho pak webová stránka.
+Chrome má oproti konkurenci roky zpoždění, ale vertikální karty konečně zavádí. Aktivujte funkci Vertical Tabs a v záhlaví okna pak v kontextové nabídce vyberte Zobrazit karty svisle . Google funkci postupně zavede všem , do té doby však experimentální předvolba slouží jako spolehlivý způsob, jak vertikální karty začít hned používat.
+Za zmínku stojí i sesterská funkce Vertical Tabs Expand On Hover . Standardně se postranní panel zobrazuje buď v plné šířce, nebo ho ručně sbalíte. Doplňková funkce umožní dočasné rozbalení panelu, když nad něj přesunete ukazatel myši. Dle našich zkušeností ale stav Enabled nemá kýžený efekt, tak raději zkuste Enabled with 350ms hover delay .
+Vertikální karty ušetří cenné místo na výškuPokračování 3 / 11 Čtečka v celém okně
+Google svou integrovanou čtečku článků hodně zlepšil. Pořád se ale otevírá v postranním panelu, což není zrovna pohodlné. Testuje ale režim čtení v celém okně, kdy se přeformátovaný článek otevře v aktuální kartě. Čtečka odebere balast a soustředí se na text. Podporuje také předčítání syntetickým hlasem.
+Když aktivujete předvolbu Reading Mode Experimental Immersive Mode , bude se čtečka otevírat v kartě. V nastavení se ale kdykoli přepnete zpátky do režimu postranního panelu. Čtečka dodnes nepodporuje obrázky. Někdejší experimentální funkce, která je v přeformátovaných článcích nechávala, dnes už korektně nefunguje.
+Čtečka nahrazuje původní článek, takže můžete číst pohodlně v celém okněPokračování 4 / 11 Skupiny v nové kartě
+Nová karta může být s pěknou tapetou esteticky příjemná, ale její prostor působí nevyužitě. Prohlížeče jako Vivaldi ukazují, že se sem vejdou všemožné widgety. Od Chromu se maximální přizpůsobení čekat nedá, cílí na střední proud. Google aspoň umožňuje přidat do nové karty widget se skupinami karet.
+Zobrazuje se hned pod zástupci oblíbených webů a umožňuje rychle pokračovat v relaci. V experimentálním nastavení aktivujte NTP Tab Groups Module .
+Modul se skupinami stránek v nové kartěPokračování 5 / 11 Plynulejší posouvání
+Posouvání po stránce dolů či nahoru může být trhané. Právě to řeší funkce Smooth Scrolling , což v překladu doslova znamená plynulé posouvání. Když budete otáčet kolečkem myši nebo stisknete šipku nahoru/dolů, bude posouvání animované tak, že působí plynuleji oproti standardnímu stavu.
+Posouvání je plynulejší, což vám statický snímek pochopitelně neukážePokračování 6 / 11 Rychlejší stahování
+Stahování v jednom vlákně nemusí vytěžit potenciál vaší přípojky. Když aktivujete funkci Parallel downloading , bude Chrome každý soubor stahovat nikoli v jednom kuse, ale souběžně po třech částech. Na stejném principu fungovaly a v některých případech dodnes fungují tzv. akcelerátory stahování.
+U malých souborů to nejspíš nepoznáte, rozdělení na tři úlohy však může být znatelné u velkých souborů. Nepočítejte s tím, že jde o zázračný všelék. Rychlost stahování ovlivňuje mnoho faktorů a tohle je jen určitá možnost, jak si polepšit.
+Stažení větších souborů může být rychlejšíPokračování 7 / 11 Vypněte zvuk klepnutím
+Chrome má s vypínáním zvuku na webech komplikovaný vztah, pokud jde o uživatelskou sféru. Aktuálně vám do rukou nástroj na vypnutí zvuku konkrétní otevřené stránky víceméně dává, a sice z kontextové nabídky ouška karty. Tenhle příkaz ale vypne zvuk pro celou doménu.
+Pokud ztišení někdy potřebujete, usnadněte si život. Funkce Tab audio muting UI control vám umožní vypnout zvuk pouze z konkrétní otevřené stránky, a to klepnutím na symbol reproduktoru v oušku karty. Umožňují to i některé další prohlížeče jako Firefox a Edge. Chrome už dříve ztišit kartu uměl, ale pak funkci zahodil.
+Klepnutím na reproduktor v oušku vypnete zvuk na stráncePokračování 8 / 11 Tmavý režim na každé stránce
+Tmavé režimy zobrazení jsou roky téměř standardem. Implementovaly je všechny velké operační systémy včetně Windows a nabízí je mnoho webových stránek. Ne ale každá. Zde na scénu přichází Auto Dark Mode for Web Contents . Když experimentální funkci zapnete, prohlížeč každý web převede do tmavého zobrazení.
+Počítejte s tím, že ne každý web bude vypadat dokonale, byť většinou je výsledek použitelný. Největší úskalí spočívá v tom, že režim nelze snadno vypnout. Musíte zase vypnout celou funkci na stránce chrome://flags a prohlížeč restartovat. Zkoušet můžete různé varianty inverze, byť pokud nestojíte o časově náročnější experimentování, vystačíte si se základním nastavením a hodnotou Enabled .
+Vynucený tmavý režim neprodukuje bezchybné výsledky, ale jsou většinou použitelnéPokračování 9 / 11 Link Preview
+Malá náhledová okna vám ukáží, kam míří odkaz na stránce, kde se zrovna nacházíte. Funkce Link Preview v praxi většinou vyžaduje klepnutí na odkaz při souběžném podržení nějaké klávesy. Variant je k dispozici víc:
+Enabled . Funguje stejně jako předvolba níže, musíte tedy podržet Alt a klepnout na odkaz.
+Enabled Alt + Click . Náhled vyvoláte klepnutím při podržení Altu.
+Enabled Alt + Hover . Náhled vyvoláte přesunutím ukazatele myši nad odkaz a podržením Altu.
+Enabled Long Press . Náhled vyvoláte delším stisknutím odkazu na stránce.
+V malém náhledovém okně bez ovládacích prvků se stránka načtePokračování 10 / 11 Fešnější kabát ve Windows 11
+Ačkoli jsou Windows 11 na trhu přes čtyři roky, Chrome některé vizuální úpravy, které odpovídají designovému stylu operačního systému, stále nechává na volitelné úrovni.
+Ve výchozím stavu prohlížeč pastelovými barvami zdobí záhlaví. Jedenáctky ovšem nabízejí a na řadě míst aplikují mírně průsvitný materiál Mica. Tohle lehce průsvitné záhlaví můžete mít také v Chromu, když aktivujete funkci Windows 11 Mica titlebar . Vrstva pokryje prostor za kartami.
+Teď je záhlaví mírně průsvitnéPokračování 11 / 11 Dotekové prostředí
+Chrome ve standardní konfiguraci není přizpůsobený dotekovým obrazovkám, dotekový režim nicméně ve výbavě má. A můžete ho vynutit, pokud potřebujete. Touch UI Layout nastavte na Enabled . Prvky uživatelského prostředí se trvale zvětší tak, aby byly pohodlně ovladatelné prstem.
+Zvětšené prvky se lépe ovládají prsty
+Tento článek je součástí balíčku PREMIUM+
+Odemkněte si exkluzivní obsah a videa bez reklam na devíti webech.
+Chci Premium a Živě.cz bez reklam
+Od 58 Kč měsíčně|E||T|A new experiment brings better group meetings to Google Beam|D|20.5. 16:45|P|A small group meeting featuring two in-room participants and three participants on-screen.|X|A new experiment brings better group meetings to Google Beam
+While video conferencing tools keep us connected, users can still struggle to feel included in the conversation. Trying to read subtle emotions in a sea of tiny boxes may leave remote participants feeling like observers rather than engaged participants. Google Beam, our true-to-life video communication platform, helps you solve this problem by turning your meetings into a more active exchange.
+Today, we’re sharing a new experiment that brings better group meetings to Google Beam across more devices. Using HP Dimension’s immersive display, Google Beam renders participants joining from non-Beam devices in their true size, positioned as if they were sitting around a table with you. Paired with spatial audio that anchors each voice directly to the person speaking, colleagues look, sound, and feel more like they are in the same room.
+This optimization happens automatically, whether you join a meeting from home or the office. Our research suggests approaches like these help close the hybrid 'inclusion gap' by facilitating a 50% stronger sense of social connection and a 21% increase in reported ability to contribute to conversations.
+We’re also continuing to work with Google Workspace and Zoom to help elevate the meetings you have today on Google Beam.
+Stay tuned for more at beam.google.
+Elevating standard group meetings on Google Beam via Zoom.
+An experimental look at remote participants in true-to-life proportions on Google Beam.
+An experimental view of a hybrid meeting on Google Beam.|E||T|Co se nejvíc hraje na PlayStationu. Tady jsou nejoblíbenější hry pro PS5 v roce 2026|D|20.5. 15:45|P|Co se letos nejvíc hraje na PlayStationu 5? Vyšli jsme z oficiálních žebříčků, které Sony vydává, a našli nejoblíbenější hry pro PS5.|X|Ukázat všechny listy najednou
+30. Battlefield 6
+Battlefield je masivní válečný zážitek, kde pěchotní přestřelky střídají zběsilé letecké souboje a dunění tanků. Hra nabízí rozmanité multiplayerové režimy od epického Conquestu přes Breakthrough a Rush až po rychlé bitvy v King of the Hill, Domination a Payload. Nově vylepšený Battlefield Portal umožňuje vytvářet vlastní mapy, pravidla i herní módy s pomocí skriptování a úprav prostředí, a sdílet je s komunitou.
+V příběhové kampani se elitní jednotka Marine Raiders vydává od písečných dun Sahary přes pláže Gibraltaru až po obranu New Yorku, aby odvrátila kolaps civilizace. Bojiště se rozprostírají po celém světě a v každé bitvě platí, že nejnebezpečnější zbraní není tank ani stíhačka, ale sehraný tým.
+Hodnocení recenzentů: 83 % (z 71 recenzí Metacritic)
+Hodnocení v PlayStation Store: 82 %
+Hodnocení na Steamu: Smíšené (64 % od 273 873 hráčů)
+Oficiální web hry
+Hra v obchodě PlayStation (1899 Kč)
+Platformy: PlayStation 5, PC, Xbox Series X
+Žánr: střílečka
+Herní režimy: jeden hráč, více hráčů
+Herní engine: Frostbite
+Vydavatel: Electronic Arts
+Vývojář: Battlefield Studios
+Datum vydání: 10. 10. 2025
+Digitální distribuce: PlayStation , Steam , Epic , Xbox
+Pokračování 2 / 30 29. Resident Evil 2
+Kompletní remake druhého dílu série Resident Evil předvedl, jak se mají dělat předělávky starších her. Společně s Leonem S. Kennedym a Claire Redfield se opět vydáváme do Raccoon City, jehož obyvatelé se začali transformovat do zombíků následky virové nákazy. Jejich hlavním úkolem je přežití a eventuálně odhalení dalších informací ohledně toho, co se ve městě vlastně přihodilo.
+Oproti originálu remake už nevyužívá statických kamer, ale zvolil tradiční pohled z třetí osoby. I přes změny Resident Evil 2 působí tím správným dojmem, kdy budete poznávat okolní prostředí, zatímco se po vás sápou zombíci. Munice a další výbavy není mnoho, takže si ji nemůžete dovolit plýtvat na každého, koho potkáte. Někdy ale jiná možnost není.
+Hodnocení recenzentů: 91 % (z 85 recenzí Metacritic)
+Hodnocení v PlayStation Store: 95 %
+Hodnocení na Steamu: Extrémně kladné (97 % od 146 489 hráčů)
+Oficiální web hry
+Hra v obchodě PlayStation (239 Kč, součást PS Plus Premium)
+Platformy: PlayStation 4, PlayStation 5, PC, Xbox One, Xbox Series X, iOS
+Žánry: adventura, střílečka
+Herní režim: jeden hráč
+Herní engine: RE Engine
+Vydavatel: Capcom
+Vývojář: Capcom R&D Division 1
+Datum vydání: 25. 1. 2019
+Digitální distribuce: PlayStation , Steam , Xbox , Apple App Store
+Pokračování 3 / 30 28. Clair Obscur: Expedition 33
+Jednou za rok se Malířka probudí a na svůj monolit namaluje číslo. Prokleté číslo. Každý v tomto věku se rozplyne v dým a zmizí ze světa. Rok po roce se čísla snižují a lidstvo mizí. Zítra přijde na řadu číslo 33. A zítra vyráží poslední výprava – zničit Malířku, aby už nikdy nemohla malovat smrt.
+RPG Clair Obscur: Expedition 33 originálně spojuje tahové souboje s real-time akcí. Hráči se ponoří do světa inspirovaného krásou a dekadencí Belle Époque. Gustave, Maelle a další členové expedice se utkávají s neobvyklými nepřáteli, objevují ztracené expedice a hledají spojence mezi bájnými bytostmi. Svět je plný tajemství, nádherných krajin a příběhů, které se noří do hlubin zoufalství i odvahy.
+Hodnocení recenzentů: 92 % (z 84 recenzí Metacritic)
+Hodnocení v PlayStation Store: 97 %
+Hodnocení na Steamu: Extrémně kladné (95 % od 174 058 hráčů)
+Oficiální web hry
+Hra v obchodě PlayStation (1189 Kč)
+Platformy: PlayStation 5, PC, Xbox Series X
+Žánry: adventura, nezávislá hra, RPG
+Herní režim: jeden hráč
+Herní engine: Unreal Engine 5
+Vývojář: Sandfall Interactive
+Datum vydání: 24. 4. 2025
+Digitální distribuce: PlayStation , Steam , Epic , Xbox
+Pokračování 4 / 30 27. Poppy Playtime: Chapter 2
+V noci se občas i úplně obyčejná místa promění v prostředí, kde byste rozhodně nechtěli přečkat ani chvíli. Poppy Playtime nám ukáže, jak vypadá noční opuštěná továrna na hračky. Ale zdá se, že na prohlídce nejsme sami. Po prvních setkáních je jasné, že zdejší výrobky nejsou jen obyčejné hračky a měli byste si na ně dávat velmi dobrý pozor.
+Druhá kapitola logické hororovky je pořádný macek, jehož dominantou je nádraží, jedna z nejoblíbenějších atrakcí. Namísto dětských radovánek nás ale čekají nepříjemné chvilky plné napětí, s jejichž řešením nám pomůže také zelená ruka, která umí přenášet energii.
+Hodnocení v PlayStation Store: 85 %
+Hodnocení na Steamu: Spíše kladné (73 % od 13 397 hráčů)
+Oficiální web hry
+Hra v obchodě PlayStation (213 Kč)
+Platforma: PC, PlayStation 4, PlayStation 5, Xbox One, Xbox Series, Nintendo Switch
+Žánry: adventura, nezávislá hra, puzzle
+Herní režim: jeden hráč
+Herní engine: Unreal Engine 5
+Vývojář: Mob Entertainment
+Datum vydání: 5. 5. 2022
+Digitální distribuce: PlayStation , Steam , Epic , Xbox , Nintendo
+Pokračování 5 / 30 26. Nioh 3
+Třetí díl temného akčního RPG vede hráče mezi válčící státy, kde krajině vládnou bandité a mezi troskami číhají démoničtí jókai. Otevřené prostředí láká k volnému průzkumu, zároveň ale udržuje neustálé napětí. Hráč prochází zlověstnými vesnicemi, kde se ve stínech skrývají podivné bytosti, přijímá výzvy v ještě nebezpečnější dimenzi Crucible a snaží se přežít v prokletém království, které trestá každé zaváhání.
+Klíčem k úspěchu je pružné přepínání mezi dvěma bojovými styly. Samurajský styl staví na přímých střetech tváří v tvář, styl Ninja naopak sází na rychlost, úhyby a speciální techniky. Hráč může styly kombinovat podle situace, nebo zůstat věrný jednomu z nich a přizpůsobit mu celou strategii.
+Hodnocení recenzentů: 86 % (z 102 recenzí Metacritic)
+Hodnocení v PlayStation Store: 89 %
+Hodnocení na Steamu: Spíše kladné (79 % od 10 760 hráčů)
+Oficiální web hry
+Hra v obchodě PlayStation (1899 Kč)
+Platformy: PlayStation 5, PC
+Žánry: adventura, mlátička, RPG
+Herní režimy: jeden hráč, více hráčů, kooperace
+Herní engine: Katana Engine
+Vydavatel: Koei Tecmo Games
+Vývojář: Team Ninja
+Datum vydání: 6. 2. 2026
+Digitální distribuce: PlayStation , Steam
+Pokračování 6 / 30 25. MOUSE: P.I. For Hire
+Když v myší metropoli zemře asistentka kouzelníka, rozjede se série nečekaných událostí, v jejichž středu stojí soukromé očko Jack Pepper. Do toho se ztratí sám kouzelník, z ulic mizí rejsci a každou chvíli se mu pletou do cesty podivíni z kultu. Plejáda nejen obyčejných zbraní nám pomůže s tím, abychom se v této animované střílečce dostali až k rozuzlení pravdy.
+Mouse: P.I. for Hire je především o akci, kterou zpracovává s animací seriálů pro děti z první poloviny minulého století. Tato kombinace funguje velmi dobře a ničemu neškodí ani volba zpracovat celou hru pouze v odstínech černé a bílé. Retro noirovou atmosféru skvěle doplňuje jazzový soundtrack, který bychom k poslechu doporučili i samostatně.
+Hodnocení recenzentů: 80 % (z 71 recenzí Metacritic)
+Hodnocení v PlayStation Store: 97 %
+Hodnocení na Steamu: Velmi kladné (94 % od 10 536 hráčů)
+Oficiální web hry
+Hra v obchodě PlayStation (699 Kč)
+Platformy: PlayStation 5, PlayStation 4, PC, Xbox Series X, Xbox One, Nintendo Switch 2
+Žánry: adventura, nezávislá hra, střílečka
+Herní režim: jeden hráč
+Herní engine: Unity
+Vydavatel: PlaySide Studios
+Vývojář: Fumi Games
+Datum vydání: 16. 4. 2026
+Digitální distribuce: PlayStation , Steam , Xbox , Nintendo
+Pokračování 7 / 30 24. God of War: Sons of Sparta
+Během prostoje při čekání na další pokračování epické ságy boha války jsme dostali odbočku v podobě dvojrozměrné akční plošinovky, ve které se vracíme do Kratova dětství. Tehdy ještě nebyl ten neochvějný zabiják, snažil se být správným Sparťanem a okolí města bránil od mytických potvor po boku svého bratra Deima. Při hledání jednoho z dalších cvičenců se ale jeho svět otřese v základech.
+Sons of Sparta vás protáhnou různorodým prostředím od místních lesů, přes stoky až do vysokých hor. Během toho pobijete řadu potvor z řecké mytologie včetně několika bossů. Proti samotným bohům se ale zatím Kratos nepostaví. Jelikož jde o metroidvanii, svět se nám otevírá spolu se získáváním nových schopností. Stejně jako boj je tedy i průzkum hlavní herní mechanikou.
+Hodnocení recenzentů: 64 % (z 80 recenzí Metacritic)
+Hodnocení v PlayStation Store: 83 %
+Hodnocení hráčů: 61 % (z 825 hodnocení)
+Oficiální web hry
+Hra v obchodě PlayStation (709 Kč)
+Platforma: PlayStation 5
+Žánry: adventura, plošinovka
+Herní režimy: jeden hráč, kooperace
+Vydavatel: Sony Interactive Entertainment
+Vývojář: Mega Cat Studios, SCE Santa Monica
+Datum vydání: 12. 2. 2026
+Digitální distribuce: PlayStation
+Pokračování 8 / 30 23. Marathon
+Nad ztracenou kolonií na Tau Ceti IV visí obří loď. Třicet tisíc lidí zmizelo beze stopy. Do hry vstupují Runneři, kybernetičtí žoldáci, kteří vyrážejí do nehostinného prostředí pro artefakty, výbavu a slávu. Každý výsadek je risk. Sbíráte kořist, plníte kontrakty a snažíte se uniknout dřív, než vás někdo připraví o všechno.
+Marathon stojí na výborném gunplayi, silném zvuku a propracovaných mapách s hádankami a skrytými odměnami. Šest typů Runnerů nabízí různé styly hry a dost prostoru pro úpravy výbavy. Problém je balanc. Hra vyžaduje hodně času, zahlcuje vás AI nepřáteli a úkoly rychle zevšední. Sólo hraní je náročné, ve třech funguje výrazně lépe.
+Marathon není revoluce, ale solidní extrakční střílečka s drsnou sci-fi atmosférou, která dokáže na dlouhé hodiny zabavit.
+Hodnocení recenzentů: 82 % (z 52 recenzí Metacritic)
+Hodnocení v PlayStation Store: 90 %
+Hodnocení na Steamu: Velmi kladné (85 % od 37 919 hráčů)
+Oficiální web hry
+Hra v obchodě PlayStation (899 Kč)
+Platformy: PlayStation 5, PC, Xbox Series X
+Žánr: střílečka
+Herní režimy: více hráčů, battle royale
+Herní engine: Tiger
+Vydavatel: Bungie
+Vývojář: Bungie
+Datum vydání: 5. 3. 2026
+Digitální distribuce: PlayStation , Steam , Xbox
+Pokračování 9 / 30 22. Avatar: Frontiers of Pandora
+Na planetě Pandora rozjelo lidstvo nejen misi z filmu s Jackem Sullym v hlavní roli. Na jedné ze základen trénovali několik mladých Na'vi, které unesli od jejich kmene. Cílem bylo mít je jako bojovníky ve svých jedn...
+(Pokracovani na webu)|E||T|Pražská Kaya se zapojila do investice, která má pomoct rozšířit AI pracovníky po firmách|D|20.5. 15:32|P|Investiční fond Kaya VC se zapojil do investičního kola směřujícího do startupu Viktor v celkové výši 75 milionů dolarů (přes 1,5 miliardy Kč). Viktor...|X|Investiční fond Kaya VC se zapojil do investičního kola směřujícího do startupu Viktor v celkové výši 75 milionů dolarů (přes 1,5 miliardy Kč). Viktor vyvíjí takzvaného AI kolegu, který funguje uvnitř komunikačních platforem Slack a Microsoft Teams. Používají ho tisíce firem.
 Startup založili dva bývalí inženýři z Meta Platforms, Fryd Wiatrowski a Peter Albert. Před aktuální verzí produktu vyvinuli dvě předchozí iterace. „Deset týdnů po uvedení používá Viktora přes 2 000 organizací a dosáhl ročního revenue run rate 15 milionů dolarů. Většina zákazníků Viktora přirovnává k zaměstnanci, a to díky magickému produktovému zážitku postavenému na principech kontextu a spolupráce,“ uvádí Accel ve svém vyjádření k investici.
 Viktor je napojený na více než 3 000 firemních nástrojů včetně Google Drive, Airtable, Notion či Meta Ads. Uživatelé s ním komunikují stejně jako s kolegou: přidají ho do kanálu, napíší zprávu, případně se zapojí do vlákna, které začal někdo jiný. Podle firmy průměrný tým připojí Viktora ke 30 a více nástrojům a datovým zdrojům, tedy přibližně k tomu, k čemu by měl přístup nový zaměstnanec.
 Investiční kolo vede americký fond Accel, mezi dalšími investory jsou například spoluzakladatelé Slacku Stewart Butterfield a Cal Henderson, zakladatel ElevenLabs Mati Staniszewski nebo CEO firmy Vercel Guillermo Rauch. Pro Kaya VC jde o další investici do AI platformy, nedávno fond poslal peníze AI agentům podporujícím vědu. Fond v minulosti investoval v raných fázích do firem Productboard nebo Rohlik.
@@ -594,29 +787,12 @@ Zatím nemáme informace o tom, kdy by tento model mohl vyjít – například o
 Zdroje: chi11eddog, VideoCardz
 Tento text obsahuje affiliate odkazy. Pokud se přes tyto odkazy na vybraných službách zaregistrujete, případně něco nakoupíte, získá z toho redakce malou provizi sloužící pro zajištění našeho fungování. Detaily o affiliate programech najdete zde.|E||T|Mladí v Česku už nejčastěji vyhledávají informace v chatbotech, nejpoužívanější je ChatGPT|D|19.5. 15:49|P|Umělou inteligenci Češi ve velkém integrovali do svého života a jednou z nejviditelnějších změn je způsob, jakým pronikla do vyhledávání informací. Me...|X|Umělou inteligenci Češi ve velkém integrovali do svého života a jednou z nejviditelnějších změn je způsob, jakým pronikla do vyhledávání informací. Mezi lidmi ve věku 15–24 let jsou AI chatboti nejčastějším výchozím bodem pro vyhledávání informací. Na druhém místě jsou sociální sítě a až třetí volbou jsou klasické vyhledávače, uvádí report Deloitte.
 Celkově napříč věkovými skupinami zůstávají hlavním nástrojem získávání informací tradiční vyhledávače (55 % lidí), chatbota ale využívá 30 % lidí, sociální sítě pak 15 %. Nejmladší uživatelé (15–17 let) pak podle výsledků průzkumu více důvěřují výstupům AI a v porovnání se starší generací si je méně ověřují.
-Průzkum Deloitte uvádí, že v Česku alespoň příležitostně využívá umělou inteligenci 78 % lidí, což je trojnásobek proti roku 2023. Nejpoužívanějším AI nástrojem je dlouhodobě ChatGPT. Mezi oblíbené pomocníky pak patří Copilot, Google Gemini, Claude, Perplexity, AI funkce v Canvě či AI asistenti integrovaní v telefonech a na sociálních sítích.|E||T|Letitý kolos za pomoci Čechů ukazuje, že i v Evropě lze vyvíjet AI na světové úrovni|D|19.5. 15:45|P|Šéf gigantu SAP Christian Klein varuje před zaostáváním Evropy a sází na novou generaci byznysových modelů pro práci s daty • . • Vývojové centrum SAP...|X|Výkonný ředitel největší evropské softwarové firmy SAP Christian Klein před pár dny společně s dalšími šesti šéfy evropských technologických obrů publikoval dopis, v němž varoval před zaostáváním starého kontinentu. Vyzdvižena v něm byla především role umělé inteligence jako motoru budoucnosti. SAP, jehož tržní hodnota na newyorské burze přesahuje 200 miliard dolarů, krátce poté na konferenci v Orlandu představil řadu AI novinek made in Europe a ukázal, že i „u nás“ se dá inovovat. Důležitou roli v tomto snažení hraje i Česko, kde německý kolos provozuje početné vývojové centrum.
-SAP v České republice zaměstnává kolem 3 900 lidí. Více než tisícovka z nich pracuje ve výzkumu a vývoji. Praha je s 500 odborníky důležitým centrem pro vývoj softwaru Concur a v Brně sídlí sekce SAP Labs čítající více než 700 lidí. Právě ta se v poslední době zapojuje do vývoje prvků umělé inteligence včetně nově oznámeného AI modelu a agentů.
-Pokračování článku patří k prémiovému obsahu pro předplatitele
-Chci Premium a Živě.cz bez reklam
-Od 58 Kč měsíčně|E||T|Alza má nové držáky na monitory. Ten nejlepší unese dvě těžké obrazovky a funguje i jako dokovací stanice|D|19.5. 14:45|P|Na trhu je pět nových držáků AlzaErgo v cenách od 2490 do 4890 Kč. • Nejvyšší model má plynové pružiny, vysokou nosnost a unese dva monitory. • Taháke...|X|V nabídce Alzy se objevilo pět nových držáků na monitor v cenách od 2490 Kč. Kromě jedné výjimky jsou všechny určeny pro dvě obrazovky. Ten nejlepší se jmenuje AlzaErgo Arm DC50B Heavy Duty DockStation a stojí 4890 Kč.
+Průzkum Deloitte uvádí, že v Česku alespoň příležitostně využívá umělou inteligenci 78 % lidí, což je trojnásobek proti roku 2023. Nejpoužívanějším AI nástrojem je dlouhodobě ChatGPT. Mezi oblíbené pomocníky pak patří Copilot, Google Gemini, Claude, Perplexity, AI funkce v Canvě či AI asistenti integrovaní v telefonech a na sociálních sítích.|E||T|Alza má nové držáky na monitory. Ten nejlepší unese dvě těžké obrazovky a funguje i jako dokovací stanice|D|19.5. 14:45|P|Na trhu je pět nových držáků AlzaErgo v cenách od 2490 do 4890 Kč. • Nejvyšší model má plynové pružiny, vysokou nosnost a unese dva monitory. • Taháke...|X|V nabídce Alzy se objevilo pět nových držáků na monitor v cenách od 2490 Kč. Kromě jedné výjimky jsou všechny určeny pro dvě obrazovky. Ten nejlepší se jmenuje AlzaErgo Arm DC50B Heavy Duty DockStation a stojí 4890 Kč.
 Označení Heavy Duty odkazuje na zvýšenou nosnost, která činí 15 kg na jedno rameno. DockStation zase značí dokovací stanici v základně ležící na stole. Obsahuje jeden výstupní USB-C s podporou 100W napájení, V balení je kabel, nikoliv však adaptér. Kromě toho má dva vstupy HDMI 2.0, tři USB-A 3.0, RJ-45 pro gigabitový Ethernet a pochopitelně také výstupní USB-C pro připojení notebooku.
 Držák se hodí pro 17" až 35" monitory včetně prohnutých, má plně otočná ramena, plynové pružiny pro lehkou manipulaci a zámek otáčení, aby ramena nepřesahovala hranu stolu a nebouchala do stěny. VESA desky s roztečemi 75 × 75 mm a 100 × 100 mm disponují rychloupínáky. Samozřejmostí jsou průchodky pro vedení kabelů. Držák se montuje ke stolu dvěma způsoby. Buď pomocí svorky, která se hodí na desky o tloušťce 10–85 mm, nebo se přišroubuje skrz desku (10–48 mm).
 Ve stejném provedení existuje také model AlzaErgo Arm SC50B Heavy Duty DockStation pro jeden monitor (i ultraširoké 49") za 3490 Kč. Dvoumonitorový AlzaErgo Arm DC115B Flow DockStation s nižší nosností stojí 3890 Kč.
 Vedle toho má Alza ještě levnější Arm D135B Mechanic za 2490 Kč a Arm D135B Mechanic za 2590 Kč. Ty už jsou bez doku, místo plynových pružin mají mechanické a chybí jim rychloupínák (desky se šroubují). Prvnímu modelu vyčnívají ramena přímo ze základny, u druhého jsou umístěné na svislé tyči.
-Za nákup, který uskutečníte prostřednictvím odkazu v článku, může Živě dostat provizi.|E||T|Český rozhlas žádá stažení „neopravitelného“ zákona o médiích veřejné služby|D|19.5. 13:05|P|Český rozhlas zaslal ministerstvu kultury rozsáhlé připomínky k vládnímu návrhu zákona o médiích veřejné služby a navrhuje jeho stažení. Návrh podle n...|X|Český rozhlas zaslal ministerstvu kultury rozsáhlé připomínky k vládnímu návrhu zákona o médiích veřejné služby a navrhuje jeho stažení. Návrh podle něj ruší zákonnou garanci krajských studií, odebírá veřejnoprávním médiím nárok na přidělení kmitočtů a vyjímá je z dohledu Rady pro rozhlasové a televizní vysílání.
-Připomínky obsahují tři desítky zásadních námitek. Český rozhlas argumentuje, že identifikované nedostatky jsou natolik závažné, že je nelze odstranit dílčími úpravami a návrh by musel být zcela přepracován.
-Mezi nejzávažnější výhrady patří absence zákonné garance existence rozhlasových studií pro jednotlivé kraje. Podle stávajícího zákona o Českém rozhlasu je síť krajských studií pevnou součástí veřejné služby.
-Dalším problémem je úplná absence zákonného nároku na přidělení kmitočtů a souboru technických parametrů včetně jejich případné změny. Návrh také omezuje vysílání pouze na způsoby šíření výslovně vypočtené v zákoně, čímž omezuje rozvoj nových vysílacích technologií.
-Návrh podle Českého rozhlasu vypouští řadu úkolů, které veřejnoprávní vysílatel dnes ze zákona plní. Chybí výslovně výroba a vysílání pořadů pro děti a mládež, podpora kulturní identity obyvatel České republiky, rozvíjení mediální gramotnosti, postup pro zavádění nových významných služeb, povinnost vysílat do zahraničí, garance čtyřiadvacetihodinové programové služby s aktuálním zpravodajstvím a úprava multiplexu veřejné služby. Z důvodové zprávy není zřejmé, proč byla tato ustanovení vypuštěna.
-„Z naší právní analýzy vyplývá, že návrh zákona nevyjasňuje základní otázky fungování a postavení médií veřejné služby v rámci duálního systému vysílání v České republice. Zároveň není v souladu s Evropským aktem o svobodě médií ani s dalšími předpisy Evropské unie a Rady Evropy. Také neposkytuje dostatečné záruky nezávislého působení médií veřejné služby a nezajišťuje ani právní jistotu při přidělování kmitočtů pro šíření jejich obsahu,“ uvedl generální ředitel Českého rozhlasu René Zavoral.
-Předložený zákon zároveň vyjímá tvorbu a obsah Českého rozhlasu z působnosti Rady pro rozhlasové a televizní vysílání a deklaruje Radu Českého rozhlasu jako „vrcholný orgán dohledu“, tedy de facto správní úřad. Český rozhlas upozorňuje, že Rada ČRo nemá k výkonu správních činností v oblasti vysílání právní subjektivitu ani organizační a procesní zázemí. Vznik paralelního úřadu, který by převzal část kompetencí RRTV, by podle něj přinesl skryté náklady pro daňové poplatníky, o nichž důvodová zpráva mlčí.
-Zásadní výhrady má Český rozhlas k navrhované výši ročního příspěvku ze státního rozpočtu. Návrh ani důvodová zpráva neobsahují metodiku výpočtu této částky. „Pouhé ‚vrácení‘ financování na úroveň odpovídající období let 2005/2008 nelze považovat za objektivní kritérium, neboť zcela pomíjí ekonomický vývoj posledních dvou dekád, růst mezd, inflaci, technologickou transformaci médií i rozšíření úkolů veřejné služby v digitálním prostředí,“ podotýká rozhlas. Navrhovaná částka nepokrývá ani současné reálné náklady na zajištění veřejné služby podle platného Memoranda na léta 2025 až 2030, ani úkoly definované v Dlouhodobých plánech rozvoje Českého rozhlasu pro léta 2022 až 2028.
-Problém vidí Český rozhlas i v navržené valorizaci. Příspěvek se má každoročně zvyšovat o průměrnou roční míru inflace, ale maximálně o pět procent. Při vyšší inflaci by reálný rozpočet médií veřejné služby klesal. První valorizace se navíc má uplatnit až v roce 2028, což podle připomínek povede k dalšímu reálnému propadu rozpočtu.
-Navržený model financování ze státního rozpočtu je podle Českého rozhlasu v rozporu s článkem 5 nařízení EU o svobodě sdělovacích prostředků (EMFA), který vyžaduje transparentní a objektivní kritéria, přiměřené, udržitelné a předvídatelné finanční zdroje a ochranu redakční nezávislosti. Hlavní riziko vidí Český rozhlas v možnosti následného tlaku výkonné moci prostřednictvím nástrojů rozpočtových pravidel, zejména finanční kontroly ze strany ministerstev a finančních úřadů, které by mohly nárokovat zpětný odvod části vyplaceného příspěvku s argumentací, že nebyl použit v souladu s vágně definovanou hierarchií funkcí veřejnoprávního vysílání.
-Připomínky upozorňují také na nedostatečně vyhodnocené dopady na další subjekty. Český rozhlas hradí České poště za vedení evidence poplatníků a realizaci plateb SIPO přibližně 90 milionů korun ročně. Při změně financování by tento příjem státnímu podniku odpadl, přičemž dopady by mohly být ještě závažnější, pokud by klienti po zrušení poplatku službu SIPO ve větší míře přestali využívat.
-Vážné výhrady má Český rozhlas k navrženému financování z dobrovolných příspěvků fyzických osob. Návrh ukládá zveřejňovat jméno, příjmení, datum narození a výši příspěvku každého dárce způsobem umožňujícím dálkový přístup, a to bez ohledu na výši plnění. Takový rozsah údajů je podle Českého rozhlasu v rozporu se zásadou minimalizace osobních údajů podle GDPR a může vést k porušení práva EU. Připomínky také upozorňují, že návrh neumožňuje médiím veřejné služby „nevhodné“ dary odmítnout, což otevírá prostor pro tlak na nezávislost prostřednictvím finančních darů i ze zahraničí.
-Český rozhlas navrhuje, aby místo zcela nového zákona byly případné změny prováděny cílenou novelou stávajících předpisů, připravenou na základě široké odborné a veřejné diskuse. Stávající systém je podle něj funkční, jeho financování stabilní a předvídatelné a odpovídá evropským pravidlům.
-Připomínky Českého rozhlasu se ve většině věcných výhrad shodují s připomínkami ministerstev, Úřadu pro ochranu hospodářské soutěže, Úřadu pro ochranu osobních údajů, Legislativní rady vlády, Nejvyššího kontrolního úřadu a Odboru kompatibility Úřadu vlády.|E||T|Nejlevnější elektrická Škoda oficiálně. Poslouží jako obří powerbanka pro dům a má vyjímatelný frunk|D|19.5. 12:45|P|O nejlevnějším elektrickém modelu značky Škoda víme už více než dva roky. Dnes je tu oficiálně, známe veškeré parametry, ceny firma zveřejní o den poz...|X|O nejlevnějším elektrickém modelu značky Škoda víme už více než dva roky. Dnes je tu oficiálně, známe veškeré parametry, ceny firma zveřejní o den později (středa 20. května). Z českého pohledu je zajímavé i to, že se novinka bude vyrábět v továrně poblíž španělského města Navarra – společně s dvojčaty značek Volkswagen a Cupra.
+Za nákup, který uskutečníte prostřednictvím odkazu v článku, může Živě dostat provizi.|E||T|Nejlevnější elektrická Škoda oficiálně. Poslouží jako obří powerbanka pro dům a má vyjímatelný frunk|D|19.5. 12:45|P|O nejlevnějším elektrickém modelu značky Škoda víme už více než dva roky. Dnes je tu oficiálně, známe veškeré parametry, ceny firma zveřejní o den poz...|X|O nejlevnějším elektrickém modelu značky Škoda víme už více než dva roky. Dnes je tu oficiálně, známe veškeré parametry, ceny firma zveřejní o den později (středa 20. května). Z českého pohledu je zajímavé i to, že se novinka bude vyrábět v továrně poblíž španělského města Navarra – společně s dvojčaty značek Volkswagen a Cupra.
 Přerod představy designérů v sériový model. Stříbrný je koncept z března 2024, červený je sériový Epiq ve špičkové výbavě Selection.
 Epiq je elektrický crossover, protějšek spalovací Škody Kamiq. Na délku má 4171 mm (o 70 mm méně než Kamiq), na šířku 1798 mm, na výšku 1581 mm a rozvor je 2601 mm. Zajímavá je koncepce „všechno vpředu“, tedy pohon předních kol a nabíjecí port v předním blatníku. Tohle žádná elektrická škodovka neměla – vždyť i elektrické citigo mělo nabíjecí port tam, kde se i do spalovací verze lil benzin a současné modely na platformě MEB jsou v základu zadokolky.
 Rozšířené osobní dojmy z novinky najdete u kolegů na AutoRevue.
@@ -642,25 +818,7 @@ Malta se tím stává první zemí, kde OpenAI spouští podobně rozsáhlou ná
 V Česku se s AI pro lidi zatím nepočítá
 OpenAI provozuje projekt AI for Countries, který má za úkol právě podporu vlád a případné zavádění AI na úrovni států a jeho institucí. Je tedy pravděpodobné, že obdobných spoluprací (byť ne v takovém rozsahu) bude v nejbližší době přibývat.
 V Česku s tím ale prozatím počítat nemusíme. Byť neznáme finanční podmínky dohody mezi OpenAI a vládou Malty, půjde o desítky milionů dolarů, které tamní vláda zaplatí za roční zpřístupnění. Při hypotetickém českém scénáři, kdy by OpenAI požadovala polovinu běžné ceny za roční využívání všemi obyvateli ve věku 16+, by to tuzemský rozpočet vyšlo na 23 mld. Kč.
-Zdroj: Engadget|E||T|MacBook Pro M5 zlevnil o devět tisíc. Vyplatí se o něm přemýšlet místo Airu|D|19.5. 10:45|P|MacBook Pro M5 koupíte za 37 896 Kč, Apple si běžně účtuje 46 990 Kč. • Nabízí o trochu vyšší výkon než MacBook Air a celkově lepší výbavu. • Láká na ...|X|Apple nabízí podzimní MacBook Pro 14 s čipem M5 v základní konfiguraci za 46 990 Kč. iStyle prostřednictvím Allegra vám však tento model v černé barvě prodá jen za 39 891 Kč. A pokud máte předplatné Smart, bude jen za 37 896 Kč.
-Vyplatí se přitom pořídit si Smart i jen pro tuto akci. Měsíčně stojí 59 Kč, ročně 299 Kč, ale momentálně lze prvních 12 měsíců získat s poloviční slevou za 149 Kč. Členové mají přístup k podobným exkluzivním slevám a součástí je bezplatná doprava na výdejní místa a do boxů.
-V českých obchodech stojí až Kč
-Porovnat ceny
-Je to výjimečná akce hlavně proto, že za ceny okolo 40 tisíc se jinde vyprodávají již nevyráběné MacBooky Pro 14 s 512GB úložištěm. iStyle už ovšem nabízí model s 1TB SSD.
-Takto zlevněné „pročko“ už může být zajímavou alternativou, pokud jste dosud uvažovali jen o Airu. Ten 13" se v Apple Storu prodává za 30 tisíc, 15" je za 36 tisíc, byť v českých e-shopech se dají sehnat levněji.
-- Pro větší displej s vyšším rozlišením, dvojnásobnou frekvencí (120 Hz) a dvakrát vyšším jasem (1000 nitů), takže bude na slunci čitelnější.
-- Bude o chlup výkonnější, protože základní model Pro má silnější grafiku. Navíc díky aktivnímu chlazení udrží Pro výkon dlouhodobě stabilní, zatímco pasivně chlazený Air časem zpomalí.
-- Nabízí 1TB SSD, Airy mají v základu 512 GB. Příplatek za dvojnásobné úložiště je 6000 Kč, takže 15" model už by byl dražší než Pro.
-- Pro má navíc jeden Thunderbolt, výstup HDMI 2.1 a čtečku SD karet.
-- Nabízí také kvalitnější soustavu šesti reproduktorů (jsou v i 15" Airu).
-MacBook Pro má také větší akumulátor a delší výdrž, takže na jeden zátah dokáže přehrávat video až 24 hodin, případně s ním budete surfovat na internetu až 16 hodin. Nicméně i Air vydrží dlouho.
-Přes WhatsApp a Telegram vás upozorníme na novou slevu
-Slevové akce někdy netrvají dlouho nebo obchody mohou mít jen malé množství zlevněných produktů. Než se k článku dostanete, může být pozdě.
-Hlídač slev má ale své kanály v komunikátorech WhatsApp a Telegram. Klikněte na odkaz, otevře se v aplikaci. Jakmile vydáme článek o slevě, hned o tom dostanete zprávu. O akci se tak dozvíte v době, kdy je ještě stoprocentně platná.
-Jsme také na sociálních sítích Facebook, Threads, X, Bluesky, Mastodon, Discord a můžete odebírat naše RSS se slevami.
-WhatsApp má u kanálů vypnuté upozornění na nové zprávy. Musíte to změnit sami přes ikonu zvonku v pravém horním rohu aplikace. Viz žlutá šipka:
-Našli jste sami zajímavou slevu? Napište nám.
-Za nákup, který uskutečníte prostřednictvím odkazu v článku, může Živě dostat provizi.|E||T|Advancing content provenance for a safer, more transparent AI ecosystem|D|19.5. 10:45|P|OpenAI advances AI content provenance with Content Credentials, SynthID, and a verification tool to help people identify and trust AI-generated media.|X|Advancing content provenance for a safer, more transparent AI ecosystem
+Zdroj: Engadget|E||T|Advancing content provenance for a safer, more transparent AI ecosystem|D|19.5. 10:45|P|OpenAI advances AI content provenance with Content Credentials, SynthID, and a verification tool to help people identify and trust AI-generated media.|X|Advancing content provenance for a safer, more transparent AI ecosystem
 Helping people understand the origin of AI-generated content through Content Credentials, SynthID, and an early public verification tool.
 People are using OpenAI’s tools everyday to create and edit images and audio in ways that make communication more expressive, useful, and accessible. As these tools become a part of how people build, imagine, and share, it’s important that people can understand and verify where the media comes from so they can interpret it with more confidence. Provenance signals can help by giving people context about where content came from, how it was created or edited, and whether it is what it claims to be.
 Today we’re strengthening our approach to content provenance with a multi-layered, ecosystem-driven model to building trust online. We are making our provenance signals easier for other tools and platforms to recognize through C2PA conformance, adding durable cross-platform SynthID watermarking to images through a partnership with Google, and sharing a preview of a tool the public can use to verify whether images came from OpenAI.
@@ -712,14 +870,7 @@ Dalším méně viditelným aspektem je samotné propojení účtů. Pokud použ
 To může zahrnovat informace o tom, jaké služby používáte, jak často je navštěvujete nebo jak se v nich chováte. Tyto údaje mohou být následně využívány pro personalizaci obsahu nebo cílenou reklamu. Pro někoho to nemusí být problém, jiní ale vnímají takovou míru propojení jako zásah do soukromí.
 Pohodlí versus kontrola
 Je ale fér říct, že přihlášení přes Google má své výhody. Je rychlé, pohodlné a v mnoha případech paradoxně i bezpečnější než používání slabých nebo opakovaných hesel. Na druhou stranu tím získáváte závislost na jednom účtu a jedné službě, která se stává klíčem k velké části vašeho digitálního života.
-Zdroj: AndroidPolice|E||T|Google utahuje opasky. Gemini zavádí týdenní limity, na této stránce je můžete sledovat|D|19.5. 07:45|P|Google přešel na nový systém limitů, jsou denní a týdenní. • Veškeré operace sdílejí jeden limit založený na tokenech. • Čím složitější zadání, tím ry...|X|Google od neděle postupně zavádí nový systém limitů AI chatbotu Gemini. Doposud se řídil tabulkou, která ukazovala, kolik operací můžete provést denně. Ne vždy to bylo úplně transparentní, protože limity se průběžně mění podle dostupné kapacity.
-Ale obecně platilo, že například u bezplatného tarifu jste mohli takřka neomezeně využívat základní textový model Fast, ale přemýšlecí Thinking už šlo použít zhruba třikrát až pětkrát za den, denně jste vygenerovali maximálně 20 obrázků apod. To se mění, protože firma přechází na limity využití založené a výpočetních zdrojích.
-Neplatí už různé limity pro jednotlivé operace, ale veškerá AI sdílí jeden limit. Navíc už není jen denní (ten se obnovuje každých 5 hodin), ale nově také týdenní. Jakmile vyčerpáte i ten, počkáte sedm dní. Případně si zaplatíte vyšší tarif.
-Vyčerpaný limit po dvou vygenerovaných obrázcích a dvou textových zadáních. Obrázky vzaly po dvou procentech, textové odpovědi po jednom
-Funguje to tak, že tarif Plus za 220 Kč nabídne 2× více výpočetních prostředků, Pro za 550 Kč pak 4× více a nejvyšší Ultra za 6890 Kč dokonce 80× více.
-Volnou kapacitu lze sledovat na stránce gemini.google.com/usage, ale tu možná ještě nevidíte, pokud vás Google nepřevedl na nový způsob účtování. V praxi se tedy přešlo na systém neviditelných tokenů. To znamená, že textová komunikace s chatbotem je poměrně úsporná, ale s generování obrázků, videí, zvuků nebo vyšší přemýšlecí modely spolknou více prostředků, takže rychleji narazíte na denní nebo týdenní strop.
-Oproti dřívějšku je hlavní změnou to, že například generováním obrázků můžete vyčerpat veškerou volnou kapacitu, takže už si s vámi Gemini nebude chtít povídat ani textově se základním modelem Fast.
-Dosavadní limity|E||T|Lidstvo neskutečně plýtvá procesorovým výkonem. Mému veřejnému webovému serveru stačí 100 bajtů RAM (komentář)|D|19.5. 05:45|P|Kutil spustil veřejný webový server a každý ho mohl navštívit. Vše přitom běželo déle než rok na malé prototypovací destičce s Wi-Fi procesorem ESP32,...|X|Kutil spustil veřejný webový server a každý ho mohl navštívit. Vše přitom běželo déle než rok na malé prototypovací destičce s Wi-Fi procesorem ESP32, který měl k dispozici jen 500 kB RAM!
+Zdroj: AndroidPolice|E||T|Lidstvo neskutečně plýtvá procesorovým výkonem. Mému veřejnému webovému serveru stačí 100 bajtů RAM (komentář)|D|19.5. 05:45|P|Kutil spustil veřejný webový server a každý ho mohl navštívit. Vše přitom běželo déle než rok na malé prototypovací destičce s Wi-Fi procesorem ESP32,...|X|Kutil spustil veřejný webový server a každý ho mohl navštívit. Vše přitom běželo déle než rok na malé prototypovací destičce s Wi-Fi procesorem ESP32, který měl k dispozici jen 500 kB RAM!
 Tato zprávička během jara nadchla hackery z XDA Developers a roztomilý projekt z GitHubu jsme proto zkraje května připomněli i my .
 Protože jsme ale kutilové, neopomněli jsme článek doplnit komentářem ve znění zhruba: „ׅProboha lidi, čemu se vlastně divíte? Vždyť je to normální.“
 Veřejný WWW server na 16MHz čipu s 2 kB RAM Dnes bych chtěl svůj májový komentář doplnit něčím přece jen trošku hmatatelnějším, a proto jsem jeden webový server také vystavil na veřejný internet. Na rozdíl od původního autora ale doslova – tedy bez žádného bezpečnostního prostředníka.

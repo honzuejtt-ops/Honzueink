@@ -1,0 +1,6 @@
+GitHub potvrdil na síti X bezpečnostní incident, při němž útočníci získali přístup k interním repozitářům společnosti. Podle dosavadního vyšetřování se hack povedl díky infikování zařízení jednoho ze zaměstnanců, který si nainstaloval podvržené rozšíření do vývojářské aplikace. Firma uvádí, že zatím nemá důkazy o dopadu na zákaznická data uložená mimo interní repozitáře.
+Data za 50 tisíc dolarů
+Odcizená data nabízí k prodeji na darknetu skupina TeamPCP. Na hackerském fóru tvrdí, že má zdrojový kód i informace o interním uspořádání platformy. Podle příspěvku jde zhruba o čtyři tisíce repozitářů, za které chce alespoň 50 000 USD. GitHub později uvedl, že číslo kolem 3 800 repozitářů odpovídá zjištěním při vyšetřování.
+Útok se podle dostupných informací povedl díky infikovanému rozšíření do VS Code nainstalované na zařízení zaměstnance GitHubu. Tuto škodlivou verzi samozřejmě firma odstranila z tržiště a izolovala napadená zařízení. GitHub je otevřený a průběh vyšetřování s novými poznatky sdílí na X. Dál pokračuje v analýze logů a sleduje případnou navazující aktivitu. Nejdůležitější informace je, že se nepotvrdil hack zákaznických účtů, enterprise účtů ani zákaznických repozitářů.
+Skupina TeamPCP bývá spojována s dřívějšími kampaněmi proti open source ekosystému. Ty se týkaly mimo jiné PyPI, npm či Dockeru.
+Zdroj: The Hacker News

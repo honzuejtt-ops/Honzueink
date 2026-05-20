@@ -1,0 +1,8 @@
+Google na úvod konference I/O představil svůj nejnovější velký jazykový model Gemini 3.5 Flash. Flashové modely jsou vždy ty jednodušší, rychlejší, a tím i levnější, oproti komplexnějším Pro. Novinka ale má porazit dosavadní Gemini 3.1 Pro v několika ohledech, zejména v programování/kódování a agentické práci.
+V první kategorii už dýchá na záda nejnovějšímu GPT-5.5 a pokořil Claude Opus 4.7, ve vícekrokové agentické práci s využitím MCP nebo benchmarku Toolathlon už předčil oba rivaly. Gemini 3.5 Flash ale vyniká i v multimodálních úlohách s využitím obrázků a grafů. Oproti Gemini 3.1 Pro umí také lépe ovládat počítač nebo provádět expertní úlohy jako finanční analýzy nebo rozhodování.
+Google na svém blogu ukazuje několik působivých demonstrací, co všechno Flash v agentickém nasazení zvládne. Na základě vstupních dat vytvoří animované prezentace, nadesignuje hru nebo podle textového zadání vytvoří vysvětlující interaktivní aplikaci.
+Na model Pro ale ztrácí v práci s dlouhým kontextem nebo v uvažování. Někdy v červnu navíc dorazí Gemini 3.5 Pro, který posune schopnosti ve všech oblastech.
+Pro interní analýzy Googlu je mimochodem Gemini 3.5 Flash násobně efektivnější než konkurenti. Je prý až čtyřikrát rychlejší (výstupní tokeny za sekundu) oproti nejnovějším modelům od OpenAI a Anthropicu.
+Gemini 3.5 Flash už je dostupný pro všechny uživatele chatbotu Gemini na webu i v aplikacích, funguje tam jako výchozí model. Tam nahradil původní 3.0 Flash, oproti němuž je ve všech ohledech lepší a bude méně halucinovat. Google jej nasadil i do Antigravity (alternativa Codexu nebo Claude Code), API, AI Studia a Android Studia. Běžní uživatelé se s ním setkají také v AI režimu vyhledávače.
+Zdroje a další informace:
+Google

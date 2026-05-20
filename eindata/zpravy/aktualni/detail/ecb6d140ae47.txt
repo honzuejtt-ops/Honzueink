@@ -27,13 +27,13 @@ Globální vlastnosti systému
 - snadné vytváření lokální instalace přímo v prohlížeči – navštivte my.wordpress.net a jste uvnitř svého lokálního WordPressu, ze kterého si můžete udělat centrálu osobní agendy (založeno na Playground, ale určeno koncovým uživatelům); dokonce můžete přepnout vzhled na „desktop“.
 Co se nemění
 Mnoho věcí zatím zůstává nezměněných, většinou je to kvůli nedostatku priorit nebo zastánců, kteří by změnu nebo odstranění prosadili, například:
-- zbytečná závislost na jQuery
-- podpora XML-RPC a mrtvých věcí jako třeba PHP 7.4
-- absence rozšířených datových parametrů článků (např. uživatelská pole, podpora on-site SEO)
-- absence jakékoliv ochrany proti útokům šmejdů z vesmíru – antispam, ochrana přihlašování
-- scoping – oddělení backendu a frontendu při programování
-- možnost instalace pluginů z více repozitářů po vzoru linuxových distribucí
-- a mnoho dalších věcí, které se přejeme a zatím se nestaly
+- zbytečná závislost na jQuery,
+- podpora XML-RPC a mrtvých věcí jako třeba PHP 7.4,
+- absence rozšířených datových parametrů článků (např. uživatelská pole, podpora on-site SEO),
+- absence jakékoliv ochrany proti útokům šmejdů z vesmíru – antispam, ochrana přihlašování,
+- scoping – oddělení backendu a frontendu při programování,
+- možnost instalace pluginů z více repozitářů po vzoru linuxových distribucí,
+- a mnoho dalších věcí, které si přejeme a zatím se nestaly.
 Každopádně WordPress je navzdory kritice dominantním redakčním systémem a v nové verzi se své pozice v žádném případě nevzdává.
 AI je ve WordPressu
 Tohle je zásadní a nejde o generování textu, i když většina následujících příkladů se týká pouze „hloupých“ textových hrátek. Ale během roku 2026 budou všechny wordpressy a e-shopy na WooCommerce umět tohle (v době psaní článku jsou některé funkce zatím ještě v testovacích verzích jako pluginy a do jádra se teprve vydají):
@@ -66,5 +66,5 @@ Dnes můžeme využít LLM model pro realizaci úkolů uvnitř webu, s agentním
 - dynamické produktové nabídky podle informací o vás, které pošlete v zadání přes okno chatu (mám dvě děti, máme problém s laktózou, chceme čerstvou zeleninu a ryby, připrav nám nákup na víkend),
 - o dost jednodušší ovládání WP pro lidi se speciálními potřebami,
 - kontrola on-site SEO dat proti opravdu aktuální rešerši hledaných frází nebo dotazů (automatizace třeba přes N8N se zapojením Search console a dalších nástrojů).
-Rizika při používání AI nástrojů, která jsou zmiňována, se týkají zejména nákladů na LLM, které ne...
+Rizika při používání AI nástrojů, která jsou zmiňována, se týkají zejména nákladů na LLM, k...
 (Pokracovani na webu)

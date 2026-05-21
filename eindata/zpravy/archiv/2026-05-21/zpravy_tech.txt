@@ -1,3 +1,182 @@
+|T|Tržby Nvidie za jediný kvartál už přesáhnou 90 miliard $, jsou čtyřikrát vyšší než měl Intel na svém vrcholu|D|21.5. 16:05|P|Dřív se zdálo neuvěřitelné, že Nvidia dosáhla tržeb vyšších, než měl Intel. Pak se dostala na dvojnásobek a jen krátce nato už je na čtyřnásobku. Za j...|X|Po finančních výsledcích Intelu a AMD už své oznámila i Nvidia, která má účetnictví posunuté a její první čtvrtletí tvoří únor až duben (ovšem bylo to už první čtvrtletí účetního roku 2027). Nvidia v posledních letech extrémně profituje z mánie okolo AI a poslední výsledky to dotáhly ještě dál.
+Nvidia v únoru po výsledcích za čtvrtý kvartál uváděla prognózu, že v Q1 očekává tržby 78 miliard $ plus minus 2 %. Toto bylo jako obvykle překonáno a reálné tržby oznámené včera dosáhly 81,615 miliardy $, což je nárůst o 85 % proti jejím tržbám za první čtvrtletí před rokem (to byl fiskální rok 2026). Jde i o 20% sekvenční růst proti předchozímu kvartálu a samozřejmě jde o rekord firmy.
+Nvidia na AI produktech dosahuje mimořádně vysokých marží, i v Q1 měla hrubou marži 74,9 %. Její čistý zisk dosáhl 58,321 miliardy $ (dokonce vyšší než provozní zisk, který byl 53,536 miliardy $, patrně kvůli započítání 15,9 miliardy $ zisků z blíže neupřesněných investic). Je více než trojnásobný proti výsledkům před rokem, nárůst je o 211 %. Na jednu akcii vychází zisk 2,39 $.
+Mimochodem, Nvidia uvádí, že za kvartál vyplatila 20 miliard $ investorům prostřednictvím dividend a zpětných odkupů akcií a firma tento týden schválila autorizaci k dalším zpětným odkupům ve výši 80 miliard $. Čtvrtletní dividenda se má od června zvýšit na o jeden cent na 25 centů.
+Reorganizace v reportování tržeb podtrhuje okrajovost herních GPU
+Na tomto místě se vždy díváme na to, jak jsou tržby rozdělené mezi divizemi. To, jak jsou tržby reportovány, se ovšem teď změnilo. Nvidia nově rozděluje tržby na dvě „tržní platformy“. První bude Data Center, která bude rozdělena na dvě položky: Hyperscale bude představovat tržby od velkých veřejných cloudů a tzv. hyperscale zákazníků (Amazon, Google, Azure atd). Druhá bude ACIE neboli AI Clouds, Industrial and Enterprise. V této sekci budou tržby od všech menších firem, organizací či průmyslových zákazníků.
+V prvním kvartálu měla platforma Data Center tržby 75,246 miliardy $, což je meziroční růst o 92 %. 37,869 miliardy bylo od hyperscalerů (meziročně růst o 115 %), 37,377 miliardy $ od trhů ACIE (meziročně růst o 74 %).
+Zbývající tržní platforma Edge Computing nebude dále rozdělena na více položek a má představovat tržby za hardware pro různá zařízení, zejména určená pro „agentickou a fyzickou AI“. Podle Nvidie má jít o všechno od PC přes herní konzole, pracovní stanice, base stations, roboty až po auta. Tato část měla v Q1 tržby 6,369 miliardy $, což je meziročně zlepšení o 29 % a proti předchozímu kvartálu je to růst o 10 %.
+Všimněte si, že herní GPU a technologie jsou jen jednou z dílčích položek a nejspíš už jejich tržby nebudou moc podrobně vyčíslovány zvlášť. Na obchodní úrovni a směrem k investorům tak Nvidia v podstatě upozaďuje význam herních technologií jen na jednu ze sekundárních aplikací svého hardwaru. Což ale vzhledem k tomu, že pro ni tvoří jednotky procent tržeb, asi už nepřekvapí, přes historický význam tohoto trhu pro firmu.
+Nvidia ještě uvádí rozdělení tržeb mezi „Compute & Networking“ (74,55 miliardy $, meziroční růst 88 %) a „Graphics“ (7,065 miliardy $, meziroční růst o 58 %). Ale ani z této položky Graphics není moc jasné, kolik jsou prodeje grafických karet pro hráče, evidentně je toho v ní zamícháno víc.
+Výhled na Q2 očekává další rekord
+V následujícím kvartálu (Q2 FY2027), který skončí červencem, zlomí Nvidia další rekord. Tentokrát už očekává tržby ve výši 91 miliard $ plus minus 2 %. Pokud firma o něco předčí tento odhad, mohla by mít dvojnásobné tržby proti minulému roku (kdy za Q2 měla tržby 46,743 miliardy $). V tomto přitom nejsou započítány potenciální tržby za vývoz GPU do Číny, které zůstávají nejisté. S tímto vývojem se Nvidia zřejmě brzo dostane přes hranici stamiliardových tržeb za jedno čtvrtletí.
+Zdroj: Nvidia|E|
+|T|[AKTUALIZOVÁNO 21. 5.] Velké rozdávání her na Epicu. Remaster legendární série Tomb Raider je zadarmo|D|21.5. 15:25|P|Květnová akce Epicu není tak známá jako ta vánoční. Ale před šesti lety jste si z ní například mohli odnést zadarmo GTA V, takže budeme sledovat, co p...|X|Obchod Epic Games Store konkurující známému Steamu vždy na konci roku rozdává kolem 15 her během vánočních slev, což jsme v prosinci podrobně sledovali. Další kolo této akce je sice ještě daleko, ale teď koncem jara má firma podobnou, i když o něco menší rozdávačku během letního výprodeje „Mega Sale“. I během té by mohly být zadarmo docela výživné hry včetně velkých „AAA“ titulů, takže bude stát za to nadcházející rozdávačky sledovat.
+Květnový výprodej Epicu by měl opět poskytnout zajímavé hry zadarmo
+Od vánoční akce měl Epic zadarmo vesměs jen různé menší indie hry (s jednou výjimkou, kdy šlo před několika dny u příležitosti výročí série Harry Potter opět získat hru Hogwarts Legacy). Nicméně tento týden ve čtvrtek v obvyklých 17:00 by opět mohlo být k mání něco většího. Epic Games totiž tentokrát nezveřejnil dopředu, co za hru bude v následující rozdávačce možné získat, místo toho je v obchodě je avizována „Mystery Game“ – přesněji dvě.
+Takto je to i během vánočních akcí a tudíž by akce začínající ve čtvrtek 14. 5. měla být už část onoho Mega Sale, který již Epic ohlásil. Během této akce nebudou hry zadarmo přicházet každý den, ale měly by být k mání celý týden, nebude to tedy tak urgentní jako o Vánocích. Nicméně minimálně v prvním kole aspoň budou dvě.
+Co ony „Tajemné hry“ budou, zatím nevíme. Firma na sociálních sítích ukázala určitou nápovědu v podobě barevných schémat obou her, která má naznačovat, co by první dvě hry mohly být, ale o moc jasněji než předtím z toho není. V předchozích letech akce trvala více týdnů, takže její průběh budeme opět sledovat a tento článek aktualizovat, jak budou jednotlivé hry zveřejňované.
+Ačkoliv tato akce na konci jara není tak „profláklá“, v minulosti během ní Epic nabízel některé z těch výživnějších úlovků, které firma zatím poskytla. V roce 2024 dávala Dragon Age: Inquisition včetně všech DLC, v dřívějších letech třeba Borderlands 3, všechny díly série Bioshock, Fallout: New Vegas, Frostpunk, Civilizaton VI nebo ARK: Survial Evolved. A v květnové akci také byla v roce 2020 rozdávána hra GTA V, možná nejproslulejší kus, který v této rozdávačce kdy byl.
+Zda se bude dát urvat něco hodně cenného i letos, teprve uvidíme. Každopádně by mělo stát za to během této akce na stránku Epicu dávat pozor. Kromě toho by se samozřejmě také mělo dát využít různých slev během samotného výprodeje, pokud nemáte spadeno jenom na vyzobávání her zadarmo.
+Aktualizováno (14. 5. 2026): První dvě hry zadarmo
+První dvě hry z květnové rozdávačky jsou tady, vyzvednout si je můžete do příštího čtvrtka. První je taktické fantasy RPG Sunderfolk počítající s hrou až čtyř hráčů přes internet nebo i lokálně. Stránka obchodu.
+Druhou hrou je starší komiksová adaptace The Telltale Batman Shadows Edition (či také Batman: The Telltale Series). Zatímco různé batmanovské hry jsou obvykle akční, tato adaptace je žánrově point&click adventura. Stránka obchodu.
+Zřejmě nezávisle na oficiální akci Epic Games je v obchodě dočasně zadarmo ještě základní verze hry Devil's Island (stránka obchodu), ale jenom do 16. 5. (konec akce je v poledne).
+Aktualizováno (21. 5. 2026): Druhá dávka her, tři Lary zadarmo
+Mámte tu další dvě hry z květnové rozdávačky. Respktive, dva balíčky, v kterých je toho víc. Vyzvednout si je opět můžete do příštího čtvrtka. První je indie adventera s různými rébusy Down in Bermuda. Stránka obchodu.
+Druhou položkou jsou ve skutečnosti tři hry, totiž remasterované edice prvních tří her slavné série Tomb Raider, které už v minulém stolení založily kariéru slavné akční archeoložky Lary Croft: Tomb Raider I-III Remastered Starring Lara Croft. Remaster Studio Crystal Dynamic oznámilo a vydalo před dvěma lety, tedy ne zas tak dávno. Sice mohou být debaty o tom, zda není vhodnější takovou klasiku hrát v původní technicky dost archaické podobě, ale když teď remaster můžete mít v knihovně zadarmo, není důvod to nevyužít. Stránka obchodu.
+I další týden (počínaje příštím čtvrtkem 28. 5. v 17:00) budou rozdávány dvě hry, také zatím nezveřejněné a prezentované jako Mystery Game. Což znamená, že akce pokračuje dál a za týden se k ní opět vrátíme.
+Akce v minulosti trvala čtyři týdny, což se může, ale nemusí opakovat i letos. Každopádně budeme průběh dál sledovat.
+Nebojte se zúčastnit, nestojí to nic
+Většinou platí, že zadarmo vám nikdo nic nedá, ale tyto rozdávačky Epicu jsou vcelku výjimka. Zatím nevíme o tom, že by s nimi byly spojené nějaké háčky a zkušenosti jsou s nimi dobré. Tyto akce firma pořádá už dlouhá léta (od konce roku 2018). Pokud stihnete v termínu akce kliknout na dotyčné tlačítko na stránce hry v obchodu, je hra vaše napořád.
+Jediné, co potřebujete, je mít u Epic Games Store zaregistrovaný účet, přičemž samotnou aplikaci (klienta Epic Games Store) není třeba mít nainstalovanou. Můžete hry sbírat do budoucna i bez nainstalovaného klienta (třeba pro děti). Klient samotný je zadarmo, pokud si získané úlovky budete chtít zahrát. Firma Epic Games Store „sběr“ her zadarmo ani nikdy nepodmiňovala tím, že by váš účet musel v obchodě někdy utratit nějaké opravdové peníze, ani není třeba vyplňovat údaje platební karty.
+Zdroj: Epic Games Store|E|
+|T|Jak dobře vybrat monitor. Neztraťte se v parametrech a nepřehánějte to s velikostí|D|21.5. 14:45|P|U monitorů do kanceláře, na hraní i na profi grafiku si všímejte jiných parametrů. • Levné modely nemusí mít špatný obraz, ale budou mít horší výbavu....|X|Ukázat všechny listy najednou
+Monitory k počítači jsou typickým zařízením, kde je na první pohled vše jasné. Jakmile ale začnete do problematiky pronikat hlouběji, hrozí zahlcení technickými detaily. Ve skutečnosti ale nemusíte propadat panice. I bez velkého bádání dokážete koupit rozumný monitor, který vám bude dobře sloužit.
+Základní rychlý návod
+Chci levný základ. Kupte 24" monitor s rozlišením Full HD 1920 × 1080 px a panelem IPS. Ani u nízké ceny vás nečeká zásadní průšvih.
+Potřebuji normální monitor. Berte 27" monitor s rozlišením 2560 × 1440 px.
+Chci hrát hodně hry. Hledejte monitor minimálně s podporou 144 Hz. Jeho rozlišení volte podle schopností vaší grafické karty. Je zbytečné přemýšlet mezi 144 Hz nebo 165 Hz, když vaše grafika v rozlišení monitoru nedosáhne ani na těch 144 FPS.
+Nevím, jestli mi stačí jeden monitor. Lepší než dva monitory je jeden širokoúhlý displej (21:9 nebo i 32:9), případně větší monitor nad 32 palců s 4K rozlišením 3840 × 2160 px.
+Potřebuji barevně přesný monitor. Pro grafickou práci doporučíme spíše monitory s IPS panely za střední a vyšší cenu.
+Jak se pohybují ceny
+Kolem pěti tisíc korun najdete použitelné základní monitory. Do deseti tisíc koupíte už příjemně velké monitory vhodné i na hry. Do patnácti tisíc seženete slušně vybavené monitory s barevně přesnými panely a nad dvacet tisíc se pohybují ty nejlepší monitory pro náročné.
+Proč jsou levné monitory vlastně levné? Šetří se na panelu, kterému chybí jas a intenzita barev. Chybí také nastavitelný stojan, dostanete jen slabší nabídku konektorů (HDMI ale bývá), minimální možnosti nastavení a tělo nepůsobí pěkným a odolným dojem.
+Proč jsou drahé monitory vlastně drahé? Cenu monitoru zvedá nejen kvalitnější displej s přesnějšími nebo intenzivnějšími barvami či rychlejší obnovou. Připlácíte si také za lepší stojan, USB konektory, reproduktory, zabudovanou webkameru, možnosti nastavení a další nadstandardní výbavu.
+Nestačí mi levnější televizor místo velkého monitoru? Televizory nemají polohovatelné stojany, neumí se uspat a probudit spolu s počítačem, nemají konektor DisplayPort. Řada drahých televizorů přes tyto nedostatky funguje dobře, u levnějších modelů je na místě větší opatrnost, protože nemusí zobrazovat ostrý obraz z počítače.
+V tomto článku probereme klíčové parametry monitorů, abyste se dokázali zorientovat v jejich specifikacích a vybrali si ten pravý monitor pro vaše využití. Není třeba si připlácet za zbytečnosti, které nevyužijete, ale dává smysl neopomenout vlastnost, která by vám osobně mohla chybět.
+V další části se budeme věnovat základnímu parametru: jakou zvolit úhlopříčku? Klikněte na šipku.
+Pokračování 2 / 13 Jakou úhlopříčku monitoru zvolit?
+Ačkoli se nabízí odpověď „čím větší, tím lepší“, úplně to neplatí. Pro běžnou vzdálenost od monitoru s poměrem stran 16:9 na stole je pro pohodlnou práci maximální limit úhlopříčky kolem 32". A to píšu jako někdo, kdo má na stole 40" monitor.
+Horní hrana monitoru by měla být ve výši očí
+Jako nejmenší úhlopříčku byste měli zvolit 24", pro běžnou práci pak 27“. V rámci monitorů s běžným poměrem stran 16:9 by další a poslední krok měl být 32". Důvodem je, že u větších úhlopříček už horní hrana monitoru přesahuje úroveň očí a opouští zónu ergonomie.
+Širokoúhlé monitory s poměry stran 21:9 nebo 32:9 pak odvozují své rozměry od výšky běžného monitoru 16:9. Monitor s poměrem stran 21:9 a velikostí 34" je tak ve skutečnosti stejně vysoký jako 27" monitor. Má i stejné rozlišení 1440 bodů na výšku.
+Širokoúhlý 34" 21:9 je stejně vysoký jako 27" 16:9. Na výšku mají i stejné rozlišení 1440
+Větší úhlopříčka se samozřejmě hodí pro lepší sledování filmů, ale pak musíte více dbát na rozmístění oken po obrazovce při běžné práci. U těchto velkých monitorů odvozených z televizorů doporučím i černé pozadí plochy pro lepší soustředění se na dané okno aplikace.
+S úhlopříčkou souvisí také rozlišení monitoru. V další části se dozvíte, že ani tady neplatí „čím větší, tím lepší“.
+Pokračování 3 / 13 Jaké by měl mít monitor rozlišení?
+Ruku v ruce s úhlopříčkou jde i rozlišení monitoru. Měli byste volit takové, na kterém vám 100% měřítko velikosti písma v systému bude připadat nejlepší.
+Windows i MacOS umí měnit velikost prvků uživatelského prostředí nezávisle na rozlišení, ale to dává smysl jen pro jemné doladění nebo na titěrných displejích notebooků. Pro počítač s Windows je zbytečné kupovat 4K displej jen proto, abyste na něm používali 200% velikost písma.
+Dnes by nejmenší užitečné rozlišení mělo začínat na 1920 × 1080, označovaném také jako FullHD. Podobné zkratkové označení mají i další rozlišení, ale popravdě je jednodušší se bavit přímo v číslech bodů na šířku a výšku než vysvětlovat, co znamená každé písmenko třeba u WQHD+. Snad jen pro rozlišení 3840 × 2160 se už zažilo označení 4K případně UHD.
+Jistě chápete, že obsah v rozlišení 1920 × 1080 na 27" monitoru bude vypadat větší než na 24". Stejně tak, že ikony na 27" úhlopříčce s rozlišením 2560 × 1440 vypadají podobně velké jako na 24" monitoru s rozlišením 1920 × 1080.
+Pro lepší pochopení tu máme parametr PPI (počet pixelů na palec), který vám pomůže srovnat daný monitor vůči jinému, na jaký jste zatím zvyklí. Na monitorech s podobným PPI vypadají prvky systému jako třeba ikony a jejich popisky podobně velké. Tady jsem vypočítal několik obvyklých velikostí a rozlišení (jiné zkuste sami v online kalkulačce ).
+úhlopříčka
+rozlišení
+poměr stran
+PPI
+55"
+3820 × 2160 px
+16:9
+80
+27"
+1920 × 1080 px
+16:9
+82
+24"
+1920 × 1080 px
+16:9
+92
+32"
+2560 × 1440 px
+16:9
+92
+42"
+3820 × 2160 px
+16:9
+104
+49"
+5120 × 1440 px
+32:9
+109
+27"
+2560 × 1440 px
+16:9
+109
+38"
+3840 × 1600 px
+21:9
+109
+34"
+3440 × 1440 px
+21:9
+110
+32"
+3820 × 2160 px
+16:9
+137
+40"
+5120 × 2160 px
+21:9
+139
+28"
+3820 ×2160 px
+16:9
+157
+Pokud vám tedy vyhovuje jemnost 24" monitoru a jen chcete větší plochu, sáhněte po 32“ s rozlišením 2560 × 1440. Stejně tak si můžete všimnout, že mnoho velmi různých monitorů se pohybuje okolo hodnoty 110 a tak na nich bude základní písmo stejně velké jako na běžném 27" monitoru. Monitor 28" s rozlišením 4K pak už nedoporučuji používat ve 100% velikosti písem, bylo by to příliš titěrné.
+Ve Windows si můžete nastavit vlastní měřítko. Doporučené měřítko se odvozuje od úhlopříčky monitoru, pokud ji systém dokáže zjistit. Nemusíte se jím ale řídit
+V rámci systému Windows můžete měnit velikost systémových prvků docela plynule bez vlivu na výkon systému. Všechny současné aktuální aplikace už umí se škálováním pracovat. Občas možná najdete nějakou starší, která vypadá trochu hůř, ale na její funkčnosti se nic nemění.
+Na systému macOS je to trochu horší. Bez vlivu na výkon můžete jet v základním režimu bez škálování, nebo v režimu Retina, který spojí čtyři pixely do jednoho. Dostupné rozlišení pak bude poloviční, ale s jemnějším podáním hran a vyhlazených písmen. Odpovídá to nastavení 200% v systému Windows.
+Monitor 28" s rozlišením 4K tak pro macOS může sloužit jako pohodlný Full HD monitor s jemněji prokreslenými hranami bez viditelných pixelů. Jiné škálování už na macOS počítá grafická karta, což se promítne do nižšího dostupného výkonu třeba při renderování videa.
+A ještě upozornění, pokud vybíráte monitor ke staršímu (řekněme více jak šest let) počítači či notebooku. Může se totiž stát, že budete mít problémy s rozlišením nad 2560 × 1440. Na vině nebude váš nový krásný 4K monitor, ale staré standardy počítače.
+Jak moc záleží na typu panelu? Je lepší IPS, nebo VA? Pokračujte k další části článku.
+Pokračování 4 / 13 Jaký typ panelu u monitoru vybrat?
+I dnes si ještě můžete koupit monitor s panelem TN , ale nedělejte to. Nejsou ani levnější či rychlejší než jiná konkurence a tak nemají žádný smysl. Nejširší nabídka monitorů od levných po extra drahé používá panely typu IPS (případně PLS, ADS), které dokážou nabídnout přesné podání barev. Při pohledu ze stran se jen snižuje kontrast – barvy mírně blednou a obraz se zesvětluje. Tyto panely jsou dnes použitelné i pro rychlé herní monitory. Hlavní nevýhodou IPS je nižší kontrast okolo 1000:1 se světlejší černou plochou, byť i tady už existují výjimky.
+Výrazně lepší kontrast (orientačně 3000:1) a živější barvy nabídnou panely typu VA (případně PVA, MVA). Ty ale zase při pohledu z úhlu mění odstín barev, což je poznat, i když sedíte přímo před větším plochým monitorem. Proto se VA panely používají u prohnutých širokoúhlých monitorů, kde váš pohled dopadá i na krajích pod téměř kolmým směrem a barvy se tak nemění. Panely VA se také většinou řadí k těm pomalejším – pomaleji zvládnou změnit obraz a nedoporučují se pro náročné hraní. Byť samozřejmě existují drahé herní VA výjimky.
+Nyní se už ve větší míře objevují panely OLED , které buď vycházejí z televizorů, nebo jde o drahé profesionální panely. OLED nabídne dechberoucí kontrast, intenzivní barvy a nejrychlejší obnovu obrazu. U OLEDu si ale musíte dát pozor na vypálení obrazu. Nemusíte se jej vyloženě bát, stačí používat monitor v tmavém režimu operačního systému a zbytečně na něm nenechávat stejný obsah. Nevýhodou OLED je menší maximální jas bílé velké plochy. Bílá stránka ve Wordu přes celou obrazovku bude mnohem více svítit i na základním IPS monitoru než na extra drahém OLED monitoru.
+V rámci OLED pak rozlišujeme tři různé typy panelů. Obvykle se označují WOLED, QD-OLED a RGB OLED.
+WOLED má původ v OLED televizorech, základní subpixely pro RGB doplňují bílý (W) subpixel pro vyšší maximální jas, který u TV oceníte. Panel se díky tomu dokáže více rozsvítit, bílý subpixel ale může nabourat podání mírně šikmých hran, kde z blízkého pohledu můžete vidět mírné duhování i když jde o černou čáru na bílém pozadí.
+QD-OLED je nejnovější technologií pro OLED monitory a televizory. Využívá jasné modré světlo, kterou průchodem přes vrstvu kvantových teček mění odstín do požadované barvy. Obraz v HDR je mnohem jasnější a intenzivnější oproti WOLED. Netradiční struktura RGB subpixelů uspořádaných v trojúhelníku si ale při zobrazení drobných textů nerozumí se základním vyhlazováním písmen v ...
+(Pokracovani na webu)|E|
+|T|Fotíme ve virtuálním Japonsku. Podívejte se na jarní krajiny, monumenty i Tokio ve Forza Horizon 6|D|21.5. 14:15|P||X|I když jde ve Forze hlavně o to, abyste se ve vysokých rychlostech předháněli se soupeři a překonávali časové rekordy, není na škodu se zastavit a užít si, jak se studiu Playground Games podařilo převést Japonsko do virtuální podoby. Skvěle tady fungují kontrasty, kdy se chvíli projíždíte ulicemi moderního města a jen o pár minut později brázdíte polní cesty mezi tradičními vesničkami, sakurovými alejemi a rýžovými políčky.
+Nejsem žádný velký fotograf. I tak si myslím, že s pomocí vestavěného foto módu i úplný amatér zvládne udělat pěkné obrázky. Forza Horizon 6 má v tomhle směru skoro všechno, co bych si přál. Při focení je omezující pouze nastavení výšky kamery a nějak hapruje nastavení počasí a denní doby. Stačí, aby se posuvník změnil z jasna na oblačno a zase zpátky a obraz je většinou úplně jiný bez toho, abyste sahali na jakákoliv další nastavení.
+Při hraní je jasně vidět, že nejvíc práce šlo do tvorby modelů aut a není se ani čemu divit. Festival Horizon má být od svých počátků oslavou automobilových závodů. Auta jsou bez ohledu na značku zpracovaná perfektně. V prostředí by se pár nedostatků našlo, ale stále to bohatě stačí k tomu, aby vznikaly nádherné scenérie, jak se můžete přesvědčit v galerii. Všechny obrázky pocházejí z PC verze hry.|E|
+|T|Autoři švýcarského nožíku pro hackery ukázali nový Flipper One. Pořád se vejde do kapsy, ale tentokrát i s Linuxem|D|21.5. 14:03|P|Tvůrci populárního švýcarského nožíku pro kutily a hackery Flipper Zero konečně poodkryli, co všechno bude umět jeho nový sourozenec Flipper One.
+
+Mlu...|X|Tvůrci populárního švýcarského nožíku pro kutily a hackery Flipper Zero konečně poodkryli, co všechno bude umět jeho nový sourozenec Flipper One .
+Mluví se o něm už nějaký čas, nyní už ale víme, že to rozhodně nebude přímý nástupce, ale spíše kolega z poněkud vyšší ligy. Tomu bude nakonec jistě odpovídat i cena.
+Nejprve rekapitulace. Zero je malá krabička s displejem, která může fungovat jako RFID čtečka, dálkový ovladač pro infračervené spotřebiče, podporuje i subgigahertzové rádio a má lištu GPIO pro připojení dalších digitálních periferií.
+K dispozici je hromada aplikací a také neoficiální firmwary, které přinesly některé hackovací funkce.
+Linuxový počítač do kapsy One bude mnohem mohutnější, základní mikrokontroler Raspberry Pi RP2350 totiž doplní osmijádrový armový čipset Rockchip RK3576, 8 GB RAM a 64GB úložiště s možností dalšího rozšíření skrze microSD.
+Flipper Zero vs Flipper OneNa One oproti Zeru poběží jednoduchý Mainline Linux a hackingové možnosti se tím pádem posunou na zcela novou úroveň.
+Inženýři totiž do krabičky vedle další výbavy nacpali také rovnou dva porty RJ-45 pro gigabitový ethernet (Realtek). Flipper One by proto mohl sloužit jako zajímavý kapesní počítač třeba pro analýzu sítě a bezpečnostní penetrační testy.
+Nebude chybět ani podpora Wi-Fi/Bluetooth (Mediatek), funkce powerbanky (7000 mAh – ještě v jednání) a vedle GPIO hřebínku jako na Zeru také M.2 Key B port pro připojení rozšiřujících desek.
+Linuxový procesor i malý mikrokontroler pro real-time operaceNa krabičku se vešel i konektor HDMI a USB-C DisplayPort pro připojení monitoru, takže jej budete moci proměnit v miniaturní desktop třeba u klienta, v jehož infrastruktuře potřebujete něco opravit.
+Mohl by proto zaujmout nejen kutily a hackery, ale mnohem širší sortu technických profesí, které sebou musely všude tahat brašnu s notebookem.
+Uděláme to, ale musíte nám pomoci A kdy si tedy budou moci zájemci malou krabičku koupit a za kolik? To i nadále zůstává velkou otázkou. Flipper One totiž ještě není ani zdaleka hotový. Oficiální oznámení má být proto mimo jiné pobídkou pro komunitu vývojářů, aby se zapojili a pomohli autorskému týmu vše dovést do zdárného konce.
+Jestli tedy Flipper One skutečně spatří světlo světa, anebo zůstane jen na hezkých vizualizacích, tentokrát záleží i na těch, kteří ho budou chtít nosit v kapse. Pocity komunity jsou zatím spíše smíšené, takže uvidíme.|E|
+|T|Microsoft doporučil hráčům 32 GB RAM jako nový standard. Internet mu rychle připomněl ceny pamětí|D|21.5. 13:13|P|Microsoft krátce označil 16 GB RAM za praktický základ herního PC a 32 GB za ideální rezervu pro hraní i multitasking. Po kritice dokument zmizel, deb...|X|Podle Windows Latest šlo o anonymní článek o herních počítačích s Windows 11. Nešlo o novou specifikaci systému, podepsaný blog šéfa divize ani prezentaci z Buildu. Šlo o marketingový text bez autora, který po kritice zmizel a jeho URL byla přesměrována na hlavní stránku Learning Center.
+Co se dozvíte v článku
+Z technického hlediska Microsoft nenapsal nic skandálního. Pro nové herní PC je 32 GB RAM v roce 2026 rozumná konfigurace. Jenže přesně stejná věta zní jinak ve chvíli, kdy spotřebitelské paměti prudce zdražují, výrobci přesměrovávají kapacity k AI serverům a levnější počítače začínají na rostoucí náklady narážet nejvíc.
+Co se nezměnilo a co z toho média udělala
+Oficiální požadavky Windows 11 pořád uvádějí 4 GB RAM jako minimum. Stejná stránka u Copilot+ PC uvádí zvláštní požadavky pro tuto kategorii: kompatibilní procesor s NPU o výkonu přes 40 TOPS, 16 GB DDR5 nebo LPDDR5 a 256GB SSD nebo UFS úložiště. Z odstraněného textu tedy neplyne nová hardwarová hranice Windows ani Copilot+ PC.
+To je podstatné, protože část ohlasů sklouzla k dojmu, že Microsoft posouvá minimální požadavky Windows směrem k 32 GB. To se nestalo. Microsoft v marketingovém textu pro hráče napsal, že 16 GB je rozumný začátek a 32 GB větší rezerva pro souběžně běžící aplikace. Pak text odstranil. Samotná kauza je menší, než jak vypadala v titulcích, ale dobře ukazuje, jak rychle se mění očekávání od běžné paměťové výbavy.
+HP při únorovém zveřejnění výsledků a výhledu pro fiskální rok upozornilo, že dražší paměti zhoršují výhled firmy a budou tlačit na ceny i konfigurace počítačů. Tom’s Hardware celou věc vystihl poměrně přesně: rada může být technicky obhajitelná, ale během RAMageddonu působí odtrženě od reality.
+16 GB pořád stačí pro většinu lidí. Jen rezerva je menší
+Windows 11 24H2 po startu bez zátěže typicky zabírají několik gigabajtů paměti. S běžnou kancelářskou zátěží, tedy Edge s více taby, Office, Teams, Spotify a Discordem, se mnoho sestav dostane přibližně na 6 až 11 GB obsazené nebo rezervované paměti podle konkrétních aplikací a ovladačů. Na 16GB systému pořád zbývá prostor a komprese paměti se zapojuje jen mírně. Pokud vám takový počítač při běžné práci neswapuje, neškube a nezavírá aplikace, kupovat paměť kvůli smazanému dokumentu Microsoftu nedává smysl.
+Rozdíl oproti situaci před několika lety je v tom, co dnes běží na pozadí. Discord, Teams, Slack, Figma, herní launchery a různí klienti postavení na Electronu se tváří jako drobné aplikace, ale často si nesou značnou část webového běhového prostředí. Když se jich sejde několik vedle prohlížeče s desítkami tabů, 16 GB se zaplní, aniž by člověk spustil něco, co vypadá jako náročný software.
+V tom má Microsoft pravdu: vyšší kapacita pomáhá hlavně v okamžiku, kdy hra není jediná aktivní zátěž. Současně platí, že část problému vytvořil software, který za poslední roky výrazně ztloustl, včetně aplikací od Microsoftu. Doporučení vyšší kapacity proto nelze oddělit od otázky, proč běžné komunikační, kancelářské a herní doprovodné aplikace zabírají tolik paměti.
+Kdy už 16 GB přestává stačit
+Herní část není vymyšlená. Steam Hardware Survey za duben 2026 ukazuje, že 16 GB používá 40,86 % hráčů a 32 GB už 37,55 %. Meziměsíčně 32GB konfigurace posílila o 0,93 procentního bodu. 16 GB je pořád nejčastější hodnota, ale 32 GB se jí rychle přibližuje. Steam ovšem není celá populace Windows, nýbrž herní vzorek.
+Některé tituly vyšší kapacitu skutečně využijí. Microsoft Flight Simulator 2024 uvádí 64 GB jako ideální specifikaci. PC Gamer při vlastním testu porovnal 32GB a 96GB sestavu a naměřil výrazně lepší hodnotu 1% low fps. To je metrika, která sleduje nejpomalejší jedno procento snímků a lépe než průměrné fps ukazuje krátké propady plynulosti. V tomto testu se zlepšila o 31 %. Zajímavé je, že hra sama fyzicky nealokovala víc než 30 GB, takže rozdíl patrně dělá hlavně větší prostor pro systémovou cache a menší tlak na práci s úložištěm.
+U dalších titulů je opora méně tvrdá a stojí hlavně na uživatelských hlášeních. U Stalkeru 2 hráči popisují situace, kdy proces v některých lokacích vyroste na více než 27 GB a 16GB sestavy zamrznou. U Cities: Skylines 2 se u větších měst a modovaných sestav běžně řeší, že 16 GB přestává stačit. Nejde o většinu her, ale přibývá scénářů, kde už 16 GB není komfortní rezerva.
+Mimo hry je seznam delší a lépe doložitelný. Adobe u Premiere Pro uvádí pro 4K a vyšší rozlišení 32 GB RAM nebo více. Google u Android Studia s emulátorem uvádí 16 GB jako minimum a 32 GB jako doporučenou konfiguraci pro profesionální práci na větších projektech, více virtuálních zařízeních nebo paralelních emulátorech. WSL2 s Dockerem umí na 16GB systému rychle vyčerpat rezervu, pokud vedle toho běží IDE, prohlížeč a komunikační klienti. Kdo dnes staví herní sestavu střední a vyšší třídy, vývojářský stroj nebo stanici na video, udělá lépe s 32 GB.
+Je podle vás 16 GB RAM dostatek?
+Copilot jako alibi? Data to nepotvrzují
+Pokušení svést všechno na AI je silné. Microsoft tlačí lokální AI do Windows, výrobci pamětí přesměrovávají kapacity do serverů a uživatelé pak slyší, že by měli mít víc RAM. Přímá souvislost mezi smazaným herním textem a Copilot+ je ale slabá.
+Phi Silica je lokální jazykový model pro Copilot+ PC, optimalizovaný pro běh na NPU. Recall ukládá data lokálně na zařízení. Jenže veřejné požadavky pro Copilot+ PC i požadavky pro Recall dál stojí na 16 GB RAM, 256GB úložišti a NPU s výkonem 40 TOPS. Pro posouzení souvislosti s Copilotem je to důležitější než odhady paměťové stopy jednotlivých funkcí.
+Microsoft požadavek pro Copilot+ PC zatím nezvedl, což naznačuje, že dnešní lokální AI funkce Windows 32 GB nevyžadují. Datacentra pro AI sice tlačí nahoru ceny DRAM a SSD, protože spotřebovávají obrovské množství pamětí a úložišť, ale to je tržní problém. Není to důkaz, že běžný uživatel Windows musí přejít na 32 GB kvůli Copilotu.
+Načasování proměnilo rozumnou radu v provokaci
+Kdyby se totéž stalo před dvěma lety, většina lidí by to přešla. Kit 2×16 GB DDR5 se dal koupit za dva a půl tisíce korun a doporučit 32 GB do herního PC nebyl žádný hřích. V květnu 2026 je situace úplně jiná.
+TrendForce v únoru 2026 zvýšil odhad růstu kontraktních cen běžné DRAM pro první kvartál na 90 až 95 % mezikvartálně. Pro druhý kvartál očekává dalších 58 až 63 %. Příčina je známá: výrobci přesouvají část kapacit k HBM a serverovým pamětem pro AI infrastrukturu, zatímco spotřebitelský trh dostává horší podmínky. The Guardian v květnu popsal stejný mechanismus u levnější elektroniky: rostoucí ceny pamětí zasahují notebooky, smartphony, konzole i další spotřebitelská zařízení, protože právě u levných modelů tvoří paměť větší část výrobních nákladů.
+Situace vzdáleně připomíná aféru Vista Capable z roku 2007. Microsoft tehdy lepil marketingový štítek na počítače, které Vistu technicky spustily, ale často neposkytly zkušenost, již si zákazník pod podobným označením představoval. Výsledkem byla žaloba a zveřejnění nepříjemných interních e-mailů. Dnes nejde o totéž měřítko problému, protože odstraněný text nebyl certifikační program pro nové počítače. Paralela je užší: oficiální minimum je nízko, skutečný komfort leží výrazně výš a marketing mezi tím vysílá signál, který část uživatelů čte jako tlak na dražší hardware.
+Rozdíl je také v technickém jádru. Vista byla sama o sobě výrazně hladovější systém, než napovídalo její minimum. Windows 11 po startu bez zátěže běží hluboko pod 16 GB a pro většinu běžných uživatelů zůstává 16 GB plně funkční konfigurace. Microsoft proto nenarazil na to, že by 32 GB byla nesmyslná rada. Narazil na to, že ji vyslovil ve chvíli, kdy je RAM nejdražší za mnoho let.
+Co si z toho vzít při nákupu
+Pokud stavíte nový herní desktop a rozpočet to dovolí, 32 GB je rozumná volba na příštích několik let. Ne proto, že by Windows 11 nebo Copilot najednou potřebovaly 32 GB, ale proto, že moderní hry, launchery, komunikátory, prohlížeče a streamovací nástroje společně zmenšily rezervu, kterou dřív 16GB sestava měla.
+U notebooků je potřeba být opatrnější. U mnoha modelů je operační paměť napevno osazená na základní desce a pozdější rozšíření není možné. Pro vývoj, kreativní práci nebo delší životnost stroje proto dává 32 GB smysl rovnou. U běžného kancelářského počítače nebo notebooku na web, dokumenty, komunikaci a lehkou úpravu fotek je 16 GB pořád v pořádku. A jestli už máte 16GB sestavu, která se při vaší práci nechová pomalu, neutíkejte pro upgrade kvůli smazanému textu Microsoftu.
+Krize pamětí podle výrobců skončí nejdříve koncem roku 2027. Do té doby se RAM kupuje ve špatné fázi trhu: ceny ovlivňuje poptávka datových center po pamětech pro AI infrastrukturu a spotřebitelské konfigurace na to doplácejí. Kdo může počkat, pravděpodobně ušetří. Kdo počkat nemůže, měl by kupovat podle reálné zátěže, ne podle dokumentu, který Microsoft na pár dní vystavil v Learning Center a pak raději stáhl.|E|
+|T|Recenze filmu Mandalorian a Grogu: Star Wars konečně zase baví dobrodružstvím. Jen připomíná zkrácenou sérii|D|21.5. 12:45|P|Mandalorian je jedním z těch chválenějších Star Wars seriálů, alespoň co se týče první série. Osvědčené spaghetti-westernové kontury, motiv drsného sa...|X|Mandalorian je jedním z těch chválenějších Star Wars seriálů, alespoň co se týče první série. Osvědčené spaghetti-westernové kontury, motiv drsného samotáře a mláděte a inklinace k dobrodružnému žánru vrátily rozkolísanou značku k jejím pulpovějším kořenům. Fanoušci se setkávali s drsným lovcem ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|ČTK žádá omluvu po Radimu Panenkovi kvůli zneužití loga ve fotomontáži|D|21.5. 12:09|P|Agentura ČTK vyzvala prvního zástupce šéfredaktora Parlamentních listů Radima Panenku, aby se veřejně omluvil za neoprávněné užití loga a grafických p...|X|Agentura ČTK vyzvala prvního zástupce šéfredaktora Parlamentních listů Radima Panenku, aby se veřejně omluvil za neoprávněné užití loga a grafických prvků zpravodajské agentury ve fotomontáži na sociální síti X.
 Panenka ve středu 20. května publikoval počítačově upravenou fotomontáž, kterou zasadil do grafického designu a layoutu zpravodajského webu České noviny. Podle národní tiskové agentury tento krok hrubým způsobem zneužívá její logo i vizuální identitu a může v uživatelích sociálních sítí vyvolat klamný dojem, že se jedná o autentické zpravodajství.
 Sporná fotomontáž naznačovala údajnou podřízenost prezidenta Petra Pavla Sudetoněmeckému krajanskému sdružení, přičemž autor příspěvek doplnil komentářem „velezrada“. Vedení ČTK považuje takové jednání za naprosto nepřijatelné a v rozporu s právem i etikou. Mluvčí agentury Jan Bumba uvedl, že instituce nikdy neudělila souhlas k podobnému využití svého loga ani designu a celý incident vnímá jako hrubé porušení práva i porušení obecných pravidel slušnosti.

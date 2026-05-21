@@ -1,0 +1,10 @@
+Evropská policejní operace Saffron (Šafrán) rozbila službu First VPN, která působila na kyberzločineckých fórech napojených na Rusko. Podle portugalské justiční policie šlo o „zásadní“ nástroj pro skrývání krádeží dat a finančních podvodů.
+Operaci vedly Francie a Nizozemsko s podporou Europolu. Podařilo se při ní rozbít „zločinnou“ službu First VPN, která byla po řadu let „klíčovým prvkem“ téměř všech velkých vyšetřování kyberkriminality podporovaných Europolem. Nyní byla „neutralizována“ při koordinované operaci, do níž se zapojilo šestnáct zemí včetně například Portugalska.
+Podle prohlášení portugalské justiční policie byla služba propagovaná na kyberzločineckých fórech napojených na Rusko a „nepostradatelným“ nástrojem pro skrývání ransomwarových útoků, krádeží dat a finančních podvodů.
+Prostřednictvím Národní jednotky pro boj proti kyberkriminalitě a technologické kriminalitě pomohla portugalská justiční policie identifikovat „uživatele, kteří vystupovali pod falešnou anonymitou a kteří zřejmě měli vazby na tuto síť v Portugalsku“.
+Kroky portugalské policie byly zásadní pro „identifikaci šifrované komunikace“, kterou podezřelí používali k dorozumívání se službou First VPN, dále pro sledování finančních toků a praní peněz i pro mapování jednotlivých propojení.
+Při koordinované operaci, do níž se zapojilo několik zemí a která proběhla 19. a 20. května, byl kromě rozbití samotné služby zadržen také správce sítě na Ukrajině.
+Kromě toho bylo odpojeno více než třicet serverů, zajištěno 83 zpravodajských balíčků sdílených na mezinárodní úrovni, předány podrobné informace o zhruba 500 uživatelích a zahájeno přibližně dvacet vyšetřování podporovaných Europolem.
+Uživatelé služby byli informováni, že infrastruktura VPN byla rozbita a že je úřady identifikovaly jako zákazníky tohoto poskytovatele.
+Článek napsala Joana Bénard da Costaová (RTP), poprvé byl publikovaný 21. května 2026 v 12:35 (SELČ).
+Tento článek byl přeložen za pomoci umělé inteligence.

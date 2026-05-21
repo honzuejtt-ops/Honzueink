@@ -1,0 +1,96 @@
+Ukázat všechny listy najednou
+Monitory k počítači jsou typickým zařízením, kde je na první pohled vše jasné. Jakmile ale začnete do problematiky pronikat hlouběji, hrozí zahlcení technickými detaily. Ve skutečnosti ale nemusíte propadat panice. I bez velkého bádání dokážete koupit rozumný monitor, který vám bude dobře sloužit.
+Základní rychlý návod
+Chci levný základ. Kupte 24" monitor s rozlišením Full HD 1920 × 1080 px a panelem IPS. Ani u nízké ceny vás nečeká zásadní průšvih.
+Potřebuji normální monitor. Berte 27" monitor s rozlišením 2560 × 1440 px.
+Chci hrát hodně hry. Hledejte monitor minimálně s podporou 144 Hz. Jeho rozlišení volte podle schopností vaší grafické karty. Je zbytečné přemýšlet mezi 144 Hz nebo 165 Hz, když vaše grafika v rozlišení monitoru nedosáhne ani na těch 144 FPS.
+Nevím, jestli mi stačí jeden monitor. Lepší než dva monitory je jeden širokoúhlý displej (21:9 nebo i 32:9), případně větší monitor nad 32 palců s 4K rozlišením 3840 × 2160 px.
+Potřebuji barevně přesný monitor. Pro grafickou práci doporučíme spíše monitory s IPS panely za střední a vyšší cenu.
+Jak se pohybují ceny
+Kolem pěti tisíc korun najdete použitelné základní monitory. Do deseti tisíc koupíte už příjemně velké monitory vhodné i na hry. Do patnácti tisíc seženete slušně vybavené monitory s barevně přesnými panely a nad dvacet tisíc se pohybují ty nejlepší monitory pro náročné.
+Proč jsou levné monitory vlastně levné? Šetří se na panelu, kterému chybí jas a intenzita barev. Chybí také nastavitelný stojan, dostanete jen slabší nabídku konektorů (HDMI ale bývá), minimální možnosti nastavení a tělo nepůsobí pěkným a odolným dojem.
+Proč jsou drahé monitory vlastně drahé? Cenu monitoru zvedá nejen kvalitnější displej s přesnějšími nebo intenzivnějšími barvami či rychlejší obnovou. Připlácíte si také za lepší stojan, USB konektory, reproduktory, zabudovanou webkameru, možnosti nastavení a další nadstandardní výbavu.
+Nestačí mi levnější televizor místo velkého monitoru? Televizory nemají polohovatelné stojany, neumí se uspat a probudit spolu s počítačem, nemají konektor DisplayPort. Řada drahých televizorů přes tyto nedostatky funguje dobře, u levnějších modelů je na místě větší opatrnost, protože nemusí zobrazovat ostrý obraz z počítače.
+V tomto článku probereme klíčové parametry monitorů, abyste se dokázali zorientovat v jejich specifikacích a vybrali si ten pravý monitor pro vaše využití. Není třeba si připlácet za zbytečnosti, které nevyužijete, ale dává smysl neopomenout vlastnost, která by vám osobně mohla chybět.
+V další části se budeme věnovat základnímu parametru: jakou zvolit úhlopříčku? Klikněte na šipku.
+Pokračování 2 / 13 Jakou úhlopříčku monitoru zvolit?
+Ačkoli se nabízí odpověď „čím větší, tím lepší“, úplně to neplatí. Pro běžnou vzdálenost od monitoru s poměrem stran 16:9 na stole je pro pohodlnou práci maximální limit úhlopříčky kolem 32". A to píšu jako někdo, kdo má na stole 40" monitor.
+Horní hrana monitoru by měla být ve výši očí
+Jako nejmenší úhlopříčku byste měli zvolit 24", pro běžnou práci pak 27“. V rámci monitorů s běžným poměrem stran 16:9 by další a poslední krok měl být 32". Důvodem je, že u větších úhlopříček už horní hrana monitoru přesahuje úroveň očí a opouští zónu ergonomie.
+Širokoúhlé monitory s poměry stran 21:9 nebo 32:9 pak odvozují své rozměry od výšky běžného monitoru 16:9. Monitor s poměrem stran 21:9 a velikostí 34" je tak ve skutečnosti stejně vysoký jako 27" monitor. Má i stejné rozlišení 1440 bodů na výšku.
+Širokoúhlý 34" 21:9 je stejně vysoký jako 27" 16:9. Na výšku mají i stejné rozlišení 1440
+Větší úhlopříčka se samozřejmě hodí pro lepší sledování filmů, ale pak musíte více dbát na rozmístění oken po obrazovce při běžné práci. U těchto velkých monitorů odvozených z televizorů doporučím i černé pozadí plochy pro lepší soustředění se na dané okno aplikace.
+S úhlopříčkou souvisí také rozlišení monitoru. V další části se dozvíte, že ani tady neplatí „čím větší, tím lepší“.
+Pokračování 3 / 13 Jaké by měl mít monitor rozlišení?
+Ruku v ruce s úhlopříčkou jde i rozlišení monitoru. Měli byste volit takové, na kterém vám 100% měřítko velikosti písma v systému bude připadat nejlepší.
+Windows i MacOS umí měnit velikost prvků uživatelského prostředí nezávisle na rozlišení, ale to dává smysl jen pro jemné doladění nebo na titěrných displejích notebooků. Pro počítač s Windows je zbytečné kupovat 4K displej jen proto, abyste na něm používali 200% velikost písma.
+Dnes by nejmenší užitečné rozlišení mělo začínat na 1920 × 1080, označovaném také jako FullHD. Podobné zkratkové označení mají i další rozlišení, ale popravdě je jednodušší se bavit přímo v číslech bodů na šířku a výšku než vysvětlovat, co znamená každé písmenko třeba u WQHD+. Snad jen pro rozlišení 3840 × 2160 se už zažilo označení 4K případně UHD.
+Jistě chápete, že obsah v rozlišení 1920 × 1080 na 27" monitoru bude vypadat větší než na 24". Stejně tak, že ikony na 27" úhlopříčce s rozlišením 2560 × 1440 vypadají podobně velké jako na 24" monitoru s rozlišením 1920 × 1080.
+Pro lepší pochopení tu máme parametr PPI (počet pixelů na palec), který vám pomůže srovnat daný monitor vůči jinému, na jaký jste zatím zvyklí. Na monitorech s podobným PPI vypadají prvky systému jako třeba ikony a jejich popisky podobně velké. Tady jsem vypočítal několik obvyklých velikostí a rozlišení (jiné zkuste sami v online kalkulačce ).
+úhlopříčka
+rozlišení
+poměr stran
+PPI
+55"
+3820 × 2160 px
+16:9
+80
+27"
+1920 × 1080 px
+16:9
+82
+24"
+1920 × 1080 px
+16:9
+92
+32"
+2560 × 1440 px
+16:9
+92
+42"
+3820 × 2160 px
+16:9
+104
+49"
+5120 × 1440 px
+32:9
+109
+27"
+2560 × 1440 px
+16:9
+109
+38"
+3840 × 1600 px
+21:9
+109
+34"
+3440 × 1440 px
+21:9
+110
+32"
+3820 × 2160 px
+16:9
+137
+40"
+5120 × 2160 px
+21:9
+139
+28"
+3820 ×2160 px
+16:9
+157
+Pokud vám tedy vyhovuje jemnost 24" monitoru a jen chcete větší plochu, sáhněte po 32“ s rozlišením 2560 × 1440. Stejně tak si můžete všimnout, že mnoho velmi různých monitorů se pohybuje okolo hodnoty 110 a tak na nich bude základní písmo stejně velké jako na běžném 27" monitoru. Monitor 28" s rozlišením 4K pak už nedoporučuji používat ve 100% velikosti písem, bylo by to příliš titěrné.
+Ve Windows si můžete nastavit vlastní měřítko. Doporučené měřítko se odvozuje od úhlopříčky monitoru, pokud ji systém dokáže zjistit. Nemusíte se jím ale řídit
+V rámci systému Windows můžete měnit velikost systémových prvků docela plynule bez vlivu na výkon systému. Všechny současné aktuální aplikace už umí se škálováním pracovat. Občas možná najdete nějakou starší, která vypadá trochu hůř, ale na její funkčnosti se nic nemění.
+Na systému macOS je to trochu horší. Bez vlivu na výkon můžete jet v základním režimu bez škálování, nebo v režimu Retina, který spojí čtyři pixely do jednoho. Dostupné rozlišení pak bude poloviční, ale s jemnějším podáním hran a vyhlazených písmen. Odpovídá to nastavení 200% v systému Windows.
+Monitor 28" s rozlišením 4K tak pro macOS může sloužit jako pohodlný Full HD monitor s jemněji prokreslenými hranami bez viditelných pixelů. Jiné škálování už na macOS počítá grafická karta, což se promítne do nižšího dostupného výkonu třeba při renderování videa.
+A ještě upozornění, pokud vybíráte monitor ke staršímu (řekněme více jak šest let) počítači či notebooku. Může se totiž stát, že budete mít problémy s rozlišením nad 2560 × 1440. Na vině nebude váš nový krásný 4K monitor, ale staré standardy počítače.
+Jak moc záleží na typu panelu? Je lepší IPS, nebo VA? Pokračujte k další části článku.
+Pokračování 4 / 13 Jaký typ panelu u monitoru vybrat?
+I dnes si ještě můžete koupit monitor s panelem TN , ale nedělejte to. Nejsou ani levnější či rychlejší než jiná konkurence a tak nemají žádný smysl. Nejširší nabídka monitorů od levných po extra drahé používá panely typu IPS (případně PLS, ADS), které dokážou nabídnout přesné podání barev. Při pohledu ze stran se jen snižuje kontrast – barvy mírně blednou a obraz se zesvětluje. Tyto panely jsou dnes použitelné i pro rychlé herní monitory. Hlavní nevýhodou IPS je nižší kontrast okolo 1000:1 se světlejší černou plochou, byť i tady už existují výjimky.
+Výrazně lepší kontrast (orientačně 3000:1) a živější barvy nabídnou panely typu VA (případně PVA, MVA). Ty ale zase při pohledu z úhlu mění odstín barev, což je poznat, i když sedíte přímo před větším plochým monitorem. Proto se VA panely používají u prohnutých širokoúhlých monitorů, kde váš pohled dopadá i na krajích pod téměř kolmým směrem a barvy se tak nemění. Panely VA se také většinou řadí k těm pomalejším – pomaleji zvládnou změnit obraz a nedoporučují se pro náročné hraní. Byť samozřejmě existují drahé herní VA výjimky.
+Nyní se už ve větší míře objevují panely OLED , které buď vycházejí z televizorů, nebo jde o drahé profesionální panely. OLED nabídne dechberoucí kontrast, intenzivní barvy a nejrychlejší obnovu obrazu. U OLEDu si ale musíte dát pozor na vypálení obrazu. Nemusíte se jej vyloženě bát, stačí používat monitor v tmavém režimu operačního systému a zbytečně na něm nenechávat stejný obsah. Nevýhodou OLED je menší maximální jas bílé velké plochy. Bílá stránka ve Wordu přes celou obrazovku bude mnohem více svítit i na základním IPS monitoru než na extra drahém OLED monitoru.
+V rámci OLED pak rozlišujeme tři různé typy panelů. Obvykle se označují WOLED, QD-OLED a RGB OLED.
+WOLED má původ v OLED televizorech, základní subpixely pro RGB doplňují bílý (W) subpixel pro vyšší maximální jas, který u TV oceníte. Panel se díky tomu dokáže více rozsvítit, bílý subpixel ale může nabourat podání mírně šikmých hran, kde z blízkého pohledu můžete vidět mírné duhování i když jde o černou čáru na bílém pozadí.
+QD-OLED je nejnovější technologií pro OLED monitory a televizory. Využívá jasné modré světlo, kterou průchodem přes vrstvu kvantových teček mění odstín do požadované barvy. Obraz v HDR je mnohem jasnější a intenzivnější oproti WOLED. Netradiční struktura RGB subpixelů uspořádaných v trojúhelníku si ale při zobrazení drobných textů nerozumí se základním vyhlazováním písmen v ...
+(Pokracovani na webu)

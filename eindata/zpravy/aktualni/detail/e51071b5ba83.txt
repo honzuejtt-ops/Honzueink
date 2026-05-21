@@ -1,0 +1,12 @@
+Tvůrci populárního švýcarského nožíku pro kutily a hackery Flipper Zero konečně poodkryli, co všechno bude umět jeho nový sourozenec Flipper One .
+Mluví se o něm už nějaký čas, nyní už ale víme, že to rozhodně nebude přímý nástupce, ale spíše kolega z poněkud vyšší ligy. Tomu bude nakonec jistě odpovídat i cena.
+Nejprve rekapitulace. Zero je malá krabička s displejem, která může fungovat jako RFID čtečka, dálkový ovladač pro infračervené spotřebiče, podporuje i subgigahertzové rádio a má lištu GPIO pro připojení dalších digitálních periferií.
+K dispozici je hromada aplikací a také neoficiální firmwary, které přinesly některé hackovací funkce.
+Linuxový počítač do kapsy One bude mnohem mohutnější, základní mikrokontroler Raspberry Pi RP2350 totiž doplní osmijádrový armový čipset Rockchip RK3576, 8 GB RAM a 64GB úložiště s možností dalšího rozšíření skrze microSD.
+Flipper Zero vs Flipper OneNa One oproti Zeru poběží jednoduchý Mainline Linux a hackingové možnosti se tím pádem posunou na zcela novou úroveň.
+Inženýři totiž do krabičky vedle další výbavy nacpali také rovnou dva porty RJ-45 pro gigabitový ethernet (Realtek). Flipper One by proto mohl sloužit jako zajímavý kapesní počítač třeba pro analýzu sítě a bezpečnostní penetrační testy.
+Nebude chybět ani podpora Wi-Fi/Bluetooth (Mediatek), funkce powerbanky (7000 mAh – ještě v jednání) a vedle GPIO hřebínku jako na Zeru také M.2 Key B port pro připojení rozšiřujících desek.
+Linuxový procesor i malý mikrokontroler pro real-time operaceNa krabičku se vešel i konektor HDMI a USB-C DisplayPort pro připojení monitoru, takže jej budete moci proměnit v miniaturní desktop třeba u klienta, v jehož infrastruktuře potřebujete něco opravit.
+Mohl by proto zaujmout nejen kutily a hackery, ale mnohem širší sortu technických profesí, které sebou musely všude tahat brašnu s notebookem.
+Uděláme to, ale musíte nám pomoci A kdy si tedy budou moci zájemci malou krabičku koupit a za kolik? To i nadále zůstává velkou otázkou. Flipper One totiž ještě není ani zdaleka hotový. Oficiální oznámení má být proto mimo jiné pobídkou pro komunitu vývojářů, aby se zapojili a pomohli autorskému týmu vše dovést do zdárného konce.
+Jestli tedy Flipper One skutečně spatří světlo světa, anebo zůstane jen na hezkých vizualizacích, tentokrát záleží i na těch, kteří ho budou chtít nosit v kapse. Pocity komunity jsou zatím spíše smíšené, takže uvidíme.

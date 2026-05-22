@@ -1,0 +1,41 @@
+01:08 | Dočkali jsme se! SpaceX ukázal záběry Starshipu z družice, kterou vypustil jako poslední (viz aktualizace níže). Toto vidíme poprvé! Inženýři si mohou prohlédnout tepelný štít před návratem lodi do atmosféry
+Oživeno 01:05 | Novinkou telemetrie pro diváky je glóbus vpravo dole s vyznačením aktuální polohy Starshipu. Po více než třiceti minutách letu se přibližuje k pobřeží Afriky. Loď se pohybuje rychlostí okolo 26415 km/h a nachází se ve výšce 165 kilometrů.
+Oživeno 00:59 | Poslední demonstrátor má na sobě kamery a silnou lampu, která se hned po opuštění lodi rozsvítila a ozářila plášť rakety. Doufejme, že nám SpaceX později nabídne záběry.
+Oživeno 00:50 | Dispenzer uvolňuje ze zásobníku jednu maketu (demonstrátor) satelitu Starlink za druhou
+Oživeno 00:48 | Otevřel se otvor pro vypouštění družic
+Oživeno 0:33 | Starship má za sebou hot-staging, tedy horké oddělení druhého stupně.
+Oživeno 0:31 | Napodruhé už Starship odstartoval na čas a tentokrát za perfektních světelných podmínek. Obrázky z živého přenosu a kamer na plášti za letu byly veli povedené.
+Po několika odkladech v posledních měsících a dnevg je nový Starship V3 konečně na rampě a SpaceX odpočítává poslední hodiny. Pokud se neobjeví další komplikace, dnes určitě nechoďte spát. Krátce po půlnoci se totiž otevírá devadesátiminutové okno pro v pořadí už dvanáctý start největší rakety všech dob.
+Zatímco letová trajektorie se prakticky nebude lišit od předchozích testů a druhý stupeň opět dopadne do vod Indického oceánu, rozhodně to nebude žádná rutina. Právě naopak!
+Živý přenos s českým komentářem:
+- Co letí: 1. let Starship V3 (celkově 12. integrovaný let, IFT-12)
+- Charakter letu: Booster řízeně dopadne do zálivu, Starship do Indického oceánu
+- V kolik to letí: 23. května, vyhrazené okno 00:30-02:00 SELČ
+- Odkud to letí: Texaský kosmodrom SpaceX v Boca Chica, rampa Pad 2
+- Původní živý přenos v angličtině: Web mise, síť X
+Během dvanáctého integrovaného testu nás čekají tři klíčové premiéry.
+Pad 2
+Zaprvé, raketa bude poprvé startovat z nové rampy Pad 2 v Boca Chica. Disponuje rychlejším čerpáním tekutého metanu a kyslíku ze sousedních zásobníků, plnění by tedy mělo být napříště o něco rychlejší.
+Statické zkoušky motorů Super Heavy
+Pad 2 má také nová klepeta „Mechazilly“ pro zachycení přistávajících stupňů přím ona rampě. Původní hydrauliku nahradila elektromechanika a klepeta jsou zároveň kratší. Mělo by to vést k vyšší provozní rychlosti Mechazilly, která může bezpečnější reagovat na manévrující raketu třeba při silnějším větru.
+Raptor 3
+Zdaleka nejdiskutovanější premiérou jsou ale nové raketové motory Raptor 3, které jsme ve formě nejrůznějších modelů a prototypů vídali celé roky. Za pár hodin je snad poprvé uvidíme i při skutečném startu.
+Nový motor na metan a kyslík Raptor 3
+Motor jsou malým zázrakem raketového inženýrství, zaujme totiž enormní mírou integrace, která je patrná zvláště při srovnání s předchozími modely. SpaceX se podařilo snížit hmotnost z 1630 kg na 1525 kg, konstruktéři ale hlavně vtěsnali veškeré pomocné obvody, chlazení a senzoriku do jeho nitra a pláště.
+Tři generace a postupná patrná integrace
+Motory díky tomu nepotřebují štíty, jsou poměrně obnažené, což při jejich počtu – jen Super Heavy jich má 33 – zajistilo ohromnou odtučňovací kúru pro celou raketu.
+Super Heavy 3
+První stupeň Super Heavy mnoha dílčích strukturálních vylepšení. Booster má nyní jen tři manévrovací křidélka, každé z nich je ale o půlku větší. Nově totiž budou pomáhat i při zachycení rakety klepety Mechazilly. Doposud k tomu sloužily poměrně malé zarážky přivařené na rám boosteru.
+Křidélka jsou na V3 o něco níže, aby je nepoškodil manévr hot-staging, tedy zapálení motorů druhého stupně, když raketa ještě drží pohromadě. Starship tuto techniku používá mimo jiné proto, že v okamžiku zapálení motorů lodi ji booster nadále dodává zrychlení, které tlačí palivo směrem k tryskám
+Super Heavy má nově jen tři křidélka, ale jsou mnohem větší
+Mimochodem, na předchozích letech oba stupně z bezpečnostních důvodů odděloval ochranný mezistupeň na jedno použití, který zamezil poničení obnažené techniky Super Heavy plameny motorů z lodi. Nyní už není potřeba, inženýři je totiž schovali pod „kupoli“ boosteru. Po půlnoci uvidíme, jestli to všechno správně vypočítali.
+Třetí generace boosteru se nakonec dočkala i zvýšení výkonu vedení paliva z nádrží, díky čemuž může Super Heavy zapálit všech 33 raptorů naráz, mnohem rychleji, což pomůže spolehlivějším manévrům po oddělení a navedení zpět do atmosféry.
+Starship 3
+Přepracovaného pohonu se nakonec dočkala i samotná loď, která dává jméno celému raketovému nosiči. Starship V3 má rozměrnější palivové nádrže a spolehlivější řízení pomocí postranních křidélek. Díky tomu se už bude moci účastnit delších misí v kosmu, všechny dosavadní testovací lety totiž byly suborbitální/transatmosférické a loď zatím neoperovala na plnohodnotné a stabilní oběžné dráze.
+Nový Starship má větší nádrže, spolehlivější pohon a novou avioniku
+Tyto úpravy ji umožní oblétnout Zemi a přistát v Texasu namísto v Indickém oceánu západně od Austrálie.
+S delšími provozem nakonec souvisí i nová avionika – palubní počítače a energetické jednotky obou stupňů, které dokážou ve špičce dodávat až 9 MW elektřiny pro všechny systémy obří rakety.
+Samozřejmostí je také armáda nových čidel, které ještě lépe změří všechny fáze letu, 480 Mb/s konektivita skrze Starlink a dohromady 50 kamer, které dají velínu téměř absolutní představu o tom, jak si raketa právě stojí.
+Pokud IFT-12 uspěje, letos nás konečně čekají vesmírné operace
+Pokud se noční test povede a neskončí výbuchem, čeká nás nejspíše v dohledné době ještě jedna zkouška IFT-13. Poté se už SpaceX pokusí chytnout Starship do Mechazilly, musí proto úspěšně oblétnout celou planetu.
+Tím konečně začne plnohodnotné testování lodi na oběžné dráze. Třeba zkouška přečerpání paliva z jednoho Starshipu do druhého. Vycházíme nicméně z dlouhodobějšího plánu posledních let. Starship má zpoždění, načasování a posloupnost se proto ještě může změnit.

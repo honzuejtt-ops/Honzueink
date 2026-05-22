@@ -1,4 +1,44 @@
-|T|Catch up on the Dialogues stage at Google I/O 2026.|D|22.5. 18:00|P|Alphabet CEO Sundar Pichai in conversation on the I/O 2026 Dialogues stage|X|This week at I/O, the Dialogues stage brought together Google leaders, scientific minds and creative visionaries on the technological breakthroughs helping to shape society and our future. Highlights include:
+|T|Třetí generace Starshipu odstartovala. Loď ve vesmíru vyfotila družice, kterou raketa krátce před tím vypustila|D|22.5. 22:34|P|01:08 | Dočkali jsme se, SpaceX ukzáal záběry Starshipu z družice, kterou vypustil jako poslední (viz aktualziae níže). Toto vidíme poprvé! Inženýři s...|X|01:08 | Dočkali jsme se! SpaceX ukázal záběry Starshipu z družice, kterou vypustil jako poslední (viz aktualizace níže). Toto vidíme poprvé! Inženýři si mohou prohlédnout tepelný štít před návratem lodi do atmosféry
+Oživeno 01:05 | Novinkou telemetrie pro diváky je glóbus vpravo dole s vyznačením aktuální polohy Starshipu. Po více než třiceti minutách letu se přibližuje k pobřeží Afriky. Loď se pohybuje rychlostí okolo 26415 km/h a nachází se ve výšce 165 kilometrů.
+Oživeno 00:59 | Poslední demonstrátor má na sobě kamery a silnou lampu, která se hned po opuštění lodi rozsvítila a ozářila plášť rakety. Doufejme, že nám SpaceX později nabídne záběry.
+Oživeno 00:50 | Dispenzer uvolňuje ze zásobníku jednu maketu (demonstrátor) satelitu Starlink za druhou
+Oživeno 00:48 | Otevřel se otvor pro vypouštění družic
+Oživeno 0:33 | Starship má za sebou hot-staging, tedy horké oddělení druhého stupně.
+Oživeno 0:31 | Napodruhé už Starship odstartoval na čas a tentokrát za perfektních světelných podmínek. Obrázky z živého přenosu a kamer na plášti za letu byly veli povedené.
+Po několika odkladech v posledních měsících a dnevg je nový Starship V3 konečně na rampě a SpaceX odpočítává poslední hodiny. Pokud se neobjeví další komplikace, dnes určitě nechoďte spát. Krátce po půlnoci se totiž otevírá devadesátiminutové okno pro v pořadí už dvanáctý start největší rakety všech dob.
+Zatímco letová trajektorie se prakticky nebude lišit od předchozích testů a druhý stupeň opět dopadne do vod Indického oceánu, rozhodně to nebude žádná rutina. Právě naopak!
+Živý přenos s českým komentářem:
+- Co letí: 1. let Starship V3 (celkově 12. integrovaný let, IFT-12)
+- Charakter letu: Booster řízeně dopadne do zálivu, Starship do Indického oceánu
+- V kolik to letí: 23. května, vyhrazené okno 00:30-02:00 SELČ
+- Odkud to letí: Texaský kosmodrom SpaceX v Boca Chica, rampa Pad 2
+- Původní živý přenos v angličtině: Web mise, síť X
+Během dvanáctého integrovaného testu nás čekají tři klíčové premiéry.
+Pad 2
+Zaprvé, raketa bude poprvé startovat z nové rampy Pad 2 v Boca Chica. Disponuje rychlejším čerpáním tekutého metanu a kyslíku ze sousedních zásobníků, plnění by tedy mělo být napříště o něco rychlejší.
+Statické zkoušky motorů Super Heavy
+Pad 2 má také nová klepeta „Mechazilly“ pro zachycení přistávajících stupňů přím ona rampě. Původní hydrauliku nahradila elektromechanika a klepeta jsou zároveň kratší. Mělo by to vést k vyšší provozní rychlosti Mechazilly, která může bezpečnější reagovat na manévrující raketu třeba při silnějším větru.
+Raptor 3
+Zdaleka nejdiskutovanější premiérou jsou ale nové raketové motory Raptor 3, které jsme ve formě nejrůznějších modelů a prototypů vídali celé roky. Za pár hodin je snad poprvé uvidíme i při skutečném startu.
+Nový motor na metan a kyslík Raptor 3
+Motor jsou malým zázrakem raketového inženýrství, zaujme totiž enormní mírou integrace, která je patrná zvláště při srovnání s předchozími modely. SpaceX se podařilo snížit hmotnost z 1630 kg na 1525 kg, konstruktéři ale hlavně vtěsnali veškeré pomocné obvody, chlazení a senzoriku do jeho nitra a pláště.
+Tři generace a postupná patrná integrace
+Motory díky tomu nepotřebují štíty, jsou poměrně obnažené, což při jejich počtu – jen Super Heavy jich má 33 – zajistilo ohromnou odtučňovací kúru pro celou raketu.
+Super Heavy 3
+První stupeň Super Heavy mnoha dílčích strukturálních vylepšení. Booster má nyní jen tři manévrovací křidélka, každé z nich je ale o půlku větší. Nově totiž budou pomáhat i při zachycení rakety klepety Mechazilly. Doposud k tomu sloužily poměrně malé zarážky přivařené na rám boosteru.
+Křidélka jsou na V3 o něco níže, aby je nepoškodil manévr hot-staging, tedy zapálení motorů druhého stupně, když raketa ještě drží pohromadě. Starship tuto techniku používá mimo jiné proto, že v okamžiku zapálení motorů lodi ji booster nadále dodává zrychlení, které tlačí palivo směrem k tryskám
+Super Heavy má nově jen tři křidélka, ale jsou mnohem větší
+Mimochodem, na předchozích letech oba stupně z bezpečnostních důvodů odděloval ochranný mezistupeň na jedno použití, který zamezil poničení obnažené techniky Super Heavy plameny motorů z lodi. Nyní už není potřeba, inženýři je totiž schovali pod „kupoli“ boosteru. Po půlnoci uvidíme, jestli to všechno správně vypočítali.
+Třetí generace boosteru se nakonec dočkala i zvýšení výkonu vedení paliva z nádrží, díky čemuž může Super Heavy zapálit všech 33 raptorů naráz, mnohem rychleji, což pomůže spolehlivějším manévrům po oddělení a navedení zpět do atmosféry.
+Starship 3
+Přepracovaného pohonu se nakonec dočkala i samotná loď, která dává jméno celému raketovému nosiči. Starship V3 má rozměrnější palivové nádrže a spolehlivější řízení pomocí postranních křidélek. Díky tomu se už bude moci účastnit delších misí v kosmu, všechny dosavadní testovací lety totiž byly suborbitální/transatmosférické a loď zatím neoperovala na plnohodnotné a stabilní oběžné dráze.
+Nový Starship má větší nádrže, spolehlivější pohon a novou avioniku
+Tyto úpravy ji umožní oblétnout Zemi a přistát v Texasu namísto v Indickém oceánu západně od Austrálie.
+S delšími provozem nakonec souvisí i nová avionika – palubní počítače a energetické jednotky obou stupňů, které dokážou ve špičce dodávat až 9 MW elektřiny pro všechny systémy obří rakety.
+Samozřejmostí je také armáda nových čidel, které ještě lépe změří všechny fáze letu, 480 Mb/s konektivita skrze Starlink a dohromady 50 kamer, které dají velínu téměř absolutní představu o tom, jak si raketa právě stojí.
+Pokud IFT-12 uspěje, letos nás konečně čekají vesmírné operace
+Pokud se noční test povede a neskončí výbuchem, čeká nás nejspíše v dohledné době ještě jedna zkouška IFT-13. Poté se už SpaceX pokusí chytnout Starship do Mechazilly, musí proto úspěšně oblétnout celou planetu.
+Tím konečně začne plnohodnotné testování lodi na oběžné dráze. Třeba zkouška přečerpání paliva z jednoho Starshipu do druhého. Vycházíme nicméně z dlouhodobějšího plánu posledních let. Starship má zpoždění, načasování a posloupnost se proto ještě může změnit.|E||T|Catch up on the Dialogues stage at Google I/O 2026.|D|22.5. 18:00|P|Alphabet CEO Sundar Pichai in conversation on the I/O 2026 Dialogues stage|X|This week at I/O, the Dialogues stage brought together Google leaders, scientific minds and creative visionaries on the technological breakthroughs helping to shape society and our future. Highlights include:
 - Beyond the Keynote: Google CEO Sundar Pichai sat down with Matt Berman, Creator and Founder of Future Forward, to unpack the vision behind I/O's biggest announcements.
 - AI Agents: Google’s Josh Woodward, Koray Kavukcuoglu, Liz Reid, and Jeff Dean joined Logan Kilpatrick to discuss how proactive AI agents are transforming productivity.
 - Quantum & AI: Google’s Hartmut Neven and James Manyika explored the intersection of quantum computing and AI.
@@ -225,43 +265,29 @@ You can read the Gartner report today. For enterprises ready to try Codex, there
 Author
 Gartner, Magic Quadrant for Enterprise AI Coding Agents, Phillip Walsh, Matt Basier, Keith Holloway, Nitish Tyagi, May 20, 2026.
 Gartner and Magic Quadrant are trademarks of Gartner, Inc., and/or its affiliates.
-Gartner does not endorse any company, vendor, product or service depicted in its publications, and does not advise technology users to select only those vendors with the highest ratings or other designation. Gartner publications consist of the opinions of Gartner’s business and technology insights organization and should not be construed as statements of fact. Gartner disclaims all warranties, expressed or implied, with respect to this publication, including any warranties of merchantability or fitness for a particular purpose.|E||T|Nocování tentokrát nevyšlo. SpaceX 40 sekund před zážehem odložilo start nového Starshipu V3. Další pokus zítra|D|21.5. 23:40|P|Oživeno 1:41 | Nová rampa, nová raketa, nová hromada potenciálních komplikací. Na jednu z nich inženýři narazili při finální kontrole 40 sekund před s...|X|Oživeno 1:41 | Nová rampa, nová raketa, nová hromada potenciálních komplikací. Na jednu z nich inženýři narazili při finální kontrole 40 sekund před startem – už tak odloženým až na 01:30 v noci z původních 00:30 našeho času.
-Časomíra se na několik minut zastavila, což je poměrně časté, poté ale moderátor oznámil, že jsou problémy na rampě významnější, během dnešního okna už jej inženýři neopraví, a tak Starship V3 čeká další pokus nejdříve až zítra
-Komplikace se týkaly hydraulického pohonu ramen věže.
-Po několika odkladech v posledních měsících a dnevg je nový Starship V3 konečně na rampě a SpaceX odpočítává poslední hodiny. Pokud se neobjeví další komplikace, dnes určitě nechoďte spát. Krátce po půlnoci se totiž otevírá devadesátiminutové okno pro v pořadí už dvanáctý start největší rakety všech dob.
-Zatímco letová trajektorie se prakticky nebude lišit od předchozích testů a druhý stupeň opět dopadne do vod Indického oceánu, rozhodně to nebude žádná rutina. Právě naopak!
-Živý přenos s českým komentářem:
-- Co letí: 1. let Starship V3 (celkově 12. integrovaný let, IFT-12)
-- Charakter letu: Booster řízeně dopadne do zálivu, Starship do Indického oceánu
-- V kolik to letí: 23. května, vyhrazené okno 00:30-02:00 SELČ
-- Odkud to letí: Texaský kosmodrom SpaceX v Boca Chica, rampa Pad 2
-- Původní živý přenos v angličtině: Web mise, síť X
-Během dvanáctého integrovaného testu nás čekají tři klíčové premiéry.
-Pad 2
-Zaprvé, raketa bude poprvé startovat z nové rampy Pad 2 v Boca Chica. Disponuje rychlejším čerpáním tekutého metanu a kyslíku ze sousedních zásobníků, plnění by tedy mělo být napříště o něco rychlejší.
-Statické zkoušky motorů Super Heavy
-Pad 2 má také nová klepeta „Mechazilly“ pro zachycení přistávajících stupňů přím ona rampě. Původní hydrauliku nahradila elektromechanika a klepeta jsou zároveň kratší. Mělo by to vést k vyšší provozní rychlosti Mechazilly, která může bezpečnější reagovat na manévrující raketu třeba při silnějším větru.
-Raptor 3
-Zdaleka nejdiskutovanější premiérou jsou ale nové raketové motory Raptor 3, které jsme ve formě nejrůznějších modelů a prototypů vídali celé roky. Za pár hodin je snad poprvé uvidíme i při skutečném startu.
-Nový motor na metan a kyslík Raptor 3
-Motor jsou malým zázrakem raketového inženýrství, zaujme totiž enormní mírou integrace, která je patrná zvláště při srovnání s předchozími modely. SpaceX se podařilo snížit hmotnost z 1630 kg na 1525 kg, konstruktéři ale hlavně vtěsnali veškeré pomocné obvody, chlazení a senzoriku do jeho nitra a pláště.
-Tři generace a postupná patrná integrace
-Motory díky tomu nepotřebují štíty, jsou poměrně obnažené, což při jejich počtu – jen Super Heavy jich má 33 – zajistilo ohromnou odtučňovací kúru pro celou raketu.
-Super Heavy 3
-První stupeň Super Heavy mnoha dílčích strukturálních vylepšení. Booster má nyní jen tři manévrovací křidélka, každé z nich je ale o půlku větší. Nově totiž budou pomáhat i při zachycení rakety klepety Mechazilly. Doposud k tomu sloužily poměrně malé zarážky přivařené na rám boosteru.
-Křidélka jsou na V3 o něco níže, aby je nepoškodil manévr hot-staging, tedy zapálení motorů druhého stupně, když raketa ještě drží pohromadě. Starship tuto techniku používá mimo jiné proto, že v okamžiku zapálení motorů lodi ji booster nadále dodává zrychlení, které tlačí palivo směrem k tryskám
-Super Heavy má nově jen tři křidélka, ale jsou mnohem větší
-Mimochodem, na předchozích letech oba stupně z bezpečnostních důvodů odděloval ochranný mezistupeň na jedno použití, který zamezil poničení obnažené techniky Super Heavy plameny motorů z lodi. Nyní už není potřeba, inženýři je totiž schovali pod „kupoli“ boosteru. Po půlnoci uvidíme, jestli to všechno správně vypočítali.
-Třetí generace boosteru se nakonec dočkala i zvýšení výkonu vedení paliva z nádrží, díky čemuž může Super Heavy zapálit všech 33 raptorů naráz, mnohem rychleji, což pomůže spolehlivějším manévrům po oddělení a navedení zpět do atmosféry.
-Starship 3
-Přepracovaného pohonu se nakonec dočkala i samotná loď, která dává jméno celému raketovému nosiči. Starship V3 má rozměrnější palivové nádrže a spolehlivější řízení pomocí postranních křidélek. Díky tomu se už bude moci účastnit delších misí v kosmu, všechny dosavadní testovací lety totiž byly suborbitální/transatmosférické a loď zatím neoperovala na plnohodnotné a stabilní oběžné dráze.
-Nový Starship má větší nádrže, spolehlivější pohon a novou avioniku
-Tyto úpravy ji umožní oblétnout Zemi a přistát v Texasu namísto v Indickém oceánu západně od Austrálie.
-S delšími provozem nakonec souvisí i nová avionika – palubní počítače a energetické jednotky obou stupňů, které dokážou ve špičce dodávat až 9 MW elektřiny pro všechny systémy obří rakety.
-Samozřejmostí je také armáda nových čidel, které ještě lépe změří všechny fáze letu, 480 Mb/s konektivita skrze Starlink a dohromady 50 kamer, které dají velínu téměř absolutní představu o tom, jak si raketa právě stojí.
-Pokud IFT-12 uspěje, letos nás konečně čekají vesmírné operace
-Pokud se noční test povede a neskončí výbuchem, čeká nás nejspíše v dohledné době ještě jedna zkouška IFT-13. Poté se už SpaceX pokusí chytnout Starship do Mechazilly, musí proto úspěšně oblétnout celou planetu.
-Tím konečně začne plnohodnotné testování lodi na oběžné dráze. Třeba zkouška přečerpání paliva z jednoho Starshipu do druhého. Vycházíme nicméně z dlouhodobějšího plánu posledních let. Starship má zpoždění, načasování a posloupnost se proto ještě může změnit.|E||T|Pětina balíčků nabízených AI neexistuje. Útočníci je vytvoří a doplní malwarem|D|21.5. 22:00|P|AI modely při generování kódu opakovaně navrhují závislosti na balíčcích, které na npm ani PyPI neexistují. Útočníci takové názvy mohou registrovat a ...|X|Akademický výzkum šestnácti modelů ukázal, že v testovaném vzorku byla zhruba pětina navržených balíčků fiktivní a 43 procent halucinací se při opakování dotazu vracelo pokaždé. Kampaň PhantomRaven, odhalená na podzim 2025, patří mezi první velké veřejně popsané kampaně, u nichž výzkumníci identifikovali slopsquattingový vzorec.
+Gartner does not endorse any company, vendor, product or service depicted in its publications, and does not advise technology users to select only those vendors with the highest ratings or other designation. Gartner publications consist of the opinions of Gartner’s business and technology insights organization and should not be construed as statements of fact. Gartner disclaims all warranties, expressed or implied, with respect to this publication, including any warranties of merchantability or fitness for a particular purpose.|E||T|How Virgin Atlantic ships faster with Codex|D|22.5. 00:00|P|How Virgin Atlantic used Codex to ship its revamped mobile app on a fixed holiday travel deadline, reaching near-total unit test coverage and zero P1 ...|X|How Virgin Atlantic ships faster with Codex
+Virgin Atlantic used Codex to strengthen test coverage, accelerate refactoring, and ship customer-facing software with greater confidence.
+78–80%
+Codebase size reduction on legacy refactors
+~100%
+Unit test coverage on new app
+30
+Minutes to refactor legacy codebases, down from 2 weeks
+Virgin Atlantic used Codex to ship its revamped mobile app in time for the Christmas travel rush—one of the highest-risk periods of the year for potentially introducing software bugs.
+“We’re an operational airline, so we have to be very careful about when we deliver applications to our customers live,” explains Neil Letchford, VP of Digital Engineering at Virgin Atlantic. “People are flying with this application. They need to be able to check in, and they need to be able to get on their aircraft.” With the help of Codex, the team was able to hit the window with near-complete unit test coverage and zero P1 defects at launch.
+Codex is also helping the team refactor years of legacy code dramatically faster, while analyst teams across the airline are building tools directly on top of the company’s data warehouse.
+“The ability to utilize Codex to improve the quality of the application before it got into the hands of our customers was a game-changer for us.”
+Virgin Atlantic launched the new mobile app in beta over Christmas and went live in production weeks later. “The quality levels there due to the test coverage were exceptional,” Letchford says.
+Hitting that quality bar under deadline pressure isn’t easy. Engineering teams working toward fixed launch dates often have to reduce scope or compromise on testing to ship on time. Codex helped Virgin Atlantic do the opposite: they shipped their app with zero P1 tickets at launch.
+“These are really interesting conversations from an enterprise perspective when we’re talking to our leadership team, trying to tell everyone that it’s all green for launch,” Letchford says. “These are new things we’re not used to doing. Things don’t get delayed when we’re using Codex.”
+The same kind of improvements are showing up for legacy code. Codebases the team had maintained for years are now being refactored in hours instead of weeks. “We’re seeing in some instances anywhere from 78 to 80% reduction in codebase size from utilizing Codex,” Letchford says.
+The velocity is starting to outpace the rest of the delivery process. In a recent sprint, one of the team’s lead front-end developers (a heavy Codex user) built a complete, working front-end application from a Figma prototype in a week, with the backend stubbed out. “The complaint I got from the Scrum master was that we didn’t even have our backend tickets ready to start working on,” Letchford says.
+The velocity is carrying over to the data side as well. “Codex has really helped us unblock and de-risk various migrations of databases onto our core data warehouse,” says Richard Masters, VP of Data and AI. With Codex, analyst teams can now prototype internal applications directly against the company’s data warehouse.
+“You can develop that data through to a prototype in a matter of literally a couple of hours, or within a workshop even,” Masters says. Teams across network planning, customer experience, and engineering & maintenance are now building their own internal applications with Codex, rather than routing requests through the central Data and AI team.
+“We’re seeing gains in the refactoring space where a two-week piece of work now maybe takes about 30 minutes to an hour.”
+Codex is reshaping how Virgin Atlantic ships software: from the apps customers use at the gate to the data platforms behind them. The next question for Letchford is what to do when engineering moves faster than the rest of the delivery process.
+“How do we start scaling this up, not just in pockets, but across that whole software development lifecycle?” he says. “It’s a really interesting and a good problem to have.”
+“The trajectory of Codex is thinking beyond pure engineers. It’s moving into a real tool for everyone.”|E||T|Pětina balíčků nabízených AI neexistuje. Útočníci je vytvoří a doplní malwarem|D|21.5. 22:00|P|AI modely při generování kódu opakovaně navrhují závislosti na balíčcích, které na npm ani PyPI neexistují. Útočníci takové názvy mohou registrovat a ...|X|Akademický výzkum šestnácti modelů ukázal, že v testovaném vzorku byla zhruba pětina navržených balíčků fiktivní a 43 procent halucinací se při opakování dotazu vracelo pokaždé. Kampaň PhantomRaven, odhalená na podzim 2025, patří mezi první velké veřejně popsané kampaně, u nichž výzkumníci identifikovali slopsquattingový vzorec.
 Od překlepu přes záměnu k halucinaci
 Útoky na balíčkové registry nejsou nové. U typosquattingu útočník zaregistruje balíček s názvem blízkým populární knihovně a spoléhá na lidský překlep. Registr npm proti tomu má obranu a odmítá registraci názvů příliš podobných existujícím projektům. U záměny závislostí (dependency confusion) jde o jiný mechanismus: útočník obsadí na veřejném registru název, který se shoduje s interní firemní knihovnou, a spoléhá na to, že nástroje pro správu závislostí sáhnou po veřejné verzi. Tento vektor se stal známým po incidentech u firem jako Uber a Apple v letech 2020 a 2021.
 Slopsquatting přidává třetí rovinu. Chybný předpoklad nevzniká v lidském překlepu ani v konfiguraci nástrojů. Vzniká v jazykovém modelu, který nemá spolehlivé živé ověření v registru. Pokud model nebo agent takové ověření postrádá, generuje název podle naučených vzorců, nikoli podle skutečného stavu npm nebo PyPI. Termín slopsquatting v dubnu 2025 zavedl Seth Larson z Python Software Foundation jako spojení „AI slop“ a „typosquatting“.

@@ -1,3 +1,26 @@
+|T|Catch up on the Dialogues stage at Google I/O 2026.|D|22.5. 18:00|P|Alphabet CEO Sundar Pichai in conversation on the I/O 2026 Dialogues stage|X|This week at I/O, the Dialogues stage brought together Google leaders, scientific minds and creative visionaries on the technological breakthroughs helping to shape society and our future. Highlights include:
+- Beyond the Keynote: Google CEO Sundar Pichai sat down with Matt Berman, Creator and Founder of Future Forward, to unpack the vision behind I/O's biggest announcements.
+- AI Agents: Google’s Josh Woodward, Koray Kavukcuoglu, Liz Reid, and Jeff Dean joined Logan Kilpatrick to discuss how proactive AI agents are transforming productivity.
+- Quantum & AI: Google’s Hartmut Neven and James Manyika explored the intersection of quantum computing and AI.
+- Science: Google DeepMind CEO Demis Hassabis sat down with Axios’ Mike Allen to highlight AI's role in solving complex scientific problems.
+- Robotics: Google DeepMind’s Kanishka Rao and Boston Dynamics’ Alberto Rodriguez unpacked the leap in embodied physical AI with NothingButTech’s Jacklyn Dallas.
+- Creativity: Director Doug Liman and 30 Ninjas’ Jed Weintrob and Julina Tatlock sat down with Google's Mira Lane to examine AI's role in pushing the boundaries of cinematic storytelling.
+Watch all the Dialogues on YouTube.|E|
+|T|Netflix a další na víkend: Ranč Duttonových z Yellowstonu, S.W.A.T., The Boroughs. Nebo hororová Nevěsta!|D|22.5. 17:45|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Chat Control vyhodíte oknem, ale vrátí se komínem, říká pirátka Gregorová (Podcast Živě)|D|22.5. 16:45|P|Europoslankyně Markéta Gregorová (Piráti) poodhaluje zákulisí přípravy nařízení Chat Control 2.0. Kdyby bylo schváleno, umožnilo by technologickým fir...|X|Europoslankyně Markéta Gregorová (Piráti) poodhaluje zákulisí přípravy nařízení Chat Control 2.0. Kdyby bylo schváleno, umožnilo by technologickým firmám plošně sledovat naši komunikaci. Před pár týdny skončila platnost první verze, která ukázala neefektivitu přístupu. Ani Evropský soud pro lidská práva neomezené skenování neschvaluje, protože je disproporční.
+Evropská komise přes všechny protiargumenty usiluje o přijetí trvalé legislativy, která by sledování zavedla jako normu. Gregorová vysvětluje, že červnový trialog téměř jistě neznamená konec jednání. Děti by přitom lépe ochránilo posílení kriminalistických týmů a cíleného vyšetřování, ale také regulace toxických algoritmů.
+Nedávno byl schválen zákaz svlékacích AI. Podobné kroky posilují ochranu zranitelných osob, aniž by evropská populace ztratila soukromí. V debatě o Chat Control nicméně chybí věcný a kritický přístup ze strany Komise. V Evropské unii navíc nedávno zazněla myšlenka, že by bylo dobré zakázat VPN. Politická nálada soukromí momentálně nepřeje.
+Program pořadu
+- 02:06 – Chat Control 1.0
+- 09:07 – Nálada proti soukromí
+- 16:00 – Hollywoodská lobby
+- 23:58 – Chat Control 2.0
+- 35:17 – Co bude dál?
+Zdroje a další informace: hudba od Nihilora
+Podcast Živě najdete také na Spotify, kde se můžete přihlásit k odběru, stejně tak ve službách Apple Podcasts a YouTube Music. Pořad lze odebírat i prostřednictvím RSS. Budeme rádi za zpětnou vazbu. Pokud se vám podcast líbí, sdílejte jej.
+V našem podcastovém kanále najdete také videopořad Týden Živě. Ve zvukové podobě zde vychází každé pondělí.|E|
 |T|Zen 6 je na cestě, AMD spouští sériovou výrobu prvních 2nm procesorů. Ryzeny ale nejsou první na řadě|D|22.5. 16:20|P|AMD oznámilo, že rozjelo sériovou výrobu svých prvních 2nm procesorů s novou architekturou Zen 6.|X|Už to pomalu budou dva roky, co AMD vydalo procesory s architekturou Zen 5 (na přelomu července a srpna roku 2024) a čím dál netrpělivěji se čeká na nástupce. Zvlášť vzhledem k tomu, kam se mezitím posunuly procesory konkurence jako Snapdragon X2 Elite od Qualcommu a Apple M5. Odpověď AMD ve formě architektury Zen 6 se teď konečně přiblížila – firma oznámila start sériové výroby, který by snad mohl signalizovat vydání ještě letos.
 Zen 6 vstupuje do sériové výroby
 Tato informace přichází z oficiálního zdroje, přímo AMD totiž k události vydalo tiskovou zprávu. Firma včera oznámila, že začal „production ramp“ procesorů Epyc 6. generace (9006) „Venice. To znamená, že předchozí zkušební výroba v malém měřítku, která produkovala inženýrské a kvalifikační vzorky, se rozšiřuje do masového měřítka sériové výroby. To ještě neznamená bezprostřední blízkost vydání, obvykle toto rozšíření samo chvíli trvá, procesorům také zabere čas, než projdou všemi stádii výroby, testování a následné logistiky, a firmy nejdřív shromažďují vyrobené kusy na sklad, aby byla při vydání dostatečná zásoba.

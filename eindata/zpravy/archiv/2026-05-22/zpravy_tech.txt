@@ -1,3 +1,81 @@
+|T|Západ Česka pokryly nové letecké snímky. Podívejte se v detailu na proměnu dálnice D6, hrad Loket nebo Prahu|D|22.5. 10:50|P|Nové letecké snímky západního Česka ukazují proměny dálnic, měst i památek v mimořádném detailu. Aktualizované ortofotomapy jsou zdarma dostupné onlin...|X|Západní část České republiky se dočkal aktualizace leteckých snímků ve vysokém rozlišení. Stojí za nimi brněnská společnost TopGis, která se snímkováním a výrobou ortofotomap věnuje už od roku 2014. Díky detailu 10 centimetrů na pixel si nyní můžete z ptačí perspektivy prohlédnout například stavbu dálnice D6, rekonstrukci hradu Loket, obchvat Klatov nebo vznikající Dvorecký most v Praze.
+Nové snímky jsou veřejnosti zdarma dostupné na webu Chytremapy.cz. Stačí si na webu najít požadované místo a zkontrolovat, zda v levém sloupci je zaškrtnuté pole Ortofotomapy ČR TopGis s lety 2023 – 2025. Nové aktualizované snímky pokrývají Prahu, Středočeský, Plzeňský, Liberecký, Ústecký a Karlovarský kraj.
+„Výsledná ortofotomapa je vyhotovena v rozlišení 10 centimetrů na pixel, což představuje aktuálně nejdetailnější plošné snímkování České republiky v rámci pravidelné aktualizace leteckých map,“ popisuje Drahomíra Zedníčková, výkonná ředitelka společnosti TopGis.
+Snímkování zajišťuje firma prostřednictvím vlastních letadel. Jde konkrétně o modely Cessna 404 a Partenavia P68, které jsou vybaveny velkoformátovými kamerami. Jejich výstupem jsou desetitisíce snímků, které musí následně specialisté v postprodukci spojit do podoby bezešvé ortofotomapy.
+zdroj: TZ|E|
+|T|Nvidia vydělala jako Apple a Microsoft dohromady. O herních grafikách už ani nemluví|D|22.5. 10:45|P|Nvidia zažila další pohádkový kvartál. Během prvního čtvrtletí firma utržila 81,6 miliardy dolarů, o 85 % více než před rokem. Čistý zisk vzrostl doko...|X|Nvidia zažila další pohádkový kvartál. Během prvního čtvrtletí firma utržila 81,6 miliardy dolarů, o 85 % více než před rokem. Čistý zisk vzrostl dokonce o 211 % na 58,3 miliardy dolarů.
+Šlo by nominálně o historicky nejvyšší kvartální zisk ze všech společností na světě, ale ve stejném čtvrtletí jej předčil Alphabet. Matka Googlu totiž vydělala ohromných 62,6 miliardy dolarů. Jen pro ilustraci, Microsoft a Apple měly shodně okolo 30 miliard.
+Alphabet však čísla dost nafouknul. Jak vyplývá z finančních analýz , skoro polovina hlášeného zisku (28,7 miliardy) nepochází z jeho vlastních služeb, ale z růstu hodnoty jeho investičních operací. Alphabet je totiž významným akcionářem Anthropicu, kterému nyní mimořádně roste kapitalizace díky úspěšné AI Claude. Alphabet díky tomu hlásí rekordní zisky, i když mu do pokladny nepřibylo nic navíc.
+Ale zpět k Nvidii. Ta nadále nepřestává růst, protože neklesá ani hlad po jejích AI akcelerátorech. Z oněch necelých 82 miliard dolarů jich 75 pochází z datacenter. Zbylých 7 miliard má na svědomí nově vzniklá divize Edge Computing. Od nového fiskálního roku už firma nereportuje zvláštní výsledky za herní divizi, segment profi karet a automotive/robotiku, ale všechna oddělení mimo datacentra hodila do jednoho pytle.
+O herním využití jejího hardwaru se v tiskové zprávě k finančním výsledkům zmiňuje jen jednou, a to v souvislosti s vydáním DLSS 4.5 a oznámením DLSS 5 .
+Důraz na AI bude mít i v dalších obdobích. Finanční ředitelka Colette Kress ostatně odhaduje, že v aktuálně probíhajícím čtvrtletí firma dosáhne dalších rekordních tržeb, predikce činí 91 miliard dolarů.
+Zdroje a další informace:
+Nvidia|E|
+|T|Sedmdesátiletý muž chtěl s Cybertruckem otestovat režim brodění. Vjel do jezera, utopil ho a sám skončil za mřížemi|D|22.5. 09:45|P|Sedmdesátiletý řidič záměrně vjel s elektrickým vozem do texaského jezera • Těžký automobil následně ve vodě uvízl a posádka z něj utekla • Policie mu...|X|Moderní technologie občas svádějí k nápadům, nad kterými zůstává rozum stát. Přesně to se stalo v americkém Texasu, kde se sedmdesátiletý Jimmy Jack McDaniel rozhodl záměrně vjet s Cybertruckem do jezera Grapevine . Chtěl totiž v praxi vyzkoušet režim „Wade Mode“ určený pro brodění. Elektrický pickup se však po vjezdu do vody zastavil a začal se potápět. Posádka z něj musela vystoupit a doplavat na břeh.
+„Wade Mode“ rozhodně není žádný „režim pro plavbu“. Tesla jej popisuje jako funkci pro pomalý průjezd mělkou vodou, například přes brody, potoky nebo malé řeky, přičemž maximální doporučená hloubka činí 81,5 centimetru (měřeno od spodní části pneumatik).
+V manuálu o plavání nenajdete ani slovo Tento režim musí řidič aktivovat ručně. Software následně nastaví nejvyšší světlou výšku a upraví nastavení vozu pro průjezd. Auto pak musí jet velmi pomalu, konkrétně rychlostí 2 až 5 km/h. Výrobce výslovně upozorňuje, že řidič musí vždy vyhodnotit hloubku i podmínky pod hladinou .
+Manuál Cybertrucku výslovně varuje, že na měkkém nebo bahnitém podkladu může vozidlo ztratit přilnavost a zapadnout. Tesla rovněž upozorňuje, že na škody způsobené vniknutím kapaliny se záruka nevztahuje. McDaniel však zjevně podcenil omezení systému a s vozem vjel do uzavřené části jezera. The Independent a NBC 5 uvádějí, že předtím s autem bez problémů jezdil v Atlantském oceánu, což jen dokládá jeho přehnanou důvěru ve schopnosti vozu.
+Utopení, vyproštění a uvěznění Auto po vjezdu do jezera uvízlo a začalo se potápět . Když na místo dorazili přivolaní hasiči a záchranáři, objevili pouze opuštěný, částečně ponořený Cybertruck. Posádka z místa utekla, nejspíš proto, aby se vyhnula odpovědnosti a trestu. Třítunové auto musela z bláta vytáhnout těžká vyprošťovací technika.
+Policie řidiče identifikovala a zatkla. Skončil v cele a nyní čelí obvinění z jízdy v uzavřené části parku, porušení pravidel bezpečnosti lodního provozu a provozování plavidla bez platné registrace. Poslední bod působí možná trochu absurdně, ale policie ho z něj skutečně obvinila.
+Událost ukazuje širší problém moderních aut nabitých technologiemi. Reklama sice často vyvolává dojem, že auto zvládne cokoli, fyzikální zákony ani předpisy ale ošálit nelze. Přitom by stačilo otevřít uživatelskou příručku.|E|
+|T|Nástupce oblíbeného náramku Xiaomi láká na velký a jasný displej. Samozřejmostí je nízká cena|D|22.5. 09:42|P|Xiaomi Smart Band 10 Pro se naučil měřit variabilitu srdečního tepu, dostal GNSS a především mnohem jasnější displej s dobrou čitelností i na slunci.|X|Xiaomi představilo inovovanou verzi oblíbeného chytrého náramku Smart Band 10 Pro. Od základní varianty se liší výrazně designem i parametry, stále ale bude nabízet velmi dobrý poměr ceny a výbavy.
+Novinka dostala 1,74" AMOLED displej s rozlišením 336 × 480 pixelů. Nabízí obnovovací frekvenci 60 Hz a maximální jas až 2 000 nitů. Díky tomu bude displej dobře čitelný i na slunci. U předchozí verze bylo maximem 1 200 nitů.
+K dispozici bude hliníková a keramická varianta. U obou má tělo tloušťku 9,7 mm. Hliníková verze váží bez řemínku 21,6 gramu, keramická varianta má 28,7 gramu. Nechybí vodotěsnost do 50 metrů.
+HRV a GNSS jako nejvýraznější inovace
+Nejvíc změn se odehrálo u zdravotních metrik. Smart Band 10 Pro nově měří HRV, tedy variabilitu srdečního tepu. To pomáhá například přesnějšímu vyhodnocení kvality spánku a regenerace. Používá také nový optický senzor pro tep a okysličení krve. Pro sledování sportovních aktivit náramek nabízí více než 150 režimů.
+Baterie má kapacitu 350 mAh a Xiaomi uvádí až 21 dní výdrže v úsporném režimu. Při běžném používání má výdrž vycházet zhruba na 15 dní a se zapnutým Always-On displejem se má dostat přibližně na 8 dní.
+Levná konkurence
+Xiaomi vylepšený model staví proti levným modelům Huawei Band 10 či Samsung Galaxy Fit3. Ty však mají o něco menší displej s nižším jasem. Rovněž výdrží by mělo mít Xiaomi navrch.
+V Číně začíná hliníková verze na 399 jüanech, keramická stojí 479 jüanů a varianta s koženým řemínkem vychází na 469 jüanů. České ceny prozatím neznáme, dají se ale očekávat částky od 1 400 Kč.
+Zdroj: GSMarena|E|
+|T|Litva na EU nečeká, autonomní řízení Tesly umožnila díky nizozemské legislativě. Co na to Česko?|D|22.5. 09:24|P|První stát EU schválil funkčnost FSD díky předešlé výjimce pro Nizozemsko. Litva nemusela procházet celým procesem, ale využila již existující legisla...|X|Litva se stala prvním státem EU, který uznal dočasné schválení nizozemského úřadu RDW pro systém Tesla FSD. Díky tomu může další členský stát převzít technické posouzení z jiné země a nemusí celý proces spouštět znovu. Nizozemsko tak zůstává jediným evropským trhem, kde Tesla národní povolení pro FSD získala a Litva je první zemí, která jej využila.
+Pokročilá asistence
+Systém má pomáhat s vedením vozu v pruhu, úpravou rychlosti a částí běžných dopravních situací. Uplatnit se může hlavně při delších nebo monotónních jízdách. Evropské úřady ho ale řadí mezi asistenční systémy úrovně SAE Level 2, podle kterého může automobil převzít některé úkony, ale odpovědnost za řízení zůstává na člověku. Řidič musí i nadále sledovat provoz, kontrolovat chování systému a být připraven zasáhnout.
+Litva ukazuje možnou cestu, jak FSD postupně rozšířit do jednotlivých zemí EU – nebude třeba čekat na celounijní legislativu. RDW uvedl, že pro platnost v celé EU je potřeba žádost Evropské komisi, hlasování členských států a většinová podpora v příslušném výboru. Do té doby mohou jednotlivé země postupovat samostatně. Nizozemské rozhodnutí tak mohou uznávat na vlastní národní úrovni.
+Evropské prostředí je u pokročilých asistenčních systémů přísnější než americký trh. Regulační proces se navíc dělí mezi národní úřady a evropské instituce. Dokumenty popisované v posledních týdnech ukazují, že část národních regulátorů má k systému výhrady. Týkají se třeba provozu v horším počasí a dodržování rychlosti. Další otázky se týkají zacházení s uživatelskými daty a rovněž samotného názvu Full Self Driving. Ten může u části veřejnosti vyvolat dojem vyšší autonomie, než systém ve skutečnosti nabízí.
+Česko vyčkává
+Po rozhodnutí nizozemského RDW logicky po obdobném kroku jako v Litvě začali volat i čeští majitelé Tesel. Ministerstvo dopravy k tomu před dvěma týdny vydalo tiskovou zprávu, která ale nic neříká. Pouze konstatuje, že musí ověřit to, zda:
+- schválená funkce neobsahuje provozní podmínky specifické pouze pro Nizozemsko,
+- je v souladu s českými pravidly silničního provozu,
+- nemůže vést k mylnému chápání role řidiče,
+- nebo k oslabení právní jistoty při řešení dopravních nehod.
+Zpráva ale nehovoří o tom, zda ministerstvo dopravy k případnému uznání dočasného schválení bude podnikat další kroky. Z dalších členských zemí je pravděpodobné schválení FSD v Belgii a Řecku, obdobně jako Litva chce postupovat i Estonsko. Většina dalších zemí potom bude čekat na celounijní verdikt.
+Zdroje: Teslarati, Ministerstvo dopravy, Reuters|E|
+|T|Cenový masakr applovských produktů na Allegru. Rekordně zlevnily iPhony, iPady, Watch i Macy|D|22.5. 08:45|P|Základní iPad jen za 6143 Kč, ale slevy jsou i na Airy a Pro. • iMac zlevnil pod 30 tisíc, v parádních akcích jsou také MacBooky Air a Pro. • Na histo...|X|Na Allegru nyní probíhají Smart Weeks a tamní čeští prodejci nabízejí v atraktivních slevách nové i výběhové modely jablečných zařízení. Ty nejlepší slevy jsou vázané na předplatné Smart, ale to se vyplatí zařídit i klidně jen na měsíc kvůli těmto akcím.
+Měsíčně stojí 59 Kč, ročně 299 Kč, ale momentálně lze prvních 12 měsíců získat s 50% slevou za 149 Kč. Členové mají přístup k podobným exkluzivním slevám a součástí je bezplatná doprava na výdejní místa a do boxů.
+Macy
+Základní 24" iMac (M4, 16/256 GB) vyjde v iStylu na 30 391 Kč, se Smartem je za 28 871 Kč. Jinde je minimálně o čtyři tisíce dražší. V akci jsou ale jen dva volné kusy. Varianta s 24 GB RAM a 512GB stojí 40 066 Kč, ale s předplatným 43 763 Kč. Běžně se prodává za 50 tisíc. Rovněž jsou ale jen dva kusy.
+MacBook Air 13 (M4, 16/256 GB) zlevnil v iStylu na 20 891 Kč, předplatitelé Smartu jej mají za 19 846 Kč. Běžně se vyprodává od 21 tisíc. Fantastická akce je na větší 15" variantu, rovněž s čipem M4 a 16/256 GB. S předplatným stojí 21 651 Kč. Jinde stojí minimálně o pět tisíc víc. Pokud chcete větší úložiště, MacBook Air 13 (M4, 16/512 GB) stojí 26 164 Kč. Běžně je za 30+ tisíc, ale v akci už je jen šest kusů.
+V českých obchodech stojí až Kč
+Porovnat ceny
+MacBook Pro 14 (M5, 16/1000 GB) stojí se Smartem 37 896 Kč, jinde je od 42 tisíc. V akci má iStyle už jen devět kusů. Pro práci může být vhodnější verze s 24 GB RAM, ta stojí 42 860 Kč, běžně je za 50 tisíc. Zbývá 10 kusů.
+Výkonnější MacBook Pro 14 (M5 Pro, 48/2000 GB) stojí 79 990 Kč, jinde byste zaplatili 90 tisíc. Volných je osm kusů.
+Výprodejový model starší generace MacBook Pro 14 (M4 Pro, 48/512 GB) vyjde na 69 990 Kč, jinde je minimálně o šest tisíc dražší.
+iPady
+Základní iPad (A16, 6/128 GB, Wi-Fi) všude stojí od osmi tisíc, na Mallu je za 6466 Kč. Předplatitelé Smartu zaplatí 6143 Kč. V akci je 287 kusů.
+iPad Air 11 (M3, 8/128 GB, 5G) má T.S.Bohemia na Allegru i vlastním e-shopu za 15 490 Kč. Verzi s 256GB úložiště prodává iStyle na Allegru i vlastním e-shopu za 17 990 Kč, běžně stojí 18 resp. 20 tisíc. Za 16 490 Kč je pak na iStylu větší iPad Air 13 (M3, 8/128 GB, Wi-Fi), zatímco jinde stojí od 19 tisíc.
+V českých obchodech stojí až Kč
+Porovnat ceny
+Nejnovější iPad Pro 11 (M5, 12/256 GB, Wi-Fi) prodává iStyle za 24 990 Kč, jinde je minimálně o tisíc korun dražší. Varianta s 5G modemem vyjde na 29 990 Kč.
+iPhony
+O dvě generace starší iPhone 15 (128 GB) stojí 13 640 Kč, se Smartem 12 958 Kč, jinde se vyprodává od 14 tisíc, navíc jde o evropskou distribuci. Mall ji má českou.
+V českých obchodech stojí až Kč
+Porovnat ceny
+iStyle prodává iPhone 16 Plus (512 GB) za 19 990 Kč, už jsou ale jen dva kusy. Jinde se za tolik vyprodávají modely se 128GB nebo 256GB úložištěm.
+Mall nabízí šest kusů iPhonu 17 Pro Max (256 GB) za 33 155 Kč, ale v předplatitelé zaplatí jen 31 497 Kč. To je na úrovni šedé distribuce. Apple za stejný model chce 35 tisíc.
+Příslušenství
+Nejlepší jablečné hodinky Watch Ultra 3 běžně stojí v e-shopech od 19 tisíc, Mall je prodává za 17 139 Kč. Akce vyžaduje Smart a v dostupných je 24 kusů.
+Sluchátka AirPods Pro 3 všude stojí od pěti tisíc, Mall je nabízí za 4990 Kč. K dispozici je 73 kusů. Velká náhlavní sluchátka AirPods Max (revize s konektorem USB-C) běžně stojí 11 tisíc a víc, iStyle je má v akci za 10 266 Kč. Předplatitelé Smartu ale zaplatí jen 9573 Kč. Volných je 248 kusů.
+V českých obchodech stojí až Kč
+Porovnat ceny
+Bluetooth lokátory AirTag 1. generace ve čtyřech kusech nabízí iStyle za 1683 Kč. Přímo v jeho e-shopu jsou ale ještě levněji za 1290 Kč. AirTagy 2. generace v sadě čtyř kusů pak Mall nabízí za 1891 Kč. Tyto sady běžně stojí od dvou tisíc.
+Přes WhatsApp a Telegram vás upozorníme na novou slevu
+Slevové akce někdy netrvají dlouho nebo obchody mohou mít jen malé množství zlevněných produktů. Než se k článku dostanete, může být pozdě.
+Hlídač slev má ale své kanály v komunikátorech WhatsApp a Telegram. Klikněte na odkaz, otevře se v aplikaci. Jakmile vydáme článek o slevě, hned o tom dostanete zprávu. O akci se tak dozvíte v době, kdy je ještě stoprocentně platná.
+Jsme také na sociálních sítích Facebook, Threads, X, Bluesky, Mastodon, Discord a můžete odebírat naše RSS se slevami.
+WhatsApp má u kanálů vypnuté upozornění na nové zprávy. Musíte to změnit sami přes ikonu zvonku v pravém horním rohu aplikace. Viz žlutá šipka:
+Našli jste sami zajímavou slevu? Napište nám.
+Za nákup, který uskutečníte prostřednictvím odkazu v článku, může Živě dostat provizi.|E|
 |T|Apple schytal za Liquid Glass posměch. Dnes stejný směr přebírá i Google a další výrobci telefonů s Androidem|D|22.5. 07:45|P|Apple původně sklidil za skleněný design Liquid Glass  tvrdou kritiku • Čínští výrobci mobilů začali tento styl téměř okamžitě přebírat • Nakonec se p...|X|Apple původně sklidil za skleněný design Liquid Glass  tvrdou kritiku • Čínští výrobci mobilů začali tento styl téměř okamžitě přebírat • Nakonec se přidává také Google a zavádí matné sklo do Androidu
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|

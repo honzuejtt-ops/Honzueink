@@ -1,0 +1,13 @@
+Litva se stala prvním státem EU, který uznal dočasné schválení nizozemského úřadu RDW pro systém Tesla FSD. Díky tomu může další členský stát převzít technické posouzení z jiné země a nemusí celý proces spouštět znovu. Nizozemsko tak zůstává jediným evropským trhem, kde Tesla národní povolení pro FSD získala a Litva je první zemí, která jej využila.
+Pokročilá asistence
+Systém má pomáhat s vedením vozu v pruhu, úpravou rychlosti a částí běžných dopravních situací. Uplatnit se může hlavně při delších nebo monotónních jízdách. Evropské úřady ho ale řadí mezi asistenční systémy úrovně SAE Level 2, podle kterého může automobil převzít některé úkony, ale odpovědnost za řízení zůstává na člověku. Řidič musí i nadále sledovat provoz, kontrolovat chování systému a být připraven zasáhnout.
+Litva ukazuje možnou cestu, jak FSD postupně rozšířit do jednotlivých zemí EU – nebude třeba čekat na celounijní legislativu. RDW uvedl, že pro platnost v celé EU je potřeba žádost Evropské komisi, hlasování členských států a většinová podpora v příslušném výboru. Do té doby mohou jednotlivé země postupovat samostatně. Nizozemské rozhodnutí tak mohou uznávat na vlastní národní úrovni.
+Evropské prostředí je u pokročilých asistenčních systémů přísnější než americký trh. Regulační proces se navíc dělí mezi národní úřady a evropské instituce. Dokumenty popisované v posledních týdnech ukazují, že část národních regulátorů má k systému výhrady. Týkají se třeba provozu v horším počasí a dodržování rychlosti. Další otázky se týkají zacházení s uživatelskými daty a rovněž samotného názvu Full Self Driving. Ten může u části veřejnosti vyvolat dojem vyšší autonomie, než systém ve skutečnosti nabízí.
+Česko vyčkává
+Po rozhodnutí nizozemského RDW logicky po obdobném kroku jako v Litvě začali volat i čeští majitelé Tesel. Ministerstvo dopravy k tomu před dvěma týdny vydalo tiskovou zprávu, která ale nic neříká. Pouze konstatuje, že musí ověřit to, zda:
+- schválená funkce neobsahuje provozní podmínky specifické pouze pro Nizozemsko,
+- je v souladu s českými pravidly silničního provozu,
+- nemůže vést k mylnému chápání role řidiče,
+- nebo k oslabení právní jistoty při řešení dopravních nehod.
+Zpráva ale nehovoří o tom, zda ministerstvo dopravy k případnému uznání dočasného schválení bude podnikat další kroky. Z dalších členských zemí je pravděpodobné schválení FSD v Belgii a Řecku, obdobně jako Litva chce postupovat i Estonsko. Většina dalších zemí potom bude čekat na celounijní verdikt.
+Zdroje: Teslarati, Ministerstvo dopravy, Reuters

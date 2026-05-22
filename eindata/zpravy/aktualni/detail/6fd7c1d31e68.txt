@@ -1,0 +1,8 @@
+Nvidia zažila další pohádkový kvartál. Během prvního čtvrtletí firma utržila 81,6 miliardy dolarů, o 85 % více než před rokem. Čistý zisk vzrostl dokonce o 211 % na 58,3 miliardy dolarů.
+Šlo by nominálně o historicky nejvyšší kvartální zisk ze všech společností na světě, ale ve stejném čtvrtletí jej předčil Alphabet. Matka Googlu totiž vydělala ohromných 62,6 miliardy dolarů. Jen pro ilustraci, Microsoft a Apple měly shodně okolo 30 miliard.
+Alphabet však čísla dost nafouknul. Jak vyplývá z finančních analýz , skoro polovina hlášeného zisku (28,7 miliardy) nepochází z jeho vlastních služeb, ale z růstu hodnoty jeho investičních operací. Alphabet je totiž významným akcionářem Anthropicu, kterému nyní mimořádně roste kapitalizace díky úspěšné AI Claude. Alphabet díky tomu hlásí rekordní zisky, i když mu do pokladny nepřibylo nic navíc.
+Ale zpět k Nvidii. Ta nadále nepřestává růst, protože neklesá ani hlad po jejích AI akcelerátorech. Z oněch necelých 82 miliard dolarů jich 75 pochází z datacenter. Zbylých 7 miliard má na svědomí nově vzniklá divize Edge Computing. Od nového fiskálního roku už firma nereportuje zvláštní výsledky za herní divizi, segment profi karet a automotive/robotiku, ale všechna oddělení mimo datacentra hodila do jednoho pytle.
+O herním využití jejího hardwaru se v tiskové zprávě k finančním výsledkům zmiňuje jen jednou, a to v souvislosti s vydáním DLSS 4.5 a oznámením DLSS 5 .
+Důraz na AI bude mít i v dalších obdobích. Finanční ředitelka Colette Kress ostatně odhaduje, že v aktuálně probíhajícím čtvrtletí firma dosáhne dalších rekordních tržeb, predikce činí 91 miliard dolarů.
+Zdroje a další informace:
+Nvidia

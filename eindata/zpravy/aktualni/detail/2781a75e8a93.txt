@@ -1,0 +1,6 @@
+Podle výroční zprávy ČTÚ vzrostl loni počet pevných internetových přípojek o 2,3 % na 4,271 milionu. Českým sítím stále dominují Wi-Fi či obecně bezdrátové sítě provozované v bezlicenčních pásmech, ty mají 1,118 milionu přípojek.
+Dotahuje se však na ně optika vedená až do domu (FTTH/B), která meziročně vyrostla o 12 % na 1,073 milionu přípojek. Poprvé tak skleněná vlákna pokořila i metalické sítě. xDSL totiž oproti roku 2024 znovu oslabilo a už mají jen 957 tisíc aktivních přípojek. Z trendu vyplývá, že letos by už optika měla být nejrozšířenějším typem připojení.
+Situace se vyrovnává i na čtvrtém a pátém místě. Kabelovky oslabily na 594 tisíc a fixní LTE/5G sítě pak vyrostly na 490 tisíc přípojek. Okolo 40 tisíc přípojek připadá sítě typu FWA, tedy bezdráty v licencovaných pásmech, satelity, PLC, SDSL, místní LAN apod.
+Český telekomunikační úřad odhaduje, že v průměru na jednu přípojku měsíčně proteklo 412 GB dat. V roce 2024 to bylo 365 GB, o rok dříve 332 GB. Jen pro srovnání, na mobilech Češi prosurfují v průměru 15 GB.
+Zdroje a další informace:
+ČTÚ

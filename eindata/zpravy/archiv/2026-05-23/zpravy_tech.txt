@@ -1,3 +1,33 @@
+|T|Programy a nabídky se spouští rychleji. Nová aktualizace pro Windows 11 také pošle zvuk do dvou párů sluchátek|D|23.5. 15:45|P|Aktualizace KB5089573 vyšla v kanále Release Preview. • Přidává možnost přehrávat zvuk ve dvou párech bezdrátových sluchátek. • Optimalizuje výkon, om...|X|Microsoft uvolnil betaverzi další servisní aktualizace pro Windows 11. Nese označení KB5089573 a k dispozici je v kanálu Release Preview. Čísla revizí se mění na 26100.8514 a 26200.8514 podle toho, jestli používáte verzi 24H2, nebo 25H2.
+Před koncem měsíce aktualizace zamíří mimo program Insider a bude k dispozici všem jako volitelná. Popsané novinky následně zamíří povinně na všechny počítače s aktualizací, která vyjde 9. června. Níže vybíráme nejdůležitější změny. Distribuce je ve všech případech řízená.
+Obecné novinky
+- Dvě zařízení pro Bluetooth LE Audio mohou sdílet zvukový výstup. K počítači tak připojíte např. dva páry sluchátek a můžete sledovat film ve dvou. Sdílení vyvoláte z Rychlého nastavení.
+- Výstup z webkamery může zobrazit více programů najednou.
+- Správce úloh volitelně zobrazuje informace o izolaci procesů a o NPU . Je-li AI akcelerátor součástí grafické karty, informace o něm najdete v sekci Výkon.
+- Lupa lépe spolupracuje se čtečkami obrazovky, plynuleji se pohybuje a podporuje přiblížení chráněného obsahu, je-li to ovšem povoleno.
+Tyto novinky všem nabídne červnová servisní aktualizace
+Uživatelské prostředí
+- Dialog při tvorbě vývojářské jednotky podporuje určení velikosti úložiště v gigabajtech, nikoli pouze v megabajtech. Stejná změna je zavedena v Nastavení | Systém | Úložiště do dialogu pro změnu velikosti jednotky.
+- V Nastavení | Systém | Úložiště se výzva Řízení uživatelských účtů nezobrazí hned. K potvrzení jste vyzváni až při čištění dočasných souborů.
+- Barva motivu je od tapety odvozena přesněji.
+Automatické odvození barvy z tapety je přesnější
+- Správce úloh zachovává vlastní nastavení šířky sloupců v seznamu úloh i po restartu nebo ukončení.
+Technické změny
+- Aplikace a nabídky včetně Startu, vyhledávání a Centra oznámení se spouštějí rychleji. Podrobnosti Microsoft neuvádí, ale zní to jako Low Latency Profile, který dočasně zvyšuje výkon procesoru a byl nedávno neoficiálně odhalen.
+- Služba WinBio byla optimalizována, aby se snížila prodleva při obnově z moderního pohotovostního režimu (Modern Standby).
+- Autentizace pomocí Windows Hello Enhanced Sign-in Security by měla být spolehlivější.
+- Tapeta na ploše by po restartu počítače a po upgradu systému neměla mizet s tím, že ji nahradí jednobarevné pozadí. Ztrácely se zejména tapety ve vysokém rozlišení.
+Tapety ve vysokém rozlišení se po restartu mohly ztratit
+- Zlepšila se spolehlivost připojení obrazovek k dokům s rozhraním USB4. Primárně se jedná o zapnutí po probuzení počítače z režimu spánku.
+- Technologická vrstva pro USB 3 je odolnější vůči neočekávaným selháním hardwaru a změnám podmínek. Používání USB zařízení by tedy mělo být stabilnější.
+- Aktualizace zvyšuje odolnost vůči aplikacím, které by mohly udržovat senzorový rozbočovač v aktivním stavu. Takové chování přispívalo k rychlejšímu vybití akumulátoru.
+- Zlepšila se výdrž na akumulátor při používání zařízení HID. Systém by neměl aktivovat procesor kvůli nefunkčním zařízením. Aplikace dále nemohou tak snadno narušovat úsporné režimy tím, že by během nich posílaly požadavky ke vstupním zařízením.
+- Dotekovou klávesnici na přihlašovací obrazovce vyvoláte bez potíží.
+- Zlepšila se spolehlivost procesu explorer.exe při zavření přepínače vstupních metod.
+- Zlepšila se odezva při vyvolání a navigaci v historii schránky.
+- Zástupci programů na pracovní ploše se správně načítají.
+- Stahování ze Storu je rychlejší.
+- Zlepšila se spolehlivost systému na přihlašovací a zamykací obrazovce, při použití dotekových gest v Průzkumníku a při změně motivu v Nastavení.|E|
 |T|Záhadný rádiový signál ze Slunce trval rekordních 19 dní. Díky nové metodě víme, co ho způsobilo|D|23.5. 13:45|P|Rekordní sluneční rádiový záblesk trval nečekaně dlouhých devatenáct dní • Signál vznikl kvůli uvěznění velkého množství elektronů uvnitř magnetické p...|X|Slunce loni v srpnu vyslalo neobvyklý rádiový záblesk, který vědce překvapil svou délkou. Zatímco dosavadní rekord podobného jevu z května 2002 činil přibližně pět dní, tentokrát emise trvala celých devatenáct dní .
 Šlo o takzvaný rádiový záblesk typu IV – signál, který vzniká, když rozsáhlé magnetické struktury sluneční koróny uvězní elektrony. Rádiové záblesky tohoto typu přitom běžně trvají jen hodiny až dny. Vědci nyní publikovali své poznatky v odborném časopise The Astrophysical Journal Letters.
 Nová metoda odhalila zdroj Tento neobvyklý úkaz postupně zachytily čtyři sondy. Solar Orbiter jej zaznamenal jako první už 21. srpna. O dvanáct dní později se přidaly sondy Wind a Parker Solar Probe a 7. září také STEREO-A. Šlo tedy o dlouhodobý zdroj , který se spolu se Sluncem postupně dostával do zorného pole jednotlivých sond.

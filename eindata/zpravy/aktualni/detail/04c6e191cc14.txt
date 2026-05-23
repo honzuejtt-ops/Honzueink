@@ -1,0 +1,5 @@
+Stávající účty tato změna neovlivní.
+Google začal ve vybraných regionech testovat novou politiku přidělování bezplatného úložiště pro nově vytvořené účty. Místo dosavadních 15 GB získají noví uživatelé a uživatelky základní kapacitu 5 GB, což je objem totožný s konkurenční službou iCloud od Apple. Informoval o tom portál Živě.
+Podmínkou je ověření telefonního čísla
+Zbývajících 10 GB prostoru je možné odemknout, podmínkou je však zadání a ověření telefonního čísla. Google v oficiálním vyjádření potvrdil, že novinku zatím testuje ve vybraných regionech (v Keni a Nigérii). Cílem má být vyšší bezpečnost, lepší obnova dat a snaha o to, aby jedna osoba nezneužívala více účtů.
+Současných uživatelů a uživatelek se tato změna podle vyjádření společnosti netýká. Ačkoliv Google zatím neupřesnil, kdy a zda vůbec zavede toto omezení globálně, v oficiálních dokumentech podpory již začal měnit původní formulaci na text „až do 15 GB“, upozornil na to web 9to5google.com.

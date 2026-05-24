@@ -1,0 +1,12 @@
+Článek
+Schotti, humanoidní robot s mužským hlasem a rakouským přízvukem, pracuje v obchodě s domácími a kutilskými potřebami v jihoněmeckém městě Pocking poblíž rakouských hranic.
+U vchodu vítá zákazníky slovy: „Dobrý den, já jsem robot a pomůžu vám najít věci. Co hledáte?“ Jako správný zaměstnanec je stejně jako ostatní oblečen v červené vestě a na hlavě má modrobílou kšiltovku. Dokáže odpovídat na otázky, kde najít jaké zboží, zákazníky na správné místo díky dokonalé znalosti půdorysu i bezpečně dovede.
+Schotti se v obchodě „zaučuje“ od dubna letošního roku a podle Floriana Weichselbaumera ze společnosti labland.ai, který ho se svým týmem naprogramoval a vyškolil, jde o rozhodně nejlevnějšího zaměstnance v podobném obchodě.
+Když se totiž porovná jeho pořizovací cena 80 000 eur (cca 1,9 milionu korun) a dlouhá životnost, mohla by jeho hodinová pracovní sazba činit pouhé jedno euro a 70 centů (cca 41 korun).
+„V tuto chvíli se Schotti dokáže pohybovat po obchodě a provádět různé úkony. S každou trasou, kterou projde, se stává chytřejší. Naším přístupem je využití robotiky ke zlepšení situace zaměstnanců – nebo lidí obecně,“ dodal k tomu pro agenturu Reuters Weichselbaumer.
+Robot Schotti ovšem může mít různé „osobnosti“. Ten samý, místo mužského hlasu využívající ženský, je i v jiném obchodě, tentokrát s telekomunikačními službami. Zde navádí zákazníky například ke kávovaru nebo jim pomůže najít volného lidského zaměstnance.
+Konečným cílem vývojářské společnosti je přizpůsobivý robot, který bude schopen vykonávat různé práce v různých prostředích, a to po boku svých lidských kolegů.
+S humanoidem na Měsíc
+Jak se zdá, planeta Země nebude brzy jediným místem, kde se budou humanoidní roboti vyskytovat. Čína totiž nedávno oznámila, že v rámci mise Čchang-e 8, naplánované na rok 2029, vyšle humanoidního robota vybaveného umělou inteligencí až na Měsíc.
+Robot o hmotnosti zhruba 100 kilogramů, navržený Hongkongskou univerzitou vědy a techniky (HKUST), by měl sloužit kromě jiného jako nosič pro přepravu a instalaci přístrojů na různých místech na Měsíci. To vše ještě před plánovaným letem s lidskou posádkou, který chce Čína uskutečnit do roku 2030.
+Humanoidní robot bude mít po vzoru dřívějších vozítek typu rover čtyři kola, stejně tak bude vybaven solárními panely, navíc ale bude mít humanoidní horní část „těla“ se dvěma pažemi uzpůsobenými pro lepší manipulaci s různými nástroji, sběr vzorků apod., uvádí server Interesting Engineering.

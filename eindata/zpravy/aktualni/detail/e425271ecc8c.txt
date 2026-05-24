@@ -1,0 +1,26 @@
+Polohovatelný hlavní panel a další novinky postupně míří do programu Windows Insider. To znamená, že ho opět budete moct používat ve vertikální poloze. Nebo nahoře. Širších možností přizpůsobení se dočkala i nabídka Start.
+Takové nastavení bylo dříve možné, ale při přepracování hlavního panelu ve Windows 11 se ztratilo. Pár se jich vrátilo, ale o nastavení pozice panelu Microsoft nechtěl slyšet. Po funkci podle něj volalo příliš málo lidí. To bylo před čtyřmi roky.
+Letos v březnu šéf vývoje Windows potvrdil, že se polohování vrátí. Je to prý jedna z nejžádanějších funkcí.
+Ikony zarovnáte dle vlastních preferencí také ve vertikálním zobrazení
+Microsoft upřesňuje detaily. Zarovnání ikon si vyberete bez ohledu na polohu. Nabídky se otevírají v pozici relativní vůči aktuálnímu umístění tlačítek. Když zvolíte, aby se ikony neseskupovaly, i ve vertikální poloze uvidíte popisky. V tom případě bude panel širší, aby se do něj aspoň část textů vešla.
+Betaverze má své limity:
+- Alternativní polohy zatím nepodporují automatické skrývání hlavního panelu ani dotekový režim.
+- Doteková gesta pro alternativní polohy nejsou plně implementována.
+- Vyhledávací pole zatím není v alternativních polohách podporováno. Uvidíte místo něj ikonu.
+- Optimalizace výkonu a vizuální doladění všech prvků ještě nejsou hotové.
+Další nápady visí ve vzduchu. Snad bude možné určit rozdílné polohy pro jednotlivé monitory. Microsoft bude sbírat zpětnou vazbu a na jeho rozhodnutí si musíme počkat.
+Se zobrazenými popisky bude panel širší
+Potvrzeno ale je, že hlavní panel zmenšíte. Od loňska podporuje nastavení velikosti ikon, což nemá vliv na výšku panelu. Oproti Windows 10 navíc povyrostl, aby byl lépe ovladatelný dotekově. Dříve jste si výšku hlavního panelu nastavit mohli, Jedenáctky tuto elementární funkci tvrdošíjně odmítaly.
+Srovnání původní velikosti a menšího stylu zobrazení
+Nabídka Start
+Microsoft povoluje otěže rovněž u nabídky Start. Zejména umožní manuální změnu velikosti. Loni přidal větší variantu, která se automaticky použije na rozměrnějších obrazovkách. Brzy si pak budete moct vybrat, jestli se zobrazí větší, nebo naopak menší varianta. Ve Windows 10 můžete Start volně zvětšovat a zmenšovat, ale k tomu Jedenáctky aspoň prozatím nedospějí.
+Nastavení obsahu bude detailnější. Sekce Připnuté, Doporučené a Vše bude možné nezávisle na sobě skrýt. Poprvé v historii Jedenáctek tak budete mít obsah plně pod kontrolou. Jestli v nabídce chcete vidět pouze seznam všech nainstalovaných programů, právě tak si zobrazení uzpůsobíte.
+Nastavení Startu bude detailnější
+Nastavení oddílu s doporučenými soubory dnes ovlivňuje fungování seznamů odkazů (jump lists) a zobrazování posledních souborů v Průzkumníku. To se změní a vypnutí sekce Doporučené už tyto funkce Průzkumníku ponechá aktivní.
+Dnešní sekce Doporučené následně změní název na Poslední, protože v ní najdete naposledy otevřené soubory a nainstalované programy. Nově nainstalované programy ze seznamu nezmizí, protože jak vývojáři, tak uživatelé podle Microsoftu chtějí, aby byly viditelné. Dnes je však můžete volitelně skrýt.
+Malý hlavní panel a nabídka Start, v níž zůstaly jen připnuté ikony
+Vývojový tým dále přepracovává způsob, jakým jsou vybírány soubory, které se zde objevují. Nebudou tu všechny, aby se zvýšila relevance. Způsobu fungování oddílu by ovšem lépe odpovídal původní název Doporučené, který naznačuje, že je obsah filtrovaný.
+Start se dočká ještě jednoho menšího vylepšení. Budete-li chtít, schováte v nabídce své jméno a profilový obrázek účtu. To se může hodit, když s někým sdílíte obrazovku.
+Kdy si novinky vyzkoušíme?
+Všechny popsané změny začíná Microsoft zavádět v kanále Experimental. Řízená distribuce potrvá přinejmenším týdny. Výrobce neupřesňuje, které funkce zapíná jako první. Neprozrazuje ani to, kdy by je rád představil ve stabilní větvi Windows 11.
+Podle neoficiálních informací z února chtěl Microsoft tyto novinky nabídnout v létě. Vypadá to, že by svůj původní záměr mohl dodržet.

@@ -1,0 +1,24 @@
+V polovině května se k Mezinárodní kosmické stanici vydala nákladní loď Dragon (mise CRS-34). Na stanici dopravila více než dvě tuny zásob pro posádku a také dalších 800 kilogramů nákladu v netlakovém prostoru – tzv. trunku.
+Mimo jiné se na stanici vydal přístroj CLARREO Pathfinder, který bude měřit sluneční záření odrážené naší planetou s přesností až 0,3 %, což je až desetinásobné zlepšení oproti stávajícím přístrojům. Současně bude sloužit jako referenční bod pro mezikalibraci ostatních senzorů na oběžné dráze.
+Většina přístrojů měřících odražené sluneční záření podléhá na oběžné dráze degradaci v důsledku dlouhodobého vystavení extrémnímu kosmickému prostředí. CLARREO Pathfinder se ale dokáže sám kalibrovat tím, že jako referenci používá pozorování Slunce a Měsíce.
+Evropský skafandr
+Jedním z nejzajímavějších balíčků na palubě Dragonu byl ale bezesporu první evropský skafandr EuroSuit. Nejedná se o oblek pro výstupy do otevřeného kosmu (EVA), ale pro potenciálně nebezpečné fáze letu kosmickou lodí – tedy IVA (vnitrokabinový skafandr).
+Evropský skafandr EuroSuit
+Podobné skafandry se používají v lodi Crew Dragon při startu a přistání, další typ měli astronauti při letu k Měsíci během mise Artemis II a jiné mají astronauti v ruských Sojuzech.
+Skafandr máme, ale chybí nám loď
+Je tu ale jeden háček. Evropa žádnou vlastní kosmickou loď nemá; jen raketové nosiče. Pokud se na tom v budoucnu něco změní, použije se buď EuroSuit, anebo vyvine nějaký úplně nový.
+Evropský skafandr EuroSuit
+Skafandr je proto hlavně studií a testem technologie jako takové a v dohledné době se používat nebude – jen experimentálně.
+V každém případě, na vývoji skafandru se podílely tyto organizace:
+- CNES projekt koordinuje, čímž zajišťuje soulad s evropskými cíli a plnění technických i regulačních milníků.
+- Spartan Space je startup specializující se na řešení pro lidské mise v extrémních prostředích s bohatými zkušenostmi s vývojem vesmírných habitatů a skafandrů – je hlavním dodavatelem, který řídí technickou architekturu a vyvíjí systém podpory života.
+- MEDES (Institut pro kosmickou medicínu a fyziologii) pracuje na palubním biomonitorovacím systému pro sledování fyziologických parametrů astronauta v reálném čase.
+- DECATHLON prostřednictvím své divize Advanced Innovation navrhuje textilní a ergonomická řešení skafandru.
+EuroSuit má vynikat velkou volností pohybu. Konstrukce přilby s mřížkovou strukturou umožňuje dokonalé přizpůsobení morfologii každého astronauta.
+Evropský skafandr EuroSuit
+V případě potřeby má být astronaut schopen si skafandr obléknout během dvou minut. Zda tomu tak v prostředí mikrogravitace skutečně je, si osobně vyzkouší evropská astronautka Sophie Adenot, která je z Francie, takže není náhodou, že se EuroSuit na stanici vydal zrovna nyní.
+Dočkáme se evropského dragonu?
+Evropští astronauti dnes využívají služeb lodě Crew Dragon. Vlastní loď měla Evropa zatím jen jednou. V letech 2008 až 2014 absolvovala ATV celkem pět letů ke stanici se zásobami. Na jejím základě pak byla postavena Evropská servisní sekce pro lodě Orion v rámci programu Artemis.
+Návrh lodě Nyx od The Exploration Company
+Evropská kosmická agentura (ESA) před dvěma lety vypsala program LCRS (LEO Cargo Return Service), jehož cílem je vývoj a vyslání komerční kosmické lodě k ISS. Jedná se o inspiraci americkým programem COTS, který vyústil ve stavbu lodí Cygnus a Dragon. Vybrány byly firmy Alenia Space a The Exploration Company.
+Jak už název programu napovídá, nové lodě budou na rozdíl od ATV schopné se vrátit na Zemi, což ze současných nákladních lodí dokáže jen zmíněný Dragon. První let by mohl proběhnout za dva až tři roky. Nelze samozřejmě vyloučit, že v budoucnu bude některá z lodí přestavěna na pilotovanou.

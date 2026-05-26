@@ -1,0 +1,9 @@
+Článek
+Seznam Asistent funguje jako konverzační pomocník. Uživatelé mu mohou jednoduše popsat, co potřebují, a systém následně vyhledá relevantní informace, zanalyzuje je a připraví přehlednou odpověď. Využití má najít například při nákupech, sledování zpráv nebo hledání praktických rad a doporučení.
+Podle Seznamu je cílem nabídnout odpovědi, které budou jasné, srozumitelné a snadno použitelné v běžném životě. Asistent má pomoci nejen s fakty a návody, ale také s porovnáváním možností nebo rozhodováním.
+Technologicky stojí na jazykových modelech SeLLMa a využívá data z rozsáhlého ekosystému služeb Seznamu. V současnosti pracuje například s informacemi z Vyhledávání, zpravodajských webů, Zboží.cz, Počasí.cz, Firmy.cz, Sport.cz, Jízdních řádů nebo TV programu.
+„Kvalita Asistenta se každým měsícem zlepšuje. Poměr pozitivní uživatelské zpětné vazby už atakuje hranici 90 %, což je pro produkt v raném stadiu vývoje skvělé,“ řekl Peter Pekarovič, manažer produktového týmu v divizi Seznam AI, která Seznam Asistenta vyvíjí.
+Podle něj jsou ambice nového nástroje širší než jen odpovídání na jednoduché dotazy. Do budoucna chce směřovat k tomu, aby uživatel stručně zadal svůj požadavek a dostal kompletní řešení.
+„S rostoucími schopnostmi směřujeme k tomu, aby uživatel v krátkosti popsal, co potřebuje, a dostal kompletní řešení,“ doplnil Pekarovič.
+Asistenta si mohou lidé vyzkoušet na domovské stránce Seznam.cz, v aplikaci Seznam, ve Vyhledávání nebo na webu asistent.seznam.cz.
+Do budoucna má být nástroj postupně integrován i do dalších služeb firmy. „Postupně se bude Asistent rozšiřovat napříč ekosystémem celého Seznamu a nabízet zlepšení uživatelského zážitku na jejich oblíbených službách,“ uzavřel Pekarovič.

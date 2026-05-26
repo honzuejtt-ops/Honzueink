@@ -1,0 +1,7 @@
+Český stát by v budoucnu mohl provozovat vlastní alternativu ke komunikačním aplikacím typu WhatsApp, Signal, Telegram, Facebook Messenger a podobně. Lupě to řekl náměstek ministra vnitra a vládní zmocněnec pro digitalizaci a strategickou bezpečnost Lukáš Klučka.
+Myšlenka na státní komunikátor je v počáteční fázi. Cílem je zajistit bezpečnou datovou komunikaci pro stát a jeho důležité subjekty jako jsou bezpečnostní složky, ministerstva a další organizace. Implementovat by se mohla například postkvantová kryptografie (PQC).
+Plány na vytvoření takové aplikace jsou součástí nově přepracované koncepce projektu BIVOJ. Ten chce například udělat velkou revizi a sjednocení státních sítí, což by mělo zajistit větší bezpečí a zároveň optimalizovat náklady.
+Vedle toho se v rámci Bivoje mají řešit další dílčí projekty jako právě appka pro instant messaging. Měla by splňovat vysoké bezpečnostní standardy a zajistit třeba to, že data nebudou odcházet do zahraničí a tak dále.
+Státní úředníci a spol. dnes často používají Signal. Národní úřad pro kybernetickou a informační bezpečnost také ve své analýze dobře hodnotí nástroj Threema původem ze Švýcarska.
+Ani Signal nebo Threema nejsou ovšem zárukou všeho. Polsko například nedávno rozjelo plán pro přechod na vlastní aplikace jako mSzyfr Messenger. Běžně používaný Signal se totiž stal cílem různých kampaní sociálního inženýrství mířených i na úředníky a další představitele země.
+Do projektu Bivoj zapadnou i další aktivity, řešit je bude mimo jiné NÚKIB. Ten by podle Klučky měl postavit třeba bezpečnou DNS.

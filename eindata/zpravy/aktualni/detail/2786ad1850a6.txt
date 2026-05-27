@@ -1,0 +1,3 @@
+Oživeno 26. 5. 2026 | Režim soukromého prohlížení maže data relace po ukončení. Firefox 151 ale na navigační lištu přidává tlačítko, které relaci vymaže okamžitě. Díky tomu můžete soukromý režim okamžitě využít k jinému účelu. Prohlížeč si jen vyžádá potvrzení, které pro příště můžete ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

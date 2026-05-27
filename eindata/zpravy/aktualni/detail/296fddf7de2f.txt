@@ -1,0 +1,15 @@
+Článek
+Od chytrých hodinek se dnes očekává mnohem víc než jen sledování času. A protože jich je na trhu nepřeberné množství, snaží se jednotliví výrobci zaujmout, jak jen to jde. Nová řada hodinek Huawei Watch Fit 5, kterou jsem měla možnost testovat, určitě osloví řadu lidí.
+Už na první pohled jde o elegantní kousek, který zaujme lehkostí, výběrem barev, množstvím funkcí i velmi dobrým poměrem cena/výkon. Najde tak využití nejen při sportu, ale i jako designový doplněk pro volný čas.
+Základní model Watch Fit 5 s váhou 27 g nabízí hliníkové pouzdro o rozměrech 42,9×38,2×9,5 mm. 1,82" AMOLED displej (480×408 pixelů, PPI 347) s maximálním jasem 2500 nitů poskytuje velmi dobrou čitelnost i na ostrém slunci; sklíčko je křemičité.
+Verze Pro váží zhruba 30,4 g, nabízí 1,92" AMOLED displej (480×408 pixelů, PPI 328) o rozměrech 44,5×40,8×9,5 mm, titanový rámeček a hliníkový střední rám. Maximální jas je v tomto případě 3000 nitů, sklíčko je safírové.
+Hodinky jsou kompatibilní s operačními systémy Android (9.0 a vyšší) i iOS (13.0 a vyšší). V nabídce je u základní verze pět barevných variant - bílá, černá, fialová, zelená a stříbrná. Verze Pro je dostupná v bílé, černé a oranžové barvě (nylonový řemínek).
+Nízká váha hodinek je jejich velkým plusem, i při dlouhodobém nošení (i v noci) nijak netlačí, fluoroelastomerový řemínek z vysoce odolného syntetického kaučuku u testované verze je prodyšný. Hodinky se tak stanou doslova součástí ruky bez větších rušivých elementů.
+Nastavení
+Watch Fit 5 fungují na vlastním operačním systému HarmonyOS. Ke spárování s mobilem přes Bluetooth - v mém případě s iPhonem - je potřeba si stáhnout aplikaci Huawei Zdraví (dostupná přímo na App Store, na Google Play není, k dispozici na Huawei AppGallery).
+V nabídce je standardně i čeština, po připojení ke stávajícímu účtu u Huawei nebo vytvoření nového lze začít s nastavováním.
+Kvůli uzavřenému systému iOS ovšem nebude fungovat vše. Není problém s propojením kontaktů z telefonu - přes hodinky lze přijímat hovory, stejně tak i volat. Fungují i různé notifikace a přijímání zpráv, na které ale nejde zpětně odpovídat.
+Nelze posílat ani MMS, po propojení na hodinkách nefungují nastavené budíky v telefonu (jen přímo na hodinkách). Stejně tak se nepropisují zjištěná data z hodinek v Apple Zdraví. K tomu je potřeba použít placenou aplikaci třetí strany.
+Co se týče hudby, například ze Spotify, nejde do hodinek přímo stahovat skladby, stejně tak nefunguje offline poslech jen z hodinek. Mohou ale s iPhonem fungovat jako dálkový ovladač.
+Písničky si spustíte na telefonu, na hodinkách je pak lze běžně ovládat - pozastavit, znovu pouštět, stejně tak přeskakovat skladby. Pomocí korunky lze ovládat hlasitost skladeb.
+Nelze používat ani Apple Pay, hodinky ale podporují NFC platby přes službu Curve Pay.

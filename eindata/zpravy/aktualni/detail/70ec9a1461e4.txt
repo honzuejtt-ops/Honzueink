@@ -1,0 +1,34 @@
+Instalace MS SQL
+Na Debianu si vytvořím adresář pro data, které se nesmažou, když se kontejner zahodí například při automatické aktualizaci
+sudo mkdir -p /opt/mssql/data sudo chown -R 10001:0 /opt/mssql/data # MS SQL běží pod specifickým uživatelem
+Následně v Portaineru klikneme na +ADD STACK, zadáme název (např. mssql-server)
+a pomocí webového editoru vložíme konfigurační hodnoty:
+version: '3.8' services: sqlserver: image: mcr.microsoft.com/mssql/server:2019-latest container_name: mssql_2019 restart: always environment: - ACCEPT_EULA=Y # Nutné pro souhlas s licenčními podmínkami - MSSQL_SA_PASSWORD=TvojeSilneHeslo123! # Heslo musí splňovat složitost (velká, malá, čísla, znak) - MSSQL_PID=Express # Verze zdarma (můžeš změnit na Developer nebo Standard) ports: - 1433:1433 # Výchozí port pro SQL Server volumes: - /opt/mssql/data:/var/opt/mssql
+Po potvrzení Update and deploy se stáhne obraz postavený na Ubuntu 20.04, vytvoří se nová síť pro tento stack, např. 172.22.0.1, automaticky se namapuje TCP port 1433 na IP adresu Debianu a data z /var/opt/mssql
+se uloží do /opt/mssql/data
+, kde budou žít bez závislosti na stacku.
+Teď už lze pokračovat instalací aplikace, která tento server využívá, např. Pohoda SQL, nebo docházkového terminálu.
+Reverzní proxy a Caddy
+Další službou, kterou si takto pustíme, bude server Caddy. Bude sloužit jako reverzní proxy a web server. Po správném mapování portů na routeru nám běží web server a také se generuje certifikát, který můžeme sdílet do Windows a použít jako ověřený platný certifikát pro spojení pomocí RDP.
+Postup je stejný, jen má složitější konfigurační soubor a více adresářů, které je třeba vytvořit v /opt
+a nastavit práva:
+services: caddy: image: docker.io/library/caddy:2-alpine container_name: caddy_server restart: unless-stopped user: "1000:1000" environment: - TZ=Europe/Prague ports: - "80:80" - "443:443" - "443:443/udp" volumes: # Caddyfile - /opt/caddy/Caddyfile:/etc/caddy/Caddyfile # DATA (Certifikáty a klíče) - sjednoceno na standardní /data - /opt/caddy/data:/data # CONFIG - /opt/caddy/config:/config # WWW soubory - /opt/caddy/www:/var/www/html # Certfikaty - /opt/caddy/certs:/etc/caddy/certs # Logy - /opt/caddy/logs:/var/log/caddy
+Samba jako řadič domény Windows
+Nakonec jsem si nechal Sambu, kde jsem se trochu trápil s povýšením úrovně domény na Server 2016. Opět uděláme jednoduchý stack třeba s názvem samba-domena
+:
+services: samba-dc: image: instantlinux/samba-dc:latest container_name: samba-dc network_mode: host restart: always cap_add: - SYS_TIME environment: - DOMAIN_ACTION=provision - DNS_FORWARDER=8.8.8.8 - ALLOW_DNS_UPDATES=secure - BIND_INTERFACES_ONLY=yes - INTERFACES=eth0 - LOG_LEVEL=1 - MODEL=standard - NETBIOS_NAME=debian01 - REALM=dc.local - WINBIND_USE_DEFAULT_DOMAIN=yes - WORKGROUP=DC volumes: - /opt/samba/config:/etc/samba - /opt/samba/data:/var/lib/samba - /opt/samba/secrets/admin_heslo:/run/secrets/admin_pw:ro - /etc/timezone:/etc/timezone:ro - /etc/localtime:/etc/localtime:ro
+Za zmínku stojí network_mode: host
+, tedy že nebudeme vytvářet podsíť, ale pojedeme přímo na IP adrese Debianu. Dále pak je potřeba vytvořit soubor /opt/samba/secrets/admin_heslo
+s heslem administrátora. Až si vytvoříte vlastního admina, doporučuji výchozího DC\Administrator zakázat. Součástí Samby je také DNS server, který pak požadavky předává na DNS_FORWARDER
+.
+Po instalaci doména běžela na úrovni Windows 2008 R2, což už je dost historický systém, proto jsem chtěl udělat aktualizaci, ale pomocí následujícího příkazu se to nepodařilo.
+docker exec -it samba-dc samba-tool domain level raise --domain-level=2016 –forest-level=2016
+Dostal jsem jen chybovou hlášku:
+ERROR: Domain function level can't be higher than the lowest function level of a DC!
+Musel jsem pustit skript v Pythonu, aby to napravil. Pak už mohla Samba do konfiguračního souboru v /etc/samba/conf.d/fix.conf
+dostat parametr:
+[global] ad dc functional level = 2016
+Po restartu naběhla ve správné úrovni.
+Postavte si po svém
+Celé řešení je jako kostičky lega, více či méně nezávislé na sobě a přidělané na pevné desce. Zároveň poskládané z flexibilních nástrojů a lze je tak snadno replikovat do dalších sítí dalších klientů, aniž by se muselo vše znovu stavět. Stačí vzít soubor VHDX s Debianem, opravit IP adresu, pár konfiguračních voleb, např. napojení na zálohování a je hotovo.
+Jako další postup budoucnu chci doplnit Fail2ban pro větší ochranu serveru Caddy, monitoringu pomocí Zabbixu, celé řešení replikovat na další stroj kvůli redundanci, nastavit HA Proxy nejen na webové služby ale také na spojení pomocí RDP v kombinací s FSLogix, aby byla možná aktualizace za provozu.

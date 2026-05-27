@@ -1,3 +1,87 @@
+|T|Privátní cloud pro malou firmu, školu nebo úřad: MS SQL a Docker|D|27.5. 22:00|P|Navážeme na minulý díl, a protože většina z vás se dříve či později potká s MS SQL serverem, začneme jednoduchou ukázkou instalace linuxové varianty M...|X|Instalace MS SQL
+Na Debianu si vytvořím adresář pro data, které se nesmažou, když se kontejner zahodí například při automatické aktualizaci
+sudo mkdir -p /opt/mssql/data sudo chown -R 10001:0 /opt/mssql/data # MS SQL běží pod specifickým uživatelem
+Následně v Portaineru klikneme na +ADD STACK, zadáme název (např. mssql-server)
+a pomocí webového editoru vložíme konfigurační hodnoty:
+version: '3.8' services: sqlserver: image: mcr.microsoft.com/mssql/server:2019-latest container_name: mssql_2019 restart: always environment: - ACCEPT_EULA=Y # Nutné pro souhlas s licenčními podmínkami - MSSQL_SA_PASSWORD=TvojeSilneHeslo123! # Heslo musí splňovat složitost (velká, malá, čísla, znak) - MSSQL_PID=Express # Verze zdarma (můžeš změnit na Developer nebo Standard) ports: - 1433:1433 # Výchozí port pro SQL Server volumes: - /opt/mssql/data:/var/opt/mssql
+Po potvrzení Update and deploy se stáhne obraz postavený na Ubuntu 20.04, vytvoří se nová síť pro tento stack, např. 172.22.0.1, automaticky se namapuje TCP port 1433 na IP adresu Debianu a data z /var/opt/mssql
+se uloží do /opt/mssql/data
+, kde budou žít bez závislosti na stacku.
+Teď už lze pokračovat instalací aplikace, která tento server využívá, např. Pohoda SQL, nebo docházkového terminálu.
+Reverzní proxy a Caddy
+Další službou, kterou si takto pustíme, bude server Caddy. Bude sloužit jako reverzní proxy a web server. Po správném mapování portů na routeru nám běží web server a také se generuje certifikát, který můžeme sdílet do Windows a použít jako ověřený platný certifikát pro spojení pomocí RDP.
+Postup je stejný, jen má složitější konfigurační soubor a více adresářů, které je třeba vytvořit v /opt
+a nastavit práva:
+services: caddy: image: docker.io/library/caddy:2-alpine container_name: caddy_server restart: unless-stopped user: "1000:1000" environment: - TZ=Europe/Prague ports: - "80:80" - "443:443" - "443:443/udp" volumes: # Caddyfile - /opt/caddy/Caddyfile:/etc/caddy/Caddyfile # DATA (Certifikáty a klíče) - sjednoceno na standardní /data - /opt/caddy/data:/data # CONFIG - /opt/caddy/config:/config # WWW soubory - /opt/caddy/www:/var/www/html # Certfikaty - /opt/caddy/certs:/etc/caddy/certs # Logy - /opt/caddy/logs:/var/log/caddy
+Samba jako řadič domény Windows
+Nakonec jsem si nechal Sambu, kde jsem se trochu trápil s povýšením úrovně domény na Server 2016. Opět uděláme jednoduchý stack třeba s názvem samba-domena
+:
+services: samba-dc: image: instantlinux/samba-dc:latest container_name: samba-dc network_mode: host restart: always cap_add: - SYS_TIME environment: - DOMAIN_ACTION=provision - DNS_FORWARDER=8.8.8.8 - ALLOW_DNS_UPDATES=secure - BIND_INTERFACES_ONLY=yes - INTERFACES=eth0 - LOG_LEVEL=1 - MODEL=standard - NETBIOS_NAME=debian01 - REALM=dc.local - WINBIND_USE_DEFAULT_DOMAIN=yes - WORKGROUP=DC volumes: - /opt/samba/config:/etc/samba - /opt/samba/data:/var/lib/samba - /opt/samba/secrets/admin_heslo:/run/secrets/admin_pw:ro - /etc/timezone:/etc/timezone:ro - /etc/localtime:/etc/localtime:ro
+Za zmínku stojí network_mode: host
+, tedy že nebudeme vytvářet podsíť, ale pojedeme přímo na IP adrese Debianu. Dále pak je potřeba vytvořit soubor /opt/samba/secrets/admin_heslo
+s heslem administrátora. Až si vytvoříte vlastního admina, doporučuji výchozího DC\Administrator zakázat. Součástí Samby je také DNS server, který pak požadavky předává na DNS_FORWARDER
+.
+Po instalaci doména běžela na úrovni Windows 2008 R2, což už je dost historický systém, proto jsem chtěl udělat aktualizaci, ale pomocí následujícího příkazu se to nepodařilo.
+docker exec -it samba-dc samba-tool domain level raise --domain-level=2016 –forest-level=2016
+Dostal jsem jen chybovou hlášku:
+ERROR: Domain function level can't be higher than the lowest function level of a DC!
+Musel jsem pustit skript v Pythonu, aby to napravil. Pak už mohla Samba do konfiguračního souboru v /etc/samba/conf.d/fix.conf
+dostat parametr:
+[global] ad dc functional level = 2016
+Po restartu naběhla ve správné úrovni.
+Postavte si po svém
+Celé řešení je jako kostičky lega, více či méně nezávislé na sobě a přidělané na pevné desce. Zároveň poskládané z flexibilních nástrojů a lze je tak snadno replikovat do dalších sítí dalších klientů, aniž by se muselo vše znovu stavět. Stačí vzít soubor VHDX s Debianem, opravit IP adresu, pár konfiguračních voleb, např. napojení na zálohování a je hotovo.
+Jako další postup budoucnu chci doplnit Fail2ban pro větší ochranu serveru Caddy, monitoringu pomocí Zabbixu, celé řešení replikovat na další stroj kvůli redundanci, nastavit HA Proxy nejen na webové služby ale také na spojení pomocí RDP v kombinací s FSLogix, aby byla možná aktualizace za provozu.|E|
+|T|Grafické režimy GTIA, podrobnější pohled na způsob zobrazení obrazu|D|27.5. 22:00|P|Osmibitové počítače Atari mohou skládat obraz ze čtrnácti textových popř. grafických režimů. Ovšem navíc jsou k dispozici takzvané režimy GTIA, jež zo...|X|Na začátku dnešního článku si uvedeme základní informace o tom, jak je spojeno časování mikroprocesoru s časováním použitým při vykreslování snímků. Pro jednoduchost se zaměříme na Atari upravené pro televizní normu PAL (NTSC je odlišná monstrozita, časování snímků a řádků je zde odlišné). Mikroprocesor MOS 6502 má na Atari pro PAL nastavenu frekvenci přibližně 1,77 MHz. Z této frekvence lze (převrácenou hodnotou) vypočítat dobu trvání jednoho cyklu CPU. Z této doby je dalším dělením dvěma odvozena hodnota nazývaná color cycle (důvod pro toto označení si hned řekneme).
+Co se dozvíte v článku
+- Proč mají GTIA režimy horizontální rozlišení 80 pixelů?
+- Programový výběr zvoleného GTIA režimu
+- Základ pro další demonstrační příklady: monochromatický grafický režim 320×192 pixelů
+- GTIA režim číslo 9: šestnáct intenzit barvy stejného odstínu
+- Druhý demonstrační příklad: nastavení GTIA režimu 9 s vykreslením vzorku barev
+- GTIA režim 9 není omezen jen na šedou škálu
+- Postupná změna základního odstínu barvy
+- Třetí demonstrační příklad: nastavení GTIA režimu 9 s postupnou změnou základního odstínu barvy
+- GTIA režim číslo 11: šestnáct odstínů barev stejné intenzity
+- Čtvrtý demonstrační příklad: nastavení GTIA režimu 11 s vykreslením vzorku barev
+- Postupná změna intenzity všech barev na obrazovce
+- Pátý demonstrační příklad: nastavení GTIA režimu 11 s postupnou změnou intenzity barev
+- GTIA režim číslo 10: devět nezávisle na sobě nastavitelných barev
+- Šestý demonstrační příklad: zobrazení barevné škály v režimu GTIA 10
+- GTIA režimy založené na odlišném grafickém režimu než ANTIC F (GR.8)
+- Sedmý demonstrační příklad: obrazovka s různými textovými režimy, přepnutí do „zobrazení“ GTIA
+- Příloha: Makefile pro překlad všech demonstračních příkladů
+- Repositář s demonstračními příklady
+- Odkazy na Internetu
+Zobrazení snímků je do značné míry svázáno s frekvencí CPU a tím pádem i s výše uvedeným barvovým cyklem. Zobrazení jednoho obrazového řádku na televizoru trvá 228 barvových cyklů (a tím pádem 114 cyklů procesoru). Označení color cycle vychází z toho, že barvy na obrazovce lze modifikovat právě v jednotlivých barvových cyklech (nikoli CPU cyklech). Výjimkou jsou monochromatické režimy GR.0 a GR.8, které zobrazují pixely s poloviční šířkou (pixel=1/2 color cycle) a proto se v těchto režimech barvy pixelů nemohou měnit (modifikují se jen jejich intenzity).
+Znamená to snad, že na každém televizním řádku je možné zobrazit 228 barevných pixelů nebo dokonce 228×2=456 pixelů monochromatických? Není tomu tak, protože je nutné počítat s vykreslením okrajů, i signály HSYNC a HBLANK trvají určitou dobu atd. Z tohoto důvodu se v barevných režimech zobrazuje 160 pixelů popř. 192 pixelů při nastavení širokého obrazu (viz předchozí článek). V monochromatických režimech jsme pak omezeni na 320 pixelů resp. 384 pixelů na televizním řádku.
+Konkrétní časování zobrazení jednoho televizního řádku může vypadat takto (vše je uvedeno v barvových cyklech!):
+Pro úplnost si ještě uveďme časování vertikální (i když pro dnešní článek není podstatné):
+Proč mají GTIA režimy horizontální rozlišení 80 pixelů?
+GTIA režimy nabízí horizontální rozlišení dosahující pouze 80 pixelů a rozlišení vertikální 192 (200, 224) obrazových řádků. To je poněkud nepraktické, protože při stejné kapacitě obrazové paměti by bývalo lepší mít režimy s rozlišením 160×96 pixelů v šestnácti barvách. Jedná se ovšem o režimy, které vznikly skutečně až společně s čipem GTIA, který je nástupcem čipu CTIA (a ten je ideovým nástupcem TIA z Atari 2600). A v době uvedení GTIA již bylo o všech důležitých hardwarových náležitostech osmibitových Atari rozhodnuto.
+GTIA režimy mají z těchto důvodů dvě důležitá omezení. Prvním je právě horizontální rozlišení dosahující pouze 80 pixelů a druhé omezení spočívá v tom, že barvovou paletu lze nastavit jen devíti registry a tudíž lze vybírat jen devět barev z teoreticky zobrazitelných šestnácti barev. To se částečně obchází tím, že GTIA režim není jeden, ale hned tři (s různými „barevnými“ vlastnostmi), ale toto omezení zde stále existuje.
+Omezené horizontální rozlišení plyne z toho, že o generování video signálu se sice stará čip GTIA, ovšem na základě dat, které přichází z ANTICu. A pro komunikaci mezi ANTICem a GTIA se používají tři bitové vodiče AN2, AN1, AN0. V každém barvovém cyklu (viz úvodní kapitolu, která do článku nebyla zařazena náhodně) se tedy z ANTICu do GTIA vyšlou tři bity.
+Pro NEmonochromatické ANTIC režimy mají tyto bity následující význam:
+Pro monochromatické režimy GR.0 a GR.8 je situace jiná, protože v každém barvovém cyklu je nutné zobrazit dva pixely. GTIA tedy dekóduje přijatá data odlišně – v každém cyklu hodnoty dvou pixelů:
+Pro GTIA režimy si GTIA ve čtyřech klopných obvodech zapamatuje bity D3, D2, D1, D0 poslané ve dvou po sobě následujících barvových cyklech. Následně se zapsaná čtyřbitová hodnota interpretuje podle nastaveného GTIA režimu (viz další kapitoly):
+Programový výběr zvoleného GTIA režimu
+Povolení GTIA režimů a vlastní výběr GTIA se provádí přes řídicí registr PRIOR čipu GTIA nebo přes jeho stínový registr nazvaný GPRIOR. Tento řídicí či stínový registr je pochopitelně osmibitový, přičemž jeho jednotlivé bity mají následující význam:
+Priority zobrazení hráčů a střel vůči sobě nebo vůči hracímu poli se nastavují, jak je z výše uvedené tabulky patrné, modifikací nejnižších čtyř bitů řídicího registru GPRIOR. Existuje celkem devět úrovní priorit, ovšem vybírat si můžeme jen z pěti možností tak, jak je to naznačeno v další tabulce. Vše jsme si již ukázali prakticky:
+Taktéž již známe významy bitů číslo 5 a 4. Bit číslo 5 nastavený na jedničku povoluje výpočet nové barvy v těch oblastech obrazovky, v nichž dochází k překryvu dvou hráčů. Výsledkem je barva získaná operací OR barev obou hráčů. Bit 4 nastavený na jedničku povoluje vznik pátého hráče ze čtyř střel. Ve skutečnosti tento bit pouze ovlivní barvu všech čtyř střel – o „postavení“ pátého hráče se musí postarat programátor (taktéž jsme si vyzkoušeli).
+Zbývají tedy nejvyšší dva bity, jejichž význam je následující:
+To, že je ve stínovém registru GPRIOR umístěno několik bitových polí znamená, že do tohoto registru nemůžeme pouze zapsat konkrétní konstantu, ale typicky je nutné provést operaci OR realizovanou instrukcí ORA. V dalších demonstračních příkladech se setkáme s těmito třemi postupy:
+lda GPRIOR ; modifikace stínového registru GPRIOR ora #$40 ; výběr GTIA režimu GR.9 sta GPRIOR
+lda GPRIOR ; modifikace stínového registru GPRIOR ora #$c0 ; výběr GTIA režimu GR.11 sta GPRIOR
+lda GPRIOR ; modifikace stínového registru GPRIOR ora #$80 ; výběr GTIA režimu GR.10 sta GPRIOR
+Základ pro další demonstrační příklady: monochromatický grafický režim 320×192 pixelů
+Navazující demonstrační příklady použité v tomto článku jsou založeny na stejném základě. Nejdříve je nastaven grafický režim ANTIC F (GR. 8) s rozlišením 320×192 pixelů, přičemž obrazová paměť je rozdělena na dvě části (do bloků menších než 4kB). Následně je na obrazovku vykreslen následující vzorek, který je tvořen bajty s hodnotami od 0 do 15 (tj. jsou použity všechny možné kombinace čtyř bitů):
+Výše uvedený vzorek je vykreslen smyčkou, která je prozatím (abych nemusel používat sofistikovanější adresování) napsán dosti naivním způsobem:
+draw: sta screen1, x ; zápis na první řádek sta screen1+scanline, x ; buranský zápis do sedmi obrazových řádků pod sebe sta screen1+scanline*2, x ; pozn: jde použít opakování přes makro sta screen1+scanline*3, x sta screen1+scanline*4, x sta screen1+scanline*5, x sta screen1+scanline*6, x sta screen1+scanline*7, x inx ; další zápis bude proveden o dva bajty dále inx adc #1 ; zvýšení hodnoty v akumulátoru cmp #16 ; konec smyčky? bne draw ; dokud není nula, pokračovat
+Následuje výpis úplného zdrojového kódu dnešního demonstračního příkladu:
+; --------------------------------------------------------------------- ; Grafický režim 320x192 se dvěma barvami. ; Korektní display list. ; Vykreslení šestnácti různých kombinací pixelů. ; --------------------------------------------------------------------- .include "atari.inc" .CODE ; dva bloky RAM využité jako obrazová paměť screen1 = $7000 screen2 = $8000 ; délka obrazového řádku v bajtech scanline = 320/8 .proc main lda #<dlist ; nižší byte adresy display listu sta SDLSTL lda #>dlist ; vyšší byte adresy display listu sta SDLSTH lda #0 ; zapisovaná hodnota + počitadlo smyčky tax ; offset do obrazové paměti clc ; nechceme přičítat přenos draw: sta screen1, x ; zápis na první řádek sta screen1+scanline, x ; buranský zápis do sedmi obrazových řádků pod sebe sta screen1+scanline*2, x ; pozn: jde použít opakování přes makro sta screen1+scanline*3, x sta screen1+scanline*4, x sta screen1+scanline*5, x sta screen1+scanline*6, x sta screen1+scanline*7, x inx ; další zápis bude proveden o dva bajty dále inx adc #1 ; zvýšení hodnoty v akumulátoru cmp #16 ; konec smyčky? bne draw ; dokud není nula, pokračovat loop: jmp loop .endproc dlist: .byte DL_BLK8, DL_BLK8, DL_BLK8 ; 3x8=24 prázdných obrazových řádků .byte DL_LMS+DL_MAP320x1x1 ; určení počáteční adresy obrazové paměti + jeden řádek režimu F (GR.8) .byte <screen1, >screen1 ; počáteční adresa obrazové paměti (první blok) .res 95, DL_MAP320x1x1 ; opakovat řádky grafického režimu F (GR.8) .byte DL_LMS+DL_MAP320x1x1 ; určení počáteční adresy obrazové paměti + jeden řádek režimu F (GR.8) .byte <screen2, >screen2 ; počáteční adresa obrazové paměti (druhý blok) .res 95, DL_MAP320x1x1 ; opakovat řádky grafického režimu F (GR.8) .byte DL_JVB, <dlist, >dlist ; skok na začátek display listu end: .segment "EXEHDR" .word $ffff ; uvodni sekvence bajtu v souboru XEX .word main ; zacatek kodoveho segmentu .word end - 1 ; konec kodoveho segmentu .segment "AUTOSTRT" ; segment s pocatecni adresou .word RUNAD ; naplni se pouze adresy RUNAD a RUNAD+1 .word RUNAD+1 .word main ; adresa vstupniho bodu do programu ; finito
+GTIA režim číslo 9: šestnáct intenzit barvy stejného odstínu
+Nejprve se seznámím...
+(Pokracovani na webu)|E|
 |T|Soud rozhodl o ukončení provozu držitele licencí Barrandov Kino a Barrandov Krimi|D|27.5. 18:39|P|Případ zadlužené TV Barrandov dospěl k očekávanému rozhodnutí. Městský soud v Praze ve středu 27. května vydal usnesení, jímž ukončuje provoz akciové ...|X|Případ zadlužené TV Barrandov dospěl k očekávanému rozhodnutí. Městský soud v Praze ve středu 27. května vydal usnesení, jímž ukončuje provoz akciové společnosti Barrandov Televizní Studio. Na tu jsou v současné době napsané licence dvou menších stanic z celé skupiny: Barrandov Kino a Barrandov Krimi.
 Soud tak vyhověl návrhu insolvenčního správce Davida Jánošíka, podle něhož se provoz vysílatele stal ekonomicky i fakticky neudržitelným. Reklamní tržby společnosti Barrandov Televizní Studio se v prvním čtvrtletí roku 2026 propadly hluboko pod úroveň měsíčních nákladů a krátce před prohlášením konkursu navíc obdržela výpověď z pronajatých prostor.
 Návrh na ukončení provozu podal insolvenční správce 19. května. Od února 2026 podle něj společnost generuje ztrátu v řádu milionů korun měsíčně. Průměrné měsíční tržby z hlavní činnosti dosahovaly v loňském roce 13,3 milionu korun, v prosinci 2025 ale klesly na 11,75 milionu a od ledna 2026 pokles dále zrychlil. V březnu se tržby propadly na 8,08 milionu korun, tedy zhruba o 39 procent pod úroveň loňského průměru.
@@ -73,6 +157,42 @@ Informace o otevření pásma jsou k dispozici v tomto dokumentu ČTÚ. Regulát
 |T|Apple v iOS zacelí kritickou zranitelnost. Když vám někdo z ruky vytrhne iPhone, okamžitě se uzamkne|D|27.5. 11:45|P||X|
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Cisco and OpenAI redefine enterprise engineering with Codex|D|27.5. 11:00|P|Cisco and OpenAI are redefining enterprise engineering with Codex, helping Cisco scale AI-native development, accelerate AI Defense work, and automate...|X|Cisco and OpenAI redefine enterprise engineering with Codex
+By deploying Codex broadly, Cisco made AI-native development a core part of how enterprise software gets built.
+Results
+95%+
+Of new AI features written by Codex
+Results
+10-15x
+Increase in defect resolution throughput using Codex CLI
+Results
+1,500+
+Engineering hours saved per month
+For decades, Cisco has built and operated some of the world’s most complex, mission-critical software systems. As generative AI matured from experimentation to real operational capability, Cisco leaned into what it knows best: scaling advanced technology inside demanding, real-world environments.
+That approach is already shaping how Cisco builds new products, including AI Defense, where Codex helped compress critical engineering work from several quarters to weeks.
+Rather than treat Codex as a standalone developer tool, Cisco began integrating it directly into production engineering workflows, exposing it to massive multi-repository systems, C/C++-heavy codebases, and the security, compliance, and governance requirements of a global enterprise.
+In the process, Cisco helped shape Codex into something fundamentally different from a developer productivity tool: an AI engineering teammate capable of operating at enterprise scale.
+"I’ve loved discovering new opportunities to integrate Codex into Cisco's enterprise software lifecycle workflows. Collaborating with the OpenAI team to get Codex enterprise production ready has been rewarding as well."
+Cisco’s work on AI Defense shows what that model can look like in practice. AI Defense is Cisco’s end-to-end AI security solution that protects against safety and security risks introduced by AI.
+Codex was used by Cisco’s team to write the majority of AI Defense and nearly every new feature that Cisco is building.
+“Features that would have taken several quarters to get into customers’ hands dropped to weeks.”
+This work also reflects Cisco’s broader role in advancing AI security. Cisco is among the leading security organizations working with OpenAI’s Daybreak initiative, which brings together OpenAI models, Codex, and security partners to accelerate cyber defense and continuously secure software. As part of this program, they have governed access to GPT‑5.5‑Cyber, a model for cyber defenders.
+Cisco also used Codex to help build their Defense Squad, an open-source tool that moved from ideation to the developer community in under one week.
+Cisco already runs a mature engineering organization with multiple AI initiatives in flight. What made Codex compelling wasn’t code completion or surface-level automation, but agency. Codex demonstrated the ability to:
+- Understand and reason across large, interconnected repositories
+- Work fluently in complex languages
+- Execute real workflows through CLI-based, autonomous compile-test-fix loops
+- Operate within existing review, security, and governance frameworks
+By working directly with OpenAI, Cisco engineers were able to give feedback on how these capabilities behaved in real environments, shaping areas like workflow orchestration, security controls, and support for long-running engineering tasks—all of which are critical for enterprise use.
+Once Codex was embedded into everyday engineering work, teams began applying it to some of their most challenging and time-consuming workflows:
+Cross-repo build optimization: Codex analyzed build logs and dependency graphs across more than 15 interconnected repositories, identifying inefficiencies. The result: a ~20% reduction in build times and more than 1,500 engineering hours saved per month across global environments.
+Defect remediation at scale (CodeWatch): Using Codex-CLI, Cisco automated defect repair with iterative, agentic execution on large-scale C/C++ codebases. What once took weeks of manual effort now completes in hours, delivering a 10-15× increase in defect resolution throughput and freeing engineers to focus on design and validation.
+Framework migrations in days, not weeks: When Splunk teams needed to migrate multiple UIs from React 18 to 19, Codex handled the bulk of repetitive changes autonomously, compressing weeks of work into days and allowing engineers to concentrate on judgment-heavy decisions.
+“The biggest gains came when we stopped thinking about Codex as a tool and started treating it as part of the team. We use Codex to generate and follow a plan document, allowing the reviewing team to more easily understand both the process and the code generated.”
+Cisco provided continuous feedback from real production use that helped OpenAI accelerate Codex’s readiness for large enterprises—particularly in areas like compliance, long-running task management, and integration with existing development pipelines.
+For Cisco, the collaboration established a repeatable model for adopting next-generation AI: deep technical partnership, real workloads, and leadership alignment from day one.
+Today, Codex is used across multiple Cisco business units, improving productivity, code quality, and time-to-resolution. Instead of sizing work only by traditional measures of effort, teams are increasingly asking, “How long will that Codex run take?”
+“Codex has become a meaningful part of how we think about AI-assisted development and operations going forward.”|E|
 |T|Chytré větráky Xiaomi zlevnily. Jsou tiché, otáčejí se do všech stran a ovládat je můžete mobilem|D|27.5. 10:45|P|Xiaomi Smart Air Circulation Fan zlevnil na 1399 Kč ve stolní a 1499 Kč v podlahové verzi. • Oba ventilátory jsou tiché, výkonné a otáčejí se horizont...|X|Xiaomi Smart Air Circulation Fan zlevnil na 1399 Kč ve stolní a 1499 Kč v podlahové verzi. • Oba ventilátory jsou tiché, výkonné a otáčejí se horizontálně i vertikálně. • Přes Wi-Fi se spojí s mobilem nebo chytrou domácností.
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
@@ -282,3 +402,27 @@ We know people come to ChatGPT for more than election logistics. They use ChatGP
 Our Model Spec principle Seeking the Truth Together(opens in a new window) outlines our commitment to keeping ChatGPT objective by default, with the user in control, including when users engage in political conversations. ChatGPT is a tool for people to engage with big ideas and develop their own perspective on issues. So the model is designed to avoid behavior that would manipulate a user or to conceal relevant facts or viewpoints to nudge them in a particular direction. Last fall, we announced a new political bias evaluation we use to test our models’ ability to remain objective. This important work has made OpenAI a leader in political bias evaluations that test how models respond to political topics.
 Learning while we do our part
 We will continue to learn from partners, update our safeguards, and adapt. Our goal is to support people’s ability to participate freely in elections and make their own decisions — with reliable information, transparency, and effective safeguards. We look forward to deepening the ways we can support our users, civil society, and voters as they participate in elections this year and beyond.|E|
+|T|Warp’s big bet on building open source with GPT-5.5|D|27.5. 00:00|P|Warp uses GPT-5.5 and OpenAI models to coordinate coding agents across local, cloud, and open-source development workflows.|X|Warp’s big bet on building open source with GPT‑5.5
+Warp uses GPT‑5.5 to orchestrate agents across local, cloud, and open-source workflows.
+30%
+Fewer tokens per task with GPT-5.5
+90%
+Of internal pull requests created with agents
+Warp(opens in a new window) started as a modern terminal, earning early love from developers for its speed, collaboration features, command workflows, and AI-native interface. As coding agents moved from experiments to everyday engineering workflows, Warp saw the terminal becoming a natural place for developers to work with agents: where commands, context, collaboration, and review already meet.
+When Warp open-sourced(opens in a new window) its terminal client this year, with OpenAI as the founding sponsor of the repo, the company also introduced Open Agentic Development: a model for building software in the open. Humans define objectives and supervise outcomes, while agents plan work, write code, test changes, and open pull requests.
+Recent improvements in frontier AI models helped make that kind of agent orchestration practical at scale. For Warp’s open-source workflows, GPT‑5.5 helps agents reason across larger problem spaces and prepare work for human review. In internal benchmarks, GPT‑5.5 used 30% fewer tokens per agentic coding task than GPT‑5.4, helping Warp improve efficiency as it scales long-running agent workflows.
+Today, Warp has nearly 1 million developers and is used by more than 56% of the Fortune 500. In Warp’s own engineering organization, agents now co-create around 90% of the company’s pull requests, giving the team a firsthand view into what long-running agent workflows need to scale: observability, coordination, memory, and human review.
+“We think we can ship a better Warp, more quickly, by working with our community to supervise a fleet of agents. OpenAI models help make that sustainable for the long-horizon coding work these systems require.”
+Open Agentic Development is Warp’s bet on where software development is heading. Agents will write code, and developers will specify intent, verify the outputs, and decide what ultimately ships. Those choices become reusable context for future agents, allowing the system to improve over time.
+If the orchestration is good enough, Warp believes agents can produce more consistent code than a loosely coordinated group of humans. Open source then becomes less about humans contributing implementation work directly, and more about contributing the product judgment and shared vision that only humans can provide.
+Persistent, parallelized agents need components like shared memory, reproducible environments, evaluation systems, permissions, and ways to coordinate work. Warp built Oz, its cloud orchestration platform, to manage agents across local and cloud environments.
+For Open Agentic Development workflows, Warp uses GPT‑5.5 for agents that help manage open-source contributions, according to the company. OpenAI models have also performed strongly in Warp’s internal evaluations for long-horizon engineering tasks involving reasoning, planning, code generation, and code review.
+Oz(opens in a new window) acts as a control plane for deploying and coordinating agents across local and cloud environments. Developers can launch agents through a web interface, select predefined skills and environments, choose the model and hosting configurations, and monitor long-running workflows centrally as they execute.
+Once launched, agents can continue running remotely while developers inspect live sessions, monitor execution state, review generated artifacts, and hand workflows back and forth between cloud and local environments without losing context. Oz also supports recurring workflows, allowing agents to operate like scheduled cron jobs.
+As agents accumulate more state over time, maintaining focus and preserving important decisions becomes increasingly difficult. Oz uses techniques like context compaction, persistent memory, and dedicated subagents for tasks like code search and file analysis to help agents stay reliable across extended workflows.
+OpenAI models play several roles inside Oz. For the Warp agent, tasks are classified by type and difficulty, with more complex coding and reasoning work routed to stronger model configurations. GPT‑5.5 is part of the OpenAI model mix Warp uses for demanding agentic coding workflows. Warp also uses OpenAI models as LLM-as-a-judge systems inside its evaluation pipelines.
+“We’ve found that OpenAI models regularly provide frontier-level intelligence while taking fewer tokens and turns to complete the same tasks. The models are especially strong for coding tasks that require reasoning across large problem spaces.”
+For Warp, Open Agentic Development and the Oz orchestration platform are ultimately part of the same long-term bet: that software development is evolving from individual interactions with coding assistants into systems for coordinating large numbers of persistent agents over time.
+So far, that bet seems to be paying off. Warp’s ARR grew 35x last year, with enterprise revenue up more than 500% since Q4 2025. The company says much of that growth is coming from organizations looking for more flexible ways to scale agent workflows.
+The underlying workflows around agentic development are still early and highly experimental. By open sourcing its terminal client and building in public with Open Agentic Development workflows, Warp hopes developers can help shape how orchestration, supervision, and verification systems evolve as agents become more autonomous over time.
+“No one knows exactly what the future of agentic development will look like,” Lloyd says. “We think the community ought to be able to participate in shaping it.”|E|

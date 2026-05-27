@@ -1,0 +1,50 @@
+Na začátku dnešního článku si uvedeme základní informace o tom, jak je spojeno časování mikroprocesoru s časováním použitým při vykreslování snímků. Pro jednoduchost se zaměříme na Atari upravené pro televizní normu PAL (NTSC je odlišná monstrozita, časování snímků a řádků je zde odlišné). Mikroprocesor MOS 6502 má na Atari pro PAL nastavenu frekvenci přibližně 1,77 MHz. Z této frekvence lze (převrácenou hodnotou) vypočítat dobu trvání jednoho cyklu CPU. Z této doby je dalším dělením dvěma odvozena hodnota nazývaná color cycle (důvod pro toto označení si hned řekneme).
+Co se dozvíte v článku
+- Proč mají GTIA režimy horizontální rozlišení 80 pixelů?
+- Programový výběr zvoleného GTIA režimu
+- Základ pro další demonstrační příklady: monochromatický grafický režim 320×192 pixelů
+- GTIA režim číslo 9: šestnáct intenzit barvy stejného odstínu
+- Druhý demonstrační příklad: nastavení GTIA režimu 9 s vykreslením vzorku barev
+- GTIA režim 9 není omezen jen na šedou škálu
+- Postupná změna základního odstínu barvy
+- Třetí demonstrační příklad: nastavení GTIA režimu 9 s postupnou změnou základního odstínu barvy
+- GTIA režim číslo 11: šestnáct odstínů barev stejné intenzity
+- Čtvrtý demonstrační příklad: nastavení GTIA režimu 11 s vykreslením vzorku barev
+- Postupná změna intenzity všech barev na obrazovce
+- Pátý demonstrační příklad: nastavení GTIA režimu 11 s postupnou změnou intenzity barev
+- GTIA režim číslo 10: devět nezávisle na sobě nastavitelných barev
+- Šestý demonstrační příklad: zobrazení barevné škály v režimu GTIA 10
+- GTIA režimy založené na odlišném grafickém režimu než ANTIC F (GR.8)
+- Sedmý demonstrační příklad: obrazovka s různými textovými režimy, přepnutí do „zobrazení“ GTIA
+- Příloha: Makefile pro překlad všech demonstračních příkladů
+- Repositář s demonstračními příklady
+- Odkazy na Internetu
+Zobrazení snímků je do značné míry svázáno s frekvencí CPU a tím pádem i s výše uvedeným barvovým cyklem. Zobrazení jednoho obrazového řádku na televizoru trvá 228 barvových cyklů (a tím pádem 114 cyklů procesoru). Označení color cycle vychází z toho, že barvy na obrazovce lze modifikovat právě v jednotlivých barvových cyklech (nikoli CPU cyklech). Výjimkou jsou monochromatické režimy GR.0 a GR.8, které zobrazují pixely s poloviční šířkou (pixel=1/2 color cycle) a proto se v těchto režimech barvy pixelů nemohou měnit (modifikují se jen jejich intenzity).
+Znamená to snad, že na každém televizním řádku je možné zobrazit 228 barevných pixelů nebo dokonce 228×2=456 pixelů monochromatických? Není tomu tak, protože je nutné počítat s vykreslením okrajů, i signály HSYNC a HBLANK trvají určitou dobu atd. Z tohoto důvodu se v barevných režimech zobrazuje 160 pixelů popř. 192 pixelů při nastavení širokého obrazu (viz předchozí článek). V monochromatických režimech jsme pak omezeni na 320 pixelů resp. 384 pixelů na televizním řádku.
+Konkrétní časování zobrazení jednoho televizního řádku může vypadat takto (vše je uvedeno v barvových cyklech!):
+Pro úplnost si ještě uveďme časování vertikální (i když pro dnešní článek není podstatné):
+Proč mají GTIA režimy horizontální rozlišení 80 pixelů?
+GTIA režimy nabízí horizontální rozlišení dosahující pouze 80 pixelů a rozlišení vertikální 192 (200, 224) obrazových řádků. To je poněkud nepraktické, protože při stejné kapacitě obrazové paměti by bývalo lepší mít režimy s rozlišením 160×96 pixelů v šestnácti barvách. Jedná se ovšem o režimy, které vznikly skutečně až společně s čipem GTIA, který je nástupcem čipu CTIA (a ten je ideovým nástupcem TIA z Atari 2600). A v době uvedení GTIA již bylo o všech důležitých hardwarových náležitostech osmibitových Atari rozhodnuto.
+GTIA režimy mají z těchto důvodů dvě důležitá omezení. Prvním je právě horizontální rozlišení dosahující pouze 80 pixelů a druhé omezení spočívá v tom, že barvovou paletu lze nastavit jen devíti registry a tudíž lze vybírat jen devět barev z teoreticky zobrazitelných šestnácti barev. To se částečně obchází tím, že GTIA režim není jeden, ale hned tři (s různými „barevnými“ vlastnostmi), ale toto omezení zde stále existuje.
+Omezené horizontální rozlišení plyne z toho, že o generování video signálu se sice stará čip GTIA, ovšem na základě dat, které přichází z ANTICu. A pro komunikaci mezi ANTICem a GTIA se používají tři bitové vodiče AN2, AN1, AN0. V každém barvovém cyklu (viz úvodní kapitolu, která do článku nebyla zařazena náhodně) se tedy z ANTICu do GTIA vyšlou tři bity.
+Pro NEmonochromatické ANTIC režimy mají tyto bity následující význam:
+Pro monochromatické režimy GR.0 a GR.8 je situace jiná, protože v každém barvovém cyklu je nutné zobrazit dva pixely. GTIA tedy dekóduje přijatá data odlišně – v každém cyklu hodnoty dvou pixelů:
+Pro GTIA režimy si GTIA ve čtyřech klopných obvodech zapamatuje bity D3, D2, D1, D0 poslané ve dvou po sobě následujících barvových cyklech. Následně se zapsaná čtyřbitová hodnota interpretuje podle nastaveného GTIA režimu (viz další kapitoly):
+Programový výběr zvoleného GTIA režimu
+Povolení GTIA režimů a vlastní výběr GTIA se provádí přes řídicí registr PRIOR čipu GTIA nebo přes jeho stínový registr nazvaný GPRIOR. Tento řídicí či stínový registr je pochopitelně osmibitový, přičemž jeho jednotlivé bity mají následující význam:
+Priority zobrazení hráčů a střel vůči sobě nebo vůči hracímu poli se nastavují, jak je z výše uvedené tabulky patrné, modifikací nejnižších čtyř bitů řídicího registru GPRIOR. Existuje celkem devět úrovní priorit, ovšem vybírat si můžeme jen z pěti možností tak, jak je to naznačeno v další tabulce. Vše jsme si již ukázali prakticky:
+Taktéž již známe významy bitů číslo 5 a 4. Bit číslo 5 nastavený na jedničku povoluje výpočet nové barvy v těch oblastech obrazovky, v nichž dochází k překryvu dvou hráčů. Výsledkem je barva získaná operací OR barev obou hráčů. Bit 4 nastavený na jedničku povoluje vznik pátého hráče ze čtyř střel. Ve skutečnosti tento bit pouze ovlivní barvu všech čtyř střel – o „postavení“ pátého hráče se musí postarat programátor (taktéž jsme si vyzkoušeli).
+Zbývají tedy nejvyšší dva bity, jejichž význam je následující:
+To, že je ve stínovém registru GPRIOR umístěno několik bitových polí znamená, že do tohoto registru nemůžeme pouze zapsat konkrétní konstantu, ale typicky je nutné provést operaci OR realizovanou instrukcí ORA. V dalších demonstračních příkladech se setkáme s těmito třemi postupy:
+lda GPRIOR ; modifikace stínového registru GPRIOR ora #$40 ; výběr GTIA režimu GR.9 sta GPRIOR
+lda GPRIOR ; modifikace stínového registru GPRIOR ora #$c0 ; výběr GTIA režimu GR.11 sta GPRIOR
+lda GPRIOR ; modifikace stínového registru GPRIOR ora #$80 ; výběr GTIA režimu GR.10 sta GPRIOR
+Základ pro další demonstrační příklady: monochromatický grafický režim 320×192 pixelů
+Navazující demonstrační příklady použité v tomto článku jsou založeny na stejném základě. Nejdříve je nastaven grafický režim ANTIC F (GR. 8) s rozlišením 320×192 pixelů, přičemž obrazová paměť je rozdělena na dvě části (do bloků menších než 4kB). Následně je na obrazovku vykreslen následující vzorek, který je tvořen bajty s hodnotami od 0 do 15 (tj. jsou použity všechny možné kombinace čtyř bitů):
+Výše uvedený vzorek je vykreslen smyčkou, která je prozatím (abych nemusel používat sofistikovanější adresování) napsán dosti naivním způsobem:
+draw: sta screen1, x ; zápis na první řádek sta screen1+scanline, x ; buranský zápis do sedmi obrazových řádků pod sebe sta screen1+scanline*2, x ; pozn: jde použít opakování přes makro sta screen1+scanline*3, x sta screen1+scanline*4, x sta screen1+scanline*5, x sta screen1+scanline*6, x sta screen1+scanline*7, x inx ; další zápis bude proveden o dva bajty dále inx adc #1 ; zvýšení hodnoty v akumulátoru cmp #16 ; konec smyčky? bne draw ; dokud není nula, pokračovat
+Následuje výpis úplného zdrojového kódu dnešního demonstračního příkladu:
+; --------------------------------------------------------------------- ; Grafický režim 320x192 se dvěma barvami. ; Korektní display list. ; Vykreslení šestnácti různých kombinací pixelů. ; --------------------------------------------------------------------- .include "atari.inc" .CODE ; dva bloky RAM využité jako obrazová paměť screen1 = $7000 screen2 = $8000 ; délka obrazového řádku v bajtech scanline = 320/8 .proc main lda #<dlist ; nižší byte adresy display listu sta SDLSTL lda #>dlist ; vyšší byte adresy display listu sta SDLSTH lda #0 ; zapisovaná hodnota + počitadlo smyčky tax ; offset do obrazové paměti clc ; nechceme přičítat přenos draw: sta screen1, x ; zápis na první řádek sta screen1+scanline, x ; buranský zápis do sedmi obrazových řádků pod sebe sta screen1+scanline*2, x ; pozn: jde použít opakování přes makro sta screen1+scanline*3, x sta screen1+scanline*4, x sta screen1+scanline*5, x sta screen1+scanline*6, x sta screen1+scanline*7, x inx ; další zápis bude proveden o dva bajty dále inx adc #1 ; zvýšení hodnoty v akumulátoru cmp #16 ; konec smyčky? bne draw ; dokud není nula, pokračovat loop: jmp loop .endproc dlist: .byte DL_BLK8, DL_BLK8, DL_BLK8 ; 3x8=24 prázdných obrazových řádků .byte DL_LMS+DL_MAP320x1x1 ; určení počáteční adresy obrazové paměti + jeden řádek režimu F (GR.8) .byte <screen1, >screen1 ; počáteční adresa obrazové paměti (první blok) .res 95, DL_MAP320x1x1 ; opakovat řádky grafického režimu F (GR.8) .byte DL_LMS+DL_MAP320x1x1 ; určení počáteční adresy obrazové paměti + jeden řádek režimu F (GR.8) .byte <screen2, >screen2 ; počáteční adresa obrazové paměti (druhý blok) .res 95, DL_MAP320x1x1 ; opakovat řádky grafického režimu F (GR.8) .byte DL_JVB, <dlist, >dlist ; skok na začátek display listu end: .segment "EXEHDR" .word $ffff ; uvodni sekvence bajtu v souboru XEX .word main ; zacatek kodoveho segmentu .word end - 1 ; konec kodoveho segmentu .segment "AUTOSTRT" ; segment s pocatecni adresou .word RUNAD ; naplni se pouze adresy RUNAD a RUNAD+1 .word RUNAD+1 .word main ; adresa vstupniho bodu do programu ; finito
+GTIA režim číslo 9: šestnáct intenzit barvy stejného odstínu
+Nejprve se seznámím...
+(Pokracovani na webu)

@@ -1,0 +1,36 @@
+Cisco and OpenAI redefine enterprise engineering with Codex
+By deploying Codex broadly, Cisco made AI-native development a core part of how enterprise software gets built.
+Results
+95%+
+Of new AI features written by Codex
+Results
+10-15x
+Increase in defect resolution throughput using Codex CLI
+Results
+1,500+
+Engineering hours saved per month
+For decades, Cisco has built and operated some of the world’s most complex, mission-critical software systems. As generative AI matured from experimentation to real operational capability, Cisco leaned into what it knows best: scaling advanced technology inside demanding, real-world environments.
+That approach is already shaping how Cisco builds new products, including AI Defense, where Codex helped compress critical engineering work from several quarters to weeks.
+Rather than treat Codex as a standalone developer tool, Cisco began integrating it directly into production engineering workflows, exposing it to massive multi-repository systems, C/C++-heavy codebases, and the security, compliance, and governance requirements of a global enterprise.
+In the process, Cisco helped shape Codex into something fundamentally different from a developer productivity tool: an AI engineering teammate capable of operating at enterprise scale.
+"I’ve loved discovering new opportunities to integrate Codex into Cisco's enterprise software lifecycle workflows. Collaborating with the OpenAI team to get Codex enterprise production ready has been rewarding as well."
+Cisco’s work on AI Defense shows what that model can look like in practice. AI Defense is Cisco’s end-to-end AI security solution that protects against safety and security risks introduced by AI.
+Codex was used by Cisco’s team to write the majority of AI Defense and nearly every new feature that Cisco is building.
+“Features that would have taken several quarters to get into customers’ hands dropped to weeks.”
+This work also reflects Cisco’s broader role in advancing AI security. Cisco is among the leading security organizations working with OpenAI’s Daybreak initiative, which brings together OpenAI models, Codex, and security partners to accelerate cyber defense and continuously secure software. As part of this program, they have governed access to GPT‑5.5‑Cyber, a model for cyber defenders.
+Cisco also used Codex to help build their Defense Squad, an open-source tool that moved from ideation to the developer community in under one week.
+Cisco already runs a mature engineering organization with multiple AI initiatives in flight. What made Codex compelling wasn’t code completion or surface-level automation, but agency. Codex demonstrated the ability to:
+- Understand and reason across large, interconnected repositories
+- Work fluently in complex languages
+- Execute real workflows through CLI-based, autonomous compile-test-fix loops
+- Operate within existing review, security, and governance frameworks
+By working directly with OpenAI, Cisco engineers were able to give feedback on how these capabilities behaved in real environments, shaping areas like workflow orchestration, security controls, and support for long-running engineering tasks—all of which are critical for enterprise use.
+Once Codex was embedded into everyday engineering work, teams began applying it to some of their most challenging and time-consuming workflows:
+Cross-repo build optimization: Codex analyzed build logs and dependency graphs across more than 15 interconnected repositories, identifying inefficiencies. The result: a ~20% reduction in build times and more than 1,500 engineering hours saved per month across global environments.
+Defect remediation at scale (CodeWatch): Using Codex-CLI, Cisco automated defect repair with iterative, agentic execution on large-scale C/C++ codebases. What once took weeks of manual effort now completes in hours, delivering a 10-15× increase in defect resolution throughput and freeing engineers to focus on design and validation.
+Framework migrations in days, not weeks: When Splunk teams needed to migrate multiple UIs from React 18 to 19, Codex handled the bulk of repetitive changes autonomously, compressing weeks of work into days and allowing engineers to concentrate on judgment-heavy decisions.
+“The biggest gains came when we stopped thinking about Codex as a tool and started treating it as part of the team. We use Codex to generate and follow a plan document, allowing the reviewing team to more easily understand both the process and the code generated.”
+Cisco provided continuous feedback from real production use that helped OpenAI accelerate Codex’s readiness for large enterprises—particularly in areas like compliance, long-running task management, and integration with existing development pipelines.
+For Cisco, the collaboration established a repeatable model for adopting next-generation AI: deep technical partnership, real workloads, and leadership alignment from day one.
+Today, Codex is used across multiple Cisco business units, improving productivity, code quality, and time-to-resolution. Instead of sizing work only by traditional measures of effort, teams are increasingly asking, “How long will that Codex run take?”
+“Codex has become a meaningful part of how we think about AI-assisted development and operations going forward.”

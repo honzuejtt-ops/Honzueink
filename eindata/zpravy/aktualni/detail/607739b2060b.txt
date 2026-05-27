@@ -2,6 +2,7 @@ Wi-Fi router je středobodem každé moderní domácnosti a pro co nejlepší kv
 Jaké elektrické předměty nedávat blízko k routeru?
 Většina routerů pracuje ve dvou frekvenčních pásmech, tedy v 2,4 a 5 GHz, přičemž modernější si poradí i s 6 GHz pásmem. Nejvyužívanější však stále zůstává to nejnižší, tedy pásmo 2,4 GHz. Je proto třeba dát si pozor na všechny elektrické věci, které na tomto pásmu fungují. Mezi ně patří levnější dětské chůvičky, krátkodosahové vysílačky nebo centrály chytré domácnosti s podporou standardu Zigbee.
 Problematické jsou však i starší bezdrátové telefony, ovladače k RC modelům nebo dronům, a dokonce i Bluetooth zařízení, jako jsou sluchátka, bezdrátové reproduktory, myši, klávesnice a herní ovladače. Aby však tato zařízení rušila signál Wi-Fi, musejí být aktivní.
+Wi-Fi routery si můžete koupit například zde.
 Rušit vaši domácí síť může i relativně nečekaná věc. Tou je starší mikrovlnná trouba s horším těsněním dvířek. I ta totiž vysílá vlny ve stejném frekvenčním pásmu. Tímto neduhem naštěstí netrpí většina moderních mikrovlnných trub, ale i tak je vhodné neumisťovat router poblíž.
 Do jaké místnosti rozhodně nedávat Wi-Fi modem
 Nejspíše tím nejhorším místem, kam umístit router, je kuchyně. Tam totiž máte obvykle hodně spotřebičů s velkou kovovou plochou, jako je chladnička nebo mrazák. Dokonce i radiátor topení může být problematický, pokud router máte moc blízko.
@@ -9,3 +10,4 @@ Kovové plochy jsou pro Wi-Fi problém hlavně proto, že místo aby jimi rádio
 Ideální místo pro router
 Umístění je klíčové pro maximalizaci jeho výkonu. Je dobré, aby byl router uprostřed domácnosti, a tak pokryl celý byt nebo dům, na vyvýšeném místě, kde ho ani z jedné strany nic neblokuje. Z toho vyplývá nevhodnost jej schovávat například do skříně. Jak jsem radil dříve, vyvarujte se umístění poblíž velkých kovových ploch.
 Pásmo 2,4 GHz je nejvíce přetížené, a proto je dobré mít dvoupásmový router s podporou pásma 5 GHz. To je méně náchylné na rušení a dokáže zajistit rychlejší bezdrátovou síť. Jeho nevýhodou je menší dosah a horší schopnost prostupovat zdmi. Většina moderních routerů je dvoupásmová a při použití původního nastavení mezi pásmy samy přepínají dle potřeby.
+Tento text obsahuje affiliate odkazy. Pokud se přes tyto odkazy na vybraných službách zaregistrujete, případně něco nakoupíte, získá z toho redakce malou provizi sloužící pro zajištění našeho fungování. Detaily o affiliate programech najdete zde.

@@ -1,0 +1,3 @@
+V červnu vyprší platnost první generace certifikátů, které používá Secure Boot. • Většinu počítačů čeká aktualizace a postará se o ni Windows Update. • V některých případech bude nutné ručně zaktualizovat UEFI.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

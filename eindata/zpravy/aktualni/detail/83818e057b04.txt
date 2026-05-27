@@ -1,0 +1,12 @@
+Článek
+Aplikaci Weather Replay spustily v polovině května společně Služba Copernicus pro změnu klimatu (C3S) a Evropské centrum pro střednědobé předpovědi počasí (ECMWF).
+Zobrazená data a animace vychází z reanalýzy ERA5, která vytváří digitální rekonstrukci historického počasí a klimatu. Kombinuje přitom skutečná meteorologická měření od roku 1940 s výstupy moderního numerického modelu ECMWF.
+Samotná aplikace je veřejně dostupná a funguje podobně jako meteorologické mapové služby typu Windy. Na rozdíl od nich se ale můžete vrátit zpět v čase. Stačí zvolit datum, čas, meteorologický ukazatel, najít místo a aplikace následně zobrazí, jaké podmínky v dané lokalitě panovaly.
+Weather Replay nabízí několik základních vrstev, například teplotu vzduchu, poryvy větru nebo srážky. K dispozici jsou ale i pokročilejší meteorologické parametry, třeba vítr a teplota ve vyšších hladinách atmosféry či geopotenciální výška.
+Na mapě lze označit také konkrétní místo, po čemž se otevře spodní panel s podrobnými daty za vybraných 48 hodin. Tato data je navíc možné stáhnout.
+Aplikace má ale i své limity. Reanalýza ERA5 pracuje s prostorovým rozlišením přibližně 30 kilometrů, což je výrazně méně než u moderních předpovědních modelů. Zatímco historické teploty bývají poměrně věrné, u lokálních jevů, jako jsou srážky, mohou být data prostorově nepřesná.
+Návrat k historickým událostem
+Přesto jde o velmi užitečný nástroj, který umožňuje alespoň přibližně nahlédnout do minulého počasí v konkrétním místě. Snadno si tak můžete ověřit například počasí v den svého narození nebo během významných historických událostí.
+Autoři aplikace navíc připravili sbírku významných meteorologických událostí z minulosti. Nechybí extrémní hurikány, ničivé bouře, povodně, vlny veder ani epizody výrazného chladu. Mezi vybranými událostmi se objevily také katastrofální povodně z roku 2002, které zasáhly Česko.
+Zajímavou funkcí je také možnost porovnání dvou různých období. Uživatelé si tak mohou například zobrazit rozdíly ve srážkových úhrnech při různých povodních nebo zjistit, jak výrazně se ochladilo během přelomu let 1978 a 1979 na začátku legendárních uhelných prázdnin.
+Minulost počasí tak už není ukrytá jen v kronikách nebo meteorologických archivech. Díky nové aplikaci Weather Replay ji lze sledovat téměř stejně jednoduše jako dnešní předpověď.

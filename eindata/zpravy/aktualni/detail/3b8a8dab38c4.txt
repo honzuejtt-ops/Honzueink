@@ -1,0 +1,7 @@
+OpenAI’s Frontier Governance Framework
+A framework to explain how our safety and security practices align with emerging legal requirements.
+Today we’re publishing OpenAI’s Frontier Governance Framework which explains how our safety and security practices align with emerging legal requirements, including California’s Transparency in Frontier AI Act and the EU AI Act’s Code of Practice for General Purpose AI.
+The Preparedness Framework remains the foundation for how we define and operationalize our approach to managing the most serious risks from advanced AI systems, including our internal practices that go beyond current legal requirements. The Frontier Governance Framework applies relevant parts of that approach into a public governance document focused on specific regulatory obligations.
+The framework covers risk assessment and mitigation across areas including cyber offense, CBRN risks, harmful manipulation, and loss of control, as well as model reporting, security risk management, incident response, external expert input, and framework updates.
+We expect our approach to continue evolving as model capabilities, evaluations, and regulatory requirements develop and we will update the Frontier Governance Framework accordingly.
+The Frontier Governance Framework is available here(opens in a new window).

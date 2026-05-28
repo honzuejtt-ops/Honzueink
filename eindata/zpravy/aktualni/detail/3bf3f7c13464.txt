@@ -1,0 +1,10 @@
+Zatímco Čuprův Rohlík.cz spoléhá na vlastního chatbota Maia v rámci aplikace i webu, konkurenční Košík se vydal cestou integrace do ChatGPT. Ode dneška je možné jeho aplikaci zapojit přímo do chatbotu a objednat kompletní nákup včetně placení bez návštěvy samotné nákupní platformy.
+Nákup bez webu
+Košík o integraci do ChatGPT mluví jako o prvním řešení tohoto typu mezi retailery v Česku a střední Evropě. ChatGPT při nákupu zobrazuje produkty a stav objednávky podobně jako web nebo mobilní aplikace. Praktický scénář tak může začít třeba receptem. Uživatel si nechá navrhnout pokrm a služba naváže výběrem surovin z nabídky Košíku.
+MCP pro vývojáře a firmy
+Vedle aplikace v ChatGPT firma zpřístupnila také MCP server. Ten je kompatibilní s hlavními chatboty včetně ChatGPT a Claude. Funkčně je oproti aplikaci pro ChatGPT omezenější – pracuje pouze textově a platba se dokončuje přes webové rozhraní. Košík ho popisuje jako vstupní bod pro nákupní agenty.
+Pilotní provoz podle Košíku ukázal hlavně firemní využití. Zájem měly společnosti, které chtějí automatizovat pravidelné závozy do kanceláří. Typicky jde o ovoce, snídaně nebo doplňování opakovaných zásob. Na tuto potřebu navazuje služba Košík na recepci. Firma chce časem agentům zpřístupnit historii objednávek, opakované nákupy a komunikaci se zákaznickou podporou. V plánu je také práce s reklamacemi a údaji o produktech, například s výživovými hodnotami.
+Budoucnost nákupů?
+Košík sám přiznává, že dnešní podíl těchto objednávek je na úrovni promile. Naopak do roku 2030 optimisticky čeká výrazný nár.ůst objednávek skrz chatboty – očekává, že bude až 15 % objednávek přicházet od AI nástrojů
+„Podíl konverzací a AI searche samozřejmě raketově roste. Už teď je jasné, že to je budoucí klíčový zdroj provozu. Takže jen logicky jdeme tam, kde jsou naši zákazníci," říká Jiří Sloup, Head of Architecture & AI v Košík.cz. „Pilotní provoz jasně ukázal, že to má smysl. Teď jsou to samozřejmě promile ze všech objednávek, do roku 2030 však počítáme s tím, že to bude až patnáct procent ze všech.“
+Zdroj: TZ Košík.cz

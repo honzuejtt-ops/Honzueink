@@ -1,3 +1,30 @@
+|T|V linuxovém jádře 7.2 se objeví protokol USB4STREAM i HDMI 2.1 pro Radeony|D|28.5. 22:00|P|Měření napětí pro Raspberry Pi, Intel USB4STREAM i na Linuxu, mizející podpora pro další ISA hardware, popora SR-IOV pro Xe3P iGPU v procesorech Nova ...|X|Měření hodnot napětí pro minipočítače Raspberry Pi
+Ovladač pro hardwarová měření desek Raspberry Pi, tedy raspberrypi-hwmon
+, dostává s kódem pro budoucí jádro Linux 7.2 podporu měření hodnot napětí. Hodnoty jsou standardně přístupné díky implementaci ve firmwaru, nicméně dosud chyběla podpora v operačním systému.
+V sub-větvi příštího jádra, tedy hwmon-next
+, už visí potřebný kód, předávání hodnot napětí půjde pochopitelně standardní cestou do uživatelského prostoru přes sysfs
+rozhraní. Jde například o měření napětí CPU jader, hodnot napětí paměťového řadiče a I/O SDRAM či hodnotu napětí fyzické vrstvy tohoto rozhraní. Vše s přesností na milivolty.
+Intel přináší protokol USB4STREAM i na Linux
+Velice sympatická novinka míří do jádra Linux 7.2 pro všechny majitele strojů s podporou USB4/Thubderbolt. Je jí implementace nového protokolu USB4STREAM, s jehož pomocí lze mezi propojenými zařízeními s tímto rozhraním jednoduchou cestou přenášet RAW pakety. Jak jsme u tohoto rozhraní zvyklí, je to implementace nediskriminující, tedy stejně jako přenese zálohy, tak klidně i data z webové kamery či dalších periferních zařízení.
+Výhodou toho celého je pochopitelně nulová potřeba nějaké počítačově síťové infrastruktury. Ovladač thunderbolt_stream
+, na kterém pracuje Mika Westerberg z Intelu, prostě exponuje daná zařízení jako /dev/tbstreamX
+(kde X je celé číslo o nuly výše), mezi nimiž pak lze data přenášet třeba jako standardní souborové operace, s dd
+či cat
+apod. Mika dodává, že všechna zařízení musí být pro toto „streamování dat“ nastavena, na což je tu ConfigFS rozhraní. Současně může běžet více přenosů, například také jedna aplikace může jeden přenosový kanál používat jako ovládací a druhý pro obousměrný přenos dat. Hezký příklad třeba Mika uvádí pro půjčení si kamerky z jedno stroje na stroji druhém:
+host2 # gst-launch-1.0 filesrc location=/dev/tbstream0 ! jpegdec ! videoconvert ! autovideosink
+host1 # gst-launch-1.0 v4l2src device=/dev/video0 ! video/x-raw,width=1920,height=1080 ! jpegenc quality=90 ! filesink location=/dev/tbstream0
+Kód už je v příslušné větvi -next
+a předpokládá se, že je / bude v kvalitě takové, aby mohl být začleněn do jádra Linux 7.2, jakmile se otevře začleňovací okno.
+Mizí podpora pro další ISA hardware
+Linux je nadále ve fázi rapidního čištění kódu o podporu prehistorických, nepoužívaných kusů hardwaru s ISA rozhraním, pro které už ani nikdo aktivně ovladače neudržuje. Dalšími obětmi těchto čistek jsou třeba PCMCIA a ISA řadiče pro ARCnet, síťovou technologii předcházející samotnému Ethernetu.
+Vývojář Ethan Nelson-Moore, který je autorem patche podporu odstraňujícím k tomu uvádí, že sice stále existují případy, kde se ARCnet hardware využívá (v průmyslovém nasazení) a tyto produkty jsou stále ve výrobě, nejde už o ISA či PCMCIA, ale třeba o PCI. Jádro si zde s přespříští verzí odlehčí sic o zanedbatelných ~5 200 řádků kódu, ale správci dané větve nebudou muset udržovat kód, který už fakticky nikdo nepotřebuje.
+Intel zapíná SR-IOV pro Xe3P iGPU v procesorech Nova Lake
+Příští generace procesorů Intel Core Ultra 400, znává též pod kódovým označením Nova Lake, přinese vedle až 52 procesorových jader také vylepšené integrované GPU. Podpora pro ně je nadále aktivně vyvíjena, nově do jádra míří spousta věcí. Ve větvi DRM-Xe-Next
+už sedí patche přinášející další nízko-úrovňové optimalizace. Nejde o nic zásadněji viditelného pro běžné uživatele, obligátní údržbu a vylepšování kódu, nicméně k tomu vývojáři přidali také aktivaci podpory SR-IOV, tedy virtualizace pro použité iGPU. Podpora se týká variant Nova Lake-P i Nova Lake-S, tedy i desktopové verze. Lze předpokládat začlenění v rámci jádra Linux 7.2.
+HDMI 2.1 Display Stream Compression pro AMDGPU
+HDMI 2.1 existuje už skoro 9 let, ale HDMI konsorcium blokovalo AMD podporu v otevřeném ovladači. To se <a>nedávno asi změnilo, více se tomu věnují na CNews, kdy do AMDGPU přibyla podpora HDMI 2.1 Fixed Rate Link (FRL), nyní dále obohacená o podporu HDMI 2.1 Display Stream Compression (DSC), umožňující provozovat na této verzi HDMI vyšší rozlišení obrazu, vyšší obnovovací frekvence či vyšší kombinace obojího, třeba 4k/240Hz či 8k/120Hz zobrazení. Takové, které je sice komprimované ztrátově, ale bez viditelného dopadu oproti nekomprimovaným přenosům. Stihnout by se snad mělo začlenění v rámci jádra Linux 7.2.
+Ubuntu 26.10 s jádrem Linux 7.2
+Co se logicky nabízí, je následující: letošní říjnové vydání Ubuntu přijde na svět s jádrem Linux 7.2. Nic jiného ostatně nedává smysl, půjde o nejnovější jádro v době finišování prací na tomto vydání (kernel freeze je v plánu na 1. října), korelující s politikou Canonicalu vydávat nové verze Ubuntu s aktuálními verzemi linuxového jádra. Stonking Stingray tak dostane sedm-dvojku.|E|
 |T|Přehled telefonů, které dostanou Android 16. Aktualizace už vydala většina velkých i menších značek|D|28.5. 18:45|P|Update na Android 16 mohou čekat majitelé mnoha zařízení • V tomto přehledu se dozvíte, zda dorazí i do vašeho telefonu • Článek pravidelně aktualizuj...|X|Update na Android 16 mohou čekat majitelé mnoha zařízení • V tomto přehledu se dozvíte, zda dorazí i do vašeho telefonu • Článek pravidelně aktualizujeme, výrobce řadíme podle abecedy
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|

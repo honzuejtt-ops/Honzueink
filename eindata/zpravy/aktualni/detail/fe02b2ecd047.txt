@@ -1,0 +1,19 @@
+Článek
+Hackeři stojící za nabídkou tvrdí, že soubor obsahuje jména zákazníků, e-mailové adresy, telefonní čísla, poštovní adresy, data narození i další informace související s nákupy. Součástí mají být také údaje o zákaznických účtech, historii objednávek nebo komunikaci se zákaznickou podporou.
+Podobné informace mohou být pro kyberzločince cenné. V případě jejich pravosti by mohly posloužit například při phishingových kampaních, pokusech o sociální inženýrství nebo dalších typech internetových podvodů zaměřených na konkrétní uživatele.
+🇨🇿 Alleged database belonging to Czech e-commerce giant https://t.co/TZJPbzZyYo has been advertised on a cybercrime forum, with the threat actor claiming to possess approximately 437,000 customer records.
+— Dark Web Intelligence (@DailyDarkWeb) May 29, 2026
+* Threat actor claims the dataset originates from https://t.co/TZJPbzZyYo… pic.twitter.com/rF91YhFs1e
+Alza však jakýkoliv únik dat odmítá. „Na internetu se pravidelně objevují tvrzení o údajných únicích dat různých společností. Každé podobné oznámení standardně prověřujeme. V tomto případě naše dosavadní prověření nepotvrdilo, že by zveřejněná data byla autentická nebo že by pocházela ze systémů Alza.cz,“ uvedla pro Novinky.cz mluvčí Alzy Eliška Čeřovská.
+„Současně jsme nezaznamenali žádné indicie o neoprávněném přístupu do našich systémů v souvislosti s tímto případem. Bezpečnost dat našich zákazníků je pro nás dlouhodobou prioritou,“ doplnila Čeřovská.
+Podivná nabídka
+Otazníky vyvolává také samotný obsah údajně nabízené databáze, jak upozornil server Živě.cz. Mezi zmiňovanými položkami jsou totiž například data narození zákazníků, která Alza standardně neshromažďuje.
+Objevují se rovněž odkazy na věrnostní body či karty, přestože podobný systém v současnosti neprovozuje. Teoreticky by tak mohlo jít o starší soubor dat, případně o zcela neautentickou nabídku.
+Není také vyloučeno, že se jen nějaký vykutálený vtipálek snaží ze skutečných hackerů vylákat peníze za falešnou databázi, která vlastně vůbec neexistuje.
+Pozornost nabídka vzbudila ale především proto, že Alza během dubna čelila několika rozsáhlejším výpadkům svých služeb. Přímé spojení mezi tehdejšími technickými problémy a nyní nabízenou databází ale zatím nic nepotvrzuje.
+Případy údajných úniků dat, které se nakonec nepotvrdí, nejsou výjimečné, jak připomněl server Lupa.cz. Nedávno podobné spekulace řešilo také ČVUT, které informace o hackerském útoku vyvrátilo.
+Jak funguje darknet
+Darknet původně vznikl s ušlechtilou myšlenkou, mělo jít o prostor na internetu bez regulací a státního dohledu. Nejprve tedy sloužil především jako anonymní digitální prostor v zemích, kde panuje na sítích tvrdá cenzura, a k těmto účelům slouží i nyní.
+Postupně však darknet začal přitahovat zločince, kteří pod rouškou anonymity mohli prodávat prakticky jakékoli zboží bez omezení – na internetovém černém trhu tak není problém sehnat drogy, zbraně, léky, padělané dokumenty, škodlivý software či odcizené osobní údaje běžných uživatelů.
+K darknetu se lidé mohou připojit prostřednictvím speciálních internetových prohlížečů, jež jsou schopny pracovat přes šifrované sítě a nabízejí konfiguraci komunikačních protokolů a portů.
+Jako platidlo zde slouží virtuální mince, nejčastěji bitcoiny, ethereum či monero, díky kterým jsou kupující a prodávající prakticky nevystopovatelní. Ochránci zákona tedy mají jen velmi omezené možnosti, jak obchodování na černém internetovém trhu zarazit.

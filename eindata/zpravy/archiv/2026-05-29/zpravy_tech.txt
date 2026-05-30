@@ -1,4 +1,3 @@
-|T|Chyba|D||P|Něco se pokazilo.|X|HTTPSConnectionPool(host='www.zive.cz', port=443): Read timed out. (read timeout=10)|E|
 |T|Take our I/O 2026 quiz, vibe coded in Google AI Studio.|D|29.5. 19:00|P|We used Google AI Studio to vibe code a quiz about our top I/O 2026 announcements.|X|Heads up, builders and devs: You can test your knowledge of our I/O 2026 announcements with this vibe coded quiz built in Google AI Studio.
 In case you missed it, at Google I/O 2026, we announced new ways and places you can use Google AI Studio. With Google AI Studio, powered by the Antigravity coding agent, you can bring ideas to life with the latest Gemini models even if you’re not a seasoned developer.
 As a case in point, I vibe coded this quiz myself — and I'm an editor with zero coding background, not a developer. To make the quiz, I used Gemini to generate a prompt for Google AI Studio to build the exact quiz I envisioned. I uploaded sources including announcements and design inspiration. Gemini delivered a helpful, creative, highly specific prompt I took to Google AI Studio. I refined the prompt based on the previews, and added the actual quiz text.
@@ -115,6 +114,7 @@ zdroj: TechCrunch|E|
 |T|Wi-Fi 8 ještě neexistuje, ale TP-Link už ukázal první router|D|29.5. 12:45|P|TP-Link Archer 8 je první představený router s Wi-Fi 8. • Dorazí na podzim a bude až o třetinu rychlejší než varianty s Wi-Fi 7. • Zároveň nabídne sil...|X|TP-Link Archer 8 je první představený router s Wi-Fi 8. • Dorazí na podzim a bude až o třetinu rychlejší než varianty s Wi-Fi 7. • Zároveň nabídne silnější signál, lepší odolnost vůči rušení a stabilitu při pohybu.
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Chyba|D|29.5. 12:00|P|Něco se pokazilo.|X|HTTPSConnectionPool(host='www.zive.cz', port=443): Read timed out. (read timeout=10)|E|
 |T|Check out real-life AI prototypes from the Futures Lab.|D|29.5. 12:00|P|University of Waterloo students develop AI prototypes like sign language tutors to reshape the future of education and work.|X|What if you could learn Japanese through custom AI-generated stories, or practice sign language with an AI tutor that gives real-time feedback?
 These are working prototypes built by students in the Google-funded Futures Lab, a partnership with the University of Waterloo. Each lab is an eight-week intensive AI and user experience prototyping workshop. Students from diverse fields like computer science, business and natural sciences develop tools designed to reshape how we learn.
 A few highlights from the last two labs include:

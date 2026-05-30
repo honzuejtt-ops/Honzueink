@@ -1,0 +1,7 @@
+Článek
+Množství reálných dat se podle odborníků rapidně snižuje a je dost pravděpodobné, že dříve či později zcela dojdou – u velkých jazykových modelů to může být podle některých už letos.
+Převážnou většinu pak budou tvořit data produkovaná modely umělé inteligence, které budou „opisovat“ samy od sebe, což může vést k celkovému kolapsu.
+Pojem „kolaps modelů“ byl vytvořen v roce 2024 a označuje situaci, kdy model umělé inteligence trénovaný na datech produkovaných umělou inteligencí přestává poskytovat přesné výsledky a místo toho produkuje výmysly kvůli nízké kvalitě tréninkových dat.
+Aby se tomu předešlo, navrhují odborníci z King's College London, Norské univerzity vědy a technologie a Mezinárodního centra pro teoretickou fyziku Abduse Salama v Terstu jako možnou obranu začlenění tréninkových dat „zvenčí“ – například dříve získané znalosti od jednodušších modelů, které mohou efektu kolapsu zabránit.
+Důležitost takového kroku je podle nich o to větší s tím, jak se umělá inteligence začleňuje do dalších a dalších odvětví a zasahuje tak do běžného lidského života stále více. Datový kolaps se totiž ve výsledku nemusí vztahovat jen na chatboty, ale mohl by ovlivnit i životně důležitou infrastrukturu, například automobily.
+„Na základě zjištění, že i malé datové body zvenčí mohou takovému selhání předejít, lze stanovit principy, které budou klíčové pro obranu před potenciálně katastrofickým selháním,“ uvedl pro server Independent profesor Yasser Roudi a nastínil možný postup, jak se v době umělé inteligence bránit riziku jejího selhání.

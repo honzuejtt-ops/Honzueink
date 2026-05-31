@@ -1,0 +1,8 @@
+Systém s umělou inteligencí, který dokáže pomocí kamer, algoritmů a digitálních obrazovek odhadnout věk zákazníka či zákaznice a upozornit obsluhu na mladistvé, testují v rámci pilotního provozu dvě provozovny řetězce Traficon v pražských Řepích.
+Pokud člověk, co vejde do provozovny, vypadá příliš mladě, systém upozorní obsluhu, aby si při prodeji alkoholu, cigaret nebo dalšího věkově omezeného zboží vyžádala doklad totožnosti. O novince informuje iDnes.cz, Traficon ji nainstaloval ve spolupráci s technologickou společností Hikvision.
+Už to nebude jen na obsluze za kasou
+„Lidský faktor prodavačky, která musí rozhodnout, zda požádat o občanku, je vždycky závislý na okolnostech. Jdeme o krok dál, abychom obsluze pomohli toto riziko eliminovat,“ vysvětlil šéf firmy Jiří Puršl. Hranici si nastavili ne na 18 let, ale na 21 let.
+Systém bude fungovat nejen pro znesnadnění prodeje zakázaného zboží mladistvým, ale také například omezovat zobrazování nevhodné reklamy. „Pokud vstoupí do prodejny maminka s dítětem, ihned zmizí reklama na cigarety a ukáže se upoutávka na dětský časopis,“ řekl Puršl. Tato funkce personalizovaných reklam by měla záviset nejen na věku, ale i na pohlaví.
+Absolutní novinka v Česku
+Dále bude systém kontrolovat pohyb zákazníků po prodejně, vytíženost jednotlivých částí či vznikající fronty. Pomoci má i s rozhodováním, jak rozmístit zboží po prodejně. Data z kamer se údajně nikam neukládají a všechny osoby jsou před vstupem do prodejny informovány, že prostor je monitorován.
+Pilotní provoz byl spuštěn letos v březnu a první fáze testování by měla skončit v létě. V Česku se zatím podobný systém nepoužívá a obecně v Evropě je to složitější kvůli pravidlům na ochranu osobních údajů. V Asii je běžnější.

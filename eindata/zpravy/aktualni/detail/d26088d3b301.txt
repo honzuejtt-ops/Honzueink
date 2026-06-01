@@ -1,0 +1,57 @@
+Jazyky Lua a ML jsme se již na stránkách Rootu zabývali v seriálech Programovací jazyk Lua (o něm jsem si dovolil vydat i e-book) a Funkcionální programovací jazyk ML. Vraťme se však k projektu LunarML. Transpřekladačů v současnosti existují vyšší desítky, pravděpodobně ale stovky, takže se nejedná o žádnou neznámou technologii. Ovšem LunarML je zajímavý tím, že při transpřekladu provádí optimalizace, například náhradu kódu za konstantu či odstranění (inlining) triviálních funkcí.
+Co se dozvíte v článku
+- Transpilery používané v minulosti i v současnosti
+- Praktické ukázky využití nástroje LunarML
+- Čím jiným začít – program, který vytiskne „Hello world“
+- Optimalizace generovaného kódu
+- Překlad dvou variant výpočtu Fibonacciho posloupnosti
+- Komplikovanější varianty výpočtu Fibonacciho posloupnosti
+- Za jakých okolností již LunarML nedokáže provést úplnou optimalizaci?
+- Výpočet délky seznamu a způsob reprezentace seznamu v jazycích Lua a JavaScript
+- Automatické určení typů parametrů funkce i její návratové hodnoty: typová inference
+- Explicitní určení typů
+- Realizace operace spojení řetězců předaných v seznamu
+- Typ option
+- Vynucení zavolání funkce divide a zpracování hodnoty SOME/NONE
+- Příloha A: Makefile pro transpřeklad všech dnes ukázaných demonstračních příkladů
+- Příloha B: online varianta jazyka Standard ML
+- Repositář s demonstračními příklady
+- Literatura
+- Předchozí články o jazyku ML/SML i o jazycích OCaml a F#
+- Odkazy na Internetu
+Na tomto místě je možná dobré připomenout, že Standard ML je velmi zajímavým jazykem, který patří (alespoň podle skromného názoru autora tohoto článku) mezi trojici programovacích jazyků, které by měl alespoň rámcově znát každý programátor. Ve skutečnosti se v případě ML jedná o tři doménově specifické jazyky v jednom, protože ML obsahuje sémantická pravidla pro popis algoritmu (výpočtu, vyhodnocení), dále pro popis datových typů a nakonec DSL určený pro popis modulů. Zajímavé (z pohledu výuky) je, že se jednotlivé části ML mohou učit postupně – tedy napřed způsob zápisu algoritmů (kupodivu se zde po poměrně dlouhou dobu obejdeme bez explicitního zápisu typů – jaká to změna oproti mainstreamu), poté se může student naučit typový systém ML (což je stále špička v oboru) a nakonec zbývá systém určený pro popis modulů.
+Ovšem to není vše. Samotný ML resp. SML je dobře čitelný a navíc i programový kód, který vznikne transpřekladem z ML do Luy či JavaScriptu, je taktéž poměrně dobře pochopitelný. To si ostatně můžeme velmi snadno ověřit, například zjištěním, jakým způsobem se transformuje (poněkud naivní a neidiomaticky zapsaný) algoritmus výpočtu n-tého prvku Fibonacciho posloupnosti:
+(* Naivní implementace výpočtu Fibonacciho posloupnosti *) fun fib n = if n = 0 then 0 else if n = 1 then 1 else fib (n - 1) + fib (n - 2);
+Překladem do jazyka Lua vznikne tento zdrojový kód:
+local function fib(n) if n == 0 then return 0 elseif n == 1 then return 1 end local tmp1 = fib(_Int_sub(n, 1)) local tmp2 = fib(_Int_sub(n, 2)) return _Int_add(tmp1, tmp2) end
+I transpřeklad do JavaScriptu vede k vytvoření čitelného kódu:
+fib = function(n) { if (n === 0) { return 0; } else if (n === 1) { return 1; } else { const tmp6 = fib(_Int54_sub(n, 1)); const tmp7 = fib(_Int54_sub(n, 2)); return _Int54_add(tmp6, tmp7); } };
+Transpilery používané v minulosti i v současnosti
+Jazyk Standard ML se typicky překládá do nativního kódu, ovšem k dispozici jsou i „interpretační překladače“ umožňující interaktivní zápis deklarací funkcí a typů. LunarML ovšem do této kategorie nepatří, protože se jedná o typický transpřekladač vyžadující na vstupu celý zdrojový kód (to je docela škoda, protože pro výuku se hodí právě „interpretační překladače“).
+Problematikou takzvaných transpřekladačů (anglicky transcompilers nebo taktéž poněkud opisně source-to-source compilers) jsme se již na stránkách Rootu zabývali, a to dokonce několikrát. Připomeňme si například projekty ClojureScript (což je transpřekladač z jazyka Clojure do JavaScriptu), popř. projekty lua2js (transpřekladač Lua → opět JavaScript) a Wisp (programovací jazyk podobný Clojure transpřekládaný opět do JavaScriptu).
+V předchozích větách byl použit výraz „transpřekladač“, takže si ho alespoň ve stručnosti vysvětlíme. Transpřekladače jsou nástroje sloužící pro překlad algoritmů zapsaných v nějakém zdrojovém programovacím jazyce do zvoleného cílového programovacího jazyka (ovšem nikoli do nativního kódu či do bajtkódu, to je totiž role běžných překladačů – compilers).
+Transpřekladače se v informatice používají již po několik desetiletí. Například se stále můžeme setkat s nástroji, které převádí kód z nějakého vyššího programovacího jazyka do Céčka, které je v současnosti s trochou nadsázky chápáno jako „univerzální assembler“. Asi nejznámějším příkladem z této oblasti je nástroj nazvaný web2c, jenž slouží pro transformaci zdrojových kódů TeXu do céčka, ovšem existuje například i mypyc pro překlad z Pythonu do jazyka C. Transpřekladače byly – a to zejména v minulém desetiletí, konkrétně před příchodem ES6 – velmi populární i mezi programátory webových aplikací, a to zejména z toho důvodu, že webové prohlížeče nativně podporují většinou pouze JavaScript, který je tak přirozeně cílovým jazykem transpřekladačů (proto se mu také někdy říká „assembler pro web“, viz též odkazy na konci článku). Určitou revolucí byl v této oblasti právě CoffeeScript. A mnoho vlastností CoffeeScriptu bylo převzato do ES6 (ECMAScript 2015), což způsobilo postupný odklon od CoffeeScriptu.
+Z praxe můžeme uvést například následující projekty založené na transpřekladači:
+Praktické ukázky využití nástroje LunarML
+Repositář nástroje LunarML je dostupný na adrese https://github.com/minoki/LunarML. K dispozici je hned několik možností jeho spuštění. Buď je možné si celý projekt lokálně přeložit (sestavit), nebo si můžete stáhnout předpřipravené binární balíčky se zvolenou verzí LunarML ze stránky https://github.com/minoki/LunarML/releases. Pravděpodobně nejjednodušší je ovšem spuštění přes Docker či Podman. Nejdříve je pochopitelně nutné získat příslušný obraz:
+$ docker pull ghcr.io/minoki/lunarml:latest
+Překlad resp. transpřeklad se provede následujícím způsobem:
+$ docker run --rm -v "$(pwd)":/work -w /work ghcr.io/minoki/lunarml:latest lunarml compile název_zdrojového_kódu.sml
+Do JavaScriptu:
+$ docker run --rm -v "$(pwd)":/work -w /work ghcr.io/minoki/lunarml:latest lunarml compile --nodejs název_zdrojového_kódu.sml
+nebo:
+$ docker run --rm -v "$(pwd)":/work -w /work ghcr.io/minoki/lunarml:latest lunarml compile --webjs název_zdrojového_kódu.sml
+V dnešním článku budou všechny kódy napsané ve Standard ML přeloženy touto verzí LunarML:
+$ docker run --rm -v "$(pwd)":/work -w /work ghcr.io/minoki/lunarml:latest lunarml version LunarML version 0.3.0
+Samotný transpiler LunarML nabízí několik přepínačů, ze kterých využijeme jen –nodejs popř. –webjs:
+Usage: /opt/lunarml/lib/lunarml/bin/lunarml [subcommand] [options] file.sml Subcommands: compile Compile a program. check Check a program. help Show this message. version Show version information. Options: -o,--output=file.ext File name to output. --exe Produce a standalone script. --lib Produce a Lua module. --lua Produce Lua code (targets Lua 5.3+). --lua-continuations Produce Lua code (targets Lua 5.3+ / supports one-shot delimited continuations). --luajit Produce Lua code (targets LuaJIT). --nodejs Produce JavaScript code for Node.js. --nodejs-cps Produce JavaScript code for Node.js (CPS mode). --webjs Produce JavaScript code for Web. --webjs-cps Produce JavaScript code for Web (CPS mode). -h,--help Show this message. -v,--version Show version information. --dump Dump intermediate code. --dump-final Dump final intermediate code. -O,--optimize Try to optimize hard. --mlb-path-map=<file> Specify MLB path map. --mlb-path-var=<var>=<path> Specify MLB path variable. --default-ann <annotation> Specify MLB annotations. --print-timings Print compilation times. -B<libdir> Library directory (default: <bindir>/../lib/lunarml).
+Čím jiným začít – program, který vytiskne „Hello world“
+Popis možností LunarML začneme ve stopách Briana Kernighana a Denise Ritchieho, tedy programem, který vypíše „Hello world“. V SML se zapíše takto:
+print "Hello world!\n";
+Překlad do jazyka Lua je delší, kvůli definici symbolů použitých později:
+local error = error local getmetatable = getmetatable local setmetatable = setmetatable local string = string local string_format = string.format local _exn_meta = {} function _exn_meta:__tostring() local traceback = self.traceback if traceback then traceback = "\n" .. traceback else traceback = "" end return string_format("%s: %s%s", self.location or "<no location info>", self.tag[1], traceback) end local _Fail_tag = { "Fail" } local function _raise(x, location) local e if getmetatable(x) == _exn_meta and location ~= nil then local traceback = debug.traceback(nil, 2) e = setmetatable({ tag = x.tag, payload = x.payload, location = location, traceback = traceback }, _exn_meta) else e = x end error(e, 1) end local stdout = _ENV.io.stdout local Io_tag = {"Io"} local tmp, tmp1 = stdout:write("Hello world!\n") if not tmp then _raise(setmetatable({tag = Io_tag, payload = {cause = setmetatable({tag = _Fail_tag, payload = tmp1}, _exn_meta), ["function"] = "output", name = "<stdout>"}}, _exn_meta), "text-io.sml:290:43") else stdout:flush() end
+Pokud ovšem odstraníme veškerou „vatu“, celý skript se zkrátí na volání funkce:
+local tmp, tmp1 = stdout:write("Hello world!\n")
+Překlad do JavaScriptu je ještě delší a kryptičtější:
+"use strict"; function _Match_tag() {} _Match_tag.prototype.__isMLExn = true; _Match_tag.prototype.name = "Match"; const _Match = new _Match_tag(); function _String_concat(xs) { let n = 0; let xs0 = xs; while (xs0 !== null) { const s = xs0[0]; n += s.length; xs0 = xs0[1]; } const a = new Uint8Array(n); let m = 0; while (xs !== null) { const s = xs[0]; a.set(s, m); m += s.length; xs = xs[1]; } return a; } { const Io_tag = function(...
+(Pokracovani na webu)

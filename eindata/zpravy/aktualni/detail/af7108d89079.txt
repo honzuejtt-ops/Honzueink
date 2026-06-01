@@ -1,0 +1,14 @@
+Článek
+Podmořská infrastruktura se v posledních letech dostává do centra pozornosti. Od roku 2023 bylo v Baltském moři zaznamenáno podle agentury Reuters několik případů poškození komunikačních kabelů a elektrického vedení.
+Podezření se soustředí mimo jiné na takzvanou ruskou stínovou flotilu, tedy lodě plující pod vlajkami jiných států, které Moskva využívá k obcházení sankcí zavedených po zahájení války na Ukrajině v roce 2022.
+Podle vojenských expertů i evropských představitelů Rusko v Baltském moři zesílilo aktivity spojované s hybridní válkou. Strategický význam oblasti navíc podtrhuje skutečnost, že pobřeží Baltského moře dnes s výjimkou Ruska patří členským zemím NATO.
+Prokazatelnost nebývá snadná
+Náměstkyně ministra pro digitální ekonomiku Liz Lloydová uvedla, že Británie potřebuje právní nástroj i pro případy, kdy není možné jednoznačně prokázat napojení pachatelů na nepřátelský stát. Připomněla, že za sabotáže jasně spojené s cizí mocností již britské zákony v nejzávažnějších případech umožňují uložit doživotní trest vězení.
+Podle ní však škodlivé aktivity pod hladinou oceánu nebývají vždy snadno prokazatelné.
+Právě na podobné incidenty se má nová legislativa zaměřit. O návrhu budou zákonodárci jednat ještě letos. Součástí změn budou také nové povinnosti pro provozovatele podmořských kabelů v oblasti jejich zabezpečení.
+Na význam ochrany této infrastruktury upozornil letos v dubnu také britský ministr obrany John Healey. Podle něj britské ozbrojené síly sledovaly a odradily tři ruské ponorky pohybující se v britských vodách severního Atlantiku v blízkosti důležitých podmořských kabelů a potrubí. Británie je přitom se světem propojena prostřednictvím 64 hlavních podmořských telekomunikačních kabelů.
+Lloydová označila připravovaný zákon za reakci na nejzávažnější možné scénáře. Podle ní je s ohledem na rostoucí nepřátelské aktivity Ruska a dalších zemí ochrana podmořských kabelů zásadní pro ekonomiku, bezpečnost i každodenní fungování země. Zároveň dodala, že podle dostupných informací dosud v britských vodách nedošlo k žádnému úmyslnému poškození kabelů.
+Digitální infrastruktura jako nový cíl
+Analytička Masha Kotkinová pro server Stimson uvedla, že datová centra, cloudové služby a kabely se stávají novými strategickými cíli podobně jako přístavy, ropné terminály nebo lodní trasy.
+Dopady případného útoku nebývají omezeny jen na konkrétní stát. Přerušení spojení by mohlo zasáhnout finanční transakce, mezinárodní obchod, cloudové služby i běžné uživatele internetu ve velké části světa.
+Státy i firmy proto hledají alternativní řešení – například pozemní kabely, případně satelitní internet jako Starlink. Ani jedno ale není plnohodnotnou náhradou. Pozemní trasy přinášejí nové geopolitické problémy a satelity nemají kapacitu nahradit objem dat přenášený optickými kabely.

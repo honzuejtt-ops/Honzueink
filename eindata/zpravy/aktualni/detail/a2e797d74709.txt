@@ -1,0 +1,9 @@
+Článek
+Novinku představil šéf firmy Jensen Huang. Podle odborníků by mohla znamenat výraznou proměnu toho, jak lidé s umělou inteligencí pracují. AI nástroje by se totiž mohly stát běžnou součástí osobních počítačů bez nutnosti spoléhat se výhradně na cloud.
+Na vývoji čipu Nvidia spolupracovala s Microsoftem a tchajwanskou společností MediaTek. RTX Spark by se měl od podzimu objevit v nové generaci počítačů s operačním systémem Windows for Arm. Nasadit jej plánují výrobci jako Dell, HP, Asus, Lenovo nebo MSI.
+Pro Nvidii jde zároveň o významný krok do segmentu osobních počítačů. Firma, která si vybudovala dominantní postavení díky AI čipům pro datová centra a stala se nejhodnotnější společností světa, tak vstupuje na trh, kde dlouhodobě působí Intel, AMD, Qualcomm či Apple.
+Širší proměna osobních počítačů
+Analytici v novém čipu vidí možný začátek širší proměny osobních počítačů. Místo tradičního modelu založeného na aplikacích by se podle nich mohl prosadit koncept počítače s agentní AI, která bude schopna samostatně plnit různé úkoly. Postupně by se tak podobné technologie mohly stát běžnou součástí domácností.
+Výzkumná společnost Counterpoint Research označila uvedení RTX Spark za milník, který může mít pro osobní počítače podobný význam, jaký měl příchod iPhonu nebo nástup velkých jazykových modelů v čele s ChatGPT.
+Jensen Huang novinku představil na veletrhu Computex, který každoročně přitahuje zástupce největších technologických firem. Rodák z Tchaj-wanu minulý týden také oznámil, že Nvidia plánuje na ostrově investovat přibližně 150 miliard dolarů ročně. Tchaj-wan při té příležitosti označil za epicentrum AI revoluce.
+Před zhruba dvěma týdny Huang doprovázel amerického prezidenta Donalda Trumpa během návštěvy Pekingu. Byl součástí podnikatelské delegace, která se setkala s čínským prezidentem Si Ťin-pchingem.

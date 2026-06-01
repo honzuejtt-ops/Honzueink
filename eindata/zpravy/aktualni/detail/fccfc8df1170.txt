@@ -1,0 +1,16 @@
+Internetový obchod tvrdí, že nic nenasvědčuje tomu, že by data pocházela z jeho systémů.
+Na hackerských fórech na darkwebu se objevila nabídka databáze, která prý obsahuje osobní údaje přibližně 437 tisíc zákazníků internetového obchodu Alza.cz, informuje portál Novinky.cz.
+Osoba, která databázi nabízí, tvrdí, že obsahuje jména zákazníků, e-mailové adresy, telefonní čísla, poštovní adresy či informace o nákupech. Součástí údajů mají být i informace o zákaznických účtech, historii objednávek nebo komunikaci se zákaznickou podporou.
+Alza únik dat odmítá
+Společnost Alza však zatím nenalezla důkazy, které by potvrdily, že údaje pocházejí z jejích systémů. Mluvčí společnosti Eliška Čeřovská uvedla, že firma každé podobné tvrzení prověřuje. „Na základě provedené analýzy můžeme jednoznačně potvrdit, že zveřejněná data nepocházejí ze systémů Alza.cz,“ sdělila Čeřovská.
+Dosavadní kontrola však podle ní nepotvrdila autenticitu nabízené databáze ani její původ z interních systémů společnosti. Alza zároveň tvrdí, že nezaznamenala žádné známky neoprávněného přístupu do svých systémů.
+🇨🇿 Alleged database belonging to Czech e-commerce giant https://t.co/TZJPbzZyYo has been advertised on a cybercrime forum, with the threat actor claiming to possess approximately 437,000 customer records.
+— Dark Web Intelligence (@DailyDarkWeb) May 29, 2026
+* Threat actor claims the dataset originates from https://t.co/TZJPbzZyYo… pic.twitter.com/rF91YhFs1e
+Několik údajů vyvolává otazníky
+Odborníci upozorňují, že samotná nabídka obsahuje několik podezřelých detailů. Mezi údaji se například zmiňují data narození zákazníků, která Alza standardně nesbírá. Nabídka zároveň hovoří o věrnostních bodech a kartách, ačkoliv společnost v současnosti podobný systém neprovozuje. Právě tyto nesrovnalosti naznačují, že může jít o starší údaje, nepřesné informace nebo dokonce úplně falešnou databázi.
+Cílem mohou být i samotní hackeři
+Podle odborníků nelze vyloučit ani scénář, že databáze vůbec neexistuje. Na hackerských fórech se pravidelně objevují případy, kdy se podvodníci snaží prodat neexistující nebo zfalšovaná data jiným kyberzločincům. Takové nabídky mají za cíl vylákat peníze od zájemců o údajnou databázi.
+Únik zatím nic nepotvrzuje
+Pozornost případu zvýšil i fakt, že Alza během dubna čelila několika technickým výpadkům svých služeb. Zatím však neexistují důkazy, které by tyto problémy spojovaly s údajným únikem dat.
+Podobné případy nejsou ve světě kybernetické bezpečnosti výjimečné. V minulosti se objevila různá tvrzení o údajných hackerských útocích či únicích databází, které se nakonec nepotvrdily.

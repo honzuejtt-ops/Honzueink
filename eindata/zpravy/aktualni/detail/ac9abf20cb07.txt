@@ -2,6 +2,8 @@ Bambu Lab dnes oficiálně představil novou 3D tiskárnu spadající do řady A
 3D tiskárna, řezačka i umělecká duše zároveň
 Novinka je po designové stránce prakticky k nerozeznání od stávající Bambu Lab A1, přesto jsme se dočkali řady vylepšení. Tou největší je nárůst tiskové plochy na 330 × 330 × 325 mm. Druhým největším rozdílem je systém modulárních hlav. Klasickou trysku pro 3D tisk bude možné vyměnit za řezačku (papíru, kůže či látky) nebo modul pro kreslení perem.
 Oproti původní A1 dostane Bambu Lab A2L adaptivní kompenzaci vibrací známou z CoreXY tiskáren a servo extruder s uzavřenou smyčkou PMSM, který podporuje aktivní monitorování anomálií, jako je například tisk ve vzduchu, ucpaná tryska nebo „ohryzání“ filamentu podávacími kolečky.
+3D tiskárny, filamenty a další příslušenství pro 3D tisk si můžete koupit například zde.
 Zajímavostí je také granulovaný tlumič uvnitř těla konstrukce. Jedná se o stovky jemných částic uvnitř dvou uzavřených komor, které do sebe při tisku vzájemně narážejí a kolizemi vyrovnávají vibrace. Podle Bambu Labu se jedná o techniku převzatou z leteckého průmyslu a průmyslových strojů, která se u domácích hobby 3D tiskáren vidí jen zřídka.
 Bambu Lab A1 je už nyní možné objednat na oficiálním eshopu, a to za cenu 379 eur (asi 9 200 Kč) za základní verzi a za 489 eur (asi 11 900 Kč) za verzi s AMS Lite. Řezací kit lze objednat spolu s 3D tiskárnou za cenu 63 eur (asi 1 500 Kč), případně samostatně o pár eur dráž.
 zdroj: Bambu Lab
+Tento text obsahuje affiliate odkazy. Pokud se přes tyto odkazy na vybraných službách zaregistrujete, případně něco nakoupíte, získá z toho redakce malou provizi sloužící pro zajištění našeho fungování. Detaily o affiliate programech najdete zde.

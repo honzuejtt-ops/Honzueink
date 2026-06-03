@@ -1,3 +1,6 @@
+|T|Teď se dozvíte, co budete za několik měsíců hrát. Viděli jsme nový God of War i pokračování hororu Until Dawn|D|02.6. 23:04|P|Tradiční veletrh E3 je historií. O oznamování nových her a haldu traileru v průběhu léta ale nepřijdeme ani tentokrát. Tento článek budeme průběžně ak...|X|Tradiční veletrh E3 je historií. O oznamování nových her a haldu traileru v průběhu léta ale nepřijdeme ani tentokrát. Tento článek budeme průběžně aktualizovat a velmi stručně v něm najdete vše, co bylo na největších akcích představeno.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Pingora: zpracování požadavku a vlastní logika proxy|D|02.6. 22:00|P|V minulém díle jsme si představili projekt Pingora a skončili kompilací první minimalistické proxy. Dnes se podíváme na její základní architekturu a u...|X|Architektura
 Co se dozvíte v článku
 Základem Pingory je server, který obsluhuje jednu nebo více služeb. Služba může být přímo odpovědná za zpracování příchozích požadavků, ale může také řešit pomocné úlohy mimo hlavní zpracování požadavku — například aktualizaci pravidel WAF, objevování upstreamových serverů a podobně. Samozřejmě může jít i o kombinaci obojího.

@@ -1,0 +1,5 @@
+Na Českou republiku je vedena další série kybernetických útoků, za nimiž pravděpodobně stojí Čína. Jde o Operaci Dragon Weave, kterou popsala společnost Seqrite Labs. Kampaň kromě Česka míří na Tchaj-wan, s nímž má českou úzkou spolupráci, například v oblasti čipů, bezpečnosti nebo výroby serverů pro umělou inteligenci.
+Akce Dragon Weave se zaměřuje na úředníky a další představitele státu, akademiky, výzkumníky, zajímavé technologické subjekty, finanční sektor, ale také na běžné občany.
+Útočníci posílají phishingové e-maily se souborem .zip v příloze. Po jeho případném rozbalení se spustí nástroj napsaný v jazyce Rust, jehož účelem je dolování dat a komunikace s řídícími servery pro dlouhodobější špionáž.
+Operace Dragon Weave prozatím nebyla připsána konkrétnímu aktérovi, podle způsobu operace a technických prostředků je ale přisuzována Číně. Ta se na Česko soustředí dlouhodobě, mimo jiné právě kvůli Tchaj-wanu. Čína například útočila na tuzemskou kritickou infrastrukturu.
+Evropská unie zase nedávno uvalila omezení na čínskou společnost a její zakladatele, kteří provedli hackerské útoky na tuzemské ministerstvo zahraničí.

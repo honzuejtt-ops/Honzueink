@@ -1,0 +1,3 @@
+Příkazy PowerShellu na Windows jsou sice extrémně mocným nástrojem, s jehož pomocí ovládnete a automatizujete prakticky celý operační systém, normou na poli serverů je dnes ale Linux, a tak se téměř žádný vývojář neobejde i bez znalosti jeho terminálu. I kdyby třeba jen spravoval svoje domácí ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

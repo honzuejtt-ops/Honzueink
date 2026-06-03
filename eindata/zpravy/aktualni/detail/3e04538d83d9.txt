@@ -1,0 +1,23 @@
+Článek
+Přestože světová média od závěru loňského roku často hovořila o potenciálním „konci Downova syndromu“, realita je samozřejmě složitější. Stále neexistuje žádná schválená léčba ani klinická studie na pacientech. Přesto je potřeba si nový průlom z Japonska připomenout.
+Downův syndrom
+Downův syndrom, známý také jako trizomie 21, je genetická porucha způsobená přítomností celé třetí kopie 21. chromozomu nebo jeho části. Obvykle je spojena s opožděným tělesným růstem, lehkým až středně těžkým mentálním postižením a charakteristickými rysy obličeje.
+Průměrný inteligenční kvocient mladého dospělého člověka s Downovým syndromem je 50, což odpovídá mentálním schopnostem osmiletého nebo devítiletého dítěte. Tato hodnota se u každého jedince může značně lišit.
+Downův syndrom vzniká přítomností třetí kopie chromozomu 21. Tým, který vedl Rjótaró Hašizume z Mie University, publikoval loni v odborném časopise PNAS Nexus studii, ve které pomocí systému CRISPR-Cas9 odstranil nadbytečný chromozom 21 z lidských buněk. Po zásahu se aktivita genů a řada buněčných funkcí začaly podobat běžným buňkám bez trizomie (chromozomální abnormalita, při níž je určitý chromozom v buňce přítomen v počtu tří místo standardního počtu dvou).
+Experiment fungoval jak na kmenových buňkách, tak na kožních buňkách odebraných lidem s Downovým syndromem. Zmíněná studie představuje jeden z prvních přesvědčivých důkazů, že nadbytečný chromozom by mohlo jít z lidských buněk skutečně cíleně odstranit.
+Zároveň je potřeba upřesnit, že studie ukazuje, že odstranění nadbytečného chromozomu 21 je biologicky možné v laboratorních podmínkách, ale zatím netvrdí, že je možné léčit nebo vyléčit Downův syndrom u člověka – výzkum neukázal, že by bylo možné bezpečně a spolehlivě odstranit chromozom ve všech buňkách organismu. Důležitý průlom to ale pochopitelně je.
+Druhá cesta: chromozom není třeba mazat
+Vedle japonského přístupu budí pozornost i metoda využívající gen XIST. Tento gen zajišťuje, že ženy přirozeně vypínají jeden ze svých dvou chromozomů X. Vědci se již více než deset let snaží stejný mechanismus využít také u Downova syndromu. Místo odstranění třetího chromozomu 21 by bylo možné jeho aktivitu jednoduše umlčet.
+První experimenty byly publikovány už v roce 2013, ale až letos výzkumníci působící v USA představili výrazně účinnější metodu založenou na CRISPR.
+Podle agentury Reuters autoři nové studie soudí, že právě umlčení celé nadbytečné kopie chromozomu 21 by mohlo představovat optimální způsob, jak omezit důsledky trizomie. Výzkum využívající gen XIST je proto považován za jeden z nejslibnějších současných směrů, zatím však zůstává ve fázi laboratorních experimentů.
+Je to bezpečné?
+Nicméně zatímco samotný důkaz principu se podařilo prokázat, otázka bezpečnosti zůstává otevřená.
+Genetické nůžky CRISPR mohou způsobovat nechtěné změny DNA a právě riziko vedlejších genetických zásahů je hlavním důvodem, proč se technologie zatím nepřesunula do klinických studií.
+Ostatně i autoři japonské studie opakovaně zdůrazňují, že jejich práce nepředstavuje léčbu, ale laboratorní důkaz, že odstranění nadbytečného chromozomu je vůbec možné.
+Další komplikací je načasování. Mnohé projevy Downova syndromu vznikají už během embryonálního vývoje. I kdyby bylo možné bezpečně odstranit nebo umlčet nadbytečný chromozom v části buněk dospělého člověka, nemuselo by to zvrátit všechny změny, které vznikly během vývoje organismu.
+Co je CRISPR?
+CRISPR-Cas9 je technologie genetických úprav, která vědcům umožňuje cíleně zasahovat do DNA živých buněk. Často bývá přirovnávána ke genetickým „nůžkám“, protože dokáže na přesně určeném místě DNA přestřihnout.
+Původně jde o přirozený obranný mechanismus bakterií proti virům. Vědci jej upravili tak, aby bylo možné vyhledávat, odstraňovat nebo měnit konkrétní úseky genetické informace.
+Technologie se dnes využívá ve výzkumu řady dědičných onemocnění, některých forem rakoviny i vzácných genetických poruch. Za vývoj metody genové editace pomocí CRISPR-Cas9 získaly v roce 2020 Nobelovu cenu za chemii Emmanuelle Charpentierová a Jennifer Doudnaová.
+Nemohly by tak jednou být podobné metody využívány velmi brzy během prenatálního vývoje? To by však vyvolalo i mnoho etických otázek.
+Ještě nedávno každopádně byla hlavní otázka výzkumu Downova syndromu jednoduchá: lze vůbec zasáhnout přímo genetickou příčinu tohoto stavu? Dnes už vědci znají minimálně dvě cesty, jak toho teoreticky dosáhnout. Jedna nadbytečný chromozom odstraňuje, druhá ho dokáže „umlčet“. A zda to půjde bezpečně a včas, to naznačí až budoucí medicínské výzkumy.

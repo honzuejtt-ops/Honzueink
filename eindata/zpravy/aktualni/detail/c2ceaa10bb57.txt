@@ -8,7 +8,7 @@ Mezi jeho funkce patří základní úpravy obrázků, malířské štětce, obr
 photoflare.io, 1.7.1
 Nocturne
 Hudební přehrávač, který dokáže přehrávat skladby z vašich knihoven OpenSubsonic, Jellyfin i z lokálních zdrojů a nabízí podporu vizualizace zvuku, ekvalizérů a stahování textů písní – jedná se o uživatelské rozhraní pro vaši vlastní osobní službu streamování hudby.
-Mezi další funkce patří podpora přehrávání bez mezer a texty písní v reálném čase. Umí fungovat i jako samostatný hudební přehrávač, pokud se vám nechce se vám spouštět server.
+Mezi další funkce patří podpora přehrávání bez mezer a zobrazení textů písní v reálném čase. Umí fungovat i jako samostatný hudební přehrávač, pokud se vám nechce pouštět server.
 jeffser.com/nocturne, 1.2.2
 WeKan
 Kanbanová tabule podobná Trellu, kterou si můžete nainstalovat a provozovat na svém vlastním systému. Pro Linux je k dispozici balíček Snap, je však nutné postupovat podle pokynů k instalaci.

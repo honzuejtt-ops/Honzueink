@@ -1,0 +1,16 @@
+Konec krize na trhu s paměťovými čipy je v nedohlednu a nákup herního hardwaru se nyní nevyplatí kvůli přemrštěným cenám. Naštěstí existuje alternativa, jako je Xbox Cloud Gaming, která umožňuje hrát hry bez nutnosti vlastnit herní počítač či konzoli.
+Co se dozvíte v článku
+Výběr správného tarifu pro hraní v cloudu
+Ať už plánujete hrát na počítači nebo telefonu, potřebujete předplatné Game Pass, konkrétně tarify Essential, Premium nebo Ultimate. V rámci nejlevnějšího Essentialu máte k dispozici přes 50 her, ve variantě Premium přes 200 a u nejvyššího tarifu Ultimate 400. V něm jsou navíc k dispozici tituly od studií Microsoft v den vydání i možnost hrát v 2K rozlišení při 60 FPS. Ostatní varianty zvládnou maximálně Full HD rozlišení při 60 FPS.
+Abyste si hraní užili a nedocházelo k náhlým poklesům kvality, je třeba mít stabilní internet s rychlostí alespoň 10 MB/s, ideálně však 20 MB/s a více pro hraní ve vyšších rozlišeních. Nejlepších výsledků dosáhnete, pokud budete mít zařízení připojené k Wi-Fi s podporou 5GHz pásma. Maximalizujete tím datový přenos a snížíte odezvu.
+Pokud hrajete na PC, k internetu počítač připojíte přes ethernetový kabel. Tím vytvoříte ideální podmínky pro streamování her bez nutnosti mít poblíž router. Základním požadavkem je kompatibilní gamepad, který lze k zařízení připojit pomocí USB nebo bezdrátově pomocí Bluetooth. Ideální je přímo gamepad od Xboxu či certifikovaný ovladač třetí strany, jako je například Asus ROG Raikiri nebo DualShock 4 od Sony.
+Jak zprovoznit Xbox Cloud Gaming na PC
+Za předpokladu, že už máte aktivované předplatné Game Pass, stačí z Microsoft Store stáhnout aplikaci Xbox a přihlásit se. V té si můžete vybrat, v jakém rozlišení budete hry streamovat, a nastavit, zda chcete využít gamepad, nebo klasicky myš a klávesnici. Poté ze sekce Cloud Gaming vybrat hru a můžete začít hrát.
+Ne všechny hry podporují ovládání skrze klávesnici a myš, proto je dobré mít po ruce herní ovladač. V samotné aplikaci najdete i sekci „Hrajte s pomocí klávesnice a myši“, takže není problém takové hry najít.
+Streamování her na telefonu s Androidem a iOS
+Pokud si chcete zahrát na telefonu nebo tabletu s Androidem, zde se už bez gamepadu neobejdete, protože mnoho her není optimalizovaných pro dotykové ovládání. Zprovoznění je však jednoduché. Stačí si stáhnout aplikaci Xbox z Play Store, spustit ji, připojit herní ovladač a můžete si zapnout vybranou hru.
+U jablečných zařízení je proces odlišný, protože aplikace Xbox nepodporuje hraní skrze cloud. Do nabídky Xbox Cloud Gaming se dostanete skrze prohlížeč Safari, když do URL okna zadáte adresu xbox.com/play. Poté je nutné se přihlásit, připojit herní ovladač, vybrat hru a pustit se do ní.
+Streamování her na chytré televizi
+Cloudové hraní je dostupné i na chytrých televizích, nativně ho však podporují jen dva hlavní výrobci. Samsung u většiny modelů od roku 2020 a LG u modelů prodávaných od roku 2022. Pro zprovoznění stačí v obchodě s aplikacemi stáhnout aplikaci Xbox, přihlásit se, připojit herní ovladač a začít hrát.
+Výrobci televizí obvykle šetří na Wi-Fi modulech, proto je lepší připojit zařízení k internetu kabelem. Vyhnete se tak častému snižování rozlišení a udržíte stabilnější odezvu. Důležitá je také přítomnost Bluetooth, bez něj gamepad k televizi nepřipojíte.
+zdroj: Microsoft

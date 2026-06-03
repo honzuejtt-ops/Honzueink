@@ -1,0 +1,7 @@
+Microsoft už před lety nabídl náhradu za prehistorickou příkazovou řádku cmd v podobě moderního Terminálu s profily a hromadou nastavení.
+
+Na letošním výroční konferenci Build ukázal jeho experimentální odnož jménem Inteligentní Terminál 0.1, kterou si můžete stáhnout z Microsoft Storu.
+
+Můžete ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

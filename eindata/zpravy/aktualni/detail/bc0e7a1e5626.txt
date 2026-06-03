@@ -1,0 +1,9 @@
+Původní účet Baracka Obamy, oficiální profil Sephory nebo John Bentivegna z United States Space Force – ti všichni přišli o svůj účet na Instagramu: Útočníci přitom nemuseli krást hesla nebo podnikat složité sociální inženýrství. Stačilo si napsat o reset hesla chatbotovi v rámci Meta AI Support Assistantu.
+Automatizovaná podpora
+Útočník jako první použil VPN tak, aby se pro podporu Mety tvářil jako konkrétní uživatel – virtuálně si změnil lokalitu. Poté otevřel konverzaci s Meta AI Support Assistantem a vydával se za vlastníka účtu, ke kterému chtěl získat přístup.
+Klíčovým krokem byla žádost o přidání nové e-mailové adresy. Chatbot místo běžného ověření identity poslal potvrzovací kód na novou adresu ovládanou útočníkem. Po zadání kódu systém přijal novou adresu jako důvěryhodnou a nabídl obnovu hesla.
+Tím útočník získal možnost nastavit nové heslo bez přístupu k původnímu e-mailu oběti. V některých popsaných případech dokonce nepomohlo ani dvoufázové ověřování.
+Zacyklená AI
+Meta v březnu nasadila AI podporu pro řešení potíží s účty, jenže systém určený k obnově přístupu se stal cestou k jeho převzetí. Uživatelé si zároveň stěžovali, že po ztrátě účtu opět naráželi na automatizovanou AI podporu bez možnosti svůj případ předat případ člověku.
+Mluvčí Mety Andy Stone uvedl, že problém je vyřešen a firma zabezpečuje dotčené účty. Společnost zatím nezveřejnila úplný technický rozbor ani počet účtů, kterých se tento incident týká. V každém případě jde o obrovský průšvih, ze kterého by se měla poučit nejen Meta, ale jakákoliv jiná internetová platforma, která provozuje podpůrné chatboty s přístupem k databázi uživatelů.
+Zdroj: BleepingComputer

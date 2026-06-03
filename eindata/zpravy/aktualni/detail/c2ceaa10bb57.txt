@@ -1,0 +1,18 @@
+Drawy
+Podle vyjádření vývojářů se jedná o „praktický nástroj pro neomezené brainstormingy“ vytvořený v Qt. Aplikace je odlehčený nástroj typu whiteboard, který nabízí cílenou sadu nástrojů pro kreslení schémat a psaní poznámek především pomocí stylusu.
+Nabízí nekonečné plátno, podporuje grafické tablety citlivé na tlak a umožňuje importovat obrázky, přidávat běžný text a používat základní tvary do vaší relace. Tabule lze uložit jako obrázek a použít nebo sdílet jinde.
+invent.kde.org/graphics/drawy, 1.0.1
+Photoflare
+Výkonný a přitom snadno ovladatelný multiplatformní editor obrázků. Hodí se pro širokou škálu různých úkolů a pro uživatele, kteří ocení plynulejší pracovní postup.
+Mezi jeho funkce patří základní úpravy obrázků, malířské štětce, obrazové filtry, úpravy barev a pokročilejší funkce, jako je hromadné zpracování obrázků.
+photoflare.io, 1.7.1
+Nocturne
+Hudební přehrávač, který dokáže přehrávat skladby z vašich knihoven OpenSubsonic, Jellyfin i z lokálních zdrojů a nabízí podporu vizualizace zvuku, ekvalizérů a stahování textů písní – jedná se o uživatelské rozhraní pro vaši vlastní osobní službu streamování hudby.
+Mezi další funkce patří podpora přehrávání bez mezer a texty písní v reálném čase. Umí fungovat i jako samostatný hudební přehrávač, pokud se vám nechce se vám spouštět server.
+jeffser.com/nocturne, 1.2.2
+WeKan
+Kanbanová tabule podobná Trellu, kterou si můžete nainstalovat a provozovat na svém vlastním systému. Pro Linux je k dispozici balíček Snap, je však nutné postupovat podle pokynů k instalaci.
+Můžete přidávat pravidla pro automatizaci správy úkolů a importovat data z tabule Trello. Aplikaci lze nastavit pomocí Docker Desktopu na vašem počítači nebo ji spustit na vašem serveru.
+wekan.fi, 9.34
+Blbinka
+IT pracovníci se čím dál více cítí ohroženi umělou inteligencí, tak už se někteří začínají připravovat.

@@ -1,3 +1,69 @@
+|T|How Endava is redesigning software delivery around AI agents|D|04.6. 12:00|P|Learn how Endava is using AI agents, ChatGPT Enterprise, and Codex to accelerate software delivery, automate workflows, and build an AI-native culture...|X|How Endava is redesigning software delivery around AI agents
+By making AI part of daily work, Endava is accelerating delivery and reshaping enterprise workflows.
+Endava is a global technology services company that has spent more than 25 years helping enterprises solve complex business problems through technology. Today, that mission increasingly centers on AI.
+But for Endava, adopting AI meant more than introducing new tools. It required rethinking workflows, leadership behaviors, and how teams collaborate across the business.
+We sat down with Matthew Cloke, CTO, to hear how Endava is embedding AI across the organization, redesigning software delivery around agents, and creating a culture where experimentation is expected—not optional.
+“AI has had a fundamental impact on Endava over the past couple of years,” says Cloke. “We really had to answer the question of how to be a relevant organization in the new AI world.”
+That mindset led Endava to make OpenAI its enterprise AI platform, giving employees across the company access to ChatGPT Enterprise and Codex. The goal wasn’t simply adoption—it was making AI part of the flow of everyday work.
+“To be AI-native at Endava, it’s about thinking about AI to solve the problem first,” Cloke explains. “It’s the first thing you do rather than the last thing that you do.”
+“If I don’t have an agent running in the background, I somehow think I’m wasting my time.”
+Endava’s AI transformation began inside its software delivery teams.
+As developers started experimenting with AI-assisted coding and agentic workflows, teams quickly realized the bottleneck was no longer engineering output. Requirements gathering, business analysis, planning, and stakeholder coordination all needed to move faster too.
+That realization led to the creation of DavaFlow(opens in a new window), the company’s AI-native delivery methodology.
+“We started to challenge how quickly we could produce requirements and how quickly we could produce the right business solutions for our clients,” says Cloke.
+Today, OpenAI technology is embedded throughout the entire DavaFlow lifecycle—from meeting preparation and business planning to product discovery, software engineering, and deployment.
+“There isn’t a part of DavaFlow that doesn’t use OpenAI technology.”
+Importantly, adoption didn’t stop with developers.
+Legal teams began using AI to streamline research and documentation workflows. Project managers started using Codex to generate governance reports and summarize engineering progress. Commercial teams replaced spreadsheet-heavy planning exercises with lightweight AI-generated applications.
+In one internal pricing discussion, employees skipped spreadsheets entirely and instead built a single-page pricing app teams could interact with immediately.
+“It changed the conversation completely,” Cloke says.
+AI agents have also become embedded in day-to-day operations. Leadership teams use agents to summarize projects, automate communications, manage inboxes, and coordinate work asynchronously.
+- Accelerated software delivery by integrating AI agents into engineering workflows
+- Expanded AI adoption beyond engineering into legal, finance, and operations teams
+- Reduced manual reporting and coordination work through AI-assisted workflows
+- Enabled teams to build internal tools and applications without dedicated engineering support
+- Established AI fluency as part of hiring and promotion expectations across the company
+As Endava rolled out AI across its 11,000-person global workforce, several principles emerged:
+- Treat AI adoption as a behavior change, not a software rollout
+- Leaders need to actively use AI to drive organization-wide adoption
+- Create space for experimentation—even when outcomes are imperfect
+- Bring non-technical teams into the process early, not later
+- Hands-on experience is the fastest way to overcome skepticism
+- Make AI part of everyday workflows, not a separate initiative
+As a long-term OpenAI partner, Endava sees the next phase of enterprise AI centered around orchestration—combining models, agents, workflows, and human expertise into integrated systems that fundamentally reshape how organizations operate.
+“We’re really excited about the workflows that can be created by combining these tools,” says Cloke.
+From reasoning models and Codex agents to automation and enterprise-scale collaboration, Endava believes AI is becoming more than a productivity layer. It’s becoming the operating model itself.
+And for organizations still early in the journey, Cloke’s advice is straightforward: start using the technology personally.
+“The future arrived,” he says. “You just have to lean into it.”|E|
+|T|Legendární JRC po 30 letech definitivně končí. Od července vypne i svůj e-shop, hráče odkáže na Smarty.cz|D|04.6. 08:40|P|Po více než 30 letech mizí z trhu legendární JRC. Od července bude její e-shop přesměrován na Smarty.cz a jedna éra českého herního prodeje se definit...|X|Značka JRC, kterou znají čeští hráči už desítky let, se definitivně loučí. Po postupném začlenění do skupiny Smarty nyní končí nejen poslední prodejny nesoucí logo JRC, ale také samostatný e-shop. Pro mnoho fanoušků her jde o symbolický konec jedné éry.
+Po 30 letech přichází konec
+Historie JRC sahá až do konce 80. let minulého století. V době, kdy digitální distribuce ještě neexistovala, patřilo mezi nejvyhledávanější místa pro nákup nových her, sběratelských edic i použitých titulů. S trochou nadsázky lze říci, že pro mnoho českých hráčů bylo JRC synonymem herního obchodu.
+Zlom nastal v roce 2001, kdy JRC koupila skupina Smarty. Tehdy se počítalo se zachováním značky a jejím začleněním do nového konceptu prodejen. Postupně však začalo docházet ke slučování služeb, obchodů i internetových platforem.
+Nyní celý proces vrcholí, značka JRC definitivně končí a na webu najdete jen drobné upozornění “Milí spoluhráči, jedna herní kapitola končí, ale další pokračuje dál. Od 1. 7. 2026 bude web JRC trvale přesměrován na Smarty.cz. Děkujeme za vaši přízeň – Tým JRC.“
+Samotné Smarty přitom v posledních letech výrazně posiluje svou pozici na trhu a stává se zajímavým konkurentem pro Alzu. Smarty vlastní také síť prodejen iWant zaměřenou na produkty Applu, nabízí vlastní počítačové sestavy Tigo a na své straně má i velké české videoherní tváře jako Agraelus. Podle serveru Lupa.cz jsou obraty Smarty v nižších miliardách korun ročně.
+zdroj: Lupa.cz|E|
+|T|Alzu nalákal rychle rostoucí segment prémiové kosmetiky, otevírá s ním první specializovaný kamenný obchod|D|04.6. 08:02|P|Alza otevírá AlzaBeauty shop – kamenný obchod, kde nabídne přibližně 40 značek a kolem 2 500 produktů v segmentech kosmetiky, parfémů, péče o pleť i v...|X|Alza otevírá AlzaBeauty shop – kamenný obchod, kde nabídne přibližně 40 značek a kolem 2 500 produktů v segmentech kosmetiky, parfémů, péče o pleť i vlasy. Obchod otevírá na Slovensku, v showroomu Bratislava – Nivy na ploše 280 m². „Beauty je kategorie, která je velmi osobní, emotivní a spojená se zážitkem, a právě to jsme chtěli přenést i do našeho nového konceptu,“ komentuje místopředseda představenstva Alzy Petr Bena. Další rozšiřování konceptu firma do budoucna nevylučuje, ale konkrétní plány nyní komentovat nechce.
+V předchozích dvou letech byla sekce Beauty a zdraví nejrychleji rostoucí kategorie na Alze a trend pokračuje i letos. Růst se podle společnosti pohybuje ve vysokých desítkách procent. Firma chce využít i toho, že zatímco u běžné spotřební drogerie kupující objednávají spíše menší nákupy, u prémiové beauty péče a parfémů dosahuje průměrná hodnota objednávky přibližně trojnásobku. Alza krok označuje za vstup do nové éry beauty retailu. „Mezi nejžádanější segmenty patří především doplňky stravy, parfémy, dermokosmetika, profesionální vlasová péče a inovativní a specializované produkty,“ přibližuje Eliška Čeřovská, PR manažerka Alzy.
+Obchod nabídne poradenství i propojení s online světem, produkty bude posílat i do AlzaBoxů. „Propojení světa beauty a online prostředí nám umožňuje nabídnout zákazníkům mimořádně široký sortiment, který by se do běžné prodejny ani nevešel. V současnosti u nás na webu nebo v mobilní aplikaci najdou přes 22 tisíc beauty produktů napříč devíti stovkami značek,“ říká PR manažerka Alzy Eliška Čeřovská.
+AlzaBeauty shop se otevírá 5. června. Součástí nabídky budou mimo jiné značky jako Lancôme, Biotherm, Estée Lauder nebo Nuxe.
+Důležitost kamenných prodejen v segmentu komentoval pro Lupu také Martin Komora z Vivantis, tento e-shop otevřel kamennou prodejnu podobného typu v obchodním centru na Chodově.|E|
+|T|Průzkumník podporuje zadávání adres s uvozovkami a zdvojenými zpětnými lomítky|D|04.6. 07:45|P|Microsoft odhalil pár drobných vylepšení Průzkumníku. • Podporuje např. zadávání adres s uvozovkami. • Tyto novinky se aktuálně testují v kanále Exper...|X|Microsoft odhalil pár drobných vylepšení Průzkumníku. • Podporuje např. zadávání adres s uvozovkami. • Tyto novinky se aktuálně testují v kanále Experimental.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Český Dreadline Express sbírá další ocenění a chystá ochutnávku. Demo si vyzkoušíme v polovině června|D|04.6. 07:15|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Apple otevře první evropské Developer Center. Z Prahy jste tam vlakem za 4 hodiny|D|04.6. 06:45|P|V Berlíně se na podzim otevře Apple Developer Center – první v Evropě, teprve páté na světě. Jde o zařízení, které Applu zajistí bližší kontakt s komu...|X|V Berlíně se na podzim otevře Apple Developer Center – první v Evropě, teprve páté na světě. Jde o zařízení, které Applu zajistí bližší kontakt s komunitou, vývojáři získají lepší přístup k nástrojům, workshopům a hlavně individuální podporu přímo od expertů z Applu.
+
+Měli by se dočkat pomoci při ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Speciální reaktor vytváří miniaturní jaderné výbuchy. Slouží ke studiu, jak se rodí radioaktivní spad|D|04.6. 05:45|P|Americký plazmový reaktor simuluje extrémní teploty reálné jaderné ohnivé koule • Starší teoretické modely jaderného spadu nepočítaly se složitými int...|X|Americký plazmový reaktor simuluje extrémní teploty reálné jaderné ohnivé koule • Starší teoretické modely jaderného spadu nepočítaly se složitými interakcemi prvků • Cesium kondenzuje nejpozději a ochotně tvoří dosud nepředvídané cesium-uranáty
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Nejtenčí OLED LG je zpět. Nová řada Art TV přidává i televizor s výměnnými rámy|D|04.6. 04:45|P|LG představilo novou designovou řadu Art TV 2026, pod kterou nově sdružuje několik různých konceptů televizorů zaměřených na vzhled a integraci do int...|X|LG představilo novou designovou řadu Art TV 2026, pod kterou nově sdružuje několik různých konceptů televizorů zaměřených na vzhled a integraci do interiéru. Nejde přitom o úplně novou kategorii. Výrobce už řadu let nabízí modely Wallpaper TV nebo Gallery OLED, nově je však spojuje pod společnou ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Brusel vyhlašuje digitální nezávislost. Co přináší balíček technologické suverenity EU?|D|04.6. 04:30|P|Komise explicitně prohlašuje, že technologická suverenita neznamená izolaci, protekcionismus ani tech decoupling. Jak to bude fungovat v praxi?|X|Evropská komise zveřejnila svůj nejambicióznější pokus o redefinici digitální geopolitiky tzv. „European Technological Sovereignty Package“, balíček čtyř legislativních a strategických iniciativ pokrývajících čipy, cloud, umělou inteligenci a open source software. Výsledný text přišel po dvou odkladech. Původně plánovaný termín zveřejnění v březnu, byl posunut na konec května a dočkali jsme se až včera.
 Iniciativu představila výkonná místopředsedkyně Komise Henna Virkkunen společně s komisařem pro průmysl Stéphanem Séjourné a komisařem pro digitální ekonomiku Casperem Jørgensenm. Virkkunen, jejíž portfolio nese titul „Technologická suverenita, bezpečnost a demokracie“, balíček rámuje nikoliv jako protekcionismus, ale jako schopnost jednat nezávisle.
 Proč teď a proč tak urgentně

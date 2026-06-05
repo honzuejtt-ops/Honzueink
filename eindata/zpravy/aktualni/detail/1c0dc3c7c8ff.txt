@@ -1,8 +1,3 @@
-Tvůrci prohlížeče Brave více než půl roku připravovali novou verzi, která oproti té stávající bude placená. Za jednorázový poplatek 60 dolarů (1300 Kč) ale uživatelům nedají více funkcí. Naopak spoustu věcí odstraní. Nový Brave Origin je totiž browser očištěný o bloatware, který je v hlavním Bravu.
-Origin bude k dispozici jako placený upgrade Bravu pro Windows, Linux, macOS, Android a iOS. Na desktopových platformách jej ale bude možné stáhnout i samostatně. A aby to nebylo tak jednoduché, na Linuxu je možné jej používat zdarma. K dispozici už jsou noční balíčky pro nejpoužívanější distribuce. Jedna licence pokrývá 10 zařízení a tvůrci slibují, že časem přidají i měsíční předplatné.
-„Brave Origin je placená verze prohlížeče pro uživatele, kteří nepotřebují všechny funkce podporující Brave jako firmu, ale přesto chtějí soukromí, jež nabízí pouze Brave. Uživatelé Origin budou i nadále využívat naše špičkové soukromí v oboru, blokování reklam a vysokou rychlost (díky funkci Shields), stejně jako pravidelné aktualizace softwaru, opravy Chromia a vylepšení zabezpečení a ochrany soukromí. Verze Origin odstraní z prohlížeče většinu ostatních funkcí,“ uvádí vývojáři.
-Uživatelé tak přijdou o AI asistenta Lea, čtečku zpráv News, sběr Rewards v kryptoměně BAT, kryptopeněženku Wallet, VPN, Tor, režim čtení Speedreader, integrovaný archiv Wayback Machine, komunikátor Talk nebo sledování statistik.
-Tyto funkce jsou součástí hlavního Bravu a placené verze Lea, Talku, VPN nebo vyhledávače pomáhají financovat vývoj prohlížeče. Není však nutné je používat, dají se vypnout a schovat z lišt, takže neruší. Origin tak slouží spíš jako finanční podpora tvůrcům nebo cílí na uživatele, kterým je prohlížeč sympatický, ale chtějí se zbavit většiny nadbytečných funkcí a telemetrie.
-Stejně tak ale mohou používat alternativní prohlížeče zaměřené na soukromí, jako jsou Librewolf (očištěná verze Firefoxu) nebo Ungoogled Chromium.
-Zdroje a další informace:
-Brave
+Brave Origin toho umí méně než Brave, zato stojí peníze. • Autoři slibují ochranu soukromí bez bloatwaru a telemetrie. • Linuxáci jej ale mohou používat zdarma.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

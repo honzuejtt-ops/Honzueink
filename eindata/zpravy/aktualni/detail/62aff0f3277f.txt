@@ -1,0 +1,16 @@
+Článek
+Podle odborníků je to vůbec poprvé, kdy byla klíčová složka nové vakcíny kompletně „vyrobena“ umělou inteligencí.
+Vakcína byla navržena specificky tak, aby fungovala na všechny koronaviry, což by mělo zahrnovat i veškeré varianty covidu a viry, které infikují zvířata, ale mohly by způsobit potenciálně pandemii mezi lidmi, uvádí BBC.
+Vývoj je stále v rané fázi, tým ale vyvíjí už i jednotlivé samostatné vakcíny, které by mohly fungovat proti chřipce nebo ebole. Jak vědci dodávají, mnohé viry umí měnit svůj vzhled nebo mutovat, vlivem čehož mohou dřívější vakcíny rychle ztrácet účinnost. Proto je třeba vakcíny proti covidu nebo chřipce pravidelně „aktualizovat“.
+Jak preparát vznikal
+Vakcíny se obvykle navrhují s použitím aktuálního kmene viru. Vědci z Cambridgeské univerzity vzali známé genetické kódy z řady koronavirů, které byly označeny jako potenciální virové hrozby. Uvedené genetické kódy pak byly detailně analyzovány umělou inteligencí (s využitím technologie pro digitálně imunitně optimalizované syntetické vakcíny).
+AI následně navrhla „superantigen“, který by dokázal trénovat imunitní systém tak, aby poskytoval ochranu proti celé řadě virů – i kdyby případně zmutovaly nebo se nová nákaza přenesla ze zvířat na lidi. Antigeny jsou klíčovými složkami vakcín.
+Velmi povzbudivý výsledek
+Profesor Jonathan Heeney z Cambridgeské univerzity uvedl, že jde o první doložený případ, kdy byl antigen nejen navržen umělou inteligencí, ale byl v menším vzorku již testován na lidech. První fáze klinické studie, do které se zapojilo 39 lidí (zdraví dobrovolníci ve věku 18–50 let, testování probíhalo mezi prosincem 2021 a zářím 2023), měla za cíl zjistit, zda jsou podobné vakcíny bezpečné.
+Vakcína (s označením pEVAC-PS) byla dobrovolníkům podána bezinjekční formou přímo do vrchní vrstvy kůže pomocí speciálního aplikátoru. Tento způsob má zajistit nejen termostabilitu, ale i možnost širšího využití v prostředí s omezenými zdroji.
+Druhá fáze, která by měla proběhnout s 200 dobrovolníky, má poskytnout detailnější náhled na to, jak moc dokáže podobná vakcína trénovat imunitní systém.
+Jak se uvádí v časopise Journal of Infection, kde byly první klinické výsledky uveřejněny, dopad na imunitní systém je zatím mírný, ale i tak velmi optimistický.
+„Umělá inteligence má v tomto ohledu jistě potenciál a je mnohem lepší při navrhování vakcín pro možné pandemie, kdy se viry mění,“ dodal profesor Saul Faust, který prováděl některé z testů na univerzitě v anglickém Southamptonu.
+Proti chřipce i hemoragickým horečkám
+Tým z Cambridge aktuálně provádí testování na zvířatech v rámci sezonních vakcín proti chřipce, které by nemusely být každoročně upravovány, a také výzkum ohledně možných vakcín proti ptačí chřipce H5N1 pro případ, že by se ve velkém přenesla i na člověka. Rovněž testují vakcínu proti virovým hemoragickým horečkám, kam se řadí i ebola.
+Podle profesora Andyho Pollarda, ředitele Oxfordské skupiny pro vakcíny, může právě umělá inteligence představovat zvrat ve výzkumu vakcín, jelikož její nástroje mají velký potenciál předpovídat, jak bude imunitní systém na vakcíny reagovat. Což vývoj ve výsledku urychlí a zachrání více životů.

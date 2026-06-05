@@ -1,0 +1,6 @@
+Příští týden v úterý vyjde v rámci pravidelného Patch Tuesday sestavení Windows 11 28000.2179. Mimo jiné bude obsahovat funkci, kterou dlouhou dobu znají applisti se sluchátky AirPod – možnost sdílet zvuk z jednoho počítače do více Bluetooth sluchátek (či reproduktorů).
+Povinné Bluetooth LE
+Uživatel jednoduše s počítačem spáruje a připojí dvoje kompatibilní sluchátka, reproduktory nebo naslouchátka a v Rychlém nastavení na hlavním panelu pak zvolí Sdílený zvuk. Následně bude stačit zaškrtnout dvojici zvukových výstupů, kam se má hudba či film odesílat. Hlasitost půjde regulovat pro každé ze zařízení samostatně pomocí běžného posuvníku.
+Počítač musí podporovat Bluetooth LE Audio, totéž platí pro připojené příslušenství. Podporu LE Audio lze zkontrolovat v Nastavení v části Bluetooth a zařízení. Chybějící tlačítko Shared audio proto může znamenat nekompatibilní hardware. V případě moderních notebooků to problém nebude, naopak u levnějších donglů nebo starších laptopů může LE Audio chybět.
+Update s novou funkcí dorazí na Windows 11 ve verzi 26H1, stejně jako pro neaktualizované 25H2 (26200.8522) a 24H2 (26100.8522). Kromě sdíleného audia přinese například vylepšený Správce úloh, Xbox Mode nebo rozšířenou podporu archivních formátů jako uu, cpio, xar nebo nupkg.
+Zdroj: Microsoft

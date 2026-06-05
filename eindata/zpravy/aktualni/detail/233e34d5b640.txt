@@ -1,0 +1,13 @@
+Článek
+Podle Evropské komise se Evropa nemůže dlouhodobě spoléhat na zahraniční společnosti v oblastech, které jsou klíčové pro fungování nemocnic, energetických sítí nebo státní správy. Nová legislativa proto počítá s výraznější podporou domácích technologických řešení a větším důrazem na takzvanou digitální suverenitu.
+„Evropa musí mít kontrolu nad technologiemi, na kterých stojí její každodenní fungování,“ zaznívá podle agentury Reuters z Bruselu. V praxi to znamená podporu evropských poskytovatelů cloudových služeb, investice do umělé inteligence a snahu zvýšit výrobu polovodičů na evropském území.
+Jedním z argumentů evropských představitelů je i riziko, že by zahraniční vlády nebo firmy mohly v krizových situacích omezit přístup ke klíčovým digitálním službám. Evropská komise proto chce zajistit, aby citlivá data zůstávala pod evropskou kontrolou a byla ukládána i spravována na území Unie.
+Američtí giganti se přizpůsobují
+Zvláštní pravidla by se měla týkat například bankovnictví, zdravotnictví nebo energetiky. Právě zde panují obavy z americké legislativy, která za určitých okolností umožňuje úřadům přístup k datům spravovaným americkými společnostmi, i když jsou fyzicky uložena mimo Spojené státy.
+Největší pozornost budí návrh týkající se veřejných zakázek. U některých kritických projektů by nově mohlo být podmínkou, aby software i hardware pocházely z Evropské unie. Takový krok by mohl výrazně omezit vliv zahraničních firem v citlivých oblastech, například v obraně nebo státní správě.
+Brusel tím zároveň vysílá jasný signál evropským technologickým firmám: pokud dokážou nabídnout konkurenceschopná řešení, mohou získat významnou výhodu na domácím trhu.
+Společnosti jako Amazon, Microsoft nebo Google, které dnes ovládají většinu světového trhu cloudových služeb, už na evropské požadavky reagují. Zakládají lokální cloudové projekty, vytvářejí samostatné evropské infrastruktury a snaží se zákazníkům garantovat větší kontrolu nad jejich daty.
+Microsoft například spolupracuje s evropskými partnery na projektech spravovaných přímo z Evropy. Amazon zase letos představil cloudovou službu provozovanou výhradně na evropském území a oddělenou od své globální infrastruktury.
+Čipy jako nová strategická surovina
+Vedle cloudu a umělé inteligence chce Evropská unie výrazně posílit také výrobu čipů. Pandemie covidu i následné geopolitické napětí totiž ukázaly, jak zranitelný může být globální dodavatelský řetězec.
+Nová verze evropského zákona o čipech má výrobcům nabídnout větší jistotu odbytu a podpořit vznik dlouhodobých kontraktů s odběrateli. Cílem je, aby se do roku 2030 zdvojnásobil podíl Evropy na světové produkci polovodičů.

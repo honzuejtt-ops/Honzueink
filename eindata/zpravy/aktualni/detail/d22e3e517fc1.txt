@@ -1,7 +1,4 @@
-|T|Tarify pro děti od Vodafonu získají přes léto neomezená data zdarma a jako bonus lokátor za 1 Kč|D|07.6. 17:45|P||X|
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
-|T|Nový kvantový čip od Microsoftu, zranitelnosti postkvantových šifer, další kvantová firma na burze|D|07.6. 17:00|P|Pravidelný přehled novinek z rozsáhlého a rozvíjejícího se oboru kvantových počítačů, který vydáváme ve spolupráci s blogem Qubits.cz.|X|Kvantové počítače
+Kvantové počítače
 Jak jsme již psali, IBM oznámilo plán investovat během příštích pěti let více než 10 miliard dolarů do kvantových technologií. A co s tím budou dělat? Jejich cílem je uvést do provozu první rozsáhlý fault-tolerant kvantový počítač do roku 2029. Investice mají pokrýt nejen vývoj samotných procesorů, ale také výrobu čipů, rozšiřování infrastruktury, akvizice a budování širšího průmyslového ekosystému kolem kvantového computingu. Součástí strategie je i projekt Anderon, tedy samostatná americká foundry zaměřená na výrobu kvantových čipů, která vzniká s podporou Chips Actu a do níž IBM přispěje miliardou dolarů spolu s technologiemi, duševním vlastnictvím a částí odborného týmu. Firma zároveň opět potvrdila roadmapu systému IBM Quantum Starling, který má využívat logické qubity chráněné pomocí pokročilých qLDPC korekčních kódů a být schopný provádět dlouhé výpočty bez akumulace chyb, což je klíčová podmínka pro prakticky využitelné kvantové výpočty.
 D-Wave zveřejnila novou roadmapu pro své gate-model kvantové počítače, která počítá s dosažením systému se 100 logickými qubity schopného provést více než milion operací do roku 2032. Firma přitom sází na vlastní supravodivou architekturu takzvaných dual-rail qubitů, u níž je detekce velké části chyb zabudována přímo do hardwaru. Podle D-Wave by tento přístup mohl výrazně snížit počet fyzických qubitů potřebných pro kvantovou korekci chyb oproti konvenčním architekturám. Roadmapa zahrnuje několik mezikroků, od systémů s desítkami až stovkami fyzických qubitů v druhé polovině dekády až po první logické qubity kolem roku 2030. Oznámení je zajímavé i tím, že D-Wave byla dosud známá především svými annealing systémy pro optimalizační úlohy; nyní se výrazněji hlásí také k univerzálním gate-model počítačům a fault-tolerantnímu computingu.
 Finský projekt QScale, vedený VTT ve spolupráci s Aalto University a Tampere University, se zaměřuje na jeden z méně viditelných, ale zásadních problémů škálování kvantových počítačů: distribuci řídících signálů k velkému počtu qubitů. Současné supravodivé systémy používají rozsáhlou síť elektrických kabelů vedoucích do kryostatu, která při růstu počtu qubitů přináší značnou tepelnou zátěž a energetickou spotřebu. QScale proto kombinuje optické telekomunikační technologie s supravodivými obvody generujícími velmi přesné nízkošumové elektrické signály a snaží se část této infrastruktury nahradit optickým přenosem. Cílem je vytvořit modulární technologii umožňující řízení výrazně větších kvantových systémů bez dramatického růstu spotřeby energie. Projekt má běžet tři roky, disponuje rozpočtem téměř sedm milionů eur a jeho ambicí je připravit technologii pro komerční využití v příští dekádě.
@@ -17,38 +14,4 @@ Jeden z nejvýznamnějších kryptografů, Daniel J. Bernstein, vydal článek, 
 Kvantový byznys, investice a politika
 Francouzský výrobce kvantových počítačů Quobly získal 115 milionu eur v investiční sérii A. Quobly pracuje na křemíkových spinových qubitech a první kvantový počítač dostupný skrze cloud by měl být představen ještě letos.
 Australský QuantX získal seed investici pět milionů dolarů. QuantX pracuje na optických kvantových hodinách.
-A na burzu NASDAQ vstoupila společnost Quantinuum pod zkratkou QNT.|E|
-|T|Teď se dozvíte, co budete hrát za několik měsíců. Xbox na dnešní večer chystá velkou show|D|07.6. 16:45|P|Tradiční veletrh E3 je historií. O oznamování nových her a haldu traileru v průběhu léta ale nepřijdeme ani tentokrát. Tento článek budeme průběžně ak...|X|Tradiční veletrh E3 je historií. O oznamování nových her a haldu traileru v průběhu léta ale nepřijdeme ani tentokrát. Tento článek budeme průběžně aktualizovat a velmi stručně v něm najdete vše, co bylo na největších akcích představeno.
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
-|T|Normálně za peníze, dnes zadarmo nebo se slevou: Identifikace hub, práce s PDF a postapo světy|D|07.6. 15:45|P|V marketech se pravidelně objevují slevy na aplikace a hry • Vybírejte pro platformy Android i iOS • Na titulu můžete ušetřit desítky korun|X|V marketech se pravidelně objevují slevy na aplikace a hry • Vybírejte pro platformy Android i iOS • Na titulu můžete ušetřit desítky korun
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
-|T|Na Havaji chtějí tisknout čluny pro námořnictvo. Použijí PETG a všudypřítomný „neviditelný“ čedič|D|07.6. 13:45|P|Výroba vojenského člunu obvykle vyžaduje formy, vrstvení sklolaminátu a týdny času. Havajští Voltage Vessels se snaží celý tento proces nahradit FDM/F...|X|Výroba vojenského člunu obvykle vyžaduje formy, vrstvení sklolaminátu a týdny času. Havajští Voltage Vessels se snaží celý tento proces nahradit FDM/FFf 3D tiskem a filamentem Eclipse X9 vlastní výroby.
-
-Běžný FDM/FFF 3D tisk nejí na tomto poli ničím novým – nizozemští CAED dokážou stejným způsobem ...
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
-|T|Z Česka se stává světové centrum výroby technologií pro AI. Další velký hráč míří do Pardubic|D|07.6. 11:45|P|Francouzský výrobce superpočítačů začne v Česku vyrábět nejmodernější systémy pro potřeby umělé inteligence • . • Země upevňuje roli světového centra ...|X|Francouzský výrobce superpočítačů začne v Česku vyrábět nejmodernější systémy pro potřeby umělé inteligence • . • Země upevňuje roli světového centra produkce klíčového hardwaru a k rozsáhlé výrobě v Kutné Hoře se nyní přidají Pardubice. • Miliardová investice má Evropě zajistit technologickou ...
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
-|T|Saab má nový dvoumístný Gripen F. Umí koordinovat roje dronů a prvním zákazníkem je Brazílie|D|07.6. 09:45|P|Švédský Saab se pochlubil novým stíhacím letounem Gripen F. Jedná se o dvoumístnou variantu řady E, která může díky druhému kokpitu sloužit vedle ostr...|X|Švédský Saab se pochlubil novým stíhacím letounem Gripen F. Jedná se o dvoumístnou variantu řady E, která může díky druhému kokpitu sloužit vedle ostrého nasazení také k výcviku.
-
-Dvoumístný stroj vznikl ve spolupráci s brazilským letectvem, které bude jeho prvním zákazníkem. Země si v roce 2014 ...
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
-|T|Star Wars jako taktická tahovka? Zero Company vyjde v srpnu. Povedeme žoldáky během Klonových válek|D|07.6. 08:45|P||X|
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
-|T|Pizza Hut čelí žalobě o 100 milionů dolarů. AI systém zpomalil rozvoz a kurýři vozili zákazníkům studené pizzy|D|07.6. 07:45|P|Nespokojený franšízant žaluje řetězec Pizza Hut o sto milionů dolarů • Vnucený systém s umělou inteligencí totiž fatálně ochromil rozvoz jídla • Vychy...|X|Nespokojený franšízant žaluje řetězec Pizza Hut o sto milionů dolarů • Vnucený systém s umělou inteligencí totiž fatálně ochromil rozvoz jídla • Vychytralí kurýři systém zneužívali a zákazníkům vozili studené pizzy
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
-|T|Vyzkoušeli jsme prvního AI agenta pro iMessage. Umí česky a cenu za prémiové funkce si dohodnete sami|D|07.6. 06:45|P||X|
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
-|T|Nová personalizovaná mRNA vakcína proti melanomu snižuje o 49 % riziko návratu rakoviny|D|07.6. 05:45|P|Kombinace personalizované vakcíny a imunoterapie snížila riziko návratu melanomu • Očkovací látka vzniká na míru podle genetických mutací konkrétního ...|X|Kombinace personalizované vakcíny a imunoterapie snížila riziko návratu melanomu • Očkovací látka vzniká na míru podle genetických mutací konkrétního nádoru • Výzkum prokázal dlouhodobé přežití pacientů s minimem vedlejších účinků
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
-|T|Co se nejvíc hraje na Steamu? Toto jsou nejoblíbenější hry pro PC. Aktualizace červen 2026|D|07.6. 04:45|P|Ze statistik Steamu jsme zjistili, kolik hodin denně stráví hráči s jednotlivými hrami. Toto je žebříček těch nejoblíbenějších za poslední týdny.|X|Ze statistik Steamu jsme zjistili, kolik hodin denně stráví hráči s jednotlivými hrami. Toto je žebříček těch nejoblíbenějších za poslední týdny.
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+A na burzu NASDAQ vstoupila společnost Quantinuum pod zkratkou QNT.

@@ -1,1 +1,1 @@
-HTTPSConnectionPool(host='www.lupa.cz', port=443): Max retries exceeded with url: /rss/clanky/ (Caused by NewConnectionError("HTTPSConnection(host='www.lupa.cz', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))
+HTTPSConnectionPool(host='ct24.ceskatelevize.cz', port=443): Max retries exceeded with url: /rss/svet (Caused by ConnectTimeoutError(<HTTPSConnection(host='ct24.ceskatelevize.cz', port=443) at 0x7f3e37586170>, 'Connection to ct24.ceskatelevize.cz timed out. (connect timeout=10)'))

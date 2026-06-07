@@ -1,4 +1,10 @@
-|T|Saab má nový dvoumístný Gripen F. Umí koordinovat roje dronů a prvním zákazníkem je Brazílie|D|07.6. 09:45|P|Švédský Saab se pochlubil novým stíhacím letounem Gripen F. Jedná se o dvoumístnou variantu řady E, která může díky druhému kokpitu sloužit vedle ostr...|X|Švédský Saab se pochlubil novým stíhacím letounem Gripen F. Jedná se o dvoumístnou variantu řady E, která může díky druhému kokpitu sloužit vedle ostrého nasazení také k výcviku.
+|T|Na Havaji chtějí tisknout čluny pro námořnictvo. Použijí PETG a všudypřítomný „neviditelný“ čedič|D|07.6. 13:45|P|Výroba vojenského člunu obvykle vyžaduje formy, vrstvení sklolaminátu a týdny času. Havajští Voltage Vessels se snaží celý tento proces nahradit FDM/F...|X|Výroba vojenského člunu obvykle vyžaduje formy, vrstvení sklolaminátu a týdny času. Havajští Voltage Vessels se snaží celý tento proces nahradit FDM/FFf 3D tiskem a filamentem Eclipse X9 vlastní výroby.
+
+Běžný FDM/FFF 3D tisk nejí na tomto poli ničím novým – nizozemští CAED dokážou stejným způsobem ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Z Česka se stává světové centrum výroby technologií pro AI. Další velký hráč míří do Pardubic|D|07.6. 11:45|P|Francouzský výrobce superpočítačů začne v Česku vyrábět nejmodernější systémy pro potřeby umělé inteligence • . • Země upevňuje roli světového centra ...|X|Francouzský výrobce superpočítačů začne v Česku vyrábět nejmodernější systémy pro potřeby umělé inteligence • . • Země upevňuje roli světového centra produkce klíčového hardwaru a k rozsáhlé výrobě v Kutné Hoře se nyní přidají Pardubice. • Miliardová investice má Evropě zajistit technologickou ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Saab má nový dvoumístný Gripen F. Umí koordinovat roje dronů a prvním zákazníkem je Brazílie|D|07.6. 09:45|P|Švédský Saab se pochlubil novým stíhacím letounem Gripen F. Jedná se o dvoumístnou variantu řady E, která může díky druhému kokpitu sloužit vedle ostr...|X|Švédský Saab se pochlubil novým stíhacím letounem Gripen F. Jedná se o dvoumístnou variantu řady E, která může díky druhému kokpitu sloužit vedle ostrého nasazení také k výcviku.
 
 Dvoumístný stroj vznikl ve spolupráci s brazilským letectvem, které bude jeho prvním zákazníkem. Země si v roce 2014 ...
 

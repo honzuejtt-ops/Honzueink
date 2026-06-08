@@ -1,0 +1,181 @@
+Pojmenované funkce a anonymní funkce
+Co se dozvíte v článku
+- Pojmenované funkce a anonymní funkce
+- Přímá a nepřímá rekurze
+- Rekurzivní funkce odd i even
+- Funkce vyššího řádu
+- Curryfikace (currying) a částečně vyhodnocené funkce
+- Funkce přistupující k symbolům ve svém prostředí (environment)
+- Praktické využití curryfikace
+- Skutečný počet parametrů funkcí definovaných v jazyce Standard ML
+- Generování funkcí pro výpočet n-té mocniny
+- Chyby vzniklé při překladu a v době běhu programu
+- Výjimky
+- Nahrazení výjimek datovými typy
+- Práce s výjimkami v LunarML
+- Jedna z největších zbraní jazyka Standard ML: uživatelské (rekurzivní) datové typy
+- Od jednoduchých datových typů k rekurzivním datovým typům
+- Příloha: Makefile pro transpřeklad všech dnes ukázaných demonstračních příkladů
+- Repositář s demonstračními příklady
+- Literatura
+- Předchozí články o jazyku ML/SML i o jazycích OCaml a F#
+- Odkazy na Internetu
+Ve všech funkcionálních programovacích jazycích mají funkce stejně plnohodnotný význam, jako jakékoli jiné datové typy. Výjimkou z tohoto pravidla není ani jazyk Standard ML, ve kterém může být typ funkce automaticky odvozen od typů parametrů a návratové hodnoty (opět se zde tedy setkáváme s typovou inferencí). Funkce je v tomto jazyku definována klíčovým slovem fun:
+fun <jméno-funkce> <formální-parametry-funkce> = <tělo-funkce>
+Pro zajímavost si připomeňme, jaká klíčová slova pro definici funkce se používají v těch programovacích jazycích, v nichž je tento koncept použit (vynecháme tedy klasické céčkové jazyky, v nichž funkce tvoří vlastní kategorii objektů a nejedná se o běžné hodnoty; ostatně pro definici funkce v céčku neexistuje žádné klíčové slovo):
+Ukažme si definici nové funkce v jazyku Standard ML, která po svém zavolání zvýší obsah svého parametru o jedničku a vrátí vypočtený výsledek jako novou hodnotu. Funkce se bude jmenovat inc a její parametr bude mít jméno n:
+fun inc n = n + 1;
+U této funkce je zajímavé především to, že jsme nikde neuvedli typ parametru ani typ návratové hodnoty a přesto překladač či interpret programovacího jazyka Standard ML zjistil, že se jedná o funkci int → int (čteme: parametr je celé číslo a výsledkem je taktéž celé číslo). Přitom se vychází z těla funkce, tedy z výrazu n+1, což je v jazyku ML i Standard ML striktně součet dvou celých čísel.
+Zavolání takové funkce je jednoduché:
+int 10;
+Pozor si musíte dát především na to, že se používá levá asociativita, což u funkcí volaných bez kulatých závorek povede (resp. může vést) ke špatným výsledkům (chybě při překladu):
+f g x znamená (f g) x
+Můžete si to ostatně sami otestovat na takzvané kompozici funkcí:
+(* Kompozice funkcí *) fun inc x = x + 1; fun double x = x * 2; inc(double 1); inc double 1;
+První volání je v pořádku (vrátí se trojka), ovšem druhé volání již nikoli:
+Elaboration failed: Type clash. Functions of type "int → int" cannot take an argument of type "int → int": Cannot merge "int" and "int → int".
+Definici a zavolání funkce se dvěma parametry jsme si již ukázali v předchozím článku:
+(* Definice funkce *) fun add (x, y) = x + y; add(3,4);
+V programovacím jazyku Standard ML je možné deklarovat i anonymní funkce. Opět se nejedná o nic překvapivého, zvláště když si uvědomíme, kolik sémantiky (nikoli však syntaxe) bylo převzato z Lispovských jazyků. Anonymní funkce se deklaruje klíčovým slovem fn a používá se zde znak šipky =>, nikoli pouze přiřazení =. Příkladem jednoduché anonymní funkce je (opět) funkce, která vrátí hodnotu svého parametru zvýšeného o jedničku (jedná se tedy o funkci s parametrem typu int a návratovou hodnotou typu int):
+fn x => 1 + x; > val it = fn: int → int;
+Pochopitelně je možné vytvořit i anonymní funkce akceptující větší množství parametrů. Zápis bude v tomto případě vypadat následovně:
+fn (x, y) => x + y; > val it = fn: int * int → int;
+Nyní se podívejme, jak vypadá překlad (resp. transpřeklad) anonymních funkcí v praxi. Necháme si přeložit deklaraci a volání anonymní funkce, která vrátí hodnotu svého parametru zvětšeného o jedničku:
+(* Anonymní funkce *) val result = (fn x => x+1)1; print(Int.toString (result)); print "\n";
+LunarML při překladu aplikuje optimalizace, takže ve výsledném kódu uvidíme jen tisk trojky:
+local result = gsub(tostring(2), "-", "~") outputAndFlush(stdOut, result) outputAndFlush(stdOut, "\n")
+Dtto pro JavaScript:
+const tmp13 = 2 .toString(); const a = _encodeUtf8(tmp13); outputAndFlush(stdOut[0], a); outputAndFlush(stdOut[0], Uint8Array.of(10)); }
+Příklad tedy musíme zkomplikovat, aby se optimalizace nemohly provádět. Například výpočtem parametru ve složitější funkci:
+(* Naivní implementace výpočtu Fibonacciho posloupnosti *)
+ 
+fun fib n =
+    if n = 0 then 0 else
+    if n = 1 then 1 else
+    fib (n - 1) + fib (n - 2);
+ 
+ 
+(* Anonymní funkce *)
+val result = (fn x => x+1) (fib 10);
+ 
+print(Int.toString (result));
+print "\n";
+Výsledek překladu do jazyka Lua:
+local function fib(n)
+  if n == 0 then
+    return 0
+  elseif n == 1 then
+    return 1
+  end
+  local tmp = fib(_Int_sub(n, 1))
+  local tmp1 = fib(_Int_sub(n, 2))
+  return _Int_add(tmp, tmp1)
+end
+local tmp = fib(10)
+local result = _Int_add(tmp, 1)
+local result1 = gsub(tostring(result), "-", "~")
+outputAndFlush(stdOut, result1)
+outputAndFlush(stdOut, "\n")
+V JavaScriptu je to podobné:
+ fib = function(n) {
+  if (n === 0) {
+   return 0;
+  } else if (n === 1) {
+   return 1;
+  } else {
+   const tmp15 = fib(_Int54_sub(n, 1));
+   const tmp16 = fib(_Int54_sub(n, 2));
+   return _Int54_add(tmp15, tmp16);
+  }
+ };
+ const tmp13 = fib(10);
+ const result = _Int54_add(tmp13, 1);
+Dalším příkladem je anonymní funkce se dvěma parametry:
+(* Anonymní funkce *) val result = (fn (x, y) => x+y) (1, 2); print(Int.toString (result)); print "\n";
+Ve výsledku transpřekladu můžeme opět vidět aplikaci optimalizací. Jazyk Lua:
+local result = gsub(tostring(3), "-", "~") outputAndFlush(stdOut, result) outputAndFlush(stdOut, "\n")
+A JavaScript:
+const tmp13 = 3 .toString(); const a = _encodeUtf8(tmp13); outputAndFlush(stdOut[0], a); outputAndFlush(stdOut[0], Uint8Array.of(10)); }
+Použijeme podobný trik s komplikovanějším výpočtem parametrů funkce:
+(* Naivní implementace výpočtu Fibonacciho posloupnosti *)
+ 
+fun fib n =
+    if n = 0 then 0 else
+    if n = 1 then 1 else
+    fib (n - 1) + fib (n - 2);
+ 
+ 
+(* Anonymní funkce *)
+val result = (fn (x, y) => x+y) (fib 1, fib 2);
+ 
+print(Int.toString (result));
+print "\n";
+Výsledek transpřekladu:
+local function fib(n)
+  if n == 0 then
+    return 0
+  elseif n == 1 then
+    return 1
+  end
+  local tmp = fib(_Int_sub(n, 1))
+  local tmp1 = fib(_Int_sub(n, 2))
+  return _Int_add(tmp, tmp1)
+end
+local tmp = fib(1)
+local tmp1 = fib(2)
+local result = _Int_add(tmp, tmp1)
+local result1 = gsub(tostring(result), "-", "~")
+outputAndFlush(stdOut, result1)
+outputAndFlush(stdOut, "\n")
+Dtto, ale pro JavaScript:
+ let fib;
+ fib = function(n) {
+  if (n === 0) {
+   return 0;
+  } else if (n === 1) {
+   return 1;
+  } else {
+   const tmp16 = fib(_Int54_sub(n, 1));
+   const tmp17 = fib(_Int54_sub(n, 2));
+   return _Int54_add(tmp16, tmp17);
+  }
+ };
+ const tmp13 = fib(1);
+ const tmp14 = fib(2);
+ const result = _Int54_add(tmp13, tmp14);
+Přímá a nepřímá rekurze
+Rekurze, neboli volání nějaké funkce v těle té samé funkce (přímá rekurze) nebo prostřednictvím funkce jiné (takzvaná nepřímá rekurze), představuje jednu ze základních programátorských technik, na kterých je programovací jazyk Standard ML postaven, podobně jako další funkcionální jazyky. Můžeme zde opět spatřovat velkou inspiraci Lispem, ve kterém se rekurze také velmi často používá; ostatně samotné Lispovské příkazy, například apply, map či forall jsou definovány rekurzivně, podobně jako v dalším Lispovsky orientovaném jazyce – ve Scheme. Samotná myšlenka rekurze je však starší než všechny programovací jazyky, protože je hluboce zakořeněna jak v podstatě některých přírodních i umělých jevů či objektů, tak i v matematice, v například v definicích různých algebraických a geometrických struktur.
+Definice přímé rekurzivní funkce je v jazyce Standard ML zcela bezproblémová – nejsou zapotřebí žádné dopředné („forward“) deklarace atd. A pochopitelně jsou stále odvozovány popř. hlídány datové typy předávaných parametrů i návratových hodnot:
+(* Naivní implementace funkce length *)
+ 
+fun length(x) = if null(x) then 0
+                else 1 + length(tl(x));
+Typ této funkce je zajímavý – funkce length, kterou jsme právě definovali, totiž bude akceptovat seznam libovolného typu, tj. jedná se o generickou funkci ('a zde značí „any“, i když ve skutečnosti se jedná o zápis znaku alfa):
+val length = fn: ∀ 'a . 'a list → int;
+Otestování, zda je tato funkce definována korektně, je v praxi snadné. Nejjednodušší je využití online REPLu jazyka Standard ML (SOSML):
+length([]); > val it = 0: int; length([1]); > val it = 1: int; length([1,2,3,4]); > val it = 4: int;
+(* Funkce accumulate s tail rekurzí *) fun accumulate ([], a) = a | accumulate ((_::tail), a) = accumulate(tail, (1 + a)); (* Funkce pro výpočet délky seznamu *) fun length lst = accumulate(lst, 0); print(Int.toString(length [])); print "\n"; print(Int.toString(length [1, 2, 3])); print "\n"; (* Je možné vypočítat délku seznamu libovolného typu *) print(Int.toString(length ["foo", "bar", "baz"])); print "\n";
+Automaticky odvozené typy obou funkcí ukazují, že se stále jedná o generické funkce:
+val accumulate = fn: ∀ α . α list * int → int; val length = fn: ∀ α . α list → int;
+Překlad do jazyka Lua používá příkaz goto a je nerekurzivní (takže rychlý):
+  local accumulate = function(_1, a)
+    local tmp1, tmp2 = _1, a
+    ::cont::
+    local _1_1, a1 = tmp1, tmp2
+    if _1_1 == nil then
+      return a1
+    elseif _1_1 ~= nil then
+      local tmp3 = _1_1[2]
+      tmp1 = tmp3
+      tmp2 = _Int_add(1, a1)
+      goto cont
+    else
+      _raise(_Match, "accumulate.sml:3:5")
+    end
+  end
+Překlad do JavaScriptu ukazuje použití programové smyčky:
+ const accumulate = function(_1, a) {
+  let tmp19 = _1, tmp20 = a;
+  for (;;) {
+   const _1$1 = tmp1...
+(Pokracovani na webu)

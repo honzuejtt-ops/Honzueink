@@ -1,3 +1,222 @@
+|T|IPv6 má polovina uživatelů, většina zařízení už IPv4 nepotřebuje (Den IPv6)|D|08.6. 22:00|P|Ve čtvrtek 4. dubna proběhl další ročník tradiční konference IPv6, která mapuje situaci kolem přechodu na nový internetový protokol a představuje nejn...|X|Petr Krčmář: Kam jsme se za 30 let dostali?
+Co se dozvíte v článku
+- Petr Krčmář: Kam jsme se za 30 let dostali?
+- Radim Friedel: Už tam budem?
+- Jiří Chudoba: IPv6 v gridu pro LHC experimenty
+- Václav Steiner: IPv6 v otevřeném standardu Matter
+- Tomáš Tichý: Příprava státu na IPv6
+- Vilém Veselý: Státní správa a IPv6
+- Ondřej Filip: IPv6 ve světě
+- Tomáš Hlaváček: IPv6 přestává být občanem druhé kategorie
+- Michal Hrušecký: Útoky na IPv4 a IPv6
+- Ondřej Caletka: Rok IPv6-only desktopu
+Původní protokol IPv4 používá 32bitové adresy, což je překvapivě obrovský adresní prostor. Přesto se už v 90. letech ukázalo, že to nebude stačit, protože internet začal růst exponenciálně – začala přibývat mobilní zařízení, služby a také IoT. Potřeba adres výrazně narůstala a bylo třeba ji řešit.
+Vznikla proto dvě dočasná a rychlá řešení: beztřídní dělení adresního prostoru (CIDR) a také překlad adres (NAT), který dovoluje používat neunikátní adresy v místních sítích. Od začátku se ale vědělo, že to je jen dočasné řešení, které pouze zpomaluje čerpání globálních adres a bude třeba najít dočasné řešení.
+V roce 1992 byla v rámci IETF spuštěna soutěž nových protokolů nazvaná IPng. Cílem bylo posbírat návrhy od komunity a firem a vymyslet novou koncepci internetového protokolu. Prvními čtyřmi kandidáty byly CNAT, IP Encaps, Nimrod a Simple CLNP. Poté přibyli ještě další: PIP, SIP a TP/IX. Že to nebyl jednoduchý proces, dokládá následující vývoj, kdy se ze Simple CLNP se stal TUBA (TCP and UDP with Bigger Addresses), IP Encaps se vyvinul do IPAE (IP Address Encapsulation) a TP/IX změnil název na CATNIP (Common Architecture for the Internet).
+Následný vývoj vedl ke sloučení projektu IPAE se SIP a poté navíc s PIP. Výsledkem byl nový protokol SIPP (Simple Internet Protocol Plus), který původně používal 64bitové adresy. Následně byl adresní prostor rozšířen na 128bitů a tato varianta byla následně vybrána jako výsledek výběrového řízení na IPng.
+V dalších letech poté docházelo k úpravám návrhu, přípravě prvních specifikací a přejmenování protokolu na IPv6. V roce 1998 také vyšlo první RFC 1883, které začalo se standardizací protokolu. Následovaly první experimenty, implementace do softwaru a hardwaru a následné šíření do produkce. Celý tento proces zabral přibližně třicet let.
+IPv6 má výrazně jednodušší formát hlaviček obsahující méně položek pro rychlejší zpracování. Především ale rozšiřuje adresu z 32 na 128 bitů. Máme k dispozici 3,4×1038 adres, což znamená, že na každý milimetr čtvereční povrchu Země připadá 3,4×1015 adres.
+Protokol mění pouze třetí síťovou vrstvu – ostatní nižší a vyšší vrstvy nejsou výměnou zasaženy. Můžeme stále používat Ethernet a na druhé straně například TCP nebo UDP. Někdy je potřeba upravit aplikační protokoly, zejména tam, kde se přímo pracuje s IP adresou – různé formuláře, databáze, konfigurační rozhraní a podobně.
+V IPv6 se adresa zapisuje do osm skupin po čtyřech šestnáctkových číslicích, přičemž každá skupina obsahuje 16 bitů a oddělujeme je dvojtečkami. V každé čtveřici můžeme vynechat počáteční nuly a opakující se nuly můžeme také vynechat i napříč skupinami, ovšem kvůli jednoznačnosti jen jednou. Přesto z logiky věci vznikají dlouhé adresy a předpokládá se intenzivní využití DNS.
+IPv6 není zpětně kompatibilní s IPv4, uzly používající nový a starý protokol se přímo nemohou domluvit. Taková situace by ovšem nastala s výměnou protokolu v každém případě. Není možné „jen“ prodloužit adresu, formát hlavičky v IPv4 je pevně stanoven a vždy tak vzniká nový protokol.
+Od úplného začátku se proto počítalo s přechodovými mechanismy, už RFC 1933 z dubna 1996 rozebírá tunelování provozu po IPv4. Bylo jasné, že přechod celého internetu bude postupný a možná dokonce nekonečný – některé uzly budou navždy na IPv4. Postupně by ale měl provoz na IPv6 převážit a některé uzly kompatibilitu nebudou potřebovat vůbec, protože mohou komunikovat čistě po IPv6.
+Běžným přechodovým mechanismem je dual-stack, kdy se k dosavadní síti IPv4 se přidá druhá síť IPv6. Každé síťové rozhraní má nezávislé IPv4 a IPv6 adresy a kooperace probíhá až na aplikační úrovni. Aplikace má přístup k oběma světům a pokud nechá výběr na operačním systému, preferuje se ve výchozím stavu použití novějšího protokolu IPv6.
+Výhodou tohoto přístupu je, že se velmi snadno nasazuje a je kompatibilní se stávající infrastrukturou. Případné problémy IPv6 zakrývá algoritmus Happy Eyeballs, který se snaží vždy vybrat funkční cestu, i kdyby ta druhá byla rozbitá. Naopak nevýhodou je, že dual-stack vůbec neřeší problémy s nedostatkem adres v IPv4 a nutí správce udržovat dvě samostatné sítě. IPv6 je tak často občanem druhé kategorie, nemonitoruje se a problémy se řeší mnohem pomaleji.
+Pokročilejší variantou je NAT64, kdy je v síti zavedena pouze IPv6, což vytváří jednodušší infrastrukturu s jednou adresací pro všechny uzly. Připojení do původní IPv4 je realizováno až na hranici sítě, kde DNS64 falšuje záznamy AAAA u cílů, které je nemají. Pokud do tohoto adresního prostoru odchází provoz, NAT64 se postará o překlad do IPv4 a případně zpět.
+Tento přístup nefunguje v případě, že aplikace chce kontaktovat IPv4 literály, protože na rozhraní jednoduše není IPv4 adresa a takový provoz není kam poslat. Řešením je obrácený překlad 464XLAT implementovaný na koncovém zařízení. To si samo přidělí IPv4 adresu a provoz směřuje do lokálního překladače, který je schopen upravit provoz do podoby IPv6.
+Nadstavbou tohoto řešení je pak IPv6-mostly, kdy v síti nabízíme i IPv4 pomocí DHCP, ale většina zařízení si takovou adresu nevyzvedne. DHCP server totiž vysílá volbu číslo 108 nazvanou IPv6-only Preferred, která značí, že v této síti není IPv4 potřeba. Staré zařízení, které volbu nezná a třeba IPv6 vůbec neřeší, si normálně vyzvedne starou adresu a může ji používat. Moderní zařízení ale přeruší objednávku adres a bude používat výhradně IPv6. V reálném nasazení dnes takové řešení podporuje zhruba 80 % zařízení a toto číslo postupně roste.
+Pro Česko je relevantní také ještě přechodový mechanismus Dual-Stack Lite (DS Lite), který používá Vodafone ve své síti exUPC. Z hlediska klientů v koncové síti jde o dual-stack, protože mají obě adresy a mohou je plnohodnotně používat. Rozdíl je ovšem v přístupové síti poskytovatele, která je postavena výhradně na IPv6. V klientských sítích jsou nasazeny (privátní) adresy IPv4 a hraniční síťový prvek (B4), který ovšem nepoužívá NAT. Místo toho zabalí provoz IPv4 do tunelu a pošle po IPv6. U poskytovatele je prvek AFTR s připojením do IPv4, který implementuje NAT a umí provoz vybalit a odeslat.
+Postupný přechod je potřeba řešit na několika místech: v infrastruktuře, na serverech a v koncových sítích. Infrastruktura je dávno vyřešena, páteřní sítě nemají s IPv6 problém, stejně jako například propojovací uzly. Například NIX.CZ spustil podporu IPv6 už v roce 2003. U serverů se situace různí, protože tam hodně záleží na vůli správce. V datacentrech je IPv6 dostupná, ale správce služby ji nesmí vypnout, musí správně nastavit DNS a podobně.
+Největší práce je s koncovými přípojkami, protože ty jsou nejvíce závislé na práci mnoha různých lidí a subjektů. ČTÚ eviduje zhruba 1820 poskytovatelů a 4,2 milionů internetových přípojek. Obecně je jednodušší situace ve státech, kde převažuje několik velikých operátorů pokrývajících velkou část trhu. Horší konkurence má zase jiné problémy, ale jednodušeji se v takovém prostředí aplikují velké změny podobného typu.
+Obecně je největším problémem nedostatek motivace na straně poskytovatelů, protože ti nevidí okamžitý přínos ani návratnost takové změny. Vyžaduje to další práci, školení správců a hlavně změnu zaběhlého myšlení. U konkrétních uživatelů pak záleží na použitých síťových prvcích a dalších zařízeních, obecně je situace jednodušší v sítích, kde poskytovatel klientovi spravuje i koncové zařízení. Uživatel pak nic neřeší a vlastně ani neví, že nějakou IPv6 používá.
+Do celé situace zasahují také zákonné požadavky v různých zemích. Japonsko už v roce 2000 vyhlásilo podporu a rozjelo projekty podpory IPv6, včetně daňových úlev. Evropská komise v roce 2002 vydala nové priority pro internet a financované projekty musejí komunikovat po IPv6. Spojené státy zaúkolovaly administrativu už v roce 2005, podle původních plánů měly už v roce 2008 všechny vládní sítě podporovat IPv6. Česko v roce 2009 vydalo usnesení vlády, podle kterého měly být všechny služby od roku 2010 dostupné po IPv6.
+Nejnovějším počinem v této oblasti je dokument Ministerstva práce a obchodu o zavádění IPv6 ve státní správě. Podle něj mají do 6. června 2032 orgány státní správy přestat poskytovat služby na IPv4. To je za šest let a bude zajímavé celý vývoj dále sledovat.
+Mluvíme o tom, že to celé začalo před třiceti lety, ale ve skutečnosti jsme z hlediska nasazení IPv6 byli v roce 2010 na čisté nule. Kromě několika nadšenců a různých experimentálních sítí nový protokol vlastně ještě nikdo nepoužíval. Teprve poté se začala penetrace postupně zvedat, přičemž v roce 2015 jsme byli teprve na 5 %. Teprve před deseti lety se tak začalo něco opravdu dít.
+Letos jsme překročili významný milník, protože 28. března 2026 hlásil Google poprvé 50 % přístupů ke svým službám realizovaných po IPv6. Polovina uživatelů na světě má tedy přístup k novému protokolu. Nejlépe jsou na tom Francie s 86 %, Německo se 77 %, Indie se 75 % a Saúdská Arábie s 69 %. V některém takovém státě může vzniknout nová služba, která už se zaměří jen na většinu uživatelů s IPv6.
+V Česku hlásí Google přes 40 % přístupů po IPv6. To je sice podprůměr, ale čísla průběžně rostou. Před pěti lety jsme byli na 15 %, takže nárůst je v poslední době velmi dynamické. Podle statistik APNIC tvoří nejvíc provozu nepřekvapivě poskytovatelé O2, T-Mobile a Vodafone, u kterých přibližně polovina zákazníků na IPv6 dosáhne.
+Statistiky na straně služeb nabízí CZ.NIC, který hlásí 38,7 % webových serverů dostupných po IPv6, celkem 90,1 % autoritativních serverů a 33,2 % dotazů na .CZ servery proudících novým protoko...
+(Pokracovani na webu)|E|
+|T|LunarML: definice a volání různých variant funkcí|D|08.6. 22:00|P|Nejprve se budeme zabývat definicí a voláním různých variant funkcí, včetně jejich curryfikace. Dále si ukážeme, jak jsou zpracovávány chyby a na závě...|X|Pojmenované funkce a anonymní funkce
+Co se dozvíte v článku
+- Pojmenované funkce a anonymní funkce
+- Přímá a nepřímá rekurze
+- Rekurzivní funkce odd i even
+- Funkce vyššího řádu
+- Curryfikace (currying) a částečně vyhodnocené funkce
+- Funkce přistupující k symbolům ve svém prostředí (environment)
+- Praktické využití curryfikace
+- Skutečný počet parametrů funkcí definovaných v jazyce Standard ML
+- Generování funkcí pro výpočet n-té mocniny
+- Chyby vzniklé při překladu a v době běhu programu
+- Výjimky
+- Nahrazení výjimek datovými typy
+- Práce s výjimkami v LunarML
+- Jedna z největších zbraní jazyka Standard ML: uživatelské (rekurzivní) datové typy
+- Od jednoduchých datových typů k rekurzivním datovým typům
+- Příloha: Makefile pro transpřeklad všech dnes ukázaných demonstračních příkladů
+- Repositář s demonstračními příklady
+- Literatura
+- Předchozí články o jazyku ML/SML i o jazycích OCaml a F#
+- Odkazy na Internetu
+Ve všech funkcionálních programovacích jazycích mají funkce stejně plnohodnotný význam, jako jakékoli jiné datové typy. Výjimkou z tohoto pravidla není ani jazyk Standard ML, ve kterém může být typ funkce automaticky odvozen od typů parametrů a návratové hodnoty (opět se zde tedy setkáváme s typovou inferencí). Funkce je v tomto jazyku definována klíčovým slovem fun:
+fun <jméno-funkce> <formální-parametry-funkce> = <tělo-funkce>
+Pro zajímavost si připomeňme, jaká klíčová slova pro definici funkce se používají v těch programovacích jazycích, v nichž je tento koncept použit (vynecháme tedy klasické céčkové jazyky, v nichž funkce tvoří vlastní kategorii objektů a nejedná se o běžné hodnoty; ostatně pro definici funkce v céčku neexistuje žádné klíčové slovo):
+Ukažme si definici nové funkce v jazyku Standard ML, která po svém zavolání zvýší obsah svého parametru o jedničku a vrátí vypočtený výsledek jako novou hodnotu. Funkce se bude jmenovat inc a její parametr bude mít jméno n:
+fun inc n = n + 1;
+U této funkce je zajímavé především to, že jsme nikde neuvedli typ parametru ani typ návratové hodnoty a přesto překladač či interpret programovacího jazyka Standard ML zjistil, že se jedná o funkci int → int (čteme: parametr je celé číslo a výsledkem je taktéž celé číslo). Přitom se vychází z těla funkce, tedy z výrazu n+1, což je v jazyku ML i Standard ML striktně součet dvou celých čísel.
+Zavolání takové funkce je jednoduché:
+int 10;
+Pozor si musíte dát především na to, že se používá levá asociativita, což u funkcí volaných bez kulatých závorek povede (resp. může vést) ke špatným výsledkům (chybě při překladu):
+f g x znamená (f g) x
+Můžete si to ostatně sami otestovat na takzvané kompozici funkcí:
+(* Kompozice funkcí *) fun inc x = x + 1; fun double x = x * 2; inc(double 1); inc double 1;
+První volání je v pořádku (vrátí se trojka), ovšem druhé volání již nikoli:
+Elaboration failed: Type clash. Functions of type "int → int" cannot take an argument of type "int → int": Cannot merge "int" and "int → int".
+Definici a zavolání funkce se dvěma parametry jsme si již ukázali v předchozím článku:
+(* Definice funkce *) fun add (x, y) = x + y; add(3,4);
+V programovacím jazyku Standard ML je možné deklarovat i anonymní funkce. Opět se nejedná o nic překvapivého, zvláště když si uvědomíme, kolik sémantiky (nikoli však syntaxe) bylo převzato z Lispovských jazyků. Anonymní funkce se deklaruje klíčovým slovem fn a používá se zde znak šipky =>, nikoli pouze přiřazení =. Příkladem jednoduché anonymní funkce je (opět) funkce, která vrátí hodnotu svého parametru zvýšeného o jedničku (jedná se tedy o funkci s parametrem typu int a návratovou hodnotou typu int):
+fn x => 1 + x; > val it = fn: int → int;
+Pochopitelně je možné vytvořit i anonymní funkce akceptující větší množství parametrů. Zápis bude v tomto případě vypadat následovně:
+fn (x, y) => x + y; > val it = fn: int * int → int;
+Nyní se podívejme, jak vypadá překlad (resp. transpřeklad) anonymních funkcí v praxi. Necháme si přeložit deklaraci a volání anonymní funkce, která vrátí hodnotu svého parametru zvětšeného o jedničku:
+(* Anonymní funkce *) val result = (fn x => x+1)1; print(Int.toString (result)); print "\n";
+LunarML při překladu aplikuje optimalizace, takže ve výsledném kódu uvidíme jen tisk trojky:
+local result = gsub(tostring(2), "-", "~") outputAndFlush(stdOut, result) outputAndFlush(stdOut, "\n")
+Dtto pro JavaScript:
+const tmp13 = 2 .toString(); const a = _encodeUtf8(tmp13); outputAndFlush(stdOut[0], a); outputAndFlush(stdOut[0], Uint8Array.of(10)); }
+Příklad tedy musíme zkomplikovat, aby se optimalizace nemohly provádět. Například výpočtem parametru ve složitější funkci:
+(* Naivní implementace výpočtu Fibonacciho posloupnosti *)
+ 
+fun fib n =
+    if n = 0 then 0 else
+    if n = 1 then 1 else
+    fib (n - 1) + fib (n - 2);
+ 
+ 
+(* Anonymní funkce *)
+val result = (fn x => x+1) (fib 10);
+ 
+print(Int.toString (result));
+print "\n";
+Výsledek překladu do jazyka Lua:
+local function fib(n)
+  if n == 0 then
+    return 0
+  elseif n == 1 then
+    return 1
+  end
+  local tmp = fib(_Int_sub(n, 1))
+  local tmp1 = fib(_Int_sub(n, 2))
+  return _Int_add(tmp, tmp1)
+end
+local tmp = fib(10)
+local result = _Int_add(tmp, 1)
+local result1 = gsub(tostring(result), "-", "~")
+outputAndFlush(stdOut, result1)
+outputAndFlush(stdOut, "\n")
+V JavaScriptu je to podobné:
+ fib = function(n) {
+  if (n === 0) {
+   return 0;
+  } else if (n === 1) {
+   return 1;
+  } else {
+   const tmp15 = fib(_Int54_sub(n, 1));
+   const tmp16 = fib(_Int54_sub(n, 2));
+   return _Int54_add(tmp15, tmp16);
+  }
+ };
+ const tmp13 = fib(10);
+ const result = _Int54_add(tmp13, 1);
+Dalším příkladem je anonymní funkce se dvěma parametry:
+(* Anonymní funkce *) val result = (fn (x, y) => x+y) (1, 2); print(Int.toString (result)); print "\n";
+Ve výsledku transpřekladu můžeme opět vidět aplikaci optimalizací. Jazyk Lua:
+local result = gsub(tostring(3), "-", "~") outputAndFlush(stdOut, result) outputAndFlush(stdOut, "\n")
+A JavaScript:
+const tmp13 = 3 .toString(); const a = _encodeUtf8(tmp13); outputAndFlush(stdOut[0], a); outputAndFlush(stdOut[0], Uint8Array.of(10)); }
+Použijeme podobný trik s komplikovanějším výpočtem parametrů funkce:
+(* Naivní implementace výpočtu Fibonacciho posloupnosti *)
+ 
+fun fib n =
+    if n = 0 then 0 else
+    if n = 1 then 1 else
+    fib (n - 1) + fib (n - 2);
+ 
+ 
+(* Anonymní funkce *)
+val result = (fn (x, y) => x+y) (fib 1, fib 2);
+ 
+print(Int.toString (result));
+print "\n";
+Výsledek transpřekladu:
+local function fib(n)
+  if n == 0 then
+    return 0
+  elseif n == 1 then
+    return 1
+  end
+  local tmp = fib(_Int_sub(n, 1))
+  local tmp1 = fib(_Int_sub(n, 2))
+  return _Int_add(tmp, tmp1)
+end
+local tmp = fib(1)
+local tmp1 = fib(2)
+local result = _Int_add(tmp, tmp1)
+local result1 = gsub(tostring(result), "-", "~")
+outputAndFlush(stdOut, result1)
+outputAndFlush(stdOut, "\n")
+Dtto, ale pro JavaScript:
+ let fib;
+ fib = function(n) {
+  if (n === 0) {
+   return 0;
+  } else if (n === 1) {
+   return 1;
+  } else {
+   const tmp16 = fib(_Int54_sub(n, 1));
+   const tmp17 = fib(_Int54_sub(n, 2));
+   return _Int54_add(tmp16, tmp17);
+  }
+ };
+ const tmp13 = fib(1);
+ const tmp14 = fib(2);
+ const result = _Int54_add(tmp13, tmp14);
+Přímá a nepřímá rekurze
+Rekurze, neboli volání nějaké funkce v těle té samé funkce (přímá rekurze) nebo prostřednictvím funkce jiné (takzvaná nepřímá rekurze), představuje jednu ze základních programátorských technik, na kterých je programovací jazyk Standard ML postaven, podobně jako další funkcionální jazyky. Můžeme zde opět spatřovat velkou inspiraci Lispem, ve kterém se rekurze také velmi často používá; ostatně samotné Lispovské příkazy, například apply, map či forall jsou definovány rekurzivně, podobně jako v dalším Lispovsky orientovaném jazyce – ve Scheme. Samotná myšlenka rekurze je však starší než všechny programovací jazyky, protože je hluboce zakořeněna jak v podstatě některých přírodních i umělých jevů či objektů, tak i v matematice, v například v definicích různých algebraických a geometrických struktur.
+Definice přímé rekurzivní funkce je v jazyce Standard ML zcela bezproblémová – nejsou zapotřebí žádné dopředné („forward“) deklarace atd. A pochopitelně jsou stále odvozovány popř. hlídány datové typy předávaných parametrů i návratových hodnot:
+(* Naivní implementace funkce length *)
+ 
+fun length(x) = if null(x) then 0
+                else 1 + length(tl(x));
+Typ této funkce je zajímavý – funkce length, kterou jsme právě definovali, totiž bude akceptovat seznam libovolného typu, tj. jedná se o generickou funkci ('a zde značí „any“, i když ve skutečnosti se jedná o zápis znaku alfa):
+val length = fn: ∀ 'a . 'a list → int;
+Otestování, zda je tato funkce definována korektně, je v praxi snadné. Nejjednodušší je využití online REPLu jazyka Standard ML (SOSML):
+length([]); > val it = 0: int; length([1]); > val it = 1: int; length([1,2,3,4]); > val it = 4: int;
+(* Funkce accumulate s tail rekurzí *) fun accumulate ([], a) = a | accumulate ((_::tail), a) = accumulate(tail, (1 + a)); (* Funkce pro výpočet délky seznamu *) fun length lst = accumulate(lst, 0); print(Int.toString(length [])); print "\n"; print(Int.toString(length [1, 2, 3])); print "\n"; (* Je možné vypočítat délku seznamu libovolného typu *) print(Int.toString(length ["foo", "bar", "baz"])); print "\n";
+Automaticky odvozené typy obou funkcí ukazují, že se stále jedná o generické funkce:
+val accumulate = fn: ∀ α . α list * int → int; val length = fn: ∀ α . α list → int;
+Překlad do jazyka Lua používá příkaz goto a je nerekurzivní (takže rychlý):
+  local accumulate = function(_1, a)
+    local tmp1, tmp2 = _1, a
+    ::cont::
+    local _1_1, a1 = tmp1, tmp2
+    if _1_1 == nil then
+      return a1
+    elseif _1_1 ~= nil then
+      local tmp3 = _1_1[2]
+      tmp1 = tmp3
+      tmp2 = _Int_add(1, a1)
+      goto cont
+    else
+      _raise(_Match, "accumulate.sml:3:5")
+    end
+  end
+Překlad do JavaScriptu ukazuje použití programové smyčky:
+ const accumulate = function(_1, a) {
+  let tmp19 = _1, tmp20 = a;
+  for (;;) {
+   const _1$1 = tmp1...
+(Pokracovani na webu)|E|
 |T|Reality show Asia Express se dostala mezi nejsledovanější květnové pořady na Primě|D|08.6. 18:31|P|Skupina Prima v květnu meziročně vylepšila výsledky sledovanosti v celodenním vysílání i v hlavním večerním čase. Z tematických stanic meziročně nejví...|X|Skupina Prima v květnu meziročně vylepšila výsledky sledovanosti v celodenním vysílání i v hlavním večerním čase. Z tematických stanic meziročně nejvíc posílily Prima Krimi, CNN Prima News a Prima Love.
 Celodenní podíl všech stanic skupiny Prima na sledovanosti dosáhl v květnu 26,03 procenta u diváků starších 15 let. V cílové skupině 18 až 69 let činil 23,46 procenta. V hlavním vysílacím čase měla skupina podíl 24,66 procenta u diváků nad 15 let a 22,81 procenta ve skupině 18 až 69 let.
 Trojici nejsledovanějších pořadů na hlavní stanici Primy tvořily premiérové díly seriálů Polabí a Kamarádi a reality show Asia Express. Průměrný celodenní podíl Primy na sledovanosti byl 10,07 procenta v cílové skupině diváků starších 15 let. V hlavním vysílacím čase činil ve stejné cílové skupině 12,06 procenta.

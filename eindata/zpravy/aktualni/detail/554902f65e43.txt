@@ -1,0 +1,12 @@
+Článek
+Siri AI využívá nově technologii Apple Intelligence a podle výrobce má nabídnout přirozenější konverzaci, lepší porozumění osobnímu kontextu uživatele i schopnost pracovat s informacemi napříč aplikacemi a zařízeními.
+Nová Siri má umět vyhledávat informace nejen na webu, ale také v osobních zprávách, e-mailech, fotografiích a dalších datech uložených v zařízení. Uživatelé se jí tak mohou například zeptat na restauraci, kterou jim doporučil známý ve zprávě, nechat si vyhledat číslo hotelové rezervace ve starším e-mailu nebo zobrazit fotografie z nedávné dovolené.
+Asistentka má zároveň získat lepší přehled o tom, co se právě děje na obrazovce. Dokáže tak reagovat na zobrazený obsah a pomáhat s úkoly napříč různými aplikacemi. Apple uvádí například situaci, kdy uživatel dostane zprávu o společném obědě. Siri mu může poradit, co přinést, a následně uložit recept do aplikace Poznámky.
+Práce napříč zařízeními
+Součástí novinek je také schopnost čerpat aktuální informace z webu. Siri by tak měla zvládat odpovídat na otázky týkající se například nadcházejících astronomických úkazů nebo termínů koncertů a dalších akcí. Na odpovědi bude možné navazovat doplňujícími dotazy a vést delší konverzaci.
+Nová Siri bude dostupná napříč celým ekosystémem Applu. Aktivovat ji bude možné hlasovým povelem, stiskem bočního tlačítka nebo prostřednictvím Dynamic Islandu. Integrovaná bude také do Spotlightu na iPadech a počítačích Mac.
+Apple počítá i s využitím na hodinkách Apple Watch, v systému CarPlay nebo se sluchátky AirPods. Konverzace bude možné plynule přenášet mezi jednotlivými zařízeními.
+Samostatná aplikace
+Novinkou je také samostatná aplikace Siri. Ta umožní procházet starší konverzace nebo navazovat na již rozdělané dotazy. Historie se bude synchronizovat prostřednictvím iCloudu, takže uživatel může začít komunikaci například na Macu a pokračovat později na iPhonu nebo iPadu.
+Apple zároveň rozšiřuje takzvanou vizuální inteligenci. Siri bude nově schopná analyzovat obsah obrázků a fotografií a odpovídat na otázky související s tím, co vidí.
+Na iPhonu budou tyto schopnosti integrovány přímo do fotoaparátu. Uživatel bude moci Siri ukázat objekt nebo scénu a následně získat doplňující informace. Vizuální inteligence se nově objeví také na iPadech, počítačích Mac a v náhlavní soupravě Apple Vision Pro.

@@ -1,0 +1,18 @@
+Prezentace, která vždy přinášela „WOW“ moment, se setkala se zklamáním.
+Konference WWDC (Worldwide Developers Conference) je něco, na co všichni fanoušci Apple každoročně horlivě čekají. Představují se tu nová zařízení, očekávaná softwarová vylepšení či zcela nové funkce.
+Na letošní akci se představil nový iOS 27. Mimo jiné událost ukončila jednu éru, protože pro Tima Cooka to byla poslední výroční konference WWDC ve funkci generálního ředitele (CEO) Apple.
+Shrnuli jsme představené novinky:
+- Siri AI: Siri AI bude tvůj vlastní osobní a kreativní asistent – něco jako Gemini v Androidu. Vidí ti zprávy, zanalyzuje je, pomůže ti brainstormovat a bude integrovaná i v kameře – na vizuální hledání. Kromě jiného bude mít vlastní aplikaci, takže všechny konverzace s ní uvidíš na jednom místě. Siri AI nebude hned po spuštění dostupná v Evropě a Číně z důvodu regulačních problémů a legislativy.
+- 
+AirPods Custom EQ: Zvuk svých AirPodů si můžeš přizpůsobit úpravou basů, středů a výšek v nastaveních AirPodů. 
+- AI autonomní agent na hesla: Nová aplikace Passwords (Hesla) dokáže ve spolupráci se Safari sama na pozadí navštívit jednotlivé stránky a automaticky změnit nebo opravit tvá slabá hesla.
+- Úprava fotek pomocí AI (Spatial Reframing): Funkce prostorového přeformátování fotky. Díky 3D modelování a AI dokáže software změnit úhel nebo kompozici již pořízené fotografie.
+- Inteligentnější domácnost (Home App): Aplikace Domácnost s podporou Apple Intelligence nyní dokáže analyzovat záznamy z bezpečnostních kamer a generovat textová shrnutí toho, co se na videu stalo.
+- Nový macOS „Golden Gate“: Nová verze operačního systému pro počítače Mac dostala název Golden Gate.
+- Přizpůsobivější „Liquid Glass“: Design, který Apple uvedl minulý rok, dostal nové možnosti přizpůsobení. Můžeš měnit úroveň průhlednosti (od úplně čiré až po tónovanou) a upravovat panely nástrojů.
+- Ochrana dětí a rodičovská kontrola: Apple přidal nové nástroje pro rodiče. Nový digitální asistent usnadní nastavení času před obrazovkou a přístupu k aplikacím. Nově budou muset děti žádat rodiče o schválení každé webové stránky, kterou chtějí v prohlížeči Safari navštívit.
+iOS 27 bude dostupný na podzim 2026.
+Negativní zpětná vazba a pokles akcií
+Ačkoli byli fanoušci*fanynky před akcí plní očekávání, podle reakcí na internetových fórech jako Reddit zůstali zklamaní. Někteří si stěžovali na neprofesionalitu prezentování, příliš dlouhé trvání či na samotné novinky.
+Mezi negativními recenzemi rezonovaly i stížnosti na AI, které mnozí považují za zbytečnost (i vzhledem k rostoucím cenám komponentů a přemnoženému AI obsahu). Jiní zase vytýkali zrušenou podporu pro Apple Watch Series 6/7/8/9 + Ultra 1.
+Reakce se odrazila i na trhu, během samotné prezentace hodnota akcií začala klesat a dostala se do červených čísel. Do Evropy dorazí některé funkce jako Siri AI s klasickým zpožděním.

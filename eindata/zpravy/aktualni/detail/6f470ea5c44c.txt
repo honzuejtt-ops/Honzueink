@@ -1,0 +1,6 @@
+Nadějná česko-americká technologická firma E2B na své cloudové platformě spustila už přes miliardu sandboxů. Ty slouží pro rychlé spuštění zejména AI agentů. “Tempo akceleruje. Každý nástroj používaný ve spojení s agenty musí být v následujících měsících připraven na enormní růst,” shrnul Václav Mlejnský, výkonný ředitel E2B.
+E2B se specializuje na sandboxy, což jsou malé virtuální stroje, které velice rychle nastartují, umožní agentům vykonat práci a poté se smažou. Jde o novou generaci cloudové infrastruktury, kde se Češi stali jedním z hlavních světových hráčů.
+AI boti stojí za posledním růstem provozu v rámci internetu. Společnost Cloudflare uvedla, že automatizovaný provoz na celosvětové síti tvoří už 57 procent s tím, že trend táhnou právě AI agenti.
+“Chceme být standardem toho, jak se spouští a používá sandbox,” vzkázal Mlejnský. “Největší hrozbou je, že nebudeme vyvíjet dostatečně rychle,” řekl nedávno Lupě Mlejnský. “Nad tím, co děláme, přemýšlíme tak, že budujeme nové AWS,” doplnil.
+E2B zatím od investorů vybrala zhruba 740 milionů korun. Mezi zákazníky má velké množství firem z řebříčku Fortune 100 nebo mladé podniky typu Hugging Face a Groq (Nvidia).
+Růst díky AI agentům zaznamenala také další platforma. Firma Apify výrazně zvýšila příjmy a vývojářům, kteří u ní hostují aplikace, už měsíčně vyplácí milion dolarů.

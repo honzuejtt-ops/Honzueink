@@ -1,0 +1,14 @@
+Článek
+V Česku je podle poradenské společnosti Savills padesát pět datacenter. Zhruba polovina z nich se nachází v Praze. Český trh dosud brzdí nedostatek dostupné elektrické kapacity, zdlouhavé povolovací procesy a také absence velkých firem stavějících takzvaná hyperscale datová centra, neboli ta s velkou výpočetní kapacitou.
+„V současnosti proto sledujeme hlavně rozšiřování stávajících datových center. Po roce 2027 pak očekáváme příchod projektů a pozemků připravených pro výstavbu hyperscale datových center,“ uvedl Ondřej Míček, který v Savills vede oddělení zaměřené na průmyslové nemovitosti.
+K významným plánovaným projektům patří například MasterDC AI Data Center v Kanicích u Brna. Začít fungovat má už letos na podzim.
+Další velký projekt bude hotový příští rok. Připravují jej České radiokomunikace v pražské Zbraslavi pod názvem Prague Gateway DC. Po dokončení to bude dosud největší datacentrum v Česku.
+„Poptávka po takových centrech, jaká dnes stavíme, je velmi vysoká,“ uvedl nedávno v rozhovoru pro Novinky generální ředitel Českých Radiokomunikací Miloš Mastník. Podle něj se i vzhledem k naplnění kapacit v západoevropských zemích otevírá příležitost pro jejich výstavbu v Praze.
+Česko je pro firmy atraktivní destinací. Má ideální geografickou polohu a kvalitní technické zázemí.
+Aktivně se o možnosti zdejší výstavby datových center zajímá například průmyslový developer Panattoni. Ten loni oznámil zřízení evropské divize zaměřené na datová centra.
+Stabilionový trh
+Globální investice do výstavby datových center pro umělou inteligenci by podle predikce konzultantské společnosti McKinsey mohly do roku 2030 dosáhnout sedmi bilionů dolarů, tedy asi 146 bilionů korun.
+Hlavním trhem zůstávají Spojené státy, kde investice do datových center činí každoročně desítky miliard dolarů. A stále rostou. Loni poprvé dokonce překonaly investice do výstavby kanceláří.
+Rozvoj datacenter se odráží i na trhu logistických nemovitostí. V Evropě se objevují případy, kdy se logistické haly mění právě na datová centra určená pro umělou inteligenci. Zároveň jsou ale skladové areály pro provoz center nezbytné, což pohání poptávku po pronájmech i výstavbě těchto budov.
+„Přestože je tento trend v Evropě zatím v počáteční fázi, první konkrétní příklady už vidíme například ve Velké Británii, kde společnost AVK SEG pronajala 13 tisíc metrů čtverečních logistických prostor pro infrastrukturu datových center a AI,“ říká Kevin Mofid, který v Savills vede oddělení výzkumu logistického trhu pro Evropu, Blízký východ a Afriku.
+Propočty poradenské firmy ukazují, že na jeden megawatt výkonu datového centra je třeba 670 až 980 metrů čtverečních logistických ploch. Pro představu, zmíněné připravované centrum v Praze na Zbraslavi má disponovat výkonem 26 megawattů.

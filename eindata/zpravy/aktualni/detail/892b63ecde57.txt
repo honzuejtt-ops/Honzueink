@@ -1,0 +1,45 @@
+From data to decisions: how LSEG is scaling trusted AI
+LSEG combines OpenAI with its global data platform to accelerate insight, innovation, and time to market.
+~2 weeks
+product release cycles, from ~6 months to ~2 weeks
+~4 weeks
+from customer request to production deployment
+London Stock Exchange Group (LSEG)(opens in a new window) sits at the heart of financial markets. A leading global financial markets infrastructure and data provider, it supports more than 40,000 customers and 400,000 end users across approximately 190 markets.
+For years, LSEG had invested heavily in AI and machine learning to power financial models and analytics. But the emergence of generative AI introduced a fundamentally new opportunity: not just improving systems, but transforming how people interact with data, generate insight, and make decisions.
+The challenge was clear. Despite advanced infrastructure, knowledge work across the organization still involved manual synthesis, fragmented workflows, and time-intensive processes that slowed insight generation and limited scalability.
+“AI is a step change. But the real transformation comes when you rethink how you solve problems—not just how you execute them.”
+At that moment, OpenAI became a natural partner—bringing powerful models, intuitive interfaces, and an ecosystem already being adopted by LSEG’s customers.
+LSEG approached generative AI with a deliberate strategy: start with real problems, and scale responsibly.
+The company selected OpenAI based on model quality, enterprise readiness, and alignment with customer demand. Many LSEG clients were already using ChatGPT, creating a natural opportunity to integrate LSEG’s trusted data directly into those workflows.
+“That created a natural partnership,” says Max Grigoryev, Group Director for AI Products. “We could improve how we operate internally while helping customers use our data in the environments where they already work.”
+LSEG deployed ChatGPT Enterprise and OpenAI APIs across the organization, enabling thousands of employees globally within weeks. Teams across product, engineering, research, and operations began using AI to draft reports, synthesize market data, prototype products, and streamline internal workflows.
+Analysts, for example, now use ChatGPT to summarize large volumes of financial and market information—reducing time spent on initial research and accelerating insight generation. Product teams use AI to rapidly prototype features, while business teams generate client communications and documentation more efficiently.
+At the same time, LSEG embedded governance from the outset. This included model evaluation frameworks, human-in-the-loop review for critical outputs, and strict data privacy and security controls.
+“We don’t think about restricting people—we think about enabling them,” Max explains. “Give people the tools to move faster, while making sure everything remains safe and compliant.”
+Adoption scaled quickly, driven by grassroots enthusiasm. Early users demonstrated immediate value, creating momentum across teams and geographies.
+“Where customers once expected projects to take nine months, they now expect results in weeks or days. That mindset shift is profound.”
+Employees reported positive feedback on the accuracy of ChatGPT for complex tasks, with clear time savings driven by faster, high-quality outputs and reduced manual effort.
+“What has changed with ChatGPT is that we can scale best practice more easily, complete tasks more quickly, and still embed the standards and skills we care about,” says Emily Prince, Group Head of AI at LSEG. “That is a step change not only in efficiency, but in how creatively people can solve problems.”
+Results:
+- Reduced product release cycles from 3–6 months to 2 weeks
+- Enabled thousands of employees globally within weeks
+- Accelerated customer delivery timelines to ~4 weeks from request to production
+- Increased analyst productivity through faster research and synthesis
+- Improved cross-functional collaboration by accelerating information flow across functions
+- Expanded innovation velocity, with ideas moving from concept to prototype in hours
+“Historically, bringing products to market often took three to six months because of regulatory, compliance, legal, cybersecurity, and delivery requirements. Now, many of the products we are adapting for AI consumption are on a two-week release cycle.”
+- Rethink workflows, not just tasks: The biggest gains come from redesigning how work gets done
+- Enable broadly, early: Giving teams access at scale accelerates learning and adoption
+- Balance speed with trust: Strong governance enables faster, safer innovation
+- Empower experimentation: Innovation emerges when employees are trusted to explore
+- Avoid extremes: The most effective approach to AI is thoughtful, accountable adoption
+“The most impactful people aren’t just using AI—they’re challenging how they work entirely.”
+- Start with high-impact, low-risk use cases: Governance is critical for scaling safely for LSEG.
+- Empower early adopters: Adoption accelerated for LSEG when value was immediately visible.
+- Invest in training and enablement: The best use cases often emerge from users themselves.
+- Be demanding about outcomes: Be clear on what success looks like before scaling.
+LSEG is now expanding beyond individual productivity gains to more deeply embedded, workflow-level AI applications. This includes integrating AI directly into research processes, product development, and client-facing solutions.
+A key focus is combining OpenAI models with LSEG’s trusted data through systems like its Model Context Protocol—allowing customers to access precise, verifiable information directly within AI workflows.
+“Our customers care about time to insight—making decisions faster and more accurately,” says Max. “That’s what we’re enabling.”
+Looking ahead, LSEG sees its greatest opportunity in scale: empowering its global workforce and customers to fully leverage AI in how they think, build, and decide.
+“When you imagine the collective power of 27,000 employees leaning into AI with confidence, the potential is extraordinary. We are already seeing strong results, and there is much more to come.”

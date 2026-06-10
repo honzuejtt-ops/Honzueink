@@ -1,0 +1,10 @@
+Národní úřad pro kybernetickou a informační bezpečnost (NÚKIB) vydal novou metodiku pro zadávání veřejných zakázek v oblasti informačních a komunikačních technologií (ICT) a kybernetické bezpečnosti.
+Zadavatelé veřejných zakázek díky této metodice v podstatě dostali návod na to, jak při vypisování tendrů eliminovat z pohledu státu problematické a nebezpečné dodavatele. Jde zejména o firmy z Číny v čele s Huawei. Vůči ní NÚKIB koncem roku 2018 vydal stále platné varování, které už některé úřady a organizace v tendrech zohledňují.
+“Otázka zohlednění bezpečnosti ve veřejných zakázkách se řeší minimálně od první generace zákona o kybernetické bezpečnosti. Výběr dodavatele je jednou z naprosto klíčových otázek zajištění bezpečnosti služeb. Ušli jsme dlouhou cestu od ‘bezpečnost ve veřejných zakázkách zohlednit nejde’ po ‘ono to jde’. A nově vydaná metodika ukazuje jak, včetně odkazů na relevantní rozhodovací praxi,” shrnul Adam Kučínský z NÚKIBu.
+Kyberúřad na metodice spolupracoval s Úřadem pro ochranu hospodářské soutěže a Asociací pro veřejné zakázky, takže by měly být obroušeny případné sporné hrany. Metodika řeší zejména následující body:
+- vztah mezi zákonem o zadávání veřejných zakázek a zákonem o kybernetické bezpečnosti,
+- promítání analýzy rizik, bezpečnostních opatření a varování NÚKIB do zadávacích podmínek,
+- nastavení technických, kvalifikačních, hodnoticích a smluvních požadavků,
+- ochranu důvěrných informací a řízení dodavatelského řetězce,
+- omezení účasti dodavatelů ze třetích zemí,
+- relevantní rozhodovací praxi ÚOHS a správních soudů.

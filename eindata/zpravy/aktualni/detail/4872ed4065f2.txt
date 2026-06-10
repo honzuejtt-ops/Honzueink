@@ -1,0 +1,9 @@
+Článek
+Iniciativa amerického technologického giganta je označována termínem Model Capability Initiative (MCI) a má za cíl modelům umělé inteligence replikovat způsob, jakým lidé pracují na počítači.
+Již před samotným spuštěním MCI se ozývaly nesouhlasné názory, že jde až o „dystopické“ chování ve spojitosti s tím, jak je společnost doslova posedlá pokrokem v oblasti AI.
+„Pokud vytváříme agenty, kteří mají lidem na počítačích pomáhat s každodenním plněním úkolů, potřebují naše modely reálné příklady toho, jak lidé počítače používají,“ uvedl k tomu ještě před zahájením projektu mluvčí společnosti. „Data se k ničemu jinému nepoužívají,“ dodal s tím, že zmiňovaný nový nástroj má mít zavedená spolehlivá opatření na ochranu citlivého obsahu.
+Odpor ke sledování ovšem přetrvává i nadále, znepokojení pracovníci, kteří firmu označují za „továrnu na extrakci zaměstnanců“, v rámci petice žádající změny. Sesbírali už více než 1500 podpisů.
+V reakci na to prý Meta nově umožní zaměstnancům pozastavit sledovací nástroj „až na 30 minut v kuse“. A podle uniklé zprávy bude možné požádat i o úplné vyřazení ze sledování, uvádí Independent. Není ale vůbec jasné, za jakých podmínek.
+Politika Mety a její hon za posunem v oblasti umělé inteligence už nějakou dobu vzbuzuje negativní ohlasy. Ty jsou pak o to zřetelnější ve spojitosti s informacemi o propouštění zaměstnanců - v letošní první vlně mělo dostat výpověď kolem dvou tisíc lidí.
+Nová zjištění ohledně sledování zaměstnanců a jejich práce pak navíc vzbuzují obavy i ohledně ochrany osobních údajů a případného souhlasu pracovníků s takovými praktikami.
+„Pracovníci vytvářejí pro svého zaměstnavatele přidanou hodnotu – jsou za to odměňováni, mají na výběr, zda se k tomu přihlásí? Pravděpodobně ne,“ uvedla k tomu ještě před spuštěním systému profesorka z Cornellovy univerzity Virginia Doellgastová.

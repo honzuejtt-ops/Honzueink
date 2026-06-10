@@ -1,0 +1,69 @@
+Ve světě embedded zařízení existuje několik možností, jak mikrokontrolér programovat. Tou nejzákladnější je bare metal programování, kdy z kódu, nejčastěji psaném v jazyku C, přímo ovládáme jednotlivé periferie. Tento přístup nám dává plnou kontrolu nad zařízením, ale znamená více práce a složitější kód, jelikož si vše musíme psát sami. Pomoci v tomto ohledu mohou HAL knihovny, které často poskytují sami výrobci mikrokontrolérů. Jde o knihovny, které práci s periferiemi implementují za nás a poskytují jednoduší rozhraní formou API funkcí (například přečtení hodnot z převodníku či poslání zprávy přes SPI). Díky tomu se můžeme soustředit jen na psaní aplikace.
+Co se dozvíte v článku
+Nevýhodou spoléhání se na HAL je závislost na knihovnách třetích stran, které jsou často těžko editovatelné. Různé HALy také poskytují různé funkcionality, přechod mezi mikrokontroléry různých výrobců pak znamená nutnost využít jiné knihovny s nekompatibilním API a tím pádem bolehlav při portování aplikací.
+Operační systémy pro embedded
+Alternativou je využití operačních systémů navržených pro embedded zařízení, často též disponujícími vlastnostmi pro real-time systémy a označovanými jako RTOS (real-time operating system). Ty obvykle nabízejí kombinaci HAL knihoven (vlastních implementací či převzatých od výrobců), jednotného API pro práci s periferiemi a různých užitečných funkcionalit jako souborové systémy, konzole či networking stack.
+Jedním takovým operačním systémem reálného času je i NuttX. Ten byl publikován v roce 2007 Greogory Nuttem (z jeho příjmení vychází název). Původně byl publikován pod BSD licensí, ale postupně v rámci zařazení pod The Apache Software Foundation přelicencován pod Apache License 2.0. Velikou výhodou NuttXu je téměř plná kompatibilita s POSIX API, zároveň se snaží udržet kompatibilitu s GNU/Linux implementací funkcionalit epoll či inotify. To umožňuje z velké části provádět vývoj aplikací na linuxovém počítači s využitím standardních debugovacích nástrojů – ovšem pozor, kompatibilita není pravidlem v případě mnoha periferií, jak si později ukážeme.
+NuttX disponuje podporou širokého množství architektur (ARM, RISC-V, Xtensa, AVR), mikrokontrolérů a vývojových kitů. Obecně cílí spíše na menší, levnější a jednojádrové mikrokontroléry. Je ovšem potřeba dávat pozor, jelikož ne pro všechny mikrokontroléry je implementována podpora pro všechny periferie. NuttX totiž nevyužívá HALy třetích stran (i zde je výjimka, podpora pro RISC-V varianty ESP32 využívá knihovny od Espressifu), nýbrž si knihovny implementuje sám. To na jednu strany zlepšuje přehlednost kódu, na druhou stranu můžou některé ovladače chybět. Obecně platí, že velmi dobrá podpora je pro mikrokontroléry architektur ARM a RISC-V.
+Operační systém je také široce konfigurovatelný, z linuxového jádra si vypůjčil Kconfig syntaxi a umožňuje vypnout velké množství funkcionalit, které nejsou pro danou aplikaci potřeba. Díky tomu není problém dostat minimální build na cca 32 kB RAM a 32 kB flash (v případě flash to ale často může znamenat absenci shellu). Jde se dostat i na nižší hodnoty, ale již by šlo o výrazně osekaný systém. Také je ale možné nakonfigurovat množství funkcionalit, jako jsou síťový stack s TCP/IP, DHCP podpora, telnet, souborové systémy (FAT, LittleFS) či třeba shell jako aplikaci v rámci jedné binárky. NuttX shell, neboli NuttShell, je pak možné použít třeba pro monitorování a správu procesů, debugování, správu souborů či nastavení sítě. Jeho jednoduchou verzi si lze vyzkoušet v online demu.
+Příprava prostředí pro práci s NuttXem
+Pro konfiguraci a kompilaci operačního systému si prvně musíme nainstalovat potřebné balíčky. Ty jsou uvedeny v dokumentaci projektu. Veškeré příklady budou na desce NUCLEO-L476RG s architekturou ARM, toolchain ke kompilaci lze tedy též nainstalovat podle kroků z odkazované dokumentace. Většinu ukázek a příkladů lze provádět i na jiné NuttXem podporované desce než na zmíněném Nucleu, typicky by se měly akorát lišit piny či cesta k souborům. Pro programování desky se pak hodí OpenOCD (kromě instalace může být na některých systémech i potřeba správně nastavit udev rules). NuttX se skládá ze dvou hlavních repozitářů – jádro systému a aplikace. Můžeme si je následujícími příkazy naklonovat do adresáře nuttx.
+mkdir nuttx cd nuttx git clone https://github.com/apache/nuttx.git core git clone https://github.com/apache/nuttx-apps apps
+Repozitář core obsahuje jádro operačního systému, ovladače a BSP, apps jsou podpůrné aplikace – včetně shellu.
+Konfigurace a kompilace
+NuttX používá pro svou konfiguraci nástroj Kconfig. Aby nebylo potřeba vytvářet pokaždé konfiguraci od nuly, disponuje každá podporovaná deska několika výchozími konfiguracemi, ze kterých lze vycházet. Pro načtení těchto konfigurací disponuje NuttX skriptem. Můžeme ho spustit s přepínačem -L, čímž si vypíšeme všechny dostupné konfigurace. Pozor, veškerá práce teď bude probíhat v repozitáři core.
+cd core ./tools/configure.sh -L
+Pomocí grep můžeme zobrazit jen konfigurace pro svou desku nucleo-l476rg.
+./tools/configure.sh -L | grep nucleo-l476rg nucleo-l476rg:nsh nucleo-l476rg:nxdemo
+Výsledkem by měly být dvě dostupné konfigurace. Většina podporovaných desek bude obsahovat konfiguraci nazvanou nsh poskytující základní systém (ne vždy minimální velikosti, jak uvidíme za chvíli) a konzoli typicky dostupnou na sériovém portu.
+Výše zmíněný skript pak znovu použijeme pro nastavení konfigurace.
+./tools/configure.sh nucleo-l476rg:nsh
+Výstupem by měl být soubor .config se všemi nastavenými a zakázanými možnostmi z nsh  konfigurace. Nyní můžeme systém zkompilovat pomocí příkazu  make.
+$ make
+Create version.h
+LN: platform/board to /path/to/nuttx/apps/platform/dummy
+Register: rand
+Register: dd
+Register: ostest
+Register: nsh
+Register: sh
+Register: alarm
+CC:  chip/stm32l4_idle.c chip/stm32l4_gpio.c:46:11: note: '#pragma message: CONFIG_STM32L4_USE_LEGACY_PINMAP will be deprecated migrate board.h see tools/stm32_pinmap_tool.py'
+   46 | #  pragma message "CONFIG_STM32L4_USE_LEGACY_PINMAP will be deprecated migrate board.h see tools/stm32_pinmap_tool.py"
+      |           ^~~~~~~
+CPP:  /home/michal/Michal/projects/nuttx/core/boards/arm/stm32l4/nucleo-l476rg/scripts/l476rg.ld-> /home/michal/Michal/projects/nuttx/corLD: nuttx
+Memory region         Used Size  Region Size  %age Used
+           flash:      225996 B       512 KB     43.11%
+            sram:        9572 B        96 KB      9.74%
+CP: nuttx.hex
+CP: nuttx.bin
+Výstupem jsou .hex a .bin soubory se zkompilovaným operačním systémem NuttX a shellovou aplikací NSH v rámci jedné binárky. Za zmínku stojí i přes 220 kB využité flash paměti (velikost kódu). To je výrazně víc oproti výše uvedeným 32 kB, konfigurace ale navíc obsahuje větší aplikace jako ostest (aplikace testující různé funkcionality systémy) a dema rand či alarm. Jejich zakázáním a zapnutím optimalizace bychom se byli rychle schopen dostat na cca třetinu potřebné paměti. Další velké snížení by přineslo vypnutí shell konzole, pro svou demonstraci ji ale budeme potřebovat.
+Nyní nám již nebrání v tom NuttX do desky nahrát. Nucleo desky se po připojení kabelem k PC typicky namountují jako mass storage device, nový firmware tak lze jednoduše nakopírovat pomocí příkazu  cp.
+cp nuttx.bin /media/.../NOD_L476RG
+Univerzálnější přístup je vyžití nástroje OpenOCD, který je dostupný jako balíček v rámci většiny linuxových distribucí. Kromě nahrávání nového firmwaru jde použít také k připojení se k desce za účelem debugování pomocí nástroje gdb. Jak takto debugovat NuttX na desce si ukážeme později.
+openocd -f interface/stlink-v2.cfg -f target/stm32l4x.cfg -c "program nuttx.bin 0x08000000 reset exit"
+Přepínač -c ve výše uvedeném příkazu nám umožní říct, co za příkazy má OpenOCD po připojení k desce vykonat. V našem případě použijeme pomocný skript program, který nahraje soubor nuttx.bin do flash paměti na adresu začínající 0×08000000, provede reset desky a odpojí se od ni.
+Pokud bychom chtěli konfiguraci zahodit a nakonfigurovat například jinou desku, lze tak učinit přes příkaz make distclean. Pokud bychom si naopak chtěli konfiguraci uložit, můžeme zavolat make savedefconfig, který nám v kořenovém adresáři vygeneruje soubor  defconfig.
+Analogicky bychom mohli NuttX nakonfigurovat jako simulátor běžící na našem počítači. Pokud bychom neměli po ruce žádnou desku podporující NuttX, lze zkusit nakonfigurovat a spustit sim:nsh konfiguraci.
+./tools/configure.sh sim:nsh
+Výsledkem kompilace je na našem počítači spustitelná binárka nuttx v adresáři nuttx/core
+Orientace v příkazové řádce NuttShellu
+V naší základní konfiguraci nsh  je konzolová aplikace NuttShell dostupná na sériovém portu, který je na desce NUCLEO-L476RG vyveden na konektor USB mini a typicky hlásí jako CDC ACM device. Ke konzoli se můžeme jednoduše připojit například pomocí aplikace tio či jiného terminálového emulátoru. Baudrate komunikace je v NuttXu v základu nastaven na 115200. Po připojení zmáčknutí klávesy enter by se měl objevit nový řádek s prefixem  nsh>.
+$ tio /dev/ttyACM0 [15:40:22.893] tio 3.9 [15:40:22.893] Press ctrl-t q to quit [15:40:22.893] Connected to /dev/ttyACM0 nsh>
+Nápovědu všech dostupných příkazů vyvoláme posláním znaku ? či textu  help.
+nsh> ?
+help usage:  help [-v] []
+    .           cd          exit        mount       sleep       umount
+    [           cp          expr        mv          usleep      unset
+    ?           cmp         false       printf      source      uptime
+    alias       dirname     help        pwd         test        watch
+    unalias     date        hexdump     rm          time        xd
+    basename    dmesg       ls          rmdir       true
+    break       echo        mkdir       set         truncate
+    cat         exec        mkrd        kill        uname
+Builtin Apps:
+    alarm     dd        nsh       ostest    rand      sh
+nsh>
+Příkazem ls dev si můžeme vypsat všechny ovladače znakových zařízení (character device) zaregistrované v  /dev.
+nsh> ls /: dev/ nsh> ls...
+(Pokracovani na webu)

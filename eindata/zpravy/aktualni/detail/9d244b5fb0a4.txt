@@ -1,0 +1,12 @@
+První výsledky ukázaly, že ji lidé dobře snášeli, ale vědci ještě musí ověřit, zda je skutečně dokáže chránit před infekcí.
+Výzkumníci z Cambridgeské univerzity vyvinuli zásadně nový typ vakcíny, jejíž klíčovou složku navrhla umělá inteligence (AI). Nyní se poprvé testovala na lidech.
+Cílem vědeckého výzkumu je vyvinout vakcínu, která by účinkovala nejen proti všem známým variantám lidského koronaviru, ale i proti příbuzným virům netopýrů, které by se mohly přenést ze zvířat na lidi a způsobit budoucí pandemie.
+Vakcínu pomohla navrhnout umělá inteligence
+Výsledky studie jsou povzbudivé, protože imunitní reakce po očkování byly mírné. Jak dlouho trvá ochrana a zda budou potřebné další posilující dávky, zatím není známo. Pro zjištění, zda vakcína dokáže v reálném světě zabránit virovým infekcím nebo je snížit, jsou proto potřebné další rozsáhlejší studie.
+Tradiční vakcíny cílí především na konkrétní virus, který se však může mutacemi změnit. Umělá inteligence proto hledá společné části příbuzných virů, které se mění jen málo, aby vakcína mohla účinkovat proti celé skupině virů, nejen proti jedné variantě.
+Sledovali viry způsobující SARS i COVID
+Vědci z Cambridge použili umělou inteligenci k analýze virů z čeledi sarbekovirů, která zahrnuje viry způsobující SARS i COVID a celou řadu zvířecích koronavirů. Hledali společné znaky, kterých se pravidelné mutace výrazně nedotkly.
+Tyto vlastnosti se staly základem vakcíny, která využívá DNA a obecně je stabilnější než mRNA vakcíny. To usnadňuje jejich skladování a přepravu v zemích s nižšími příjmy, kde je omezená infrastruktura „chladícího řetězce“.
+Podává se i bez jehly
+Mohou se také podávat bez jehel. Vakcína se dostává do těla přes kůži proudem kapaliny pod vysokým tlakem, díky čemuž je podávání méně bolestivé a snadněji se používá ve větším množství během epidemie.
+Tyto praktické výhody jsou důležité, pokud samotná vakcína dokáže chránit i před viry, se kterými jsme se ještě nesetkali. Na rozdíl od tradičních vakcín by mohly poskytnout rychlou imunitu proti novým a vznikajícím virovým hrozbám.

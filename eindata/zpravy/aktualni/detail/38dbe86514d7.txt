@@ -1,0 +1,6 @@
+Google udělal další krok k budoucnosti živých překladů z různých jazyků, a to během samotného mluveného projevu. Základem bude nový zvukový AI model Gemini 3.5 Live Translate vytvořený sekcí DeepMind. Podporuje 70 jazyků včetně češtiny a slovenštiny.
+“Tento nástroj překládá mluvené slovo v reálném čase, což umožní uživatelům hovořit plynule v jejich rodném jazyce, zatímco ostatní účastníci slyší okamžitý překlad,” uvedl Google. Nebude tedy nutné čekat na to, až mluvčí dohovoří. Otázkou bude, jak systém zvládne skládat vědy bez kompletního kontextu.
+“Technologie nejen překládá slova, ale plně zachovává původní hlas, tón, energii i emoce mluvčího. Model zvládá více než 70 jazyků a přes 2000 jazykových párů během jediné schůzky,” doplnila firma. Podrobnější popis technologie je zde.
+Google nový audio model integruje postupně. Objeví se v rámci Gemini Live API, Google AI Studio, komunikátoru Google Meet a aplikacích Google Translate na Androidu a iOS.
+Podobných pokusů ve stylu překladače ze Star Treku se objevuje více. Například T-Mobile (Deutsche Telekom) zkouší živé překlady integrované do mobilní sítě, takže jednou možná budou dostupné během běžných hovorů. Dělají na tom i čeští odborníci.
+Takto vypadají čipy a servery, na kterých Google své AI modely trénuje a provozuje:

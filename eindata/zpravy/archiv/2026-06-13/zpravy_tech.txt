@@ -1,3 +1,4 @@
+|T|Chyba|D||P|Něco se pokazilo.|X|HTTPSConnectionPool(host='www.lupa.cz', port=443): Max retries exceeded with url: /rss/clanky/ (Caused by NewConnectionError("HTTPSConnection(host='www.lupa.cz', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))|E|
 |T|Týden Živě. Apple nepustí Siri AI do Evropy a vinu hází na EU. Ale problém je jinde|D|13.6. 16:45|P|Pondělní keynote byla nuda. Apple jen dohání konkurenci a jeho AI triky už jsme dávno viděli u konkurence. Ale to není zásadní problém. Vždyť historie...|X|Pondělní keynote byla nuda. Apple jen dohání konkurenci a jeho AI triky už jsme dávno viděli u konkurence. Ale to není zásadní problém. Vždyť historie už několikrát ukázala, že Apple neskáče do technologických trendů. V klidu si počká, analyzuje konkurenci a i reakce uživatelů. A pak to udělá lépe. ...
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|

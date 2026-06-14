@@ -1,0 +1,12 @@
+Článek
+Odborníci ze Spojeného království, kde od roku 2000 poklesl počet ježků o neuvěřitelných 75 procent, si přizvali na pomoc nástroj umělé inteligence nazvaný Tessera, který analyzuje snímky celé země pořízené z vesmíru, díky nimž mohou přesně určovat místa přirozeného výskytu ježků i ta, která nenávratně mizí.
+Mapy vytvořené díky jednotlivým snímkům zachycují krajinu do nejmenších detailů, umělá inteligence pak podle zadaných dat vyhodnotí, která místa jsou pro ježky nejvhodnější i to, co je nejvíce ohrožuje – včetně bytové výstavby i environmentálních změn.
+Zjištěné poznatky pak lze kombinovat i s dalšími dodanými daty, například z malých GPS lokátorů, které někteří ježci mají. Podobným způsobem se ježky, kteří dostanou jakýsi „malý batůžek“, snaží sledovat a chránit třeba v Severním Irsku, uvádí BBC.
+Digi ježci
+Podle charitativní organizace RSPCA, která se zabývá ochranou zvířat, je ježek západní (jeden z nejrozšířenějších druhů v Evropě) ve Spojeném království kvůli poklesu výskytu označován za ohrožený druh.
+„Doufáme, že podobné modely umělé inteligence budeme moci využít například k vyhledání překážek, které ježkům brání ve hledání potravy nebo partnerů, stejně tak bezpečnému pohybu po krajině,“ uvedl ochránce životního prostředí, profesor Silviu Petrovan.
+Odborníci označují jednotlivé kusy vybavené sledovacím zařízením jako digi ježky. I díky nim mají možnost sledovat jejich výskyt.
+Tessera najde využití i jinde
+Systém Tessera najde podle odborníků využití i jinde. Podle BBC k němu má přístup více než 100 výzkumných skupin.
+Podle Anila Madhavapeddyho, profesora planetárních výpočtů na Cambridgeské univerzitě, jej lze využít i k důkladnému monitorování zemědělské půdy a sledování, které plodiny se ve kterém období kde pěstují.
+„Používání a úprava satelitních dat jsou velmi náročné. Tessera zvládne jejich zpracování nejen v rychlejším čase, ale i přesněji a s potřebnými úpravami, čímž nám poskytuje snadno použitelné mapy Spojeného království,“ dodal k tomu Madhavapeddy.

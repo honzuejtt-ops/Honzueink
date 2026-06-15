@@ -1,0 +1,13 @@
+Článek
+Podle Michala Šustáka z bezpečnostní společnosti ComSource se falešné nabídky nejčastěji šíří prostřednictvím placené reklamy na Facebooku. Podvodníci lákají zájemce na mimořádně nízké ceny, které jsou ve srovnání s oficiálními částkami až podezřele výhodné.
+„Podvodníci zobrazují ceny dramaticky nižší, než jsou oficiální sazby – vstupenky za 60 dolarů tam, kde reálná cena dosahuje tisíců. S odpočítávacím časovačem a sloganem ‚první přijde, první bere‘ dokážou vyvolat pocit naléhavosti, který vypne zdravý úsudek,“ upozornil Šusták.
+Za rozsáhlou podvodnou sítí stojí podle Group-IB skupina označovaná jako Ghost Stadium. Tento čínsky hovořící subjekt provozuje koordinovanou phishingovou kampaň využívající více než 300 domén. Klíčovým nástrojem je speciálně vytvořená aplikace, která věrně kopíruje vzhled i fungování oficiálního webu fifa.com včetně přihlašovací části.
+Falešné stránky jsou dostupné v 11 jazycích a grafické prvky načítají přímo z oficiálních zdrojů FIFA. Na první pohled tak působí zcela důvěryhodně a běžný návštěvník jen obtížně pozná, že se nachází na podvodném webu.
+Jakmile uživatel zadá své přihlašovací údaje, útočníci mu mohou okamžitě změnit heslo a znemožnit přístup k účtu. Pokud na něm byly zakoupené legitimní vstupenky, mohou je následně přeprodat dalším zájemcům. Ti jsou pak často navedeni na falešné platební stránky, kde vyplní osobní i platební údaje.
+Peníze mohou odcházet různými cestami – od přímého zneužití platební karty přes služby třetích stran a P2P aplikace až po kryptoměny. Výsledek je však stejný: zaplacené vstupenky nikdy nedorazí.
+Letošní mistrovství světa, které společně hostí Spojené státy, Kanada a Mexiko, bude dosud největším fotbalovým šampionátem v historii. Nabídne 104 zápasů v 16 městech a očekává se účast více než šesti milionů fanoušků.
+Odborníci proto doporučují pořizovat vstupenky výhradně prostřednictvím oficiálního portálu FIFA. Nabídky šířené přes sociální sítě, Telegram nebo jiné neoficiální kanály je podle nich vhodné považovat za potenciálně rizikové, zejména pokud požadují platbu v kryptoměnách, které FIFA jako platební metodu nepodporuje.
+Mistrovství světa ve fotbale 2026
+Redakce Sport.cz po celou dobu mistrovství světa ve fotbale přináší veškeré informace, novinky, zpravodajství, pořady i online reportáže.
+Hotely a letenky pod palbou
+Zvýšené riziko se týká podle kyberbezpečnostní společnosti Check Point také dopravy a cestovního ruchu. Během velkých sportovních akcí prudce roste počet podvodných domén napodobujících známé hotelové řetězce, rezervační portály nebo letecké společnosti.

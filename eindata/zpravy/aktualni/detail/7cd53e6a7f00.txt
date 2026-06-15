@@ -1,0 +1,156 @@
+Vestavěné operátory programovacího jazyka Standard ML
+Co se dozvíte v článku
+- Vestavěné operátory programovacího jazyka Standard ML
+- Zápis standardních operátorů
+- Přetěžování operátorů
+- Definice vlastních operátorů
+- Volba asociativity operátorů
+- Nový operátor s nízkou prioritou
+- Zápis operátoru speciálními znaky
+- Strukturované uživatelské datové typy: od jednoduchých výčtových typů po rekurzivní datové struktury
+- Definice výčtového typu s osmi základními barvami
+- Definice nového unifikovaného typu color a funkce pro převod barvy na trojici složek RGB
+- Přidání možnosti modifikace základních barev o atribut světlost
+- Přidání podpory pro reprezentaci barvy ve stupních šedi
+- Zjednodušení zápisu funkce color_as_string s využitím nového operátoru kolony
+- Poslední typ barvy: mix dvou barev (rekurzivní datový typ)
+- Transpřeklad poslední varianty colors6.sml do jazyka Lua a JavaScriptu
+- Příloha: Makefile pro transpřeklad všech demonstračních příkladů
+- Repositář s demonstračními příklady
+- Literatura
+- Předchozí články o jazyku ML/SML i o jazycích OCaml a F#
+- Odkazy na Internetu
+Vzhledem k tomu, že překladač (resp. přesněji řečeno transpřekladač) LunarML, kterým se v této sérií článků zabýváme, je jednou z implementací programovacího jazyka Standard ML, bude možné dnešní článek založit právě na specifikaci Standard ML (což je mimochodem jeden z mála mainstreamových programovacích jazyků, které jsou formálně popsány a navíc i definovány tímto formálním popisem).
+V programovacím jazyku Standard ML nalezneme relativně velké množství různých operátorů. Musíme si však uvědomit, že operátory jsou ve skutečnosti definovány jako běžné funkce a samotný zápis operátoru je pouhý syntaktický cukr (ovšem velmi praktický), který spočívá v tom, že se (infixové) operátory zapisují mezi operandy a nepoužívají se závorky okolo operandů (pokud to není nutné z jiných důvodů – například při určení priority atd.). Pokud na chvíli zůstaneme u infixových operátorů, tak to konkrétně znamená, že zápis:
+<výraz1> <operátor;> <výraz2>
+je ve skutečnosti ze sémantického pohledu totožný se zápisem:
+<operátor;>(<výraz1>, <výraz2>)
+<operátor;> <výraz1> <výraz2>
+V následující tabulce jsou vypsány všechny standardní operátory programovacího jazyka Standard ML. Ty se od sebe liší (pochopitelně) nejenom prováděnou operací, ale taktéž prioritou a asociativitou. Priorita určuje (stejně jako v jiných jazycích), v jakém pořadí se budou operátory vyhodnocovat v případě, že jsou použity v jediném výrazu (například ve výrazu 1+2*3 jsou zapsány dva operátory a pořadí vyhodnocení závisí na jejich prioritě). A asociativita určuje uzávorkování operátorů se stejnou prioritou, tj. ovlivní, zda se provede (1+2)+3 nebo naopak 1+(2+3).
+Z níže uvedené tabulky je patrné, že většina operátorů je takzvaně asociativní zleva, ovšem skupina dvou operátorů s prioritou 5 má asociativitu zprava. V tomto případě se konkrétně jedná o operátory určené pro spojení řetězců popř. seznamů, s nimiž jsme se ve stručnosti seznámili v úvodním článku o transpřekladači LunarML:
+Booleovské operace andalso a orelse nejsou v tabulce uvedeny, protože se jedná o speciální konstrukce realizující zkrácené vyhodnocování. Z tohoto důvodu je nelze definovat formou funkcí (u funkcí se totiž parametry vyhodnocují před zavoláním funkce, kdežto v případě andalso a orelse tomu tak být nemusí).
+Zápis standardních operátorů
+Všechny operátory, které byly uvedeny v předchozí kapitole, jsou interně implementovány formou (běžných) funkcí a dále jsou definovány klíčovými slovy infix a v některých případech infixr. Samotná implementace operátorů není tématem dnešního článku, ovšem zajímavý je druhý krok, tedy použití klíčových slov infix a infixr, které vlastně v době překladu mění syntaxi programovacího jazyka:
+infix 7 * / div mod infix 6 + - ^ infixr 5 :: @ infix 4 = <> > >= < <= infix 3 := o infix 0 before
+Přetěžování operátorů
+V mnoha programovacích jazycích se setkáme s takzvanými přetíženými operátory. Jedná se o operátory, jejichž funkce a vlastnosti se mění podle typu operandů. Pravděpodobně nejznámější formou přetížených operátorů jsou operátory určené pro provádění základních aritmetických operací, které bývají definovány pro různé numerické datové typy. Ovšem například operátor + může být přetížen vícekrát, typicky pro operaci spojení řetězců (viz například Java) či například n-tic a seznamů (Python). V těchto případech se nejenom mění funkce operátoru (tj. součet je zcela rozdílná operace od spojení řetězců), ale i jejich další vlastnosti, v tomto případě například komutativita (a nepřímo taktéž asociativita v případě hodnot s plovoucí řádovou čárkou).
+Některé programovací jazyky umožňují definici zcela nových operátorů popř. přetížení existujících operátorů. Z tohoto pohledu můžeme programovací jazyky rozdělit do čtyř skupin na základě dvou vlastností (které jsou na sobě nezávislé):
+- Lze definovat nové operátory?
+- Lze přetížit stávající operátory?
+Zajímavé je, že každá ze čtyř kombinací zmíněných v předchozí kapitole je obsazena nějakým programovacím jazykem (a to zcela nezávisle na dalších vlastnostech daného jazyka, tedy nezávisle na typovém systému, podpoře OOP, maker atd.):
+Nové operátory nelze přidávat a existující operátory nelze dále přetěžovat:
+Nové operátory nelze přidávat, ale existující operátory je možné přetěžovat:
+Lze definovat nové operátory, existující operátory ovšem nelze dále přetěžovat:
+Lze definovat nové operátory, navíc je možné přetěžovat existující operátory:
+Definice vlastních operátorů
+V programovacím jazyku Standard ML sice není (prakticky) možné přetěžovat standardní operátory (viz též předchozí kapitolu), ovšem samotný jazyk nám nezabraňuje ve vytváření operátorů nových. U nových operátorů lze určit jejich prioritu i asociativitu, což je velmi užitečné (podle mého skromného názoru dokonce mnohem užitečnější, než pouhé přetěžování existujících operátorů).
+Prvním krokem při vytváření nového operátoru je definice funkce se dvěma parametry, která bude následně zaregistrována jako nový binární operátor. Můžeme si například vyzkoušet zadefinovat funkci pro umocnění mn. S touto funkcí jsme se již setkali v úvodním článku o LunarML, takže jen ve zkratce:
+fun pow(m, 0) = 1 | pow(m, n) = m * pow(m, n-1);
+Tuto funkci následně převedeme na operátor, konkrétně na operátor asociativní zleva s prioritou 8 (priorita je tedy vyšší, než u součinu a podílu, což je dobře):
+infix 8 pow;
+Nyní je již možné nový operátor začít používat, a to se všemi výhodami, které přináší statický typový systém programovacího jazyka ML:
+2 pow 3; 2 pow 3 + 1;
+infixr 8 pow;
+Vše si ověříme na uceleném příkladu:
+(* Nový operátor pow *) fun pow(m, 0) = 1 | pow(m, n) = m * pow(m, n-1); infix 8 pow; val point = 1 pow 1; val square = 2 pow 2; val cube = 3 pow 3; print(Int.toString (point)); print "\n"; print(Int.toString (square)); print "\n"; print(Int.toString (cube)); print "\n";
+Výsledky vypsané po překladu a spuštění:
+1 4 27
+Taktéž se podíváme na výsledek (trans)překlad do jazyka Lua. Převedení je dosti přímočaré:
+  local function pow(m, n)
+    if n == 0 then
+      return 1
+    end
+    local tmp = pow(m, _Int_sub(n, 1))
+    return _Int_mul(m, tmp)
+  end
+  local point = pow(1, 1)
+  local square = pow(2, 2)
+  cube = pow(3, 3)
+  local tmp = gsub(tostring(point), "-", "~")
+  outputAndFlush(stdOut, tmp)
+  outputAndFlush(stdOut, "\n")
+  local tmp1 = gsub(tostring(square), "-", "~")
+  outputAndFlush(stdOut, tmp1)
+  outputAndFlush(stdOut, "\n")
+Výsledek transpřekladu do JavaScriptu vypadá podobně:
+ let pow;
+ pow = function(m, n) {
+  if (n === 0) {
+   return 1;
+  } else {
+   const tmp16 = pow(m, _Int54_sub(n, 1));
+   return _Int54_mul(m, tmp16);
+  }
+ };
+ const point = pow(1, 1);
+ const square = pow(2, 2);
+ const cube = pow(3, 3);
+ const tmp13 = toString(point);
+ outputAndFlush(stdOut[0], tmp13);
+ outputAndFlush(stdOut[0], Uint8Array.of(10));
+ const tmp14 = toString(square);
+ outputAndFlush(stdOut[0], tmp14);
+ outputAndFlush(stdOut[0], Uint8Array.of(10));
+ const tmp15 = toString(cube);
+ outputAndFlush(stdOut[0], tmp15);
+ outputAndFlush(stdOut[0], Uint8Array.of(10));
+Volba asociativity operátorů
+V předchozím textu byla vypsána pravidla platná pro nově definované operátory. Mj. jsme se zmínili o asociativitě, tedy o tom, zda bude pro nějaký operátor op zápis:
+x op y op z
+vyhodnocen takto:
+(x op y) op z
+či naopak takto:
+x op (y op z)
+Operátor definovaný klíčovým slovem infix bude mít prioritu zleva:
+(* Nový operátor pow *) fun pow(m, 0) = 1 | pow(m, n) = m * pow(m, n-1); infix 8 pow; val result = 2 pow 3 pow 2; print(Int.toString (result)); print "\n";
+Což vede k výpočtu (23)2=82=64:
+64
+Naproti tomu se operátor s asociativitou zprava definuje klíčovým slovem infixr (s „r“ na konci):
+(* Nový operátor pow *) fun pow(m, 0) = 1 | pow(m, n) = m * pow(m, n-1); infixr 8 pow; val result = 2 pow 3 pow 2; print(Int.toString (result)); print "\n";
+Nyní bude proveden výpočet 232=29=512:
+512
+Transpřeklad první verze do jazyka Lua bude následující:
+local function pow(m, n)
+  if n == 0 then
+    return 1
+  end
+  local tmp = pow(m, _Int_sub(n, 1))
+  return _Int_mul(m, tmp)
+end
+local tmp = pow(2, 3)
+local result = pow(tmp, 2)
+Transpřeklad první verze do JavaScriptu:
+ pow = function(m, n) {
+  if (n === 0) {
+   return 1;
+  } else {
+   const tmp15 = pow(m, _Int54_sub(n, 1));
+   return _Int54_mul(m, tmp15);
+  }
+ };
+ const tmp13 = pow(2, 3);
+ const result = pow(tmp13, 2);
+Transpřeklad druhé verze do jazyka Lua bude odlišný:
+local function pow(m, n)
+  if n == 0 then
+    return 1
+  end
+  local tmp = pow(m, _Int_sub(n, 1))
+  return _Int_mul(m, tmp)
+end
+local tmp = pow(3, 2)
+local result = pow(2, tmp)
+Totéž platí i pro transpřeklad do JavaScriptu:
+ pow = function(m, n) {
+  if (n === 0) {
+   return 1;
+  } else {
+   const tmp15 = pow(m, _Int54_sub(n, 1));
+   return _Int54_mul(m, tmp15);
+  }
+ };
+ const tmp13 = pow(3, 2);
+ const result = pow(2, tmp13);
+Nový operátor s nízkou prioritou
+Podívejme se nyní na ukázku dalšího uživatelsky definova...
+(Pokracovani na webu)

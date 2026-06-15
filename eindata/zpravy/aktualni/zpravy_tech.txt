@@ -1,4 +1,204 @@
-|T|Největší lákadlo iPhonu 18 Pro bude netradiční třešňová barva. Skutečné technologické inovace se odkládají|D|15.6. 17:45|P|Inovace včetně modernějšího Face ID pod displejem mají zpoždění • Fotoaparát s proměnlivou clonou získá pouze největší model Max • Staronové šasi může...|X|Inovace včetně modernějšího Face ID pod displejem mají zpoždění • Fotoaparát s proměnlivou clonou získá pouze největší model Max • Staronové šasi může trpět loupáním laku a blednutím na slunci
+|T|EFIStub: startujeme linuxové jádro bez zavaděče GRUB|D|15.6. 22:00|P|Linuxové jádro se obvykle načítá při bootu pomocí zavaděče, ale jde to jinak. EFIStub je způsob, jak jádro nastartovat bez použití zavaděče jako je GR...|X|Co je EFIStub?
+UEFI boot umožňuje start operačního systému na PC ze speciálního diskového oddílu. Oddíl využívá souborový systém VFAT a UEFI firmware na něm má zapsaný nějaký spustitelný systém. Tím systémem bývá zavaděč hlavního operačního systému. Jde o pomocný prográmek, který bychom mohli popsat jako miniaturní operační systém, který zavede linuxové jádro. Tradičním řešením je tu například GRUB.
+GRUB je velmi mocný, ale pro mě, jako minimalistu, je velmi robustní a složitý. Dodnes, když mám opravit boot v grubu, se mi ježí vlasy. Dnes jej používají všechny linuxové distribuce jako hlavní zavaděč, ale kdysi byl hlavním zavaděčem jiný prográmek LiLo (LinuxLoader). Byl mi sympatický, protože byl malý a měl konfiguraci v jednom souboru. Ale LiLo je už minulostí a GRUB je na PC všude. Ale je asi málo známá věc, že tomu tak být nemusí. Linuxové jádro už nějakou dobu obsahuje vlastní zavaděč zvaný EFIStub.
+Při instalaci GRUBu se do UEFI bootu přidá záznam, který jej spouští. Schválně si zkuste zadat příkaz:
+efibootmgr -u BootCurrent: 0000 Timeout: 1 seconds BootOrder: 0000,0007,0003,0002,0008,0009,000A,0001 Boot0000* debian HD(1,GPT,ed4ac21a-02cc-42b1-9ebb-3c70c7b768bb,0x800,0x8e800)/File(\EFI\debian\shimx64.efi) Boot0001* UEFI: Built-in EFI Shell VenMedia(5023b95c-db26-429b-a648-bd47664c8012) ...
+Poznámka: Parametr -u doporučuji, výpis je pak v UTF místo výchozího ASCII, které je méně přehledné.
+Jak vidíte, dostanete podobný výpis jako v bootovacím menu v BIOSu, jen podrobnější. Na prvním místě je právě zmiňovaný GRUB, další jsou boot ze sítě, z flash, CD-ROM a tak dále. Může tam zbýt třeba ještě záznam pro Windows, protože smazání z disku neodstraní jejich záznam z boot menu.
+V UEFI můžete maximálně měnit pořadí položek boot menu, mazat je, ale ne přidávat nové. Na přidávání nových položek potřebujete efibootmgr. Přidáním vlastního záznamu do boot menu, s odkazem přímo na linuxové jádro, použijeme zmíněný EFIStub.
+Používáme EFIStub
+EFIStub je možné použít už při instalaci, ale to je trochu složitější. My začneme jedoduššeji s čerstvě nainstalovaným Debianem, který normálně používá GRUB. Čeká nás trocha manuální práce, pracujeme samozřejmě jako uživatel root.
+UEFI boot umí pracovat jen s VFAT, neumí natáhnout jádro přímo z disku s EXT4, proto mu ho tam musíme nakopírovat, i s initramdiskem. Debian a jeho klony mají tu výhodu, že mají v kořeni souborového systému symbolický odkaz na nejnovější jádro, to nám kopírování usnadní. EFI boot disk je vždy v OS připojen do adresáře  /boot/efi.
+cp /vmlinuz /initrd.img /boot/efi/
+Upozornění: Než s celou procedurou začnete, zkontrolujte si, že máte na EFI disku dostatek místa! Při instalaci se doporučuje velikost alespoň 300 MB. Sám jsem se takhle nachytal, když jsem si dal jen velikost 100 MB. Na Debian 11 to původně stačilo, na upgrade na 12 také, ale na 13 už ne. Jádro je totiž stále větší a větší.
+Pak potřebujeme zjistit hodnotu UUID našeho systémového svazku. Tu si vytáhneme ze souboru /etc/fstab nebo pomocí příkazu  blkid.
+blkid /dev/nvme0n1p2 /dev/nvme0n1p2: UUID="7a62971d-be7a-4e64-847f-875cba948e47" BLOCK_SIZE="4096" TYPE="ext4" PARTUUID="27438dfc-b3f3-42ab-84ff-93c5ca2a0c57"
+Poté můžeme přidat do boot menu záznam.
+efibootmgr -c -g -L "nas EFIStub" --disk /dev/nvme0n1p1 -l 'vmlinuz' -u "root=UUID=7a62971d-be7a-4e64-847f-875cba948e47 rw quiet add_efi_memmap initrd=initrd.img"
+Název položky za parametrem -L, si zvolíme sami libovolný, ale doporučuji se vyhnout diakritice. Parametr --disk říká, kde se nachází naše jádro a initramdisk, tedy dáme tam EFI disk. Kdybyste parametr disk vynechali, použije se výchozí hodnota /dev/sda1, takže tento parametr velice závisí na konfiguraci vašeho PC.
+Kořenový oddíl je zadán pomocí UUID, které jsme získali z fstabu nebo pomocí blkid. Tohle je disk, kde se nachází operační systém. Ten už není uložen v souborovém systému VFAT, většinou dnes používá ext4. Pokud potřebujete jádru přidat další parametry, přidáte je za quiet oddělené mezerou, třeba  net.ifnames=0.
+Poznámka: Pokud byste jádro a initramdisk nahráli do nějakého podadresáře, cesta k souborům se musí escapovat. Třeba pokud použijeme adresář co vytvořil GRUB – /boot/efi/EFI/debian, bude náš příkaz vypada takto:
+efibootmgr -c -g -L "nas EFIStub" --disk /dev/nvme0n1p1 -l '/EFI\debian\vmlinuz' -u "root=UUID=7a62971d-be7a-4e64-847f-875cba948e47 rw quiet add_efi_memmap initrd=\\EFI\\debian\\initrd.img"
+To escapování je trochu zvláštní, je na to třeba pamatovat. Sám jsem na to přišel metodou pokus-omyl.
+Nyní máme přidaný záznam v boot menu. Už při jeho zápisu jsme dostali výpis aktuálního stavu a vidíme tam svůj nově přidaný záznam.
+efibootmgr -u BootCurrent: 0000 Timeout: 1 seconds BootOrder: 0003,0000,0007,0002,0008,0009,000A,0001 Boot0000* debian HD(1,GPT,ed4ac21a-02cc-42b1-9ebb-3c70c7b768bb,0x800,0x8e800)/File(\EFI\debian\shimx64.efi) Boot0001* UEFI: Built-in EFI Shell VenMedia(5023b95c-db26-429b-a648-bd47664c8012) Boot0002* (B129/D0/F0) UEFI PXE IPv4 Broadcom Network Device - 90:5A:08:24:16:36(MAC:905a08241636) PciRoot(0x2)/Pci(0x1,0x1)/Pci(0x0,0x0)/MAC(905a08241636,1)/IPv4(0.0.0.00.0.0.0,0,0) Boot0003* nas EFIStub HD(1,GPT,ed4ac21a-02cc-42b1-9ebb-3c70c7b768bb,0x800,0x8e800)/File(vmlinuz)root=UUID= 7a62971d-be7a-4e64-847f-875cba948e47 rw quiet add_efi_memmap initrd=initrd.img
+Hodnota bootnum se nám přiřadí automaticky, bude to první volné číslo. Nikdy jsem nepotřeboval řešit konkrétní hodnotu při přidávání záznamu. Náš záznam se v pořadí bootu nastaví jako první.
+Nyní můžeme restartovat a uvidíme, jestli nám systém nabootuje bez zavaděče. Pokud by se boot nezdařil kvůli naší chybě, záznam s GRUBem je hned na druhém místě a pro boot se použije ten. Nebo můžeme vybrat v UEFI boot menu položku ručně sami.
+Záznamy v boot menu se nedají upravovat. Pokud chceme změnu, musíme původní záznam smazat a přidat znovu už změněný. První příkaz smaže položku v boot menu, parametr -b určí bootnum které chceme smazat. Druhý příkaz je změna pořadí bootování, v ukázce je návrat k původnímu GRUBu.
+efibootmgr -b 0003 -B efibootmgr -o 0000,0003,0007,0002,0008,0009,000A,0001
+Aktuální jádro pro EFIStub
+Protože jsme jádro i initramdisk na EFI disk kopírovali ručně, při aktualizaci jádra nedojde automaticky k jeho aktualizaci také na boot disku. Běžně se o to stará GRUB, ale my si musíme poradit jinak. Vytvoříme si dva aktualizační skripty, které nám budou aktuálnost udržovat. Využijeme automaticky udržované symbolické odkazy na jádro a initramdisk, které nám připravuje sám Debian.
+echo -e '#!/bin/sh\ncp /vmlinuz /boot/efi/' > /etc/kernel/postinst.d/zz-update-efistub chmod +x /etc/kernel/postinst.d/zz-update-efistub mkdir -p /etc/initramfs/post-update.d/ echo -e '#!/bin/sh\ncp /initrd.img /boot/efi/' > /etc/initramfs/post-update.d/zz-update-efistub
+chmod +x /etc/initramfs/post-update.d/zz-update-efistub
+Poznámka: Nevím proč, ale v Debianu 13 post-update adresář pro initramdisk chybí, musíme ho ručně vytvořit.
+Skripty jsou dva, jeden pro jádro a druhý pro initramdisk. Jeden nestačí, protože při instalaci nějakých balíčků dochází k aktualizaci initramdisku aniž by se měnilo jádro. Zkuste si třeba nainstalovat iSCSI.
+Celý EFIStub, i se skripty, přežije distribuční upgrade Debianu a normálně funguje dál v nové verzi Debianu.
+K čemu je to dobré?
+Tady se dostáváme na dost filozofickou rovinu, ale uvedu svůj názor: Zbavíme se tím GRUBu při bootu. I když ne jeho nainstalovaného balíčku na disku – kvůli závislostem jej nemůžeme odstranit. Občas se totiž setkám s případem, kdy mi GRUB selhal a já musel opravovat jeho instalaci. Není to těžké udělat, ale zdlouhavé. Především, když právě nemáte po ruce záchranný disk a nemáte ho v potřebné verzi Debianu.
+Takový boot je taky o něco rychlejší, což asi využijeme jen u stroje, který denně spouštíme.
+Naopak přijdeme o snadnou možnost obnovení hesla. Bez GRUBu k tomu budete potřebovat nějaký záchranný disk. Bez GRUBu také nemůžete využít boot ze zašifrovaného disku. Systémový kořenový svazek být zašifrovaný může, ale ne adresář boot s jádrem a ramdiskem.
+Boot ze SW RAID
+Dokud se na PC bootovalo starým způsobem, nebyl problém bootovat z disků, na kterém byl SW RAID. I když na bootovacím oddíle to mohl být jen RAID1, zavaděč se zapsal do MBR a jelo se. Jenže novější servery už tento boot nepodporují a už se mi stalo, že vůbec nefungoval. Nový UEFI boot tohle všechno velmi změnil. Jak jsem psal na začátku, EFI disk musí být jen jednoduchý VFAT a ten se s RAIDem špatně snáší a GRUB se na něj odmítá instalovat.
+Dostal jsem na instalaci nový server, který měl sice disky pro RAID, ale už v něm nebyl příslušný řadič. Bohužel na specifikaci nákupu jsem neměl vliv, ale musel jsem se s tím nějak vypořádat. Softwarový RAID je sice levnější než ten hardwarový, ale platíme za jeho používání výkonem stroje. Softwarové řešení redukuje rychlost zápisu na disk na polovinu, rychlost čtení ovlivněna není.
+Tady velice záleží na účelu serveru. Pokud mám výpočetní stroj, který intenzivně zapisuje na disk své výsledky (třeba Gausian), rozhodně to chce jít do hardwarového řešení. Ale u souborového serveru, kde výpočty neběží, to už takový problém být nemusí. Nebo u domácího serveru na úsporné desce, kde je hlavní prioritou spotřeba při dlouhodobém provozu, než rychlost zápisu disků. Celkově, ale určitě platí, že je hardwarový RAID obvykle lepší variantou.
+Když jsem na internetu hledal, jestli existuje návod jak se s tím vypořádat, našel jsem dva směry řešení. První způsob: instalovat na normální EFI boot disk a pak z něj násilně udělat RAID tak, aby zůstala zachována VFAT. Druhý způsob: manuálně instalovat GRUB na oba disky. Poté pravidelně kontrolovat, jestli jsou správně zkopírovaná jádra a GRUB je po upgradu na obou bootovacích discích. Tohle není nic moc.
+Ale co ve skutečnosti potřebujeme? Na obou discích oddíl s VFAT, na nich jádro a initramdisk. EFIStub nám nabootuje a pak spustí systém ze softwarového RAID disku. Takže jsem provedl normální instalaci Debianu. Na obou discích serveru jse...
+(Pokracovani na webu)|E||T|LunarML: definice vlastních operátorů a pokročilý typový systém|D|15.6. 22:00|P|Popíšeme si a vyzkoušíme dvě možná nejdůležitější vlastnosti jazyka Standard ML: pokročilou možnost definice vlastních operátorů s volitelnou asociati...|X|Vestavěné operátory programovacího jazyka Standard ML
+Co se dozvíte v článku
+- Vestavěné operátory programovacího jazyka Standard ML
+- Zápis standardních operátorů
+- Přetěžování operátorů
+- Definice vlastních operátorů
+- Volba asociativity operátorů
+- Nový operátor s nízkou prioritou
+- Zápis operátoru speciálními znaky
+- Strukturované uživatelské datové typy: od jednoduchých výčtových typů po rekurzivní datové struktury
+- Definice výčtového typu s osmi základními barvami
+- Definice nového unifikovaného typu color a funkce pro převod barvy na trojici složek RGB
+- Přidání možnosti modifikace základních barev o atribut světlost
+- Přidání podpory pro reprezentaci barvy ve stupních šedi
+- Zjednodušení zápisu funkce color_as_string s využitím nového operátoru kolony
+- Poslední typ barvy: mix dvou barev (rekurzivní datový typ)
+- Transpřeklad poslední varianty colors6.sml do jazyka Lua a JavaScriptu
+- Příloha: Makefile pro transpřeklad všech demonstračních příkladů
+- Repositář s demonstračními příklady
+- Literatura
+- Předchozí články o jazyku ML/SML i o jazycích OCaml a F#
+- Odkazy na Internetu
+Vzhledem k tomu, že překladač (resp. přesněji řečeno transpřekladač) LunarML, kterým se v této sérií článků zabýváme, je jednou z implementací programovacího jazyka Standard ML, bude možné dnešní článek založit právě na specifikaci Standard ML (což je mimochodem jeden z mála mainstreamových programovacích jazyků, které jsou formálně popsány a navíc i definovány tímto formálním popisem).
+V programovacím jazyku Standard ML nalezneme relativně velké množství různých operátorů. Musíme si však uvědomit, že operátory jsou ve skutečnosti definovány jako běžné funkce a samotný zápis operátoru je pouhý syntaktický cukr (ovšem velmi praktický), který spočívá v tom, že se (infixové) operátory zapisují mezi operandy a nepoužívají se závorky okolo operandů (pokud to není nutné z jiných důvodů – například při určení priority atd.). Pokud na chvíli zůstaneme u infixových operátorů, tak to konkrétně znamená, že zápis:
+<výraz1> <operátor;> <výraz2>
+je ve skutečnosti ze sémantického pohledu totožný se zápisem:
+<operátor;>(<výraz1>, <výraz2>)
+<operátor;> <výraz1> <výraz2>
+V následující tabulce jsou vypsány všechny standardní operátory programovacího jazyka Standard ML. Ty se od sebe liší (pochopitelně) nejenom prováděnou operací, ale taktéž prioritou a asociativitou. Priorita určuje (stejně jako v jiných jazycích), v jakém pořadí se budou operátory vyhodnocovat v případě, že jsou použity v jediném výrazu (například ve výrazu 1+2*3 jsou zapsány dva operátory a pořadí vyhodnocení závisí na jejich prioritě). A asociativita určuje uzávorkování operátorů se stejnou prioritou, tj. ovlivní, zda se provede (1+2)+3 nebo naopak 1+(2+3).
+Z níže uvedené tabulky je patrné, že většina operátorů je takzvaně asociativní zleva, ovšem skupina dvou operátorů s prioritou 5 má asociativitu zprava. V tomto případě se konkrétně jedná o operátory určené pro spojení řetězců popř. seznamů, s nimiž jsme se ve stručnosti seznámili v úvodním článku o transpřekladači LunarML:
+Booleovské operace andalso a orelse nejsou v tabulce uvedeny, protože se jedná o speciální konstrukce realizující zkrácené vyhodnocování. Z tohoto důvodu je nelze definovat formou funkcí (u funkcí se totiž parametry vyhodnocují před zavoláním funkce, kdežto v případě andalso a orelse tomu tak být nemusí).
+Zápis standardních operátorů
+Všechny operátory, které byly uvedeny v předchozí kapitole, jsou interně implementovány formou (běžných) funkcí a dále jsou definovány klíčovými slovy infix a v některých případech infixr. Samotná implementace operátorů není tématem dnešního článku, ovšem zajímavý je druhý krok, tedy použití klíčových slov infix a infixr, které vlastně v době překladu mění syntaxi programovacího jazyka:
+infix 7 * / div mod infix 6 + - ^ infixr 5 :: @ infix 4 = <> > >= < <= infix 3 := o infix 0 before
+Přetěžování operátorů
+V mnoha programovacích jazycích se setkáme s takzvanými přetíženými operátory. Jedná se o operátory, jejichž funkce a vlastnosti se mění podle typu operandů. Pravděpodobně nejznámější formou přetížených operátorů jsou operátory určené pro provádění základních aritmetických operací, které bývají definovány pro různé numerické datové typy. Ovšem například operátor + může být přetížen vícekrát, typicky pro operaci spojení řetězců (viz například Java) či například n-tic a seznamů (Python). V těchto případech se nejenom mění funkce operátoru (tj. součet je zcela rozdílná operace od spojení řetězců), ale i jejich další vlastnosti, v tomto případě například komutativita (a nepřímo taktéž asociativita v případě hodnot s plovoucí řádovou čárkou).
+Některé programovací jazyky umožňují definici zcela nových operátorů popř. přetížení existujících operátorů. Z tohoto pohledu můžeme programovací jazyky rozdělit do čtyř skupin na základě dvou vlastností (které jsou na sobě nezávislé):
+- Lze definovat nové operátory?
+- Lze přetížit stávající operátory?
+Zajímavé je, že každá ze čtyř kombinací zmíněných v předchozí kapitole je obsazena nějakým programovacím jazykem (a to zcela nezávisle na dalších vlastnostech daného jazyka, tedy nezávisle na typovém systému, podpoře OOP, maker atd.):
+Nové operátory nelze přidávat a existující operátory nelze dále přetěžovat:
+Nové operátory nelze přidávat, ale existující operátory je možné přetěžovat:
+Lze definovat nové operátory, existující operátory ovšem nelze dále přetěžovat:
+Lze definovat nové operátory, navíc je možné přetěžovat existující operátory:
+Definice vlastních operátorů
+V programovacím jazyku Standard ML sice není (prakticky) možné přetěžovat standardní operátory (viz též předchozí kapitolu), ovšem samotný jazyk nám nezabraňuje ve vytváření operátorů nových. U nových operátorů lze určit jejich prioritu i asociativitu, což je velmi užitečné (podle mého skromného názoru dokonce mnohem užitečnější, než pouhé přetěžování existujících operátorů).
+Prvním krokem při vytváření nového operátoru je definice funkce se dvěma parametry, která bude následně zaregistrována jako nový binární operátor. Můžeme si například vyzkoušet zadefinovat funkci pro umocnění mn. S touto funkcí jsme se již setkali v úvodním článku o LunarML, takže jen ve zkratce:
+fun pow(m, 0) = 1 | pow(m, n) = m * pow(m, n-1);
+Tuto funkci následně převedeme na operátor, konkrétně na operátor asociativní zleva s prioritou 8 (priorita je tedy vyšší, než u součinu a podílu, což je dobře):
+infix 8 pow;
+Nyní je již možné nový operátor začít používat, a to se všemi výhodami, které přináší statický typový systém programovacího jazyka ML:
+2 pow 3; 2 pow 3 + 1;
+infixr 8 pow;
+Vše si ověříme na uceleném příkladu:
+(* Nový operátor pow *) fun pow(m, 0) = 1 | pow(m, n) = m * pow(m, n-1); infix 8 pow; val point = 1 pow 1; val square = 2 pow 2; val cube = 3 pow 3; print(Int.toString (point)); print "\n"; print(Int.toString (square)); print "\n"; print(Int.toString (cube)); print "\n";
+Výsledky vypsané po překladu a spuštění:
+1 4 27
+Taktéž se podíváme na výsledek (trans)překlad do jazyka Lua. Převedení je dosti přímočaré:
+  local function pow(m, n)
+    if n == 0 then
+      return 1
+    end
+    local tmp = pow(m, _Int_sub(n, 1))
+    return _Int_mul(m, tmp)
+  end
+  local point = pow(1, 1)
+  local square = pow(2, 2)
+  cube = pow(3, 3)
+  local tmp = gsub(tostring(point), "-", "~")
+  outputAndFlush(stdOut, tmp)
+  outputAndFlush(stdOut, "\n")
+  local tmp1 = gsub(tostring(square), "-", "~")
+  outputAndFlush(stdOut, tmp1)
+  outputAndFlush(stdOut, "\n")
+Výsledek transpřekladu do JavaScriptu vypadá podobně:
+ let pow;
+ pow = function(m, n) {
+  if (n === 0) {
+   return 1;
+  } else {
+   const tmp16 = pow(m, _Int54_sub(n, 1));
+   return _Int54_mul(m, tmp16);
+  }
+ };
+ const point = pow(1, 1);
+ const square = pow(2, 2);
+ const cube = pow(3, 3);
+ const tmp13 = toString(point);
+ outputAndFlush(stdOut[0], tmp13);
+ outputAndFlush(stdOut[0], Uint8Array.of(10));
+ const tmp14 = toString(square);
+ outputAndFlush(stdOut[0], tmp14);
+ outputAndFlush(stdOut[0], Uint8Array.of(10));
+ const tmp15 = toString(cube);
+ outputAndFlush(stdOut[0], tmp15);
+ outputAndFlush(stdOut[0], Uint8Array.of(10));
+Volba asociativity operátorů
+V předchozím textu byla vypsána pravidla platná pro nově definované operátory. Mj. jsme se zmínili o asociativitě, tedy o tom, zda bude pro nějaký operátor op zápis:
+x op y op z
+vyhodnocen takto:
+(x op y) op z
+či naopak takto:
+x op (y op z)
+Operátor definovaný klíčovým slovem infix bude mít prioritu zleva:
+(* Nový operátor pow *) fun pow(m, 0) = 1 | pow(m, n) = m * pow(m, n-1); infix 8 pow; val result = 2 pow 3 pow 2; print(Int.toString (result)); print "\n";
+Což vede k výpočtu (23)2=82=64:
+64
+Naproti tomu se operátor s asociativitou zprava definuje klíčovým slovem infixr (s „r“ na konci):
+(* Nový operátor pow *) fun pow(m, 0) = 1 | pow(m, n) = m * pow(m, n-1); infixr 8 pow; val result = 2 pow 3 pow 2; print(Int.toString (result)); print "\n";
+Nyní bude proveden výpočet 232=29=512:
+512
+Transpřeklad první verze do jazyka Lua bude následující:
+local function pow(m, n)
+  if n == 0 then
+    return 1
+  end
+  local tmp = pow(m, _Int_sub(n, 1))
+  return _Int_mul(m, tmp)
+end
+local tmp = pow(2, 3)
+local result = pow(tmp, 2)
+Transpřeklad první verze do JavaScriptu:
+ pow = function(m, n) {
+  if (n === 0) {
+   return 1;
+  } else {
+   const tmp15 = pow(m, _Int54_sub(n, 1));
+   return _Int54_mul(m, tmp15);
+  }
+ };
+ const tmp13 = pow(2, 3);
+ const result = pow(tmp13, 2);
+Transpřeklad druhé verze do jazyka Lua bude odlišný:
+local function pow(m, n)
+  if n == 0 then
+    return 1
+  end
+  local tmp = pow(m, _Int_sub(n, 1))
+  return _Int_mul(m, tmp)
+end
+local tmp = pow(3, 2)
+local result = pow(2, tmp)
+Totéž platí i pro transpřeklad do JavaScriptu:
+ pow = function(m, n) {
+  if (n === 0) {
+   return 1;
+  } else {
+   const tmp15 = pow(m, _Int54_sub(n, 1));
+   return _Int54_mul(m, tmp15);
+  }
+ };
+ const tmp13 = pow(3, 2);
+ const result = pow(2, tmp13);
+Nový operátor s nízkou prioritou
+Podívejme se nyní na ukázku dalšího uživatelsky definova...
+(Pokracovani na webu)|E||T|Největší lákadlo iPhonu 18 Pro bude netradiční třešňová barva. Skutečné technologické inovace se odkládají|D|15.6. 17:45|P|Inovace včetně modernějšího Face ID pod displejem mají zpoždění • Fotoaparát s proměnlivou clonou získá pouze největší model Max • Staronové šasi může...|X|Inovace včetně modernějšího Face ID pod displejem mají zpoždění • Fotoaparát s proměnlivou clonou získá pouze největší model Max • Staronové šasi může trpět loupáním laku a blednutím na slunci
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Steam Hardware Survey „najednou“ ukázal vyšší tržní podíl grafik Radeon. Ve skutečnosti je za tím chyba Valve…|D|15.6. 17:14|P|Možná jste zaregistrovali zprávy o tom, že grafiky AMD generace Radeon RX 9000 nezískaly ani tolik tržního podílu, aby se ukázaly ve statistice Steamu...|X|Přes víkend se objevily články o tom, že v aktuální statistice z hardwarového průzkumu Steamu zveřejněné firmou Valve „se poprvé objevily“ grafiky AMD s architekturou RDNA 4, to rovnou s ne úplně minimálním podílem. Ve skutečnosti je to trochu jinak. Podobně jako předchozí zprávy, dle nichž se grafiky s architekturou RDNA 4 měly prodávat tak špatně, že ani nejsou vidět ve statistice Steamu, jde o chybná data a chybné závěry.
 Podíl Radeonů RX 9000 poprvé měřitelný ve statictice Steamu? Ve skutečnosti tam byl už dávno

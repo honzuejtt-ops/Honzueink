@@ -1,0 +1,12 @@
+Prohlédnout si téměř jakýkoliv kout naší zeměkoule v detailním rozlišení a pěkně z pohodlí domova není žádnou novinkou. Google ale nyní do Google Earth přidává ještě zajímavější možnost. Experimentální letecký simulátor, díky kterému se můžete zdarma proletět nad jakoukoliv částí světa přímo z webového prohlížeče. Bez instalace a nutnosti cokoliv stahovat.
+Nejedná se samozřejmě o plného konkurenta pro násobně propracovanější hry typu Microsoft Flight Simulator nebo X-Plane, nýbrž o velmi základní zábavnou utilitu pro zábavné objevování plateny z ptačí perspektivy. Google dokonce sám uvádí, že letecký simulátor Google Earth je „navržen spíše pro příležitostné prozkoumávání než pro vysoce věrný aerodynamický trénink.“
+Jak letecký simulátor v Google Earth zapnout?
+Výhodou nové funkce je, že je přímo v prohlížeči a zadarmo. Abyste si ji vyzkoušeli, stačí:
+- 
+		jít přímo na web Google Earth, 
+- 
+		kliknout na tlačítko Prozkoumat Earth v pravém horním rohu, 
+- 
+		v horní liště rozkliknout Nástroje a následně vybrat Simulátor letu. 
+Ovládání je možné buď myší, dotykem na zařízeních s dotykovou obrazovkou nebo šipkami. V kombinaci se šipkami můžete používat i klávesy Page Up a Page Down pro změnu rychlosti letu. Při letu se dynamicky načítají 3D budovy a satelitní snímky ve vysokém rozlišení, takže výsledný zážitek závisí hlavně na rychlosti vašeho internetového připojení.
+zdroj: Google

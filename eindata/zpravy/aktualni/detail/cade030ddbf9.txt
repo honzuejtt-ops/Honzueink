@@ -1,0 +1,20 @@
+Článek
+„V průběhu elektronického monitorování silničního provozu bylo zaznamenáno překročení povolené rychlosti vozidlem vedeným ve Vaší evidenci,“ snaží se kyberšmejdi vyděsit příjemce podvodné SMS zprávy a donutit ho kliknout na přiložený odkaz.
+Ten vede na web, kde má příjemce vše vyřídit. Ta vcelku zdařile kopíruje design internetových stránek, které běžně státní instituce používají. Uživatelé si ale všimnou už podle adresního řádku, že se vůbec na oficiálních stránkách žádného českého úřadu nenachází.
+Jak Novinky.cz informovaly již v minulém týdnu, zachycena byla při podobných smishingových podvodech například falešná doména doprava.eu.cc. Aktuální podvodné zprávy zase vedou na spravaos.cfd. Falešné weby ale mohou kyberšmejdi snadno měnit jako na běžícím pásu.
+Několik varovných signálů
+V každém případě se podvodníci snaží vzbudit dojem, že komunikují jménem státní instituce nebo úřadu. Text bývá formulován úředním jazykem, upozorňuje na údajné porušení předpisů a často obsahuje výhrůžku dalším správním řízením či vymáháním pohledávky. To vše má jediný cíl – donutit příjemce kliknout na přiložený odkaz.
+Podezření by mělo vzbudit už několik varovných signálů. Zpráva často neobsahuje konkrétní údaje o přestupku, tedy místo, čas ani registrační značku vozidla. Odesílatelem navíc bývá neznámé telefonní číslo nebo dokonce e-mailová adresa. Neobvyklé jsou také internetové adresy s exotickými koncovkami domén, které nemají s českými úřady nic společného.
+Stát přitom v současnosti žádné webové stránky, prostřednictvím kterých by podobným způsobem vybíral pokuty, neprovozuje.
+Odborníci doporučují na podobné zprávy nereagovat, neklikat na odkazy a rozhodně nezadávat žádné platební údaje. Pokud si člověk není jistý, měl by si informace ověřit přímo u příslušného úřadu nebo na jeho oficiálních webových stránkách. V případě pochybností lze kontaktovat také infolinku ministerstva dopravy.
+Text podvodné SMS zprávy
+Oznámení o zpracování dopravního přestupku
+V průběhu elektronického monitorování silničního provozu bylo zaznamenáno překročení povolené rychlosti vozidlem vedeným ve Vaší evidenci.
+Za účelem vyřízení této záležitosti je nutné uhradit stanovenou pokutu do 3 dnů od doručení tohoto oznámení.
+Nebude-li požadovaná částka uhrazena ve stanovené lhůtě, může být případ postoupen k dalšímu správnímu řízení, včetně vymáhání vzniklých pohledávek a souvisejících nákladů.
+Platba a správa:
+https://spravaos.cfd/
+(Pro aktivaci odkazu odpovězte „1“ a následně zprávu znovu otevřete nebo adresu zkopírujte do internetového prohlížeče.)
+Další postup bude veden v souladu s platnými právními předpisy.
+Nátlak a pocit naléhavosti
+Právě nátlak a snaha vyvolat pocit naléhavosti patří mezi nejčastější zbraně internetových podvodníků. Jakmile vás SMS nutí jednat okamžitě, hrozí sankcemi a zároveň požaduje kliknutí na odkaz, je na místě zvýšená opatrnost. Jediný neuvážený klik může totiž vést ke ztrátě peněz i citlivých osobních údajů.

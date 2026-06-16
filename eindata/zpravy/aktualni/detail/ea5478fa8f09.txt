@@ -1,0 +1,23 @@
+Růst firmy s sebou obvykle přináší i čím dál složitější technologické zázemí. Starat se o servery, sítě a datová úložiště stojí čas, peníze a energii IT specialistů a specialistek.
+Existuje ale jiné řešení jménem hyperkonvergovaná infrastruktura. Ta propojuje tyto oddělené sféry IT do jednoho chytře řízeného celku. Zjisti, jaké výhody tato ICT infrastruktura má a kolik s ní ušetříš.
+Místo tří máš jedno – což je lepší
+Představ si klasické firemní IT zázemí. Na jedné straně stojí výkonné servery, na druhé robustní datová úložiště (SAN/NAS) a mezi nimi je složitá síťová infrastruktura, která to celé drží pohromadě. Každá z těchto oblastí má obvykle svou vlastní správu, specifický hardware, a často dokonce vyžaduje jiné specialisty*specialistky. Když potřebuješ navýšit kapacitu pro novou firemní aplikaci, znamená to složité plánování, konfiguraci a testování, zda s ní všechny tyto vrstvy budou kompatibilní.
+Hyperkonvergovaná infrastruktura (označovaná zkratkou HCI z anglického Hyperconverged Infrastructure) tento tradiční, tzv. třívrstvý model kompletně nahradí. Místo specializovaného hardwaru od různých výrobců sází na chytrou kombinaci standardních serverů a pokročilého softwaru, který znamená, že vše spravuješ z jediného rozhraní.
+Jaké to má výhody?
+Hlavním důvodem, proč moderní IT infrastruktura přechází na hyperkonvergovaný model, je radikální zjednodušení. Administrátorstvo pak nemusí do nekonečna přepínat mezi desítkami různých ovládacích programů. Celé IT prostředí prostě ovládají z jednoho přehledného rozhraní – takzvané Single Pane of Glass.
+To se sebou přináší například tyto provozní benefity:
+- Rychlost – nasazení nového virtuálního serveru nebo přidělení kapacity pro nový projekt je otázkou několika kliknutí a minut.
+- Kompatibilitu – aktualizace jsou výrazně snazší. Výrobce HCI dodává softwarové balíčky jako celek, takže odpadá riziko, že update úložiště shodí komunikaci se servery apod.
+- Lepší využití zdrojů – tradiční servery často běží naprázdno, zatímco úložiště praská ve švech. hyperkonvergovaná infrastruktura sdílí veškeré prostředky efektivně tam, kde jsou aktuálně nejvíce potřeba.
+Kde přesně vzniká slíbená úspora až 40 %?
+Když firma zvažuje modernizaci IT, vidí management často jen pořizovací cenu hardwaru. Skutečné náklady se však skrývají v následném provozu (OpEx). Právě v této oblasti dokáže hyperkonvergovaná infrastruktura srazit náklady na správu až o zmiňovaných 40 %.
+Jak je to možné?
+- 1. Ušetříš lidem spoustu času. Tím, že správa celého systému probíhá z jednoho místa, je pro tvůj IT tým jednodušší a zvládá ji rychleji. Dokládají to statistiky, kde více než polovina firem nasazujících HCI hlásí zvýšení produktivity IT týmu.
+- 2. Druhou významnou položkou v rozpočtu je s úspora místa a energií. Tradiční architektura vyžaduje spoustu serverů, které spotřebovávají hromadu elektřiny a generují teplo, jež musíš draze chladit. HCI řešení smrskne celou tuto infrastrukturu do zlomku původní velikosti.
+- 3. V neposlední řadě šetříš i na licencích za specializovaný řídicí software třetích stran – u hyperkonvergované infrastruktury máš vše v jednom balíku.
+Pro koho je toto řešení vhodné?
+HCI se většinou nevyplatí malým firmám, ale pro střední a větší podniky představuje zásadní úsporu. Je ideální volbou pro firmy, které:
+- Plánují obměnu hardwaru – pokud stávající servery a úložiště stejně dosluhují, je nejvyšší čas přejít na HIC řešení. Kompletní návrh a realizaci moderního datového centra pro tebe zajistí specialisté a specialistky, kteří propojují spolehlivé servery a datová úložiště do funkčních celků.
+- Rychle rostou a plánují nové projekty – potřebuješ ze dne na den otevřít novou pobočku, spustit náročný e-shop nebo poskytnout zázemí pro desítky zaměstnanců a zaměstnankyň na home office? S HCI škáluješ výkon plynule podle potřeby.
+- Provozují kritické aplikace – výpadky výroby nebo interních systémů stojí peníze. Hyperkonvergované systémy jsou velmi odolné vůči chybám a obsahují pokročilé nástroje pro zálohování a obnovu dat. Podle studie analytické společnosti IDC, mají o 97 % méně výpadků.
+Hyperkonvergovaná infrastruktura tak vlastně přenáší flexibilitu a jednoduchost veřejného cloudu přímo do tvé vlastní serverovny. Získáš absolutní kontrolu nad svými daty, ale bez chaosu a zbytečných výdajů.

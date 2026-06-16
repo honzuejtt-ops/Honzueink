@@ -1,0 +1,3 @@
+AI funkce, které jsou poháněné NPU, nebudou všechny exkluzívní pro Copilot+. • Windows App SDK 2.2 Experimental 9 přidává podporu grafických karet. • Jako první jde o karty GeForce RTX 30 a novější s aspoň 6 GB videopaměti.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

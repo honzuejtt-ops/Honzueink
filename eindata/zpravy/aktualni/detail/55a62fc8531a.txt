@@ -1,0 +1,15 @@
+Apple container
+Nástroj pro vytváření a spouštění linuxových kontejnerů pomocí odlehčených virtuálních strojů na počítačích Mac. Je napsán v jazyce Swift a optimalizován pro čipy Apple Silicon. Tento nástroj pracuje s kontejnerovými obrazy kompatibilními s OCI, takže můžete stahovat a spouštět obrazy z jakéhokoli standardního registru kontejnerů. Vytvořené obrazy můžete do těchto registrů také nahrávat a spouštět je v jakékoli jiné aplikaci kompatibilní s OCI.
+github.com/apple/container, 1.0.0
+Yserver
+X11 server pro Linux napsaný od základu v programovacím jazyce Rust. Na rozdíl od tradičního X.Org Serveru se zaměřuje na moderní linuxové systémy a zbavuje se zastaralých funkcí a historické zátěže, které dnes již většina uživatelů nevyužívá.
+Projekt již dokáže provozovat desktopová prostředí MATE, Xfce či Cinnamon a podporuje důležitá rozšíření jako RandR, DRI3, GLX nebo Composite. Cílem není vytvořit kopii X.Org, ale nabídnout jednodušší, bezpečnější a modernější implementaci X11 s důrazem na kompatibilitu se současnými aplikacemi a pracovními prostředími.
+github.com/joske/yserver, 1.1.1
+CheezyPizza
+Nástroj pro přenos souborů typu peer-to-peer, který běží výhradně ve vašem prohlížeči – bez instalace, bez účtů a bez serverů, na kterých by byla uložena vaše data. CheezyPizza je odnoží a alternativou FilePizza, původní aplikace pro sdílení souborů typu p2p založené na prohlížeči, kterou rozšiřuje o podporu obnovení, lepší zpracování velkých souborů, lepší zpracování chyb a trvalý závazek udržovat přenosy rychlé a soukromé.
+Lyrie
+Autonomní nástroj pro penetrační testování, který automatizuje průzkum, skenování zranitelností, testování zabezpečení i tvorbu reportů. Nabízí šifrování citlivých dat, nové moduly pro odhalování běžných bezpečnostních chyb a pokročilou analýzu zdrojového kódu včetně podpory jazyka Rust.
+Součástí projektu je také Agent Trust Protocol (ATP), který umožňuje kryptograficky ověřovat identitu a oprávnění AI agentů. Lyrie dokáže testovat webové aplikace i analyzovat zdrojové kódy a výsledky exportovat do nástrojů pro bezpečnostní audit.
+github.com/OTT-Cybersecurity-LLC/lyrie-ai, 3.1.0
+Blbinka
+Kreativita některých lidí nezná hranic. Naši východní sousedé například dokázali kreativně využít elektrické koloběžky a nábytek.

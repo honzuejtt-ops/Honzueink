@@ -1,0 +1,43 @@
+Před nedávnem Microsoft oznámil nové zlepšení pro herní počítače s Windows: funkci Advanced Shader Delivery, která umožňuje přeskočit zdlouhavé kompilování shaderů, které na vás ve hrách vyskočí po každé aktualizaci ovladačů. Místo kompilace na počítači se shadery stáhnou z internetu. Zpočátku podpora ale měla omezení – AMD ji nabízelo jenom na novějších grafikách od Radeonů RX 7000 výš. Nakonec se ale dostane i na starší modely.
+Advanced Shader Delivery pro starší grafiky
+Microsoft teď oznámil rozšíření podpory Advanced Shader Delivery – funkce vystoupila z předchozí beta fáze a je teď dostupná všem uživatelům aplikace Xbox ve Windows 11. Doteď bylo třeba se přihlásit do insiderovského programu a nainstalovat si zkušební verzi. To už teď nebudete muset, funkce by měla být zapnutá už ve výchozí instalaci. Je třeba mít nainstalován balík Xbox Gaming Services (česky Herní Služby) ve verzi 37.113.11003.0 (Microsoft Store by ho měl nejspíš aktualizovat automaticky).
+Současně s tím ale byla oznámená i novinka v šíři podpory na straně AMD. To ji původně přislíbilo jenom pro grafiky s architekturou RDNA 3 a RDNA 4, v čemž byly zahrnuté i procesory s integrovaným GPU generace RDNA 3 nebo 3.5, používané v herních handheldech. Nakonec ale bude pamatováno i na starší grafické karty (a integrovaná GPU, například handheldového čipu Ryzen Z2 Go).
+AMD teď v nově vydaném ovladači Adrenalin 26.6.1 rozšířilo podporu také na GPU s architekturou RDNA 2 i ta s architekturou RDNA první generace, tedy grafické karty Radeon série RX 5000. Ty firma před časem vyčlenila do separátní větve ovladačů, což bylo vnímáno jako konec jejich podpory. Naštěstí se to nenaplnilo a GPU dostávají nové optimalizace a funkce jako Advanced Shader Delivery. Samostatné grafiky Radeon RX 6000 GPU s architekturou RDNA 2 by také začátkem příštího roku měly dostat přístup k AI upscalingu FSR 4.1. Ten AMD údajně nyní optimalizuje tak, aby se snížily nároky a lépe fungoval s omezeným výpočetním výkonem GPU generace RDNA 2.
+Advanced Shader Delivery zatím funguje jen ve hrách, které máte koupené přes obchod Microsoftu a ekosystém Xboxu (ovšem i včetně předplatného Game Pass), až někdy v budoucnu má přibýt podpora tohoto mechanismu také ve hrách distribuovaných přes Steam, Epic Games Store nebo GOG a jiné nezávislé obchody. Nicméně to, že ze strany AMD byla přidána podpora grafik generace RDNA a RDNA 2 pro obchod Microsoftu, dává naději, že až funkce bude funkční i pro ostatní platformy, mohlo by také být pamatováno i na tato starší GPU.
+Microsoft uvádí, že tato novinka může u her, které ji využijí, zkrátit první spuštění po instalaci nových ovladačů až o 95 % (například z 1,5 minuty na 4 sekundy u Forza Horizon 6). Aktuálně podporované hry jsou tyto, do budoucna by ale mělo titulů přibývat.
+- Ark Survival Ascended
+- Avowed
+- Call of Duty: Black Ops 6
+- Clair Obscur: Expedition 33
+- Control
+- Dead Island 2
+- Deep Rock Galactic
+- Farming Simulator 25
+- Forspoken
+- Final Fantasy XVI
+- Forza Horizon 5
+- Forza Horizon 6
+- Forza Motorsport
+- Gears of War: Reloaded
+- Gears Tactics
+- Grounded 2
+- Grand Theft Auto V Enhanced
+- Lies of P
+- Metro Exodus
+- Microsoft Flight Simulator 2024
+- Monster Hunter Rise
+- Persona 3 Reload
+- Resident Evil 2 (2019)
+- Resident Evil 3
+- S.T.A.L.K.E.R. 2: Heart of Chornobyl
+- Sea of Thieves
+- Sniper Elite: Resistance
+- South of Midnight
+- The Elder Scrolls: Oblivion Remaster
+- Ninja Gaiden 4
+- The Callisto Protocol
+- The Outer Worlds 2
+- Silent Hill f
+- Keeper
+- Hogwarts Legacy
+Zdroj: Microsoft

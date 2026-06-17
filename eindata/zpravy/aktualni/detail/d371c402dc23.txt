@@ -1,0 +1,138 @@
+Minulý článek představil základní principy real-time operačního systému NuttX zaměřeného na vestavné systémy. Podívali jsme se na základní organizaci ovladačů dělených na společnou vyšší vrstvy a pro mikrokontrolér specifickou nižší vrstvu.
+Co se dozvíte v článku
+Analogově-digitální převodník (ADC)
+Princip konfigurace této periferie je téměř stejný jako u blikání diodou. Rozdíl je v nižší vrstvě, která není implementována jako obecný kód, ale každý mikrokontrolér má svojí vlastní implementaci.
+Z toho důvodu musíme v konfiguraci (zavolané přes make menuconfig či make qconfig) povolit periferii na dvou místech. Jednou v Systems Type → STM32L4 Peripheral Support, kde povolíme volbu ADC1 ( CONFIG_STM32L4_ADC1), podruhé v Analog Device (ADC/DAC) Support ( CONFIG_ANALOG) a podvolbu Analog to Digital Conversion ( CONFIG_ADC). První volbou jsme řekli, že chceme zakompilovat nižší vrstvu ovladače pro periferii ADC1. Mohli bychom samozřejmě zvolit jinou ADC periferie, pokud bychom chtěli převod na jiném pinu. Kód pro ADC periferie je v rámci jednoho mikrokontroléru stejný, separátní zapnutí jednotlivých periferií je z důvodu podmíněného kompilování definic a struktur pro danou periferii. NuttX se tak snaží snížit velikost kódu.
+Dále chceme zakompilovat demo aplikaci, která bude hodnoty z převodníku číst a vypisovat na terminál. V Application Configuration → Examples tak povolíme ADC Example ( CONFIG_EXAMPLES_ADC), změníme Number of Samples per Group na 1 a povolíme Use software Trigger ( CONFIG_EXAMPLES_ADC_SWTRIG). Důsledky jednotlivých voleb si ukážeme za chvíli při představení kódu aplikace.
+Po nahrání nového firmware si v adresáři /dev můžeme všimnout nově zaregistrovaného ovladače adc0. Spustíme demo aplikaci adc, na terminálu bychom měli vidět data, která nám jdou z převodníku.
+Sample: 1: channel: 1 value: 541 Sample: 1: channel: 1 value: 621 Sample: 1: channel: 1 value: 636 Sample: 1: channel: 1 value: 588 Sample: 1: channel: 1 value: 577
+Náš ADC převodník převádí data z pinu PC0 (kvůli mapování v BSP, na které se za chvíli podíváme), což je na NUCLEO-L476RG desce analogový vstup A5. Můžeme zkusit propojit drátkem A5 a GND, měli bychom vidět hodnoty 0.
+Sample: 1: channel: 1 value: 0 Sample: 1: channel: 1 value: 0 Sample: 1: channel: 1 value: 0 Sample: 1: channel: 1 value: 0
+Pokud propojíme pin A5 a 3.3 V, uvidíme naopak hodnoty až 4095 (převodník má rozlišení 12 bitů, jde tedy o maximální hodnotu, kterou může vracet).
+1: channel: 1 value: 4091 Sample: 1: channel: 1 value: 4090 Sample: 1: channel: 1 value: 4090 Sample: 1: channel: 1 value: 4091
+Pojďme se podívat, jak je aplikace vlastně napsaná. Zdrojový kód najdeme v souboru examples/adc/adc_main.c. Kromě volání funkce open na ovladač /dev/adc0 zde máme volání ioctl spouštějící převod analogových dat na digitální a následně jejich čtení přes funkci  read.
+struct adc_msg_s sample[CONFIG_EXAMPLES_ADC_GROUPSIZE];
+#ifdef CONFIG_EXAMPLES_ADC_SWTRIG
+/* Issue the software trigger to start ADC conversion */
+ret = ioctl(fd, ANIOC_TRIGGER, 0);
+if (ret < 0)
+  {
+    int errcode = errno;
+    printf("adc_main: ANIOC_TRIGGER ioctl failed: %d\n", errcode);
+  }
+#endif
+/* Read up to CONFIG_EXAMPLES_ADC_GROUPSIZE samples */
+readsize = CONFIG_EXAMPLES_ADC_GROUPSIZE * sizeof(struct adc_msg_s);
+nbytes = read(fd, sample, readsize);
+Všimněme si, že ioctl se volá pouze v případě povoleného CONFIG_EXAMPLES_ADC_SWTRIG (což jsme udělali). Další možností by bylo nespouštět konverzi softwarově, ale použít například výstup z timer periferie či PWM signál. Aplikace by pak volala pouze read a o spouštění konverze by se starala sama periferie. Pro tyto způsoby zatím v NuttXu neexistuje standardní cesta, nýbrž jde o implementaci závislou na mikrokontroléru. Často se spouští povolením příslušných voleb v konfiguraci. Ve struktuře adc_msg_s dostaneme číslo kanálu a raw hodnotu z převodníku, kterou aplikace vypíše.
+printf("%d: channel: %d value: %" PRId32 "\n",
+     i + 1, sample[i].am_channel, sample[i].am_data);
+Definici této struktury najdeme v souboru include/nuttx/analog/adc.h, API dokumentace je dostupná na stránkách NuttXu.
+begin_packed_struct struct adc_msg_s
+{
+  uint8_t      am_channel;               /* The 8-bit ADC Channel */
+  int32_t      am_data;                  /* ADC convert result (4 bytes) */
+} end_packed_struct;
+drivers
+Nyní se podíváme, jak je ADC periferie implementována v drivers  sekci. Jedná se o vyšší, obecnou, vrstvu ovladače. Zdrojový kód najdeme v souboru drivers/analog/adc.c. Vyšší vrstva se v tomto případě nepoužívá jen pro předávání ioctl volání do vrstvy nižší, jako tomu bylo v minulém článku představeném ovladači LED, ale implementuje i další funkce. Hlavní z nich je ukládání přečtených dat do bufferu (jde o cyklickou frontu), aplikace tedy při volání funkce read nečte data z registrů mikrokontroléru, ale přistupuje pouze k softwarové frontě ve vyšší vrstvě ovladače. To je užitečná vlastnost, pokud nespouštíme konverzi převodníku ručně, ale například pomocí PWM signálu. Naše volání read v aplikaci totiž bude blokující (pokud tak otevřeme registrovaný ovladač) a k navrácení hodnot dojde až po skončení konverze dat a jejich překopírování do softwarové fronty. Z aplikace můžeme také chtít s frontou manipulovat pomocí ioctl volání, ANIOC_RESET_FIFO nám frontu uvolní, ANIOC_SAMPLES_ON_READ řekne, kolik položek ve frontě zbývá. Nic nám také nebrání otevřít ovladač v neblokujícím režimu a čekat na data s použitím funkcí poll nebo  epoll.
+Poznámka: při práci s ADC periferií je potřeba dát pozor na jednu věc: fronta je jedna pro daný ovladač znakových zařízení (character device), jeho otevření z více aplikací tak povede ke kolizím, kdy si aplikace budou navzájem krást data. Častý model v NuttXu je jedna centrální aplikace, která čte hodnoty z převodníku a distribuuje je do dalších procesů.
+Z kódu níže vidíme, že dvě již zmíněné ioctl se řeší přímo ve vyšší vrstvě ovladače a zbylé nedefinované volání se přeposílají do nižší vrstvy. Jde například o nám již známe ANIOC_TRIGGER či jakékoliv další volání. To otevírá vrátka pro volání specifická pro daný mikrokontrolér či převodník, ačkoliv tento přístup není preferován z důvodu snížení kompatibility aplikací mezi různými deskami.
+static int adc_ioctl(FAR struct file *filep, int cmd, unsigned long arg)
+{
+  FAR struct inode *inode = filep->f_inode;
+  FAR struct adc_dev_s *dev = inode->i_private;
+  int ret;
+  switch (cmd)
+    {
+      case ANIOC_RESET_FIFO:
+        {
+          ret = adc_reset_fifo(dev);
+        }
+        break;
+      case ANIOC_SAMPLES_ON_READ:
+        {
+          ret = adc_samples_on_read(dev);
+        }
+        break;
+      default:
+        {
+          /* Those IOCTLs might be used in arch specific section */
+          ret = dev->ad_ops->ao_ioctl(dev, cmd, arg);
+        }
+        break;
+    }
+  return ret;
+}
+arch
+Jako další se podíváme na implementaci nižší vrstvy ovladače. Pro NUCLEO-L476RG desku najdeme zdrojový kód v souboru arch/arm/src/stm32l4/stm32l4_adc.c. Hned na začátku souboru můžeme najdeme definici adc_ops_s, což jsou ukazatele na funkce, které volá vyšší vrstva.
+static const struct adc_ops_s g_adcops =
+{
+  .ao_bind        = adc_bind,
+  .ao_reset       = adc_reset,
+  .ao_setup       = adc_setup,
+  .ao_shutdown    = adc_shutdown,
+  .ao_rxint       = adc_rxint,
+  .ao_ioctl       = adc_ioctl,
+};
+Stejně tak má nižší vrstva zaregistrovaná volání do vrstvy vyšší. To zajišťuje funkce adc_bind definovaná ve vyšší vrstvě.
+static int adc_bind(struct adc_dev_s *dev,
+                    const struct adc_callback_s *callback)
+{
+#ifndef CONFIG_STM32L4_ADC_NOIRQ
+  struct stm32_dev_s *priv = (struct stm32_dev_s *)dev->ad_priv;
+  DEBUGASSERT(priv != NULL);
+  priv->cb = callback;
+#endif
+  return OK;
+}
+Mezi jedno takové volání patří předání přečtených hodnot do softwarové fronty vyšší vrstvy ( au_receive). Příklad takového zpětného volání najdeme v nižší vrstvě ovladače ve funkci adc_interrupt, kde po přijetí přerušení indikujícího konec konverze dojde k přečtení hodnoty a jejímu předání.
+/* EOC: End of conversion */
+if ((adcisr & ADC_INT_EOC) != 0)
+  {
+    /* Read the converted value and clear EOC bit
+     * (It is cleared by reading the ADC_DR)
+     */
+    value  = adc_getreg(priv, STM32L4_ADC_DR_OFFSET);
+    value &= ADC_DR_MASK;
+    /* Verify that the upper-half driver has bound its callback functions */
+    if (priv->cb != NULL)
+    {
+      /* Give the ADC data to the ADC driver.  The ADC receive() method
+       * accepts 3 parameters:
+       *
+       * 1) The first is the ADC device instance for this ADC block.
+       * 2) The second is the channel number for the data, and
+       * 3) The third is the converted data for the channel.
+       */
+      DEBUGASSERT(priv->cb->au_receive != NULL);
+      priv->cb->au_receive(dev, priv->r_chanlist[priv->current], value);
+    }
+    /* Set the channel number of the next channel that will complete
+     * conversion
+     */
+    priv->current++;
+    if (priv->current >= priv->rnchannels)
+    {
+      /* Restart the conversion sequence from the beginning */
+      priv->current = 0;
+    }
+  }
+boards
+Poslední na představení nám zbývá neméně důležitá část ovladače v sekci boards. Ta kromě volání inicializačních funkcí nižší a vyšší vrstvy ovladače i rozhoduje o přiřazení pinů ke kanálům převodníku. U většiny mikrokontrolérů totiž umí A/D převodník provádět konverzi z množství analogových vstupů (často třeba i z 12). To je mimochodem i důvod, proč v ADC struktuře čtené v aplikace máme uvedené, k jakému kanálu data patří. Zdrojový kód najdeme v souboru  boards/arm/stm32l4/nucleo-l476rg/src/stm32_adc.c.
+struct adc_dev_s *adc;
+for (i = 0; i < ADC1_NCHANNELS; i++)
+  {
+    stm32l4_configgpio(g_adc1_pinlist[i]);
+  }
+adc = stm32l4_adc_initialize(1, g_adc1_chanlist, ADC1_NCHANNELS);
+if (adc == NULL)
+  {
+    aerr("ERROR: Failed to get ADC interface\n");
+    return -ENODEV;
+  }
+ret = adc_register("/dev/adc0", adc);
+if (ret < 0)
+  {
+    aerr("ERROR: adc_register failed: %d\n", ret);
+    return re...
+(Pokracovani na webu)

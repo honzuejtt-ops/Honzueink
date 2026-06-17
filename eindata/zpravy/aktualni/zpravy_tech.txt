@@ -1,4 +1,298 @@
-|T|Stále platí, že GTA 6 vyjde 19. listopadu. Potvrdil to šéf vydavatelství v rozhovoru na chodníku|D|17.6. 17:45|P||X|
+|T|Operační systém NuttX: programování periferií|D|17.6. 22:00|P|V dalším článku ze světa operačního systému NuttX se podíváme na programování periferií jako jsou analogově-digitální převodník (ADC), pulzně šířková ...|X|Minulý článek představil základní principy real-time operačního systému NuttX zaměřeného na vestavné systémy. Podívali jsme se na základní organizaci ovladačů dělených na společnou vyšší vrstvy a pro mikrokontrolér specifickou nižší vrstvu.
+Co se dozvíte v článku
+Analogově-digitální převodník (ADC)
+Princip konfigurace této periferie je téměř stejný jako u blikání diodou. Rozdíl je v nižší vrstvě, která není implementována jako obecný kód, ale každý mikrokontrolér má svojí vlastní implementaci.
+Z toho důvodu musíme v konfiguraci (zavolané přes make menuconfig či make qconfig) povolit periferii na dvou místech. Jednou v Systems Type → STM32L4 Peripheral Support, kde povolíme volbu ADC1 ( CONFIG_STM32L4_ADC1), podruhé v Analog Device (ADC/DAC) Support ( CONFIG_ANALOG) a podvolbu Analog to Digital Conversion ( CONFIG_ADC). První volbou jsme řekli, že chceme zakompilovat nižší vrstvu ovladače pro periferii ADC1. Mohli bychom samozřejmě zvolit jinou ADC periferie, pokud bychom chtěli převod na jiném pinu. Kód pro ADC periferie je v rámci jednoho mikrokontroléru stejný, separátní zapnutí jednotlivých periferií je z důvodu podmíněného kompilování definic a struktur pro danou periferii. NuttX se tak snaží snížit velikost kódu.
+Dále chceme zakompilovat demo aplikaci, která bude hodnoty z převodníku číst a vypisovat na terminál. V Application Configuration → Examples tak povolíme ADC Example ( CONFIG_EXAMPLES_ADC), změníme Number of Samples per Group na 1 a povolíme Use software Trigger ( CONFIG_EXAMPLES_ADC_SWTRIG). Důsledky jednotlivých voleb si ukážeme za chvíli při představení kódu aplikace.
+Po nahrání nového firmware si v adresáři /dev můžeme všimnout nově zaregistrovaného ovladače adc0. Spustíme demo aplikaci adc, na terminálu bychom měli vidět data, která nám jdou z převodníku.
+Sample: 1: channel: 1 value: 541 Sample: 1: channel: 1 value: 621 Sample: 1: channel: 1 value: 636 Sample: 1: channel: 1 value: 588 Sample: 1: channel: 1 value: 577
+Náš ADC převodník převádí data z pinu PC0 (kvůli mapování v BSP, na které se za chvíli podíváme), což je na NUCLEO-L476RG desce analogový vstup A5. Můžeme zkusit propojit drátkem A5 a GND, měli bychom vidět hodnoty 0.
+Sample: 1: channel: 1 value: 0 Sample: 1: channel: 1 value: 0 Sample: 1: channel: 1 value: 0 Sample: 1: channel: 1 value: 0
+Pokud propojíme pin A5 a 3.3 V, uvidíme naopak hodnoty až 4095 (převodník má rozlišení 12 bitů, jde tedy o maximální hodnotu, kterou může vracet).
+1: channel: 1 value: 4091 Sample: 1: channel: 1 value: 4090 Sample: 1: channel: 1 value: 4090 Sample: 1: channel: 1 value: 4091
+Pojďme se podívat, jak je aplikace vlastně napsaná. Zdrojový kód najdeme v souboru examples/adc/adc_main.c. Kromě volání funkce open na ovladač /dev/adc0 zde máme volání ioctl spouštějící převod analogových dat na digitální a následně jejich čtení přes funkci  read.
+struct adc_msg_s sample[CONFIG_EXAMPLES_ADC_GROUPSIZE];
+#ifdef CONFIG_EXAMPLES_ADC_SWTRIG
+/* Issue the software trigger to start ADC conversion */
+ret = ioctl(fd, ANIOC_TRIGGER, 0);
+if (ret < 0)
+  {
+    int errcode = errno;
+    printf("adc_main: ANIOC_TRIGGER ioctl failed: %d\n", errcode);
+  }
+#endif
+/* Read up to CONFIG_EXAMPLES_ADC_GROUPSIZE samples */
+readsize = CONFIG_EXAMPLES_ADC_GROUPSIZE * sizeof(struct adc_msg_s);
+nbytes = read(fd, sample, readsize);
+Všimněme si, že ioctl se volá pouze v případě povoleného CONFIG_EXAMPLES_ADC_SWTRIG (což jsme udělali). Další možností by bylo nespouštět konverzi softwarově, ale použít například výstup z timer periferie či PWM signál. Aplikace by pak volala pouze read a o spouštění konverze by se starala sama periferie. Pro tyto způsoby zatím v NuttXu neexistuje standardní cesta, nýbrž jde o implementaci závislou na mikrokontroléru. Často se spouští povolením příslušných voleb v konfiguraci. Ve struktuře adc_msg_s dostaneme číslo kanálu a raw hodnotu z převodníku, kterou aplikace vypíše.
+printf("%d: channel: %d value: %" PRId32 "\n",
+     i + 1, sample[i].am_channel, sample[i].am_data);
+Definici této struktury najdeme v souboru include/nuttx/analog/adc.h, API dokumentace je dostupná na stránkách NuttXu.
+begin_packed_struct struct adc_msg_s
+{
+  uint8_t      am_channel;               /* The 8-bit ADC Channel */
+  int32_t      am_data;                  /* ADC convert result (4 bytes) */
+} end_packed_struct;
+drivers
+Nyní se podíváme, jak je ADC periferie implementována v drivers  sekci. Jedná se o vyšší, obecnou, vrstvu ovladače. Zdrojový kód najdeme v souboru drivers/analog/adc.c. Vyšší vrstva se v tomto případě nepoužívá jen pro předávání ioctl volání do vrstvy nižší, jako tomu bylo v minulém článku představeném ovladači LED, ale implementuje i další funkce. Hlavní z nich je ukládání přečtených dat do bufferu (jde o cyklickou frontu), aplikace tedy při volání funkce read nečte data z registrů mikrokontroléru, ale přistupuje pouze k softwarové frontě ve vyšší vrstvě ovladače. To je užitečná vlastnost, pokud nespouštíme konverzi převodníku ručně, ale například pomocí PWM signálu. Naše volání read v aplikaci totiž bude blokující (pokud tak otevřeme registrovaný ovladač) a k navrácení hodnot dojde až po skončení konverze dat a jejich překopírování do softwarové fronty. Z aplikace můžeme také chtít s frontou manipulovat pomocí ioctl volání, ANIOC_RESET_FIFO nám frontu uvolní, ANIOC_SAMPLES_ON_READ řekne, kolik položek ve frontě zbývá. Nic nám také nebrání otevřít ovladač v neblokujícím režimu a čekat na data s použitím funkcí poll nebo  epoll.
+Poznámka: při práci s ADC periferií je potřeba dát pozor na jednu věc: fronta je jedna pro daný ovladač znakových zařízení (character device), jeho otevření z více aplikací tak povede ke kolizím, kdy si aplikace budou navzájem krást data. Častý model v NuttXu je jedna centrální aplikace, která čte hodnoty z převodníku a distribuuje je do dalších procesů.
+Z kódu níže vidíme, že dvě již zmíněné ioctl se řeší přímo ve vyšší vrstvě ovladače a zbylé nedefinované volání se přeposílají do nižší vrstvy. Jde například o nám již známe ANIOC_TRIGGER či jakékoliv další volání. To otevírá vrátka pro volání specifická pro daný mikrokontrolér či převodník, ačkoliv tento přístup není preferován z důvodu snížení kompatibility aplikací mezi různými deskami.
+static int adc_ioctl(FAR struct file *filep, int cmd, unsigned long arg)
+{
+  FAR struct inode *inode = filep->f_inode;
+  FAR struct adc_dev_s *dev = inode->i_private;
+  int ret;
+  switch (cmd)
+    {
+      case ANIOC_RESET_FIFO:
+        {
+          ret = adc_reset_fifo(dev);
+        }
+        break;
+      case ANIOC_SAMPLES_ON_READ:
+        {
+          ret = adc_samples_on_read(dev);
+        }
+        break;
+      default:
+        {
+          /* Those IOCTLs might be used in arch specific section */
+          ret = dev->ad_ops->ao_ioctl(dev, cmd, arg);
+        }
+        break;
+    }
+  return ret;
+}
+arch
+Jako další se podíváme na implementaci nižší vrstvy ovladače. Pro NUCLEO-L476RG desku najdeme zdrojový kód v souboru arch/arm/src/stm32l4/stm32l4_adc.c. Hned na začátku souboru můžeme najdeme definici adc_ops_s, což jsou ukazatele na funkce, které volá vyšší vrstva.
+static const struct adc_ops_s g_adcops =
+{
+  .ao_bind        = adc_bind,
+  .ao_reset       = adc_reset,
+  .ao_setup       = adc_setup,
+  .ao_shutdown    = adc_shutdown,
+  .ao_rxint       = adc_rxint,
+  .ao_ioctl       = adc_ioctl,
+};
+Stejně tak má nižší vrstva zaregistrovaná volání do vrstvy vyšší. To zajišťuje funkce adc_bind definovaná ve vyšší vrstvě.
+static int adc_bind(struct adc_dev_s *dev,
+                    const struct adc_callback_s *callback)
+{
+#ifndef CONFIG_STM32L4_ADC_NOIRQ
+  struct stm32_dev_s *priv = (struct stm32_dev_s *)dev->ad_priv;
+  DEBUGASSERT(priv != NULL);
+  priv->cb = callback;
+#endif
+  return OK;
+}
+Mezi jedno takové volání patří předání přečtených hodnot do softwarové fronty vyšší vrstvy ( au_receive). Příklad takového zpětného volání najdeme v nižší vrstvě ovladače ve funkci adc_interrupt, kde po přijetí přerušení indikujícího konec konverze dojde k přečtení hodnoty a jejímu předání.
+/* EOC: End of conversion */
+if ((adcisr & ADC_INT_EOC) != 0)
+  {
+    /* Read the converted value and clear EOC bit
+     * (It is cleared by reading the ADC_DR)
+     */
+    value  = adc_getreg(priv, STM32L4_ADC_DR_OFFSET);
+    value &= ADC_DR_MASK;
+    /* Verify that the upper-half driver has bound its callback functions */
+    if (priv->cb != NULL)
+    {
+      /* Give the ADC data to the ADC driver.  The ADC receive() method
+       * accepts 3 parameters:
+       *
+       * 1) The first is the ADC device instance for this ADC block.
+       * 2) The second is the channel number for the data, and
+       * 3) The third is the converted data for the channel.
+       */
+      DEBUGASSERT(priv->cb->au_receive != NULL);
+      priv->cb->au_receive(dev, priv->r_chanlist[priv->current], value);
+    }
+    /* Set the channel number of the next channel that will complete
+     * conversion
+     */
+    priv->current++;
+    if (priv->current >= priv->rnchannels)
+    {
+      /* Restart the conversion sequence from the beginning */
+      priv->current = 0;
+    }
+  }
+boards
+Poslední na představení nám zbývá neméně důležitá část ovladače v sekci boards. Ta kromě volání inicializačních funkcí nižší a vyšší vrstvy ovladače i rozhoduje o přiřazení pinů ke kanálům převodníku. U většiny mikrokontrolérů totiž umí A/D převodník provádět konverzi z množství analogových vstupů (často třeba i z 12). To je mimochodem i důvod, proč v ADC struktuře čtené v aplikace máme uvedené, k jakému kanálu data patří. Zdrojový kód najdeme v souboru  boards/arm/stm32l4/nucleo-l476rg/src/stm32_adc.c.
+struct adc_dev_s *adc;
+for (i = 0; i < ADC1_NCHANNELS; i++)
+  {
+    stm32l4_configgpio(g_adc1_pinlist[i]);
+  }
+adc = stm32l4_adc_initialize(1, g_adc1_chanlist, ADC1_NCHANNELS);
+if (adc == NULL)
+  {
+    aerr("ERROR: Failed to get ADC interface\n");
+    return -ENODEV;
+  }
+ret = adc_register("/dev/adc0", adc);
+if (ret < 0)
+  {
+    aerr("ERROR: adc_register failed: %d\n", ret);
+    return re...
+(Pokracovani na webu)|E||T|Čip POKEY v osmibitových Atari: možnosti generování zvuků|D|17.6. 22:00|P|Ukážeme si některé možnosti, které integrovaný obvod POKEY nabízí pro generování zvuků: změnu vstupní frekvence zvukových kanálů, kanály se šestnáctib...|X|Na úvodní článek o čipu POKEY dnes navážeme. Ukážeme si totiž některé možnosti, které integrovaný obvod POKEY nabízí pro generování zvuků. Připomeňme si, že POKEY obsahuje čtyři zvukové kanály, z nichž každý dokáže dělit zvolenou vstupní frekvenci zadanou osmibitovou konstantou a vytvářet tak zvuky o potřebné frekvenci (jedná se přitom o čistý obdélníkový signál). Dále je možné tento obdélníkový signál zkombinovat s výstupem z takzvaných poly čítačů (resp. posuvných registrů se zpětnou vazbou), které dokážou generovat pseudonáhodný signál s určitou periodou odvozenou od šířky posuvného registru.
+Co se dozvíte v článku
+- My God, it's full of squares
+- Modifikace vstupní frekvence pro všechny čtyři zvukové kanály
+- Demonstrační příklad: změna vstupní frekvence z 64 kHz na 15 kHz
+- Nejnižší tón, který lze získat ze zvukového kanálu s osmibitovým děličem
+- Demonstrační příklad: přehrání nejnižšího tónu osmibitovým zvukovým kanálem
+- Zázněje získané ze dvou zvukových kanálů s podobnou výstupní frekvencí
+- Demonstrační příklad: praktické přehrání dvou tónů vytvářejících zázněje
+- Zázněje získané ze čtyř zvukových kanálů s podobnou výstupní frekvencí
+- Demonstrační příklad: praktické přehrání čtyř tónů vytvářejících zázněje
+- Různé varianty zapojení poly čítačů a jejich vliv na výsledný zvuk
+- Demonstrační příklad: přepínání mezi všemi variantami zapojení poly čítačů
+- Jeden z limitů osmibitových zvukových kanálů
+- Demonstrační příklad: ovládání frekvence joystickem a zjištění limitů osmibitových zvukových kanálů
+- Spojení dvou kanálů do jednoho kanálu se šestnáctibitovou děličkou, využití vstupní frekvence CPU
+- Demonstrační příklad: ovládání frekvence 16bitového kanálu joystickem
+- Sampling
+- Příloha: Makefile pro překlad všech demonstračních příkladů
+- Repositář s demonstračními příklady
+- Odkazy na Internetu
+Nakonec čip POKEY umožňuje kombinaci zvukových kanálů dvěma způsoby: buď se dva osmibitové děličky spojí do děličky šestnáctibitové nebo je jeden kanál použit jako (velmi primitivní) horní propust pro kanál druhý. Nezávisle na tom, jak se kanály vzájemně ovlivňují je jejich výstup (obdélníkový signál o určité amplitudě) „sečten“ a poslán na jediný výstupní pin AUD (Audio Output).
+My God, it's full of squares
+Čip POKEY generuje všechny zvuky jen s využitím obdélníkových (pravidelných nebo pseudonáhodných) signálů, které jsou nakonec sečteny a vyvedeny na jediný (analogový) pin. Jinými slovy nepodporuje žádné generátory obálky, takže se v tomto ohledu odlišuje například od AY-3–8910 nebo SIDa (Commodore C64). A liší se i audio výstupem vyvedeným na jediný analogový pin, takže POKEY nelze (samostatně) použít pro stereo výstup. Na druhou stranu však existovala rozšíření Atari o druhý čip POKEY.
+Pro zajímavost budou v dnešním článku vizualizovány průběhy audio signálů získaných z emulátoru (!), takže výsledek nemusí odpovídat chování reálného čipu POKEY (sice jsou zvýrazněny překmity, ovšem obdélníkový signál je poté ustálený, což u reálného POKEY nenastává). Pro vizualizaci je použitý následující (relativně) triviální skript napsaný v Pythonu:
+import matplotlib.pyplot as plt
+import numpy as np
+import wave
+import sys
+ 
+ 
+spf = wave.open("atari000.wav", "r")
+ 
+signal = spf.readframes(-1)
+signal = np.frombuffer(signal, np.int16)
+ 
+# jen monofonní záznam (což u Atari platí)
+if spf.getnchannels() == 2:
+    print("Just mono files")
+    sys.exit(0)
+ 
+plt.figure(1)
+ 
+# zde lze realizovat výběr části signálu (okno)
+plt.plot(signal[od:do])
+plt.show()
+plt.savefig("01.png")
+Vizualizované výsledky pro oba demonstrační příklady z předchozího článku vypadají takto:
+Modifikace vstupní frekvence pro všechny čtyři zvukové kanály
+Připomeňme si, že každý zvukový kanál se ovládá přes dvojici hardwarových řídicích registrů AUDCx a AUDFx, kde x=1..4. Ovšem navíc existuje i jeden „globální“ řídicí registr nazvaný AUDCTL, ve kterém se nultým bitem přepíná vstupní frekvence pro všechny zvukové kanály z přibližně 64 kHz (výchozí hodnota) na 15 kHz (předpokládejme nyní, že ostatní bity jsou nulové, což je ostatně výchozí stav):
+Skutečně používané frekvence ovšem nejsou přesně rovny 64 kHz a 15 kHz, protože příslušné signály jsou získány z hodinových cyklů mikroprocesoru dělením konstantami 114 a 28 (což souvisí se zobrazením řádků na TV atd.). Přesné hodnoty pro počítač určený pro normu PAL jsou:
+f15kHz = 1773,447 / 114 = 15,556 kHz f64kHz = 1773,447 / 28 = 63,337 kHz
+Hodnoty bitů 5 a 6 mají praktický význam pouze v případě, že je dvojice kanálů spojena do jednoho 16bitového kanálu. To si pochopitelně taktéž ukážeme.
+Demonstrační příklad: změna vstupní frekvence z 64 kHz na 15 kHz
+V dnešním prvním demonstračním příkladu se nejdříve přehraje komorní A, tedy tón o frekvenci 440 Hz (v podání POKEY ovšem jen přibližně). Následně se po stisku klávesy sníží vstupní frekvence z 64 kHz na 15 kHz, čímž pochopitelně dojde i ke snížení přehrávaného tónu na přibližně 109 Hz:
+; ---------------------------------------------------------------------
+; Generování zvuků čipem POKEY.
+;
+; Přehrání tónu komorního A (440 Hz) zvukovým kanálem číslo 1.
+; Změna vstupní frekvence z 64 kHz na 15 kHz.
+; ---------------------------------------------------------------------
+ 
+.include "atari.inc"
+ 
+.CODE
+ 
+PURE_TONE_MASK   = %10100000
+INPUT_FREQ_15KHZ = %00000001
+ 
+.proc main
+        jsr get_key             ; čekání na stisk klávesy
+ 
+        lda #PURE_TONE_MASK+10  ; hlasitost (0-15)
+        sta AUDC1               ; zápis do registru řízení hlasitosti pro zvukový kanál číslo 1 čipu POKEY
+ 
+        lda #71                 ; dělič základní frekvence
+        sta AUDF1               ; zápis do registru děliče frekvence pro zvukový kanál číslo 1 čipu POKEY
+ 
+        lda #00                 ; základní tón odvozený od 64kHz
+        sta AUDCTL              ; zápis do řídicího registru čipu POKEY
+ 
+        jsr get_key             ; čekání na stisk klávesy
+ 
+        lda #INPUT_FREQ_15KHZ   ; základní tón odvozený od 15kHz
+        sta AUDCTL              ; zápis do řídicího registru čipu POKEY
+ 
+        jsr get_key             ; čekání na stisk klávesy
+ 
+        lda #0                  ; vypnutí zvuku (nulová hlasitost)
+        sta AUDC1               ; zápis do registru řízení hlasitosti pro zvukový kanál číslo 1 čipu POKEY
+ 
+loop:   jmp loop
+.endproc
+ 
+ 
+ 
+; ---------------------------------------------------------------------
+; čekání na stisk klávesy
+; ---------------------------------------------------------------------
+.proc get_key
+        KBHANDLER = $e424       ; rutina pro cteni klavesy
+        lda KBHANDLER+1         ; cteni horni casti adresy ulozene v ROM
+        pha                     ; ulozeni na zasobnik
+        lda KBHANDLER           ; cteni dolni casti adresy ulozene v ROM
+        pha                     ; ulozeni na zasobnik
+        rts                     ; vyber adresy ze zasobniku + skok
+                                ; zde neni nutne mit RTS
+.endproc
+ 
+ 
+end:
+ 
+.segment "EXEHDR"
+.word   $ffff                   ; uvodni sekvence bajtu v souboru XEX
+.word   main                    ; zacatek kodoveho segmentu
+.word   end - 1                 ; konec kodoveho segmentu
+ 
+ 
+.segment "AUTOSTRT"             ; segment s pocatecni adresou
+.word   RUNAD                   ; naplni se pouze adresy RUNAD a RUNAD+1
+.word   RUNAD+1
+.word   main                    ; adresa vstupniho bodu do programu
+ 
+; finito
+Nejnižší tón, který lze získat ze zvukového kanálu s osmibitovým děličem
+Osmibitové zvukové kanály mají jednu velkou výhodu – jsou čtyři, což umožňuje snadnou implementaci polyfonie (v trackerech se bude jednat o skladby se čtyřmi stopami). Ovšem pouze osmibitová dělička znamená, že u vysokých frekvencí je možné jen velmi hrubý výběr frekvence (rozdíl mezi dělením jedničkou a dvojkou je či může být příliš velký) a taktéž nejnižší tón může být pro některé účely příliš vysoký. Ostatně si to můžeme vypočítat, a to v situaci, kdy nastavíme nejnižší možnou vstupní frekvenci na vstupu do zvukového kanálu.
+Připomeňme si, že základem pro výpočty je frekvence CPU, který má ve variantě pro PAL frekvenci:
+fclk = 1,7734470 Mhz = 1773447 Hz
+Nulový bit registru AUDCTL nastavíme na jedničku, takže frekvence na vstupu zvukových kanálů bude vypočtena vydělením frekvence CPU konstantou 114 (a nikoli pouze 28). Číselně:
+fin = fclk / 114 = 1773447 / 114 = 15556 Hz
+Dále nastavíme pátý a sedmý bit registru AUDC1 na jedničku a šestý bit na nulu. To znamená, že se bude přehrávat čistý obdélníkový tón a navíc se vstupní frekvence v tomto případě dále dělí dvěma:
+fin2 = fin / 2 = 15556 / 2 = 7778 Hz
+Dělitel zapisovaný do registru AUDF1 nastavíme na nejvyšší možnou hodnotu 255, takže skutečná frekvence, která bude slyšet z reproduktoru, bude rovna:
+fout = fin2 / (255+1) = 7778 / 256 = 30,38 Hz
+Přepis předchozího postupu do formy programu je snadný:
+INPUT_FREQ_15KHZ = %00000001 lda #INPUT_FREQ_15KHZ ; základní tón odvozený od 15kHz sta AUDCTL ; zápis do řídicího registru čipu POKEY lda #255 ; dělič základní frekvence sta AUDF1 ; zápis do registru děliče frekvence pro zvukový kanál číslo 1 čipu POKEY
+Demonstrační příklad: přehrání nejnižšího tónu osmibitovým zvukovým kanálem
+Po překladu a spuštění následujícího demonstračního příkladu se nejdříve přehraje tón o nejnižší frekvenci získaný ze vstupní frekvence 64 kHz a následně (po stisku klávesy) se přepne vstupní frekvence na 15 kHz, takže se přehraje tón o frekvenci přibližně 30 Hz:
+; ---------------------------------------------------------------------
+; Generování zvuků čipem POKEY.
+;
+; Změna vstupní frekvence z 64 kHz na 15 kHz.
+; Nastavení děličky na nejvyšší možnou hodnotu 255.
+; ---------------------------------------------------------------------
+ 
+.include "atari.inc"
+ 
+.CODE
+ 
+PURE_TONE_MASK   = %10100000
+INPUT_FREQ_15KHZ = %00000001
+ 
+.proc main
+        jsr get_key             ; čekání na stisk klávesy
+ 
+        lda #PURE_TONE_MASK+10  ; hlasitost (0-15)
+        sta AUDC1               ; zápis do registru řízení hlasitosti pro zvuk...
+(Pokracovani na webu)|E||T|Stále platí, že GTA 6 vyjde 19. listopadu. Potvrdil to šéf vydavatelství v rozhovoru na chodníku|D|17.6. 17:45|P||X|
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Poskládali jsme univerzální počítač do domácnosti. Za 23 tisíc zvládne práci, školu i hraní|D|17.6. 16:45|P|Jak v rozumné cenové hladině vybrat počítač, který univerzálně poslouží v domácnosti? Děti si na něm zahrají i vypracují úkoly, rodičům zase poslouží ...|X|Jak v rozumné cenové hladině vybrat počítač, který univerzálně poslouží v domácnosti? Děti si na něm zahrají i vypracují úkoly, rodičům zase poslouží pro občasnou práci z domu.
 

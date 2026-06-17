@@ -199,6 +199,18 @@ Výhodou nové funkce je, že je přímo v prohlížeči a zadarmo. Abyste si ji
 		v horní liště rozkliknout Nástroje a následně vybrat Simulátor letu. 
 Ovládání je možné buď myší, dotykem na zařízeních s dotykovou obrazovkou nebo šipkami. V kombinaci se šipkami můžete používat i klávesy Page Up a Page Down pro změnu rychlosti letu. Při letu se dynamicky načítají 3D budovy a satelitní snímky ve vysokém rozlišení, takže výsledný zážitek závisí hlavně na rychlosti vašeho internetového připojení.
 zdroj: Google|E|
+|T|Microsoft Flight Simulator má novou konkurenci. od Googlu? Spustíte ji v Google Earth, zdarma a přímo v prohlížeči|D|16.6. 07:30|P|Google Earth přidal skrytou funkci, která promění váš prohlížeč v jednoduchý letecký simulátor a umožní vám zdarma proletět se nad libovolným místem n...|X|Prohlédnout si téměř jakýkoliv kout naší zeměkoule v detailním rozlišení a pěkně z pohodlí domova není žádnou novinkou. Google ale nyní do Google Earth přidává ještě zajímavější možnost. Experimentální letecký simulátor, díky kterému se můžete zdarma proletět nad jakoukoliv částí světa přímo z webového prohlížeče. Bez instalace a nutnosti cokoliv stahovat.
+Nejedná se samozřejmě o plného konkurenta pro násobně propracovanější hry typu Microsoft Flight Simulator nebo X-Plane, nýbrž o velmi základní zábavnou utilitu pro zábavné objevování plateny z ptačí perspektivy. Google dokonce sám uvádí, že letecký simulátor Google Earth je „navržen spíše pro příležitostné prozkoumávání než pro vysoce věrný aerodynamický trénink.“
+Jak letecký simulátor v Google Earth zapnout?
+Výhodou nové funkce je, že je přímo v prohlížeči a zadarmo. Abyste si ji vyzkoušeli, stačí:
+- 
+		jít přímo na web Google Earth, 
+- 
+		kliknout na tlačítko Prozkoumat Earth v pravém horním rohu, 
+- 
+		v horní liště rozkliknout Nástroje a následně vybrat Simulátor letu. 
+Ovládání je možné buď myší, dotykem na zařízeních s dotykovou obrazovkou nebo šipkami. V kombinaci se šipkami můžete používat i klávesy Page Up a Page Down pro změnu rychlosti letu. Při letu se dynamicky načítají 3D budovy a satelitní snímky ve vysokém rozlišení, takže výsledný zážitek závisí hlavně na rychlosti vašeho internetového připojení.
+zdroj: Google|E|
 |T|Do Česka míří další čipový investor z Tchaj-wanu. Na Ústecku postaví továrnu za miliardu|D|16.6. 06:45|P|Tchajwanský výrobce TaMiCo postaví u Žatce továrnu za 900 milionů korun a v regionu vytvoří logistické zázemí pro evropský trh • . • Ústecký kraj se d...|X|Tchajwanský výrobce TaMiCo postaví u Žatce továrnu za 900 milionů korun a v regionu vytvoří logistické zázemí pro evropský trh • . • Ústecký kraj se díky nové investici stane klíčovým dodavatelem pro německé fabriky a upevní svou roli v čipovém řetězci. • Příliv high-tech firem z Asie pokračuje ...
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|

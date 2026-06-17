@@ -1,0 +1,6 @@
+Datové schránky opět prochází proměnou. Od 26. června 2026 se přesunou ze staré adresy na datovka.gov.cz. Důvodem je větší přehlednost a přechod v rámci sjednocení státních digitálních služeb pod jednotnou doménu gov.cz, vyplývající z usnesení vlády z roku 2023.
+Stará adresa jen do srpna
+Pro uživatele se tak nic zásadního nemění. Veškeré funkce datových schránek zůstanou zachovány a vše poběží stejně jako předtím, pouze na nové doméně. Dosavadní adresa mojedatovaschranka.cz zůstane funkční do 27. srpna 2026. Po tomto datu budou uživatelé automaticky přesměrování na novou.
+Změna se dotkne e-mailové adresy, ze které jsou zasílány notifikace. Místo původní adresy notifikace@mojedatovaschranka.cz budou nově chodit zprávy z adresy notifikace@datovka.gov.cz. Pokud tak máte ve své e-mailové schránce nastavené filtry pro třídění pošty, je dobré je zavčas upravit.
+Zároveň bude nutné se znovu přihlásit, pokud máte heslo uložené v prohlížeči. Datové schránky prošly loni na podzim značným vylepšení, které zpříjemnilo jejich používání. Jednalo se tehdy o zobrazení náhledu přílohu přímo v portále, přihlášení jedním kliknutím a větší přehlednost notifikací, které uživatelům chodí do osobních e-mailů.
+zdroj: Datová schránka

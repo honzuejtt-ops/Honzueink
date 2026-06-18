@@ -302,6 +302,11 @@ INPUT_FREQ_15KHZ = %00000001
 Nechcete moc číst? Tady jsme celou sestavu naskládali do nákupního košíku na Alze. Na konci článku jsou odkazy na další ...
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Poskládali jsme univerzální počítač do domácnosti. Za 23 tisíc zvládne práci, školu i hry|D|17.6. 16:45|P|Jak v rozumné cenové hladině vybrat počítač, který univerzálně poslouží v domácnosti? Děti si na něm zahrají i vypracují úkoly, rodičům zase poslouží ...|X|Jak v rozumné cenové hladině vybrat počítač, který univerzálně poslouží v domácnosti? Děti si na něm zahrají i vypracují úkoly, rodičům zase poslouží pro občasnou práci z domu.
+
+Nechcete moc číst? Tady jsme celou sestavu naskládali do nákupního košíku na Alze. Na konci článku jsou odkazy na další ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Starší grafiky jedou dál: Radeony RX 5000 a 6000 teď mají podporu technologie Advanced Shader Delivery|D|17.6. 16:30|P|Předkompilované shadery místo dlouhého čekání na spuštění hry už teď jsou dostupné i pro Radeony RX 5000 a RX 6000 poté, co tato funkce původně byla v...|X|Před nedávnem Microsoft oznámil nové zlepšení pro herní počítače s Windows: funkci Advanced Shader Delivery, která umožňuje přeskočit zdlouhavé kompilování shaderů, které na vás ve hrách vyskočí po každé aktualizaci ovladačů. Místo kompilace na počítači se shadery stáhnou z internetu. Zpočátku podpora ale měla omezení – AMD ji nabízelo jenom na novějších grafikách od Radeonů RX 7000 výš. Nakonec se ale dostane i na starší modely.
 Advanced Shader Delivery pro starší grafiky
 Microsoft teď oznámil rozšíření podpory Advanced Shader Delivery – funkce vystoupila z předchozí beta fáze a je teď dostupná všem uživatelům aplikace Xbox ve Windows 11. Doteď bylo třeba se přihlásit do insiderovského programu a nainstalovat si zkušební verzi. To už teď nebudete muset, funkce by měla být zapnutá už ve výchozí instalaci. Je třeba mít nainstalován balík Xbox Gaming Services (česky Herní Služby) ve verzi 37.113.11003.0 (Microsoft Store by ho měl nejspíš aktualizovat automaticky).

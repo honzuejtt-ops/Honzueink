@@ -1,3 +1,31 @@
+|T|Revolut spustil služby virtuálního operátora ve třetí evropské zemi. Cenově je znovu výhodnější|D|18.6. 18:45|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Teď si zahrajte v prohlížeči: Messenger na japonské planetce jako ze světa Ghibli|D|18.6. 18:15|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|29 nejlepších válečných filmů, kterým můžete věřit. Víme, jestli a kde je můžete najít online|D|18.6. 17:45|P|Vybrali jsme jedinečné filmy a jeden seriál, které se věnují válkám ve 20. století. Vybrané snímky mají společné to, že válku neoslavují nebo nevzývaj...|X|Vybrali jsme jedinečné filmy a jeden seriál, které se věnují válkám ve 20. století. Vybrané snímky mají společné to, že válku neoslavují nebo nevzývají. Naopak kriticky a bolestně obnažují její zrůdnost a nesmyslnost. Jsou to válečné filmy, kterým můžete věřit.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|New usage analytics and updated spend controls for enterprises|D|18.6. 17:00|P|OpenAI introduces new spend controls and usage analytics for ChatGPT Enterprise, helping organizations manage costs and scale AI with confidence.|X|New usage analytics and updated spend controls for enterprises
+New usage analytics and updated spend controls give ChatGPT Enterprise admins more visibility, control, and confidence in their AI deployments.
+As AI becomes part of everyday work, organizations need the ability to manage it with the same rigor they apply to any critical business investment. Companies need a clear view of usage, adoption, and spend so they can scale with confidence and understand where AI is creating value.
+Today, we’re introducing credit usage analytics and updated spend controls for ChatGPT Enterprise. These capabilities help companies track credit usage, understand adoption patterns, and make more informed decisions about how AI is deployed across their organizations. With clearer visibility and more flexible controls, organizations can proactively manage costs, give teams the access they need, and keep AI investments focused on the work that matters most.
+New credit usage analytics in the Global Admin Console
+The Global Admin Console brings ChatGPT and Codex credit usage into one view, so admins can see a more granular breakdown of credit consumption across users, products, and models—helping them understand where spend is coming from and how it maps to actual credit usage. This makes it easier to distinguish between increased usage driven by valuable work and usage patterns that may require closer review.
+Now admins can:
+- Track usage and credit trends over time
+- Identify top users and emerging credit usage patterns
+- Break down credit spend across the workspace, including by user, product, and model
+- Access the same credit usage data through the unified Cost API for deeper analysis in their own systems
+Set spend controls around the way teams work
+Earlier this year, we introduced granular credit usage limits(opens in a new window) for custom roles in ChatGPT Enterprise, helping workspace owners manage advanced model usage across different types of users without one-size-fits-all restrictions.
+Now admins can also set a default limit for their ChatGPT Enterprise workspace, configure limits for specific groups, and create individual overrides for people who need more capacity. Employees can see their credit usage against their available budget, request additional credits when needed, and include context about what they’re working on so admins can make an informed decision. This allows individual power users to keep working without interruption or the need to increase limits for everyone else.
+Together, these updated controls help companies deploy intelligence more thoughtfully at scale, while giving teams the capabilities they need to do high-impact work.
+Availability and what you can do next
+ChatGPT Enterprise admins can start using the new analytics and updated spend controls today. Users in these workspaces can also view their credit usage by going to their workspace settings.
+Learn more in the help center on usage limits(opens in a new window) and the global admin console(opens in a new window).
+Have questions about how best to implement controls for your workspace? Contact us here, or reach out directly to your OpenAI team.|E|
 |T|Jak dobře vybrat SSD. Drahé jsou zbytečné, ty nejlevnější špatné|D|18.6. 16:45|P|Vybrat správný disk SSD není příliš složité. • Na některé důležité parametry si ale musíte dát pozor. • Výrobcům se dá věřit, udávané rychlosti jsou d...|X|Vybrat správný disk SSD není příliš složité. • Na některé důležité parametry si ale musíte dát pozor. • Výrobcům se dá věřit, udávané rychlosti jsou dosažitelné.
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
@@ -82,6 +110,24 @@ Důležité je nezapomenout zrušit pravidelnou platbu v internetovém bankovnic
 |T|Vesmírem ve Škodě 1203. Česká hra Cosmo Tales dostala demo, rovnou jsme ho vyzkoušeli|D|18.6. 11:45|P||X|
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Improving health intelligence in ChatGPT|D|18.6. 11:00|P|Learn how GPT-5.5 Instant improves ChatGPT’s health and wellness responses with stronger reasoning, better context, clearer communication, and physici...|X|Improving health intelligence in ChatGPT
+GPT‑5.5 Instant brings frontier health intelligence to more people, shaped by advances in our models and physician-led evaluation.
+Health is one of the most meaningful ways people use ChatGPT. Every week, more than 230 million people turn to ChatGPT for help with health and wellness questions: making sense of health information, understanding lab results, preparing for appointments, navigating insurance, building healthier habits, and figuring out what to ask next.
+With GPT‑5.5 Instant, we’re seeing a substantial step forward in health, with improvements in recognizing when urgent care may be needed, asking for relevant context, explaining uncertainty, and making complex information easier to understand. On our most challenging health evaluations, GPT‑5.5 Instant now performs at a level comparable to our frontier Thinking models. Because it is available to all free users in ChatGPT, more people can benefit from these improvements.
+That progress reflects both advances in model capabilities and the physician-led work behind our health evaluations. Across our efforts, a global network of physicians helps define what “good” looks like in real-world health situations by reviewing example model responses, describing ideal behavior, and identifying failure modes. Working with physicians gives us a way to measure progress in health and improve how ChatGPT responds over time.
+In health, progress means delivering responses that are accurate, understandable, and grounded in good judgment: recognizing when more context is needed, explaining uncertainty without overstating confidence, and helping people understand when to seek care.
+To measure that progress, we use health-specific evaluations, including HealthBench and HealthBench Professional(opens in a new window). These evaluations use realistic health conversations and physician-written rubrics to assess qualities like accuracy, safety, communication, context awareness, completeness, and appropriate escalation.
+As another comparison, we asked physicians to write responses for representative health conversations, with unlimited time and access to the internet (but not AI). A separate panel of physicians then compared these physician responses with model responses over time, reviewing qualities that matter in real interactions, including accuracy, communication, completeness, instruction following, and health decision helpfulness, across 3,500 reviewed responses.
+Physicians rated GPT‑5.5 Instant responses as having fewer failure modes than those from older models and physicians. For example, GPT‑5.5 Instant had fewer instances of not tailoring to local healthcare context, missing red flags or referral to care, or failing to seek additional context from the user when needed than both older models and physicians.
+Given the scale of usage of our models in health, another way to understand recent model improvements is to measure production traffic. We use privacy-preserving monitors on production traffic to track possible factuality issues in health responses. Based on a comparison of recent production traffic in health—billions of messages a week—the rate of responses with at least one flagged factuality issue has fallen by 71% in the last two months.
+Comparing responses from models on real-world health questions over time shows how ChatGPT has improved in ways that matter for health: recognizing when a situation may need urgent attention, handling uncertainty with better judgment, and giving people clearer, more useful guidance about what to do next.
+GPT-5.5
+This progress is shaped by physicians who help us define, measure, and improve health responses in ChatGPT.
+OpenAI works with a global network of more than 260 physicians across 60 countries, 49 languages, and 26 medical specialties. Their feedback informs how ChatGPT responds to health questions across a wide range of scenarios, from everyday wellness questions to more complex clinical situations.
+Physicians review example model responses and assess whether they are accurate, clear, complete, appropriately cautious, and useful. They help identify where a response may miss important context, where it may sound too confident, where it should be clearer about next steps, or more directly encourage someone to seek medical care.
+To date, physicians have reviewed more than 700,000 example model responses that reflect how patients and clinicians use ChatGPT in the real world. Every few minutes, a physician reviews a new response. Their feedback becomes rubrics and evaluation criteria that help researchers measure whether responses are accurate, safe, clear, complete, appropriately cautious, and useful in real-world health situations. This gives us a clearer way to see where models are getting better and where they still need work.
+This work also supports OpenAI’s broader work in health, including tools built for healthcare, such as ChatGPT for Clinicians and OpenAI for Healthcare, which support medical professionals with tasks like documentation, research, and care delivery.
+Improving human health will be one of the most personal, tangible impacts of AGI. As our models continue to improve, our goal is to make ChatGPT more accurate, more useful, and more impactful in those moments — and to keep bringing that progress to more people.|E|
 |T|Jak využít zbytečnou klávesu Caps Lock k velmi užitečným zkratkám|D|18.6. 10:45|P|Jestli je Caps Lock vaše oblíbená klávesa, tento text pro vás nebude zajímavý. Pokud si ale ani nevzpomínáte, kdy jste ji naposled stiskli, měl bych p...|X|Jestli je Caps Lock vaše oblíbená klávesa, tento text pro vás nebude zajímavý. Pokud si ale ani nevzpomínáte, kdy jste ji naposled stiskli, měl bych pro ni využití. Nastavte si na ni klávesové zkratky pro spouštění a vyvolávání oken nejčastějších programů a jiných akcí.
 
 Caps Lock pro tento účel ...

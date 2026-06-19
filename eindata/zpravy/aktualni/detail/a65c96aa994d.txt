@@ -1,1 +1,1 @@
-HTTPSConnectionPool(host='ct24.ceskatelevize.cz', port=443): Max retries exceeded with url: /rss/svet (Caused by ConnectTimeoutError(<HTTPSConnection(host='ct24.ceskatelevize.cz', port=443) at 0x7f92891db880>, 'Connection to ct24.ceskatelevize.cz timed out. (connect timeout=10)'))
+HTTPSConnectionPool(host='www.zive.cz', port=443): Read timed out. (read timeout=10)

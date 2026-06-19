@@ -1,3 +1,8 @@
+|T|Ukrajina spustila TrophyLab. Spojencům otevírá databázi informací o ukořistěných ruských zbraních|D|19.6. 18:58|P|Ukrajinské ministerstvo obrany spustilo platformu TrophyLab. Jde o zabezpečený vládní portál, který spojencům zpřístupňuje technická data o ukořistěné...|X|Ukrajinské ministerstvo obrany spustilo platformu TrophyLab. Jde o zabezpečený vládní portál, který spojencům zpřístupňuje technická data o ukořistěné ruské vojenské technice.
+
+Registrovaní uživatelé nyní v katalogu najdou 115 vzorků ukořistěné techniky v 79 kategoriích a podkategoriích a 225 ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Microsoft varuje před malwarem, který rafinovaně nahrazuje adresy kryptoměnových peněženek|D|19.6. 17:45|P|Nebezpečný malware se šíří prostřednictvím infikovaných USB disků • Každou půlsekundu monitoruje schránku a podvrhuje adresy peněženek • Útočníci naví...|X|Nebezpečný malware se šíří prostřednictvím infikovaných USB disků • Každou půlsekundu monitoruje schránku a podvrhuje adresy peněženek • Útočníci navíc kradou seed fráze a posílají snímky obrazovky přes Tor
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|

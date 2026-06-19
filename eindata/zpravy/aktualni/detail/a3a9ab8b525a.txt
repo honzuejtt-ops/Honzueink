@@ -1,0 +1,19 @@
+Kybernetičtí experti varují před novou phishingovou kampaní, která se zaměřuje na uživatele Gmailu.
+Polský národní tým pro řešení kybernetických bezpečnostních incidentů CERT Polska upozornil na novou phishingovou kampaň zaměřenou na uživatele Gmailu. Podvodníci posílají zprávy, které vypadají jako oficiální bezpečnostní upozornění od Googlu.
+Tvrdí například, že na tvém účtu zjistili podezřelou aktivitu nebo že ti hrozí zablokování účtu. Cílem je přimět tě kliknout na odkaz.
+Takto mohou získat celý účet
+Po kliknutí se otevře stránka, která vypadá jako přihlašování do Gmailu. Pokud zadáš své přihlašovací údaje a následně i ověřovací kód z SMS nebo z aplikace Google Authenticator, útočníci mohou převzít kontrolu nad celým účtem.
+Po získání přístupu se mohou dostat například k:
+- tvým e-mailům,
+- seznamu kontaktů,
+- citlivým dokumentům,
+- dalším službám propojeným s Gmail účtem.
+Tyto e-maily jsou nejčastější
+Podvodné zprávy mají často předměty jako:
+- kritické upozornění,
+- zjistili jsme přihlášení z nového zařízení,
+- důležité bezpečnostní upozornění,
+- můžeme zablokovat účet,
+- důležité ověření přístupu.
+Jak se chránit
+Největším varovným signálem je adresa webové stránky. Ačkoli může vypadat jako Gmail, nejde o oficiální stránku Googlu. Odborníci doporučují nepřihlašovat se do Gmailu přes odkazy v e-mailech, vždy si zkontrolovat internetovou adresu stránky, Gmail otevírat přímo přes oficiální stránku nebo mobilní aplikaci.

@@ -1,0 +1,9 @@
+Článek
+Mladí Číňané, a možná nejen oni, si po rozchodu pomocí umělé inteligence vytvářejí digitální repliky svých bývalých partnerů. Díky otevřenému modulu ex.skill (ex-partner.skill), do kterého se můžou nahrát digitální záznamy týkající se bývalých vztahů (chatové konverzace, fotografie, příspěvky na sítích atd.), lze vytvořit virtuálního bývalého partnera, s nímž je možné všechny nedořešené události nebo křivdy „uzavřít“.
+Uživatelé mohou svého digitálního expartnera dále vylepšovat přidáváním specifických vzpomínek – jako jsou různé výlety, stravovací návyky, výročí, ale třeba i důvody hádek. Tím vším vyladí jeho „osobnost“ do podoby co možná nejbližší skutečnému člověku.
+„Konečně můžu říct všechny věci, které jsem nestihl, a cítím se díky tomu lépe,“ chválí si modul jeden z uživatelů. Další pak tvrdil, že po „důkladném rozhovoru“ s bývalým protějškem si uvědomil, že dotyčný nebyl tak ideální, jak si ho pamatoval.
+Dobrý nápad, nebo nebezpečný trend?
+Jak tvůrci ex.skill uvedli, „projekt je určen pouze pro osobní reflexi a emocionální uzdravení, nikoli pro obtěžování, stalking nebo narušování soukromí“, píše web Oddity Central.
+Rostoucí popularita tohoto trendu však vyvolává obavy nejen z možné emocionální závislosti, ale zároveň otevírá debatu o limitech využívání umělé inteligence ve vztazích a o ochraně soukromí.
+„Vztahový“ fenomén vznikl z původního open-source pracovního projektu s názvem Colleague.skill, který vytvořil šanghajský AI inženýr Zhou Tianyi. Jeho původní návrh měl díky umělé inteligenci z každodenní komunikace, dokumentů a společných zkušeností pomoci pracovním týmům využívat znalosti zaměstnanců.
+S rostoucí popularitou jej pak další vývojáři adaptovali z pracovní aplikace na osobní vztahy, dodává South China Morning Post.

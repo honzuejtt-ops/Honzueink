@@ -1,0 +1,8 @@
+Codex-maxxing for long-running work
+How Codex helps work continue beyond a single prompt
+Loading…
+Organizations are increasingly using AI to support work that extends beyond a single prompt. In this whitepaper, Jason Liu shares practical strategies for using Codex as a persistent workspace that preserves context, manages complex workflows, and helps sustain progress across long-running projects.
+Learn how to break ambitious goals into verifiable steps, maintain continuity across workstreams, and determine when to delegate execution to Codex versus when human oversight is most valuable.
+Read the full guide here(opens in a new window).
+Author
+OpenAI

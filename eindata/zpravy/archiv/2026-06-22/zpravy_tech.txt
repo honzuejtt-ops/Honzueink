@@ -1,3 +1,9 @@
+|T|Vypadá jako iPhone 17 Pro, přitom nestojí ani desetinu. Oranžové klony zaplavily české obchody|D|22.6. 18:15|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Proč každá aplikace o počasí ukazuje jinou předpověď? Záleží, jak aktuální mají data a modely|D|22.6. 17:45|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Nechte ChatGPT pracovat na pozadí. OpenAI zlepšuje plánovač úloh|D|22.6. 16:45|P|OpenAI vylepšuje funkci pro plánování úloh, kterou uvedla loni v lednu, ale od té doby na ni prakticky nesáhla. Plánovač má být rychlejší, spolehlivěj...|X|OpenAI vylepšuje funkci pro plánování úloh, kterou uvedla loni v lednu, ale od té doby na ni prakticky nesáhla. Plánovač má být rychlejší, spolehlivější a díky novému editoru se s ním také lépe pracuje.
 
 Nově má v bočním panelu zvláštní tlačítko Naplánováno (Scheduled), odkud lze úkoly přidávat ...
@@ -293,3 +299,11 @@ V Polsku prosadila v letech 2015 a 2016 strana Právo a spravedlnost zákon, kte
 V dalších zemích rozhodly spíš okolnosti než vytrvalost zaměstnanců. Ve Slovinsku novináři v letech 2022 a 2023 stávkovali přes sto dní a přímý politický vliv na veřejnoprávní RTV se podařilo omezit, ale až po volbách, novém zákonu a referendu. V Řecku se zrušená veřejnoprávní ERT vrátila do vysílání rovněž až po změně vlády.
 Ve Francii loni stávky a odpor v parlamentu zdržely a zablokovaly vládní reformu financování veřejnoprávních médií, spor o její podstatu ale zůstal otevřený. V Itálii jednodenní stávka v RAI v roce 2024 na obavy z politického tlaku upozornila, model řízení televize ale nezměnila. Ani v Maďarsku, kde byla veřejnoprávní média pod kontrolou Orbánovy vlády už od roku 2010, samotné demonstrace obrat nepřinesly. Se změnami začíná až nový kabinet Pétera Magyara.
 Pokud koalice drží, zákony tohoto typu většinou projdou. Trvalý obrat historicky přicházel až se změnou vlády. A i tam, kde protest něčeho dosáhl, bývá vítězství jen částečné. Litva, kde statisíce podpisů a týdny demonstrací nakonec jen otupily nejtvrdší hrany zákona, zatímco zmrazené peníze i sporná pravidla pro odvolání ředitelky zůstaly, je toho čerstvým důkazem.|E|
+|T|Codex-maxxing for long-running work|D|22.6. 00:00|P|Learn how Jason Liu uses Codex to preserve context, manage complex projects, and help work continue beyond a single prompt.|X|Codex-maxxing for long-running work
+How Codex helps work continue beyond a single prompt
+Loading…
+Organizations are increasingly using AI to support work that extends beyond a single prompt. In this whitepaper, Jason Liu shares practical strategies for using Codex as a persistent workspace that preserves context, manages complex workflows, and helps sustain progress across long-running projects.
+Learn how to break ambitious goals into verifiable steps, maintain continuity across workstreams, and determine when to delegate execution to Codex versus when human oversight is most valuable.
+Read the full guide here(opens in a new window).
+Author
+OpenAI|E|

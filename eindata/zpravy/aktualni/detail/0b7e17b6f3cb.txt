@@ -1,0 +1,7 @@
+Článek
+AI Gigafactory si podle dřívějších informací vyžádá celkovou investici zhruba 100 miliard korun. Z toho zhruba 70 miliard by investovaly České Radiokomunikace jako soukromý investor, 15 miliard český stát a 15 miliard Evropská komise.
+Ministerstvo průmyslu a obchodu tak může jménem České republiky uzavřít dohodu o společném zadávání veřejných zakázek s EuroHPC Joint Undertaking. Schválený materiál dává českým soukromým subjektům možnost ucházet se o podporu v evropské soutěži, jejíž výsledek se očekává na konci roku 2026.
+Podle ministra průmyslu a obchodu Karla Havlíčka (ANO) jde o krok k posílení bezpečnosti a nezávislosti ČR v klíčových oblastech, jako je zdravotnictví, armáda nebo průmysl.
+„Jsme připraveni spolu s privátním sektorem, protože to je investice privátního sektoru, vybudovat v Česku obří AI infrastrukturu. Kapacitu pro veřejný sektor, pro podnikatele pro start-upy, pro vysoké školy pro výzkumníky,“ uvedl Havlíček.
+Projekt má být realizovaný a financovaný Českými Radiokomunikacemi, které ponesou finanční rizika a budou vlastníkem i provozovatelem infrastruktury. AI Gigafactory by měla být součástí již budovaného datového centra v Praze na Zbraslavi.
+Role státu spočívá v podpoře záměru a v závazku k využití části výpočetní kapacity v případě, že bude český projekt v evropské soutěži vybrán. V první fázi se počítá se závazkem České republiky ve výši 2,5 miliardy korun, který bude v plné výši dorovnán příspěvkem Evropské unie. Úhrady mají probíhat postupně v letech 2028 až 2032, vždy podle skutečného čerpání výkonu.

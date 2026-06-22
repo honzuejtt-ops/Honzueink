@@ -1,0 +1,103 @@
+V perexu dnešního článku je zmíněno dilema resp. problém, který se dotýká prakticky všech existujících programovacích jazyků. Lidé, kteří tyto jazyky vyvíjí nebo navrhují jejich vývoj (což mohou být jednotlivci, komunita, nebo i celé více či méně oficiální komise), se musí prakticky s každou navrhovanou změnou rozhodovat, jestli má dojít k rozšíření programovacího jazyka takovým způsobem, jenž způsobí nekompatibilitu se staršími verzemi, nebo se naopak všechny změny budou navrhovat (nebo spíše zavrhovat) takovým způsobem, že dotčený programovací jazyk bude „zakonzervován“ a vlastně se nebude dále vyvíjet.
+Co se dozvíte v článku
+- Kompatibilita zdrojových kódů v různých programovacích jazycích
+- Jak je tomu v jazyce Go?
+- Kompatibilita z pohledu sémantiky
+- Kontroly prováděné překladačem jazyka Go
+- Chování při spuštění příkazem go run
+- Změna sémantiky programové smyčky for
+- Při návrhu jazyka jsme udělali chybu – a co teď?
+- Otestování chování v režimu kompatibility s Go 1.20 a Go 1.22
+- Podobný příklad, ovšem v upravené podobě
+- Otestování chování v režimu kompatibility s Go 1.20 a Go 1.22
+- Lze sestavit aplikaci z modulů určených pro odlišné verze jazyka Go?
+- Obsah modulu module1
+- Obsah modulu module2
+- Obsah hlavního modulu main
+- Chování aplikace po překladu a spuštění
+- Závěr
+- Repositář s demonstračními příklady
+- Odkazy na Internetu
+V určité míře se tento problém týká i knihoven, ovšem palčivější je právě u syntaxe a sémantiky popisující a mnohdy i definující programovací jazyk. Pouze malé množství v praxi používaných jazyků je totiž rigorózně definováno, takže mnohdy se za „definici“ jazyka považuje jeho referenční implementace, která je typicky (v těch lepších případech) doplněna seznamem nedefinovaných chování.
+Kompatibilita zdrojových kódů v různých programovacích jazycích
+V praxi můžeme vidět různé přístupy k řešení tohoto problému. Do některých programovacích jazyků se přidávají nové sémantické konstrukce bez toho, aby bylo nutné přidávat nová klíčová slova. Výsledek sice nemusí být ideální, ale na druhou stranu umožňuje další vývoj programovacího jazyka (a lze tvrdit, i když poněkud s nadsázkou, že jazyk, který se nevyvíjí, je mrtvým jazykem).
+U některých dalších jazyků se postupně přidávají nová klíčová slova, což může způsobit problémy v případě, že tato slova byla použita ve starších zdrojových kódech jako běžné identifikátory. Příkladem může být Java, do které byla postupně přidávána další klíčová slova:
+Příkladem dalšího programovacího jazyka, do kterého byly zařazeny změny, které způsobí problémy se staršími zdrojovými kódy, je slavné céčko. Následující zdrojový kód je bez problémů přeložitelný překladači ANSI C, ovšem překladače rozeznávající C99 (a vyšší verze) ohlásí chybu, protože v C99 je inline definováno jako (nové) klíčové slovo:
+int main(void) {
+    int inline = 0;
+    return inline;
+}
+Mimochodem, v rámci normy C11 bylo přidáno sedm podobných slov (i když s podtržítkem na začátku), v C23 přibylo dokonce patnáct nových klíčových slov. Výsledkem je situace, ve které následující zdrojový kód bude přeložen jen překladačem pracujícím v režimu ANSI C (a teoreticky v žádném jiném překladači). Novější překladače (resp. ten samý překladač po přepnutí do vyšší verze jazyka) budou hlásit buď jednu nebo větší množství chyb (v závislosti na použité verzi jazyka!), a K&R překladače budou mít naopak problém jak se syntaxí, tak i s rezervovaným slovem entry (které už však v novějších verzích céčka rezervovaným slovem pro změnu není; ostatně v praxi snad ani nikdy nebylo implementováno):
+int main(void) {
+    int inline = 0;
+    int alignof = 1;
+    int entry = 2;
+    return inline * alignof + entry;
+}
+Jen pro zajímavost si zkusme tento zdrojový kód skutečně přeložit pro různé verze céčka:
+$ gcc -std=c89 riddle.c
+(výborně, přeloženo bez problémů)
+ 
+$ gcc -std=c99 riddle.c
+riddle.c: In function ‘main’:
+riddle.c:2:16: error: expected identifier or ‘(’ before ‘=’ token
+    2 |     int inline = 0;
+      |                ^
+riddle.c:5:12: error: expected expression before ‘inline’
+    5 |     return inline * alignof + entry;
+      |            ^~~~~~
+(dvě chyby)
+ 
+$ gcc -std=c23 riddle.c
+riddle.c: In function ‘main’:
+riddle.c:2:16: error: expected identifier or ‘(’ before ‘=’ token
+    2 |     int inline = 0;
+      |                ^
+riddle.c:3:9: error: expected identifier or ‘(’ before ‘alignof’
+    3 |     int alignof = 1;
+      |         ^~~~~~~
+riddle.c:5:12: error: expected expression before ‘inline’
+    5 |     return inline * alignof + entry;
+      |            ^~~~~~
+(pro změnu tři chyby)
+To ovšem není jen specifická vlastnost GCC, protože podobně se chová Clang:
+$ clang -ansi riddle.c
+ 
+$ clang -std=c99 riddle.c 
+riddle.c:2:16: error: expected identifier or '('
+    2 |     int inline = 0;
+      |                ^
+riddle.c:5:12: error: expected expression
+    5 |     return inline * alignof + entry;
+      |            ^
+2 errors generated.
+ 
+$ clang -std=c23 riddle.c
+riddle.c:2:16: error: expected identifier or '('
+    2 |     int inline = 0;
+      |                ^
+riddle.c:3:9: error: expected identifier or '('
+    3 |     int alignof = 1;
+      |         ^
+riddle.c:5:12: error: expected expression
+    5 |     return inline * alignof + entry;
+      |            ^
+3 errors generated.
+Zajímavý je přístup použitý v jazyce Python. Do tohoto programovacího jazyka totiž byla přidána podpora pro pattern matching, která vyžadovala přidání nových klíčových slov, konkrétně slov match a case. A kromě toho byla do Pythonu přidána i podpora pro definici nových datových typů, která si vyžádala přidání klíčového slova type. Ovšem označení těchto slov za rezervovaná klíčová slova je problematické, protože by to znamenalo, že starší zdrojové kódy nebudou kompatibilní s novou verzí interpretrů Pythonu (v praxi se to asi nejvíce týká slova type, protože si dovedu představit, že by bylo použito pro pojmenování parametru funkce či dokonce jako jméno metody).
+Z tohoto důvodu autoři Pythonu zvolili (zlatou?) střední cestu – slova match, case a type jsou označena termínem soft keywords. Starší zdrojové kódy mohou tato slova používat jako identifikátory, ovšem v novém kódu již budou použity jako (rezervovaná) klíčová slova. Rozlišení je dosti komplikované a je proto prováděno na úrovni parseru, tedy nikoli (jak by bylo obvyklé) už při tokenizaci zdrojového kódu – to je sice z pohledu návrhu interpretru nepěkné řešení, ovšem z pohledu programátora je asi nejpraktičtější.
+To tedy znamená, že následující skripty jsou oba korektní, i když jeden z nich používá type jako jméno proměnné a druhý jako klíčové slovo:
+type = "foo" print(type)
+a:
+type text = str x: text = "foo" print(x)
+A aby toho nebylo málo:
+type text = str x: text = "foo" print(x) print(type) type = "bar" print(type)
+Problematika Python 2 vs Python 3 je dostatečně známá a snad se již podobná situace nebude opakovat…
+Jak je tomu v jazyce Go?
+Tvůrci programovacího jazyka Go jsou (nebo vlastně ještě relativně nedávno byli) poměrně konzervativní v otázce přidávání nových vlastností do tohoto jazyka. Konkrétně se například dlouho (několik let) řešilo, jakým způsobem se do Go přidá podpora pro generické datové typy, přidání podpory pro práci s výjimkami je téměř nekonečné téma (neustále odsouvané z dobrých i méně dobrých důvodů) apod. Podobně konzervativní je vývoj a změny prováděné ve standardní knihovně jazyka Go, která je poměrně rozsáhlá a nutno říci, že i kvalitní (což je v poměrně ostrém kontrastu s mnoha balíčky třetích stran). Nicméně i tento programovací jazyk se postupně vyvíjí a jsou do něj přidávány nové vlastnosti – například již zmíněná podpora pro generické datové typy (verze 1.18), možnost zápisu smyčky for range integer (verze 1.22), podpora pro iterátory (verze 1.23), nová sémantika standardní funkce new (verze 1.26) apod. Na tomto místě je ovšem dobré poznamenat, že mnohé změny jsou spíše kosmetické.
+Mimochodem: následujících 25 klíčových slov bylo rezervováno již v Go 1.0 před šestnácti lety. Od té doby nedošlo k přidání žádného nového slova, i když se mezitím jazyk rozšířil (a byl přidán například znak ~ související s generickými typy):
+break default func interface select case defer go map struct chan else goto package switch const fallthrough if range type continue for import return var
+Nové změny přidávané do Go jsou navrženy takovým způsobem, aby syntaxi jazyka rozšiřovaly, ale neměnily, takže i starší zdrojové kódy by měly být bez problémů přeložitelné i nejnovější verzí překladače Go. To si ostatně můžete relativně snadno otestovat, protože jsou k dispozici (například na GitHubu) archivy starých zdrojových kódů určených například pro Go 1.8 atd. Pokud už muselo dojít k takové změně ve specifikaci jazyka, která (obecně) není kompatibilní, jsou nové překladače Go vybaveny logikou, která zdrojové kódy přeloží kompatibilním způsobem. Tedy například zdrojové kódy balíčku určeného pro verzi 1.19 mohou být přeloženy jinak, než ty samé zdrojové kódy, ovšem určené pro verzi 1.26.
+Kompatibilita z pohledu sémantiky
+V případě, že se do programovacího jazyka přidává nějaká nová vlastnost, většinou to znamená změnu či spíše rozšíření syntaxe a taktéž sémantiky. Taková změna je většinou pro vývojáře snadno „uchopitelná“, protože každý chápe, že nová jazyková konstrukce má i svou (novou) sémantiku. Ovšem některé změny nemusí být na první pohled viditelné. Příkladem může být přesnější specifikace chování bez toho, aby došlo k modifikaci syntaxe. V Go 1.21 se například změnil způsob pořadí inicializace balíčků, což mj. ovlivňuje chování aplikací v případě, že balíčky mají definovanou funkci init. Dalším příkladem může být změna chování nějaké jazykové konstrukce – tj. i když se bude používat stejný způsob zápisu (tedy stejná syntaxe), bude chování v novější verzi jazyka jiné (odlišná sémantika). To je ovšem potenciálně velmi problematické, protože to znamená, že chování nějaké aplikace závisí na tom, jaká verze překladače bude použita.
+Taková změna v jaz...
+(Pokracovani na webu)

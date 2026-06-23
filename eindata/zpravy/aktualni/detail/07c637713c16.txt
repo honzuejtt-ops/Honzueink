@@ -1,0 +1,88 @@
+Před pár lety jsem měl problémy s načítáním u jednoho známého zpravodajského webu. Doma mi to na stolním počítači nefungovalo, ani na notebooku. Občas se něco načetlo, něco nenačetlo. Rozhodně než se načetla krátká stránka, trvalo to celou věčnost. Co mě ovšem překvapilo, v jiných domácnostech to fungovalo v pohodě. Znáte to, záhadný problém mezi nebem a zemí.
+Co se dozvíte v článku
+- Anatomie paketu: Co je MTU?
+- Path MTU Discovery aneb jak to má správně fungovat
+- Proč vzniká černá díra? Viníkem je zpackaný firewall
+- Jak diagnostikovat problém v Linuxu
+- Řešení jménem MSS Clamping
+- Další možnosti jak problém obejít
+- Správné řešení: Jak pakety nefiltrovat
+- Jak na MSS Clamping prakticky na Linuxu?
+Když jsem si otevřel Wireshark, často jsem viděl TCP retransmission, a pak žádné odpovědi. Celou situaci značně zlepšilo, když jsem snížil MTU, dál jsem se pak tím nezabýval, problém zmizel.
+Před nedávnem jsem na podobný problém narazil na jedné VPNce. Ping procházel v pohodě, SSH se tváří jako otevřené, ale nepřipojím se na něj. Nakonec snížím MTU, a vše začne fungovat líp, ne ideálně, ale líp. Asi bych to nechal být, ale nedalo mi to a začal jsem toto téma studovat podrobně.
+Anatomie paketu: Co je MTU?
+V síti nás obvykle zajímá, jak přenášet větší množství dat. Na internetu to funguje tak, že se data rozporcují na malé pakety, které se doručují každý zvlášť. Výhoda je zřejmá: pokud dojde ke ztrátě několika paketů, pošlou se znovu a nemusí se přenášet kompletně celý obsah. Takto je síť poměrně odolná vůči rušení a problémům na ní, které se dějí neustále.
+Hodnota MTU (Maximum Transmission Unit) určuje maximální velikost paketu (v bajtech), kterou dokáže dané síťové rozhraní přenést na linkové vrstvě. Standardní hodnota pro Ethernet je 1500 bajtů. MTU označuje velikost IP paketu, bez 14bajtové Ethernet hlavičky a 4bajtů FCS. Pokud přenášíte data přes VPN (např. IPsec, WireGuard a jiné) nebo PPPoE, ukousne si tunel část bajtů pro své vlastní zapouzdření (režii), a reálné MTU tak klesne třeba na 1420 nebo 1492 bajtů.
+Path MTU Discovery aneb jak to má správně fungovat
+Síťová cesta od klienta k serveru vede přes mnoho routerů a různé technologie. Klient na začátku neví, že router o tři skoky dál má MTU pouze 1000 bajtů, protože je v cestě třeba tunel. Moderní operační systémy posílají TCP pakety s nastaveným příznakem DF (Don't Fragment) v IP hlavičce. Tím říkají: „Tento paket po cestě neděl, chci ho přenést vcelku.“ Pokud původní velký paket (1500 bajtů) dorazí na router, jehož odchozí rozhraní má MTU jen 1000 bajtů a je nastaven příznak DF, router musí provést následující:
+- Musí paket zahodit, protože ho nesmí rozdělit.
+- Pošle zpět odesílateli ICMP zprávu typu 3, kód 4: Destination Unreachable (Fragmentation Needed and DF set). V této zprávě router navíc informuje: „Můj limit pro rozhraní je 1000 bajtů.“
+Tento mechanismus se nazývá Path MTU Discovery (PMTUD). Odesílatel obdrží ICMP zprávu, sníží si MTU pro danou trasu v směrovací keši a příští pakety pošle znovu menší. Vše funguje automaticky a čistě.
+Proč vzniká černá díra? Viníkem je zpackaný firewall
+Problém nastává v momentě, kdy nějaký „bezpečnostní expert“ na routeru po cestě aplikuje pravidlo v domnění, že ICMP je nástrojem hackerů a je potřeba ho kompletně zakázat.
+Příklad destruktivního přístupu, který rozbije PMTUD
+nft add rule ip filter output oifname "eth3" ip protocol icmp drop Pokud router zahodí velký paket, ale kvůli tomuto pravidlu nedokáže odeslat ICMP zprávu zpět klientovi, klient se nikdy nedozví, že paket nedorazil. Pouze vidí, že nedostal TCP ACK (potvrzení). Klient se tedy pokouší balík dat poslat znovu a znovu (retransmit), dokud spojení neumře na timeout. To je přesně ta MTU černá díra – spojení SYN prošlo, protože paket byl malý, ale ostrá data mizí v prázdnotě.
+Jak diagnostikovat problém v Linuxu
+Pokud máte podezření na problém s MTU, ověřte si nejprve hodnoty na svých rozhraních:
+$ ip link show
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 ...
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 ...
+3: tun0: <POINTOPOINT,MULTICAST,NOARP,UP,LOWER_UP> mtu 1420 ... Pro zjištění reálného MTU na trase k cíli (bez fragmentace) můžete použít příkaz ping s vynucením příznaku DF (v Linuxu volba  -M do) a specifikací velikosti přenášených dat ( -s).
+Pozor: Výsledný paket bude o 28 bajtů větší než zadaná velikost dat, přibude totiž 20bajtová hlavička IP a 8bajtová hlavička ICMP.
+Příklad
+Vyzkoušíme test s paketem přenášejícím 1472 bajtů (1472 + 28 = 1500B paket). Pokud projde, MTU je 1500.
+$ ping -M do -s 1472 -c 1 root.cz Pokud narazíte na úzké hrdlo, systém vám oznámí chybu:
+$ ping -M do -s 1472 -c 1 10.0.3.4
+PING 10.0.3.4 (10.0.3.4) 1472(1500) bytes of data.
+From 10.0.2.1 icmp_seq=1 Frag needed and DF set (mtu = 1000) Ještě elegantnějším nástrojem pro analýzu celé trasy je  tracepath:
+$ tracepath root.cz
+ 1?: [LOCALHOST]                      pmtu 1500
+ 1:  router.local          0.231ms
+ 2:  bad-router.isp.cz     4.120ms pmtu 1000
+ 3:  destination.cz        8.451ms reached
+     Resume: pmtu 1000 hops 3 back 3 Směrovací keš s dočasně sníženým MTU pro konkrétní cíle si v Linuxu zobrazíte takto:
+$ ip route show cache
+10.0.3.4 via 10.0.2.1 dev eth0
+    cache expires 582sec mtu 1000 Fígl je v tom, že pokud router po cestě ICMP pakety obsahující informaci o fragmentaci zahazuje, tak uvidíte jenom TCP retransmission třeba přes nástroj Wireshark. Nic vás neupozorní na to, že pakety jsou zahazovány.
+Ideální by samozřejmě bylo, kdybyste daný router na cestě opravili, a zablokovali například jen pakety ICMP Echo Reply, a ne ICMP typ 3 a 4 Fragmantation needed. Toto se nejčastěji bude dít například na serveru pro VPN, kde to někdo omylem zablokoval. Například proto, že server musí k přenášeným paketům přidávat svoje hlavičky, a tak logicky snižuje MTU.
+Stejně tak se to může dít někde na load balanceru, což byl příklad onoho zmiňovaného zpravodajského serveru v úvodu. Samozřejmě jsem jim to reportoval i poslal TCP dumpy, ale nebudu vás dlouho napínat, co s nimi udělala uživatelská podpora daného serveru.
+Jak tedy z toho ven, pokud nemůžete povolit ICMP na routeru nebo serveru, a stejně vám to nefunguje správně?
+Řešení jménem MSS Clamping
+Na začátku jsem zmiňoval, že mi pomohlo snížení MTU na mé síťové kartě. Je třeba říci, že to opravdu může pomoci, protože nyní posíláte menší pakety, které cestou projdou. Co to ovšem neřeší je fakt, že protistrana třeba neví, že mezi vámi a ní je VPN, a tak vám naopak protistrana s vyšším MTU může zasílat větší pakety, které se cestou ztratí.
+Řešením je tzv. MSS Clamping (přichycení MSS).
+MSS – Maximum Segment Size je velikost paketu bez IP a TCP hlaviček, v případě 1500 MTU pro TCP IP, bude MSS pouze 1460 bajtů (velikost TCP payloadu). Rozdíl mezi MSS a MTU je ve vrstvě, ve které se nastavují. MTU řešíme na druhé linkové vrstvě a MSS až na čtvrté transportní vrstvě. MTU platí pro rozhraní, tedy například pouze pro pakety směřující od vás, ale ne k vám. Proti tomu MSS platí pro celé TCP spojení a tedy pro pakety jdoucí oběma směry.
+Technika MSS Clamping spočívá v tom, že váš router aktivně monitoruje projíždějící TCP SYN pakety a za běhu v nich přepisuje hodnotu MSS na nižší číslo. Tím donutí oba koncové body od začátku komunikovat s menšími segmenty a k fragmentaci vůbec nedojde.
+Změnu MSS v moderním linuxovém firewallu nftables popisuji na konci článku.
+Další možnosti jak problém obejít
+Vypnutí Path MTU Discovery (Povolení fragmentace)
+V Linuxu můžete zakázat PMTUD a tím povolit, aby se pakety na vašem routeru rozsekaly na menší fragmenty. Tím sice data projdou, ale fragmentace extrémně zatěžuje CPU routeru a zvyšuje režii sítě.
+Vypnutí PMTUD pro konkrétní routu (povolí se fragmentace u zdroje)
+ip route change default via 10.0.2.1 advmss 1300 mtu lock 1400 PLPMTUD (Packetization Layer Path MTU Discovery)
+Jedná se o pokročilou techniku (definovanou v RFC 4821), kdy samotné TCP (nikoliv IP a ICMP) zkouší posílat různě velké pakety a podle toho, zda dostane potvrzení (ACK), zjišťuje průchodnost sítě. Funguje to i bez ICMP. V Linuxu to lze zapnout přes  sysctl:
+- 0 = vypnuto
+- 1 = zapnuto na vyžádání
+- 2 = zapnuto globálně
+sudo sysctl -w net.ipv4.tcp_mtu_probing=2 Nevýhoda: Prvních několik sekund spojení při detekci černé díry „koktá“ a čeká se na timeouty, než se velikost adaptivně sníží.
+Správné řešení: Jak pakety nefiltrovat
+MSS clamping a MTU probing jsou sice funkční berličky, ale z architektonického hlediska jde o „špinavé“ zásahy, protože router modifikuje data na čtvrté vrstvě. Správným řešením je neblokovat kritický ICMP provoz.
+Pokud spravujete firewall, nikdy plošně nezakazujte ICMP. Pro správnou funkčnost IPv4 sítě musíte bezpodmínečně povolit typy zpráv, které zajišťují signalizaci chyb. U IPv6 je situace ještě striktnější, protože fragmentace na routerech neexistuje vůbec a vše stojí na koncových bodech. Bez podpory ICMPv6 síť v podstatě nefunguje.
+Konfigurace firewallu, která zachová funkční PMTUD
+V nftables  povolte podstatné typy zpráv před jakýmkoliv plošným zahazováním provozu:
+table inet filter {
+    chain input {
+        type filter hook input priority filter; policy drop;
+        # Povolení ICMPv4 Destination Unreachable (nutné pro PMTUD)
+        ip protocol icmp icmp type destination-unreachable accept
+        # Povolení tradičního pingu (volitelné)
+        ip protocol icmp icmp type echo-request accept
+        # V IPv6 je filtrace ICMP ještě citlivější - Packet Too Big (PTB) je kritický
+        icmpv6 type packet-too-big accept
+        icmpv6 type destination-unreachable accept
+        icmpv6 type nd-router-advert accept
+        icmpv6 type nd-neighbor-solicit accept
+        icmpv6 type nd-neighbor-advert accept
+    }
+} Pokud přestanete síťové chybové zprávy vnímat jako bezpečnostní hrozbu a začnete je brát jako kritickou infrastrukturu, zbavíte se záhadných zamrzání aplikací jednou provždy a nebudete muset na routerech ohýbat TCP hlavičky.
+Jak na MSS Clamping prakticky na Linuxu?
+Omezení MSS odchozích SYN pa...
+(Pokracovani na webu)

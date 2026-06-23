@@ -1,3 +1,23 @@
+|T|Proč už automobilky nechtějí Android Auto. Nejde jen o data, ale i miliardy z předplatného|D|23.6. 11:45|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Teams jsou tak nenažrané, že do nich Microsoft přidává „úsporný režim“. Moc toho ale nevyřeší|D|23.6. 10:45|P|Microsoft Teams přidávají do výbavy úsporný režim. • Na pomalejších strojcích bude ve výchozím stavu zapnutý. • Distribuce funkce by měla trvat do kon...|X|Microsoft Teams přidávají do výbavy úsporný režim. • Na pomalejších strojcích bude ve výchozím stavu zapnutý. • Distribuce funkce by měla trvat do konce června.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Češi vyvinuli no-code/low-code platformu pro rozhodování ve firmě, mají klienty od Londýna po Wellington|D|23.6. 10:18|P|V pražské společnosti DecisionRules vsadili před lety na no-code a low-code řešení. Vytvořili platformu, která firmám umožňuje nastavovat pravidla pro...|X|V pražské společnosti DecisionRules vsadili před lety na no-code a low-code řešení. Vytvořili platformu, která firmám umožňuje nastavovat pravidla pro to, jak se uvnitř nich bude rozhodovat tak, aby vše probíhalo co nejvíc automaticky. Společnostem otevřeli grafické rozhraní, ve kterém můžou pravidla vytvářet, přesouvat a navazovat a následně je propojit s vlastními systémy prostřednictvím API. Platforma se za dobu své existence rozšířila o americkou entitu a dostala na šest kontinentů, od Londýna přes São Paulo až po Wellington. Má roční výnosy (ARR) ve výši 1,6 milionu eur a nejnověji hlásí investici ve výši 1,5 milionu eur (přes 36 milionů Kč) od brněnského fondu Jet Ventures 1 Igora Fajta.
+Platforma DecisionRules je komerčně na trhu od roku 2021. Využívá se například pro schvalování úvěrů, výpočet cen, pojišťovací procesy nebo odhalování podvodů. Pokud firma potřebuje změnit podmínky rozhodování, může tak učinit bez zásahu vývojářů. Proklamovaným cílem společnosti je oddělit obchodní logiku od samotného softwaru a umožnit analytikům či manažerům upravovat firemní pravidla samostatně.
+Nynější investice má směřovat mimo jiné do AI, už teď firma nabízí AI asistenta pro tvorbu byznysových pravidel nebo AI agenty zapojené do rozhodovacích procesů. „Naší ambicí je poprat se o velké zákazníky s předními dodavateli technologií na poli automatizace rozhodovacích procesů,“ přeje si Václav Kandrnal, spoluzakladatel a CEO DecisionRules. Za firmou s ním stojí také Petr Lev jako druhý spoluzakladatel.
+Pro Jet Venture 1 je to sedmá investice. Je součástí investiční společnosti Jet Investment, která spravuje aktiva ve výši 17 miliard Kč. Má ambici zařadit do portfolia fondu investice do majetkových podílů v inovativních začínajících firmách v Česku i dalších zemích střední Evropy v hodnotě až 50 milionů eur.|E|
+|T|Před 76 lety se na scéně objevily první televizní ovladače. Byly naprosto šílené, měly motorky, lampičky a ultrazvukové varhany|D|23.6. 10:12|P|Před 76 lety se na scéně objevil první televizní dálkový ovladač na světě. Říkali mu Lazy Bones (Líné kosti) a na první pohled připomínal drátový ovla...|X|Před 76 lety se na scéně objevil první televizní dálkový ovladač na světě. Říkali mu Lazy Bones (Líné kosti) a na první pohled připomínal drátový ovladač na autíčka z dětství současných čtyřicátníků.
+
+Tím ovšem veškerá podobnost končí, samotné technické řešení vám totiž vyrazí dech.
+
+Lazy Bones: ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Intel a AMD táhnou za jeden provaz. Do procesorů vloží novou funkci slibující až 16× rychlejší AI|D|23.6. 08:45|P|Společnosti Intel a AMD zveřejnily specifikaci nové sady instrukcí ACE (AI Compute Extensions), která má výrazně zrychlit výpočty spojené s provozem n...|X|Společnosti Intel a AMD zveřejnily specifikaci nové sady instrukcí ACE (AI Compute Extensions), která má výrazně zrychlit výpočty spojené s provozem neuronových sítí přímo na běžných x86 čipech. Cílem není nahradit grafické karty, ale nabídnout efektivnější řešení pro menší modely, aplikace citlivé ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Cena Steam Machine startuje na 25 tisících korunách. O prvních majitelích rozhodne náhoda|D|23.6. 07:45|P||X|
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|

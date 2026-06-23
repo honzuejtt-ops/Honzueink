@@ -1,0 +1,3 @@
+Společnosti Intel a AMD zveřejnily specifikaci nové sady instrukcí ACE (AI Compute Extensions), která má výrazně zrychlit výpočty spojené s provozem neuronových sítí přímo na běžných x86 čipech. Cílem není nahradit grafické karty, ale nabídnout efektivnější řešení pro menší modely, aplikace citlivé ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

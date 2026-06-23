@@ -1,5 +1,5 @@
 O té firmě zpočátku téměř nikdo nevěděl. Změnilo se to až v lednu 2020, kdy o ní americký deník New York Times (NYT) zveřejnil investigaci s titulkem: „The Secretive Company That Might End Privacy as We Know It.”
-Dnes zná společnost Clearview AI Inc. celý svět. Jde o soukromou americkou firmu se sídlem v New Yorku. Byla založena v roce 2017 australsko-americkým Hoanem Ton-Thatem.
+Dnes zná společnost Clearview AI Inc. celý svět. Jde o soukromou americkou firmu se sídlem v New Yorku. Byla založena v roce 2017 australsko-americkým podnikatelem Hoanem Ton-Thatem.
 Ačkoliv reakce na text NYT byly bouřlivé, firma se udržela v provozu. Spolu s veřejně dostupným nástrojem PimEyes představují nový typ technologie, která umožňuje rychlou a efektivní identifikaci lidí na základě pouhé fotografie obličeje. Z internetu se tak stává databáze tváří lidí, která výrazně ohrožuje jejich soukromí.
 Jak Clearview AI sbírá obličeje z celého světa
 Clearview je webová stránka, která vytváří biometrické profily osob pro jejich identifikaci. Rozpoznávání tváří funguje ve dvou krocích. Nejprve algoritmus z fotografie získá tzv. faceprint, neboli biometrický vektor. Jde o sadu čísel popisující geometrii obličeje (vzdálenost mezi očima, tvar čelisti, konturu nosu apod.). Následně se tento vektor porovnává s miliony různých vektorů v databázi a hledají se shody.
@@ -44,5 +44,5 @@ Klíčová právní otázka: definice „manifestly made public”
 PimEyes se ve své obhajobě dovolává výjimky z čl. 9 odst. 2 písm. e) GDPR: biometrická data mohou být zpracována bez souhlasu, pokud jsou „manifestly made public” (zjevně zveřejněná subjektem údajů).
 Ačkoliv se na první pohled tento argument užití fotografií veřejně dostupných na internetu zdá být rozumný, PimEyes podmínky stanovené tímto článkem nesplňuje:
 - Podmínka 1: Data musí zveřejnit sama osoba. Na internetu většina dostupných fotografií je zveřejňována třetí stranou (novináři, přáteli apod.), ne samotnými subjekty. PimEyes toto nezohledňuje.
-- Podmínka 2: Užití v kontextu zveřejnění. Každé...
+- Podmínka 2: Užití v kontextu zveř...
 (Pokracovani na webu)

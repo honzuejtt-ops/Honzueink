@@ -1,0 +1,147 @@
+Čip POKEY v osmibitových Atari (3. část)
+Co se dozvíte v článku
+- Čip POKEY v osmibitových Atari (3. část)
+- Horní propust pro první zvukový kanál tvořená kanálem číslo 3
+- Výsledky získané pro různé frekvence kanálů číslo 1 a 3
+- Výsledky získané po ztlumení kanálu číslo 3
+- První demonstrační příklad: nastavení horní propusti pro první zvukový kanál
+- Řízení frekvence zvukového kanálu i frekvence jeho horní propusti
+- Druhý demonstrační příklad: syntetizér využívající horní propust řízený joystickem
+- Kombinace horní propusti a zvukového kanálu se vstupem z poly čítače
+- Třetí demonstrační příklad: syntetizér s konfigurovatelným vstupem z poly čítačů
+- Neobvyklá kombinace: horní propust založená na poly čítači
+- Čtvrtý demonstrační příklad: horní propust založená na poly čítači
+- Přímé ovládání hlasitosti zvukového kanálu
+- Programová smyčka generující tón s konfigurovatelným průběhem
+- Pátý demonstrační příklad: přímé ovládání výstupu zvukového kanálu mikroprocesorem
+- Proč je zvuk generovaný předchozím příkladem poškozen?
+- Zákaz všech přerušení, včetně přerušení od ANTICu
+- Šestý demonstrační příklad: korektní přehrání tónu při zákazu všech přerušení
+- Příloha: Makefile pro překlad všech demonstračních příkladů
+- Repositář s demonstračními příklady
+- Odkazy na Internetu
+Na předchozí dvojici článků o čipu POKEY [1] [2] dnes navážeme a dokončíme tak téma tvorby zvuků na osmibitových mikropočítačích Atari. Nejprve si ukážeme způsob odlišného zapojení zvukových kanálů, který se označuje termínem horní propust (high pass), i když se interně jedná o pouhou kombinaci dvou binárních hradel.
+Poté si řekneme, jak lze tvořit signály se složitějším průběhem, než jsou více či méně modifikované obdélníkové průběhy. Při té příležitosti si ukážeme způsob zákazu všech zdrojů přerušení, takže bude mít CPU prosto pro generování zvukového signálu v reálném čase.
+Již naposledy se podívejme na bity řídicího registru AUDCTL. Význam většiny bitů jsme si již vysvětlili, ovšem zbývají nám bity 1 a 2, kterými lze vždy dvojici kanálů spojit tak, aby jeden z kanálů tvořil takzvanou horní propust:
+Horní propust pro první zvukový kanál tvořená kanálem číslo 3
+Čip POKEY dokáže spojit dvojici kanálů 1+2 a/nebo 3+4 do jediného šestnáctibitového kanálu. Ovšem kanály lze zkombinovat i jiným způsobem. Konkrétně je možné propojit kanály 1+3 a/nebo 2+4 (pozor – to jsou odlišné dvojice) tak, že vyšší kanál bude zdrojem hodinových pulsů přiváděných na bránu (gate). A signál z kanálu 1 nebo 2 je přiveden na vstup této brány. Za ní je umístěno hradlo XOR kombinující přímý signál z kanálů 1 nebo 2 se signálem z brány (tedy pokud je brána otevřena, je výsledkem nula). Toto zapojení je z nějakého důvodu označováno termínem horní propust, i když se od klasické analogové horní propusti (RC článek) snad ve všech ohledech liší :-) Nicméně se jedná o techniku umožňující tvorbu zajímavých zvuků.
+Prakticky je konfigurace horní propusti triviální, protože se jedná o nastavení jediného bitu v řídicím registru AUDCTL. Pokud budeme chtít nastavit horní propust pro kanál číslo 1, bude tato horní propust realizována výstupem kanálu číslo 3 (před aplikací hlasitosti – jedná se totiž o čistě binární operaci). Nastavení je snadné:
+        lda #PURE_TONE_MASK+10  ; hlasitost (0-15)
+        sta AUDC1               ; zápis do registru řízení hlasitosti pro zvukový kanál číslo 1 čipu POKEY
+        sta AUDC3               ; zápis do registru řízení hlasitosti pro zvukový kanál číslo 2 čipu POKEY
+ 
+        lda #71                 ; dělič základní frekvence (komorní A: 440 Hz)
+        sta AUDF1               ; zápis do registru děliče frekvence pro zvukový kanál číslo 1 čipu POKEY
+ 
+        lda #31                 ; dělič základní frekvence (cca 1kHz)
+        sta AUDF3               ; zápis do registru děliče frekvence pro zvukový kanál číslo 2 čipu POKEY
+ 
+        lda #HIGH_PASS_1_3_MASK ; nastavení horní propusti
+        sta AUDCTL              ; zápis do řídicího registru čipu POKEY
+Ve výše uvedeném kódu má propust frekvenci přibližně 1 kHz a tvoří bránu pro frekvenci 440 Hz. Ovšem nic nám nebrání v modifikaci děličů a tím pádem k definici propusti na 440 Hz pro signál o frekvenci 1 kHz (což v analogovém světě vede k naprosto odlišným výsledkům):
+        lda #PURE_TONE_MASK+10  ; hlasitost (0-15)
+        sta AUDC1               ; zápis do registru řízení hlasitosti pro zvukový kanál číslo 1 čipu POKEY
+        sta AUDC3               ; zápis do registru řízení hlasitosti pro zvukový kanál číslo 3 čipu POKEY
+ 
+        ; otočení frekvencí
+        lda #31                 ; dělič základní frekvence (cca 1kHz)
+        sta AUDF1               ; zápis do registru děliče frekvence pro zvukový kanál číslo 1 čipu POKEY
+ 
+        lda #71                 ; dělič základní frekvence (komorní A: 440 Hz)
+        sta AUDF3               ; zápis do registru děliče frekvence pro zvukový kanál číslo 3 čipu POKEY
+ 
+        lda #HIGH_PASS_1_3_MASK ; nastavení horní propusti
+        sta AUDCTL              ; zápis do řídicího registru čipu POKEY
+        lda #PURE_TONE_MASK+10  ; hlasitost (0-15)
+        sta AUDC1               ; zápis do registru řízení hlasitosti pro zvukový kanál číslo 1 čipu POKEY
+        lda #0                  ; hlasitost (0-15)
+        sta AUDC3               ; zápis do registru řízení hlasitosti pro zvukový kanál číslo 3 čipu POKEY
+Výsledky získané pro různé frekvence kanálů číslo 1 a 3
+Vyzkoušejme si nyní, jak bude vypadat signál posílaný (samozřejmě po jeho zesílení) na reproduktor v případě, že zkombinujeme následující dva průběhy (kanál 1 a 3) nastavené na generování čistého tónu o frekvencích 440 Hz (komorní A) a 1 kHz:
+Po nastavení kanálu číslo 3 ve funkci horní propusti pro kanál číslo 1 získáme tyto (divné) průběhy, které vůbec neodpovídají představě funkce reálné horní propusti:
+Výsledky získané po ztlumení kanálu číslo 3
+Jeden z problémů předchozích dvou průběhů je fakt, že jsme sice kanál číslo 3 použili ve funkci horní propusti (resp. jejího řízení), ovšem i výstup z tohoto kanálu má nenulovou hlasitost a proto se „propisuje“ na výstup. To ovšem můžeme snadno opravit tak, že hlasitost tohoto kanálu bude nastavena na nulu. Ovšem obdélníkový průběh získaný děličkou tohoto kanálu bude stále možné využít pro implementaci horní propusti (hlasitost se totiž aplikuje až na konci celého řetězce zpracování zvuku):
+        lda #PURE_TONE_MASK+10  ; hlasitost (0-15)
+        sta AUDC1               ; zápis do registru řízení hlasitosti pro zvukový kanál číslo 1 čipu POKEY
+        sta AUDC3               ; zápis do registru řízení hlasitosti pro zvukový kanál číslo 3 čipu POKEY
+Výsledky sice stále neodpovídají představě horní propusti, ale minimálně se jedná o jediný signál, který není sčítaný s dalším signálem:
+První demonstrační příklad: nastavení horní propusti pro první zvukový kanál
+Úplný zdrojový kód dnešního prvního demonstračního příkladu, ve kterém je nastavena horní propust pro první kanál a následně se postupně mění frekvence kanálu 1 a 3, vypadá následovně:
+; ---------------------------------------------------------------------
+; Generování zvuků čipem POKEY.
+;
+; Nastavení horní propusti pro zvukový kanál číslo 1
+; Postupná změna frekvence kanálů 1 a 3.
+; ---------------------------------------------------------------------
+ 
+.include "atari.inc"
+ 
+.CODE
+ 
+PURE_TONE_MASK     = %10100000
+HIGH_PASS_1_3_MASK = %00000100
+ 
+.proc main
+        jsr get_key             ; čekání na stisk klávesy
+ 
+        lda #PURE_TONE_MASK+10  ; hlasitost (0-15)
+        sta AUDC1               ; zápis do registru řízení hlasitosti pro zvukový kanál číslo 1 čipu POKEY
+        sta AUDC3               ; zápis do registru řízení hlasitosti pro zvukový kanál číslo 3 čipu POKEY
+ 
+        lda #71                 ; dělič základní frekvence (komorní A: 440 Hz)
+        sta AUDF1               ; zápis do registru děliče frekvence pro zvukový kanál číslo 1 čipu POKEY
+ 
+        lda #31                 ; dělič základní frekvence (cca 1kHz)
+        sta AUDF3               ; zápis do registru děliče frekvence pro zvukový kanál číslo 3 čipu POKEY
+ 
+        lda #00                 ; základní tón odvozený od 64kHz
+        sta AUDCTL              ; zápis do řídicího registru čipu POKEY
+ 
+        jsr get_key             ; čekání na stisk klávesy
+ 
+        lda #HIGH_PASS_1_3_MASK ; nastavení horní propusti
+        sta AUDCTL              ; zápis do řídicího registru čipu POKEY
+ 
+        jsr get_key             ; čekání na stisk klávesy
+ 
+        ; otočení frekvencí
+        lda #31                 ; dělič základní frekvence (cca 1kHz)
+        sta AUDF1               ; zápis do registru děliče frekvence pro zvukový kanál číslo 1 čipu POKEY
+ 
+        lda #71                 ; dělič základní frekvence (komorní A: 440 Hz)
+        sta AUDF3               ; zápis do registru děliče frekvence pro zvukový kanál číslo 3 čipu POKEY
+ 
+ 
+loop:   jmp loop
+.endproc
+ 
+ 
+ 
+; ---------------------------------------------------------------------
+; čekání na stisk klávesy
+; ---------------------------------------------------------------------
+.proc get_key
+        KBHANDLER = $e424       ; rutina pro cteni klavesy
+        lda KBHANDLER+1         ; cteni horni casti adresy ulozene v ROM
+        pha                     ; ulozeni na zasobnik
+        lda KBHANDLER           ; cteni dolni casti adresy ulozene v ROM
+        pha                     ; ulozeni na zasobnik
+        rts                     ; vyber adresy ze zasobniku + skok
+                                ; zde neni nutne mit RTS
+.endproc
+ 
+ 
+ 
+end:
+ 
+.segment "EXEHDR"
+.word   $ffff                   ; uvodni sekvence bajtu v souboru XEX
+.word   main                    ; zacatek kodoveho segmentu
+.word   end - 1                 ; konec kodoveho segmentu
+ 
+ 
+.segment "AUTOSTRT"             ; segment s pocatecni adresou
+.word   RUNAD                   ; naplni se pouze adresy RUNAD a RUNAD+1
+.word   RUNAD+1
+.word   main                    ; adresa vstupniho bodu do prog...
+(Pokracovani na webu)

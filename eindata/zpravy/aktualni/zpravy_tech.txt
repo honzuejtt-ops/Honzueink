@@ -1,4 +1,79 @@
-|T|Zdrojové kódy k legendární české hře Operace Flashpoint jsou k dispozici zdarma, chystá se i předělávka s dabingem|D|24.6. 07:46|P|Česká společnost Bohemia Interactive zveřejnila zdrojové kódy k legendární hře Operace Flashpoint, stalo se tak v rámci výročí 25 let od vydání. Zdroj...|X|Česká společnost Bohemia Interactive zveřejnila zdrojové kódy k legendární hře Operace Flashpoint, stalo se tak v rámci výročí 25 let od vydání. Zdrojáky jsou k dispozici na GitHubu. Součástí jsou kódy k samotné hře a zároveň k enginu, na němž běžela.
+|T|Státní úřady pokročily v nasazení IPv6 a DNSSEC, najdou se ale lajdáci|D|24.6. 10:55|P|Státní správa České republiky dosáhla vysoké úrovně implementace technologií IPv6 a DNSSEC, konstatuje nová zpráva o podpoře těchto protokolů vydaná m...|X|Státní správa České republiky dosáhla vysoké úrovně implementace technologií IPv6 a DNSSEC, konstatuje nová zpráva o podpoře těchto protokolů vydaná ministerstvem průmyslu a obchodu. Rok 2026 ovšem nepřinesl významné zlepšení a u části úřadů přetrvávají nedostatky v dodržování stanovených povinností v kybernetické bezpečnosti.
+Český stát se zavázal IPv6 a DNSSEC nasadit v roce 2024, kdy vláda podepsala dokument vyžadující k implementaci zmíněných standardů (takzvaný Restart zavádění technologie DNSSEC a protokolu IPv6). Proces souvisí i s přechodem na jednotnou doménu .gov.cz, kterou už používají hlavní orgány.
+“Zavádění protokolu IPv6 a technologie DNSSEC ve státní správě České republiky v posledních letech zaznamenalo významný pokrok, což potvrzují pravidelné monitorovací testy. Klíčovým impulsem pro další rozvoj je společná deklarace uzavřená mezi Ministerstvem průmyslu a obchodu, Českým telekomunikačním úřadem, sdružením CZ.NIC, sdružením NIX.CZ, Digitální informační agenturou, Ministerstvem vnitra, sdružením CESNET a operátory, která respektuje vládou stanovený termín pro přechod na IPv6-only služby státní správy do roku 2032 a vytváří rámec pro koordinovanou spolupráci všech zúčastněných subjektů,” stojí v novém reportu.
+Shrnutí ministerstva průmyslu zní takto (celá zpráva je tady):
+Plnění povinnosti ve vztahu k zavádění protokolu IPv6 se v prvním roce od přijetí usnesení výrazně zlepšilo. Na základě výsledků pravidelného monitorovacího testu lze konstatovat, že zatímco v době přijetí výše uvedeného materiálu Restart zavádění technologie DNSSEC a protokolu IPv6 ve státní správě bylo průměrné skóre testu 70,97 bodů ze 100, v červnu roku 2025 bylo průměrné skóre 91,61 bodů.
+Naopak v roce 2026 nedošlo k výraznému posunu, v červnu roku 2026 bylo průměrné skóre 90,32 bodů. Tento pokles má dva hlavní aspekty. Jedním je stagnace; úřady, pro něž byl přechod na IPv6 prioritou, učinily tento krok hned v nejbližších měsících po přijetí vládního usnesení. Nicméně v několika případech stále nejsou plněny povinnosti ve vztahu k zavádění IPv6, a v jednom případě se dokonce skóre zavádění IPv6 na doméně snížilo. Dílčí nedostatky byly zjištěny u 11 úřadů z celkových 31 sledovaných (více zde).
+V současné době nejsou známy žádné skutečnosti, které by bránily těmto úřadům naplnit povinnosti vyplývající z usnesení vlády ze dne 17. ledna 2024 č. 49. Ministerstvo průmyslu a obchodu bude nadále komunikovat s úřady ve smyslu plnění povinností z předmětného usnesení.
+Kromě IPv6 se monitorovací testy zaměřují i na oblast e-mailové bezpečnosti. Většina institucí má správně nastavené základní ochranné mechanismy SPF (Sender Policy Framework) a DMARC (Domain-based Message Authentication, Reporting and Conformance), které pomáhají bránit zneužití e-mailových adres k podvodům. Naopak pokročilejší mechanismy (zejména DANE – DNS-based Authentication of Named Entities a MTA-STS – Mail Transfer Agent Strict Transport Security), které zajišťují bezpečnější doručování e-mailů, jsou ve většině případů buď chybějící, nebo neúplně nastavené. Podobně smíšený obraz vychází i u zabezpečení webových služeb pomocí certifikátů. U některých domén byly zjištěny problémy, například neúplný certifikační řetězec nebo blížící se expirace certifikátu, což může dočasně snížit důvěryhodnost webu nebo způsobit jeho horší dostupnost.
+Dalším sledovaným prvkem jsou takzvané CAA (Certification Authority Authorization) záznamy, které určují, která certifikační autorita smí vydávat bezpečnostní certifikáty pro danou doménu. Tyto záznamy u části institucí chybí, což sice neznamená okamžitý problém, ale představuje určitou rezervu v oblasti bezpečnostního nastavení.
+V budoucím období se Ministerstvo průmyslu a obchodu zaměří na testy dalších webů a služeb státu (např. ARES – Administrativní registr ekonomických subjektů), které doposud nebyly sledovány, ale z dosavadních zjištění je zřejmé, že nesplňují povinnosti uložené výše uvedeným usnesením.|E||T|HDMI 2.2 přichází a je připravené až pro nesmyslné rozlišení 16K|D|24.6. 10:45|P|HDMI 2.2 zvyšuje propustnost na 96 Gb/s a zlepšuje synchronizaci zvuku s obrazem. • Nové rozhraní je teď schopnější než konkurenční DisplayPort. • Je ...|X|HDMI 2.2 zvyšuje propustnost na 96 Gb/s a zlepšuje synchronizaci zvuku s obrazem. • Nové rozhraní je teď schopnější než konkurenční DisplayPort. • Je připravené pro rozlišení budoucnosti jako 12K a 16K.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Rada ČT žádá krizové scénáře i nezávislý personální audit kvůli vládní změně financování|D|24.6. 10:21|P|Rada České televize na mimořádném středečním zasedání reagovala na vládní návrh, který má změnit financování veřejnoprávních médií. Žádá vedení o kriz...|X|Rada České televize na mimořádném středečním zasedání reagovala na vládní návrh, který má změnit financování veřejnoprávních médií. Žádá vedení o krizové scénáře hospodaření i nezávislý personální audit a varuje, že nová úprava by finance televize vrátila na úroveň let 2008 až 2024.
+Generálního ředitele vyzvala, aby zpracoval krizové varianty hospodaření, a při hledání úspor se podle ní má přednostně zaměřit na provozní náklady, teprve potom na případné snižování počtu zaměstnanců nebo omezování programové tvorby.
+Pro usnesení hlasovalo 14 radních, proti byl Luboš Xaver Veselý a hlasování se zdržel Petr Šafařík.
+Rada zároveň žádá vedení televize o návrh zadání a zajištění nezávislého personálního auditu celé instituce. Postup výběru externí společnosti, která by audit provedla, má management předložit do 17. srpna 2026.
+Podle rady by současný návrh zákona finanční situaci České televize fakticky vrátil na úroveň let 2008 až 2024. V tomto období podle ní televize musela čerpat dodatečné prostředky z fondu poplatků, v němž už žádné disponibilní zdroje nejsou. Rada také připomněla, že na neadekvátní výši financí ČT upozorňuje opakovaně, první takové usnesení přijala jednomyslně už 7. prosince 2022.
+Generální ředitel má dál aktivně jednat se zákonodárci o konečné podobě návrhu, a to zejména s ohledem na objem prostředků, které bude mít televize v dalších letech k dispozici. Rada po něm zároveň chce analýzu dopadů změny financování na schopnost ČT plnit povinnosti dané platnou právní úpravou a analýzu možností dalšího plnění memoranda o naplňování veřejné služby v televizním vysílání pro období 2026 až 2030. Plnění memoranda za první pololetí roku 2026 má vedení vyhodnotit, případně s výhledem na druhé pololetí.
+Dozorčí komise rady se má podle usnesení přednostně věnovat monitoringu legislativních změn financování ČT a reakcí managementu na ně, což je součástí jejího plánu činnosti na třetí čtvrtletí 2026.
+Rada v usnesení rovněž konstatovala, že hospodaření České televize podléhá pravidelné kontrole. Každoročně zpracovává výroční zprávu o činnosti a hospodaření ČT a účetní závěrku televize ověřuje nezávislý auditor, společnost EY. Za rok 2025 vydal auditor stejně jako v předchozích letech výrok bez výhrad. Výroční zprávu za rok 2025 odeslala televize 11. června 2026 oběma komorám Parlamentu. Předseda rady ji má do týdne zaslat také předsedovi vlády a ministru kultury.|E||T|Alza začíná prodávat exoskelety. Robotická opora nohou uleví aktivním seniorům i hikerům při náročném výšlapu|D|24.6. 10:06|P|Alza rozšiřuje nabídku o další neobvyklou technologii. Nově prodává exoskelety, které mají pomáhat snižovat únavu svalů při túrách, náročné práci i dl...|X|Alza opět rozšiřuje nabídku o netradiční technologie. Po humanoidních robotech nyní přidává také exoskelety – nositelné robotické pomocníky, kteří mají ulevit svalům a kloubům při náročné chůzi, zdolávání terénu nebo fyzicky náročné práci.
+Pro koho exosleket vlastně je?
+Exoskelet je tvořen lehkou konstrukcí dvou ramen z uhlíkových vláken, která se upevňuje kolem pasu a stehen na koleny. Nejde přitom o zařízení, které by člověk aktivně „neslo“ nebo pohybovalo nohama za něj. Jeho úkolem je poskytnout oporu přesně ve chvíli, kdy nohy vynášíte směrem vzhůru. Motor krátkým impulsem pomůže snížit zátěž, kterou by jinak musely zvládnout svaly.
+Exoskelety Hypershell cílí hlavně na turisty a trekaře, kteří podnikají dlouhé hodiny v terénu a denně chodí dlouhé trasy s převýšením. Pomoci může také aktivním seniorům, cyklistům nebo trailistům pro udržení tempa a snížení laktátové únavy. Využití najde i u záchranářů nebo jiných týmů při náročných záchranných akcích nebo u pracovníků v profesích, kde je potřeba dlouhodobě chodit a přenášet zátěž.
+Alza má v nabídce celkem čtyři modely:
+- 
+		Hypershell X Go 400 W: základní model se snížením námahy až o 20 %, vhodný do města nebo lehkou turistiku. V balení je jedna baterie s životností asi 15 km. Cena 22 tisíc korun. 
+- 
+		Hypershell X Pro 800 W: pokročilejší model se snížením námahy až o 30 % vhodný pro náročnější turistiku, běh nebo cyklistiku. Dvě baterie v balení s životností asi 17,5 km. Cena 27 tisíc korun. 
+- 
+		Hypershell X Carbon 800 W: výkonově stejný jako model X Pro 800 W, pouze s nižší hmotností a prémiovějšími materiály jako titan a karbon. Cena: 39 tisíc korun 
+- 
+		Hypershell X Ultra 1000 W: nejvyšší model snižující námahu až o 40 % určený pro extrémní terén a dlouhé výpravy. Dvě baterie v balení, každá s výdrží 30 km. Cena 49 tisíc korun. 
+zdroj: Alza|E||T|Překonáme v neděli český teplotní rekord? Ptá se ČHMÚ. Některé modely předpovídají až 40 °C|D|24.6. 10:04|P|Západní Evropou postupuje teplý vzduch z Afriky a kontinentem se šíří další horká vlna, kterou bychom měli v následujících desítkách hodin pocítit i v...|X|Západní Evropou postupuje teplý vzduch z Afriky a kontinentem se šíří další horká vlna, kterou bychom měli v následujících desítkách hodin pocítit i ve střední Evropě.
+
+O tom, jakých maximálních teplot vzduchu se dočkáme, se vedou spekulace už déle než týden, modely se totiž ze začátku hodně lišily ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Rychlý mobilní signál dorazí do těchto 32 dosud zanedbaných lokalit|D|24.6. 08:56|P|Operátoři díky evropským dotacím výrazně rozšiřují mobilní pokrytí i do odlehlých částí Česka, kde vzniknou desítky nových vysílačů. O2 a CETIN nyní d...|X|Mobilní operátoři pokračují ve stavbě vysílačů v zejména venkovských lokalitách, kde doposud bylo slabé až žádné pokrytí. Děje se to díky evropským dotacím rozdělovaným z Národního plánu obnovy. T-Mobile nedávno oznámil, že dokončuje pokrytí 10 míst. Firmy O2 a CETIN nyní přišly s tím, že finišují projekty pro 32 venkovských lokalit, celkem jde o 20 vysílačů.
+„CETIN vybral takové lokality, kde z jedné věže pokryje více obcí. Všech 20 vysílačů, které jsme postavili, mohou kromě O2 využít i ostatní operátoři,“ uvedl Vladimír Filip, ředitel rozvoje sítí CETINu.
+Dotace se na stavbu vysílačů používají z toho důvodu, že se operátorům v běžném komerčním prostředí ekonomicky nevyplatí do takových aktivit investovat.
+“Výstavba mobilní infrastruktury ve venkovských oblastech patří mezi dlouhodobě nejnáročnější telekomunikační projekty. Vedle samotné investice je nutné zajistit vhodné pozemky, získat potřebná povolení, projít řadou správních procesů a zajistit napojení lokality na přenosovou infrastrukturu. Právě kombinace veřejné podpory, spolupráce samospráv a koordinace všech zapojených subjektů umožňuje realizovat projekty i v místech, kde by jejich výstavba byla za běžných podmínek obtížně realizovatelná,” uvedli podle serveru Lupa.cz operátoři O2 a CETIN.
+“Kromě využití dotačního programu operátor O2 prostřednictvím společnosti CETIN v posledních letech pokryl nebo pokryje téměř 700 venkovských lokalit po celé České republice při plnění podmínek uložených Českým telekomunikačním úřadem,” dodal O2.
+Seznam nových lokalit je následující:
+- Hvězdonice (okres Benešov)
+- Doubravice (okres Benešov)
+- Kouty, Smilkov (okres Benešov)
+- Zdeboř (okres Benešov)
+- Líštěnec (okres Benešov)
+- Běštín (okres Beroun)
+- Zátor (okres Beroun)
+- Nová Studnice, Hradečno (okres Kladno)
+- Nová Telib (okres Mladá Boleslav)
+- Všešímy, Kunice (okres Praha-východ)
+- Malkovice, Sedlec-Prčice (okres Příbram)
+- Nové Dvory, Sedlec-Prčice (okres Příbram)
+- Horní Matějov (okres Příbram)
+- Myslkov (okres Příbram)
+- Velká, Kamýk nad Vltavou (okres Příbram)
+- Vápenice (okres Příbram)
+- Dobrkovská Lhotka, Slavče (okres České Budějovice)
+- Dolní Lhotka (okres České Budějovice)
+- Mohuřice (okres České Budějovice)
+- Novosedly, Kájov (okres Český Krumlov)
+- Mezipotočí (okres Český Krumlov)
+- Nový Vojířov, Nová Bystřice (okres Jindřichův Hradec)
+- Vyšetice, Šebířov (okres Tábor)
+- Lhýšov (okres Tábor)
+- Sychrov, Kozlov (okres Havlíčkův Brod)
+- Frankův Zhořec, Stránecká Zhoř (okres Žďár nad Sázavou)
+- Lhota u Lysic (okres Blansko)
+- Radějov (okres Hodonín)
+- Lučina (okres Hodonín)
+- Plaveč (okres Znojmo)
+- Výrovice (okres Znojmo)
+- Linhartovy, Město Albrechtice (okres Bruntál)
+- Pavlínov (okres Žďár nad Sázavou)|E||T|Co chystá PlayStation: Superhrdinové z komiksů, božské síly a dozvuky honby za live service trendy|D|24.6. 08:45|P|PlayStation neprožívá zrovna vydařenou generaci. Příběhových AAA hitů není moc, většina live service novinek byla zrušená před oznámením nebo nedlouho...|X|PlayStation neprožívá zrovna vydařenou generaci. Příběhových AAA hitů není moc, většina live service novinek byla zrušená před oznámením nebo nedlouho po premiéře. Pojďme se podívat, co v jeho studiích aktuálně vzniká.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Zdrojové kódy k legendární české hře Operace Flashpoint jsou k dispozici zdarma, chystá se i předělávka s dabingem|D|24.6. 07:46|P|Česká společnost Bohemia Interactive zveřejnila zdrojové kódy k legendární hře Operace Flashpoint, stalo se tak v rámci výročí 25 let od vydání. Zdroj...|X|Česká společnost Bohemia Interactive zveřejnila zdrojové kódy k legendární hře Operace Flashpoint, stalo se tak v rámci výročí 25 let od vydání. Zdrojáky jsou k dispozici na GitHubu. Součástí jsou kódy k samotné hře a zároveň k enginu, na němž běžela.
 Data nejsou distribuovaná pod názvem Operace Flashpoint. K něm totiž Bohemka před lety ztratila práva, drží je vydavatel Codemasters, s nímž Česi spolupracovali. Bohemia Interactive následně rozjela vlastní sérií Arma, která z Flashpointu vychází. Zdrojové kódy k Flashpointu jsou tak vydané pod názvem Arma: Cold War Assault Remastered.
 Podle názvu je jasné, že jde tedy o modernizovanou verzi Flashpointu schopnou běžet na moderních systémech včetně Linuxu a tak dále. Bohemka totiž kromě zdrojových kódů chystá vydání samotného remasteru, jehož součástí bude i český dabing. Datum vydání nebylo specifikováno, na Steamu je k dispozici demo.
 Zdrojáky jsou primárně v C++. Komunita má k dispozici rovněž assety, takže může začít vytvářet mody, mise a další obsah. Je pravděpodobné, že se dočkáme různých předělávek, portů na všemožné platformy a zařízení a podobně.|E||T|Špičkové hodinky zlevnily na minimum. Amazfit T-Rex 3 Pro mají svítilnu, jasný displej a extrémní výdrž|D|24.6. 07:45|P|Amazfit T-Rex 3 Pro teď koupíte jen za 7990 Kč. • Konkurent Garminů láká na superjasný displej, navigaci, odolné tělo a svítilnu. • Hodinkami také zap...|X|Amazfit T-Rex 3 Pro teď koupíte jen za 7990 Kč. • Konkurent Garminů láká na superjasný displej, navigaci, odolné tělo a svítilnu. • Hodinkami také zaplatíte, mají hlasové ovládání a vydrží skoro měsíc.

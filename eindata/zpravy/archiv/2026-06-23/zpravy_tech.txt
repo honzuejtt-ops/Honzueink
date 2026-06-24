@@ -1,4 +1,3 @@
-|T|Chyba|D||P|Něco se pokazilo.|X|HTTPSConnectionPool(host='www.zive.cz', port=443): Read timed out. (read timeout=10)|E|
 |T|Záhada síťové černé díry: když ping funguje, ale data neprojdou|D|23.6. 22:00|P|Ping prochází, ale spojení beznadějně zamrzne a aplikace padnou na timeout. Stojíte před jedním z nejzáludnějších síťových problémů současnosti – čern...|X|Před pár lety jsem měl problémy s načítáním u jednoho známého zpravodajského webu. Doma mi to na stolním počítači nefungovalo, ani na notebooku. Občas se něco načetlo, něco nenačetlo. Rozhodně než se načetla krátká stránka, trvalo to celou věčnost. Co mě ovšem překvapilo, v jiných domácnostech to fungovalo v pohodě. Znáte to, záhadný problém mezi nebem a zemí.
 Co se dozvíte v článku
 - Anatomie paketu: Co je MTU?
@@ -195,6 +194,7 @@ Across these forums, including now through Appia, our goal is to translate lesso
 |T|Alza začala prodávat exoskelety Hypershell. Seniorům pomohou s výletem, sportovcům klidně na Everest|D|23.6. 12:45|P|Aktivní exoskelet udělá chodcům stejnou službu, jako elektrokolo cyklistům. Je to moderní asistenční doplněk, který pomocí baterie, elektromotoru a ko...|X|Aktivní exoskelet udělá chodcům stejnou službu, jako elektrokolo cyklistům. Je to moderní asistenční doplněk, který pomocí baterie, elektromotoru a konstrukce upevněné k pasu a nohám usnadní práci svalům a kloubům. Ať už se chystáte na dlouhou horskou túru, zdolávání složitého terénu nebo vás čeká ...
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Chyba|D|23.6. 12:00|P|Něco se pokazilo.|X|HTTPSConnectionPool(host='www.zive.cz', port=443): Read timed out. (read timeout=10)|E|
 |T|Proč už automobilky nechtějí Android Auto. Nejde jen o data, ale i miliardy z předplatného|D|23.6. 11:45|P||X|
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|

@@ -1,0 +1,7 @@
+Článek
+Deutsche Bahn (DB) a další železniční společnosti v Německu zastavily své vlaky kvůli poruše, která zasáhla digitální železniční rádiový systém GSM-R. O půlnoci, tedy půldruhé hodiny po nahlášení problému, společnost DB uvedla, že odhalila příčinu, aniž by ji ale blíže specifikovala. První vlaky se rozjely zhruba půl hodiny nato.
+Poruchou byly zasaženy nejen dálkové a regionální vlaky, ale také příměstské vlaky S-Bahn provozované DB, jakož i soukromé vlaky. V Berlíně byl například zastaven provoz v celé síti S-Bahn, stejně jako ve Stuttgartu. V Hamburku naopak vlaky Hochbahn jezdily. Výpadek postihl také nákladní železniční dopravu, uvedla DPA.
+Šéfka DB Evelyn Pallaová řekla deníku Bild, že situace ohledně výpadku rádiové komunikace se stabilizovala pomocí nouzového systému. Dráhy slíbily cestujícím poukázky na taxi a ubytování v hotelech a tam, kde to bylo možné, jim umožnily počkat ve vlacích.
+Problémy budou částečně přetrvávat až do středeční ranní dopravní špičky. DB na X oznámila, že je nutné minimálně do 06:00 počítat se zpožděními či krátkodobými výpadky spojů.
+GSM-R, což je zkratka pro Global System for Mobile Communications - Railway, je mezinárodní standard bezdrátové komunikace určený pro železniční aplikace. S jeho pomocí se uskutečňuje komunikace mezi strojvedoucími a dispečerskými centry řízení železnice.
+Německý železniční systém v minulosti ve výjimečných případech zastavil provoz všech nebo většiny vlaků, avšak bylo to vlivem nepříznivého počasí, nikoliv z technických důvodů, připomíná agentura AP.

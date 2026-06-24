@@ -1,4 +1,73 @@
-|T|Pět let od nejničivějšího tornáda v moderních dějinách Česka. Jeho stopy jsou v krajině stále jasně vidět|D|24.6. 13:45|P|Dnes je to rovných pět let od chvíle, kdy se jihem Moravy prohnalo nejničivější tornádo v moderních českých dějinách.
+|T|Jak dobře vybrat myš. Neřešte tolik citlivost, důležitější jsou ergonomie a možnosti nastavení|D|24.6. 16:45|P|Bezdrátové myši jsou hit, ale kabelové budou spolehlivější • Kdy zvolit optickou a kdy laserovou myš? • Proč není třeba honit se za co nejvyšší citliv...|X|Bezdrátové myši jsou hit, ale kabelové budou spolehlivější • Kdy zvolit optickou a kdy laserovou myš? • Proč není třeba honit se za co nejvyšší citlivostí?
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Intel chystá nový 3nm výrobní proces – ve spolupráci s UMC. Mohla by to být spása pro levnější hardware a počítače|D|24.6. 16:23|P|Spolupráce Intelu s foundry výrobcem UMC prý nepřinese jenom dostupný 12nm proces, ale také novou 3nm technologii. Ta by mohla dost zamíchat situací n...|X|Jak známo, Intel se snaží etablovat jako tzv. Foundry výrobce, v jehož továrnách by mohli vyrábět čipy externí klienti podobně jako u TSMC nebo Samsungu. Proti těmto výrobcům mu ale teď schází katalog starších levnějších procesů. Kvůli tomu firma před časem navázala spolupráci s tchajwanským UMC, jejímž výsledkem má být levný a lehce použitelný 12nm proces. Ale zdá se, že později by takto mohl vzniknout i dostupný 3nm proces.
+Podle analytické firmy Funda projekt společného 12nm procesu Intelu a UMC pokračuje a je připravována jeho dostupnost v arizonské továrně Intelu. Letos by měly být hotové a připravené nástroje a Product Design Kity, přičemž první tzv. tape-outy klientů jsou očekávané v příštím roce a první čipy zákazníků by mohly jít do masové výroby před koncem roku 2027. Pochopitelně pokud se nevyskytnou problémy a zdržení – je asi poměrně vysoká šance, že se toto ukáže být příliš optimistické.
+3nm proces UMC a Intelu?
+Funda ale uvádí zajímavější věc: Spolupráce Intelu s UMC byla údajně rozšířena i na projekt společného 3nm procesu. Zdá se, že by nemuselo jít jen o to, že UMC začne nabízet v nezměněné podobě již existující 3nm proces Intelu. Má totiž jít o technologii, kterou pak bude nabízet také Intel, a z toho by vyplývalo, že ve skutečnosti tento společný 3nm proces bude odlišný a obohacený o nějaké příspěvky a vklady UMC. Funda uvádí, že cílem je, aby proces byl zhruba výkonnostně konkurenceschopný (a pravděpodobně pro zákazníky levnější) proti 3nm procesu TSMC.
+Intel už 3nm proces má (označený Intel 3), vyrábí na něm serverové procesory Granite Rapids (Xeon 6900P) a menší část levnějších procesorů Core Ultra 200 (rodiny Arrow Lake-U, která je dost specifická). Tento proces představuje zlepšení 4nm procesu Intelu a je asi spíše porovnatelný s 5nm nebo 4nm procesem TSMC, zatímco 3nm technologie TSMC je o generaci dál.
+Tato technologie Intel 3 měla původně také být součástí nabídky pro externí foundry klienty, ale zatím v tom patrně selhala. Spolupráce s UMC by mohla toto selhání napravit, pokud součástí programu jsou úpravy technologie a jejích návrhových pravidel a zákaznické podpory tak, aby byla technologie pro externí klienty snáze použitelná a přístupná. To je něco, s čím má UMC větší zkušenosti.
+Je otázka, zda se díky jeho přispění povede technologii Intel 3 také zlevnit. To by teoreticky mohlo z tohoto procesu udělat ideální technologii pro velké množství produktů, pro které jsou problémem neustále strmě rostoucí ceny pokročilých technologií. Pokud by se podařilo vyvinout proces, který by se z trendu trochu vymykal v pozitivním smyslu (výrazně lepším poměrem výkonu a energetické efektivity vzhledem k ceně), mohlo by to zpomalit nebo i zvrátit obecné zdražování počítačů, mobilních zařízení a různých komponent.
+UMC by současně v této technologii dostalo velkou vzpruhu, doteď je (nebo přesněji bude) v jeho výrobním portfoliu nejmodernější právě 12nm proces vyvinutý s Intelem, který je sice FinFETový, ale jde už o „legacy“ technologii ve srovnání s tzv. moderními procesy. Jeho cílem jsou hlavně embedded čipy, síťové adaptéry a podobné čipy.
+3nm proces je dnes ale pořád blízko špičce a mohl by být univerzálně použitelný i třeba pro mobilní procesory Arm do dostupnějších telefonů. A UMC by s ním poskočilo technologicky výš, než kde je čínský foundry podnik SMIC (respektive kde je dnes kvůli tomu, že nemá přístup k EUV technologii). Pokud by se tedy tento projekt zdařil, mohla by výrazně posílit pozice UMC v čipovém průmyslu vedle pozice Intelu jakou poskytovatele foundry služeb. A přitom by to současně mohlo hodně prospět celému trhu i nám koncovým zákazníkům. Zda se ale povede tento potenciál opravdu realizovat, to se teprve uvidí.
+Zdroj: Jukan|E||T|Oneplay přidává podcasty, upravuje zadávání PINu a rozšiřuje sportovní statistiky|D|24.6. 16:01|P|Služba Oneplay začala nabízet také podcasty. Jejich zavedení patří mezi červnové aktualizace platformy. Upraveno bylo také zadávání rodičovského PINu ...|X|Služba Oneplay začala nabízet také podcasty. Jejich zavedení patří mezi červnové aktualizace platformy. Upraveno bylo také zadávání rodičovského PINu při automatickém přehrávání pořadů a k závodům Formule 1 přibyly podrobnější statistiky.
+Podcasty jsou v sekci Zprávy, která je dostupná z hlavní stránky. Pokud si je uživatel spustí v mobilní aplikaci Oneplay, budou se přehrávat i při zamčené obrazovce telefonu (například jako na Spotify).
+V nabídce jsou zatím podcasty Rozstřel, Odkryto.cz: Tajná složka, Money Maker, Klub rváčů, Kontakt tam byl a Růžička & Vořechovský. Kromě speciální sekce se objevují také mezi ostatními pořady v příslušných žánrových kategoriích (například v kategorii Publicistika).
+Další změna se týká zadávání PINu u obsahu s věkovým omezením. Oneplay už ho nebude při automatickém přehrávání vyžadovat znovu, pokud následující pořad nemá vyšší úroveň omezení. Pokud uživatel zadal PIN například pro obsah označený 12+, nebude ho muset opakovat u dalšího pořadu se stejnou nebo nižší úrovní omezení. Při přechodu na obsah 15+ ale ověření zůstane.
+Platforma zároveň rozšiřuje sportovní servis u Formule 1. Do přehrávače a detailu soutěže přidává podrobné statistiky. Podobný servis znají diváci NHL, Chance ligy a Tipsport extraligy.|E||T|Operátoři pokryli první železniční tunely 5G sítí. Do pěti let mají zmizet výpadky na hlavních koridorech|D|24.6. 15:45|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Ceny Škody Peaq jsou příjemné překvapení. Startuje na 1 150 000 Kč, jen se musíte smířit s barvou, jakou má váš pošťák|D|24.6. 14:45|P|Včera představený sedmimístný elektromobil Škoda Peaq zná své ceny. Automobilka spustila konfigurátor, auto si můžete hned objednat, výroba začne v ná...|X|Včera představený sedmimístný elektromobil Škoda Peaq zná své ceny. Automobilka spustila konfigurátor, auto si můžete hned objednat, výroba začne v následujících týdnech a první vozy se dostanou k zákazníkům koncem roku.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hned při premiéře řekl šéf ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Pět let od nejničivějšího tornáda v moderních dějinách Česka. Jeho stopy jsou v krajině stále jasně vidět|D|24.6. 13:45|P|Dnes je to rovných pět let od chvíle, kdy se jihem Moravy prohnalo nejničivější tornádo v moderních českých dějinách.
 
 Jak ukazuje schéma níže z tehde...|X|Dnes je to rovných pět let od chvíle, kdy se jihem Moravy prohnalo nejničivější tornádo v moderních českých dějinách.
 
@@ -13,7 +82,7 @@ Závěrečný verdikt youtubera Geekboy tak zní, že HelloComp má aktuálně n
 zdroj: YouTube (kanál GeekBoy)|E||T|Prima od července upravuje organizační strukturu|D|24.6. 12:46|P|Mediální skupina Prima ohlásila úpravy organizační struktury, které začnou platit od 1. července 2026. Generální ředitel Marek Singer se přesouvá do d...|X|Mediální skupina Prima ohlásila úpravy organizační struktury, které začnou platit od 1. července 2026. Generální ředitel Marek Singer se přesouvá do dozorčí rady. Novým generálním ředitelem se stává dosavadní výkonný ředitel Lukáš Kubát, který od Singera převzal denní řízení skupiny loni v září.
 Singer bude nyní v dozorčí radě odpovídat za strategii a hledání nových obchodních příležitostí, firma jeho pozici označuje anglickým titulem Chief Strategy & New Business Officer.
 Druhou podstatnou změnou je posílení role Alex Ruzek. Dosavadní programová ředitelka nově povede vedle televizního vysílání i rozhlasové stanice skupiny a stává se členkou užšího vedení. Sloučení televize a rádií pod jedno řízení patří k hlavním organizačním posunům, které skupina ohlašuje.
-Užší vedení skupiny budou od července tvořit Kubát jako generální ředitel, Jan Dosoudil jako finanční ředitel, Alex Ruzek jako ředitelka pro televizní a rozhlasové vysílání a Jan Wykrytowicz jako ředitel pro streaming. Obchodního ředitele skupina zatím hledá.
+Užší vedení skupiny budou od července tvořit Kubát jako generální ředitel, Jan Dosoudil jako finanční ředitel, Alex Ruzek jako ředitelka pro televizní a rozhlasové vysílání, Josef Stránský jako technický ředitel a Jan Wykrytowicz jako ředitel pro streaming. Obchodního ředitele skupina zatím hledá.
 Do dozorčí rady vedle Singera zamíří také dosavadní člen vedení a investiční ředitel GES Group Jaroslav Hrabovský a finanční manažerka téže skupiny Johana Wimmerová.
 Nová organizační struktura podle tiskové zprávy „podporuje další rozvoj všech klíčových oblastí aktivit skupiny Prima a zrychluje dynamiku procesů v době pokračující transformace mediálního trhu“.|E||T|Terminátor na silničce. Canyon nacpal do helmy Head-Up displej, stěrač a AI, abyste si měli s kým povídat|D|24.6. 12:45|P|Canyon Stingr Smart Helmet je futuristický koncept chytré helmy, která v sobě integruje hned několik zajímavých technologií. Především je součástí sys...|X|Canyon Stingr Smart Helmet je futuristický koncept chytré helmy, která v sobě integruje hned několik zajímavých technologií. Především je součástí systému Canyon Predict, který má jezdce upozornit na různá rizika dříve, než k nim přijede. Konkrétní příklady výrobce zveřejní na veletrhu Eurobike, ...
 
@@ -292,8 +361,6 @@ Unutmaz feels fortunate to be part of this time of discovery. “To not only be 
 - 2026
 - GPT|E||T|Vybrali jsme 15 nejlepších levných smartphonů. Výkon ani výdrž už nebrzdí, tahounem je silná baterie|D|23.6. 16:15|P|Toto je 15 levných smartphonů, které se vyplatí koupit i když máte omezený rozpočet • Výkon už je dostatečný u většiny modelů • V této kategorii se ře...|X|Toto je 15 levných smartphonů, které se vyplatí koupit i když máte omezený rozpočet • Výkon už je dostatečný u většiny modelů • V této kategorii se řeší hlavně displej, kapacita baterie a čím dál více i odolnost
 
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Apple TV a 30 nejoblíbenějších filmů a seriálů. Na co se Češi v červnu 2026 nejvíc dívají|D|23.6. 15:45|P|Tyto filmy a seriály jsou na Apple TV mezi českými předplatiteli nejoblíbenější. Nerozlišujeme žánr, stáří ani hodnocení na filmových webech. Jde o so...|X|Tyto filmy a seriály jsou na Apple TV mezi českými předplatiteli nejoblíbenější. Nerozlišujeme žánr, stáří ani hodnocení na filmových webech. Jde o souhrnnou oblíbenost, kterou zjišťuje web FlixPatrol.
-
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|FSR 4.1 přináší lepší kvalitu i výkon pro Radeony RX 7000, vydání je tady. Pro APU se chystá odlehčená verze|D|23.6. 15:32|P|Je to nakonec dřív (původně byl oznámen termín v červenci), ale majitelé grafik Radeon RX 7000 teď konečně mají oficiálně AI upscaling FSR 4.1 a mohou...|X|V květnu AMD oznámilo, že grafické karty Radeon RX 7000 a později i Radeony RX 6000 dostanou podporu AI upscalingu FSR 4.1. Novější řada se měla dočkat příští měsíc, ale nakonec byla technologie vydána už včera, možná kvůli současnému oficiálnímu vydání Valve Steam Machine, která má v sobě právě grafiku ze série Radeon RX 7000. A pozor: Oficiální FSR 4.1 by mělo fungovat lépe než uniklé knihovny FSR4, které se daly používat neoficiálně.
 FSR 4.1 (a FSR4 obecně) běžící na grafikách Radeon RX 9000 využívá výpočty s hodnotami FP8, které nejsou podporované na grafikách s architekturou RDNA 2 a RDNA 3. Pro ty muselo AMD vytvořit alternativní model používající výpočty INT8 (osmibitové celočíselné hodnoty). Starší vývojová verze unikla na internet s vydáním kódu FSR4 před rokem a dala se neoficiálně používat například pomocí utility Optiscaler.
 Podle AMD bylo ale třeba technologii vylepšit a vyladit, než mohla být vydána oficiálně, což nastává s verzí FSR 4.1 nyní pro Radeony RX 7000. Pro Radeony RX 6000 bude třeba ještě dalších úprav, aby byly výkon a kvalita dostatečné.
@@ -337,20 +404,11 @@ Across these forums, including now through Appia, our goal is to translate lesso
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Teams jsou tak nenažrané, že do nich Microsoft přidává „úsporný režim“. Moc toho ale nevyřeší|D|23.6. 10:45|P|Microsoft Teams přidávají do výbavy úsporný režim. • Na pomalejších strojcích bude ve výchozím stavu zapnutý. • Distribuce funkce by měla trvat do kon...|X|Microsoft Teams přidávají do výbavy úsporný režim. • Na pomalejších strojcích bude ve výchozím stavu zapnutý. • Distribuce funkce by měla trvat do konce června.
 
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Češi vyvinuli no-code/low-code platformu pro rozhodování ve firmě, mají klienty od Londýna po Wellington|D|23.6. 10:18|P|V pražské společnosti DecisionRules vsadili před lety na no-code a low-code řešení. Vytvořili platformu, která firmám umožňuje nastavovat pravidla pro...|X|V pražské společnosti DecisionRules vsadili před lety na no-code a low-code řešení. Vytvořili platformu, která firmám umožňuje nastavovat pravidla pro to, jak se uvnitř nich bude rozhodovat tak, aby vše probíhalo co nejvíc automaticky. Společnostem otevřeli grafické rozhraní, ve kterém můžou pravidla vytvářet, přesouvat a navazovat a následně je propojit s vlastními systémy prostřednictvím API. Platforma se za dobu své existence rozšířila o americkou entitu a dostala na šest kontinentů, od Londýna přes São Paulo až po Wellington. Má roční výnosy (ARR) ve výši 1,6 milionu eur a nejnověji hlásí investici ve výši 1,5 milionu eur (přes 36 milionů Kč) od brněnského fondu Jet Ventures 1 Igora Fajta.
-Platforma DecisionRules je komerčně na trhu od roku 2021. Využívá se například pro schvalování úvěrů, výpočet cen, pojišťovací procesy nebo odhalování podvodů. Pokud firma potřebuje změnit podmínky rozhodování, může tak učinit bez zásahu vývojářů. Proklamovaným cílem společnosti je oddělit obchodní logiku od samotného softwaru a umožnit analytikům či manažerům upravovat firemní pravidla samostatně.
-Nynější investice má směřovat mimo jiné do AI, už teď firma nabízí AI asistenta pro tvorbu byznysových pravidel nebo AI agenty zapojené do rozhodovacích procesů. „Naší ambicí je poprat se o velké zákazníky s předními dodavateli technologií na poli automatizace rozhodovacích procesů,“ přeje si Václav Kandrnal, spoluzakladatel a CEO DecisionRules. Za firmou s ním stojí také Petr Lev jako druhý spoluzakladatel.
-Pro Jet Venture 1 je to sedmá investice. Je součástí investiční společnosti Jet Investment, která spravuje aktiva ve výši 17 miliard Kč. Má ambici zařadit do portfolia fondu investice do majetkových podílů v inovativních začínajících firmách v Česku i dalších zemích střední Evropy v hodnotě až 50 milionů eur.|E||T|Před 76 lety se na scéně objevily první televizní ovladače. Byly naprosto šílené, měly motorky, lampičky a ultrazvukové varhany|D|23.6. 10:12|P|Před 76 lety se na scéně objevil první televizní dálkový ovladač na světě. Říkali mu Lazy Bones (Líné kosti) a na první pohled připomínal drátový ovla...|X|Před 76 lety se na scéně objevil první televizní dálkový ovladač na světě. Říkali mu Lazy Bones (Líné kosti) a na první pohled připomínal drátový ovladač na autíčka z dětství současných čtyřicátníků.
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Před 76 lety se na scéně objevily první televizní ovladače. Byly naprosto šílené, měly motorky, lampičky a ultrazvukové varhany|D|23.6. 10:12|P|Před 76 lety se na scéně objevil první televizní dálkový ovladač na světě. Říkali mu Lazy Bones (Líné kosti) a na první pohled připomínal drátový ovla...|X|Před 76 lety se na scéně objevil první televizní dálkový ovladač na světě. Říkali mu Lazy Bones (Líné kosti) a na první pohled připomínal drátový ovladač na autíčka z dětství současných čtyřicátníků.
 
 Tím ovšem veškerá podobnost končí, samotné technické řešení vám totiž vyrazí dech.
 
 Lazy Bones: ...
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Cena Steam Machine startuje na 25 tisících korunách. O prvních majitelích rozhodne náhoda|D|23.6. 07:45|P||X|
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Koupací zpráva EU: Nejméně fekálií čekejte v létě na Kypru, v Řecku a Bulharsku. Česko za polovinou, Slovensko na chvostu|D|23.6. 05:45|P|Krátce před vypuknutím letních prázdnin se Evropská agentura pro životní prostředí pochlubila statistikou kvality koupacích vod Bathing Water Report. ...|X|Krátce před vypuknutím letních prázdnin se Evropská agentura pro životní prostředí pochlubila statistikou kvality koupacích vod Bathing Water Report. Zpráva zpětně hodnotí sezónu 2025, a tak můžeme jen doufat, že se jakost od té doby výrazně nezměnila.
-
-Report doplňuje interaktivní webová mapa ...
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Rusko chystá vlastní Starlink. Do pár let vypustí až 900 satelitů, komerční provoz startuje příští rok|D|23.6. 05:30|P|Rusko plánuje do příštích let vybudovat vlastní satelitní internetovou síť, která má fungovat jako menší alternativa ke Starlinku a postupně pokrýt ve...|X|Rusko plánuje v příštím roce spustit vlastní satelitní internetový systém, který má být menší alternativou ke Starlinku od SpaceX. Projekt vzniká v rámci snahy o větší technologickou soběstačnost a nezávislost na západních službách, které jsou v zemi navíc částečně omezené.
 Za vývojem stojí společnost Iks Holding a její projektová divize Bureau 1440. Ta už na oběžnou dráhu vyslala první testovací várku 16 satelitů, které tvoří základ budoucí sítě. Cílem je postupně vybudovat plnohodnotnou konstelaci pro vysokorychlostní internet.

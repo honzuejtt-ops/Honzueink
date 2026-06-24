@@ -1,0 +1,9 @@
+Článek
+Změna je součástí sjednocování digitálních služeb veřejné správy pod doménu gov.cz.
+„Doména gov.cz je pro občany jasným signálem, že komunikují přímo se státem. Při nákupu dálniční známky proto doporučujeme vždy zkontrolovat adresu v prohlížeči. Uživatelé tak mají jistotu, že využívají oficiální službu a platí pouze zákonem stanovenou cenu dálniční známky,“ řekla Lucie Bartáková ze Státního fondu dopravní infrastruktury, který je správcem systému.
+Původní adresa edalnice.cz zůstává nadále funkční a uživatele automaticky přesměruje na novou doménu. Beze změny zůstávají všechny služby včetně ověření platnosti, správy e-známky nebo telefonní linka zákaznické podpory 222 266 757. Adresa mailové podpory se změní z původní info@edalnice.cz na info@edalnice.gov.cz.
+S přechodem na novou adresu dochází také k mírné úpravě vzhledu e-shopu, tak aby odpovídal jednotné vizuální identitě státních digitálních služeb.
+„Uživatelé si mohou všimnout drobných změn v grafice nebo barevnosti. Tyto prvky ale nejsou rozhodující pro ověření pravosti webu. Nejspolehlivějším vodítkem je vždy adresa edalnice.gov.cz v prohlížeči,“ dodal Jan Paroubek, ředitel státního podniku CENDIS, který systém elektronické dálniční známky provozuje.
+Neoficiální e-shopy na rozličných adresách prodávají dálniční známky často s poplatkem několika stovek korun navíc. Přeprodej s poplatkem přitom není trestný.
+Ojediněle se objevují i vysloveně podvodné weby, které stáhnou z účtu i částky ve výši tisícovek korun a známku ani nedoručí.
+Na webu edalnice.gov.cz funguje také rozcestník s odkazy na oficiální e-shopy okolních států – Rakouska, Slovinska, Slovenska, Maďarska, Švýcarska, Bulharska a Rumunska.

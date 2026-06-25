@@ -1,3 +1,27 @@
+|T|Jaký je Radeon RX 580 s 8 GB GDDR5 pamětí 9 let od uvedení na trh?|D|25.6. 22:00|P|Dá se vůbec plnohodnotně provozovat grafická karta s GPU AMD z roku 2017. Karta, která byla symbolem těžení BTC na GPU? Jak si stojí Radeon RX 580 v k...|X|Když se psal rok 2017, žili jsme ve zcela jiném světě. Ropa přes Hormuzský průliv proudila naplno, na Ukrajině se pěstovalo obilí pro půlku planety. Do COVIDu zbývalo dva a půl roku, Trump se stal poprvé prezidentem USA, hnutí #MeToo jelo naplno, byly potvrzeny gravitační vlny, bitcoiny se těžily o 106, skomírající AMD teprve uváděla první Ryzeny, ale také nové Radeony RX 580, které byly mírnou evolucí předchozí generace reprezentované modelem RX 480 a sloužily jako konkurence pro famózní GeForce GTX 1080 Ti.
+Do ChatGPT také ještě bylo relativně daleko, TikTok také ještě nebyl globálním fenoménem. Zkrátka svět byl úplně, ale úplně jiný, než dnes. A právě tehdy byla vyrobena karta, kterou jsem před několika týdny získal a jal se o ní napsat další díl svých Bazarovin. Lze-li nějak stručně charakterizovat nikoli tento můj fetiš, ale typický Radeon RX 580 sehnatelný v roce 2026, pak jde o kartu, která:
+- má výkon pod úrovní současných APU
+- žere jako blázen (TBP 225 W)
+		- a to i v klidu (~15 W)
+ 
+- nemá architektonickou podporu pro AI/LLM či tenzorové výpočty
+- je už řadu let bez aktivní podpory AMD na majoritní platformě
+		- amdgpu je fajn
+ 
+- má za sebou téměř jistě mnoho let pod 100% zátěží u nějakého těžaře, čili má
+		- opotřebované napájecí obvody
+- unavené ventilátory
+- potila se léta ve vlastní šťávě
+- nikdo vám nezaručí, že přežije týden-měsíc-rok.
+ 
+Nicméně ta karta má jednu výhodu: pokud vám ji někdo nedaruje čistě proto, že „mu ten krám doma překáží“, nebo nenajdete každý týden další kus pohozen u kontejneru na elektroodpad (jako někteří logoutové), pak je typicky poměrně levná. Na Linuxu si pak užívá podpory v rámci ovladače AMDGPU, tedy včetně API Vulkan. Z hlediska her nic zásadního nechybí (možná novější generace FSR, ale …), z hlediska výpočetního je neduhem absence podpory v rámci ROCm, což je jediné ze strany AMD aktivně vyvíjené řešení (jak již zaznělo, tato generace už nepožívá aktivní podpory). Lze se tak spolehnout spíš na RustiCL z balíku Mesa, což je mimochodem preferované OpenCL řešení pro Radeony v nové verzi darktable 5.6 pro AI nástroje jako denoising, upscaling či detekci objektů.
+Já konkrétně zvolil vyšší verzi od Sapphire, u které se dalo předpokládat, že neumře hned. Dorazila mi karta od člověka, který tvrdil, že ji poslední rok provozoval na lehčí hraní a koupil ji už z druhé ruky.
+Jako vždy jsem jako první krok kartu rychle otestoval (běžela, ale chovala se „divně“) a jako krok druhý celou rozebral a zjistil, že pasta na GPU je drolivé letité cosi a z druhé strany asi chybí teplovodivé polštářky v oblasti napájecích obvodů. Místo nich tam bylo pár útržků jisté kameniny, která kdysi teplovodivým polštářkem možná byla, ale rozhodně toho nebylo dost. Pokud tedy předchozí majitel kartu provozoval, pak patrně dostávala na frak ještě víc, ale s ohledem na občasné hraní to nebylo zásadní. Spíše bych vyjádřil obavy o ty předchozí roky, kdy karta jistě těžila. Já jsem majitel třetí, druhý majitel byl spíše neználek, první majitel pak německá zatáčka, která evidentně poslala dál do oběhu poškozenou kartu.
+Nu což, to je riziko podnikání, zhruba stejné, jako když u starého foťáku ve stavu „plně funkční“ opravuji závěrku nebo čistím clonu od mastnoty, objektiv od prachu mezi čočkami apod. Kartu mám nově přepastovánu, teploty GPU šly o víc než 10 °C dolů za současně tiššího chodu ventilátorů a na horním plechu je cítit, že z napájecích obvodů je na druhou stranu PCB a na tento plech výrazně lepší přenos tepla. Pokud jsem nic nepřehlédl, tak vyřešeno (pokud z fotek poznáte, že přehlédl, napište mi prosím do diskuse).
+Zprovoznění je naprosto triviální, kartu stačí osadit do PC, systém použije ovladač AMDGPU a vše najednou funguje. Varianta od Sapphire je mimochodem fajn v tom, co Sapphire dělá po léta: při běhu běžného desktopu, tedy při minimální zátěži, nezapíná ventilátory.
+K výkonu není moc co říci, Radeon RX 580 dává přibližně 6 TFLOPS v single-precision, je limitována 8 GB grafické RAM, neumí moderní FSR / DLSS záležitosti, ale pokud priorita nejsou hry posledních let, nebo náročně GPGPU výpočty, pak může za cenu vyšší spotřeby oproti současným řešením být stále k užitku.
+Z hlediska výstupů lze na tomto modelu provozovat bez potíží 3840×2160 i při více než 60 Hz, nebo 5k/60Hz, případně 8k/30Hz – nic z toho neověřím, jsa uživatelem monitoru s menším než 4k rozlišením, nicméně 3840×2160/60Hz jsem provozoval už na jaře roku 2014 na Radeonu R9 295 X2, takže zde jistě problém nebude.
+Co říci závěrem: pokud budete mít štěstí na dobrý kus za dobrou cenu, pak proč ne. V dnešní době, kdy grafické karty mají stále nemravnější a nemravnější cenovky, může být něco z druhé ruky fajn. Jen s každým dalším rokem od uvedení si více a více hlídejte, v jakém stavu vám karta dorazí. Osobně doporučuji držet zásoby teplovodivé pasty a polštářků různé tloušťky.|E|
 |T|S jakou navigací na dovolenou v roce 2026? Vybrali jsme 12 nejlepších aplikací, které vám ukážou cestu|D|25.6. 18:15|P|Vybrali jsme nejlepší navigační aplikace pro Android a iOS • Využijí je řidiči, cyklisté i chodci • Většinu aplikací lze používat zdarma|X|Vybrali jsme nejlepší navigační aplikace pro Android a iOS • Využijí je řidiči, cyklisté i chodci • Většinu aplikací lze používat zdarma
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|

@@ -1,0 +1,11 @@
+Článek
+Minidružice KOSTKA už je umístěna s dalšími satelity na přepravním modulu. Raketa Falcon 9 společnosti SpaceX jej vynese z kalifornské základny Vandenberg na oběžnou dráhu Země.
+„Časové okno pro let se otevře již počátkem července. Družice bude kroužit kolem Země. Ve spojení s ní budeme prostřednictvím naší řídicí stanice,“ řekl Novinkám vedoucí týmu YSpace, který družici postavil, Šimon Sloboda.
+Satelit o velikosti hlavolamu Rubikova kostka bude komunikovat s řídicím centrem na Fakultě elektrotechniky a komunikačních technologií VUT.
+KOSTKA vznikala několik let pod vedením studentského týmu YSpace. Od prvních návrhů přes konstrukci a integraci až po testování ji navrhovali a sestavovali studenti VUT.
+Data o počasí v oblasti ostrova Nelson v Antarktidě
+Družice bude testovat nový komunikační modul. Měla by sbírat data o počasí v oblasti ostrova Nelson v Antarktidě, kde již nyní působí tuzemští vědci a kde se plánuje stavba nové české polární stanice. Minisatelit také poslouží radioamatérům, kteří z něj budou moci přijímat data.
+Družice také otestuje revoluční uchycení antény na vesmírné minisatelity, kterou vymysleli studenti VUT. S nápadem vyhráli soutěž Evropské kosmické agentury (ESA). Nejde přitom jen o to, že anténa na minidružici lépe drží. Tím, že už není ukotvena uvnitř satelitu, se v něm uvolní deset procent místa, což je prostor pro další techniku. Na každém milimetru záleží.
+„Satelit KOSTKA je důkazem, že naše cesta do vesmíru začíná už u odvahy a tvořivosti našich studentů. Tento první úspěšný cubesat navržený a vyrobený talenty z VUT je milníkem pro naši vědu. Ukazuje, že když se spojí akademické zázemí s nadšením a týmovou spoluprací, dokážeme v Česku velké věci,“ řekl Novinkám zmocněnec ministerstva školství pro popularizaci vědy a rozvoj talentu Jakub Rybář.
+Pevně doufá, že po KOSTCE přijdou další podobné studentské projekty.
+Ostatně jiný studentský tým z Brna navrhl i satelit LASAR, který byl v prosinci 2024 vyslán do vesmíru. Jeho úkolem je pokusit se pomoci restartovat již vysloužilé družice. Tento aparát studenti navrhli, ale přímo sami nesestavili. Nicméně zase je pozoruhodné, že vývoj družice zahájili už jako středoškoláci.

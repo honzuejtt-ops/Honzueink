@@ -1,0 +1,21 @@
+Trapná přezdívka, stará čísla nebo jméno, které už nepoužíváš, už nemusí zůstat na tvé Gmail adrese navždy
+Google začal uživatelům*uživatelkám umožňovat změnit e-mailovou adresu účtu Google s koncovkou @gmail.com na novou adresu se stejnou koncovkou. Jedná se o praktickou změnu pro lidi, kteří si účet založili před lety a nyní jim staré uživatelské jméno nevyhovuje.
+Novinka se hodí například při změně jména, zastaralé přezdívce nebo adrese, která působí příliš neformálně. Google však upozorňuje, že funkci zpřístupňuje postupně, takže se nemusí zobrazit každému uživateli hned.
+Jak si změníš Gmail adresu
+Postup je jednoduchý, pokud máš funkci ve svém účtu dostupnou:
+- otevři stránku myaccount.google.com
+- přejdi do části Osobní údaje
+- klikni na E-mail
+- vyber E-mail účtu Google
+- klikni na možnost Změnit e-mail účtu Google
+- zadej nové uživatelské jméno
+- potvrď změnu a postupuj podle pokynů na obrazovce
+Pokud možnost změny nevidíš, Google ji pro tvůj účet ještě nemusel zpřístupnit. V takovém případě zbývá počkat nebo použít alternativní e-mailovou adresu.
+O staré maily nepřijdeš
+Nejdůležitější je, že stará Gmail adresa po změně nezmizí. Google ji ponechá jako alternativní adresu přiřazenou k témuž účtu.
+Nepůjde to donekonečna
+Změnit Gmail adresu nepůjde donekonečna. Google uvádí, že novou adresu s koncovkou @gmail.com lze vytvořit jednou za 12 měsíců a celkem nejvíce třikrát při jednom účtu.
+Stará adresa se také nedá úplně vymazat ani použít k vytvoření nového účtu. Zůstane vázaná na původní účet jako alternativní adresa.
+Některé služby mohou chvíli ukazovat starou adresu
+Google upozorňuje, že po změně se nová adresa zobrazí v produktech Googlu, ale staré výskyty se nemusí přepsat zpětně. Například starší pozvánky v Kalendáři mohou ještě ukazovat původní e-mail.
+Před změnou je třeba dát pozor zejména pokud používáš přihlašování přes Google na jiných webech, Chromebook nebo Chrome Remote Desktop. Google v těchto případech doporučuje zkontrolovat možné problémy ještě před potvrzením změny.

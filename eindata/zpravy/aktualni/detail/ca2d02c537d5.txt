@@ -1,0 +1,5 @@
+V horkých dnech jako jsou tyto (a následující) přijde každý kousek stínu vhod. Ne vždy je ale snadné odhadnout, kam během dne dopadnou sluneční paprsky a kde naopak bude příjemný chládek. Právě s tím pomůže bezplatný nástroj Shadowmap.
+Pomocník při plánování výletů i posezení
+Shadowmap funguje přímo v prohlížeči na adrese app.shadowmap.org. Stačí si na mapě vyhledat konkrétní místo nebo do vyhledávače zadat přímo adresu a následně podle časové osy nastavit hodinu, kdy se na daném místě plánujete pohybovat.
+Aplikace následně ukazuje, jak se bude v průběhu dne měnit poloha stínu podle okolních budov. Snadno tak zjistíte například to, jestli bude v době návštěvy restaurace venkovní zahrádka zastínění, nebo se vyplatí přibalit tričko (a ručník) navíc.
+Přestože je nástroj užitečný, dokonalý není. Bezplatná verze nezohledňuje stromy ani menší zeleň, takže nejlépe funguje ve městech a místech, kde stín vytvářejí především budovy. Pokročilejší možnosti jsou dostupné až v placené verzi. Pokud potřebujete zjistit, jak by to mohlo být se stínem kvůli stromům, může posloužit třeba aktuální ortofotomapa na webu Chytremapy.cz.

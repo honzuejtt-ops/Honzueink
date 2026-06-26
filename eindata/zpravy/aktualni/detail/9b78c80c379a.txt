@@ -1,0 +1,10 @@
+Článek
+Podle zdroje obeznámeného se situací Washington považuje nový model za srovnatelný s nejvyspělejšími systémy konkurence, které už v poslední době vyvolaly nervozitu v americké administrativě i mezi investory.
+Celá věc podle americké CNN ukazuje, jak nepřehledně v současnosti ve Spojených státech vzniká dohled nad nejpokročilejší umělou inteligencí. Nejde totiž o zavedený a jasně popsaný regulační režim, ale spíš o improvizované zásahy případ od případu.
+Už dříve americká vláda zasáhla proti dalšímu vývojáři umělé inteligence Anthropic, když ministerstvo obchodu uvalilo vývozní omezení, po němž firma stáhla svůj nejnovější model Fable. Jejich vyspělé schopnosti v oblasti kyberbezpečnosti vyvolaly ve Washingtonu obavy, že by mohly přinést zcela nové typy bezpečnostních hrozeb.
+OpenAI podle CNN na vládní požadavek přistoupila, protože to považuje za cestu, jak model nakonec dostat na veřejnost v situaci, kdy pro podobně silné systémy neexistuje skutečný federální rámec.
+Server The Information, který zprávu přinesl jako první, citoval interní memo šéfa OpenAI Sama Altmana. Ten v něm zaměstnancům napsal, že vláda schvaluje přístup „zákazník po zákazníkovi“.
+Zároveň měl dodat, že nejde o preferovaný dlouhodobý model a že firma chce s vládou i se zbytkem oboru hledat udržitelnější způsob pro budoucí vydávání podobných systémů.
+Prezident Donald Trump na začátku června podepsal příkaz, podle něhož mají firmy s nejpokročilejšími modely dobrovolně předkládat systémy vládě ke kontrole třicet dní před vydáním, jenže konkrétní proces ani instituce pro takový dohled zatím nejsou hotové.
+V praxi tak vzniká zmatek. V jednom případě zasahuje přímo Bílý dům, v jiném ministerstvo obchodu. Firmy podle CNN často nevědí, kdo přesně má v této oblasti hlavní slovo a podle jakých pravidel se vlastně rozhoduje.
+Brad Carson z organizace Public First řekl CNN, že situace kolem modelu Fable ukázala potřebu jasných pravidel. Podle něj je správné, aby stát vstupoval do debat o bezpečnosti umělé inteligence, zvlášť tam, kde jde o dopady na národní bezpečnost. Současně ale varoval, že nynější přístup je nepřehledný a potenciálně i nezákonný.

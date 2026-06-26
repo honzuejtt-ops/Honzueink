@@ -1,0 +1,14 @@
+Článek
+Za více než dvě desetiletí Swift detekoval přes 2000 těchto zdrojů, pomohl potvrdit původ zlata a platiny ve vesmíru a nahlédl až na samotný okraj viditelného kosmu. Nyní se však tento „strážce“ sám ocitl v situaci, kdy potřebuje pomoci. Kvůli vysoké sluneční aktivitě v poslední době, která zvyšuje „hranici“ zemské atmosféry, a absenci vlastního pohonu se jeho dráha rychle snižuje k Zemi a koncem tohoto roku mu hrozí zánik v atmosféře.
+NASA se však odmítá se ztrátou svého klíčového nástroje smířit. Ve spolupráci s arizonským startupem Katalyst Space Technologies vytvořila misi Swift Boost, která nemá v historii kosmonautiky obdoby. Jde o pokus o robotickou záchranu družice, která na žádný servis na oběžné dráze nebyla nikdy stavěna.
+Sluneční aktivita zkracuje jeho životnost
+Družice Swift (celým názvem The Neil Gehrels Swift Observatory) původně kroužila ve výšce kolem 600 kilometrů, ale za roky služby klesla na úroveň současných zhruba 360 kilometrů. Hlavním viníkem je Slunce.
+Aktuální sluneční cyklus přináší silné erupce, které „nafukují“ zemskou atmosféru. Řídké plyny ve výškách, kde se Swift pohybuje, tak kladou družici mnohem větší odpor a ta klesá rychleji, než se předpokládalo.
+Protože Swift nemá vlastní motory, které by ho dostaly na vyšší oběžnou dráhu, nedokáže svůj pád zastavit. Inženýři z NASA sice v únoru 2026 natočili tělo družice tak, aby kladlo co nejmenší aerodynamický odpor, ale jde jen o odklad nevyhnutelného.
+Pokud by Swift klesl pod kritickou hranici 300 kilometrů, což zřejmě nastane v říjnu 2026, bude už odpor vzduchu natolik silný, že jakýkoliv pokus o záchranu pomocí spojení s jinou lodí vybavenou motory bude technicky neproveditelný. Čas pro záchrannou misi se tak krátí.
+LINK: Robotický tahač
+Úkol zachránit Swift dostala společnost Katalyst Space Technologies. Její řešení, levný kosmický tahač nazvaný LINK, je technický zázrak vzniklý pod extrémním tlakem. Zatímco běžný vývoj podobně složitého plavidla trvá roky, tým Katalystu přešel od „prázdného papíru“ k hotovému stroji za neuvěřitelných devět měsíců.
+LINK je vesmírné plavidlo o velikosti větší chladničky a váží zhruba 425 kilogramů. Srdcem jeho mise je trojice robotických ramen vybavených LiDARem (laserovými senzory) a speciálními úchyty.
+Protože Swift nebyl navržen pro spojování s jinou lodí ve vesmíru, nemá žádné magnety ani standardní dokovací porty. Inženýři proto museli nastudovat archivní fotografie Swiftu z doby před startem v roce 2004 a najít na jeho těle příruby určené původně jen pro pozemní dopravu a manipulace. Právě za ně se LINK nyní pokusí observatoř „popadnout“ a spojit se s ní.
+Start z letadla nad Tichým oceánem
+Samotná cesta k cíli je neméně unikátní. LINK bude možná již v sobotu 27. června (nejdříve) do vesmíru vynesen raketou Pegasus XL, kterou do výšky zhruba 12 000 metrů vynese mateřský letoun Stargazer (upravený Lockheed L-1011 TriStar).

@@ -1,8 +1,8 @@
 Ačkoliv už IBM nemá vlastní továrny na čipy, stále se podílí na výzkumu v této oblasti. Firma už v roce 2021 oznámila, že se jí podařilo pokusně vyrobit 2nm čipy, byť samozřejmě nešlo o regulérní sériovou výrobu (ta v TSMC běží až nyní). Ve výzkumné aktivitě IBM pokračuje a nyní oznámilo první čipy vyrobené procesem menším než 1 nm – ten je označen jako 7A neboli sedmiångströmový (0,7nm) a je založený na novém typu tranzistoru.
 První čip s „pod-nanometrovou“ technologií
 IBM představilo přímo hotový pokusný čip vyrobený tímto 0,7nm procesem. Ten je zřejmě tvořen různými testovacími strukturami, nepůjde určitě o praktický SoC pro nějaký účel. Obsahuje prý téměř 100 miliard tranzistorů a dosáhl téměř dvojnásobnou hustotu tranzistorů (přesná čísla sdělena nejsou) proti zmíněnému 2nm čipu z roku 2021.
-Co jsou angströmy / co znamená 7 A?
-Angström se značkou A je méně často používaná jednotka odpovídající přesně jedné desetině nanometru. 7 A proto znamená 0,7 nm.
+Co jsou angströmy / co znamená 7 Å?
+Angström se značkou Å je méně často používaná jednotka odpovídající přesně jedné desetině nanometru. 7 Å proto znamená 0,7 nm.
 Podle IBM by tato technologie měla dosahovat až o 50 % lepší výkon než jeho 2nm čip, případně by mohla být při stejném výkonu o 70 % lepší v energetické efektivitě. Opět je třeba zopakovat, že nejde o technologii, kterou by IBM reálně používalo k výrobě, ale o laboratorní výzkum, který teprve bude muset být někde aplikován, aby došlo na praktické využití.
 IBM čip vytvořilo ve své výzkumné lince, kterou provozuje v továrně v Albany v americkém státě New York. IBM mimochodem uvádí, že má být v budoucnu dovybavena strojem pro High-NA EUV litografii od ASML. Z toho vyplývá, že nyní diskutovaný 0,7nm čip ještě je vyroben bez pomoci High-NA.
 Co je to technologie High-NA?

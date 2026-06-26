@@ -52,6 +52,9 @@ Zdroj: IBM|E|
 |T|Edge umožní synchronizaci prostřednictvím účtu Google. Drop naopak skončí|D|25.6. 16:45|P|Edge nabídne synchronizaci dat skrze účet Google. • Distribuce nové funkce se rozběhne v červenci. • Soukromý chat Drop naopak skončí.|X|Edge nabídne synchronizaci dat skrze účet Google. • Distribuce nové funkce se rozběhne v červenci. • Soukromý chat Drop naopak skončí.
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|25 kontroverzních filmů, které by dnes už nikdo nenatočil. Mnoho sexu, nekorektních hlášek, urážek černochů a LGBT|D|25.6. 16:45|P|Doba se mění. I když jsme v Česku hodně tolerantní, tak například v devadesátých letech oblíbená satirická Česká soda by dnes už neprošla. Podobně exi...|X|Doba se mění. I když jsme v Česku hodně tolerantní, tak například v devadesátých letech oblíbená satirická Česká soda by dnes už neprošla. Podobně existuje spousta známých, dobrých a dříve slavných filmů, které by dnes už nevznikly. Nebo by musely vypadat úplně jinak. Tady je náš výběr některých z ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Our latest Google Finance upgrades, including a new app|D|25.6. 16:00|P|The Google Finance logo, surrounded by elements of the user interface|X|Our latest Google Finance upgrades, including a new app
 Investing is complex, but staying informed shouldn't be. Starting this week, the new Google Finance is coming out of beta, with several new capabilities to help you better track and understand financial investments – plus a new Android app to help you on the go.
 Track your own investment portfolio

@@ -1,4 +1,9 @@
-|T|Žádné zprávy|D||P|Nebyly nalezeny.|X|Zkuste to později.|E|
+|T|Velká letní akce v Google Play. Dvacet her, které dočasně stojí jen tři koruny|D|26.6. 17:45|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Windows 10 budou žít o rok déle. Microsoft prodloužil bezplatné bezpečnostní aktualizace|D|26.6. 16:45|P|Microsoft měl poskytovat Rozšířené aktualizace zabezpečení (ESU) do října 2026. • Termín ale prodloužil do rok, tj. do 12. října 2027. • Domácí počíta...|X|Microsoft měl poskytovat Rozšířené aktualizace zabezpečení (ESU) do října 2026. • Termín ale prodloužil do rok, tj. do 12. října 2027. • Domácí počítače tak mohou získávat bezpečnostní opravy o rok déle.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Apple chystá překvapení v procesorech: Přeskočí většinu čipů M6, místo nich přijde velmi rychle generace M7|D|26.6. 16:43|P|Máme informace o tom, co můžete čekat od procesorů Apple M6 a M7: Vypadá to, že firma zrychlila vývoj a uspíšila novou generaci M7, dokonce i na úkor ...|X|Místo různých zvěstí o chystaných procesorech AMD nebo Intelu je tu teď zpráva poodhalující budoucí plány firmy Apple, která se svými procesory pro telefony a poté i notebooky a další počítače s operačním systémem MacOS vyšvihla v poslední dekádě mezi špičku v oboru CPU. Mark Gurman, leaker zřejmě nejlépe informovaný o plánech firmy a píšící pro Bloomberg, teď prozradil, co (a kdy) čekat od procesorů M6 a M7.
 M6 bude existovat jenom jako levnější základní model
 Gurman potvrdil, že Apple vydá novou generaci označenou M6 pravděpodobně už letos, nejspíš tedy v obvyklém podzimním termínu. Generace procesorů M6 má ale být relativně malá a dost možná může mít i kratší trvání. Bude totiž existovat pouze základní verze M6 (údajně má kódové označení Komodo nebo také H18G), ale nikoliv vyšší modely M6 Pro či M6 Max. Ty podle Gurmana Apple v této generaci přeskočí a upgrade dostanou až s další generací.
@@ -22,6 +27,9 @@ Pro uživatele je podstatné, že již zaregistrovaná zařízení v ESU zůstá
 Pokud se k Windows 10 přihlásíte pomocí účtu Microsoft kvůli aktivaci ESU, je možné následně zpětně přejít na lokální účet, záplaty ale budou doručovány jen následujících 60 dnů.
 Prodloužení podpory přichází ve chvíli, kdy Windows 10 stále drží výraznou část počítačového trhu. StatCounter za květen 2026 uváděl u desktopových verzí Windows podíl 26,36 % pro Windows 10 a 71,69 % pro Windows 11. Značná část uživatelů se tak z mnoha důvodů pro upgrade stále neodhodlala.
 Zdroj: Bleeping Computer|E|
+|T|Nejlepší gramofon nemusí být ten nejsložitější. Sony PS-LX5BT sází na automatiku, jednoduchost a Bluetooth|D|26.6. 15:45|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Až 30 GB dat jako letní dárek pro zákazníky od T-Mobilu. Na prodejnách se osvěžíte nanukem|D|26.6. 14:45|P||X|
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
@@ -52,6 +60,7 @@ Bosch už v minulosti ukázal vlastní peletovou 3D tiskárnu, která dokáže v
 |T|Xboxy Series S a X zase zdraží. Ceny budou až o 70 % vyšší než při uvedení|D|26.6. 12:15|P|Kvůli paměťové krizi znovu zdražuje i Microsoft. • Konzole Series S a X budou od srpna stát o tisíce korun více. • Zároveň se přestane vyrábět 2TB mod...|X|Kvůli paměťové krizi znovu zdražuje i Microsoft. • Konzole Series S a X budou od srpna stát o tisíce korun více. • Zároveň se přestane vyrábět 2TB model Series X.
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Žádné zprávy|D|26.6. 12:00|P|Nebyly nalezeny.|X|Zkuste to později.|E|
 |T|Amazon má obří slevovou akci. Za dosud nejnižší ceny koupíte AirPods 4 nebo Garmin Fénix 8|D|26.6. 11:45|P|Dnes o půlnoci končí Prime Day Deals na Amazonu. • V článku upozorníme na produkty levnější než v českých obchodech. • Tipy budeme průběžně doplňovat,...|X|Dnes o půlnoci končí Prime Day Deals na Amazonu. • V článku upozorníme na produkty levnější než v českých obchodech. • Tipy budeme průběžně doplňovat, tak se nezapomeňte vracet.
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|

@@ -16,6 +16,19 @@ Dost možná to během víkendu nebude naposledy, ČHMÚ totiž zítra nevyluču
 Oživeno v sobotu 10:00 | Česko má za sebou na mnoha místech tropickou noc, kdy ...
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Máme nový absolutní rekord 40,8 °C. Ale nevydrží dlouho. Některé stanice by mohly zítra naměřit 41 až 42 °C|D|27.6. 15:48|P|Oživeno v sobotu 17:00 | Český rekord nakonec padl už v sobotu. Stanice v Doksanech naměřila 40,8 °C.
+
+
+
+Dost možná to během víkendu nebude naposledy,...|X|Oživeno v sobotu 17:00 | Český rekord nakonec padl už v sobotu. Stanice v Doksanech naměřila 40,8 °C.
+
+
+
+Dost možná to během víkendu nebude naposledy, ČHMÚ totiž zítra nevylučuje dosažení hodnot v rozmezí 41-42 °C.
+
+Oživeno v sobotu 10:00 | Česko má za sebou na mnoha místech tropickou noc, kdy ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Extrémní počet jader, rekordní spotřeba: Nová generace procesorů Intel bude konzumovat 474 W|D|27.6. 15:45|P|V příští generaci procesorů chystá Intel modely s dvojnásobným počtem jader díky osazení dvou CPU čipletů místo jednoho. Nejvýkonnější procesory pro d...|X|Blíží se nová generace procesorů od Intelu, Core Ultra 400 „Nova Lake“, která by měla vyjít koncem letoška nebo začátkem roku 2027, a v desktopu s ní přijdou velké změny. Nový socket LGA 1954 bude podporovat procesory s dvěma CPU čiplety podobné modelům AMD jako je Ryzen 9 9950X, ale až s 52 jádry. Očekává se proto, že tyto procesory budou mít bezprecedentně vysokou spotřebu. Teď se zřejmě konečně dozvídáme, jak velké toto číslo bude.
 Spotřeba 52jader od Intelu odhalena
 Tento měsíc jsme zde měli informace o tom, že čipset Z990 bude mít kvůli poměrně rozsáhlé výbavě linkami PCI Express (třikrát PCIe 5.0 ×4) také vyšší spotřebu, dosahující až 14 W. Stejný zdroj Laurent’s Choice, který zřejmě má různé informace o deskách platformy LGA 1954 chystaných pro procesory Nova Lake, teď zveřejnil také údaje o spotřebě nejvýkonnějších modelů procesorů Nova Lake s 52 jádry.

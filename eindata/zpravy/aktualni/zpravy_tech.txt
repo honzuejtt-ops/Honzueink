@@ -1,4 +1,15 @@
-|T|Korková zátka skrývá nečekané tajemství. Ovlivňuje množství kyslíku i budoucí chuť vína v lahvi|D|28.6. 09:45|P|Korek aktivně ovlivňuje zrání vína uvolňováním i zpětným spotřebováváním kyslíku • Čtyři fáze přenosu plynů zahrnují rychlé vyrovnání tlaků i uvolňová...|X|Korek aktivně ovlivňuje zrání vína uvolňováním i zpětným spotřebováváním kyslíku • Čtyři fáze přenosu plynů zahrnují rychlé vyrovnání tlaků i uvolňování plynů • Dlouhé zátky propouštějí vnější vzduch nejpomaleji a pomáhají řídit archivaci
+|T|Datová centra Microsoftu spotřebovávají o téměř 90 % méně vody než na začátku tisíciletí|D|28.6. 13:45|P|Microsoft zvýšil efektivitu využití vody v datacentrech chlazením vzduchem • Nová datová centra pro AI nespotřebují při provozu vůbec žádnou vodu • Ve...|X|Microsoft zvýšil efektivitu využití vody v datacentrech chlazením vzduchem • Nová datová centra pro AI nespotřebují při provozu vůbec žádnou vodu • Ve fiskálním roce 2025 firma vrátila více vody než sama spotřebovala
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Nový český teplotní rekord nevydržel ani den. V neděli už meteorologové naměřili 41,1 °C, a ještě není konec. Teplota stále roste|D|28.6. 13:11|P|Oživeno v neděli v 15:16 | Rekord nevydržel ani jeden den. Stanice Doksany podle vyjádření ČHMÚ těsně před 15. hodinou naměřila 41,1 °C. Je to poprvé,...|X|Oživeno v neděli v 15:16 | Rekord nevydržel ani jeden den. Stanice Doksany podle vyjádření ČHMÚ těsně před 15. hodinou naměřila 41,1 °C. Je to poprvé, co meteorologové v oficiální staniční síti zaznamenali teplotu 41 stupňů. Ta přitom stále stoupá, není to ještě dnešní konečné maximum.
+
+
+Oživeno v ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Česká aplikace s AI předpoví déšť na minutu přesně. Po Androidu konečně míří i na displeje iPhonů|D|28.6. 12:38|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Ano, Windows 11 26H2 zdědí jádro předchůdců a nainstalují se aktivačním balíčkem|D|28.6. 11:45|P|Microsoft potvrdil, jak bude vypadat migrace na novou hlavní verzi Windows 11. • Windows 11 26H2 budou vycházet z verze 24H2. • Instalaci zajistí malý...|X|Microsoft potvrdil, jak bude vypadat migrace na novou hlavní verzi Windows 11. • Windows 11 26H2 budou vycházet z verze 24H2. • Instalaci zajistí malý aktivační balíček, stejně jako u verze 25H2.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Korková zátka skrývá nečekané tajemství. Ovlivňuje množství kyslíku i budoucí chuť vína v lahvi|D|28.6. 09:45|P|Korek aktivně ovlivňuje zrání vína uvolňováním i zpětným spotřebováváním kyslíku • Čtyři fáze přenosu plynů zahrnují rychlé vyrovnání tlaků i uvolňová...|X|Korek aktivně ovlivňuje zrání vína uvolňováním i zpětným spotřebováváním kyslíku • Čtyři fáze přenosu plynů zahrnují rychlé vyrovnání tlaků i uvolňování plynů • Dlouhé zátky propouštějí vnější vzduch nejpomaleji a pomáhají řídit archivaci
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Český hit Kingdom Come: Deliverance 2 prodal další milion kopií, brzy pokoří jedničku|D|28.6. 08:43|P|Česká historická hra Kingdom Come: Deliverance 2 má na kontě další milion prodaných kopií. Warhorse Studios už prodali šest milionů kusů. Meta pěti mi...|X|Česká historická hra Kingdom Come: Deliverance 2 má na kontě další milion prodaných kopií. Warhorse Studios už prodali šest milionů kusů. Meta pěti milionů kopií byla pokořena letos v dubnu, asi po roce od uvedení na trh, a další milion se podařilo uplatnit během několika měsíců.
 Titul se prodává rychleji než jednička, která za čtyři prodala čtyři miliony kopií. Prvního dílu se celkově prodalo přes osm milionů kopií. Je pravděpodobné, že prodeje dvojky porostou s tím, jak se objeví kompletní edice, slevy a podobně, a jednička bude překonána.
@@ -34,18 +45,6 @@ Skupina tak má zmapovat specifické oblasti v tvorby, které mohou být přecho
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Týden Živě: Elektrokola zítřka budou připomínat moped a Česko se o víkendu proměnilo v rozžhavenou troubu|D|27.6. 16:45|P|Do Česka dorazily tropy a za rohem jsou prázdniny, klasické počítače proto tentokrát nahradíme za elektrokola. Bosch ukázal nový elektromotor v zadním...|X|Do Česka dorazily tropy a za rohem jsou prázdniny, klasické počítače proto tentokrát nahradíme za elektrokola. Bosch ukázal nový elektromotor v zadním náboji a míří tam i převodovky. Elektrokola zítřka už pomalu začnou připomínat tak trochu elektromoped.
 
 V závěru budeme rozjímat, jak ochladit byt ...
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Máme nový absolutní rekord 40,8 °C. Ale nevydrží dlouho. Některé stanice by mohly zítra naměřit 41 až 42 °C|D|27.6. 15:48|P|Oživeno v sobotu 17:00 | Český rekord nakonec padl už v sobotu. Stanice v Doksanech naměřila 40,8 °C.
-
-
-
-Dost možná to během víkendu nebude naposledy,...|X|Oživeno v sobotu 17:00 | Český rekord nakonec padl už v sobotu. Stanice v Doksanech naměřila 40,8 °C.
-
-
-
-Dost možná to během víkendu nebude naposledy, ČHMÚ totiž zítra nevylučuje dosažení hodnot v rozmezí 41-42 °C.
-
-Oživeno v sobotu 10:00 | Česko má za sebou na mnoha místech tropickou noc, kdy ...
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Extrémní počet jader, rekordní spotřeba: Nová generace procesorů Intel bude konzumovat 474 W|D|27.6. 15:45|P|V příští generaci procesorů chystá Intel modely s dvojnásobným počtem jader díky osazení dvou CPU čipletů místo jednoho. Nejvýkonnější procesory pro d...|X|Blíží se nová generace procesorů od Intelu, Core Ultra 400 „Nova Lake“, která by měla vyjít koncem letoška nebo začátkem roku 2027, a v desktopu s ní přijdou velké změny. Nový socket LGA 1954 bude podporovat procesory s dvěma CPU čiplety podobné modelům AMD jako je Ryzen 9 9950X, ale až s 52 jádry. Očekává se proto, že tyto procesory budou mít bezprecedentně vysokou spotřebu. Teď se zřejmě konečně dozvídáme, jak velké toto číslo bude.
 Spotřeba 52jader od Intelu odhalena

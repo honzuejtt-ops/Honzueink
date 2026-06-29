@@ -1,0 +1,3 @@
+Microsoft identifikoval dva problémy s červnovou aktualizací pro Windows 11. • Aplikace třetích stran nedokážou spustit Word, Excel a další nástroje Office. • Při trvalém odstranění Koš zobrazí interní název souboru.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

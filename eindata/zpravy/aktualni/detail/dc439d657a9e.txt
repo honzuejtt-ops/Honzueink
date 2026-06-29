@@ -1,0 +1,13 @@
+Zapomeň na vágní předpovědi typu „místy přeháňky“. Díky unikátnímu spojení umělé inteligence, strojového učení a detailních lokálních dat dokáže aplikace od Meteocentra předpovědět srážky přímo ve tvojí ulici a nově přichází na iOS.
+Aplikace, která už na Androidu zaznamenala přes 130 tisíc stažení, nabízí revoluční minutovou předpověď srážek na nejbližší hodinu. Meteocentrum na trhu působí téměř 20 let a na rozdíl od běžných globálních aplikací nespoléhá pouze na obecná data. Její systém využívá pokročilé strojové učení.
+1) Porovnávání dat: AI neustále analyzuje historická data s výstupy mnoha světových modelů, čímž minimalizuje odchylky.
+2) 3D orografický model ČR: Aplikace bere v úvahu specifika českého terénu s horizontálním rozlišením na desítky metrů. Započítává kopce, údolí i městskou zástavbu, tedy faktory, které globální aplikace ignorují, ale které mají zásadní vliv na to, zda začne pršet.
+3) Aktualizace každých 10 minut: Pro obydlené oblasti se data neustále obnovují v reálném čase.
+2) 3D orografický model ČR: Aplikace bere v úvahu specifika českého terénu s horizontálním rozlišením na desítky metrů. Započítává kopce, údolí i městskou zástavbu, tedy faktory, které globální aplikace ignorují, ale které mají zásadní vliv na to, zda začne pršet.
+3) Aktualizace každých 10 minut: Pro obydlené oblasti se data neustále obnovují v reálném čase.
+„Dnešnímu uživatelstvu už nestačí jen obecný výhled na další dny. Potřebuje vědět, jak naplánovat své okamžité aktivity,“ vysvětluje Bohuslav Zeman, projektový manažer Meteocentrum.cz.
+Co všechno aplikace v kapse nabízí?
+- Minutový graf srážek: Přehledný graf na příštích 60 minut včetně intenzity deště
+- Hodinová předpověď na týden: Detaily o teplotě, větru, oblačnosti a srážkách na sedm dní
+- Chytré notifikace: Upozornění na blížící se déšť s dostatečným předstihem
+- Animovaný srážkový radar: Vizualizace vývoje počasí v reálném čase

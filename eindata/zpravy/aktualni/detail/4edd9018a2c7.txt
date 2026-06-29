@@ -1,0 +1,9 @@
+Netflix začal u části účtů vyžadovat samostatnou e-mailovou adresu pro každý běžný profil. Změna se podle všeho začala šířit 15. června 2026 ve Spojených státech a postupně je zaváděna do dalších zemí. Z původně jednoduchých profilů oddělujících členy domácnosti se stávají sekce s vlastním nastavením a dalšími preferencemi.
+Co se mění
+Dosud stačil jeden hlavní e-mail a heslo k účtu, kdy Netflix umožňuje až pět profilů v jednom účtu. Každý z nich má vlastní doporučení či historii sledování. Nová politika ale přidává k profilu i vlastní e-mail, který je mimo jiné využíván pro ověření při přihlášení a informace pro obnovu přístupu.
+Netflix změnu popisuje jako jednodušší přihlašování a lepší správu profilu, kdy jsou jednotlivé podprofily méně závislé na majiteli účtu. Uživatel profilu si může spravovat i vybraná nastavení, například jazyk nebo zobrazení.
+Vedlejším efektem je samozřejmě další tlak proti sdílení účtů více domácnostmi nebo přáteli. Firma už dříve zpřísnila sdílení účtů mimo domácnost a zavedla placené extra členy. Současně nabízí převod profilu, aby si uživatel mohl přenést historii sledování nebo seznam uložených titulů do jiného účtu. Přiřazení e-mailu k profilu tak pomůže například při zadávání ověřovacího kódu, což má více uživatelů motivovat k připlacení za extra člena.
+Soukromí a reklamy
+Část kritiky ale samozřejmě míří na sběr dalších kontaktních údajů. Protože e-maily více oddělí jednotlivé profily, bude pro Netflix snadnější cílení případných reklam a doporučování obsahu. Využití najde především v zemích, kde existují zlevněné tarify s reklamami.
+Zatím není jasné, jak rychle se změna objeví v Evropě a zda u nás vůbec dojde k jejímu zavedení. Někteří mimoevropští uživatelé hlásí výzvu k doplnění e-mailu hned při přístupu k profilu. Jiní ji zatím nevidí vůbec, případně se nachází jen v nastavení profilu. Pokud se ale novinka v Evropě objeví, může to mnohým ztížit fungování se sdíleným účtem.
+Zdroj: Arstechnica

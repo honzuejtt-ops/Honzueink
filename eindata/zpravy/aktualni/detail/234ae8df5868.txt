@@ -1,0 +1,17 @@
+Whisp
+Minimalistická aplikace pro pořizování poznámek určená především pro prostředí GNOME, která sází na maximální jednoduchost a rychlost práce. Místo složité správy souborů, složek a databází nabízí koncept „anti-poznámek“, kdy uživatel aplikaci pouze otevře a začne okamžitě psát.
+Poznámky se ukládají automaticky a mezi nimi lze plynule přecházet pomocí gest nebo klávesových zkratek. Aplikace podporuje živé formátování v Markdownu, vyhledávání, kontrolní seznamy, přizpůsobení vzhledu včetně různých stylů „papíru“ a rozhraní navržené v duchu GNOME.
+flathub.org/en/apps/io.github.tanaybhomia.Whisp, 1.3.6
+Step
+Interaktivní fyzikální simulátor určený především pro výuku a experimentování s fyzikou. Umožňuje vytvářet a simulovat různé fyzikální scénáře zahrnující mechaniku, gravitaci, pružiny, srážky, elektřinu či pohyb nabitých částic. Uživatelé mohou snadno sestavovat experimenty pomocí grafického rozhraní, sledovat chování objektů v reálném čase a analyzovat výsledky pomocí grafů, tabulek nebo měření jednotlivých veličin.
+Program je součástí vzdělávacích aplikací projektu KDE a je vhodný jak pro studenty a učitele, tak pro všechny zájemce o názorné studium fyzikálních zákonů. Součástí aplikace je také řada ukázkových experimentů, které usnadňují seznámení s principy simulace.
+apps.kde.org/cs/step, 26.04.2
+Astra
+Multiplatformní hudební přehrávač zaměřený na náročnější posluchače, kteří spravují vlastní hudební sbírku. Aplikace podporuje širokou škálu zvukových formátů včetně FLAC, MP3, OGG, ALAC či OPUS a nabízí bezeztrátové přehrávání bez mezer mezi skladbami. Součástí je pokročilý parametrický ekvalizér s podporou profilů AutoEQ, vestavěné dekódování Dolby Atmos, podpora ReplayGain a několik real-time DSP vizualizací.
+Astra automaticky spravuje hudební knihovnu, načítá metadata a obaly alb, umožňuje úpravu tagů, zobrazuje synchronizované texty skladeb a podporuje služby Last.fm, ListenBrainz nebo vlastní scrobbling servery. Důraz je kladen na soukromí uživatelů. Aplikace neobsahuje telemetrii, nevyžaduje účet ani nenabízí streamovací služby.
+github.com/Boof2015/astra, 0.6.1
+Lore
+Nová open-source verzovací platforma vyvíjená společností Epic Games, navržená pro rozsáhlé projekty obsahující velké množství binárních dat, jako jsou hry, multimediální obsah nebo filmová produkce. Na rozdíl od tradičních systémů, jako je Git, je Lore od základu navrženo pro efektivní práci s velkými soubory, nabízí ukládání dat po částech, deduplikaci obsahu, lehké větvení a možnost stahovat pouze potřebná data. Systém využívá centralizovanou architekturu s podporou škálování pro velké týmy a poskytuje rozhraní API, serverovou část i klientské nástroje.
+github.com/EpicGames/lore, 0.8.4
+Blbinka
+Terakotová armáda vydržela po hromadě už 2300 let. V dnešní Číně se vyrábí o něco méně kvalitně.

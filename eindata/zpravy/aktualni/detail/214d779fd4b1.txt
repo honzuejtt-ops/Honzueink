@@ -1,0 +1,53 @@
+Inside Genebench-Pro
+A closer look at the benchmark, its questions, and supporting materials.
+These 10 case studies showcase representative questions from GeneBench-Pro. Each case study includes the original prompt, datasets, and supporting materials. For an overview of the benchmark and key findings, see the announcement blog.
+Note: File previews show excerpts from the full datasets.
+Estimate whether a synthetic TXR1-directed inhibitor has positive clinical utility in tumors whose target activation is driven by a structural variant. TXR1, TXR1i, DLR1, and star-allele labels are synthetic benchmark labels.
+The target subgroup has to be recovered from long-read, expression, tumor-quality, and pharmacogenomic evidence before benefit and toxicity can be interpreted as a treatment decision.
+Released prompt shown to the model
+Files provided to the model
+Registry covariates, therapy, week-16 assessment, benefit, and early toxicity.
+Decide whether an apparent lncRNA dependency is transcript-specific or driven by nearby-locus and neighbor-gene effects.
+Transcript-directed evidence has to survive controls for local DNA-locus perturbation, neighbor-gene repression, guide swaps, GC toxicity, and plate effects.
+Released prompt shown to the model
+Files provided to the model
+Guide coordinates, targets, distances, and GC features.
+Estimate direct disease effects for two nearby proteins using cis multivariable Mendelian randomization (cis-MVMR) while handling assay scale, allele orientation, winner's curse, LD, and residual local pleiotropy.
+The two proteins share a correlated locus. The analysis has to move from marginal associations to conditional, LD-aware disease effects on a common protein scale.
+Released prompt shown to the model
+Files provided to the model
+Screening-stage protein association summaries for PROTA.
+Estimate ancestry-specific carrier frequencies, residual risk after a negative screen, partner carrier frequency, and affected-conceptus risk from carrier-screening assay data.
+The residual-risk estimate depends on pseudogene-aware carrier calls, founder-haplotype collapse, ancestry-specific assay calibration, and standardization from tested partners back to the full partner roster.
+Released prompt shown to the model
+Files provided to the model
+Screening-roster adults with ancestry and screening context.
+Estimate a genotype effect on activated-monocyte expression after removing ambient RNA and technical contamination from single-cell RNA-seq data.
+Ambient RNA affects both target expression and the marker panel used to call activation state, so correction has to occur before the eQTL model.
+Released prompt shown to the model
+Files provided to the model
+Per-cell UMI counts for marker genes, contamination markers, and the target gene.
+Estimate whether a nested structural subhaplotype inside an anonymous inversion-like locus has a calibrated clinical association and credible expression support.
+A nested copy-dosage signal can be confounded by the broader inversion orientation, so dosage calibration, expression support, and clinical modeling have to remain distinct.
+Released prompt shown to the model
+Files provided to the model
+Clinical and covariate data for the full cohort.
+Quantify a focal case-control Hi-C loop-strength difference after removing low-mappability and structural-variant artifacts from the expected-contact background.
+The target loop is defined at 20 kb resolution, but the expected-contact model is distorted unless low-mappability contacts and a case-only SV stripe are masked first.
+Released prompt shown to the model
+Files provided to the model
+Target-resolution bin annotations.
+Map a chromosome-1 quantitative-trait locus in an eight-founder recombinant population by reconstructing founder ancestry before testing the phenotype association.
+The visible marker data are biallelic, but the biological signal is founder ancestry. A defensible analysis therefore has to reconstruct founder state, check marker orientation, and separate the QTL from a batch-aligned nuisance peak.
+Released prompt shown to the model
+Files provided to the model
+Marker identifiers, chromosomes, and genetic-map positions.
+Infer parent-specific ancestry proportions and recent admixture timing from phased local-ancestry tracts after repairing reciprocal artifacts and a chromosome-specific label inversion.
+Ancestry fractions and pulse times both change if reciprocal tract artifacts, chromosome-local label inversion, or map denominators are handled incorrectly.
+Released prompt shown to the model
+Files provided to the model
+Phased local-ancestry tracts with coordinates, ancestry labels, posterior values, and QC annotations.
+Infer which of two haploid loci is under stronger positive selection from ancient allele-frequency time series while accounting for allele orientation, directional error, drift, and changing population size.
+Noisy ancient trajectories are not directly comparable until both loci are placed on the same derived-allele scale and the provided sample-level sequencing-error values are modeled directly.
+Files provided to the model
+Read-count time series for locus A.

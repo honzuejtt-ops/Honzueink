@@ -1,0 +1,14 @@
+Trh s domácími síťovými úložišti se po dlouhé době stagnace začal pomalu rozhýbávat. Dlouho platilo, že plnohodnotné NASy na tuzemském trhu nabízí trojka Asustor, Synology a QNAP. Postupně se přidali také výrobci Ugreen a TerraMaster. Nově do segmentu míří i Xiaomi, jehož NAS se začne formou crowdfundingu prodávat v Číně od zítra. Doufejme, že Xiaomi Smart Storage později zamíří i do Česka.
+Poprvé mezi NASy
+Xiaomi Smart Storage míří do domácností a malých kanceláří. Konkurovat tak chce levnějším řadám zmíněné velké trojky. Zařízení má kompaktní tělo a dvě pozice pro 2,5" nebo 3,5" disky SATA. Podle dostupných informací má zvládnout až 40 TB celkové kapacity.
+V crowdfundingu budou tři varianty:
+- Beginner, 4 TB, 2 299 jüanů (cca 7 204 Kč)
+- Advanced, 8 TB, 2 899 jüanů (cca 9 084 Kč)
+- Professional, 16 TB, 4 699 jüanů (cca 14 725 Kč)
+O verzi bez osazených disků zatím informace nejsou, v případě evropského trhu by ale měla být k dispozici i tato verze.
+Hardware s otazníky
+Úplné technické specifikace Xiaomi zatím nezveřejnilo. Podrobnosti o čipu a paměti vycházejí z údajů o vývojářském vzorku, který se objevil na fórech. Ten měl používat čtyřjádrový Realtek RTD1619B s ARM Cortex A55 a taktem až 1,7 GHz. Osazeny byly 2 GB paměti DDR3L a 8 GB interního úložiště pro systém.
+Finální varianta má podle dostupných informací nabídnout nejméně jeden 2,5GbE port a k tomu USB 3.0 a HDMI. Podle specifikací tak půjde o přímou konkurenci modelů Asustor AS3302T v2, QNAP TS233 nebo Synology DS223. Nejlevnější z nich, QNAP, je k dostání za ceny od 5 300 Kč bez disků.
+Software rozhodne
+Xiaomi zařízení staví jako součást vlastního ekosystému. Uváděna je podpora Androidu, iOS, Windows, macOS a Linuxu. Hlavními scénáři jsou zálohy z telefonu, správa fotografií, sdílení souborů a domácí knihovna médií. Rozhodovat tak bude softwarové prostředí, které je u trojice Asustor, Synology a QNAP na vysoké úrovni. Zatím není potvrzená podpora Dockeru, virtualizace ani nabídka aplikací třetích stran. Je možné, že se v nabídce zařadí mezi plnotučné NASy a omezenější varianty čistých úložišť od Ubiquiti a WD.
+Zdroj: XiaomiToday

@@ -1,0 +1,6 @@
+Legendární střílečka Half-Life 2 se po více než dvaceti letech dostává na nečekanou platformu. Fanoušci si ji nyní mohou spustit přímo v internetovém prohlížeči bez klasické instalace, a to díky projektu mladého vývojáře, který ukazuje, kam až se dnes možnosti webových technologií posunuly.
+Do prohlížeče za tři měsíce
+Za projektem stojí vývojář vystupující pod přezdívkou slant, kterému se společně s dalším autorem podařilo během zhruba tří měsíců vytvořit funkční webovou verzi slavného titulu od Valve. Hra běží přímo v okně prohlížeče a nepotřebuje klasický herní klient ani rozsáhlou instalaci.
+Celý projekt ukazuje, že moderní web už dávno není jen místem pro jednoduché hry. Half-Life 2 lze skutečně hrát pomocí klávesnice a myši, přestože se objevují drobné chyby, například problémy s některými animacemi nebo grafikou.
+Pro fanoušky jde hlavně o zajímavý technologický experiment a další důkaz toho, co všechno je možné dostat do běžného prohlížeče. Podobné projekty navíc připomínají éru starých webových her, kdy stačilo otevřít stránku a okamžitě začít hrát.
+zdroj: XDA Developers

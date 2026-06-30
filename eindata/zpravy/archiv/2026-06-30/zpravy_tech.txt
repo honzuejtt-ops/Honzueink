@@ -1,3 +1,6 @@
+|T|Tohle jsou nejoblíbenější nové filmy a seriály. Bez vykopávek, které jste už dávno viděli|D|30.6. 17:45|P|Nevýhodou žebříčků postavených na sledovanosti je, že jsou plné prastarých kousků, které už každý viděl. Tady proto najdete pouze nové filmy a seriály...|X|Nevýhodou žebříčků postavených na sledovanosti je, že jsou plné prastarých kousků, které už každý viděl. Tady proto najdete pouze nové filmy a seriály (nebo jejich nové sezóny) z posledních měsíců. Vycházíme ze statistik aktuálního zájmu na webu IMDB, které dlouhodobě ukládáme a sami zpracováváme.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Jak dobře vybrat operační paměť. Kapacita RAM, frekvence, časování a kanály jsou velká alchymie|D|30.6. 16:45|P|Paměť RAM je základní komponentou počítače. • Mezi její parametry patří kapacita, frekvence, časování nebo podpora více kanálů. • Kvůli mnoha kombinac...|X|Paměť RAM je základní komponentou počítače. • Mezi její parametry patří kapacita, frekvence, časování nebo podpora více kanálů. • Kvůli mnoha kombinacím je výběr složitější, než se na první pohled zdá.
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
@@ -78,6 +81,12 @@ Od spuštění před patnácti měsíci aplikace podle firmy získala přes 3 mi
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Half-Life 3 možná nikdy nepřijde, ale Half-Life 2 si teď zahrajete zdarma v prohlížeči a bez instalace|D|30.6. 09:45|P|Half-Life 2 se vrací v nečekané podobě. Mladý vývojář ho dostal přímo do webového prohlížeče.|X|Legendární střílečka Half-Life 2 se po více než dvaceti letech dostává na nečekanou platformu. Fanoušci si ji nyní mohou spustit přímo v internetovém prohlížeči bez klasické instalace, a to díky projektu mladého vývojáře, který ukazuje, kam až se dnes možnosti webových technologií posunuly.
+Do prohlížeče za tři měsíce
+Za projektem stojí vývojář vystupující pod přezdívkou slant, kterému se společně s dalším autorem podařilo během zhruba tří měsíců vytvořit funkční webovou verzi slavného titulu od Valve. Hra běží přímo v okně prohlížeče a nepotřebuje klasický herní klient ani rozsáhlou instalaci.
+Celý projekt ukazuje, že moderní web už dávno není jen místem pro jednoduché hry. Half-Life 2 lze skutečně hrát pomocí klávesnice a myši, přestože se objevují drobné chyby, například problémy s některými animacemi nebo grafikou.
+Pro fanoušky jde hlavně o zajímavý technologický experiment a další důkaz toho, co všechno je možné dostat do běžného prohlížeče. Podobné projekty navíc připomínají éru starých webových her, kdy stačilo otevřít stránku a okamžitě začít hrát.
+zdroj: XDA Developers|E|
+|T|Half-Life 3 možná nikdy nepřijde, ale Half-Life 2 si teď zahrajete zdarma v prohlížeči a bez instalace|D|30.6. 09:45|P|Half-Life 2 se vrací v nečekané podobě. Mladý vývojář ho dostal přímo do webového prohlížeče.|X|Legendární střílečka Half-Life 2 se po více než dvaceti letech dostává na nečekanou platformu. Fanoušci si ji nyní mohou spustit přímo v internetovém prohlížeči bez klasické instalace, a to díky projektu mladého vývojáře, který ukazuje, kam až se dnes možnosti webových technologií posunuly.
 Do prohlížeče za tři měsíce
 Za projektem stojí vývojář vystupující pod přezdívkou slant, kterému se společně s dalším autorem podařilo během zhruba tří měsíců vytvořit funkční webovou verzi slavného titulu od Valve. Hra běží přímo v okně prohlížeče a nepotřebuje klasický herní klient ani rozsáhlou instalaci.
 Celý projekt ukazuje, že moderní web už dávno není jen místem pro jednoduché hry. Half-Life 2 lze skutečně hrát pomocí klávesnice a myši, přestože se objevují drobné chyby, například problémy s některými animacemi nebo grafikou.

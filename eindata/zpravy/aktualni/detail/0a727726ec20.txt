@@ -1,0 +1,3 @@
+Microsoft zahájil testování Windows 11 26H2 v kanále Experimental. • Momentálně zde hlavně ladí polohování a zmenšení hlavního panelu. • Funkci ale nejspíš pro verzi 26H2 šetřit nebude.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

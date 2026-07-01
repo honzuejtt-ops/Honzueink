@@ -1,4 +1,126 @@
-|T|Konec Blu-ray disků na PlayStationu. Od roku 2028 budou všechny hry vycházet pouze digitálně|D|01.7. 18:15|P||X|
+|T|Další funkce podporované čipem POKEY|D|01.7. 22:00|P|Integrovaný obvod POKEY z herních automatů i počítačů Atari je víceúčelovým čipem. Realizuje tvorbu zvuků a hudby, čtení stavů ovladačů paddle, čtení ...|X|V trojici článků o čipu POKEY, které na Rootu vyšly v předchozích týdnech [1] [2] [3] jsme se zaměřili na popis způsobu generování zvuků (a částečně i hudby) tímto integrovaným obvodem. Ovšem POKEY je víceúčelovým čipem, protože realizuje resp. přesněji řečeno umožňuje realizovat hned několik činností: generování zvuků a hudby (již známe), čtení stavů paddle (potenciometrů), čtení klávesnice (64 běžných kláves + 3 speciálně zpracovávané klávesy Control, Shift a Break), obsahuje generátor pseudonáhodných hodnot, dále čítače (využívají tři zvukové kanály, využití našly například při práci s magnetofonem), sériový I/O a řízení IRQ (přerušení). V dnešním článku se začneme zabývat „nezvukovými“ vlastnostmi tohoto integrovaného obvodu.
+Co se dozvíte v článku
+- Řídicí a stavové registry čipu POKEY
+- Přístup k řídicím a stavovým registrům z assembleru
+- Generátor pseudonáhodných hodnot
+- První demonstrační příklad: výpis pseudonáhodných hodnot formou sekvence ATASCII znaků
+- Grafická vizualizace pseudonáhodných hodnot
+- Druhý demonstrační příklad: vizualizace pseudonáhodných hodnot v grafickém režimu 80×48 pixelů
+- Třetí a čtvrtý příklad: vyplnění celé obrazovky pseudonáhodnými hodnotami
+- Krátká odbočka do ještě vzdálenější historie
+- Herní ovladače typu paddle
+- Způsob připojení paddle a měření natočení ovladače
+- Registry POKEY použité pro práci s paddle
+- Čtení natočení paddle operačním systémem
+- Využití paddle ve hrách a kreslicích programech
+- Pátý demonstrační příklad: příprava na ovládání hráče
+- Šestý demonstrační příklad: přímé ovládání hráče s využitím paddle
+- Obsah navazujícího článku
+- Příloha: Makefile pro překlad všech demonstračních příkladů
+- Repositář s demonstračními příklady
+- Odkazy na Internetu
+Řídicí a stavové registry čipu POKEY
+Ovládání či naopak čtení stavu čipu POKEY se provádí s využitím řídicích a stavových registrů. Adresový rozsah vyhrazený pro POKEY je roven šestnácti adresám, ovšem využívá se jich jen 14 pro čtení a 15 pro zápis. Jak je na osmibitových Atari zvykem, je při zápisu na určitou adresu použit (zcela) odlišný registr, než pro čtení. Konkrétně tedy při čtení z adresy $d200 získáme stav natočení prvního paddle, kdežto při zápisu na stejnou adresu nastavujeme děličku frekvence prvního zvukového kanálu. I z tohoto důvodu existují pro vybrané registry takzvané stínové registry, což jsou místa v operační paměti, kam operační systém zapisuje stejné informace, jaké zapisuje do řídicích registrů (odsud totiž není možné čtení provést):
+Alternativně je možné registry rozdělit podle subsystému, který ovládají nebo o němž zjišťují stav.
+Zvukový subsystém:
+Práce s ovladači typu paddle:
+Sériový I/O port:
+Klávesnice:
+IRQ:
+Generátor pseudonáhodných hodnot a časovač:
+Přístup k řídicím a stavovým registrům z assembleru
+Při programování v assembleru samozřejmě nemusíme pracovat přímo s číselnými adresami registrů POKEY, protože v souboru atari.inc máme k dispozici příslušné konstanty. Zejména počáteční adresu adresové prostoru čipu POKEY:
+POKEY = $D200 ;POKEY area
+Adresy jednotlivých registrů jsou pak od POKEY odvozeny:
+; Read Addresses POT0 = POKEY + $00 ;potentiometer 0 POT1 = POKEY + $01 ;potentiometer 1 POT2 = POKEY + $02 ;potentiometer 2 POT3 = POKEY + $03 ;potentiometer 3 POT4 = POKEY + $04 ;potentiometer 4 POT5 = POKEY + $05 ;potentiometer 5 POT6 = POKEY + $06 ;potentiometer 6 POT7 = POKEY + $07 ;potentiometer 7 ALLPOT = POKEY + $08 ;potentiometer port status KBCODE = POKEY + $09 ;keyboard code RANDOM = POKEY + $0A ;random number generator SERIN = POKEY + $0D ;serial port input IRQST = POKEY + $0E ;IRQ interrupt status SKSTAT = POKEY + $0F ;serial port and keyboard status ; Write Addresses AUDF1 = POKEY + $00 ;channel 1 audio frequency AUDC1 = POKEY + $01 ;channel 1 audio control AUDF2 = POKEY + $02 ;channel 2 audio frequency AUDC2 = POKEY + $03 ;channel 2 audio control AUDF3 = POKEY + $04 ;channel 3 audio frequency AUDC3 = POKEY + $05 ;channel 3 audio control AUDF4 = POKEY + $06 ;channel 4 audio frequency AUDC4 = POKEY + $07 ;channel 4 audio control AUDCTL = POKEY + $08 ;audio control STIMER = POKEY + $09 ;start timers SKRES = POKEY + $0A ;reset SKSTAT status POTGO = POKEY + $0B ;start potentiometer scan sequence SEROUT = POKEY + $0D ;serial port output IRQEN = POKEY + $0E ;IRQ interrupt enable SKCTL = POKEY + $0F ;serial port and keyboard control
+Generátor pseudonáhodných hodnot
+Praktickou část dnešního článku začneme tou nejjednodušší vlastností čipu POKEY. Přes stavový registr RANDOM (určen je jen pro čtení) je totiž možné v libovolný okamžik přečíst osm bitů s pseudonáhodnými hodnotami. Interně je pro generování pseudonáhodných hodnot využit sedmnáctibitový posuvný registr se zpětnou vazbou (poly čítač, LFSR – Linear-feedback shift register), s nímž jsme se již setkali při popisu zvukového subsystému. Tento poly čítač tedy slouží jak ke generování šumu, tak i pseudonáhodných hodnot (ostatně proč nevyužít již tak drahé tranzistory pro více účelů?). Tento čítač mění svůj stav s frekvencí CPU (tedy cca 1,7 MHz) a registr RANDOM lze díky tomu, že v počítači vznikají a jsou zpracovávána různá přerušení, dochází k přerušení od ANTICu atd., považovat za dostatečně kvalitní generátor (pseudo)náhodných hodnot – pro hry je vhodný zcela jistě a pro kryptografické aplikace nejsou osmibitová Atari určena :-)
+První demonstrační příklad: výpis pseudonáhodných hodnot formou sekvence ATASCII znaků
+V dnešním prvním demonstračním příkladu se na prvních šest textových řádků standardního grafického režimu GR.0 vypíšou náhodné ATASCII znaky, jejichž kódy byly získány právě čtením registru RANDOM:
+Po každém stisku klávesy se provede překreslení obrazovky novou sadou pseudonáhodných znaků:
+        ldy #0                  ; počitadlo zápisů
+fills:
+        lda RANDOM
+        sta (88), y             ; tisk znaku na zvolené místo na obrazovce
+                                ; (adresa Video RAM je na adresách 88 a 89)
+        iny                     ; zvětšit hodnotu počitadla a offsetu
+        cpy #40*6               ; test na koncovou hodnotu počitadla
+        bne fills               ; skok, pokud Y>40*6
+Následuje výpis úplného zdrojového kódu tohoto demonstračního příkladu:
+; ---------------------------------------------------------------------
+; Vyplnění bloku náhodnými hodnotami.
+; ---------------------------------------------------------------------
+ 
+.include "atari.inc"
+ 
+.CODE
+ 
+ 
+.proc main
+loop:
+        ldy #0                  ; počitadlo zápisů
+fills:
+        lda RANDOM
+        sta (88), y             ; tisk znaku na zvolené místo na obrazovce
+                                ; (adresa Video RAM je na adresách 88 a 89)
+        iny                     ; zvětšit hodnotu počitadla a offsetu
+        cpy #40*6               ; test na koncovou hodnotu počitadla
+        bne fills               ; skok, pokud Y>40*6
+ 
+        jsr get_key
+        jmp loop
+.endproc
+ 
+ 
+; ---------------------------------------------------------------------
+; čekání na stisk klávesy
+; ---------------------------------------------------------------------
+.proc get_key
+        KBHANDLER = $e424       ; rutina pro cteni klavesy
+        lda KBHANDLER+1         ; cteni horni casti adresy ulozene v ROM
+        pha                     ; ulozeni na zasobnik
+        lda KBHANDLER           ; cteni dolni casti adresy ulozene v ROM
+        pha                     ; ulozeni na zasobnik
+        rts                     ; vyber adresy ze zasobniku + skok
+                                ; zde neni nutne mit RTS
+.endproc
+ 
+ 
+end:
+ 
+.segment "EXEHDR"
+.word   $ffff                   ; uvodni sekvence bajtu v souboru XEX
+.word   main                    ; zacatek kodoveho segmentu
+.word   end - 1                 ; konec kodoveho segmentu
+ 
+ 
+.segment "AUTOSTRT"             ; segment s pocatecni adresou
+.word   RUNAD                   ; naplni se pouze adresy RUNAD a RUNAD+1
+.word   RUNAD+1
+.word   main                    ; adresa vstupniho bodu do programu
+ 
+; finito
+Grafická vizualizace pseudonáhodných hodnot
+U generátorů pseudonáhodných hodnot vždy stojíme před otázkou: do jaké míry jsou čtené hodnoty „náhodné“ a zda mají dostatečně dlouhou periodu (ostatně samotná existence konečné periody znamená, že hodnoty nejsou skutečně náhodné). Pochopitelně bychom pro analýzu mohli použít různé předpřipravené nástroje, ovšem pro jednoduchost si vystačíme s lidským mozkem a jeho systémem rozpoznávání vzorů (v chaosu). Nejprve nastavíme monochromatický grafický režim a následně do obrazové paměti uložíme pseudonáhodné hodnoty získané čtením z registru RANDOM. Pokud vznikne ve čtených datech krátká perioda popř. se nějaké vzorky budou opakovat, lidský mozek by tuto skutečnost měl zaznamenat.
+Monochromatický režim bude mít rozlišení 80×48 pixelů (není nutné řešit stránkování) a jeho display list vypadá takto:
+dlist: .byte DL_BLK8, DL_BLK8, DL_BLK8 ; 3x8=24 prázdných obrazových řádků .byte DL_LMS+DL_MAP80x4x2 ; určení počáteční adresy obrazové paměti + jeden řádek režimu 9 (GR.4) .byte <screen, >screen ; počáteční adresa obrazové paměti .res 47, DL_MAP80x4x2 ; opakovat řádky grafického režimu 9 (GR.4) .byte DL_JVB, dlist ; skok na začátek display listu
+Druhý demonstrační příklad: vizualizace pseudonáhodných hodnot v grafickém režimu 80×48 pixelů
+V dnešním druhém demonstračním příkladu se nejdříve nastaví monochromatický grafický režim s rozlišením 80×48 pixelů, přičemž obrazovka bude inicializována statickými daty:
+Po stisku libovolné klávesy se prvních 240 bajtů, tedy prvních 24 obrazových řádků přepíše pseudonáhodnými daty přečtenými z registru RANDOM:
+Každý další stisk klávesy tuto první část obrazové paměti přepíše novými pseudonáhodnými hodnotami:
+Úplný zdrojový kód takto upraveného demonstračního příkladu vypadá následovně:
+; ---------------------------------------------------------------------
+; Vyplnění bloku náhodnými hodnotami.
+; ---------------------------------------------------------------------
+ 
+.include "atari.inc"
+ 
+.CODE
+ 
+ 
+.proc main
+    ...
+(Pokracovani na webu)|E||T|Konec Blu-ray disků na PlayStationu. Od roku 2028 budou všechny hry vycházet pouze digitálně|D|01.7. 18:15|P||X|
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|The latest AI news we announced in June 2026|D|01.7. 18:15|P|June Pixel Drop hero|X|The latest AI news we announced in June 2026
 For more than 20 years, we’ve invested in machine learning and AI research, tools and infrastructure to build products that make everyday life better for more people. Teams across Google are working on ways to unlock AI’s benefits in fields as wide-ranging as healthcare, crisis response and education. To keep you posted on our progress, we're doing a regular roundup of Google's most recent AI news.

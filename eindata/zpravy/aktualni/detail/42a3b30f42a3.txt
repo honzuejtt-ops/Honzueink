@@ -1,0 +1,7 @@
+Zapomeňte na to, že robotický vysavač musí být drahé zařízení z obchodu se softwarem, o kterém mnohdy ani nevíte, kam vaše data posílá. Nový projekt s názvem oomwoo ukazuje, že si podobného pomocníka můžete postavit sami. Stačí jen běžně dostupné součástky, 3D tiskárna a open-source kód.
+Bez tajností a zcela offline
+Za projektem stojí tvůrce z komunity Makers Pet, který se rozhodl vytvořit plně otevřený robotický vysavač. Oproti běžně dostupným modelům spoléhajícím na aplikace od výrobců a cloudové služby, má oomwoo fungovat hlavně lokálně. Díky tomu tak uživatel získá kontrolu nad celým zařízením, včetně samotného softwaru.
+Základem zařízení je konstrukce z 3D tiskárny, kterou si lze vytisknout i doma. O pohyb a orientaci se stará například Raspberry Pi, systém ROS 2 a laserový senzor LiDAR, který umožňuje robotovi vytvářet mapu prostoru a samostatně se v něm pohybovat. Projekt počítá také s propojením s chytrou domácností přes Home Assistant.
+Firmware a software stojí na otevřené licenci Apache 2.0. Sám autor říká, že vývoj probíhá otevřeně a fanoušky vyloženě vybízí ke společné tvorbě a kreativitě. Soubory pro tisk, seznam komponent a elektroniky a celý návod k sestavení chce autor zveřejňovat postupně.
+Pokud vás projekt uživatele Ilia O. zaujal, můžete jej sledovat na GitHubu, Discordu či síti X.
+zdroj: Tom’s Hardware, Makers Pet

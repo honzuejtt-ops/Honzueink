@@ -1,0 +1,14 @@
+Článek
+„Ještě před několika lety firmy řešily především cenu a rychlost dodání. Dnes se situace mění a stále důležitější je stabilita dodavatelského řetězce a schopnost zajistit dlouhodobou dostupnost hardwaru,“ uvedl generální ředitel distribuční firmy EET Group pro ČR a Slovensko Jan Bartoš.
+Technologické firmy v posledních měsících výrazně navyšují investice do AI infrastruktury a výrobci čipů tomu postupně přizpůsobují své výrobní priority. Podle EET Group zatím nejde o dramatické omezování produkce běžných komponent, přesun části kapacit směrem k výnosnějším AI technologiím je ale stále výraznější.
+Postupně se mění také dlouhodobý přístup firem k logistice a skladování. Model minimálních skladových rezerv a takzvaného „just in time“ zásobování, který byl v IT sektoru řadu let standardem, začíná podle EET Group ustupovat důrazu na větší odolnost dodavatelských řetězců.
+Nejrychleji reagují skandinávské státy
+Na změny už reagují i samy firmy. V některých evropských zemích začínají podniky preventivně navyšovat skladové zásoby hardwaru a kritických komponent. Nejrychleji podle interních dat reagují skandinávské státy, zatímco firmy ve střední Evropě zatím zůstávají spíše opatrné.
+Nejistota kolem cen a dostupnosti hardwaru zároveň mění i chování firemních zákazníků. Namísto plošné obměny zařízení podniky častěji investují do prodloužení životnosti stávající techniky. Ve větší míře tak roste zájem například o rozšíření operační paměti, výměny baterií, opravy notebooků nebo celkovou správu životního cyklu zařízení. Podle EET Group i dalších distributorů se údržba a modernizace stávající techniky znovu stává strategickou součástí firemního IT.
+Zdražování se očekává i u jednoho z největších světových výrobců elektroniky Apple. Podle tržního analytika eToro Jakuba Rochlitze je zvýšení cen nových MacBooků, iPhonů a iPadů kvůli nedostatku paměťových čipů nevyhnutelné.
+„Provozovatelé data center pro umělou inteligenci, jako Microsoft, Google, Meta nebo Amazon, skupují paměťové čipy v takovém objemu, že na výrobce telefonů a počítačů jich zbývá stále méně,“ podotkl Rochlitz.
+Například nové telefony by v pesimistické variantě mohly zdražit o 5000 až 6000 korun, MacBooky zhruba o 10 000 korun.
+AI ovlivňuje celý hardwarový ekosystém
+AI podle ředitele České asociace umělé inteligence Lukáše Benzla stále více ovlivňuje celý hardwarový ekosystém.
+„Výrobní kapacity polovodičového průmyslu jsou omezené a je logické, že výrobci přesouvají část zdrojů tam, kde je dnes nejvyšší poptávka a také nejvyšší přidaná hodnota, tedy do AI akcelerátorů a specializovaných čipů pro datová centra. To se může promítat do cen i dostupnosti některých běžných komponent,“ podotkl.
+Pro firmy je to podle něj další signál, že IT infrastrukturu nelze plánovat pouze s ohledem na aktuální cenu. Stále důležitější bude dlouhodobé plánování obnovy technologií, diverzifikace dodavatelů i větší odolnost dodavatelských řetězců.

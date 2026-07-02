@@ -1,0 +1,18 @@
+Článek
+Astronomie vstupuje do nové éry sledování vesmíru. Na hoře Cerro Pachón v severním Chile začala naplno pracovat Observatoř Very C. Rubin, jejíž přehlídkový dalekohled bude pravidelně mapovat takzvaný proměnlivý vesmír. Nebude se zaměřovat jen na jednotlivé vybrané objekty, ale bude opakovaně snímat rozsáhlé části oblohy a zachycovat vše, co se na ní mění.
+Detailní časosběrný záznam noční oblohy
+Během tří nocí dokáže dalekohled pokrýt celou jižní oblohu a tento postup má opakovat po dobu deseti let. Výsledkem bude rozsáhlý časosběrný záznam, díky němuž budou astronomové moci sledovat náhlé události i dlouhodobé proměny vesmírných objektů.
+„Díky velkému přehlídkovému dalekohledu LSST objevíme desetitisíce nebo statisíce planetek v naší Sluneční soustavě, miliony nových proměnných hvězd v naší galaxii a budeme pozorovat miliardy galaxií, jejich tvary, deformace, gravitační čočkování,“ uvedl v tiskové zprávě astrofyzik Michael Prouza, který je ředitelem Fyzikálního ústavu Akademie věd ČR a oficiálním zástupcem Česka v radě Observatoře Very C. Rubin.
+Pomůže hledat nebezpečné planetky
+Jednotlivé objevy nebudou důležité jen samy o sobě, ještě větší význam bude mít možnost hledat v obrovských souborech snímků vzorce, souvislosti a výjimečné jevy, které by při běžném pozorování zůstaly skryté.
+„V naší bezprostřední blízkosti se dalekohled bude soustředit na planetky, které by se v budoucnu mohly srazit se Zemí. Díky přehlídce oblohy LSST budeme po 10 letech znát téměř všechny takové Zemi ohrožující planetky a Země bude proto o dost bezpečnější,“ dodal pro Novinky Michael Prouza.
+Miliony změn každou noc
+Observatoř Very C. Rubin má každou noc upozorňovat na miliony změn na obloze. Mnohé z nich budou jen nenápadné, jiné ale mohou upozornit na mimořádné kosmické události.
+Český tým z Fyzikálního ústavu AV se v tomto proudu informací zaměří na výbuchy vzdálených supernov a na vzácné případy, kdy superhmotná černá díra roztrhá hvězdu, která se k ní dostala příliš blízko.
+„Pečlivou analýzou dat získáme též přesný obrázek rozložení hmoty ve vesmíru, stejně jako podrobná data o vývoji různě velkých struktur. Díky tomu budeme schopni velmi přesně určit parametry temné hmoty i temné energie, včetně toho, zda se hustota temné energie v čase opravdu nemění, tedy zda je temná energie opravdu kosmologickou konstantou,“ přiblížil Michael Prouza Novinkám další přednosti dalekohledu.
+Zpracování snímků během minuty
+Aby mohli astronomové na zajímavé jevy včas navázat dalšími pozorováními, musí se snímky zpracovávat téměř okamžitě.
+„Na vrcholu observatoře několik stovek serverů zpracovává data, abychom během šedesáti vteřin měli informaci, co je na obloze,“ popsal v tiskové zprávě softwarový inženýr Petr Kubánek, který se podílí na programování řídicího systému dalekohledu.
+Rychlé zpracování zároveň pomáhá udržovat přístroj v co nejlepším stavu. „Během několika vteřin od pořízení snímku se také dozvíme, jak dobře nebo špatně je dalekohled zaostřený, abychom mohli upravovat nastavení optiky,“ dodal Kubánek.
+Kamera rekordních rozměrů
+Přípravy observatoře začaly už před čtvrtstoletím. Pro její stavbu byla vybrána hora Cerro Pachón v severním Chile, kde suchý vzduch, temná obloha a nízká oblačnost vytvářejí mimořádně vhodné podmínky pro astronomická pozorování.

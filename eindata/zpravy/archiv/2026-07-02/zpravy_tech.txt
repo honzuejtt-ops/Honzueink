@@ -1,3 +1,9 @@
+|T|Android 17 ztíží tipování PIN kódu a hesla. Po sérii chyb se telefon uzamkne až na 9 let|D|02.7. 17:45|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Vybrali jsme nejlepší notebooky. Pro náročnou práci, intenzivní hraní i na chlubení|D|02.7. 16:45|P|Výborné notebooky najdete už kousek pod hranicí 25 tisíc. • Dražší stroje nabídnou nejen vyšší výkon, ale i lepší provedení. • Hlavně si už můžete vyb...|X|Výborné notebooky najdete už kousek pod hranicí 25 tisíc. • Dražší stroje nabídnou nejen vyšší výkon, ale i lepší provedení. • Hlavně si už můžete vybírat notebook přímo na míru konkrétním požadavkům.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Měly velmi pěkné ceny, ale dlouho to nevydrželo. Intel zdražil nové „Plusové“ procesory Arrow Lake|D|02.7. 16:33|P|Core Ultra 7 270K Plus a Core Ultra 5 250K Plus při vydání překvapily velmi dobrým poměrem cena/výkon. Teď už tak dobrý nebude, Intel původní ceny zve...|X|Refreshové modely procesorů Intel Core Ultra 200 „Plus“, které letos Intel vydal pro desktopové desky se socketem LGA 1851, byly jednou z vzácných výjimek z toho, že dnes počítačový hardware pořád zdražuje. Intel je vydal za až nečekaně nízké ceny – relativně k tomu, kolik jader tato CPU poskytují. Bohužel to však nevydrželo dlouho a už i tyto procesory zdražují. Nárůst ceny je to přitom přímo oficiální, potvrzený v ceníku firmy.
 Překvapivě nízké ceny nevydržely
 Intel v březnu vydal 24jádrový procesor Core Ultra 7 270K Plus, který má konfiguraci předchozích nejdražších procesorů Core Ultra 9 285K a často i lepší výkon, za částku 299 $. Levnější model Core Ultra 5 250K Plus s 18 jádry (6 P-Core, 12 E-Core) pak šel do prodeje za 199 $.

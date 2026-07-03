@@ -11,7 +11,7 @@ Takže ani nyní se žádné velké překvapení nekoná. Samozřejmě, že prak
 - Firefox 140.11.0esr
 - GCC 15.2.0, Rust 1.95.0, Python 3.13.13, Perl 5.42.0, Git 2.52
 - Postfix 3.9.10, Apache 2.4.67, Docker 28.5.2, PostgreSQL 18.4
-- &hellp; a mnoho dalšího.
+- … a mnoho dalšího.
 Co je stejné či vylepšené
 Stále stejný je instalátor systému, je tak stejný, že mohu laskavého čtenáře bažícího po screenshotech odkázat na článek o Mageie 9, stejně jako Mageie 8, ale také Mageie 5 či dokonce Mageie 2. Tehdy v roce 2012 prodělal instalátor poslední viditelné změny, předchozí verze také nesou jistou podobu, snad až někam k Mandrivě 2009. Jinými slovy: vše při starém, kdo je spokojen, bude spokojen i v nadcházejících letech.
 Stejné je i Ovládací Centrum Mageia (MCC), stejná je uvítací obrazovka Mageia Welcome, stejné je použití vlastního nástroje urpmi či možnost používat DNF. Stejné je i to, že kdo chce mít od aplikací novější verze v rozumně vzdáleném čase od jejich vydání, raději volí Flatpaky.

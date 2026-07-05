@@ -1,0 +1,5 @@
+Článek
+Jedním z nejpoužívanějších dronů v ruské armádě je momentálně Molnija-2 a obrana je proti němu velice obtížná. Během finální fáze letu přebírá kontrolu umělá inteligence, která dokáže sama identifikovat předem zadané typy cílů a zasáhnout je, aniž by k tomu byl potřeba zásah lidského operátora, píše web oboronka.
+Aby se překonalo rušení signálu, některé řady dronů Molnija jsou vybaveny terminály Starlink nebo optickými kabely, zatímco jiné slouží jako mateřské drony nesoucí menší FPV kvadrokoptéry, což je extrémně obratný bezpilotní letoun, jež se osadí výbušninou. Operátor s nimi provádí kamikaze útok.
+Hlavní hrozbou těchto dronů je neúčinnost detektorů. Běžné systémy pro varování před drony nedokážou tyto stroje včas zachytit, protože se spoléhají na rádiovou komunikaci, kterou stroj s AI nepotřebuje.
+Podle vojenských analytiků přešlo Rusko od testování k jejich masivnímu nasazení například v Záporožské oblasti a využívají se jak k průzkumným letům, tak k nesení různých typů bojových hlavic, včetně protitankových min.

@@ -1,3 +1,17 @@
+|T|Nové tlačítkové Nokie lákají na AI tlačítko. K zaplacení předplatného ale stejně potřebujete smartphone|D|06.7. 15:45|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Hodinky Amazfit nově podporují notifikace z iPhonu. Včetně obrázků a možnosti rychlých reakcí|D|06.7. 14:45|P|Evropská unie donutila Apple otevřít interaktivní notifikace konkurenčním značkám • Jako první to zkouší Amazfit, zatím u třech modelů hodinek, záhy s...|X|Evropská unie donutila Apple otevřít interaktivní notifikace konkurenčním značkám • Jako první to zkouší Amazfit, zatím u třech modelů hodinek, záhy se přidají další • Testování funkce iOS Notification Forwarding začalo v Evropské unii 30. června 2026
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Češi Mikolov a Beck výrazně zredukovali nároky jednoho z nejpoužívanějších AI modelů na světě|D|06.7. 14:43|P|Český startup BottleCap AI, za nímž stojí Tomáš Mikolov a Jaroslav Beck, ukázal jedny z prvních veřejných výsledků své práce. Jde o vyladěný velký jaz...|X|Český startup BottleCap AI, za nímž stojí Tomáš Mikolov a Jaroslav Beck, ukázal jedny z prvních veřejných výsledků své práce. Jde o vyladěný velký jazykový model, který funguje výrazně efektivněji než v původní formě. Právě snížení nároků AI modelů je hlavní náplní práce BottleCapu.
+Český tým konkrétně předvedl fine tuning modelu Qwen ve verzi 3.6–27B. Byl redukován reasoning, který není nezbytný, a to se zachováním kvality odpovědí. Takto upravený Qwen podle měření firmy na reasoningu spotřebovává o 46 procent méně tokenů, má nižší odezvy a nižší náklady na inferenci.
+“Model v rámci dvanácti out-of-domain benchmarků produkuje téměř identickou přesnost za použití zhruba poloviny tokenů,” shrnula firma. Qwen je vyvíjený čínskou společností Alibaba a je k dispozici v otevřené formě, takže je obecně hodně rozšířený a oblíbený.
+Upravený model dostal název ThinkingCap-Qwen3.6–27B a k dispozici je na Hugging Face. Tam jsou uvedeny i další detaily, stejně jako na blogu. Model je k dispozici pod otevřenou licencí Apache 2.0, takže si ho každý může stáhnout a začít používat. BottleCap AI nabízí i placené služby pro implementaci a další optimalizaci.
+BottleCap AI patří mezi české nadějné firmy zaměřené na umělou inteligenci. Kromě Mikolova nebo Becka ve firmě pracuje David Pavlík známý ze SpaceX. Mezi další zajímavé firmy se řadí Exaforce (AI boty pro kyberbezpečnostní centra), EquiLibre (AI pro obchodování na burze) nebo Aisle (hledání zranitelností v IT systémech).|E|
+|T|Největší urychlovač částic ukončil provoz. Čeká ho modernizace. Za čtyři roky snad poodhalí temnou hmotu|D|06.7. 13:45|P|Vědci odstavili největší urychlovač na světě • Zařízení projde rozsáhlou modernizací, která potrvá čtyři roky • Poté se LHC vrátí v podobě High-Lumino...|X|Vědci odstavili největší urychlovač na světě • Zařízení projde rozsáhlou modernizací, která potrvá čtyři roky • Poté se LHC vrátí v podobě High-Luminosity LHC
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Toto jsou nejlepší letošní fotky pořízené iPhony. I devět let starý model drží krok s nejlepšími|D|06.7. 12:45|P||X|
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|

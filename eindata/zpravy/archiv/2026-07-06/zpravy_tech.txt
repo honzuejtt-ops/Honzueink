@@ -1,4 +1,3 @@
-|T|Žádné zprávy|D||P|Nebyly nalezeny.|X|Zkuste to později.|E|
 |T|Klávesnice osmibitových počítačů Atari: až překvapivě komplikovaná problematika|D|06.7. 22:00|P|U mnoha typů počítačů (PC nevyjímaje) je práce s klávesnicí mnohdy až absurdně komplikovaná. Počítače Atari obsahují různé skupiny kláves, s nimiž se ...|X|V dnešním článku se budeme věnovat zdánlivě jednoduchému tématu, kterým je práce s klávesnicí osmibitových domácích mikropočítačů Atari. Ve skutečnosti se však jedná o dosti komplikované téma, protože některé klávesy jsou zapojeny popř. zpracovávány specifickým způsobem.
 Co se dozvíte v článku
 - Rozdělení kláves do skupin na základě jejich funkce a zapojení
@@ -194,6 +193,7 @@ BottleCap AI patří mezi české nadějné firmy zaměřené na umělou intelig
 |T|Toto jsou nejlepší letošní fotky pořízené iPhony. I devět let starý model drží krok s nejlepšími|D|06.7. 12:45|P||X|
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Žádné zprávy|D|06.7. 12:00|P|Nebyly nalezeny.|X|Zkuste to později.|E|
 |T|Sylvester Stallone má dnes 80 let. Nejlepší filmy aneb Od porna až k Rambovi, Rockymu a Postradatelným|D|06.7. 11:59|P|Sylvester Stallone je vedle Arnolda Schwarzeneggera nejznámější hvězdou akční filmů. Od natočení prvního uplynulo už přes padesát let a v různých rolí...|X|Sylvester Stallone je vedle Arnolda Schwarzeneggera nejznámější hvězdou akční filmů. Od natočení prvního uplynulo už přes padesát let a v různých rolích se objevil už téměř v devadesáti filmech. Provedeme vás těmi nejdůležitějšími.
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|

@@ -1,0 +1,3 @@
+Začalo to skriptem v Pythonu pro hledání historického počasí, který Jakub Čížek zveřejnil na X. Pokračovalo projektem pro AI agenty a nakonec tímto článkem. Na hračce s počasím lze totiž pěkně ukázat, jak AI agenti fungují a jak je využít pro vytvoření zajímavé aplikace. Ta naše najde bez ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

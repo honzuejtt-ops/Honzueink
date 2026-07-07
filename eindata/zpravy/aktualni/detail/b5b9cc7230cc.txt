@@ -1,0 +1,3 @@
+PACT chce nahradit CAPTCHA anonymním ověřováním důvěryhodnosti uživatelů. • Webům slibuje lepší ochranu proti botům bez narušení soukromí. • Zároveň ale může změnit fungování otevřeného webu.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

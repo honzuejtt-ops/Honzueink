@@ -1,0 +1,12 @@
+Článek
+Funkce nazvaná Audio Snapshot funguje trochu jako klasický screenshot, jen místo obrazu pořizuje „snímek“ zvuku. Sluchátka mají 32 MB integrované paměti a po současném stisknutí obou pecek uloží několik sekund před i po aktivaci. Díky tomu není potřeba reagovat přesně ve chvíli, kdy zazní něco zajímavého.
+Nahrávky se následně automaticky přenesou do aplikace Nothing X, kde je lze přehrát, upravit nebo převést do textové podoby. Vybrané části přepisu lze navíc jednoduše sdílet například jako grafické citace.
+Novinka, která si odbyla v úterý celosvětovou premiéru, myslí také na telefonování. Sluchátka umožňují přímo nahrávat hovory nebo schůzky, a to bez nutnosti vytahovat telefon z kapsy. Záznam může trvat přibližně dvě hodiny a stejně jako u Audio Snapshot se automaticky synchronizuje do aplikace. O tom, že je hovor nahráván, jsou účastníci upozorněni.
+Modernizovaná výbava
+Vedle nových funkcí přichází Ear (3a) i s modernizovanou výbavou. O reprodukci zvuku se stará nový 12mm dynamický měnič, který má nabídnout výraznější basy i více detailů ve výškách.
+Sluchátka podporují bezdrátový přenos Hi-Res Audio prostřednictvím kodeku LDAC a nechybí ani pokročilé možnosti nastavení ekvalizéru.
+Výrobce zapracoval také na aktivním potlačení okolního hluku. Technologie ANC nyní zvládá tlumit zvuky až do úrovně 45 dB a podle Nothingu je účinnější především v pásmu frekvencí, kde se pohybuje většina běžného městského ruchu. Pokud je naopak potřeba vnímat okolí, lze jedním přepnutím aktivovat transparentní režim.
+Design hraje prim
+Na první pohled zaujme i design. Nothing zůstává věrný své typické průhledné estetice, ale přepracoval nabíjecí pouzdro, které je nově kulatější a kompaktnější. V nabídce se kromě černé a bílé objeví také růžová varianta a modernizovaná žlutá.
+Na jedno nabití vydrží samotná sluchátka až deset hodin přehrávání bez aktivního potlačení hluku, s nabíjecím pouzdrem pak celková výdrž dosahuje až 42 hodin. Pokud se baterie vybije, pětiminutové nabíjení vystačí přibližně na hodinu poslechu.
+Špunty zamířily ihned po úterní premiéře do prodeje. Výrobce sluchátka Ear (3a) nabízí za 2499 Kč.

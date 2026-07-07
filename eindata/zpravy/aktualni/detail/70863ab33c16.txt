@@ -1,0 +1,12 @@
+Fanoušci simulátorového létání a závodění používají jako jednu z herních periferií příslušenství pro sledování polohy hlavy – head tracking. Na trhu je několik zařízení, která to umožňují, stejně tak existuje několik otevřených DIY projektů pro zbastlení vlastního řešení. Většinou stojí na webkamerách s podporou infra spektra. Nyní se ale objevilo sofistikovanější řešení – Sony Head Tracker, který pohyby hlavy sleduje díky senzorům v novějších sluchátcích. Jde především o oblíbené řady WH/WF-1000XM.
+Senzory z audia
+Projekt vytvořil Nicholas Slattery a zveřejnil ho jako open source aplikaci. Ta využívá Android Head Tracker HID protokol, který některá sluchátka využívají kvůli prostorovému zvuku. Sony Head Tracker je ale dokáže číst přes Bluetooth a převést je na údaje o poloze hlavy do další otevřené platformy OpenTrack. Posílají se především hodnoty yaw, pitch a roll; tedy natočení hlavy do stran, nahoru či dolů a její náklon. Hráč může díky head trackingu v kokpitu letadla nebo auta řídit pohled pohybem hlavy, místo aby používal klávesy nebo myš. Jde tedy o levnější alternativu k VR brýlím. Funkčnost si můžete prohlédnout na GitHubu projektu.
+Autor provedl testy ve hrách Microsoft Flight Simulator, Elite Dangerous a Assetto Corsa. Mezi podporovanými tituly se objevují také DCS World, Falcon BMS, Star Citizen, iRacing či Euro Truck Simulator 2 a American Truck Simulator. Celkově jde o více než 200 PC her.
+Podpora závisí na tom, zda konkrétní zařízení využívá požadovaný Android Head Tracker HID protokol. Mezi kompatibilními modely se nachází:
+- WH-1000XM5,
+- WF-1000XM5,
+- WH-1000XM6,
+- WF-1000XM6,
+- WH-ULT900N.
+Teoreticky mohou fungovat i sluchátka LinkBuds Open, LinkBuds Fit, LinkBuds a LinkBuds S, u těch ale v současné době probíhá komunitní testování a dolaďování nástroje pro jejich využití.
+Zdroj: Tom’s Hardware

@@ -1,0 +1,6 @@
+Windows 11 trápí další nepříjemná chyba. Některým uživatelům totiž z disku záhadně mizí stovky gigabajtů volného místa. Na vině je systémový soubor, který se kvůli chybě může bez téměř jakéhokoliv upozornění nafouknout do obřích rozměrů a zaplnit prakticky celé úložiště.
+Až 500 GB ztraceného místa
+Problém způsobuje soubor s názvem „CapabilityAccessManager.db-wal“, který slouží ke správě oprávnění aplikací. Například pro přístup ke kameře, mikrofonu nebo poloze. Za běžných okolností zabírá jen minimum místa, kvůli chybě ve Windows 11 ale může jeho velikost nekontrolovatelně růst.
+V extrémních případech uživatelé hlásí, že jim tento soubor zabírá až 500 gigabajtů, což může být problém hlavně u notebooků s menšími SSD disky. Jedním za všechny je například uživatel Agumon_Hakase, který se se svým případem podělil na Redditu.
+Microsoft už chybu v poslední červencové aktualizaci Windows 11 opravil. Získat ji můžete buď manuálně vyvoláním přes volitelné aktualizace, nebo počkat na její běžnou instalaci v rámci Windows Update.
+zdroj: Windows Central

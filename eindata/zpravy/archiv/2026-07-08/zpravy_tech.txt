@@ -1,10 +1,25 @@
-|T|Chyba|D||P|Něco se pokazilo.|X|HTTPSConnectionPool(host='www.lupa.cz', port=443): Max retries exceeded with url: /rss/clanky/ (Caused by NewConnectionError("HTTPSConnection(host='www.lupa.cz', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))|E|
+|T|Bezdrátová sluchátka Nothing Ear (3a). Nástupce oblíbené řady má větší měnič, silnější ANC a umí nahrávat hovory|D|08.7. 18:15|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|S jakou navigací na dovolenou v roce 2026? Vybrali jsme 12 nejlepších aplikací, které vám ukážou cestu|D|08.7. 17:45|P|Vybrali jsme nejlepší navigační aplikace pro Android a iOS • Využijí je řidiči, cyklisté i chodci • Většinu aplikací lze používat zdarma|X|Vybrali jsme nejlepší navigační aplikace pro Android a iOS • Využijí je řidiči, cyklisté i chodci • Většinu aplikací lze používat zdarma
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Chat Control 1.0 bude pravděpodobně znovu platit. Právní kličku podpořila většina českých europoslanců|D|08.7. 16:45|P|Šéfka Evropského parlamentu se pokouší oživit Chat Control 1.0. • Parlament tuto sledovací výjimku v březnu neprodloužil. • Kvůli právní kličce se o n...|X|Šéfka Evropského parlamentu se pokouší oživit Chat Control 1.0. • Parlament tuto sledovací výjimku v březnu neprodloužil. • Kvůli právní kličce se o ní bude hlasovat znovu a nejspíš bude zase platit.
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Recenze hry Assassin's Creed Black Flag Resynced. Staronová formule, které by se měla série držet|D|08.7. 15:45|P|Ubisoft po letech tlačení na pilu s dalšími díly Assassin’s Creed vsadil na jistotu. Přepracoval do nového enginu jeden z nejoblíbenějších dílů, a kdy...|X|Ubisoft po letech tlačení na pilu s dalšími díly Assassin’s Creed vsadil na jistotu. Přepracoval do nového enginu jeden z nejoblíbenějších dílů, a když už byl u toho, rovnou ho obsahově přifoukl a upravil souboje. Vůbec bych se nezlobil, kdyby se v kurzu nastaveném Resynced pokračovalo i do ...
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|AMD prolomilo odvěké tabu: Začíná prodávat vlastní počítače Ryzen AI Halo|D|08.7. 15:34|P|Minidesktop Ryzen AI Halo je se 128GB unifikovanou pamětí a výkonným integrovaným GPU konkurencí DGX Sparku od Nvidie, určenou pro aplikace umělé inte...|X|Popravdě nevím, jestli AMD někdy v minulosti nevyrábělo a nenabízelo celé počítače (Intel v dobách osmibitů kompletní stavebnice a počítače zamýšlené jako vývojový hardware měl), ale minimálně v nedávnější historii určitě ne. Důvodem pro takový přístup bývá i snaha nekonkurovat vlastním zákazníkům. Je tudíž docela pozoruhodné, že teď AMD zvyklosti opustilo a uvedlo vlastní počítač – kompaktní desktopek Ryzen AI Halo.
+Ryzen AI Halo
+Ryzen AI Halo je dost podobný zařízení DGX Spark od Nvidie a pravděpodobně je tímto konceptem i motivován. Včetně toho, že Nvidia si s tím, že výrobou vlastních PC, pracovních stanic a serverů konkuruje vlastním zákazníkům, evidentně starosti nedělá.
+Důvodem AMD také může být, že běžní výrobci notebooků některé jeho produkty poněkud ignorují, což je případ právě platformy, na které je počítač Ryzen AI Halo založený – highendových mobilních procesorech Ryzen AI Max s výkonným integrovaným GPU a velkou pamětí na široké 256bitové sběrnici (interní označení AMD pro tento segment procesorů je „Halo“). Až na pár výjimek se tento procesor objevuje spíš v různých obskurnějších produktech malých čínských firem, než v systémech zavedených tradičních výrobců PC a pracovních stanic, což asi AMD přimělo, nabídnout s ním vlastní produkt.
+Ryzen AI Halo používá procesor Ryzen AI Max+ 395, což je nejvýkonnější model řady s 16 jádry Zen 5 (přičemž jde o verzi jádra s plnými 512bitovými jednotkami SIMD a plným výkonem instrukcí AVX-512) a GPU Radeon 8060S s 40 výpočetními jednotkami (2560 shadery) architektury RDNA 3.5. Jako pracovní prostor má 128 GB paměti LPDDR5X s propustností 256 GB/s (na 256bitové sběrnici s efektivním taktem 8,0 GHz) a v zařízení má nastavené TDP 120 W. V budoucnu by podle AMD měla být nabízená i verze s refreshovou verzí procesoru, Ryzenem AI Max+ 495. Ta by mohla mít 192 GB paměti, ale zatím to není potvrzeno.
+Systém je samozřejmě aktivně chlazený, uvnitř je podobným „blower“ chladič, jaký je u těchto mini PC (včetně třeba u Macu Studio od Applu) obvyklý, tedy s dvěma radiálními ventilátory, prohánějícími vzduch přes pasivy (které jsou podle rozborky měděné) a výdechem šasi ven. Počítač má klasicky osazené obrazové výstupy (HDMI a DisplayPorty přes USB-C) a je zamýšlený jako pracovní stanice. Vedle 10Gb/s Ethernetu jak hlavní konektivity má i Bluetooth 5.4 a Wi-Fi 7. Z výroby je osazeno 2TB SSD.
+AMD nabízí Ryzen AI Halo buď s operačním systémem Windows 11 Pro, nebo s Linuxovým systémem (Debian 12), přičemž obě varianty stojí 4000 $ (s DPH okolo 103 tisíc Kč / 4300 €). Jde tedy o počítač velmi drahý, což je dáno asi zčásti dnešními cenami pamětí a SSD a malým objemem výroby, byť od menších výrobců lze podobné mini desktopky s Ryzenem AI Max+ 395 sehnat za ceny o stovky dolarů nižší. AMD se svou vlastní verzí cílí zřejmě na podobné vrstvy uživatelů jako Nvidia s DGX Sparkem.
+Ti za vyšší cenu dostanou na míru vyrobenou softwarovou platformu a nástroje pro vývoj a použití umělé inteligence na GPU od AMD. Součástí je AMD Ryzen AI Developer Center, umožňující snadnou instalaci softwaru jako vLLM, ComfyUI, llama.cpp, VS Code nebo Lemonade a dalšího. Zařízení by mělo dostávat optimalizované AI modely s „day 0“ podporou.
+Ryzen AI Halo se začal prodávat v americkém obchodě Micro Center. Jak to bude s distribucí v EU, zatím není jasné.
+Zdroje: AMD, ServeTheHome|E|
 |T|Kterou chatovací aplikaci používat, aby vás nikdo nešmíroval. Český úřad porovnal Messenger, WhatsApp, Telegram a další|D|08.7. 14:45|P||X|
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
@@ -47,6 +62,7 @@ EUDIS je osmiměsíční program, firmám nabízí mimo jiné propojení s byzny
 |T|Z xAI je SpaceXAI. Muskova umělá inteligence se definitivně stěhuje pod raketovou firmu|D|08.7. 12:45|P|Firma dříve známá jako xAI má nový název i logo SpaceXAI. • Oznámení na síti X stvrzuje, že Muskova AI splynula s jeho raketovou společností. • Je to ...|X|Firma dříve známá jako xAI má nový název i logo SpaceXAI. • Oznámení na síti X stvrzuje, že Muskova AI splynula s jeho raketovou společností. • Je to poslední krok delšího slučování, které začalo už loni.
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Chyba|D|08.7. 12:00|P|Něco se pokazilo.|X|HTTPSConnectionPool(host='www.lupa.cz', port=443): Max retries exceeded with url: /rss/clanky/ (Caused by NewConnectionError("HTTPSConnection(host='www.lupa.cz', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))|E|
 |T|Xbox přijde o pět herních studií a tisíce zaměstnanců. Restrukturalizace potrvá celý rok|D|08.7. 11:45|P||X|
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|

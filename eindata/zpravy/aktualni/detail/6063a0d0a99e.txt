@@ -1,0 +1,17 @@
+Článek
+Partnerství se společností Synhawk umožní firmě ochranu na třech úrovních. První z nich bude mobilní aplikace pro ověřování digitálního obsahu Vodafone Verify. Druhou bude představovat služba zabezpečující on-line schůzky Vodafone Verify Meetings.
+Třetí úroveň, Vodafone Verify Network, přinese detekci podvodného obsahu přímo v síti operátora. Technologii vyvinul výzkumník v oblasti umělé inteligence a deepfake technologií na Stanfordově univerzitě a spoluzakladatel Synhawk Matyáš Boháček.
+Útočníci dokážou s využitím AI věrohodně napodobit hlas vrcholového manažera či manažerky, vydávat se za účastníky živých videokonferencí nebo vytvořit falešné dokumenty za účelem podvodu.
+Nejčastější podvody, jak je odhalit a nenechat se okrást
+Policejní statistiky zaplavují v posledních měsících příběhy nešťastníků, kteří sedli na lep internetovým podvodníkům. Kyberšmejdi přitom používají pořád dokola stejné triky, jejichž prostřednictvím se snaží důvěřivce napálit a často i oškubat. Připravte se na ně a podívejte se, jak se nejčastějším podvodům na síti bránit.
+Falešné audio i video
+Deepfake je zdánlivě reálný, umělou inteligencí vytvořený obraz, zvuk nebo video. Na pravdě se ovšem tento materiál nezakládá.
+Technologie deepfake, složenina ze slov deep learning (hluboké učení, disciplína v rámci strojového učení) a fake (falešný), využívá umělé inteligence, která pomocí algoritmů a velkého množství zdrojových fotografií či videí dokáže vytvořit model obličeje či hlasu člověka, aniž by ho bylo potřeba skenovat.
+Největší veřejně známý útok využívající deepfake technologie připravil britskou inženýrskou společnost Arup o 25 milionů dolarů (v přepočtu asi 530 milionů korun). Průzkumy zároveň ukazují, že většina lidí si není jistá, zda by deepfake obsah dokázala spolehlivě rozpoznat.
+„Generativní umělá inteligence zásadně změnila ekonomiku podvodů. Útoky, které dříve vyžadovaly odborné znalosti a značné lidské kapacity, jsou dnes levné, snadno škálovatelné a mnohem sofistikovanější. Naší odpovědností jako operátora je stejným způsobem změnit ekonomiku obrany,“ uvedla generální ředitelka Vodafonu Violeta Luca.
+První aplikace Verify bude funkční na operačních systémech Android a iOS. Vodafone ji začne nabízet všem svým zákazníkům, včetně firem a veřejných institucí, během podzimu.
+Co je phishing a vishing?
+Internetoví podvodníci neustále hledají cesty, jak napálit důvěřivce. Často k tomu využívají phishing – rozesílají e-maily, které vyvolávají dojem, že pocházejí od důvěryhodné firmy, banky, úřadu nebo webové stránky.
+Pomocí těchto zpráv se útočníci snaží vylákat citlivé informace, které se týkají například bankovních kont. Tato data následně využívají k odčerpání financí z účtu postiženého.
+V posledních letech se rozšiřuje také vishing, což je obdoba phishingu. Místo e-mailu ale využívají kyberzločinci metod sociálního inženýrství v průběhu telefonních hovorů.
+Podvodníci se v tomto případě příjemcům hovorů představují jako pracovníci banky, kteří zjistili napadení bankovního účtu, případně jako bezpečnostní experti, kteří chtějí zabezpečit jejich počítač.

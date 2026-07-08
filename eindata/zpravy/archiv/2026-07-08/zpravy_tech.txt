@@ -1,3 +1,221 @@
+|T|Využití vektorové databáze Milvus v aplikacích psaných v Pythonu|D|08.7. 22:00|P|Pomocí několika praktických příkladů se seznámíme se způsobem využití vektorové databáze Milvus v aplikacích, které jsou naprogramovány v Pythonu. Mil...|X|V současnosti můžeme sledovat poměrně výrazné a stále častější nasazování vektorových databází, a to jak čistě vektorových databází, tak i databází umožňujících hybridní vyhledávání. Jedná se (alespoň většinou) o specializované databáze, které umožňují ukládat vektory numerických hodnot a především efektivně vyhledávat vektory podle jejich podobnosti (například se zadaným vzorem), přičemž podobností (similarity) může být v tomto kontextu myšlena například vzdálenost koncových bodů vektorů v Eukleidovském prostoru, kosinus úhlu mezi vektory, výsledek skalárního součinu (pro normalizované vektory) atd.
+Co se dozvíte v článku
+- Instalace balíčku pymilvus a jeho závislostí
+- Skript realizující připojení k (nové) vektorové databázi
+- Struktura adresářů a souborů s prázdnou vektorovou databází
+- Vytvoření nové databáze při každém spuštění aplikace
+- Struktura adresářů a souborů s dvojicí vektorových databází
+- Zápis vektorů s přidanými texty do databáze
+- Struktura výsledné databáze
+- Vyhledávání vektorů na základě jejich podobnosti
+- Skript realizující vyhledávání vektorů na základě jejich podobnosti
+- Vizualizace získaných výsledků
+- Použití odlišné metriky pro vyhledávání vektorů na základě jejich podobnosti
+- Úprava skriptu: vyhledávání vektorů s využitím metriky skalárního součinu
+- Metrika založená na skalárním součinu a normalizace vektorů
+- Vliv normalizace vektorů při vyhledávání s využitím metriky založené na skalárním součinu
+- Specifikace schématu databáze
+- Demonstrační příklad: specifikace schématu databáze
+- Repositář s demonstračními příklady
+- Články o vektorových databázích i jejich využití při realizaci RAGu
+- Odkazy na Internetu
+Tyto operace se používají v mnoha oblastech, například při rozpoznávání a zpracování přirozeného jazyka (NLP – Natural Language Processing), při rozpoznávání obrázků, rozpoznávání hlasů, detekci anomálií, ale i (a to zejména) v souvislosti s velkými jazykovými modely (k tomuto tématu se ještě vrátíme v samostatném článku).
+V dnešním článku se s využitím několika praktických příkladů seznámíme se způsobem využití vektorové databáze Milvus v aplikacích, které jsou naprogramovány v Pythonu. Navážeme tak na články, ve kterých jsme se věnovali rozšíření databáze Postgres o vektorové operace a vyhledávání vektorů na základě jejich podobnosti [1] [2] [3] [4] a taktéž na článek o rozšíření SQLite-Vec [5] i na čtveřici článků o knihovně FAISS [6] [7] [8] [9].
+Instalace balíčku pymilvus a jeho závislostí
+V praktické části dnešního článku si ukážeme základní způsoby použití balíčku nazvaného pymilvus. Ten není součástí standardní knihovny, takže je nutné ho doinstalovat, například s využitím nástroje pip, pdm, uv atd. V článku použiji nástroj uv, ovšem naprosto stejným způsobem (jen záměnou příkazu) lze použít i pdm.
+Nejprve si necháme vygenerovat nový projekt:
+$ uv init milvus Initialized project `milvus` at `/tmp/ramdisk/milvus`
+Dále do projektu přidáme balíček pymilvus, což je snadné:
+$ uv add pymilvus
+ 
+Using CPython 3.13.9 interpreter at: /usr/bin/python3.13
+Creating virtual environment at: .venv
+Resolved 19 packages in 1.18s
+Prepared 3 packages in 637ms
+░░░░░░░░░░░░░░░░░░░░ [0/17] Installing wheels...
+warning: Failed to hardlink files; falling back to full copy. This may lead to degraded performance.
+         If the cache and target directories are on different filesystems, hardlinking may not be supported.
+         If this is intentional, set `export UV_LINK_MODE=copy` or use `--link-mode=copy` to suppress this warning.
+Installed 17 packages in 349ms
+ + cachetools==7.1.4
+ + certifi==2026.6.17
+ + charset-normalizer==3.4.7
+ + grpcio==1.81.1
+ + idna==3.18
+ + numpy==2.4.6
+ + orjson==3.11.9
+ + pandas==3.0.3
+ + protobuf==7.35.1
+ + pymilvus==3.0.0
+ + python-dateutil==2.9.0.post0
+ + python-dotenv==1.2.2
+ + requests==2.34.2
+ + setuptools==82.0.1
+ + six==1.17.0
+ + typing-extensions==4.15.0
+ + urllib3==2.7.0
+Ve skutečnosti však budeme potřebovat variantu využívající databázi milvus_lite, takže ještě přidáme další balíček. Tento krok schválně provádím samostatným příkazem, aby bylo patrné, jaké jsou tranzitivní závislosti jednotlivých balíčků:
+$ uv add pymilvus[milvus_lite]
+ 
+Resolved 23 packages in 991ms
+Prepared 2 packages in 27.90s
+░░░░░░░░░░░░░░░░░░░░ [0/4] Installing wheels...
+warning: Failed to hardlink files; falling back to full copy. This may lead to degraded performance.
+         If the cache and target directories are on different filesystems, hardlinking may not be supported.
+         If this is intentional, set `export UV_LINK_MODE=copy` or use `--link-mode=copy` to suppress this warning.
+Installed 4 packages in 414ms
+ + faiss-cpu==1.14.3
+ + milvus-lite==3.0
+ + packaging==26.2
+ + pyarrow==24.0.0
+Verze nainstalovaných balíčků i s jejich závislostmi zjistíme snadno:
+$ uv tree
+ 
+Resolved 23 packages in 1ms
+milvus2 v0.1.0
+└── pymilvus[milvus-lite] v3.0.0
+    ├── cachetools v7.1.4
+    ├── grpcio v1.81.1
+    │   └── typing-extensions v4.15.0
+    ├── orjson v3.11.9
+    ├── pandas v3.0.3
+    │   ├── numpy v2.4.6
+    │   └── python-dateutil v2.9.0.post0
+    │       └── six v1.17.0
+    ├── protobuf v7.35.1
+    ├── python-dotenv v1.2.2
+    ├── requests v2.34.2
+    │   ├── certifi v2026.6.17
+    │   ├── charset-normalizer v3.4.7
+    │   ├── idna v3.18
+    │   └── urllib3 v2.7.0
+    ├── setuptools v82.0.1
+    └── milvus-lite v3.0 (extra: milvus-lite)
+        ├── faiss-cpu v1.14.3
+        │   ├── numpy v2.4.6
+        │   └── packaging v26.2
+        ├── grpcio v1.81.1 (*)
+        ├── numpy v2.4.6
+        └── pyarrow v24.0.0
+(*) Package tree already displayed
+Skript realizující připojení k (nové) vektorové databázi
+První program napsaný v Pythonu, který bude s databází Milvus komunikovat, je realizován jednoduchým skriptem, ve kterém dochází k inicializaci klienta (tedy třídy nabízející rozhraní mezi skriptem a databází). Konstrukce klienta vyžaduje v tom nejjednodušším případě pouze zadání cesty k adresáři, ve kterém je databáze uložena:.
+class MilvusClient(pymilvus.milvus_client.base.BaseMilvusClient) | MilvusClient( | uri: str = 'http://localhost:19530', | user: str = '', | password: str = '', | db_name: str = '', | token: str = '', | timeout: Optional[float] = None, | **kwargs | ) -> None
+V našem konkrétním případě:
+# inicializace klienta pro připojení k vektorové databázi milvus_client = MilvusClient(uri="./hf_milvus_demo.db")
+Následně je nutné databázi vytvořit; předpokládáme totiž, že zpočátku neexistuje. Pro tento účel se používá metoda klienta pojmenovaná create_collection:
+create_collection(
+    collection_name: str,
+    dimension: Optional[int] = None,
+    primary_field_name: str = 'id',
+    id_type: str = 'int',
+    vector_field_name: str = 'vector',
+    metric_type: str = 'COSINE',
+    auto_id: bool = False,
+    timeout: Optional[float] = None,
+    schema: Optional[pymilvus.orm.schema.CollectionSchema] = None,
+    index_params: Optional[pymilvus.milvus_client.index.IndexParams] = None,
+    **kwargs
+Nastavíme tedy jméno databáze, počet dimenzí vektorů i metriku (L2):
+# jméno databáze
+COLLECTION_NAME = "milvus_db_1"
+ 
+# počet dimenzí uložených vektorů
+EMDEDDING_DIM = 2
+ 
+# použitá metrika
+SIMILARITY_METRICS = "L2"
+ 
+# vytvoření databáze
+milvus_client.create_collection(
+    collection_name=COLLECTION_NAME,
+    dimension=EMDEDDING_DIM,
+    metric_type=SIMILARITY_METRICS,
+    consistency_level="Strong",
+)
+Výsledný skript realizující dnešní první demonstrační příklad bude vypadat následovně:
+"""Připojení k vektorové databázi."""
+ 
+from pymilvus import MilvusClient
+ 
+# inicializace klienta pro připojení k vektorové databázi
+milvus_client = MilvusClient(uri="./hf_milvus_demo.db")
+ 
+# jméno databáze
+COLLECTION_NAME = "milvus_db_1"
+ 
+# počet dimenzí uložených vektorů
+EMDEDDING_DIM = 2
+ 
+# použitá metrika
+SIMILARITY_METRICS = "L2"
+ 
+# vytvoření databáze
+milvus_client.create_collection(
+    collection_name=COLLECTION_NAME,
+    dimension=EMDEDDING_DIM,
+    metric_type=SIMILARITY_METRICS,
+    consistency_level="Strong",
+)
+Struktura adresářů a souborů s prázdnou vektorovou databází
+Po spuštění skriptu uvedeného v předchozí kapitole by se měl v pracovním adresáři objevit nový podadresář nazvaný hf_milvus_demo.db. Toto jméno odpovídá hodnotě parametru uri předávaného do konstruktoru MilvusClient. Struktura tohoto podadresáře vypadá následovně:
+hf_milvus_demo.db/ ├── collections │ └── milvus_db_1 │ ├── manifest.json │ ├── schema.json │ └── wal └── LOCK
+V této chvíli je pro nás nejzajímavější obsah souboru manifest.json, ve kterém jsou uloženy metainformace o vektorové databázi, například použitá metrika:
+{
+  "active_wal_number": null,
+  "current_seq": 0,
+  "index_specs": {
+    "vector": {
+      "build_params": {},
+      "field_name": "vector",
+      "index_type": "AUTOINDEX",
+      "metric_type": "L2",
+      "search_params": {}
+    }
+  },
+  "manifest_format_version": 2,
+  "partitions": {
+    "_default": {
+      "data_files": [],
+      "delta_files": []
+    }
+  },
+  "schema_version": 1,
+  "version": 1
+}
+Soubor nazvaný schema.json obsahuje, jak již ostatně jeho jméno napovídá, schéma vektorové databáze. Definovány jsou dva atributy („sloupce“) nazvané id (primární klíč) a vector, který obsahuje dvoudimenzionální vektory. Struktura databáze popsaná v JSONu sice nemusí být tak čitelná, jako SQL DDL, ale na druhou stranu je lépe strojově zpracovatelná:
+{
+  "collection_name": "milvus_db_1",
+  "enable_dynamic_field": true,
+  "fields": [
+    {
+      "auto_id": false,
+      "default_value": null,
+      "dim": null,
+      "dtype": "int64",
+      "element_type": null,
+      "is_primary": true,
+      "max_capacity": null,
+      "max_length": null,
+      "name": "id",
+      "nullable": false
+    },
+    {
+      "auto_id": false,
+      "default_value": null,
+      "dim": 2,
+      "dtype": "float_vector",
+      "element_type": null,
+      "is_primary": false,
+      "max_capacity": null,
+      "max_length": null,
+      "name": "vector",
+      "nullable": false
+    }
+  ],
+  "schema_format_version": 2,
+  "version...
+(Pokracovani na webu)|E|
 |T|Bezdrátová sluchátka Nothing Ear (3a). Nástupce oblíbené řady má větší měnič, silnější ANC a umí nahrávat hovory|D|08.7. 18:15|P||X|
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|

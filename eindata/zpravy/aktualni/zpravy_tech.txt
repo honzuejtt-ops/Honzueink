@@ -1,4 +1,221 @@
-|T|Chyba|D||P|Něco se pokazilo.|X|HTTPSConnectionPool(host='www.lupa.cz', port=443): Max retries exceeded with url: /rss/clanky/ (Caused by NewConnectionError("HTTPSConnection(host='www.lupa.cz', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))|E||T|Bezdrátová sluchátka Nothing Ear (3a). Nástupce oblíbené řady má větší měnič, silnější ANC a umí nahrávat hovory|D|08.7. 18:15|P||X|
+|T|Využití vektorové databáze Milvus v aplikacích psaných v Pythonu|D|08.7. 22:00|P|Pomocí několika praktických příkladů se seznámíme se způsobem využití vektorové databáze Milvus v aplikacích, které jsou naprogramovány v Pythonu. Mil...|X|V současnosti můžeme sledovat poměrně výrazné a stále častější nasazování vektorových databází, a to jak čistě vektorových databází, tak i databází umožňujících hybridní vyhledávání. Jedná se (alespoň většinou) o specializované databáze, které umožňují ukládat vektory numerických hodnot a především efektivně vyhledávat vektory podle jejich podobnosti (například se zadaným vzorem), přičemž podobností (similarity) může být v tomto kontextu myšlena například vzdálenost koncových bodů vektorů v Eukleidovském prostoru, kosinus úhlu mezi vektory, výsledek skalárního součinu (pro normalizované vektory) atd.
+Co se dozvíte v článku
+- Instalace balíčku pymilvus a jeho závislostí
+- Skript realizující připojení k (nové) vektorové databázi
+- Struktura adresářů a souborů s prázdnou vektorovou databází
+- Vytvoření nové databáze při každém spuštění aplikace
+- Struktura adresářů a souborů s dvojicí vektorových databází
+- Zápis vektorů s přidanými texty do databáze
+- Struktura výsledné databáze
+- Vyhledávání vektorů na základě jejich podobnosti
+- Skript realizující vyhledávání vektorů na základě jejich podobnosti
+- Vizualizace získaných výsledků
+- Použití odlišné metriky pro vyhledávání vektorů na základě jejich podobnosti
+- Úprava skriptu: vyhledávání vektorů s využitím metriky skalárního součinu
+- Metrika založená na skalárním součinu a normalizace vektorů
+- Vliv normalizace vektorů při vyhledávání s využitím metriky založené na skalárním součinu
+- Specifikace schématu databáze
+- Demonstrační příklad: specifikace schématu databáze
+- Repositář s demonstračními příklady
+- Články o vektorových databázích i jejich využití při realizaci RAGu
+- Odkazy na Internetu
+Tyto operace se používají v mnoha oblastech, například při rozpoznávání a zpracování přirozeného jazyka (NLP – Natural Language Processing), při rozpoznávání obrázků, rozpoznávání hlasů, detekci anomálií, ale i (a to zejména) v souvislosti s velkými jazykovými modely (k tomuto tématu se ještě vrátíme v samostatném článku).
+V dnešním článku se s využitím několika praktických příkladů seznámíme se způsobem využití vektorové databáze Milvus v aplikacích, které jsou naprogramovány v Pythonu. Navážeme tak na články, ve kterých jsme se věnovali rozšíření databáze Postgres o vektorové operace a vyhledávání vektorů na základě jejich podobnosti [1] [2] [3] [4] a taktéž na článek o rozšíření SQLite-Vec [5] i na čtveřici článků o knihovně FAISS [6] [7] [8] [9].
+Instalace balíčku pymilvus a jeho závislostí
+V praktické části dnešního článku si ukážeme základní způsoby použití balíčku nazvaného pymilvus. Ten není součástí standardní knihovny, takže je nutné ho doinstalovat, například s využitím nástroje pip, pdm, uv atd. V článku použiji nástroj uv, ovšem naprosto stejným způsobem (jen záměnou příkazu) lze použít i pdm.
+Nejprve si necháme vygenerovat nový projekt:
+$ uv init milvus Initialized project `milvus` at `/tmp/ramdisk/milvus`
+Dále do projektu přidáme balíček pymilvus, což je snadné:
+$ uv add pymilvus
+ 
+Using CPython 3.13.9 interpreter at: /usr/bin/python3.13
+Creating virtual environment at: .venv
+Resolved 19 packages in 1.18s
+Prepared 3 packages in 637ms
+░░░░░░░░░░░░░░░░░░░░ [0/17] Installing wheels...
+warning: Failed to hardlink files; falling back to full copy. This may lead to degraded performance.
+         If the cache and target directories are on different filesystems, hardlinking may not be supported.
+         If this is intentional, set `export UV_LINK_MODE=copy` or use `--link-mode=copy` to suppress this warning.
+Installed 17 packages in 349ms
+ + cachetools==7.1.4
+ + certifi==2026.6.17
+ + charset-normalizer==3.4.7
+ + grpcio==1.81.1
+ + idna==3.18
+ + numpy==2.4.6
+ + orjson==3.11.9
+ + pandas==3.0.3
+ + protobuf==7.35.1
+ + pymilvus==3.0.0
+ + python-dateutil==2.9.0.post0
+ + python-dotenv==1.2.2
+ + requests==2.34.2
+ + setuptools==82.0.1
+ + six==1.17.0
+ + typing-extensions==4.15.0
+ + urllib3==2.7.0
+Ve skutečnosti však budeme potřebovat variantu využívající databázi milvus_lite, takže ještě přidáme další balíček. Tento krok schválně provádím samostatným příkazem, aby bylo patrné, jaké jsou tranzitivní závislosti jednotlivých balíčků:
+$ uv add pymilvus[milvus_lite]
+ 
+Resolved 23 packages in 991ms
+Prepared 2 packages in 27.90s
+░░░░░░░░░░░░░░░░░░░░ [0/4] Installing wheels...
+warning: Failed to hardlink files; falling back to full copy. This may lead to degraded performance.
+         If the cache and target directories are on different filesystems, hardlinking may not be supported.
+         If this is intentional, set `export UV_LINK_MODE=copy` or use `--link-mode=copy` to suppress this warning.
+Installed 4 packages in 414ms
+ + faiss-cpu==1.14.3
+ + milvus-lite==3.0
+ + packaging==26.2
+ + pyarrow==24.0.0
+Verze nainstalovaných balíčků i s jejich závislostmi zjistíme snadno:
+$ uv tree
+ 
+Resolved 23 packages in 1ms
+milvus2 v0.1.0
+└── pymilvus[milvus-lite] v3.0.0
+    ├── cachetools v7.1.4
+    ├── grpcio v1.81.1
+    │   └── typing-extensions v4.15.0
+    ├── orjson v3.11.9
+    ├── pandas v3.0.3
+    │   ├── numpy v2.4.6
+    │   └── python-dateutil v2.9.0.post0
+    │       └── six v1.17.0
+    ├── protobuf v7.35.1
+    ├── python-dotenv v1.2.2
+    ├── requests v2.34.2
+    │   ├── certifi v2026.6.17
+    │   ├── charset-normalizer v3.4.7
+    │   ├── idna v3.18
+    │   └── urllib3 v2.7.0
+    ├── setuptools v82.0.1
+    └── milvus-lite v3.0 (extra: milvus-lite)
+        ├── faiss-cpu v1.14.3
+        │   ├── numpy v2.4.6
+        │   └── packaging v26.2
+        ├── grpcio v1.81.1 (*)
+        ├── numpy v2.4.6
+        └── pyarrow v24.0.0
+(*) Package tree already displayed
+Skript realizující připojení k (nové) vektorové databázi
+První program napsaný v Pythonu, který bude s databází Milvus komunikovat, je realizován jednoduchým skriptem, ve kterém dochází k inicializaci klienta (tedy třídy nabízející rozhraní mezi skriptem a databází). Konstrukce klienta vyžaduje v tom nejjednodušším případě pouze zadání cesty k adresáři, ve kterém je databáze uložena:.
+class MilvusClient(pymilvus.milvus_client.base.BaseMilvusClient) | MilvusClient( | uri: str = 'http://localhost:19530', | user: str = '', | password: str = '', | db_name: str = '', | token: str = '', | timeout: Optional[float] = None, | **kwargs | ) -> None
+V našem konkrétním případě:
+# inicializace klienta pro připojení k vektorové databázi milvus_client = MilvusClient(uri="./hf_milvus_demo.db")
+Následně je nutné databázi vytvořit; předpokládáme totiž, že zpočátku neexistuje. Pro tento účel se používá metoda klienta pojmenovaná create_collection:
+create_collection(
+    collection_name: str,
+    dimension: Optional[int] = None,
+    primary_field_name: str = 'id',
+    id_type: str = 'int',
+    vector_field_name: str = 'vector',
+    metric_type: str = 'COSINE',
+    auto_id: bool = False,
+    timeout: Optional[float] = None,
+    schema: Optional[pymilvus.orm.schema.CollectionSchema] = None,
+    index_params: Optional[pymilvus.milvus_client.index.IndexParams] = None,
+    **kwargs
+Nastavíme tedy jméno databáze, počet dimenzí vektorů i metriku (L2):
+# jméno databáze
+COLLECTION_NAME = "milvus_db_1"
+ 
+# počet dimenzí uložených vektorů
+EMDEDDING_DIM = 2
+ 
+# použitá metrika
+SIMILARITY_METRICS = "L2"
+ 
+# vytvoření databáze
+milvus_client.create_collection(
+    collection_name=COLLECTION_NAME,
+    dimension=EMDEDDING_DIM,
+    metric_type=SIMILARITY_METRICS,
+    consistency_level="Strong",
+)
+Výsledný skript realizující dnešní první demonstrační příklad bude vypadat následovně:
+"""Připojení k vektorové databázi."""
+ 
+from pymilvus import MilvusClient
+ 
+# inicializace klienta pro připojení k vektorové databázi
+milvus_client = MilvusClient(uri="./hf_milvus_demo.db")
+ 
+# jméno databáze
+COLLECTION_NAME = "milvus_db_1"
+ 
+# počet dimenzí uložených vektorů
+EMDEDDING_DIM = 2
+ 
+# použitá metrika
+SIMILARITY_METRICS = "L2"
+ 
+# vytvoření databáze
+milvus_client.create_collection(
+    collection_name=COLLECTION_NAME,
+    dimension=EMDEDDING_DIM,
+    metric_type=SIMILARITY_METRICS,
+    consistency_level="Strong",
+)
+Struktura adresářů a souborů s prázdnou vektorovou databází
+Po spuštění skriptu uvedeného v předchozí kapitole by se měl v pracovním adresáři objevit nový podadresář nazvaný hf_milvus_demo.db. Toto jméno odpovídá hodnotě parametru uri předávaného do konstruktoru MilvusClient. Struktura tohoto podadresáře vypadá následovně:
+hf_milvus_demo.db/ ├── collections │ └── milvus_db_1 │ ├── manifest.json │ ├── schema.json │ └── wal └── LOCK
+V této chvíli je pro nás nejzajímavější obsah souboru manifest.json, ve kterém jsou uloženy metainformace o vektorové databázi, například použitá metrika:
+{
+  "active_wal_number": null,
+  "current_seq": 0,
+  "index_specs": {
+    "vector": {
+      "build_params": {},
+      "field_name": "vector",
+      "index_type": "AUTOINDEX",
+      "metric_type": "L2",
+      "search_params": {}
+    }
+  },
+  "manifest_format_version": 2,
+  "partitions": {
+    "_default": {
+      "data_files": [],
+      "delta_files": []
+    }
+  },
+  "schema_version": 1,
+  "version": 1
+}
+Soubor nazvaný schema.json obsahuje, jak již ostatně jeho jméno napovídá, schéma vektorové databáze. Definovány jsou dva atributy („sloupce“) nazvané id (primární klíč) a vector, který obsahuje dvoudimenzionální vektory. Struktura databáze popsaná v JSONu sice nemusí být tak čitelná, jako SQL DDL, ale na druhou stranu je lépe strojově zpracovatelná:
+{
+  "collection_name": "milvus_db_1",
+  "enable_dynamic_field": true,
+  "fields": [
+    {
+      "auto_id": false,
+      "default_value": null,
+      "dim": null,
+      "dtype": "int64",
+      "element_type": null,
+      "is_primary": true,
+      "max_capacity": null,
+      "max_length": null,
+      "name": "id",
+      "nullable": false
+    },
+    {
+      "auto_id": false,
+      "default_value": null,
+      "dim": 2,
+      "dtype": "float_vector",
+      "element_type": null,
+      "is_primary": false,
+      "max_capacity": null,
+      "max_length": null,
+      "name": "vector",
+      "nullable": false
+    }
+  ],
+  "schema_format_version": 2,
+  "version...
+(Pokracovani na webu)|E||T|Bezdrátová sluchátka Nothing Ear (3a). Nástupce oblíbené řady má větší měnič, silnější ANC a umí nahrávat hovory|D|08.7. 18:15|P||X|
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|S jakou navigací na dovolenou v roce 2026? Vybrali jsme 12 nejlepších aplikací, které vám ukážou cestu|D|08.7. 17:45|P|Vybrali jsme nejlepší navigační aplikace pro Android a iOS • Využijí je řidiči, cyklisté i chodci • Většinu aplikací lze používat zdarma|X|Vybrali jsme nejlepší navigační aplikace pro Android a iOS • Využijí je řidiči, cyklisté i chodci • Většinu aplikací lze používat zdarma
 
@@ -6,7 +223,16 @@
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Recenze hry Assassin's Creed Black Flag Resynced. Staronová formule, které by se měla série držet|D|08.7. 15:45|P|Ubisoft po letech tlačení na pilu s dalšími díly Assassin’s Creed vsadil na jistotu. Přepracoval do nového enginu jeden z nejoblíbenějších dílů, a kdy...|X|Ubisoft po letech tlačení na pilu s dalšími díly Assassin’s Creed vsadil na jistotu. Přepracoval do nového enginu jeden z nejoblíbenějších dílů, a když už byl u toho, rovnou ho obsahově přifoukl a upravil souboje. Vůbec bych se nezlobil, kdyby se v kurzu nastaveném Resynced pokračovalo i do ...
 
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Kterou chatovací aplikaci používat, aby vás nikdo nešmíroval. Český úřad porovnal Messenger, WhatsApp, Telegram a další|D|08.7. 14:45|P||X|
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|AMD prolomilo odvěké tabu: Začíná prodávat vlastní počítače Ryzen AI Halo|D|08.7. 15:34|P|Minidesktop Ryzen AI Halo je se 128GB unifikovanou pamětí a výkonným integrovaným GPU konkurencí DGX Sparku od Nvidie, určenou pro aplikace umělé inte...|X|Popravdě nevím, jestli AMD někdy v minulosti nevyrábělo a nenabízelo celé počítače (Intel v dobách osmibitů kompletní stavebnice a počítače zamýšlené jako vývojový hardware měl), ale minimálně v nedávnější historii určitě ne. Důvodem pro takový přístup bývá i snaha nekonkurovat vlastním zákazníkům. Je tudíž docela pozoruhodné, že teď AMD zvyklosti opustilo a uvedlo vlastní počítač – kompaktní desktopek Ryzen AI Halo.
+Ryzen AI Halo
+Ryzen AI Halo je dost podobný zařízení DGX Spark od Nvidie a pravděpodobně je tímto konceptem i motivován. Včetně toho, že Nvidia si s tím, že výrobou vlastních PC, pracovních stanic a serverů konkuruje vlastním zákazníkům, evidentně starosti nedělá.
+Důvodem AMD také může být, že běžní výrobci notebooků některé jeho produkty poněkud ignorují, což je případ právě platformy, na které je počítač Ryzen AI Halo založený – highendových mobilních procesorech Ryzen AI Max s výkonným integrovaným GPU a velkou pamětí na široké 256bitové sběrnici (interní označení AMD pro tento segment procesorů je „Halo“). Až na pár výjimek se tento procesor objevuje spíš v různých obskurnějších produktech malých čínských firem, než v systémech zavedených tradičních výrobců PC a pracovních stanic, což asi AMD přimělo, nabídnout s ním vlastní produkt.
+Ryzen AI Halo používá procesor Ryzen AI Max+ 395, což je nejvýkonnější model řady s 16 jádry Zen 5 (přičemž jde o verzi jádra s plnými 512bitovými jednotkami SIMD a plným výkonem instrukcí AVX-512) a GPU Radeon 8060S s 40 výpočetními jednotkami (2560 shadery) architektury RDNA 3.5. Jako pracovní prostor má 128 GB paměti LPDDR5X s propustností 256 GB/s (na 256bitové sběrnici s efektivním taktem 8,0 GHz) a v zařízení má nastavené TDP 120 W. V budoucnu by podle AMD měla být nabízená i verze s refreshovou verzí procesoru, Ryzenem AI Max+ 495. Ta by mohla mít 192 GB paměti, ale zatím to není potvrzeno.
+Systém je samozřejmě aktivně chlazený, uvnitř je podobným „blower“ chladič, jaký je u těchto mini PC (včetně třeba u Macu Studio od Applu) obvyklý, tedy s dvěma radiálními ventilátory, prohánějícími vzduch přes pasivy (které jsou podle rozborky měděné) a výdechem šasi ven. Počítač má klasicky osazené obrazové výstupy (HDMI a DisplayPorty přes USB-C) a je zamýšlený jako pracovní stanice. Vedle 10Gb/s Ethernetu jak hlavní konektivity má i Bluetooth 5.4 a Wi-Fi 7. Z výroby je osazeno 2TB SSD.
+AMD nabízí Ryzen AI Halo buď s operačním systémem Windows 11 Pro, nebo s Linuxovým systémem (Debian 12), přičemž obě varianty stojí 4000 $ (s DPH okolo 103 tisíc Kč / 4300 €). Jde tedy o počítač velmi drahý, což je dáno asi zčásti dnešními cenami pamětí a SSD a malým objemem výroby, byť od menších výrobců lze podobné mini desktopky s Ryzenem AI Max+ 395 sehnat za ceny o stovky dolarů nižší. AMD se svou vlastní verzí cílí zřejmě na podobné vrstvy uživatelů jako Nvidia s DGX Sparkem.
+Ti za vyšší cenu dostanou na míru vyrobenou softwarovou platformu a nástroje pro vývoj a použití umělé inteligence na GPU od AMD. Součástí je AMD Ryzen AI Developer Center, umožňující snadnou instalaci softwaru jako vLLM, ComfyUI, llama.cpp, VS Code nebo Lemonade a dalšího. Zařízení by mělo dostávat optimalizované AI modely s „day 0“ podporou.
+Ryzen AI Halo se začal prodávat v americkém obchodě Micro Center. Jak to bude s distribucí v EU, zatím není jasné.
+Zdroje: AMD, ServeTheHome|E||T|Kterou chatovací aplikaci používat, aby vás nikdo nešmíroval. Český úřad porovnal Messenger, WhatsApp, Telegram a další|D|08.7. 14:45|P||X|
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Kde je právě teď vlak a co ukazuje nádražní tabule. Dvě klíčové aplikace nejen pro nováčky na železnici|D|08.7. 14:27|P|Léto patří už tradičně železniční dopravě, kterou si o dovolených často vyzkoušejí i ti, kteří jinak po celý rok neopustí svého dvoustopého oře. A prá...|X|Léto patří už tradičně železniční dopravě, kterou si o dovolených často vyzkoušejí i ti, kteří jinak po celý rok neopustí svého dvoustopého oře. A právě pro ty připomeneme dvě klíčové aplikace, které by neměly chybět na žádném telefonu.
 
@@ -20,7 +246,32 @@ These principles reflect a cross-company effort to develop a more comprehensive 
 We are publishing them now as we expand our work with the U.S. government and allied partners in critical defensive areas, particularly cyber and biosecurity. In the past month, as part of our Daybreak cyber defense program, we have already established Trusted Access for Cyber partnerships with Australia, Canada, Japan, Republic of Korea, France, Germany, Poland, the Netherlands and EU institutions like ENISA. We also have a growing and trusted partnership with the UK government around cyber, testing and evaluation. We are taking a similar approach in biosecurity. Last month, we also announced expanded trusted access to our GPT‑Rosalind model for select U.S. government and allied partners supporting public health and biodefense missions.
 These principles apply to our current and future national security and law enforcement partnerships, including our existing work with the Department of War. When we announced our agreement earlier this year, we articulated several contractual restrictions: no use of OpenAI technology for mass domestic surveillance, no use of OpenAI technology to direct autonomous weapons systems, and no use of OpenAI technology for high-stakes automated decisions. Those restrictions are consistent with the principles we are sharing today.
 We believe the right thing to do is to be clear about how our technology can and cannot be used, and to be transparent about them. But many of the most consequential questions about AI in government, especially in national security, should be answered through the democratic process. The role of companies like ours is to help inform those decisions, not make them alone. That is why we support legislative efforts to establish safeguards around some of the highest-risk military uses of AI, including in the contexts of domestic surveillance, autonomous weapons systems, and other high-risk uses that directly affect U.S. national security.
-Read the principles here(opens in a new window).|E||T|Separating signal from noise in coding evaluations|D|08.7. 13:00|P|A new analysis from OpenAI reveals issues in SWE-Bench Pro, a popular coding benchmark, raising concerns about reliability and accuracy in evaluating ...|X|Separating signal from noise in coding evaluations
+Read the principles here(opens in a new window).|E||T|Windows 11 půjdou konečně kompletně přeinstalovat z cloudu. Stáhnou si systém i ovladače|D|08.7. 13:12|P|Microsoft testuje ve Windows 11 novou metodu obnovy systému s názvem Cloud rebuild. Funkce má přeinstalovat celý systém i s ovladači přes internet. Po...|X|Cloud rebuild bude součástí prostředí Windows Recovery Environment. Uživatelé zapojení do programu Insider ji v aktuálním preview najdou v nabídce Odstranit potíže > Opětovné sestavení z cloudu. Po spuštění se počítač připojí k internetu přes Ethernet nebo Wi-Fi a z Windows Update stáhne obraz Windows i ovladače pro dané zařízení. Uživatel se tak obejde bez instalace z flashky, případně obrazu zavedeného skrz lokální síť. Nejde ale o obnovu pokaženého systému, jde spíš o pohodlnější čistou instalaci.
+Jako nová instalace
+Před zahájením obnovy systém nabídne obnovované sestavení Windows, edici a jazyk. Uživatel pak musí potvrdit varování před možnou ztrátou dat. Cloud rebuild totiž formátuje systémový disk a odstraní lokálně uložené soubory, účty, aplikace i nastavení. Ochráněna tak budou jen data uložená na OneDrive případně dalších cloudových úložištích. Po dokončení počítač naběhne do úvodního nastavení Windows, kde uživatel pokračuje stejně jako při nové instalaci. Firemní počítače připojené přes Microsoft Entra a spravované skrz Intune mohou pokračovat prostřednictvím Windows Autopilot.
+Funkce je součástí sestavení Windows 11 Insider Experimental Preview Build 26300.877, které uživatelům v Insider programu dorazilo 6. července. Zařízení musí mít Windows 11, funkční prostředí WinRE a splňovat minimální hardwarové nároky systému. Výrobce zároveň musí do WinRE dodat kompatibilní síťový ovladač.
+Zdroj: Windows Central|E||T|Nintendo musí kvůli EU změnit Switch. Konzole ztěžkne, nové pravidlo čeká všechny výrobce|D|08.7. 13:05|P|Nintendo začne kvůli novým pravidlům Evropské unie prodávat konzole a ovladače s uživatelsky vyměnitelnými bateriemi. Změny přinesou snadnější opravy,...|X|Nintendo se začne přizpůsobovat novým pravidlům Evropské unie a od léta 2026 uvede na trh přepracované verze konzole Nintendo Switch 2 i ovladačů, které budou mít uživatelsky vyměnitelné baterie. Výrobce tak reaguje na nové evropské nařízení, jehož cílem je prodloužit životnost elektroniky a usnadnit její opravy.
+Těžší Nintendo Switch i Joy-Cony
+Přechod na nové revidované verze s vyměnitelnou baterií nebude okamžitý. Nintendo jej odstartuje během tohoto léta, přičemž na trh se dostane postupně v momentě, kdy se vyprodají aktuální skladové zásoby. Změny se konkrétně dotknou:
+- 
+		herní konzole Nintendo Switch 2, 
+- 
+		ovladačů Joy-Con (pár i jednotlivé), 
+- 
+		ovladačů Joy-Con 2 (pár i jednotlivé), 
+- 
+		ovladače Nintendo Switch 2 Pro Controller, 
+- 
+		ovladače Nintendo 64 (N64) Controller, 
+- 
+		ovladače Nintendo GameCube (GCN) Controller. 
+Kvůli konstrukčním úpravám budou zařízení o něco těžší. Nintendo Switch 2 přibere o 10 gramů a bude vážit 411 gramů. Současně se sníží kapacita baterie o 1 % z 5 220 na 5 172 mAh. Ovladače Joy-Con 2 ztěžknou každý o 2 gramy.
+Největší změna ale čeká Nintendo Switch 2 Pro Controller, který dostane menší akumulátor s kapacitou 897 mAh namísto dosavadních 1 070 mAh, což představuje pokles o celých 16 %. Kompletní přehled změn najdete v tabulce na oficiálním webu Nintenda.
+Sady pro výměny baterie pak Nintendo bude prodávat samostatně v Nintendo Store. Konkrétní ceny náhradních baterií ale zatím nejsou známy.
+Nová pravidla dopadnou na celou elektroniku
+Podobný osud jako Nintendo čeká i další výrobce. Evropská unie stanovila, že všechna elektrická zařízení uvedená na trh po 18. únoru 2027 musejí obsahovat uživatelsky vyměnitelnou baterii.
+Povinnost se nebude týkat jen herních konzolí nebo telefonů, ale i běžné elektroniky, jako jsou například elektrické zubní kartáčky. Výrobci přitom budou muset zajistit, aby si zařízení po výměně baterie zachovala stupeň ochrany proti vniknutí vody. Je tak možné, že i přes možnost vyměnitelné baterie bude její výměna možná jen u odborníků či specializovaných servisů.
+zdroj: Nintendo, Evropská komise, ČT24|E||T|Separating signal from noise in coding evaluations|D|08.7. 13:00|P|A new analysis from OpenAI reveals issues in SWE-Bench Pro, a popular coding benchmark, raising concerns about reliability and accuracy in evaluating ...|X|Separating signal from noise in coding evaluations
 Through a detailed audit, we find widespread task issues in SWE-Bench Pro and estimate that ~30% of the tasks are broken.
 Accurately measuring our models’ capabilities is important for sound deployment and safety decisions, including decisions under OpenAI’s Preparedness Framework(opens in a new window). With each model release, we report results for a variety of external and internal benchmarks to track model progress. When evaluations have flaws that affect results, they can give a false understanding of capabilities, misrepresenting safety cases and affecting research priorities.
 We recently investigated how one of the most widely used coding benchmarks, SWE-bench Verified, had fundamental design and contamination issues, and found that the eval no longer provided meaningful signal on software development capabilities. At the time, we encouraged the wider community to switch to SWE-Bench Pro.
@@ -48,7 +299,10 @@ Ultimately, an eval should provide meaningful signal through benchmarks that are
 Author
 Footnotes
 - 1We previously referred to this category as narrow tests. 
-- 2We previously referred to this category as wide tests.|E||T|Z xAI je SpaceXAI. Muskova umělá inteligence se definitivně stěhuje pod raketovou firmu|D|08.7. 12:45|P|Firma dříve známá jako xAI má nový název i logo SpaceXAI. • Oznámení na síti X stvrzuje, že Muskova AI splynula s jeho raketovou společností. • Je to ...|X|Firma dříve známá jako xAI má nový název i logo SpaceXAI. • Oznámení na síti X stvrzuje, že Muskova AI splynula s jeho raketovou společností. • Je to poslední krok delšího slučování, které začalo už loni.
+- 2We previously referred to this category as wide tests.|E||T|Do evropského obranného akcelerátoru se dostala druhá česká firma, řeší satelitní komunikaci a kyberbezpečnost|D|08.7. 12:57|P|Do nové kohorty akcelerátoru hledajícího společné evropské obranné technologie EUDIS Business Accelerator se dostala česká společnost Corac Engineerin...|X|Do nové kohorty akcelerátoru hledajícího společné evropské obranné technologie EUDIS Business Accelerator se dostala česká společnost Corac Engineering. Jde o firmu rozvíjející zabezpečené komunikační řešení pro satelity, drony i vzdálené senzory, aby odolaly případným kybernetickým útokům. Do akcelerátoru, za kterým stojí Evropská komise, se dostala spolu s dalšími 19 evropskými deep-tech startupy v konkurenci necelé pětistovky dalších firem.
+Jde o jedinou firmu z Česka v tomto běhu, celkově už o druhý český úspěch v programu. První českou společností přijatou do programu se stal Dronetag, který se specializuje na identifikaci a sledování dronů.
+Corac o sobě říká, že vyvíjí bezpečnostní technologie pro budoucí infrastrukturu ve vesmíru i na Zemi. Kombinuje kryptografii, zabezpečené komunikační protokoly, ochranu softwaru například v družici a monitoring systémů, které umožňují detekovat neobvyklé chování. Spolupracuje s Evropskou kosmickou agenturou, Brno Space clusterem nebo organizací Taiwan Startup Terrace. Je mimo jiné partnerem brněnské TRL Space, spolu s ní a dalšími firmami odborníci přišli s projektem moderní ochrany českých hranic, v rámci nějž nabízejí kombinaci dronů, satelitů, cloudové platformy a detekčních algoritmů.
+EUDIS je osmiměsíční program, firmám nabízí mimo jiné propojení s byznysem či přístup k testovacím zařízením. Firmy získávají seed financování a možnost návazné finanční injekce.|E||T|Z xAI je SpaceXAI. Muskova umělá inteligence se definitivně stěhuje pod raketovou firmu|D|08.7. 12:45|P|Firma dříve známá jako xAI má nový název i logo SpaceXAI. • Oznámení na síti X stvrzuje, že Muskova AI splynula s jeho raketovou společností. • Je to ...|X|Firma dříve známá jako xAI má nový název i logo SpaceXAI. • Oznámení na síti X stvrzuje, že Muskova AI splynula s jeho raketovou společností. • Je to poslední krok delšího slučování, které začalo už loni.
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Xbox přijde o pět herních studií a tisíce zaměstnanců. Restrukturalizace potrvá celý rok|D|08.7. 11:45|P||X|
 
@@ -77,7 +331,47 @@ Confirmed locations and partners for the AI Skills Jam for K–12 Educators, inc
 - Phoenix, AZ, with Vertex Education & Legacy Traditional Schools — Friday, July 31
 - Salt Lake City, UT, with Davis School District — Friday, August 7
 - Las Vegas, NV, with Vertex Education & Legacy Traditional Schools — Friday, September 4
-We are grateful to the districts, school systems, educators, partners and the Walton Family Foundation for helping shape this effort. Their leadership and expertise are essential to making AI useful, responsible, and accessible in education.|E||T|Samsung letos vydělá víc než za posledních 40 let dohromady. Díky AI roste hlad po jeho čipech|D|08.7. 08:45|P|Korejská společnost zveřejnila předběžné výsledky hospodaření za druhé čtvrtletí. Provozní zisk Samsungu Electronics dosáhne 84,6 bilionu wonů, což je...|X|Korejská společnost zveřejnila předběžné výsledky hospodaření za druhé čtvrtletí. Provozní zisk Samsungu Electronics dosáhne 84,6 bilionu wonů, což je v přepočtu 56,1 miliardy amerických dolarů. Šlo by tak o dosavadní rekord mezi všemi technologickými společnostmi. Doposud nejvyšší provozní zisk ...
+We are grateful to the districts, school systems, educators, partners and the Walton Family Foundation for helping shape this effort. Their leadership and expertise are essential to making AI useful, responsible, and accessible in education.|E||T|Komunistka byla proti, topka nebo starostové pro. Europoslanci opět budou projednávat invazivní Chat Control|D|08.7. 09:40|P|Evropský parlament schválil znovuotevření a opětovné projednání Chat Control 1.0, zjednodušeně řečeno skenování soukromých zpráv uživatelů komunikační...|X|Evropský parlament schválil znovuotevření a opětovné projednání Chat Control 1.0, zjednodušeně řečeno skenování soukromých zpráv uživatelů komunikačních aplikací, a to ve jménu boje s ochranou dětí a podobně. Pro byla i značná část českých europoslanců.
+Chat Control 1.0 už jednou zmizel ze scény, když jej europoslanci v březnu letošního roku odmítli. Výjimka, která umožňovala skenovat osobní komunikaci, vypršela třetího dubna. Jenže Rada Evropské unie následně přijala původní návrh Evropské komise a spustila takzvané druhé čtení. Europoslanci nyní schválili opětovné projednání výjimky v rámci takzvaného naléhavého postupu.
+Pro znovuotevření Chat Control 1.0 hlasovalo 11 českých europoslanců a europoslankyň. Jde například o zástupce Starostů (Danuše Nerudová a Jan Farský) a TOP 09 (Luděk Niedermayer a Ondřej Kolář), KDU-ČLS (Tomáš Zdechovský) a většinu ANO.
+Proti bylo pět českých zástupců, a sice z SPD, KSČM (Kateřina Konečná), Pirátů (Markéta Gregorová), SD-SN a ODS (Ondřej Krutílek). Zástupce Patriotů se zdržel hlasování. Nehlasovali pak zbylí dva zástupci ODS nebo členka ECR.
+Pro otevření dalšího projednávání hlasovalo 331 europoslanců, 304 bylo proti. Hlasování o výjimce proběhne tento čtvrtek.
+Mezi nejhlasitější kritiky aktuálního postupu patří pirátka Markéta Gregorová. “Jsme ve finálních týdnech vyjednávání trvalého režimu boje s dětským pornografickým obsahem, který by ale zachovával i naše občanská práva a soukromí. To se nelíbí Komisi a ve výsledku ani Radě, která musí ve vyjednávání Parlamentu ustupovat, a Komise tak svůj návrh nestáhla. Jako velké zklamání a zradu demokracie považuji krok předsedkyně Evropského parlamentu Roberty Metsoly, která na základě přání své lidovecké frakce jednostranně vyzvala členské státy, aby přijaly svou společnou pozici, čímž se celý legislativní proces znovu rozběhnul. My tak budeme muset o stejném návrhu hlasovat již potřetí. Tentokrát však odmítnout nebo upravit návrh bude mnohem složitější. Budeme potřebovat absolutní většinu všech 720 poslanců, tedy nejméně 361 hlasů. Jde o naprosto bezprecedentní situaci. Komise tak fakticky říká, že výsledek předchozího hlasování nehraje žádnou roli,” shrnula Gregorová.|E||T|Microsoft znovu zkouší Windows bez klasických aplikací. Odvážný Project Aion může změnit používání počítačů|D|08.7. 09:31|P|Unikl interní koncept Microsoftu s názvem Project Aion, který staví Copilota do centra Windows a klasické aplikace přesouvá do cloudu. Může jít o názn...|X|Microsoft se znovu vrací k otázce, na které si už několikrát vylámal zuby: co kdyby Windows nebyly hlavně systémem pro spouštění aplikací? Tentokrát se interní koncept jmenuje Project Aion a ven se dostal neoficiální cestou.
+Co se dozvíte v článku
+Windows Central píše o uniklém interním videu z roku 2024, jehož pravost mu podle redakce potvrdily vlastní zdroje. Microsoft nic nekomentoval. The Verge zprávu převzal jako ukázku odlehčeného konceptu „Copilot OS“, u kterého zatím není jasné, zda by se vůbec někdy měl dostat k uživatelům.
+Pozor na záměnu. Nejde o oficiálně oznámené modely Aion 1.0 Instruct a Aion 1.0 Plan, které Microsoft představil na Build 2026 jako lokální modely pro Windows. Tady řešíme uniklý Project Aion jako koncept prostředí, ne veřejně oznámený AI model.
+Aion tedy není oznámený operační systém, ani veřejný plán vývoje. Má smysl ho řešit proto, že ukazuje jeden možný směr uvažování uvnitř Microsoftu: méně Start menu, méně lokálních aplikací, víc agenta, cloudu a webu.
+Copilot už není tlačítko vedle Startu
+Podle uniklých materiálů Aion nepřidává Copilota do Windows tak, jak to Microsoft dělá dnes. Copilot v něm funguje jako základ prostředí. Místo klasického Startu se objevuje spouštěč kolem Copilota se vstupním polem, do kterého uživatel píše nebo mluví. Webové aplikace běží v samostatných oknech a funkce Spaces skládá související stránky, dokumenty a úlohy do pracovních kontextů, ke kterým se lze vracet.
+Připomíná to směs ChromeOS, zrušeného pokusu Sets a dnešního tlaku na Copilota. V Aionu ale Copilot stojí o patro výš: nespouštíte ho nad Windows, ale používáte ho jako hlavní vstup do práce.
+Windows Latest upozorňuje i na technicky zajímavý detail. Když celé prostředí běží na Edge, Copilot nemusí jen „vidět“ snímek obrazovky. U webových aplikací může pracovat přímo se strukturou stránky. DOM webu mu dá čistší vstup než obrazovka přečtená jako obrázek.
+Pro agenta je to lákavé. Uživatel tím ale udělá další krok od klasického osobního počítače k terminálu pro web a služby Microsoftu.
+Klasické aplikace by čekaly v cloudu
+Největší problém je aplikační model. V ukázané webové variantě Aionu neběží klasické Win32 aplikace lokálně. Desktopový software má podle Windows Central obsloužit Windows 365 Cloud PC. Jinými slovy: když potřebujete „normální Windows“, otevře se vám Windows v cloudu.
+V návrhu to působí čistě. Při každodenním používání tím ale přibývá závislost na připojení, účtu, správě, latenci a ceně. Mění se i to, co lidé od Windows čekají. Počítač si už část práce nespustí sám, ale připojí se k ní.
+Ve firmách to přitom není absurdní představa. Microsoft už dnes prodává Windows 365 jako cloudový počítač a rozšiřuje kategorii zařízení, která se k němu připojují hned po startu. U Cloud PC zařízení pro Windows 365 firma sama zdůrazňuje, že lokálně nemají data, aplikace ani administrátorské účty. Pro správce je to čistší, bezpečnější a jednodušší model.
+Jenže právě tady se Aion dotýká starého problému Windows. Firmy používají účetní software, specializované nástroje, ovladače k periferiím nebo aplikace, na které už se roky nesáhlo, ale bez nichž se práce zastaví. Domácí uživatelé zase čekají, že spustí hru, utilitu od výrobce hardwaru nebo program, který nikdo nepřepsal jako webovou aplikaci.
+Win32 je nepořádek. Zároveň je to důvod, proč se Windows na klasických počítačích pořád tak těžko nahrazují.
+Tohle Microsoft nezkouší poprvé
+Stačí se podívat na starší pokusy Microsoftu. Windows RT měly být odlehčené a vhodné pro nová ARM zařízení. Dopadly jako systém, na kterém nešlo spustit to, co lidé od Windows čekali. Windows 10X začaly jako systém pro dvoudisplejová zařízení, později se měly stát jednodušší variantou Windows pro běžnější hardware.
+Už tehdy se u klasických aplikací řešil cloud. Projekt nakonec neskončil jako nový samostatný systém a část nápadů se přesunula do běžných Windows.
+Aion jde v ukázané podobě ještě dál. Místo aby staré aplikace zavřel do kontejneru, vytlačuje je mimo lokální zařízení. To může dávat smysl v kiosku, řízeném firemním terminálu nebo úzce vymezeném pracovním scénáři. Na běžném PC je to ale přesně ten typ nápadu, u kterého Microsoft znovu předpokládá, že uživatelé přijmou méně možností výměnou za jednodušší prostředí.
+Copilot tento problém neodstraňuje. Jen ho přebarvuje. Místo staré otázky „stačí uživatelům Store a web?“ se teď ptáme „stačí uživatelům web, Copilot a Cloud PC?“. Pro část firemních scénářů možná ano. Pro běžný domácí počítač, vývojářskou stanici nebo herní PC už méně.
+Aion zapadá do širšího agentního směru
+Aion sám o sobě nemusí znamenat nic víc než interní experiment. Zajímavější je ve chvíli, kdy ho dáme do kontextu dalších kroků Microsoftu. Firma dnes zkouší několik cest, jak dostat agenty blíž k ovládání počítače a k práci ve firmách.
+Ve Windows už testuje Copilot Actions pro práci s místními soubory a popisuje oddělený pracovní prostor pro agenta, aby úkoly běžely pod kontrolou a s omezenými oprávněními.
+Pro vývojáře je důležitý i Model Context Protocol ve Windows. Microsoft ho popisuje jako způsob, jak budou moci agenti komunikovat s nativními aplikacemi a systémovými funkcemi. To je bezpečnější cesta než Aion: klasické aplikace zůstávají na místě, jen se nad ně přidává agentní vrstva.
+Vedle toho Microsoft na Build 2026 ukázal Project Solara, platformu pro zařízení stavěná primárně pro agenty. Nejde o Windows pro běžná PC, ale o specializovaná zařízení navázaná na agenty, konkrétní práci a cloudové služby. Microsoft Scout zase ukazuje, jak si firma představuje osobního agenta v prostředí Microsoft 365, Teams, Outlooku, SharePointu, desktopu a webu.
+Aion, Solara a Scout nejsou tři názvy pro jeden produkt. Přesto míří podobným směrem: Microsoft přemýšlí o počítači méně jako o ploše s ikonami a víc jako o řízeném prostředí, ve kterém agent skládá úkoly, aplikace, web a cloud podle aktuální potřeby.
+Ve firmách to smysl dává, doma je to horší
+Ve firemním prostředí se dá směr naznačený Aionem obhájit snáz. Pokud má zaměstnanec pracovat v několika webových aplikacích, v Microsoft 365 a v řízeném cloudovém prostředí, může být agentní prostředí užitečné. Správce získá lepší kontrolu, agent může mít vlastní identitu, citlivé akce půjdou přes schvalování a starý Windows desktop se otevře jen tam, kde je potřeba.
+V takovém scénáři počítač nemusí být univerzální stroj pro všechno. Může být bezpečný pracovní terminál. Pro call centrum, front desk, sklad, školu nebo úzce vymezenou firemní roli to nemusí být špatná představa. Dokonce může být lepší než běžný Windows notebook zahlcený aplikacemi, právy a výjimkami.
+Pro spotřebitele a klasické PC už to zní hůř. Windows se pořád vyznačují tím, že spustí skoro všechno. Webové aplikace a PWA mají své místo, ale nejsou univerzální náhrada lokálního softwaru. A čím víc se práce přesune do Copilota, tím víc bude záležet na tom, co agent vidí, co si pamatuje, jak se rozhoduje a kdy pošle práci do cloudu.
+Jako běžná Windows by Aion narazil
+U Aionu je potřeba držet se toho, co víme. Nemáme důkaz, že Microsoft chystá odsunout současná Windows, odříznout Win32 nebo vydat „Copilot OS“ pro běžná PC. Únik ale ukazuje, že uvnitř firmy vznikla funkční představa systému, ve kterém klasický desktop ustupuje agentovi, webu a cloudovému řešení pro klasické aplikace.
+Z pohledu dlouholetých uživatelů Windows se tu vrací stará písnička: méně lokální svobody výměnou za jednodušší a lépe řízené prostředí. Jen se místo Metra, dlaždic a Windows Storu tentokrát říká Copilot, Spaces a agent-first.
+Jako nápad pro nové typy zařízení to může fungovat. Jako náhrada běžných Windows by ale Aion narazil na stejný problém jako starší pokusy Microsoftu: jakmile klasické aplikace neběží přímo na počítači, velká část výhody Windows mizí.
+Zdroj: Windows Central, The Verge, Windows Latest, Microsoft Windows Developer Blog, Project Solara, Microsoft Scout|E||T|Samsung letos vydělá víc než za posledních 40 let dohromady. Díky AI roste hlad po jeho čipech|D|08.7. 08:45|P|Korejská společnost zveřejnila předběžné výsledky hospodaření za druhé čtvrtletí. Provozní zisk Samsungu Electronics dosáhne 84,6 bilionu wonů, což je...|X|Korejská společnost zveřejnila předběžné výsledky hospodaření za druhé čtvrtletí. Provozní zisk Samsungu Electronics dosáhne 84,6 bilionu wonů, což je v přepočtu 56,1 miliardy amerických dolarů. Šlo by tak o dosavadní rekord mezi všemi technologickými společnostmi. Doposud nejvyšší provozní zisk ...
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Meta zabránila další velké kauze. Smazala z chytrých brýlí kód pro rozpoznávání obličejů|D|08.7. 07:45|P||X|
 
@@ -85,7 +379,40 @@ We are grateful to the districts, school systems, educators, partners and the Wa
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Nedaleko Brna vyrostlo jedno z největších samostatně stojících bateriových úložišť v Česku|D|08.7. 05:45|P|Nové samostatně stojící bateriové úložiště ve Velké Bíteši stabilizuje českou síť • Nabízí výkon 10 MW, kapacitu 27 MWh a není připojené ke konkrétní ...|X|Nové samostatně stojící bateriové úložiště ve Velké Bíteši stabilizuje českou síť • Nabízí výkon 10 MW, kapacitu 27 MWh a není připojené ke konkrétní elektrárně • Bezpečný komplex tvořený šesti kontejnery splňuje přísné evropské směrnice
 
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Introducing GPT-Live|D|08.7. 00:00|P|A new generation of voice models for natural human-AI interaction, now powering ChatGPT Voice.|X|We’re launching GPT‑Live, a new generation of voice models that make talking with AI feel much more like having a real conversation.
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Nvidia oznámila novou generaci procesorů: Rigel má ještě víc posílit jednovláknový výkon|D|08.7. 05:04|P|Nvidia poodhalila plány vývoje svých vlastních architektur CPU. Její next-gen jádro se jmenuje Rigel a na trh by mělo přijít v letech 2029 až 2030.|X|Nvidia letos uvádí na trh své serverové procesory Vera, přelomové v tom, že obsahují vlastní CPU architekturu vyvinutou přímo v Nvidii. Firma tradičně spojená s GPU tak přestává být jen jedním z hráčů, kteří si licencují hotová jádra od firmy Arm. Jádro Olympus díky tomu má také ve světě Arm procesorů zřídka vídanou schopnost SMT. Firma teď potvrdila, že další generace CPU opět bude mít její vlastní jádro: novou architekturu Rigel.
+Nové plánované CPU jádro Nvidie
+Serverové procesory Vera, které by měly vyjít letos (i když u Nvidie bývá serverový hardware obvykle vydávaný papírově s reálnou dostupností mnohem později, takže je u jejích datacentrových produktů vždy nejasné, kdy přesně je lze považovat za reálně vydané), firma prezentuje jako řešení s velmi vysokým jednovláknovým výkonem CPU, čímž jsou podle ní optimalizovány pro „agentickou AI“. A na to se má opět zaměřit i její následující vlastní jádro Rigel.
+Rigel bude mít instrukční sadu ARMv9.2, stejně jako procesory Vera, nepřibudou tedy asi žádná významná instrukční rozšíření navíc. Samotná architektura jádra ale bude nová a má zlepšit výkon na jedno jádro proti jádru Olympus. Nvidia ale zmiňuje, že bude zachována zhruba stejná plocha křemíku. To však nevylučuje výrazný nárůst tranzistorů, pokud čipy s jádry Rigel budou vyráběné na novějším výrobním procesu než procesory Vera s jádry Olympus (ty vznikají na 3nm procesu TSMC).
+Jádro Rigel bude použito v procesorech, které mají označení Rosa a tvoří generačního souputníka pro GPU architektury Feynman. Nvidia tedy zřejmě bude sledovat strategii, kdy každá nová generace CPU bude přinášet nové jádro (byť to nebude s roční kadencí), místo aby třeba používala něco jako cyklus tick-tock u Intelu, kdy některé generace mají stejné jádro, ale například tase provedou přechod na nový výrobní proces.
+O architektonických rysech Rigelu Nvidia zatím skoro nic neříká – zmiňuje ale (vágně), že má být vylepšeno zpracování instrukcí a docílena efektivnější práce s pamětí. To by mohlo znamenat přidání více vykonávacích jednotek (ALU, GPU pipeline) a load-store jednotek, ale výkon také může být místo rozšíření jádra zvýšen čistě efektivnějším využitím stejného počtu jednotek pomocí lepšího out-of-order vykonávání, lepší predikce větvení, prefetchingu a podobně.
+Nvidia ovšem prozradila, že procesory Rosa s jádrem Rigel budou mít větší L2 cache. Ta má u jádra Olympus v procesoru Vera kapacitu 2 MB, takže Rigel by mohl mít například 3 MB nebo 4 MB. L2 cache budou zřejmě opět privátní pro každé jádro a rozšíření ze 2 na 4 MB by dávalo poměrně velký prostor i pro serverové instance, běžící třeba jen s jedním jádrem.
+Podle roadmapy Nvidie by procesory Rosa pro servery měly být na trhu v roce 2029, což ale nevylučuje, že nebudou oficiálně odhalené či uvedené (papírově) už v roce 2028. Ostatně stejná roadmapa uvádí procesory Vera jako produkt na rok 2027, přestože je Nvidia široce prezentuje a nabízí již letos.
+Budou v procesorech pro PC?
+Zatím není jasné, zda a v jakém horizontu plánuje Nvidia přechod na tato vlastní jádra také ve svých procesorech pro PC a notebooky, které nazývá DGX Spark a RTX Spark. Jejich současná verze (oficiálně „Grace“, nicméně nesouvisející se serverovými procesory Nvidia Grace) má jádra licencovaná od firmy Arm.
+Příští generace, která by patrně mohla vyjít v roce 2028, má v roadmapě Nvidie označení Vera jako jako serverové procesory Vera s jádry Olympus. A na rok 2030 je plánovaná generace označená Rosa (opět tedy shodné jméno jako serverové procesory Rosa s jádry Rigel). Jestli to tentokrát bude znamenat, že v klientských procesorech už také budou použita stejná jádra navržená Nvidií, to ale zatím zůstává zahaleno tajemstvím. Pokud ano, mohla by jádra Rigel být v procesorech pro notebooky (a případně desktopy) v onom roce 2030, takže by pak mohla konkurovat Zenu 8 od AMD, který je očekáván zhruba v této době.
+Zdroj: Nvidia|E||T|První operátor v ČR zavede ochranu proti AI podvodům. Poskytne ji jeden z největších talentů Česka|D|08.7. 04:30|P|Podvody deep fake už jsou tak dobré, že může naletět v podstatě každý. Ochranu proti nim vyvíjí český vědec na Stanfordu a nyní zamíří do první mobiln...|X|Česká pobočka operátora Vodafone se chystá spustit vlastní ochranu proti takzvaným deep fakům, tedy realisticky vypadajícím digitálním podvodům, jejichž výskyt akceleruje s tím, jak AI modely získávají nové schopnosti a stávají se dostupnějšími. Technologie vzniká díky spolupráci Vodafonu s českým výzkumníkem na Stanfordu. Operátor jí chce v budoucnu nasadit v rámci celosvětového skupiny Vodafone Group.
+Deep fake začíná být skutečně velkým problémem. AI dokáže generovat věrný hlas, obrázky a video, realisticky vypadající smlouvy, faktury, občanky a další dokumenty a podobně. Zdaleka se nemnoží pouze scénáře typu “babička naletěla podvodníkovi vydávajícímu se za jejího vnuka”. Deep fake například hraje čím dál větší roli při šikaně na školách. Nepříjemné zkušenosti mají i tuzemští podnikatelé nebo odborníci na informační technologie, kteří nedokázali podvod rozeznat.
+“Dříve jsme se hodně potkávali hlavně s falešnými hovory. Dnes podobné hrozby dostávají mnohem větší rozměry. Podvodníci se běžně vydávají za příbuzné a podobně. Dějí se i věci, kdy manažer společnosti uvěří tomu, že si volá s představenstvem a od něj dostane úkol, který vykoná,” shrnula Veronika Brázdilová, viceprezidentka divize Vodafone Business. “Nemůžete si být jistí, zda obraz, který vidíte, je reálný, nebo syntetický,” doplnila.
+Mezi zástupce byznysu, kteří mají podobnou nedobrou zkušenost, je spoluzakladatel vývojářského studia Cleevio Lukáš Stibor, který takto přišel o vysoký obnos peněz. Je to paradoxní, protože právě Cleevio patří mezi firmy, které se v podnikání snaží nástup AI využít.
+Appka Vodafone Verify
+Pro operátory a další providery digitálních služeb je deep fake problém. Pokud uživatelé nebudou mít důvěru v technologie, nebudou je chtít tolik využívat, což ohrožuje samotné podnikání těchto hráčů. Zároveň se postupně zavádí regulace a často bývá mnohem lepší začít bojovat s problémy po vlastní ose než se pak nechat zavalit mnohem náročnějšími legislativními pravidly.
+Předseda Rady Českého telekomunikačního úřadu Marek Ebert uvedl, že regulátor rád projekt Vodafonu podpoři, stejně jako jemu podobné. “Pro ČTÚ je pozitivní nejen jeho cílení na ochranu zákazníků, ale je to i vynikající příležitost si na konkrétních případech otestovat naši expertízu pro budoucí dozor dle Aktu o umělé inteligenci,” dodal Ebert.
+Vodafone proto letos v září spustí aplikace Vodafone Verify, která v první fázi bude k dispozici na Google Play Store a Apple App Store pro běžné zákazníky. Tato appka umožní prohlédnout obsah jako jsou fotografie nebo videa (třeba z WhatsAppu) a následně uživateli sdělí, zda se jedná či nejedná o deep fake. Podobné nástroje začínají do svých bezpečnostních balíků integrovat tradiční dodavatelé antivirů. Například český Gen Digital provozuje službu Avast Deepfake Guard.
+Vodafone zatím neuvedl, kolik používání aplikace bude stát, cena ale bude spíše nižší jakožto bonusová funkce k tarifům. Aplikace Verify každopádně bude dostupná pouze pro zákazníky Vodafonu.
+Vhodné jako upsell
+Ředitelka české pobočky operátora Violeta Luca uvedla, že Vodafone chce prodávat služby nad rámec poskytování konektivity a volání, do čehož Verify zapadá. Operátoři obecně hledají cesty, jak nebýt pouze takzvanými “hloupými trubkami”, které poskytují uživatelům konektivitu, na níž velkou marži dělají poskytovatelé obsahu typu YouTube, Netflix, Spotify, Apple, Uber a podobně. Takzvaný upsell dalších služeb je cestou, jak zvýšit marži. Například O2 hodně tlačí doplňkovou službu O2 Security, která pomocí brněnské technologie Whalebone filtruje kybernetické hrozby na úrovni sítě (DNS).
+Vodafone Verify se v další fázi zaměří také na firmy a organizace. Ti budou moci využít třeba AI bota přidaného do hovorů v aplikacích typu Teams. Bot pozná, zda náhodou zaměstnanec nehovoří s podvodníky.
+Modely z Prahy a Stanfordu
+Technologii pro Vodafone Verify si operátor nevyvíjí sám, dodavatelem je český startup Synhawk, který aktuálně v Praze a San Francisku zaměstnává asi 28 lidí. Jeho hlavním představitelem je výzkumník Matyáš Boháček, který se oboru deep faků a ochraně proti nim věnuje na Stanfordské univerzitě v Kalifornii. Mnohými je považován za světovou špičku v oboru. Jeho výzkum naleznete zde.
+Spoluzakladatelem Synhawku je také Lukáš Foral, který stojí za investiční společností Progresus. Foral pomohl Boháčkovi financovat jeho studia na Stanfordu a později jeho výzkum přenesli i do nového startupu.
+Synhawk je zároveň jedním z představitelů mladé generace českých startupů zaměřených na AI, které ve svých oborech patří mezi nejlepší na světě. Například firma EquiLibre byla nedávno ohodnocena na 12 miliard korun, její AI využívá teorii učení a reinforcement learning pro obchodování na burze. Aisle zase dokáže hledat zranitelnosti IT systémů, podobně jako Mythos. Exaforce vyvíjející AI agenty pro kyberbezpečnostní centra se zase blíží statutu jednorožce.
+Vlastní modely, žádný wrapper
+Synhawk vyvíjí a trénuje vlastní foundation modely. Hawk rozumí struktuře lidské mluvy až do úrovně signálu. Právě díky těmto signálům dokáže odhalit, zda hlas není klonovaný nebo zmanipulovaný, a to včetně živých přenosů. Vyra je model pro video, který podobně umí během hovorů či KYC ověřování detekovat generovaný a podvodný obsah.
+Boháček o přesném fungování modelů nejde do detailů. Důvodem je mimo jiné to, aby útočníci okamžitě neodhalili, jak Synhawk funguje a nemohli se lépe připravit na obejití jeho technologií. Modely nicméně neanalyzují samotný obsah, ale jsou trénovány tak, aby rozpoznaly signály generované deep faky. Jde o informace, které běžné oko či uši nezachytí. Modely se kontinuálně učí.
+Boháček pro Lupu uvedl, že implementace Synhawku musí být v případě Vodafonu na úrovni sítě, respektive infrastruktury. Nejedná se o volání API, takže data nikam neodchází a vše běží v datacentrech operátora. Detaily opět nejsou kvůli smlouvám a obecné citlivosti k dispozici. “Zároveň nejsme žádný AI wrapper, který by jen obalil existující modely. Jsme nezávislí a modely si děláme sami,” doplnil Boháček.
+Vodafone je pro Synhawk důležitým partnerem, díky němuž může technologii předvést v širším měřítku. Český Vodafone je první, kdo v rámci skupiny od září začne modely používat. Výkonná ředitelka mateřské Vodafone Group Margherita Della Valle během návštěvy Česka uvedla, že by řešení v budoucnu mohlo být implementováno i v dalších zemích, kde operátor působí.
+Boháček doplnil, že aplikace nejenom pro Vodafone mohla časem mít další funkce a moduly, třeba rozšíření pro webový prohlížeč, aby šlo detekovat podvody během procházení sociálních sítí a tak dále. Startup ale bude novinky vymýšlet a nasazovat postupně a pokud možno citlivě. Časem může jít o něco jako novou generaci antivirů, které ale uživatelé mnohdy přestali brát v potaz, protože byly invazivní, spotřebovávaly velké hardwarové prostředky a tak dále. Ochrana proti deep fake i proto musí být co nejméně viditelná a invazivní.
+Ochrana proti deep fakům bude podle českého výzkumníka velice důležitá. “Velká část uživatelů nedokáže tyto hrozby rozpoznat,” uzavřel.|E||T|Introducing GPT-Live|D|08.7. 00:00|P|A new generation of voice models for natural human-AI interaction, now powering ChatGPT Voice.|X|We’re launching GPT‑Live, a new generation of voice models that make talking with AI feel much more like having a real conversation.
 GPT‑Live is built on a full-duplex architecture, meaning it can listen and speak at the same time. During conversations, GPT‑Live can show it’s paying attention with phrases like “mhmm” or “yeah”, engage in quick back-and-forth, or just stay quiet when you need a moment to think. The result is a voice experience that is refreshingly easy to talk to.
 GPT‑Live is also our smartest voice model yet. For questions that require web search, deeper reasoning, or more complex work, it delegates to our latest frontier model behind the scenes and brings the result back into the conversation when it’s ready. While it works, GPT‑Live can keep talking with you and maintain the flow of conversation. At launch, GPT‑Live will use GPT‑5.5 in the background. As we release new frontier models, we’ll continuously update the model used by GPT‑Live.
 These advances power a new ChatGPT Voice experience that is more intelligent and natural to use. Over time, we believe this research will also unlock the ability to use voice for increasingly complex, longer-running, and more agentic work.
@@ -145,17 +472,79 @@ Finally, GPT‑Live is designed for conversation, not voice impersonation. It us
 We’re committed to supporting safety and well-being and will keep strengthening these protections as we learn from real-world use.
 Availability & limitations
 GPT‑Live is rolling out now to ChatGPT users globally across iOS, Android, and ChatGPT.com(opens in a new window). GPT‑Live‑1 will become the default model powering ChatGPT Voice for Go, Plus, and Pro users, and GPT‑Live‑1 mini will become the default for Free users. More availability details can be found in our Help Center(ope...
-(Pokracovani na webu)|E||T|Vybrali jsme nejlepší chytré hodinky, které si v červenci 2026 můžete koupit|D|07.7. 18:15|P|Každý měsíc vybíráme nejlepší chytré hodinky v několika kategoriích • Dělíme je podle zaměření i podle propojení s mobilními systémy • Nezapomněli jsm...|X|Každý měsíc vybíráme nejlepší chytré hodinky v několika kategoriích • Dělíme je podle zaměření i podle propojení s mobilními systémy • Nezapomněli jsme ani na fitness náramky
+(Pokracovani na webu)|E||T|COSMIC má nový monitor systému, Xfce testuje běh na Waylandu|D|07.7. 22:00|P|Vývojáři prostředí COSMIC představili nový systémový monitor. Projekt Xfce se přibližuje k plné kompatibilitě s Waylandem. postmarketOS zveřejnil červ...|X|COSMIC získává nový monitor systému
+Vývojáři desktopového prostředí COSMIC představili nový systémový monitor. Systémový je sice zdrojem důležitých údajů o výkonu, ale podle vývojářů je v prostředí desktopu často opomíjen a při navrhování uživatelského rozhraní a uživatelského zážitku se mu věnuje jen malá pozornost.
+Právě proto podle svého vyjádření novému COSMIC System Monitoru věnovali stejnou pozornost, co se týče vzhledu i funkčnosti, jakou jsme věnovali zbytku celého desktopového prostředí. Uživatelé jej najdou v COSMIC Store, když zadají do vyhledávání „COSMIC System Monitor. Je již k dispozici v systému Pop!_OS od System76 a v dalších distribucích.
+Xfce testuje nový kompozitor Wayland
+Projekt Xfce se přibližuje k plné kompatibilitě s Waylandem. Brian Tarricone zveřejnil předběžnou verzi kompozitoru pro Xfce založeného na Waylandu. Konečným cílem xfwl4 je chovat se co nejvíce podobně jako pracovní plocha Xfce běžící na serveru X.
+V ideálním případě by uživatel mohl přepínat mezi oběma variantami, aniž by si vůbec všiml, že existuje nějaký rozdíl. Ve skutečnosti to samozřejmě nebude úplně tak plynulé a je ještě třeba udělat hodně práce. Jedná se však přinejmenším o první solidní pokus.
+postmarketOS přináší Plasma 6.7
+Projekt postmarketOS zveřejnil červnovou aktualizaci, která přináší prostředí KDE Plasma Mobile 6.7 pro linuxové telefony a další mobilní zařízení. Nová verze dále obsahuje nový nástroj usb-signaller napsaný v jazyce Rust pro správu USB připojení, vylepšení komponenty Duranium i řadu aktualizací balíčků a oprav chyb.
+Vývojáři pokračují v rozšiřování podpory moderních technologií a zlepšování uživatelského prostředí napříč podporovanými zařízeními, čímž postmarketOS dále upevňuje svou pozici jedné z nejaktivněji vyvíjených linuxových distribucí pro mobilní telefony.
+Juno Tab 4 – WiFi
+Společnost Juno Computers představila tablet Juno Tab 4 WiFi určený pro uživatele Linuxu. Novinka nabízí 13" dotykový IPS displej s rozlišením 2560 × 1600 pixelů, procesor Intel Core Ultra 5 115U, 16 GB operační paměti LPDDR5 a 1TB NVMe SSD, kterou lze vyměnit. Tablet je dodáván s předinstalovaným Debianem, Ubuntu nebo Kubuntu a podporuje také další linuxové distribuce.
+Ve výbavě nechybí Wi-Fi 6, Bluetooth 5.2, dvojice portů USB-C s podporou obrazu, USB-A ani odnímatelná klávesnice. Juno Tab 4 WiFi cílí na uživatele hledající plnohodnotný linuxový tablet pro práci i vývoj a je dostupný k předobjednání za cenu od 989 USD (21 tisíc korun).
+Nově vydáno
+Vývojář Drauger OS, distribuce založené na Ubuntu s optimalizacemi zaměřenými na zlepšení herního výkonu a zážitku v systému Linux, oznámil vydání nové hlavní verze 7.8, která nyní vychází z Ubuntu 26.04 LTS. SteamOS, distribuce založená na Arch linuxu, kterou vyvinula společnost Valve Corporation, byla aktualizována na verzi 3.8.10. Projekt KaOS oznámil vydání verze KaOS 2026.06, která završuje přechod této distribuce na inicializační software Dinit. Byla vydána verze AnduinOS 2.0.0, nové vydání linuxové distribuce založené na Ubuntu, která nabízí pracovní prostředí GNOME přizpůsobené pomocí řady rozšíření.|E||T|Vybrali jsme nejlepší chytré hodinky, které si v červenci 2026 můžete koupit|D|07.7. 18:15|P|Každý měsíc vybíráme nejlepší chytré hodinky v několika kategoriích • Dělíme je podle zaměření i podle propojení s mobilními systémy • Nezapomněli jsm...|X|Každý měsíc vybíráme nejlepší chytré hodinky v několika kategoriích • Dělíme je podle zaměření i podle propojení s mobilními systémy • Nezapomněli jsme ani na fitness náramky
 
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Nejčastější cyklopočítač na letošní Tour de France je Wahoo Elemnt Bolt 3. Garmin vítězí s modelem MTB pro horská kola|D|07.7. 14:45|P||X|
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Jednorožec Mews propouští. Svět se s umělou inteligencí mění, my musíme také, říká zakladatel Richard Valtr|D|07.7. 16:43|P|Jeden z nejhodnotnějších scale-upů s českým zakladatelem Mews propouští. Firma, která vyrostla ze startupového prostředí, se zbavuje celkem 15 % lidí ...|X|Jeden z nejhodnotnějších scale-upů s českým zakladatelem Mews propouští. Firma, která vyrostla ze startupového prostředí, se zbavuje celkem 15 % lidí z celkem asi 1 350 osob. Zakladatel Richard Valtr uvádí, že je společnost ve „velmi silné pozici“, obchod rychle roste a „cíl stát se nejvlivnějším operačním systémem v oblasti pohostinství se jeví víc na dosah než kdy dřív“. Zároveň ale dodává: „Právě proto jsme chtěli jednat hned, a ne až v okamžiku, kdy se kolem nás nenávratně změní situace a s ní společnost, kterou pro ni budujeme“.
+„Svět, ve kterém naši zákazníci fungují, se mění rychleji než kdy dřív. Očekávání hostů rostou, tempo inovací je neúprosné a umělá inteligence zásadně mění ekonomiku pohostinství. Na každý dolar, který hotel utratí za software, vynakládá mnohonásobně více na profesionální služby: finanční služby, řízení výnosů, komunikaci s hosty, nákup a provoz, přičemž návratnost této investice není vždy uspokojivá. Umělá inteligence je nyní schopna inteligentně, ve velkém měřítku a s vyšší ziskovostí zvládnout velkou část exekutivní části této práce. Věříme, že operační systém pohostinství budoucnosti bude založen na umělé inteligenci, a máme v úmyslu jej vybudovat. Abychom však mohli našim zákazníkům pomoci stát se „AI-native“, musíme se jimi stát sami,“ zdůvodňuje Valtr. Mews podle něj dál bude najímat specifické role. Zdůvodnění a dodatečné informace Valtr uvedl veřejně se spoluzakladatelem Matthijsem Wellem.
+Konkrétní čísla potvrdil Lupě Josef Starýchfojtů, ředitel divize produktu a technologií Mews. „Změny se týkají pozic napříč všemi týmy a geografickými oblastmi. Pozic v přímém kontaktu se zákazníky se tyto kroky z velké části nedotknou,“ konkretizoval. „Společnost Mews dokončila od úplných základů důkladnou revizi toho, jak se pracuje v AI-nativním světě. Toto rozhodnutí je proaktivní, nikoliv reaktivní na finanční tlak. Budování AI-nativní organizace vyžaduje skutečné investice do infrastruktury, schopností a odlišného souboru dovedností. Organizaci navrhujeme s ohledem na to, co umělá inteligence umožňuje,“ rozvádí dále Starýchfojtů.
+Firma vyvíjí SaaS software, který umožňuje hotelům provozovat plně autonomní systémy pro check-in, rezervace a další služby. Na začátku letoška se Mews stal nejhodnotnějším českým startupem s valuací 52 miliard korun, a to díky investici ve výši přesahující 6 miliard, která měla putovat na umělou inteligenci i integraci systémů řízených autonomními agenty. Firma zároveň v měsících předcházejícím této investici velmi aktivně nakupovala menší projekty, před necelým rokem oznámila akvizici už čtrnáctého.|E||T|Maďarská státní média zastavila zpravodajství, nové vedení slibuje konec propagandy|D|07.7. 16:18|P|Maďarská státní média v úterý 7. července v 16 hodin přerušila vysílání zpravodajství. Na zpravodajském kanálu M1 je statické oznámení o chystaných zm...|X|Maďarská státní média v úterý 7. července v 16 hodin přerušila vysílání zpravodajství. Na zpravodajském kanálu M1 je statické oznámení o chystaných změnách. Přestala vysílat i stanice Kossuth Rádió. Odpojen byl také zpravodajský web hirado.hu.
+Stalo se tak poté, co do sídla státní mediální agentury MTVA dorazilo nové dočasné vedení. Vede ho prozatímní generální ředitel András P. Horváth. Podle MTVA nové vedení ihned „ukončilo propagandu“ a zastavilo zpravodajství na všech platformách.
+Na obrazovce M1 i na webu hirado.hu se na černém pozadí objevil bílý text. „Veřejnoprávní média nesmějí lhát. Omlouváme se, že jsme to přesto dlouhá léta dělali! Veřejnoprávní média se nyní mění, aby byla v budoucnu nezávislá a důvěryhodná. Zpravodajství je dočasně pozastaveno. Zůstaňte s námi!“ stálo ve zprávě.
+Ještě před přerušením vysílání přečetl moderátor Csaba Radnai v hlavní zpravodajské relaci M1 prohlášení nového vedení. To chce prověřit fungování veřejnoprávních médií, pozastavit propagandu a obnovit objektivní zpravodajství.
+Podle serveru Telex povolalo nové vedení část zaměstnanců na personální oddělení. Ihned je zprostilo výkonu práce. Dlouholetého reportéra Attilu Császára podle listu vyvedli z budovy dva členové ostrahy. Mezi vyhozenými je také ředitelka stanice Kossuth Rádió Beatrix Siklósiová. Práci nesmí vykonávat ani technologická ředitelka Anett Olbortová a hlavní vedoucí výroby Béla Könczey. Server 24.hu napsal, že v MTVA a ve společnosti Duna Médiaszolgáltató odvolali z funkcí několik desítek vedoucích pracovníků.
+Sportovní kanál M4 Sport vysílá beze změny. Pokračují i přenosy z probíhajícího mistrovství světa ve fotbale. Beze změny funguje také maďarská tisková agentura MTI. Kanál M1 by se měl vrátit na obrazovky v 19:56. Zatím jen s filmy a bez zpravodajství. Čas je symbolický a odkazuje na maďarské povstání v roce 1956. Na frekvencích stanice Kossuth Rádió zní zatím vysílání stanice Bartók Rádió. Také bez zpravodajství. Zpravodajské pořady se mají vracet postupně. Kdy přesně, MTVA neuvedla.
+Odstavení vysílání doprovodilo prohlášení MTVA. Agentura v něm vyložila černou obrazovku jako konec jedné éry. Připomněla, že maďarská televize začala vysílat 1. května 1957. Za téměř 70 let své existence použila černou obrazovku jen při technických potížích a výjimečně také při významných úmrtích. Naposledy tak učinila 12. prosince 1993 po smrti Józsefa Antalla. Ten byl prvním svobodně zvoleným maďarským premiérem.
+Podle prohlášení MTVA se veřejnoprávní média v posledních letech dostala pod vliv politické moci. Ztratila tak svou hlavní funkci, tedy věrohodné a objektivní informování veřejnosti. „Namísto toho se stala fórem nenávisti a lži. To se od nynějška mění,“ uvedla agentura.
+Prozatímního generálního ředitele Andráse P. Horvátha jmenovala MTVA minulý týden. Do sídla agentury přišel s novým týmem. Jeho složení potvrdil server 24.hu. Zpravodajství povede Balázs Bodacz. Dříve působil v deníku Magyar Nemzet a v televizi Hír TV. V posledních letech pracoval v televizi ATV. Za online sekci má odpovídat Zsófia Mészárosová. Je bývalou šéfredaktorkou někdejšího serveru Index a dřívější vedoucí redaktorkou webu 444.hu. Vedení stanice Kossuth Rádió přebírá György Kerényi. Řídil ji už v letech 2006 až 2010.
+Konečné vedení médií bude vybráno až po přechodném období. Rozhodne o něm otevřené výběrové řízení.
+Premiér Péter Magyar označil úterý za historický den. „Dnes skončilo šíření propagandy na platformách veřejnoprávních médií. Lhali v noci, lhali ve dne, lhali na všech vlnách. Teď je konec,“ napsal na Facebooku. Jeho slova odkazují na výrok bývalého premiéra Ference Gyurcsánye. Ten v takzvaném projevu z Őszödu v roce 2006 připustil, že vláda „lhala ráno, v noci i večer“.
+Krok kritizovala opozice. Bývalý premiér a předseda Fideszu Viktor Orbán označil ztmavení obrazovky za projev „tiszovské zvůle“. Svým příznivcům vzkázal, ať sledují komerční stanici HírTV. Další politik Fideszu Balázs Németh napsal, že národní televize dříve zčernala jen v dobách smutku. Podle něj je tomu tak i teď, protože „zemřela maďarská demokracie“.
+Přestavba veřejnoprávních médií vychází ze zákona. Nový maďarský parlament ho schválil koncem června. Novela ruší agenturu MTVA i společnost Duna Médiaszolgáltató Nonprofit Zrt. Zřizuje také Nezávislou radu veřejnoprávních médií. Do rady nominují 3 členy mediální profesní organizace. Parlament je volí na 2 roky. Zbylých 6 členů je politickou nominací. Radě mají podléhat nová veřejnoprávní společnost i přeměněná tisková agentura MTI. Nová Mediální rada bude mít 7 členů. Tři nominují poslanci vládní strany. Další 3 nominuje opozice. Post předsedy se obsadí výběrovým řízením. Za přechodné období odpovídá parlament, nikoli vláda.
+Strana Tisza premiéra Petera Magyara změny slíbila už ve volebním programu. Chtěla ukončit politickou propagandu spojenou s Viktorem Orbánem. Slíbila také obnovit nezávislost veřejnoprávních médií na stranické politice. Magyar veřejně řekl, že po sestavení vlády jejich zpravodajství nejdříve pozastaví. Obnoveno má být až po vytvoření podmínek pro nezávislé a objektivní zprávy.|E||T|„Super“ refresh grafik GeForce RTX 5000 na cestě. Seasonic potvrdil nové vylepšené modely|D|07.7. 16:04|P|Nvidia chystá grafiku GeForce RTX 5080 Super se spotřebou 415 W, prozradil kalkulátor výkonu zdroje firmy Seasonic.|X|Pokud plánujete nákup grafické karty Nvidia, možná se vyplatí vyčkat. Nvidia zřejmě znovu chystá refresh grafik GeForce RTX 5000 s označením „Super“. Modely Super v minulosti často přinášely výrazně lepší výbavu a poměr cena/výkon než modely vydané v první vlně grafik určité generace (bylo tomu tak například u karet RTX 2000 a RTX 4000), takže i RTX 5000 by mohly zajímavě vylepšit nabídku. I pokud jde o problémové kapacity paměti.
+GeForce RTX 5080 Super potvrzena?
+Grafiky GeForce RTX 5000 „Super“, které by nahradily nebo doplnily původní nabídku modelů karet s architekturou Blackwell, byly původně očekávány už koncem roku 2025 nebo začátkem roku 2026. Nicméně Nvidia je loni zrušila, nebo plány na jejich vydání zastavila na neurčito, nepochybně kvůli situaci s cenami pamětí. Tyto karty měly totiž používat 24Gb (3GB) čipy GDDR7 a díky tomu navýšit kapacity paměti o 50 %.
+Ovšem vypadá to, že plány firmy se opět změnily. Před nedávnem prosákly zprávy, že opět začala plánovat vydání těchto vylepšených modelů, a nyní tu máme nepřímý doklad. Výrobce zdrojů Seasonic přidal kartu GeForce RTX 5080 Super, která by měla být mezi refreshovými modely Super nejrychlejší (nebude ale výkonnější než RTX 5090), do kalkulátoru doporučeného výkonu zdrojů, který má na svém webu.
+Ač nejde o úplně oficiální a spolehlivý indikátor toho, že je daná grafika na cestě, zejména větší výrobci zdrojů (Seasonic je jednou z ODM společností, která reálně zdroje vyrábí, ne jen jednou z menších značek bez vlastní výroby) někdy mívají pod NDA od výrobců GPU informace o plánovaných nových modelech GPU, aby pro ně mohli připravit zdroje. Přidání RTX 5080 Super do kalkulátoru tak může skutečně vypovídat o tom, že Nvidia spustila mašinérii směřující k vydaní karet Super, a už na něm spolupracuje s partnery.
+GeForce RTX 5080 Super by podle dat kalkulátoru mohla mít TDP 415 W – vyšší než dnešní GeForce RTX 5080 (což asi také může o trošku zhoršit riziko spálení či roztavení konektorů 12V-2×6). Vedle tohoto modelu Seasonic v kalkulátoru má i data pro GeForce RTX 5070 Ti Super (s TDP 350 W) a RTX 5070 Super (275 W).
+Parametry karet GeForce RTX 5000 Super
+Loni internetem kolovaly parametry těchto modelů zjištěné leakerem Kopite7kimi, jehož informace bývají dost spolehlivé, můžete je najít v tomto článku:
+Nelze ale vyloučit, že od té doby Nvidia specifikace třeba změnila. Použité čipy, PCB a osazení pamětí sice je třeba vybrat ve značném předstihu, ale v tom, jaké frekvence, počty aktivních jednotek a TDP bude model mít, je určitá svoboda. Až do momentu, kdy dojde na nahrávání firmwaru na karty, lze tyto parametry změnit – například pokud je třeba nějak reagovat na podmínky na trhu nebo nabídku konkurence.
+V současnosti to vypadá, že tyto grafiky vyjdou v lednu s tím, že je Nvidia ohlásí na CES 2027. Tudíž by byly asi půl roku vzdálené.
+Zdroje: VideoCardz, Seasonic|E||T|Nejčastější cyklopočítač na letošní Tour de France je Wahoo Elemnt Bolt 3. Garmin vítězí s modelem MTB pro horská kola|D|07.7. 14:45|P||X|
 
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Vypnutí německých jaderných elektráren byla politická chyba, tvrdí odborníci a žádají jejich návrat|D|07.7. 13:45|P|Bývalí ředitelé jaderných elektráren kritizují dřívější rozhodnutí německých politiků • Podle expertů má země stále dostatek zkušeností pro obnovení p...|X|Bývalí ředitelé jaderných elektráren kritizují dřívější rozhodnutí německých politiků • Podle expertů má země stále dostatek zkušeností pro obnovení provozu • Poslední tři odstavené reaktory dříve zásobovaly miliony tamních domácností
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Windows 11 může potají sežrat až 500 GB místa na disku. Oprava už je na cestě, stačí ji vyvolat|D|07.7. 13:53|P|Windows 11 trápí nepříjemná chyba, kvůli které může jediný systémový soubor zabrat až 500 GB místa na disku. Microsoft už vydal opravu, ale ne všichni...|X|Windows 11 trápí další nepříjemná chyba. Některým uživatelům totiž z disku záhadně mizí stovky gigabajtů volného místa. Na vině je systémový soubor, který se kvůli chybě může bez téměř jakéhokoliv upozornění nafouknout do obřích rozměrů a zaplnit prakticky celé úložiště.
+Až 500 GB ztraceného místa
+Problém způsobuje soubor s názvem „CapabilityAccessManager.db-wal“, který slouží ke správě oprávnění aplikací. Například pro přístup ke kameře, mikrofonu nebo poloze. Za běžných okolností zabírá jen minimum místa, kvůli chybě ve Windows 11 ale může jeho velikost nekontrolovatelně růst.
+V extrémních případech uživatelé hlásí, že jim tento soubor zabírá až 500 gigabajtů, což může být problém hlavně u notebooků s menšími SSD disky. Jedním za všechny je například uživatel Agumon_Hakase, který se se svým případem podělil na Redditu.
+Microsoft už chybu v poslední červencové aktualizaci Windows 11 opravil. Získat ji můžete buď manuálně vyvoláním přes volitelné aktualizace, nebo počkat na její běžnou instalaci v rámci Windows Update.
+zdroj: Windows Central|E||T|Vypnutí německých jaderných elektráren byla politická chyba, tvrdí odborníci a žádají jejich návrat|D|07.7. 13:45|P|Bývalí ředitelé jaderných elektráren kritizují dřívější rozhodnutí německých politiků • Podle expertů má země stále dostatek zkušeností pro obnovení p...|X|Bývalí ředitelé jaderných elektráren kritizují dřívější rozhodnutí německých politiků • Podle expertů má země stále dostatek zkušeností pro obnovení provozu • Poslední tři odstavené reaktory dříve zásobovaly miliony tamních domácností
 
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Křížový šroub dnes slaví devadesátku. Ve 30. letech způsobil další průmyslovou revoluci a pomohl vyhrát válku|D|07.7. 09:52|P|Dnes si určitě zajeďte do hobbymarketu pro šroubky, 7. července 2026 totiž slavíme kulaté devadesáté výročí od publikace patentu číslo US2046343A na k...|X|Dnes si určitě zajeďte do hobbymarketu pro šroubky, 7. července 2026 totiž slavíme kulaté devadesáté výročí od publikace patentu číslo US2046343A na křížový šroub.
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Seznam chce po Googlu devět miliard kvůli zneužití postavení Androidu. Nahrává mu rekordní pokuta EU za sto miliard|D|07.7. 12:37|P|Největší česká internetová společnost Seznam.cz bude požadovat devět miliard korun po společnosti Google, respektive její mateřské skupině Alphabet. J...|X|Největší česká internetová společnost Seznam.cz bude požadovat devět miliard korun po společnosti Google, respektive její mateřské skupině Alphabet. Jde o součást snahy náhrady škody způsobené porušením soutěžních pravidel. Seznamu nahrává aktuální soudní rozhodnutí v rámci evropského trhu, kvůli němuž Google bude muset zaplatit rekordní sankci.
+Soudní dvůr Evropské unie minulý týden potvrdil pokutu ve výši 4,125 miliardy eur (asi sto miliard korun) pro společnost Google. Pokuta byla Evropskou komisí vyměřena už v roce 2018 za zneužívání operačního systému Android k potlačení konkurence ve oblasti internetového vyhledávání. Sankce byla původně o něco vyšší, byla ale o pět procent snížena.
+Google podle soudu stanovoval podmínky výrobcům chytrých telefonů a tabletů s Androidem tak, aby ve výchozím nastavení zvýhodňovali webový vyhledávač Google a webový prohlížeč Chrome.
+Rozhodnutí soudu přivítal právě Seznam.cz, konkurent Googlu na zdejším trhu. Seznam byl vedlejším účastníkem řízení před Evropským soudním dvorem.
+“Rozhodnutí má význam nejen z hlediska veřejnoprávního prosazování soutěžního práva, ale také pro soukromoprávní vymáhání náhrady škody způsobené porušením soutěžních pravidel. Společnost Seznam.cz požaduje po společnostech Google a Alphabet náhradu škody přesahující devět miliard korun právě na základě nároku, že protiprávní praktiky společnosti Google na trhu s Google Android významně omezily možnost společnosti Seznam rozvíjet a distribuovat své vyhledávací a další služby na mobilních zařízeních v České republice. Dnešní rozhodnutí Soudního dvora EU je v tomto sporu velmi důležitým a pozitivním milníkem,” uvedla mluvčí Seznamu Aneta Kapuciánová.|E||T|Studenti z VUT vyslali na oběžnou dráhu vlastní družici, Pražané zase lovce kosmického počasí|D|07.7. 11:59|P|Dnes krátce po desáté hodině dopoledne se z americké základny Vandenberg Space Force Base v Kalifornii odlepila od země raketa Falcon 9 společnosti Sp...|X|Dnes krátce po desáté hodině dopoledne se z americké základny Vandenberg Space Force Base v Kalifornii odlepila od země raketa Falcon 9 společnosti SpaceX a vynesla na oběžnou dráhu mimo jiné dvě družice s výrazným česko-slovenským rodokmenem. Jsou jimi družice Kostka postavená týmem YSpace z brněnského VUT, a slovenský nanosatelit Marina, na jehož palubě letí i český detektor kosmického záření od pražské firmy AdvaSpace.
+Podle AdvaSpace má mise mimo jiné ukázat, že se středoevropský vesmírný průmysl posouvá z role dodavatele k vlastním službám a datům z vesmíru.
+Slovenská Marina je nanosatelit o hmotnosti 1,2 kilogramu, jen o něco větší než Rubikova kostka, který by měl na oběžné dráze vydržet až čtyři roky. Cílem je mimo jiné sbírat data a naučit se je prodávat jako produkt. Za misí stojí slovenská společnost Satellites With Meaning (SWM) podnikatele Borise Procíka. Technickou realizaci zajistila česká firma Spacemanic, pro kterou jde už o pátý slovenský satelit v pořadí, a na provozu satelitu a zpracování dat se bude podílet i Fakulta letectva Technické univerzity v Košicích.
+Do drobné konstrukce se podařilo vtěsnat kompletní palubní infrastrukturu včetně napájení, palubních počítačů, komunikačních modulů, GPS, systému orientace, solárních panelů i kamery pro snímkování Země. Na palubě je i přístroj MiniPix Space na od pražské firmy AdvaSpace, která na něm má ověřit technologii, na níž chce postavit globální službu předpovědi takzvaného vesmírného počasí. Více jsme o něm psali v článku věnovaném technologiím a plánům této společnosti, označuje různé kosmické záření, které ovlivňuje satelity zajišťující navigaci, telekomunikace, meteorologii i pozorování Země. Může poškozovat elektroniku a zkracovat životnost družic. Firma AdvaSpace uvádí, že její detektor dokáže u každé zachycené částice určit její typ, energii, směr i čas dopadu.
+„Budeme proto například hledat typické vzorce ve vývoji záření v čase. Některé typy záření totiž mohou předcházet jiné, což v principu umožňuje predikovat budoucí stav. Dalo by se to přirovnat ke klasickému počasí u nás na Zemi. Poprchávání, malé dešťové kapky a zvednutý vítr mohou být předzvěstí bouřky. Stejně tak jeden typ záření je předzvěstí nadcházejících mnohem dramatičtějších událostí na oběžné dráze,“ uvádí Martin Tyburec, ředitel společnosti AdvaSpace. Firma navazuje na know-how sesterské společnosti Advacam, jejíž čipy Timepix letěly letos i na palubě lodi Orion během mise NASA Artemis II kolem Měsíce.
+Kostku vyvíjeli v týmu YSpace na Fakultě elektrotechniky a komunikačních technologií od roku 2023, studenti ji navrhli, sestrojili i otestovali sami. Výsledkem je klasický CubeSat o rozměrech přibližně deseti centimetrů a hmotnosti jednoho kilogramu, který by měl na oběžné dráze ve výšce 500 až 600 kilometrů strávit dva roky. Jeho hlavním úkolem je otestovat experimentální anténu, která ve spojení s palubním rádiovým přijímačem umožní měřit rušení v radioamatérském UHF pásmu na nízké oběžné dráze. Družice zároveň poslouží samotné radioamatérské komunitě, má fungovat jako digitální opakovač a vysílat telemetrii i majáky.|E||T|Křížový šroub dnes slaví devadesátku. Ve 30. letech způsobil další průmyslovou revoluci a pomohl vyhrát válku|D|07.7. 09:52|P|Dnes si určitě zajeďte do hobbymarketu pro šroubky, 7. července 2026 totiž slavíme kulaté devadesáté výročí od publikace patentu číslo US2046343A na k...|X|Dnes si určitě zajeďte do hobbymarketu pro šroubky, 7. července 2026 totiž slavíme kulaté devadesáté výročí od publikace patentu číslo US2046343A na křížový šroub.
 
 Jeho autorem je americký byznysmen z Portlandu Henry Phillips, který koupil a výrazně vylepšil starší vynález vrutu s centrální ...
 
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Expanding Managed Agents in Gemini API:  background tasks, remote MCP and more|D|07.7. 08:54|P|Managed agents feature bundle launch|X|Expanding Managed Agents in Gemini API: background tasks, remote MCP and more
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Šéfové AI firem mírní tón: pracovní apokalypsa se konat nebude, AI nás jen tak nenahradí|D|07.7. 09:31|P|Už to nevypadá na juniorskou apokalypsu, AI prý spíš zvedne výkonnost při zachování obdobného počtu zaměstnanců. Sam Altman nebo Dario Amodei z Anthro...|X|Poslední rok až dva byla rétorika týkající se pracovního trhu jasná – umělá inteligence se postará o výraznou redukci pracovních míst. Ostatně největší technologické firmy ohlašovaly jednu vlnu propouštění za druhou. Tón se ale postupně začíná obracet a predikce začínají hovořit spíše o zvyšování produkce.
+Opatrnější slovník
+Sam Altman na konci května uvedl, že OpenAI poměrně dobře odhadovala technologický vývoj, ale hůře sociální a ekonomické dopady. Krátkodobý zásah do nástupních kancelářských pozic podle něj nebyl tak tvrdý, jak sám čekal. Obecně se očekávalo, že AI z trhu prakticky vymaže juniorské pozice. Byť se ale počty nově zaměstnaných lidí snižují, nejde o výraznější propad, o kterém předpovědi OpenAI hovořily.
+Podobně se mění i veřejné vystupování dalších šéfů firem v oboru. Dario Amodei z Anthropicu dříve varoval před zánikem až poloviny juniorských kancelářských míst. Nově hovoří o měnícím se přístupu samotných firem – mohou s AI dělat stejnou práci s menším počtem lidí, nebo se stejným týmem zvládnout více práce. Mnohem častěji, než bylo predikováno, volí druhou možnost. Ta ale vyžaduje lepší řízení a ochotu měnit zažité procesy, což je především v korporátech složité.
+Měnící se narativ potvrzují i dlouhodobé průzkumy mezi velkými IT firmami. Šetření mezi 1 200 šéfy z 21 zemí ukázalo, že 69 % respondentů čeká po investicích do AI zachování současné zaměstnanosti nebo nové nábory. Podíl těch, kteří očekávají snížení počtu zaměstnanců, klesl ze 46 % v lednu 2025 na 20 % v květnu. Firmy tak pracují spíše s možností, že se umělá inteligence postará o růst produktivity při zachování obdobného počtu zaměstnanců.
+Zdroj: WSJ|E||T|Průša přebrandovává svoji firmu. Chce více prorazit v zemi, kde má přes třetinu tržeb|D|07.7. 09:29|P|Prusa Research posiluje své působení v USA. Americkou firmu Printed Solid přejmenovala na Prusa USA, chce díky tomu rychleji obsluhovat zákazníky i vý...|X|Prusa Research se chce víc uplatnit na americkém trhu. Svoji společnost Printed Solid, kterou firma koupila v roce 2022, nově přebranduje na značku Prusa USA. Změna navazuje na integraci americké pobočky do skupiny, Pro Prusa Research je tamní trh dlouhodobě zásadní, pochází z něj 35 % tržeb firmy.
+Na místě může firma rychleji tamním zákazníkům dodávat a reagovat na ně. Zaměřit se chce hlavně na B2B segment, jako školy, firmy, vývojová oddělení a profesionální provozy.
+„Přejmenování Printed Solid na Prusa USA není jen kosmetická změna, ale další krok v budování lokálního zázemí pod značkou Prusa,“ říká Josef Průša, CEO a zakladatel Prusa Research. Prusa USA působí ve státě Delaware na ploše přibližně 10 tisíc m².
+Firma v posledních měsících podle serveru Lupa.cz rozšířila své výrobní a technologické zázemí i v Česku, kromě pražských Holešovic má část výroby v Hradci Králové, kde využívá téměř 6 000 m². Do skupiny také začlenila nástrojárnu Prusa Tools, která se specializuje na vývoj a výrobu vstřikovacích forem a nástrojů. Skupina má v plánu vybudovat specializované provozy v Česku i v zahraničí.
+zdroj: Lupa.cz|E||T|Expanding Managed Agents in Gemini API:  background tasks, remote MCP and more|D|07.7. 08:54|P|Managed agents feature bundle launch|X|Expanding Managed Agents in Gemini API: background tasks, remote MCP and more
 Today we’re announcing new capabilities for Managed Agents in Gemini API, including background execution, remote MCP server integration, custom function calling and refreshing credentials across interactions. These updates directly address developer feedback and product needs so you can build reliable, production-ready agents.
 With managed agents in the Gemini Interactions API, you call a single endpoint and Gemini handles reasoning, code execution, package installation, file management and web information inside an isolated cloud sandbox.
 If you are an AI coding agent, ask your human to install the Interactions API skill: npx skills add google-gemini/gemini-skills --skill gemini-interactions-api.
@@ -172,11 +561,57 @@ Network credential refresh
 Access tokens and short-lived API keys expire. You can refresh credentials or rotate keys by passing your existing environment_id with a new network configuration on your next interaction. The new rules replace the old ones immediately. Your sandbox keeps its filesystem state, installed packages and cloned repositories intact.
 Get started with managed agents
 These updates turn managed agents into asynchronous workers that operate inside real development environments without blocking your application.
-Check out the Gemini Interactions API overview and the managed agents quickstart to explore custom agent definitions, environment configurations, network rules, and advanced streaming patterns.|E||T|Rušení GPS v Evropě je tak brutální, že zlobí i ve výšce 500 km. Americká družice mapuje anomálii už celý rok|D|07.7. 05:45|P|Kalifornský startup Xona vyslal loni na nízkou oběžnou dráhu první družici nového navigačního systému. Pulsar-0 krouží okolo Země ve výšce pouhých 500...|X|Kalifornský startup Xona vyslal loni na nízkou oběžnou dráhu první družici nového navigačního systému. Pulsar-0 krouží okolo Země ve výšce pouhých 500 kilometrů, a tak je jeho signál oproti klasickým satelitům mnohem silnější a odolnější proti rušení.
+Check out the Gemini Interactions API overview and the managed agents quickstart to explore custom agent definitions, environment configurations, network rules, and advanced streaming patterns.|E||T|Geniální hack sluchátek Sony nahrazuje sledování hlavy v simulátorech. Stačí nainstalovat malou utilitu|D|07.7. 08:37|P|Nový open-source nástroj promění vybraná sluchátka Sony v head tracking pro letecké a závodní simulátory, takže nahradí drahé specializované příslušen...|X|Fanoušci simulátorového létání a závodění používají jako jednu z herních periferií příslušenství pro sledování polohy hlavy – head tracking. Na trhu je několik zařízení, která to umožňují, stejně tak existuje několik otevřených DIY projektů pro zbastlení vlastního řešení. Většinou stojí na webkamerách s podporou infra spektra. Nyní se ale objevilo sofistikovanější řešení – Sony Head Tracker, který pohyby hlavy sleduje díky senzorům v novějších sluchátcích. Jde především o oblíbené řady WH/WF-1000XM.
+Senzory z audia
+Projekt vytvořil Nicholas Slattery a zveřejnil ho jako open source aplikaci. Ta využívá Android Head Tracker HID protokol, který některá sluchátka využívají kvůli prostorovému zvuku. Sony Head Tracker je ale dokáže číst přes Bluetooth a převést je na údaje o poloze hlavy do další otevřené platformy OpenTrack. Posílají se především hodnoty yaw, pitch a roll; tedy natočení hlavy do stran, nahoru či dolů a její náklon. Hráč může díky head trackingu v kokpitu letadla nebo auta řídit pohled pohybem hlavy, místo aby používal klávesy nebo myš. Jde tedy o levnější alternativu k VR brýlím. Funkčnost si můžete prohlédnout na GitHubu projektu.
+Autor provedl testy ve hrách Microsoft Flight Simulator, Elite Dangerous a Assetto Corsa. Mezi podporovanými tituly se objevují také DCS World, Falcon BMS, Star Citizen, iRacing či Euro Truck Simulator 2 a American Truck Simulator. Celkově jde o více než 200 PC her.
+Podpora závisí na tom, zda konkrétní zařízení využívá požadovaný Android Head Tracker HID protokol. Mezi kompatibilními modely se nachází:
+- WH-1000XM5,
+- WF-1000XM5,
+- WH-1000XM6,
+- WF-1000XM6,
+- WH-ULT900N.
+Teoreticky mohou fungovat i sluchátka LinkBuds Open, LinkBuds Fit, LinkBuds a LinkBuds S, u těch ale v současné době probíhá komunitní testování a dolaďování nástroje pro jejich využití.
+Zdroj: Tom’s Hardware|E||T|Rušení GPS v Evropě je tak brutální, že zlobí i ve výšce 500 km. Americká družice mapuje anomálii už celý rok|D|07.7. 05:45|P|Kalifornský startup Xona vyslal loni na nízkou oběžnou dráhu první družici nového navigačního systému. Pulsar-0 krouží okolo Země ve výšce pouhých 500...|X|Kalifornský startup Xona vyslal loni na nízkou oběžnou dráhu první družici nového navigačního systému. Pulsar-0 krouží okolo Země ve výšce pouhých 500 kilometrů, a tak je jeho signál oproti klasickým satelitům mnohem silnější a odolnější proti rušení.
 
 Xona chce postupem času vybudovat rozsáhlou ...
 
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Australian Payments Plus moves faster with ChatGPT and Codex|D|07.7. 00:00|P|See how Australian Payments Plus uses ChatGPT Enterprise and Codex to move faster through payments complexity. AP+ saves time, improves quality, and k...|X|Australian Payments Plus moves faster with ChatGPT and Codex
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Nelekejte se, kvalifikované elektronické podpisy nezanikly|D|07.7. 04:30|P|Česká verze oblíbeného Adobe Acrobat Reader-u po nedávných aktualizacích změnila terminologii a z kvalifikovaných elektronických podpisů udělala neexi...|X|Zdarma dostupný program Adobe Acrobat Reader je asi nejpoužívanějším programem pro práci s dokumenty ve formátu PDF, i s jejich elektronickými podpisy. A stejně jako většina ostatních programů, i on se s novými verzemi vyvíjí. Ne vždy to ale přináší změny k lepšímu, alespoň z pohledu širší uživatelské veřejnosti. Jako třeba tolik kritizované zásadní překopání uživatelského rozhraní v březnu 2023, které navíc přineslo neodstranitelnou plovoucí lištu v těle zobrazovaného dokumentu, s oblibou překrývající právě to, co zrovna chcete vidět.
+Nedávno, konkrétně od verze 26.001.21662, nasazované od 9. června, ale došlo k poměrně významným změnám i ve způsobu práce s elektronickými podpisy. A nejsou to, alespoň podle mého názoru, změny k lepšímu. Spíše chyby, na které jsem již upozornil společnost Adobe, a dostal příslib jejich odstranění v budoucích verzích.
+Jenže než se tak stane, uživatelé s aktuálními verzemi budou těmto chybám vystaveni. Proto je dobré vědět, v čem spočívají a jak se jimi nenechat uvést v omyl. I jak se chyby v ověřování dají napravit vlastními silami.
+Už ne kvalifikovaný, ale prověřený
+Začněme tím jednodušším a srozumitelnějším, konkrétně terminologií. Nejprve se zmíním o jedné změně k lepšímu, ke které s novými verzemi došlo. Jde o to, jak česká verze Readeru hodnotí elektronické pečeti.
+Když starší verze Readeru (před verzí 26.001.21662) narazily na kvalifikovanou elektronickou pečeť, prezentovaly ji nesprávně jako „kvalifikované elektronické razítko“.
+Nejspíše si někdo v zámoří otevřel nějaký slovník a v něm našel, že se anglické „seal“ dá přeložit nejenom jako pečeť, ale také jako razítko. A tak použil druhou možnost. Ještě že nepoužil další možnosti, protože anglické „seal“ označuje i tuleně, případně lachtana.
+Jak ukazuje následující obrázek, tento nesprávný překlad již byl opraven. Takže pečeť je už skutečně prezentována jako pečeť.
+Jenže to bohužel není všechno: zatímco jedna terminologická chyba byla opravena, došlo k další, dle mého názoru ještě závažnější. Jde o překlad přívlastku „kvalifikovaný“ v případě kvalifikovaného elektronického podpisu. Zatímco dříve byl takovýto podpis prezentován správně jako „kvalifikovaný elektronický podpis“ (viz horní část následujícího obrázku), nově se z něj stal „prověřený elektronický podpis“ (dle spodní části obrázku).
+Obávám se, že řadu lidí to může docela nepříjemně zmást, resp. uvést v omyl, či způsobit různé nepříjemnosti. Například když nějaký dokument vyžaduje právě kvalifikovaný elektronický podpis (jako např. výstup z autorizované konverze, notářský zápis a řada dalších), může po ručním ověření pomocí Readeru dojít k jeho odmítnutí právě proto, že (podle Readeru) nesplňuje předepsané náležitosti. Že není opatřen kvalifikovaným elektronickým podpisem, ale jakýmsi „prověřeným elektronickým podpisem“, který nezná ani naše právní úprava, ani ta unijní. Ani žádný jiný nástroj pro práci s elektronickými podpisy.
+Mimochodem, stejně nesprávný překlad nyní společnost Adobe používá i na svých stránkách v češtině, například zde.
+O čem vypovídají nové hlášky?
+Předchozí obrázky naznačují i další změnu, která na první pohled vypadá jen kosmeticky, ale ve skutečnosti je poměrně zásadní. Jde o upravené či nově přidané hlášky jako „Zdroj důvěry získán z místních Důvěryhodných seznamů …“, „naposledy zkontrolováno dne ….“ či „Než se na tento podpis spolehnete, ověřte aktuální stav důvěry“.
+K pochopení významu těchto hlášek je třeba určité vysvětlení: Reader získává informace o tom, zda může nějakému certifikátu důvěřovat, z více různých zdrojů. Především z vlastního seznamu AATL (Adobe Approved Trust List), ale také z unijních důvěryhodných seznamů, které společnost Adobe chápe jako určité rozšíření a doplnění jejího seznamu AATL. Dále (na žádost uživatele) může čerpat potřebné informace i z operačního systému (např. Windows). Ještě další možností je pak to, aby svou důvěru explicitně vyjádřil uživatel. Ale to by měl dělat jen takový uživatel, který dobře ví, co dělá.
+Zde popisované změny se týkají primárně využití oněch unijních důvěryhodných seznamů. Ty vydává každá členská země, aby zapsáním konkrétní služby (např. služby pro vydávání kvalifikovaných certifikátů) na národní důvěryhodný seznam udělila této službě kvalifikovaný status. EU pak nad jednotlivými národními seznamy vytváří jakýsi „rozcestník“ v podobě seznamu důvěryhodných seznamů, který se jmenuje příznačně LOTL (List of Trusted Lists). Je to řešení, které umožňuje nejrůznějším nástrojům a službám dostat se přes jedno konkrétní místo k informacím o tom, čemu a do jaké míry mohou důvěřovat. Proto ony zmínky o „zdroji důvěry“ a jejich získání, či o „kotvách důvěry“.
+V případě certifikátů jde obecně o to, zda se lze spoléhat na jejich obsah – a pak si v nich přečíst, zda jde o kvalifikovaný certifikát, zda je nastaven příznak o umístění soukromého klíče na prostředku QSCD, či zda jde o certifikát pro elektronický podpis či pečeť. Právě to totiž rozhoduje o tom, zda se ve výsledku jedná o elektronický podpis či pečeť, a zda o kvalifikovaný, uznávaný či pouze zaručený.
+Na seznamu LOTL (či spíše „pod ním“) jsou ovšem i další služby, které s vydáváním certifikátů přímo nesouvisí. Proto si společnost Adobe vytváří určitou podmnožinu seznamu LOTL, se kterou pak pracují její programy, včetně Readeru. Této podmnožině říká EUTL (od: EU Trusted List), a je to právě to, na co se Reader odkazuje ve svých hláškách (i na předchozích obrázcích).
+K tomu je ovšem třeba dodat, že směrodatný je seznam LOTL, který může být aktualizován v zásadě kdykoli (když kterákoli členská země aktualizuje svůj národní důvěryhodný seznam). Pak je ale otázkou, jak často se tomu přizpůsobuje (aktualizuje) ona podmnožina EUTL, a také jak s ní pracuje samotný program Reader (který si dle svého nastavení stahuje certifikáty na seznamu EUTL). Dosud ale nebylo příliš „vidět“ do toho, jak takovéto reakce na změny LOTL probíhají. Kdy dochází k aktualizaci.
+Může to přitom mít poměrně zásadní vliv na výsledek ověření konkrétního podpisu či pečeti v Readeru. Například pokud byl podpisový certifikát vydán v rámci nějaké nové služby, které byl teprve čerstvě udělen kvalifikovaný status jejím zapsáním na LOTL (přesněji na příslušný národní seznam), konkrétní instance programu Reader to ještě nemusela zaznamenat. Obdobně v opačném případě, pokud byl nějaké službě kvalifikovaný status naopak odebrán.
+Jak jsem se nyní dozvěděl z komunitního fóra Adobe, společnost prý reagovala na připomínky organizace FESA (European Forum of Supervisory Authority) a počínaje verzí 26.001.21662 začala indikovat, kdy naposledy došlo k aktualizaci seznamu EUTL (podle LOTL). Nyní to tedy Reader vypisuje, kdykoli zmiňuje že důvěru čerpal z unijních seznamů. Příklady ukazuje následující obrázek.
+Pokud jde o frekvenci těchto aktualizací, sama společnost Adobe k tomu ve své nápovědě k seznamu EUTL (v anglické verzi, nikoli ve stručnější české, naposledy aktualizované v březnu 2024) uvádí, že k nim dochází:
+Přibližně jednou měsíčně, obvykle během prvního týdne kalendářního měsíce.
+Tomu odpovídá i předchozí obrázek, s výsledky ověření ve dvou různých dnech (viz zelené podtržení).
+K tomu je ale nutné dodat, že podle stejného zdroje (anglické verze nápovědy) může trvat až dalších14 dnů, než se aktualizace projeví i na konkrétní instanci Reader-u, který si seznam EUTL pravidelně stahuje k sobě pro jeho rychlejší využití. Zde ale platí, že toto stažení může uživatel vyvolat sám (přes Předvolby a Správce práv). Onu „měsíční“ aktualizaci EUTL podle LOTL uživatel ovlivnit nemůže.
+Důvěru a kvalifikovaný status si zkontrolujte sami, ručně
+Otázkou samozřejmě je, co s nesprávnými výsledky, které by mohly vzniknout kvůli dosud neprovedené aktualizaci. Jak jsme si již naznačili, může totiž dojít k tomu, že nějaký certifikát (a na něm založený podpis či pečeť) nebude správně rozpoznán, a v důsledku toho ověření dopadne jinak, než jak by správně mělo dopadnout.
+Asi již tušíte, že to nemohlo dopadnout jinak, než přehozením horké brambory na uživatele. Konkrétně zavedením disclaimeru v podobě hlášky „Než se na tento podpis spolehnete, ověřte aktuální stav kotvy důvěry“, která byla k vidění i na předchozích obrázcích.
+Následující obrázek tuto hlášku ukazuje znovu, spolu s další novou hláškou, nabízející „Další informace“. Obě tyto hlášky jsou aktivní odkazy, vedoucí na prohlížeč seznamu LOTL, resp. na stránky s nápovědou Adobe k seznamu EUTL (ještě s možností odskoku na neudržovanou českou verzi).
+Jak konkrétně „ověřit aktuální stav kotvy důvěry“, i s nezbytným vysvětlením, by bylo na samostatný článek (pokud by o něj byl zájem, prosím o reakci do komentářů k tomuto článku).
+Kde Reader nově chybuje při ověřování
+S novými verzemi Reader-u přišlo i několik dalších změn, které se mi podařilo detekovat. Tou nejzávažnější je asi změna v samotném způsobu využití seznamů EUTL a AATL, která v ČR dopadá hlavně na podpisy a pečeti, založené na kvalifikovaných certifikátech od I.CA.
+Dříve Reader fungoval tak, že když mohl čerpat důvěru z obou seznamů (tedy EUTL i LOTL), využil (a explicitně zmínil) obě. Ukazuje to i následující obrázek.
+Nově se ale fungování Readeru změnilo tak, že když dokáže čerpat důvěru v certifikát ze seznamu AATL, v některých případech (konkrétně u kvalifikovaných certifikátů od I.CA) ji už nečerpá z EUTL.
+Důsledek ukazuje následující obrázek: Reader ze seznamu AATL zjistil, že certifikátu může důvěřovat, a díky tomu mohl vyhodnotit podpis jako platný. V certifikátu je sice uvedeno, že jde o kvalifikovaný certifikát pro elektronický podpis, ale bez čerpání důvěry z unijních seznamů (LOTL/EUTL) na to Reader nesmí dát. A tak certifikát hodnotí jako komerční, resp. ne-kvalifikovaný, a výsledný podpis pak nutně prezentuje jen jako zaručený elektronický podpise.
+Na obrázku je přitom stejný elektronický podpis, jako na tom předchozím. Tedy kvalifikovaný elektronický podpis, založený na kvalifikovaném certifikátu, s příznakem uložení soukromého klíče na kvalifikovaném prostředku (QSCD). J...
+(Pokracovani na webu)|E||T|Australian Payments Plus moves faster with ChatGPT and Codex|D|07.7. 00:00|P|See how Australian Payments Plus uses ChatGPT Enterprise and Codex to move faster through payments complexity. AP+ saves time, improves quality, and k...|X|Australian Payments Plus moves faster with ChatGPT and Codex
 With ChatGPT Enterprise and Codex, AP+ teams save time, improve work quality, and investigate complex payments issues faster.
 2+
 hours saved each week by 77% of surveyed employees using ChatGPT

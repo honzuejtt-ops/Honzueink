@@ -1,3 +1,10 @@
+|T|Chyba|D||P|Něco se pokazilo.|X|HTTPSConnectionPool(host='www.lupa.cz', port=443): Max retries exceeded with url: /rss/clanky/ (Caused by NewConnectionError("HTTPSConnection(host='www.lupa.cz', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable"))|E|
+|T|Chat Control 1.0 bude pravděpodobně znovu platit. Právní kličku podpořila většina českých europoslanců|D|08.7. 16:45|P|Šéfka Evropského parlamentu se pokouší oživit Chat Control 1.0. • Parlament tuto sledovací výjimku v březnu neprodloužil. • Kvůli právní kličce se o n...|X|Šéfka Evropského parlamentu se pokouší oživit Chat Control 1.0. • Parlament tuto sledovací výjimku v březnu neprodloužil. • Kvůli právní kličce se o ní bude hlasovat znovu a nejspíš bude zase platit.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Recenze hry Assassin's Creed Black Flag Resynced. Staronová formule, které by se měla série držet|D|08.7. 15:45|P|Ubisoft po letech tlačení na pilu s dalšími díly Assassin’s Creed vsadil na jistotu. Přepracoval do nového enginu jeden z nejoblíbenějších dílů, a kdy...|X|Ubisoft po letech tlačení na pilu s dalšími díly Assassin’s Creed vsadil na jistotu. Přepracoval do nového enginu jeden z nejoblíbenějších dílů, a když už byl u toho, rovnou ho obsahově přifoukl a upravil souboje. Vůbec bych se nezlobil, kdyby se v kurzu nastaveném Resynced pokračovalo i do ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Kterou chatovací aplikaci používat, aby vás nikdo nešmíroval. Český úřad porovnal Messenger, WhatsApp, Telegram a další|D|08.7. 14:45|P||X|
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
@@ -56,6 +63,22 @@ ADDW (...|X|Všechny nové automobily v Evropské unii musí mít od 7. červenc
 ADDW (Advanced Drivers Distraction Warning) nařizuje regulace 2019/2144, která je součástí rozsáhlejší bezpečnostní směrnice GSR2 pomalu zaváděné od roku ...
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Helping K–12 educators build practical AI skills|D|08.7. 10:00|P|OpenAI Academy and the Walton Family Foundation are bringing hands-on AI Skills Jams to help K–12 educators build practical AI skills for the classroo...|X|Helping K–12 educators build practical AI skills
+Every day, K–12 teachers, administrators, district leaders, and school communities help students learn, grow, and prepare for the future. They are also being asked to navigate rapid technological change while managing limited time, growing responsibilities, and uneven access to practical support.
+That’s why OpenAI Academy, in partnership with the Walton Family Foundation(opens in a new window), will host a flagship AI Skills Jam for K–12 Educators this summer to offer a hands-on, high-trust environment where teachers and administrators can move from curiosity to practical use. Building on the success of the Nonprofit AI Jam(opens in a new window) and Small Business AI Jam(opens in a new window), the Jam will bring together more than 1,600 K–12 teachers, administrators, and district leaders for in-person, hands-on workshops across U.S. cities. Through the AI Skills Jam for K–12 Educators, OpenAI Academy aims to help educators explore how AI can support teaching, planning, communication, and other day-to-day work more effectively, while helping advance AI literacy, opportunity, and responsible adoption in education.
+Research from The Walton Family Foundation and Gallup, Teaching for Tomorrow: Closing the Expectations Gap Report(opens in a new window), shows that teachers who use AI tools at least weekly estimate saving 5.9 hours per week, on average. Multiplied across a typical school year, that amounts to approximately six weeks of time. Teachers say they reinvest this time into things like more nuanced student feedback, individualized lesson planning, parent communication, or even getting home at a more reasonable hour. At the AI Skills Jam, teachers and administrators will get the support they need to confidently start using and benefiting from incorporating AI into their work.
+During the Jam, participants will work alongside OpenAI mentors to learn how to incorporate AI into everyday work like lesson planning, parent and staff communications, administrative tasks, and more. The sessions will be hands-on and focused on real classroom and school system needs, providing time and space to try tools, ask questions, share concerns, and build confidence. Participants will also be connected to OpenAI Academy(opens in a new window), a free online platform which provides resources and best practice guidance about leveraging AI, so they can continue building on what they started at the Jam. OpenAI’s goal isn’t to just host a one-day workshop; it’s to expand our relationships with educators, school system leaders, and ecosystem partners over time.
+“Educators are at the center of helping communities understand and adapt to new technology,” said Leah Belsky, Vice President of Education at OpenAI. “Through the AI Skills Jam for K–12 Educators, we want to give teachers and school leaders practical support, trusted learning environments, and direct opportunities to shape how AI can be used responsibly in education. Access to AI is just the starting point, the real opportunity is building the agency to use these tools thoughtfully and solve meaningful problems.”
+Confirmed locations and partners for the AI Skills Jam for K–12 Educators, include:
+- Jonesboro, GA, with Clayton County Public Schools — Wednesday, July 8
+- Fairfax, VA, with Fairfax County Public Schools — Thursday, July 9
+- Orlando, FL, at the PTA Conference with the Parent Teacher Association — Saturday, July 11
+- Chicago, IL, with District 211 — Wednesday, July 15
+- San Bernardino, CA, with San Bernardino City Unified School District — Wednesday, July 22
+- Phoenix, AZ, with Vertex Education & Legacy Traditional Schools — Friday, July 31
+- Salt Lake City, UT, with Davis School District — Friday, August 7
+- Las Vegas, NV, with Vertex Education & Legacy Traditional Schools — Friday, September 4
+We are grateful to the districts, school systems, educators, partners and the Walton Family Foundation for helping shape this effort. Their leadership and expertise are essential to making AI useful, responsible, and accessible in education.|E|
 |T|Komunistka byla proti, topka nebo starostové pro. Europoslanci opět budou projednávat invazivní Chat Control|D|08.7. 09:40|P|Evropský parlament schválil znovuotevření a opětovné projednání Chat Control 1.0, zjednodušeně řečeno skenování soukromých zpráv uživatelů komunikační...|X|Evropský parlament schválil znovuotevření a opětovné projednání Chat Control 1.0, zjednodušeně řečeno skenování soukromých zpráv uživatelů komunikačních aplikací, a to ve jménu boje s ochranou dětí a podobně. Pro byla i značná část českých europoslanců.
 Chat Control 1.0 už jednou zmizel ze scény, když jej europoslanci v březnu letošního roku odmítli. Výjimka, která umožňovala skenovat osobní komunikaci, vypršela třetího dubna. Jenže Rada Evropské unie následně přijala původní návrh Evropské komise a spustila takzvané druhé čtení. Europoslanci nyní schválili opětovné projednání výjimky v rámci takzvaného naléhavého postupu.
 Pro znovuotevření Chat Control 1.0 hlasovalo 11 českých europoslanců a europoslankyň. Jde například o zástupce Starostů (Danuše Nerudová a Jan Farský) a TOP 09 (Luděk Niedermayer a Ondřej Kolář), KDU-ČLS (Tomáš Zdechovský) a většinu ANO.
@@ -145,3 +168,66 @@ Boháček pro Lupu uvedl, že implementace Synhawku musí být v případě Voda
 Vodafone je pro Synhawk důležitým partnerem, díky němuž může technologii předvést v širším měřítku. Český Vodafone je první, kdo v rámci skupiny od září začne modely používat. Výkonná ředitelka mateřské Vodafone Group Margherita Della Valle během návštěvy Česka uvedla, že by řešení v budoucnu mohlo být implementováno i v dalších zemích, kde operátor působí.
 Boháček doplnil, že aplikace nejenom pro Vodafone mohla časem mít další funkce a moduly, třeba rozšíření pro webový prohlížeč, aby šlo detekovat podvody během procházení sociálních sítí a tak dále. Startup ale bude novinky vymýšlet a nasazovat postupně a pokud možno citlivě. Časem může jít o něco jako novou generaci antivirů, které ale uživatelé mnohdy přestali brát v potaz, protože byly invazivní, spotřebovávaly velké hardwarové prostředky a tak dále. Ochrana proti deep fake i proto musí být co nejméně viditelná a invazivní.
 Ochrana proti deep fakům bude podle českého výzkumníka velice důležitá. “Velká část uživatelů nedokáže tyto hrozby rozpoznat,” uzavřel.|E|
+|T|Introducing GPT-Live|D|08.7. 00:00|P|A new generation of voice models for natural human-AI interaction, now powering ChatGPT Voice.|X|Introducing GPT‑Live
+A new generation of voice models for natural human-AI interaction, now powering ChatGPT Voice.
+We’re launching GPT‑Live, a new generation of voice models that make talking with AI feel much more like having a real conversation.
+GPT‑Live is built on a full-duplex architecture, meaning it can listen and speak at the same time. During conversations, GPT‑Live can show it’s paying attention with phrases like “mhmm” or “yeah”, engage in quick back-and-forth, or just stay quiet when you need a moment to think. The result is a voice experience that is refreshingly easy to talk to.
+GPT‑Live is also our smartest voice model yet. For questions that require web search, deeper reasoning, or more complex work, it delegates to our latest frontier model behind the scenes and brings the result back into the conversation when it’s ready. While it works, GPT‑Live can keep talking with you and maintain the flow of conversation. At launch, GPT‑Live will use GPT‑5.5 in the background. As we release new frontier models, we’ll continuously update the model used by GPT‑Live.
+These advances power a new ChatGPT Voice experience that is more intelligent and natural to use. Over time, we believe this research will also unlock the ability to use voice for increasingly complex, longer-running, and more agentic work.
+We’re beginning to roll out two versions of GPT‑Live – GPT‑Live‑1 and GPT‑Live‑1 mini – to ChatGPT users globally today. We also plan to bring them to the API soon, and developers and enterprises can sign up to be notified using this form.
+Entering a new era of human-AI interaction
+Our vision is to enable truly natural human–AI interaction: a world where collaborating with AI feels as fluid and responsive as working with another person, while reasoning and complex task execution happen seamlessly in the background.
+Previous approaches
+Older generations of voice AI systems brought us closer to that vision, but with important tradeoffs.
+Cascaded voice systems
+Cascaded voice systems rely on a series of models acting one after another to process each turn. The original ChatGPT Voice chained three models together: a speech-to-text model to transcribe your speech, a large language model to produce a response, and a text-to-speech model to convert it back into speech. This approach enabled us to talk to frontier AI models for the first time, but the complexity came at a cost: information could be lost across models, and responses were slow and stilted.
+Cascaded voice system
+Slow and stilted responses, long pauses
+Turn-based voice models
+Turn-based voice models like ChatGPT Advanced Voice Mode processed and generated audio within a single model, reducing latency and making conversations smoother — but they still operated through discrete turns. The model had to wait for the user to stop speaking before responding, resulting in rigid back-and-forth. In addition, because turn detection is based on silence, even a brief pause or background noise could be mistaken for the end of turn — causing the model to interrupt at unnatural times.
+Turn-based voice model
+Slightly faster and smoother responses, but back-and-forth with the model still feels rigid
+Our new approach
+GPT‑Live addresses these limitations through two architectural changes.
+Continuous interaction
+First, we built GPT‑Live for continuous interaction using a full-duplex architecture. Instead of processing a sequence of separate messages, GPT‑Live continuously processes input while generating output. The model can therefore make interaction decisions many times per second: whether to speak, continue listening, pause, interrupt, or invoke a tool.
+This allows the model to engage in more natural back-and-forth, maintain a better sense of time, and even perform live translation.
+Continuous interaction
+Fast, natural, expressive responses and more active listening
+Delegation for deeper work
+Second, we decoupled GPT‑Live — which handles continuous interaction — from deeper work. When a question requires search, reasoning, or more agentic capabilities, GPT‑Live can delegate the task to another model like GPT‑5.5. This allows it to keep the conversation going, even as it handles multiple tasks in the background.
+This architectural change also allows GPT‑Live to continuously use the latest models and agents, combining frontier intelligence with natural interaction.
+Delegation for deeper work
+GPT-Live provides fast, natural responses, while GPT-5.5 handles search in the background
+Evaluations
+We built new human evaluations to measure pleasantness and the flow of conversation. In these head-to-head comparisons, GPT‑Live‑1 and GPT‑Live‑1 mini are strongly preferred over Advanced Voice Mode in matched 5–10 minute conversations that measure overall preference, turn-taking, interruptions, conversational flow, and how natural each interaction felt.
+- GPQA: GPT‑Live‑1 substantially outperforms Advanced Voice Mode on GPQA, which tests expert-level scientific reasoning across biology, chemistry, and physics.
+- BrowseComp: GPT‑Live‑1 shows strong gains over Advanced Voice Mode on BrowseComp, which tests agentic web search and the ability to find difficult-to-locate information.
+- τ³-Voice Telecom (internal variant)**: GPT‑Live‑1 outperforms Advanced Voice Mode on τ³-Voice Telecom, which tests voice agents on realistic, multi-turn telecom support tasks.
+A new ChatGPT Voice experience
+Each week, more than 150 million people talk to ChatGPT using features like Voice and Dictation. They use it to get hands-free everyday help, to practice languages, tell bedtime stories, or just chat during their commute.
+Starting today, when you tap the Voice button to talk with ChatGPT, you’ll get an improved experience powered by GPT‑Live—with more natural conversations, smarter answers, better listening, and visual responses.
+More natural conversations
+Talking with ChatGPT should now feel much more like a real conversation. You can interrupt with a question, pause to gather your thoughts, or ask ChatGPT to slow down. It naturally acknowledges what you’re saying with phrases like “mhmm” or “got it,” so you know it’s following along. We’ve also remastered the nine distinct voices in ChatGPT for GPT‑Live.
+Smarter answers
+ChatGPT Voice can now draw on our latest frontier models, giving you smarter answers when you need them. You can also choose the level of reasoning that fits your needs: Instant for fast responses, or Medium and High when you want ChatGPT to spend more time thinking.
+Better listening
+If you take a moment to think, ChatGPT Voice now waits instead of jumping in and interrupting. If you ask it to stay quiet and listen, it will. And when there’s background noise, like passing traffic or nearby conversations, ChatGPT is better at focusing on your voice instead of getting distracted.
+Visual answers at a glance
+Some answers are more useful when you can see them. While you’re talking, ChatGPT can now show rich visual cards for topics like weather, stocks, sports, and more. Voice also continues to support search, memory, images, and file uploads.
+The result is a ChatGPT Voice experience that feels more natural, more capable, and more useful in everyday life.
+Safety designed for voice
+GPT‑Live was designed to be safe by default. It builds on the safety advances from our latest models while adding dedicated safety training across key risk areas and new safeguards designed specifically for voice.
+Expanded safety testing
+To better reflect how people use voice in real-life settings, we began by expanding our safety testing to include new audio-native evaluations. We also created synthetic evaluations that use generated audio to focus more intensively on key safety areas, drawing on what we learned from Advanced Voice Mode. Those areas include self-harm, psychosis and mania, emotional reliance on AI, violence, and sexual content. Internal experts also red-teamed the model for risks unique to voice.
+In our testing, GPT‑Live performed comparably to or better than Advanced Voice Mode across nearly all of the areas we evaluated. You can read more about our testing and safeguards in the GPT‑Live system card(opens in a new window).
+Built-in safeguards
+Because voice conversations unfold in real time, we also built safeguards that can act while the model is speaking. When the system detects potentially unsafe output, it can steer the model toward a safer response, surface additional safety messaging or resources, or end the voice conversation in higher-risk cases. For conversations involving self-harm, we adapted ChatGPT’s support flows for voice, including offering expert-vetted crisis helpline support.
+We designed additional protections to support teen users, and trained age-appropriate behavior directly into the model to reduce the risk of inappropriate responses. Parents can choose whether their teen can use ChatGPT Voice through Parental Controls, and linked parents may be notified in higher-risk situations involving signs of potential self-harm or suicidal intent.
+Learning from real-world use
+We’re also rolling out longer-term measurement and post-launch monitoring focused on emotional reliance to continue improving our understanding and refining safeguards. Building on our previous research into affective use and emotional well-being, this will help us identify emerging patterns and improve how the system responds in emotionally sensitive interactions.
+Finally, GPT‑Live is designed for conversation, not voice impersonation. It uses a set of predefined voices in ChatGPT, with safeguards to prevent it from imitating a real person’s voice.
+We’re committed to supporting safety and well-being and will keep strengthening these protections as we learn from real-world use.
+Availability & limitations
+GPT‑Live is rolling out now to ChatGPT users globally across iOS, Android, and ChatGPT.com(opens in a new window). GPT‑Live‑1 will become the default model powering ChatGPT Voice for Go, Plus, and Pro users, and G...
+(Pokracovani na webu)|E|

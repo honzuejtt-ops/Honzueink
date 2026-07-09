@@ -1,0 +1,7 @@
+Do obchodu s rozšířeními Google Web Store se dostal škodlivý doplněk, který se vydával za oficiální rozšíření umělé inteligence Perplexity. Ve skutečnosti ale přesměrovával vyhledávání přes servery útočníků a sbíral informace o tom, co uživatelé hledají. Pokud jste podobný doplněk instalovali, je dobré zbystřit.
+Důvěryhodný špion a sběratel dat
+Podvodné rozšíření s názvem „Search for Perplexity AI“ věrně napodobovalo oficiální doplněk Perplexity. Po instalaci přepsalo nastavení prohlížeče a fungovalo jako výchozí vyhledávač, všechny dotazy však nejdříve odesílalo na servery ovládané útočníky. Až poté je přesměrovalo na skutečné výsledky vyhledávání, takže uživatel neměl možnost podezřelou aktivitu zaznamenat.
+Microsoft upozornil, že falešné rozšíření nesledovalo jen odesílané dotazy, ale také text psaný do adresního řádku v reálném čase, IP adresy nebo HTTP hlavičky. Přestože nebyly nalezeny důkazy o krádeži hesel, požadovaná oprávnění umožňovala rozšíření sledovat i aktivitu uživatelů, což představovalo bezpečnostní riziko.
+Jediným oficiálním rozšířením Perplexity je doplněk vydaný přímo společností na tomto odkazu.
+Falešný doplněk už byl z Chrome Web Store odstraněn. Pokud jste si jej stihli nainstalovat, zůstává ve vašem počítači, dokud jej ručně neodstraníte. Rozšíření neslo název „Search for Perplexity AI“ a jeho identifikátor byl „flkebkiofojicogddingbdmcmkpbplcd“ (bez uvozovek). Microsoft zároveň doporučuje preventivně změnit hesla ke všem důležitým účtům.
+zdroj: Microsoft, BleepingComputer

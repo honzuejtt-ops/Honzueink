@@ -1,4 +1,15 @@
+|T|Toto jsou nejočekávanější telefony druhé poloviny roku 2026, na které se vyplatí počkat|D|09.7. 18:45|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Nejlepší filmy o kung-fu a asijských bojových uměních. Létající kopance, údery jako blesk a nezapomenutelné legendy|D|09.7. 18:15|P|Kung-fu filmy patří mezi nejikoničtější a nejvlivnější akční žánry filmové historie. Od legendárních úderů Bruce Lee přes akrobatické kousky Jackieho ...|X|Kung-fu filmy patří mezi nejikoničtější a nejvlivnější akční žánry filmové historie. Od legendárních úderů Bruce Lee přes akrobatické kousky Jackieho Chana až po vizuálně ohromující moderní eposy typu Tygr a drak – nabídka je pestrá a nadčasová. Vybrali jsme nejlepší bojové filmy, které definovaly ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Počítače zažily nejhorší hrizi za poslední dva roky. V prodeji se dařilo jen Applu díky levnému MacBooku Neo|D|09.7. 17:45|P|Od začátku dubna do konce června se do obchodů dostalo 68,2 milionu počítačů, o necelých pět procent méně než před rokem. Podle analytiků z IDC jde o ...|X|Od začátku dubna do konce června se do obchodů dostalo 68,2 milionu počítačů, o necelých pět procent méně než před rokem. Podle analytiků z IDC jde o první pokles po devíti čtvrtletích. Ne však nečekaný, o krizi se vědělo dopředu.
+
+Kvůli rostoucím cenám operačních a úložných paměti totiž počítače ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Počítače zažily nejhorší krizi za poslední dva roky. V prodeji se dařilo jen Applu díky levnému MacBooku Neo|D|09.7. 17:45|P|Od začátku dubna do konce června se do obchodů dostalo 68,2 milionu počítačů, o necelých pět procent méně než před rokem. Podle analytiků z IDC jde o ...|X|Od začátku dubna do konce června se do obchodů dostalo 68,2 milionu počítačů, o necelých pět procent méně než před rokem. Podle analytiků z IDC jde o první pokles po devíti čtvrtletích. Ne však nečekaný, o krizi se vědělo dopředu.
 
 Kvůli rostoucím cenám operačních a úložných paměti totiž počítače ...
 
@@ -43,6 +54,17 @@ Chat Control 1.0 už jednou zmizel ze scény, když jej europoslanci v březnu l
 Peníze jdou z dotačního programu Vysokorychlostní internet – výzva I., v rámci něhož ministerstvo průmyslu a obchodu alokovalo 5,5 miliardy korun (OP TAK). T-Mobile přihlásil projekty za dvě miliardy korun, nakonec uspěl s částkou 1,325 miliardy. Dotace mohou pokrýt až 85 procent uznatelných nákladů.
 Operátoři čerpají evropské dotace také na pokrývání komerčně neatraktivních lokalit mobilním signálem. T-Mobile nyní řeší několik míst. O2 a CETIN dostanou signál do 32 zanedbaných oblastí. Dotace rovněž pomáhají dostat rychlý bezdrátový internet a hlasovou komunikaci do vlaků, začalo se s prvními tunely a hlavními trasami.
 Jak vypadá Vítkovský železniční tunel pokrytý rychlým internetem díky dotacím:|E|
+|T|GPT-5.6 is now the preferred model in Microsoft 365 Copilot|D|09.7. 13:00|P|Learn how GPT-5.6 powers Microsoft 365 Copilot with stronger AI capabilities across Word, Excel, PowerPoint, Chat, and Cowork for faster, higher-quali...|X|GPT‑5.6 is now the preferred model in Microsoft 365 Copilot
+Today, OpenAI announced GPT‑5.6, which will become the new preferred model in Microsoft 365 Copilot—in Word, Excel, PowerPoint, Chat and Cowork. For Microsoft 365 customers, the update brings OpenAI's latest flagship model series into productivity tools people use every day, helping them create, analyze, and collaborate with more capable AI assistance across workstreams. GPT‑5.6 is OpenAI’s latest flagship model series, which delivers more useful work from every token, with stronger performance per dollar and on demand capability for the most complex tasks.
+With GPT‑5.6, Microsoft 365 users will be able to create higher-quality work products with less effort across the apps they already rely on:
+- In Word, GPT‑5.6 can help people draft, edit, and refine documents with fewer rounds of prompting.
+- In Excel, it can support deeper analysis while using tokens more efficiently, helping users move faster from data to insights.
+- In PowerPoint, it can help turn early ideas into more polished, visually compelling presentations with less manual guidance.
+- In Cowork, it can help users complete complex, cross-functional work and produce higher-quality outputs with less manual coordination.
+“We can’t wait for customers to see what GPT‑5.6 in Microsoft 365 will do, enabling them to work even more effectively with AI in the tools they use every day,” said Nitin Agrawal, President, Copilot & Agents Core, Microsoft. “Using Copilot powered by OpenAI’s latest model, customers will be able to produce more polished outputs in Word, Excel, PowerPoint, Cowork, and Copilot Chat, whether they are drafting documents, analyzing data, creating presentations, or collaborating across teams. We’re excited to continue building with OpenAI to bring more powerful AI experiences to people and organizations around the world.”
+“Microsoft 365 is where millions of people write, analyze, create, and collaborate every day,” said Nikunj Handa, Head of API Product, OpenAI. “By bringing GPT‑5.6 to Microsoft 365 Copilot through the OpenAI API, we're helping organizations get more useful work from every token, and more value from AI in the tools they already use.”
+In addition to serving the models natively, Microsoft will also access OpenAI models directly through the API to bring GPT‑5.6 to Microsoft 365 customers.
+Our partnership with Microsoft has always been about bringing the benefits of advanced AI to more individuals and organizations, and we’re excited to continue building on that shared commitment.|E|
 |T|Pozor, na tuto falešnou AI jste mohli skočit i vy. Tajně sbírala data, stáhnout šla z oficiálního obchodu|D|09.7. 12:51|P|Falešná verze populárního AI nástroje Perplexity se dostala přímo do Chrome Web Store. Rozšíření nenápadně sledovalo vyhledávání uživatelů a odesílalo...|X|Do obchodu s rozšířeními Google Web Store se dostal škodlivý doplněk, který se vydával za oficiální rozšíření umělé inteligence Perplexity. Ve skutečnosti ale přesměrovával vyhledávání přes servery útočníků a sbíral informace o tom, co uživatelé hledají. Pokud jste podobný doplněk instalovali, je dobré zbystřit.
 Důvěryhodný špion a sběratel dat
 Podvodné rozšíření s názvem „Search for Perplexity AI“ věrně napodobovalo oficiální doplněk Perplexity. Po instalaci přepsalo nastavení prohlížeče a fungovalo jako výchozí vyhledávač, všechny dotazy však nejdříve odesílalo na servery ovládané útočníky. Až poté je přesměrovalo na skutečné výsledky vyhledávání, takže uživatel neměl možnost podezřelou aktivitu zaznamenat.

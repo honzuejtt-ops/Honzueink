@@ -1,0 +1,5 @@
+Samsung odstartoval sériovou výrobu svého prvního SSD pro nové rozhraní PCIe 6.0. Disky s označením PM1763 bude produkovat v kapacitách 4, 8 a 16 TB, později ale přidá i 32- a 64TB varianty.
+
+Novinky míří výhradně do datacenter a budoucích výkonných pracovních stanic. V běžných počítačích ostatně ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

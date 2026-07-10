@@ -1,0 +1,10 @@
+Potravinový řetězec Lidl informoval své zákazníky, že ze serverů jejich internetového e-shopu unikla citlivá data o zákaznících. Útočníci se dostali k části databáze obsahující jména, telefonní čísla a e-mailové adresy. Hesla ani platební údaje nezískali.
+K úniku došlo u externího poskytovatele IT služeb, samotný systém e-shopu podle společnosti napaden nebyl.
+Hackeři získali přístup k odděleně uloženému souboru se zákaznickými daty, z něhož část informací odcizili. Mezi uniklými údaji jsou oslovení, jméno a příjmení, telefonní číslo, e-mailová adresa, datum narození a zákaznické číslo.
+Firma se o incidentu dozvěděla na začátku týdne a následně začala rozesílat upozornění dotčeným zákazníkům. Doporučuje jim zvýšenou opatrnost při otevírání e-mailů, SMS zpráv i při telefonických hovorech, protože uniklé kontaktní údaje mohou kyberzločinci využít při podvodných kampaních.
+Řetězec zároveň zdůraznil, že se incident netýká hesel, fakturačních ani doručovacích adres, bankovních údajů či jiných platebních informací. Podle společnosti nebyly kompromitovány ani samotné zákaznické účty.
+Data zatím nebyla zneužita
+Lidl zatím nemá informace o tom, že by odcizená data byla zneužita. Přesto zákazníkům doporučuje, aby byli obezřetní vůči nevyžádaným zprávám a žádostem o sdělení dalších osobních nebo platebních údajů.
+„V současné době nemáme žádné konkrétní důkazy o zneužití dat. Nicméně jsme zákazníky, kterých se situace týká, preventivně varovali před možnými pokusy o phishing nebo zneužití identity,“ uvedla mluvčí společnosti Lidl Česká republika Iveta Barabášová.
+Podle Lidlu přijal externí poskytovatel IT služeb po odhalení útoku okamžitá bezpečnostní opatření, zapojil specialisty na kybernetickou bezpečnost a podal trestní oznámení. O události byl informován také Úřad pro ochranu osobních údajů.
+„Tento incident bereme velmi vážně a úzce spolupracujeme s naším poskytovatelem IT služeb. Ochrana údajů, zejména ochrana dat našich zákazníků, je klíčovou prioritou,“ doplnila Barabášová.

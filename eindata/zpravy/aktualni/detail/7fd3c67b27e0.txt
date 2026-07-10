@@ -1,0 +1,3 @@
+Soubor CapabilityAccessManager.db-wal může narůst na stovky gigabajtů. • Problém se týká Windows 11, zřejmě jen verze 25H2. • Microsoft po měsících mlčení uvolnil opravu, zatím jen volitelně.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

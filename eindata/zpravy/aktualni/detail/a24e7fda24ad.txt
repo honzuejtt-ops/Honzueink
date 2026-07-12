@@ -1,0 +1,19 @@
+Článek
+Vyplývá to z průzkumu, který mezi svými členy provedla Asociace malých a středních podniků a živnostníků (AMSP ČR). Drtivé většině podnikatelů, 98,4 procenta, podle něj nepřineslo jednotné měsíční hlášení dosud vůbec žádné zjednodušení.
+„Ačkoliv 42,5 procenta firem digitalizaci obecně podporuje a vidí v ní dlouhodobý smysl, stát jim proces znechutil nefunkčním systémem. Naprosto selhal v exekuci celého projektu a udělal z firem pokusné králíky,“ okomentoval výsledky předseda představenstva AMSP ČR Josef Jaroš.
+Svědčí o tom podle něj fakt, že první měsíční hlášení dokázala bez problémů podat pouhá desetina firem. Zbytek musel podání opakovaně opravovat nebo situaci zoufale řešit přes technickou podporu ministerstva, protože systém hlášení odmítal vůbec přijmout.
+„Po odeslání nám přišlo potvrzení, že je vše v pořádku, po čtrnácti dnech nám přišlo druhé, že hlášení obsahuje chyby a je nutné ho předělat,“ uvedla v průzkumu jedna z firem.
+„Je naprosto nehorázné, aby stát požadoval po účetní úpravu XML souboru v poznámkovém bloku. To vše jen kvůli tomu, že za deset dní nejsou schopni zpracovat podání,“ doplnila další.
+Téměř tři čtvrtiny firem podle průzkumu strávily zavedením jednotného měsíčního hlášení oproti minulosti o osm hodin čistého času navíc. Celkem 55 procent podniků vynaložilo kvůli němu na aktualizace účetních softwarů či práce externích účetních více než pět tisíc korun navíc, téměř třicet procent to pak stálo do pěti tisíc.
+Nesrozumitelné chybové hlášky
+Za největší problém čtyři z deseti firem označily nesrozumitelnost chybových hlášení a téměř tři pětiny technické výpadky systému. „V této podobě je hlášení pro malé a střední podniky skutečnou zátěží a nikoliv zjednodušením. Navíc tuto zátěž tyto podniky nesou na vlastních bedrech bez jakékoli kompenzace,“ doplnila místopředsedkyně AMSP ČR Gabriela Hrbáčková.
+Není to jediná anketa, jejíž účastníci hlášení kritizují. Z aktuálního průzkumu personální agentury Předvýběr.CZ vyplývá, že pro 63 procent personalistů a účetních je největší komplikací zvýšená chybovost, kdy informační systém často vrací odeslaná data k opravě kvůli drobnostem. Nežádoucí stříbro vyhrála nejasná metodika, těsně následovaná technickými a softwarovými problémy.
+„V souvislosti s nově zavedenou povinností je nejčastěji zmiňovaným problémem časová náročnost,“ shrnul průzkum ředitel agentury František Boudný. Více než čtvrtinu zaměstnavatelů stojí novinka jednu až tři hodiny času navíc, o čtyři až deset hodin více práce má šestnáct procent firem a téměř jedenáct procent hlásí extrémní zátěž překračující deset hodin.
+Nové hlášení krok za krokem
+Jednotné měsíční hlášení zaměstnavatelů má firmám ušetřit papírování a sjednotit dosavadní hlášení úřadům do jediného elektronického podání.
+- Podávejte ho elektronicky. Využít lze ePortál České zprávy sociálního zabezpečení, datovou schránku nebo datové rozhraní ČSSZ.
+- Posílejte ho každý měsíc. Termín je vždy od 1. do 20. dne následujícího měsíce.
+- Zkontrolujte mzdový software. Ujistěte se, že podporuje nový formát hlášení.
+- Chyby lze opravit. Opravné hlášení je možné podat dodatečně.
+- Sledujte pokyny ČSSZ. Úřad průběžně upravuje metodiky a zveřejňuje nové informace.
+- Nenechávejte podání na poslední chvíli. Za opožděné nebo nepodané hlášení hrozí pokuty.

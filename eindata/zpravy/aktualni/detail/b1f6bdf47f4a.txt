@@ -1,0 +1,3 @@
+Webový prohlížeč DuckDuckGo blokuje videoreklamy nejen na YouTubu. • Využívá k tomu vlastní filtry a také ty z projektu uBlock Origin. • Blokování aktuálně podporuje DuckDuckGo pro Windows, macOS a iOS.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

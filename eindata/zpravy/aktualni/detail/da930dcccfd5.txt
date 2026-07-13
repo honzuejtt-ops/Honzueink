@@ -1,0 +1,6 @@
+Čínské Sunlu je známé hlavně prodejem filamentů, resinů a příslušenství pro 3D tiskárny. Právě v poslední sekci nyní přichází s novinkou, která potěší hlavně majitele tiskáren Bambu Lab, kteří k tisku využívají jednotku AMS Lite. Právě pro ni totiž představilo vlastní sušičku filamentů.
+Až 70 °C přímo během tisku
+Sušička filamentů Sunlu pro jednotku AMS Lite je v podstatě pouze skeletem, do kterého se celá jednotka AMS Lite vloží. Sušička je složena ze spodní základny s ovládacím displejem a horním průhledný krytem. Sušička podporuje běžné materiály jako PLA, PETG, ABS, ASA, PA a PC, případně teploty až do 70 °C.
+Topná sestava s dvěma ventilátory rovnoměrně rozvádí teplo v komoře, odvod vzduchu je pak řešen ventilačními otvory. Jedná se v podstatě o podobný systém, který Sunlu použilo u loni představené sušičky AMS Heater pro stejnojmennou jednotku od Bambu Lab.
+Hlavní výhoda obou zařízení je podpora sušení přímo během tisku, což bohužel jednotka AMS 2 Pro od Bambu Lab stále neumí, přestože funkcí sušení filamentu disponuje. Sušička pro jednotku AMS Lite vstoupí do prodeje 20. července 2026 za cenu okolo 120 euro přímo na webu výrobce.
+zdroj: Sunlu

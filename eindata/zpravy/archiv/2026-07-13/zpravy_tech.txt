@@ -1,3 +1,21 @@
+|T|Projekt obřího vesmírného zrcadla dostal zelenou. Zmizí tma, ale solární elektrárny budou vyrábět i uprostřed noci|D|13.7. 13:43|P|Americký úřad schválil testování obřího zrcadla odrážejícího sluneční svit na Zemi • Startup plánuje do deseti let vyslat padesát tisíc odrazových sat...|X|Americký úřad schválil testování obřího zrcadla odrážejícího sluneční svit na Zemi • Startup plánuje do deseti let vyslat padesát tisíc odrazových satelitů • Vědci i veřejnost varují před ztrátou tmy a zničením astronomických observatoří
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Waze vydal největší aktualizaci posledních let: mění způsob, jak se plánují trasy|D|13.7. 12:47|P|Navigace bude mnohem víc spoléhat na historii vašich cest, kterou bude kombinovat s aktuálním provozem. Aktualizace udělá radost i uživatelům, kterým ...|X|Oblíbená navigační aplikace Waze nasazuje několik funkcí zaměřených na přesnější volbu trasy a pohodlnější ovládání během jízdy. Navigace začne výrazněji zohledňovat předchozí rozhodnutí řidiče a změní se i četnost hlasových povelů, jejichž frekvence půjde nově nastavit.
+Trasy podle zvyku
+Personalizace už ve Waze existovala – aplikace využívala historii jízd pro zpřesnění času příjezdu a návrhy pravidelných cílů. Nová verze ale výrazně rozšiřuje vliv personalizace na samotné varianty naplánované trasy. Navigace bude historii cest kombinovat s aktuální dopravní situací. Pokud řidič pravidelně upřednostňuje dálnici před místními ulicemi, Waze mu podobnou trasu nabídne přednostně. Zohlednit může také oblíbený nájezd nebo komunikaci, kterým se uživatel běžně vyhýbá. Pokud se ale tyto návrhy nebudou zamlouvat, personalizaci půjde vypnout.
+Aplikace nově dostává režim Less Chatty, který omezuje počet hlasových povelů a zkracuje jejich délku. Navigace dál samozřejmě bude upozorňovat na důležité odbočky či změny jízdního pruhu a zachová také varování před riziky na trase. Bude se ale více spoléhat na vizuální navigaci.
+Režim pro motocykly
+Waze nově půjde pohodlně používat i na motorkách a dalších jednostopých vozidlech. Motocyklový režim počítá s trasami, které nejsou vhodné pro automobily – může využít užší komunikace nebo zkratky přístupné jednostopým vozidlům. Do výpočtu času příjezdu zahrne také místní omezení platná pro motocykly. Rozšířená motocyklová upozornění nově zahrnou výtluky a zpomalovací prahy. Navigace upozorní také na vyvýšené přechody, konec krajnice nebo úzké mosty. Data doplňují editoři map specializovaní na motocyklovou dopravu.
+První vlna zavádění této funkce ale zahrnuje jen typické motocyklové země – Argentinu, Brazílii, Kolumbii, Malajsii, Mexiko, Filipíny a Peru. Motorkáři v dalších zemích si budou muset počkat delší dobu.
+Gemini v navigaci
+Waze se rovněž více propojí s Gemini. Řidič může nově hlasem oznámit uzavřenou silnici nebo neaktuální adresu. Podnět následně dostanou místní editoři, kteří jej před zanesením do mapy ověří.
+Gemini pomůže také s hledáním cíle bez znalosti přesného názvu. Uživatel může požádat o otevřenou kavárnu nebo parkoviště poblíž konkrétního místa a navigace dokáže vyhledat také čerpací stanici podle ceny paliva. Výsledky následně zobrazí jako seznam a trasu.
+Aktualizace se postupně rozšiřuje mezi uživatele Androidu i iOS, není ale distribuována všem uživatelům současně.
+Zdroj: Google|E|
+|T|OpenAI zařízne prohlížeč ChatGPT Atlas. Zato doplňkem ovládne Chrome|D|13.7. 12:45|P|OpenAI oznámilo, že 9. srpna přestane poskytovat webový prohlížeč Atlas. • Ukončení vývoje bylo na spadnutí, protože přijde superaplikace. • Autonomní...|X|OpenAI oznámilo, že 9. srpna přestane poskytovat webový prohlížeč Atlas. • Ukončení vývoje bylo na spadnutí, protože přijde superaplikace. • Autonomní AI ovládne prohlížeč Chrome, a to prostřednictvím doplňku.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Česká nabíječka 3v1 si rozumí s mobilem, sluchátky a hodinkami Garmin|D|13.7. 11:45|P|Cubenest SQ314 je jednou z mála nabíječek 3v1 s podporou Garminu. • Většina výrobců se soustředí na Apple Watch a Samsung Galaxy Watch. • Nabízí výkon...|X|Cubenest SQ314 je jednou z mála nabíječek 3v1 s podporou Garminu. • Většina výrobců se soustředí na Apple Watch a Samsung Galaxy Watch. • Nabízí výkon 35 W, silný magnet a certifikaci Qi2.2.
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|

@@ -1,0 +1,17 @@
+IncidentRelay
+Platforma, která přináší moderní řešení pro správu pohotovostí (on-call) a krizové řízení incidentů v IT týmech. Tento nástroj slouží jako flexibilní alternativa ke komerčním službám typu PagerDuty, přičemž umožňuje efektivně směrovat upozornění ze monitorovacích nástrojů, plánovat kalendáře služeb a automaticky eskalovat kritické události správným vývojářům či administrátorům.
+Díky svému otevřenému kódu poskytuje organizacím plnou kontrolu nad citlivými daty o infrastruktuře, snadnou integraci do stávajících komunikačních kanálů a možnost provozovat celou infrastrukturu lokálně (on-premise).
+incidentrelay.io, 1.1
+Chatto
+Self-hosted chatovací aplikace, která se profiluje jako otevřená alternativa ke službě Slack, která nově plně přešla na open-source model. Tento komunikační nástroj umožňuje firmám a vývojářským týmům provozovat bezpečné chatovací prostředí kompletně na vlastní infrastruktuře, čímž jim dává absolutní kontrolu nad citlivými firemními daty a interní komunikací bez závislosti na cloudu.
+Vedle klasických funkcí, jako jsou organizované kanály, přímé zprávy, sdílení souborů a pokročilé vyhledávání v historii, nabízí platforma po svém otevření komunitě také široké možnosti přizpůsobení, integrace s dalšími vývojářskými nástroji.
+chatto.run, 1.0
+Bagels
+Správce osobních výdajů navržený pro efektivní práci přímo v příkazové řádce. Tato aplikace s terminálovým uživatelským rozhraním (TUI) umožňuje mít své finance plně pod kontrolou bez nutnosti opouštět terminál. Umožňuje rychlé zadávání, kategorizaci a detailní sledování každodenních nákladů a příjmů, přičemž klade důraz na rychlost ovládání pomocí klávesových zkratek, přehledné vizuální statistiky a stoprocentní soukromí, jelikož veškerá data jsou ukládána lokálně na vašem zařízení.
+github.com/EnhancedJax/Bagels, 0.3.12
+Mitsuba
+Flexibilní výzkumný renderovací nástroj napsaný v jazyce C++. Tento pokročilý nástroj, vyvíjený primárně na švýcarském institutu EPFL, se specializuje na dopředné i inverzní vykreslování scén, což z něj činí klíčový software pro vědecký výzkum v oblasti počítačové grafiky, počítačového vidění a strojového učení.
+Klíčovou vlastností je schopnost přizpůsobit se různým hardwarovým architekturám, dokáže dynamicky kompilovat kód jak pro rychlý běh na grafických kartách (GPU s podporou CUDA), tak pro vícejádrové procesory, a to při zachování plné podpory automatického derivování. Díky své modulární architektuře a těsné integraci s ekosystémem Pythonu umožňuje vývojářům a vědcům snadno rekonstruovat 3D vlastnosti objektů, jako jsou tvary, materiály či osvětlení, přímo z reálných fotografií.
+www.mitsuba-renderer.org, 3.8.0
+Blbinka
+Humanoidní roboti se začínají podobat lidem možná více, než bychom chtěli.

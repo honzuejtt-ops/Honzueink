@@ -1,0 +1,14 @@
+Chyba dostala označení CVE 2026–11405 a nachází se ve webové části firmwaru, přes kterou uživatel spravuje router v prohlížeči. Zařízení po vyplnění přihlašovacího formuláře nejprve zkontroluje běžné heslo správce, které si nastavil uživatel.
+Když se neshoduje, firmware zkusí ještě druhou skrytou hodnotu uloženou přímo v systému. Pokud se s ní zadané heslo shoduje, router vytvoří běžnou administrační relaci s plnými právy. Uživatelské jméno přitom systém neověřuje a potenciální útočník tedy může zadat libovolné jméno. Potřebuje pouze znát skryté heslo.
+Bez možnosti heslo změnit
+Tento způsob přihlášení není popsaný v dokumentaci ani viditelný v nastavení routeru. Změna běžného hesla správce proto problém neřeší – skrytý způsob přihlášení využívá zcela odlišnou a oddělenou hodnotu. Po získání přístupu může útočník změnit nastavení sítě či provést jakoukoli libovolnou změnu konfigurace. Může například upravit směrování provozu nebo vypnout některé ochranné funkce. Router pak může posloužit jako vstup do domácí nebo firemní sítě.
+Včetně tuzemských modelů
+Analýza zmiňuje pět verzí firmwaru pro modelové řady:
+- FH1201,
+- W15E,
+- AC10,
+- AC5,
+- AC6 V2.
+Protože výrobce od května nereagoval na zprávy bezpečnostních expertů, přesný rozsah dotčených modelů a verzí firmwaru není jistý. Některé ze zmíněných modelů byly běžně dostupné na českém trhu, některé se stále prodávají. Ty by ale měly být distribuovány s novějším firmwarem, kde se popsaný problém snad již nevyskytuje.
+Žádné vyjádření Tendy neexistuje, stejně jako případná oprava. Uživatelé tak zatím mohou pouze mírnit riziko tím, že vypnou vzdálenou správu přes internet. Pomoci může také změna výchozí adresy routeru v místní síti. Samozřejmě jde ale jen o omezenou ochranu, zkušenější útočník nebo někdo uvnitř sítě může zařízení stále najít a využít těchto zadních vrátek.
+Zdroj: Cyber Resilience Act

@@ -1,0 +1,9 @@
+Jeden z největších evropských řetězců se stal minulý týden terčem hackerů, kteří se prostřednictvím systému jednoho z dodavatelů dostali k citlivým datům. Bezpečnostní incident zasáhl zákazníky online obchodu v Německu, Belgii a Nizozemsku. Lidl začal dotčené uživatele informovat e-mailem a zveřejnil upozornění na lokálních zákaznických webech.
+Neznámí útočníci pronikli k souboru uloženému mimo hlavní systém e-shopu a část jeho obsahu následně odcizili. Napadený poskytovatel podal trestní oznámení a do vyšetřování zapojil specialisty na digitální forenzní analýzu. Lidl případ oznámil také úřadu pro ochranu osobních údajů v Nizozemsku.
+Uniklé osobní údaje
+Napadení obchodu ukazuje riziko útoků vedených přes dodavatelský řetězec – firma může sebelépe zabezpečit vlastní infrastrukturu, přesto zůstávají citlivá data dostupná jejím externím partnerům. Lidl nezveřejnil jméno napadeného poskytovatele ani podrobnosti o způsobu útoku. Odcizený soubor obsahoval oslovení, jména a příjmení, telefonní čísla, e-mailové adresy a data narození. Útočníci získali rovněž zákaznická čísla uživatelů internetového obchodu.
+Únik se naopak netýkal bankovních údajů nebo hesel a součástí uniklé databáze nebyly ani doručovací a fakturační adresy.
+Hrozí cílený phishing
+Kombinace kontaktních údajů s datem narození a zákaznickým číslem umožňuje připravit přesvědčivé podvodné zprávy v rámci phishingových útoků. Útočníci se například mohou vydávat za zákaznickou podporu a vyžadovat například doplacení nákupu. To může snadno vést k odcizení platebních údajů.
+Lidl zatím nemá konkrétní důkazy o zneužití odcizených dat, zákazníkům přesto doporučil zvýšenou opatrnost vůči e-mailům, SMS zprávám a telefonátům. Podezřelá je zejména komunikace s odkazem na přihlašovací stránku nebo požadavkem na zadání platebních údajů.
+Zdroj: BleepingComputer

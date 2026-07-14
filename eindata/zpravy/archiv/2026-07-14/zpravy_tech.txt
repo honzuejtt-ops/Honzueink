@@ -1,3 +1,44 @@
+|T|Temelín a Dukovany jsou trpaslíci. Toto je 10 nejvýkonnějších jaderných elektráren světa|D|14.7. 13:43|P|Největší jaderná elektrárna světa dosahuje výkonu přes 8000 MW • Temelín a Dukovany mají dohromady výrazně nižší výkon než světoví rekordmani • Největ...|X|Největší jaderná elektrárna světa dosahuje výkonu přes 8000 MW • Temelín a Dukovany mají dohromady výrazně nižší výkon než světoví rekordmani • Největší jaderné elektrárny najdeme převážně v Asii
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Nové evropské clo odradí dvě třetiny zákazníků. Tržiště jako Temu, Aliexpress nebo Shein však mají náhradu|D|14.7. 12:46|P|Nové evropské clo na levné zásilky z Číny může výrazně změnit nákupní chování Čechů – podle průzkumu Heureky plánují téměř dvě třetiny zákazníků omezi...|X|Evropské clo na zásilky nízké hodnoty ze zemí mimo EU má odradit podstatnou část Čechů, kteří nakupují na asijských tržištích. Alespoň tak to uvádějí v průzkumu srovnávače Heureka. Podle něj kvůli novému poplatku plánuje omezit nákupy na platformách jako Temu, AliExpress či Shein téměř 65 % českých zákazníků.
+Cla odradí až dvě třetiny občanů
+Skoro 35 % lidí totiž uvedlo, že nákupy kvůli clu omezí velmi pravděpodobně, zbytek „docela pravděpodobně“. Mají tak reagovat na paušální clo ve výši 3 eur (necelých 75 Kč) za každou odlišnou položku v balíčku. Opatření záměrně cílí na levné zboží proudící do Evropy z čínských platforem typu Temu, Shein nebo AliExpress. Je dočasné, stalo se relativně rychlým unijním řešením záplavy zboží a nejpozději od listopadu se k němu má přidat ještě manipulační poplatek.
+„Fixní poplatek ve výši 3 eur, který u levných položek může tvořit významné procento ceny, funguje jako silný psychologický i ekonomický blok. Bude velmi zajímavé sledovat, zda asijské platformy v reakci na toto clo změní svou logistickou strategii v Evropě,“ komentuje podle serveru Lupa.cz výsledky průzkumu David Chmelař, šéf společnosti Heureka Group.
+To se už mělo stát – na skutečnost, že existuje možnost, aby asijská internetová tržiště zásilky rozesílala z evropských skladů a tak se těmto poplatkům vyhnula, upozorňovali odborníci z trhu už při předchozích diskusích nad cly. Pro Lupu to zmínila i Monika Brichtová z Allegra, které funguje také jako tržiště, ale z Polska. Podle Seznam Zpráv už asijští obchodníci z evropských skladů rozesílají. Svědčí o tom i podoba e-shopového košíku, například Temu při objednání slibuje dodání do Česka během dvou dnů.
+Podle průzkumu Heureky je oblíbené hlavně Temu, kde nakoupilo v posledním roce skoro 40 % lidí, další na tržištích AliExpress (21 %) a Shein (10,5 %). Zákazníky motivuje hlavně extrémně nízká cena, nejčastěji nakupují domácí potřeby a doplňky, případně hobby předměty. Víc než polovina lidí přitom podle průzkumu nakupuje „jednou za pár měsíců“, třetina však několikrát do měsíce.
+zdroj: Lupa.cz|E|
+|T|Kdo na vaší adrese poskytuje internet a jakou rychlostí? Mrkněte na tuhle mapku|D|14.7. 12:45|P|Moc se o tom nemluví, ale Český telekomunikační úřad provozuje vizualizační portál, na kterém můžete zkontrolovat dostupnost všech regulovaných teleko...|X|Moc se o tom nemluví, ale Český telekomunikační úřad provozuje vizualizační portál, na kterém můžete zkontrolovat dostupnost všech regulovaných telekomunikačních sítí na libovolné adrese.
+
+Je to tedy mapa, kde si vyhledáte konkrétní místo, a uvidíte, jaké tam jsou dostupné mobilní služby, pozemní ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Týká se to i vás? Routery Tenda mají ve firmwaru univerzální heslo pro přístup do administrace|D|14.7. 12:06|P|Firmware několika routerů Tenda obsahuje skrytý způsob přihlášení do administrace, díky kterému může útočník obejít běžné heslo správce a získat plný ...|X|Chyba dostala označení CVE 2026–11405 a nachází se ve webové části firmwaru, přes kterou uživatel spravuje router v prohlížeči. Zařízení po vyplnění přihlašovacího formuláře nejprve zkontroluje běžné heslo správce, které si nastavil uživatel.
+Když se neshoduje, firmware zkusí ještě druhou skrytou hodnotu uloženou přímo v systému. Pokud se s ní zadané heslo shoduje, router vytvoří běžnou administrační relaci s plnými právy. Uživatelské jméno přitom systém neověřuje a potenciální útočník tedy může zadat libovolné jméno. Potřebuje pouze znát skryté heslo.
+Bez možnosti heslo změnit
+Tento způsob přihlášení není popsaný v dokumentaci ani viditelný v nastavení routeru. Změna běžného hesla správce proto problém neřeší – skrytý způsob přihlášení využívá zcela odlišnou a oddělenou hodnotu. Po získání přístupu může útočník změnit nastavení sítě či provést jakoukoli libovolnou změnu konfigurace. Může například upravit směrování provozu nebo vypnout některé ochranné funkce. Router pak může posloužit jako vstup do domácí nebo firemní sítě.
+Včetně tuzemských modelů
+Analýza zmiňuje pět verzí firmwaru pro modelové řady:
+- FH1201,
+- W15E,
+- AC10,
+- AC5,
+- AC6 V2.
+Protože výrobce od května nereagoval na zprávy bezpečnostních expertů, přesný rozsah dotčených modelů a verzí firmwaru není jistý. Některé ze zmíněných modelů byly běžně dostupné na českém trhu, některé se stále prodávají. Ty by ale měly být distribuovány s novějším firmwarem, kde se popsaný problém snad již nevyskytuje.
+Žádné vyjádření Tendy neexistuje, stejně jako případná oprava. Uživatelé tak zatím mohou pouze mírnit riziko tím, že vypnou vzdálenou správu přes internet. Pomoci může také změna výchozí adresy routeru v místní síti. Samozřejmě jde ale jen o omezenou ochranu, zkušenější útočník nebo někdo uvnitř sítě může zařízení stále najít a využít těchto zadních vrátek.
+Zdroj: Cyber Resilience Act|E|
+|T|Hackeři ukradli data zákazníků Lidlu: únik se týká jmen i dat narození|D|14.7. 12:01|P|Útočníci se dostali k citlivým údajům, jako jsou jména, data narození nebo telefonní čísla. Data neunikla přímo z databáze Lidlu, nýbrž jednoho z exte...|X|Jeden z největších evropských řetězců se stal minulý týden terčem hackerů, kteří se prostřednictvím systému jednoho z dodavatelů dostali k citlivým datům. Bezpečnostní incident zasáhl zákazníky online obchodu v Německu, Belgii a Nizozemsku. Lidl začal dotčené uživatele informovat e-mailem a zveřejnil upozornění na lokálních zákaznických webech.
+Neznámí útočníci pronikli k souboru uloženému mimo hlavní systém e-shopu a část jeho obsahu následně odcizili. Napadený poskytovatel podal trestní oznámení a do vyšetřování zapojil specialisty na digitální forenzní analýzu. Lidl případ oznámil také úřadu pro ochranu osobních údajů v Nizozemsku.
+Uniklé osobní údaje
+Napadení obchodu ukazuje riziko útoků vedených přes dodavatelský řetězec – firma může sebelépe zabezpečit vlastní infrastrukturu, přesto zůstávají citlivá data dostupná jejím externím partnerům. Lidl nezveřejnil jméno napadeného poskytovatele ani podrobnosti o způsobu útoku. Odcizený soubor obsahoval oslovení, jména a příjmení, telefonní čísla, e-mailové adresy a data narození. Útočníci získali rovněž zákaznická čísla uživatelů internetového obchodu.
+Únik se naopak netýkal bankovních údajů nebo hesel a součástí uniklé databáze nebyly ani doručovací a fakturační adresy.
+Hrozí cílený phishing
+Kombinace kontaktních údajů s datem narození a zákaznickým číslem umožňuje připravit přesvědčivé podvodné zprávy v rámci phishingových útoků. Útočníci se například mohou vydávat za zákaznickou podporu a vyžadovat například doplacení nákupu. To může snadno vést k odcizení platebních údajů.
+Lidl zatím nemá konkrétní důkazy o zneužití odcizených dat, zákazníkům přesto doporučil zvýšenou opatrnost vůči e-mailům, SMS zprávám a telefonátům. Podezřelá je zejména komunikace s odkazem na přihlašovací stránku nebo požadavkem na zadání platebních údajů.
+Zdroj: BleepingComputer|E|
+|T|Náročné souboje bez druhé šance. Vyzkoušejte české RPG ve stylu tahových retro klasik|D|14.7. 11:45|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Xiaomi má další auto. Luxusní obývák na kolech má baterii, žere benzín, za příplatek můžete mít projektor a stan|D|14.7. 10:45|P|Jen málokomu se vstup mezi výrobce automobilů podařil tak rychle a dobře jako Xiaomi. První první elektromobil SU7 šel do prodeje na jaře 2024, překon...|X|Jen málokomu se vstup mezi výrobce automobilů podařil tak rychle a dobře jako Xiaomi. První první elektromobil SU7 šel do prodeje na jaře 2024, překonal řadu rychlostních rekordů a podle dostupných informací je úspěšný i prodejně. V roce 2025 se přidalo sportovní SUV YU7 a v obou případech šlo o ...
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|

@@ -1,0 +1,8 @@
+První kvantový počítač v Česku najel do ostrého provozu. Instalovat se začal začátkem loňského roku a nyní je k dispozici zájemcům z České republiky a Evropy. Jde o stroj VLQ umístěný v národním superpočítačovém centru IT4Innovations při VŠB-TUO v Ostravě.
+Vlk má 24 supravodivých kvantových bitů (qubitů). Dodavatelem je finská společnost IQM, která nedávno vstoupila na burzu NASDAQ a která patří mezi nejúspěšnější výrobce na světě.
+Stroj byl do Ostravy pořízen v rámci evropského konsorcia LUMI-Q. Vyšel na 125 milionů korun (plus 50 milionů na provoz). Část poskytla Evropská komise skrze EuroHPC a zbytek Česko s dalšími evropskými státy.
+Výpočetní výkon Vlka se tak bude dělit mezi financující země. Výzkumné organizace z Česka mohou požádat o přístup skrze veřejné grantové výzvy IT4Innovations. U Vlka je k dispozici 2 177 000 QPU sekund. Uživatelé z konsorcia LUMI-Q mohou žádat přes výzvy partnerů a další zájemci skrze výzvy EuroHPC.
+Skze veřejné granty už získalo přístup 16 projektů. Jde hlavně o výzkum materiálů a informatiku. Týká se to Akademie věd ČR, VŠB – Technické univerzity Ostrava, Univerzity Karlovy a Vysokého učení technického v Brně.
+“VLQ umožní výzkumníkům, firmám i dalším uživatelům testovat kvantové algoritmy na reálném kvantovém hardwaru, vyvíjet a ladit hybridní kvantově-klasické výpočty, připravovat aplikace a know-how pro budoucí využití kvantových technologií,” uvedla IT4Innovations.
+Český kvantový stroj také pomůže v mezinárodním interdisciplinárním centru CLARA, kde pomůže s vývojem testbetu pro výzkum neurodegenerativních onemocnění, zejména Alzheimerovy choroby.
+Jak vypadá kvantový počítač VLQ:

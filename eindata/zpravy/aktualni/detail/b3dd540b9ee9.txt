@@ -1,0 +1,8 @@
+Článek
+Testy prováděl v dubnu letecký výrobce Gulfstream se strojem G800 poháněným motory Rolls-Royce Pearl 700. Při letech ve výši až padesát tisíc stop (15 tisíc metrů) byla použita tři různá paliva: klasický letecký petrolej Jet A, nízkosirnatý Jet A a syntetické palivo HEFA, jehož součástí nejsou aromatické uhlovodíky ani sloučeniny síry.
+Právě tyto složky stojí za vznikem kondenzačních stop, kdy se tvoří jádra, na která se za určitých podmínek nabalují krystalky ledu, takže letadlo za sebou zanechává bílé čáry. Spaliny obsahují kromě oxidu uhličitého také vodní páru. Krystalky ledu vznikají okolo malých částic uhlíku z nespáleného paliva.
+Kondenzační čáry přispívají ke skleníkovému efektu, protože zachycují ze země vyzařované teplo. Jejich dopad je ještě větší než u emisí CO₂.
+Nejvíce stop se tvořilo ve výškách 32 až 42 tisíc stop, tedy v letových hladinách používaných leteckými dopravci. Plyne to z předběžných výsledků testů, o nichž informoval server Aviation Week.
+Ve výši 51 tisíc stop byly stopy méně výrazné, neboť tam je atmosféra chladnější a sušší. Omezit kondenzační stopy tedy lze i změnou letové hladiny.
+„Naše týmy pokračují v analýze získaných dat. Zjištění pomohou zpřesnit analytické modely, poskytnou podklady pro budoucí standardy paliv a podpoří rozvoj provozních přístupů snižujících dopady letectví na životní prostředí,“ uvedla firma.
+Už v roce 2021 se testoval dopad použití syntetického paliva HEFA u letounu Airbus A350-900 poháněného motory Rolls-Royce XWB-84 v letové výšce 35 tisíc stop, čili deset kilometrů. Tehdy se u zmíněného paliva v porovnání s klasickým petrolejem Jet A-1 zmenšily kondenzační stopy o 56 procent.

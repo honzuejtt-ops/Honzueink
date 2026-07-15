@@ -1,0 +1,6 @@
+Národní úřad pro kybernetickou a informační bezpečnost (NÚKIB) se chystá vydat upozornění vůči další čínské technologii a společnosti, která jí vyvíjí a provozuje.
+Jde o firmu Beijing Kingsoft Office Software známou také jako Kingsoft Office. Ta vydává kancelářský balík známý jako WPS Office, jedná se o alternativu k Microsoft Office, Google Docs nebo LibreOffice. Dostupný je pro řadu platforem včetně Windows, macOS, Androidu, iOS nebo Huawei HarmonyOS.
+Používáním WPS Office se uživatelé mají vystavovat riziku vycházejícím z právního a politického prostředí Čínské lidové republiky (ČLR), kterému je společnost Kingsoft Office podřízena.
+Podobné obavy má NÚKIB i jinde, například u Huawei nebo TikToku. Čína například zákonem po svých občanech a firmách vyžaduje, aby se podíleli na špionáži. Existuje riziko a podezření, že čínské technologie mohou sloužit k předávání dat a podobně.
+Podle NÚKIBu není zdrojový kód WPS Office veřejně dostupný a není možné ho podrobit nezávislým auditům. Není tak možné zjistit, co aplikace přesně dělá, jak nakládá s dokumenty, daty a tak dále.
+Kingsoft Office funguje od roku 1998. Kancelářský balík obsahuje textový a tabulkový editor, alternativu k PowerPointu, nástroj pro práci s PDF a další nástroje. Firma také integruje nové AI funkce. Aplikace jsou k dispozici za předplatné.

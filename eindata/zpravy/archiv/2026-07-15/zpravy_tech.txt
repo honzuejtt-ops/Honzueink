@@ -1,3 +1,54 @@
+|T|Sériová sběrnice osmibitových počítačů Atari SIO: předchůdce USB|D|15.7. 22:00|P|Některé prvky počítačů Atari jsou navrženy s ohledem na co největší efektivitu, bez ohledu na možnosti dalšího rozšiřování. Ovšem subsystém SIO je vel...|X|Osmibitové počítače Atari: herní stroje nebo plnohodnotné domácí mikropočítače
+Co se dozvíte v článku
+- Osmibitové počítače Atari: herní stroje nebo plnohodnotné domácí mikropočítače
+- Revoluce v IT: vznik konceptu domácích počítačů
+- Trnitá cesta k návrhu SIO
+- Krátká odbočka: koncept externích sběrnic a portů v informatice
+- Externí sběrnice vs. port
+- Sériový vs. paralelní přenos dat
+- Jednosměrná vs. obousměrná komunikace
+- Způsob řízení sběrnice
+- SIO na osmibitových Atari z pohledu „teorie“ sběrnic a portů
+- Konektor sériové sběrnice SIO
+- Přenosový protokol: asynchronní režim
+- Volba přenosové rychlosti
+- Přenosový protokol: vyšší úroveň
+- ID zařízení
+- Posílané příkazy
+- Řídicí a stavové registry čipu POKEY používané pro sériovou komunikaci
+- Stav sériového portu
+- Nastavení režimu sériového portu
+- Repositář s demonstračními příklady
+- Odkazy na Internetu
+O domácích osmibitových mikropočítačích Atari se většinou v současnosti mluví jako o počítačích určených především pro provoz her. Ve skutečnosti tomu však bylo poněkud jinak. Firma Atari po úspěšném uvedení herní konzole Atari 2600 reálně uvažovala o vývoji modernější herní konzole (konkrétně u Atari 2600 se plánovalo, že na trhu „vydrží“ pouhé tři roky, nakonec to však bylo neuvěřitelných patnáct let, což je na tak primitivní zařízení až neuvěřitelné).
+V rámci vývoje nové herní konzole byly vyvinuty čipy CTIA (později upraveno na GTIA) a POKEY, které nahradily původní čip TIA (realizoval pohyblivé grafické objekty + zvuky). Jako mikroprocesor měla být použita plnohodnotná verze MOS 6502 a nikoli ořezaná varianta MOS 6507.
+Nová herní konzole, která byla interně pojmenována „Candy“, neměla mít (logicky) plnohodnotnou klávesnici; pouze několik tlačítek (z nich se posléze vyvinuly Start, Select a Option) a možnost připojení ovladačů, tedy primárně joysticků a taktéž paddle popř. světelného pera. A grafický subsystém měl být optimalizován na tehdejší herní žánry – tedy orientace na pohyblivé objekty, scrolling, s menší prioritou textových režimů.
+Revoluce v IT: vznik konceptu domácích počítačů
+Jenže v průběhu návrhu nové herní konzole „Candy“ došlo k velké revoluci v oblasti IT – v roce 1977 totiž doba „uzrála“ a vznikl zcela nový segment domácích počítačů. V první generaci těchto strojů, které zcela změnily náhled na IT (už žádné sterilní klimatizované sály a obrovské tajemné bedny opečovávané muži v oblecích), najdeme TRS-80, Commodore PET a Apple II (nazývané společně „trinity“).
+Na vznik zcela nového segmentu trhu společnost Atari zareagovala tím, že nad původním designem herní konzole navrhla vlastní architekturu domácích mikropočítačů. Změn, které musely být provedeny, bylo více – přidání textového a grafického režimu s vysokým horizontálním rozlišením (320 pixelů, tedy 40 znaků na řádku), přidání klávesnice, což si vyžádalo úpravu čipu POKEY, přidání dalších 8kB ROM s interpretrem programovacího jazyka Atari BASIC a rozšíření ROM s operačním systémem, který se tak stal plnohodnotným operačním systémem s podporou konfigurovatelných zařízení apod. Speciální „konzolová“ tlačítka však zůstala, čímž se Atari odlišuje od prakticky všech ostatních dobových počítačů).
+Trnitá cesta k návrhu SIO
+Navíc v době návrhu osmibitových mikropočítačů Atari začala být zaváděna poměrně striktní pravidla FCC (Federal Communications Commission), která určovala maximální úroveň rušení (tedy vlastně vysílání) televizního signálu (resp. signálu ve stejných frekvenčních pásmech, jaké měly televizory v USA). Tato pravidla platila pro všechna zařízení s vysokofrekvenčním modulátorem a tedy i pro nově vznikající počítače Atari (naproti tomu Apple II měl přesně z tohoto důvodu modulátor externí a tudíž tato pravidla dokázal obejít). Jak odstínit rušivé vysílání je problém se známým řešením – použít Faradayovu klec. To ovšem znamená nutnost uzavření celého plošného spoje do plechové „krabice“ s co nejmenšími otvory (což není zcela přesné tvrzení, protože je to závislé na vlnové délce, o čemž se ostatně můžeme přesvědčit pohledem na každou mikrovlnku).
+Kvůli tomuto omezení vlastně vznikl koncept SIO (Serial Input/Output), tedy sériového portu s jen minimem vodičů, které bylo možné snadno (a bez porušení normy FCC) vyvést mimo Faradayovu klec. Díky SIO bylo možné počítač rozšiřovat o další zařízení, a to bez nutnosti využití konceptu zásuvných karet (ten byl použit u Apple II a později i u IBM PC, ovšem známe ho i z IQ-151 apod.).
+Krátká odbočka: koncept externích sběrnic a portů v informatice
+V minulosti bylo navrženo i implementováno poměrně mnoho technologií umožňujících komunikaci mezi počítačem na jedné straně a externími zařízeními na straně druhé. Některé technologie byly proprietární a objevily se například jen na jednom typu počítače, další technologie byly standardizovány a dočkaly se celosvětového rozšíření. Všechny technologie, které slouží pro připojení externích zařízení k počítačům, je možné rozdělit na základě několika vlastností, jež budou popsány v následujícím textu:
+- Externí sběrnice vs. port
+- Sériový vs. paralelní přenos dat
+- Jednosměrná vs. obousměrná komunikace
+- Způsob řízení sběrnice (u portu není vlastně co řídit)
+Externí sběrnice vs. port
+V praxi je od sebe většinou nutné odlišit sběrnice a porty. Mezi základní vlastnosti sběrnic patří fakt, že umožňují s počítačem propojit několik zařízení, přičemž řízení sběrnice (takzvanou arbitráž) obstarává buď jedno předem zvolené zařízení (používalo se pro ně označení master, a vzhledem k tomu, že je tento článek o historických počítačích, použiji historické jméno) nebo zařízení libovolné (master-select). Fyzická topologie externí sběrnice může být založena například na hvězdě/stromu (USB, ta má mimochodem pouze centrální řízení) nebo mohou být všechna zařízení připojena na společné vodiče (což je případ dnes popisované sběrnice SIO nebo například I2C).
+Naproti tomu port slouží pro připojení pouze jednoho zařízení, které jednosměrně či obousměrně komunikuje s počítačem resp. s čipem, který v počítači ke komunikaci slouží. Typickým zástupcem portů, se kterým se ještě i dnes můžeme u některých počítačů setkat, je sériový port RS-232 (označován jako COM) a port paralelní (na osobních počítačích bývá resp. spíše býval označen jako LPT). I původní způsob připojení klávesnice u počítačů IBM PC přes konektor DIN i modernější (technicky však hůře navržený) konektor PS/2 je ve své podstatě založen na jednoúčelovém sériovém obousměrném portu.
+Sériový vs. paralelní přenos dat
+U externích sběrnic i portů se také rozlišuje, zda jsou data přenášena sériově či paralelně. Při sériovém přenosu dat jsou jednotlivé byty či delší bloky rozděleny na sekvence bitů, které jsou postupně přeneseny sériovým způsobem, tj. bit po bitu (pro přenos dat tímto způsobem teoreticky postačují pouze dva vodiče, popř. jeden vodič a společná zem). Naproti tomu u paralelního přenosu je použito větší množství vodičů pro přenos dat, další vodiče jsou použity k řídicím účelům. Například u výše zmíněného paralelního portu (LPT) se přenos provádí po celých bytech, tj. tento port obsahuje osm datových vodičů, které jsou doplněny o vodiče řídicí a signální.
+Nejvíce datových vodičů bylo možné možné najít v některých verzích externího rozhraní SCSI, dnes se ovšem toto rozhraní pro připojení externích zařízení již příliš nepoužívá, protože je postupně nahrazováno sběrnicí USB či rozhraním FireWire (SCSI má i svoji interní podobu). Do nákladů, které je nutné vynaložit na implementaci externí sběrnice či portu, je nutné započítat cenu konektorů i vlastních vodičů, mechanickou odolnost atd. a proto je v této oblasti patrný příklon k sériovému způsobu přenosu dat – zmenšuje se počet vodičů (levnější kabely) a i konektory mohou být jednodušší a levnější.
+Jednosměrná vs. obousměrná komunikace
+Některé porty (u sběrnic se s touto vlastností v naprosté většině případů nesetkáme) také slouží pouze pro jednosměrný přenos dat. Například již dvakrát zmíněný původní paralelní port LPT byl původně určen pouze pro jednosměrný přenos dat z počítače do tiskárny. Zpět se přenášely po speciálních vodičích pouze stavové informace typu „tiskárna připravena“ či „došel papír“. Teprve pozdější rozšíření paralelního portu (technologie ECP a další) umožnily obousměrný přenos dat a posléze i přenos vyšší rychlostí, čehož bylo možné využít v programu LapLink, Norton Commander apod. pro propojení dvou počítačů v dobách před masivním rozšířením Ethernetu.
+Prakticky všechna moderní zařízení vyžadují obousměrnou komunikaci, proto i externí sběrnice a porty bývají koncipovány pro přenos dat v obou směrech. I klávesnice, která je z hlediska operačního systému považována za typické vstupní (jednosměrné) zařízení, ve skutečnosti vyžaduje alespoň minimální obousměrnou komunikaci – počítač například může měnit rychlost automatického opakování stlačené klávesy, nebo je možné programově blikat světelnými diodami na klávesnici.
+Způsob řízení sběrnice
+Důležité je taktéž rozlišit způsob řízení sběrnice. V podstatě jsou možné dva způsoby řízení: řízení centrální, přičemž oním centrálním uzlem nejčastěji bývá počítač (přesněji řečeno řadič externí sběrnice umístěný v počítači, což je v případě Atari čip POKEY a PIA s dopomocí operačního systému) a řízení decentralizované, při kterém se jakékoli zařízení připojené na sběrnici může stát masterem, který provoz na sběrnici řídí.
+U externích sběrnic se většinou můžeme setkat s centrálním řízením. Centrální řízení bývá v tomto případě vhodnější, protože externí zařízení nebývají konstruována tak, aby mohla komunikovat přímo sama mezi sebou, tudíž jsou všechny komunikace směrovány na centrální uzel představovaný počítačem. Naproti tomu je u některých počítačových architektur možné, aby interní zařízení spolu komunikovala přímo bez nutnosti jakýchkoli zásahů ze strany mikroprocesoru (to se však již pohybujeme ve zcela jiných cenových hladinách, než by bylo pro domácí osmibitové počítače vhodné).
+Centrální řízení se také jednodušeji implementuje, protože není n...
+(Pokracovani na webu)|E|
 |T|Škoda u bezdrátového nabíjení přešla na Qi2 s magnety. Řeší i nepříjemnost s přehříváním telefonů|D|15.7. 18:15|P||X|
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|

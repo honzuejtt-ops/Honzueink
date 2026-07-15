@@ -1,0 +1,16 @@
+Článek
+Útok FP-5 Flamingo, vybavené naváděcím systémem firmy Safran, zničil velkou část ruského závodu Titan-Barrikady ve Volgogradské oblasti, asi 400 kilometrů od ukrajinských hranic.
+„Jde o strategicky důležitý podnik v rámci ruského obranněprůmyslového komplexu, součást státní korporace Roskosmos, která vyrábí mimo jiné odpalovací zařízení pro ruské strategické raketové systémy,“ připomněl list Le Monde.
+Podotkl zároveň, že ukrajinské rakety Flamingo na začátku června zasáhly také ruskou firmu VNIIR-Progress v Čeboksarech v Čuvašsku, který vyrábí přijímače a antény pro navigační systém GLONASS pro ruskou armádu.
+Flamingo je ukrajinská „dlouhá paže“, zbraň navržená přímo pro údery hluboko v ruském týlu. Navigační systém střely využívá umělou inteligenci a takzvané noční mapování terénu v malých výškách.
+Právě nízký let nad krajinou je jedním z důvodů, proč střela může část trasy absolvovat bez viditelné reakce protivzdušné obrany. Radar hledající cíle ve výšce ji jednoduše nemusí zachytit včas, nebo vůbec.
+Kromě francouzského naváděcího systému mají střely FP-5 ve vybavení také systém ArduPilot, softwarový program, který dokáže ovládat multirotorové drony. Umožňuje automatické řízení letu, plánování trasy, udržování směru letu, interakci se senzory a řízení mise.
+Francouzská firma Safran se podle listu Le Monde společně s ukrajinskou společností Fire Point podílí na vývoji „několika dalších produktů“. Prostřednictvím své dceřiné společnosti Preligens dodává ukrajinským operačním jednotkám zařízení pro určování polohy, elektrooptické systémy, protidronové systémy a řešení pro podporu analýzy zpravodajských informací.
+V dubnu francouzské společnosti Turgis Gaillard a Renault oznámily, že pro francouzskou armádu budou vyvíjet střelu podobnou ukrajinskému flamingu.
+FP-5 Flamingo
+Ukrajinská řízená střela s plochou dráhou letu je dlouhá zhruba 12 metrů a má celkovou hmotnost téměř šest tun.
+Hlavice FP-5 Flamingo obvykle váží asi 1150 kilogramů.
+Rychost střely je přibližně 700 kilometrů za hodinu s možností zrychlit až na 950 kilometrů za hodinu. Deklarovaný dolet činí až 3000 kilometrů.
+Raketa může zůstat ve vzduchu téměř čtyři hodiny.
+Pro odpal se používá posilovač na tuhá paliva, který se oddělí několik vteřin po vzletu.
+Rané verze střel Flamingo používaly jako pohonnou jednotku motor z českého cvičného letounu L-39 Albatros.

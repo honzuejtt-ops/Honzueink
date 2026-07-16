@@ -1,0 +1,13 @@
+Článek
+Podle platformy OpenRouter, která sleduje objem textu a kódu zpracovaného velkými jazykovými modely, letos čínské systémy od firem DeepSeek nebo Z.ai v míře využití americké konkurenty předstihly.
+Hlavním důvodem jsou náklady – firmám rychle rostou účty za umělou inteligenci a začínají se ptát, zda pro každou úlohu potřebují ten nejvýkonnější model.
+„Firmy si začínají uvědomovat, že nepotřebují vždy nejlepší model. Mohou použít rychlejší a levnější,“ řekl britskému listu Financial Times Eugene Cheah, spoluzakladatel firmy Featherless AI. Ta zajišťuje přístup k otevřeným modelům a v posledních měsících hlásí prudký růst zájmu, hlavně z Evropy.
+Příkladem je rozvážková služba DoorDash. Méně náročnou práci začala zadávat čínskému modelu Kimi K2.6, dražší americký model si nechává jen na nejtěžší úkoly. Tato kombinace je podle spoluzakladatele Andyho Fanga výkonnější i levnější než dřívější řešení postavené jen na amerických nástrojích.
+Směs nástrojů používá i německý Siemens – vedle amerických modelů nasazuje čínský DeepSeek, Z.ai i francouzský Mistral, aby měl při výběru co největší volnost. Sanfranciský startup Lindy zašel dál a přešel od Anthropicu úplně na DeepSeek.
+„Ušetřilo nám to miliony dolarů a v řadě klíčových úloh zároveň zlepšilo výkon,“ uvedl zakladatel Flo Crivello.
+Nejlepší otevřené modely, které si firmy mohou volně stáhnout a provozovat samy, přitom podle šéfa společnosti Together AI Vipula Veda Prakashe vycházejí desetkrát až šedesátkrát levněji než uzavřené americké systémy.
+Výhody čínských systémů
+Přechod urychluje i cenová politika amerických firem. OpenAI a Anthropic začaly některé služby účtovat podle skutečného využití místo pevného předplatného, což u velkých objemů dat znamená prudký růst nákladů. Čínské modely navíc rychle dohánějí rozdíl ve výkonu, hlavně v programování.
+V Evropě byl zlomem dočasný americký zákaz vývozu modelů Mythos a Fable od Anthropicu. Sice byl později zrušen, důvěru ale poškodil. „Model můžete vrátit na trh, ale džina už do lahve nevrátíte,“ řekl Ben Grinnell z britské poradenské firmy Newton.
+Výhodou čínských systémů je, že je firmy mohou provozovat na vlastních serverech a nemusí posílat citlivá data provozovateli. Někteří investoři proto evropským startupům radí, ať nespoléhají jen na americké dodavatele. Německý Timebutler ze stejného důvodu přesunul část úloh z modelu Claude na Qwen od Alibaby.
+Zatímco se ještě nedávno evropské firmy bály hlavně technologické závislosti na Číně, dnes stejně vnímají i USA. „Před dvěma lety byla hlavní obavou Čína. Teď je v Evropě větší obavou Amerika. To je ohromující,“ shrnul investor Per Roman ze společnosti Bullhound Capital.

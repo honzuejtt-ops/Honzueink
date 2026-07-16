@@ -1,0 +1,10 @@
+Mapy.com přidávají do mobilní aplikace funkci PRO plánovač, který umožňuje změnit vypočítanou trasu kreslením přímo do mapy. Prstem lze naznačit požadovanou trasu a aplikace cestu automaticky přepočítá. Funkce patří do předplatného Premium, nicméně po přihlášení ji lze bez placení vyzkoušet během pěti plánovacích relací.
+Trasa kreslením
+PRO plánovač se zpřístupní až po zadání výchozího místa a cíle, nelze tedy začít kreslit od začátku. Následně lze zvolit kreslení a prstem vyznačit oblast, kterou má cesta nově vést. Po dokončení tahu aplikace upraví odpovídající část trasy. Stejným způsobem lze pokračovat i na dalších úsecích.
+Důležité je, že funkce nevytváří nové průjezdní body – pouze upřesňuje průběh mezi již zadanými místy. Při přepočtu ale aplikace nadále respektuje existující body a nevhodně umístěný bod proto může způsobit kličkování nebo návrat trasy.
+Ruční úpravy fungují při cestě autem, pěšky a na kole a dostupné jsou také pro lyžařské a běžkařské trasy. U veřejné dopravy a vodních cest lze využívat historii změn v režimu PRO plánovač, samotné kreslení však k dispozici není.
+Historie úprav
+Součástí nového režimu jsou tlačítka pro vrácení a obnovení změn. Historie zachytí přesunutí bodu i změnu jeho pořadí a uloží také případnou změnu směru či přetažení trasy.
+PRO plánovač rozšiřuje nabídku placených funkcí Mapy.com, která zahrnuje pokročilejší plánování a práci s uloženým obsahem. Bez předplatného je k dispozici pět zkušebních relací, v každé lze plánovač používat bez dalšího omezení. Upravenou trasu lze uložit, sdílet a spustit v navigaci. Zakreslený průběh zůstane zachovaný, nicméně na webu se trasa zobrazí v běžném režimu, protože tam zatím PRO plánovač nedorazil.
+Po krátkém testování mi nové změny trasy přijdou jako nejpohodlnější způsob pro rychlé změny trasy přímo v terénu. Běžně je pro zpřesňování potřeba využít průjezdní body, jejichž umístění trvá výrazně déle – rychlejší je to s POI, výběr bodu z mapy je ale pomalejší než nové nakreslení trasy. Kreslení lze libovolněkrát zopakovat a dobrat se tak opravdu k trase, kterou požadujete.
+Zdroj: Mapy.com

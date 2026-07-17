@@ -1,4 +1,125 @@
-|T|Kouř z kanadských požárů dusí americká města|D|17.7. 15:48|P|Kouř z rozsáhlých kanadských lesních požárů se rychle šíří napříč Severní Amerikou a výrazně zhoršuje kvalitu ovzduší. Města u Velkých jezer mají aktu...|X|Článek
+|T|Ruská kolona padla u ukrajinské Malynivky do pasti. Následoval naprostý debakl|D|17.7. 17:19|P|Ukrajinské drony zničily více než 50 ruských vojenských vozidel poblíž Malynivky v Doněcké oblasti. Jde o jeden z největších útoků na ruskou logistiku...|X|Článek
+Ačkoliv se zdálo, že se ruští velitelé již poučili a přestali ve frontové zóně shromažďovat obrněná a další vojenská vozidla do velkých kolon, u Malynivky, důležité ruské bašty, počátkem července znovu neodolali.
+U obce nedaleko Kosťantynivky a Torecku v Doněcké oblasti ruská skupina Centr shromáždila nejméně 50 vozidel asi 12 kilometrů od tzv. šedé zóny kolem frontové linie.
+Výsledek byl podle portálu Euromaidan Press pro Rusy katastrofální. Drony ukrajinské skupiny Ivan Franko, která působí jako součást ukrajinské tajné služby SBU, kolonu detekovaly a zaútočily.
+Obraz zkázy
+Když se prach a kouř rozplynuly, na silnici a kolem ní se objevil obraz zkázy v podobě více než 50 ohořelých a zničených vozidel, od motocyklů přes osobní auta a SUV až po nákladní auta.
+Skupina Ivan Franko se poté na sociálních sítích objevila s ironickým vzkazem: „Navzdory zákazu pohybu nákladních a vojenských vozidel po obchvatu Doněcku jsme s pomocí dronů zastavili několik narušitelů.“
+Podle portálu není známo, kolik ruských vojáků bylo zabito nebo zraněno, ale ruská skupina rozhodně nedosáhla svého cíle. Tím byla nejspíš přeprava pěchoty blíže k frontové linii, aby se vojáci vyhnuli dlouhému pochodu pěšky.
+Není však vyloučeno, že plán byl, aby vozidla překročila tzv. šedou zónu přímo, ačkoli takové útoky jsou dnes extrémně vzácné a kvůli velkému počtu ukrajinských dronů téměř vždy končí neúspěchem.
+Ukrajina v posledních měsících intenzivně útočí na ruské zásobovací trasy ve vzdálenosti běžně až 200 kilometrů za frontou. Cílem jsou nákladní automobily, železnice, mosty, ale i nákladní lodě přepravující vojenskou techniku přes Azovské a Černé moře.
+Ruská ochrana nefunguje
+Ruské síly se snaží vozidla chránit kovovými klecemi před drony, protiletadlovými jednotkami vyzbrojenými kulomety a používáním vedlejších silnic, ale podle Euromaidan Pressu ani to nepřináší výrazné výsledky.
+Ukrajina také zvyšuje počet bezpilotních letounů, včetně dronů s umělou inteligencí a FPV kvadrokoptér s delším doletem.
+Analytik Clément Molin podle portálu vypočítal, že v červnu bylo potvrzeno zničení nebo poškození přibližně 600 ruských nákladních vozidel a dalších 240 bylo zasaženo jen v prvním červencovém týdnu.|E||T|Baterie na bakterie: Elektřinu si jednou možná budeme sklízet na zahradě|D|17.7. 17:17|P|Jako velké houby vypadají tzv. půdní mikrobiální palivové články, které vyvinuli vědci z Univerzity v Bathu. Jde o baterie, které mohou v půdě bez údr...|X|Článek
+Technologie, kterou vyvinul startup Bactery, založený vědci z britské univerzity, využívá v půdě žijící mikroorganismy (bakterie), označované jako elektrigeny. Ty při rozkladu organických látek uvolňují elektrony, jež zařízení zachytí a přemění na elektrickou energii.
+Zakladatel společnosti Jakub Dziegielowski vysvětluje, že hlavním cílem je odstranit jednu z překážek rozvoje precizního zemědělství. „Naším prvotním cílem je využít tuto unikátní technologii k urychlení přechodu k digitalizaci v zemědělském sektoru,“ uvedl už loni při představení projektu. Současné bezdrátové senzory totiž často narážejí na omezenou životnost běžných baterií nebo závislost na solárních panelech.
+Od laboratorních pokusů se firma posunula k testování v reálném prostředí. Nedaleko anglického Bathu má zkušební plochu, kde jsou první generace zařízení zakopány v zemi a nepřetržitě odesílají údaje o svém výkonu. „Jedna věc je demonstrovat věci v laboratoři, ale klademe skutečný důraz na to, zda dokážeme to, co jsme pozorovali v laboratoři, replikovat v reálném světě,“ řekl v minulých dnech agentuře Reuters Dziegielowski.
+První generace zařízení zatím vyrobí za rok energii odpovídající přibližně deseti tužkovým bateriím AA. V laboratoři už ale vznikají několikanásobně výkonnější prototypy. Podle Dziegielowského je cílem dosáhnout výkonu kolem čtyř wattů na metr krychlový. Pokud by se to podařilo, mohla by podle něj podzemní zařízení jednou fungovat jako doplněk solárních panelů. „Když nesvítí slunce, stále můžeme vyrábět energii. Ne tolik na metr čtvereční jako solární panely, ale nepřetržitě, 24 hodin denně,“ uvedl.
+Na tom, aby systém fungoval v jakékoli půdě, pracuje produktový inženýr Ewan Comfort-Keir. „Bereme mikroby, které jsou v půdě, a vytváříme podmínky, které jim umožňují produkovat elektrony. Ty pak využíváme k výrobě energie,“ popsal princip zařízení. Vývojáři podle něj testují různé typy půdy i klimatické podmínky, aby vznikl zcela pasivní systém schopný fungovat kdekoli na světě.
+Výhodou má být také dlouhá životnost. Univerzita při představení projektu hovořila o více než 25 letech provozu bez údržby, nyní už firma očekává až třicetiletou životnost. „Zařízení bude navrženo tak, aby bylo zcela bezúdržbové. To vše je možné díky schopnosti půdy samoregenerace a udržování vlastního ekosystému,“ říká Dziegielowski.
+Společnost věří, že technologie najde uplatnění nejen v zemědělství, ale i v dalších oblastech, kde je potřeba dlouhodobě napájet elektroniku bez pravidelné výměny baterií nebo připojení k elektrické síti.|E||T|EK navrhla změnu emisních povolenek. Domácnostem moc nepomohla, tvrdí experti|D|17.7. 17:09|P|Bezplatné emisní povolenky pro průmysl nezmizí ani po roce 2030. Firmy si je ale nově budou muset zasloužit investicemi do snižování emisí. Počítá s t...|X|Článek
+Podle návrhu dostanou podniky 80 procent bezplatných povolenek předem, pokud předloží plány investic do dekarbonizace v Evropě. Zbylých 20 procent jim pak náleží až poté, co investice opravdu uskuteční.
+„Revize přinese průmyslu úlevu, zároveň však zachová jeho klíčovou úlohu v klimatické a energetické transformaci v souladu s evropským klimatickým zákonem,“ uvedla komise ke svému návrhu.
+Novinkou je i to, že komise při přidělování povolenek zohledňuje elektrifikaci výroby. Pomoci by to mělo hlavně chemickému průmyslu a rafineriím, kterým se zároveň zpomalí zpřísňování některých limitů pro teplo a paliva.
+Návrh počítá i s pomalejším snižováním celkového množství povolenek, než ukládají současná pravidla. Podle dosavadního nastavení by se povolenky vyčerpaly kolem roku 2039, nově se mají dražit i dlouho po roce 2040.
+Firmy navíc budou moci v letech 2036 až 2040 pokrýt až dvě procenta svých emisních povinností mezinárodními uhlíkovými kredity – tedy nákupem kvalitních zahraničních projektů na snižování emisí místo evropských povolenek.
+Část výnosů z prodeje povolenek bude i nadále putovat chudším členským státům na pomoc s energetickou transformací, mezi ně patří i Česko.
+Je to náš úspěch, tvrdí Babiš. Opozice si to nemyslí
+Premiér Andrej Babiš (ANO) považuje návrh za úspěch vlády. „Podařilo se nám do návrhu komise dostat pro průmysl do roku 2030 další povolenky zdarma, pokles povolenek po roce 2030 nebude tak rychlý, to znamená, že průmyslu zbude více peněz na platy a investice,“ řekl.
+„Pokud bychom pokračovali podle současného znění směrnice, byl by pokles mnohem strmější a pro firmy by to bylo výrazně dražší. Navíc budeme mít i nadále přístup k penězům z Modernizačního fondu s druhou největší alokací a přístup i k dalším penězům, které jsme doteď neměli k dispozici,“ dodal Babiš.
+Ministr průmyslu a obchodu Karel Havlíček (ANO) už dříve řekl, že evropský i český průmysl potřebuje ještě razantnější opatření, o která bude vláda dál usilovat.
+Opozice je skeptičtější. Předseda ODS Martin Kupka označil navržené úpravy za nedostatečné. „Pokud chceme zabránit tomu, aby výroba dál odcházela z Evropy, nestačí tempo zpomalit – je potřeba systém skutečně změnit od základu. Evropské firmy nemohou nést náklady, které jejich zahraniční konkurence vůbec nezná,“ uvedl na síti X.|E||T|Zemřela herečka Brenda Frickerová|D|17.7. 16:48|P|Ve věku 81 let ve čtvrtek zemřela irská herečka Brenda Frickerová. Největšího kariérního úspěchu dosáhla, když za svůj výkon ve filmu Moje levá noha v...|X|Článek
+Úmrtí Frickerové v pátek oznámil její agent Phil Belfield, přičemž příčinu její smrti neuvedl, informuje BBC.
+„Jí podobného člověka už nespatříme a svět je kvůli její absenci horším místem. Bylo mi ctí ji poznat, milovat a pracovat s ní a v mém srdci a v srdcích mnoha filmových a televizních fanoušků po celém světě bude vždy mít své místo,“ uvedl Belfield.
+Frickerová se narodila v roce 1945 v irském Dublinu. Její herecká kariéra začala na televizních obrazovkách a v divadle. V šedesátých letech si například zahrála v první irské telenovele Tolka Row. Její nejznámější televizní role ale přišla až v roce 1986, kdy dostala roli zdravotní sestry Megan Roachové v populárním seriálu televize BBC Casualty. Tuto postavu na televizních obrazovkách naposledy ztvárnila v roce 2010.
+V době, kdy se Frickerová pravidelně objevovala v populárním seriálu, přišla také její životní filmová role, když ve snímku Moje levá noha, založeném na skutečném příběhu, ztvárnila matku Christyho Browna, který se narodil s dětskou mozkovou obrnou a kterého hrál Daniel Day-Lewis.
+The “Pigeon Lady” from Home Alone 2 has died
+— NEXTA (@nexta_tv) July 17, 2026
+Oscar winner Brenda Fricker was 81.
+“We will never see anyone like her again, and the world is a poorer place without her,” the actress’s agent said in announcing the sad news.
+Fricker was best known for her role in the drama My… pic.twitter.com/HA4dNginue
+První Irka s Oscarem
+Frickerová se díky této roli stala první Irkou, která kdy získala hereckého Oscara, přičemž jí porota dala přednost před hvězdami, jako jsou Julia Robertsová nebo Anjelica Hustonová. Oscara si toho večera odnesl i Day-Lewis.
+Další velkou roli dostala Frickerová o dva roky později. Sám doma 2 je sice kriticky méně pozitivně hodnocený film, ale herečce dal příležitost stát se součástí dětství mnoha lidí, když v populárním filmu ztvárnila postavu ženy s holuby žijící v newyorském Central Parku.
+Frickerová si dále zahrála ve filmech jako Tak jsem si vzal řeznici, Andělé, Čas zabíjet nebo Veronica Guerinová. Později se ovšem nechala slyšet, že by bývala měla lepší kariéru, kdyby Oscara nedostala. Kvůli tomuto ocenění totiž údajně posléze dostávala jen určitý typ rolí a mnoho zajímavých příležitostí jí tak uniklo.
+„Takže je mnoho věcí, které na Oscaru nejsou zrovna skvělé. A nedostanete za něj žádné peníze. Mohli by vám k němu dát aspoň pár babek,“ vtipkovala v roce 2024 v rozhovoru Frickerová.|E||T|Hororová Týna: Když vám žena zahýbá s chobotnicí. Sam Neill v rozvodovém šílenství za Berlínskou zdí|D|17.7. 16:45|P|Než nedávno zesnulý Novozélanďan Sam Neill ztvárnil paleontologa Alana Granta v Jurském parku, zahrál si ve filmu, který považoval za vůbec nejzásadně...|X|Článek
+Neill v příběhu ztvárnil špióna Marka, jenž se po tajné misi vrací do Západního Berlína. Zmožen prací touží po klidu, jenže manželka Anna v podání Francouzky Isabelle Adjaniové mu doma suše oznámí, že se s ním chce rozvést, protože si našla jiného muže.
+Mark si najme soukromého detektiva, aby zjistil, s kým je mu partnerka nevěrná. Ten vypátrá jistého Heinricha (Heinz Bennent), který ovšem oběma naznačí, že situace je komplikovanější, než se zprvu zdála. V jednom zpustlém bytě totiž Markova choť pravidelně souloží s nadpozemskou, chapadlovitou stvůrou.
+Do hry navíc vstupuje Helen, učitelka Markova a Annina malého syna. Ta je Anně vzhledově podobná jako vejce vejci, ale na rozdíl od své líté a nevyzpytatelné dvojnice má velmi mírnou povahu.
+Żuławski nepřinesl běžný žánrový film. Posedlost pro něj představovala nesmírně upřímný portrét rozpadu jeho manželství s polskou herečkou Małgorzatou Braunekovou. Psal jej v hlubokých depresích v newyorském vyhnanství poté, co mu polská komunistická garnitura zastavila natáčení sci-fi eposu Na stříbrném glóbu, uvedeného až v roce 1988.
+„Ocitl jsem se sám v hotelu, s psacím strojem a spoustou whiskey. Velmi rychle se zrodil film, který jsem měl v hlavě už docela dlouho,“ řekl pro filmový server Metrograph.
+K dialogům přizval amerického spisovatele Frederika Tutena, kterého při pozdějším prvním promítání snímku šokovalo explicitní vyobrazení slizkého stvoření, s nímž má Anna poměr. „V mých představách nebylo tak doslovné,“ upřesnil v loňském rozhovoru.
+Berlínský vetřelec
+K jeho výrobě režisér přizval Itala Carla Rambaldiho, tvůrce vizuálních efektů pro Vetřelce (1979). Na zhotovení monstra ale nedostal dost peněz, a tak dodal jen laciný výtvor z růžového latexu s velice primitivními pohyby. Żuławski byl krajně nespokojen. Onen „obří kondom“ Rambaldimu vrátil a ten pak strávil celou následující noc jeho předěláním pomocí dřeva a černých drátů, až se filmařovi trefil do vkusu.
+Samotné natáčení Neill s Adjaniovou shodně popsali jako drastické. „Żuławského jsem neměl moc rád. To, co vnímal jako režii, byla často vyloženě šikana. Chtěl po nás víc, než co jsme mu dokázali dát. Byl jsem svědkem toho, jak na Isabelle křičel. Řval jí přímo do obličeje. Bylo to znepokojivé,“ vylíčil Neill v knižní autobiografii Did I Ever Tell You This? vydané před třemi lety.|E||T|Inflace v Česku výrazně klesla. Patří k nejnižším v Evropě|D|17.7. 16:42|P|Míra inflace v zemích Evropské unie v červnu klesla na 2,9 procenta z květnového tempa 3,3 procenta, oznámil v pátek unijní statistický úřad Eurostat....|X|Článek
+Eurostat používá harmonizované údaje, aby bylo možné srovnání s ostatními zeměmi EU. Český statistický úřad (ČSÚ) minulý týden oznámil, že podle jeho metodiky míra inflace v Česku v červnu klesla na 1,5 procenta. V květnu činila 2,1 procenta.
+Eurostat zároveň potvrdil, že míra inflace v zemích eurozóny v červnu klesla na 2,8 procenta z tempa 3,2 procenta v květnu, jak uvedl v předběžné zprávě na začátku tohoto měsíce. O rok dříve, tedy v červnu 2025, byla inflace v zemích platících eurem 2,0 procenta. V celé EU pak inflace před rokem činila 2,3 procenta. Evropská centrální banka cílí na dvouprocentní inflaci.
+Nejnižší meziroční míru inflace v EU mělo v červnu Švédsko, kde činila 1,0 procenta. Následuje Česko a po něm je Dánsko s mírou inflace 1,8 procenta.
+Naopak nejvyšší meziroční inflaci mělo Rumunsko, a to 9,2 procenta. Následuje Litva (5,4 procenta) a Bulharsko (5,2 procenta). Ve srovnání s květnem se meziroční inflace snížila ve 22 členských státech, ve třech zůstala stabilní a ve dvou vzrostla. Meziměsíčně spotřebitelské ceny v EU i v eurozóně v červnu klesly shodně o 0,1 procenta.
+K meziroční inflaci v eurozóně v červnu nejvíce přispěly služby, jejichž příspěvek činil 1,51 procentního bodu. Následují energie s příspěvkem 0,77 procentního bodu, pak jsou potraviny, alkohol a tabák.
+Inflace bude nízká pouze dočasně
+„Jak se nám podařil takto pěkný výsledek? V první řadě do harmonizované inflace se nezapočítává takzvané imputované nájemné, tedy ceny bytů, takže je ještě nižší než národní inflace. V Česku navíc ještě doznívá vlna zlevňování elektřiny a plynu, která je díky hojně rozšířeným fixacím opožděná oproti západním zemím. A spolu se Švédskem také procházíme obdobím nejrychlejšího zlevňování potravin,“ zrekapituloval Petr Dufek, hlavní ekonom banky Creditas.
+Méně příznivě už ale podle něj vypadají údaje za služby. Ty naznačují, že se Česko stále řadí spíše k zemím střední a východní Evropy, kde ceny služeb rostou rychleji. Důvodem může být jak postupné přibližování české cenové úrovně bohatším zemím EU, tak napětí na trhu bydlení, které se promítá do rychlého růstu nájemného.
+„Trochu se ovšem vymykáme v rychlosti, s jakou u nás rostou ceny v hotelech. Z tohoto pohledu Česko působí dojmem přímořského Španělska,“ dodal Dufek.
+„Celkově máme hezky nízkou inflaci, avšak především jen díky zlevňování potravin a fixacím cen energií. Takže jen dočasně,“ uzavřel ekonom.|E||T|Na Vysočině řádí silné bouřky. Míří do východních Čech a na Moravu|D|17.7. 16:34|P|Na Vysočině se začalo krátce po třetí hodině tvořit pásmo silných bouřek. Meteorologové varují před silnými nárazy větru, přívalovými dešti i kroupami...|X|Článek
+Podle Českého hydrometeorologického ústavu (ČHMÚ) bouřková aktivita nad naším územím během odpoledne pokračuje a lokálně zesiluje. Děje se tak podle očekávání modelů, které předpovídaly tvorbu bouřek, především na pomezí Čech a Moravy.
+„Na Vysočině se vyskytují bouřky s výraznějšími nárazy větru a patrně i kroupami a intenzivními srážkami. Toto pásmo postupuje k východu a patrně se spojí s dalšími bouřkami postupujícími z Rakouska,“ uvedlo ČHMÚ.
+Tyto bouřky kolem 16:00 dorazily také do východních Čech, kde se v následujících chvílích očekávají jejich nebezpečné projevy. Pásmo bouřek se může dále rozšiřovat a ve večerních hodinách zasáhnout také Moravu a Slezsko.
+Bouřky se vyskytují i v dalších oblastech Česka. „O něco slabší bouřky se vyskytují nad Jeseníky. Část západních Čech zasáhne v nejbližších chvílích jižní část bouřkového systému postupujícího přes Německo,“ doplnili meteorologové.
+Až do dnešní půlnoci trvá výstraha ČHMÚ před silnými bouřkami, která se týká celého našeho území. Podle modelů by však měly být nejsilnější ve východní polovině země.|E||T|Traktor zvedající sběrače třešní do koruny stromu na Klatovsku se převrátil. Jeden na místě zemřel|D|17.7. 16:29|P|Nehodu traktoru s tragickým následkem šetří od pátečního dopoledne policisté na Klatovsku. Stroj se převrátil v okamžiku, kdy jeho řidič zvedl naklada...|X|Článek
+„Nehoda se stala po jedenácté hodině ve Vlastějově poblíž Hartmanic. Podle dosud zjištěných skutečností 38letý řidič traktoru vyzdvihl v koši čelního nakladače do koruny stromu dva muže za účelem sběru ovoce,“ uvedl policejní mluvčí Michal Schön s tím, že po chvíli došlo k převrácení traktoru a pádu obou mužů ve věku 81 a 61 let.
+Starší z nich podlehl zraněním na místě, druhý vyvázl bez větší újmy na zdraví. „Případ si převzali kriminalisté, kteří zahájili úkony trestního řízení pro podezření ze spáchání přečinu usmrcení z nedbalosti,“ dodal Schön.
+Mluvčí krajské záchranné služby Martin Štěpán uvedl, že se zdravotníkům nepodařilo staršího z mužů oživit. „Lékař konstatoval smrt a na místo přivolal koronera. Druhého pacienta jsme po vyšetření ponechali na místě,“ řekl Štěpán.|E||T|Tyto fast fashion značky jsou nejvíc zodpovědné za klimatickou krizi. Výsledek tě nejspíš překvapí|D|17.7. 16:21|P|Fast fashion škodí planetě. Jak omezit její nákup?|X|Fast fashion škodí planetě. Jak omezit její nákup?
+Globální textilní průmysl se stal jedním z největších znečišťovatelů. Výroba textilu dnes přispívá ke změně klimatu více než mezinárodní letecká a lodní doprava dohromady. Rychlá móda je navíc doslova závislá na fosilních palivech. Většina levného oblečení se vyrábí ze syntetických materiálů jako polyester, které vznikají z ropy.
+Důsledkem je extrémní nadprodukce a obrovské množství odpadu. Každou sekundu se na světě spálí nebo zakope na skládku ekvivalent jednoho plného popelářského vozu oblečení.
+Grafy uhlíkové intenzity ukazují, že největší ekologickou zátěž má na svědomí Primark, následovaný Inditexem, který vlastní Zara, za ním pokračuje Shein, H&M a ASOS.
+Jak zabránit klimatické krizi?
+Vyhnout se rychlé módě není jednoduché, ale zamezit jejímu nákupu se v určitém ohledu dá. Zkus sledovat, kolik peněz skutečně utrácíš za fast fashion a podle toho si nastav limit výdajů za oblečení u těchto značek, který bys neměl*a přesáhnout.|E||T|Transportní letoun KC-390 jako další z řady podivných nákupů shopaholic Jany|D|17.7. 16:15|P|Česká republika získala svůj první letoun KC-390. Z pohledu Vzdušných sil a armády je to jednoznačně dobrá zpráva. Modernizovat potřebujeme a tento ko...|X|Článek
+Problémem číslo jedna je, že neproběhla řádná soutěž tak, jak ji známe z jiných členských zemí NATO, kde se všichni případní dodavatelé snaží předložit co nejlepší nabídku a ten, kdo to platí, dostane nejlepší možnou cenu. Ten, kdo to platí, tedy daňový poplatník, ani nemá šanci zjistit, proč naše KC-390 stojí zrovna 5,56 miliardy korun za jeden kus bez DPH.
+Po prostém přepočtu celkové hodnoty kontraktu na jeden letoun vychází český kontrakt jako nejdražší z dosud zveřejněných. Ano, dá se namítnout, že tato cena je pouhým vydělením celkové sumy a jiné země si nenakoupily stejné doplňky jako Česká republika. Kvůli nesmyslnému utajování položkových cen ze strany ministerstva ale celá věc spíše působí dojmem, že je co tajit.
+Příplatkové vybavení bez limitu
+Když už jsem se dostal k doplňkům, je minimálně zvláštní, že žádná jiná země na světě neměla potřebu nakoupit cokoliv, co se k letounu nabízí, tak jako právě Česká republika. Spíše než nějaký promyšlený akviziční nákup to již poněkolikáté připomíná dítě, které tatínek pustil do cukrárny s platební kartou bez omezeného limitu.
+Můžeme diskutovat o požadavku na letecké hašení, když ve stejném okamžiku pořizujeme flotilu hasičských vrtulníků, ale problém je zejména u požadavků na kit (sadu vybavení) pro přepravu VIP. Když pro přepravu VIP máme dva letouny Airbus, u kterých nyní nákladně rekonstruujeme interiéry a VIP kit máme i pro letouny CASA.
+Ale u nás zjevně máme hodně VIP. Nebo hodně rozmazlené VIP, protože třeba v USA do rizikových oblastí létají i prezidenti na palubách standardních transportních letounů C-17. Stejně je to s MEDEVAC kitem, který již opět máme jak pro letouny Airbus, tak pro CASY.
+Takovou perličkou z mnoha je fakt, že letoun bude mít tankovací zařízení, které ale dnes není schopné tankovat letouny F-35, jež mají do budoucna tvořit páteř našeho taktického letectva.
+Shrnuto a podtrženo, v podobě letounů KC-390 naše armáda a naše země získávají kvalitní stroje, bohužel v počtu pouhých dvou kusů. Kdybychom je nakoupili standardní cestou bez zbytečných politických zásahů, mohlo jich být buď více, nebo mohly zbýt prostředky na jiné, důležitější věci, které armáda, a zejména její pozemní složka, zoufale potřebuje.
+Milan Mikulecký má zkušenosti z manažerských pozic v byznysu i státní správě jak v České republice, tak v zahraničí. Se svými hosty diskutuje před kamerou a mikrofonem bez ohledu na dnešní většinové názory. Hlas volajícího na poušti je historicky vyjádřením toho, kdy někteří lidé hlasitě upozorňovali ostatní na nebezpečí, do kterého se jejich společenství dostává, a nebyli včas vyslyšeni. Každý týden otevíráme nové téma.
+Odebírejte Hlas na poušti také v podcastových aplikacích a nový díl vám neuteče:
+Poslechněte si také naše další podcasty:|E||T|Značka dvou mladých lidí ze Slovenska navázala spolupráci s Pitbullem. Oblíbil si jejich funkční sodu|D|17.7. 16:15|P|Matúšovi a Lauře se splnil sen. Spojili svou značku s globální hvězdou.|X|Matúšovi a Lauře se splnil sen. Spojili svou značku s globální hvězdou.
+Výrobce funkčních nápojů VITA POP, za kterým stojí dva mladí lidé ze Slovenska, se spojil s globální hvězdou a podnikatelem Armandem Christianem Pérezem, známým pod pseudonymem Pitbull. Spolupráci společně oznámili příspěvkem na Instagramu, který za 24 hodin přesáhl 1,5 milionu zhlédnutí a raketově zvýšil znalost značky na evropských sítích. Po prodeji více než milionu plechovek napříč Evropou tak VITA POP připravuje na třetí kvartál roku 2026 masivní roll-out v amerických velkoformátových maloobchodních sítích.
+Ze Slovenska ke spolupráci s mezinárodní hvězdou
+Za úspěchem rostoucí značky VITA POP nestojí žádná nadnárodní korporace, ale tvrdá práce a vize Matúše Vaverčáka a Laury Šemberové ze Slovenska. Celý nápad vznikl na cestách mezi Ósakou a Los Angeles, kde se zamýšleli, proč by lepší a funkční volba nápoje měla vždy znamenat nudnou, vodovou chuť. Rozhodli se proto vybudovat to, co jim na trhu chybělo – první skutečně globální značku moderní funkční sody původem z Evropy.
+Jejich vizionářský přístup přinesl ovoce už během prvních 12 měsíců, kdy VITA POP překonal hranici jednoho milionu prodaných plechovek. Značka v rekordním čase expandovala do více než 15 evropských zemí včetně Česka a stabilně překonává benchmarky ve velkých mezinárodních maloobchodních sítích, jako jsou Tesco, Jumbo, DM–drogerie markt či Spar, čímž si zajistila stopu ve více než 3 000 provozovnách.
+„Dnes se nám plní něco, co zní až neuvěřitelně – spojili jsme síly s Pitbullem. Je to obrovský milník, který nám otevírá dveře do úplně nového světa,“ říká Matúš Vaverčák, spoluzakladatel a CEO značky VITA POP.
+„Od začátku jsme totiž chtěli vybudovat značku, která se s novou generací propojí nejen přes samotný produkt v regálu, ale i přes kulturu, hudbu a sociální sítě. Společně s Pitbullem jdeme dokázat to nejdůležitější: že nápoj může mít plnou chuť vaší oblíbené limonády, udrží vás v přirozené rovnováze během celého dne, a to vše bez kompromisů a zbytečných kalorií.“
+.„Je mi ctí oficiálně se připojit k VITA POP jako globální strategický partner. V rámci partnerství jde o změnu pravidel hry – propojujeme chuť, kulturu, hudbu a zdraví. Společně budujeme další celosvětovou značku,“ vzkazuje Pitbull.
+Zobrazit příspěvek na Instagramu
+Fenomén jménem Pitbull: Od outsidera k Mr. Worldwide
+Spojení s umělcem, jako je Pitbull, nevzniklo náhodou. Tento globální hudební gigant a držitel cen Grammy, který celosvětově prodal více než 25 milionů alb, stojí za největšími hity poslední dekády jako Give Me Everything, Timber či Fireball. Jeho hudba dnes spojuje generace, což potvrzuje i nedávný úspěšný hit s Bon Jovim (Now or Never) a samozřejmě neustále vyprodaná světová turné.
+Vyrůstal se svobodnou matkou v drsných podmínkách Miami a svého obrovského úspěchu dosáhl z pozice absolutního outsidera. Právě tato silná „underdog“ mentalita a nezdolná touha uspět ho propojila se slovenskými zakladateli. Příběh Matúše a Laury, kteří od nuly budují vlastní produkt a na trhu čelí tlaku světových korporátních gigantů, si okamžitě osvojil.
+Kromě statusu hudební legendy a fenoménu sociálních sítí je Pitbull i mimořádně úspěšným podnikatelem a edukátorem – stojí například za americkou sítí bezplatných veřejných škol SLAM! pro více než 10 000 studentů a studentek. Z tohoto důvodu není ve VITA POP pouze tváří kampaně, ale přímo strategickým partnerem a investorem, který značku aktivně podpoří při blížící se expanzi na americký trh ve třetím kvartálu roku 2026.
+Zobrazit příspěvek na Instagramu
+Funkční sody jako fenomén Gen Z
+Kategorie funkčních nápojů už dávno nepředstavuje jen „nudné“ vitaminové vody. Ve světě, a především v USA, se z nich stal masivní, explozivně rostoucí lifestylový fenomén a kulturní hnutí, které formuje zejména Generaci Z. Je to pestrý, zářivý a vizuálně atraktivní svět. Mladí lidé dnes nehledají jen obyčejné uhašení žízně, hledají nápoje, které jsou estetickým doplňkem, vyjádřením jejich postoje k tělu a nedílnou součástí jejich každodenních rituálů. V tomto hnutí si značka VITA POP našla své pevné a suverénní místo jako evropský challenger s velkými ambicemi.
+Na rozdíl od jiných, často uměle působících funkčních alternativ, přichází VITA POP s pevným přesvědčením, že u nápojů nesmí existovat žádný kompromis v chuti. Řídí se heslem „Taste First, Function Second“. Po chuťovém zážitku nastupuje překvapivá funkčnost: každá plechovka má pouze přibližně 55 kalorií, tj. o 70 % méně cukru než běžné slazené nápoje. Klíčovou přidanou hodnotou je pět gramů prémiové patentované prebiotické vlákniny Fibersol. Jak potvrzují i klinické studie*, právě tato složka zajišťuje pocit sytosti, udržuje organismus v přirozené rovnováze bez drastických výkyvů či náhlé únavy a na rozdíl od jiných, levnějších vláknin, nezpůsobuje nadýmání. Pro lepší ilustraci, toto množství představuje ekvivalent jedné misky brokolice nebo celého jablka.
+VITA POP si striktně zakládá na čistém rostlinném složení, nepoužívá umělou laboratorní chemii a nápoje jsou decentně doslazeny přírodním extraktem ze stévie. V Česku seženeš funkční sodu v síti DM drogerie markt, Tesco, Globus a na Kosik.cz. Více informací najdeš na oficiální stránce vitapopsoda.com.
+* Zdroj: Composition, Properties, and Beneficial Effects of Functional Beverages on Human Health (MDPI, 2026)|E||T|Piráti unesli v Adenském zálivu tanker|D|17.7. 16:10|P|Ozbrojenci v Adenském zálivu unesli v pátek malý tanker Asana. Plavidlo mají pod kontrolou, uvedla agentura Reuters s odkazem na námořní bezpečnostní ...|X|Článek
+Plavidlo bylo na cestě do somálského přístavu Bosaso. Incident se odehrál asi 65 námořních mil jižně od jemenského přístavu Al Mukalla. Nouzový signál vyslalo v 06:20 GMT (08:20 SELČ). V době únosu nemělo plavidlo ozbrojenou ochranku, uvedla britská bezpečnostní skupina Ambrey.
+První informace naznačují, že akce je spojována spíše se somálskými piráty než s jemenskými Hútii, kteří jsou spojováni s Íránem, uvedl bezpečnostní zdroj podle webu deníku The Times of India.
+Podrobnosti o počtu útočníků, okolnostech únosu, stavu plavidla a posádky zůstávají nejasné. Není také známo, pod jakou vlajkou plavidlo plulo.
+Do oblasti byla vyslána jihokorejská válečná loď, uvedl úředník řecké námořní bezpečnostní společnosti Diaplous.
+Informace o únosu plavidla přichází ve chvíli, kdy Íránské revoluční gardy chtějí využít jemenské spojence Hútie, aby uzavřeli druhou nejdůležitější energetickou tepnu světa průliv Báb-al-Mandab.
+K tomuto kroku se má přistoupit, pokud Spojené státy zaútočí na civilní infrastrukturu.
+Americké síly zasáhly v pátek raketami most a vlakové nádraží během šesté noci leteckých úderů na Írán.|E||T|Trump v projevu obvinil Čínu z úniku dat 220 milionů amerických voličů. Televize mu ho neodvysílaly|D|17.7. 16:10|P|Trump ve svém projevu nešetřil kritikou vůči Číně. Odborníci jej obviňují z klamání a zastrašování voličů v přípravě ovlivnit nadcházející listopadové...|X|Trump ve svém projevu nešetřil kritikou vůči Číně. Odborníci jej obviňují z klamání a zastrašování voličů v přípravě ovlivnit nadcházející listopadové volby do Kongresu.
+Bezpečnost voleb má před listopadovým hlasováním do amerického Kongresu stát jedním z klíčových témat Donalda Trumpa. Prezident během přibližně 25minutového projevu obvinil Čínu z údajného zahraničního zasahování a zároveň vyzval republikány ke zpřísnění volebních pravidel.
+Trump prohlásil, že Peking neoprávněně získal přibližně 220 milionů záznamů obsahujících údaje o amerických voličích, píše Denník N. Podle něj šlo mimo jiné o jména a adresy využívané při registraci. Prezident zároveň tvrdí, že rozsah případu měli někteří lidé z americké zpravodajské komunity zamlčet.
+Utajené dokumenty
+Na podporu svých tvrzení chce Trump zpřístupnit dosud utajované dokumenty, které mají podle něj ukázat slabá místa amerického volebního systému. Agentura Reuters však upozornila, že část představitelů Bílého domu měla před projevem obavy, zda zveřejněné informace nebudou interpretovány zavádějícím způsobem.
+Ranější oficiální zjištění zároveň vykreslují odlišný obraz. Hodnocení amerických zpravodajských služeb z roku 2021 nenašlo důkazy, že by zahraniční moc dokázala zasáhnout do registrace voličů, samotného hlasování, sčítání hlasů nebo konečných výsledků prezidentských voleb v roce 2020.
+Chce zpřísnit kontroly
+Trump, který výsledek těchto voleb dlouhodobě zpochybňuje bez předložení důkazů o rozsáhlé manipulaci, nyní žádá zavedení přísnějších podmínek při hlasování. Chce prosadit nové požadavky na ověřování totožnosti a amerického občanství voličů.
+Během vystoupení zaútočil i na televize, které jeho projev nevysílaly živě. Stanicím ABC, NBC a CNN podle něj měly být za takové rozhodnutí odebrány vysílací licence.|E||T|Kouř z kanadských požárů dusí americká města|D|17.7. 15:48|P|Kouř z rozsáhlých kanadských lesních požárů se rychle šíří napříč Severní Amerikou a výrazně zhoršuje kvalitu ovzduší. Města u Velkých jezer mají aktu...|X|Článek
 Podle stanice BBC hořelo v pátek ráno v Kanadě 858 lesních požárů, přičemž dalších třicet vypuklo během čtvrtka. Největší ohniska se nacházejí v severozápadní části provincie Ontario, kde na začátku týdne propukla nová vlna požárů.
 Požáry ohrožují místní komunity a vyžádaly si řadu evakuací. Rozsah požárů je dobře patrný i ze vzduchu. Letecké záběry zachycují mohutná pyrokumulusová oblaka vznikající nad požáry, která připomínají oblaka vytvářející se při silných sopečných erupcích.
 Kvůli severozápadnímu proudění se masy kouře šíří stovky až tisíce kilometrů daleko, což potvrzují také satelitní snímky. Kouř výrazně zhoršuje kvalitu ovzduší ve velkých městech Spojených států i Kanady.
@@ -182,431 +303,15 @@ Politologie zaměřená na globální výzvy
 S novinkou přichází také Filozofická fakulta. Její navazující magisterský program Politologie – globální politická studia na Filozofické fakultě UHK nabídne studium mezinárodní politiky. Vychází z dlouholetých zkušeností katedry politologie s areálovými studii Afriky a Latinské Ameriky a rozšiřuje je o pohled na globální politické procesy. Program bude nabízen v prezenční i kombinované variantě.
 Přihlášky je možné podávat až do konce července, zájemci o bakalářský program Všeobecné ošetřovatelství a navazující program Certifikace a management zdravotnických technologií tak mohou učinit dokonce až do 7. srpna.
 Hradecká univerzita letos na jaře přijala přes 9700 přihlášek ke studiu v příštím akademickém roce. V meziročním srovnání to byl nárůst o osm procent. Největší zájem byl o studijní obory speciální pedagogika nebo učitelství. V září by do školy mělo nastoupit asi 2500 nových studentů.
-Daná vysoká škola nabízí studium na čtyřech fakultách: pedagogické, filozofické, přírodovědné a informatiky a managementu. Studuje na ní téměř sedm tisíc studentů.|E||T|USA razí jednodolarové mince s Trumpem. Roztomilé, reagoval prezident|D|17.7. 14:00|P|Americká státní mincovna začala razit nové mince v hodnotě jednoho dolaru (21,23 Kč) s portrétem prezidenta Donalda Trumpa. Platidlo má být připomínko...|X|Článek
-Začátek ražby nové mince potvrdilo ve středu ministerstvo financí. Na lícní straně je portrét Trumpa v obleku, kravatě a s přísným výrazem ve tváři. Vedle prezidenta jsou slova In God we trust (Věříme v Boha) a po obvodu nápis Liberty (Svoboda) a letopočty 1776 ~ 2026.
-Na rubu mince je vyražen státní znak Spojených států s bělohlavým orlem. Do oběhu se má platidlo dostat na podzim.
-Ministr financí Scott Bessent uvedl, že nová mince je výrazem úcty k trvalému dědictví svobody a symbolem vlastenectví. „S prezidentem Trumpem (mince) oslavuje sílu amerických hodnot a oddanost národa k ochraně svobody pro všechny,“ dodal Bessent.
-Treasury Secretary Scott Bessent on Wednesday unveiled the first images of a $1 gold coin featuring President Donald Trump’s face, despite U.S. law prohibiting living people from appearing on currency. https://t.co/hZw2lVVyxP
-— Forbes (@Forbes) July 15, 2026
-📸: Anna Moneymaker via Getty Images pic.twitter.com/DAwwdd9MMK
-Podobu mince schválila letos Americká komise pro výtvarné umění, jejíž členy podle tiskové agentury AP jmenoval Trump.
-Kritici ale projekt označují za vysoce kontroverzní, právně i politicky. Podle amerických zákonů totiž nesmí být na platidlech USA zobrazena žijící osoba.
-Trumpova administrativa nicméně uplatnila zvláštní zákon z roku 2020, který Kongres schválil k oslavám letošního 250. výročí nezávislosti USA a který povoluje ražbu mincí se „symbolickými motivy“.
-„Není to špatný obrázek“
-Trumpa, jenž má zálibu v propůjčování svého jména a podobizny různým projektům, nová jednodolarovka v každém případě potěšila.
-„Jsem velmi poctěn. Je to roztomilé. Není to špatný obrázek,“ reagoval Trump, který současně připustil, že šlo o „velmi neobvyklé“ rozhodnutí.
-Už v březnu ministerstvo financí oznámilo, že se na dolarových bankovkách začne objevovat Trumpův podpis. Bude to poprvé od roku 1861, připomněl list The Guardian.
-Na amerických papírových platidlech jsou tradičně vytištěny dva podpisy - ministra financí a pokladníka USA. Namísto pokladníkovy signatury se nově objeví podpis úřadujícího prezidenta.|E||T|Policie vypátrala pohřešovaného chlapce z Třebíčska|D|17.7. 13:59|P|Policie v pátek celostátně pátrala po 13letém chlapci, který odešel v pátek ráno z domu v obci Krnčice na Třebíčsku, kde aktuálně bydlí. Chlapce našli...|X|Článek
+Daná vysoká škola nabízí studium na čtyřech fakultách: pedagogické, filozofické, přírodovědné a informatiky a managementu. Studuje na ní téměř sedm tisíc studentů.|E||T|Policie vypátrala pohřešovaného chlapce z Třebíčska|D|17.7. 13:59|P|Policie v pátek celostátně pátrala po 13letém chlapci, který odešel v pátek ráno z domu v obci Krnčice na Třebíčsku, kde aktuálně bydlí. Chlapce našli...|X|Článek
 „Chlapce se podařilo vypátrat v Moravských Budějovicích, je v pořádku,“ oznámila odpoledne mluvčí vysočinské policie Michaela Lébrová.
 Policie v pátek celostátně pátrala po 13letém chlapci, který odešel v pátek ráno z domu v obci Krnčice na Třebíčsku, kde aktuálně bydlí. Chlapce našli před třetí hodinou v nedalekých Moravských Budějovicích.
 „Chlapce se podařilo vypátrat v Moravských Budějovicích, je v pořádku,“ oznámila odpoledne mluvčí vysočinské policie Michaela Lébrová.
 Reklama
-Reklama|E||T|Novým lídrem labouristů je Burnham, stane se britským premiérem|D|17.7. 13:58|P|Předsedou britské vládní Labouristické strany se v pátek oficiálně stal Andy Burnham. V čele strany nahradil Keira Starmera, jehož by měl v pondělí vy...|X|Článek
-Burnham si už ve čtvrtek večer zajistil nominace od 379 ze 403 labouristických poslanců v Dolní sněmovně.
-Bývalý primátor metropolitní oblasti Greater Manchester byl za žhavého kandidáta na budoucího premiéra považován již několik týdnů, ale o svých politických prioritách zatím prozradil jen málo. Do sídla na Downing Street č. 10 tak nastoupí jako osoba, která je voličům mimo Manchester prakticky neznámá.
-„Moje generace politiků, včetně mě samotného, selhala vůči obyčejným lidem,“ uvedl ve svém prvním projevu Burnham.
-Poznamenal, že Labouristická strana musí znovu získat důvěru pracujících lidí a komunit, které se cítí být opomíjené a které byly nejvíce zasaženy ekonomickými změnami od 80. let. Slíbil stranu sjednotit, vrátit více pravomocí regionům a stát se lídrem celé Británie, nikoli pouze severní Anglie, kde dříve politicky působil.
-„Budu lídrem pro sever, jih, východ i západ, pro Skotsko, Wales i Severní Irsko,“ řekl.
-Tiskové agentury připomínají, že Burnham bude čelit mnoha stejným problémům jako jeho předchůdce, včetně stagnující ekonomiky, tlaku na životní náklady, který vyvolaly války na Ukrajině a na Blízkém východě, a přetížených veřejných služeb.
-Ve videu zveřejněném ve čtvrtek pozdě večer na sociálních sítích Burnham uvedl, že se bude prioritně zabývat také nerovnoměrným přístupem k sociální péči pro ty, kteří ji potřebují kvůli věku, nemoci nebo zdravotnímu postižení.
-Starmer minulý měsíc oznámil, že po dvou letech ve funkci odstoupí. Jeho působení poznamenala řada přešlapů a rozhodnutí, která oslabila jeho postavení ve straně i důvěru veřejnosti.|E||T|Zrušení poplatků pro ČT a ČRo budí u Evropské komise obavy|D|17.7. 13:43|P|Evropská komise ve své každoroční zprávě o stavu právního státu v členských zemích uvádí, že návrh zákona předložený vládou Andreje Babiše (ANO), jeho...|X|Článek
-„Obavy vyvolal návrh zákona předložený novou vládou, který by zrušil koncesionářské poplatky pro veřejnoprávní média,“ stojí ve zprávě, která má 22 stran.
-Zpráva EK popisuje, že by to od roku 2027 vedlo ke snížení jejich celkových příjmů přibližně o 15 procent ve srovnání s příjmy v roce 2026.
-„Monitor plurality médií pro Česko uvádí, že veřejnoprávní média se znovu dostala pod politický tlak, což vedlo ke zvýšenému úsilí ovlivňovat redakční směřování a personální rozhodování. V důsledku toho zvýšil hodnocení rizika v této oblasti na středně nízké,“ uzavírá zpráva.
-Zároveň dodala, že v oblasti reforem týkajících se transparentnosti vlastnictví médií rovněž nebyly podle unijní exekutivy podniknuty žádné další kroky.
-Unijní exekutiva stejně jako v minulých letech rozdělila hodnocení do čtyř kapitol věnovaných soudním systémům, boji proti korupci, pluralitě médií a celkové kontrole a vyváženosti institucí. Reaguje v nich na předchozí doporučení a dává českým úřadům nová.|E||T|Salát z Taco Bell způsoboval lidem explozivní průjem. Pobočky pozastavují jeho prodej|D|17.7. 13:42|P|V Americe se šíří infekce vyvolávající explozivní průjem. Stát za ní může ledový salát ze známého fastfoodu.|X|V Americe se šíří infekce vyvolávající explozivní průjem. Stát za ní může ledový salát ze známého fastfoodu.
+Reklama|E||T|Salát z Taco Bell způsoboval lidem explozivní průjem. Pobočky pozastavují jeho prodej|D|17.7. 13:42|P|V Americe se šíří infekce vyvolávající explozivní průjem. Stát za ní může ledový salát ze známého fastfoodu.|X|V Americe se šíří infekce vyvolávající explozivní průjem. Stát za ní může ledový salát ze známého fastfoodu.
 V několika státech USA stahují prodejny fastfoodového řetězce Taco Bell z prodeje kontaminovaný ledový salát. Pravděpodobně totiž souvisí s nákazou cyklosporózy, která způsobuje explozivní průjem.
 Centrum pro kontrolu a prevenci nemocí uvedlo, že 1645 lidí se nakazilo střevní parazitární infekcí bezprostředně poté, co si dali jídlo v Taco Bell. Cyklosporóza zapříčiňuje vodnatý průjem trvající několik dní, ztrátu váhy a chuti k jídlu. Žádné oběti infekce zatím hlášeny nejsou.
-„Nejezte pokrmy s nastrouhaným ledovým salátem z Mexika, které se podávají v provozovnách Taco Bell v Indianě, Kentucky, Michiganu, Ohiu a Západní Virginii,“ uvedl americký Úřad pro kontrolu potravin a léčiv. Samotný řetězec zatím neinformoval o tom, v jakých státech prodej salátu pozastaví.|E||T|Brusel vytýká Česku nedostatky kolem střetu zájmů|D|17.7. 13:37|P|Evropská komise Česku vytýká, že v zemi dosud nedošlo k obnovení a dokončení revize pravidel o střetu zájmů, zejména pokud jde o oblast skutečného vla...|X|Článek
-„V doporučení týkajícím se obnovení revize právních předpisů o střetu zájmů, včetně oblasti skutečného vlastnictví, nebyl zaznamenán žádný pokrok,“ uvádí 22 stran dlouhá zpráva, která se týká České republiky.
-Zpráva si všímá také toho, že letos v červnu předložili čeští poslanci návrh novely právních předpisů o střetu zájmů. Návrh přitom obsahuje změny, které nahrazují pojem ovládající osoba pojmem skutečný majitel.
-„Navrhovaná úprava by zúžila rozsah plošného zákazu poskytování dotací a zadávání veřejných zakázek společnostem ovládaným členy vlády. Umožnila by totiž poskytování těchto dotací a uzavírání těchto smluv v případech, kdy nejsou poskytovány ministerstvem, za které daný člen vlády přímo odpovídá,“ říká Komise.
-Nyní podle instituce probíhá intenzivní veřejná debata o uplatňování stávajících pravidel střetu zájmů a o jejich celkové účinnosti, zejména pokud jde o kontrolu konkrétních podnikatelských zájmů vysoce postavených veřejných představitelů.
-Ohledně celkového systému auditů a kontrol nyní nadále pokračuje komunikace mezi českou vládou a Evropskou komisí. „Protože dosud nebyly vyřešeny přetrvávající obavy, nebylo v plnění tohoto doporučení dosaženo žádného pokroku,“ dodává dokument.
-Evropská komise stejně jako v minulých letech rozdělila hodnocení do čtyř kapitol, věnovaných soudním systémům, boji proti korupci, pluralitě médií a celkové kontrole a vyváženosti institucí. Reaguje v nich na předchozí doporučení a dává českým úřadům nová.|E||T|Španělská občanská válka předznamenala všechny hrůzy celosvětového konfliktu|D|17.7. 13:31|P|Před devadesáti lety, v pátek 17. července 1936, se ve španělském Maroku ozvaly první výstřely vojenského povstání, za nímž stála skupina armádních dů...|X|Článek
-Původně plánovaný rychlý převrat proti vládě Druhé republiky se však během několika dní proměnil v jeden z nejkrvavějších konfliktů meziválečné Evropy a předehru ještě ničivějšího střetu – druhé světové války.
-Konflikt se stal laboratoří moderní války, zúčastnilo se ho také přes dva tisíce československých dobrovolníků, mezi nimi i František Kriegel, umělecky ho ztvárnili například Pablo Picasso nebo spisovatelé Ernest Hemingway a George Orwell.
-Cesta k občanské válce
-Když v dubnu 1931 padla ve Španělsku monarchie krále Alfonse XIII. a byla vyhlášena Druhá republika, mnozí Španělé věřili, že země konečně vstupuje do demokratické éry. Nová vláda zahájila rozsáhlé reformy – chtěla omezit privilegia a vliv armády a katolické církve, provést pozemkovou reformu nebo posílit autonomii některých regionů, zejména Katalánska a Baskicka. Zatímco pro jedny tyto zamýšlené změny představovaly dlouho očekávanou a nezbytnou modernizaci země, pro jiné znamenaly útok na tradiční hodnoty, životní jistoty a dosavadní společenský řád.
-Španělská společnost se v následujících letech začala rozdělovat do dvou stále nesmiřitelnějších táborů. Na jedné straně stáli příznivci republiky, socialisté, komunisté, anarchisté a zastánci regionální autonomie. Na straně druhé konzervativci, monarchisté, velká část armády, katolické církve i nově vznikající krajní pravice reprezentovaná Falangou a hledající inspiraci ve fašistické Itálii. Přestože část obyvatel stále věřila v nalezení smíru, politické střety čím dál častěji přerůstaly v pouliční násilí.
-Důležitým zlomem se staly parlamentní volby z února 1936, v nichž těsně zvítězila levicově orientovaná koalice Lidové fronty. Průběh voleb sice odpovídal ústavním zvyklostem, část pravice přesto odmítla jejich výsledek uznat. Atmosféra ve společnosti se začala ještě více vyostřovat a v následujících měsících přibývalo stávek, násilností i politicky motivovaných vražd. Část armádního vedení dospěla tehdy k přesvědčení, že jediným řešením, jak zemi vyvést z krizové situace, je svržení republikánské vlády.
-Přestože je další vývoj událostí neodmyslitelně spjat se jménem generála Francisca Franca, v červenci 1936 hlavní postavou spiknutí nebyl. Tou se stal až během následujících měsíců, z nichž díky své chladnokrevné povaze, politické obratnosti a nekompromisní likvidaci oponentů vzešel jako neomezený vůdce nacionalistického tábora.
-Převrat nakonec svého hlavního cíle nedosáhl – republikánská vláda nepadla a udržela si kontrolu nad hlavním městem Madridem i většinou průmyslových oblastí. Z původního plánu rychlého převzetí moci se tak nakonec stal pouze katalyzátor krvavé občanské války, jejíž průběh a výsledek do značné míry ovlivnily také zahraniční intervence.
-Laboratoř moderní války
-Konflikt ve Španělsku přestal být překvapivě rychle jen vnitřní záležitostí jedné země. Obě znepřátelené strany začaly záhy hledat pomoc v zahraničí a občanská válka se postupně proměnila také v bojiště, na němž ostatní evropské státy sledovaly své vlastní politické, ideologické a strategické cíle.
-Nacionalisté generála Franca získávali významnou podporu od nacistického Německa a fašistické Itálie, které jim dodávaly zbraně, letadla, tanky i další vojenskou výzbroj. Italský vůdce Benito Mussolini na Pyrenejský poloostrov vyslal dokonce celý expediční sbor, jímž prošlo více než 70 tisíc italských vojáků.
-Neméně významná byla pomoc od Německa, jehož Legie Condor nesloužila pouze jako podpora povstalcům v jejich snaze ovládnout Španělsko, ale také jako „laboratoř“ pro ověřování nových způsobů nasazování letectva, které Němci později využili během druhé světové války.
-Republikánská vláda se naproti tomu opírala především o dodávky zbraní ze Sovětského svazu. Spolu s nimi ale přicházeli do Španělska také vojenští poradci, příslušníci NKVD i političtí emisaři, kteří postupně získávali vliv na fungování republikánského tábora. Sovětská materiální pomoc však nikdy nedosáhla rozsahu německé a italské podpory nacionalistům, což se nakonec stalo jedním z faktorů vítězství generála Franca.
-Překvapivý postoj zaujaly západní mocnosti. Velká Británie a Francie sice do bojů vojensky nezasáhly, jejich politika neintervence však konflikt výrazně ovlivnila. Jejím cílem bylo zabránit tomu, aby se španělská občanská válka změnila v celoevropský konflikt. Důsledkem byl zákaz vývozu zbraní oběma stranám, ke kterému se připojily rovněž Spojené státy americké. Zatímco Německo, Itálie a Sovětský svaz embargo bez větších zábran porušovaly, západní mocnosti ho do značné míry dodržovaly. Neintervence se tak paradoxně stala jedním z faktorů, které dopadly především na mezinárodně uznávanou republikánskou vládu.
-Guernica jako zlom
-Ve Španělsku se však nebojovalo pouze na frontě. Terčem násilí se od prvních dnů války stávali také civilisté. Na obou stranách docházelo ve velkém rozsahu k politickým vraždám a hromadným popravám bez řádného soudu.
-Republikánské milice neútočily pouze na své odpůrce, ale také na představitele katolické církve a ve velkém rabovaly a vypalovaly kostely a kláštery.
-Nacionalisté ale nezůstávali pozadu a rozpoutali systematický teror proti skutečným i domnělým stoupencům republiky. Tím, jak Francova vojska postupovala Španělskem, zanechávala za sebou dlouhé seznamy umučených a popravených osob. Symbolem násilí na civilistech se staly nechvalně proslulé „procházky“ (paseos), při nichž byli lidé odváděni za město a okamžitě popravováni.
-Právě do tohoto nového stylu vedení války zapadá i bombardování baskického města Guernica německou Legií Condor v dubnu 1937. Nešlo o nejkrvavější epizodu celého konfliktu, stala se však předzvěstí toho, že moderní válka už nebude vedena pouze proti armádám, ale také městům a jejich obyvatelům. Pablo Picasso pak tuto událost zvěčnil ve svém obrazu Guernica, který dodnes patří k nejsilnějším uměleckým svědectvím o násilí na civilistech 20. století.
-No pasarán!
-Jen málokterý konflikt v moderních dějinách přitáhl tolik zahraničních dobrovolníků jako španělská občanská válka. Na Pyrenejský poloostrov nepřicházeli pouze vojáci vyslaní evropskými mocnostmi, ale také desetitisíce obyčejných lidí, kteří věřili, že právě zde se rozhoduje o budoucnosti Evropy. Pro jedny představovala obrana republiky poslední možnost zastavit nastupující fašismus, pro druhé naopak obranu tradičních hodnot a křesťanské civilizace před komunismem.
-Do země postupně dorazilo okolo 35 tisíc zahraničních dobrovolníků z desítek zemí a většina z nich vstoupila do Mezinárodních brigád podporujících republiku. Motivovanost republikánského tábora vystihovalo heslo No pasarán! (Neprojdou!), které během úspěšné obrany Madridu v listopadu 1936 proslavila komunistická politička Dolores Ibárruriová. Pro celý svět se stal tento slogan symbolem neústupnosti a odhodlání bránit své přesvědčení i za cenu vlastního života.
-Španělská občanská válka byla zároveň jedním z nejsledovanějších konfliktů své doby. K utváření jejího obrazu u mezinárodní veřejnosti významně přispěli britský spisovatel George Orwell, válečný zpravodaj a spisovatel Ernest Hemingway nebo fotograf maďarského původu Robert Capa. Orwell své zkušenosti z republikánských milicí zachytil už v roce 1938 v knize Hold Katalánsku. Hemingway je promítl o dva roky později do románu Komu zvoní hrana, který se stal jedním z nejslavnějších literárních děl inspirovaných španělskou občanskou válkou. Capovy fotografie pak obletěly svět a dodnes patří k nejvýraznějším vizuálním svědectvím brutality tohoto konfliktu.
-Významnou stopu zanechali ve Španělsku také českoslovenští dobrovolníci, kterých do země odešlo přes dva tisíce. Nebojovali jen v pěchotě, ale také v letectvu a jeden z nich dokonce sloužil u republikánského námořnictva. Čechoslováci navíc prostřednictvím Výboru pro pomoc demokratickému Španělsku financovali provoz polní nemocnice, v níž působil i pozdější komunistický politik František Kriegel. Přibližně čtyři sta československých interbrigadistů ve Španělsku padlo. Pro mnohé z těch, kteří přežili, však válka zdaleka neskončila. Někteří se následně zapojili do domácího či zahraničního protinacistického odboje, jiní po roce 1948 sehráli významnou roli při budování komunistického režimu v Československu.
-Zahraniční dobrovolníci však nebojovali pouze na straně republiky. Menší jednotky z Irska, Portugalska nebo Francie se připojily k nacionalistům, protože ve Francově tažení spatřovaly hráz proti šíření komunismu do dalších částí Evropy. Španělská občanská válka se tak stala konfliktem, do něhož si lidé z různých koutů zeměkoule projektovali vlastní představy o tom, na jakých hodnotách se má budoucí uspořádání světa zakládat.
-Rozdělená společnost
-Přestože od prvních výstřelů španělské občanské války letos uplyne již devadesát let, tento tři roky trvající konflikt je stále živou součástí veřejných diskusí. Důvod je prostý. Válka neskončila smířením obou znepřátelených stran, ale vítězstvím generála Francisca Franca, který zemi vládl až do své smrti v roce 1975. Jeho autoritářský režim systematicky potlačoval politickou opozici, tisíce jeho odpůrců skončily ve věznicích, pracovních táborech nebo byly popraveny, a statisíce dalších Španělů odešly do exilu.
-Po Francově smrti se Španělsko vydalo cestou demokratické transformace. Aby se předešlo obnovení starých konfliktů, tehdejší politické elity přijaly nepsanou dohodu známou jako „pakt zapomnění“. Místo otevírání starých křivd se pozornost obrátila na obnovení demokratického státu. Tento přístup sice usnadnil pokojný přechod k demokracii, zároveň však odsunul stranou otázku odpovědnosti za zločiny občanské války a Francovy diktatury.
-Teprve až v posledních dvou desetiletích se toto téma začalo vracet. Po celém Španělsku se začaly otevírat masové hroby obětí občanské války a následných represí, jejichž počet není přesně znám, ale odhaduje se na desítky tisíc. Rodiny mnohdy až dnes zjišťují, kde a jak jejich příbuzní zemřeli nebo byli pohřbeni. Španělsko zároveň přijalo zákony o historické paměti, které podporují exhumace obětí,...
-(Pokracovani na webu)|E||T|Jako první žena provedla v ČR před deseti lety transplantaci srdce, teď dodává kuráž ostatním|D|17.7. 13:30|P|Deset let uplynulo od chvíle, kdy lékařka Olga Kremitovská z Centra kardiovaskulární a transplantační chirurgie v Brně (CKTCH) provedla jako první žen...|X|Článek
-Kremitovská si kardiochirurgii vybrala už při studiích a její rozhodnutí výrazně ovlivnila zkušenost ze Spojených států amerických, kde poprvé viděla operaci srdce. Do brněnského centra pak nastoupila v roce 2004 s cílem věnovat se kardiochirurgii a transplantacím. „Operace srdce mě přitahovaly odjakživa. Vidět bijící srdce je zážitek, na který se prostě nedá zapomenout,“ uvedla Kremitovská.
-K první transplantaci srdce se dostala po 12 letech intenzivní přípravy, odborného vzdělávání a chirurgické praxe. Za nejdůležitější považuje schopnost rychle se rozhodovat a nést plnou odpovědnost za svá rozhodnutí.
-Významným milníkem její kariéry se stal rok 2016, kdy jí tehdejší ředitel centra Petr Němec během operace svěřil vedení transplantačního výkonu. „Když se takový výkon podaří, znamená to obrovský posun v profesním sebevědomí. Zároveň je ale stejně důležité zachovat si pokoru. Ta je pro náš obor nezbytná,“ zdůraznila Kremitovská.
-Transplantace srdce představuje mezi odborníky vrchol kardiochirurgie a vyžaduje sehranou spolupráci celého týmu. Každý krok musí být přesně načasovaný a koordinovaný. Podle Kremitovské je týmová práce jednou z největších předností CKTCH. „Pokud pro pacienta existuje byť jen malá šance, snažíme se mu ji dát. To je hodnota, které si na našem pracovišti nejvíce vážím,“ dodala.
-Přestože je kardiochirurgie oborem, ve kterém převažují muži, přichází podle Kremitovské nová generace lékařek, které mají o obor zájem. „Ženám bych vzkázala jediné. Ať se toho nebojí a jdou kardiochirurgii zkusit. Jsem důkazem toho, že to jde,“ uzavřela.|E||T|Jako v ohnivém pekle. Posádka kanadského vlaku natočila jízdu uprostřed plamenů|D|17.7. 13:26|P|Dramatické záběry pořídil vlakový personál v kanadské provincii Ontario. Nákladní vlak v noci na úterý uvízl uprostřed lesního požáru, takže ho ze str...|X|Článek
-Záběry, které se rychle staly virálními, pořídila vlaková posádka a na sociálních sítích je zveřejnil poslanec ontarijského parlamentu Sol Mamakwa.
-Kanadské národní dráhy (CN) ve středu vydaly prohlášení, v němž potvrdily, že se celý vlakový personál dostal do bezpečí, podrobnosti o průběhu záchrany ale nezveřejnily. Zároveň informovaly, že provoz na železniční trati u obce Armstrong byl dočasně přerušen.
-V Kanadě aktuálně zuří stovky lesních požárů, přičemž ty nejvydatnější jsou právě v provincii Ontario.
-V úterý v souvislosti s nimi úřady také vyzvaly obyvatele, aby se nepřibližovali ke třem opuštěným vlakům poblíž oblasti Collins First Nation, zhruba 30 kilometrů západně od Armstrongu, uvedla agentura AP. Soupravy totiž původně převážely hořlavé a další nebezpečné materiály.
-Armstrong je jednou ze šesti obcí, které byly kvůli rozsáhlým lesním požárům v severozápadním Ontariu povinně evakuovány. Podle Kanadského meziresortního centra pro lesní požáry v současnosti v zemi hoří více než 800 aktivních požárů.
-Ty mimo jiné vedou k optickému jevu, kdy ve večerních hodinách získává obloha sytě oranžové zbarvení. Je to tím, jak hustý kouř v atmosféře rozptyluje světlo zapadajícího slunce.
-Kouř z kanadských požárů ovšem vyvolává také obavy ze zhoršení kvality ovzduší, a to i stovky kilometrů od ohnisek. Rozsáhlý kouřový oblak v současnosti zahaluje velkou část oblasti Velkých jezer a zasahuje až do okolí New Yorku v USA.
-An apocalyptic scene unfolded on Highway 11 in Northwestern Ontario, Canada, this evening as the sky turned deep red and nearly black. pic.twitter.com/KK2RVqLMtP
-— Weather Monitor (@WeatherMonitors) July 15, 2026|E||T|Doživotně odsouzený čtyřnásobný vrah Vacík zemřel|D|17.7. 13:25|P|Bývalý policista Bohumír Vacík ze Sokolovska, který si odpykával doživotní trest za čtyřnásobnou vraždu z 90. let, je podle zjištění Novinek po smrti....|X|Článek
-„Zemřel ve výkonu trestu,“ potvrdil Novinkám mluvčí plzeňského soudu Jakub Štverák. Okolnosti Vacíkova skonu ale neuvedl, s tím, že k tomu žádné detaily vězeňská služba neposkytla.
-Naposledy byl Vacík umístěný v Praze na Pankráci. „Úmrtí odsouzeného nebudeme komentovat,“ uvedla na dotaz Novinek Vladimíra Tošnarová z Generálního ředitelství Vězeňské služby s tím, že na bližší informace mají nárok jen rodinní příslušníci. Není tak jasné, zda Vacík spáchal sebevraždu, nebo zemřel z chorobných příčin.
-Vacík působil v 70. letech u policie. Po listopadové revoluci začal podnikat, ale skončil v dluzích. Svých věřitelů se proto rozhodl zbavit. V roce 1994 obral o pistoli vrátného ze sokolovského podniku Pozemní stavby a vpálil mu dvě střely do hlavy.
-Stejnou zbraní potom vyvraždil tříčlennou rodinu vietnamského podnikatele, kterému dlužil desítky tisíc. Tehdy k němu přišel do bytu s tím, že jde vrátit peníze. Místo toho vytáhl pistoli a muže na místě zastřelil. Když do místnosti přiběhla šestiletá dcera zavražděného, zlikvidoval i ji a později také její matku v devátém měsíci těhotenství, kterou potkal při odchodu z bytu.
-Během vyšetřování byl policisty obviněn ještě z vraždy obsluhy čerpací stanice v Lišově na Českobudějovicku. Později jej ale soud osvobodil. V září 2013 žádal u Okresního soudu v Šumperku o přeložení do věznice s mírnějším režimem, soud mu však nevyhověl a žádost zamítl.
-Zemřel i sériový vrah Kutílek
-Vacíka soud označil za nevyzpytatelného psychopata bez možnosti nápravy. Jeho manželka se nedokázala s činy svého muže vyrovnat a spáchala sebevraždu.
-Vacík není jediným doživotně odsouzeným vězněm, který za mřížemi zemřel. Před devíti lety vězeňská služba potvrdila smrt sériového vraha Michaela Kutílka, který v roce 1990 se svým komplicem chladnokrevně zabil čtyři lidi.|E||T|Zpěvák a kytarista Márdi z Vypsané fixy: Nikdy by mě nenapadlo, že nám Petr Janda nahraje sólo|D|17.7. 13:05|P|Nová deska pardubické rockové Vypsané fixy představuje velmi pestrou sbírku písniček. Doprovází ji originální vizuál s pingpongovou tematikou. V osmde...|X|Článek
-Jak dobrý jste v ping pongu?
-Řekl bych, že jsem podprůměrný rekreační hráč, který ale hraje s chutí.
-Proč jste se rozhodli obal alba, a také videoklip k písni Bylo to jistý, zasvětit této hře?
-Protože na začátku bylo slovo, které vyřkl náš kytarista Mejla v jedné šatně. Pronesl slovo ideál, ale vůbec ne ve spojitosti s ping pongem. Bylo to poté, co jsem se zeptal, jak dokončit albovou trilogii natočenou s producenty Ondřejem Ježkem a Dušanem Neuwerthem, když se jedna deska jmenuje Kvalita a druhá Kusy radosti. Chtěl jsem vědět, co se stane, když se spojí kvalitní kusy radosti.
-Mejla v šatně jedl bagetu, dlouho mlčel a najednou řekl: ideál. Zasmáli jsme se a zdálo se, že je po všem. Jenomže já si za chvíli vybavil staré pingpongové míčky značky Ideál a debata se rozvinula dál.
-Doma jsem si ale říkal, že je to přece jen pouze pingpongový míček. Sedl jsem nicméně k počítači a zjistil, že ty míčky vyráběli v Jablonci nad Nisou, a to slovo vyřkl náš kytarista v šatně na koncertu v Jablonci. A bylo to jasné.
-Spojujete nějak míček s písničkami na desce?
-Ano. Míček má specifický zvuk a sám o sobě mi přijde dost zajímavý. O to samé jsme se snažili při nahrávání desky. Chtěli jsme, aby byla zajímavá a jiná než ty předešlé.
-Vznikl název alba předtím, než jste ho natočili?
-Naopak, ta příhoda v šatně v Jablonci se stala až po jeho nahrání. Nicméně určitá hravost a také pingpongová výměna je podle mě slyšet v písni Velryba. Osobně v ní vnímám zvuky nočního města a to, že někde v baru hrají nějací borci stolní tenis.
-Byly ve hře i jiné názvy alba?
-V písničce Pelikán je rým: Přiletí pelikán, no to je velikán. Chvíli jsme se bavili o tom, že by se deska mohla jmenovat Velikán. Nakonec jsme se ale rozhodli, že takový název necháme až pro tu úplně poslední.
-Napadlo nás také pojmenovat album Neurčité obavy. Jenomže nám potom přišlo, že je to příliš smutné, a proto se tak jmenuje jenom jedna písnička.
-Ideál je vaše v pořadí jedenáctá studiová deska. Už jste to sice naznačil, nicméně je pro vás příprava nového alba pořád přitažlivá?
-Osobně považuju nahrávání desky za největší výzvu, kterou vždy, když k němu má dojít, před sebou mám. Mám pocit, že je to skoba, kterou musím vtlouct do skály, na níž ve svém životě lezu, a hrozně záleží na tom, abych ji do ní zatloukl pořádně.
-Dostat nové desky a nové písničky mezi ty starší, je po tolika vydaných deskách těžké. Přesto si nedokážu představit, že bychom s natáčením skončili.
-Mezi vydáváním vašich nových alb se prodlužuje doba.
-To mi přijde logické. Předešlá deska Kusy radosti se povedla, což v praxi znamená, že vybojovala čtyři roky pro novou. Mám pocit, že kdyby nebyla tak dobrá, měli bychom tendenci jít do studia co nejdříve po jejím vydání a nahrát lepší album, které by zastínilo to nevydařené.
-Říkal jste, že nové album je skoba, kterou vtlučete do hory, na kterou lezete. Jak ta hora vypadá?
-Je opravdu velká. Já o ní ale přemýšlím jinak. Myslím si, že všech jedenáct desek, které jsme natočili, je dobrých. Tu další bychom tedy mohli vydat tak za pět let, to by jich už bylo dvanáct. Pro mě je dvanáctka magické číslo, takže si představuju, že v tu chvíli už budeme stát na té hoře a rozhlížet se, co dál. Netuším, co uvidíme.
-Jak to, že jste si tak jistý, že vaše alba jsou dobrá?
-Když natočíme novou desku, jsem v tom procesu ponořený. Jakmile skončí, vyjdu z něho a album přestanu poslouchat. Teprve když se chystáme nahrávat další, poslechnu si všechno, co jsme do té doby vydali. V tu chvíli to hodnotím, a musím přiznat, že jsem dlouhodobě se všemi našimi deskami spokojený.
-Jasně, tu a tam jsme mohli něco udělat jinak, ale pozitivní dojem převládá. A při hodnocení nové desky zatím vycházím z toho, co o ní říkají lidé a co se o ní píše.
-Hlídáte si, abyste neskládal písničky, které jsou si příliš podobné?
-Ano, ale až ve druhé fázi. Když tvořím, sednu si s kytarou, a když mě něco napadne, natočím to. Tyhle demosnímky jsou si většinou dost podobné. Následuje však druhá fáze, kdy o písni všichni z kapely i s producenty diskutujeme. Řešíme, co s těmi nápady dělat, aby byla výsledná skladba v něčem překvapivá, trochu jiná.
-Na desce je třeba písnička 3 malý opičky. Je v ní slyšet můj pes, ale důležité je, že je až popově hravá. Přitom když jsme ji s mým synovcem, který začal hrát na bicí, natočili u babičky v obýváku, byla taková rockově špinavá.
-Její finální verze je ale jiná, což je výsledek práce producentů a poznámek členů kapely. Přiznávám, že jsem byl chvíli rozladěný z toho, co z mé prvotní verze vzniká. Dnes mi ta skladba ale přijde skvělá.
-Zmínil jste, že skládáte při kytaře. Písničku Fakin party jste ale složil s baskytarou. Co vás k tomu vedlo?
-Rád na ni hraju, a tak jsem ji vzal do rukou a zahrál velice jednoduchý postup. Náš baskytarista Kryštof Mašek se mi za něj smál. Řekl mi, že pokud z toho vznikne písnička, bude nejhorší na světě.
-A ona vznikla. A podle počtu přehrání na internetových službách patří dokonce mezi tři nejlepší na desce. Myslím si, že to Kryštof doteď nechápe. A já jsem k tomu pokorný.
-V písni Legenda hraje na kytaru Petr Janda z Olympiku. Proč jste ho pozvali?
-Uzavřel se tím kruh. Moje máma byla velká fanynka Olympiku. Když jí bylo šestnáct, byla jím posedlá a myslím, že členy té kapely korespondenčně trochu otravovala.
-A oni jí jednou poslali dopis s fotkou a také šuměnkou. To byl takový prášek, který si ti starší budou pamatovat z dob před revolucí. K obsahu dopisu Olympic připsal, že posílá jednu šuměnku navíc.
-Když mi tu historku vyprávěla, smála se. Poznamenala také, že tu šuměnku doma někde má, jen ji prý nemůže najít.
-No a my jsme pak nahrávali u Petra Jandy ve studiu Propast a on nám do písničky Legenda nahrál sólo. Nikdy by mě nenapadlo, že se to stane.|E||T|Zasáhlo vedení ODS. Dvořák na kandidátce v Praze 1 nebude, oznámil Kupka|D|17.7. 12:07|P|Výkonná rada ODS v pátek jednomyslně rozhodla, že Filip Dvořák nebude na kandidátce strany v Praze 1. Místní buňka ODS bude mít čas do 24. července k ...|X|Článek
-„Rychlé a jasné, a dokonce jednomyslné rozhodnutí výkonné rady ODS: Filip Dvořák nebude na kandidátce ODS na Praze 1,“ řekl v pátek předseda ODS Martin Kupka po zasedání výkonné rady strany.
-„Zároveň jsme uložili oblastní radě Prahy 1, aby do 24. července připravila novou kandidátku, kde jméno Filipa Dvořáka nebude figurovat. Pokud by tak neučinila, tak jsme zmocnili regionální radu pro Prahu, aby takovou kandidátku sestavila ona,“ dodal.
-Dvořák po otci Karlu Dvořákovi zdědil pohádkový majetek v hodnotě přesahující 230 milionů korun. Podle spolustraníků ale neobjasnil dostatečně otázky kolem jeho původu. Do dědictví patří nemovitosti v Praze a Špindlerově Mlýně, diamanty či jachta kotvící v Chorvatsku.
-Minulý týden vedení ODS Dvořáka vyzvalo, aby rezignoval. Ten to ale odmítl s tím, že ho místní buňka ODS na Praze 1 stále podporuje a z kandidátky jej neodstranila.
-Na kandidátce Dvořák zůstal i přes to, že už v úterý předsednictvo strany rozhodlo, že jeho další kandidatura může stranu poškodit. Předsednictvo také podpořilo jeho odstranění z kandidátky, nicméně finální slovo měla ve věci až výkonná rada.
-„Se jménem Filip Dvořák se Pražané při volbách na radnici nesetkají,“ uzavřel v pátek Kupka.
-Dvořák se už v týdnu proti postupu vedení ohradil. „Tlak předsedy strany na mé odstoupení na základě článků z médií považuji do budoucna za nesmyslný precedens, který bude ODS pouze poškozovat,“ reagoval v úterý na výzvu k rezignaci.
-Stanovy ODS umožňovaly vedení strany několik způsobů, jak Dvořáka z kandidátky odvolat. Mezi nimi bylo například i rozpuštění buňky, která jej jmenovala, nebo jeho vyloučení ze strany. Ani k jednomu z těchto scénářů však nakonec nedošlo. Dvořák tak nadále zůstává členem ODS.
-Jak se politikovu otci Karlu Dvořákovi podařilo nashromáždit stamilionový majetek, zůstává neobjasněno. Nefiguroval totiž v žádné firmě, kde by si takové peníze mohl vydělat. Filip Dvořák k tomu uvedl pouze, že „své profesní i finanční záležitosti spravoval po celou dobu samostatně“.
-Není to poprvé, kdy se toto téma řeší. Už před lety vyvolávalo otázky, jak si mohl tehdy 85letý gynekolog v důchodu dovolit nákup nemovitostí za celkem 33 milionů korun.|E||T|Na horách zemřel tento týden už třetí Čech. Horolezec přišel o život v pákistánském pohoří|D|17.7. 12:04|P|Při prvovýstupu na horu Biarchedi II v pohoří Karákóram zahynul český horolezec Jaroslav Bánský.|X|Při prvovýstupu na horu Biarchedi II v pohoří Karákóram zahynul český horolezec Jaroslav Bánský.
-Šestačtyřicetiletý Bánský zemřel ve čtvrtek v pákistánském pohoří Karákóram. Expedici podnikal společně s dalšími dvěma členy. Snažili se o prvovýstup na horu Biarchedi II. Bánský byl nejen horolezcem, ale také členem horské služby v Krkonoších.
-O tragické události informoval ČTK rodinný přítel a horolezec Libor Dušek. „S lítostí můžeme potvrdit úmrtí českého horolezce v Pákistánu. Diplomaté na našem velvyslanectví v Islámábádu se případu věnují a jsou v kontaktu s policií a cestovní kanceláří,“ uvedl pro ČTK mluvčí české diplomacie Adam Čörgő.
- 
-V tomto týdnu se jedná o třetího Čecha, který přišel o život v horách v zahraničí. Předchozí dva zemřeli v noci z úterý na středu během výstupu na Mont Blanc. 
- 
-Bánský se účastnil české expedice ještě s horolezci Zdeňkem Hákem a Radoslavem Grohem. Toto trio už v minulosti v Karákóramu jako první zdolalo vrchol Muču Kiš vysoký 7480 metrů. Hák a Groh následně uskutečnili prvovýstup jihozápadní stěnou na horu Hunza Peak, která má 6300 metrů.|E||T|God of War bude mít nového Kratose. Co stojí za výměnou Ryana Hursta?|D|17.7. 11:30|P|God of War musí přeobsadit hlavní postavu.|X|dnes
-                                17. července 2026 v 11:30
-            
-                
-            Čas čtení
-                        0:00
-        
-                            
-                God of War bude mít nového Kratose. Co stojí za výměnou Ryana Hursta?
-                                                
-                                                            
-                                                                                        Zdroj: AMAZON PRIME VIDEO
-                                                    
-                                                                                                                                
-                                            
-                                                                God of War musí přeobsadit hlavní postavu.
-                                                
-                                                            
-                                                                                        Zdroj: SONY INTERACTIVE ENTERTAINMENT
-                                                    
-                                                                                                                                
-                                            
-                                                                God of War musí přeobsadit hlavní postavu.
-                                                
-                                                            
-                                                                                        Zdroj: NETFLIX
-                                                    
-                                                                                                                                
-                                            
-                                                                God of War musí přeobsadit hlavní postavu.
-                                                
-                                                            
-                                                                                        Zdroj: FX NETWORKS
-                                                    
-                                                                                                                                
-                                            
-                                                                God of War musí přeobsadit hlavní postavu.
-                                                
-                                                            
-                                                                                        Zdroj: WIKIMEDIA COMMONS / VOLNĚ K UŽITÍ
-                                                    
-                                                                                                                                
-                                            
-                                                                God of War musí přeobsadit hlavní postavu.
-                                                
-                                                            
-                                                                                        Zdroj: SONY INTERACTIVE ENTERTAINMENT
-                                                    
-                                                                                                                                
-                                            
-                                                                God of War musí přeobsadit hlavní postavu.
-                                                
-                                                            
-                                                                                        Zdroj: UNIVERSAL PICTURES
-                                                    
-                                                                                                                                
-                                            
-                                                                God of War musí přeobsadit hlavní postavu.
-Diskutovat
-            
-                    
-    
-    
-    
-            Sdílet
-        
-    
-            
-                Uložit
-            
-            
-                Uložené
-            
-        
-        
-                    Musíš být přihlášený/á, abys mohl/a uložit článek.
-                
-                
-                    
-                        Přihlásit se
-                    
-                    
-            
-                        Zrušit
-                    
-                
-                    Nepodařilo se uložit změny. Zkus se nově přihlásit a zopakovat akci.
-                    
-V případě že problémy přetrvávají, kontaktuj prosím administrátora.
-                V případě že problémy přetrvávají, kontaktuj prosím administrátora.
-                        OK
-                    
-                
-            Doporučil bys článek ostatním?
-            
-        
-    
-    11
-    
-                            
-                    
-    Upozornit na chybu
-    
-        - pokud spatřuješ v článku nedostatek nebo máš připomínky, dej nám vědět.
-    
-    
-    
-    
-    
-            Sdílet
-        
-    
-            
-                Uložit
-            
-            
-                Uložené
-            
-        
-        
-                    Musíš být přihlášený/á, abys mohl/a uložit článek.
-                
-                
-                    
-                        Přihlásit se
-                    
-                    
-            
-                        Zrušit
-                    
-                
-                    Nepodařilo se uložit změny. Zkus se nově přihlásit a zopakovat akci.
-                    
-V případě že problémy přetrvávají, kontaktuj prosím administrátora.
-                V případě že problémy přetrvávají, kontaktuj prosím administrátora.
-                        OK
-                    
-                Co si o článku myslíš?
-            Přihlas se a dej vědět do komentáře!
-        
-        Nepodarilo sa načítať dáta pre diskusiu. Skúste znova načítať stránku.
-    
-    
-                                                0 komentářů
-                                    
-        
-                Seřadit od
-            
-            
-                    nejoblíbenějších
-                
-                
-                    nejnovějších
-                
-            
-                Musíš být přihlášený/á, abys mohl/a přidat komentář.
-            
-            
-                
-                    Přihlásit se
-                
-                
-        
-                    Zrušit
-                
-            
-                Musíš být přihlášený/á, abys mohl/a ohodnotit komentář.
-            
-            
-                
-                    Přihlásit se
-                
-                
-        
-                    Zrušit
-                
-            
-                Abys mohl přidat komentář, musíš mít aktivní členství Refresher Club.
-            
-            
-                
-                    Členství
-                
-                
-        
-                    Zrušit
-                
-            
-                Komentář, který si přidal, vidíš zatím jen ty. Pro zobrazení komentářů ostatním uživatelům je třeba ověřit tvůj účet.
-            
-            
-                
-                    Ověřit účet
-                
-                
-        
-                    Zrušit
-                
-            
-                Opravdu chceš odstranit svůj komentář?
-            
-            
-                    Odstranit
-                
-                
-                    Zrušit
-                
-            
-                Opravdu chceš zablokovat tento komentář?
-            
-            
-                    Zablokovat
-                
-                
-                    Zrušit
-                
-            
-                Opravdu chceš odblokovat tento komentář?
-            
-            
-                    Odblokovat
-                
-                
-                    Zrušit
-                
-            
-                Opravdu chceš nahlásit tento komentář?
-            
-            
-                    Nahlásit
-                
-                
-                    Zrušit
-                
-            
-                Děkujeme, komentář byl nahlášen.
-            
-            
-                    OK
-                
-            
-                    OK
-                
-            
-        Doporučujeme    
-    
-            Storky
-        
-        
-                                Kylie Jenner se svlékla do plavek v nejžhavější letní kolekci
-                            
-                        
-                                Kylian Mbappé představil vlastní sluneční brýle v collabu s Oakley
-                            
-                        
-                                Brad Pitt se svou přítelkyní jsou Instagram official
-                            
-                        
-                                Zendaya na premiérách Odyssey servíruje haute couture inspirovanou řeckou mytolo...
-                            
-                        
-                                Bitvy šampionů i česká hvězda. OKTAGON 91 láká na strhující zápasy
-                            
-                        
-                                Beats for Love 2026: Nad festivalem létal party balon s djkou
-                            
-                        Sponzorovaný obsah
-                                    
-                                
-                                Xbox masivně propouští. Zbavuje se známých studií a skončí tisíce zaměstnanců
-                            
-                        
-                                Konec jedné éry. Cristiano Ronaldo potvrdil, že MS 2026 je jeho poslední
-                            
-                        
-                                Beats for Lov...
-(Pokracovani na webu)|E||T|VIDEO: Žádný hrdina. Herní Wolverine se připomíná novou ukázkou plnou brutální akce|D|17.7. 10:46|P|Očekávaná exkluzivita pro PlayStation 5, Marvel’s Wolverine od uznávaného studia Insomniac Games, se připomíná novým trailerem.|X|Očekávaná exkluzivita pro PlayStation 5, Marvel’s Wolverine od uznávaného studia Insomniac Games, se připomíná novým trailerem.
-Vývojáři, kteří stojí za úspěšnou sérií Marvel's Spider-Man, slibují mnohem temnější, dospělejší a brutálnější zážitek, než na jaký jsme byli u jejich předchozích superhrdinských her zvyklí. Hra se zaměří na Loganovu divokou minulost a zavede hráče do nebezpečných koutů světa, kde se hrdina bude muset spolehnout na své zvířecí smysly a nezničitelné adamantium.
-Nová ukázka s podtitulem „Ain't No Hero“ (v překladu „Žádný hrdina“) pak okamžitě vtahuje do akčních sekvencí ze hry, kdy se Logan neustále musí bránit četným přesilám ve střídajících se prostředích, přičemž se na scéně mihne i antihrdina Sabretooth nebo záporačka Lady Deathstrike.
-Nekompromisní akce a koneckonců i samotný název upoutávky jasně definují protagonistu chystané komiksárny jako někoho, kdo si nebude brát servítky, i když to bude znamenat, že občas nejspíš bude dělat věci, které běžným superhrdinům úplně nepřísluší.
-Hra se nezadržitelně blíží ke svému vydání naplánovanému na 15. září 2026. Mezitím však stále doznívá kontroverzní rozhodnutí Sony od roku 2028 ukončit prodej a výrobu fyzických kopií her. Proč je to špatně, jsme popsali v našem komentáři.|E||T|Zoo Praha má první mládě zubra v Dolních Počernicích|D|17.7. 06:55|P|Ve výběhu Zoo Praha v Dolních Počernicích se narodila samička zubra evropského, vůbec první mládě v této lokalitě. Největší suchozemský savec Evropy, ...|X|V Dolních Počernicích na okraji Prahy se narodil obyvatel, na kterého tam čekali od chvíle, kdy se sem loni na podzim přestěhovalo stádo z trojské zoo. V rozlehlém výběhu v Dolních Počernicích, který patří pražské zoologické zahradě, přišla v polovině května 2026 na svět samička zubra evropského — vůbec první mládě narozené přímo v Dolních Počernicích. (Starší zubří mláďata Zoo Praha odchovala ve svém hlavním areálu v Troji.) Pro laika roztomilé telátko na dlouhých nohách, pro ochránce přírody ale mnohem víc: další důkaz, že se největší suchozemský savec Evropy vrací z pokraje úplného vyhynutí.
+„Nejezte pokrmy s nastrouhaným ledovým salátem z Mexika, které se podávají v provozovnách Taco Bell v Indianě, Kentucky, Michiganu, Ohiu a Západní Virginii,“ uvedl americký Úřad pro kontrolu potravin a léčiv. Samotný řetězec zatím neinformoval o tom, v jakých státech prodej salátu pozastaví.|E||T|Zoo Praha má první mládě zubra v Dolních Počernicích|D|17.7. 06:55|P|Ve výběhu Zoo Praha v Dolních Počernicích se narodila samička zubra evropského, vůbec první mládě v této lokalitě. Největší suchozemský savec Evropy, ...|X|V Dolních Počernicích na okraji Prahy se narodil obyvatel, na kterého tam čekali od chvíle, kdy se sem loni na podzim přestěhovalo stádo z trojské zoo. V rozlehlém výběhu v Dolních Počernicích, který patří pražské zoologické zahradě, přišla v polovině května 2026 na svět samička zubra evropského — vůbec první mládě narozené přímo v Dolních Počernicích. (Starší zubří mláďata Zoo Praha odchovala ve svém hlavním areálu v Troji.) Pro laika roztomilé telátko na dlouhých nohách, pro ochránce přírody ale mnohem víc: další důkaz, že se největší suchozemský savec Evropy vrací z pokraje úplného vyhynutí.
 „Samička narozená v polovině května je skvělým signálem, že se zubrům v novém areálu daří," uvedla podle Zoo Praha kurátorka Barbora Dobiášová. Mládě zatím nemá jméno, ale už teď se stalo malou hvězdou výběhu, který je veřejnosti přístupný.
 Aby člověk pochopil, proč je jedno narozené tele takovou událostí, musí se ohlédnout do minulosti. Zubr evropský z české přírody zmizel už v 18. století a ve dvacátém století to s celým druhem vypadalo beznadějně. Poslední zvířata žijící ve volné přírodě byla vystřílena kolem roku 1920 v pralese Białowieża na dnešní polsko-běloruské hranici. Zubr tak přežíval už jen v oborách a zoologických zahradách.
 Nejděsivější na tom je, kolik zvířat vlastně zůstalo. Podle Zoo Praha tvořilo základ pro záchranu celého druhu jen dvanáct jedinců, ze kterých pocházejí úplně všichni dnešní zubři na světě. Chovatelé si mezi sebou pečlivě předávali informace, kdo se komu narodil, aby se příbuzná zvířata nekřížila a druh nezdegeneroval. Byla to trpělivá práce na desítky let dopředu, jejíž výsledek vidíme až dnes.

@@ -1,0 +1,15 @@
+Článek
+První ojedinělé bouřky se vytvořily už v ranních hodinách v oblasti Krkonoš, jinak bylo nad Českem poměrně klidno. Další vývoj počasí během dne ovlivní postupující studená fronta.
+Nejvíce bouřek by se mělo začít vytvářet odpoledne podél takzvané linie konvergence. Jde o oblast, kde se u země střetávají dva proudy vzduchu. Vzduch je zde nucen vystupovat vzhůru, což podporuje vznik přeháněk a bouřek.
+Zatím není jisté, kde přesně se bude tato linie nacházet, většina modelů ale předpokládá vznik prvních odpoledních bouřek ve východních Čechách a na Vysočině. Bouřková jádra seřazená do linie by se následně měla spojovat do rozsáhlejších systémů, které budou postupovat dále na Moravu a do Slezska.
+Silné nárazy větru hlavní hrozbou
+Právě ve východní polovině Česka, zejména na pomezí Čech a Moravy, se v pátek očekávají nejsilnější bouřky. Panovat zde budou vhodné podmínky v podobě vysoké energie v atmosféře i výrazného vertikálního střihu větru.
+Kvůli velké dynamice bouřkových systémů budou hlavním nebezpečím silné nárazy větru, které mohou ojediněle dosahovat rychlosti až kolem 90 km/h. Bouřky přinesou také přívalové srážky s úhrny až 50 milimetrů. Výjimečně se může vytvořit i izolovaná supercela, v níž se mohou objevit kroupy o průměru přes dva centimetry.
+Bouřky se mohou objevit také v západní polovině Česka, především večer, kdy sem dorazí systémy postupující z Bavorska. Bouře, které ve čtvrtek večer a v noci na pátek postihly jihozápad Německa, si vyžádaly jednu oběť a několik zraněných. V Česku se ale očekává, že bouřky budou na západě méně intenzivní než ve východní části republiky.
+Před silnými bouřkami na celém území Česka varovali už ve čtvrtek meteorologové z Českého hydrometeorologického ústavu (ČHMÚ). Zároveň upozornili, že během pátku mohou vydanou výstrahu podle aktuálního vývoje ještě upřesnit.
+Bouřkové parametry CAPE a střih větru
+CAPE / instabilita
+Parametr CAPE určuje množství potenciálně dostupné energie pro vznik vzestupných pohybů vzduchu. Tato energie se na modelech udává v joulech na kilogram vzduchové hmoty. Klíčovým faktorem pro vývoj bouřek je tzv. instabilita, tedy rychlý pokles teploty s výškou a zároveň přítomnost vyšší vlhkosti.
+Instabilita je jedním z nejdůležitějších atmosférických ukazatelů pro možný vznik bouřek. Hodnoty CAPE přes 1000 j/kg již značí možnost silných bouří. Pokud není k dispozici žádný spouštěcí impuls (například frontální rozhraní nebo linie konvergence), ke vzniku bouřek nemusí vůbec dojít.
+Střih větru
+Pro vznik silných a organizovaných bouřek s delší životností je důležitý tzv. vertikální střih větru. Na modelech se udává v metrech za sekundu a značí změnu směru a rychlosti větru s výškou. Hodnoty nad 15 m/s spolu s vyšším CAPE značí možnost tvorby supercel - izolovaných bouřek s jedním dominantním rotujícím proudem. Samotný střih větru bez energie je pro vznik bouřek irelevantní.

@@ -1,3 +1,6 @@
+|T|Recenze deskové hry Dragon Eclipse. Trénování dračích potvůrek funguje nejlíp v sólo režimu|D|18.7. 10:45|P|Tisíce let poté, co svět zahalila neprostupná temnota a téměř vyhladila lidskou civilizaci, se někteří z přeživších začali zajímat o mystlingy – stvoř...|X|Tisíce let poté, co svět zahalila neprostupná temnota a téměř vyhladila lidskou civilizaci, se někteří z přeživších začali zajímat o mystlingy – stvoření schopná ovládat živly. Ti nejnadanější dokázali navázat magické pouto a stali se z nich krotitelé. Lidstvo se postupně znovu postavilo na nohy. ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Přimontoval 380 mikrofonů na dron a teď s ním nahání komáry. Příští rok ho začne prodávat|D|18.7. 09:45|P|Alex Toussaint nemá rád komáry, a tak udělal to, co by jistě napadlo každého rozumného čtenáře VTM.cz. Zajel do obchodu pro bastlíře, koupil 380 MEMS ...|X|Alex Toussaint nemá rád komáry, a tak udělal to, co by jistě napadlo každého rozumného čtenáře VTM.cz. Zajel do obchodu pro bastlíře, koupil 380 MEMS mikrofonů TDK Invensense T3902, 32 ultrazvukových vysílačů (40 kHz) a FPGA čip Artix-7 A100T.
 
 K čemu tolik součástek? Alex si z nich postavil ...

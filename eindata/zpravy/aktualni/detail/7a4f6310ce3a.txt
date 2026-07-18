@@ -1,0 +1,16 @@
+Článek
+Na první pohled připomíná běžný průmyslový dron, ve skutečnosti ale jde o létající bezpečnostní systém vybavený širokou škálou moderních technologií. Kromě klasické kamery disponuje termovizí, nočním viděním, laserovým dálkoměrem i prvky umělé inteligence. Díky tomu dokáže rozpoznat pohyb osob nebo zvířat i za zhoršených světelných podmínek.
+V případě narušení střeženého prostoru navíc nemusí zůstat jen u sledování. Prostřednictvím reproduktoru může vyškolený dispečer s člověkem přímo komunikovat a vyzvat ho k opuštění areálu.
+„Pokud se osvědčí, druhý nasadíme do areálu na Vřesové a v budoucnu bychom rádi drony nabídli také pro ostrahu dalších průmyslových objektů, stavenišť a průmyslových parků v regionu,“ říká Karel Dekaň, jednatel společnosti SUAS Securitas, která využití nejnovější techniky při ostraze průmyslových objektů v Tisové aktuálně testuje.
+Ve vzduchu vydrží téměř hodinu
+Dron létá zcela autonomně. V jeho systému jsou předem naprogramované trasy i přesně vymezené zóny, které pravidelně kontroluje. Operátor zasahuje pouze v případě mimořádné situace.
+Na jedno nabití vydrží ve vzduchu téměř hodinu a dokáže letět rychlostí až 54 kilometrů za hodinu. Přenos obrazu zvládne na vzdálenost desítek kilometrů. Vedle širokoúhlé kamery má i telekameru umožňující detailní přiblížení sledovaných objektů.
+Výrobce počítal i s náročnými podmínkami. Zařízení je konstruováno tak, aby bez problémů fungovalo za deště, sněžení i silnějšího větru.
+Dron má vlastní „garáž“ i meteorologickou stanici
+Důležitou součástí celého systému je autonomní dokovací stanice DJI Dock 3, která funguje jako zázemí pro celý provoz. Po dokončení mise se do ní dron automaticky vrací, dobije baterii a je okamžitě připraven k dalšímu letu.
+Stanice zároveň slouží jako meteorologický uzel. Nepřetržitě sleduje aktuální počasí i teplotu v lokalitě a podle podmínek pomáhá vyhodnocovat bezpečnost jednotlivých letů. Současně zajišťuje přenos dat získaných během monitorování.
+Nad celým systémem pak pracuje software Droneguard, který propojuje obraz z kamer, prvky umělé inteligence i dispečink. Dokáže automaticky vyhodnocovat nestandardní situace a upozornit operátory na podezřelý pohyb.
+Ovládat ho může jen vyškolený personál
+Provoz autonomního dronu podléhá schválení Úřadu pro civilní letectví a zařízení mohou obsluhovat pouze certifikovaní operátoři.
+„Máme proškolených celkem deset operátorů, kteří s dronem smějí manipulovat. Nikdo jiný se k ovládání zařízení nedostane,“ dodává Dekaň.
+Pokud se zkušební provoz v Tisové osvědčí, mohly by se podobné autonomní hlídky v příštích letech stát běžnou součástí ostrahy průmyslových areálů. Moderní technologie totiž umožňují nepřetržitý dohled nad rozsáhlými objekty, a to i tam, kde by klasická fyzická ostraha byla časově i finančně náročná.

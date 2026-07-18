@@ -1,3 +1,11 @@
+|T|Přimontoval 380 mikrofonů na dron a teď s ním nahání komáry. Příští rok ho začne prodávat|D|18.7. 09:45|P|Alex Toussaint nemá rád komáry, a tak udělal to, co by jistě napadlo každého rozumného čtenáře VTM.cz. Zajel do obchodu pro bastlíře, koupil 380 MEMS ...|X|Alex Toussaint nemá rád komáry, a tak udělal to, co by jistě napadlo každého rozumného čtenáře VTM.cz. Zajel do obchodu pro bastlíře, koupil 380 MEMS mikrofonů TDK Invensense T3902, 32 ultrazvukových vysílačů (40 kHz) a FPGA čip Artix-7 A100T.
+
+K čemu tolik součástek? Alex si z nich postavil ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Recenze filmu Odyssea: Téměř tři hodiny velkolepé filmařiny, která vrací řeckým mýtům špínu, hrůzu i lidskost|D|18.7. 09:13|P|Jeden z největších filmů tohoto roku konečně vstoupil na stříbrná plátna. O epické Odyssee od Christophera Nolana se toho namluvilo už mnoho. Zatímco ...|X|Jeden z největších filmů tohoto roku konečně vstoupil na stříbrná plátna. O epické Odyssee od Christophera Nolana se toho namluvilo už mnoho. Zatímco mnoho filmových fanoušků si rezervovalo lístky do IMAXu již rok před premiérou, řada konzervativních diváků snímek kvůli obsazení předem odsoudila a ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Onsemi se v rámci úspor zbavuje dvou továren na čipy. Jedna důležitá přejde do rukou Evropanů|D|18.7. 07:45|P|Onsemi prodává dvě továrny za skoro dvě miliardy korun, ročně ušetří přes 700 milionů • . • Švédský Silex, do loňska částečně čínský, díky koupené ame...|X|Onsemi prodává dvě továrny za skoro dvě miliardy korun, ročně ušetří přes 700 milionů • . • Švédský Silex, do loňska částečně čínský, díky koupené americké továrně zdvojnásobí kapacity. • Miliardová rožnovská investice visí ve vzduchu, protože vláda stále nerozhodla o státní pobídce.
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|

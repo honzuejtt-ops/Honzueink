@@ -1,0 +1,5 @@
+Alex Toussaint nemá rád komáry, a tak udělal to, co by jistě napadlo každého rozumného čtenáře VTM.cz. Zajel do obchodu pro bastlíře, koupil 380 MEMS mikrofonů TDK Invensense T3902, 32 ultrazvukových vysílačů (40 kHz) a FPGA čip Artix-7 A100T.
+
+K čemu tolik součástek? Alex si z nich postavil ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

@@ -1,4 +1,4 @@
 Článek
-Problémy se službami uživatelé začali hlásit v neděli ráno evropského času. Hlášení o chybách eviduje server DownDetector.
-Společnost Meta, která služby jako Facebook, Instagram nebo WhatsApp provozuje, k výpadku zatím nevydala žádné oficiální prohlášení.
-Zatím není ani jasné, jestli se výpadek týká všech uživatelů, nebo jen některých.
+Problémy se službami uživatelé začali hlásit v neděli ráno evropského času. Hlášení o chybách eviduje server DownDetector. Výpadek se nicméně týkal jen webových verzí pro počítače. Aplikace, například v telefonech, fungovaly. Před polednem se provoz služeb podařilo obnovit.
+Společnost Meta, která služby jako Facebook, Instagram nebo WhatsApp provozuje, k výpadku zatím nevydala žádné oficiální prohlášení. Není tak zřejmá příčina výpadku.
+Není ani jasné, jestli se výpadek týkal všech uživatelů, nebo jen některých.

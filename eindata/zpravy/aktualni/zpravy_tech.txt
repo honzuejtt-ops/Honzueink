@@ -1,4 +1,12 @@
-|T|Nový X11 server napsaný v x86 assembleru, KDE zase úspornější|D|18.7. 22:00|P|V dnešním přehledu doženeme novinky v GNOME za poslední dva týdny, podíváme se blíže na KDE Plasmu a představíme si pomocí AI vznikající X11 server ps...|X|Týden v KDE: další snížení potřeby RAM a spousta oprav
+|T|Zatímco spojenci teprve čekají na F-35, v USA se už chystají na budoucnost. Autonomní stíhačka poprvé vystřelila|D|19.7. 05:45|P|Stíhací bojový dron Anduril YFQ-44A amerického letectva poprvé odpálil střelu vzduch-vzduch AIM-120. Test se odehrál nad pouští Mojave v Kalifornii.
+
+...|X|Stíhací bojový dron Anduril YFQ-44A amerického letectva poprvé odpálil střelu vzduch-vzduch AIM-120. Test se odehrál nad pouští Mojave v Kalifornii.
+
+Letoun zvládl většinu mise samostatně, ale konečné povolení k odpalu vydal lidský operátor. To odpovídá dosavadní americké politice, podle níž musí ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Vybíráme nejlepší tahové strategie. Veďte armádu koček, připomeňte si nepřekonané Heroes of Might & Magic|D|19.7. 05:10|P|Při hraní čehokoliv musíme vždy dobře promýšlet své další kroky. Nejvíc to ale platí u her, kde jeden špatný tah může znamenat obrat celé situace. Prá...|X|Při hraní čehokoliv musíme vždy dobře promýšlet své další kroky. Nejvíc to ale platí u her, kde jeden špatný tah může znamenat obrat celé situace. Právě takové najdete v našem článku.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Nový X11 server napsaný v x86 assembleru, KDE zase úspornější|D|18.7. 22:00|P|V dnešním přehledu doženeme novinky v GNOME za poslední dva týdny, podíváme se blíže na KDE Plasmu a představíme si pomocí AI vznikající X11 server ps...|X|Týden v KDE: další snížení potřeby RAM a spousta oprav
 Přehled novinek projektu desktopového prostředí KDE opět v podání Nate Grahama a Johna Venesse.
 „Nejstarší“ verzí, o které dnes bude řeč, je aktualizační vydání Plasma 6.6.7. Zde vývojáři opravili systémová nastavení, část KWin efektů, kde bylo potřeba opravit nastavení položek, kde výchozí hodnoty pozměňuje sama distribuce systému. Do řady 6.6 už toho obecně bývá méně, o to výživnější jsou opravy pro Plasmu 6.7.
 Plasma 6.7.3 dostává opravu jedné regrese v ksystemstats  vedoucí k pádu při probouzení ze spánku. Dále je řešena netypická situace kolem nastavení času spánku, když jej přeruší některé monitory přesně v momentě, kdy je vypnutí do spánku realizováno. Plasma 6.7.4 dostává řešení spousty dalších chyb, včetně padání Discoveru, vzdálené plochy, vzhledu některých částí Nastavení systému i Discoveru.

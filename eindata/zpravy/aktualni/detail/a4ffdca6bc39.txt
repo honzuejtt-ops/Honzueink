@@ -1,0 +1,262 @@
+Ve druhém článku o projektu GoGPU navážeme na úvodní článek, ve kterém jsme se primárně věnovali popisu základů knihovny gg určené pro vykreslování (rendering) 2D grafiky. Dnes popis této knihovny dokončíme a navíc si ukážeme i k ní „přidružené“ knihovny pojmenované gg-pdf a gg-svg, které slouží k exportu 2D grafiky do vektorových formátů PDF a SVG.
+Co se dozvíte v článku
+- Metody Context.Stroke a Context.Fill
+- Specifikace barvy hexa tripletem
+- Koncept štětce (brush)
+- Kombinace výplně a obrysu?
+- Vykreslení překrývajících se obrazců
+- Překrývající se obrazce a alfa složka barvy, režimy prolínání
+- Pravidla pro vyplňování obrazců, jejichž hrany se překrývají
+- Gradientní barevné přechody využitelné při kreslení vyplněných obrazců
+- Lineární gradient
+- Specifikace většího množství barev gradientního přechodu
+- Radiální gradient
+- Gradient závislý na úhlu
+- Uložení 2D scény do vektorových formátů
+- Vektorový formát SVG
+- Provedení exportu vektorové kresby do formátu SVG
+- Export složitějších kreseb do formátu SVG
+- Propojení 2D grafiky a grafického uživatelského rozhraní
+- Repositář s demonstračními příklady
+- Odkazy na Internetu
+Export do rastrových formátů (PNG, JPG, GIF atd.) totiž podporuje přímo knihovna gg, takže pro něj není zapotřebí instalovat další knihovnu. V závěrečné části si navíc řekneme, jak lze knihovnu gg využít pro vykreslování (interaktivní) 2D grafiky do okna. Projekt GoGPU totiž podporuje i tvorbu plnohodnotných desktopových aplikací s vlastními okny, grafickým uživatelským rozhraním a interaktivní 2D či 3D grafikou.
+Metody Context.Stroke a Context.Fill
+Začněme krátkým zopakováním základů knihovny gg. V dnešním prvním demonstračním příkladu se nejprve smaže plocha celého rastrového obrázku s rozlišením 400×300 pixelů zvolenou barvou. Následně je do obrázku vykreslen obrys obdélníku:
+Úplný zdrojový kód dnešního prvního demonstračního příkladu vypadá následovně:
+package main
+ 
+import "github.com/gogpu/gg"
+ 
+func main() {
+        // rozměry rastrového obrázku
+        const width = 400
+        const height = 300
+ 
+        // jméno souboru s výsledným obrázkem
+        const fileName = "01.png"
+ 
+        // vytvoření kontextu
+        dc := gg.NewContext(width, height)
+ 
+        // vykreslování s využitím kontextu
+        color := gg.RGBA{R: 0.9, G: 0.9, B: 0.7, A: 1.0}
+        dc.ClearWithColor(color)
+ 
+        const border = 40
+        dc.DrawRectangle(border, border, width-border*2, height-border*2)
+        dc.SetRGB(0.0, 0.0, 0.0)
+ 
+        // vykreslení obrysu
+        dc.Stroke()
+ 
+        // uložení výsledného rastrového obrázku
+        dc.SavePNG(fileName)
+}
+Kromě vykreslení obrysu obrazců či cesty metodou Context.Stroke je možné provést i vyplnění uzavřeného 2D obrazce metodou Context.Fill. Výsledný obrázek bude (podle očekávání) v tomto případě zcela odlišný:
+Opět si pochopitelně uvedeme úplný zdrojový kód tohoto příkladu:
+package main
+ 
+import "github.com/gogpu/gg"
+ 
+func main() {
+        // rozměry rastrového obrázku
+        const width = 400
+        const height = 300
+ 
+        // jméno souboru s výsledným obrázkem
+        const fileName = "02.png"
+ 
+        // vytvoření kontextu
+        dc := gg.NewContext(width, height)
+ 
+        // vykreslování s využitím kontextu
+        color := gg.RGBA{R: 0.9, G: 0.9, B: 0.7, A: 1.0}
+        dc.ClearWithColor(color)
+ 
+        const border = 40
+        dc.DrawRectangle(border, border, width-border*2, height-border*2)
+        dc.SetRGB(0.3, 0.7, 0.9)
+ 
+        // vyplnění tvaru
+        dc.Fill()
+ 
+        // uložení výsledného rastrového obrázku
+        dc.SavePNG(fileName)
+}
+Specifikace barvy hexa tripletem
+V předchozích dvou demonstračních příkladech jsme barvu obrysu obdélníku či jeho vnitřní plochy specifikovali metodou Context.SetRGB, které se předávaly tři barvové složky R, G, B v rozsahu 0,0 až 1,0:
+func (c *Context) SetRGB(r, g, b float64)
+    SetRGB sets the current color using RGB values (0-1).
+Například:
+dc.SetRGB(0.3, 0.7, 0.9)
+V úvodním článku jsme si taktéž ukázali metodu Context.SetRGBA, která umožňuje barvě přiřadit i alfa kanál:
+func (c *Context) SetRGBA(r, g, b, a float64)
+    SetRGBA sets the current color using RGBA values (0-1).
+Například:
+dc.SetRGBA(0.3, 0.7, 0.9, 0.5)
+Ovšem barvu lze zadat i dalšími způsoby. Užitečná je metoda Context.SetHexColor, která umožňuje specifikovat barvu v prostoru RGB klasickým hexa tripletem (popř. i s přidanou informací o hodnotě alfa složky):
+func (c *Context) SetHexColor(hex string)
+    SetHexColor sets the current color using a hex string.
+Právě tuto metodu použijeme i v dalších demonstračních příkladech, protože zápis barvy tímto způsobem je poměrně dobře známý:
+dc.DrawRectangle(border, border, width-border*2, height-border*2)
+// barva zapsaná v hexa triplet formátu
+dc.SetHexColor("44aadd")
+ 
+// vyplnění tvaru
+dc.Fill()
+Výsledek by měl vypadat následovně:
+Opět si pochopitelně ukážeme celý zdrojový kód příkladu, který vykreslil třetí obrázek:
+package main
+ 
+import "github.com/gogpu/gg"
+ 
+func main() {
+        // rozměry rastrového obrázku
+        const width = 400
+        const height = 300
+ 
+        // jméno souboru s výsledným obrázkem
+        const fileName = "03.png"
+ 
+        // vytvoření kontextu
+        dc := gg.NewContext(width, height)
+ 
+        // vykreslování s využitím kontextu
+        color := gg.RGBA{R: 0.9, G: 0.9, B: 0.7, A: 1.0}
+        dc.ClearWithColor(color)
+ 
+        const border = 40
+        dc.DrawRectangle(border, border, width-border*2, height-border*2)
+        // barva zapsaná v hexa triplet formátu
+        dc.SetHexColor("44aadd")
+ 
+        // vyplnění tvaru
+        dc.Fill()
+ 
+        // uložení výsledného rastrového obrázku
+        dc.SavePNG(fileName)
+}
+Koncept štětce (brush)
+S pojmem štětce (brush) se můžeme setkat v mnoha knihovnách určených pro vykreslování dvourozměrné grafiky. Většinou se rozlišuje mezi kreslicím perem (pen) a štětcem (brush), přičemž pero slouží pro vykreslení cest či obrysů a štětec pro výplň uzavřených tvarů. V knihovně gg je tomu ovšem (alespoň prozatím) jinak, protože štětec je použit jak pro kreslení obrysů, tak i pro výplně. Odlišuje se ovšem způsob jeho nastavení – SetStrokeBrush nebo SetFillBrush:
+func (c *Context) SetStrokeBrush(b Brush)
+    SetStrokeBrush sets the brush used for stroke operations. Note: In the
+    current implementation, fill and stroke share the same brush. This method is
+    provided for API symmetry and future extensibility.
+ 
+    Example:
+ 
+        ctx.SetStrokeBrush(gg.Solid(gg.Black))
+        ctx.SetStrokeBrush(gg.SolidRGB(0.5, 0.5, 0.5))
+a:
+func (c *Context) SetFillBrush(b Brush)
+    SetFillBrush sets the brush used for fill operations. This is the preferred
+    way to set fill styling in new code.
+ 
+    Example:
+ 
+        ctx.SetFillBrush(gg.Solid(gg.Red))
+        ctx.SetFillBrush(gg.SolidHex("#FF5733"))
+        ctx.SetFillBrush(gg.HorizontalGradient(gg.Red, gg.Blue, 0, 100))
+Ukažme si nejprve způsob použití metody Context.SetStrokeBrush pro nastavení štětce vykreslujícího černou barvou obrysy obrazů:
+Úplný zdrojový kód demonstračního příkladu:
+package main
+ 
+import "github.com/gogpu/gg"
+ 
+func main() {
+        // rozměry rastrového obrázku
+        const width = 400
+        const height = 300
+ 
+        // jméno souboru s výsledným obrázkem
+        const fileName = "04.png"
+ 
+        // vytvoření kontextu
+        dc := gg.NewContext(width, height)
+ 
+        // vykreslování s využitím kontextu
+        color := gg.RGBA{R: 0.9, G: 0.9, B: 0.7, A: 1.0}
+        dc.ClearWithColor(color)
+ 
+        blackColor := gg.Hex("000000")
+        dc.SetStrokeBrush(gg.Solid(blackColor))
+ 
+        const border = 40
+        dc.DrawRectangle(border, border, width-border*2, height-border*2)
+ 
+        // vykreslení obrysu
+        dc.Stroke()
+ 
+        // uložení výsledného rastrového obrázku
+        dc.SavePNG(fileName)
+}
+Nyní naopak vykreslíme vyplněný obdélník štětcem nastaveným metodou Context.SetFillBrush s výsledkem:
+Opět si ukažme úplný zdrojový kód takto upraveného demonstračního příkladu:
+package main
+ 
+import "github.com/gogpu/gg"
+ 
+func main() {
+        // rozměry rastrového obrázku
+        const width = 400
+        const height = 300
+ 
+        // jméno souboru s výsledným obrázkem
+        const fileName = "05.png"
+ 
+        // vytvoření kontextu
+        dc := gg.NewContext(width, height)
+ 
+        // vykreslování s využitím kontextu
+        color := gg.RGBA{R: 0.9, G: 0.9, B: 0.7, A: 1.0}
+        dc.ClearWithColor(color)
+ 
+        customColor := gg.Hex("44aadd")
+        dc.SetFillBrush(gg.Solid(customColor))
+ 
+        const border = 40
+        dc.DrawRectangle(border, border, width-border*2, height-border*2)
+ 
+        // vykreslení obrysu
+        dc.Fill()
+ 
+        // uložení výsledného rastrového obrázku
+        dc.SavePNG(fileName)
+}
+Kombinace výplně a obrysu?
+Kvůli tomu, že se v současné implementaci knihovny gg štětec používá jak pro výplně, tak i pro obrysy, není možné použít současně dva štětce tak, aby se například vykreslil obrys jedenkrát zapsaného obdélníku černou barvou a jeho výplň barvou odlišnou:
+blackColor := gg.Hex("000000")
+dc.SetStrokeBrush(gg.Solid(blackColor))
+ 
+customColor := gg.Hex("44aadd")
+dc.SetFillBrush(gg.Solid(customColor))
+ 
+dc.DrawRectangle(border, border, width-border*2, height-border*2)
+ 
+// vykreslení vyplněného obrysu
+dc.Fill()
+dc.Stroke()
+Výsledek nebude v tomto případě odpovídat očekávání, protože se zobrazí jen výplň a nikoli obrys:
+Zdrojový kód tohoto demonstračního příkladu vypadá následovně:
+package main
+ 
+import "github.com/gogpu/gg"
+ 
+func main() {
+        // rozměry rastrového obrázku
+        const width = 400
+        const height = 300
+ 
+        // jméno souboru s výsledným obrázkem
+        const fileName = "06.png"
+ 
+        // vytvoření kontextu
+        dc := gg.NewContext(width, height)
+ 
+        // vykreslování s využitím kontextu
+        color := gg.RGBA{R: 0.9, G: 0.9, B: 0.7, A: 1.0}
+        dc.ClearWithColor(color)
+ 
+        blackColor := gg.Hex("000000")
+        dc...
+(Pokracovani na webu)

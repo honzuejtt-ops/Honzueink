@@ -1,0 +1,24 @@
+Článek
+Od loňského prosince platí v Austrálii zákon, který zakazuje lidem mladším 16 let zakládat účty na sociálních sítích, jako jsou Instagram, Snapchat nebo YouTube. Provozovatelé mají povinnost podniknout „přiměřené kroky“, aby tomu zabránili. Vláda přitom doporučila kombinovat několik metod ověřování věku.
+Nová studie ale podle agentury Reuters naznačuje, že celý systém zatím naráží na svůj nejslabší článek.
+Tým odborníků, který už v roce 2025 pomáhal s testováním technologií pro ověřování věku, si po zavedení zákona založil 50 nových účtů. Ve všech případech uvedl věk 16 let. Ani jedna z platforem ale nepožadovala další ověření.
+Problém není ve fotografiích
+„Měli byste být vyzváni k prokázání svého věku, ale ani jednou jsme nebyli požádáni o jeho ověření nebo o použití některého z nástrojů pro ověřování věku,“ uvedl ředitel testovací společnosti KJR Andrew Hammond.
+Pozornost se dosud soustředila hlavně na technologie, které dokážou odhadnout věk podle fotografie. Jenže podle autorů studie je problém jinde. Než totiž platforma uživatele vůbec vyzve k ověření věku, musí nejprve vyhodnotit, že by mohl být mladší 16 let. A právě tento první filtr podle testů často selhává.
+Výsledek? Všech 50 testovacích účtů zůstalo aktivních. Výzkumníci je založili na devíti z deseti platforem, na které se zákaz vztahuje, včetně Instagramu, Snapchatu, TikToku a YouTube.
+Některé účty začaly dostávat reklamy na bankovní produkty určené mladým lidem. Podle Hammonda to naznačuje, že platformy určitou věkovou kategorii uživatele rozpoznaly. Jeden z testovacích účtů na síti X, který při registraci uvedl věk 16 let, navíc začal dostávat pornografický obsah.
+Platformy spoléhají na to, co uživatel napíše
+Pokud testovací uživatelé při registraci přiznali, že jim ještě nebylo 16 let, účet si nezaložili. To ale není překvapivé – málokdo, kdo chce pravidla obejít, svůj skutečný věk dobrovolně uvede.
+Zajímavější je, že pouze australská streamovací platforma Kick požadovala před vytvořením účtu skutečný důkaz o věku.
+Meta výsledky studie zpochybnila. Podle společnosti testovací účty uváděly věk nad povolenou hranicí a není jasné, zda se chovaly stejně jako skuteční uživatelé mladší 16 let. Firma zároveň uvedla, že podle doporučení regulátora mají platformy přistupovat k důkladnějšímu ověření až tehdy, když chování uživatele naznačuje, že by mohl být nezletilý, nebo když je účet nahlášen.
+Snap a TikTok se ke studii nevyjádřily. Google ani společnost X na žádost o komentář nereagovaly.
+Vláda přitvrzuje
+Australský zákaz sociálních sítí pro děti provází kritika prakticky od jeho spuštění. Studie opakovaně naznačují, že většina dětí mladších 16 let se na platformy stále dostane. Vláda proto minulý měsíc zdvojnásobila maximální pokutu za porušení pravidel a technologickým firmám pohrozila soudními kroky.
+Regulátor eSafety je ale přesvědčený, že platformy mají dostatek technologií i prostředků, aby dětem mladším 16 let v zakládání účtů zabránily. Doporučený systém podle něj funguje tak, že se kontroly postupně zpřísňují a „při správné implementaci zajišťují, že neexistuje jediné místo selhání“.
+Odborníci varovali už během přípravy
+Někteří poradci, kteří se podíleli na původním testování systému, tvrdí, že na podobný scénář upozorňovali už dříve. Podle nich se totiž dostatečně neřešilo, jak snadné bude pravidla obejít například zadáním nepravdivého data narození.
+„Chtěli jsme se věnovat otázce obcházení systému, ale stále nám bylo opakováno, že to není součástí samotného testování,“ řekl Colm Gannon z Mezinárodního centra pro pohřešované a zneužívané děti.
+Dnes podle něj právě tato cesta mezi mladými lidmi převládá. „To, co nyní vidíme, je, že právě obcházení systému se stalo hlavní metodou, kterou mladí lidé používají,“ dodal.
+Akademička Amanda Third, která se na testování podílela a nyní spolupracuje na dvouleté studii dopadů zákazu, přesto nabádá k trpělivosti. Podle ní se od platforem očekávalo, že nejprve zaměří pozornost na účty, jejichž majitelé sami uvedli, že jsou nezletilí, a teprve později začnou ve větší míře využívat sofistikovanější metody odhadu věku. „Další sada dat, která bude po tomto období shromážděna, by už mohla přinést výrazně lepší výsledky,“ uzavřela.
+Jak technologičtí giganti ověřují věk dětí na sociálních sítích?
+V době, kdy většina dospělých tráví na sociálních sítích hodiny denně, roste diskuze o tom, jak moc by měly mít děti volný přístup do online světa. V Česku se téma opět dostalo do popředí zájmu poté, co premiér Andrej Babiš oznámil, že by vláda mohla ještě letos navrhnout zákaz sociálních sítí pro děti mladší 15 let, podobně jako ve Francii či Austrálii. Sociální sítě mají již dnes řadu sofistikovaných metod, jak věk uživatelů ověřit. Využívají k tomu i umělou inteligenci.

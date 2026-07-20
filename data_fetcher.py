@@ -695,31 +695,56 @@ if __name__ == "__main__":
     for d in (zpravy_dir, cache_dir, archiv_dir):
         os.makedirs(d, exist_ok=True)
 
-    # 1. Běžné zprávy a tech/ai
+    # 1. Běžné zprávy a tech/ai — s cross-category deduplikací napříč všemi kategoriemi
+    # Priorita: Svět > ČR > Tech > Pozitivní (první kategorie si článek ponechá)
+    
     svet_data = stahni_zpravy_multi([
         ("https://ct24.ceskatelevize.cz/rss/svet", 60),
         ("https://www.novinky.cz/rss/zahranicni", 60),
     ], celkovy_limit=100)
 
-    # Cross-category deduplikace: zprávy ze světa se neobjeví v ČR sekci
     svet_titulky = {b["titulek"] for b in extrahuj_bloky(svet_data[1])}
-    print(f"  Světové zprávy: {len(svet_titulky)} unikátních titulků (budou vynechány v ČR)")
+    print(f"  Světové zprávy: {len(svet_titulky)} unikátních titulků")
 
     cr_data = stahni_zpravy_multi([
         ("https://ct24.ceskatelevize.cz/rss/domaci", 60),
         ("https://www.novinky.cz/rss/domaci", 60),
     ], celkovy_limit=100, exclude_titulky=svet_titulky)
 
-    # Obojsměrná deduplikace: odebereme i ČR titulky ze Světa
+    # Obojsměrná deduplikace Svět↔ČR — nenecháme stejný článek ve dvou rubrikách
     cr_titulky = {b["titulek"] for b in extrahuj_bloky(cr_data[1])}
     svet_bloky = extrahuj_bloky(svet_data[1])
     svet_filtrovane = [b for b in svet_bloky if b["titulek"] not in cr_titulky]
     if len(svet_filtrovane) < len(svet_bloky):
         print(f"  Dedup Svět←ČR: odebráno {len(svet_bloky) - len(svet_filtrovane)} duplikátů")
+        # Přebudujeme index i plná data, aby byly konzistentní (původní index měl všechny články)
+        detail_dir = os.path.join(SD_CESTA, 'zpravy', 'aktualni', 'detail')
+        os.makedirs(detail_dir, exist_ok=True)
+        novy_index = ""
         svet_filtrovany_text = ""
         for b in svet_filtrovane:
-            svet_filtrovany_text += b["blok"]
-        svet_data = (svet_data[0], svet_filtrovany_text)
+            titulek = b["titulek"]
+            blok = b["blok"]
+            clanek_id = hashlib.md5(titulek.encode('utf-8')).hexdigest()[:12]
+            svet_filtrovany_text += blok
+            try:
+                x_pos = blok.find("|X|")
+                e_pos = blok.find("|E|", x_pos)
+                text_clanku = blok[x_pos+3:e_pos]
+                perex_blok = blok[:x_pos+3]  # |T|...|D|...|P|...|X|
+                with open(os.path.join(detail_dir, f"{clanek_id}.txt"), 'w', encoding='utf-8') as f:
+                    f.write(text_clanku)
+                novy_index += f"{perex_blok}{clanek_id}|E|"
+            except Exception:
+                novy_index += blok  # fallback
+        svet_data = (novy_index, svet_filtrovany_text)
+    # Vždy přepočítáme svet_titulky podle aktuálního stavu dat (pro správný claimed set)
+    svet_titulky = {b["titulek"] for b in extrahuj_bloky(svet_data[1])}
+    print(f"  Svět po dedup: {len(svet_titulky)}, ČR: {len(cr_titulky)}")
+
+    # Global claimed set: Svět + ČR
+    claimed = svet_titulky | cr_titulky
+
     tech_data = stahni_zpravy_multi([
         ("https://www.lupa.cz/rss/clanky/", 20),
         ("https://www.cnews.cz/feed/", 20),
@@ -728,14 +753,25 @@ if __name__ == "__main__":
         ("https://venturebeat.com/category/ai/feed/", 20),
         ("https://openai.com/news/rss.xml", 15),
         ("https://blog.google/technology/ai/rss/", 15),
-    ], celkovy_limit=100)
+    ], celkovy_limit=100, exclude_titulky=claimed)
 
-    # 3. Pozitivní zprávy
+    tech_titulky = {b["titulek"] for b in extrahuj_bloky(tech_data[1])}
+    print(f"  Tech zprávy: {len(tech_titulky)} unikátních titulků")
+
+    # Global claimed: Svět + ČR + Tech
+    claimed = claimed | tech_titulky
+
+    # Pozitivní zprávy + české bulváry (odlehčený obsah, celebrity)
     pozit_data = stahni_zpravy_multi([
-        ("https://pozitivni-zpravy.cz/feed/", 20),
-        ("https://www.novinky.cz/rss/magazin", 30),
-        ("https://refresher.cz/rss", 20),
-    ], celkovy_limit=50, max_age_days=1)
+        ("https://pozitivni-zpravy.cz/feed/", 15),
+        ("https://www.blesk.cz/rss", 12),
+        ("https://servis.expres.cz/rss.aspx", 10),
+        ("https://www.super.cz/rss", 8),
+        ("https://www.extra.cz/rss", 5),
+    ], celkovy_limit=30, max_age_days=3, exclude_titulky=claimed)
+
+    pozit_titulky = {b["titulek"] for b in extrahuj_bloky(pozit_data[1])}
+    print(f"  Pozitivní zprávy: {len(pozit_titulky)} unikátních titulků")
 
     # 2. Archivace a ukládání zpráv do eindata/zpravy/aktualni/ a archiv/YYYY-MM-DD dle data článku
     oprav_existujici_archiv(archiv_dir)

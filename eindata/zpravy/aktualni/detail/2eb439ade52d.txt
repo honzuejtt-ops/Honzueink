@@ -1,0 +1,16 @@
+Článek
+„S uvedenými SMS o nezaplaceném parkování jsme se bohužel již setkali. Podvodníci se tímto způsobem snaží vylákat údaje k platební kartě. Obecně můžeme znovu zopakovat, že žádné SMS zprávy upozorňující na nutnost zaplacení pokut a podobně instituce nerozesílají,“ zdůraznil pro Novinky Jakub Vinčálek z Policejního prezidia.
+Pokud už člověk takovou SMS obdrží, tak by na ni neměl vůbec nereagovat a měl by ji smazat. „V případě, že bude někdo mít pochybnosti, tak se na nás může obrátit. SMS zprávy jsou rozesílány náhodně, bez znalosti skutečného stavu věcí,“ doplnil Vinčálek.
+Poměrně nový podvod obvykle začíná zprávou od odesílatele označeného jako „InfoSMS“, přičemž esemeska obsahuje větu: „K vašemu vozidlu evidujeme nezaplacený účet za parkování. Zkontrolujte prosím a uhraďte platbu online.“
+Záměrně nízká částka
+Součástí SMS je rovněž odkaz na stránky, kde je možné pokutu uhradit. Působí jako proklik na aplikaci EasyPark, kterou dnes používají tisíce řidičů, a výzva tak může působit naprosto věrohodně. Místo oficiálních adres jako easypark.cz nebo easypark.com však vede na doménu easyepark.cc nebo easyfpark.vu/cz.
+Po kliknutí na odkaz se otevře stránka, která vzhledem věrně kopíruje originální web. Nechybí logo, barevné schéma ani sekce s často kladenými dotazy. Podvod by ovšem mohl odhalit jednoduchý test. Stránka vyzývá k zadání registrační značky vozidla. Když uživatel zadá třeba jen vymyšlenou SPZ, systém okamžitě „najde“ neuhrazený dluh a zobrazí fakturu na dvacet korun. Ve skutečnosti nejde o žádné ověření v databázi, ale o předem připravený scénář.
+Uvedená částka je zvolena záměrně. Dvacet korun je natolik nízká suma, že mnoho lidí raději zaplatí, než aby řešili možné komplikace. Následuje formulář požadující číslo platební karty, datum expirace, bezpečnostní CVV kód a dokonce i telefonní číslo. Právě tehdy se údaje dostávají do rukou podvodníků. Ti je mohou zneužít k neoprávněným platbám nebo k dalším podvodům, například telefonátům od falešných bankéřů.
+Doménu easypark.vu označila bezpečnostní služba Gridinsoft jako phishing s velmi nízkým skóre důvěryhodnosti a upozorňuje na snahu vylákat přihlašovací či platební údaje.
+Jak se bránit?
+- Na podezřelé SMS nereagujte. Neotevírejte odkazy, neodpovídejte na zprávu a rovnou ji smažte. Instituce běžně neposílají SMS s výzvou k okamžité úhradě pokut či nedoplatků.
+- Kontrolujte adresu webu. Před kliknutím si vždy ověřte doménu. Podvodníci často používají adresy, které se originálu podobají jen na první pohled, například s přidaným písmenem nebo jinou koncovkou.
+- Nevyplňujte údaje o platební kartě. Pokud stránka po vás chce číslo karty, datum expirace, CVV kód nebo telefonní číslo, buďte obezřetní. Tyto údaje mohou skončit v rukou podvodníků.
+- Ověřujte si výzvy jinou cestou. Máte-li pochybnosti, zkontrolujte stav plateb přímo v oficiální aplikaci nebo na oficiálních webových stránkách služby, případně kontaktujte její zákaznickou podporu.
+- Nenechte se přesvědčit nízkou částkou. Podvodníci často požadují jen několik desítek korun, aby vás přiměli zaplatit bez přemýšlení. Nízká částka neznamená, že je výzva důvěryhodná.
+- Už jste jednali? Reagujte okamžitě. Pokud jste zadali údaje o platební kartě, neprodleně kontaktujte svou banku, kartu zablokujte a podezřelou událost oznamte Policii ČR.

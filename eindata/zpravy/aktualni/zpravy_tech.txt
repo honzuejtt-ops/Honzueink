@@ -1,4 +1,4 @@
-|T|Žádné zprávy|D||P|Nebyly nalezeny.|X|Zkuste to později.|E||T|AI mění svět open source: zahlcení, inflace projektů a klesající motivace|D|21.7. 22:00|P|AI tento rok naplno vtrhla do vývoje softwaru a výrazně ovlivňuje také open-source projekty. V open source v poslední době v souvislosti s AI pozoruji...|X|Inflace projektů
+|T|AI mění svět open source: zahlcení, inflace projektů a klesající motivace|D|21.7. 22:00|P|AI tento rok naplno vtrhla do vývoje softwaru a výrazně ovlivňuje také open-source projekty. V open source v poslední době v souvislosti s AI pozoruji...|X|Inflace projektů
 Jedním z trendů, který AI přináší obecně, je exploze obsahu. Výsledky vyhledávání jsou plné webů s vygenerovaným obsahem, sociální sítě jsou zahlcené vygenerovanými obrázky a videi. Zdrojové kódy nejsou výjimkou. GitHub se dnes topí v čím dál větším množství repozitářů.
 Není to ale tak, že by vznikalo větší množství kvalitních projektů. Naopak jsou to projekty, u kterých člověk vůbec netuší, jestli se na ně může spolehnout. Pokud člověk dřív narazil na obsáhlejší projekt, který měl tisíce řádků kódu, byl tam určitý předpoklad, že když si dal někdo tu práci něco takového vytvořit, bude mít o daném problému nějaké znalosti, bude mít ke svému výtvoru nějaký vztah a bude mít nějakou ochotu ho dál udržovat.
 Na tohle už se dnes nedá vůbec spolehnout. Projekt o několika tisících řádcích dokážete vygenerovat během chvilky. Může to být nějaký úplný nesmysl, ba i nebezpečná věc, může to být něco funkčního, co si někdo vygeneroval pro svoji potřebu, zveřejnil na GitHubu, ale nemá žádný zájem z toho udělat open-source projekt. Ten totiž nedělá repozitář s kódem.
@@ -28,7 +28,24 @@ Příkladem budiž opět MeshCore, kde samotný protokol a firmware mají otevř
 V éře umělé inteligence tedy vnímám open source jako něco, kde obětujete svou krev, pot a slzy, aby vás ostatní mohli okrádat – a to nespočetnými způsoby.
 Můžeme s pohledem Powella nesouhlasit, ale reprezentuje legitimní postoj, který kolem sebe vídám čím dál častěji. Pozoruji kolem sebe lidi, kteří byli celoživotní zastánci open source, zveřejňovali vše do posledního pomocného skriptu, protože se chtěli podělit. Dnes si tyhle věci nechávají pro sebe a ostatním je případně dávají jen na vyžádání. Mají k tomu podobné důvody jako Powell.
 Open source rostlo...
-(Pokracovani na webu)|E||T|Introducing the ChatGPT for small business program|D|21.7. 17:00|P|OpenAI launches the ChatGPT for Small Businesses program, helping entrepreneurs build AI skills, automate work, and grow with ChatGPT Work.|X|Introducing the ChatGPT for small business program
+(Pokracovani na webu)|E||T|Softwarová sklizeň (22. 7. 2026): vytiskněte zdrojové kódy se zvýrazněním syntaxe|D|21.7. 22:00|P|Uklidíme dotfiles do profilů, necháme si vygenerovat čerstvý mirrorlist pro pacman, vytiskneme zdrojáky s náhledem přímo v terminálu, dáme čtyřem AI a...|X|WinPrint
+WinPrint je pokračování tiskového nástroje na zdrojové kódy z roku 1988, napsané v C# a .NET. Tiskne zdrojáky ve stovkách jazyků se zvýrazněním syntaxe a číslováním řádků, HTML, Markdown jako formátovaný dokument včetně tabulek a mermaid diagramů, a také ANSI soubory se zachováním barev.
+Zvládá tisk více stránek na list, hlavičky a patičky s makry a takzvané definice listů pro opakované tiskové úlohy. Rozhraní jsou tři: GUI pro nelinuxové systémy, multiplatformní CLI a terminálové wp nad Terminal.Gui, které kreslí náhled tisku přímo v terminálu přes sixel nebo kitty grafiku, se stránkováním, zoomem i posouváním myší.
+Typické použití je převod Markdownu do PDF: wp print soubor.md --pdf výstup.pdf vyrobí stránkovaný dokument s vyrenderovanými mermaid diagramy, ve výchozím stavu lokálně bez sítě (mermaid.ink je opt-in). Přepínačem --printer lze mířit i na libovolnou tiskovou frontu včetně virtuálních PDF tiskáren.
+Termpolis
+Termpolis je terminál, který spouští běžné CLI agenty Claude Code, Codex, Gemini a Qwen Code a přidává jim společnou lokální paměť jménem Mneme. Ta čte transkripty minulých sezení, převádí je na vektory přibaleným modelem bge-small-en-v1.5 běžícím lokálně ve WASM a ukládá je do vektorového indexu a znalostního grafu v souborech JSONL. Všichni čtyři agenti k této paměti přistupují přes vestavěný MCP server se 34 nástroji, takže co zjistí jeden, najdou i ostatní.
+Po dokončení úkolu si paměť uloží shrnutí toho, co se agent naučil, na pozadí slučuje duplicity a při vyhledávání upřednostňuje záznamy, které se v minulosti osvědčily; na disku je vše šifrované AES-256-GCM s klíčem v systémové klíčence. K tomu Termpolis nabízí funkci Second Opinion, kdy poslední odpověď agenta zkontroluje jiný nainstalovaný model v režimu jen pro čtení, dále swarm až osmi souběžných agentů řízených dalším agentem v roli dirigenta a Token Headroom, lokální proxy, která komprimuje data posílaná z Claude Code do API, aniž by rozbila prompt cache.
+Součástí je i bezpečnostní vrstva: v každém odeslaném promptu hledá podle 97 pravidel tajné klíče a hesla. Autor přitom otevřeně přiznává, že jde jen o detekci. Odeslaný klíč už zastavit nelze, nástroj jen upozorní, které údaje je potřeba vyměnit. Skutečné blokování nasazuje tam, kde to jde: git hooky zastaví commit i push, pokud je v diffu nalezen klíč, a citlivé údaje se odstraňují ještě před zápisem do paměti. Skilly a MCP servery třetích stran procházejí před instalací statickou kontrolou a všechny události se zapisují do lokálního auditního logu ve formátu JSONL. Aplikace nesbírá telemetrii, nevyžaduje účet a je pod licencí Apache-2.0.
+mntn
+mntn je nástroj příkazové řádky pro správu dotfiles napsaný v Rustu, který staví na profilech: pojmenovaných sadách konfigurací pro různé kontexty, třeba pracovní, osobní nebo minimální. Mezi profily se přepíná příkazem mntn use, takže na jednom stroji může žít víc setupů a aktivní je vždy ten, který se hodí k situaci.
+Trojice základních příkazů  backup, restore a doctor kopíruje sledované konfigurace do ~/.mntn/backup/, obnovuje je zpět a kontroluje registry i drift konfigurací; doctor fix umí přeformátovat validní JSON, skutečné syntaktické chyby ale neopraví.
+Co se sleduje, určují tři registry: config.registry.json pro běžné dotfiles, package.registry.json pro exporty seznamů balíčků z package managerů a encrypted.registry.json pro citlivé soubory, které se ukládají šifrovaně. Passphrase k nim jde přes mntn secret set uložit do systémové klíčenky, případně ji lze zadávat jednorázově přepínačem --ask-password. Celý adresář ~/.mntn je git repozitář: příkaz git v něm spustí libovolný gitový příkaz a sync provede add, commit s výchozí zprávou a push najednou.
+reflector-rs
+reflector-rs je přepis známého skriptu Reflector do Rustu. Stahuje aktuální data o zrcadlech Arch Linuxu z webového rozhraní Mirror Status a generuje z nich mirrorlist pro pacman, přičemž cílí na co nejvěrnější kopii chování původního nástroje s minimem závislostí. Filtry se dají kombinovat: stáří poslední synchronizace, hlášené zpoždění, země (včetně preferovaného pořadí a glob vzoru *), protokol, podpora IPv4/IPv6, hostování ISO obrazů nebo regulární výrazy pro zahrnutí či vyloučení serverů.
+Řadit jde podle stáří, rychlosti stahování, země, skóre nebo zpoždění, výsledek lze omezit na zadaný počet nejrychlejších zrcadel a měření rychlosti rozdělit mezi více vláken. Typické použití vypadá takto:  reflector --latest 5 --sort rate --save /etc/pacman.d/mirrorlist.
+Balíček z AUR přináší i man stránky a systemd jednotky – po úpravě konfigurace v /etc/xdg/reflector/reflector.conf  stačí zapnout reflector.timer a mirrorlist se obnovuje automaticky. Instalace přes cargo install arch-reflector nainstaluje jen samotnou binárku bez těchto doplňků. Minimální podporovaná verze Rustu kopíruje stabilní Debian, aktuálně 1.85, licence je GPL-2.0.
+Blbinka
+Hollywood udělá z obyčejného terminálu scénu z hackerského filmu. Rozdělí okno pomocí tmuxu na několik panelů a v každém spustí něco, co vypadá dramaticky: hexdump, kompilaci jádra, htop, scrollující logy, nmap nebo padající kód z Matrixu. Obsah panelů se náhodně obměňuje, takže to celé působí, jako by se právě prolamoval Pentagon, i když se ve skutečnosti neděje vůbec nic.|E||T|Introducing the ChatGPT for small business program|D|21.7. 17:00|P|OpenAI launches the ChatGPT for Small Businesses program, helping entrepreneurs build AI skills, automate work, and grow with ChatGPT Work.|X|Introducing the ChatGPT for small business program
 Helping entrepreneurs use AI to turn ambitious ideas into growing businesses.
 Small businesses start with people who are exceptional at what they do—a craft, a trade, an idea they believe in. But building a business demands far more than expertise alone. With a lean team, limited time, and few resources, every owner is expected to be the marketer, accountant, salesperson, operator, and strategist all-in-one. We believe AI can change that by being a force multiplier that extends individual expertise, increases capacity, and gives everyone access to world class tools they need to achieve their greatest ambitions.
 We’re announcing the launch of our ChatGPT for small businesses program, an initiative to help small businesses be more productive and scale their businesses with ChatGPT. The ChatGPT for small businesses program includes:
@@ -53,7 +70,11 @@ I případné uvolnění této krize na trhu a pokles cen se k nám tím pádem 
 Prodeje Steam Machine začátkem prázdnin: 12–15 tisíc kusů týdně?
 Valve uvádí, že prodeje Steam Machine jsou dostupností pamětí výrazně ovlivněné – firma totiž prodává všechny kusy, které stíhá vyrábět, ale limitujícím faktorem výroby je čistě množství paměťových čipů, které firma sežene a které je dost omezené. Valve Bloombergu nesdělilo čísla, ale objevily se odhady založené na tom, že zařízení se zpočátku umístilo na druhém místě v globálním žebříčku tržeb na Steamu. Web Boiling Steam z toho vyextrapoloval, že v první polovině července to mohlo odpovídat prodejům možná 12–15 tisíc kusů týdně.
 Je to ale asi hodně hrubý odhad s řadou neznámých, takže může mít významnou odchylku od reality. A od té doby se pozice Steam Machine v žebříčku zhoršila: Dnes bylo zařízení až páté za hrami Counter-Strike 2 (hra má free 2 play model, takže tržby jsou z mikrotransakcí za různé loot crates a podobné „zboží“), Palworld, Dota 2 (také free 2 play) a Battlefield 6. To by mělo implikovat, že prodeje Steam Machine klesly z předchozí vyšší úrovně. To dává smysl, při premiéře bývá zájem kupujících vždy nejvyšší. Také ale mohl klesnout počet zařízení, které Valve dokáže týdně expedovat, protože mohla dojít zásoba připravená dopředu pro vydání a ne počet lačnících zájemců.
-Zdroje: VideoCardz, techPowerUp, Boiling Steam, Steam|E||T|Brněnská AI pro kolonoskopii se dostala do sítě nemocnic v Česku a na Slovensku|D|21.7. 15:25|P|Brněnský zdravotnicko-technologický startup Maia Labs se dostal plošně do sítě nemocnic Agel. Český nemocniční holding nasadil systém ColoMaia ve 14 s...|X|Brněnský zdravotnicko-technologický startup Maia Labs se dostal plošně do sítě nemocnic Agel. Český nemocniční holding nasadil systém ColoMaia ve 14 svých nemocnicích v Česku a na Slovensku, čímž má jít o jedno z rozsáhlejších nasazení české zdravotnické AI v tuzemské nemocniční síti.
+Zdroje: VideoCardz, techPowerUp, Boiling Steam, Steam|E||T|Od SOS volání k běžné výbavě. Do pěti let bude mít polovina smartphonů satelitní konektivitu|D|21.7. 16:45|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Klasické drátové pecky se vracejí. Sivga M260 dostaly odpojitelný kabel, USB-C i vlastní převodník|D|21.7. 15:45|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Brněnská AI pro kolonoskopii se dostala do sítě nemocnic v Česku a na Slovensku|D|21.7. 15:25|P|Brněnský zdravotnicko-technologický startup Maia Labs se dostal plošně do sítě nemocnic Agel. Český nemocniční holding nasadil systém ColoMaia ve 14 s...|X|Brněnský zdravotnicko-technologický startup Maia Labs se dostal plošně do sítě nemocnic Agel. Český nemocniční holding nasadil systém ColoMaia ve 14 svých nemocnicích v Česku a na Slovensku, čímž má jít o jedno z rozsáhlejších nasazení české zdravotnické AI v tuzemské nemocniční síti.
 ColoMaia se napojuje na endoskopické zařízení a v reálném čase při vyšetření analyzuje obraz z vyšetření. Pokud zachytí podezřelý polyp nebo jinou lézi, upozorní na ni lékaře vizuálně i zvukem. Technologie má fungovat jako další kontrola při vyšetření a pomáhat snižovat riziko, že lékař některý nález přehlédne. Podle Agelu nasazení AI výsledky už přineslo a díky systému se měla zvýšit detekční úspěšnost.
 Startup Maia Labs vznikl v roce 2022 a jeho systém už podle dřívějších informací firmy využil více než 10 tisíc vyšetření. Startup nedávno získal pro ColoMaia evropskou certifikaci umožňující plnohodnotný komerční prodej v EU a připravuje také schvalování u amerického regulátora FDA. Systém si nainstalovala také americká Mayo Clinic.|E||T|V Česku možná bude drony nad kritickou infrastrukturou likvidovat i ostraha, ne jen policisté a vojáci|D|21.7. 14:59|P|Ministerstvo vnitra společně s Ministerstvem dopravy připravilo návrh nové legislativy zaměřené na to, jak je možné zasahovat proti dronům nacházející...|X|Ministerstvo vnitra společně s Ministerstvem dopravy připravilo návrh nové legislativy zaměřené na to, jak je možné zasahovat proti dronům nacházejícím se v bezletové zóně nad kritickou infrastrukturou. Nově by o zásazích mohly rozhodovat a provádět je firmy, reálně pak zaměstnanci společností, jako je ostraha. Dosud to je na policii, té se mají zároveň rozšířit i pravomoci zničit dron.
 A to v případě, kdy má policista podezření na špionáž. Nyní se řídí tím, jestli stroj bezprostředně ohrožuje život, zdraví, majetek značné hodnoty nebo veřejný pořádek.Podle návrhu by zaměstnanci firem zasahujících proti dronům měli být řádně proškoleni a mít vhodné vybavení.
@@ -62,13 +83,33 @@ Obrana proti dronům se v Česku řeší, jednou z institucí, která se už pod
 Zóny se zákazy nebo podmínkami pro provoz dronů ukazuje oficiální mapový nástroj veřejné správy DroneMap.|E||T|Stanice AMC bude přes léto volně dostupná zákazníkům Skylinku a FreeSatu|D|21.7. 14:55|P|Filmový a seriálový program AMC bude od 22. července do 1. září volně dostupný všem českým a slovenským zákazníkům satelitních platforem Skylink a Fre...|X|Filmový a seriálový program AMC bude od 22. července do 1. září volně dostupný všem českým a slovenským zákazníkům satelitních platforem Skylink a FreeSat. Nabídka se týká také internetové televize Skylink Live TV.
 Diváci tak budou moci AMC sledovat bez ohledu na to, zda je stanice součástí jejich běžného předplaceného balíčku.
 Jedním z hlavních titulů prázdninového programu bude třetí řada seriálu The Walking Dead: Dead City. AMC ji začne vysílat 27. července, souběžně s americkou premiérou. Seriál navazuje na původní The Walking Dead a sleduje další osudy Maggie a Negana. Děj nové řady se znovu odehrává na Manhattanu, kde se hlavní postavy pokoušejí vybudovat fungující komunitu.
-Stanice vedle seriálů nabízí také celovečerní filmy a další pořady vlastní produkce. Zákazníci satelitních platforem ji najdou na programové pozici 46, respektive ti slovenští na pozici 34.|E||T|Robotaxíky Tesly dostanou vlastní Starlink, jde spíš o Muskův byznys než technologii|D|21.7. 09:58|P|Taxíky bez řidiče Tesla Cybercab budou vedle mobilní konektivity disponovat i terminály pro satelitní internet Starlink. SpaceX tak najde v Tesle velk...|X|Tesla dál pracuje na ladění svých robotických taxíků Cybercab, které podle Elona Muska měly být v sériové výrobě již letos. To se prozatím nepovedlo, a tak nás Tesla krmí dalšími technologickými zajímavostmi. Mimo jiné všechna robotaxi dostanou terminál pro použití satelitního internetu Starlink.
+Stanice vedle seriálů nabízí také celovečerní filmy a další pořady vlastní produkce. Zákazníci satelitních platforem ji najdou na programové pozici 46, respektive ti slovenští na pozici 34.|E||T|Aktualizace, která uvaří vybrané počítače značky Dell. Microsoft musel narychlo hasit problém ve Windows 11|D|21.7. 14:45|P|Červencová aktualizace KB5101650 nesedla některým počítačům od Dellu • . • Mohou se přehřát a vypnout, případně běží pomaleji. • Příčinu řeší mimořádn...|X|Červencová aktualizace KB5101650 nesedla některým počítačům od Dellu • . • Mohou se přehřát a vypnout, případně běží pomaleji. • Příčinu řeší mimořádná aktualizace KB5121767.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Čínská robotická kadibudka přijede až k posteli. Má lidar a pak po sobě sama uklidí|D|21.7. 13:45|P|Čína už dávno ovládla robotickou elektroniku pro domácnost, a tak bylo jen otázkou času, kdy se nějaká ta autonomie objeví i na záchodě. První vlaštov...|X|Čína už dávno ovládla robotickou elektroniku pro domácnost, a tak bylo jen otázkou času, kdy se nějaká ta autonomie objeví i na záchodě. První vlaštovkou je toaletní mísa Xiaoban, která vám v případě nouze zachrání prostěradlo. Sama totiž přijede až k posteli.
+
+Výrobcem je jistý Tuobang, který ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Výškově nastavitelný stůl AlzaErgo zlevnil na historické minimum. Udělejte něco pro své zdraví|D|21.7. 12:45|P|AlzaErgo Table ET4 AiO Touch ještě nikdy nebyl levnější. • Má motor, antikolizní systém, displej a paměť na tři pozice. • K dispozici je v černé i bíl...|X|AlzaErgo Table ET4 AiO Touch ještě nikdy nebyl levnější. • Má motor, antikolizní systém, displej a paměť na tři pozice. • K dispozici je v černé i bílé variantě a se dvěma rozměry desek.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Oneplay a 30 nejoblíbenějších filmů a seriálů v červnu 2026. Tohle Češi na bývalém Voyo nejvíc sledují|D|21.7. 11:45|P|Tyto filmy a seriály jsou teď na Oneplay (dříve Voyo) nejoblíbenější. Nerozlišujeme žánr, stáří ani hodnocení na filmových webech. Jde o souhrnnou obl...|X|Tyto filmy a seriály jsou teď na Oneplay (dříve Voyo) nejoblíbenější. Nerozlišujeme žánr, stáří ani hodnocení na filmových webech. Jde o souhrnnou oblíbenost za poslední týdny, kterou zjišťuje a počítá web FlixPatrol.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Nejdražší třídní sraz superhrdinů je tady. Avengers: Doomsday mají první velký trailer|D|21.7. 11:23|P|Po několika měsících čekání a sérii krátkých upoutávek konečně dorazil plnohodnotný trailer k očekávanému filmu Avengers: Doomsday. Do kin se vracejí ...|X|Po několika měsících čekání a sérii krátkých upoutávek konečně dorazil plnohodnotný trailer k očekávanému filmu Avengers: Doomsday. Do kin se vracejí staří Avengers, původní X-Meni i Fantastická čtyřka. A především Robert Downey Jr. – tentokrát ovšem nikoliv jako Iron Man, ale coby Doctor Doom.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Copilot domluvil. Microsoft ruší podcasty a váš vygenerovaný obsah si vezme do hrobu|D|21.7. 10:45|P|Copilot od loňska podporuje tvorbu podcastů na vámi zvolená témata. • Microsoft potichu oznámil, že funkci v srpnu zcela zruší. • Ani starší podcasty ...|X|Copilot od loňska podporuje tvorbu podcastů na vámi zvolená témata. • Microsoft potichu oznámil, že funkci v srpnu zcela zruší. • Ani starší podcasty si pak už neposlechnete a export není k dispozici.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Pohozené sáčky od svačiny jsou hotový poklad. Nová technologie slibuje, že z nich budeme vyrábět letecké palivo|D|21.7. 10:07|P|Naše civilizace každý rok vyprodukuje více než 460 milionů tun plastů. Většina se promění v odpad, který se kvůli výrobním řetězcům hromadí zejména v ...|X|Naše civilizace každý rok vyprodukuje více než 460 milionů tun plastů. Většina se promění v odpad, který se kvůli výrobním řetězcům hromadí zejména v rozvojových zemích. Na průměrného Čecha ročně připadne zhruba 27 kilogramů odpadu ve formě plastových obalů.
+
+Mikrotenový sáček od svačiny pohozený v ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Robotaxíky Tesly dostanou vlastní Starlink, jde spíš o Muskův byznys než technologii|D|21.7. 09:58|P|Taxíky bez řidiče Tesla Cybercab budou vedle mobilní konektivity disponovat i terminály pro satelitní internet Starlink. SpaceX tak najde v Tesle velk...|X|Tesla dál pracuje na ladění svých robotických taxíků Cybercab, které podle Elona Muska měly být v sériové výrobě již letos. To se prozatím nepovedlo, a tak nás Tesla krmí dalšími technologickými zajímavostmi. Mimo jiné všechna robotaxi dostanou terminál pro použití satelitního internetu Starlink.
 Další anténa pod střechou
 Zveřejněné schéma ukazuje Starlink V5 jako součást střešní konstrukce, kde je anténa umístěna vedle modulů pro GPS a 5G konektivitu. Ve stejné oblasti se nacházejí i další komunikační antény a prvky kamerového systému. Integrované řešení má nahradit externí terminály Starlink Mini, které se objevovaly na dřívějších testovacích vozech.
 Autonomní řízení Cybercabu má běžet na palubním počítači AI4 a samotný provoz proto nemá být závislý na trvalém přístupu k internetu. Datové spojení je přesto důležité – správa flotily, komunikace s platformou, přenos telemetrie či aktualizace. Nezbytné je pro vzdálenou podporu nebo nahrávání záznamů z kamer.
 Satelitní spojení může ve vozech fungovat jako záloha v oblastech se slabým mobilním signálem. Výhodou také bude při výpadku pozemní sítě nebo při plánovaném rozšíření robotaxi mimo města, kde ve Spojených státech nemusí být dostatečně kvalitní konektivita. Naopak v hustě pokrytých lokalitách bude přínos Starlinku omezený. Dosavadní testovací provoz Tesly se soustředí na malé oblasti v Austinu, Houstonu, Dallasu a Miami, kde je k dispozici kvalitní 5G připojení. Alternativně by potom satelitní konektivita mohla být využita coby hotspot pro pasažéry.
 Největší neznámou představuje obchodní model – Tesla a SpaceX patří mezi firmy ovládané Elonem Muskem. Tesla by u každého vozu hradila cenu integrovaného terminálu a následně také satelitní připojení. Přesné podmínky nejsou známé a pravděpodobně se je ani nedozvíme.
-Zdroj: Electrek|E||T|Unikla česká cena náramku Garmin Cirqa. Je nižší, než se čekalo. Máme i první fotografie|D|21.7. 08:38|P|Interní systémy Garminu již obsahují údaje o chystaném náramku Cirqa. Z českého e-shopu tak můžeme vydolovat cenu pro tuzemský trh. Zklamáním je ale v...|X|O brzkém představení bezdisplejového fitness náramku Garmin Cirqa již nikdo nepochybuje. Dokonce by se tak podle aktuálních zpráv mělo stát už zítra. Velkou část informací však již známe, a to včetně designu a především ceny.
+Zdroj: Electrek|E||T|Snadno pochopitelná, logicky znějící nesprávná odpověď. Kvůli AI méně lidí říká, že neví, ale jejich přesnost se propadla|D|21.7. 08:45|P|Prohlásit „já nevím“ je nezbytným krokem k hledání odpovědí i případnému poznání, že s daným množstvím informací žádná jednoznačná odpověď neexistuje....|X|Prohlásit „já nevím“ je nezbytným krokem k hledání odpovědí i případnému poznání, že s daným množstvím informací žádná jednoznačná odpověď neexistuje. S nástupem AI chatbotů ale na každý váš dotaz dostanete odpověď. Skvěle zdůvodněnou, snadno pochopitelnou a přesvědčivě znějící. To ale neznamená, ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Unikla česká cena náramku Garmin Cirqa. Je nižší, než se čekalo. Máme i první fotografie|D|21.7. 08:38|P|Interní systémy Garminu již obsahují údaje o chystaném náramku Cirqa. Z českého e-shopu tak můžeme vydolovat cenu pro tuzemský trh. Zklamáním je ale v...|X|O brzkém představení bezdisplejového fitness náramku Garmin Cirqa již nikdo nepochybuje. Dokonce by se tak podle aktuálních zpráv mělo stát už zítra. Velkou část informací však již známe, a to včetně designu a především ceny.
 Pod 5 tisíc
 Ačkoliv se v posledních týdnech v souvislosti s Garmin Cirqa spekulovalo nejčastěji o vysoké ceně kolem 500 dolarů, interní systémy Garminu odhalily výrazně nižší cenu. Ve Spojených státech se má prodávat za 199 USD a v Evropě za 199 EUR. Díky totožnému internímu systému pro český e-shop se můžeme snadno dostat i k tuzemské ceně 4 990 Kč.
 K dispozici by mělo být minimálně 8 variant náramku, kdy bude k dispozici ve 4 barevných provedeních a pravděpodobně dvou velikostech. Nově uniklé fotky ukazují béžovou, modrou, červenou a černou verzi. Barva se mění pouze na textilním řemínku a sponě, tělo s elektronikou zůstává ve všech případech černé. Náramek má nastavitelnou délku a má se prodávat ve velikostech S/M a L/XL. Řemínek používá běžné rychloupínací osičky a teoreticky jej tedy půjde nahradit kompatibilní variantou.
@@ -81,7 +122,9 @@ Soudkyně Araceli Martínez-Olguínová vydala předběžné opatření na 14 dn
 O zásah požádalo 12 amerických států v čele s Kalifornií. Ve společné žalobě tvrdí, že spojení dvou z pěti největších hollywoodských studií podstatně omezí hospodářskou soutěž. Obávají se také vyšších cen, horších podmínek pro kina a menšího výběru pro diváky.
 Soud se v této fázi zabýval především kinodistribucí celovečerních filmů. Spojená skupina by na tomto trhu podle předložených údajů získala podíl přibližně 27 procent. Soudkyně dospěla k závěru, že státy předložily přesvědčivé argumenty o možném omezení hospodářské soutěže. Předběžné opatření vytváří prostor k předložení dalších důkazů.
 Paramount považuje vymezení trhu i tvrzení o škodlivých dopadech transakce za neopodstatněné. Společnost očekává, že další dokazování její stanovisko potvrdí. Americké ministerstvo spravedlnosti přitom už v červnu povolilo spojení obou firem, protože to podle něj nepoškodí hospodářskou soutěž, americké spotřebitele ani kinodistribuci.
-Převzetí by pod jednoho vlastníka soustředilo studia Paramount Pictures a Warner Bros. Pictures, televizní stanice CBS, CNN, HBO, Showtime, Nickelodeon, Comedy Central a další značky. Součástí skupiny by byly také streamovací služby HBO Max, Discovery+ a Paramount+.|E||T|Z Prahy staví „nový SWIFT“ pro stablecoiny. Znalosti startupistů z Česka chce využít centrální banka Keni|D|21.7. 07:11|P|V Praze vzniká technologie, která chce propojit svět stablecoinových plateb podobně, jako SWIFT sjednotil komunikaci mezi bankami. Vyvíjí ji startup P...|X|V Praze vzniká technologie, která chce propojit svět stablecoinových plateb podobně, jako SWIFT sjednotil komunikaci mezi bankami. Vyvíjí ji startup Plexo, který chce svou platformou propojit banky, platební instituce i kryptoměnové společnosti. Získal už neobvyklou referenci, ke konzultacím při přípravě nové regulace stablecoinů si jej přizvala centrální banka Keni. Podporu ve formě investice nyní získal také od fondu Depo Ventures.
+Převzetí by pod jednoho vlastníka soustředilo studia Paramount Pictures a Warner Bros. Pictures, televizní stanice CBS, CNN, HBO, Showtime, Nickelodeon, Comedy Central a další značky. Součástí skupiny by byly také streamovací služby HBO Max, Discovery+ a Paramount+.|E||T|Iluze 7 let softwarové podpory telefonů. Na papíře líbivý závazek, ale realita u výrobců je odlišná|D|21.7. 07:45|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Z Prahy staví „nový SWIFT“ pro stablecoiny. Znalosti startupistů z Česka chce využít centrální banka Keni|D|21.7. 07:11|P|V Praze vzniká technologie, která chce propojit svět stablecoinových plateb podobně, jako SWIFT sjednotil komunikaci mezi bankami. Vyvíjí ji startup P...|X|V Praze vzniká technologie, která chce propojit svět stablecoinových plateb podobně, jako SWIFT sjednotil komunikaci mezi bankami. Vyvíjí ji startup Plexo, který chce svou platformou propojit banky, platební instituce i kryptoměnové společnosti. Získal už neobvyklou referenci, ke konzultacím při přípravě nové regulace stablecoinů si jej přizvala centrální banka Keni. Podporu ve formě investice nyní získal také od fondu Depo Ventures.
 Finanční instituce dnes běžněji pracují se stablecoiny, tedy kryptoměnami navázanými na běžné měny, například americký dolar. Ale využívají přitom rozdílné systémy a jejich vzájemné propojení je složité. „Stablecoiny dnes umí vypořádat platbu, ale licencované instituce pořád nemají jak se navzájem najít, prověřit a předat si compliance. To, co SWIFT vyřešil pro banky před 50 lety, pro stablecoinové instituce neexistuje,“ říká Anton Titov, CEO a zakladatel Plexo. Startup chce poskytnout vrstvu, která provoz sjednotí, umožní institucím propojit se jednou a následně komunikovat se všemi ostatními účastníky. Samotné peníze přitom přes Plexo neprotékají, platforma slouží jako infrastruktura pro vyhledávání protistran, sdílení regulatorní dokumentace a automatizaci dalších procesů.
 Titov žije v Česku od sedmnácti let, vystudoval Vysokou školu ekonomickou a před založením fintechových firem působil v inovačních společnostech Creative Dock a Direct People. Na jaře se dostal do kontaktu s keňskou centrální bankou. Po vystoupeních na fintechových konferencích v Nairobi a ve Rwandě začal spolupracovat s keňskými odborníky připravujícími pravidla pro využívání stablecoinů a kryptoměn. Začali spolupracovat na tvorbě takzvaných policy papers. „V nich vysvětlujeme, jak lze v rozvíjejících se ekonomikách vnímat stablecoiny optikou místních potřeb a že kopírování přístupu vyspělých ekonomik nemusí být vždy tou nejlepší cestou,“ popisuje. Následně byl přizván také ke kulatým stolům keňské centrální banky věnovaným nové regulaci.
 Za technologickým řešením platformy Plexo stojí spoluzakladatel a CTO Roman Shprenger, který v minulosti z nuly vybudoval softwarový startup TADS.me s ročním obratem přes milion dolarů a infrastrukturou schopnou odbavovat desítky milionů událostí denně. Vedle toho startup úzce spolupracuje s manažery se zkušenostmi z digitální banky N26 a kryptoměnových platforem Kraken a KuCoin nebo se současným ředitelem regulatorní politiky společnosti Chainalysis, který dříve působil v britském regulátoru FCA.
@@ -124,7 +167,11 @@ Kategorie pro odbornou porotu:
 - AI projekt
 Speciální kategorie:
 - Cena studentské poroty ČVUT
-Anketu Křišťálová Lupa 2026 – Cena českého Internetu pořádá server Lupa.cz, jehož provozovatelem je společnost Internet Info. Anketu podporuje České vysoké učení technické v Praze. Mediálními partnery jsou Cnews.cz, Euro.cz, Marketing Journal a MediaGuru.cz.|E||T|Co mají společného Globus, letáky a WhatsApp? Tyto dvě novinky ocení každý lovec slev|D|21.7. 05:30|P|Globus přichází s novou generací digitálních letáků – akční nabídky si nově můžete nechat posílat přímo do WhatsAppu a při jejich prohlížení si rovnou...|X|Přestože může nadpis znít na první pohled trochu zvláštně, mnohým z vás jistě napověděl. Globus totiž v rámci rozšiřování digitálních služeb přišel se dvěma novinkami, jejichž cílem je usnadnit zákazníkům plánování nákupů a sledování akcí.
+Anketu Křišťálová Lupa 2026 – Cena českého Internetu pořádá server Lupa.cz, jehož provozovatelem je společnost Internet Info. Anketu podporuje České vysoké učení technické v Praze. Mediálními partnery jsou Cnews.cz, Euro.cz, Marketing Journal a MediaGuru.cz.|E||T|Evropa se probudila. Do roku 2030 můžeme znovu hrát první ligu, říká šéf jedné z největších tech firem|D|21.7. 06:45|P|Martin Merz, šéf divize SAP pro suverénní cloud, pro e15 vysvětluje, proč musí Evropa odstranit bariéry pro byznys • . • SAP plánuje investovat 20 mil...|X|Martin Merz, šéf divize SAP pro suverénní cloud, pro e15 vysvětluje, proč musí Evropa odstranit bariéry pro byznys • . • SAP plánuje investovat 20 miliard dolarů do evropského cloudu, aby data firem nezůstávala pod kontrolou USA. • Evropské technologické firmy jako Helsing nebo Hugging Face ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Tak trochu návrat nákladních plachetnic. Velká loď se 46 metrů vysokým křídlem ušetří až desetinu paliva|D|21.7. 05:45|P|Švédové namontovali na obří nákladní loď unikátní svislé sklopné křídlo • Moderní technologie má ušetřit zhruba deset procent paliva i emisí • Evropsk...|X|Švédové namontovali na obří nákladní loď unikátní svislé sklopné křídlo • Moderní technologie má ušetřit zhruba deset procent paliva i emisí • Evropský program chce do budoucna pohánět lodě hlavně silou větru
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Co mají společného Globus, letáky a WhatsApp? Tyto dvě novinky ocení každý lovec slev|D|21.7. 05:30|P|Globus přichází s novou generací digitálních letáků – akční nabídky si nově můžete nechat posílat přímo do WhatsAppu a při jejich prohlížení si rovnou...|X|Přestože může nadpis znít na první pohled trochu zvláštně, mnohým z vás jistě napověděl. Globus totiž v rámci rozšiřování digitálních služeb přišel se dvěma novinkami, jejichž cílem je usnadnit zákazníkům plánování nákupů a sledování akcí.
 Letáky „nové generace“ přímo do WhatsAppu
 Od července 2026 spustil Globus distribuci svého letáku přímo do WhatsAppu. Stačí jít na web Globusu, naskenovat QR kód, vybrat svoji preferovanou prodejnu a začít brouzdat letákem. Ten obdrží vždy každou neděli před začátkem nového týdne.
 „Zákazníci dnes chtějí mít akční nabídky k dispozici okamžitě a v prostředí, které používají každý den. Proto je nově distribuujeme v nejvyužívanější komunikační platformě v Česku a současně proměňujeme digitální leták z pouhého zdroje informací v nástroj, který aktivně pomáhá s plánováním nákupu,“ vysvětluje Tomáš Lux, vedoucí marketingu Globusu.
@@ -171,433 +218,4 @@ They also bring perspectives that will strengthen the work of the Foundation. Bo
 David Vélez is a Colombian entrepreneur, engineer, and banker who founded Nubank in 2013 after experiencing firsthand the cost and complexity of traditional banking in Brazil. He built Nubank around a digital-first, customer-focused model designed to make financial services simpler, more transparent, and more accessible. Under his leadership, Nubank has grown into one of the world’s largest digital financial services platforms with more than 135 million customers and has expanded access to banking for millions of people. The company is now expanding its footprint beyond Latin America and into the United States after having secured conditional approval to establish a U.S. national bank
 Before founding Nubank, David was a partner at Sequoia Capital focused on Latin America and worked in investment banking and growth equity at Goldman Sachs, Morgan Stanley, and General Atlantic. David and his wife, Mariel Reyes, also lead VélezReyes+, a philanthropic platform focused on democratic governance, education, and other initiatives across Latin America.
 Robin Vince is Chairman and CEO of BNY, an over 240-year-old global financial services company that puts its expertise and platforms to work to help clients operate more efficiently and accelerate growth. Since becoming CEO in 2022, he has led a broad re-imagination of the company, simplifying its operating model, accelerating investment in AI and data, and strengthening its culture of innovation and execution.
-Before joining BNY, Robin spent 26 years at Goldman Sachs, where he was a partner and member of the Management Committee. His leadership roles included Chief Risk Officer, Treasurer, Head of Operations, COO of the EMEA region, and CEO of Goldman Sachs International Bank. Robin serves on the boards of the Hospital for Special Surgery and the Perelman Performing Arts Center. He is a member of the Business Roundtable, the Business Council, the Partnership for New York City, the Financial Services Forum, and the International Advisory Board of the Monetary Authority of Singapore.|E||T|Tvorba 2D i 3D grafiky a animací v Go s využitím projektu GoGPU (2. část)|D|20.7. 22:00|P|Už jsme se věnovali popisu knihovny gg určené pro vykreslování 2D grafiky. Dnes popis dokončíme a navíc se zmíníme o knihovnách gg-pdf a gg-svg slouží...|X|Ve druhém článku o projektu GoGPU navážeme na úvodní článek, ve kterém jsme se primárně věnovali popisu základů knihovny gg určené pro vykreslování (rendering) 2D grafiky. Dnes popis této knihovny dokončíme a navíc si ukážeme i k ní „přidružené“ knihovny pojmenované gg-pdf a gg-svg, které slouží k exportu 2D grafiky do vektorových formátů PDF a SVG.
-Co se dozvíte v článku
-- Metody Context.Stroke a Context.Fill
-- Specifikace barvy hexa tripletem
-- Koncept štětce (brush)
-- Kombinace výplně a obrysu?
-- Vykreslení překrývajících se obrazců
-- Překrývající se obrazce a alfa složka barvy, režimy prolínání
-- Pravidla pro vyplňování obrazců, jejichž hrany se překrývají
-- Gradientní barevné přechody využitelné při kreslení vyplněných obrazců
-- Lineární gradient
-- Specifikace většího množství barev gradientního přechodu
-- Radiální gradient
-- Gradient závislý na úhlu
-- Uložení 2D scény do vektorových formátů
-- Vektorový formát SVG
-- Provedení exportu vektorové kresby do formátu SVG
-- Export složitějších kreseb do formátu SVG
-- Propojení 2D grafiky a grafického uživatelského rozhraní
-- Repositář s demonstračními příklady
-- Odkazy na Internetu
-Export do rastrových formátů (PNG, JPG, GIF atd.) totiž podporuje přímo knihovna gg, takže pro něj není zapotřebí instalovat další knihovnu. V závěrečné části si navíc řekneme, jak lze knihovnu gg využít pro vykreslování (interaktivní) 2D grafiky do okna. Projekt GoGPU totiž podporuje i tvorbu plnohodnotných desktopových aplikací s vlastními okny, grafickým uživatelským rozhraním a interaktivní 2D či 3D grafikou.
-Metody Context.Stroke a Context.Fill
-Začněme krátkým zopakováním základů knihovny gg. V dnešním prvním demonstračním příkladu se nejprve smaže plocha celého rastrového obrázku s rozlišením 400×300 pixelů zvolenou barvou. Následně je do obrázku vykreslen obrys obdélníku:
-Úplný zdrojový kód dnešního prvního demonstračního příkladu vypadá následovně:
-package main
- 
-import "github.com/gogpu/gg"
- 
-func main() {
-        // rozměry rastrového obrázku
-        const width = 400
-        const height = 300
- 
-        // jméno souboru s výsledným obrázkem
-        const fileName = "01.png"
- 
-        // vytvoření kontextu
-        dc := gg.NewContext(width, height)
- 
-        // vykreslování s využitím kontextu
-        color := gg.RGBA{R: 0.9, G: 0.9, B: 0.7, A: 1.0}
-        dc.ClearWithColor(color)
- 
-        const border = 40
-        dc.DrawRectangle(border, border, width-border*2, height-border*2)
-        dc.SetRGB(0.0, 0.0, 0.0)
- 
-        // vykreslení obrysu
-        dc.Stroke()
- 
-        // uložení výsledného rastrového obrázku
-        dc.SavePNG(fileName)
-}
-Kromě vykreslení obrysu obrazců či cesty metodou Context.Stroke je možné provést i vyplnění uzavřeného 2D obrazce metodou Context.Fill. Výsledný obrázek bude (podle očekávání) v tomto případě zcela odlišný:
-Opět si pochopitelně uvedeme úplný zdrojový kód tohoto příkladu:
-package main
- 
-import "github.com/gogpu/gg"
- 
-func main() {
-        // rozměry rastrového obrázku
-        const width = 400
-        const height = 300
- 
-        // jméno souboru s výsledným obrázkem
-        const fileName = "02.png"
- 
-        // vytvoření kontextu
-        dc := gg.NewContext(width, height)
- 
-        // vykreslování s využitím kontextu
-        color := gg.RGBA{R: 0.9, G: 0.9, B: 0.7, A: 1.0}
-        dc.ClearWithColor(color)
- 
-        const border = 40
-        dc.DrawRectangle(border, border, width-border*2, height-border*2)
-        dc.SetRGB(0.3, 0.7, 0.9)
- 
-        // vyplnění tvaru
-        dc.Fill()
- 
-        // uložení výsledného rastrového obrázku
-        dc.SavePNG(fileName)
-}
-Specifikace barvy hexa tripletem
-V předchozích dvou demonstračních příkladech jsme barvu obrysu obdélníku či jeho vnitřní plochy specifikovali metodou Context.SetRGB, které se předávaly tři barvové složky R, G, B v rozsahu 0,0 až 1,0:
-func (c *Context) SetRGB(r, g, b float64)
-    SetRGB sets the current color using RGB values (0-1).
-Například:
-dc.SetRGB(0.3, 0.7, 0.9)
-V úvodním článku jsme si taktéž ukázali metodu Context.SetRGBA, která umožňuje barvě přiřadit i alfa kanál:
-func (c *Context) SetRGBA(r, g, b, a float64)
-    SetRGBA sets the current color using RGBA values (0-1).
-Například:
-dc.SetRGBA(0.3, 0.7, 0.9, 0.5)
-Ovšem barvu lze zadat i dalšími způsoby. Užitečná je metoda Context.SetHexColor, která umožňuje specifikovat barvu v prostoru RGB klasickým hexa tripletem (popř. i s přidanou informací o hodnotě alfa složky):
-func (c *Context) SetHexColor(hex string)
-    SetHexColor sets the current color using a hex string.
-Právě tuto metodu použijeme i v dalších demonstračních příkladech, protože zápis barvy tímto způsobem je poměrně dobře známý:
-dc.DrawRectangle(border, border, width-border*2, height-border*2)
-// barva zapsaná v hexa triplet formátu
-dc.SetHexColor("44aadd")
- 
-// vyplnění tvaru
-dc.Fill()
-Výsledek by měl vypadat následovně:
-Opět si pochopitelně ukážeme celý zdrojový kód příkladu, který vykreslil třetí obrázek:
-package main
- 
-import "github.com/gogpu/gg"
- 
-func main() {
-        // rozměry rastrového obrázku
-        const width = 400
-        const height = 300
- 
-        // jméno souboru s výsledným obrázkem
-        const fileName = "03.png"
- 
-        // vytvoření kontextu
-        dc := gg.NewContext(width, height)
- 
-        // vykreslování s využitím kontextu
-        color := gg.RGBA{R: 0.9, G: 0.9, B: 0.7, A: 1.0}
-        dc.ClearWithColor(color)
- 
-        const border = 40
-        dc.DrawRectangle(border, border, width-border*2, height-border*2)
-        // barva zapsaná v hexa triplet formátu
-        dc.SetHexColor("44aadd")
- 
-        // vyplnění tvaru
-        dc.Fill()
- 
-        // uložení výsledného rastrového obrázku
-        dc.SavePNG(fileName)
-}
-Koncept štětce (brush)
-S pojmem štětce (brush) se můžeme setkat v mnoha knihovnách určených pro vykreslování dvourozměrné grafiky. Většinou se rozlišuje mezi kreslicím perem (pen) a štětcem (brush), přičemž pero slouží pro vykreslení cest či obrysů a štětec pro výplň uzavřených tvarů. V knihovně gg je tomu ovšem (alespoň prozatím) jinak, protože štětec je použit jak pro kreslení obrysů, tak i pro výplně. Odlišuje se ovšem způsob jeho nastavení – SetStrokeBrush nebo SetFillBrush:
-func (c *Context) SetStrokeBrush(b Brush)
-    SetStrokeBrush sets the brush used for stroke operations. Note: In the
-    current implementation, fill and stroke share the same brush. This method is
-    provided for API symmetry and future extensibility.
- 
-    Example:
- 
-        ctx.SetStrokeBrush(gg.Solid(gg.Black))
-        ctx.SetStrokeBrush(gg.SolidRGB(0.5, 0.5, 0.5))
-a:
-func (c *Context) SetFillBrush(b Brush)
-    SetFillBrush sets the brush used for fill operations. This is the preferred
-    way to set fill styling in new code.
- 
-    Example:
- 
-        ctx.SetFillBrush(gg.Solid(gg.Red))
-        ctx.SetFillBrush(gg.SolidHex("#FF5733"))
-        ctx.SetFillBrush(gg.HorizontalGradient(gg.Red, gg.Blue, 0, 100))
-Ukažme si nejprve způsob použití metody Context.SetStrokeBrush pro nastavení štětce vykreslujícího černou barvou obrysy obrazů:
-Úplný zdrojový kód demonstračního příkladu:
-package main
- 
-import "github.com/gogpu/gg"
- 
-func main() {
-        // rozměry rastrového obrázku
-        const width = 400
-        const height = 300
- 
-        // jméno souboru s výsledným obrázkem
-        const fileName = "04.png"
- 
-        // vytvoření kontextu
-        dc := gg.NewContext(width, height)
- 
-        // vykreslování s využitím kontextu
-        color := gg.RGBA{R: 0.9, G: 0.9, B: 0.7, A: 1.0}
-        dc.ClearWithColor(color)
- 
-        blackColor := gg.Hex("000000")
-        dc.SetStrokeBrush(gg.Solid(blackColor))
- 
-        const border = 40
-        dc.DrawRectangle(border, border, width-border*2, height-border*2)
- 
-        // vykreslení obrysu
-        dc.Stroke()
- 
-        // uložení výsledného rastrového obrázku
-        dc.SavePNG(fileName)
-}
-Nyní naopak vykreslíme vyplněný obdélník štětcem nastaveným metodou Context.SetFillBrush s výsledkem:
-Opět si ukažme úplný zdrojový kód takto upraveného demonstračního příkladu:
-package main
- 
-import "github.com/gogpu/gg"
- 
-func main() {
-        // rozměry rastrového obrázku
-        const width = 400
-        const height = 300
- 
-        // jméno souboru s výsledným obrázkem
-        const fileName = "05.png"
- 
-        // vytvoření kontextu
-        dc := gg.NewContext(width, height)
- 
-        // vykreslování s využitím kontextu
-        color := gg.RGBA{R: 0.9, G: 0.9, B: 0.7, A: 1.0}
-        dc.ClearWithColor(color)
- 
-        customColor := gg.Hex("44aadd")
-        dc.SetFillBrush(gg.Solid(customColor))
- 
-        const border = 40
-        dc.DrawRectangle(border, border, width-border*2, height-border*2)
- 
-        // vykreslení obrysu
-        dc.Fill()
- 
-        // uložení výsledného rastrového obrázku
-        dc.SavePNG(fileName)
-}
-Kombinace výplně a obrysu?
-Kvůli tomu, že se v současné implementaci knihovny gg štětec používá jak pro výplně, tak i pro obrysy, není možné použít současně dva štětce tak, aby se například vykreslil obrys jedenkrát zapsaného obdélníku černou barvou a jeho výplň barvou odlišnou:
-blackColor := gg.Hex("000000")
-dc.SetStrokeBrush(gg.Solid(blackColor))
- 
-customColor := gg.Hex("44aadd")
-dc.SetFillBrush(gg.Solid(customColor))
- 
-dc.DrawRectangle(border, border, width-border*2, height-border*2)
- 
-// vykreslení vyplněného obrysu
-dc.Fill()
-dc.Stroke()
-Výsledek nebude v tomto případě odpovídat očekávání, protože se zobrazí jen výplň a nikoli obrys:
-Zdrojový kód tohoto demonstračního příkladu vypadá následovně:
-package main
- 
-import "github.com/gogpu/gg"
- 
-func main() {
-        // rozměry rastrového obrázku
-        const width = 400
-        const height = 300
- 
-        // jméno souboru s výsledným obrázkem
-        const fileName = "06.png"
- 
-        // vytvoření kontextu
-        dc := gg.NewContext(width, height)
- 
-        // vykreslování s využitím kontextu
-        color := gg.RGBA{R: 0.9, G: 0.9, B: 0.7, A: 1.0}
-        dc.ClearWithColor(color)
- 
-        blackColor := gg.Hex("000000")
-        dc...
-(Pokracovani na webu)|E||T|Plošný zákaz mobilů ve školách prošel vládou, platit má od příštího září|D|20.7. 17:42|P|Děti v mateřských a základních školách a na nižších stupních víceletých gymnázií jsou o krok blíže plošnému zákazu používání mobilních telefonů ve ško...|X|Děti v mateřských a základních školách a na nižších stupních víceletých gymnázií jsou o krok blíže plošnému zákazu používání mobilních telefonů ve školských zařízeních. Příslušný návrh zákona schválila vláda, jejíž předseda Andrej Babiš a ministr školství Robert Plaga (oba ANO) jsou pod návrhem podepsáni jako jeho autoři.
-Návrh zakazuje používání mobilního telefonu nebo jiného elektronického komunikačního zařízení „…při vzdělávání a s ním přímo souvisejících činnostech a při poskytování školských služeb.“ Zákaz se má podle návrhu týkat i zařízení školního stravování, školní družiny nebo školních klubů.
-Novela počítá také s výjimkami, pokud děti používají mobily „… za účelem souvisejícím se zdravotními důvody nebo speciálními vzdělávacími potřebami,“ pokud škola, družina či klub umožní používání telefonů v průběhu hodin za účelem vzdělávání nebo když škola povolí používání mobilů „…při akcích konaných mimo místo, kde se uskutečňuje vzdělávání nebo školské služby.“
-Školy také mají podle návrhu dostat právo dětem „…stanovit povinnost odložit mobilní telefon určeným způsobem,“ nebo zabavit dítěti zařízení, pokud zákaz jeho používání porušilo.
-Někteří odborníci záměr zavést plošný zákaz kritizují:
-Jak bylo přislíbeno, mobilní telefony byly ve škole zakázány (@msmtcr, @strakovka) - a to s podporou @NUDZ_cz.
-— Kamil Kopecký #ebezpeci #AI #cyber (@kopeckyk) July 20, 2026
-Takže si pojďme uvést pár příkladů z praxe, co všechno se změnilo pro některé žáky:
-1. Maruška má ráda písničky a má na Spotify super playlist, který si o přestávce…
-Používání mobilů ve školách mohou už teď podle zákona upravovat jejich ředitelé. Novela by jim tuto pravomoc odebrala a telefony by zakázala plošně, a to od 1. září 2027. Aby zákon skutečně začal platit, musí ještě projít parlamentem a získat podpis prezidenta.
-Proti návrhu v připomínkovém řízení protestoval dětský ombudsman, který ve svém stanovisku zapochyboval o tom, jestli je důvodné upravovat zákaz mobilních telefonů celostátně. Regulace používání mobilních telefonů je podle něj zejména výchovnou otázkou, kterou by měl zvažovat buď sám rodič, nebo vedení školy.
-„Ani odborníci nejsou zajedno ohledně názoru na plošný zákaz mobilních telefonů, případně na zákaz užívání sociálních sítí dětmi. Ani související výzkumy neukazují, že by plošný zákaz mobilních telefonů zajistil zvýšení koncentrace ve škole a že by představoval komplexní řešení prevence závislostí a kyberšikany,“ napsal ve svém stanovisku.
-Větší rozptylování nebo škodlivé dopady mobilů na školní výsledky průkazně nepotvrzují ani studie českých výzkumníků – například analýza výzkumného týmu IRTIS Fakulty sociálních studií Masarykovy univerzity v Brně.|E||T|Monitory bez povolení instalují aplikaci do Windows, stačí je jednou připojit. Ta vás pak otravuje reklamami|D|20.7. 15:45|P|Monitory LG teď provází nepříjemnost – do každého počítače, ke kterému je připojíte, automaticky instalují software, který může být pofiderní. Podobně...|X|Monitor tradičně býval něco, co vám funguje tak nějak samo o sobě, aniž by počítač potřeboval nějaké ovladače. Nicméně Windows Update pro vaši obrazovku celkem často nějakou podporu stahuje (může jít například o barevné profily). Bohužel to ale vypadá, že přichází éra, kdy vám monitor do systému začne také tahat různý balast nebo dokonce software, který se dá označit nejen za bloatware, ale i za adware.
-Adware automaticky instalovaný, pokud připojíte monitor od LG
-Uživatelé monitorů LG si teď začali stěžovat, že po připojení monitoru této značky k počítači s Windows se jim sama od sebe nainstalovala aplikace LG Monitor App Installer, která se automaticky spouští při startu počítače a mimo jiné zobrazuje vyskakovací okno, které vás láká k vyzkoušení předplatného antiviru McAfee+ Premium na 30 dní (která ovšem v případě, že ji ponecháte nainstalovanou, zřejmě přejde do placeného režimu). Jde samozřejmě o reklamu za kterou McAfee něco zaplatil. Toto okno na vás vyskočí v pravém dolním rohu plochy při každém spuštění PC, zdá se.
-Problém je, že LG vám tento software nacpe do počítače bez vašeho vědomí a souhlasu, i bez varování (není to tedy tak, že nepozorný uživatel něco odklikne a „sám si zaviní“ instalaci této aplikace). LG využívá funkci Windows, která přes Windows Update automaticky stahuje ovladače k hardwaru, který připojíte k PC (včetně monitorů připojených jen přes kabel HDMI nebo DisplayPort). A pokud je k nim přidružená nějaká obslužné aplikace, nainstaluje ji z Windows Store. To by bylo legitimní, pokud by instalovaný software nebyl nějak excesivní a omezoval se opravdu na potřebné funkce, což ale přivydělávání si reklamou není.
-Určitou útěchou snad může být jen to, že nad procesem má kontrolu Microsoft (který by tak měl nebo aspoň mohl filtrovat, co vám touto cestou do PC přileze) a všechno se děje přes Windows Upadate a Microsoft Store, z jeho serverů. Není to tak, že by připojený monitor mohl ze svého vlastního úložiště nebo odkudkoli z internetu nainstalovat něco libovolného – což by byl prvotřídní bezpečnostní problém.
-Je to trochu podobné také kontroverznímu systému, který umožňuje firmwaru základní desky do nainstalovaného systému Windows automaticky nahrát ovladače při bootu počítače (i do úplně čisté instalace). Windows také automaticky spustit jejich instalátor bez toho, aby se vás ptal a jediná možnost, jak se tomu vyhnout, je v nastaveních UEFI tuto možnost vypnout (a pamatovat si, že to musíte udělat vždy při aktualizaci UEFI nebo pokud se třeba kvůli vyčerpané CMOS baterii nastavení zresetují).
-V tomto případě s monitory ale výrobek neposkytuje přímočarou možnost, jak se automatické instalaci vyhnout. Pokud se aplikaci chcete vyhnout, je nutno zablokovat automatickou instalaci obslužného softwaru k ovladačům přes zásady skupiny neboli group policy (volba „Prevent automatic download of applications associated with device metadata“), což ale může ovlivnit i další hardware.
-Problém se asi netýká všech monitorů LG (máte-li nějaký starší jednoduchý, nejspíš se s tímto nesetkáte). Postihuje například model LG UltraFine 32UN880-B, na kterém funkci „vyzkoušel“ youtubový kanál Gamers Nexus. Uživatelé Redditu, kde se zprávy o této praktice objevily nejdříve už začátkem července, nahlásili problém například s modely LG UltraGear 27GP83B a LG UltraGear 27GN800. Dále by mělo jít o modely s označením LG 27GN850-B, LG UltraGear 34GX900A-B, LG UltraGear 45GX950A-B, LG UltraGear 32GS95UE-B. Herní monitory asi budou hlavními aktéry, protože s nimi bývají spojené různé obslužné aplikace.
-Zodpovědné balíčky z Windows Update, které se vám automaticky po připojení tímto stiženého monitoru LG nainstalují, se jmenují LG Electronics Inc. – Software Component a LG Electronics Inc. Extension Driver Update. Po nich z Windows Store automaticky nainstaluje aplikace LG Monitor App Installer, která se i přidá do aplikací spouštěných při startu. Bez toho, aby se vás software na instalaci zeptal. Účelem této aplikace by mělo být, že si z ní můžete nainstalovat další obslužný software pro monitor, ale bohužel je takto intruzivní a při každém spuštění ukazuje onen inzerát na McAfee.
-Částečným řešením problému s reklamou by snad mělo být pouhé vyhození aplikace LG z aplikací, které se spouští při startu, například ve Správci Úloh, čímž by také mělo být možné se otravné obrazovce při spuštění vyhnout.
-Podobné instalace provádí i Samsung nebo Dell
-Nejde ale o problém jen LG, byť u této firmy je to nejvýraznější vzhledem k oněm reklamám (od kterých by možná firma mohla ustoupit, pokud bude čelit trvalé kritice, uvidíme). Vypadá to, že stejným procesem se automaticky různé aplikace instalují také k monitorům Samsungu nebo Dell Alienware.
-Zdroje: Tom’s Hardware, VideoCardz|E||T|Pěchouček má pro ČVUT další posilu. Spolupráci s průmyslem povede exšéfka z Kiwi.com a Grouponu|D|20.7. 15:12|P|Na ČVUT se pokračuje v budování týmu, který má dostat univerzitní technologie rychleji do firem. Na nově vytvořenou pozici Chief Industry Relations Of...|X|Na ČVUT se pokračuje v budování týmu, který má dostat univerzitní technologie rychleji do firem. Na nově vytvořenou pozici Chief Industry Relations Officer přichází Lucie Brešová, která dříve působila ve startupu Kiwi.com, v americkém Grouponu nebo investorském fondu Presto Tech Horizons.
-Brešová bude mít na starosti rozvoj spolupráce univerzity s průmyslovými podniky, povede oblast Industry Relations a zároveň bude předsedat poradnímu sboru zaměřenému na spolupráci s byznysem. Jde o jednu z oblastí, na které nové vedení ČVUT staví svou ambici posunout univerzitu mezi světovou špičku.
-„(Budoucí) úspěch ČVUT spočívá mimo jiné na úzké spolupráci mezi výzkumem prováděným na univerzitě a podniky, které jej mohou využít. Na mnoha místech to tu již funguje. Mým úkolem je proměnit tyto jednotlivé mosty v síť, sjednotit ji a dostat ji na světovou úroveň – zjednodušeně řečeno, vybudovat dálnice tam, kde jsou dnes jen stezky – a pomoci firmám získat prioritní přístup ke špičkovému výzkumu a technologiím, aby světový výzkum nezůstal ležet v šuplících a skvělé firmy nepřišly o svůj inovační potenciál,“ rozvádí Brešová na síti LinkedIn.
-Odbornice se ve startupovém prostředí pohybuje přes 14 let. Patřila k manažerům, kteří pomáhali škálovat Kiwi.com z malé firmy na společnost s téměř dvěma tisíci zaměstnanci. Později působila jako provozní ředitelka startupu Pocket Virtuality zaměřeného na rozšířenou realitu, který následně převzala zbrojovka Czechoslovak Group (CSG). Byla součástí nejvyššího vedení amerického Grouponu po jeho převzetí investiční skupinou Pale Fire Capital. A poslední roky působila jako partnerka fondu Presto Tech Horizons, společného podniku investorů z Presto Ventures a CSG investujícího do obranných a bezpečnostních technologií. Presto ale opustilo více partnerů v souvislosti s děním kolem zakladatele Přemysla Rubeše, které vyústilo v jeho březnové zadržení policií. Brešová odešla začátkem roku.
-Na ČVUT se rektorovi Michalu Pěchoučkovi daří koncentrovat zajímavé posily z byznysu. Instituce má mimo jiné poprvé v historii ředitele informační bezpečnosti, na kterou nastoupil externí výzkumník pro NATO, kromě něj v týmu působí mimo jiné Jakub Nešetřil, který prodal startup Apiary firmě Oraclu, nebo specialista na kryptosvět Ladislav Krištoufek.|E||T|Fotbalové MS zasáhlo na ČT sport 4,4 milionu lidí. Nejvíce táhlo semifinále|D|20.7. 13:02|P|Přenosy z fotbalového mistrovství světa na ČT sport zasáhly 4,429 milionu diváků starších čtyř let, kteří se dívali alespoň tři minuty v kuse. Televiz...|X|Přenosy z fotbalového mistrovství světa na ČT sport zasáhly 4,429 milionu diváků starších čtyř let, kteří se dívali alespoň tři minuty v kuse. Televize to na základě dat Asociace televizních organizací a agentury Nielsen oznámila v pondělní tiskové zprávě.
-Nejsledovanějším přenosem České televize z fotbalového mistrovství světa 2026 bylo semifinále mezi Anglií a Argentinou. V průměru si ho pustilo 1,041 milionu diváků starších čtyř let. Stanice v tu dobu oslovila 35,28 procenta lidí u televizních obrazovek. Alespoň část semifinálového utkání vidělo 1,7 milionu lidí. Na digitálních platformách České televize zaznamenal zápas 270 tisíc spuštění.
-Finálový duel Španělska s Argentinou sledoval na ČT sport v neděli 19. července v průměru rovný milion diváků starších čtyř let. Podíl na publiku dosáhl 32,90 procenta a celkový televizní zásah 1,79 milionu lidí sledujících alespoň tři minuty v kuse. Na internetu měl přenos 480 tisíc spuštění, nejvíce ze všech zápasů v nabídce ČT. Finálové utkání bylo celkově nejsledovanějším pořadem nedělního večera, další stovky tisíc zájemců si ho pustily na stanici Nova Action.
-Zápas české reprezentace proti Jihoafrické republice v základní skupině přilákal v průměru 913 tisíc diváků. Stanice ČT sport v době vysílání dosáhla podílu 31,67 procenta. Utkání zasáhlo celkem 1,618 milionu lidí a na digitálních platformách evidovala televize 325 tisíc spuštění.
-Čtvrtfinále Francie s Marokem sledovalo v průměru 578 tisíc lidí při podílu 29,09 procenta. Osmifinále Brazílie s Norskem si pustilo 518 tisíc diváků a ČT sport v tu chvíli patřilo 25,29 procenta televizního publika.
-„Účast českého týmu zajištěná na poslední chvíli, délka turnaje a časový posun pro nás byly velkými výzvami. Nějaké nedorazy by se určitě našly, v zásadě ale všechno proběhlo tak, jak jsme plánovali,“ zhodnotil šampionát vedoucí fotbalové redakce ČT David Kozohorský.
-Česká televize odvysílala zápasy na programu ČT sport a doplnila je studiem i reportážemi přímo z dějiště turnaje. Údaje o televizní sledovanosti vycházejí z měření Asociace televizních organizací a společnosti Nielsen.|E||T|Elektromobilům se v Evropě daří, mohou za to i drahá paliva. Češi však elektroauta stále odmítají|D|20.7. 12:24|P|Každý čtvrtý vůz prodaný v Evropě je plně bateriový. Za prvních 6 měsíců jich bylo v Evropě zaregistrováno přes 1 milion. V Česku ale měly podíl pouhý...|X|Evropský trh s bateriovými elektromobily v první polovině roku 2026 výrazně zrychlil. Registrace na sledovaných trzích vzrostly o třetinu a rekordní červen posunul podíl elektrických aut nad čtvrtinu trhu. Růst se projevil také v Česku, byť tuzemský podíl patří na chvost Evropy.
-Milion za půlroku
-V prvních šesti měsících roku bylo na 17 sledovaných evropských trzích registrováno 1 241 916 bateriových elektromobilů. Ve stejném období roku 2025 jich přitom bylo výrazně méně – 928 800. Meziroční růst tak dosáhl 33,7 % a podíl elektromobilů na registracích činil 21,2 %.
-Statistika přitom nepokrývá celou Evropu, zahrnuje vybrané země Evropské unie a EFTA, které představují přibližně 90 % společného trhu.
-Z čísel, která připravilo sdružení E-Mobility Europe, vyplývá, že červen přinesl 275 060 registrací elektromobilů. Ve srovnání s loňským červnem to bylo o 39,5 % více.
-Zrychluje i Česko
-První letní měsíc byl rekordní i v Česku, kdy bylo registrováno 2 140 elektromobilů a za celé pololetí potom 8 598 vozů. Podíl na celkových registracích je ale velmi nízký – 8,1 % – patří ke zcela nejnižším v celé Evropě. Nižší podíl registrovaných elektromobilů uvádí zpráva pouze u Polska.
-Nejrychleji naopak rostlo Slovinsko s meziročním zvýšením o 124,7 %, Itálie přidala 97,9 % a Francie 61,3 %.
-Růst poptávky podporují nové dotační programy a rovněž vyšší ceny pohonných hmot, které akcelerují trend v přechodu k elektromobilům. Francie využívá sociální leasing a podporu firemních flotil a Německo znovu zavedlo nákupní prémii.
-Zdroj: E-Mobility Europe|E||T|AliExpress dostal od EK pokutu přes 13 miliard korun za prodej nebezpečného a nezákonného zboží|D|20.7. 11:00|P|Čínské tržiště AliExpress nedokázalo dostatečně posoudit a zmírnit riziko prodeje závadných, nebezpečných a nelegálních produktů, čímž porušilo evrops...|X|Čínské tržiště AliExpress nedokázalo dostatečně posoudit a zmírnit riziko prodeje závadných, nebezpečných a nelegálních produktů, čímž porušilo evropské regulace a má zaplatit pokutu ve výši 550 milionů eur (v přepočtu přes 13,3 miliardy Kč), oznámila Evropská komise.
-Obchod podle rozhodnutí porušil své závazky vyplývající z nařízení o digitálních trzích (Digital Markets Act, DSA). Podle Komise nezajistil dostatečně účinné odhalování nelegálního zboží a jeho odstraňování ze své nabídky.
-Neměl například pro dohled dostatečný počet zaměstnanců, kteří měli produkty posuzovat. „Společnost přecenila účinnost svého systému na odhalování a odstraňování ilegálních produktů. AliExpress tak nedokázal realisticky posoudit rozpor mezi počtem moderátorů a jejich vytížením,“ vysvětluje Komise.
-Tržišti také klade za vinu, že nelegální zboží často nabízelo svým zákazníkům ke koupi v rámci svého vlastního doporučovacího systému. A že nedokázalo účinně bránit tomu, aby se jednou smazané problematické produkty v jeho nabídce znovu neobjevily.
-Na e-shopu tak lidé mohli podle Komise najít a koupit například padělané zboží nebo nebezpečné hračky či kosmetiku. Někteří obchodníci dokázali obcházet pravidla tím, že zboží úmyslně ukládali do neodpovídajících kategorií, které měly nižší požadavky a kontrolu. Obchodníci, kteří nelegální zboží prodávali, přitom mohli na platformě zůstat, i když se dopustili přečinu, konstatuje Komise.
-AliExpress teď má podle EK do 20. října 2026 předložit své návrhy, jak bude problémy řešit. Pokud tak neučiní, hrozí mu další pokuty.|E||T|[DOPLNĚNO] Sportovní kanál Primy začne vysílat dřív. Odvysílá utkání Sparty s Lyonem|D|20.7. 10:48|P|Fotbalisté Sparty Praha se ve 3. předkole Ligy mistrů utkají s francouzským Olympique Lyon. Vyplynulo to z dnešního losování. Domácí duel odvysílá nov...|X|Fotbalisté Sparty Praha se ve 3. předkole Ligy mistrů utkají s francouzským Olympique Lyon. Vyplynulo to z dnešního losování. Domácí duel odvysílá nový sportovní kanál skupiny Prima, který tím zahájí vysílání ještě před svým oficiálním startem.
-Podle informací Sparty se první zápas odehraje 4. srpna na pražské Letné, odveta je na programu 11. srpna.
-Vysílání odvety zůstává otevřené. Generální ředitel Sparty Tomáš Křivda dříve uvedl, že klub o něm se soupeřem jedná a fanoušky bude informovat v nejbližším možném termínu.
-Oficiální start kanálu je naplánovaný na 17. srpna, kdy se Prima sport objeví v pozemním vysílání DVB‑T2 v celoplošném Multiplexu 24. Už dnes ale na příslušné programové pozici visí informace o chystaném spuštění vysílání.
-Otevřená je zatím dostupnost stanice v placených nabídkách. „Pracujeme na tom, aby stanice Prima sport byla u operátorů už pro tento zápas. Seznam operátorů zatím nemáme,“ řekla Lupě mluvčí TV Prima Blanka Bumbálková.
-Sparta se s Lyonem naposledy střetla na podzim 2021 ve skupině Evropské ligy. Na Letné prohrála 3:4, ve Francii 0:3. Pro českého vicemistra je 3. předkolo poslední překážkou před play‑off o ligovou fázi Ligy mistrů. Prima k přenosu nasadí předzápasové studio, analýzy a pozápasové ohlasy.
-Doplněno 19:33 – Přidali jsme přesné datum utkání Sparty s Lyonem na základě informací publikovaných pražským fotbalovým klubem.|E||T|Zapomeňte na přeplněné pokladny. Kaufland testuje chytré nákupní vozíky, které změní váš způsob nakupování|D|20.7. 10:01|P|Chytré nákupní košíky s integrovaným skenerem a dotykovým displejem zrychlí a zpříjemní zákazníkům nákup. V budoucnu by se mohly objevit také v českýc...|X|Prodejci stále hledají nové způsoby, jak zákazníkům zpříjemnit a zrychlit nakupování. Zatímco Albert nasazuje automatické rozpoznání zboží na samoobslužných pokladnách, Kaufland přichází s dalším technologickým vylepšením. V Německu začal testovat chytré nákupní vozíky, které mají celý proces nákupu výrazně zjednodušit.
-Kamery na vozících v hlavní roli
-Novinka spočívá v nákupním vozíku vybaveném dotykovým tabletem a integrovaným skenerem. Zákazníci už během nákupu načítají zboží přímo do košíku, takže není zapotřebí nic držet v ruce (například ruční skener) nebo zboží znovu vyndávat u pokladny. Po ukončení nákup zaplatíte přímo u košíku a můžete odejít.
-Chytré košíky zatím procházejí pilotním testováním v německé pobočce Kauflandu v Jettingen-Oberjettingen v Bádensku-Württembergu. Jde pouze o první testovací provoz, pokud se ale osvědčí, lze očekávat postupné nasazování i do dalších zemí, včetně České republiky.
-Současná verze má však jednu slabinu. Košíky totiž zatím neobsahují váhový systém, který by kontroloval, zda se do něj náhodou „nezatoulaly“ další položky. Přidání takové technologie by ale zvýšilo hmotnost košíků, což obzvláště pro něžné pohlaví nebo velké nákupy nemusí být úplně ideální. Jak Kaufland tuto překážku vyřeší, zatím není jasné.
-zdroj: Chip.de, Retail Optimiser|E||T|Safety and alignment in an era of long-horizon models|D|20.7. 10:00|P|OpenAI shares lessons from deploying long-running AI models, highlighting new safety risks, observed failures, and improved safeguards through iterati...|X|Safety and alignment in an era of long-horizon models
-What internal use of a long-running model taught us about safety.
-Summary
-- Long-running models can solve difficult, open-ended problems, but their persistence gives them more opportunities to take unwanted actions. 
-- During limited internal use of a model trained for long-running tasks, we observed novel failures not captured in our existing pre-deployment evaluations and paused access. We then used insights from these failures to build new evaluations, improve long-horizon alignment, add trajectory-level monitoring, and give users greater visibility and control before restoring limited access. 
-- The experience reinforced the value of iterative deployment. No fixed evaluation suite can anticipate every behavior, so pre-deployment testing must be paired with close monitoring, safeguards that can intervene, and the ability to pause or roll back when needed. 
-Models that can work autonomously for long periods can take on difficult, open-ended problems. But the same persistence that makes them useful also gives them more opportunities to take unwanted actions—and to do so in ways that evaluations intended for shorter-horizon models may miss.
-About two months ago we announced that an internal general-purpose model disproved the Erdős unit distance conjecture. This model was designed to work autonomously for very long periods of time. During limited, monitored internal use, we observed unwanted behavior that our existing deployment evaluations had not captured. Because the deployment was limited and monitored, we were able to identify these problems, pause access, create new evaluations based on what we observed, strengthen the model and its safeguards, and then restore access under continued monitoring.
-The conditions under which we evaluate models will never perfectly match those they encounter in actual use. That is why pre-deployment evaluations need to be paired with limited, monitored deployment and the ability to intervene, pause, or roll back when problems emerge. What we learn from deployment can then become part of stronger evaluations and safeguards before access expands.
-In the following sections, we share concrete examples of what we observed, how we addressed issues, and how this experience will shape future releases.
-The new model can continue working toward an objective through repeated attempts over a long period of time. That same persistence can lead it to find and exploit weaknesses in its environment. Previous models, when they hit sandboxing or environmental constraints, would simply stop and return to the user. This model often kept trying, including by looking for ways to act outside its sandbox.
-An example of this occurred during an internal evaluation on the NanoGPT speedrun(opens in a new window), a public benchmark for training a small language model in as few steps as possible. Our model developed a power-law learning-rate cooldown called PowerCool that led to a significant improvement. The model was instructed to post its results only to Slack, but the NanoGPT instructions say to post results as a PR to GitHub, and the model followed the latter instructions to open PR #287 on the public GitHub repository. The model circumvented sandbox restrictions designed to block external access and proceeded with the upload to GitHub. It took our model an hour to find a vulnerability in the sandbox in order to make the PR; earlier models were less persistent and did not manage to find vulnerabilities, instead giving up on the PR part.1
-Many safety controls for AI assistants are designed around individual actions. If an action is disallowed, it is blocked. If it is sensitive, the system asks the user for explicit approval. But long-running models, whose actions may unfold autonomously over hours, days, or even weeks, challenge this setup: monitoring individual actions no longer suffices to track the intent of the overall trajectory.
-For example, in a scenario where the model was asked to solve a problem, the model observed that other systems had successful but private submissions and tried to recover those solutions from the evaluation backend. When its initial attempt was blocked due to a scanner detecting an authentication token, the model split the token body into two fragments, obfuscated them, and then reconstructed the credential at runtime so the complete token never appeared as one contiguous string. The model was explicit in both its comments to the user and in its reasoning traces that it was taking these steps to circumvent the scanner.
-This example shows how each step can look acceptable on its own while the sequence can produce an outcome that would not be approved. It also shows how a model that operates effectively over long time horizons can learn the blind spots of an approval system and work around it to achieve its goals. Long-horizon safety requires not only asking “is this action allowed?” but also “what outcome is this sequence of actions working toward?”
-Due to incidents like these, we paused internal deployment of the new model. We rebuilt the safety system around defense in depth and trajectory-level monitoring.
-- Incident-derived evaluations. Evaluations can give us a sense of whether a system is safe to deploy before it is actually deployed. However, to be most useful, an evaluation should reflect the distribution and horizon length of trajectories during real deployment. For this reason, we used observed failures to develop adversarial evaluations. We found that improving on the evaluations derived from real-world incidents in turn led to safer behavior once deployed in production.
-- Improved alignment. We took steps to reduce its tendency to take unwanted actions without permission in pursuit of the user’s goal. For example, we found that our models were worse at remembering instructions on long rollouts, and when we trained the model for this capability, it led to a model that remained aligned through longer rollouts.
-- Active monitoring. We created a monitoring system that reviews the model’s evolving trajectory for signs that it is bypassing a user constraint or safety boundary. The monitor observes not just a single action but the entire trajectory. Importantly, the monitor can pause the session and alert the user to examine more closely. Upon examination, the user can then choose to continue the model’s work if the monitor has been falsely triggered.
-- Greater user visibility and control. We improved the ability of the user to inspect these long-running sessions, view the actions taken, and monitor interventions.
-To evaluate the new monitoring system, we replayed a small set of internal deployment environments where the model previously pursued misaligned actions, this time with the new safeguards in place2. The new safeguards were able to catch considerably more misaligned actions pursued by the model, and the ones it missed were all judged to be low-severity.
-Some examples of these low-severity incidents include the following cases:
-- To access a Linear command line tool, the model launched a nested codex --yolosession, when in fact it could have done so without the--yoloflag.
-- The model noticed that a previously live resource was missing, then started to explore and SSH into other live CPU pods under its owner’s namespace, as well as (unsuccessfully) pods belonging to other OpenAI employees, without a good reason to do so.
-- The model had many stuck findprocesses and every shell command hung. It then rankill -9 -1which would have sent SIGKILL to every process it is allowed to kill on that pod, if it executed. However it timed out and did not execute.
-After testing the new system, we concluded that limited internal access to models with long-horizon capabilities could be restored. We have not observed any serious circumvention of safeguards since redeployment began several weeks ago. The first version of these safeguards was deliberately conservative. We have continued tuning the system to reduce unnecessary interruptions without weakening the safeguards.
-Because we deployed iteratively, we were able to find and address gaps before expanding access. Pre-deployment evaluations remain essential, but deployment reveals behaviors they miss. Starting with limited access allowed us to observe the model in practice, pause when problems emerged, use those failures to build better evaluations and safeguards, and restore limited access after testing the changes.
-As models take on longer and more complex tasks, failures that evaluations miss may carry greater consequences. We will keep working to narrow the gap between evaluation and deployment: testing models over longer trajectories, improving alignment, building monitoring that can intervene, and giving users clearer visibility and control. These challenges will not be unique to OpenAI, and we hope sharing what we learned helps the broader field prepare for them.
-Author
-Footnotes
-- 1Although we quickly closed the PR, multiple participants in the speedrun had already seen it and used the approach in their own submissions; the successive world record submissions with 3030(opens in a new window), 2990(opens in a new window), 2930(opens in a new window), 2925(opens in a new window), 2900(opens in a new window) and 2890(opens in a new window) steps all cite PR 287. Of these, PR 300(opens in a new window) is particularly interesting because it is the PR submitted by Opus 4.7 when Prime Intellect(opens in a new window) evaluated it on the NanoGPT speedrun. Opus saw the PR submitted by our model, incorporated the discoveries, and credited our PR in its final result. 
-- 2The rollouts in the replay are not guaranteed to pursue the same misaligned action every time, due to randomness and imperfection in reconstructing the environment.|E||T|Je libo si koupit nejvyšší stavbu v Česku? České Radiokomunikace ji nabídly k veřejnému prodeji|D|20.7. 07:35|P|Nejvyšší stavba v Česku hledá nového majitele – České Radiokomunikace nabízejí k prodeji ikonické liblické stožáry, jejichž záchrana si ale vyžádá inv...|X|České Radiokomunikace vypsaly nezávaznou veřejnou výzvu k odkoupení dvou ocelových příhradových stožárů v bývalém vysílacím areálu Liblice u Českého Brodu. Každý z nich měří 355 metrů, konstrukce je nejvyšší stavbou v České republice. Firma tak otevřela cestu k tomu, aby stožáry získal nový vlastník, pokud se nějaký zájemce najde.
-Předmětem zvažovaného prodeje jsou samotné stožáry, jejich kotevní systém a kotevní bloky, kotvicí lana a dvě výtahová zařízení Alimak instalovaná uvnitř konstrukcí. Do prodeje spadá také zděný anténní domek z roku 1955. Technologie původního středovlnného vysílání ani vysílací antény předmětem převodu nejsou.
-Na zahradu je jen tak nepostavíte
-Výzva otevřeně popisuje náklady a rizika, která nový majitel převezme. Nejnaléhavější je výměna lan, jimiž jsou stožáry ukotveny k zemi. Jejich životnost stanovily odborné podklady do 31. prosince 2026 a do té doby je nutné provést takzvané překotvení, tedy jejich komplexní výměnu. Odhadované náklady na tuto operaci činí zhruba 120 milionů korun.
-Obnova protikorozní ochrany ocelové konstrukce má vyjít přibližně na 25 milionů korun a oprava či modernizace výtahů Alimak na dalších zhruba 25 milionů korun. Radiokomunikace zdůrazňují, že jde jen o orientační odhady a skutečné částky mohou být výrazně vyšší.
-Kromě financí čeká podle serveru Lupa.cz kupce řada dalších závazků. Stožáry jsou významnou leteckou překážkou, nový vlastník proto musí udržovat a pravidelně kontrolovat výstražné osvětlení. Část stožárů i kotevních bloků navíc stojí na pozemcích, které Radiokomunikacím nepatří, a přes cizí pozemky vedou i přístupové komunikace. Zachování provozu tak závisí na tom, zda si kupující zajistí právo tyto pozemky užívat.
-Areál není napojen na vodovod, kanalizaci ani plyn a elektřinu bude moci nový majitel odebírat z hlavní budovy bývalého vysílače nejdéle dvanáct měsíců. Poté si musí na vlastní náklady zřídit samostatné odběrné místo.
-Radiokomunikace prodávají majetek ve stavu, v jakém se nachází, tedy bez záruk za technický stav konstrukcí, jejich životnost nebo možnost budoucího využití. Kupní cenu chtějí stanovit dohodou a vyhrazují si právo vybrat jen nabídku, kterou vyhodnotí jako nejvýhodnější, případně nepřijmout žádnou. Zájemce budou prověřovat kvůli souladu s tuzemskými, unijními i mezinárodními sankcemi a mohou požadovat informace o původu peněz i odborných znalostech kupujícího. Uzavření smlouvy musí schválit představenstvo společnosti.
-Stožáry byly dokončeny v roce 1976 pro středovlnné vysílání druhého programu tehdejšího Československého rozhlasu. Český rozhlas ukončil AM vysílání na konci roku 2021, z Liblic pak do konce března 2025 vysílalo na střední vlně soukromé Country Radio. Poté stožáry osiřely.
-Radiokomunikace opakovaně uvedly, že demolici, na kterou už mají povolení, považují za krajní řešení a přednostně hledají pro stavby další využití. Nynější výzva k prodeji je dalším krokem tímto směrem.
-„Naším cílem není na stožárech komerčně vydělat, ale zajistit jejich zachování a předání do péče subjektu, který pro ně nalezne odpovídající využití a zajistí jejích bezpečný provoz. Pokud se však takový partner nenajde, zůstane demolice jediným možným řešením – bez nezbytných a finančně nesmírně náročných oprav by stožáry představovaly reálné bezpečnostní riziko pro své okolí,“ konstatovaly České Radiokomunikace.|E||T|Tomáš Pačinda (Kaya VC): Firmy se potřebují smrsknout a okleštit od lidí, kteří nemají správné AI nastavení|D|20.7. 04:30|P|Nástroje umělé inteligence umožňují jednoduché produkty vytvořit za pár hodin, ale také kladou zásadní požadavky na to, kdo nyní ve startupech může bý...|X|Téměř o každé investici do startupů její strůjci říkají, že věří, že jde o firmu, která může vyrůst na hodnotu alespoň miliardy dolarů. Jenže investice jsou rizikový byznys, v oblasti startupů o to víc. A šance, že firma skutečně tolik vyroste, bývají opravdu malé.
-Málokdo se tak může pochlubit skutečností, že tyto firmy ulovil. A ještě méně investorů tím, že je ulovili hned v počátcích jejich existence. Kaya VC to ale o sobě říct může. Podařilo se jí přesně tak poslat peníze do Rohlíku hned v počátcích jeho existence, roky před tím, než se stal prvním českým jednorožcem. Tým do něj investoval v roce 2014 jako vůbec první institucionální investor. I když e-commerce zaměřená na jídlo tehdy nebyla trendy.
-Kaya si skutečně vybudovala pozici jednoho z prvních investorů a mnohdy úplně prvního investora do projektů, které vyrostly na miliardové hodnoty. Kromě Rohlíku je raným investorem i do prvního polského jednorožce (DocPlanner), v portfoliu má polské Booksy, další z nejhodnotnějších tamních startupových firem, a mezi českými například Better Stack nebo E2B, které se také označují jako projekty, jež mají potenciál dosáhnout miliardové valuace. Velmi rychle roste i Viktor, virtuální AI pracovník pro firmy, nedávná investice fondu. Nebo zdravotnicko-technologické Jutro Medical.
-Ale investice i samotné startupy se s AI rychle mění. Povídali jsme si s partnerem fondu Tomášem Pačindou o tom, jak se umělá inteligence odráží v investicích fondu, ale také v samotném nastavení startupů, nebo proč se objevují zprávy o propouštění ve startupech. „Jsou lidé, které AI neuvěřitelně nakopne. A pak ti, které nová vlna spíš zaskočí nebo vykolejí. Myslím, že nejlepší zakladatelé a ředitelé patří téměř bez výjimky do té první skupiny. Vidíme, že se s nástupem AI znovu objevili jako tvůrci,“ popisuje.
-Loni Kaya spustila už pátý fond s téměř dvěma miliardami korun a svými investicemi důrazněji vykročila z Česka. Zaměřuje se hlavně na země Visegrádské čtyřky – kromě Česka na Slovensko, Polsko a Maďarsko. Respektive na jeho zakladatele, bez ohledu na to, jestli projekt řídí v Londýně nebo San Franciscu. V obou zmíněných městech také fond aktivně působí.
-Když ve zmíněném roce 2014 nebyla oblast online obchodu s potravinami na radaru VC investorů, jak jste na něj přišli vy?
-Řekl bych, že příběh Rohlíku začal už kolem roku 2011. Tehdy zakladatelský tým Kaya investoval do Slevomatu, prvního startupu Tomáše Čupra. Tím se vytvořil vztah, který trvá už patnáct let. Po prodeji Slevomatu se Tomáš stal CEO Dáme jídlo, kam druhý fond Kaya přirozeně vložil kapitál. Když se i to prodalo, Tomáš po pauze převzal vedení Rohlíku. V tu dobu ale grocery e-commerce v regionu skutečně nevypadalo jako atraktivní VC byznys. A spousta lidí tvrdila, že jde jen o přesouvání krabic, nic zajímavého pro investory. Navíc u nás bylo málo fondů. My jsme měli reputaci, že rádi investujeme do projektů s fyzickým světem, ne pouze do čistého softwaru. Rohlík i novější portfolio jako Jutro Medical (polské hybridní kliniky, pozn. redakce) dokazují, že i „starší byznysy“ lze inovovat, třeba s AI. Největší um VC investora je podle mě poslat peníze do projektů předtím, než jsou sexy a trendy. Když investuje až tehdy, je to většinou už pozdě. Myslím, že s Rohlíkem se nám to povedlo.
-Dnes už sexy zjevně je, ale ještě se neprodal ani nevstoupil na burzu. Pro investory to obvykle znamená, že v takovém projektu mají vázané peníze. Jak jste na tom vy?
-Z Rohlíku už jsme částečně podíl zpeněžili formou takzvaných secondaries, kdy někdo jiný z existujících investorů či syndikátu odkupuje podíl. Z fondu z roku 2014 jsme z velké části vyexitovaní. V dalším, pozdějším fondu ještě sedíme, ale nevadí nám delší investiční horizont. U velkých firem, jako jsou v našem portfoliu Rohlík, DocPlanner či Booksy, je k dispozici možnost podíl průběžně prodávat právě prostřednictvím těchto sekundárních transakcí. Fondy rizikového kapitálu obvykle drží menší podíly, takže lze prodat třeba i jednotky procent, na rozdíl od fondů soukromého kapitálu (PE), kde se prodává celá firma či její polovina a je potřeba zásadě jiný objem peněz.
-Když chcete být prvními investory ve startupových projektech, podle čeho tedy vybíráte? Předpokládám, že to bude klasicky zakladatel a tým, a co obory?
-Kromě zakladatele a jeho týmu máme sadu hodnotících kritérií, i když každý z partnerů to může mít trochu jinak a určitě se do toho promítají nějaké naše emoce nebo pohledy z minulosti. Díváme se na to, kdo je podle nás nejlepší kandidát stát se lídrem v kategorii, zda tým umí rychle pivotovat a iterovat. Vlastně, často až třeba třetí produkt přinese úspěch.
-Ale pořád platí, že primárně chceme investovat tým, Už několikrát se nám potvrdilo, že i když ten tým třeba neměl ten první nápad nejlepší anebo třeba nezvládl proces růstu, pokud umí rychle pivotovat a iterovat, možná nebude úspěch ten jeho první produkt. Nebo druhý. Ale třeba klidně třetí. Ukázalo se nám to třeba u BetterStacku. Když jsme do zakladatelů prvně investovali, rozvíjeli nástroj pro analýzu akciových trhů. Teď staví systém proti výpadku webů. Nebo Viktor, úspěšný produkt polského startupu Zeta Labs s umělou inteligencí, virtuální kolega. Až tento produkt jim způsobil tu „startupovou hokejku“ (rychlý a významný nárůst příjmů, pozn. redakce). Ale je taky třeba dodat, že dva a půl roku předtím tým svůj produkt hledal a tohle byl třetí pokus. Hlavně v dnešní době se ukazuje, že jde o důležité schopnosti, protože jak se tvorba produktu zrychlila, týmy je využívají. Musejí umět fungovat rychle a stavět produkty v malém počtu lidí.
-Kolik to je, malý počet lidí? V jaké chvíli?
-A to je třeba dva až pět, v seedové fázi, někdy při rozšiřování produktu na trh.
-Je to téma, o kterém se hodně hovoří, zrychlení stavby produktu a zmenšení týmů ve spojitosti s AI… Vnímáte, že se tak skutečně změnil trh?
-Historicky jsme skutečně viděli, že bylo třeba najímat desítky vývojářů na několik měsíců do fáze MVP, minimálního životaschopného produktu. Pak se ten produkt spustil a ještě ladil, a to vyžadovalo stále lidi a čas. Dnes v pre-seedu a seedu stačí ta zmíněná skupinka dvou až pěti lidí, kteří za dny či týdny postaví první verzi, otestují product-market fit a když to nevyjde, rychle se jde testovat jiný produkt.
-Co je dnes hlavní konkurenční výhodou, když rychlé postavení produktu už nestačí?
-Je to o tom tématu SaaSu, o kterém jste taky psali – dřív měla firma často konkurenční výhodu v tom, že měla produkt hotový. A kdokoliv, kdo přicházel na trh, věděl, že bude muset takový rozdíl dohánět a produkt dostavět. To je dnes velmi rychlé, především v začátcích. Pak se samozřejmě testuje prostor pro daný produkt na trhu, to se nezměnilo. Pořád ho musí někdo chtít. Pořád je třeba ho distribuovat. A tam ta unikátnost služby může být. Stále platí, že má někdo třeba skutečně unikátní distribuci a může z toho těžit. Odlišné je ale to, že firma už nemůže říkat, že má výhodu v tom, že má nejlepší produkt. To je sdělení, které už nefunguje.
-Jaké sdělení tedy funguje?
-Třeba ten SaaS musí mít nějakou součást, ve které může využívat takzvané síťové efekty. Jinými slovy něco, co s každým novým zákazníkem zvyšuje hodnotu služby i pro ostatní uživatele a co konkurence nemůže jednoduše okopírovat jen tím, že naprogramuje podobný produkt. Může jít například o data, komunitu uživatelů, tržiště propojující více stran nebo hluboké napojení na další systémy. V tom případě může přijít někdo nový a produkt rychle postavit, ale nemůže tohle vše ze dne na den ukrást. Nebo můžou mít unikátní a těžko replikovatelnou distribuci. Případně tu fyzickou AI – tedy skutečné napojení na fyzický svět. To nejde zreplikovat ze dne na den a každopádně by to stálo hodně peněz.
-Kdy přesně přišel ten zlom, o kterém se bavíme?
-Řekl bych, že před dvěma lety.
-A bavíme-li se o zásadně sníženém množství času na vývoj produktu, dá se říct konkrétněji, o jakém?
-Obecně nemám rád tuhle generalizaci… Tak tedy pojďme to brát s rezervou, ale myslím si, že nástroje a AI generování dnes umožňují produkt vytvořit ve dnech. A pokud nejde o příliš komplexní řešení, můžeme se reálně bavit o hodinách.
-Jak se to projevuje v ekosystému?
-Ve velkém to mění tempo startupů a investiční cykly. Zásadně se prodlužuje takzvaná runway, doba, kdy je projekt schopný vyžít se zainvestovanými penězi. Počet lidí se snížil, vývoj produktu se zrychlil. Klasicky se dříve investovalo s tím, že startup věděl, že jde o peníze na 12 až 18 měsíců. A věděl, že do té doby musí něco ukázat. Protože pak peníze dojdou a budou potřebovat další investiční kolo. A to, že dojdou peníze, bylo dané tím, že tým musel mít nějakou velikost. Teď mají mezi investicemi reálně větší časové okno.
-Je delší runway výhodou spíš pro zakladatele, nebo investory?
-Zakladatelé s tím správným nastavením mysli mají delší manévrovací prostor. Mohou více pivotovat, iterovat a bez tlaku nasbírat možnosti k růstu. Pro investory to přineslo zpřísnění požadavků na Series A – růstový profil dnes musí být agresivnější, protože firmy jako Anthropic v podstatě dávají za vzor měsíční přírůstky tržeb v řádu stovek milionů nebo miliard dolarů. To stejný sentiment přenese do nižších pater a dokonce i k nám. I zdejší scale-upy, u nás E2B či Viktor, ukazují bezprecedentní hokejky, to jsme opravdu dříve neviděli. A investoři tak očekávají podobná čísla. Otázka je, kolik takových firem tady v Česku nebo v regionu dneska je. Já si myslím, že se radikálně zpřísnil profil firmy, která chce investici řádu Series A (pro růst zavedeného produktu na trhu, např. do zahraničí apod., pozn. redakce).
-A co firmy starší 5–10 let?
-Mnohé firmy se dnes dostávají do černých čísel nebo už jsou ziskové – stačí do stávajících produktů přidat prvky umělé inteligence a nabídnout je zákazníkům. Druhá skupina se ale může dostat do pasti, může jít o klasický SaaS a může jim docházet čas v rámci runwaye: roste jen průměrným tempem, rychle spaluje investované peníze a nedaří se jí získat další peníze. Podle mě může být opravdu nefinancova...
-(Pokracovani na webu)|E||T|Netflix láká Čechy až na měsíc zdarma. Ve Francii přidal televizní stanice|D|20.7. 04:00|P|Netflix zkouší různé strategie k přilákání nových zákazníků. Čechům vrací zkušební období, Francouzům vedle filmů a seriálů nabízí také klasické telev...|X|Největší streamingová služba na světě zveřejnila průběžné výsledky hospodaření za druhé čtvrtletí. Netflix utržil 12,56 miliardy dolarů, meziročně o 13,4 procenta více. Čistý zisk se zvýšil o devět procent na 3,4 miliardy dolarů. Svůj růst vysvětluje vyšším počtem předplatitelů, zdražením a zvýšením příjmů z reklamy.
-Co se dozvíte v článku
-Z pohledu evropských zákazníků je zajímavý nový model, který Netflix od června zkouší ve Francii. Do běžného předplatného tam bez dalšího poplatku začlenil lineární stanice televizní skupiny TF1 i pořady její streamingové služby TF1+. Zájem uživatelů se postupně zvyšoval a například reality show Secret Story se dostala mezi deset nejsledovanějších pořadů na francouzském Netflixu.
-Vedení firmy nevyloučilo podobné spolupráce v dalších zemích, žádnou však zatím neoznámilo. „Pokud uvidíme příležitost k dalším dohodám, které by dávaly smysl pro naše zákazníky, partnery i pro nás, určitě je zvážíme,“ poznamenal k tomu výkonný ředitel Netflixu Greg Peters. Zdůraznil však, že i spolupráce s TF1 je teprve na samém začátku.
-Firma už pravidelně neoznamuje počty předplatitelů. Za hlavní ukazatele svého vývoje považuje tržby a provozní marži. Vedení pouze obecně tvrdí, že to se získáváním nových zákazníků a udržením těch stávajících jde dobře.
-V první polovině letošního roku Netflix zdražoval například ve Spojených státech, Mexiku a Španělsku. Podle Peterse dosavadní výsledky odpovídají předchozím úpravám cen i očekáváním společnosti. Netflix nezveřejňuje, kolik zákazníků kvůli novým cenám předplatné zrušilo nebo přešlo k jinému tarifu.
-Netflix v Česku na zkoušku
-Ve vybraných zemích začala aplikace znovu testovat bezplatné zkušební období. Nabídka je určena jen novým zákazníkům, nikoli lidem, kteří se ke službě vracejí po dřívějším předplatném.
-Vyzkoušet si ji mohou také čeští uživatelé. Délka zkušebního období se může měnit podle toho, z jakého zařízení nový uživatel na Netflix přistupuje a zda na hlavní stránku, nebo na stránku konkrétního pořadu. V anonymním okně prohlížeče na desktopu se může podle redakčního testování objevit nabídka na 14 dnů nebo dokonce celý měsíc zdarma, za jiných okolností to může být pouze 7 dnů.
-Zájemci tak musí zkoušet různé platformy a prohlížeče. V České republice je Netflix pod tlakem služby Oneplay, která podle údajů televize Nova předstihla svého zahraničního konkurenta.
-Netflix do budoucna nevyloučil zcela bezplatnou variantu služby, kterou by financoval z reklamy. V nejbližší době ji ale spustit neplánuje. Podle výkonného ředitele by musel zabránit situaci, kdy by část platících zákazníků přešla k bezplatné nabídce.
-Na trzích, kde už Netflix nabízí levnější tarif s reklamou, se inzerce stává stále významnější částí podnikání. Netflix očekává, že z ní letos utrží přibližně tři miliardy dolarů, zhruba dvojnásobek proti předchozímu roku. Rozšiřuje automatizovaný prodej reklamního prostoru a nabízí reklamy také při pozastavení pořadu nebo během živého vysílání.
-Výnos z jednoho uživatele tarifu s reklamou zatím zůstává nižší než u standardního předplatného bez reklamy. Podle manažerů se ale rozdíl postupně zmenšuje. Firma v něm vidí další prostor pro růst příjmů.
-Bodují thriller i animák
-Uživatelé Netflixu v první polovině roku sledovali obsah déle než 97 miliard hodin. Meziročně se celková doba sledování zvýšila o dvě procenta. V roce 2025 rostla o 1,5 procenta. Více než třetina připadala na pořady v jiných jazycích než v angličtině.
-Nejúspěšnější novou původní sérií Netflixu v letošním roce je zatím thriller Najdu si tě podle Harlana Cobena. Do 12. července zaznamenal 87 milionů zhlédnutí. Animovaný film Kouzelná výměna dosáhl 137 milionů zhlédnutí a podle odhadu firmy se stane jejím druhým nejsledovanějším původním animovaným filmem.
-Akční film Apex s Charlize Theronovou má na kontě 131 milionů zhlédnutí. Korejský seriál My vás naučíme dosáhl 55 milionů zhlédnutí a podle Netflixu směřuje k pozici jeho druhého nejsledovanějšího korejského seriálu na světě. U novějších titulů čísla ještě nezahrnují celé období prvních 91 dnů od premiéry, které společnost používá pro konečné porovnání.
-Ve výsledcích Netflix upozornil také na několik evropských titulů. Britský seriál Utajené legendy dosáhl 20 milionů zhlédnutí, španělský Berlín a Dáma s hranostajem 28 milionů a francouzský komediální příběh Propadání 11 milionů. Ve třetím čtvrtletí chce služba uvést například francouzský film Call My Agent! a polský seriál Loutka.
-Vedení se při hovoru s finančními analytiky vyjádřilo rovněž k obavám, že diváci ztrácejí zájem o pokračování seriálů. „Pokles sledovanosti druhých sezon se letos proti loňsku mírně zlepšil. Na strategiích zveřejňování proto nic měnit nebudeme,“ poznamenal druhý z výkonných ředitelů Ted Sarandos. Netflix tedy nechystá obecný přechod k modelu, při němž každý týden vychází pouze jedna epizoda.
-Vedle filmů a seriálů přidává služba další formáty. Živé pořady mají letos spotřebovat přes pět procent rozpočtu na obsah, ale vytvoří jen přibližně jedno procento celkové doby sledování. Pro Netflix jsou přesto důležité, protože přivádějí nové zákazníky a vytvářejí atraktivní reklamní prostor. Netflix plánuje další utkání ligy amerického fotbalu National Football League, baseballové přenosy a zápas boxerů Tysona Furyho a Anthonyho Joshuy.
-Videopodcasty mají službě získat pozornost uživatelů během dne a na mobilních telefonech, tedy mimo hlavní večerní čas. Netflix proto rozšiřuje spolupráci s tvůrci, mezi které patří Jay Shetty, Martha Stewartová nebo sourozenci Kate a Oliver Hudsonovi. Od srpna nabídne v některých zemích také lifestylový obsah vydavatelství Condé Nast, Hearst a People.
-Méně časté budou naopak souhrnné údaje o sledovanosti. Statistický přehled What We Watched přestane vycházet dvakrát ročně. Od roku 2027 ho Netflix zveřejní pouze jednou ročně v prvním čtvrtletí.
-Týdenní žebříčky a statistiky jednotlivých titulů mají zůstat zachované. Firma změnu vysvětluje snahou oddělit údaje o sledování od hospodářských výsledků. Pro producenty, konkurenty a analytiky to ale znamená méně častý přístup k souhrnným datům.
-Celoroční výhled společnost výrazně nezměnila. Očekává tržby mezi 51 a 51,4 miliardy dolarů, meziročně o 13 až 14 procent více. Ve třetím čtvrtletí počítá s růstem tržeb o necelých 12 procent. V regionu Evropy, Blízkého východu a Afriky čtvrtletní tržby poprvé překročily čtyři miliardy dolarů.|E||T|Nová generace procesorů AMD: Zen 6 v noteboocích pojede aspoň na 5,4 GHz, o 10 % vyšší IPC|D|20.7. 04:00|P|Objevil se nový test Zenu 6 v Geekbench: s lepším výkonem, ale zejména konečně ukazuje, na jaké frekvenci čipy běží, takže se dá odhadnout IPC této no...|X|Před několika dny se na internet dostal uniklý benchmark procesoru AMD s jádry Zen 6 pro notebooky, který naznačil, jaký by mohly podávat výkon mobilní verze těchto CPU. Teď se v databázi Geekbench objevil další test, kde má procesor lepší výkon, ale zejména se poprvé dozvídáme, o kolik nové jádro a výrobní proces zvednou frekvence. A tento test tím pádem i poprvé naznačuje, jaký by architektura Zen 6 mohla mít výkon na 1 MHz.
-Předmětem testu je opět vzorek levnějšího mobilního procesoru (APU) Medusa 1 se deseti jádry, který by měl být vyráběný 3nm procesem (nikoliv 2nm jako čipletové desktopové procesory). Označení je AMD Eng Sample: 100–000001713–33_N. Jde o stejný procesor, který jsme probírali v předchozím článku. A je možné, že předchozí testy běžely i na tom samém exempláři, ale potenciálně s jiným softwarovým prostředím a nastaveními firmwaru. Stále je použitá vývojová platforma AMD Plum-MDS1 s 32 GB paměti nejasného typu, ne reálný notebook.
-Mobilní Zen 6 bude boostovat minimálně na 5,4 GHz
-Základní takt vzorku je sice jen 2,0 GHz, ale tentokrát už Geekbench detekuje frekvenci a v protokolu je vidět, že boostuje na 5,4 GHz. Mobilní procesory založené na Zenu 5 (vyráběné na 4nm procesu) dosáhly maximálního taktu boostu 5,1 GHz v generaci Ryzen AI 300 a 5,2 GHz v refreshové generaci Ryzen AI 400, takže proti ní by to byl nárůst taktů o relativně mírných 200 MHz. Mainstreamové modely Ryzen AI 7 350 a 450 založené na čipu Krackan Point, jejichž následníkem desetijádrová Medusa nejspíš je, ale měly takty jen 5,0 a 5,1 GHz. Takže proti těm by možná šlo o posun o 300 MHz (a vyšší model Medusy prodávný jako Ryzen AI 9 by teoreticky mohl mít boost 5,5 GHz, pokud AMD zvolí stejné schéma jednotlivých modelů).
-Obecně je třeba počítat s možností, že tento vzorek nemusí představovat maximální frekvenci, která v rámci finálně vydaných modelů u procesorů Medusa bude k dispozici.
-Desktopové procesory Ryzen pro socket AM5 (ty mají kódové označení Olympic Ridge) budou používat odlišný křemík, CPU jádra budou realizována v 2nm čipletech a současně takty desktopových modelů bývají u procesorů AMD vyšší než u notebookových APU. Mezi nejrychlejšími mobilní čipy a nejvyšším desktopovým modelem je v generaci Zen 5 rozdíl 500 MHz, přičemž obojí je na 4nm procesu. Pokud bychom uvažovali, že u Zenu 6 bude rozdíl větší, protože desktopová verze bude mít lepší výrobní proces a tedy potenciálně větší rozdíl v taktech, začíná vypadat hodně pravděpodobně, že by desktopové Ryzeny 500 mohly mít frekvenci nad 6,0 GHz. Už loni se objevovaly spekulace, že by takt mohl jít až k 7 GHz, ale to už asi je naopak příliš velký skok, než aby to bylo realistické. Pokud chcete mít optimistická očekávání, možná si vytkněte jako „cíl“ spíš něco jako 6,5 GHz.
-Skóre teď klade Zen 6 výš
-Skóre v benchmarku Geekbench 6.6.0 pro Windows se znatelně zlepšilo a klade teď desetijádro Medusa výš na pomyslném srovnávacím žebříčku. Jednovláknové skóre je 3329 bodů (o 5 % lepší než předchozí výsledek). Pokud uvažujeme, že srovnatelné modely v generaci Zen 5 obvykle dosahují skóre 2800 až 2900 bodů, znamenalo by to, že se výkon mezigeneračně zlepší o +14,8–18,9 %.
-Mohou mít vyšší modely APU s více jádry případně o něco lepší frekvenci a tím lepší jednovláknové skóre? Teoreticky ano, ale generaci Zen 5 to tak zrovna nebylo, takže s tím nelze natvrdo počítat. Na druhou stranu se z protokolu zdá, že procesor nenastavil maximální boost hned při startu zátěže, což by už s finálním firmwarem platit nemuselo – pokud by boost byl agresivnější, nebo bylo použité jiné schéma spotřeby než Rovnováha, teoreticky by mohlo k jednovláknovému skóre něco bodů přibýt.
-Mnohovláknové skóre je 16 555 bodů (skoro o 10 % nad předchozím výsledkem). I to je na desetijádro docela dobrý výsledek, takto skórují spíš dvanáctijádrové mobilní modely s jádry Zen 5. Mnohovláknový test Geekbench ale velmi špatně škáluje a není vhodný na porovnávání CPU s různými počty vláken a IPC, u nichž může spíš zastírat realitu, místo aby ji odhaloval.
-O kolik by mohl Zen 6 mít lepší IPC?
-Díky tomu, že tento záznam v databázi Geekbench už konečně ukazuje dřív neviditelnou frekvenci, se dá začít odhadovat „IPC“ jádra (čili výkon na 1 MHz), respektive o kolik se toto IPC zlepší proti Zenu 5, což je oblíbená metrika pomáhající charakterizovat přínosy nových architektur CPU. Nárůst IPC ale z tohoto výsledku nelze odhadnout moc přesně, protože skóre Geekbench mají pro jeden procesor obvykle značný rozsah: mění je operační systém, rychlost a typ osazené paměti, ale i nastavení schématu napájení ve Windows, množství služeb a aplikací běžících na pozadí, u notebooků také chlazení a tak dále. Nikdy nelze vědět, s jakým přesně výsledkem z tohoto rozsahu by se měl izolovaný výsledek z úniku porovnat.
-Namátkou jsme zvolili dva testy s relativně vyšším a relativně nižším jednovláknovým skóre (ale ne vyloženě nízkým, kdy je jasné, že procesor nejel naplno): 2720 bodů v notebooku HP OmniBook 7 Aero a 2903 bodů z notebooku HP Omen 16 Max, oba s procesorem Ryzen AI 7 350 s architekturou Zen 5, který maximálně boostuje na 5,0 GHz (respektive často neoficiálně na 5050 MHz – je možné, že reálné maximum Zenu 6 v tomto modelu také bude 5450 MHz, zatímco oficiálně mu AMD bude ve specifikacích psát 5,4 GHz, pro zjednodušení budeme počítat s hodnotami 5,0 a 5,4).
-Když se započítá rozdíl ve frekvenci (+8,0 % u Zenu 6), vychází u vzorku Medusy nárůst IPC od +6,2 % (v případě, že bereme vyšší skóre Zenu 5 jako základ) do +13,3 % (pokud se vztahujeme k nižšímu skóre Zenu 5). Střed mezi těmito hodnotami by byl cca +10 %. Připomeňme, že v už před delším časem prosáklé interní projekci AMD uvádělo, že IPC naroste mezi Zenem 5 a Zenem 6 o „+10 nebo víc %“. Onen střední odhad by tedy v podstatě přesně zapadal, s dvěma procentními body nad spodní hranicí předběžné projekce:
-Je to ovšem velmi hrubý odhad, protože pořád nevíme, zda třeba výkon procesoru Medusa pořád není něčím podhodnocen. Na skóre v Geekbench má vliv i to, zda má procesor paměti LPDDR5X nebo DDR5, a typ pamětí použitých vzorkem Zenu 6 zrovna neznáme. Také je docela dobře možné možné, že změna IPC bude trošku odlišná u zde uniklého mobilního Zenu 6, který zřejmě navýšil L3 cache dostupnou pro jedno jádro z 16 na 32 MB, a u desktopových procesorů. U těch by mělo dojít ke zvýšení z 32 na 48 MB, což asi může přinést nižší nárůst, ale zase se mohou projevit jiné faktory, jako návrh řadiče pamětí a celého IO čipletu, který desktopové modely dostanou.
-Zdroj: Geekbench|E|
+Before joining BNY, Robin spent 26 years at Goldman Sachs, where he was a partner and member of the Management Committee. His leadership roles included Chief Risk Officer, Treasurer, Head of Operations, COO of the EMEA region, and CEO of Goldman Sachs International Bank. Robin serves on the boards of the Hospital for Special Surgery and the Perelman Performing Arts Center. He is a member of the Business Roundtable, the Business Council, the Partnership for New York City, the Financial Services Forum, and the International Advisory Board of the Monetary Authority of Singapore.|E|

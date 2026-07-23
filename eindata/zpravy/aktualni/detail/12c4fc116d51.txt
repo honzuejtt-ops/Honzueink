@@ -1,0 +1,21 @@
+Článek
+„Ta technologie je sama o sobě neutrální,“ řekl o roli AI v politické soutěži Novinkám Karel Komínek z Institutu politického marketingu. Poukázal i na to, že využívání podvrhů nebo fotomontáží není v politice nový koncept. „Ta technologie umělé inteligence to pouze zdemokratizovala, zpřístupnila. Je to jako oheň, který nám může uvařit jídlo, ale také zapálit stodolu,“ dodává.
+Pro řadu politiků představuje umělá inteligence levnější a rychlejší alternativu nákladných kampaní. Objevují se však i takzvané deepfakes, tedy obsah, ve kterém umělá inteligence přesvědčivě vygeneruje reálnou osobu. Ty často vznikají s účelem zesměšnit politické oponenty. Přestože se takové fotky a videa na sítích objevují čím dál častěji, málokdy jsou označené jako výtvor AI.
+To by měla změnit evropská směrnice s názvem AI Act. Ta mimo jiné ukládá provozovatelům generativních AI technologií povinnost označování a detekce obsahu tvořeného Gen AI. Jeho zapojení do české legislativy má na starost ministerstvo průmyslu a obchodu. Pravidla o transparentnosti by měla začít platit od 2. srpna 2026.
+Anketa
+„Humorné“ deepfaky
+„Myslím si, že ta povinnost by měla být obecnější, nejenom pro politiku, ale to je na složitější debatu,“ říká politolog Otto Eibl z brněnské Masarykovy univerzity. Podle něj nejsou problémem například doprovodné obrázky, ale spíše manipulativní deepfaky.
+„Jestli si (politické strany) z někoho dělají legraci, tak je většinou zjevné, že si legraci dělají. Horší jsou ty manipulativní věci, které schválně zavádějí, jsou zlé a jejich cílem je někoho poškodit,“ dodal.
+„Humorné“ deepfaky, které rýpou do politických oponentů, se například nedávno objevily na sociálních sítích ODS. Videa zveřejnil bývalý předseda strany Petr Fiala, na oficiálních kanálech ODS ale byly přesdíleny.
+Jedno z deepfake videí si utahuje z ministra zahraničí Petra Macinky a ministra kultury Oty Klempíře (oba Motoristé) kvůli jejich vystoupení na festivalu ve Strážnici. Další video pak cílilo na zmocněnce pro klimatickou politiku a green deal Filipa Turka (za Motoristy) kvůli autonehodě, kterou měl začátkem minulého týdne.
+Takto si zřejmě představovali své vystoupení ve Strážnici ministři Klempíř a Macinka. Lidé ale ani v tom horku naštěstí neztrácejí rozum… pic.twitter.com/r6FCROq0c7
+— Petr Fiala (@P_Fiala) June 28, 2026
+Co je to deepfake?
+Deepfake je zdánlivě reálný, umělou inteligencí vytvořený obraz, zvuk nebo video. Jde o podvrh, tento materiál se nezakládá na pravdě.
+Technologie deepfake (složenina slov „deep learning“ – hluboké učení; disciplína v rámci strojového učení a „fake“ – anglický výraz pro podvrh, falzifikát), využívá umělé inteligence, která pomocí algoritmů a velkého množství zdrojových fotografií dokáže vytvořit model obličeje člověka, aniž by ho bylo potřeba skenovat.
+AI má své místo
+„Tohle všechno, co se produkuje, nepřispívá politické kultuře v České republice,“ řekl Novinkám Eibl. „Bylo by skvělé, kdyby ta zpětná vazba a regulace nepřicházela ze strany legislativní nebo technické, ale přicházela by ze strany voličů a poptávky,“ dodal.
+ODS však není jediná, kdo si na sociálních sítích pomáhá Gen AI obsahem. Například hnutí SPD ji často využívá k tvorbě doprovodných obrázků. Některé se dostaly i na plakáty, které hnutí využilo ve volbách. K těm patří i nechvalně proslulý „chirurg z dovozu“, kvůli kterému skončilo hnutí před soudem.
+Podle Eibla však existuje i několik způsobů, kterými lze AI v politice využít pozitivně. „Když si vytrénujete modely, můžete držet jednotnou linku komunikace, ať už jako obsah nebo formu,“ uvedl. Kromě generativní umělé inteligence vidí využití i pro trénované AI modely, které mohou během pár kliků zastat práci celých týmů.
+„Mohou pomáhat ve volebních kampaních nebo v analýzách. V okamžiku, kdy do modelu nasypete nějaká data z minulých voleb, tak si můžete udělat celkem snadnou představu, jak si můžete stát příště. Politické mapy, které bývaly doménou politologů, si může zbouchat na koleni prakticky každý… Těch pozitivních využití je spousta,“ uzavírá.
+S takovou vizí souhlasí i Komínek, upozorňuje však na to, že záleží na kvalitě vložených dat.

@@ -1,0 +1,3 @@
+OpenAI už pár dní řeší zapeklitou věc. Minulý týden společnost Hugging Face, provozující oblíbený server pro získávání a testování modelů umělé inteligence, ohlásila bezpečnostní incident. Tehdy neznámý AI agent samostatně pronikl do interní infrastruktury a získal přístup k neveřejným datasetům. ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

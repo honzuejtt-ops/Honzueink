@@ -1,0 +1,7 @@
+Poslední aktualizace WhatsAppu přinesla několik větších novinek. Vedle možnosti vytvářet účty na iPadu, pracovat přímo v aplikaci s PDF nebo sdílet aktuální poslouchanou skladbu ve svém stavu je to především velký update pro Android Auto a CarPlay. Z WhatsAppu se i za volantem konečně stane plnohodnotný komunikátor.
+Text i hovory
+Dosavadní podoba WhatsAppu v Android Auto nabízela poměrně omezené možnosti. Uživatel mohl nadiktovat novou zprávu nebo zahájit hovor. Aktualizace ale navíc přidává především poslech přijatých zpráv a možnost okamžitě na ně odpovědět hlasem. Příchozí text tak přečte systém vozu a řidič pak může nadiktovat reakci bez otevírání aplikace v telefonu. WhatsApp tím přibližuje komunikaci běžnému ovládání navigace nebo dalším komunikátorům, jako jsou vestavěné zprávy v iOS.
+Výraznější proměnou prošly také hovory z aplikace. WhatsApp nově zobrazí jejich historii přímo na obrazovce automobilu, díky čemuž lze vybrat některý z posledních kontaktů bez hledání konverzace. K dispozici jsou rovněž oblíbené kontakty, což opět výrazně zrychlí zahájení hovoru.
+Změny mimo auto
+WhatsApp také přidává práci se soubory PDF ve webové a počítačové verzi. Dokument lze otevřít přímo v konverzaci bez předchozího stažení. Uživatelé mohou použít základní možnost anotace, jako je zvýraznění textu nebo vytvoření poznámky. Meta se pro integraci těchto funkcí spojila s Adobe a půjčila si technologii z Acrobatu.
+Zdroj: Meta

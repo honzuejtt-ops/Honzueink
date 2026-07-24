@@ -1,0 +1,25 @@
+Napadlo vás někdy při uchopení nového telefonu, nabíječky nebo třeba televize, co vlastně všechny symboly a piktogramy na obalech znamenají? Možná vás překvapí, kolik užitečných informací se z nich dá vyčíst.
+Nejde totiž jen o obyčejná loga, nýbrž o certifikace, které často potvrzují, že výrobek skutečně splňuje konkrétní bezpečnostní technické normy.
+Co znamenají jednotlivé symboly?
+Jakékoliv symboly, loga či piktogramy mají přesně svůj účel. Uživatelům například prozrazují to, jaké normy výrobek splňuje, pro jaký trh je určený nebo jak s ním správně naložit po skončení jeho životnosti.
+Pokud elektroniku kupujete od ověřených e-shopů či kamenných prodejen, její bezpečnost a potřebné certifikace většinou berete jako samozřejmost. Jiná situace může nastat v případě levné elektroniky z Číny, kde už situace nemusí být tak jednoznačná a jejich spolehlivost tak nelze zaručit.
+Pojďme se nyní podívat na nejznámější a nejčastěji používané piktogramy:
+1. CE (conformité européenne)
+Zkratka CE pochází z francouzského conformité européenne, tedy evropské prohlášení o shodě. Označení potvrzuje, že výrobek splňuje příslušné požadavky Evropské unie a může být uveden na trh. CE platí i pro Norsko a Island.
+Pozor si však dejte na velmi podobné označení, které najdete často u čínských výrobků. Jejich CE totiž nemá s prohlášením o shodě nic společného a je pouze zkratkou pro „China Export“ nebo „Chinese Export“. Jejich rozdíl můžete vidět na obrázku níže.
+2. Přeškrtnutá popelnice (WEEE)
+Symbol přeškrtnuté popelnice upozorňuje, že výrobek patří mezi elektrická a elektronická zařízení a po skončení životností nesmí skončit v běžném směsném odpadu. Místo toho by měl být odevzdán na sběrném dvoře nebo do příslušného kontejneru na elektroodpad.
+Pokud se pod symbolem nachází vodorovná čára, zpravidla označuje, že výrobek byl uveden na trh po 13. srpnu 2005. Jde o označení vycházející z normy EN 50419.
+3. RoHS
+Označení RoHS (někdy RoHS compliant) pochází z anglického Restriction of Hazardous Substances (omezení nebezpečných látek). Říká, že výrobek splňuje stanovené limity pro množství vybraných nebezpečných látek.
+Patří mezi ně například olovo, rtuť, šestimocný chrom, některé látky používané jako zpomalovače hoření nebo vybrané ftaláty.
+4. Energetický štítek A až G
+Energetický štítek slouží především k rychlému porovnání energetické spotřebě a účinnosti spotřebičů. Výrobky jsou podle současného systému zařazeny do tříd od A (nejúspornější) až po G (nejméně úsporné). Mimo to můžete na štítku najít i další důležité údaje, jako je hlučnost či spotřeba vody.
+Podrobnosti o daném produktu sdružuje tzv. EPREL, tedy Evropský rejstřík výrobků pro označování energetickými štítky. Na oficiálním webu stačí do pole zadat číslo na štítku a ihned se dozvíte podrobnější informace o výrobku.
+5. FCC
+Zkratka FCC (z anglického Federal Communications Commission) potvrzuje, že elektronické zařízení splňuje příslušné americké požadavky týkající se například elektromagnetického rušení a rádiového vyzařování. Zjednodušeně řečeno jde o určitou obdobu evropského označení CE, byť obě certifikace nejsou vzájemně totožné.
+6. UKCA
+Označení UKCA (z anglického UK Conformity Assessed) se používá pro výrobky určené na britský trh. Potvrzuje, že daný produkt splňuje příslušné britské požadavky na bezpečnost, ochranu zdraví a další oblasti. Značka vznikla po brexitu a měla na britském trhu postupně nahradit evropské označení CE.
+Na krabičkách ji můžeme najít proto, jelikož řada výrobců jednoduše tiskne jeden obal pro mnoho trhů, včetně našeho i britského.
+7. Dva čtverce v sobě
+Symbol tvořený dvěma čtverci, z nichž jeden je umístěný uvnitř druhého, označuje zařízení s třídou ochrany II. Výrobek je v takovém případě chráněn před úrazem elektrickým proudem dvojitou nebo zesílenou izolací. Díky tomu není nutné jeho připojení k ochrannému vodiči a vystačí si s klasickou dvoukolíkovou zástrčkou.

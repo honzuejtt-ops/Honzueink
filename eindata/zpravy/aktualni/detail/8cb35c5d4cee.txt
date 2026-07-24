@@ -2,6 +2,8 @@ Technologičtí nadšenci se předhánějí v tom, kdo dokáže rozjet Doom na c
 192 tužkových AA baterií rozjede FreeDoom
 Za experimentem stojí tvůrce vystupující na YouTube jako Uwos Lab. Za pomoci 192 alkalických AA článků sestavil bateriový zdroj, který posloužil pro pohon počítačové sestavy. Původně plánoval využít dokonce 400 baterií, nakonec si však vystačil s menším počtem. Pro napájení počítače využil 12V DC-ATX adaptér připojený k základní desce místo klasických 230 V.
 Samotný počítač byl postaven na platformě AMD AM4 s integrovaným grafickým čipem. Systém neměl klasické úložiště, nýbrž startoval z flash disku, na kterém měl Uwos Lab nainstalovaný Hannah Montana Linux. Pro zajímavost, tento systém vznikl v roce 2009 jako recesistická linuxová distribuce inspirovaná stejnojmennou popovou hvězdou a v poslední době se dočkal nového oživení.
+Procesory AMD si můžete koupit například zde.
 A výsledek? Počítač dokázal z provizorního bateriového zdroje fungovat asi 30 minut, během kterého kleslo napětí z 13 V na stabilních 11,95 V. Během testování prošel také zátěžovým testem stress-ng, při kterém byl procesor vytížen na 98 %.
 Celý záznam stavby baterie a testování počítače najdete na YouTube:
 zdroj: Tom’s Hardware, YouTube, síť X (1, 2)
+Tento text obsahuje affiliate odkazy. Pokud se přes tyto odkazy na vybraných službách zaregistrujete, případně něco nakoupíte, získá z toho redakce malou provizi sloužící pro zajištění našeho fungování. Detaily o affiliate programech najdete zde.

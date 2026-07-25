@@ -1,3 +1,13 @@
+|T|ChatGPT má celosvětový výpadek, OpenAI zjišťuje příčiny|D|25.7. 09:47|P|AI chatbot ChatGPT a další služby americké firmy OpenAI se momentálně potýkají s problémy. Uživatelé se například nemohou přihlásit k webovému rozhran...|X|AI chatbot ChatGPT a další služby americké firmy OpenAI se momentálně potýkají s problémy. Uživatelé se například nemohou přihlásit k webovému rozhraní a potíže zasáhly také přístup k AI modelům OpenAI přes API. V mobilní aplikaci chatbot neodpovídá na dotazy a zobrazuje jen hlášení o tom, že dotaz odesílá na server.
+OpenAI probémy potvrdila na statusové stránce svých služeb. Zasažen je podle ní kromě ChatGPT a služeb dostupných přes API také vývojářský nástroj Codex. Firma potíže popisuje jako zvýšenou míru chybovosti. Příčinu zatím neoznámila.
+Podle služby Downdetector, která se specializuje na shromažďování uživatelských hlášení o výpadcích online služeb, jsou problémy OpenAI celosvětové.
+OpenAI také stále řeší incident, při kterém jí z uzavřeného testovacího prostředí unikli AI agenti zaměření na hledání kyberbezpečnostních chyb a pronikli do infrastruktury služby Hugging Face, která je populární knihovnou shromažďující AI modely různých firem a další související informace.|E|
+|T|Při změně operátora můžete zažádat o vrácení nespotřebovaného kreditu na předplacené kartě|D|25.7. 08:45|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Zuckerberg na metaverzu prodělal kalhoty. Výjimkou zůstává český hit Beat Saber|D|25.7. 07:45|P|Meta už v metaverzu prodělala přes 80 miliard dolarů, jedním z mála úspěchů z této éry však zůstává český VR hit Beat Saber • . • Tržby pražských Beat...|X|Meta už v metaverzu prodělala přes 80 miliard dolarů, jedním z mála úspěchů z této éry však zůstává český VR hit Beat Saber • . • Tržby pražských Beat Games klesly z 2,3 miliardy korun na 437 milionů, část příjmů totiž nově účetně inkasuje centrála Mety. • Meta škrtá ve VR a sází na AI, ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Sony RX10 V: Nový superzoom s brutálním 25× přiblížením|D|25.7. 06:45|P||X|
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|

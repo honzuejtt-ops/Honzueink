@@ -1,0 +1,3 @@
+AI zrychluje objevování zranitelných míst v kódu. • Microsoft ve svých produktech v červenci opravil 627 zranitelných míst. • Doporučuje, aby se instalace záplat neodkládala déle než tři dny.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

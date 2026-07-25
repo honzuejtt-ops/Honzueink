@@ -1,0 +1,16 @@
+Článek
+Stačí nechat mobil pár minut na přímém slunci, zapnout navigaci, připojit nabíječku a během chvíle se na displeji může objevit varování o příliš vysoké teplotě. Telefon ztlumí jas, zpomalí výkon, přestane se nabíjet nebo v krajním případě úplně vypne.
+Nejde přitom o poruchu. Naopak – výrobci tím chrání baterii i další citlivé součástky před poškozením. Přesto mnoho uživatelů netuší, proč se telefon přehřívá právě ve chvíli, kdy ho nejvíce potřebují.
+Nejhorší kombinace? Navigace, nabíjení a slunce
+Přehřátí telefonu většinou nezpůsobí jediný faktor, ale jejich souběh. Samotná vysoká venkovní teplota ještě nemusí být problém. Kritická situace nastává ve chvíli, kdy telefon zároveň vykonává náročné úlohy.
+Typickým příkladem je navigace v autě. Displej svítí na maximální jas, GPS neustále pracuje, telefon komunikuje přes mobilní síť a často se současně rychle nabíjí. Pokud je navíc umístěný na držáku za čelním sklem, dopadá na něj přímé sluneční záření, které dokáže jeho povrch zahřát během několika minut.
+Podobně náročné je natáčení videa ve vysokém rozlišení, zejména ve 4K nebo 8K. Kamera, obrazový procesor i stabilizace obrazu vytvářejí značné množství tepla. K tomu připočtěme letní festival, dovolenou nebo sportovní akci na přímém slunci a není divu, že některé telefony po několika minutách natáčení upozorní na vysokou teplotu a omezí svou funkčnost.
+Výrazně zahřívají telefon také moderní mobilní hry. Výkonné procesory a grafické čipy dnes podávají výkon srovnatelný s přenosnými herními konzolemi, což se neobejde bez produkce tepla. Situaci zhoršuje hraní během nabíjení nebo používání ochranného pouzdra, které odvádění tepla částečně brání.
+Neméně náročné jsou dlouhé videohovory, živé vysílání na sociálních sítích nebo stahování velkých objemů dat přes mobilní síť 5G.
+Telefon se zpomaluje schválně
+Mnoho lidí si myslí, že když se telefon začne sekat nebo náhle ztmaví displej, něco se pokazilo. Ve skutečnosti jde o bezpečnostní mechanismus označovaný jako thermal throttling.
+Jakmile teplota procesoru nebo baterie překročí bezpečnou hranici, systém začne automaticky omezovat výkon. Telefon tak sice reaguje pomaleji, ale zároveň snižuje množství vznikajícího tepla. Dalším krokem bývá omezení nabíjení, vypnutí blesku nebo fotoaparátu. Pokud ani to nestačí, zařízení se může samo vypnout.
+Výrobci tím chrání především lithium-iontovou baterii, která vysoké teploty snáší výrazně hůře než běžné elektronické součástky. Dlouhodobé přehřívání totiž urychluje její stárnutí, což se později projeví kratší výdrží nebo rychlejším poklesem kapacity.
+Anketa
+Co pomůže okamžitě
+Dobrou zprávou je, že většině problémů lze předejít několika jednoduchými návyky.

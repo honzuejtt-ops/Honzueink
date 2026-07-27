@@ -3,6 +3,7 @@ V zadání použil jednoduchý prompt injection, tedy vložení příkazu pro LL
 Bez kontroly promptu i výsledku
 Studenti, kteří bezmyšlenkovitě zkopírovali celé zadání do chatbotu, vložili do chatbota i tento „neviditelný“ text. A jak vyplývá z výsledků, nenamáhali se ani o přečtení zkopírovaného textu – nachytat se nechalo 32 z 35 studentů. Odevzdané texty o průmyslové revoluci obsahovaly zmínky o Madagaskaru, které nedávaly smysl ani při zběžném přečtení.
 V jedné odpovědi Madagaskar plul odpolednem bokem. Další odevzdaná práce jej spojila s fialovým kolem, které šeptá ke stropu. Další text tvrdil, že ostrov přišel na basketbalový zápas s topinkovačem. Kromě promptu tak většina studentů očividně nečetla ani výsledný text. Gibson, který publikuje videa na TikToku, jim následně vysvětlil, jak odhalil využití AI.
+Používáte AI ve škole/práci?
 Byť se experiment odehrál ve Spojených státech, dá se předpokládat, že v českých třídách by dopadl velmi podobně. Otázkou tak je, jak se k zavádění umělé inteligence ve školství postavit. Jednotný státní koncept prozatím neexistuje. Rámuje jej Národní strategie umělé inteligence ČR 2030, kterou vytvořila minulá vláda.
 Současné vedení MŠMT nebo Národního pedagogického institutu jsou sice pro smysluplné a bezpečné používání AI, ale konkrétní metodiky leží především na bedrech samotných pedagogů či vedení konkrétních vzdělávacích institucí.
 Zdroj: Futurism

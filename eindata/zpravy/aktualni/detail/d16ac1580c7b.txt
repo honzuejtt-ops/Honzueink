@@ -1,0 +1,10 @@
+Článek
+Na existenci tohoto identifikátoru upozornily až soudní dokumenty zveřejněné v souvislosti s vyšetřováním údajného člena známé hackerské skupiny. Microsoft totiž podle serveru Extreme Tech poskytl úřadům informace, díky nimž bylo možné propojit různé online aktivity s jedním konkrétním zařízením. Podezřelý byl následně zadržen na letišti.
+Microsoft popisuje GDID jako trvalý identifikátor, který jednoznačně určuje konkrétní instalaci systému Windows. Nezáleží přitom, zda jde o stolní počítač, notebook, tablet nebo virtuální počítač.
+Zjednodušeně řečeno, jde o jakýsi digitální otisk instalace Windows. Vytvoří se při prvním nastavení systému nebo při registraci nového zařízení a propojí se s účtem uživatele. Díky tomu může Microsoft rozpoznat, že určité aktivity pocházejí stále ze stejné instalace systému.
+Změní se až po přeinstalaci
+Server Windows Latest upozornil, že identifikátor vzniká na serverech Microsoftu, ale zároveň se ukládá i přímo do systému Windows. Při běžných aktualizacích systému zůstává GDID stejné. Nový identifikátor vznikne až při kompletní přeinstalaci Windows. Podle dostupných informací si ale Microsoft může ponechat záznam i o tom původním.
+Právě to sehrálo důležitou roli při vyšetřování zmíněného hackera. Přestože se snažil svou identitu skrývat jinými metodami, používal stále stejné zařízení. Microsoft tak mohl propojit jednotlivé aktivity prostřednictvím stejného identifikátoru a předat získané informace vyšetřovatelům.
+Kritika kvůli ochraně soukromí
+Právě tato možnost vyvolala kritiku zastánců ochrany soukromí. Vadí jim především to, že uživatelé nemají možnost GDID vypnout ani zabránit jeho vytvoření. Microsoft naopak zdůrazňuje, že identifikátor slouží hlavně ke správě licencí a fungování některých služeb Windows.
+Samotná existence trvalého označení pro každou instalaci systému ale znovu otevírá otázku, kolik informací technologické firmy o svých uživatelích shromažďují a jak snadno lze jejich digitální stopu spojit s konkrétním zařízením.

@@ -1,0 +1,5 @@
+Oživeno 27. 7. 2026 | Největším tématem Firefoxu 153 je HDR. Mozilla s implementací pořádně otálela, vždyť Chrome přehrávání videí s vysokým dynamickým rozsahem podporuje od ledna 2018. Edge funkci získal ještě o něco dřív. Firefox každopádně konečně umožňuje přehrávání HDR ve Windows.
+
+Musí být ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

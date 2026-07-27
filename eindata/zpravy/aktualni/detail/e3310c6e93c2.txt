@@ -1,0 +1,5 @@
+Chtěli byste mít na optické síti od O2, respektive CETINu vlastní modul pro XGS-PON SFP+ namísto ONT? Anton Arapov, který vede brněnské vývojové centrum OpenSSL fungující od loňského roku, na GitHubu zveřejnil kompletní návod. Upozornil na to Kamil Zmeškal.
+Postup, jak na optice CETINu rozjet XGS-PON SFP+, rozhodně není plug-and-play a je potřeba realizovat několik technických kroků. Autor připravil i schéma fungování.
+Arapov vyměnil pronajatý ONT (Comtrend) za FS XGS-SFP-ONT-MAC-I zastrčený do SFP+ portu routeru. Technologii má v provozu od července.
+Je nutné koupit správný modul. “Linka O2 na infrastruktuře CETINu je dnes typicky XGS-PON (10G, vlnové délky 1270 nm up / 1577 nm down) — ověřte štítek svého ONT. FS prodává GPON i XGS-PON variantu; GPON verze na XGS lince nenaběhne,” uvedl autor.
+Je také nutné u O2 zaregistrovat sériové číslo modulu. “CETIN autorizuje pouze podle GPON SN (žádné heslo, žádný regID). Pošlete raději obě formy — ASCII (FSOX--------) i plný hex (46534F58--------) — ať si partner CETIN vybere.” Celý návod je tady.

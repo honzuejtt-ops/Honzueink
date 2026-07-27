@@ -1,3 +1,3 @@
-Dopadení hackera na světlo vyneslo informace o sledovači ve Windows. • Každá systému instalace má vlastní identifikátor Global Device ID. • Nemůžete se mu vyhnout, pokud chcete používat Windows.
+Dopadení hackera na světlo vyneslo informace o sledovači ve Windows. • Každá instalace systému má vlastní identifikátor Global Device ID. • Nemůžete se mu vyhnout, pokud chcete používat Windows.
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)

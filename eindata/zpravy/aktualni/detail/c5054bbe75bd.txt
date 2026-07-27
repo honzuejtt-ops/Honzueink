@@ -1,0 +1,153 @@
+Na předchozí dvojici článků o knihovně gg [1] [2] dnes navážeme. Ukážeme si totiž, jakým způsobem lze otevřít okno a přes gg provést vykreslení celé 2D scény do plochy tohoto okna. Samotná knihovna gg takové operace sice nepodporuje, ovšem to ve skutečnosti nevadí, protože dokáže spolupracovat s knihovnou gogpu patřící do stejně pojmenovaného projektu.
+Co se dozvíte v článku
+- Události a callback funkce, které na ně reagují
+- Události Draw a Close
+- První demonstrační příklad: aplikace s prázdným oknem
+- Vykreslení pozadí zvolené barvy v ploše okna
+- Úplný zdrojový kód demonstračního příkladu, který inicializuje pozadí okna
+- Povolení kontinuálního překreslování okna
+- Využití canvasu při kreslení do okna: vykreslení obrysu obrazce zvolenou barvou
+- Vykreslení hvězdy do plochy okna: základ pro navazující příklady
+- Další základ pro další příklady: vykreslení Bézierových křivek i s jejich řídicími body
+- Reakce aplikace na stisk klávesy či více kláves
+- Zjištění stisku kláves použitých pro ovládání aplikace
+- Demonstrační příklad: rotace hvězdy s využitím kurzorových kláves
+- Demonstrační příklad: změna barvy hvězdy dalšími klávesami
+- Přečtení aktuální pozice kurzoru myši popř. detekce stisku tlačítek myši
+- Demonstrační příklad: posun řídicích bodů Bézierových kubických křivek
+- Demonstrační příklad: jednoduchý kreslicí program
+- Vylepšení: kreslení „gumové čáry“ sledující pohyb kurzoru
+- Repositář s demonstračními příklady
+- Odkazy na Internetu
+To znamená, že ve všech demonstračních příkladech, které si dnes ukážeme, bude importována mj. i tato knihovna:
+"github.com/gogpu/gogpu"
+Aplikaci s grafickým uživatelským rozhraním je možné v tom nejjednodušším případě inicializovat konstruktorem NewApp, kterému se předává struktura s konfigurací aplikace:
+func NewApp(config Config) *App
+    NewApp creates a new application with the given configuration.
+Při inicializaci struktury Config můžeme využít konstruktor DefaultConfig vracející, jak název napovídá, výchozí konfiguraci:
+func DefaultConfig() Config
+    DefaultConfig returns a sensible default configuration. By default,
+    uses event-driven rendering (0% CPU when idle). For game loops, use
+    WithContinuousRender(true).
+V tom nejjednodušším případě tedy může inicializace aplikace vypadat takto:
+// inicializace aplikace s GUI app := gogpu.NewApp(gogpu.DefaultConfig())
+Samotné spuštění aplikace (což vede k zobrazení okna atd.) pak vypadá následovně:
+// spuštění aplikace app.Run()
+Pro úpravu výchozí konfigurace slouží řada metod objektu Config, které vrací upravenou podobu tohoto objektu. To umožňuje řetězit volání těchto metod, což si ihned ukážeme:
+func (c Config) WithAppName(name string) Config func (c Config) WithBackend(backend types.BackendType) Config func (c Config) WithContinuousRender(continuous bool) Config func (c Config) WithFrameless(frameless bool) Config func (c Config) WithFullscreen() Config func (c Config) WithGraphicsAPI(api types.GraphicsAPI) Config func (c Config) WithHeaderAlignment(alignment HeaderAlignment) Config func (c Config) WithIcon(img image.Image) Config func (c Config) WithMaxSize(width, height int) Config func (c Config) WithMinSize(width, height int) Config func (c Config) WithPowerPreference(pref gputypes.PowerPreference) Config func (c Config) WithRenderMode(mode RenderMode) Config func (c Config) WithResizable(resizable bool) Config func (c Config) WithSize(width, height int) Config func (c Config) WithTabbingIdentifier(id string) Config func (c Config) WithTabbingMode(mode TabbingMode) Config func (c Config) WithTitle(title string) Config func (c Config) WithVSync(vsync bool) Config
+Příkladem může být inicializace aplikace s oknem o rozměrech 400×300 pixelů a s nastaveným titulkem:
+// rozměry okna
+const width = 400
+const height = 300
+ 
+// inicializace aplikace s GUI
+app := gogpu.NewApp(gogpu.DefaultConfig().
+        WithTitle("GoGPU + gg").
+        WithSize(width, height))
+Události a callback funkce, které na ně reagují
+Vývoj aplikací s interaktivním grafickým uživatelským rozhraním z pochopitelných důvodů vyžaduje použití odlišných technik, než je tomu u vývoje dávkových souborů či jednoduchých skriptů. V mnoha frameworcích určených pro tvorbu grafického uživatelského rozhraní se z tohoto důvodu setkáme s konceptem událostí (event) a reakcí na vznik těchto událostí. V případě knihovny gogpu se na událost (určitého typu) reaguje tak, že se zavolá nějaká callback funkce. Příslušné funkce musí být nejdříve zaregistrovány, a to konkrétně v metodách struktury získané výše zmíněným konstruktorem gogpu.NewApp.
+Události Draw a Close
+V první sadě demonstračních příkladů si vystačíme se dvěma typy událostí:
+- Draw – požadavek na překreslení obsahu okna aplikace
+- Close – požadavek na ukončení aplikace
+Na tyto události můžeme (vhodným způsobem) reagovat ve funkcích, které jsou zaregistrovány metodami nazvanými OnDraw a OnClose:
+func (a *App) OnDraw(fn func(*Context)) *App
+    OnDraw sets the callback for rendering each frame. The Context is only
+    valid during the callback. If the primary window has been created (after Run
+    starts), its draw callback is also updated to stay in sync.
+ 
+ 
+ 
+func (a *App) OnClose(fn func()) *App
+    OnClose sets the callback invoked when the application is shutting down,
+    before the GPU renderer is destroyed. Use this to release GPU resources
+    (e.g., ggcanvas.Canvas) that depend on the renderer being alive.
+ 
+    The callback runs on the render thread.
+Jednodušší z těchto metod je OnClose, protože se této metodě předává callback funkce bez parametrů i bez návratové hodnoty. V tom nejjednodušším případě příslušná callback funkce pouze zavolá metodu CloseAccelerator (což je asi v tomto případě výhodnější, než se spoléhat na defer). Registrace příslušné callback funkce může vypadat takto:
+// callback metoda zavolaná ve chvíli, kdy se okno uzavírá
+app.OnClose(func() {
+        gg.CloseAccelerator()
+})
+Callback funkci volané v případě, že je nutné překreslit okno, se předává parametr typu gogpu.Context, který – jak dále uvidíme – můžeme využít podobně jako grafický kontext v knihovně gg:
+type Context struct {
+        // Has unexported fields.
+}
+    Context provides drawing operations for a single frame. It is only valid
+    during the OnDraw callback and should not be stored.
+ 
+    In multi-window mode, each Context targets a specific window surface.
+    The surface field points to the target RenderTarget; if nil, the renderer's
+    primary surface is used (single-window backward compat).
+I když to není zcela korektní, je možné ponechat tělo této callback funkce prázdné popř. do něj pouze přidat výpis nějaké zprávy na standardní výstup:
+// callback metoda zavolaná ve chvíli, kdy se má překreslit okno
+app.OnDraw(func(dc *gogpu.Context) {
+        fmt.Println("Redraw....")
+})
+První demonstrační příklad: aplikace s prázdným oknem
+Konečně se dostáváme ke zdrojovému kódu dnešního prvního demonstračního příkladu. Po jeho překladu a spuštění by se mělo vykreslit okno, jehož plocha může mít v podstatě libovolný obsah (není totiž překreslena). Typicky je možné v ploše okna vidět původní obsah obrazovky:
+Úplný zdrojový kód tohoto demonstračního příkladu vypadá následovně:
+package main
+ 
+import (
+        "fmt"
+ 
+        "github.com/gogpu/gg"
+        _ "github.com/gogpu/gg/gpu"
+        "github.com/gogpu/gogpu"
+)
+ 
+func main() {
+        // rozměry okna
+        const width = 400
+        const height = 300
+ 
+        // inicializace aplikace s GUI
+        app := gogpu.NewApp(gogpu.DefaultConfig().
+                WithTitle("GoGPU + gg").
+                WithSize(width, height))
+ 
+        // callback metoda zavolaná ve chvíli, kdy se má překreslit okno
+        app.OnDraw(func(dc *gogpu.Context) {
+                fmt.Println("Redraw....")
+        })
+ 
+        // callback metoda zavolaná ve chvíli, kdy se okno uzavírá
+        app.OnClose(func() {
+                gg.CloseAccelerator()
+        })
+ 
+        // spuštění aplikace
+        app.Run()
+}
+Vykreslení pozadí zvolené barvy v ploše okna
+Aby se aplikace chovala zcela korektně, musí při požadavku na překreslení okna skutečně toto překreslení provést. K tomuto účelu si připravíme pomocnou funkci nazvanou renderFrame (protože vlastně vždy vykreslíme jeden snímek okna). Této funkci se bude předávat grafický kontext a taktéž šířka a výška plochy, která se má překreslit:
+func renderFrame(dc *gg.Context, width, height int) {
+     ...
+     ...
+     ...
+}
+Grafický kontext již dobře známe z popisu knihovny gg. Můžeme tedy v kontextu nastavit barvu vykreslování (RGB=000) a vykreslit vyplněný obdélník o stejných rozměrech, jaké má plocha okna:
+func renderFrame(dc *gg.Context, width, height int) {
+        // barva pozadí
+        dc.SetRGBA(0.0, 0.0, 0.0, 1)
+ 
+        // obdélník s plochou odpovídající oknu
+        dc.DrawRectangle(0, 0, float64(width), float64(height))
+        dc.Fill()
+}
+Zbývá nám funkci renderFrame zavolat ve chvíli, kdy vznikne událost typu Draw. Teoreticky může celý kód vypadat následovně – získáme rozměry kreslicího plátna, zavoláme metodu Draw, které se předá reference na naši funkci renderFrame a nakonec se zavolá druhá metoda Render, která vykreslení dokončí:
+// callback metoda zavolaná ve chvíli, kdy se má překreslit okno
+app.OnDraw(func(dc *gogpu.Context) {
+        cw, ch := canvas.Size()
+ 
+        canvas.Draw(func(cc *gg.Context) {
+                renderFrame(cc, cw, ch)
+        })
+ 
+        canvas.Render(dc.RenderTarget())
+})
+Ovšem ve skutečnosti to zase tak jednoduché není, protože musíme nějakým způsobem získat objekt typu ggcanvas.Canvas. Teoreticky je možné neustále, tedy při každém překreslení okna, canvas získávat tímto kódem:
+provider := app.GPUContextProvider() w, h := dc.Width(), dc.Height() canvas, _ = ggcanvas.New(provider, w, h)
+To ovšem znamená neustálé inicializace objektu, zatížení GC atd. Proto je výhodnější mít ve funkci main připravenou proměnnou typu ggcanvas.Canvas, která se naplní před prvním překreslením okna a poté již není nutn...
+(Pokracovani na webu)

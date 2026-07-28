@@ -1,0 +1,18 @@
+Buzz
+Týmová platforma od společnosti Block, která spojuje komunikaci, správu projektů a spolupráci lidí i AI agentů do jednoho pracovního prostoru. Na rozdíl od tradičních nástrojů, jako jsou Slack nebo GitHub, jsou AI agenti plnohodnotnými účastníky týmů a mohou komunikovat v kanálech, navrhovat změny v kódu, spouštět pracovní postupy, provádět revize nebo koordinovat další agenty.
+Platforma je postavena na decentralizovaném protokolu Nostr, lze ji provozovat na vlastním serveru a všechny události jsou zaznamenávány do jednotného auditovatelného protokolu. Buzz je dostupný pro Linux, Windows i macOS a podporuje různé AI modely, například Claude Code nebo OpenAI Codex, přičemž klade důraz na otevřenost, kontrolu nad daty a možnost vlastního hostování.
+buzz.xyz, 0.4.26
+MangoWM
+Moderní Wayland kompozitor inspirovaný projektem dwl, který kombinuje minimalistický přístup s bohatou výbavou pro každodenní používání. Nabízí plynulé animace, několik způsobů rozložení oken, pokročilé vizuální efekty, podporu XWaylandu, správu oken pomocí tagů, přehled všech otevřených oken i možnost ovládání prostřednictvím IPC rozhraní.
+Konfiguraci lze měnit za běhu bez restartu a projekt klade důraz na vysoký výkon, nízkou spotřebu prostředků a rychlé sestavení ze zdrojových kódů. Mango je určen především zkušenějším uživatelům Linuxu, kteří hledají lehké, rychlé a přitom funkčně bohaté prostředí postavené na Waylandu.
+github.com/mangowm/mango, 0.15.5
+SonicTree
+Jednoduchý hudební přehrávač pro Linux, který sází na přehrávání hudby přímo ze struktury složek na disku místo vytváření databáze hudební knihovny. Díky tomu je vhodný pro uživatele, kteří mají svou sbírku pečlivě uspořádanou do adresářů a chtějí ji procházet stejně jako ve správci souborů.
+Přehrávač využívá multimediální framework GStreamer a knihovnu TagLib, podporuje bezešvé přehrávání, režimy opakování skladeb a playlistů, klávesové zkratky i nízkou spotřebu systémových prostředků. Nejnovější verze přidává nové režimy opakování, jejich zapamatování mezi spuštěními a další vylepšení stability a zabezpečení aplikace.
+sourceforge.net/projects/sonictree, 1.2.0
+Meshy
+Moderní nativní klient pro Linux určený pro síť MeshCore, který nabízí přehledné rozhraní postavené na GTK4 a libadwaita. Umožňuje připojení k MeshCore zařízením přes Bluetooth, Wi-Fi nebo USB, odesílání a příjem zpráv, zobrazení uzlů na mapě i správu nastavení připojených zařízení.
+Aplikace je navržena tak, aby dobře fungovala na stolních počítačích i menších dotykových obrazovkách, a díky aktivnímu vývoji postupně získává nové funkce i vylepšené uživatelské prostředí. Meshy představuje pohodlný způsob, jak spravovat a používat decentralizované mesh sítě přímo z linuxového desktopu.
+codeberg.org/sesivany/meshy, 26.07.1
+Blbinka
+Máte na pracovišti problém s konfliktními kolegy. Měli byste vědět, že když je nahradíte robotem, problém se nevyřeší.

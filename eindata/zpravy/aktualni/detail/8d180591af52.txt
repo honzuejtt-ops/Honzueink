@@ -1,0 +1,8 @@
+Selfie video není zamýšlené jako běžná náhrada hesla nebo přístupového klíče a neslouží tak pro běžné přihlašování. Rozšiřuje nabídku záložních metod vedle obnovovacích kontaktů či jednorázových kódů. Google funkci zpřístupňuje postupně většině osobních účtů po celém světě a dostupnost lze ověřit v části Bezpečnost a přihlašování v nastavení účtu, případně na této adrese.
+Při prvním nastavení uživatel namíří kameru na obličej a podle pokynů provede několik pohybů hlavou – obdobně jako při nastavení skenu obličeje pro odemykání telefonu.
+Při pozdější obnově přístupu uživatel natočí nové video s obdobnými instrukcemi. Google jej porovná s uloženým záznamem a vyhodnotí shodu. Současně kontroluje pohyby hlavy, které mají potvrdit přítomnost živého člověka před kamerou.
+Ochrana před podvody
+Google uvádí, že používá několik vrstev kontroly proti fotografiím a podvrženým videím. Detekce živosti má komplikovat útoky pomocí deepfake obsahu. Úspěšná shoda obličeje proto nemusí automaticky stačit a při podezřelém pokusu může systém vyžadovat další ověření nebo přístup zcela odmítnout.
+Podstatným omezením je především nutnost aktivovat funkci dříve, než uživatel o přístup k účtu opravdu přijde. Selfie video nelze vytvořit po uzamčení účtu ani během procesu jeho obnovy. Funguje tedy podobně jako předem uložený záložní kód.
+Referenční video je uloženo na serverech Googlu a v neaktivním stavu má být šifrované, uživatel jej navíc může kdykoli odstranit. Podle Googlu se záznam standardně používá pouze k přihlášení a ověření totožnosti. Při nastavování se však objevuje volitelný souhlas s dalším využitím – uživatel může Googlu povolit použití současných i dříve poskytnutých selfie videí pro vývoj rozpoznávání obličeje nebo odhad věku.
+Zdroj: Google

@@ -1,3 +1,9 @@
+|T|Apple AirTag umí mnohem víc než jen hledat klíče. Těchto 10 funkcí využívá naplno jen málokdo|D|28.7. 18:15|P|Chytrý přívěsek lze vyhledat i pomocí hodinek nebo telefonu • Aerolinky mohou vidět polohu ztraceného kufru díky sdílení odkazu • Vyjmutím baterie uše...|X|Chytrý přívěsek lze vyhledat i pomocí hodinek nebo telefonu • Aerolinky mohou vidět polohu ztraceného kufru díky sdílení odkazu • Vyjmutím baterie ušetříte energii v období nepoužívání AirTagu
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Stahujte aktualizaci pro iPhone. iOS 26.6 opravuje 75 bezpečnostních chyb před velkým podzimním updatem|D|28.7. 17:45|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Scientific computing in the age of agentic AI|D|28.7. 17:00|P|A new field report shows how scientists use AI coding agents to modernize scientific computing, accelerating software development and discovery in gen...|X|Scientific computing in the age of agentic AI
 A field report shows how scientists are using coding agents to modernize scientific software for genomics and other data-rich fields.
 Scientific computing is a core pillar of modern research across academia and industry. Yet the software needed to analyze scientific information has struggled to keep pace with the rapid rate of data generation. Many widely used research tools began as code accompanying a research paper, built by small academic teams with limited engineering experience and minimal time for packaging, testing, optimization, or long-term support. The result is scientific infrastructure that often depends on slow, fragile workflows requiring constant maintenance. These constraints impede the pace of discovery.

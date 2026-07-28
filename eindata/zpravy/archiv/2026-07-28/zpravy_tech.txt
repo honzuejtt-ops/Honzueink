@@ -1,3 +1,121 @@
+|T|Scientific computing in the age of agentic AI|D|28.7. 17:00|P|A new field report shows how scientists use AI coding agents to modernize scientific computing, accelerating software development and discovery in gen...|X|Scientific computing in the age of agentic AI
+A field report shows how scientists are using coding agents to modernize scientific software for genomics and other data-rich fields.
+Scientific computing is a core pillar of modern research across academia and industry. Yet the software needed to analyze scientific information has struggled to keep pace with the rapid rate of data generation. Many widely used research tools began as code accompanying a research paper, built by small academic teams with limited engineering experience and minimal time for packaging, testing, optimization, or long-term support. The result is scientific infrastructure that often depends on slow, fragile workflows requiring constant maintenance. These constraints impede the pace of discovery.
+AI agents are beginning to change that equation. By lowering the costs of engineering work and taking on tedious implementation tasks, they can help researchers prototype ideas more quickly, pursue projects that were previously impractical, and more easily maintain software over the long term. As a result, scientific software becomes more efficient and better maintained, freeing researchers to spend more time on discovery.
+We’re sharing an exploratory field report of eight agent-assisted scientific computing projects primarily in the life sciences; five using Codex alone, and three using a combination of Codex and Claude Code. The report brings together case studies written by the teams behind each project and identifies recurring themes. The projects range from routine maintenance and targeted optimization to large-scale language migrations and GPU-native redesigns. Contributors report that agents significantly accelerated software development and maintenance, in some cases helping small teams take on work that would otherwise have required far more time or specialized engineering support. But they also highlight the persistent challenge of establishing clear, long-term responsibility and stewardship of the resulting tools.
+Contributors consistently describe a shift in the researchers’ role from implementation to verification and orchestration: specifying what to build, defining how to measure correctness, and deciding when a project is ready to ship. In this emerging model, the researchers remain in control of the scientific direction and quality bar, but with velocity uplift provided by agentic assistance
+Modernized a widely used library for parsing genomic data
+cyvcf2 is a Python library for reading and writing genomic variant files. GPT‑5.5 replaced the library’s legacy build and packaging system with a modern, unified process designed to make the library easier to install, test, and release.
+With coding agents, it's quite easy to go fast; for now, to go far in science, there's still a need for expert guidance, understanding, taste, and care.
+—Brent Pedersen
+Though the projects varied widely in scope, they demonstrated that coding agents are making engineering labor and expertise less of a constraint in scientific computing. Now, the bottleneck is validating an AI agent’s output, which still depends on human judgement.
+Across case studies, agents handled specific, well-scoped requests effectively but could not reliably judge whether their work was scientifically valid or met expectations. Indeed, agents often expressed confidence even when their work contained clear errors. Human reviewers therefore needed to find reliable ways to validate the results. The strongest approaches used an external reference or measurable acceptance target such as exact output agreement, parity with an existing tool, appropriate statistical behavior, or answers established in advance using simulated data.
+Another recurring theme was that the projects generally proceeded in stages using feedback-driven iterations rather than as one-shot approaches. Contributors broke down broad goals into smaller changes, then used intermediate benchmarks and test systems to evaluate and refine the agents’ work. Agents often produced initial implementations quickly, but resolving edge cases and subtle numerical differences took much longer. Completing the “last mile” of an implementation often took the most work.
+Overall, these case studies suggest that agents are enabling researchers to spend less time on implementation and more time directing the scientific work. People define the goal, break down complex projects into manageable chunks, and judge whether results are scientifically valid. By easing longstanding engineering constraints, agents expand what researchers can build while freeing them to focus on the scientific questions and decisions that matter most.
+The maintenance gap in research software has long slowed iteration and limited reproducibility and reliability. Published studies of “research code(opens in a new window)” and omics tools(opens in a new window) have found that published software often fails to properly install in a fresh computing setup or run as documented, forcing researchers to spend substantial time on configuration and debugging. Even routine improvements can save researchers time and reduce computing demands, while performance-based refactoring and rewrites can deliver larger gains.
+But lower implementation costs also make it easier to produce many similar rewrites, fragmenting users and spreading the expert attention required to keep any one tool reliable. That makes long-term stewardship and attribution essential. Mature scientific software carries undocumented conventions, compatibility requirements, and user trust that translating the source code alone cannot reproduce.
+The case studies illustrate several possible paths forward. Changes to MHCflurry and cyvcf2 were incorporated into their original upstream projects, while rustar-aligner moved under new community stewardship because the original project had been abandoned. Where coordination with existing maintainers is available, it should begin as early as possible. When a separate implementation is necessary, it needs a clear owner and a credible maintenance plan. Without that, today’s modern rewrite can become tomorrow’s abandoned code rather than reliable scientific infrastructure.
+This field report is retrospective and exploratory, but the case studies point to a practical shift in how scientific software is developed. Coding agents such as Codex can significantly lower the cost of maintenance, migration, optimization, and new implementations. Their long-term scientific value still depends on human decisions around what to build, how to verify it, and who will maintain it. The deeper change is not simply that researchers can produce more software, but that they can focus more of their effort on defining, validating, and stewarding the tools.
+These case studies show that agents can already accelerate the pace of iteration in scientific computing. As coding agents improve, researchers will be able to spend less time keeping analysis pipelines running and more time advancing their fields.|E|
+|T|Něco jako Wikipedie pro chytrou domácnost. Vzniká databáze produktů kompatibilních s Home Assistantem|D|28.7. 16:45|P|Vzniká centrální místo, kde budou všechny informace o chytré domácnosti. • Žádný marketing, jen reálná anonymizovaná data uživatelů Home Assistantu. •...|X|Vzniká centrální místo, kde budou všechny informace o chytré domácnosti. • Žádný marketing, jen reálná anonymizovaná data uživatelů Home Assistantu. • Každý se dozví, jak se produkty připojují, zda běží lokálně a co všechno umožňují.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Gemini API Managed Agents: 3.6 Flash, hooks, and more|D|28.7. 16:00|P|Managed Agents Gemini 3.6 Flash, Hooks and Triggers|X|Gemini API Managed Agents: 3.6 Flash, hooks, and more
+Managed Agents in Gemini API are getting environment hooks, model selection, and free tier access. These capabilities build on our previous release introducing background tasks and remote MCP server integration.
+With managed agents in the Gemini Interactions API, a single API call coordinates, reasoning, code execution, package installation, file management, and web retrieval inside an isolated cloud sandbox.
+If you're using an AI coding assistant, drop this in your terminal to give it access to the Interactions API skill: npx skills add google-gemini/gemini-skills --skill gemini-interactions-api.
+Below are examples using the @google/genai TypeScript/JavaScript SDK. For Python or cURL, check out the Antigravity agent documentation.
+npm install @google/genaiGemini 3.6 Flash is now the default
+The antigravity-preview-05-2026 agent now runs Gemini 3.6 Flash by default. No code changes are required. Your next interaction picks it up automatically.
+You can also explicitly select models by passing agent_config.model when creating an interaction or managed agent. Use Gemini 3.5 Flash-Lite for lower cost, or pin to your model of preference.
+import { GoogleGenAI } from "@google/genai";
+const client = new GoogleGenAI({});
+const interaction = await client.interactions.create({
+  agent: "antigravity-preview-05-2026",
+  input: "Audit all dependencies in package.json, upgrade outdated packages, and verify the build by running npm test.",
+  environment: "remote",
+  agent_config: {
+    type: "antigravity",
+    model: "gemini-3.5-flash-lite",
+  },
+});
+console.log(interaction.output_text);Supported models include:
+- Gemini 3.6 Flash (gemini-3.6-flash, default): Balanced model for reasoning, coding, and tool use.
+- Gemini 3.5 Flash (gemini-3.5-flash): Previous generation for general agentic workflows.
+- Gemini 3.5 Flash-Lite (gemini-3.5-flash-lite): Lowest latency and cost on the Gemini 3.5 family.
+Environment hooks: block, lint, and audit tool calls inside the sandbox
+Environment hooks let you run your custom scripts before or after every tool call the agent makes inside its sandbox. Add a .agents/hooks.json into your environment and the runtime executes your handlers on pre_tool_execution or post_tool_execution events.
+The matcher field supports regular expressions, allowing you to target multiple tools with | or catch everything with *:
+{
+  "security-gate": {
+    "pre_tool_execution": [
+      {
+        "matcher": "code_execution|write_file",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 /.agents/hooks-scripts/gate.py",
+            "timeout": 10
+          }
+        ]
+      }
+    ]
+  },
+  "auto-format": {
+    "post_tool_execution": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 /.agents/hooks-scripts/auto_lint.py",
+            "timeout": 15
+          }
+        ]
+      }
+    ]
+  }
+}In this configuration:
+- The security-gategroup runsgate.pybefore everycode_executionorwrite_filecall. If the script returns{"decision": "deny", "reason": "..."}, the tool call is skipped and the rejection reason is passed into the model’s context.
+- The auto-formatgroup runsauto_lint.pyafter every tool finishes to enforce code styling.
+- Hooks also support httptype handlers that POST directly to an external endpoint.
+For complete HTTP hook definitions and failure handling semantics, refer to the hooks documentation.
+Teams are already using hooks to build production-grade validation pipelines. For example, AI-native investment bank Offdeal uses post_tool_execution hooks to run automated image verification inside the remote sandbox.
+"OffDeal is an AI-native investment bank, and Archie is the AI analyst our bankers use every day. A requirement for banker-ready decks is company logos: buyer tables, sponsor columns, tombstone grids, often 30+ logos in a single deck, every one of which must be the right company, the appropriate size and aspect ratio, contain the name, have a transparent background, and have a high contrast when placed on a white slide.
+Before agent hooks, we couldn’t do this on Gemini’s managed agents: the sandbox is remote, so our validation code had nowhere to run. With hooks, a post_tool_execution hook triggers our pipeline inside the sandbox the moment Archie writes its company list, fetching candidates, enforcing pixel-level quality checks, verifying each logo with Gemini vision, and publishing a manifest of approved files that are the only images allowed into the deck."
+- Alston Lin, Founder & CTO of OffDeal
+Cost control and automation features
+Free tier availability
+Managed agents are now available on free tier projects. Developers can experiment with agentic workflows using an API key from a project without active billing.
+Budget controls
+Because managed agents execute multi-turn autonomous loops, complex tasks can consume significant token budgets. To prevent runaway tasks, you can pass max_total_tokens inside agent_config to cap total consumption (input + output + thinking).
+When the agent reaches the limit, execution safely pauses and the interaction returns status: "incomplete". The environment state is preserved, enabling you to continue where it stopped by passing previous_interaction_id with a fresh budget.
+const interaction = await client.interactions.create({
+  agent: "antigravity-preview-05-2026",
+  input: "Audit all modules in this repo and generate a migration report.",
+  agent_config: {
+    type: "antigravity",
+    max_total_tokens: 10000,
+  },
+  environment: "remote",
+});Scheduled execution with triggers
+Automate recurring agent tasks with scheduled triggers. A trigger binds an agent, environment, prompt, and cron schedule into a persistent resource that fires without manual intervention. Each run reuses the same sandbox, so files persist across executions.
+Environments API
+The Environments API lets you list, inspect, and delete sandbox sessions from code. Recover environment IDs after a disconnect, or clean up sandboxes when your pipeline finishes instead of waiting for the 7-day TTL.
+Get started with managed agents
+These updates turn managed agents into cost-controlled, scheduled workers that operate autonomously inside real development environments without breaking your budget or requiring external orchestration.
+Check out the Gemini Interactions API overview and the managed agents quickstart to explore custom agent definitions, environment configurations, network rules, and advanced streaming patterns.|E|
+|T|Nová levná grafika Radeon RX 9050 od AMD: RAMagedon přináší návrat GPU se 4GB pamětí|D|28.7. 15:51|P|Grafika Radeon RX 9050, která se teď objevila na trhu, je patrně nejnovější projev (nebo oběť) krize cen pamětí způsobené AI.|X|Poslední kryptoměnová horečka nám přinesla Radeon RX 6500 XT s jeho osekanou výbavou a 4GB pamětí, a vypadá to, že něco podobného bude symbolicky ilustrovat i aktuální éru, kdy mánie kolem umělé inteligence brutálně zdražuje všechny paměti, včetně těch grafických. Na trh teď přichází nová grafika Radeon RX 9050 od AMD, jejíž některé (ale naštěstí ne všechny) varianty bude mít opět jen 4GB paměť – něco, co už se zdálo být historií.
+Radeon RX 9050 vydán
+V květnu jsme tu měli zprávu o tom, že AMD chystá grafickou kartu označenou Radeon RX 9050, která by se měla stát nejlevnějším modelem aktuální generace s architekturou RDNA 4. Tyto zprávy se teď potvrdily, protože karty byly uvedené na trh firmami ASRock a Sapphire – ovšem nepotvrdily se tehdy uváděné specifikace.
+Radeon RX 9050 patrně používá stejný čip Navi 44 jako Radeon RX 9060 XT, ale v tomto modelu je ořezaný, aby v něm mohly být uplatňovány čipy s různými defekty (což se řeší tím, že se postižená část čipu deaktivuje). Podle oficiálně potvrzených specifikací mají model RX 9060 aktivních pouze 16 výpočetních jednotek (CU), neboli 1024 shaderů, 16 Ray Acceleratorů a 32 AI Acceleratorů. To je jenom polovina z celého čipu. Takt bude také nižší než u Radeonu RX 9060 XT – tzv. herní frekvence je jen 1920 MHz a boost 2600 MHz. Podle toho by grafika měla mít jen cca 38–42 % hrubého výkonu grafiky Radeon RX 9060 XT (32 CU / 2048 shaderů s frekvencemi 2530 / 3130 MHz).
+GPU má ale mít plné 128bitové paměťové rozhraní s 8GB pamětí GDDR6 a 32 MB Infinity Cache. Efektivní frekvence pamětí je 18,0 GHz, což kartě bude dávat propustnost 288 GB/s. Respektive, tak to bude u některých karet. Radeon RX 9050 totiž bude mít také levnější verzi s pouze 4GB pamětí. Tyto karty budou nejenže trpět malou (a dnes už na hry nevhodnou) kapacitu paměti, ale také pouze poloviční paměťovou sběrnicí širokou 64 bitů. To znamená propustnost jen 144 GB/s.
+Radeony RX 9050 mají TDP 100 W a napájejí se jediným osmipinovým konektorem. Zatím se objevily karty v provedení od ASRocku a Sapphire (provedení Pulse, jen 8GB model), které mají tovární přetaktování na 2260 MHz (Game Clock) a 2760 MHz (boost).
+Karta by si patrně měla zachovávat rozhraní PCI Express 5.0 ×16 a bude podporovat výstupy HDMI 2.1b a DisplayPort 2.1a. Podporovány jsou všechny technologie architektury RDNA 4 včetně AI upscalingu FSR 4.1 a FSR Redstone.
+Jaká by mohla být cena této grafiky, uvedeno nikde není. Je také možné, že bude prodávané jen v některých regionech nebo případně pouze skrze OEM trh. Už se například objevila v počítačích CyberPowerPC nabízených v USA. Asi by to mohla být vhodná základní karta, pokud by byla cena nízká, ale vzhledem k předpokládanému rozdílu ve výkonu nejspíš bude poměr cena/výkon horší než u karet Radeon RX 9060 a RX 9060 XT, které tak nejspíš zůstanou lepší, byť dražší volbou.|E|
+|T|eDoklady loni nezvládly nápor voličů. Teď si je Česko otestuje nanečisto, zapojit se může úplně každý|D|28.7. 15:45|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Paměťová krize nekončí, nově zdraží i procesory. Výrobci topmodelů by si ale mohli pomoci microSD kartami|D|28.7. 14:45|P||X|
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|

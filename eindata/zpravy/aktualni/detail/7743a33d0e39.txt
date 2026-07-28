@@ -1,0 +1,3 @@
+Za aplikace typu Google Drive, Spotify, Netflix, Homey nebo 1Password je potřeba platit předplatné, které může šplhat do tisíců měsíčně. Alternativou přitom může být selfhosting, kdy alternativy k velkým platformám běží na domácím NASu.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

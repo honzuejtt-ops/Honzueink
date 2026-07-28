@@ -1,0 +1,20 @@
+Článek
+U stejného titulu má uživatel přístup k elektronické knize, audioknize i rozhraní AI. Pomocí tohoto chatbota může prohloubit své znalosti o psychologii postavy, historickém kontextu nebo filozofickém pojmu.
+Mladá francouzská společnost My Smart Book zase v polovině dubna uvedla na trh podobnou aplikaci, jejíž konverzace, stejně jako u Sinai.ai, vycházejí výhradně z obsahu knih.
+A loni na podzim přidal gigant v oblasti audioknih Audible, dceřiná společnost Amazonu, do své nabídky v USA v testovací verzi možnost „Ask a Question“ (zeptej se). Během poslechu audioknihy stačí stisknout tlačítko, položit otázku, vyslechnout odpověď a pokračovat v poslechu.
+„Tato funkce by mohla rozšířit okruh posluchačů,“ vysvětlila společnost Audible agentuře AFP, „a učinit některá díla přístupnějšími a atraktivnějšími“ pro určité uživatele.
+„Ask this Book“ (zeptej se této knihy) zase navrhuje čtečka Kindle, rovněž patřící pod Amazon, aby „okamžitě odpovídala na otázky týkající se příběhu, vztahů mezi postavami a tematických prvků, aniž by narušovala čtení“.
+Nový hráč na poli hlasů generovaných umělou inteligencí, americká softwarová společnost ElevenLabs, se rovněž prosadil se svým produktem „ElevenReader Voice Chat“, „který promění jakoukoli knihu v konverzaci“.
+A co autoři a vydavatelé?
+Podle agentury AFP ale vyvstává otázka, jaké místo zaujímají autoři a vydavatelé v ekonomickém modelu této nové nabídky.
+Sinai.ai ujišťuje, že prostřednictvím předplatného či jednorázového nákupu poskytuje přístup pouze k titulům, které již spadají do veřejné domény, nebo k těm, u nichž byl získán souhlas autora, jeho právních nástupců či vydavatele.
+iChatbook, další nový hráč na tomto trhu, má odlišný přístup a prezentuje se „ne jako knihkupectví s knihami, ale s koncepty, myšlenkami a fakty, které se navzájem prolínají,“ popisuje zakladatel Brian Yang.
+„Díky modelu umělé inteligence z daného díla extrahujeme myšlenky a fakta a předkládáme je uživateli, který tak získá přehled o obsahu, aniž by byl tomuto obsahu přímo vystaven,“ říká.
+iChatbook vnímá zejména jako nástroj pro mladé žáky, protože umělá inteligence je schopna formulovat obsah v jazyce, který je pro ně vhodnější. Výhodou této architektury je také to, že se vyhýbá problémům s autorskými právy, jelikož nedochází k přímému citování textů.
+Dovolí stáhnout jakoukoliv knihu
+Některé platformy, jako například Myreader, umožňují stahovat jakoukoli knihu, aniž by filtrovaly ty, na které se vztahují autorská práva, a následně je propojují s rozhraním umělé inteligence.
+Velmi populární aplikace Gemini Notebook (dříve NotebookLM) od Googlu, využívající umělou inteligenci, rovněž tituly netřídí. Stejně jako BookWorm AI, varianta ChatGPT spuštěná vývojáři a nikoli přímo společností OpenAI, která je jasně označena jako „společník při čtení“.
+iChatbook se chlubí tím, že vyřazuje chráněná díla, zatímco Sinai.ai neumožňuje stahování jednotlivých souborů.
+Společnost ze Sunnyvale v Kalifornii tvrdí, že vytvořila nový ekosystém, takzvaného „práva AI“, který zavádí systém odměňování v případě, že je obsah využit pro chatbot, shrnutí nebo odkaz.
+Sinai.ai tvrdí, že vede „aktivní jednání“ se čtyřmi z pěti největších vydavatelství na americkém trhu, jimiž jsou Hachette, Penguin Random House, Simon & Schuster, HarperCollins a Macmillan. Žádná z tzv. velké pětky, kterou agentura AFP oslovila, neodpověděla na otázky týkající se její strategie vůči umělé inteligenci.
+Loni v prosinci americká autorská organizace The Authors Guild veřejně kritizovala Amazon v souvislosti se službou „Ask this Book“ a zdůraznila, že jim „nepřináší žádné dodatečné příjmy“ a nedává jim možnost rozhodnout se, zda se k ní připojí, či nikoli. „Vytváří to nebezpečný precedens pro budoucnost využívání obsahu umělou inteligencí,“ napsala tehdy organizace s tím, že „Amazon ovládá podstatnou část trhu s elektronickými knihami“.

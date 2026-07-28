@@ -1,0 +1,6 @@
+Městský úřad v Šumperku až do odvolání přerušil provoz. Důvodem je mimořádná technická událost, dle oficiálního vyjádření se jedná o nespecifikovaný kybernetický útok.
+“Město se stalo terčem kybernetického útoku, který ovlivnil fungování některých informačních systémů. Na odstranění následků intenzivně pracují odborníci společně s příslušnými institucemi,” informovala radnice.
+Městský úřad zatím nekomentoval rozsah problémů a nevyčíslil škody. Zatím ani není jasné, jak dlouho bude odstraňování problémů trvat a jak se útok projeví na dlouhodobém fungování úřadu.
+Jde o útok zejména na interní systémy města. Například oficiální web Šumperku je nadále v provozu a není pod útokem typu DDoS, který se často používá.
+“Prosíme občany o trpělivost a pochopení. O dalším vývoji a obnovení běžného provozu budeme průběžně informovat,” doplnili představitelé Šumperka.
+Šumperk je obec s rozšířenou působností a spadá pod regulaci Národního úřadu pro kybernetickou bezpečnost (NÚKIB).

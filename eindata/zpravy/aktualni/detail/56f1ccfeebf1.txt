@@ -1,0 +1,3 @@
+Herní klient GOG Galaxy míří na Linux, bude tam konkurovat Steamu. • GOG už hry pro Linux prodával, ale stahovat se musely z webu. • Open source komunita už nyní využívá alternativní nástroje jako Lutris nebo Heroic.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

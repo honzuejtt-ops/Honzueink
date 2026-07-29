@@ -1,0 +1,58 @@
+Při popisu standardní sériové sběrnice SIO jsme se zmínili o tom, že osmibitové domácí mikropočítače Atari nebyly navrženy pouze takovým způsobem, aby byly použitelné jako sofistikovanější herní konzole. Samotná sběrnice SIO a taktéž dnes popsaná součást operačního systému nazvaná CIO (Central Input/Output) totiž poskytuje unifikovaný přístup k různým zařízením (přes takzvané kanály), umožňuje relativně snadným způsobem přidávat nové typy zařízení (příkladem může být systém Turbo 2000, k němuž se ještě vrátíme). A co je nejdůležitější – v případě, že je nové zařízení do systému přidáno, mohou ho začít prakticky ihned používat všechny aplikace, nehledě na to, zda vůbec byly s tímto zařízením testovány nebo zda zařízení existovalo v době, kdy aplikace vznikala.
+Co se dozvíte v článku
+- Jména standardních zařízení i zařízení vyžadující vlastní ovladače
+- Standardní operace, které mohou zařízení podporovat
+- Koncept kanálů (channels)
+- Výchozí nastavení kanálů po inicializaci Atari BASICu
+- Práce se zařízeními a kanály v Atari BASICu
+- Ukázky práce se zařízeními v Atari BASICu
+- Čtení a zápisy celých bloků: rozšíření TurboBASICu XL
+- Praktická ukázka: zápis obsahu grafické paměti do rastrového formátu BMP
+- Práce se zařízeními a kanály v assembleru
+- Adresy subrutin používaných v CIO
+- Struktura IOCB použitá subrutinou CIOV
+- Zápis znaku na textovou obrazovku
+- Zápis celého řetězce na textovou obrazovku
+- Přečtení řetězce zadávaného z klávesnice
+- Přečtení řetězce, jeho úprava na inverzní znaky s následným tiskem na obrazovku
+- Rozdíl mezi CIO operacemi PUTCHR a PUTREC
+- Příloha: Makefile pro překlad všech demonstračních příkladů
+- Repositář s demonstračními příklady
+- Odkazy na Internetu
+Příkladů lze najít celou řadu – od různých typů disketových jednotek, přes RAM disky až po již zmíněný systém Turbo 2000. Díky kombinaci CIO+SIO bylo možné osmibitové mikropočítače Atari používat i pro kancelářské činnosti (tedy spíše ve funkci osobních počítačů), přičemž bylo umožněno postupné rozšiřování systému (nová tiskárna, další disketová jednotka, RAM disk atd.)
+Jména standardních zařízení i zařízení vyžadující vlastní ovladače
+Nejprve si řekněme, jak se se zařízeními pracuje z pohledu běžného uživatele počítače Atari. Zařízení jsou pojmenována (typicky písmenem a popř. doplňujícím číslem) a jak (Atari)BASIC, tak i aplikace (například textový editor atd.) zařízení identifikují právě podle jeho jména. Existuje několik standardních zařízení, které jsou většinou přístupná (prakticky) kdykoli. Tato zařízení jsou vypsána v následující tabulce:
+Další zařízení lze do systému přidat tak, že se nahraje jejich příslušný ovladač resp. handler (nebo například systém DOS pro disketové jednotky nebo TOS pro Turbo 2000). Nová zařízení přidaná tímto způsobem mohou mít prakticky libovolná jména, ovšem některá jména se ustálila – opět viz následující tabulku:
+Standardní operace, které mohou zařízení podporovat
+Existuje několik standardních operací, které zařízení mohou (ale nemusí) poskytovat. Tyto operace jsou vypsány (i když poněkud nepřesně) v následující tabulce:
+Koncept kanálů (channels)
+Ještě předtím, než se s vybraným zařízením bude provádět nějaká operace (čtení, zápis atd.), je nutné k zařízení přiřadit nějaký kanál (channel resp. přesněji řečeno I/O channel): zařízení se otevře (open) pro provádění vybraných operací (typicky pro čtení a/nebo zápis). Kanál je z pohledu programátora (běžný uživatel se s nimi nesetká) reprezentován číslem 0 až 7. Každý kanál může být v daný okamžik přiřazen pouze k jedinému zařízení. Kanál lze navíc kdykoli uzavřít (close), což znamená, že k němu bude možné přiřadit jiné zařízení.
+V praxi to tedy znamená, že v jeden okamžik lze pracovat maximálně s osmi zařízeními (sem se typicky počítá i klávesnice a obrazovka, takže se počet dalších zařízení snižuje na šest), což je ovšem většinou dostačující. Příkladem může být zápis dat na kazetu ve standardním formátu. Pouze v době zápisu musí být nějaký kanál otevřen a spojen se zařízením C:. Po provedení zápisu se kanál uzavře a bude volný pro další použití.
+Shrňme si předchozí text: osmibitové mikropočítače Atari podporují koncept takzvaných zařízení, která jsou identifikována jedním písmenem a popř. i číslem (za názvem zařízení následuje dvojtečka). Zařízení mohou provádět různé operace standardním způsobem (čtení a zápis znaků či bloků). Ovšem ještě předtím, než je možné nějakou operaci provést, je nutné k zařízení přiřadit kanál (0 až 7). Operace se následně budou provádět přes tento zvolený kanál.
+Výchozí nastavení kanálů po inicializaci Atari BASICu
+Vše si samozřejmě postupně vyzkoušíme, nejprve v Atari BASICu a posléze i v assembleru. Musíme se však zmínit ještě o jedné důležité informaci – po spuštění počítače a inicializaci Atari BASICu jsou již některé kanály inicializovány, tj. je jim přiřazeno nějaké zařízení otevřené do režimu čtení a/nebo zápisu. Pokud je k Atari připojen jen běžný kazetový magnetofon a není načten ani DOS ani TOS (či ovladač RAMdisku), je výchozí přiřazení zařízení ke kanálům následující:
+Práce se zařízeními a kanály v Atari BASICu
+V této části článku si ukážeme základní práci se zařízeními z Atari BASICu, a to z toho důvodu, že tyto relativně vysokoúrovňové operace se z BASICu provádí velmi snadno – Atari BASIC je sice pomalý a v mnoha ohledech omezený, ovšem práce se zařízeními je v něm vyřešena relativně dobrým způsobem (a ještě lépe je v tomto ohledu vybavený slavný TurboBASIC XL. V Atari BASICu jsou pro práci se zařízeními určené následující příkazy:
+Režim v příkazu OPEN je zakódován takto:
+Číslo sektoru je šestnáctibitové a velikost sektorů dosahuje až 256 bajtů. Z dnešního pohledu zastaralý Atari BASIC tedy dokáže pracovat se soubory o velikosti až 16MB – to není vůbec špatné.
+Ukázky práce se zařízeními v Atari BASICu
+Ve všech výše uvedených příkazech se vždy pracuje s číslem kanálu a toto číslo je zapsáno za znak hashe, tedy #. Uveďme si několik příkladů zápisu (posléze si ukážeme i ucelenější příklady).
+Samotné provedení vybraných vstupně/výstupních operací se v Atari BASICu realizuje poměrně snadno. Můžeme se například pokusit o zápis několika bajtů na kazetový magnetofon. Přitom se použije standardní formátu zápisu, který byl popsán v předchozím článku:
+10 REM Zapis nekolika hodnot 11 REM na kazetu ve standardnim 12 REM formatu. 20 REM 21 REM Pro jistotu zavreme kanal 22 REM pred jeho pouzitim 22 CLOSE #4 30 REM Otevreme kanal pro zapis 31 OPEN #4, 8, 0, "C:" 40 REM Provedeni zapisu 41 FOR I=0 TO 100 42 PUT #4, I 43 NEXT I 50 REM Zavreme kanal 51 CLOSE #4
+Pokud máte disketovou jednotku a BASIC spuštěný z DOSu, lze předchozí příklad přepsat. Nyní ovšem budeme pracovat nejenom se zařízením, ale i s názvem souboru, do kterého je prováděn zápis:
+10 REM Zapis nekolika hodnot 11 REM na disketu. 20 REM 21 REM Pro jistotu zavreme kanal 22 REM pred jeho pouzitim 22 CLOSE #4 30 REM Otevreme kanal pro zapis 31 OPEN #4, 8, 0, "D:test.bin" 40 REM Provedeni zapisu 41 FOR I=0 TO 100 42 PUT #4, I 43 NEXT I 50 REM Zavreme kanal 51 CLOSE #4
+Ještě jednodušší je využití zařízení H: (hard disk) v emulátoru počítačů Atari. V nastavení emulátoru se musí zvolit vhodný adresář na disku a povolit zápis do něj. Následovně lze z Atari BASICu spustit tento program:
+10 REM Zapis nekolika hodnot 11 REM na disk namapovany emulatorem. 20 REM 21 REM Pro jistotu zavreme kanal 22 REM pred jeho pouzitim 22 CLOSE #4 30 REM Otevreme kanal pro zapis 31 OPEN #4, 8, 0, "H:test.bin" 40 REM Provedeni zapisu 41 FOR I=0 TO 100 42 PUT #4, I 43 NEXT I 50 REM Zavreme kanal 51 CLOSE #4
+Po jeho vykonání by se měl na disku (resp. přesněji řečeno na souborovém systému Linuxu, Microsoft Windows atd.) objevit soubor test.bin s následujícím obsahem:
+$ od -tx1 test.bin 0000000 00 01 02 03 04 05 06 07 08 09 0a 0b 0c 0d 0e 0f 0000020 10 11 12 13 14 15 16 17 18 19 1a 1b 1c 1d 1e 1f 0000040 20 21 22 23 24 25 26 27 28 29 2a 2b 2c 2d 2e 2f 0000060 30 31 32 33 34 35 36 37 38 39 3a 3b 3c 3d 3e 3f 0000100 40 41 42 43 44 45 46 47 48 49 4a 4b 4c 4d 4e 4f 0000120 50 51 52 53 54 55 56 57 58 59 5a 5b 5c 5d 5e 5f 0000140 60 61 62 63 64 0000145
+Zápis textových dat (řetězců):
+10 REM Zapis textovych dat 11 REM na disk namapovany emulatorem. 20 REM 21 REM Pro jistotu zavreme kanal 22 REM pred jeho pouzitim 22 CLOSE #4 30 REM Otevreme kanal pro zapis 31 OPEN #4, 8, 0, "H:test.txt" 40 REM Provedeni zapisu 41 PRINT #4; "Hello Atari!" 50 REM Zavreme kanal 51 CLOSE #4
+Povšimněte si, že řetězec je ukončen znakem pro konec řádku $9b:
+$ od -tx1 test.txt 0000000 48 65 6c 6c 6f 20 41 74 61 72 69 21 9b 0000015
+Podobným způsobem lze realizovat i čtení dat z nějakého zařízení. Opět si to ukažme na několika demonstračních příkladech. Navážeme na příklad předchozí (spouštěný v emulátoru). Pokusíme se načíst data ze zařízení H: a vypsat je na obrazovku:
+10 REM Precteni retezce ze zarizeni 20 REM 21 REM Pro jistotu zavreme kanal 22 REM pred jeho pouzitim 22 CLOSE #4 30 REM Otevreme kanal pro cteni 31 OPEN #4, 4, 0, "H:test.txt" 40 REM Provedeni cteni 41 DIM A$(100) 42 INPUT #4, A$ 50 REM Zavreme kanal 51 CLOSE #4 60 REM Co jsme nacetli? 61 PRINT A$
+Výsledek může vypadat následovně:
+Čtení a zápisy celých bloků: rozšíření TurboBASICu XL
+Atari BASIC má při práci se zařízeními jedno poměrně zásadní omezení – nedokáže totiž (bez problémů) pracovat s celými (binárními) datovými bloky. Mohlo by se zdát, že namísto binárních bloků můžeme číst a zapisovat řetězce. To je do jisté míry pravda, ovšem problém způsobí znak pro konec řádku (Return), který u některých operací může operaci předčasně ukončit. V assembleru tyto problémy nenastávají, jak ostatně uvidíme dále. A řešení nabízí například i již výše zmíněný TurboBASIC XL, který podporuje jak všech devět příkazů popsaných výše, tak i dva nové příkazy určené pro čtení a zápis celých (binárních) bloků:
+Příklad použití je uveden přímo v manuálu TurboBASICu XL. Jedná se o kopii obsahu textové obrazovky (s výpisem programu) do souboru. Dovolil jsem si v kódu provést něk...
+(Pokracovani na webu)

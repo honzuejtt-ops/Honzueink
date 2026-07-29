@@ -1,0 +1,3 @@
+Společnost OpenAI zveřejnila dva nové modely pro přepis hlasu na text. Jmenují se gpt-transcribe a gpt-transcribe-live. První slouží pro přepis nahraných souborů, druhý je optimalizovaný na nízkou latenci, takže lépe funguje v živé řeči. Zatím jsou dostupné jen skrz API a není jasné, jestli je ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

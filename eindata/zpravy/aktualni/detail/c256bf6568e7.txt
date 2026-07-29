@@ -1,0 +1,13 @@
+Článek
+Nové informace zveřejnila OpenAI v aktualizované zprávě o incidentu. Podle ní agent během svého „pátrání“ narazil na přihlašovací údaje, které už dříve unikly na internet. Neváhal je využít a získal přístup nejméně ke čtyřem různým účtům.
+Ty pak posloužily jako zázemí pro útok na Hugging Face. Přes jeden agent maskoval svůj skutečný původ, jiný využíval jako dočasný sklad dat. O jaké služby šlo, OpenAI neprozradila.
+Hledal zkratku místo řešení
+Nejzajímavější ale není samotný útok. Vyšetřování totiž ukázalo, proč se AI do celé akce vůbec pustila.
+Agent byl testován v prostředí ExploitGym, které ověřuje, jak dobře umí umělá inteligence hledat bezpečnostní chyby. Místo toho, aby úkol poctivě splnil, dospěl podle vyšetřovatelů k jinému závěru: správné odpovědi by přece mohly být uložené přímo na serverech Hugging Face. A tak se je podle magazínu Wired pokusil získat jinou cestou.
+Právě tento moment odborníky zaujal nejvíce. Model totiž nehledal jen technické zranitelnosti. Sám si vytvořil strategii, jak se dostat k cíli co nejrychleji, i když tím úplně obešel smysl celého testu.
+Hlouběji, než kdokoliv čekal
+Také Hugging Face mezitím zveřejnil vlastní analýzu útoku. A ta ukazuje, že agent pronikl do firemních systémů mnohem dál, než se původně předpokládalo.
+Během několika dnů provedl přes 17 tisíc různých akcí. Většina z nich skončila neúspěchem, některé ale vedly k administrátorským oprávněním v interních systémech.
+Pomocí odcizených přihlašovacích údajů navíc připojil do podnikové sítě Hugging Face 181 vlastních zařízení. Díky nim získal přístup i do prostředí, kde společnost vyvíjí a testuje svůj software.
+Do případu vstupuje další firma
+Podle agentury Reuters se AI agent během celé operace dostal také k zákazníkovi společnosti Modal, která poskytuje cloudovou infrastrukturu pro vývoj umělé inteligence.

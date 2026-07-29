@@ -1,0 +1,8 @@
+Článek
+Ke sdíleným konverzacím, které obsahovaly mnohdy soukromé či pracovní informace, ale i zdravotní záznamy nebo jména či telefonní čísla nezletilých, se mohl ve vyhledávačích dostat prakticky kdokoli. Stačilo, pokud se do vyhledávače zadal název chatbota a případně i slovo sdílet či sdílení.
+Možnost sdílení konverzací v chatbotu Claude je primárně určena k tomu, aby se uživatelé mohli o potřebné informace podělit s malými vybranými skupinami přátel či kolegů. Při kliknutí na tlačítko „Sdílet“ se pro danou konverzaci vytvoří specifická URL adresa, vysvětluje server TechCrunch.
+Mluvčí Anthropicu Amie Rotherhamová k tomu uvedla, že kdokoli, kdo „sdílí konverzaci, zpřístupňuje tento obsah veřejnosti a stejně jako jiný webový obsah může být archivován službami třetích stran“, uvádí server BBC.
+Obsah si podle sdělení i upozornění v samotném Claudu ale může zobrazit jen „kdokoli s odkazem“. Nikde se výslovně neuvádí, že se může dohledat i ve veřejných vyhledávačích.
+Uživatelé sítě Reddit na problém poukazovali o víkendu, v pondělí již podle jejich „postupu“ nebylo možné sdílené konverzace dohledat, dodává TechCrunch.
+Podobné problémy se již dříve objevily i u chatů s ChatGPT, společnost OpenAI tak nakonec zcela změnila způsob, jakým byly zpřístupňovány.
+Zveřejnění stovek konverzací řešil v minulém roce i chatbot Grok společnosti xAI založené Elonem Muskem.

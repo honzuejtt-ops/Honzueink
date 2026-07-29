@@ -1,0 +1,24 @@
+Zdraví·3 minuty radosti
+První v Česku, třetí na světě: Budějovice operují mozek hologramem.
+Neurochirurgové z Nemocnice České Budějovice jako první v Česku a teprve třetí tým na světě operují mozek s pomocí brýlí, které nad pacientem promítnou hologram jeho mozkových struktur.
+Tři roky používali rozšířenou realitu především k plánování operací mozkových nádorů a cévních zákroků. V červnu 2026 šli neurochirurgové z Nemocnice České Budějovice o krok dál a nasadili ji přímo na sále – při skutečném zákroku, ne jen před ním.
+Co lékař v brýlích vidí
+Ještě před operací nechá tým z pacientova CT a magnetické rezonance vytvořit počítačový 3D model mozku. Software s podporou umělé inteligence automaticky rozpozná a ohraničí důležité struktury – třeba mozkové komory, kterými bude procházet tenká drenážní hadička, katétr. Při samotném zákroku pak brýle promítnou tento hologram přesně tam, kde se struktury doopravdy nacházejí v těle pacienta.
+Chirurg tak vidí najednou tři věci: skutečné operační pole, průsvitný model mozku a dopředu naplánovanou trasu katétru. Hologram se navíc otáčí podle toho, jak se lékař pohybuje, a dá se během operace bezdotykově ovládat – nikdo se tak uprostřed zákroku nemusí ničeho dotýkat a operační pole zůstává po celou dobu sterilní.
+Podle primáře Neurochirurgického oddělení, docenta Jiřího Fiedlera, jde zatím o využití při takzvané zevní komorové drenáži – zákroku, který se dělá pacientům s hydrocefalem (nadměrným množstvím mozkomíšního moku v hlavě) nebo se zvýšeným tlakem v lebce. Právě u nich je rychlé a přesné zavedení katétru na první pokus obzvlášť důležité. Po pracovištích v Amsterdamu a Utrechtu se budějovické oddělení stalo teprve třetím centrem na světě, které tuto technologii používá přímo při operaci. Systém byl do léta 2026 celosvětově vyzkoušen teprve u pěti pacientů, přičemž rovnou dva z nich operovali právě v Českých Budějovicích.
+Proč by mohla pomoct hlavně u složitější anatomie
+Mozkové komory, do kterých lékaři zavádějí katétr, jsou u části pacientů úzké nebo posunuté – třeba právě kvůli nádoru nebo krvácení. V takových případech je běžné zaměřování podle povrchových orientačních bodů na hlavě méně přesné. Hologram, který ukazuje přesnou polohu komor v reálném čase, má šanci to změnit – zatím ale jde o první zkušenosti z pouhých dvou zákroků, ne o velké prokázané zlepšení.
+💡 Zajímavost: Rozšířená realita v české medicíně není úplně nová věc – pražský IKEM ji používá k přípravě operací už od května 2021 a od té doby s ní naplánoval přes sto zákroků, hlavně na játrech, ledvinách a při transplantacích. Budějovická novinka je v tom, že hologram doprovází chirurga přímo během operace mozku, ne jen při přípravě předem.
+Software na vytváření hologramů využívá algoritmy umělé inteligence, vyvinuté ve spolupráci s odborníky z nizozemského Utrechtu, odkud pochází i jedno z prvních dvou pracovišť, která metodu vyzkoušela.
+Grant, který pomáhá metodu ověřit
+Na další rozvoj metody teď tým získal i podporu z vlastního Fondu podpory vědeckovýzkumného rozvoje nemocnice – Vědecká rada z něj na projekt přidělila milion korun. Peníze mají týmu umožnit v používání technologie pokračovat a zároveň systematicky sledovat, jestli se díky ní katétr zavádí přesněji a bezpečněji – výsledky pak poslouží jako podklad pro odborné publikace i další rozvoj metody.
+Docent Fiedler zdůrazňuje, že nasazení podobné technologie nešlo uspěchat. „Zavádění moderních informačních technologií využívajících umělou inteligenci vyžaduje důkladnou přípravu, ověření a splnění legislativních požadavků. Prioritou zůstává bezpečnost pacienta a ochrana jeho dat. Systém všechny tyto požadavky splňuje, proto jej můžeme využívat také přímo při operačních výkonech," řekl.
+Ověřeno z:
+- Nemocnice České Budějovice, a.s. — tisková zpráva o operaci mozku s využitím 3D brýlí a rozšířené reality (16. července 2026)
+- Českobudějovický deník — reportáž o zavedení technologie do klinické praxe (červenec 2026)
+- Krajský portál Noviny kraje — reportáž o přesnější péči díky 3D brýlím (20. července 2026)
+- IKEM — využití virtuální a rozšířené reality v předoperační přípravě (aktuální k červenci 2026)
+Klikněte, když vám článek udělal radost
+Redaktor Pozitivních zpráv
+Potěšil vás článek? Pošlete ho dál!
+Dobrá zpráva udělá radost dvakrát — vám i tomu, komu ji pošlete.

@@ -1,0 +1,6 @@
+Model S vstoupil na trh v roce 2012 a Model X následoval o tři roky později. Oba vozy dlouho představovaly technologickou a cenovou špičku nabídky Tesly. Jejich podíl mezi prodanými vozy však postupně klesal ve prospěch dostupnějších Modelů 3 a Y.
+Bez další výroby
+V roce 2025 se prodalo pouze okolo 30 000 kusů Modelů S a X, oproti tomu Modely 3 a Y ve stejném období dosáhly zhruba 1,6 milionu prodaných vozů. Tesla výrobu dražších modelů ukončila během jara 2026. Montážní linky ve Fremontu už demontovala a na jejich místě instaluje zařízení pro výrobu humanoidního robota Optimus.
+Musk proto nyní oznámil, že firma obdobně jako u Roadsteru zveřejní celý balík dokumentace a softwaru v podobě open-source. Prozatím ale není jasné, co vše na veřejnost zamíří – navzdory názvu obsahuje původní repozitář Roadsteru stručnou dokumentaci, CAN databázi, dva stručné návody a diagnostický ISO obraz. Chybí CADové podklady nebo zdrojový kód firmwaru. Zveřejněn rovněž nebyl návrh motoru ani bateriového systému.
+I tato omezená dokumentace samozřejmě může pomoci nezávislým servisům. Usnadnila by diagnostiku starších vozů Model S a X, stejně jako vývoj některých náhradních elektronických modulů. Podklady Roadsteru už posloužily k simulaci jeho elektroniky a podporují opravy vozů starých téměř dvě desetiletí.
+Zdroj: Teslarati

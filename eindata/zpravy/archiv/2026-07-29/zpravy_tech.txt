@@ -1,3 +1,54 @@
+|T|Objednání Boltu jde řešit přes ChatGPT, novinka platí v Evropě i pro Česko|D|29.7. 11:47|P|Bolt otevřel možnost objednat si jízdu přímo přes ChatGPT. Funkci spouští globálně, využít ji tedy můžou i zákazníci v Česku. Pro používání je nejdřív...|X|Bolt otevřel možnost objednat si jízdu přímo přes ChatGPT. Funkci spouští globálně, využít ji tedy můžou i zákazníci v Česku. Pro používání je nejdřív třeba nainstalovat do ChatGPT plugin z obchodu aplikací.
+Pak můžou uživatelé vidět odhadovanou cenu jízdy, porovnat trasy nebo zjistit, kdy dorazí řidič. Kromě toho konverzace navrhne nejvhodnější místo vyzvednutí, což má zkrátit čekací dobu. Zadané údaje se přenesou do aplikace Bolt, kde se objednávka dokončí. Platbu přes ChatGPT ještě provést nepůjde, tato možnost se má ale podle firmy spustit ještě letos.
+Bolt se zaštiťuje průzkumem Accenture, podle nějž nyní AI pro plánování cest používá 80 % cestujících po světě, a to včetně cest do zahraničí. Víc než polovina z těchto lidí je ochotna nechat AI plně řídit organizaci své cesty. Integrace do ChatGPT na to má přímo navazovat. Bolt je první platformou pro objednávání jízd, která tento proces spouští. Kromě EU ho lze využít například ve Švýcarsku, na Ukrajině nebo v Ázerbajdžánu.|E|
+|T|Co nového v aplikaci WhatsApp. Volejte přímo z prohlížeče a přepínejte hovory mezi zařízeními|D|29.7. 11:45|P|V tomto článku mapujeme novinky v aplikaci WhatsApp • Většina funkcí se nejprve testuje ve vybraných zemích • Poté přichází k dalším uživatelům a je n...|X|V tomto článku mapujeme novinky v aplikaci WhatsApp • Většina funkcí se nejprve testuje ve vybraných zemích • Poté přichází k dalším uživatelům a je nasazována plošně
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Jak se žije se smartphonem v Severní Koreji. Díky moderním QR platbám režim konečně sleduje i tok peněz|D|29.7. 11:15|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Test monitoru Samsung Odyssey OLED G8. Evoluce panelů přinesla vyšší jas a dostupnější cenu|D|29.7. 10:45|P|Samsung nedávno odhalil dva nové monitory s nejnovějšími panely Penta Tandem QD-OLED, jde o řadu Odyssey OLED G8 (G80SH), v níž najdeme jeden 27" a je...|X|Samsung nedávno odhalil dva nové monitory s nejnovějšími panely Penta Tandem QD-OLED, jde o řadu Odyssey OLED G8 (G80SH), v níž najdeme jeden 27" a jeden 32" monitor s jinak velmi podobnými specifikacemi. Oba mají rozlišení 4K, maximální obnovovací frekvenci 240 Hz, podobnou konektivitu i ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Tesla zveřejní software a dokumentaci Modelů S a X. Vlastní auto z ní nepostavíte, přesto hromada lidí jásá|D|29.7. 10:28|P|Když Tesla před několika lety ukončila výrobu původního modelu Roadster, uvolnila část dokumentace a softwaru jako open-source na GitHubu. Elon Musk n...|X|Model S vstoupil na trh v roce 2012 a Model X následoval o tři roky později. Oba vozy dlouho představovaly technologickou a cenovou špičku nabídky Tesly. Jejich podíl mezi prodanými vozy však postupně klesal ve prospěch dostupnějších Modelů 3 a Y.
+Bez další výroby
+V roce 2025 se prodalo pouze okolo 30 000 kusů Modelů S a X, oproti tomu Modely 3 a Y ve stejném období dosáhly zhruba 1,6 milionu prodaných vozů. Tesla výrobu dražších modelů ukončila během jara 2026. Montážní linky ve Fremontu už demontovala a na jejich místě instaluje zařízení pro výrobu humanoidního robota Optimus.
+Musk proto nyní oznámil, že firma obdobně jako u Roadsteru zveřejní celý balík dokumentace a softwaru v podobě open-source. Prozatím ale není jasné, co vše na veřejnost zamíří – navzdory názvu obsahuje původní repozitář Roadsteru stručnou dokumentaci, CAN databázi, dva stručné návody a diagnostický ISO obraz. Chybí CADové podklady nebo zdrojový kód firmwaru. Zveřejněn rovněž nebyl návrh motoru ani bateriového systému.
+I tato omezená dokumentace samozřejmě může pomoci nezávislým servisům. Usnadnila by diagnostiku starších vozů Model S a X, stejně jako vývoj některých náhradních elektronických modulů. Podklady Roadsteru už posloužily k simulaci jeho elektroniky a podporují opravy vozů starých téměř dvě desetiletí.
+Zdroj: Teslarati|E|
+|T|Nová videa z přistání Starshipu. Loď kupodivu stále plave na hladině, a tak ji SpaceX zachrání|D|29.7. 10:17|P|Oživeno 29. července | SpaceX se s odstupem času už tradičně chlubí dodatečnými záběry přistání lodi, jak jej natočily ostatní kamery na plášti a dron...|X|Oživeno 29. července | SpaceX se s odstupem času už tradičně chlubí dodatečnými záběry přistání lodi, jak jej natočily ostatní kamery na plášti a drony. Podívejte se na sestřih.
+
+
+
+Starship se kupodivu i po čtyřech dnech klidně pohupuje na hladině Indického oceánu poblíž Austrálie.
+
+
+
+
+
+
+
+
+Pozemní ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Český výrobce elektroniky má nový chladič na procesor s digitálním displejem a cenou pod tisícovku|D|29.7. 10:02|P|Nový chladič EVOLVEO QuietCool7 zvládne procesory s TDP až 240 W. Mimo to nabízí ARGB podsvícení a digitální displej pro sledování teplot.|X|České EVOLVEO rozšiřuje nabídku počítačových komponent o nový vzduchový chladič QuietCool7. Ten kombinuje chladicí výkon pro procesory s TDP až 240 W a displej zobrazující aktuální informace o vytížení a teplotě procesoru.
+Displej prozradí teplotu i otáčky
+Chladič EVOLVEO QuietCool7 využívá 6mm poniklovaný heatpipe s přímým kontaktem s procesorem, který se stará o rozvod tepla. Proud vzduchu zajišťuje 120mm PWM ventilátor s HDB ložiskem a rozsahem 8OO až 2 200 RPM. Hlučnost by dle slov výrobce neměla přesáhnout 31,7 dB. V případě potřeby je možné chlazení podpořit zakoupením dalšího ventilátoru.
+Společnost uvádí, že tento chladič zvládne procesory s TDP až 240 W a má tak být určený i do výkonných herních sestav. Největší pozornost však přitahuje LCD displej umístěný na horní straně. Ten dokáže zobrazovat aktuální teplotu procesoru či rychlost otáček ventilátoru.
+Chladič podporuje procesory AMD na paticích AM4/AM5 a Intel s paticemi 115×/1200/1366/1700/1851. K dostání je na vybraných e-shopech za cenu 999 korun.
+zdroj: TZ EVOLVEO|E|
+|T|Ono to vážně létá. Češi úspěšně otestovali střelu s plochou dráhou letu Narwhal. Dolétla by z Prahy až na Jadran|D|29.7. 09:38|P|Oživeno 29. července | Loni jsme ji viděli pouze na počítačových vizualizacích a ve formě raných prototypů, ale teď už je jasné, že opravdu létá.
+
+Prv...|X|Oživeno 29. července | Loni jsme ji viděli pouze na počítačových vizualizacích a ve formě raných prototypů, ale teď už je jasné, že opravdu létá.
+
+První česká lehká střela s plochou dráhou letu Narwhal 140 od pražských LPP má za sebou zkušební premiéru.
+
+
+
+Podívejte se na video z letových zkoušek, ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Pomocí bezplatného českého nástroje lze vytvářet hry pro Raspberry Pi, ESP32 nebo Picopad|D|29.7. 08:48|P|V České republice vzniká další zajímavý herní engine. Vladimír Smitka vytvořil Picogame, engine vytvořený nad technologií CircuitPython, tedy Pythonem...|X|V České republice vzniká další zajímavý herní engine. Vladimír Smitka vytvořil Picogame, engine vytvořený nad technologií CircuitPython, tedy Pythonem přizpůsobeným pro běh na mikrokontrolérech. Díky tomu lze vyvíjet například hry pro českou bastlířskou přenosnou otevřenou herní konzoli Picopad, o níž jsme na Lupě psali.
 Picogame je napsaný pro mikrokontroléry od Raspberry Pi (RP2040 a RP2350) nebo různé verze ESP32 od Espressif Systems. Picopad je primární platforma, lze ale využít i další desky.
 Picogame je open source (pod licencí MIT) a lze pomocí něj dělat 2D hry. Nativní jádro v jazyce C se používá pro vykreslování, scény a kolize a herní logika se píše v Pythonu. Není nutné opakovat kompilace a flashovat firmware, deska se objevuje jako disk ve vašem počítači a stačí upravovat soubor code.py. Engine je možné vyzkoušet i bez hardwaru v rámci webového simulátoru.

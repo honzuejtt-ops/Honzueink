@@ -1,0 +1,6 @@
+České EVOLVEO rozšiřuje nabídku počítačových komponent o nový vzduchový chladič QuietCool7. Ten kombinuje chladicí výkon pro procesory s TDP až 240 W a displej zobrazující aktuální informace o vytížení a teplotě procesoru.
+Displej prozradí teplotu i otáčky
+Chladič EVOLVEO QuietCool7 využívá 6mm poniklovaný heatpipe s přímým kontaktem s procesorem, který se stará o rozvod tepla. Proud vzduchu zajišťuje 120mm PWM ventilátor s HDB ložiskem a rozsahem 8OO až 2 200 RPM. Hlučnost by dle slov výrobce neměla přesáhnout 31,7 dB. V případě potřeby je možné chlazení podpořit zakoupením dalšího ventilátoru.
+Společnost uvádí, že tento chladič zvládne procesory s TDP až 240 W a má tak být určený i do výkonných herních sestav. Největší pozornost však přitahuje LCD displej umístěný na horní straně. Ten dokáže zobrazovat aktuální teplotu procesoru či rychlost otáček ventilátoru.
+Chladič podporuje procesory AMD na paticích AM4/AM5 a Intel s paticemi 115×/1200/1366/1700/1851. K dostání je na vybraných e-shopech za cenu 999 korun.
+zdroj: TZ EVOLVEO

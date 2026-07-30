@@ -174,6 +174,13 @@ Starship se kupodivu i po čtyřech dnech klidně pohupuje na hladině Indickéh
 Pozemní ...
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Ještě jedno video z letu Starshipu, které ohromí něčím úplně jiným než raketou na nebi|D|29.7. 10:17|P|Oživeno 30. července | SpaceX hluboko v noci zveřejnil ještě jedno video přistávajícího Starhipu, které je ale spíše než lodí zajímavé něčím jiným – p...|X|Oživeno 30. července | SpaceX hluboko v noci zveřejnil ještě jedno video přistávajícího Starhipu, které je ale spíše než lodí zajímavé něčím jiným – prakticky dokonalou elektromechanickou a softwarovou stabilizací obrazu.
+
+
+
+Jedná se o záběry z dnes už ikonického oranžového bazénku, který se vždy ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Český výrobce elektroniky má nový chladič na procesor s digitálním displejem a cenou pod tisícovku|D|29.7. 10:02|P|Nový chladič EVOLVEO QuietCool7 zvládne procesory s TDP až 240 W. Mimo to nabízí ARGB podsvícení a digitální displej pro sledování teplot.|X|České EVOLVEO rozšiřuje nabídku počítačových komponent o nový vzduchový chladič QuietCool7. Ten kombinuje chladicí výkon pro procesory s TDP až 240 W a displej zobrazující aktuální informace o vytížení a teplotě procesoru.
 Displej prozradí teplotu i otáčky
 Chladič EVOLVEO QuietCool7 využívá 6mm poniklovaný heatpipe s přímým kontaktem s procesorem, který se stará o rozvod tepla. Proud vzduchu zajišťuje 120mm PWM ventilátor s HDB ložiskem a rozsahem 8OO až 2 200 RPM. Hlučnost by dle slov výrobce neměla přesáhnout 31,7 dB. V případě potřeby je možné chlazení podpořit zakoupením dalšího ventilátoru.

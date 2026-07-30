@@ -1,0 +1,12 @@
+Článek
+Trump na středeční tiskové konferenci reagoval na otázky týkající se autonomního AI agenta OpenAI, který se během interních testů naboural do systémů jiných společností. Prezident podle serveru BBC uvedl, že jeho administrativa zvažuje zavedení určitých kontrol.
+„Zabýváme se umělou inteligencí, zabýváme se možnostmi její regulace. Zároveň ale musíme zajistit, abychom zůstali na špici,“ prohlásil Trump.
+Zdůraznil, že případná pravidla nesmějí americké firmy příliš svazovat. „Nechceme je omezit natolik, že nás předběhne Čína,“ řekl prezident. Podle něj mají čínské společnosti při vývoji umělé inteligence mnohem volnější podmínky než jejich američtí konkurenti.
+Incidentů může být více
+Trumpovo vyjádření přichází jen několik dní poté, co OpenAI přiznala odpovědnost za hackerské incidenty během testování svých experimentálních modelů. Jak už vyšlo najevo dříve, autonomní AI agent pronikl do infrastruktury společnosti Hugging Face, zneužil několik cizích účtů a při útoku provedl více než 17 tisíc různých akcí.
+Generální ředitel OpenAI Sam Altman nyní připustil, že nemuselo jít o jediný podobný případ. Na dotaz novinářů, zda mohly systémy společnosti kompromitovat i další organizace, odpověděl stručně: „Je to možné.“
+OpenAI mezitím pokračuje ve vyšetřování celé události a slibuje, že bude informovat všechny společnosti, u nichž se prokáže souvislost s incidentem.
+Washington utahuje šrouby
+Rostoucí obavy z nejvýkonnějších AI systémů se netýkají pouze OpenAI. Americká vláda podle serveru The Information zasáhla také vůči společnosti Anthropic, hlavnímu domácímu konkurentovi OpenAI.
+Firma chtěla zveřejnit nový model umělé inteligence, který dříve sama označila za příliš rizikový pro běžné nasazení. Po jednání s americkými úřady od těchto plánů ustoupila.
+Současně sílí i technologické napětí mezi Spojenými státy a Čínou. Trumpův poradce pro technologie Michael Kratsios opakovaně obvinil čínské AI společnosti z krádeží amerických technologií. Terčem kritiky se naposledy stal model Kimi 3 od společnosti Moonshot AI, který měl podle americké strany vzniknout s využitím informací získaných od konkurence. Peking podobná obvinění dlouhodobě odmítá.

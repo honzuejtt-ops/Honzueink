@@ -1,0 +1,23 @@
+Článek
+Anthropic odhalil incidenty až poté, co minulý týden OpenAI zveřejnila výsledky vlastního testování.
+Její experimentální AI agent se tehdy dostal z izolovaného testovacího prostředí na veřejný internet a pronikl do infrastruktury platformy Hugging Face. Během několika dnů provedl přes 17 tisíc různých akcí a využil také několik dalších internetových služeb.
+To přimělo Anthropic podívat se zpětně na vlastní testy. A výsledky byly podle serveru CNN překvapivé.
+Tři útoky, o kterých nikdo nevěděl
+Při analýze více než 140 tisíc bezpečnostních testů společnost narazila na tři případy, kdy její modely získaly přístup na veřejný internet, přestože jej mít neměly. Následně pronikly do produkčních systémů tří různých organizací.
+Nejstarší zjištěný incident pochází už z dubna. Žádná z napadených organizací podle Anthropicu útok sama neodhalila. Firma nyní s jejich provozovateli spolupracuje na objasnění celé události.
+Na rozdíl od případu OpenAI se podle společnosti modely nesnažily z testovacího prostředí uniknout vlastní iniciativou.
+Anthropic tvrdí, že se na internet dostaly kvůli chybě v nastavení testovacího prostředí. Kvůli nedorozumění mezi firmou a partnerem, který testování zajišťoval, získaly přístup ven, ačkoliv jej vůbec mít neměly.
+Jakmile se ale otevřela cesta, začaly plnit zadaný úkol.
+Chovaly se jako skutečný hacker
+Modely dostaly úkol typu Capture the Flag, který se běžně používá při výcviku i testování odborníků na kybernetickou bezpečnost. Jejich cílem bylo získat soubor ukrytý na jiném počítači v síti.
+K tomu využívaly stejné postupy, jaké používají skuteční útočníci. Podle Anthropicu zkoušely prolomit slabá hesla nebo vyhledávaly části systémů, které nevyžadovaly přihlášení ani bezpečnostní tokeny.
+Nejpokročilejší model společnosti si navíc podle vývojářů v jednu chvíli uvědomil, že se nachází na veřejném internetu, a další činnost sám ukončil.
+Ještě před několika týdny šlo hlavně o hypotetický scénář, před kterým odborníci dlouhodobě varovali. Obávali se, že stále schopnější AI agenti by během testování mohli překročit hranice izolovaného prostředí a začít zasahovat do skutečných systémů.
+Nejprve podobný případ přiznala OpenAI. Nyní se ukazuje, že nejde o problém jediné společnosti.
+Anketa
+Anthropic po odhalení incidentů stejně jako OpenAI okamžitě pozastavil všechny bezpečnostní testy zaměřené na kybernetické útoky. Zároveň připustil, že mohl přijmout důslednější opatření, která by podobným situacím zabránila.
+Debata o regulaci nabírá na síle
+Druhý potvrzený případ během několika dnů tak znovu otevírá debatu o tom, zda vývoj nejpokročilejší umělé inteligence nepostupuje rychleji, než jakým tempem vznikají bezpečnostní pravidla. O zpřísnění testování AI už začínají mluvit nejen odborníci, ale také politici.
+Celá kauza už nezůstala jen tématem pro bezpečnostní odborníky. Reagovat na ni začali i američtí politici. Prezident Donald Trump tento týden poprvé připustil, že jeho administrativa zvažuje větší kontrolu nad nejvyspělejšími systémy umělé inteligence. Reagoval právě na otázky týkající se incidentů kolem OpenAI.
+„Zabýváme se umělou inteligencí, zabýváme se možnostmi její regulace. Zároveň ale musíme zajistit, abychom zůstali na špici,“ uvedl Trump.
+Současně varoval před příliš přísnými pravidly. „Nechceme je nastavit natolik přísně, že bychom se najednou ocitli za Čínou,“ prohlásil s tím, že právě hledání rovnováhy mezi bezpečností a technologickým náskokem bude jednou z největších výzev pro další rozvoj umělé inteligence.

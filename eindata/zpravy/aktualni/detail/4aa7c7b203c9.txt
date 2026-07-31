@@ -23,11 +23,3 @@ Roční tržby z Microsoft Azure poprvé vyrostly nad sto miliard dolarů. Celko
 Vyšel Geekbench 7. Benchmark umožňuje měřit výkon procesorů a grafických karet na Windows, macOS, Linuxu, Androidu a iOS. Přepracován byl například způsob testování více vláken na CPU.
 GitHub sníži odměny za program hledání zranitelností a chyb. Je to součást restrukturalizace celého projektu bug bounty. Například za kritické zranitelnosti už nedostanete 20 až 30 tisíc dolarů, ale 10 tisíc dolarů. U nízké závažnosti jde o 250 dolarů místo až dvou tisíc dolarů.
 Čtení na Root.cz a Cnews.cz:
-- Postřehy z bezpečnosti: AI jako pomocník, záškodník i dobrodruh
-- Tvorba interaktivních aplikací s GUI s využitím projektu GoGPU
-- Máte doma staré díly z Průši? Díky projektu Prusawire z nich postavíte úplně novou 3D tiskárnu
-- Bestseller herních počítačů konečně v noteboocích? AMD chystá mobilní verzi Ryzenu 7 9800X3D
-- Učitel kvůli podezření z podvádění s AI nastražil geniální past. Nachytal 32 z 35 studentů
-- Reklamy otravující uživatele na monitorech LG? Microsoft zakročil, firma inzerát na McAfee odstranila
-- AMD brání 4GB grafiku Radeon RX 9050. Vznikla na objednávku, normálně v prodeji budou jen 8GB verze
-- Poslanci chtějí českým řidičům výrazně usnadnit cestování. Novela zákona přinese více dat o nehodách, objížďkách, MHD a mnoho dalšího

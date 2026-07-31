@@ -1,0 +1,5 @@
+Poté, co OpenAI přiznalo, že jeho AI při testech hackla známý web, přichází s podobnou zkušeností také Anthropic. Popisuje hned tři takové případy z posledních měsíců.
+
+Tři incidenty ve 141 tisících evaluačních běhů je sice směšně malý poměr, ale důsledky se nedají jen tak přejít. Modely Claude se ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

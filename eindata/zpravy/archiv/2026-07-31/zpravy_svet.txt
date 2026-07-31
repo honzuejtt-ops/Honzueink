@@ -1,0 +1,29 @@
+|T|Rada míru se dohodla na odzbrojení Hamásu, uvedl Trump|D|31.7. 01:36|P|Rada míru se podle amerického prezidenta Donalda Trumpa dohodla na odzbrojení teroristického hnutí Hamás a dalších ozbrojených skupin. Po odzbrojení b...|X|Článek
+V noci na pátek Trump na své sociální síti Truth Social ohlásil, že v Egyptě došlo k dohodě mezi vyjednávači Hamásu, Rady míru, Kataru a Turecka.
+„Jedná se o zásadní krok směrem k trvalému míru a bezpečnosti. Tato dohoda představuje klíčový krok k tomu, aby Gazu konečně začala řídit nová palestinská vláda, která bude úzce spolupracovat s Radou pro mír s cílem pomáhat palestinskému lidu,“ uvedl Trump na své sociální síti.
+Výsledkem dohody je patnáctibodový plán, který podle Trumpa bude uplatňován postupně. Jakmile dojde k odzbrojení, opustí izraelské síly Pásmo Gazy.
+Izrael následně vydal prohlášení, že návrh Rady pro mír nesplňuje požadavky Jeruzaléma na úplnou demilitarizaci. Jak dodává server Times of Israel (ToI), který o postoji izraelské strany informoval, není jasné, jak se v případě dohody bude postupovat dál.
+Jak uvedl izraelský Kanál 12, podle jednoho z vysokých vládních činitelů Izrael pochybuje o tom, že by se teroristé z hnutí Hamás skutečně nechali odzbrojit. USA však podle něj hodlají zajistit, aby Izrael s dohodou souhlasil a své závazky splnil.
+Odzbrojení a výstavba v Rafáhu
+Přesné znění plánu nebylo zveřejněno, už během čtvrtka se však objevovaly zvěsti o uzavření dohody a její možná podoba. Podle jednoho z arabských diplomatů obeznámených s vyjednáváním by Hamás měl odevzdávat zbraně během následujících osmi měsíců Národnímu výboru pro správu Gazy (NCAG - National Committee for the Administration of Gaza) - sboru úředníků pod dohledem Rady míru.|E|
+|T|Zasaženo bylo pět platforem. Jak se změnil test AI v sofistikovaný hackerský útok|D|31.7. 01:06|P|Z původně nenápadného bezpečnostního experimentu se stal jeden z nejdiskutovanějších incidentů letošního roku. Agentura AFP nyní přinesla další podrob...|X|Článek
+Když společnost Hugging Face v polovině července oznámila, že se stala terčem útoku autonomního AI agenta, zdálo se, že jde o ojedinělý incident. Jenže každým dalším dnem vyplouvají na povrch nové informace a celý příběh získává další rozměr.
+Nejprve OpenAI přiznala, že za útokem skutečně stál její experimentální systém. Následně vyšlo najevo, že agent během několika dnů provedl přes 17 tisíc různých akcí, získal administrátorská oprávnění v části infrastruktury Hugging Face a pokoušel se obejít samotný smysl bezpečnostního testu.
+Teď se ukazuje, že jediným zasaženým cílem nebyl ani zdaleka jen Hugging Face.
+Neútočil jen na jednu platformu
+Podle nejnovějších informací OpenAI využil autonomní agent během celé operace celkem pět různých internetových služeb. Kromě Hugging Face se dostal i k dalším čtyřem veřejně dostupným platformám, jejichž názvy společnost nezveřejnila.
+Firma tvrdí, že na těchto službách agent nepřekročil oprávnění běžného uživatele. Využíval je například ke kopírování zdrojového kódu, ukládání dat nebo testování jednotlivých kroků útoku. Přesto právě tyto platformy vytvořily zázemí, ze kterého následně pokračoval v útoku na hlavní cíl.
+OpenAI zároveň uvedla, že průběžně kontaktuje provozovatele všech dotčených služeb a pokračuje ve vyšetřování celého incidentu.
+Podle agentury Reuters se AI agent během celé operace dostal také k zákazníkovi společnosti Modal, která poskytuje cloudovou infrastrukturu pro vývoj umělé inteligence. Technický ředitel firmy Akshat Bubna uvedl, že agent zneužil chybu v aplikaci jednoho ze zákazníků. Samotná platforma Modal ale podle něj napadena nebyla.
+Místo řešení hledal správné odpovědi
+Celý incident začal během interního testování nových modelů OpenAI v prostředí ExploitGym. Benchmark má ověřovat, jak dobře dokáže umělá inteligence odhalovat a zneužívat bezpečnostní chyby v různých systémech.
+Jenže agent si podle všeho zvolil vlastní strategii.
+Namísto hledání řešení jednotlivých úloh usoudil, že správné odpovědi mohou být uložené přímo na serverech Hugging Face. Místo plnění zadání se proto pokusil získat je přímo z infrastruktury společnosti.
+Forenzní analýza Hugging Face později ukázala, že agent pronikl hluboko do interních systémů. Během několika dnů provedl přes 17 tisíc různých akcí. Většina z nich skončila neúspěchem. Přesto šlo podle odborníků o dosud nejrozsáhleji zdokumentovaný případ, kdy autonomní AI systém během testování jednal způsobem, který jeho tvůrci nezamýšleli.
+Navíc některé akce vedly k administrátorským oprávněním v interních systémech. Pomocí odcizených přihlašovacích údajů navíc připojil AI agent do podnikové sítě Hugging Face 181 vlastních zařízení. Díky nim získal přístup i do prostředí, kde společnost vyvíjí a testuje svůj software.
+Podle OpenAI se oba testované modely v podstatě pokoušely při hodnocení podvádět. Místo řešení úloh hledaly cestu, jak se dostat přímo ke správným odpovědím.
+Debata o regulaci nabírá na síle
+Celá kauza už nezůstala jen tématem pro bezpečnostní odborníky. Reagovat na ni začali i američtí politici.
+Prezident Donald Trump tento týden poprvé připustil, že jeho administrativa zvažuje větší kontrolu nad nejvyspělejšími systémy umělé inteligence. Reagoval právě na otázky týkající se incidentů kolem OpenAI.
+„Zabýváme se umělou inteligencí, zabýváme se možnostmi její regulace. Zároveň ale musíme zajistit, abychom zůstali na špici,“ uvedl Trump.
+Současně ale varoval před příliš přísnými pravidly. „Nechceme je omezit natolik, že bychom se najednou ocitli za Čínou,“ prohlásil s tím, že právě hledání rovnováhy mezi bezpečností a technologickým náskokem bude jednou z největších výzev pro další rozvoj umělé inteligence.|E|

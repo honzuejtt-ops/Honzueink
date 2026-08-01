@@ -1,3 +1,6 @@
+|T|Pozor na falešné weby s PowerToys, Wintoys a dalšími známými nástroji. Jsou jich desítky a mohou šířit malware|D|01.8. 10:45|P|Autor nástroje Wintoys objevil desítky falešných webů. • Zneužívají identitu legitimních nástrojů pro Windows. • Některé šíří malware, jiné s tím moho...|X|Autor nástroje Wintoys objevil desítky falešných webů. • Zneužívají identitu legitimních nástrojů pro Windows. • Některé šíří malware, jiné s tím mohou začít později.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Vzdušná vlhkost jako nový zdroj vody. Porézní materiál zvládne získat 2 litry životodárné tekutiny denně|D|01.8. 09:45|P|Porézní kompozitní materiál z Kielu získává pitnou vodu ze vzduchu • Uhlíková pěna zrychluje celý proces desorpce vody o 51 % • Výrobní náklady na jed...|X|Porézní kompozitní materiál z Kielu získává pitnou vodu ze vzduchu • Uhlíková pěna zrychluje celý proces desorpce vody o 51 % • Výrobní náklady na jeden kilogram materiálu činí 12 až 14 dolarů
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|

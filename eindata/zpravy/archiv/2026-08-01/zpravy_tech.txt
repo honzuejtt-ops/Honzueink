@@ -1,3 +1,6 @@
+|T|Nejpirátěnější filmy: Co se teď nejvíc stahuje (aktualizace srpen 2026)|D|01.8. 15:45|P|Vzali jsme týdenní přehledy nejstahovanějších filmů, které se objevují na torrentech, a spojili je do jednoho žebříčku. Tohle jsou aktuálně filmy, o k...|X|Vzali jsme týdenní přehledy nejstahovanějších filmů, které se objevují na torrentech, a spojili je do jednoho žebříčku. Tohle jsou aktuálně filmy, o které je na světě největší zájem, které se nejvíc pirátí.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Jak napájet Raspberry Pi 5 z běžné nabíječky pro mobil a powerbanky. Pomůže USB-C PD redukce|D|01.8. 13:45|P|Jednou z dlouhodobě nejkritizovanějších vlastností Raspberry Pi 5 je způsob jeho napájení. Zatímco naše mobily a laptopy dnes dobíjíme univerzálním zd...|X|Jednou z dlouhodobě nejkritizovanějších vlastností Raspberry Pi 5 je způsob jeho napájení. Zatímco naše mobily a laptopy dnes dobíjíme univerzálním zdrojem USB-C PD (Power Delivery), inženýři z britské nadace se před lety rozhodli pro trošku odlišnou cestu.
 
 Pátou generaci Maliny tak sice také ...

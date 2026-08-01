@@ -1,3 +1,11 @@
+|T|Jak napájet Raspberry Pi 5 z běžné nabíječky pro mobil a powerbanky. Pomůže USB-C PD redukce|D|01.8. 13:45|P|Jednou z dlouhodobě nejkritizovanějších vlastností Raspberry Pi 5 je způsob jeho napájení. Zatímco naše mobily a laptopy dnes dobíjíme univerzálním zd...|X|Jednou z dlouhodobě nejkritizovanějších vlastností Raspberry Pi 5 je způsob jeho napájení. Zatímco naše mobily a laptopy dnes dobíjíme univerzálním zdrojem USB-C PD (Power Delivery), inženýři z britské nadace se před lety rozhodli pro trošku odlišnou cestu.
+
+Pátou generaci Maliny tak sice také ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Vyzkoušeli jsme novou zálohu dokumentů v Androidu. Do cloudu se dostanou i soubory přijaté přes Quick Share|D|01.8. 12:45|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Pozor na falešné weby s PowerToys, Wintoys a dalšími známými nástroji. Jsou jich desítky a mohou šířit malware|D|01.8. 10:45|P|Autor nástroje Wintoys objevil desítky falešných webů. • Zneužívají identitu legitimních nástrojů pro Windows. • Některé šíří malware, jiné s tím moho...|X|Autor nástroje Wintoys objevil desítky falešných webů. • Zneužívají identitu legitimních nástrojů pro Windows. • Některé šíří malware, jiné s tím mohou začít později.
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|

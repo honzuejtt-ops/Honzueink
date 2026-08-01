@@ -1,0 +1,5 @@
+Jednou z dlouhodobě nejkritizovanějších vlastností Raspberry Pi 5 je způsob jeho napájení. Zatímco naše mobily a laptopy dnes dobíjíme univerzálním zdrojem USB-C PD (Power Delivery), inženýři z britské nadace se před lety rozhodli pro trošku odlišnou cestu.
+
+Pátou generaci Maliny tak sice také ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

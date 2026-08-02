@@ -1,0 +1,14 @@
+Článek
+Analytici oslovení televizí CNBC ale varují, že na podobné závěry je zatím příliš brzy. Podle nich existuje hned několik důvodů, proč by současný vývoj nemusel znamenat zásadní změnu na trhu.
+„Bral bych to s velkou rezervou, protože to, co Čína dokáže vyrobit, může být omezené pouze na velmi nízký segment trhu,“ uvedl pro CNBC Stéphane Houri, vedoucí akciového výzkumu společnosti ODDO BHF.
+Nestačí, že stroj funguje
+Samotné sestrojení litografického stroje totiž podle odborníků ještě neznamená, že je schopen konkurovat výrobkům společnosti ASML. Při výrobě polovodičů rozhoduje především takzvaná výtěžnost (yield) – tedy kolik použitelných čipů vznikne z jednoho výrobního procesu. Čím vyšší výtěžnost, tím levnější a efektivnější výroba.
+Zatím ale není jasné, zda čínské zařízení dokáže dosáhnout podobných výsledků jako stroje ASML. „Potřebují dosáhnout alespoň stejné výtěžnosti, nestačí jen mít funkční stroj,“ upozornil Nick Patience z analytické společnosti Futurum Group.
+Podle něj mají i dnes používané dovážené DUV stroje v čínských továrnách výrazně horší výsledky než zařízení, která využívá tchajwanský gigant TSMC.
+„Jakýkoli stroj vyvinutý dosud neznámou státem podporovanou firmou začíná z mnohem horší výchozí pozice. Spolehlivost se buduje dlouholetým provozem a neustálým zdokonalováním v reálném nasazení. To ASML má, zatímco Čína této úrovně ještě nedosáhla,“ dodal Patience.
+Další překážkou je výroba ve velkém
+Vedle samotné kvality zařízení upozorňují analytici také na problém s jejich výrobou. Podle informací serveru The Information plánuje čínská společnost letos vyrobit pouze pět DUV strojů a v příštím roce přibližně dvacet. Pro srovnání – ASML plánuje jen v roce 2026 dodat zhruba 130 imerzních DUV systémů a v roce následujícím výrobní kapacitu ještě navýšit.
+„Výkon zařízení, schopnost rozšířit jejich výrobu, provozní spolehlivost celé flotily, okolní ekosystém i ekonomická nevýhodnost ve srovnání s již plně odepsanými stroji ASML – to vše hraje proti čínským DUV systémům,“ uvedli analytici společnosti SemiAnalysis.
+Podle nich je právě schopnost vyrábět tato zařízení ve větším počtu nejvíce podceňovanou částí celého projektu.
+Pro ASML zatím žádný problém
+Analytici zároveň upozorňují, že ani případný úspěch čínských výrobců nemusí nizozemskou společnost výrazně poškodit. ASML totiž už dnes kvůli exportním omezením nesmí část svých nejpokročilejších DUV systémů do Číny prodávat. Domácí čínská zařízení by tak nahrazovala stroje, které by ASML stejně nemohla dodat.

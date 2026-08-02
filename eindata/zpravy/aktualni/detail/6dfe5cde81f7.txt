@@ -1,0 +1,6 @@
+Oficiální web Státního zdravotního ústavu (SZÚ) byl napaden hackery. V současné době nefunguje a místo nich se zobrazuje oznámení, že webové stránky jsou v rekonstrukci. Předtím na něm ale visela zpráva od hackerské skupiny vystupující pod názvem FEDBUSINESS.
+FEDBUSINESS je turecká hacktivistická skupina. Jejími členy jsou osoby s přezdívkami SpyDark, Revonzy, MecTruy, BBL a Radoxin.
+Útočníci na webu SZÚ zanechali zprávu v turečtině: “Yurtta sulh, cihanda sulh.” To je v překladu znamená “Mír doma, mír ve světě.” Jde o citaci Mustafy Kemala Atatürka, zakladatele moderního Turecka.
+Skupina na web umístila odkaz na kanál na Telegramu, nachází se na adrese t.me/fedbusiness. Uveden byl také odkaz na imhateam.org, hackerské fórum v turečtině.
+Na Redditu začal vystupovat uživatel s přezdívkou FedBusiness. Uvedl tam, že nešlo o cílený útok, ale o hromadné skenování zranitelnosti webových serverů. Na webu SZÚ měl najít čtyři měsíce starou zranitelnost. Uživatel zároveň uvedl, že nebude ven vypouštět žádnou databázi nebo narušovat zdravotnický systém země.
+Lupa oslovila tiskové oddělení SZÚ, to ale zatím na dotazy nereagovalo. Není jasné, zda útočníci napadli také další systémy úřadu, včetně těch interních a citlivých.

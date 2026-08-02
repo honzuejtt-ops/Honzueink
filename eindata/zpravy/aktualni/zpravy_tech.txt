@@ -1,4 +1,8 @@
-|T|Pití vody při jídle nemusí pomáhat s hubnutím. Nová analýza naznačuje, že můžete sníst ještě více|D|02.8. 09:45|P|Konzumace tekutin během oběda zvyšuje množství snědené stravy • Rychlé pití vody překvapivě vedlo k nižšímu příjmu kalorií • Žaludek se vodou nenaplní...|X|Konzumace tekutin během oběda zvyšuje množství snědené stravy • Rychlé pití vody překvapivě vedlo k nižšímu příjmu kalorií • Žaludek se vodou nenaplní, protože z něj odchází příliš rychle
+|T|Copilotů je moc. Microsoft chystá „superaplikaci“ po vzoru OpenAI|D|02.8. 11:45|P|Microsoft má příliš mnoho AI služeb. • Některé z nich spojí do jedné superaplikace. • „Supercopilot“ nabídne chat, kódování a autonomní AI.|X|Microsoft má příliš mnoho AI služeb. • Některé z nich spojí do jedné superaplikace. • „Supercopilot“ nabídne chat, kódování a autonomní AI.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Samsungům po nedávné aktualizaci mizí baterie doslova před očima. Kuriózním viníkem může být WhatsApp|D|02.8. 10:45|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Pití vody při jídle nemusí pomáhat s hubnutím. Nová analýza naznačuje, že můžete sníst ještě více|D|02.8. 09:45|P|Konzumace tekutin během oběda zvyšuje množství snědené stravy • Rychlé pití vody překvapivě vedlo k nižšímu příjmu kalorií • Žaludek se vodou nenaplní...|X|Konzumace tekutin během oběda zvyšuje množství snědené stravy • Rychlé pití vody překvapivě vedlo k nižšímu příjmu kalorií • Žaludek se vodou nenaplní, protože z něj odchází příliš rychle
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Foťáky dvou Ultra monster pod drobnohledem. Má navrch Oppo Find X9 Ultra nebo Vivo X300 Ultra?|D|02.8. 08:45|P||X|
 
@@ -6,9 +10,9 @@
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Zájem o PlayStation 5 stále uvadá. Nezvýšily jej ani předobjednávky GTA 5|D|02.8. 06:45|P||X|
 
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Co se nejvíc hraje na Steamu? Toto jsou nejoblíbenější hry pro PC. Aktualizace srpen 2026|D|02.8. 05:45|P|Ze statistik Steamu jsme zjistili, kolik hodin denně stráví hráči s jednotlivými hrami. Toto je žebříček těch nejoblíbenějších za poslední týdny.|X|Ze statistik Steamu jsme zjistili, kolik hodin denně stráví hráči s jednotlivými hrami. Toto je žebříček těch nejoblíbenějších za poslední týdny.
-
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Perseidy rozzáří srpnovou oblohu. Díky ideálním podmínkám můžete spatřit až 100 meteorů za hodinu|D|02.8. 05:45|P|Maximum meteorického roje Perseid nastane letos v noci ze 12. na 13. srpna • Ideální temnou oblohu bez měsíčního svitu zajistí srpnová fáze novu • K ú...|X|Maximum meteorického roje Perseid nastane letos v noci ze 12. na 13. srpna • Ideální temnou oblohu bez měsíčního svitu zajistí srpnová fáze novu • K úspěšnému pozorování desítek záblesků nepotřebujete dalekohled
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Co se nejvíc hraje na Steamu? Toto jsou nejoblíbenější hry pro PC. Aktualizace srpen 2026|D|02.8. 05:45|P|Ze statistik Steamu jsme zjistili, kolik hodin denně stráví hráči s jednotlivými hrami. Toto je žebříček těch nejoblíbenějších za poslední týdny.|X|Ze statistik Steamu jsme zjistili, kolik hodin denně stráví hráči s jednotlivými hrami. Toto je žebříček těch nejoblíbenějších za poslední týdny.
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Web Státní zdravotního ústavu byl napaden. Hackeři zneužili zranitelnost, zdravotní systém prý nenaruší|D|01.8. 22:04|P|Oficiální web Státního zdravotního ústavu (SZÚ) byl napaden hackery. V současné době nefunguje a místo nich se zobrazuje oznámení, že webové stránky j...|X|Oficiální web Státního zdravotního ústavu (SZÚ) byl napaden hackery. V současné době nefunguje a místo nich se zobrazuje oznámení, že webové stránky jsou v rekonstrukci. Předtím na něm ale visela zpráva od hackerské skupiny vystupující pod názvem FEDBUSINESS.
 FEDBUSINESS je turecká hacktivistická skupina. Jejími členy jsou osoby s přezdívkami SpyDark, Revonzy, MecTruy, BBL a Radoxin.

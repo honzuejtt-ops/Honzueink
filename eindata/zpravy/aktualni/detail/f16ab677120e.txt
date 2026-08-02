@@ -1,0 +1,33 @@
+Byznys·5 minut radosti
+Praha, Brno a Ostrava mají spojení, které nejde odposlouchat
+Čeští vědci postavili mezi třemi největšími městy novou síť. Data po ní jdou tak, že každý pokus o odposlech se sám prozradí – má chránit citlivá data i před počítači budoucnosti.
+Když si dnes pošlete platbu z bankovní aplikace nebo si lékař otevře vaši zdravotní kartu, chrání ta data šifra. Nová síť, kterou právě dokončilo Česko, jde ještě o krok dál: posílá klíč k té šifře tak důmyslně, že kdyby se ho někdo pokusil cestou zachytit, obě strany by to hned poznaly.
+Co přesně vzniklo
+Jde o 600 kilometrů dlouhé optické vedení mezi Prahou, Brnem a Ostravou. Postavilo ho konsorcium šesti českých vysokých škol a výzkumných pracovišť – mimo jiné ČVUT, VUT v Brně a VŠB v Ostravě – pod vedením sdružení CyberSecurity Hub. Zastřešil to Národní úřad pro kybernetickou a informační bezpečnost, tedy stejný úřad, který v Česku běžně řeší kybernetické hrozby namířené na stát a firmy.
+Stavba běžela od jara 2023 a byla fyzicky dokončená 30. června 2026. Stála 121,6 milionu korun z evropských peněz na obnovu ekonomiky po pandemii. Ještě předtím, 14. dubna 2026, na Mezinárodní den kvantové fyziky, spustili vědci síť do prvního zkušebního provozu. Koordinátor projektu Jan Bouda tehdy řekl, že jde o technologický základ, z něhož může vyrůst bezpečná komunikace budoucnosti.
+Samotná zařízení, která tenhle klíč vyrábí a posílají, dodala japonská firma Toshiba – celkem 14 kusů za zhruba 63 milionů korun. Optická vlákna, po kterých signál po celé trase putuje, do projektu vložila firma ČD – Telematika, provozovatel železniční optické sítě.
+Proč je to bezpečnější než dnešní šifrování
+Šifra funguje jako zámek s klíčem. Dnešní klíč se dá teoreticky rozlousknout, ale trvalo by to běžnému počítači tisíce let – nikomu se to proto nevyplatí. Jenže jednou by mohl vzniknout mnohem výkonnější kvantový počítač, který by to zvládl rychle. Takový počítač dnes ještě neexistuje, ale síť na něj myslí dopředu.
+Takhle citlivá čísla dnes chrání třeba internetové bankovnictví, evidenci obyvatel nebo zdravotnická data. Vyplatí se proto ochranu posílit s předstihem – dřív, než se objeví počítač, který by dnešní šifry uměl prolomit, ne až ve chvíli, kdy už bude pozdě.
+Nová síť proto posílá klíč jinak než obvyklá data: jako jednu jedinou částici světla, takzvaný foton, samostatnou cestou. A tady je to hlavní: podle docenta Leoše Boháče z Fakulty elektrotechnické ČVUT právě tohle oddělení klíče od běžných dat znamená, že jakýkoli pokus o odposlech je vždycky odhalitelný. Je to podobné, jako když pošlete zapečetěný dopis, který se sám roztrhne, pokud ho někdo cestou otevře – podle zákonů fyziky totiž nejde takovou částici světla změřit nebo si ji přečíst, aniž by se přitom nenávratně změnila. Pokud by se tedy někdo pokusil klíč zachytit, obě strany by to poznaly a poslaly by si rovnou nový.
+💡 Zajímavost: Bezpečnostní experti dnešní taktice některých útočníků říkají „sklízet teď, dešifrovat později" – cizí zašifrovaná data sbírají a ukládají už dnes v naději, že je jednou dešifrují, až na to bude dost silný počítač.
+Kdo síť dnes používá
+Zatím jde o zkušební provoz. Připojené jsou vybrané státní instituce, firmy z energetiky a dopravy a datová centra s vysokými bezpečnostními nároky – běžný člověk se k ní přímo nepřipojí. Signál po cestě prochází ještě čtyřmi mezistanicemi (v Čáslavi, Žďáru nad Sázavou, České Třebové a Olomouci). Světlo totiž na 600 kilometrech dlouhé trase postupně slábne, a bez těchto stanic, kde se znovu zesílí, by úplně zaniklo.
+Cílem zkoušky je ověřit, jak si takhle zabezpečená data vedou v běžném provozu, než na síť postupně přejdou i citlivější systémy státu – třeba evidence obyvatel nebo zdravotní data. Síť, která by podobně propojila instituce po celé zemi, má podle plánu vzniknout do roku 2030.
+Česko v evropské rodině, ale s otazníkem
+Projekt je českým příspěvkem do celoevropské sítě EuroQCI, na které svůj kousek staví všech 27 zemí Evropské unie. Česko leží uprostřed kontinentu, a tak počítá s propojením na sousední státy – Drážďany v Německu, Vídeň v Rakousku, Bratislavu na Slovensku a napojení na Polsko.
+Tady ale příběh naráží na praktickou překážku: další rozšíření zatím nemá jisté peníze. Podle serveru Lupa.cz na pokračování chybí nejméně 100 milionů korun, a pokud se je nepodaří sehnat, hrozí, že se Česko ocitne mezi málo zeměmi EU, které se na celou evropskou síť nenapojí. Česko má svou páteřní síť hotovou už čtyři roky před společným evropským cílem – otázka je, jestli ten náskok dokáže využít i finančně, ne jen technicky.
+Co to znamená pro běžné Čechy
+Přímo si novou síť zatím nikdo z veřejnosti nevyzkouší. Dopad je ale nepřímý a dlouhodobý: čím dřív si stát ověří, jak tahle ochrana v praxi funguje, tím dřív jí bude moct chránit věci, na kterých závisí běžný život – evidenci obyvatel, zdravotní data, elektrickou síť nebo bankovní spojení se státem. Právě tahle citlivá data by mohla být zranitelná, až budoucí počítače prolomí dnešní šifry. Česko si dokončením sítě dalo čas na přípravu – pokud se ovšem podaří sehnat peníze na další fázi a napojit se na zbytek Evropy.
+Ověřeno z:
+- NÚKIB — tisková zpráva o dokončení projektu CZQCI (30. června 2026)
+- IT4Innovations — tisková zpráva ke spuštění pilotního provozu kvantové sítě (14. dubna 2026)
+- Lupa.cz — článek o spuštění kvantové sítě a rizicích financování druhé fáze (duben 2026)
+- ITBiz.cz — článek o roli ČD – Telematiky v projektu CZQCI (květen 2026)
+- Dotekomanie.cz — článek o technických parametrech kvantové sítě CZQCI (červenec 2026)
+- FEL ČVUT — vysvětlení principu kvantové distribuce klíčů (duben 2026)
+Klikněte, když vám článek udělal radost
+Při přípravě článku pomohla umělá inteligence dohledat zdroje a zpracovat základní strukturu článku. Výběr tématu, ověření faktů a konečnou podobu zajistila redakce Pozitivních zpráv.
+Redaktor Pozitivních zpráv
+Potěšil vás článek? Pošlete ho dál!
+Dobrá zpráva udělá radost dvakrát — vám i tomu, komu ji pošlete.

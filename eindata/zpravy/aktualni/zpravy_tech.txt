@@ -1,4 +1,102 @@
-|T|Aktivní AirTag v odbaveném zavazadle nepředstavuje žádný problém. Vztahuje se na něj totiž výjimka|D|03.8. 18:15|P|Zapnuté lokátory v odbavených kufrech nepředstavují žádné bezpečnostní riziko • Knoflíková baterie bezpečně splňuje mezinárodní limity leteckých organ...|X|Zapnuté lokátory v odbavených kufrech nepředstavují žádné bezpečnostní riziko • Knoflíková baterie bezpečně splňuje mezinárodní limity leteckých organizací • Desítky aerolinek dnes tato data oficiálně využívají k dohledání ztracených kufrů
+|T|Klíčová slova „auto“ a „typeof“ v C23|D|03.8. 22:00|P|Jedním z nejvíce konzervativních programovacích jazyků používaných v současnosti je klasické céčko. Součástí specifikace C23 je i rozšíření sémantiky ...|X|Klíčová slova „auto“ a „typeof“ v C23
+Jak již bylo zmíněno v perexu dnešního článku, patří programovací jazyk C mezi nejkonzervativnější mainstreamové programovací jazyky vůbec. Mnoho projektů, které v tomto jazyce vznikly, vyžadují minimálně překladač splňující specifikaci ANSI C (C89) nebo její novější variantu C99, což jsou – jak čísla naznačují – již poměrně staré specifikace (ona čísla označují rok ve dvacátém století).
+Ovšem i tak konzervativní jazyk, jakým céčko nepochybně je, se neustále vyvíjí, i když by se celý vývoj dal označit jako „mírný pokrok v mezích zákona“. Po specifikaci C99 vznikly specifikace C11, dále C17 a C23. V budoucnu; pokud tedy AI dovolí; by měla další specifikace nést označení C29.
+V dnešním článku nás bude nejvíce zajímat specifikace C23, která céčko rozšiřuje o další sémantiku. Možná nejzajímavější změnou je podpora pro (relativně omezenou) typovou inferenci, což je vlastnost, která se objevila v mnoha moderních programovacích jazycích (i když samotná myšlenka typové inference sahá až do doby vzniku jazyka ML).
+Jednou z vlastností typové inference je možnost definice proměnné spojené s její inicializací, ovšem tak, že typ proměnné je odvozen právě od přiřazované hodnoty. Pro tento účel bylo v C23 „zneužito“ klíčové slovo auto, které je v céčku používáno od samotných počátků tohoto programovacího jazyka. Nyní ovšem získalo novou sémantiku a současně byla zachována i jeho původní sémantika.
+Ostatně nebude na škodu si vypsat klíčová slova, která byla do C23 přidána (mnohá z nich se objevila ve starších překladačích, ovšem neoficiálně):
+bool, constexpr, false, nullptr, static_assert, true, typeof, typeof_unqual, thread_local, alignas, alignof
+Následuje výpis všech klíčových slov moderního céčka:
+alignas, alignof, auto, bool, break, case, char, const, constexpr, continue,
+default, do, double, else, enum, extern, false, float, for, goto, if, inline,
+int, long, nullptr, register, restrict, return, short, signed, sizeof, static,
+static_assert, struct, switch, thread_local, true, typedef, typeof,
+typeof_unqual, union, unsigned, void, volatile, while
+Krátký pohled do historie: od jazyka BCPL přes B k jazyku C
+Vývoj céčka je spojen s vývojem operačního systému UNIX. Při návrhu Unixu se Ken Thompson a jeho kolega Dennis Ritchie oprávněně domnívali, že nově vytvořený operační systém potřebuje také nový systémově orientovaný programovací jazyk, tj. jazyk, ve kterém by bylo možné psát systémové programy a popř. i uživatelské aplikace. Nejprve se sice uvažovalo o využití překladače Fortranu, ovšem tato myšlenka byla vzhledem relativně dosti omezeným hardwarovým možnostem mikropočítače PDP-7 následně opuštěna.
+Namísto toho Ken Thompson vytvořil nový programovací jazyk nazvaný jednoduše B. Tento jazyk byl založen na existujícím jazyku BCPL (Basic Combined Programming Language), jenž byl vytvořen Martinem Richardsem již v roce 1966. Vzhledem k tomu, že jazyk BCPL byl z hlediska konstrukce překladače poměrně složitý (což je poněkud paradoxní, neboť se jednalo o zjednodušený jazyk CPL ze začátku šedesátých let), nebylo možné, aby se jeho překladač na mikropočítači PDP-7 spouštěl z operačního systému, protože jen pro samotný překlad zdrojových kódů bylo zapotřebí cca 16 kB operační paměti (což může v roce 2026 způsobit úsměv).
+Z tohoto důvodu Ken Thompson z původního jazyka BCPL odstranil některé vlastnosti, které nepovažoval za podstatné (například složitější typy programových smyček) a naopak změnil jeho syntaxi tak, aby se zápis programu mohl co nejvíce zkrátit. Právě z této snahy například pochází i způsob zápisu operátorů pomocí speciálních znaků a nikoli klíčových slov (včetně zcela nových operátorů ++ a –), což je zvyk používaný doposud – viz například současné programovací jazyky, jakými jsou C, C++, Go, Java či JavaScript. Taktéž se v jazyku B objevuje použití středníků pro ukončení příkazů.
+Zvláštnost jazyka B spočívá v tom, že překladač jazyka B na PDP-7 i na PDP-11 překládal program nikoli přímo do strojového kódu, ale do bajtkódu, který musel být následně interpretován. Jednalo se v podstatě o stejnou technologii, jaká je použita například u P-kódu (Pascal) či u interpretrů Javovského bajtkódu (dnes se již čisté interpretry tohoto bajtkódu v reálných JRE v praxi nepoužívají).
+Klíčové slovo auto v programovacím jazyku B
+Zajímavé bude zjistit, jakým způsobem se ovšem vůbec klíčové slovo auto v programovacím jazyku C objevilo. Historie tohoto klíčového slova je ve skutečnosti ještě starší, než samotné céčko, protože auto nalezneme již ve výše zmíněném jazyku B, což je (pochopitelně do určité míry) předchůdce klasického jazyka C. Na programovacím jazyku B bylo zvláštní především to, že podporoval pouze jeden datový typ – slovo (word) – jehož bitová šířka se měnila podle toho, pro jaký procesor byly programy překládány. I adresy v paměti byly reprezentovány pomocí slov (přesněji jako indexy do pole, neboť paměť byla v jazyku B považována za jedno velké lineární pole), což se později ukázalo být problematické, protože na mnoha platformách mají adresy jinou bitovou šířku než slova zpracovávaná procesorem. Nicméně pro účely systémového programování na počítači PDP-7 programovací jazyk do jisté míry B vyhovoval a jeho překladače byly později naprogramovány i pro některé další minipočítače, například pro PDP-11.
+To tedy znamená, že v jazyku B není nutné při deklaraci proměnných uvádět jejich datový typ. Na druhou stranu se musel specifikovat způsob uložení proměnné v paměti (v céčku se jedná o storage classes, viz další text). Pro tuto specifikaci se používala klíčová slova extrn (bez „e“) a auto. Uveďme si příklad použití. Jedná se o program pro výpočet číselné řady. V programu se používají lokální proměnné definované na řádku začínající slovem auto (řádek je zvýrazněn). A taktéž se používá několik „externích“ symbolů (externích z pohledu funkce, v céčku je tomu jinak):
+/* The following program will calculate the constant e-2 to about
+   4000 decimal digits, and print it 50 characters to the line in
+   groups of 5 characters.  The method is simple output conversion
+   of the expansion
+     1/2! + 1/3! + ... = .111....
+   where the bases of the digits are 2, 3, 4, . . . */
+ 
+main() {
+        extrn putchar, n, v;
+        auto i, c, col, a;
+ 
+        i = col = 0;
+        while(i<n)
+                v[i++] = 1;
+        while(col<2*n) {
+                a = n+1 ;
+                c = i = 0;
+                while (i<n) {
+                        c =+ v[i] *10;
+                        v[i++]  = c%a;
+                        c =/ a--;
+                }
+ 
+                putchar(c+'0');
+                if(!(++col%5))
+                        putchar(col%50?' ': '*n');
+        }
+        putchar('*n*n');
+}
+ 
+v[2000];
+n 2000;
+Specifikace způsobu uložení proměnných v jazyce C
+Specifikaci způsobu uložení proměnných (storage class) zdědilo po jazyku B i céčko. Došlo ovšem k rozšíření nabízených možností a ke zpřesnění vlastností jednotlivých způsobů uložení. V jazyku C proto existují čtyři možnosti uložení. Jejich základní vlastnosti jsou vypsány v následující tabulce:
+S jednotlivými způsoby uložení, resp. se základními vlastnostmi různě definovaných proměnných, se seznámíme v dalších čtyřech kapitolách. Tento popis nám pomůže pochopit jak roli klíčového slova auto, tak i do jisté míry problémy, které nastávají v případě, že je auto sémanticky „přetíženo“ (v C23 má dva významy).
+Výchozí způsob uložení proměnných – auto
+Nejčastěji se setkáme se způsobem uložení proměnných, který se jmenuje auto. Jedná se o lokální proměnné, při jejichž definici se může použít klíčové slovo auto. Takové proměnné jsou vytvořeny (alokovány) na zásobníku a nejsou implicitně inicializovány, tj. jejich počáteční hodnota může být jakákoli. Platnost a viditelnost takové proměnné je omezena na blok, ve kterém je proměnná definována (i na případné podbloky):
+#include <stdio.h>
+ 
+int main(void) {
+    auto int x = 10000;
+    auto double y = 1.2345;
+ 
+    auto double z = y * x;
+ 
+    printf("%d x %f = %f\n", x, y, z);
+    return 0;
+}
+Vzhledem k tomu, že u lokálních proměnných je implicitní třída uložení právě auto, je možné při definici proměnných toto klíčové slovo vynechat (což vede k tomu, že mnoho programátorů možná ani neví, že klíčové slovo auto existuje):
+#include <stdio.h>
+ 
+int main(void) {
+    int x = 10000;
+    double y = 1.2345;
+ 
+    double z = y * x;
+ 
+    printf("%d x %f = %f\n", x, y, z);
+    return 0;
+}
+Definice lokálních proměnných se specifikátorem register
+Z dávných hlubin historie pochází i třída uložení register. Proměnné deklarované s touto třídou uložení mají podobné vlastnosti, jako proměnné s uložením auto (viditelnost, implicitní výchozí hodnota není specifikována), ovšem předpokládalo se, že proměnné register budou uloženy v pracovním registru mikroprocesoru. Jedná se tedy vlastně o určitou nápovědu překladači, ovšem moderní překladače dokážou způsob alokace proměnných odvodit mnohdy lépe, než vývojáři (dnešní architektury mikroprocesorů jsou již velmi složité). Nicméně nic nám nebrání klíčové slovo register použít, i když ho moderní překladače s poměrně velkou pravděpodobností budou ignorovat:
+#include <stdio.h>
+ 
+int main(void) {
+    register int x = 10000;
+    register double y = 1.2345;
+ 
+    register double z = y * x;
+ 
+    printf("%d x %f = %f\n", x, y, z);
+    return 0;
+}
+Definice lokálních proměnných se specifikátorem static
+Třída uložení static specifikuje, že hodnoty proměnných jsou uloženy nikoli na zásobníku, ale v datovém segmentu, což v důsledku znamená, že hodnota proměnné může „přežít“ platnost bloku, ve kterém je proměnná specifikována. Výchozí hodnota těchto proměnných (pokud není určeno jinak) je nulová. Tato třída uložení je výchozí pro proměnné definované na globální úrovni (tedy nikoli ve funkci), ovšem můžeme ji použít i pro lokální proměnné – klíčové slovo static je v tomto případě povinné.
+Pokusme se pro všechny tři proměnné použité v naší funkci main určit třídu uložení static:
+#include <stdio...
+(Pokracovani na webu)|E||T|Aktivní AirTag v odbaveném zavazadle nepředstavuje žádný problém. Vztahuje se na něj totiž výjimka|D|03.8. 18:15|P|Zapnuté lokátory v odbavených kufrech nepředstavují žádné bezpečnostní riziko • Knoflíková baterie bezpečně splňuje mezinárodní limity leteckých organ...|X|Zapnuté lokátory v odbavených kufrech nepředstavují žádné bezpečnostní riziko • Knoflíková baterie bezpečně splňuje mezinárodní limity leteckých organizací • Desítky aerolinek dnes tato data oficiálně využívají k dohledání ztracených kufrů
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Google na dálku odřízl část Androidů od bezkontaktních plateb. Ukázal, kdo má u telefonů poslední slovo|D|03.8. 17:45|P||X|
 

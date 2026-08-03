@@ -1,0 +1,8 @@
+Útok začal v sobotu 1. srpna kolem 22:30, kdy se na úvodní stránce objevily zelené a červené nápisy v turečtině. Součástí změněného obsahu byl také Atatürkův citát „Yurtta sulh, cihanda sulh“, který v překladu znamená „Mír doma, mír ve světě“.
+Z dostupných informací však nelze určit ani totožnost nebo motiv útočníků. Krátce před 23. hodinou, tedy asi půlhodinu po začátku útoku, zůstal web zcela bílý a bez textu. Šlo o okamžik, kdy web odstavili jeho správci. Později se na něm objevilo oznámení o rekonstrukci a dočasném omezení, které na něm svítí i v okamžiku psaní článku (pondělí dopoledne).
+Data mimo server
+SZÚ (Státní zdravotní ústav) oznámil incident Národnímu úřadu pro kybernetickou a informační bezpečnost a následně zahájil forenzní analýzu napadeného serveru. Ta má objasnit způsob průniku i rozsah změn provedených útočníky. Podle ústavu nebyla ohrožena citlivá data ani laboratorní údaje v interních databázích.
+Napadený web provozuje externí dodavatel a server není přímo propojený s informačními systémy instituce. Kybernetický incident proto podle dosavadního vyjádření neomezil samotný provoz SZÚ.
+Oddělení obou systémů je nutné vzhledem k agendě ústavu, který pracuje s epidemiologickými informacemi a laboratorními výsledky. Zajišťuje také činnosti související s ochranou veřejného zdraví.
+Návrat potrvá
+V neděli dopoledne ústav uvedl, že stránky zůstanou kvůli analýze nedostupné pravděpodobně minimálně dalších 48 hodin. Před opětovným spuštěním bude nutné prověřit napadený server a odstranit případné zranitelnosti.

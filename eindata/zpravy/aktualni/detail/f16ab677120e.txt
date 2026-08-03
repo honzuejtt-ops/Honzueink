@@ -1,4 +1,3 @@
-Byznys·5 minut radosti
 Praha, Brno a Ostrava mají spojení, které nejde odposlouchat
 Čeští vědci postavili mezi třemi největšími městy novou síť. Data po ní jdou tak, že každý pokus o odposlech se sám prozradí – má chránit citlivá data i před počítači budoucnosti.
 Když si dnes pošlete platbu z bankovní aplikace nebo si lékař otevře vaši zdravotní kartu, chrání ta data šifra. Nová síť, kterou právě dokončilo Česko, jde ještě o krok dál: posílá klíč k té šifře tak důmyslně, že kdyby se ho někdo pokusil cestou zachytit, obě strany by to hned poznaly.
@@ -26,8 +25,3 @@ Ověřeno z:
 - ITBiz.cz — článek o roli ČD – Telematiky v projektu CZQCI (květen 2026)
 - Dotekomanie.cz — článek o technických parametrech kvantové sítě CZQCI (červenec 2026)
 - FEL ČVUT — vysvětlení principu kvantové distribuce klíčů (duben 2026)
-Klikněte, když vám článek udělal radost
-Při přípravě článku pomohla umělá inteligence dohledat zdroje a zpracovat základní strukturu článku. Výběr tématu, ověření faktů a konečnou podobu zajistila redakce Pozitivních zpráv.
-Redaktor Pozitivních zpráv
-Potěšil vás článek? Pošlete ho dál!
-Dobrá zpráva udělá radost dvakrát — vám i tomu, komu ji pošlete.

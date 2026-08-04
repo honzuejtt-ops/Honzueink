@@ -1,0 +1,23 @@
+Vědci vytvořili okno, které je průhledné a vyrábí elektřinu
+Okno, kterým je vidět ven skoro jako běžným sklem, a přitom vyrábí elektřinu – to znělo jako rozpor. Čím průhlednější solární panel byl, tím míň energie dal. Korejský tým našel cestu, jak ten kompromis obejít.
+#solární energie#technologie#inovace#věda
+Okno vidí i to, co lidské oko ne. Nezachytává totiž viditelné světlo, ale záření, které je pro nás neviditelné – a právě z něj vyrábí elektřinu, zatímco denní světlo si klidně propouští dál do místnosti.
+Tenká vrstva na skle propustí viditelné světlo dovnitř, ale odrazí neviditelné blízké infračervené záření do křemíkových článků po straně okna, kde se promění v proud. Výsledek: okno propouští 75,6 procenta viditelného světla – běžné jednoduché sklo propustí kolem 90 procent, takže se mu nová technologie jen málo přibližuje – a zároveň vyrábí elektřinu s účinností 8,3 procenta. Pro srovnání: neprůhledné střešní solární panely mají účinnost kolem 20 až 22 procent, ale žádné světlo dovnitř nepustí a energii z osvětlené místnosti nezachytí.
+Vědci to ukázali v listopadu 2025 ve vědeckém časopise Joule – za objevem stojí tým z jihokorejské Korea University ve spolupráci s Korea Aerospace University a Korejským institutem vědy a technologie (KIST).
+Funguje i večer, od lampy
+Křemíkové články po straně okna dokážou zachytit nejen sluneční záření, ale i umělé osvětlení zevnitř místnosti. Jedno a totéž okno tak vyrábí elektřinu ve dne ze slunce a večer z rozsvícených lamp – nejde o dvě různé verze technologie, ale o jedno zařízení, které umí obojí.
+Vedoucí týmu, profesor Jun Yong-seok, k výsledku uvedl, že se dá použít v různých průmyslových odvětvích, například u budov s nulovou energetickou náročností nebo v oknech elektromobilů. Okno navíc věrně podává barvy toho, co je za sklem vidět – index podání barev vyšel na 93,8 ze sta, tedy blízko běžnému oknu.
+💡 Zajímavost: Elektřinu vyrábějící prosklená fasáda existuje už dnes, byť z neprůhledných panelů zasazených do skla, ne z čirých oken jako v nové studii – německá budova Matchbox v Eschbornu u Frankfurtu vyrobí z 1 500 metrů čtverečních takové fasády přes 180 000 kilowatthodin elektřiny ročně, zhruba tolik, kolik spotřebuje šedesát domácností bez elektrického topení.
+Kdo na podobné technologii ještě pracuje
+Podobným směrem jde víc týmů po celém světě. Na fotce je jeden z nich – průhledný solární panel z výzkumu Michigan State University, který tým poprvé představil v roce 2014 a na jehož základě později vznikla americká firma Ubiquitous Energy. Funguje jinak než korejské okno: organické sloučeniny v panelu pohlcují jen neviditelné ultrafialové a infračervené záření, zatímco viditelné světlo propustí beze změny. Firma z tohoto výzkumu dnes vyvíjí průhledný solární nátěr na okna. Australská firma jde přes jinou vrstvu s nižším výkonem na metr čtvereční, zato svůj produkt už prodává. Jinou cestou se před pár lety vydal i tým univerzity UNIST spolu s Korea University: do křemíkové destičky navrtal mikroskopické díry a dosáhl vyšší účinnosti 12,2 procenta, ale při nižší, dvacetiprocentní průhlednosti.
+Nová korejská studie je zatím laboratorně ověřený modul, ne hotový komerční produkt – žádná stavební firma ani konkrétní termín uvedení na trh zatím ověřeně nepadl. Tým ale zdůrazňuje, že technologie staví na běžné, dobře zavedené výrobě křemíkových článků, což by mělo výrobu ve velkém usnadnit.
+Proč se to počítá právě u oken
+U vysoké kancelářské budovy bývá prosklená plocha stěn mnohem větší než plocha střechy, kam se vejde jen omezené množství klasických panelů. Okno, které vyrábí elektřinu a přitom zůstává průhledné, by tak mohlo přidat solární plochu tam, kde střešní panely fyzicky nestačí – aniž by budova musela obětovat výhled nebo denní světlo uvnitř.
+Pokud se podobná okna jednou rozšíří do praxe, mohla by z obyčejné prosklené kancelářské budovy nebo rodinného domu udělat částečně soběstačného výrobce elektřiny – bez jediného panelu na střeše.
+Ověřeno z:
+- Joule (Cell Press) — Scalable hybrid solar window with high transparency, high efficiency, and superior color rendering (listopad 2025)
+- Korea University / Interesting Engineering — vyjádření vedoucího týmu Jun Yong-seoka
+- EurekAlert — starší studie Korea University a UNIST z roku 2019 (mikroperforovaný křemík)
+- Michigan State University — výzkum Richarda Lunta a firma Ubiquitous Energy (foto na obrázku)
+- PV Magazine — konkurenční řešení australské firmy (Gen3, září 2025)
+- Schüco — reference budovy Matchbox v Eschbornu (fotovoltaická fasáda)

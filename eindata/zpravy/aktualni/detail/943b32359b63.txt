@@ -1,0 +1,8 @@
+Apple připravuje pro iOS funkci, která umožní průběžně kopírovat text a další podporovaný obsah mezi iPhonem a spárovaným počítačem s Windows. Měla by být dostupná jen v Evropské unii a doplní tak funkčnost, kterou již nyní nabízí Android propojený s Windows.
+Požadavek Microsoftu
+Funkce by měla vzniknout po žádosti Microsoftu, který ji podal v rámci evropských pravidel interoperability. Apple tuto žádost převzal 31. března a 27. dubna posunul do fáze přípravy projektu. Následně vývoj této funkce potvrdil. Microsoft požaduje trvalý přístup ke schránce tak, aby synchronizace probíhala na pozadí bez otevírání jakékoliv aplikace při každém přenosu. Uživatel by tedy mohl zkopírovat obsah na iPhonu a vložit jej ve Windows. Stejný postup má fungovat i opačně.
+V současné době mohou aplikace v iOS číst schránku jen při aktivním běhu v popředí. Systém navíc může vyžadovat souhlas při jednotlivých operacích. Apple už obdobné chování nabízí uvnitř vlastního ekosystému přes Universal Clipboard mezi iPhonem, iPadem a Macem.
+Jen pro Evropu?
+Funkce vzniká díky novým pravidlům, která jsou obsažena v evropském Aktu o digitálních trzích. První nasazení proto může zůstat omezené na Evropskou unii, nicméně Apple v minulosti některé změny vyvinuté kvůli evropským regulacím rozšířil i na další trhy. Funkce by měla dorazit až v roce 2027 a nejspíš se tak stane součástí verze iOS 28.
+Uživatelé Androidu tuto funkci dobře znají. Microsoft už roky podporuje synchronizaci schránky přes Phone Link, případně klávesnici SwiftKey. Připravované rozhraní tak zajistí obdobné možnosti i pro uživatele iPhonů. Pokud navíc Apple kolem tohoto systému vytvoří SDK pro vývojáře, budou moci k systémové schránce přistupovat další systémy či aplikace.
+Zdroj: 9to5Mac

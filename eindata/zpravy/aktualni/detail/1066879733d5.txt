@@ -1,0 +1,9 @@
+Microsoft na konci července vydal aktualizovaný plán pro druhou polovinu letošního roku zaměřený na Windows 11. Plánované aktualizace mají snížit paměťovou režii systému a zlepšit odezvu na slabších strojích.
+Optimalizace paměti se stala jednou ze čtyř nových oblastí, kterým se chce Microsoft věnovat do konce roku 2026. Vedle ní firma plánuje vylepšit prvotní nastavení systému a rodinné funkce. Změny čekají také hlasové ovládání.
+Menší systémová režie
+Podle Microsoftu má Windows 11 postupně využívat efektivnější správu paměti. V současné době je kapacita 8 GB na hraně a pro jakékoliv náročnější použití (tedy více než 5 karet v prohlížeči) je spíše nepoužitelná. Microsoft upravuje také WinUI 3, na kterém stojí stále větší část systémového rozhraní a nižší spotřebu mají přinést zásahy do komponent Chromium a WebView2. Ty se ve Windows používají k zobrazování webového obsahu uvnitř systémových aplikací.
+Microsoft už pracuje na rychlejším spouštění systémových aplikací a plynulejším chodu nabídky Start. Úpravy se týkají také Průzkumníku souborů, který je terčem dlouhodobé a oprávněné kritiky. Jeho načítání je především při aktivní synchronizaci s OneDrive ostudně pomalé.
+Nepochopitelné Surfacy
+Microsoft začíná o použitelnosti s 8GB RAM hovořit poté, co vyšly nové modely Surface Pro 12" a 13", jejichž základní varianty mají právě 8 GB operační paměti. Windows 11 je na takové kapacitě použitelný pro velmi nenáročnou kancelářskou práci, kdy velkou část systémových prostředků spotřebuje právě Windows 11 a jakákoliv náročnější aplikace znamená časté swapování. Není příliš pochopitelné, proč Microsoft nejdříve vydal nové modely Surface (navíc s označením Pro) s konfigurací, o které sám ví, že není dobře použitelná ještě před optimalizačními aktualizacemi.
+Až samotné updaty ale ukážou, zda se Microsoftu snížení systémových režií povede. Prozatím chybí přesnější detaily i samotný harmonogram aktualizací.
+Zdroj: Windows Central

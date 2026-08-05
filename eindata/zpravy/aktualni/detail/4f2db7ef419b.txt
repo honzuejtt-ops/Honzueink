@@ -1,0 +1,8 @@
+Majitele některých Android telefonů čekalo o víkendu nepříjemné překvapení. Po aktualizaci Google Play Services totiž na vybraných zařízeních přestaly fungovat bezkontaktní platby skrze Google Wallet, přestože aplikace dál zobrazovala uložené karty a na první pohled nehlásila žádnou chybu.
+Problém tentokrát nebyl na straně koncového zařízení, nýbrž u samotného Googlu, který NFC platby těmto zařízením jedním příkazem jednoduše odstřihl.
+Google může rozhodnout, zda telefonem zaplatíte
+Podle analýzy uživatelů a vývojářů z komunit XDA a Redditu nešlo o běžnou chybu aplikace. Google Play Services totiž dokáže rozpoznat, že telefon používá čínskou variantu firmwaru, a následně mu deaktivuje komponentu HCE (Host Card Emulation) zajišťující bezkontaktní platby.
+Problém se tak dotkl majitelů telefonů čínských značek jako Xiaomi, Vivo, Oppo nebo OnePlus, kteří si pořídili model určený původně pro čínský trh, například prostřednictvím eBay nebo jiných evropských tržišť. Po automatické aktualizaci Google Play Services, která probíhá na pozadí bez jakéhokoliv zásahu uživatele, jejich telefony náhle přišly o možnost platit přes NFC.
+Nakonec se vše vyřešilo, jelikož se ukázalo, že šlo o chybu na straně Googlu. Ten do běžného distribučního kanálu omylem vypustil beta verzi určenou jen pro omezený okruh testerů.
+Celá situace je však dobré připomenutí toho, že ani špičkový hardware neznamená úplnou kontrolu nad koupeným zařízením. Pokud je telefon závislý na službách velkých společností, může jediná aktualizace změnit fungování prakticky přes noc.
+zdroj: Notebookcheck, Reddit, XDA forum

@@ -1,0 +1,197 @@
+Na úvodní článek o CIO (Central Input/Output), jenž tvoří nedílnou a možná i nejdůležitější součást operačního systému osmibitových domácích mikropočítačů Atari, dnes navážeme. Nejdříve si ukážeme, jak se volají operace OPEN a CLOSE z assembleru (prozatím jsme si je ukazovali v Atari BASICu), dále se budeme zabývat zpočátku možná poněkud záhadným příkazem XIO (lze jím realizovat všechny speciální operace, které zařízení podporuje) a ve třetí části dnešního článku si, prozatím alespoň ve stručnosti, popíšeme tabulku nazvanou HATABS (Handler Address Table).
+Je to velmi jednoduchá, ovšem o to užitečnější tabulka, díky které je možné do operačního systému zaregistrovat nová zařízení se zvoleným jménem i s libovolnými operacemi. Jakmile je tabulka naplněna (resp. doplněna) o nové zařízení a do paměti jsou nahrány jeho ovladače (ony handlery), může prakticky jakýkoli program začít toto zařízení používat.
+Právě díky konceptu kanálů, k nim přiřazených IOCB (Input-Output Control Block) a HATABS je operační systém osmibitových Atari rozšiřitelný a vlastně i poměrně modulární.
+Otevření kanálu pro zápis, zápis jednoho bajtu a uzavření kanálu
+Připomeňme si, jakým způsobem jsme se zařízeními a kanály pracovali v Atari BASICu. V následujícím programu je nejdříve pro jistotu uzavřen kanál #4 (pokud by byl předtím nechán otevřený, což se může stát – stisk klávesy BREAK atd.). Následně je tento kanál (znovu) otevřen, a to v režimu zápisu (konstanta 8 v příkazu OPEN). Jméno zařízení je nastaveno na H:test.txt, což znamená zařízení H: (zápis na souborový systém v emulátoru) se jménem souboru. Další operace je jednoduchá – provádíme zde zápis jediného bajtu s kódem 42 a následně je čtvrtý kanál (znovu) uzavřen:
+10 REM Zapis nekolika hodnot
+11 REM na disk namapovany emulatorem.
+20 REM
+21 REM Pro jistotu zavreme kanal
+22 REM pred jeho pouzitim
+22 CLOSE #4
+30 REM Otevreme kanal pro zapis
+31 OPEN #4, 8, 0, "H:test.txt"
+40 REM Provedeni zapisu jednoho znaku
+41 PUT #4, 42
+50 REM Zavreme kanal
+51 CLOSE #4
+Tento program si postupně přepíšeme do assembleru, což vlastně znamená, že musíme implementovat či alespoň napodobit příkazy OPEN, CLOSE a PUT. Na začátku použiji pouze kostru programu, která sice bude bez problémů přeložitelná, ale nebude provádět žádné vstupně-výstupní operace, protože příslušné podprogramy (subrutiny) obsahují pouze instrukci pro návrat z podprogramu (rts):
+.include "atari.inc"
+ 
+.CODE
+ 
+ 
+ 
+; ---------------------------------------------------------------------
+; hlavní program
+; ---------------------------------------------------------------------
+.proc main
+        jsr CLOSE_CHANNEL_4
+        jsr OPEN_CHANNEL_4_AS_H
+        jsr WRITE_BYTE_CHANNEL_4
+        jsr CLOSE_CHANNEL_4
+loop:
+        jmp loop                ; program vlastně nice nedělá - jen cyklí!
+.endproc
+ 
+ 
+ 
+; ---------------------------------------------------------------------
+; uzavření kanálu číslo 4
+; ---------------------------------------------------------------------
+.proc CLOSE_CHANNEL_4
+        rts                     ; návrat ze subrutiny
+.endproc
+ 
+ 
+ 
+; ---------------------------------------------------------------------
+; otevření kanálu číslo 4 v režimu zápisu na zařízení H:test.txt
+; ---------------------------------------------------------------------
+.proc OPEN_CHANNEL_4_AS_H
+        rts                     ; návrat ze subrutiny
+.endproc
+ 
+ 
+ 
+; ---------------------------------------------------------------------
+; zápis jednoho znaku do kanálu číslo 4
+; ---------------------------------------------------------------------
+.proc WRITE_BYTE_CHANNEL_4
+        rts                     ; návrat ze subrutiny
+.endproc
+ 
+end:
+ 
+ 
+.segment "EXEHDR"
+.word   $ffff                   ; uvodni sekvence bajtu v souboru XEX
+.word   main                    ; zacatek kodoveho segmentu
+.word   end - 1                 ; konec kodoveho segmentu
+ 
+ 
+.segment "AUTOSTRT"             ; segment s pocatecni adresou
+.word   RUNAD                   ; naplni se pouze adresy RUNAD a RUNAD+1
+.word   RUNAD+1
+.word   main                    ; adresa vstupniho bodu do programu
+ 
+; finito
+Realizace operace uzavření kanálu v assembleru
+Nejjednodušší je realizace subrutiny CLOSE_CHANNEL_4. V této subrutině budeme přes CIO volat příkaz CLOSE, který nevyžaduje žádné další parametry. Nejdříve ovšem nadefinujeme offset pro kanál číslo #4, který budeme používat:
+IOCB4 = $40              ; offset odvozený od čísla IOCB kanálu (nutno násobit šestnácti)
+Samotná realizace subrutiny CLOSE_CHANNEL_4 je dosti přímočará. Adresování je realizováno přes index registr X, což je dobře, protože v systémové subrutině CIO je hodnota tohoto registru použita pro volbu kanálu, kterého se příkaz týká:
+; ---------------------------------------------------------------------
+; uzavření kanálu číslo 4
+; ---------------------------------------------------------------------
+.proc CLOSE_CHANNEL_4
+        ldx #IOCB4              ; offset odvozený od čísla IOCB kanálu
+        lda #CLOSE              ; prováděná operace
+        sta ICCOM, x            ; zápis prováděné operace do bloku IOCB
+        jsr CIOV                ; zavolání rutiny pro CIO
+        rts                     ; návrat ze subrutiny
+.endproc
+Realizace operace otevření kanálu v assembleru
+Operace pro otevření kanálu je nepatrně komplikovanější, protože vyžaduje zadání několika parametrů (zapisovaných pochopitelně do IOCB). Je nutné specifikovat jméno zařízení a popř. i cestu k souboru. Jedná se o řetězec ukončený nulou, který v assembleru nadefinujeme následujícím způsobem:
+; jméno zařízení (+ jméno souboru) ukončené nulou
+device_name: .byte "H:TEST.TXT", 0
+Adresa tohoto řetězce se zapíše do ICBAH+ICBAL:
+; specifikace jména zařízení + jména souboru (16bitový ukazatel)
+lda #<device_name
+sta ICBAL, x
+lda #>device_name
+sta ICBAH, x
+Požadovaný režim otevření (čtení, zápis, čtení+zápis, připojení) se zapisuje do ICAX1. V hlavičkovém souboru atari.inc je definována vhodná konstanta OPNOT (zápis):
+lda #OPNOT              ; režim otevření: zápis (odpovídá druhému parametru příkazu OPEN v BASICu)
+sta ICAX1, x
+Celá subrutina pro otevření kanálu tedy může vypadat následovně:
+; ---------------------------------------------------------------------
+; otevření kanálu číslo 4 v režimu zápisu na zařízení H:test.txt
+; ---------------------------------------------------------------------
+.proc OPEN_CHANNEL_4_AS_H
+        ldx #IOCB4              ; offset odvozený od čísla IOCB kanálu
+        lda #OPEN               ; prováděná operace
+        sta ICCOM, x            ; zápis prováděné operace do bloku IOCB
+ 
+        ; specifikace jména zařízení + jména souboru (16bitový ukazatel)
+        lda #<device_name
+        sta ICBAL, x
+        lda #>device_name
+        sta ICBAH, x
+ 
+        lda #OPNOT              ; režim otevření: zápis (odpovídá druhému parametru příkazu OPEN v BASICu)
+        sta ICAX1, x
+        lda #0                  ; odpovídá třetímu parametru příkazu OPEN v BASICu
+        sta ICAX2, x
+ 
+        jsr CIOV                ; zavolání rutiny pro CIO
+ 
+        rts                     ; návrat ze subrutiny
+.endproc
+Realizace operace pro zápis jednoho znaku do zvoleného kanálu
+Zbývá nám realizace poslední operace WRITE_BYTE_CHANNEL_4. Zde se nejedná o žádnou novinku, protože zápis na zařízení jsme si již popsali v předchozím článku. V tomto případě musíme nastavit adresu zapisovaného bufferu (ICBAH+ICBAL) a do ICBLH+ICBLL uložíme hodnotu 1, protože do zařízení pošleme jediný znak:
+; ---------------------------------------------------------------------
+; zápis jednoho znaku do kanálu číslo 4
+; ---------------------------------------------------------------------
+.proc WRITE_BYTE_CHANNEL_4
+        ldx #IOCB4              ; offset odvozený od čísla IOCB kanálu
+        lda #PUTCHR             ; prováděná operace
+        sta ICCOM, x            ; zápis prováděné operace do bloku IOCB
+ 
+        ; adresa zapisovaného bloku
+        lda #<char_to_put
+        sta ICBAL, x
+        lda #>char_to_put
+        sta ICBAH, x
+ 
+        ; nastavení počtu zapisovaných bajtů
+        lda #1
+        sta ICBLL, x
+        lda #0
+        sta ICBLH, x
+ 
+        jsr CIOV                ; zavolání rutiny pro CIO
+        rts                     ; návrat ze subrutiny
+.endproc
+Úplný zdrojový kód dnešního prvního demonstračního příkladu
+Pro úplnost si ukažme úplný zdrojový kód dnešního prvního demonstračního příkladu, který po svém překladu a spuštění vytvoří na zařízení se jménem H: nový soubor nazvaný TEST.TXT a zapíše do něj jeden bajt. Samotný zdrojový kód je sice relativně dlouhý, ale program má po překladu velikost jen 112 bajtů, tedy necelou polovinu jedné stránky paměti (a mohl být ještě kratší):
+.include "atari.inc"
+ 
+.CODE
+ 
+IOCB4 = $40              ; offset odvozený od čísla IOCB kanálu (nutno násobit šestnácti)
+ 
+ 
+ 
+; ---------------------------------------------------------------------
+; hlavní program
+; ---------------------------------------------------------------------
+.proc main
+        jsr CLOSE_CHANNEL_4
+        jsr OPEN_CHANNEL_4_AS_H
+        jsr WRITE_BYTE_CHANNEL_4
+        jsr CLOSE_CHANNEL_4
+loop:
+        jmp loop                ; program vlastně nice nedělá - jen cyklí!
+.endproc
+ 
+ 
+ 
+; ---------------------------------------------------------------------
+; uzavření kanálu číslo 4
+; ---------------------------------------------------------------------
+.proc CLOSE_CHANNEL_4
+        ldx #IOCB4              ; offset odvozený od čísla IOCB kanálu
+        lda #CLOSE              ; prováděná operace
+        sta ICCOM, x            ; zápis prováděné operace do bloku IOCB
+        jsr CIOV                ; zavolání rutiny pro CIO
+        rts                     ; návrat ze subrutiny
+.endproc
+ 
+ 
+ 
+; ---------------------------------------------------------------------
+; otevření kanálu číslo 4 v režimu zápisu na zařízení H:test.txt
+; ---------------------------------------------------------------------
+.proc OPEN_CHANNEL_4_AS_H
+        ldx #IOCB4              ; of...
+(Pokracovani na webu)

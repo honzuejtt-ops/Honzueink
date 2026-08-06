@@ -1,3 +1,17 @@
+|T|Nový web Smrdíme odhaluje ostudu pražské MHD. V reálném čase počítá tramvaje bez klimatizace|D|06.8. 09:19|P|Web Smrdime.cz v reálném čase ukazuje, kolik pražských tramvají jezdí bez klimatizace, a upozorňuje na dlouhodobě neřešený problém během letních veder...|X|Kryštof Korb spustil webovou stránku Smrdime.cz, která poukazuje na dlouholetou ostudu Dopravního podniku hlavního města Prahy a samotného vedení metropole v neschopnosti zajistit klimatizaci do vozidel městské hromadné dopravy. Tento neduh je znatelný hlavně v probíhajících dnech s teplotami blížícími se 40 stupňům Celsia. Nejde jen o pohodlí, ale také zdraví některých jedinců.
+Smrdíme ukazuje aktuální počet pražských tramvají v přepravě, které nemají klimatizaci. V době psaní této zprávičky je podle serveru Lupa.cz v Praze 27 stupňů Celsia a v hlavním městě jezdí 158 tramvají bez klimatizace, což je 71 procent z celkových 223 tramvají. Zároveň je na tratích 65 ze všech 147 klimatizovaných tramvají. Čísla se neustále aktualizují a mění.
+Autor službu vytvořil pomocí nástroje Claude Code od Anthropicu. Data jsou čerpána přes aplikační rozhraní (API) služeb Golemio a Open-Meteo. První z nich je Prahou provozovaná platforma pro open data, druhá poskytuje přístup k údajům o počasí.
+Autor zároveň projekt umístil na GitHub, takže je možné se zapojit do dalšího rozvoje. Jako technologický stack se používají Next.js, React 19, TypeScript, Cloudflare Workers a další. Službu lze rozjet i lokálně.
+zdroj: Lupa.cz|E|
+|T|Polovací stůl tam, kde je málo místa. Tenhle má na šířku jen 88 cm a stojí jen 2100 Kč|D|06.8. 08:45|P|Elektricky polohovatelný stůl Di volio Barga stojí jen 2100 Kč. • Má i pracovní desku, fyzická tlačítka, displej a držák na sluchátka. • Díky šířce je...|X|Elektricky polohovatelný stůl Di volio Barga stojí jen 2100 Kč. • Má i pracovní desku, fyzická tlačítka, displej a držák na sluchátka. • Díky šířce jen 88 cm se hodí i do menších prostor.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Revoluce bez čekání. Snímače LOFIC dohánějí drahé bezzrcadlovky, už se objevují v prvních mobilech a přenosných kamerách|D|06.8. 07:45|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Cendrova CDN77 vyrostla na pět miliard a zakořenila mezi největšími hráči světa|D|06.8. 06:45|P|Česká firma CDN77 předstihla v oboru sítí CDN i Google Cloud, tržby loni vzrostly na 218 milionů dolarů • . • Firma denně přenese 430 petabajtů videa ...|X|Česká firma CDN77 předstihla v oboru sítí CDN i Google Cloud, tržby loni vzrostly na 218 milionů dolarů • . • Firma denně přenese 430 petabajtů videa pro zákazníky jako TikTok nebo streamovací služba Rakuten. • Za pět let se tržby firmy zvýšily o 37 procent ročně, podnik přitom funguje bez ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Klasickému zelenému nočnímu vidění odzvonilo. Přichází technologie, která zobrazuje infračervený svět v barvách|D|06.8. 05:45|P|Čínští vědci vyvinuli barevné noční vidění fungující pomocí kvantových teček • Nová technologie převádí neviditelné infračervené záření na barevné spe...|X|Čínští vědci vyvinuli barevné noční vidění fungující pomocí kvantových teček • Nová technologie převádí neviditelné infračervené záření na barevné spektrum • Brýle zatím fungují v laboratoři a vyžadují vyřešení toxicity těžkých kovů
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|

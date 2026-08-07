@@ -1,0 +1,177 @@
+EndeavourOS používá aktualizační metodu rolling release, která má své příznivce i odpůrce. Zkoušel jsem i distribuci Manjaro, tu se mi ale k použitelnosti rozchodit nepodařilo, byly problémy s náhodným vypadáváním obou síťových rozhraní při bootu a s náhodně posunutým časem o několik let zpět, což vedlo i k selhávání certifikátů při aktualizaci systému a prohlížení webu.
+Důvod přechodu na EndeavourOS
+Na EndeavourOS jsem přešel, protože Raspberry Pi OS (Debian) nepodporuje update na vyšší major verzi a 33 dní poté, co byla chyba Copy Fail opravena v linuxovém jádře, 5 dní po zveřejnění exploitu a 4 dny po varování CISA, že se aktivně zneužívá v terénu, měl stále tři roky staré jádro s touto chybou, přestože jsem ho aktualizoval a bezpečnostní záplaty měly být ještě čtyři měsíce: [1], [2].
+EndeavourOS podporuje aktualizaci vždy a Copy Fail opravenou měl.
+Instalace s chybou
+Na stránce pro procesor ARM je ke stažení soubor v tabulce v řádku „Raspberry Pi 4b“. Rozbalený soubor jsem zapsal od začátku fyzického zařízení SD karty a z té nabootoval.
+Instalátor nesprávně označil zvolené uživatelské jméno zelenou fajfkou jako přípustné, ale instalace na konci selhala s matoucí falešnou chybou. Instalátor totiž netestoval, zda jméno nekoliduje se jménem systémové skupiny v /etc/group. Uživatel to nemůže předem testovat, protože instalátor má jiný /etc/group než výsledný systém. Řešil jsem to instalací znovu a zvolením uživatelského jména s přidanou číslicí 2 na konci.
+Desktopové prostředí jsem zvolil Xfce. Zdá se mi, že spotřebovává nejméně RAM a CPU.
+Oprava periodického zamrzání
+Periodické zamrzání Wi-Fi
+Defektem je periodické zamrzání na několik sekund každých několik sekund. Zřejmě způsobeno správou napájení u Wi-Fi a nastává synchronně s aktualizací seznamu okolních bezdrátových sítí. Ani vypnutí správy problém zcela nevyřešilo. Oprava zablokuje Wi-Fi. HDMI budič Raspberry Pi stejně při určitých nastaveních hodin ruší vlastní Wi-Fi.
+Není to stíněním kabelu, protože má 99% ztrátu paketů, i když je telefon v režimu hot-spot položen přímo na anténu Raspberry Pi. Kabel HDMI je mnohonásobně dál, navíc by soutěžil průsak HDMI stínění s úmyslně optimalizovanou vysílací anténou telefonu. Místo Wi-Fi používám 1Gbps ethernet po měděném kabelu, který funguje spolehlivě.
+Postup opravy
+V /boot/config.txt  nastavíme:
+dtoverlay=disable-wifi
+Zamrzání při zápisu na SD kartu
+Systém při zápisu na SD kartu náhodně zamrzá až na 2 minuty 20 sekund. Je to způsobeno plánovačem I/O a zejména výchozí nastavenou maximální délkou zápisového požadavku jádra na SD kartu 4 MiB.
+Reálná zápisová rychlost SD karty klesá až na 30 kB/s, což odpovídá době provedení požadavku 140 sekund. Během tohoto požadavku jádro nevyšle čtecí požadavek ani například na stránku strojového kódu příkazu top. Jádro neupravuje parametry I/O zařízení podle jeho skutečného výkonu, ani nenastavuje prakticky použitelnou výchozí hodnotu v závislosti na typu zařízení.
+Postup opravy
+Nejdříve do /usr/local/bin/set_scheds.sh dáme:
+#!/bin/bash
+echo 128 > /sys/block/mmcblk0/queue/max_sectors_kb
+echo bfq > /sys/block/mmcblk0/queue/scheduler
+{ echo bfq > /sys/block/sda/queue/scheduler;} 2>/dev/null
+{ echo bfq > /sys/block/sdb/queue/scheduler;} 2>/dev/null
+exit 0
+Pak do /etc/systemd/system/set_scheds.service dáme:
+[Unit]
+Description=Set Schedulers
+After=sysinit.target
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/set_scheds.sh
+RemainAfterExit=yes
+[Install]
+WantedBy=multi-user.target
+Nakonec provedeme:
+sudo chmod a+x /usr/local/bin/set_scheds.sh
+sudo systemctl daemon-reload
+sudo systemctl enable set_scheds.service
+sudo systemctl start set_scheds.service
+Zadrhávání terminálu
+Terminál se zadrhává ve výchozím emulátoru xfce4-terminal  nebo lxterminal  i při editaci v editoru  vi.
+Postup obejití
+Používám gnome-terminal jako alternativu.
+Oprava pomalosti
+Nevhodné zahazování stránek
+Defektem je pomalost a zasekávání – jádro zahazuje důležité stránky se strojovým kódem, které musí znovu natahovat z SD karty a prioritizuje RAM pro nedůležitou keš disku. Také zaplaví RAM nezapsanými daty a pak si náhle vzpomene, že je všechna bude zapisovat na SD kartu, jejíž zápisová rychlost někdy klesá až na 30 kB/s.
+Postup opravy
+Do /etc/sysctl.d/kernel_settings.conf jsem dal:
+vm.swappiness=20
+vm.dirty_expire_centisecs=1000
+vm.dirty_writeback_centisecs=200
+Pak jsem provedl:
+sudo systemcl restart systemd-sysctl.service
+sysctl -a
+Poslední příkaz pro kontrolu vypíše, zda se parametry jádra skutečně nastavily.
+Řízení rychlosti CPU
+Defektem je pomalost a zadrhávání, protože jádro při nárazových požadavcích na výkon CPU nechávalo procesory na pomalém kmitočtu.
+Postup opravy
+V /boot/cmdline.txt  jsem nastavil:
+cpufreq.default_governor:performance
+Do panelu vpravo nahoře jsem přidal applet CPU Frequency Monitor, který kontroluje že procesory neustále jedou na 1,5 GHz.
+Plýtvání životností SD karty
+Defektem je plýtvání životností SD karty neustálým zapisováním kvůli aktualizacím atime a ukládání dat do žurnálu.
+Postup opravy
+Zjistil jsem PARTUUID /dev/mmcblk0p2 pomocí:
+lsblk -O | less -S
+Pak jsem ho dal do /etc/fstab:
+UUID=00000000-0000-0000-0000-000000000000 / ext4 defaults,noatime,commit=15 0 1
+Poté jsem systém restartoval.
+Pomalost LibreOffice Calc
+LibreOffice Calc je nepoužitelně pomalý, po pohybu kurzorem překresluje obrazovku 5 až 30 sekund přesto, že 3 ze 4 procesorů a většina paměti jsou nepoužité a zobrazená je jen jednoduchá tabulka s texty, 683 řádky a 5 sloupci. Zátěž přepínání kontextů se zvýší z běžných 4,7 kHz na 8,9 kHz.
+Řešení
+Používám Gnumeric místo Libreoffice Calc s výjimkou konverze do formátu CSV.
+Pomalost MPV
+Video ve formátu 1080p H.264 30 FPS nestíhal přehrávač MPV zpracovávat, přestože používal grafickou akceleraci.
+Postup opravy
+V ~/.config/mpv/mpv.conf  jsem nastavil:
+vo=xv
+Zaplňování SD karty logy od systemd
+Tento defekt způsoboval, že systemd opotřebovával a zaplňoval SD kartu gigabajty zápisů logů a systém se při tom zadrhával.
+Postup opravy
+V /etc/systemd/journald.conf  jsem nastavil:
+Storage=none
+Seal=no
+Compress=48
+RateLimitBurst=40
+RateLimitIntervalSec=10s
+SystemMaxFileSize=4M
+SystemMaxUse=100M
+RuntimeMaxUse=50M
+Pak jsem provedl
+systemctl restart systemd-journald
+journalctl --disk-usage
+Poslední příkaz kontrolně vytiskne spotřebu diskového místa zmíněnými logy.
+Zadrhávání systému při prohlížení HEIC
+Defekt: při prohlížení fotografií ve formátu *.HEIC mi glycin-heif.thumbnailer často padal a systemd opotřebovával a zaplňoval SD kartu velkým množstvím core dumpů a systém se při tom zadrhával.
+Postup opravy
+V /etc/systemd/coredump.conf  jsem nastavil:
+Storage=none
+ProcessSizeMax=0
+Pak jsem provedl:
+sudo systemctl daemon-reload
+sudo systemctl mask systemd-coredump.socket
+sudo systemctl stop systemd-coredump.socket
+Následně jsem smazal obsah ve /var/lib/systemd/coredump.
+Oprava koktajícího a bublajícího zvuku
+Přepneme z Pipewire na Pulseaudio
+sudo pacman -S pulseaudio
+sudo pacman -R gst-plugin-pipewire pipewire-alsa
+Zablokujeme zbytky Pipewire
+Zablokujeme části Pipewire, které není možné odinstaloval kvůli závislostem:
+for a in "--global disable" "--global mask" stop; do
+for b in pipewire pipewire.socket wireplumber; do
+sudo systemctl $a $b
+done; done
+Oprava dalších problémů
+Obrazovka je někdy trvale černá
+Obrazovka je trvale černá, když se monitor zapne později než počítač. Problém nastává zejména u televizoru, který po připojení napětí začíná v režimu standby.
+Postup opravy
+Do souboru /boot/config.txt připíšeme:
+disable_fw_kms_setup=0
+force_hdmi_hotplug=1
+Transmission nepřijímá
+Program na legální stahování hudby a filmů pro osobní potřebu Transmission nepřijímá data přesto, že jsem nakonfiguroval port do trvalé konfigurace firewallu a ten pak restartoval.
+Postup opravy
+sudo systemctl disable --now firewalld
+Neprakticky velká konzolová písmena
+Defektem jsou neprakticky velká konzolová písmena, když se monitor zapne později jak počítač. Problém je to u televizoru, který po připojení napětí začíná v režimu standby.
+Postup opravy
+V souboru /boot/config.txt je třeba hodnoty 2 a 39 zaměnit za skupinu a rozlišení vhodné pro konkrétní monitor podle tabulky:
+hdmi_group=2
+hdmi_mode=39
+Tabulátor nedoplňuje jména souborů
+Defekt: doplňování stisknutím tabulátoru nefunguje na jménech obyčejných datových souborů.
+Postup opravy
+Odinstalujeme rozšíření shellu Bash pro chytré doplňování informací z mnoha zdrojů.
+sudo pacman -R bash-completion
+Obrácená barva pozadí Polari
+Defekt: klient Polari IRC Gnome má bílé pozadí, přestože je systém nastaven na tmavé.
+Postup opravy
+EndeavourOS → Settings → Appearance přepneme na jiný a zpět na Arc-Dark
+Bezpečnost
+Konzistence logů
+Zlepšíme konzistenci logů,fsck atd. lepším odhadem času po bootu:
+Postup vylepšení
+sudo pacman -S fake-hwclock
+Riziko instalace trojských koňů
+Instalátor Yay neoficiálních balíčků AUR umožňuje instalaci nedůvěryhodných balíků které obsahovaly trojské koně se vzdáleným přístupem: [1], [2], [3], [4].
+Postup opravy
+sudo pacman -R yay
+Vytisknutí balíčků z Yay/AUR
+Přesvědčíme se, že jsme žádné potenciálně škodlivé balíčky nenainstalovali:
+pacman -Qm
+Fsck vždy
+Zapneme, aby se fsck dělal vždy, nejen když nebyl souborový systém správně odmontován. V /boot/cmdline.txt  nastavíme:
+fsck.mode=force
+Snížení rizika poškození dat
+Snížíme riziko poškozování dat po pádech jádra. V souboru /etc/fstab dáme poslední číslo na každé řádce u kořenového souborového systému na hodnotu 1 a u externích disků 2, aby probíhala kontrola.
+Výpis výsledků fsck
+Takto pro kontrolu vypíšeme výsledky fsck při bootu:
+SYSTEMD_COLORS=1 journalctl -u "systemd-fsck*"|less -R
+Konzistence databáze balíčků
+Zkontrolujeme, zda je databáze balíčků konzistentní:
+pacman -Dk
+Kontrola hašů systému
+Zkontrolujeme, zda nainstalované soubory nejsou pozměněné proti oficiálnímu kontrolnímu součtu z balíčků:
+paccheck --sha256sum
+Další tipy na nástroje
+Přídavný software, který může urychlit nebo vylepšit Raspberry Pi 4:
+- ffmpeg-rpi
+- libvlc-rpi
+- rpi4-eeprom
+- vlc-rpi
+Pro údržbu systému se hodí zn...
+(Pokracovani na webu)

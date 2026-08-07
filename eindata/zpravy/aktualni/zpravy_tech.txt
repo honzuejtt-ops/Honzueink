@@ -1,4 +1,209 @@
-|T|Chrome kašle na design Windows 11. To stejné ale dělá Microsoft s Edgem|D|06.8. 14:45|P|Google z Chromu 151 odstranil experimentální předvolbu. • Aktivovala materiál Mica v záhlaví okna. • Microsoft na designový styl Windows 11 loni rezig...|X|Google z Chromu 151 odstranil experimentální předvolbu. • Aktivovala materiál Mica v záhlaví okna. • Microsoft na designový styl Windows 11 loni rezignoval také.
+|T|EndeavourOS na Raspberry Pi 4B 4 GB: doladění systému k použitelnosti|D|06.8. 22:00|P|Přestože EndeavourOS Linux oficiálně podporuje Raspberry Pi 4B, po instalaci počítač každých několik sekund na několik sekund tuhnul. Musel jsem prové...|X|EndeavourOS používá aktualizační metodu rolling release, která má své příznivce i odpůrce. Zkoušel jsem i distribuci Manjaro, tu se mi ale k použitelnosti rozchodit nepodařilo, byly problémy s náhodným vypadáváním obou síťových rozhraní při bootu a s náhodně posunutým časem o několik let zpět, což vedlo i k selhávání certifikátů při aktualizaci systému a prohlížení webu.
+Důvod přechodu na EndeavourOS
+Na EndeavourOS jsem přešel, protože Raspberry Pi OS (Debian) nepodporuje update na vyšší major verzi a 33 dní poté, co byla chyba Copy Fail opravena v linuxovém jádře, 5 dní po zveřejnění exploitu a 4 dny po varování CISA, že se aktivně zneužívá v terénu, měl stále tři roky staré jádro s touto chybou, přestože jsem ho aktualizoval a bezpečnostní záplaty měly být ještě čtyři měsíce: [1], [2].
+EndeavourOS podporuje aktualizaci vždy a Copy Fail opravenou měl.
+Instalace s chybou
+Na stránce pro procesor ARM je ke stažení soubor v tabulce v řádku „Raspberry Pi 4b“. Rozbalený soubor jsem zapsal od začátku fyzického zařízení SD karty a z té nabootoval.
+Instalátor nesprávně označil zvolené uživatelské jméno zelenou fajfkou jako přípustné, ale instalace na konci selhala s matoucí falešnou chybou. Instalátor totiž netestoval, zda jméno nekoliduje se jménem systémové skupiny v /etc/group. Uživatel to nemůže předem testovat, protože instalátor má jiný /etc/group než výsledný systém. Řešil jsem to instalací znovu a zvolením uživatelského jména s přidanou číslicí 2 na konci.
+Desktopové prostředí jsem zvolil Xfce. Zdá se mi, že spotřebovává nejméně RAM a CPU.
+Oprava periodického zamrzání
+Periodické zamrzání Wi-Fi
+Defektem je periodické zamrzání na několik sekund každých několik sekund. Zřejmě způsobeno správou napájení u Wi-Fi a nastává synchronně s aktualizací seznamu okolních bezdrátových sítí. Ani vypnutí správy problém zcela nevyřešilo. Oprava zablokuje Wi-Fi. HDMI budič Raspberry Pi stejně při určitých nastaveních hodin ruší vlastní Wi-Fi.
+Není to stíněním kabelu, protože má 99% ztrátu paketů, i když je telefon v režimu hot-spot položen přímo na anténu Raspberry Pi. Kabel HDMI je mnohonásobně dál, navíc by soutěžil průsak HDMI stínění s úmyslně optimalizovanou vysílací anténou telefonu. Místo Wi-Fi používám 1Gbps ethernet po měděném kabelu, který funguje spolehlivě.
+Postup opravy
+V /boot/config.txt  nastavíme:
+dtoverlay=disable-wifi
+Zamrzání při zápisu na SD kartu
+Systém při zápisu na SD kartu náhodně zamrzá až na 2 minuty 20 sekund. Je to způsobeno plánovačem I/O a zejména výchozí nastavenou maximální délkou zápisového požadavku jádra na SD kartu 4 MiB.
+Reálná zápisová rychlost SD karty klesá až na 30 kB/s, což odpovídá době provedení požadavku 140 sekund. Během tohoto požadavku jádro nevyšle čtecí požadavek ani například na stránku strojového kódu příkazu top. Jádro neupravuje parametry I/O zařízení podle jeho skutečného výkonu, ani nenastavuje prakticky použitelnou výchozí hodnotu v závislosti na typu zařízení.
+Postup opravy
+Nejdříve do /usr/local/bin/set_scheds.sh dáme:
+#!/bin/bash
+echo 128 > /sys/block/mmcblk0/queue/max_sectors_kb
+echo bfq > /sys/block/mmcblk0/queue/scheduler
+{ echo bfq > /sys/block/sda/queue/scheduler;} 2>/dev/null
+{ echo bfq > /sys/block/sdb/queue/scheduler;} 2>/dev/null
+exit 0
+Pak do /etc/systemd/system/set_scheds.service dáme:
+[Unit]
+Description=Set Schedulers
+After=sysinit.target
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/set_scheds.sh
+RemainAfterExit=yes
+[Install]
+WantedBy=multi-user.target
+Nakonec provedeme:
+sudo chmod a+x /usr/local/bin/set_scheds.sh
+sudo systemctl daemon-reload
+sudo systemctl enable set_scheds.service
+sudo systemctl start set_scheds.service
+Zadrhávání terminálu
+Terminál se zadrhává ve výchozím emulátoru xfce4-terminal  nebo lxterminal  i při editaci v editoru  vi.
+Postup obejití
+Používám gnome-terminal jako alternativu.
+Oprava pomalosti
+Nevhodné zahazování stránek
+Defektem je pomalost a zasekávání – jádro zahazuje důležité stránky se strojovým kódem, které musí znovu natahovat z SD karty a prioritizuje RAM pro nedůležitou keš disku. Také zaplaví RAM nezapsanými daty a pak si náhle vzpomene, že je všechna bude zapisovat na SD kartu, jejíž zápisová rychlost někdy klesá až na 30 kB/s.
+Postup opravy
+Do /etc/sysctl.d/kernel_settings.conf jsem dal:
+vm.swappiness=20
+vm.dirty_expire_centisecs=1000
+vm.dirty_writeback_centisecs=200
+Pak jsem provedl:
+sudo systemcl restart systemd-sysctl.service
+sysctl -a
+Poslední příkaz pro kontrolu vypíše, zda se parametry jádra skutečně nastavily.
+Řízení rychlosti CPU
+Defektem je pomalost a zadrhávání, protože jádro při nárazových požadavcích na výkon CPU nechávalo procesory na pomalém kmitočtu.
+Postup opravy
+V /boot/cmdline.txt  jsem nastavil:
+cpufreq.default_governor:performance
+Do panelu vpravo nahoře jsem přidal applet CPU Frequency Monitor, který kontroluje že procesory neustále jedou na 1,5 GHz.
+Plýtvání životností SD karty
+Defektem je plýtvání životností SD karty neustálým zapisováním kvůli aktualizacím atime a ukládání dat do žurnálu.
+Postup opravy
+Zjistil jsem PARTUUID /dev/mmcblk0p2 pomocí:
+lsblk -O | less -S
+Pak jsem ho dal do /etc/fstab:
+UUID=00000000-0000-0000-0000-000000000000 / ext4 defaults,noatime,commit=15 0 1
+Poté jsem systém restartoval.
+Pomalost LibreOffice Calc
+LibreOffice Calc je nepoužitelně pomalý, po pohybu kurzorem překresluje obrazovku 5 až 30 sekund přesto, že 3 ze 4 procesorů a většina paměti jsou nepoužité a zobrazená je jen jednoduchá tabulka s texty, 683 řádky a 5 sloupci. Zátěž přepínání kontextů se zvýší z běžných 4,7 kHz na 8,9 kHz.
+Řešení
+Používám Gnumeric místo Libreoffice Calc s výjimkou konverze do formátu CSV.
+Pomalost MPV
+Video ve formátu 1080p H.264 30 FPS nestíhal přehrávač MPV zpracovávat, přestože používal grafickou akceleraci.
+Postup opravy
+V ~/.config/mpv/mpv.conf  jsem nastavil:
+vo=xv
+Zaplňování SD karty logy od systemd
+Tento defekt způsoboval, že systemd opotřebovával a zaplňoval SD kartu gigabajty zápisů logů a systém se při tom zadrhával.
+Postup opravy
+V /etc/systemd/journald.conf  jsem nastavil:
+Storage=none
+Seal=no
+Compress=48
+RateLimitBurst=40
+RateLimitIntervalSec=10s
+SystemMaxFileSize=4M
+SystemMaxUse=100M
+RuntimeMaxUse=50M
+Pak jsem provedl
+systemctl restart systemd-journald
+journalctl --disk-usage
+Poslední příkaz kontrolně vytiskne spotřebu diskového místa zmíněnými logy.
+Zadrhávání systému při prohlížení HEIC
+Defekt: při prohlížení fotografií ve formátu *.HEIC mi glycin-heif.thumbnailer často padal a systemd opotřebovával a zaplňoval SD kartu velkým množstvím core dumpů a systém se při tom zadrhával.
+Postup opravy
+V /etc/systemd/coredump.conf  jsem nastavil:
+Storage=none
+ProcessSizeMax=0
+Pak jsem provedl:
+sudo systemctl daemon-reload
+sudo systemctl mask systemd-coredump.socket
+sudo systemctl stop systemd-coredump.socket
+Následně jsem smazal obsah ve /var/lib/systemd/coredump.
+Oprava koktajícího a bublajícího zvuku
+Přepneme z Pipewire na Pulseaudio
+sudo pacman -S pulseaudio
+sudo pacman -R gst-plugin-pipewire pipewire-alsa
+Zablokujeme zbytky Pipewire
+Zablokujeme části Pipewire, které není možné odinstaloval kvůli závislostem:
+for a in "--global disable" "--global mask" stop; do
+for b in pipewire pipewire.socket wireplumber; do
+sudo systemctl $a $b
+done; done
+Oprava dalších problémů
+Obrazovka je někdy trvale černá
+Obrazovka je trvale černá, když se monitor zapne později než počítač. Problém nastává zejména u televizoru, který po připojení napětí začíná v režimu standby.
+Postup opravy
+Do souboru /boot/config.txt připíšeme:
+disable_fw_kms_setup=0
+force_hdmi_hotplug=1
+Transmission nepřijímá
+Program na legální stahování hudby a filmů pro osobní potřebu Transmission nepřijímá data přesto, že jsem nakonfiguroval port do trvalé konfigurace firewallu a ten pak restartoval.
+Postup opravy
+sudo systemctl disable --now firewalld
+Neprakticky velká konzolová písmena
+Defektem jsou neprakticky velká konzolová písmena, když se monitor zapne později jak počítač. Problém je to u televizoru, který po připojení napětí začíná v režimu standby.
+Postup opravy
+V souboru /boot/config.txt je třeba hodnoty 2 a 39 zaměnit za skupinu a rozlišení vhodné pro konkrétní monitor podle tabulky:
+hdmi_group=2
+hdmi_mode=39
+Tabulátor nedoplňuje jména souborů
+Defekt: doplňování stisknutím tabulátoru nefunguje na jménech obyčejných datových souborů.
+Postup opravy
+Odinstalujeme rozšíření shellu Bash pro chytré doplňování informací z mnoha zdrojů.
+sudo pacman -R bash-completion
+Obrácená barva pozadí Polari
+Defekt: klient Polari IRC Gnome má bílé pozadí, přestože je systém nastaven na tmavé.
+Postup opravy
+EndeavourOS → Settings → Appearance přepneme na jiný a zpět na Arc-Dark
+Bezpečnost
+Konzistence logů
+Zlepšíme konzistenci logů,fsck atd. lepším odhadem času po bootu:
+Postup vylepšení
+sudo pacman -S fake-hwclock
+Riziko instalace trojských koňů
+Instalátor Yay neoficiálních balíčků AUR umožňuje instalaci nedůvěryhodných balíků které obsahovaly trojské koně se vzdáleným přístupem: [1], [2], [3], [4].
+Postup opravy
+sudo pacman -R yay
+Vytisknutí balíčků z Yay/AUR
+Přesvědčíme se, že jsme žádné potenciálně škodlivé balíčky nenainstalovali:
+pacman -Qm
+Fsck vždy
+Zapneme, aby se fsck dělal vždy, nejen když nebyl souborový systém správně odmontován. V /boot/cmdline.txt  nastavíme:
+fsck.mode=force
+Snížení rizika poškození dat
+Snížíme riziko poškozování dat po pádech jádra. V souboru /etc/fstab dáme poslední číslo na každé řádce u kořenového souborového systému na hodnotu 1 a u externích disků 2, aby probíhala kontrola.
+Výpis výsledků fsck
+Takto pro kontrolu vypíšeme výsledky fsck při bootu:
+SYSTEMD_COLORS=1 journalctl -u "systemd-fsck*"|less -R
+Konzistence databáze balíčků
+Zkontrolujeme, zda je databáze balíčků konzistentní:
+pacman -Dk
+Kontrola hašů systému
+Zkontrolujeme, zda nainstalované soubory nejsou pozměněné proti oficiálnímu kontrolnímu součtu z balíčků:
+paccheck --sha256sum
+Další tipy na nástroje
+Přídavný software, který může urychlit nebo vylepšit Raspberry Pi 4:
+- ffmpeg-rpi
+- libvlc-rpi
+- rpi4-eeprom
+- vlc-rpi
+Pro údržbu systému se hodí zn...
+(Pokracovani na webu)|E||T|Prima na podzim vrátí Zrádce a Polabí. Odvysílá také Kriminálku Slapy|D|06.8. 17:57|P|Televize Prima postaví podzimní program na pokračování seriálů Polabí, Zákony vlka a Kriminálka Slapy (nový název seriálu Pod hladinou). Od září uvede...|X|Televize Prima postaví podzimní program na pokračování seriálů Polabí, Zákony vlka a Kriminálka Slapy (nový název seriálu Pod hladinou). Od září uvede třetí řadu reality hry Zrádci. Už 17. srpna v 6 hodin ráno začne vysílat stanice Prima Sport. Nové původní pořady dostane také streamovací služba Prima+.
+Hlavní podzimní schéma začne v posledním srpnovém týdnu. Polabí se vrátí 25. srpna, druhá řada Kriminálky Slapy o den později. Od 27. srpna bude Prima vysílat nové díly Ano, šéfe! a 29. srpna nasadí třetí řadu Zákonů vlka. Polabí, Ano, šéfe! a Zákony vlka nabídne Prima+ o týden dříve než lineární Prima. Celá druhá řada Kriminálky Slapy je v aplikaci dostupná už nyní.
+V Kriminálce Slapy se k dosavadnímu obsazení přidají Ivana Chýlková a Marek Němec. Osm nových dílů Zákonů vlka dějově naváže na návrat skutečného policisty, jehož identitu převzal hlavní hrdina.
+Třetí řada Zrádců bude mít dvanáct dílů. Natáčela se opět na hradě Křivoklát, pořadem provází Vojtěch Kotek a režisérem zůstal Markus Krug. Prima zahájila casting do třetí série bezprostředně po loňském finále. Přesné datum zářijové premiéry zatím neoznámila, Zrádcům ale zůstává jejich tradiční čas v neděli večer.
+Později na podzim televize uvede také pokračování dokumentárního projektu Farma Vojty Kotka a novou kriminálku Vraždy v Kutné Hoře. Eva Podzimková v ní ztvární vyšetřovatelku, která vedle policejních případů vychovává dvojčata.
+Nabídku zábavy doplní dvacátá řada Máme rádi Česko, Inkognito, Prostřeno! a Show Jana Krause. Soutěžící v Prostřeno! budou nově samostatně hodnotit vaření a atmosféru u stolu.
+Pro službu Prima+ vzniklo šestidílné psychologické drama My nejsme sekta, které se věnuje manipulaci a zneužívání důvěry. Osmidílný dokumentární cyklus Experti na vraždy rozebere skutečné kriminální případy s českými odborníky. Pokračovat bude také série z policejního prostředí Ve službě: Jménem zákona.
+Prima na tiskové konferenci uvedla, že Prima+ má aktuálně 333 tisíc předplatitelů. Letos v únoru informovala o více než 300 tisících uživatelů placených tarifů.
+Kanál Prima Sport oficiálně zahájí pravidelné vysílání 17. srpna v 6 hodin a naváže na končící Sporty TV. V programu budou přenosy druhé nejvyšší fotbalové Chance Národní Ligy, hokejové Maxa ligy, florbalové Livesport Superligy a světové série v plážovém volejbalu Beach Pro Tour. Stanice bude volně dostupná v celoplošném zemském vysílání DVB-T2 a zařadili ji také operátoři placené televize. Možnosti příjmu a technické parametry shrnuje samostatný přehled Lupy.
+Tematické stanice nabídnou především zahraniční seriály, filmy a dokumenty. Prima Cool nasadí jedenáctou řadu Futuramy, americký sitcom Duchové a animovaný seriál Belzebubové. Prima Zoom uvede cyklus Tajuplný svět zvuků s Davidem Attenboroughem a českou sérii Zapomenutí dobrodruzi českých dějin. Prima Show zařadí kromě zahraničních reality show také tuzemské Shopaholičky.
+CNN Prima News připravuje předvolební vysílání ke komunálním a senátním volbám. Od září chce vysílat nejméně dvě velké debaty týdně, profilové rozhovory s předsedy politických stran a hnutí a závěrečný týden superdebat. Volební centrum má nově využít také rozšířenou realitu.|E||T|Co dělat, když ztratíte mobil na dovolené? Je potřeba znát číslo IMEI a rychle zablokovat karty|D|06.8. 17:45|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Synology má „novou“ řadu NASů. Modely Neo+ lákají výkonem, SSD a vyměnitelnou RAM|D|06.8. 16:45|P|Největší výrobce domácích diskových polí představil novou řadu NASů označených jako Neo+. Slibují vysoký výkon za méně peněz. Ve skutečnosti ale série...|X|Největší výrobce domácích diskových polí představil novou řadu NASů označených jako Neo+. Slibují vysoký výkon za méně peněz. Ve skutečnosti ale série není tak úplně nová, jde jen o upravené verze DS Plus.
+
+Vyšly dvou-, čtyř-, pěti- a osmidiskové verze DS725neo+, DS925neo+, DS1525neo+ a DS1825neo+. ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Výrobci pamětí mají 8× vyšší tržby než před rokem. Kdo má největší tržní podíl, a kolik trhu už zabrala Čína?|D|06.8. 16:22|P|Máme statistiku ukazující, jak je trh pamětí DRAM, jejichž ceny kvůli expanzi umělé inteligence brutálně stouply, rozdělený mezi jednotlivé výrobce a ...|X|Výrobci pamětí mají bezprecedentní žně – AI boomem živená extrémní poptávka po čipech DRAM, na nichž jsou založené operační paměti všech možných počítačů a zařízení i paměti GPU, vyhnala jejich ceny za jediný rok na několikanásobky. Kdo tito výrobci pamětí DRAM jsou a jaký mají jednotlivé firmy teď podíl na tomto trhu, ukazuje aktuální statistika analytiků Counterpoint Research. Osvětluje také, jak velký kus trhu zabraly čínské čipy.
+Tržní podíly výrobců DRAM v Q2 2026
+Counterpoint Research zveřejnila průzkum ukazující tržní podíly výrobců pamětí DRAM v druhém kvartálu (tedy dubnu až červnu) roku 2026. Podle těch je na pozici největšího výrobce nyní Samsung, který drží 39 % tohoto trhu (počítáno na základě podílu na tržbách).
+Samsung má silnou pozici v „běžných“ pamětech (DDR5, LPDDR5X), ale přechodně se mu tolik nedařilo v pamětech HBM (Nvidia například jeho verze těchto pamětí dlouho nepoužívala). Teď zdá se tento skluz dohání a má už silnější pozici i v této oblasti, kde prodělala největší růst kvůli tomu, že právě tyto náročné a drahé paměti využívají různé akcelerátory AI. Samsung měl první pozici na trhu už před dvěma lety, ale loni (v Q2 2025) byl v čele SK Hynix právě kvůli náskoku v pamětech typu HBM.
+SK Hynix byl v druhém kvartále roku 2026 na druhé pozici, s podílem na tržbách 26 %. Pro tuto společnost je to meziročně značný propad, jak již bylo zmíněno, před rokem v Q2 2025 byla první s tržním podílem, jaký nyní drží Samsung (39 %). Nicméně to neznamená, že by firma neměla velký růst tržeb – kvartální tržby Hynixu za DRAM se meziročně víc než ztrojnásobily (nárůst o 214 %) kvůli tomu, jak se teď všechny paměti prodávají za mnohonásobně vyšší ceny. Hynix údajně stále má největší procento ze svých tržeb tvořené pamětí typu HBM. Prý má ale větší díly objednávek zafixován na dříve platné nižší ceny, protože firma začala uzavírat dlouhodobější kontrakty jako jedna z prvních a dříve, než Samsung a Micron – což se pak po velkém zdražení napříč trhem ukázalo jako nevýhoda.
+Třetím největším výrobcem a zatím posledním z velké trojky tradičních velkých výrobců DRAM je Micron. Píšeme „zatím“, protože jeho pozice s AI boomem dost posílila a v Q2 2026 se dostal na podíl na tržbách 25 %. Je tedy jen velmi těsně pod Hynixem a mohl by zanedlouho získat druhou pozici. Historicky přitom jeho podíl býval výrazně nižší. Micron je jediný z hráčů na trhu pocházející z USA. Jak Samsung, tak Hynix jsou jihokorejské společnosti.
+Jak je na tom Čína?
+Aktuálně se hodně diskutuje role čínských výrobců pamětí DRAM, zejména CXMT. Tato firma díky AI boomu má příležitost prorazit, ať už přímo prodejem AI firmám, nebo tím, že se na ní obracejí výrobci běžných počítačů a zařízení, kteří mají problémy získat paměti od velké trojky. Čínský dodavatel podle Counterpointu aktuálně má podíl na tržbách 7 %. Což není málo, ale zůstává o dost nižší než podíl velkých výrobců.
+Nicméně CXMT má teď unikátní příležitost výrazně rozšířit své výrobní kapacity a uzmout mnohem větší díl trhu s pamětí. Takže by se prý výhledově mohla dostat na úroveň prvních tří největších výrobců.
+Zdá se, že čínské paměti nejsou výrazně levnější alternativou proti výrobkům tří největších výrobců a firma logicky využívá vysokou poptávku k tomu, aby si také naúčtovala, co se jenom dá. Podle Counterpointu její tržby za paměti meziročně stouply o 716 % (tedy na osminásobek).
+Podobně údajně stouply také tržby menšího tchajwanského výrobce Nanya, která se schovává ve zbytkové kolonce „ostatní“ a je čtvrtou ze stále fungujících nečínských firem vyrábějících operační paměti. Nanya zaznamenala meziročně nárůst tržeb o 690 %. V jejím případě to nejspíš nebude nějakým velkým navýšením kapacit spuštěným během posledních 12 měsíců (byť je možné, že před rokem továrny firmy nejely naplno a nyní už ano), takže je to dobrá ilustrace toho, o kolik víc nyní výrobci počítačů a další velkoodběratelé platí za stejné operační paměti proti stavu před rokem.
+Zdroj: Counterpoint Research|E||T|30 filmů, které musíte vidět, dokud jste ještě na světě. Víme, kde si je můžete pustit online|D|06.8. 15:45|P|Vybrali jsme 30 jedinečných filmů napříč žánry a historií. Nabídnou to nejzajímavější ze světové i české filmové tvorby. Některé pobaví, jiné zasáhnou...|X|Vybrali jsme 30 jedinečných filmů napříč žánry a historií. Nabídnou to nejzajímavější ze světové i české filmové tvorby. Některé pobaví, jiné zasáhnou nebo přimějí přemýšlet – všechny by ale byla škoda během života minout.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Chrome kašle na design Windows 11. To stejné ale dělá Microsoft s Edgem|D|06.8. 14:45|P|Google z Chromu 151 odstranil experimentální předvolbu. • Aktivovala materiál Mica v záhlaví okna. • Microsoft na designový styl Windows 11 loni rezig...|X|Google z Chromu 151 odstranil experimentální předvolbu. • Aktivovala materiál Mica v záhlaví okna. • Microsoft na designový styl Windows 11 loni rezignoval také.
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Jako Microsoft 365, ale čtyřikrát levnější a z Česka. IceWarp nabízí kancelářské balíky a cloud od 34 korun|D|06.8. 14:06|P|Český IceWarp chce konkurovat gigantům jako Microsoft 365 a Google Workspace. Nově nabízí levnější tarify i pro běžné uživatele, kteří získají e-mail,...|X|IceWarp, který původně vznikl jako výkonný kancelářský nástroj pro firmy, se nyní zpřístupňuje i běžným uživatelům. Česká alternativa ke službám Microsoft 365 a Google Workspace nově nabízí tarify, které začínají na 34 korunách měsíčně.
 V ceně dostanete vlastní cloudové úložiště, e-mail s antivirem, práci s kancelářskými dokumenty či pořádání webinářů. A jako bonus 30 dnů zdarma na vyzkoušení.
@@ -38,7 +243,26 @@ Její výhodou je integrace nástrojů pro okamžité hraní většiny titulů z
 Největší výhodou je samozřejmě nižší cena ve srovnání s hotovou sestavou s Windows. Alza ale nezvolila cestu, kdy by vzala totožné železo a místo Windows na něj instalovala Linux, některé komponenty vylepšila. V nabídce se proto nachází dvě sestavy se shodnou cenou 42 tisíc, které nabízí zmíněnou kombinaci Ryzen 5 9600X a RX 9060 XT. V případě Windows je ale použita levnější mATX deska s čipsetem A620, zatímco u Linuxu je to plnotučná B650E. O něco dražší (a subjektivně hezčí) je i skříň, kdy se u sestavy s Bazzite dostalo na líbivý model Lian Li. Výkonnější je i zdroj (850 W vs. 750 W) a použitý chladič procesoru. U Linuxu je to velmi povedený celočerný Be quiet! PURE ROCK PRO 3.
 Sestavy s Linuxem jsou výbornou volbou pro hráče, kteří chtějí experimentovat s alternativním systémem a zároveň se necítí na instalaci svépomocí. Pokud Linux nebude vyhovovat, vždy existuje možnost systém přeinstalovat, případně se vydat cestou dual bootu (nebo si nainstalovat SteamOS)
 Otázkou je, zda bude o sestavy s Linuxem zájem. Alza se stala v tomto ohledu průkopníkem, kdy žádný další z tuzemských e-shopů nebo výrobců herní sestavy s Linuxem běžně nenabízí. Pouze v nabídce Asome najdeme miniPC sestavy s Bazzite. Pro většinu zájemců o linuxové hraní tak zůstává nejlepší cestou kromě vlastní stavby koupě barebone počítače bez systému. Solidní nabídku má například TS Bohemia.
-Zdroj: Specifikace na Alza.cz|E||T|Novou baterii pro elektromobily nabijete na 97 % za pouhých osm minut. Ale jen s megawattovým zdrojem|D|06.8. 09:45|P|Automobilka Hongqi otestovala baterii s rychlým dobíjením za 8 minut • Nová čínská baterie výrazně snižuje vnitřní odpor i celkové přehřívání • Protot...|X|Automobilka Hongqi otestovala baterii s rychlým dobíjením za 8 minut • Nová čínská baterie výrazně snižuje vnitřní odpor i celkové přehřívání • Prototyp vyžaduje zatím nedostupné megawattové nabíjecí stanice
+Zdroj: Specifikace na Alza.cz|E||T|Improving GPT‑5.6 Sol in ChatGPT—and expanding access to GPT-5.6 Luna for free users|D|06.8. 10:00|P|ChatGPT introduces improved GPT-5.6 Sol with better accuracy and consistency, plus expanded access for free users and unlimited everyday chats with GP...|X|Improving GPT‑5.6 Sol in ChatGPT—and expanding access to GPT‑5.6 Luna for free users
+Our mission is to ensure that artificial general intelligence benefits all of humanity. We’re introducing updates to ChatGPT that improve everyday conversations while expanding access for Free users.
+For Plus and Pro users, we’re updating GPT‑5.6 Sol in Chat to be more reliable with facts and provide more focused answers. A new slider lets you choose how much thought ChatGPT puts into each response.
+For Free users, we're updating the default model to GPT‑5.6 Luna and expanding access with unlimited text chats. For questions that need more thought, a new Think button lets you access higher reasoning for harder questions.
+Every week, 1 billion people turn to ChatGPT for everything from quick questions and web searches to planning, research, advice, and complex decisions. We’ve updated GPT‑5.6 Sol to better support that full range. It delivers more focused answers, adapts its level of detail to the question, avoids unnecessary formatting, and offers a helpful correction when simply agreeing wouldn’t be useful. For Plus and Pro users, the same model now powers both Instant responses and deeper reasoning, creating one consistent experience.
+The updates to GPT‑5.6 Sol in ChatGPT are designed to give you more direct responses, use tighter formatting, and avoid extra detail when it does not help.
+For a quick question, that means a direct answer with the context you need. For more involved work like multi-step planning, research or writing, it means a fuller response that keeps the main recommendation clear.
+GPT-5.5 Instant
+GPT-5.6 Sol
+A useful answer needs to get the facts right. The new GPT‑5.6 Sol is designed to make fewer mistakes—especially when answers depend on dates, numbers, sources, rules, or assumptions—by better using the sources it finds to answer your question.
+In an internal evaluation of financial, medical, and legal prompts requiring factual detail, responses containing at least one factual error were about 62% less common with GPT‑5.6 Luna and 68% less common with GPT‑5.6 Sol than with GPT‑5.5 Instant.
+With this update, we’re also bringing ChatGPT’s Instant and Thinking experiences closer together, creating a more consistent tone and behavior across different kinds of conversations. When you move from Instant to higher effort, it should feel like the model is taking extra time for a more comprehensive answer—not like you’re switching to a different model with its own tone or style.
+Plus and Pro users can use the new slider in ChatGPT on web, mobile, and desktop to choose how much thought ChatGPT puts into an answer. Keep it quick for everyday questions, or move the slider up for planning, research, writing, coding, or decisions that need more thought.
+We’re expanding access to our latest models for free users with unlimited text chats using GPT‑5.6 Luna, plus a new Think button for harder questions.
+For questions that require deeper reasoning, Free users can tap the new Think button to give GPT‑5.6 Luna more time to work through the answer.
+Plus and Pro users can access the updated version of GPT‑5.6 Sol and the new slider in ChatGPT starting today.
+GPT‑5.6 Luna will become the default model for Free and Go users this week. Starting next week, they’ll also have unlimited text chats and access to a new Think button for harder questions (subject to abuse guardrails). Limits will still apply for file uploads, images and other tools.
+Because this version of GPT‑5.6 Sol is optimized for everyday chats, it will only be available in the Chat experience in ChatGPT. The version of GPT‑5.6 Sol that powers Work and Codex is not changing as part of this release.
+You can find more detail on safety training and evaluations in our system card(opens in a new window), which outlines additional measures we’ve introduced to support users we believe are under 18. For these users, we trained the model to avoid romantic roleplay, age-restricted challenges, and presenting itself as a substitute for real-world relationships. In addition, we applied age-appropriate boundaries around sexual content, eating disorders and body-image risks, age-restricted goods, dangerous activities, and graphic violence. Finally, the model encourages connection with trusted people when a teen may need support. We reinforced this training with system-level protections and have added new evaluations for how our models perform for users under 18, and are continuing to improve model responses in this area.
+This is a concrete step toward more abundant intelligence: making our latest models more widely available, improving the usefulness and reliability of the answers people get, and letting free users keep text chats going without a rate limit. Access shapes opportunity, and this update gives more people the ability to keep asking, develop an idea, and get help when they need it.|E||T|Novou baterii pro elektromobily nabijete na 97 % za pouhých osm minut. Ale jen s megawattovým zdrojem|D|06.8. 09:45|P|Automobilka Hongqi otestovala baterii s rychlým dobíjením za 8 minut • Nová čínská baterie výrazně snižuje vnitřní odpor i celkové přehřívání • Protot...|X|Automobilka Hongqi otestovala baterii s rychlým dobíjením za 8 minut • Nová čínská baterie výrazně snižuje vnitřní odpor i celkové přehřívání • Prototyp vyžaduje zatím nedostupné megawattové nabíjecí stanice
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Nový web Smrdíme odhaluje ostudu pražské MHD. V reálném čase počítá tramvaje bez klimatizace|D|06.8. 09:19|P|Web Smrdime.cz v reálném čase ukazuje, kolik pražských tramvají jezdí bez klimatizace, a upozorňuje na dlouhodobě neřešený problém během letních veder...|X|Kryštof Korb spustil webovou stránku Smrdime.cz, která poukazuje na dlouholetou ostudu Dopravního podniku hlavního města Prahy a samotného vedení metropole v neschopnosti zajistit klimatizaci do vozidel městské hromadné dopravy. Tento neduh je znatelný hlavně v probíhajících dnech s teplotami blížícími se 40 stupňům Celsia. Nejde jen o pohodlí, ale také zdraví některých jedinců.
 Smrdíme ukazuje aktuální počet pražských tramvají v přepravě, které nemají klimatizaci. V době psaní této zprávičky je podle serveru Lupa.cz v Praze 27 stupňů Celsia a v hlavním městě jezdí 158 tramvají bez klimatizace, což je 71 procent z celkových 223 tramvají. Zároveň je na tratích 65 ze všech 147 klimatizovaných tramvají. Čísla se neustále aktualizují a mění.
@@ -50,7 +274,16 @@ zdroj: Lupa.cz|E||T|Polohovací stůl tam, kde je málo místa. Tenhle má na š
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Cendrova CDN77 vyrostla na pět miliard a zakořenila mezi největšími hráči světa|D|06.8. 06:45|P|Česká firma CDN77 předstihla v oboru sítí CDN i Google Cloud, tržby loni vzrostly na 218 milionů dolarů • . • Firma denně přenese 430 petabajtů videa ...|X|Česká firma CDN77 předstihla v oboru sítí CDN i Google Cloud, tržby loni vzrostly na 218 milionů dolarů • . • Firma denně přenese 430 petabajtů videa pro zákazníky jako TikTok nebo streamovací služba Rakuten. • Za pět let se tržby firmy zvýšily o 37 procent ročně, podnik přitom funguje bez ...
 
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Klasickému zelenému nočnímu vidění odzvonilo. Přichází technologie, která zobrazuje infračervený svět v barvách|D|06.8. 05:45|P|Čínští vědci vyvinuli barevné noční vidění fungující pomocí kvantových teček • Nová technologie převádí neviditelné infračervené záření na barevné spe...|X|Čínští vědci vyvinuli barevné noční vidění fungující pomocí kvantových teček • Nová technologie převádí neviditelné infračervené záření na barevné spektrum • Brýle zatím fungují v laboratoři a vyžadují vyřešení toxicity těžkých kovů
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Working with the American Psychological Association on youth mental health and AI|D|06.8. 06:00|P|OpenAI and the American Psychological Association advance evidence-based guidance, resources, and safeguards for responsible AI use and youth mental h...|X|Working with the American Psychological Association on youth mental health and AI
+Young people already use AI to learn, create, ask questions, and seek advice. As that use grows, families, schools, clinicians, and communities need clearer evidence, better resources, and stronger safeguards. That’s why we’re working with the American Psychological Association (APA) to bring psychological science into how we think about responsible AI development and use among young people. APA is the leading scientific and professional organization for psychology in the United States, whose evidence-grounded work will help clarify what is known, what is uncertain, and what responsible AI should look like as the technology evolves.
+“Technology is part of teens’ lives, and our responsibility is to meet that reality with experiences that are safe, age-appropriate, and designed with families in mind. AI should strengthen—not replace—the real-world relationships and care young people rely on,” said Dr. Sara Johansen, head of mental health and well-being product policy at OpenAI. “This work builds on our ongoing efforts with experts. By working with the APA and other leading experts, we’re continuing to ground our approach in evidence and develop practical safeguards that put teens’ well-being first.”
+Earlier this year, we co-hosted a productive convening with the APA that brought together leaders from mental health organizations, researchers, clinicians, educators, and youth representatives to discuss where young people face gaps in support today, and where AI may responsibly help people find information and connect to real-world support.
+Building on these conversations, we expect this work to span several areas—including how AI can support young people in moments of distress, how it can be designed to be more developmentally appropriate and useful, and how parents, caregivers, and clinicians can be better equipped to guide young people’s AI use. Throughout, this work will be grounded in the science of human behavior and the voices and lived experiences of parents, caregivers, teachers, and young people themselves. Over time, that work can help inform stronger safeguards and evidence-informed approaches to how AI should show up in young people’s lives.
+One early focus is giving parents and caregivers practical tools for navigating AI use at home, especially as teens start using these tools. Working with APA, we plan to develop family-facing resources to help parents and caregivers support healthy use, recognize when adult intervention may be appropriate, and reinforce AI as a tool, not a replacement for people or care. We intend to make this guidance broadly accessible across school communities as well.
+We are also working with APA to support practitioners who are increasingly fielding questions about AI. Planned work includes resources for clinicians and school psychologists focused on promoting healthy AI usage, recognizing overreliance, and intervening in unhealthy use patterns. We will also continue convening leaders across healthcare, education, research, policy, technology, and youth advocacy to translate emerging lessons into practical guidance for the broader field.
+It is essential that these efforts are grounded in and shaped by those with lived experience, not based on assumptions. We will work with APA to convene teens, families, clinicians, school psychologists, and others to help us better understand how young people are using AI, how AI-related questions are showing up in schools, therapy, and family settings, where current systems are falling short, and where AI may responsibly help with access, education, or navigation.
+This work builds on OpenAI’s efforts to improve how ChatGPT responds in sensitive moments and supports younger users. We work with more than 260 mental health experts to help ChatGPT better recognize signs of distress, respond with care, and guide people toward real-world support. We have also expanded access to localized crisis resources and one-click hotlines, added reminders to take a break, and introduced additional protections for younger users, including parental controls, notifying parents of safety concerns, etc., under-18 principles in our Model Spec, and an age-prediction model that helps apply the right experience and safeguards.
+AI may help people find information and navigate systems earlier, but young people’s well-being depends on strong human relationships and trustworthy support. We’re glad to be working with the APA, alongside the many researchers, clinicians, and educators we continue to learn from, as we work to make sure AI truly supports young people and those who care for, support, and guide them.|E||T|Klasickému zelenému nočnímu vidění odzvonilo. Přichází technologie, která zobrazuje infračervený svět v barvách|D|06.8. 05:45|P|Čínští vědci vyvinuli barevné noční vidění fungující pomocí kvantových teček • Nová technologie převádí neviditelné infračervené záření na barevné spe...|X|Čínští vědci vyvinuli barevné noční vidění fungující pomocí kvantových teček • Nová technologie převádí neviditelné infračervené záření na barevné spektrum • Brýle zatím fungují v laboratoři a vyžadují vyřešení toxicity těžkých kovů
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Nikdy nebylo tak zle, aby nemohlo být hůř: Po RAM, SSD a GPU teď přichází zdražování základních desek|D|06.8. 05:07|P|Výrobci desek údajně během třetího kvartálu zvednou ceny kvůli rostoucím nákladům. Například ceny PCB se od začátku roku zhoršily o 50 % a nejsou jedi...|X|Včera jsme měli smutnou povinnost informovat o razantním zdražení grafických karet, které začalo v Asii, ale nejspíš se brzo dostane i do našich obchodů. Růst jejich cen je primárně daný explozivním nárůstem cen pamětí, ale v menší míře zdražují i další součástky a materiály. Bohužel to vypadá, že kvůli tomu teď půjdou nahoru také ceny základních desek pro PC, třebaže v těch se paměťové čipy skoro nevyskytují.
 Během léta stoupnou ceny desek
@@ -86,337 +319,26 @@ Britská vláda v prosinci předložila zelenou knihu s variantami dalšího fun
 Vláda naopak neuvažuje o nahrazení poplatku financováním z obecných daní, novou daní pro domácnosti nebo odvodem z příjmů streamovacích služeb. Veřejná konzultace skončila 10. března. Její výsledky, stanovisko vlády a následná bílá kniha mají být zveřejněny během letošního roku. Zatím k tomu nedošlo.
 BBC navrhla, aby příští Královská charta už neměla pevné datum konce platnosti. Současná úprava totiž znamená, že korporace musí přibližně jednou za deset let vyjednat nový dokument, na němž závisí její další existence. Pokud by nová charta nebyla přijata nebo dosavadní pravidla prodloužena, BBC by po skončení roku 2027 přišla o právní základ fungování. Vedení BBC míní, že takové vyjednávání vytváří příliš velký prostor k politickému nátlaku.
 Britská ministryně kultury dala v březnu najevo, že na to má podobný pohled. Označila za neudržitelné, aby BBC potenciálně hrozil úplný zánik jen kvůli tomu, že se včas nepřijme nová charta. Neznamená to však, že by se fungování korporace nemělo pravidelně přezkoumávat. Základy by sice už byly pevně dané, ale vláda chce nadále v určitých intervalech jednat o rozsahu služeb, řízení a financování.
-Než začne platit nová charta, musí BBC vzhledem k okolnostem ušetřit dalších 500 milionů liber a během dvou let zrušit 1800 až 2000 pracovních míst. Nový ředitel tak musí současně omezovat náklady a investovat do služeb, které mají oslovit mladší publikum.|E||T|Podpora unifikované práce se zařízeními v operačním systému Atari: CIO (2.část)|D|05.8. 22:00|P|Ve druhém článku o CIO si nejdříve ukážeme, jak se volají CIO operace OPEN, CLOSE a XIO z assembleru. Následně se budeme zabývat tabulkou zařízení, do...|X|Na úvodní článek o CIO (Central Input/Output), jenž tvoří nedílnou a možná i nejdůležitější součást operačního systému osmibitových domácích mikropočítačů Atari, dnes navážeme. Nejdříve si ukážeme, jak se volají operace OPEN a CLOSE z assembleru (prozatím jsme si je ukazovali v Atari BASICu), dále se budeme zabývat zpočátku možná poněkud záhadným příkazem XIO (lze jím realizovat všechny speciální operace, které zařízení podporuje) a ve třetí části dnešního článku si, prozatím alespoň ve stručnosti, popíšeme tabulku nazvanou HATABS (Handler Address Table).
-Je to velmi jednoduchá, ovšem o to užitečnější tabulka, díky které je možné do operačního systému zaregistrovat nová zařízení se zvoleným jménem i s libovolnými operacemi. Jakmile je tabulka naplněna (resp. doplněna) o nové zařízení a do paměti jsou nahrány jeho ovladače (ony handlery), může prakticky jakýkoli program začít toto zařízení používat.
-Právě díky konceptu kanálů, k nim přiřazených IOCB (Input-Output Control Block) a HATABS je operační systém osmibitových Atari rozšiřitelný a vlastně i poměrně modulární.
-Otevření kanálu pro zápis, zápis jednoho bajtu a uzavření kanálu
-Připomeňme si, jakým způsobem jsme se zařízeními a kanály pracovali v Atari BASICu. V následujícím programu je nejdříve pro jistotu uzavřen kanál #4 (pokud by byl předtím nechán otevřený, což se může stát – stisk klávesy BREAK atd.). Následně je tento kanál (znovu) otevřen, a to v režimu zápisu (konstanta 8 v příkazu OPEN). Jméno zařízení je nastaveno na H:test.txt, což znamená zařízení H: (zápis na souborový systém v emulátoru) se jménem souboru. Další operace je jednoduchá – provádíme zde zápis jediného bajtu s kódem 42 a následně je čtvrtý kanál (znovu) uzavřen:
-10 REM Zapis nekolika hodnot
-11 REM na disk namapovany emulatorem.
-20 REM
-21 REM Pro jistotu zavreme kanal
-22 REM pred jeho pouzitim
-22 CLOSE #4
-30 REM Otevreme kanal pro zapis
-31 OPEN #4, 8, 0, "H:test.txt"
-40 REM Provedeni zapisu jednoho znaku
-41 PUT #4, 42
-50 REM Zavreme kanal
-51 CLOSE #4
-Tento program si postupně přepíšeme do assembleru, což vlastně znamená, že musíme implementovat či alespoň napodobit příkazy OPEN, CLOSE a PUT. Na začátku použiji pouze kostru programu, která sice bude bez problémů přeložitelná, ale nebude provádět žádné vstupně-výstupní operace, protože příslušné podprogramy (subrutiny) obsahují pouze instrukci pro návrat z podprogramu (rts):
-.include "atari.inc"
- 
-.CODE
- 
- 
- 
-; ---------------------------------------------------------------------
-; hlavní program
-; ---------------------------------------------------------------------
-.proc main
-        jsr CLOSE_CHANNEL_4
-        jsr OPEN_CHANNEL_4_AS_H
-        jsr WRITE_BYTE_CHANNEL_4
-        jsr CLOSE_CHANNEL_4
-loop:
-        jmp loop                ; program vlastně nice nedělá - jen cyklí!
-.endproc
- 
- 
- 
-; ---------------------------------------------------------------------
-; uzavření kanálu číslo 4
-; ---------------------------------------------------------------------
-.proc CLOSE_CHANNEL_4
-        rts                     ; návrat ze subrutiny
-.endproc
- 
- 
- 
-; ---------------------------------------------------------------------
-; otevření kanálu číslo 4 v režimu zápisu na zařízení H:test.txt
-; ---------------------------------------------------------------------
-.proc OPEN_CHANNEL_4_AS_H
-        rts                     ; návrat ze subrutiny
-.endproc
- 
- 
- 
-; ---------------------------------------------------------------------
-; zápis jednoho znaku do kanálu číslo 4
-; ---------------------------------------------------------------------
-.proc WRITE_BYTE_CHANNEL_4
-        rts                     ; návrat ze subrutiny
-.endproc
- 
-end:
- 
- 
-.segment "EXEHDR"
-.word   $ffff                   ; uvodni sekvence bajtu v souboru XEX
-.word   main                    ; zacatek kodoveho segmentu
-.word   end - 1                 ; konec kodoveho segmentu
- 
- 
-.segment "AUTOSTRT"             ; segment s pocatecni adresou
-.word   RUNAD                   ; naplni se pouze adresy RUNAD a RUNAD+1
-.word   RUNAD+1
-.word   main                    ; adresa vstupniho bodu do programu
- 
-; finito
-Realizace operace uzavření kanálu v assembleru
-Nejjednodušší je realizace subrutiny CLOSE_CHANNEL_4. V této subrutině budeme přes CIO volat příkaz CLOSE, který nevyžaduje žádné další parametry. Nejdříve ovšem nadefinujeme offset pro kanál číslo #4, který budeme používat:
-IOCB4 = $40              ; offset odvozený od čísla IOCB kanálu (nutno násobit šestnácti)
-Samotná realizace subrutiny CLOSE_CHANNEL_4 je dosti přímočará. Adresování je realizováno přes index registr X, což je dobře, protože v systémové subrutině CIO je hodnota tohoto registru použita pro volbu kanálu, kterého se příkaz týká:
-; ---------------------------------------------------------------------
-; uzavření kanálu číslo 4
-; ---------------------------------------------------------------------
-.proc CLOSE_CHANNEL_4
-        ldx #IOCB4              ; offset odvozený od čísla IOCB kanálu
-        lda #CLOSE              ; prováděná operace
-        sta ICCOM, x            ; zápis prováděné operace do bloku IOCB
-        jsr CIOV                ; zavolání rutiny pro CIO
-        rts                     ; návrat ze subrutiny
-.endproc
-Realizace operace otevření kanálu v assembleru
-Operace pro otevření kanálu je nepatrně komplikovanější, protože vyžaduje zadání několika parametrů (zapisovaných pochopitelně do IOCB). Je nutné specifikovat jméno zařízení a popř. i cestu k souboru. Jedná se o řetězec ukončený nulou, který v assembleru nadefinujeme následujícím způsobem:
-; jméno zařízení (+ jméno souboru) ukončené nulou
-device_name: .byte "H:TEST.TXT", 0
-Adresa tohoto řetězce se zapíše do ICBAH+ICBAL:
-; specifikace jména zařízení + jména souboru (16bitový ukazatel)
-lda #<device_name
-sta ICBAL, x
-lda #>device_name
-sta ICBAH, x
-Požadovaný režim otevření (čtení, zápis, čtení+zápis, připojení) se zapisuje do ICAX1. V hlavičkovém souboru atari.inc je definována vhodná konstanta OPNOT (zápis):
-lda #OPNOT              ; režim otevření: zápis (odpovídá druhému parametru příkazu OPEN v BASICu)
-sta ICAX1, x
-Celá subrutina pro otevření kanálu tedy může vypadat následovně:
-; ---------------------------------------------------------------------
-; otevření kanálu číslo 4 v režimu zápisu na zařízení H:test.txt
-; ---------------------------------------------------------------------
-.proc OPEN_CHANNEL_4_AS_H
-        ldx #IOCB4              ; offset odvozený od čísla IOCB kanálu
-        lda #OPEN               ; prováděná operace
-        sta ICCOM, x            ; zápis prováděné operace do bloku IOCB
- 
-        ; specifikace jména zařízení + jména souboru (16bitový ukazatel)
-        lda #<device_name
-        sta ICBAL, x
-        lda #>device_name
-        sta ICBAH, x
- 
-        lda #OPNOT              ; režim otevření: zápis (odpovídá druhému parametru příkazu OPEN v BASICu)
-        sta ICAX1, x
-        lda #0                  ; odpovídá třetímu parametru příkazu OPEN v BASICu
-        sta ICAX2, x
- 
-        jsr CIOV                ; zavolání rutiny pro CIO
- 
-        rts                     ; návrat ze subrutiny
-.endproc
-Realizace operace pro zápis jednoho znaku do zvoleného kanálu
-Zbývá nám realizace poslední operace WRITE_BYTE_CHANNEL_4. Zde se nejedná o žádnou novinku, protože zápis na zařízení jsme si již popsali v předchozím článku. V tomto případě musíme nastavit adresu zapisovaného bufferu (ICBAH+ICBAL) a do ICBLH+ICBLL uložíme hodnotu 1, protože do zařízení pošleme jediný znak:
-; ---------------------------------------------------------------------
-; zápis jednoho znaku do kanálu číslo 4
-; ---------------------------------------------------------------------
-.proc WRITE_BYTE_CHANNEL_4
-        ldx #IOCB4              ; offset odvozený od čísla IOCB kanálu
-        lda #PUTCHR             ; prováděná operace
-        sta ICCOM, x            ; zápis prováděné operace do bloku IOCB
- 
-        ; adresa zapisovaného bloku
-        lda #<char_to_put
-        sta ICBAL, x
-        lda #>char_to_put
-        sta ICBAH, x
- 
-        ; nastavení počtu zapisovaných bajtů
-        lda #1
-        sta ICBLL, x
-        lda #0
-        sta ICBLH, x
- 
-        jsr CIOV                ; zavolání rutiny pro CIO
-        rts                     ; návrat ze subrutiny
-.endproc
-Úplný zdrojový kód dnešního prvního demonstračního příkladu
-Pro úplnost si ukažme úplný zdrojový kód dnešního prvního demonstračního příkladu, který po svém překladu a spuštění vytvoří na zařízení se jménem H: nový soubor nazvaný TEST.TXT a zapíše do něj jeden bajt. Samotný zdrojový kód je sice relativně dlouhý, ale program má po překladu velikost jen 112 bajtů, tedy necelou polovinu jedné stránky paměti (a mohl být ještě kratší):
-.include "atari.inc"
- 
-.CODE
- 
-IOCB4 = $40              ; offset odvozený od čísla IOCB kanálu (nutno násobit šestnácti)
- 
- 
- 
-; ---------------------------------------------------------------------
-; hlavní program
-; ---------------------------------------------------------------------
-.proc main
-        jsr CLOSE_CHANNEL_4
-        jsr OPEN_CHANNEL_4_AS_H
-        jsr WRITE_BYTE_CHANNEL_4
-        jsr CLOSE_CHANNEL_4
-loop:
-        jmp loop                ; program vlastně nice nedělá - jen cyklí!
-.endproc
- 
- 
- 
-; ---------------------------------------------------------------------
-; uzavření kanálu číslo 4
-; ---------------------------------------------------------------------
-.proc CLOSE_CHANNEL_4
-        ldx #IOCB4              ; offset odvozený od čísla IOCB kanálu
-        lda #CLOSE              ; prováděná operace
-        sta ICCOM, x            ; zápis prováděné operace do bloku IOCB
-        jsr CIOV                ; zavolání rutiny pro CIO
-        rts                     ; návrat ze subrutiny
-.endproc
- 
- 
- 
-; ---------------------------------------------------------------------
-; otevření kanálu číslo 4 v režimu zápisu na zařízení H:test.txt
-; ---------------------------------------------------------------------
-.proc OPEN_CHANNEL_4_AS_H
-        ldx #IOCB4              ; of...
-(Pokracovani na webu)|E||T|Soubory mezi telefony přenesete bez Wi-Fi, mobilních dat i Bluetooth. Stačí jen fotoaparát a blikající QR kódy|D|05.8. 17:45|P||X|
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Všechny týmy pracují na optimalizaci Windows 11. Microsoft chce předběhnout vaše očekávání|D|05.8. 16:45|P|Microsoft potvrdil, že optimalizaci Windows 11 bere vážně. • Jde o rozsáhlou iniciativu, ve které se koordinují všechny týmy. • Přemýšlí se o všem od ...|X|Microsoft potvrdil, že optimalizaci Windows 11 bere vážně. • Jde o rozsáhlou iniciativu, ve které se koordinují všechny týmy. • Přemýšlí se o všem od uživatelského prostředí až po plánování na úrovni jádra.
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Jak dobře vybrat bezdrátová sluchátka. Velká zajistí ticho a pohodlí, s malými klidně můžete sportovat|D|05.8. 15:45|P|Bezdrátová sluchátka, to nejsou jen populární a módní kapesní modely True Wireless. Například pro cestování jsou vhodnější velké modely s aktivním pot...|X|Bezdrátová sluchátka, to nejsou jen populární a módní kapesní modely True Wireless. Například pro cestování jsou vhodnější velké modely s aktivním potlačením hluku. Poradíme, jaké máte možnosti a na co si dát pozor.
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Pozor, přichází velké zdražování grafických karet pro hráče: Ceny stoupají až o 30–40 %|D|05.8. 15:25|P|Zdražování herních grafických karet už začalo, v Asii ceny přes noc stouply o desítky procent.|X|Během léta se objevovala varování, že nás čeká zdražení grafických karet (jak těch od AMD, tak od Nvidie), zřejmě hlavně kvůli stále rostoucím cenám pamětí. Bohužel se zdá, že teď je to skutečně zde a co hůř, toto zdražení asi bude drastičtější, než se čekalo. Už se totiž podle všeho začalo projevovat na asijských trzích, kde ceny karet stoupají docela dramaticky. K nám patrně stejná zvýšení cen dorazí tak s větším nebo menším zpožděním.
-Zprávy o očekávaném zdražení karet ve třetím kvartálu tu byly už v červnu (ohledně karet Radeon), o měsíc později pak přišla zpráva, že zvyšování cen už oznámila partnerům Nvidia. Růst cen postihne obě značky, což dává smysl vzhledem k tomu, že je způsobem primárně růstem cen pamětí, byť v menší míře zdražují i další součásti a položky nákladů.
-Růst cen na korejském, čínském a japonském trhu
-První zprávy o skutečném zvýšení koncových cen v obchodech přišly z Jižní Koreje. V posledních dnech tam ceny grafik GeForce RTX ve srovnávači cen Danawa stouply v průměru asi o 30 %. U některých modelů bylo zdražení menší (možná však jen dočasně), v extrémních případech ale dokonce byl nárůst i blízko 50 % (přesně +49,4 % a +49,7 % u některých modelů GeForce RTX 5060 Ti, což mohou být krátkodobější výkyvy). Toto zdražení je napříč modely různých partnerských výrobců.
-O něco nižší zdražení bylo hlášeno také pro pevninskou Čínu: Objevily se zprávy, že výrobci Asus a Gigabyte zvyšují ceny svých grafik pro měsíc srpen v průměru zhruba o 20 % proti cenám v červenci – jde o ceny v distribuci, které se postupně projeví i v koncových cenách. Má jít o zdražení napříč sortimentem karet GeForce i Radeon a růst cen je dramatičtější u vyšších modelů jako jsou GeForce RTX 5090D V2, RTX 5080 a RTX 5070 Ti. Ceny stoupají i u stále prodávaných grafik starších generací, jako je Radeon RX 7650 GRE nebo ještě starší GeForce RTX 3050 6GB a GeForce RTX 3060 12GB.
-V Japonsku už také ceny stoupají. Ví se o zdražení karet vyráběných firmou Gigabyte opět přímo v distribuci (a opět asi jde jak o GeForce, tak i o Radeony). Prodejce hardwaru CFD-BIZ uvádí, že ceny grafik šly nahoru se začátkem srpna o 20 % až 40 %. Jde o lokální ceny v jenech, takže nejvyšší nárůsty mohou částečně být ovlivněné i aktuálním poklesem kurzu japonské měny.
-U nás asi ještě největší skoky v cenách teprve přijdou
-Nelze doufat, že tyto pohyby zůstanou izolované jenom na asijský trh, pravděpodobně se rychle dostanou i k nám – při pohledu na sledovače cen to už možná pomalu začíná, ale plné zvýšení se tu ještě zdá se nerozmohlo. V naší distribuci asi kvůli tomu, že doprava nějakou dobu trvá, mohou být ještě starší šarže karet s nižšími cenami, ale stejné zdražení jako v Asii by se postupně mělo dostat i k nám.
-Pokud jste už byli rozhodnutí nějakou grafickou kartu kupovat a ještě někde vidíte modely za ceny, které měly v červnu a červenci (což si můžete zkontrolovat třeba na grafu cen za poslední dobu, který ukazuje Heureka), možná bude dobrý nápad déle neotálet. Tím vás ale nechceme nabádat k bezhlavému nakupování – pokud jste doteď byli spokojení bez nového GPU, není asi důvod se zbytečně nechat strhnout panikou a měnit na tom něco.|E||T|Nejslavnější overclocker odstranil z chladiče procesoru větrák a nasadil na něj komín. Fungovalo to skvěle|D|05.8. 14:45|P|Německý overclocker a hardwarový nadšenec Roman „der8auer“ Hartung, známý svými experimenty s chlazením a přetaktováním procesorů i grafických karet, ...|X|Německý overclocker a hardwarový nadšenec Roman „der8auer“ Hartung, známý svými experimenty s chlazením a přetaktováním procesorů i grafických karet, opět zaujal netradičním projektem. Tentokrát se rozhodl ověřit, zda lze výkonný procesor AMD Ryzen 7 9800X3D uchladit bez ventilátorů pouze pomocí ...
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Nová služba Smrdíme poukazuje na ostudu Prahy, zobrazuje aktuální počet tramvají bez klimatizace|D|05.8. 14:31|P|Kryštof Korb spustil webovou stránku Smrdime.cz, která poukazuje na dlouholetou ostudu Dopravního podniku hlavního města Prahy a samotného vedení metr...|X|Kryštof Korb spustil webovou stránku Smrdime.cz, která poukazuje na dlouholetou ostudu Dopravního podniku hlavního města Prahy a samotného vedení metropole v neschopnosti zajistit klimatizaci do vozidel městské hromadné dopravy. Tento neduh je znatelný hlavně v probíhajících dnech s teplotami blížícími se 40 stupňům Celsia. Nejde jen o pohodlí, ale také zdraví některých jedinců.
-Smrdíme ukazuje aktuální počet pražských tramvají v přepravě, které nemají klimatizaci. V době psaní této zprávičky je v Praze 37 stupňů Celsia a v hlavním městě jezdí 188 tramvají bez klimatizace, což je 71 procent z celkových 256 tramvají. Zároveň je na tratích 77 ze všech 147 klimatizovaných tramvají. Čísla se neustále aktualizují a mění.
-Autor službu vytvořil pomocí nástroje Claude Code od Anthropicu. Data jsou čerpána přes aplikační rozhraní (API) služeb Golemio a Open-Meteo. První z nich je Prahou provozovaná platforma pro open data, druhá poskytuje přístup k údajům o počasí.
-Autor zároveň projekt umístil na GitHub, takže je možné se zapojit do dalšího rozvoje. Jako technologický stack se používají Next.js, React 19, TypeScript, Cloudflare Workers a další. Službu lze rozjet i lokálně.|E||T|OpenAI přiznala další úniky AI agentů z testovacího prostředí na internet|D|05.8. 14:28|P|OpenAI zveřejnila informace o dalších dvou incidentech, při kterých její AI agenti unikli z testovacích prostředí na otevřený internet a provedli nesc...|X|OpenAI zveřejnila informace o dalších dvou incidentech, při kterých její AI agenti unikli z testovacích prostředí na otevřený internet a provedli neschválené útoky na služby třetích stran. Šlo podle ní o testy, které prováděly partnerské firmy a organizace.
-První incident se podle OpenAI stal při testu britské státní organizace AI Security Institute (AISI). AI model GPT‑5.6 Sol a modely dalších firem v něm měly za úkol proniknout do tří připojených systémů. AISI přitom modelům standardně ponechává přístup k internetu, aby mohly například stahovat potřebné nástroje.
-Podle AISI ale v zadání nebylo dostatečně přesně specifikováno, jak mohou AI agenti internetové připojení používat a co naopak mají zakázano.
-GPT‑5.6 Sol tak vystoupil ze zamýšleného scénáře a využil dostupný autentizační token GitHubu a s jeho pomocí si zřídil účty u nejmenovaných poskytovatelů DNS a tunelovacích služeb. Jejich prostřednictvím se pak pokusil připojit k veřejnému internetu svůj DNS server s nakaženým softwarem. Podle AISI ale tento postup nefungoval a k DNS serveru se nepřipojila žádná externí služba.
-AISI provedla test celkem 122krát a v 10 případech modely provedly na internetu celkem 19 neschválených útoků. Za 17 z nich stál model Mythos 5 od Anthropicu, dva útoky provedl GPT-5.6-Sol, který měl vypnuté klasifikátory omezující jeho zneužití.
-Nejzávažnější incident přitom měl podle AISI na svědomí model Mythos 5, který založil několik falešných identit a pokusil se s jejich pomocí pull requestem propašovat nakažený kód do existujícícho projektu na GitHubu. K obcházení bezpečnostních opatření GitHubu přitom použil Tor. Správce projektu (člověk) ale nakonec pull request odmítl.
-Druhý incident proběhl podle OpenAI při testu společnosti Irregular. Firma jej popisuje v podstatě stejně jako obdobné incident, které nedávno přiznal konkurenční Anthropic: Irregular udělal chybu v konfiguraci testovacích serverů a modely se tak mohly dostat na veřejný internet. Tam napadly web firmy, jejíž název se shodou okolností shodoval s názvem fiktivní společnosti z testovacího prostředí.
-Vlnu prověřování zabezpečení testů AI modelů spustil nedávno oznámený incident OpenAI, při kterém její AI agenti unikli z testovacího prostředí a hackli společnost Hugging Face.|E||T|Připojení k internetu v Česku vládnou tři velcí hráči. Trh je ale konkurenční a zákazníci jsou spokojeni|D|05.8. 14:18|P|Český telekomunikační úřad (ČTÚ) za pomoci agentury Median provedl výzkum ohledně využívání internetu v Česku, konkrétně v rámci maloobchodních služeb...|X|Český telekomunikační úřad (ČTÚ) za pomoci agentury Median provedl výzkum ohledně využívání internetu v Česku, konkrétně v rámci maloobchodních služeb. Zúčastnilo se 1 535 respondentů z řad domácností, živnostníků a malých firem. Obecně se dá říci, že Češi jsou s pevným internetem spokojeni. Zároveň se ale objevují rozdíly v dostupnosti optiky, viditelné jsou mezi velkými městy a menšími obcemi. Celý průzkum je k dispozici zde.
-Českému trhu vládne trojice velkých poskytovatelů, tedy O2, T-Mobile a Vodafone. Ti mohou v budoucnu posilovat, například O2 (a CETIN) hlásí apetit nakupovat další providery. Všichni tři mají zájem i o internetové aktivity ČEZu. Úřad už dříve uvedl, že počet poskytovatelů internetu vlivem konsolidace klesl. ČTÚ nicméně trh označuje za konkurenční.
-“Český trh služeb přístupu k internetu v pevném místě je značně fragmentovaný a tím vysoce konkurenční – až 40 % zákazníků využívá podle výsledků průzkumu služeb některého z široké řady menších či regionálních poskytovatelů. Zbylý podíl zhruba 60 % si rozdělila trojice O2, T-Mobile a Vodafone, dominující zejména v sídlech nad 100 tisíc obyvatel,” shrnul reguátor.
-Další závěry ČTÚ jsou následující:
-K optické síti je podle výsledků průzkumu připojeno již 34 % domácností, především ve větších městech, existují však i rozdíly mezi regiony. V nejmenších obcích do pěti tisíc obyvatel naopak převažují bezdrátové technologie. U zákazníků z řad živnostníků a malých firem je zastoupení jednotlivých technologií vyrovnanější, významná část malých firem využívá také xDSL. Pro uživatele přitom není samotná technologie připojení podstatná, při změně poskytovatele by pouze 13 % respondentů preferovalo určitou technologii.
-Průzkum zároveň odhalil, že třetina respondentů neví, zda je na jejich adrese dostupná optická síť. 17 % dotázaných, kteří nemají optiku dostupnou nebo o tom nevědí, by na ni přešlo i pokud by to znamenalo změnu poskytovatele, 20 % by pak přechod zvažovalo, pokud by optické připojení bylo výrazně rychlejší a 27 % v případě výrazně nižší ceny. Naopak 14 % respondentů je spokojeno se svým stávajícím připojením a na optiku by nepřešlo.
-Více než polovina respondentů (53 %) využívá pevné připojení k internetu jako součást balíčku společně s dalšími službami elektronických komunikací. Nejčastější měsíční cena služby je udávána mezi 301 a 400 korunami, nějakou formu slevy využívá 45 % zákazníků, přičemž častěji ji získávají podnikatelé než domácnosti.
-Nejvíce respondentů uvedlo rychlost stahování dat (download) u své stávající služby mezi 100 a 299 Mb/s (upload pak 30 až 99 Mb/s). Současně se ukázalo, že řada uživatelů rychlostní parametry svého připojení nezná – více než třetina respondentů nedokázala uvést rychlost stahování, v případě uploadu to bylo přes 40 %, naopak 24 % dotázaných uvedlo, že je pro ně rychlost odesílání rozhodně důležitá. Z hlediska rozložení rychlostních intervalů pak panují logicky rozdíly v závislosti na velikosti sídla a související úrovní dostupnosti infrastruktury.
-Se svým současným internetovým připojením je spokojeno 78 % uživatelů, nespokojenost vyjádřilo pouhých 7 %. Nespokojení zákazníci pak nejčastěji udávají jako důvod nízkou rychlost přenosu dat, případně časté výpadky či nestabilitu připojení. Nejvyšší spokojenost vykazují uživatelé optických sítí, zatímco nejnižší podíl spokojených byl zaznamenán u připojení prostřednictvím technologie xDSL, a také prostřednictvím bezdrátových a mobilních sítí. Zároveň 60 % dotázaných vnímá jako plnohodnotnou náhradu pevného připojení mobilní internet.
-Pokud by poskytovatel stávající služby zvýšil cenu o deset procent, pro plných 39 % respondentů by to nepředstavovalo důvod ke změně. Z těch, kteří by změnu zvažovali, by 33 % preferovalo nabídku se stejnými rychlostními parametry a nižší cenou, 18 % by naopak za podobnou cenu hledalo vyšší rychlost. Téměř polovina by pak podmínila přechod odpuštěním instalačního poplatku ze strany nového poskytovatele.|E||T|Češi vytvořili trailer pro první historické spojení světů World of Warcraft a Dungeons & Dragons|D|05.8. 14:13|P|Populární fantasy světy World of Warcraft a Dungeon & Dragons se poprvé oficiálně spojí. Společnosti Wizards of the Coast a Blizzard Entertainment při...|X|Populární fantasy světy World of Warcraft a Dungeon & Dragons se poprvé oficiálně spojí. Společnosti Wizards of the Coast a Blizzard Entertainment připravují rozšíření pro stolní RPG hru Dungeons & Dragons, díky němuž bude možné hrát ve světě Azerothu z Warcraftu. Kniha o 256 stránkách se na trh dostane 17. listopadu. Trailer pro očekávané propojení vytvořilo české studio All Animal dříve známé jako NICE!.
-All Animal pro Blizzard pracuje už několik let, připravuje pro něj trailery World of Warcraft a nyní dostalo na starost i CGI trailer oznamující spolupráci WoWka a “dračáku”. Češi se k těmto zakázkám dostali díky spoluzakladateli Radimu Zeifartovi, který původně tvořil fanouškovské trailery. All Animal letos popáté obnovili exkluzivní spolupráci. Roční kontrakt přinese herní trailery a další obsah s využitím virtuální reality.
-“Vizuální koncept sedmatřicetisekundového cinematic teaseru staví na ikonické D20 kostce. Ta se jako symbol stolních RPG prokutálí sérií ručně vyhlížejících dioram z prostředí Azerothu, zatímco její zlaté stěny odrážejí nezapomenutelné momenty z historie World of Warcraft. Součástí kreativního procesu bylo i hledání správné vizuální rovnováhy mezi oběma světy. Pro zdůraznění estetiky stolních RPG her tým v průběhu výroby posílil motiv ručně vyřezávaných miniatur, díky nimž ikonické lokace Azerothu získaly unikátní hmatatelný charakter,” popsalo studio.
-Režisérem traileru byl Tomáš Pokorný, CGI produkci měla na starost Julie Czigle a na projektu se podíleli také Ondřej Skalník, Šimon Lánský, Tomáš Engl, Marek Sosna, Martina Svojíková, Radim Zeifart a Marek Štolún.
-Na traileru se podílelo také slovenské zvukové studio 4Boars, které složilo autorskou hudbu a řešilo sound design.|E||T|Podvody cílící na bankovní účty rostly o desítky procent, říkají data Komerční banky. Lidé hotovost sami předávají|D|05.8. 13:57|P|Během prvního pololetí letoška stouply podvody v oblasti plateb a platebních karet meziročně o 41 %. Letošek tak bude v této oblasti zřejmě opět rekor...|X|Během prvního pololetí letoška stouply podvody v oblasti plateb a platebních karet meziročně o 41 %. Letošek tak bude v této oblasti zřejmě opět rekordní. Jde o data Komerční banky, která uvádí, že vedle investičních podvodů, phishingu a falešných bankéřů je trendem posledních měsíců předávání hotovosti falešnému kurýrovi nebo zneužití skutečných rezervací ubytování, kdy mnoho údajů odpovídá těm reálným.
-Nejčastějšími platebními podvody zůstávají investiční a krypto podvody, ty tvoří skoro polovinu z celkové hodnoty podvodných transakcí. Za nimi jsou falešné telefonáty bankéřů nebo policistů (vishing). U platebních karet stojí za většinou případů phishing, tedy falešné e-maily, SMS zprávy nebo podvodné weby, kdy se útočníci vydávají za důvěryhodné instituce. Během prvního pololetí podle dat banky dále vzrostl počet napadených karet i objem podvodných transakcí. U karetních podvodů dosahovala průměrná škoda 4 900 Kč. U platebních podvodů útočníci ale ukradnou výrazně vyšší částku – podle dat banky průměrně 199 tisíc Kč. Objem podvodných transakcí vzrostl o 110 % a hodnota škod narostla dokonce o 150 %. Policie už v březnu uvedla, že tehdy šlo o vůbec nejhorší měsíc kyberkriminality v historii a pokud by tempo pokračovalo, Česko by dosáhlo loňských hodnot v polovině října.
-Útočníci přitom své scénáře postupně obměňují. „Když se lidé naučí odmítat převod na údajně bezpečný účet, podvodník pošle kurýra pro hotovost. Když znají funkci ověření bankéře v aplikaci, snaží se jim e-šmejdi namluvit, že kód zaslaný přes SMS nebo WhatsApp je totéž,“ popisuje Pavel Šašek, expert na kyberbezpečnost Komerční banky.
-Jako jeden z největších trendů vnímá předávání hotovosti, kterou si ze svého účtu lidé vyberou z bankomatu nebo na přepážce, a následně ji dají falešnému kurýrovi. Ten může předložit falešný průkaz, potvrzení o převzetí nebo jiný dokument, který má celé situaci dodat zdání důvěryhodnosti. „Typicky pak takový člověk předává peníze na Karlově náměstí, v domění, že pomáhá policii dopadnout pachatele, protože celé náměstí je obklíčené,“ přibližuje Šašek. „Není den, kdy bychom neřešili, že někdo předal podvodníkům hotovost,“ dodává odborník.
-Nejčastější rok narození napadených je 1979. Podle dat nerozhoduje vzdělání ani ekonomická síla. Pokud už je někdo v procesu převádění nebo vybírání hotovosti, velmi často se mu nedaří vymluvit, že by to dělat neměl. V bankách můžou pracovníci při velkých výběrech s klienty důvod výběru řešit, v aplikacích pak banky posílají různá varování. Podle Šaška je ale lidé čtou jen v menšině případů.
-„Podvodníci využívají přirozené fungování lidského mozku při akutním stresu,“ popisuje psycholožka Helena Sováková, která více než dvacet let působila v ozbrojených složkách a vedla Odbor operační psychologie Armády ČR. Říká, že ohrožení nebo hrozící ztráta vyvolává silnou reakci, z níž je těžké se vymanit. „Když si člověk udělá první dojem, jen velmi nerad mění rozhodnutí. A když v nás vyvolají první dojem ten, že naše peníze jsou v nebezpečí, fungujeme v módu emocí,“ popisuje jeden z důvodů úspěchu útoků.
-Během léta zároveň rostou podvody, které se snaží přes e-mail, SMS nebo WhatsApp přesvědčit lidi, že nemají zaplacenou dovolenou, kterou reálně platili. Může přitom odpovídat ubytování i částka, lidé pak více informací nečtou a nevšimnou, si, že peníze posílají přes podvodný odkaz.
-Mezi nové podvody patří NFC Relay Attack, kombinace podvodu využívající fyzickou kartu a podvodný telefonát. Funguje na Androidu. V takovém případě zavolá falešný bankéř s „podezřením“, že je napadený účet a potřebou resetovat aplikaci. Útočník donutí daného člověka stáhnout si jinou aplikaci, přesvědčí ho k tomu, aby zadal PIN, a přiložil k telefonu reálnou plastovou kartu. Technologie umožňuje přenést karetní údaje a následně provést výběr nebo platbu.|E||T|Lego má novou kosmickou ikonu. Série Icons se rozšířila o téměř půlmetrový Hubbleův dalekohled|D|05.8. 13:45|P|A teď už může mít Hubbla na stole úplně každý. Lego rozšířilo svoji sbírku Icons o novou legendu: 38 centimetrů dlouhou repliku Hubbleova vesmírného d...|X|A teď už může mít Hubbla na stole úplně každý. Lego rozšířilo svoji sbírku Icons o novou legendu: 38 centimetrů dlouhou repliku Hubbleova vesmírného dalekohledu.
-
-Stavebnice se skládá z 1252 kostiček a stejně jako u ostatních zástupců technické sbírky nabízí hromadu detailů. Nechybí možnost ...
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Super klávesnice do obýváku. Tahle bezdrátová za 419 Kč má touchpad, Bluetooth i české popisky|D|05.8. 12:45|P|Alzácká klávesnice Eternico K200S zlevnila o 30 % na 419 Kč. • Bezdrátově se připojí ke třem zařízením, má české popisky a touchpad. • Spíš než k počí...|X|Alzácká klávesnice Eternico K200S zlevnila o 30 % na 419 Kč. • Bezdrátově se připojí ke třem zařízením, má české popisky a touchpad. • Spíš než k počítači se hodí na klín nebo konferenční stolek k televizoru.
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Spotify má problém. Aplikace zpomaluje, zamrzá a přerušuje přehrávání i na výkonných telefonech|D|05.8. 11:45|P||X|
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|NASA ukázala silně poškozená kola roveru Curiosity. Přesto po 13 letech dál neúnavně zkoumá Mars|D|05.8. 10:55|P|Kola roveru Curiosity po letech na Marsu nesou výrazné stopy opotřebení. Přesto vozítko dál pokračuje ve své misi a sbírá cenná data.|X|Po téměř 14 letech na povrchu Marsu nese rover Curiosity stále viditelnější stopy své náročné služby. Nejnovější snímky zveřejněné NASA však ukazují značně opotřebovaná kola, na kterých se podepsaly desítky odjetých kilometrů po marťanských skalách. Přesto je vozítko podle agentury stále v dobré kondici a bez větších omezení pokračuje ve vědeckém výzkumu.
-Poškozená kola jako důkaz odolnosti roveru
-Curiosity přistál na Marsu v srpnu 2012 s plánovanou životností pouhé dva roky. Místo toho už více než 13 let zkoumá povrch Marsu a během své mise urazil přes 32 kilometrů. Takto dlouhý provoz se ale podepsal na jeho hliníkových kolech, která jsou plná prasklin, promáčklin a děr.
-Inženýři z NASA stav kol pravidelně kontrolují pomocí kamer umístěných přímo na roveru. Díky pořízeným snímkům mohou sledovat míru opotřebení a podle potřeby upravovat trasu tak, aby se Curiosity vyhýbal nejostřejším kamenům a skalám, které kola poškozují nejvíce.
-Ani výrazné opotřebení ale misi nezastavilo. Curiosity dál sbírá cenné poznatky o geologické historii Marsu a pomáhá vědcům lépe porozumět jeho minulosti. Zkušenosti získané během dlouholetého provozu navíc posloužily při vývoji novějšího roveru Perseverance, který dostal výrazně robustnější a odolnější konstrukci kol.|E||T|Ošklivé elektrické Ferrari je vyprodané. Internet prorokoval fiasko, šéfové tech firem z USA a Číny vytáhli peněženky|D|05.8. 10:45|P|Když se v květnu představilo první elektrické Ferrari všech dob, strhla se na internetu bouře všemožných názorů proč a jak je úplně špatně. Je elektri...|X|Když se v květnu představilo první elektrické Ferrari všech dob, strhla se na internetu bouře všemožných názorů proč a jak je úplně špatně. Je elektrické, má tvary crossoveru, nikdo ho kupovat nebude, a když se zákazníci budou cukat, italská značka jim neprodá své výjimečnější modely se spalovacími ...
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|EU vydala katastrofální předpověď dezertifikace kontinentu. Do roku 2040 bude ohrožené celé Polabí a jih Moravy|D|05.8. 10:13|P|Společné výzkumné centrum Evropské komise JRC před pár dny vydalo novou publikaci, ve které se vědci na základě přesnějších dat z družic programu Cope...|X|Společné výzkumné centrum Evropské komise JRC před pár dny vydalo novou publikaci, ve které se vědci na základě přesnějších dat z družic programu Copernicus a nových modelů snaží lépe charakterizovat postupnou degradaci půdy v Evropě a riziko dezertifikace.
-
-Na první pohled by se mohlo zdát, že ...
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Vyšel první gameplay z nové Mafie s mladým donem Salierim v hlavní roli. Zahrajeme si ji už za 9 dní|D|05.8. 09:59|P|Už 14. srpna vyjde první rozšíření pro titul Mafia: Domovina. DLC nese název Muž cti a ústřední postavou nebude nikdo jiný než Ennio Salieri. Nyní se ...|X|Příběhové rozšíření Muž cti pro hru Mafia: Domovina dostalo první více než tříminutovou ukázku ze samotné hry. DLC zavede Enza Favaru do dřívějšího období jeho služby rodině Torrisi. Hlavní postavou bude mladý Ennio Salieri před odchodem do Ameriky. DLC Muž cti přidá dvě nové příběhové kapitoly, ve kterých si Enzo a Salieri budou vyřizovat staré účty. Rozšíření tak zachytí období, kdy si pozdější boss z první Mafie teprve budoval respekt a postavení na Sicílii.
-Gameplay ukázka naznačuje tradiční kombinaci přestřelek, automobilových závodů a samostatných úkolů. Salieri bude tentokrát přímým partnerem hlavního hrdiny.
-Zakázky ve Volné jízdě
-Výraznou část obsahu dostane oblíbený režim Volné jízdy, ve kterém si Salieri zřídí základnu ve skladu v Porto Almaro. Odtud bude zadávat náročnější výzvy a nové zakázky, v nichž se vydáme za cenným kontrabandem nebo budeme převážet ukradený náklad. Mezi dalšími úkoly vyzkoušíme třeba odtahování luxusních aut. Za plnění hráč obdrží Dinari, které bude možné směnit za nové zbraně, oblečení, vozidla nebo koně.
-imagesWidgetInText284644343814 image db entry missing on stable
-Nejkontroverznější částí se stanou speciální vlastnosti některých zbraní. Jako příklad je uváděn především vrhací nůž Rimbalzu, který se po zásahu odrazí směrem k dalšímu protivníkovi. Jedním hodem tak půjde tiše zneškodnit několik nepřátel, ovšem za cenu historických a fyzikálních nepřesností.
-Nové aktivity se v rámci DLC objeví napříč celou oblastí Valle Dorata. Mapa dostane další sběratelské předměty nebo kaskadérské skoky s dobovými automobily.
-Muž cti bude samozřejmě vyžadovat základní hru Mafia: Domovina a některé části nového DLC se zpřístupní teprve po dosažení stanoveného postupu v hlavním příběhu.
-Zdroj: 2K|E||T|Datový startup o hodnotě stovek milionů dolarů mění šéfa. Místo Kanaďana nastupuje Slovák z pozice CTO|D|05.8. 08:49|P|Datová technologická firma Atacaama mění šéfa – místo Kanaďana a někdejšího hokejisty z NHL Mike McKeeho nastupuje do pozice CEO Martin Záhumenský, kt...|X|Datová technologická firma Atacaama mění šéfa – místo Kanaďana a někdejšího hokejisty z NHL Mike McKeeho nastupuje do pozice CEO Martin Záhumenský, který dosud působil jako technologický ředitel (CTO). Společnost s hodnotou stovek milionů dolarů, která vyrostla z Prahy a pobočky má na dalších kontinentech, střídá vedení po třech letech. McKee jej v roce 2023 převzal přímo od spoluzakladatele Michala Klause.
-Podle vyjádření, které Lupa získala, vnímalo představenstvo potřebu změny, protože u CEO si nyní představovalo „jiný profil“ pro další kapitolu. „To, co od nás zákazníci požadují, se změnilo. Před dvěma lety chtěli vědět, zda jsou jejich data čistá, zdokumentovaná, řízená a konsolidovaná. Dnes chtějí vědět, jestli mohou stejná data bezpečně využít pro své AI agenty,“ popisuje nově jmenovaný CEO.
-Záhumenský je klíčovou postavou v Ataccamě více než 18 let. Působil v Accenture na projektech datové integrace, odkud přešel do Adastry, kde pomáhal vyvíjet a prodávat první řešení Ataccama pro správu dat. Firma se poté od Adastry oddělila. Mezi roky 2013 a 2020 spoluzaložil a vedl společnost Instarea, zaměřenou na monetizaci dat v rámci skupiny Adastra. Coby CEO ji dovedl mezi 1 000 nejrychleji rostoucích evropských firem podle Financial Times (FT 1000). Pak spoluzaložil Market Locator a působil jako jeho CEO. V roce 2020 se oficiálně vrátil do vedení Ataccama.
-Ataccama pomáhá firmám zpracovávat data, byznys obecně získává velkou pozornost díky nástupu AI. V posledních měsících se firma soustředí především na poskytování agentické platformy. Ta pomáhá nasazovat AI a data „modernizovat“. Společnost vznikla v roce 2008 v Praze a kromě toho má kanceláře v Brně a Bratislavě, ale také v Bostonu, Londýně, Torontu a Sydney.
-Chlubí se umístěním na předních příčkách žebříčku od Gartneru v kategorii datových společností a na konci loňska ohlásila strategickou investici, kterou poskytl americký softwarový podnik Snowflake obchodovaný na newyorské burze (hodnota 76 miliard dolarů). Firma má hodnotu několika set milionů dolarů a už několik let z její strany zní, že by ráda získala status jednorožce, tedy společnosti s hodnotou nad jednu miliardu dolarů.
-Růst ale není tak rychlý. Letos zároveň Ataccama oznámila propouštění, které se mělo dotknout firmou napříč regiony, ve kterých působí.
-„Mike provedl Ataccama důležitým obdobím. Rozšířil globální působení firmy, nastavil její provozní procesy, což nás posunulo k další generaci cloudových agentických produktů, a upevnil pozici společnosti v Severní Americe,“ říká Dewey Awad, partner ve společnosti Bain Capital Tech Opportunities a člen představenstva Ataccama.|E||T|Malý sodíkem chlazený reaktor ARC 100 míří k prvnímu nasazení. Nabídne výkon 100 MW a staví na osvědčeném konceptu|D|05.8. 05:45|P|Americká firma plánuje v roce 2029 spuštění nového modulárního reaktoru • Reaktor využívá tekutý sodík a navazuje na prověřený historický koncept • Za...|X|Americká firma plánuje v roce 2029 spuštění nového modulárního reaktoru • Reaktor využívá tekutý sodík a navazuje na prověřený historický koncept • Zařízení posílí vývoz technologií a zajistí stabilní elektřinu pro datacentra
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Google jednou aktualizací odstřihl některé Android telefony od bezkontaktních NFC plateb|D|05.8. 05:30|P|Google po aktualizaci znemožnil vybraným čínským telefonům placení skrze NFC. Přestože se vše vrátilo do pořádku, jedná se o skvělou ukázku, jak velko...|X|Majitele některých Android telefonů čekalo o víkendu nepříjemné překvapení. Po aktualizaci Google Play Services totiž na vybraných zařízeních přestaly fungovat bezkontaktní platby skrze Google Wallet, přestože aplikace dál zobrazovala uložené karty a na první pohled nehlásila žádnou chybu.
-Problém tentokrát nebyl na straně koncového zařízení, nýbrž u samotného Googlu, který NFC platby těmto zařízením jedním příkazem jednoduše odstřihl.
-Google může rozhodnout, zda telefonem zaplatíte
-Podle analýzy uživatelů a vývojářů z komunit XDA a Redditu nešlo o běžnou chybu aplikace. Google Play Services totiž dokáže rozpoznat, že telefon používá čínskou variantu firmwaru, a následně mu deaktivuje komponentu HCE (Host Card Emulation) zajišťující bezkontaktní platby.
-Problém se tak dotkl majitelů telefonů čínských značek jako Xiaomi, Vivo, Oppo nebo OnePlus, kteří si pořídili model určený původně pro čínský trh, například prostřednictvím eBay nebo jiných evropských tržišť. Po automatické aktualizaci Google Play Services, která probíhá na pozadí bez jakéhokoliv zásahu uživatele, jejich telefony náhle přišly o možnost platit přes NFC.
-Nakonec se vše vyřešilo, jelikož se ukázalo, že šlo o chybu na straně Googlu. Ten do běžného distribučního kanálu omylem vypustil beta verzi určenou jen pro omezený okruh testerů.
-Celá situace je však dobré připomenutí toho, že ani špičkový hardware neznamená úplnou kontrolu nad koupeným zařízením. Pokud je telefon závislý na službách velkých společností, může jediná aktualizace změnit fungování prakticky přes noc.
-zdroj: Notebookcheck, Reddit, XDA forum|E||T|Kvalifikované elektronické podpisy jsou zpět, chyba v ověřování zůstává|D|05.8. 04:30|P|Společnost Adobe již opravila nesprávný překlad, který v jejím Readeru dělal z kvalifikovaných elektronických podpisů neexistující „prověřené elektron...|X|Počátkem července jsem zde na Lupě psal o tom, jak nové verze hojně používaných programů Adobe Acrobat Reader odverze 26.001.21662 z 9. června matou uživatele nesprávným českým překladem anglického Qualified Electronic Signature: z kvalifikovaných elektronických podpisů, jak je zná naše právní úprava, dělají neexistující „prověřené elektronické podpisy“, které naopak nezná ani právní úprava, ani běžná praxe.
-Naštěstí to byla jen krátká epizoda, která končila verzí 26.001.21691. Od verze 26.001.21745 z 23. července jsou kvalifikované elektronické podpisy zpět. Jak ukazuje i předchozí obrázek.
-Nakonec tak „prověřené elektronické podpisy“ zůstaly jen na české verzi vlastní stránky společnosti Adobe, na které popisuje různé druhy elektronických podpisů.
-Chyba v ověřování zůstává
-Mohlo by se tedy zdát, že tato trapná letní epizoda je již jen historií. Bohužel tomu tak není, protože druhý problém, který přišel souběžně s „prověřenými“ podpisy, dosud vyřešen nebyl. Jde o problém s ověřováním kvalifikovaných a uznávaných elektronických podpisů, založených na (kvalifikovaných) certifikátech od společnosti I.CA. Ta o problému již také informovala.
-Podstatu problému jsem popisoval v předchozím článku, stejně jako způsob její nápravy vlastními silami. Proto jen obrázek ukazující, že ani v aktuální verzi 26.001.21771 nedošlo k nápravě a kvalifikované certifikáty od I.CA nadále čerpají důvěru jen ze seznamu AATL. Což má ten důsledek, že Reader si pak nedovodí, že jde o kvalifikovaný certifikát (a že samotný podpis může být buď kvalifikovaný, nebo uznávaný, přesněji: zaručený, založený na kvalifikovaném certifikátu).
-Jen pro připomenutí z předchozího článku: řešením je vyprázdnit vlastní úložiště důvěryhodných certifikátů v Readeru, a pak certifikáty znovu stáhnout v obráceném pořadí (nejprve EUTL a teprve pak AATL). Ale jednodušší je udělat z certifikátu vydavatele (zejména: I.CA EU Qualified CA2/RSA 06/2022) kořenový certifikát. Pak už se Reader chová tak, jak by měl, viz následující obrázek.
-Jak si zkontrolovat kotvu důvěry?
-Jak jsem také popisoval v předchozím článku, verze 26.001.21662 z 9. června přinesla ještě jednu významnou změnu: místo pouhého konstatování o čerpání důvěry ze seznamu EUTL je nově „upovídanější“ a upřesňuje, že důvěra byla čerpána z lokální verze důvěryhodného seznamu EU, který byl naposledy zkontrolován určitého konkrétního dne.
-Je to vlastně disclaimer, který přenáší odpovědnost za případné dosud nepromítnuté změny na uživatele – který je nabádán, aby si sám zkontroloval, zda v mezidobí (od „zkontrolovaného dne XY“ do aktuálního času, kdy probíhá ověřování) nedošlo k nějaké změně v obsahu důvěryhodných seznamů. Současně je uživateli nabízen proklik na prohlížeč oněch důvěryhodných seznamů.
-Pro toho, kdo se nechce zabývat detaily, existuje poměrně jednoduché řešení: podívat se, v jaké členské zemi EU byl vydán (kvalifikovaný) certifikát, na kterém je podpis založen. Pak kliknout na onen odkaz a podívat se na datum poslední aktualizace národního seznamu příslušné členské země. A srovnat si data.
-U příkladu z předchozího obrázku jde o (kvalifikovaný) certifikát vydaný v ČR a Reader hlásí „poslední zkontrolování“ 3. 7. 2026. Z následujícího obrázku stránky (na kterou se uživatel dostane po kliknutí na nabízený odkaz) je patrné, že národní důvěryhodný seznam ČR byl vydán (resp. naposledy aktualizován, resp. podepsán) 24. 6. 2026. A jelikož datum 24. 6. 2026 předchází poslední kontrole Readeru (3. 7. 2026), lze z toho dovodit, že k žádné relevantní změně nedošlo.
-Správně by se totéž mělo udělat i s časovým razítkem či razítky, pokud jimi je podpis opatřen. V případě časových razítek od tuzemských vydavatelů se to ale „sveze“ se samotným podpisem.
-Co v ostatních případech?
-Než se pustíme do podrobností a do toho, co dělat v případě opačné časové souslednosti obou časových okamžiků, řekněme si nejprve něco málo o důvěryhodných seznamech. Ten „unijní“, zkratkou LOTL (od List Of Trusted Lists), je vlastně jen jednoduchým rozcestníkem, který odkazuje na jednotlivé národní důvěryhodné seznamy (o tom českém podrobněji zde).
-Národní seznamy jsou místem, kde se zveřejňují ty („národní“) služby, které mají kvalifikovaný status. Ten nezískávají rozhodnutím příslušného orgánu (u nás aktuálně DIA), ale právě až zapsáním na národní důvěryhodný seznam. A stejně tak o něj přicházejí – tím, že jsou na stejném národním seznamu zveřejněny jako služby s odebraným (anglicky Withdrawn) kvalifikovaným statusem. A právě takovéto odebrání je tím, co by si uživatel měl sám zkontrolovat.
-Příklad ukazuje následující obrázek: jsou na něm uvedeni všichni tuzemští kvalifikovaní poskytovatelé služeb vytvářejících důvěru, i s výčtem těch jejich služeb, které mají či měly kvalifikovaný status. A pro snadné odlišení jsou služby s kvalifikovaným statusem žluté, zatímco ty s již odebraným statusem jsou černé.
-K tomu si dodejme, že četnost odebírání (resp. zveřejnění s odebraným statusem) je minimální. Pokud k nějaké změně národního seznamu dochází, je to typicky „přidání“ (udělení kvalifikovaného statusu nové službě), než „odebrání“.
-Důvody pro odebrání kvalifikovaného statusu totiž nastávají poměrně vzácně. Může to být změna právní úpravy (viz dále). Nebo oslabení kryptografických algoritmů, se kterými služba pracuje. Případně nějaký bezpečnostní incident, pokud by k němu došlo. Například u certifikátů koncových držitelů by se to řešilo jejich revokací, u služeb spočívajících ve vydávání certifikátů či časových razítek se to řeší odebráním jejich kvalifikovaného statusu.
-Předchozí obrázek ukazuje, že v ČR došlo k odebrání kvalifikovaného statusu jen u služeb vydávání časových razítek a bylo to jen v souvislosti se změnou právní úpravy. Jsou to takové služby, které byly zřízeny a provozovány před účinností současného nařízení eIDAS – a zde jsou uvedeny s odebraným kvalifikovaným statusem (vesměs k 1. 7. 2016, kdy nařízení nabylo účinnosti) hlavně proto, aby nebyly považovány za kotvy důvěry.
-Příklad jedné konkrétní služby časových razítek od I.CA, fungující od roku 2013, ukazuje následující obrázek. Kvalifikovaný status jí byl odebrán 1. 7. 2016.
-Jak funguje kotva důvěry?
-Ono „nepovažování za kotvu důvěry“ si opět zaslouží malé vysvětlení, stejně jako samotný princip kotev důvěry.
-Služby spočívající ve vydávání (kvalifikovaných) certifikátů či (kvalifikovaných elektronických) časových razítek jsou na důvěryhodném seznamu reprezentovány svým certifikátem. V případě podpisů (stejně jako pečetí) jsou to typicky certifikáty té dceřiné autority, která vydává (kvalifikované) certifikáty pro elektronické podpisy či pečeti přímo jejich koncovým držitelům, a svým certifikátem je také pečetí.
-Při ověřování podpisu na dokumentu pak příslušný nástroj (např. Adobe Reader) stoupá od podpisového certifikátu po tzv. certifikační cestě, tvořené posloupností certifikátů vydavatelů, resp. certifikačních autorit, a snaží se najít takový certifikát (autority), který je uveden na důvěryhodném seznamu s (uděleným) kvalifikovaným statusem.
-Pokud jej najde, takovémuto certifikátu důvěřuje bez dalšího. A neprovádí ani kontrolu stavu jeho revokace, jaká se naopak musí provádět u certifikátů koncových držitelů. Může totiž předpokládat, že pokud by k obdobě revokace byl důvod, bude to řešeno právě odebráním kvalifikovaného statusu, resp. zveřejněním služby s odebraným statusem.
-A hlavně: takový certifikát, který nástroj najde na důvěryhodném seznamu (s uděleným kvalifikovaným statusem), může využít k tomu, aby důvěru v něj přenesl na všechny certifikáty, které byly v rámci příslušné služby vydány. Přesněji: které byly podepsány (opečetěny) přímo příslušným certifikátem na důvěryhodném seznamu (zde pro jednoduchost zanedbáváme delší certifikační cesty). Právě proto se takovému certifikátu říká kotva důvěry.
-Konkrétní příklad ukazuje následující obrázek: jde o podpis, založený na (kvalifikovaném) certifikátu (s příznakem umístění soukromého klíče na kvalifikovaném prostředku, alias QSCD), viz horní část obrázku. Tento certifikát vydala dceřiná autorita I.CA, konkrétně I.CA EU Qualified CA2/RSA2022, viz prostřední část obrázku. A certifikát této dceřiné autority je právě tím, kterým je na národním důvěryhodném seznamu reprezentována konkrétní kvalifikovaná služba vydávání kvalifikovaných certifikátů (pro elektronický podpis i elektronické pečeti), viz spodní část obrázku.
-Nyní již se můžeme vrátit k otázce v úvodu této kapitoly: co dělat v případě, kdy „naposledy zkontrolováno“ ze strany Readeru předchází datu vydání (resp. aktualizace) příslušného národního důvěryhodného seznamu: je potřeba zkontrolovat, zda náhodou nedošlo k odebrání kvalifikovaného statusu té služby, v rámci které byl podpisový (či pečetící) certifikát vydán. Sice je to velmi málo pravděpodobné, ale stát se to může.
-Důvěryhodný ještě nemusí být kvalifikovaný
-A ještě jedno upřesnění: pokud se právě popsaným způsobem dá od nějaké kotvy důvěry dovodit důvěra v certifikát, na kterém je založen konkrétní podpis či pečeť, ještě to nutně neznamená, že jde o kvalifikovaný certifikát (a tím pádem alespoň o uznávaný podpis či pečeť, případně kvalifikovaný podpis či pečeť).
-Jde skutečně jen o přenos důvěry (od kotvy dále, resp. „níže“), nikoli o vyjádření kvalifikovaného statusu koncového certifikátu. Takové službě vydávání certifikátů, která má kvalifikovaný status a je na důvěryhodném seznamu reprezentována svým certifikátem, nic nebrání v tom, aby kromě kvalifikovaných certifikátů vydávala (a stejným certifikátem pečetila) i takové certifikáty, které nejsou kvalifikované.
-To, zda jde či nejde o kvalifikovaný certifikát (a také zda je to certifikát pro podpis či pečeť), se pozná až podle samotného obsahu certifikátu (v rozšíření QCStatements).
-Ostatně, současné vydávání kvalifikovaných i ne-kvalifikovaných (komerčních) certifikátů stejnou dceřinou autoritou je právě příklad I.CA a důvod toho, proč se chyba v ověřování v Readeru projevuje právě u ní, a ne u dalších tuzemských autorit: certifikát dceřiné autori...
-(Pokracovani na webu)|E||T|AMD chybí jen kvartál nebo dva, aby přerostlo Intel. Jeho tržby zlomily další rekord, v Q3 už překonají 13 miliard $|D|05.8. 04:24|P|AMD má zcela rekordní tržby: Jeho rival Intel se teď sice trochu uzdravil a zase o něco utekl, ale AMD by ho mohlo třeba už začátkem roku 2027 přerůst...|X|Už jsme tu měli finanční výsledky za druhé čtvrtletí od Intelu, kterému hodně pomohl boom „agentické inteligence“, na kterém konečně může vydělávat jeho serverová divize, jelikož tyto aplikace už nevyžadují jen GPU, ale i CPU. Teď výsledky za Q2 2026 (tedy duben až červen) zveřejnilo i AMD, takže se můžeme podívat, zda ho trend podobně nadnáší.
-Finanční výsledky AMD za Q2 2026
-Na rozdíl od Intelu zdá se podmínky na trhu nevedly k tomu, že by AMD mělo dramaticky vyšší tržby, než byl odhad – nicméně tyto rozdíly mohou být nejen věcí odlišného úspěchu, ale také klidně jen odlišné politiky při stanovení samotných prognóz. AMD po prvním kvartálu předpokládalo na Q2 tržby by výši 11,2 miliardy $, plus minus 300 milionů. Reálné tržby jsou jen těsně nad horním okrajem odhadu: 11,536 miliardy $. Pro AMD to znamená meziroční nárůst o 50 % proti tržbám v Q2 2025. Jde o nový dosavadní rekord firmy.
-Hrubá marže dosáhla 54 % (v standardních, tzv. GAAP číslech), což už se blíží maržím, které kdysi míval Intel. Jak ještě uvidíme, to je způsobeno tím, že víc než polovina (58 %) tržeb AMD teď pochází ze serverových CPU a GPU. Podíl toho lukrativnějšího segmentu na celkových tržbách je vyšší, než se kdy podařilo docílit Intelu, takže se tím mohou rozředit horší marže z procesorů, grafik a zejména čipů pro konzole. Provozní marže vycházela na 17 % a AMD vytvořilo čistý zisk 2,297 miliardy $, 1,38 $ na jednu akcii.
-Datacentrový byznys a AI jasně dominují
-Jak již bylo zmíněno, celých 58 % celkového výsledku jsou tržby segmentu Data Center. Ten utržil 6,718 miliardy $, což je nárůst o 107 % proti minulému roku (Q2 2025). Intel měl mimochodem ze své datacetrové divize ve stejném období 6,262 miliardy $, což byl meziroční nárůst o 59 %. Intel nejspíš měl vyšší tržby za serverové procesory, ale AMD to bohatě dorovnalo a překonalo svými tržbami za datacentrová GPU Instinct. A těmi bude nejspíš nad Intelem v serverech vítězit i nadále, Intel totiž zatím významná datacentrová GPU či AI akcelerátory víceméně nemá. Provozní zisk v segmentu Data Center mělo AMD mimochodem 2,103 miliardy $.
-Segment Embedded (což jsou zejména produkty někdejšího Xilinxu) měl tržby 977 milionů $, což je o 19 % lepší než před rokem. Tento segment měl za sebou pár let útlumu kvůli ochlazení poptávky, teď se konečně oklepává. Provozní zisk byl 386 milionů $ (o 40 % lepší než před rokem).
-Segment Client & Gaming měl tržby 3,841 miliardy $, s meziročním nárůstem o 6 %, což mnoho není. Nicméně do tohoto segmentu spadají grafické karty Radeon, procesory pro PC a notebooky a semi-custom APU pro herní konzole. U všech těchto segmentů by se teď dalo čekat, že trpěly propadem prodejů kvůli brutálně vystřelivším cenám pamětí a SSD, takže vzhledem k této situaci je meziroční zlepšení tržeb ještě relativně potěšující. Otázka je, jak se této divizi bude dařit v dalších měsících nebo dokonce letech, pokud krize s cenami pamětí potrvá dlouhodobě. Provozní zisk byl ovšem v druhém čtvrtletí 582 milionů $ a to je o 24 % horší, než před rokem. V něm už se tedy problémy projevily.
-Segment Gaming výrazně utrpěl, hlavně kvůli konzolím?
-Rozdělení tržeb tohoto segmentu je takovéto: 3,062 miliardy $ vynesly procesory Ryzen (segment Client), což je meziroční zlepšení o 22,5 % procent. Segment Gaming měl tržby 779 milionů $, což je zhoršení o 30,6 % proti loňskému roku (Q2 2025: 1,122 miliardy $). AMD říká, že za tímto propadem stojí to, že klesly prodeje semicustom APU, tedy čipů pro konzole. Nemusí to nutně znamenat, že se prodeje samostatných GPU Radeon nezhoršily rovněž, ale dominovat by měl efekt výpadku prodejů do konzolí.
-Výhled na Q3 2026: Nejlepší časy v historii
-AMD by se mělo ještě lépe (alespoň v celkovém součtu – jak bude Gamingu, to je otázka) dařit i v nyní běžícím třetím kvartálu. Firma nastavila prognózu tržeb na přesně 13,0 miliardy $, ale jako vždy plus minus 300 milionů, takže jde ve skutečnosti o okno 12,7–13,3 miliard $. Ovšem realita téměř jistě překročí střed odhadu a poměrně pravděpodobně i jeho horní okraj. Tudíž je prakticky jisté, že tržby AMD v Q3 pokoří metru 13 miliard dolarů za jeden kvartál. To bude samozřejmě nový rekord: 13,0 miliardy by byl meziroční růst o 41 % proti Q3 2025.
-AMD očekává Non-GAAP marži 56 % (to je stejné, jako non-GAAP číslo za Q2) a provozní náklady 3,65 miliardy $, což je nárůst proti druhému kvartálu (3,394 miliardy $; oboje jsou non-GAAP čísla). Vzhledem k výrazně vyšším tržbám by ale zisk zřejmě měl být vyšší, než v aktuálním kvartálu. I když uvidíme, zda se neprojeví nějaké jednorázové položky.
-AMD by mohlo v horizontu jednoho roku přerůst Intel
-Každopádně to znamená, že AMD dál výrazně roste. Intel měl po čtyři kvartály mezi Q2 2025 a Q1 2026 tržby „jen“ mezi 12,9 a 13,7 miliardami $, což by znamenalo, že ho AMD těmito výsledky už skoro dorostlo.
-Intelu se ale zrovna teď v druhém kvartálu roku 2026 podařilo výrazně povyskočit: jeho tržby se dostaly na 16,1 miliardy $ a v třetím kvartálu by mohl sahat po 17 miliardách. Tím tedy zase firmě AMD unikl. Ale je možné, že v čtvrtém kvartálu se tržby firem zase přiblíží a uvidíme, zda se Intelu podaří držet s AMD tempo. Pokud nebude jeho růst tržeb podobně rychlý, tak se může stát, že ho AMD někdy v možná již v Q1 nebo v Q2 2027 překoná tržbami a dost možná i zisky. Něco takového se zdálo takřka nemožné nejen v dobách nejhlubší krize AMD v letech 2014–2016 (kdy jeho tržby klesaly i na úrovně hluboko pod 1 miliardou $ za kvartál), ale i ještě před pěti lety.
-Zdroj: AMD|E|
+Než začne platit nová charta, musí BBC vzhledem k okolnostem ušetřit dalších 500 milionů liber a během dvou let zrušit 1800 až 2000 pracovních míst. Nový ředitel tak musí současně omezovat náklady a investovat do služeb, které mají oslovit mladší publikum.|E||T|From asking to doing: How the world is putting ChatGPT to work|D|06.8. 00:00|P|New OpenAI Signals data shows how people use ChatGPT worldwide, with country-level insights on adoption, usage trends, and evolving behavior.|X|From asking to doing: How the world is putting ChatGPT to work
+New country-by-country data reveals how AI adoption is spreading and changing.
+AI is moving from something people ask to something they put to work.
+For the first time, OpenAI is publishing country-by-country data showing how people around the world use ChatGPT. The findings reveal a technology that is moving beyond answers and into action, spreading beyond early adopters, and becoming useful to more people in more ways:
+- From asking to doing: At work, people are more than twice as likely to use ChatGPT to complete a task or create something, from writing and coding to analysis, than they are outside work.
+- AI adoption is becoming more global: Countries across Latin America, Africa, and Oceania are catching up to early adopters, narrowing the global adoption gap.
+- AI is moving beyond text: Multimedia is the fastest-growing use case globally, accounting for 7.8% of messages and more than one in ten in countries including Brazil and Colombia.
+- AI is reaching beyond early adopters: Usage among people over 35 is rising in nearly every country. In France and Czechia, their share of messages increased by more than 10 percentage points in the past year.
+Taken together, the data points to a clear shift: AI is no longer just helping people find answers. It is helping more people, in more places, get things done.
+This new data is available to view or download on OpenAI Signals, our hub for data, research, and analysis, from the OpenAI Economic Research Team. These country-level statistics will help people, including policymakers and researchers around the world, better understand how more than 1 billion people are putting ChatGPT to work.
+The Signals dataset specifically reflects messages sent within ChatGPT Free, Go, Plus, and Pro accounts—the group of accounts generally managed by individuals rather than organizations.
+The data reflect a trend that has appeared in recent headlines, especially since the rollout of ChatGPT Work: people are increasingly using the technology, particularly for professional pursuits. In these settings, users are more frequently “doing”—using ChatGPT to produce an output or perform a task.
+This type of work includes applications such as editing, coding, or conducting an analysis. Our data shows that, across the globe, people are more than twice as likely to use ChatGPT this way at work than outside of work. Outside of work, use is more exploratory: “asking,” or seeking information and clarification, remains the largest category.
+Continuing the steadily climbing trend worldwide documented in June, the countries and regions that began their AI journeys with lower ChatGPT per-capita adoption rates are gradually catching up to the established early adopters.
+For Q2 2026, our team updated our usage rankings across countries (see previous quarterly rankings here). The chart below shows how the per-capita leaderboard changed since the first quarter of 2026.
+Notably, in the second quarter, usage in parts of Latin America, Oceania, and Africa increased faster than usage in other parts of the world, with Peru, Uruguay, and Costa Rica rising the most among countries in global rankings. Adoption continues to rise in North America and Europe, but parts of the Southern Hemisphere are catching up in per-capita adoption rates.
+As new capabilities emerge, specific use cases command people’s attention and drive adoption. Take multimedia generation, analysis, and retrieval, for example. Since the release of ChatGPT Images 2.0 in April 2026, the share of messages across the world focused on multimedia use increased to 7.8%. While it still lags behind the leading use cases of practical guidance, writing, and information-seeking, multimedia use has been on a consistent upswing year-to-date.
+Drilling deeper into the category of multimedia messages, the data shows distinctive differences among countries and regions. The graphic below demonstrates the uptick in Latin America where, in countries like Brazil and Colombia, more than one in ten messages to ChatGPT is categorized as multimedia.
+The quarter-over-quarter changes in per-capita adoption are not limited to use cases and regions alone. The data also demonstrate differences in adoption by age cohort.
+The trend line over the last year shows that the percentage of messages sent by people over 35 increased in almost every country. Year over year, these users now account for a 5% higher share of messages than they did 12 months earlier.
+Looking at the data country-by-country, adoption among people aged 35 and older is growing particularly quickly in several countries. The chart below, for example, shows how the share of ChatGPT messages sent by users 35 and above shifted significantly in several European countries. In France and Czechia, the share of messages sent by users 35 or older increased by more than 10 percentage points in the last year.
+Almost three-quarters of European countries saw larger-than-average increases in their share of messages sent by these users, while the opposite pattern emerged in some Southeast Asian countries, such as Singapore. Overall, the share of messages sent by these users increased in six of the eight countries in the region, albeit by only a small margin.
+OpenAI Signals is the OpenAI Economic Research team’s platform for sharing our data and research with the world. In addition to our research, we publish regular updates on how individuals and businesses use ChatGPT. We encourage you to download the data here and explore our methodology here(opens in a new window).|E|

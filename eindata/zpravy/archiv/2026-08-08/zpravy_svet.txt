@@ -1,3 +1,22 @@
+|T|Chatboti toho o nás vědí víc, než bychom chtěli|D|08.8. 00:55|P|V online světě je ochrana soukromí zásadním bodem, a to i při komunikaci s AI chatboty. Čím méně osobních věcí jim sdělíte, tím lépe. Přesto je dost m...|X|Článek
+Brian X. Chan, redaktor věnující se technologiím, je pravidelný uživatel chatbotů ChatGPT a Gemini. A protože se právě technologiím věnuje více než jiní, ví, že bezpečnost a ochrana soukromí jsou v dnešní době při komunikaci s inteligentními vymoženostmi zásadní.
+Stejně jako mnozí další si dává velký pozor na to, co s chatboty sdílí. Proto byl poměrně překvapen, co všechno jsou schopni si z proběhlých komunikací odvodit, i když jim to přímo nesdělil.
+„Když jsem experimentoval s některými prompty a ptal se, co jsou o mně chatboti schopni uhodnout či vydedukovat, byl jsem dost znepokojen,“ uvedl pro The New York Times.
+Uvedl několik bodů, ve kterých byli chatboti ohledně jeho soukromí až děsivě přesní.
+- Příjem – poměrně přesnou výši zjistil i z toho, že má německé auto, se kterým žádal chatbota o pomoc při opravě. Napomohlo k tomu i zjištění, že zaměstnává chůvu, jejíž smlouvu sepisoval s AI.
+- Zdravotní potíže – chatboti si byli více než jistí jeho dlouhodobými potížemi s nohama. Vzhledem k tomu, že během delší doby se několikrát ptal na řešení potíží s bolestmi prstů.
+- Psychologický profil – odhadli i jeho sklon ke skepsi založený na tom, že často upozorňuje na chyby chatbotů. A také sklony k iluzi kontroly odvozené z dotazu, kdy se ptal, za jak dlouho vychladne bochník chleba.
+„Každý bod sám o sobě by nebyl tak znepokojivý. Ale když jsem je viděl sepsané společně, jasně to ukázalo, že mě AI chatboti znají téměř stejně dobře jako někteří z mých nejbližších přátel, včetně manželky.“
+Co odvozují z uchovaných dat?
+O tom, že si chatboti uchovávají zjištěná data, mnoho uživatelů ví. Závěry jejich chování, co a jakým způsobem z těchto konverzací vyvozují, už tak jasné nejsou.
+Jak Chen uvedl, chatboti mohou být povzbuzováni ke sdělení toho, co o vás vědí. Nadšenci do umělé technologie často na webu podobné výzvy sdílejí, včetně té asi nejčastější: „Řekni mi všechno, co jsi o mně zjistil, co jsem nikdy neřekl.“
+Mnohé informace budou logicky odvozené z toho, co jste někdy určitě sdělili nebo nastínili, mnohé další ale ne. Jednoznačně to tak nastiňuje, jak dobré nástroje na vytváření specifických profilů uživatelů technologické společnosti vytvářejí.
+Pokud chcete jako Chen vyzkoušet, co o vás chatboti dokážou vyvodit, můžete zkusit následující prompty.
+- Řekni mi, co jsi o mně zjistil/a a co jsem ve skutečnosti neřekl/a. Věci, které jsi odvodil/a z toho, jak píšu, na co se ptám, včetně výše mého příjmu, věku či osobní situace.
+- Zkus předpovědět, jak bych se vypořádal/a s věcmi, o kterých jsem nikdy nemluvil/a. S penězi, stresem, rizikovým rozhodnutím…
+- Na základě všeho, co o mně víš, vyjmenuj osobnostní rysy, které u sebe nevidím. Moje nejistoty, jak působím…
+- Co jsi o mně zjistil/a citlivého, trapného? Věci, o kterých bych nechtěl/a, aby věděla veřejnost.
+Jednou z možností, jak podobnému „sondování a profilování“ co nejvíce zabránit, je vypnout povolení „paměti“ v nastavení chatbota. Nebude tak přizpůsobovat odpovědi na základě dřívějších chatů či připojených aplikací. Jak ale ukazují některé nejnovější průzkumy, ani takový krok nemusí vždy stačit.|E|
 |T|RECENZE: Marek Ztracený byl na Letné spravedlivý. Rovnoměrně potěšil diváky i sebe|D|08.8. 00:33|P|Byl to večer, jenž bude pro Marka Ztraceného i ty, kteří u toho byli jako diváci, nezapomenutelný. A vstoupí i do historie české pop music. To všechno...|X|Článek
 Jedinečnost pátečního koncertu byla v tom, že si na tak obrovskou akci troufl český umělec. Pravda, byl posílen třemi vyprodanými a úspěšnými koncerty před třemi lety v pražském Edenu, ale naopak byl mírně oslaben následující několikaměsíční pauzou, kterou si kvůli otcovským povinnostem naordinoval, a snad i tím, že loni opustil pozici vítěze mužské kategorie v anketě Český slavík, na niž ho nahradil Václav Noid Bárta.
 Velký koncert si zasloužil velkou výpravu. Pódium s molem uprostřed bylo tak dlouhé, že jeho konstrukce naplnila většinu ze 140 kamionů, které na místo s technikou postupně v minulých čtyřech týdnech dorazily. Projekce se odehrávaly na čtyřech obrovských panelech postavených přes celou délku scény a protilehlé tribuny tu délku prostě kopírovaly.

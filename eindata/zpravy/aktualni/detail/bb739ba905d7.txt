@@ -1,0 +1,9 @@
+Hardware od OpenAI je doposud zahalen tajemstvím a stále nevíme, do jaké kategorie se firma s tržní hodnotou 852 miliard dolarů vrhne. Podle posledních spekulací by mělo jít o chytrý reproduktor, na jehož vývoji se mimo jiné podílí designérské studio LoveFrom. Za ním stojí především Jony Ive, bývalý šéfdesignér Applu.
+Reproduktor bez displeje
+Zařízení má být velké přibližně jako hokejový puk a jeho cena se má pohybovat mezi 300 a 400 dolary. Konstrukce má být dostatečně malá na pohodlné přenášení jednou rukou po domácnosti, zároveň má mít uprostřed kruhový otvor. Počítá se prý i s provozem na baterii.
+Tělo má být vyrobeno převážně z kovu a působit jako prémiový produkt. Součástí výbavy má být kamerový systém s několika senzory, pozornost však budí především pohyblivé části. Některé komponenty se mají samostatně hýbat ve chvíli, kdy zařízení reaguje na uživatele. Mechanický pohyb tak má být jedním ze způsobů komunikace vedle hlasu a světel. Ive tak nejspíš bude chtít kus hardwaru polidštit obdobně jako se to povedlo Jobsovi s mluvícím Macintoshem.
+ChatGPT v místnosti
+Základem zařízení má samozřejmě být hlasová komunikace podobná současnému hlasovému režimu ChatGPT v mobilních aplikacích. OpenAI však počítá s pokročilejšími modely a přirozenější interakcí. Samostatný hardware by tak měl fungovat především jako přenosný osobní asistent. Absence displeje odpovídá snaze AI firem postavit ovládání především na konverzaci. Kamera a další senzory mohou zařízení poskytovat více informací o okolním prostředí.
+Očekávaná cena mezi 300 a 400 dolary zařízení posouvá výrazně nad většinu běžných chytrých reproduktorů. Pro srovnání se současné modely Amazonu pohybují přibližně od 40 do 240 dolarů a Google chce za malý repráček s Gemini jen 25 dolarů. OpenAI tak s cenami míří výrazně výš.
+První model se má dostat na trh během roku 2027, přičemž firma v současných plánech počítá s celou rodinou těchto zařízení.
+Zdroj: Bloomberg

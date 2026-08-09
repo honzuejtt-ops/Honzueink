@@ -1,0 +1,3 @@
+Microsoft redesignuje Správu tisku ve Windows 11. • Oficiálně to neoznámil, ale leaker novou verzi objevil v testovacích sestaveních. • Používá framework WinUI 3 a je napsaná v jazyce C#.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

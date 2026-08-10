@@ -1,0 +1,37 @@
+Model ML completes finance work more efficiently with GPT‑5.6 Sol
+Model ML uses GPT‑5.6 Sol in workflows that create editable PowerPoint and Excel files, with 21% fewer tokens per deck than Fable 5.
+Results
+21%
+Fewer tokens per PowerPoint deck than Fable 5
+Results
+16.6
+Percentage-point lead in professional readiness over Opus 5
+Results
+36%
+Fewer tokens per Excel workbook than Opus 5
+Results
+5
+Minutes to build a bespoke tearsheet, down from about one hour
+Before financial analysis can stand up in front of clients or senior decision-makers, teams have to carry it through a demanding last mile: reconciling evidence, building and formatting the file, checking every number, and linking each claim to its source. The finished PowerPoint deck or Excel workbook has to be editable and ready for scrutiny.
+Model ML cofounders and brothers Arnie and Chaz Englander saw how much work that required when, after two successful exits, they began investing through a private family office and, as builders do, building software to help themselves.
+Grown out of that software, Model ML’s agents help finance professionals carry a workflow from the initial request through research, analysis, and a finished deck or workbook. At the center, a core agent plans the work, selects the right tools, reconciles evidence, and runs calculations, routing each step to the model best suited to it, which is often GPT‑5.6 Sol. Among those tools is Model ML’s own document tooling, which creates native PowerPoint and Excel files with traceable sources.
+“Earlier models could do the work of an analyst, but the user would have to clearly break down the task, specifically what it wanted the output to look like. With GPT-5.6 Sol, we’re finding that the agent gets far closer to the final output.”
+Model ML helps finance teams by automating finance workflows end to end. From a brief and source material, the agent can carry an assignment through research and modeling to finished materials for clients or deal teams. The finance professional checks the assumptions, sources, and message before sharing the work.
+Model ML calls the product “surface-agnostic.” A finance professional can start an assignment in email, or the Model ML app, and continue it in its Microsoft Office plug-ins without explaining it again.
+That continuity extends into the finished work. For an investment committee deck, Model ML can turn a brief and source material into an editable PowerPoint. For an Excel task, the agent can start with a client template or blank workbook, gather the required data, build formulas and logic across multiple tabs, then apply finance-specific formatting to produce a complete spreadsheet or financial model.
+In Model ML’s Composite, the company’s evaluation benchmark for AI in financial services, GPT‑5.6 Sol used 36% fewer tokens per workbook than Opus 5 in an Excel workflow.
+“The user should be focused on the judgment, such as refining the assumptions or sharpening the message, and not just rebuilding the analysis.”
+By carrying the work through that last mile, the agent can also save time on individual deliverables and help teams process large volumes of source material. At one global asset manager, a bespoke tearsheet that took an analyst about an hour to assemble now takes about five minutes. In another workflow, Model ML agents processed virtual data rooms containing more than 100,000 rows and hundreds of files in one pass.
+Model ML evaluated GPT‑5.6 Sol alongside other leading models across a range of finance workflows. Its Composite evaluations follow an assignment from the initial finance brief through research and calculations to an editable deck or spreadsheet, then check the numbers, sources, formulas, and structure, as well as visual quality for presentations.
+For PowerPoint, Model ML’s Composite evaluation incorporates real workflows and spans hundreds of generated decks, with a detailed scoring rubric.
+GPT‑5.6 Sol completed the PowerPoint workflow in 100% of test cases, compared with 76% for Opus 5, and cleared Model ML’s professional-readiness gate, a measure of whether the output was ready for substantive review, in 43.3% of cases, versus 26.7%. It also led Opus 5 on deck quality, brief adherence, hierarchy, and consistency.
+Taken together, the Composite results shown above gave Model ML the evidence to expand GPT‑5.6 Sol in production, including some workflows previously handled by Opus 4.8. For PowerPoint workflows, GPT‑5.6 Sol combined competitive deck quality with a higher rate of completed, review-ready decks than Opus 5 and Fable 5, while using about 21% fewer tokens than Fable 5.
+“Ready for real work means the user can move directly into real review,” says Englander. “The numbers trace back, the workbook recalculates, the slide is editable.”
+PowerPoint gave Model ML a demanding test of whether GPT‑5.6 Sol was ready for real work. A deck can look polished and still fail in review if its numbers are wrong or untraceable, its charts are flattened, or its slides have to be rebuilt before they can be shared.
+Model ML ran the model inside its agent harness, paired with document creation and editing tools that let the agent create slides with editable graphs and tables. It keeps the original brief in context as it works, then reviews every slide visually before returning the file.
+The example below shows how Model ML’s PowerPoint output improved from GPT‑5.5 to GPT‑5.6 Sol, including clearer hierarchy and more consistent slide design.
+Today, Model ML’s harness provides the agent with toolkits it can load to access data integrations, document editing tools and skills, and code execution environments. This keeps the agent focused and gives it exactly the tools it needs to work with the user’s documents.
+Model ML reached this setup through on-site sessions with OpenAI. The teams traced how the agent planned presentations, selected tools, and maintained context, then used those findings to refine the agent’s instructions and decide when each toolkit should load.
+Model ML’s customers are moving toward browser-based outputs that stay connected to the models and source material behind them.
+Model ML’s platform can generate secure, interactive outputs that can update continuously or be locked to a moment in time. A reviewer could open an investment summary, click through to the financial model behind a figure, and work with the agent from the same page.
+“PowerPoint, Excel, and Word were designed for a world where creating knowledge work was manual,” says Englander. “AI has changed that assumption. The software itself is about to change.”

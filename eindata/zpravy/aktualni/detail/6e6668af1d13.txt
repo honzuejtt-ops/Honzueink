@@ -1,0 +1,3 @@
+Aplikace Počasí ve Windows 11 spotřebovává vyšší stovky megabajtů paměti. • Konkurenční nativní aplikace od Applu v macOS se spokojí s málem. • Počasí je další příklad neefektivity webu přestrojeného do aplikace pro Windows.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

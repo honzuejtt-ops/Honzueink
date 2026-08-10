@@ -1,4 +1,8 @@
-|T|Počet objednávek, které přivedla AI, se v českých e-shopech od ledna zdvojnásobil. Viditelnost v chatbotech má být zásadní|D|10.8. 04:30|P|Počet objednávek, které přináší umělá inteligence českým e-shopům, se od letošního ledna už zdvojnásobil. U některých obchodníků vyrostl na podíly sro...|X|K AI asistentům, jako je ChatGPT nebo Claude, si lidé chodí pro rady všeho druhu. Včetně těch, co si vlastně mají koupit.
+|T|Konec hranaté nudy u Apple Watch. Apple zvažuje náramek bez displeje, mnohem blíže je však návrat keramiky|D|10.8. 07:45|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Nejlepší příslušenství do kanceláře. Alzácký čistič za 179 Kč se postará o klávesnici, mobil i sluchátka|D|10.8. 06:45|P|Alza nabízí čisticí sadu s 20 nástroji v jednom válečku jen za 179 Kč. • Poslouží i k údržbě mobilu, sluchátek nebo mechanické klávesnice. • S aktuáln...|X|Alza nabízí čisticí sadu s 20 nástroji v jednom válečku jen za 179 Kč. • Poslouží i k údržbě mobilu, sluchátek nebo mechanické klávesnice. • S aktuální 30% slevou cena spadla na úroveň AliExpressu.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Počet objednávek, které přivedla AI, se v českých e-shopech od ledna zdvojnásobil. Viditelnost v chatbotech má být zásadní|D|10.8. 04:30|P|Počet objednávek, které přináší umělá inteligence českým e-shopům, se od letošního ledna už zdvojnásobil. U některých obchodníků vyrostl na podíly sro...|X|K AI asistentům, jako je ChatGPT nebo Claude, si lidé chodí pro rady všeho druhu. Včetně těch, co si vlastně mají koupit.
 Trend, o kterém se v e-commerce mluví přinejmenším celý tento rok, postupně posiluje. Jak si ale přesně pro zmíněné nápady pro nákupy chodí čeští zákazníci, není vždy jasné. Společnost Marketing Miner pro Lupu zkoumala realitu zdejšího trhu. Čísla za červenec, která ukázala, jsou přesvědčivá: počet objednávek plynoucích přímo z doporučení umělé inteligence během konverzací se českým e-shopům od ledna zdvojnásobil. A na dvojnásobek vyrostl i podíl na všech objednávkách.
 Průzkum firmy u více než stovky českých e-shopů ukázal, že aktuálně tvoří běžně jednotky procent z celkového objemu prodaného zboží. Podle čísel, která lze změřit, se v posledních měsících některé obchody dostaly až k pěti procentům objednávek plynoucích z AI. A to už je podíl srovnatelný se zavedenými marketingovými kanály, uvádí Marketing Miner. Desetina nejviditelnějších e-shopů byla v červenci průměrně na 3 %, čtvrtina nejviditelnějších na 1,9 % a průměrný e-shop na 0,6 %.
 „Čísla, která jsou k dispozici, však představují pouze minimum, jež lze spolehlivě doměřit. Změřit lze pouze prokliky z AI asistenta rovnou do e-shopu, a ani ty ne vždy: návštěvy z mobilních aplikací asistentů se ve statistikách návštěvnosti k AI často vůbec nepřiřadí a spadnou mezi přímé příchody na web,“ vysvětluje Tomáš Novák, CEO společnosti Marketing Miner.
@@ -55,8 +59,6 @@ Uživatelé Ubuntu 26.04 LTS budou na Snap automaticky převedeni prostřednictv
 Nově vydáno
 Společnost IceWhale Technology vydala ZimaOS 1.7.0, nejnovější verzi operačního systému založeného na Linuxu, který je určen pro osobní servery a zařízení NAS. Aditya Shakya oznámil vydání Archcraft 2026.08.01, nejnovější stabilní verze lehké a rychlé distribuce založené na Arch Linuxu. Tým AerynOS vydal aktualizaci 2026.08 experimentální distribuce. Projekt Emmabuntüs vydal aktualizaci své větve Debian Edition 6–1.02, která vychází z Debianu 13 „Trixie“.|E||T|Recenze filmu Zmrzlinář. Hitchcockovi Ptáci s dětmi, zmrzlinou a podstatně větším množstvím krve|D|09.8. 19:13|P||X|
 
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Računar, dator, tölva nebo számítógép. Jak se řekne „Počítač“ v evropských jazycích|D|09.8. 17:45|P|V tomto článku je nejdůležitější mapa. Prozkoumejte jednotlivé země, které jsme podle jazykové příbuznosti používaných výrazů spojili do barevných sku...|X|V tomto článku je nejdůležitější mapa. Prozkoumejte jednotlivé země, které jsme podle jazykové příbuznosti používaných výrazů spojili do barevných skupin. Šedou barvu pak mají státy s unikátními slovy, která nikdo jiný nemá. Přesunutím kurzoru nebo kliknutím se mohou ukázat další ...
-
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Jak vznikla jazyková mapa. Vytvořili jsme v Claude Code agentní systém, ve kterém AI pátrá a ověřuje|D|09.8. 17:45|P|Tento text navazuje na článek s jazykovou mapou Evropy. Vysvětluje, jak mapa a texty k ní vznikly.
 
 
@@ -66,6 +68,8 @@ Na sítích občas vídám pěkné jazykové mapy, které...|X|Tento text navazu
 
 
 Na sítích občas vídám pěkné jazykové mapy, které ukazují, jak různé jazyky pojmenovávají stejnou věc. Různojazyčné názvy pro Německo v tomto příspěvku mě přivedly k myšlence, že bych stejným ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Računar, dator, tölva nebo számítógép. Jak se řekne „Počítač“ v evropských jazycích|D|09.8. 17:45|P|V tomto článku je nejdůležitější mapa. Prozkoumejte jednotlivé země, které jsme podle jazykové příbuznosti používaných výrazů spojili do barevných sku...|X|V tomto článku je nejdůležitější mapa. Prozkoumejte jednotlivé země, které jsme podle jazykové příbuznosti používaných výrazů spojili do barevných skupin. Šedou barvu pak mají státy s unikátními slovy, která nikdo jiný nemá. Přesunutím kurzoru nebo kliknutím se mohou ukázat další ...
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Recenze telefonu Motorola Razr Fold. Výkonný pracant se stylusem, který vám přiroste k ruce|D|09.8. 17:15|P||X|
 

@@ -1,0 +1,9 @@
+Článek
+„Britská námořní pěchota používá flotilu těchto dronů v celkové hodnotě 12 milionů liber (zhruba 340,7 milionu Kč) od března. Poté, co ministerstvo obrany odhalilo problém, muselo z kamer odstranit veškeré připojení k internetu,“ podotkl The Daily Telegraph s tím, že drony dodala významná britská zbrojovka Kraken Technology Group, která kamery pořídila od třetí strany.
+Ta přitom předtím poskytla ujištění, že jsou z hlediska bezpečnosti v pořádku.
+Vyšetřování dronů odhalilo, že kamery odesílaly na IP adresu v Číně data potvrzující, že jsou online a normálně fungují. Podle britského ministerstva obrany ale neexistují žádné důkazy o tom, že by do zahraničí byla odeslána citlivá data nebo že by byly zpřístupněny citlivé systémy.
+Tvrdí to i zbrojovka Kraken. „Po důkladném auditu provedeném naší společností a britským námořnictvem jsme přesvědčeni, že žádné citlivé informace nebyly nikdy sdíleny mimo určené kanály a že všechny potenciální zranitelnosti byly identifikovány a odstraněny,“ uvedla.
+Podle zdrojů listu ale panují obavy, že průzkumné drony se nacházely v blízkosti citlivých schůzek vedoucích představitelů speciálních jednotek a že kamery zůstávaly aktivní i v době, kdy byly drony vypnuté.
+„Mohlo dojít k ohrožení bezpečnosti pracovníků s bezpečnostní prověrkou na základně v Poole v hrabství Dorset,“ poznamenal deník s tím, že drony K3 tvořily také součást připravovaného obranného balíčku, který Británie nabídla s cílem zajistit volnou plavbu v Hormuzském průlivu.
+„Jde o zásadní selhání při prověřování původu součástek a ztratili jsme důvěru v tento systém,“ citoval list zdroj z britského ministerstva obrany.
+Model K3 Scout, navržený pro přepravu nákladu o hmotnosti až 600 kilogramů a nepřetržitý provoz po dobu 30 dnů, zakoupilo také americké velitelství speciálních operací. Plavidlo se rovněž účastnilo testů NATO v Baltském moři.

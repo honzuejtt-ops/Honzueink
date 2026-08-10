@@ -1,0 +1,6 @@
+Článek
+Podle analýzy zprovoznila severokorejská skupina nástroje umožňující provozovat a spravovat velké jazykové modely přímo na vlastních počítačích, například Ollama, GPT4All a Msty. Využívá také technologii RAG pro vyhledávání a práci s dokumenty. Díky tomu může zpracovávat citlivá data bez jejich odesílání externím poskytovatelům AI.
+Genians v infrastruktuře spojené s kampaní objevila také nástroje pro vývoj takzvaných AI agentů, software pro převod řeči na text a program Cursor, což je kódovací nástroj podporovaný AI. Zjištění podle firmy naznačují, že Kimsuky se snaží AI využít k automatizaci a zefektivnění různých částí svých kybernetických operací.
+Genians také uvedla, že objevila podvodné dokumenty zaměřené na finance a kryptoměny, které zřejmě vytvořila AI. Materiály byly podle firmy vytvořeny tak, aby vypadaly jako skutečné investiční zprávy a další běžné pracovní dokumenty.
+KLDR již řadu let využívá hackerské skupiny napojené na stát ke špionáži, krádežím peněz a generování příjmů, uvádějí americké a jihokorejské úřady i odborníci na kybernetickou bezpečnost.
+Americké ministerstvo financí v roce 2023 uvalilo sankce na skupinu Kimsuky, kterou označilo za kyberšpionážní skupinu kontrolovanou severokorejskou vládou. Podle něj skupina získávala zpravodajské informace na podporu strategických cílů Pchjongjangu.

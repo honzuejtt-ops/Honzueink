@@ -1,0 +1,3 @@
+Od 10. srpna končí synchronizace obrázků z Disku do Fotek Google. • Umožňoval to klient Disku pro Windows a macOS. • Nově můžete složky zálohovat pouze přes webovou verzi Fotek.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

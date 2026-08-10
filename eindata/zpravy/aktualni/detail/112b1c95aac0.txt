@@ -1,0 +1,145 @@
+Lupa: propojení programovacích jazyků Lua a Python
+S programovacím jazykem Lua jsme se již na stránkách tohoto serveru setkali, a to dokonce mnohokrát. Většina článků o tomto jazyku je shrnuta do seriálu Programovací jazyk Lua a taktéž jsme se Luou zabývali ve druhém seriálu nazvaném Torch: framework pro strojové učení (Torch se stal předlohou dnes známějšího balíčku PyTorch pro Python). Víme již, že se tento programovací jazyk stal oblíbený například mezi tvůrci her, v nichž je použit pro skriptování.
+To ovšem není zdaleka vše, protože Lua je použita například v systému LuaTeX, v databázi Redis, ve webovém serveru Nginx a v neposlední řadě i v textovém editoru Neovim. Jednoduše použitelná syntaxe a současně i poměrně velká vyjadřovací schopnost jazyka Lua by však pravděpodobně nedostačovala pro jeho masovější rozšíření, a to zejména v situaci, kdy tuto niku programovacích jazyků do značné míry okupuje Python, kterému se již úspěšně podařilo „odstavit“ některé konkurenty.
+Hlavním důvodem, proč jsou některé hry, například Escape from Monkey Island, Grim Fandango, Fish Fillets, Neverwinter Nights či MDK2 z menší či větší části naprogramované právě v jazyku Lua, spočívá v tom, že kombinace nízkoúrovňového a skriptovacího jazyka umožňuje soustředit se při vývoji na podstatné věci – herní engine vytvořit co nejefektivnější s využitím všech možností nízkoúrovňového jazyka a naopak herní scénář a logiku hry naskriptovat s co největším urychlením cyklu oprava–překlad–spuštění.
+V mnoha případech se také využívá další užitečné vlastnosti jazyka Lua – celý překladač i interpret vygenerovaného bajtkódu (popř. pouze interpret) je možné velmi snadno zabudovat do jiné aplikace, přičemž se výsledná velikost spustitelného souboru této aplikace zvětší o cca 70 kB (popř. lze volat dynamickou knihovnu o řádově stejné velikosti), což není mnoho, když si uvědomíme, že dostáváme k dispozici plnohodnotný vysokoúrovňový programovací jazyk (ostatně Lua se díky své malé velikosti používá i pro pouhé zpracování konfiguračních souborů, které díky tomu mohou obsahovat různé konstanty, výrazy atd.).
+Možná nejdůležitější je však možnost izolace jednotlivých skriptů psaných v jazyce Lua. Pro každý z těchto skriptů totiž může aplikace, která Luu využívá jako skriptovací jazyk, spustit samostatný interpret (dále nazývaný runtime), který je odizolován od ostatních interpretrů. To tedy znamená, že takový skript nedokáže měnit globální proměnné, nemůže volat funkce, které v něm nejsou definovány atd. Právě z tohoto důvodu můžeme vidět zajímavé a na první pohled možná nelogické spojení jazyka Python (tvorba ucelené aplikace) a jazyka Lua (pro skriptování). Mohlo by se zdát, že je vhodnější i pro skriptování použít Python a skripty spouštět (například) přes eval. To je sice funkční, ale o to nebezpečnější varianta. Alternativu nabízí balíček lua-python popsaný v dnešním článku.
+Instalace balíčku lua-python
+Projekt Lupa je dostupný ve formě běžného pythonovského balíčku, který se jmenuje lupa. Jeho instalace je tedy stejně jednoduchá, jako instalace jakéhokoli jiného balíčku určeného pro ekosystém Pythonu. Pro instalaci lze použít pip atd., ale (alespoň podle mého názoru) je vhodnější nainstalované balíčky co nejvíce odizolovat od operačního systému. Z tohoto důvodu nejdříve s využitím správců projektů PDM nebo uv (viz článek PDM: moderní správce balíčků a virtuálních prostředí Pythonu) vytvoříme nový projekt, který bude „své“ balíčky ukládat do svého podadresáře:
+$ uv init lua-python
+ 
+Initialized project `lua-python` at `/tmp/ramdisk/lua-python/lua-python`
+Následně do nově vzniklého projektu nainstalujeme balíček lupa:
+$ uv add lupa
+ 
+Using CPython 3.13.9 interpreter at: /usr/bin/python3.13
+Creating virtual environment at: .venv
+Resolved 2 packages in 363ms
+Prepared 1 package in 661ms
+Installed 1 package in 7ms
+ + lupa==2.8
+Nově nainstalovaný balíček bude přidán do projektového souboru pyproject.toml:
+[project]
+name = "lua-python"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "lupa>=2.8",
+]
+Jen pro zajímavost si ověříme, jak vlastně vypadá strom závislostí:
+$ uv tree
+ 
+Resolved 2 packages in 1ms
+lua-python v0.1.0
+└── lupa v2.8
+Zajímavé bude zjistit, jaké soubory vlastně byly společně s balíčkem lupa nainstalovány. Všechny tyto soubory si můžeme zobrazit:
+$ ls -l .venv/lib64/python3.13/site-packages/lupa
+ 
+total 5116
+-rw-r--r--. 1 ptisnovs ptisnovs    2961 Aug  5 18:42 __init__.py
+-rwxr-xr-x. 1 ptisnovs ptisnovs  557872 Aug  5 18:42 lua51.cpython-313-x86_64-linux-gnu.so
+-rwxr-xr-x. 1 ptisnovs ptisnovs  582544 Aug  5 18:42 lua52.cpython-313-x86_64-linux-gnu.so
+-rwxr-xr-x. 1 ptisnovs ptisnovs  615280 Aug  5 18:42 lua53.cpython-313-x86_64-linux-gnu.so
+-rwxr-xr-x. 1 ptisnovs ptisnovs  672656 Aug  5 18:42 lua54.cpython-313-x86_64-linux-gnu.so
+-rwxr-xr-x. 1 ptisnovs ptisnovs  689072 Aug  5 18:42 lua55.cpython-313-x86_64-linux-gnu.so
+-rwxr-xr-x. 1 ptisnovs ptisnovs  987872 Aug  5 18:42 luajit20.cpython-313-x86_64-linux-gnu.so
+-rwxr-xr-x. 1 ptisnovs ptisnovs 1102816 Aug  5 18:42 luajit21.cpython-313-x86_64-linux-gnu.so
+drwxr-xr-x. 2 ptisnovs ptisnovs      80 Aug  5 18:42 __pycache__
+-rw-r--r--. 1 ptisnovs ptisnovs      20 Aug  5 18:42 version.py
+V posledním kroku si ověříme, že přímo v interpretru Pythonu můžeme provést import balíčku lupa. Interpret Pythonu se spustí následujícím způsobem (přes PDM nebo uv):
+$ uv run python
+ 
+Python 3.13.9 (main, Oct 14 2025, 00:00:00) [GCC 15.2.1 20250808 (Red Hat 15.2.1-1)] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+Otestujeme import:
+>>> import lupa
+>>> help(lupa)
+ 
+ 
+Help on package lupa:
+ 
+NAME
+    lupa
+ 
+PACKAGE CONTENTS
+    lua51
+    lua52
+    lua53
+    lua54
+    lua55
+    luajit20
+    luajit21
+    version
+ 
+SUBMODULES
+    _newest_lib
+ 
+FUNCTIONS
+    __getattr__(name)
+        Get a name from the latest available Lua (or LuaJIT) module.
+        Imports the module as needed.
+ 
+DATA
+    __all__ = ['LUA_VERSION', 'LUA_MAXINTEGER', 'LUA_MININTEGER', 'LuaRunt...
+ 
+VERSION
+    2.8
+Konstrukce a inicializace interpretru jazyka Lua
+Balíček lua-python umožňuje, aby aplikace psané v Pythonu vytvářely nové interpretry pro jazyk Lua, vyhodnocovaly výrazy či celé funkce psané v jazyku Lua a taktéž (pochopitelně) podporuje předávání hodnot mezi oběma programovacími jazyky. To ovšem není tak jednoduché, jak by se mohlo zdát, protože podporovaná sada datových typů je v obou jazycích odlišná a taktéž do hry vstupují správci paměti (garbage collectors) na obou stranách, tedy jak v Pythonu, tak i v interpretru jazyka Lua.
+Nový interpret jazyka Lua je vytvořen konstrukcí instance třídy LuaRuntime. Vytvořit lze libovolné množství interpretrů; ty jsou od sebe izolovány, takže se vlastně jedná o formu sandboxingu (což je dnes ještě důležitější, než kdy jindy). Konstruktoru lze předat různé nepovinné parametry, z nichž v praxi nejdůležitější je parametr max_memory. To znamená, že nejenom že dokážeme vytvořit interpretry odizolované od svého okolí, ale navíc je možné omezit jejich spotřebu paměti (ovšem ne již strojového času – nekonečná smyčka psaná v Lue nebude automaticky zastavena):
+class LuaRuntime(builtins.object)
+ |  The main entry point to the Lua runtime.
+ |
+ |  Available options:
+ |
+ |  * ``encoding``: the string encoding, defaulting to UTF-8.  If set
+ |    to ``None``, all string values will be returned as byte strings.
+ |    Otherwise, they will be decoded to unicode strings on the way
+ |    from Lua to Python and unicode strings will be encoded on the
+ |    way to Lua.  Note that ``str()`` calls on Lua objects will
+ |    always return a unicode object.
+ |
+ |  * ``source_encoding``: the encoding used for Lua code, defaulting to
+ |    the string encoding or UTF-8 if the string encoding is ``None``.
+ |
+ |  * ``attribute_filter``: filter function for attribute access
+ |    (get/set).  Must have the signature ``func(obj, attr_name,
+ |    is_setting)``, where ``is_setting`` is True when the attribute
+ |    is being set.  If provided, the function will be called for all
+ |    Python object attributes that are being accessed from Lua code.
+ |    Normally, it should return an attribute name that will then be
+ |    used for the lookup.  If it wants to prevent access, it should
+ |    raise an ``AttributeError``.  Note that Lua does not guarantee
+ |    that the names will be strings.  (New in Lupa 0.20)
+ |
+ |  * ``attribute_handlers``: like ``attribute_filter`` above, but
+ |    handles the getting/setting itself rather than giving hints
+ |    to the LuaRuntime.  This must be a 2-tuple, ``(getter, setter)``
+ |    where ``getter`` has the signature ``func(obj, attr_name)``
+ |    and either returns the value for ``obj.attr_name`` or raises an
+ |    ``AttributeError``  The function ``setter`` has the signature
+ |    ``func(obj, attr_name, value)`` and may raise an ``AttributeError``.
+ |    The return value of the setter is unused.  (New in Lupa 1.0)
+ |
+ |  * ``register_eval``: should Python's ``eval()`` function be available
+ |    to Lua code as ``python.eval()``?  Note that this does not remove it
+ |    from the builtins.  Use an ``attribute_filter`` function for that.
+ |    (default: True)
+ |
+ |  * ``register_builtins``: should Python's builtins be available to Lua
+ |    code as ``python.builtins.*``?  Note that this does not prevent access
+ |    to the globals available as special Python function attributes, for
+ |    example.  Use an ``attribute_filter`` function for that.
+ |    (default: True, new in Lupa 1.2)
+ |
+ |  * ``unpack_returned_tuples``: should Python tuples be unpacked in Lua?
+ |    If ``py_fun()`` returns ``(1, 2, 3)``, then does ``a, b, c = py_fun()``
+ |    give ``a == 1 and b == 2 and c == 3`` or does it give
+ |    ``a == (1,2,3), b == nil, c == nil``?  ``unpack_returned_tuples=True``
+ |    gives the former.
+ |    (default: False, new in Lupa 0.21)
+ |
+ |  * ``overflow_handler``: function for handling Python i...
+(Pokracovani na webu)

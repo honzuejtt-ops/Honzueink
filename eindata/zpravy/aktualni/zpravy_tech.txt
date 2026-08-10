@@ -1,4 +1,148 @@
-|T|Co nového v Mapy.com. Vylepšená navigace pro pěší a cyklisty se drží původní trasy|D|10.8. 17:45|P|Sledujeme nové funkce, které s aktualizacemi přibývají do oblíbené mobilní mapové a navigační aplikace Mapy.com od českého Seznamu.|X|Sledujeme nové funkce, které s aktualizacemi přibývají do oblíbené mobilní mapové a navigační aplikace Mapy.com od českého Seznamu.
+|T|Lupa: propojení programovacích jazyků Lua a Python|D|10.8. 22:00|P|Dnes si popíšeme projekt nazvaný Lupa, což je zkratka získaná z „lua-python“. Tento projekt umožňuje propojení programů psaných v Pythonu se skripty z...|X|Lupa: propojení programovacích jazyků Lua a Python
+S programovacím jazykem Lua jsme se již na stránkách tohoto serveru setkali, a to dokonce mnohokrát. Většina článků o tomto jazyku je shrnuta do seriálu Programovací jazyk Lua a taktéž jsme se Luou zabývali ve druhém seriálu nazvaném Torch: framework pro strojové učení (Torch se stal předlohou dnes známějšího balíčku PyTorch pro Python). Víme již, že se tento programovací jazyk stal oblíbený například mezi tvůrci her, v nichž je použit pro skriptování.
+To ovšem není zdaleka vše, protože Lua je použita například v systému LuaTeX, v databázi Redis, ve webovém serveru Nginx a v neposlední řadě i v textovém editoru Neovim. Jednoduše použitelná syntaxe a současně i poměrně velká vyjadřovací schopnost jazyka Lua by však pravděpodobně nedostačovala pro jeho masovější rozšíření, a to zejména v situaci, kdy tuto niku programovacích jazyků do značné míry okupuje Python, kterému se již úspěšně podařilo „odstavit“ některé konkurenty.
+Hlavním důvodem, proč jsou některé hry, například Escape from Monkey Island, Grim Fandango, Fish Fillets, Neverwinter Nights či MDK2 z menší či větší části naprogramované právě v jazyku Lua, spočívá v tom, že kombinace nízkoúrovňového a skriptovacího jazyka umožňuje soustředit se při vývoji na podstatné věci – herní engine vytvořit co nejefektivnější s využitím všech možností nízkoúrovňového jazyka a naopak herní scénář a logiku hry naskriptovat s co největším urychlením cyklu oprava–překlad–spuštění.
+V mnoha případech se také využívá další užitečné vlastnosti jazyka Lua – celý překladač i interpret vygenerovaného bajtkódu (popř. pouze interpret) je možné velmi snadno zabudovat do jiné aplikace, přičemž se výsledná velikost spustitelného souboru této aplikace zvětší o cca 70 kB (popř. lze volat dynamickou knihovnu o řádově stejné velikosti), což není mnoho, když si uvědomíme, že dostáváme k dispozici plnohodnotný vysokoúrovňový programovací jazyk (ostatně Lua se díky své malé velikosti používá i pro pouhé zpracování konfiguračních souborů, které díky tomu mohou obsahovat různé konstanty, výrazy atd.).
+Možná nejdůležitější je však možnost izolace jednotlivých skriptů psaných v jazyce Lua. Pro každý z těchto skriptů totiž může aplikace, která Luu využívá jako skriptovací jazyk, spustit samostatný interpret (dále nazývaný runtime), který je odizolován od ostatních interpretrů. To tedy znamená, že takový skript nedokáže měnit globální proměnné, nemůže volat funkce, které v něm nejsou definovány atd. Právě z tohoto důvodu můžeme vidět zajímavé a na první pohled možná nelogické spojení jazyka Python (tvorba ucelené aplikace) a jazyka Lua (pro skriptování). Mohlo by se zdát, že je vhodnější i pro skriptování použít Python a skripty spouštět (například) přes eval. To je sice funkční, ale o to nebezpečnější varianta. Alternativu nabízí balíček lua-python popsaný v dnešním článku.
+Instalace balíčku lua-python
+Projekt Lupa je dostupný ve formě běžného pythonovského balíčku, který se jmenuje lupa. Jeho instalace je tedy stejně jednoduchá, jako instalace jakéhokoli jiného balíčku určeného pro ekosystém Pythonu. Pro instalaci lze použít pip atd., ale (alespoň podle mého názoru) je vhodnější nainstalované balíčky co nejvíce odizolovat od operačního systému. Z tohoto důvodu nejdříve s využitím správců projektů PDM nebo uv (viz článek PDM: moderní správce balíčků a virtuálních prostředí Pythonu) vytvoříme nový projekt, který bude „své“ balíčky ukládat do svého podadresáře:
+$ uv init lua-python
+ 
+Initialized project `lua-python` at `/tmp/ramdisk/lua-python/lua-python`
+Následně do nově vzniklého projektu nainstalujeme balíček lupa:
+$ uv add lupa
+ 
+Using CPython 3.13.9 interpreter at: /usr/bin/python3.13
+Creating virtual environment at: .venv
+Resolved 2 packages in 363ms
+Prepared 1 package in 661ms
+Installed 1 package in 7ms
+ + lupa==2.8
+Nově nainstalovaný balíček bude přidán do projektového souboru pyproject.toml:
+[project]
+name = "lua-python"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "lupa>=2.8",
+]
+Jen pro zajímavost si ověříme, jak vlastně vypadá strom závislostí:
+$ uv tree
+ 
+Resolved 2 packages in 1ms
+lua-python v0.1.0
+└── lupa v2.8
+Zajímavé bude zjistit, jaké soubory vlastně byly společně s balíčkem lupa nainstalovány. Všechny tyto soubory si můžeme zobrazit:
+$ ls -l .venv/lib64/python3.13/site-packages/lupa
+ 
+total 5116
+-rw-r--r--. 1 ptisnovs ptisnovs    2961 Aug  5 18:42 __init__.py
+-rwxr-xr-x. 1 ptisnovs ptisnovs  557872 Aug  5 18:42 lua51.cpython-313-x86_64-linux-gnu.so
+-rwxr-xr-x. 1 ptisnovs ptisnovs  582544 Aug  5 18:42 lua52.cpython-313-x86_64-linux-gnu.so
+-rwxr-xr-x. 1 ptisnovs ptisnovs  615280 Aug  5 18:42 lua53.cpython-313-x86_64-linux-gnu.so
+-rwxr-xr-x. 1 ptisnovs ptisnovs  672656 Aug  5 18:42 lua54.cpython-313-x86_64-linux-gnu.so
+-rwxr-xr-x. 1 ptisnovs ptisnovs  689072 Aug  5 18:42 lua55.cpython-313-x86_64-linux-gnu.so
+-rwxr-xr-x. 1 ptisnovs ptisnovs  987872 Aug  5 18:42 luajit20.cpython-313-x86_64-linux-gnu.so
+-rwxr-xr-x. 1 ptisnovs ptisnovs 1102816 Aug  5 18:42 luajit21.cpython-313-x86_64-linux-gnu.so
+drwxr-xr-x. 2 ptisnovs ptisnovs      80 Aug  5 18:42 __pycache__
+-rw-r--r--. 1 ptisnovs ptisnovs      20 Aug  5 18:42 version.py
+V posledním kroku si ověříme, že přímo v interpretru Pythonu můžeme provést import balíčku lupa. Interpret Pythonu se spustí následujícím způsobem (přes PDM nebo uv):
+$ uv run python
+ 
+Python 3.13.9 (main, Oct 14 2025, 00:00:00) [GCC 15.2.1 20250808 (Red Hat 15.2.1-1)] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+Otestujeme import:
+>>> import lupa
+>>> help(lupa)
+ 
+ 
+Help on package lupa:
+ 
+NAME
+    lupa
+ 
+PACKAGE CONTENTS
+    lua51
+    lua52
+    lua53
+    lua54
+    lua55
+    luajit20
+    luajit21
+    version
+ 
+SUBMODULES
+    _newest_lib
+ 
+FUNCTIONS
+    __getattr__(name)
+        Get a name from the latest available Lua (or LuaJIT) module.
+        Imports the module as needed.
+ 
+DATA
+    __all__ = ['LUA_VERSION', 'LUA_MAXINTEGER', 'LUA_MININTEGER', 'LuaRunt...
+ 
+VERSION
+    2.8
+Konstrukce a inicializace interpretru jazyka Lua
+Balíček lua-python umožňuje, aby aplikace psané v Pythonu vytvářely nové interpretry pro jazyk Lua, vyhodnocovaly výrazy či celé funkce psané v jazyku Lua a taktéž (pochopitelně) podporuje předávání hodnot mezi oběma programovacími jazyky. To ovšem není tak jednoduché, jak by se mohlo zdát, protože podporovaná sada datových typů je v obou jazycích odlišná a taktéž do hry vstupují správci paměti (garbage collectors) na obou stranách, tedy jak v Pythonu, tak i v interpretru jazyka Lua.
+Nový interpret jazyka Lua je vytvořen konstrukcí instance třídy LuaRuntime. Vytvořit lze libovolné množství interpretrů; ty jsou od sebe izolovány, takže se vlastně jedná o formu sandboxingu (což je dnes ještě důležitější, než kdy jindy). Konstruktoru lze předat různé nepovinné parametry, z nichž v praxi nejdůležitější je parametr max_memory. To znamená, že nejenom že dokážeme vytvořit interpretry odizolované od svého okolí, ale navíc je možné omezit jejich spotřebu paměti (ovšem ne již strojového času – nekonečná smyčka psaná v Lue nebude automaticky zastavena):
+class LuaRuntime(builtins.object)
+ |  The main entry point to the Lua runtime.
+ |
+ |  Available options:
+ |
+ |  * ``encoding``: the string encoding, defaulting to UTF-8.  If set
+ |    to ``None``, all string values will be returned as byte strings.
+ |    Otherwise, they will be decoded to unicode strings on the way
+ |    from Lua to Python and unicode strings will be encoded on the
+ |    way to Lua.  Note that ``str()`` calls on Lua objects will
+ |    always return a unicode object.
+ |
+ |  * ``source_encoding``: the encoding used for Lua code, defaulting to
+ |    the string encoding or UTF-8 if the string encoding is ``None``.
+ |
+ |  * ``attribute_filter``: filter function for attribute access
+ |    (get/set).  Must have the signature ``func(obj, attr_name,
+ |    is_setting)``, where ``is_setting`` is True when the attribute
+ |    is being set.  If provided, the function will be called for all
+ |    Python object attributes that are being accessed from Lua code.
+ |    Normally, it should return an attribute name that will then be
+ |    used for the lookup.  If it wants to prevent access, it should
+ |    raise an ``AttributeError``.  Note that Lua does not guarantee
+ |    that the names will be strings.  (New in Lupa 0.20)
+ |
+ |  * ``attribute_handlers``: like ``attribute_filter`` above, but
+ |    handles the getting/setting itself rather than giving hints
+ |    to the LuaRuntime.  This must be a 2-tuple, ``(getter, setter)``
+ |    where ``getter`` has the signature ``func(obj, attr_name)``
+ |    and either returns the value for ``obj.attr_name`` or raises an
+ |    ``AttributeError``  The function ``setter`` has the signature
+ |    ``func(obj, attr_name, value)`` and may raise an ``AttributeError``.
+ |    The return value of the setter is unused.  (New in Lupa 1.0)
+ |
+ |  * ``register_eval``: should Python's ``eval()`` function be available
+ |    to Lua code as ``python.eval()``?  Note that this does not remove it
+ |    from the builtins.  Use an ``attribute_filter`` function for that.
+ |    (default: True)
+ |
+ |  * ``register_builtins``: should Python's builtins be available to Lua
+ |    code as ``python.builtins.*``?  Note that this does not prevent access
+ |    to the globals available as special Python function attributes, for
+ |    example.  Use an ``attribute_filter`` function for that.
+ |    (default: True, new in Lupa 1.2)
+ |
+ |  * ``unpack_returned_tuples``: should Python tuples be unpacked in Lua?
+ |    If ``py_fun()`` returns ``(1, 2, 3)``, then does ``a, b, c = py_fun()``
+ |    give ``a == 1 and b == 2 and c == 3`` or does it give
+ |    ``a == (1,2,3), b == nil, c == nil``?  ``unpack_returned_tuples=True``
+ |    gives the former.
+ |    (default: False, new in Lupa 0.21)
+ |
+ |  * ``overflow_handler``: function for handling Python i...
+(Pokracovani na webu)|E||T|Co nového v Mapy.com. Vylepšená navigace pro pěší a cyklisty se drží původní trasy|D|10.8. 17:45|P|Sledujeme nové funkce, které s aktualizacemi přibývají do oblíbené mobilní mapové a navigační aplikace Mapy.com od českého Seznamu.|X|Sledujeme nové funkce, které s aktualizacemi přibývají do oblíbené mobilní mapové a navigační aplikace Mapy.com od českého Seznamu.
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|What building an AI-native finance function taught me|D|10.8. 17:00|P|OpenAI CFO Sarah Friar shares five lessons for building an AI-native finance function, from automated forecasting to stronger controls and AI ROI.|X|What building an AI-native finance function taught me
 Five lessons for CFOs redesigning work around artificial intelligence.
@@ -323,7 +467,43 @@ The result is more flexibility for your team without creating separate subscript
 For a limited time, the first 10,000 eligible ChatGPT Business customers can receive $100 in workspace credits (2,500 credits) for each Premium seat they add, up to 5 seats.
 To qualify, join the waitlist with the email address associated with your ChatGPT Business workspace owner account. We’ll follow up with instructions for redeeming your credits and let you know when Premium seats become available for your workspace.
 Some customers who sign up may also be selected for early access before general availability.
-If you’re not the workspace owner, share the offer with the person who manages your ChatGPT Business account. Sign up today, as the promotion ends on August 20. Learn more about how the promotion works and eligibility details in the help center article(opens in a new window).|E||T|Postřehy z bezpečnosti: trojský kůň jako suvenýr z dovolené|D|09.8. 22:00|P|I v létě myslí v APT skupinách spadajících pod ruskou rozvědku SVR na blaho celého světa. Proto si třeba z dovolené v USA můžete přivést suvenýr až z ...|X|Nebezpečí číhající v hotelových Wi-Fi sítích
+If you’re not the workspace owner, share the offer with the person who manages your ChatGPT Business account. Sign up today, as the promotion ends on August 20. Learn more about how the promotion works and eligibility details in the help center article(opens in a new window).|E||T|How Zapier transformed core marketing processes with ChatGPT Work|D|10.8. 00:00|P|The enterprise marketing team at Zapier uses ChatGPT Work to reduce the number of drop-offs in its lead funnel, build campaign assets, and automate re...|X|How Zapier transformed core marketing processes with ChatGPT Work
+The enterprise marketing team at Zapier uses ChatGPT Work to reduce the number of drop-offs in its lead funnel, build campaign assets, and automate reporting.
+7+
+Figures of pipeline value
+1000s
+of leads marketing can QA every month
+At Zapier, the enterprise marketing team is using ChatGPT Work to build automated funnel optimization systems, enabling them to deliver more value to their sales team with less manual effort. ChatGPT Work operates autonomously, giving the enterprise marketing team space to focus on strategic, creative efforts.
+“We can do things that we couldn’t possibly have done before, like performing QA/QC on thousands of leads every single month.”
+Angela Ferrante, Head of Enterprise Marketing, found that Zapier experienced a high volume of strong inbound leads but a similarly high drop-off rate. Why? Answering the question required an intensive quality assurance (QA) and quality control (QC) process to figure out where in the funnel these leads were dropping off.
+But with ChatGPT Work, Ferrante could automate a process so labor-intensive that it would have been effectively impossible to accomplish otherwise. “It has just transformed how we do work and what we’re able to do,” Ferrante explains.
+Now, the enterprise marketing team can perform automatic QA/QC on thousands of leads every month. The difference is stark. “A single person looking at one dropped lead would take 35 to 45 minutes just to get a picture of what went wrong,” Ferrante says.
+“With ChatGPT Work, we were able to create a system that determined all of the lead problems, patched all of the issues, and quantified the impact of this project to the tune of seven figures in pipeline we were then able to hand off to sales every single month.”
+The system now delivers ongoing results, including an executive dashboard highlighting recurring issues in their lead pipeline and weekly trends.
+“Within minutes, we have actual campaign assets ready to review and push out. ChatGPT Work can actually go into all the systems we use to build campaigns and do the building for us.”
+Zapier’s marketing teams didn’t always have the time to use the creative energies they had on tap.
+“ChatGPT Work frees up our team,” Ferrante explains. “The demand generation team, for example, can get more creative about campaigns and filter that work through ChatGPT Work, which will give them ideas for campaign optimizations.”
+The team can work faster, delivering better results on tighter timelines. “Suddenly, the work is shrunk down, or the timeline is shrunk down,” Ferrante says. “The work moves so quickly from ideation to execution, and the execution is essentially on demand.”
+As the marketing team produces more deliverables, they can also avoid getting bogged down in reporting. With ChatGPT Work, Ferrante says, “We were able to get reporting dialed in so that we can spend more time doing work instead of analyzing the results of the work.”
+“It’s really been an unlock for our team, allowing us to focus on more strategic work,” Ferrante says. “We’re suddenly able to have a lot of work just happen on autopilot using ChatGPT Work.”
+Despite the benefits ChatGPT Work has already offered, Ferrante sees even greater potential in the future. “Some of the most impactful work, which will really transform the marketing team, is setting always-on loops, not just using prompts,” Ferrante says.
+The eventual goal, Ferrante says, is to have a “shared brain” that uses context from meetings, call recordings, customers, and market insights. “We will have work happening on autopilot, and humans can be the tastemakers,” Ferrante says.|E||T|Virgin Atlantic sharpens customer journeys with ChatGPT Work|D|10.8. 00:00|P|Virgin Atlantic is accelerating research, product planning, and decision-making with ChatGPT Work, helping teams connect signals across the customer j...|X|Virgin Atlantic sharpens customer journeys with ChatGPT Work
+The airline is accelerating research, product planning, and decision-making while giving teams a connected view of the customer journey.
+Virgin Atlantic is using ChatGPT Work to help its teams understand the airline’s complex customer journey and deliver better experiences faster. From competitive research to product planning and analytics, ChatGPT Work gives employees new ways to bring information together and move from insight to action.
+For an airline, the customer journey extends beyond just booking a flight. It includes browsing, purchasing, checking in, traveling, the onboard experience, and sharing feedback afterward. Each stage produces valuable information, often held across different systems and reporting tools. Virgin Atlantic is using ChatGPT to connect those signals and help teams decide where to focus.
+As Virgin Atlantic developed its new five-year strategy, its digital product team needed a clear view of the competitive landscape. Traditionally, assessing multiple competitors across a detailed customer journey could take weeks of manual research.
+Using ChatGPT Work, the team created a structured framework and asked it to research competitor experiences, trace available customer journeys, and organize its findings into a dataset for review. The team could start the work in the morning, return a few hours later, and begin evaluating and refining the results.
+“As part of Virgin Atlantic’s five-year digital strategy, ChatGPT Work has helped us explore customer journeys and market experiences in a more structured and efficient way,” says Nathan Bolt, Head of Digital Product at Virgin Atlantic. “It enables our teams to compare journey patterns, surface opportunities, and turn insight into product decisions far faster than before. What might once have taken weeks can now be accelerated into hours, helping us focus investment where it can make the biggest difference for our customers.”
+The analysis helped Virgin Atlantic identify areas where its digital experience was performing strongly, capabilities it needed to protect, and opportunities that warranted further investment. Those findings informed recommendations for the company’s five-year plan.
+ChatGPT Work also helps the team synthesize strategy documents, customer insights, and digital experience data, making that information easier to explore and apply throughout the product lifecycle. “ChatGPT has allowed us to go from idea to actual product in customers’ hands much faster,” Bolt says.
+Virgin Atlantic’s customer experience and analytics teams face another challenge: bringing together data from many sources. Previously, employees had to navigate several dashboard tools, authenticated workspaces, licenses, user profiles, and report suites to understand different parts of the journey.
+With ChatGPT Work and ChatGPT Sites, Virgin Atlantic is creating secure, authenticated dashboards that bring disparate datasets into a common interface. Employees across the business can access relevant views, explore information more easily, and make decisions for their own areas.
+“The ability to have a single interface that is customizable, that we can control and visualize in a way that we’ve not been able to before, has been game changing for us,” says Miles King, Head of Customer Experience at Virgin Atlantic.
+The team has also used ChatGPT to create custom product-planning tools. Product teams can manage roadmaps, prioritization, fields, and quarterly planning in a way that fits Virgin Atlantic’s needs, while senior stakeholders can see simplified, high-level views. This flexibility helps teams spend less time adapting their work to rigid tools and more time delivering the roadmap.
+“ChatGPT has really turbocharged our insights, understanding, and the ability to make decisions that ultimately enhance the end-to-end customer journey for our guests.”
+Virgin Atlantic sees more opportunities to bring ChatGPT Work into employees’ day-to-day work. Bolt already uses it as a “chief of staff” to surface important items across his calendar, Slack, and email, help him take action, and prepare presentations.
+“I’m able to do more within the same workday,” he says. “I’m not working longer hours necessarily, but I’m getting more done.”
+As its use of ChatGPT Work expands, Virgin Atlantic will continue focusing on turning insight into faster decisions and better experiences for its customers. As King puts it, “ChatGPT helps me spot what customers need, decide what matters, act faster, and deliver.”|E||T|Postřehy z bezpečnosti: trojský kůň jako suvenýr z dovolené|D|09.8. 22:00|P|I v létě myslí v APT skupinách spadajících pod ruskou rozvědku SVR na blaho celého světa. Proto si třeba z dovolené v USA můžete přivést suvenýr až z ...|X|Nebezpečí číhající v hotelových Wi-Fi sítích
 Microsoft společně s firmou ReliaQuest identifikovaly kompromitované přihlašovací brány (captive portals) a routery v hotelech a dalších ubytovacích zařízeních. Napadené routery zároveň sloužily jako DNS resolvery a útočníkům umožňovaly podvrhnout návštěvníkům falešné stránky (DNS spoofing). Odpověď na automatickou kontrolu připojení byla podvržena tak, aby uživatele přesměrovala na falešnou aktualizaci prohlížeče nebo systému Windows. Některé podvržené weby navíc návštěvníky instruovaly k zadání příkazů do terminálu, což vedlo ke stažení a spuštění Remote Access Trojanu CornFlake. Nástroj umožňuje útočníkům vzdálené připojení k infikovanému zařízení, pořizování snímků obrazovky, spouštění webkamery a mikrofonu nebo nahrávání stisknutých kláves a odesílání těchto dat na C2 server útočníka.
 To, jak útočníci získali přístup k administrativní sekci těchto zařízení, je zatím předmětem vyšetřování. Nicméně podle dosavadních informací jsou útoky připisovány APT skupině Storm-2945, která je subsekcí skupiny Midnight Blizzard (známé také jako Cozy Bear nebo APT29) spadající pod ruskou rozvědku SVR.
 Pokud se chystáte na dovolenou a budete se připojovat přes wi-fi, kterou neznáte, používejte vždy důvěryhodnou VPN. Zapněte šifrované VPN připojení ihned po připojení k síti. Využívejte režim Full-Tunnel, který přes VPN směruje i veškeré DNS dotazy, nikoli jen samotný webový provoz.

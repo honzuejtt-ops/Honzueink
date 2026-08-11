@@ -1,0 +1,8 @@
+Na silnicích po celé České republice můžete občas narazit na dvojici bílých čtverců, které se dotýkají jedním rohem. Na první pohled mohou připomínat neznámé dopravní značení či záhadný symbol. Ve skutečnosti však mají velmi praktický účel – pomáhají geodetům při přesném mapování českých komunikací.
+Záhadné čtverce pomáhají mapovat Česko
+Tyto obrazce se odborně označují jako vlícovací body. Geodet nejprve přesně zaměří jejich polohu (zpravidla i včetně výšky) a následně se na dané místo vytvoří tato viditelná značka. Její střed pak odpovídá souřadnicím, díky čemuž lze následně správně zasadit data z kamer, laserových skenerů a leteckých snímků do souřadnicového systému.
+„Jde o přesně zaměřené a zřetelně označené místo, které dokážeme jednoznačně najít ve snímcích pořízených mapovacím vozidlem i v datech z mobilního laserového skenování. Díky jeho známým souřadnicím pak můžeme tato data správně umístit do souřadnicového systému,“ říká Drahomíra Zedníčková ze společnosti TopGis.
+Velké množství těchto bodů vznikalo při tvorbě digitálních technických map českých krajů. Mapovací vozidla například díky nim dokázala přesně zaznamenat obrubníky, sloupy, svodidla, dopravní značky nebo další prvky moderní infrastruktury.
+Svůj důvod má i samotná bílá barva, jelikož na tmavém asfaltu vytváří výrazný kontrast a je tak snadno zachytitelná kamerami mapovacího vozu. Tyto vlícovací body tak nejsou součástí běžného dopravního značení, nýbrž slouží pouze pro účely mapování.
+Pro mnoho lidí jsou tyto značky trnem v oku a přemalovávají je, poškozují nebo odstraňují v domnění, že se jedná o nesrozumitelnou dopravní značku. Tím však celý proces mapování prodlužují a prodražují.
+zdroj: TZ

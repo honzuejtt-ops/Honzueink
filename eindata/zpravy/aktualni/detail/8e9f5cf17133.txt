@@ -1,0 +1,25 @@
+Článek
+Představte si AI, která nedostane jen otázku typu „napiš mi e-mail“, ale dostane celý úkol: podívat se do kalendáře, zjistit, kdy máte čas, připravit návrh zprávy a pracovat s dalšími programy. Právě na podobné použití míří nový model Muse Glimmer od společnosti Meta.
+Nejde tedy jen o dalšího chatbota. Meta ho označuje za tzv. agentický model. Jednoduše řečeno, má být součástí systémů, které dokážou nejen něco vygenerovat, ale také samostatně vykonávat jednotlivé kroky potřebné k dokončení zadaného úkolu.
+Model má 30 miliard parametrů. Parametry si lze zjednodušeně představit jako obrovské množství hodnot, které si AI během trénování nastavuje a podle kterých následně vytváří odpovědi. Čím větší model, tím obecně náročnější bývá jeho provoz.
+Muse Glimmer má ale být výjimkou v tom, že se Meta snažila jeho velikost přizpůsobit běžnějšímu hardwaru. Model má podle společnosti fungovat na Macu nebo PC s obyčejnou grafickou kartou.
+AI nemusí být vždy někde na serveru
+Většina dnešních pokročilých AI služeb funguje přes internet. Uživatel něco zadá, požadavek putuje na vzdálené servery a odtud se vrátí odpověď.
+U lokální AI je princip opačný. Model běží přímo na zařízení uživatele. Muse Glimmer je navržen právě s ohledem na takové použití.
+To může mít praktický význam například u osobního asistenta. Meta jako příklady uvádí správu kalendáře, přípravu zpráv nebo organizaci souborů. Výhodou lokálního provozu je také to, že AI může fungovat bez připojení k internetu.
+Meta přitom připouští, že vytvořit dostatečně schopný a zároveň malý model není jednoduché. Muse Glimmer proto vznikal s ohledem na omezenou paměť a výkon počítačů, na kterých má běžet.
+Velký model do malého počítače
+Samotných 30 miliard parametrů zní působivě, ale pro běžný počítač představuje problém. Kdyby Muse Glimmer pracoval v plné přesnosti, potřeboval by podle Mety více než 55 GB paměti.
+Proto Meta použila takzvanou kvantizaci. Ta v tomto případě znamená, že se hodnoty, se kterými model pracuje, uloží úspornějším způsobem. Výsledkem je menší nárok na paměť.
+Po této úpravě se jazyková část modelu vejde do méně než 20 GB. Zbývá tak prostor pro další části systému, například paměť potřebnou při samotném používání modelu nebo komponentu, která se stará o porozumění obrázkům.
+Muse Glimmer tak podle společnosti může fungovat v počítačích s 24 nebo 32 GB paměti.
+Meta zároveň tvrdí, že zmenšení modelu má u úloh, pro které je Muse Glimmer určen, jen minimální dopad na jeho výkon.
+Není určený jen pro psaní textu
+Jednou z hlavních vlastností Muse Glimmer je schopnost pracovat s dalšími nástroji. To je důležité právě u AI agentů. Pokud například agent dostane úkol, nestačí mu jen napsat odpověď. Musí být schopen použít nástroj, získat z něj výsledek a podle něj pokračovat dál.
+Muse Glimmer má podle Mety zvládat i situace, kdy se něco nepovede. Pokud například použitý nástroj vrátí neočekávaný výsledek, model se má pokusit chybu rozpoznat a akci zopakovat.
+Model také dokáže pracovat s obrázky. Meta uvádí například screenshoty, grafy a dokumenty. AI tedy nemusí dostat pouze textový popis toho, co je na obrazovce, ale může pracovat přímo s obrazovým vstupem.
+Tréninková data navíc pocházela z více než 100 jazyků. Zda mezi nimi byla také čeština, zástupci společnosti neupřesnili.
+Rychlost je klíčová
+U AI provozované v počítači nestačí, aby byla chytrá. Musí také reagovat dostatečně rychle. „Agent, kterému trvá několik minut odpovědět nebo naplánovat další krok, narušuje plynulost skutečné práce,“ uvádí Meta.
+Proto firma použila ještě jednu techniku, která má generování odpovědí urychlit. Jmenuje se spekulativní dekódování.
+V praxi si lze princip představit jednoduše: vedle hlavního modelu pracuje menší pomocný model, který předem odhaduje, jak by mohla pokračovat odpověď. Hlavní model potom tyto návrhy rychle zkontroluje. Pokud jsou správné, může je převzít, a nemusí tak všechno vytvářet úplně od začátku.

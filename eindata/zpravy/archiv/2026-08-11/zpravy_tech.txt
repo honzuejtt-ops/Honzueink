@@ -1,7 +1,16 @@
+|T|Recenze deskové hry Pilgrims: Podivuhodná dobrodružství. Český karetní mozkolam s kouzelnou atmosférou|D|11.8. 18:15|P|Jak do deskoherní podoby převést point and click adventuru? Před touto hádankou se ocitli tvůrci adaptace české hry Pilgrims. Neobešlo se to bez jistý...|X|Jak do deskoherní podoby převést point and click adventuru? Před touto hádankou se ocitli tvůrci adaptace české hry Pilgrims. Neobešlo se to bez jistých změn a kompromisů, duch hry však zůstává věrný předloze.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Vybrali jsme nejlepší telefony, které si v srpnu 2026 můžete koupit|D|11.8. 17:45|P|Každý měsíc vybíráme nejlepší mobily v několika kategoriích • Smartphony dělíme podle výbavy a ceny, aby si mohl vybrat každý • Nezapomínáme ani na le...|X|Každý měsíc vybíráme nejlepší mobily v několika kategoriích • Smartphony dělíme podle výbavy a ceny, aby si mohl vybrat každý • Nezapomínáme ani na levné a tlačítkové telefony
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|AMIE, our research medical AI system, demonstrates real-time clinical video consultation capabilities in a first-of-its-kind study.|D|11.8. 17:00|P|AMIE promotional video|X|AMIE, our research medical AI system, demonstrates real-time clinical video consultation capabilities in a first-of-its-kind study.
 When you visit a doctor, a consultation extends far beyond words — a physician notices a cough, observes gait, or registers visible signs of discomfort. Today, Google Research and Google DeepMind are advancing AMIE, our research medical AI system, toward real-time clinical video consultations, with a first-of-its-kind demonstration of expert-level AI capabilities in this setting. Built on Gemini and Project Astra using a multi-agent architecture, AMIE now interprets visual and auditory cues, guides virtual physical exams, and reasons diagnostically in real time.
 In a randomized study using simulated consultations with patient actors and a group of primary care physicians, clinical evaluators assessed AMIE favorably across core clinical competencies, including history-taking thoroughness, diagnostic accuracy, management appropriateness and communication quality. Patient actors also preferred the video experience over text chat.
 AMIE remains a research system and more research is needed before responsible real-world clinical deployment, but it offers an exciting glimpse into the future of health AI. Read more on the Google Research blog.|E|
+|T|Nevyžádaná instalace OneDrive Photos ve Windows 11 byl omyl. Microsoft aplikaci zase potichu odvolal|D|11.8. 16:45|P|Ve Windows 11/10 se bez vašeho vědomí automaticky instaluje nová aplikace. • OneDrive Photos jsou prohlížečem obrázků spojeným s klientem OneDrivu. • ...|X|Ve Windows 11/10 se bez vašeho vědomí automaticky instaluje nová aplikace. • OneDrive Photos jsou prohlížečem obrázků spojeným s klientem OneDrivu. • Nelze je odinstalovat a zejména firmy jsou nespokojené.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|AI hudba míří na vinyl. Suno vám vyrobí vlastní desku, stát má necelou tisícovku|D|11.8. 15:45|P||X|
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|

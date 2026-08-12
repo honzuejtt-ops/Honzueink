@@ -1,0 +1,7 @@
+Článek
+Nvidia uzavřela dohody se společnostmi Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs a KKR. Podle výrobce čipů začínají velcí investoři poprvé považovat výpočetní infrastrukturu pro umělou inteligenci za samostatnou investiční kategorii.
+Velká část kapitálu má podle britské stanice BBC směřovat do výstavby nových datových center. Ta potřebují tisíce výkonných grafických procesorů, rozsáhlé elektrické rozvody, chlazení a další infrastrukturu.
+Další peníze mají financovat nové továrny a rozšiřování výroby čipů pro umělou inteligenci. Poptávka po nich v posledních letech prudce vzrostla a jejich dostupnost se stala jednou z hlavních podmínek dalšího rozvoje celého odvětví.
+Podle šéfů investiční společnosti KKR Joea Baea a Scotta Nuttalla se výpočetní kapacity staly kritickou součástí infrastruktury. Hlavním problémem podle nich už není nedostatek ambiciózních plánů, ale schopnost projekty skutečně postavit a zprovoznit.
+Grafické procesory Nvidie se staly základem většiny současných systémů umělé inteligence, používají je společnosti Google, Meta, Amazon a Microsoft, ale také OpenAI, Anthropic, Tesla nebo SpaceX. Čipy slouží k trénování i provozu velkých jazykových modelů a dalších systémů umělé inteligence.
+Technologické společnosti během posledních tří let investovaly do projektů a infrastruktury souvisejících s umělou inteligencí více než bilion dolarů (přes 21 bilionů korun).

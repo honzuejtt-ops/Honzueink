@@ -1,4 +1,222 @@
-|T|Google má konečně vlastní lokátor Pixel Tag. Hodinky Pixel Watch 5 přidávají pokročilé měření zdraví|D|12.8. 17:45|P||X|
+|T|Podpora unifikované práce se zařízeními v operačním systému Atari: CIO (dokončení)|D|12.8. 22:00|P|Na předchozí dvojici článků o subsystému CIO implementovaného ve všech osmibitových mikropočítačích Atari dnes navážeme. Ukážeme si, jakým způsobem je...|X|Podpora unifikované práce se zařízeními v operačním systému Atari: CIO (dokončení)
+Na předchozí dvojici článků o subsystému CIO (Central Input/Output) implementovaného ve všech osmibitových domácích mikropočítačích Atari [1] [2] dnes navážeme a celé téma dokončíme. Ukážeme si totiž, jakým způsobem je možné realizovat vlastní zařízení, zaregistrovat toto zařízení pod vhodným písmenem a volat jednotlivé operace přes CIO (OPEN, CLOSE, PUT, GET, XIO). Začneme tím nejjednodušším možným zařízením pojmenovaným N:, které neprovádí žádné konkrétní operace – pouze pro všechny operace vrací stav „OK“. Variantou bude stejné „nulové“ zařízení, které ovšem bude vracet chyby pro vybrané operace. Třetí zařízení, které v rámci dnešního článku naimplementujeme, bude pouze vypisovat, které operace byly zavolány, takže si budeme moci ověřit, jak vlastně CIO (a IOCB) reálně pracuje.
+Ovšem nejzajímavější a taktéž nejkomplexnější bude implementace čtvrtého typu zařízení, které je nazváno G: (od slov GTIA resp. graphics). Přes toto zařízení bude možné ovládat sprite zobrazený na obrazovce. Celkem bude možné vytvořit čtyři zařízení G:, každé pro jeden sprite (pro jednoduchost nejsou podporovány střely, to by celý program prodloužilo, ovšem nepřineslo žádné nové informace o CIO). Jakákoli operace se zařízením tedy bude ihned vizualizována. Toto zařízení bude otestováno programem psaným v Atari BASICu.
+Základ pro další demonstrační příklady: provedení zápisu s kontrolou, zda byl zápis proveden korektně
+V dalších kapitolách bude ukázána implementace a registrace nových zařízení. Základní operace, které tato zařízení implementují (nebo naopak neimplementují) budou testovány jednoduchým programem napsaným v assembleru, který provede následující operace:
+- Je zvolen kanál 0–7, který bude v příkladu použit (typicky kanál číslo #4)
+- Tento kanál je pro jistotu na začátku uzavřen
+- Zvolený kanál je otevřen s přiřazeným zařízením
+- Provede se zápis jednoho bajtu do kanálu
+- Následně je přes IOCB provedena kontrola, zda operace zápisu dopadla korektně
+Pokud je operace zápisu provedena bez chyby, obrazovka zezelená:
+Ovšem v případě, že naopak dojde k chybě při zápisu, bude obrazovka tmavě červená:
+Celý zdrojový kód takto navrženého příkladu vypadá následovně:
+.include "atari.inc"
+ 
+.CODE
+ 
+IOCB4 = $40              ; offset odvozený od čísla IOCB kanálu (nutno násobit šestnácti)
+ 
+ 
+ 
+; ---------------------------------------------------------------------
+; hlavní program
+; ---------------------------------------------------------------------
+.proc main
+        jsr CLOSE_CHANNEL_4
+        jsr OPEN_CHANNEL_4_AS_H
+        jsr WRITE_BYTE_CHANNEL_4
+        jsr CHECK_ERROR
+loop:
+        jmp loop                ; program vlastně nice nedělá - jen cyklí!
+.endproc
+ 
+ 
+ 
+; ---------------------------------------------------------------------
+; uzavření kanálu číslo 4
+; ---------------------------------------------------------------------
+.proc CLOSE_CHANNEL_4
+        ldx #IOCB4              ; offset odvozený od čísla IOCB kanálu
+        lda #CLOSE              ; prováděná operace
+        sta ICCOM, x            ; zápis prováděné operace do bloku IOCB
+        jsr CIOV                ; zavolání rutiny pro CIO
+        rts                     ; návrat ze subrutiny
+.endproc
+ 
+ 
+ 
+; ---------------------------------------------------------------------
+; otevření kanálu číslo 4 v režimu zápisu na zařízení H:test.txt
+; ---------------------------------------------------------------------
+.proc OPEN_CHANNEL_4_AS_H
+        ldx #IOCB4              ; offset odvozený od čísla IOCB kanálu
+        lda #OPEN               ; prováděná operace
+        sta ICCOM, x            ; zápis prováděné operace do bloku IOCB
+ 
+        ; specifikace jména zařízení + jména souboru (16bitový ukazatel)
+        lda #<device_name
+        sta ICBAL, x
+        lda #>device_name
+        sta ICBAH, x
+ 
+        lda #OPNOT              ; režim otevření: zápis (odpovídá druhému parametru příkazu OPEN v BASICu)
+        sta ICAX1, x
+        lda #0                  ; odpovídá třetímu parametru příkazu OPEN v BASICu
+        sta ICAX2, x
+ 
+        jsr CIOV                ; zavolání rutiny pro CIO
+ 
+        rts                     ; návrat ze subrutiny
+.endproc
+ 
+ 
+ 
+; ---------------------------------------------------------------------
+; zápis jednoho znaku do kanálu číslo 4
+; ---------------------------------------------------------------------
+.proc WRITE_BYTE_CHANNEL_4
+        ldx #IOCB4              ; offset odvozený od čísla IOCB kanálu
+        lda #PUTCHR             ; prováděná operace
+        sta ICCOM, x            ; zápis prováděné operace do bloku IOCB
+ 
+        ; adresa zapisovaného bloku
+        lda #<char_to_put
+        sta ICBAL, x
+        lda #>char_to_put
+        sta ICBAH, x
+ 
+        ; nastavení počtu zapisovaných bajtů
+        lda #1
+        sta ICBLL, x
+        lda #0
+        sta ICBLH, x
+ 
+        jsr CIOV                ; zavolání rutiny pro CIO
+        rts                     ; návrat ze subrutiny
+.endproc
+ 
+ 
+ 
+; ---------------------------------------------------------------------
+; kontrola chyby při zápisu
+; ---------------------------------------------------------------------
+.proc CHECK_ERROR
+        ldx #IOCB4              ; offset odvozený od čísla IOCB kanálu
+ 
+        lda ICSTA, x            ; status poslední operace
+        bpl ok                  ; test bitu 7
+ 
+        lda #18                 ; kod barvy
+        sta COLOR2              ; ulozit do registru COLOR2
+        rts                     ; návrat ze subrutiny
+ok:
+        lda #$c3                ; kod barvy
+        sta COLOR2              ; ulozit do registru COLOR2
+        rts                     ; návrat ze subrutiny
+.endproc
+ 
+; jméno zařízení (+ jméno souboru) ukončené nulou
+device_name: .byte "H:TEST.TXT", 0
+ 
+; zapisovaný bajt
+char_to_put: .byte $41
+ 
+end:
+ 
+ 
+ 
+.segment "EXEHDR"
+.word   $ffff                   ; uvodni sekvence bajtu v souboru XEX
+.word   main                    ; zacatek kodoveho segmentu
+.word   end - 1                 ; konec kodoveho segmentu
+ 
+ 
+ 
+.segment "AUTOSTRT"             ; segment s pocatecni adresou
+.word   RUNAD                   ; naplni se pouze adresy RUNAD a RUNAD+1
+.word   RUNAD+1
+.word   main                    ; adresa vstupniho bodu do programu
+ 
+; finito
+Registrace a implementace vlastního zařízení s využitím subsystému CIO
+Systém CIO nabízí poměrně jednoduchý způsob pro implementaci a registraci vlastního zařízení. Každé zařízení musí implementovat podprogramy (subrutiny) volané pro jednotlivé operace OPEN, CLOSE, PUT, GET, XIO a INIT. Adresy těchto subrutin jsou uloženy ve formě tabulky vektorů (je to ovšem nepatrně složitější kvůli způsobu volání těchto subrutin). A navíc je nutné adresu této tabulky vektorů uložit, společně s názvem zařízení, do HATABS (Handler Address Table). Jak již víme z předchozího článku, obsahuje tato tabulka pro každé zaregistrované zařízení tři bajty: jméno zařízení (jeden znak) a adresu tabulky vektorů. Jakmile je tabulka naplněna (resp. doplněna) o nové zařízení a do paměti jsou nahrány jeho ovladače (tj. ony handlery resp. subrutiny), může prakticky jakýkoli program začít toto zařízení používat.
+Nejprve si ukážeme způsob implementace toho nejjednoduššího zařízení nazvaného „null device“ a označeného písmenem N:. Toto zařízení podporuje všechny operace, ovšem jejich implementace je „nulová“ – pouze se vrátí kód „provedeno bez chyby“.
+Implementace „nulového zařízení“ v Atari BASICu
+Vzhledem k tomu, že osmibitové domácí mikropočítače Atari jsou z pohledu IT dávnou minulostí, podívejme se na ukázkový dobový program s implementací nulového zařízení. Tento program je napsaný v Atari BASICu a po jeho spuštění se zaregistruje nové zařízení nazvané N:
+100 REM NULL HANDLER INSTALLATION
+110 REM BY BOB MARTIN
+120 REM (c)1989,ANTIC PUBLISHING INC.
+150 RESTORE :TRAP 170:ADDR=1536
+160 READ A:POKE ADDR,A:ADDR=ADDR+1:GOTO 160
+170 TRAP 180:XXX=USR(1536)
+180 ? :? "N: HANDLER INSTALLED!":END
+190 DATA 104,162,0,189,26
+200 DATA 3,240,7,232,232,232,208,246,240,242
+210 DATA 169,78,157,26,3,169,31,157,27,3
+220 DATA 169,6,157,28,3,96,43,6,43,6
+230 DATA 43,6,43,6,43,6,76,44,6,169
+240 DATA 1,168,96,226,2,227,2,0,6
+Zařízení je možné ihned poté začít používat, tj. například interaktivně otevřít kanál #4, provést zápis řetězce do kanálu, provést zápis bajtu do stejného kanálu a posléze kanál uzavřít. Tyto operace proběhnou bez chyby (ty totiž Atari BASIC kontroluje automaticky):
+Co se skrývá v řádcích 190 až 240?
+Celá implementace zařízení N:, a to včetně jeho registrace, je zakódována v programových řádcích 190 až 240. Jedná se o strojový kód, ke kterému ovšem existuje i příslušný zdrojový kód v assembleru. Ten vypadá následovně (opět zde zobrazuji původní výpis, který ovšem není kompatibilní s assemblerem CA65):
+0100 ; ADD A NULL HANDLER
+0110 ; BY BOB MARTIN
+0120 ; (c)1989, ANTIC PUBLISHING INC.
+0130 ;
+0140 HATABS = $031A
+0150 ;
+0160     *=  $0600
+0170 ;
+0180 ;INSERT THE N: DEVICE IN HATABS
+0200 ;  LOOK FOR EMPTY SPOT IN HATABS
+0210 ;
+0220 INSERT
+0230     LDX #0
+0240 NEXTPLACE
+0250     LDA HATABS,X
+0260     BEQ ESPOT
+0270     INX
+0280     INX
+0290     INX
+0300     BNE NEXTPLACE
+0310     BEQ INSERT
+0320 ;
+0330 ;  FOUND AN EMPYT SPOT
+0340 ;
+0350 ESPOT
+0360     LDA #'N
+0370     STA HATABS,X
+0380     LDA #NULLT&$FF
+0390     STA HATABS+1,X
+0400     LDA #NULLT/$0100
+0410     STA HATABS+2,X
+0420     RTS
+0430 ;
+0440 ;HANDLER TABLE
+0450 ;
+0460 NULLT
+0470     .WORD NULL-1
+0480     .WORD NULL-1
+0490     .WORD NULL-1
+0500     .WORD NULL-1
+0510     .WORD NULL-1
+0520     JMP NULL
+0530 ;
+0540 ;NULL HANDLER
+0550 ;
+0560 NULL
+0570     LDA #1
+0580     TAY
+0590     RTS
+0600 ;
+0610 ; RUN INITIALIZATION STEP
+0620 ;
+0630     *=  $02E2
+0640     .WORD INSERT
+0650     .END
+V tomto programu můžeme identifikovat několik důležitých částí. Zejména je zde implementována subrutina, která bude posléze volána pro operace (OPEN, CLOSE, PUT, GET, STATUS), které zařízení podporuje. Tato subrut...
+(Pokracovani na webu)|E||T|Google má konečně vlastní lokátor Pixel Tag. Hodinky Pixel Watch 5 přidávají pokročilé měření zdraví|D|12.8. 17:45|P||X|
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Google přichází s novými smartphony Pixel 11 a chytrými hodinkami Pixel Watch 5|D|12.8. 17:22|P|Google po roce přichází s novou řadou svých smartphonů Pixel. Stejně jako loni jde o tři modely: Pixel 11, Pixel 11 Pro a Pixel 11 Pro XL, které se li...|X|Google po roce přichází s novou řadou svých smartphonů Pixel. Stejně jako loni jde o tři modely: Pixel 11, Pixel 11 Pro a Pixel 11 Pro XL, které se liší rozlišením displeje a dostupnými funkcemi.
 Základní model Pixel 11 má displej Actua o úhlopříčce 160 mm (6,3 palce) s poměrem stran 20:9, rozlišením 1080 × 2424 OLED při 422 ppi a maximálním jasem až 3000 nitů. Kryje ho sklo Corning Gorilla Glass Victus 2, které má být podle Googlu odolnější proti poškrábání. Telefon má rozměry 152,8 mm x 72,0 mm x 8,6 mm a váží 197 gramů.

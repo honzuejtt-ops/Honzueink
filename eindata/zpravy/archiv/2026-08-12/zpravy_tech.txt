@@ -1,3 +1,15 @@
+|T|Skvělá tanková multifunkce HP teď s cashbackem stojí jen 2159 Kč. Model s podavačem je za 3699 Kč|D|12.8. 14:45|P|HP Smart Tank Wireless 582 zlevnil na 2159 Kč, když využijete cashback výrobce. • Používá tankový systém s nízkými provozními náklady. • V akci jsou i...|X|HP Smart Tank Wireless 582 zlevnil na 2159 Kč, když využijete cashback výrobce. • Používá tankový systém s nízkými provozními náklady. • V akci jsou i rychlejší modely s automatickým duplexem nebo podavačem dokumentů.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Google Pixel 11 si letos pospíšil. Starý design, nové barvy a pulzující světlo ladí dohromady|D|12.8. 14:15|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Sonda Escapade pořídila snímek Země a Měsíce. Je netradiční, ale ne první ze vzdálených končin Sluneční soustavy|D|12.8. 13:45|P|Sonda Escapade pořídila netradiční snímek noční Země v infračerveném tepelném záření • Fotografií Země ze vzdálenějších končin Sluneční soustavy bylo ...|X|Sonda Escapade pořídila netradiční snímek noční Země v infračerveném tepelném záření • Fotografií Země ze vzdálenějších končin Sluneční soustavy bylo díky sondám pořízeno více
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Česko už dávno zakázalo nevyžádané hovory, telešmejdi ale volají dál. Jinde v Evropě by platili milionové pokuty|D|12.8. 13:15|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Česko společně s FBI varuje před ruskými útoky na e-mailové schránky|D|12.8. 13:04|P|Národní úřad pro kybernetickou a informační bezpečnost (NÚKIB) společně s FBI, NSA a dalšími mezinárodními partnery vydal upozornění před probíhající ...|X|Národní úřad pro kybernetickou a informační bezpečnost (NÚKIB) společně s FBI, NSA a dalšími mezinárodními partnery vydal upozornění před probíhající kybernetickou kampaní napojenou na Rusko.
 Takzvané Joint Cybersecurity Advisory se týká akce Laundry Bear. Ta se zaměřuje na uživatele e-mailový software Zimbra Collaboration Suite. Úřady doporučují aktualizovat systém tak, aby obsahoval záplatu zranitelnosti CVE‑2025‑66376. Je také vhodné prověřit indikátory kompromitace, podezřelé aktivity a podobně.
 “Podle zjištění se aktéři napojení na Ruskou federaci zaměřují především na získávání e-mailové komunikace a dalších citlivých informací z vládních institucí, obranného průmyslu, energetiky, médií, vzdělávacích institucí, nevládních organizací nebo technologických společností. Kampaň využívá zranitelnost v rozhraní webmailu Zimbra, která umožňuje spuštění škodlivého kódu již při zobrazení podvrženého e-mailu ve zranitelné verzi systému,” shrnul NÚKIB.

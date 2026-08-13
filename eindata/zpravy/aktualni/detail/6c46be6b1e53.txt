@@ -1,0 +1,24 @@
+Primářka psala zprávy po večerech. Teď jí je nachystá aplikace.
+Za nápadem stojí investor Ondřej Vlček, bývalý šéf Avastu. Aplikaci dnes používají lékaři z víc než deseti oborů, týdně jí projdou tisíce zpráv a firma teď míří na Slovensko a do Polska.
+Manželka Ondřeje Vlčka Katarína je primářka mobilního hospice Cesta domů. Podle jeho slov ho štvalo, že manželka přijde večer z práce a hned usedá k počítači sepisovat lékařské zprávy. To ho přimělo problém řešit sám – vložil do startupu Auris One vlastní peníze, aby lékařům administrativu z velké části odebral. Dnes aplikaci používá i její vlastní pracoviště.
+Jak se z rozhovoru u lékaře stane hotový zápis
+Podle popisu firmy lékař se souhlasem pacienta stiskne tlačítko a aplikace nahraje jejich rozhovor. Řeč pak převede na text, z něj vybere podstatné informace a sama sestaví strukturovaný zápis – ne jen doslovný přepis – připravený k vložení do nemocničního nebo ambulantního systému.
+"Tento projekt teprve vstupuje do ostrého provozu," řekl Vlček webu E15 koncem loňského prosince. Nahrávka rozhovoru zůstává jen podkladem pro zápis – lékař hotový text před uložením do karty vždy vidí a může ho upravit, takže poslední slovo má pořád on, ne program.
+Vlček firmu financuje, nevede ji
+Auris One vznikl v říjnu 2024. Ondřej Vlček ho ale sám nevede – jako generální ředitelka a technický ředitel ho řídí Nina Formánek Jaganjacová a Michal Trs, zatímco Vlček zůstává investorem a strategickým rádcem – na plnohodnotné vedení podle svých slov nemá čas. Do startupu vložil milion dolarů (v přepočtu asi 20 milionů korun) a drží v něm většinový podíl; firma se podle Czechcrunche chystá shánět další investory.
+Vlček byl u Avastu a jeho nástupnické firmy Gen Digital skoro třicet let – generálním ředitelem Avastu se stal v roce 2019, po fúzi s NortonLifeLock pak byl v Gen Digital prezidentem, než v roce 2024 odešel. Impulsem k novému projektu byla právě manželka Katarína – obor paliativní péče, ve kterém pracuje, má podle zakladatelů obzvlášť velkou administrativní zátěž, a proto se tam Auris One nejdřív zaměřil.
+Tisíce zpráv týdně a plán na Slovensko i do Polska
+Aplikaci dnes používají lékaři z víc než deseti oborů a systém přes ni týdně projde tisíce zpráv, mezi uživateli jsou i zdravotnická zařízení jako Cesta domů nebo nemocnice AGEL Nový Jičín a Havířov. Sami zakladatelé mluví o tom, že projekt by měl lékařům ulevit až o 60 hodin měsíčně jen na psaní dokumentace – jde o jejich vlastní odhad, nezávisle změřený úbytek hodin zatím nikdo nepublikoval.
+💡 Zajímavost: Administrativa dnes lékařům podle magazínu Euro zabere zhruba dvě pětiny pracovní doby.
+Firma letos přidala do nabídky onkologii a chce teď do dvanácti až osmnácti měsíců pokrýt většinu hlavních lékařských oborů. Souběžně chce rozšířit nabídku i mimo lékaře – na zdravotní sestry, fyzioterapeuty nebo zubní a estetickou medicínu. Zároveň chystá krok za hranice Česka: prvním cílem má být Slovensko, druhým Polsko jako největší trh regionu. Zatím jde o oznámený záměr, ne o hotovou věc.
+Co se děje s nahrávkou rozhovoru
+Nahrávání citlivého rozhovoru lékaře s pacientem přirozeně vyvolává otázku, kam data putují. Podle vlastního popisu zabezpečení na webu firmy se nahrávky po zpracování automaticky a nenávratně mažou – lékař si je může v aplikaci ponechat nejdéle sedm dní. Data firma ukládá šifrovaně v evropských datacentrech a k pacientským datům smí sama přistoupit jen na vyžádání lékaře, každý takový přístup se eviduje. Od běžných pacientských nahrávek firma odlišuje vlastní testovací provoz – k vylepšování systému využívá zpětnou vazbu lékařů a data od testovacích uživatelů, ne nahrávky skutečných pacientů.
+Co to znamená pro pacienty
+Pro pacienty samotné je přínos nepřímý: čím méně času lékař stráví večer psaním zpráv, tím víc mu ho zbyde na návštěvu samotnou nebo na odpočinek, který se pak promítne do péče druhý den. V paliativní a domácí péči, kde Auris One začínal, to platí obzvlášť – lékaři tam často jezdí za pacienty domů a papírování je zdržuje od dalších návštěv. Podobných pomocníků přibývá i jinde ve zdravotnictví: česká AI čte rentgeny a nově pomáhá i se snímky prsu – umělá inteligence dnes odlehčuje českým lékařům na víc místech systému než jen v ordinaci praktika.
+Jestli se firmě podaří dodržet plán expanze na Slovensko a do Polska a přitom si udržet důvěru lékařů, kteří s citlivými rozhovory pacientů pracují, ukáže až následující rok až dva.
+Ověřeno z:
+- E15 — video-rozhovor s Ondřejem Vlčkem o vzniku a stavu Auris One (23. 12. 2025)
+- CzechCrunch — rozhovor o založení, financování a vedení firmy (28. 5. 2025)
+- Euro.cz — článek o nasazení, počtu uživatelů a plánu expanze (11. 6. 2026)
+- Auris One — vlastní popis zabezpečení dat na webu firmy (aktuální)
+- ARES — obchodní rejstřík, datum vzniku společnosti (aktuální)

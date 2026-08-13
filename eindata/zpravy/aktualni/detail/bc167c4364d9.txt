@@ -1,0 +1,3 @@
+Anthropic začne nepostřehnutelně značkovat všechny texty od Claude • Model přidá nepatrnou statistickou odchylku, kterou detektory dokážou najít. • Vodoznak ale neprozradí, kolik textu model napsal – a kdo ho chce smazat, smaže ho.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

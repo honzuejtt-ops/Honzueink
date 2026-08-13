@@ -1,0 +1,5 @@
+Mapy.com postupně přecházejí od bitmapových/dlaždicových map k těm vektorovým. Novinku Seznam pouští mezi 5 % uživatelů, aby otestoval, jestli je všechno v pořádku. V některých případech ale není.
+
+Uživatelé si na oficiálním fóru stěžují, že mapy se vykreslují chybně či vůbec, může být problém s ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

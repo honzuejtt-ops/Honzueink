@@ -1,0 +1,6 @@
+Sdílení souborů mezi telefony s Androidem bude zase o něco jednodušší. Google dohání Apple a do funkce Quick Share přidává novinku zvanou Tap to Share. Ta umožní přenášet fotografie, videa, kontakty a další obsah pouhým přiložením dvou kompatibilních telefonů k sobě.
+AirDrop na Androidech
+Při sdílení kontaktů stačí být na domovské obrazovce a oba telefony přiblížit k sobě. Zařízení si následně vymění kontaktní údaje, přičemž uživatel si může předem zvolit, jaké informace z vizitky chce sdílet. V případě sdílení fotografií, videí či jiných souborů je nejprve nutné u daného obsahu otevřít nabídku pro sdílení a následně telefony přiblížit k sobě.
+Novinka výrazně zjednodušuje dosavadní Quick Share. Namísto hledání konkrétního zařízení v seznamu okolních telefonů stačí prostě oba mobily k sobě fyzicky přiblížit. Jednoduše a rychle, podobně jako má Apple u AirDropu už dlouhá léta. Inicializace přenosu probíhá pomocí NFC, samotný přenos pak přes Wi-Fi Direct nebo UWB.
+Tap to Share se už nyní začíná šířit nejdříve na telefony Pixel 6 (a novější), brzy bude dostupná i na letošní skládačky Samsung Galaxy Z Fold8 Ultra, Fold8 a Flip8. Další kompatibilní zařízení mají přibývat v průběhu letošního roku.
+zdroje: Blog Google, Google

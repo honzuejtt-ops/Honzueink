@@ -1,0 +1,11 @@
+Článek
+Aliance nyní zkoumá, jakým způsobem do obranných operací zapojit umělou inteligenci. Cílem ale nemá být plná autonomie umělé inteligence. Měla by pomáhat pilotovat drony, ale rozhodnutí, co se stane cílem, by bylo na lidských operátorech, píše Politico.
+Tento přístup odráží nynější stav v rusko-ukrajinském konfliktu. Kyjev stále více začleňuje umělou inteligenci do svých dronových operací, ale jak vojáci, tak zbrojařské firmy opakovaně zdůrazňují, že i když se válka stává stále více robotickou, v centru bojů musejí zůstat lidé.
+NATO počítá s tím, že by drony s podporou AI byly součástí Eastern Flank Detrrence Initiative — digitální sítě bojového prostoru, kterou aliance buduje na svých hranicích s Ruskem a Běloruskem. Ty sahají od severního Finska až po Černé moře.
+Nový koncept zahrnuje tisíce dronů, senzorů a satelitů propojených s umělou inteligencí pro detekci možných průlomů na spojenecké území. Konvenční vojenské síly, jako jsou tanky, stíhačky a dělostřelectvo, zůstanou páteří obrany.
+Ben Schiff, specialista americké armády prohlásil, že jak Ukrajina, tak Rusko stále spoléhají na lidi, kteří ovládají drony.
+Zatímco některé systémy mají AI nebo naprogramované cíle, jež umožňují krátké okamžiky autonomie během letu, pilotování primárně provádí operátoři na zemi. Podle Bena Schiffa by měly být „nejnudnější etapy“ letu bezpilotních strojů automatizované. Ale když přijde na rozhodování, na co by dron měl udeřit, je to chvíle, kdy „přichází na řadu člověk“.
+„Lidé rozhodují, co dron dělá, ale nemusí s ním nutně podnikat každý krok jeho cesty. Nemáme k dispozici milion pilotů, kteří by současně pilotovali milion dronů,“ řekl Schiff.
+„Hodnota dronu či senzoru není určena pouze jeho individuálním výkonem. Jeho účinnost závisí na tom, jak dobře se integruje do širšího provozního systému,“ řekl major Matt Blubaugh, mluvčí americké armády v Evropě a Africe.
+V tomto směru dosáhla významného pokroku právě Ukrajina, která umělou inteligenci na bojištích využívá k navigaci dronů, navádění terminálů a pro přesnost, uvedl Andrij Hrytseniuk, generální ředitel ukrajinské společnosti Brave1.
+Wild Hornets, výrobce populárního stíhacího dronu Sting, letos v květnu prohlásil, že AI bude postupně integrována téměř do každé fáze letových operací — od detekce cílů, přes identifikaci a později i navádění na konci letu.

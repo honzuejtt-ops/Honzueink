@@ -1,3 +1,18 @@
+|T|Zabírá WhatsApp moc místa v mobilu? Jak vymazat staré soubory a vypnout automatické stahování|D|14.8. 07:45|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Snapdragon C přinese Arm do notebooků za osm tisíc. Zajistí celodenní výdrž|D|14.8. 06:45|P|Qualcomm upřesnil specifikace nového čipu Snapdragon C, který představil letos v květnu a kterým chce proniknout do lowendových pater počítačů – deskt...|X|Qualcomm upřesnil specifikace nového čipu Snapdragon C, který představil letos v květnu a kterým chce proniknout do lowendových pater počítačů – desktopů i notebooků. Stále ještě neznáme datum uvedení takových strojů, ale nabízí se září, kdy by mohli výrobci prezentovat nová PC na berlínském ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Hliníková konstrukce a Windows Phone 8.1: objevily se fotky tajného prototypu Surface Phonu z roku 2013|D|14.8. 06:41|P|Už v roce 2014 jsme se mohli dočkat telefonu Surface od Microsoftu, jehož prototyp se nyní objevil na internetu. Nakonec ale došlo k odkupu Lumií od N...|X|Na webu se objevily fotografie záhadného telefonu Microsoftu, na kterém měl pracovat v roce 2013. S největší pravděpodobností jde o model řady Surface, který se ale do finálního stadia nikdy nedostal.
+Prototyp používal ranou verzi Windows Phone 8.1 a designem výrazně připomíná tehdejší tablet Surface 2. Tehdejší spekulace hovořily o vývoji telefonu s názvem Surface Phone a s největší pravděpodobností jde právě o tento model.
+Kovové šasi
+Projekt měl údajně interní označení Raven. Na jeho zadní straně je logo Microsoftu a tělo obepíná stříbrný kovový rám. Barevné provedení odpovídá tabletu Surface 2 z roku 2013 a shodují se také hardwarová tlačítka, která mají stejnou povrchovou úpravu.
+Telefon používá displej s rozlišením 720p a blíže neurčený čip Qualcomm. Nainstalovaný systém pochází podle dostupných údajů ze září 2013 a jde o interní vývojovou větev, ze které později vznikl Windows Phone 8.1.
+Konstrukce odpovídá tehdejším smartphonům s Windows Phone. Na pravém boku se nacházela tlačítka pro regulaci hlasitosti a tlačítko fotoaparátu. Telefon se zapínal a vypínal tlačítkem v horní hraně. Jako konektor prototyp využíval tehdy standardní microUSB a nechyběl ani 3,5mm audio konektor.
+O vlastním telefonu Microsoftu se spekulovalo už před převzetím mobilní divize Nokie. Zařízení mělo podle tehdejších informací dorazit v roce 2014 pod značkou Surface a doplnit řadu Surface Pro.
+Microsoft však v září 2013 oznámil dohodu o převzetí divize Devices and Services společnosti Nokia. Projekt Raven byl následně ukončen a Microsoft pokračoval ve vývoji telefonů Lumia. K vlastnímu telefonu se značkou Surface se vrátil až v roce 2020 se skládacím modelem Surface Duo, který běžel na Androidu.
+Zdroj: Windows Central|E|
 |T|Více než měsíc po pádu Boeingu 737 chybí vysvětlení. Vrak i s černými skříňkami leží v Arabském moři|D|14.8. 05:45|P|Nákladní Boeing 737 se patrně po poruše navigace zřítil do Arabského moře • Černé skříňky leží v hloubce tři tisíce metrů a nejspíš už nevysílají sign...|X|Nákladní Boeing 737 se patrně po poruše navigace zřítil do Arabského moře • Černé skříňky leží v hloubce tři tisíce metrů a nejspíš už nevysílají signál • Vyšetřovatelé nevydali předběžnou zprávu a příčina nehody zůstává neznámá
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|

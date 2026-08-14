@@ -1,0 +1,3 @@
+Horké letní počasí vede k úvahám o tom, jak chladit nejen sebe, ale i počítač. Názorně ukážeme, jak desktopu ulevit nastavením ventilátorů rovnou v UEFI.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

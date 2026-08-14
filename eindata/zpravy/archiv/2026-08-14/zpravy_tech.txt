@@ -1,3 +1,9 @@
+|T|Jak správně nastavit otáčky ventilátorů v UEFI. Návod pro Asus, Gigabyte a MSI|D|14.8. 12:45|P|Horké letní počasí vede k úvahám o tom, jak chladit nejen sebe, ale i počítač. Názorně ukážeme, jak desktopu ulevit nastavením ventilátorů rovnou v UE...|X|Horké letní počasí vede k úvahám o tom, jak chladit nejen sebe, ale i počítač. Názorně ukážeme, jak desktopu ulevit nastavením ventilátorů rovnou v UEFI.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Netflix a další na víkend: Nový Jack Reacher, trenér Mourinho, filmová Akta X. A také Rozhovory s vrahem|D|14.8. 11:45|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Google dohání Apple. Android dostává vlastní AirDrop, soubory přenesete přiložením telefonů k sobě|D|14.8. 11:40|P|Novinka Tap to Share funguje podobně jako AirDrop u iPhonů. Pro sdílení obsahu mezi Androidy nyní stačí jednoduše přiložit dva telefony k sobě.|X|Sdílení souborů mezi telefony s Androidem bude zase o něco jednodušší. Google dohání Apple a do funkce Quick Share přidává novinku zvanou Tap to Share. Ta umožní přenášet fotografie, videa, kontakty a další obsah pouhým přiložením dvou kompatibilních telefonů k sobě.
 AirDrop na Androidech
 Při sdílení kontaktů stačí být na domovské obrazovce a oba telefony přiblížit k sobě. Zařízení si následně vymění kontaktní údaje, přičemž uživatel si může předem zvolit, jaké informace z vizitky chce sdílet. V případě sdílení fotografií, videí či jiných souborů je nejprve nutné u daného obsahu otevřít nabídku pro sdílení a následně telefony přiblížit k sobě.

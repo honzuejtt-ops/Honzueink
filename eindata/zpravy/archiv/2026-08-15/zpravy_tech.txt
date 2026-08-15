@@ -1,3 +1,9 @@
+|T|Mafia vyjde v kompletním balení všech dílů i rozšíření. Remake prvního dílu nově běží na konzolích v 60 FPS|D|15.8. 08:45|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|15 927 zrcadel a 210metrová věž. Čínská solárně-termální elektrárna vyrábí elektřinu pomocí roztavené soli|D|15.8. 08:05|P|Nová čínská elektrárna v Tibetu vyrábí čistou elektřinu z roztavené soli • Tisíce přesně nastavených zrcadel odrážejí sluneční paprsky na vysokou věž ...|X|Nová čínská elektrárna v Tibetu vyrábí čistou elektřinu z roztavené soli • Tisíce přesně nastavených zrcadel odrážejí sluneční paprsky na vysokou věž • Moderní zařízení pomůže ročně ušetřit desítky tisíc tun spalovaného uhlí
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Anthropic vysvětluje, jak bude Claude do textu přidávat vodoznaky. Chystá také API pro jejich detekci|D|15.8. 07:12|P|Když Anthropic před několika dny oznámil, že jeho modely Claude začnou neviditelně označovat texty, které vygenerují, nepřidal mnoho podrobností. Asi ...|X|Když Anthropic před několika dny oznámil, že jeho modely Claude začnou neviditelně označovat texty, které vygenerují, nepřidal mnoho podrobností. Asi proto včera vydal další vysvětlující článek, jak by značkování mělo fungovat. Zde najdete jeho upravený překlad.
 
 Budoucí modely Claude budou ...

@@ -1,0 +1,5 @@
+|T|Anthropic vysvětluje, jak bude Claude do textu přidávat vodoznaky. Chystá také API pro jejich detekci|D|15.8. 07:12|P|Když Anthropic před několika dny oznámil, že jeho modely Claude začnou neviditelně označovat texty, které vygenerují, nepřidal mnoho podrobností. Asi ...|X|Když Anthropic před několika dny oznámil, že jeho modely Claude začnou neviditelně označovat texty, které vygenerují, nepřidal mnoho podrobností. Asi proto včera vydal další vysvětlující článek, jak by značkování mělo fungovat. Zde najdete jeho upravený překlad.
+
+Budoucí modely Claude budou ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|

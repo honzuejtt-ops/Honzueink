@@ -1,3 +1,6 @@
+|T|Word z roku 1989 běží na Windows 11. Nadšenec upravil původní zdrojové kódy od Microsoftu|D|15.8. 13:45|P|Programátor vytvořil nativní port Wordu pro Windows 1.1a. • Tento textový procesor světu představil editaci WYSIWYG. • Běžel na strojích s jedním mega...|X|Programátor vytvořil nativní port Wordu pro Windows 1.1a. • Tento textový procesor světu představil editaci WYSIWYG. • Běžel na strojích s jedním megabajtem operační paměti.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Chrome v Androidu denně blokuje miliardy otravných notifikací. U aplikací to ale Google toleruje|D|15.8. 12:45|P||X|
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|

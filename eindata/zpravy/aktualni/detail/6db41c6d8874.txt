@@ -1,0 +1,16 @@
+Článek
+Rozdíl mezi cenou nové tiskárny a upgradu je v některých případech opravdu výrazný. Nový Core One L+ stojí 44 900 Kč, zatímco upgrade z předchozího Core One L vyjde na 549 Kč. U modelu XL stojí nová tiskárna s pluskem v názvu 54 990 Kč, přestavba stávající XL na novější verzi přijde na 5990 Kč.
+A kdo už má Core One+, může přejít na Core One+ (Gen 2) za 1399 Kč. Samotná nová tiskárna stojí 32 990 Kč, případně 25 990 Kč jako stavebnice. Zajímavé je, že Průša nabízí také upgrade z ještě staršího modelu Core One na plusko za 229 Kč.
+Právě možnost postupného vylepšování je na nové řadě možná zajímavější než samotné označení „plus“.
+Tři nové tiskárny
+Každá z novinek přitom míří na jiný typ uživatele, společné mají ale především praktické změny. Všechny tři dostávají například integrovaný čistič trysky, který má před tiskem odstranit zbytky filamentu. Novinkou jsou také řemeny GT1.5, které mají omezit jemné opakující se vzory na hladkých površích.
+Průša se tentokrát nesoustředil na jednu převratnou funkci. Spíše upravil řadu drobností, které mají znamenat méně čekání, čištění a ručního nastavování.
+Největší XL+ zachovává tiskový prostor 360 × 360 × 360 milimetrů a systém automatické výměny nástrojů. Výraznou novinkou je 360stupňové chlazení, které má rovnoměrněji přivádět vzduch k trysce. Podle výrobce má zlepšit tisk převisů, mostů a drobných detailů.
+XL+ dostává také vysokoprůtokové trysky a nový senzor pro přesné zarovnání tiskových hlav. Průša uvádí, že nový vířivoproudý senzor je přibližně dvacetkrát rychlejší než předchozí systém kalibrace.
+Tiskárna je připravena také na teplotu v komoře až 60 °C. Samotná tiskárna může díky vlastnímu teplu dosáhnout přibližně 50 °C, připravovaný ohřívač má umožnit využít celý rozsah.
+Core One L+ nabízí ze tří novinek prostřední velikost, o žádného drobečka ale rozhodně nejde. Uzavřená tiskárna nabízí tiskový prostor 300 × 300 × 330 milimetrů a aktivně řízenou tiskovou komoru. Stejně jako ostatní novinky dostává řemeny GT1.5 a čistič trysky.
+U Core One+ (Gen 2) se výrobce zaměřil především na rychlejší začátek tisku. Přepracované uchycení vyhřívané podložky má urychlit její zahřátí a stabilizaci. U PLA, PETG a dalších materiálů s teplotou podložky do 85 °C navíc mizí krok označovaný jako „Absorbing heat“, tedy fáze přípravy tiskárny před samotným tiskem. Přibyl také odnímatelný horní panel, který lze sundat bez nářadí. Čištění a údržba tak mají být jednodušší.
+Nová tiskárna, nebo upgrade?
+Jak bylo uvedeno již výše, majitelé předchozích modelů nemusí automaticky kupovat celý nový stroj – mohou využít nabízených upgradů. Neznamená to ale samozřejmě, že za několik stovek vznikne z každé staré tiskárny úplně nový stroj.
+Upgrady mění konkrétní komponenty a přidávají funkce nové generace. Cenový rozdíl proti nákupu celé tiskárny je ale zřejmý.
+Novinky přijdou do jednotlivých strojů i přes software. Průša připravuje například automatickou kalibraci filamentu před každým tiskem. Chystá se také nový program PrusaSlicer 3.0, jehož první alfa verze má přijít během několika týdnů.

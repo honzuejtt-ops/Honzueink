@@ -1,3 +1,8 @@
+|T|Prusa vylepšil 3D tiskárny. Pluska dostanou hřebínky, lepší řemeny a rychlejší start|D|17.8. 13:52|P|Připravit, ke startu, vytáhnout peněženky... Teď! Prusa Research se v závěru letních prázdnin pochlubil várkou „pluskových“ aktualizací svých 3D tiská...|X|Připravit, ke startu, vytáhnout peněženky... Teď! Prusa Research se v závěru letních prázdnin pochlubil várkou „pluskových“ aktualizací svých 3D tiskáren XL a Core One/L. Cena se nemění a pro majitele stávajících modelů jsou k dispozici jako vždy upgradovací balíčky. 
+
+Symbol „+“ nahrazuje někdejší ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Česká aplikace zdarma přidá AI funkce do Windows a macOS. A nikam neposílá vaše data|D|17.8. 13:27|P|Český vývojář Václav Jirovský skrze svoji firmu CertRadar vydal aplikaci Wheelly.ai, pomocí níž lze v operačních systémech Windows 11 a macOS pracovat...|X|Český vývojář Václav Jirovský skrze svoji firmu CertRadar vydal aplikaci Wheelly.ai, pomocí níž lze v operačních systémech Windows 11 a macOS pracovat s funkcemi umělé inteligence bez nutnosti posílat data do cloudů, respektive k velkým provozovatelům služeb postavených na jazykových modelech (LLM).
 Wheelly je ke stažení zdarma v Microsoft Store a Mac App Store. V operačním systémů pak lze kdekoliv pomocí přiřazené klávesy (hotkey) vyvolat kontextové menu s AI funkcemi napojenými na AI model. Lze si nechat opravit gramatiku, udělat překlad, sumarizovat text nebo změnit tón formulace psaného textu. Wheelly funguje s aplikacemi jako Slack, Teams, Jira, Notepad, Word, Outlook a dalšími.
 V podstatě jde o integraci užitečných funkcí AI do systému bez agresivních metod přihlašování do cloudu, sběru osobních data tak dále.

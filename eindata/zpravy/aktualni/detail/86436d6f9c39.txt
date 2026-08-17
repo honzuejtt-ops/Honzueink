@@ -1,0 +1,60 @@
+Programovací jazyk Lua patří mezi typické představitele dynamicky typovaných jazyků. V první řadě to znamená, že typy jsou kontrolovány (až) v době běhu programu, tedy v runtime (což znamená, že i případné chyby jsou hlášeny až v runtime). Navíc nejsou typy přiřazené proměnným či parametrům funkcí, ale přímo hodnotám. To mj. také znamená, že se při vytváření proměnných neuvádí jejich typ, protože interpret či just in time překladač použitý datový typ rozpozná přímo z toho, jakým způsobem je hodnota proměnné zapsána.
+Pokud je místo konstantní hodnoty použit výraz či volání funkce, vyhodnocuje se typ výsledku výrazu či výsledku volání funkce, ale až v době návratu z takové funkce. Takto pojatý typový systém přináší mnohé výhody. Především je (alespoň zpočátku) velmi jednoduché ho používat a mnoho uživatelů, kteří takový jazyk používají, vlastně ani nemusí o typech příliš přemýšlet (vše je přece „logické“).
+Na druhou stranu se však mohou do vyvíjených programů zanášet různé nepříjemné chyby a taktéž explicitně zapsané informace o typech mohou – pochopitelně pokud jsou použity – do značné míry nahradit dokumentaci (tedy například samotná signatura funkce je mnohdy více popisná, než nějaký někdy i zastaralý komentář). Proto není divu, že u prakticky všech původně dynamicky typovaných jazyků, které dosáhly určité úrovně rozšíření (a nasazení do větších projektů) můžeme vidět přechod či rozšíření o možnost zápisu typových informací.
+To je mnohdy nepovinné rozšíření jazyka; u takových jazyků se potom (i když poněkud nepřesně) mluví o graduálním typovém systému. Jedná se o kombinaci původního dynamického typového systému se systémem statickým, což umožňuje i postupný přechod resp. postupný refaktoring původního zdrojového kódu do jeho striktnější podoby. Dnes se seznámíme s projektem Luau, který (kromě dalších rozšíření) přináší graduální typový systém i do programovacího jazyka Lua.
+Statické a dynamické typové systémy
+Prakticky každý programovací jazyk, ať se jedná o interpret nebo o překladač, musí v nějaké fázi zpracování programového kódu provádět typové kontroly, tj. zjišťovat, zda se nějaká operace provádí s hodnotami očekávaných typů (tedy například že operace podílu se provádí nad dvojicí čísel a nikoli nad dvěma řetězci nebo dokonce nad tabulkou o hodnotou False).
+K této kontrole může docházet buď při překladu (kompilaci) popř. s využitím specializovaného nástroje pro statickou typovou analýzu (a to bez spuštění programového kódu). Takové kontrole datových typů říkáme statická (typová) kontrola. V tomto případě jsou u většiny v současnosti používaných typových systémů datové typy přiřazeny k proměnným či parametrům funkcí a metod, popř. jsou v případě potřeby automaticky odvozovány (typová inference). Ovšem kontrolu typů je alternativně možné provádět i za běhu programu, tedy v runtime. Taková kontrola se nazývá dynamická (typová) kontrola a zajímavá je tím, že typy jsou v tomto případě většinou přiřazeny hodnotám a nikoli proměnným (ovšem záleží na konkrétním programovacím jazyku – i zde existují určité rozdíly).
+Statické typové kontroly
+Myšlenka, na níž stojí technologie statických typových kontrol, je pro vývojáře většinou velmi snadno pochopitelná, protože se do značné míry podobá dalším analýzám programového (zdrojového) kódu, které provádí interpret (nebo překladač), dále různé lintery, generátory dokumentace, transpilery atd. Celá myšlenka je založena na tom, že u každé proměnné deklarované ve zdrojovém kódu, u každého parametru funkce resp. metody a taktéž u každého návratového parametru funkce či metody se přímo či nepřímo uvede datový typ (nepřímo v případě, že příslušný nástroj umí typ odvodit z použité hodnoty – jedná se, jak jsme si ostatně již naznačili v předchozí kapitole, o takzvanou typovou inferenci).
+Příkladem může být klasické céčko, které podporuje statické zápisy typů:
+#include <stdio.h>
+ 
+int main(void) {
+    static int x = 10000;
+    static double y = 1.2345;
+ 
+    static double z = y * x;
+ 
+    printf("%d x %f = %f\n", x, y, z);
+    return 0;
+}
+Nově je též možné využít (relativně primitivní) podobu typové inference, která je opět prováděna analýzou zdrojového kódu v době překladu, tedy staticky:
+#include <stdio.h>
+ 
+int main(void) {
+    auto x = 10000;
+    auto y = 1.2345;
+ 
+    auto z = y * x;
+ 
+    printf("%d x %f = %f\n", x, y, z);
+    return 0;
+}
+Díky tomu, že je specifikace typu proměnné, parametru funkce/metody či návratové hodnoty dostupná přímo ve formě zdrojového kódu, může být typová kontrola skutečně statická – nevyžaduje tedy, aby se program spustil. Toto řešení má své nesporné výhody, protože takto specifikované informace o typech dokáží zpracovat i moderní (a nejenom moderní) integrovaná vývojová prostředí či agenti, kteří ji mohou použít v kontextové nápovědě, při kontrole korektnosti zdrojového kódu atd.
+Ovšem současně při použití statické typové kontroly narážíme na značnou nevýhodu: je totiž velmi složité vytvořit snadno použitelný a současně i staticky typovaný programovací jazyk (dokonce je možné říci, že se nám to v oboru IT ještě nepodařilo, i když osobně mám slabost pro jazyky z rodiny ML). A další nevýhodou je, že zápis datových typů je vyžadován i v případě, kdy se tvoří pouze jednoduché skripty nebo prototypy. Proto není divu, že mnoho programovacích jazyků (a nutno říci, že mnohdy velmi úspěšných jazyků) striktní zápis datových typů nevyžaduje a tím pádem nebude (zcela) dostupná statická typová kontrola.
+U staticky typovaných programovacích jazyků většinou provádí základní typové kontroly už samotný překladač či interpret (to ale není případ programovacího jazyka Lua a dokonce ani interpretru Luau! – viz další kapitoly). Ovšem jak sami uvidíme v navazujícím textu, v závislosti na použitém typovém systému (různé typy variance atd.) se může stát, že některé typové kontroly musí být přesunuty z času překladu (tedy z compile time) do času běhu aplikace (runtime).
+Dynamické typové kontroly
+Zatímco statické typové kontroly jsou prováděny pouze na základě statické analýzy zdrojových kódů, tj. bez nutnosti (překladu) a spuštění analyzované aplikace, provádí se kontroly dynamické přímo za běhu aplikace. Rozdílem od statických kontrol je, že typy jsou přiřazeny k hodnotám a nikoli k proměnným či parametrům funkcí a metod. Samotný runtime programovacího jazyka (což může být interpret) v takovém případě při každé operaci s hodnotami testuje, jestli mají hodnoty předávané do této operace korektní typy a typ se odvodí (a zapamatuje) i na základě výsledku operace. Mezi takové jazyky patří jak Lua, tak i například Python či JavaScript.
+Tento článek je zaměřen na jazyk Lua, takže si uveďme příklad triviální typové chyby – nelze sečíst řetězec s číslem (alespoň ne v Lue – což je ostatně moc dobře):
+local foo = "foo"
+local bar = 1
+local baz = foo + bar
+ 
+print(baz)
+V případě, že se odhalí nekorektní použití (kombinace) typů, je běh aplikace přerušen: vznikne běhová chyba (například se vyhodí výjimka atd.). To je poměrně podstatný rozdíl oproti statické typové kontrole, která odhalí (či by alespoň měla odhalit) tyto problémy ještě předtím, než se aplikace spustí:
+$ lua foobar_nocheck.lua
+ 
+lua: foobar_nocheck.lua:5: attempt to add a 'string' with a 'number'
+stack traceback:
+        [C]: in metamethod 'add'
+        foobar_nocheck.lua:5: in main chunk
+        [C]: in ?
+Postupný přechod od jazyků s dynamickým typovým systémem k jazykům s volitelnými typy
+V IT se používalo nebo doposud používá několik desítek, velmi pravděpodobně však až několik set programovacích jazyků, z nichž prakticky každý je založen na odlišném typovém systému. Podívejme se tedy pouze na seznam těch programovacích jazyků, které jsou v současnosti nejpopulárnější nebo nejpoužívanější (což ovšem nemusí být totéž). V tomto seznamu nalezneme jak typické zástupce dynamicky typovaných jazyků, tak i programovací jazyky se statickým typovým systémem:
+Užitečné bude podrobněji prozkoumat první čtyři výše zmíněné dynamicky typované programovací jazyky, tedy konkrétně programovací jazyk Python, JavaScript, Ruby a pochopitelně i jazyk Lua. Tyto programovací jazyky se původně používaly většinou na tvorbu krátkých skriptů (v případě JavaScriptu běžící v rámci stránky ve webovém prohlížeči – první JavaScriptem oživené stránky používaly jen několikařádkové skripty), ovšem postupně se rozšířily i do mnoha dalších oblastí, takže v nich začaly vznikat mnohdy i velmi rozsáhlé aplikace; v případě jazyka Lua pak relativně rozsáhlé skripty v těch aplikacích, které jsou díky podpoře interpretru jazyka Lua rozšiřitelné o další naprogramovanou funkcionalitu.
+A právě u rozsáhlejších aplikací se začal ukazovat dosti velký význam staticky zapisovaných a taktéž staticky kontrolovaných datových typů, protože právě tyto nově zapsané informace umožňují lépe zajistit korektnost rozsáhlých projektů, což se bez použití typových informací do jisté míry nahrazuje větším množstvím jednotkových testů, se všemi z toho plynoucími nevýhodami (o „úroveň níž“ jsou pak jednotkové testy vygenerované z kódu s využitím AI). Navíc uvedení typových informací zlepšuje funkci integrovaných vývojových prostředí a mnohdy umožní se obejít bez podrobnějších komentářů v kódu (jedná se o komentáře typu „v parametru a se jako argument předává celé číslo…“).
+Primárně právě z důvodu podpory vývoje rozsáhlejších aplikací pro původně dynamicky typované programovací jazyky postupně vznikla rozšíření, která do nich přidává volitelný či graduální zápis datových typů. A tato rozšíření umožňují statickou kontrolu datových typů s využitím k tomu určených nástrojů:
+Statické typové kontroly implementované v projektu Luau
+Luau je projekt, který rozšiřuje možnosti programovacího jazyka Lua o další programové konstrukce a především o podporu zápisu typových informací. Na druhou stranu se autoři snaží o to, aby byl Luau do značné míry kompatibilní s původním jazykem Lua (což ovšem není vždy na sto procent dodrženo, zejména v těch oblastech, v nichž autoři Luau nesouhlasí se směřován...
+(Pokracovani na webu)

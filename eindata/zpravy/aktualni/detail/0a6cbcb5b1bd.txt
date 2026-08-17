@@ -1,0 +1,16 @@
+Samoobslužné pokladny měly zrychlit nákupy a ušetřit řetězcům peníze za personál. Místo toho zvedají obchodníkům ztráty z neprodaného zboží. Data ukazují, že za mizícím zbožím nestojí jen zloději, ale i běžné omyly zákazníků.
+O 33 % vyšší ztráty než u běžných pokladen
+První roky po plošném zavedení samoobslužných zón přinesly prodejnám nečekaný náraz. Podle rozsáhlé analýzy organizace ECR Retail Loss, která zkoumala data 39 velkých obchodních řetězců, vzrostly celkové ztráty v průměru o 22 procent. Prodejny vybavené samoobslužnými terminály vykazovaly dokonce o 33 procent vyšší manka než provozovny spoléhající výhradně na klasické pokladní s pásy.
+V českých supermarketech a hypermarketech se samoobslužné zóny staly standardem. Přenesení práce z profesionála na zákazníka však přináší rizika, se kterými technologie nepočítaly. Lidé nejsou proškolení pokladní a při skenování dělají přirozené chyby.
+Zapomenuté zboží pod košíkem i zaměněná houska
+Výpadky v tržbách netvoří pouze úmyslné krádeže. Významnou část z takzvaného shrinkage: tedy rozdílu mezi evidovaným a reálným stavem zboží, tvoří obyčejná nepozornost. Medvědí službu dělá zákazníkům spěch nebo nepřehledný výběr na dotykové obrazovce.
+Nejčastější chyby u samoobslužných pokladen:
+- 
+Opomenutí v košíku: Zapomenutí naskenovat objemné položky ve spodní části vozíku (balíky minerálek, krmiva pro zvířata).
+- 
+Záměna pečiva: Vybrání levnější varianty na displeji (např. zadání obyčejné housky místo dražšího cereálního suku).
+- 
+Chyby u ovoce a zeleniny: Záměna druhů při vážení nebo ručním zadávání kódů.
+- 
+Špatné naskenování: Rychlé přiložení čárového kódu, kdy pípnutí ohlásí jinou položku nebo se sken vůbec neprovede.
+Samoobsluhy tak sice šetří čas ve frontě a prodejny nemusí platit tolik lidského personálu, ale řetězcům vytvářejí neviditelné díry v rozpočtu. Obchody proto postupně posilují dohledový personál a do kamerového systému nasazují prvky umělé inteligence, které hlídají pohyb rukou nad skenerem.

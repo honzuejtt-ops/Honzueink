@@ -1,0 +1,9 @@
+Článek
+Na dron upozornily dva jemenské zdroje, poradenská společnost pro analýzu rizik Basha a novinář Ali Sakani. Oba psali, že jde o první zdokumentované použití FPV dronu s ovládáním přes optické vlákno ze strany jemenských Húsíů. Samo vlákno pocházelo z Číny a prodává se na internetových tržištích.
+Ze záběru je patrné, že dron nenese žádnou výbušninu. Byl tak zřejmě určen k průzkumu.
+Húsíové se FPV drony pokoušeli získat už dříve. Informovalo o tom loni na jaře nezávislé jemenské analytické středisko Sana´a Center. Jedné z jemenských provládních skupin, Saúdy podporovaným Národním silám odporu (NRF), se podařilo zabavit zásilku směřující k jemenským Húsíům, v níž byly čínské drony DJI Mavic3, řídící systémy Taranis X9D pro ovládání FPV dronů a také malé proudové motory od německo-indické firmy JetCat.
+Šlo o typy P500 nebo P550 PRO S, které měly hmotnost jen 5,4 kg. Ty se dají využít v proudových dronech.
+Drony Mavic však nejsou ovládány po optickém vlákně a lze je snáze rušit.
+Drony ovládané přes optické vlákno už využil Hizballáh
+FPV drony řízené po optickém vlákně jsou hojně využívány na Ukrajině, objevovat se ale začaly i na Blízkém východě. Letos je na přelomu jara a léta začal využívat k útokům na sever Izraele libanonský Hizballáh. Izraelci měli problémy je likvidovat, protože se nedají rušit prostředky elektronického boje, a také proto, že jsou malé a létají nízko.
+FPV drony získaly Hizballáh a Húsíové zřejmě přes Írán, který obě skupiny podporuje. Jak ukazuje jejich nasazení, s podporou neskončil ani po americko-izraelských úderech, byť čelil tvrdé blokádě se silnými ekonomickými dopady.

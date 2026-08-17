@@ -1,0 +1,5 @@
+Systémový prompt je text, který provozovatel AI služby vkládá modelu před samotný rozhovor. Uživatel ho nevidí, ale model ho čte jako první a text promptu bere jako závazná pravidla a rámec, ve kterém se má pohybovat.
+
+Bývají to pokyny psané běžným jazykem: kdo model je, jakým tónem a v jaké délce ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

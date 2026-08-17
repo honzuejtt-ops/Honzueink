@@ -1,0 +1,20 @@
+Článek
+Co si vlastně pod pojmem „cookie stuffing“ představit? Cookies jsou malé soubory dat, které si internetové stránky ukládají do prohlížeče uživatele. V tzv. affiliate marketingu mohou například sloužit k tomu, aby obchodník poznal, který partner přivedl zákazníka k nákupu. Pokud zákazník skutečně nakoupí přes affiliate odkaz, partner za zprostředkování dostane provizi.
+Problém nastává ve chvíli, kdy někdo takovou sledovací cookie do prohlížeče podstrčí, aniž by zákazníka k nákupu skutečně přivedl. Systém pak může vyhodnotit, že prodej patří právě tomuto partnerovi, a vyplatit mu provizi, na kterou by jinak neměl nárok.
+Právě takové praktiky jsou nyní spojovány s Phia, nákupní aplikací a rozšířením pro internetový prohlížeč, které založily Phoebe Gatesová a Sophia Kianniová.
+Phia si měla připisovat cizí prodeje
+Phia funguje jako digitální nákupní asistent. Uživatelům pomáhá porovnávat ceny, hledat slevové kódy nebo najít levnější či použité varianty módního zboží.
+Pokud Phia skutečně přivede zákazníka k nákupu, může za něj získat affiliate provizi. Právě proto je důležité správně určit, kdo prodej skutečně zprostředkoval.
+Podle investigace Bloombergu však Phia v některých případech připisovala prodeje sama sobě, přestože zákazník její službu při nákupu skutečně nevyužil. Bloomberg při testování rozšíření zjistil, že Phia dokázala v některých situacích otevřít na pozadí další kartu a prostřednictvím vlastního affiliate kódu zaznamenat takzvaný referral, tedy doporučení zákazníka. Tím mohla přepsat zásluhu jiného affiliate partnera.
+Nešlo tedy jednoduše o to, že by si někdo u Phia „klikl na tlačítko“ a dostal slevu. Sporný mechanismus mohl fungovat automaticky. Phia tak mohla získat provizi za nákup, který sama významně neovlivnila.
+Bloomberg zároveň uvedl, že podobné jednání odporuje pravidlům řady affiliate programů a sítí, které zakazují tzv. cookie stuffing nebo přebírání zásluh za prodeje přivedené jinými partnery.
+Mluvčí nejprve tvrdil, že o problému nevědí
+Kauza se naplno rozjela v červenci. Bloomberg tehdy Phiu konfrontoval se zjištěními, podle nichž její rozšíření automaticky zaznamenávalo referral kliknutí.
+Mluvčí společnosti tehdy uvedl, že se Phia o problému dozvěděla během posledních 24 hodin a že šlo o problém způsobený nedávnou verzí kódu. Firma následně uvedla, že mechanismus opravila.
+Bloomberg při opakovaném testování 7. července zjistil, že problematické automatické připisování již nefungovalo v případech, které předtím testoval.
+Jenže následná investigace přinesla mnohem nepříjemnější otázky. V nejnovější zprávě Bloomberg na základě interní komunikace a rozhovorů s lidmi obeznámenými se situací uvedl, že Phoebe Gatesová a Sophia Kianniová měly o problematických funkcích vědět nejméně od prosince 2025.
+Podle reportu se v interní komunikaci řešilo například automatické nastavování cookies a způsoby, jak zajistit, aby Phia získala zásluhu za co největší množství transakcí. První vyjádření společnosti přitom vytvářelo dojem, že šlo o čerstvě objevenou technickou chybu.
+Společnost podle serveru TechCrunch uvedla, že problematické funkce odstranila 7. července, prověřuje jednotlivé transakce a začala vracet partnerům peníze za nesprávně připsané prodeje. Zároveň chce najmout pracovníka zodpovědného za dodržování pravidel a předpisů, aby se podobná situace neopakovala.
+Po vypnutí problematických funkcí začátkem července měly denní příjmy společnosti Phia podle interních údajů klesnout z přibližně 80 tisíc dolarů (1,7 milionu korun) až na zhruba 10 tisíc dolarů (209 tisíc korun).
+Až 20 let vězení
+Cookie stuffing může být podle serveru LADbible v USA za určitých okolností kvalifikován například jako podvod využívající elektronickou komunikaci. A za ten hrozí až 20 let vězení a tučná pokuta k tomu.

@@ -1,0 +1,19 @@
+Článek
+Tento simulátor s příběhovou linií vsadil na jistotu obliby retra. Děj je zasazený zhruba do roku 2005 a odehrává se v tokijské čtvrti Akihabara, jíž místní neřeknou jinak než Akiba.
+Hráč se stává opravářem drobné elektroniky, na kterého si místní komunita pomalu zvyká a spolu se zakázkami na opravy telefonů, herních konzolí a dalších zařízení se pomalu dozvídá o jejím životě. S některými postavami se spřátelí ihned, s jinými je to… inu, složité.
+A do toho hráč rozebírá všechna ta zařízení, která (pokud je pamětníkem) tak dobře a důvěrně zná ze svého života a která se mezitím stala ikonami své doby – Nokii 3310, zde kvůli licenci Pokii 3310, véčkovou Motorolu Razr (Autorolla Razor), Tamagotchi (Eggotchi) nebo digitální hru Tetris (zde pod lakonickým jménem Brick Game). Nechybí joysticky, herní konzole ve stylu Nintenda, Sony, prvního Xboxu atd.
+Je zajímavé si všimnout, že vývojářům se už hned na začátku podařilo získat licenci od Atari, a tak jejich joysticky a herní konzole jsou ve hře zatím jedinými produkty s originálními názvy. Pokud se vše bude dařit, lze předpokládat, že přibydou i další zařízení s původními značkami, jak to u simulátorů bývá (vzpomeňme například herní sérii Car Mechanic Simulator).
+S rostoucími znalostmi a zakoupenými licencemi opravňujícími k repasi dalších zařízení si hráč postupně rozebere například fotoaparáty typu Polaroid, notebooky, retro televize, digitální hodinky a třeba i elektrické kytary.
+Hra má velmi jednoduché intuitivní ovládání, které lze obsáhnout téměř výhradně pomocí myši. Až se člověku vloudí otázka, zda vývojáři neuvažují o vytvoření verze pro mobilní zařízení. (V současné chvíli je hra dostupná jen na PC.)
+Zatímco NPC postavy navštěvující hráčův krámek svým vzhledem jasně odkazují na japonské animované seriály z počátku milénia, jednotlivá zařízení a jejich díly jsou vytvořeny s velikou vizuální věrností vůči svým předobrazům. Tento rozdíl v grafickém pojetí není přitom nijak rušivý. Ba naopak, obojí – po svém – podporuje základní záměr tvůrců hry, tj. nabídnout hráči příležitost, aby se alespoň na chvíli vrátil v čase a jeho dojmy byly co nejvíc autentické. Včetně zvukové kulisy a hudebního podmalování.
+Hru lze dohrát velmi volným tempem během 20 hodin, přičemž po dokončení hlavní dějové linie může hráč pokračovat dál v režimu sandboxu. Tam bude mít dost času na to, aby si dokoupil poslední licence na přístroje, které ještě neumí opravovat, dovybavil obchod podle svého gusta anebo splnil zbývající achievementy ve Steamu, jichž je v těchto dnech rovných 50.
+Vývojáři již ohlásili práci na rozšíření a dalším rozvoji hry. Úpravu by si zasloužil určitě režim americké retuše, který nyní umožňuje přestříkat původní barvu přístrojů spíše jen nahrubo, a rovněž tak nějaké praktičtější uložení samolepek pro dozdobení vzhledu opravovaných zařízení by nebylo od věci. Také soundtrack by snesl nějaké další dobově zapadající skladby… To jsou ale skutečné detaily. Je možné, že právě sem tvůrci v budoucnu zaměří svou pozornost a mechaniku úpravy finálního vzhledu zařízení ještě více propracují.
+V každém případě velké počty zakoupených kopií (během prvního týdne se prodalo 300 000 kusů) této žánrově niche hry ukazují, že i simulátor technického zaměření může být stejně tak zábavný jako roztomilý a že může mít neuvěřitelně dobře fungující atmosféru, která člověka snadno pohltí. Hra nemá oficiální českou lokalizaci, nicméně na překladu plné verze česká komunita začala již pracovat.
+Hodnocení: 8/10
+Minimální nároky:
+- OS: Win10 x64
+- Procesor: 2-core / 4-thread CPU
+- Paměť: 4 GB RAM
+- Grafická karta: GTX 750 Ti
+- DirectX: Verze 11
+- Pevný disk: 1 GB volného místa

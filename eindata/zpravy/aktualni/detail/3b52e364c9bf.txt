@@ -18,12 +18,10 @@ Stronger protections, on by default
 For teen users, protections are part of the default experience. For users under 18, ChatGPT for Teens applies age-appropriate safeguards designed to reduce exposure to content that may be harmful or developmentally inappropriate, while preserving the ability to learn, create, and explore.
 These protections are based on our Under-18 Principles in our Model Spec, which are informed by developmental science and guidance from experts. In practice, that means age-appropriate model protections and product interventions in higher-risk areas such as self-harm, violence, eating disorders, dangerous activities, and explicit sexual or graphic content.
 This work also builds on the family tools we introduced with parental controls and notifications. Parents with linked teen accounts can set Quiet Hours, manage selected settings, and receive safety notifications in limited high-risk situations. We are adding additional notifications related to eating disorders, while limiting what is shared and focusing on moments when offline support may matter most.
-Reinforcing real-world support and preventing emotional dependence
+Supporting healthy, balanced use
 We designed ChatGPT for Teens to support real-world relationships and healthy habits, with break reminders that encourage teens to step away, and product cues that consistently identify ChatGPT as AI.
 We’re continuing to strengthen ChatGPT’s age-appropriate behavior for users under 18. Our updated under-18 model spec(opens in a new window) goes beyond blocking romantic or sexualized roleplay: ChatGPT should not use romantic language, encourage emotional dependence, or imply that it has feelings or consciousness. These stronger protections are designed to reinforce healthy, real-world relationships.
-Supporting healthy, balanced use
 We are also adding cues and controls that are meant to reduce risk in context and point teens toward useful tools and protections, including:
-- As we announced last month, we now have more frequent prompts for teens during extended use, designed to encourage them to pause and step away, and reminding them that they are interacting with AI.
 - Sensitive-image upload reminders caution teens against sharing private or sensitive images.
 - Teen-specific onboarding introduces the learning and safety features available to them from the start.
 - And simple customization options, like accent colors and voice variations, help make the experience feel personal without blurring the line between a useful tool and a human relationship.

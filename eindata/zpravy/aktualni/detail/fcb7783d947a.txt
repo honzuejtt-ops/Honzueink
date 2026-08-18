@@ -1,0 +1,13 @@
+Článek
+Ministerstvo vnitra rozšiřování systému zastavilo, obě testovací kamery nechalo demontovat a požádalo NBÚ o odborné posouzení hardwaru i softwaru.
+Případem se už zabývají také orgány činné v trestním řízení a generální prokurátor Maroš Žilinka nařídil bratislavské prokuratuře, aby okolnosti kauzy prověřila.
+Opozice bije na poplach
+Bezpečnostní expert Progresivního Slovenska Peter Bátor na tiskové konferenci uvedl, že zařízení měla obsahovat dvanáct přednastavených ruských telefonních čísel. Podle něj stačilo na jedno z nich poslat zprávu, zadat heslo a neoprávněný člověk mohl získat plnou kontrolu nad kamerou.
+„Kamery navíc po ovládnutí mohou získat přístup do sítí, na které jsou připojené. Slovenský Národní bezpečnostní úřad našel v kódu 260 bezpečnostních chyb, které umožňují další ovládání kamer. Ruská firma, která kamery vyrobila, nese všechny znaky ovládání ruskými tajnými službami, případně s nimi úzce spolupracuje,“ uvedl Bátor.
+„Kamery se tak stávají nástrojem ruské špionáže. Ministr vnitra nevynaložil žádnou snahu na jejich prověření a nechal je rovnou nainstalovat,“ dodal.
+Systém podle opozičního hnutí umožňoval připojení nejen přes standardní 3G či 4G rozhraní, ale i dalšími způsoby. Tvrzení opozice vychází z posudku NBÚ, který hnutí získalo na základě zákona o svobodném přístupu k informacím.
+Progresivní Slovensko proto oznámilo podání trestního oznámení. Premiéra Roberta Fica zároveň vyzvalo, aby ministra vnitra za Hlas odvolal.
+Firma podezření popírá
+Ministerstvo vnitra po vypuknutí kauzy uvedlo, že bylo dodavatelem uvedeno v omyl. Jeho šéf Matúš Šutaj Eštok oznámil vyvození osobní odpovědnosti na resortu a ukončení spolupráce se společností Soitron, která kamery dodávala. Zároveň přiznal, že analýza Národního bezpečnostního úřadu v radarových kamerách potvrdila ruské komponenty.
+Podle ministra mohlo zařízení v případě ostrého provozu představovat potenciální bezpečnostní riziko. Ministerstvo přitom původně tvrdilo, že testovací zařízení fungují v uzavřené a izolované komunikační infrastruktuře a komunikují pouze s vyhrazeným policejním informačním systémem. Podle resortu proto neměla mít přímý přístup ke státním databázím.
+Soitron, firma, která kamery testovala, naopak odmítá, že by je bylo možné ovládat na dálku. Firma uvedla, že obě zařízení na žádost ministerstva demontovala a vrátila státu peníze.

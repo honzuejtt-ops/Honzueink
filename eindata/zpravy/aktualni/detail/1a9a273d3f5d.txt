@@ -1,0 +1,11 @@
+V následujícím článku se dozvíte, jak přesně nová platba Cvak na pokladnách funguje, jaké výhody přináší nakupujícím a jaké možnosti mají klienti jednotlivých českých bank. Podíváme se také na to, kolik řetězce ročně platí za běžné kartové transakce a jak se přímé platby z účtu šíří napříč celou Evropou.
+Jak funguje novinka Cvak a co potřebují klienti bank
+Nový systém funguje jako takzvaná účet-účet (A2A) platba. Peníze neodcházejí přes mezinárodní kartové sítě, ale putují rovnou z bankovního účtu nakupujícího na účet obchodu. Zákazník na pokladně naskenuje věrnostní kód v aplikaci obchodníka nebo zvolí platbu z účtu a transakci potvrdí ve svém mobilním bankovnictví otiskem prstu nebo PINem.
+Platba u podporovaných bank
+Pro klienty zapojených ústavů (například Air Bank, Moneta, mBank či Fio) je proces zcela plynulý — po zvolení možnosti platby je aplikace obchodníka rovnou přesměruje do jejich mobilního bankovnictví k autorizaci.
+Postup pro ostatní finanční instituce
+Zákazníci ostatních bank, které Cvak přímo neintegrovaly do svých aplikací, mohou využít možnost rychlého skenování QR kódu nebo zaplatit digitalizovanou kartou skrze rozhraní Cvak. V obou případech platba proběhne během několika vteřin.
+Poplatky kartovým gigantům a evropská obrana
+Maloobchodní řetězce v Česku platí na transakčních poplatcích za platby běžnými kartami obvykle do 0,3 až 0,5 % z objemu transakcí. U velkých supermarketů s desítkami miliard tržeb to znamená roční odvody ve výši desítek až nižších stovek milionů korun. Přímé převody z účtu na účet náklady obchodu zásadně srážejí.
+Celoevropský trend Wero
+Snaha vymanit se ze závislosti na amerických společnostech Visa a Mastercard není jen českou záležitostí. V západní Evropě: především v Německu, Francii a Belgii, se masivně rozvíjí celoevropský systém Wero, který využívá přes 57 milionů lidí.

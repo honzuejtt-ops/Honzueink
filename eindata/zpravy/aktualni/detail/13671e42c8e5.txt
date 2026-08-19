@@ -1,0 +1,213 @@
+Na úvodní článek o typovém systému a taktéž o statických typových kontrolách realizovaných v projektu Luau dnes navážeme a celé téma dokončíme. Vysvětlíme si další podrobnosti o typovém systému (který se v několika ohledech liší od například Pythonu s Mypy), budeme se zabývat hierarchií datových typů a nezapomeneme například ani na definici generických funkcí (a metod), na funkce, které jsou spouštěny v době statické typové analýzy (a tedy ne v runtime) atd.
+Všechny dnes uvedené demonstrační příklady je možné spustit přímo v interpretru luau popř. provést jejich statickou analýzu nástrojem luau-analyze. Způsob překladu těchto nástrojů byl vysvětlen minule v této kapitole.
+Funkce type a typeof
+Pro začátek začněme velmi jednoduchým rozšířením programovacího jazyka Luau. Připomeňme si, že v původním („originálním“) jazyku Lua je již v základní knihovně k dispozici funkce nazvaná type, která pro libovolnou hodnotu vrátí jméno typu této hodnoty (jako řetězec). Tato funkce pracuje se všemi typy, včetně nil atd., což jsme si ostatně již otestovali v úvodním článku:
+v1 = nil
+v2 = true
+v3 = 123
+v4 = 0.5
+v5 = "hello"
+v6 = {1, 2, 3}
+v7 = function() end
+v8 = coroutine.create(function() end)
+v9 = newproxy and newproxy(true) or nil
+v10 = buffer and buffer.create(1) or nil
+ 
+print("type(v1)=", type(v1))
+print("type(v2)=", type(v2))
+print("type(v3)=", type(v3))
+print("type(v4)=", type(v4))
+print("type(v5)=", type(v5))
+print("type(v6)=", type(v6))
+print("type(v7)=", type(v7))
+print("type(v8)=", type(v8))
+print("type(v9)=", type(v9))
+print("type(v10)=", type(v10))
+Snadno si můžeme otestovat, že funkce type je stále k dispozici:
+$ ./luau runtime_types.lua
+ 
+type(v1)=       nil
+type(v2)=       boolean
+type(v3)=       number
+type(v4)=       number
+type(v5)=       string
+type(v6)=       table
+type(v7)=       function
+type(v8)=       thread
+type(v9)=       userdata
+type(v10)=      buffer
+V jazyku Luau byla k funkci type přidána i její alternativa nazvaná typeof. I tato funkce vrací řetězec s názvem typu a většinou se bude jednat o stejné řetězce, jako v případě funkce type. Rozdíl bude možné zaznamenat zejména u typu vector (dostupný například v Robloxu): funkce type vrátí pouze řetězec „vector“, zatímco funkce typeof zjistí, kolik prvků (dimenzí) tento vektor má a vrátí konkrétní hodnotu.
+Otestujme si chování funkce typeof pouze v interpretru Luau (tedy nikoli v prostředí Robloxu):
+v1 = nil
+v2 = true
+v3 = 123
+v4 = 0.5
+v5 = "hello"
+v6 = {1, 2, 3}
+v7 = function() end
+v8 = coroutine.create(function() end)
+v9 = newproxy and newproxy(true) or nil
+v10 = buffer and buffer.create(1) or nil
+ 
+print("typeof(v1)=", typeof(v1))
+print("typeof(v2)=", typeof(v2))
+print("typeof(v3)=", typeof(v3))
+print("typeof(v4)=", typeof(v4))
+print("typeof(v5)=", typeof(v5))
+print("typeof(v6)=", typeof(v6))
+print("typeof(v7)=", typeof(v7))
+print("typeof(v8)=", typeof(v8))
+print("typeof(v9)=", typeof(v9))
+print("typeof(v10)=", typeof(v10))
+Zprávy, které se vypíšou, by měly být stejné, jako v případě funkce type:
+$ ./luau typeof.lua
+ 
+typeof(v1)=     nil
+typeof(v2)=     boolean
+typeof(v3)=     number
+typeof(v4)=     number
+typeof(v5)=     string
+typeof(v6)=     table
+typeof(v7)=     function
+typeof(v8)=     thread
+typeof(v9)=     userdata
+typeof(v10)=    buffer
+Hierarchie datových typů
+V typovém systému programovacího jazyka Luau nalezneme mj. i typ any (byl použit minule) a na druhé straně spektra typ never. Typ any se nazývá top, protože každá hodnota tomuto typu odpovídá. Naproti tomu typu never neodpovídá žádná hodnota a proto se nazývá bottom. Pod typem any se nachází typ unknown, který se liší tím, že při přístupu k proměnné se musí použít konverze nebo kontrola typu. Následně v hierarchii najdeme běžné (primitivní) typy (pravdivostní hodnota, číslo, řetězec, nil), dále tabulky a funkce, sjednocení typů (union) a průnik typů (intersection), které budou vysvětleny v dalším textu:
+              any
+               |
+            unknown
+               |
+     -----------------------
+     |         |           |
+   types    unions     intersections
+     |         |           |
+    ...       ...         ...
+               |
+             never
+Sjednocení typů
+Nové datové typy mohou v jazyku Luau vzniknout sjednocením existujících typů. Sjednocení neboli union se zapisuje pomocí operátoru |. Podívejme se nyní na příklad použití. V následujícím příkladu je definována proměnná x takovým způsobem, že může obsahovat pouze řetězce. Přiřazení hodnoty odlišného typu je při provádění statické typové analýzy ohlášeno jako chyba:
+--!strict
+ 
+local x: string = "foo"
+ 
+x = 42
+ 
+print(x)
+Statická typová analýza:
+$ ./luau-analyze union_type_1.lua
+ 
+./union_type_1.lua(5,5): TypeError: Expected this to be 'string', but got 'number'
+V případě, že skutečně budeme vyžadovat, aby proměnná mohla obsahovat buď řetězce nebo numerické hodnoty, použijeme sjednocení typů:
+--!strict
+ 
+local x: string | number = "foo"
+ 
+x = 42
+ 
+print(x)
+Totéž platí u specifikace typů parametrů funkcí a/nebo jejich návratových hodnot. I následující kód je z pohledu typového systému korektní:
+--!strict
+ 
+function swap(x: number | string | boolean, y: number):(number, number | string | boolean)
+    return y, x
+end
+ 
+print(swap(1, 2))
+print(swap("foo", 2))
+print(swap(true, 2))
+Typové kontroly jsou prováděny i při přiřazování výsledků, která funkce vrací, do proměnných. V dalším demonstračním příkladu jsem si dal pozor na to, aby byla vrácená hodnota přiřazena do funkce s korektním typem:
+--!strict
+ 
+function swap(x: number | string | boolean, y: number):(number, number | string | boolean)
+    return y, x
+end
+ 
+local x1: number = 0
+local y1: number = 0
+x1, y1 = swap(1, 2)
+print(x1, y1)
+ 
+local x2: number = 0
+local y2: string = ""
+x2, y2 = swap("foo", 2)
+print(x2, y2)
+ 
+local x3: number = 0
+local y3: boolean = false
+x3, y3 = swap(true, 2)
+print(x3, y3)
+Problematický případ a jeho řešení
+V některých případech je ovšem striktní statická typová kontrola zbytečně přísná a chová se nekorektně. Příkladem může být funkce foo, která vrací obsah svého parametru. Teoreticky je tedy i v době provádění statické typové analýzy zřejmé, jakého typu bude výsledek, ovšem ve skutečnosti dostaneme varování o nekorektním použití návratové hodnoty:
+--!strict
+ 
+function foo(x: number | string | boolean):(number | string | boolean)
+    return x
+end
+ 
+local x: number = foo(0)
+local y: string = foo("foo")
+local z: boolean = foo(true)
+ 
+print(x, y, z)
+Výsledky statické typové kontroly v tomto případě oznamují, že typy proměnných x, y a z nejsou dostatečně „široké“:
+$ ./luau-analyze union_type_5.lua
+ 
+./union_type_5.lua(7,19): TypeError: Expected this to be 'number', but got 'boolean | number | string';
+this is because
+         * the 2nd component of the union is `string`, which is not a subtype of `number`
+         * the 3rd component of the union is `boolean`, which is not a subtype of `number`
+./union_type_5.lua(8,19): TypeError: Expected this to be 'string', but got 'boolean | number | string';
+this is because
+         * the 1st component of the union is `number`, which is not a subtype of `string`
+         * the 3rd component of the union is `boolean`, which is not a subtype of `string`
+./union_type_5.lua(9,20): TypeError: Expected this to be 'boolean', but got 'boolean | number | string';
+this is because
+         * the 1st component of the union is `number`, which is not a subtype of `boolean`
+         * the 2nd component of the union is `string`, which is not a subtype of `boolean`
+Řešení je (tedy kromě vypnutí striktních typových kontrol) sjednocení typu proměnné x:
+--!strict
+ 
+function foo(x: number | string | boolean):(number | string | boolean)
+    return x
+end
+ 
+local x: number | string | boolean = foo(0)
+print(type(x))
+ 
+x = foo("foo")
+print(type(x))
+ 
+x = foo(true)
+print(type(x))
+Nyní již vše proběhne v pořádku:
+$ ./luau-analyze union_type_6.lua
+Průnik typů
+V typovém systému programovacího jazyka Luau je možné nový datový typ získat kromě sjednocení (union) i průnikem (intersection) existujících typů. Průnik vlastně omezuje množinu možných hodnot. Vzhledem k tomu, nad jakým programovacím jazykem je typový systém postaven (neexistence třídního OOP) je průnik prakticky použitelný pouze pro tabulky. Podívejme se na jednoduchý demonstrační příklad, ve kterém jsou definovány dva nové datové typy nazvané XCoord a YCoord:
+type XCoord = {x: number}
+type YCoord = {y: number}
+Co to ovšem přesně znamená? Typ XCoord popisuje jakoukoli tabulku, pro níž platí jediné omezení – musí obsahovat prvek s klíčem x, hodnota prvku musí být typu number. Může ovšem obsahovat i další prvky. A pro typ YCoord platí, že se jedná o tabulku, která musí obsahovat prvek y, taktéž typu number. Může ovšem obsahovat i libovolné další prvky.
+Sjednocením:
+type Vector2 = XCoord & YCoord
+získáme nový datový typ, který omezuje možnosti tabulek ještě více: tabulky typu Vector2 musí obsahovat jak prvek s klíčem x, tak i prvek s klíčem y. Oba tyto prvky musí být typu number. A opět platí – tabulky mohou obsahovat i libovolné další prvky.
+Příklady použití průniku typů
+Otestujme si některé příklady, ve kterých je nový datový typ definován formou průniku několika existujících datových typů. V prvním příkladu je definován typ Vector2 na základě dvojice existujících typů XCoord a YCoord:
+--!strict
+ 
+type XCoord = {x: number}
+type YCoord = {y: number}
+ 
+type Vector2 = XCoord & YCoord
+ 
+local vec2: Vector2 = {x = 1, y = 2}
+ 
+print(vec2.x, vec2.y)
+Příklad je plně funkční a statická typová analýza v něm nenalezne žádné chyby:
+$ ./luau-analyze intersection_type_1.lua
+Díky tomu, že průnikem dvou typů vznikne nový plnohodnotný datový typ, je možné tento typ použít ve specifikaci dalšího průniku. To je ukázáno v následujícím demonstračním příkladu s definicí datového typu Vector3, který představuje tříprvkový vektor, tj. tabulku obsahující povinné prvky x, y a z (a libovolné množství nepovinných prvků):
+--!strict
+ 
+type XCoord = {x: number}
+type YCoord = {y: number}
+type ZCoord = {z...
+(Pokracovani na webu)

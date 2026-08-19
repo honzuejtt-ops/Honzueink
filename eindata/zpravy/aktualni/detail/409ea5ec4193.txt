@@ -1,0 +1,18 @@
+Článek
+Apple si v Evropě znovu upravuje pravidla hry. Společnost oznámila, že od 1. října zavede jednotné obchodní podmínky pro vývojáře aplikací distribuovaných v Evropské unii. Dosavadní systém, který byl složitý a čelil kritice ze strany evropských regulátorů, nahradí jednodušší model založený především na provizích.
+Jednou z nejvýraznějších změn je konec poplatku za základní technologie, který se dříve týkal instalací aplikací u vývojářů s mimořádně velkým dosahem. Místo něj Apple zavede pětiprocentní provizi z digitálních transakcí v aplikacích, které se budou v EU distribuovat mimo jeho vlastní obchod App Store.
+Právě snaha dostat aplikace a platby alespoň částečně mimo uzavřený ekosystém Applu je jedním z hlavních bodů evropského nařízení o digitálních trzích, známého pod zkratkou DMA. Evropská komise dosavadní podmínky kritizovala s tím, že některé poplatky a omezení mohly vývojáře od alternativních cest odrazovat.
+Více možností, ale ne bez poplatků
+Běžnému uživateli se pravidla mohou zdát jako technický spor o procenta. Ve skutečnosti jde o to, kudy aplikace do iPhonu přichází a komu při nákupu digitálního obsahu putuje část peněz.
+Pokud aplikace zůstane v App Storu a bude využívat platební systém Applu, bude standardní provize činit 26 %. Pro převažující většinu vývojářů, včetně členů programu App Store Small Business, Mini Apps Partner Programu a Video Partner Programu, bude sazba činit 15 %. Stejná sazba se bude týkat také automaticky obnovovaných předplatných po prvním roce.
+Aplikace, které v App Storu využijí alternativní způsob zpracování plateb, budou odvádět 20 %. U vývojářů se sníženou sazbou půjde o 10 %. Stejná desetiprocentní nebo patnáctiprocentní provize se bude týkat také aplikací, které uživatele nasměrují k dokončení nákupu mimo samotnou aplikaci.
+Nejnižší, pětiprocentní základní provizi za technologii Apple stanoví pro aplikace distribuované prostřednictvím alternativních obchodů nebo přímo z webu.
+Nový systém zároveň ruší některé dosavadní poplatky, konkrétně počáteční akviziční poplatek a poplatek za služby obchodu. Apple tak podle vlastního oznámení přechází na jeden soubor obchodních podmínek pro všechny vývojáře, kteří distribuují aplikace v EU.
+Miliardová pokuta
+Nová pravidla nepřicházejí ve vzduchoprázdnu. Evropská komise Applu loni v dubnu udělila pokutu 500 milionů eur (12,1 miliardy korun) za diskriminační systém plateb.
+Podle pravidel DMA mají mít vývojáři možnost bezplatně informovat uživatele o alternativních nabídkách mimo App Store. Evropská komise tehdy Applu zároveň nařídila odstranit technická a obchodní omezení, která tomu bránila.
+Apple nyní uvádí, že nové podmínky vznikly po úzké spolupráci s Komisí a že její požadavky splňují. Brusel změny podle agentury Reuters přivítal a bude sledovat, jak budou nová pravidla fungovat v praxi.
+Co je DSA a DMA?
+V roce 2023 začaly platit dva nové zákony, které jsou označovány jako bič na internetové giganty. Jde jmenovitě o akt o digitálních službách (Digital Services Act; DSA) a akt o digitálních trzích (Digital Markets Act; DMA).
+Zatímco cílem DSA je zajistit transparentnost, bezpečnost uživatelů a odpovědnost pro on-line platformy, DMA je zákon o hospodářské soutěži určující jasná pravidla, podle kterých mohou velké on-line platformy fungovat.
+Oba právní předpisy pochopitelně budou mít značný dopad na podnikání v celé Evropě a pravděpodobně i ve světě, neboť stanoví nové standardy pro digitální spotřebitelské podnikání.

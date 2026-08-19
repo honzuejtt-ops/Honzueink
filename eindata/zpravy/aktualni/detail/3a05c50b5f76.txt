@@ -1,0 +1,6 @@
+Půl roku poté, co OpenAI začala testovat zobrazování reklam v AI chatbotu ChatGPT ve Spojených státech, dorazí placené odkazy také do Evropy. Rozšíření do 31 evropských zemí firma oznámila na svém blogu. Má k němu dojít příští týden.
+Mezi zeměmi, které OpenAI jmenuje, jsou Německo, Francie, Španělsko, Itálie, Švédsko, Norsko, Dánsko, Nizozemsko a Rakousko. Českou republiku firma přímo nezmiňuje a kompletní seznam zemí, kde je zadávání reklam možné, nezveřejnila. Dá se ale očekávat, že se placené odkazy v Česku také objeví. V češtině jsou už k dispozici například Podmínky reklamy.
+ChatGPT bude reklamní sdělení zobrazovat pouze uživatelům své bezplatné verze Free a nejlevnějšího balíčku Go za 200 Kč měsíčně. Užvatelé s předplatným Plus, Pro a Enterprise mají být reklam ušetřeni.
+Evropští zadavatelé také zatím nebudou moci k nákupu reklamního prostoru používat samooslužný systém Správce reklam (Ads Manager), ten mají podle OpenAI dostat k dispozici až později během léta. Do té doby mohou reklamu zadávat prostřednictvím obchodního týmu OpenAI či partnerů firmy.
+Reklamy se v ChatGPT zobrazují jako samostatná a označená sdělení. OpenAI říká, že reklamy nijak neovlivňují odpovědi, které ChatGPT dává uživatelům.
+Firma letos v srpnu zprovoznila reklamy v ChatGPT také ve Spojeném království, Mexiku, Brazílii, Japonsku a Jižní Koreji.

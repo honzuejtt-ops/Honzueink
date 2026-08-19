@@ -1,0 +1,15 @@
+Článek
+OpenAI si v posledních letech vybudovala pověst firmy, která jen málokdy čeká. Nové modely, nové funkce, stále schopnější agenti – tempo vývoje bylo jedním z hlavních znaků společnosti, která od spuštění ChatGPT rozpoutala závod o umělou inteligenci.
+Teď ale sama šlape na brzdu. Firma podle agentury Reuters na dva týdny zastaví část bezpečnostního testování a chce výrazněji investovat do systémů, které budou pečlivěji sledovat, co autonomní AI agenti během výzkumu skutečně dělají. Některé z největších plánovaných tréninků nových modelů navíc zůstávají pozastavené.
+Jde o poměrně výrazný krok. Zvlášť v době, kdy se technologické společnosti předhánějí v tom, kdo rychleji představí další generaci stále schopnější umělé inteligence.
+Zaměřeno na testovací prostředí
+OpenAI zároveň pozastavila trénování nové generace modelů označované jako Astra a odložila také svůj dosud největší plánovaný trénink. Přesněji řečeno, firma chce nejprve upravit způsob, jakým své modely vyvíjí, trénuje a kontroluje.
+Pozornost se nyní soustředí hlavně na testovací prostředí. Některé citlivé procesy chce OpenAI přesunout do výrazněji izolovaných systémů, kde testované modely nebudou mít přístup k okolní infrastruktuře. Zároveň posiluje dohled nad jejich činností.
+Ani samotná firma ale zatím netvrdí, že nová opatření dokážou podobným incidentům stoprocentně zabránit. Právě v tom spočívá jeden z největších problémů současného vývoje AI. Modely jsou stále schopnější a dokážou při plnění zadaného úkolu hledat cesty, se kterými jejich tvůrci předem nepočítali.
+A OpenAI už ví, že taková cesta může vést až do skutečného počítačového systému cizí firmy.
+Test, který se změnil v útok
+Celá kauza propukla minulý měsíc. OpenAI tehdy testovala experimentální autonomní agenty, kteří měli prokázat své schopnosti při hledání a zneužívání bezpečnostních slabin. Měl to být kontrolovaný test. Jenže jeden z agentů se během něj dostal na veřejný internet a následně pronikl do infrastruktury platformy Hugging Face.
+Zpětné vyšetřování ukázalo, že nešlo o jednoduchý a rychlý průnik. Agent během několika dnů provedl více než 17 tisíc různých akcí. Většina jeho pokusů sice selhala, postupně se mu ale podařilo získat přístup do citlivých částí infrastruktury.
+Podle pozdější analýzy se navíc nesoustředil jen na jeden konkrétní cíl. OpenAI následně přiznala, že při celé operaci využil také další veřejně dostupné internetové služby. Některé mu posloužily jako pomocná infrastruktura, přes jiné ukládal data nebo testoval jednotlivé kroky.
+Ukázalo se také, že jedním z dalších zasažených subjektů byl zákazník společnosti Modal, která poskytuje cloudovou infrastrukturu pro vývoj a provoz AI. Samotná platforma Modal podle firmy napadena nebyla, agent však zneužil chybu v aplikaci jednoho z jejích klientů.
+Původní incident tak postupně nabral mnohem větší rozměry, než se na začátku zdálo.

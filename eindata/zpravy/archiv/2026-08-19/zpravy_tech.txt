@@ -1,3 +1,6 @@
+|T|Návod: Vlastní ikony aplikací na iPhonu a Androidu krok za krokem|D|19.8. 06:45|P|Díky zkratkám na iPhonu a zástupcům na Androidu můžete změnit ikonu jakékoli aplikaci.|X|Díky zkratkám na iPhonu a zástupcům na Androidu můžete změnit ikonu jakékoli aplikaci.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Proč někdy vůbec neprší, i když radar ukazuje pravý opak. Skutečný déšť odhalí až speciální laser ČHMÚ|D|19.8. 05:45|P|Setkal se s tím už každý. Pohled na srážkový radar v oblíbené mobilní aplikaci nebo na webu sice předpovídá v oblasti slabý déšť, ve skutečnosti ale n...|X|Setkal se s tím už každý. Pohled na srážkový radar v oblíbené mobilní aplikaci nebo na webu sice předpovídá v oblasti slabý déšť, ve skutečnosti ale nespadne ani kapka. Je to dáno tím, co vlastně každý radar měří.
 
 Jeho rádiové pulzy cestují prostorem, odrazí se od překážky a ozvěnu krátce na to ...

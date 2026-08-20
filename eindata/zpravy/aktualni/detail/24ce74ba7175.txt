@@ -1,0 +1,17 @@
+Článek
+Na našem území se budou bouřky objevovat už během dne, ale ty nejsilnější dorazí na Moravu a do Slezska odpoledne a večer. Místy mohou být silné a přinést nárazy větru kolem 70 km/h, kroupy i přívalové srážky. Před těmito projevy varovalo ČHMÚ ve své výstraze.
+Pozornost se bude nyní upírat především k Alpám. V jejich závětří se totiž má prohloubit tlaková níže a podle některých modelů se zde může vytvořit rozsáhlejší bouřkový systém, který bude postupovat k severovýchodu.
+Systém může zasáhnout především Rakousko a západní Slovensko, jeho severní část by ale mohla ovlivnit také jihovýchod Česka. Podle meteorologů nelze vyloučit ani vznik takzvaného bow echa, bouřkového systému ve tvaru napnutého luku, jehož hlavním nebezpečím bývají velmi silné nárazy větru.
+Výrazná bouřková situace se však nebude týkat pouze Česka. Podmínky pro silné až extrémní bouřky se vytvořily v rozsáhlém pásu Evropy od Španělska přes Francii, severní Itálii a Jadran až po střední Evropu.
+V některých oblastech mohou díky vysoké míře dostupné energie a výraznému střihu větru vznikat dobře organizované bouřkové systémy. Ty mohou přinášet velké kroupy, přívalové srážky a velmi silný vítr. Při vhodných podmínkách se mohou objevit dokonce také tornáda.
+Bouřky živí mimořádně teplé Středozemní moře
+Největší riziko se očekává na severu Itálie a v okolí severního Jadranu. Podmínky zde budou velmi příznivé pro vznik silných a dlouho žijících supercel s ničivými nárazy větru a kroupami přes pět centimetrů.
+Pro tuto oblast vydal ESTOFEX nejvyšší, třetí stupeň varování. Pro ostatní oblasti v pásmu nejsilnějších bouřek, včetně jihovýchodu Česka, bude platit druhý stupeň varování.
+Jedním z důvodů mimořádně příznivých podmínek pro silné bouřky je také velmi teplé Středozemní moře. Nad teplou vodní hladinou je k dispozici velké množství tepla a vodní páry, zatímco ve vyšších vrstvách atmosféry postupuje chladnější vzduch.
+Výsledkem může být mimořádně nestabilní atmosféra, přičemž některé modelové scénáře nad Středomořím počítají s hodnotami CAPE přesahujícími 5000 J/kg. V kombinaci se silným střihem větru tak vznikají podmínky pro intenzivní supercely a rozsáhlé bouřkové systémy.
+Bouřkové parametry CAPE a střih větru
+CAPE / instabilita
+Parametr CAPE určuje množství potenciálně dostupné energie pro vznik vzestupných pohybů vzduchu. Tato energie se na modelech udává v joulech na kilogram vzduchové hmoty. Klíčovým faktorem pro vývoj bouřek je tzv. instabilita, tedy rychlý pokles teploty s výškou a zároveň přítomnost vyšší vlhkosti.
+Instabilita je jedním z nejdůležitějších atmosférických ukazatelů pro možný vznik bouřek. Hodnoty CAPE přes 1000 j/kg již značí možnost silných bouří. Pokud není k dispozici žádný spouštěcí impuls (například frontální rozhraní nebo linie konvergence), ke vzniku bouřek nemusí vůbec dojít.
+Střih větru
+Pro vznik silných a organizovaných bouřek s delší životností je důležitý tzv. vertikální střih větru. Na modelech se udává v metrech za sekundu a značí změnu směru a rychlosti větru s výškou. Hodnoty nad 15 m/s spolu s vyšším CAPE značí možnost tvorby supercel - izolovaných bouřek s jedním dominantním rotujícím proudem. Samotný střih větru bez energie je pro vznik bouřek irelevantní.

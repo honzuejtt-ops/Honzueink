@@ -1,0 +1,19 @@
+Článek
+Po novějších jedenáctkách, které aktuálně ovládají 68,88 % trhu, jsou desítky stále druhým nejoblíbenějším systémem od Microsoftu na světě. Jak se blíží konec podpory, analytici očekávali, že podíl Windows 10 bude klesat. Koneckonců v případě předchozích verzí systému od Microsoftu tomu bylo podobně.
+Aktuálně se však děje přesný opak, desítky už druhý měsíc v řadě posilují. Z dubnového podílu 28,47 % klesla v květnu sice popularita až na 26,21 %, následně ale přišel růst. V červnu tak desítky měly na kontě už 28,16 % a 29,88 %.
+Rozdíl o jeden či dva procentní body nemusí být ve statistikách na první pohled tolik markantní, v praxi jde ale o miliony strojů. Dohromady totiž některá verze Windows funguje na více než miliardě strojů.
+Zájem o jedenáctky naopak vadne
+Analytici nepřišli s žádným vysvětlením, proč najednou zájem o desítky tak roste. Způsobeno to může být vyřazováním starších strojů z běžného provozu, které následně chtějí sběratelé z různých koutů světa předělat do původního stavu.
+Jde tedy o stroje, které sice technologicky zvládnou jedenáctky, ale lidé je z nějakého důvodu chtějí používat se staršími desítkami – vedle sběratelství totiž desítky na starší stroje lidé instalují také kvůli svižnějšímu chodu.
+Této teorii nahrávají i samotné statistiky StatCounteru. Podle nich totiž úměrně klesá popularita jedenáctek, jak roste zájem o desítky. V květnu byl operační systém Windows 11 nainstalován na 71,84 % strojů, v červnu podíl činil 69,89 % a v červenci pak už jen 69,88 %.
+Třetí místo ve statistikách patří Windows 7, podíl však činí aktuálně už jen zanedbatelných 1,01 %.
+Spása jménem ESU
+Konec podpory Windows 10 byl na celém světě naplánován na 14. října 2025. V Evropě se ale uplatňuje bezplatná prodloužená podpora, kterou Microsoft označuje zkratkou ESU. A to až do 14. října 2027. I to by mohlo být jedním z důvodů, proč někteří lidé ještě oprášili starší stroje a desítky opět vrátili do oběhu.
+Standardně chce americký softwarový gigant za ESU zaplatit zhruba 700 Kč měsíčně, evropští uživatelé však platit nemusí ani korunu. Microsoft totiž vloni podlehl tlaku spotřebitelských organizací a nabídl lidem možnost registrace zadarmo, jak Novinky informovaly již dříve. To jinými slovy znamená, že mohou získat aktualizace až do října 2027, aniž by museli cokoliv platit.
+Jak ESU funguje, informuje Microsoft přímo na svých oficiálních stránkách.
+Jak získat aktualizace bezplatně?
+V první řadě je nutné mít na počítači nainstalovanou poslední verzi desítek s označením 22H2. Pokud máte některou ze starších verzí Windows 10, prodlouženou podporu nebudete moci využít. Ověřit si verzi Windows je možné v Nastavení v nabídce Systém, kde se ukrývá možnost O systému.
+Aktualizace budou fungovat pouze na strojích, na kterých jste přihlášeni účtem Microsoft. Pokud tedy desítky používáte pouze s lokálním uživatelem, bude nutné se zaregistrovat na stránkách amerického softwarového gigantu.
+Po splnění obou podmínek by se mělo v nabídce Windows Update objevit oznámení o programu ESU. Na něj je nutné kliknout a své zařízení do programu prodloužené podpory zaregistrovat.
+Přímo ve Windows Update se pak bude zobrazovat informace, že PC je registrováno v programu ESU. Díky tomu poznáte, že jste vše nastavili správně a že bezpečnostní aktualizace budou distribuovány o rok déle.
+Pokud se nabídka nezobrazí, případně budete mít s registrací počítače do programu ESU potíže, bude nutné se obrátit přímo na podporu společnosti Microsoft. To je možné i on-line.

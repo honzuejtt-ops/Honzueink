@@ -1,3 +1,304 @@
+|T|Čínské Geely chystá nasazení revoluční baterie, dojezd se vyrovná dieselům|D|20.8. 13:30|P|Společnost Geely plánuje na příští rok pilotní nasazení nové baterie s pevným elektrolytem, která by mohla posunout dojezd elektromobilů až na hranici...|X|Článek
+Rok 2027 bude pro několik čínských společností představovat velký milník ve vývoji baterií s pevným elektrolytem, označovaných také jako solid-state baterie. Ty přitom mají potenciál přinést revoluci do světa elektromobility, neboť nabídnou větší energetickou hustotu a umožní tak s menšími bateriemi dosahovat lepších parametrů.
+Jednou ze společností, která v příštím roce spustí pilotní program nasazení baterií s pevným elektrolytem ve vozech svých značek, bude i čínský gigant Geely Holding, pod který spadají značky jako Geely, Zeekr, Lynk & Co, Volvo, Polestar, Lotus a několik dalších.
+Společnost nezmínila, ve kterých vozech se bude baterie objevovat, prozradila ovšem, že její energetická hustota by měla dosahovat 500 Wh/kg. Dojezd elektromobilů s touto baterií by se tak mohl pohybovat až kolem 1000 kilometrů, což atakuje dojezd současných vozidel se vznětovými motory.
+Energetická hustota 500 Wh/kg je přitom výrazný posun, neboť stávající generace baterií společnosti Geely se pohybuje okolo 250 Wh/kg. Pilotní program v příštím roce pak ukáže, jak se baterie osvědčí v praxi. Působivá je však i očekávaná životnost baterie, která by podle Carscoops měla dosahovat až milionu kilometrů.
+Kromě společnosti Geely se však v příštím roce chystají nasadit baterie s pevným elektrolytem i další společnosti, jak dodává CarNewsChina. Vedle automobilky BYD půjde také o výrobce bateriových článků, včetně společností CATL, Farasis Energy nebo Gotion High-Tech, kterou částečně financuje i Volkswagen.|E|
+|T|Bouřky udeří napříč Evropou. V Itálii hrozí extrémní, zasáhnou i Česko|D|20.8. 13:28|P|Evropu čeká ve čtvrtek výrazná bouřková situace zasahující pás od Španělska přes Alpy až k Polsku. Bouřky mohou doprovázet velké kroupy, přívalové srá...|X|Článek
+Na našem území se budou bouřky objevovat už během dne, ale ty nejsilnější dorazí na Moravu a do Slezska odpoledne a večer. Místy mohou být silné a přinést nárazy větru kolem 70 km/h, kroupy i přívalové srážky. Před těmito projevy varovalo ČHMÚ ve své výstraze.
+Pozornost se bude nyní upírat především k Alpám. V jejich závětří se totiž má prohloubit tlaková níže a podle některých modelů se zde může vytvořit rozsáhlejší bouřkový systém, který bude postupovat k severovýchodu.
+Systém může zasáhnout především Rakousko a západní Slovensko, jeho severní část by ale mohla ovlivnit také jihovýchod Česka. Podle meteorologů nelze vyloučit ani vznik takzvaného bow echa, bouřkového systému ve tvaru napnutého luku, jehož hlavním nebezpečím bývají velmi silné nárazy větru.
+Výrazná bouřková situace se však nebude týkat pouze Česka. Podmínky pro silné až extrémní bouřky se vytvořily v rozsáhlém pásu Evropy od Španělska přes Francii, severní Itálii a Jadran až po střední Evropu.
+V některých oblastech mohou díky vysoké míře dostupné energie a výraznému střihu větru vznikat dobře organizované bouřkové systémy. Ty mohou přinášet velké kroupy, přívalové srážky a velmi silný vítr. Při vhodných podmínkách se mohou objevit dokonce také tornáda.
+Bouřky živí mimořádně teplé Středozemní moře
+Největší riziko se očekává na severu Itálie a v okolí severního Jadranu. Podmínky zde budou velmi příznivé pro vznik silných a dlouho žijících supercel s ničivými nárazy větru a kroupami přes pět centimetrů.
+Pro tuto oblast vydal ESTOFEX nejvyšší, třetí stupeň varování. Pro ostatní oblasti v pásmu nejsilnějších bouřek, včetně jihovýchodu Česka, bude platit druhý stupeň varování.
+Jedním z důvodů mimořádně příznivých podmínek pro silné bouřky je také velmi teplé Středozemní moře. Nad teplou vodní hladinou je k dispozici velké množství tepla a vodní páry, zatímco ve vyšších vrstvách atmosféry postupuje chladnější vzduch.
+Výsledkem může být mimořádně nestabilní atmosféra, přičemž některé modelové scénáře nad Středomořím počítají s hodnotami CAPE přesahujícími 5000 J/kg. V kombinaci se silným střihem větru tak vznikají podmínky pro intenzivní supercely a rozsáhlé bouřkové systémy.
+Bouřkové parametry CAPE a střih větru
+CAPE / instabilita
+Parametr CAPE určuje množství potenciálně dostupné energie pro vznik vzestupných pohybů vzduchu. Tato energie se na modelech udává v joulech na kilogram vzduchové hmoty. Klíčovým faktorem pro vývoj bouřek je tzv. instabilita, tedy rychlý pokles teploty s výškou a zároveň přítomnost vyšší vlhkosti.
+Instabilita je jedním z nejdůležitějších atmosférických ukazatelů pro možný vznik bouřek. Hodnoty CAPE přes 1000 j/kg již značí možnost silných bouří. Pokud není k dispozici žádný spouštěcí impuls (například frontální rozhraní nebo linie konvergence), ke vzniku bouřek nemusí vůbec dojít.
+Střih větru
+Pro vznik silných a organizovaných bouřek s delší životností je důležitý tzv. vertikální střih větru. Na modelech se udává v metrech za sekundu a značí změnu směru a rychlosti větru s výškou. Hodnoty nad 15 m/s spolu s vyšším CAPE značí možnost tvorby supercel - izolovaných bouřek s jedním dominantním rotujícím proudem. Samotný střih větru bez energie je pro vznik bouřek irelevantní.|E|
+|T|NATO podniklo rozsáhlé letecké manévry u ruského Kaliningradu|D|20.8. 13:25|P|Na 25 letounů NATO se slétlo nad Baltské moře na cvičení, které Severoatlantická aliance uspořádala nedaleko ruského Kaliningradu. Zapojily se do něj ...|X|Článek
+Severoatlantická aliance podle serveru Militär Aktuell uvedla, že šlo o rozsáhlé neohlášené cvičení v blízkosti ruské kaliningradské exklávy.
+„NATO je obranná aliance a spojenci neustále vylepšují své obranné schopnosti. Jedním z příkladů jsou společné operace z 18. srpna 2026 v pobaltském regionu, na nichž se podílejí americké a norské stíhací letouny, polské pozemní síly, letouny E-3A systému včasného varování a řízení (AWACS) NATO a další prostředky pod kontrolou Spojených států,“ uvedl mluvčí NATO Martin O’Donnell.
+O přítomnosti letounů NATO poblíž Kaliningradu informovala také ruská státní agentura TASS. Její pozornost upoutalo nasazení specializovaného letounu pro elektronický boj EA-37B Compass Call, jehož hlavním úkolem je rušení komunikace, radarů, navigace a systémů velení a řízení. TASS také uvedl, že nad západním Polskem bylo v určitých časových úsecích současně pět tankovacích letadel, což „naznačuje, že byl nasazen značný počet bojových letounů“.
+„Prohlédli“ si Kaliningrad
+Mezi nimi byl například americký průzkumný stroj Bombardier Artemis II, který dorazil do oblasti Baltu ze základny v rumunské Konstanci. Je to jedna z nejmodernějších palubních průzkumných platforem amerických ozbrojených sil, která si pečlivě „prohlédla“ kaliningradskou exklávu. Úkolem toho stroje je detekovat radarové emise, vojenskou komunikaci a další elektromagnetickou aktivitu na velkých plochách.
+V oblasti se podle serveru v době cvičení pohybovala i další letadla a také americké bitevní vrtulníky AH-64E Apache Guardian. Velení NATO uvedlo, že z důvodu požadavků na operační bezpečnost nemůže sdělit další podrobnosti.
+📅 18.08 🕘 11:29LT - 🇺🇸✈️⛽️ Piąty tankowiec w rejonie ćwiczeń 
+W rejon gdzie odbywają się dzisiaj duże ćwiczenia sojusznicze, doleciała właśnie kolejna latająca cysterna ✈️ Boeing KC-135R Stratotanker "60-0353" Sił Powietrznych Stanów Zjednoczonych #USAF 🇺🇸, który wystartował z… pic.twitter.com/Kqb91p30hn|E|
+|T|Miliony lidí si nainstalovaly Windows 10, popularita záhadně roste|D|20.8. 13:23|P|Do konce podpory operačního systému Windows 10 odpočítáváme už jen týdny. Přesto jeho popularita neustále roste, tato platforma je nainstalována měsíc...|X|Článek
+Po novějších jedenáctkách, které aktuálně ovládají 68,88 % trhu, jsou desítky stále druhým nejoblíbenějším systémem od Microsoftu na světě. Jak se blíží konec podpory, analytici očekávali, že podíl Windows 10 bude klesat. Koneckonců v případě předchozích verzí systému od Microsoftu tomu bylo podobně.
+Aktuálně se však děje přesný opak, desítky už druhý měsíc v řadě posilují. Z dubnového podílu 28,47 % klesla v květnu sice popularita až na 26,21 %, následně ale přišel růst. V červnu tak desítky měly na kontě už 28,16 % a 29,88 %.
+Rozdíl o jeden či dva procentní body nemusí být ve statistikách na první pohled tolik markantní, v praxi jde ale o miliony strojů. Dohromady totiž některá verze Windows funguje na více než miliardě strojů.
+Zájem o jedenáctky naopak vadne
+Analytici nepřišli s žádným vysvětlením, proč najednou zájem o desítky tak roste. Způsobeno to může být vyřazováním starších strojů z běžného provozu, které následně chtějí sběratelé z různých koutů světa předělat do původního stavu.
+Jde tedy o stroje, které sice technologicky zvládnou jedenáctky, ale lidé je z nějakého důvodu chtějí používat se staršími desítkami – vedle sběratelství totiž desítky na starší stroje lidé instalují také kvůli svižnějšímu chodu.
+Této teorii nahrávají i samotné statistiky StatCounteru. Podle nich totiž úměrně klesá popularita jedenáctek, jak roste zájem o desítky. V květnu byl operační systém Windows 11 nainstalován na 71,84 % strojů, v červnu podíl činil 69,89 % a v červenci pak už jen 69,88 %.
+Třetí místo ve statistikách patří Windows 7, podíl však činí aktuálně už jen zanedbatelných 1,01 %.
+Spása jménem ESU
+Konec podpory Windows 10 byl na celém světě naplánován na 14. října 2025. V Evropě se ale uplatňuje bezplatná prodloužená podpora, kterou Microsoft označuje zkratkou ESU. A to až do 14. října 2027. I to by mohlo být jedním z důvodů, proč někteří lidé ještě oprášili starší stroje a desítky opět vrátili do oběhu.
+Standardně chce americký softwarový gigant za ESU zaplatit zhruba 700 Kč měsíčně, evropští uživatelé však platit nemusí ani korunu. Microsoft totiž vloni podlehl tlaku spotřebitelských organizací a nabídl lidem možnost registrace zadarmo, jak Novinky informovaly již dříve. To jinými slovy znamená, že mohou získat aktualizace až do října 2027, aniž by museli cokoliv platit.
+Jak ESU funguje, informuje Microsoft přímo na svých oficiálních stránkách.
+Jak získat aktualizace bezplatně?
+V první řadě je nutné mít na počítači nainstalovanou poslední verzi desítek s označením 22H2. Pokud máte některou ze starších verzí Windows 10, prodlouženou podporu nebudete moci využít. Ověřit si verzi Windows je možné v Nastavení v nabídce Systém, kde se ukrývá možnost O systému.
+Aktualizace budou fungovat pouze na strojích, na kterých jste přihlášeni účtem Microsoft. Pokud tedy desítky používáte pouze s lokálním uživatelem, bude nutné se zaregistrovat na stránkách amerického softwarového gigantu.
+Po splnění obou podmínek by se mělo v nabídce Windows Update objevit oznámení o programu ESU. Na něj je nutné kliknout a své zařízení do programu prodloužené podpory zaregistrovat.
+Přímo ve Windows Update se pak bude zobrazovat informace, že PC je registrováno v programu ESU. Díky tomu poznáte, že jste vše nastavili správně a že bezpečnostní aktualizace budou distribuovány o rok déle.
+Pokud se nabídka nezobrazí, případně budete mít s registrací počítače do programu ESU potíže, bude nutné se obrátit přímo na podporu společnosti Microsoft. To je možné i on-line.|E|
+|T|ÚS se zastal domobrance Kratochvíla. Justice chybovala ohledně kauce nahrazující vazbu|D|20.8. 13:19|P|Předseda spolku Českoslovenští vojáci v záloze za mír Ivan Kratochvíl uspěl u Ústavního soudu se stížností, v níž napadal postup pražského Vrchního so...|X|Článek
+Kratochvíl čelil obžalobě v souvislosti s činností domobranecké skupiny kvůli podpoře a propagaci terorismu. Té se měl dopustit tím, že na ukrajinský Donbas vypravil spolupracovníka spolku a předal mu kontakty na místní proruské separatisty.
+Muž byl na jaře 2021 vzat do vazby, již pak soud po několika měsících nahradil dohledem úředníka, zákazem vycestování a právě kaucí. Letos v únoru Městský soud všechna omezení zrušil s poukazem na to, že opatření mohou trvat pouze 1,5násobek potenciální maximální délky vazby.
+Odvolací Vrchní soud v Praze ale rozhodnutí změnil a nechal v platnosti kauci i zákaz vycestování. Soud dospěl k závěru, že peněžitá záruka může dál trvat podle zvláštní právní úpravy a že totéž platí pro zákaz vycestování, který je v tomto případě s kaucí přímo spojený. Skončil tedy pouze dohled probačního úředníka.
+Kratochvíl proti takovému postupu podal stížnost a senát se soudkyní zpravodajkou Ditou Řepkovou mu přitakal. „Dobu trvání peněžité záruky jako opatření nahrazujícího vazbu nelze neúměrně prodlužovat. Usnesením vrchního soudu bylo porušeno základní právo stěžovatele vlastnit majetek, jakož i svoboda pohybu,“ rozhodl ve čtvrtek soud.
+O kauci 600 tisíc korun a souvisejícím zákazu vycestování tak bude muset znovu rozhodnout Vrchní soud v Praze.
+V samotném případu už padl zatím nepravomocný verdikt. Kratochvíl jako vedoucí domobranců dostal roční podmínku za organizování přečinu účasti na nestátní ozbrojené skupině zaměřené na působení v ozbrojeném konfliktu. Ve zbytku obžaloby byl nepravomocně zproštěn.|E|
+|T|Pošel pes, který „nalíčil“ noční past na tehdejšího prezidenta Zemana|D|20.8. 13:13|P|Rodina bývalého prezidenta Miloše Zemana se rozloučila se zlatým retrívrem Darcym, jehož si jako štěně prezidentova choť Ivana pořídila v roce 2013. P...|X|Článek
+Zeman se o smrti člena rodiny zmínil serveru Blesk s tím, že fatální se pro psího seniora stal zánět plic.„Psí sanitka ho odvezla na kliniku, kde mu sice na zánět plic dali antibiotika, ale bohužel pak ho lékař nakonec přece jenom musel nechat uspat,“ uvedl Zeman.
+Štěně retrívra se v rodině prezidentského páru objevilo na jaře roku 2013. „Darcy je pro mě jedno z dlouholetých splněných přání,“ uvedla tehdy Ivana Zemanová, pro niž byl podle exprezidentových slov odchod zvířete obzvlášť bolestný.
+Darcy se do povědomí širší veřejnosti zapsal i jako aktér incidentu, při němž si v listopadu 2013 poranil Zeman při pádu koleno a byl několik týdnů indisponován a dočasně odkázán na invalidní vozík.
+Prezidentova nehoda tehdy vzbudila rozruch i kvůli spekulacím o možném vlivu alkoholu, což však tehdejší ministr zdravotnictví a šéf lékařského konzilia, které mělo péči o prezidenta v gesci, Martin Holcát, rezolutně odmítl.
+„On v noci vstal, nerozsvítil si a zakopl o koberec shrnutý jeho psem,“ uvedl k příčinám vzniku zranění prezidentova pravého kolena.
+„Nebyl to náraz do zdi, byl to náraz kolenem do šatní skříně,“ uvedl následně Zeman s tím, že „tvrdé dřevo bolí poněkud víc, než kdyby se praštil o zeď.“|E|
+|T|Okamura dostal důležitou roli. Bohužel byla od toaletního papíru|D|20.8. 13:08|P||X|Novinky.cz
+Vyhledat
+Osobní menu
+Seznam.cz
+Hlavní menu
+Zavřít menu
+Hlavní stránka
+Moje sledované
+Stalo se
+Domácí
+Volby
+Komunální volby
+Volby do Senátu
+Parlamentní volby
+Krajské volby
+Prezidentské volby
+Eurovolby
+Volby USA
+Zahraniční
+Evropa
+Blízký a Střední východ
+Amerika
+Svět
+Válka na Ukrajině
+Komentáře
+Krimi
+Kultura
+Film
+Hudba
+TV a streaming
+Knihy
+Divadlo
+Ekonomika
+Lifestyle
+Dítě a rodina
+Zdraví
+Sex a vztahy
+Móda a kosmetika
+Osobnosti
+Gastro
+Recepty
+Bydlení
+Zahrada
+Jak na to
+Koktejl
+Internet a PC
+Hardware
+Software
+Testy
+Hry a herní systémy
+Mobil
+Bezpečnost
+AI
+AutoMoto
+Testy
+Rallye Dakar
+Autosalon Ženeva
+Autosalon Frankfurt
+Tuning
+Sauto.cz »
+Smoto.cz »
+Věda a školy
+Vzdělávání
+Cestování
+Tipy na výlety
+Sdovolená.cz »
+Tipy na výlety na Mapy.cz »
+Historie
+17. listopad
+Podcasty a pořady
+Zbytečná válka
+Slepá mapa
+Dobojováno
+Očima Saši Mitrofanova
+V českém znění
+Po mateřských stopách
+PoliTalk
+Historie
+Neklepat
+Zloději životů
+Pod svícnem
+Hlas na poušti
+Řetězák
+Vygenerováno AI
+Express
+Sport
+Kvízy
+Speciály
+Dokumenty
+Počasí
+TV program
+Denní tisk
+Zprávy
+Ekonomika
+Internet a PC
+AutoMoto
+Žena
+Bulvár
+Sport
+Bydlení
+Cestování
+Ostatní
+Tiráž
+Zobrazení snímku 1 z 0
+záhlaví
+Hlavní menu
+Hlavní stránka
+Stalo se
+Domácí
+Volby
+Zahraniční
+Válka na Ukrajině
+Komentáře
+Krimi
+Kultura
+Ekonomika
+Lifestyle
+Koktejl
+Internet a PC
+AutoMoto
+Věda
+Cestování
+Historie
+Podcasty a pořady
+Sport
+Kvízy
+Speciály
+Počasí
+TV program
+Denní tisk
+Sledované
+Drobečková navigace
+Novinky.cz
+Vtipy
+Okamura dostal důležitou roli. Bohužel byla od toaletního papíru
+Hlavní obsah
+Okamura dostal důležitou roli. Bohužel byla od toaletního papíru
+vain
+eBook
+Sdílet
+Dnes 20. 8., 13:08
+Důležitá role pro Okamuru
+Video: Vain, Novinky
+Článek
+Vtipy »
+Přeskočit carousel
+Říkal jsem jí, že se chci k Pražskému Jezulátku pomodlit za státní kasu...
+»
+Miroslav Kemel
+Pohlídáme Babiše! Jako jsme zrušili klimatickou krizi... zrušíme i deficit!!!
+»
+Miroslav Kemel
+Stoprocentní závislost na vodě je bezpečnostním rizikem. Nezbývá než investovat do alternativ!
+»
+Miroslav Kemel
+Andrej to znovu dokázal
+»
+vain
+Je fakt, že být s těmahle volebníma preferencema ve vládě je veliký umění...
+»
+Miroslav Kemel
+Přátelský pokec
+»
+vain
+Copak státní rozpočet. Stárnutím populace nejviditelněji trpí pláže...
+»
+Miroslav Kemel
+Krachonošovy pohádky
+»
+vain
+Také sledujete motorky po ránu
+»
+vain
+Nemám žádný střet zájmů! Nejsem premiérem! Nejsem Babiš!
+»
+Miroslav Kemel
+Zobrazení snímku 1 z 10
+1
+Související témata:
+Tomio Okamura
+Postranní panel
+Reklama
+Reklama
+Výběr článků
+Načítám
+Postranní panel
+Okamura dostal důležitou roli. Bohužel byla od toaletního papíru - Novinky|E|
+|T|Zelená střecha, cihly i proměna garáží. Představujeme finalisty klání o nejlepší dostupné bydlení v Británii|D|20.8. 13:04|P|Cena Neavea Browna je každoročně udělovaná na počest stejnojmenného modernistického architekta a průkopníka v oblasti dostupného a sociálního bydlení....|X|Článek
+Cena Neavea Browna za dostupné bydlení vznikla na počest architekta Neavea Browna (1929–2018) a poprvé byla udělena v roce 2019. Neave byl modernistický architekt se silným sociálním cítěním, proslulý především návrhy řady oceňovaných londýnských sídlišť. Cena za dostupné bydlení navazuje na jeho odkaz a vyzdvihuje význam kreativity při navrhování sociálního bydlení.
+Aktuálně byla představena čtveřice finalistů a vítěz bude oznámen v polovině října v rámci ceremoniálu udílení prestižní RIBA Stirling Prize, jak uvedla organizace na svých stránkách.
+Canada Water Plot K1 zaujme terasami
+Jedním z finalistů je cenově dostupný bytový komplex v jihovýchodním Londýně. Nachází se mezi hustou městskou zástavbou a přírodní krajinou lesů a ekologického parku Stave Hill. Bezmála osmdesát domů je uspořádáno kolem centrálního nádvoří, což vytváří pocit sounáležitosti s komunitou a zároveň maximalizuje využití domů orientovaných na dvě strany.
+Obyvatelé se tak mohou ve svých domovech těšit ze záplavy denního světla, přirozeného větrání i výhledů do dálky. Lehké kovové terasy zvyšují komfort bydlení. Všechny domy jsou navrženy tak, aby splňovaly současné životní potřeby, s velkorysými vchody, flexibilními dispozicemi a kvalitními soukromými i sdílenými venkovními prostory.
+Návrh se zelenými střechami je podle poroty příkladem zdařilých udržitelných domů.
+Lion Green Road krášlí udržitelné cihloví
+V jihovýchodním Londýně pak vznikl další pozoruhodný projekt formovaný náročným členitým terénem. Navrhli ho Mary Duggan Architects a realizovali RUFF Architects. I u něj je znát trend opětovného příklonu k cihloví jako k udržitelnému materiálu.
+Tento rezidenční projekt je dobře začleněn do krajiny a zachovává si velký podíl otevřené plochy. Obsahuje pět budov se 157 bytovými jednotkami zasazených do zeleně. Ve všech budovách je použit výrazný cihlový detail, který ladí s přírodním okolím. Vstupní haly jsou v každém složeném pavilonu odsazeny, aby označovaly prahy a přilehlé terasy. Tři barvy cihel odlišují překrývající se fasády v úrovni terénu.
+Nevyužitý pozemek pro Rowan Court
+V lokalitě v severním Londýně, která už neměla využití, vzniklo 46 nových sociálních nájemních domů. Developerský projekt sociálního nájemního bydlení Rowan Court je proměnou bývalých garáží a dalších pozemků v soudržné rozšíření stávajícího městského sídliště ze 70. let. Projekt nabízí 31 bytů, 11 řadových domů, čtyři bezbariérové domy a čtyři mezigenerační mezonetové domy uspořádané kolem nového veřejného náměstí a společného dvora.
+Klíčovým prvkem se stalo vytvoření nové pěší trasy propojující sídliště s veřejnou dopravou. V rámci projektu byla také zřízena komunitní zahrada, která se ukázala jako dobrý způsob, jak spojit obyvatele. Všechny domy jsou napájené tepelnými čerpadly vzduch-voda a disponují fotovoltaickými panely.
+St Andrew's Drive vyniká férovostí
+Fáze dvě a tři projektu St Andrew's jsou příkladem sociálně uvědomělého bydlení, které kombinuje inovaci a odvážné architektonické ambice. Návrh nahrazuje rozsáhlý šestipodlažní bytový dům ze 60. let s pavlačovým přístupem. Jde o shluky bloků umístěných kolem centrálních sdílených zelených ploch. St Andrew’s Drive nabízí 120 nových bytových jednotek a je příkladem kvalitního bydlení, které vytváří zároveň i pocit komunity.
+Příklady kvalitního sociálního a levného bydlení jsou bezesporu cenné. Nové návrhy stále více stavějí na komunitnějším způsobu života a architekti dbají na udržitelnost staveb.|E|
+|T|Klarna chce bankovní licenci v USA, mění vedení a hledá šéfa v New Yorku|D|20.8. 13:01|P|Aplikaci Klarna s věrnostními kartami a možností rozložit nákup na splátky má v mobilu spousta Čechů. Švédská firma, která ji provozuje, teď chystá to...|X|Článek
+Klarna působí ve více než 45 zemích, využívá ji přes 55 milionů aktivních uživatelů měsíčně a zhruba devět milionů lidí ji otevře každý den. Ve známost vešla hlavně díky službě „kup teď, zaplať později“, kterou poskytuje obchodníkům i zákazníkům.
+Klarna oznámila, že na začátku příštího roku skončí ve funkcích finanční ředitel Niclas Neglén a marketingový ředitel David Sandström. Podle generálního ředitele Sebastiana Siemiatkowského je pro firmu důležité být blíž investorům a americkému kapitálovému trhu, nový šéf financí proto bude sídlit přímo v New Yorku.
+Firma se podle listu Financial Times chystá na proměnu, aby ji lidé přestali vnímat jen jako poskytovatele krátkodobých splátek a vnímali ji spíš jako klasickou banku. Klientům chce nabízet třeba spořicí produkty, debetní karty nebo úvěry s úrokem. V Evropě už bankovní licenci má, v červenci o ni požádala i v USA, svém hlavním růstovém trhu.
+Personální změny Klarna oznámila spolu s výsledky za druhé čtvrtletí. Firma sice byla v zisku už druhé čtvrtletí v řadě, investory ale zklamal slabší výhled na celý rok. Akcie v úterý propadly o 22,9 procenta, tržní hodnota firmy klesla na přibližně 5,7 miliardy dolarů, asi 119 miliard korun. Od vstupu na newyorskou burzu loni v září se hodnota akcií zhruba přepůlila.
+Klarna vykázala čistý zisk devět milionů dolarů (188 milionů korun), zatímco loni ve stejném období prodělala 53 milionů dolarů (zhruba 1,1 miliardy korun). Tržby meziročně vzrostly o 27 procent na přibližně miliardu dolarů, tedy asi 21 miliard korun.
+Firma zároveň snížila odhad hodnoty letošních transakcí přes své služby, nově čeká 149 až 151 miliard dolarů, tedy 3,11 až 3,15 bilionu korun, místo dřívějších 155 miliard. Hlavním důvodem je slabší spotřeba v Německu, jejím největším trhu. Výsledky zatížily i pohyby měnových kurzů, zhruba o 600 milionů dolarů, 12,5 miliardy korun.
+Klarna v Česku působí od roku 2022, zákazníci ji mohou využívat v aplikaci i u zapojených e-shopů – nabízí hlavně zaplacení nákupu do 30 dnů nebo rozdělení do tří bezúročných splátek. Od roku 2025 je i na Allegro.cz a přes platební bránu PayU u dalších obchodníků. Přesný počet českých uživatelů firma nezveřejňuje, podle odhadu z dat Statista Consumer Insights jde o několik set tisíc lidí.|E|
+|T|Benzín zase není. Rusko čelí další vlně palivové krize|D|20.8. 12:56|P|Jen 28 procent ruských benzínových stanic má aktuálně podle monitoringu benzín, uvedl ruský list Izvěstija. „Automobilisté v posledních dnech čelili d...|X|Článek
+Podle aplikace GdeBENZ bylo k 16. srpnu palivo k dispozici na 28,1 % čerpacích stanic v celé zemi. O týden dříve to bylo 41 %. Dostupnost benzinu a nafty se podle aplikace snížila ve Volgogradské, Čeljabinské, Orenburské, Voroněžské, Samarské, Penzenské, Saratovské, Lipetské, Rostovské oblasti a v Tatarstánu.
+Problém se však netýká jen odlehlých oblastí Ruska nebo těch u hranic s Ukrajinou, které čelí nejvíce ukrajinským útokům. V Moskvě třeba čerpací stanice nemívají skoro nikdy všechny druhy benzinu, ale jen některé. Když 17. srpna navštívili redaktoři listu Izvěstija 21 čerpacích stanic v Moskvě a okolí, benzín AI-92 s oktanovým číslem 92 byl k dispozici jen na sedmi, benzín AI-95 na šesti a prémiová AI-98 pouze na pěti. Ani motorová nafta není k dostání všude.
+Problém je to i proto, že v srpnu je v Rusku v souvislosti s prázdninami tradičně nejvyšší poptávka po benzínu, jak upozornil analytik Národního fondu energetické bezpečnosti Igor Juškov.
+Dodávky benzínu se jen přesměrovaly
+Generální ředitel Open Oil Market Sergej Těreškin dodal, že přesměrování logistiky pomohlo zlepšit dostupnost paliv ve velkých městech, ale nezměnilo poměr poptávky a nabídky. Z jeho slov tedy plyne, že poptávka převyšuje nabídku, což platí zejména u benzínů s vyšším oktanovým číslem.
+Rusko v rámci řešení první letošní vlny nedostatku benzínu způsobené systematickými ukrajinskými útoky na rafinérie umožnilo i výrobu méně kvalitních benzínů podle norem Euro 2, Euro 3 a Euro 4. Benzín Euro 2 se snáze vyrábí, neboť může mít obsah síry až 500 mg na kg, jenomže moderní motory s vyšším podílem síry nepočítají, a tak ruští řidiči upřednostňují prémiové benzíny, aby neničily motory, vstřikovací zařízení a katalyzátory.
+Kvůli druhé vlně nedostatku benzínu se očekává, že zákaz jeho exportu této komodity se prodlouží do 1. října.|E|
+|T|Šest prstů, zkopírované obličeje. Televize Nova schytává za AI reklamu ostrou kritiku|D|20.8. 12:55|P|Velkoformátová reklama na novou řadu hudební soutěže SuperStar, jež se nedávno objevila v prostorách pražské stanice metra Můstek, sklízí značnou krit...|X|Článek
+Na nepovedenou reklamní kampaň začali upozorňovat uživatelé na sociálních sítích v čele s influencery Simonou Tarabovou a Radkem Blažkem. Zmiňují, že na obrázku spatřují dvacetkrát stejnou tvář, končetiny mizející do ztracena nebo oči „rozlítané“ různými směry.
+Komentující zároveň vyjádřili své zklamání nad tím, že komerční televize s nemalým rozpočtem nenajala profesionální fotografy a grafiky a dala naopak přednost bezplatnému nástroji. Někteří tento krok ze strany Novy ironicky připisují tomu, že po zaplacení moderátora Leoše Mareše jí již nezbyly finanční prostředky.
+Novinky oslovily zástupce TV Nova. „V tomto případě jsme zaznamenali viditelné chyby a bereme je jako zkušenost, kterou promítáme do našich dalších kontrolních a schvalovacích procesů při práci s AI,“ uvedl za marketingové oddělení televizní mluvčí Michal Prokeš.
+Doplnil, že využití umělé inteligence pro tvorbu této reklamy vycházelo z konkrétního konceptu kampaně, aniž by jeho detaily blíže představil. „Stejně jako u každého kreativního procesu mohou vzniknout nedostatky, které se ne vždy podaří zachytit před zveřejněním,“ tvrdí.
+Oblíbená show Česko Slovenská SuperStar se na obrazovky vrátí po pětileté pauze 2. září. O postupu talentů letos bude rozhodovat porota ve složení Ewa Farna, Pavol Habera, Jakub Prachař a Calin.
+Jméno vítěze, který si odnese výhru ve výši dvou milionů korun, se diváci dozví v první polovině prosince. Tím zatím posledním se roku 2021 stal slovenský zpěvák Adam Pavlovčin, známý jako ADONXS.|E|
+|T|Markéta Irglová a Zdeněk Svěrák budou oceněni na Soundtracku Poděbrady|D|20.8. 12:40|P|Film a hudba k sobě neodmyslitelně patří, takže není divu, že u nás mají společnou akci. Mezinárodní festival filmové hudby a multimédií Soundtrack, k...|X|Článek
+Cenu za mimořádný přínos české či světové filmové hudbě převezme Irglová během svého koncertu 28. srpna v zámecké zahradě. Svěrák ji dostane ve stejný den při premiéře koncertní podoby filmu Tmavomodrý svět, ke kterému napsal scénář.
+„Je pro nás čest, že dva tak významní umělci přijedou na letošní Soundtrack. Zdeněk Svěrák i Markéta Irglová se do historie filmové hudby nesmazatelně zapsali a po právu u nás převezmou ocenění,“ uvedl ředitel festivalu Michal Dvořák.
+Hlavním filmem festivalu bude drama režiséra Jana Svěráka Tmavomodrý svět (2001). Jeho projekci doprovodí živým soundtrackem Unique Orchestra pod taktovkou dirigenta Adama Klemense.
+„Na besedu dorazí tvůrci filmu v čele s režisérem Janem Svěrákem a autorem hudby Ondřejem Soukupem,“ sdělil výkonný ředitel festivalu Mirek Paskovský.
+K programu ještě dodal: „Časosběrný film Bára Basiková představí hlavní aktérka spolu s režisérkou Helenou Třeštíkovou. O tom, jaké je to přebírat sošku Oscara za filmovou hudbu, bude zase hovořit Markéta Irglová.“
+Ve festivalové porotě, která bude vybírat nejlepší filmový a seriálový soundtrack, zasednou skladatel Ondřej Soukup, hudebník Jan P. Muchow, hudebnice Beata Hlavenková a skladatel Michal Novinski.
+V takzvaném souboji klavírů se na Soundtracku Poděbrady představí Ondřej Brzobohatý a Ondřej Brousek. V sobotu večer vystoupí skupina Queenie, která hraje písničky britských Queen, a nachystán je i koncert Best of Bond, který přinese výběr nejznámějších melodií filmové série o agentovi 007 v podání symfonického orchestru Unique Orchestra.
+V hudebním programu se představí Bára Basiková s kapelou Basic Beat, písničkářka Marie April, jež letos získala cenu Anděl v kategorii Objev roku, či slovenská zpěvačka Tamara Kramar, dcera moderátora Maroše Kramára.
+Hostem festivalu bude také režisér Jiří Mádl, který se navíc představí v živé nahrávce podcastu Boomertalk Miloše Pokorného.|E|
 |T|V Německu řádila tornáda. Bouřky mají jednu oběť|D|20.8. 12:37|P|Německo ve středu zasáhly silné bouřky, které na několika místech doprovázela tornáda. Nejlépe zdokumentované je tornádo z braniborského Fürstenwalde/...|X|Článek
 Podle deníku Die Welt už Německá meteorologická služba (DWD) na základě několika videozáznamů potvrdila tornádo ve Fürstenwalde/Spree. Vír městem prošel kolem 17:15 a podle předběžného hodnocení dosáhl intenzity IF1. Tomu odpovídá rychlost větru zhruba 138 až 177 km/h.
 Další mimořádně silná bouřka zasáhla Hesensko. Tornádo se zde zřejmě vytvořilo v obci Oberndorf nedaleko Wetzlaru. Charakter tamních škod podle meteorologů nasvědčuje tornádu, jeho výskyt ale ještě musí oficiálně potvrdit DWD.
@@ -231,6 +532,23 @@ Kabina nabídne také prémiový sound-systém Bang & Olufsen s 25 reproduktory,
 Vůz může být konfigurován v sedmimístné verzi i čtyřmístné VIP verzi s označením Neolun, která má zadní dveře otvíratelné proti směru jízdy. Díky nové koncepci mechanismu dveří však mohou být zadní dveře otevřeny bez otvírání dveří předních.
 Automobilka také použila konstrukci bez B-sloupku dveří, díky čemuž má posádka více prostoru při nastupování. Přední sedadla pak mohou být otočena proti směru jízdy, čímž se kabina promění v útulný salonek.
 Vlajkový model značky Genesis i celé skupiny Hyundai dorazí na domácí korejský trh během příštího měsíce, na evropské trhy by pak měl zamířit v první polovině příštího roku. Cena zatím nebyla zveřejněna.|E|
+|T|Podívejte se, jak silné je letošní sucho v kontextu dekády|D|20.8. 10:41|P|Desítky satelitních snímků ukazují, jak závažné je v Evropě letos sucho a horko, respektive jak se projevují jejich dopady na rostliny.|X|Desítky satelitních snímků ukazují, jak závažné je v Evropě letos sucho a horko, respektive jak se projevují jejich dopady na rostliny.
+Letošní vlna veder je v Evropě mimořádná. Podle expertů by například požáry, které způsobila, prakticky nebyly možné bez změny klimatu způsobené člověkem. Právě požáry dále prodlužují sílu i intenzitu veder. A protože se vysoké teploty pojí s nedostatkem srážek, je výsledkem hnědá vegetace na velké části území kontinentu.
+Hnědá je přirozená, ale...
+V srpnu je už hnědá barva na satelitních mapách do značné míry běžná – zejména obilniny už totiž bývají sklizené. Ale letošní satelitní mapy přesto hnědé barvy obsahují více, než je v tomto ročním období běžné. Ukazují to snímky z evropského systému Copernicus, jehož družice sledují povrch kontinentu dlouhodobě. Následující galerie zobrazuje třináct evropských metropolí v průběhu posledních deseti let:
+Není možné srovnat vždy konkrétní dny. Ne každý den se totiž satelit pohybuje nad stejným místem. A navíc mnohdy může pokazit pozorování silnější oblačnost, takže by nemuselo být vidět nic. Proto grafika ukazuje střední barevné hodnoty pro dané období od půlky července do poloviny srpna, což poskytuje reprezentativnější obrázek. I tak jsou na některých snímcích relikty – například u Berlína jsou dobře pozorovatelné „díry“ způsobené mraky v roce 2016, které tam byly velmi časté po celé pozorované období.
+Proč je Evropa ze satelitu hnědá
+Na snímcích je dobře vidět, jak se vysychání krajiny projevuje v různých částech Evropy odlišně. Klíčovou roli hrají spíše teploty než srážky – na jihu, kde jsou teploty vyšší, je silnější odpar, takže krajina je tam obecně méně zelená, navíc jsou na tyto podmínky některé tamní druhy rostlin adaptované, takže se zelenají jen krátkou dobu v roce.
+Na severu, v grafikách reprezentovaných například Berlínem nebo Varšavou, jsou zase průměrné teploty nižší, takže nedochází k takovému odparu a rostliny mohou s vodou v půdě lépe hospodařit. Tyto oblasti tedy zůstávají zelené i v letech, kdy mají jižnější státy problémy.
+Největší rozdíly mezi suchými a vlhkými lety jsou tedy vidět ve státech střední Evropy, mezi které patří například i Česko. Ty trpí právě nezvykle vysokými teplotami spojenými s vysokým odparem, který zhoršuje schopnost rostlin dostat se k vodě. Právě proto je u Prahy, Bratislavy nebo Budapešti tak dobře vidět rozdíl mezi chladnějšími a teplejšími roky na barvě vegetace.
+Nejhorší sucha zasáhla střední Evropu podle projektu CzechGlobe během jednadvacátého století v roce 2003. Následoval rok 2022 a také roky 2015, 2018 a 2025. Mezi nejdeštivější roky naopak patřil rok 2020. Podmínky v jednotlivých letech jsou v grafice dobře patrné.
+Co se děje v listech
+Příčiny ztráty barvy jsou u rostlin fyziologické, je to v pořadí druhá obranná linie, kterou nasadí, když je zasáhne sucho. Tou první je takzvané přibouchnutí dveří. Rostliny mají na spodní straně listů drobné póry nazývané odborně stomata. Těmi nejen dýchají, ale také skrze ně odpařují vodu. Při suchu je rostlina uzavře, aby o vodu zbytečně nepřicházela. Jenže tím se jí také zavře možnost vstřebávat oxid uhličitý, ze kterého získává energii.
+Tímto zavřením dveří tedy sice zabrání tomu, aby nepřišla o důležitou vodu, ale současně tímto vchodem přestane přicházet energie. Rostlina si tedy koupí na nějakou dobu čas, jak přežít bez vláhy. Ale za cenu toho, že přestane „jíst“.
+Pokud sucho trvá déle, rostliny se už nemohou spolehnout jen na zabránění únikům a musí se začít zbavovat částí, pro které nemá vláhy dost. Prvním krokem je to, že začnou aktivně rozkládat své zelené barvivo chlorofyl – nejdříve ve svých nejstarších nebo nejméně důležitých listech. Bez těchto částí totiž rostlina přežít dokáže. Bez těch kriticky důležitých, jako jsou kořeny a mladé výhonky, ne.
+Výsledkem je žloutnutí. To je důsledkem odstranění chlorofylu – když zmizí, obnaží se barvy, které byly na listech sice celou dobu, jen nebyly přes výraznější zelenou vidět. Za žlutou (a oranžovou) jsou zodpovědné pigmenty karotenoidy.
+A nakonec, když je nejhůř, rostliny zhnědnou. K tomu došlo při současné vlně veder hlavně na jihu Evropy, kde byla horka současně nejdelší a nejintenzivnější. Hnědá znamená, že daná část rostliny je už mrtvá poté, co rostlina přesměrovala všechny zbytky živin i vody na kriticky důležitá místa, typicky do stonku a kořene.
+Tento systém je velmi elegantní – umožňuje rostlině převést dostupné zdroje do míst, která mají naději, že přežijí. Snímky z družic tedy zachycují jen jednu část pravdy, když shora vidí pouze listí. O stavu zbytku rostliny nevypovídají nic zásadního.|E|
 |T|Monstrum na obloze. Bouřka na severu Česka byla mimořádná|D|20.8. 10:37|P|Sever Čech zasáhl v noci na čtvrtek velmi silný bouřkový systém, který byl díky vhodným meteorologickým podmínkám doprovázený mimořádně vysokou blesko...|X|Článek
 Podle dat portálu blesky.bourky.cz udeřily během noci na našem území téměř čtyři tisíce blesků. To se nemusí zdát jako vysoké číslo, nicméně vzhledem k poměrně malé ploše zasaženého území byla blesková aktivita konvektivního systému mimořádná.
 Bouřkovou činnost přetrvávající do pozdních nočních hodin podpořila přítomnost zvlněné studené fronty, velké množství dostupné energie pro výstupné pohyby vzduchu a silný střih větru (rozdílná rychlost a směr proudění v různých nadmořských výškách), díky čemuž vzestupné proudy nabíraly velkou rychlost. Uvnitř oblačnosti tak docházelo k velkému tření ledových krystalků, což vedlo ke vzniku silného elektrostatického pole, jež se vybíjelo ve formě četných záblesků.

@@ -1,0 +1,13 @@
+Článek
+Vedle změny systému poplatků je další novinkou možnost kombinovat platební systémy. Vývojáři mohou nově v aplikaci nabízet nákupy přes Apple vedle alternativních způsobů placení, což dosud v Evropské unii možné nebylo.
+Budou si přitom moci zvolit, zda použijí platby přes Apple, alternativního zpracovatele přímo v aplikaci, odkaz na dokončení nákupu mimo aplikaci, nebo některou z kombinací těchto možností. Zvolený způsob ale bude muset zůstat stejný po dobu 12 měsíců.
+Právě zde se otevírá prostor pro větší cenovou konkurenci. To, zda se nové podmínky skutečně promítnou do cen digitálního obsahu, však bude záležet na tom, jaké možnosti využijí samotní vývojáři.
+S větší volností přicházejí i omezení
+Apple se s Evropskou komisí dohodl také na opatřeních, která mají chránit děti při využívání alternativních plateb.
+Aplikace v kategorii pro děti v App Storu nebudou moci obsahovat odkazy na stránky, kde lze provádět transakce. U uživatelů mladších 18 let budou muset aplikace v App Storu, které využívají alternativní způsob zpracování plateb nebo odkazují na webové stránky, kde lze provádět transakce, obsahovat rodičovský zámek. Ten bude vyžadovat, aby nákup zkontroloval rodič nebo zákonný zástupce.
+U uživatelů mladších 13 let pak aplikace v App Storu nebudou smět odkazovat na webové stránky, kde lze provádět transakce. V členských státech EU, které vyžadují souhlas rodičů s digitálními úkony pro děti starší 13 let, se tato ochranná opatření přizpůsobí odpovídajícím způsobem.
+Alternativní obchod si nebude moci otevřít kdokoli
+Apple současně rozšiřuje okruh subjektů, které budou moci v EU provozovat alternativní obchod s aplikacemi nebo distribuovat aplikace přímo z webu.
+Podmínky budou nově moci splnit například společnosti, které projdou přiměřeným hodnocením finanční stability, veřejně obchodované firmy, podniky vlastněné veřejně obchodovanými společnostmi, společnosti s podporou zavedené investiční firmy nebo s provedeným finančním auditem. Tato možnost se rozšíří také na státní subjekty, vzdělávací instituce a neziskové organizace.
+Apple přitom nadále upozorňuje, že distribuce aplikací přímo z webu nemá stejného provozovatele ani průběžný dohled, jaký firma poskytuje prostřednictvím App Storu. I alternativně distribuované aplikace proto budou muset projít základním ověřením zaměřeným na funkčnost a ochranu před závažnými hrozbami.
+Evropský trh s aplikacemi se tak od října posune zase o kus dál od modelu, v němž měl Apple téměř vše pod jednou střechou. Pro uživatele to může znamenat více možností, jak se k aplikacím a digitálním nákupům dostat. Kolik z této nové volnosti nakonec pocítí také jejich peněženky, ukáže až to, jak nové možnosti využijí samotní vývojáři.

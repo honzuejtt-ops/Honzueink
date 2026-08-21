@@ -1,4 +1,6 @@
-|T|Apple si vysnil celoskleněný iPhone bez rámečků. Vyrobit ho je ale zatím nad lidské síly|D|21.8. 15:45|P||X|
+|T|Netflix a další na víkend: Další řady Outer Banks a Team SEAL. Nové díly Futuramy nebo Lanterns|D|21.8. 16:51|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Apple si vysnil celoskleněný iPhone bez rámečků. Vyrobit ho je ale zatím nad lidské síly|D|21.8. 15:45|P||X|
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Ne, miliony lidí si teď neinstalují Windows 10. Má to jednoduché vysvětlení|D|21.8. 14:45|P|Novinky.cz včera vydaly článek s titulkem Miliony lidí si nainstalovaly Windows 10, popularita záhadně roste. Není v tom žádná záhada a ta částka také...|X|Novinky.cz včera vydaly článek s titulkem Miliony lidí si nainstalovaly Windows 10, popularita záhadně roste. Není v tom žádná záhada a ta částka také nesouhlasí, jak by pravil klasik.
 
@@ -180,11 +182,7 @@ Evropa po půlroce
 OpenAI ve svém příspěvku o spuštění reklam mezi zeměmi výslovně uvádí Německo, Francii, Španělsko, Itálii, Švédsko, Norsko, Dánsko, Nizozemsko a Rakousko. Kompletní seznam zemí, kde se reklamy začnou zobrazovat, firma nezveřejnila, je ale nanejvýš pravděpodobné, že jde o 30 zemí Evropského hospodářského prostoru a k tomu Švýcarsko.
 Firma tvrdí, že reklamní obsah nebude ovlivňovat odpovědi ChatGPT. Placená sdělení mají být jasně označena a vizuálně oddělena od běžné konverzace. Pro inzerenty je zajímavý především způsob používání ChatGPT – uživatelé při konverzaci často popisují svůj cíl a případná kritéria mnohem podrobněji než při klasickém vyhledávání. Reklama tak může být mnohem relevantnější s teoretickou šancí na vyšší konverzi.
 OpenAI při spuštění reklam v Evropě nabídne reklamní prostor přes vlastní obchodní tým a zapojí také partnerské agentury. Samoobslužný Správce reklam má přijít později v tomto čtvrtletí. OpenAI zpoplatňuje reklamy pomocí modelů CPM (Cost Per Mille), CPC (Cost Per Click) a oCPC (optimized Cost Per Click). Klient tak buď platí za 1000 zobrazení reklamy, za jednotlivý klik, případně optimalizovanou cenu za klik podle pravděpodobnosti konverze. Během prvních měsíců od spuštění ve Spojených státech reklamní platformu využily podle OpenAI desítky tisíc inzerentů. Nejzajímavější tedy bude sledovat, zda a případně jakou měrou začnou AI platformy ubírat na ziscích tradičním poskytovatelům reklamního prostoru.
-Zdroj: OpenAI|E||T|ChatGPT v Česku zavádí reklamu. Zobrazí se i některým předplatitelům|D|20.8. 12:45|P|OpenAI oznámilO, že od 24. srpna bude ChatGPT obsahovat reklamy v 31 zemích Evropy. Tam by měly spadat všechny státy EU plus Island, Lichtenštejnsko, ...|X|OpenAI oznámilO, že od 24. srpna bude ChatGPT obsahovat reklamy v 31 zemích Evropy. Tam by měly spadat všechny státy EU plus Island, Lichtenštejnsko, Norsko a Švýcarsko. Firma novinku testovala od února v USA, pak přidala dalších osm trhů.
-
-Reklamy budou dostupné v bezplatných verzích chatbotu, ale ...
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|LG vyvinula FLiPP OLED: obrazovky budou jasnější, déle vydrží s nižší spotřebou a budou levnější|D|20.8. 11:45|P||X|
+Zdroj: OpenAI|E||T|LG vyvinula FLiPP OLED: obrazovky budou jasnější, déle vydrží s nižší spotřebou a budou levnější|D|20.8. 11:45|P||X|
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Hacker nahlašuje díry ve Windows, Microsoft mu za to maže účty. Teď našel další problém v Defenderu|D|20.8. 10:45|P|Etický hacker objevil zranitelné místo ve Windows Defenderu. • Kritizuje Microsoft za nedostatečnou opravu dříve nahlášení díry. • Microsoft hackera d...|X|Etický hacker objevil zranitelné místo ve Windows Defenderu. • Kritizuje Microsoft za nedostatečnou opravu dříve nahlášení díry. • Microsoft hackera dříve kritizoval za jeho přístup ke zveřejňování informací.
 

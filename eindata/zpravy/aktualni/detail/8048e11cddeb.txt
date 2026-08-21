@@ -1,0 +1,15 @@
+Článek
+Ředitel technického oddělení Googlu před čtyřmi roky prohlásil, že díky umělé inteligenci a její pomoci bude možné zavést čtyřdenní pracovní týden. Podobné výzvy se chopila i společnost OpenAI, která k podobnému nastavení vyzvala i další firmy. Základ byl společný – vedoucí pracovníci byli přesvědčeni, že umělá inteligence dokáže zastat takové množství práce, že bude třeba se na to připravit.
+Jak se ale ukazuje z výpovědí bývalých či současných zaměstnanců zmíněných korporátů, nejen že se čtyřdenní pracovní rozvrh u mnoha z nich nakonec ani netestoval, práce naopak ještě přibývá a s ní i tlak na zaměstnance, uvádí BBC.
+„V sobotu nebo neděli jdete klidně do práce, a to často jen proto, abyste se ujistili, že se něco nerozbilo a funguje to,“ nastínil běžnou praxi bývalý zaměstnanec OpenAI s tím, že místo volnějšího režimu se zaměstnanci potýkali s krizovými schůzkami, nátlakem na práci o víkendu stejně jako nadměrně kritickým hodnocením výkonu.
+Podobné nastavení je například i ve společnostech Anthropic či Meta, kde s vývojem stále chytřejších nástrojů dochází k propouštění nepotřebných zaměstnanců. Ti, kteří zůstali, ale místo úspory času naopak hlásí delší pracovní dobu a vysoký tlak na výkon.
+Extrémní pracovní sprint
+Američtí technologičtí pracovníci jsou většinou velmi dobře finančně ohodnoceni, na rozdíl od jiných odvětví. V technologiích také dlouho panovalo pravidlo „klasické“ pracovní doby od 9 do 5, zatímco jinde nebyly výjimkou 12hodinové směny za mnohem nižší platy.
+Právě v technologických oborech byl ale také více než kde jinde vidět tzv. „pracovní sprint“. Tedy období, kdy lidé pracovali nad rámec běžné pracovní doby – především při uvedení nové služby nebo produktu. V době umělé inteligence podobné sprinty nebývají tak ojedinělé, navíc jsou mnohdy dost extrémní.
+Jak uvedl server BBC na základě sdělení některých lidí, ve společnosti OpenAI nebývají výjimkou ani 90hodinové pracovní týdny (na rozdíl od běžných 40 hodin).
+Dalším faktorem spojeným s rozvojem umělé inteligence je, že lidé bývají často přesunováni na jiné, potřebnější pozice.
+„Prostě vás přeřadí, nemůžete říct ne. Tedy můžete, ale pak vás nejspíš čeká výpověď,“ potvrdil jeden z bývalých zaměstnanců Mety.
+AI jako úleva? Spíš zátěž
+O tom, že umělá inteligence lidem místo úlevy přidává spíš zátěž navíc, hovoří i mnohé studie. Potvrdil to například i 18měsíční výzkum Kalifornské univerzity v Berkeley, podle něhož zaměstnanci ve společnostech zabývajících se vývojem AI pracovali rychleji, zvládali vyšší rozsah úkolů a automaticky si prodlužovali pracovní dobu.
+Odborník z MIT Neil Thompson uvádí, že ve společnostech, které jsou lídry ve vývoji AI, ani do budoucna podle něj moc nehrozí, že by se nasadily vyvíjené AI nástroje a lidem se dalo „volno“.
+„To ve výsledku povede k tomu, že i kdyby existovaly reálné úspory času, byly a pravděpodobně i budou pohlceny změnami, jejich implementací a zajištěním fungování,“ dodal k tomu.

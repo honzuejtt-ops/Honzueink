@@ -1,0 +1,20 @@
+Článek
+Do podoby hollywoodského RoboCopa mají roboti zatím daleko. Nemají zbraně, nikoho nepronásledují temnými uličkami a na podezřelé nevytahují pouta. Místo toho se pohybují na kolečkách, sledují dění na silnicích a mechanickými pažemi napodobují gesta dopravních policistů podle aktuální světelné signalizace.
+Roboty označované jako T2 vyvinula místní technologická společnost SUPCON Information. Každý z nich měří téměř 1,9 metru a váží 98 kilogramů. Díky kamerám, radaru a palubnímu počítači dokážou rozpoznat celou řadu běžných dopravních přestupků.
+Všímají si například jezdců na mopedech či elektrokolech bez přilby, přepravy více osob na elektrokole nebo aut, která zastaví až za vyznačenou čárou. Neuniknou jim ani chodci, kteří se vydají přes silnici na červenou.
+JUST IN: China deployed its first humanoid AI traffic police robot to direct traffic in heavy rain. pic.twitter.com/MyTZLdDXsS
+— Valuetainment (@valuetainment) August 14, 2026
+Nejen hlídači, ale i rádci
+Roboty ale nelze považovat jen za automatické strážce křižovatek. Lidé se jich mohou zeptat také na cestu, možnosti parkování nebo dopravní předpisy. V případě nouze pak dokážou zprostředkovat spojení s policií.
+SUPCON nasadila v Chang-čou od května celkem 15 těchto robotů. Společnost uvádí, že za tuto dobu vydala více než 170 tisíc upozornění. Podle jejích údajů se navíc měsíční počet případů jízdy bez přilby a vozidel zastavujících za vyznačenou čárou snížil o více než 40 procent.
+Tato čísla ale nebylo možné nezávisle ověřit a místní dopravní policie se k výsledkům projektu nevyjádřila.
+Vedro ani déšť je z ulic jen tak nevyženou
+Než roboti vyrazili do ostrého provozu, strávili tisíce hodin testováním. Vyzkoušeli si turisticky frekventovaná místa, okolí škol i rušné obchodní čtvrti. Obstát museli také během dopravních špiček a za nepříznivého počasí.
+Ani robotická hlídka ovšem není všemocná. Silné slunce, déšť nebo extrémní teploty mohou komplikovat práci kamerám a radarům. SUPCON přesto tvrdí, že roboti dokážou přestupky rozpoznat s přesností přesahující 95 procent.
+Nasazení robotů zapadá do širší snahy čínských technologických firem dostat podobné stroje z výstavních hal a veletrhů do běžného života. A mají přitom jednu výhodu, kterou lidští kolegové jednoduše nabídnout nemohou.
+„Neunaví se. Dokážou pracovat dlouhou dobu bez přestávky,“ upozornil představitel společnosti Cchao Chuej.
+Na skutečného RoboCopa s pravomocí zatýkat si však Čína ještě počká. Prozatím její roboti zůstávají u dopravy. Zato jsou v ulicích stále ve střehu – a na přestávku rozhodně neodcházejí.
+Fiasko v Barceloně
+Předvést dovednosti nejmodernějších humanoidních robotů se snažili také čínští tvůrci zkraje března na největším mobilním veletrhu na světě MWC 2026. Operátor China Mobile prezentoval v Barceloně koncept robotické restaurace, skončilo to ale naprostým fiaskem.
+Po vyhrazené ploše stylizované do podoby moderní restaurace se čínští roboti pohybovali pomalu, nekoordinovaně a bez zjevného cíle. Z jejich trajektorií nebylo patrné, zda rozvážejí jídlo, hledají zákazníka, nebo jen bloudí. Občas se zastavili, jako kdyby přemýšleli. Jindy změnili směr bez zjevné příčiny.
+V zákulisí mezitím bylo rušno. Čínští technici se dohadovali, rychle ťukali příkazy do notebooků a snažili se roboty na dálku „přesvědčit“, aby dělali to, co mají. Na první pohled bylo patrné, že místo autonomní spolupráce probíhá spíše nouzové dálkové řízení, jak se můžete dozvědět v naší dřívější reportáži.

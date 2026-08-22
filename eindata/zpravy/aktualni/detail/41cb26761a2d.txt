@@ -1,4 +1,4 @@
-|T|Lepší podpora 3dfx či Atari Falcon, Wine řešící PMD 85|D|22.8. 22:00|P|KDE zefektivňuje budoucí Plasmu 6.8 a přidává podporu pro Btrfs snapshoty, vylepšení pro 3dfx Voodoo 3+4+5, podpora pro blížící se Intel Nova Lake již...|X|KDE zefektivňuje budoucí Plasmu 6.8
+KDE zefektivňuje budoucí Plasmu 6.8
 Lze vůbec očekávat něco jiného než pokračující ladění budoucí Plasmy 6.8, dalo by se řečnicky tázat. Není tomu ani tento týden jinak, kromě oprav chyb mířících do verzí 6.6.x a 6.7.x se vývojáři přednostně věnovali příštímu vydání, tedy Plasmě 6.8.
 Nově bude v šest-osmičce podporováno vyhledávání stránek v Nastavení systému jak anglicky, tak v jazyce systému. Uživatel také může nově vypnout záznamy v automaticky spouštěných položkách v Nastavení systému, přičemž je již nemusí mazat.
 Na uzamčené obrazovce lze nově volit, jaká se použije autentizační metoda, pokud je jich v systému obsaženo více. Navíc každá z nich dostává hezčí UI. Jde o experimentální novinku, která se do Plasmy dostala nedávno, některé prvky GUI ještě chybí, ale již lze zkoušet. Obrazovka uzamčeného systému pak dostává úpravu vylepšující zarovnání tlačítek, speciálně u některých jazyků by uživatelé měli vidět zlepšení vzhledu. Dále Xaver Hugl v rámci KWin zajistil zakázání velmi otravné věci: uživatel odteď již nemůže nastavit rozlišení obrazovky tak malé, že by se z něj pomocí rozbitého UI nedokázal dostat a bylo by potřeba expertního zásahu.
@@ -16,33 +16,4 @@ Podobně na seznam aktualizací, které přinese jádro Linux 7.3, přidejme vyl
 Podpora pro blížící se Intel Nova Lake již stabilní
 Ovladače v balíku Mesa pro podporu OpenGL (Gallium3D) a Vulkan (ANV) u nové generace CPU Nova Lake, jsou již v rámci Mesa považovány za „stabilní“. Intel tak je předběžně připraven, aby kolem přelomu roku, kdy první procesory rodiny Nova Lake půjdou na trh, bylo linuxové jádro připraveno, stejně jako balík Mesa.
 Doplňme, že Nova Lake je očekávaná příští nejen desktopová generace, která v desktopech přejde na nový „socket“ LGA1954 (oproti současných LGA1851 a LGA1700) a přinese zpočátku až 28jádrové procesory, kolem léta 2027 pak i až 52jádrové modely. Intel by se s ní měl s výrobou navrátit do svých továren, konkrétně v rámci použití procesu Intel 18A, obvykle považovaným za zhruba srovnatelný s 3nm procesem TSMC.
-Více o Nova Lake na Cnews.|E|
-|T|Nové kontextové nabídky ve Windows 11 jsou rychlejší, přizpůsobitelné a bez bloatwaru|D|22.8. 15:45|P|Microsoft zahájil testování předělané kontextové nabídky ve Windows 11. • Poprvé v historii si vyberete, co se s v ní má zobrazovat. • K dispozicí je ...|X|Microsoft zahájil testování předělané kontextové nabídky ve Windows 11. • Poprvé v historii si vyberete, co se s v ní má zobrazovat. • K dispozicí je ve Windows 11 Insider Experimental Preview build 26340.9212.
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
-|T|Čína ztrácí výsadní postavení ve výrobě elektroniky. Google, Apple a Samsung hledají nové základny|D|22.8. 14:45|P|Google do roku 2027 přesune výrobu Pixelů do Indie a Vietnamu • Samsung opustil čínský trh už roku 2019 a uspěl ve Vietnamu a Indii • Apple rozšiřuje ...|X|Google do roku 2027 přesune výrobu Pixelů do Indie a Vietnamu • Samsung opustil čínský trh už roku 2019 a uspěl ve Vietnamu a Indii • Apple rozšiřuje své kapacity v Indii kvůli celním a politickým rizikům
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
-|T|Po Českých drahách testuje 3D tisk i U.S. Navy. Na vrtulníkové lodi vytiskli 12 dronů a 1000 náhradních dílů|D|22.8. 13:56|P|Námořnictvo má odjakživa problémy se zásobováním. Lodě, které operují dlouhé týdny a měsíce na světových oceánech se po nějakém čase chtě nechtě musej...|X|Námořnictvo má odjakživa problémy se zásobováním. Lodě, které operují dlouhé týdny a měsíce na světových oceánech se po nějakém čase chtě nechtě musejí vrátit domů.
-
-S nástupem skladného 3D tisku v posledních dekádách se teď ale nejspíše blýská na lepší časy. Pracuje na tom i americká společnost ...
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
-|T|Lidl zavede Cvak – platební metodu, kterou chtějí Češi obejít platební karty|D|22.8. 11:45|P|Poprvé jsme o službě Cvak slyšeli v prosinci 2023 a znělo to skvěle – platba mobilem, která funguje na bázi přenosu z účtu na účet (Account-to-Account...|X|Poprvé jsme o službě Cvak slyšeli v prosinci 2023 a znělo to skvěle – platba mobilem, která funguje na bázi přenosu z účtu na účet (Account-to-Account) bez nutnosti použít platební kartu. Výhodou je nižší provize, než požadují velké karetní společnosti. Na straně obchodníka není terminál, ale karta ...
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
-|T|Výkon bateriových úložišť v USA přesáhl 52 GW. Za poslední tři roky rostl v průměru o 70 % ročně|D|22.8. 09:45|P|Americké baterie dosáhly rekordní hranice celkového výkonu 52 GW • Solární parky ukládají polední přebytky pro dražší večerní spotřebu elektřiny • Plá...|X|Americké baterie dosáhly rekordní hranice celkového výkonu 52 GW • Solární parky ukládají polední přebytky pro dražší večerní spotřebu elektřiny • Plánovaná expanze kapacitu akumulátorů do tří let více než zdvojnásobí
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
-|T|Jak ušetřit na příštím novém iPhonu? Nechte si kryt ze starého, měl by na něj pasovat|D|22.8. 08:45|P|Chystaný iPhone 18 Pro si zachová rozměry i rozložení prvků předchozí generace • V USA se už objevila pouzdra určená zároveň pro iPhone 17 Pro i iPhon...|X|Chystaný iPhone 18 Pro si zachová rozměry i rozložení prvků předchozí generace • V USA se už objevila pouzdra určená zároveň pro iPhone 17 Pro i iPhone 18 Pro • U většího modelu může zpětnou kompatibilitu zkomplikovat nasazení variabilní clony
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
-|T|Gramofon Ruka postavený na výšku může viset na stěně. Vznikl v hlavách bývalých inženýrů Applu|D|22.8. 08:45|P||X|
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
-|T|Sto tisíc měsíčně. Platy v IT dál rostou, ale rozevírají se nůžky mezi soukromým a státním sektorem|D|22.8. 07:45|P|Průměrná měsíční mzda českých ICT specialistů se loni dotkla magické hranice 100 000 Kč. Nová data Českého statistického úřadu ale ukazují i druhou st...|X|Průměrná měsíční mzda českých ICT specialistů se loni dotkla magické hranice 100 000 Kč. Nová data Českého statistického úřadu ale ukazují i druhou stránku českého IT – výrazné rozdíly mezi soukromým a veřejným sektorem nebo přetrvávající nízký podíl žen, který patří k nejnižším v EU.
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
-|T|Chris Pratt dostal milost a nový cíl. Seriál Na seznamu smrti se vrátí po čtyřech letech, tady je trailer|D|22.8. 06:45|P||X|
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+Více o Nova Lake na Cnews.

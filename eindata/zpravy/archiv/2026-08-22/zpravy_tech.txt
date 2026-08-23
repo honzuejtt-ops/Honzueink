@@ -1,4 +1,3 @@
-|T|Chyba|D||P|Něco se pokazilo.|X|HTTPSConnectionPool(host='www.zive.cz', port=443): Read timed out. (read timeout=10)|E|
 |T|Lepší podpora 3dfx či Atari Falcon, Wine řešící PMD 85|D|22.8. 22:00|P|KDE zefektivňuje budoucí Plasmu 6.8 a přidává podporu pro Btrfs snapshoty, vylepšení pro 3dfx Voodoo 3+4+5, podpora pro blížící se Intel Nova Lake již...|X|KDE zefektivňuje budoucí Plasmu 6.8
 Lze vůbec očekávat něco jiného než pokračující ladění budoucí Plasmy 6.8, dalo by se řečnicky tázat. Není tomu ani tento týden jinak, kromě oprav chyb mířících do verzí 6.6.x a 6.7.x se vývojáři přednostně věnovali příštímu vydání, tedy Plasmě 6.8.
 Nově bude v šest-osmičce podporováno vyhledávání stránek v Nastavení systému jak anglicky, tak v jazyce systému. Uživatel také může nově vypnout záznamy v automaticky spouštěných položkách v Nastavení systému, přičemž je již nemusí mazat.
@@ -29,6 +28,7 @@ Více o Nova Lake na Cnews.|E|
 S nástupem skladného 3D tisku v posledních dekádách se teď ale nejspíše blýská na lepší časy. Pracuje na tom i americká společnost ...
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Chyba|D|22.8. 12:00|P|Něco se pokazilo.|X|HTTPSConnectionPool(host='www.zive.cz', port=443): Read timed out. (read timeout=10)|E|
 |T|Lidl zavede Cvak – platební metodu, kterou chtějí Češi obejít platební karty|D|22.8. 11:45|P|Poprvé jsme o službě Cvak slyšeli v prosinci 2023 a znělo to skvěle – platba mobilem, která funguje na bázi přenosu z účtu na účet (Account-to-Account...|X|Poprvé jsme o službě Cvak slyšeli v prosinci 2023 a znělo to skvěle – platba mobilem, která funguje na bázi přenosu z účtu na účet (Account-to-Account) bez nutnosti použít platební kartu. Výhodou je nižší provize, než požadují velké karetní společnosti. Na straně obchodníka není terminál, ale karta ...
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|

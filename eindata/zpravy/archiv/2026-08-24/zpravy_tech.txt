@@ -1,3 +1,13 @@
+|T|YouTube mění výpočet zhlédnutí, čísla porostou rychleji|D|24.8. 18:36|P|YouTube od 24. srpna změnil způsob výpočtu veřejně zobrazovaného počtu zhlédnutí. Nově stačí, aby se video začalo přehrávat. Divák u něj nemusí strávi...|X|YouTube od 24. srpna změnil způsob výpočtu veřejně zobrazovaného počtu zhlédnutí. Nově stačí, aby se video začalo přehrávat. Divák u něj nemusí strávit žádnou minimální dobu.
+Nové pravidlo platí celosvětově pro běžná videa, krátká videa Shorts i živé přenosy. Zhlédnutí se započítá od prvního snímku. YouTube tím sjednotil metodiku, která se dosud mezi jednotlivými formáty lišila.
+U videí Shorts funguje tento způsob měření od 31. března 2025. Zhlédnutí se u nich počítá při každém zahájení nebo opakování přehrávání. Nyní YouTube stejný základní princip rozšířil také na delší videa a živé vysílání.
+Veřejně zobrazené číslo tak bude vypovídat především o počtu zahájených přehrání. Nebude samo o sobě ukazovat, kolik diváků u videa skutečně zůstalo. YouTube upozornil, že autorům kvůli změně pravděpodobně začnou rychleji růst veřejně viditelné počty zhlédnutí.
+Platforma bude nadále kontrolovat, zda zhlédnutí pocházejí od skutečných uživatelů. Její systémy mohou zobrazený údaj dočasně zpomalit, zmrazit nebo opravit. Počet zhlédnutí se může zpětně snížit, pokud systém zaznamená například současné přehrávání stejného videa v několika oknech či na více zařízeních. Podrobnosti jsou v nápovědě YouTube.
+Původní metrika zůstane autorům dostupná v nástroji YouTube Analytics, takže budou mít přehled, kolik uživatelů vydrželo u videa déle než jen několik sekund. Opakovaná spuštění se nezapočítávají.
+Změna veřejného počítadla nemá zvýšit příjmy autorů. Příjmy z partnerského programu YouTube budou nadále založené na aktivních zhlédnutích videí Shorts a hodinách aktivního sledování. Stejně tak se nový veřejný údaj nebude automaticky započítávat do podmínek pro vstup do programu.|E|
+|T|Proč nekupovat nejlevnější mobily. Nízký výkon a bezpečnostní díry za úsporu pár stovek nestojí|D|24.8. 17:45|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Zakázané názvy. Tyhle složky ve Windows nevytvoříte a mohou za to 70. léta|D|24.8. 16:45|P|Složky ve Windows si nepojmenujete libovolně • . • Seznam rezervovaných názvů existuje kvůli kompatibilitě. • Kořeny této záležitosti sahají až do 70....|X|Složky ve Windows si nepojmenujete libovolně • . • Seznam rezervovaných názvů existuje kvůli kompatibilitě. • Kořeny této záležitosti sahají až do 70. let.
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|

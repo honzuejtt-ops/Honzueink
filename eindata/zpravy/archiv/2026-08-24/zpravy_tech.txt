@@ -5,6 +5,9 @@ Veřejně zobrazené číslo tak bude vypovídat především o počtu zahájen�
 Platforma bude nadále kontrolovat, zda zhlédnutí pocházejí od skutečných uživatelů. Její systémy mohou zobrazený údaj dočasně zpomalit, zmrazit nebo opravit. Počet zhlédnutí se může zpětně snížit, pokud systém zaznamená například současné přehrávání stejného videa v několika oknech či na více zařízeních. Podrobnosti jsou v nápovědě YouTube.
 Původní metrika zůstane autorům dostupná v nástroji YouTube Analytics, takže budou mít přehled, kolik uživatelů vydrželo u videa déle než jen několik sekund. Opakovaná spuštění se nezapočítávají.
 Změna veřejného počítadla nemá zvýšit příjmy autorů. Příjmy z partnerského programu YouTube budou nadále založené na aktivních zhlédnutích videí Shorts a hodinách aktivního sledování. Stejně tak se nový veřejný údaj nebude automaticky započítávat do podmínek pro vstup do programu.|E|
+|T|Pro koho a kdy je papírový notes na hesla stejně bezpečný jako password manager|D|24.8. 18:15|P|Notes s předtištěnými kolonkami na hesla vypadá jako vtip z doby modemů. Než ho ale úplně odsoudíte, zkuste si odpovědět: kdo se k heslům reálně může ...|X|Notes s předtištěnými kolonkami na hesla vypadá jako vtip z doby modemů. Než ho ale úplně odsoudíte, zkuste si odpovědět: kdo se k heslům reálně může dostat a před kým je uživatel chrání.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Proč nekupovat nejlevnější mobily. Nízký výkon a bezpečnostní díry za úsporu pár stovek nestojí|D|24.8. 17:45|P||X|
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|

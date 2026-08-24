@@ -1,0 +1,6 @@
+Článek
+Zakázka vyjde na téměř 48 milionů korun a její financování je naplánováno na roky 2027-2029.
+Digitální síť metropole dnes zahrnuje desítky tisíc zařízení. Zajišťuje chod klíčových systémů magistrátu, jednotlivých městských částí, strážníků i rozsáhlého městského kamerového systému. Pro spolehlivý chod města je proto zásadní dokázat případné kybernetické útoky odhalit včas a okamžitě na ně reagovat.
+„Bezpečnost města dnes nezajišťují jen hasiči, policisté nebo protipovodňové hráze. Stejně důležitá je i ochrana digitální infrastruktury, na které každý den stojí fungování města a jeho služeb. Kybernetické hrozby jsou stále sofistikovanější a Praha na ně musí být připravena. Proto investujeme do moderních technologií, které nám pomohou chránit data, důležité systémy i služby, na které se Pražané spoléhají,“ říká primátor Prahy Bohuslav Svoboda (ODS).
+Klíčovým prvkem bezpečnostního štítu bude platforma Fidelis Elevate. Systém zvládá také zpětnou analýzu nebo odhalování pohybu útočníků v síti pomocí technologie Deception, která pro hackery vytváří klamné cíle a pasti.
+Při zjištění incidentu dokáže platforma napadená zařízení rychle izolovat od zbytku sítě, zmírnit škody a pomoci s nápravou. Uložená data navíc slouží jako důkazní materiál pro následnou analýzu, audity nebo pro vykazování úřadům a kontrolním orgánům.

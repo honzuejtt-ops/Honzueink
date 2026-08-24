@@ -1,3 +1,8 @@
+|T|Blíží se další let Starshipu. A nejspíše bude do základů odlišný než všech třináct předchozích misí|D|24.8. 13:46|P|Pokud půjde vše podle plánu, někdy zkraje nového školního roku bychom se měli dočkat dalšího startu Starshipu. A ani v pořadí už čtrnáctý letový test ...|X|Pokud půjde vše podle plánu, někdy zkraje nového školního roku bychom se měli dočkat dalšího startu Starshipu. A ani v pořadí už čtrnáctý letový test nebude žádnou rutinou.
+
+Sice se nakonec nesplní naděje mnoha fanoušků, že by loď už konečně mohla přistát na rampě, SpaceX nám to ale vynahradí ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Vytvořil písmo, které oklame umělou inteligenci. Člověk přečte správnou zprávu, AI se chytne do důmyslné pasti|D|24.8. 13:03|P|Nové písmo dokáže člověku zobrazit jednu zprávu a umělou inteligenci přimět přečíst úplně jinou. Jeho autor tak našel překvapivý způsob, jak AI pořádn...|X|Umělá inteligence dnes běžně pročítá obrovské množství obsahu na internetu a nestydí se vstupovat bez pozvání i do soukromých diskusí a zpráv. S jejím rozmachem tak přichází otázka soukromí a potřeba chránit obsah, který lidé zkrátka nechtějí umělé inteligenci předat.
 Právě tento problém se pokusil vyřešit výzkumník Eric Lu, který vytvořil nové speciální písmo. Zatímco člověk jej bez problému přečte, umělou inteligenci dokáže pořádně zmást.
 Decoy Font ukáže člověku jiný text než AI

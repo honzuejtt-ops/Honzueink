@@ -53,6 +53,20 @@ Radiokomunikace s výstavbou Gatewaye začaly na podzim loňského roku. Nejdř�
 “Podpis smlouvy se Skanskou navazuje na dosavadní kroky přípravy Prague Gateway DC včetně nedávno dokončeného smluvního zajištění kompletního optického připojení a rezervací kapacity s prvními zájemci, mezi něž patří například španělská společnost Multiverse Computing,” shrnuly ČRA.
 Z Gatewaye by se v budoucnu mohla stát jedna z takzvaných evropských AI gigatováren. ČRA podají nabídku Evropské komisi. Pokud uspějí, datacentrum by se mohlo rozšířit na 77, možná více megawattů. Pokud projekt gigafactory nevyjde, ČRA počítají s 26 megawatty. Zmíněný Multiverse Computing je španělská firma, která přispěje až 1,5 miliardy korun s příslibem odběru výpočetních kapacit pro AI.
 Podmínky pro AI gigafactory byly vypsány nedávno. Česká vláda potvrdila, že se bude podílet na spolufinancování. Většinu peněz má nicméně poskytnout soukromý investor, hlavně Cordiant Digital Infrastructure, majitel ČRA.|E|
+|T|Advancing price-performance for developers with GPT‑5.6 in Kiro|D|24.8. 12:00|P|GPT‑5.6 is now available in Kiro, helping developers plan, build, review, and test software with better price-performance.|X|Advancing price-performance for developers with GPT‑5.6 in Kiro
+The GPT‑5.6 model family is now available in Kiro, a software development agent that brings engineering rigor and quality to AI-native coding at scale. For Kiro users, the update brings OpenAI’s latest flagship model series, including Sol, Terra, and Luna, into the development workflows where teams plan, build, review, and test software. Together, these models can help developers produce higher-quality code with fewer iterations and better value per token.
+GPT‑5.6 delivers more useful work from every token, with stronger performance per dollar and on-demand capability for complex tasks. In Kiro, developers can apply these capabilities to long-running development work grounded in their requirements, codebase, and team standards.
+Kiro turns high-level intent into clear requirements, technical designs, and executable tasks. This structured context helps GPT‑5.6 understand what a team is building, how the system should work, and what the final implementation needs to accomplish.
+With GPT‑5.6 in Kiro, developers can:
+- Turn product ideas and requirements into structured implementation plans.
+- Complete complex, multi-step coding tasks with greater consistency.
+- Bring structure to AI coding with spec-driven development.
+- Work with context from across their codebase and established team standards.
+- Review and refine the model’s work at key checkpoints before changes are implemented.
+- Check correctness of implementation using property-based testing.
+OpenAI and AWS have also worked together to optimize the Kiro environment and OpenAI models. Testing found that on Terminal-Bench 2.1, GPT‑5.6 Terra completed successful tasks in Kiro at roughly 82% cost reduction. Kiro’s spec-driven approach grounds the model in clear requirements, technical designs, and task context from the start, so it arrives at working solutions faster, with fewer missteps along the way. For developers, that means more finished work, less wasted effort, and better value from every coding session.
+OpenAI and AWS will continue working together to improve the performance of OpenAI models in Kiro and help developers get more value from AI across the software development lifecycle.
+The GPT‑5.6 family is available in Kiro. Get started at https://kiro.dev/(opens in a new window)|E|
 |T|Operátory čeká obchod dvacetiletí. Na mobilní frekvence dostanou 75% slevu od státu, ale musí lépe pokrýt republiku|D|24.8. 11:45|P||X|
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|

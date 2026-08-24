@@ -1,0 +1,15 @@
+Článek
+Baterie může podle provozovatele reagovat na vývoj v elektrizační soustavě v řádu sekund. Elektřinu dokáže ukládat v době, kdy je jí na trhu přebytek, a následně ji dodávat zpět do sítě. Využívat ji lze také ke stabilizaci soustavy a poskytování podpůrných služeb společnosti ČEPS (Česká elektroenergetická přenosová soustava).
+„Stavět ekonomiku baterie pouze na poskytování technické flexibility nedává smysl. BESS Lipnice proto budeme využívat především na denním a vnitrodenním trhu,“ vysvětluje Jiří Strnad, člen představenstva BESS Lipnice a ředitel slovenské energetické investiční skupiny Energy Investment Fund pro Česko.
+Provoz baterie tak bude záviset také na aktuálních cenách elektřiny. Řídicí systém průběžně vyhodnocuje situaci na jednotlivých trzích a podle nastavené strategie rozhoduje, kdy elektřinu nakupovat, ukládat nebo prodávat.
+„Pro úložiště máme vyvinuté vlastní algoritmické řízení, které průběžně vyhodnocuje situaci na jednotlivých trzích a dokáže jeho ekonomiku výrazně vylepšit. Pokud se na trhu se službami výkonové rovnováhy (SVR) objeví zajímavé ceny a bude to odpovídat zvolené strategii, zapojíme baterii samozřejmě i tam,“ říká Jiří Strnad.
+Investice by se podle něj měla při současném způsobu využití vrátit za pět až osm let.
+1500 tun technologií
+Úložiště tvoří 144 bateriových kabinetů, 18 sestav výkonových měničů a devět trafoskidů. Celé zařízení váží více než 1500 tun.
+Bateriové kabinety jsou připojeny k výkonovým měničům, které zajišťují převod mezi stejnosměrným proudem z baterií a střídavým proudem v elektrické síti. Transformátory následně upravují napěťovou úroveň pro připojení zařízení k distribuční nebo přenosové soustavě.
+Zařízení má několik úrovní ochrany. Provozní parametry jsou nepřetržitě monitorovány a při nestandardním stavu může systém baterii automaticky odstavit. Součástí technologie je také požární ochrana.
+Baterie pomůže vyrovnávat výrobu
+Význam bateriových úložišť roste s podílem zdrojů, jejichž výroba se mění podle počasí. Především u fotovoltaických elektráren může během slunečných hodin vznikat přebytek elektřiny, zatímco večer výroba rychle klesá.
+Baterie může část tohoto rozdílu vykrýt. Při přebytku elektřinu odebere a později ji vrátí do sítě. Vedle obchodování s elektřinou může zařízení reagovat také na potřeby elektrizační soustavy a pomáhat udržovat rovnováhu mezi výrobou a spotřebou.
+BESS Lipnice je součástí systému energetických zdrojů skupiny Sokolovská uhelná a SUAS Group. Skupina zároveň připravuje další bateriové úložiště v areálu Elektrárny Tisová, které má mít obdobný výkon.
+Nové zařízení v Lipnici má výkon 57 MW. Při plném výkonu by tedy mohlo do sítě dodávat 57 megawattů po dobu přibližně dvou hodin, než by vyčerpalo kapacitu 120 MWh. Stejně tak může při nabíjení z elektrické sítě po určitou dobu odebírat výkon až 57 MW.

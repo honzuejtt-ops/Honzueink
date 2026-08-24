@@ -1,0 +1,9 @@
+Umělá inteligence dnes běžně pročítá obrovské množství obsahu na internetu a nestydí se vstupovat bez pozvání i do soukromých diskusí a zpráv. S jejím rozmachem tak přichází otázka soukromí a potřeba chránit obsah, který lidé zkrátka nechtějí umělé inteligenci předat.
+Právě tento problém se pokusil vyřešit výzkumník Eric Lu, který vytvořil nové speciální písmo. Zatímco člověk jej bez problému přečte, umělou inteligenci dokáže pořádně zmást.
+Decoy Font ukáže člověku jiný text než AI
+Písmo nazvané Decoy Font využívá princip známý z takzvaných hybridních obrazů. Ty kombinují dva motivy, které se podle způsobu pozorování mohou jevit jako úplně odlišné obrázky. V případě tohoto fontu jsou podobně ukryty dvě textové vrstvy – jedna je tvořena výraznými obrysy, zatímco druhá využívá rozmazané tmavé tvary v pozadí.
+Lidé dokáží přečíst oba dva texty (jeden normálně a druhý s přimhouřenýma očima), současné modely velkých jazykových modelů (LLM), jako je například ChatGPT, však fungují na principu čtení pixelů zblízka. Automaticky tak začnou číst více viditelné, ostře ohraničené tvary v popředí.
+Oklamal ChatGPT i Gemini
+Eric Lu svůj font otestoval na modelech GPT-5.6 Sol a Gemini 3.5. Oba dokázal pomocí falešné vrstvy zmást a přimět je k přečtení nesprávné zprávy. Samotný autor ale upozorňuje, že nejde o neprůstřelnou ochranu. Jakmile AI pochopí, že je v pozadí ukrytá další zpráva, může začít jednotlivé znaky postupně rozpoznávat.
+Autor proto plánuje upravit font tak, aby se podoba znaků nahodile měnila a umělá inteligence tak nemohla vycházet ze stejného vzoru. V budoucnu by tento font mohl sloužit například u CAPTCHA testů pro rychlé ověření, zda na web přistupuje člověk nebo prachsprostý bot.
+zdroj: dezeen.com, Mixfont.com

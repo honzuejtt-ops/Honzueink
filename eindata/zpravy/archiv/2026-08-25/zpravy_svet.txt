@@ -1,3 +1,19 @@
+|T|Apple v tichosti ukázal nová srdce pro své počítače. Výkon bude extrémní|D|25.8. 21:21|P|Bez velké show, slavnostní prezentace a potlesku publika. I když se v uplynulých letech společnost Apple svými výkonnými čipy vždy velmi chlubila, nej...|X|Článek
+Oba čipy míří do zcela odlišných světů. Zatímco M6 má být univerzálním motorem pro každodenní práci, kreativní tvorbu, programování i stále důležitější úlohy spojené s umělou inteligencí, M5 Ultra je určen pro ty nejnáročnější. Tedy například pro práci s videem, vizuálními efekty, složitými 3D scénami, vědeckými analýzami nebo rozsáhlými AI modely.
+„Čipy Apple představují další ohromný skok ve výkonu a výpočetní kapacitě pro AI. Dnes představujeme neuvěřitelně vyspělý M6 a vůbec nejvýkonnější čip z řady M, a sice M5 Ultra,“ řekl Sri Santhanam, viceprezident Applu pro vývoj čipů.
+První 2nm čip s logem nakousnutého jablka
+M6 je pro Apple důležitý především tím, jakou technologií vzniká. Jde o první 2nanometrový čip společnosti, který má podle Applu přinést zároveň vyšší výkon i lepší energetickou úspornost.
+Novinka dostala 12jádrový procesor, 12jádrové grafické jádro a dvojitý 16jádrový Neural Engine pro úlohy spojené s umělou inteligencí. Apple uvádí, že M6 má oproti předchozím generacím nabídnout až dvojnásobný špičkový výpočetní výkon Neural Enginu.
+Samotný procesor má dvě takzvaná superjádra, čtyři výkonnostní a šest úsporných jader. Ve srovnání s čipem M5 má M6 nabídnout až 1,2krát vyšší vícevláknový výkon, proti původnímu M1 pak až 2,4krát vyšší.
+Nejde ale jen o čísla pro náročné uživatele. Apple nový čip představuje jako základ pro počítač, který má rychleji reagovat při úpravě fotografií, kompilování kódu, práci s větším množstvím souborů nebo při spouštění AI úloh přímo na zařízení.
+Právě lokální umělá inteligence je jedním z hlavních motivů celé novinky. M6 má podporovat až 32 GB jednotné paměti a díky vyšší propustnosti má zvládat práci s velkými jazykovými modely přímo v počítači.
+Více výkonu také pro hry
+Apple posílil také grafickou část čipu. M6 má 12jádrové GPU, tedy o dvě jádra více než M5, přičemž každé z nich obsahuje Neural Accelerator.
+Podle Applu má novinka nabídnout téměř o 30 procent vyšší špičkový výpočetní výkon pro AI než M5. Ve srovnání s M1 má být v této oblasti až osmkrát výkonnější.
+Grafické jádro navíc využívá pokročilé technologie, jako je hardwarově akcelerované sledování paprsků nebo dynamická mezipaměť. To má pomoci nejen profesionální práci s grafikou, ale také hraní náročnějších her.
+M6 se mimochodem objeví v novém Macu mini.
+Když ani to nestačí
+Vedle M6 však Apple představil ještě výrazně větší technologické dělo. M5 Ultra je podle společnosti vůbec nejvýkonnějším čipem z řady Apple Silicon.|E|
 |T|Z Hormuzu už jsme odstranili všechny miny, hlásá Trump|D|25.8. 20:45|P|Americké námořnictvo už z Hormuzského průlivu odstranilo všechny miny, oznámil v úterý na vlastní sociální síti Truth Social americký prezident Donald...|X|Článek
 „Právě jsem byl americkým námořnictvem informován, že všechny miny v Mezinárodních Vodách Hormuzského průlivu byly odstraněny a/nebo detonovány. Írán byl upozorněn, že jakákoliv loď nebo člun, které budou pokládat nové miny, budou okamžitě a systematicky zničeny,“ napsal v příspěvku svým osobitým stylem Trump.
 Uzavření průlivu, kterým před začátkem americko-íránské války proudilo přibližně 20 procent světových přepravních kapacit ropy a zemního plynu, divoce rozhýbalo ceny ropy na světových trzích. Trump již několikrát prohlásil, že americké síly už mají průliv pod kontrolou, ale Íránci dál útočí na lodě, které se jím pokouší proplout bez povolení, připomíná BBC.

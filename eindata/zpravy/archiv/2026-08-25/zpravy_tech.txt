@@ -1,3 +1,21 @@
+|T|Softwarová sklizeň (26. 8. 2026): udělejte si pořadek v poště|D|25.8. 22:00|P|Sonda do světa otevřeného softwaru. Dnes vyzkoušíme e-mailového klienta pro GNOME, podíváme se na další hudební přehrávač, řekneme si o nativním linux...|X|Postcard
+E-mailový klient navržený pro desktopové prostředí GNOME. Je postaven na GTK 4 a libadwaita a nabízí přehledné rozhraní se složkami, seznamem konverzací a náhledem zpráv. Podporuje libovolné účty využívající IMAP a SMTP, včetně Gmailu, Fastmailu, Proton Mail Bridge nebo vlastních serverů, přičemž umožňuje pracovat s více účty v jednom rozhraní.
+Nechybí vyhledávání ve všech schránkách, práce offline díky lokální mezipaměti, řazení zpráv do konverzací, bohaté formátování, přílohy, podpisy ani automatické odhlašování z mailing listů. Postcard navíc blokuje vzdálené obrázky v HTML e-mailech, čímž pomáhá omezovat sledovací prvky, a neobsahuje telemetrii ani nevyžaduje uživatelský účet.
+postcard.gxanshu.in, 1.10.1
+Meloville
+Hudební přehrávač vytvořený pro uživatele Linuxu, kteří chtějí jednoduše poslouchat vlastní hudební sbírku bez zbytečně složitého rozhraní. Podporuje formáty MP3, FLAC, M4A a OGG, přehrávání přes Bluetooth sluchátka, správu metadat skladeb, playlisty a alba nebo zobrazení obalů na celou obrazovku.
+Zajímavostí je funkce Listen Along, která umožňuje prostřednictvím malého vestavěného serveru streamovat právě přehrávanou skladbu přátelům přímo do webového prohlížeče. Meloville pracuje s názvy skladeb a interprety namísto názvů souborů, takže přejmenování nebo přesunutí hudby nerozbije playlisty ani alba, a podporuje také synchronizované texty ve formátu LRC.
+github.com/NevPeth/meloville, 1.0.8
+Nextcloud Native
+Klient pro Nextcloud, který se snaží nabídnout jednotné nativní rozhraní pro služby jako Files, Photos, Talk, Calendar, Mail, Notes, Deck a další. Namísto zobrazování webových stránek komunikuje přímo s Nextcloud serverem prostřednictvím jeho API a jednotlivé služby prezentuje v podobě rozhraní přizpůsobeného jejich účelu.
+Aplikace je zatím ve fázi alpha, přesto už nabízí například procházení a synchronizaci souborů, práci s fotografiemi, historii komunikace v Talku, poznámky v Markdownu, vyhledávání nebo podporu kalendáře, kontaktů a úkolů. Dostupné jsou verze pro Linux, Android a Windows. Vzhledem k rané fázi vývoje autoři upozorňují, že by zatím neměl být používán jako jediné úložiště důležitých dat.
+github.com/Obiente/nc-native, 20260823
+Tuba
+Lehký a moderně navržený klient pro sociální síť Mastodon a další služby Fediverse, vytvořený přímo pro prostředí GNOME. Využívá GTK 4 a libadwaita, takže dobře zapadá do vzhledu linuxového desktopu a díky adaptivnímu rozhraní se hodí také pro mobilní zařízení.
+Umožňuje procházet časové osy, sledovat účty, číst a publikovat příspěvky, pracovat s médii, oznámeními, hashtagy a dalšími funkcemi Mastodonu. Podporuje také další platformy Fediverse, například GoToSocial nebo Akkoma. Tuba je open-source projekt dostupný pod licencí GPL-3.0 a je možné jej instalovat například prostřednictvím Flatpaku.
+tuba.geopjr.dev, 0.11.0
+Blbinka
+Ti kdo preferují terminál před grafickým uživatelským rozhraním jistě ví, že se v něm dá zvládnout naprosto cokoliv.|E|
 |T|Hráli jsme Call of Duty: Modern Warfare 4. Přes změnu prostředí pořád působí jako další díl v řadě|D|25.8. 18:15|P|Call of Duty dávno překročilo hranice běžné herní série. Každý nový díl je událostí, ať už jej hráči milují, nebo nenávidí. Modern Warfare 4 je navíc ...|X|Call of Duty dávno překročilo hranice běžné herní série. Každý nový díl je událostí, ať už jej hráči milují, nebo nenávidí. Modern Warfare 4 je navíc pokračováním jedné z nejúspěšnějších podznaček, takže očekávání jsou obrovská.
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|

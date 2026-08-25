@@ -1,4 +1,13 @@
 |T|Žádné zprávy|D|25.8. 12:00|P|Nebyly nalezeny.|X|Zkuste to později.|E|
+|T|Internetem koluje 113GB soubor s neoficiální verzí GTA VI. Po stažení čeká hráče překvapení|D|25.8. 11:50|P|Fanoušci GTA VI netrpělivě čekají na každý nový únik, podvodníci toho ale využívají po svém. Internetem koluje 113GB soubor, který místo hry ukrývá ne...|X|Kolem očekávaného GTA VI se v posledních dnech objevila další nebezpečná past. Internetem začal kolovat 113GB ISO soubor údajně obsahující neoficiální verzi hry, který má nedočkavce nalákat na možnost zahrát si ještě před samotným vydáním. Jak už ale nejspíš tušíte, skutečnost je úplně jiná.
+99,99 % prázdná data, zbytek tvoří malware
+Analýza údajného instalačního souboru odhalila, že jeho obrovská velikost je prachsprostá zástěrka. Téměř celý 113GB soubor totiž tvoří prázdná data vyplněná nulami, zatímco jediný soubor o velikosti asi 50 kB obsahuje škodlivý kód. Gigantická velikost má jednoduše vytvořit dojem, že si uživatel stahuje skutečně rozsáhlou herní verzi.
+Na síti X na něj upozornil uživatel GTA Golden, kterému v odpovědi další uživatel potvrdil, že reverzním inženýrstvím zjistil přítomnost mnoha virů a malwarů: „Dekompilovaný bajtkód doslova obsahuje příkazy k zařazení celého disku C:\ na seznam povolených položek ve Windows Defenderu (PowerShell Add-MpPreference -ExclusionPath %SystemDrive%\) a k ukončení bezpečnostního softwaru (taskkill -f),“
+Falešný soubor se objevil příhodně v době, kdy okolo GTA VI panuje mimořádný rozruch. Jeden z leakerů nedávno zveřejnil údajně kompletní mapu hry, zatímco hackerská skupina Cyberleek podniká útoky proti Rockstaru s tvrzením, že jí vadí nenasytnost společnosti. Pokud tak nemáte zájem si během chvíle zavirovat celý počítač, podezřelým „uniklým verzím“ se raději obloukem vyhněte.
+zdroj: Tom's Hardware, síť X|E|
+|T|Chcete důkaz, že telefon výkonnostně stíhá i herní počítač? Tady je. Stačí přidat pořádné chlazení|D|25.8. 11:45|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Hodinky Garmin Fénix 9: žádné zásadní novinky, jen 13 velmi podobných modelů|D|25.8. 11:00|P||X|
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|

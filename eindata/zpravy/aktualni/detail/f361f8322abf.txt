@@ -1,0 +1,11 @@
+Článek
+Když dnes člověk používá populárního AI chatbota, jeho dotaz většinou putuje přes internet na servery provozovatele služby. Tam jej zpracuje výkonný model a odpověď se vrátí zpět do počítače nebo telefonu. Nvidia ale ukazuje budoucnost, ve které bude alespoň část podobné umělé inteligence fungovat přímo na vlastním zařízení.
+To může mít několik výhod. Vedle rychlejší odezvy jde především o soukromí. Dokumenty, soubory nebo další citlivá data totiž nemusí opouštět počítač. Lokálně běžící AI by tak například mohla pomáhat s tříděním dokumentů, prací s e-maily nebo programováním, aniž by bylo nutné vše odesílat do cloudu.
+Nvidia přitom nemluví jen o jednoduchém chatbotu nainstalovaném v počítači. Nové modely mají zvládat stále složitější úkoly a fungovat jako takzvaní AI agenti. Ti dokážou pracovat v několika krocích, používat různé nástroje a u delších úloh si udržet přehled o tom, co už udělali.
+Umí pracovat i s videem
+Jedním z příkladů je Muse Glimmer, model od společnosti Meta, který má být určený právě pro takto fungující lokální AI. Je dostatečně výkonný pro náročnější práci, zároveň je ale navržen tak, aby mohl běžet na počítači s jedinou výkonnou grafickou kartou. Na nejvýkonnějších herních grafikách Nvidie pak dokáže pracovat velmi rychle.
+Podobný směr představuje také Nemotron 3.5 Lightning od Nvidie. Model lze přizpůsobit konkrétním úkolům — například stylu psaní, určité profesi nebo způsobu programování. Firma si tak představuje budoucnost, ve které nebude mít každý jen obecného AI asistenta, ale spíše specializovaný nástroj upravený podle vlastních potřeb.
+Lokální AI přitom nemá sloužit jen k psaní textů nebo programování. Nvidia mezi novinkami zmiňuje také model LTX-2.5, určený pro generování a úpravu videa.
+Pro běžného uživatele je podstatné hlavně to, že podobné nástroje mají postupně umožnit vytvářet a upravovat kvalitní video přímo na vlastním hardwaru. Model například zvládá pracovat s více záběry a pomáhá udržovat návaznost jednotlivých scén. Tvůrci navíc mohou upravovat již existující záznamy pomocí generativních funkcí, takže kvůli opravě detailu nemusí vždy začínat úplně od začátku.
+Když jeden počítač nestačí
+Pro nejnáročnější AI modely však stále nemusí stačit jediný počítač. Nvidia proto pracuje i na jednodušším propojování několika systémů, které pak mohou fungovat jako jeden celek.

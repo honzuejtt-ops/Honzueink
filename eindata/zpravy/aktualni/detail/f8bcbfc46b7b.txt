@@ -1,0 +1,23 @@
+Článek
+Na první pohled by přitom leckdo mohl nabýt dojmu, že se vlastně nic zásadního nestalo. Apple nezměnil podobu svých stolních počítačů ani nepřišel s novým designovým směrem. Mac mini i Mac Studio si zachovaly známý vzhled a kompaktní rozměry.
+To nejdůležitější je tentokrát ukryto uvnitř. Oba stroje totiž dostaly nové čipy, které mají citelně zvýšit jejich výkon. Detailně jsme se na Novinkách věnovali nové generaci procesorů již v samostatném článku.
+Přestože se Mac mini a Mac Studio mohou na první pohled zdát jako podobné stolní počítače, každý z nich míří na úplně jiného uživatele.
+Malý počítač, velké ambice
+Mac mini zůstává nejmenším z dvojice a také výrazně univerzálnějším strojem. Apple jej nabízí s novým čipem M6 nebo výkonnějším M5 Pro.
+Základní varianta s M6 má podle výrobce nabídnout až čtyřnásobný výkon pro úlohy spojené s umělou inteligencí. Oproti předchozí generaci má být grafika i úložiště až dvakrát rychlejší, výkon procesoru pak až o 40 procent vyšší.
+Není to přitom počítač určený jen pro jednu konkrétní skupinu uživatelů. Mac mini má zvládnout běžnou každodenní práci, kreativní činnost, programování i náročnější úlohy s využitím umělé inteligence. Apple jej představuje také jako zařízení vhodné pro spouštění AI modelů přímo na počítači.
+Kdo bude potřebovat ještě více výkonu, může sáhnout po variantě s čipem M5 Pro. Ta má být určena například pro náročnější videoprodukci nebo vývoj her.
+Mac mini tak i v nové generaci zůstává malým univerzálem. Zvenčí prakticky stejný, uvnitř ale výrazně silnější.
+Když ani to nestačí
+Mac Studio hraje úplně jinou ligu. Také jeho design se proti předchozí generaci zásadně nemění, uvnitř ale Apple nasadil čipy M5 Max a především M5 Ultra, který firma označuje za svůj dosud nejvýkonnější čip.
+Právě v tomto případě už nejde o počítač pro každého. Mac Studio míří především na profesionály, kteří potřebují vysoký výkon pro práci s videem, vizuálními efekty, složitými 3D scénami, vědeckými analýzami nebo rozsáhlými modely umělé inteligence.
+V nejvyšší konfiguraci s M5 Ultra může nabídnout až 36jádrový procesor, až 80jádrové grafické jádro a až 512 GB jednotné paměti. Právě taková kapacita má umožnit práci s rozsáhlými AI modely přímo na zařízení.
+Vedle samotného výkonu se Apple zaměřil také na rychlejší úložiště a možnosti připojení. Mac Studio dostal podporu Wi-Fi 7 a Bluetooth 6, nechybějí ani porty Thunderbolt 5 pro připojení rychlých externích úložišť, monitorů a dalšího profesionálního vybavení.
+Dva počítače, dvě rozdílné role
+Novinky tak mají na první pohled společného víc, než by se mohlo zdát. Obě si zachovávají známý design a kompaktní rozměry, obě dostaly výrazně výkonnější hardware a obě mají mnohem více počítat také s úlohami spojenými s umělou inteligencí.
+Jejich zaměření je ale rozdílné. Mac mini má být všestranným počítačem, který se díky malým rozměrům vejde prakticky kamkoli a může sloužit jak pro běžnou práci, tak pro kreativní činnost či náročnější úkoly. Výkonnější konfigurace už se pak posouvají také směrem k profesionálnímu využití.
+Mac Studio je naproti tomu od začátku koncipován jako pracovní nástroj pro ty, kterým výkon běžného počítače jednoduše nestačí. Právě zde má nový M5 Ultra ukázat, co všechno se dnes dá vměstnat do relativně kompaktního stolního počítače.
+Předobjednávky už začaly
+Oba nové počítače si mohou zákazníci v Česku předobjednat od úterý 25. srpna. Do prodeje mají zamířit 22. září.
+Ceny Macu Studio začínají na 69 990 korunách za provedení s čipem M5 Max. Verze s M5 Ultra pak vyjde nejméně na 154 990 korun.
+Podrobnějšímu srovnání jednotlivých konfigurací a tomu, kolik si zájemci za vyšší výkon připlatí, se ale budeme věnovat samostatně.

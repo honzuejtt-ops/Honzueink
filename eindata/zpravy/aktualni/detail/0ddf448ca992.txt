@@ -1,0 +1,21 @@
+Vědci vytvořili robotickou nohu, kterou člověk opravdu cítí. Do mozku posílá informace o každém kroku
+Padesátiletá pacientka byla na nemocničním lůžku s tenkými destičkami elektrod přiloženými na mozek kvůli vyšetření epilepsie. Vědci z Kalifornie jí nabídli něco navíc: myšlenkou řídit kroky robotické nohy — a při každém kroku dostat do mozku signál, jako by ho udělala sama.
+Část mozku, která řídí pohyb nohou, poslala signál. Počítač ho během několika sekund rozpoznal jako záměr udělat krok a povel bezdrátově přenesl do robotické nohy, kterou měl na sobě jeden z výzkumníků. Noha krok skutečně udělala. V tu chvíli, ještě než se vykročená noha stačila dotknout země, přišel signál opačným směrem — do části mozku, která zpracovává dotyk. Pacientka pak v té samé noze pocítila brnění, přesně v rytmu kroku, který svou myšlenkou řídila.
+Podařilo se to týmu kalifornských univerzit UC Irvine, Caltech a USC. Nově zapojili řídicí i citlivé oblasti mozku pro nohy na obou mozkových polokoulích najednou — umělý pocit kroku tak mohl jít současně do levé i pravé nohy.
+Jak to funguje
+Elektrody umístili do štěrbiny mezi oběma mozkovými polokoulemi — jednu destičku vlevo, jednu vpravo. Mozek má nohy „na povel" zkříženě, takže signál z levé destičky patří pravé noze a naopak. Tenhle detail vědcům umožnil poprvé propojit obě nohy zároveň, ne jen jednu jako v dřívějších pokusech.
+Tým mechanismus otestoval ve dvou krocích. Nejdřív ověřili, jak spolehlivě dokážou z mozkových signálů rozeznat, kdy chce pacientka udělat krok — shoda mezi tím, co měla udělat, a tím, co počítač rozpoznal, byla vysoká. Pak otestovali opačný směr: jeden z výzkumníků chodil se senzorem na stehně mimo její dohled a sluch, a pacientka podle vyslaného brnění v noze správně poznala, kolik kroků udělal, v 93 procentech případů.
+„Nové na tom je, že senzory na robotické noze spouštějí stimulaci mozku, takže člověk cítí každý krok," popisuje neurochirurg Charles Liu z USC. Podle něj jsou výsledky slibné obzvlášť proto, že pacientka na úkol neměla vůbec žádný trénink — s praxí by měl systém fungovat ještě lépe.
+💡 Zajímavost: Robotické nohy stejného typu se k nácviku chůze po poranění páteře používají i v Česku, v Rehabilitačním ústavu Kladruby. Zatím ale bez propojení s mozkem — tahle část je zatím jen na kalifornských vědcích.
+Kdo to zatím testoval
+Hlavního pokusu se účastnila jediná osoba — pacientka, které lékaři destičky elektrod umístili na mozek kvůli vyšetření epilepsie, ne kvůli ochrnutí. Nohy jí fungují normálně, robotickou nohu proto vůbec nepotřebovala — celý pokus proběhl vsedě na nemocničním lůžku a robotickou nohu měl na sobě jeden z výzkumníků. Vědci využili toho, že měla destičky na mozku už z jiného zdravotního důvodu, a bez dalšího operačního rizika na ní systém vyzkoušeli. Podobný postup je ve výzkumu rozhraní mozek-počítač běžný. Žádné nežádoucí účinky se přitom neobjevily.
+Co bude dál
+Na základě slibných výsledků teď americký lékový úřad (FDA) povolil vědcům testovat nový typ implantátu přímo na pacientech, ne jen v laboratoři. V plánované klinické studii chce tým systém vyzkoušet na lidech s kompletním ochrnutím dolních končetin — každému implantují elektrody vždy na 30 dní a v tomto okně budou systém testovat a zdokonalovat.
+„Lidé s ochrnutím, kteří dnes exoskeletony používají, se musí spoléhat na to, co vidí očima. Tenhle výzkum nabízí novou cestu," dodává neurovědec Richard Andersen z Caltechu.
+Vědecký článek o výzkumu vyšel v časopise Brain Stimulation v únoru 2026, univerzity o něm veřejnost informovaly o dva měsíce později.
+Ověřeno z:
+- UC Irvine — tisková zpráva o studii, news.uci.edu (16. dubna 2026)
+- Keck School of Medicine of USC — tisková zpráva o studii (16. dubna 2026)
+- Lim et al. — Brain Stimulation, roč. 19, vědecký článek (únor 2026)
+- Medical Xpress — zpravodajství s citacemi vědců (duben 2026)
+- Rehabilitační ústav Kladruby — oficiální web, přehled procedur (2026)

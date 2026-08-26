@@ -1,0 +1,51 @@
+Na předchozí článek o „hardcore“ vývoji aplikací pro osmibitové domácí mikropočítače Atari s využitím Atari Assembler/Editoru dnes navážeme. Ukážeme si totiž, jak se v praxi používal slavný makro assembler pojmenovaný MAC/65, což byl po dlouhou dobu nejlepší assembler dostupný pro mikroprocesory MOS 6502 (MAC/65 totiž nebyl určen jen pro počítače Atari, ale i pro další stroje vybavené tímto mikroprocesorem, například pro Apple ][).
+Od Atari Asssembler/Editoru k assembleru MAC/65
+Pokud se mluví o MAC/65, je dobré mít na paměti, že s se v praxi jedná jak o editor zdrojového kódu, tak i o assembler, ale současně i o debugger. Způsob ovládání MAC/65 je do značné míry odvozen od minule použitého Atari Assembler Editoru, takže mnohé příkazy budou stejné či alespoň velmi podobné.
+Ve skutečnosti je však MAC/65 prakticky po všech stránkách lepší (tedy až na poněkud vyšší cenu, zejména v případě varianty dostupné na cartridge). Za vývojem MAC/65 stála společnost Optimized Systems Software (OSS), se kterou se později setkáme ještě jednou v souvislosti s programovacím jazykem nazvaným Action! (i s oním vykřičníkem na konci).
+Společnost OSS: zaměření na vývoj vývojových nástrojů namísto her
+Na chvíli se zastavme u autorů assembleru MAC/65, kterým byla společnost Optimized Systems Software známá pod zkratkou (OSS). Historie této společnosti se začala psát vlastně již se samotným vznikem osmibitových domácích počítačů Atari a souvisí s vývojem (resp. hledáním dodavatele) Atari BASICu. Původně se uvažovalo, že BASIC pro osmibitové mikropočítače Atari dodá Micro-Soft (ano, to je napsáno správně). Ovšem ukázalo se, že Micro-Soft nedokáže svůj Atari Microsoft BASIC „nacpat“ do požadované kapacity ROM. Firma Atari totiž pro BASIC počítala s ROM modulem o kapacitě osmi kilobajtů (ovšem Atari Microsoft BASIC byl nakonec vydán, a to dokonce ve dvou verzích, jak jsme si již řekli ve článku věnovaném historii tohoto programovacího jazyka). Resp. abych byl přesnější – Micro-Soft byla schopna dodat BASIC, který se vejde do osmi kilobajtů, ovšem ten by neobsahoval příkazy pro ovládání grafiky a zvuků. Ty ovšem společnost Atari vyžadovala, aby uživatelé mohli snadno využívat možností nabízených čipy ANTIC a GTIA, které byly (právem) považovány za největší zbraň osmibitových mikropočítačů Atari.
+Vraťme se však k OSS. Za vznikem této společnosti stáli Bill Wilkinson, Mike Peters, Paul Laughton a Kathleen O'Brien, přičemž třetí jmenovaný vydal Atari BASIC a jeho žena Kathleen pracovala mj. i na FP rutinách operačního systému Atari (k nim se ještě v tomto seriálu vrátíme). Původní Atari BASIC a taktéž první verze DOSu byla odkoupena od společnosti Shepardson Microsystems, která ukončila svoji existenci právě v roce 1981 a kde původně zakladatelé OSS pracovali. V dalších letech se OSS věnovala jak rozšiřování možností původních produktů (řada DOS, řada BASICů), tak i dalším projektům, mj. i jazyku Action! a právě assembleru MAC/65.
+Příkladem produktu vydaného společností OSS je OS/A+, tedy dosový systém založený na systému menu. Později vznikl DOS XL, který podporoval diskety s dvojnásobnou hustotou a kromě menu se ovládal i příkazovou řádkou nazývanou CP neboli command processor. OSS vyvinula i takzvanou supercartridge s kapacitou 16kB (a na této cartridge byla dodávána mj. i druhá verze assembleru MAC/65).
+Jen pro zajímavost si uveďme příklad, jak vypadalo menu z DOSu XL:
+ C - Copy Files            P - Protect Files
+ D - Duplicate Disk        Q - Quit to DOS XL
+ E - Erase Files           R - Rename File
+ F - Files on Disk         S - Save Binary
+ G - Go to Address         T - To Cartridge
+ I - Initialize Disk       U - Unprotect Files
+ L - Load Binary           X - Xtended Command
+Na příkazovém řádku byly v tomto DOSu podporovány interní příkazy, mezi něž patří například D1: (přepnutí disků), DIR (asi není nutné vysvětlovat), END, ERA atd. A většinou byly k dispozici i příkazy externí: COPY, DUPDSK, VERIFY atd.
+Z portfolia dobových produktů nabízených společností OSS stojí za zmínku především:
+- Interpretry BASICu rozšiřující a zrychlující původní Atari BASIC: BASIC A+, BASIC XL a BASIC XE
+- Assemblery a debuggery: EASMD (Edit/ASseMble/Debug) vydaný již v roce 1981, MAC/65, BUG/65
+- Další programovací jazyky či jejich překladače: Action!, C/65, Tiny C interpretr subsetu jazyka C, Personal Pascal pro Atari ST 1987
+MAC/65: jeden z nejúspěšnějších projektů společnosti OSS
+První verze assembleru MAC/65, za jejímž vývojem stojí Stephen D. Lawrow, začala být prodávána již v roce 1982, tedy zhruba o rok později, než Atari Assembler/Editor. Typické je, že tato verze byla dostupná na disketě, protože se předpokládalo, že tento assembler budou používat profesionálové vybavení disketovou jednotkou, tj. (velmi drahým) záznamovým zařízením. V roce 1984 vyšla druhá verze MAC/65, která se stala mnohem známější. Tato verze byla dodávána na specializované cartridgi s kapacitou 16kB, což je dvojnásobná kapacita, než jakou počítače Atari oficiálně podporují (konektor pro zapojení cartridge totiž měl vyvedených pouze třináct adresních pinů).
+Z tohoto důvodu bylo oněch 16kB rozděleno do dvojice paměťových bank, z nichž každá měla kapacitu osmi kilobajtů a mezi kterými se provádělo automatické přepínání. Mimochodem: taková cartridge se někdy nazývala „supercartridge“ a existovalo jich více typů, které se lišily způsobem přepínání paměťových bank – to je však téma na samostatný článek, který se teprve připravuje.
+Interaktivní prostředí assembleru MAC/65
+Assembler MAC/65 se ovládal podobným způsobem, jako minule popsaný Atari Assembler/Editor. To znamená, že se příkazy nevybíraly z menu, ale zapisovaly se na obrazovku. MAC/65 byl vybaven i prakticky stejným editorem zdrojového kódu, což ovšem není příliš překvapivé, protože se využívaly systémové rutiny používané Atari BASICem. A i zde se rozlišovalo mezi režimem Edit a Debug; ve skutečnosti byl režim Debug implementován relativně samostatným nástrojem nazvaným DDT, k jehož popisu se dnes ještě vrátíme.
+Dostupné byly následující příkazy:
+Způsob interní reprezentace zdrojových kódů programů
+Assembler MAC/65 se od ostatních assemblerů odlišuje tím, že nepracuje se zdrojovými kódy reprezentovanými v čistě textové podobě. Namísto toho je zde využita technologie používaná například většinou (?) interpretrů programovacího jazyka BASIC – v operační paměti jsou uloženy tokeny jednotlivých příkazů (zde spíše instrukcí). Čísla řádků jsou uložena jako šestnáctibitové hodnoty, instrukce jsou uloženy v jediném bajtu, návěští a symboly pak jako indexy do (dynamické) tabulky symbolů.
+Uvádí se, že se tímto způsobem může ušetřit 60% až 80% potřebné kapacity paměti (ovšem toto tvrzení, které mimochodem pochází přímo od autorů MAC/65, si ověříme). Ovšem tokenizací se ztrácí informace o přesném naformátování zdrojového kódu, což znamená, že ztratíme například původní odsazení apod. Na druhou stranu je to ovšem poměrně dobrá vlastnost, protože zaručuje, že všechny zdrojové kódy budou mít naprosto stejný formát (to se týká jak odsazení, tak i například mezer v operandech instrukcí atd.).
+Ve druhé polovině dnešního článku pracujeme s programem, který po svém překladu a spuštění zobrazí sprity a umožňuje jejich pohyb po obrazovce. Tento příklad je relativně dlouhý, takže se pokusíme zjistit, jak se skutečně liší velikost souboru s původním zdrojovým textem od tokenizované varianty:
+A jak jsem získal soubor s tokeny? Je to snadné:
+ENTER #H:SPRITES
+SAVE #H:TOKENS
+Překlad programu s uložením výsledků na zvolené zařízení
+Pokusme se nyní přeložit program, jehož zdrojový kód byl ukázán na screenshotu v předchozí kapitole. Kód je napsán tak, jako bych použili Atari Assembler/Editor:
+1000 *=$6000
+1001      LDA #42
+1002      STA 712
+1003      BRK
+Pro překlad se použije příkaz ASM. Průběh překladu je ukázán na dalším screenshotu:
+Z výpisu je zřejmé, že v programu je chyba, protože je překlad proveden od adresy $0000 a nikoli od $0600. Zde máme poněkud štěstí, protože se výsledný strojový kód do paměti nezapsal, protože jinak by výsledkem byl pravděpodobně pád systému (práce s nultou stránkou má svá pravidla).
+Když už se bavíme o obsazení operační paměti, je vhodné použít příkaz SIZE, který zobrazí trojici adres: tzv. LOMEM, dále nejvyšší použitou adresu a nejvyšší volnou adresu. Ideální je tedy programy ukládat do adresního prostoru mezi druhou a třetí adresou:
+Z výpisu příkazu SIZE je zřejmé, že programy můžeme ukládat například od adresy $9000. Ta je dostatečně vysoko, ovšem ještě nezasahuje do display listu, video RAM a ROM. V programu navíc opravíme záludnou chybu – specifikace *= musí být posunuta doprava minimálně o dvě mezery (to v Atari Assembler/Editoru vyžadováno nebylo):
+Nyní překlad proběhne bez chyby a dokonce se použijí korektní adresy, jak je to patrné z výpisu:
+Ve skutečnosti se ovšem (prozatím) neprovede zápis do paměti – o to musíme assembler explicitně požádat. Nicméně se můžeme pokusit o uložení výsledného binárního souboru na disk. Příkazu ASM se předá jen třetí parametr s názvem výsledného spustitelného souboru:
+ASM ,,#H:OUT
+DDT: vestavěný debugger
+Assembler MAC/65 je doplněn nástrojem nazvaným DDT. Jak již název tohoto nástroje naznačuje, slouží k odstraňování chyb (bugů) z vyvíjených programů. DDT kombinuje možnosti monitoru a debuggeru. V DDT je možné prohlížet obsah vybraného bloku operační paměti, modifikovat obsah operační paměti, vyhledat bajt s určitou hodnotou (hledání místa pro nastavení většího množství životů ve hrách apod.), ale zejména spouštět laděný program popř. ho krokovat. Po překladu programu se do nástroje DDT přepneme jednoduše – zadáním příkazu DDT. Prostředí tohoto programu vypadá následovně:
+Obrazovka DDT (mimochodem – se zkráceným display listem) je rozdělena do čtyř oblastí. V horní oblasti se zobrazuje výsek operační paměti a typicky zde můžeme vidět výsledek zpětného překladu (disassembler) dané oblasti. Pod touto oblastí se nachází dva řádky se zobrazením adres breakpointů a taktéž s obsahem příz...
+(Pokracovani na webu)

@@ -1,0 +1,29 @@
+Ještě před pár lety byla cesta zákazníka poměrně předvídatelná. Potřeboval nový telefon, účetní software nebo marketingovou agenturu, otevřel Google, zadal pár klíčových slov, prošel výsledky a postupně si vytvořil užší výběr. Dnes se tenhle proces mění.
+Zákazník čím dál častěji nezačíná klasickým vyhledáváním, ale otázkou položenou ChatGPT, Gemini nebo jinému AI nástroji. Nezadává jen „nejlepší účetní software“, ale třeba: „Doporuč mi účetní systém pro firmu s 20 zaměstnanci, který zvládá i německou legislativu a má dobrou podporu.“
+To je zásadní změna. Uživatel už nehledá deset odkazů. Čeká konkrétní odpověď, srovnání a doporučení. Z vyhledávání se tak stává konverzace. Klasické SEO bylo dlouhá léta postavené na klíčových slovech. Firma se snažila získat dobrou pozici na fráze, které její zákazníci zadávali do Googlu.
+AI funguje jinak
+Uživatel může položit několik navazujících otázek:
+„Jaké jsou nejlepší možnosti při…?“
+„Která z … je vhodná pro malou firmu?“
+„Jaké mají nevýhody …?“
+„Kterou … bys vybral při rozpočtu 12 000 Kč měsíčně?“
+Rozhodování tak může proběhnout téměř celé uvnitř jednoho AI nástroje. Z pohledu marketingu je důležité pochopit, že firmy už nebojují jen o pozici ve výsledcích vyhledávání. Začínají bojovat i o to, jestli je AI vůbec zná, dokáže jejich nabídku správně pochopit a zařadí je mezi relevantní možnosti.
+Google nezmizí, ale jeho role se mění
+Bylo by chyba tvrdit, že klasické vyhledávání končí. Google bude ještě dlouho jedním z nejdůležitějších zdrojů návštěvnosti a zákazníků. Mění se ale způsob, jakým výsledky prezentuje. Vedle klasických organických výsledků a reklamy se čím dál častěji objevují AI odpovědi, které uživateli shrnou informace přímo na stránce vyhledávání. Uživatel tak nemusí otevřít deset webů, aby si udělal základní přehled.
+Pro firmy to znamená jednoduchou věc – nestačí sledovat jen pozice v Googlu. Je potřeba sledovat i to, jak značka vypadá z pohledu AI. Co tedy vidíme v praxi? Při práci s klienty se často setkávám s firmami, které mají technicky dobrý web, investují do Google Ads a mají slušné SEO. Přesto o nich AI u relevantních dotazů skoro nemluví.
+Důvod bývá překvapivě jednoduchý. Na webu je málo informací, podle kterých by šlo firmu správně pochopit. Typický web obsahuje třeba jen „Jsme spolehlivá firma s individuálním přístupem.“ Taková věta ale AI prakticky nic neřekne.
+Mnohem užitečnější je konkrétní informace typu: „Pomáháme německým e-shopům s Google Ads, Meta Ads, SEO a měřením konverzí. Specializujeme se na malé a střední firmy a kampaně řídíme v Německu, Česku a na dalších evropských trzích.“
+Čím přesněji firma popíše, kdo je, komu pomáhá a s čím, tím jednodušší je pro vyhledávače i AI její nabídku správně zařadit. Nestačí mít jen vlastní web. Další důležitá zkušenost z praxe – AI si obraz firmy nevytváří jen z jejího vlastního webu. Důležité jsou i externí zdroje.
+Mohou to být odborná média, rozhovory, katalogy, recenze, případové studie, partnerské weby nebo odborné články. Pokud firma sama o sobě tvrdí, že je odborník, je to jedna věc. Pokud ji ve stejném kontextu zmiňují i nezávislé zdroje, její důvěryhodnost je výrazně vyšší.
+Právě proto podle mě v příštích letech ještě vzroste význam kvalitního PR, odborného obsahu a budování značky. Ne kvůli odkazu samotnému, ale kvůli tomu, aby na internetu vznikal konzistentní obraz firmy.
+Pět praktických doporučení
+Pokud chcete být připraveni na změnu vyhledávání, začal bych několika jednoduchými kroky.
+Zaprvé: zkontrolujte, jestli váš web jasně vysvětluje, co děláte, pro koho a v čem jste jiní.
+Zadruhé: vytvářejte obsah, který odpovídá na skutečné otázky zákazníků. Ne jen články postavené na jednom klíčovém slově.
+Zatřetí: publikujte konkrétní příklady, zkušenosti, srovnání a case studies. Obecného obsahu je na internetu dost. Hodnotu mají vlastní zkušenosti.
+Začtvrté: pracujte na zmínkách mimo vlastní web. Relevantní odborný článek může mít větší význam než desítky nekvalitních katalogových odkazů.
+A zapáté: začněte svou AI Visibility opravdu testovat. Zeptejte se ChatGPT, Gemini nebo dalších nástrojů na témata, ve kterých by měla být vaše firma relevantní. Sledujte, jestli vás znají, jak vás popisují a koho doporučují místo vás.
+SEO nekončí. Rozšiřuje se
+Podle mě není správné stavět SEO a AI proti sobě. Dobře strukturovaný web, kvalitní obsah, autorita domény, relevantní zmínky a technicky správné řešení jsou důležité jak pro klasické vyhledávače, tak pro AI. Rozdíl je v tom, že nově musíme myslet ještě na jednu otázku:
+Nejen „Najde nás zákazník v Googlu?“, ale i „Doporučí nás AI, když se zákazník zeptá na firmu, jako jsme my?“ A právě tahle otázka bude podle mě v online marketingu čím dál důležitější.
+Zdroj a autor textu: Miloš Vargic, zakladatel a jednatel online marketingové agentury ROI index. V online marketingu působí více než 22 let a specializuje se na Google Ads, Meta Ads, SEO, GEO, AI Visibility, analytiku a měření výkonu kampaní.

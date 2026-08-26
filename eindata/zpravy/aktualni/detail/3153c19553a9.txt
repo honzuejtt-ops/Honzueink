@@ -1,0 +1,56 @@
+Článek
+Upozornění: Tento text slouží jako stručné představení dnešního dílu podcastu Hlas na poušti. Poskytuje pouze přehled několika diskutovaných témat. Pro plné pochopení kontextu je žádoucí poslechnout si celou epizodu.
+V čele Řízení letového provozu strávil devatenáct let. Začínal ale přímo jako řídící letového provozu, působil ve vysoké manažerské pozici v evropské organizaci EUROCONTROL a teprve poté se vrátil domů, aby vedl podnik, který řídí provoz na nebi nad naší republikou.
+Rozhovor je proto částečně bilanční. Jan Klas mluví o své cestě od kluka, který chtěl být pilotem, přes práci řídícího až po téměř dvě desetiletí v čele ŘLP. Vysvětluje také, co se ve skutečnosti odehrává mezi oblastním řízením, přibližovací službou a letištní věží a proč je právě fáze vzletu a přistání jednou z nejcitlivějších částí celého systému.
+Když ze dne na den přestanou létat letadla
+Za nejtěžší období svého působení v čele ŘLP Jan Klas bez váhání označuje covid. Letecká doprava se téměř zastavila a s ní prakticky zmizely i příjmy podniku.
+Problém přitom nebyl pouze ekonomický. Řídící letového provozu musejí svoji kvalifikaci a schopnost zvládat reálný provoz průběžně udržovat. V situaci, kdy nad Českou republikou létalo minimum letadel, bylo nutné zajistit nejen financování podniku, ale také zachovat schopnost lidí bezpečně řídit provoz ve chvíli, kdy se letectví znovu rozběhne.
+Během covidu podle Honzy Klase vypadlo ŘLP na příjmech přibližně šest až sedm miliard korun. Podnik situaci řešil především komerčními úvěry a snažil se fungovat s minimální pomocí státu.
+Rozhovor se ale věnuje také tomu nejcennějšímu, co ŘLP má. Lidem. Výběr řídících zůstává mimořádně náročný a projde jím jen zlomek uchazečů. Současně se mění generace a s ní také představy o práci, pracovním čase a rovnováze mezi zaměstnáním a soukromým životem.
+Nahradí řídící umělá inteligence?
+Technologie už dnes dokáže vypočítat bezpečné rozestupy mezi letadly rychleji a přesněji než člověk. Znamená to, že jednou řídící z obrazovek zmizí?
+Jan Klas upozorňuje na zajímavý paradox. Technický problém automatického řízení provozu nemusí být tím nejtěžším. Mnohem složitější je určit, jakou roli má v automatizovaném systému člověk. Řídící nemůže několik hodin pouze sledovat stroj, který všechno dělá za něj, a potom být během několika sekund připraven převzít řízení v krizové situaci.
+Lidský prvek má navíc stále význam i pro piloty. Ve chvíli, kdy se dostanou do špatného počasí, technického problému nebo jiné nestandardní situace, může být klidný hlas zkušeného řídícího významnou součástí řešení.
+Automatizace ale přesto postupuje. Na regionálních letištích se připravují takzvané remote towers, tedy vzdáleně řízené věže. Řídící už nesedí fyzicky ve věži na konkrétním letišti. Obraz z kamer, radarová data a další informace dostává na pracoviště vzdálené desítky nebo stovky kilometrů. Z jednoho místa tak lze obsluhovat i několik kapacitně méně vytížených letišť.
+Právě to může pomoci zachovat provoz letišť, která jsou důležitá pro regiony i stát, ale jejichž provoz je ekonomicky ztrátový.
+GPS už není samozřejmost
+Moderní letectví stále více spoléhá na družicovou navigaci. Válka na Ukrajině a další bezpečnostní krize ale ukázaly, jak snadno může být signál GPS rušen nebo dokonce úmyslně zkreslován.
+V podcastu proto mluvíme o rozdílu mezi rušením GPS a takzvaným spoofingem, při kterém systém dostává falešné informace o své poloze. Právě to může být mnohem nebezpečnější, protože letadlo nemusí na první pohled poznat, že údaje, které dostává, nejsou správné.
+Evropa proto znovu přehodnocuje myšlenku, že tradiční radionavigační zařízení už nebudou potřeba. Technologie stará desítky let může v nové bezpečnostní situaci znovu představovat důležitou zálohu moderních systémů.
+A jednoduché poučení platí podle Jana Klase i pro malé létání. Pilot, který spoléhá pouze na mobilní telefon a GPS, může jednoho dne zjistit, že technologie, kterou považoval za samozřejmost, přestala fungovat.
+Drony mění pravidla hry
+Dalším tématem, které ještě před několika lety působilo téměř okrajově, jsou drony. Dnes jich létají statisíce a vedle rekreačního využití přicházejí autonomní systémy, dálkové lety nebo budoucí logistická doprava.
+S tím ale vzniká nový problém. Jak poznat dron, který letí podle pravidel, od člověka, který pravidla pouze nezná, a od stroje, jehož provozovatel má skutečně nepřátelský úmysl?
+ŘLP proto připravuje infrastrukturu pro takzvaný „U-space airspace“, systém, který má umožnit bezpečný provoz velkého množství dronů a zároveň ho oddělit od klasického letectví. Současně stát řeší protidronovou ochranu kritické infrastruktury a legislativu, která má určit, kdo a za jakých podmínek může proti nebezpečnému dronu zasáhnout.
+Je to další příklad toho, jak rychle se svět nad našimi hlavami mění. Technologie, které ještě nedávno patřily do oblasti experimentů, se během několika let staly otázkou národní bezpečnosti.
+Devatenáct let stačilo
+Rozhovor vznikl v okamžiku, kdy Jan Klas končí jednu dlouhou kapitolu svého profesního života. Po devatenácti letech odchází z čela Řízení letového provozu.
+V médiích se objevily spekulace, zda jeho konec souvisí s jeho kandidaturou do Senátu nebo s jeho postojem při výběru nového vedení Letiště Praha. Klas to v podcastu odmítá. Podle něj jde o časový souběh několika událostí.
+Už dříve svým nejbližším spolupracovníkům říkal, že dvacet let v čele jednoho podniku považuje za hranici a že chce umožnit generační výměnu. S ministrem dopravy se následně dohodli na dřívějším ukončení jeho působení i s ohledem na vstup do senátní kampaně.
+Do politiky přitom podle svých slov nechtěl vstoupit zkratkou prostřednictvím ministerské funkce, přestože takové možnosti v minulosti měl. Pokud měl politiku někdy dělat, chtěl nejprve projít volbami. Nyní kandiduje do Senátu na Kladensku.
+Praha potřebuje druhou dráhu
+Závěrečná část rozhovoru se vrací k budoucnosti českého letectví, a především Letiště Praha. Podle Jana Klase je paralelní dráha důležitá nejen kvůli kapacitě, ale také z hlediska bezpečnosti a dalšího rozvoje letiště.
+Kapacita totiž není pouze otázkou toho, kolik letadel je možné odbavit během celého dne. Aerolinky potřebují přilétat a odlétat v konkrétních časech. Právě špičkové hodiny rozhodují o tom, zda Praha zůstane významným evropským letištěm schopným udržet dálková spojení, nebo bude postupně ztrácet pozici ve prospěch okolních letišť.
+Paralelní dráha by podle Klase zároveň vytvořila prostor pro výrazné omezení nočního provozu. Praha by se tak mohla přiblížit evropským letištím, kde je pravidelný noční provoz výrazně omezen.
+Rozhovor ale nekončí jen u letadel. Jan Klas dlouhodobě působí také v oblasti pomoci lidem s autismem, což souvisí i s jeho osobní rodinnou zkušeností. Mluví proto o tom, jak český systém pomáhá lidem s těžkým postižením a jejich rodinám a proč někdy stát spotřebuje obrovské množství energie na každoroční administrativu místo toho, aby se soustředil na skutečnou kvalitu poskytované péče.
+Je to nakonec téma, které se prolíná celým rozhovorem. Technologie, instituce i pravidla mají smysl pouze tehdy, pokud skutečně slouží svému účelu. Ať už jde o bezpečnost několika stovek lidí v letadle, budoucnost regionálního letiště, ochranu před drony nebo péči o ty nejzranitelnější.
+Co také zazní v tomto díle:
+- Jak se Jan Klas dostal od snu stát se pilotem až k řízení českého vzdušného prostoru.
+- Jaký je rozdíl mezi oblastním řízením, přibližovací službou a letištní věží.
+- Jak funguje EUROCONTROL a proč dostávají letadla takzvané sloty.
+- Proč Jan Klas opustil lukrativní evropskou kariéru a vrátil se řídit český státní podnik.
+- Jak ŘLP přežilo covid a výpadek několika miliard korun příjmů.
+- Proč patří práce řídícího letového provozu mezi psychicky nejnáročnější profese.
+- Zda jednou umělá inteligence nahradí člověka při řízení letadel.
+- Jak fungují virtuální a vzdálené řídicí věže a proč mohou pomoci regionálním letištím.
+- Proč se Evropa kvůli rušení a spoofingu GPS vrací k některým tradičním způsobům navigace.
+- Jak velkým problémem jsou drony a jak má fungovat systém U Space.
+- Co Jan Klas říká o svém odchodu po devatenácti letech z čela Řízení letového provozu.
+- Proč se po letech mimo stranickou politiku rozhodl kandidovat do Senátu.
+- Proč považuje paralelní dráhu Letiště Praha za zásadní pro jeho další budoucnost.
+- Zda by měla Praha omezit pravidelný noční letecký provoz.
+- O pomoci lidem s autismem, osobní zkušenosti Jana Klase a problémech financování sociálních služeb.
+Pusťte si dnešní díl podcastu Hlas na poušti v našem přehrávači. Odebírejte Hlas také na Spotify nebo Apple Podcastech. Zapněte si v telefonu upozornění, ať vám žádný díl neuteče.
+Milan Mikulecký má zkušenosti z manažerských pozic v byznysu i státní správě jak v České republice, tak v zahraničí. Se svými hosty diskutuje před kamerou a mikrofonem bez ohledu na dnešní většinové názory. Hlas volajícího na poušti je historicky vyjádřením toho, kdy někteří lidé hlasitě upozorňovali ostatní na nebezpečí, do kterého se jejich společenství dostává, a nebyli včas vyslyšeni. Každý týden otevíráme nové téma.
+Odebírejte Hlas na poušti také v podcastových aplikacích a nový díl vám neuteče:
+Poslechněte si také naše další podcasty:

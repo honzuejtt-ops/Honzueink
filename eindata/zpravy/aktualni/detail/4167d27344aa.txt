@@ -1,0 +1,5 @@
+Společnost OpenAI minulý týden oznámila, že vylepšila obrazový model GPT-Image-2, takže už dokáže generovat plně průhledná pozadí. Novinka je dostupná prostřednictvím API, ale zamířila také do chatbotu.
+
+ChatGPT uměl generovat průhledné obrázky i v minulosti, ale nebylo to moc spolehlivé. Výsledkem ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

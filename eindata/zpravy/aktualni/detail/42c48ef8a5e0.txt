@@ -1,0 +1,15 @@
+Článek
+Funkce, které již byly dostupné na webu, se tak dostávají i do mobilní aplikace Email.cz.
+„Když Seznam.cz v roce 2015 spouštěl mobilní aplikaci Email.cz, šlo hlavně o to, aby se lidé ke své poště dostali odkudkoli. O deset let později řeší firma jinou výzvu: jak uživatelům pomoct zvládnout množství informací, které se jim do schránky valí,“ prohlásila Blanka Řádová, produktová manažerka Emailu od Seznamu.
+E-mail se podle společnosti postupně proměnil z jednoduché schránky v místo, kde si lidé uchovávají důležité dokumenty, které dříve končily v šanonech. E-mailové služby Seznamu využívá měsíčně přibližně šest milionů aktivních uživatelů, přičemž zhruba polovina z nich ke své schránce přistupuje z mobilu. Podíl lidí, kteří poštu spravují především na telefonu, navíc dlouhodobě roste.
+Dlouhý e-mail v několika větách
+Jednou z novinek je funkce Shrnutí e-mailu. Pomocí umělé inteligence dokáže obsah delší zprávy převést do stručného souhrnu, aby se uživatel rychleji zorientoval v hlavních informacích.
+Hodit se může například ve chvíli, kdy lidé kontrolují poštu mezi schůzkami, na cestách nebo během pracovního dne a nemají čas pročítat celý obsah zprávy.
+Umělá inteligence zároveň umí po napsání e-mailu sama navrhnout vhodný předmět. Právě při psaní na menší obrazovce telefonu může podobné zjednodušení ušetřit několik kroků.
+„Generování předmětu je první funkcí, která usnadňuje samotné psaní zpráv. Na menších obrazovkách mobilních telefonů je každé zjednodušení práce znát. Do budoucna připravujeme další nástroje, které uživatelům pomohou s tvorbou e-mailů ještě více,“ doplnila Řádová.
+Aplikace zároveň nabízí funkci Přehled objednávek, která na jednom místě automaticky sjednocuje potvrzení objednávek, informace o doručení i vrácení zboží. Uživatelé tak nemusí jednotlivé informace zdlouhavě hledat mezi zprávami.
+Model se z obsahu zpráv neučí
+Obě nové funkce fungují na vlastním jazykovém modelu, který Seznam.cz vyvíjí interně. Podle společnosti díky tomu data uživatelů neopouštějí ekosystém Seznamu a model se z obsahu jejich zpráv neučí.
+Vlastní model je navíc dlouhodobě trénovaný na češtině, což se podle společnosti projevuje na kvalitě generovaných textů.
+„Email.cz se postupně mění z místa pro ukládání zpráv na osobního asistenta, který pomáhá rychle najít a pochopit důležité informace. Funkce jako shrnutí e-mailů, generování předmětů nebo přehled objednávek jsou součástí této proměny,“ uzavřela produktová manažerka.
+Stahovat mobilní aplikaci Email.cz můžete zde.

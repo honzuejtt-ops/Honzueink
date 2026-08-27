@@ -1,0 +1,9 @@
+Ubisoft nepatří mezi hráči k dvakrát oblíbeným firmám, takže internetová komunita každou příležitost k vtípkům řádně využívá. A tentokrát s lákavou příležitostí přišel sám Ubisoft, když na Steamu vydal hru, která obsahovala jeden jediný EXE soubor o velikosti 23,49 KB. Šlo totiž o nespustitelného zástupce pro Heroes of Might and Magic III.
+Hra bez hry
+Heroes of Might and Magic III Complete Edition dorazila na Steam 25. srpna za necelých 10 dolarů, přičemž jde o původní strategii z roku 1999 včetně rozšíření Armageddon’s Blade a The Shadow of Death. Právě tato verze hry na Steamu dosud chyběla a Ubisoft to chtěl napravit. Moc se to ale nepovedlo.
+Ti hráči, kteří si Heroes III zakoupili jako první, stáhnuli pouze soubor Heroes3.exe. Po jeho spuštění se otevřel příkazový řádek s upozorněním na testovací soubor: „Dummy executable. Ensure that you are on the right Steam branch.“
+Recenze šly dolů
+Nefunkční hra se samozřejmě velmi rychle projevila v uživatelských recenzích, byť bylo zřejmé, že jde o chybu vydavatele, která bude rychle napravena. Stížnosti prvních kupujících tak dostaly hru do kategorie „Mostly Negative“, kdy negativní recenze tvořily přibližně 80 % hodnocení. Nešlo samozřejmě o kritiku samotného Heroes III – hráči jednoduše hodnotili produkt, který po zaplacení nebylo možné spustit.
+Ubisoft následně distribuční soubory opravil a potvrdil, že problém byl vyřešen. Vydavatel se zároveň omluvil za způsobené komplikace. Nyní lze hru zakoupit a stáhnout bez problémů.
+Complete Edition se na Steamu objevila v souvislosti s Gamescomem 2026 a oznámením nového remaku Heroes of Might and Magic III. Ten je zcela samostatným projektem a vyjde v průběhu příštího roku. My se můžeme těšit na češtinu v podobě titulků a lokalizovaného rozhraní hry.
+Zdroj: Polygon

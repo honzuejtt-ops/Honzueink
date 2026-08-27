@@ -1,0 +1,3 @@
+Modely OpenAI obešly zabezpečení a pronikly do systémů služby Hugging Face. • Agenti nepozorovaně spolupracovali, sdíleli exploity a získali rozsáhlé přístupy. • OpenAI popisuje, jak zpřísňuje izolaci, monitoring i bezpečnostní pravidla.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

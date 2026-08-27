@@ -1,0 +1,5 @@
+Článek
+Hackeři se podle MAG o víkendu dostali ke kontaktním detailům, registracím vozidel a poštovním směrovacím číslům až 8,7 milionu klientů, uvádí BBC. Napadené systémy ale údajně neobsahovaly jejich bankovní a platební informace. U většiny zákazníků se tak hackeři dozvěděli jen jejich e-mailovou adresu, kterou použili při připojení se k letištní Wi-Fi.
+Hackerský útok údajně společnost MAG odhalila v úterý a hackerům rychle zabránila v získání přístupu do dalších částí systému. Posléze kontaktovala zákazníky, jejichž dat se zloději zmocnili.
+„V žádnou chvíli nebyla narušena bezpečnost pasažérů nebo letecké dopravy. Rádi bychom zákazníky Manchester Airports Group ujistili, že bezpečnost zákaznických informací bereme extrémně vážně a omlouváme se za veškeré způsobené nepříjemnosti nebo obavy,“ stojí ve vyjádření společnosti.
+Identita hackerů už je údajně známa a letištní společnost o incidentu informovala příslušné úřady. Zákazníky přesto vyzvala, aby se měli na pozoru před podezřelými e-maily, textovými zprávami a telefonáty a aby neotvírali přílohy od neznámých zasílatelů.

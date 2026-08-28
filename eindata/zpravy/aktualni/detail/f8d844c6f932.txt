@@ -1,0 +1,7 @@
+Poškozený nebo nepovedený 3D tisk nemusí vždy putovat rovnou do koše. Prusa Development patřící do skupiny Prusa Group (kam patří i Prusa Manufacturing, Prusa Polymers a Prusa Research) si patentoval zajímavý ruční multifunkční nástroj, který by mohl opravit praskliny, chybějící části i finální úpravy hotových výtisků.
+Tři nástroje v jednom těle
+Základem zařízení má být podle patentové přihlášky WO2026166569A1 zveřejněné 13. srpna ruční rukojeť s baterií, elektronikou a mechanismem pro posun filamentu. Do ní se připojují tři vyměnitelné vyhřívané hlavice, přičemž každá slouží k jiné části opravy.
+První by měla fungovat podobně jako 3D pero a nanášet roztavený filament do mezer nebo poškozených míst. Druhá hlavice připomíná páječku a dokáže natavit existující plast, takže by mohla spojovat prasklé části modelu. Třetí by pak měla sloužit k vyhlazování a úpravě povrchu.
+Na patentu je zajímavé konstrukční řešení pro rychlejší chladnutí a výměnu hlavice. U některých nástavců například zůstává větší část topného tělesa odkrytá, aby po vypnutí rychleji vychladla.
+Zatím je ale potřeba brát celý projekt s rezervou. Jde totiž jen o patent, nikoliv o oznámený a hotový produkt. Pokud by se však takové „bastlítko“ skutečně dostalo na trh, mohlo by najít praktické využití u řady domácích 3D tiskařů.
+zdroje: 3DRuck.com, Espacenet.com

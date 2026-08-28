@@ -1,0 +1,9 @@
+Legendární Twitter se po téměř třech letech vrací na scénu. Nová sociální síť Twitter.now od společnosti Operation Bluebird se snaží navázat na podobu původního Twitteru, který v roce 2022 koupil Elon Musk a později přejmenoval na X.
+Tvůrci nové platformy tvrdí, že Muskova společnost se původní značky Twitter fakticky vzdala.
+Twitter.now chce vrátit legendární značku zpět
+Za projektem stojí bývalý právník Twitteru Stephen Coates, který se dlouhodobě snaží zpochybnit práva X na ochranné známky Twitter a Tweet. Operation Bluebird kvůli tomu usiluje o jejich zrušení a tvrdí, že po přejmenování služby na X přestala společnost původní názvy používat.
+Twitter.now se vzhledem i fungováním vrací k tomu, jak sociální síť vypadal před Muskovým převzetím. Uživatelé mohou zveřejňovat příspěvky, reagovat na ně a dále je sdílet. Podle Ars Technicy už platforma přilákala první stovky uživatelů. Její tvůrci zároveň slibují větší důraz na důvěru, transparentnost a možnost komunity podílet se na dalším směřování služby.
+Ověřování faktů v reálném čase
+Jednou ze zajímavých novinek je automatizovaný nástroj pro ověřování faktů v reálném čase. Nese název Veracity Engine for Real-Time Analysis (zkráceně Vera) a jeho úkolem je pomáhat uživatelům posoudit pravdivost informací a odhalovat potenciálně zavádějící tvrzení. Vera běží na AI Gemini.
+Celý projek ale zatím stojí na velmi nejistém právním základu. Společnost X se proti snaze o návrat značky brání žalobou a přestože soud slovně uznal opuštění Twitteru jako pojmu, konečné rozhodnutí zatím nepadlo. Operation Bluebird přesto pokračuje a dává jasně najevo, že chce o ikonický Twitter bojovat.
+zdroj: Twitter.now, LinkedIn, Ars Technica

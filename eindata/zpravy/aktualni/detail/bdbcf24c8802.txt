@@ -1,0 +1,26 @@
+Velká úleva pro pozůstalé. Nárok na peníze ze životní pojistky jim od ledna musí pojišťovny oznámit samy
+Dosud to fungovalo obráceně: pokud jste v pojistné smlouvě uvedení jako ten, kdo má po smrti blízkého dostat peníze, museli jste se o nárok sami přihlásit — a když jste o něm nevěděli, peníze prostě zůstaly u pojišťovny. Od 1. ledna 2026 se to mění: pojišťovny budou muset takzvané obmyšlené osoby samy kontaktovat a o nároku je informovat, pokud jejich kontakt znají nebo ho dokážou zjistit.
+Problém je starý jako samotné životní pojištění pro případ smrti: na rozdíl od běžného majetku není součástí dědictví, takže ho notář při vypořádání pozůstalosti neřeší. Když obmyšlený nevěděl, že smlouva existuje, nebo nevěděl, že pojištěný zemřel, o nároku se prostě nikdy nedozvěděl.
+Na díru v zákoně upozornily zákonodárce paradoxně organizace, které na tom měly spíš vydělat — UNICEF a Charita zjistily, že nemalé částky z pojistek, v nichž je klienti pojišťoven určili jako obmyšlené, jim vůbec nedorazily a zůstaly ležet u pojišťoven. Podle důvodové zprávy k novele byla taková mezera v zákoně v celém evropském legislativním prostředí zcela ojedinělá.
+Co přesně se mění
+Podle novely občanského zákoníku, kterou v červnu 2025 ve zrychleném režimu schválila Poslanecká sněmovna, budou mít pojišťovny nově zákonnou povinnost:
+- do 60 dnů od chvíle, kdy se dozví o úmrtí klienta, oznámit nárok obmyšlené osobě — pokud kontaktní údaje má, nebo je může zjistit z evidence, do níž má přístup,
+- když je obmyšlený určený jmenovitě, ale jeho kontakt pojišťovna nemá nebo je zastaralý, použít k dohledání veřejné registry, třeba základní registr obyvatel.
+Povinnost tedy není neomezená: když pojišťovna kontakt nemá a ani ho nemůže z dostupných evidencí zjistit, oznamovací povinnost jí nevzniká. Týká se to hlavně obecně určených obmyšlených bez jmen (třeba „moje děti") — u nich registry samy o sobě nepomůžou určit, o kterou konkrétní osobu jde, takže odpovědnost zůstává spíš na tom, kdo smlouvu sepisoval, aby obmyšleného určil jednoznačně.
+Návrh podala skupina senátorů vedená Jitkou Seitlovou. Deset pojišťoven na trhu má podobný postup dobrovolně zavedený už od roku 2023 jako samoregulační standard České asociace pojišťoven — podle důvodové zprávy k novele to ale na vyřešení problému nestačilo, protože zdaleka nejde o všechny pojišťovny na trhu. Nový zákon dělá podobný postup povinným pro úplně všechny.
+Co se stane, když se obmyšlený nenajde
+Ani nová povinnost nezaručuje, že pojišťovna každého dohledá — někdo se odstěhuje bez stopy, nebo obmyšlený mezitím sám zemře. Nárok na pojistné plnění ze životního pojištění se podle občanského zákoníku promlčí za deset let; pokud se do té doby nikdo nepřihlásí, peníze zůstávají v rezervách pojišťovny — přesně tenhle mechanismus podle zákonodárců dosud připravoval lidi o peníze, aniž by si toho vůbec všimli.
+💡 Zajímavost: Obmyšlenou osobou nemusí být jen příbuzný — klidně to může být kamarád, nebo i klub, nadace či jiná organizace, kterou pojištěný ve smlouvě uvedl.
+V Česku je aktivních zhruba pět milionů životních pojistek, u části z nich je pro případ smrti určený právě konkrétní obmyšlený.
+Co můžete udělat už teď
+Nemusíte čekat na leden. Pokud tušíte, že po zesnulém příbuzném mohla zůstat pojistka, o které rodina neví, Česká asociace pojišťoven nabízí online službu pro dohledání životního pojištění u členských pojišťoven — stačí vyplnit formulář se základními údaji o zesnulém (jméno, rodné číslo, datum narození, adresa a datum úmrtí) a asociace dotaz předá všem svým členům najednou, místo abyste obcházeli pojišťovny jednu po druhé.
+Podobný osud — peníze čekající u pojišťovny, dokud se o ně někdo nepřihlásí, jinak nakonec propadnou — mají ostatně i staré přeplatky ze zdravotního pojištění.
+K samotnému vyřízení nároku pojišťovna obvykle potřebuje úmrtní list a doklad o příčině smrti, u nezletilého obmyšleného navíc souhlas soudu — po skončení šetření pak musí peníze vyplatit do 15 dnů.
+Pro každého, kdo životní pojištění sám má, navíc nová pravidla přinášejí jednoduché poučení: aktualizovat, kdo je ve smlouvě uvedený jako obmyšlený, a hlavně mu o tom říct.
+Ověřeno z:
+- oPojištění.cz – přehled novely občanského zákoníku o oznamovací povinnosti pojistitele
+- Senát ČR – důvodová zpráva k novele (sněmovní tisk 951)
+- Občanský zákoník (zák. č. 89/2012 Sb.) – § 635 odst. 1 o promlčení nároku ze životního pojištění
+- Finance.cz – rozsah problému, počet aktivních pojistek
+- Mesec.cz – podnět UNICEF a Charity
+- Česká asociace pojišťoven – bezplatná služba dohledání a samoregulační standard

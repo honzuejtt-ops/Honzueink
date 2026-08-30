@@ -1,0 +1,6 @@
+Článek
+Jemnou motoriku se výrobci rozhodli demonstrovat ukázkou, jak si humanoidní roboti poradí s pinzetou, jejíž pomocí přenášeli fazole a hrách z jedné misky do druhé.
+Jak je vidět na videu, které poskytla agentura Reuters, některé z modelů neměly s úchopem a přenášením luštěnin potíže, zatímco jiné zápasily už s držením pinzety.
+Ve většině týmů byly ruce robotů ovládány na dálku, přesnost jednotlivých pohybů pak kontrolovala porota.
+Podle vědců, kteří rovněž na klání dohlíželi, podobné soutěže demonstrují především pokroky v ovládání robotických rukou spolu se schopností ovládat různé nástroje, což by mohlo jednoho dne najít využití i v domácnostech, na pracovištích či dalších místech.
+„Humanoidní robotika má různé aspekty. U robotů, kteří hrají rozličné hry, se dobře demonstruje schopnost ovládání a koordinace celého těla, stejně jako třeba schopnost algoritmů zabránit uklouznutí nebo pádu. U soutěží založených na scénářích, jako je ten náš, jde o přesné provádění úkolů pomocí rukou. Cílem je vylepšit roboty tak, aby mohli používat třeba šroubováky, pinzety a další podobné nástroje,“ dodal k tomu soutěžící ovládající jednoho z robotů.

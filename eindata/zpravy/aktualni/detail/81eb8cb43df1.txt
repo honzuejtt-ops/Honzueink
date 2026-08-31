@@ -1,0 +1,14 @@
+Segment produktů AlzaPower se neustále rozšiřuje. Nově do něj přibyly praktické adaptéry, s jejichž pomocí připojíte interní pevné disky nebo SSD k počítači či notebooku čistě jen přes USB. Přijdou vhod především těm, kterým doma leží starší disky a hledají snadný způsob, jak z nich dostat data nebo je znovu využít.
+Čtyři redukce pro M.2 a 2,5" disky
+V nabídce Alzy jsou celkem čtyři různé modely lišící se podle typu připojení. Levnější s cenou okolo 300 korun slouží k připojení 2,5" SSD a HDD skrze SATA rozhraní, dražší s cenou okolo 600 korun pak disponují slotem M.2 pro SATA a NVMe disky.
+Pro připojení 2,5" disků je na výběr:
+- 
+		AlzaPower USB-A 3.2 Gen 1 to SATA 3.0
+- 
+		AlzaPower USB-C 3.2 Gen 1 to SATA 3.0
+Pro připojení M.2 disků je na výběr:
+- 
+		AlzaPower USB-A 3.2 Gen 2 do M.2 NVMe & SATA
+- 
+		AlzaPower USB-C 3.2 Gen 2 to M.2 NVMe & SATA
+Všechny redukce mají délku přívodního kabelu 20 cm a kompatibilitu napříč Windows, macOS a Linuxem.

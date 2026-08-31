@@ -1,3 +1,84 @@
+|T|Z Ontaria je Amerika. Trumpovo přejmenování dorazilo do map, ale Google ho ukazuje jen američanům|D|31.8. 13:17|P|Jezero Ontario má podle Googlu nové jméno, Američané vidí Lake America, Kanaďané své Ontario a zbytek světa raději obě názvy najednou.|X|Google začal v mapách přepisovat názvy podle nové americké reality. Uživatelům ve Spojených státech se jezero Ontario nově zobrazuje jako Lake Amerika. Kanaďané ale o své Ontario nepřišli a ve zbytku světa Google raději ukazuje názvy rovnou oba dva.
+Změna nepřišla přímo od Googlu, nýbrž od současného amerického prezidenta Donalda Trumpa, který před nedávnem nechal jezero oficiálně přejmenovat. Americký Geographic Names Information System (GNIS) sloužící jako databáze geografických názvů ve Spojených státech tak nově uvádí jezero Ontario pod názvem Lake Amerika.
+V Americe tak, ve zbytku světa jinak
+Výsledek je tak poněkud bizarní. Pokud si Mapy Google otevře uživatel v USA, uvidí místo dosavadního Lake Ontario označení Lake America. Na kanadské straně hranic se nic nemění a lidé vidí tradiční Lake Ontario. A my ostatní ve zbytku světa pak vidíme názvy oba.
+Jak se na změnu názvu staví další provozovatelé map? Apple název jezera zatím neupravil a rovněž ani veřejně neřekl, jak se ke změně postaví. Tradiční označení zatím ponechávají také české Mapy.com. Ty názvy přebírají z OpenStreetMap (OSM).
+„Názvy proto neurčujeme sami ani je nepřizpůsobujeme podle lokality či preferencí konkrétního uživatele, jak to dělají některé jiné mapové služby. Pokud jde o přejmenování Ontarijského jezera v USA, budeme i v tomto případě vycházet z dat OpenStreetMap“ řekla serveru Lupa.cz Veronika Geltner.|E|
+|T|Nvidii uniklo DLSS 5, které vylepšuje obraz pomocí AI. Kritici AI slopu se sami střílí do nohy|D|31.8. 12:45|P|Před pár dny unikly chystané knihovny pro DLSS 5 z předfinální verze hry NBA 2K27. V modderské komunitě se bleskurychle rozjely úpravy pro mnoho her p...|X|Před pár dny unikly chystané knihovny pro DLSS 5 z předfinální verze hry NBA 2K27. V modderské komunitě se bleskurychle rozjely úpravy pro mnoho her přidávající podporu DLSS 5 s uživatelským nastavením síly AI efektu.
+
+DLSS 5 totiž nejen přepočítává na vyšší rozlišení a dopočítává mezisnímky. ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Skylink a FreeSat v září zpřístupní Sport1 a Viasat Epic Drama všem zákazníkům|D|31.8. 12:35|P|Satelitní služby Skylink a FreeSat zpřístupní od 1. do 29. září všem zákazníkům stanice Sport1 a Viasat Epic Drama. Oba programy budou dostupné také v...|X|Satelitní služby Skylink a FreeSat zpřístupní od 1. do 29. září všem zákazníkům stanice Sport1 a Viasat Epic Drama. Oba programy budou dostupné také v internetové televizi Skylink Live TV.
+Kanál Viasat Epic Drama uvede v neděli 13. září seriál Sága rodu Forsytů, který se dočkal druhé řady. Nová adaptace sleduje osudy několika členů zámožné britské rodiny a jejich partnerské i majetkové konflikty. První série je v Česku dostupná také na platformě Oneplay.
+Sport1 nabídne například přenosy italské fotbalové Serie A, házenou, lední hokej nebo turnaj World Poker Tour. Stanice je běžně součástí vyšších tarifů obou operátorů.
+Stejná nabídka platí také pro slovenské klienty obou platforem.|E|
+|T|Pět funkcí z iOS 27, které v Androidu 17 nenajdete. A dalších pět, na které zase smutně kouká iPhone|D|31.8. 11:45|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Lenovo pustí na trh nové notebooky LOQ Essentials. Nízká je jen výbava, cena odpovídá kruté realitě|D|31.8. 10:45|P|Řada Lenovo LOQ měla původně sloužit jako levnější odnož řady Legion 5. S trochu horší výbavou a nepatrně slabší konstrukcí, ale za velmi zajímavou ce...|X|Řada Lenovo LOQ měla původně sloužit jako levnější odnož řady Legion 5. S trochu horší výbavou a nepatrně slabší konstrukcí, ale za velmi zajímavou cenu. Nyní Lenovo chystá na trh novou řadu LOQ Essientials. Tedy ještě nižší řadu, která hledá místo pod LOQ. Design nemá tak výrazně protažené tělo za ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Máte doma staré SSD nebo HDD? Alza je jedním kabelem promění v externí USB disk|D|31.8. 10:42|P|Alza přichází s novými adaptéry, které z něj udělají externí úložiště během pár sekund.|X|Segment produktů AlzaPower se neustále rozšiřuje. Nově do něj přibyly praktické adaptéry, s jejichž pomocí připojíte interní pevné disky nebo SSD k počítači či notebooku čistě jen přes USB. Přijdou vhod především těm, kterým doma leží starší disky a hledají snadný způsob, jak z nich dostat data nebo je znovu využít.
+Čtyři redukce pro M.2 a 2,5" disky
+V nabídce Alzy jsou celkem čtyři různé modely lišící se podle typu připojení. Levnější s cenou okolo 300 korun slouží k připojení 2,5" SSD a HDD skrze SATA rozhraní, dražší s cenou okolo 600 korun pak disponují slotem M.2 pro SATA a NVMe disky.
+Pro připojení 2,5" disků je na výběr:
+- 
+		AlzaPower USB-A 3.2 Gen 1 to SATA 3.0
+- 
+		AlzaPower USB-C 3.2 Gen 1 to SATA 3.0
+Pro připojení M.2 disků je na výběr:
+- 
+		AlzaPower USB-A 3.2 Gen 2 do M.2 NVMe & SATA
+- 
+		AlzaPower USB-C 3.2 Gen 2 to M.2 NVMe & SATA
+Všechny redukce mají délku přívodního kabelu 20 cm a kompatibilitu napříč Windows, macOS a Linuxem.|E|
+|T|Největší stavba svého druhu za třicet let. Orlík se promění v přečerpávací elektrárnu. V Blansku už postavili její simulátor|D|31.8. 10:07|P|Česko se během následujících sedmi let dočká čtvrté plně funkční přečerpávací elektrárny. Pokud totiž půjde vše podle plánu, v roce 2033 se naplno roz...|X|Česko se během následujících sedmi let dočká čtvrté plně funkční přečerpávací elektrárny. Pokud totiž půjde vše podle plánu, v roce 2033 se naplno rozjedou turbíny elektrárny na Orlíku.
+
+Jedna z největších přehrad vltavské kaskády vyrábí elektřinu už od 60. let minulého století, k dispozici má ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Google prohrál soud a musí české Heurece zaplatit 400 milionů korun. Proč?|D|31.8. 08:51|P|Soud rozhodl, že Google musí kvůli zvýhodňování svých služeb zaplatit české Heurece 400 milionů korun.|X|Google musí zaplatit české společnosti Heureka Group 400 milionů korun. Rozhodl o tom Městský soud v Praze, který naznal, že Google ve vyhledávání upřednostňoval vlastní srovnávač cen zboží na internetu. O verdiktu informovaly Hospodářské noviny a potvrdila ho i Heureka.
+Google, který je součást skupiny Alphabet, musí Heurece zaplatit 250 milionů korun kvůli ušlému zisku. Zbylých 150 milionů jsou úroky. Rozhodnutí zatím není pravomocné. Google se může odvolat. To, zda tak učiní, zatím nekomentoval.
+„Rozhodnutí soudu vítáme. Vnímáme ho jako důležité potvrzení naší dlouhodobé pozice – Google svým jednáním skutečně ovlivnil fungování Heureky, dalších srovnávačů cen na trhu a v konečném důsledku i české spotřebitele. Nejde pouze o tento jeden případ – rozhodnutí soudu je jasným signálem, že v e-commerce musí panovat pro všechny hráče rovné podmínky a spotřebitel si zaslouží širokou a svobodnou volbu,” uvedl podle serveru Lupa.cz David Chmelař, výkonný ředitel Heureka Group.
+Situace kolem zvýhodňování srovnávání cen se táhne poměrně dlouhou dobu. Případ Heureky se týká let 2013 až 2016. Zároveň Evropská komise v roce 2017 udělila Googlu pokutu ve výši 2,4 miliardy eur s tím, že americký podnik zneužil dominantního postavení na několika trzích Evropské unie včetně České republiky. Případ byl potvrzen v roce 2024.
+Spory s Google vede také Seznam.cz. Ten po svém konkurentovi chce devět miliard korun, a to kvůli zneužití postavení Androidu. I Googlu by mohla nahrát dřívější pokuta Evropské unie.|E|
+|T|Čínský šok 2.0. Zapomeňte na levné kopie, Čína dnes v technologiích dominuje a pohlcuje západní značky|D|31.8. 08:45|P|Na začátku roku 2026 koupila čínská společnost Picea ikonického výrobce robotických vysavačů iRobot a ukázkově tím demonstrovala nebezpečné posuny v t...|X|Na začátku roku 2026 koupila čínská společnost Picea ikonického výrobce robotických vysavačů iRobot a ukázkově tím demonstrovala nebezpečné posuny v technologickém světě.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Skoro dva tisíce zanedbaných lokalit v Česku se dočká vysokorychlostního internetu|D|31.8. 08:13|P|Evropské dotace mají dostat internet v rozumné kvalitě do poměrně velkého množství lokalit v České republice. Tuzemská Broadband Competence Office (BC...|X|Evropské dotace mají dostat internet v rozumné kvalitě do poměrně velkého množství lokalit v České republice. Tuzemská Broadband Competence Office (BCO) spadající pod ministerstvo průmyslu a obchodu informovala, že je v přípravě skoro 1 700 lokalit.
+“V téměř 1 700 lokalitách po celé České republice se připravuje výstavba nebo modernizace internetových sítí podpořená Evropskou unií, konkrétně z Operačního programu Technologie a aplikace pro konkurenceschopnost (OP TAK). Cílem je přivést rychlé a spolehlivé internetové připojení především do míst, kde by se jeho výstavba bez veřejné podpory provozovatelům nevyplatila,” shrnula BCO.
+Část projektů je ve fázi před startem výstavby, další jsou v přípravě. Všechny dotované aktivity musí být dokončeny nejpozději do třicátého června roku 2029.
+V rámci OP TAK byla vypsána výzva Vysokorychlostní internet, celková částka byla navýšena na 5,5 miliardy korun.
+T-Mobile už oznámil, že díky dotacím začne pokrývat takzvaná bílá místa. Investice bude činit 1,325 miliardy korun. Dotace v rámci jiných aktivit míří také na pokrývání Česka mobilním signálem 5G.
+Vláda také v loňském roce schválila Akční plán 3.0, který má zjednodušit výstavbu optických sítí a zlepšit koordinaci subjektů.|E|
+|T|Rychlá síť u sv. Anny nebo antikolizní tramvaje. Stát spustil databázi dotovaných 5G projektů v ČR|D|31.8. 08:00|P|Česká Broadband Competence Office (BCO) spadající pod ministerstvo průmyslu a obchodu připravila a publikovala databázi ukázkových projektů rozvoje ap...|X|Česká Broadband Competence Office (BCO) spadající pod ministerstvo průmyslu a obchodu připravila a publikovala databázi ukázkových projektů rozvoje aplikací v oblasti sítí 5G. V rámci jednoho místa si lze proklikat projekty podpořené z dotací, konkrétně z Národního plánu obnovy.
+“Jednotlivé projekty byly dosud roztroušené v dokumentaci několika výzev, ve výročních zprávách a v komunikaci jednotlivých příjemců. Starosta, který chtěl vědět, jestli už někdo v Česku řešil totéž co on, neměl kam sáhnout. Databáze je odpovědí na tuto otázku,” shrnula BCO.
+Databáze může sloužit jako inspirace. Je možné se podívat, co se v užití 5G sítí realizovalo a spojit se s lidmi, kteří mohou předat zkušenosti. Firmy mohou zjistit, jaké projekty prošly ověřením. K dispozici je i regionální, respektive krajské porovnání. Je možné použít filtr pro definování parametrů.
+Například Fakultní nemocnice u sv. Anny v Brně plánuje rozjet privátní síť 5G a mít k dispozici kvalitní signál po celém areálu. Nasazuje jednotky rHUB a pRRU.|E|
+|T|Realita nám přestává stačit. Fotky z mobilu vypadají díky AI lépe než to, co jsme ve skutečnosti viděli|D|31.8. 07:45|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Google v mapách přejmenoval jezero Ontario, změna ale plně platí jen pro Američany|D|31.8. 07:32|P|Mapová služba americké firmy Google změnila pojmenování jezera Ontario ležícího na hranici mezi USA a Kanadou. Záleží ale na tom, kdo si informaci zob...|X|Mapová služba americké firmy Google změnila pojmenování jezera Ontario ležícího na hranici mezi USA a Kanadou. Záleží ale na tom, kdo si informaci zobrazí. Američanům nově místo Ontaria ukazuje Americké jezero (Lake America), Kanaďanům zůstal tradiční název jezero Ontario (Lake Ontario) a zbytku světa Google začal na mapě nabízet obě jména. Změna se u jednotlivých uživatelů projevuje postupně.
+Změnu tradičního jména, které vychází z jazyka původních obyvatel Ameriky, v USA nařídil tamní prezident Donald Trump, který momentálně s Kanadou vede obchodní válku. Trump už dřívě nařídil také oficiální přejmenování Mexického zálivu na Americký záliv.
+Google změnu ve své aplikaci vysvětlil tím, že se název změnil v americkém státním systému Geographic Names Information System (GNIS), který standardizuje zeměpisné názvosloví v USA.
+Konkureční Apple zatím na svých mapách název jezera neupravil, firma dosud ani veřejně neřekla, jak se ke změně postaví. U Mexického zálivu momentáně uživatelům z Evropy zobrazuje oba názvy (Mexický záliv i Americký záliv).
+I český Seznam zatím na své službě Mapy.com zůstává u tradičního názvu. U Mexického zálivu zobrazuje při odzoomování stále tradiční jméno, při větším zoomu pak u pobřeží USA ukazuje popisek Gulf of America a u mexického pobřeží Golfo de Mexico.
+„Na Mapy.com názvy mimo Českou republiku přebíráme z projektu OpenStreetMap (OSM), který je pro nás jedním ze zdrojů geografických názvů a dalších mapových dat. Názvy proto neurčujeme sami ani je nepřizpůsobujeme podle lokality či preferencí konkrétního uživatele, jak to dělají některé jiné mapové služby,“ odpověděla na dotaz Lupy Veronika Geltner, která má v Seznamu na starosti komunikaci Mapy.com.
+„Pokud jde o přejmenování Ontarijského jezera v USA, budeme i v tomto případě vycházet z dat OpenStreetMap. Pokud by se případná změna promítla do OSM a prošla standardním komunitním procesem, objeví se následně také v Mapy.com,“ dodala.|E|
+|T|EISA: Nejlepší audio a Hi-Fi technika roku 2026/2027. Reprosoustavy, zesilovače, gramofony i sluchátka|D|31.8. 07:14|P|Jaké reproduktory jsou letos nejlepší? Jaký zesilovač si odnesl ocenění EISA? A gramofon? Podívejme se na kategorii Hi-Fi produktů, jejichž cílem je n...|X|Jaké reproduktory jsou letos nejlepší? Jaký zesilovač si odnesl ocenění EISA? A gramofon? Podívejme se na kategorii Hi-Fi produktů, jejichž cílem je nabídnout kvalitní zvuk.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Nejlepší herní monitor za 3000 Kč. Tento Dahua má 27", 1440p, 240 Hz a dobré barvy|D|31.8. 06:45|P|Herní monitor Dahua LM27-E341A zlevnil na 2990 Kč, běžně stojí minimálně o tisícovku víc. • Má 27", rozlišení 1440p, frekvenci 240 Hz, rychlou odezvu ...|X|Herní monitor Dahua LM27-E341A zlevnil na 2990 Kč, běžně stojí minimálně o tisícovku víc. • Má 27", rozlišení 1440p, frekvenci 240 Hz, rychlou odezvu a dobré barvy. • Výrobce na něj dává tříletou záruku.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Co s těžkou technikou v éře dronů. Ze slavného obrněnce Bradley je mateřské vozidlo pro robotické čtyřkolky|D|31.8. 05:45|P|Slavné obrněné vozidlo pěchoty řady Bradley se na straně USA účastnilo válek v Perském zálivu, sloužilo na Ukrajině a nejspíše bude mít co říct i v éř...|X|Slavné obrněné vozidlo pěchoty řady Bradley se na straně USA účastnilo válek v Perském zálivu, sloužilo na Ukrajině a nejspíše bude mít co říct i v éře všudypřítomných dronů, pro které jsou podobná vozidla častý cíl úderu.
+
+Slavný Bradley s ohnivými mravenci
+
+Swarmbotics AI, výrobce malých ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Zachování krajinného rázu. Podívejte se na mobilní vysílač zabudovaný do falešných komínů na paneláku|D|31.8. 04:30|P|Mobilní vysílače se v Česku schovávají různými způsoby. Jedním z nich jsou falešné komíny na paneláku v Praze. Uvnitř: GALERIE.|X|Výpravy Lupy po netradičních mobilních vysílačích (BTS) pokračují. Minule jsme ukázali infrastrukturu na dvou panelácích v Brně, teď došlo na panelový dům v hlavním městě na ulici Syrská sousedící s Evropskou vedoucí na letiště. Funguje od roku 2012 a podívat se na něj můžete v naší galerii.
 Místní SVJ před časem odsouhlasilo instalaci vysílače T-Mobilu, ovšem s podmínkou úpravy. Na střeše, kam se z posledního patra leze malým žebříkem, se tak nachází čtyři falešné šedé komíny, do nichž jsou zabudovány antény.
 Operátoři občas musí antény maskovat různými způsoby, známý je například falešný strom v přírodě. Těžko říci, zda komíny vylepšují celkovou estetiku a zda jsou o tolik hezčí než antény, ale faktem je, že v okolí Syrské je komínů více, včetně jednoho od místní teplárny. “Přírodní ráz” je tak zachován.

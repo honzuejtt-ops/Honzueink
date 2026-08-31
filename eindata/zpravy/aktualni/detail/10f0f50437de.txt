@@ -1,0 +1,6 @@
+Článek
+MediaTek bude moct využívat technologie NVLink Fusion a novou technologii NVHBM jako součást technologického balíku společnosti Nvidia. Podle agentury Bloomberg se tak děje v době, kdy se Nvidia snaží přesvědčit více firem, aby vyráběly čipy kompatibilní s jejím dominantním komplexem datových center.
+Menší společnost se podle Bloombergu snaží konkurovat firmám Broadcom či Marvell Technology mimo jiné tím, že pomáhá majitelům datových center vytvářet vlastní komponenty.
+Dohoda s firmou MediaTek přichází po nedávném oznámení společnosti Amazon, která se zavázala nasadit další dva miliony komponent od Nvidie. Amazon se rovněž zavázal používat propojovací technologii Nvidie ve svých vlastních čipech.
+Dohoda je podle Bloombergu dalším příkladem toho, jak vedení společnosti Nvidia investuje do zákazníků, konkurentů a dalších společností působících v odvětví AI. Mezi investory se však objevují obavy ohledně takzvaných cirkulárních, tedy kruhových, investic. Nvidia pomáhá financovat infrastrukturu potřebnou pro využití svých čipů.
+Takzvané cirkulární financování podporuje poptávku po čipech Nvidie, ale vyvolává otázky, zda firma prostřednictvím financování infrastruktury nepřispívá k vytváření poptávky po vlastních čipech. Nvidia důrazně odmítá tvrzení, že by vytvářela falešnou poptávku po svých produktech.

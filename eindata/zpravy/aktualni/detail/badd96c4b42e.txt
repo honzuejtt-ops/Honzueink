@@ -1,0 +1,14 @@
+Článek
+„Umělá inteligence už dnes mění způsob, jakým lidé nakupují – od hledání přes porovnávání až po samotné rozhodování. My se teď soustředíme na poslední část celého procesu: aby AI dokázala pomoct i s dokončením nákupu,“ prohlásil Lukáš Behúň, ředitel divize E-commerce Seznam.cz.
+Zdůraznil, že „Seznam.cz je mezi prvními na českém trhu, kdo podobné funkce pro agentní nakupování přináší“. „Chceme, aby lidem nákup reálně zjednodušovaly a zároveň zůstaly bezpečné a srozumitelné,“ podotkl Behúň.
+Co to znamená pro samotné uživatele? Díky AI agentovi se na Zboží.cz přihlášený uživatel vyhne opakovanému opisování údajů a nejasnostem ohledně dopravy a dokončí nákup doslova na pár kliků.
+Jak využívat AI agenta na Zboží.cz?
+- Výběr: Na Zboží.cz jednoduše kliknete u vybraného produktu na tlačítko Rychlý nákup.
+- Kontrola: Předvyplněný kontakt, adresu a dopravu zkontrolujete a případně upravíte.
+- Potvrzení: Jedním kliknutím údaje potvrdíte a my vás přesměrujeme k pokladně e-shopu.
+Autonomní nákupy jménem uživatele
+Samotný nákup přitom díky technologii UCP probíhá stále u obchodníka, který tak má plnou kontrolu nad výsledným nákupem. Za zkratkou UCP se skrývá anglický termín Universal Commerce Protocol. Jde o otevřený technologický standard, který umožňuje umělé inteligenci přímo komunikovat s e-shopy a provádět autonomní nákupy jménem uživatele.
+„V počáteční fázi spuštění jsou do agentního nakupování zapojeny e-shopy, které jsou již na agentní nakupování připravené. V ČR se jedná zatím například o e-shopy, které fungují na moderní platformě Shopify, připravuje se zapojení obchodníků na české platformě Shoptet,“ konstatoval ředitel divize E-commerce Seznam.cz.
+Detailní postup, jak používat AI agenta na Zboží.cz, naleznete zde.
+Produktový manažer Seznamu Tomáš Jindra dodal: „Zahraniční příklady úspěšného využití umělé inteligence v e-commerce ukazují významné benefity na obou stranách, jak pro zákazníky, tak pro obchody. Z případových studií vyplývá výrazně vyšší míra dokončených nákupů a lepší konverzní poměr. Zákazník totiž přichází k nákupu s lepší představou potřeby a stejně tak i průchod košíkem je zjednodušený a zpřehledněný.“
+Zajímavé je, že u Zboží.cz nebude zavedení AI agentů končit. Po testování bude umělá inteligence dostupná i na dalších místech v Seznamu, přislíbili zástupci české internetové jedničky.

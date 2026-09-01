@@ -1,3 +1,74 @@
+|T|Z Brna proudí peníze do startupu, který pomocí umělé inteligence během vteřin plánuje výrobu v továrnách|D|01.9. 09:52|P|Společnost Jet Investment miliardáře Igora Faita posílá investici do berlínského startupu Phantasma Labs. Ten s umělou inteligencí plánuje a rozvrhuje...|X|Společnost Jet Investment miliardáře Igora Faita posílá investici do berlínského startupu Phantasma Labs. Ten s umělou inteligencí plánuje a rozvrhuje výrobu v továrnách. Od českých investorů získává celkem 2,6 milionu eur (skoro 63 milionů Kč), z toho 2,1 milionu proudí z fondu Jet Venture 1 SICAV, zbylý půlmilion od fondu Lighthouse Seed Fund II.
+Berlínský tým vyvíjí platformu určenou hlavně pro výrobní podniky s komplexním provozem, kde je potřeba každý den rozhodovat o tom, co se bude vyrábět, kdy a na kterém stroji – a zároveň zohledňovat tisíce proměnných, od kapacity strojů a dostupnosti pracovní síly přes přestavby linek až po priority objednávek a termíny dodání. Běžně to podniky řeší třeba tabulkami. Když se porouchá stroj, nastane výkyv poptávky nebo se zpozdí dodávky, může pak ale přeplánování výroby trvat i hodiny.
+Startup proti tomu využívá vlastní kombinaci posilovaného učení a grafových neuronových sítí a trénuje AI v simulovaných prostředích digitálních dvojčat. Dokáže prý vytvářet výrobní plány během několika sekund a průběžně je upravovat podle měnících se podmínek ve výrobě.
+„Na rozdíl od mnoha jiných investorů nemusíme této technologii věřit naslepo. Vlastníme průmyslové výrobní společnosti, takže tento software můžeme testovat a nasazovat přímo v našich vlastních výrobních provozech,“ komentuje Kamil Levinský, výkonný ředitel fondu Jet Venture 1. Systém už si v rámci placených ověřovacích projektů vyzkoušeli zákazníci v USA, Evropě a Japonsku.
+Investice do Phantasma Labs navazuje na předchozích devět investic Jet Investment. Poslední oznámená je finanční injekce do amerického Hermetiq, který automatizuje sestavování a opravy softwaru. Peníze získal mimo jiné i český Boost.space, který zpřístupňuje a třídí firmám data.|E|
+|T|Microsoft PowerToys. Vybíráme nejlepší nástroje, které doplňují chybějící funkce Windows 11|D|01.9. 08:45|P|MS PowerToys přidávají do Windows desítky chytrých funkcí zdarma. Vybrali jsme ty, které ušetří nejvíce času.|X|MS PowerToys přidávají do Windows desítky chytrých funkcí zdarma. Vybrali jsme ty, které ušetří nejvíce času.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|EU považuje ChatGPT za vyhledávač, bude jej přísněji regulovat. Na seznam největších platforem přibyly Reddit a Roblox|D|01.9. 07:51|P|Služby, které mají přes 45 milionů měsíčních uživatelů, jsou vedeny v EU jako tzv. VLOP. Musí dodržovat přísnější pravidla, provádět audity a zpřístup...|X|Od 25. srpna 2023 platí v Evropské unii legislativa, která označuje největší online služby za VLOP (Velmi velké online platformy) a VLOSE (Velmi velké internetové vyhledávače). Jejich provozovatelům tím vznikají nové povinnosti v rámci DSA, které mají zamezit negativním dopadům na jejich uživatele. Nyní se do seznamu přidává ChatGPT, Reddit a Roblox. Překročily totiž kritérium 45 milionů aktivních uživatelů měsíčně.
+Čtyři měsíce na změny
+Nové zařazení přidává povinnosti nad rámec původních pravidel DSA, která už služby musely dodržovat. Provozovatelé mají posuzovat systémová rizika spojená se svými službami a algoritmickými systémy. Týká se to například šíření nezákonného obsahu a dopadů na nezletilé. Samostatně se hodnotí také rizika pro základní práva nebo volební procesy.
+Součástí přísnějšího režimu jsou další požadavky na transparentnost a kontrolu. Patří mezi ně nezávislé audity nebo možnost zpřístupnit za stanovených podmínek data výzkumníkům. Komise také získává širší vyšetřovací pravomoci při prověřování funkcí služeb a souvisejících systémů.
+Komise stanovila čtyřměsíční lhůtu pro splnění dodatečných povinností a nově zařazené služby tak budou novým regulím podléhat od 1.ledna 2027.
+ChatGPT jako vyhledávač
+Zajímavé je právní zařazení ChatGPT, které Komise považuje za hybridní službu. Ty se podle DSA kvalifikují jako internetový vyhledávač, takže se největší AI chatbot zařadil po bok Googlu a Bingu od Microsoftu. Důvodem zařazení mezi VLOSE je schopnost odpovídat na uživatelské dotazy a zároveň vyhledávat informace na webu. Reddit a Roblox jsou naopak klasifikovány jako online platformy VLOP. Umožňují totiž veřejné šíření obsahu vytvořeného třetími stranami.
+ChatGPT uváděl ke konci března více než 159 milionů uživatelů v Unii, Reddit hlásil přes 57 milionů uživatelů v EU a Roblox uváděl 46,6 milionu aktivních hráčů v Evropě. Všechny platformy se tak na zařazení na seznam VLOP a VLOSE aktivně připravovaly několik měsíců.
+Evropská komise nyní eviduje 28 služeb označených jako velmi velké online platformy nebo vyhledávače. Jsou mezi nimi jak nejznámější sociální sítě, tak komunikátory, tržiště, obchody s aplikacemi, rezervační weby a samozřejmě i největší erotické weby. Díky nim jsou mezi VLOP zařazeny i dvě české společnosti: WebGroup Czech Republic, a.s. provozující Xvideos (160 milionů uživatelů měsíčně) a NKL Associates s.r.o. s webem XNXX (45 milionů uživatelů měsíčně).
+Aktuální seznam velkých platforem a vyhledávačů vypadá takto:
+- AliExpress (Alibaba Group), Čína, 104,3 milionu
+- Amazon Store (Amazon), USA, 181,3 milionu
+- App Store (Apple), USA, 123 milionů
+- Bing (Microsoft), USA, 119 milionů [VLOSE]
+- Booking.com (Booking.com), Nizozemsko, více než 45 milionů
+- ChatGPT (OpenAI), USA, 159,1 milionu [VLOSE]
+- Facebook (Meta), USA, 259 milionů
+- Google Maps (Google), USA, 275,6 milionu
+- Google Play (Google), USA, 284,6 milionu
+- Google Search (Google), USA, 364 milionů [VLOSE]
+- Google Shopping (Google), USA, 70,8 milionu
+- Instagram (Meta), USA, 259 milionů
+- LinkedIn (Microsoft), USA, 45,2 milionu přihlášených
+- Pinterest (Pinterest), USA, 124 milionů
+- Pornhub (Aylo), Kanada, více než 45 milionů
+- Reddit (Reddit), USA, 57,2 milionu
+- Roblox (Roblox Corporation), USA, 46,6 milionu
+- SHEIN (SHEIN), Singapur, 108 milionů
+- Snapchat (Snap), USA, 102 milionů
+- Temu (PDD Holdings), Irsko, 75 milionů
+- TikTok (ByteDance), Čína, 135,9 milionu
+- WhatsApp (Meta), USA, 51,7 milionu
+- Wikipedia (Wikimedia Foundation), USA, 151,1 milionu
+- X (X Corp.), USA, 115,1 milionu
+- XNXX (NKL Associates), Česko, 45 milionů
+- XVideos (WebGroup Czech Republic), Česko, 160 milionů
+- YouTube (Google), USA, 416,6 milionu
+- Zalando (Zalando SE), Německo, 74,5 milionu
+Zdroj: EU|E|
+|T|Nokia 3310 slaví 26 let. Jak se z nenápadného telefonu stala nezapomenutelná legenda|D|01.9. 07:45|P|1. září 2026 tomu je 26 let od představení legendární Nokie 3310 • Telefon je dodnes známý svými originálními kryty i výdrží • Model se vyráběl 4 roky...|X|1. září 2026 tomu je 26 let od představení legendární Nokie 3310 • Telefon je dodnes známý svými originálními kryty i výdrží • Model se vyráběl 4 roky a mnozí jej používali i spoustu let poté
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Online rozvoz potravin v Česku rostl, DoDo má za sebou nejlepší pololetí v historii|D|01.9. 06:51|P|Firma DoDo v letošním prvním pololetí rozvezla přes 3,7 milionu zásilek, meziročně o 11 % víc, což zároveň představuje nejlepší pololetní výsledek v h...|X|Firma DoDo v letošním prvním pololetí rozvezla přes 3,7 milionu zásilek, meziročně o 11 % víc, což zároveň představuje nejlepší pololetní výsledek v historii společnosti. Potraviny online podle ní nakupuje víc než pětina obyvatel Česka a trh dlouhodobě pozvolna roste.
+„Letos růst nicméně výrazně zrychlil,“ říká majitel a CEO DoDo Michal Menšík. V Česku se zatím online prodávají jen nízké jednotky procent potravin a některé velké řetězce navíc v poslední době rozvoz nákupů ukončily. „Nízký podíl online nákupů potravin neznamená, že o tuto službu není zájem,“ říká ale Petr Menky, provozní ředitel DoDo. Češi prý patří v rámci EU mezi ty, kteří službu využívají nejčastěji, více mají online nakupovat jen Nizozemci a Malťané.
+Firma zmiňuje odhady, podle nichž může český trh v online prodeji v příštích pěti letech posílit až o 50 %. „Měřítkem pro nás může být třeba britský trh, kde se online prodává zhruba 16 % všech potravin a trh roste stabilním tempem kolem 5 % ročně a nákupy on-line jsou běžnou součástí každodenního chodu domácnosti,“ zmiňuje Menšík.
+Společnosti letos pomohlo k růstu i zesílení spolupráce s Globusem a Tescem. Podle jejích dat připadá zhruba čtvrtina objednávek na víkend, Česi si nákup nechávají vozit především dopoledne a nejsilnějším dnem je pátek. Vůbec nejrušnějším oknem pro doručení je pak sobotní dopoledne mezi 10. a 11. hodinou. Naopak neděle je nejklidnějším dnem týdne.
+Ve druhém čtvrtletí roku průměrná hodnota online nákupu potravin dosáhla zhruba 1840 Kč na nákup, na Slovensku i v Maďarsku je podobná, přičemž před rokem ve stejném období byla tato částka o 150 Kč nižší. Zákazníci nakupují mezi 20 a 25 položkami na jeden nákup.|E|
+|T|Google zaplatí Heurece 400 milionů. Je to nejvyšší kompenzace za porušení hospodářské soutěže v Česku|D|01.9. 06:45|P|Prvoinstanční soud přiznal Heurece náhradu škody. • Google jí musí vyplatit 400 milionů korun. • V minulosti poškodil srovnávače cen v celé Evropě.|X|Prvoinstanční soud přiznal Heurece náhradu škody. • Google jí musí vyplatit 400 milionů korun. • V minulosti poškodil srovnávače cen v celé Evropě.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Seznam na Zboží.cz spouští nakupování pomocí AI agentů|D|01.9. 06:37|P|Seznam je další tuzemskou internetovou společností, která si pohrává s nakupováním pomocí agentů umělé inteligence. V rámci testování spouští AI funkc...|X|Seznam je další tuzemskou internetovou společností, která si pohrává s nakupováním pomocí agentů umělé inteligence. V rámci testování spouští AI funkce pro agentní nakupování. Zatím se to týká služby Zboží.cz a novinka v dohledné době dorazí také na další stránky Seznamu.
+AI má u Zboží pomáhat s dokončením nákupu. “Pro uživatele znamená agentní nakupování další krok k tomu, aby byl online nákup jednoduchý od začátku do konce. V případě novinky se přihlášený uživatel vyhne opakovanému opisování údajů a nejasnostem ohledně dopravy a dokončí nákup dvěma kliky. Samotný nákup ale díky zvolené technologii UCP probíhá stále u obchodníka, který tak má plnou kontrolu nad výsledným nákupem,” shrnula firma.
+V aktuální fázi jsou do agentního nakupování zapojeny e-shopy, kterou jsou na tuto možnost technologicky připravené. Jde například o internetové obchody fungující na e-commerce platformě Shopify a připravuje se zapojení e-shopů běžících na nástroji Shoptet.
+Seznam postupně nasazuje různé AI funkce v rámci svých produktů. Naposledy v Email.cz rozjel možnost vygenerování předmětu zprávy nebo souhrnu došlé pošty.|E|
+|T|ČTÚ rozjíždí dohled nad umělou inteligencí, nové oddělení zahájilo provoz|D|01.9. 06:26|P|Český telekomunikační úřad (ČTÚ) podle plánů od prvního září rozjel nové oddělení pro dohled nad umělou inteligencí, jehož založení vyplývá z evropské...|X|Český telekomunikační úřad (ČTÚ) podle plánů od prvního září rozjel nové oddělení pro dohled nad umělou inteligencí, jehož založení vyplývá z evropského Aktu o umělé inteligenci (AI Act). ČTÚ je jedním z orgánů dozoru nad trhem.
+Jak už Lupa v létě informovala, vedoucí útvaru se stala Anna Hroudová, která doposud působila ve Svazu průmyslu a dopravy ČR jako manažerka digitální ekonomiky. I tam se AI věnovala.
+Hroudová do týmu dostala tři další specialisty. Mají zkušenosti mimo jiné z oborů práva, technologií a analytiky.
+Nová vedoucí a její tým mají nastavit vize, cíle a priority oddělení a převést to do praktického fungování dohledu.
+“Nové oddělení bude po schválení příslušné legislativy zajišťovat výkon dozorových pravomocí ČTÚ v oblasti umělé inteligence a postupně dále rozšíří odborné kapacity potřebné pro praktické uplatňování evropského AI Actu. ČTÚ se na novou roli připravuje již delší dobu, mimo jiné prostřednictvím odborného expertního týmu, který se věnoval přípravě dohledu a potřebných procesů,” informoval úřad.
+“Naším cílem je vybudovat dohled nad umělou inteligencí, který bude odborný, srozumitelný, a především prakticky použitelný. AI Akt přináší zcela nový typ regulace, která propojuje právo s velmi rychle se vyvíjejícími technologiemi. Jednou z našich prvních priorit proto bude nastavit dohled tak, aby se soustředil na skutečná rizika a zároveň dával firmám i dalším organizacím co největší jistotu v tom, co se od nich očekává. Chceme být partnerem, který umí pravidla nejen kontrolovat, ale také napomáhat je srozumitelně převést do praxe,” doplnila Hroudová.|E|
+|T|Solární elektrokolo na cestě do Číny. Už pokořilo Alpy a autor plánuje rekordní trasu přes půlku světa|D|01.9. 05:45|P|Kutil projel Alpy na vlastním nákladním elektrokole se solárními panely • Zrádné vedro sice zlobilo baterii, ale slunce dodalo dostatek energie • Do Č...|X|Kutil projel Alpy na vlastním nákladním elektrokole se solárními panely • Zrádné vedro sice zlobilo baterii, ale slunce dodalo dostatek energie • Do Číny chce vyrazit na pololežatém kole s velkou solární stříškou
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Technologie G-Sync Pulsar od Nvidie s lepším obrazem: AOC s ní chystá 5K herní monitor s velkou úhlopříčkou|D|01.9. 04:39|P|Technologie G-Sync Pulsar je jednou ze zajímavějších novinek v monitorech za poslední dobu (alespoň pokud nejste citliví na blikání obrazu). Zatím je ...|X|Vedle prvních 1100Hz herních LCD pro hráče se teď s herním veletrhem Gamescom objevila ještě jedna zajímavá novinka v herních monitorech: nový model s technologií G-Sync Pulsar. Nvidia ji vydala začátkem letošního roku po hodně dlouhých odkladech. Dosavadní monitory ale všechny byly založené jen na starších 360Hz 1440p panelech LCD, které jsou už dost pozadu. Teď ale Pulsar přichází se zajímavějším monitorem s vysokým rozlišením.
 Agon AGP327KG
 AOC oznámil monitor Agon AGP327KG, který také poskytuje tuto technologii postavenou nad systémem adaptivního obnovování G-Sync (jde bohužel o proprietární funkci Nvidie, na jejíž podporu s grafickými kartami jiných značek můžete zapomenout). Ale Agon AGP327KG je založený na zajímavějším základu: Má panel typu IPS a lesklou povrchovou úpravou a rozlišením 5K (5120 × 2880 bodů) na úhlopříčce 31,5 palce. Jas panelu má být až 500 cd/m², což je pro stmívané podsvícení důležité.

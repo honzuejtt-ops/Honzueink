@@ -1,0 +1,39 @@
+Od 25. srpna 2023 platí v Evropské unii legislativa, která označuje největší online služby za VLOP (Velmi velké online platformy) a VLOSE (Velmi velké internetové vyhledávače). Jejich provozovatelům tím vznikají nové povinnosti v rámci DSA, které mají zamezit negativním dopadům na jejich uživatele. Nyní se do seznamu přidává ChatGPT, Reddit a Roblox. Překročily totiž kritérium 45 milionů aktivních uživatelů měsíčně.
+Čtyři měsíce na změny
+Nové zařazení přidává povinnosti nad rámec původních pravidel DSA, která už služby musely dodržovat. Provozovatelé mají posuzovat systémová rizika spojená se svými službami a algoritmickými systémy. Týká se to například šíření nezákonného obsahu a dopadů na nezletilé. Samostatně se hodnotí také rizika pro základní práva nebo volební procesy.
+Součástí přísnějšího režimu jsou další požadavky na transparentnost a kontrolu. Patří mezi ně nezávislé audity nebo možnost zpřístupnit za stanovených podmínek data výzkumníkům. Komise také získává širší vyšetřovací pravomoci při prověřování funkcí služeb a souvisejících systémů.
+Komise stanovila čtyřměsíční lhůtu pro splnění dodatečných povinností a nově zařazené služby tak budou novým regulím podléhat od 1.ledna 2027.
+ChatGPT jako vyhledávač
+Zajímavé je právní zařazení ChatGPT, které Komise považuje za hybridní službu. Ty se podle DSA kvalifikují jako internetový vyhledávač, takže se největší AI chatbot zařadil po bok Googlu a Bingu od Microsoftu. Důvodem zařazení mezi VLOSE je schopnost odpovídat na uživatelské dotazy a zároveň vyhledávat informace na webu. Reddit a Roblox jsou naopak klasifikovány jako online platformy VLOP. Umožňují totiž veřejné šíření obsahu vytvořeného třetími stranami.
+ChatGPT uváděl ke konci března více než 159 milionů uživatelů v Unii, Reddit hlásil přes 57 milionů uživatelů v EU a Roblox uváděl 46,6 milionu aktivních hráčů v Evropě. Všechny platformy se tak na zařazení na seznam VLOP a VLOSE aktivně připravovaly několik měsíců.
+Evropská komise nyní eviduje 28 služeb označených jako velmi velké online platformy nebo vyhledávače. Jsou mezi nimi jak nejznámější sociální sítě, tak komunikátory, tržiště, obchody s aplikacemi, rezervační weby a samozřejmě i největší erotické weby. Díky nim jsou mezi VLOP zařazeny i dvě české společnosti: WebGroup Czech Republic, a.s. provozující Xvideos (160 milionů uživatelů měsíčně) a NKL Associates s.r.o. s webem XNXX (45 milionů uživatelů měsíčně).
+Aktuální seznam velkých platforem a vyhledávačů vypadá takto:
+- AliExpress (Alibaba Group), Čína, 104,3 milionu
+- Amazon Store (Amazon), USA, 181,3 milionu
+- App Store (Apple), USA, 123 milionů
+- Bing (Microsoft), USA, 119 milionů [VLOSE]
+- Booking.com (Booking.com), Nizozemsko, více než 45 milionů
+- ChatGPT (OpenAI), USA, 159,1 milionu [VLOSE]
+- Facebook (Meta), USA, 259 milionů
+- Google Maps (Google), USA, 275,6 milionu
+- Google Play (Google), USA, 284,6 milionu
+- Google Search (Google), USA, 364 milionů [VLOSE]
+- Google Shopping (Google), USA, 70,8 milionu
+- Instagram (Meta), USA, 259 milionů
+- LinkedIn (Microsoft), USA, 45,2 milionu přihlášených
+- Pinterest (Pinterest), USA, 124 milionů
+- Pornhub (Aylo), Kanada, více než 45 milionů
+- Reddit (Reddit), USA, 57,2 milionu
+- Roblox (Roblox Corporation), USA, 46,6 milionu
+- SHEIN (SHEIN), Singapur, 108 milionů
+- Snapchat (Snap), USA, 102 milionů
+- Temu (PDD Holdings), Irsko, 75 milionů
+- TikTok (ByteDance), Čína, 135,9 milionu
+- WhatsApp (Meta), USA, 51,7 milionu
+- Wikipedia (Wikimedia Foundation), USA, 151,1 milionu
+- X (X Corp.), USA, 115,1 milionu
+- XNXX (NKL Associates), Česko, 45 milionů
+- XVideos (WebGroup Czech Republic), Česko, 160 milionů
+- YouTube (Google), USA, 416,6 milionu
+- Zalando (Zalando SE), Německo, 74,5 milionu
+Zdroj: EU

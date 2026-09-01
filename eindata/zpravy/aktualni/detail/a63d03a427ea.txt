@@ -1,0 +1,21 @@
+Článek
+Největším lákadlem tohoto modelu je už na první pohled skutečnost, že k jeho provozu není potřeba zakopávat do země obvodový drát. Sekačka si hranice zahrady vytvoří sama a při orientaci kombinuje LiDAR s kamerami. Nemusí se přitom spoléhat na klasickou anténu.
+Na papíře to zní téměř ideálně. V praxi jsme ale zjistili, že robotická sekačka stále není zařízení, které člověk jednoduše postaví na trávník a může na něj na celé léto zapomenout. Zároveň nás i215 během testu několikrát přesvědčila, jak daleko se tato technika za poslední roky posunula.
+Konec obvodových drátů?
+Kdo někdy instaloval klasickou robotickou sekačku, dobře ví, že nejotravnější částí nemusí být samotné sekání. Nejprve je potřeba vymezit plochu, obvykle pomocí obvodového vodiče. Ten je třeba položit přesně a při každé změně zahrady řešit jeho nové umístění.
+Navimow i215 jde jinou cestou. Po umístění nabíjecí stanice jsme se pustili do mapování zahrady. Robot se při něm pohybuje po obvodu a pomocí senzorů si vytváří vlastní mapu. Ta se následně upravuje v aplikaci.
+První nastavení tak zabere podstatně méně času než instalace klasického vodiče. Neznamená to ale, že bychom se práci úplně vyhnuli. U členitější zahrady je potřeba pohlídat především umístění nabíjecí stanice, průjezdy mezi jednotlivými částmi pozemku a hranice, které má robot skutečně považovat za trávník.
+I když na internetových fórech je možné narazit na zkušenosti uživatelů, kteří mají s automatickým mapováním problémy, v případě testovaného kousku proběhlo vše zcela bez problémů.
+LiDAR a kamery v akci
+Hlavní technologickou zbraní i215 je kombinace LiDARu a kamerového systému. Robot díky nim nejezdí po zahradě jen podle předem daných souřadnic, ale průběžně vyhodnocuje okolní prostor. V praxi je to znát především při setkání s překážkami.
+Během našeho testování se i215 bez problémů vyhýbala stromům, keřům, zahradnímu nábytku a dalším objektům, které se v trávníku objevily. Robot se před překážkou nezastavil, ale většinou ji plynule objel a pokračoval v naplánované trase. Právě detekce překážek patří mezi nejsilnější stránky testovaného kousku.
+Co se stane, když zahrada není dokonalá? Na dokonale rovném obdélníkovém trávníku je i215 ve svém živlu. Jakmile ale přijdou komplikovanější hranice, úzké průjezdy, nerovnosti nebo místa, kde se terén výrazně mění, je potřeba být opatrnější.
+Sekačka zvládá poměrně slušné svahy, výrobce udává maximální sklon 45 procent. Zároveň ale nejde o model s pohonem všech čtyř kol. Na opravdu rozbitém nebo měkkém terénu proto nebude mít takovou trakci jako některé konkurenční stroje.
+To dobře ukazuje jednu důležitou věc: výsledek výrazně závisí na konkrétní zahradě.
+Seká velmi dobře. Jen ne úplně ke kraji
+Samotné sekání patří mezi důvody, proč jsme si i215 během testu oblíbili. Robot se pohybuje systematicky v rovnoběžných pásech a trávník po několika týdnech vypadá výrazně lépe než při nepravidelném ručním sekání. Sekačka je navíc velmi tichá, takže její provoz neruší posezení na zahradě.
+Po několika dnech už člověk přestane řešit, kdy přesně vyjede. Důležité je, že trávník je průběžně udržovaný a nikdy se nedostane do stavu, kdy by bylo potřeba několik hodin dohánět zanedbané sekání.
+Slabinou je naopak sekání u hranic. Žací kotouč má šířku 22 centimetrů, zatímco celé tělo stroje je výrazně širší. Nože se proto fyzicky nemohou dostat až tam, kam se dostanou kola. Podél některých hran tak zůstává pás trávy, který je čas od času potřeba dosekat ručně.
+Nejde přitom o problém specifický pouze pro náš kus. Stejnou vlastnost popisují zkušenosti samotných uživatelů i některé zahraniční testy. Robotická sekačka tedy sice zvládne většinu zahrady sama, strunovou sekačku ale zatím do důchodu neposílá.
+Aplikace je stejně důležitá jako sekačka
+Bez mobilní aplikace by se i215 obešla jen částečně. Právě v ní se nastavují jednotlivé zóny, zakázané oblasti, plán sekání a další parametry.

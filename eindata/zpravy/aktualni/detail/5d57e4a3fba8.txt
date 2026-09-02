@@ -1,0 +1,52 @@
+V repozitářích Debianu je dostupný populární a pěkně vypadající nástroj Timeshift s grafickým rozhraním. Podobných nástrojů je na Linuxu hodně. Jenže v čem jsou vlastně lepší oproti tomu, kdybych si napsal jednoduchý skript používající  rsync?
+Co se dozvíte v článku
+Navíc vyvstala otázka: Timeshift, podobně jako rsync nebo restic, vytváří kopii souborů na nějaké externí úložiště. Když se mi nenávratně pokazí systémový disk na serveru, stačí koupit nový, vytvořit na něm diskové oddíly tak, jak byly předtím (/boot, /, /boot/efi), a data ze zálohy do těchto oddílů prostě nakopírovat?
+Tak a systémový disk vyhořel
+Asi nejzávažnější situace, na kterou musí být zálohovací plán připraven, je úplné zničení nebo ztráta disku se systémem a daty.
+V takové situaci mě čeká nákup nového disku a obnovení systému i dat ze zálohy tak, aby domácí server znovu běžel jako předtím.
+Kromě obnovení systému do stavu, kdy „běží jako dřív, jako by se vlastně nic nestalo“, mám ještě jeden důležitý požadavek: nechci u této činnosti strávit celou neděli.
+Jde se obnovovat
+Řekněme, že nový disk už mám koupený a na externím disku mám kompletní zálohu kořenového oddílu vytvořenou pomocí Timeshiftu,restic nebo  rsync.
+Nabootuji nějakou živou distribuci Linuxu, v mém případě nejspíše MX Linux, a pustím se do obnovy. Musím na novém disku znovu vytvořit odpovídající diskovou strukturu: oddíl EFI,  /boot, LUKS, LVM a v rámci něj / a  /swap.
+Dále zjistím, že nově vytvořené oddíly ve skutečnosti úplně stejné nebudou, protože každý oddíl má nově vytvořené jedinečné UUID, které se liší od toho na původním disku. Následně bude nutné aktualizovat soubory, které toto UUID obsahují.
+Namátkou zjistím, že UUID se vyskytují přinejmenším v /etc/fstab, /etc/crypttab, a další použití těchto UUID vidím v souborech ve složkách /boot a  /boot/efi.
+Potom budu muset ze zálohy obnovit zvlášť oddíly /boot a /boot/efi a pomocí příkazů jako update-grub,update-initramfs nebo grub-install obnovit správné zavádění systému.
+Je to opravdu všechno, co je potřeba udělat? Poběží potom systém zase jako dřív? Nejsou v tom nějaké pasti?
+Ze zvědavosti hledám na internetu, kde se dá, jestli je výše uvedený seznam činností skutečně kompletní. Nenacházím uspokojivou odpověď v dokumentaci Debianu, Fedory, Archu, FreeBSD ani Slackwaru. Uspokojivou odpověď nedostanu ani od lidí na linuxových IRC kanálech.
+Možná že něco najdu ve starých knížkách, jako je „Linux: Dokumentační projekt“. Bohužel.
+Ruční obnova systému od základu
+Ačkoliv jsem přesnou odpověď na výše uvedené nedostal, je zřejmé, že tento způsob obnovy je jednou z metod, kterou je možné pro obnovu systému použít.
+Její nevýhoda je, že je asi nejnáročnější na odborné znalosti, které si navíc nikde jen tak nepřečteme. Nezbyde nám než si vyhradit sobotní den a metodou pokus omyl si na pokusném disku vyzkoušet, zda to funguje, jak má.
+Pak si vše musíme velice dobře zapsat, protože až za pár let přijde Den D a budu to aplikovat, bylo by na nic, kdyby se mi to tou dobou už vykouřilo z hlavy.
+Případná dobrá znalost tohoto způsobu obnovy však představuje jednu zásadní výhodu, a sice že nám bude stačit jen jeden typ záloh, tedy přes nástroje typu  restic.
+Nová instalace Debianu
+Další, podle linuxových a BSD diskuzních fór používaná metoda obnovy, je udělat novou instalaci Debianu a následně do ní obnovit záložní soubory.
+Oproti předchozí variantě nám toto ušetří přinejmenším nutnost ručně vytvářet oddíly na disku včetně LVM a LUKS, protože to za nás udělá instalátor. To není malá věc, protože grafické nástroje typu GParted a další nejsou pro kompletní práci s LVM vždy ideální a dělat to celé v terminálu může být náročné.
+Pokud však hodláme použít kompletní kopii zálohy /,/boot a /boot/efi, pořád budeme muset řešit přinejmenším změny UUID v jednotlivých konfiguračních souborech a skriptech na disku.
+Bitová kopie disku pomocí dd
+Asi nejpřímočařejší metoda pro zálohu i následnou obnovu je použití příkazu dd, se kterým můžeme vytvořit bitovou kopii disku na záložní externí disk. Pokud o původní disk přijdeme, můžeme tuto bitovou kopii přenést na nový disk. Nebudeme tak muset ručně řešit obnovu diskových oddílů, fstab, zavaděče a dalších souvisejících částí systému.
+Tato metoda má však i značné nevýhody.
+První z nich je velikost zálohy. Pokud máme 1TB disk, bitová kopie vytvořená pomocí dd bude mít při prostém nekomprimovaném použití přibližně 1 TB, a to i tehdy, když je disk zaplněn daty jen z malé části. Potřebujeme tedy externí disk, který má minimálně stejnou kapacitu. Výjimka je, že bychom tento disk neměli zašifrovaný. Pak se může vyplatit udělat kompresi.
+Další problém spočívá v tom, že záloha pomocí dd bude oproti inkrementálním zálohám v restic  trvat dlouho. Na mém osm let starém Dellu Latitude E5470 s USB 3.0 mi vychází přenosová rychlost při použití dd na externí SSD disk zhruba na 140 MB/s. Snadno si spočítáme, že záloha 1TB disku by trvala přibližně dvě hodiny.
+V neposlední řadě tímto způsobem nemůžeme vytvořit konzistentní obraz disku na běžícím systému. Pokaždé proto musíme nabootovat do živé distribuce Linuxu. Během tohoto typu zálohy je tedy náš domácí server mimo provoz.
+Příkaz dd má však i jednu zcela zásadní výhodu: jednoduchost a při správném použití také přímočarost.
+Kopie disku pomocí Clonezilly
+Velmi známým nástrojem je Clonezilla, která slouží jako optimalizovanější alternativa k příkazu dd. Její výhoda je v tom, že „rozumí“ jednotlivým oddílům na disku. Umí zjistit, které bloky jsou použité, a ukládat jen ty. Podporuje MBR, GPT, LVM2 i LUKS.
+Podle struktury našich dat na disku a míry toho, jak máme disk zaplněný, můžeme dosáhnout toho, že výsledné zálohy budou mít menší velikost, než by měly při použití příkazu  dd.
+Clonezillou se zde podrobně zabývat nebudu. Domnívám se totiž, že na rozdíl od této obecné rozvahy existuje na internetu článků typu „jak používat Clonezillu“ dostatek. Pouštět se do toho by bylo nošením dříví do lesa.
+Kombinace dvou různých typů záloh
+Nástroje a technologie jako restic, borg, rsync, tar, Timeshift nebo snapshoty v ZFS, Btrfs nebo LVM řeší jinou část problému: rychlé kopírování nebo uchovávání změn na úrovni souborů či filesystému. V některých situacích i na živém systému.
+Samy o sobě nám však nemusejí stačit ve chvíli, kdy přijdeme o celý disk a chceme systém obnovit téměř lusknutím prstu. Tedy pokud nejsme linuxoví specialisté na obnovu systému od základu.
+V takové situaci musíme obnovit disk nejprve z bitové kopie, kterou jsme si udělali příkazem dd. Jak však z textu snad vyplývá, bitovou kopii je z důvodu časově náročné tvorby mnohem obtížnější udržovat aktuální.
+Proto nám bude zbývat provést další, dodatečný krok, a sice nakopírování souborů ze záloh, které jsme si udělali třeba přes  restic.
+Snapshoty souborového systému
+Řekněme, že v rámci svého systému záloh zkombinuji dvě metody, a to bitovou kopii disku a kopii souborů na disku pomocí rsync,restic a podobně. Už jsem tímto skoro v cíli, ale zbývá poslední věc, a tou je integrita dat v zálohách prováděných na běžícím systému.
+Když zálohuji takový systém na externí disk, neprovede se operace okamžitě. To může v některých případech vést k nekonzistentnímu stavu dat v zálohách. Jako typický příklad se uvádí, že vám na serveru běží třeba vytížená databáze nebo Docker.
+Proto některé souborové systémy umí vytvořit snapshot souborového systému.
+Pro tuto vlastnost je populární zejména FreeBSD, které používá souborový systém ZFS. Ten umí snapshoty jak vytvořit na lokálním disku, tak i přenést na externí disk. Na Linuxu něco podobného dokáže například LVM. Nestane se to však bez našeho přičinění.
+Shrnutí
+Za studentských let, když jsem na osobním počítači používal Windows, bylo dobré co dva roky smazat disk a nainstalovat nový systém.
+O mnoho let později, s mým osobním Macbookem, se tento interval o dost prodloužil, ale přesto s nákupem nového Macu stále instaluji nový systém. Není od věci i Mac čas od času pročistit a navíc je to celkem nenáročné, protože jsem se nemusel vrtat v jeho systémových konfiguracích.
+V případě domácího serveru s Debianem, který mě stál hodně člověkodní nastavování a „hraní si“, nevidím důvod, proč by nemohl běžet třeba 10 a více let.
+Pokud by na serveru, který jsem si zhotovil ze starého Dellu E5470, odešel systémový disk, chci provést rychlou a nenáročnou obnovu.
+Proto mi jako nejschůdnější varianta přijde udělat bitovou kopii disku a na denní bázi provádět automatickou zálohu souborů přes nástroj typu restic. Tato varianta je cenově nejdražší na pořízení — musím si pořídit záložní disk navíc pro bitovou kopii. Ale je nejúspornější na čas a úsilí při obnově.

@@ -1,0 +1,9 @@
+Průša začátkem září potěšil všechny 3D tiskaře vydáním první verze PrusaSliceru 3.0. Samotná aktualizace by nebyla ničím výjimečným, kdyby právě tato verze do základu nepřekopávala dosavadní zažité standardy.
+Průša totiž překopal nejen vzhled, ale také řadu zažitých způsobů, jakými uživatelé ve sliceru pracují a které za dobu existence už tak nějak zestárly.
+Modernější UI a podpora komplexních projektů
+Pokud postavíte vedle sebe nový PrusaSlicer 3.0 s dosavadní verzí 2.9.6, rozdíl poznáte prakticky okamžitě. Novinka je rychlejší, plynulejší a díky vykreslování modelu pomocí OpenGL (stíny, odrazy, ambientní okluze) dává celému softwaru podstatně modernější dojem.
+Nový PrusaSlicer 3.0 podrobněji rozebírá YouTube kanál Martin Zeman 3D:
+Do základu přepracované je i samotné UI. Je jednodušší, minimalističtější a do postranního panelu si můžete nově poskládat oblíbené funkce nebo nastavení, ke kterému se vracíte nejčastěji.
+Přepracované prostředí počítá s komplexnějšími projekty. Jednotlivé položky a dokonce i konkrétní modely lze nově upravit pro konkrétní nastavení nebo 3D tiskárnu, což je skvělé pro lidi s více tiskárnami. V budoucnu dostane PrusaSlicer na přání komunity podporu pluginů psaných v jazyce Lua, které budou moci vytvářet a nahrávat i samotní uživatelé.
+Datum vydání 1. září navíc nebylo zvoleno náhodou. Je to při příležitosti 15 let od vydání vůbec první verze Slic3ru, který v podstatě sloužil jako základ pro většinu dnešních moderních slicerů.
+zdroj: Blog Průša

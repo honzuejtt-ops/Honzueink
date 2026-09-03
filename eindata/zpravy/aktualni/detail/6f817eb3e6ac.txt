@@ -1,0 +1,60 @@
+V předchozích dvou článcích o vývoji aplikací pro osmibitové domácí mikropočítače Atari [1] [2] jsme si (i když jen na poměrně malých programech) ukázali, jak probíhal vývoj a ladění aplikací s využitím původního Atari Assembler/Editoru či novějšího a mnohem rychlejšího assembleru MAC/65 doplněného o debugger nazvaný DDT (oba tyto nástroje dodávala společnost OSS).
+Z pohledu dnešního vývojáře sice mohou všechny tři zmíněné vývojové nástroje vypadat velmi spartánsky, ovšem pro situaci před cca 40–45 lety se ve skutečnosti jednalo o uživatelsky přívětivé nástroje (další revoluce nastala až s příchodem integrovaných vývojových prostředí Turbo Pascalu a dalších programovacích jazyků – to je však jiná oblast informatiky, která se už netýká osmibitových počítačů Atari).
+Nicméně vyvíjet (a do jisté míry i ladit) aplikace bylo možné i s využitím ještě jednodušších prostředků, než jsou assemblery a debuggery. Příkladem může být tuzemský Turbo Monitor, což byl program používaný mj. pro úpravu a převod programů do formátu Turbo 2000 (jak již ostatně naznačuje jeho název). Ovšem díky tomu, že tento nástroj obsahuje kromě klasických operací, které si s monitory spojujeme, i disassembler a navíc i možnost spouštět strojový kód umístěný na libovolné adrese, lze ho použít i pro další činnosti – úpravu her pro nekonečný počet životů, ladění existujících programů, ale i (a to je již poměrně hardcode i na osmdesátá léta minulého století) pro vývoj nových programů „na zelené louce“.
+Co je tedy pro takový vývoj zapotřebí? Ve skutečnosti jen zcela minimální prostředky, o to však větší znalosti (tedy naprostý opak k vibe codingu):
+Vzhledem k tomu, že Turbo Monitor neobsahuje plnohodnotný assembler, který by dokázal převádět symbolická jména instrukcí a symbolické adresy (návěští) do strojového kódu, je nutné tuto činnosti provádět ručně a vrátit se tak vlastně na začátek padesátých let minulého století, kdy ještě plnohodnotné assemblery vlastně neexistovaly. U moderních architektur mikroprocesorů, které obsahují tisíce různých variant instrukcí a nepřeberné množství jejich kódování (adresovací režimy, prefixy atd.), by takový přístup byl velmi složitý, ovšem osmibitový mikroprocesor MOS 6502 je v tomto ohledu mnohem jednodušší. Dokáže totiž vykonat pouze 56 strojových instrukcí a i když mnohé instrukce podporují různé adresovací režimy, je jejich kódování do určité míry pravidelné, což zjednodušuje ruční zápis strojového kódu.
+Nejprve si uveďme seznam všech podporovaných instrukcí:
+Následuje seznam všech podporovaných adresovacích režimů. Právě adresovací režimy odlišují mikroprocesor MOS 6502 od naprosté většiny ostatních mikroprocesorů a umožňují použít odlišný styl programování založený na efektivním použití nulté stránky paměti a jednoho z index registrů (každý z nich má nepatrně odlišné možnosti). Existuje celkem třináct (!) adresovacích režimů, ovšem žádná instrukce nevyužívá všechny dostupné režimy. Některé adresovací režimy jsou určeny pouze pro skoky, další pro implicitní operandy atd.:
+V případě, že všechny možné existující kombinace instrukcí a adresovacích režimů zapíšeme do často používané mřížky 16×16 buněk, budeme moci zjistit, jestli jsou instrukce stejného typu seskupeny podle vyššího nibblu a/nebo nibblu nižšího (nibblem se označuje čtveřice bitů). Získáme tedy tabulku se všemi instrukčními kódy, které jsou na mikroprocesoru MOS 6502 podporovány. Mnohé instrukce ovšem (zcela pochopitelně) za instrukčním kódem očekávají další jeden až dva bajty s konstantou či adresou:
+Výše uvedená tabulka naznačuje, že kódy nebyly instrukcím přiřazeny zcela náhodně, ale že zde skutečně existují nějaká pravidla. Je to ostatně logické, protože pravidelná a do určité míry ortogonální instrukční sada umožňuje zjednodušit dekodér instrukcí (ten na MOS 6502 zabírá přibližně jednu třetinu plochy čipu). Z výše uvedené tabulky lze tato pravidla odvodit. Informace uvedené ve zbytku této kapitoly byly získány především ze stránky The 6502/65C02/65C816 Instruction Set Decoded, která se zabývá (a to do všech detailů) právě tímto tématem.
+Operační kód instrukce, což je vždy jen jeden bajt, lze reprezentovat třemi skupinami bitů aaa, bbb a cc, které tvoří výsledný bajt ve formátu aaabbbcc. Bity ze skupin aaa a cc určují typ instrukce (například LDA), zatímco bity ze skupiny bbb slouží ke specifikaci adresního režimu (například (ZP,X)).
+Na základě hodnoty bitů ze skupiny cc je možné instrukce rozdělit do tří množin (teoretická čtvrtá množina je prázdná):
+Odlišné kódování mají pouze instrukce pro podmíněné skoky. Bity instrukčního kódu mají vzorek xxy10000, kde xx určuje příznakový bit a y určuje, zda se skok provede v případě, že je příznakový bit vynulován či naopak nastaven.
+Pro programátora, který používá Turbo Monitor, nemusí být výše uvedená tabulka se všemi instrukcemi příliš přehledná. Praktičtější je instrukce rozdělit logicky, ideálně na základě bitů ze skupiny cc zmíněné v předchozím textu, do několika menších tabulek, které vlastně mají oproti předchozí tabulce „inverzní“ strukturu (v původní tabulce jsou uloženy kódy instrukcí, kdežto typ instrukce a adresovací režim je zapsán v hlavičkách sloupců a řádků). Výsledky mohou vypadat následovně:
+Operace s akumulátorem, tedy instrukce s bity cc nastavenými na hodnotu 01, mají ortogonální strukturu a tabulka tak pokrývá největší skupinu instrukcí, které podporují shodné adresovací režimy:
+Operace s index registry, bitové posuny a rotace:
+Operace s index registry a skoky:
+Instrukce skoků s podmínkou:
+Zbylé instrukce, které nezapadají do žádného schématu:
+Nyní již máme k dispozici tabulky instrukcí, takže je možné se začít zabývat samotným Turbo Monitorem. Po jeho spuštění by měla obrazovka tohoto nástroje vypadat následovně:
+Obrázek 1: Úvodní obrazovka Turbo Monitoru.
+Autor: tisnik, podle licence: Rights Managed
+Ovládání Turbo Monitoru se provádí jednopísmennými příkazy popř. kombinací Ctrl+klávesa. Příkazy lze rozdělit na práci se zařízeními a práci s pamětí:
+Turbo monitor umožňuje prohlížení obsahu paměti, a to několika způsoby. Pro programátory a hackery (v původním smyslu tohoto slova) je nejužitečnější výpis paměti zkombinovaný se zpětným dekódováním instrukcí. Po zadání příkazu D (disassemble) se monitor zeptá na počáteční adresu (opět – pozor na rozdíl mezi decimálními a hexadecimálními adresami) a poté se po každém stisku Enteru vypíše další instrukce:
+Obrázek 2: Prohlížení obsahu paměti se zpětným dekódováním instrukcí.
+Autor: tisnik, podle licence: Rights Managed
+Snadno si ověříme, že šestá paměťová stránka je prázdná a můžeme do ní zapisovat naše demonstrační příklady:
+Obrázek 3: Prohlížení obsahu paměti se zpětným dekódováním instrukcí.
+Autor: tisnik, podle licence: Rights Managed
+Druhý způsob výpisu obsahu paměti je spuštěn příkazem M neboli monitor. Opět je nutné zadat počáteční adresu. Monitor postupně vypisuje obsah paměti a očekává buď potvrzení klávesou Enter nebo zadání nových hodnot, které se ihned do paměti zapíšou. Nejprve si ukažme pouhý výpis obsahu paměti:
+Obrázek 4: Prohlížení obsahu paměti odlišným způsobem (hexa výpis) s možností úpravy hodnot.
+Autor: tisnik, podle licence: Rights Managed
+Nyní se dostáváme k prvnímu demonstračnímu příkladu. V něm se pouze nastavuje barva pozadí textu na černou. V assembleru vypadá výpis takového kódu jednoduše:
+*= $0600 LDA #0 STA 710 BRK
+Ovšem my dnes nemáme k dispozici assembler, ale jen monitor. Musíme tedy s využitím tabulek zmíněných výše provést ruční převod symbolických jmen instrukcí do strojového kódu:
+A9 00 LDA #0 8D C6 02 STA 710 00 BRK
+Pouze strojový kód tedy vypadá takto:
+A9 00 8D C6 02 00
+A přesně tuto sekvenci bajtů (tak jak je uvedena, tedy ve stejném pořadí) zapíšeme v režimu monitoru na adresy $0600 až $0605:
+Obrázek 5: Zápis strojového kódu v monitoru.
+Autor: tisnik, podle licence: Rights Managed
+Stiskneme Reset pro ukončení režimu monitoru a výběrem příkazu D (disassembler) a zadáním adresy 0600 si ověříme, že zapsaná sekvence šesti bajtů skutečně odpovídá požadovaným instrukcím:
+Obrázek 6: Kontrolní výpis kódu, který jsme do paměti zapsali.
+Autor: tisnik, podle licence: Rights Managed
+Výborně, vše se zdá být zcela korektní. Proto opustíme režim disassembleru (například opět Resetem) a příkazem G provedeme spuštění programu zapsaného v šesté stránce paměti. Program je sice ukončen (konkrétně v našem případě instrukcí BRK), ale obrazovka se zdánlivě vůbec nezměnila – pozadí je stále zelené a nikoli černé. A po dokončení programu se vypíše obsah všech registrů. Z tohoto výpisu lze ověřit, že program skončil na adrese $0605 (správně) a akumulátor A je vynulován (opět správně):
+Obrázek 7: Po spuštění programu příkazem G se vypíšou obsahy registrů, ale zdánlivě se nic dalšího nestalo.
+Autor: tisnik, podle licence: Rights Managed
+Program ve skutečnosti změnil barvu pozadí, ovšem po dokončení jeho běhu si Turbo monitor obnovil vlastní display list i obsah barvových registrů. To je rozumné, protože například při ladění hry je vhodné se vždy vrátit k čitelnému textovému režimu. Ovšem jak dosáhnout toho, aby byly změny provedené programem skutečně vizuálně viditelné? Je to snadné – program zacyklíme – nikdy se tedy nevykoná instrukce BRK. Pro jednoduchost použijeme instrukci nepodmíněného skoku JMP a (opět pro jednoduchost – nechce se mi provádět výpočty adres) budeme skákat na začátek programu, tedy na adresu $0600:
+LDA #0 STA 710 JMP 0600
+Ruční překlad do assembleru (pozor na zápis adresy dolní/horní bajt):
+A9 00 LDA #0 8D C6 02 STA 710 4C 00 06 JMP 0600
+Výsledný strojový kód:
+A9 00 8D C6 02 4C 00 06
+Opět se přepneme do režimu monitoru a program přepíšeme novými instrukcemi:
+Obrázek 8: Takto vypadá náš kód s přidaným nepodmíněným skokem.
+Autor: tisnik, podle licence: Rights Managed
+Disassemblerem si ověříme, že byly jak kódy instrukcí, tak i konstanta a dvě adresy zapsány korektně:
+Obrázek 9: Kontrolní výpis upraveného programu.
+Autor: tisnik, podle licence: Rights Managed
+Po spuštění programu příkazem G 0600 by se sku...
+(Pokracovani na webu)

@@ -1,0 +1,29 @@
+Požádal jsem Ministerstvo práce a sociálních věcí (MPSV) o poměrně jednoduchá data k odvoláním ve věci dávky státní sociální pomoci: datum doručení, datum vyřízení a výsledek. Pokud by nebylo možné poskytnout anonymizovaný seznam jednotlivých případů, chtěl jsem alespoň týdenní souhrny.
+Odpověď na mou žádost podle zákona č. 106/1999, o svobodném přístupu k informacím, je zajímavější než samotná čísla.
+K 19. srpnu 2026 MPSV evidovalo 27 099 postoupených odvolání ve věcech nepojistných sociálních dávek. Tento počet ale není automaticky generován z informačních systémů. Ministerstvo píše, že jej pracovníci zaznamenávají manuálně při práci s příchozí a odchozí poštou.
+Kolik z těchto odvolání se týká právě nové dávky státní sociální pomoci, ministerstvo přesně neví. Používá „kvalifikovaný odhad“ 60 %, tedy asi 16 200 případů.
+U nové sociální dávky zavedené v roce 2025 tak ministerstvo nedokáže z vlastní evidence jednoduše zjistit ani počet odvolání, která se jí týkají.
+Zákon nám to neukládá
+Nejzajímavější je vysvětlení: „MPSV ve svých statistických datech v požadovaném detailu informace nesleduje, neboť mu žádný právní předpis tuto povinnost neukládá.“
+Požadované údaje podle ministerstva nejsou ani součástí dostupných sestav jeho informačních systémů. Musely by se ručně hledat v jednotlivých spisech. Z hlediska plnění zákonných povinností může být taková odpověď naprosto korektní. Z hlediska řízení organizace je ale poněkud překvapivá.
+Zákon totiž nemusí ministerstvu přikazovat, aby vědělo, kolik má rozpracovaných odvolání, jak dlouho je vyřizuje nebo jak často jsou prvostupňová rozhodnutí rušena. To jsou informace, které by mělo chtít znát samo. Co se neměří, to se obtížně řídí.
+U odvolací agendy bych za základní provozní ukazatele považoval alespoň počet příchozích a vyřízených případů, jejich stáří a výsledek řízení. Zvlášť u nového zákona.
+Jak tedy ministerstvo pozná, že nový systém funguje?
+Odvolání jsou přirozeným zdrojem zpětné vazby. Pokud se proti určitému typu rozhodnutí lidé odvolávají výrazně častěji, může být problém v zákoně, metodice, informačním systému nebo rozhodovací praxi. Pokud odvolací orgán některý typ rozhodnutí často mění nebo ruší, je to ještě významnější signál.
+A pokud počet nevyřízených odvolání dlouhodobě roste, jde o problém kapacitní.
+Nic z toho samozřejmě z odpovědi MPSV neplyne. Nelze z ní tvrdit, že ministerstvo zákon aplikuje špatně. Plyne z ní ale, že data potřebná pro podobné vyhodnocování nemá v požadovaném detailu běžně k dispozici.
+Elektronický spis, který se musí ručně pročítat
+Celá situace je o něco bizarnější tím, že jde o novou agendu vedenou elektronicky.
+Přesto by podle MPSV bylo nutné nejprve ručně projít všech 27 099 spisů, určit, které se týkají dávky státní sociální pomoci, a u přibližně 16 200 z nich následně vyhledat datum doručení, datum vyřízení a způsob skončení řízení.
+Ministerstvo tuto práci odhaduje na 92 099 minut, tedy 1 534,98 hodin.
+Je to pěkná ilustrace rozdílu mezi elektronizací a digitalizací. Že je dokument elektronický ještě neznamená, že obsahuje strukturovaná data. A elektronický spis nazaručuje, že lze agendu datově řídit.
+Pokud při založení odvolání systém zná typ řízení a datum doručení a při jeho uzavření zná datum a výsledek, měly by tyto údaje vznikat jako přirozený vedlejší produkt práce úředníka. Ne jako informace, které je později potřeba znovu vytěžovat z tisíců dokumentů.
+K tomu opravdu není potřeba umělá inteligence ani komplikovaný datový sklad. Stačilo by několik strukturovaných polí.
+Informace za 360 tisíc, které by mělo chtít samo ministerstvo
+MPSV vyčíslilo poskytnutí požadovaných dat na 360 720 Kč. Pokud je skutečně nutné jednotlivé spisy ručně procházet, je pochopitelné, že ministerstvo takovou žádost považuje za mimořádně rozsáhlé vyhledávání.
+Podstatnější je jiná otázka: jak by ministerstvo odpovědělo vlastnímu vedení, kdyby ministr chtěl vědět, kolik odvolání proti nové dávce přišlo, jak rychle je úřad vyřizuje a jak dopadají? Také by bylo potřeba 1 500 hodin ruční práce?
+Právě zde se z kuriózní odpovědi na informační žádost stává docela dobrý obrázek způsobu řízení státní správy. Data nejsou něco, co bychom měli začít získávat teprve ve chvíli, kdy si je někdo vyžádá podle zákona č. 106/1999 Sb.
+U nové a společensky významné agendy by měl být monitoring jejího fungování součástí návrhu procesu od začátku. Ne proto, že to přikazuje paragraf. Ale proto, že bez něj těžko poznáme, zda systém funguje.
+A odpověď MPSV v tomto ohledu obsahuje možná důležitější informaci, než jakou jsem původně žádal: ministerstvo zpracovává desítky tisíc odvolání, ale základní údaje o jejich průběhu a výsledcích nemá připravené tak, aby je mohlo průběžně analyzovat.
+Co se neměří, to se neřídí.
+A „zákon nám to neukládá“ není u řízení ministerstva právě přesvědčivá omluva.

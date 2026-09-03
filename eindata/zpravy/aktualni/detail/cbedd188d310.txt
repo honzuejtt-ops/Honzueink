@@ -1,0 +1,19 @@
+Ministerstvo zdravotnictví oficiálně spustilo vylepšenou mobilní aplikaci EZKarta, digitální zdravotní knížky, která se vyvinula z někdejšího elektronického očkovacího průkazu Tečka. Nově vedle očkování ukazuje přehled preventivních prohlídek a screeningových vyšetření, laboratorní výsledky, kartu dárce krve, lékařské posudky nebo vybrané údaje ze sdíleného zdravotního záznamu, popisuje resort. Dosavadní verze příliš zájmu nevyvolala – má mít sice zhruba 3,1 milionu stažení, ale denně EZKartu podle údajů ministerstva využije přibližně 34 tisíc lidí.
+Nová EZKarta má lidem zajistit jednodušší a bezpečnější přístup k údajům, které o nich již ve zdravotnickém systému existují, a postupně omezovat situace, kdy pacient musí zdravotní informace mezi jednotlivými poskytovateli přenášet sám.
+Aplikace dostala kompletně přepracované uživatelské prostředí, kromě jiného tmavý režim a nové funkce (v přehledu níže). Jednou z nejvýznamnějších novinek jsou laboratorní výsledky, podle ministerstva je v centrálním systému na 450 milionů laboratorních záznamů, historická data byla získána až pět let zpětně a v první fázi projekt zpřístupňuje deset vybraných laboratorních parametrů a jejich hodnoty. Data mají být aktualizována přibližně v měsíčním intervalu.
+Přihlášení do EZKarty využívá elektronickou identitu. Po prvním ověření identity je přístup chráněn prostřednictvím zabezpečení mobilního telefonu, například biometrií nebo systémovým PINem. Uživatelé mohou spravovat také profily svých nezletilých dětí a dalších osob, k jejichž údajům mají oprávnění.
+„Zásadně rozšiřujeme množství informací, ke kterým se lidé prostřednictvím aplikace dostanou, od prevence a screeningů přes laboratorní výsledky až po očkování, lékařské posudky nebo vybrané údaje ze zdravotní dokumentace. Postupně připojujeme další nemocnice a zdravotnická zařízení,“ uvádí ministr zdravotnictví Adam Vojtěch. Do systému sdílené zdravotní dokumentace je v současnosti zapojeno více než 30 nemocnic.
+Rozšiřuje se i elektronický očkovací průkaz a dostupné jsou vybrané důležité zdravotní údaje, například krevní skupina, evidované alergie, informace o prevenci a screeningu. Ministerstvo zdravotnictví zveřejnilo následující přehled nejdůležitějších funkcí:
+- preventivní prohlídky včetně jejich termínů, detailu poslední návštěvy a informace o aktuálním či budoucím nároku
+- screeningová vyšetření včetně informací o jednotlivých programech a nároku na vyšetření
+- laboratorní výsledky včetně historie hodnot a referenčního rozmezí
+- elektronický očkovací průkaz včetně detailu jednotlivých dávek
+- elektronické posudky o zdravotní způsobilosti k řízení motorových vozidel
+- Sdílený zdravotní záznam s vybranými důležitými údaji
+- přehled předepsaných a vydaných léčiv
+- sdílenou zdravotní dokumentaci ze zapojených zdravotnických zařízení
+- profily nezletilých dětí a dalších osob, k jejichž údajům má uživatel oprávnění
+- informace k dárcovství krve a plazmy
+- Kartu „Dárce krve“ s informacemi k dalšímu darování
+- služby Moje dokumenty a Zdravotní zásilky
+EZKarta má být součástí širší infrastruktury elektronického zdravotnictví v rámci digitaliizačních projektů, která propojí centrální registry, portál eZdraví, služby pro bezpečnou výměnu zdravotnických dat, elektronické žádanky a informační systémy poskytovatelů zdravotních služeb.

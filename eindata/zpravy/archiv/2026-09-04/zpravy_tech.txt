@@ -1,4 +1,44 @@
+|T|Netflix a další na víkend: Chad Powers a nová sezóna Gentlemanů. Mayday nebo Star Wars: Mandalorian a Grogu|D|04.9. 15:45|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Všichni o něm jen mluví, ale v Berlíně si už na něj sáhnete. Drželi jsme v ruce skládací iPhone|D|04.9. 15:15|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Zadání znělo: Najdi na webu nějaká čísla. Roj agentů OpenAI si k tomu zřídil další tajnou nástěnku|D|04.9. 14:45|P|V červnu se na německé programátorské wiki objevilo varování. Jeden z agentů oznámil ostatním, že moderátor maže jejich stránky podle abecedy, a porad...|X|V červnu se na německé programátorské wiki objevilo varování. Jeden z agentů oznámil ostatním, že moderátor maže jejich stránky podle abecedy, a poradil jim založit zálohu se jménem začínajícím na ZZZ, aby přišla na řadu jako poslední.
+
+Připomíná to kauzu Hugging Face, že? Tentokrát si ale roj ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Hackeři jdou po uživatelích Signalu, varuje NÚKIB|D|04.9. 14:40|P|Aktéři napojení na Rusko se zaměřují na uživatele komunikační aplikace Signal. Nesnaží se přitom prolomit její šifrování, ale přimět uživatele, aby sa...|X|Aktéři napojení na Rusko se zaměřují na uživatele komunikační aplikace Signal. Nesnaží se přitom prolomit její šifrování, ale přimět uživatele, aby sami útočníkům umožnili přístup ke svému účtu. Informace vydal jako varování Národní úřad pro kybernetickou a informační bezpečnost (NÚKIB) spolu s analýzou útoků a doporučením, jak Signal bezpečně používat. Dosud zaznamenané kampaně podle úřadu cílily především na osoby působící v oblasti bezpečnosti, státní správy či politiky.
+Útočníci využívají techniky sociálního inženýrství a phishingu, jejichž cílem je přimět uživatele k propojení cizího zařízení s jejich účtem nebo ke sdělení PIN kódu či dalších přístupových údajů. Mezi nejčastější scénáře patří falešné zprávy vydávající se za technickou podporu, podvržené odkazy nebo škodlivé QR kódy.
+Primární metodou je linked-device phishing. Útočník nejprve zjistí telefonní číslo oběti a předpokládá, že používá Signal. Následně jí pošle zprávu, která se tváří například jako upozornění technické podpory aplikace. Další variantou jsou škodlivé QR kódy, které se mohou vydávat například za pozvánku do skupiny. Naskenováním kódu nebo kliknutím na odkaz může uživatel nevědomky propojit své konto s útočníkovým zařízením a umožnit mu přístup ke své komunikaci.
+NÚKIB doporučuje především pravidelně kontrolovat seznam zařízení připojených k účtu a ta neznámá okamžitě odebrat. Uživatelé by měli také aktivovat funkci Zámek registrace. U citlivější komunikace NÚKIB doporučuje využívat mizející zprávy a omezit možnost dohledání účtu podle telefonního čísla. Podezřelou zprávu je vhodné ověřit přímo u jejího údajného odesílatele jiným komunikačním kanálem. Aplikaci by uživatelé měli stahovat pouze z oficiálních stránek Signalu.
+Podobné útoky byly zaznamenány také na Ukrajině, v Německu, Francii nebo Nizozemsku. Úřad upozorňuje, že jejich skutečný geografický rozsah může být širší.|E|
+|T|Německo odpálilo balistickou raketu. Naposledy je mělo ve výzbroji před více než třiceti lety|D|04.9. 13:56|P|Moderní Německo se krátce po svém znovusjednocení v roce 1990 zbavilo zásob balistických raket. Zatímco někdejší západoněmecký Bundeswehr měl ve výzbr...|X|Moderní Německo se krátce po svém znovusjednocení v roce 1990 zbavilo zásob balistických raket. Zatímco někdejší západoněmecký Bundeswehr měl ve výzbroji americké pershingy, východ disponoval sovětskými raketami typu Scud, Točka a Oka.
+
+Po více než třiceti letech se ale vše mění. Zkraje léta ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Vše, co Apple ukáže příští týden na keynote: tři iPhony, dvoje Apple Watch a nová sluchátka|D|04.9. 13:32|P|Nový šéf Applu oznámí na podzimní keynote šest prémiových zařízení • Uvidíme první skládací telefon i výkonné chytré hodinky se satelitní konektivitou...|X|Nový šéf Applu oznámí na podzimní keynote šest prémiových zařízení • Uvidíme první skládací telefon i výkonné chytré hodinky se satelitní konektivitou • Levnější základní modely smartphonů dorazí na trh až příští rok
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Cyberpunkové město z ASCII znaků působí skoro jako skutečný svět. Nechybí auta, chodci ani budovy s interiéry|D|04.9. 12:45|P|Vývojář stvořil průchozí cyberpunkové město vygenerované z ASCII znaků • Vlastní engine zobrazuje budovy i chodce pomocí chytrého vysílání paprsků • P...|X|Vývojář stvořil průchozí cyberpunkové město vygenerované z ASCII znaků • Vlastní engine zobrazuje budovy i chodce pomocí chytrého vysílání paprsků • Prototyp běžící v jednom souboru nabízí vstup do budov i jízdu výtahem
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Robotický vysavač natočil manželčinu nevěru. Muž vyhrál soud a odškodné, přesto skončil za mřížemi|D|04.9. 12:40|P|Robotický vysavač nejdříve pomohl odhalit manželčinu nevěru, následně však dostal manžela za mříže. Ano, toto je skutečný případ jednoho manželského p...|X|Místo aby uklízel a hleděl si svého, pomohl odhalit manželčinu nevěru. Záběry z kamery robotického vysavače posloužily jako důkaz u soudu, díky kterým získal muž odškodnění více než 330 tisíc korun. Jenže ta stejná nahrávka jej pak nakonec dostala do vězení.
+Podezření začalo u zubního kartáčku
+Příběh začal v roce 2023, kdy Tchajvanský muž na jejich rekreačním domě objevil cizí zubní kartáček. Podezření ho vedlo ke kamerovým záznamům, na kterých objevil neznámého muže, který v minulosti vezl jeho manželku domů.
+O několik měsíců později se tak muž rozhodl ovládat prostřednictvím mobilní aplikace robotický vysavač na dálku. Původně chtěl jen přes reproduktor vysavače předat manželce vzkaz, nicméně aplikace mu současně zobrazila živý přenos z kamery, které ženu usvědčovaly z nevěry. Záběry si proto začal nahrávat jako důkaz.
+Nevěra mu u civilního soudu skutečně pomohla. Na Tchaj-wanu sice samotná nevěra není trestným činem, porušení manželských povinností ale může vést k finančnímu odškodnění. Muž po ženě a jejímu milenci požadoval asi 68 tisíc dolarů (asi 1,41 milionu korun), soud mu nakonec uznal částku zhruba 16 tisíc dolarů (okolo 330 tisíc korun).
+Ještě tím případ neskončil. Manželka podala protižalobu kvůli tajnému nahrávání bez souhlasu, s kterou nakonec uspěla. Muž za nezákonné pořízení soukromého záznamu dostal pokutu okolo 98 tisíc korun a pět měsíců vězení. Robotický vysavač tak sice dokázal usvědčit nevěru, zároveň ale muže poslal za mříže.
+zdroje: TechSpot, South China Morning Post|E|
+|T|Konzolová legenda se promění v Lego stavebnici. Útroby PlayStationu skrývají odkazy na herní klasiky|D|04.9. 11:45|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Xiaomi rozšiřuje ekosystém Mijia do Evropy. Propojí domácnost, telefony a auta, zaujala pračka se třemi bubny|D|04.9. 10:45|P|Xiaomi na veletrhu IFA potvrdilo velkou expanzi svých produktů pro chytrou domácnost, známých pod značkou Mijia, na evropský trh. Expanze představuje ...|X|Xiaomi na veletrhu IFA potvrdilo velkou expanzi svých produktů pro chytrou domácnost, známých pod značkou Mijia, na evropský trh. Expanze představuje výrazné posílení vize, podle které by se měly v budoucnu propojit obytné prostory, chytrá osobní zařízení a automobily do jednoho funkčního celku ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Xiaomi rozšiřuje ekosystém Mijia do Evropy, propojí domácnost, telefony a auta. Zaujala pračka se třemi bubny|D|04.9. 10:45|P|Xiaomi na veletrhu IFA potvrdilo velkou expanzi svých produktů pro chytrou domácnost, známých pod značkou Mijia, na evropský trh. Expanze představuje ...|X|Xiaomi na veletrhu IFA potvrdilo velkou expanzi svých produktů pro chytrou domácnost, známých pod značkou Mijia, na evropský trh. Expanze představuje výrazné posílení vize, podle které by se měly v budoucnu propojit obytné prostory, chytrá osobní zařízení a automobily do jednoho funkčního celku ...
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Listopadová sluneční superbouře vychýlila navigace o více než deset metrů a ohrozila autonomní vozidla|D|04.9. 10:05|P|Geomagnetická bouře z listopadu 2025 vážně narušila přesnost satelitní navigace • Výpadky GPS dosáhly 10 metrů a ohrozily dokonce i autonomní dopravu ...|X|Geomagnetická bouře z listopadu 2025 vážně narušila přesnost satelitní navigace • Výpadky GPS dosáhly 10 metrů a ohrozily dokonce i autonomní dopravu • Velké štěstí bylo že sluneční erupce nezasáhla hlavní zemědělskou sezónu

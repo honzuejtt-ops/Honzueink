@@ -1,0 +1,3 @@
+Vývojář stvořil průchozí cyberpunkové město vygenerované z ASCII znaků • Vlastní engine zobrazuje budovy i chodce pomocí chytrého vysílání paprsků • Prototyp běžící v jednom souboru nabízí vstup do budov i jízdu výtahem
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

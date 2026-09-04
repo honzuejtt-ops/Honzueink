@@ -1,4 +1,3 @@
-|T|Žádné zprávy|D||P|Nebyly nalezeny.|X|Zkuste to později.|E|
 |T|Dokončování jádra Linux 7.3 bude náročné, Intel připraven pro Nova Lake|D|03.9. 22:00|P|Cold Reset Recovery v ovladači Intel Xe a Intelligent Bias Control v3 pro Panther Lake v jádru Linux 7.4, Mesa 26.2.2 zapíná podporu GPU v Intel Nova ...|X|Cyklus vývoje jádra Linux verze 7.3 bude tvrdej
 Greg Kroah-Hartman varuje. Jádro Linux 7.3 je sice na cestě, ale proces jeho dokončení je zatížen obrovským množství hlášení chyb generovaných s AI / LLM, takže to bude pro správce jádra hodně náročné a divoké.
 Vývojáři jádra mají na krku bezprecedentní množství hlášených chyb generovaných pomocí AI, resp. velkých jazykových modelů (LLM). Ve velkém množství případů jde spíše o spam, než něco produktivního, opravy jsou nekvalitní, jsou zde i falešně pozitivní hlášení chyb a to vše přetěžuje všechny lidské vývojáře a správce. Není o nic nového na co by si už delší dobu nestěžovali i další včetně samotného Linuse.
@@ -108,6 +107,7 @@ Eligible state and local governments, critical infrastructure operators, nonprof
 |T|EZ Karta konečně dává větší smysl. Pohlídá vám prevence i řidičák, na eRecepty se ale stále čeká|D|03.9. 12:45|P|Staronová mobilní aplikace EZKarta, která vznikla z Tečky, dostává zásadní aktualizaci • V nové verzi 5.0 ukáže výsledky preventivních vyšetření i pos...|X|Staronová mobilní aplikace EZKarta, která vznikla z Tečky, dostává zásadní aktualizaci • V nové verzi 5.0 ukáže výsledky preventivních vyšetření i posudky pro řidičák • Namísto rodného čísla nabízí QR kód, na integraci eReceptů se ale stále čeká
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Žádné zprávy|D|03.9. 12:00|P|Nebyly nalezeny.|X|Zkuste to později.|E|
 |T|Legora reviewed 41 documents in minutes with GPT-6 Astra|D|03.9. 12:00|P|Legora used GPT-6 Astra to review 41 documents in minutes, find all four planted errors, and improve performance by nearly 40% in this financial-revie...|X|Legora reviewed 41 documents in minutes with GPT‑6 Astra
 Legora uses Astra to improve accuracy, completeness, and reliability, while keeping final judgment with legal professionals.
 Results

@@ -16,4 +16,4 @@ Rozšiřuje se i elektronický očkovací průkaz a dostupné jsou vybrané důl
 - informace k dárcovství krve a plazmy
 - Kartu „Dárce krve“ s informacemi k dalšímu darování
 - služby Moje dokumenty a Zdravotní zásilky
-EZKarta má být součástí širší infrastruktury elektronického zdravotnictví v rámci digitaliizačních projektů, která propojí centrální registry, portál eZdraví, služby pro bezpečnou výměnu zdravotnických dat, elektronické žádanky a informační systémy poskytovatelů zdravotních služeb.
+EZKarta má být součástí širší infrastruktury elektronického zdravotnictví v rámci digitaliizačních projektů, která propojí centrální registry, portál eZdraví, služby pro bezpečnou výměnu zdravotnických dat, elektronické žádanky a informační systémy poskytovatelů zdravotních služeb. Řada uživatelů si ale dlouhodobě stěžuje na funkčnost.

@@ -1,0 +1,16 @@
+Článek
+(Od našeho zpravodaje)
+Je rostlina spokojená, nebo naopak žíznivá? Právě na této otázce stojí celý projekt Plantiemoji od společnosti Plantalk. Nápad je pozoruhodně jednoduchý: místo toho, aby majitel pokojovky sledoval v aplikaci několik čísel a přemýšlel, co vlastně znamenají, rostlina mu svůj stav ukáže pomocí emoji.
+Plantiemoji funguje jako chytrý senzor zapíchnutý v květináči. Sleduje čtyři základní parametry – vlhkost půdy, intenzitu světla, teplotu a vlhkost vzduchu. Data následně kombinuje s informacemi o konkrétním druhu rostliny a převádí je do jednoduchého vizuálního signálu.
+Na displeji přímo v květináči se tak místo procent a grafů objeví jeden z řady výrazů. Podle výrobce zařízení v současnosti zvládne zhruba 40 různých emoji reakcí – od spokojeného výrazu až po signál, že rostlině něco chybí.
+Fitness náramek pro květinu
+Je to trochu jako fitness náramek pro květinu. Jen místo počtu kroků sleduje, jestli má dost vody, světla a vhodné podmínky pro růst. A zatímco běžný senzor řekne například „vlhkost půdy 32 procent“, Plantiemoji se snaží odpovědět na podstatně praktičtější otázku: Je moje kytka v pohodě?
+Samotný senzor je ale jen část celého systému. S Plantiemoji je propojena aplikace Plantalk, která využívá umělou inteligenci k identifikaci rostlin a doporučením péče.
+Výrobce uvádí databázi více než 14 tisíc druhů. Uživatel může rostlinu vyfotit a aplikace následně zohlední její druh společně s údaji ze senzoru. Kromě běžných doporučení má systém umět pomocí fotografie či videa pomoci také s odhalením problémů.
+Cílem tedy není jen říct, že je v květináči sucho. Plantiemoji se snaží vysvětlit, co to pro konkrétní rostlinu znamená a co by měl její majitel udělat. Pro někoho, komu doma pravidelně odcházejí i jinak nenáročné pokojovky, může jít o překvapivě užitečnou pomůcku.
+Milionová kampaň
+Než se Plantiemoji dostalo na výstavní plochu v Berlíně, snažil se tvůrce letos v létě sehnat finance na rozjetí masové výroby prostřednictvím crowdfundingové kampaně. Na Kickstarteru projekt odstartoval s cílem vybrat 3000 dolarů (62 500 Kč).
+Nakonec se během kampaně vybralo mnohonásobně více – přesně 64 480 dolarů, tedy v přepočtu více než 1,3 milionu korun. Přispělo 420 lidí a projekt dosáhl 2149 procent původně stanoveného cíle.
+Výrobce nyní upřednostňuje právě podporovatele z Kickstarteru, jejich objednávky mají být vyřízeny jako první. Teprve potom se mají rozběhnout dodávky předobjednávek z běžného prodeje.
+Firma přitom nechce zůstat jen u crowdfundingového experimentu. Jejím cílem je dostat finální verzi zařízení na trh ještě před Vánoci, kdy by se Plantiemoji mohlo stát i poněkud netradičním dárkem pro milovníky pokojových rostlin.
+Na oficiálním webu je zařízení v současnosti nabízeno za 49 dolarů (1000 Kč).

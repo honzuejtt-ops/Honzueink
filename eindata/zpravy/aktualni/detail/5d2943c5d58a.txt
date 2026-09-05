@@ -1,4 +1,4 @@
-|T|[AKTUALIZOVÁNO 5. 9.] DLSS 5 výrazně zvyšuje spotřebu grafických karet. GeForce RTX 5090 s ním ve hře žere až 800 W|D|05.9. 16:38|P|Nová technologie Nvidie používající AI pro vylepšení obrazu her má zřejmě nejen drsný dopad na výkon a snímkovou frekvenci, ale také podle testu o hod...|X|Zítra ráno vyjde ve hře NBA2K27 poprvé technologie DLSS 5, která podle Nvidie přináší „neuronální vykreslování“, střízlivěji by se ale asi mělo mluvit o filtru, který vytváří iluzi větší fotorealističnosti pomocí AI postprocessingu, protože 3D scéna se předtím vykresluje zcela konvenčně. DLSS 5 ale potřebuje hodně výkonu. A zdá se, že to také bude provázeno výrazným nárůstem spotřeby proti tomu, co grafické karty GeForce berou běžně.
+Zítra ráno vyjde ve hře NBA2K27 poprvé technologie DLSS 5, která podle Nvidie přináší „neuronální vykreslování“, střízlivěji by se ale asi mělo mluvit o filtru, který vytváří iluzi větší fotorealističnosti pomocí AI postprocessingu, protože 3D scéna se předtím vykresluje zcela konvenčně. DLSS 5 ale potřebuje hodně výkonu. A zdá se, že to také bude provázeno výrazným nárůstem spotřeby proti tomu, co grafické karty GeForce berou běžně.
 Co vás bude DLSS 5 stát
 Spotřeba grafických karet GeForce ve hrách je poměrně složitá věc. Řízení taktů u těchto GPU se nechová tak jako třeba procesory AMD, které zvyšují frekvence, dokud víceméně přesně nevyčerpávají stanovený limit spotřeby. Reálná spotřeba GPU Nvidia v zátěži se může dost lišit od jejich TDP (respektive TGP, jak Nvidia celkovou maximální spotřebu grafické karty označuje) podle charakteru zátěže a míry využití jednotek GPU. Projevuje se to i v recenzích, kde může vznikat dost odlišný obrázek o energetické efektivitě karty podle toho, kterou hru nebo zátěž redakce používá k testování spotřeby.
 Vypadá to, že DLSS 5 by mohlo být nepříjemné překvapení pro ty, kdo se řídili právě podle výsledků ve hrách, kde grafiky GeForce mají úspornější spotřeby, než je jejich TGP. Podle prvních testů, které web Tom’s Hardware provedl ještě s uniklou verzí knihovny DLSS 5 pomocí aplikace OptiScaler, bude tato technologie příkladem aplikace, která naopak GPU Nvidie vytěžuje velmi silně a spotřeba GPU bude vysoká – možná ne úplně nepodobná stress testům typu Furmark.
@@ -19,30 +19,4 @@ Kanál Hardware Unboxed přinesl testy už oficiální implementace DLSS 5 v NBA
 Na GeForce RTX 5060 Ti 16 GB s rozlišením 1440p je snímková frekvence snížena o 64 % (ze 129 na 46 FPS) a s nízkými nastaveními dokonce o 70 % (ze 165, opět možná nějaký limit enginu na 50 FPS).
 Podle Hardware některé mody přidávající DLSS 5 do her neoficiálně fungují před upscalingem, takže ten zvyšuje výkon. Oficiální implementace DLSS 5 funguje až po upscalingu, takže ten nemůže nijak snížit jeho výkonnostní postih a zrychlí jen vykreslování probíhající před DLSS 5 (na rozdíl od generování snímků, které probíhá až po DLSS 5). To znamená, že testy na modifikacích mohou podhodnocovat výkonnostní dopady tohoto nového AI filtru.
 Zdroj: Tom’s Hardware
-Tento text obsahuje affiliate odkazy. Pokud se přes tyto odkazy na vybraných službách zaregistrujete, případně něco nakoupíte, získá z toho redakce malou provizi sloužící pro zajištění našeho fungování. Detaily o affiliate programech najdete zde.|E|
-|T|Papírový displej k notebooku. Barevný e-ink od Aceru šetří oči, na hraní ale zapomeňte|D|05.9. 15:45|P|Vadí vám svítící displeje a raději čtete z papíru nebo eink čtečky knih? Nový monitor Acer EP130K slibuje skvělé rozlišení 3200 × 2400 v černobílém a ...|X|Vadí vám svítící displeje a raději čtete z papíru nebo eink čtečky knih? Nový monitor Acer EP130K slibuje skvělé rozlišení 3200 × 2400 v černobílém a 1600 × 1200 v barevném režimu s obnovovací frekvencí 60 Hz na 13,3" úhlopříčce. Navíc je i dotykový.
-
-Jde reálně o eink, obraz na něm tedy zůstává i ...
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
-|T|OSN chce překreslit mapu světa. Co to vlastně znamená v praxi, proč nám mapy lžou a jak vypadá ideální Equal Earth|D|05.9. 13:45|P|Na většině map vypadá Rusko větší než ve skutečnosti • A co teprve takové Grónsko, které je reálně 14× menší než Afrika • OSN schválila rezoluci, kter...|X|Na většině map vypadá Rusko větší než ve skutečnosti • A co teprve takové Grónsko, které je reálně 14× menší než Afrika • OSN schválila rezoluci, která vybízí k opravě
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
-|T|Srpnové aktualizace Windows 11 se nevydařily. Ze záhrobí se vrací ukazatel z Windows XP|D|05.9. 11:45|P|Po instalaci aktualizace KB5121003 zamrzaly některé hry. • Volitelná aktualizace KB5120998 zase vyvolala starý typ ukazatele myši. • Na některých počí...|X|Po instalaci aktualizace KB5121003 zamrzaly některé hry. • Volitelná aktualizace KB5120998 zase vyvolala starý typ ukazatele myši. • Na některých počítačích se nenačte tapeta, a tak plocha zůstane černá.
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
-|T|„Rozumní zákazníci vědí, že při nákupu hry platí za licenci,“ říká Sony k soudnímu sporu o vlastnictví|D|05.9. 10:45|P||X|
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
-|T|V Havířově mají chytré křižovatky. V noci svítí na semaforech červená, když přijede auto, dají mu zelenou|D|05.9. 09:45|P|Havířovské semafory v nočních hodinách automaticky pouštějí vozidla • Překročení povolené rychlosti znamená nedobrovolné zastavení na červenou • Moder...|X|Havířovské semafory v nočních hodinách automaticky pouštějí vozidla • Překročení povolené rychlosti znamená nedobrovolné zastavení na červenou • Modernizace deseti křižovatek zvýšila plynulost dopravy a snížila množství exhalací
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
-|T|Proč trvají aktualizace na nový Android tak dlouho – neukazujte prstem jen na výrobce, ale i na Google|D|05.9. 08:45|P|Google za poslední roky zlepšil bezpečnost Androidu a změnil způsob aktualizací • Výrobcům však trvá dlouho, než na novou verzi systému upraví svá pro...|X|Google za poslední roky zlepšil bezpečnost Androidu a změnil způsob aktualizací • Výrobcům však trvá dlouho, než na novou verzi systému upraví svá prostředí • Ideální řešení ale neexistuje, Android zůstává rozdělený na dva světy
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
-|T|Díky novým PowerToys se snáze zorientujete v záplavě oken a jas změníte na více obrazovkách najednou|D|05.9. 07:45|P|PowerToys 0.101 přidávají do výbavy nástroj Zásobník oken. • Umožňuje rychlé přepínání mezi okny jednoho programu. • Spousta stávajících nástrojů byla...|X|PowerToys 0.101 přidávají do výbavy nástroj Zásobník oken. • Umožňuje rychlé přepínání mezi okny jednoho programu. • Spousta stávajících nástrojů byla vylepšena.
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
-|T|NASA vypustila nový vesmírný dalekohled. Oblohu dokáže mapovat 1000krát rychleji než Hubbleův teleskop|D|05.9. 05:45|P|Raketa Falcon Heavy úspěšně vynesla do vesmíru nový teleskop NASA • Přístroj dokáže mapovat oblohu tisíckrát rychleji než slavný Hubble • Hlavním věde...|X|Raketa Falcon Heavy úspěšně vynesla do vesmíru nový teleskop NASA • Přístroj dokáže mapovat oblohu tisíckrát rychleji než slavný Hubble • Hlavním vědeckým cílem bude výzkum tajemné temné hmoty i exoplanet
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+Tento text obsahuje affiliate odkazy. Pokud se přes tyto odkazy na vybraných službách zaregistrujete, případně něco nakoupíte, získá z toho redakce malou provizi sloužící pro zajištění našeho fungování. Detaily o affiliate programech najdete zde.

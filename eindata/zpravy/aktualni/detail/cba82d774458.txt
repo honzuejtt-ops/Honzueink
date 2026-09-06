@@ -1,0 +1,15 @@
+CERN migruje na Debian
+Debian 13 „Trixie“ se do konce roku 2026 stane základem pro více než 2 200 průmyslových počítačů a vestavěných systémů v CERNu, které jsou součástí infrastruktury pro řízení urychlovačů. Tyto počítače jsou propojeny s přibližně 17 000 zařízeními a fungují v rozsáhlém komplexu o rozloze kolem 43 km².
+CERN původně využíval ekosystém Red Hatu, ale změny kolem CentOS a náklady na pokračování této cesty vedly k přechodu na Debian. Analýza odhadovala, že zachování původního řešení by mohlo vyžadovat přibližně 5,4 milionu švýcarských franků, včetně úprav hardwaru a infrastruktury.
+Debian tak organizaci umožní vyřešit část problémů softwarovou cestou bez rozsáhlého přepracování hardwaru. Migrace je navíc přizpůsobena přesně plánovaným provozním cyklům urychlovačů, takže výběr vhodné verze systému je zásadní pro dlouhodobou stabilitu celého zařízení.
+Ubuntu 24.04 rozděluje balíčky firmwaru
+Ubuntu 24.04 LTS nově rozděluje rozsáhlý balík linux-firmware na menší balíčky podle výrobců hardwaru, což Canonical zpětně převzal z Ubuntu 26.04. Původní linux-firmware nyní funguje jako metabalík, který stáhne potřebné dílčí balíčky, takže běžné aktualizace firmwaru mohou být výrazně menší.
+Pokud se například aktualizuje firmware pouze pro hardware jednoho výrobce, není už nutné stahovat celý balík. Změna tak šetří přenášená data, zatěžuje méně infrastrukturu Ubuntu a zároveň umožňuje uživatelům odstranit firmware pro hardware, který jejich počítač nepoužívá.
+Vanilla OS 3
+Vanilla OS 3 s kódovým označením „Reunion“ konečně přináší plnohodnotnou podporu architektury ARM64, na kterou uživatelé dlouho čekali. Nová verze staví na Linuxu 7.1.3 a GNOME 50 a přidává také reprodukovatelné sestavení systému.
+Součástí je nástroj Vanilla Continuity pro zálohování a obnovu systému pomocí snapshotů. Distribuce si zachovává svůj neměnný koncept a snaží se nabídnout bezpečnější a spolehlivější způsob aktualizací. Vanilla OS 3 tak rozšiřuje své možnosti nejen na klasické počítače, ale také na zařízení s ARM64 procesory.
+Arduino VENTUNO Q
+Arduino VENTUNO Q je nová vývojová deska zaměřená na edge AI, robotiku a průmyslovou automatizaci, která se během předobjednávek rychle vyprodala. Za 299 dolarů nabízí NPU s výkonem až 40 TOPS, 16 GB RAM, 64GB eMMC, Wi-Fi 6, Bluetooth 5.3 a 2,5Gb Ethernet.
+Deska běží na Ubuntu 24.04 LTS a je určena především pro lokální zpracování AI, počítačové vidění, rozpoznávání řeči nebo řízení robotů. Arduino uvedlo, že zájem výrazně překonal očekávání a první várka byla vyprodána během velmi krátké doby.
+Nově vydáno
+Ahmed Abdulla oznámil vydání NawaOS 2.0, nové stabilní verze linuxové distribuce tohoto projektu založené na Debianu, která je určena především pro hráče. Projekt Butterbian oznámil vydání verze Butterbian 0.4.0, nejnovější stabilní verze linuxové distribuce založené na Debianu. Abora OS je univerzální linuxová distribuce založená na NixOS vyšla ve verzi 2026.08.28. Vyšel ReignOS 1.0.1, nové vydání herní distribuce založené na Arch Linuxu.

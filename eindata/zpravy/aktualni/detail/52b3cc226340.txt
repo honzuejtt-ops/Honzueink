@@ -1,0 +1,20 @@
+Článek
+(Od našeho zpravodaje)
+Že novinka bude hit, bylo jasné už před startem berlínského veletrhu. V létě se totiž konala crowdfundingová kampaň, ve které tvůrci vybírali peníze na rozjetí masové výroby. Na Kickstarteru se vybralo 1,3 milionu dolarů, v přepočtu zhruba 27 milionů korun.
+Cíl byl přitom nastavený na pouhých 10 tisíc dolarů (208 000 Kč). Do kampaně se zapojily stovky lidí a projekt skončil na více než třináctinásobku původně požadované částky. Na veletrh IFA pak tvůrci přivezli funkční prototyp, který se prakticky již neliší od produkční verze.
+Míč letí přesně za hráčem
+Princip je překvapivě jednoduchý. Hráč si stoupne na hřiště, připraví se ke střelbě a Lumistar Carry se postará o zbytek. Čtyři kamery s celkovým zorným polem 190 stupňů sledují jeho pozici, pohyb i míč. Když hráč udělá určené gesto, robot mu přihrávku pošle automaticky. Nemusí hledat ovladač ani odbíhat k zařízení.
+A právě v tom je hlavní rozdíl proti klasickým vystřelovačům míčů. Carry se nesnaží pouze opakovat jednu a tutéž přihrávku. Jeho motory mohou měnit rychlost, výšku, oblouk i backspin tak, aby přihrávka připomínala tu od skutečného spoluhráče. Do zásobníku se vejdou až čtyři míče a nejkratší interval mezi přihrávkami má být 2,5 sekundy. Maximální dosah výrobce uvádí kolem deseti metrů.
+Robot navíc nemusí sloužit jen jednomu člověku. Systém dokáže současně sledovat až pět hráčů a přihrávky mezi nimi střídat. Z individuálního tréninku se tak může stát malá soutěž, ve které se na obrazovce zobrazují skóre a pořadí.
+Trenér, který nezapomíná
+Tím ale schopnosti Carry nekončí. Robot má fungovat také jako jakýsi digitální trenér. Pomocí kamer a softwaru analyzuje pohyb těla při střelbě – od práce nohou až po pohyb rukou – a sleduje například trajektorii střely nebo její rotaci.
+Výsledkem mají být přehledy a takzvané heatmapy, ze kterých hráč pozná, odkud se mu daří střílet a kde má naopak rezervy. Systém podle výrobce dokáže na základě předchozího tréninku připravovat také další tréninkový plán.
+V praxi tak nejde jen o to dostat co nejrychleji další míč do ruky. Carry má sbírat data o celém tréninku a proměnit je v informace, se kterými může hráč dál pracovat.
+Trénink si lze navíc nastavit podle vlastních potřeb. Uživatel může měnit počet opakování z jednotlivých pozic, intervaly mezi přihrávkami nebo způsob, jakým jsou míče doručovány. Speciální režim Lead-Pass je určený například pro nácvik pohybu bez míče a následného zakončení. Ovládání probíhá přes desetipalcový displej přímo na zařízení nebo prostřednictvím mobilní aplikace.
+Vejde se i do garáže
+Přestože Lumistar Carry působí na hřišti jako poměrně robustní zařízení, výrobce ho navrhl tak, aby s ním dokázal manipulovat jediný člověk. Samotná jednotka váží zhruba 35 kilogramů a má kolečka a madlo. Automatická síť se má rozložit po stisknutí jediného tlačítka, přičemž celé spuštění má zabrat zhruba minutu.
+Na jedno nabití má robot zvládnout až čtyři hodiny intenzivního tréninku. Baterii lze dobít z 20 na 80 procent za méně než dvě hodiny a zařízení může fungovat také přímo ze zásuvky. Nechybí dokonce USB konektor pro nabíjení telefonu.
+Myslelo se i na bezpečnost. Pokud senzory zaznamenají člověka v ochranné zóně zhruba 2,8 metru kolem zařízení, Carry má okamžitě zastavit podávání míčů.
+Na prvních hřištích už letos
+Lumistar bude prioritně doručovat první roboty podporovatelům z Kickstarteru během letošního podzimu. Vše tedy nasvědčuje tomu, že se tyto automatizované systémy objeví na prvních hřištích ještě před Vánocemi.
+Robotického protihráče bylo možné na Kickstarteru získat za 2499 dolarů (52 000 Kč), ve volném prodeji se počítá s cenou 3999 dolarů, což odpovídá zhruba 83 000 Kč. Kdy přesně se novinka dostane na pulty obchodů a zda si ji bude moci koupit kdokoliv, však zástupci společnosti na berlínském výstavišti neupřesnili.

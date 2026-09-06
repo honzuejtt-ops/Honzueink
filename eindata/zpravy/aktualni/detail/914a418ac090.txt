@@ -1,0 +1,11 @@
+Článek
+„Pokud ani vyspělé systémy umělé inteligence společnosti Booking.com nedokážou rozpoznat, že adresa 10 Downing Street není rekreační ubytování, není překvapivé, že podvodníci mohou platformu tak snadno zneužívat,“ citoval server stanice BBC Roryho Bolanda ze spotřebitelské organizace Which?.
+„Samo o sobě by bylo úsměvné, kdyby bylo možné nabídnout k pronájmu nejslavnější britskou adresu. Jenže důsledky takových podvodů jsou vážné. Lidé kvůli falešným inzerátům a phishingovým odkazům riskují ztrátu tisíců liber,“ dodal Boland.
+Fake 10 Downing Street listing exposes 'unfit' Booking dot com, says consumer group https://t.co/a3XYfemDwq
+— BBC News (UK) (@BBCNews) September 2, 2026
+Celá „past“ spotřebitelské organizace proběhla tak, že výzkumníci nahráli na Booking.com nabídku údajného jednopokojového apartmánu v centru Londýna. Inzerát obsahoval fotografii ikonických černých dveří na adrese 10 Downing Street a lákal na „prémiovou polohu v centru města“.
+Organizace nechala inzerát aktivní jen 20 minut, během nichž přišlo 14 žádostí o rezervaci. Potom jejich přijímání sama zastavila. Přestože šlo o zjevně smyšlenou nabídku, Booking.com ji podle organizace odstranil až po více než dvou měsících, 27. srpna.
+Společnost Which? navíc otestovala i další ochranné prvky systému. Prostřednictvím interní komunikace zaslala vlastnímu výzkumníkovi zprávu s externím odkazem na potvrzení platebních údajů. Takové odkazy bývají využívány při podvodech a rezervační portály je zpravidla blokují. V tomto případě však podle Which? k zásahu nedošlo.
+A falešnou kontrolou prošla také smyšlená recenze, která jako vrchol pobytu zmiňovala setkání s kočkou Larrym, oficiálním „hlavním lovcem myší“ v Downing Street.
+„Tento omezený test neodráží zkušenosti založené na milionech nabídek a recenzí zveřejněných na naší platformě,“ uvedl mluvčí Booking.com s tím, že nabídka nebyla po většinu času veřejně dostupná a některé automatické kontroly se proto nespustily.
+Podle společnosti pomáhají odhalovat podvody mimo jiné systémy umělé inteligence, které většinu falešných nabídek odstraní do 24 hodin. Which? však vyzval britského regulátora Ofcom, aby proti podobným případům důsledněji postupoval podle zákona o online bezpečnosti.

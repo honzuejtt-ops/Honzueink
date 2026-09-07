@@ -1,0 +1,17 @@
+Článek
+(Od našeho zpravodaje)
+Na první pohled vypadají jako další bezdrátová sluchátka. Plaud One ale mají ambici stát se něčím podstatně větším. Výrobce je na veletrhu IFA 2026 představil jako nový způsob komunikace s umělou inteligencí – bez nutnosti pokaždé vytahovat telefon, otevírat aplikaci a psát příkaz do chatovacího okna.
+Základem jsou samotná sluchátka a nabíjecí pouzdro. Právě to je ale v případě Plaud One mnohem víc než jen místo, kam se sluchátka odkládají. Má vlastní mikrofony, reproduktor, tlačítko pro komunikaci s AI a také vestavěné mobilní připojení prostřednictvím eSIM. Díky tomu může zařízení fungovat i bez připojeného telefonu.
+Plaud se dosud soustředil především na zařízení určená k zaznamenávání rozhovorů a jejich následnému zpracování umělou inteligencí. Plaud One tento princip posouvá dál. Nejde už pouze o to, aby si uživatel po poradě přečetl přepis a shrnutí.
+Pochopí obsah konverzace
+Novinka má zachycený obsah konverzace pochopit a následně s ním pracovat. AI agent tak může z informací získaných během schůzky připravit například následný e-mail, vytvořit úkol do kalendáře nebo zpracovat podklady do reportu. Plaud počítá také s napojením na služby jako Gmail, Google Calendar, Notion nebo Slack.
+A právě v tom se Plaud One liší od běžných AI diktafonů. U nich je hlavním výstupem textový přepis nebo shrnutí. Tady má být výsledkem rovnou konkrétní akce.
+Jednou z nejzajímavějších částí celého systému je nabíjecí pouzdro. To má vlastní 4G připojení a dokáže díky mikrofonům zachytit dění v místnosti i ve chvíli, kdy uživatel nemá telefon po ruce.
+Pouzdro má čtyři mikrofony s dosahem zhruba pět metrů. Samotná sluchátka mají vlastní mikrofony a mohou rovněž fungovat jako vstup pro záznam. Celý systém tak může sloužit například při osobní schůzce, ale také při telefonování nebo online jednání.
+Plaud One zkrátka nemá být jen dalším příslušenstvím k telefonu. Výrobce se snaží vytvořit zařízení, které bude připraveno ve chvíli, kdy člověk potřebuje něco vyřešit, ale nechce přerušovat činnost kvůli hledání mobilu.
+Stačí stisknout tlačítko
+Klíčovou funkcí je Plaud Agent. K jeho aktivaci slouží tlačítko na pouzdře. Uživatel pak může s AI komunikovat hlasem a říct, co potřebuje.
+Například po schůzce může zadat požadavek, aby z právě proběhlého rozhovoru připravil následný e-mail. AI přitom nemusí vycházet pouze z poslední věty, kterou uživatel pronesl. Smyslem celého systému je pracovat s kontextem předchozí konverzace.
+Právě to je možná nejzajímavější část celé novinky. Člověk nemusí AI všechno znovu vysvětlovat. Pokud má systém k dispozici zaznamenaný rozhovor, může z něj čerpat informace a použít je při plnění následného úkolu.
+V praxi by tak například mohlo stačit po schůzce říct, aby Plaud připravil shrnutí pro kolegy a zároveň vytvořil návrh e-mailu s dalšími kroky.
+Plaud One vyjde případné zájemce na 249 eur, tedy v přepočtu zhruba 6000 Kč. První várka osobního AI agenta se rozebrala už během předobjednávek hned na začátku září. Kdy se objeví novinka ve volném prodeji, zatím není jasné.

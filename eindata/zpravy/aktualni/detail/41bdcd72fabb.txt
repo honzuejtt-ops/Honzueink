@@ -1,0 +1,20 @@
+Objev u myší slibuje naději i pro paměť seniorů
+Vědci ze Stanfordovy univerzity ve výzkumu na myších objevili mechanismus, který s věkem brzdí imunitní úklid v těle. Po jeho zablokování staré myši zůstaly hubenější, silnější a mladší i uvnitř.
+Úklidová četa, která s věkem leniví
+V těle žijí bílé krvinky zvané neutrofily – nejpočetnější imunitní buňky, které se ale dožívají jen několika hodin, typicky kolem dvanácti. Naprostá většina z nich, zhruba devět z deseti, skončí v játrech, slezině a kostní dřeni, kde je mají zlikvidovat dlouhověké buňky zvané tkáňové makrofágy, které v orgánech sídlí už od nitroděložního vývoje. Vedoucí autorka studie Katrin Andreasson jejich roli popisuje bez obalu: „Jsou úklidová četa těla. Velká část toho odpadu jsou právě mrtvé buňky." S přibývajícím věkem ale čím dál víc neutrofilů tuhle likvidaci neprojde a přejde do takzvané senescence – jakéhosi „zombie" stavu, kdy poškozená buňka v tkáni dál žije a dráždí své okolí.
+Přepínač, který makrofágy zpomaluje
+Tělo denně vyrobí asi sto miliard neutrofilů a přesně tolik jich musí makrofágy stihnout denně zlikvidovat. Podle nové studie za slábnoucím úklidem stojí receptor jménem EP2 na povrchu makrofágů – s věkem na něj čím dál silněji působí zánětlivý hormon PGE2, a makrofágy pak neutrofily „pohlcují" pomaleji. Když vědci ve výzkumu na myších tento přepínač u starých zvířat zablokovali, úklidová schopnost makrofágů se vrátila.
+Rovnováha i síla jako u mladých
+Výsledek byl vidět na první pohled. Staré myši (v přepočtu na lidský věk kolem 60 až 70 let) bez fungujícího EP2 měly méně tělesného tuku, víc svalů a jejich rychlost, rovnováha i síla stisku tlapky odpovídaly mladým myším. Rozdíl byl znát i uvnitř těla – v srdci, ledvinách, tlustém střevě i kostní dřeni. Podobně dopadly i testy paměti: staré myši bez EP2 si v bludišti i při rozpoznávání dříve viděných předmětů vedly téměř stejně dobře jako mladé myši, a výrazně lépe než jejich stejně staří vrstevníci s funkčním přepínačem.
+Stejný vzorec i v lidských datech
+Studie se netýkala jen myší. Vědci prošli i rozsáhlou databázi lidských jaterních buněk – mladých, starých i nemocných jater – a poprvé v ní objevili stejný obrazec jako u myší: víc receptoru EP2, méně kontaktu mezi makrofágy a neutrofily a víc stárnoucích neutrofilů. Stejný vzorec se ukázal i v databázi lidského srdce. Nejde ale o klinickou studii na živých lidech, jen o analýzu buněčných dat – žádný závěr o skutečném účinku na člověka z toho zatím vyvodit nejde.
+💡 Zajímavost: Vědci u starých myší sledovali 71 bílkovin v krvi, jejichž hladina se s věkem mění. Po zablokování přepínače EP2 jich 59 zůstalo na úrovni jako u mladých myší – tedy přes osm z deseti.
+Proč se to týká i nás
+Česká populace přitom rychle stárne – na konci roku 2024 u nás žilo přes 2,25 milionu lidí ve věku 65 let a víc, tedy víc než pětina (20,7 %) všech obyvatel, a jejich počet i podíl dál rostou. Právě proto stojí za pozornost i výzkum, který je zatím jen na myších.
+Kdy může pomoct lidem
+Schválený lék, který by u lidí cíleně blokoval jen EP2, zatím neexistuje – běžné protizánětlivé léky tlumí celý hormon PGE2, a mají proto víc vedlejších účinků. Autoři už ale zkoušeli jeden experimentální lék na starých myších: po dvou měsících podávání posunul počty stárnoucích neutrofilů směrem k hodnotám mladých zvířat. Na lidech testovaný nebyl. Než podobný lék projde vývojem a testy, mohou uplynout roky – studie ale ukazuje, na které konkrétní místo v těle by mohl mířit.
+Studii publikovali 16. července 2026 v časopise Science vědci ze Stanfordovy univerzity.
+Ověřeno z:
+- Stanford Medicine — tisková zpráva k výzkumu na myších v časopise Science (16. 7. 2026)
+- Science — Tan et al., "Restored clearance of senescent neutrophils by tissue-resident macrophages limits organ aging" (2026)
+- Český statistický úřad — Aktuální populační vývoj v kostce, data o počtu a podílu seniorů 65+ za rok 2024

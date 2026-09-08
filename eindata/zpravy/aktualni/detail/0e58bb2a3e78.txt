@@ -1,0 +1,7 @@
+Nově představený model ChatGPT-6 Astra ukazuje, kam až se mohou schopnosti AI agentů posunout. Nejnovější model od OpenAI totiž dokázal bez lidského ovládání projít celou logickou hru Portal, přičemž účet za celý experiment se zastavil na „pouhých“ 571,18 dolarech, tedy necelých 12 tisíc korun.
+Sama dohrála Portal od Valve za 24 hodin
+Experiment provedl nadšenec vystupující na sítí X pod přezdívkou cozyblaze. Astra dostávala během hraní snímky obrazovky a informace o pozici hráče. Z nich musela pochopit 3D prostředí, vyřešit jednotlivé hádanky a naplánovat, jak se posunout dál. Pomocí Model Context Protocolu pak hru sama ovládala.
+Celý průchod hrou zabral AI přibližně 24 hodin a vyžádal si asi 3 336 volání nástrojů. „Hra zůstává pozastavena, zatímco model přemýšlí; jakmile model odešle vstupní sekvenci, SPT ji znovu obnoví a provede.“ vysvětluje cozyblaze.
+Výsledkem je téměř dvouhodinový záznam na YouTube, který ukazuje nejzajímavněšjí momenty celého průchodu. Dlouhé pauzy, během nichž AI přemýšlela nad dalšími kroky, jsou z videa vystřiženy.
+Zajímavá je také výsledná cena. Výpočetní náklady podle API vyšly přibližně na 571 dolarů, tedy zhruba 12 tisíc korun. Autor zároveň upozorňuje, že nejde o standardizovaný benchmark a experiment má stále řadu omezení. Přesto jde o zajímavou ukázku schopností ChatGPT-6 Astra, který OpenAI prezentuje jako nejinteligentnější a nejsjednocenější model na světě.
+zdroje: Tom's Hardware, OpenAI, síť X, YouTube

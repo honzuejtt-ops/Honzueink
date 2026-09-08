@@ -1,0 +1,3 @@
+Audacity 4.0 vyšlo po několika letech vývoje a přináší velké změny. • Práce s klipy se přibližuje moderním střižnám. • Uživatelské prostředí bylo předěláno ve frameworku Qt.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

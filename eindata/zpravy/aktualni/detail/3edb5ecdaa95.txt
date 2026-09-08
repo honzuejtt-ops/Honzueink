@@ -1,0 +1,150 @@
+Velké jazykové modely bývají v podnikové praxi stále často vnímány především jako nástroje pro generování textu. Pomohou napsat e-mail, shrnout dokument, připravit marketingový text nebo vytvořit první verzi prezentace.
+Jejich potenciál při přípravě složitějších podnikatelských a investičních projektů je však podstatně širší.
+Zajímavější než otázka „Dokáže LLM napsat podnikatelský plán?“ je totiž otázka jiná:
+Lze několik jazykových modelů zapojit do procesu tak, aby vytvořily virtuální tým s oddělenými rolemi – tvůrce, oponenta, analytika, rešeršéra a editora?
+Takový přístup mění LLM z generátoru dokumentů na nástroj podporující samotné rozhodování.
+Při dlouhé konverzaci s jedním modelem vzniká nenápadný problém. Model postupně přebírá předpoklady, terminologii i směr, který se během dialogu vytvořil.
+To je při běžné spolupráci výhoda. Model zná kontext a nemusíme mu vše vysvětlovat znovu.
+Při kritické oponentuře však může být právě tato kontinuita nevýhodou.
+Pokud model několik hodin pomáhal rozvíjet určitou koncepci, může mít následně tendenci pracovat uvnitř stejného argumentačního rámce. Dokáže projekt kritizovat, ale stále vychází z historie rozhovoru, na jejímž vzniku se sám podílel.
+Proto lze proces rozdělit mezi několik samostatných rolí.
+Typické uspořádání může vypadat například takto:
+Tvůrce rozpracovává koncept, hledá varianty řešení a vytváří pracovní verzi podnikatelského plánu.
+Oponent dostává výsledný dokument bez původní diskuse a jeho úkolem není návrh vylepšovat, ale hledat důvody, proč by mohl selhat.
+Analytik převádí sporné otázky do modelů, scénářů, tabulek a rozhodovacích kritérií.
+Rešeršér vyhledává externí fakta, legislativní rámce, tržní údaje a další informace potřebné k ověření předpokladů.
+Editor nakonec jednotlivé výsledky konsoliduje do jednotné dokumentace.
+LLM tak nepředstavuje jednoho „virtuálního poradce“, ale může fungovat jako infrastruktura pro několik různých poradenských rolí.
+Oddělení rolí lze provést jen pomocí samostatných konverzací. Ještě zajímavější je ale využití modelů od různých poskytovatelů.
+Nejde o hledání jednoho „nejlepšího modelu“.
+Smyslem je vytvoření určité míry procesní nezávislosti.
+Model použitý jako oponent nemusí znát předchozí pracovní dialog, nemusí sdílet stejnou historii kontextu a může mít odlišné charakteristiky při práci s argumentací.
+Workflow může například vypadat následovně:
+Model A → návrh → dokument → Model B → oponentura → Model A nebo C → přepracování → Model B → druhá oponentura.
+Mezi jednotlivými rolemi se nepřenáší celá historie konverzace. Přenáší se především artefakty: dokument, tabulka předpokladů, seznam rozhodnutí nebo konkrétní zadání.
+To je důležitý rozdíl.
+Cílem není vytvořit dokonalou nezávislost – tu samotná výměna modelu samozřejmě nezaručuje. Jde ale o procesní oddělení rolí, které snižuje riziko, že systém pouze dále rozvíjí a obhajuje své vlastní předchozí závěry.
+Je to vzdálená analogie běžného profesionálního procesu: autor návrhu a člověk provádějící nezávislou oponenturu by rovněž neměli být stejnou osobou.
+Jednou z nejcennějších rolí LLM nemusí být tvorba nových nápadů.
+Může jí být jejich systematické ničení.
+Po vytvoření první životaschopné koncepce lze modelu změnit úkol. Už nemá hledat další možnosti, ale například vystupovat jako:
+skeptický investor,
+úvěrový analytik,
+provozní ředitel,
+právní oponent,
+dodavatel,
+zákazník,
+regulátor,
+konkurent.
+Každá z těchto rolí hledá jiný typ problému.
+Investor se může ptát, zda je návratnost kapitálu realistická.
+Provozní analytik může zjistit, že plán předpokládá kapacity, které nelze personálně zajistit.
+Právní oponent objeví oblast, která bude vyžadovat specializované právní posouzení.
+Zákazník může zpochybnit základní předpoklad o ochotě za službu platit.
+Výsledkem není jeden verdikt „projekt funguje“ nebo „projekt nefunguje“.
+Výsledkem je mapa rizik a neověřených předpokladů.
+A právě ta bývá při přípravě projektu mnohem hodnotnější než další desítky stran optimistického business plánu.
+Důležitou změnou je také způsob, jakým se zachází s předpoklady.
+Při klasickém brainstormingu snadno vznikne věta:
+„Tato služba by mohla přilákat významnou část zákazníků z okolí.“
+LLM může pomoci takovou formulaci okamžitě rozložit:
+Co znamená „významnou“?
+Jak velké je okolí?
+Jaká je dojezdová vzdálenost?
+Kolik potenciálních zákazníků v oblasti skutečně existuje?
+Jak často by službu využili?
+Jaká je jejich cenová citlivost?
+Co se stane, pokud bude reálná konverze poloviční?
+Z neurčitého tvrzení se tak stává sada měřitelných hypotéz.
+Například:
+spádová oblast → počet potenciálních zákazníků → očekávaná penetrace → frekvence využití → průměrná útrata → roční tržby.
+Každý článek tohoto řetězce lze následně ověřit daty.
+Úlohou LLM zde není odpověď vymyslet. Jeho hodnotou je často právě schopnost položit správnou sérii otázek.
+Podobným způsobem lze pracovat s investičním plánem.
+Tradiční podnikatelský plán někdy implicitně předpokládá, že po první investici budou následovat další fáze podle připraveného harmonogramu.
+LLM lze použít k obrácení otázky:
+Co musí být prokazatelně pravda, aby bylo rozumné investovat do další fáze?
+Vznikne Stage-Gate přístup.
+Další investice se nespustí proto, že „podle plánu je druhý rok projektu“.
+Spustí se až tehdy, když projekt splní předem definované podmínky:
+minimální využití kapacity,
+dosažení určité provozní marže,
+potvrzení zákaznické poptávky,
+dostupnost financování,
+splnění regulačních podmínek,
+přijatelný poměr investice a očekávaného výnosu.
+Velké strategické rozhodnutí se tím mění na sérii menších rozhodnutí.
+LLM je v takovém procesu užitečný hlavně při hledání podmínek, za kterých by další fáze neměla být spuštěna.
+Stejný princip lze aplikovat na finance.
+Jedna tabulka s očekávanými výnosy vytváří falešný pocit přesnosti.
+Mnohem zajímavější je ptát se:
+Co když budou tržby o 30 procent nižší?
+Co když se investiční náklady zvýší o 25 procent?
+Co když se projekt o rok zpozdí?
+Co když nevznikne očekávaná dotace?
+Co když budou náklady na energie nebo personál výrazně vyšší?
+A především:
+Která kombinace problémů projekt skutečně zlomí?
+LLM může pomoci scénáře generovat, strukturovat a hledat jejich vzájemné vazby. Samotné finanční výpočty musí samozřejmě stát na ověřitelných datech a transparentním modelu.
+Rozdíl oproti jednoduchému používání AI je zásadní.
+Model neříká: „Toto je správná hodnota.“
+Pomáhá říct: „Tuto hodnotu potřebujeme zjistit, protože pokud bude jiná, změní se rozhodnutí.“
+Podobně lze přistupovat k právním, technickým nebo regulačním otázkám.
+U složitého projektu nemusí být první úlohou AI vytvořit právní stanovisko.
+Mnohem bezpečnější a často praktičtější je použít ji jako issue spotter.
+Model může například upozornit, že určitá struktura projektu může otevírat otázky veřejné podpory, zadávání zakázek, odpovědnosti, licencování nebo ochrany osobních údajů.
+Výsledkem pak není věta:
+„Toto řešení je právně v pořádku.“
+Výsledkem je například:
+„Před rozhodnutím musí specializovaný právník zodpovědět následujících sedm otázek.“
+To může výrazně zvýšit efektivitu práce s externími odborníky. Ti nedostávají neurčité zadání „podívejte se na projekt“, ale přesně definovaný seznam problematických oblastí.
+Stejný princip lze použít u projektantů, statiků, technologů, daňových poradců nebo bezpečnostních specialistů.
+LLM odborníka nenahrazuje.
+Pomáhá připravit kvalitnější otázky pro odborníka.
+Při tomto způsobu práce se postupně ukazuje ještě jedna zajímavá věc.
+Výsledný PDF dokument nemusí být nejcennějším výstupem.
+Mnohem hodnotnější může být infrastruktura, která vznikla kolem něj:
+registr předpokladů,
+seznam otevřených otázek,
+rozhodovací log,
+evidence zamítnutých variant,
+finanční scénáře,
+seznam externích zdrojů,
+seznam témat vyžadujících odborné ověření,
+historie změn jednotlivých verzí projektu.
+Podnikatelský plán se pak nestává statickým dokumentem, ale aktuálním pohledem na živý rozhodovací model.
+Změní-li se důležitý předpoklad, lze dohledat, která rozhodnutí na něm závisejí.
+To je oblast, kde se LLM velmi dobře doplňuje s klasickými nástroji: verzovacími systémy, databázemi, tabulkami, knowledge-base systémy nebo lokálními RAG řešeními nad projektovou dokumentací.
+Metoda má i jasná omezení.
+LLM nemá nahrazovat:
+autorizovaného projektanta,
+právní stanovisko,
+účetní nebo daňové posouzení,
+statický výpočet,
+reálný průzkum trhu,
+cenovou nabídku dodavatele,
+rozhodnutí regulátora,
+odpovědnost managementu.
+Model může pracovat s chybnými vstupy, může vytvořit přesvědčivě formulovaný nesprávný závěr a může přehlédnout problém, který by zkušenému odborníkovi připadal samozřejmý.
+Proto je vhodné rozlišovat tři vrstvy:
+Generování hypotéz.
+Analýza a oponentura hypotéz.
+Ověření skutečností.
+První dvě lze do značné míry akcelerovat pomocí LLM.
+Třetí musí stále stát na datech, dokumentech a kvalifikovaných lidech.
+Možná nejzajímavější vlastností tohoto přístupu nakonec není rychlost generování textu.
+Je jí možnost velmi levně vytvářet organizovaný konflikt mezi různými pohledy na stejný projekt.
+Jeden model něco navrhne.
+Druhý hledá důvod, proč návrh nefunguje.
+První reaguje.
+Analytický model hledá scénář, ve kterém selžou oba.
+Člověk rozhodne, které argumenty mají smysl a které je nutné ověřit.
+Vzniká iterativní smyčka:
+návrh → oponentura → analýza → ověření → rozhodnutí → nový návrh.
+Právě zde se podle mého názoru skrývá podstatně zajímavější využití generativní AI než v samotném generování dokumentů.
+LLM nemusí být „autor podnikatelského plánu“.
+Může být prostředím, ve kterém podnikatelský plán opakovaně přežívá vlastní oponenturu.
+A teprve potom má smysl předložit jej lidem, jejichž rozhodnutí bude mít skutečné finanční důsledky.
+V navazující případové studii se podíváme na to, co se stane, když je tento způsob práce použit na skutečný multidisciplinární investiční projekt – a jak výrazně může nezávislá oponentura změnit původní koncepci ještě před tím, než se začne investovat.
+Realizuji informační systémy založené na linuxu. Ve volném čase se ale ...
+(Pokracovani na webu)

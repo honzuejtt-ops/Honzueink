@@ -1,0 +1,187 @@
+Na úvodní článek o podpoře SIMD operací v programovacím jazyku Go dnes navážeme. Dokončíme popis (dnes stále ještě experimentálního) balíčku simd/archsimd, ve kterém jsou implementovány všechny nízkoúrovňové SIMD operace. Většina těchto operací je provedena jednou instrukcí spadající do rozšíření instrukční sady SSE (Streaming SIMD Extensions), SSE2 (popř. SSE3 či SSE4), AVX (Advanced Vector Extensions), AVX2 a v případě širokých vektorů nebo sofistikovanějších operací pak AVX-512. V navazujícím článku pak celé téma dokončíme, protože si popíšeme balíček simd (už bez /archsimd), který obsahuje vysokoúrovňové SIMD operace, u nichž již většinou neexistuje přímá vazba mezi volanou metodou a instrukcí provedenou mikroprocesorem.
+Podpora instrukcí z podmnožiny FMA
+První rozšíření instrukční sady o SIMD instrukce, se kterým se v dnešním článku setkáme, se jmenuje FMA, což je zkratka odvozená z celého názvu Fused Multiply–Add. Z tohoto názvu je možné odvodit, že v tomto rozšíření nalezneme instrukci pro provedení operace a·b + c. To ale není vše, protože v rámci tohoto rozšíření byly přidány i další varianty této instrukce, v nichž se navíc mění znaménka jednotlivých operandů popř. pořadí operandů (to má význam především ve chvíli, kdy je jeden z operandů uložen v operační paměti a nikoli v pracovním registru).
+Účelem tohoto rozšíření je (relativně nepatrně) zvýšit výpočetní rychlost, ale především provést výpočet bez mezizaokrouhlení výsledků. Výpočty probíhají nad typem single či double (skalární varianta, která nás ovšem v kontextu dnešního článku nezajímá) popř. nad vektory s typy single a double.
+Ve skutečnosti rozšíření FMA existuje ve dvou variantách, které jsou pojmenovány FMA3 a FMA4. V dnešním článku se zaměříme na FMA3, protože toto rozšíření je v současnosti podporováno jak čipy od AMD, tak i od Intelu (na rozdíl od FMA4, které je prozatím podporováno jen čipy od AMD).
+V rozšíření FMA3 lze nalézt jen relativně malé množství nových instrukcí, k jejichž jménům je ještě přidán postfixový kód popsaný níže:
+U konkrétních instrukcí zavedených rozšířením FMA3 se uvádí i postfixový kód, který určuje pořadí operandů. Tento postfix uvidíme i v následujících kapitolách:
+Demonstrační příklad: základní varianta operace fused multiply-add
+Podívejme se nyní na základní způsob použití operace fused multiply-add. Vstupem bude trojice vektorů v1, v2 a v3, z nichž každý obsahuje čtyři hodnoty typu single resp. float32. Zavoláme přitom metodu nazvanou MulAdd vztaženou k příjemci v1 (první vektor) a předáme této metodě ostatní dva vektory v2 a v3:
+// ----------------------------------------------------------------------
+// Podpora nativních SIMD operací v experimentálním balíčku simd/archsimd
+// ----------------------------------------------------------------------
+ 
+package main
+ 
+import (
+        "fmt"
+        "simd/archsimd"
+)
+ 
+func main() {
+        // konstrukce a inicializace pole s odvozením počtu prvků
+        a1 := [...]float32{1.0, 2.0, 3.0, 4.0}
+        a2 := [...]float32{2.0, 2.0, 2.0, 2.0}
+        a3 := [...]float32{100.0, 100.0, 100.0, 100.0}
+ 
+        // výpis obsahu polí
+        fmt.Println("a1 =       ", a1)
+        fmt.Println("a2 =       ", a2)
+        fmt.Println("a3 =       ", a3)
+ 
+        // převod pole na vektor se čtyřmi prvky
+        v1 := archsimd.LoadFloat32x4Array(&a1)
+        v2 := archsimd.LoadFloat32x4Array(&a2)
+        v3 := archsimd.LoadFloat32x4Array(&a3)
+ 
+        // výpočet
+        v4 := v1.MulAdd(v2, v3)
+ 
+        // konstrukce řezu
+        result := make([]float32, 4)
+ 
+        // zápis prvků vektoru do řezu
+        v4.Store(result)
+ 
+        // výpis obsahu řezu
+        fmt.Println("a1*a2+a3 = ", result)
+}
+Výsledky, které získáme po překladu a spuštění tohoto programu, by měly vypadat následovně:
+$ go run vector_mul_add_1.go
+ 
+a1 =        [1 2 3 4]
+a2 =        [2 2 2 2]
+a3 =        [100 100 100 100]
+a1*a2+a3 =  [102 104 106 108]
+První prvek výsledného vektoru byl získán výpočtem 1*2+100=102 atd.
+Ještě nás bude zajímat, jaká instrukce byla použita pro výpočet:
+$ GOEXPERIMENT=simd ./go build -gcflags=-S vector_mul_add_1.go
+Ukázka části implementace funkce main:
+0x01d0 00464 (/tmp/ramdisk/go/bin/vector_mul_add_1.go:24)       VMOVDQU main.a1+72(SP), X0
+0x01d6 00470 (/tmp/ramdisk/go/bin/vector_mul_add_1.go:25)       VMOVDQU main.a2+56(SP), X1
+0x01dc 00476 (/tmp/ramdisk/go/bin/vector_mul_add_1.go:29)       VFMADD213PS     main.a3+40(SP), X1, X0
+0x01e3 00483 (/tmp/ramdisk/go/bin/vector_mul_add_1.go:29)       MOVUPS  X0, main..autotmp_64+88(SP)
+0x01e8 00488 (/tmp/ramdisk/go/bin/vector_mul_add_1.go:32)       LEAQ    type:float32(SB), AX
+0x01ef 00495 (/tmp/ramdisk/go/bin/vector_mul_add_1.go:32)       MOVL    $4, BX
+0x01f4 00500 (/tmp/ramdisk/go/bin/vector_mul_add_1.go:32)       MOVL    BX, CX
+0x01f6 00502 (/tmp/ramdisk/go/bin/vector_mul_add_1.go:32)       CALL    runtime.makeslice(SB)
+0x01fb 00507 (/tmp/ramdisk/go/bin/vector_mul_add_1.go:35)       XCHGL   AX, AX
+Další dvě varianty operace fused multiply-add
+Prozatím jsme si ukázali operaci nazvanou MulAdd, ovšem Go nabízí i metody se jmény MulAddEvenSubOdd a MulAddOddSubEven. Tyto metody se od původní operace MulAdd odlišují tím, že se sudé popř. liché prvky výsledného vektoru počítají odlišným způsobem: namísto x=+a · b + c se provádí výpočet x = +a · b – c. Ostatně si to můžeme velmi snadno otestovat. První z příkladů volá metodu MulAddEvenSubOdd:
+// ----------------------------------------------------------------------
+// Podpora nativních SIMD operací v experimentálním balíčku simd/archsimd
+// ----------------------------------------------------------------------
+ 
+package main
+ 
+import (
+        "fmt"
+        "simd/archsimd"
+)
+ 
+func main() {
+        // konstrukce a inicializace pole s odvozením počtu prvků
+        a1 := [...]float32{1.0, 2.0, 3.0, 4.0}
+        a2 := [...]float32{2.0, 2.0, 2.0, 2.0}
+        a3 := [...]float32{100.0, 100.0, 100.0, 100.0}
+ 
+        // výpis obsahu polí
+        fmt.Println("a1 =       ", a1)
+        fmt.Println("a2 =       ", a2)
+        fmt.Println("a3 =       ", a3)
+ 
+        // převod pole na vektor se čtyřmi prvky
+        v1 := archsimd.LoadFloat32x4Array(&a1)
+        v2 := archsimd.LoadFloat32x4Array(&a2)
+        v3 := archsimd.LoadFloat32x4Array(&a3)
+ 
+        // výpočet
+        v4 := v1.MulAddEvenSubOdd(v2, v3)
+ 
+        // konstrukce řezu
+        result := make([]float32, 4)
+ 
+        // zápis prvků vektoru do řezu
+        v4.Store(result)
+ 
+        // výpis obsahu řezu
+        fmt.Println("a1*a2±a3 = ", result)
+}
+Výsledky:
+$ go run vector_mul_add_2.go
+ 
+a1 =        [1 2 3 4]
+a2 =        [2 2 2 2]
+a3 =        [100 100 100 100]
+a1*a2±a3 =  [-98 104 -94 108]
+Zatímco v příkladu druhém se volá metoda MulAddOddSubEven:
+// ----------------------------------------------------------------------
+// Podpora nativních SIMD operací v experimentálním balíčku simd/archsimd
+// ----------------------------------------------------------------------
+ 
+package main
+ 
+import (
+        "fmt"
+        "simd/archsimd"
+)
+ 
+func main() {
+        // konstrukce a inicializace pole s odvozením počtu prvků
+        a1 := [...]float32{1.0, 2.0, 3.0, 4.0}
+        a2 := [...]float32{2.0, 2.0, 2.0, 2.0}
+        a3 := [...]float32{100.0, 100.0, 100.0, 100.0}
+ 
+        // výpis obsahu polí
+        fmt.Println("a1 =       ", a1)
+        fmt.Println("a2 =       ", a2)
+        fmt.Println("a3 =       ", a3)
+ 
+        // převod pole na vektor se čtyřmi prvky
+        v1 := archsimd.LoadFloat32x4Array(&a1)
+        v2 := archsimd.LoadFloat32x4Array(&a2)
+        v3 := archsimd.LoadFloat32x4Array(&a3)
+ 
+        // výpočet
+        v4 := v1.MulAddOddSubEven(v2, v3)
+ 
+        // konstrukce řezu
+        result := make([]float32, 4)
+ 
+        // zápis prvků vektoru do řezu
+        v4.Store(result)
+ 
+        // výpis obsahu řezu
+        fmt.Println("a1*a2±a3 = ", result)
+}
+Výsledky budou pochopitelně odlišné, konkrétně:
+$ go run vector_mul_add_3.go
+ 
+a1 =        [1 2 3 4]
+a2 =        [2 2 2 2]
+a3 =        [100 100 100 100]
+a1*a2±a3 =  [102 -96 106 -92]
+Pro úplnost se ještě podívejme na způsob překladu do strojového kódu.
+První příklad s metodou MulAddEvenSubOdd:
+0x01d0 00464 (/tmp/ramdisk/go/bin/vector_mul_add_2.go:24)       VMOVDQU main.a1+72(SP), X0
+0x01d6 00470 (/tmp/ramdisk/go/bin/vector_mul_add_2.go:25)       VMOVDQU main.a2+56(SP), X1
+0x01dc 00476 (/tmp/ramdisk/go/bin/vector_mul_add_2.go:29)       VFMADDSUB213PS main.a3+40(SP), X1, X0
+0x01e3 00483 (/tmp/ramdisk/go/bin/vector_mul_add_2.go:29)       MOVUPS  X0, main..autotmp_64+88(SP)
+0x01e8 00488 (/tmp/ramdisk/go/bin/vector_mul_add_2.go:32)       LEAQ    type:float32(SB), AX
+0x01ef 00495 (/tmp/ramdisk/go/bin/vector_mul_add_2.go:32)       MOVL    $4, BX
+0x01f4 00500 (/tmp/ramdisk/go/bin/vector_mul_add_2.go:32)       MOVL    BX, CX
+0x01f6 00502 (/tmp/ramdisk/go/bin/vector_mul_add_2.go:32)       CALL    runtime.makeslice(SB)
+0x01fb 00507 (/tmp/ramdisk/go/bin/vector_mul_add_2.go:35)       XCHGL   AX, AX
+Druhý příklad s metodou MulAddOddSubEven:
+0x01d0 00464 (/tmp/ramdisk/go/bin/vector_mul_add_3.go:24)       VMOVDQU main.a1+72(SP), X0
+0x01d6 00470 (/tmp/ramdisk/go/bin/vector_mul_add_3.go:25)       VMOVDQU main.a2+56(SP), X1
+0x01dc 00476 (/tmp/ramdisk/go/bin/vector_mul_add_3.go:29)       VFMSUBADD213PS main.a3+40(SP), X1, X0
+0x01e3 00483 (/tmp/ramdisk/go/bin/vector_mul_add_3.go:29)       MOVUPS  X0, main..autotmp_64+88(SP)
+0x01e8 00488 (/tmp/ramdisk/go/bin/vector_mul_add_3.go:32)       LEAQ    type:float32(SB), AX
+0x01ef 00495 (/tmp/ramdisk/go/bin/vector_mul_add_3.go:32)       MOVL    $4, BX
+0x01f4 00500 (/tmp/ramdisk/go/bin/vector_mul_add_3.go:32)       MOVL    BX, CX
+0x01f6 00502 (/tmp/ramdisk/go/bin/vector_mul_add_3.go:32)       CALL    runtime.makeslice(SB)
+0x01fb 00507 (/tmp/ramdisk/go/bin/vector_mul_add_3.go:35)       XCHGL   AX, AX
+Operace s vektory obsahujícími celočíselné prvky se znaménkem
+Prozatím jsme si ukazovali operace s vektory, které obsahovaly prvky typu single či double resp. v jazyku ...
+(Pokracovani na webu)

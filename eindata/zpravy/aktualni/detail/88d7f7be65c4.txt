@@ -1,0 +1,18 @@
+Newelle
+Univerzální AI asistent pro Linux, který umožňuje pracovat s různými jazykovými modely a poskytovateli, včetně lokálních modelů prostřednictvím Llama.cpp nebo Ollama. Kromě klasického chatu zvládá práci s dokumenty a soubory, webové vyhledávání, generování obrázků, hlasové ovládání a dlouhodobou paměť.
+Pomocí nástrojů a podpory MCP může AI také provádět příkazy v terminálu, pracovat se soubory nebo spouštět další úlohy. Newelle lze rozšiřovat pomocí vlastních rozšíření a podporuje také plánované úlohy, více současných konverzací, větvení chatů a integrovaný správce souborů.
+newelle.qsk.me, 1.5.0
+DankMaterialShell
+Komplexní desktopový shell pro Wayland, který sjednocuje řadu funkcí běžně řešených samostatnými aplikacemi. Nabízí panely a widgety, centrum nastavení, launcher, správu notifikací, ovládání zvuku a sítě, Bluetooth, správu médií, historii schránky, systémový monitoring nebo zamykací obrazovku.
+Podporuje dynamické motivy založené na tapetě, rozšíření pomocí pluginů a integraci s kompository Niri, Hyprland, Sway, MangoWC, labwc a dalšími. Součástí je také vlastní příkazový nástroj pro ovládání shellu z terminálu nebo pomocí klávesových zkratek.
+danklinux.com, 1.6.0
+Photos
+Nový prohlížeč a správce fotografií pro prostředí KDE Plasma, který má nabídnout modernější alternativu k více než 25 let starému Gwenview. Zaměřuje se na přehledné prohlížení a organizaci fotografií a využívá jednodušší a současnější uživatelské rozhraní.
+Projekt se zatím stále vyvíjí, ale KDE jej postupně připravuje jako možného nástupce Gwenview a aplikaci vhodnou pro širší využití na desktopu.
+apps.kde.org/cs/koko, 26.08.0
+Image Toolbox
+Editor obrázků pro Android, který kombinuje desítky nástrojů pro úpravu, zpracování a konverzi fotografií. Nabízí dávkové zpracování, více než 500 filtrů, ořezávání, změnu velikosti, kreslení, odstranění pozadí, vodoznaky, tvorbu koláží nebo úpravu EXIF metadat. Nechybí OCR s podporou více než 120 jazyků, skenování dokumentů, práce s PDF, QR kódy a převody mezi množstvím obrazových formátů včetně JPEG, PNG, WebP, HEIF, AVIF a JXL.
+Součástí jsou také AI nástroje pro zvětšování a vylepšování obrázků, odstranění šumu nebo kolorování. Aplikace podporuje i vyhledávání duplicit, 64 hashovacích algoritmů a pokročilé funkce pro hromadnou práci s obrázky.
+github.com/T8RIN/ImageToolbox, 4.2.0
+Blbinka
+Moderní technologie se při svém vývoji zaměřují i na domácí mazlíčky. Některé kousky, ale vyvolávají rozpaky nejen u lidí, ale i u koček.

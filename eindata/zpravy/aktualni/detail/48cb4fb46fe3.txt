@@ -30,4 +30,4 @@ GPT‑Image‑2.5 Sunburst is built for premium visual workflows that benefit fr
 Here’s what early customers have to say about the new models:
 We’re building image generation to be useful, creative, and safe. ChatGPT Images 2.5 builds on our existing safeguards, with checks on prompts and images to help prevent harmful outputs. We continue to use C2PA metadata and invisible watermarking to help identify images made with our tools. You can read more about our evaluations and approach in the system card(opens in a new window).
 Images 2.5 is rolling out today to ChatGPT, ChatGPT Work, and Codex users across all tiers on desktop, mobile, and web.
-GPT‑Image‑2.5 Sunburst and GPT‑Image‑2.5 Flare are available in the API. See pricing details here.
+GPT‑Image‑2.5 Sunburst and GPT‑Image‑2.5 Flare are available in the API. See pricing details here.(opens in a new window)

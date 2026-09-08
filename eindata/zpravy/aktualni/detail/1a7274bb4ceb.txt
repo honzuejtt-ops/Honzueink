@@ -1,0 +1,5 @@
+Nejnovější funkcí české služby Mapy.com je zobrazení jídelních lístků restaurací. Najdeme ji na webu a také v mobilních aplikacích pro Android (26.9.0 a 26.9.1) a iOS (iOS 26.8.2 a 26.9.0).
+
+Menu ale musíte hledat pod lupou, protože kouzelné tlačítko Jídelní lístek není dostupné u všech restaurací. ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

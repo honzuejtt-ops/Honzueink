@@ -1,9 +1,196 @@
-|T|Hoří kladenský obchod Lidl. Hasiči vyhlásili třetí stupeň poplachu|D|08.9. 01:14|P|Plameny zachvátily v noci na úterý prodejnu řetězce Lidl v kladenské ulici Americká. Okolí je uzavřeno, na místě je větší počet hasičů a hasičské tech...|X|Článek
-Požár byl nahlášen zhruba pět minut po půlnoci. „Byl vyhlášen III. stupeň požárního poplachu. Požár je v plném rozsahu, prvotní odhad vzniklé škody je 120 milionů korun,“ uvedl mluvčí hasičů Tomáš Bakalář.
-Policie uzavřela bezprostřední okolí a prostor hlídá.
-Na místě zasahuje větší počet hasičských jednotek, hasiči zasahují ze země i z výškové techniky. Na místo míří těžká technika ze záchranného útvaru, která pomůže s rozebíráním trosek.
-Už nyní je jasné, že požár se obešel bez zranění, z přilehlé ubytovny bylo evakuováno 53 lidí.
-Podle informací Novinek se dá čekat, že s plameny budou hasiči bojovat až do ranních hodin.|E||T|Bez kouře a nastavování. AI gril pozná jídlo a sám ho připraví|D|08.9. 00:34|P|Zapnout, vložit jídlo a nechat technologii, aby se postarala o zbytek. Tak chce změnit domácí grilování novinka Lumo od čínské společnosti CozyTime, k...|X|Článek
+|T|Chytrý exoskelet předvídá každý krok. AI to zvládne 2500krát za sekundu|D|08.9. 07:48|P|Vypadá jako něco ze sci-fi. Připnete si ho k tělu, uděláte první kroky a část práce začne dělat za vás. Čínská společnost Hypershell představila na be...|X|Článek
+(Od našeho zpravodaje)
+Halo má konstrukci z uhlíkových vláken se čtyřmi poháněnými klouby v oblasti kyčlí a kolen. Ty mají uživateli pomáhat při chůzi a zvládání nejrůznějších terénů. Návštěvníci IFA si mohou zařízení přímo na místě vyzkoušet.
+„Má motory v obou kyčlích, ale nyní také motory v kolenou. Jde o plně integrovaný a synchronizovaný systém,“ vysvětluje Toby Knisely, ředitel globální komunikace společnosti Hypershell.
+To nejzajímavější se ale odehrává uvnitř. Halo má více než 30 senzorů, které sledují pohyb dolní části těla. Data následně zpracovává speciální AI čip HyperCore Pro.
+Záleží i na terénu
+Výrobce tvrdí, že systém byl natrénován na více než 10 000 hodinách pohybových dat. Dokáže předvídat záměr uživatele zhruba 200 milisekund dopředu a upravovat podporu až 2500krát za sekundu.
+„Na základě toho, jak se pohybujete a v jakém terénu se nacházíte, provádí pravděpodobnostní analýzu a 200 milisekund předem předpoví, jaký bude váš další pohyb,“ popisuje Knisely.
+Exoskelet pak podle něj vyšle motorům instrukce, jak velký točivý moment mají použít a kdy. Cílem je, aby pomoc působila co nejpřirozeněji a nerušila samotný pohyb. Systém se navíc postupně přizpůsobuje konkrétnímu uživateli – jeho chůzi, síle i preferencím.
+Právě tím se Halo liší od tradičního pohledu na exoskelety. Ty si většina lidí stále spojuje především s medicínou nebo průmyslem. Hypershell je ale chce dostat i do běžného života. „Myslíme si, že exoskelety jsou opravdu pro každého. Není to jen zdravotnické zařízení. Není to jen průmyslové zařízení,“ říká Knisely.
+Cestování a turistika
+Podle Kniselyho může zařízení najít uplatnění při rekreaci, cestování nebo turistice. Třeba když člověk celý den prochází město, navštěvuje muzea nebo vyrazí na delší túru. „Pokud chcete během dovolené co nejlépe využít svůj čas, prozkoumávat město nebo vyrazit na túru a chcete si to všechno trochu usnadnit,“ dodává.
+Budoucnost osobní elektroniky tak možná nebude jen na zápěstí nebo v kapse. Možná si ji zanedlouho už i oblékneme.
+Halo se totiž již nyní nabízí v předobjednávkách přímo na webových stránkách výrobce. Ten si chytrý exoskelet cení na 2299 eur, tedy necelých 56 tisíc korun. První objednávky by přitom měly být vyřízeny ještě před Vánocemi.|E||T|Moravský Betlém je jako z pohádky. K jeho proslulé dobrotě se váže krvavá pověst|D|08.9. 07:12|P|Ve svahu jsou roztroušeny roztomilé domečky. Klikaté cestičky lemují dřevěné roubenky z 18. a 19. století a nad nimi se tyčí dominanta města, věž zvan...|X|Článek
+Procházím po jedné z hlavních štramberských tepen, která město protíná. Z obou stran ji obklopují různě velké roubenky, které působí nanejvýš pohádkově. Jak se přibližuji k centru, roztomilých staveb, zejména měšťanských barokních domů, přibývá. Nejvíc, rovných 22, jich je na náměstí, jemuž dominuje kostel sv. Jana Nepomuckého.
+Můj zrak se přesto stále upíná nad střechy, kde se do nebe tyčí věž Trúba. Ta je společně s pár kamennými zdmi prakticky tím jediným, co zbylo ze štramberského hradu a viditelná je už zdaleka.
+Raná historie památky je zahalena tajemstvím. Údajně ji mohli nechat vybudovat templáři, k tomu však neexistuje přímý důkaz. Teorii posiluje především fakt, že řád ve středověku na Moravě působil a jeho členové tam měli majetky.
+Zatímco přesné datum založení hradu neznáme, první dochovaná písemná zmínka o existenci Štramberku se datuje ke 4. prosinci 1359. Už dříve tu ovšem existovala osada, kterou během nájezdů ve 13. století zpustošili Mongolové. Markrabě Jan Jindřich Lucemburský, bratr císaře Karla IV., nařídil osadu znovu vystavět a opevnit, načež jí udělil městská práva.
+Oblast Štramberka byla nicméně obydlená už v pravěku. Dokládají to nálezy z jeskyně Šipka, která se nachází na úbočí vrchu Kotouč. Roku 1880 objevil učitel a archeolog Karel Jaroslav Maška v jedné z chodeb zlomek spodní čelisti neandrtálského dítěte. Tyto ostatky jsou datovány do doby před zhruba 40 tisíci lety.
+Rozhlednou už přes sto let
+Ve stoletích následujících po smrti Jana Jindřicha Lucemburského si hrad přehazovali majitelé jako horký brambor; vystřídali se tu páni z Kravař, páni z Cimburka, Puklicové z Pozořic, páni z Boskovic, Vladykové z Hustopeč, posledními šlechtici byli v 16. století páni ze Žerotína. Pak panství odkoupili novojičínští měšťané.
+Středověk byl značně divokou dobou, vyznačoval se četnými válkami i loupeživými výpady, a tak se stalo, že byl hrad roku 1646 pobořen. Když ho chtěli jezuité, kteří se tu ukrývali před Švédy, znovu vystavět, moravský zemský hejtman Kryštof Pavel hrabě Lichtenštejn jim v tom zabránil. Koncem 18. století se zřítila přední část hradu a od té doby stavba pustla. I proto z ní kromě věže mnoho nezbylo.
+Trúba je dnes jedním ze symbolů města a má už na první pohled velmi rozpoznatelnou siluetu. Vděčí za to zejména dřevěnému ochozu, odkud se otevírá úchvatný výhled do okolí. Věž je koneckonců od roku 1904, kdy došlo k přestavbě hradu pro turistické účely, oficiálně rozhlednou. Na její vrchol vede 180 schodů, cesta vzhůru docela odsýpá. Dolů je to tradičně o něco horší.
+V témže roce byl pod věží přistavěn ještě hostinec Jaroňkova útulna a v roce 1925 přibyla na nádvoří také turistická ubytovna.
+Z areálu hradu vycházím druhou přístupovou cestou – první vede rovnou z náměstí – do Jaroňkovy ulice. Ta je ve Štramberku patrně tou nejhezčí, protože je dlážděná, klikatá a lemují ji nejhezčí roubené domky. A Trúba na ně ochranitelsky dohlíží. Člověk si tu opravdu přijde jak v pohádce nebo oživlém betlému.
+Nasolené uši proměnili ve sladkost
+Vracím se na náměstí a následuji vůni, která mě přivádí rovnou do jedné z pekáren štramberských uší. Jsou to malé kornoutky z perníkového těsta, které ještě teplé krásně křupou a chutnají skvěle. Někde je plní šlehačkou a čokoládovou polevou, ale popravdě jsou nejlepší jen tak samotné. Koupit je lze prakticky na každém kroku, v centru napočítám snad deset prodejen.
+V minulosti se této pochutině, kterou od roku 2007 chrání evropské zeměpisné označení, říkalo uši Tatarských. A k tomu se váže morbidní legenda.
+Když na Moravu vpadli ve 13. století Mongolové, obyvatelé se před nimi prchli ukrýt na vrch Kotouč. Nájezdníky se jim podařilo přelstít a zahnat na ústup. V jejich vylidněném táboře pak nalezli pytle plné nasolených lidských uší, které Mongolové odřezávali zabitým křesťanům. K uctění jejich památky začali Štramberští péct perníkové pečivo ve tvaru ucha.
+Od roku 1660 se pak na vrch Kotouč, kde se nachází zmiňovaná jeskyně Šipka, pořádaly pouti jako připomínka vítězství nad Mongoly. Sladké uši se při nich rozdávaly návštěvníkům.
+Já si jeden voňavý perníkový kornoutek vychutnávám ve stínu stromů na náměstí a část lidského těla v něm raději nehledám. Chutná mi tak o poznání víc.|E||T|Film Spalující touha měl údajně odhalit Epsteinovy zločiny. Kubrickova dcera promluvila o konspiraci|D|08.9. 07:08|P|Poslední film Stanleyho Kubricka Eyes Wide Shut (česky také Spalující touha) z roku 1999 provázejí od jeho vzniku různé fámy. Tou nejznámější je konsp...|X|Článek
+„Spoustu lidí asi zklamu, ale o chybějícím materiálu jsem nic neslyšela,“ napsala Vivian Kubricková na síti X. Neměla o něm prý informace ani těsně po otcově smrti v březnu 1999, ani nikdy poté. Kubrick se premiéry svého finálního díla již nedožil, zemřel o čtyři měsíce dříve.
+Jedinou následnou úpravou, kterou zaznamenala, prý bylo digitální zakrytí nahoty. Záměrem bylo, aby snímek získal od Americké filmové asociace (MPAA) rating R, tedy přístupnost mládeži ve věku do sedmnácti let v doprovodu dospělé osoby.
+EYES WIDE SHUT: THE MISSING 20 MINUTES 
+You know, this is as good a time as any to finally address the missing 20 minutes from Eyes Wide Shut. It’s a story that has been circulating for many years, so let me tell you what I actually know and don’t know.
+For context, my father… pic.twitter.com/hsgllDKJnV
+Kubricková popsala i tehdejší technické limity. „Tenkrát neexistovala digitální verze každého záběru ve vysokém rozlišení, která by byla dohledatelná někde na serveru,“ upřesnila. Natočený materiál se nahrál do počítače ve velice nízké kvalitě a v programu Avid se poskládaly scény tak, jak měly jít za sebou.
+Když byl počítačový střih hotov, střihači vzali fyzický filmový pás, nůžkami ho ručně sestříhali a slepili podle plánu z počítačové verze. „Jakmile byl negativ sestříhán, nemohli jste ty řezy vrátit zpátky a přeskládat je jinak,“ podotkla s tím, že by se pás s každým dalším rozřezáním a slepením nenávratně poškozoval.
+I kdyby studio Warner Bros. chtělo po Kubrickově smrti film přestříhat a odstranit z něj pověstných dvacet minut, nemělo ho podle ní jak získat. Tvůrce všechny nepoužité záběry a pracovní kopie vždycky spálil, aby zabránil případnému vytvoření alternativních verzí.
+Erotický thriller na motivy Snové novely rakouského autora Arthura Schnitzlera vypráví o tajném společenství pořádajícím sexuální orgie. Hlavní role ztvárnili Američan Tom Cruise a Australanka Nicole Kidmanová, kteří v té době byli manželi nejen na plátně, ale i ve skutečnosti.
+Zajímavosti a kontroverze okolo Spalující touhy
+- Natáčení trvalo nepřetržitě 400 dnů, čímž se stalo nejdelší produkcí v dějinách kinematografie.
+- Kubrick byl na herce mimořádně náročný a nutil je nesčetněkrát opakovat scény. Rekordem bylo 95 záběrů, jak Cruise pouze prochází dveřmi. Herec z extrémního tlaku onemocněl, navíc mu to způsobilo žaludeční vředy.
+- Přestože se film odehrává v newyorské čtvrti Greenwich Village, kromě pár exteriérových záběrů se kompletně natočil v Anglii. Režisér se totiž bál létání a trval na natáčení v Británii, kam se přestěhoval již v šedesátých letech.
+- Ve snímku si mohli zahrát Harvey Keitel, Jennifer Jason Leigh nebo Gary Oldman. Všichni projekt nakonec opustili, protože prý k nim Kubrick neměl respekt. Nabídku na roli obdržela i modelka Eva Herzigová, jež ji však odmítla.
+- Píseň Migrations, která zazní ve filmu, původně obsahovala recitaci úryvku z Bhagavadgíty, posvátné knihy hinduismu. Po protestech jihoafrického hinduistického uskupení ji muselo studio odstranit a veřejně se omluvit věřícím.
+- Venkovní záběry sídla Somerton, kde se ve filmu konají orgie, se natáčely v Mentmore Towers, někdejším panství movité rodiny Rothschildů. Tam se roku 1972 konal extravagantní Surrealistický ples, jehož se zúčastnili i Salvador Dalí či Audrey Hepburnová. Někteří diváci věří, že fiktivní událost přímo souvisí s tou reálnou, přestože se fotografie z daného plesu objevily až po roce 2010.|E||T|Spaní mezi výfuky: Hotel v Bangkoku dal automobilovým dílům druhou šanci|D|08.9. 07:08|P|Staré automobilové díly by člověk čekal spíš na vrakovišti nebo v kovošrotu než v hotelu. V bangkokském MeStyle Garage se ale z výfuků, pneumatik, čás...|X|Článek
+Ve světě lze objevit jistě spoustu hotelů zařízených ve stylu automobilové tematiky, trochu svérázně se ale do ní pustili v hotelu MeStyle Garage v bangkokské čtvrti Huai Khwang. Jeho osmipodlažní budova je automobily doslova prošpikována. Ovšem nikoli celými. Dekorace tu tvoří jejich součásti.
+Už na fasádě návštěvníky vítá část karoserie zavěšená vysoko nad vchodem. V zeleni před budovou zase stojí pomalované kolo z nákladního automobilu.
+Hlavní výzdoba jako ze staré mototechny pokračuje pak uvnitř. Recepční pult v hotelové hale je oblepen desítkami poznávacích značek a některé kusy nábytku vznikly z částí motorů. Dokonce i stojan s občerstvením v jednom z prostorů hotelu je vytvořený z modré automobilové karoserie.
+Na druhém podlaží se nachází restaurace, zatímco střecha nabízí výhled na panorama Bangkoku. Ani tady však automobilové téma nepřestává. Hosté tu najdou barevné obklady, nástěnné malby a také šedou dodávku umístěnou za místy k sezení. Jednu ze stěn zase zdobí řada palivových nádrží z motocyklů.
+Hotel má celkem 72 pokojů rozložených v osmi podlažích. Ani v nich ale návštěvníci na automobilový svět nezapomenou. V jednom z pokojů například stěny zdobí výfuky a další součástky vozidel.
+Podle agentury AP se ceny standardních pokojů obvykle pohybují kolem 1000 až 2000 thajských bahtů za noc, tedy přibližně 700 až 1400 korun. Prémiové a třílůžkové pokoje vycházejí zhruba na 1500 až 2600 bahtů, přibližně 1000 až 1800 korun. Cena se samozřejmě mění podle typu pokoje, sezony a termínu rezervace.
+MeStyle Garage tak nabízí poněkud jinou představu o luxusu. Místo toho, aby automobilové díly skončily ve šrotu, dostaly druhý život jako součást hotelového designu. Lidé, kteří by rádi usínali s pohledem na výfuk, pneumatiku nebo kus motoru, si zde rozhodně přijdou na své.|E||T|Příběh Ruth Hálové připomene osudy Wintonových dětí a českokrumlovských Židů|D|08.9. 07:04|P|Českokrumlovská rodačka Ruth Hálová byla jednou z 669 československých dětí, které před druhou světovou válkou zachránil Nicholas Winton. Její příběh ...|X|Článek
+Do Krumlova přijede dcera Ruth Hálové a také Lady Milena Grenfell-Baines, která je jedním z Wintonových dětí a s Ruth Hálovou se přátelila.
+„Součástí večera bude odhalení pietního uměleckého díla od Františka Postla připomínajícího československé Kindertransporty, Wintonovy děti a jejich zachránce, a také lavička Ruth Hálové, která se stane trvalou připomínkou jejího životního příběhu,“ řekla mluvčí českokrumlovské radnice Petra Nestávalová.
+Ruth Hálová se narodila v Českém Krumlově v roce 1926. O 13 let později opustila Československo jedním z transportů, které zachránily stovky převážně židovských dětí před nacistickým pronásledováním.
+Ruth se ujala rodina žijící poblíž Birminghamu. Zpět do Československa se vrátila v září 1945. Po válce vystudovala mikrobiologii na Přírodovědecké fakultě Univerzity Karlovy v Praze. Zemřela v jihočeském Holubově v roce 2020.
+K vidění bude také výstava, kterou doplní série přednášek a besed pro veřejnost. Připraven je i vzdělávací program pro školáky.
+„Paměť města netvoří jen historické budovy a významné události. Tvoří ji především lidé a jejich příběhy. Ruth Hálová byla českokrumlovskou rodačkou a její mimořádný životní osud je součástí historie našeho města. Jsem rád, že jej dokážeme připomenout způsobem, který nezůstává jen u minulosti, ale oslovuje i dnešní mladou generaci,“ poznamenal starosta Českého Krumlova Alexandr Nogrády (ANO).
+Celý projekt zakončí 25. října beseda s dcerou Ruth Hálové – Hanou Kocourkovou.|E||T|Ruská armáda znovu odložila termín dobytí Donbasu, tvrdí Ukrajinci|D|08.9. 06:48|P|Rusko stanovilo nový termín pro dobytí ukrajinského Donbasu na 31. března 2027. Ruské jednotky tak posunuly dosažení hranic Doněcké oblasti už po patn...|X|Článek
+„Rusům se v Doněcké oblasti již roky nedaří dosáhnout žádného operačního úspěchu. Kreml usiluje o obsazení Donbasu do konce roku 2026, zatímco armáda žádá o posunutí termínu na 31. března 2027,“ uvedl Palisa na Facebooku.
+Termín dobytí podle něj Rusové odložili už patnáctkrát. Poznamenal také, že za dobytí jednoho čtverečního kilometru platí stovkami zabitých a zraněných vojáků.
+Palisa, který se vyznamenal jako velitel ukrajinské obrany města Bachmut, v Zelenského kanceláři pracuje od roku 2024, přiblížil, že o ruských plánech a jejich realizaci mluvil na schůzce s vyjednavači amerického prezidenta Donalda Trumpa Stevem Witkoffem a Jaredem Kushnerem.
+„Samostatně jsme hovořili o leteckých útocích. Novou výzvou jsou reaktivní drony. A ani v tomto případě Rusové nemají žádný vlastní technologický průlom: ani konstrukce, ani motor nejsou jejich vývojem,“ doplnil s tím, že proti novým ruským prostředkům už Kyjev nasadil stíhací drony.
+Nakonec Palisa podle agentury Unian apeloval na ukrajinské zahraniční spojence s tím, že objem pomoci od nich se přímo promítá do zachráněných životů – vojáků i civilistů. „Proto musíme společně s partnery, jako jednotná fronta, pokračovat v ochraně naší společné budoucnosti,“ dodal.|E||T|Rusko po třídenní pauze útočilo na Kyjev, úřady hlásí dva mrtvé|D|08.9. 06:15|P|Ruská armáda v noci na úterý obnovila útoky na ukrajinské hlavní město Kyjev. Nálety dronů a raket, které podle úřadů zabily dva lidi, následují poté,...|X|Článek
+Ruská státní agentura TASS potvrdila, že moratorium, vyhlášené v sobotu v souvislosti s návštěvou amerických vyslanců Steva Witkoffa a Jareda Kushnera v Moskvě a následně v Kyjevě, po dobu tří dnů zdrží vzdušných útoků na obě hlavní města, v pondělí před půlnocí skončilo.
+„Hlavní město je pod balistickým útokem. Zůstaňte v krytech,“ oznámil na Telegramu starosta Kyjeva Vitalij Kličko. V Holosijivské čtvrti podle něj vypukl požár v areálu školy, pod troskami obytného domu byli uvězněni lidé. Požáry vypukly také na několika dalších místech Kyjeva.
+Později Kličko doplnil, že při útoku šest osob utrpělo zranění, z nichž tři musely být hospitalizovány. Velení kyjevského vojenského okruhu souběžně informovalo o dvou zabitých a sedmi zraněných, jak připomněl web Ukrainska Pravda.
+Před nočním útokem ruských balistických raket a dronů s reaktivním pohonem v pondělí večer varovalo ukrajinské letectvo. Ruské drony mířily také na průmyslové cíle v okresech Fastiv a Boryspil.
+Jednání emisarů amerického prezidenta Donalda Trumpa v Moskvě a Kyjevě nepřineslo žádný viditelný průlom ve snaze ukončit válku, kterou zahájilo Rusko před více než čtyřmi lety svou rozsáhlou invazí na Ukrajinu.|E||T|Evropu čeká teplotní šok. Ochladí se až o 15 °C|D|08.9. 06:00|P|Výrazná studená fronta přinese tento týden Evropě prudké ochlazení. Mimořádně teplé počasí s lokálně extrémními vedry vystřídají mnohem chladnější pod...|X|Článek
+Přestože meteorologický podzim už začal, počasí tomu často neodpovídá. V posledních dnech ovlivňuje Evropu mohutná tlaková výše. Po její zadní straně proudí nad kontinent velmi teplý vzduch, který přináší výrazně nadprůměrné a lokálně i rekordní teploty.
+Zejména západ a jih kontinentu zasáhla další mimořádná vlna veder. Ve Španělsku naměřili 45,7 °C, což je nejvyšší letošní teplota v zemi, a ve Francii pak hodnota 40,3 °C znamenala nový národní zářijový rekord.
+V rozsáhlých oblastech Evropy bude ještě v úterý a ve středu příliv velmi teplého vzduchu vrcholit. Zároveň však začne od západu postupovat přes kontinent výrazná studená fronta, která přinese prudkou změnu počasí.
+Denní teploty mohou během jednoho až dvou dnů klesnout zhruba o 10 °C. Místy bude propad ještě výraznější a dosáhne až kolem 15 °C, zejména v oblastech, kde se před příchodem fronty budou teploty pohybovat nad 30 °C.
+Z tropů k běžným zářijovým teplotám
+Prudký pokles teplot čeká také Česko. Ještě v úterý a na východě republiky také ve středu se budou denní maxima na řadě míst blížit tropické třicítce nebo ji dokonce překračovat. Ve čtvrtek se naopak teploty často nedostanou ani k 20 °C.
+Velký teplotní kontrast bude u nás patrný ve středu, kdy se přes republiku bude přesouvat frontální rozhraní. Zatímco na západě Čech může být jen kolem 17 °C, na jižní Moravě se teploty mohou vyšplhat až ke 32 °C. Podobně výrazné rozdíly se objeví i v jiných evropských zemích.
+Přestože bude ochlazení rychlé a výrazné, po přechodu fronty nás nečeká příliš chladné počasí. Teploty se pouze vrátí k hodnotám obvyklým pro první polovinu září, případně budou zpočátku lehce podprůměrné.
+Prudký teplotní propad tak spíše ukazuje, jak mimořádně teplé je počasí před příchodem fronty.
+Zaprší, ale pak se vrátí suché počasí
+Studená fronta přinese do některých regionů také srážky. Nejvíce by jich mělo spadnout v severní Itálii a v oblasti Jadranu, kde mohou úhrny dosahovat až 100 milimetrů. Také v Česku může ve středu místy pršet vydatněji, množství srážek však bude záviset na načasování fronty.
+S blížícím se víkendem by se v Evropě mělo počasí uklidnit. Předpovědní modely navíc naznačují návrat tlakové výše a s ní i stabilnějšího počasí. Studená fronta tak sice přinese výrazné ochlazení a srážky, brány atlantickému proudění ale zřejmě otevře jen nakrátko.
+Další zářijové dny by se podle současných výhledů mohly nést ve znamení mírně teplého a spíše suššího počasí. S rostoucí délkou předpovědi je však další vývoj zatím méně jistý.|E||T|Soud v Madridu začal vyšetřovat průnik migrantů do Ceuty, prověřuje roli Maroka|D|08.9. 05:51|P|Speciální soud v Madridu dnes zahájil vyšetřování červencového průniku desetitisíců migrantů z Maroka do španělské exklávy Ceuta. Podle agentury AFP t...|X|Článek
+Speciální soud (Audiencia Nacional), který se zabývá závažnými trestnými činy, včetně terorismu či zločinů spáchaných v zahraničí, uvedl, že vyšetřování incidentu spadá do jeho působnosti, protože průnik migrantů zahrnoval trestnou činnost spáchanou v zahraničí, která byla útokem proti územní celistvosti Španělska.
+Tardónová označila rozsáhlý přeshraniční průnik migrantů za typickou metodu hybridní války, jejímž cílem je změna života a práv španělských občanů v Ceutě.
+Zpráva španělské policie, z níž soudkyně vychází, zdůraznila „naprostou shovívavost“ marockých bezpečnostních složek, která usnadnila nelegální přechod hranic. Podle soudkyně příslušníci marockých sil nejenže neprojevili snahu migranty zastavit, ale někteří dokonce aktivně poskytovali rady, jak hranici překonat.
+Na konci července do Ceuty z Maroka nelegálně přišlo či připlavalo zhruba 70 tisíc lidí. Přestože se valná většina z nich do Maroka následně vrátila, ve španělském městě s přibližně 84 tisíc obyvateli jich stále několik tisíc zůstává.|E||T|Policistka natočila přestupek na svůj mobil. Soud to jako důkaz neuznal, přesto řidiče neosvobodil|D|08.9. 05:30|P|Rokycanská policistka natočila předloni v srpnu na svůj soukromý mobil řidiče BMW, jak za jízdy po městě telefonuje. Nahrávku pak použil správní orgán...|X|Článek
+Podle rozsudku z minulého týdne, který mají Novinky k dispozici, stačilo k usvědčení řidiče to, že ho policista a její kolega v hlídce viděli s mobilem u ucha na vlastní oči.
+„Není jisté, zda byl inkriminovaný záznam v souladu s policejním zákonem zabezpečený před neoprávněným přístupem, změnou či jeho zneužitím. Policistka jej založila do správního spisu až po více než 20 dnech od jeho pořízení. Není tak vyloučeno, že s ním mohlo být v mezidobí jakkoliv manipulováno,“ vysvětlila důvody nezákonnosti nahrávky jako důkazu samosoudkyně Jaroslava Křivánková.
+Druhým dechem ale soud dodal, že i tak byla vina řidiče ze spáchání přestupku bez pochybností prokázána. Stačilo k tomu jen tvrzení policistů.
+„Důvodem k zastavení vozidla bylo, že policejní hlídka zpozorovala protiprávní jednání řidiče na křižovatce ve městě, kde na něj měla dobrý výhled. Pro policisty, kteří jsou profesionály, tak nemohlo být zrakově obtížné vyhodnotit, že řidič za jízdy drží mobilní telefon,“ konstatovala Křivánková.
+Neuvěřili řidiči
+Podle ní v případě přestupků pozorovatelných pouhým okem, tedy i držení mobilního telefonu v ruce při řízení, takový důkaz postačuje.
+„O jeho věrohodnosti se ale musí učinit závěr zkoumáním pravdivosti výpovědi policistů a obrany prezentované obviněným. V daném případě to úředníci správně vyhodnotili, když neuvěřili obhajobě řidiče, že držel v ruce jiný předmět. Ten totiž od okamžiku zastavení hlídkou několikrát měnil výpověď, od přiznání po tvrzení, že se jednalo o diktafon, pouzdro na brýle či termohrnek,“ uzavřel soud.|E||T|Odvážně se vydal tam, kam se dosud nikdo nevydal. Před šedesáti lety debutoval kultovní Star Trek|D|08.9. 05:19|P|Na den přesně před šedesáti lety uvedla CBS první epizodu seriálu Star Trek. Po šesti dekádách je značka bezmála kultem mezi fanoušky sci-fi a nadále ...|X|Článek
+Osmého září 1966 debutovala na obrazovkách stanice epizoda Past na muže, jež rozjela velkolepé dobrodružství. Star Trek, který se o rok dříve představil vedení NBC epizodou Klec, se dočkal tří sérií a možná ani sám tvůrce Gene Roddenberry netušil, jaký fenomén odstartoval.
+Roddenberry celou sci-fi ságu vymyslel v roce 1964 a jedním z jeho cílů bylo prostřednictvím vesmírného seriálu řešit pozemské problémy. Typicky je tak Star Trek kromě kosmických bitev plný filozofování a snahy o mírová řešení. Navíc se odehrává v budoucnosti a sleduje události od 22. století dále.
+První seriál nastartoval kariéry Williama Shatnera a Leonarda Nimoye, kteří ztvárnili role kapitána Kirka a prvního důstojníka Spocka. Tzv. původní posádka ve svém seriálu navštívila paralelní vesmír či nacistickou planetu a střetla se s bohem Apollónem nebo nebezpečnými Klingony. Jejich příběhy se staly kultovními a seriál pokračoval animovaným spin-offem v sedmdesátých letech.
+Kam se dosud nikdo nevydal
+V roce 1979 zamířili hrdinové v čele s Kirkem na filmová plátna a původní posádka si vyzkoušela celých šest celovečerních filmů. Roddenberry nadále zůstával plodný a v osmdesátých letech na původní seriál navázal Novou generací. Posádka slavné lodi Enterprise nové generace vyrazila na průzkum pod vedením kapitána Picarda, jehož doplnili další oblíbenci fanoušků Riker, Troiová či Data.
+Nová generace byla příležitostí pro herce jako Patrick Stewart, Jonathan Frakes, Brent Spiner či Michael Dorn. Nabídla zároveň řadu nových ras, světů a vesmírných lodí. Členové posádky navíc zazářili i ve čtveřici filmů, přičemž v tom prvním (a chronologicky sedmém) se dokonce potkali kapitáni Kirk a Picard. Shledání bylo krátké a skončilo kontroverzní Kirkovou smrtí. Malcolm McDowell, který ztvárnil jeho vraha Sorana, kvůli tomu čelil mnoha výhrůžkám.
+Zlatá devadesátá
+Ještě během tvorby Nové generace zemřel v roce 1991 duchovní otec Roddenberry, načež seriálový Star Trek pokračoval bez něj. Na scénu přišly seriály Hluboký vesmír devět a Voyager, které nadále rozšířily startrekovskou mytologii a představily nové rasy a postavy.
+Ve Voyageru se vedení stejnojmenné lodi poprvé v historii série chopila žena - kapitánka Janewayová v podání Kate Mulgrewové. Její postava se stala pevnou součástí série a objevila se i v krátkém cameu ve filmu Star Trek: Nemesis, v němž ovšem hlavní roli opět sehrála Picardova posádka.
+Na počátku nového milénia se představil seriál Star Trek: Enterprise, v němž tvůrci popsali vše podstatné před událostmi prvního seriálu. Nedočkal se úplně nejvřelejšího přijetí, nicméně rozjel fázi prequelů, neboť na něj po sedmnácti letech od jeho konce navázal Star Trek: Discovery a následně i Podivné nové světy.
+Filmové i seriálové znovuzrození
+Po dlouhém „Trekkie“ půstu se série, respektive jejího filmového znovuzrození, chopil vizionář J.J. Abrams a se svým Star Trekem z roku 2009 rozhodně nešlápl vedle. Děj soustředil do nově vzniklého vesmíru a omladil posádku Enterprise. Zároveň ale vsadil i na návrat Leonarda Nimoye coby Spocka. Ve stejném duchu pokračoval i druhým dílem z roku 2013, načež Star Trek opustil, aby vzkřísil Star Wars (to je už jiný příběh).
+Prozatím poslední startrekovský film s podtitulem Do neznáma už Abrams jen produkoval a projektu se tak nepovedlo udržet si kvalitu předcházejících titulů. Série se na filmovém poli odmlčela (nepočítáme-li velmi neúspěšný projekt Sekce 31, jenž byl uveden pouze na streamingu), nyní ale Paramount usiluje o filmový návrat, kvůli čemuž ukončuje všechny rozjeté seriály.
+A právě nové seriály, kterých CBS a Paramount+ v poslední době připravily několik, jsou trnem v oku mnohým věrným trekkies (fanouškům Star Treku), zároveň ale pozvánkou do světa Star Treku pro nové diváky.
+Tvůrčí duo Bryan Fuller a Alex Kurtzman připravilo v letech 2017-2024 již zmíněný prequel Discovery, ve kterém následně uvedlo i Spocka předtím, než se stal prvním důstojníkem kapitána Kirka. Ve spin-offu Podivné nové světy Spockův příběh pokračuje a po boku ostatních členů posádky Enterprise, včetně Kirka, by měl v páté sérii dospět tam, kde to všechno začalo, tedy k událostem první série původního seriálu.
+Velkého úspěchu se dočkal seriál Star Trek: Picard, v němž Patrick Stewart znovu ztvárnil svého kapitána a v závěrečné řadě se potkal se všemi svými kumpány z Nové generace. Pro mladší diváky připravili tvůrci seriál Fenomén, pro starší milovníky animovaných parodií zase Lower Decks.
+Letos si Star Trek připomíná výročí speciálními akcemi na nejrůznějších festivalech, včetně promítání první epizody pod širým nebem v Los Angeles. Do kin se vrací první čtyři filmy s původní posádkou a v Německu čeká fanoušky speciální panel k Nové generaci.
+Slavit mohou i tuzemští trekkies, neboť SkyShowtime nabízí nově streamovací kanál „Star Trek Movies“ se všemi třinácti filmy. Vedle toho se streamovací služba chystá uvést v tuzemsku nevyprávěné příběhy Star Trek: Short Treks, které debutují 18. listopadu a představí oblíbené postavy z Discovery, jako například pana Sarua či Philippu Georgiu.|E||T|Rusko může do roku 2040 ovládnout více než třetinu světové těžby uranu|D|08.9. 05:00|P|Závislost západních zemí na Rusku by mohla v následujících letech opět vzrůst. Stát, od nějž se snaží odstřihnout od doby, kdy Moskva v roce 2022 zaút...|X|Článek
+CSA svoji varovnou zprávu vydala v době, kdy kvůli výstavbě nových jaderných elektráren roste poptávka po jaderném palivu.
+„Do roku 2040 bychom se mohli dostat do podobné závislosti na ruském uranu, jakou jsme měli na ruské ropě a plynu v roce 2022,“ uvedl Gareth Heywood z CSA pro The Financial Times.
+V roce 2024 se Rusko podílelo na zhruba čtvrtině celosvětové těžby uranu. A to při započtení dolů ovládaných ruskými firmami v zahraničí. V případě realizace připravovaných projektů by mohl ruský podíl na světové těžbě vzrůst na 36 procent.
+Významnou pozici má zejména státní Rosatom prostřednictvím společnosti Uranium One. Ta kontroluje kapacity v Kazachstánu a rozvíjí projekty v Tanzanii a Namibii.
+Experti očekávají, že uranu bude v příštích letech nedostatek. Po havárii jaderné elektrárny v japonské Fukušimě před 15 lety docházelo k uzavírání dolů a omezení investic. Povolování nových dolů je navíc zdlouhavé.
+Západní země se snaží hledat alternativy k ruskému uranu. Kov se těží převážně v Kazachstánu, Austrálii, Namibii a Kanadě. Například kanadská společnost NexGen Energy nyní rozvíjí rozsáhlý projekt v provincii Saskatchewan. Tamtéž má licenci na rozšíření svého dolu o třetinu také těžební firma Cameco.
+Problémem ale může být flexibilita. „Stavba nových dolů trvá dlouho,“ řekla Sarah Formanová, vedoucí strategie ve společnosti Urenco, specialistka na obohacování uranu.
+„To, co chcete, je, aby vlády vyslaly jasný signál, že jaderná energie bude součástí našeho energetického mixu ještě dlouho. Aby řekly průmyslu, že do toho může investovat kapitál,“ dodala.|E||T|Švédská krajní pravice může prolomit tabu a získat vládní křesla|D|08.9. 04:00|P|Švédsko čekají 13. září parlamentní volby, které ještě před několika týdny vypadaly jako téměř rozhodnutý souboj. Středolevá opozice vedená sociální d...|X|Švédsko čekají 13. září parlamentní volby, které ještě před několika týdny vypadaly jako téměř rozhodnutý souboj. Středolevá opozice vedená sociální demokratkou Magdalenou Anderssonovou měla v průzkumech náskok kolem deseti procentních bodů. V posledních dnech se ale situace výrazně proměnila. Nejnovější průzkumy ukazují mnohem těsnější rozdíl a připouštějí, že vláda současného premiéra Ulfa Kristerssona může mandát obhájit. Poprvé ve švédské historii se součástí vládní koalice může stát krajně pravicová strana.
+Podle průzkumu Demoskopu z přelomu srpna a září by čtyři středolevé strany získaly dohromady 50,6 procenta hlasů, zatímco pravicový blok tvořený vládními stranami a jejich podporovatelem, Švédskými demokraty, 47,3 procenta.
+Ještě 18. srpna přitom průzkum Verianu dával opozici náskok deseti procentních bodů. Švédská veřejnoprávní televize SVT tehdy mluvila o volebním „zázraku“, který by jako jediný mohl zvrátit porážku stávajícího kabinetu v čele s Kristerssonem.
+Souboj tedy zůstává otevřený a nejde v něm jen o to, zda se premiérem znovu stane Kristersson, nebo se po čtyřech letech na tuto pozici vrátí Anderssonová. Jednou z nejdůležitějších otázek je postavení krajně pravicových Švédských demokratů, populistické a protiimigrační strany, jež se z okrajového uskupení stala klíčovým hráčem pravicové scény.
+Stabilní kabinet za cenu prolomení tabu
+Kořeny Švédských demokratů sahají do osmdesátých let minulého století, kdy se část zakládajících členů hlásila k neonacismu či představě nadřazenosti bílé rasy. Od té doby se však strana snaží očistit svoji minulost a usiluje o přijetí politickým mainstreamem. Například minulý rok se partaj veřejně omluvila za svou antisemitskou a rasistickou minulost.
+Švédští demokraté se do parlamentu poprvé dostali v roce 2010, kdy s 5,7 procenta překonali čtyřprocentní hranici nutnou ke vstupu do tamní zákonodárné komory. V posledních volbách v roce 2022 získali už 20,5 procenta hlasů a stali se druhou nejsilnější stranou v zemi.
+Přesto nevstoupili přímo do vlády. Kristersson vytvořil menšinovou koalici Umírněných, Křesťanských demokratů a Liberálů a vládu opřel právě o podporu Švédských demokratů.
+Zlom nastal díky takzvané dohodě z Tidö. Ta umožnila straně, která byla dříve ostatními hlavními politickými silami prakticky izolována, zásadně ovlivňovat vládní politiku. Švédští demokraté v parlamentu dodávali vládě zprvu 73, později sedmdesát hlasů, aniž by v ní jejich členové přímo seděli. Jejich vliv se nicméně i tak výrazně projevil především v oblasti migrace a kriminality.
+Letos ale chtějí víc. Předseda strany Jimmie Åkesson, který v jejím čele stojí od roku 2005, řekl, že dosavadní model skončil, a pokud pravice vyhraje, „musí se Švédští demokraté stát plnohodnotnou součástí vlády“. Podle něj by měli získat několik klíčových ministerstev, jako jsou spravedlnost, obrana, zahraničí nebo finance.
+Åkesson sdělil, že on sám neaspiruje na křeslo předsedy vlády, které prý chce ponechat současnému premiérovi. „Obejdu se bez cestování po světě a potřásání rukou,“ řekl. Kristersson přitom už v dubnu oznámil, že pokud jeho blok zvítězí, je připraven vytvořit čtyřstrannou většinovou vládu – i se Švédskými demokraty.
+„Kristersson se ocitl mezi mlýnskými kameny. Bez Švédských demokratů nemůže sestavit vládu, ale ti by zase mohli odradit příliš mnoho voličů,“ upozornil emeritní profesor politologie z Göteborské univerzity Jonas Hinnfors.
+Liberálové jazýčkem na vahách
+Jde o zásadní posun. Ještě před několika lety totiž Kristersson spolupráci se Švédskými demokraty odmítal. Nyní tvrdí, že odstranil „červené linie“, které takové spolupráci bránily. „Po volbách chceme sestavit stabilní většinovou vládu. (...) To je pro Švédsko síla,“ vyjádřil se.
+K prolomení dosavadního tabu se přidali i Liberálové, kteří v březnu souhlasili s možností, že by Švédští demokraté po volbách do vlády vstoupili. Právě Liberálové se ale zároveň stali jedním z největších problémů vládního tábora. Podle posledních průzkumů se totiž pohybují pod čtyřprocentní hranicí nutnou pro vstup do švédského parlamentu.
+Demoskop jim v předvolebním průzkumu přisoudil 2,8 procenta hlasů. Pokud by Liberálové ze sněmovny skutečně vypadli, pravice by mohla mít problém sestavit většinu i v případě relativně těsného volebního souboje.
+Podle Hinnforse je pravděpodobné, že Liberálové ve volbách čtyřprocentní hranice nedosáhnou. „Pokud k tomu dojde, domnívám se, že je stále pravděpodobné, že současná vláda a strana, která ji podporuje, Švédští demokraté, volby prohrají,“ odhadl.
+Švédsko změnilo přístup k migraci
+Vzestup Švédských demokratů změnil nejen rozložení sil, ale také politiku celé země, jejíž zhruba každý pátý obyvatel se narodil v zahraničí. Švédsko bylo ještě před deseti lety bráno jako symbol mimořádně otevřené migrační politiky.
+V roce 2015, tedy během vrcholu migrační krize, přijala severská země v přepočtu na počet obyvatel více žadatelů o azyl než kterákoli jiná země Evropské unie. „Moje Evropa nestaví zdi,“ prohlásil tehdejší sociálnědemokratický premiér Švédska Stefan Löfven.
+V současnosti je však situace opačná. Počet žadatelů o azyl výrazně klesl a země patří mezi ty, které svou migrační politiku výrazně zpřísnily. Nově příchozí čelí přísnějším pravidlům pro zaměstnání, požadavkům na znalost jazyka a společnosti, omezenějším sociálním dávkám a delší cestě k občanství. Vláda také finančně motivuje dobrovolné návraty migrantů. Počet žadatelů o azyl byl loni dle Reuters o 97 procent nižší než na vrcholu před dekádou.
+Švédští demokraté tvrdí, že právě jejich tlak přispěl k tomuto obratu. Jejich politický vliv je přitom patrný i na sociálních demokratech. Také oni v posledních letech zpřísnili postoje k migraci, integraci a kriminalitě.
+Švédští demokraté dále požadují mimo jiné zákaz tradičního islámského oděvu pro ženy, demolici mešit, v nichž se podle nich káže islámský radikalismus, zvýšení počtu vyhoštění či navýšení finančních pobídek pro ty, kteří odejdou dobrovolně. „Chceme úplné zrušení multikulturalismu,“ poznamenal Mattias Karlsson, který je považovaný za hlavního ideologa strany.
+Kriminalita zůstává silným tématem
+Jedním z hlavních důvodů posunu švédské politiky v této oblasti je problematika násilí gangů a střelby. Kriminalita se stala jedním z ústředních témat předvolební kampaně, přičemž Švédští demokraté na něm dlouhodobě staví.
+Oficiální statistiky zároveň ukazují, že počet případů smrtícího násilí klesl v roce 2025 na 84, což představuje nejnižší úroveň od roku 2012. Průměr v předchozích deseti letech přitom činil 109 případů ročně. Nadále ale zůstává významným problémem násilí spojené s gangy a střelnými zbraněmi.
+Právě kriminalita tak ukazuje širší paradox švédských voleb. Ačkoliv se některé problémy mohou statisticky zlepšovat, zůstávají společensky a politicky velmi silné.
+Jedním z mála témat, na němž se politická reprezentace naopak shoduje, je důraz na bezpečnost, uvádí v analýze pro ECFR Mats Engström. Aktuálnosti se jí dostalo především po začátku velké ruské invaze na Ukrajinu, což nakonec vyústilo ve vstup historicky neutrálního Švédska do NATO.
+„Otázka obrany se v této volební kampani téměř neobjevila. Všechny strany berou ruskou hrozbu vážně a všechny ji chtějí řešit jednotně. Volební boj se místo toho odehrává kolem témat jako sociální péče, migrace, kriminalita, klima a ekonomika – a v mnoha z nich vládní strany prohrávají,“ míní Engström.
+Genderově podmíněná podpora
+Zajímavý vhled nabízí i struktura švédského elektorátu. Statistiky ukazují výrazný rozdíl mezi muži a ženami. V květnovém průzkumu Statistics Sweden uvedlo 25 procent mužů, že by preferovalo Švédské demokraty, oproti pouhým dvanácti procentům žen. Sociální demokraté naopak získali preferenční podporu 39 procent žen a 29 procent mužů.
+Rozdíl se podle politoložky Leny Wängnerudové prohlubuje už od 70. let, v poslední době se ale projevuje výrazněji. Muži v soukromém sektoru podle ní častěji tíhnou k pravici kvůli ekonomice, menšímu státu nebo migrační politice. Ženy více závisejí na fungujícím sociálním státu, protože stále nesou větší část pečovatelských povinností.
+Konec izolace krajní pravice?
+Ani případné vítězství středolevé opozice přitom nemusí znamenat jednoduchou změnu vlády. Sociální demokraté budou muset hledat spojence mezi Zelenými, Levicí a Stranou středu. Právě dvě posledně jmenované strany navíc vzájemně vylučují účast ve stejné vládě.
+Nejpravděpodobnějším scénářem je proto vláda, která bude závislá na složitých povolebních dohodách a může zůstat menšinová. Pokud naopak zvítězí Kristersson, může Švédsko zažít historický okamžik: Švédští demokraté by poprvé usedli přímo ve vládě a získali skutečný přístup ke klíčovým rozhodnutím.
+To by bylo významné i pro Evropu. Švédsko bylo po desetiletí jedním ze symbolů sociálnědemokratického modelu a dlouho také zemí, kde byla spolupráce s krajní pravicí považována za nepřijatelnou. Nyní se dostalo do situace, kdy se právě tato spolupráce může stát standardní součástí vládnutí.
+Švédské volby tak rozhodnou nejen o tom, kdo povede zemi příští čtyři roky. Ukážou také, jak daleko se může posunout hranice mezi tradiční pravicí a politickou stranou, která byla ještě nedávno považována za nepřijatelnou.|E||T|Za socialismu měl otce na Pankráci, o cizině jen snil. Od revoluce si svou vášeň štědře dávkuje|D|08.9. 04:00|P|Už jako malý kluk si představoval, jak to asi vypadá někde na druhé straně planety. Okouzlen knihami Karla Maye i českými cestopisy snil o Americe, In...|X|Článek
+Fascinaci dalekými kraji si Havlík pamatuje skutečně už z dětství. „Jako malý kluk jsem četl Mayovky, ale i české cestopisy od Hanzelky a Zikmunda, třeba o Indii a Nepálu, které v člověku vyvolávaly strašnou touhu se tam podívat. V té době to ale bylo naprosté sci-fi, asi jako cesta na Mars,“ konstatuje Čech s tím, že navíc pocházel ze silně antikomunistické rodiny a jeho otec byl vězněn na Pankráci.
+Navzdory špatnému kádrovému profilu se mu podařilo navštívit alespoň spřátelené socialistické země. „Nějak jsem prošel kontrolou a do Východního Německa, Rumunska či Maďarska se vyjet dalo,“ uvádí Havlík. Právě Rumunsko v něm touhu objevovat ještě rozdmýchalo. „Že se jednou podívám dál, byla ovšem hodně vzdálená touha.“
+Sledujte podcast Slepá mapa také na Instagramu, ať vám neutečou další zajímavé informace o chystaných dílech, kvízy či bonusový obsah.
+Železná opona v roce 1989 nakonec padla a Havlík začal postupně spřádat plány na zahraniční výlety. „Jedny z prvních myšlenek skutečně byly, že si budu moct přečíst, co chci, a že budu moct cestovat. Hned po revoluci jsem jel do Vídně. A jakmile to šlo, vyrazil jsem autobusem do Paříže. Jako kluk jsem četl Tři mušketýry a najednou jsem byl na místě, kde se odehrávali. Byl to hezký zážitek,“ vzpomíná Havlík.
+Po letech nesvobody a izolace od Západu ale strach ze světa neměl. Naopak cítil naději. „Cestování tenkrát bylo samozřejmě náročnější, do mnoha zemí potřeboval člověk vízum. Jakékoli rezervace jízdenek nebo letenek byly složitější, na vše existovaly formuláře…“
+Havlíka to v počátcích jeho cestovatelské dráhy táhlo logicky zejména na Západ, později ho začal lákat i Východ. „Nejdřív jsem chtěl vidět Francii, Španělsko, Itálii. Vždy se to vztahovalo k nějaké touze z dětství. Tehdy mi v hlavě proběhla myšlenka na to, že bych chtěl navštívit co nejvíce zemí světa. Dnes už mi nejde o číslo, ale spíš o to, abych něco zažil a potkal nové lidi.“
+Svoboda je privilegium
+Lásku k cestování u Havlíka umocňovala vždy touha setkávat se s novými lidmi a zjišťovat, jak žijí. Kvůli respektu se navíc učil i cizí jazyky, na komunikační úrovni jich zvládnul jedenáct. „Jsou to třeba španělština, němčina, francouzština nebo italština. Jakžtakž se domluvím i japonsky. Jazyk je klíč k dané zemi, který vám ji pomůže poznat lépe,“ tvrdí nadšený cestovatel.
+Světoběžnictví věnoval Havlík spoustu času. Ani po založení rodiny a budování kariéry se myšlenky na poznávání nových kultur nevzdal. „Třeba s nejstaršími syny jsme šli svatojakubskou cestu. Sice na čtyřikrát, ale byla to skvělá zkušenost, protože před dvaceti lety tam nebylo ještě tolik lidí. Cestování musí člověk dost věcí obětovat a třeba si i v zaměstnání nějaké věci napracovat dopředu. Ty zážitky a svoboda za to ale určitě stojí.“
+Každý výlet je navíc pro Havlíka připomínkou privilegií, která nejsou automatická. Třeba při návštěvě Turkmenistánu, jedné z nejuzavřenějších zemí světa, vzpomínal na dospívání za socialismu.
+„Na člověka tam dýchá minulost. Uvědomí si, že mít pas České republiky a volná víza je obrovské privilegium. Zároveň mívám při návštěvě podobných zemí morální dilema, jestli vlastně nepodporuji místní diktátorský režim,“ dodává Havlík s tím, že by se přesto jednou rád podíval do Severní Koreje.
+Jeho srdcovkami jsou zejména Gruzie anebo Bolívie. Latinskou Ameriku vůbec považuje za okouzlující část světa, pohrával si dokonce s myšlenkou na přestěhování. „Ne že bych si nevážil České republiky nebo že by se mi tu dařilo špatně. Je to krásné místo k životu, i když si na něj často stěžujeme,“ konstatuje.
+Jak se cestovalo těsně po revoluci? V čem to bylo tenkrát složitější? Zapomínáme, že je svoboda pohybu privilegiem? Zmizela ze světa za posledních 40 let autenticita? A jaká je návštěva zemí, kde stále vládnou diktátoři? Nejen to se dozvíte v kompletním hodinovém rozhovoru. Tento článek slouží pouze jako výtah vybraných témat. Na interview se můžete podívat na videu, případně si ho pustit v audiopřehrávači v úvodu článku.
+Baví vás cestovatelské příběhy a rozhovory? Máte k nim nějaké připomínky, výtky či pochvaly? Dejte nám vědět na adresu michael.svarc@novinky.cz a do předmětu uveďte „Slepá mapa“.
+Podcast Slepá mapa pravidelně přináší rozhovory o blízkých i vzdálených koutech naší planety, exotických kulturách, lokálních pamětihodnostech a jedinečných cestovatelských zážitcích. Pusťte si Slepou mapu třeba na Podcasty.cz, Spotify nebo na Apple Podcasts.
+Poslechněte si i naše další podcasty:|E||T|Ukrajinský generální prokurátor podal rezignaci|D|08.9. 02:23|P|Ukrajinský generální prokurátor Ruslan Kravčenko v úterý pozdě večer oznámil, že předal prezidentovi Volodymyru Zelenskému a parlamentu svou rezignaci...|X|Článek
+„Podal jsem žádost o odstoupení z funkce generálního prokurátora,“ napsal Kravčenko na sociální síti Telegram. „Děkuji prezidentovi Ukrajiny a Nejvyšší radě (parlamentu) za důvěru a žádám o přijetí mého odstoupení,“ dodal.
+Protikorupční úřad Ukrajiny (NABU) a speciální protikorupční prokuratura (SAP) v sobotu oznámily, že v rámci operace Kartágo odhalily zločineckou organizaci vedenou vysoce postaveným činitelem na generální prokuratuře.
+V souvislosti s případem byl vzat do vazby Kravčenkův náměstek Serhej Kropyva, vedoucí kybernetického oddělení Úřadu generálního prokurátora Ukrajiny. V odposleších, které má NABU k dispozici, je označován krycím jménem „Kancléř“.
+Členové organizace podle vyšetřovatelů vybírali úplatky za to, že nebudou bránit činnosti call center, která ve velkém okrádají občany Ukrajiny i cizince. Získané peníze pak legalizovali prostřednictvím nákupu nemovitostí. Celkem šlo o 42 milionů hřiven (zhruba 19,5 milionu Kč).
+Pracovníci protikorupčních úřadů při sobotní razii prohledali také Kravčenkovu kancelář. Hlavní žalobce v oznámení rezignace uvedl, že jeho postoj k obviněním vzneseným vůči němu zůstává nezměněný, tedy že se na žádném korupčním schématu nepodílel.
+Případ přichází v době, kdy ukrajinské protikorupční úřady vyšetřují několik významných kauz zasahujících do nejvyšších pater státní moci, mimo jiné kolem bývalé zástupkyně vedoucího prezidentské kanceláře Iryny Mudré, bývalého šéfa prezidentské kanceláře Andrije Jermaka a státní energetické společnosti Enerhoatom.|E||T|Hoří kladenský obchod Lidl. Škoda 120 milionů|D|08.9. 01:14|P|Plameny zachvátily v noci na úterý prodejnu řetězce Lidl v kladenské ulici Americká. Hasiči v průběhu zásahu vyhlásili třetí stupeň poplachu. Nad ráne...|X|Článek
+Požár byl nahlášen zhruba pět minut po půlnoci. „Požár je v plném rozsahu, prvotní odhad vzniklé škody je 120 milionů korun,“ uvedl mluvčí hasičů Tomáš Bakalář.
+Hasiči nejprve vyhlásili druhý a následně třetí poplachový stupeň ze čtyř možných. Před 2:30 dostali požár pod kontrolu a krátce před 5:00 snížili poplachový stupeň na druhý.
+Policie během zásahu uzavřela bezprostřední okolí. Na místě zasahoval větší počet hasičských jednotek, hasiči zasahovali ze země i z výškové techniky.
+Požár se obešel bez zranění. Z přilehlé ubytovny bylo evakuováno 53 lidí, ti se ale později mohli vrátit zpět.
+Nad ránem dostali hasiči oheň pod kontrolu, dál ale pokračuje dohašování. Na místo přijela těžká technika kvůli rozebírání trosek.
+Na místě jsou vyšetřovatelé požárů a také odborníci z Technického ústavu požární ochrany. Vyšetřování podle mluvčího hasičů potrvá zřejmě delší dobu.|E||T|Rusko po třídenní přestávce obnovilo útoky na Kyjev, úřady hlásí dva mrtvé|D|08.9. 00:58|P|Moskva v noci na úterý obnovila útoky na ukrajinské hlavní město Kyjev, oznámily místní úřady. Městem otřásly exploze, útoky si vyžádaly nejméně dva m...|X|Moskva v noci na úterý obnovila útoky na ukrajinské hlavní město Kyjev, oznámily místní úřady. Městem otřásly exploze, útoky si vyžádaly nejméně dva mrtvé a sedm zraněných, píše agentura Reuters. Údery přišly po skončení třídenní přestávky v útocích na Kyjev a Moskvu, kterou obě strany vyhlásily v souvislosti s cestou amerických vyjednavačů Steva Witkoffa a Jareda Kushnera nejprve do Moskvy a následně do Kyjeva.
+„V Kyjevě je aktivní protivzdušná obrana,“ uvedla kolem jedné hodiny ranní kyjevská vojenská správa. Letecký poplach byl vyhlášen kvůli útoku bezpilotních letounů. Správa vyzvala obyvatele, aby se odebrali do krytů.
+Podle svědků agentur Reuters a AFP otřásly ukrajinskou metropolí silné výbuchy. Představitelé města následně uvedli, že při útoku byly poškozeny nejméně dva obytné domy.
+Podle kyjevského starosty Vitalije Klyčka utrpělo zranění šest lidí, z nichž tři zdravotníci převezli do nemocnice. Před šestou hodinou SELČ úřady informovaly také o dvou mrtvých.
+Poplach zněl i v dalších částech Ukrajiny
+Podle ukrajinské záchranné služby Rusko zaútočilo drony také v okresech Fastiv a Boryspil nedaleko Kyjeva. Zasaženo bylo logistické centrum a několik průmyslových podniků. Vzniklé požáry hasiči uhasili.
+Letecký poplach se v noci rozezněl i v dalších částech Ukrajiny, včetně Rovenské oblasti na severozápadě země a dalších regionů vzdálených od fronty, informoval web Kyiv Independent. Ukrajinské letectvo předtím varovalo, že Rusko pravděpodobně odpálilo střely s plochou dráhou letu ze strategických bombardérů Tu-95 a Tu-160.
+V reakci na ruský útok zahájilo sousední Polsko operace vojenského letectva, oznámily tamní ozbrojené síly. Cílem preventivního opatření bylo chránit polský vzdušný prostor před možným narušením.
+Jednání emisarů Witkoffa a Kushnera amerického prezidenta Donalda Trumpa v Moskvě a Kyjevě nepřineslo žádný viditelný průlom ve snaze ukončit válku, kterou Kreml zahájil před více než čtyřmi lety plnohodnotnou invazí na Ukrajinu.|E||T|Bez kouře a nastavování. AI gril pozná jídlo a sám ho připraví|D|08.9. 00:34|P|Zapnout, vložit jídlo a nechat technologii, aby se postarala o zbytek. Tak chce změnit domácí grilování novinka Lumo od čínské společnosti CozyTime, k...|X|Článek
 (Od našeho zpravodaje)
 Na první pohled Lumo připomíná kompaktní elektrický gril. Jeho ambicí je ale něco víc než jen opéct maso. Zařízení kombinuje infračervený ohřev, senzory a umělou inteligenci, která má převzít část rozhodování, jež při vaření běžně zůstává na člověku.
 Systém podle výrobce dokáže rozpoznat připravovanou potravinu a zohlednit například její tloušťku, velikost, počáteční teplotu nebo hmotnost. Na jejich základě zvolí odpovídající program a nastaví průběh přípravy.
@@ -17,7 +204,12 @@ Manuální nastavení pro profíky
 Kdo nechce spoléhat na automatiku, může Lumo ovládat také ručně. Přes aplikaci lze upravovat teplotu a čas a sledovat průběh přípravy. Součástí ekosystému jsou také recepty, včetně těch generovaných pomocí AI.
 „Ti, kteří jsou mistry grilování, možná budou chtít vše ovládat ručně. Chtějí mít velmi přesnou kontrolu nad teplotou nebo způsobem přípravy,“ podotkl Lizhi He.
 Lumo dobře zapadá do jednoho z výrazných trendů letošního veletrhu IFA. Umělá inteligence už není pouze záležitostí telefonů, počítačů nebo televizorů. Výrobci ji stále častěji zabudovávají také do domácích spotřebičů.
-Na pultech obchodů by se AI gril měl objevit ještě před Vánocemi. Výrobce počítá s cenou 499 dolarů (10 400 Kč) a dostupností v Asii, USA i ve vybraných evropských státech. Zda mezi nimi bude také Česká republika, ale není v tuto chvíli jasné.|E||T|Napravo závodiště, nalevo nové kolbiště. Pardubice mohou pořádat největší jezdecké závody|D|07.9. 22:45|P|Pardubice už nemají jen arénu pro hokej, od pondělí se na závodišti otevřela Hippoaréna. Na jednom z největších kolbišť v České republice mohou pořáda...|X|Článek
+Na pultech obchodů by se AI gril měl objevit ještě před Vánocemi. Výrobce počítá s cenou 499 dolarů (10 400 Kč) a dostupností v Asii, USA i ve vybraných evropských státech. Zda mezi nimi bude také Česká republika, ale není v tuto chvíli jasné.|E||T|Ukrajinský generální prokurátor po korupčním skandálu oznámil rezignaci|D|08.9. 00:14|P|Ukrajinský generální prokurátor Ruslan Kravčenko oznámil, že prezidentovi Volodymyru Zelenskému a parlamentu předložil svou rezignaci. Učinil tak po k...|X|Ukrajinský generální prokurátor Ruslan Kravčenko oznámil, že prezidentovi Volodymyru Zelenskému a parlamentu předložil svou rezignaci. Učinil tak po korupčním skandálu, který v uplynulých dnech zasáhl jeho úřad. Svůj krok označil za politické rozhodnutí a odmítl, že by se podílel na údajném korupčním schématu, píše agentura Reuters.
+„Podal jsem žádost o odstoupení z funkce generálního prokurátora,“ napsal Kravčenko na telegramu. „Je to politické rozhodnutí a učinil jsem ho vědomě. Nechci, aby byla funkce generálního prokurátora využívána jako nástroj politického střetu,“ vysvětlil. Poděkoval také prezidentovi a Nejvyšší radě za důvěru a požádal je, aby jeho rezignaci přijali.
+Národní protikorupční úřad Ukrajiny (NABU) a Specializovaná protikorupční prokuratura (SAP) v sobotu oznámily, že odhalily zločineckou organizaci vedenou vysoce postaveným činitelem generální prokuratury. V souvislosti s případem soud poslal do vazby Kravčenkova náměstka Serhije Kropyvu.
+Členové organizace podle vyšetřovatelů vybírali úplatky za to, že nebudou bránit činnosti call center, která ve velkém okrádala občany Ukrajiny i cizince. Získané peníze následně legalizovali prostřednictvím nákupu nemovitostí. Celkem šlo o 42 milionů hřiven (zhruba 19,5 milionu korun).
+Pracovníci protikorupčních úřadů při sobotní razii prohledali také Kravčenkovu kancelář. Generální prokurátor v oznámení o rezignaci uvedl, že jeho postoj k obviněním zůstává nezměněný. Již dříve odmítl, že by se na korupčním schématu podílel.
+Případ přichází v době, kdy ukrajinské protikorupční úřady vyšetřují několik významných kauz zasahujících do nejvyšších pater státní moci. Týkají se mimo jiné bývalé zástupkyně vedoucího prezidentské kanceláře Iryny Mudré, bývalého šéfa prezidentské kanceláře Andrije Jermaka a státní energetické společnosti Enerhoatom.|E||T|Napravo závodiště, nalevo nové kolbiště. Pardubice mohou pořádat největší jezdecké závody|D|07.9. 22:45|P|Pardubice už nemají jen arénu pro hokej, od pondělí se na závodišti otevřela Hippoaréna. Na jednom z největších kolbišť v České republice mohou pořáda...|X|Článek
 Nová aréna má rozměry 105 × 70 metrů a celkovou plochou 7 350 m². Povrch tvoří speciální směs křemičitého písku a geotextilie v přirozeném béžovém odstínu a je příjemný pro oči jezdců i koní.
 Součástí kolbiště je systém spodního zavlažování, který umožňuje regulovat vlhkost a vlastnosti povrchu podle aktuálních podmínek. Řešení zároveň omezuje spotřebu vody a přispívá k šetrnějšímu provozu areálu. Nové osvětlení umožní využívat kolbiště také ve večerních hodinách.
 „Pardubické závodiště má dlouhou tradici a dostihy zůstávají jeho hlavní náplní. Zároveň ale chceme, abychom mohli areál využívat po celý rok a aby v něm své trvalé místo měly i další jezdecké disciplíny. Nové kolbiště nám k tomu vytváří potřebné podmínky a umožní nám to vrátit do Pardubic jezdecké soutěže na nejvyšší úrovni,“ říká ředitel Dostihového závodiště Pardubice Jaroslav Müller.
@@ -123,283 +315,13 @@ Růst zpomalil
 Státní peníze mají podle Pekingu posílit banky a pojišťovny a umožnit jim lépe financovat firmy a další části ekonomiky. Státní zpravodajský server Global Times uvedl, že to „poskytne bankám a finančním institucím více zdrojů k nasměrování úvěrů pro reálnou ekonomiku, zatímco posílí jejich schopnost odolat vnějším šokům v době globální finanční nejistoty“.
 Čínská ekonomika ve druhém čtvrtletí meziročně vzrostla o 4,3 procenta. To představuje poměrně výrazné zpomalení oproti prvnímu čtvrtletí, kdy růst dosáhl pěti procent.
 Peking si přitom pro letošní rok stanovil cíl růstu v rozmezí 4,5 až 5 procent. Jde o nejnižší oficiální růstový cíl Číny od roku 1991.
-Posílení státních bank a pojišťoven má podle Pekingu poskytnout další nástroj, jak čínskou ekonomiku podpořit. Silnější finanční instituce mohou poskytovat více úvěrů podnikům a pomáhat financovat investice. Prezident Si Ťin-pching navíc dlouhodobě považuje stabilitu finančního systému za jednu z klíčových součástí národní bezpečnosti.|E||T|Rumburak sehnal Babišovi skvělý vedlejšák. Jak si premiér povede?|D|07.9. 18:54|P||X|Novinky.cz
-Vyhledat
-Osobní menu
-Seznam.cz
-Hlavní menu
-Zavřít menu
-Hlavní stránka
-Moje sledované
-Stalo se
-Domácí
-Volby
-Komunální volby
-Volby do Senátu
-Parlamentní volby
-Krajské volby
-Prezidentské volby
-Eurovolby
-Volby USA
-Zahraniční
-Evropa
-Blízký a Střední východ
-Amerika
-Svět
-Válka na Ukrajině
-Komentáře
-Krimi
-Kultura
-Film
-Hudba
-TV a streaming
-Knihy
-Divadlo
-Ekonomika
-Lifestyle
-Dítě a rodina
-Zdraví
-Sex a vztahy
-Móda a kosmetika
-Osobnosti
-Gastro
-Recepty
-Bydlení
-Zahrada
-Jak na to
-Koktejl
-Internet a PC
-Hardware
-Software
-Testy
-Hry a herní systémy
-Mobil
-Bezpečnost
-AI
-AutoMoto
-Testy
-Rallye Dakar
-Autosalon Ženeva
-Autosalon Frankfurt
-Tuning
-Sauto.cz »
-Smoto.cz »
-Věda a školy
-Vzdělávání
-Cestování
-Tipy na výlety
-Sdovolená.cz »
-Tipy na výlety na Mapy.cz »
-Historie
-17. listopad
-Podcasty a pořady
-Sport
-Kvízy
-Speciály
-Dokumenty
-Počasí
-TV program
-Denní tisk
-Zprávy
-Ekonomika
-Internet a PC
-AutoMoto
-Žena
-Bulvár
-Sport
-Bydlení
-Cestování
-Ostatní
-Tiráž
-Zobrazení snímku 1 z 0
-záhlaví
-Hlavní menu
-Hlavní stránka
-Stalo se
-Domácí
-Volby
-Zahraniční
-Válka na Ukrajině
-Komentáře
-Krimi
-Kultura
-Ekonomika
-Lifestyle
-Koktejl
-Internet a PC
-AutoMoto
-Věda
-Cestování
-Historie
-Podcasty a pořady
-Sport
-Kvízy
-Speciály
-Počasí
-TV program
-Denní tisk
-Sledované
-Drobečková navigace
-Novinky.cz
-Vtipy
-Rumburak sehnal Babišovi skvělý vedlejšák. Jak si premiér povede?
-Hlavní obsah
-Rumburak sehnal Babišovi skvělý vedlejšák. Jak si premiér povede?
-vain
-eBook
-Sdílet
-Včera 7. 9., 18:54
-Pohádkář
-Video: Vain , Novinky
-Článek
-Vtipy »
-Přeskočit carousel
-Proboha, jediný, co ho zajímá, je, jestli nejsem... Zdíša z Deníku N.
-»
-Miroslav Kemel
-Strašně jsem se ve vás zklamal, že jste mě neuhlídal...
-»
-Miroslav Kemel
-Návštěva u Macinky
-»
-Tomáš Řemínek
-Ano, nějaký projekt bysme mohli odložit. Třeba ten váš na podporu skutečné pravice...
-»
-Miroslav Kemel
-Přijde odhalení?
-»
-vain
-Naší prioritou je solidarita... Především solidarita všech budoucích generací s tou současnou.
-»
-Miroslav Kemel
-Našel se pejsek
-»
-vain
-Vzdělání této generace má jednu z nejvyšších priorit. Vyšší má snad už jenom její zadlužení...
-»
-Miroslav Kemel
-Přeji vám, abyste tohle nikdy nemuseli popřít...
-»
-Miroslav Kemel
-Co sudičky přály nám?
-»
-vain
-Zobrazení snímku 1 z 10
-1
-Související témata:
-Andrej Babiš
-Postranní panel
-Reklama
-Reklama
-Výběr článků
-Načítám
-Postranní panel
-Rumburak sehnal Babišovi skvělý vedlejšák. Jak si premiér povede? - Novinky|E||T|Záběry na soptící Anak Krakatau. Vulkán je stále nebezpečný, varují úřady|D|07.9. 18:52|P|Indonéská sopka Anak Krakatau se v pátek probudila k životu. Erupce sopky trvala přibližně 25 hodin a vyvrhla oblaky popela do výšky až 15 kilometrů. ...|X|Článek
-Sopečný popel narušil letecký provoz na osmi letištích, včetně mezinárodního letiště Soekarno–Hatta v hlavním městě Jakartě.
-Zpožděno bylo přes tisíc letů a na letištích uvízlo skoro 200 tisíc cestujících. Nebyly hlášeny žádné oběti ani bezprostřední hrozba tsunami.
-Ačkoliv erupce skončila, úřady varují, že sopka zůstává aktivní a představuje potenciální nebezpečí.
-„Budeme i nadále pravidelně vyhodnocovat úroveň aktivity sopky Anak Krakatau. Dokud nebude zveřejněna další hodnotící zpráva, zůstává v platnosti stav úrovně III (poplach) a všechna související doporučení,“ řekla vedoucí agentury pro monitorování sopek Siti Sumilahová.
-Anak Krakatau (v indonéštině Dítě Krakatoy) je aktivní sopka v indonéském Sundském průlivu. Vznikla po katastrofické erupci sopky Krakatoa v roce 1883, při které zahynulo odhadem 35 000 lidí.|E||T|Soukromé a církevní školy mohou přijít o dotace|D|07.9. 18:25|P|Vláda Andreje Babiše (ANO) pokukuje po možnosti, jak ušetřit miliardy korun z rozpočtu ministerstva školství. Chtěla by seškrtat dotace, které na svou...|X|Článek
-„Vnímám velice podivně, že stát platí přes dvacet miliard ročně soukromým i církevním školám, když jsme měli církevní restituce,“ pohoršil se v pondělí premiér Babiš nad tím, že školy, které účtují poplatky za studium v řádu desítek nebo stovek tisíc korun, dostávají od státu další miliony na dotacích. Nejde přitom o žádnou novinku, ale desetiletí fungující systém.
-Soukromé a církevní školy v Česku mají na peníze od státu nárok ze zákona. Na svůj provoz čerpají dotace, které v základu odpovídají 60 procentům financí, jež náleží veřejné škole. V praxi je ale částka obvykle vyšší, u základních škol může dosáhnout až sta procent a u středních až 90 procent toho, co získávají veřejné školy.
-Výše nárokové dotace závisí na plnění podmínek, jde především o hodnocení České školní inspekce a dodržování pravidel financování. Peníze plynou z rozpočtu ministerstva školství, které je rozesílá čtvrtletně.
-„Pojďme se o tom bavit. Je to podnikání jako každé jiné a mně to nepřijde normální,“ dodal Babiš. Případné změny financování neveřejných škol mají podle něj být tématem pro vládní koalici a pro ministra školství Roberta Plagu (za ANO), který je prý o případných změnách ochotný jednat.
-„Ročně jde 21 miliard korun, to jsou obrovské peníze. Musíme se bavit o tom, zda tyto peníze restrukturalizovat či snížit,“ přiblížila ministryně Schillerová. Odmítla, že by stát měl přestat dotace vyplácet zcela, ale snížení je podle ní na místě. Pokud se koalice na úpravě tzv. normativů dohodne, bude nutné změnit zákon. O kolik financí by neveřejné školy mohly přijít, ani kdy by tato změna mohla nastat, zatím není jasné.
-Data ministerstva školství uvádějí, že v minulém školním roce fungovalo 354 soukromých a 49 církevních základních škol. Ve středním vzdělávání evidovalo ministerstvo 325 soukromých a 46 církevních škol. Řada neveřejných škol poskytuje potřebné kapacity v oborech, které veřejné školy nepokryjí. Například v Praze podle dat Cermatu suplovaly v roce 2026 soukromé a církevní střední školy více než třetinu kapacit středního školství.|E||T|Rusko má podle Ukrajinců zdroje ještě na dva roky války|D|07.9. 18:09|P|Kreml má dostatek zdrojů na vedení války ještě na dva roky. V pondělí to prohlásil šéf ukrajinské vojenské rozvědky (HUR) Oleh Ivaščenko pro web Ukrin...|X|Článek
-Ruský režim se podle Ivaščenka potýká s nedostatkem pracovníků, rostoucím deficitem státního rozpočtu a zhoršující se situací bankovního systému. „Zdroje pro vedení války proti Ukrajině jsou zatím dostatečné. Nevylučujeme, že by mohly vystačit i v letech 2027 a 2028,“ uvedl v rozhovoru pro web Ukrinform.
-Ukrajina, která se brání ruské invazi, a její partneři by proto podle šéfa rozvědky měli pracovat na tom, aby Moskva o tyto zdroje přišla. „Víme, které země dodávají Ruské federaci elektronické komponenty, stroje a speciální chemikálie,“ podotkl s tím, že existuje mnoho firem, které zprostředkují pohyb sankcionovaného zboží do Ruska.
-Ivaščenko zároveň tvrdil, že až 60 procent lidí je v Rusku proti válce. Je to podle něj důsledek ekonomické situace a velkých ztrát. Režim vyčerpal způsoby získávání nových vojáků, protože rozpočty regionů už nedokážou vyplácet náborové bonusy pro vojáky, kteří podepsali smlouvu s armádou.
-„Zároveň se zvyšují ztráty ruských vojsk. Průměrná denní míra ruských ztrát se pohybuje od 1200 do 1 400 lidí, někdy až 1 500. Mluvíme o zabitých a těžce zraněných,“ dodal Ivaščenko.|E||T|Triumf AfD v zemských volbách: Jásal Okamura i Turek, strohý Babiš|D|07.9. 17:53|P|Ač spolková země Německa Sasko-Anhaltsko s Českem přímo nesousedí, nedělní triumf Alternativy pro Německo (AfD) v zemských volbách by pro nás podle op...|X|Článek
-„Zemské volby neurčují zahraniční ani evropskou politiku Německa. O té se rozhoduje především na federální úrovni,“ vysvětlila pro Novinky analytička z Asociace pro mezinárodní otázky Zuzana Zavadilová.
-Zároveň ale upozornila, že jejich význam je mimořádně silný politicky a symbolicky: „AfD získala 43,8 procent a CDU pouze 17,2 procent. AfD tak dosáhla svého historicky nejlepšího výsledku v zemských volbách.“
-Pro Česko tak podle Zavadilové bude důležité sledovat, co výsledek udělá v Berlíně, kde sídlí německý parlament, i jak na něj zareagují německé vládní strany, především CDU/CSU.
-Témata, na která AfD cílí, ale nejsou tolik vzdálená od těch, které se řeší i v Česku. „Žijeme v podobném geografickém prostoru, takže určitá podobnost existuje, hlavně v tématech bezpečnosti, cen energií a nedůvěry k tradičním stranám. V Česku na podobná témata nejvýrazněji cílí SPD, která prosazuje přísnější kontrolu migrace, ochranu hranic, důraz na českou suverenitu a omezení migračního paktu EU,“ popsal pro Novinky politolog Lukáš Novotný z Katedry politologie Filozofické fakulty Univerzity J. E. Purkyně v Ústí nad Labem.
-Právě šéf SPD a předseda Sněmovny Tomio Okamura AfD gratuloval už v neděli večer. „Doufám, že bude součástí nové vládní koalice ve spolkové zemi Sasko-Anhaltsko,“ řekl Okamura ve vysílání ČT. Výsledek označil za důsledek špatné politiky dosavadních liberálních a proevropských stran.
-Okamura zároveň odmítl argumentaci založenou na označování AfD za krajně pravicovou stranu. Poukázal na vlastní zkušenosti SPD se zprávami o extremismu a uvedl, že takovým zprávám podle něj nelze věřit.
-Zavadilová i Novotný ale upozorňují, že Spolkový úřad pro ochranu ústavy označil AfD v Sasku-Anhaltsku za prokazatelně pravicově extremistickou stranu.
-SPD a AfD spolu působí v Evropském parlamentu ve frakci Evropa suverénních národů a shodují se v otázkách nelegální migrace, Green Dealu či zrušení koncesionářských poplatků. Jejich postoje se ale rozcházejí například v otázce Benešových dekretů. Okamura v minulosti tvrdil, že se AfD zavázala jejich otázku neotevírat, několik jejích poslanců v Bavorsku však loni podpořilo požadavek na jejich zrušení.|E||T|Trump překvapil nevšední barvou vlasů|D|07.9. 17:51|P|Nejen svou politikou, ale i svým vzhledem poutal v posledních dnech pozornost americký prezident Donald Trump. Když v pátek v New Jersey vystoupil z p...|X|Článek
-Trumpův účes mívá obvykle blond odstín, případně je i trochu do oranžova, tentokrát se v něm však objevily nezvykle tmavé tóny, což zachytili i fotografové na letišti.
-Na některých snímcích působí 80letý Trump vysloveně jako brunet, podle jiných se ale zdá, že zcela tmavé jeho vlasy nejsou.
-Téma Trumpových vlasů okamžitě začali řešit uživatelé sociálních sítí, což zaznamenala třeba i zpravodajská stanice Fox News. A po tématu a pobavených reakcích skočil i server The Independent nebo Daily Mail.
-.-.
-TRUMP DEBUTS NEW BROWN TOUPEE
-Donald Trump may attempt to declare
-Criticism is totally unfair
-..but this sexual abuser
-..is a War Loser
-And he changed the color of his hair.#TrumpEpsteinPedoCoverUp #TrumpIsHerbertHoover https://t.co/gtwnntD2mW pic.twitter.com/K3ab4yTIw5
-„Vypadá jako moderátor televizní soutěže ze sedmdesátek,“ citovala média jednoho z uživatelů sociálních sítí.
-„Na obarvení a úpravu vlasů zřejmě nebyl čas. Tohle vypadá na úplně nový příčesek,“ zněl pak další komentář.
-Jeden z komentujících neopomněl ocenit muže v uniformě salutujícího poblíž prezidenta: „Obdivuji, že po pohledu na ty vlasy dokázal udržet kamennou tvář.“
-"Trump is now a brunette!"
-President Trump appears to be switching up his signature look, and social media is taking notice.
-Trump stepped off Air Force One in New Jersey with his famously blond hair appearing noticeably darker, sparking a wave of speculation online over… pic.twitter.com/M1KLQYH9Vd
-„Několik dní poté, co trval na tom, že nenosí paruku, náhlá změna odstínu způsobila na sociálních sítích kolaps,“ napsal další z uživatelů.
-Narážel tím na to, že se Trump zrovna minulý týden ohradil proti spekulacím, že nosí paruku. Aby svá slova podpořil, připomněl šéf Bílého domu větrný předvolební mítink v Ohiu z roku 2024, který jeho kštici řádně prověřil.
-OMG -- Donald Trump grows a Afro hair from yesterday!
-😆😆😆😆😆 pic.twitter.com/aAQyNqNavd
-Není to poprvé, kdy prezident svým účesem vyvolal pozdvižení. Podobné dohady se objevily už v roce 2019, kdy se krátce ukázal s uhlazeným účesem sčesaným dozadu.
-Seriózní odpověď vysvětlující aktuální záhadu kolem prezidentova účesu zatím Bílý dům nenabídl. Každopádně na prezidentově sociální síti TruthSocial už je Trump zase „blonďák“.|E||T|Evropská komise pozastavila část dotací pro firmy Agrofertu|D|07.9. 17:38|P|Evropská komise (EK) kvůli pokračujícímu vyšetřování střetu zájmů pozastavila část dotací firmám Agrofertu. Informoval o tom Státní zemědělský interve...|X|Článek
-„Evropská komise svůj postup odůvodňuje pokračujícím posuzováním otázek souvisejících s aplikací pravidel Evropské unie v oblasti předcházení střetu zájmů,“ uvedl SZIF. Zpráva dodává, že pozastavení se týká pouze části dotací hrazených z Evropského fondu pro rozvoj venkova, firmy Agrofertu mohou nadále čerpat dotace z fondu Evropského záručního zemědělského fondu.
-SZIF dále uvedl, že přerušení není konečné a může trvat maximálně šest měsíců. Může se ještě prodloužit o tři měsíce, to však podléhá schválení českou stranou. Evropské komisi toto opatření poskytuje čas na dokončení vlastních analýz a vyžádání potřebných informací od českých úřadů.
-Andrej Babiš (ANO) tvrdil, že střet zájmů vyřešil v únoru vložením akcií Agrofertu do svěřeneckého fondu RSVP Trust a to „daleko nad rámec českých i evropských zákonů“, jak uvedl v červnu. SZIF toto řešení na základě nezávislých analýz prohlásil za dostatečné a od konce dubna čerpání dotací opět umožnil.
-Evropská komise se však s převedením akcií do fondu nespokojila a v květnu poslala českým úřadům dopis, ve kterém žádala o právní posouzení svěřeneckého fondu a ujištění, že se dotace nedostaly k dalším firmám spojeným s Babišem.
-Dotacemi pro Agrofert se také na popud Pirátů začal v květnu zabývat Úřad evropského veřejného žalobce (EPPO), který kromě samotných dotací začal vyšetřovat i úředníky, kteří je vypláceli.
-Část případu však vyčlenil a předal ji pražskému Vrchnímu státnímu zastupitelství, které se obrátilo na Nejvyšší státní zastupitelství. To rozhodlo, že má celý případ zůstat evropským žalobcům. Podle NSZ bylo rozdělení v rozporu se zavedenou praxí i s evropskými pravidly a českou úpravou.|E||T|ODS chce znovu otevřít dětský certifikát. Decroix volá po lidskosti k pachatelům|D|07.9. 17:33|P|Část ODS nesouhlasí s tím, aby pachatelé některých násilných či sexuálních trestných činů měli až stoletý zákaz vykonávat práci s dětmi. Bývalá minist...|X|Článek
-„Nikdy jsem se nesmířila s plošným trestem bez možnosti zohlednění nápravy nebo individuální situace v oblasti dětského certifikátu. Je to diskuze, která vyvolává ohromnou vlnu emocí. Strach o naše děti je vždy pádným argumentem, ale nesmí být takovým argumentem, abychom do jednoho pytle hodili všechny a nafurt,“ napsala minulou středu na Facebook Decroix.
-„Prostě chci jen pravidelný přezkum a lidskost i ve vztahu k těm, kteří hranu zákona někdy překročili,“ dodala.
-Novinky bývalou ministryni požádaly, aby upřesnila, jakou konkrétní úpravu chce navrhnout. Odpovědět však odmítla s tím, že návrh chce nejdřív představit kolegům ve Sněmovně. „Jde mi o odborně správné řešení, ne o politické výstřelky,“ řekla Novinkám.
-Dětský certifikát zavádí novela trestního zákoníku s účinností od ledna 2027. Jedná se o výpis z evidence skutečností důležitých pro práci s dětmi, která má obsahovat záznamy o pravomocném odsouzení pachatelů za závažné úmyslné násilné a sexuální trestné činy, jako jsou vražda, ublížení na zdraví spáchané na dítěti mladším 15 let, znásilnění, sexuální útok a sexuální nátlak, zneužití dítěte k výrobě pornografie a další.
-Mimo to budou mít soudy pravomoc rozhodnout o zápisu i v případě spáchání jiného úmyslného trestného činu, pokud dospějí k názoru, že pachatel by pro děti mohl představovat riziko.
-Do evidence budou moci nahlížet pouze vymezené subjekty, jako například školy, školky, sportovní zařízení, sociální služby.
-Pedofilů se nezastáváme, říká Benda
-Záznam v evidenci zůstane 20 až 100 let a to i v případě, že v rejstříku bude trest zahlazen.
-„Pokládám to za hluboce neústavní. Přijdeme se změnou. Ale kdyby to nevyšlo, tak se domnívám, že to stejně skončí u Ústavního soudu. Protože doživotní ,trest‘ bez možnosti přezkumu je neústavní princip,“ řekl k tomu Novinkám Benda.|E||T|Přijmeme opatření. Peskov zuří kvůli norským houfnicím na hranicích s Ruskem|D|07.9. 17:12|P|Moskva přijme bezpečnostní opatření v reakci na Norsko, které rozmístilo na východě svého území čtyři houfnice K9 Vidar, prohlásil mluvčí Kremlu Dmitr...|X|Článek
-„Takové vojenské posilování, které je zaměřeno proti naší zemi, Ruské federaci, samozřejmě nelze nevnímat jako hrozbu pro bezpečnost Ruska. A to je důvodem k přijetí dalších opatření k zajištění naší bezpečnosti. Tím se zabývá naše ministerstvo obrany i další příslušné služby,“ cituje TASS Peskova.
-Norská armáda 20. srpna v tiskové zprávě uvedla, že posiluje Finmarskou brigádu na východě země. Ta dostala tři nové podjednotky, včetně dělostřeleckého praporu. Část výzbroje podle armády je již na místě.
-Dělostřelecký prapor již má k dispozici Ruskem zmíněné čtyři houfnice K9 Vidar, které mají dostřel 40 kilometrů. Podle norské armády je dělostřelecký systém připraven na budoucí využití munice s dostřelem až 120 kilometrů. Do roku 2028 má tato jednotka obdržet dalších 24 těchto houfnic jihokorejské výroby.
-„Nelegální útočná válka Ruska proti Ukrajině a zhoršující se bezpečnostní situace podtrhují nutnost co nejrychlejšího vybudování Finnmarkské brigády,“ uvedla armáda s tím, že tato brigáda je budována tak, aby „bránila Norsko od prvního metru“.
-Agentura Reuters v srpnu uvedla, že brigáda se nachází 180 kilometrů od hranic s Ruskou federací, která na své straně hranic má také významnou vojenskou přítomnost.|E||T|RECENZE: Biograf láska 2. Hani, děkujeme|D|07.9. 16:59|P|V den nedožitých osmdesátin Hany Zagorové (6. září 1946) si odbyl v pražském Divadle Kalich premiéru druhý muzikál sestavený z jejích hitů Biograf lás...|X|Článek
-Tvůrci muzikálu (scénář Uljana Donátová, choreografie Petra Parvoničová a režie Jan Kříž) v něm celkově vsadili na motivy, které již jednou u diváků (za)fungovaly. Dvojka zavádí diváky nejen do již známé kavárny Biograf láska. Nově ji zabydluje dalšími postavami pohybujícími se v uměleckém světě a v různých prostředích.
-Na scéně se tak v rámci nesložitého děje střídají kavárenské stolečky, kulisy detektivního seriálu, poetická divadelní šatna, několik bytů, domovů protagonistů… Dohromady tvoří kompaktní celek pro životy Lindy (na 1. premiéře Izabela Jati), majitelky kavárny toužící být herečkou, Denisy (Marie Křížová), kostymérky a matky samoživitelky se synem Petrem (Jakub Barták), sebestředného režiséra Roberta (Roman Tomeš), barmana Tomáše (Miloslav Frýdl) a pomocného režiséra Marka (Jan Tenkrát).
-Za zvuků šlágru Hanky Zagorové plují svými životy, milují se i vzájemně si ubližují. Všechny emoce s nimi bezprostředně prožíváte, a to mimo jiné díky povedené choreografii, kostýmům.
-Tedy za předpokladu, že do vašich životů slavné písně jakkoli zasáhly a že nejste čistými milovníky Bacha.
-Režiséru Janu Křížovi se prostě znovu podařilo dát dohromady poutavé představení, které osloví hlavně pamětníky. Potvrdila to už premiéra, kterou opakovaně přerušoval potlesk. Podařený mix skladeb udržel publikum dvě a půl hodiny ve střehu, prakticky bez hluchých míst.
-Obecně vyrovnaným hereckým výkonům kralovala – jak se říká o parník – až živočišná Marie Křížová (Denisa). Její výkon na sebe strhával pozornost pokaždé, i proto, že roli velmi přesvědčivě zvládá herecky a pohybově. Zdárně jí v tom sekundují Tomáš (Miloslav Frýdl) a Linda (Izabela Jati). Popsaná trojka dává muzikálu potřebnou, nakažlivou energii.
-Záhy po premiéře je tak jisté, že Divadlo Kalich získalo dvojkou Biografu láska další hit. Oproti jedničce je lepší, co se týče scénáře. Ten umožňuje vyrazit na muzikál i s tzv. mladšími ročníky, které spíše než písničky Hany Zagorové znají větu: Nedělej Zagorku.
-Nicméně – troufám si tipnout – většinu diváků bude na novince tvořit publikum kolem padesáti let a výše. Prostě lidé, kteří by, stejně jako na nedělní premiéře, mohli s tvůrci, s přítomnými diváky zopakovat větu: Hani, děkujeme. Ostatně zpěvačka (1946-2022) nazpívala šlágry hned na několik podobných představení.|E||T|Srbská vláda požádala Vučiče o vyhlášení předčasných voleb|D|07.9. 16:44|P|Srbská vláda požádala prezidenta Aleksandara Vučiče, aby rozpustil parlament a vyhlásil předčasné volby. Po mimořádném zasedání kabinetu to v televizn...|X|Srbská vláda požádala prezidenta Aleksandara Vučiče, aby rozpustil parlament a vyhlásil předčasné volby. Po mimořádném zasedání kabinetu to v televizním vystoupení oznámil premiér Djuro Macut, píše agentura Reuters. Řádný termín voleb je v prosinci 2027, Vučić ovšem již dříve uvedl, že předčasné volby se budou konat 18. či 25. října. Srbská pokroková strana (SNS) v sobotu Vučiče nominovala jako svého kandidáta na budoucího premiéra.
+Posílení státních bank a pojišťoven má podle Pekingu poskytnout další nástroj, jak čínskou ekonomiku podpořit. Silnější finanční instituce mohou poskytovat více úvěrů podnikům a pomáhat financovat investice. Prezident Si Ťin-pching navíc dlouhodobě považuje stabilitu finančního systému za jednu z klíčových součástí národní bezpečnosti.|E||T|Srbská vláda požádala Vučiče o vyhlášení předčasných voleb|D|07.9. 16:44|P|Srbská vláda požádala prezidenta Aleksandara Vučiče, aby rozpustil parlament a vyhlásil předčasné volby. Po mimořádném zasedání kabinetu to v televizn...|X|Srbská vláda požádala prezidenta Aleksandara Vučiče, aby rozpustil parlament a vyhlásil předčasné volby. Po mimořádném zasedání kabinetu to v televizním vystoupení oznámil premiér Djuro Macut, píše agentura Reuters. Řádný termín voleb je v prosinci 2027, Vučić ovšem již dříve uvedl, že předčasné volby se budou konat 18. či 25. října. Srbská pokroková strana (SNS) v sobotu Vučiče nominovala jako svého kandidáta na budoucího premiéra.
 „Prezidentem budu už jen pár týdnů, pak odstoupím,“ řekl Vučić davům svých příznivců na konci června na provládním shromáždění v Bělehradě. Vučičovo druhé, a podle ústavy poslední, funkční období mělo původně skončit v polovině příštího roku. Funkce premiéra by mu tak umožnila udržet se u moci.
 Redaktorka Respektu Magdaléna Fajtová v červenci ČT24 řekla, že si je „téměř jistá, že Vučić premiérské křeslo získá“.
 Protivládní protesty
 Krok mířící k předčasným volbám přichází po více než rok a půl trvajících protivládních protestech. Ty začaly demonstracemi požadujícími vyvození odpovědnosti za neštěstí v listopadu 2024 v Novém Sadu, kde kvůli pádu nádražního přístřešku zahynulo šestnáct lidí. Mnohé hlasy v Srbsku přičítají incident korupci, která v zemi panuje. Jedním z požadavků protestujících bylo i vyhlášení předčasných voleb.
 „Chceme-li zmírnit napětí ve společnosti, neexistuje lepší způsob, než se zeptat lidí,“ uvedl v pondělí premiér Macut. Právě studenty vedené protesty a s nimi spojené hnutí představují pro Vučiče a jeho spojence největší výzvu.
-Vučić je v Srbsku u moci od roku 2012 a je považován za hegemona srbské politiky. „V zemi to vypadá tak, že o všem rozhoduje Vučić. Jakákoliv politika mu jde vždy na ruku, vždy ji oznámí on, a ne premiér. On je tím, kdo říká, jaký je postoj politické reprezentace,“ přiblížila Fajtová. Domácí i zahraniční kritici Vučiče viní z autoritářských sklonů.|E||T|Průzkum: Volby v Praze by vyhrálo ANO|D|07.9. 16:34|P|Po vítězství v parlamentních volbách a návratu do vlády může hnutí ANO nyní vážně pomýšlet i na návrat do vedení hlavního města. Podle průzkumu agentu...|X|Článek
-Do pražského zastupitelstva by se dostalo celkem sedm politických subjektů včetně vládních SPD s 5,4 procenta hlasů a Motoristů s pěti procenty, což je hranice potřebná pro získání mandátu v zastupitelstvu. Pětina voličů je stále nerozhodnutá, ukázal průzkum.
-Třetí koalice Spolu pro Prahu (ODS a TOP 09) by získala 13,9 procenta, Prahu Sobě by volilo 12,9 procenta lidí, Piráti by dostali 10,8 procenta hlasů. Obě posledně jmenované strany oslovují spíše mladší věkové kategorie. ANO má výrazně vyšší podporu mezi staršími obyvateli Prahy.
-Hnutí se podařilo vládnout v Praze už v minulé dekádě. Primátorkou byla v letech 2014 až 2018 Adriana Krnáčová. Nyní o tento post bude usilovat v barvách nejsilnější vládní strany Jan Hušbauer. Politik z Prahy 4 roli pražské jedničky převzal letos v červnu od Ondřeje Prokopa, který kvůli nesrovnalostem v majetkových přiznáních odešel z politiky.
-„Solidní preference ANO jsou důsledkem toho, že hnutí, které vznikalo shora, postupně zakotvilo i v komunální politice. Vidíme to po celé republice, teď je to i v Praze. Je hegemonem na politické scéně a je vnímáno jako výtah ke společenské významnosti. To je pro část společnosti velmi důležité, díky tomu je ANO personálně silné už i lokálně,“ řekl k průzkumu ředitel Medianu Přemysl Čech.
-Naopak strany, které jsou celostátně v opozici, nesou podle Čecha zátěž současného vedení Prahy. „Výsledky jejich konání nejsou Pražany vnímány velmi kladně, stejně jako působení primátora. Hraje roli i jejich celostátní roztříštěnost a to, že jim chybí jasný lídr,“ dodal.
-Podle Medianu chce k volbám určitě přijít 46 procent Pražanů, dalších 16 procent se k účasti spíše přiklání. Naopak 18 procent lidí uvádí, že se určitě nezúčastní, a dalších deset procent se voleb spíše nezúčastní. Desetina lidí je o své účasti zatím nerozhodnutá.
-Nejvyšší deklarovanou účast mají podle průzkumu voliči Pirátů, z nichž by k volbám určitě přišlo 69 procent, a Praha Sobě, jejíž voličů by se zúčastnilo 61 procent. U voličů ANO činí tento podíl 50 procent. Z lidí, kteří zatím nevědí, koho budou volit, plánuje určitě přijít 34 procent.
-Průzkum se uskutečnil od 31. srpna do 3. září, zúčastnilo se ho 731 lidí. Průzkum volebních preferencí zahrnuje celou populaci, tedy i lidi, kteří nevědí, zda půjdou nebo nebudou volit. Naproti tomu volební model nezahrnuje ty respondenty, kteří se voleb nechtějí zúčastnit.
-Komunální volby se konají v pátek 9. a v sobotu 10. října.|E||T|Viděli podezřelého. Německá policie zasahuje u elektrické stanice na západě země|D|07.9. 16:13|P|V okolí elektrické stanice u města Wuppertal na západě Německa zasahuje v pondělí policie. U stanice se měl podle hlášení odpoledne pohybovat podezřel...|X|Článek
-„Na rozvodně v Remscheidu byla nahlášena podezřelá osoba s batohem. Není jasné, zda se jedná o hledanou osobu. To se dozvíme až po jejím zadržení, k čemuž však zatím nedošlo,“ oznámil mluvčí wuppertalské policie podle webu Westdeutsche Zeitung.
-Po muži pátrá několik policejních jednotek v nedalekém lese, kam měl podezřelý utéct. Do hledání se zapojil také policejní vrtulník.
-Podle policejního mluvčího je ve hře možnost, že se jedná o 48letého Daniela V. z Gevelsbergu, kterého ministr vnitra Alexander Dobrindt označil za klimatického aktivistu.
-Po něm policie pátrá kvůli víkendovým sabotážím na elektrické síti ve spolkových zemích Severní Porýní-Vestfálsko a Braniborsko, kde u elektrických stanic vyšetřovatelé objevili odpalovací zařízení, jak doplnil portál Süddeutsche Zeitung. Daniel V. se k sabotážím přihlásil v dopisech.
-V neděli večer objevili policisté v západoněmecké spolkové zemi Severní Porýní-Vestfálsko prostřižený bezpečnostní plot u rozvodny ve Weselu. Média spekulují o souvislosti případů s několika sabotážemi na elektrických stanicích z minulého týdne.|E||T|V sýru, který se prodával v řetězci Makro, našli listerii|D|07.9. 16:08|P|Jednokilogramové balení sýru brie, které lidé mohli zakoupit v obchodech řetězce Makro, obsahovalo bakterie listerie. Konkrétně šlo o sýr francouzskéh...|X|Článek
-„Dle aktuálních informací bylo do Makro Cash & Carry ČR s.r.o. dodáno celkem 46 kusů sýra, přičemž jedno balení sýra váží jeden kilogram. Do současnosti se podařilo stáhnout 36 kusů balení sýra,“ uvedla SVS v tiskové zprávě.
-SVS se o případu dozvěděla od francouzských dozorových orgánů prostřednictvím systému rychlého varování (RASFF), kterým se členské státy EU informují o přítomnosti problematických potravin na trhu.
-Bakterie může způsobit onemocnění zvané listerióza. Mezi jeho příznaky patří horečka, bolesti hlavy, malátnost, nevolnost, zvracení nebo vodnatý, nekrvavý průjem.
-Do lidského organismu se bakterie může dostat například prostřednictvím nevhodně ošetřených nebo skladovaných potravin. Pro zdravé lidi obvykle v malém množství bakterie nebezpečná není, komplikace ale hrozí u starších lidí, těhotných žen, dětí nebo u lidí s oslabenou imunitou.
-Takzvaná systémová listerióza může mít fatální průběh, u novorozenecké listeriózy se mohou vyskytnout předčasné porody, spontánní potraty, porod mrtvého dítěte či infekce novorozence.
-Veterináři apelují na to, aby lidé informovali svého lékaře, pokud zjistí zdravotní potíže v rozmezí inkubační doby od dvou do tří týdnů po konzumaci.
-Množení bakterií lze v případě potravin živočišného původu předcházet jejich správným skladováním. Veterináři radí zejména dodržovat datum použitelnosti a skladovat potraviny za teplot doporučených výrobcem. Bakterie spolehlivě likviduje dostatečná tepelná úprava potravin.|E||T|Zbývá mi pět let života, ale nekončím, svěřil se Bruce Campbell, hvězda filmů Smrtelné zlo|D|07.9. 15:49|P|Osmašedesátiletý americký herec Bruce Campbell, který proslul coby Ash Williams, protagonista hororové série Smrtelné zlo (Evil Dead), v podcastu mode...|X|Článek
-„Rakovina je fascinující v tom, jak vám zamotá hlavu. Rozhodl jsem se, že s ní budu žít, nikoli že na ni zemřu,“ prohlásil Campbell v nedávné epizodě podcastového rozhovoru The Adam Carolla Show.
-Herec, který ztvárnil hlavní roli v hororu Lesní duch z roku 1981 v režii svého blízkého přítele Sama Raimiho a úlohu zopakoval v pokračováních už pod současným názvem Smrtelné zlo, podle svých slov pokračuje v umělecké tvorbě. Nyní propaguje nejnovější díl s podtitulem V plamenech, který vstoupil do kin v červenci a u něhož figuruje coby producent.
-„Když pracuji, cítím se svobodný a svěží. Po vyslechnutí diagnózy vás napadne: No, dobře, ale musím kvůli nemoci přestat se vším, co dělám? Ne, nemusíte,“ poznamenal.
-Že trpí nevyléčitelným druhem rakoviny, který blíže nespecifikoval, Campbell veřejně přiznal už v březnu. Svým fanouškům na síti X tehdy vzkázal, že se omlouvá, pokud je informací šokoval.
-V příspěvku také zmínil, že se některé věci v jeho profesním životě musí změnit. Především vyzdvihl plány na podporu letošní celovečerní komedie Ernie a Emma, kterou napsal, režíroval a ztělesnil v ní hlavní postavu vdovce, jenž cestuje s popelem své zemřelé manželky.|E||T|Růst, restrukturalizace a propouštění. Co se děje v herním průmyslu?|D|07.9. 15:22|P|Odvětví videoher se stále nachází uprostřed procesu snižování nákladů a restrukturalizace, který se vyznačuje hromadným propouštěním, rušením projektů...|X|Odvětví videoher se stále nachází uprostřed procesu snižování nákladů a restrukturalizace, který se vyznačuje hromadným propouštěním, rušením projektů a dalšími výprodeji. Přesto, když se podíváte na data, zdá se, že vše jde jako po másle: čísla jsou v plusu, trendy jdou nahoru. Dokonce i počet zaměstnanců mírně roste, a to navzdory těmto častým vlnám nuceného propouštění.
+Vučić je v Srbsku u moci od roku 2012 a je považován za hegemona srbské politiky. „V zemi to vypadá tak, že o všem rozhoduje Vučić. Jakákoliv politika mu jde vždy na ruku, vždy ji oznámí on, a ne premiér. On je tím, kdo říká, jaký je postoj politické reprezentace,“ přiblížila Fajtová. Domácí i zahraniční kritici Vučiče viní z autoritářských sklonů.|E||T|Růst, restrukturalizace a propouštění. Co se děje v herním průmyslu?|D|07.9. 15:22|P|Odvětví videoher se stále nachází uprostřed procesu snižování nákladů a restrukturalizace, který se vyznačuje hromadným propouštěním, rušením projektů...|X|Odvětví videoher se stále nachází uprostřed procesu snižování nákladů a restrukturalizace, který se vyznačuje hromadným propouštěním, rušením projektů a dalšími výprodeji. Přesto, když se podíváte na data, zdá se, že vše jde jako po másle: čísla jsou v plusu, trendy jdou nahoru. Dokonce i počet zaměstnanců mírně roste, a to navzdory těmto častým vlnám nuceného propouštění.
 Jak lze tento zdánlivý paradox vysvětlit? Amir Satvat situaci analyzoval během přednášky na veletrhu Gamescom 2026. Manažer z oboru si v posledních letech vybudoval renomé tím, že se snaží pomáhat všem pracovníkům v odvětví – ať už uchazečům o zaměstnání, nebo těm, kteří nedávno přišli o práci – najít si práci v odvětví videoher. Zejména za tímto účelem zřídil webovou stránku ASGC.
 Proč se zdá, že počet zaměstnanců neklesá?
 Jak uvádí server GamesIndustry, Satvat nejprve nastínil situaci: Rok 2026 bude zřejmě jedním z nejhorších, co se týče propouštění. Do začátku srpna muselo odejít více než 10 tisíc lidí, což je více než za celý rok 2025.
@@ -602,7 +524,7 @@ V ruském Soči se znovu vzňal sklad ropných produktů, který původně hoře
 Ruské ministerstvo obrany ráno informovalo, že během uplynulé noci jeho protivzdušná obrana zneškodnila 306 ukrajinských dronů.
 Rusko pokračuje v invazi na Ukrajině přes čtyři a půl roku. O víkendu se v Moskvě i v Kyjevě snažili hledat možnosti ukončení konfliktu vyslanci amerického prezidenta Donalda Trumpa Jared Kushner a Steve Witkoff. Ukrajinský prezident Volodymyr Zelenskyj po jednání s nimi v neděli večer vyjádřil přesvědčení, že válka se protáhne minimálně do letošní zimy. Trumpovi vyjednávači navštívili Kyjev vůbec poprvé.|E||T|Indičtí záchranáři hledají přeživší v troskách zřícené koleje|D|07.9. 07:26|P|Indičtí záchranáři pokračují v prohledávání pětipodlažní budovy v Dillí, která se v neděli zřítila. Neštěstí si podle indických úřadů vyžádalo šest ob...|X|Indičtí záchranáři pokračují v prohledávání pětipodlažní budovy v Dillí, která se v neděli zřítila. Neštěstí si podle indických úřadů vyžádalo šest obětí, další ale mohou být stále v sutinách, informovala agentura AFP. Budova, v níž se nacházela zejména studentská ubytovna, se zřítila v hustě obydlené čtvrti Satja Nikétan na jihozápadě hlavního města. V této čtvrti stojí kampus univerzity v Dillí a je zde množství studentských ubytoven. Sousední dům byl evakuován kvůli obavám, že by se mohl také zřítit.
 Indičtí záchranáři hledají přeživší v troskách zřícené koleje
-před 16 hhodinami|Zdroj: Reutes, ČTK|E||T|Ozbrojený muž zaútočil na demokratickou kandidátku na guvernéra Ohia|D|07.9. 05:50|P|Ozbrojený útočník se v neděli pokusil napadnout demokratickou kandidátku na guvernéra státu Ohio Amy Actonovou. Podle zástupců Demokratické strany při...|X|Ozbrojený útočník se v neděli pokusil napadnout demokratickou kandidátku na guvernéra státu Ohio Amy Actonovou. Podle zástupců Demokratické strany při tom několik lidí zranil, samotná Actonová je však v pořádku a incident odsoudila. Násilí v politice odmítl i její republikánský soupeř Vivek Ramaswamy.
+před 22 hhodinami|Zdroj: Reutes, ČTK|E||T|Ozbrojený muž zaútočil na demokratickou kandidátku na guvernéra Ohia|D|07.9. 05:50|P|Ozbrojený útočník se v neděli pokusil napadnout demokratickou kandidátku na guvernéra státu Ohio Amy Actonovou. Podle zástupců Demokratické strany při...|X|Ozbrojený útočník se v neděli pokusil napadnout demokratickou kandidátku na guvernéra státu Ohio Amy Actonovou. Podle zástupců Demokratické strany při tom několik lidí zranil, samotná Actonová je však v pořádku a incident odsoudila. Násilí v politice odmítl i její republikánský soupeř Vivek Ramaswamy.
 K pokusu o napadení podle demokratů došlo při setkání s voliči. Útočník, který měl s sebou zbraně, napadl dobrovolníky, kteří se účastnili předvolební kampaně. Policie ho krátce poté zadržela.
 Actonová poděkovala policii za rychlou a ráznou reakci. „Tento druh násilí nemá v Ohiu co dělat,“ uvedla politička v prohlášení.
 Podobně se vyjádřil i její republikánský soupeř Ramaswamy. „Kandidáti by měli mít možnost se setkávat s voliči bez obav z výhrůžek či násilí. To, co se dnes stalo, je zcela nepřijatelné,“ uvedl republikánský politik.

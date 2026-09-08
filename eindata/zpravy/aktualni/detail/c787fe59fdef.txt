@@ -1,0 +1,3 @@
+Microsoft v říjnu zapne Kontrola integrity paměti na více počítačích. • Nevíme přesně, kterých verzí nebo edic se to týká. • Bezpečnostní funkci bude možné ponechat vypnutou.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

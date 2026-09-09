@@ -1,0 +1,23 @@
+Článek
+OpenAI v noci na středu zveřejnila práci, kterou označuje jako řešení problému Navierových–Stokesových rovnic. Jde o jeden ze sedmi takzvaných problémů tisíciletí – matematických otázek, za jejichž vyřešení je vypsána odměna jeden milion dolarů.
+Matematická komunita sice ještě musí posoudit, zda výsledek splňuje podmínky pro oficiální řešení problému tisíciletí, ale první ohlasy naznačují, že se záhadu skutečně podařilo rozlousknout.
+Co se děje s vodou, když se začne hýbat?
+Vezměte sklenici vody a roztočte v ní lžičku. Voda se začne pohybovat, vznikne vír a jednotlivé části kapaliny se ovlivňují navzájem. Jedna část se pohybuje rychleji, jiná pomaleji, mění se tlak a do hry vstupuje také vnitřní tření kapaliny.
+Právě takové dění popisují Navierovy–Stokesovy rovnice. Používají se k popisu proudění kapalin a plynů – například vzduchu kolem letadla, vody v potrubí nebo různých atmosférických jevů. Samotné rovnice tedy nejsou záhadou. Vědci s nimi běžně pracují.
+Problém je samozřejmě mnohem hlubší. Matematici chtějí vědět, zda v trojrozměrném světě platí něco, co bychom intuitivně očekávali: Když začneme s hladkým prouděním, zůstane hladké i v budoucnu? Nebo může dojít k něčemu mnohem dramatičtějšímu? Může se z normálního víru stát singularita?
+Představme si vír, který se stále více stáčí do sebe. Jeho struktura se zmenšuje, některé části proudění se zrychlují a změny se soustřeďují na stále menší prostor. Matematika pak připouští možnost, že v určitém bodě začne některá veličina růst bez omezení. Vznikne takzvaná singularita.
+We’re sharing a solution to the Navier-Stokes Millennium Prize Problem, one of the deepest problems at the frontier of mathematics.
+The proof was produced by a group of agents, using an OpenAI next-generation model significantly more capable than GPT-6 Astra.
+The problem… pic.twitter.com/8zol3BPTL4
+Laicky řečeno: dosavadní hladký matematický popis proudění přestane fungovat. Důležité přitom je, že se neptáme, zda se něco podobného někdy stalo v nějaké řece.
+Jde o mnohem abstraktnější otázku: Existují taková hladká počáteční data a taková hladká vnější síla, při nichž se ve třech rozměrech řešení Navierových–Stokesových rovnic v konečném čase přestane chovat hladce?
+Právě tuto možnost označuje oficiální formulace problému Clayova institutu jako jednu z cest, jak problém vyřešit. A podle OpenAI je odpověď ano. Jeho AI systém našel konstrukci, v níž z hladkého počátečního stavu vznikne v konečném čase singularita.
+Společnost to popsala poměrně názorně: „Řešením je vír, rotující víření kapaliny, který se spirálovitě stáčí dovnitř a stále více se protahuje jako špageta.“
+Jádrem konstrukce je podle OpenAI situace, kdy se centrální oblast víru zmenšuje a zároveň se její pohyb zrychluje. Některé veličiny tak mohou v konečném čase růst bez omezení, zatímco celková energie zůstává konečná.
+Je tu ale jeden detail, který je pro správné pochopení výsledku zásadní. Nejde o tvrzení, že obyčejná voda ponechaná sama sobě začne bezdůvodně zrychlovat do nekonečna. OpenAI řeší variantu problému, v níž na tekutinu působí hladká vnější síla. Právě taková možnost je součástí oficiálního zadání problému.
+Nepracoval na tom jeden chatbot
+Pozoruhodné je také to, že OpenAI nepoužila jednoho chatbota, kterému zadala otázku. Podle firmy na řešení pracovalo kolem 10 tisíc současně běžících AI agentů. Různé skupiny zkoušely různé přístupy a později mezi sebou sdílely nejzajímavější nápady. OpenAI k jejich propojování použilo také svůj nástroj Codex.
+Celá fáze hledání řešení trvala přibližně 88 hodin. U podobně složitého matematického důkazu je problém i v tom, že text může vypadat přesvědčivě, a přesto obsahovat chybu.
+Proto OpenAI použilo Lean. Jde o systém pro formální matematické dokazování, který dokáže strojově kontrolovat, zda jednotlivé kroky formálního důkazu odpovídají přesně definovaným pravidlům.
+OpenAI uvádí, že jeho analytický důkaz byl následně formalizován v Lean a tato kontrola trvala dalších 17 hodin.
+Při řešení Navierových–Stokesových rovnic si AI agenti mezi sebou poslali 2,7 milionu zpráv a vytvořili přibližně 130 miliard výstupních tokenů. To už se podobá spíš obřímu digitálnímu výzkumnému týmu než klasickému chatbotu.

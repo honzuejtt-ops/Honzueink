@@ -1,0 +1,120 @@
+Velmi zajímavým vyšším programovacím jazykem, který byl optimalizován pro použití na osmibitových mikropočítačích, byl jazyk nazvaný Action!. Tento jazyk, o kterém kdysi vznikaly celé legendy (zejména v zemích s nedostatkem literatury), byl určen pro osmibitové domácí mikropočítače Atari a od ostatních (obecnějších) jazyků se odlišoval zejména tím, že jeho možnosti do značné míry odrážely schopnosti těchto mikropočítačů (datové typy omezeny na bajt, 16bitový integer se znaménkem a bez znaménka atd.).
+Syntaxe jazyka Action! je odvozena od Algolu (resp. od Algolské větve jazyků, kam spadá i Pascal), což se týká zejména způsobu zápisu programových smyček a podmínek (IF-FI, DO-OD). Action! podporoval strukturované programování (což je dnes zcela základní vlastnost, ovšem v době kralování BASICu tomu tak nebylo), uživatelé mohli vytvářet lokální proměnné, ovšem ne na zásobníku, jehož velikost i možnosti adresování byly na MOS 6502 omezeny.
+Zajímavě bylo vyřešeno uživatelské rozhraní jazyka Action!, protože uživatelé měli k dispozici plnohodnotný textový editor (už bez čísel řádků), jednoprůchodový (a tedy dostatečně rychlý) překladač a monitor, v němž bylo možné provádět překlad, uložení strojového kódu a častečně i ladění vyvíjené aplikace. Zdrojový text mohl být neustále uložen v operační paměti současně s přeloženou (nativní) aplikací, což bylo umožněno tím, že samotný Action! byl umístěn na přídavném paměťovém modulu (cartridge). Mimochodem: editor, překladač i monitor se na paměťovém modulu vešly do pouhých šestnácti kilobajtů. To, současně s faktem, že výsledkem překladu byl relativně rychlý strojový kód, vedlo k tomu, že jazyk Action! získal téměř kultovní status (i když je pravda, že mnohem více programů vznikalo přímo v assembleru).
+Rezervovaná klíčová slova a speciální znaky
+V jazyku Action! je definováno několik rezervovaných klíčových slov a taktéž symbolů se speciálním významem. V následující tabulce jsou vypsána všechna klíčová slova jazyka Action!, která mají přesně specifikovanou sémantiku:
+Překladač jazyka Action! taktéž rozpoznává různé operátory a symboly (pole, indexování atd.), které jsou vypsány v další tabulce:
+Datové typy v jazyku Action!
+Programovací jazyk Action! podporuje tři základní (primitivní) datové typy, které jsou pojmenované BYTE, INT a CARD. Označení BYTE představuje osmibitovou hodnotu typu bajt (v tomto případě bez znaménka, protože operace s hodnotami se znaménky je v případě mikroprocesoru MOS 6502 složitější), INT je šestnáctibitová hodnota se znaménkem a CARD je taktéž šestnáctibitová hodnota, ovšem bez znaménka (a opět platí – manipulace s CARD je jednodušší, než s hodnotami typu INT).
+Následuje příklad deklarace a popř. i inicializace proměnných těchto typů:
+BYTE x,y,z
+INT num=[0]    <- inicializace na zadanou hodnotu
+BYTE x=$8000   <- uložení na adresu
+Povšimněte si toho, že se ve třetím případě nejedná o inicializaci proměnné na určitou hodnotu, ale o určení, na které adrese bude proměnná uložena.
+Kromě toho lze používat i šestnáctibitové ukazatele, podobně, jako je tomu například v programovacím jazyku C:
+BYTE POINTER ptr
+CARD POINTER ptr2
+Podporována jsou ovšem i pole, přičemž inicializaci prvků polí (libovolného typu) lze provést přes řetězcový literál:
+BYTE ARRAY pole
+INT ARRAY x(10)
+BYTE ARRAY str = "This is a string constant"
+Aby toho nebylo málo, je možné deklarovat i vlastní struktury (záznamy), opět podobně jako v programovacím jazyku C:
+TYPE r=[BYTE b1, b2
+        INT i1]
+Programové konstrukce v jazyku Action!
+Programovací jazyk Action! podporuje strukturované programování a má v tomto ohledu zhruba stejné vyjadřovací schopnosti, jako již zmíněný jazyk C či Pascal. Ostatně v praktické části dnešního článku si ukážeme několik způsobů využití dostupných programových konstrukcí (při zápisu použijeme odsazení, které je taktéž podporováno, resp. přesněji řečeno je překladač toleruje). V této kapitole si v krátkosti ukážeme způsob zápisu programů. Konkrétně napíšeme program pro výpočet největšího společného dělitele dvou celých čísel bez znaménka (tedy typu CARD):
+CARD FUNC Gcd(CARD a,b)
+    CARD tmp
+ 
+    IF a<b THEN
+        tmp=a a=b b=tmp
+    FI
+ 
+    WHILE b<>0
+    DO
+        tmp=a MOD b
+        a=b
+        b=tmp
+    OD
+RETURN(a)
+ 
+PROC Test(CARD a,b)
+    CARD res
+ 
+    res=Gcd(a,b)
+    PrintF("GCD of %I and %I is %I%E",a,b,res)
+RETURN
+ 
+PROC Main()
+    Test(48,18)
+    Test(9360,12240)
+    Test(17,19)
+    Test(123,1)
+    Test(0,0)
+RETURN
+Podrobnosti si postupně vysvětlíme, ovšem samotný zápis programu by měl být velmi dobře čitelný.
+Praktická část
+Studium jakéhokoli programovacího jazyka pochopitelně vyžaduje i praktické otestování všech (nebo většiny) možností, které tento programovací jazyk a jeho vývojové prostředí programátorům nabízí. Z tohoto důvodu si ve druhé části dnešního článku ukážeme několik příkladů naprogramovaných právě v jazyku Action! Bude nás přitom zajímat nejenom to, zda bude výsledný program funkční, ale i způsob jeho překladu do strojového kódu (tedy korespondence mezi vysokoúrovňovými konstrukcemi na straně jedné a nízkoúrovňovým strojovým kódem na straně druhé). Musíme si totiž ověřit, do jaké míry byly pravdivé dobové chvály na kvalitu a rychlost přeložených programů. Nejdříve si ukážeme jednoduché příklady bez programových smyček a dalších složitějších programových konstrukcí, ovšem později nezapomeneme ani na tyto důležité části jazyka Action!
+Program typu „Hello world!“
+První program, který vytvoříme, bude již tradičně vypisovat na obrazovku řetězec „Hello, world!“. V jazyku Action! bude tento program vypadat následovně:
+PROC HELLO()
+   PRINTE("Hello, world!")
+RETURN
+Název procedury může být jakýkoli a nesmíme zapomenout na ukončení těla procedury klíčovým slovem RETURN (proto, že se jedná o ukončení definice, není toto klíčové slovo odsazeno). A PRINTE je knihovní funkce jazyka Action! Pokud se taková funkce v programu používá, je generování výsledného strojového kódu složitější, protože musíme provést fázi linkingu. S podrobnostmi se seznámíme příště.
+Překlad a spuštění programu
+Překlad a spuštění programu se provede následující sekvencí operací:
+- Stiskem Ctrl+Shift+M se přejde do Monitoru. Obrazovka se změní, protože na horním řádku bude zobrazena příkazová řádka
+- Zapíšeme příkaz COMPILE nebo jen C. Nesmí se zobrazit žádné hlášení o chybě!
+- Zapíšeme příkaz RUN nebo jen R. Tím se program spustí
+Výsledek by měl vypadat takto:
+Po ukončení programu se vrátíme zpět do editoru příkazem EXIT nebo jen E.
+Uložení zdrojového kódu na disketu, kazetu či RAMdisk se provede pomocí Ctrl+Shift+W a zadáním jména souboru:
+Program pro nastavení barvy pozadí
+Druhý program psaný v jazyku Action!, který si v dnešním článku ukážeme, bude zaměřen na nízkoúrovňové operace. Konkrétně v něm provedeme modifikaci pozadí obrazovky zápisem do stínového barvového registru čipu GTIA uloženého na adrese $02C6 neboli 710. Využijeme zde faktu, že při deklaraci proměnné lze určit i její adresu, takže se vlastně zcela vynechá manipulace s registry, funkce typu POKE atd. To je skutečně mocná zbraň jazyka Action!:
+PROC COLOR()
+   BYTE PLAYFIELD=710
+   PLAYFIELD=42
+RETURN
+Alternativně je pochopitelně možné adresu stínového registru zapsat hexadecimální hodnotou (tato možnost citelně chybí v Atari BASICu):
+PROC COLOR()
+   BYTE PLAYFIELD=$02C6
+   PLAYFIELD=42
+RETURN
+Uložení přeloženého programu s jeho následnou analýzou
+V monitoru (Ctrl+Shift M) je možné příkazem W zařízení:soubor uložit strojový kód, který vznikl překladem. To nám umožní analýzu toho, jakým způsobem překladač jazyka Action! dokáže přeložit zapsané programové konstrukce. Po vstupu do monitoru provedeme překlad příkazem C (již známe) a příkazem W: H:OBJ (v emulátoru) bude strojový kód zapsán do souboru nazvaného jednoduše OBJ (prozatím je dobré používat v názvech souborů velké znaky). Na reálném Atari je pochopitelně možný zápis na další typy zařízení, včetně diskety či kazety.
+Vzniklý soubor obsahuje hlavičku o velikosti deseti bajtů, kterou musíme přeskočit. Odstraníme ji (už v Linuxu, ne na Atari) například takto:
+$ tail -c +10 OBJ > OBJ2
+Výsledkem činnosti předchozího příkazu bude soubor OBJ2, ve kterém bude chybět prvních deset bajtů z původního souboru. Nyní již můžeme použít disassembler ca65, který byl nainstalován společně s assemblerem ca65 a překladačem céčka cc65 v rámci úvodního článku tohoto seriálu:
+$ da65 OBJ2
+Výsledek bude vypadat následovně:
+; da65 V2.18 - Fedora 2.19-12.fc42
+; Created:    2026-09-04 11:37:39
+; Input file: OBJ2
+; Page:       1
+ 
+ 
+        .setcpu "6502"
+ 
+L000E           := $000E
+        lda     #$2A
+        sta     $02C6
+        rts
+ 
+        rts
+ 
+        .byte   $E2
+        .byte   $02
+        .byte   $E3
+        .byte   $02
+        bvs     L000E
+Povšimněte si, že samotný program (tři instrukce začínající na návěští L000E) je zapsán přesně tak, jako bychom to udělali ručně v assembleru. V praxi bychom pravděpodobně namísto instrukce RTS použili instrukci BRK, ale to má v tomto případě podobný význam.
+Zobrazení spritu s nastavením jeho horizontální pozice a barvy
+Předchozí demonstrační příklad byl dosti triviální, takže se nyní pokusme o realizaci poněkud složitějšího programu. Konkrétně se bude jednat o program, po jehož spuštění se na obrazovce vykreslí sprite – první hráč. Prozatím pro jednoduchost pouze nastavíme globální masku hráče a nikoli jeho bitmapu. To znamená, že hráč bude vykreslen formou vertikálního sloupce o šířce šestnácti pixelů (šířka pixelu spritu je totiž dvojnásobná oproti šířce pixelu v nejjemnějším grafickém režimu GR.8).
+V assembleru by celý program mohl vypadat například následovně. Jedná se vlastně o zápis do několika řídicích registrů popř. po stínových registrů:
+.proc main
+        lda #128                ; horizontální pozice hráče
+        sta HPOSP0              ; uložit do řídicího registru HPOSP0 na čipu GTIA
+ 
+        lda #HUE_MAGENTA<<4 + 8 ; barva hráče (odstín+intenzita)
+        sta PCOLR0              ; uložit do řídicího registru...
+(Pokracovani na webu)

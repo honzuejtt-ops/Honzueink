@@ -1,4 +1,155 @@
-|T|Žádné zprávy|D||P|Nebyly nalezeny.|X|Zkuste to později.|E||T|Apple konečně ohnul iPhone. Duo zní sice divně, ale má pár trumfů a hlavní kouzla dělá software|D|09.9. 19:33|P||X|
+|T|Žádné zprávy|D||P|Nebyly nalezeny.|X|Zkuste to později.|E||T|Když fotíte realitu a sociální síť vidí AI: ztrácíme důvěru v pravý obsah|D|09.9. 22:00|P|Ještě nedávno stačilo zmáčknout spoušť a poslat fotku do světa. Dnes vám ale u snímku může vyskočit „Made with AI“ či „AI info“, i když jste jen fotil...|X|V předchozím kroku se umělá inteligence zabydlela přímo ve fotoaparátu. Přestala být marketingovým slovem a stala se součástí rozhodování v reálném čase – hlavně u ostření a sledování pohybu. Teď sledujeme další fázi stejného vývoje. Informace o tom, jak snímek vznikl a jak byl zpracován, začínají být čitelné i pro svět kolem.
+Fotografie už není jen obraz, ale i záznam o svém vzniku. Zatímco fotoaparát s těmito údaji pracuje potichu, platformy je začínají používat nahlas – často bez ohledu na kontext, který měl autor při focení na mysli.
+Fotka už není soubor, ale životopis
+C2PA je standard pro takzvané Content Credentials, tedy jakýsi rodokmen digitálního obsahu. Nejde o jeden nevinný tag, ale o strukturovaný záznam s informacemi o původu a úpravách, který může být kryptograficky podepsaný. Princip je přitom prostý. Když někdo obsah cestou změní, kontrola pozná, že nesedí podpis nebo vazba na data. V ideálním světě tím vzniká průkaz původu, kde je napsáno, jak obsah vznikl a jakýma rukama prošel.
+Tohle je důležitý posun v logice. Neříkáme „tomu obrázku věřím, protože vypadá věrohodně“. Říkáme „tomu obrázku věřím, protože má dohledatelný původ a dává smysl, kdo a jak ho podepsal“. Když tenhle původ chybí, není to automaticky důkaz podvodu. Jen to znamená, že stojíte v informační mlze. V mlze se dá chodit, ale špatně se v ní dělají jasné závěry.
+Jak fungují Content Credentials
+Představte si to jako průkaz původu, který cestuje společně se souborem. Vznikne záznam, kde může být uvedeno, čím byl obsah pořízen, čím byl upraven a kdo to celé podepsal. Když se soubor upraví způsobem, který tenhle průkaz neumí sledovat, může se ztratit. Někdy se přeruší návaznost a někdy zmizí i samotná stopa, která by to celé vysvětlila.
+A tady přichází první paradox. Když tenhle průkaz existuje, platformy ho umí použít proti vám. Když neexistuje, některé platformy si jednou možná řeknou, že právě to je podezřelé. Digitální svět si zkrátka buduje byrokracii. Byrokracie je věčná, protože se živí sama sebou.
+Proč se AI objevuje i tam, kde žádná AI není
+Teď přichází ta část, kdy se z romantiky „autenticity“ stane každodenní trapas. Moderní telefony nefotí jako staré kompakty, které poctivě zaznamenaly, co dopadlo na snímač. Telefony skládají, dopočítávají a opravují. Dělají vícenásobné skládání záběrů, HDR, redukci šumu, lokální úpravy kontrastu, doostřování a někdy i rekonstrukci detailů. Je to výpočetní fotografie, která často používá modely a algoritmy, jež se zvenčí dají shrnout slovem „AI“, i když jste nic negenerovali z textového zadání.
+A tady začíná slovní válka. Váš mozek říká „udělal jsem fotku“. Telefon říká „vytvořil jsem výsledek zpracování, které běželo na pozadí“. Sociální síť si z toho vezme tu nejkratší interpretaci. Zní jednoduše, takže zní přesvědčivě, a to je na internetu často silnější než nuance. AI se účastnila, takže to označíme. Na papíře je to transparentnost. V reálu občas veřejná cedule „autor používá neuronky“, přilepená na fotku, která je tak akorát neuronově ostrá.
+Vyfotíte koncert. Špatné světlo, rychlý moment, mobil v ruce. Žádné filtry, žádné generování, jen to, co tam skutečně bylo. Fotku nahrajete na síť, přidáte krátký popisek o atmosféře večera a jdete spát. Ráno si všimnete drobného štítku pod snímkem. „AI info“. Nikdo se vás neptá, co to znamená. Jeden komentář si rýpne, že dnes už se realita nedá poznat. Jiný se ptá, jestli je to ještě fotka, nebo už výstup algoritmu. Vy víte, že jste nic nevymýšleli. Jen jste zmáčkli spoušť. Vysvětlování je ale vždycky delší než cedulka. Cedulka už mezitím všem řekla jednoduchý příběh.
+Proč vám telefon „přidá AI“, i když jste ji nechtěli
+Nejviditelnější příklady dnes přicházejí z ekosystému telefonů Pixel, protože Google u nich tenhle rodokmen obsahu tlačí aktivněji a současně jsou ty telefony ikonou výpočetní fotografie. V praxi se může stát, že nahrajete fotku na síť X a u příspěvku se objeví štítek „Vytvořeno s pomocí umělé inteligence“, přestože jste jen fotili. Jakmile se jednou v souboru objeví relevantní signál, platforma ho zvedne jako vlajku a vy si můžete připadat jako člověk, který točí realitu v generátoru.
+Je fér dodat, že část problému je v interpretaci. „Rodokmen“ umí popsat i drobné úpravy, ale platforma často potřebuje udělat rychlé rozhodnutí. Buď je tam štítek, nebo není. Nuance „šlo jen o automatické zpracování ve fotoaparátu“ se do jedné nálepky špatně vejde, a tak vítězí zkratka, která je pro člověka bolestivě jednoduchá.
+Samsung dlouhodobě staví marketing na „AI“ funkcích a generativní úpravy nabízí přímo v galerii i v editoru. Důležitější než slogany je fakt, že se v mobilním světě začíná objevovat standardizované přiznání „co bylo AI“. Pokud telefon nebo editor zapisuje do souboru informace o zásahu podle Content Credentials, platformy je začnou číst. Jakmile je začnou číst, přijde druhá fáze. Z těchto informací se stane veřejná nálepka, která se bude tvářit jako jednoduchá pravda o obsahu.
+Pro fotografa nebo někoho, kdo si hlídá reputaci, to znamená jediné. To, co dnes vypadá jako interní údaje v telefonu, se zítra může proměnit ve veřejný štítek na sociální síti. To už není technický detail, ale společenská nálepka.
+U Apple je situace záludná jinak. iPhony výpočetní fotografii používají roky a výsledky z ní jsou často výborné, jen se o tom tolik nemluví jako o „AI“. Člověk má dojem, že fotí „čistě“, protože nic explicitně nepoužil. Jenže pokud se svět posouvá k tomu, že platformy budou označovat obsah podle sdílených průmyslových standardů, není důležité, jestli to výrobce nazývá AI nebo chytré zpracování. Důležité je, zda se v procesu úprav objeví signál, který platforma umí přečíst a nějak vyložit.
+Zároveň je fér přiznat hranici jistoty. Nelze tvrdit, že každý iPhone dnes automaticky zapisuje do běžných fotek C2PA záznamy stejným způsobem jako některá jiná zařízení a nástroje. To ale neznamená, že iPhone stojí mimo hru. Stačí, aby uživatel fotku upravil v nástroji, který takové údaje zapisuje, nebo aby platforma detekovala jiné indikátory. Ve výsledku se i „applovská“ fotka může ocitnout ve stejné kategorii „AI info“, aniž byste kdy otevřeli generátor.
+Tím se dostáváme k hlavnímu problému: nevyhrává ten, kdo fotil, ale ten, kdo o tom napíše štítek.
+Sociální sítě: kdo co štítkuje a proč to někdy bolí
+Teď už nejde o to, co telefon udělal v zákulisí, ale co z toho udělá veřejně síť. Váš snímek může být úplně obyčejný, jen automaticky „vylepšený“, a přesto u něj svítí „AI info“ nebo „Made with AI“. Rozdíl mezi službami pak často není v tom, co umí přečíst, ale jak moc okatě to ukážou ostatním a jak rychle z toho udělají nálepku.
+Instagram a Facebook se snaží číst stopy uložené v souboru a podle nich doplnit kontext, že do obsahu zasáhla umělá inteligence. Zároveň už dříve narazily na falešné poplachy, kdy se štítek objevil i u běžné fotky po drobné úpravě. Proto pracují i s tím, jak informaci zobrazují, aby z člověka, který jen fotí a upravuje, nedělaly veřejného padělatele. Pro uživatele to ale pořád znamená jednoduchou věc. I malé signály mohou stačit k tomu, aby se u obsahu objevilo „AI info“. Pro autora je to nový svět, kde fotka nepřináší jen lajk, ale občas i poznámku pod čarou.
+Síť X je „vděčná“ hlavně tím, že štítek vidíte hned a často bez soucitu. Pokud síť vyhodnotí signál jako „AI účast“, přilepí nálepku. Tenhle typ nedorozumění se pak šíří rychleji než kontext a autor může vypadat, jako by generoval realitu, i když jen fotil.
+TikTok šel cestou infrastruktury. Oznámil, že bude číst Content Credentials a na jejich základě automaticky označovat obsah, který je vytvořený nebo upravený umělou inteligencí, zejména při nahrávání z jiných platforem. To je důležitý posun, protože to normalizuje doložení původu a úprav i pro video, kde jsou dopady na veřejné vnímání ještě citlivější než u fotek. Jakmile platforma jednou čte tyhle údaje, bude je chtít číst všude. Je to levnější než moderovat svět ručně.
+U Bluesky a Telegramu dnes není rozumné tvrdit, že plošně čtou Content Credentials a automaticky podle nich označují obsah. Tam je situace jiná, jednak technologicky, jednak tím, jak tyto platformy fungují a jaké mají cíle. To ale neznamená, že se jich téma netýká. Tlak na označování syntetického obsahu roste, a to nejen kvůli společenské debatě, ale i kvůli regulaci. Dřív nebo později se bude řešit, jak takové značky přenášet a jak je interpretovat i mimo největší platformy. Jen to nepřijde všude ve stejný čas a rozhodně to nepřijde všude se stejnou viditelností.
+YouTube: povinné přiznání u videí, která vypadají jako realita
+U videa se to láme ještě tvrději. YouTube chce, aby autor při nahrávání výslovně přiznal, zda je video výrazně upravené nebo uměle vytvořené, pokud by ho divák mohl považovat za skutečnost. Neřeší se tím, jestli je to hezké nebo ošklivé. Jde o to, jestli by to mohlo mást. U realisticky působících videí se pak může objevit viditelné upozornění, že obsah je změněný nebo syntetický.
+YouTube tím dělá dvě věci zároveň. Jednak přenáší část odpovědnosti na autora, protože nikdo jiný neví tak přesně, co v editoru udělal. Jednak vytváří precedent. U videí, která vypadají jako realita, nebude ticho považováno za neutrální. Buď přiznáte úpravu, nebo vám ji jednou přizná platforma, a to bývá společensky bolestivější.
+Tvůrci obsahu: mezi transparentností a veřejnou nálepkou
+Reakce tvůrců obsahu je překvapivě jednotná v tom nejlidštějším bodě. Většina lidí nemá problém s tím, že se má divák dozvědět, co vidí. Problém začíná ve chvíli, kdy platforma vezme jemnou informaci „něco bylo automaticky upraveno“ a přeloží ji do hrubé věty „tohle udělala umělá inteligence“. Tvůrce pak není naštvaný na technologii, ale na to, že mu někdo na čelo přilepil cedulku, která se velmi špatně sundává.
+U velkých autorů a značek se z toho postupně stává rutina, podobně jako autorská práva nebo povinné označování spoluprací. Berou to jako další položku ve formuláři, kterou je lepší vyplnit, než později vysvětlovat, proč vyplněná nebyla. U menších tvů...
+(Pokracovani na webu)|E||T|Programovací jazyk Action! pro osmibitové domácí mikropočítače Atari|D|09.9. 22:00|P|Profesionální aplikace pro osmibitové počítače Atari byly většinou vytvářeny v assembleru. Existoval však jeden vyšší programovací jazyk, který byl do...|X|Velmi zajímavým vyšším programovacím jazykem, který byl optimalizován pro použití na osmibitových mikropočítačích, byl jazyk nazvaný Action!. Tento jazyk, o kterém kdysi vznikaly celé legendy (zejména v zemích s nedostatkem literatury), byl určen pro osmibitové domácí mikropočítače Atari a od ostatních (obecnějších) jazyků se odlišoval zejména tím, že jeho možnosti do značné míry odrážely schopnosti těchto mikropočítačů (datové typy omezeny na bajt, 16bitový integer se znaménkem a bez znaménka atd.).
+Syntaxe jazyka Action! je odvozena od Algolu (resp. od Algolské větve jazyků, kam spadá i Pascal), což se týká zejména způsobu zápisu programových smyček a podmínek (IF-FI, DO-OD). Action! podporoval strukturované programování (což je dnes zcela základní vlastnost, ovšem v době kralování BASICu tomu tak nebylo), uživatelé mohli vytvářet lokální proměnné, ovšem ne na zásobníku, jehož velikost i možnosti adresování byly na MOS 6502 omezeny.
+Zajímavě bylo vyřešeno uživatelské rozhraní jazyka Action!, protože uživatelé měli k dispozici plnohodnotný textový editor (už bez čísel řádků), jednoprůchodový (a tedy dostatečně rychlý) překladač a monitor, v němž bylo možné provádět překlad, uložení strojového kódu a častečně i ladění vyvíjené aplikace. Zdrojový text mohl být neustále uložen v operační paměti současně s přeloženou (nativní) aplikací, což bylo umožněno tím, že samotný Action! byl umístěn na přídavném paměťovém modulu (cartridge). Mimochodem: editor, překladač i monitor se na paměťovém modulu vešly do pouhých šestnácti kilobajtů. To, současně s faktem, že výsledkem překladu byl relativně rychlý strojový kód, vedlo k tomu, že jazyk Action! získal téměř kultovní status (i když je pravda, že mnohem více programů vznikalo přímo v assembleru).
+Rezervovaná klíčová slova a speciální znaky
+V jazyku Action! je definováno několik rezervovaných klíčových slov a taktéž symbolů se speciálním významem. V následující tabulce jsou vypsána všechna klíčová slova jazyka Action!, která mají přesně specifikovanou sémantiku:
+Překladač jazyka Action! taktéž rozpoznává různé operátory a symboly (pole, indexování atd.), které jsou vypsány v další tabulce:
+Datové typy v jazyku Action!
+Programovací jazyk Action! podporuje tři základní (primitivní) datové typy, které jsou pojmenované BYTE, INT a CARD. Označení BYTE představuje osmibitovou hodnotu typu bajt (v tomto případě bez znaménka, protože operace s hodnotami se znaménky je v případě mikroprocesoru MOS 6502 složitější), INT je šestnáctibitová hodnota se znaménkem a CARD je taktéž šestnáctibitová hodnota, ovšem bez znaménka (a opět platí – manipulace s CARD je jednodušší, než s hodnotami typu INT).
+Následuje příklad deklarace a popř. i inicializace proměnných těchto typů:
+BYTE x,y,z
+INT num=[0]    <- inicializace na zadanou hodnotu
+BYTE x=$8000   <- uložení na adresu
+Povšimněte si toho, že se ve třetím případě nejedná o inicializaci proměnné na určitou hodnotu, ale o určení, na které adrese bude proměnná uložena.
+Kromě toho lze používat i šestnáctibitové ukazatele, podobně, jako je tomu například v programovacím jazyku C:
+BYTE POINTER ptr
+CARD POINTER ptr2
+Podporována jsou ovšem i pole, přičemž inicializaci prvků polí (libovolného typu) lze provést přes řetězcový literál:
+BYTE ARRAY pole
+INT ARRAY x(10)
+BYTE ARRAY str = "This is a string constant"
+Aby toho nebylo málo, je možné deklarovat i vlastní struktury (záznamy), opět podobně jako v programovacím jazyku C:
+TYPE r=[BYTE b1, b2
+        INT i1]
+Programové konstrukce v jazyku Action!
+Programovací jazyk Action! podporuje strukturované programování a má v tomto ohledu zhruba stejné vyjadřovací schopnosti, jako již zmíněný jazyk C či Pascal. Ostatně v praktické části dnešního článku si ukážeme několik způsobů využití dostupných programových konstrukcí (při zápisu použijeme odsazení, které je taktéž podporováno, resp. přesněji řečeno je překladač toleruje). V této kapitole si v krátkosti ukážeme způsob zápisu programů. Konkrétně napíšeme program pro výpočet největšího společného dělitele dvou celých čísel bez znaménka (tedy typu CARD):
+CARD FUNC Gcd(CARD a,b)
+    CARD tmp
+ 
+    IF a<b THEN
+        tmp=a a=b b=tmp
+    FI
+ 
+    WHILE b<>0
+    DO
+        tmp=a MOD b
+        a=b
+        b=tmp
+    OD
+RETURN(a)
+ 
+PROC Test(CARD a,b)
+    CARD res
+ 
+    res=Gcd(a,b)
+    PrintF("GCD of %I and %I is %I%E",a,b,res)
+RETURN
+ 
+PROC Main()
+    Test(48,18)
+    Test(9360,12240)
+    Test(17,19)
+    Test(123,1)
+    Test(0,0)
+RETURN
+Podrobnosti si postupně vysvětlíme, ovšem samotný zápis programu by měl být velmi dobře čitelný.
+Praktická část
+Studium jakéhokoli programovacího jazyka pochopitelně vyžaduje i praktické otestování všech (nebo většiny) možností, které tento programovací jazyk a jeho vývojové prostředí programátorům nabízí. Z tohoto důvodu si ve druhé části dnešního článku ukážeme několik příkladů naprogramovaných právě v jazyku Action! Bude nás přitom zajímat nejenom to, zda bude výsledný program funkční, ale i způsob jeho překladu do strojového kódu (tedy korespondence mezi vysokoúrovňovými konstrukcemi na straně jedné a nízkoúrovňovým strojovým kódem na straně druhé). Musíme si totiž ověřit, do jaké míry byly pravdivé dobové chvály na kvalitu a rychlost přeložených programů. Nejdříve si ukážeme jednoduché příklady bez programových smyček a dalších složitějších programových konstrukcí, ovšem později nezapomeneme ani na tyto důležité části jazyka Action!
+Program typu „Hello world!“
+První program, který vytvoříme, bude již tradičně vypisovat na obrazovku řetězec „Hello, world!“. V jazyku Action! bude tento program vypadat následovně:
+PROC HELLO()
+   PRINTE("Hello, world!")
+RETURN
+Název procedury může být jakýkoli a nesmíme zapomenout na ukončení těla procedury klíčovým slovem RETURN (proto, že se jedná o ukončení definice, není toto klíčové slovo odsazeno). A PRINTE je knihovní funkce jazyka Action! Pokud se taková funkce v programu používá, je generování výsledného strojového kódu složitější, protože musíme provést fázi linkingu. S podrobnostmi se seznámíme příště.
+Překlad a spuštění programu
+Překlad a spuštění programu se provede následující sekvencí operací:
+- Stiskem Ctrl+Shift+M se přejde do Monitoru. Obrazovka se změní, protože na horním řádku bude zobrazena příkazová řádka
+- Zapíšeme příkaz COMPILE nebo jen C. Nesmí se zobrazit žádné hlášení o chybě!
+- Zapíšeme příkaz RUN nebo jen R. Tím se program spustí
+Výsledek by měl vypadat takto:
+Po ukončení programu se vrátíme zpět do editoru příkazem EXIT nebo jen E.
+Uložení zdrojového kódu na disketu, kazetu či RAMdisk se provede pomocí Ctrl+Shift+W a zadáním jména souboru:
+Program pro nastavení barvy pozadí
+Druhý program psaný v jazyku Action!, který si v dnešním článku ukážeme, bude zaměřen na nízkoúrovňové operace. Konkrétně v něm provedeme modifikaci pozadí obrazovky zápisem do stínového barvového registru čipu GTIA uloženého na adrese $02C6 neboli 710. Využijeme zde faktu, že při deklaraci proměnné lze určit i její adresu, takže se vlastně zcela vynechá manipulace s registry, funkce typu POKE atd. To je skutečně mocná zbraň jazyka Action!:
+PROC COLOR()
+   BYTE PLAYFIELD=710
+   PLAYFIELD=42
+RETURN
+Alternativně je pochopitelně možné adresu stínového registru zapsat hexadecimální hodnotou (tato možnost citelně chybí v Atari BASICu):
+PROC COLOR()
+   BYTE PLAYFIELD=$02C6
+   PLAYFIELD=42
+RETURN
+Uložení přeloženého programu s jeho následnou analýzou
+V monitoru (Ctrl+Shift M) je možné příkazem W zařízení:soubor uložit strojový kód, který vznikl překladem. To nám umožní analýzu toho, jakým způsobem překladač jazyka Action! dokáže přeložit zapsané programové konstrukce. Po vstupu do monitoru provedeme překlad příkazem C (již známe) a příkazem W: H:OBJ (v emulátoru) bude strojový kód zapsán do souboru nazvaného jednoduše OBJ (prozatím je dobré používat v názvech souborů velké znaky). Na reálném Atari je pochopitelně možný zápis na další typy zařízení, včetně diskety či kazety.
+Vzniklý soubor obsahuje hlavičku o velikosti deseti bajtů, kterou musíme přeskočit. Odstraníme ji (už v Linuxu, ne na Atari) například takto:
+$ tail -c +10 OBJ > OBJ2
+Výsledkem činnosti předchozího příkazu bude soubor OBJ2, ve kterém bude chybět prvních deset bajtů z původního souboru. Nyní již můžeme použít disassembler ca65, který byl nainstalován společně s assemblerem ca65 a překladačem céčka cc65 v rámci úvodního článku tohoto seriálu:
+$ da65 OBJ2
+Výsledek bude vypadat následovně:
+; da65 V2.18 - Fedora 2.19-12.fc42
+; Created:    2026-09-04 11:37:39
+; Input file: OBJ2
+; Page:       1
+ 
+ 
+        .setcpu "6502"
+ 
+L000E           := $000E
+        lda     #$2A
+        sta     $02C6
+        rts
+ 
+        rts
+ 
+        .byte   $E2
+        .byte   $02
+        .byte   $E3
+        .byte   $02
+        bvs     L000E
+Povšimněte si, že samotný program (tři instrukce začínající na návěští L000E) je zapsán přesně tak, jako bychom to udělali ručně v assembleru. V praxi bychom pravděpodobně namísto instrukce RTS použili instrukci BRK, ale to má v tomto případě podobný význam.
+Zobrazení spritu s nastavením jeho horizontální pozice a barvy
+Předchozí demonstrační příklad byl dosti triviální, takže se nyní pokusme o realizaci poněkud složitějšího programu. Konkrétně se bude jednat o program, po jehož spuštění se na obrazovce vykreslí sprite – první hráč. Prozatím pro jednoduchost pouze nastavíme globální masku hráče a nikoli jeho bitmapu. To znamená, že hráč bude vykreslen formou vertikálního sloupce o šířce šestnácti pixelů (šířka pixelu spritu je totiž dvojnásobná oproti šířce pixelu v nejjemnějším grafickém režimu GR.8).
+V assembleru by celý program mohl vypadat například následovně. Jedná se vlastně o zápis do několika řídicích registrů popř. po stínových registrů:
+.proc main
+        lda #128                ; horizontální pozice hráče
+        sta HPOSP0              ; uložit do řídicího registru HPOSP0 na čipu GTIA
+ 
+        lda #HUE_MAGENTA<<4 + 8 ; barva hráče (odstín+intenzita)
+        sta PCOLR0              ; uložit do řídicího registru...
+(Pokracovani na webu)|E||T|Apple konečně ohnul iPhone. Duo zní sice divně, ale má pár trumfů a hlavní kouzla dělá software|D|09.9. 19:33|P||X|
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Ohebný iPhone Duo až za 91 tisíc, běžný iPhone za lidových 71 tisíc. Apple testuje, co vydržíte|D|09.9. 18:47|P||X|
 
@@ -106,7 +257,26 @@ V AI se Vodafone chystá nasadit například českou technologii pro detekci pod
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Připomeňte si nejslavnější „One more thing“. Dodnes je to věta, po které vždy přijde něco speciálního|D|09.9. 11:15|P||X|
 
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Aby se chytrá domácnost starala sama o sebe. Automatizace je v Samsung SmartThings otázkou pár klepnutí v aplikaci|D|09.9. 10:45|P|Chytrá domácnost Samsung SmartThings umožňuje snadné připojení řady zařízení a už ve výchozím stavu nabízí připravené šablony pro typické situace. Ale...|X|Chytrá domácnost Samsung SmartThings umožňuje snadné připojení řady zařízení a už ve výchozím stavu nabízí připravené šablony pro typické situace. Ale co když potřebujeme něco, na co výrobce nepomyslel?
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|GPT-6 Astra: The next generation in intelligence for work|D|09.9. 11:00|P|Meet GPT-6 Astra, OpenAI’s most capable model for business, with advanced reasoning, computer use, and stronger writing and design judgment.|X|GPT‑6 Astra: The next generation in intelligence for work
+Our most capable model, built for all the work businesses need to get done.
+Last week we introduced GPT‑6 Astra, the world’s most intelligent and aligned model, now available in ChatGPT Work, Codex, and the API. Astra is state-of-the-art on computer use, browsing, professional work, software engineering, cybersecurity, and science, so teams can take on the most demanding professional work with unmatched speed, accuracy, and judgment.
+The world’s best model for complex work
+Most AI systems require businesses to prepare their data, redesign workflows, and build custom integrations before they can deliver value. Astra changes that. In ChatGPT Work and Codex, it can write code and work through the same applications people use every day—even when those applications don’t have an API. That means businesses can put AI to work within their existing workflows from day one, without extensive preparation or engineering work.
+Within the first few days of rollout, we’re already seeing customers put Astra to work, from optimizing GPUs to spotting discrepancies in financial statements to producing more on-brand decks.
+At OpenAI, Astra was rolled out internally weeks before launch, so we saw first hand how bleeding-edge capabilities like computer use could change the way we work. Our developer and marketing teams used Astra and Codex to turn three hours of multicamera footage into our GPT‑6 Astra Developer First Impressions video(opens in a new window) which has already garnered over 550k views in just 4 days. Our engineering team used Astra to uncover and resolve a memory-allocation bottleneck that was causing slow Codex sessions in a test environment. By switching allocators, they were able to produce 25× lower turn latency with roughly 30% higher peak memory use.
+Astra is also better at following a company’s voice, templates, and design standards, so the first result is closer to something a team can put to use.
+More useful work for every dollar
+Astra continues our commitment to providing extremely efficient models that deliver more useful work per dollar to our customers. It's been trained to complete tasks in fewer tokens with fewer retries, which means less rework and lower cost per task. With Astra, OpenAI occupies the majority of the cost-efficiency frontier on professional work and coding evaluations, including Terminal Bench 4.0 and Artificial Analysis Intelligence Index. Pricing starts at $10 per million input tokens and $50 per million output tokens.
+More safety and control for consequential work
+Giving AI access to business systems requires confidence in how it will act. With this in mind, Astra is our most aligned model yet, with stronger adherence to human intent and authorization.
+During training, we tested Astra on our internal computer use safety benchmark which tests models against the hardest business scenarios such as exposing confidential information, sharing a dashboard too broadly, or deleting data. In this evaluation, Astra produced unintended outcomes 89% less often than GPT‑5.6 Sol and 74.7% less often than Claude Fable 5.1. Additional confirmation and automated review further improved performance for GPT‑6 Astra and GPT‑5.6 Sol.
+Organizations can also decide how broadly to deploy Astra. New enterprise admin controls let them restrict access to approved websites and desktop applications, manage uploads and downloads, and control browsing history. ChatGPT Work and Codex also include safeguards such as confirmation policies, which can require approval before consequential actions, and automated review of potentially unsafe or unauthorized tool calls. These controls allow teams to start with a limited configuration and expand access over time.
+To further access, alongside Astra, we’re also launching new enterprise plugins in ChatGPT Desktop. Powered by the latest browser use capabilities, plugins from Oracle Analytics, Power BI (a Microsoft Fabric service), Navan, and Avalara make it easier to access familiar enterprise applications.
+Astra(opens in a new window) is also the first model to reach the Critical cybersecurity capability threshold under our Preparedness Framework. With that increased capability, we’ve strengthened protections(opens in a new window) against both misuse and the model taking unauthorized actions including training Astra to respect safety and security boundaries, improving its resistance to attempts to bypass safeguards, and deploying automated checks designed to block harmful responses.
+Zero Data Retention is available for eligible API customers on supported endpoints, subject to approval.
+Start using Astra today
+Try GPT‑6 Astra in ChatGPT Work(opens in a new window) or Codex(opens in a new window), or build it into your own products and workflows through the API(opens in a new window).
+Enterprise administrators can enable Astra under their applicable rate card and agreement. Enterprise access is off by default at launch.|E||T|Aby se chytrá domácnost starala sama o sebe. Automatizace je v Samsung SmartThings otázkou pár klepnutí v aplikaci|D|09.9. 10:45|P|Chytrá domácnost Samsung SmartThings umožňuje snadné připojení řady zařízení a už ve výchozím stavu nabízí připravené šablony pro typické situace. Ale...|X|Chytrá domácnost Samsung SmartThings umožňuje snadné připojení řady zařízení a už ve výchozím stavu nabízí připravené šablony pro typické situace. Ale co když potřebujeme něco, na co výrobce nepomyslel?
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Podívejte se, jak Apple představil první skládací iPhone. Keynote jsme sledovali živě|D|09.9. 10:11|P||X|
 
@@ -502,12 +672,12 @@ It continues the dialogues and collaborations across the industry. Just this yea
 At these conferences, OpenAI has listened to journalists’ needs, shared hands-on examples, and helped reporters explore practical ways to use AI in their daily work. That engagement has also informed the continued expansion of OpenAI Academy for News Organizations(opens in a new window), a learning hub with practical training, newsroom-relevant use cases, playbooks, and real-world examples for journalists and publishers using AI.
 Together, these educational collaborations, professional partnerships, and industry conferences are helping shape the next phases of OpenAI’s journalism work—ensuring the deployment and use of AI is grounded in the real needs and experiences of the people building the future of news.|E||T|1Password increases engineering productivity 21% with Codex|D|08.9. 00:00|P|Engineers at 1Password use Codex to rapidly build new features and internal tools, reaching production-readiness while maintaining rigorous security p...|X|1Password increases engineering productivity 21% with Codex
 Engineers at 1Password use Codex to rapidly build new features and internal tools, reaching production-readiness while maintaining rigorous security policies.
-20.9%
-Measured productivity improvement among the Codex user cohort
-10.9%
-Reduction in median pull request cycle time
+553%
+Estimated ROI from Codex
 ~90%
 Reduction in investigation time on a complex, multi-service production issue
+11%
+Reduction in median pull request cycle time
 $0.8M
 Estimated annual engineering capacity value from Codex
 1Password has integrated Codex across the software delivery lifecycle to compress the time between planning and production, allowing it to build new features at a rapid pace. The 1Password team has cut median pull request cycle time by nearly 11% and improved engineering productivity by almost 21% for its core user cohort.

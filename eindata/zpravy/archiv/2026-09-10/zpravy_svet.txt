@@ -1,0 +1,25 @@
+|T|„Matematickou záhadu vyřešila AI jen díky nám.“ Vědci se bouří proti objevu století|D|10.9. 00:12|P|Oznámení OpenAI o historickém matematickém průlomu zastínil spor o to, odkud se vzal nápad, na kterém umělá inteligence stavěla. Matematik Tristan Buc...|X|Článek
+Spor se týká řešení Navierových–Stokesových rovnic. Lidé tento problém nezvládli vyřešit 90 let, 10 tisíc AI agentů to ale zvládlo za pouhých 88 hodin, jak Novinky upozornily již dříve.
+Na podobném problému nicméně již pracovali matematik Tristan Buckmaster z New York University společně s Leventem Alpöge, matematikem zaměstnaným u společnosti Anthropic. Buckmaster tvrdí, že krátce před zveřejněním jejich vlastních výsledků zjistili, že informace o jejich postupu se dostaly k OpenAI.
+„Je tu ještě jedna část tohoto příběhu. A upřímně, velmi bych si přál, abych se jí nemusel zabývat,“ napsal Buckmaster.
+Zvláštní načasování
+Buckmaster a Alpöge podle serveru TechCrunch pracovali na velmi konkrétním přístupu, který nepatřil mezi běžné cesty, jak se k problému Navierových–Stokesových rovnic dostat. Buckmaster tvrdí, že právě tento postup OpenAI krátce nato také použilo.
+„Je to směr, ke kterému člověk nedospěje během několika dní tím, že dá modelu zadání problému,“ má jasno Buckmaster.
+OpenAI připouští, že jeho práce začala až 1. září poté, co se firma doslechla o zvěsti, že byly vyřešeny dva problémy tisíciletí. Teprve později zjistila, že se zvěst týkala právě Alpögeho a Buckmastera.
+We’re sharing a solution to the Navier-Stokes Millennium Prize Problem, one of the deepest problems at the frontier of mathematics.
+The proof was produced by a group of agents, using an OpenAI next-generation model significantly more capable than GPT-6 Astra.
+The problem… pic.twitter.com/8zol3BPTL4
+Zástupci společnosti nicméně zdůraznili, že jejich výzkumníci ani AI agenti neviděli jejich práci žádným způsobem před jejím zveřejněním. Společnost zároveň uvedla, že při řešení nebyla použita konkrétní uživatelská data.
+Jenže firma zároveň přidala důležitou větu: „Ačkoli je to nepravděpodobné, nemůžeme vyloučit, že data bez identifikace pocházející z jejich používání našich produktů pomohla zlepšit naše modely.“
+To je rozdíl, který může působit nenápadně, ale ve skutečnosti je zásadní. OpenAI tedy říká: nepřistupovali jsme k jejich neveřejné práci a naši lidé ani agenti ji nepoužili. Současně ale připouští, že data vzniklá při používání jejích produktů mohla za určitých okolností přispět k tréninku či zlepšení modelů.
+Vědci používali AI
+Vědci přitom připustili, že při práci na svém výzkumu si skutečně vypomáhali s AI. Využívali především OpenAI Codex a také modely od Anthropicu.
+To otevírá nepříjemnou otázku. Co když vědec použije AI jako pomocníka při práci na dosud nezveřejněném objevu – a stejná technologická platforma pak pomůže jinému týmu najít velmi podobné řešení?
+V takovém případě už nejde jen o klasický spor o autorství. Jde také o hranici mezi uživatelskými daty, trénováním modelů a vědeckým vlastnictvím myšlenek.
+OpenAI si přesto stojí za svým. Zástupci společnosti tvrdí, že jejich řešení není „jednoduše převzatým výsledkem dvojice Buckmaster–Alpöge“ a že její důkaz se od výsledků této vědecké dvojice výrazně liší.
+Navíc Alpögeho a Buckmasterova práce, která byla zveřejněna souběžně, se týkala takzvaného „forced Euler“ problému, nikoli přímo stejného výsledku u Navierových–Stokesových rovnic.
+Ve hře je milion dolarů
+Navierovy–Stokesovy rovnice patří mezi sedm problémů tisíciletí, které Clayův matematický institut vybral jako mimořádně obtížné otevřené otázky. Za vyřešení každého z nich je vypsána cena jeden milion dolarů (20,8 milionu korun).
+OpenAI ale oznámilo, že o tuto cenu neusiluje. Cílem je podle společnosti především ukázat, kam se schopnosti AI dostaly. Navíc ani zveřejněný důkaz ještě neznamená, že Clayův institut problém okamžitě označí za vyřešený. Pro oficiální uznání existují další pravidla a výsledek musí projít odbornou kontrolou matematické komunity.
+Co tedy AI vlastně vyřešila? Téměř století matematici nevěděli, zda může hladce se pohybující tekutina za určitých podmínek v konečném čase dospět do stavu, kdy některé charakteristiky proudění rostou bez omezení a vznikne takzvaná singularita.
+OpenAI tvrdí, že našlo matematickou konstrukci, která takový případ dokazuje. Její centrální vír se podle popisu firmy stále více stáčí dovnitř, protahuje se a zmenšuje, zatímco rychlost proudění roste. Celková energie přitom zůstává konečná. Více se o celé problematice dozvíte v našem dřívějším článku.|E|

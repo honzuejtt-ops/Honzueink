@@ -1,11 +1,11 @@
 1Password increases engineering productivity 21% with Codex
 Engineers at 1Password use Codex to rapidly build new features and internal tools, reaching production-readiness while maintaining rigorous security policies.
-20.9%
-Measured productivity improvement among the Codex user cohort
-10.9%
-Reduction in median pull request cycle time
+553%
+Estimated ROI from Codex
 ~90%
 Reduction in investigation time on a complex, multi-service production issue
+11%
+Reduction in median pull request cycle time
 $0.8M
 Estimated annual engineering capacity value from Codex
 1Password has integrated Codex across the software delivery lifecycle to compress the time between planning and production, allowing it to build new features at a rapid pace. The 1Password team has cut median pull request cycle time by nearly 11% and improved engineering productivity by almost 21% for its core user cohort.

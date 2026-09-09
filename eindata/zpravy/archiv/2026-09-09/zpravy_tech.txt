@@ -1,3 +1,23 @@
+|T|Apple konečně ohnul iPhone. Duo zní sice divně, ale má pár trumfů a hlavní kouzla dělá software|D|09.9. 19:33|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Ohebný iPhone Duo až za 91 tisíc, běžný iPhone za lidových 71 tisíc. Apple testuje, co vydržíte|D|09.9. 18:47|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Kingdom Come 2 rozšíří působiště. Pokračování Jindrova příběhu se chystá na Nintendo Switch 2|D|09.9. 17:45|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Paul Christiano joins OpenAI Foundation Board|D|09.9. 17:00|P|Paul Christiano joins the OpenAI Foundation Board and its Safety and Security Committee, bringing experience in AI alignment, safety, and standards.|X|Paul Christiano joins OpenAI Foundation Board
+Paul Christiano will also join the Foundation’s Safety and Security Committee.
+We’re announcing the appointment of Paul Christiano to the OpenAI Foundation Board. He will be a non-voting observer on the OpenAI Group PBC Board.
+Paul will also join the Safety and Security Committee (SSC) of the Foundation Board, working alongside its chair, Zico Kolter. The SSC provides governance over safety and security practices across all of OpenAI, including OpenAI Group PBC.
+Paul brings government experience spanning two administrations through his work at the Center for AI Standards and Innovation(opens in a new window) (CAISI) within the National Institute of Standards and Technology (NIST), an agency of the U.S. Department of Commerce, where he is a Senior Tech Advisor1. During his time at CAISI and its predecessor, the U.S. AI Safety Institute, Paul has worked on evaluating frontier AI models, including capabilities with national security implications, and on approaches to mitigating associated safety and security risks.
+Paul is also the founder of the Alignment Research Center(opens in a new window) (ARC), a nonprofit research organization focused on aligning advanced AI systems with human interests. From 2017 to 2021, Paul led alignment research at OpenAI and contributed foundational work on reinforcement learning from human feedback (RLHF). In this new capacity, Paul brings a distinct and technically grounded perspective to OpenAI’s governance decisions. Our mission is to ensure that artificial general intelligence benefits all of humanity.
+AI is entering a new era of capability, making it increasingly important that advances in these systems are accompanied by strong safety, security, alignment and governance. Throughout Paul’s career researching AI alignment, he brings a perspective that takes seriously the possibility that advanced AI could pose catastrophic risks and that developers must prepare before systems reach more dangerous levels of capability. He has been an independent voice on whether the industry’s safeguards are adequate. We believe the Foundation’s governance is stronger with people prepared to challenge prevailing assumptions and help strengthen the evidence, safeguards, and accountability underlying critical decisions.
+Paul’s appointment builds on the governance structure established through OpenAI’s recapitalization in October 2025, including the commitments made in connection with the reviews conducted over the course of a year by the California Attorney General(opens in a new window) and Delaware Attorney General(opens in a new window). Their engagement helped strengthen the governance framework.
+About the OpenAI Foundation
+The OpenAI Foundation is a charitable organization dedicated to ensuring AI benefits all of humanity. As a separate nonprofit organization, the Foundation conducts its own charitable operations while maintaining control of, and holding a significant equity stake in OpenAI Group PBC. The Foundation supports initiatives advancing scientific discovery, strengthening civil society, and building resilience through responsible AI. Through grants, partnerships, and other philanthropic initiatives, the Foundation helps accelerate work that creates lasting public benefit and expands access to AI’s transformative potential.
+The Foundation controls OpenAI Group PBC, with the Safety and Security Committee a committee of the Foundation Board. Learn more at www.openaifoundation.org(opens in a new window).|E|
 |T|Další rána pro trh PC: Intel příští měsíc zdraží procesory o desetinu. AMD zvýší ceny také|D|09.9. 16:56|P|Jako by nestačily extrémní ceny SSD a pamětí a čím dál dražší grafické karty, teď zaplatíte víc ještě i za procesory.|X|V srpnu zdražily docela významně grafické karty, což se přidává k už dlouho trvajícímu nafukování cen počítačů a dalších zařízení kvůli explozi cen pamětí DRAM a NAND vyvolané boomem (či bublinou?) umělé inteligence. Současně přišly i zprávy o zdražování desek a aby to bylo veselejší, teď údajně půjdou nahoru i ceny procesorů pro PC. Toto bohužel dál prodraží herní počítače, které už tak těžce drtí vysoké ceny RAM a SSD.
 Intel zdraží o 10 %
 Tchajwanský web DigiTimes přinesl tento týden zprávu, že Intel plánuje zdražení svých procesorů „o dalších 10 %“. Intel již zdražoval na konci roku 2025 a v první polovině roku 2026. Nové „Plus“ modely Arrow Lake Refresh už například byly zdražené před pár měsíci. Tato nová vlna zdražování má dle zdrojů DigiTimes nastat příští měsíc.
@@ -111,6 +131,9 @@ Radiokomunikace nedávno v rámci projektu AI gigafactory podepsaly spolupráci 
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Sledujte s námi, jak Apple představí první skládací iPhone. Keynote začíná dnes v 19 hodin|D|09.9. 10:11|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Podívejte se, jak Apple představil první skládací iPhone. Keynote jsme sledovali živě|D|09.9. 10:11|P||X|
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|GLS zavádí sobotní doručování do boxů po celé republice, do jara chce mít 3000 schránek|D|09.9. 09:47|P|GLS nově doručuje zásilky do svých výdejních boxů i v sobotu, a to po celé republice. Výdejní schránky firmy se v posledních dvou letech rozrostly z 2...|X|GLS nově doručuje zásilky do svých výdejních boxů i v sobotu, a to po celé republice. Výdejní schránky firmy se v posledních dvou letech rozrostly z 250 na víc než 2500 míst.

@@ -1,0 +1,8 @@
+Článek
+Nové kolo navazuje na loňské financování ze září 2025, kdy Mistral získal 1,7 miliardy eur v čele s nizozemským výrobcem čipových strojů ASML. Jeho hodnota tehdy dosáhla 11,7 miliardy eur. Za rok se tak zdvojnásobila.
+Mezi investory teď přibyly private equity fond Advent, fondy spravované společností BlackRock a přímo lucemburský stát, který investoval jako jeden z akcionářů.
+„Díky tomuto investičnímu kolu budeme disponovat výpočetním výkonem, který bude srovnatelný s kapacitami čínských AI laboratoří,“ uvedl Mensche pro deník The Financial Times.
+Mistral je jediná AI firma, která nabízí celý technologický řetězec, od modelů přes výpočetní kapacitu až po koncové produkty. Na rozdíl od amerických konkurentů OpenAI s asistentem ChatGPT či Anthropic s konkurenčním Claudem nabízí otevřené modely. Jejich kód tedy mohou zákazníci upravovat a provozovat na vlastní infrastruktuře.
+Cílem je zachovat si větší kontrolu nad nasazením umělé inteligence. Aby uživatelé nebyli odkázáni na ceny či podmínky jediného dodavatele, napsala společnost na svém webu.
+Za americkými konkurenty přesto zůstává výrazně pozadu. Anthropic byl letos oceněn na stovky miliard dolarů. Podobně i celý evropský sektor umělé inteligence je zatím jen zlomkem amerického. Evropská unie proto přes svůj program InvestAI plánuje do oboru nasměrovat stovky miliard eur a buduje síť takzvaných AI gigafactories.
+Mistral už působí ve 20 zemích, mezi jeho klienty patří Airbus, ASML či HSBC. Podle finančního ředitele Johana Bergqvista firma směřuje k miliardě dolarů ročních opakovaných tržeb a rychle roste hlavně v Asii a Severní Americe. Budoucí vstup na burzu nevyloučila, konkrétní plány ale zatím nemá.

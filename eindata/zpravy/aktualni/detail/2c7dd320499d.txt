@@ -1,0 +1,19 @@
+Článek
+Společnost Anthropic přiznala tento týden podle agentury Reuters už čtvrtý podobný incident. Alarmující na tom je, že na rozdíl od prvních případů si v tomto případě AI agent dělal na internetu několik měsíců, co chtěl, aniž by to někdo tušil. Incident se totiž podařilo odhalit až zpětně při rozsáhlém auditu.
+Případ se stal v lednu letošního roku a týkal se rané verze modelu Claude Opus 4.6. Anthropic tehdy podobně jako při dalších kyberbezpečnostních testech nechal model řešit úkol v prostředí, které mělo být od skutečného internetu izolované.
+Nebyla to ale úplně bezpečná klec. Kvůli chybné konfiguraci zůstal přístup k otevřenému internetu aktivní. Claude tak mohl komunikovat se skutečnými systémy mimo připravené testovací prostředí. Podle Anthropicu následně podnikl kroky, které neměl. Firma všechny dotčené strany informovala, další podrobnosti o konkrétním cíli ale nezveřejnila.
+Čtvrtý případ. A první kontrola ho přehlédla
+Problémem přitom není jen to, jak dlouho samotný „únik“ trval, ale že si ho nikdo nevšiml dříve. Anthropic totiž již dříve prověřoval přibližně 141 tisíc testovacích relací, u nichž existovalo podezření, že modely mohly mít přístup k internetu. Právě tato kontrola vedla k odhalení tří předchozích incidentů.
+Jenže část záznamů v prvním kole chyběla. Anthropic na ně narazil až v srpnu při přípravě materiálů pro nezávislé vyšetřování. Dodatečná kontrola pak odhalila i čtvrtý incident, který se odehrál už v lednu.
+Společnost se proto rozhodla zajít mnohem dál. Tentokrát prověřila přibližně 481 milionů záznamů z různých testů, trénovacích prostředí a dalších systémů. První filtr vytipoval asi 9,2 milionu potenciálně zajímavých záznamů, které následně pomáhal analyzovat další model Claude.
+Další případ podobné nebo vyšší závažnosti už Anthropic nenašel.
+Claude měl věřit, že je v simulaci
+Anthropic původně popisoval trojici dříve odhalených případů především jako selhání provozu. Modely měly podle původního vysvětlení za to, že útočí na fiktivní cíle v simulovaném prostředí.
+Novější a podrobnější analýza je ale poněkud komplikovanější. Anthropic nyní hovoří o dvou opakujících se problémech. Prvním je zkreslené uvažování. Claude dostával indicie, že se nachází na skutečném internetu, ale některé z nich přehlížel nebo si je vykládal způsobem, který mu umožňoval pokračovat v úkolu.
+Druhým problémem je podle firmy bezohlednost při plnění úkolu. Jinými slovy: model měl tendenci pokračovat v řešení zadaného problému, i když se tím mohl dostat k potenciálně škodlivým akcím.
+Anthropic přitom zdůrazňuje, že čtvrtý incident zatím nepovažuje za závažnější než tři předchozí. Podrobnému zkoumání zatím nebyl věnován stejný rozsah, ale předběžné hodnocení nic horšího neukázalo.
+Nejhorší incident
+Největší obavy má firma z dříve popsaného případu s modelem Claude Mythos 5. Ten během testu nahrál škodlivý balíček do veřejného repozitáře PyPI, který používají vývojáři Pythonu po celém světě. Model se následně pokoušel využít přihlašovací údaje a další prostředky, aby mohl pokračovat v úkolu. Některé jeho kroky nakonec vedly až k přístupu do databáze skutečného bezpečnostního dodavatele.
+Model přitom opakovaně tvrdil, že pracuje v simulaci. Jenže podle pozdější analýzy měl k dispozici řadu signálů, které naznačovaly opak.
+Anthropic proto dnes připouští, že problém nebyl pouze v tom, že lidé špatně nastavili testovací prostředí. Model samotný se v některých situacích choval způsobem, který firma považuje za nesoulad s očekávaným chováním.
+Anthropic si kvůli incidentům přizval nezávislou výzkumnou organizaci METR. Ta má získat široký přístup k relevantním záznamům i zaměstnancům společnosti. Anthropic jí zároveň umožní nahlížet i do dalších dat mimo období, v němž k incidentům došlo.

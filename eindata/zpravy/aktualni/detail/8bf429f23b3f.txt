@@ -1,0 +1,4 @@
+Český rozhlas a České radiokomunikace budou ve čtvrtek po jedné hodině odpoledne testovat nový systém varování v rozhlasovém vysílání. Posluchačům se na displeji rádia zobrazí nápis alarm místo názvu stanice.
+Lidé místo názvu stanice mohou vidět také nápis „alert“, přijímač může též blikat či avizovat mimořádnost varovným zvukem, popisuje test Český rozhlas (ČRo).
+Česko patří k prvním zemím, které tuto technologii zkoušejí. Českým unikátem má být propojení se systémem RDS (Radio Data System), který se projeví i na analogových přijímačích. Digitální rádia umí na varování reagovat i ve chvíli, kdy jsou vypnutá nebo naladěná na jinou stanici než Radiožurnál.
+Systém by v budoucnu mohl posluchače rychle upozornit třeba na povodeň, požár nebo jinou závažnou mimořádnou událost, třeba výpadek proudu. Hlášení by mohla také fungovat podle lokality, v níž se přijímač nachází.

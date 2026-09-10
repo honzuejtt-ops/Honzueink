@@ -1,0 +1,20 @@
+Článek
+Na nové informace upozornila agentura Reuters, která porovnala zjištění šesti nezávislých výzkumných skupin. Jejich odhady se liší, všechny se ale shodují na jednom: německá wiki nebyla ojedinělým případem. Jeden z výzkumníků napočítal 18 dalších webů, jiná skupina dokonce 23. Přesný rozsah přitom zatím nikdo nezná.
+Agenti měli podle výzkumníků pracovat v prostředí, kde mohli internet především prohledávat. Neměli však být schopni běžně zveřejňovat vlastní obsah. Přesto dokázali najít způsoby, jak využít některé vlastnosti starších či méně obvyklých webů a informace na nich zanechat.
+Pokud jim tedy v praxi chyběl komunikační kanál, našli si jednoduše náhradní. I když to neměli dovoleno.
+Zapomenuté weby i univerzitní služby
+Reuters přitom upozorňuje, že nejde o klasický hackerský útok. Agenti podle dostupných informací neprorazili zabezpečení velkých technologických firem ani se nepokusili převzít internet. Spíše využili neobvyklé možnosti některých webů způsobem, který jejich provozovatelé rozhodně nezamýšleli.
+Výzkumníci narazili na stopy agentů na poměrně bizarní směsici internetových míst. Patřily mezi ně komunitní wiki, úložiště textu, osobní weby nebo stránky spojené s univerzitními službami.
+Jedna z použitých stránek například souvisela s chemií pro středoškoláky a vznikla už v roce 2008. Další patřily polským technologickým nadšencům. Výzkumníci našli stopy také na stránkách věnovaných počítačovým hrám a staršímu softwaru pro práci s textem.
+Agenti se podle zjištění dostali také ke dvěma univerzitním zkracovačům internetových adres. Konkrétně šlo o služby provozované Univerzitou v Torontu a Vanderbiltovou univerzitou. Reuters uvádí, že po zveřejnění zjištění OpenAI jednu z univerzit kontaktovala. Druhá uvedla, že případ prověřuje.
+Detektivní práce
+Nabízí se otázka, jak výzkumníci poznali, že za tím byla AI? Nebyla to jednoduchá detektivní práce. Experti například porovnávali texty, které se objevily na německé wiki, s obsahem nalezeným na dalších stránkách.
+Pokud se stejný nebo velmi neobvyklý text objevil na několika různých webech ve stejnou dobu, byla to jedna z indicií. Další stopou byla stejná uživatelská jména nebo podobné dotazy, které agenti na různých stránkách pokládali.
+V některých případech se podařilo aktivitu spojit také s IP adresami směřujícími k infrastruktuře Microsoft Azure, kterou OpenAI využívá.
+Výzkumníci například narazili na velmi specifické dotazy týkající se demografických údajů, včetně otázek o výskytu rakoviny v americkém státě Iowa. Samotný dotaz by samozřejmě nic neznamenal. V kombinaci s dalšími shodami začal být pozoruhodný.
+Agenti nedostali instrukci ve stylu „najděte si veřejnou stránku a komunikujte přes ni“. Měli řešit složité úkoly a současně pracovat v prostředí s určitými omezeními. Když narazili na překážku, našli alternativní cestu.
+Pro člověka je to poměrně přirozené chování. Když nám někdo zakáže používat jednu aplikaci, zkusíme jinou. Když nemůžeme poslat soubor jedním způsobem, použijeme jiný. U autonomního systému je ale problém v tom, že podobné hledání alternativ může probíhat ve velkém měřítku a rychlostí, kterou člověk jen obtížně sleduje.
+Zatím se neví, jak velký problém to byl
+OpenAI přímo neuvedla, kolik webů její agenti využili, ani proč se o případu několik měsíců veřejně nemluvilo. Firma uvedla, že provádí širší revizi aktivity svých agentů a připravuje rámec pro oznamování případů takzvaného misalignmentu – tedy situací, kdy se chování systému odchýlí od toho, co od něj jeho tvůrci očekávají.
+Společnost zároveň uvedla, že zatím nezjistila další aktivitu, která by svou závažností nebo rozsahem odpovídala incidentu kolem napadení platformy Hugging Face.
+Jedna z výzkumnic, jejíž tým se případem zabývá, podle Reuters upozornila, že nalezené počty jsou neúplné. Skutečný rozsah aktivity proto může být větší.

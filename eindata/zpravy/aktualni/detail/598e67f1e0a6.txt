@@ -1,0 +1,20 @@
+Článek
+Zpráva Anthropicu byla zveřejněna v noci na pátek. Bezpečnostní tým v ní popisuje případy zneužití AI modelů Claude, které podle firmy identifikoval a narušil mezi prosincem 2025 a srpnem 2026.
+Dokument se na 154 stranách zabývá celkem sedmi oblastmi: kybernetickými operacemi, vlivovými operacemi, sledováním, podvody, biologickým zneužitím, vývojem konvenčních zbraní a nelegálním získáváním schopností AI modelů.
+Anthropic přitom hned na začátku upozorňuje, že nejde o seznam běžného používání jeho modelů. Firma záměrně vybrala „nejvýraznější a nejnovější“ případy, které její tým zaznamenal. Jinými slovy: bezpečnostních incidentů je za prvních osm měsíců ještě daleko více.
+Žádné předpovědi. Tohle se opravdu děje
+Nejde tedy o předpovědi toho, co by AI jednou mohla dělat. Jde o popis konkrétního zneužití, které Anthropic podle svých zjištění skutečně zaznamenal. U některých případů přitom šlo o úspěšný útok, u jiných o přípravu, vývoj nebo testování.
+Největší část zprávy se věnuje kybernetickým útokům. Anthropic zde popisuje změnu, kterou považuje za zásadní: AI už není používána jen jako poradce nebo nástroj pro napsání jednotlivého kusu kódu. Firma kapitolu trefně nazvala „Od pomocníka k orchestrátorovi“.
+Útočníci podle Anthropicu zapojují AI do stále větší části celého procesu – od průzkumu cíle přes vývoj nástrojů až po zpracování dat a samotné zneužití napadených systémů. „Sofistikované útoky už nevyžadují sofistikované útočníky,“ stojí ve zprávě Anthropicu.
+AI tak zmenšuje dřívější rozdíl mezi dobře financovanými státem podporovanými skupinami a jednotlivými či menšími útočníky. V popsaných případech podle firmy hacktivisté, finančně motivovaní útočníci i státní špionážní operátoři dokázali vést kampaně proti více obětem, které by ještě před rokem vyžadovaly řadu zkušených lidí a specializované znalosti.
+Důležitou součástí této změny je podle zprávy také automatizace. Většina kybernetických operací popsaných v reportu byla umožněna přímým prováděním úkolů AI nebo jejich orchestrací. Orchestrace je řízení a koordinace více kroků či úkolů pomocí AI tak, aby na sebe automaticky navazovaly a společně vedly ke kýženému výsledku.
+Modely například prováděly průzkum, odcizení a následnou analýzu ukradených dat, zatímco lidé zůstávali u zásadních rozhodnutí. Starali se pouze o to, na jaký cíl bude útok veden a co přesně v získaných datech chtějí najít.
+Po odhalení se ruská operace sama přestavěla
+Zpráva popisuje konkrétní případ označený GTG-20006, který Anthropic označuje jako ruskou špionážní operaci. Útočníci podle firmy vytvořili pracovní postup, v němž AI pomáhala s nástroji používanými při útoku. Zvlášť pozoruhodná byla schopnost automaticky reagovat na obranné systémy.
+Útočníci vytvořili AI asistovaný systém, který automaticky přestavěl a znovu nasadil jejich nástroje poté, co je odhalily bezpečnostní produkty. Tradičně útočník po odhalení svého nástroje musel vytvořit novou verzi a znovu ji nasadit. Podle Anthropic může AI tento cyklus výrazně urychlit.
+Právě proto firma varuje, že samotné statické detekce už nemusí útočníkům zvyšovat náklady tak jako dříve.
+Nejde jen o falešné příspěvky
+Další část zprávy popisuje devět konkrétních vlivových operací. Pocházely podle Anthropicu z Ruska, Íránu, Turecka, zemí Perského zálivu, jižní Asie, Afriky a Evropy a jejich cílem bylo publikum na šesti kontinentech. Za operacemi stály vlády, státní média a propagandistické instituce, ale také soukromé firmy nebo političtí operátoři.
+Zajímavé je, že v těchto případech AI nesloužila pouze k napsání jednoho falešného článku. Útočníci ji využívali k budování celého systému – k plánování kampaní, tvorbě obsahu a práci s falešnými profily či weby.
+V jednom konkrétním případu označeném GTG-24015 Anthropic odstranil čtyři účty, jejichž provozovatelé používali Claude jako jakousi redakci pro ruská státní média.
+Anthropic uvádí, že „s vysokou mírou jistoty zjistil, že výstupy následně směřovaly do ruských státních a státem financovaných médií“. Obsah se měl objevit například na serverech Sputnik Moldova, RIA Novosti, Sputnik en Español, Sputnik Africa a RT.

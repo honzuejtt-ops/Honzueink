@@ -1,0 +1,5 @@
+Brno zveřejnilo sedmidenní archiv poloh všech vozidel, která operují v systému jihomoravské veřejné hromadné dopravy IDS JMK.
+
+Programátoři si mohou stáhnout surová data ve formátu Apache Parquet z městského datového portálu a brněnští dataři se na sociálních sítích zároveň pochlubili skvělou ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

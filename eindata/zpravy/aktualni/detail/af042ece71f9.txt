@@ -1,0 +1,20 @@
+Článek
+Oprava DNA je jedním ze základních procesů nezbytných pro správný vývoj lidského embrya, ovšem o tom, jak přesně probíhá v jeho nejranějších fázích, se dosud vědělo jen velmi málo.
+Nová studie se proto zaměřila na to, jak si embrya poradí se zásahy do DNA při použití klasické metody CRISPR-Cas9 a novější, šetrnější editace bází, označované jako base editing.
+Místo nůžek genetická tužka
+Technologie CRISPR-Cas9, často označovaná genetické nůžky, umožňuje cíleně zasáhnout do DNA. Na vybraném místě přeruší obě vlákna její dvoušroubovice, takže buňka pak musí vzniklý zlom opravit. Při této opravě ale mohou vzniknout nežádoucí změny genetické informace.
+Editace bází postupuje jinak. Namísto přerušení obou vláken DNA umožňuje změnit jediné písmeno genetického kódu na předem určeném místě, přičemž zasahuje pouze jedno vlákno. Díky tomu se buňka nemusí vypořádat s opravou zlomu celé dvoušroubovice.
+Právě rozdíl mezi oběma způsoby zásahu vědci nyní podrobně zkoumali na lidských embryích. Ukázalo se, že s poškozením jednoho vlákna DNA si raná embrya dokážou účinně poradit, zatímco oprava zlomů obou vláken je výrazně méně spolehlivá.
+Prvním autorem studie publikované v časopise Nature je biochemik Štěpán Jeřábek, který působí na Kolumbijské univerzitě v New Yorku a zároveň v Ústavu organické chemie a biochemie (ÚOCHB) Akademie věd ČR. Na práci se podíleli také jeho kolegové z ÚOCHB Iva Pichová a Michal Doležal.
+Opravovali geny spojené s dědičnými nemocemi
+Výzkumníci se zaměřili na dva dobře prostudované geny – PCSK9 a HBG. První souvisí s regulací hladiny cholesterolu, druhý s tvorbou hemoglobinu, tedy bílkoviny, která v červených krvinkách přenáší kyslík.
+Při použití editace bází se vědcům podařilo provést požadované genetické změny a embrya se přitom vyvíjela až do stadia blastocysty, tedy rané fáze vývoje přibližně pět až šest dní po oplodnění.
+Z šestidenních editovaných embryí se výzkumníkům navíc podařilo získat kmenové buňky. Díky nim mohou provedené genetické změny podrobněji analyzovat a sledovat, jak se projeví v dalších generacích buněk.
+K léčbě pacientů je zatím daleko
+Přestože podle Jeřábka představuje editace bází významný posun oproti CRISPR-Cas9, před případným klinickým využitím bude nutné vyřešit ještě řadu otázek týkajících se bezpečnosti. Vědci v některých buňkách zaznamenali změny DNA i na jiných místech, než která chtěli cíleně upravit, a vzácně také poškození chromozomů.
+Autoři proto upozorňují, že technologie zatím není připravena pro klinické využití.
+„Naším cílem nebylo vyvinout metodu pro genetické úpravy lidských embryí, ale v rámci základního výzkumu lépe porozumět tomu, jak v jejich buňkách fungují mechanismy opravy DNA,“ vysvětlil Štěpán Jeřábek.
+Naděje i nové etické otázky
+Pokud se podaří současné limity překonat a bezpečnost technologie potvrdit, mohla by editace bází v budoucnu přispět k léčbě některých dědičných onemocnění už v nejranější fázi vývoje. Případné využití genetických úprav lidských embryí ale zároveň vyvolává řadu etických otázek.
+Podle ředitele ÚOCHB Jana Konvalinky je proto debata kolem podobných výzkumů legitimní a potřebná. „Smyslem základního výzkumu je posouvat hranice poznání a zároveň lépe chápat možnosti i limity současných technologií,“ uvedl s tím, že právě tato studie představuje důležitý příspěvek k odborné i veřejné diskusi.
+Výsledky tak ukazují, že editace bází může být při úpravách lidských embryí šetrnější než klasický CRISPR-Cas9. Zároveň ale potvrzují, že cesta k případnému bezpečnému využití v reprodukční medicíně je ještě dlouhá.

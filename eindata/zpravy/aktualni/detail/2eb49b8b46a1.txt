@@ -15,7 +15,3 @@ You’ll find the Data agent listed as Data(opens in a new window) in the Plugin
 If Data isn’t already installed, find it in the Plugins directory and select Install plugin, or go directly to the Data listing(opens in a new window). Complete any required account-connection steps, then start a conversation with @Data and ask your business question.
 Diagnose a metric change
 @Data Diagnose why weekly active users changed last week. Identify likely drivers, compare against prior periods, and recommend the next checks.
-Design KPI framework
-@Data Design a KPI framework for this new product area with primary metrics, drivers, guardrails, targets, and data validation needs.
-Create leadership readout
-@Data Turn this month’s metrics into a leadership-ready update with actuals, comparisons, drivers, caveats, and recommended actions.

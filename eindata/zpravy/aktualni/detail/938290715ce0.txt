@@ -1,0 +1,5 @@
+Česká firma Trezor, výrobce hardwarových peněženek pro kryptoměny, se stal terčem phishingové kampaně. Byla rozeslaná přímo z jeho vlastní e-mailové infrastruktury.
+
+Útočník se 9. září 2026 dostal do e-mailové platformy Brevo, kterou Trezor používá na rozesílání newsletterů. Jeho zákazníkům ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

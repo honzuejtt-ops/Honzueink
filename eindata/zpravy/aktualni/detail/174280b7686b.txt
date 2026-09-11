@@ -1,0 +1,21 @@
+Článek
+Anthropic ve své nejnovější zprávě popisuje pět případů, které označuje za potenciálně nebezpečné biologické využití svého modelu Claude. Firma přitom záměrně nezveřejňuje jména institucí, země ani konkrétní biologické látky či výzkumné postupy.
+Zároveň upozorňuje, že netvrdí, že vědci měli v úmyslu způsobit škodu. Nic to ale nemění na tom, že data, se kterými AI pracovala, mohla skutečně sloužit k výzkumu a vývoji biologických zbraní.
+Zda někdo získaná data zneužil, tak v tuto chvíli není jasné. I tak jsou ale zachycené případy alarmující.
+Už je to realita. Anthropic zveřejnil, jak byla zneužita AI při útocích, propagandě a sledování lidí
+Útok viru chikungunya by nikdo nepoznal
+V prvním případu bezpečnostní systém Anthropicu zablokoval žádost o pomoc s přípravou žádosti o vědecký grant. Výzkum se týkal takzvaného GoF výzkumu (gain-of-function) viru chikungunya.
+Jde o virus šířený především komáry. Výzkumníci se ale pomocí AI snažili měnit vlastnosti biologického organismu, konkrétně šlo podle firmy „o vlastnosti související s přenosností viru a jeho schopností unikat imunitní odpovědi“.
+Kdyby byl takto upravený virus vypuštěn do světa, jen těžko by ho šlo odlišit od přirozené cirkulace. V praxi by tedy nikdo nevěděl, že jde o útok, a nikoliv přirozené šíření.
+Platforma, která model Anthropicu zprostředkovávala, dokázala navíc obejít regionální omezení. Virologové pracující na státem podporovaném projektu tak mohli Claude využívat i přesto, že přímý přístup z jejich regionu nebyl povolen. Odmítnuté požadavky byly následně směrovány k modelům s méně přísnými ochrannými mechanismy.
+Přenos ptačí chřipky na lidi
+Druhý případ se týkal ptačí chřipky. Výzkumník z nepodporovaného regionu podle Anthropicu strávil týdny plánováním experimentů zaměřených na adaptaci viru na savce. Bezpečnostní systém přitom jeho práci nezastavil úplně, ale omezil ji na nejslabší dostupné modely.
+Pokud by byl výzkumník úspěšný, mohla by se ptačí chřipka šířit klidně i mezi lidmi.
+Třetí případ se týkal ortopoxvirů, tedy skupiny virů, do které patří například původce pravých neštovic. Výzkum se zaměřoval na takzvaný imunitní únik – tedy na schopnost viru obejít nebo oslabit obranné mechanismy lidského organismu. Pokud se virus dokáže imunitní reakci účinněji vyhnout, může mít lepší podmínky pro přežití a množení v těle.
+Anthropic uvádí, že jeho model Claude byl prostřednictvím zprostředkovatelské služby využit k přípravě kompletní žádosti o grant zaměřený právě na tuto oblast. Model měl žádost vytvořit přibližně během jediné hodiny. Firma přitom nezveřejnila konkrétní výzkumné postupy ani další podrobnosti, které by mohly práci umožnit zopakovat.
+Firma zdůrazňuje, že všechny tyto případy mají společný rys. Uživatelé se různými způsoby pokoušeli obejít ochranné mechanismy, mimo jiné prostřednictvím prostředníků a snah zakrýt skutečný účel výzkumu. Anthropic následně příslušné účty zablokoval.
+Toxiny s dvojím využitím
+Další případy se týkaly toxinů. Ve čtvrtém výzkumník s pomocí Clauda vytvořil rozsáhlý přehled peptidů z toxinů různých jedovatých živočichů. Následně na něj navázal systém pro navrhování a optimalizaci nových molekul. Výslovně uváděným cílem byl vývoj nových léčiv, například léků proti bolesti a depresím.
+Problém spočíval v tom, že stejný výzkumný základ mohl podle Anthropicu sloužit také k návrhu látek s paralytickými nebo jinými škodlivými účinky. Společnost proto tento případ zařadila mezi příklady výzkumu s výrazným potenciálem dvojího využití.
+V pátém případu vědec využíval Clauda při několika projektech zaměřených na počítačový návrh a úpravu různých toxinů. Výzkum byl opět prezentován převážně v terapeutickém kontextu a byl součástí národního veřejného výzkumného programu. Pracoval přitom také s částí bakteriálního toxinu a proteinem viru z kategorie patogenů s vysokou prioritou pro výzkum epidemií a pandemií.
+Výzkumník navíc s pomocí Clauda připravoval pravidelné zprávy o průběhu práce a záměrně v nich udržoval popisy některých biologických látek v neurčité podobě.

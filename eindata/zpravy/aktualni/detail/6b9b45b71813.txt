@@ -1,0 +1,23 @@
+Článek
+Firma Anthropic sice ve své zprávě přímo neuvádí, že šlo o Húsíe. Hovoří o „buňce aktérů“ působících v severním Jemenu. Agentura AP a list Financial Times ale skupinu spojují s Húsíi, kteří ovládají rozsáhlé části severního Jemenu.
+Skupina podle Anthropiku pracovala současně na třech zbrojních programech. Prvním byla řízená raketa, druhým vícestupňová balistická střela s deklarovaným doletem přes 2000 kilometrů a třetím soubor raketových variant označovaný jako R2000, jehož součástí měla být také hypersonická klouzavá zbraň.
+Claude přitom nebyl využíván pouze jako poradce. Aktéři ho podle Anthropic nasadili místo lidských softwarových inženýrů při práci na systémech, které řídí a stabilizují letící zbraň.
+Už je to realita. Anthropic zveřejnil, jak byla zneužita AI při útocích, propagandě a sledování lidí
+Bezpečnostní pojistky se snažili obejít
+Používali několik instancí Clauda najednou. Jedna měla na starosti psaní kódu, další výzkum a třetí kontrolovala kód vytvořený první. Anthropic tento způsob práce přirovnává k malému týmu inženýrů, kterému vedoucí rozdělí jednotlivé úkoly.
+AI tak pomáhala s vývojem softwaru pro řízení letu, navigaci a navádění. Skupina ji využívala také při simulacích a dalších částech vývoje.
+Anthropic zároveň uvádí, že jeho bezpečnostní mechanismy řadu požadavků zablokovaly. Ne však všechny.
+Aktéři se podle společnosti snažili svůj skutečný záměr před AI skrývat. Rozdělovali práci do několika konverzací a jednotlivé úkoly formulovali tak, aby z nich nebylo možné snadno poznat, že výsledný software má sloužit k vývoji zbraní.
+Právě rozdělování složitých úkolů mezi více konverzací je jedním z problémů, které Anthropic ve zprávě popisuje. Jednotlivé požadavky mohou samy o sobě působit méně problematicky, zatímco jejich kombinace odhalí skutečný účel práce.
+Yemeni forces used Claude to help develop a missile, Anthropic says
+Some military personnel in northern Yemen, reportedly linked to the Houthis, used the AI model instead of engineers: Claude wrote code for the missile guidance system, configured the autopilot, simulated the… pic.twitter.com/WuAfIdhHtU
+Raketa byla skutečně otestována
+Nejvážnější část případu přišla ve chvíli, kdy se vývoj posunul od počítačových simulací k reálnému testování.
+Aktéři odpálili řízenou raketu při testu v Jemenu. Anthropic nemá důkazy, že by se jim podařilo dokončit a nasadit operační zbraň. Samotný test však podle firmy zřejmě skončil neúspěchem.
+Během několika hodin po testu se totiž aktéři vrátili ke Claudovi a snažili se zjistit, proč raketa selhala. AI tak nebyla použita pouze při počátečním návrhu, ale také při následné analýze skutečného výsledku zkoušky.
+Anthropic účty spojené s aktéry následně zablokoval a informace předal dalším partnerům z veřejného i soukromého sektoru. Zároveň ale zjistil, že aktéři už před zásahem vytvořili vlastní off-line simulační nástroj, který nebyl závislý na Claudovi ani na dalších inženýrských výpočetních prostředích.
+Případ tak ukazuje limit samotného blokování přístupu k jednomu AI modelu. Umělá inteligence mohla v některých fázích vývoj urychlit, samotní aktéři už ale současně budovali vlastní nástroje a know-how.
+AI je zneužívána mnohem častěji
+Případ z Jemenu je přitom jen jednou kapitolou mnohem většího příběhu. Anthropic ve své rozsáhlé zprávě, kterou zveřejnil v noci na pátek a o které už Novinky informovaly, popisuje případy od kybernetických útoků přes propagandu, sledování lidí a podvody až po biologický výzkum, vývoj konvenčních zbraní a nelegální získávání schopností AI.
+Jde o více než 150stránkový dokument, který shrnuje nejvýraznější případy od prosince 2025 do srpna 2026. Anthropic přitom upozorňuje, že nejde o běžné případy nevhodného používání chatbotu, ale o nejvýznamnější a nejnovější případy, které jeho týmy odhalily a narušily.
+Ve skutečnosti je tedy množství případů, kdy je AI zneužívána, ještě daleko častější.

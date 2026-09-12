@@ -1,3 +1,17 @@
+|T|Nový rekord. Microsoft v září díky AI opravil 723 zranitelných míst ve Windows|D|12.9. 16:45|P|Microsoft opravil přes 970 zranitelných míst ve svých produktech. • Servisní aktualizace vyšly 8. září 2026 večer. • Windows 11 umožňují změnit polohu...|X|Microsoft opravil přes 970 zranitelných míst ve svých produktech. • Servisní aktualizace vyšly 8. září 2026 večer. • Windows 11 umožňují změnit polohu hlavního panelu.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Windows 11 pro vývojáře nabídnou nástroje jako Visual Studio Code a nebudou otravovat|D|12.9. 15:45|P|Projekt Zenith představuje zvláštní konfiguraci Windows 11 pro vývojáře. • Nabídne předinstalované vývojářské nástroje a jiné nastavení. • Windows v t...|X|Projekt Zenith představuje zvláštní konfiguraci Windows 11 pro vývojáře. • Nabídne předinstalované vývojářské nástroje a jiné nastavení. • Windows v této konfiguraci budou dostupné na vybraných počítačích.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Nové navigace Garmin Drive mají obří širokoúhlý displej. Po spárování s telefonem nabídnou užitečné funkce|D|12.9. 14:45|P|Nové navigace od Garminu nabízejí velké displeje i offline mapové podklady • Přístroje rovněž zobrazují upozornění na dopravní značky a ostré zatáčky ...|X|Nové navigace od Garminu nabízejí velké displeje i offline mapové podklady • Přístroje rovněž zobrazují upozornění na dopravní značky a ostré zatáčky • Speciální placený balíček usnadní plánování trasy řidičům kamionů a karavanů
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Na sociálních sítích se šíří záběry obrovského čínského dronu s prvky stealth. Jestli opravdu existuje, však zůstává otázkou|D|12.9. 13:52|P|Čína obvykle není příliš sdílná, pokud jde o nové zbraňové systémy. Západní experti i veřejnost jsou proto často odkázáni na komerční satelitní snímky...|X|Čína obvykle není příliš sdílná, pokud jde o nové zbraňové systémy. Západní experti i veřejnost jsou proto často odkázáni na komerční satelitní snímky a záběry nejasného původu.
+
+Nyní na čínských sociálních sítích kolují další, které podle všeho zachycují veliký a stále utajovaný čínský dron s ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Ikea má nové Bluetooth reproduktory. Badkruka vypadá jako malý Xbox a půjde je spárovat do sterea|D|12.9. 12:45|P||X|
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|

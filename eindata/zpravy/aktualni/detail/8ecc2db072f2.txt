@@ -1,0 +1,16 @@
+Článek
+Případ zveřejnila společnost Anthropic ve své zprávě o zneužívání umělé inteligence. Podle ní čínské studio provozovalo více než 20 seznamovacích aplikací, které své služby prezentovaly jako seznamování skutečných lidí. Ve skutečnosti v nich ale velkou část komunikace obstarávaly AI persony poháněné modelem Claude.
+Za dva týdny – během letošního dubna – Anthropic zaznamenal více než 4700 různých AI botů, kteří komunikovali nejméně s 25 tisíci unikátními lidmi. Claude podle Anthropicu během této doby vytvořil přibližně 2,36 milionu zpráv.
+Zda čínské studio útočilo ve své domovině, nebo se naopak zaměřovalo na zahraniční uživatele, není v tuto chvíli jasné.
+Na seznamkách pracovali také skuteční lidé
+Provozovatelé přitom nevsadili pouze na chatboty. Do stejné nabídky profilů přimíchali také skutečné lidi, bylo jich ale citelně méně. Anthropic odhaduje poměr přibližně tři AI boti na jednoho skutečného člověka. Uživatelé přitom neměli možnost poznat, zda si píší s člověkem, nebo s AI.
+Skuteční lidé byli najímáni jako brigádníci. Jejich úkolem bylo dělat věci, které automatizovaný systém nedokázal přesvědčivě napodobit – například absolvovat živý videohovor nebo začít uživatele sledovat na sociální síti. Právě takové interakce měly snižovat podezření, že se na druhé straně nachází bot.
+Brigádníci navíc sami dostávali pomoc od AI. Jiný model jim navrhoval krátké odpovědi, ze kterých si mohli vybrat. Byli placeni mimo jiné podle počtu zpráv, videohovorů a vzájemných sledování na sociálních sítích.
+AI nesměla přiznat, že je AI
+Automatizované persony měly poměrně přesně nastavená pravidla. Instrukce jim například říkaly, aby nikdy neprozradily, že jsou automatizované, a aby se vyhýbaly žádostem o videohovor nebo fotografie.
+Zároveň měly postupovat podle předem stanovených fází konverzace. Provozovatelé tak mohli u tisíců profilů současně udržovat komunikaci, aniž by každý rozhovor musel řídit člověk.
+Systém navíc sledoval, kteří uživatelé začali mít podezření, že si píší s botem. Pokud nebyl k dispozici skutečný člověk, systém dokázal dokonce vytvářet falešné lajky a návštěvy profilů.
+Každý bot měl jinou práci
+Zajímavé je, že provozovatelé nepoužívali pouze Clauda. Do podvodu zapojili několik různých AI systémů, přičemž každý měl jinou úlohu.
+Claude zajišťoval autonomní konverzace s uživateli, menší model připravoval krátké návrhy odpovědí pro skutečné brigádníky. Další modely se používaly například k hodnocení atraktivity obličejů, moderování fotografií a hlasu nebo k vytváření avatarů.
+Právě v tom Anthropic vidí jeden z důležitých rysů případu. Nešlo o jednu AI, která by pouze generovala podvodné zprávy. Provozovatelé rozdělili celý proces mezi několik modelů a skutečné lidi.

@@ -1,3 +1,8 @@
+|T|Dario z Anthropiku: „Musíme zpomalit.“ Sam z OpenAI: „Souhlasíme, je potřeba postupovat opatrně.“|D|12.9. 19:54|P|Dario Amodei, šéf společnosti Anthropic (to je ta s Claude) publikoval rozsáhlou esej, ve které se zamýšlí nad dalším rozvojem nejvýkonnějších AI mode...|X|Dario Amodei, šéf společnosti Anthropic (to je ta s Claude) publikoval rozsáhlou esej, ve které se zamýšlí nad dalším rozvojem nejvýkonnějších AI modelů. Celý text najdete přeložený ve spodní části článku, zde je jeho shrnutí.
+
+Dario Amodei postupně mění názor: nestačí jen investovat do prevence ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Nový rekord. Microsoft v září díky AI opravil 723 zranitelných míst ve Windows|D|12.9. 16:45|P|Microsoft opravil přes 970 zranitelných míst ve svých produktech. • Servisní aktualizace vyšly 8. září 2026 večer. • Windows 11 umožňují změnit polohu...|X|Microsoft opravil přes 970 zranitelných míst ve svých produktech. • Servisní aktualizace vyšly 8. září 2026 večer. • Windows 11 umožňují změnit polohu hlavního panelu.
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|

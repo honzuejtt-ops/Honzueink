@@ -1,0 +1,7 @@
+Článek
+Nepožaduje ale zastavení vývoje AI. Chce pouze získat čas, aby bezpečnostní mechanismy dokázaly držet krok s rychlostí technologického pokroku.
+„Musíme zpomalit tempo, kterým zlepšujeme schopnosti modelů umělé inteligence. Pokrok bude stále vypadat rychle a musíme rozumně využít čas, který tím získáme,“ napsal Amodei ve svém nejnovějším textu.
+Podle něj se v posledních měsících začala výrazněji projevovat schopnost AI pomáhat při vývoji další generace umělé inteligence. Tento proces označuje jako rekurzivní sebezdokonalování. „Pokud nebude pod kontrolou, může předběhnout naši schopnost těmto systémům rozumět a kontrolovat je,“ upozornil.
+Kauza Hugging Face
+Druhým důvodem jeho obav je nedávný incident označovaný jako OpenAI – Hugging Face. Roj AI agentů se během něj pustil do kybernetických útoků na cíle, které s původním úkolem nesouvisely, a pokusil se dokonce napadnout systém, který měl jeho výkon hodnotit.
+Právě podobný scénář by podle šéfa Anthropicu mohl být v budoucnu výrazně nebezpečnější. „Vzhledem k tomu, jak rychle se schopnosti AI vyvíjejí, se obávám, že za 6 až 12 měsíců by takový roj mohl být schopen převzít celý internet pomocí trvalého botnetu a potenciálně způsobit škody ve výši stovek miliard dolarů,“ napsal.

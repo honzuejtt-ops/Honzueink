@@ -1,0 +1,11 @@
+Článek
+„Revolut nedávno odhalil sofistikovaný podvod spočívající v napodobování identity, při němž neoprávněná třetí strana využila e-mail na legitimní doméně vládní agentury k zasílání podvodných žádostí o informace,“ uvedl v neděli mluvčí společnosti. Kdy k úniku dat došlo, neupřesnil.
+Rozsah údajů, které mohly být neoprávněně zpřístupněny, je ovšem značný. Podle informací uvedených v oznámeních zákazníkům mohlo jít mimo jiné o jméno, datum narození, adresu, telefonní číslo, e-mailovou adresu nebo kopie dokladů totožnosti.
+V některých případech mohly být součástí předaných informací také ověřovací selfie, údaje o účtu, výpisy, IBAN, záznamy o výběrech a kompletní historie transakcí včetně bitcoinových operací.
+Cenný balík informací
+To je potenciálně velmi cenný balík informací. Útočník by například mohl znát nejen identitu konkrétního člověka, ale také jeho adresu, finanční aktivitu a historii transakcí s kryptoměnami.
+Revolut nicméně zdůraznil, že nebyly ohroženy peníze zákazníků ani přihlašovací údaje. Podle vyjádření společnosti tedy incident neznamená, že by útočníci získali přístup k účtům a mohli z nich vybírat peníze.
+Společnost uvedla pouze to, že jde o omezený počet zákazníků. Přesné číslo zatím nezveřejnila. Stejně tak neoznámila, která konkrétní vládní agentura byla zneužita, upozornil server The Verge.
+Není tedy zatím jasné, kterých uživatelů z jakých zemí se únik dat týkal a zda jsou mezi nimi také Češi. Ani to, jak se útočník k neoprávněnému e-mailovému účtu dostal.
+Sofistikovaný útok
+Právě způsob, jakým se podvodníkům podařilo Revolut přesvědčit, je na celém případu nejzajímavější.

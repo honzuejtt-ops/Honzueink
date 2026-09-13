@@ -1,3 +1,25 @@
+|T|Nejkratší metro jezdí v rakouské obci s 1200 obyvateli. Trasa je dlouhá 1,3 km a má čtyři zastávky|D|13.9. 09:45|P|Rakouská obec Serfaus vyřešila dopravní zácpy bezplatnou podzemní dráhou • Unikátní vznášející se vlak jezdí na vzduchovém polštáři tažený lanem • Pod...|X|Rakouská obec Serfaus vyřešila dopravní zácpy bezplatnou podzemní dráhou • Unikátní vznášející se vlak jezdí na vzduchovém polštáři tažený lanem • Podzemka přepraví ročně přibližně jeden a půl milionu cestujících
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Android připravuje kontrolu intimních fotek před sdílením. Ochrání především děti a dospívající|D|13.9. 08:45|P|Nová funkce v Androidu varuje uživatele před odesláním intimních fotografií • Lokální analýza obsahu chrání soukromí v zařízení a nic nikam neodesílá ...|X|Nová funkce v Androidu varuje uživatele před odesláním intimních fotografií • Lokální analýza obsahu chrání soukromí v zařízení a nic nikam neodesílá • Funkci ale půjde snadno obejít odesláním snímku jako běžného souboru
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Osm tipů, jak naplno využít Apple AirTag. Není to jen pípající klíčenka|D|13.9. 07:45|P|Apple AirTag většina lidí používá jako přívěsek na klíče nebo zavazadlo. Nabízí ale řadu funkcí, díky kterým je z něj mnohem všestrannější pomocník. N...|X|Apple AirTag většina lidí používá jako přívěsek na klíče nebo zavazadlo. Nabízí ale řadu funkcí, díky kterým je z něj mnohem všestrannější pomocník. Naučte se jej používat efektivně a poznejte všechny jeho funkce.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Konec nekonečného čekání, Tesla představí Roadster. Opravdu bude mít trysky od SpaceX|D|13.9. 06:41|P|Tesla představí nový Roadster. Konečně. Po tolika letech čekání, po tolika slibech a tolika odkladech…
+
+Prvně se na profilu Tesly na X objevila neurči...|X|Tesla představí nový Roadster. Konečně. Po tolika letech čekání, po tolika slibech a tolika odkladech…
+
+Prvně se na profilu Tesly na X objevila neurčitá grafika s čísly „10.01“ a stručným komentářem „Fo for launch“. To ve ve vesmírné terminologii znamená „Jdeme na start“. Proč vesmírná ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Stačí mu říct, co má udělat. Český dron vyhrál v disciplíně zaměřené na autonomní vyhledání zraněné osoby|D|13.9. 05:45|P|Český tým F4F a ČVUT uspěl v prestižní evropské soutěži • Autonomní dron rozumí lidské řeči a plní úkoly úplně bez GPS • Pokročilá technologie spoléhá...|X|Český tým F4F a ČVUT uspěl v prestižní evropské soutěži • Autonomní dron rozumí lidské řeči a plní úkoly úplně bez GPS • Pokročilá technologie spoléhá na kamerový systém a vlastní vytvořenou mapu
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Nejlepší hry o samurajích a nindžích. Nechybí válčení, čestné duely ani trocha sci-fi|D|13.9. 05:10|P|Japonskou historii jsme mohli prozkoumat v řadě her. Některé ji zpracovávají jako akci, jiné strategii a nejedna si k realitě přihazuje i nadpřirozeno...|X|Japonskou historii jsme mohli prozkoumat v řadě her. Některé ji zpracovávají jako akci, jiné strategii a nejedna si k realitě přihazuje i nadpřirozeno. Nindžové a samurajové ale nejsou jen záležitostí minulosti.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Jak rychlý je Apple A20 Pro? První testy potvrdily >20% nárůst výkonu, frekvence je skoro 5GHz|D|13.9. 05:00|P|První benchmarky procesoru A20 Pro potvrzují vysoký nárůst jednovláknového výkonu u nových jader Applu. Zdá se, že 2nm výrobní proces TSMC mimořádně p...|X|Tento týden Apple odhalil procesory A20 Pro pro novou generaci iPhonů. Firma se při prezentování nového čipu, který jako první používá 2nm proces, pochlubila tvrzením, že dvě velká jádra čipu A20 Pro mají o 20 % vyšší výkon, než předchozí generace. Teď unikly první benchmarky a zdá se, že toto tvrzení nebylo do větru. Minimálně v testu Geekbench ukazují čísla na výrazné zlepšení, zřejmě díky 2nm výrobní technologii.
 První benchmarky Apple A20 Pro unikly
 V databázi Geekbench se teď objevily první záznamy pro nové telefony (označené interně iPhone19,2) a procesor A20 Pro. Vzhledem k tomu, že jde zatím jen o pár výsledků, by se zatím měly brát pouze orientačně. V Geekbench 6.7.0 (iOS) procesor dostal jednovláknové skóre 4719 bodů, což je pro jakékoliv CPU rekord. Předchozí generace A19 Pro mívá v tomto testu skóre okolo 3800 až 3900 bodů (ve výsledcích je dost variabilita), což by dávalo nárůst jednovláknového výkonu o 21–24 %. Pochopitelně je třeba pamatovat, že architektura se nemusí ve všech programech chovat stejně, takže někde by mezigenerační rozdíl mohl vypadat jinak.

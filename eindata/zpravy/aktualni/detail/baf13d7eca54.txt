@@ -1,0 +1,19 @@
+Článek
+Anthropic skupinu označil za malý tým pravděpodobně ruských freelancerů. Nešlo tedy o ruský státní subjekt. Členové týmu však tvrdili, že jejich práci financovaly ruský Fond pro pokročilé výzkumné projekty, iniciativa National Technology Initiative a ministerstvo obrany.
+Případ je součástí rozsáhlého reportu společnosti o zneužívání AI. V kapitole věnované konvenčním zbraním Anthropic popisuje šest případů z Číny, Ruska a Jemenu. Ve čtyřech z nich byla AI využita přímo při vývoji softwaru pro zbraňové systémy.
+Případ označený jako GTG-27005 se týká operace, kterou její účastníci nazývali DronDoc nebo Serafim.
+Vražedné drony
+Anthropic uvádí, že pravděpodobně ruští aktéři chtěli vytvořit kompletní autonomní systém pro roj FPV kamikadze dronů. K vývoji používali Claude Code, který jim pomáhal psát a testovat software. Pracovali také se simulacemi a pronajatým výpočetním výkonem pro trénování modelů.
+Claude pomáhal vytvářet základní software celého systému. Ten měl umožňovat spolupráci více dronů, jejich koordinaci a další autonomní funkce. AI byla využívána také při vývoji softwaru pro navádění dronu k cíli a dalších částí systému.
+Nejcitlivější část přišla ve chvíli, kdy se vývoj posunul od běžné asistence programátorům k autonomnímu rozhodování o útoku.
+Podle Anthropicu byl palubní model navržen tak, aby dokázal sám vybrat cíl – mezi kategoriemi byla například „osoba“ – a vydat příkaz k detonaci bez člověka v rozhodovací smyčce.
+Právě tento moment je z pohledu vývoje vojenské AI zásadní. Nejde už pouze o to, že umělá inteligence pomáhá člověku napsat software pro zbraň. Model se má stát součástí systému, který sám vyhodnocuje situaci a provádí jednotlivé kroky útoku.
+Učili systém rozpoznávat nepřítele
+Anthropic přitom nepopisuje pouze práci na obrazovce počítače. Vyšetřovatelé zaznamenali, že skupina nahrávala nízkoúrovňový software do skutečných vývojových desek, připravovala jednodeskové počítače a propojovala jednotlivé části systému.
+To samozřejmě neznamená, že Anthropic zjistil nasazení takového autonomního systému na bojišti. Je ale evidentní, že se aktéři přesně o takový scénář snaží.
+Součástí práce byla také počítačová analýza záběrů z války na Ukrajině. Skupina trénovala systém počítačového vidění na získaných záběrech z bojů. Systém měl rozlišovat mezi kategoriemi „nepřítel“ a „přítel“, přičemž ruské systémy byly zařazovány mezi povolené objekty.
+Vyšetřovatelé zároveň zaznamenali, že aktéři opakovaně používali konkrétní souřadnice v Doněcké oblasti jako demonstrační místo útoku. Jako geografii pro plánované mise označovali také frontová města a koridory na Ukrajině.
+Přestože se projekt týkal vojenské technologie a jeho tvůrci se podle Anthropicu pohybovali v Rusku, společnost je neoznačuje za součást ruského státu. Anthropic skupinu hodnotí jako „malý specializovaný tým freelancerů“, který kombinoval civilní a vojenskou práci.
+Celkem identifikoval devět účtů spojených se skupinou, přičemž osm z nich bylo využíváno pouze pro běžnou práci freelancerů a nikoli pro vývoj zbraňového softwaru. Vyšetřování podle společnosti naznačilo vazby na regionální univerzitu s federálním výzkumným centrem spojeným s Ruskou akademií věd.
+Claude nebyl jediný nástroj
+Anthropic zároveň upozorňuje, že aktéři nepoužívali pouze jeho model. Vedle Claude Code měli k dispozici vlastní projektové soubory, simulační prostředí a výpočetní kapacity pro trénování modelů. Claude byl jednou ze součástí širšího vývojového prostředí.

@@ -1,0 +1,15 @@
+Článek
+Ransomware, tedy škodlivý software, který může zablokovat data a systémy a následně po oběti požadovat výkupné, se podle bezpečnostních analytiků nezaměřuje pouze na firmy. V červenci zasáhl také sektory, jejichž výpadek může mít dopad na fungování veřejných služeb.
+Skupina The Gentlemen zaútočila 16. července na obecní a městské úřady. Útočníci hrozili zveřejněním citlivých dat, pokud napadené organizace nezaplatí požadované výkupné.
+Stejná skupina se v průběhu měsíce zaměřila také na energetiku. Její útoky se nevyhnuly ani kulturním institucím. Ty se staly terčem 23. července. Vedle samotného provozu mohly být ohroženy také databáze obsahující informace o uměleckých dílech, návštěvnících nebo dalších aktivitách institucí.
+„Červencová data ukazují, že ransomwarové skupiny nejsou omezené na výrobu nebo finanční sektor – útočí systematicky na celou českou ekonomiku, včetně obecních úřadů, nemocnic i kulturních institucí,“ uvedl expert na kybernetickou bezpečnost a spolumajitel společnosti ComSource Jaroslav Cihelka.
+Podle něj nejde o izolované případy, ale o trend, který by měly české instituce brát vážně.
+Nemocnice čelily útokům Qilin
+Zvlášť citlivým cílem je zdravotnictví. Nemocnice pracují s rozsáhlým množstvím citlivých údajů o pacientech a zároveň jsou závislé na dostupnosti informačních systémů.
+Na zdravotnický sektor v červenci zaútočila ransomwarová skupina Qilin, a to hned ve dvou případech – 7. a 13. července.
+„Útoky na nemocnice nebo energetiku nejsou jen finančním problémem napadené organizace. Jde o útoky na kritickou infrastrukturu, kde selhání systémů může přímo ohrozit zdraví lidí nebo dodávky energie,“ upozornil Cihelka.
+Právě u zdravotnictví může být dopad ransomwarového útoku výrazně širší než jen ztráta přístupu k počítačům. Nedostupnost systémů může komplikovat například práci s dokumentací nebo běžný provoz nemocnice.
+Největší vlna zasáhla IT firmy
+Nejintenzivnější kampaň v červenci podle analýzy zasáhla sektor informačních technologií a profesionálních služeb. Skupina Titan mezi 11. a 13. červencem napadla několik poradenských firem, společností zabývajících se správou dat a poskytovatelů IT služeb.
+Podle ComSource představují právě takové firmy zajímavý cíl také kvůli jejich postavení v dodavatelském řetězci. Úspěšný útok na společnost, která spravuje IT nebo data pro jiné organizace, může potenciálně otevřít cestu k dalším klientům.
+„Zaměření na firmy, které spravují data a IT infrastrukturu pro jiné organizace, je obzvlášť nebezpečný trend. Jeden úspěšný průnik do poradenské nebo datové společnosti může otevřít cestu k desítkám dalších klientů,“ uvedl Cihelka.

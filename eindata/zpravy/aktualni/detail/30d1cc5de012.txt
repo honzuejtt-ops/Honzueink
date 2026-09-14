@@ -1,0 +1,6 @@
+Google konečně dostává Gemini z prohlížeče přímo do Windows. Společnost vydala desktopovou aplikaci, která nemá být jen prodlouženou rukou webového Gemini, ale má nabídnout hlubší propojení se systémem a vyvolání jednoduchou klávesovou zkratkou.
+Nově vždy po ruce i na Windows
+Aplikace funguje na Windows 10 a Windows 11 a její hlavní výhodou má být právě rychlý přístup. Stačí stisknout Alt + mezerník a Gemini se objeví nad právě používanou aplikací. Uživatel tak může například rychle nechat ověřit dokument, shrnout text nebo si nechat inspirovat, aniž by musel otevírat další kartu v prohlížeči.
+Platícím uživatelům Google umožňuje pracovat s obsahem, který má právě otevřený. Po sdílení konkrétního okna tak AI dokáže analyzovat dokument, tabulku, kód či grafický návrh. Uživatel tak nemusí věc kopírovat a ručně vkládat do chatu.
+Součástí aplikace je propojení s dalšími službami Googlu, jako je Google Disk, Dokumenty nebo kalendář. Pokud to Gemini umožníte, může při práci přistupovat k informacím z těchto míst. Součástí aplikace pro Windows je také generování videa přes Omni, agent Gemini Spark zvládající automatické vyřizování víceúrovňových úkolů. Tyto pokročilejší funkce jsou ale pochopitelně zamknuté za předplatným.
+zdroj: Gemini, 9to5google

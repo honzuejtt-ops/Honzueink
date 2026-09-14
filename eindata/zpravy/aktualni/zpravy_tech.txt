@@ -1,4 +1,350 @@
-|T|Žádné zprávy|D||P|Nebyly nalezeny.|X|Zkuste to později.|E||T|Intel vylepšil svůj 1,8nm proces. V čipech Core Ultra 300 už používá technologii, která měla být až na 1,4 nanometrech|D|14.9. 17:26|P|Přestože technologie výroby čipů High-NA od ASML měla být nasazena až v budoucnu s procesem 14A, Intel teď odhalil, že ji už využívá ve svých dnešních...|X|Intel minulý týden na konferenci SPIE Photomask Technology + Extreme Ultraviolet Lithography spolu s předním dodavatelem zařízení pro výrobu čipů (včetně pokročilých EUV strojů) ASML oznámil překvapivou věc. Ve spolupráci s ASML překročil milník jednoho milionu křemíkových waferů vyrobených pomocí nové technologie High-NA, která bude next-gen skokem ve schopnostech výroby pokročilých čipů po EUV a která měla být nasazena až za několik let.
+|T|Žádné zprávy|D||P|Nebyly nalezeny.|X|Zkuste to později.|E||T|NetBSD na desktopu: široká podpora platforem pro kancelář či vývoj|D|14.9. 22:00|P|Systémy z rodiny BSD se dají používat nejen na serverech, ale své uplatnění mohou najít i na desktopu. Popíšu své zkušenosti s provozem NetBSD na star...|X|V článku a následné diskuzi pod mojí předchozí recenzí antiX linuxu jsem slíbil, že se podívám na zoubek také unixovému operačnímu systému NetBSD.
+Co se dozvíte v článku
+antiX skvěle funguje i na starších 32bitových počítačích, výhledově se však nelze spoléhat na podporu jádra a především webových prohlížečů pro tyto letité stroje. Právě NetBSD by mohl tuto mezeru vyplnit, protože jedno z jeho hlavních lákadel představuje podpora mnoha různých platforem včetně těch velmi exotických.
+Stejně jako v minulém článku se zaměřím na starší počítač se 32bitovým procesorem, novější se 64bitovým procesorem a také na na Amigu, kterou jsem ve verzi 500+ a 1200 vlastnil před zakoupením svého prvního PéCéčka.
+Koncem prázdnin sice vyšla verze 11, tento článek ale nebude o jejích novinkách, ale o současném využití pro kancelářskou práci a také jako vývojářská stanice. Pojďme společně vyzkoušet zase něco nového, Linux je dnes pro tyto činnosti výborně vybaven a zkusíme zjistit, jak je na tom NetBSD. Přidám i malé srovnání s FreeBSD, které je přeci jen na desktopu drobet odladěnější, ale podpora platforem je mnohem užší.
+Platformy i386 a x86_64
+Platformy BSD obecně udržují různou úroveň podpory pro jednotlivý hardware. Starší 32bitové stroje patří do kategorie TIER I, která představuje společně s x86_64 a dalšími hlavní zájem zvolené strategie vývojářů NetBSD.
+Oproti Linuxu jsou tyto systémy vyvíjeny jako jeden celek, nikoliv jako skládačka jádra a aplikací. Po dokončení instalace tedy obdržím čistý minimální systém volitelně včetně zdrojových kódů nebo kompletního X Serveru s minimalistickým správcem oken. Aplikace třetích stran se instalují odděleně, binární do adresářů /usr/pkg a kompilované porty využívají adresář  /usr/pkgsrc.
+Instalační obrazy jsou k mání v mnoha variantách, samotná instalace operačního systému NetBSD probíhá pomocí instalátoru sysinst, který využívá textový režim a textové uživatelské rozhraní (TUI). Autoři se vzhledem k maximální portabilitě snaží o jednoduchý a maximálně přenosný styl, který se jim dle mého pohledu rozhodně daří. Podobný vzhled nabízí například linuxová distribuce Slackware.
+Instalátor nabízí dostatečně přívětivého průvodce pro nastavení klávesnice, rozdělení disku, nastavení sítě, časového pásma, hesla uživatele root nebo tvorbu běžného uživatele. Příjemnou vlastnost představuje možnost konfigurace správce binárních balíčků PKGIN a portů PKGSRC.
+Moderní systémy BSD dnes již preferují instalaci právě pomocí binárních balíčků. FreeBSD používá systém pkg, NetBSD pkgin, OpenBSD zatím zůstává u tradičního nástroje  pkg_add. Stále tu však zůstává možnost kompilace z portů, která má obrovskou výhodu v tom, že si sestavení konkrétní aplikace mohu nastavit dle potřeby a optimalizovat pro daný procesor.
+Proces kompilace však trvá v závislosti na velikosti programu mnohdy velmi dlouho a není zaručen úspěch. Veliké porty mají mnoho závislostí a je mi jasné, že není v silách vývojářů vše pečlivě otestovat. Celý proces a obecně tento operační systém je výborně zdokumentován.
+Prvotní nastavení balíčkovacího systému a stromu portů
+Po startu se objeví okno správce přihlášení XDM, které spustí výchozího správce oken CTWM. Pro základní práci plně dostačuje, běžný desktopový uživatel však nejspíše bude preferovat jiného správce. K dispozici je terminál, kde právě nyní provedeme všechna potřebná nastavení. Jen bych rád upozornil, že těžkotonážní desktopová prostředí GNOME nebo KDE v současné době nejsou plně podporovány.
+Doporučuji se podívat na aktuální seznam binárních balíčků pro platformy i386 a x86_64. Ano, v balíčcích a ve stromu portů vidím grafické prostředí GNOME, ale ve starších verzích. Důvod je mimo jiné určitě kompozitor Wayland, který NetBSD postupně zavádí, na rozdíl od Linuxu se však zdaleka nejedná o takovou prioritu. Krásně je to vidět u KDE, kde mám k dispozici několik balíčků z KDE 4 a KDE 5. Aktuální KDE 6 autoři postupně přidávají. Věřím, že v budoucnu budou obě tato moderní grafická prostředí plně k dispozici.
+Po zprovoznění správce balíčků PKGIN za pomoci instalátoru stačí v terminálu CTWM zadat příkaz:
+pkgin update Následně lze se systémem pkg pracovat. Nejčastěji využívám příkazy, které asi není třeba vysvětlovat:
+pkgin search
+pkgin install
+pkgin remove Ty pro většinu práce s balíčkovacím systémem plně postačí. Balíčky se instalují do adresáře  /usr/pkg.
+Práce s porty je o něco složitější. Instalátor za mě základní strom portů již připravil, nyní provedu jeho aktualizaci pomocí dnes již poněkud zastaralého nástroje pro správu verzí:
+cvs -q -z2 update -dP Porty se nacházejí v adresáři /usr/pkgsrc a jsou přehledně umístěny dle jejich účelu. Pokud chci např. nainstalovat editor nano, provedu příkazy:
+cd /usr/pkgsrc/editors/nano
+make install clean V případe odebrání pak:
+make deinstall Pro nastavení konkrétního portu lze přímo upravit soubory Makefile nebo options.mk. To je vhodné spíše pro vývoj či testování, po aktualizaci stromu portů budou oba soubory zase přepsány. Soubory se nacházejí v adresáři portu nebo je možné provádět úpravy centrálně v souboru /etc/mk.conf (zachová se i po aktualizaci stromu portů). Vzhledem k výkonu počítačů, kde NetBSD testuji, se práci s porty snažím maximálně vyhnout.
+Nastavení pro běžnou práci
+V Linuxu používám shell Bash a rád bych jej zprovoznil i zde. Systémy BSD jej ve výchozím nastavení nenabízejí, takže je nutná ruční instalace. Zde využívám kombinaci dokumentace a umělé inteligence (dále jen áíčko), která je dle mých zkušeností ideální.
+V terminálu se potřebuji přihlásit jako správce root. Je nutné nainstalovat balíček s názvem bash, zkontrolovat, zda byla přidána vhodná cesta do souboru /etc/shells a nakonec pomocí příkazu usermod změnit shell pro aktuálního uživatele (v mém případě  orel):
+su root
+pkgin install bash
+echo "/usr/pkg/bin/bash" >> /etc/shells
+usermod -s /usr/pkg/bin/bash orel Při dalším přihlášení (ať již v textové konzoli, přepnutí přes su - orel nebo při startu v XDM) mám k dispozici Bash. Uživatelské aliasy, cesty a proměnné si od této chvíle mohu konfigurovat ve standardních souborech /home/orel/.bashrc a  /home/orel/.bash_profile.
+Instalace programu sudo, která mi dočasně umožní získat práva správce systému, není složitá. Opět se přihlásím jako uživatel root, nainstaluji balíček sudo, přidám uživatele do potřebných skupin a pomocí příkazu visudo odkomentuji řádek  %wheel ALL=(ALL) ALL:
+su root
+pkgin install sudo
+usermod -G wheel,operator orel
+visudo Oblíbil jsem si správce oken Mate. Jednoduché prostředí navazuje na GNOME 2 a šikovné aplikace Engrampa pro správu archivů, Pluma jako lehký programátorský textový editor, Caja emulující Průzkumníka ze světa Windows, Eye of Mate jako prohlížeč obrázků a prohlížeč pdf souborů Atril mi plně vyhovují.
+Instalace v systémech BSD je však obecně složitější než v Linuxu. Je potřeba nainstalovat metabalík Mate, povolit potřebné systémové služby pro toto prostředí v souboru /etc/rc.conf a vytvořit skript pro start grafické relace.
+Mate mohu spouštět z příkazové řádky pomocí startx (ten pracuje se souborem .xinitrc) nebo správcem XDM (ten načítá soubor .xsession, který musí být spustitelný). Zbývá nastavit češtinu. Jako root upravuji soubor  /etc/rc.conf:
+echo dbus=YES >> /etc/rc.conf
+echo rpcbind=YES >> /etc/rc.conf
+echo dbus=YES >> /etc/rc.conf
+echo famd=YES >> /etc/rc.conf
+echo xdm=YES >> /etc/rc.conf Poté vložím celý obsah jako uživatel do souboru /home/orel/.xsession:
+#!/bin/sh
+export PATH=/usr/pkg/bin:/usr/pkg/sbin:$PATH
+export XDG_DATA_DIRS=/usr/pkg/share:$XDG_DATA_DIRS
+# Nastavení českého jazyka
+export LANG=cs_CZ.UTF-8
+export LC_ALL=cs_CZ.UTF-8
+# Česká klávesnice pro X11
+setxkbmap cz
+# Korektní inicializace D-Bus relace
+if [ -x /usr/pkg/bin/dbus-launch ]; then
+    eval `/usr/pkg/bin/dbus-launch --sh-syntax --exit-with-session`
+fi
+# Spuštění MATE v relaci ConsoleKit (umožní MATE ovládat napájení)
+exec ck-launch-session /usr/pkg/bin/mate-session Nakonec v terminálu nastavím příznak souboru jako spustitelný:
+chmod +x ~/.xsession Zde může dojít k mnoha chybám v závislosti na použitém hardwaru. NetBSD nenabízí živou distribuci, která pomůže s otestováním kompatibility. Setkal jsem se s problémy typu zablokovaný přístup k X11 socketu v adresáři /tmp, nekorektním exportem proměnných relace D-Bus, kterou Mate využívá nebo s odlišným chováním startx a XDM. Zde opět výborně pomůže vhodný dotaz na áíčko, dobře známé logování a hledání příčin různých chyb.
+Některé součásti Mate, např. Statistika napájení nebo Aplikace spuštěné po přihlášení, mi nefungují a otevírané okno s těmito aplikacemi jen problikne. Nepodařilo se mi uspokojivě zprovoznit automatické připojení externích disků, proto využívám terminál, kde zjistím název externího zařízení, název oddílu, v mém případě NTFS, vytvořím adresář pro připojení externího disku, upravím konfigurační soubor /etc/sysctl.conf, s diskem pracuji a nakonec jej korektně odpojím:
+echo "net.inet.tcp.sendbuf_max=16777216" >> /etc/sysctl.conf
+echo "net.inet.tcp.recvbuf_max=16777216" >> /etc/sysctl.conf
+echo "kern.sbmax=16777216" >> /etc/sysctl.conf
+sysctl hw.disknames
+disklabel sd1
+mkdir -p /mnt/usb
+ntfs-3g /dev/sd1e /mnt/usb
+umount /mnt/usb V tomto případě je krásně demonstrována bezpečnostní politika NetBSD. Bez zápisu do souboru /etc/sysctl.conf dostávám chybové hlášení:
+ntfs-3g: perfuse open: setsockopt SO_SNDBUF to 2161688 failed: No buffer space available
+Áíčko mi vysvětlí, že se jedná o omezení výše limitu vyrovnávací paměti. S podobnými odlišnostmi oproti Linuxu jsem se setkal i jinde, s tím musím počítat.
+Proti Linuxu nemám v Mate možnost restartu či vypnutí počítače, i když jsem běžného uživatele umístil do skupiny wheel a operator. Parádní vysvětlení opět připravilo áíčko, cituji: NetBSD nemá linuxový systemd-logind (který Mate často na pozadí očekává). Někdy se stane, že i přes správný Polkit zůstanou systémová tlačítka Vypnout/Restartovat v menu zašedlá nebo schovaná, protože Mate nenašlo preferovaného démona pro správu relace. V takovém případě...
+(Pokracovani na webu)|E||T|Dlouho očekávaná podpora SIMD operací v programovacím jazyku Go (dokončení)|D|14.9. 22:00|P|Budeme se zabývat popisem experimentálního balíčku nazvaného simd. Ten nabízí operace s vektory, jejichž bitová šířka (a tím i počet prvků) je odvozen...|X|Na dvojici článků Dlouho očekávaná podpora SIMD operací v programovacím jazyku Go a Dlouho očekávaná podpora SIMD operací v programovacím jazyku Go (2. část) dnes navážeme a celé téma o podpoře SIMD operací v programovacím jazyku Go dokončíme. Zabývat se budeme popisem (stále ještě experimentálního) balíčku nazvaného simd, který je dostupný v Go verze 1.26 (i když v tomto případě s omezeními) a především pak v Go 1.27.
+Balíček simd nabízí SIMD operace prováděné s vektory, jejichž bitová šířka (a tím i počet prvků) je odvozena z možností použité architektury mikroprocesorů. To tedy znamená, že například u mikroprocesorů s podporou AVX či AVX-2 budou podporovány vektory o šířce 256 bitů, zatímco v případě AVX-512 bude možné použít vektory o šířce 512 bitů. A samozřejmě je možné v runtime zjistit, jaká je skutečná šířka vektorů.
+Datové typy definované v rámci balíčku simd
+V balíčku simd je definováno deset datových typů představujících vektory o určité délce (k tomu se ještě vrátíme) v nichž jsou uloženy prvky různých typů. Povšimněte si, že názvy těchto typů (na rozdíl od typů definovaných v balíčku simd/archsimd) neobsahují specifikaci počtu uložených prvků, ale pouze jejich typy:
+Další čtyři datové typy reprezentují takzvané masky s uloženými bity resp. z pohledu vývojáře s pravdivostními hodnotami. Masky jsou používány v některých operacích, s nimiž se seznámíme v navazujících kapitolách. Jednotlivé typy reprezentující masky se liší podle toho, s jakými vektory je možné je použít:
+Součet dvou vektorů: rozdíl mezi použitím balíčku simd a simd/archsimd
+Praktickou část dnešního článku začneme typickým demonstračním příkladem, který se velmi často používá při vysvětlování SIMD operací. Pokusíme se o provedení součtu dvou vektorů stejného typu. Součet vektorů je realizován snadno – je proveden součtem odpovídajících si prvků vektorů. Připomeňme si, že v případě přímého použití balíčku simd/archsimd může realizace této úlohy vypadat následovně:
+package main
+ 
+import (
+        "fmt"
+        "simd/archsimd"
+)
+ 
+func AddTwoVectors(v1, v2 archsimd.Float32x8, result []float32) {
+        // SIMD operace součtu prvků vektorů
+        v3 := v1.Add(v2)
+ 
+        // zápis prvků vektoru do řezu
+        v3.Store(result)
+}
+ 
+func main() {
+        // konstrukce a inicializace pole s odvozením počtu prvků
+        a1 := [...]float32{1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0}
+        a2 := [...]float32{0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5}
+ 
+        // výpis obsahu polí
+        fmt.Println("a1", a1)
+        fmt.Println("a2", a2)
+ 
+        // převod pole na vektor s osmi prvky
+        v1 := archsimd.LoadFloat32x8Array(&a1)
+        v2 := archsimd.LoadFloat32x8Array(&a2)
+ 
+        // konstrukce řezu
+        result := make([]float32, 8)
+        AddTwoVectors(v1, v2, result)
+ 
+        // výpis obsahu řezu
+        fmt.Println("a1+a2", result)
+}
+Přepis výše uvedeného demonstračního příkladu do takové podoby, aby se používal balíček simd, je snadný. Struktura celého příkladu zůstane prakticky stejná, pouze se při převodu řezu (původně pole) na vektor namísto metody LoadFloat32×8Array použije metoda nazvaná LoadFloat32s. A pochopitelně se pracuje s odlišnými datovými typy, což je však ve zdrojovém kódu do značné míry skryto díky tomu, že se využívá typová inference:
+package main
+ 
+import (
+        "fmt"
+        "simd"
+)
+ 
+func main() {
+        // konstrukce a inicializace řezu
+        s1 := []float32{1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0}
+        s2 := []float32{0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5}
+ 
+        // výpis obsahu řezů
+        fmt.Println("s1   ", s1)
+        fmt.Println("s2   ", s2)
+ 
+        // převod řezu na vektor
+        v1 := simd.LoadFloat32s(s1)
+        v2 := simd.LoadFloat32s(s2)
+ 
+        // SIMD operace součtu prvků vektorů
+        v3 := v1.Add(v2)
+ 
+        // konstrukce řezu
+        result := make([]float32, v3.Len())
+ 
+        // zápis prvků vektoru do řezu
+        v3.Store(result)
+ 
+        // výpis obsahu řezu
+        fmt.Println("s1+s2", result)
+}
+Ověříme si výsledky výpočtu součtu vektorů:
+$ ./go run float32_add.go
+ 
+s1    [1 2 3 4 5 6 7 8]
+s2    [0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5]
+s1+s2 [1.5 2.5 3.5 4.5 5.5 6.5 7.5 8.5]
+Operace prováděné se všemi prvky vektoru
+S vektory lze provádět i různé unární operace (tedy operace s jediným operandem), přičemž každá taková operace se volá jako metoda vektoru a výsledkem je nový vektor. Připomeňme si, že v balíčku simd/archsimd je podporováno celkem pět unárních operací s prvky vektorů:
+V balíčku simd z nějakého důvodu chybí operace pro výpočet převrácené hodnoty a kombinace výpočtu převrácené hodnoty z odmocniny hodnoty prvku, takže nám zbývá pouze:
+Všechny tři výše zmíněné operace jsou použity v následujícím demonstračním příkladu:
+package main
+ 
+import (
+        "fmt"
+        "simd"
+)
+ 
+func main() {
+        // konstrukce a inicializace řezu
+        s := []float32{-4.0, -3.0, -2.0, -1.0, 1.0, 2.0, 3.0, 4.0}
+ 
+        // výpis obsahu řezu
+        fmt.Println("s      ", s)
+ 
+        // převod řezu na vektor
+        v := simd.LoadFloat32s(s)
+ 
+        // konstrukce řezu pro uložení výsledků
+        result := make([]float32, v.Len())
+ 
+        // SIMD operace výpočtu absolutní hodnoty
+        v2 := v.Abs()
+ 
+        // zápis prvků vektoru do řezu
+        v2.Store(result)
+ 
+        // výpis obsahu řezu
+        fmt.Println("abs(s) ", result)
+ 
+        // SIMD operace výpočtu hodnoty s opačným znaménkem
+        v3 := v.Neg()
+ 
+        // zápis prvků vektoru do řezu
+        v3.Store(result)
+ 
+        // výpis obsahu řezu
+        fmt.Println("neg(s) ", result)
+ 
+        // SIMD operace výpočtu druhé odmocniny
+        v4 := v.Sqrt()
+ 
+        // zápis prvků vektoru do řezu
+        v4.Store(result)
+ 
+        // výpis obsahu řezu
+        fmt.Println("sqrt(s)", result)
+}
+Samozřejmě si zkontrolujeme i způsob výpočtu:
+$ go run float32_unary.go
+ 
+s       [-4 -3 -2 -1 1 2 3 4]
+abs(s)  [4 3 2 1 1 2 3 4]
+neg(s)  [4 3 2 1 -1 -2 -3 -4]
+sqrt(s) [NaN NaN NaN NaN 1 1.4142135 1.7320508 2]
+Operace s dvojicemi vektorů stejného typu
+Ve stručnosti si taktéž ukážeme další binární operace prováděné s odpovídajícími si prvky dvou vektorů (prozatím jsme si totiž ukázali pouze operaci součtu). Tyto operace jsou opět dostupné přes metody, které mají jeden parametr (druhý vektor) a návratovou hodnotou je nový vektor stejného typu i délky s výsledky:
+Realizace těchto operací je snadná, což je ostatně patrné i při pohledu na zdrojový kód dalšího demonstračního příkladu:
+package main
+ 
+import (
+        "fmt"
+        "simd"
+)
+ 
+func main() {
+        // konstrukce a inicializace řezu
+        s1 := []float32{1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0}
+        s2 := []float32{0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5}
+ 
+        // výpis obsahu řezů
+        fmt.Println("s1        ", s1)
+        fmt.Println("s2        ", s2)
+ 
+        // převod řezu na vektor
+        v1 := simd.LoadFloat32s(s1)
+        v2 := simd.LoadFloat32s(s2)
+ 
+        // konstrukce řezu pro uložení výsledků
+        result := make([]float32, v1.Len())
+ 
+        // SIMD operace součtu prvků vektorů
+        v3 := v1.Add(v2)
+ 
+        // zápis prvků vektoru do řezu
+        v3.Store(result)
+ 
+        // výpis obsahu řezu
+        fmt.Println("s1+s2     ", result)
+ 
+        // SIMD operace rozdílu prvků vektorů
+        v4 := v1.Sub(v2)
+ 
+        // zápis prvků vektoru do řezu
+        v4.Store(result)
+ 
+        // výpis obsahu řezu
+        fmt.Println("s1-s2     ", result)
+ 
+        // SIMD operace součinu prvků vektorů
+        v5 := v1.Mul(v2)
+ 
+        // zápis prvků vektoru do řezu
+        v5.Store(result)
+ 
+        // výpis obsahu řezu
+        fmt.Println("s1*s2     ", result)
+ 
+        // SIMD operace podílu prvků vektorů
+        v6 := v1.Div(v2)
+ 
+        // zápis prvků vektoru do řezu
+        v6.Store(result)
+ 
+        // výpis obsahu řezu
+        fmt.Println("s1/s2     ", result)
+ 
+        // SIMD operace výběru větších prvků vektorů
+        v7 := v1.Max(v2)
+ 
+        // zápis prvků vektoru do řezu
+        v7.Store(result)
+ 
+        // výpis obsahu řezu
+        fmt.Println("max(s1/s2)", result)
+ 
+        // SIMD operace výběru menších prvků vektorů
+        v8 := v1.Min(v2)
+ 
+        // zápis prvků vektoru do řezu
+        v8.Store(result)
+ 
+        // výpis obsahu řezu
+        fmt.Println("min(s1/s2)", result)
+}
+Ověříme si výsledky všech implementovaných binárních operací:
+$ ./go run float32_binary.go
+ 
+s1         [1 2 3 4 5 6 7 8]
+s2         [0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5]
+s1+s2      [1.5 2.5 3.5 4.5 5.5 6.5 7.5 8.5]
+s1-s2      [0.5 1.5 2.5 3.5 4.5 5.5 6.5 7.5]
+s1*s2      [0.5 1 1.5 2 2.5 3 3.5 4]
+s1/s2      [2 4 6 8 10 12 14 16]
+max(s1/s2) [1 2 3 4 5 6 7 8]
+min(s1/s2) [0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5]
+Pro zajímavost si ještě ověřme operaci podílu nulou (včetně 0/0):
+package main
+ 
+import (
+        "fmt"
+        "simd"
+)
+ 
+func main() {
+        // konstrukce a inicializace řezu
+        s1 := []float32{0.0, 1.0, -1.0, 1.0, 0.0, 1.0, -1.0, 0.0}
+        s2 := []float32{1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0}
+ 
+        // výpis obsahu řezů
+        fmt.Println("s1   ", s1)
+        fmt.Println("s2   ", s2)
+ 
+        // převod řezu na vektor
+        v1 := simd.LoadFloat32s(s1)
+        v2 := simd.LoadFloat32s(s2)
+ 
+        // SIMD operace podílu prvků vektorů
+        v3 := v1.Div(v2)
+ 
+        // konstrukce řezu
+        result := make([]float32, v3.Len())
+ 
+        // zápis prvků vektoru do řezu
+        v3.Store(result)
+ 
+        // výpis obsahu řezu
+        fmt.Println("s1+s2", result)
+}
+Ani v tomto případě nedojde k běhové chybě, ale příslušné prvky vektoru s výsledky budou obsahovat buď kladné či záporné nekonečno, nebo v případě podílu 0/0 hodnotu NaN:
+$ go run float32_div.go
+ 
+s1    [0  1 -1  1  0    1   -1   0]
+s2    [1  1  1  1  0    0    0   0]
+s1+s2 [0  1 -1  1 NaN +Inf -Inf NaN]
+Porovnání dvou vektorů
+Odpovídající si prvky dvou vektorů stejného typu je možné porovnat. Výsledkem porovnání je sada pravdivostních hodnot, která se uloží do masky (těm...
+(Pokracovani na webu)|E||T|Watch astronaut Christina Koch and Google’s James Manyika discuss space, technology, and discovery.|D|14.9. 19:00|P|Christina Koch sits down with James Manyika, Google’s Senior Vice President of Research, Labs, Technology & Society.|X|Watch astronaut Christina Koch and Google’s James Manyika discuss space, technology, and discovery.
+In the latest episode of our Dialogues on Technology and Society series, NASA astronaut, engineer, and scientist Christina Koch sits down with James Manyika, Google’s Senior Vice President of Research, Labs, Technology & Society.
+Christina reflects on her trailblazing career — from spending 328 days aboard the International Space Station and conducting the historic first all-female spacewalk, to journeying around the Moon on NASA’s Artemis II mission.
+She and James discuss viewing Earth as an electric blue “lifeboat” from 250,000 miles away, and the vital partnership between astronauts, robotics, and AI. Christina also explores the big question—“Are we alone?”—and shares her advice for future explorers: do what scares you, and support the people around you.
+Watch the full dialogue to hear more.|E||T|Intel vylepšil svůj 1,8nm proces. V čipech Core Ultra 300 už používá technologii, která měla být až na 1,4 nanometrech|D|14.9. 17:26|P|Přestože technologie výroby čipů High-NA od ASML měla být nasazena až v budoucnu s procesem 14A, Intel teď odhalil, že ji už využívá ve svých dnešních...|X|Intel minulý týden na konferenci SPIE Photomask Technology + Extreme Ultraviolet Lithography spolu s předním dodavatelem zařízení pro výrobu čipů (včetně pokročilých EUV strojů) ASML oznámil překvapivou věc. Ve spolupráci s ASML překročil milník jednoho milionu křemíkových waferů vyrobených pomocí nové technologie High-NA, která bude next-gen skokem ve schopnostech výroby pokročilých čipů po EUV a která měla být nasazena až za několik let.
 High-NA už na 1,8nm procesu místo čekání na 1,4 nm
 Intel původně hlásil, že High-NA nasadí v rámci procesu, který označuje jako 1,4nm či 14angströmový (Intel 14A), byť je samozřejmě možné, že jeho výsledky budou o něco horší proti 1,4nm procesu od TSMC. Nyní ale Intel prozradil, že již používá technologii High-NA v rámci svého nyní komerčně nasazeného 1,8nm procesu 18A. Onen milion waferů totiž nebyl zpracován pouze během práce na vývoji a prototypech budoucích technologií, ale už i v běžné výrobě, přestože proces 18A High-NA používat neměl.
 Není to ale tak, že by Intel tuto technologii nasadil z nutnosti (protože by bez ní technologie 18A nefungovala). Intel potvrdil, že s High-NA vyrábí jen vybranou část 1,8nm produktů, zatímco ostatní jsou vyráběné běžným postupem – který tedy musí sám fungovat i bez High-NA. Jde ale i část reálně prodávaných procesorů Intel Core Ultra 300 „Panther Lake“, takže nic okrajového.

@@ -1,0 +1,72 @@
+V článku a následné diskuzi pod mojí předchozí recenzí antiX linuxu jsem slíbil, že se podívám na zoubek také unixovému operačnímu systému NetBSD.
+Co se dozvíte v článku
+antiX skvěle funguje i na starších 32bitových počítačích, výhledově se však nelze spoléhat na podporu jádra a především webových prohlížečů pro tyto letité stroje. Právě NetBSD by mohl tuto mezeru vyplnit, protože jedno z jeho hlavních lákadel představuje podpora mnoha různých platforem včetně těch velmi exotických.
+Stejně jako v minulém článku se zaměřím na starší počítač se 32bitovým procesorem, novější se 64bitovým procesorem a také na na Amigu, kterou jsem ve verzi 500+ a 1200 vlastnil před zakoupením svého prvního PéCéčka.
+Koncem prázdnin sice vyšla verze 11, tento článek ale nebude o jejích novinkách, ale o současném využití pro kancelářskou práci a také jako vývojářská stanice. Pojďme společně vyzkoušet zase něco nového, Linux je dnes pro tyto činnosti výborně vybaven a zkusíme zjistit, jak je na tom NetBSD. Přidám i malé srovnání s FreeBSD, které je přeci jen na desktopu drobet odladěnější, ale podpora platforem je mnohem užší.
+Platformy i386 a x86_64
+Platformy BSD obecně udržují různou úroveň podpory pro jednotlivý hardware. Starší 32bitové stroje patří do kategorie TIER I, která představuje společně s x86_64 a dalšími hlavní zájem zvolené strategie vývojářů NetBSD.
+Oproti Linuxu jsou tyto systémy vyvíjeny jako jeden celek, nikoliv jako skládačka jádra a aplikací. Po dokončení instalace tedy obdržím čistý minimální systém volitelně včetně zdrojových kódů nebo kompletního X Serveru s minimalistickým správcem oken. Aplikace třetích stran se instalují odděleně, binární do adresářů /usr/pkg a kompilované porty využívají adresář  /usr/pkgsrc.
+Instalační obrazy jsou k mání v mnoha variantách, samotná instalace operačního systému NetBSD probíhá pomocí instalátoru sysinst, který využívá textový režim a textové uživatelské rozhraní (TUI). Autoři se vzhledem k maximální portabilitě snaží o jednoduchý a maximálně přenosný styl, který se jim dle mého pohledu rozhodně daří. Podobný vzhled nabízí například linuxová distribuce Slackware.
+Instalátor nabízí dostatečně přívětivého průvodce pro nastavení klávesnice, rozdělení disku, nastavení sítě, časového pásma, hesla uživatele root nebo tvorbu běžného uživatele. Příjemnou vlastnost představuje možnost konfigurace správce binárních balíčků PKGIN a portů PKGSRC.
+Moderní systémy BSD dnes již preferují instalaci právě pomocí binárních balíčků. FreeBSD používá systém pkg, NetBSD pkgin, OpenBSD zatím zůstává u tradičního nástroje  pkg_add. Stále tu však zůstává možnost kompilace z portů, která má obrovskou výhodu v tom, že si sestavení konkrétní aplikace mohu nastavit dle potřeby a optimalizovat pro daný procesor.
+Proces kompilace však trvá v závislosti na velikosti programu mnohdy velmi dlouho a není zaručen úspěch. Veliké porty mají mnoho závislostí a je mi jasné, že není v silách vývojářů vše pečlivě otestovat. Celý proces a obecně tento operační systém je výborně zdokumentován.
+Prvotní nastavení balíčkovacího systému a stromu portů
+Po startu se objeví okno správce přihlášení XDM, které spustí výchozího správce oken CTWM. Pro základní práci plně dostačuje, běžný desktopový uživatel však nejspíše bude preferovat jiného správce. K dispozici je terminál, kde právě nyní provedeme všechna potřebná nastavení. Jen bych rád upozornil, že těžkotonážní desktopová prostředí GNOME nebo KDE v současné době nejsou plně podporovány.
+Doporučuji se podívat na aktuální seznam binárních balíčků pro platformy i386 a x86_64. Ano, v balíčcích a ve stromu portů vidím grafické prostředí GNOME, ale ve starších verzích. Důvod je mimo jiné určitě kompozitor Wayland, který NetBSD postupně zavádí, na rozdíl od Linuxu se však zdaleka nejedná o takovou prioritu. Krásně je to vidět u KDE, kde mám k dispozici několik balíčků z KDE 4 a KDE 5. Aktuální KDE 6 autoři postupně přidávají. Věřím, že v budoucnu budou obě tato moderní grafická prostředí plně k dispozici.
+Po zprovoznění správce balíčků PKGIN za pomoci instalátoru stačí v terminálu CTWM zadat příkaz:
+pkgin update Následně lze se systémem pkg pracovat. Nejčastěji využívám příkazy, které asi není třeba vysvětlovat:
+pkgin search
+pkgin install
+pkgin remove Ty pro většinu práce s balíčkovacím systémem plně postačí. Balíčky se instalují do adresáře  /usr/pkg.
+Práce s porty je o něco složitější. Instalátor za mě základní strom portů již připravil, nyní provedu jeho aktualizaci pomocí dnes již poněkud zastaralého nástroje pro správu verzí:
+cvs -q -z2 update -dP Porty se nacházejí v adresáři /usr/pkgsrc a jsou přehledně umístěny dle jejich účelu. Pokud chci např. nainstalovat editor nano, provedu příkazy:
+cd /usr/pkgsrc/editors/nano
+make install clean V případe odebrání pak:
+make deinstall Pro nastavení konkrétního portu lze přímo upravit soubory Makefile nebo options.mk. To je vhodné spíše pro vývoj či testování, po aktualizaci stromu portů budou oba soubory zase přepsány. Soubory se nacházejí v adresáři portu nebo je možné provádět úpravy centrálně v souboru /etc/mk.conf (zachová se i po aktualizaci stromu portů). Vzhledem k výkonu počítačů, kde NetBSD testuji, se práci s porty snažím maximálně vyhnout.
+Nastavení pro běžnou práci
+V Linuxu používám shell Bash a rád bych jej zprovoznil i zde. Systémy BSD jej ve výchozím nastavení nenabízejí, takže je nutná ruční instalace. Zde využívám kombinaci dokumentace a umělé inteligence (dále jen áíčko), která je dle mých zkušeností ideální.
+V terminálu se potřebuji přihlásit jako správce root. Je nutné nainstalovat balíček s názvem bash, zkontrolovat, zda byla přidána vhodná cesta do souboru /etc/shells a nakonec pomocí příkazu usermod změnit shell pro aktuálního uživatele (v mém případě  orel):
+su root
+pkgin install bash
+echo "/usr/pkg/bin/bash" >> /etc/shells
+usermod -s /usr/pkg/bin/bash orel Při dalším přihlášení (ať již v textové konzoli, přepnutí přes su - orel nebo při startu v XDM) mám k dispozici Bash. Uživatelské aliasy, cesty a proměnné si od této chvíle mohu konfigurovat ve standardních souborech /home/orel/.bashrc a  /home/orel/.bash_profile.
+Instalace programu sudo, která mi dočasně umožní získat práva správce systému, není složitá. Opět se přihlásím jako uživatel root, nainstaluji balíček sudo, přidám uživatele do potřebných skupin a pomocí příkazu visudo odkomentuji řádek  %wheel ALL=(ALL) ALL:
+su root
+pkgin install sudo
+usermod -G wheel,operator orel
+visudo Oblíbil jsem si správce oken Mate. Jednoduché prostředí navazuje na GNOME 2 a šikovné aplikace Engrampa pro správu archivů, Pluma jako lehký programátorský textový editor, Caja emulující Průzkumníka ze světa Windows, Eye of Mate jako prohlížeč obrázků a prohlížeč pdf souborů Atril mi plně vyhovují.
+Instalace v systémech BSD je však obecně složitější než v Linuxu. Je potřeba nainstalovat metabalík Mate, povolit potřebné systémové služby pro toto prostředí v souboru /etc/rc.conf a vytvořit skript pro start grafické relace.
+Mate mohu spouštět z příkazové řádky pomocí startx (ten pracuje se souborem .xinitrc) nebo správcem XDM (ten načítá soubor .xsession, který musí být spustitelný). Zbývá nastavit češtinu. Jako root upravuji soubor  /etc/rc.conf:
+echo dbus=YES >> /etc/rc.conf
+echo rpcbind=YES >> /etc/rc.conf
+echo dbus=YES >> /etc/rc.conf
+echo famd=YES >> /etc/rc.conf
+echo xdm=YES >> /etc/rc.conf Poté vložím celý obsah jako uživatel do souboru /home/orel/.xsession:
+#!/bin/sh
+export PATH=/usr/pkg/bin:/usr/pkg/sbin:$PATH
+export XDG_DATA_DIRS=/usr/pkg/share:$XDG_DATA_DIRS
+# Nastavení českého jazyka
+export LANG=cs_CZ.UTF-8
+export LC_ALL=cs_CZ.UTF-8
+# Česká klávesnice pro X11
+setxkbmap cz
+# Korektní inicializace D-Bus relace
+if [ -x /usr/pkg/bin/dbus-launch ]; then
+    eval `/usr/pkg/bin/dbus-launch --sh-syntax --exit-with-session`
+fi
+# Spuštění MATE v relaci ConsoleKit (umožní MATE ovládat napájení)
+exec ck-launch-session /usr/pkg/bin/mate-session Nakonec v terminálu nastavím příznak souboru jako spustitelný:
+chmod +x ~/.xsession Zde může dojít k mnoha chybám v závislosti na použitém hardwaru. NetBSD nenabízí živou distribuci, která pomůže s otestováním kompatibility. Setkal jsem se s problémy typu zablokovaný přístup k X11 socketu v adresáři /tmp, nekorektním exportem proměnných relace D-Bus, kterou Mate využívá nebo s odlišným chováním startx a XDM. Zde opět výborně pomůže vhodný dotaz na áíčko, dobře známé logování a hledání příčin různých chyb.
+Některé součásti Mate, např. Statistika napájení nebo Aplikace spuštěné po přihlášení, mi nefungují a otevírané okno s těmito aplikacemi jen problikne. Nepodařilo se mi uspokojivě zprovoznit automatické připojení externích disků, proto využívám terminál, kde zjistím název externího zařízení, název oddílu, v mém případě NTFS, vytvořím adresář pro připojení externího disku, upravím konfigurační soubor /etc/sysctl.conf, s diskem pracuji a nakonec jej korektně odpojím:
+echo "net.inet.tcp.sendbuf_max=16777216" >> /etc/sysctl.conf
+echo "net.inet.tcp.recvbuf_max=16777216" >> /etc/sysctl.conf
+echo "kern.sbmax=16777216" >> /etc/sysctl.conf
+sysctl hw.disknames
+disklabel sd1
+mkdir -p /mnt/usb
+ntfs-3g /dev/sd1e /mnt/usb
+umount /mnt/usb V tomto případě je krásně demonstrována bezpečnostní politika NetBSD. Bez zápisu do souboru /etc/sysctl.conf dostávám chybové hlášení:
+ntfs-3g: perfuse open: setsockopt SO_SNDBUF to 2161688 failed: No buffer space available
+Áíčko mi vysvětlí, že se jedná o omezení výše limitu vyrovnávací paměti. S podobnými odlišnostmi oproti Linuxu jsem se setkal i jinde, s tím musím počítat.
+Proti Linuxu nemám v Mate možnost restartu či vypnutí počítače, i když jsem běžného uživatele umístil do skupiny wheel a operator. Parádní vysvětlení opět připravilo áíčko, cituji: NetBSD nemá linuxový systemd-logind (který Mate často na pozadí očekává). Někdy se stane, že i přes správný Polkit zůstanou systémová tlačítka Vypnout/Restartovat v menu zašedlá nebo schovaná, protože Mate nenašlo preferovaného démona pro správu relace. V takovém případě...
+(Pokracovani na webu)

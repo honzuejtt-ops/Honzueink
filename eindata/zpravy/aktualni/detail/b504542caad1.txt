@@ -1,0 +1,272 @@
+Na dvojici článků Dlouho očekávaná podpora SIMD operací v programovacím jazyku Go a Dlouho očekávaná podpora SIMD operací v programovacím jazyku Go (2. část) dnes navážeme a celé téma o podpoře SIMD operací v programovacím jazyku Go dokončíme. Zabývat se budeme popisem (stále ještě experimentálního) balíčku nazvaného simd, který je dostupný v Go verze 1.26 (i když v tomto případě s omezeními) a především pak v Go 1.27.
+Balíček simd nabízí SIMD operace prováděné s vektory, jejichž bitová šířka (a tím i počet prvků) je odvozena z možností použité architektury mikroprocesorů. To tedy znamená, že například u mikroprocesorů s podporou AVX či AVX-2 budou podporovány vektory o šířce 256 bitů, zatímco v případě AVX-512 bude možné použít vektory o šířce 512 bitů. A samozřejmě je možné v runtime zjistit, jaká je skutečná šířka vektorů.
+Datové typy definované v rámci balíčku simd
+V balíčku simd je definováno deset datových typů představujících vektory o určité délce (k tomu se ještě vrátíme) v nichž jsou uloženy prvky různých typů. Povšimněte si, že názvy těchto typů (na rozdíl od typů definovaných v balíčku simd/archsimd) neobsahují specifikaci počtu uložených prvků, ale pouze jejich typy:
+Další čtyři datové typy reprezentují takzvané masky s uloženými bity resp. z pohledu vývojáře s pravdivostními hodnotami. Masky jsou používány v některých operacích, s nimiž se seznámíme v navazujících kapitolách. Jednotlivé typy reprezentující masky se liší podle toho, s jakými vektory je možné je použít:
+Součet dvou vektorů: rozdíl mezi použitím balíčku simd a simd/archsimd
+Praktickou část dnešního článku začneme typickým demonstračním příkladem, který se velmi často používá při vysvětlování SIMD operací. Pokusíme se o provedení součtu dvou vektorů stejného typu. Součet vektorů je realizován snadno – je proveden součtem odpovídajících si prvků vektorů. Připomeňme si, že v případě přímého použití balíčku simd/archsimd může realizace této úlohy vypadat následovně:
+package main
+ 
+import (
+        "fmt"
+        "simd/archsimd"
+)
+ 
+func AddTwoVectors(v1, v2 archsimd.Float32x8, result []float32) {
+        // SIMD operace součtu prvků vektorů
+        v3 := v1.Add(v2)
+ 
+        // zápis prvků vektoru do řezu
+        v3.Store(result)
+}
+ 
+func main() {
+        // konstrukce a inicializace pole s odvozením počtu prvků
+        a1 := [...]float32{1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0}
+        a2 := [...]float32{0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5}
+ 
+        // výpis obsahu polí
+        fmt.Println("a1", a1)
+        fmt.Println("a2", a2)
+ 
+        // převod pole na vektor s osmi prvky
+        v1 := archsimd.LoadFloat32x8Array(&a1)
+        v2 := archsimd.LoadFloat32x8Array(&a2)
+ 
+        // konstrukce řezu
+        result := make([]float32, 8)
+        AddTwoVectors(v1, v2, result)
+ 
+        // výpis obsahu řezu
+        fmt.Println("a1+a2", result)
+}
+Přepis výše uvedeného demonstračního příkladu do takové podoby, aby se používal balíček simd, je snadný. Struktura celého příkladu zůstane prakticky stejná, pouze se při převodu řezu (původně pole) na vektor namísto metody LoadFloat32×8Array použije metoda nazvaná LoadFloat32s. A pochopitelně se pracuje s odlišnými datovými typy, což je však ve zdrojovém kódu do značné míry skryto díky tomu, že se využívá typová inference:
+package main
+ 
+import (
+        "fmt"
+        "simd"
+)
+ 
+func main() {
+        // konstrukce a inicializace řezu
+        s1 := []float32{1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0}
+        s2 := []float32{0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5}
+ 
+        // výpis obsahu řezů
+        fmt.Println("s1   ", s1)
+        fmt.Println("s2   ", s2)
+ 
+        // převod řezu na vektor
+        v1 := simd.LoadFloat32s(s1)
+        v2 := simd.LoadFloat32s(s2)
+ 
+        // SIMD operace součtu prvků vektorů
+        v3 := v1.Add(v2)
+ 
+        // konstrukce řezu
+        result := make([]float32, v3.Len())
+ 
+        // zápis prvků vektoru do řezu
+        v3.Store(result)
+ 
+        // výpis obsahu řezu
+        fmt.Println("s1+s2", result)
+}
+Ověříme si výsledky výpočtu součtu vektorů:
+$ ./go run float32_add.go
+ 
+s1    [1 2 3 4 5 6 7 8]
+s2    [0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5]
+s1+s2 [1.5 2.5 3.5 4.5 5.5 6.5 7.5 8.5]
+Operace prováděné se všemi prvky vektoru
+S vektory lze provádět i různé unární operace (tedy operace s jediným operandem), přičemž každá taková operace se volá jako metoda vektoru a výsledkem je nový vektor. Připomeňme si, že v balíčku simd/archsimd je podporováno celkem pět unárních operací s prvky vektorů:
+V balíčku simd z nějakého důvodu chybí operace pro výpočet převrácené hodnoty a kombinace výpočtu převrácené hodnoty z odmocniny hodnoty prvku, takže nám zbývá pouze:
+Všechny tři výše zmíněné operace jsou použity v následujícím demonstračním příkladu:
+package main
+ 
+import (
+        "fmt"
+        "simd"
+)
+ 
+func main() {
+        // konstrukce a inicializace řezu
+        s := []float32{-4.0, -3.0, -2.0, -1.0, 1.0, 2.0, 3.0, 4.0}
+ 
+        // výpis obsahu řezu
+        fmt.Println("s      ", s)
+ 
+        // převod řezu na vektor
+        v := simd.LoadFloat32s(s)
+ 
+        // konstrukce řezu pro uložení výsledků
+        result := make([]float32, v.Len())
+ 
+        // SIMD operace výpočtu absolutní hodnoty
+        v2 := v.Abs()
+ 
+        // zápis prvků vektoru do řezu
+        v2.Store(result)
+ 
+        // výpis obsahu řezu
+        fmt.Println("abs(s) ", result)
+ 
+        // SIMD operace výpočtu hodnoty s opačným znaménkem
+        v3 := v.Neg()
+ 
+        // zápis prvků vektoru do řezu
+        v3.Store(result)
+ 
+        // výpis obsahu řezu
+        fmt.Println("neg(s) ", result)
+ 
+        // SIMD operace výpočtu druhé odmocniny
+        v4 := v.Sqrt()
+ 
+        // zápis prvků vektoru do řezu
+        v4.Store(result)
+ 
+        // výpis obsahu řezu
+        fmt.Println("sqrt(s)", result)
+}
+Samozřejmě si zkontrolujeme i způsob výpočtu:
+$ go run float32_unary.go
+ 
+s       [-4 -3 -2 -1 1 2 3 4]
+abs(s)  [4 3 2 1 1 2 3 4]
+neg(s)  [4 3 2 1 -1 -2 -3 -4]
+sqrt(s) [NaN NaN NaN NaN 1 1.4142135 1.7320508 2]
+Operace s dvojicemi vektorů stejného typu
+Ve stručnosti si taktéž ukážeme další binární operace prováděné s odpovídajícími si prvky dvou vektorů (prozatím jsme si totiž ukázali pouze operaci součtu). Tyto operace jsou opět dostupné přes metody, které mají jeden parametr (druhý vektor) a návratovou hodnotou je nový vektor stejného typu i délky s výsledky:
+Realizace těchto operací je snadná, což je ostatně patrné i při pohledu na zdrojový kód dalšího demonstračního příkladu:
+package main
+ 
+import (
+        "fmt"
+        "simd"
+)
+ 
+func main() {
+        // konstrukce a inicializace řezu
+        s1 := []float32{1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0}
+        s2 := []float32{0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5, 0.5}
+ 
+        // výpis obsahu řezů
+        fmt.Println("s1        ", s1)
+        fmt.Println("s2        ", s2)
+ 
+        // převod řezu na vektor
+        v1 := simd.LoadFloat32s(s1)
+        v2 := simd.LoadFloat32s(s2)
+ 
+        // konstrukce řezu pro uložení výsledků
+        result := make([]float32, v1.Len())
+ 
+        // SIMD operace součtu prvků vektorů
+        v3 := v1.Add(v2)
+ 
+        // zápis prvků vektoru do řezu
+        v3.Store(result)
+ 
+        // výpis obsahu řezu
+        fmt.Println("s1+s2     ", result)
+ 
+        // SIMD operace rozdílu prvků vektorů
+        v4 := v1.Sub(v2)
+ 
+        // zápis prvků vektoru do řezu
+        v4.Store(result)
+ 
+        // výpis obsahu řezu
+        fmt.Println("s1-s2     ", result)
+ 
+        // SIMD operace součinu prvků vektorů
+        v5 := v1.Mul(v2)
+ 
+        // zápis prvků vektoru do řezu
+        v5.Store(result)
+ 
+        // výpis obsahu řezu
+        fmt.Println("s1*s2     ", result)
+ 
+        // SIMD operace podílu prvků vektorů
+        v6 := v1.Div(v2)
+ 
+        // zápis prvků vektoru do řezu
+        v6.Store(result)
+ 
+        // výpis obsahu řezu
+        fmt.Println("s1/s2     ", result)
+ 
+        // SIMD operace výběru větších prvků vektorů
+        v7 := v1.Max(v2)
+ 
+        // zápis prvků vektoru do řezu
+        v7.Store(result)
+ 
+        // výpis obsahu řezu
+        fmt.Println("max(s1/s2)", result)
+ 
+        // SIMD operace výběru menších prvků vektorů
+        v8 := v1.Min(v2)
+ 
+        // zápis prvků vektoru do řezu
+        v8.Store(result)
+ 
+        // výpis obsahu řezu
+        fmt.Println("min(s1/s2)", result)
+}
+Ověříme si výsledky všech implementovaných binárních operací:
+$ ./go run float32_binary.go
+ 
+s1         [1 2 3 4 5 6 7 8]
+s2         [0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5]
+s1+s2      [1.5 2.5 3.5 4.5 5.5 6.5 7.5 8.5]
+s1-s2      [0.5 1.5 2.5 3.5 4.5 5.5 6.5 7.5]
+s1*s2      [0.5 1 1.5 2 2.5 3 3.5 4]
+s1/s2      [2 4 6 8 10 12 14 16]
+max(s1/s2) [1 2 3 4 5 6 7 8]
+min(s1/s2) [0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5]
+Pro zajímavost si ještě ověřme operaci podílu nulou (včetně 0/0):
+package main
+ 
+import (
+        "fmt"
+        "simd"
+)
+ 
+func main() {
+        // konstrukce a inicializace řezu
+        s1 := []float32{0.0, 1.0, -1.0, 1.0, 0.0, 1.0, -1.0, 0.0}
+        s2 := []float32{1.0, 1.0, 1.0, 1.0, 0.0, 0.0, 0.0, 0.0}
+ 
+        // výpis obsahu řezů
+        fmt.Println("s1   ", s1)
+        fmt.Println("s2   ", s2)
+ 
+        // převod řezu na vektor
+        v1 := simd.LoadFloat32s(s1)
+        v2 := simd.LoadFloat32s(s2)
+ 
+        // SIMD operace podílu prvků vektorů
+        v3 := v1.Div(v2)
+ 
+        // konstrukce řezu
+        result := make([]float32, v3.Len())
+ 
+        // zápis prvků vektoru do řezu
+        v3.Store(result)
+ 
+        // výpis obsahu řezu
+        fmt.Println("s1+s2", result)
+}
+Ani v tomto případě nedojde k běhové chybě, ale příslušné prvky vektoru s výsledky budou obsahovat buď kladné či záporné nekonečno, nebo v případě podílu 0/0 hodnotu NaN:
+$ go run float32_div.go
+ 
+s1    [0  1 -1  1  0    1   -1   0]
+s2    [1  1  1  1  0    0    0   0]
+s1+s2 [0  1 -1  1 NaN +Inf -Inf NaN]
+Porovnání dvou vektorů
+Odpovídající si prvky dvou vektorů stejného typu je možné porovnat. Výsledkem porovnání je sada pravdivostních hodnot, která se uloží do masky (těm...
+(Pokracovani na webu)

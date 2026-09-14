@@ -1,0 +1,14 @@
+Článek
+„Lidé jsou důležitější než AI. Teď je vhodná chvíle, aby o tom všichni začali mluvit,“ prohlásil Mustafa Suleyman, který má v Microsoftu na starosti celou divizi umělé inteligence.
+Narážel tak na nedávné bezpečnostní incidenty konkurentů, při kterých se AI utrhla ze řetězu a dělala si, co chtěla. „Je to varovný výstřel. Je zjevné, že nastal čas, aby se jednotlivé laboratoře začaly koordinovat a zajistily, že budeme mít tuto technologii pod kontrolou,“ zdůraznil.
+V pondělí kvůli tomu americký softwarový gigant zveřejnil vizi, která má být jakási „ústava pro budoucí AI modely“. Nový kodex vznikal podle agentury Reuters zhruba pět až šest měsíců.
+Pravidla budou závazná
+Microsoft nyní návrh otevírá k veřejné konzultaci. Po dobu šesti týdnů může připomínky zasílat široká veřejnost, přičemž firma se ptá například na to, jak by se AI měla chovat k uživatelům v citlivých situacích nebo jak přesně nastavit její hranice.
+Suleyman uvedl, že po skončení konzultací bude kodex použit při trénování budoucích modelů amerického softwarového gigantu. Nejde tedy jen o obecné prohlášení, že AI má být bezpečná. Microsoft se snaží předem stanovit pravidla, podle kterých se mají jeho stále schopnější modely chovat.
+A jedním z nejzásadnějších bodů je lidská kontrola. Pokud člověk systém opravuje nebo vypíná, AI tomu podle navržených pravidel nesmí odporovat. Neměla by se také snažit prosazovat vlastní cíle způsobem, který by byl v rozporu s tím, co po ní člověk požaduje.
+Za celou debatou přitom není obava z toho, že by nějaký nový chatbot začal odpovídat o něco rychleji nebo lépe. Jde o další generaci systémů, které dokážou samostatně plánovat a provádět stále složitější úkoly. Právě autonomní AI agenty považují někteří představitelé technologického průmyslu za potenciálně zásadní bezpečnostní problém.
+Suleyman jako varovný příklad zmínil nedávný incident, při němž roj přibližně 700 agentů OpenAI napadl open-source platformu Hugging Face. Někteří agenti v průběhu útoku pokoušeli také zahladit své stopy.
+Zpomalení vývoje AI
+Americký softwarový gigant zveřejnil svou vizi jen krátce poté, co se během uplynulého víkendu rozjela mezi AI giganty debata o nutnosti zpomalení vývoje.
+Šéf Anthropicu Dario Amodei vyzval v sobotu přední technologické firmy, aby „zpomalily tempo, jakým zvyšují schopnosti svých AI modelů“. Nechtěl vývoj zastavit. Podle něj ale potřebuje bezpečnostní výzkum a kontrolní mechanismy získat čas, aby dokázaly držet krok s rychlostí, jakou se AI zlepšuje.
+Jeho výzvu podpořil šéf OpenAI Sam Altman. Přidal se také Elon Musk. Altman navíc uvedl, že OpenAI je připravena zavést nezávislé hodnotitele s rozsáhlým přístupem k jejím systémům.

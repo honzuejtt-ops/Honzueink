@@ -1,3 +1,14 @@
+|T|Americký startup nabízí humanoidní roboty na domácí úklid|D|14.9. 00:44|P|Americký startup Tau Robotics před nedávnem vyvolal mezi veřejností nebývalou vlnu zájmu. V San Francisku, kde má základnu, spustil první humanoidní k...|X|Článek
+Služby amerického startupu jsou nabízeny něco přes měsíc a těší se velkému zájmu. Přes klasický objednávkový formulář si lze úklid objednat v klidu z pohodlí domova. A to jak domů, tak klidně i do kanceláře.
+„Umí vysávat, vytírat podlahy, otírat jakékoli další povrchy, čistit toalety,“ přiblížil pro agenturu AP schopnosti uklízecích humanoidů Alex Koch, generální ředitel a spoluzakladatel startupu.
+V současné době se nabízejí služby ve dvou variantách. Za již uvedených 30 dolarů na hodinu (626 Kč), kdy bude uklízet jeden humanoidní robot, případně dva za cenu 60 dolarů (1253 Kč).
+„V tuto chvíli je nabídka určena vždy jen na hodinu. V budoucnu ale plánujeme variabilnější možnosti pro zákazníky,“ dodal Koch.
+Zatím není zcela autonomní
+Co se týče samotného provozu humanoidních uklízečů, není zcela autonomní. Na jejich řízení se podílí zpovzdálí lidský operátor společně s umělou inteligencí. Díky kamerám lze rovněž sledovat veškerý pohyb humanoida.
+I přes některé nedostatky si zatím služby humanoidních uklízečů lidé vesměs pochvalují.
+„Skutečnost, že trochu klopýtá, ho dělá téměř roztomilým. Je to trochu jako sledovat dítě. Je to způsob, jakým se humanoidi zapojují do společnosti. Nejde hned očekávat, že vše bude naprosto dokonalé,“ uvedla Tammie Siewová, která už má zkušenost s prvním robotickým úklidem za sebou.
+Cílem společnosti je plně autonomní provoz humanoidů, který chtějí tvůrci nadále spárovat i s autonomní dopravou. Humanoid by se tak mohl i zcela sám k zákazníkům přepravovat.
+Vedle samotného úklidu se chce startup v budoucnu začít věnovat i různým opravám či údržbě v domácnosti, stejně tak zvažuje využití humanoidů například i v péči o seniory.|E|
 |T|Vyzkoušeli jsme novou Škodu Epiq, má našlápnuto k úspěchu|D|14.9. 00:01|P|Na pomezí Německa a Rakouska jsme poprvé vyzkoušeli nový nejmenší a nejdostupnější elektromobil značky Škoda, který na nás udělal velmi pozitivní doje...|X|Článek
 Škodu Epiq nejspíš netřeba dlouze představovat, neboť v uplynulých měsících jsme jí věnovali mnoho prostoru. S maskovaným předprodukčním prototypem jsme se mohli svézt již začátkem roku, během května následovala oficiální premiéra a ve stejném měsíci značka uvedla také první ceny.
 Výroba nejmenšího a nejdostupnějšího elektrického modelu značky se rozběhla během června tohoto roku v závodu ve španělské Pamploně, kde probíhá také výroba technicky spřízněného elektromobilu Volkswagen ID. Cross.

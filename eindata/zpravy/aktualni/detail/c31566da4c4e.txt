@@ -1,0 +1,49 @@
+Představte si, že si chcete koupit novou kuchyň. Můžete ukázat na tu nejlevnější a pak nadávat na všechno, co vás u jejího používání v průběhu času naštve.
+Nebo si můžete všechno pořádně promyslet, protože v kuchyni trávíte hodně času. Co vám na současné kuchyni vadí a proč? Jak se v kuchyni pohybujete? Co nechcete mít daleko od pracovní desky? Takovému postupu se v IT říká product discovery.
+Také potřebujete vědět, kolik máte prostoru, kde je voda, odkud vede elektřina, jaké spotřebiče budete chtít připojit a jaká omezení z toho plynou. To je vlastně business analýza.
+Následně oslovíte několik firem s dotazem, kdy a za kolik by vám takovou kuchyň byly schopné dodat, případně položíte zvídavé dotazy, například jak vyřešit vestavěné spotřebiče a jaká jsou doporučení odborníků. To je předběžná tržní konzultace.
+A pokud si projdete recenze a reference, vlastně jste se podívali na kvalifikační kritéria.
+Vyžádání konkrétních nabídek od kuchyňských studií a truhlářství je de facto zadávací řízení. Všechny nabídky nakonec porovnáte a vyhodnotíte, což už je ten nejjednodušší krok – lajky na sociálních sítích podle svých preferencí dnes také rozdává každý.
+Ve veřejném sektoru je celý proces samozřejmě trochu komplikovanější. Státní zaměstnanci nespravují svoje peníze, a osobní preference zákon neumožňuje. Ale princip hledání kvalitní služby bez nutnosti brzy řešit upadlá dvířka od skříňky je vlastně stejný.
+Přitom ani stát se nemusí řídit pouze podle nejnižší ceny. Kvalitativní kritéria v hodnocení připouští jak Ministerstvo pro místní rozvoj, tak Digitální a informační agentura. Transparentní soutěž, ve které cena není jediným hlediskem, podporují rovněž stanoviska a výroky Úřadu pro ochranu hospodářské soutěže či Nejvyššího kontrolního úřadu. A to včetně jisté míry subjektivního hodnocení, které musí být samozřejmě dobře odůvodněno.
+Příklad 1: Jak ministerstvo kultury přilákalo deset zájemců
+Ministerstvo kultury při přípravě webové komunikační platformy Kreativní Česko za více než 12 milionů korun postupovalo od začátku jinak, než bylo u veřejných institucí běžné. Do výběrového řízení se nakonec přihlásilo deset zájemců, zatímco jindy se na obdobný typ zakázky přihlásí třeba jen jeden účastník. A devět z deseti nabídek bylo již na první pohled velmi kvalitních.
+Když přišla na řadu fáze definování kritérií a požadavků, uspořádalo ministerstvo předběžné tržní konzultace, díky kterým získalo hlubší porozumění, co trh nabízí. Takové konzultace totiž pomáhají optimalizovat zadání, snižovat rizika, rozšiřovat možná řešení a tím pomáhají sladit záměr a cíle projektu s nabízenými řešeními.
+Hodnoticí kritéria ministerstvo nastavilo tak, aby o výsledku nerozhodovala pouze nejnižší cena. Ta měla váhu 30 %, kvalita navrženého řešení 50 % a technické zajištění vývojového procesu 20 %. Největší důraz tak ministerstvo kladlo na samotnou kvalitu řešení, kterou posuzovalo ve třech konkrétních oblastech: design a uživatelskou přívětivost, technické řešení včetně správy obsahu a administrace a nakonec provoz, přenositelnost a bezpečnost webu.
+Ministerstvo také samostatně hodnotilo, jak dodavatelé technicky zajistí agilní vývoj (flexibilní způsob tvorby softwaru, který projekt rozděluje na kratší a pravidelné cykly) – například testovací prostředí, nasazování nových verzí, správu zdrojových kódů a nástroje pro řízení projektových úkolů.
+Díky tomu mohla komise porovnat nejen cenu, ale také použitelnost, technickou kvalitu, bezpečnost a způsob budoucího rozvoje nabízených řešení.
+Díky širší konkurenci komise nevybírala pouze mezi několika nabídkami splňujícími minimální požadavky, ale mohla skutečně porovnat rozdílné přístupy k UX, technickému řešení, bezpečnosti i organizaci vývoje a vybrat řešení s nejvyšší přidanou hodnotou. Navíc se neobjevil žádný protest od neúspěšných dodavatelů, což potvrzuje objektivnost hodnocení a dodává důvěryhodnost celému procesu.
+„Z pohledu veřejných zakázek úspěšnost a kvalita projektu mnohdy souvisí s úrovní jeho přípravy. Pokud pro svůj projekt získáte schopný tým, pak je to významným krokem na cestě k tomu, aby byl projekt připraven a následně i realizován kvalitně. U nás se sešel tým – odborný útvar, externí pomoc a důslední zakázkáři – který se na takovém úspěšném a kvalitním projektu podílet chtěl,” řekl ve studii pro tento případ Milan Beneš, který tehdy na ministerstvu působil v oddělení veřejných zakázek.
+Příklad 2: Žďár nad Sázavou si nejdříve ověřil fungování nabízených řešení v praxi
+Když město Ždár nad Sázavou modernizovalo komplexní informační systém za 15 milionů korun, nejprve si společně s odborníky ujasnilo, jaké potřeby má nová platforma skutečně řešit. Využilo předběžné tržní konzultace k ověření svých předpokladů.
+Díky diskuzi s dodavateli se podařilo ještě před vyhlášením soutěže prověřit technické požadavky, prodiskutovat optimální postup migrace dat, integraci různých agend i možnosti přechodu na webovou aplikaci. A na základě poznatků z předběžných tržních konzultací zadavatel následně upravil a rozšířil požadavky na přestupkové řízení.
+Po vyhodnocení nabídek musel vybraný dodavatel ještě před uzavřením smlouvy předvést alespoň demoverzi nabízeného informačního systému. Město si tak mohlo prakticky ověřit, že řešení skutečně zvládá klíčové požadované procesy – od práce s rozpočtem a fakturami přes schvalovací workflow až po automatizované zpracování přestupků a předávání dat mezi jednotlivými agendami.
+Příklad 3: Vysočina získala nejlepší nabídku za nejnižší cenu
+O kvalitní přípravě veřejných zakázek se často mluví především v souvislosti s předběžnými tržními konzultacemi jako v obou příkladech výše. Jsou užitečným nástrojem, ale nejsou jedinou cestou.
+Příprava nového turistického portálu organizace Vysočina Tourism ukazuje, že stejně důležitá je práce se samotným zadáním. Krajská příspěvková organizace kladla důraz na nastavení soutěže tak, aby dodavatelé soutěžili především kvalitou navrženého řešení, nikoliv pouze cenou. Tomu odpovídala i hodnotící kritéria – kvalita návrhu, porozumění potřebám zadavatele i celková koncepce řešení.
+Nabídka s nejvyšším počtem bodů za kvalitu nakonec zároveň byla i cenově nejvýhodnější.
+Kvalitativní hodnocení samozřejmě nepovede vždy k nejnižší ceně, ale pokud je soutěž dobře připravená a firmy mají prostor soutěžit kvalitou, nemusí být hospodárnost v protikladu.
+Jak přemýšlí kvalitní dodavatelé
+Výše uvedené příklady spojuje zájem dodavatelů do soutěže vůbec vstoupit. Tím vzniká konkurence, která podporuje kvalitu a zároveň stlačuje cenu dolů.
+Ukazuje se, že příprava výběrového řízení je nejdůležitější fáze. Ve chvíli, kdy je tendr vypsaný, si totiž firmy položí otázku: „Má vůbec smysl se o zakázku ucházet?”
+Připravit kvalitní nabídku do větší IT zakázky znamená investovat desítky až stovky hodin práce. Zapojit obchodníky, analytiky, architekty, vývojáře a projektové manažery. Je to čas, který nemůže firma věnovat jiným zákazníkům nebo jiným příležitostem.
+Kvalitní dodavatelé se proto nerozhodují jen podle velikosti zakázky. Ptají se:
+- Rozumíme tomu, co zadavatel skutečně potřebuje?
+- Jsou jeho očekávání realistická?
+- Jsou pravidla soutěže srozumitelná a férová?
+- Máme šanci uspět díky kvalitě našeho řešení?
+- Bude druhá strana partnerem, se kterým bude možné projekt úspěšně realizovat?
+V tu chvíli se rozhoduje o tom, kolik kvalitních nabídek nakonec zadavatel obdrží. Pravidla tak musí být srozumitelná, předvídatelná a férová. Cílem není soutěž jen formálně uskutečnit, ale skutečně najít nejlepší řešení. Na tom by měly mít zájem obě strany – zadavatel i dodavatel.
+Jak by měli přemýšlet zadavatelé
+Otázky by si proto před spuštěním soutěže měl klást i zadavatel. Jak je patrné z uvedených příkladů, vyplatí se to. Smyslem není co nejpodrobněji popsat budoucí řešení, ale co nejlépe definovat potřebu.
+- Jaký problém vlastně chceme řešit?
+- Jsou naše očekávání realistická?
+- Neomezujeme konkurenci více, než je nutné?
+- Odpovídá naše představa tomu, co je skutečně možné?
+Zadavatelé dnes mohou využít řadu nástrojů, jak svou představu zpřesnit. Nejznámějším jsou předběžné tržní konzultace, jejich smyslem není někoho zvýhodnit, ale lépe porozumět trhu, odstranit zbytečné bariéry a připravit soutěž tak, aby se do ní mohl zapojit co nejširší okruh kvalitních dodavatelů.
+Stejně důležité jsou i podmínky soutěže. Přiměřené kvalifikační požadavky, vyvážené smluvní podmínky nebo transparentní způsob hodnocení jsou signálem, že cílem je vytvořit prostředí, ve kterém může zvítězit nejlepší řešení.
+Změna stojí čas
+Úspěšné IT zakázky nevznikají náhodou ani nejsou výsledkem štěstí. Vznikají díky tomu, že se jejich přípravě věnoval čas a úsilí.
+Co mají výše uvedené příklady dobré praxe společného? Veřejné instituce místo rozsáhlých technických analýz přesně definovaly cíle projektu a potřeby uživatelů, držely produktové know-how u sebe, záměr s předstihem komunikovaly s trhem a ve finály vybraly kvalitní řešení za rozumnou cenu.
+Změna stojí čas a energii, ale počáteční zvýšené úsilí se vrátí už v průběhu realizace tendru a bohatě na konci výběrového řízení, protože většina rizik a úskalí eliminovalo správně nastavené řízení.
+Pokud se poctivá příprava, otevřená komunikace a ochota naslouchat stanou běžnou součástí IT zakázek, budou z toho těžit stát i dodavatelé, ale především občané, pro které jsou tyto systému vytvářeny.

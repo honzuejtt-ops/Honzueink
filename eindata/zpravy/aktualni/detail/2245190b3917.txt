@@ -1,0 +1,70 @@
+Ve „FreeBSD Handbook“ se píše, že tradičně se v unixových operačních systémech používá pro zálohy příkaz  dump, který se poprvé objevil už v AT&T UNIX v6, tedy v polovině 70. let. K obnově se tehdy používal příkaz restor; jeho výrazně přepracovaný nástupce restore se objevil později v 4.2BSD.
+Co se dozvíte v článku
+Dále se píše, že pro zálohování slouží rovněž příkaz tar, který se objevil v téže době. V knížce Absolute FreeBSD od autora Michaela W. Lucase se rovněž dočteme, že tar vznikl přímo k tomuto účelu, tedy k zálohování unixových operačních systémů.
+V linuxové knížce UNIX and Linux System Administration Handbook od Evi Nemethové se dočteme překvapivě dost informací o používání příkazů dump a tar a o tom, co se hodí v jakém případě. To není malá věc – prošel jsem několik linuxových „biblí“ a často je jakýsi „nadstandard“, že vůbec obsahují kapitolu vyhrazenou zálohování, natož tak obšírnou, jako zde.
+Bohužel ani zde se nevyskytuje dostatečně pokročilý postup pro používání inkrementálních záloh s tarem. Tím jsem se musel prokousat sám a nikde jsem ho v tutoriálech nenašel, což je docela smutné.
+Tar a lineární denní inkrementální zálohy
+Použijeme-li inkrementální zálohy s tarem, nejprve se vytvoří první iniciační archiv, spolu s nímž vznikne i soubor s metadaty (snar), podle kterého se bude při dalších inkrementálních zálohách zjišťovat, které soubory se změnily. Takto by mohl vypadat příkaz v souboru /etc/crontab, který vytváří denní zálohy:
+30 1 * * * root cd /mnt/debian-backup && tar -cz -g "meta.snar" -X "/etc/tar_backup_excludes.txt" -f "backup_$(date +\%Y_\%m_\%d)_root.tar.gz" -C / .
+Vysvětlení parametrů:
+- 30 1 * * * – spuštění příkazu v 1:30 ráno
+- root – spuštění příkazu jako root
+- -c – vytvoří tar
+- -z – provede komprimaci pomocí gzip
+- -g – cesta k souboru s metadaty. Pokud neexistuje, vytvoří se nový
+- -X – cesta k souboru obsahujícímu ignorované adresáře na disku
+- -f – výstupní soubor
+- -C – zálohovaný adresář
+- . – důležitá tečka na konci
+Výše uvedeným způsobem se první den po půlnoci vytvoří první tar nulté úrovně (iniciační), další den tar první úrovně, druhé úrovně, devadesáté úrovně a tak dále.
+S každou novou zálohou se aktualizuje i soubor snar a vznikne i nová úroveň zálohy. Výše uvedené je typický postup, jaký najdeme v tutoriálech na téma, jak zálohovat tarem.
+Tento postup má zásadní slabinu, na kterou přijdeme, až budeme muset dělat obnovu. Za tři měsíce běhu se takto nakupí celkem 90 tarů, resp. 90 úrovní záloh. Když si 90. den odpoledne omylem smažeme adresář /home/debian/Documents, budeme muset vrstvit na sebe 90 tarů, abychom jej plně obnovili:
+cd /
+tar -xzg /dev/null -f "/mnt/debian-backup/backup_2026_01_01_root.tar.gz" -C / ./home/debian/Documents
+tar -xzg /dev/null -f "/mnt/debian-backup/backup_2026_01_02_root.tar.gz" -C / ./home/debian/Documents
+…
+tar -xzg /dev/null -f "/mnt/debian-backup/backup_2026_03_31_root.tar.gz" -C / ./home/debian/Documents
+Vysvětlení přepínačů:
+- -x – extrakce
+- -z – dekomprimace z gzip
+- -g – zapne režim inkrementální obnovy. Při extrakci se původnísoubor snar nepoužívá, proto se jako cesta symbolicky uvede/dev/null ; tar pak při obnově zpracuje inkrementální metadata uložená přímo v archivu a případně smaže soubory, které už v novější vrstvě nemají existovat
+- -f – vstupní tar soubor
+- -C – výstupní adresář
+- ./home/debian/Documents – obnovovaný adresář
+Jak můžete vidět, vrstvit 90 tarů není činnost, kterou bychom chtěli dělat ručně – museli bychom si pro to napsat nějaký skript.
+Tar a denní zálohy inspirované příkazem dump
+Příkaz dump v klasické variantě BSD pracuje s úrovněmi zálohy 0 až 9 a my si můžeme ručně zvolit přepínačem, jaká úroveň zálohy to bude. Tím docílíme nízkého počtu úrovní inkrementálních záloh, což oceníme nejen při obnově. Něco podobného se dá docílit i s tarem – a není se k tomu vůbec snadné dobrat.
+Nejprve vytvoříme ručně iniciační zálohu nulté úrovně:
+tar -cz \
+  -g "/mnt/debian-backup/backup_level_0.snar" \
+  -X "/etc/tar_backup_excludes.txt" \
+  -f "/mnt/debian-backup/backup_initial_2026_root.tar.gz" \
+  -C / .
+Následně zapíšeme do /etc/crontab:
+# Monthly backup – level 1
+30 0 1 * * root cd /mnt/debian-backup && cp "backup_level_0.snar" "backup_level_1.snar" && tar -cz -g "backup_level_1.snar" -X "/etc/tar_backup_excludes.txt" -f "backup_monthly_$(date +\%m)_root.tar.gz" -C / .
+# Daily backup – level 2
+30 1 * * * root cd /mnt/debian-backup && cp "backup_level_1.snar" "backup_level_2.snar" && tar -cz -g "backup_level_2.snar" -X "/etc/tar_backup_excludes.txt" -f "backup_daily_$(date +\%d)_root.tar.gz" -C / .
+Díky tomu, že před každou zálohou vytvoříme kopii snaru předchozí úrovně, zabráníme tomu, aby tar aktualizoval referenční snar předchozí úrovně. Každá měsíční záloha tak bude zálohou první úrovně, která se vztahuje k iniciační záloze, a podobně každá denní záloha bude vždy zálohou druhé úrovně, která se vztahuje k poslední provedené měsíční záloze.
+Když tedy budeme chtít obnovit nechtěně smazaný adresář /home/debian/Documents, stačí nám místo původních devadesáti příkazů zavolat jen tři:
+tar -xzg /dev/null -f "/mnt/debian-backup/backup_initial_2026_root.tar.gz" -C / ./home/debian/Documents
+tar -xzg /dev/null -f "/mnt/debian-backup/backup_monthly_03_root.tar.gz" -C / ./home/debian/Documents
+tar -xzg /dev/null -f "/mnt/debian-backup/backup_daily_31_root.tar.gz" -C / ./home/debian/Documents
+Navíc tímto způsobem se přirozeně docílí toho, že po 12 měsících běhu se začnou měsíční soubory znovu samy přepisovat, tedy začnou bezúdržbově rotovat, aniž bychom komplikovali skript složitými konstrukcemi.
+V neposlední řadě vnímám jako výhodu i to, že denní zálohy mám jen za posledních 31 dní, a chci-li obnovit zálohu staršího data, přecházím na měsíce – přijde mi to smysluplné, protože mě nenapadá, proč bych měl chtít obnovit soubor ze zálohy staré třeba 8 měsíců a 3 dny k tomu. Tedy v takovém dlouhém horizontu nepotřebuji rozlišení po dnech.
+Tedy po jednom roce běhu se oproti „lineární“ inkrementální záloze zredukuje počet tarů z 365 na pouhých 1 + 12 + 31. Dodávám, že kdybych analogickým způsobem přidal ještě hodinovou třetí úroveň záloh, bylo by to přibližně 8760 tarů vs. 1 + 12 + 31 + 24 tarů.
+Dump jako standardní řešení
+Výše popsaný způsob je přibližně analogický k zálohám pomocí dump. Ten bývá v knížkách a návodech vysvětlován v rámci systematického administrátorského postupu práce s datovými páskami.
+Dump má nějaké výhody i nevýhody. Výhody, jako je rychlost a tradičně podobné rozhraní napříč různými unixovými systémy, ocení spíše administrátoři. Mezi nevýhody pro mě patří to, že linuxová varianta příkazu dump nepodporuje například souborový systém FAT, což ovšem nepovažuji za významný problém.
+Větší nevýhoda však pro mě spočívá v tom, že pomocí restore -x sice můžu ze zálohy dumpem obnovit jednotlivý adresář, například  /home/debian/Documents, ale nemůžu tak jednoduše přesně rekonstruovat jeho stav přes několik inkrementálních úrovní včetně smazaných nebo přejmenovaných souborů. Dokumentovaný inkrementální rebuild pomocí restore -r je určený pro obnovu celého souborového systému:
+mkdir -p /tmp/root
+cd /tmp/root
+restore -r -f /mnt/debian-backup/backup_initial_2026_root.dump
+restore -r -f /mnt/debian-backup/backup_monthly_03_root.dump
+restore -r -f /mnt/debian-backup/backup_daily_31_root.dump
+cp -a home/debian/Documents /home/debian/
+Pokud bych používal dump a obnovoval tímto způsobem do /tmp/root umístěného na rootovském oddílu, budu muset mít na tomto oddíle dostatek volného místa, aby se mi tam vešla celá přes dump zálohovaná kopie. Samozřejmě bych mohl k obnově použít jiný dostatečně velký dočasný disk nebo souborový systém.
+Dodávám, že ani výše uvedený postup není podle manuálové stránky příkazu restore ideální – ta by chtěla, abychom vždy pomocí mke2fs vytvořili čistý souborový systém a teprve do něj prováděli obnovu.
+Tar je prostě po ruce
+V Linuxu existuje spousta utilit používaných pro zálohování. Já jsem si vyzkoušel restic, rsync,tar a dump. Každý má svoje silné a slabé stránky, ale tar je předinstalovaný a univerzální. Zamrzelo mě však u něj, že k výše popsanému postupu se nedá moc dobře dobrat z knížek, tutoriálů nebo dokumentace.
+Se znalostí výše uvedeného postupu nám stačí napsat jen pár řádků do konfiguračního souboru crontab a nebudeme už potřebovat další skripty pro obnovu adresářů a souborů.

@@ -1,3 +1,93 @@
+|T|Zálohování domácího serveru pomocí nástrojů tar a dump|D|15.9. 22:00|P|Když jsem si stavěl domácí server s Debianem, tak mě vítr zavál rovněž i do světa FreeBSD, kde jsem se dozvěděl o příkazech tar a dump. Zde jsem se do...|X|Ve „FreeBSD Handbook“ se píše, že tradičně se v unixových operačních systémech používá pro zálohy příkaz  dump, který se poprvé objevil už v AT&T UNIX v6, tedy v polovině 70. let. K obnově se tehdy používal příkaz restor; jeho výrazně přepracovaný nástupce restore se objevil později v 4.2BSD.
+Co se dozvíte v článku
+Dále se píše, že pro zálohování slouží rovněž příkaz tar, který se objevil v téže době. V knížce Absolute FreeBSD od autora Michaela W. Lucase se rovněž dočteme, že tar vznikl přímo k tomuto účelu, tedy k zálohování unixových operačních systémů.
+V linuxové knížce UNIX and Linux System Administration Handbook od Evi Nemethové se dočteme překvapivě dost informací o používání příkazů dump a tar a o tom, co se hodí v jakém případě. To není malá věc – prošel jsem několik linuxových „biblí“ a často je jakýsi „nadstandard“, že vůbec obsahují kapitolu vyhrazenou zálohování, natož tak obšírnou, jako zde.
+Bohužel ani zde se nevyskytuje dostatečně pokročilý postup pro používání inkrementálních záloh s tarem. Tím jsem se musel prokousat sám a nikde jsem ho v tutoriálech nenašel, což je docela smutné.
+Tar a lineární denní inkrementální zálohy
+Použijeme-li inkrementální zálohy s tarem, nejprve se vytvoří první iniciační archiv, spolu s nímž vznikne i soubor s metadaty (snar), podle kterého se bude při dalších inkrementálních zálohách zjišťovat, které soubory se změnily. Takto by mohl vypadat příkaz v souboru /etc/crontab, který vytváří denní zálohy:
+30 1 * * * root cd /mnt/debian-backup && tar -cz -g "meta.snar" -X "/etc/tar_backup_excludes.txt" -f "backup_$(date +\%Y_\%m_\%d)_root.tar.gz" -C / .
+Vysvětlení parametrů:
+- 30 1 * * * – spuštění příkazu v 1:30 ráno
+- root – spuštění příkazu jako root
+- -c – vytvoří tar
+- -z – provede komprimaci pomocí gzip
+- -g – cesta k souboru s metadaty. Pokud neexistuje, vytvoří se nový
+- -X – cesta k souboru obsahujícímu ignorované adresáře na disku
+- -f – výstupní soubor
+- -C – zálohovaný adresář
+- . – důležitá tečka na konci
+Výše uvedeným způsobem se první den po půlnoci vytvoří první tar nulté úrovně (iniciační), další den tar první úrovně, druhé úrovně, devadesáté úrovně a tak dále.
+S každou novou zálohou se aktualizuje i soubor snar a vznikne i nová úroveň zálohy. Výše uvedené je typický postup, jaký najdeme v tutoriálech na téma, jak zálohovat tarem.
+Tento postup má zásadní slabinu, na kterou přijdeme, až budeme muset dělat obnovu. Za tři měsíce běhu se takto nakupí celkem 90 tarů, resp. 90 úrovní záloh. Když si 90. den odpoledne omylem smažeme adresář /home/debian/Documents, budeme muset vrstvit na sebe 90 tarů, abychom jej plně obnovili:
+cd /
+tar -xzg /dev/null -f "/mnt/debian-backup/backup_2026_01_01_root.tar.gz" -C / ./home/debian/Documents
+tar -xzg /dev/null -f "/mnt/debian-backup/backup_2026_01_02_root.tar.gz" -C / ./home/debian/Documents
+…
+tar -xzg /dev/null -f "/mnt/debian-backup/backup_2026_03_31_root.tar.gz" -C / ./home/debian/Documents
+Vysvětlení přepínačů:
+- -x – extrakce
+- -z – dekomprimace z gzip
+- -g – zapne režim inkrementální obnovy. Při extrakci se původnísoubor snar nepoužívá, proto se jako cesta symbolicky uvede/dev/null ; tar pak při obnově zpracuje inkrementální metadata uložená přímo v archivu a případně smaže soubory, které už v novější vrstvě nemají existovat
+- -f – vstupní tar soubor
+- -C – výstupní adresář
+- ./home/debian/Documents – obnovovaný adresář
+Jak můžete vidět, vrstvit 90 tarů není činnost, kterou bychom chtěli dělat ručně – museli bychom si pro to napsat nějaký skript.
+Tar a denní zálohy inspirované příkazem dump
+Příkaz dump v klasické variantě BSD pracuje s úrovněmi zálohy 0 až 9 a my si můžeme ručně zvolit přepínačem, jaká úroveň zálohy to bude. Tím docílíme nízkého počtu úrovní inkrementálních záloh, což oceníme nejen při obnově. Něco podobného se dá docílit i s tarem – a není se k tomu vůbec snadné dobrat.
+Nejprve vytvoříme ručně iniciační zálohu nulté úrovně:
+tar -cz \
+  -g "/mnt/debian-backup/backup_level_0.snar" \
+  -X "/etc/tar_backup_excludes.txt" \
+  -f "/mnt/debian-backup/backup_initial_2026_root.tar.gz" \
+  -C / .
+Následně zapíšeme do /etc/crontab:
+# Monthly backup – level 1
+30 0 1 * * root cd /mnt/debian-backup && cp "backup_level_0.snar" "backup_level_1.snar" && tar -cz -g "backup_level_1.snar" -X "/etc/tar_backup_excludes.txt" -f "backup_monthly_$(date +\%m)_root.tar.gz" -C / .
+# Daily backup – level 2
+30 1 * * * root cd /mnt/debian-backup && cp "backup_level_1.snar" "backup_level_2.snar" && tar -cz -g "backup_level_2.snar" -X "/etc/tar_backup_excludes.txt" -f "backup_daily_$(date +\%d)_root.tar.gz" -C / .
+Díky tomu, že před každou zálohou vytvoříme kopii snaru předchozí úrovně, zabráníme tomu, aby tar aktualizoval referenční snar předchozí úrovně. Každá měsíční záloha tak bude zálohou první úrovně, která se vztahuje k iniciační záloze, a podobně každá denní záloha bude vždy zálohou druhé úrovně, která se vztahuje k poslední provedené měsíční záloze.
+Když tedy budeme chtít obnovit nechtěně smazaný adresář /home/debian/Documents, stačí nám místo původních devadesáti příkazů zavolat jen tři:
+tar -xzg /dev/null -f "/mnt/debian-backup/backup_initial_2026_root.tar.gz" -C / ./home/debian/Documents
+tar -xzg /dev/null -f "/mnt/debian-backup/backup_monthly_03_root.tar.gz" -C / ./home/debian/Documents
+tar -xzg /dev/null -f "/mnt/debian-backup/backup_daily_31_root.tar.gz" -C / ./home/debian/Documents
+Navíc tímto způsobem se přirozeně docílí toho, že po 12 měsících běhu se začnou měsíční soubory znovu samy přepisovat, tedy začnou bezúdržbově rotovat, aniž bychom komplikovali skript složitými konstrukcemi.
+V neposlední řadě vnímám jako výhodu i to, že denní zálohy mám jen za posledních 31 dní, a chci-li obnovit zálohu staršího data, přecházím na měsíce – přijde mi to smysluplné, protože mě nenapadá, proč bych měl chtít obnovit soubor ze zálohy staré třeba 8 měsíců a 3 dny k tomu. Tedy v takovém dlouhém horizontu nepotřebuji rozlišení po dnech.
+Tedy po jednom roce běhu se oproti „lineární“ inkrementální záloze zredukuje počet tarů z 365 na pouhých 1 + 12 + 31. Dodávám, že kdybych analogickým způsobem přidal ještě hodinovou třetí úroveň záloh, bylo by to přibližně 8760 tarů vs. 1 + 12 + 31 + 24 tarů.
+Dump jako standardní řešení
+Výše popsaný způsob je přibližně analogický k zálohám pomocí dump. Ten bývá v knížkách a návodech vysvětlován v rámci systematického administrátorského postupu práce s datovými páskami.
+Dump má nějaké výhody i nevýhody. Výhody, jako je rychlost a tradičně podobné rozhraní napříč různými unixovými systémy, ocení spíše administrátoři. Mezi nevýhody pro mě patří to, že linuxová varianta příkazu dump nepodporuje například souborový systém FAT, což ovšem nepovažuji za významný problém.
+Větší nevýhoda však pro mě spočívá v tom, že pomocí restore -x sice můžu ze zálohy dumpem obnovit jednotlivý adresář, například  /home/debian/Documents, ale nemůžu tak jednoduše přesně rekonstruovat jeho stav přes několik inkrementálních úrovní včetně smazaných nebo přejmenovaných souborů. Dokumentovaný inkrementální rebuild pomocí restore -r je určený pro obnovu celého souborového systému:
+mkdir -p /tmp/root
+cd /tmp/root
+restore -r -f /mnt/debian-backup/backup_initial_2026_root.dump
+restore -r -f /mnt/debian-backup/backup_monthly_03_root.dump
+restore -r -f /mnt/debian-backup/backup_daily_31_root.dump
+cp -a home/debian/Documents /home/debian/
+Pokud bych používal dump a obnovoval tímto způsobem do /tmp/root umístěného na rootovském oddílu, budu muset mít na tomto oddíle dostatek volného místa, aby se mi tam vešla celá přes dump zálohovaná kopie. Samozřejmě bych mohl k obnově použít jiný dostatečně velký dočasný disk nebo souborový systém.
+Dodávám, že ani výše uvedený postup není podle manuálové stránky příkazu restore ideální – ta by chtěla, abychom vždy pomocí mke2fs vytvořili čistý souborový systém a teprve do něj prováděli obnovu.
+Tar je prostě po ruce
+V Linuxu existuje spousta utilit používaných pro zálohování. Já jsem si vyzkoušel restic, rsync,tar a dump. Každý má svoje silné a slabé stránky, ale tar je předinstalovaný a univerzální. Zamrzelo mě však u něj, že k výše popsanému postupu se nedá moc dobře dobrat z knížek, tutoriálů nebo dokumentace.
+Se znalostí výše uvedeného postupu nám stačí napsat jen pár řádků do konfiguračního souboru crontab a nebudeme už potřebovat další skripty pro obnovu adresářů a souborů.|E|
+|T|Softwarová sklizeň (16. 9. 2026): sjednoťte všechny správce balíčků|D|15.9. 22:00|P|Rozjedeme několik kódovacích agentů zároveň, poskládáme lokální vývojové prostředí z jediné aplikace, promluvíme na všechny správce balíčků jedním pří...|X|cezar
+cezar je lokální kokpit pro paralelní běh kódovacích AI agentů. Zadáte úkol, vyberete workflow a agenta; nástroj pak úlohu rozjede ve vlastním gitovém worktree a v prohlížeči živě tečou jednotlivé kroky, volání nástrojů i jejich výsledky, spotřebované tokeny, cena a spotřeba paměti.
+Spustit lze klidně celý stoh úloh, několik jich běží zároveň (ve výchozím stavu dvě) a zbytek stojí ve viditelné frontě, která přežije i restart. Instalace je jediný příkaz: v adresáři repozitáře stačí npx cezar-cli a kokpit naběhne na localhost:4321. Žádné API klíče, žádná databáze; cezar volá agentní CLI, do kterých jste už přihlášeni, takže se platí z vašeho předplatného.
+Workflow je krátké YAML s posloupností agentních kroků a shellových kontrol, kde neúspěšná kontrola umí skočit zpátky na dřívější krok a přilepit svůj výstup do promptu. Agentní backend jde nastavit v konfiguraci, u jednotlivé úlohy i u jednotlivého kroku, což dovolí kombinace typu „naimplementuj Codexem, zkontroluj Claudem"; vedle nich jsou k dispozici experimentální OpenCode a pi.
+Tu samou úlohu lze pustit dvakrát nebo třikrát v oddělených worktree, výsledné diffy porovnat vedle sebe a vybrat vítěze. Nic se přitom nemerguje samo. Stav žije v .ai/cezar/  jako obyčejný JSON, NDJSON a Markdown, a protože kokpit je responzivní webová aplikace nad SSE, dá se cezar postavit na VPS a hlídat frontu z mobilu. Licence je MIT.
+FlyEnv
+FlyEnv je desktopová aplikace, která spravuje kompletní lokální vývojové prostředí na Windows, macOS i Linuxu. Nabízí se jako moderní náhrada XAMPPu, MAMPu, Laragonu nebo Laravel Herdu, ovšem s výrazně širším záběrem než jen PHP. Vše běží nativně na operačním systému, bez kontejnerů. Autor si přitom nehraje na to, že Docker překonal: obě řešení se podle něj částečně překrývají, ale míří jinam.
+Kde je cílem reprodukovatelnost a shoda s produkcí, tam je pořád lepší kontejner; FlyEnv chce naopak ubrat režii při každodenním lokálním vývoji. Seznam toho, co umí nainstalovat a hlídat, je dlouhý: běhová prostředí PHP, Node.js, Python, Java, Go, .NET, Ruby, Rust, Bun, Deno i Zig, databáze MySQL, MariaDB, PostgreSQL, MongoDB, ClickHouse, Neo4j a Qdrant, servery Nginx, Apache, Caddy, FrankenPHP a Tomcat, dále Redis, RabbitMQ, Elasticsearch, Meilisearch nebo objektová úložiště MinIO a RustFS.
+Praktické je řízení po projektech: každý projekt si drží vlastní verze runtime, vlastní příkazy pro start a stop, porty, lokální domény typu myapp.test, zapnuté HTTPS a reverse proxy, a služby lze seskupit do opakovaně použitelných startovacích skupin. Nechybí drobnosti, které se při lokálním vývoji vždy hledají zvlášť, tedy mkcert, Mailpit, DNS a FTP server, cron nebo Cloudflare Tunnel.
+Novinkou posledních verzí je AI část: FlyEnv spravuje klienty jako Claude Code, Codex, OpenCode, Kimi, GitHub Copilot CLI či Ollama a přináší vlastní MCP server, přes který smí povolený klient nahlédnout na běžící služby, weby, konfigurace, logy a verze a ovládat jejich životní cyklus. Balíčky se staví na GitHub Actions, podpis pro Windows dodává SignPath. Licence je BSD-3-Clause.
+Allp
+Allp je nástroj příkazové řádky napsaný v Rustu, který sjednocuje všechny správce balíčků, které už na stroji máte. Hledání, instalace, odinstalace, aktualizace, údržba i diagnostika se dělají jedním rozhraním, ale nativní správce zůstává autoritou a jeho příkaz zůstává vidět, a to je celá pointa. Před každou operací, která něco změní, Allp vypíše přesný nativní příkaz nebo API požadavek.
+Nic se nespouští přes  sh -c, příkazy jdou do systému jako program a vektor argumentů, a s výstupem správce balíčků nástroj zachází jako s daty, nikoli jako s kódem. Podporovány jsou APT, Pacman, DNF a DNF5, rpm-ostree na systémech typu Bazzite, Flatpak, Snap, Zypper, APK, Portage, Homebrew, pip, pipx, uv, npm, pnpm, Yarn i Cargo.
+Detaily jsou promyšlené. Snap se řeší přes lokální REST API snapd a na příkazovou řádku se nástroj přepne až tehdy, když socket chybí nebo odpověď nevypadá jako od snapd; Flatpak bez přidaných zdrojů není totéž jako „balíček nenalezen", takže Allp nabídne plán na přidání Flathubu, ale nikdy ho nepřidá sám. Nástroj má běžet jako obyčejný uživatel, práva si ověří jedním sudo -v a potomky pak spouští s sudo -n, aby se dotaz na heslo nepral s průběhovým řádkem. K dispozici je --dry-run, JSON výstup pro skripty,allp doctor i přenositelné profily balíčků v TOML. Autor poctivě upozorňuje, že jde o veřejnou alfu bez auditu. Licence je MIT.
+dool
+dool je fork osvědčeného dstatu přepsaný pro Python 3, tedy nástroj, který v terminálu sleduje dění v systému: vytížení procesoru, paměť, síť, diskové operace, load average a řadu dalších věcí. Zachovává i to nejlepší z předlohy, totiž architekturu pluginů, takže si lze doplnit vlastní metriky; v balíku jich přichází celá hromada a jejich seznam vypíše dool --version. Kdo si chce napsat vlastní, má k dispozici komentovanou kostru skel. Ovládání je jednoduché:dool --more 15 použije předvolbu more a vypisuje data každých patnáct sekund, na výběr jsou předvolby --defaults,--more a  --all.
+Jednotlivé skupiny hodnot jde skládat i ručně a omezit třeba jen na vybraná disková zařízení nebo síťová rozhraní. dool počítá s terminálem s 256 barvami, pro chudší prostředí existuje --color16, a umí tmavý i světlý režim. Jedna změna proti dstatu překvapí: síťová a disková propustnost se měří v bitech, ne v bajtech, takže čísla vycházejí vyšší, než jste zvyklí; kdo chce zpátky bajty, přidá --bytes. Instalace je ruční a nenáročná, stačí zkopírovat soubor dool do $PATH a volitelně pluginy do ~/.dool/; k dispozici je i balíček na PyPI a skripty pro stavbu rpm, deb a tar.gz. Licence je GPL-3.0.
+Blbinka
+V éře osmibitů naskočila skoro každá mašina do BASICu a jen pár výjimek šlo jinou cestou; Jupiter Ace startoval do FORTHu. Co by se stalo, kdyby takový stroj místo FORTHu nabootoval do něčeho přístupnějšího, zkouší zjistit PythonOS, systém, kde Python není programem běžícím nad jádrem, ale je jádrem samotným. CPython 3.14 je přeložený jako statická knihovna libpython3.14.a a přilinkovaný přímo do jádra, takže Py_Initialize() proběhne dřív než první řádek pythonovského kódu, a stroj pak Pythonu patří od obsluhy přerušení až po interaktivní shell. Nabootovat umí na x86–64, na holém železe i v QEMU, a pod QEMU také na arm64; naskočí rovnou do interaktivního Pythonu na sériové konzoli a historii příkazů si pamatuje i po restartu, protože ji ukládá na svazek ext2.
+Největší práci dal samotný CPython. Interpret je psaný pro POSIX, tedy počítá s voláními jako fork nebo select a s řadou dalších vymožeností, které na právě zapnutém stroji bez operačního systému nejsou k mání; autor je proto celé týdny odřezával, jednu po druhé, přepínači pro configure. K systému patří i volitelné grafické prostředí s kompozitorem, dokem a lištou ve stylu macOS, ovšem s jedním ústupkem: běží na hostitelském počítači a s jádrem si povídá přes TCP, aby se do PythonOS nemusely tahat ovladače grafiky a zvuku. Za projektem stojí Jordan Hubbard, spoluzakladatel FreeBSD a autor jeho kolekce portů i instalátoru sysinstall, dnes v NVIDII, který ho sám řadí mezi hříčky. Většina kódu podle Hackadaye vznikla s pomocí LLM.|E|
 |T|HBO Max a 30 nejoblíbenějších filmů a seriálů v září 2026. Lanterns, Stuart z TBBT, President Curtis…|D|15.9. 17:45|P|Tyto filmy a seriály jsou teď na českém HBO Max nejoblíbenější. Nerozlišujeme žánr, stáří ani hodnocení na filmových webech. Jde o souhrnnou oblíbenos...|X|Tyto filmy a seriály jsou teď na českém HBO Max nejoblíbenější. Nerozlišujeme žánr, stáří ani hodnocení na filmových webech. Jde o souhrnnou oblíbenost za poslední týdny, kterou zjišťuje a počítá web FlixPatrol.
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|

@@ -1,0 +1,3 @@
+Nákupní srovnávač Heureka spouští rozšíření do webových prohlížečů s názvem Hlídač cen, který rovnou při návštěvě e-shopu porovná produkt s dalšími nabídkami na Heurece. Podle firmy produkt na stránce e-shopu rozpozná a případně ukáže až tři alternativy.
+Widget funguje jako okno v pravém dolním rohu obrazovky a bere v úvahu i hodnocení e-shopů. Rozšíření podle společnosti dokáže vyhodnocovat akční kódy, slevové kupóny či klubové ceny, takže neřeší uměle navýšené škrtnuté ceny, slibuje. Novinka má fungovat i při vyhledávání na Googlu, Seznamu nebo Zboží.cz.
+Hlídač cen má fungovat na českých a slovenských e-shopech, je ale zatím na úplném začátku a v testovací fázi. Heureka chce jednotlivé funkce dál upravovat.

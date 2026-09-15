@@ -1,0 +1,9 @@
+Externisté mohou v průběhu procesu hodnotit jak jednotlivé odpovědi, tak konverzaci mezi člověkem a chatbotem. Kromě toho vedle promptů vidí i souhrn uživatelské paměti, která může naznačit, k čemu člověk službu používal dříve nebo ve které části světa žije. Byť jsou konverzace do jisté míry anonymizovány, u služby s 900 miliony uživatelů rozhodně nejde o zanedbatelný detail.
+Hodnocení konverzací
+Externisté odpovědi známkují a popisují jejich slabiny tak, aby další verze modelu nebyly přehnaně souhlasné. Před předáním konverzace má osobní údaje odstranit model Privacy Filter. OpenAI ale u tohoto nástroje připouští chyby – může přehlédnout méně obvyklý identifikátor a při nedostatku kontextu mohou v textu zůstat data vedoucí ke konkrétnímu uživateli.
+Důležité je to samozřejmě především u rozhovorů, v rámci nichž lidé konzultují zdravotní, pracovní nebo vztahové problémy. Kombinace místa, předchozích témat v uživatelské paměti a detailního popisu situace může o člověku prozradit takřka vše.
+Souhlas v nastavení
+ChatGPT umožňuje v uživatelském nastavení zakázat předávání konverzací k této analýze. Tuto možnost najdete v menu Ovládací prvky pro data pod položkou Vylepšovat model pro každého. Ta je standardně aktivní u účtů Free, Plus a Pro. U služeb Enterprise, Business a Edu je naopak vypnutá. Zákazem využití dat se režim změní pouze pro nové konverzace, nikoli pro starší obsah.
+Italský regulátor už dříve uložil OpenAI pokutu 15 milionů eur, z toho 9 milionů eur za zpracování uživatelských dat bez odpovídajícího právního základu. Společně s finanční sankcí nařídil i šestiměsíční informační kampaň v televizi a rádiu.
+Zarážející je především odlišný přístup OpenAI k firemním a uživatelským účtům. Zatímco u prvních z nich od srpna umožňuje režim Zero Data Retention, kde neuchovává žádné prompty ani odpovědi získané prostřednictvím API, u uživatelských účtů je naopak nativně zpřístupňuje externím spolupracovníkům.
+Zdroj: 404Media

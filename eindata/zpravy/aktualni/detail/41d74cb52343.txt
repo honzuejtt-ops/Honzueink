@@ -1,0 +1,19 @@
+Článek
+„Poté, co jsem se podílel na spoluvytvoření ChatGPT, jsem si stále kladl otázku: proč superlidsky schopné chatovací modely nevedly k AGI?“ napsal Diogo Almeida při představení svého nového projektu.
+AGI (Artificial General Intelligence) je hypotetická umělá inteligence, která by dokázala samostatně zvládat široké spektrum intelektuálních úkolů na úrovni člověka, místo aby byla zaměřená jen na konkrétní typ úlohy.
+Podle něj právě tato otázka vedla k práci v utajení, jeho tým během posledních dvou let vyvíjel nový způsob trénování umělé inteligence nazvaný RLCD a zcela nový typ modelu. Výsledkem je Jev, první veřejně představený model společnosti TypeSafe AI, kterou Almeida založil.
+Položil základ pro ChatGPT
+Almeida přitom není člověk, který by se k současné podobě umělé inteligence dostal zvenčí. V OpenAI patřil mezi lidi, kteří spoluvytvářeli metody RLHF a InstructGPT, tedy technologie zaměřené na to, aby jazykové modely lépe rozuměly lidským instrukcím a dokázaly podle nich odpovídat. Právě tento výzkum později pomohl vytvořit základ pro ChatGPT a další generaci jazykových modelů.
+Nyní Almeida tvrdí, že další krok nemusí spočívat v tom, aby AI ještě lépe konverzovala s člověkem. Může spočívat v tom, aby mnohem lépe pracovala přímo uvnitř počítačových programů.
+Představme si jednoduchou situaci. Do zákaznického systému dorazí zpráva: „Za stejnou objednávku mi byly z účtu strženy peníze dvakrát.“ Klasický chatbot může zákazníkovi odpovědět, vysvětlit situaci a třeba navrhnout další postup.
+Jenže pokud má umělá inteligence pracovat jako součást firemního softwaru, taková odpověď je vlastně zbytečně komplikovaná. Program nepotřebuje několik odstavců textu. Potřebuje vědět například jen to, zda jde o reklamaci, jaké oddělení ji má řešit a jak moc si systém může být výsledkem jistý.
+Právě na takový úkol je Jev navržen. Do modelu vstoupí neuspořádaná informace, například text zákaznického požadavku, a na druhém konci nevypadne další odstavec generovaného textu. Místo toho přijde strukturovaná hodnota, se kterou může software přímo pracovat.
+Může jít například o rozhodnutí reklamace. Program může automaticky pokračovat další akcí – bez toho, aby musel číst, interpretovat a kontrolovat odpověď napsanou v přirozeném jazyce.
+After co-inventing ChatGPT, I kept asking myself: why have superhuman chat models not led to AGI?
+I’ve spent the last 2 years in stealth building a new way to train models (RLCD), and a new type of frontier AI model that we are releasing today: Jev
+• 20-200x faster
+• 40-400x… pic.twitter.com/JSybNG2BKJ
+Místo psaní rovnou rozhoduje
+To je hlavní rozdíl proti ChatGPT a podobným systémům. Velké jazykové modely jsou postavené především na generování textu, tedy na postupném vytváření dalšího a dalšího tokenu. Jev se podle TypeSafe snaží tuto část procesu obejít. Má odpovídat na strukturované otázky a vracet přesně definované typy hodnot, například čísla, volby nebo pravděpodobnosti.
+Výsledkem tak není AI, se kterou si člověk povídá, ale spíše inteligentní rozhodovací funkce, kterou může program zavolat ve chvíli, kdy potřebuje vyřešit něco, na co nestačí obyčejné pevně napsané pravidlo.
+TypeSafe tvrdí, že Jev může být v úlohách, pro které je určen, výrazně rychlejší a levnější než velké AI modely. Almeida při uvedení odhaduje 20- až 200násobně vyšší rychlost a 40- až 400násobně nižší cenu, přičemž výstupní tokeny mají být zdarma.

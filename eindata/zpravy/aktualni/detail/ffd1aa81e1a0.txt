@@ -1,0 +1,7 @@
+Představte si, že ve virtuální realitě vytvoříte 3D objekt, vezmete a hodíte směrem k 3D tiskárně, která ho následně začne tisknout. Zní to jako scéna z Iron Mana či jiného sci-fi filmu, ve skutečnosti ale takový systém vytvořil softwarový nadšenec Hank, který propojil headset Meta Quest 3 s 3D tiskárnou Bambu Lab.
+Model ve VR stačí „hodit“ k tiskárně
+Celé řešení funguje jako řetězec několika propojených zařízení. Uživatel vystupující pod přezdívkou Hank použil headset Meta Quest 3, počítač a 3D tiskárnu Bambu Lab P2S s AMS 2 Pro. Pomocí API a vlastního webového serveru je dokázal propojit tak, aby mohl 3D model z virtuální reality poslat přímo do tiskárny pouhým „hozením“.
+„Nikdy jsem se necítil víc jako Tony Stark“ zažertoval v příspěvku na síti X.
+Zajímavé je, že velkou část programování zvládl s pomocí GPT-6 Astra a takzvaného vibe-codingu. Vývojář zatím zdrojový kód projektu na GitHubu nezveřejnil, naznačil ale, že by tak mohl učinit, pokud by o něj byl dostatečný zájem. Pomocí vibe-codingu například vytvořil čech Zdeněk Klusák vlastní budovatelskou strategii Zdenalcity, o které jsme psali nedávno.
+Nejde přitom o první Hankův experiment tohoto typu. V minulosti využil AI k úpravě dekompilované verze hry Super Smash Bros. Melee pro hraní ve VR na Meta Questu. Jeho experiment tak ukazuje, že lze kombinací AI, virtuální realitty a 3D tisku poměrně rychle vytvářet neobvyklé aplikace bez nutnosti vyvíjet celý software klasickým způsobem, jaký známe.
+zdroj: síť X, Tom's Hardware

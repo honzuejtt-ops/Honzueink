@@ -1,0 +1,6 @@
+Heureka rozšiřuje své služby přímo do vašeho prohlížeče. Vydala nové rozšíření Hlídač cen by Heureka, které při nakupování na českých a slovenských e-shopech automaticky ověří, zda stejný produkt nenajdete levněji někde jine.
+Hlídá ceny přímo během nakupování
+Po instalaci se Hlídač cen zobrazí přímo na stránce e-shopu, kde rozpozná konkrétní produkt a porovná jeho cenu s nabídkami na Heurece. Uživateli tak odpadá nutnost otevírat další kartu a konkrétní variantu produktu ručně vyhledávat ve srovnávači.
+Nástroj podle Heureky dokáže zohlednit také slevové kódy, kupóny nebo klubové ceny. Výsledkem má být částka, kterou zákazník skutečně zaplatí. V přehledu má navíc rozšíření zobrazovat pouze ty e-shopy, které získaly certifikát Ověřeno zákazníky.Zároveň má fungovat i při vyhledávání zboží přes Google, Seznam nebo Zboží.cz.
+Heureka uvádí, že rozšíření neodesílá navštívené adresy na své servery a data zůstávají jen v prohlížeči. Rozšíření je zatím dostupné pro Google Chrome a jen v testovací verzi. Podobnou službu už nabízí starší Hlidačshopů.cz, který kontroluje pravost aktuální slevy.
+zdroj: Heureka

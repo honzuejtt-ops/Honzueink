@@ -1,0 +1,3 @@
+S půlročním zpožděním oproti verze pro macOS vyšlo Gemini pro Windows. • Může se automaticky spouštět po přihlášení a běží ve svém okně. • Klient nepodporuje sdílení okna s AI.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

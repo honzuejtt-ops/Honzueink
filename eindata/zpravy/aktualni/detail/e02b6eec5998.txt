@@ -1,0 +1,94 @@
+Dnes navážeme na článek Programovací jazyk Action! pro osmibitové domácí mikropočítače Atari, který na Rootu vyšel minulý týden. V předchozím článku jsme si popsali základní vlastnosti jazyka Action! Mj. jsme si řekli, že tento jazyk byl oblíbený i z toho důvodu, že programy v něm napsané byly velmi rychlé, zejména v porovnání s existujícími interpretry programovacího jazyka BASIC (a především se to týká původního Atari BASICu).
+Toto tvrzení je však dobré ověřit, takže si v úvodní části dnešního článku ukážeme jednoduchý benchmark, z něhož bude patrné, že je Action! skutečně velmi rychlý, pochopitelně pro určité operace (netýká se to ovšem práce s numerickými hodnotami s plovoucí řádovou čárkou atd.).
+Ve druhé části článku se seznámíme s některými procedurami a funkcemi, které jsou součástí standardní knihovny jazyka Action! Nalezneme zde například různé varianty procedury PRINT, což je v praxi velmi užitečné. Ale ve standardní knihovně lze nalézt například i operace pro práci s grafickými režimy atd. (zde se kupodivu Action! do značné míry přibližuje BASICu).
+Čekání na stisk klávesy START, SELECT nebo OPTION
+V příkladech, které budou popsány v dalších kapitolách, budeme potřebovat interaktivně čekat na stisk nějaké klávesy. Prozatím jsme (při práci v assembleru) pro tento účel využívali službu operačního systému, ovšem samozřejmě je možné čekání realizovat vlastními silami. Jednou z nejjednodušších možností je čekání na stisk některé z kláves START, SELECT nebo OPTION. Stav těchto kláves lze přečíst z adresy $D01F. Nejnižší tři bity přečtené z této adresy mají následující význam (další bity jsou nulové):
+Stisk je tedy reprezentován nulovým bitem, což znamená, že hodnota 7 a vyšší značí, že žádná z kláves nebyla stlačena. Přečíst je možné i libovolnou kombinaci stisku kláves.
+Realizaci čekání na stisk libovolné klávesy START, SELECT či OPTION (či jejich kombinace) je možné v jazyku Action! naprogramovat například s využitím programové smyčky WHILE s prázdným tělem mezi klíčovými slovy DO a OD:
+PROC WAITKEY()
+    BYTE CONSOL=$D01F
+    WHILE CONSOL>6
+    DO
+    OD
+RETURN
+Měření času běhu benchmarku na osmibitových mikropočítačích Atari/
+U benchmarků je v naprosté většině případů nutné nějakým způsobem měřit čas, který uplyne mezi začátkem a dokončením benchmarku. V případě osmibitových mikropočítačů Atari je realizace časovače poměrně triviální (a v assembleru ji lze realizovat jen několika instrukcemi). Můžeme totiž využít toho, že v operačním systému Atari už jeden časovač běží. S frekvencí 50 či 60 Hz (v závislosti na použité televizní normě) totiž dochází k modifikaci hodnot uložených na adresách 18, 19 a 20 ($12, $13, $14). Tato oblast se nazývá RTCLOK neboli real time clock. Předpokládejme, že máme osmibitové Atari upravené pro televizní normu PAL. V takovém případě se při každém VBLANKu (50× za sekundu, tedy každý půlsnímek) zvýší osmibitová hodnota uložená na adrese 20 ($14). Při přetečení hodnoty na adrese 20 ($14) se zvýší hodnota uložená na adrese 19 ($13) a pokud i tato hodnota přeteče (tedy po cca 21 minutách), tak se zvýší hodnota uložená na adrese 18 ($12).
+Teoreticky tedy musíme na začátku benchmarku přečíst 24bitovou hodnotu a po jeho dokončení přečíst další 24bitovou hodnotu. Tyto hodnoty se od sebe odečtou a výsledek po vydělení padesáti bude reprezentovat dobu běhu benchmarku v sekundách. Ovšem ve skutečnosti to není 1) tak lehké 2) tak složité. Můžeme totiž časovač nejdříve vynulovat, čímž odstraníme potřebu odečítat dvě 24bitové hodnoty (a to si můžeme dovolit, protože lze předpokládat, že žádný další proces již v systému neběží). Navíc se můžeme omezit pouze na spodních šestnáct bitů, pokud bude benchmark dokončen v cca 21 minutách. A ta složitá část: vydělení padesáti sice je možné, ovšem jazyk Action! nepodporuje hodnoty s plovoucí řádovou čárkou, takže získáme jen údaj v celých sekundách. A to je pro benchmark běžící jen několik sekund velmi malé rozlišení. Proto je zapotřebí před dělením padesáti přemýšlet, v jakém kontextu se čas měří – dlouhé výpočty či relativně krátká smyčka?
+Realizace měření času v jazyku Action!
+Postup, který byl teoreticky popsán v předchozí kapitole, nyní můžeme přepsat do programovacího jazyka Action! Nejprve nadefinujeme trojici proměnných typu BYTE s určením jejich adres v operační paměti (v céčku by se tedy jednalo o ukazatele):
+    BYTE RTC1=18
+    BYTE RTC2=19
+    BYTE RTC3=20
+Před déletrvající operací všechny tři proměnné vynulujeme:
+    BYTE RTC1=18
+    BYTE RTC2=19
+    BYTE RTC3=20
+A po dokončení operace vypočteme čas v jednotkách nazývaných jitties (což jsou padesátiny nebo šedesátiny sekundy):
+    CARD TIME
+    TIME=RTC2*256+RTC3
+Převod na sekundy je již snadný:
+    PRINT("FINISHED IN ")
+    PRINTC(TIME/50)
+    PRINTE(" SECONDS")
+Celý příklad může vypadat zhruba následovně:
+PROC MAIN()
+    BYTE RTC1=18
+    BYTE RTC2=19
+    BYTE RTC3=20
+    CARD TIME
+ 
+    RTC1=0
+    RTC2=0
+    RTC3=0
+ 
+    ...
+    ...
+    ...
+ 
+    TIME=RTC2*256+RTC3
+    PRINT("FINISHED IN ")
+    PRINTC(TIME/50)
+    PRINTE(" SECONDS")
+    WAITKEY()
+RETURN
+Sami si můžete otestovat, zda je možné pracovat s časovačem jako se šestnáctibitovou hodnotou typu CARD, nikoli jako s dvojicemi proměnných typu BYTE. Tím se omezí nutnost čtení dvou bajtů a násobení 256 (to je na MOS 6502 velmi pomalá operace).
+Praktický příklad na měření času realizovaného v jazyku Action!
+Měření času si můžeme otestovat na následujícím příkladu. Ten po svém spuštění čeká na stisk libovolné klávesy START, SELECT či OPTION (nebo jejich kombinace – viz úvodní kapitoly). Posléze se doba čekání získaná v jitties převede na sekundy a vypočtený výsledek se vypíše na obrazovku. Na konci programu pro jistotu opět čekáme na stisk klávesy, protože se může stát, že monitor zabudovaný do jazyka Action! obrazovku po dokončení programu přepíše (chová se odlišně, než například BASIC):
+PROC WAITKEY()
+    BYTE CONSOL=$D01F
+    WHILE CONSOL>6
+    DO
+    OD
+RETURN
+ 
+ 
+ 
+PROC MAIN()
+    BYTE RTC1=18
+    BYTE RTC2=19
+    BYTE RTC3=20
+    CARD TIME
+ 
+    RTC1=0
+    RTC2=0
+    RTC3=0
+ 
+    WAITKEY()
+ 
+    TIME=RTC2*256+RTC3
+    PRINT("FINISHED IN ")
+    PRINTC(TIME/50)
+    PRINTE(" SECONDS")
+    WAITKEY()
+RETURN
+Jak rychlé jsou programy psané v jazyku Action! v porovnání s dobovými interpretry?
+Podle stránek Tiobe i PYPL PopularitY of Programming Language je v současnosti nejvíce používaný programovací jazyk Python (resp. dotazy na Python jsou nejčastější). Každá z těchto stránek používá odlišné metriky (které navíc s nástupem AI asi přestávají platit) a v případě PYPL se pravděpodobně jedná o nějakou chybu (viz grafy s nápadným růstem Pythonu), ovšem Python je skutečně velmi populární. A prakticky stejnou niku na přelomu sedmdesátých a osmdesátých let minulého století „okupoval“ programovací jazyk BASIC.
+Ve skutečnosti se nejedná o jediný jazyk popsaný nějakou normou (i ta ovšem vznikla – a byla většinou implementací vesele ignorována), ale o rodinu jazyků sdílejících společnou myšlenku: umožnit relativně snadnou tvorbu programů i těmi uživateli, kteří nejsou profesionálními vývojáři. Z toho plyne i poměrně specifický přístup k datovým typům, který se v BASICu používal (omezení množství typů na nezbytné minimum: čísla, řetězce, jednorozměrná a dvourozměrná pole čísel a jednorozměrná, někdy i dvourozměrná pole řetězců – to je většinou vše).
+Interpretry jazyka BASIC pro osmibitové mikropočítače Atari
+V rámci dalších kapitol se pokusíme implementovat jednoduchý benchmark a změřit rychlosti jednotlivých implementací BASICu pro osmibitové domácí mikropočítače Atari. Ovšem o jaké BASICy se vlastně jedná?
+V první řadě se jedná o originální Atari BASIC, který byl součástí standardní ROM (8kB BASIC+16kB operační systém). Jednalo se o velmi pomalý interpret, což si ostatně ověříme.
+V roce 1983 byl společností OSS vydán dialekt BASICu pojmenovaný BASIC A+. Tento dialekt obsahoval opravy a vylepšení původního Atari BASICu a navíc byl tento interpret rychlejší, než původní BASIC. Zajímavé je, že BASIC A+ nebyl dodáván na cartridge, ale na disketě, a to společně se systémem OS/A+ a EASMD (Editor/Assembler). Celková cena za tyto tři programy byla 80 dolarů, takže je patrné že se jednalo o jiný segment trhu, než tomu bylo v případě profesionálnějších nástrojů BUG/65 a MAC/65. Samotný interpret zabral dalších 15 kB RAM. Byl (jak již víme) rychlejší než původní Atari BASIC, obsahoval základní podporu pro PMG (sprity) a taktéž základní podporu pro ladění programů.
+O další rok později, tedy v roce 1984, vydala společnost OSS další interpret programovacího jazyka BASIC, který byl pojmenován BASIC XL, a to podle toho, že běžel na systémech Atari XL (s plnou RAM) a pochopitelně taktéž na Atari XE. Opět se jednalo o poměrně významné vylepšení a rozšíření možností původního BASICu, k dispozici byly i metody k urychlení výsledných (interpretovaných) programů.
+V roce 1985 společnost OSS vydala svoji poslední verzi interpretru programovacího jazyka BASIC pro osmibitová Atari. Tato varianta se jmenovala BASIC XE, a to z toho důvodu, že byl podporován přístup do rozšířené paměti počítačů Atari 130 XE (celkem neuvěřitelných 128 kB RAM) – program bylo možné oddělit do dat, přičemž program byl umístěn ve druhé bance RAM. BASIC XE nabízel i rychlejší matematické operace a oproti BASICu XL nabízel i několik dalších vylepšení (ovšem ne mnoho).
+Dalším interpretrem programovacího jazyka BASIC, s nímž se v dnešním článku ve stručnosti seznámíme, je Atari Microsoft BASIC. Na historii jeho vzniku jsme již upozornili v jednom z předchozích článků o počítačích Atari – původně totiž měly být domácí osmibitové mikropočítače Atari skutečně dodávány s Microsoft BASICem uloženým v ROM, ovšem nakonec nebylo možné tento interpret umístit do požadovaných osmi kilobajtů ROM, takže jako vhodnější alternativa vznikl Atari BASIC. Nicméně společnost Micro-soft skutečně Atari Microsoft BASIC vydala, a to již v roce 1981. Z několika pohledů se však jedná o dosti rozdílný interpret, než je to...
+(Pokracovani na webu)

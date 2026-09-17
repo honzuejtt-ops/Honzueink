@@ -1,0 +1,10 @@
+Článek
+Bezpečnostní krize, která se s přibývajícími odhalenými případy AI rebelování prohlubuje, podle Bengia výrazně zvyšuje pravděpodobnost, že vlády budou nuceny nějak zakročit.
+„Zkuste si vybavit, jak rychle vlády jednaly na počátku pandemie covidu v roce 2020, když si uvědomily, že veřejná bezpečnost, ale i jejich vlastní budoucnost a demokracie jsou v ohrožení. Ve spojení se současným stavem AI by člověk očekával, že budou jednat rychle. Myslím, že se k tomu bodu rychle blížíme,“ uvedl pro server Guardian srovnání bezpečnostní AI krize a covidu.
+Během posledních měsíců nejen mezi širokou veřejností, ale i odborníky a vedoucími pracovníky AI firem narůstá znepokojení ohledně potenciálních hrozeb špičkových výkonných systémů umělé inteligence. Vše na základě přiznání velkých společností, včetně Anthropicu nebo OpenAI, jak moc se jejich systémy mohou vymknout kontrole.
+Skeptikům se regulace nezdá
+Existuje ale i velká skupina lidí, kterým se „vynucované“ výzvy o zpomalení vývoje AI příliš nelíbí. Podle nich jde o příklad tzv. regulačního zajetí, kdy velké dominantní firmy ve výsledku ovládnou tvorbu pravidel a zákonů ve spojení s AI.
+Právě podobné společnosti teď tlačí na vlády, aby zavedly bezpečnostní režimy. To ale ve výsledku jen zvýší náklady menších firem na to, aby byly schopny konkurovat velkým podnikům.
+Podle nich rovněž nucené regulace ze strany AI gigantů zastiňují naléhavější problémy spojené s AI – například dopad umělé inteligence na díla chráněná autorským zákonem nebo na lidská práva.
+Bengio však argument, že jsou snahy o regulaci ze strany velkých AI firem projevem regulačního zajetí, odmítá. Chápe obavy a potřebu zabránit, aby si pravidla psaly samotné velké korporace „na míru“, zrušení snah o regulaci ale podle něj není správným krokem. Tím by měl být nezávislý demokratický dohled a přísné mantinely určené vládami.
+Navíc možné regulace podle něj dopadnou výrazně finančně právě na velké firmy, které vyvíjejí nástroje, proti nimž je regulace namířena, nikoli na malé vývojáře.

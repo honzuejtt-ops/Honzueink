@@ -1,0 +1,26 @@
+Článek
+„Dobrý den, evidujeme u Vás neuhrazený poplatek. Prosíme o jeho uhrazení co nejdříve. Děkujeme za rychlé vyřízení,“ stojí v podvodné SMS zprávě, která vede na stránky vzp-govcz-e-vzp.casa. Správná adresa této pojišťovny je přitom vzp.cz.
+Na malých displejích mobilních telefonů je ale relativně snadné falešnou adresu přehlédnout a skočit podvodníkům na špek.
+Na rozdíl od jiných smishingových kampaní je navíc podvod na poměrně vysoké úrovni. Falešné stránky, na které vede odkaz z podvodné SMS, totiž působí poměrně věrohodně. Nachytat se tak mohou i jinak zběhlí uživatelé.
+Chtějí zneužít bankovní identitu
+Samotná SMS zpráva pro uživatele nebezpečná není. Problém představuje až zmiňovaný odkaz – falešné stránky VZP totiž vybízejí k přihlášení pomocí bankovní identity. Až poté se má uživatel dozvědět více informací o smyšleném dluhu.
+Ve skutečnosti se snaží kyberšmejdi pouze získat přístup k bankovnímu účtu. Pak jsou jen krůček od toho, aby z něj vysáli všechny peníze, případně sjednali jménem podvedené osoby v její bance půjčku.
+Pojišťovna se od podobných SMS zpráv již distancovala. „VZP nikdy nerozesílá podobné SMS zprávy s výzvou k okamžité platbě prostřednictvím přiložených odkazů,“ upozornil Jan Svoboda, ředitel Odboru bezpečnosti VZP.
+Bezodkladně kontaktujte banku a policii
+VZP doporučuje na podobné odkazy neklikat a prostřednictvím takových stránek nezadávat žádné osobní ani bankovní údaje. Podezřelou zprávu lze ignorovat a jejího odesílatele zablokovat.
+Případný dluh si mohou klienti pojišťovny ověřit prostřednictvím mobilní aplikace Moje VZP, případně při osobní návštěvě pobočky.
+Pokud už někdo na podvodné stránce zadal bankovní nebo jiné citlivé údaje, je nezbytné neprodleně kontaktovat svou banku a policii.
+Podobně by přitom měli postupovat také klienti jiných pojišťoven. I když se smishingový podvod aktuálně šíří výhradně pod hlavičkou VZP, není vyloučeno, že se podfukáři budou snažit stejným způsobem zneužít také další české subjekty.
+Phishing a smishing
+Internetoví podvodníci neustále hledají cesty, jak napálit důvěřivce. Často k tomu využívají phishing – rozesílají e-maily, které vyvolávají dojem, že pocházejí od důvěryhodné firmy, banky, úřadu nebo webové stránky.
+Pomocí těchto zpráv se útočníci snaží vylákat citlivé informace, které se týkají například bankovních kont. Tato data následně využívají k odčerpání financí z účtu postiženého.
+Smishing funguje prakticky zcela totožně, pouze místo e-mailů kybernetičtí nájezdníci vyvíjejí nátlak na uživatele prostřednictvím SMS zpráv. A přesně takové zprávy se v Česku v poslední době množí.
+Jak se bránit?
+- Nevěřte SMS s výzvou k okamžité úhradě dluhu. Pokud vám přijde zpráva o údajném nedoplatku u zdravotní pojišťovny, nejednejte pod časovým tlakem a nejprve si vše ověřte.
+- Neklikejte na odkazy v SMS. I když zpráva vypadá jako oficiální upozornění, odkaz může vést na podvodnou stránku. Svůj účet u pojišťovny si raději otevřete přímo prostřednictvím oficiální aplikace nebo webu.
+- Kontrolujte webovou adresu. Falešné stránky mohou velmi věrně kopírovat vzhled skutečné pojišťovny. Rozhodující je adresa v prohlížeči – při sebemenší pochybnosti stránku zavřete.
+- Bankovní identitu používejte pouze na ověřených stránkách. Pokud vás odkaz ze SMS přesměruje na přihlášení pomocí Bank ID, nepřihlašujte se. Bankovní identita může poskytnout přístup k citlivým službám a její zneužití může mít vážné následky.
+- Ověřujte si údajné dluhy jinou cestou. Přihlaste se přímo do oficiální aplikace své zdravotní pojišťovny, případně ji kontaktujte prostřednictvím oficiálních kontaktů nebo navštivte její pobočku.
+- Pokud jste údaje už zadali, jednejte okamžitě. Neprodleně kontaktujte svou banku, informujte ji o podezření na podvod a řiďte se jejími pokyny k zabezpečení účtu. Současně případ oznamte Policii ČR a podezřelou SMS můžete zablokovat a odstranit.
+Nejčastější podvody, jak je odhalit a nenechat se okrást
+Policejní statistiky zaplavují v posledních měsících příběhy nešťastníků, kteří sedli na lep internetovým podvodníkům. Kyberšmejdi přitom používají pořád dokola stejné triky, jejichž prostřednictvím se snaží důvěřivce napálit a často i oškubat. Připravte se na ně a podívejte se, jak se nejčastějším podvodům na síti bránit.

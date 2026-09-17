@@ -1,0 +1,14 @@
+Článek
+Nejde totiž o žádnou malou experimentální dílnu. Továrna je navržena tak, aby dokázala vyrábět více než 10 tisíc robotů ročně. Výrobní linka má být schopná dokončit jednoho robota každých deset minut.
+Závod se rozkládá na ploše 14 tisíc metrů čtverečních a Ubtech v něm chce vyrábět podle serveru Interesting Engineering především roboty řad Walker S a Cruzr. Nejzajímavější je, že část úkolů, které by ještě donedávna připadly lidským zaměstnancům, totiž zastávají stroje.
+Humanoidi zde například manipulují s materiálem, vykládají zboží z palet nebo na ně naopak hotové komponenty ukládají. Při samotné montáži jim pomáhají robotická ramena. Ta spolupracují s otočnými pracovními stanicemi a starají se mimo jiné o utahování šroubů. Na jednoho robota jich je mimochodem potřeba více než dva tisíce.
+Nejprve ve virtuálním světě
+Než se materiál vůbec dostane k výrobní lince, putuje továrnou převážně automaticky. O jeho přepravu se starají autonomní vozidla a bezobslužné vysokozdvižné vozíky. Hotoví roboti pak míří do automatizovaného skladu.
+Celý provoz navíc dostal svou digitální kopii. Ubtech při budování továrny spolupracoval se společností Siemens Digital Industries Software, která pomohla vytvořit její digitální dvojče. To je v praxi důležitější, než by se mohlo na první pohled zdát.
+Virtuální továrna odpovídá skutečnému závodu v měřítku 1:1. Obsahuje výrobní stanice, sklady, uličky i trasy, po kterých se pohybují automatizovaná vozidla. Inženýři si díky tomu mohou předem vyzkoušet, co se stane, když se změní výrobní postup nebo způsob přepravy materiálu.
+Místo toho, aby se změny nejprve testovaly v reálném provozu, mohou je tedy vyzkoušet ve virtuálním prostředí. Teprve když vše funguje, přenesou je do skutečné továrny.
+O řízení výroby se stará také systém Yanshee MOM, který vznikl ve spolupráci se Siemensem. Ubtech jej popisuje jako jakýsi digitální „mozek“ továrny, který pomáhá plánovat výrobu a řídit její jednotlivé procesy.
+Každý robot má vlastní „rodný list“
+Automatizace nekončí ani ve chvíli, kdy robot sjede z výrobní linky. Každý stroj dostane unikátní sériový kód, díky kterému lze zpětně dohledat jeho původ. Je to vlastně takový „rodný list“, který má ale daleko více detailů než ten, který běžně dostávají lidé.
+Systém zaznamenává například zdroj jednotlivých komponent, parametry montáže nebo výsledky kontrol. Pokud se tedy později objeví problém, výrobce může zjistit, z jakých součástek byl konkrétní robot sestaven a jakým výrobním procesem prošel.
+Právě sledovatelnost může být při masové výrobě důležitá. Humanoidní robot totiž není jednoduchý stroj. Skládá se z velkého množství součástek, které musí být sestaveny s vysokou přesností. A protože se jednotlivé modely rychle vyvíjejí, výrobní linky zároveň musí být dostatečně flexibilní, aby se dokázaly přizpůsobit novým verzím.

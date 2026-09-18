@@ -1,0 +1,14 @@
+Článek
+Zprávu o existenci laboratoře přinesla agentura Reuters, která ve svém článku původně vycházela ze zjištění dvou lidí obeznámených se situací. Až následně Anthropic existenci laboratoře potvrdil.
+Eric Kauderer-Abrams, který ve firmě vede oblast přírodních věd, uvedl, že společnost skutečně provádí biologické experimenty ve vlastních zařízeních. Část práce zároveň zadává externím partnerům.
+„Když chcete dělat biologii, konečným testem je stále skutečná laboratorní práce a ještě nějakou dobu tomu tak bude,“ řekl Kauderer-Abrams Reuters. Podle něj Anthropic už dnes vedle počítačových modelů provádí také skutečné biologické experimenty.
+Tají, na čem přesně pracují
+Na čem přesně firma v laboratoři pracuje, ale zatím neprozradila. Mluvčí Anthropicu pouze uvedl, že zařízení není určeno konkrétně k objevování nových léků.
+Firma už několik měsíců otevřeně mluví o svých ambicích v oblasti farmaceutického výzkumu. V červnu spustila podle serveru Engadget program Claude Science a oznámila, že se chce věnovat také oblastem, do kterých se tradiční farmaceutické firmy příliš nepouštějí, protože pro ně nejsou dostatečně komerčně zajímavé.
+Podle zdrojů Reuters firma zkoumá možnost, že by její model Claude řídil robotická zařízení provádějící vědecké experimenty s omezeným zásahem člověka.
+Kauderer-Abrams nicméně zdůraznil, že Anthropic je v této oblasti teprve na začátku a že lidský dohled zůstává z bezpečnostních důvodů nezbytný. „Jsme na úplném začátku využívání AI k automatizaci provádění laboratorní práce,“ uvedl.
+Pokud se tento přístup podaří rozvinout, mohl by v budoucnu vytvořit smyčku, v níž AI navrhne experiment, robotické zařízení jej provede a model následně pomůže vyhodnotit výsledky a navrhnout další postup. Vědec by tak nebyl z procesu odstraněn, ale část opakující se práce by mohla být automatizována.
+Právě rychlost experimentování je jedním z důvodů, proč Anthropic do této oblasti vstupuje. Kauderer-Abrams věří, že AI by mohla urychlit vývoj léčby nemocí, které byly dosud považovány za příliš obtížně léčitelné. Jako příklad zmiňuje složité cílené terapie, například bispecifické a trispecifické protilátky.
+Anthropic zároveň zatím nechce soupeřit s klasickými farmaceutickými firmami v poslední fázi vývoje léčiv. Společnost neprovádí klinické studie a uvádí, že se soustředí na oblasti, kterým se komerční farmaceutický výzkum příliš nevěnuje. Od objevu potenciálně účinné molekuly k léku dostupnému pacientům navíc stále vede dlouhá cesta, která může trvat roky.
+Ptačí chřipka i zavirovaní komáři
+Nová laboratoř tak přichází v poněkud paradoxní chvíli. Anthropic totiž jen několik dní před zveřejněním informací o vlastní biologické laboratoři informoval o případech, kdy se lidé pokoušeli jeho model Claude využít k nebezpečnému biologickému výzkumu.

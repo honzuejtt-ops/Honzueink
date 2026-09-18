@@ -1,0 +1,9 @@
+3D tisk nemusí končit jen u barevných figurek či dekorací s hromadou odpadu z výměny filamentů. Angus z YouTube kanálu Maker’s Muse zkombinoval klasický FDM tisk s UV tiskárnou a vytvořil posuvné puzzle, které kombinuje pohyblivý model s barevným obrázkem a hmatovým reliéfem.
+Snížení tiskového odpadu
+Základem je takzvaný print-in-place model, u kterého se všechny pohyblivé části vytisknout najednou. Angus nejdříve model vytvořil v Autodesk Fusion. Největší výzvou bylo nastavit mezery mezi dílky. Musely být dostatečně malé, aby dílky držely u sebe, lehce se posouvaly a zároveň se celé puzzle nerozsypalo.
+Po několika prototypech skončil u mezery pouhých 0,07 mm a 45° převisy mezi jednotlivými dílky. Výsledkem je mechanicky funkční puzzle, které lze po dokončení tisku ihned používat.
+Barvy přidá až UV tiskárna
+Na hotový FDM výtisk následně přišla UV tiskárna eufyMake E1. Ta dokáže na povrch nanést barevný motiv. Kamera uvnitř tiskárny nejprve rozpoznala obrys puzzle a podle něj pak přizpůsobila výsledný obrázek. Není tak nutné řešit několik barevných filamentů ani neustálé výměny materiálu.
+UV tiskárna eufyMake E1 dokáže tisknout reliéfní potisk až do výšky 5 mm. Právě to ale přineslo nečekaný problém, jelikož se inkoust dostával do mezer mezi dílky a puzzle se zasekávalo. To Angus vyřešil vytvořením SVG masky jednotlivých dílků, která chrání části, kde by mohla barva omezit pohyblivost.
+Výsledek ukazuje zajímavou kombinaci technologií, kdy se FDM tisk postaral o mechanickou část, zatímco UV tisk o jebo barvy a hmatový povrch. Limitací je však vyšší pořizovací cea UV tiskárny, která se v případě eufyMake E1 pohybuje okolo 50 tisíc korun. Může však nabídnout personalisované 3D výrobky s vysokou tiskovou kvalitou a bez zbytečného odpadu.
+zdroj: YouTube

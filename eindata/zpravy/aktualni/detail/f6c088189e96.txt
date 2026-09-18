@@ -5,5 +5,7 @@ Teplotu měří v rozsahu 0 až 60 °C s rozlišením 0,1 °C, vlhkost od 0 do 9
 Displej zobrazuje také datum, den v týdnu, čas, teplotu, vlhkost a zmíněnou koncentraci CO2. Mezi rozvrženími lze přepínat stiskem jediného dostupného tlačítka. Zařízení lze použít zavěšené na zdi díky držáku, případně lze pomocí stojanu položit kamkoliv do interiéru.
 Automatizace přes bránu
 Bezdrátovou komunikaci obstarává Bluetooth 5.0 Low Energy. Pro zobrazení naměřených hodnot v historii v aplikaci Mi Home je ale potřeba kompatibilní brána. Aplikace pak kreslí grafy teploty, vlhkosti a CO2, takže lze sledovat denní vývoj i delší trendy. Stejně tak lze měřené hodnoty zapojit do automatizací, jako je upozornění na vysoké hodnoty třeba pomocí chytrého osvětlení nebo reproduktoru.
+Chytrý senzor Xiaomi si můžete koupit například zde.
 Na domovském čínském trhu se začne Xiaomi Smart Temperature and Humidity Monitor 3 Pro prodávat na konci září za cenu 117 juanů. Českou cenu tak můžeme odhadovat někde kolem 700–800 Kč. To sice bude výrazně vyšší cena než u současné verze bez měření CO2, zároveň ale půjde o nejlevnější chytrý senzor s tímto typem měření. Nejbližší konkurencí bude SONOFF AirGuard CO2, který se u nás prodává za ceny lehce nad tisícovkou.
 Zdroj: Notebookcheck
+Tento text obsahuje affiliate odkazy. Pokud se přes tyto odkazy na vybraných službách zaregistrujete, případně něco nakoupíte, získá z toho redakce malou provizi sloužící pro zajištění našeho fungování. Detaily o affiliate programech najdete zde.

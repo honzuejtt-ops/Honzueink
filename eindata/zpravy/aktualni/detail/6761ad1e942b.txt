@@ -1,0 +1,5 @@
+Oživeno 18. 9. 2026 | Mozilla najela na dvoutýdenní cyklus vydávání nových verzí, ale i tak dokázal Firefox 156 přinést překvapivé množství funkčních novinek.
+
+Integrovaný prohlížeč PDF nyní startuje až o 45 % rychleji než dřív. Zefektivnění se dočkal i dekodér obrázků v JPEGu. Pokud se velká ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

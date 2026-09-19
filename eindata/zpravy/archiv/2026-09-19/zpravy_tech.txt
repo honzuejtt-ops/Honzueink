@@ -1,4 +1,16 @@
-|T|Žádné zprávy|D||P|Nebyly nalezeny.|X|Zkuste to později.|E|
+|T|Zloději mají utrum s rychlým odpojením mobilů od sítě. Google přidává ochranu, kterou mají ostatní už roky|D|19.9. 12:45|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Žádné zprávy|D|19.9. 12:00|P|Nebyly nalezeny.|X|Zkuste to později.|E|
+|T|Stolní počítač v tenké klávesnici láká nápadem a odrazuje cenou. Test HP EliteBoard G1a|D|19.9. 11:45|P|V na pohled obyčejné klávesnici je ukrytý celý počítač i s akumulátorem • Uvnitř můžete vyměnit i paměti, nejen pevný disk • Chytrě vymyšlený USB-C hu...|X|V na pohled obyčejné klávesnici je ukrytý celý počítač i s akumulátorem • Uvnitř můžete vyměnit i paměti, nejen pevný disk • Chytrě vymyšlený USB-C hub schováte za monitor
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Udělali nejhorší hru roku, teď zavírají krám. MindsEye přitom mělo konkurovat GTA|D|19.9. 10:45|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Detektory textů vytvořených AI nejsou neomylné. Boj s generovaným obsahem připomíná předpovídání počasí|D|19.9. 09:45|P|Detektory textů umělé inteligence často selhávají a pracují s pravděpodobností • Nastavený rozhodovací práh zásadně ovlivňuje celkovou míru falešných ...|X|Detektory textů umělé inteligence často selhávají a pracují s pravděpodobností • Nastavený rozhodovací práh zásadně ovlivňuje celkovou míru falešných poplachů • Systém Pangram vykázal nejvyšší přesnost i nejlepší ekonomickou výhodnost
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Hráli jsme Cosmo Tales. Česky mluvící Škodovka střílí roboty ve vesmíru|D|19.9. 08:45|P|Do předběžného přístupu vstoupila nová česká hra od Bohemia Interactive s názvem Cosmo Tales. A to je tak ta poslední celkem rozumně znějící věta, kte...|X|Do předběžného přístupu vstoupila nová česká hra od Bohemia Interactive s názvem Cosmo Tales. A to je tak ta poslední celkem rozumně znějící věta, kterou o tomto počinu lze říct.
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|

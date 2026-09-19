@@ -1,0 +1,28 @@
+Článek
+Nejlepší obrana začíná samozřejmě ještě předtím, než se něco stane. Proto je vhodné své zařízení na krizovou situaci připravit. Základem je silný PIN nebo heslo k odemčení a aktivovaná biometrie. Čtyřmístný kód je výrazně slabší než delší PIN nebo heslo, které není snadno odhadnutelné.
+Zkontrolujte také, zda máte zapnutou službu pro hledání zařízení. U iPhonu jde o funkci Najít, u telefonů s Androidem o Pátrací centrum. Právě díky nim lze ztracený telefon v řadě případů lokalizovat, uzamknout nebo na dálku vymazat.
+U iPhonu se vyplatí zapnout také Ochranu odcizených zařízení. Ta zvyšuje ochranu citlivých operací v případě, že pachatel zná kód telefonu. U některých operací vyžaduje biometrické ověření a u části změn také bezpečnostní prodlevu. Stejně důležité je pravidelné zálohování. Fotografie, kontakty a další důležitá data by neměly existovat pouze v jednom zařízení.
+Myslete na přístup k účtům
+Samostatnou pozornost si zaslouží dvoufázové ověřování. Pokud je mobil jediným místem, kam chodí přihlašovací kódy, může jeho ztráta znamenat problém s přístupem k e-mailu, bance nebo dalším službám.
+Předem si proto zkontrolujte, zda máte nastavený záložní způsob ověření. Mohou jím být například záložní kódy nebo další důvěryhodné zařízení.
+Praktické je také uložit si mimo mobil kontakt na banku, operátora a případně pojišťovnu. Hodit se může i číslo IMEI telefonu, které najdete například na původním obalu nebo v dokumentaci.
+Mobil zmizel. Co udělat jako první?
+Nejdříve je potřeba rozlišit, zda jste mobil pravděpodobně jen někde zapomněli, nebo zda došlo ke krádeži.
+Pokud jste například odešli z restaurace a až po chvíli zjistili, že telefon zůstal na stole, má smysl se vrátit a pokusit se ho najít. Pokud ale zmizel z kapsy v přeplněné tramvaji nebo vám ho někdo vytrhl z ruky, jednejte jako při krádeži.
+V obou případech je prvním technickým krokem pokusit se zařízení lokalizovat a současně ho zabezpečit na dálku. Pokud máte možnost použít jiný telefon, tablet nebo počítač, přihlaste se ke službě pro hledání zařízení a svůj přístroj lokalizujte.
+Když nemáte žádný jiný mobil, který byste mohli použít? I to se dá řešit. Požádejte rodinu, kamaráda, kolegu, hotel nebo jiné bezpečné místo o možnost použít telefon či počítač. Potřebujete se dostat především ke službě pro hledání zařízení a ke kontaktům na operátora a banku. Pokud jste doma, může být řešením také počítač nebo tablet, který máte k dispozici.
+Tipy pro majitele iPhonů
+Pokud byla na iPhonu předem aktivovaná funkce Najít, můžete z jiného zařízení zjistit, kde se iPhone nachází, případně zobrazit jeho poslední známou polohu.
+Telefon lze označit jako ztracený. Tím se uzamkne a na displeji lze zobrazit zprávu s kontaktními údaji. Současně se pozastaví používání platebních karet a lístků uložených v Apple Pay.
+Pokud lokalizace ukazuje telefon na místě, které neznáte, nepokoušejte se ho získat zpět sami. Při krádeži je lepší obrátit se na policii.
+A ještě jedno důležité pravidlo: ukradený iPhone neodstraňujte ze služby Najít. Mohli byste tím odstranit aktivační zámek a usnadnit jeho další použití nebo prodej.
+Pokud funkce Najít nebyla zapnutá už před krádeží, nelze ji dodatečně aktivovat na dálku a iPhone není možné prostřednictvím této služby označit jako ztracený ani na dálku vymazat. V takovém případě je důležité co nejrychleji zabezpečit účet Apple a při podezření na jeho ohrožení změnit heslo.
+Tipy pro majitele Androidů
+U telefonů s Androidem plní podobnou úlohu Pátrací centrum. Pokud bylo předem nastavené, můžete zařízení lokalizovat, nechat zazvonit nebo ho označit jako ztracené.
+U podporovaných zařízení může při hledání pomoci také síť dalších zařízení Android. Telefon proto nemusí být v každém okamžiku připojený k internetu, aby bylo možné získat jeho polohu.
+Pokud už není reálná šance telefon získat zpět, lze přistoupit k jeho vzdálenému vymazání. To je ale krajní možnost. Po vymazání už jeho poloha nebude v Pátracím centru dostupná.
+Pozor na phishing
+Krádeží nebo ztrátou telefonu nemusí problém skončit. Naopak může začít další fáze útoku. Zloděj nebo člověk, který telefon později získá, může vědět, že se ho snažíte najít. Může proto přijít SMS nebo e-mail ve stylu: „Váš telefon byl nalezen. Přihlaste se zde a zobrazte jeho polohu.“ Odkaz může vést na falešnou stránku, která se pokusí získat vaše přihlašovací údaje.
+Po krádeži proto buďte k podobným zprávám mimořádně obezřetní. Nikomu nesdělujte PIN telefonu, heslo k účtu ani ověřovací kódy. Do účtu se přihlašujte pouze prostřednictvím oficiální aplikace nebo webu, který znáte.
+Zablokovat SIM i karty
+Jakmile je telefon zabezpečený, kontaktujte mobilního operátora. Požádejte o zablokování SIM karty nebo eSIM. Telefonní číslo totiž může sloužit nejen k telefonování, ale také k obnově hesel nebo přijímání ověřovacích SMS. Současně se informujte o možnosti vydání náhradní SIM nebo eSIM se stejným číslem. Pokud operátor umožňuje aktivaci eSIM na dálku, může jít o velmi praktické řešení.

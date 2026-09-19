@@ -1,0 +1,19 @@
+Chybu v receptu za vás zachytí lékárník. Za 14 dní jich bylo 12 tisíc
+Čeští lékárníci loni na jaře za dva týdny odhalili přes 12 tisíc chyb v receptech, ukázalo sledování České lékárnické komory – od chybějící dávky až po úplně jiný lék. Stát teď navíc chystá umělou inteligenci, která má podobné nebezpečné kombinace najít sama v systému elektronických receptů.
+Chyby, které lékárník zachytil včas
+Loni na jaře sledovala Česká lékárnická komora recepty ve více než tisícovce lékáren po dobu dvou týdnů. Mezi zachycenými případy bylo třeba pětileté dítě, kterému lékař omylem předepsal silný lék na dýchací potíže v dávce určené pro dospělé, nebo osmiletá dívka, které lékař kvůli záměně podobných názvů předepsal úplně jiný lék, než měla dostat. Obě chyby zachytil až lékárník při výdeji, ne lékař, který recept napsal.
+Mezi zaznamenanými pochybeními bylo přes tři sta případů podezření na nevhodnou kombinaci léků. Dalších přes pět set případů skončilo tak, že pacient dostal na recept úplně jiný lék, než měl.
+Umělá inteligence se má na kombinace léků dívat sama
+Stát teď chystá způsob, jak podobné chyby chytat dřív, než recept vůbec doputuje k pacientovi. Ředitel Státního ústavu pro kontrolu léčiv (SÚKL) Tomáš Boráň řekl novinářům, že úřad chce do lékového záznamu – seznamu léků, který má každý pacient v systému elektronických receptů – přidat i léky podané v nemocnici, a napojit na něj automatickou kontrolu nebezpečných kombinací pomocí umělé inteligence. Zatím jde o plán bez pevného termínu: „Určitou analýzu v této oblasti už děláme,“ řekl Boráň. Podle jeho slov je totiž až pět procent hospitalizací seniorů nad 65 let v Evropské unii způsobeno právě lékovými interakcemi.
+Ilustrační foto: mehmetography / Pexels
+💡 Zajímavost: Když lékárník kvůli podezřelému receptu zavolal lékaři, ten se v 95,7 procenta případů rovnou přiklonil k lékárníkově návrhu úpravy. V ostatních případech šlo podle komory například o to, že si obě strany jen navzájem ověřily neobvyklou dávku nebo kombinaci léků.
+Kolik lidí to vlastně potřebuje
+Podle celostátního šetření Českého statistického úřadu a Ústavu zdravotnických informací a statistiky z roku 2019 užívalo v posledních dvou týdnech před šetřením léky na předpis 89 procent seniorů nad 65 let. U lidí mladších 65 let to byly necelé dvě pětiny – léky na předpis tak bere prakticky každý senior. Přesně tahle skupina by z hlídání kombinací měla těžit nejvíc – je totiž právě u ní řeč o zmíněných pěti procentech hospitalizací.
+Co zvládnete zkontrolovat už dnes
+Na plně automatickou kontrolu si počkáte, ale svůj lékový záznam – tedy přehled všech předepsaných i vyzvednutých léků – si můžete prohlédnout už teď. Stačí aplikace eRecept a přihlášení stejnými údaji jako do internetového bankovnictví, klidně jen otiskem prstu. V aplikaci vidíte i to, kdo se do vašeho záznamu díval, a snáz si všimnete, že máte dvakrát ten samý lék, nebo lék, který jste už dávno přestali brát.
+Než umělá inteligence začne kombinace hlídat sama, nejjistější prevencí zůstává to, co funguje už dnes: říct každému lékaři i lékárníkovi, jaké všechny léky – i ty volně prodejné – právě berete.
+Ověřeno z:
+- Zdravotnický deník / ČTK — tisková zpráva z briefingu ředitele SÚKL (17. 9. 2026)
+- Česká lékárnická komora — projekt Sledování lékových chyb, 1. kolo (15.–30. 4. 2025)
+- Český statistický úřad a ÚZIS ČR — Evropské výběrové šetření o zdraví (2019, zveřejněno 2022)
+- Státní ústav pro kontrolu léčiv — informace o aplikaci eRecept a bankovní identitě (zveřejněno 2021, funkce platí)

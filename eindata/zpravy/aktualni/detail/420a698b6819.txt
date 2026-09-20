@@ -1,0 +1,11 @@
+Článek
+Bioinženýři z prestižních australských univerzit pracují na vývoji speciálně upravených švábů, kteří by se i díky své velikosti mohli dostat na nedostupná místa. Nebo by mohli při katastrofách doručovat například léky.
+Jako základ pro prováděný pokus si vědci vybrali tzv. obří šváby, kteří dosahují velikosti až 8,5 centimetru a patří mezi nejtěžší na světě.
+Do každého pokusného kusu implantovali malé elektrody přenášející elektrické signály. Díky tomu lze kyberšváby řídit na dálku. Každý šváb může být navíc vybaven i jakýmsi malým batohem, ve kterém je kamera nebo zařízení podobné injekční stříkačce.
+Jakmile by se hmyz dostal na místo určení, mohl by právě díky uvedenému zařízení přinést pacientovi lék, popřípadě mu ho sám vstříknout.
+„Při pokusu začínáme nejprve dočasným uspáním hmyzu a jeho znehybněním, abychom se ujistili, že během procesu implementace nic necítí,“ uvedl pro BBC biorobotický inženýr Thang Vo-Doan, který se na studii spolupodílel.
+Pomocník, který se protáhne všude
+Švábi byli k experimentu vybráni z logického důvodu. Umí se protáhnout úzkými mezerami, pohybovat se po různých površích, dobře známá je i jejich schopnost přežít v extrémních podmínkách.
+Vědci se domnívají, že i díky tomu by se švábi mohli v budoucnu dostávat k lidem uvězněným pod zřícenými budovami nebo třeba v jeskyních. Mohli by se využívat i při doručování nebo aplikování léků ve vypjatých situacích, například při alergiích nebo uštknutí.
+Právě doprava na určené místo a doručení léků byla jedním z testovaných aspektů. Úspěšnost samotného doručení na místo byla podle vědců kolem 72 %. Při aplikaci léku ze vzdálenosti 15 cm od potenciálního cíle byla úspěšnost až 95 %.
+Nejnověji odborníci zkoumají různé problémy, které by mohly nastávat – včetně přizpůsobení tvorů a jejich „techniky“ náročným podmínkám, stejně jako blokování signálu potřebného k přenosu informací.

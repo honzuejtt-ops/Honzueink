@@ -1,0 +1,34 @@
+Na Carnegie Mellon University v americkém Pittsburghu se začátkem osmdesátých let vedly po počítačové síti debaty, které by dobře zapadly do dnešních internetových diskusí. Studenti a zaměstnanci řešili práci, politiku i parkování. Mezi oznámeními o přednáškách a ztracených věcech se objevovaly vtipy. A někdo je občas nepochopil.
+Místem setkávání byly bulletin boards – elektronické nástěnky, na které člověk napsal příspěvek a ostatní si jej mohli přečíst a odpovědět. Před sebou přitom mnozí měli textový terminál připojený ke sdílenému počítači. Běžný model ADM-3A zobrazoval 24 řádků po 80 znacích. Písmena, číslice a interpunkce musely zastat i to, co při rozhovoru sděluje hlas nebo obličej. Mezi uživateli byl i informatik Scott Fahlman, který na univerzitě zkoumal umělou inteligenci.
+Výtah, rtuť a příliš věrohodné varování
+V září 1982 se na nástěnce probíralo, co by se stalo s různými předměty ve výtahu, kdyby se utrhlo lano. Neil Swartz přidal konkrétní fyzikální hádanku. Uvnitř výtahu hoří svíčka připevněná na držáku u stěny a na podlaze leží kapka rtuti. Pak lano praskne a kabina začne padat.
+	
+Neil Swartz, 16. září 1982, 12:09:
+	„Co se stane se svíčkou a rtutí?“
+O několik hodin později Howard Gayle odpověděl, jako by někdo pokus skutečně provedl:
+	
+Howard Gayle, 16. září 1982, 17:21
+	Varování!
+Kvůli nedávnému fyzikálnímu pokusu je výtah úplně vlevo znečištěný rtutí. Je také lehce poškozený ohněm. Dekontaminace by měla skončit v pátek v 8:00.
+Část čtenářů oznámení vzala vážně. Následovalo vysvětlování, že žádná rtuť neunikla, a debata o tom, jak podobným nedorozuměním předejít. V dochované diskusi padl návrh označovat vtipy hvězdičkou v předmětu zprávy. Jinému účastníkovi se víc líbilo procento. Další návrh vyhradil hvězdičku dobrým vtipům a procento špatným.
+Hvězdičku nebo procento zvládl terminál zobrazit snadno, jejich význam by se ale čtenáři museli nejdřív naučit. Fahlman hledal názornější symbol, který se vejde do jediného řádku.
+Tři znaky a pokyn otočit hlavu
+Dne 19. září 1982 v 11:44 Fahlman navrhl, aby vtipné příspěvky na nástěnce označovala trojice znaků :-). Připojil krátký návod: „Read it sideways“, tedy čtěte to naležato. Dvojtečka tvořila oči, spojovník nos a závorka ústa. Stačilo naklonit hlavu doleva.
+Ve stejné zprávě navrhl i :-(. Při tehdejším množství žertování mu totiž připadalo úspornější označovat příspěvky, které vtipem nejsou. Zamračený obličej tak měl původně znamenat, že to autor myslí vážně. Význam smutku, nespokojenosti nebo hněvu získal rychle poté.
+Fahlmanovo řešení využívalo běžné znaky, které tehdejší terminály už znaly, takže nepotřebovalo nový program ani grafický displej. Počítač pouze přenesl dvojtečku, spojovník a závorku; obličej v nich rozpoznal až čtenář. Podobně fungovaly i větší kresby z písmen a interpunkce, známé jako ASCII art, ale tento úsměv se vešel i za jedinou větu.
+Třeba prosté „To se ti povedlo“ může být pochvala i výčitka. Připojené :-) nabízí další vodítko, jak slova číst.
+Smajlík se šířil, původní zpráva zmizela
+Nápad se na Carnegie Mellon uchytil a přes tehdejší počítačové sítě putoval na další univerzity a do výzkumných pracovišť. Pomáhali mu i absolventi, kteří po odchodu dál četli univerzitní nástěnky. Vedle úsměvu a zamračení se postupně prosadilo mrknutí ;-) i kratší podoby bez nosu, například  :).
+Lidé současně vymýšleli celé sbírky obličejů, od překvapených přes obrýlené až po postavy se zvláštními pokrývkami hlavy. Kdo měl klávesnici, mohl zkusit sestavit vlastní. Fahlman ovšem sám připouští, že podobný nápad mohl mít už někdo před ním.
+Samotnou zprávu si přitom neuschoval. V září 1982 působila jako drobný příspěvek do běžné debaty, ne jako dokument, který se bude jednou citovat při výročí. Když se ukázalo, jak daleko se smajlík rozšířil, původní text už nebylo snadné dohledat.
+Zachránily jej univerzitní zálohy. Pátrání vyžadovalo najít staré magnetické pásky, funkční mechaniku a způsob, jak přečíst někdejší formát dat. Jeff Baird nakonec 10. září 2002 obnovil diskusi ze zálohy počítače Spice VAX z října 1982. Původní zpráva se tak vrátila těsně před svými dvacátými narozeninami, včetně přesného času odeslání.
+Japonci vměstnali obrázky do mobilu
+Na japonských mobilech se mezitím začaly vedle textu objevovat drobné obrázky. Fahlmanův obličej patří mezi emotikony, tedy výrazy složené z textových znaků. Emoji jsou samostatné obrázkové symboly: vedle tváří třeba srdce, dopravní prostředky nebo jídlo. Jejich japonský název spojuje slova pro obraz a psaný znak.
+Významnou ranou sadu vytvořil Shigetaka Kurita pro mobilní službu i-mode operátora NTT DoCoMo, uvedenou v roce 1999. Na malém displeji a v krátké zprávě měl obrázek sdělit něco, na co by jinak bylo potřeba několik slov. Kurita pracoval s rastrem pouhých 12 × 12 bodů a vzniklo 176 symbolů. Byly mezi nimi obličeje, značky počasí i dopravních prostředků.
+Kuritova sada se později dostala do sbírky newyorského Muzea moderního umění. V mobilech se ale emoji objevily dříve: telefon J-Phone SkyWalker měl vlastní sadu už v roce 1997.
+Aby úsměv dorazil i na jiný telefon
+Japonské sady měly nepříjemný problém. Operátoři používali odlišné symboly a vlastní způsoby jejich kódování. Obrázek odeslaný z jedné sítě se v jiné nemusel zobrazit správně, případně ze zprávy zmizel. Přenést obyčejné :-) bylo podstatně jednodušší.
+Řešení nabídl Unicode, společný standard pro kódování textu. Stejně jako přiděluje kódy písmenům různých abeced, mohl je přidělit i emoji. Zásadním mezníkem byla verze 6.0 z roku 2010, která doplnila stovky symbolů používaných japonskými operátory. Telefon příjemce tak mohl poznat, jaký znak dostal, a zobrazit jej vlastní kresbou. Proto tentýž obličej na různých telefonech dodnes nevypadá úplně stejně.
+V roce 2011 Apple v iOS 5 zpřístupnil emoji klávesnici i uživatelům mimo Japonsko. Nabídka obrázků se dál rozrůstala o odstíny pleti, další profese a podoby rodin.
+Jeden obrázek přitom může být složený z několika znaků. Emoji ženy u počítače například spojuje znak ženy a notebooku pomocí neviditelného spojovacího znaku. Telefon, který takovou kombinaci podporuje, ukáže jedinou kresbu. Systém, který ji nezná, může zobrazit její části vedle sebe.
+Zářijová verze Emoji 18.0 z roku 2026 přidává například maják, meteor nebo nakládanou okurku. Nové symboly se ale do telefonů dostávají až s podporou výrobců a aktualizacemi softwaru. Původní :-) takovou aktualizaci nepotřebuje. I po více než čtyřiceti letech stačí tři znaky, které měl Fahlman na klávesnici, a čtenář, který v nich uvidí úsměv.

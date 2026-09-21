@@ -1,0 +1,48 @@
+Mutter
+Co se dozvíte v článku
+GNOME by nyní mělo být plynulejší díky přepracovanému systému doručování snímků a vylepšením v časování snímků v kompozitoru Mutter. To by se mělo projevit hlavně v situacích, kdy je systém pod zátěží. Díky optimalizacím při kopírování snímků se snížily také systémové nároky nahrávání obrazovky.
+Kromě toho byla odstraněná podpora pro rozhraní starých ovladačů pro Nvidii, což citelně zjednodušilo kód.
+Shell
+Samotné rozhraní GNOME se v tomto vydání nedočkalo mnoha pro uživatele viditelných změn. Nejzajímavější novinkou je ovládání nástroje pro vytváření snímků obrazovky pomocí klávesnice. Pokud chcete třeba vytvořit snímek výřezu obrazovky, můžete nyní výřez nastavit pomocí šipek na klávesnici.
+Bezpečnost a přihlašování
+Přihlašovací obrazovka (GDM) nově podporuje webové způsoby přihlášení k účtu (přes odkaz a nebo QR kód) a FIDO2/passkey.
+GNOME Remote Desktop nyní podporuje přihlašování pomocí Kerberosu a také umožňuje vzdáleně připojit smartcard. Pokud se tedy potřebujete vzdáleně připojit k počítači, na kterém chcete použít třeba Yubikey, které máte u sebe, nyní by to mělo být možné.
+Ukládání a načítání hesel z klíčenky nyní probíhá pomocí oo7, což je služba nezávislá na konkrétním desktopovém prostředí, která by měla poskytovat větší bezpečnost než dosud používaný GNOME Keyring. Dá se očekávat, že tuto systémovou službu časem adoptují i ostatní desktopy.
+Nastavení
+Asi nejužitečnější novinkou v Nastaveních je možnost vypnout touchpad, pokud je připojená myš. Máte-li problém s tím, že se touchpadu omylem dotýkáte, když píšete, tohle vám může hodně pomoct.
+Snímače otisků prstů jsou dnes standardní výbavou notebooků. GNOME se je snaží v posledních vydáním podporovat co nejlépe a v tomto vydání byl vylepšený dialog pro nastavení otisků.
+V nastavení sítě přibylo pole pro nastavení prohledávaných domén DNS a naopak byla zcela odstraněna podpora pro nastavení WEP u wifi sítí. Vzhledem k tomu, že tento standard byl Wi-Fi Alliance označený za zastaralý před více než 20 lety a dobrých 15 let je pro svoji nízkou bezpečnost zakazovaný, asi pro něj nikdo brečet nebude.
+Nově je možné v nastaveních displejů povolit autorotaci. Pokud má zařízení gyroskop, může obrazovka měnit orientaci, jak to známe z chytrých telefonů. GNOME se používá převážně na desktopu, takže tohle většina uživatelů nevyužije, ale velmi dobře funguje také na mobilních zařízeních a jsou uživatelé, kteří ho používají jako prostředí třeba na PostmarketOS, což je linuxový systém pro mobilní telefony. Pro ně tohle bude vítaná novinka.
+Aplikace
+Soubory
+Nautilus (aka Soubory) se dočkal několika novinek, které zlepšují uživatelskou přívětivost: když přesouváte více souborů, zobrazí vám nově, kolik souborů to je. Přesunuté soubory pak zůstávají dál označené, abyste s nimi mohli dál jednoduše pracovat. Zlepšila se také rychlost. Déle trvající operace jsou nyní víc asynchronní a neblokují zbytek aplikace.
+Mapy
+GNOME Maps získaly jednu z nejzajímavějších aktualizací za poslední roky. Největší novinkou je možnost stáhnout si mapové dlaždice vybraných oblastí pro offline použití. Doufám, že se tohle časem dostane i do knihovny libshumate a budou moct offline mapy používat i další aplikace.
+Mapy umí také čím dál více pracovat s daty z Transitous. Nově umí u nádraží zobrazit odjezdy a příjezdy a jejich aktuální zpoždění. Rozhodně to nefunguje plošně, ale je to limitované tím, co umí Transitous. V ČR mi Mapy byly schopné zobrazit odjezdy u autobusového nádraží Florenc, ale u ostatních si vylámaly zuby. Vyhledávání spojení, které uměly už předchozí verze, u nás funguje lépe.
+Software
+Výchozí nástroji pro správu softwaru se dlouhodobě vyčítá pomalost. Subjektivně vnímaná rychlost aplikace by se nyní měla výrazně zlepšit, protože Software už při prvním startu nečeká na obnovení metadat, ale načítá je z mezipaměti. Katalog tedy načte okamžitě a vy můžete s aplikací hned pracovat.
+Kalendář
+Backend kalendářové aplikace byl z velké části refaktorovaný, což se citelně projevilo v odezvě. Scrollování měsíčním pohledem s mnoha událostmi by nyní mělo být výrazně rychlejší. Zcela přepracovaného rozhraní se dočkal také editor událostí.
+Papers
+Prohlížeč dokumentů Papers už umí elektronicky podepisovat dokumenty nějaký čas. Jak ale i já v praxi zjišťuju, dokument může být opatřený podpisem pomocí osobního certifikátu, ale pokud lidi v dokumentu nevidí vaši muří nohu, dokument považují za nepodepsaný. V této verzi tedy Papers přidávají možnost opatřit dokument vizuálním podpisem, který uděláte myší, prstem nebo dotykovým perem.
+Loupe
+Výchozí prohlížeč obrázků Loupe nově v metadatech zobrazuje informace o autorovi, licenci a barevném profilu. I na základě toho začalo GNOME u obrázků vkládat autora a licenci přímo do metadat. Týká se to třeba pozadí, která pro toto vydání byla vytvořená.
+Sushi
+Sushi dlouhá léta v GNOME slouží jako prohlížeč souborů. Stačí v Nautilu vybrat soubor a stisknout mezerník. Poradí si s obrázky, videi, dokumenty. V posledních letech se mu ale nikdo nevěnoval a tak nedržel krok se zbytkem GNOME. To se změnilo v tomto vydání. Sushi je portované na GTK 4 a libadwaita. Používá nejnovější technologie a vzhledem lépe zapadá do aktuálního GNOME.
+GNOME Circle
+Circle představuje soubor aplikací, které nejsou přímo součástí GNOME, ale dodržují stejná designová pravidla, souzní s jeho filozofií a využívají jeho infrastrukturu. Za posledního půl roku v něm přibyly tři aplikace:
+- 
+		Bazaar – pokud potřebujete nějaký nástroj na instalaci a správu flatpaků, určitě vyzkoušejte Bazaar. Původně vznikl v komunitě Universal Blue pro distribuce jako Bazzite nebo Bluefin, ale přesunul se pod křídla GNOME a v tomto vydání se dostal i do Circle. Je podstatně rychlejší než GNOME Software a umí věci navíc jako například zobrazovat počet stažení na Flathubu. Na rozdíl od GNOME Software si ale neporadí systémovými aktualizacemi a klasickými balíčky.
+Pro vývojáře
+GTK 4.23
+V předchozí verzi GTK získalo vlastní vykreslovač SVG v podobě GtkSvg. V této verzi na tom staví a vykreslují se jím všechny ikony v SVG. Zároveň přibyl nový GtkSvgWidget, díky kterému se SVG vykresluje přímo v aplikacích.
+GTK 4.23 přináší také lepší podporu pro neceločíselné škálování v podobě tzv. snappingu. Pokud nějaký objekt velikosti pixelu přesahuje do více pixelů, GTK se ho snaží inteligentně namapovat na mřížku pixelů tak, aby se vešel právě do jednoho pixelu.
+Libadwaita 1.10
+Největší novinkou v knihovně libadwaita, která představuje nadstavbu nad obecnějším GTK a definuje podobu GNOME, jsou AdwCssClassBinding, které přidává třídu CSS widgetům, pokud má vlastnost Gobject určitou hodnotu, a :prefix a :suffix pro AdwSidebar a AdwViewSwitcherSidebar, což vývojářům umožňuje jednoduše vkládat widgety před a za obsah postranního panelu.
+Lokalizace
+Zdá se, že český překladatelský tým GNOME překonal krizi a nový koordinátor Patrik Sivek se o něj dobře stará. U příležitosti vydání verze 51 napsal blogpost, v kterém aktuální stav překladatelského týmu a překladů do češtiny shrnuje. Pořád platí, že GNOME je přeloženo do češtiny kompletně kromě necelých 100 řetězců v komponentě sysprof. Překlady dokumentace se v tomto cyklu posunuly z 87 na 94 %.
+Slovenské překlady se také mírně zlepšily. GNOME 50 bylo do slovenštiny přeloženo z 91 %, aktuální vydání pak z 95 %. Výrazně se posunuly překlady dokumentace. Ta byla dlouhé roky zcela nepřeložená a platilo to i o minulém vydání. To současné už ale má dokumentaci přeloženou ze 42 %.
+Na co se těšit
+V posledních vydáních se stalo nepříjemným pravidlem, že velké změny nabírají skluz. Ukládání a obnovování sezení mělo přijít už v jarním vydání, nakonec bylo odsunuto do podzimního a ani do něj se nakonec nedostalo. Proto jej můžu opět zmínit mezi věcmi, na které se můžeme těšit, ale jistotu nemáme.
+Mutter v tomto vydání získal podporu pro protokol Waylandu, který umožňuje rozostřené pozadí. Zatím se ale tento efekt nikde v GNOME nepoužívá. Objevují se ale témata třetích stran jako např. Aura Glass, které tyto efekty přinášejí. Je možné, že GNOME něco podobného v budoucnu také přinese. Bude to hodně o tom najít správnou míru, protože například skleněný design v iOS se s velkým nadšením uživatelům nesetkal.
+V tomto cyklu designéři experimentovali také s novým rozhraním pro vyhledávání v Shellu. Jednalo se o příliš velkou změnu na to, aby mohla být tak rychlé zařazená do vydání, ale je možné, že se jí dočkáme v některém z následujících vydání.

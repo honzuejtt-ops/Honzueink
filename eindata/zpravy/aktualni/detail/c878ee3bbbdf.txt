@@ -1,0 +1,17 @@
+„Pomooooc! Ta myš se mi sama hýbe!“ křikla na mě před mnoha lety sestřička v jedné ambulanci, kde jsem tehdy krátce vypomáhal.
+Znáte to. Na optický senzor počítačové myši se přilepí trocha paštiky nebo marmelády a kurzor na obrazovce začne pomalu cestovat, i když myš v klidu stojí na podložce. Vstal jsem s tím, že vyřeším drobný hardwarový problém. Jenže myší to nebylo. Na liště běžel neznámý program pro vzdálenou správu a kurzor po ploše běhal až moc svižně – zrovna se snažil otevřít složku s naskenovanými zprávami od pacientů, která byla na ploše. (Hmm. 🤔)
+Protože jsem roky pracoval v IT, reagoval jsem reflexem: okamžité odpojení LAN, zabití procesu, kontrola logů a odstranění škodlivého softwaru. Naštěstí útočník nic během těch pár sekund provést nestihl a žádná data neodešla.
+O žádný sofistikovaný hackerský průnik do sítě nešlo. Pár minut předtím sestřičce zavolal „pán z banky“ kvůli fiktivnímu problému s úvěrem a pod časovým tlakem ji přiměl aplikaci stáhnout a spustit. Vishing v praxi.
+Podle dat stojí za 80 až 90 % úspěšných kybernetických útoků ve zdravotnictví sociální inženýrství – tedy phishing, vishing a různé formy manipulace. Útočníci nelámou šifrování databází. Zkouší, jestli někdo v shonu mezi dvěma pacienty neuvěří přesvědčivému hlasu v telefonu nebo e-mailu.
+Při debatách o eHealth často řešíme bezpečnost centrálních registrů, šifrování nebo celkovou architekturu systémů. Centrální architektura má špičkové zabezpečení – od silné autentizace a autorizace přes bezvýznamové identifikátory až po přísný audit přístupů a událostí.
+Zdravotníci ale nejsou kybernetičtí experti. Pod tlakem plné čekárny a neustále zvonících telefonů je lidské selhání otázkou chvilky.
+Princip nejnižších práv: K běžné práci na počítači v ordinaci není potřeba být přihlášen pod administrátorským účtem. Pokud sestra nebo lékař v nepozornosti kliknou na špatný odkaz nebo spustí stažený soubor, systém bez práv správce nedovolí instalaci škodlivého kódu.
+Kultura psychologického bezpečí: Nejúčinnější obranou proti vishingu a phishingu není hrozící trest, ale rychlost rozpoznání situace a zásahu. Pokud navíc sestra nebo lékař ví, že mohou bez strachu okamžitě říct „asi jsem udělal/a chybu“, zásah se může stihnout vyřešit dřív, než se data ztratí.
+Ochrana koncových bodů: Pravidelné vzdělávání koncových uživatelů je klíčové. Národní eHealth architektura je stavěná bezpečně. Ochrana dat pacientů je ale vždy jen tak silná, jak bezpečné je prostředí v jednotlivých ambulancích, které k nim přistupují.
+Lékařské tajemství dnes nechráníme jen zamčeným šuplíkem s kartotékou, ale i tím, že vytváříme a chráníme bezpečné IT prostředí na všech úrovních – od infrastruktury až po lidský faktor.
+Praktický lékař v podhůří Beskyd. Propojuji klinickou medicínu s architekturou moderního eHealth.
+Přečteno 58 189×
+Přečteno 45 371×
+Přečteno 42 585×
+Přečteno 37 304×
+Přečteno 34 174×

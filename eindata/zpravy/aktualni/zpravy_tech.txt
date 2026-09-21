@@ -1,4 +1,63 @@
-|T|Žádné zprávy|D||P|Nebyly nalezeny.|X|Zkuste to později.|E||T|Postřehy z bezpečnosti: umělá inteligence chce nahradit finanční poradce|D|20.9. 22:00|P|V dnešním díle se podíváme na finance pod taktovkou umělé inteligence, jak Revolut uvěřil podvrženému vládnímu emailu, podvody severokorejských uchaze...|X|AI finanční poradci – nový postrach kyberbezpečnosti?
+|T|Žádné zprávy|D||P|Nebyly nalezeny.|X|Zkuste to později.|E||T|Astronomové potvrdili nejmladší známou planetu. Elias 2-24 b odporuje dosavadním vědeckým teoriím|D|21.9. 05:45|P|Plynné těleso Elias 2-24 b je mladší než jeden milion let • Tento obří svět obíhá velmi daleko od své mateřské hvězdy • Astronomové ověřili jeho skute...|X|Plynné těleso Elias 2-24 b je mladší než jeden milion let • Tento obří svět obíhá velmi daleko od své mateřské hvězdy • Astronomové ověřili jeho skutečný pohyb díky starším snímkům
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Produkt zahodit, firmu zeštíhlit a přeskládat. Nové technologie nutí firmy začít znovu|D|21.9. 04:30|P|Řada technologických firem dlouho slavila úspěchy s řešením, které s rozvojem umělé inteligence přestalo dávat smysl. Přinášíme příběh jedné z těch, k...|X|Kdyby Gejza Nagy loni v létě neskončil se zánětem slepého střeva v nemocnici, možná by dnes firma Luigi's Box, jejímž je spoluzakladatelem, jela ve svých kolejích dál. Obsluhovala 4000 aktivních zákazníků. Fulltextové vyhledávání a doporučování produktů pro e-shopy, které deset let vyvíjeli, prý v testech poráželo i globální hráče se stovkami milionů eur nalitými do vývoje. Produkt, o který se roky firma opírala, fungoval a funguje. Jenže Nagy v nemocnici získal čas v klidu a „dohnal, co zameškal v oblasti vibekódingu“. To slovo pro mnohé funguje jako FOMO, strach, že pokud se programování s pomocí AI nezačnu věnovat teď, něco mi uteče. V případě Nagyho pomohlo změnit pohled na to, jakým směrem by se firma měla ubírat. Takže zahodila to, co jí deset let vydělávalo „Nechceme být Kodak,“ říká Nagy.
+Vrátil se z nemocnice s přesvědčením, které pak musel prodat spoluzakladatelům, Tomášovi Kramárovi (CTO) a Michalovi Barlovi (CPO), a hlavně stovce vlastních lidí. Že staré řešení, jakkoli si myslí, že je dobré, na příští dekádu nestačí.
+Znamená to zapomenout na dva a půl milionu eur ročně (přes 60 milionů Kč) směřovaných do vývoje produktu. Slovenská technologická společnost Luigi's Box byla založena v roce 2016 týmem odborníků a vědců, kteří předtím léta zkoumali personalizaci, profilování a vyhledávání na univerzitách. Zmíněná částka šla do rozvoje produktu poslední roky, dřív to bylo o něco méně. A tak když spolu řešíme celkovou sumu za vývoj něčeho, co právě nechávají být, Nagy odhaduje, že může jít zhruba o 10 milionů eur (240 milionů Kč).
+Firma to zahodila. Přestavěla se, což je v podstatě kódové slovo pro zeštíhlování. V březnu se Luigi's Box loučil s pětadvaceti lidmi a teď jich je ve firmě kolem stovky.
+Pak firma postavila na zelené louce nový produkt, který dnes běží u prvních zákazníků a na který se má postupně migrovat celá stará zákaznická základna.
+„Stará cesta má nějakou rychlost a svoje limity. Limitovali bychom se v tom, jak dokážeme produkt rozšiřovat a reagovat na potřeby trhu,“ říká Nagy. Co by se tedy stalo, kdyby pokračovali se starým modelem? „Je možné, že už bychom tu za pár let nebyli,“ odhaduje.
+Dobrý den, tady agent
+Posun této společnosti (a dalších) je třeba vnímat v oboru, ve kterém působí. Luigi's Box poskytuje e-shopům inteligentní vyhledávání a doporučování produktů a umožňuje jim stavět na datech o nákupním chování zákazníků.
+Nagy ale popisuje významný posun viditelný zřejmě pro každého, kdo hledá cokoliv na internetu, a v e-commerce ještě o to víc. Zatímco ještě před třemi roky psali lidé do vyhledávače e-shopu typicky například „iPhone 15“ nebo „tenisky Adidas“, ChatGPT naučil lidi s počítači mluvit. To znamená používat delší věty, popisné dotazy a občas i kontext. „Třeba potřebuji najít nějaký summer chic outfit na svatbu,“ dává za příklad. Staré řešení by nenašlo nic.
+Ale kromě takových dotazů se dostávají do online obchodů i ty, které tam vkládají AI agenti. Ti nakupují za lidi. Zatím jde o promile provozu, ale hráči v oboru, včetně zakladatelů Lugi`s Box, věří, že číslo se bude rychle měnit. A tak sem míří pozornost investorů, softwarových firem i těch e-shopů, které nechtějí opakovat příběh o kamenných obchodech, jimž e-commerce zpočátku ubíral „jen“ pár procent obratu.
+„Provoz od agentů roste a přidává se ke stávajícím lidským návštěvníkům, e-shopy tak musí umět obsloužit obojí. Agent sice umí dotaz formulovat přesněji a strukturovaněji než člověk, ale pochopit, co tím vlastně myslí, zůstává stejně těžké jako dřív, protože i za dotazem od agenta je živý člověk, který ho do obchodu poslal s nějakou potřebou,“ vysvětluje Nagy. Gejza je pyšný na to, že jejich nový engine je od základů je postavený jak pro člověka, tak pro agenta, který nakupuje jménem člověka.
+Vysvětluje, že roky dat o tom, jak tyto entity nakupují, nikdo v tuto chvíli mít nemůže. Firma ale staví na zkušenosti s lidmi a jejich nákupním chování a potřebách. S tím prý předává agentům strukturovaný kontext o potřebách uživatele a zajisťuje plynulou interakci mezi AI a e-shopem. K tomu pracuje se sémantickými modely, extrahuje do indexu produktů i informace z obrázků a dokáže bez ručního zadávání synonym nastavit relevanci prakticky pro jakýkoli popis. Chápe záměr, zvládá projít data více než 100 milionů produktů a autonomně testuje a nasazuje pravidla pro optimalizaci prodeje.
+Zní to idylicky? Firmu to chvílemi bolelo.
+Zmíněné loučení s některými pracovníky proběhlo na mnoha úrovních a hezky ilustruje posuny firem s vývojáři. Odcházeli jak junioři, tak management. Každopádně to byli lidé, jejichž práce dnes spadá do toho, co zvládne agent.
+„Pokud jsme měli nějakou juniorní roli, která jen tvořila kód a nedělala nic víc, než jen vykonávala zadání, stala se zbytečnou,“ říká Nagy. „Agent dělá to, že mu povím ‚ok, udělej toto‘, a on to udělá. Pro lidi je lehčí předat požadavek rovnou agentovi,“ popisuje.
+Druhá skupina však byli senioři s patnácti lety zkušeností, kteří ve firmě vedli samostatné produktové týmy. Vůbec neodešli proto, že by byli špatní, říká Nagy. Ale proto, že firma tuto strukturu už nepotřebovala. „Kdysi jsme vytvářeli týmy podle produktů. Teď jsme vytvořili jeden tým, který se stará o relevanci napříč všemi produkty, a další tým například na katalog a produktová data. Tyto týmy potřebovaly jiné lídry,“ vysvětluje.
+Někteří odcházeli proto, že dělali práci v úzkém profilu typu jedna specializace nebo jeden izolovaný proces. „Potřebujeme ve firmě lidi, kteří dokáží spojit více věcí a mají přesah. Izolovaná věc je práce, kterou agent může dělat stejně tak,“ říká. U některých to znamenalo, že se posunuli do jiné role. Kde to nešlo, rozloučili se. Čímž se Nagy zároveň dostává k tomu, že společnosti nyní potřebují lidi s konkrétním typem přemýšlení, kteří jsou ochotni postupovat s AI proudem. Zároveň musí takovou změnu přijmout i střední vedení. To Nagy opakuje hned několikrát. „Kdybych byl nadšenec jen já, nefungovalo by to,“ myslí si.
+Zajímavým detailem je, že firma zároveň nabírala. Machine learning researchery, kteří ve staré struktuře nebyli v takové kvantitě potřeba. Lidi, kteří umí trénovat a vylepšovat vlastní modely.
+Apokalypsa na scéně?
+Kontext širšího trhu, na jehož základě se nejen tato firma mění, vychází z katastrofického termínu SaaSpokalypsa. Vyjadřuje, jak služby, které si může v podstatě kdokoliv nakódovat s pomocí umělé inteligence, ničí některé firmy. Celosvětově je nejzářnějším příkladem skutečnost, že po zveřejnění pluginů pro Claude Cowork a dalších začátkem února 2026 zmizelo během několika dní z akcií softwarových firem zhruba 285 miliard dolarů tržní hodnoty. Trh začal přeceňovat SaaS firmy pod tlakem představy, že část jejich funkcí dokážou převzít AI agenti. SaaSpokalypsa zní tragicky, ale obvykle tak ve firmách nepůsobí, ostatně, hodnota mnoha firem zase později rostla.
+V Česku se ale firmy přeceňují také. Například předseda České startupové asociace Jiří Vicherek potvrdil, že „poslední měsíce je ‚SaaSpokalypsa' i v českém startupovém prostředí téma číslo jedna“. A třeba Jan Staněk z Purple Ventures už na jaře vysvětloval, že „AI dramaticky snižuje bariéry pro vývoj softwaru a nutí nás přemýšlet, jestli některé SaaS produkty za pár let vůbec budou mít smysl jako samostatné firmy“.
+Vedle toho tatáž technologie mění způsob, jakým firmy staví týmy programátorů. Gartner letos předpověděl, že podíl organizací, které ve velkém přejdou na menší vývojářské týmy, vzroste z 15 % v roce 2026 na 60 % v roce 2029. Typický nový tým má mít čtyři až pět lidí a někdy jen dva až tři. AI přitom má být i důvodem, proč se mění samotné hranice rolí.
+Deloitte se pak s podobným závěrem věnuje i tomu, že vzniknou nové role: AI governance specialist, designér promptů, designér kontextu nebo AI-augmented UX designer. A ve velkém AI-native, doménově specializovaní inženýři, kteří dokáží rychle vytvářet nové schopnosti bez podpory klasického IT.
+Slova výše zmíněných odborníků a nejspíš i tato data se letos v Česku odrazila na konkrétních a velmi známých jménech. Productboard, jedna ze tří firem, která získala status jednorožce s hodnotou přes miliardu dolarů, letos v dubnu oznámil přechod na „AI-only“ model a propuštění třetiny zaměstnanců. Mews, jeden z nejhodnotnějších zdejších scale-upů, letos propustil 15 % lidí, protože zakladatelé „chtěli jednat hned, a ne až v okamžiku, kdy se kolem nás nenávratně změní situace a s ní společnost, kterou pro ni budujeme,“ uvedl Richard Valtr, jeden z nich. V podobných reáliích propouštělo i Kiwi.com, na začátku roku mělo jít o zhruba 250 lidí, zmenšování firmy přitom probíhalo už loni.
+Mimochodem, Deloitte očekává také menší podíl juniorních vývojářů, což je nicméně něco, co zatím žádná firma v Česku ve velkém otevřeně nepřiznala.
+Že si to zákazníci nakódují sami? Ne tak úplně
+Vibekódování mnohé jednoúčelové SaaS řešení ohrožuje. V Luigi`s Box si ostatně podobně některé menší nástroje, které firma interně používala, vyrobili také. Ale Nagy si je vědom, že takový postup má své hranice.
+„Pokud to řešení pracuje s větším množstvím dat a pracuje real-time, tedy musí fungovat v desetinách milisekund, nemyslím si, že je ohrožené,“ říká Nagy. Vibekóding možná vygeneruje kód, ale zvládnout škálování, vlastní modely či doménovou znalost z desetiletí provozu – tam už jsou potřeba další znalosti.
+Rozhodnutí o novém směru firmy oznámili letos v březnu. Do září pak vznikl nový produkt v procesu, který Nagy označuje za „brutální sprint“.
+Popisuje další zajímavosti: kdyby prý chtěli deset let vývoje postavit znovu na zelené louce klasickou cestou, vyhradil by si možná dva roky. Díky agentickému inženýringu to zvládli za šest měsíců. Ale agenti všechno nedělali: „Měl jsem představu, že jsou tak silní, že zautomatizujeme klidně 90a až 95 % práce. Po dvou kvartálech vidíme, že jsme někde na 80 %,“ říká Nagy.
+Pětinu si v jeho očích bylo potřeba ponechat, aby systém reálně fungoval v podmínkách, v jakých je třeba. „Agent nám pomohl tvořit rychleji masu kódu. Ale stále je těch posledních 2...
+(Pokracovani na webu)|E||T|ČT plánuje zrušit stovky míst. Rada navíc usiluje o externí personální audit|D|21.9. 04:00|P|Česká televize má do čtyř let zrušit až 350 pracovních míst proti stavu v roce 2025. Snižování stavů má pokračovat bez ohledu na to, zda Rada ČT prosa...|X|Rada České televize chce po vedení stanice, aby do půlky října připravilo detailní parametry pro zadání externího personálního auditu. Finanční ředitel David Břinčil členy kontrolního orgánu upozornil, že podobná prověrka celé instituce by podle předběžného průzkumu trhu mohla stát 15 až 20 milionů korun.
+Přesnou dobu jejího dokončení navíc nyní nikdo nezaručí. V debatě padl odhad jednoho až jednoho a půl roku. Česká televize bude muset vypsat veřejnou zakázku se všemi příslušnými náležitostmi. A pokud bude mít někdo z uchazečů námitky, úspěšné uzavření tendru se může protáhnout o řadu měsíců.
+Personální audit si za své téma vzala především nová radní Lucie Plíšková, kterou letos v červnu zvolili poslanci vládní koalice ANO, SPD a Motoristů. V České televizi dříve pracovala jako regionální redaktorka, moderovala podcast Andreje Babiše a teď je učitelka.
+Tvrdí, že dosavadní podklady od vedení televize neposkytly radním dostatečný přehled o personální situaci. Management jim dal k dispozici závěry předchozího hloubkového auditu. „Přiznám se, že jsem z toho měla pocit, že mi asi chybí příloha. Pro mě to nebylo zcela dostatečné, abych se v tom zorientovala,“ řekla. Nový audit by podle ní mohl dát managementu oporu při rozhodování, která místa zrušit. „Proč tak činí? Proč si myslí, že ta místa jsou zbytná?“ shrnula otázky, na které by audit mohl dát odpověď.
+Podporu našla u dalšího nového radního Martina Chalupského, jehož kromě vládní koalice podpořili při červnové volbě také opoziční poslanci z ODS a STAN. Dlouholetý manažer komunikace energetické společnosti Innogy (dříve RWE) míní, že Rada ČT by měla televizi pomoci projít „neklidným obdobím“ a audit by mohl posloužit při přípravě hospodaření na rok 2028. Dosud dodaný materiál podle něj neosvětlil personální situaci ani strukturu řízení.
+Cena až 20 milionů, čas bez záruky
+Uskutečnění personálního auditu nebude rychlá ani levná záležitost. Finanční ředitel ČT David Břinčil upozornil, že by se s náklady na audit muselo počítat v rozpočtu na rok 2027. „V současné době je to pro přípravu rozpočtu na rok 2027 významná částka,“ upozornil vzhledem k očekávaným nákladům na zakázku v předpokládané výši až 20 milionů korun. Radní Ivana Chmel Denčevová k tomu poznamenala, že by bez přesnějšího zadání považovala takový výdaj za „zbytečně dobrodružný“.
+Debata o auditu zabrala na minulém jednání Rady ČT necelou hodinu. Původní znění návrhu radní Lucie Plíškové bylo důraznější a rovnou ukládalo generálnímu řediteli zajistit audit celé instituce, bezodkladně vyhlásit výběrové řízení a zároveň dodat výsledky tak, aby se promítly do rozpočtu na rok 2028. Po debatě všechny tyto části vypadly.
+Konečné usnesení pouze žádá Hynka Chudárka, aby do příštího řádného zasedání 14. října předložil parametry auditu jako věcnou specifikaci zadávacího řízení. Pro hlasovalo deset radních, nikdo nebyl proti a osm se zdrželo.
+Odpůrci rychlého postupu nezpochybňovali audit jako takový. Místopředseda Rady ČT Vlastimil Ježek namítal, že návrh své kolegyně dostali radní jen několik minut před jednáním a použité formulace působily, jako by kontrolní orgán byl nadřízeným generálního ředitele. Radní Tomáš Řehák upozornil, že zvyšování efektivity není totéž co mechanické škrtání a že volba konkrétních úspor patří managementu. Podle Ivany Chmel Denčevové by měl mít audit více variant a rozlišovat mezi profesemi. Tvůrčí práci podle ní nelze posuzovat jako v „továrně na cvičky“.
+Finanční ředitel David Břinčil při debatě s radními potvrdil, že rychlost výběru dodavatele ani samotného auditu televize nemůže garantovat. Jako příklad uvedl zakázku na právní služby pro radu: kvůli námitkám se místo několika týdnů protáhla přibližně na půl roku. Také samotná délka následné prověrky by závisela na předložených nabídkách nebo na velikosti týmu zvoleného dodavatele.
+Původní představa, že by výsledky auditu ovlivnily už rozpočet na rok 2028, proto podle zástupců vedení časově nevychází. Televizní rozpočet se začíná připravovat v létě předchozího roku. Pokud by výsledky přišly až současně s jeho předložením radě, nebylo by možné je do návrhu zapracovat.
+Vedení už místa ruší
+Na personální opatření každopádně přijde řada i bez externího auditu. Schválené dlouhodobé plány na roky 2026 až 2030 v tomto období počítají s postupným snížením počtu pracovních míst o 10 až 12 procent proti roku 2025. Pro srovnání: výroční zpráva za rok 2025 uvádí, že Česká televize měla na konci loňského roku v průměru 2878 zaměstnanců a zrušila necelých devadesát míst. Znamenalo by to, že v následujících čtyřech letech bude škrtnuto ještě 290 až 350 míst. Nejvíc zaměstnanců pracuje v pražské centrále, na brněnské a ostravské studio dohromady připadá 447 míst.
+K poklesu stavů musí dojít bez ohledu na to, jestli Rada České televize zadání externího auditu schválí, nebo neschválí. Jinak by totiž vedení nesplnilo zmíněné dlouhodobé plány, které kontrolní orgán závazně schválil v říjnu 2025. Kvůli růstu mezd by navíc podle finančního ředitele Davida Břinčila mohl být pokles pracovních míst nakonec ještě vyšší, aby televize dodržela stanovený objem mzdových nákladů.
+Jednotliví vedoucí už proto posuzují efektivitu a potřebnost pracovních míst. Břinčil tento proces obrazně přirovnal k internímu personálnímu auditu, následně však upřesnil, že nejde o formalizovanou prověrku ani o samostatný závěrečný dokument. Manažeři mají zkrátka navrhnout, která místa lze zrušit, aby televize splnila dlouhodobé plány.
+Přípravy probíhají v době nejistoty kolem financování veřejnoprávních médií. Generální ředitel Hynek Chudárek už radě předložil možný úsporný scénář pro rok 2027, který proti dlouhodobým plánům snižuje výdaje o 350 milionů korun. Počítá s odkladem investic, částečným omezením výroby a pokračujícím poklesem počtu míst.
+Na říjnovém zasedání kontrolního orgánu lze proto očekávat další obsáhlou diskusi nad tím, co vlastně rada požaduje, v jakém rozsahu, k čemu mají výsledky sloužit a kolik to celé bude vůbec stát. To vše v situaci, kdy není jasné, zda, kdy a v jaké podobě budou schváleny změny ve financování České televize, o které usiluje koaliční vláda Andreje Babiše. První čtení zákona se koalice rozhodla zahájit až po senátních a komunálních volbách, které budou 9. a 10. října.|E||T|„Neurální vykreslování“ DLSS 5 už jde i na grafikách od Intelu. Port pro GPU Arc napsala kompletně AI|D|21.9. 04:00|P|Už i grafické karty Intel Arc mají svůj experimentální port AI vylepšení obrazu DLSS 5, nedávno vydaného Nvidií. K praktické použitelnosti má ale dale...|X|V záměrech Nvidie měla být nyní vydaná technologie AI vylepšování obrazu ve hrách DLSS 5 určitě – jako předchozí funkce nesoucí značku DLSS – exkluzivní výsadou grafik GeForce, ne-li rovnou „vendor lock-in“ k potlačení konkurence. Nicméně se zdá, že DLSS 5 paradoxně je zatím nejsnazší dostat i na konkurenční grafické karty, byť není jasné, zda i v prakticky použitelné formě. Modderům se ji teď už povedlo spustit i na GPU od Intelu.
+DLSS 5 na Intel Arc 140V
+Krátce po oficiálním vydání DLSS 5 (kterému zhruba o týden předcházel únik dotyčných knihoven) se objevil softwarový projekt, který celý filtr a AI model, na kterém stojí, zprovozňuje na grafikách od AMD s architekturou RDNA 3 a 4. Ukazuje se, že ani GPU Arc od Intelu možná nezůstanou stranou. Na Githubu se objevil projekt vývojáře s přezdívkou Uzbekunknown nazvaný „DLSS-NR-on-Intel“, jehož cílem je přesně to, co má v názvu.
+Tento projekt nefunguje přímo s existujícím kódem od Nvidie, ale je reimplementací celého filtru DLSS 5 (nebo jak říká Nvidia, „neural renderingu“) nativně běžící na GPU od Intelu, konkrétně těch s architekturou Xe2 („Battlemage“). Přitom by měl být použitý samotný natrénovaný model od Nvidie, zatímco infrastruktura kolem něj je vytvořená znovu. Kód je údajně kompletně vytvořený pomocí „vibe codingu“ neboli generování kódu AI (jmenováno je například použití asistentů Claude a Astra).
+Cílem projektu je podle autora spíš experimentování, ne poskytnout něco jako „produkt“. Je tedy otázka, zda z něj eventuálně může vzniknout něco, co by majitelé grafických karet Intel Arc mohli v praxi využít. Reimplementace zatím nemá přesně věrné výsledky a také výkon je dost nízký. Na integrovaném GPU Intel Arc 140V (které se nachází v úsporných procesorech Intel Core Ultra 200V „Lunar Lake“ pro notebooky) dosahuje výkon pouhých 10,5 FPS při skutečně minimálním rozlišení (640 × 360 bodů). Jde o číslo z testování ve hře Tekken 7.
+Podle popisu projektu (který je také vygenerovaný AI) by kód měl fungovat nejen na integrovaných grafikách Arc v Lunar Lake, ale i na samostatných GPU – tedy na grafikách Arc B580 a Arc B570, pro testování je ale třeba mít Linux a pracovat s Pythonem. Také je třeba získat originální soubory s DLSS 5 od Nvidie, například ze hry, kde jsou přibalené. Autoři těchto modů z logických důvodů nemohou tyto soubory se samotným AI modelem distribuovat.
+AI asistenti obecně umožnili různým programátorům (či i méně zdatným technickým uživatelům) vytvářet poměrně velké hobby softwarové projekty, což je vidět i v mnoha různých oblastech, ale tento přístup má své limity. Vzniklý kód nemusí mít dotažené různé detaily nebo obsahovat chyby a pro životaschopnost je nejspíš stále nutné, aby nad ním měl kontrolu nějaký lidský vývojář, který „slopem“ vygenerovanému kódu skutečně bude rozumět a orientovat se v jeho funkci, aby ho mohl dlouhodobě udržovat a vyvíjet.
+Pokud by tedy měl vzniknout praktický port DLSS 5 na GPU od Intelu, bude za ním asi muset stát někdo, kdo bude mít skutečně dlouhodobý zájem a bude se tomuto cíli chtít věnovat dlouhodobě – ať už jednotlivec, nebo třeba i tým vývojářů. U projektů, které jsou pouze experimentem využívajícím toho, jak AI asistenti dokážou vyprodukovat poměrně rozsáhlý kód s minimem lidské práce, často zůstanou pouhým experimentem, který je zase opuštěn.
+Nicméně i demonstrace, kterou takový projekt předvede, může být inspirací pro vážnější pokusy, protože ukazuje, že se daný nápad dá uskutečnit.
+Zdroje: GitHub, VideoCardz|E||T|Postřehy z bezpečnosti: umělá inteligence chce nahradit finanční poradce|D|20.9. 22:00|P|V dnešním díle se podíváme na finance pod taktovkou umělé inteligence, jak Revolut uvěřil podvrženému vládnímu emailu, podvody severokorejských uchaze...|X|AI finanční poradci – nový postrach kyberbezpečnosti?
 Společnost Anthropic testuje novou funkci s názvem „Claude Money“, která uživatelům umožní propojit své bankovní účty přímo s umělou inteligencí. Změny si v aplikaci Claude pro iOS všiml účet TestingCatalog na X, kdy se vedle standardních sekcí jako Chats, Code, Artifacts, Dispatch nebo Cowork objevila nová záložka „Money“. Ta uživatele láká nápisem „Understand your money with Claude“ a slibuje propojení bankovních účtů s tím, že Claude pomůže analyzovat útraty, plány a další finanční záležitosti. Funkce je zatím v režimu omezeného testování a před oficiálním oznámením chybí přesné detaily o podporovaných bankách či regionální dostupnosti, jasně to ale ukazuje, kam se tvůrci velkých jazykových modelů upínají.
 Anthropic tímto krokem v podstatě jen dohání svou konkurenci z OpenAI. Ta již dříve představila podobnou funkci ChatGPT Finances, kterou pohání datová infrastruktura fintechové společnosti Plaid schopná napojit více než 12 tisíc amerických finančních institucí od běžných účtů až po krypto peněženky. Uživatelé se pak mohou ChatGPT napřímo ptát na rady, jak rychleji splatit dluhy nebo kde ušetřit na školné. Transakční model Plaidu navíc slibuje až o 48 % přesnější klasifikaci příjmů a výdajů. Zjevně to funguje na obrovské množství uživatelů – podle dat se s dotazy na osobní finance obrací na ChatGPT přes 200 milionů lidí měsíčně.
 Ačkoliv provozovatelé ujišťují, že uživatelé mají nad sdílením dat plnou kontrolu (například díky slibu, že OpenAI modely netrénuje na osobních datech), integrace umělé inteligence přímo do historie bankovního účtu vyvolává vážné obavy o bezpečnost a soukromí. I proto se redakce BleepingComputer domnívá, že kvůli přísné legislativě na ochranu soukromí se služba Claude Money do Evropy pravděpodobně vůbec nepodívá.
@@ -37,7 +96,165 @@ Fugleramme
 Fugleramme je open-source projekt pro Raspberry Pi, který promění elektronický inkoustový displej v chytrý rámeček zobrazující ptáky slyšené v okolí. Mikrofon zachytává jejich zpěv a nástroj BirdNET-Go pomocí lokální AI určí jednotlivé druhy. Fugleramme následně vybere odpovídající ilustrace ptáků z historických přírodovědných knih z 19. století a sestaví z nich koláž na displeji Inky Impression.
 Vše funguje plně lokálně, nevyžaduje cloud a kromě e-ink panelu nabízí také webové rozhraní, které lze zobrazit na běžném monitoru. K sestavení je potřeba například Raspberry Pi 5, mikrofon, displej a vhodný rámeček.
 Nově vydáno
-Byla vydána verze Spaced Linux 9.26, desktopové distribuce založená na „nestabilní“ větvi Devuanu, která využívá desktopové prostředí MATE s kompozičním správcem oken Compiz. Projekt Debian zveřejnil verzi 13.7, aktualizovaná instalační média pro Debian 13 „Trixie“. Soplos Linux, sada distribucí založených na větvi „Testing“ projektu Debian, které obsahují několik oblíbených grafických prostředí je k dispozici ve verzi 2026.09. LankeOS, nezávislá čínská distribuce Linuxu vytvořená podle příručky „Linux From Scratch“ vyšla ve verzi 0.20.|E||T|Clicks Communicator dostane větší baterii, Android 17 a nové funkce. Cena zůstane stejná|D|20.9. 18:46|P|Clicks Communicator ještě před startem prodejů vylepšuje hardware • Telefon má větší baterii, větší operační paměť i kryt s bezdrátovým nabíjením • Zá...|X|Clicks Communicator ještě před startem prodejů vylepšuje hardware • Telefon má větší baterii, větší operační paměť i kryt s bezdrátovým nabíjením • Zájemci si navíc mohou zvolit rozložení klávesnice
+Byla vydána verze Spaced Linux 9.26, desktopové distribuce založená na „nestabilní“ větvi Devuanu, která využívá desktopové prostředí MATE s kompozičním správcem oken Compiz. Projekt Debian zveřejnil verzi 13.7, aktualizovaná instalační média pro Debian 13 „Trixie“. Soplos Linux, sada distribucí založených na větvi „Testing“ projektu Debian, které obsahují několik oblíbených grafických prostředí je k dispozici ve verzi 2026.09. LankeOS, nezávislá čínská distribuce Linuxu vytvořená podle příručky „Linux From Scratch“ vyšla ve verzi 0.20.|E||T|„Pomooooc, ta myš se mi sama hýbe!“ aneb zranitelnost uživatelů ve zdravotnictví|D|20.9. 22:00|P|Podle dat stojí za 80 až 90 % úspěšných kybernetických útoků ve zdravotnictví sociální inženýrství – tedy phishing, vishing a různé formy manipulace. ...|X|„Pomooooc! Ta myš se mi sama hýbe!“ křikla na mě před mnoha lety sestřička v jedné ambulanci, kde jsem tehdy krátce vypomáhal.
+Znáte to. Na optický senzor počítačové myši se přilepí trocha paštiky nebo marmelády a kurzor na obrazovce začne pomalu cestovat, i když myš v klidu stojí na podložce. Vstal jsem s tím, že vyřeším drobný hardwarový problém. Jenže myší to nebylo. Na liště běžel neznámý program pro vzdálenou správu a kurzor po ploše běhal až moc svižně – zrovna se snažil otevřít složku s naskenovanými zprávami od pacientů, která byla na ploše. (Hmm. 🤔)
+Protože jsem roky pracoval v IT, reagoval jsem reflexem: okamžité odpojení LAN, zabití procesu, kontrola logů a odstranění škodlivého softwaru. Naštěstí útočník nic během těch pár sekund provést nestihl a žádná data neodešla.
+O žádný sofistikovaný hackerský průnik do sítě nešlo. Pár minut předtím sestřičce zavolal „pán z banky“ kvůli fiktivnímu problému s úvěrem a pod časovým tlakem ji přiměl aplikaci stáhnout a spustit. Vishing v praxi.
+Podle dat stojí za 80 až 90 % úspěšných kybernetických útoků ve zdravotnictví sociální inženýrství – tedy phishing, vishing a různé formy manipulace. Útočníci nelámou šifrování databází. Zkouší, jestli někdo v shonu mezi dvěma pacienty neuvěří přesvědčivému hlasu v telefonu nebo e-mailu.
+Při debatách o eHealth často řešíme bezpečnost centrálních registrů, šifrování nebo celkovou architekturu systémů. Centrální architektura má špičkové zabezpečení – od silné autentizace a autorizace přes bezvýznamové identifikátory až po přísný audit přístupů a událostí.
+Zdravotníci ale nejsou kybernetičtí experti. Pod tlakem plné čekárny a neustále zvonících telefonů je lidské selhání otázkou chvilky.
+Princip nejnižších práv: K běžné práci na počítači v ordinaci není potřeba být přihlášen pod administrátorským účtem. Pokud sestra nebo lékař v nepozornosti kliknou na špatný odkaz nebo spustí stažený soubor, systém bez práv správce nedovolí instalaci škodlivého kódu.
+Kultura psychologického bezpečí: Nejúčinnější obranou proti vishingu a phishingu není hrozící trest, ale rychlost rozpoznání situace a zásahu. Pokud navíc sestra nebo lékař ví, že mohou bez strachu okamžitě říct „asi jsem udělal/a chybu“, zásah se může stihnout vyřešit dřív, než se data ztratí.
+Ochrana koncových bodů: Pravidelné vzdělávání koncových uživatelů je klíčové. Národní eHealth architektura je stavěná bezpečně. Ochrana dat pacientů je ale vždy jen tak silná, jak bezpečné je prostředí v jednotlivých ambulancích, které k nim přistupují.
+Lékařské tajemství dnes nechráníme jen zamčeným šuplíkem s kartotékou, ale i tím, že vytváříme a chráníme bezpečné IT prostředí na všech úrovních – od infrastruktury až po lidský faktor.
+Praktický lékař v podhůří Beskyd. Propojuji klinickou medicínu s architekturou moderního eHealth.
+Přečteno 58 189×
+Přečteno 45 371×
+Přečteno 42 585×
+Přečteno 37 304×
+Přečteno 34 174×|E||T|LLM jako virtuální projektový tým: od „multi-LLM“ k orchestrace nástrojů|D|20.9. 22:00|P|Použít jeden jazykový model jako tvůrce a druhý jako kritika není žádná tajná technologie. Stejně tak není převratné nechat jeden model něco navrhnout...|X|První díl tohoto seriálu by se dal s trochou nadsázky shrnout slovy: objevil jsem Ameriku.
+Použít jeden jazykový model jako tvůrce a druhý jako kritika není žádná tajná technologie. Stejně tak není převratné nechat jeden model něco navrhnout, druhý návrh rozporovat a výsledek znovu vrátit prvnímu k přepracování. Podobné postupy používá řada lidí, často zcela intuitivně.
+V prvním článku ale nešlo ani tak o samotný princip, jako spíš o praktickou zkušenost s jeho použitím při skutečné práci. A především šlo stále o práci ruční.
+Otevřel jsem jednoho chatbota. Zadání. Výsledek.
+Výsledek jsem přenesl do jiného chatbota. Požádal ho o oponenturu.
+Připomínky jsem následně přenesl zpět, nechal původní návrh upravit, případně celý cyklus několikrát zopakoval.
+Funguje to překvapivě dobře. Má to ale jednu zásadní nevýhodu: mezi jednotlivými modely stojí člověk.
+A když člověk začne stejný postup opakovat častěji, začne si nevyhnutelně klást otázku: proč vlastně dělám ručně něco, co má téměř algoritmickou podobu?
+Představme si stejný proces trochu jinak.
+Uživatel nezadá úlohu konkrétnímu chatbotu, ale softwarovému agentovi.
+Agent dostane například úkol:
+„Navrhni podnikatelský model tohoto projektu a proveď jeho oponenturu.“
+Místo jedné konverzace pak může interně vzniknout několik oddělených kroků:
+vytvoření prvního návrhu,
+ekonomická oponentura,
+technická oponentura,
+právní oponentura,
+kontrola vnitřních rozporů,
+přepracování návrhu,
+vytvoření výsledného dokumentu.
+Z pohledu uživatele je to jeden úkol.
+Uvnitř systému ale probíhá koordinovaná práce několika rolí.
+A právě zde se podle mě začíná rozdíl mezi obyčejným chatbotem a skutečným pracovním nástrojem stávat zajímavým.
+Při ručním experimentování je velmi přirozené spojit jednotlivé role s různými poskytovateli.
+Jeden model je „autor“.
+Druhý je „oponent“.
+Třetí například kontroluje fakta.
+Takové rozdělení má jednu velmi příjemnou vlastnost: jednotlivé role jsou od sebe přirozeně izolované. Druhý model nezná interní kontext prvního, pokud mu jej explicitně nepředám.
+Postupně jsem si ale uvědomil, že pro tuto izolaci nemusím nutně používat různé firmy.
+Rozhodující totiž není jméno poskytovatele.
+Rozhodující je kontext.
+Pokud softwarový agent vytvoří pro každou roli nový, čistý požadavek bez předchozí historie konverzace, lze velmi podobného efektu dosáhnout i několika nezávislými voláními stejného modelu.
+Autor například dostane:
+„Navrhni řešení.“
+Oponent však nedostane předchozí diskusi autora. Dostane pouze samotný návrh a instrukci:
+„Najdi slabiny tohoto řešení. Nepředpokládej, že jeho autor má pravdu.“
+Třetí instance může dostat:
+„Porovnej původní návrh s připomínkami oponenta a rozhodni, které připomínky jsou fakticky relevantní.“
+Technicky mohou všechny tři odpovědi vzniknout u stejného poskytovatele.
+Logicky však jde o tři oddělené pracovní role.
+To je pro mě poměrně podstatný posun v uvažování.
+Nejde už tolik o „používání více chatbotů“.
+Jde o orchestraci nezávislých kognitivních kroků.
+Do této architektury navíc velmi přirozeně zapadá lokální jazykový model.
+Nemusí být nejchytřejším modelem celého systému.
+Naopak.
+Řadu úloh, které agent potřebuje, může zvládnout relativně malý lokální model:
+klasifikaci požadavku,
+rozdělení úkolu na části,
+výběr vhodného nástroje,
+přípravu kontextu,
+anonymizaci nebo filtraci dat,
+zkrácení dokumentu,
+extrakci faktů,
+porovnání dvou verzí,
+rozhodnutí, zda je vůbec potřeba volat externí model.
+Externí LLM se potom použije pouze tam, kde je jeho schopnost skutečně potřeba.
+Lokální model se tak může stát jakýmsi dispečerem.
+Nevytváří nutně nejlepší odpověď. Rozhoduje ale, kdo ji má vytvořit a jaké informace k tomu dostane.
+Takové řešení má několik výhod.
+Snižuje množství dat posílaných mimo vlastní infrastrukturu.
+Snižuje náklady.
+A především umožňuje mnohem přesněji řídit kontext.
+Externímu modelu například nemusím posílat celý projekt.
+Agent může z lokální znalostní báze vybrat pouze několik odstavců potřebných pro konkrétní otázku a vytvořit z nich jednorázový prompt.
+Externí poskytovatel potom nemusí znát dlouhodobý kontext projektu vůbec.
+Dostane pouze izolovanou pracovní úlohu.
+Teoreticky ano.
+Pokud dokážu správně oddělit kontexty, mohu vytvořit autora, oponenta i arbitra pomocí stejného modelu.
+Prakticky ale zatím počítám s více poskytovateli.
+Důvod není jen technický.
+Různé modely mají trochu jiné silné stránky, jiný styl argumentace a někdy i jiná typická slepá místa.
+Pokud tedy nechám návrh jednoho modelu posoudit úplně jiným modelem, získávám další úroveň diverzity.
+Není to záruka správnosti.
+Dva modely se samozřejmě mohou mýlit stejně.
+Ale při složitější analytické práci je rozdílnost modelů užitečná právě proto, že snižuje pravděpodobnost, že celý proces zůstane uzavřený v jednom způsobu uvažování.
+Proto bych architekturu nestavěl jako:
+lokální model + jeden cloudový model.
+Spíše jako:
+lokální orchestrátor + sada dostupných schopností.
+Jednou z těch schopností může být jeden poskytovatel LLM.
+Jinou jiný poskytovatel LLM.
+Další může být lokální model.
+A další nemusí být jazykovým modelem vůbec.
+Tohle je podle mě další důležitý krok.
+Jazykové modely jsou velmi dobré v práci s jazykem, strukturou problému a hledáním souvislostí.
+To ale neznamená, že by měly dělat úplně všechno.
+Pokud potřebuji spočítat cash-flow projektu, není důvod chtít po jazykovém modelu, aby si v textu simuloval tabulkový procesor.
+Pokud řeším diferenciální rovnici, existují lepší nástroje.
+Pokud potřebuji optimalizaci, simulaci nebo statistický výpočet, existují specializované knihovny.
+A pokud potřebuji technický výpočet, může být vhodnější například MATLAB, Mathematica, Mathcad, Python nebo jiný výpočetní systém.
+Úloha LLM potom může být úplně jiná.
+Například:
+„Navrhni model.“
+„Urči potřebné vstupní proměnné.“
+„Připrav výpočet.“
+Agent spustí matematický nástroj.
+A jazykový model následně dostane výsledky:
+„Interpretuj je.“
+To je podle mě mnohem zajímavější architektura než představa jednoho všemocného AI modelu.
+LLM se zde nestává náhradou všech programů.
+Stává se jejich koordinátorem.
+Mezi agentem a jednotlivými nástroji navíc nemusí být přímé spojení.
+Lze použít různé prostředníky a specializované služby.
+Agent například nemusí vědět, jak konkrétně funguje databáze, CAD systém nebo matematický software.
+Stačí mu abstraktní operace:
+„najdi relevantní dokumenty“
+„spočítej variantu financování“
+„ověř tuto hodnotu“
+„vytvoř graf“
+„proveď simulaci“
+Pod tím může být API, lokální služba, skript nebo jiný agent.
+Tím se celý systém začíná podobat spíš klasické softwarové architektuře než chatbotu.
+A to je vlastně žádoucí.
+Protože jeden z problémů dnešních AI aplikací je právě představa, že všechno musí být řešeno promptem.
+Nemusí.
+Prompt je jen jedno rozhraní.
+Ruční práce s několika chatboty byla pro mě důležitá právě proto, že umožnila postup objevit bez nutnosti nejprve stavět software.
+Člověk si nejprve vyzkouší:
+co má dělat autor,
+co má dělat oponent,
+jaké informace oponent potřebuje,
+kdy má smysl udělat další kolo,
+kdy je vhodné přidat další specializovanou roli.
+Teprve potom má smysl proces formalizovat.
+Výsledkem tedy nemusí být „lepší chatbot“.
+Může jím být něco podstatně zajímavějšího:
+pracovní prostředí, ve kterém jsou jazykové modely pouze jedním z typů nástrojů.
+Vedle nich stojí databáze, vyhledávání, matematické nástroje, klasický software, lokální modely a externí služby.
+Nad nimi potom agent, který rozhoduje, co použít, v jakém pořadí a s jakým kontextem.
+A člověk?
+Ten by měl zůstat na začátku a na konci procesu.
+Na začátku říká, čeho chce dosáhnout.
+Na konci rozhoduje, jestli výsledek dává smysl.
+V ideálním případě už ale nemusí celý den kopírovat text z jednoho okna chatbota do druhého.
+Což je možná méně romantické než objevování Ameriky.
+Ale pro skutečnou práci je to podstatně užitečnější.
+Realizuji informační systémy založené na linuxu. Ve volném čase se ale počítačům snažím vyhýbat, i když to moc nejde.
+Přečteno 12 509×
+Přečteno 10 552×
+Přečteno 7 993×
+Přečteno 7 981×
+Přečteno 7 678×|E||T|Clicks Communicator dostane větší baterii, Android 17 a nové funkce. Cena zůstane stejná|D|20.9. 18:46|P|Clicks Communicator ještě před startem prodejů vylepšuje hardware • Telefon má větší baterii, větší operační paměť i kryt s bezdrátovým nabíjením • Zá...|X|Clicks Communicator ještě před startem prodejů vylepšuje hardware • Telefon má větší baterii, větší operační paměť i kryt s bezdrátovým nabíjením • Zájemci si navíc mohou zvolit rozložení klávesnice
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Apple do iOS 27 schoval účinnou ochranu před podvody. Zapnout si ji ale musíte sami|D|20.9. 17:34|P||X|
 

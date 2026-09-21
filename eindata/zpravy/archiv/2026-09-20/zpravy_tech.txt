@@ -39,6 +39,166 @@ Fugleramme je open-source projekt pro Raspberry Pi, který promění elektronick
 Vše funguje plně lokálně, nevyžaduje cloud a kromě e-ink panelu nabízí také webové rozhraní, které lze zobrazit na běžném monitoru. K sestavení je potřeba například Raspberry Pi 5, mikrofon, displej a vhodný rámeček.
 Nově vydáno
 Byla vydána verze Spaced Linux 9.26, desktopové distribuce založená na „nestabilní“ větvi Devuanu, která využívá desktopové prostředí MATE s kompozičním správcem oken Compiz. Projekt Debian zveřejnil verzi 13.7, aktualizovaná instalační média pro Debian 13 „Trixie“. Soplos Linux, sada distribucí založených na větvi „Testing“ projektu Debian, které obsahují několik oblíbených grafických prostředí je k dispozici ve verzi 2026.09. LankeOS, nezávislá čínská distribuce Linuxu vytvořená podle příručky „Linux From Scratch“ vyšla ve verzi 0.20.|E|
+|T|„Pomooooc, ta myš se mi sama hýbe!“ aneb zranitelnost uživatelů ve zdravotnictví|D|20.9. 22:00|P|Podle dat stojí za 80 až 90 % úspěšných kybernetických útoků ve zdravotnictví sociální inženýrství – tedy phishing, vishing a různé formy manipulace. ...|X|„Pomooooc! Ta myš se mi sama hýbe!“ křikla na mě před mnoha lety sestřička v jedné ambulanci, kde jsem tehdy krátce vypomáhal.
+Znáte to. Na optický senzor počítačové myši se přilepí trocha paštiky nebo marmelády a kurzor na obrazovce začne pomalu cestovat, i když myš v klidu stojí na podložce. Vstal jsem s tím, že vyřeším drobný hardwarový problém. Jenže myší to nebylo. Na liště běžel neznámý program pro vzdálenou správu a kurzor po ploše běhal až moc svižně – zrovna se snažil otevřít složku s naskenovanými zprávami od pacientů, která byla na ploše. (Hmm. 🤔)
+Protože jsem roky pracoval v IT, reagoval jsem reflexem: okamžité odpojení LAN, zabití procesu, kontrola logů a odstranění škodlivého softwaru. Naštěstí útočník nic během těch pár sekund provést nestihl a žádná data neodešla.
+O žádný sofistikovaný hackerský průnik do sítě nešlo. Pár minut předtím sestřičce zavolal „pán z banky“ kvůli fiktivnímu problému s úvěrem a pod časovým tlakem ji přiměl aplikaci stáhnout a spustit. Vishing v praxi.
+Podle dat stojí za 80 až 90 % úspěšných kybernetických útoků ve zdravotnictví sociální inženýrství – tedy phishing, vishing a různé formy manipulace. Útočníci nelámou šifrování databází. Zkouší, jestli někdo v shonu mezi dvěma pacienty neuvěří přesvědčivému hlasu v telefonu nebo e-mailu.
+Při debatách o eHealth často řešíme bezpečnost centrálních registrů, šifrování nebo celkovou architekturu systémů. Centrální architektura má špičkové zabezpečení – od silné autentizace a autorizace přes bezvýznamové identifikátory až po přísný audit přístupů a událostí.
+Zdravotníci ale nejsou kybernetičtí experti. Pod tlakem plné čekárny a neustále zvonících telefonů je lidské selhání otázkou chvilky.
+Princip nejnižších práv: K běžné práci na počítači v ordinaci není potřeba být přihlášen pod administrátorským účtem. Pokud sestra nebo lékař v nepozornosti kliknou na špatný odkaz nebo spustí stažený soubor, systém bez práv správce nedovolí instalaci škodlivého kódu.
+Kultura psychologického bezpečí: Nejúčinnější obranou proti vishingu a phishingu není hrozící trest, ale rychlost rozpoznání situace a zásahu. Pokud navíc sestra nebo lékař ví, že mohou bez strachu okamžitě říct „asi jsem udělal/a chybu“, zásah se může stihnout vyřešit dřív, než se data ztratí.
+Ochrana koncových bodů: Pravidelné vzdělávání koncových uživatelů je klíčové. Národní eHealth architektura je stavěná bezpečně. Ochrana dat pacientů je ale vždy jen tak silná, jak bezpečné je prostředí v jednotlivých ambulancích, které k nim přistupují.
+Lékařské tajemství dnes nechráníme jen zamčeným šuplíkem s kartotékou, ale i tím, že vytváříme a chráníme bezpečné IT prostředí na všech úrovních – od infrastruktury až po lidský faktor.
+Praktický lékař v podhůří Beskyd. Propojuji klinickou medicínu s architekturou moderního eHealth.
+Přečteno 58 189×
+Přečteno 45 371×
+Přečteno 42 585×
+Přečteno 37 304×
+Přečteno 34 174×|E|
+|T|LLM jako virtuální projektový tým: od „multi-LLM“ k orchestrace nástrojů|D|20.9. 22:00|P|Použít jeden jazykový model jako tvůrce a druhý jako kritika není žádná tajná technologie. Stejně tak není převratné nechat jeden model něco navrhnout...|X|První díl tohoto seriálu by se dal s trochou nadsázky shrnout slovy: objevil jsem Ameriku.
+Použít jeden jazykový model jako tvůrce a druhý jako kritika není žádná tajná technologie. Stejně tak není převratné nechat jeden model něco navrhnout, druhý návrh rozporovat a výsledek znovu vrátit prvnímu k přepracování. Podobné postupy používá řada lidí, často zcela intuitivně.
+V prvním článku ale nešlo ani tak o samotný princip, jako spíš o praktickou zkušenost s jeho použitím při skutečné práci. A především šlo stále o práci ruční.
+Otevřel jsem jednoho chatbota. Zadání. Výsledek.
+Výsledek jsem přenesl do jiného chatbota. Požádal ho o oponenturu.
+Připomínky jsem následně přenesl zpět, nechal původní návrh upravit, případně celý cyklus několikrát zopakoval.
+Funguje to překvapivě dobře. Má to ale jednu zásadní nevýhodu: mezi jednotlivými modely stojí člověk.
+A když člověk začne stejný postup opakovat častěji, začne si nevyhnutelně klást otázku: proč vlastně dělám ručně něco, co má téměř algoritmickou podobu?
+Představme si stejný proces trochu jinak.
+Uživatel nezadá úlohu konkrétnímu chatbotu, ale softwarovému agentovi.
+Agent dostane například úkol:
+„Navrhni podnikatelský model tohoto projektu a proveď jeho oponenturu.“
+Místo jedné konverzace pak může interně vzniknout několik oddělených kroků:
+vytvoření prvního návrhu,
+ekonomická oponentura,
+technická oponentura,
+právní oponentura,
+kontrola vnitřních rozporů,
+přepracování návrhu,
+vytvoření výsledného dokumentu.
+Z pohledu uživatele je to jeden úkol.
+Uvnitř systému ale probíhá koordinovaná práce několika rolí.
+A právě zde se podle mě začíná rozdíl mezi obyčejným chatbotem a skutečným pracovním nástrojem stávat zajímavým.
+Při ručním experimentování je velmi přirozené spojit jednotlivé role s různými poskytovateli.
+Jeden model je „autor“.
+Druhý je „oponent“.
+Třetí například kontroluje fakta.
+Takové rozdělení má jednu velmi příjemnou vlastnost: jednotlivé role jsou od sebe přirozeně izolované. Druhý model nezná interní kontext prvního, pokud mu jej explicitně nepředám.
+Postupně jsem si ale uvědomil, že pro tuto izolaci nemusím nutně používat různé firmy.
+Rozhodující totiž není jméno poskytovatele.
+Rozhodující je kontext.
+Pokud softwarový agent vytvoří pro každou roli nový, čistý požadavek bez předchozí historie konverzace, lze velmi podobného efektu dosáhnout i několika nezávislými voláními stejného modelu.
+Autor například dostane:
+„Navrhni řešení.“
+Oponent však nedostane předchozí diskusi autora. Dostane pouze samotný návrh a instrukci:
+„Najdi slabiny tohoto řešení. Nepředpokládej, že jeho autor má pravdu.“
+Třetí instance může dostat:
+„Porovnej původní návrh s připomínkami oponenta a rozhodni, které připomínky jsou fakticky relevantní.“
+Technicky mohou všechny tři odpovědi vzniknout u stejného poskytovatele.
+Logicky však jde o tři oddělené pracovní role.
+To je pro mě poměrně podstatný posun v uvažování.
+Nejde už tolik o „používání více chatbotů“.
+Jde o orchestraci nezávislých kognitivních kroků.
+Do této architektury navíc velmi přirozeně zapadá lokální jazykový model.
+Nemusí být nejchytřejším modelem celého systému.
+Naopak.
+Řadu úloh, které agent potřebuje, může zvládnout relativně malý lokální model:
+klasifikaci požadavku,
+rozdělení úkolu na části,
+výběr vhodného nástroje,
+přípravu kontextu,
+anonymizaci nebo filtraci dat,
+zkrácení dokumentu,
+extrakci faktů,
+porovnání dvou verzí,
+rozhodnutí, zda je vůbec potřeba volat externí model.
+Externí LLM se potom použije pouze tam, kde je jeho schopnost skutečně potřeba.
+Lokální model se tak může stát jakýmsi dispečerem.
+Nevytváří nutně nejlepší odpověď. Rozhoduje ale, kdo ji má vytvořit a jaké informace k tomu dostane.
+Takové řešení má několik výhod.
+Snižuje množství dat posílaných mimo vlastní infrastrukturu.
+Snižuje náklady.
+A především umožňuje mnohem přesněji řídit kontext.
+Externímu modelu například nemusím posílat celý projekt.
+Agent může z lokální znalostní báze vybrat pouze několik odstavců potřebných pro konkrétní otázku a vytvořit z nich jednorázový prompt.
+Externí poskytovatel potom nemusí znát dlouhodobý kontext projektu vůbec.
+Dostane pouze izolovanou pracovní úlohu.
+Teoreticky ano.
+Pokud dokážu správně oddělit kontexty, mohu vytvořit autora, oponenta i arbitra pomocí stejného modelu.
+Prakticky ale zatím počítám s více poskytovateli.
+Důvod není jen technický.
+Různé modely mají trochu jiné silné stránky, jiný styl argumentace a někdy i jiná typická slepá místa.
+Pokud tedy nechám návrh jednoho modelu posoudit úplně jiným modelem, získávám další úroveň diverzity.
+Není to záruka správnosti.
+Dva modely se samozřejmě mohou mýlit stejně.
+Ale při složitější analytické práci je rozdílnost modelů užitečná právě proto, že snižuje pravděpodobnost, že celý proces zůstane uzavřený v jednom způsobu uvažování.
+Proto bych architekturu nestavěl jako:
+lokální model + jeden cloudový model.
+Spíše jako:
+lokální orchestrátor + sada dostupných schopností.
+Jednou z těch schopností může být jeden poskytovatel LLM.
+Jinou jiný poskytovatel LLM.
+Další může být lokální model.
+A další nemusí být jazykovým modelem vůbec.
+Tohle je podle mě další důležitý krok.
+Jazykové modely jsou velmi dobré v práci s jazykem, strukturou problému a hledáním souvislostí.
+To ale neznamená, že by měly dělat úplně všechno.
+Pokud potřebuji spočítat cash-flow projektu, není důvod chtít po jazykovém modelu, aby si v textu simuloval tabulkový procesor.
+Pokud řeším diferenciální rovnici, existují lepší nástroje.
+Pokud potřebuji optimalizaci, simulaci nebo statistický výpočet, existují specializované knihovny.
+A pokud potřebuji technický výpočet, může být vhodnější například MATLAB, Mathematica, Mathcad, Python nebo jiný výpočetní systém.
+Úloha LLM potom může být úplně jiná.
+Například:
+„Navrhni model.“
+„Urči potřebné vstupní proměnné.“
+„Připrav výpočet.“
+Agent spustí matematický nástroj.
+A jazykový model následně dostane výsledky:
+„Interpretuj je.“
+To je podle mě mnohem zajímavější architektura než představa jednoho všemocného AI modelu.
+LLM se zde nestává náhradou všech programů.
+Stává se jejich koordinátorem.
+Mezi agentem a jednotlivými nástroji navíc nemusí být přímé spojení.
+Lze použít různé prostředníky a specializované služby.
+Agent například nemusí vědět, jak konkrétně funguje databáze, CAD systém nebo matematický software.
+Stačí mu abstraktní operace:
+„najdi relevantní dokumenty“
+„spočítej variantu financování“
+„ověř tuto hodnotu“
+„vytvoř graf“
+„proveď simulaci“
+Pod tím může být API, lokální služba, skript nebo jiný agent.
+Tím se celý systém začíná podobat spíš klasické softwarové architektuře než chatbotu.
+A to je vlastně žádoucí.
+Protože jeden z problémů dnešních AI aplikací je právě představa, že všechno musí být řešeno promptem.
+Nemusí.
+Prompt je jen jedno rozhraní.
+Ruční práce s několika chatboty byla pro mě důležitá právě proto, že umožnila postup objevit bez nutnosti nejprve stavět software.
+Člověk si nejprve vyzkouší:
+co má dělat autor,
+co má dělat oponent,
+jaké informace oponent potřebuje,
+kdy má smysl udělat další kolo,
+kdy je vhodné přidat další specializovanou roli.
+Teprve potom má smysl proces formalizovat.
+Výsledkem tedy nemusí být „lepší chatbot“.
+Může jím být něco podstatně zajímavějšího:
+pracovní prostředí, ve kterém jsou jazykové modely pouze jedním z typů nástrojů.
+Vedle nich stojí databáze, vyhledávání, matematické nástroje, klasický software, lokální modely a externí služby.
+Nad nimi potom agent, který rozhoduje, co použít, v jakém pořadí a s jakým kontextem.
+A člověk?
+Ten by měl zůstat na začátku a na konci procesu.
+Na začátku říká, čeho chce dosáhnout.
+Na konci rozhoduje, jestli výsledek dává smysl.
+V ideálním případě už ale nemusí celý den kopírovat text z jednoho okna chatbota do druhého.
+Což je možná méně romantické než objevování Ameriky.
+Ale pro skutečnou práci je to podstatně užitečnější.
+Realizuji informační systémy založené na linuxu. Ve volném čase se ale počítačům snažím vyhýbat, i když to moc nejde.
+Přečteno 12 509×
+Přečteno 10 552×
+Přečteno 7 993×
+Přečteno 7 981×
+Přečteno 7 678×|E|
 |T|Clicks Communicator dostane větší baterii, Android 17 a nové funkce. Cena zůstane stejná|D|20.9. 18:46|P|Clicks Communicator ještě před startem prodejů vylepšuje hardware • Telefon má větší baterii, větší operační paměť i kryt s bezdrátovým nabíjením • Zá...|X|Clicks Communicator ještě před startem prodejů vylepšuje hardware • Telefon má větší baterii, větší operační paměť i kryt s bezdrátovým nabíjením • Zájemci si navíc mohou zvolit rozložení klávesnice
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|

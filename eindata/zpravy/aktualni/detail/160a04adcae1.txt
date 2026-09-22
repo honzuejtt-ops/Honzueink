@@ -1,0 +1,28 @@
+Stáhněte ji rodičům. Záchranka řekne, kde jsou a jaké berou léky
+Stisk jednoho tlačítka v mobilu pošle záchranářům přesnou polohu i zdravotní profil člověka v nouzi, aniž by musel cokoli popisovat. Naplno ji teď mohou využívat i lidé ve Zlínském kraji – podle tamní záchranné služby jde o jedenáctý kraj ze čtrnácti.
+#mobilní aplikace#senior#bezpečí#Zlín
+Dispečerka na drátě slyší jen paniku a útržkovitý popis okolí – strom, plot, něco jako kůlna. Než se dispečink dopátrá, kde přesně volající je, ubíhají vteřiny, které v tísni rozhodují. Aplikace Záchranka tenhle krok přeskakuje: stačí podržet červené tlačítko SOS a dispečink vidí, kde volající je, ještě než stačí cokoli vysvětlit. Spojení s operátorem je pak ještě potřeba potvrdit telefonicky – aplikace tedy linku 155 nenahrazuje, jen ji zrychlí a zpřesní.
+Najdeme vás dřív, slibuje ředitel
+Ve Zlínském kraji funguje aplikace naplno od září 2026 – ze čtrnácti krajů Česka tak zbývají poslední tři. Šéf zlínských záchranářů Jan Šebek Cholewa rovnou přiznává, co aplikace neumí: „Nechci slibovat, že díky aplikaci přijedeme dřív. Slibuji, že vás dřív najdeme a že o vás budeme vědět víc, než u vás zastavíme.“ Podle něj se ještě předtím, než se pacient dostane do nemocnice, rozhoduje ve vteřinách a informace jsou stejně důležité jako rychlost. A práce mají dost: loni vyjížděli v průměru téměř 180krát denně.
+Popis po telefonu se plete i o kilometr
+Že rozdíl mezi popsanou a automaticky odeslanou polohou není maličkost, potvrdila i nezávislá studie lékařů z německé univerzity v Kolíně nad Rýnem, kterou zveřejnil odborný časopis Resuscitation. Vědci nanečisto zavolali 108krát na tísňovou linku, jako by hlásili zástavu srdce, na několika desítkách míst jednoho velkoměsta.
+Rozdíl se projevil i na tom nejdůležitějším: se správnou polohou v ruce začínali záchranáři v modelové situaci s masáží srdce v průměru už po 83 vteřinách, zatímco s obyčejným popisem po telefonu to trvalo přes dvě minuty. Bezmála 40 vteřin k dobru – a při zástavě srdce je znát každá.
+Poloha ale není jediné, co se do telefonátu vejde těžko. Pro lidi, kteří nemohou nebo nechtějí mluvit, a pro neslyšící nabízí Záchranka tlačítko „Nemohu mluvit“ a pokračuje SMS chatem přímo s dispečinkem.
+Nejvíc pomůže těm, kdo si ji sami nestáhnou
+Kampaň, kterou zlínští záchranáři spouštějí pod heslem „Máte nás v kapse“, cílí hlavně na lidi mezi 35 a 55 lety, kteří se starají o starší rodiče. Nástroj přitom pomůže nejvíc právě seniorům – jenže ti si ho sami většinou nenainstalují ani nenastaví.
+💡 Zajímavost: Podle studie v časopise Resuscitation se poloha, kterou dispečer odhadl z běžného popisu po telefonu, od skutečného místa lišila v průměru o víc než 1 100 metrů – u automaticky odeslané polohy z mobilu šlo jen o desítky metrů.
+Cholewa proto radí jasně: „Stáhněte ji rodičům. Trvá to dvě minuty a může to zachránit život.“ Nastavení má čtyři kroky:
+- stažení aplikace (zdarma, v App Store i Google Play),
+- povolení přístupu k poloze,
+- vyplnění zdravotního profilu (diagnózy, léky, alergie, krevní skupina, kontakt na blízkou osobu),
+- krátké vyzkoušení v testovacím režimu, aby appka nebyla v ostré chvíli překvapením.
+Kdo se bojí svěřovat citlivé zdravotní údaje mobilu, může být klidný: aplikace je neukládá na žádný server, jen v telefonu, a ven z něj se dostanou jedině ve chvíli tísňového volání – přímo na dispečink záchranné služby.
+Funguje i na horách, ve vodě a v zahraničí
+Záchranka pomáhá i mimo krizové chvíle. V elektronické knize túr si turisté mohou naplánovat trasu tak, že o ní ví i Horská služba – a v oblastech, kde působí, aplikace při stisku tísňového tlačítka automaticky přivolá i ji, stejně jako u vodních ploch kontaktuje vodní záchranáře Českého červeného kříže. Kdo se na výlet vydává sám, může navíc aktivovat funkci Patron: appka po zvolenou dobu sdílí polohu s vybraným blízkým člověkem, kterému pošle SMS s odkazem. Ten platí ještě tři hodiny po skončení nastavené doby – když se výletník neozve, blízký má pořád po ruce, kde ho hledat.
+K dispozici je dál mapa nejbližších defibrilátorů, přehled lékařských, zubních a lékárenských pohotovostí i upozornění, když se v kraji děje něco mimořádného. V zahraničí funguje naplno v Rakousku, Maďarsku, na Slovensku včetně hor a v Bavorsku.
+Nefunguje bez signálu ani s vybitým telefonem a nezaručuje rychlejší příjezd sanitky. Ale ve chvíli, kdy člověk v nouzi nedokáže popsat okolí, může být právě tohle tlačítko tím, díky čemu ho záchranáři vůbec najdou.
+Ověřeno z:
+- Zdravotnická záchranná služba Zlínského kraje — tisková zpráva „Máte nás v kapse" (19. 9. 2026)
+- Aplikace Záchranka, z. ú. — časté dotazy a návod k použití (aktuální k 21. 9. 2026)
+- Ecker H. a kol. — Accuracy of automatic geolocalization of smartphone location during emergency calls, časopis Resuscitation, 2020
+- Zdravotnický deník / ČTK — zpravodajství o spuštění spolupráce ve Zlínském kraji (19. 9. 2026)

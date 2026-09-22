@@ -32,7 +32,7 @@ Sushi dlouhá léta v GNOME slouží jako prohlížeč souborů. Stačí v Nauti
 GNOME Circle
 Circle představuje soubor aplikací, které nejsou přímo součástí GNOME, ale dodržují stejná designová pravidla, souzní s jeho filozofií a využívají jeho infrastrukturu. Za posledního půl roku v něm přibyly tři aplikace:
 - 
-		Bazaar – pokud potřebujete nějaký nástroj na instalaci a správu flatpaků, určitě vyzkoušejte Bazaar. Původně vznikl v komunitě Universal Blue pro distribuce jako Bazzite nebo Bluefin, ale přesunul se pod křídla GNOME a v tomto vydání se dostal i do Circle. Je podstatně rychlejší než GNOME Software a umí věci navíc jako například zobrazovat počet stažení na Flathubu. Na rozdíl od GNOME Software si ale neporadí systémovými aktualizacemi a klasickými balíčky.
+		Bazaar – pokud potřebujete nějaký nástroj na instalaci a správu flatpaků, určitě vyzkoušejte Bazaar. Původně vznikl v komunitě Universal Blue pro distribuce jako Bazzite nebo Bluefin, ale přesunul se pod křídla GNOME a v tomto vydání se dostal i do Circle. Je podstatně rychlejší než GNOME Software a umí věci navíc jako například zobrazovat počet stažení na Flathubu. Na rozdíl od GNOME Software si ale neporadí se systémovými aktualizacemi a klasickými balíčky.
 Pro vývojáře
 GTK 4.23
 V předchozí verzi GTK získalo vlastní vykreslovač SVG v podobě GtkSvg. V této verzi na tom staví a vykreslují se jím všechny ikony v SVG. Zároveň přibyl nový GtkSvgWidget, díky kterému se SVG vykresluje přímo v aplikacích.

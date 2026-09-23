@@ -1,3 +1,97 @@
+|T|Zálohování na optická média otevřenými nástroji: uložení dat na dlouhá desetiletí|D|22.9. 22:00|P|Kromě zálohy dat na externí disk není špatné mít ještě nějaký další typ zálohy pro případ, že by externí disk selhal nebo byl poškozen. Dnes je tím da...|X|Zálohovat je možné na mnoho médií: flash disky, pevné disky, pásky nebo třeba veřejný cloud. Já jsem si v rámci výstavby domácího serveru s Debianem vyzkoušel, jak by to mohlo vypadat v případě zálohy na DVD.
+Optická média totiž mají výhodu oproti SSD a flash diskům, která, jak jsem zjistil, není každému známa – je jí životnost uložených dat. Je obtížné sehnat přesné údaje o životnosti různých typů optických médií a různých výrobců, natož pak zohlednit případnou vadnou „várku“ prázdných médií naší oblíbené značky. Podle celkem pěkně napsaného shrnutí kanadské vlády se však životnost dat u kvalitních optických disků má pohybovat v rozsahu 20–50 let, u disků se zlatou vrstvou by to mohlo být 50–100 let.
+Bohužel u dvouvrstvých DVD DL, která mají kapacitu 8,5 GB, je odhadovaná životnost notně kratší – asi jen 5–10 let. Vysvětluje se to tím, že zapisovací vrstva musí být tenčí, aby se laser diskové mechaniky mohl po změně zaostření dostat na druhou zapisovací vrstvu.
+Největší kapacitu má samozřejmě Blu-ray, který nabízí i média o kapacitě 100 GB, ale protože se z mé strany jedná spíše o zálohovací experiment, odrazují mě vysoké ceny Blu-ray mechanik. Navíc mám k zálohování asi jen 30 GB komprimovaných dat, vše se mi tedy vejde na několik DVD a budu to dělat jednou za dlouhou dobu.
+Manuální zápis dat na několik DVD
+Data se samozřejmě musejí rozprostřít na několik DVD. Protože budou uschována mimo můj domov, měla by být data na nich zašifrována. V komprimovaném stavu mají 30 GB, DVD tedy bude celkem sedm kusů.
+Triviální způsob, jak to udělat, je ručně přetahovat adresáře a soubory myší třeba do předpřipravených sedmi zašifrovaných a komprimovaných balíků, přičemž se bude hlídat, aby jejich velikost nepřesáhla 4,65 GB. Pozor, zde je 1 kB roven 1000 bajtům, nikoliv 1024 bajtům.
+Protože po letech uskladnění někde na chatě mohou být některá DVD nečitelná, chci-li mít jistotu, vypálím dvě duplicitní sady, ideálně ze dvou různých šarží prázdných médií.
+Velká výhoda tohoto způsobu spočívá v jeho triviálnosti, pokud jde o odborné znalosti.
+Avšak podle pořekadla „kdo nemá v hlavě, musí mít v nohách“ je nevýhodou to, že vypaluji dvojnásobný počet DVD, což je nepříjemné zejména s dnešními externími DVD mechanikami, které prakticky nejdou koupit s rychlostí zápisu vyšší než 8×. V neposlední řadě mi rovněž přijde nepříjemné, že musím ručně přetahovat adresáře, případně jejich dílčí části, pokud se celé nevejdou na médium, a hlídat, aby se mi soubory nepřekrývaly.
+Příprava dat s použitím skriptu
+Při experimentování s vypáleným DVD jsem zjistil, že moje externí mechanika „Hitachi-LG GP57“ si umí mnou úmyslně mechanicky poškozovaný disk přečíst a opravit sama takovým způsobem, že MD5 suma 4,69GB datových souborů je vždy správně.
+Od určitého stupně mechanického poškození disku bych čekal, že mi mechanika přečte poškozený komprimovaný soubor s daty – jenže bohužel nepřečetla. Přišlo mi, že funguje v režimu „buď, anebo“ – buď si velký soubor sama opraví a přečte ho neporušený, nebo ho odmítne přečíst úplně. Nepomohlo ani čtení pomocí příkazu dd nebo  ddrescue.
+To považuji za nevýhodu, protože i ze souboru s „dírami“ jsem schopen alespoň nějaká data získat zpět.
+Mám-li sedm souborů o velikosti přibližně 4,65 GB vypálených na sedmi DVD, můžu přidat osmé DVD, na které vygeneruji opravné soubory pomocí příkazu par2. Vyzkoušel jsem si, že zvolím-li pro takovou sadu dat velikost opravných PAR2 souborů o něco větší než 4,65 GB, můžu klidně přijít o celé jedno DVD a par2 ho přesto umí znovu ve zcela původním stavu zrekonstruovat!
+Jenže co když po mnoha letech nebude možné přečíst dvě DVD naráz? Vzpomněl jsem si na 20 let starou zkušenost s notně poškrábaným a špatně čitelným cédčkem se dvěma sty MP3 skladbami. Mechanika se sice trápila, ale nakonec dokázala vrátit 180 skladeb. To není špatný výsledek.
+Proto ve skriptu kromě toho, že si vytvořím opravné soubory PAR2, které umístím na poslední DVD, rozdělím původní velký 30GB soubor nikoliv po 4,65 GB, ale po 46,5 MB. Tímto způsobem se, budu-li mít štěstí, v budoucnu podaří z poškozených DVD přečíst alespoň nějaká část dat a ta půjde opravit pomocí  par2.
+Skript
+Finální verze skriptu vypadá jednoduše, ale je za ní mnoho hodin zkoušení, promýšlení a „minimalizace“ postupu a kódu. Vypadá následovně:
+gtar -czf - ${@} \
+    | openssl enc -aes-256-cbc \
+    | split -d -a 4 -b 46500000 - backup.gtar.gz.ossl-aes-256-cbc.split_
+par2 create -r20 \
+    backup.gtar.gz.ossl-aes-256-cbc.split_xxxx \
+    backup.gtar.gz.ossl-aes-256-cbc.split_*
+1. GNU Tar
+Jak můžeme vidět, roura nejprve spustí GNU Tar, aby vytvořila proud „zatarovaných“ a následně „gzipovaných“ dat. Rozpis jednotlivých přepínačů  gtar:
+- -c – vytvoří tar archiv.
+- -z – tar bude komprimovaný gzipem.
+- -f - – přesměruje výstup do roury.
+- ${@} – vloží veškeré vstupní parametry skriptu, tedy seznam zálohovaných složek.
+2. OpenSSL
+Poté se proud zašifruje pomocí openssl:
+- enc – zapne režim šifrování.
+- -aes-256-cbc – název použitého šifrovacího algoritmu.
+3. Split
+Nakonec se proud dat přesměruje do několika souborů s předepsanou maximální velikostí pomocí příkazu  split:
+- -d – použije čísla pro označení výstupních souborů; výchozí jsou písmena abecedy.
+- -a 4 – pro označení výstupních souborů se použije sekvence čtyřciferných čísel; výchozí jsou dvouciferná čísla.
+- -b 46500000 – nastaví maximální velikost výstupních souborů na 46,5 MB. Hodnota je pro jistotu a zřetelnost zadána v bajtech.
+- Posledním parametrem je prefix pro výstupní soubory. Je zvolen dostatečně deskriptivní název, abych po letech věděl, jak mám původní vstupní soubor znovu zrekonstruovat.
+4. PAR2
+Posledním příkazem je par2, který k vygenerovaným souborům vytvoří opravné PAR2 soubory:
+- create – zapne režim vytváření PAR2 souborů.
+- -r20 – PAR2 soubory budou mít velikost 20 % z celkové velikosti vstupních souborů, tedy pro 30 GB dat to bude přibližně 6 GB připadajících na PAR2 soubory. Na jedno DVD se nevejdou, a proto část z nich bude na 7. DVD, které je zaplněno daty jen z malé části, a zbytek bude na 8. DVD určeném pouze pro PAR2 soubory.
+- backup.gtar.gz.ossl-aes-256-cbc.split_xxxx – prefix pro vygenerované opravné soubory.
+- backup.gtar.gz.ossl-aes-256-cbc.split_* – seznam vstupních souborů, pro které se bude vytvářet spřažený PAR2 výstup.
+Spuštění skriptu
+Skript spustím takto:
+./run_prepare_dvd.sh /Users/jiri/projekty /Users/jiri/Documents/ /Users/jiri/Pictures/
+Po pár minutách se nashromáždí výstupní soubory:
+46500000   Sep 17 12:52 backup.gtar.gz.ossl-aes-256-cbc.split_0000
+46500000   Sep 17 12:52 backup.gtar.gz.ossl-aes-256-cbc.split_0001
+…
+11035152   Sep 17 12:57 backup.gtar.gz.ossl-aes-256-cbc.split_0621
+    211600 Sep 17 13:26 backup.gtar.gz.ossl-aes-256-cbc.split_xxxx.par2
+  14810028 Sep 17 13:26 backup.gtar.gz.ossl-aes-256-cbc.split_xxxx.vol000+001.par2
+…
+2439629548 Sep 17 13:26 backup.gtar.gz.ossl-aes-256-cbc.split_xxxx.vol255+167.par2
+Jak z nastavení skriptu vyplývá, prvních 100 souborů, tedy těch začínajících jako split_00*, vypálím na 1. DVD,split_01* na 2. DVD,split_02* na 3. DVD atd.
+PAR2 soubory rozložím mezi částečně zaplněné sedmé DVD a zbytek na osmé DVD.
+Simulace poškození dat a následné opravy pomocí PAR2
+Pro demonstraci opravy pomocí PAR2 smažu prvních 100 souborů, což je ekvivalent ztráty celého prvního DVD s daty:
+rm -f backup.gtar.gz.ossl-aes-256-cbc.split_00*
+Následně spustím příkaz par2 a jako vstup mu dám jeho hlavní soubor PAR2:
+par2 repair backup.gtar.gz.ossl-aes-256-cbc.split_xxxx
+Po několika minutách běhu a vytěžování CPU je proces hotový a všech 100 smazaných souborů je znovu vytvořeno, včetně jejich původních metadat.
+Jiné možnosti přípravy dat
+Výše uvedený postup a skript jsem nevymyslel hned a trvalo to. Zajímal jsem se proto rovněž o to, zda neexistuje nějaké hotové řešení, ke kterému bych jako uživatel přišel a byl naveden ke správnému postupu.
+Nejprve jsem zkoumal, zda ve své sbírce „biblí“ o Linuxu najdu zmínku o par2  – bohužel se v nich nevyskytuje. To je škoda, protože zejména v komunitě GNU je více cloudových skeptiků, takže právě zde bych čekal, že nějaký ucelený postup najdu.
+Známý software 7-Zip umí vše z výše uvedeného až na soubory pro obnovu. Jediný nástroj, který se mi podařilo najít a obsahuje „vše v jednom“, je známý WinRAR, který umí šifrování, rozdělení do více souborů i tzv. „recovery records“, u nichž si může uživatel obdobně jako u par2  zvolit, kolik procent z velikosti originálních archivů mají zabírat. WinRAR má sice GUI jen pro Windows, ale je dodáván i s terminálovým příkazem rar. Je sice placený, ale postup je standardní a osoba, která by obnovovala data z mých DVD, by nemusela umět pracovat v terminálu.
+Optická média jsou tu stále
+Před 10 a více lety jsem byl rád, že jsem optická média opustil a mohl používat externí disky a cloud jako úložiště pro svoje data. Blu-ray mě historicky zcela minul kvůli vysokým pořizovacím nákladům, které se překvapivě, možná kvůli nízké poptávce, drží vysoko i dnes.
+Historickou zkušenost s CD a DVD mám kategorizovanou jako „smíšenou“, ačkoliv s jistotou už nevím, zda tehdy byla na vině nekvalitní zapisovací média, nebo špatná péče o vypálené disky – nejspíše však kombinace obojího. Největší roli v opuštění optických disků však u sebe vidím v tom, že zatímco rostly kapacity pevných disků, kapacita a „pohodlí“ práce s DVD přestaly dostačovat. Technologie Blu-ray, která měla být další generací optických médií po DVD, pro mě kvůli vysoké ceně nebyla dostatečně zajímavou náhradou.
+Jak se však ukazuje, optická média mohou při vhodném skladování uchovat data po celá desetiletí.
+Výše uvedený postup je open-source náhradou za komerční software – jeho nevýhodou však je, že je hodně technický a člověk si jej musí v podstatě sestavit sám.|E|
+|T|Softwarová sklizeň (23. 9. 2026): čtěte e-maily v moderní aplikaci|D|22.9. 22:00|P|Sonda do světa otevřeného softwaru. Dnes vyzkoušíme emailového klienta, ripneme si audio CD, podíváme se na distribuované objektové úložiště napsané v...|X|Convey
+E-mailový klient pro Linux, který navazuje na populární aplikaci Geary a přináší její pokračování v modernějším kabátě. Nabízí rozhraní postavené na GTK4 a Libadwaita, přehledné třípanelové uspořádání a seskupování zpráv do konverzací.
+Podporuje také účty Microsoft 365 a Outlook prostřednictvím Microsoft Graph, modernější bezpečnostní a kryptografické knihovny, správu složek přímo z postranního panelu nebo pohodlnou navigaci pomocí klávesnice.
+flathub.org/en/apps/net.donnybeelo.Convey, 50.0
+Laser
+Aplikace pro ripování audio CD, která cílí především na desktopové prostředí GNOME. Nabízí automatické načítání informací o albu a obalů, jejich vkládání do hudebních souborů i možnost upravit názvy skladeb před převodem.
+Podporuje formáty FLAC, MP3, AAC, Opus a WAV, včetně nastavení kvality a komprese, a umožňuje také archivovat celé disky do obrazových souborů s CUE souborem. Díky rozhraní postavenému na GTK4 a Libadwaita představuje jednoduchou a přehlednou alternativu ke starším nástrojům, jako je Sound Juicer.
+flathub.org/en-GB/apps/nl.andreasknoben.Laser, 0.5.0
+RustFS
+Distribuované objektové úložiště napsané v jazyce Rust, které nabízí kompatibilitu s protokolem S3 a představuje alternativu k řešením, jako jsou MinIO nebo Ceph. Je navrženo s důrazem na výkon, bezpečnost paměti a efektivní využití systémových prostředků, přičemž podporuje nasazení od jednoho serveru až po rozsáhlé distribuované clustery.
+Nabízí webovou administrační konzoli, správu přístupových práv, šifrování, replikaci, verzování objektů a integraci s nástroji pro datová jezera, umělou inteligenci či zpracování velkých objemů dat.
+rustfs.com, 1.0
+Xepub
+Čtečka formátu EPUB, která je součástí balíku XApp. Nabízí zážitek ze čtení podobný tomu, jaký znáte z čteček Kindle nebo Kobo. Můžete přecházet mezi kapitolami, prohledávat obsah knihy, přidávat záložky a rychle mezi nimi přecházet. Když knihu znovu otevřete, pamatuje si, kde jste skončili, takže můžete jednoduše pokračovat ve čtení.
+Pokud vyberete slovo, nabídne se vám menu s rychlým přístupem k vyhledávačům, takže si ho můžete vyhledat ve slovníku, najít na Wikipedii nebo přeložit. Pokud vyberete pasáž, zvýrazní se jako poznámka. Můžete jí přiřadit barvu podle svého výběru a přidat poznámku. A samozřejmě můžete upravit úroveň přiblížení, vybrat si preferovaná písma a přizpůsobit si zážitek ze čtení podle svých představ.
+github.com/swwind/xepub, 1.0.0
+Blbinka
+Internetové standardy myslí i na situaci, kdy se pokusíte poslat příkaz k uvaření kávy zařízení, které je ve skutečnosti konvice na čaj. Server vám v tom případě hrdě vrátí chybu 418 I'm a teapot. Vývojáři tento komunitní vtip odmítli ze standardů smazat a na webu save418.com ho brání zuby nehty.|E|
 |T|Better prompt caching for GPT-6|D|22.9. 21:00|P|Learn how GPT-6 improves prompt caching with higher cache hit rates, new diagnostics, explicit breakpoints, and controls that reduce latency and costs...|X|Better prompt caching for GPT‑6
 Higher cache hit rates and new tools to help persistent agents run faster and cost less.
 GPT‑6 enables persistent agents to work for hours on complex tasks, from refactoring codebases to producing well-researched documents and presentations. The applications behind these agents make a series of API requests that build on one another, often carrying forward the same instructions, tool definitions, and context from earlier turns. OpenAI caches that shared context to reuse computation across requests, reducing response times and giving developers discounts of up to 90% on cached input tokens.
@@ -126,6 +220,21 @@ Zákazy v kinech a školách
 Aplikace nemusí být zajímavá jen pro ty, kteří se obávají o své soukromí. Chytré brýle z pochopitelných důvodů zakazují například školy nebo kina. I v jejich případech se aplikace, která brýle rozpozná, může hodit. Meta proti skrytému nahrávání rovněž bojuje – během července se brýle po aktualizaci naučily rozpoznat brýle s upravenou (vyřazenou) indikační LED diodou, která na spuštěné nahrávání upozorňuje. Na těchto kusech nahrávání vzdáleně firma zablokovala. Meta během loňského roku prodala kolem 7 milionů chytrých brýlí, letos to bude ještě větší číslo.
 Aplikaci je možné stáhnout zdarma pro Android i iOS. Placená verze potom přidává běh na pozadí a například také možné CSV reporty nebo widgety na plochu. Tvůrce aplikace Pawel Szydlowski navrhuje, aby výrobci těchto brýlí používali stejnou techniku jako v případě Bluetooth lokátorů. Pokud se nějaký neznámý lokátor pohybuje s uživatelem, telefon na něj upozorní. Stejně tak by mohly telefony upozorňovat na chytré brýle s aktivním záznamem.
 Zdroj: Wired|E|
+|T|Parallel cut research time and cost in half with GPT‑6 Astra|D|22.9. 12:00|P|GPT‑6 Astra allowed Parallel’s agents to research and synthesize labor-market data in half the time and at half the cost vs. prior models.|X|Parallel cut research time and cost in half with GPT‑6 Astra
+GPT‑6 Astra allowed Parallel’s agents to research and synthesize labor-market data in half the time and at half the cost vs. prior models.
+50%
+Less time to complete research tasks
+50%
+Code cost reduction
+Parallel(opens in a new window) builds developer infrastructure for AI agents that do knowledge work over the web. Its tools support everything from web grounding for voice agents to research for financial institutions and legal customers, combining frontier models with web search.
+For Parallel’s longest-running research tasks, getting a high-quality answer typically meant using a bigger model with extended reasoning, which consumed more time and resources. The company has seen a major improvement in time and cost with GPT‑6 Astra.
+“With Astra, we’ve demonstrated that you can get the same high-quality research much, much faster with fewer research calls and less tokens.”
+In one test of GPT‑6 Astra, Parallel asked its agent to research six different labor-market statistics across four states over six months. The agent had to search across multiple websites, collect information, and compile the findings into a single research report.
+GPT‑6 Astra was able to complete the work in half the time of prior models, with roughly 50% code cost reduction, while delivering the same quality of research.
+Parallel also observed that GPT‑6 Astra made more focused searches and took fewer steps to reach a useful result.
+“Astra issued more targeted search queries and focused on the ultimate task better, incorporating its world knowledge compared to previous models.”
+The increased efficiency also makes it more practical for Parallel to divide research among multiple agents. GPT‑6 Astra can delegate specific research tasks to sub-agents, allowing work to happen simultaneously and reducing the time spent moving through a single sequence of searches.
+Parallel now has a better path from a complex question to a researched answer, with less time waiting, lower costs, and more room to tackle demanding research tasks at scale.|E|
 |T|O2 nabízí zákazníkům za výpadek služeb slevový kupón. Potíže způsobil přerušený kabel  [AKTUALIZACE]|D|22.9. 11:52|P|AKTUALIZACE 22.9. 13:45 – doplněna omluva O2|X|AKTUALIZACE 22.9. 13:45 – doplněna omluva O2
 Operátor O2 se po pondělním výpadku služeb omuvil svým zákazníkům za způsobené problémy. Potíže jeho sítě vznikly podle vyjádření firmy cizím zaviněním. „Během stavebních prací došlo k přerušení významného optického spoje společnosti CETIN,“ vysvětlil operátor.
 Zákazníkům z řad domácností a živnostníků nabízí slevový kupón. "Jako omluvu proto dáváme zákazníkům poukaz v hodnotě 200 korun na nákup mobilního telefonu nebo jakéhokoliv příslušenství v O2 Prodejnách nebo v našem e-shopu,” říká ředitel Divize Product & Marketing Martin Čejka.

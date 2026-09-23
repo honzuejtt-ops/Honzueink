@@ -1,0 +1,18 @@
+Convey
+E-mailový klient pro Linux, který navazuje na populární aplikaci Geary a přináší její pokračování v modernějším kabátě. Nabízí rozhraní postavené na GTK4 a Libadwaita, přehledné třípanelové uspořádání a seskupování zpráv do konverzací.
+Podporuje také účty Microsoft 365 a Outlook prostřednictvím Microsoft Graph, modernější bezpečnostní a kryptografické knihovny, správu složek přímo z postranního panelu nebo pohodlnou navigaci pomocí klávesnice.
+flathub.org/en/apps/net.donnybeelo.Convey, 50.0
+Laser
+Aplikace pro ripování audio CD, která cílí především na desktopové prostředí GNOME. Nabízí automatické načítání informací o albu a obalů, jejich vkládání do hudebních souborů i možnost upravit názvy skladeb před převodem.
+Podporuje formáty FLAC, MP3, AAC, Opus a WAV, včetně nastavení kvality a komprese, a umožňuje také archivovat celé disky do obrazových souborů s CUE souborem. Díky rozhraní postavenému na GTK4 a Libadwaita představuje jednoduchou a přehlednou alternativu ke starším nástrojům, jako je Sound Juicer.
+flathub.org/en-GB/apps/nl.andreasknoben.Laser, 0.5.0
+RustFS
+Distribuované objektové úložiště napsané v jazyce Rust, které nabízí kompatibilitu s protokolem S3 a představuje alternativu k řešením, jako jsou MinIO nebo Ceph. Je navrženo s důrazem na výkon, bezpečnost paměti a efektivní využití systémových prostředků, přičemž podporuje nasazení od jednoho serveru až po rozsáhlé distribuované clustery.
+Nabízí webovou administrační konzoli, správu přístupových práv, šifrování, replikaci, verzování objektů a integraci s nástroji pro datová jezera, umělou inteligenci či zpracování velkých objemů dat.
+rustfs.com, 1.0
+Xepub
+Čtečka formátu EPUB, která je součástí balíku XApp. Nabízí zážitek ze čtení podobný tomu, jaký znáte z čteček Kindle nebo Kobo. Můžete přecházet mezi kapitolami, prohledávat obsah knihy, přidávat záložky a rychle mezi nimi přecházet. Když knihu znovu otevřete, pamatuje si, kde jste skončili, takže můžete jednoduše pokračovat ve čtení.
+Pokud vyberete slovo, nabídne se vám menu s rychlým přístupem k vyhledávačům, takže si ho můžete vyhledat ve slovníku, najít na Wikipedii nebo přeložit. Pokud vyberete pasáž, zvýrazní se jako poznámka. Můžete jí přiřadit barvu podle svého výběru a přidat poznámku. A samozřejmě můžete upravit úroveň přiblížení, vybrat si preferovaná písma a přizpůsobit si zážitek ze čtení podle svých představ.
+github.com/swwind/xepub, 1.0.0
+Blbinka
+Internetové standardy myslí i na situaci, kdy se pokusíte poslat příkaz k uvaření kávy zařízení, které je ve skutečnosti konvice na čaj. Server vám v tom případě hrdě vrátí chybu 418 I'm a teapot. Vývojáři tento komunitní vtip odmítli ze standardů smazat a na webu save418.com ho brání zuby nehty.

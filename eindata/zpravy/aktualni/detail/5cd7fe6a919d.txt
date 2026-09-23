@@ -1,0 +1,8 @@
+Harvey turns legal context into stronger drafts with GPT‑6 Astra
+GPT‑6 Astra produces more structured, context-aware legal documents, freeing lawyers to focus on strategy.
+Harvey helps law firms and in-house legal teams securely deploy AI across complex legal workflows, from litigation to mergers. Its customers use Harvey to turn vast amounts of information into complex legal documents. With GPT‑6 Astra, Harvey can bring more context into the drafting process and generate more structured outputs.
+“We can give more context to the model and produce better and better structured outputs.”
+Harvey uses GPT‑6 Astra to help lawyers analyze, synthesize, and draft from the information that shapes a matter, including court information, law firm documents, case law research, and other sources of legal context.
+Compared with other models, Harvey has seen substantial improvements in document formatting and context awareness with GPT‑6 Astra, helping customers get more complete documents that better reflect the material behind them.
+Harvey’s memory panel brings individual preferences directly into the drafting workflow. A lawyer can encode preferences such as using numbered lists, prioritizing EDGAR as a source, or color coding issues by priority.
+Those preferences appear alongside the source material and the draft memorandum, giving the lawyer a clearer way to guide the output. Because GPT‑6 Astra can process more context, Harvey can produce higher-quality legal documents while customers focus more of their time on strategy.

@@ -129,42 +129,28 @@ def stahni_pocasi():
 
 # --- FUNKCE PRO PALIVA (Nafta, Benzin) ---
 def stahni_paliva():
-    """Stáhne aktuální ceny benzínu Natural 95 a nafty v ČR (Kč/l)."""
+    """Stáhne aktuální ceny benzínu Euro 95 a nafty v ČR (Kč/l).
+
+    Zdroj: fuel-prices.eu — oficiální týdenní průměr Evropské komise
+    (Weekly Oil Bulletin). Markdown export je malý a obsahuje cenu
+    rovnou v Kč/l, takže není potřeba nic přepočítávat.
+
+    Pokud se cenu nepodaří získat, vrací prázdné řetězce — ESP32 pak
+    řádek s palivy vůbec nezobrazí (místo aby ukazoval vymyšlenou cenu).
+    """
     import re
-    nafta, benzin = "N/A", "N/A"
+    nafta, benzin = "", ""
 
-    # Zdroj 1: mbenzin.cz — státem regulovaná maximální cena (rychlé a spolehlivé)
     try:
         h = {"User-Agent": "Mozilla/5.0"}
-        r = requests.get("https://www.mbenzin.cz/", headers=h, timeout=8)
-        html = r.text
-        m = re.search(r'<strong>Nafta:</strong>\s*(\d+[.,]\d+)', html)
-        if m: nafta = m.group(1).replace(",", ".")
-        m = re.search(r'<strong>Natural\s*95:</strong>\s*(\d+[.,]\d+)', html)
-        if m: benzin = m.group(1).replace(",", ".")
-        if nafta != "N/A" and benzin != "N/A":
-            return nafta, benzin
-    except Exception:
-        pass
-
-    # Zdroj 2: kurzy.cz/komodity
-    try:
-        h = {"User-Agent": "Mozilla/5.0"}
-        r = requests.get("https://www.kurzy.cz/komodity/benzin-nafta-cena/", headers=h, timeout=8)
-        text = r.text
-        if nafta == "N/A":
-            m = re.search(r'[Nn]afta.*?(\d+[.,]\d+)', text)
-            if m: nafta = m.group(1).replace(",", ".")
-        if benzin == "N/A":
-            m = re.search(r'(?:Natural\s*95|Benzín).*?(\d+[.,]\d+)', text)
-            if m: benzin = m.group(1).replace(",", ".")
-    except Exception:
-        pass
-
-    if nafta == "N/A":
-        nafta = "34.00"
-    if benzin == "N/A":
-        benzin = "36.00"
+        r = requests.get("https://www.fuel-prices.eu/Czechia/?format=md", headers=h, timeout=12)
+        txt = r.text
+        m = re.search(r'Euro\s*95[^\n]*?local:\s*([\d.,]+)\s*CZK', txt)
+        if m: benzin = f"{float(m.group(1).replace(',', '.')):.2f}"
+        m = re.search(r'Diesel[^\n]*?local:\s*([\d.,]+)\s*CZK', txt)
+        if m: nafta = f"{float(m.group(1).replace(',', '.')):.2f}"
+    except Exception as e:
+        print(f"  Paliva: stažení selhalo ({e})")
 
     return nafta, benzin
 

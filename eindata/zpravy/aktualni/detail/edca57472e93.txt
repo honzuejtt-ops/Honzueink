@@ -1,0 +1,7 @@
+Vědci z Amsterodamské univerzity přišli s unikátním způsobem 3D tisku. Místo běžných materiálů jako plasty, pryskyřice nebo kov použili obyčejnou vodu. Díky speciální metodě z ní dokážou vytvářet i složité ledové struktury, které by se klasickým 3D tiskem vyráběly velmi složitě.
+Celý princip stojí na takzvaném odpařovacím chlazení. Do vakuové komory vědci vstřikují vodní proud o průměru pouhých 16 mikrometrů, tedy tenčí než třeba lidský vlas. V postředí s velmi nízkým tlakem se část vody rychle odpaří, čímž odebere teplo z jejího okolí. Zbytek vody se ochladí hluboko pod bod mrazu a po dopadu téměř zmrzne.
+Výhodou je, že takto lze vytvářet i tvary, které by při klasickém 3D tisku vyžadovaly přítomnost podpěr. Výzkumníci například vytiskli profil ledového obličeje nebo šikmé ledové sloupky, které s podkladem svírají úhel pouhých 14 stupňů.
+Využití i mimo planetu Zemi
+Led přitom nemusí být konečným produktem na „vystavení“. Po dokončení tisku stačí vypnout vakuum, čímž se zvedne teplota a ledová struktura sama postupně roztaje zpět na vodu. Technologie by proto mohla najít využití například při výrobě dočasných forem pro mikrofluidiku nebo jako podpůrné „lešení“ při vytváření mikroskopických kanálků pro kapaliny.
+Zajímavé možnosti se otevírají i mimo Zemi. Vedci zmiňují například Mars, kde panují nízké teploty a velmi řídká atmosféra. Kvůli těmto podmínkám je na teoretické hladině zajímavý ledový 3D tisk i pro budoucí vesmírné mise.
+zdroje: PNAS, 3Dprinting.com

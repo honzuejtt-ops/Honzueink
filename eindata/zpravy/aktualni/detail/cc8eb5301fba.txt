@@ -1,0 +1,5 @@
+Článek
+Technologie ztělesněné inteligence (embodied AI) je odvětví, které propojuje digitální algoritmy s „fyzickým“ tělem. Umělá inteligence není jen někde na vzdáleném serveru, je integrována přímo v těle vlaku.
+Vlak je vybaven různými senzory, které tvoří autonomní systém vnímání. Díky tomu tak může monitorovat trať v reálném čase, detekovat anomálie a varovat před případnými poruchami. Zároveň se na základě zjištěných údajů a interakce s okolím a pohybem učí.
+Inteligentní digitální metro, vyvinuté na platformě Vellink, představila v první zahajovací den veletrhu čínská společnost CRRC.
+Co se týče samotného vozu, společnost u něj také sází na ekologický provoz a nízkou hmotnost. V porovnání s běžnými vozy metra má být o 18 procent lehčí a spotřebovat o 10 % méně energie.

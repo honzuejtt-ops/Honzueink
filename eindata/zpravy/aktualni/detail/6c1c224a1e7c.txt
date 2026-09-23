@@ -1,0 +1,22 @@
+Článek
+Majitelé podporovaných iPhonů se mohou těšit na upravený vzhled, rychlejší chod systému, nové možnosti pro rodiče nebo chytřejší vyhledávání. Velká část pozornosti ale pochopitelně míří také na umělou inteligenci.
+Právě u AI je však potřeba dodat jednu důležitou poznámku. Některé z nejzajímavějších novinek, které Apple představil, nejsou v Evropské unii na iPhonech dostupné.
+Týká se to především nové Siri AI, která měla být jednou z hlavních hvězd letošní aktualizace. Apple její dostupnost v iOS a iPadOS v EU odložil kvůli požadavkům spojeným s evropským Aktem o digitálních trzích. Kdy se nových vychytávek dočkají uživatelé v Česku a v dalších státech našeho kontinentu, zatím není jasné.
+Rychlejší chod
+Na první pohled si uživatelé všimnou především dalších úprav designu Liquid Glass. Apple vylepšil čitelnost, kontrast a způsob, jakým se jednotlivé prvky systému zobrazují. Nově si navíc lze pomocí posuvníku v nastavení vybrat, zda má být Liquid Glass téměř průhledný, nebo naopak výrazně tónovaný.
+Ještě zajímavější jsou ale změny, které nejsou tolik vidět. Apple zapracoval na výkonu celého systému. Aplikace se podle firmy mohou spouštět až o 30 procent rychleji, nové fotografie se v knihovně načítají až o 70 procent rychleji a přenosy přes AirDrop mohou být až o 80 procent svižnější. Vylepšeno bylo také vyhledávání ve Spotlightu, Fotkách a Mailu.
+Aktualizace tak má zrychlit a zpříjemnit používání i na starších podporovaných modelech. iOS 27 dostaly i poměrně staré telefony, konkrétně iPhone 11 z roku 2019 a iPhone SE 2. generace z roku 2020.
+AI umí mnohem víc
+Apple současně posunul Apple Intelligence do dalších částí systému. Umělá inteligence pomáhá například při úpravách fotografií. Nové nástroje dokážou změnit kompozici snímku, rozšířit záběr nebo odstranit nežádoucí objekty.
+AI se dostává také do Safari, Fotek a dalších aplikací. Visual Intelligence navíc nově dokáže pracovat s tím, co vidí fotoaparát. Uživatel může například namířit telefon na objekt a následně se na něj zeptat nebo podle něj provést další akci.
+Největší změnou měla být Siri AI. Apple ji popisuje jako výrazně schopnějšího asistenta, který rozumí kontextu, dokáže pracovat s osobními informacemi a provádět úkoly napříč aplikacemi. Může například najít konkrétní fotografii, dohledat e-mail nebo poznámku a následně s nalezeným obsahem pracovat.
+Jenže právě tady narazí čeští uživatelé na největší omezení. Siri AI v iOS 27 není při uvedení dostupná v Evropské unii. Apple sice její zpřístupnění v EU neodmítá definitivně, aktuálně ale není možné nové funkce na iPhonu v evropském regionu používat.
+Omezení se navíc netýká jen Siri. Apple upozorňuje, že dostupnost jednotlivých funkcí Apple Intelligence se může lišit podle regionu, jazyka a konkrétního zařízení. Některé AI funkce navíc vyžadují podporovaný iPhone, mezi které patří iPhone 15 Pro a 15 Pro Max a novější podporované modely.
+Větší kontrola pro rodiče
+Výraznou novinkou je také přepracovaná rodičovská kontrola. Rodiče mohou lépe určovat, k jakým aplikacím a webům mají děti přístup, s kým mohou komunikovat nebo v jakou denní dobu mohou jednotlivé aplikace používat.
+Novinkou jsou také časové limity pro celé kategorie aplikací, například hry, zábavu nebo sociální sítě. Nastavit lze rovněž rozvrhy, podle kterých se dostupnost aplikací během dne mění. Apple tak chce rodičům nabídnout větší kontrolu bez toho, aby museli každou aplikaci nastavovat zvlášť.
+Další změny se objevují v běžných aplikacích. Ve Zdraví přibyla podpora sledování příznaků perimenopauzy a menopauzy, ve Fotkách se vylepšila práce se sdílenými alby a uživatelé AirPodů mohou využít vlastní nastavení ekvalizéru. iOS 27 také lépe zvládá přechody mezi Wi-Fi a mobilní sítí.
+Novinky nekončí u iPhonu
+Vylepšení se netýkají pouze iPhonů. Apple minulý týden vydal také novou verzi systému pro své počítače. macOS 27 Golden Gate přináší podobně jako iOS 27 upravený Liquid Glass, rychlejší systém, lepší vyhledávání a další změny v každodenním používání Macu.
+Největší pozornost zde opět poutá Siri AI. Na rozdíl od iPhonu ale Apple uvádí, že uživatelé Maců v Evropské unii k nové Siri AI přístup dostanou. Zpočátku je však její dostupnost omezená na angličtinu a další jazyky mají následovat později.
+Siri AI na Macu má podobně jako na iPhonu rozumět osobnímu kontextu a pomáhat při práci napříč aplikacemi. Apple současně vylepšil například Spotlight a Mail a zrychlil přenosy přes AirDrop nebo práci se síťovými soubory.

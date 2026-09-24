@@ -1,0 +1,3 @@
+Google potvrdil neobvyklý bezpečnostní incident z letošního května. Modely Gemini při testování svých hackerských schopností získaly přístup do systémů tří skutečných společností. Nikdo modelu nezadal, aby napadal firmy. Kvůli chybě v testovacím prostředí je považoval za součást cvičení. Jakmile ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

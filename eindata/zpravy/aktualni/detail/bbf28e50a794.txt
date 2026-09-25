@@ -1,0 +1,3 @@
+OpenAI v prosinci skončí s podporou uživatelsky vytvořených GPT asistentů • Tvůrci musí své konfigurace včas migrovat na nový systém pluginů • Převod nepřenáší vlastní akce ani předchozí konverzace a nastavení sdílení
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

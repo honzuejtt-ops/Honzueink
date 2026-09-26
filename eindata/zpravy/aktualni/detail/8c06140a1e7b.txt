@@ -1,0 +1,3 @@
+Nedostatek volného prostoru výrazně zpomaluje procesy zápisu a úklidu dat • Přeplněný disk nutí řídicí čip k neustálému přesouvání starých informací • Ponechání 10 až 20 % kapacity jako rezervy zajistí vysoký výkon disku
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

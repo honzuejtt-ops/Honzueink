@@ -1,3 +1,12 @@
+|T|Zaplňovat SSD až po okraj se nevyplácí. Volné místo chrání rychlost i životnost disku|D|26.9. 15:45|P|Nedostatek volného prostoru výrazně zpomaluje procesy zápisu a úklidu dat • Přeplněný disk nutí řídicí čip k neustálému přesouvání starých informací •...|X|Nedostatek volného prostoru výrazně zpomaluje procesy zápisu a úklidu dat • Přeplněný disk nutí řídicí čip k neustálému přesouvání starých informací • Ponechání 10 až 20 % kapacity jako rezervy zajistí vysoký výkon disku
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Zákaz sociálních sítí dětem je čiré pokrytectví. V pastích algoritmů končí i ti, kteří mají jít příkladem|D|26.9. 14:45|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Programování elektroniky: Přesná časomíra na závody za pár stovek a s moderním webovým rozhraním|D|26.9. 13:45|P|Jak změřit čas na závodech i bez techniky za tisíce korun • Pomůže nám optická brána a ESP32 s Bluetooth • V Karpatech snímala bajkerský dorost|X|Jak změřit čas na závodech i bez techniky za tisíce korun • Pomůže nám optická brána a ESP32 s Bluetooth • V Karpatech snímala bajkerský dorost
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Tak tenký, že se ani konektor USB-C nevešel. Disk Lexar Muse se dá nosit třeba na zádech telefonu|D|26.9. 11:45|P||X|
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|

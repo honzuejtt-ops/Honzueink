@@ -1,3 +1,25 @@
+|T|Tak tenký, že se ani konektor USB-C nevešel. Disk Lexar Muse se dá nosit třeba na zádech telefonu|D|26.9. 11:45|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Netflix a další na víkend: Atentátník Unabomber, nový film Toy Story nebo pokračování Cizinka: Krev mé krve|D|26.9. 10:45|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Deník Metro: Stožáry vysílače Liblice půjdou k zemi|D|26.9. 09:52|P|V termínu od 12. do 16. října by měl proběhnout odstřel nejvyšší stavby v České republice, stožárů vysílače Liblice B u Českého Brodu. Na svém faceboo...|X|V termínu od 12. do 16. října by měl proběhnout odstřel nejvyšší stavby v České republice, stožárů vysílače Liblice B u Českého Brodu. Na svém facebookovém profilu o tom informoval deník Metro, který se odvolává na informace pro majitele okolních pozemků. Rozřezávání a odklízení ocelové konstrukce podle deníku potrvá až do konce listopadu.
+Vlastníkem stožárů jsou České Radiokomunikace. Požádali jsme je o vyjádření. V červenci veřejně nabídly k prodeji. Upozorňovaly však na značné náklady a rizika pro nového majitele.
+Jako nejnaléhavější byla určena výměna lan, jimiž jsou stožáry ukotveny k zemi. Jejich životnost stanovily odborné podklady do 31. prosince 2026 a do té doby by bylo nutné provést takzvané překotvení, tedy jejich komplexní výměnu. Odhadované náklady na tuto operaci činí zhruba 120 milionů korun. Obnova protikorozní ochrany ocelové konstrukce by vyšla přibližně na 25 milionů korun a oprava či modernizace výtahů Alimak na dalších zhruba 25 milionů korun.
+Stožáry byly dokončeny v roce 1976 pro středovlnné vysílání druhého programu tehdejšího Československého rozhlasu. Český rozhlas ukončil AM vysílání na konci roku 2021, z Liblic pak do konce března 2025 vysílalo na střední vlně soukromé Country Radio. Poté stožáry osiřely.|E|
+|T|Firma TerraPower Billa Gatese chce v Británii nasadit nový typ sodíkového reaktoru s výkonem 345 MW|D|26.9. 09:45|P|Firma TerraPower oficiálně zahájila proces posuzování svého reaktoru Natrium • Sodíkový reaktor nabízí unikátní systém krátkodobého navýšení výkonu • ...|X|Firma TerraPower oficiálně zahájila proces posuzování svého reaktoru Natrium • Sodíkový reaktor nabízí unikátní systém krátkodobého navýšení výkonu • Stavba prvního demonstračního reaktoru již probíhá v americkém Wyomingu
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Chlazené pivo i uprostřed lesa. Český projekt pípy s vlastním akumulátorem finišuje na Kickstarteru|D|26.9. 08:45|P|Oživeno v sobotu 26. září | Kampaň se blíží ke konci (posledního září) a nastřádaná částka zatím visí těsně pod stanoveným cílem. Ale vše je otázkou p...|X|Oživeno v sobotu 26. září | Kampaň se blíží ke konci (posledního září) a nastřádaná částka zatím visí těsně pod stanoveným cílem. Ale vše je otázkou pouhých čtyř koupených kusů a bude splněno, doufejme tedy, že se zadaří a pěkný český projekt dojde naplnění. 
+
+
+Pro mě ten příběh začal před měsícem, ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Lidské oko a 24 FPS? Nesmysl. Rozbíjíme největší mýty o monitorech|D|26.9. 07:45|P|Vybíráte nový monitor? V tom případě si dejte pozor na zažité mýty, jež vás mohou svést z cesty a nasměrovat ke zcela nevhodnému modelu.|X|Vybíráte nový monitor? V tom případě si dejte pozor na zažité mýty, jež vás mohou svést z cesty a nasměrovat ke zcela nevhodnému modelu.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Toto je 7 pokročilých funkcí Chromu, které budete litovat, že jste neznali dříve. Ušetří vám čas i nervy|D|26.9. 06:00|P|Ztracenou kartu umí Chrome najít přímo z adresního řádku, dlouhý článek zpřehlednit a celou stránku uložit jako snímek. Vedle hotových funkcí nabízí i...|X|Chrome je na počítačích zdaleka nejpoužívanějším prohlížečem: v srpnu 2026 na něj podle Statcounteru připadlo přes 73 % zobrazených webových stránek. Člověk ho může používat každý den a znát jen zlomek jeho možností. Chrome přitom má vlastní nástroje i na drobné úkoly, kvůli kterým si lidé často instalují rozšíření.
 Jen je neukazuje na jednom místě. Některé najdete po kliknutí pravým tlačítkem, jiné až ve vývojářských nástrojích; experimenty mají vlastní adresu chrome://flags. Následující postupy platí pro Chrome na počítači, klávesové zkratky uvádíme pro Windows.
 1. Adresní řádek najde i to, co už máte otevřené

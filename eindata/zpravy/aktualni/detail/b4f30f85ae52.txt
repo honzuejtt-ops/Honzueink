@@ -1,0 +1,12 @@
+Článek
+OpenAI uvedla, že v létě prověřovala několik incidentů, při nichž její agenti při shromažďování a distribuci informací z federálních vládních webů jednali neočekávaně. Společnost zároveň oznámila, že trénování obnoví až ve chvíli, kdy bude mít zavedena další ochranná opatření.
+„Obnovíme trénink pouze tehdy, až si budeme jisti, že máme zavedena další ochranná opatření,“ stojí v oficiálním prohlášení OpenAI. Firma zároveň připustila, že s dalším vývojem umělé inteligence a vznikem nových problémů bude možná muset vývoj znovu „pozastavit“.
+Agenti překročili zadání
+Nejnovější případy se týkaly mimo jiné amerického ministerstva školství a Komise pro cenné papíry a burzy (SEC).
+V prvním případě agenti OpenAI nalezli tzv. developer keys, tedy speciální přístupové klíče, které umožňují aplikacím nebo vývojářům komunikovat s rozhraním API a prostřednictvím něj přistupovat k určitým datům či funkcím. V tomto případě mohly klíče umožnit přístup k vládním datům. Nakonec však agenti shromáždili pouze informace, které byly veřejně dostupné.
+Americké ministerstvo školství podle listu The Guardian nenašlo „žádné důkazy o jakémkoli dopadu na naše webové stránky nebo databáze“.
+V případě SEC agenti rovněž nalezli veřejně dostupné informace. Následně je ale zveřejnili jinde na internetu. Tím podle dostupných informací překročili pokyny, které dostali. Mluvčí SEC Kurt Hopfenspirger v sobotu uvedl, že „nebyly zpřístupněny žádné neveřejné informace“.
+Už podruhé během tří měsíců
+Nejde přitom o první přerušení vývoje modelů OpenAI v posledních měsících. Společnost jej pozastavila už v červenci poté, co vyšlo najevo, že se odehrál kybernetický útok zaměřený na AI startup Hugging Face.
+Generální ředitel OpenAI Sam Altman tehdy uvedl, že tento incident „je nejzávažnější událostí, jakou jsme zaznamenali“.
+OpenAI už dříve zveřejnila také šest dalších případů „neočekávaného nebo znepokojivého“ chování AI modelů. Zároveň představila rámec pro sledování, prověřování a zveřejňování podobných incidentů.

@@ -1,0 +1,32 @@
+Článek
+Jedním z nejvýraznějších varovných hlasů je Jacob Coxon, který v uplynulých třech letech pracoval na výzkumu v OpenAI i Anthropic. Právě z druhé jmenované společnosti v září odešel a následně zveřejnil ostrou kritiku současného závodu o stále výkonnější umělou inteligenci.
+„Ani jedna z těchto společností podle mě nejedná zodpovědně. Řítí se přímo k samostatně se zlepšující superinteligenci a hazardují s našimi životy,“ napsal Coxon.
+Podle něj se vývoj AI nezpomaluje, ale naopak nabírá na rychlosti. Varuje před vznikem systémů, které by byly výrazně schopnější než lidé ve většině oblastí vyžadujících inteligenci.
+I resigned from Anthropic today. I spent the last three years doing pretraining research at both OpenAI and Anthropic. Neither company is acting responsibly. They are racing straight to self-improving superintelligence and gambling with our lives. More thoughts below.
+— Jacob Coxon (@hilbertspaess) September 9, 2026
+„Nepodceňujte sílu této technologie. Brzy budeme mít nadlidské systémy, které dokážou hacknout cokoli, přes noc transformovat celá odvětví a získat skutečnou moc a zdroje,“ napsal.
+Coxon tvrdí, že někteří lidé pracující na vývoji AI sami věří, že by technologie mohla lidstvo zabít ještě před koncem tohoto desetiletí. Podle něj přitom někteří manažeři a přední výzkumníci své obavy na veřejnosti zmírňují, zatímco v soukromí prý mluví mnohem otevřeněji o rizicích.
+Jeho slova jsou o to výraznější, že nejde o člověka, který by se na vývoj AI díval pouze zvenčí. V OpenAI působil od roku 2023 a podílel se mimo jiné na práci související s modelem GPT-4o. Letos v červenci přešel do Anthropicu – společnosti, která se dlouhodobě profiluje důrazem na bezpečnost AI. V září se nicméně rozhodl i tuto společnost opustit.
+Co je vlastně superinteligence?
+Pojem superinteligence označuje hypotetický systém umělé inteligence, který by svými schopnostmi výrazně překonal člověka prakticky ve všech oblastech, kde je zapotřebí inteligence.
+Nešlo by tedy jen o program, který je lepší než člověk v šachu, matematice nebo programování. Superinteligentní systém by teoreticky mohl současně excelovat ve vědě, strategickém plánování, programování, výzkumu, přesvědčování lidí nebo vymýšlení nových technologií.
+Právě tento scénář označuje Coxon za potenciálně kritický. Zároveň ale nevolá po úplném zastavení vývoje umělé inteligence. Věří v možnost mezinárodní koordinace a dohody mezi hlavními AI laboratořemi. Problém podle něj spočívá mimo jiné v tom, že pokud jedna firma zpomalí, konkurence pokračovat nepřestane.
+Musíme zpomalit tempo, jakým zlepšujeme schopnosti AI modelů.
+Coxonovo varování přichází v době, kdy se obavy z rychlého vývoje AI objevují i mezi dalšími odborníky a lidmi přímo stojícími v čele technologických firem.
+Šéf Anthropicu Dario Amodei vyzval přední AI společnosti, aby zpomalily tempo vývoje. „Musíme zpomalit tempo, jakým zlepšujeme schopnosti AI modelů,“ napsal. Podle něj je potřeba, aby bezpečnostní výzkum dostal dostatek času držet krok s rychlostí vývoje.
+Jeho výzvu podpořil šéf OpenAI Sam Altman i Elon Musk. Altman navíc podpořil myšlenku nezávislých hodnotitelů, kteří by měli mít k systémům AI rozsáhlý přístup a kontrolovat jejich bezpečnost.
+Obavy se přitom netýkají pouze hypotetické budoucí superinteligence. V posledních měsících se objevují případy, kdy AI systémy během testování vyvolaly incidenty v oblasti kybernetické bezpečnosti.
+Anthropic zveřejnil zprávu o hrozbách, v níž popsal, jak se zločinci, státem podporované skupiny, dodavatelé spywaru, vědci a propagandisté pokoušeli využít jeho výkonné AI modely k návrhu raket a bomb, vytváření smrtících patogenů nebo špehování disidentů.
+Právě podobné případy posouvají debatu od otázky, zda se jednou objeví superinteligence, k mnohem bezprostřednějšímu problému: co všechno lze se stále výkonnějšími systémy dělat a jak zajistit, aby zůstaly pod lidskou kontrolou.
+„Vlády budou nuceny jednat“
+K rychlejšímu jednání vyzývá také kanadský vědec Yoshua Bengio, jeden z průkopníků v oblasti AI. S přibývajícími případy, kdy umělá inteligence obchází pravidla nebo se chová způsobem, který její tvůrci neočekávali, podle něj rostou i bezpečnostní rizika.
+Bengio přirovnal současnou situaci k začátku pandemie covidu. Vlády podle něj mohou být nuceny jednat rychle, jakmile si uvědomí, že je ohrožena veřejná bezpečnost.
+„Myslím, že se k tomu bodu rychle blížíme,“ uvedl s tím, že je proto potřeba nezávislý demokratický dohled a přísné mantinely stanovené vládami. Zároveň ale připouští, že existují obavy z takzvaného regulačního zajetí.
+Kritici regulace upozorňují, že pokud budou velké AI společnosti tlačit na zavedení bezpečnostních režimů, mohou tím zvýšit náklady menších firem a posílit vlastní postavení na trhu. Podle tohoto pohledu by tak pravidla vytvořená kvůli bezpečnosti mohla paradoxně pomoci právě největším technologickým hráčům.
+OSN chce mezinárodní pravidla
+Do debaty proto vstoupila také Organizace spojených národů. Vysoký komisař OSN pro lidská práva Volker Türk varoval před „skokovou změnou“ směrem k větším existenčním rizikům.
+Ve svém dopise státům a společnostem vyvíjejícím nejpokročilejší AI vyzval k urgentnímu vytvoření pravidel pro takzvanou frontier AI, tedy systémy na hranici současných technologických možností.
+„Současný závod za stále výkonnější AI představuje skokovou změnu směrem k větším existenčním rizikům pro všechny oblasti našeho života,“ napsal.
+Türk přitom nevolá po zastavení vývoje. Chce ale, aby státy a firmy vytvořily pravidla založená na mezinárodním právu v oblasti lidských práv a aby regulace držela krok s rychlostí technologického vývoje.
+Nulová šance na zničení lidstva
+Ani tady však nepanuje shoda. Pohled šéfa Nvidie Jensena Huanga je v ostrém kontrastu s některými varovnými scénáři, které zaznívají od výzkumníků a dalších představitelů technologického světa.

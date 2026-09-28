@@ -1,0 +1,12 @@
+Článek
+Novinka se jmenuje Open Agent Safety Platform. Jde o otevřenou platformu, která je určená k zabezpečení AI agentů – od jejich testování až po nasazení v reálném světě. Oznámení přišlo v kalifornské Santa Claře. Na projektu podle Nvidie spolupracuje více než stovka firem a organizací z technologického průmyslu, finančnictví, energetiky nebo robotiky.
+Nejde přitom jen o další antivirový program nebo filtr, který se snaží předem odhadnout, co AI udělá. Nvidia chce vytvořit „bezpečnostní hranici kolem samotného AI agenta“. Ta má platit i v situaci, kdy agent začne postupovat jinak, než jeho tvůrci očekávali.
+„Mimořádný potenciál AI pro společnost se naplno projeví pouze tehdy, pokud vyřešíme bezpečnost AI,“ uvedl v pondělí podle televizní stanice CNN šéf Nvidie Jensen Huang. Podle něj bezpečnost umělé inteligence vyžaduje technické řešení napříč celým systémem – od softwaru až po hardware.
+Dvě pojistky místo jedné
+Platforma má dvě hlavní části. První se jmenuje OpenShell. Tuto část si lze představit jako velmi přísného správce, který stojí mezi AI agentem a počítačem, internetem nebo firemními systémy.
+Agentovi lze například povolit, aby si přečetl určitá data, ale zakázat mu jejich změnu. Může dostat přístup k jednomu API, ale nikoli k jinému. Může pracovat se soubory v jednom adresáři, ale nesmí se dostat do zbytku počítače.
+Každá taková činnost může být sledována a zaznamenána. OpenShell přitom podle Nvidie funguje mimo samotný AI model a vytváří hranici, která má omezit možnosti agenta obejít nastavená oprávnění.
+To je důležitý rozdíl oproti situaci, kdy se bezpečnost spoléhá pouze na to, že samotná AI bude poslouchat instrukce, které dostala. V posledních měsících se totiž ukazuje, že právě tento postup je velký problém. Pokud totiž agent dostane dlouhý a složitý úkol, začne sám plánovat jednotlivé kroky. A někdy může narazit na překážku, kterou se pokusí obejít.
+Když software selže, nastoupí hardware
+A právě zde přichází druhá část systému – Sentry. Toto řešení běží na specializovaných datových procesorech Nvidia BlueField-4, tedy na hardwaru odděleném od systému, ve kterém pracuje samotný AI agent.
+Jeho úloha je jednoduchá: sledovat, co agent dělá, a zasáhnout, pokud překročí povolené hranice. Pokud se například agent pokusí získat přístup k systému, ke kterému nemá mít přístup, Sentry ho může izolovat. Nvidia uvádí, že to dokáže během milisekund.

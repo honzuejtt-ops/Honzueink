@@ -1,0 +1,3 @@
+Bezpečnostní analytici Cisco Talos popsali škodlivý program CLOSEDQUORUM pro Windows, který po spuštění svěřuje rozhodování o svém dalším kroku jazykovým modelům. Místo pokynů od útočníka se může ptát až čtyř různých AI a podle jejich odpovědí jednat. Zatím však není potvrzené, že byl použit při ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

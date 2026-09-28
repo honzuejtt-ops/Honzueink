@@ -1,3 +1,34 @@
+|T|Starship poprvé odstartoval do skutečného kosmu. Čeká ho šest obletů Země a přistane poblíž Chile|D|28.9. 12:42|P|V pořadí 14. Starship úspěšně zažehl motory a odstartoval. Po dlouhé době v rozumnou středoevropskou hodinu a ne po půlnoci. Hlavní ale je, že loď vůb...|X|V pořadí 14. Starship úspěšně zažehl motory a odstartoval. Po dlouhé době v rozumnou středoevropskou hodinu a ne po půlnoci. Hlavní ale je, že loď vůbec poprvé zamíří na stabilní oběžnou dráhu. Mise se protáhne až do pozdních nočních hodin.
+
+
+
+
+
+
+
+
+
+Souhrn dnešní mise:
+
+
+	Co letí: 3. let Starship ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Proč má hlavní disk v počítači písmeno C. Důvod souvisí s disketami a historií systému MS DOS|D|28.9. 11:45|P|Písmena A a B dostávaly v dávné minulosti disketové mechaniky • První pevný disk tak musel logicky obsadit až písmeno C • Dnešní Windows toto značení ...|X|Písmena A a B dostávaly v dávné minulosti disketové mechaniky • První pevný disk tak musel logicky obsadit až písmeno C • Dnešní Windows toto značení zachovává kvůli zpětné kompatibilitě
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Nejdřív jsme chtěli telefony zmenšovat, pak zase co největší displej. Po 20 letech výrobci našli kompromis|D|28.9. 10:45|P|Klasické mobily se nejdřív musely zmenšit, aby se vešly do našich kapes • Smartphony se naopak zvětšovaly, místa na displeji nebylo nikdy dost • Výrob...|X|Klasické mobily se nejdřív musely zmenšit, aby se vešly do našich kapes • Smartphony se naopak zvětšovaly, místa na displeji nebylo nikdy dost • Výrobci možná až teď po 20 letech našli rozumný kompromis
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Největší obchod české startupové scény. Miliardář Cendra prodává část své firmy známému investorovi|D|28.9. 09:45|P|Zakladatel a dosud jediný majitel společnosti CDN77 Zdeněk Cendra se rozhodl prodat necelou třetinu firmy investorovi • . • Jde o obchod odhadem za ví...|X|Zakladatel a dosud jediný majitel společnosti CDN77 Zdeněk Cendra se rozhodl prodat necelou třetinu firmy investorovi • . • Jde o obchod odhadem za více než 10 miliard korun, což je největší transakce týkající se českého start-upu v historii. • Prodej se podle informací e15 domlouval zhruba tři roky.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Copilot+ PC umírá. Značku nikdo nemiloval, Microsoft už ji nepotřebuje|D|28.9. 08:45|P|Dva roky stará certifikace Copilot+ PC už není relevantní. • Sám Microsoft ji letos přestal používat při uvedení Surfaců. • K důvodům může patřit neob...|X|Dva roky stará certifikace Copilot+ PC už není relevantní. • Sám Microsoft ji letos přestal používat při uvedení Surfaců. • K důvodům může patřit neobliba AI a Copilotu.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Agenti Claude našli v DNA virů něco, co připomíná CRISPR. Podruhé už si toho nevšimli|D|28.9. 05:45|P|Anthropic založil na jaře 2026 vlastní biologickou laboratoř. • Lidé v laboratoři ověřili, že se opakování v DNA přepisují do krátkých RNA. • Systém A...|X|Anthropic založil na jaře 2026 vlastní biologickou laboratoř. • Lidé v laboratoři ověřili, že se opakování v DNA přepisují do krátkých RNA. • Systém ART připomíná CRISPR, jeho funkce je zatím neznámá.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Apple začal v telefonech iPhone používat levnější paměti NAND typu QLC. Zhorší to výkon a životnost|D|28.9. 04:00|P|Úložiště telefonů iPhone 18 Pro a iPhone 18 Pro Max jsou tvořená pamětí QLC NAND, která vydrží méně přepisů, než ztratí spolehlivost, a má také horší ...|X|Masivní zdražování pamětí a SSD vyvolané současnou AI horečkou se drsně promítlo i do cen mobilů. Ještě víc než dřív připlácíme za vyšší kapacity úložiště. Vypadá to však, že u telefonů Applu není zdražování jediným negativním důsledkem. Firma do iPhonů začala místo kvalitnějších pamětí TLC NAND používat čipy QLC. To zhoršuje rychlost úložiště – podle testů někdy i drasticky. Ale co je horší, může to telefonu také zkrátit životnost.
 Apple začal v iPhonech používat úložiště s pamětí QLC NAND
 Po vydání telefonů iPhone 18 Pro a iPhone 18 Pro Max bylo zjištěno, že modely největšími kapacitami úložiště mají rychlost práce s daty horší než ty s menšími. Vysvětlení je zdá se prosté: Apple u modelů s 1TB a 2TB kapacitou úložiště přešel na levnější (ale horší) typ paměti NAND tvořící úložiště. Místo dnes standardních čipů se záznamem TLC (3 bity na jednu buňku), které firma používala doposud, mají tyto modely úložiště poprvé založené na čipech se záznamem QLC (což znamená 4 bity na buňku).

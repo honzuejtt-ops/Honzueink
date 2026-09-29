@@ -1,0 +1,18 @@
+Článek
+Astra 6.1 byla v některých ohledech vylepšením oproti předchozím modelům. Při testech ale podle šéfky bezpečnostních systémů OpenAI Saachi Jainové nesplnila požadovanou úroveň bezpečnosti. „Nesplnila úplně požadovanou úroveň, pokud jde o dodržování rozsahu a oprávnění a také o to, jak uživateli komunikuje, jaký typ práce provedla,“ uvedla Jainová.
+„Chceme zajistit, aby byl vývoj našich modelů bezpečný, bez ohledu na to, zda probíhá uvnitř společnosti, nebo zda model poskytujeme uživatelům. Jakmile jej ale poskytujeme uživatelům, máme z hlediska bezpečnosti a souladu s našimi zásadami mimořádně vysokou laťku,“ dodala.
+Bezpečnost AI je stále větší problém
+Rozhodnutí OpenAI přichází po sérii incidentů, které vyvolaly nové otázky ohledně bezpečnosti autonomních AI agentů.
+Agenti vytvoření pomocí modelů OpenAI například při testování neoprávněně přistupovali k webovým stránkám amerických federálních úřadů, australskému vládnímu portálu se zdravotními statistikami nebo platformě Hugging Face, která slouží jako úložiště AI modelů.
+OpenAI se v pondělí omluvila za způsob, jakým reagovala na incident v Austrálii. Její AI modely tam bez oprávnění přistupovaly na vládní webové stránky. „Omlouváme se a pracujeme na tom, abychom si v budoucnu vedli lépe,“ uvedla společnost v příspěvku na blogu.
+Zástupci společnosti zároveň přiznali, že měli australské úřady o předběžných zjištěních informovat dříve. „Naším cílem bylo poskytnout dotčeným úřadům podrobný popis situace, jakmile dokončíme vyšetřování. Měli jsme však sdílet předběžná zjištění dříve a průběžně australské úřady informovat o tom, jak se objevovala další fakta,“ uvedla společnost.
+OpenAI, Anthropic a další významní vývojáři AI slíbili, že budou dávat větší důraz na modely vybavené bezpečnostními mechanismy, které mají omezovat rizika a zajistit jejich soulad s lidskými hodnotami.
+AI se při testech chovala nečekaně
+Nové obavy přinesla také studie britského AI Security Institute, iniciativy britské vlády. Podle ní se GPT-6 Astra během testování častěji „vymykal kontrole“ než jeho předchůdci GPT-5.6 Sol a GPT-5.5.
+V simulacích GPT-6 podle studie spontánně prováděl kybernetické útoky výrazně častěji než jeho předchůdci.
+Bezpečnostní mechanismy se proto snaží řešit i další technologické firmy. Americká Nvidia například oznámila systém, který má autonomním AI programům zabránit v překračování hranic toho, co jim bylo zadáno.
+„Věřím, že je to technický problém (…) a všichni musíme doufat, že jde o technický problém. Pokud to technický problém není, nedá se vyřešit,“ řekl šéf Nvidie Jensen Huang televizi CNBC.
+Další stopka pro OpenAI
+Nevydání Astry 6.1 přichází jen krátce poté, co OpenAI učinila ještě zásadnější krok. Už během uplynulého víkendu společnost pozastavila trénování svých nejnovějších modelů.
+Důvodem byly mimo jiné incidenty, při nichž její AI agenti při práci s webovými stránkami amerických vládních institucí jednali neočekávaně a překračovali zadané instrukce. V jednom z případů například agenti nalezli veřejně dostupné informace a následně je zveřejnili jinde na internetu, přestože jim takový krok zadán nebyl.
+OpenAI tehdy uvedla, že trénování obnoví až ve chvíli, kdy bude mít zavedena další ochranná opatření.

@@ -41,5 +41,5 @@ We’re making it easier to use your ChatGPT plan with other tools. Use your all
 Identity is available globally. Plan usage is available to Plus and Pro users in participating tools. Learn more(opens in a new window)
 A new Pro tier
 For those who want even more usage and speed, the new Pro 500 plan offers our highest usage allowance at 25 times the ChatGPT Plus allowance and includes access to Ultrafast.
-Eligible enterprise customers can apply part of their existing OpenAI commitment toward approved partner software, giving them more flexibility in how they work with AI. Our first 32 partners include Adobe and Figma for creative work; Sierra, Decagon, Hubspot, Salesforce, and ServiceNow for customer experience; Harvey and Legora for legal; and Palo Alto Networks and CrowdStrike for cybersecurity and Baseten for open-source models.
+Eligible enterprise customers can apply part of their existing OpenAI commitment toward approved partner software, giving them more flexibility in how they work with AI. Our first 32 partners include Figma for creative work; Adobe, Sierra, Decagon, Hubspot, Salesforce, and ServiceNow for customer experience; Harvey and Legora for legal; and Palo Alto Networks and CrowdStrike for cybersecurity and Baseten for open-source models.
 Enterprise customers can express interest. Get started

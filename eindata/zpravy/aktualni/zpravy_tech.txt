@@ -1,4 +1,150 @@
-|T|Žádné zprávy|D||P|Nebyly nalezeny.|X|Zkuste to později.|E||T|Software Boeingů 737 MAX má problém při nezdařeném přiblížení. Odkládá se kvůli němu certifikace MAX 10|D|29.9. 18:45|P|Americký úřad FAA odložil certifikaci letounu Boeing 737 MAX 10 • Důvodem je nová chyba v softwaru automatické vertikální navigace • Závada zvyšuje zá...|X|Americký úřad FAA odložil certifikaci letounu Boeing 737 MAX 10 • Důvodem je nová chyba v softwaru automatické vertikální navigace • Závada zvyšuje zátěž pilotů během náročného manévru při přistání
+|T|Žádné zprávy|D||P|Nebyly nalezeny.|X|Zkuste to později.|E||T|Ransomware nezačíná zašifrováním dat: co může SOC vidět před útokem|D|29.9. 22:00|P|Ransomware si většina lidí spojí až se zašifrováním dat. Dnešní útoky ale často zahrnují i krádež dat a útočník může být v síti celé hodiny. Jaké stop...|X|Když ransomware konečně uvidíme, může už být pozdě
+Je pondělí 7:18. První zaměstnanci přicházejí do práce a jeden z nich hlásí, že se nemůže dostat k souborům na firemním serveru. Během několika minut přicházejí další podobná hlášení. Některé systémy neodpovídají a na jednom ze serverů se objeví zpráva s požadavkem na výkupné.
+V tuto chvíli už nikdo nemusí složitě zjišťovat, zda firma čelí bezpečnostnímu incidentu. Je to zřejmé.
+Útok ale nezačal v 7:18.
+Začněme proto o několik hodin dříve.
+Následující scénář je modelový. Konkrétní ransomwarový útok může probíhat mnoha různými způsoby, princip je ale podobný: mezi prvním průnikem útočníka do prostředí a samotným zašifrováním dat mohou vznikat události, které jednotlivě nemusí působit kriticky. Teprve jejich spojení do souvislostí může ukázat, že se v infrastruktuře děje něco neobvyklého.
+Dnešní vyděračské útoky navíc nemusí stát jen na šifrování. Součástí může být i exfiltrace dat a následná hrozba jejich zveřejnění. Proto nás bude zajímat celý průběh kompromitace, ne jen její poslední viditelný krok.
+01:43 – Přihlášení, které samo o sobě nemusí nikoho vyděsit
+Útočník získal přihlašovací údaje zaměstnance. Jak k tomu došlo, není pro náš příběh v tuto chvíli podstatné. Mohly pocházet z phishingu, dřívějšího úniku hesel nebo jiného kompromitovaného systému.
+V 01:43 se s nimi přihlásí ke vzdálenému přístupu do firemní sítě.
+Přihlášení je úspěšné.
+Právě v tom je první problém. Z pohledu jednotlivého systému se nemuselo stát nic, co by automaticky znamenalo kybernetický útok. Existuje platný uživatelský účet, proběhlo ověření a systém uživatele pustil dovnitř.
+V logu ale zůstávají informace, které mohou být zajímavé v širším kontextu. Uživatel se běžně přihlašuje během pracovní doby, tentokrát se připojil hluboko v noci. Přístup mohl přijít z nezvyklé adresy nebo zařízení. Mohou se objevit předchozí neúspěšné pokusy o přihlášení nebo jiné odchylky od běžného chování účtu.
+Žádná z těchto událostí ještě sama o sobě nemusí znamenat kybernetický bezpečnostní incident (KBI), natož připravovaný ransomwarový útok.
+Je to první dílek skládačky.
+01:56 – Účet začíná dělat věci, které běžně nedělá
+Útočník už má přístup, jeho cílem ale není zůstat u jednoho uživatelského účtu. Začíná zjišťovat, kam se dostal, jaké systémy jsou v okolí dostupné a jaké další možnosti mu kompromitované prostředí nabízí.
+Z pohledu infrastruktury tak začínají vznikat další události.
+Účet, který se obvykle pohybuje v omezené části prostředí, se najednou pokouší komunikovat s dalšími zařízeními. Objevují se přístupy ke službám nebo systémům, které daný uživatel běžně nepotřebuje. Mohou přibývat neúspěšná ověření, nové síťové relace nebo spuštění nástrojů, jejichž použití je sice samo o sobě legitimní, ale v daném čase a kontextu neobvyklé.
+Tady se dostáváme k jedné ze základních vlastností bezpečnostního dohledu.
+Jedna událost může být banalita.
+Deset zdánlivě nesouvisejících událostí během dvaceti minut už může vyprávět úplně jiný příběh.
+02:17 – Útočník se začíná pohybovat sítí
+Od prvního přihlášení uplynulo 34 minut.
+Ve firmě je stále ticho.
+Útočník mezitím zkoumá další zařízení a hledá cestu k systémům, které pro něj mají větší hodnotu. Může využívat běžné služby, které administrátoři používají každý den, například RDP, SMB nebo další nástroje pro vzdálenou správu.
+Právě to může být pro obranu nepříjemné. Ne každá škodlivá aktivita musí vypadat jako spuštění neznámého programu s nápisem „malware“. Útočník může využívat legitimní účty, protokoly a nástroje, které mají ve firemní síti své opodstatnění.
+Rozhoduje kontext.
+Může být normální, když správce serverů ve dvě hodiny ráno navazuje vzdálená spojení k několika serverům. Mnohem zajímavější je, když se o totéž pokouší účet zaměstnance, který nic takového běžně nedělá.
+Postupně tak přibývají další dílky skládačky: noční přihlášení, komunikace s neobvyklými systémy, pokusy o vzdálený přístup a autentizace k dalším zařízením.
+Jednotlivě mohou mít vysvětlení.
+Dohromady už začínají být podezřelé.
+02:41 – Útočník potřebuje větší oprávnění
+Běžný uživatelský účet má své limity. Pokud chce útočník zasáhnout větší část infrastruktury, bude se často snažit získat další přihlašovací údaje nebo účet s vyššími oprávněními.
+S tím mohou přijít další stopy.
+Mohou se objevit neobvyklé pokusy o přístup k privilegovaným účtům, autentizace na systémy, ke kterým se původní uživatel běžně nepřihlašuje, nebo činnost spojená se získáváním dalších přihlašovacích údajů.
+Po téměř hodině tak firma nemusí mít jeden obrovský červený alarm s nápisem „Probíhá ransomwarový útok“.
+Má ale něco jiného.
+Řadu událostí z různých částí infrastruktury.
+01:43 – neobvyklé vzdálené přihlášení.
+01:56 – nestandardní aktivita účtu.
+02:17 – komunikace s dalšími systémy.
+02:41 – aktivita související s dalšími účty a oprávněními.
+Právě zde se začíná lámat celý náš příběh.
+03:04 – Data existují. Otázka je, kdo se na ně dívá
+Bezpečnostní prvky ve firmě během posledních osmdesáti minut nezahálely.
+VPN zaznamenala přihlášení. Operační systémy vytvořily své záznamy. Síťová infrastruktura viděla komunikaci mezi zařízeními. Další bezpečnostní nástroje mohly zaznamenat vlastní události a upozornění.
+Informace tedy mohou existovat.
+To ale ještě neznamená, že někdo pochopil, co společně znamenají.
+Tady se dostáváme k zásadní otázce:
+Stačí bezpečnostní události sbírat a generovat alerty, nebo je potřeba, aby je někdo průběžně vyhodnocoval a dokázal na ně také reagovat?
+Útočník je v našem modelovém prostředí už 81 minut.
+Firma o něm stále nemusí vědět.
+03:04 – Stejný alert, dva úplně jiné příběhy
+V tomto okamžiku náš modelový příběh rozdělme na dvě téměř totožné firmy.
+Mají podobnou infrastrukturu, stejné bezpečnostní prvky a obě používají SIEM, do kterého posílají bezpečnostní události z různých systémů.
+SIEM není jen skladiště logů. Dokáže informace z různých zdrojů soustředit na jednom místě, vyhodnocovat je, korelovat a při splnění určitých podmínek vytvořit alert. Podle konkrétního řešení a konfigurace může být část následné reakce také automatizována.
+Rozdíl mezi našimi dvěma firmami proto není v tom, že jedna má „chytrý systém“ a druhá nikoliv.
+Rozdíl přichází až potom.
+Firma A: Alert existuje
+Ve 03:04 vytvoří SIEM upozornění na podezřelou aktivitu.
+Pravidlo spojilo několik událostí dohromady a výsledkem je alert, který stojí za prověření.
+Jenže jsou tři hodiny ráno.
+Firma sice bezpečnostní události centrálně sbírá, ale nemá v tuto dobu nastavený průběžný dohled ani proces, který by zajistil okamžité vyhodnocení tohoto typu upozornění.
+Alert tedy existuje.
+Je správně uložený. Ráno si ho možná někdo otevře.
+Útočník ale na ráno čekat nebude.
+Firma B: Někdo alert vyhodnotí
+Ve druhé firmě vznikne ve 03:04 prakticky stejné upozornění.
+Tentokrát je ale součástí prostředí také aktivně obsluhovaný SOC s dohledem v daném čase.
+Analytik nevidí na monitoru nápis „ransomware za čtyři hodiny“.
+Vidí alert.
+Musí zjistit, jestli jde o skutečný incident, nebo například o legitimní noční práci zaměstnance či administrátora.
+Právě tady začíná práce, kterou samotné vytvoření alertu neřeší.
+Analytik se podívá na související události.
+Kdy se účet přihlásil?
+Odkud?
+Je taková aktivita pro uživatele běžná?
+Ke kterým systémům následně přistupoval?
+Objevily se ve stejném časovém okně další autentizace, vzdálená spojení nebo neobvyklé události?
+Najednou před sebou nemá jednu položku.
+Má příběh.
+01:43 – neobvyklé přihlášení.
+01:56 – změna chování účtu.
+02:17 – pohyb směrem k dalším systémům.
+02:41 – další aktivita spojená s účty a oprávněními.
+03:04 – korelovaný alert.
+To ještě nemusí být důkaz připravovaného ransomwarový útoku.
+Je to ale dost důvodů na to, aby se situací někdo vážně zabýval.
+03:16 – Detekce se mění v reakci
+Analytik vyhodnotí aktivitu jako bezpečnostní incident a podle nastaveného postupu přichází další krok: containment, tedy omezení dalšího šíření nebo pokračování útoku.
+Právě tady je důležitá další věc.
+SOC nemusí mít v každé organizaci právo jednoduše stisknout tlačítko a odpojit půl firmy od sítě. Rozsah jeho pravomocí závisí na předem nastavených pravidlech a playboocích.
+Někde může analytik kompromitovaný účet přímo zablokovat nebo zařízení izolovat. Jinde incident okamžitě eskaluje internímu IT týmu či určené odpovědné osobě, která potřebné kroky provede.
+V našem modelovém případě se podaří účet zablokovat, ukončit podezřelé relace a izolovat zařízení, ze kterého aktivita vychází. Současně začíná prověřování toho, kam všude se útočník během předchozí hodiny mohl dostat.
+Tím incident nekončí.
+Útočník mohl získat další přihlašovací údaje, vytvořit si jinou cestu zpět nebo kompromitovat další systémy.
+Ale něco zásadního se změnilo.
+Firma už o útoku ví.
+03:28 – Ve firmě A je stále ticho
+Zatímco ve firmě B už běží incident response, ve firmě A se nic viditelného nestalo.
+Alert stále čeká.
+Útočník pokračuje.
+Má další desítky minut na průzkum infrastruktury, hledání cenných systémů, získávání přístupu a přípravu útoku tak, aby měl co největší dopad.
+Obě firmy přitom měly v 03:04 velmi podobnou informaci.
+Rozdíl nebyl v existenci logu.
+Rozdíl nebyl ani v tom, zda vznikl alert.
+Rozdíl byl v tom, co se stalo potom.
+SIEM a SOC nejsou soupeři
+Pojmy SIEM a SOC se někdy staví proti sobě, jako kdyby bylo potřeba vybrat jednu z těchto možností.
+Tak to ale není.
+SIEM je technologie, která pomáhá bezpečnostní data shromažďovat, centralizovat a zpracovávat tak, aby z nich bylo možné získat použitelné informace.
+SOC je naproti tomu bezpečnostní dohled postavený nejen na technologiích, ale také na lidech a procesech, které řeší, co se s detekovanou událostí stane.
+SIEM proto může být jedním z nejdůležitějších nástrojů SOC.
+Samotná existence nástroje ale ještě neurčuje, kdo alert prověří, kdo rozhodne o závažnosti incidentu a kdo zajistí reakci.
+Právě čas mezi detekcí a reakcí může být při kybernetickém incidentu rozhodující.
+V našem příběhu od prvního přihlášení útočníka uplynula hodina a 45 minut.
+Jedna firma už incident ře...
+(Pokracovani na webu)|E||T|Softwarová sklizeň (30. 9. 2026): moderní multiplatformní náhrada za PuTTY|D|29.9. 22:00|P|Vyměníme PuTTY za SSH klienta s SFTP, databázemi i vzdálenou plochou, přepíšeme nastavení BIOSu z terminálu bez restartu do setupu a rozjedeme doma vl...|X|Reach
+SSH klientů vzniká každý rok několik, takže u Reach je na místě otázka, proč zrovna tenhle. Autor má odpověď připravenou: PuTTY se dvacet let nezměnilo, MobaXterm je jen pro Windows a vypadá podle toho, a Termius chce předplatné za věci, které by měly být zadarmo. Reach je napsaný v Rustu, běží na Windows, macOS, Linuxu a také na Androidu a místo přibaleného Chromia používá webview systému, takže je malý a s pamětí šetří.
+SSH řeší vlastní implementací nezávislou na OpenSSH. Základ je klasika: terminál s taby a rozdělenými okny, SFTP prohlížeč, který se chová jako běžný správce souborů včetně přetažení souboru na plochu, uložená spojení se složkami a štítky, skok přes bastion a import hostitelů z ~/.ssh/config. Hesla jsou na disku šifrovaná, ne v textovém konfiguráku.
+Zajímavější je to, co je navíc. V nastavení jsou tři přepínače, Ansible, OpenTofu a Databáze, a po instalaci jsou všechny vypnuté, takže Reach na první pohled vypadá jako obyčejný klient. Databázová část je překvapivě dospělá. Připojí se k PostgreSQL, MySQL, MariaDB, SQL Serveru, SQLite i Redisu, klidně přes už otevřené SSH spojení, tabulky edituje v mřížce, napovídá názvy sloupců ze živého schématu a při změně struktury tabulky ukáže vygenerovaný ALTER dřív, než ho pustí.
+Cokoli, co maže nebo sahá na všechny řádky, se nejdřív zeptá. Spojení označené jako produkční se ptá na každou změnu a to označené jen pro čtení zápis rovnou odmítne. Do tabu se vejde i RDP plocha nebo sériová konzole ke switchi a terminál jde sdílet s druhým člověkem přes WebRTC bez serveru uprostřed. Instalátory nejsou podepsané, autor na certifikát nemá a v README to říká na rovinu. Licence je MIT.
+uefisettings
+Změna nastavení v BIOSu obvykle znamená restart, klávesu F2 v pravou chvíli a klikání v modrém menu. U serveru v datacentru na druhém konci města to nepřipadá v úvahu. uefisettings z projektu LinuxBoot proto nastavení UEFI čte a zapisuje rovnou z běžícího Linuxu. Původně vznikl pro serverový hardware z Open Compute Project, ale částečně funguje i na běžných deskách a noteboocích. Napsaný je v Rustu a instaluje se přes cargo. Používání je jednoduché:uefisettings get 'Enable Intel(R) TXT' vrátí hodnotu položky,uefisettings set 'Pending operation' 'TPM Clear' ji změní. Názvy položek jsou přesně ty, které jsou vidět v setupu, žádné tajné kódy. Výstup umí JSON, takže se s nástrojem dobře skriptuje.
+Uvnitř jsou dva různé příběhy. Na běžných deskách firmware vystavuje adresu své databáze HII, což je binární popis všech formulářů, které se v setupu proklikávají. uefisettings si ji vytáhne z paměti, rozebere na otázky a odpovědi, a zápis pak znamená spočítat správný offset a přepsat proměnnou v efivarfs. Formuláře jde nechat vypsat i v čitelné podobě.
+Servery HPE jdou vlastní cestou a HII nevystavují. Místo toho mají Redfish přes správní čip iLO, který uefisettings volá lokálně přes zařízení  /dev/hpilo, bez hesla a bez sítě. Tento protokol HPE nikde nedokumentuje a ovládá ho uzavřená knihovna, kterou autoři podle licence nesměli rozebírat. Signatury funkcí si tedy odvodili z otevřeného pythonového nástroje HPE, který tu knihovnu volá, a zjištění sepsali do dokumentace. Releasy na GitHubu nejsou, verze je z crate. Licence je BSD-3-Clause.
+AJEAN
+U lokálního jazykového modelu je samotný model ta snazší část. Kolem něj chybí webové rozhraní, paměť, nástroje, aby model mohl něco skutečně udělat, a přístup zvenku. AJEAN to všechno dává do jednoho binárního souboru v Go. Inferenci nechává na llama.cpp, které si ale kompiluje sám: příkazem ajean llamacpp install stáhne zdrojáky a přeloží je pro grafiku, kterou v počítači najde, ať je od firmy Nvidia, AMD nebo Applu. Pokud grafiku najde, ale chybí k ní toolkit, vypíše, co doinstalovat.
+Žádný kontejner, žádné přepínače CMake. Běží to jako dvě služby, jedna drží model a druhá servíruje rozhraní a OpenAI-kompatibilní endpoint pro cizí nástroje. Důvod je prostý, rozhraní jde restartovat okamžitě, zatímco model se načítá dlouho a není proč ho shazovat. Konfigurace jsou presety, přepnutí presetu nahraje jiný model, a preset může ukazovat i ven, na cizí API nebo do cloudu, čímž uvolní lokální grafiku.
+Nástroje se zapínají jedním příkazem ajean agent on. Model pak dostane terminál, zápis souborů, trvalou paměť v Markdownu, čtení webu a nástroje z MCP serverů, které se nastavují stejným JSONem jako v Claude Desktop. Zvlášť se zapíná ovládání prohlížeče, kdy AJEAN pustí skutečný Chrome a model v něm kliká a píše. Prvky na stránce hledá podle stromu přístupnosti, ne podle screenshotů, takže to zvládne i malý model bez podpory obrázků. Co není zapnuté, model vůbec nedostane, aby si to nemohl vymyslet.
+Data na disku je možné šifrovat klíčem, který zůstává jen v prohlížeči uživatele. Vzdálený přístup řeší služba ajean.link, na kterou se domácí stroj připojí sám, takže se neotevírají porty a funguje to i za CGNAT. Chat přes relé je šifrovaný end-to-end a relé vidí jen to, že stroj běží a jaký má model. Tohle je jediná placená část, 4,80 eura měsíčně, zbytek je zdarma. Binárky jsou pro Linux, macOS i Windows, projekt je francouzský a dokumentace je v obou jazycích. Licence je MIT.
+WifiWand
+WifiWand je gem pro Ruby, který ovládá Wi-Fi na macOS a Ubuntu. Pod ním jsou obyčejné systémové nástroje, na Macu networksetup, na Ubuntu nmcli a spol., ale rozdíly mezi nimi schovává jedna sada metod se stejnými názvy. Stejná věc proto funguje jako příkaz v terminálu, jako interaktivní shell i jako knihovna ve vlastním skriptu. Instaluje se jako gem wifi-wand, spouští se ale bez pomlčky jako wifiwand, a vyžaduje Ruby 3.2 nebo novější.
+Z terminálu vypíše stav Wi-Fi, sítě, DNS a internetu jedním řádkem, ukáže dostupné sítě, připojí se, nebo Wi-Fi vypne a zapne. Umí vykreslit QR kód aktuální sítě rovnou do terminálu, hlídat změny stavu a zapisovat je do logu, a příkaz till počká, dokud nezačne fungovat internet, což se hodí ve skriptech. Autor dává za příklad přehrání hlášky „Internet connected", až se připojení konečně chytne.
+Nejlepší je interaktivní shell nad pry. Příkazy WifiWandu jsou v něm normální Ruby metody, takže se výsledky dají filtrovat a skládat, třeba jedním řádkem zapomenout všechny uložené sítě, jejichž název začíná na jméno hotelu z dovolené před třemi roky. Má to i odvrácenou stranu, kterou autor v README popisuje docela pobaveně. Lokální proměnná x v shellu zastíní metodu x, která ukončuje program, a když se ve volání File.write(x, info) zapomenou uvozovky kolem názvu souboru, Ruby usoudí, že x je metoda, a shell prostě skončí.
+Verze 3 rozbila zpětnou kompatibilitu, přejmenovala spustitelný soubor a booleovské přepínače teď chtějí explicitní hodnotu, tedy -v true místo pouhého -v. Na macOS 14 a novějších je navíc po instalaci nutné spustit wifiwand-macos-setup, který nainstaluje malou pomocnou aplikaci ve Swiftu a požádá o přístup k polohovým službám. Bez toho macOS názvy okolních sítí nevydá a místo nich vrátí „redacted". Může za to Apple, který v macOS 14.4 vypnul utilitu airport, na které gem dřív stál. Licence je Apache 2.0.
+Blbinka
+Super Mario 64 byl v roce 1996 důvod, proč si koupit Nintendo 64. Vývojář vystupující jako Tobi teď ukázal, že by ho bylo možné rozjet i na jeho předchůdci, Super Nintendu, tedy na konzoli, která 3D grafiku vůbec neuměla. Trik je v kazetě.
+Několik her pro SNES, nejznámější Star Fox, mělo v cartridgi přibalený vlastní grafický čip Super FX, a právě na něm celá věc běží. Původní engine samozřejmě nebylo možné použít a Tobi napsal nový, ale levely, modely, animace i textury jsou z původní hry. Výsledek podle Hackadaye „naprosto funguje, když člověk hodně přimhouří oči".
+Obraz se kreslí odzadu dopředu, protože čip nezná Z-buffer, a do 2 MB paměti kazety se celé levely nevejdou, takže se z nich bude muset něco vyhodit. Nintendo podle jedné fámy kdysi o hře Super Mario FX uvažovalo, důkaz pro to není žádný. Jak poznamenal jeden komentující, od úniku dekompilovaného zdrojáku se z otázky „rozjede to Doom?" stala otázka „rozjede to Mario 64?".|E||T|Studia Českého rozhlasu v Plzni a Karlových Varech povede Michal Šašek|D|29.9. 19:41|P|Novým ředitelem studií Českého rozhlasu v Plzni a Karlových Varech se od 15. října stane Michal Šašek. O jeho jmenování informoval generální ředitel R...|X|Novým ředitelem studií Českého rozhlasu v Plzni a Karlových Varech se od 15. října stane Michal Šašek. O jeho jmenování informoval generální ředitel René Zavoral na úterní veřejné schůzi Rady Českého rozhlasu.
+Michal Šašek v letech 2022 až 2025 působil jako náměstek tehdejšího ministra kultury Martina Baxy (ODS). Jak Český rozhlas připomněl v tiskové zprávě, podílel se na přípravě a projednávání velké mediální novely a na přeměně Státního fondu kinematografie na Státní fond audiovize.
+Působil ve vedení Techmania Science Center, na Krajském úřadu Plzeňského kraje a jako poradce primátora města Plzně. Je také zakladatelem Mezinárodního filmového festivalu pro děti a mládež Juniorffest, který vedl nejprve jako programový a následně jako výkonný ředitel. V současnosti působí rovněž jako pedagog na Filmové akademii Miroslava Ondříčka v Písku. Do letošního dubna byl členem ODS.
+„Michal Šašek, jakožto nový ředitel regionálních studií, přináší velmi dobrou znalost mediální problematiky, kterou získal jak profesní praxí, tak studiem audiovizuální kultury. Zároveň důvěrně zná Plzeňský kraj, jeho prostředí, instituce i lidi a dlouhodobě se pohybuje v oblasti kultury, vzdělávání a veřejného života. Právě spojení těchto zkušeností považuji za důležité pro další rozvoj obou regionálních studií. Věřím, že je dokáže využít ve prospěch Českého rozhlasu, a především našich posluchačů,“ sdělil generální ředitel Českého rozhlasu René Zavoral.
+Michal Šašek za svou hlavní prioritu v rozhlase označil vytvoření co nejlepších podmínek pro práci obou týmů. Ve funkci ředitele plzeňského a karlovarského studia naváže na Davida Jakše, který od července působí jako zahraniční zpravodaj Českého rozhlasu v Asii. Dočasným vedením obou studií byl po jeho odchodu pověřen intendant regionálního vysílání Pavel Kozler.|E||T|Novinky OpenAI: Codex pracuje, i když počítač spí. Dots už nepotřebují ani vás|D|29.9. 19:19|P|OpenAI na DevDay 2026 představilo přes dvacet novinek. • Agenti Dots pracují i bez pokynů, Codex v cloudu, i když počítač spí. • Nový model GPT-6.1 So...|X|OpenAI na DevDay 2026 představilo přes dvacet novinek. • Agenti Dots pracují i bez pokynů, Codex v cloudu, i když počítač spí. • Nový model GPT-6.1 Sol se blíží Astře za pětinu ceny tokenů.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Software Boeingů 737 MAX má problém při nezdařeném přiblížení. Odkládá se kvůli němu certifikace MAX 10|D|29.9. 18:45|P|Americký úřad FAA odložil certifikaci letounu Boeing 737 MAX 10 • Důvodem je nová chyba v softwaru automatické vertikální navigace • Závada zvyšuje zá...|X|Americký úřad FAA odložil certifikaci letounu Boeing 737 MAX 10 • Důvodem je nová chyba v softwaru automatické vertikální navigace • Závada zvyšuje zátěž pilotů během náročného manévru při přistání
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|12 tipů a triků pro Kalendář Google, které ušetří čas, nervy a umožní využívat kalendář na maximum|D|29.9. 18:15|P|Oddělujte práci od soukromí pomocí více kalendářů a využívejte úkoly • Využívejte klávesové zkratky a přílohy z Disku pro efektivnější práci • Upravte...|X|Oddělujte práci od soukromí pomocí více kalendářů a využívejte úkoly • Využívejte klávesové zkratky a přílohy z Disku pro efektivnější práci • Upravte si zobrazení kalendáře, přidejte svátky nebo další časová pásma
 
@@ -74,7 +220,24 @@ Microsoft obdobně jako konkurence bude účtovat využívání AI dvěma způso
 Zmíněné změny v Copilotovi se budou dít postupně. Zatímco ukončení značky Copilot+ PC je definitivní, samotného chatbota bude Microsoft odstavovat postupně. Nyní z něj zmizely některé funkce jako je Deep Research nebo generování podcastů. Jak dlouho bude běžný Copilot v podobě chatbotu přežívat, nevíme.
 Zdroj: Windows Central|E||T|Everything najde soubor dřív, než dopíšete jeho název. Takhle mělo fungovat hledání ve Windows|D|29.9. 10:45|P|Windows obsahují sofistikované vyhledávání, které je někdy až moc chytré a zahltí vás výsledky, které nepotřebujete. Pokud často hledáte soubory nebo ...|X|Windows obsahují sofistikované vyhledávání, které je někdy až moc chytré a zahltí vás výsledky, které nepotřebujete. Pokud často hledáte soubory nebo složky, je Everything tím pravým nástrojem pro vás.
 
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|DevDay 2026 Recap|D|29.9. 10:00|P|Explore more than 20 announcements from OpenAI DevDay 2026, including GPT-6 Astra, ChatGPT, Codex, APIs, security, and new tools for builders.|X|At DevDay 2026, we’re giving people more ways to take on ambitious work and tools to build what comes next.
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Introducing GPT-6.1 Sol|D|29.9. 10:00|P|Meet GPT-6.1 Sol: near-Astra intelligence for coding, computer use, and professional work at one-fifth of Astra’s standard API input and output token ...|X|GPT-6.1Sol
+Near-Astra intelligence for a fifth of the price
+We’re introducing GPT‑6.1 Sol, an upgrade to GPT‑6 Sol that nearly matches GPT‑6 Astra’s intelligence on agentic coding, computer use, and professional work at one-fifth of Astra’s standard input and output token prices. Cached input costs just $0.10 per million tokens—95% less than standard input pricing and 50% less than GPT‑6 Sol’s cached input pricing—giving developers more room to build and run capable agents that reuse context across requests.
+GPT‑6.1 Sol offers a new balance of capability and cost for important everyday work. It delivers substantial improvements over GPT‑6 Sol across complex professional tasks, from writing and debugging code to understanding documents and executing multi-step business workflows. On several of these evaluations, it approaches GPT‑6 Astra’s performance at substantially lower cost.
+On DeepSWE v1.1, which evaluates complex software-engineering tasks in real codebases, GPT‑6.1 Sol matches GPT‑6 Astra at roughly one-fifth of the cost, while eclipsing GPT‑6 Sol’s best score by 6.4 percentage points at a lower reasoning effort and cost.
+On GDP.pdf, which measures how accurately models answer professional questions using complex PDF documents, including tables, charts, diagrams, and fine-print details, GPT‑6.1 Sol scores higher than Opus 5.5 with fallbacks at less than half the cost per task across the tested reasoning settings. It also approaches GPT‑6 Astra’s state-of-the-art performance at roughly one-fifth the cost per task.
+On AutomationBench, which measures whether agents correctly complete multi-step business workflows, GPT‑6.1 Sol scores 2.2 percentage points above Opus 5.5 at medium reasoning effort, at roughly a third of the cost. That score is also up 4.8 percentage points from GPT‑6 Sol at the same setting.
+GPT‑6.1 Sol also makes substantial progress on tasks that require interacting with computer applications. On OSWorld 2.0’s offline set, which evaluates agents on demanding computer-use workflows, GPT‑6.1 Sol outperforms GPT‑6 Sol by seven percentage points at maximum reasoning effort at less than half the cost. It comes within 2.1 percentage points of Astra’s score at maximum reasoning effort at roughly one-seventh the cost per task.
+On Terminal-Bench Science 0.1, which evaluates scientific workflows including data analysis, simulation, and theorem proving, GPT‑6.1 Sol more than doubles GPT‑6 Sol’s score at maximum reasoning effort at less than half the cost per task. At maximum effort, GPT‑6.1 Sol costs $5.47 per task on average, compared with $23.21 for Opus 5.5 and $23.80 for Astra, delivering substantial scientific capability at over 75% lower cost than either model.
+GPT‑6 Astra still achieves the highest score among the models tested at 68.1%, and should be used for the most difficult scientific research tasks.
+GPT‑6.1 Sol also improves factual accuracy on difficult prompts. Its largest factuality improvement over GPT‑6 Sol comes at low reasoning effort, where it reduces the share of responses containing a factual error from 11.4% to 7.7%—a reduction of approximately 32%. Across the tested reasoning settings, its error rate remains within 1.9 percentage points of GPT‑6 Astra’s, at less than one-fifth the cost per task.
+This evaluation measures the share of answers containing at least one factual error on de-identified conversations where users flagged an earlier model’s error. These deliberately difficult prompts are not representative of typical usage.
+GPT‑6.1 Sol shows substantial improvements over GPT‑6 Sol in our alignment evaluations, bringing it closer to GPT‑6 Astra.
+GPT‑6.1 Sol is more transparent about its limitations and more reliable at respecting user intent and safety constraints. In challenging evaluations, it shows lower failure rates than GPT‑6 Sol on transparency about broken search tools, respecting explicit restrictions, and avoiding unauthorized outcomes during agentic tasks. We observed no attempts to bypass an automated safety reviewer, matching GPT‑6 Astra and GPT‑6 Sol. Full details can be found in the GPT‑6.1 Sol system card addendum(opens in a new window).
+The evaluations below deliberately test challenging situations and do not measure failure rates in typical use.
+GPT‑6.1 Sol is available starting today to all Plus, Pro, Business, Enterprise, and Edu users in ChatGPT Work and Codex. GPT‑6.1 Sol is not yet available in Chat. Developers can also access it through the OpenAI API as gpt-6.1-sol. Its standard API prices are $2 per million input tokens, $0.10 per million cached input tokens, and $10 per million output tokens. In the coming days, we’ll also offer GPT‑6.1 Sol Ultrafast, with up to 8x faster token generation compared to its standard speed in Codex.
+Author
+Evaluations of GPT were performed in our research environment or via our API, which may provide slightly different output from production ChatGPT due to differences in the system prompts, tools available, efforts, etc. Evaluations of competitor models were taken from publicly available reports.|E||T|DevDay 2026 Recap|D|29.9. 10:00|P|Explore more than 20 announcements from OpenAI DevDay 2026, including GPT-6 Astra, ChatGPT, Codex, APIs, security, and new tools for builders.|X|At DevDay 2026, we’re giving people more ways to take on ambitious work and tools to build what comes next.
 Share
 DevDay 2026 is our biggest yet, with more than 20 major announcements across ChatGPT, Codex, our models, and entirely new forms of working with AI.
 We believe AI can help bring about a new renaissance of creativity and discovery. It should give people more time for what matters to them, more freedom to pursue their ideas, and the ability to do things they didn’t think were possible.
@@ -117,25 +280,8 @@ We’re making it easier to use your ChatGPT plan with other tools. Use your all
 Identity is available globally. Plan usage is available to Plus and Pro users in participating tools. Learn more(opens in a new window)
 A new Pro tier
 For those who want even more usage and speed, the new Pro 500 plan offers our highest usage allowance at 25 times the ChatGPT Plus allowance and includes access to Ultrafast.
-Eligible enterprise customers can apply part of their existing OpenAI commitment toward approved partner software, giving them more flexibility in how they work with AI. Our first 32 partners include Adobe and Figma for creative work; Sierra, Decagon, Hubspot, Salesforce, and ServiceNow for customer experience; Harvey and Legora for legal; and Palo Alto Networks and CrowdStrike for cybersecurity and Baseten for open-source models.
-Enterprise customers can express interest. Get started|E||T|Introducing GPT-6.1 Sol|D|29.9. 10:00|P|Meet GPT-6.1 Sol: near-Astra intelligence for coding, computer use, and professional work at one-fifth of Astra’s standard API input and output token ...|X|GPT-6.1Sol
-Near-Astra intelligence for a fifth of the price
-We’re introducing GPT‑6.1 Sol, an upgrade to GPT‑6 Sol that nearly matches GPT‑6 Astra’s intelligence on agentic coding, computer use, and professional work at one-fifth of Astra’s standard input and output token prices. Cached input costs just $0.10 per million tokens—95% less than standard input pricing and 50% less than GPT‑6 Sol’s cached input pricing—giving developers more room to build and run capable agents that reuse context across requests.
-GPT‑6.1 Sol offers a new balance of capability and cost for important everyday work. It delivers substantial improvements over GPT‑6 Sol across complex professional tasks, from writing and debugging code to understanding documents and executing multi-step business workflows. On several of these evaluations, it approaches GPT‑6 Astra’s performance at substantially lower cost.
-On DeepSWE v1.1, which evaluates complex software-engineering tasks in real codebases, GPT‑6.1 Sol matches GPT‑6 Astra at roughly one-fifth of the cost, while eclipsing GPT‑6 Sol’s best score by 6.4 percentage points at a lower reasoning effort and cost.
-On GDP.pdf, which measures how accurately models answer professional questions using complex PDF documents, including tables, charts, diagrams, and fine-print details, GPT‑6.1 Sol scores higher than Opus 5.5 with fallbacks at less than half the cost per task across the tested reasoning settings. It also approaches GPT‑6 Astra’s state-of-the-art performance at roughly one-fifth the cost per task.
-On AutomationBench, which measures whether agents correctly complete multi-step business workflows, GPT‑6.1 Sol scores 2.2 percentage points above Opus 5.5 at medium reasoning effort, at roughly a third of the cost. That score is also up 4.8 percentage points from GPT‑6 Sol at the same setting.
-GPT‑6.1 Sol also makes substantial progress on tasks that require interacting with computer applications. On OSWorld 2.0’s offline set, which evaluates agents on demanding computer-use workflows, GPT‑6.1 Sol outperforms GPT‑6 Sol by seven percentage points at maximum reasoning effort at less than half the cost. It comes within 2.1 percentage points of Astra’s score at maximum reasoning effort at roughly one-seventh the cost per task.
-On Terminal-Bench Science 0.1, which evaluates scientific workflows including data analysis, simulation, and theorem proving, GPT‑6.1 Sol more than doubles GPT‑6 Sol’s score at maximum reasoning effort at less than half the cost per task. At maximum effort, GPT‑6.1 Sol costs $5.47 per task on average, compared with $23.21 for Opus 5.5 and $23.80 for Astra, delivering substantial scientific capability at over 75% lower cost than either model.
-GPT‑6 Astra still achieves the highest score among the models tested at 68.1%, and should be used for the most difficult scientific research tasks.
-GPT‑6.1 Sol also improves factual accuracy on difficult prompts. Its largest factuality improvement over GPT‑6 Sol comes at low reasoning effort, where it reduces the share of responses containing a factual error from 11.4% to 7.7%—a reduction of approximately 32%. Across the tested reasoning settings, its error rate remains within 1.9 percentage points of GPT‑6 Astra’s, at less than one-fifth the cost per task.
-This evaluation measures the share of answers containing at least one factual error on de-identified conversations where users flagged an earlier model’s error. These deliberately difficult prompts are not representative of typical usage.
-GPT‑6.1 Sol shows substantial improvements over GPT‑6 Sol in our alignment evaluations, bringing it closer to GPT‑6 Astra.
-GPT‑6.1 Sol is more transparent about its limitations and more reliable at respecting user intent and safety constraints. In challenging evaluations, it shows lower failure rates than GPT‑6 Sol on transparency about broken search tools, respecting explicit restrictions, and avoiding unauthorized outcomes during agentic tasks. We observed no attempts to bypass an automated safety reviewer, matching GPT‑6 Astra and GPT‑6 Sol. Full details can be found in the GPT‑6.1 Sol system card addendum(opens in a new window).
-The evaluations below deliberately test challenging situations and do not measure failure rates in typical use.
-GPT‑6.1 Sol is available starting today to all Plus, Pro, Business, Enterprise, and Edu users in ChatGPT Work and Codex. GPT‑6.1 Sol is not yet available in Chat. Developers can also access it through the OpenAI API as gpt-6.1-sol. Its standard API prices are $2 per million input tokens, $0.10 per million cached input tokens, and $10 per million output tokens. In the coming days, we’ll also offer GPT‑6.1 Sol Ultrafast, with up to 8x faster token generation compared to its standard speed in Codex.
-Author
-Evaluations of GPT were performed in our research environment or via our API, which may provide slightly different output from production ChatGPT due to differences in the system prompts, tools available, efforts, etc. Evaluations of competitor models were taken from publicly available reports.|E||T|Blizzard oživuje zapomenutou klasiku. Heroes of the Storm po 6 letech dostává nového hrdinu i hromadu novinek|D|29.9. 09:57|P|Po téměř šesti letech dostává Heroes of the Storm nového hrdinu. Blizzard do své MOBA posílá Xal’atath z World of Warcraft a naznačuje, že by nemuselo...|X|Zatímco mnozí hráči už Heroes of the Storm (HOTS) dávno pohřbili, Blizzard po téměř šesti letech otevírá rakev a hru znovu probouzí k životu. Do Nexu totiž dorazila Xal’atath, známá především ze světa World of Warcraft. Nová hrdinka se odhaluje v rámci patche 57, který přináší také úpravy hrdinů, map a dalších částí hry.
+Eligible enterprise customers can apply part of their existing OpenAI commitment toward approved partner software, giving them more flexibility in how they work with AI. Our first 32 partners include Figma for creative work; Adobe, Sierra, Decagon, Hubspot, Salesforce, and ServiceNow for customer experience; Harvey and Legora for legal; and Palo Alto Networks and CrowdStrike for cybersecurity and Baseten for open-source models.
+Enterprise customers can express interest. Get started|E||T|Blizzard oživuje zapomenutou klasiku. Heroes of the Storm po 6 letech dostává nového hrdinu i hromadu novinek|D|29.9. 09:57|P|Po téměř šesti letech dostává Heroes of the Storm nového hrdinu. Blizzard do své MOBA posílá Xal’atath z World of Warcraft a naznačuje, že by nemuselo...|X|Zatímco mnozí hráči už Heroes of the Storm (HOTS) dávno pohřbili, Blizzard po téměř šesti letech otevírá rakev a hru znovu probouzí k životu. Do Nexu totiž dorazila Xal’atath, známá především ze světa World of Warcraft. Nová hrdinka se odhaluje v rámci patche 57, který přináší také úpravy hrdinů, map a dalších částí hry.
 Svěží dech pro zapomenutou klasiku?
 Xal’atath je v pořadí 91. hrdinkou Heroes of the Storm a zároveň první zcela novou hratelnou postavou za téměř šest let. Jde o ranged assassina, který využívá sílu Prázdnoty a během soubojů pracuje s mechanikami Shadow Mark, Dark Heart a Void Volley.
 Nová hrdinka bude při vydání dostupná za necelých 8 dolarů, přičemž už nyní ji můžete najít ve hře k vyzkoušení. Společně s Xal’atath dorazí i Twitch Drops, za jejichž sledování bude možné získat zlato, loot boxy a nového mounta Deadly Chaos Wolf.
@@ -683,9 +829,7 @@ OpenAI’s Chief Strategy Officer, Jason Kwon, will fly in from OpenAI’s US he
 We will continue sharing verified findings with affected agencies and relevant governments. We will publish updates on our ongoing review and progress against these commitments. We know we have a lot of work ahead of us to rebuild trust, and that we are accountable for showing Australians that we’re making meaningful changes and following through on our promises.|E||T|Watch the winning trailer from the Future Vision XPRIZE, The Gifted.|D|28.9. 19:00|P|Watch the winning trailer from the Future Vision XPRIZE, The Gifted.|X|Watch the winning trailer from the Future Vision XPRIZE, The Gifted.
 Earlier this year, we partnered with XPRIZE and Range Media Partners to launch the Future Vision XPRIZE, a global competition calling for films that envision a hopeful, technology-enabled future. Last week in Los Angeles, independent filmmaker Jeff Synthesized was named the grand prize winner for The Gifted.
 Inspired by a deeply personal story, the film centers on an 11-year-old boy who recreates his late mother’s voice and essence out of love and code. What emerges across the town’s networks quietly cares for his entire community — reflecting the filmmaker’s belief that technology’s greatest promise lies in empathy and human connection.
-Chosen from more than 2,500 entries worldwide, the solo-developed project receives $100,000 alongside $2.5 million in feature production funding. Through Google’s 100 ZEROS initiative, we are partnering with Range Media Partners to help bring this story to the big screen.|E||T|Malware se radí se čtyřmi AI, co udělat dál. Útočník nemusí řídit každý krok|D|28.9. 15:45|P|Bezpečnostní analytici Cisco Talos popsali škodlivý program CLOSEDQUORUM pro Windows, který po spuštění svěřuje rozhodování o svém dalším kroku jazyko...|X|Bezpečnostní analytici Cisco Talos popsali škodlivý program CLOSEDQUORUM pro Windows, který po spuštění svěřuje rozhodování o svém dalším kroku jazykovým modelům. Místo pokynů od útočníka se může ptát až čtyř různých AI a podle jejich odpovědí jednat. Zatím však není potvrzené, že byl použit při ...
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|AI zasáhne dřív, než se plazma utrhne. Nový PACMAN krotí fúzní plazma v řádu milisekund|D|28.9. 13:45|P|Experimentální tokamak DIII-D pomáhá řídít umělá inteligence PACMAN • Jednu z nebezpečných nestabilit v experimentu předpověděl s 200ms předstihem • B...|X|Experimentální tokamak DIII-D pomáhá řídít umělá inteligence PACMAN • Jednu z nebezpečných nestabilit v experimentu předpověděl s 200ms předstihem • Budoucí fúzní reaktory se bez podobné chytrosti neobejdou
+Chosen from more than 2,500 entries worldwide, the solo-developed project receives $100,000 alongside $2.5 million in feature production funding. Through Google’s 100 ZEROS initiative, we are partnering with Range Media Partners to help bring this story to the big screen.|E||T|AI zasáhne dřív, než se plazma utrhne. Nový PACMAN krotí fúzní plazma v řádu milisekund|D|28.9. 13:45|P|Experimentální tokamak DIII-D pomáhá řídít umělá inteligence PACMAN • Jednu z nebezpečných nestabilit v experimentu předpověděl s 200ms předstihem • B...|X|Experimentální tokamak DIII-D pomáhá řídít umělá inteligence PACMAN • Jednu z nebezpečných nestabilit v experimentu předpověděl s 200ms předstihem • Budoucí fúzní reaktory se bez podobné chytrosti neobejdou
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Starship nakonec vydržel na oběžné dráze jen tři hodiny. Dosedl do vod Tichého oceánu a explodoval|D|28.9. 12:42|P|V pořadí 14. Starship úspěšně zažehl motory a odstartoval. Po dlouhé době v rozumnou středoevropskou hodinu a ne po půlnoci. Hlavní ale je, že loď vůb...|X|V pořadí 14. Starship úspěšně zažehl motory a odstartoval. Po dlouhé době v rozumnou středoevropskou hodinu a ne po půlnoci. Hlavní ale je, že loď vůbec poprvé zamířila na stabilní oběžnou dráhu. Původně se měla mise protáhnout až do půlnoci, SpaceX ale let výrazně zkrátilo a loď se vrátila zpět už ...
 

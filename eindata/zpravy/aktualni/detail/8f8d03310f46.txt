@@ -1,0 +1,119 @@
+Když ransomware konečně uvidíme, může už být pozdě
+Je pondělí 7:18. První zaměstnanci přicházejí do práce a jeden z nich hlásí, že se nemůže dostat k souborům na firemním serveru. Během několika minut přicházejí další podobná hlášení. Některé systémy neodpovídají a na jednom ze serverů se objeví zpráva s požadavkem na výkupné.
+V tuto chvíli už nikdo nemusí složitě zjišťovat, zda firma čelí bezpečnostnímu incidentu. Je to zřejmé.
+Útok ale nezačal v 7:18.
+Začněme proto o několik hodin dříve.
+Následující scénář je modelový. Konkrétní ransomwarový útok může probíhat mnoha různými způsoby, princip je ale podobný: mezi prvním průnikem útočníka do prostředí a samotným zašifrováním dat mohou vznikat události, které jednotlivě nemusí působit kriticky. Teprve jejich spojení do souvislostí může ukázat, že se v infrastruktuře děje něco neobvyklého.
+Dnešní vyděračské útoky navíc nemusí stát jen na šifrování. Součástí může být i exfiltrace dat a následná hrozba jejich zveřejnění. Proto nás bude zajímat celý průběh kompromitace, ne jen její poslední viditelný krok.
+01:43 – Přihlášení, které samo o sobě nemusí nikoho vyděsit
+Útočník získal přihlašovací údaje zaměstnance. Jak k tomu došlo, není pro náš příběh v tuto chvíli podstatné. Mohly pocházet z phishingu, dřívějšího úniku hesel nebo jiného kompromitovaného systému.
+V 01:43 se s nimi přihlásí ke vzdálenému přístupu do firemní sítě.
+Přihlášení je úspěšné.
+Právě v tom je první problém. Z pohledu jednotlivého systému se nemuselo stát nic, co by automaticky znamenalo kybernetický útok. Existuje platný uživatelský účet, proběhlo ověření a systém uživatele pustil dovnitř.
+V logu ale zůstávají informace, které mohou být zajímavé v širším kontextu. Uživatel se běžně přihlašuje během pracovní doby, tentokrát se připojil hluboko v noci. Přístup mohl přijít z nezvyklé adresy nebo zařízení. Mohou se objevit předchozí neúspěšné pokusy o přihlášení nebo jiné odchylky od běžného chování účtu.
+Žádná z těchto událostí ještě sama o sobě nemusí znamenat kybernetický bezpečnostní incident (KBI), natož připravovaný ransomwarový útok.
+Je to první dílek skládačky.
+01:56 – Účet začíná dělat věci, které běžně nedělá
+Útočník už má přístup, jeho cílem ale není zůstat u jednoho uživatelského účtu. Začíná zjišťovat, kam se dostal, jaké systémy jsou v okolí dostupné a jaké další možnosti mu kompromitované prostředí nabízí.
+Z pohledu infrastruktury tak začínají vznikat další události.
+Účet, který se obvykle pohybuje v omezené části prostředí, se najednou pokouší komunikovat s dalšími zařízeními. Objevují se přístupy ke službám nebo systémům, které daný uživatel běžně nepotřebuje. Mohou přibývat neúspěšná ověření, nové síťové relace nebo spuštění nástrojů, jejichž použití je sice samo o sobě legitimní, ale v daném čase a kontextu neobvyklé.
+Tady se dostáváme k jedné ze základních vlastností bezpečnostního dohledu.
+Jedna událost může být banalita.
+Deset zdánlivě nesouvisejících událostí během dvaceti minut už může vyprávět úplně jiný příběh.
+02:17 – Útočník se začíná pohybovat sítí
+Od prvního přihlášení uplynulo 34 minut.
+Ve firmě je stále ticho.
+Útočník mezitím zkoumá další zařízení a hledá cestu k systémům, které pro něj mají větší hodnotu. Může využívat běžné služby, které administrátoři používají každý den, například RDP, SMB nebo další nástroje pro vzdálenou správu.
+Právě to může být pro obranu nepříjemné. Ne každá škodlivá aktivita musí vypadat jako spuštění neznámého programu s nápisem „malware“. Útočník může využívat legitimní účty, protokoly a nástroje, které mají ve firemní síti své opodstatnění.
+Rozhoduje kontext.
+Může být normální, když správce serverů ve dvě hodiny ráno navazuje vzdálená spojení k několika serverům. Mnohem zajímavější je, když se o totéž pokouší účet zaměstnance, který nic takového běžně nedělá.
+Postupně tak přibývají další dílky skládačky: noční přihlášení, komunikace s neobvyklými systémy, pokusy o vzdálený přístup a autentizace k dalším zařízením.
+Jednotlivě mohou mít vysvětlení.
+Dohromady už začínají být podezřelé.
+02:41 – Útočník potřebuje větší oprávnění
+Běžný uživatelský účet má své limity. Pokud chce útočník zasáhnout větší část infrastruktury, bude se často snažit získat další přihlašovací údaje nebo účet s vyššími oprávněními.
+S tím mohou přijít další stopy.
+Mohou se objevit neobvyklé pokusy o přístup k privilegovaným účtům, autentizace na systémy, ke kterým se původní uživatel běžně nepřihlašuje, nebo činnost spojená se získáváním dalších přihlašovacích údajů.
+Po téměř hodině tak firma nemusí mít jeden obrovský červený alarm s nápisem „Probíhá ransomwarový útok“.
+Má ale něco jiného.
+Řadu událostí z různých částí infrastruktury.
+01:43 – neobvyklé vzdálené přihlášení.
+01:56 – nestandardní aktivita účtu.
+02:17 – komunikace s dalšími systémy.
+02:41 – aktivita související s dalšími účty a oprávněními.
+Právě zde se začíná lámat celý náš příběh.
+03:04 – Data existují. Otázka je, kdo se na ně dívá
+Bezpečnostní prvky ve firmě během posledních osmdesáti minut nezahálely.
+VPN zaznamenala přihlášení. Operační systémy vytvořily své záznamy. Síťová infrastruktura viděla komunikaci mezi zařízeními. Další bezpečnostní nástroje mohly zaznamenat vlastní události a upozornění.
+Informace tedy mohou existovat.
+To ale ještě neznamená, že někdo pochopil, co společně znamenají.
+Tady se dostáváme k zásadní otázce:
+Stačí bezpečnostní události sbírat a generovat alerty, nebo je potřeba, aby je někdo průběžně vyhodnocoval a dokázal na ně také reagovat?
+Útočník je v našem modelovém prostředí už 81 minut.
+Firma o něm stále nemusí vědět.
+03:04 – Stejný alert, dva úplně jiné příběhy
+V tomto okamžiku náš modelový příběh rozdělme na dvě téměř totožné firmy.
+Mají podobnou infrastrukturu, stejné bezpečnostní prvky a obě používají SIEM, do kterého posílají bezpečnostní události z různých systémů.
+SIEM není jen skladiště logů. Dokáže informace z různých zdrojů soustředit na jednom místě, vyhodnocovat je, korelovat a při splnění určitých podmínek vytvořit alert. Podle konkrétního řešení a konfigurace může být část následné reakce také automatizována.
+Rozdíl mezi našimi dvěma firmami proto není v tom, že jedna má „chytrý systém“ a druhá nikoliv.
+Rozdíl přichází až potom.
+Firma A: Alert existuje
+Ve 03:04 vytvoří SIEM upozornění na podezřelou aktivitu.
+Pravidlo spojilo několik událostí dohromady a výsledkem je alert, který stojí za prověření.
+Jenže jsou tři hodiny ráno.
+Firma sice bezpečnostní události centrálně sbírá, ale nemá v tuto dobu nastavený průběžný dohled ani proces, který by zajistil okamžité vyhodnocení tohoto typu upozornění.
+Alert tedy existuje.
+Je správně uložený. Ráno si ho možná někdo otevře.
+Útočník ale na ráno čekat nebude.
+Firma B: Někdo alert vyhodnotí
+Ve druhé firmě vznikne ve 03:04 prakticky stejné upozornění.
+Tentokrát je ale součástí prostředí také aktivně obsluhovaný SOC s dohledem v daném čase.
+Analytik nevidí na monitoru nápis „ransomware za čtyři hodiny“.
+Vidí alert.
+Musí zjistit, jestli jde o skutečný incident, nebo například o legitimní noční práci zaměstnance či administrátora.
+Právě tady začíná práce, kterou samotné vytvoření alertu neřeší.
+Analytik se podívá na související události.
+Kdy se účet přihlásil?
+Odkud?
+Je taková aktivita pro uživatele běžná?
+Ke kterým systémům následně přistupoval?
+Objevily se ve stejném časovém okně další autentizace, vzdálená spojení nebo neobvyklé události?
+Najednou před sebou nemá jednu položku.
+Má příběh.
+01:43 – neobvyklé přihlášení.
+01:56 – změna chování účtu.
+02:17 – pohyb směrem k dalším systémům.
+02:41 – další aktivita spojená s účty a oprávněními.
+03:04 – korelovaný alert.
+To ještě nemusí být důkaz připravovaného ransomwarový útoku.
+Je to ale dost důvodů na to, aby se situací někdo vážně zabýval.
+03:16 – Detekce se mění v reakci
+Analytik vyhodnotí aktivitu jako bezpečnostní incident a podle nastaveného postupu přichází další krok: containment, tedy omezení dalšího šíření nebo pokračování útoku.
+Právě tady je důležitá další věc.
+SOC nemusí mít v každé organizaci právo jednoduše stisknout tlačítko a odpojit půl firmy od sítě. Rozsah jeho pravomocí závisí na předem nastavených pravidlech a playboocích.
+Někde může analytik kompromitovaný účet přímo zablokovat nebo zařízení izolovat. Jinde incident okamžitě eskaluje internímu IT týmu či určené odpovědné osobě, která potřebné kroky provede.
+V našem modelovém případě se podaří účet zablokovat, ukončit podezřelé relace a izolovat zařízení, ze kterého aktivita vychází. Současně začíná prověřování toho, kam všude se útočník během předchozí hodiny mohl dostat.
+Tím incident nekončí.
+Útočník mohl získat další přihlašovací údaje, vytvořit si jinou cestu zpět nebo kompromitovat další systémy.
+Ale něco zásadního se změnilo.
+Firma už o útoku ví.
+03:28 – Ve firmě A je stále ticho
+Zatímco ve firmě B už běží incident response, ve firmě A se nic viditelného nestalo.
+Alert stále čeká.
+Útočník pokračuje.
+Má další desítky minut na průzkum infrastruktury, hledání cenných systémů, získávání přístupu a přípravu útoku tak, aby měl co největší dopad.
+Obě firmy přitom měly v 03:04 velmi podobnou informaci.
+Rozdíl nebyl v existenci logu.
+Rozdíl nebyl ani v tom, zda vznikl alert.
+Rozdíl byl v tom, co se stalo potom.
+SIEM a SOC nejsou soupeři
+Pojmy SIEM a SOC se někdy staví proti sobě, jako kdyby bylo potřeba vybrat jednu z těchto možností.
+Tak to ale není.
+SIEM je technologie, která pomáhá bezpečnostní data shromažďovat, centralizovat a zpracovávat tak, aby z nich bylo možné získat použitelné informace.
+SOC je naproti tomu bezpečnostní dohled postavený nejen na technologiích, ale také na lidech a procesech, které řeší, co se s detekovanou událostí stane.
+SIEM proto může být jedním z nejdůležitějších nástrojů SOC.
+Samotná existence nástroje ale ještě neurčuje, kdo alert prověří, kdo rozhodne o závažnosti incidentu a kdo zajistí reakci.
+Právě čas mezi detekcí a reakcí může být při kybernetickém incidentu rozhodující.
+V našem příběhu od prvního přihlášení útočníka uplynula hodina a 45 minut.
+Jedna firma už incident ře...
+(Pokracovani na webu)

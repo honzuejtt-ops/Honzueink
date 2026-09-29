@@ -1,0 +1,54 @@
+Když si člověk potřebuje koupit nový notebook, většinou si nejdříve ujasní základní požadavky, než se pustí do výběru konkrétního modelu. K čemu ho bude používat? Jak často bude fungovat pouze na baterii? Co je ideální velikost displeje?
+Pokud si tyto otázky nepoloží hned na začátku, může se stát, že si koupí notebook, který vůbec nevyhovuje jeho potřebám.
+U veřejných IT zakázek je to stejné.
+Největší chyby vznikají ještě před vyhlášením zakázky
+Největší pozornost často směřuje především na samotné zadávací řízení – jak napsat zadávací dokumentaci, nastavit kvalifikaci, hodnotit nabídky nebo jak celý proces správně provést. To všechno je samozřejmě důležité, ale o výsledku zakázky se často rozhoduje mnohem dříve.
+A to právě už ve chvíli, kdy si zadavatel začíná ujasňovat, co vlastně potřebuje a jaký problém chce vyřešit.
+Pokud samotný problém pochopí špatně, nepomůže ani sebelépe napsaná zadávací dokumentace. Může být technicky přesná, právně bezchybná a formálně dokonalá, ale přesto povede k řešení, které nebude odpovídat skutečné potřebě.
+Například Opencard měla být podle původní myšlenky „univerzálním klíčem k městu“, ale dnes už neexistuje, ač se náklady vyšplhaly na miliardy korun. Systém byl navržen příliš široce a obsahoval mimo jiné mikroplatby, slevy i vstupy do knihovny, což byly služby, o které ve skutečnosti nebyl zájem. Praha navíc zůstala silně závislá na jednom dodavateli.
+Často jsou proto nejdůležitější rozhodnutí právě ta, která nejsou v zadávací dokumentaci vůbec vidět.
+Jaký problém skutečně řešíme? Co od nového systému očekáváme? Jaké jsou naše reálné potřeby a které požadavky jsou jen představou, jak by řešení mělo vypadat? Jaký rozpočet je realistický? A existuje vůbec na trhu řešení, které odpovídá tomu, co jsme si na začátku představili?
+Právě v této fázi má největší smysl získávat informace, ověřovat vlastní předpoklady a poslouchat zkušenosti lidí, kteří se s podobnými projekty setkávají každý den.
+Dobrá rozhodnutí potřebují dobré informace
+Ve chvíli, kdy má zadavatel jasno, jaký problém chce vyřešit, musí si odpovědět na další otázku – podle čeho se rozhodne, jak ho vyřešit.
+Při přípravě veřejné IT zakázky vzniká řada rozhodnutí, která mohou mít na její výsledek zásadní vliv. Kolik na projekt vyčlenit? Jaké požadavky skutečně potřebujeme? Jak nastavit přiměřenou kvalifikaci? Jak rozdělit rizika ve smlouvě? Podle čeho nabídky hodnotit? A jaké technické řešení vlastně chceme získat?
+Na některé z těchto otázek může mít zadavatel dobrou odpověď. Má vlastní zkušenosti, odborníky i znalost prostředí, ve kterém projekt vzniká. Jenže ani nejlepší interní zkušenost neznamená, že zadavatel vidí celý obrázek.
+Nikdo totiž nezná celý trh. To platí zvlášť v IT, kde se technologie, dostupná řešení i způsob jejich dodávání rychle mění. Co bylo běžným řešením před několika lety, dnes nemusí být nejlepší volbou. A představa, která dává smysl uvnitř organizace, nemusí vždy odpovídat tomu, co je reálně dostupné nebo proveditelné na trhu.
+Proto není problém, když zadavatel při přípravě zakázky něco neví, je to naopak v pořádku. Potíž nastává ve chvíli, kdy neví, že to neví – a přesto na základě toho činí důležitá rozhodnutí.
+Pak se může stát, že nastaví rozpočet příliš nízko, požaduje řešení, které trh nedokáže nabídnout, zbytečně omezí okruh potenciálních dodavatelů nebo nastaví podmínky, které budou později komplikovat samotnou realizaci.
+Tyto chyby přitom často vznikají zcela přirozeně a neúmyslně. Zadavatel vychází z informací, které má k dispozici, ze zkušeností z jiných projektů nebo z toho, co se mu v danou chvíli zdá jako rozumné řešení.
+Proto by vždy měl přemýšlet o tom, jaké předpoklady potřebuje ověřit. Největším rizikem jsou důležitá rozhodnutí bez dostatku informací. Pokud takové informace zadavatel uvnitř organizace nemá, je logické je před rozhodnutím získat zvenčí. Proto má smysl mluvit s trhem ještě předtím, než se z pracovních předpokladů stanou závazné podmínky veřejné zakázky.
+Kde získat informace pro kvalifikované rozhodnutí
+Kde potřebné informace získat? Neexistuje jedna správná odpověď, stejně jako neexistuje jeden univerzální způsob, jak každou veřejnou IT zakázku připravit.
+Někdy mohou pomoci zkušenost z podobného projektu, jindy je zapotřebí se podívat podrobněji na situaci na trhu a v některých případech dává smysl přímo oslovit firmy, které se podobnými projekty zabývají. A k tomu má veřejný zadavatel i zákonnou oporu podle § 33 zákona č. 134/2016 Sb., o zadávání veřejných zakázek.
+Možností je celá řada:
+- Předběžné tržní konzultace. Umožňují otevřít diskuzi s dodavateli ještě před vyhlášením soutěže a ověřit si konkrétní předpoklady.
+- Meet the Buyer. Může být vhodnou cestou ve chvíli, kdy chce zadavatel představit své záměry širšímu okruhu firem a získat první reakce trhu.
+- Odborné workshopy nebo kulaté stoly. Umožňují jít více do hloubky a diskutovat konkrétní problémy s lidmi, kteří mají s jejich řešením praktické zkušenosti.
+- On-line dotazník. Dokáže rychle získat informace od většího počtu firem.
+- Individuální konzultace. Pokud je zapotřebí detailněji probrat konkrétní otázku.
+Nejde o to použít všechny dostupné nástroje. Zadavatel si musí ujasnit, co potřebuje zjistit, a podle toho zvolit nejvhodnější způsob, jak se k informaci dostat.
+Zda je rozpočet realistický, je jiný typ informace, než jestli není konkrétní technický požadavek příliš omezující. Pokud zadavatel potřebuje zjistit, jestli je o připravovaný projekt vůbec zájem, může být vhodnější oslovit širší trh než vést několik podrobných individuálních rozhovorů.
+Pamatovat musí samozřejmě na transparentnost, férovou soutěž a snahu neomezovat tendr pro úzký okruh firem, ale naopak hledat cesty, jak udělat soutěž co nejvíce otevřenou a atraktivní.
+Jaké otázky je nutné ověřit?
+Jakmile zadavatel ví, co chce zjistit a jakým způsobem k tomu informace získat, přichází ta nejdůležitější část. Na co se vlastně ptát?
+Smyslem je ověřit konkrétní předpoklady, na kterých celé zadání stojí, nikoliv vést s trhem obecnou debatu o připravované zakázce.
+Například:
+- Odpovídá rozpočet tomu, co chce zadavatel po dodavatelích získat? Je představa realistická? Dokáže za dané peníze získat řešení v požadovaném rozsahu a kvalitě, nebo bude muset některé představy upravit?
+- Jsou požadavky skutečně nezbytné? Některé požadavky mohou na první pohled působit rozumně, ale ve výsledku zbytečně omezovat počet firem, které se mohou soutěže účastnit. Jiné mohou být naopak důležité, jen je zadavatel neumí správně formulovat.
+- Nedochází k omezování konkurence více, než je nutné? Může se ukázat, že stejný cíl lze splnit více různými způsoby. Jedna konkrétní cesta může zbytečně zavřít dveře k jiným – a možná i lepším – řešením.
+- Jsou smluvní podmínky přiměřené? I dobře připravené technické zadání může odradit kvalitní dodavatele, pokud na ně přenáší nepřiměřená rizika nebo obsahuje podmínky, které neodpovídají charakteru projektu.
+- Budou dodavatelé schopni nabídnout různá řešení? Pokud všichni musí nabídnout prakticky totéž, soutěž se může snadno změnit v soutěž o cenu. Aby dodavatelé mohli využít zkušenosti a předvést inovativní přístupy, musí k tomu dostat prostor.
+- Co zůstalo stranou zájmu? Právě tato otázka může být někdy nejcennější. Zadavatel zná svůj problém velmi dobře, ale nemusí vidět všechna rizika a možnosti, které s jeho řešením souvisejí.
+Takový dialog proto nemá sloužit k tomu, aby zadavatel získal potvrzení svých původních představ. Naopak – největší hodnotu má ve chvíli, kdy zjistí, že něco potřebuje udělat jinak.
+Pokud se díky získaným informacím změní rozpočet, některý požadavek, způsob hodnocení nebo třeba část smluvních podmínek, není to známka špatné přípravy, ale naopak toho, že příprava splnila svůj účel – protože zadavatel má tuto informaci v době, kdy je ještě možné měnit vlastní předpoklady.
+Otevřený dialog s trhem
+Jedním z průkopníků otevřeného dialogu s trhem je Martin Vyklický, vedoucí Odboru veřejných zakázek Vysokého učení technického v Brně, kterého loni za přínos k rozvoji veřejného nakupování v Česku ocenilo i Ministerstvo pro místní rozvoj.
+Brněnská univerzita implementovala předběžné tržní konzultace do standardního průběhu veřejných zakázek. Příkladem může být modernizace areálu Fakulty strojního inženýrství za více než 150 milionů korun. Ještě než VUT soutěž vypsala, uspořádala s možnými zájemci otevřené setkání, na kterém potenciální dodavatele seznámila s předmětem zakázky a navrhovaným způsobem hodnocení nabídek na základě kvalitativních kritérií, konkrétně metodou Best Value Approach.
+„Úspěch zakázky se z velké části rozhoduje ještě před jejím vyhlášením. Kromě svědomité projektové přípravy a dobrého technického zadání je možné využít předběžné tržní konzultace, které slouží nejen k seznámení možných dodavatelů se záměrem zadavatele, ale také k ověření ‘kvality’ technického zadání, relevance hodnotících kritérií, ale i upřesnění dalších podmínek účasti,“ vysvětlil Martin Vyklický.
+Ten je zároveň propagátorem metody Best Value Approach ve veřejné sféře: „Naším cílem je prostřednictvím této metody hodnocení kultivovat trh veřejných zakázek. Tato metoda motivuje zadavatele k tomu, aby hledali dodavatele nejen kvalifikovaného, ale zejména kvalitního, a tak kladli důraz i na jiná kritéria než pouze na cenu; tedy odbornou úroveň, rizika, pokročilá řešení dodavatele nebo vlastnosti a schopnosti projektového manažera. Předběžné tržní konzultace takový postup skvěle doplňují.”
+Kvalitní příprava může zajistit kvalitní nabídku
+Krajská příspěvková organizace Vysočina Tourism u přípravy nového turistického portálu předběžné tržní konzultace sice nevyužila, přesto je tento projekt dobrým příkladem kvalitní přípravy.
+Zadavatel se soustředil především na to, co skutečně potřebuje vyřešit, a podle toho nastavil samotnou soutěž. Místo detailního předepisování konkrétního řešení vytvořil prostor, aby dodavatelé mohli přijít s vlastním návrhem a soutěžit především kvalitou.
+Významnou součástí hodnocení proto nebyla pouze c...
+(Pokracovani na webu)

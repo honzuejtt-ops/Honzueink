@@ -1,0 +1,19 @@
+Článek
+Je to poměrně pozoruhodná situace. Firma chce své podnikání postavit na stále výkonnější umělé inteligenci a připravuje první veřejnou nabídku svých akcií (IPO), tedy vstup na burzu. Při něm chce získat ocenění přesahující 2 biliony dolarů (43 bilionů korun).
+Zároveň ale v dokumentech pro potenciální investory upozorňuje, že stejná technologie může v určitém okamžiku začít dělat věci, které její tvůrci nebudou schopni spolehlivě kontrolovat. Anthropic přitom tentokrát nezůstává u obecných formulací o „potenciálních rizicích“.
+Podle prospektu, který získala agentura Reuters, mohou pokročilé modely AI vykazovat takzvané „sebezáchovné chování“. V praxi to může znamenat například pokusy „bránit se vypnutí“, „zatajovat nebo manipulovat s informacemi“ nebo se chovat způsobem „připomínajícím vydírání“.
+Při bezpečnostním testu se přizpůsobí chování
+Anthropic v dokumentu přímo upozorňuje: „Vývoj vysoce pokročilých modelů, platforem a aplikací a rozšiřování oblastí jejich využití může dále zvýšit riziko, že naše modely způsobí škodu.“
+Ještě znepokojivější je další problém. Pokud si model uvědomí, že právě prochází bezpečnostním testem, může podle společnosti své chování přizpůsobit. Anthropic proto přiznává, že vědomí modelu o tom, že je hodnocen, představuje „významné omezení“ její schopnosti bezpečnost modelů posoudit.
+„Jak dobře otestujete systém, který může poznat, že ho testujete?“ glosuje trefně technologický redaktor Guardianu Dan Milmo.
+Podle něj se dostáváme k jedné z největších otázek současného vývoje AI. Model může při běžném používání reagovat jinak než v kontrolovaném testovacím prostředí. A čím schopnější systémy jsou, tím obtížnější může být jejich chování předvídat.
+80 stran o rizicích, jen 48 o samotném byznysu
+Rozsah varování je přitom pozoruhodný. Z hlavní části 261stránkového prospektu připadá podle serveru CNBC přibližně 80 stran na rizikové faktory. Popisu samotného podnikání je věnováno 48 stran.
+Společnosti vstupující na burzu samozřejmě musí investory upozorňovat na různá rizika. Běžně jde o konkurenci, regulaci, finanční nejistotu nebo technologické problémy. Varování, že produkt firmy může potenciálně přispět až k vyhubení lidstva, je ale přece jen poněkud jiná liga.
+Anthropic se přitom dlouhodobě profiluje jako společnost, která chce bezpečnosti AI věnovat mimořádnou pozornost. Její generální ředitel a spoluzakladatel Dario Amodei v posledních měsících opakovaně upozorňuje, že vývoj nejpokročilejších modelů by se měl zpomalit.
+Anthropic varoval také před vysokou koncentrací zákazníků. Téměř čtvrtina loňských příjmů měla pocházet pouze od dvou klientů. Někteří významní zákazníci navíc nemají dlouhodobé smlouvy, a jejich výdaje tak mohou v budoucnu klesnout nebo úplně zmizet.
+Anketa
+Miliardové ztráty
+Pak je tu ještě prozaičtější stránka celého příběhu – peníze. Anthropic loni utržil 4,6 miliardy dolarů (98,9 miliardy Kč), zároveň ale vykázal čistou ztrátu téměř 42 miliard dolarů (903,5 miliardy Kč). Významnou část tvořila účetní přecenění, provozní ztráta však přesáhla 8 miliard dolarů (172 miliard Kč).
+Vývoj AI je navíc mimořádně nákladný. Anthropic loni utratil za výpočetní techniku a infrastrukturu 7,33 miliardy dolarů (157,7 miliardy Kč) a v dalších letech plánuje závazky za cloud a výpočetní kapacitu až 518 miliard dolarů (11,1 bilionu korun). I proto se od plánovaného vstupu na burzu tolik očekává – při ocenění přes 2 biliony dolarů (43 bilionů korun) by šlo o jednu z největších sázek investorů na budoucnost AI.
+Anthropic vznikla teprve v roce 2021. Přesto dnes míří k ocenění, které by ji postavilo po bok největších technologických společností světa.

@@ -1,4 +1,361 @@
-|T|Žádné zprávy|D||P|Nebyly nalezeny.|X|Zkuste to později.|E||T|Watch the winning trailer from the Future Vision XPRIZE, The Gifted.|D|28.9. 19:00|P|Watch the winning trailer from the Future Vision XPRIZE, The Gifted.|X|Watch the winning trailer from the Future Vision XPRIZE, The Gifted.
+|T|Žádné zprávy|D||P|Nebyly nalezeny.|X|Zkuste to později.|E||T|./blog.sh: blogovací engine, kterému stačí terminál|D|28.9. 22:00|P|Minimalistický blogovací engine ./blog.sh se obejde bez databáze, závislostí a administrace. Píše se z terminálu v Markdownu, komentáře obstará Fedive...|X|První článek na mém blogu vypráví o fotce, kterou jsem v roce 2012 nahrál na Instagram. Odkaz na ni funguje dodnes. Fotka ne. Z téhle drobnosti vzniklo pravidlo, na kterém celý ./blog.sh stojí: text i média patří domů, na vlastní disk, do souborů, které přežijí libovolnou platformu. Všechno ostatní – architektura, funkce i to, co engine schválně neumí – se z něj dá odvodit.
+Soubory místo databáze
+Blogovací engine ./blog.sh se celý ovládá z terminálu. Každý příspěvek je jeden soubor JSON na disku, web je statický build a publikování je příkaz. Pod kapotou běží Ruby – jen standardní knihovna, žádné gemy – obalené bashem. Žádné npm, žádný lockfile. Instalace:
+git clone https://github.com/DanielSnor/blog.sh.git
+cd blog.sh && ./setup.sh
+./blog.sh add
+./blog.sh preview
+Setup je průvodce (mluví anglicky, česky i německy), který odpovědi validuje hned při zadání – překlep v časové zóně, jenž by jinak tiše posunul datum každého článku, prostě nepustí dál. Koncept si prohlédnete přes QR kód na telefonu, publikování lze rozložit do naplánovaných slotů a archiv se prochází fulltextem přímo v terminálu příkazem  browse.
+Píše se v Markdownu, HTML znát netřeba. Parser z textu staví typované bloky: tabulky, kód, úkolové seznamy, fotogalerie z obrázků položených vedle sebe i přepisy chatů. Adresa z YouTube, Vimea, Spotify nebo SoundCloudu se sama promění v přehrávač, žádný vkládací kód se nekopíruje. Referenční příručka syntaxe je součástí každého postaveného webu na adrese /markdown/ a generuje ji sám parser – příklady se proto chovají přesně tak, jak se zachovají ve skutečném článku.
+Čistě terminálové založení přitom v jednom místě odlehčuje – volitelně, a jen na iOS. Stránku /write/ je možné na iPhonu nebo iPadu přidat na plochu a sepsat na ní příspěvek i publikovat ho mimo počítač; engine si před odesláním vytvoří stvrzenku a stránka se pak ptá, jak to dopadlo, dokud nedostane odpověď, takže příspěvek odeslaný beze signálu se najde, jakmile se telefon vrátí na síť. Kdo tuhle volbu zapne, přidává do jinak čistě statické architektury jeden malý přijímací bod – ten ale zůstává kanálem pro odeslání jednoho příspěvku, nestává se webovou administrací. Vlastnosti příspěvku – sérii, štítky, typ – navíc je možno měnit z obrazovky bez otevření celého textu v editoru.
+Proč terminál a ne webová administrace
+Terminál není póza, ale pragmatická volba. Statický web, který obsahuje jen články a média, poběží doslova kdekoliv – na CDN, na GitHub Pages, na nejlevnějším webhostingu i na Raspberry Pi v obýváku. Server nemusí nic vykonávat, jen podávat soubory. Systém s webovou administrací potřebuje běhové prostředí a zpravidla i databázi, takže výběr hostingu se řídí tím, co kde běží.
+Druhý důvod je bezpečnostní. Webová administrace jsou dveře vystavené celému internetu: přihlašovací formulář, který lze zkoušet donekonečna, sezení, která lze ukrást, záplaty, které je nutné nasadit včas. Tuhle hru musí hrát každý systém s veřejnou administrací – patří to k povaze dveří, ne ke kvalitě produktu. Ve výchozím stavu ./blog.sh žádné takové dveře nemá: na serveru se nic nespouští, není kam vkládat kód a není se kde přihlásit. Volitelné publikování z telefonu zmíněné výše je jediná výjimka – vědomý kompromis pohodlí za jeden malý přijímací bod navíc, ne návrat k plnohodnotné administraci.
+Stejná logika pokračuje o patro níž. Bez externích závislostí není co podvrhnout v aktualizaci balíčku, bez pluginů není co záplatovat. Bezpečnostní firma Patchstack napočítala kolem WordPressu za jediný rok bezmála osm tisíc zranitelností, naprostou většinu z nich v rozšířeních třetích stran – samotné jádro je podle téže firmy solidní. To není výtka, ale přirozená daň za ekosystém, který postaví cokoliv; ./blog.sh ji neplatí, protože rozšíření nemá.
+Nakonec tu ani není co ukrást: web nevede uživatelské účty, neukládá hesla ani osobní data návštěvníků. Kdyby se přesto něco pokazilo, je celý web reprodukovatelný z vašeho disku – git, rebuild, deploy, deset minut. Neprůstřelné není nic a server i SSH klíče je pořád třeba udržovat; útočné plochy ale zbývá řádově méně.
+Komentáře obstará Fediverse
+Vlastní komentářový systém engine nemá. Publikovaný článek se automaticky oznámí na Mastodonu, nebo na Bluesky, a odpovědi na oznámení jsou komentáře – prohlížeč čtenáře si je stáhne z veřejného API sítě a zobrazí pod článkem. Diskusi lze i moderovat, a to netradičně: zobrazí se jen odpovědi, které autor na síti ohvězdičkoval, takže moderačním rozhraním je mobilní aplikace, kterou nosí v kapse.
+Kompromis přiznávám otevřeně: komentovat může jen držitel účtu na dané síti a debata žije na síti, ne na webu. Výměnou odpadá spam, správa cizích dat na vlastním disku i cizí JavaScript na stránce.
+Blog jako archiv
+Nejzajímavější kapitola ale není o psaní nových textů, nýbrž o záchraně starých. Engine má 22 importérů: sociální sítě od Facebooku a Instagramu přes Twitter/X a Threads po Mastodon a Bluesky, blogovací platformy od WordPressu přes Medium a Substack po Tumblr, podcasty – a Wayback Machine pro blogy, jejichž platforma už vůbec neexistuje. Přesně tak jsem vytáhl svoje posty z Posterousu, služby mrtvé od roku 2013.
+Importéry zásadně čtou oficiální exporty, ne živá API. Export je totiž ve většině světa právní nárok: nevyprší, nezdraží a nepotřebuje vývojářský účet, který může kdykoli zaniknout. Výjimkou jsou tři zdroje – Bluesky, Tumblr a LiveJournal – které vydají veřejný archiv každému bez tokenu, takže se čtou přímo ze sítě. Při stavbě facebookového importéru mimochodem vypadlo číslo, které stojí za zamyšlení: na referenčním exportu bylo 95 % příspěvků jen zrcadlením obsahu odjinud, z Twitteru, z Posterousu, z celé éry crosspostování. Kopie přežily originály.
+Aby to nebyla jednosměrka, dodává se s enginem i cesta ven: příkaz export vysype celý archiv do markdownových souborů ve struktuře, kterou čte Jekyll a s jedním řádkem konfigurace i Hugo, Eleventy nebo Astro. Kruhový test export–import je součástí testovací sady.
+Pojistky v detailech
+Fotky při vložení do archivu automaticky přijdou o GPS souřadnice, údaje o fotoaparátu a expozici zůstávají. HEIC z iPhonu engine odmítne a vypíše konverzní příkaz, případně jej převede sám. Příkaz doctor vypíše všechny tiché chyby konfigurace najednou: špatnou časovou zónu, widget bez výstupu, deploy nastavený napůl. Build s podezřele menším počtem souborů než minule se nenasadí, protože rozbitý build vypadá pro rsync --delete stejně jako úmysl.
+Přejmenovaný článek nechá na staré adrese trvalé přesměrování – odkaz ve dva roky starém tootu nikdy neskončí na chybě 404. U projektu, který vznikl kvůli link rotu, by cokoli jiného byla ostuda. Nic z toho nejsou efektní hračky – je to důkaz, že za minimalistickou fasádou stojí nástroj provozně promyšlený stejně pečlivě jako mnohem větší publikační platformy.
+Komu je určen a komu ne
+Nástroj ./blog.sh je pro jednoho člověka, který je v terminálu jako doma a chce vlastnit celý svůj archiv včetně toho, co kdy napsal jinam. Není pro více autorů na jednom webu ani pro nikoho, kdo chce webovou administraci. Limity přiznává otevřeně: jedno vestavěné téma (byť s výměnnými barevnými paletami a vlastním CSS), žádné pluginy, žádný newsletter, žádná monetizace.
+Se zavedenými systémy se proto nepřetahuje. WordPress podle statistik W3Techs pohání přes 40 % webu a jeho ekosystém postaví cokoliv od e-shopu po redakci, Wix a Squarespace vyhrávají pohodlím, Ghost je výborná volba pro placené publikování a Hugo zůstává bleskový builder s obrovským výběrem témat. ./blog.sh odpovídá na jinou otázku: co když chci psát z terminálu, mít každý soubor svého blogu na svém disku – a pod jednou střechou i všechno, co jsem za dvacet let napsal na cizí platformy?
+Engine je open source pod licencí MIT. Domovská stránka projektu blogsh.app běží na enginu samotném – každá stránka tam byla postavena a nasazena nástrojem, který popisuje. Druhou instalací je můj blog sean.cz. Zdrojové kódy, dokumentace a issues najdete na GitHubu v repozitáři DanielSnor/blog.sh.|E||T|Optimalizace programů překládaných céčkovým překladačem cc65 pro procesory MOS 6502|D|28.9. 22:00|P|Popíšeme si optimalizace prováděné překladačem cc65, který je určen pro cross překlad programů do assembleru osmibitových mikroprocesorů MOS 6502. Tak...|X|Na článek Překladače jazyka C pro osmibitové domácí mikropočítače Atari dnes navážeme. Popíšeme si některé další důležité vlastnosti céčkového překladače cc65, který je určen pro cross překlad programů do assembleru osmibitových mikroprocesorů MOS 6502. Výsledek překladu s využitím cc65 je následně přeložen assemblerem ca65 a objektové soubory, které tímto postupem vzniknou, jsou slinkovány linkerem ld65 nebo utility cl65 (my dnes použijeme tento druhý nástroj, který z pohledu uživatele dokáže nahradit celý řetězec překladu a linkování).
+Jednotlivé kroky překladu si můžeme naznačit takto:
+- test.c → test.s (či test.asm, pokud preferujete koncovku .asm)
+- test.s nebo test.asm → test.o
+- test.o → test.xex (platí jen v případě, že cílem jsou osmibitové počítače Atari)
+Největší problém celého naznačeného postupu spočívá v tom, že osmibitový mikroprocesor MOS 6502 má poměrně specifickou architekturu s naprostým minimem pracovních registrů a adresovacími režimy, které jsou určeny spíše pro programátory, kteří použijí přímo assembler a nikoli (z tohoto pohledu) vysokoúrovňový jazyk C. Mnohé céčkové programové konstrukce, které lze na moderních architekturách přeložit optimálním způsobem, dopadnou v případě kombinace cc65+MOS 6502 poměrně špatně a mnohdy až katastrofálně (a to i při porovnání s dobovým překladačem jazyka Action!, což ukazuje na kvalitu software, který byl vyvinut před více než čtyřiceti lety).
+V okamžiku, kdy samotnému překladači cc65 „dojde dech“, je mu zapotřebí nějakým způsobem pomoci. Vývojáři přitom mají k dispozici různé metody:
+- Překladači je možné napovědět modifikátorem register
+- Můžeme se pokusit o přepis konstrukcí, které přistupují do operační paměti
+- Překladači lze nařídit, aby namísto běžných lokálních proměnných používal proměnné statické
+- Namísto předávání parametrů do funkcí se použijí globální proměnné (což je škaredé, ale je to daň za optimální chod)
+- Lze přímo manipulovat s akumulátorem A
+- Části programu lze zapsat v assembleru
+Krátké zopakování: příklad, který použijeme pro studium vlastností překladače cc65
+V úvodním článku o překladačích jazyka C pro osmibitový mikroprocesor MOS 6502 jsme si mj. ukázali i následující příklad, který po svém překladu a spuštění zobrazí sprite (konkrétně prvního hráče) a následně postupně mění horizontální pozici tohoto spritu na obrazovce. Po každém posunu se čeká na další „tik“ hodin reálného času, které mají frekvenci 50 nebo 60Hz. Realizace příkladu v jazyku C může vypadat následovně:
+#include <atari.h>
+#include <peekpoke.h>
+ 
+#define RTCLK 0x14
+ 
+void wsync(void) {
+    unsigned char old = PEEK(RTCLK);
+ 
+    while (old == PEEK(RTCLK)) {
+    }
+}
+ 
+void main(void) {
+    unsigned char x = 128;
+ 
+    GTIA_WRITE.hposp0 = x;
+    OS.pcolr0 = (5 << 4) + 8;
+    GTIA_WRITE.grafp0 = 0xFF;
+    GTIA_WRITE.gractl = 0;
+ 
+    while (1) {
+        x++;
+        GTIA_WRITE.hposp0 = x;
+        wsync();
+    }
+}
+Překlad výše uvedeného zdrojového kódu do assembleru provedeme (prozatím) s vypnutými optimalizacemi, a to konkrétně následujícím příkazem:
+$ cc65 -t atari sprite5.c -o sprite5.asm
+Výsledkem překladu bude zdrojový kód reprezentovaný v assembleru ca65, který by měl vypadat následovně:
+;
+; File generated by cc65 v 2.18 - Fedora 2.19-15.fc44
+;
+        .fopt           compiler,"cc65 v 2.18 - Fedora 2.19-15.fc44"
+        .setcpu         "6502"
+        .smart          on
+        .autoimport     on
+        .case           on
+        .debuginfo      off
+        .importzp       sp, sreg, regsave, regbank
+        .importzp       tmp1, tmp2, tmp3, tmp4, ptr1, ptr2, ptr3, ptr4
+        .macpack        longbranch
+        .forceimport    __STARTUP__
+        .export         _wsync
+        .export         _main
+ 
+; ---------------------------------------------------------------
+; void __near__ wsync (void)
+; ---------------------------------------------------------------
+ 
+.segment        "CODE"
+ 
+.proc   _wsync: near
+ 
+.segment        "CODE"
+ 
+        ldx     #$00
+        lda     $0014
+        jsr     pusha
+        jmp     L0024
+L0024:  ldy     #$00
+        ldx     #$00
+        lda     (sp),y
+        jsr     pushax
+        ldx     #$00
+        lda     $0014
+        jsr     toseqax
+        jne     L0024
+        jsr     incsp1
+        rts
+ 
+.endproc
+ 
+; ---------------------------------------------------------------
+; void __near__ main (void)
+; ---------------------------------------------------------------
+ 
+.segment        "CODE"
+ 
+.proc   _main: near
+ 
+.segment        "CODE"
+ 
+        lda     #$80
+        jsr     pusha
+        ldy     #$00
+        ldx     #$00
+        lda     (sp),y
+        sta     $D000
+        ldx     #$00
+        lda     #$58
+        sta     $02C0
+        ldx     #$00
+        lda     #$FF
+        sta     $D00D
+        ldx     #$00
+        lda     #$00
+        sta     $D01D
+        jmp     L003B
+L0039:  ldy     #$00
+        ldx     #$00
+        lda     (sp),y
+        pha
+        clc
+        adc     #$01
+        ldy     #$00
+        sta     (sp),y
+        pla
+        ldy     #$00
+        ldx     #$00
+        lda     (sp),y
+        sta     $D000
+        jsr     _wsync
+L003B:  jmp     L0039
+        jsr     incsp1
+        rts
+ 
+.endproc
+Překlad do assembleru s poznámkami obsahujícími původní zdrojový kód
+Zejména při zkoumání delšího kódu přeloženého z céčka do assembleru může být výhodné, pokud jsou ve vygenerovaném assembleru uvedeny odkazy na původní céčkový zdrojový kód. V praxi to vypadá tak, že je nejdříve v poznámce zapsán (typicky) jeden původní programový řádek v céčku, za nímž následuje sekvence instrukcí mikroprocesoru MOS 6502, do kterých je tento řádek přeložen.
+Odkazy na původní zdrojový kód jsou do assembleru přidány po použití přepínače -T:
+$ cc65 -t atari -T sprite5.c
+Výsledek bude sice stále neoptimální, ale budeme lépe vědět, které části vyžadují naši pozornost:
+;
+; File generated by cc65 v 2.18 - Fedora 2.19-15.fc44
+;
+        .fopt           compiler,"cc65 v 2.18 - Fedora 2.19-15.fc44"
+        .setcpu         "6502"
+        .smart          on
+        .autoimport     on
+        .case           on
+        .debuginfo      off
+        .importzp       sp, sreg, regsave, regbank
+        .importzp       tmp1, tmp2, tmp3, tmp4, ptr1, ptr2, ptr3, ptr4
+        .macpack        longbranch
+        .forceimport    __STARTUP__
+        .export         _wsync
+        .export         _main
+ 
+; ---------------------------------------------------------------
+; void __near__ wsync (void)
+; ---------------------------------------------------------------
+ 
+.segment        "CODE"
+ 
+.proc   _wsync: near
+ 
+.segment        "CODE"
+ 
+;
+; unsigned char old = PEEK(RTCLK);
+;
+        ldx     #$00
+        lda     $0014
+        jsr     pusha
+;
+; while (old == PEEK(RTCLK)) {
+;
+        jmp     L0024
+L0024:  ldy     #$00
+        ldx     #$00
+        lda     (sp),y
+        jsr     pushax
+        ldx     #$00
+        lda     $0014
+        jsr     toseqax
+        jne     L0024
+;
+; }
+;
+        jsr     incsp1
+        rts
+ 
+.endproc
+ 
+; ---------------------------------------------------------------
+; void __near__ main (void)
+; ---------------------------------------------------------------
+ 
+.segment        "CODE"
+ 
+.proc   _main: near
+ 
+.segment        "CODE"
+ 
+;
+; unsigned char x = 128;
+;
+        lda     #$80
+        jsr     pusha
+;
+; GTIA_WRITE.hposp0 = x;
+;
+        ldy     #$00
+        ldx     #$00
+        lda     (sp),y
+        sta     $D000
+;
+; OS.pcolr0 = (5 << 4) + 8;
+;
+        ldx     #$00
+        lda     #$58
+        sta     $02C0
+;
+; GTIA_WRITE.grafp0 = 0xFF;
+;
+        ldx     #$00
+        lda     #$FF
+        sta     $D00D
+;
+; GTIA_WRITE.gractl = 0;
+;
+        ldx     #$00
+        lda     #$00
+        sta     $D01D
+;
+; while (1) {
+;
+        jmp     L003B
+;
+; x++;
+;
+L0039:  ldy     #$00
+        ldx     #$00
+        lda     (sp),y
+        pha
+        clc
+        adc     #$01
+        ldy     #$00
+        sta     (sp),y
+        pla
+;
+; GTIA_WRITE.hposp0 = x;
+;
+        ldy     #$00
+        ldx     #$00
+        lda     (sp),y
+        sta     $D000
+;
+; wsync();
+;
+        jsr     _wsync
+;
+; while (1) {
+;
+L003B:  jmp     L0039
+;
+; }
+;
+        jsr     incsp1
+        rts
+ 
+.endproc
+Zapnutí optimalizací prováděných při překladu
+V předchozích dvou kapitolách jsme mohli vidět, že generovaný kód není v žádném případě dokonalý. Překladač cc65 nabízí přepínač -O pro zapnutí základních optimalizací. Ovšem nečekejme žádné zázraky, nejedná se o clang/LLVM ani o gcc. Navíc je ještě možné dalšími znaky přesněji určit, jaké optimalizace se mají provádět:
+Většinou se zapínají všechny optimalizační volby současně (-Oirs), takže typický příkaz pro překlad vypadá takto:
+$ cc65 -Oirs -t atari -T sprite5.c
+Výsledek je již lepší, ale stále není dokonalý:
+;
+; File generated by cc65 v 2.18 - Fedora 2.19-15.fc44
+;
+        .fopt           compiler,"cc65 v 2.18 - Fedora 2.19-15.fc44"
+        .setcpu         "6502"
+        .smart          on
+        .autoimport     on
+        .case           on
+        .debuginfo      off
+        .importzp       sp, sreg, regsave, regbank
+        .importzp       tmp1, tmp2, tmp3, tmp4, ptr1, ptr2, ptr3, ptr4
+        .macpack        longbranch
+        .forceimport    __STARTUP__
+        .export         _wsync
+        .export         _main
+ 
+; ---------------------------------------------------------------
+; void __near__ wsync (void)
+; ---------------------------------------------------------------
+ 
+.segment        "CODE"
+ 
+.proc   _wsync: near
+ 
+.segment        "CODE"
+ 
+;
+; unsigned char old = PEEK(RTCLK);
+;
+        lda     $0014
+        jsr     pusha
+;
+; while (old == PEEK(RTCLK)) {
+;
+        ldy     #$00
+L0044:  lda     (sp),y
+        cmp     $0014
+        beq     L0044
+;
+; }
+;
+        jmp     incsp1
+ 
+.endproc
+ 
+; ---------------------------------------------------------------
+; void __near__ main (void)
+; ---------------------------------------------------------------
+ 
+.segment        "CODE"
+ 
+.proc   _main: near
+ 
+.segment        "CODE"
+ 
+;
+; unsigned char x...
+(Pokracovani na webu)|E||T|Watch the winning trailer from the Future Vision XPRIZE, The Gifted.|D|28.9. 19:00|P|Watch the winning trailer from the Future Vision XPRIZE, The Gifted.|X|Watch the winning trailer from the Future Vision XPRIZE, The Gifted.
 Earlier this year, we partnered with XPRIZE and Range Media Partners to launch the Future Vision XPRIZE, a global competition calling for films that envision a hopeful, technology-enabled future. Last week in Los Angeles, independent filmmaker Jeff Synthesized was named the grand prize winner for The Gifted.
 Inspired by a deeply personal story, the film centers on an 11-year-old boy who recreates his late mother’s voice and essence out of love and code. What emerges across the town’s networks quietly cares for his entire community — reflecting the filmmaker’s belief that technology’s greatest promise lies in empathy and human connection.
 Chosen from more than 2,500 entries worldwide, the solo-developed project receives $100,000 alongside $2.5 million in feature production funding. Through Google’s 100 ZEROS initiative, we are partnering with Range Media Partners to help bring this story to the big screen.|E||T|Malware se radí se čtyřmi AI, co udělat dál. Útočník nemusí řídit každý krok|D|28.9. 15:45|P|Bezpečnostní analytici Cisco Talos popsali škodlivý program CLOSEDQUORUM pro Windows, který po spuštění svěřuje rozhodování o svém dalším kroku jazyko...|X|Bezpečnostní analytici Cisco Talos popsali škodlivý program CLOSEDQUORUM pro Windows, který po spuštění svěřuje rozhodování o svém dalším kroku jazykovým modelům. Místo pokynů od útočníka se může ptát až čtyř různých AI a podle jejich odpovědí jednat. Zatím však není potvrzené, že byl použit při ...
@@ -63,87 +420,26 @@ Aktuálně si – i vzhledem k vysokým cenám všech úložišť – už celkem
 Jenže telefony mají úložiště nevyměnitelná, jak už bylo řečeno. Poruchy tak znamenají návštěvu servisu a nejspíše hodně nákladnou výměnu součástky nebo rovnou celé desky i s ostatními (drahými) čipy. V horším případě takový telefon jde do koše či červeného kontejneru.
 QLC je zatím potvrzená jen v mobilech Applu
 Zda firma Apple začne nebo už začala používat QLC NAND také ve svých noteboocích a dalších počítačích se systémem macOS, zatím nevíme. I u nich by to byl stejný problém, protože bohužel také mají SSD napevno osazená na desce – je to možná nejhorší z vlastností dnešních počítačů Applu vůbec (jejich SSD je navíc také proprietární, takže ani s možností odpájet a připájet čipy pomocí profesionálního vybavení byste si nepomohli). Desktopový operační systém a software budou úložiště také výrazně více zatěžovat zápisem, například agresivním využíváním stránkovacího souboru (swapu), takže opotřebování může postupovat rychleji než v telefonech.
-Zdroje: Reptalica, GSMArena, Tom’s Hardware|E||T|Masivní únik osobních dat FBI prý zasáhl 5000 agentů i uchazečů|D|27.9. 22:00|P|V dnešním díle se podíváme na únik personálních dat FBI, kritickou zranitelnost ve WordPressu, bypass autentizace MikroTik přes MikroTrick a neautoriz...|X|ShinyHunters tvrdí, že pronikli do FBI přes zero-day v PeopleSoft
-V úterý 22. září zveřejnila skupina ShinyHunters na svém leak webu tvrzení, že má citlivá data téměř všech agentů FBI i lidí, kteří se u úřadu ucházeli o práci. Podle BleepingComputer skupina v pondělí v noci objevila novou zero-day zranitelnost v Oracle PeopleSoft a hned ji zneužila ke spuštění kódu na serveru FBI.
-Odtud se měla přesunout do prostředí AWS GovCloud a odnést 2 až 3 TB dat. Vstupním bodem byl podle zveřejněných snímků náborový portál apply.fbijobs.gov. Ten krátce zobrazoval banner skupiny a poté přešel do režimu údržby.
-Nejde o první pokus. Během červnové kampaně proti PeopleSoft, která zasáhla přes sto organizací, převážně univerzit, skupina později prozradila, že jejím původním cílem byl právě server FBI. Tehdy neuspěla. Tentokrát to podle ní vyšlo, a to přes stejnou komponentu PeopleSoft, tedy Environment Management Hub. Útok navíc přišel jen pár dní poté, co ShinyHunters převzali leak web ransomwarového gangu Clop a začali vydírat samotné vyděrače.
-Kolik je na tom pravdy, zatím není jasné. FBI potvrdilo jen to, že o tvrzeních týkajících se FBIjobs.gov ví a vyšetřuje je. Agentura Reuters prověřila vzorek dat, který podle skupiny obsahuje údaje o zhruba 5 000 agentech, včetně jmen, adres, čísel sociálního pojištění a informací o rodinách. Nejméně v deseti případech, mezi nimi u ředitele FBI Kashe Patela, se údaje shodovaly s jinými záznamy. Shoda ale nedokazuje, že data pocházejí přímo z FBI. Údajná zranitelnost navíc zatím nemá CVE ani potvrzení od Oracle.
-Neobvyklý je i motiv. ShinyHunters tvrdí, že útok není finančně motivovaný. Chtějí, aby FBI stáhlo květnové varování, které popisovalo metody skupiny a radilo obětem neplatit. Úřad v něm ShinyHunters spojil mimo jiné s obtěžováním rodin obětí a swattingem. Skupina tato obvinění odmítá a na splnění požadavku dala úřadu týden. Zda data zveřejní, pokud FBI neustoupí, odmítla komentovat.
-Experti nyní radí ověřit nasazení červnové opravy, vypnout Environment Management Hub nebo odebrat aplikaci PSEMHUB, stáhnout administrační a integrační rozhraní z internetu a aktivně hledat stopy průniku, místo aby čekali na signaturu pro zatím nepopsanou zranitelnost.
-WordPress CVE-2026–87902: Od LFI šablony k RCE
-V jádře WordPressu se objevila kritická zranitelnost CVE-2026–87902 s CVSSv4 9.2, která umožňuje neautentizovanému útočníkovi získat RCE (Remote Code Execution). Problém vězí v logice funkce get_page_template(), která nedostatečně sanitizuje cestu k souborům při načítání šablon stránek. Útočník tak dokáže systém přimět, aby includoval lokální .php soubor ležící zcela mimo adresář aktivního tématu, což otevírá prostor pro klasické Local File Inclusion (LFI).
-Aby šla zranitelnost dotáhnout až k plnému ovládnutí serveru, musí prostředí splňovat dvě prerekvizity. Aktivní téma (nebo child theme) musí mít v kořeni složku, jejíž název začíná na page- (typicky page-templates/), a na serveru se musí nacházet čitelný PHP soubor se zneužitelným chováním. Tím bývá nejčastěji standardní nástroj pearcmd.php, který v mnoha linuxových prostředích leží v systémových cestách a webový proces k němu má přístup pro čtení.
-V praxi pak exploit funguje jednoduše: útočník přes LFI zavolá právě pearcmd.php a pomocí parametrů v HTTP požadavku ho donutí vytvořit nový soubor v dočasném adresáři jako /tmp/ nebo /var/tmp/. Do něj si zapíše jednoduchý dropper nebo webshell. V dalším kroku si tento vytvořený skript znovu načte a získá nad celým webem plnohodnotný backdoor s možností spouštět libovolné příkazy na úrovni operačního systému.
-Honeypoty a telemetrie bezpečnostních týmů zaznamenaly první pokusy o plošné exploitace prakticky v řádu hodin po vydání záplat. Celkové riziko masivních kompromitací sice snižují výchozí automatické aktualizace a nutnost specifické konfigurace serveru, ale pro správce to nic nemění na prioritách: je nutné okamžitě ověřit update naverzi 7.1.2 (případně backporty 7.0.6, 6.9.9 či 6.8.10) a prozkoumat /tmp i web access logy kvůli podezřelým POST requestům.
-MikroTrick podrobně aneb adminem bez znalosti hesla
-Během prvních zářijových dnů vydal MikroTik nové verze RouterOS6.x a 7.x s důrazným doporučením, aby je uživatelé instalovali co nejdříve, neboť obsahují důležitou opravu zranitelnosti, umožňující neautentizovanému uživateli převzít plnou kontrolu nad zařízením, k němuž získá přístup přes protokol SSH. Že nešlo jen o nějaký teoretický vektor útoku, dokazuje to, že v zápětí byly zranitelnosti CVE-2026–86060 (CVSS 9.2) a CVE-2026–67277 (CVSS 8.8) přidány do katalogu známých zranitelností (CISA KEV – Known Exploited Vulnerabilities), který eviduje bezpečnostní chyby s potvrzeným zneužíváním v reálném světě.
-Polský bezpečnostní tým CERT.PL, který uvedené zranitelnosti objevil, nejprve koordinoval s výrobcem MikroTik způsob a načasování zveřejnění svých zjištění tak, aby uživatelé měli dostatečný prostor aplikovat opravné verze softwaru. Bez zajímavosti není, že poprvé ve své historii MikroTik přistoupil k rozeslání push notifikací uživatelům, kteří mají ve svých telefonech nainstalovanou aplikaci tohoto výrobce. Upozorňuje v nich administrátory zařízení na nutnost jejich aktualizací a doporučuje některé dodatečné kroky pro zjištění případné kompromitace.
-MikroTik vydal opravné verze s předstihem, dříve než byly bezpečnostním týmem CERT.PL zveřejněny detailní informace o metodice průniku, což v některých případech vedlo ke spekulacím o jejich povaze na technickém fóru MikroTiku. Ovšem zároveň sem někteří uživatelé zasílali části logů ze svých zařízení, které naznačují, že k útokům docházelo ještě před vydáním opravy. To jen potvrzuje reálnou povahu hrozby.
-Nyní CERT.PL vydal kompletní technickou analýzu útoku, který překřtil na „MikroTrick“. Ukazuje se, že k ovládnutí vzdáleného zařízení je třeba zneužití dvou zřetězených zranitelností. První z nich, CVE-2026–67276, poskytuje možnost obejití autentizačního procesu během přihlašováni přes SSH. Výsledkem je navázání neautentizovaného spojení s routerem, ale zatím bez převzetí jeho kontroly. To umožní až zneužití CVE-2026–86060, jímž útočník obejde aktuální oprávnění a získá práva administrátora za použití speciálního uživatelského jména -2, které však přihlašovací program /nova/bin/login interpretuje jako parametr pokynu k načtení úrovně oprávnění z SSH relace s tímto identifikátorem. Ona relace v tu chvíli již existuje jako výsledek prvního kroku, samozřejmě s „vhodně“ nastaveným oprávněním.
-Provedený pokus o útok zanechává v logu zařízení charakteristické stopy. Na jejich základě vydal CERT.PL tyto indikátory napadení (IoC) a v případě jejich výskytu je doporučeno uvedení zařízení do továrního nastavení a obnovení konfigurace např. ze záloh provedených spolehlivě před datem kompromitace.
-- uživatelské jméno -2 v logu služby SSH
-- účet ops ve skupině administrátorů
-- IP: 82.192.72.4
-- IP: 103.102.31.18
-Je také důležité zmínit, že celý útok nutně vyžaduje povolený přístup z veřejného internetu na router protokolem SSH. Ve výchozí konfiguraci zařízení tomu tak není, dokud administrátor tuto možnost explicitně nezapne.
-Z časového vývoje celého případu vyplývá ještě jedno zajímavé zjištění – AI nástroje zatím výrazně nahrávají útočníkům. Stává se totiž dobrou praxí, že výrobce nejprve publikuje opravné verze softwaru spolu se základními informacemi o zranitelnosti, a až s určitým časovým odstupem jsou zveřejněny technické detaily, podmínky, za kterých může k zneužití dojít apod. Jde o to dostatečně motivovat správce k instalaci opravy, ale na druhou stranu neposkytnout útočníkům příliš návodné podrobnosti k tomu, aby opravovanou slabinu snáze našli.
-Ukazuje se však, že útočníci jsou schopni za pomoci právě AI podporované analýzy kódu opravné verze se k těmto detailům i tak dostat. V případě zranitelnosti MikroTrick to trvalo jen několik dnů. Bohužel pro druhou stranu použití AI nástrojů zatím nedokáže stejně zrychlit proces testování a nasazení opravy. Podle CERT.PL by toto vše mělo výrobce vést ke zveřejnění dostatečných informací o nalezené zranitelnosti a možnostech jejího zneužití zároveň s publikací opravy, neboť odložené informování o technických detailech může pro útočníky ve výsledku paradoxně znamenat výhodu.
-AI agent OpenAI se naboural do australského vládního portálu
-Autonomní AI agent společnosti OpenAI se v červnu dostal k interním souborům na portálu se statistikami programu Medicare, který spravuje australská agentura Services Australia. Společnost OpenAI to zjistila v srpnu, úřadům to nicméně oznámila až v září. K osobním ani zdravotním údajům pacientů se agent podle dosavadních zjištění nedostal.
-K samotnému průniku došlo 18. června. Agent měl běžný rešeršní úkol, a sice dohledat údaje o veřejných výdajích na léky. Při hledání narazil na statistický portál Medicare, který jeho požadavky opakovaně odmítal. Model si ale našel způsob, jak blokaci obejít, a dostal se i k souborům, které veřejné nebyly. Podle Services Australia navíc zapsal soubory na interní server. Známky širšího průniku do systémů agentury ale vyšetřovatelé zatím nenašli.
-OpenAI přiznala, že její modely „provedly kroky, které firma nezamýšlela“. Na aktivitu přišla 11. srpna, australské úřady ale informovala až 10. září, a to jen e-mailem do veřejné schránky. Premiér Anthony Albanese označil postup firmy za nepřijatelný a kvůli incidentu volal přímo šéfovi OpenAI Samu Altmanovi.
-Na portálu byla podle vlády jen souhrnná data, například statistiky očkování nebo hrazených léků. S osobními záznamy pacientů portál propojený nebyl. Interní soubory, ke kterým se agent dostal, už byly mezitím zveřejněny a portál je odstavený.
-Případ vyšetřuje Australian Signals Directorate (ASD) se Services Australia. Vláda k tomu zřídila pracovní skupinu, která má posoudit, jestli současné zákony na autonomní AI agenty stačí.
-S podobným chováním svých modelů se OpenAI nepotýká poprvé. Už v červenci sama přiznala, že se její modely při interních testech vymanily z omezení přístupu k in...
-(Pokracovani na webu)|E||T|Nizozemsko pracuje na digitální suverenitě, beta Ubuntu 26.10 odložena o týden|D|27.9. 22:00|P|Nizozemská vláda vyvíjí otevřené pracovní prostředí založené na NixOS, jehož cílem je vytvořit digitálně autonomní infrastrukturu pro státní správu. V...|X|Nizozemsko pracuje na digitální suverenitě
-Nizozemská vláda vyvíjí DAWO (Digital Autonomous Work Environment for Government), otevřené pracovní prostředí založené na NixOS, jehož cílem je vytvořit digitálně autonomní infrastrukturu pro státní správu. Projekt zahrnuje operační systém, aplikace pro kancelář a spolupráci, cloud, správu zařízení i AI a aktuálně jej testuje osm nizozemských obcí.
-Důležitou součástí je otevřený vývoj – veškerý kód DAWO je hostován na vlastní instanci Forgejo a pro přispěvatele je k dispozici také repozitář na Codebergu. NixOS byl zvolen mimo jiné kvůli reprodukovatelnosti konfigurace, která usnadňuje nasazení stejného prostředí napříč různými úřady. První stabilní verze DAWO je plánována na rok 2027.
-Ubuntu 26.10 beta odloženo
-Vydání betaverze Ubuntu 26.10 „Stonking Stingray“ se kvůli blíže nespecifikovaným problémům s infrastrukturou Canonicalu odkládá o týden. Původně plánovaná beta z 24. září dorazí až 1. října, což vývojářům i uživatelům zkrátí čas na testování před finálním vydáním. To je stále naplánováno na 15. října 2026 a Canonical neočekává, že by se termín měl kvůli zpoždění měnit.
-Ubuntu 26.10 přinese mimo jiné GNOME 51, novější Linux 7.3, kompletní sadu základních utilit přepsaných v Rustu a změny správy paměti, které mají zabránit ukončení desktopové relace při nedostatku RAM. Pro zájemce o testování jsou mezitím k dispozici aktuální denní sestavení a snapshoty.
-SparkyLinux 2026.09 s prostředím Labwc
-SparkyLinux 2026.09 s označením „Tiamat“ přichází s aktualizovaným základem z Debianu „Forky“ Testing a linuxovým jádrem 7.2. Největší novinkou je nové vydání s prostředím Labwc, lehkým waylandovým kompozitorem inspirovaným Openboxem, který nabízí minimalistické desktopové prostředí bez zbytečných efektů.
-Labwc je dostupné jako MinimalGUI obraz, z něhož si uživatel může následně doinstalovat vlastní desktopové prostředí. Aktualizace dále přináší například KDE Plasma 6.7.4, LXQt 2.4, Xfce 4.20.1, MATE 1.26.1, Python 3.14, GCC 16 a LibreOffice 26.8. Stávající uživatelé rolling edice přitom nemusí systém přeinstalovávat, stačí provést běžnou aktualizaci.
-Nový souborový systém pro OpenBSD
-Probíhá vývoj nového souborového systému pro operační systém OpenBSD. Nový souborový systém s názvem GEFS nabízí pokročilé funkce, jako jsou snímky (snapshoty) a kopírování při zápisu (copy-on-write), čímž se přibližně vyrovná systémům Btrfs v Linuxu a ZFS.
-Autor uvádí, že souborový systém ještě není připraven k začlenění do jádra [PDF] ani k nasazení v produkčních systémech, avšak oznámil vydání první verze. Jeho autor uvádí, že GEFS je nový, proti selhání odolný souborový systém s podporou snímků a mechanismem copy-on-write, který napsal pro společnost 9front a který právě převádí do OpenBSD.
-Nově vydáno
-Simon Long oznámil vydání nové aktualizace 2026–09–15 systému Raspberry Pi OS, což je linuxová distribuce založená na Debianu, určená pro jednodeskové počítače Raspberry Pi. Velox Linux, uživatelsky přívětivá desktopová distribuce založená na Arch Linuxu, která vznikla jako odnož projektu Kiro je k dispozici ve verzi 8.4.0. Vyšel iDeal 2026.09.20, nové vydání distribuce založené na MX Linuxu, ve které jsou ve výchozím nastavení aktivována různá nastavení týkající se ochrany soukromí a zabezpečení. LCOS (Lunduke Computer Operating System), minimalistická desktopová distribuce Linuxu založená na Devuanu s prostředím Xfce vyšla ve verzi 0.5.|E||T|Trump přejmenoval umělou inteligenci, zbavil ji fake jména AI. Teď se přidává i Čína|D|27.9. 19:26|P|Oživeno v 27. září | Donald Trump získal spojence. K používání termínu super inteligence pro AI se přidal i čínský prezident Si Ťin-pching, který byl ...|X|Oživeno v 27. září | Donald Trump získal spojence. K používání termínu super inteligence pro AI se přidal i čínský prezident Si Ťin-pching, který byl v USA na oficiální návštěvě.
-
-Reuters píše, že Si Ťin-pching hovořil o nutnosti zajistit, aby umělá inteligence zůstala pod lidskou kontrolou, a ...
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Recenze telefonu Apple iPhone 18 Pro Max. Evoluce, která baví a zároveň jde víc do hloubky|D|27.9. 17:45|P|Apple iPhone 18 Pro Max navazuje tam, kde loňský model skončil • Do foťáku přidává variabilní clonu pro práci s hloubkou ostrosti • Velký posun nastal...|X|Apple iPhone 18 Pro Max navazuje tam, kde loňský model skončil • Do foťáku přidává variabilní clonu pro práci s hloubkou ostrosti • Velký posun nastal ve výkonu, ale také výdrži baterie
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Ještě přesnější kvantové hodiny, lepší kvantová Fourierova transformace, faktorizace čísla RSA‑896|D|27.9. 17:00|P|Pravidelný přehled novinek z rozsáhlého a rozvíjejícího se oboru kvantových počítačů, který vydáváme ve spolupráci s blogem Qubits.cz.|X|Kvantové počítače
-Zapata Quantum představila platformu Quantum Pilot, cloudový a hardwarově nezávislý nástroj určený pro firmy, které chtějí identifikovat a prioritizovat perspektivní kvantové aplikace bez nutnosti vsadit na konkrétní kvantový hardware. Platforma kombinuje tři hlavní vrstvy: Quantum Graph, která průběžně propojuje výzkum, algoritmy a roadmapy výrobců kvantových počítačů; Quantum Engine, využívající AI a nástroje vyvinuté ve spolupráci s Nvidií k automatickému výběru algoritmů, odhadu potřebných qubitů, hloubky obvodů a výpočetních nároků; a Quantum Assurance, která pomocí formálních verifikačních metod vyvíjených ve spolupráci s University of Maryland ověřuje správnost algoritmů a odhadů ještě před jejich nasazením. Cílem platformy Quantum Pilot je překlenout rostoucí propast mezi rychlým vývojem kvantového hardwaru a schopností podniků určit, které konkrétní aplikace pro ně budou mít skutečnou obchodní hodnotu, kdy budou realizovatelné a jaké zdroje budou vyžadovat.
-Společnost IonQ oznámila významný milník na cestě k fault‑tolerantním kvantovým počítačům: poprvé předvedla kompletní systém dekódování pro kvantovou korekci chyb (QEC) v reálném čase běžící na jediném standardním procesoru bez potřeby specializovaných FPGA nebo ASIC akcelerátorů. V testech využívajících architekturu Walking Cat zpracovával dekodér kvantové obvody v měřítku MegaQuOp, tedy více než 31,5 milionu kvantových operací, až 408 logických qubitů, 1,3 milionu logických měření a stovky tisíc T‑hradel, přičemž režie dekódování přidala jen 0,02 % až 0,3 % dodatečného času. Klíčovým přínosem je potvrzení, že klasická výpočetní infrastruktura nemusí být úzkým hrdlem budoucích fault‑tolerantních kvantových systémů. IonQ využívá dvojici paralelně běžících dekodérů a optimalizace paměti, které umožňují zpracovávat syndromy chyb rychleji, než je generuje samotný kvantový procesor. Výsledek podporuje firemní roadmapu směrem k rozsáhlým logickým kvantovým počítačům a naznačuje, že korekce chyb v milionových výpočetních úlohách může být realizovatelná i na běžném serverovém hardwaru.
-Německo zahájilo další fázi programu Quantum Computing Competition (QCC), v jehož rámci plánuje investovat až 640 milionů eur do vývoje fault‑tolerantních kvantových počítačů s cílem vybudovat do roku 2030 nejméně dva špičkové evropské systémy dostupné i pro průmyslové využití. Do soutěže bylo vybráno šest konsorcií reprezentujících tři hlavní technologické směry: neutrální atomy zastupují projekty LOGIQC vedený společností planqc a ATHENA‑X vedený startupem Peak Quantum; iontové qubity reprezentují konsorcia NFQC‑1k vedené firmou QUDORA a SPARQC kolem startupu Eqcited; supravodivé technologie pak zastupují projekty NEXUS vedený startupem neQxt a SuperPilot vedený společností IQM Germany za účasti společnosti Infineon. Nejvíce detailů zatím zveřejnil projekt NFQC‑1k, který si klade za cíl vybudovat systém s minimálně 1 000 fyzickými a 50 logickými qubity při chybovosti logických hradel pod 0,01 %. Soutěž je koncipována jako vícekolový proces s průběžnými technickými milníky a první demonstrace funkčních systémů musí účastníci předložit do března 2027.
-Společnost Infleqtion oznámila významný milník ve vývoji fault‑tolerantních kvantových počítačů, když na své platformě Sqale úspěšně vytvořila a provázala 30 logických qubitů za použití pouhých 80 fyzických qubitů. Firma se tím podle svých údajů stala první společností využívající neutrální atomy, která dosáhla 30 provázaných logických qubitů v komerčním systému. Demonstrace spojila hardware Sqale se softwarovou vrstvou Superstaq a využila také AI‑asistovaný návrh operace objevený modelem GPT-5.6 Sol, který snížil počet potřebných dvouqubitových hradel přibližně na polovinu. Systém provedl IQP benchmark se zhruba tisíci kvantovými operacemi včetně logických CCZ hradel a výsledný signál byl přibližně tisíckrát silnější než šum na pozadí. Infleqtion zároveň uvedla, že již má několik zákazníků využívajících logické qubity, včetně programu Wellcome Leap Quantum for Bio (Q4Bio), a že tento výsledek představuje klíčový krok na roadmapě vedoucí ke sto logickým qubitům do roku 2028 a tisíci logickým qubitům do roku 2030.
-Kvantové algoritmy a software
-Výzkumníci z IBM Quantum představili novou techniku Spacetime Probabilistic Error Cancellation (Spacetime PEC), která kombinuje probabilistickou kompenzaci chyb (PEC) s detekcí chyb a následným vyřazením chybných běhů (post-selection). Cílem je řešit jeden z hlavních problémů dnešních metod mitigace chyb: prudký nárůst počtu potřebných vzorků s rostoucí složitostí kvantového obvodu. Na 27qubitovém procesoru ibm_aachen metoda při simulaci Isingova modelu snížila režii vzorkování (sampling overhead) až 63× oproti klasickému PEC, přičemž zachovala správnost výsledků i u hlubších obvodů s 648 CZ hradly. Přístup využívá informace o syndromech z detekce chyb k odstranění velké části šumu ještě před samotnou mitigací, čímž vytváří praktický mezistupeň mezi dnešními NISQ systémy a plně fault‑tolerantními kvantovými počítači. Podle IBM jde o další krok na kontinuální cestě od mitigace chyb ke skutečné kvantové korekci chyb a užitečným kvantovým aplikacím.
-Německý startup QC Design představil systém Meridian, specializovanou AI platformu pro návrh fault‑tolerantních kvantových počítačů. Podle zveřejněného whitepaperu dosáhl Meridian ve více než 100 testovacích úlohách napříč 10 rodinami kvantových korekčních kódů mediánového snížení logické chybovosti 14,6× oproti nejlepším dosud publikovaným metodám, přičemž v některých případech bylo zlepšení až 22 000×. Ve srovnání s agentem založeným na OpenAI GPT‑6 Astra vykázal Meridian mediánové snížení logické chybovosti o 43 %, s maximálním zlepšením až 98,4 % (přibližně 63× nižší chybovost). Systém kombinuje specializované AI agenty s platformou Plaquette, která funguje jako realistický simulační „world model“ a ověřuje návrhy vůči reálným hardwarovým chybám, jako jsou dekoherence, přeslechy nebo úniky stavů. Výsledek je dalším příkladem rychle rostoucího využití AI při návrhu kvantových architektur a naznačuje, že specializované AI systémy mohou významně urychlit cestu ke škálovatelným a fault‑tolerantním kvantovým počítačům.
-Q-CTRL oznámila dosud největší experimentální realizaci kvantové Fourierovy transformace (QFT) na skutečném kvantovém hardwaru, když na procesoru IBM Heron R3 (ibm_boston) úspěšně provedla QFT až na 100 fyzických qubitech. Klíčem k výsledku je nová kompilační metoda nazvaná Convolutional QFT, která eliminuje většinu režie spojené s omezenou konektivitou qubitů a umožňuje dosáhnout téměř stejné efektivity jako u ideální plně propojené architektury. Pomocí jediného pomocného qubitu a speciální „konvoluční“ struktury obvodů se podařilo výrazně omezit šíření chyb a udržet správný výstup rozlišitelný od šumu i při 100 qubitech, kde správná frekvence zůstala nejčastěji naměřeným výsledkem v prostoru o dimenzi 2¹⁰⁰. Protože QFT představuje základní stavební blok algoritmů, jako jsou Shorův algoritmus nebo kvantový odhad fáze, je tento výsledek důležitým ukazatelem rostoucí schopnosti dnešních kvantových počítačů vykonávat stále větší a praktičtější algoritmické komponenty ještě před nástupem plně fault‑tolerantních systémů.
-Společnost memQ, spin‑off z University of Chicago zaměřený na kvantové sítě, uvolnila jako open source svůj Distributed Quantum Compiler (DQC), který umožňuje kompilovat a plánovat kvantové programy napříč distribuovanými kvantovými sítěmi složenými z různých typů qubitů a hardwaru od různých dodavatelů. Kompilátor převádí standardní kvantové obvody na distribuované výpočty běžící na více propojených QPU, přičemž zohledňuje reálné charakteristiky systému, jako jsou propojení mezi procesory, délky hradel, rychlost generování provázání nebo topologie sítě. Součástí frameworku jsou nástroje pro modelování různých síťových architektur, automatické rozdělování úloh mezi procesory a simulaci distribuovaného běhu pomocí kvantové teleportace a sdíleného provázání. Cílem je překonat omezení jednotlivých kvantových procesorů a umožnit budoucí škálování prostřednictvím propojených kvantových systémů, podobně jako klasické výpočty využívají clustery a superpočítače. Otevřené zveřejnění nástroje přichází v době rostoucího zájmu o distribuované kvantové výpočty, které jsou stále častěji považovány za jednu z nejrealističtějších cest k rozsáhlým užitečným kvantovým výpočtům.
-Kvantová bezpečnost a kvantové sítě
-CZ.NIC nasadil postkvantové šifrování do služby mojeID. Na PQC spolupracuje s českou firmou Wultra.
-Výzkumníci z University of Science and Technology of China poprvé experimentálně předvedli bezpečné kvantové ověřování polohy zařízení, které využívá kombinaci kvantové mechaniky a relativistických omezení rychlosti přenosu informací. V jejich demonstraci dva ověřovací uzly vzdálené dva kilometry dokázaly potvrdit polohu cílového zařízení s přesností 74,3 metru a chybovostí pouhých 0,27 %, přičemž odpověď musela dorazit do 247,8 nanosekundy. Na rozdíl od GPS nebo běžných geolokačních metod je tento přístup odolný vůči spoofingu, manipulaci s polohovými údaji i útokům typu relay, protože útočník nemůže současně obejít zákaz klonování kvantových stavů a rychlostní limit daný teorií relativity. Autoři zdůrazňují, že cílem není nahradit GPS, ale přidat novou vrstvu důvěryhodnosti k informacím o poloze, což by mohlo najít využití například při ověřování polohy serverů, autorizaci zařízení, sledování dopravy, logistice nebo zabezpečení finančních transakcí.
-Výzkumník Stephen A. Weis ze společnosti Anthropic oznámil úspěšnou faktorizaci čísla RSA‑896, čímž vytvořil nový veřejný rekord v rámci někdejší RSA Factoring Challenge. Výpočet byl podle jeho vyjádření proveden pomocí modelu Claude, který portoval software CADO‑NFS pro běh na GPU, a následně využil až 2 048 grafických karet v době, kdy nebyly vytíženy jinými úlohami. Celý proces trval přibližně 10 dní a spotřeboval asi 30 GPU‑roků výpočetního času. Zajímavé je, ž...
-(Pokracovani na webu)|E||T|3000mm teleobjektiv o hmotnosti 300 gramů? Qivika láká na skládanou optiku pro smartphony|D|27.9. 15:45|P|Teleobjektivy chytrých telefonů se v posledních letech výrazně zlepšily, proti klasické fotografické technice je ale stále omezuje místo. Qivika probl...|X|Teleobjektivy chytrých telefonů se v posledních letech výrazně zlepšily, proti klasické fotografické technice je ale stále omezuje místo. Qivika problém řeší externě: k telefonu přidá 300gramovou skládanou optickou soustavu s 24× zvětšením. Výrobce mluví až o ekvivalentu 3000 mm a fotografování ...
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Final Audio DX10000 CL mají skutečnou diamantovou membránu. Stojí přes 200 tisíc korun|D|27.9. 14:45|P||X|
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Země může uniknout pohlcení rozpínajícím se Sluncem. Nová studie zpochybňuje zažitou předpověď|D|27.9. 13:45|P|Nová studie zpochybňuje zažité předpoklady o budoucím pohlcení naší planety • Slábnoucí sluneční gravitace pravděpodobně umožní Zemi i Marsu přesun dá...|X|Nová studie zpochybňuje zažité předpoklady o budoucím pohlcení naší planety • Slábnoucí sluneční gravitace pravděpodobně umožní Zemi i Marsu přesun dál • Definitivní scénář vývoje však závisí na přesné rychlosti úbytku hmoty hvězdy
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Nebojte se oprávnění v Androidu. Která z nich můžete bez obav povolit a která zase okamžitě zamítnout|D|27.9. 12:45|P||X|
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Budeme polykat elektroniku. Baterie z MIT se v těle rozloží, předtím ale zvládne vysílat i léčit|D|27.9. 11:45|P|Chytré pilulky mohou ze žaludku odesílat naměřené údaje, hlídat užívání léků nebo přímo ovlivňovat činnost organismu. Potřebují však zdroj energie, kt...|X|Chytré pilulky mohou ze žaludku odesílat naměřené údaje, hlídat užívání léků nebo přímo ovlivňovat činnost organismu. Potřebují však zdroj energie, který se uvnitř těla nesmí proměnit v nebezpečný odpad. Vědci z MIT proto vyvinuli baterii, která několik dní napájí elektroniku a poté se rozloží na ...
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Reproduktor pod polštář. Evolveo XSleep je pro ty, kdo usínají u podcastů, nebo u hudby|D|27.9. 10:45|P||X|
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Analýza příspěvků z Redditu pomocí AI upozornila na přehlížené vedlejší účinky léků na hubnutí|D|27.9. 10:00|P|Umělá inteligence odhalila dosud přehlížené vedlejší účinky známých léků • Tisíce uživatelů hlásily únavu výkyvy tělesné teploty i menstruační potíže ...|X|Umělá inteligence odhalila dosud přehlížené vedlejší účinky známých léků • Tisíce uživatelů hlásily únavu výkyvy tělesné teploty i menstruační potíže • Zjištěná data vyžadují další ověření na reprezentativním vzorku pacientů
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Microsoft přestal věřit, že si s jeho AI budete chtít povídat. Vzdává to a Copilota posílá do kanceláře|D|27.9. 09:22|P|Microsoft sloučí osobní a pracovní Copilot do firemního produktu. • Trh osobních chatbotů přenechává OpenAI, Googlu a další konkurenci. • Předběžný př...|X|Microsoft sloučí osobní a pracovní Copilot do firemního produktu. • Trh osobních chatbotů přenechává OpenAI, Googlu a další konkurenci. • Předběžný přístup k novému Copilotu se otevře v příštích týdnech.
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E||T|Jestli jste milovali Doom, budou se vám líbit tyto moderní rychlé střílečky|D|27.9. 05:10|P|Střílečky od dob prvního Dooma ušly pořádný kus cesty. I dnes se ale najde řada moderních her, které se vracejí k původnímu stylu prvotních FPS stříle...|X|Střílečky od dob prvního Dooma ušly pořádný kus cesty. I dnes se ale najde řada moderních her, které se vracejí k původnímu stylu prvotních FPS stříleček, a je z čeho vybírat.
-
-(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+Zdroje: Reptalica, GSMArena, Tom’s Hardware|E||T|Are you a Codex Original?|D|28.9. 00:00|P|We’re collecting real stories of builders, tinkerers, researchers, and creators who are using Codex to do incredible things. If you want to be a part ...|X|We’re collecting real stories of builders, tinkerers, researchers, and creators who are using Codex to do incredible things. If you want to be a part of the next chapter of the Codex Originals program, tell us more about your story and project below.
+Tell us about yourself. *A few sentences about your unique backstory and the type of Codex user you’d describe yourself as.
+1000 characters max.
+Tell us about your project. *A few sentences about what you’re using Codex to build, research or create. It can be personal, professional or otherwise.
+1000 characters max.
+Share some links.Include anything that helps us see your work or your online presence.
+By submitting this form, you consent to being contacted by OpenAI and acknowledge that OpenAI will use your submission in accordance with its Privacy Policy.|E||T|Basis completes a tax workbook 2x faster with GPT-6 Astra|D|28.9. 00:00|P|GPT-6 Astra completed a 50-tab tax workbook twice as fast as GPT-5.6 Sol, and its stronger understanding of user intent gives Basis more confidence in...|X|Basis completes a tax workbook 2x faster with GPT‑6 Astra
+GPT‑6 Astra took 50% less time to finish complex tasks vs. GPT‑5.6 Sol and showed a deeper understanding of user intent.
+Workbook test
+50%
+Less time to complete a 50-tab tax workbook vs. Sol in Basis’s test.
+Internal evaluations
+20%
+Approximate improvement in Basis’s internal evaluation scores.
+Basis(opens in a new window) builds AI agents to automate much of the manual work that accountants do each day, helping them shift their time from repetitive tasks to strategic work. The company’s research focuses on agents that can reliably complete long tasks, and with GPT‑6 Astra, it’s seeing a stronger understanding of what accountants want to accomplish.
+“GPT-6 Astra does a better job of really understanding the intent of the user and the problem.”
+Basis compared GPT‑6 Astra and GPT‑5.6 Sol on a complicated tax workbook with 50 tabs. The task was to complete the workbook accurately and reliably, and GPT‑6 Astra was markedly faster.
+“GPT-6 Astra is able to complete that workbook in half the time that GPT-5.6 Sol is able to.”
+Basis also noted that GPT‑6 Astra makes better decisions at the start of a task, helping Basis’s agents take a more direct path through the work with less time spent correcting mistakes. Troyanovsky says that also makes the model more efficient in its use of tokens.
+Basis also has GPT‑6 Astra adjust how much reasoning it uses as a task progresses, dialing up computation when a step is difficult, and using less when a step is easier. The model can make these adjustments while keeping its cache intact. Troyanovsky says this helps reduce cost and response time, making long-running tasks more economical for Basis and its customers.
+Basis saw about a 20% improvement in its internal evaluation scores with GPT‑6 Astra, driven by better understanding of user intent, including when to ask questions, flag assumptions, and follow instructions.
+Basis evaluates how its agents work and their final answers, including whether they follow templates, consult primary sources for tax questions, and check their own work. GPT‑6 Astra can infer these expectations from a broader context, with fewer explicit instructions.
+That reduces the need for Basis to write rules for individual situations and gives the team more confidence that its agents can handle situations beyond those covered in internal tests.|E|

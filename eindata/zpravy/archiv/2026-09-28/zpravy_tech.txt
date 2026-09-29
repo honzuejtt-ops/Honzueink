@@ -1,3 +1,362 @@
+|T|./blog.sh: blogovací engine, kterému stačí terminál|D|28.9. 22:00|P|Minimalistický blogovací engine ./blog.sh se obejde bez databáze, závislostí a administrace. Píše se z terminálu v Markdownu, komentáře obstará Fedive...|X|První článek na mém blogu vypráví o fotce, kterou jsem v roce 2012 nahrál na Instagram. Odkaz na ni funguje dodnes. Fotka ne. Z téhle drobnosti vzniklo pravidlo, na kterém celý ./blog.sh stojí: text i média patří domů, na vlastní disk, do souborů, které přežijí libovolnou platformu. Všechno ostatní – architektura, funkce i to, co engine schválně neumí – se z něj dá odvodit.
+Soubory místo databáze
+Blogovací engine ./blog.sh se celý ovládá z terminálu. Každý příspěvek je jeden soubor JSON na disku, web je statický build a publikování je příkaz. Pod kapotou běží Ruby – jen standardní knihovna, žádné gemy – obalené bashem. Žádné npm, žádný lockfile. Instalace:
+git clone https://github.com/DanielSnor/blog.sh.git
+cd blog.sh && ./setup.sh
+./blog.sh add
+./blog.sh preview
+Setup je průvodce (mluví anglicky, česky i německy), který odpovědi validuje hned při zadání – překlep v časové zóně, jenž by jinak tiše posunul datum každého článku, prostě nepustí dál. Koncept si prohlédnete přes QR kód na telefonu, publikování lze rozložit do naplánovaných slotů a archiv se prochází fulltextem přímo v terminálu příkazem  browse.
+Píše se v Markdownu, HTML znát netřeba. Parser z textu staví typované bloky: tabulky, kód, úkolové seznamy, fotogalerie z obrázků položených vedle sebe i přepisy chatů. Adresa z YouTube, Vimea, Spotify nebo SoundCloudu se sama promění v přehrávač, žádný vkládací kód se nekopíruje. Referenční příručka syntaxe je součástí každého postaveného webu na adrese /markdown/ a generuje ji sám parser – příklady se proto chovají přesně tak, jak se zachovají ve skutečném článku.
+Čistě terminálové založení přitom v jednom místě odlehčuje – volitelně, a jen na iOS. Stránku /write/ je možné na iPhonu nebo iPadu přidat na plochu a sepsat na ní příspěvek i publikovat ho mimo počítač; engine si před odesláním vytvoří stvrzenku a stránka se pak ptá, jak to dopadlo, dokud nedostane odpověď, takže příspěvek odeslaný beze signálu se najde, jakmile se telefon vrátí na síť. Kdo tuhle volbu zapne, přidává do jinak čistě statické architektury jeden malý přijímací bod – ten ale zůstává kanálem pro odeslání jednoho příspěvku, nestává se webovou administrací. Vlastnosti příspěvku – sérii, štítky, typ – navíc je možno měnit z obrazovky bez otevření celého textu v editoru.
+Proč terminál a ne webová administrace
+Terminál není póza, ale pragmatická volba. Statický web, který obsahuje jen články a média, poběží doslova kdekoliv – na CDN, na GitHub Pages, na nejlevnějším webhostingu i na Raspberry Pi v obýváku. Server nemusí nic vykonávat, jen podávat soubory. Systém s webovou administrací potřebuje běhové prostředí a zpravidla i databázi, takže výběr hostingu se řídí tím, co kde běží.
+Druhý důvod je bezpečnostní. Webová administrace jsou dveře vystavené celému internetu: přihlašovací formulář, který lze zkoušet donekonečna, sezení, která lze ukrást, záplaty, které je nutné nasadit včas. Tuhle hru musí hrát každý systém s veřejnou administrací – patří to k povaze dveří, ne ke kvalitě produktu. Ve výchozím stavu ./blog.sh žádné takové dveře nemá: na serveru se nic nespouští, není kam vkládat kód a není se kde přihlásit. Volitelné publikování z telefonu zmíněné výše je jediná výjimka – vědomý kompromis pohodlí za jeden malý přijímací bod navíc, ne návrat k plnohodnotné administraci.
+Stejná logika pokračuje o patro níž. Bez externích závislostí není co podvrhnout v aktualizaci balíčku, bez pluginů není co záplatovat. Bezpečnostní firma Patchstack napočítala kolem WordPressu za jediný rok bezmála osm tisíc zranitelností, naprostou většinu z nich v rozšířeních třetích stran – samotné jádro je podle téže firmy solidní. To není výtka, ale přirozená daň za ekosystém, který postaví cokoliv; ./blog.sh ji neplatí, protože rozšíření nemá.
+Nakonec tu ani není co ukrást: web nevede uživatelské účty, neukládá hesla ani osobní data návštěvníků. Kdyby se přesto něco pokazilo, je celý web reprodukovatelný z vašeho disku – git, rebuild, deploy, deset minut. Neprůstřelné není nic a server i SSH klíče je pořád třeba udržovat; útočné plochy ale zbývá řádově méně.
+Komentáře obstará Fediverse
+Vlastní komentářový systém engine nemá. Publikovaný článek se automaticky oznámí na Mastodonu, nebo na Bluesky, a odpovědi na oznámení jsou komentáře – prohlížeč čtenáře si je stáhne z veřejného API sítě a zobrazí pod článkem. Diskusi lze i moderovat, a to netradičně: zobrazí se jen odpovědi, které autor na síti ohvězdičkoval, takže moderačním rozhraním je mobilní aplikace, kterou nosí v kapse.
+Kompromis přiznávám otevřeně: komentovat může jen držitel účtu na dané síti a debata žije na síti, ne na webu. Výměnou odpadá spam, správa cizích dat na vlastním disku i cizí JavaScript na stránce.
+Blog jako archiv
+Nejzajímavější kapitola ale není o psaní nových textů, nýbrž o záchraně starých. Engine má 22 importérů: sociální sítě od Facebooku a Instagramu přes Twitter/X a Threads po Mastodon a Bluesky, blogovací platformy od WordPressu přes Medium a Substack po Tumblr, podcasty – a Wayback Machine pro blogy, jejichž platforma už vůbec neexistuje. Přesně tak jsem vytáhl svoje posty z Posterousu, služby mrtvé od roku 2013.
+Importéry zásadně čtou oficiální exporty, ne živá API. Export je totiž ve většině světa právní nárok: nevyprší, nezdraží a nepotřebuje vývojářský účet, který může kdykoli zaniknout. Výjimkou jsou tři zdroje – Bluesky, Tumblr a LiveJournal – které vydají veřejný archiv každému bez tokenu, takže se čtou přímo ze sítě. Při stavbě facebookového importéru mimochodem vypadlo číslo, které stojí za zamyšlení: na referenčním exportu bylo 95 % příspěvků jen zrcadlením obsahu odjinud, z Twitteru, z Posterousu, z celé éry crosspostování. Kopie přežily originály.
+Aby to nebyla jednosměrka, dodává se s enginem i cesta ven: příkaz export vysype celý archiv do markdownových souborů ve struktuře, kterou čte Jekyll a s jedním řádkem konfigurace i Hugo, Eleventy nebo Astro. Kruhový test export–import je součástí testovací sady.
+Pojistky v detailech
+Fotky při vložení do archivu automaticky přijdou o GPS souřadnice, údaje o fotoaparátu a expozici zůstávají. HEIC z iPhonu engine odmítne a vypíše konverzní příkaz, případně jej převede sám. Příkaz doctor vypíše všechny tiché chyby konfigurace najednou: špatnou časovou zónu, widget bez výstupu, deploy nastavený napůl. Build s podezřele menším počtem souborů než minule se nenasadí, protože rozbitý build vypadá pro rsync --delete stejně jako úmysl.
+Přejmenovaný článek nechá na staré adrese trvalé přesměrování – odkaz ve dva roky starém tootu nikdy neskončí na chybě 404. U projektu, který vznikl kvůli link rotu, by cokoli jiného byla ostuda. Nic z toho nejsou efektní hračky – je to důkaz, že za minimalistickou fasádou stojí nástroj provozně promyšlený stejně pečlivě jako mnohem větší publikační platformy.
+Komu je určen a komu ne
+Nástroj ./blog.sh je pro jednoho člověka, který je v terminálu jako doma a chce vlastnit celý svůj archiv včetně toho, co kdy napsal jinam. Není pro více autorů na jednom webu ani pro nikoho, kdo chce webovou administraci. Limity přiznává otevřeně: jedno vestavěné téma (byť s výměnnými barevnými paletami a vlastním CSS), žádné pluginy, žádný newsletter, žádná monetizace.
+Se zavedenými systémy se proto nepřetahuje. WordPress podle statistik W3Techs pohání přes 40 % webu a jeho ekosystém postaví cokoliv od e-shopu po redakci, Wix a Squarespace vyhrávají pohodlím, Ghost je výborná volba pro placené publikování a Hugo zůstává bleskový builder s obrovským výběrem témat. ./blog.sh odpovídá na jinou otázku: co když chci psát z terminálu, mít každý soubor svého blogu na svém disku – a pod jednou střechou i všechno, co jsem za dvacet let napsal na cizí platformy?
+Engine je open source pod licencí MIT. Domovská stránka projektu blogsh.app běží na enginu samotném – každá stránka tam byla postavena a nasazena nástrojem, který popisuje. Druhou instalací je můj blog sean.cz. Zdrojové kódy, dokumentace a issues najdete na GitHubu v repozitáři DanielSnor/blog.sh.|E|
+|T|Optimalizace programů překládaných céčkovým překladačem cc65 pro procesory MOS 6502|D|28.9. 22:00|P|Popíšeme si optimalizace prováděné překladačem cc65, který je určen pro cross překlad programů do assembleru osmibitových mikroprocesorů MOS 6502. Tak...|X|Na článek Překladače jazyka C pro osmibitové domácí mikropočítače Atari dnes navážeme. Popíšeme si některé další důležité vlastnosti céčkového překladače cc65, který je určen pro cross překlad programů do assembleru osmibitových mikroprocesorů MOS 6502. Výsledek překladu s využitím cc65 je následně přeložen assemblerem ca65 a objektové soubory, které tímto postupem vzniknou, jsou slinkovány linkerem ld65 nebo utility cl65 (my dnes použijeme tento druhý nástroj, který z pohledu uživatele dokáže nahradit celý řetězec překladu a linkování).
+Jednotlivé kroky překladu si můžeme naznačit takto:
+- test.c → test.s (či test.asm, pokud preferujete koncovku .asm)
+- test.s nebo test.asm → test.o
+- test.o → test.xex (platí jen v případě, že cílem jsou osmibitové počítače Atari)
+Největší problém celého naznačeného postupu spočívá v tom, že osmibitový mikroprocesor MOS 6502 má poměrně specifickou architekturu s naprostým minimem pracovních registrů a adresovacími režimy, které jsou určeny spíše pro programátory, kteří použijí přímo assembler a nikoli (z tohoto pohledu) vysokoúrovňový jazyk C. Mnohé céčkové programové konstrukce, které lze na moderních architekturách přeložit optimálním způsobem, dopadnou v případě kombinace cc65+MOS 6502 poměrně špatně a mnohdy až katastrofálně (a to i při porovnání s dobovým překladačem jazyka Action!, což ukazuje na kvalitu software, který byl vyvinut před více než čtyřiceti lety).
+V okamžiku, kdy samotnému překladači cc65 „dojde dech“, je mu zapotřebí nějakým způsobem pomoci. Vývojáři přitom mají k dispozici různé metody:
+- Překladači je možné napovědět modifikátorem register
+- Můžeme se pokusit o přepis konstrukcí, které přistupují do operační paměti
+- Překladači lze nařídit, aby namísto běžných lokálních proměnných používal proměnné statické
+- Namísto předávání parametrů do funkcí se použijí globální proměnné (což je škaredé, ale je to daň za optimální chod)
+- Lze přímo manipulovat s akumulátorem A
+- Části programu lze zapsat v assembleru
+Krátké zopakování: příklad, který použijeme pro studium vlastností překladače cc65
+V úvodním článku o překladačích jazyka C pro osmibitový mikroprocesor MOS 6502 jsme si mj. ukázali i následující příklad, který po svém překladu a spuštění zobrazí sprite (konkrétně prvního hráče) a následně postupně mění horizontální pozici tohoto spritu na obrazovce. Po každém posunu se čeká na další „tik“ hodin reálného času, které mají frekvenci 50 nebo 60Hz. Realizace příkladu v jazyku C může vypadat následovně:
+#include <atari.h>
+#include <peekpoke.h>
+ 
+#define RTCLK 0x14
+ 
+void wsync(void) {
+    unsigned char old = PEEK(RTCLK);
+ 
+    while (old == PEEK(RTCLK)) {
+    }
+}
+ 
+void main(void) {
+    unsigned char x = 128;
+ 
+    GTIA_WRITE.hposp0 = x;
+    OS.pcolr0 = (5 << 4) + 8;
+    GTIA_WRITE.grafp0 = 0xFF;
+    GTIA_WRITE.gractl = 0;
+ 
+    while (1) {
+        x++;
+        GTIA_WRITE.hposp0 = x;
+        wsync();
+    }
+}
+Překlad výše uvedeného zdrojového kódu do assembleru provedeme (prozatím) s vypnutými optimalizacemi, a to konkrétně následujícím příkazem:
+$ cc65 -t atari sprite5.c -o sprite5.asm
+Výsledkem překladu bude zdrojový kód reprezentovaný v assembleru ca65, který by měl vypadat následovně:
+;
+; File generated by cc65 v 2.18 - Fedora 2.19-15.fc44
+;
+        .fopt           compiler,"cc65 v 2.18 - Fedora 2.19-15.fc44"
+        .setcpu         "6502"
+        .smart          on
+        .autoimport     on
+        .case           on
+        .debuginfo      off
+        .importzp       sp, sreg, regsave, regbank
+        .importzp       tmp1, tmp2, tmp3, tmp4, ptr1, ptr2, ptr3, ptr4
+        .macpack        longbranch
+        .forceimport    __STARTUP__
+        .export         _wsync
+        .export         _main
+ 
+; ---------------------------------------------------------------
+; void __near__ wsync (void)
+; ---------------------------------------------------------------
+ 
+.segment        "CODE"
+ 
+.proc   _wsync: near
+ 
+.segment        "CODE"
+ 
+        ldx     #$00
+        lda     $0014
+        jsr     pusha
+        jmp     L0024
+L0024:  ldy     #$00
+        ldx     #$00
+        lda     (sp),y
+        jsr     pushax
+        ldx     #$00
+        lda     $0014
+        jsr     toseqax
+        jne     L0024
+        jsr     incsp1
+        rts
+ 
+.endproc
+ 
+; ---------------------------------------------------------------
+; void __near__ main (void)
+; ---------------------------------------------------------------
+ 
+.segment        "CODE"
+ 
+.proc   _main: near
+ 
+.segment        "CODE"
+ 
+        lda     #$80
+        jsr     pusha
+        ldy     #$00
+        ldx     #$00
+        lda     (sp),y
+        sta     $D000
+        ldx     #$00
+        lda     #$58
+        sta     $02C0
+        ldx     #$00
+        lda     #$FF
+        sta     $D00D
+        ldx     #$00
+        lda     #$00
+        sta     $D01D
+        jmp     L003B
+L0039:  ldy     #$00
+        ldx     #$00
+        lda     (sp),y
+        pha
+        clc
+        adc     #$01
+        ldy     #$00
+        sta     (sp),y
+        pla
+        ldy     #$00
+        ldx     #$00
+        lda     (sp),y
+        sta     $D000
+        jsr     _wsync
+L003B:  jmp     L0039
+        jsr     incsp1
+        rts
+ 
+.endproc
+Překlad do assembleru s poznámkami obsahujícími původní zdrojový kód
+Zejména při zkoumání delšího kódu přeloženého z céčka do assembleru může být výhodné, pokud jsou ve vygenerovaném assembleru uvedeny odkazy na původní céčkový zdrojový kód. V praxi to vypadá tak, že je nejdříve v poznámce zapsán (typicky) jeden původní programový řádek v céčku, za nímž následuje sekvence instrukcí mikroprocesoru MOS 6502, do kterých je tento řádek přeložen.
+Odkazy na původní zdrojový kód jsou do assembleru přidány po použití přepínače -T:
+$ cc65 -t atari -T sprite5.c
+Výsledek bude sice stále neoptimální, ale budeme lépe vědět, které části vyžadují naši pozornost:
+;
+; File generated by cc65 v 2.18 - Fedora 2.19-15.fc44
+;
+        .fopt           compiler,"cc65 v 2.18 - Fedora 2.19-15.fc44"
+        .setcpu         "6502"
+        .smart          on
+        .autoimport     on
+        .case           on
+        .debuginfo      off
+        .importzp       sp, sreg, regsave, regbank
+        .importzp       tmp1, tmp2, tmp3, tmp4, ptr1, ptr2, ptr3, ptr4
+        .macpack        longbranch
+        .forceimport    __STARTUP__
+        .export         _wsync
+        .export         _main
+ 
+; ---------------------------------------------------------------
+; void __near__ wsync (void)
+; ---------------------------------------------------------------
+ 
+.segment        "CODE"
+ 
+.proc   _wsync: near
+ 
+.segment        "CODE"
+ 
+;
+; unsigned char old = PEEK(RTCLK);
+;
+        ldx     #$00
+        lda     $0014
+        jsr     pusha
+;
+; while (old == PEEK(RTCLK)) {
+;
+        jmp     L0024
+L0024:  ldy     #$00
+        ldx     #$00
+        lda     (sp),y
+        jsr     pushax
+        ldx     #$00
+        lda     $0014
+        jsr     toseqax
+        jne     L0024
+;
+; }
+;
+        jsr     incsp1
+        rts
+ 
+.endproc
+ 
+; ---------------------------------------------------------------
+; void __near__ main (void)
+; ---------------------------------------------------------------
+ 
+.segment        "CODE"
+ 
+.proc   _main: near
+ 
+.segment        "CODE"
+ 
+;
+; unsigned char x = 128;
+;
+        lda     #$80
+        jsr     pusha
+;
+; GTIA_WRITE.hposp0 = x;
+;
+        ldy     #$00
+        ldx     #$00
+        lda     (sp),y
+        sta     $D000
+;
+; OS.pcolr0 = (5 << 4) + 8;
+;
+        ldx     #$00
+        lda     #$58
+        sta     $02C0
+;
+; GTIA_WRITE.grafp0 = 0xFF;
+;
+        ldx     #$00
+        lda     #$FF
+        sta     $D00D
+;
+; GTIA_WRITE.gractl = 0;
+;
+        ldx     #$00
+        lda     #$00
+        sta     $D01D
+;
+; while (1) {
+;
+        jmp     L003B
+;
+; x++;
+;
+L0039:  ldy     #$00
+        ldx     #$00
+        lda     (sp),y
+        pha
+        clc
+        adc     #$01
+        ldy     #$00
+        sta     (sp),y
+        pla
+;
+; GTIA_WRITE.hposp0 = x;
+;
+        ldy     #$00
+        ldx     #$00
+        lda     (sp),y
+        sta     $D000
+;
+; wsync();
+;
+        jsr     _wsync
+;
+; while (1) {
+;
+L003B:  jmp     L0039
+;
+; }
+;
+        jsr     incsp1
+        rts
+ 
+.endproc
+Zapnutí optimalizací prováděných při překladu
+V předchozích dvou kapitolách jsme mohli vidět, že generovaný kód není v žádném případě dokonalý. Překladač cc65 nabízí přepínač -O pro zapnutí základních optimalizací. Ovšem nečekejme žádné zázraky, nejedná se o clang/LLVM ani o gcc. Navíc je ještě možné dalšími znaky přesněji určit, jaké optimalizace se mají provádět:
+Většinou se zapínají všechny optimalizační volby současně (-Oirs), takže typický příkaz pro překlad vypadá takto:
+$ cc65 -Oirs -t atari -T sprite5.c
+Výsledek je již lepší, ale stále není dokonalý:
+;
+; File generated by cc65 v 2.18 - Fedora 2.19-15.fc44
+;
+        .fopt           compiler,"cc65 v 2.18 - Fedora 2.19-15.fc44"
+        .setcpu         "6502"
+        .smart          on
+        .autoimport     on
+        .case           on
+        .debuginfo      off
+        .importzp       sp, sreg, regsave, regbank
+        .importzp       tmp1, tmp2, tmp3, tmp4, ptr1, ptr2, ptr3, ptr4
+        .macpack        longbranch
+        .forceimport    __STARTUP__
+        .export         _wsync
+        .export         _main
+ 
+; ---------------------------------------------------------------
+; void __near__ wsync (void)
+; ---------------------------------------------------------------
+ 
+.segment        "CODE"
+ 
+.proc   _wsync: near
+ 
+.segment        "CODE"
+ 
+;
+; unsigned char old = PEEK(RTCLK);
+;
+        lda     $0014
+        jsr     pusha
+;
+; while (old == PEEK(RTCLK)) {
+;
+        ldy     #$00
+L0044:  lda     (sp),y
+        cmp     $0014
+        beq     L0044
+;
+; }
+;
+        jmp     incsp1
+ 
+.endproc
+ 
+; ---------------------------------------------------------------
+; void __near__ main (void)
+; ---------------------------------------------------------------
+ 
+.segment        "CODE"
+ 
+.proc   _main: near
+ 
+.segment        "CODE"
+ 
+;
+; unsigned char x...
+(Pokracovani na webu)|E|
 |T|Watch the winning trailer from the Future Vision XPRIZE, The Gifted.|D|28.9. 19:00|P|Watch the winning trailer from the Future Vision XPRIZE, The Gifted.|X|Watch the winning trailer from the Future Vision XPRIZE, The Gifted.
 Earlier this year, we partnered with XPRIZE and Range Media Partners to launch the Future Vision XPRIZE, a global competition calling for films that envision a hopeful, technology-enabled future. Last week in Los Angeles, independent filmmaker Jeff Synthesized was named the grand prize winner for The Gifted.
 Inspired by a deeply personal story, the film centers on an 11-year-old boy who recreates his late mother’s voice and essence out of love and code. What emerges across the town’s networks quietly cares for his entire community — reflecting the filmmaker’s belief that technology’s greatest promise lies in empathy and human connection.
@@ -90,3 +449,27 @@ Jenže telefony mají úložiště nevyměnitelná, jak už bylo řečeno. Poruc
 QLC je zatím potvrzená jen v mobilech Applu
 Zda firma Apple začne nebo už začala používat QLC NAND také ve svých noteboocích a dalších počítačích se systémem macOS, zatím nevíme. I u nich by to byl stejný problém, protože bohužel také mají SSD napevno osazená na desce – je to možná nejhorší z vlastností dnešních počítačů Applu vůbec (jejich SSD je navíc také proprietární, takže ani s možností odpájet a připájet čipy pomocí profesionálního vybavení byste si nepomohli). Desktopový operační systém a software budou úložiště také výrazně více zatěžovat zápisem, například agresivním využíváním stránkovacího souboru (swapu), takže opotřebování může postupovat rychleji než v telefonech.
 Zdroje: Reptalica, GSMArena, Tom’s Hardware|E|
+|T|Are you a Codex Original?|D|28.9. 00:00|P|We’re collecting real stories of builders, tinkerers, researchers, and creators who are using Codex to do incredible things. If you want to be a part ...|X|We’re collecting real stories of builders, tinkerers, researchers, and creators who are using Codex to do incredible things. If you want to be a part of the next chapter of the Codex Originals program, tell us more about your story and project below.
+Tell us about yourself. *A few sentences about your unique backstory and the type of Codex user you’d describe yourself as.
+1000 characters max.
+Tell us about your project. *A few sentences about what you’re using Codex to build, research or create. It can be personal, professional or otherwise.
+1000 characters max.
+Share some links.Include anything that helps us see your work or your online presence.
+By submitting this form, you consent to being contacted by OpenAI and acknowledge that OpenAI will use your submission in accordance with its Privacy Policy.|E|
+|T|Basis completes a tax workbook 2x faster with GPT-6 Astra|D|28.9. 00:00|P|GPT-6 Astra completed a 50-tab tax workbook twice as fast as GPT-5.6 Sol, and its stronger understanding of user intent gives Basis more confidence in...|X|Basis completes a tax workbook 2x faster with GPT‑6 Astra
+GPT‑6 Astra took 50% less time to finish complex tasks vs. GPT‑5.6 Sol and showed a deeper understanding of user intent.
+Workbook test
+50%
+Less time to complete a 50-tab tax workbook vs. Sol in Basis’s test.
+Internal evaluations
+20%
+Approximate improvement in Basis’s internal evaluation scores.
+Basis(opens in a new window) builds AI agents to automate much of the manual work that accountants do each day, helping them shift their time from repetitive tasks to strategic work. The company’s research focuses on agents that can reliably complete long tasks, and with GPT‑6 Astra, it’s seeing a stronger understanding of what accountants want to accomplish.
+“GPT-6 Astra does a better job of really understanding the intent of the user and the problem.”
+Basis compared GPT‑6 Astra and GPT‑5.6 Sol on a complicated tax workbook with 50 tabs. The task was to complete the workbook accurately and reliably, and GPT‑6 Astra was markedly faster.
+“GPT-6 Astra is able to complete that workbook in half the time that GPT-5.6 Sol is able to.”
+Basis also noted that GPT‑6 Astra makes better decisions at the start of a task, helping Basis’s agents take a more direct path through the work with less time spent correcting mistakes. Troyanovsky says that also makes the model more efficient in its use of tokens.
+Basis also has GPT‑6 Astra adjust how much reasoning it uses as a task progresses, dialing up computation when a step is difficult, and using less when a step is easier. The model can make these adjustments while keeping its cache intact. Troyanovsky says this helps reduce cost and response time, making long-running tasks more economical for Basis and its customers.
+Basis saw about a 20% improvement in its internal evaluation scores with GPT‑6 Astra, driven by better understanding of user intent, including when to ask questions, flag assumptions, and follow instructions.
+Basis evaluates how its agents work and their final answers, including whether they follow templates, consult primary sources for tax questions, and check their own work. GPT‑6 Astra can infer these expectations from a broader context, with fewer explicit instructions.
+That reduces the need for Basis to write rules for individual situations and gives the team more confidence that its agents can handle situations beyond those covered in internal tests.|E|

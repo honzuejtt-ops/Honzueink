@@ -1,0 +1,32 @@
+Nejvýkonnější urychlovač světa rozebírají, aby se vrátil ještě lepší
+Technici v CERNu od září vyndávají z tunelu Velkého hadronového urychlovače 28 magnetů. Trojice u detektorů ATLAS a CMS nahradí novými, asi o 40 procent silnějšími. Po přestavbě má stroj od roku 2030 dávat až desetkrát víc srážek částic, než předpokládal jeho původní návrh, oznámil CERN. Na jeho experimentech pracují i čeští fyzici.
+Některé díly urychlovače v CERNu pamatují dobu, kdy se teprve stavěl. Magnety, které soustřeďují svazky částic těsně u detektorů ATLAS a CMS, do něj technici vložili v letech 2005 až 2007. Po skoro dvaceti letech jdou ven.
+Velký hadronový urychlovač, zkráceně LHC, je podle CERNu nejvýkonnější urychlovač částic na světě. Svůj poslední fyzikální běh dokončil koncem června 2026. Pak ho vypnuli a začala přestavba, která má trvat až čtyři roky. V CERNu jí říkají Long Shutdown 3, česky třetí dlouhá odstávka.
+CERN ten den popsal jako konec mimořádné kapitoly ve vědecké cestě urychlovače. Kapitola se ale uzavírá proto, aby mohla začít další.
+Vypnutí tedy neznamená, že by urychlovač skončil. Vrátí se jako vylepšený stroj s názvem HiLumi LHC a pracovat má začít v roce 2030.
+Aby se nové vybavení dalo nainstalovat, musí technici nejdřív rozebrat 1,2 kilometru urychlovače.
+Rozebírat se začalo 7. září
+S rozebíráním začaly týmy 7. září. Pracují na úsecích po obou stranách detektorů ATLAS a CMS. To jsou přístroje, které zaznamenávají, co se při srážkách částic děje.
+Ilustrační foto: Nicola Narracci / Pexels
+Z tunelu má zmizet 28 supravodivých magnetů, které je potřeba vyměnit. Supravodivý znamená, že elektrický proud jimi po silném vychlazení teče bez odporu. Patří mezi ně i trojice magnetů, které těsně u detektorů ATLAS a CMS soustřeďují svazky a pocházejí ještě z doby stavby urychlovače. Právě tyhle trojice CERN nahradí úplně novými.
+Na jejich místo přijde nové vybavení. Celkem se nainstaluje 16 kryostatů a 28 takzvaných kryo-sestav. Kryostat je zjednodušeně řečeno obal, který udržuje magnet v hlubokém chladu.
+Pole silnější zhruba o 40 procent
+Hlavní změnou jsou nové trojice magnetů u detektorů ATLAS a CMS. Jejich cívky jsou z niobu a cínu. Díky nim magnety vytvoří pole o síle 11,3 tesly. Tesla je jednotka, kterou se měří síla magnetického pole.
+💡 Zajímavost: Data ze srážek v LHC se nezpracovávají jen v CERNu, ale v celosvětové síti výpočetních center. Jedno z nich provozuje Praha.
+Podle CERNu bude pole nových magnetů u těchto detektorů asi o 40 procent silnější než u těch dnešních.
+Ilustrační foto: Nicola Narracci / Pexels
+Z šedesáti srážek naráz až dvě stě
+Částice v urychlovači neletí souvislým proudem, ale v balíčcích. Když se dva balíčky potkají, srazí se najednou mnoho protonů.
+Při posledním běhu to bylo zhruba 60 srážek při každém takovém setkání. Po přestavbě jich detektory ATLAS a CMS budou muset zvládnout najednou 140 až 200.
+Desetinásobek z úvodu článku je jiné srovnání. Netýká se jednoho setkání balíčků, ale toho, kolik srážek urychlovač dokáže vytvořit, a fyzici tomu říkají luminozita. HiLumi LHC ji má zvýšit až desetkrát, a to oproti původnímu návrhu stroje, ne oproti poslednímu běhu.
+Čeští fyzici jsou u toho od stavby
+Česko do tohoto příběhu patří už dlouho. Členem CERNu je od roku 1992, nejdřív jako součást Československa a od roku 1993 jako samostatný stát.
+Krátce poté, co padlo rozhodnutí LHC postavit, se čeští fyzici připojili k experimentu ATLAS. Později se čeští vědci zapojili i do experimentů ALICE a TOTEM.
+V Česku k tomu funguje výzkumná infrastruktura CERN-CZ. Hostí ji Fyzikální ústav Akademie věd ČR a mezi její partnery patří mimo jiné Univerzita Karlova a České vysoké učení technické v Praze. Infrastruktura věnuje významnou část svých prostředků vývoji a stavbě nových detektorů.
+První nový magnet v tunelu v roce 2029
+Rozebírání je jen začátek. První kus nové trojice magnetů má do tunelu dorazit na začátku roku 2029.
+Ověřeno z:
+- CERN — CERN bids farewell to the LHC and enters Long Shutdown 3 (29. 6. 2026)
+- CERN — The disconnection of the LHC has begun (17. 9. 2026)
+- CERN, International Relations — Czech Republic, členský stát (stav k 29. 9. 2026)
+- Výzkumné infrastruktury ČR (MŠMT) — Research Infrastructure for Experiments at CERN (CERN-CZ) (stav k 29. 9. 2026)

@@ -1,0 +1,7 @@
+Creality zřejmě chystá novou 3D tiskárnu, která míří tak trochu jinam než její běžné modely. Nenápadná aktualizace programu Creality Print totiž odhalila ještě nepředstavený model mBox. Podle dostupných informací má jít o kompaktní 3D tiskárnu určenou hlavně rodinám s dětmi.
+Malá tiskárna, která má děti přivést ke 3D tisku
+Creality mBox se objevila v seznamu dostupných tiskáren v programu Creality Print verze 7.3.0.6141. Z uniklého snímku je možné poznat malou krychlovitou konstrukci v bílé barvě, průhledné okno a displej v pravém horním rohu. Slicer zároveň uvádí tiskový prostor 153 × 153 × 153 mm.
+Výrobce zatím neprozradil žádné další podrobnosti, cenu ani datum vydání. Zajímavé je ale propojení s aplikací Creality Park, kterou společnost letos vydala pro Android. Ta je od začátku navržena pro děti a jejich rodiče a zároveň podporuje přidání mBoxu.
+Aplikace nabízí knihovnu modelů zaměřených hlavně na STEM (zkratka z anglického science, technology, engineering and math), kdy děti mohou tisknout různé části, které následně sestavují a malují v různých projektech. Rodiče mohou sledovat jejich aktivitu a postup.
+Oficiální představení nové 3D tiskárny „pro děti“ zatím neproběhlo a je možné, že Creality před vydáním své plány ještě upraví. Samotný objev v oficiálním sliceru a její propojení s aplikací Creality Park ale naznačuje, že by se výrobce mohl chystat oslovit i úplné začátečníky a mladší uživatele.
+zdroj: 3Druck.com, Creality

@@ -1,0 +1,18 @@
+Článek
+OpenAI novinku představilo v úterý na své každoroční konferenci Developer Day v San Francisku. Dots má být jedním z nástrojů, který ukáže, jak by mohla vypadat další etapa vývoje umělé inteligence: místo chatbota, se kterým člověk vede konverzaci, dostane k dispozici digitálního pracovníka.
+Představme si například obchodní projekt. Potřeby zákazníka se během práce změní a je potřeba upravit nabídku. Dots může projekt průběžně řídit, nabídku aktualizovat a následně připravit také funkční ukázku k posouzení.
+Právě v tom spočívá hlavní rozdíl oproti klasickému chatbotovi, kterého jsme používali doposud. Uživatel nemusí každý jednotlivý krok zadávat zvlášť. Agent může dostat širší úkol a následně pracovat na jeho jednotlivých částech.
+Dots se navíc může napojit na další nástroje. Uživatelé s ním mohou komunikovat například prostřednictvím Slacku nebo Microsoft Teams. Agent může využívat také Codex a ChatGPT Work k vyhledávání informací, analýze dat, přípravě dokumentů nebo tvorbě softwaru.
+Jinými slovy, AI už nemá být pouze nástrojem, který člověku poradí, jak úkol udělat. Má být schopná část práce skutečně udělat sama.
+Porodní bolesti
+Představení v americkém San Francisku ale neproběhlo úplně bez problémů. Během živých demonstrací nových funkcí agenti opakovaně nedokázali na požádání poskytnout hlasové aktualizace.
+„Momentálně máme zřejmě nějaké potíže s hlasem. Což je poměrně nešťastné,“ přiznal na pódiu šéf Developer Experience v OpenAI Romain Huet poté, co jeden z příkazů selhal.
+Podle jednoho ze zaměstnanců souvisely technické potíže s tím, že společnost najednou nasazovala velké množství aktualizací.
+Sam Altman navzdory tomu Dots označil za zásadní posun v používání umělé inteligence. „Věříme, že agent bude působit jako zcela nový způsob práce s AI. Tohle je skutečná verze AI, jakou jsme si vždy představovali,“ řekl šéf OpenAI během akce, které se osobně zúčastnilo přibližně 2500 lidí.
+Více pravomocí. Ale co bezpečnost?
+Schopnost AI jednat samostatně s sebou ale přináší problém, který u běžného chatbota není zdaleka tak výrazný, poznamenal server Independent. Co když agent udělá něco, co uživatel nechtěl?
+OpenAI proto zdůrazňuje bezpečnostní mechanismy zabudované přímo do Dots. Uživatel si může nastavit vlastní pravidla určující, co agent smí dělat a kdy musí před pokračováním požádat o svolení.
+U citlivých operací má být souhlas člověka povinný. Týká se to například změny hesel nebo trvalého mazání dat.
+Dots navíc podle OpenAI běží na vlastních cloudových počítačích. Společnost zavádí také soukromé nástroje, které mají kontrolovat bezpečnostní rizika, aniž by přitom uchovávaly data firemních zákazníků.
+Právě práce s firemními daty je přitom jedním z důležitých témat, pokud mají AI agenti skutečně začít vykonávat práci ve firmách. Technologičtí manažeři, včetně šéfa Palantiru Alexe Karpa, v posledních měsících upozorňovali na potřebu jistoty, že AI společnosti nebudou data zákazníků uchovávat, zejména v citlivých odvětvích, jako je zdravotnictví nebo finančnictví.
+Dots se zatím nedostává ke všem uživatelům. OpenAI jej při uvedení zpřístupňuje postupně, přičemž dostupnost se liší podle typu účtu a země. Konkrétní datum, kdy bude Dots dostupný uživatelům v Česku, společnost zatím neoznámila.

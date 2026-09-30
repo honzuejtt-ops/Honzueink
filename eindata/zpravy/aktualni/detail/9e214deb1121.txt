@@ -1,0 +1,230 @@
+Na úvodní článek o technologii WebGL a o knihovně OpenGL ES dnes navážeme. Prozatím jsme si popsali základní vlastnosti vykreslovací pipeline a taktéž jsme si ukázali dvojici jednoduchých shaderů určených pro ten nejjednodušší úkol: vykreslení bodu či bodů s neměnnou barvou a velikostí na kreslicí plochu. To je však pochopitelně pouze začátek, takže si dnes popíšeme další důležité vlastnosti OpenGL ES – jaká grafická primitiva lze při vykreslování použít, jak vypadají komplikovanější shadery atd.
+Pochopitelně nesmíme zapomenout ani na další „maličkost“, která je však v praxi velmi důležitá. Jedná se o kontroly, zda všechny operace proběhly korektně (což ovšem ve skutečnosti nemusí být úplně triviální). Dnešní článek je opět zaměřen prakticky, takže si vše ověříme na několika demonstračních příkladech spustitelných přímo ve webovém prohlížeči.
+Skript, na kterém budou postaveny další demonstrační příklady
+Připomeňme si, jak vypadal skript uvedený v závěrečné části úvodního článku. Tento skript vykreslil do kreslicí plochy (canvasu) pětici bodů stejné velikosti i barvy:
+OpenGL ES vyžaduje „úplné“ naprogramování vykreslovací pipeline, takže se ve skriptu nachází zdrojové kódy vertex shaderu i fragment shaderu. Tyto zdrojové kódy jsou přeloženy, je sestaven program celé vykreslovací pipeline a následně se do této pipeline pošlou souřadnice pětice bodů v rovině, čímž se spustí proces jejich rasterizace do barvového bufferu (color buffer). Povšimněte si, že souřadnice bodů se předávají vertex shaderu v parametru nazvaném position, jenž je typu vec2 neboli dvourozměrný vektor. Fragment shader prozatím žádné parametry nezpracovává – pouze za všech okolností nastavuje červenou barvu vykreslování:
+const vertexShaderSource = `
+    attribute vec2 position;
+ 
+    void main() {
+        gl_Position = vec4(position, 0, 1);
+        gl_PointSize = 20.0;
+    }
+`
+ 
+const fragmentShaderSource = `
+    precision mediump float;
+ 
+    void main() {
+        gl_FragColor = vec4(1, 0, 0, 1);
+    }
+`
+ 
+// reference na objekt představující kreslicí plátno umístěné na webové stránce
+const canvas = document.getElementById("web_gl_canvas");
+ 
+// vytvoření a získání kontextu WebGL (3D grafika)
+const gl = canvas.getContext("webgl");
+ 
+// překlad vertex shaderu
+const vertexShader = gl.createShader(gl.VERTEX_SHADER);
+gl.shaderSource(vertexShader, vertexShaderSource);
+gl.compileShader(vertexShader);
+ 
+// překlad fragment shaderu
+const fragmentShader = gl.createShader(gl.FRAGMENT_SHADER);
+gl.shaderSource(fragmentShader, fragmentShaderSource);
+gl.compileShader(fragmentShader);
+ 
+// registrace obou shaderů
+const program = gl.createProgram();
+gl.attachShader(program, vertexShader);
+gl.attachShader(program, fragmentShader);
+gl.linkProgram(program);
+ 
+// souřadnice bodů
+vertexes = [
+   // x   y
+    0.0, 0.0,
+    0.9, 0.9,
+    0.9, -0.9,
+   -0.9, 0.9,
+   -0.9, -0.9,
+];
+ 
+// buffer, do kterého se překopírují souřadnice bodu
+const buffer = gl.createBuffer();
+gl.bindBuffer(gl.ARRAY_BUFFER, buffer);
+gl.bufferData(gl.ARRAY_BUFFER, new Float32Array(vertexes), gl.STATIC_DRAW);
+ 
+// navázání na parametr předávaný do vertex shaderu
+const p = gl.getAttribLocation(program, "position");
+ 
+// seznam předávaný do vertex shaderu
+gl.vertexAttribPointer(p,
+                       2,                                // počet prvků v každém atributu
+                       gl.FLOAT,                         // typ prvků
+                       gl.FALSE,                         // data nejsou normalizována
+                       2*Float32Array.BYTES_PER_ELEMENT, // velikost vertexu v bajtech
+                       0                                 // offset
+);
+gl.enableVertexAttribArray(p);
+ 
+// transformace souřadnic: z normalizovaných souřadnic na souřadnice na plátnu
+gl.viewport(0, 0, canvas.width, canvas.height);
+ 
+// nastavení barvy pro vymazání barvového bufferu
+gl.clearColor(0, 0, 0, 1);
+ 
+// vymazání barvového bufferu
+gl.clear(gl.COLOR_BUFFER_BIT);
+ 
+// spuštění programu
+gl.useProgram(program);
+ 
+// vykreslení pěti bodů s předáním souřadnic
+gl.drawArrays(gl.POINTS, 0, 5);
+Kontrola provedení jednotlivých operací s grafickou pipeline
+Skript uvedený v úvodní části dnešního článku je možné upravit do takové podoby, aby kontroloval každou prováděnou operaci. Na konzoli (dostupnou z webového prohlížeče) se bude vypisovat buď informace o korektně provedené operaci, nebo se v případě chyby vyvolá výjimka. V této kapitole si ukážeme kontroly operací, které souvisí se získáním reference na kreslicí plochu.
+Nejprve si uvedeme pomocnou funkci pro výpis zprávy na konzoli webového prohlížeče:
+function print(message) {
+    console.log(message);
+}
+Získání reference na objekt představující kreslicí plátno může skončit chybou v případě, že tento objekt na stránce chybí:
+// reference na objekt představující kreslicí plátno umístěné na webové stránce
+const canvas = document.getElementById("web_gl_canvas");
+if (!canvas) {
+    throw new Error("Canvas with id 'web_gl_canvas' not found");
+}
+print("Canvas object retrieved");
+Podobně vytvoření kontextu WebGL může skončit chybou, v tomto případě z mnoha důvodů (technologie vůbec nemusí být podporována, je zakázána, prohlížeč pracuje v headless režimu atd.):
+// vytvoření a získání kontextu WebGL (3D grafika)
+const gl = canvas.getContext("webgl");
+if (!gl) {
+    throw new Error("WebGL is not supported or context creation failed");
+}
+print("WebGL context created");
+Kontrola provedení příkazů OpenGL ES
+Poněkud složitější je kontrola, zda jsou provedeny všechny OpenGL ES příkazy. Některé z nich totiž přímo nevrací hodnoty, ale nastavují interní stav vykreslovacího řetězce. Příkladem je překlad shaderu – pokusíme se provést tuto operaci a následně přes getShaderParameter získáme stav shaderu:
+// vytvoření vertex shaderu
+const vertexShader = gl.createShader(gl.VERTEX_SHADER);
+if (!vertexShader) {
+    throw new Error("Failed to create vertex shader.");
+}
+print("Vertex shader created");
+ 
+// překlad vertex shaderu
+gl.shaderSource(vertexShader, vertexShaderSource);
+gl.compileShader(vertexShader);
+if (!gl.getShaderParameter(vertexShader, gl.COMPILE_STATUS)) {
+    const log = gl.getShaderInfoLog(vertexShader);
+    gl.deleteShader(vertexShader);
+    throw new Error(`Vertex shader compile failed: ${log}`);
+}
+print("Vertex shader compiled");
+Podobný test lze provést po překladu a slinkování celého programu, který bude ovládat grafickou pipeline:
+gl.attachShader(program, vertexShader);
+gl.attachShader(program, fragmentShader);
+print("Shaders attached to the program");
+ 
+gl.linkProgram(program);
+if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
+    const log = gl.getProgramInfoLog(program);
+    gl.deleteProgram(program);
+    throw new Error(`Program link failed: ${log}`);
+}
+print("Program linked");
+Ještě si uveďme dva kroky. Prvním z nich je kontrola, zda byl vytvořen buffer OpenGL:
+const buffer = gl.createBuffer();
+if (!buffer) {
+    throw new Error("Failed to create buffer.");
+}
+print("Vertex buffer created");
+Ve druhém kroku zjistíme, zda je přístupný parametr position použitý pro předávání dat z JavaScriptu do vertex shaderu:
+// navázání na parametr předávaný do vertex shaderu
+const p = gl.getAttribLocation(program, "position");
+if (p === -1) {
+    throw new Error("Attribute 'position' not found in shader program");
+}
+print("Attribute 'position' found in shader program")
+Úprava skriptu tak, aby kontrolovala každá prováděná operace
+Podívejme se nyní na celkovou úpravu skriptu z úvodní části dnešního článku. Každá prováděná operace je kontrolována a buď dojde k vyhození výjimky (a ukončení skriptu) nebo k výpisu informace o provedené operaci na konzoli prohlížeče. Úspěšné provedení skriptu by kromě vykreslení pětice bodů na kreslicí plochu mělo na konzoli vypadat následovně:
+Canvas object retrieved
+WebGL context created
+Vertex shader created
+Vertex shader compiled
+Fragment shader created
+Fragment shader compiled
+Program created
+Shaders attached to the program
+Program linked
+Vertex buffer created
+Vertex buffer filled-in by vertexes
+Attribute 'position' found in shader program
+Celý skript je nyní méně přehledný a delší – namísto 81 řádků je zapsán na 142 řádcích:
+const vertexShaderSource = `
+    attribute vec2 position;
+ 
+    void main() {
+        gl_Position = vec4(position, 0, 1);
+        gl_PointSize = 20.0;
+    }
+`
+ 
+const fragmentShaderSource = `
+    precision mediump float;
+ 
+    void main() {
+        gl_FragColor = vec4(1, 0, 0, 1);
+    }
+`
+ 
+function print(message) {
+    console.log(message);
+}
+ 
+// reference na objekt představující kreslicí plátno umístěné na webové stránce
+const canvas = document.getElementById("web_gl_canvas");
+if (!canvas) {
+    throw new Error("Canvas with id 'web_gl_canvas' not found");
+}
+print("Canvas object retrieved");
+ 
+// vytvoření a získání kontextu WebGL (3D grafika)
+const gl = canvas.getContext("webgl");
+if (!gl) {
+    throw new Error("WebGL is not supported or context creation failed");
+}
+print("WebGL context created");
+ 
+// vytvoření vertex shaderu
+const vertexShader = gl.createShader(gl.VERTEX_SHADER);
+if (!vertexShader) {
+    throw new Error("Failed to create vertex shader.");
+}
+print("Vertex shader created");
+ 
+// překlad vertex shaderu
+gl.shaderSource(vertexShader, vertexShaderSource);
+gl.compileShader(vertexShader);
+if (!gl.getShaderParameter(vertexShader, gl.COMPILE_STATUS)) {
+    const log = gl.getShaderInfoLog(vertexShader);
+    gl.deleteShader(vertexShader);
+    throw new Error(`Vertex shader compile failed: ${log}`);
+}
+print("Vertex shader compiled");
+ 
+// vytvoření fragment shaderu
+const fragmentShader = gl.createShader(gl.FRAGMENT_SHADER);
+if (!fragmentShader) {
+    throw new Error("Failed to create fragment shader.");
+}
+print("Fragment shader created");
+ 
+// překlad fragment shaderu
+gl.shaderSource(fragmentShader, fragmentShaderSource);
+gl.compileShader(fragmentShader);
+if (!gl.getShaderParameter(fragmentShader, gl.COMPILE_STATUS)) {
+    const log = gl.getShaderInfoLog(fragmentShader);
+    gl.deleteShader(...
+(Pokracovani na webu)

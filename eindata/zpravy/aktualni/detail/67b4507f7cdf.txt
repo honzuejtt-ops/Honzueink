@@ -1,0 +1,3 @@
+AMD už brzy začne prodávat nové serverové a HPC procesory řady Venice. Epycy 9006 nabídnou jádra Zen 6/6c vyrobená 2nm procesem u TSMC a nové zdvojené IOD čiplety spoléhající na 6nm proces. Ve srovnání s předchozími čipy zde zůstává podpora pamětí DDR5, ale procesory nově disponují dvakrát ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

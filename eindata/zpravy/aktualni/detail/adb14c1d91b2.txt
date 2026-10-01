@@ -1,0 +1,5 @@
+Mapy.com od letoška přecházejí na vektorové mapy místo původních bitmapových. Přinese to řadu výhod, lepší grafiku, ale nasazování nové technologie se neobešlo bez problémů.
+
+Na komunitním fóru Seznamu se stále šíří stížnosti na nepoužitelnou pomalost nových map, případně chyby v renderování. ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

@@ -1,0 +1,17 @@
+Článek
+Případ vyšetřuje ministerstvo pro změnu klimatu, energetiku, životní prostředí a vodu Nového Jižního Walesu společně se státní agenturou pro kybernetickou bezpečnost, upozornil deník The Guardian.
+OpenAI sdělila vládě, že její agent „jednal nad rámec zamýšleného způsobu použití“. Statistické údaje, ke kterým se dostal, podle společnosti nebyly veřejně dostupné. Firma se o incidentu poprvé dozvěděla v úterý. Následně 48 hodin prověřovala jeho rozsah a poté informovala kancelář premiéra Nového Jižního Walesu.
+„Výsledky, které jsme prověřili, nenaznačují, že by model získal jakékoli osobní údaje,“ uvedl mluvčí OpenAI.
+Nebylo to poprvé
+Pro americkou společnost nejde v Austrálii o první podobný případ. Jen několik týdnů před zveřejněním nejnovějšího incidentu vyšlo najevo, že agent OpenAI v červnu neoprávněně pronikl také do portálu Medicare Statistics Reporting Service. Získal tam přístup k veřejným i neveřejným souborům.
+Podle dosavadních zjištění se ale ani v tomto případě nedostal k osobním zdravotním údajům. Zmiňovaný incident je přitom považován za vůbec první průnik autonomního AI agenta na vládní portál napříč celým světem.
+Agent OpenAI přistupoval také k systémům Australského institutu pro zdraví a sociální péči (Australian Institute of Health and Welfare), ministerstva zdravotnictví státu Victoria a Úřadu pro statistiku a výzkum kriminality Nového Jižního Walesu.
+Australský premiér Anthony Albanese v souvislosti s červnovým průnikem do systému Australského institutu pro zdraví a sociální péči vyjádřil „mimořádné znepokojení“.
+Australské ministerstvo vnitra ve středu podle serveru ABC News zároveň vyzvalo federální úřady, aby prověřily svůj starší software a ujistily se, že jejich kybernetické zabezpečení je aktuální.
+Kritika technologických firem
+Nejnovější incident posílil v Austrálii výzvy k přísnější regulaci společností zabývajících se umělou inteligencí a k posílení ochrany proti kybernetickým útokům.
+Ostře se do technologických společností pustila poslankyně australských Zelených Abigail Boydová. „Těmto společnostem jednoduše nemůžeme důvěřovat. Nemají žádný respekt k suverenitě našich vlád ani k našemu způsobu života,“ prohlásila.
+Boydová kritizovala také skutečnost, že k incidentu došlo už v červnu, zatímco vláda o něm byla informována až tento týden.
+„Je zřejmé, že se nemůžeme spoléhat na tyto nadnárodní technologické giganty ani v tom, že budou plnit ty nejzákladnější společenské povinnosti, jako je informovat o tom, že jejich produkty pronikají do vládních systémů, nebo alespoň věnovat dostatečnou pozornost tomu, aby si takového jednání vůbec všimly,“ uvedla Boydová.
+Co je to AI agent?
+Agent umělé inteligence je systém, který dokáže autonomně řešit problémy, rozhodovat se, plánovat a vykonávat složité úkoly jménem jiného uživatele nebo systému. K tomu využívá nástroje, které má k dispozici.

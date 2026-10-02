@@ -1,0 +1,9 @@
+Microsoft v těchto dnech začal distribuovat aktualizaci pro Windows 11 s označením 26H2. Na počítačích s instalovanou verzí 24H2 nebo 25H2 jde o balíček velký pouhých 174 KB, který zapíná funkce stažené během roku v měsíčních aktualizacích. Patří mezi ně přepracovaná nabídka Start nebo lépe přizpůsobitelný hlavní panel. S instalací se navíc restartuje podpora, u edic Home a Pro na 24 měsíců.
+Jeden rychlý restart
+Verze 24H2, 25H2 a 26H2 sdílejí servisní větev se společným kódem, takže novinky do počítačů se stahovaly průběžně a balíček je jen aktivuje. Samotná aktualizace tudíž vyžaduje jen jeden krátký restart.
+Nový cyklus podpory znamená pro edice Home a Pro prodloužení do října 2028 a pro Enterprise a Education o 36 měsíců do října 2029. Domácí uživatelé 24H2 by s přechodem neměli otálet, protože podpora této verze končí 13. října 2026.
+Start, panel a Průzkumník
+Nabídka Start dostala novou sekci se všemi aplikacemi, které lze řadit do kategorií nebo do mřížky. Rozvržení je možné přizpůsobit velikosti displeje a měnit jde i velikost nabídky. Všechny dříve pevné kategorie aplikací, jako Nedávné nebo Doporučené, lze vypnout a nabídku Start si tak přeměnit do stavu, který připomíná třeba Windows 7.
+Hlavní panel lze nově umístit nahoru, doleva či doprava a zmenšit jeho výšku nebo změnit zarovnání ikon. Panel navíc ukazuje průběh podporovaných AI agentů – prvním je Researcher v Copilotu, který dá vědět, až práci dokončí. Průzkumník souborů umí pomocí AI akcí upravit podporované obrázky nebo shrnout dokument. Shrnutí souborů na OneDrivu a SharePointu bez jejich otevření ale vyžaduje předplatné Microsoft 365 a licenci Copilot. Rovněž přibyla podpora archivních formátů uu, cpio, xar a balíčků NuGet.
+Aktualizaci stahujte standardní cestou pomocí Windows Update, případně lze stáhnout kompletní ISO systému ve verzi 26H2.
+Zdroj: Microsoft

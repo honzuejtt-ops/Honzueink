@@ -1,0 +1,18 @@
+Fyzici z českého ústavu objevili třetí druh magnetů a získali cenu
+Fyzika dlouho znala jen dva základní druhy magnetů. Trojice vědců spjatá s českým Fyzikálním ústavem ukázala, že existuje i třetí, a čeští fyzici za to poprvé získali prestižní evropskou cenu. Může z toho být rychlejší a úspornější paměť do počítačů.
+Běžné magnety, které známe z domova, najdeme třeba v pevných discích nebo elektromotorech a fyzici jim říkají feromagnety. Vedle nich znali už jen jeden další základní druh. Na tomhle dělení stálo chápání magnetů zhruba sto let.
+Libor Šmejkal, Tomáš Jungwirth a Jairo Sinova teď ukázali, že příroda má třetí základní podobu magnetismu. Jmenuje se altermagnetismus. Za jeho objev převzali 22. září ve Štýrském Hradci evropskou cenu Europhysics Prize. Všichni tři byli v době objevů spojeni s Fyzikálním ústavem Akademie věd.
+Od nápadu k potvrzení za pár let
+V roce 2019 trojice zveřejnila, že dosavadní popis magnetů přehlížel celou skupinu materiálů, které jako celek nemají výslednou magnetizaci. O dva roky později sestavila systematické roztřídění magnetických stavů hmoty. Z něj vyplynulo, že altermagnetismus existuje a že ho mohou mít stovky materiálů.
+Teorie obstála. Existenci altermagnetických stavů postupně potvrdily různé metody, mimo jiné spektroskopie a měření elektrického proudu v materiálu.
+Proč se to hodí počítačům
+Obyčejné magnety kolem sebe vytvářejí rozptýlené magnetické pole. To omezuje, jak moc se součástky dají zmenšovat a zrychlovat. Altermagnety nemají výslednou magnetizaci, takže se sousední součástky navzájem magneticky neovlivňují.
+💡 Zajímavost: Podle Evropské fyzikální společnosti je Evropa kolébkou nového oboru, do kterého se zapojily týmy v Evropě, Severní Americe i Asii.
+Podle Akademie věd tak otevírají cestu k ultrarychlým a mimořádně energeticky úsporným počítačovým pamětem. Mají také značný potenciál pro budoucí výkonné počítače a hardware pro umělou inteligenci. Hotový výrobek to ale zatím není.
+Cena s nobelovskou pověstí
+Objevu si všimli i jinde. Prestižní časopis Science ho zařadil mezi průlomy ve fyzice roku 2024.
+Ředitel Fyzikálního ústavu Michael Prouza k ceně řekl, že už čtrnáct jejích laureátů získalo Nobelovu cenu. Podle něj je to pozoruhodné, protože cena existuje teprve zhruba padesát let. Prouza k tomu dodal, že ocenění je snad i příslibem něčeho ještě většího.
+Ověřeno z:
+- Akademie věd ČR — tisková zpráva Čeští fyzici převzali prestižní EPS Europhysics Prize (23. 9. 2026)
+- Fyzikální ústav AV ČR — Europhysics Prize goes to the Czech Republic for the first time (2026)
+- Johannes Gutenberg University Mainz — Science lists the discovery of altermagnetism as scientific breakthrough in physics in 2024

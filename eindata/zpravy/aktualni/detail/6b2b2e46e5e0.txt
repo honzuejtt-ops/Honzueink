@@ -1,0 +1,3 @@
+Alibaba zveřejnila nový obrazový model Qwen-Image-2.1. Vizuální část má přibližně sedm miliard parametrů, obrázky vytváří nativně ve 2K a při úpravách dokáže pracovat až s deseti předlohami. Nejdůležitější novinkou ale není další přírůstek v rozlišení nebo žebříčku kvality. Model umí generovat a ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)

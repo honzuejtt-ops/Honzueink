@@ -1,4 +1,53 @@
 |T|Chyba|D|03.10. 12:00|P|Něco se pokazilo.|X|HTTPSConnectionPool(host='www.zive.cz', port=443): Read timed out. (read timeout=10)|E|
+|T|Konečně generátor pro grafiky. První AI se naučila vytvářet průhledné obrázky|D|03.10. 11:45|P|Alibaba zveřejnila nový obrazový model Qwen-Image-2.1. Vizuální část má přibližně sedm miliard parametrů, obrázky vytváří nativně ve 2K a při úpravách...|X|Alibaba zveřejnila nový obrazový model Qwen-Image-2.1. Vizuální část má přibližně sedm miliard parametrů, obrázky vytváří nativně ve 2K a při úpravách dokáže pracovat až s deseti předlohami. Nejdůležitější novinkou ale není další přírůstek v rozlišení nebo žebříčku kvality. Model umí generovat a ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Galerie ze soboty na konferenci LinuxDays 2026|D|03.10. 11:22|P|V sobotu 4. října probíhá v Praze první den letošní konference LinuxDays. Podívejte se, jak vypadá akce, na které můžete navštívit přednášky, workshop...|X|Fotogalerie: LinuxDays 2026 sobota
+Předchozí
+/
+Další
+Fotogalerie: LinuxDays 2026 sobota
+Předchozí
+/
+Následující
+ZAVŘÍT REKLAMU
+FOTOGALERIE BUDE POKRAČOVAT ZA
+5 s
+Předchozí
+Následující
+Další
+Předchozí
+Sdílet galerii
+Další galerie
+GNOME 51
+Raspberry Pi Desktop
+Arduino Ventuno Q
+NetBSD 64bitový desktop
+NetBSD 32bitový desktop
+Renovace disketové mechaniky Atari 1050.
+Nejnovější články
+Galerie ze soboty na konferenci LinuxDays 2026
+Linuxové jádro dostává velké optimalizace pro AMD, čistka ARM32 bude možná později
+Nintendo Switch 2: hybridní konzolová evoluce pokračuje
+WebGL: tvorba 3D grafiky s využitím programovatelné vykreslovací pipeline (2. část)
+Ransomware nezačíná zašifrováním dat: co může SOC vidět před útokem
+Softwarová sklizeň (30. 9. 2026): moderní multiplatformní náhrada za PuTTY
+Petr Krčmář, Root.cz|E|
+|T|Vision se vrací a s ním Ultron. Finální trailer seriálu VisionQuest láká na říjnovou premiéru|D|03.10. 10:45|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Boeing 787 při vzletu z Mnichova současně brzdil i zrychloval. Vyšetřování pokračuje|D|03.10. 09:45|P|Rozjetý Boeing 787 Dreamliner v Mnichově při vzletu současně brzdil • Letoun přejel ranvej a odlepil se až z travnaté plochy za ní • Vyšetřovatelé pro...|X|Rozjetý Boeing 787 Dreamliner v Mnichově při vzletu současně brzdil • Letoun přejel ranvej a odlepil se až z travnaté plochy za ní • Vyšetřovatelé prověřují technickou závadu i neúmyslnou chybu pilota
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|The Last of Us má v přípravě rovnou dvě nové hry. Údajně ožije i dobrodružná série Uncharted|D|03.10. 08:45|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Evropa na tom není zle a stále je silná. Posilovat bude hlavně východ, říká šéf japonského giganta|D|03.10. 07:45|P|Panasonic se v roce 2022 rozdělil na tři firmy poté, co ho trápila neefektivita a byrokracie • . • Nový šéf Panasonic Connect pro Evropu Kentaro Ikeda...|X|Panasonic se v roce 2022 rozdělil na tři firmy poté, co ho trápila neefektivita a byrokracie • . • Nový šéf Panasonic Connect pro Evropu Kentaro Ikeda popisuje, jak firmě rostou dodávky do obranného sektoru i výroby čipů. • Odolné notebooky Toughbook mají v Evropě přes polovinu trhu, firmě ale ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|To spíš vyhrajete hlavní výhru ve Sportce. Čech nacpal Slunce, ISS a letadlo do jediné fotky, výsledek ocenila NASA|D|03.10. 06:45|P||X|
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Černobyl vypnul jaderné elektrárny, Fukušima je zamkla a Itálie se k nim po 36 letech naopak vrátí|D|03.10. 05:45|P|Itálie po čtyřech dekádách schválila rámec pro obnovu jaderné energetiky • Zemi k tomuto kroku vedou extrémně vysoké ceny elektrické energie • Výstavb...|X|Itálie po čtyřech dekádách schválila rámec pro obnovu jaderné energetiky • Zemi k tomuto kroku vedou extrémně vysoké ceny elektrické energie • Výstavbu nových modulárních reaktorů však doprovází řada překážek
 
 (Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|

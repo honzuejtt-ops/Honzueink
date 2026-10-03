@@ -8,7 +8,16 @@ import trafilatura
 import re
 import time
 import hashlib
+import unicodedata
 from datetime import datetime, timedelta
+
+# Normalizace titulku pro deduplikaci — bez diakritiky, interpunkce a velikosti písmen.
+def norm_titulek(t):
+    t = unicodedata.normalize('NFKD', t)
+    t = ''.join(c for c in t if not unicodedata.combining(c))
+    t = t.lower()
+    t = re.sub(r'[^a-z0-9 ]', ' ', t)
+    return re.sub(r'\s+', ' ', t).strip()
 
 # Kořenová cesta k SD kartě (nebo lokální složce při spuštění v CI/locálně)
 SD_CESTA = os.environ.get('SD_CESTA', './eindata')
@@ -26,6 +35,57 @@ def get_with_retry(url, headers=None, timeout=10, retries=3, backoff=1.2):
             if attempt < retries - 1:
                 time.sleep(backoff * (attempt + 1))
     raise last_err
+
+# --- ČIŠTĚNÍ TEXTU ČLÁNKU OD BALASTU ---
+# Řádky, které samy o sobě nic neznamenají (navigace, galerie, reklamy...)
+_JUNK_LINES = {
+    "článek", "clanek", "téma", "tema", "témata", "temata",
+    "související", "souvisejici", "přečtěte si také", "prectete si take",
+    "reklama", "inzerce", "sdílet", "sdilet", "sdílet galerii",
+    "komentáře", "komentare", "diskuze",
+    "předchozí", "predchozi", "následující", "nasledujici", "další", "dalsi",
+    "zavřít reklamu", "zavrit reklamu", "další galerie", "dalsi galerie",
+    "všechny články", "vsechny clanky", "nejnovější články", "nejnovejsi clanky",
+}
+# Fráze, které se mohou vyskytnout kdekoliv v textu
+_JUNK_PHRASES = [
+    "video se připravuje",
+    "článek je uzamčen",
+    "za paywallem",
+    "paywallem/předplatným",
+    "z tohoto webu nelze obsah přímo vyčíst",
+    "chyba při stahování",
+    "pokračování na webu",
+    "pokracovani na webu",
+    "zavřít reklamu",
+    "fotogalerie bude pokračovat",
+]
+
+def ocisti_text(t):
+    if not t:
+        return t
+    vystup = []
+    for radek in t.splitlines():
+        s = radek.strip()
+        if not s:
+            vystup.append("")
+            continue
+        klic = s.lower().strip(" .,:;|·-–—/")
+        if klic in _JUNK_LINES:
+            continue
+        if any(p in klic for p in _JUNK_PHRASES):
+            continue
+        if klic.startswith("(pozn"):            # naše vlastní poznámky
+            continue
+        if re.match(r"^(téma|témata|článek|rubrika|štítky|tagy|zdroj)\s*:", s, re.IGNORECASE):
+            continue                            # meta řádky typu "Téma: ..."
+        if re.fullmatch(r"\d+\s*s", klic):      # odpočty, např. "5 s"
+            continue
+        if re.fullmatch(r"[^A-Za-z0-9]+", s):   # řádky jen z interpunkce, např. "/"
+            continue
+        vystup.append(s)
+    txt = "\n".join(vystup)
+    return re.sub(r"\n{3,}", "\n\n", txt).strip()
 
 # --- FUNKCE PRO VYTĚŽENÍ TEXTU PŘÍMO Z ČLÁNKU (Trafilatura) ---
 def stahni_text_clanku(url, perex):
@@ -85,14 +145,17 @@ def stahni_zpravy(rss_url, limit=15):
             else:
                 datum_cas = datetime.now().strftime("%d.%-m. %H:%M")
 
-            # Perex (description)
+            # Perex (description) — očištěný a zploštělý na jeden řádek
             perex_el = item.find('description')
             perex_raw = perex_el.get_text().strip() if perex_el else ""
-            perex = BeautifulSoup(perex_raw, "html.parser").get_text()
+            perex = ocisti_text(BeautifulSoup(perex_raw, "html.parser").get_text())
+            perex = re.sub(r"\s+", " ", perex).strip()
             perex_kratky = (perex[:150] + "...") if len(perex) > 150 else perex
             
-            # Plný text
-            text_clanku = stahni_text_clanku(odkaz, perex) if odkaz else perex
+            # Plný text — očištěný od balastu; když zůstane příliš krátký, použijeme perex
+            text_clanku = ocisti_text(stahni_text_clanku(odkaz, perex)) if odkaz else perex
+            if len(text_clanku) < 40:
+                text_clanku = perex
             vysledny_text += f"|T|{titulek}|D|{datum_cas}|P|{perex_kratky}|X|{text_clanku}|E|"
             
         return vysledny_text
@@ -402,8 +465,8 @@ def stahni_zpravy_multi(zdroje, celkovy_limit=10, exclude_titulky=None, max_age_
     max_age_days: kolik dní zpětně se mají zprávy stahovat.
     """
     vybrane = []  # (dt, titulek, blok)
-    # Inicializujeme titulky rovnou s vyloučenými - při shodě se blok přeskočí
-    titulky = set(exclude_titulky) if exclude_titulky else set()
+    # Inicializujeme titulky rovnou s vyloučenými - porovnáváme normalizovaně
+    titulky = set(norm_titulek(t) for t in exclude_titulky) if exclude_titulky else set()
     pocet_unikat = 0
     for rss_url, limit_per_source in zdroje:
         if pocet_unikat >= celkovy_limit:
@@ -419,7 +482,8 @@ def stahni_zpravy_multi(zdroje, celkovy_limit=10, exclude_titulky=None, max_age_
             # Placeholder z neúspěšného zdroje nepatří mezi skutečné články
             if titulek in ("Žádné zprávy", "Chyba"):
                 continue
-            if titulek in titulky:
+            t_klic = norm_titulek(titulek)
+            if t_klic in titulky:
                 duplikaty += 1
                 continue
             dt = parse_datum_na_datetime(b["datum_raw"])
@@ -429,7 +493,7 @@ def stahni_zpravy_multi(zdroje, celkovy_limit=10, exclude_titulky=None, max_age_
                 continue
             
             vybrane.append((dt, titulek, b["blok"]))
-            titulky.add(titulek)
+            titulky.add(t_klic)
             pridano += 1
             pocet_unikat += 1
             if pocet_unikat >= celkovy_limit:
@@ -707,8 +771,9 @@ if __name__ == "__main__":
 
     # Obojsměrná deduplikace Svět↔ČR — nenecháme stejný článek ve dvou rubrikách
     cr_titulky = {b["titulek"] for b in extrahuj_bloky(cr_data[1])}
+    cr_titulky_norm = {norm_titulek(t) for t in cr_titulky}
     svet_bloky = extrahuj_bloky(svet_data[1])
-    svet_filtrovane = [b for b in svet_bloky if b["titulek"] not in cr_titulky]
+    svet_filtrovane = [b for b in svet_bloky if norm_titulek(b["titulek"]) not in cr_titulky_norm]
     if len(svet_filtrovane) < len(svet_bloky):
         print(f"  Dedup Svět←ČR: odebráno {len(svet_bloky) - len(svet_filtrovane)} duplikátů")
         # Přebudujeme index i plná data, aby byly konzistentní (původní index měl všechny články)

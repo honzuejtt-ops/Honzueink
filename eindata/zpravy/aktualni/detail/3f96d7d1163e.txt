@@ -6,10 +6,10 @@ Arduino Ventuno Q
 NetBSD 64bitový desktop
 NetBSD 32bitový desktop
 Renovace disketové mechaniky Atari 1050.
+KDE Plasma 6.8 za 11 dní, efektivněji běžící Intel Arc Battlemage
 Galerie ze soboty na konferenci LinuxDays 2026
 Linuxové jádro dostává velké optimalizace pro AMD, čistka ARM32 bude možná později
 Nintendo Switch 2: hybridní konzolová evoluce pokračuje
 WebGL: tvorba 3D grafiky s využitím programovatelné vykreslovací pipeline (2. část)
 Ransomware nezačíná zašifrováním dat: co může SOC vidět před útokem
-Softwarová sklizeň (30. 9. 2026): moderní multiplatformní náhrada za PuTTY
 Petr Krčmář, Root.cz

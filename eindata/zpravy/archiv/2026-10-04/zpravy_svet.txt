@@ -1,0 +1,17 @@
+|T|Experti zhodnotili nejzávažnější rizika spojená s AI|D|04.10. 00:55|P|Několik stovek odborníků na umělou inteligenci zhodnotilo, jaká jsou největší rizika, která lze ve spojitosti s AI očekávat ve výhledu do roku 2030. J...|X|Rizika spojená s rychlým rozvojem umělé inteligence jsou četná. Na tom se shodli odborníci již dříve během tohoto roku – předtím, než začaly vyplouvat na povrch problémy s rebelujícími AI agenty a hackujícími programy.
+V rámci studie s názvem Prioritizace rizik od umělé inteligence, jež byla uveřejněna v létě letošního roku, oslovil výzkumný tým 272 mezinárodních expertů na umělou inteligenci, aby vyhodnotili celkem 24 rizik AI na základě jejich pravděpodobnosti a závažnosti škod.
+Na studii se podíleli odborníci z výzkumného týmu MIT Future Tech (USA) a University of Queensland (Austrálie).
+Osmnáct ku pěti
+Odborníci v rámci studie využili proces, který shromažďuje odborné posudky v několika kolech, aby definovali oblasti případných shod i neshod. Zjištěná hodnocení pak porovnali ve dvou scénářích – jedním z nich bylo zachování běžného stavu, kdy budou organizace a firmy pokračovat ve stávajícím přístupu k umělé inteligenci. Druhým bylo zaměření na cílené a efektivní zmírnění rizik spojených s umělou inteligencí.
+Při zachování běžného stavu – tedy standardního přístupu bez zavádění opatření – vědci usoudili, že 18 z celkových 24 rizik by mělo průběžně do roku 2030 alespoň 10% riziko katastrofických následků.
+Ty byly ve studii definovány jako škody, které zahrnují více než milion úmrtí, finanční ztráty vyšší než 100 miliard dolarů (cca 2,13 bilionu korun) nebo srovnatelné nehmotné škody, vše s přímým vlivem AI.
+Scénář zaměřený na cílené zmírňování dopadů ve spojitosti s AI výše uvedená rizika zmírnil, přesto je zcela neodstranil. Zůstalo pět hrozeb, ve kterých i tak stále existuje minimálně 10% riziko výše uvedených katastrofických následků.
+Problémové oblasti
+Umělá inteligence s nebezpečnými schopnostmi – AI systémy se vyvinou do takové míry, že získají dostatečný potenciál na to páchat výrazné škody. Mohly by manipulovat lidmi, provádět kybernetické útoky, pomáhat s vývojem nebezpečných zbraní nebo se samy vyvíjet a šířit.
+„To vše jsou věci, které lidé mohli dělat i dříve, ale nyní je lze dělat s pomocí AI mnohem snadněji,“ uvedl k tomu Peter Slatery, vedoucí výzkumník na MIT FutureTech a jeden z autorů studie.
+Konkurenční dynamika – závod o to, kdo vyvine nejlepší systémy umělé inteligence. Takové soupeření může vést k tomu, že firmy budou brát menší zřetel na bezpečnost a testování, jen aby představily nejlepší systém.
+Kybernetické útoky, vývoj zbraní – stále výkonnější umělá inteligence může výrazně usnadnit kyberútoky, stejně jako vývoj nových nebezpečných zbraní.
+Nerovné rozdělení moci – pokud budou nejvýkonnější systémy AI v rukou několika předních firem nebo vlád, ty získají nebo upevní svou politickou a ekonomickou sílu. Bude to na úkor mnoha ostatních skupin globální společnosti, což je mimořádně nespravedlivé.
+Nepravdivé a zavádějící informace – stále chytřejší AI programy mohou vytvářet nebezpečný a nepravdivý obsah: falešné zprávy, fotografie, videa nebo návody. Pokud jim lidé uvěří, mohou na základě nich činit nebezpečná rozhodnutí, jež ohrozí jejich vztahy, finance nebo bezpečnost.
+Studie také upozornila na tři sektory, které odborníci v rámci uváděných rizik označili za nejzranitelnější. Jde o informační sektor, národní bezpečnost a finance.
+Jak se ve světle nedávných událostí navíc ukazuje, obavy uváděné ve studii jsou více než oprávněné.|E|

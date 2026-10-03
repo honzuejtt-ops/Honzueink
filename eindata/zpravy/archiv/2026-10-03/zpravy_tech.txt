@@ -1,3 +1,26 @@
+|T|Týden Živě: Vypalovač komářích štípanců, nabíječka pro Garmin, masážní válec a lidar vykuchaný z vysavače|D|03.10. 16:45|P|Vítejte u dalšího teleshoppingu Týdnu Živě, tentokrát to bude přehlídka zajímavých gadgetů:
+
+Beurer BiteX go BR 75
+
+Přístroj na ošetření bodnutí hmyze...|X|Vítejte u dalšího teleshoppingu Týdnu Živě, tentokrát to bude přehlídka zajímavých gadgetů:
+
+Beurer BiteX go BR 75
+
+Přístroj na ošetření bodnutí hmyzem. Bez chemie, používá jen teplo, princip popisujeme ve starším článku. Výhodou řešení BiteX go je velikost a očko pro zavěšení na klíče, takže jej ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Recenze sluchátek Redmi Headphones Neo: Levná, odolná a skládací s ANC a Hi-Res zvukem přes USB|D|03.10. 15:45|P|Sluchátka Redmi Headphones Neo kombinují aktivní potlačení okolního hluku, připojení ke dvěma zařízením a poslech přes USB-C. K tomu výrobce přidává a...|X|Sluchátka Redmi Headphones Neo kombinují aktivní potlačení okolního hluku, připojení ke dvěma zařízením a poslech přes USB-C. K tomu výrobce přidává až 72 hodin výdrže. Výbava tedy pokrývá cestování i práci u počítače, k tomu přičtěte ale překvapivě kvalitní konstrukci a solidní zvuk.
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
+|T|Česká umělá inteligence bude v americkém úvěrování hlídat padělané dokumenty|D|03.10. 14:37|P|Technologie pro odhalování padělaných dokumentů české firmy Resistant AI Martina Reháka se stala součástí služby americké firmy Ocrolus, konkrétně pla...|X|Technologie pro odhalování padělaných dokumentů české firmy Resistant AI Martina Reháka se stala součástí služby americké firmy Ocrolus, konkrétně platformy Ocrulus Detect, která pomáhá bankám, úvěrovým společnostem a dalším finančním institucím prověřovat žádosti o půjčky. Platforma Ocrolus zpracuje podle firmy 750 tisíc úvěrových žádostí měsíčně.
+Propojení reaguje mimo jiné na rozšiřující se typ podvodů, který stojí na tvorbě nebo úpravách finančních dokumentů pomocí generativní umělé inteligence. Při žádosti o úvěr se běžně dokládají například bankovní výpisy, výplatní pásky nebo daňové dokumenty. Ty je ale možné právě pomocí běžně dostupné AI poměrně snadno pozměnit tak, aby na první pohled působily věrohodně.
+Technologie Resistant AI zkoumá hlavně strukturu dokumentu a metadata. Zjišťuje, jak a v jakém prostředí vznikl a zda s ním někdo dodatečně nemanipuloval. Dívá se na historii úprav souboru a anomálie v pixelech. „Situace v oblasti hrozeb se zásadně změnila. Široká dostupnost vysoce kvalitních nástrojů pro padělání založených na umělé inteligenci v kombinaci s opakovanými úniky osobních údajů vytvořila novou úroveň rizika, které lze řešit pouze tím, že k ověřování obsahu přidáme důkladnou kontrolu integrity dokumentů,“ říká šéf a spoluzakladatel Rehák.
+Resistant AI se specializuje na ochranu finančních institucí před podvody, manipulací s dokumenty a finanční kriminalitou. Jeho technologie se podle společnosti učila na vzorcích hrozeb z více než 200 milionů dokumentů z celého světa a vyvíjí také nástroje pro odhalování podezřelých transakcí a dalších forem finanční kriminality. Firma dříve získala investice od zahraničních fondů včetně Google Ventures, Index Ventures či Notion Capital.|E|
+|T|Skvělá vychytávka pro kutily. Česká webová aplikace mikroskopu nabídne to, co laciné lupy z Aliexpressu neumějí|D|03.10. 13:51|P|Kutilové všeho druhu se zálibou v inspekčních lupách a digitálních mikroskopech, které lze připojit k počítači jako běžnou webkameru, jistě ocení webo...|X|Kutilové všeho druhu se zálibou v inspekčních lupách a digitálních mikroskopech, které lze připojit k počítači jako běžnou webkameru, jistě ocení webovou aplikaci Petra Vavřína, se kterou se nedávno pochlubil na síti X. Najdete ji na jeho stránkách.
+
+Jedná se o docela pokročilý prohlížeč v ...
+
+(Pozn: Z tohoto webu nelze obsah přímo vyčíst)|E|
 |T|Chyba|D|03.10. 12:00|P|Něco se pokazilo.|X|HTTPSConnectionPool(host='www.zive.cz', port=443): Read timed out. (read timeout=10)|E|
 |T|Konečně generátor pro grafiky. První AI se naučila vytvářet průhledné obrázky|D|03.10. 11:45|P|Alibaba zveřejnila nový obrazový model Qwen-Image-2.1. Vizuální část má přibližně sedm miliard parametrů, obrázky vytváří nativně ve 2K a při úpravách...|X|Alibaba zveřejnila nový obrazový model Qwen-Image-2.1. Vizuální část má přibližně sedm miliard parametrů, obrázky vytváří nativně ve 2K a při úpravách dokáže pracovat až s deseti předlohami. Nejdůležitější novinkou ale není další přírůstek v rozlišení nebo žebříčku kvality. Model umí generovat a ...
 

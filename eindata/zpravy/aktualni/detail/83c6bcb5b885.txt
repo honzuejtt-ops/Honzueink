@@ -2,6 +2,27 @@ A model guide for the GPT‑6 family
 Practical tips for getting the best results from GPT‑6 models while managing time and cost
 GPT‑6 is our most advanced suite of models yet, and offers you a choice of models for different kinds of work.
 Whether you’re turning an idea into a working prototype, building and testing a feature, or orchestrating multi-step workflows across code repositories, databases, and external APIs, this guide explains how to choose a GPT‑6 model, give it effective instructions, manage long-running work, and prepare for production.
+- GPT-6Astra Our most intelligent model for the best results. 
+  - input
+  - $10.00
+  - output
+  - $50.00
+  - cached input
+  - $1.00
+- GPT-6.1Sol Near-Astra intelligence for a fifth of the price. 
+  - input
+  - $2.00
+  - output
+  - $10.00
+  - cached input
+  - $0.10
+- GPT-6Luna Fast and efficient everyday work at scale. 
+  - input
+  - $0.10
+  - output
+  - $0.50
+  - cached input
+  - $0.01
 - Run effectively in production. Use caching(opens in a new window) and compaction(opens in a new window) to manage context and cost. Measure task success and latency, and plan for monitoring and data controls.
 - Match the model to your workload. Balance capability, cost, and latency by choosing the model, reasoning effort(opens in a new window), and speed that fit the task.
 - Adjust your prompts and skills. Keep prompts, skills, and repository instructions consistent about what the model should deliver, what it can do independently, and what counts as done.

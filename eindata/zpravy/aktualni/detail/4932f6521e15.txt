@@ -35,4 +35,3 @@ Fotoaparát, hry a výkon mobilní AI
 Fotoaparát a hry: když AI pomůže a když překáží
 Ve fotoaparátu se pod jedinou zkratkou potkávají rozdílné cíle. Rozpoznat oko a udržet na něm ostření pomáhá zachytit scénu, generativně doplnit pozadí ji už mění. Obě úlohy mohou obstarávat neuronové sítě, dobrý výsledek v jedné ale o té druhé nic neříká.
 Sony do Xperie 1 VIII přidalo AI Camera Assistant, který podle scény nabízí varianty barevného podání, volbu fotoaparátu či rozostření pozadí. Od technické pomoci se tu AI posouvá k estetickým doporučením. Recenze asistentovi vytýkaly hlavně rušivé návrhy, které mohou překážet i při komponování snímku. Objevily se také výtky k příliš agresivním filtrů...
-(Pokracovani na webu)

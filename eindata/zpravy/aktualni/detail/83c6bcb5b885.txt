@@ -2,27 +2,27 @@ A model guide for the GPT‑6 family
 Practical tips for getting the best results from GPT‑6 models while managing time and cost
 GPT‑6 is our most advanced suite of models yet, and offers you a choice of models for different kinds of work.
 Whether you’re turning an idea into a working prototype, building and testing a feature, or orchestrating multi-step workflows across code repositories, databases, and external APIs, this guide explains how to choose a GPT‑6 model, give it effective instructions, manage long-running work, and prepare for production.
-- GPT-6Astra Our most intelligent model for the best results. 
-  - input
-  - $10.00
-  - output
-  - $50.00
-  - cached input
-  - $1.00
-- GPT-6.1Sol Near-Astra intelligence for a fifth of the price. 
-  - input
-  - $2.00
-  - output
-  - $10.00
-  - cached input
-  - $0.10
-- GPT-6Luna Fast and efficient everyday work at scale. 
-  - input
-  - $0.10
-  - output
-  - $0.50
-  - cached input
-  - $0.01
+- GPT-6Astra Our most intelligent model for the best results.
+- input
+- $10.00
+- output
+- $50.00
+- cached input
+- $1.00
+- GPT-6.1Sol Near-Astra intelligence for a fifth of the price.
+- input
+- $2.00
+- output
+- $10.00
+- cached input
+- $0.10
+- GPT-6Luna Fast and efficient everyday work at scale.
+- input
+- $0.10
+- output
+- $0.50
+- cached input
+- $0.01
 - Run effectively in production. Use caching(opens in a new window) and compaction(opens in a new window) to manage context and cost. Measure task success and latency, and plan for monitoring and data controls.
 - Match the model to your workload. Balance capability, cost, and latency by choosing the model, reasoning effort(opens in a new window), and speed that fit the task.
 - Adjust your prompts and skills. Keep prompts, skills, and repository instructions consistent about what the model should deliver, what it can do independently, and what counts as done.
@@ -34,21 +34,21 @@ Before deploying, there are several checks and best practices you’ll want to p
 - Decide how you’ll monitor behavior(opens in a new window) and review the data controls(opens in a new window) for your application.
 - Test before deploying: Run representative tasks and measure task success, latency, and cost per successful task. Check out our API deployment checklist(opens in a new window).
 Think of the model choice and reasoning level as an intelligence/ price tradeoff.
-- Model: 
-  - GPT‑6 Astra(opens in a new window) for the hardest reasoning work where maximum intelligence is needed.
-  - GPT‑6.1 Sol(opens in a new window) for complex coding, research, and computer use.
-  - GPT‑6 Luna(opens in a new window) for focused tasks at scale and everyday, repeated work with a clear goal, such as extracting invoice fields, classifying requests, or producing structured summaries.
+- Model:
+- GPT‑6 Astra(opens in a new window) for the hardest reasoning work where maximum intelligence is needed.
+- GPT‑6.1 Sol(opens in a new window) for complex coding, research, and computer use.
+- GPT‑6 Luna(opens in a new window) for focused tasks at scale and everyday, repeated work with a clear goal, such as extracting invoice fields, classifying requests, or producing structured summaries.
 When evaluating the best model for the task, compare pricing(opens in a new window) for each model.
-- Reasoning level: In the API, choose how much effort the model spends on the task. 
-  - Low: Routine tasks, such as extracting facts or making small edits.
-  - Medium: Work requiring judgment, such as planning a feature or comparing options.
-  - High: Difficult debugging, deeper analysis, or careful review.
-  - Extra high / Max: Test where supported when High falls short, and keep only if the improvement justifies the added time and cost.
+- Reasoning level: In the API, choose how much effort the model spends on the task.
+- Low: Routine tasks, such as extracting facts or making small edits.
+- Medium: Work requiring judgment, such as planning a feature or comparing options.
+- High: Difficult debugging, deeper analysis, or careful review.
+- Extra high / Max: Test where supported when High falls short, and keep only if the improvement justifies the added time and cost.
 In the API, you can change reasoning effort mid-conversation(opens in a new window) without breaking cache.
 In Codex, start with the default reasoning level for that model, then lower it for simpler tasks or increase it for deeper analysis.
-- Speed: 
-  - In the API, use Fast mode(opens in a new window) when response time matters, such as in chat apps or coding tools. It provides faster, more consistent response times at a higher per-token cost than Standard processing.
-  - In Codex and the API, use Ultrafast(opens in a new window) when faster responses are worth the premium, such as rapid coding iterations. It speeds up token generation independently of reasoning effort. Available for GPT‑6 Astra(opens in a new window).
+- Speed:
+- In the API, use Fast mode(opens in a new window) when response time matters, such as in chat apps or coding tools. It provides faster, more consistent response times at a higher per-token cost than Standard processing.
+- In Codex and the API, use Ultrafast(opens in a new window) when faster responses are worth the premium, such as rapid coding iterations. It speeds up token generation independently of reasoning effort. Available for GPT‑6 Astra(opens in a new window).
 Start with a clear assignment: the result you want, who it’s for, the relevant context and constraints, and what counts as done. Then review these four areas, summarized from Rethinking skills and prompts for GPT‑6 Astra(opens in a new window), for a deeper dive into updating your instructions:
 - Create better skills: Keep descriptions short and explicit about when each skill should run, load supporting details only when needed, and replace rigid recipes with guidance suited to the models your team uses.
 - Update your AGENTS.md: Explain when particular documents and tests are relevant, and explicitly authorize safe routine workflows, such as running local tests with disposable data and no production access.

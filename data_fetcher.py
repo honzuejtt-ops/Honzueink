@@ -416,6 +416,9 @@ def stahni_zpravy_multi(zdroje, celkovy_limit=10, exclude_titulky=None, max_age_
         duplikaty = 0
         for b in bloky:
             titulek = b["titulek"]
+            # Placeholder z neúspěšného zdroje nepatří mezi skutečné články
+            if titulek in ("Žádné zprávy", "Chyba"):
+                continue
             if titulek in titulky:
                 duplikaty += 1
                 continue
@@ -434,6 +437,11 @@ def stahni_zpravy_multi(zdroje, celkovy_limit=10, exclude_titulky=None, max_age_
         print(f"  RSS {rss_url}: raw={len(bloky)} pridano={pridano} dup={duplikaty}")
 
     vybrane.sort(key=lambda x: x[0], reverse=True)
+
+    # Když se z žádného zdroje nic nestáhlo, vrátíme aspoň informativní placeholder
+    if not vybrane:
+        prazdny = "|T|Žádné zprávy|D||P|Nebyly nalezeny.|X|Zkuste to později.|E|"
+        return prazdny, prazdny
     
     # Segmentované ukládání: Vytvoříme Index a Detaily
     vysledny_index = ""

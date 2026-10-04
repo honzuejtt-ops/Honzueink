@@ -1,0 +1,15 @@
+Fotogalerie: LinuxDays 2026 neděle
+Fotogalerie: LinuxDays 2026 neděle
+LinuxDays 2026 sobota
+GNOME 51
+Raspberry Pi Desktop
+Arduino Ventuno Q
+NetBSD 64bitový desktop
+NetBSD 32bitový desktop
+Galerie z neděle na konferenci LinuxDays 2026
+KDE Plasma 6.8 za 11 dní, efektivněji běžící Intel Arc Battlemage
+Galerie ze soboty na konferenci LinuxDays 2026
+Linuxové jádro dostává velké optimalizace pro AMD, čistka ARM32 bude možná později
+Nintendo Switch 2: hybridní konzolová evoluce pokračuje
+WebGL: tvorba 3D grafiky s využitím programovatelné vykreslovací pipeline (2. část)
+Petr Krčmář, Root.cz

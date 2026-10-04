@@ -1,3 +1,23 @@
+|T|Galerie z neděle na konferenci LinuxDays 2026|D|04.10. 11:46|P|V neděli 4. října probíhá v Praze druhý den letošní konference LinuxDays. Podívejte se, jak vypadá akce, na které můžete navštívit přednášky, workshop...|X|Fotogalerie: LinuxDays 2026 neděle
+Fotogalerie: LinuxDays 2026 neděle
+LinuxDays 2026 sobota
+GNOME 51
+Raspberry Pi Desktop
+Arduino Ventuno Q
+NetBSD 64bitový desktop
+NetBSD 32bitový desktop
+Galerie z neděle na konferenci LinuxDays 2026
+KDE Plasma 6.8 za 11 dní, efektivněji běžící Intel Arc Battlemage
+Galerie ze soboty na konferenci LinuxDays 2026
+Linuxové jádro dostává velké optimalizace pro AMD, čistka ARM32 bude možná později
+Nintendo Switch 2: hybridní konzolová evoluce pokračuje
+WebGL: tvorba 3D grafiky s využitím programovatelné vykreslovací pipeline (2. část)
+Petr Krčmář, Root.cz|E|
+|T|V říjnu skončí podpora Office 2021. Microsoft 365 pro Windows 10 funkčně zamrzá|D|04.10. 11:45|P|Nástroje Microsoft 365 ve Windows 10 už nenabídnou nové funkce. • Publisher od 1. října nebude součástí Microsoft 365. • Podpora Office 2021 (LTSC) ko...|X|Nástroje Microsoft 365 ve Windows 10 už nenabídnou nové funkce. • Publisher od 1. října nebude součástí Microsoft 365. • Podpora Office 2021 (LTSC) končí 13. října.|E|
+|T|Každý osmý případ rakoviny souvisí s infekcí. Největší podíl má bakterie způsobující žaludeční vředy|D|04.10. 09:45|P|Za každý osmý případ rakoviny na světě mohou infekční patogeny • Největší podíl má na svědomí nebezpečná žaludeční bakterie • Většině těchto onemocněn...|X|Za každý osmý případ rakoviny na světě mohou infekční patogeny • Největší podíl má na svědomí nebezpečná žaludeční bakterie • Většině těchto onemocnění přitom lze poměrně snadno předcházet|E|
+|T|Český skorojednorožec pod tlakem. Končí šéf z NHL, propouštělo se a ochladly plány na burzu|D|04.10. 07:45|P|Český kandidát na jednorožce Ataccama přišel o dalšího šéfa, po propouštění odešel i americký manažer McKee • . • Nástup AI mění poptávku po softwaru,...|X|Český kandidát na jednorožce Ataccama přišel o dalšího šéfa, po propouštění odešel i americký manažer McKee • . • Nástup AI mění poptávku po softwaru, zákazníci si prý umí čím dál víc vyřešit sami. • Vstup na burzu firma zatím odkládá, místo toho se s pozitivní EBITDA dívá po možných akvizicích.|E|
+|T|Starší srdce může v mladém těle biologicky omládnout. Mladé naopak v organismu staršího příjemce stárne|D|04.10. 05:45|P|Transplantované staré srdce v mladém těle omládne, mladé ve starém stárne • Výzkum zkoumal metylaci DNA i funkční vlastnosti transplantovaných orgánů ...|X|Transplantované staré srdce v mladém těle omládne, mladé ve starém stárne • Výzkum zkoumal metylaci DNA i funkční vlastnosti transplantovaných orgánů • Zjištěný jev by mohl v budoucnu rozšířit nabídku dárcovských srdcí|E|
+|T|Co se nejvíc hraje na Steamu? Toto jsou nejoblíbenější hry pro PC. Aktualizace říjen 2026|D|04.10. 05:10|P|Ze statistik Steamu jsme zjistili, kolik hodin denně stráví hráči s jednotlivými hrami. Toto je žebříček těch nejoblíbenějších za poslední týdny.|X|Ze statistik Steamu jsme zjistili, kolik hodin denně stráví hráči s jednotlivými hrami. Toto je žebříček těch nejoblíbenějších za poslední týdny.|E|
 |T|Zranitelnost grafik AMD: Všechny grafické karty Radeon generace RX 7000 od Sapphire potřebují opravu BIOSu|D|04.10. 05:00|P|Ve firmwaru grafických karet Radeon generace RX 7000 vyrobených firmou Sapphire byla nalezena bezpečnostní chyba, která vyžaduje opravnou aktualizaci....|X|V posledních letech se poměrně často objevují případy, kdy firmware základních desek pro PC (případně notebooků) potřebuje aktualizovat z důvodu objevu nějaké bezpečnostní zranitelnosti. Tento týden zveřejnila firma Sapphire, hlavní výrobce grafických karet Radeon, takovéto opravy pro změnu pro grafické karty s čipy RDNA. Kvůli nalezené zranitelnosti vyžadují aktualizaci všechny karty Sapphire generace Radeon RX 7000.
 Opravy firmwaru pro Radeony RX 7000 od Sapphire
 Dostupnost těchto bezpečnostních záplat Sapphire zveřejnila na svém webu, jako první na ni upozornil web techPowerUp. Jelikož se zde jedná o chybu v rámci firmwaru, nebude opravena klasickou aktualizací ovladačů, která vám do systému přijde sama od sebe. Místo toho jako uživatelé musíte z webu Sapphire manuálně stáhnout nástroj pro aktualizaci firmwaru grafické karty (program pro Windows) a ten spustit.

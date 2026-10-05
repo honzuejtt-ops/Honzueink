@@ -1,0 +1,1 @@
+OpenAI kvůli evropskému AI Actu zavádí vodoznaky v generovaném textu. • Technologie textGrain skrývá statistický signál ve výběru slov. • Záměna čtvrtiny slov sníží úspěšnost detekce na 17 %.

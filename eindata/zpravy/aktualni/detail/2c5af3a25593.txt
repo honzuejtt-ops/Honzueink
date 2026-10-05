@@ -1,0 +1,54 @@
+Jiří Eischmann: Jak AI mění open source
+Ve světě otevřeného softwaru dochází k viditelné inflaci projektů. Počet otevřených repozitářů na GitHubu roste dlouhodobě, ale v poslední době začíná nabíhat na lehkou exponenciálu. V letošním roce to zřejmě půjde výrazně nahoru.
+V loňském roce na GitHubu proběhla miliarda commitů, letos se odhaduje skok na 14 miliard commitů.
+AI dnes umožňuje vytvořit něco funkčního velmi rychle a lidé jsou nadšení, že mohou připravit například klienty pro různé služby. Například pro síť MeshCore vznikly už desítky různých nástrojů. Je jednoduché něco vytvořit, ale stejně jednoduché je to pak opustit.
+Dnes uživatelé vytvářejí všechno možné, ale za měsíc je projekt mrtvý.
+Do budoucna to může vést k tomu, že se lidé budou navracet ke kolekcím prověřeného softwaru. Budou vědět, že pokud něco najdou na určitém zdroji, můžou se na to spolehnout a bude to existovat i za půl roku.
+Před deseti lety vypadala myšlenka linuxových distribucí jako mrtvá, protože distributoři přestali stíhat všechno balit. Vývojáři se naučili distribuovat software jiným způsobem, takže to vypadalo, že distribuce už nebudou relevantní.
+Teď se situace dostala do tak nepřehledného extrému, že uživatelé zase začnou vyhledávat prověřené zdroje softwaru.
+Inflace projektů hodně posouvá i očekávání od softwaru. Dříve nevadilo, že software neměl příliš dobrou uživatelskou podporu, stejně se to používalo, protože nic jiného k dispozici nebylo. Dnes musíte začít vyčnívat z řady, už nestačí, že máte něco funkčního.
+Lidé mají pocit, že díky AI dokážou něco rychle vyvinout a dostat to na trh, ale pak zjistí, že se vlamují do saturovaného prostředí. Z hlediska počtu uživatelů ale prostředí neroste a rychle dochází k vystřízlivění. Když máte placenou aplikaci, zjistíte, že už na ní kvůli silné konkurenci nevyděláte.
+V budoucnu bude potřeba se věnovat aplikaci více, vylepšování uživatelské přívětivosti a komunikaci s uživatelskou základnou.
+Roste také podíl projektů s jedním přispěvatelem. Například desktopové prostředí dřív vyžadovalo celou komunitu aktivních přispěvatelů. I menší prostředí jako Xfce vyvíjí desítky vývojářů.
+Dnes narazíte na prostředí, které vytvořil jeden uživatel za měsíc. Bude to mít dopad na naši schopnost se domluvit a komunikovat?
+Jeden vývojář se nemusí učit dělat kompromisy a s nikým se domlouvat.
+Práce vývojářů v Red Hatu se v posledních letech hodně proměnila, dříve se mohli zabývat vymýšlením něčeho nového a rozvojem svých systémů. Dnes tak osmdesát procent času věnujeme různým review hlášení.
+V softwaru se dnes automatizovaně nachází obrovské množství bezpečnostních chyb. My se v tom topíme, některé balíčky měly dříve jednotky CVE za rok, dnes mají vysoké desítky.
+Každým takovým problémem se musí někdo zabývat.
+Vývojáři, kteří dříve vytvářeli nové věci, se dnes musejí zabývat ověřováním potenciálních bezpečnostních problémů. AI je dobrá v odhalování takových chyb, ale už ne v hodnocení jejich relevantnosti nebo řešení.
+Všechno musejí zkontrolovat, zhodnotit a případně vyřešit lidé.
+Zahlceni jsou ale i autoři projektů, protože dříve byla k vytvoření a zaslání změny potřeba hromada ruční práce. Dnes za vás agent úpravu vytvoří a pošle za vás i pull request.
+Lidé obvykle házejí obrovské množství kódu „přes zeď“ a očekávají, že to oceníte, všechno projdete a zařadíte.
+Důležitou částí review je komunikace s novými kolegy a případně vychovávání nástupců v projektu. Review si málokdo užívá, je to spíš za trest. Většina vývojářů raději píše něco nového.
+Role výchovy tu ale mizí, když vám někdo posílá desítky tisíc automaticky generovaných řádků kódu, nikoho nevychováváte.
+Některé projekty se proto uzavírají, nepřijímají změny od AI nebo odmítají všechny pull requesty. Například na Flathub přicházejí desítky a desítky nových aplikací, u kterých ani autoři nejsou schopni vyplnit krátký formulář a investovat pár minut do natočení krátkého videa. Oni se tím vším musejí prohrabovat a hlídat dodržování pravidel.
+Někteří rozdělují vývojáře na dvě skupiny: kokektivisty zapojující se do vývoje se snahou něco rozvíjet a spolupracovat; dokončovatele řešící jen individuální technický problém a požadavky. Tyhle skupiny existovaly vždycky, ale fungovaly vedle sebe a přes rozepře se nakonec nějak domluvily. AI mezi nimi ale vykopala obrovský příkop.
+Kolektivistům totiž AI bere smysl, proč být v open-source projektech. Bere jim aktivitu, kvůli které tam jsou s ostatními.
+Zapojení AI pak do velké míry odmítají. Proti tomu dokončovatelé vidí AI jen jako nástroj, který jim zvyšuje efektivitu. Pokud dosáhnu cíle rychleji, je to fajn a používám to.
+Nevraživost v projektech narůstá a je to odrazem toho, jak funguje celá společnost na pozadí kulturní války.
+Klesá také motivace zveřejňovat kód, i u lidí, kteří se vývojem open source zabývají dvacet let. AI se dnes na kódu vše naučí, vytvoří náhradu a nečestně si zaregistruje třeba ochranné známky a vznikne tak konkurenční produkt.
+Tento problém se stal například v projektu MeshCore, který kvůli tomu neuvolňuje zdrojové kódy mobilní aplikace. Obcházejí se totiž i softwarové licence a přestože GNU GPL nutí udržovat kód otevřený, AI se na těchto kódech učí a samotnou licenci dále neřeší.
+AI také přináší výraznou externalizaci nákladů, protože agresivní scraping webu ze strany botů výrazně zvyšuje open-source projektům náklady na provoz služeb. Zvýšené náklady na provoz služeb jdou do desítek tisíc dolarů ročně.
+Zatím se to daří pokrývat různými sponzory, ale kdyby vše měly platit projekty samy, znamenalo by to pro ně velkou finanční zátěž. Různé technické ochrany proti tomuto chování zároveň snižují spolehlivost služeb, což má opět negativní dopad na zapojení přispěvatelů.
+Dopad je možné pozorovat i na různých byznys modelech, které jsou navázané na open-soure projekty. Dříve firmy běžně vydávaly software zdarma, ale bylo možné si u nich zaplatit podporu a mít přístup k expertíze a možnostem různých úprav na míru. Tyhle firmy neměly nikdy nouzi o zákazníky, protože jejich open-source projekt byl známý a služba se prodávala sama.
+V posledním roce ale poptávka po takových službách klesla na nulu. Může to být problém při dalším financování projektů, protože to je běžný způsob, jakým se pro ně získávají prostředky.
+Jsme uvnitř bubliny, která splaskne. Nemyslím si, že tím zmizí AI, ale dojde k racionalizaci.
+Najde se nějaká nová rovnováha, ale už se určitě nevrátíme úplně na začátek. Ale už nebude možné za dvacet dolarů vytáčet tokeny s původní cenou osm set dolarů.
+Lukáš Kotek: Jolla Phone 2026: linuxový smartphone z Finska
+Jolla Phone je chytrý telefon vyvíjený firmou Jolla Mobile, kterou založili bývalí zaměstnanci společnosti Nokia v roce 2011. Využívá linuxový operační systém nazvaný Sailfish OS stavící na standardních komponentách jako systemd a Wayland. Můžete si tam napsat vlastní skripty, používat rsync nebo si připojit vzdálený souborový systém přes SSHFS.
+Operační systém obsahuje některé proprietární části, například vlastní řešení podpory pro androidí aplikace. Telefon dbá na soukromí, je vyvíjený v Evropě a kompletuje se ve Finsku, kde se dříve vyráběly telefony Nokia.
+Přístroj se také oficiální cestou nedistribuuje mimo Evropu.
+Jolla Phone 2026 není první model, v průběhu let byly uvedeni jeho předchůdci. Prvním byl Jolla 1 z roku 2013, poté přišel Jolla C Community Phone v roce 2016 a následoval Jolla C2 v roce 2024. Sailfish OS je ale možné koupit pro další podporované přístroje, například Xperia X, Xperia XA2 nebo Xperia 10 III a další. K dispozici je placená licence, kterou získáte jednorázovým nákupem.
+Příběh letošního telefonu začal v srpnu 2025, kdy byl zveřejněn dotazník pro uživatele, kteří se mohli vyjádřit k tomu, jak má telefon vypadat. V prosinci pak byly zahájeny předobjednávky a do února se přihlásilo deset tisíc zájemců. To umožnilo rozšířit nabídku například o další kryt.
+Během letošního léta se začaly telefony distribuovat a doputovaly prvním zájemcům. U dalších várek cena postupně narůstala, v současné době se pohybuje okolo 479 eur.
+Parametry ovlivnila paměťová krize, původní verze se dodávaly s 12 GB paměti a s 256GB úložištěm. V současné době se dodávají verze s 8GB pamětí s 256 GB úložištěm s možností rozšíření pomocí slotu microSD. Telefon má uživatelsky vyměnitelnou baterii, 50Mpx hlavní fotoaparát a klasickou soudobou konektivitu včetně 5G, Wi-Fi 6, BT 5.4, NFC, USB-C a dual SIM. Mrzí mě absence 3,5" jacku, ale adaptér z USB-C krásně funguje.
+Zajímavostí je takzvaný privacy switch, což je softwarově konfigurovatelný přepínač, jehož funkci si můžete nastavit. Můžete tím například vypínat část konektivity nebo vypnout podporu pro androidí aplikace.
+K uživatelům se postupně dostává Sailfish OS 5.2, který řeší spoustu malých iritujících věcí z minulosti. Dříve se například stávalo, že androidí aplikace ztrácely konekvititu, to už teď nepozoruji.
+Přináší také nové praktické vlastnosti jako rychlou detekci polohy pomocí BeaconDB, plnohodnotnou podporu bluetooth pro androidí aplikace, začlenění AppSupport 15 a možnost snadné instalace MicroG přímo z instalačního průvodce.
+Sailfish OS nepřináší žádné radikální změny v uživatelském rozhraní, což mnoha uživatelům vyhovuje. Vzhled je možné si přizpůsobit pomocí „atmosfér“, což jsou takové chytré profily, které mohou upravit vzhled a chování telefonu.
+Software je možné získat v obchodě Jolla, který obsahuje nativní aplikace. Pokud si chcete zpřístupnit více softwaru přímo pro Sailfish OS, doporučuji nainstalovat OpenRepos a Chum.
+Je možné přidat také androidí repozitáře Aurora nebo F-Droid. Současná verze systému nabízí podporu na úrovni Androidu 15, což umožnilo instalovat spoustu moderních aplikací.
+Jolla Phone je v porovnání se staršími zařízení použitelnější pro běžné uživatele. Kontrola nad vlastním hardwarem se Jolle zjevně vyplácí.
+Hodně se zaměřuje na soukromí a za konkurenci je možné považovat Volla Phone s Volla OS, Murena GS 6 a Fairphone 6 s /e/OS.
+Pavel Šnajdr: AI mi vzala práci
+Pavel Šnajdr si na pře...

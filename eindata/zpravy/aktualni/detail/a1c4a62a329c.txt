@@ -1,0 +1,1 @@
+Nové Posílené připojení v iOS 27 může výrazně zvyšovat spotřebu baterie • Tato funkce totiž využívá bezdrátovou i mobilní síť současně • Vypnutím této novinky v nastavení Wi-Fi můžete dosáhnout delší výdrže

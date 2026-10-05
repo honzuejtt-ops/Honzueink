@@ -23,9 +23,15 @@ Copy item name Alt+Shift+N
 Copy item to clipboard Alt+Shift+C
 Moderní MC si můžete sami zkompilovat, větev mc-modern
 https://github.com/tomasmark79/mc
+Jestli potřebujete pracovat "rychle s minimálním mentálním modelem", tak doporučuju co nejjednoduššího správce. Třeba takový nnn, který má sice jenom jeden panel, ale ten zahrnuje osm "tabů" mezi kterými se triviálně přepínáte (klávesy 1-8) - jednodušší model, stejná efektivita. Pro mě je nnn naprostá jednička pro práci se soubory když nemám grafické prostředí (jinak normálně používám Double Commander).
+Každopádně dneska už bych správce souborů bez podpory tabů nepoužíval - to zahrnuje jak MC, tak i tenhle jeho jednodušší klon.
+Snažil jsem se přizpůsobit se k Yazi. Jsou tam také karty. A je to celkem intuitivní. Ale mám jakýsi problém zatěžovat mozek nutností myslet na to, kam vlastně chci kopírovat. Když není cílová destinace stále na očích, je to ve skutečnosti problém, který se musí kognitivně zpracovávat při každém přepnutí tabu OD - DO. Jednou, dvakrát ano. Vícekrát je to prostě otrava. A když přijde na řadu např. potřeba nějak "uklidit" dvě složky s hromadou obsahu, tak je Yazi nepoužitelné.
+Tím jsem samozřejmě nevysvětlil proč používám MC. Ten používám proto, abych nemusel přepínat mezi servery a desktopem a používat jen jeden nástroj všude. Nakonec i v MC je možnost mít pravou stranou jako živý náhled aktuálního souboru na levém panelu. V MC je toho opravdu mnoho k objevování. Ale fandím i novému přístupu, který zmiňujete.
+Bolo by fajn keby sa dalo zapnut vyhladavanie suborov ako vo FAR manageri, teda alt+znak hned zacne hladanie v aktualnom adresari.
+Vo FAR je tiez sikovna vec kombinacia ctrl+[0-9] ako skratka adresarov a ich rychle definovanie cez shift+ctrl+[0-9]. Ak je adresarov na danu klavesu definovanych viac ako 1, zobrazi sa ich zoznam. V zozname sa daju definovat skratky, ak nie su definovane tak FAR ich vyberie a vyznaci automaticky podla prvych unikatnych pismen nazvu daneho riadku.
 Tomáš je autorem několika více či méně známých projektů jak z oblasti operačních systémů, tak internetu. V současnosti samozvaný expert na Linux, Bash, PHP a MySQL.
-Přečteno 44 857×
-Přečteno 27 124×
-Přečteno 22 098×
-Přečteno 20 894×
-Přečteno 15 219×
+Přečteno 44 882×
+Přečteno 27 141×
+Přečteno 22 099×
+Přečteno 20 904×
+Přečteno 15 223×

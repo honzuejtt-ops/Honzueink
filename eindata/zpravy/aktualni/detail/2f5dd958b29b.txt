@@ -1,0 +1,16 @@
+Adresátem psaní z roku 1809 byl francouzský generál August de Marmont, který se v té době nacházel se svými vojsky v Dalmácii zcela izolovaný od ostatních francouzských sil a jejich spojenců.
+Obsah dopisu se týkal pohybu vlastních i nepřátelských jednotek v situaci, kdy Francie válčila proti Rakousku. Napoleon generála informoval o pozicích a síle obou stran konfliktu. Současně vyzýval de Marmonta, aby se připravil na pochod a nenechal se zastrašit „několika vojáky nebo nějakou lůzou“.
+„Připočtěte dalmatský sbor, aniž bychom brali v úvahu zálohy organizované všude v týlu, a uvidíte, že Rakousko bude okamžitě napadeno ze všech stran. (Rakousko) se řítí do záhuby. Netrpělivě od vás očekávám zprávy,“ citoval z Napoleonova dopisu deník The New York Post.
+GPT-6 Astra just cracked a 217-year-old Napoleon-era cipher
+Carter Church used GPT-6 Astra to decipher a 217-year-old letter sent to one of Napoleon’s generals, with roughly six hours of model work.
+The hardest part wasn’t the code itself. It was getting usable text from a… pic.twitter.com/XwkKRkXS7d
+— 0xAI42.exe (@0xAI42exe) October 1, 2026
+Marmontova armáda se nakonec dokázala probít z dnešního Chorvatska a pomoci Napoleonovi porazit Rakousko v bitvě u Wagramu. Marmont byl nato povýšen na maršála, získal tak hodnost udělovanou vyšším generálům.
+Zatímco úvodní řádek Napoleonovy korespondence je v jeho rodné francouzštině, dalších 24 řádků je nesrozumitelnou směsicí symbolů, písmen a čísel. Pro historiky je rozluštění dopisu malou senzací. Text prozrazuje, jak francouzský císař uděloval rozkazy krátce před polními taženími a důležitými bitvami.
+Historici dlouho považovali Napoleonovo psaní s přibližně 1300 znaky za nerozluštitelné. Klíč k jeho dešifrování se totiž ztratil.
+Inženýr Carter Church ze společnosti SentinelOne, která se zabývá kybernetickou bezpečností, prozradil, že k prolomení kódu nasadil systém GPT-6 Astra od OpenAI.
+„Zajímavé přitom není samotné prolamování kódů, ale fakt, že Astra dokončila celý proces za šest hodin,“ uvedl Church.
+„Simulované žíhání“
+Celý proces by bylo možné provést i „ručně“, bylo by to však podle deníku The Telegraph extrémně namáhavé a zdlouhavé. Kryptografům se předtím podařilo rozluštit pouhých 33 znaků.
+Ale i toho Church využil a zbytek textu rozluštil s pomocí techniky známé jako „simulated annealing“ (simulované žíhání). Jde o proces ve stylu pokus-omyl, při kterém se zkouší různé slovní kombinace do doby, než výsledný text dával smysl.
+Church přiznal, že historický dokument předtím ještě nikdy nedešifroval. Textem Napoleona se začal zabývat poté, co viděl, jak se s pomocí AI podařilo během deseti hodin dekódovat německou armádní zprávu z roku 1941.

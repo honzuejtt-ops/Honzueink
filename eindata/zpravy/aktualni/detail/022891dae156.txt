@@ -12,8 +12,8 @@ Ve výchozím nastavení se statická binárka komprimuje pomocí UPX. Běžný
 Při ladění velikosti se ukázalo, že samotné přidávání dalších optimalizačních přepínačů nemusí vést k menšímu souboru. Program i knihovny už používaly  -Os, odstranění nepoužitých sekcí a stripování symbolů. Největší další úsporu přineslo explicitní -fno-pie při kompilaci: linker sice už používal -no-pie, ale překladač stále standardně generoval kód pro PIE. Jde o dvě odlišné části sestavení, jak popisuje i dokumentace GCC. Na stejných zdrojích se podařilo dostat zabalený program ze 129 816 na 123 296 bajtů, přibližně o pět procent níž. LTO pro ncurses ani agresivnější režim UPX lepší finální výsledek nepřinesly.
 Zdrojové kódy, statická binárka i návod k sestavení jsou v repozitáři Mini Commanderu na GitHubu. Budu rád za zkušenosti z dalších distribucí a terminálů, zvlášť pokud narazíte na problém s neobvyklým názvem souboru, kódováním nebo kombinací kláves.
 Tomáš je autorem několika více či méně známých projektů jak z oblasti operačních systémů, tak internetu. V současnosti samozvaný expert na Linux, Bash, PHP a MySQL.
-Přečteno 44 823×
-Přečteno 27 110×
-Přečteno 22 085×
-Přečteno 20 844×
-Přečteno 15 217×
+Přečteno 44 847×
+Přečteno 27 122×
+Přečteno 22 097×
+Přečteno 20 874×
+Přečteno 15 219×

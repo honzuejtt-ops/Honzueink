@@ -11,9 +11,21 @@ Pro nasazení do menších systémů je připravený automatizovaný statický b
 Ve výchozím nastavení se statická binárka komprimuje pomocí UPX. Běžný build přes make automatické balení pomocí UPX neprovádí.
 Při ladění velikosti se ukázalo, že samotné přidávání dalších optimalizačních přepínačů nemusí vést k menšímu souboru. Program i knihovny už používaly  -Os, odstranění nepoužitých sekcí a stripování symbolů. Největší další úsporu přineslo explicitní -fno-pie při kompilaci: linker sice už používal -no-pie, ale překladač stále standardně generoval kód pro PIE. Jde o dvě odlišné části sestavení, jak popisuje i dokumentace GCC. Na stejných zdrojích se podařilo dostat zabalený program ze 129 816 na 123 296 bajtů, přibližně o pět procent níž. LTO pro ncurses ani agresivnější režim UPX lepší finální výsledek nepřinesly.
 Zdrojové kódy, statická binárka i návod k sestavení jsou v repozitáři Mini Commanderu na GitHubu. Budu rád za zkušenosti z dalších distribucí a terminálů, zvlášť pokud narazíte na problém s neobvyklým názvem souboru, kódováním nebo kombinací kláves.
+Hezká věcička. Za mě trochu zbytečné vymýšlet nové kolo, ale zase proč ne. Proti gustu ...
+Osobně jsem si prošel na Linuxu tolika souborovými správci, že to ani nespočítám. Nakonec jsem ale po nějaké době vždy zpět u MC. Chvíli jsem zakotvil také u Yazi, a podobných, ale jen do doby, než jsem potřeboval pracovat rychle s minimálním mentálním modelem. Filozofii přístupu "vizuální pohled dvou panelů (odkud kam)" jen těžko něco skutečně nahradí.
+Pár věci je přeci jen ale potřeba na moderním desktopu, a tak jsem si MC trochu upravil. Je to především možnost přepínání světlé/tmavé téma pomocí kl. zkratky, funkce koše pomocí 'gio', podpora schránky pro Wayland desktopy a ještě některé další maličkosti.
+Switch between light and dark skins Alt+Shift+T
+Move to trash Delete, F12
+Delete permanently F8, Shift+Delete
+Copy full path Alt+Shift+F
+Copy parent directory path Alt+Shift+D
+Copy item name Alt+Shift+N
+Copy item to clipboard Alt+Shift+C
+Moderní MC si můžete sami zkompilovat, větev mc-modern
+https://github.com/tomasmark79/mc
 Tomáš je autorem několika více či méně známých projektů jak z oblasti operačních systémů, tak internetu. V současnosti samozvaný expert na Linux, Bash, PHP a MySQL.
-Přečteno 44 847×
-Přečteno 27 122×
-Přečteno 22 097×
-Přečteno 20 874×
+Přečteno 44 857×
+Přečteno 27 124×
+Přečteno 22 098×
+Přečteno 20 894×
 Přečteno 15 219×

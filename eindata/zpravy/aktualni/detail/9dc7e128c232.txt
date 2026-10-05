@@ -7,7 +7,7 @@ Arduino Ventuno Q
 NetBSD 64bitový desktop
 NetBSD 32bitový desktop
 Postřehy z bezpečnosti: forenzní software české policie má skryté ruské vazby
-postmarketOS se nově jmenule Nura, GhostBSD připravuje nové prostředí
+postmarketOS se nově jmenuje Nura, GhostBSD připravuje nové prostředí
 Mini Commander 2.0 přichází s podporou UTF-8
 Galerie z neděle na konferenci LinuxDays 2026
 KDE Plasma 6.8 za 11 dní, efektivněji běžící Intel Arc Battlemage

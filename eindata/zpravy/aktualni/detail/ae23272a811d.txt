@@ -1,0 +1,15 @@
+Akce odstartuje 7. října v 10:00 pacifického času, tedy v 19:00 středoevropského času. „Poznamenejte si toto datum. Windows. Surface. Nvidia RTX Spark. Přijďte se podívat, co bude dál,“ láká Microsoft na sociální síti X.
+Americký softwarový gigant zatím drží všechny informace o chystaném programu pod pokličkou. Pavan Davuluri, který v Microsoftu vede divize Windows & Devices, pouze uvedl, že se těší, až ukáže, na čem jeho tým pracoval. O něco konkrétnější byl Marcus Ash, viceprezident odpovědný za design a výzkum napříč Windows & Devices. Podle něj Microsoft ukáže, „co bude dál pro vývojáře a tvůrce“.
+Save the date: October 7 at 10:00 AM PT. Windows. @Surface. @NVIDIARTXSpark. Come see what's next.
+Tune in on YouTube: https://t.co/V76famiJ0N pic.twitter.com/2xFkC02bdK
+— Windows (@Windows) October 1, 2026
+Windows postavené kolem AI
+Microsoft už při prvním oznámení akce v září prozradil, že jedním z hlavních témat bude lokální umělá inteligence a její role v další generaci osobních počítačů. Nyní firma slibuje pohled na budoucnost Windows, zařízení Surface a platformy Nvidia RTX Spark.
+Právě RTX Spark bude patrně jednou z hlavních hvězd celé prezentace. Microsoft a Nvidia spolupracují na úpravách Windows, které mají umožnit lépe využít nový výkonný hardware pro lokální provoz AI.
+Otevřeně se přitom hovoří o tom, že právě středeční tiskovka má odstartovat „novou éru Windows“. Vedle umělé inteligence by měla přijít řeč také na postupnou modernizaci samotného prostředí aktuálně nabízených jedenáctek.
+Microsoft už nějakou dobu nahrazuje prvky, jejichž kořeny sahají desítky let do minulosti. V testovacích verzích systému se například objevilo modernizované okno Vlastnosti souboru s podporou tmavého režimu. Novou podobu dostává také Automatické přehrávání, Správa tisku či dialogové okno Spustit. Právě zde Microsoft zapracoval také na rychlosti – nová varianta se podle dostupných údajů otevře za 94 milisekund proti 103 milisekundám u původní verze.
+Nové počítače v hlavní roli
+Velkou pozornost bude poutat také Surface Laptop Ultra, který Microsoft představil už na konci května jako svůj dosud nejvýkonnější notebook Surface. Stále ale jde o produkt před uvedením na trh a firma zatím neoznámila jeho cenu ani termín zahájení prodeje.
+Stroj využívá platformu RTX Spark a nabídne až 128 GB sjednocené paměti, podporu CUDA a výkon pro AI až jeden petaflop. Podle Microsoftu má být dostatečně výkonný na to, aby přímo v počítači dokázal provozovat AI modely se 120 miliardami parametrů.
+Výbavu doplňuje 15palcový mini-LED displej PixelSense Ultra s maximálním jasem HDR až 2000 nitů, větší haptický touchpad, HDMI, USB-A a čtečka SD karet plné velikosti.
+Co všechno bude opravdu na středeční tiskovce k vidění, se ale dozvíme až během slavnostní akce.

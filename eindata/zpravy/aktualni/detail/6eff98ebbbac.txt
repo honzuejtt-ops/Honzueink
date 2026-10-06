@@ -1,0 +1,8 @@
+Společnost Tesla provozuje v texaském městě Austin již několik měsíců službu Robotaxi, která využívá upravené vozy značky k autonomní přepravě posádky. Provozní hodiny jsou však omezeny, přičemž nedávno došlo k prodloužení z desáté na jedenáctou hodinu večerní.
+Na oznámení je však asi nejzajímavější komentář Elona Muska, ředitele automobilky, který sdílel příspěvek na sociální síti X. Musk totiž prozradil, že nočnímu provozu služby Robotaxi brání snaha automobilky předejít srážkám se zvěří, která je v noci špatně vidět.
+Robotaxi operating hours moved from 10pm to 11pm.
+The main thing we’re trying to solve is making sure that we don’t run over pets when they’re hard to see at night. Literally trying to avoid grey kittens on grey tarmac in the dark. https://t.co/y4HSVILLqd
+— Elon Musk (@elonmusk) October 3, 2026
+„Doslova se snažím ve tmě vyhnout šedým koťátkům na šedém asfaltu“, uvedl Musk na sociální síti X. Vozy společnosti Tesla přitom ke své orientaci využívají především kamery, které mohou mít při velmi slabém osvětlení problém s rozlišením některých objektů.
+Na návrhy veřejnosti, že by automobilka měla začít používat kamery s termovizí (rozlišující objekty podle teploty), pak Elon Musk odpověděl, že i klasické kamery mohou být dostačující. Automobilka chce totiž využít tzv. analýzu počtu zachycených fotonů, a to za pomoci umělé inteligence.
+Tato analýza umožňuje kameře přesněji rozlišit zachycený obraz od šumu, a to i při velmi slabém osvětlení. V kombinaci s technologií AI tak bude mít systém autonomního řízení ještě lepší a přesnější podklady pro orientaci. Nezmínil však, kdy bude tato technika připravena k nasazení.

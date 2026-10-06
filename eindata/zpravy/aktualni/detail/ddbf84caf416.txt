@@ -1,0 +1,24 @@
+Na případ upozornila česká společnost ComSource, která se zabývá kybernetickou bezpečností, síťovou infrastrukturou a datovou analytikou. Podle její analýzy byl útok na zdravotnický subjekt nejzávažnějším z kybernetických případů, které během letošního léta sledovala.
+K úniku mělo dojít již 27. srpna a podle ComSource za ním stála skupina DataBastard, která následně nabízela získaná data k prodeji. Bezpečnostní společnost neprozradila, které konkrétní zdravotnické zařízení se terčem útoku stalo. „Zdravotnictví se v srpnu stalo terčem útoku, který svou povahou patří k nejzávažnějším za poslední měsíce,“ prohlásil expert na kybernetickou bezpečnost a spolumajitel ComSource Michal Štusák.
+Zdravotní záznam nelze změnit či blokovat
+Podle Štusáka obsahovala databáze kontakty pacientů, včetně zdravotních záznamů, informace o rezervacích návštěv s platebními a pojišťovacími údaji a také profily zdravotnického personálu.
+„Ze zásady neuvádíme, o který konkrétní subjekt šlo, ale tento útok představuje opravdu závažnou hrozbu kvůli citlivé povaze zdravotních dat a potenciálnímu narušení péče o pacienty,“ doplnil Štusák.
+Právě zdravotní údaje patří mezi mimořádně citlivé informace. Zatímco po úniku hesla ho může uživatel změnit a platební kartu zablokovat, informace o zdravotním stavu jednoduše nahradit nelze.
+„Zdravotnická data mají svou specifickou hodnotu, protože je nelze jednoduše zneplatnit jako heslo – jednou uniklý zdravotní záznam zůstává citlivý natrvalo. Firmy a instituce spravující taková data by měly investovat do ochrany úměrně tomu, co je v sázce,“ zdůraznil bezpečnostní expert.
+Nešlo jen o jeden cíl
+Zdravotnictví přitom nebylo jediným cílem. ComSource za srpen zdokumentoval celkem 17 ransomwarových hrozeb v Česku. Útočníci se zaměřovali také na výrobní podniky, poskytovatele IT služeb, státní správu, školství, internetové služby a obchod.
+Největší koncentraci útoků zaznamenali bezpečnostní experti v oblasti informačních technologií a profesionálních služeb. Skupina Titan podle nich během poloviny srpna systematicky zasáhla několik společností, které spravují data nebo poskytují IT poradenství. Se čtyřmi zaznamenanými útoky byla podle analýzy nejaktivnější ransomwarovou skupinou měsíce.
+Dalšího poskytovatele IT služeb měla napadnout skupina Lockbit. Ve výrobním a průmyslovém sektoru pak ComSource zaznamenal aktivity skupin Krybit a Aur0ra.
+Útok na poskytovatele IT služeb přitom může mít daleko větší následky než napadení jediné firmy. Útočník se totiž může prostřednictvím jeho systémů pokusit dostat také k zákazníkům.
+„Opakované cílení na firmy, které pro jiné organizace spravují data nebo IT infrastrukturu, je jeden z nejnebezpečnějších trendů, které v posledních měsících vidíme. Jeden úspěšný průnik do takové společnosti může otevřít cestu k desítkám dalších klientů napříč trhem,“ varoval Štusák.
+Úřad, škola i e-shop
+Terčem kyberzločinců se během srpna podle analýzy staly také instituce a služby, se kterými se lidé běžně setkávají. Skupina Krybit měla zaútočit na obecní web, zatímco skupina The Gentlemen si podle ComSource vybrala základní školu.
+Skupina Space Bears zase zaútočila na poskytovatele internetových služeb. První informace o incidentu se podle bezpečnostních expertů objevila 22. srpna, o šest dní později následoval únik dat.
+Pozornosti hackerů neunikly ani internetové obchody. V jednom případě se objevilo tvrzení o úniku 105 tisíc záznamů z e-shopu. Další databáze nabízeli aktéři vystupující pod označeními Linda2000 a exfilar.
+ComSource zároveň během sledovaného období zaznamenal 120 nových úniků přihlašovacích údajů pocházejících z botnetů a phishingových zdrojů a více než 47 tisíc phishingových událostí.
+„Kombinace ransomwaru a aktivního obchodu s uniklými databázemi na fórech ukazuje, že útočníci cílí prakticky na celou českou ekonomickou infrastrukturu – od úřadů přes školy až po e-commerce,“ uzavřel Štusák.
+Jak útočí vyděračské viry
+Na napadeném stroji dokážou vyděračské viry z rodiny ransomwaru udělat pěkný nepořádek. Nejprve zašifrují všechna data uložená na pevném disku. Za jejich zpřístupnění pak útočníci požadují výkupné, a to klidně i několik tisíc korun.
+Kyberzločinci se zpravidla snaží v majiteli napadeného stroje vzbudit dojem, že se ke svým souborům dostane po zaplacení pokuty. Ta byla údajně vyměřena za používání nelegálního softwaru apod. I proto jim celá řada lidí již výkupné zaplatila.
+Zaplatit zpravidla chtějí v bitcoinech, protože pohyby této virtuální měny se prakticky nedají vystopovat. A tím logicky ani nelegální aktivita počítačových pirátů.
+Ani po zaplacení výkupného se ale uživatelé ke svým datům nemusí dostat. Místo placení výkupného je totiž nutné virus z počítače odinstalovat. Zpřístupnit nezálohovaná data se už ale ve většině případů nepodaří.

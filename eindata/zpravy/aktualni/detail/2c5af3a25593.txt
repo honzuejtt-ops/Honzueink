@@ -30,7 +30,8 @@ Klesá také motivace zveřejňovat kód, i u lidí, kteří se vývojem open 
 Tento problém se stal například v projektu MeshCore, který kvůli tomu neuvolňuje zdrojové kódy mobilní aplikace. Obcházejí se totiž i softwarové licence a přestože GNU GPL nutí udržovat kód otevřený, AI se na těchto kódech učí a samotnou licenci dále neřeší.
 AI také přináší výraznou externalizaci nákladů, protože agresivní scraping webu ze strany botů výrazně zvyšuje open-source projektům náklady na provoz služeb. Zvýšené náklady na provoz služeb jdou do desítek tisíc dolarů ročně.
 Zatím se to daří pokrývat různými sponzory, ale kdyby vše měly platit projekty samy, znamenalo by to pro ně velkou finanční zátěž. Různé technické ochrany proti tomuto chování zároveň snižují spolehlivost služeb, což má opět negativní dopad na zapojení přispěvatelů.
-Dopad je možné pozorovat i na různých byznys modelech, které jsou navázané na open-soure projekty. Dříve firmy běžně vydávaly software zdarma, ale bylo možné si u nich zaplatit podporu a mít přístup k expertíze a možnostem různých úprav na míru. Tyhle firmy neměly nikdy nouzi o zákazníky, protože jejich open-source projekt byl známý a služba se prodávala sama.
+Dopad je možné pozorovat i na různých byznys modelech, které jsou navázané na open-source projekty. Dříve firmy běžně vydávaly software zdarma, ale bylo možné si u nich zaplatit podporu a mít přístup k expertíze a možnostem různých úprav na míru.
+Tyhle firmy neměly nikdy nouzi o zákazníky, protože jejich open-source projekt byl známý a služba se prodávala sama.
 V posledním roce ale poptávka po takových službách klesla na nulu. Může to být problém při dalším financování projektů, protože to je běžný způsob, jakým se pro ně získávají prostředky.
 Jsme uvnitř bubliny, která splaskne. Nemyslím si, že tím zmizí AI, ale dojde k racionalizaci.
 Najde se nějaká nová rovnováha, ale už se určitě nevrátíme úplně na začátek. Ale už nebude možné za dvacet dolarů vytáčet tokeny s původní cenou osm set dolarů.
@@ -40,7 +41,7 @@ Operační systém obsahuje některé proprietární části, například vlastn
 Přístroj se také oficiální cestou nedistribuuje mimo Evropu.
 Jolla Phone 2026 není první model, v průběhu let byly uvedeni jeho předchůdci. Prvním byl Jolla 1 z roku 2013, poté přišel Jolla C Community Phone v roce 2016 a následoval Jolla C2 v roce 2024. Sailfish OS je ale možné koupit pro další podporované přístroje, například Xperia X, Xperia XA2 nebo Xperia 10 III a další. K dispozici je placená licence, kterou získáte jednorázovým nákupem.
 Příběh letošního telefonu začal v srpnu 2025, kdy byl zveřejněn dotazník pro uživatele, kteří se mohli vyjádřit k tomu, jak má telefon vypadat. V prosinci pak byly zahájeny předobjednávky a do února se přihlásilo deset tisíc zájemců. To umožnilo rozšířit nabídku například o další kryt.
-Během letošního léta se začaly telefony distribuovat a doputovaly prvním zájemcům. U dalších várek cena postupně narůstala, v současné době se pohybuje okolo 479 eur.
+Během letošního léta se začaly telefony distribuovat a doputovaly prvním zájemcům. U dalších várek cena postupně narůstala, v současné době se pohybuje okolo 679 eur.
 Parametry ovlivnila paměťová krize, původní verze se dodávaly s 12 GB paměti a s 256GB úložištěm. V současné době se dodávají verze s 8GB pamětí s 256 GB úložištěm s možností rozšíření pomocí slotu microSD. Telefon má uživatelsky vyměnitelnou baterii, 50Mpx hlavní fotoaparát a klasickou soudobou konektivitu včetně 5G, Wi-Fi 6, BT 5.4, NFC, USB-C a dual SIM. Mrzí mě absence 3,5" jacku, ale adaptér z USB-C krásně funguje.
 Zajímavostí je takzvaný privacy switch, což je softwarově konfigurovatelný přepínač, jehož funkci si můžete nastavit. Můžete tím například vypínat část konektivity nebo vypnout podporu pro androidí aplikace.
 K uživatelům se postupně dostává Sailfish OS 5.2, který řeší spoustu malých iritujících věcí z minulosti. Dříve se například stávalo, že androidí aplikace ztrácely konekvititu, to už teď nepozoruji.
@@ -51,4 +52,4 @@ Je možné přidat také androidí repozitáře Aurora nebo F-Droid. Současná 
 Jolla Phone je v porovnání se staršími zařízení použitelnější pro běžné uživatele. Kontrola nad vlastním hardwarem se Jolle zjevně vyplácí.
 Hodně se zaměřuje na soukromí a za konkurenci je možné považovat Volla Phone s Volla OS, Murena GS 6 a Fairphone 6 s /e/OS.
 Pavel Šnajdr: AI mi vzala práci
-Pavel Šnajdr si na pře...
+Pavel Šnajdr si na p...

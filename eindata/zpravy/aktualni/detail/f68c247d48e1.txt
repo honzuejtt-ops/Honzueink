@@ -1,0 +1,18 @@
+Blanc
+Minimalistický webový prohlížeč pro Linux, macOS a Windows, který nahrazuje klasické lišty a karty netradičním plovoucím rozhraním „Island“. Nabízí vestavěné blokování reklam a trackerů na síťové úrovni, soukromé karty s odděleným dočasným úložištěm, skupiny karet, profily a synchronizaci.
+Prohlížeč je postavený na Electronu a Chromiu a klade důraz na bezpečnost – webové stránky běží v sandboxu a oprávnění, jako je přístup ke kameře, mikrofonu nebo poloze, jsou ve výchozím nastavení blokována.
+github.com/bnfy/blanc, 1.27.0
+Tributary
+Moderní hudební přehrávač a správce hudební knihovny inspirovaný Rhythmboxem, který je napsaný v Rustu a využívá GTK4 a Libadwaita. Dokáže sjednotit lokální hudební soubory s hudbou ze serverů Subsonic/Navidrome, Jellyfin, Plex nebo iTunes/DAAP a podporuje také internetová rádia.
+Nabízí vyhledávání a třídění podle žánru, interpreta či alba, playlisty, hodnocení skladeb, ekvalizér, historii přehrávání, automatické doplňování metadat z MusicBrainz i stahování vzdálené hudby pro offline poslech. Podporuje také Chromecast, MPD a další výstupy a je dostupný pro Linux, macOS i Windows.
+github.com/jm2/tributary, 0.7.0
+Plank Reloaded
+Dok pro Linux a fork původního projektu Plank, zaměřený především na desktopová prostředí využívající X11, jako jsou Cinnamon, MATE, Xfce a KDE. Nabízí jednoduchý a nenáročný panel pro spouštění aplikací, práci s otevřenými okny a rychlý přístup k souborům, přičemž podporuje více monitorů, plovoucí vzhled, pracovní plochy a zoom ikon až do 400 %.
+K dispozici je také řada vestavěných dockletů pro baterii, hodiny, upozornění, přepínání pracovních ploch nebo ovládání hlasitosti a nechybí podpora vlastních dockletů třetích stran. Vzhled lze upravit pomocí několika vestavěných motivů i GTK témat. Plank Reloaded je přitom stále zaměřený na jednoduchost a Wayland zatím nepodporuje.
+github.com/zquestz/plank-reloaded, 0.11.174
+Czech HAREC A Trainer
+Jednoduchá webová aplikace určená k procvičování otázek pro písemnou zkoušku odborné způsobilosti k obsluze amatérských rádiových zařízení HAREC (Harmonised Amateur Radio Examination Certificate) třídy A v České republice. Funguje na principu kartiček – zobrazí otázku, po otočení nabídne správnou odpověď a uživatel následně označí, zda ji znal.
+Otázky jsou rozděleny podle témat a menších oblastí, což usnadňuje postupné učení, přičemž aplikace ukládá statistiky pouze lokálně v paměti prohlížeče a nevyužívá žádné externí úložiště. Díky webovému provedení ji lze používat na počítači i mobilu a podporuje také režim handsfree se syntézou řeči.
+github.com/Dushino/Czech-HAREC-A-Trainer, 1.1.
+Blbinka
+Potřebujete vypadat, že hrozně tvrdě pracujete, ale ve skutečnosti si chcete jen v klidu vypít kávu? Účelový generátor nesmyslné aktivity zaplní váš terminál nekonečným proudem falešných výpisů.

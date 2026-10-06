@@ -1,0 +1,40 @@
+Vítejte ve světě, kde i malý barevný obdélník může říct víc než tisíc slov. Shields.io je open-source služba, která zpřehledňuje technické informace o softwarových projektech pomocí jednoduchých, ale výstižných odznaků. Možná jste je už zahlédli – nenápadné štítky s nápisy jako „build passing“, „license MIT“ nebo „npm v1.2.3“. Právě tyto badge dodávají projektům na GitHubu šmrnc, informovanost a profesionální vzhled.
+Co se dozvíte v článku
+Za tím vším nestojí žádná velká korporace, ale komunita vývojářů, která vytvořila nástroj pro generování konzistentních, čitelných a automaticky aktualizovaných odznaků. Shields.io podporuje desítky služeb — od CI/CD nástrojů přes balíčkové registry až po sociální sítě a analýzu kódu. Ať už chcete zobrazit stav buildu, verzi balíčku, typ licence, pokrytí testy nebo počet stažení, Shields.io vám to umožní — elegantně, jednoduše a bez ručního přepisování.
+Co je Shields.io zač a proč by vás to mělo zajímat
+Shields.io je jako ten kolega v týmu, který nikdy nemluví, ale vždycky ví, jaký je stav projektu. Je to open-source služba, která generuje SVG odznaky – štítky, které vypadají jako malé informační cedulky a dají se snadno vložit do README souboru na GitHubu, GitLabu nebo Bitbucketu.
+Tyto štítky zobrazují aktuální stav buildů, verze balíčků, pokrytí testy, počet stažení, typ licence, velikost balíčku, podporované jazyky a desítky dalších údajů. Co je nejlepší – jsou dynamické. To znamená, že se automaticky aktualizují podle aktuálního stavu projektu. Žádné ruční přepisování, žádné „ups, tohle už je dávno jinak“.
+Technicky vzato, Shields.io funguje jako REST API, které přijímá požadavky ve formátu URL a vrací SVG obrázek. Odznaky (anglicky badge) se generují na základě parametrů v URL, které mohou obsahovat název služby, typ dat, styl, barvu nebo vlastní text. Projekt je postaven na Node.js a běží jako serverová aplikace, která komunikuje s desítkami různých služeb – od GitHubu přes Docker Hub až po PyP.
+Vývojáři si mohou štítky přizpůsobit: změnit barvu, styl, text, ikonu nebo formát. Pokud vám nestačí předpřipravené varianty, můžete si vytvořit vlastní pomocí JSON API nebo dokonce hostovat vlastní instanci Shields serveru.
+Shields.io podporuje více než 60 různých služeb a nabízí badge pro CI/CD nástroje, balíčkové registry, statistiky repozitářů, sociální sítě, bezpečnostní skeny, test coverage, Docker image metadata a mnoho dalšího.
+Historie: Od nápadu k milionům odznaků
+Shields.io vznikl v roce 2013 jako reakce na roztříštěnost odznaků na GitHubu. Tehdy si každý projekt generoval štítky po svém – někdy ručně, někdy pomocí různých služeb, které se navzájem ignorovaly. Výsledkem byl chaos, který připomínal nástěnku ve školní družině.
+Prvním impulsem byl projekt gh-badges, který vytvořil Thaddée Tyl jako knihovnu pro generování odznaků. Na něj navázal Olivier Lacan, který definoval první specifikaci badgů a spustil službu b.adge.me. Ta se později sloučila se Shields.io, čímž vznikl jednotný systém pro generování štítků napříč open-source světem.
+Od té doby projekt vyrostl. Dnes obsluhuje více než 1,6 miliardy požadavků měsíčně, má tisíce přispěvatelů a stal se de facto standardem pro vizuální metadata v open-source světě. Používají ho mimo jiné projekty jako VS Code, Vue.js, Bootstrap a mnoho dalších.
+A přesto si Shields.io zachoval svou jednoduchost – žádné přehnané ambice, žádné korporátní logo, jen čistá funkčnost a radost z dobře udělané věci. Badge jsou generovány pomocí knihovny badge-maker, dostupné jako NPM balíček, a služba je dostupná i jako Docker image pro vlastní hostování.
+Komunita: Když odznak spojuje lidi
+Komunita kolem Shields.io je jako dobře fungující orchestr – každý hraje svou část, ale výsledek je harmonický. Projekt je plně otevřený a komunitně řízený. Na GitHubu najdete aktivní repozitář s více než 8 000 commitů a přes 500 přispěvatelů. Diskuse jsou přátelské, pull requesty vítané a dokumentace přehledná.
+Přispět může kdokoliv – ať už jste backendový mág, frontendový estét nebo jen někdo, komu vadí, že badge na Docker Hubu má o pixel víc než ostatní. Můžete pomoci s kódem, dokumentací, návrhy nových badgů, nebo jen tím, že označíte užitečný komentář palcem nahoru.
+Projekt má i transparentní financování přes Open Collective, kde se podílí jak jednotlivci, tak firmy jako Octopus Deploy, GitGuardian, Sentry nebo Northwoods Software. Roční rozpočet se pohybuje kolem 1 800 USD, což pokrývá provoz serveru, doménu a vývojové nástroje.
+Správci projektu jako Paul Melnikow, chris48s a další aktivně komunikují s komunitou, řeší návrhy a udržují kvalitu kódu. Projekt má jasně definovaný etický kodex, přehledné pravidla pro přispívání a otevřenou správu bezpečnostních problémů.
+A když se něco pokazí? Badge to řekne za vás. Třeba „build failing“ – a hned víte, že je čas na kávu a debugování.
+Příklady použití
+Pro Vue.js chceme vědět například verzi, velikost repozitáře a poslední commit. Pak ten odznak vypadá třeba takto:
+Verze
+Velikost repozitáře
+Nejnovější commit
+V kódu (v souboru README.md) použijete tohle:
+![Nejnovější dostupná verze balíčku](https://img.shields.io/github/package-json/v/vuejs/vue)
+![Velikost repozitáře](https://img.shields.io/github/repo-size/vuejs/vue)
+![Datum nejnovějšího commitu](https://img.shields.io/github/last-commit/vuejs/vue)
+Kde se inspirovat
+Pokud vás svět barevných odznaků zaujal a chcete se do něj ponořit hlouběji, existuje několik skvělých míst, kde můžete načerpat inspiraci, znalosti i konkrétní příklady. Prvním z nich je samotná oficiální dokumentace Shields.io, která nabízí nejen přehled všech podporovaných služeb, ale také interaktivní generátor odznaků. Ten vám umožní upravit text, barvu, styl i formát a okamžitě zobrazit náhled výsledku. Je to ideální startovní bod pro každého, kdo si chce odznaky přizpůsobit na míru.
+Dalším zdrojem je GitHub repozitář projektu, kde najdete nejen zdrojový kód, ale i aktivní diskuse, návrhy nových funkcí, otevřené pull requesty a přehledné návody pro přispěvatele. Pokud vás zajímá, jak služba funguje pod kapotou, nebo chcete sami přispět, je to místo, kde se komunita skutečně potkává.
+Za zmínku stojí i repozitář „badges“ od uživatele henriquesebastiao, který funguje jako katalog hotových odznaků. Najdete zde desítky příkladů pro různé služby, styly, barvy i ikony. Je to praktický zdroj, pokud si chcete odznaky rychle naklikat nebo jen okopírovat funkční vzory.
+Pokud dáváte přednost návodům krok za krokem, doporučuji video tutoriál na YouTube, který srozumitelně vysvětluje, jak odznaky vytvořit, upravit a vložit do README souboru. Obsahuje i ukázky odznaků pro GitHub statistiky, licence, jazykové statistiky a sociální sítě.
+Zajímavý pohled nabízí také profil Shields.io na Open Collective, kde najdete transparentní rozpočet projektu, seznam sponzorů a možnost přispět. Shields.io je zkrátka nejen nástroj, ale i komunita, která sdílí znalosti, příklady a radost z dobře udělané vizualizace. Ať už jste začátečník, nebo zkušený vývojář, inspirace je všude kolem – stačí se rozhlédnout.
+Malý odznak, velký význam
+Shields.io je důkazem, že i drobnosti mohou mít velký dopad. Jeden malý odznak dokáže říct, že váš projekt žije, že build prošel, že licence je v pořádku a že verze není z doby, kdy se ještě používaly děrné štítky. Co víc – to všechno říká elegantně, automaticky a bez zbytečného humbuku.
+Odznaky nejsou jen vizuální ozdoba. Jsou to živé ukazatele stavu projektu, které šetří čas, zvyšují důvěryhodnost a pomáhají udržet přehled. V open-source světě, kde se vše mění rychle, je taková forma komunikace nejen praktická, ale i esteticky příjemná.
+Ať už jste vývojář, který chce mít README jako z katalogu, nebo správce repozitáře, který potřebuje rychle zjistit, co kde hoří, Shields.io vám nabídne nástroje, které fungují. Bez instalace, bez registrace, bez nervů. Jen čistá radost z dobře udělaného odznaku.
+Odznak „build passing“ je jako svatý grál – všichni ho hledají, málokdo ho opravdu chápe, a když ho konečně získáte, zjistíte, že to byla jen SVG ikonka a že vám mezitím někdo smazal produkční databázi.

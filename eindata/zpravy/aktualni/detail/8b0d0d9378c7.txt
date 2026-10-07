@@ -1,0 +1,27 @@
+Mladá vědkyně z Brna vyhrála světovou soutěž výzkumu srdce
+Srovnání několika záznamů EKG jednoho člověka v čase pomáhá odhadnout riziko srdečního selhání přesněji než jediné měření. S touto prací vyhrála brněnská vědkyně Zuzana Koščová mezinárodní soutěž mladých vědců v kardiologii, uvedla Akademie věd ČR.
+Soutěžilo rekordních 96 mladých vědců a vědkyň z celého světa. Porota z nich do finále pustila jen čtyři. To proběhlo v Madridu a první místo z něj odvezla mladá vědkyně z Brna.
+Koščová pracuje v Ústavu přístrojové techniky Akademie věd, ve skupině Filipa Plešingera, která se zabývá umělou inteligencí a medicínskými technologiemi. Soutěž Rosanna Degani Young Investigator Award je určená vědcům a vědkyním do 36 let. Koná se při konferenci Computing in Cardiology, která se letos sešla ve španělské metropoli.
+Vítězná práce řeší, jak včas poznat lidi, které ohrožuje srdeční selhání. Odpověď brněnské vědkyně je prostá: nestačí se na srdce podívat jednou, je potřeba sledovat, jak se jeho záznamy mění.
+Jeden záznam proti celé řadě
+Většina dosavadních studií, které se snažily srdeční selhání předpovědět z EKG, pracovala s jediným záznamem. Takový záznam zachytí, jak srdce pracuje v den vyšetření. Autoři nové práce ale předpokládali, že další užitečná informace se skrývá ve změnách mezi několika záznamy téhož člověka.
+Podle Koščové dává sledování toho, jak se údaje z EKG vyvíjejí, podstatně přesnější obrázek než jednorázové vyšetření. Jeden záznam ukáže okamžik, řada záznamů ukáže, jak se mění.
+EKG přitom není hlavní vyšetření, podle kterého lékaři srdeční selhání určují. Může ale brzy napovědět, u koho je riziko vyšší, a právě o takové vodítko v celé práci jde.
+Desítky tisíc pacientů a dva způsoby výpočtu
+Vědci pracovali s daty z databáze MIMIC-IV. Vybrali z ní přes 65 tisíc pacientů, kteří měli za sebou aspoň dvě vyšetření EKG. Sledovali je až deset let a srdeční selhání se za tu dobu objevilo zhruba u každého desátého z nich.
+Pak porovnali dva postupy. První odhadoval riziko jen z jednoho záznamu EKG, jak to dělá většina studií. Druhý k tomu přidal i to, jak se jednotlivé záznamy mezi sebou lišily.
+💡 Zajímavost: Vítězství nepřišlo z ničeho. V loňském ročníku stejné soutěže se Koščová probojovala do semifinále v brazilském São Paulu.
+Lépe vyšel ten druhý: srdeční selhání na tři roky dopředu předpověděl přesněji. V odborném měřítku přesnosti, kde vyšší číslo znamená lepší odhad, si polepšil z 0,79 na 0,84.
+Autoři pak výsledek prověřili na odložené části dat, kterou postup předtím neviděl. Šlo o přes 13 tisíc lidí. I u nich odhadl riziko lépe postup, který srovnával víc záznamů.
+Srdeční selhání se v Česku týká statisíců lidí
+S diagnózou srdečního selhání žije v Česku přibližně 400 tisíc lidí. U lidí nad 65 let je to nejčastější důvod, proč musí do nemocnice.
+Nemoc se projevuje hlavně dušností, typicky v noci, kdy se člověk po pár hodinách spánku probudí a lapá po dechu. Příznaky podrobněji popisuje článek o nemocech srdce.
+Právě tady chce brněnský výzkum pomoci: aby se ohrožení lidé dali poznat dřív.
+Kde výzkum stojí dnes
+Je dobré říct i to, co práce zatím neukazuje. Jde o výzkum představený na odborné konferenci, ne o hotovou metodu z ordinací. Výsledky vznikly na datech z databáze, ne na českých pacientech. Zda a kdy se postup dostane do běžné péče, zdroje neuvádějí. Netvrdí ani, že by takový výpočet už dnes v ordinacích pomáhal.
+Práce ale ukazuje směr, kterým se výzkum vydává: posuzovat srdeční riziko podle vývoje v čase, ne jen podle jednoho dne.
+Ověřeno z:
+- Akademie věd ČR — tisková zpráva Brněnská vědkyně zvítězila v soutěži mladých výzkumníků v kardiologii (24. 9. 2026)
+- Computing in Cardiology 2026 — abstrakt Heart Failure Prediction using Longitudinal analysis of ECG Biomarkers
+- Seznam Zprávy — Na choroby srdce umírá nejvíce Čechů (7. 7. 2025)
+- Novinky.cz — Česko čelí tsunami nemocí srdce

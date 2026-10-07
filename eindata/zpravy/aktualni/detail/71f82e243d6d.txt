@@ -1,0 +1,29 @@
+Nobelovu cenu získala metoda, která má slepým vrátit část zraku
+Lidem, kteří přišli o zrak, může jednou pomoci metoda, jež zapíná nervové buňky světlem. Začala u zelené řasy a letos 5. října za ni padla Nobelova cena za medicínu.
+#medicína#mozek#věda#vědecký objev
+Slepý člověk, kterému vložili do sítnice bílkovinný spínač, díky téhle metodě částečně uviděl. Se speciálními brýlemi, které vysílají světlo, dokázal rozeznat předměty na stole a vzít je do ruky.
+Cesta k tomu přitom začala u drobné zelené řasy. Za pouhou půl milisekundy od chvíle, kdy na její očko dopadne světlo, vznikne v ní elektrický impuls. Tuhle bleskovou reakci naměřil Peter Hegemann, když zkoumal, jak to, že řasa Chlamydomonas plave za světlem.
+Z té zvědavosti vyrostla metoda, která umí zapnout nebo vypnout jednotlivé nervové buňky v živém mozku. Hegemann za ni letos dostal Nobelovu cenu za fyziologii a lékařství spolu s Georgem Nagelem a Karlem Deisserothem.
+Spínač schovaný v zelené buňce
+Hegemann s Nagelem v řase našli bílkovinu, která po zásahu světlem otevře malý kanál pro elektricky nabité částice. Pak přišel pokus. Gen pro tuhle bílkovinu vložili do lidských buněk z ledvin.
+Buňky, které s viděním nemají vůbec nic společného, začaly na světlo reagovat.
+Na tom stojí celý princip. Do buňky se vloží gen pro bílkovinu citlivou na světlo, třeba právě z řasy, a buňku pak jde světlem zapínat a vypínat. Řasa tak vědcům nabídla hotový vypínač, který stačilo přenést do jiných buněk.
+Od ledvinových buněk k nervovým
+V roce 2005 popsala skupina Karla Deisserotha, jak stejný gen vložila do nervových buněk krys. Když na ně vědci posvítili modrým světlem, buňky zareagovaly okamžitě.
+Klíčová je přesnost. Dráždění elektřinou ani léky neumějí zasáhnout jen jeden konkrétní druh buněk, světlo s vloženým spínačem to dokáže. A je z čeho vybírat: dospělý lidský mozek má kolem 90 miliard nervových buněk. Každá z nich přitom tvoří tisíce spojení s dalšími. Vybrat v takové spleti jen jeden druh buněk a ostatní nechat na pokoji klasické metody nedovolí.
+Vousy a probuzení na povel
+Další krok přišel o dva roky později. Deisserothův tým zavedl tenké optické vlákno malým otvorem v lebce až k nervovým buňkám v mozku živé myši. Rozsvícením pak ovládal, jak myš hýbe vousy.
+💡 Zajímavost: Ke každé Nobelově ceně patří kromě diplomu a medaile také odměna 12 milionů švédských korun, v přepočtu asi 25,9 milionu korun českých.
+V jiném pokusu mířili vědci na spánek. Když posvítili na vybrané nervové buňky, spící myši se probudily, přesně jak předpokládali.
+Vědci tak mohli v živém mozku zapínat vybrané nervové buňky a hned sledovat, co se stane. Pro výzkum mozku to byl nástroj, jaký dřív neměli.
+Kus zraku díky světelným brýlím
+Do praxe se metoda zkouší u lidí, kteří oslepli kvůli onemocnění zvanému retinitis pigmentosa. Právě jim se v probíhajících klinických studiích pokoušejí vrátit zrak.
+Patří k nim i slepý člověk ze začátku článku. Nejde o úplné uzdravení, ale o kus zraku, který předtím chyběl.
+Podobný případ popisuje odborná studie z roku 2021. Slepý člověk s touž nemocí v ní dostal injekci do oka a k tomu světelné brýle. S nimi pak předměty vnímal jen ošetřeným okem. Dokázal je najít, spočítat a dotknout se jich.
+Celá cesta tak vede od řasy, která plave za světlem, přes buňky z ledvin a krysí nervové buňky až k člověku, který znovu sáhne po věci, kterou vidí.
+Naděje se přitom netýká jen zraku. Lidé se sluchovými implantáty mají dnes v uchu zařízení, které dráždí sluchový nerv elektřinou. Podle vysvětlení na stránkách Nobelovy ceny by světlo mohlo nerv dráždit přesněji.
+Kdo má retinitis pigmentosa nebo ji má někdo v rodině, by měl vědět, že metoda je zatím ve fázi klinických studií. Právě v nich se teď ukazuje, pro koho se z laboratorního pokusu stane pomoc u lékaře.
+Ověřeno z:
+- Nobelova cena — Nobel Prize in Physiology or Medicine 2026, Popular information (5. 10. 2026)
+- Nature Medicine — Partial recovery of visual function in a blind patient after optogenetic therapy (24. 5. 2021)
+- Česká televize ČT24 — Nobelovu cenu získali vědci za objevy umožňující ovládat buňky světlem (5. 10. 2026)

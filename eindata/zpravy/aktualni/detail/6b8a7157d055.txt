@@ -1,0 +1,18 @@
+Na jaře se v ekosystému her pro Windows objevila novinka v podobě technologie Advanced Shader Delivery. Ta řeší problém, že moderní hry po startu často dlouhé minuty musí kompilovat shadery, pokud byly čerstvě nainstalovány nebo byl aktualizován ovladač GPU (a to se děje často). S Advanced Shader Delivery se místo toho shadery stáhnou ze serveru, což je mnohem rychlejší. Novinku zpočátku uměly jen grafiky AMD, ale teď ji dostávají i ostatní.
+Podpora Advanced Shader Delivery se tento měsíc rozšíří
+Jak Advanced Shader Delivery funguje, jsme probírali v tomto článku, když byla technologie spuštěna pro grafiky AMD:
+Grafiky Radeon
+GPU od AMD mají podporu této funkce od ovladače Adrenalin 26.6.1 (a ve všech vyšších), funguje nyní na všech grafikách s architekturami RDNA, RDNA 2, RDNA 3 / 3.5 a RDNA 4, tedy na grafikách od Radeonů RX 5000 výše i těch integrovaných v APU.
+Snapdragony X2 Elite
+K AMD už se přidal Qualcomm. Ten tuto funkci podporuje v ovladačích pro Windows grafik Adreno X2, které se nachází v letos vydaných 3nm procesorech Qualcomm Snapdragon X2 Elite s architekturou arm.
+Pro tuto platformu by již také stahování shaderů místo jejich kompilování (což je pro notebooky výhoda) mělo fungovat v tuto chvíli. Přibylo v ovladačích 2026.08.3, vydaných 22. září. Zatím ale zřejmě nejsou podporována GPU v předchozí generaci procesorů, Snapdragon X Elite (a Plus).
+Intel Arc
+Microsoft teď oznámil, že v průběhu aktuálního měsíce (října) přibude podpora Advanced Shader Delivery také na straně GPU Intel. U těch zatím nemáme číslo ovladače, v němž se podpora objeví, bude se ale týkat GPU Arc B-Series (Battlemage). Půjde tedy o samostatné grafické karty Arc B570 a B580 a integrovaná GPU v procesorech Core Ultra 200V „Lunar Lake“ a Core Ultra 300 „Panther Lake“.
+Konečně už i GeForce RTX a Spark RTX
+A tento měsíc se dostane také na grafické karty GeForce. Také zde ještě není uvedeno číslo verze ovladače, který tak zřejmě vyjde až v následujících dnech (nebo týdnech). Nvidia ale potvrdila, že funkci dostanou všechny grafické karty GeForce RTX, tedy od GeForce RTX 2000 výše (GeForce GTX 1600 asi budou mít smůlu, přestože používají stejnou architekturu Turing, jen ochuzenou o podporu akcelerace AI a ray tracingu).
+Nvidia zřejmě podporu načasovala tak, aby dorazila pro notebooky s procesory RTX Spark, které by měly mít premiéru dnes. GPU procesorů RTX Spark (jež patří do generace GeForce RTX 5000) je také explicitně uvedeno mezi platformami, které budou Advanced Shader Delivery využívat.
+Je třeba aplikace Xbox
+Podpora Advanced Shader Delivery je ve Windows 11 od verze 24H2 výš, přičemž potřebujete také mít nainstalovánu aplikaci Xbox, přes kterou infrastruktura funguje. Doporučuje se také mít co nejnovější ovladače GPU.
+Jedna z prvních nových her, která podporu napříč ekosystémem GPU využívá, je Gears of War: E-Day. Podle Microsoftu se první spuštění hry po instalaci (a po aktualizacích ovladačů, případně i samotné hry) zkrátí až o 95 % na jen pár sekund. Na typických počítačích by podle Microsoftu klasické kompilování shaderů trvalo několik minut. Že se funkce využívá, půjde poznat podle toho, že se při spuštění objeví dole na obrazovce zpráva „Precompiled shaders installed“ Další hrou s podporou bude například Call of Duty: Modern Warfare 4.
+Původní implementace Advanced Shader Delivery byla spojená jen s hrami kupovanými přes ekosystém Xboxu (včetně předplatného Game Pass) a Microsoft Store. Nemá to tak zůstat a v budoucnu bude funkce pomáhat i u her koupených přes Steam, Epic Games Store nebo GOG. Microsoft ale toto rozšíření nyní nezmiňuje, takže asi stále není připraveno.
+Zdroje: Qualcomm, VideoCardz, Microsoft

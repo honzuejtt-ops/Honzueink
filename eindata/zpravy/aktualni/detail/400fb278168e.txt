@@ -1,0 +1,19 @@
+(od našeho zpravodaje)
+Surface Laptop Ultra si odbyl premiéru na velké tiskovce amerického technologického gigantu v San Francisku, a Novinky byly u toho. Záznam živého přenosu ze slavnostní akce naleznete v našem dřívějším článku.
+Model Ultra, na jehož vývoji Microsoftu pomáhala i společnost Nvidia, překvapí na první pohled svým vzhledem. Nevypadá totiž jako přerostlá pracovní stanice, kterou byste raději nechali celý den na pracovním stole. Jde o relativně kompaktní zařízení, které si snadno zabalíte jako běžný notebook s sebou kamkoliv na cesty.
+Notebook je tenčí než 18 mm a váží méně než dva kilogramy. Nabízen bude v tradiční platinové barvě a v novém provedení Nightfall.
+Umělá inteligence přímo v notebooku
+Americký softwarový gigant prezentuje Surface Laptop Ultra jako výkonný, ale stále přenosný počítač pro lidi, kteří chtějí na cestách stříhat video, upravovat fotografie, pracovat s 3D grafikou, vyvíjet aplikace s umělou inteligencí nebo si po práci zahrát.
+Srdcem celého stroje je nový čip od Nvidie, který kombinuje úsporný procesor s výkonnou grafikou RTX. Podle Microsoftu nabídne až jeden petaflop výpočetního výkonu pro AI. Výrobce zároveň zdůrazňuje, že grafická část byla navržena nejen pro umělou inteligenci a kreativní aplikace, ale také pro moderní hry.
+Právě AI má být jedním z hlavních trumfů novinky. Surface Laptop Ultra může mít až 128 GB sdílené paměti, což dovoluje pracovat s většími modely a datovými sadami přímo v zařízení. Uživatel tak nemusí při každé náročnější operaci spoléhat na cloud.
+To může přijít vhod nejen vývojářům. Výkon grafického čipu mohou využívat také kreativní aplikace, například pro odstraňování šumu pomocí AI, inteligentní maskování, zvyšování rozlišení videa nebo asistované programování.
+Microsoft chce zároveň oslovit uživatele, kteří potřebují vysoký výkon delší dobu. Surface Laptop Ultra proto dostal zcela nový systém chlazení. Jeho tepelná kapacita má být až 2,5krát vyšší než u 15palcového Surface Laptopu sedmé generace.
+Poprvé s magnetickým USB-C portem
+Výraznou dominantou novinky je 15palcový dotykový mini-LED displej PixelSense Ultra s poměrem stran 3:2. Nabízí jemnost 262 pixelů na palec a špičkový jas v HDR až 2000 nitů. Microsoft jej cílí především na profesionály, kteří potřebují přesně posuzovat barvy a expozici.
+Zvětšil se také haptický touchpad, a to o více než 30 procent proti předchozí generaci. Vedle přesnějšího ovládání má nabídnout haptickou odezvu v podporovaných funkcích a aplikacích.
+Výrobce se zároveň vyhnul trendu, kdy kvůli tenkému tělu z notebooků mizí prakticky všechny konektory. Surface Laptop Ultra nabízí USB-C, klasické USB-A, HDMI, sluchátkový konektor i plnohodnotnou čtečku SD karet.
+Jednou ze specialit má být navíc USB-C port s odpojovacím mechanismem. Funguje na podobném principu jako MagSafe od Applu nebo Surface Connect. Pokud někdo zakopne o připojený kabel, ten se má od notebooku odpojit místo toho, aby celý počítač stáhl ze stolu. Podle Windows Central jde o první notebook, který podobné řešení nabízí u standardního USB-C konektoru.
+Levná záležitost to nebude
+Surface Laptop Ultra je nejvýkonnějším a zároveň nejdražším počítačem z rodiny Surface, jaký Microsoft dosud nabídl. Základní konfigurace vyjde na 2599 dolarů (56 600 Kč).
+Za tuto částku zákazník získá mimo jiné 15palcový mini-LED displej a 18jádrový RTX Spark s 5120 GPU jádry a 24 GB operační paměti. Už základní provedení má mít dostatek výkonu například pro střih videa, úpravu fotografií, práci s daty, 3D modelování či méně náročné hraní.
+Předobjednávky byly pro vybrané zahraniční trhy spuštěny ve středu 7. října. První kusy se mají k zákazníkům dostat 16. října. Kdy a za kolik se novinka bude nabízet v České republice, zatím není jasné.

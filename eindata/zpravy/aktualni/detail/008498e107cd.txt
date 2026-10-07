@@ -1,0 +1,17 @@
+(od našeho zpravodaje)
+Microsoft si podrobnosti o programu až do poslední chvíle pečlivě střežil. Očekává se, že prim nebude hrát úplně nová verze operačního systému Windows, ale spíše velká aktualizace aktuálně nabízených jedenáctek.
+Samotný Microsoft lákal na středeční událost stručným heslem: „Windows. Surface. Nvidia RTX Spark. Přijďte se podívat, co bude dál.“
+Je takřka jasné, že vedle Windows se bude Microsoft snažit zaujmout také novou generací svých počítačů řady Surface a že řeč přijde i na chystanou AI platformu Nvidia Spark. V San Francisku je již reportér Novinek, který bude o odhalených produktech informovat přímo z místa v samostatných článcích.
+Windows postavené kolem AI
+Jedním z hlavních témat celé prezentace má být lokální umělá inteligence a její role v další generaci osobních počítačů. Microsoft se v posledních letech snaží AI stále těsněji propojovat se samotným operačním systémem a aktuální prezentace má naznačit, kam bude tento vývoj pokračovat.
+Důležitou roli přitom bude hrát AI platforma Nvidia RTX Spark. Microsoft a Nvidia spolupracují na úpravách Windows, které mají umožnit lépe využívat výkonný hardware pro provoz umělé inteligence přímo na počítači.
+Právě dnešní tiskovka tak má odstartovat „novou éru Windows“, ve které bude umělá inteligence ještě výraznější součástí celého systému.
+Vedle AI se očekává také větší modernizace prostředí Windows 11. Microsoft už nějakou dobu nahrazuje prvky, jejichž kořeny sahají desítky let do minulosti. V testovacích verzích systému se například objevilo modernizované okno Vlastnosti souboru s podporou tmavého režimu. Novou podobu dostává také Automatické přehrávání, Správa tisku či dialogové okno Spustit.
+Nový hardware
+Pozornost bude upřena také na počítače Surface a platformu RTX Spark. Microsoft už letos ukázal například Surface RTX Spark Dev Box, kompaktní počítač určený především pro vývojáře pracující s umělou inteligencí.
+Stroj nabízí výkon pro AI až jeden petaflop a 128 GB sjednocené paměti. Díky tomu má zvládnout náročné úlohy spojené s umělou inteligencí přímo lokálně, bez nutnosti přesouvat veškeré výpočty do cloudu.
+Microsoft jej vybavil Windows 11 Pro upravenými pro potřeby vývojářů. Součástí systému jsou například Visual Studio Code, Windows Subsystem for Linux (WSL), PowerShell 7 či nástroje využívající GitHub Copilot.
+Velkou pozornost bude poutat také Surface Laptop Ultra, který Microsoft představil už na konci května jako svůj dosud nejvýkonnější notebook Surface. Stále ale jde o produkt před uvedením na trh a firma zatím neoznámila jeho cenu ani termín zahájení prodeje.
+Stroj využívá platformu RTX Spark a nabídne až 128 GB sjednocené paměti, podporu CUDA a výkon pro AI až jeden petaflop. Podle Microsoftu má být dostatečně výkonný na to, aby přímo v počítači dokázal provozovat AI modely se 120 miliardami parametrů.
+Výbavu doplňuje 15palcový mini-LED displej PixelSense Ultra s maximálním jasem HDR až 2000 nitů, větší haptický touchpad, HDMI, USB-A a čtečka SD karet plné velikosti.
+I když o nových strojích toho víme již poměrně dost, některé detaily zatím chybí. A hlavně ještě novinky od Microsoftu nejsou v prodeji. To vše by se mohlo změnit po středeční tiskovce.

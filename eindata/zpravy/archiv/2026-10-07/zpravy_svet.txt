@@ -1,3 +1,474 @@
+|T|Studentské nepokoje se rozšířily i do Belgie|D|07.10. 19:26|P|Francouzské studentské nepokoje se v posledních dnech rozšířily i do belgického Lutychu, kde bylo v souvislosti s nimi dosud podle místních médií zadr...|X|Studentských protestů v Lutychu se účastní stovky lidí, informuje agentura Reuters. Vadí jim nárůst výdajů spojených se vzděláním, přeplněné třídy a nízká dostupnost studijních materiálů. Demonstranti proto drží nad hlavami transparenty s nápisy jako „Je to bordel, bojujeme za právo! Ne za privilegium!“ nebo „Chci vzdělání, ne Hunger Games!“.
+Zadržení jedinci podle belgických médií nejčastěji čelí obvinění z poškození cizího majetku nebo žhářství. Policie údajně ve středu demonstranty i prohledávala, aby se ujistila, že u sebe nemají zbraně.
+Belgická vláda kvůli protestům ve čtvrtek lutyšské obchodníky vyzvala, aby své obchody zavřeli dříve. Zavřené nějakou dobu bylo i hlavní lutyšské vlakové nádraží, ale to již znovu otevřelo. Policie rovněž vyzvala, aby se lidé vyhnuli centru města.
+Někteří z účastníků lutyšských protestů uvedli, že jsou v kontaktu s francouzskými demonstranty. „Vzájemně se podporujeme, protože čelíme v podstatě stejným problémům,“ řekl devatenáctiletý Alfred.
+Kvůli školským reformám, které zahrnují navýšení školného pro většinu francouzsky mluvících studentů z 835 na 1194 eur (z 20 380 na 29 142 korun), belgičtí studenti demonstrovali už v červnu, přičemž v Bruselu situace přerostla ve střety s policií.
+Protesty v sousední Francii tak pouze opět rozdmýchaly napětí, které v belgickém školství panuje. „Když jsme viděli, že se bez protestů nic nemění, rozhodli jsme se, že začneme… Francie nás trochu ovlivnila,“ řekla devatenáctiletá studentka pedagogiky Amelia Di Salveová.|E|
+|T|V Havířově se srazil autobus s dodávkou, sedm zraněných|D|07.10. 18:50|P|Sedm zraněných, včetně obou řidičů, si vyžádala dopravní nehoda dodávky a linkového autobusu, která se ve středu kolem čtvrté hodiny ranní stala v Hav...|X|Autobus po srážce s dodávkou značky Mercedes na křižovatce ulic Okružní, Lidická a Opletalova v Havířově-Šumbarku vyjel mimo silnici a narazil do přilehlého oplocení. Podle předběžných informací srážku zavinil 21letý řidič dodávky, který při vyjíždění z vedlejší ulice nedal přednost autobusu, za jehož volantem seděl 49letý muž.
+„Řidič nákladního vozidla jel po vedlejší ulici Lidická a nedal přednost v jízdě autobusu, který jel po hlavní ulici Okružní. Došlo ke střetu, autobus vjel do protisměru a zastavil se na travnaté ploše,“ popsala policejní mluvčí Petra Hrubá.
+„V autobusu cestovalo šest osob. Cestující autobus opustili samostatně, s výjimkou jedné ženy ze zadní části autobusu, kterou hasiči vynesli na páteřové desce. Hasiči až do příjezdu Zdravotnické záchranné služby poskytovali zraněným předlékařskou první pomoc,“ uvedla mluvčí Hasičského záchranného sboru Kamila Langerová.
+Zraněné záchranáři odvezli do havířovské nemocnice. „Na místě nehody zasahovaly celkem tři pozemní posádky. Přednemocniční péči a transport do havířovské nemocnice záchranáři zajistili u sedmi dospělých lidí, kteří utrpěli poranění lehčího charakteru,“ uvedla mluvčí záchranářů Jana Šedovičová.
+Dopravní nehodu šetří policisté z Karviné.|E|
+|T|Microsoft startuje novou éru Windows. Prim hraje AI|D|07.10. 18:50|P|Od 19. hodiny středoevropského času se v americkém San Francisku koná velká tiskovka společnosti Microsoft, na které americký technologický gigant „st...|X|(od našeho zpravodaje)
+Microsoft si podrobnosti o programu až do poslední chvíle pečlivě střežil. Očekává se, že prim nebude hrát úplně nová verze operačního systému Windows, ale spíše velká aktualizace aktuálně nabízených jedenáctek.
+Samotný Microsoft lákal na středeční událost stručným heslem: „Windows. Surface. Nvidia RTX Spark. Přijďte se podívat, co bude dál.“
+Je takřka jasné, že vedle Windows se bude Microsoft snažit zaujmout také novou generací svých počítačů řady Surface a že řeč přijde i na chystanou AI platformu Nvidia Spark. V San Francisku je již reportér Novinek, který bude o odhalených produktech informovat přímo z místa v samostatných článcích.
+Windows postavené kolem AI
+Jedním z hlavních témat celé prezentace má být lokální umělá inteligence a její role v další generaci osobních počítačů. Microsoft se v posledních letech snaží AI stále těsněji propojovat se samotným operačním systémem a aktuální prezentace má naznačit, kam bude tento vývoj pokračovat.
+Důležitou roli přitom bude hrát AI platforma Nvidia RTX Spark. Microsoft a Nvidia spolupracují na úpravách Windows, které mají umožnit lépe využívat výkonný hardware pro provoz umělé inteligence přímo na počítači.
+Právě dnešní tiskovka tak má odstartovat „novou éru Windows“, ve které bude umělá inteligence ještě výraznější součástí celého systému.
+Vedle AI se očekává také větší modernizace prostředí Windows 11. Microsoft už nějakou dobu nahrazuje prvky, jejichž kořeny sahají desítky let do minulosti. V testovacích verzích systému se například objevilo modernizované okno Vlastnosti souboru s podporou tmavého režimu. Novou podobu dostává také Automatické přehrávání, Správa tisku či dialogové okno Spustit.
+Nový hardware
+Pozornost bude upřena také na počítače Surface a platformu RTX Spark. Microsoft už letos ukázal například Surface RTX Spark Dev Box, kompaktní počítač určený především pro vývojáře pracující s umělou inteligencí.
+Stroj nabízí výkon pro AI až jeden petaflop a 128 GB sjednocené paměti. Díky tomu má zvládnout náročné úlohy spojené s umělou inteligencí přímo lokálně, bez nutnosti přesouvat veškeré výpočty do cloudu.
+Microsoft jej vybavil Windows 11 Pro upravenými pro potřeby vývojářů. Součástí systému jsou například Visual Studio Code, Windows Subsystem for Linux (WSL), PowerShell 7 či nástroje využívající GitHub Copilot.
+Velkou pozornost bude poutat také Surface Laptop Ultra, který Microsoft představil už na konci května jako svůj dosud nejvýkonnější notebook Surface. Stále ale jde o produkt před uvedením na trh a firma zatím neoznámila jeho cenu ani termín zahájení prodeje.
+Stroj využívá platformu RTX Spark a nabídne až 128 GB sjednocené paměti, podporu CUDA a výkon pro AI až jeden petaflop. Podle Microsoftu má být dostatečně výkonný na to, aby přímo v počítači dokázal provozovat AI modely se 120 miliardami parametrů.
+Výbavu doplňuje 15palcový mini-LED displej PixelSense Ultra s maximálním jasem HDR až 2000 nitů, větší haptický touchpad, HDMI, USB-A a čtečka SD karet plné velikosti.
+I když o nových strojích toho víme již poměrně dost, některé detaily zatím chybí. A hlavně ještě novinky od Microsoftu nejsou v prodeji. To vše by se mohlo změnit po středeční tiskovce.|E|
+|T|Muskova SpaceX si chce půjčit stovky miliard na čipy|D|07.10. 18:45|P|Vesmírná společnost SpaceX amerického miliardáře Elona Muska jedná s bankami a investory, aby získala čtyřicet miliard dolarů, tedy zhruba 866 miliard...|X|„Muskův konglomerát zabývající se umělou inteligencí, satelity a raketami se snaží získat přibližně deset miliard dolarů v bankovních úvěrech a třicet miliard dolarů prostřednictvím dluhopisů,“ uvedla agentura Bloomberg.
+Jednání jsou zatím v rané fázi a mohou skončit i bez dohody. Financování má vést investiční společnost Apollo Global Management a transakce by měla být dokončena v příštím roce.
+Musk minulý měsíc uvedl, že datové centrum Colossus 2 provozované v rámci AI aktivit SpaceX by mohlo do prosince více než zdvojnásobit počet používaných čipů Nvidia. Firma podle něj plánuje při budování svých datových center používat výhradně hardware této společnosti.|E|
+|T|Ukradl ventilky a pak se zjistilo, že je v celostátním pátrání. Hrozí mu dva roky|D|07.10. 18:43|P|Na dva roky za mříže může dovést sedmačtyřicetiletého recidivistu banální krádež ventilků na jízdní kola v jednom z obchodů v Olomouci. Chytila ho ost...|X|Muž se pokusil ventilky ukrást v jednom obchodním centru. „Ostrahou byl zadržen za pokladnami, kde se ke krádeži zboží v hodnotě 110 korun přiznal. Následnou kontrolou bylo přivolanými policisty zjištěno, že muž podezřelý z krádeže je v celostátním pátrání,“ informoval policejní mluvčí Jaroslav Herzán.
+Kvůli čemu policisté po muži pátrali, policie neupřesnila.
+„Muž byl již v minulosti za majetkovou trestnou činnost odsouzen. Policisté zahájili trestní řízení pro přečin krádeže, za který muži hrozí kromě jiného až dvouletý trest odnětí svobody,“ doplnil policejní mluvčí.|E|
+|T|Fotku s Rolling Stones nesmíme zveřejnit, řekl Petr Janda na křtu alba a klipu Olympiku|D|07.10. 18:26|P|Na křest svého nového výběrového alba „21 nej, 1965-2026“ dorazila skupina Olympic na člunu. Ve středu se odehrál v restauraci na Střeleckém ostrově v...|X|Kolekce „21 nej, 1965-2026“ navazuje na kompilaci Olympiku 12 nej z roku 1976. Motiv času symbolizovaný archaickým budíkem se po padesáti letech na jejím obalu vrátil v modernizované podobě s násobenými ciferníky.
+Z původních dvanácti skladeb se výběr rozrostl na jednadvacet položek, které mapují klíčové etapy skupiny.
+„Jakmile v roce 1976 album 12 nej vyšlo, po asi čtrnácti dnech bylo z prodeje staženo. Pavel Chrastina, textař převážné části písniček, totiž emigroval do Austrálie a komunista usoudil, že je třeba desku neprodávat. Kdo tedy má originál, má velkou vzácnost,“ řekl Petr Janda.
+Jednadvacátou písničkou na albu je novinka Až to Stouni zabalí. Text k ní napsal Lukáš Pavlásek.
+„Neměl jsem nejmenší tušení, že Lukáš píše texty. A pěkné texty. Jednou mi řekl, že četl nějaký rozhovor se mnou, ve kterém jsem řekl, že až to zabalí Rolling Stones, zabalím to taky. Dodal, že se mu to tak líbilo, že na to téma napsal text. Myslel jsem si, že to bude nějaký blábol, ale musím říct, že je opravdu nádherný. Rád zpívám hezké texty, a tohle je jeden z nich,“ konstatoval Janda a přítomnému Pavláskovi na křtu za jeho práci poděkoval.
+Protože text nové písně je tak trochu o britské skupině Rolling Stones, zavzpomínal Janda pro Novinky na koncert Olympiku s nimi v červenci 2003 na Letenské pláni v Praze.
+„Tenkrát jsem se dostal do velkého světa,“ řekl. „Do světa největší kapely historie. Měla šatnu v útrobách stadionu Sparty, kam nás samozřejmě její ochranka nepustila. Viděl jsem ale, jak v zákulisí všechno fungovalo. Stouni tam měli spoustu lidí, kteří se o ně starali, bylo jich asi dvě stě. Měli veškerý komfort.“
+Prozradil také, že jim bylo slíbeno, že se budou moci po koncertě se členy Rolling Stones vyfotografovat.
+„Čekali jsme na ně asi hodinu a půl. Když konečně vylezli, zvedl se mi tep. Byl to pro mě silný zážitek. Oni ale šli rovnou do mikrobusu, který tam byl přistavený. Já na ně houkl, že máme domluvené focení, a oni se omluvili, vylezli z autobusu a stoupli si k nám,“ vyprávěl Janda.
+„Byl tam jejich fotograf. V té době ještě nebyl digitál, takže on si stoupl, byl naprosto otrávený a jednou ten svůj foťák zmáčkl. Dlouho jsme pak kapelu žádali, aby nám tu fotku poslala. Dala si na čas, ale nakonec to udělala. S ní přišel pokyn, že fotku nesmíme veřejně použít, nesmíme ji vydat v tisku, v knize ani nikde vystavovat. V podstatě to znamenalo, že si ji můžeme prohlížet jen my sami. Ale my ji stejně všem ukázali. Tu fotku pořád mám,“ dodal.|E|
+|T|Zeptali jsme se prezidenta, zda se vrátí na volby. Odpověděla nám první dáma|D|07.10. 18:26|P||X|Novinky.cz
+Vyhledat
+Osobní menu
+Seznam.cz
+Hlavní menu
+Zavřít menu
+Hlavní stránka
+Moje sledované
+Stalo se
+Domácí
+Volby
+Komunální volby
+Volby do Senátu
+Parlamentní volby
+Krajské volby
+Prezidentské volby
+Eurovolby
+Volby USA
+Zahraniční
+Evropa
+Blízký a Střední východ
+Amerika
+Svět
+Válka na Ukrajině
+Krimi
+Kultura
+Film
+Hudba
+TV a streaming
+Knihy
+Divadlo
+Ekonomika
+Lifestyle
+Dítě a rodina
+Zdraví
+Sex a vztahy
+Móda a kosmetika
+Osobnosti
+Gastro
+Recepty
+Bydlení
+Zahrada
+Jak na to
+Koktejl
+Internet a PC
+Hardware
+Software
+Testy
+Hry a herní systémy
+Mobil
+Bezpečnost
+AI
+AutoMoto
+Testy
+Rallye Dakar
+Autosalon Ženeva
+Autosalon Frankfurt
+Tuning
+Sauto.cz »
+Smoto.cz »
+Věda a školy
+Vzdělávání
+Cestování
+Tipy na výlety
+Sdovolená.cz »
+Tipy na výlety na Mapy.cz »
+Historie
+17. listopad
+Podcasty a pořady
+Sport
+Kvízy
+Speciály
+Dokumenty
+Počasí
+TV program
+Denní tisk
+Zprávy
+Ekonomika
+Internet a PC
+AutoMoto
+Žena
+Bulvár
+Sport
+Bydlení
+Cestování
+Ostatní
+Tiráž
+Zobrazení snímku 1 z 0
+záhlaví
+Hlavní menu
+Hlavní stránka
+Stalo se
+Domácí
+Volby
+Zahraniční
+Válka na Ukrajině
+Krimi
+Kultura
+Ekonomika
+Lifestyle
+Koktejl
+Internet a PC
+AutoMoto
+Věda
+Cestování
+Historie
+Podcasty a pořady
+Sport
+Kvízy
+Speciály
+Počasí
+TV program
+Denní tisk
+Sledované
+Drobečková navigace
+Novinky.cz
+Vtipy
+Zeptali jsme se prezidenta, zda se vrátí na volby. Odpověděla nám první dáma
+Hlavní obsah
+Zeptali jsme se prezidenta, zda se vrátí na volby. Odpověděla nám první dáma
+vain
+eBook
+Dnes 7. 10., 18:26
+Vrátí se Pavel k volbám?
+Video: Vain, Novinky
+Vtipy »
+Přeskočit carousel
+Haló, je to prokázaný! Zdravej selskej rozum je produktem umělý inteligence...
+Miroslav Kemel
+Ale kdepak. Že bych chtěl vracet bojeschopné Ukrajince na Ukrajinu, jsem nemyslel vážně. To je čistej populismus...
+Miroslav Kemel
+Čemu na tom nerozumíte? Před utažením o jednu dírku ho nejdříve o pět dírek povolíme...
+Miroslav Kemel
+Švejk má vždy pravdu
+vain
+Co je to s tebou, Fando? Na Fialovu drahotu jsi nadával a s Babišovou se mazlíš...
+Miroslav Kemel
+Ale můžete tu svoji kulturní koncepci vystavit na výstavě abstraktního umění...
+Miroslav Kemel
+Proč by dotace Agrofertu měli platit naši občani? Ať je zaplatí Ukrajinci!
+Miroslav Kemel
+Jo, z vládních pozic ví každej, jak se dělá opozice. Ale když se do tý opozice propracujete, skutek utek...
+Miroslav Kemel
+Těžký soupeř
+Tomáš Řemínek
+Toho číšníka odněkud známe...
+vain
+Zobrazení snímku 1 z 10
+1
+Související témata:
+Vtipy
+Filip Turek
+Postranní panel
+Výběr článků
+Načítám
+Postranní panel
+Zeptali jsme se prezidenta, zda se vrátí na volby. Odpověděla nám první dáma - Novinky|E|
+|T|V Gruzii zadrželi muže, který plánoval prodej uranu za miliony|D|07.10. 18:20|P|V Gruzii zadrželi muže, který plánoval cizinci prodat uran-238 v hodnotě 700 tisíc dolarů (15,3 milionu korun), oznámila ve středu gruzínská národní b...|X|Gruzínská národní bezpečnostní služba zároveň s oznámením o zadržení podezřelého zveřejnila video policejního zásahu. Na něm je vidět, jak ozbrojení členové bezpečnostních složek muže vytáhli z auta, ve kterém posléze našli dvě nádoby, jež otestovali detektorem radiace.
+Ukraine war update
+The Georgian State Security Service (SUS) detained a Georgian citizen suspected of illegally possessing nuclear material & planning to sell uranium-238 to a foreign national for $700,000
+The quantity of nuclear material or identify of the buyer not disclosed pic.twitter.com/Y4i9uQ4oqq
+— MidnightVisions (@MidnightVision5) October 7, 2026
+Uran-238 je nejběžnějším izotopem uranu. Je sice radioaktivní, ale na výrobu jaderných zbraní nestačí, informuje agentura Reuters. Kolik ho zadržený muž u sebe měl a komu jej chtěl prodat, gruzínská bezpečnostní služba neuvedla.
+Gruzie se s ilegálním obchodem s jaderným materiálem potýká prakticky od pádu Sovětského svazu v roce 1991. Naposledy v únoru byli v Gruzii zadrženi dva lidé, kteří se pokusili koupit uran v hodnotě 3 milionů dolarů (65,5 milionu korun) a zásobu radioaktivního izotopu nalezeného v rámci programů testů jaderných zbraní.|E|
+|T|Omluva, ve které se znovu lže, nestačí, pane Turku, vzkazuje poslanci Hnutí DUHA|D|07.10. 18:17|P|Poslanec za Motoristy Filip Turek tvrdí, že se ve videu zveřejněném v úterý na Facebooku omluvil Hnutí DUHA přesně těmi slovy, které mu nařídil soud. ...|X|Turek nejprve na základě zářijového rozhodnutí pražského městského soudu zaslal v pátek omluvu za své nepravdivé výroky Hnutí DUHA prostřednictvím datové schránky. Další součástí verdiktu bylo zveřejnění omluvy na sociální síti, kde ji má ponechat po dobu nejméně sedmi dnů. K té ale v úterý přidal Turek další vyjádření, v nichž na ekologickou organizaci útočí.
+„Ve videu na Facebooku přesně rekapituluji slova, která uložil rozsudkem soud. Svou povinnost jsem tedy splnil přesně stanoveným způsobem. Forma videa naopak poskytla mé omluvě dodatečný dosah. Považuji to za vyřízené,“ napsal ve středu Turek ČTK.
+Zástupci Hnutí DUHA ve středu na sociální síti Turkovu omluvu označili za nedostatečnou. „Filip Turek včera (v úterý) na svém Facebooku zveřejnil video s omluvou Hnutí DUHA. Bohužel se v něm dopouští dalších lživých výroků, a tak jej nemůžeme považovat za řádnou omluvu. Čekáme tedy na omluvu, která bude v souladu s verdiktem soudu. Doufáme, že se tentokrát pan Turek postaví k této povinnosti zodpovědně,“ uvedlo hnutí.
+Pod Turkovu fotografii pak přidalo ještě kritiku: „Omluva, ve které se znovu lže, nestačí, pane Turku.“ „Pokud Filip Turek nezveřejní omluvu, která je v souladu s verdiktem soudu, budeme ji muset vymáhat dalšími právními kroky,“ dodalo hnutí na svém profilu.|E|
+|T|Ficova vláda už chystá předvolební dárečky|D|07.10. 17:57|P|Platy slovenských státních zaměstnanců se mají od 1. července 2027 zvýšit o 8,4 procenta. Dohoda vlády Roberta Fica (Směr) s odbory se týká mimo jiné ...|X|Dohodu pro portál Aktuality.sk potvrdil šéf policejních odborů Peter Jakubík. Zvýšení má přijít několik týdnů před očekávaným termínem parlamentních voleb.
+„Z mého pohledu je to vzhledem k tomu, že tři roky nedošlo k žádné valorizaci, taková slabá náplast pro státní zaměstnance a zaměstnance pracující ve veřejném zájmu. Jsme ale rádi, že jsme se dohodli alespoň na nějakém kompromisu,“ uvedl Jakubík.
+Konfederace odborových svazů původně požadovala zvýšení platů o deset procent. Stát navrhoval 4,2 procenta. Výsledných 8,4 procenta podle Jakubíka představuje kompromis. Odbory zároveň chtěly, aby se dohoda promítla přímo do státního rozpočtu. „Vláda s tím souhlasila, a tak jsme se dohodli na 8,4 procenta. Kolektivní smlouvy by se už měly připravovat na úřadu vlády,“ dodal.
+Rozpočet se má změnit
+Vládou schválený návrh rozpočtu původně uváděl u valorizace platů nulu. Kabinet argumentoval tím, že jednání s odbory pokračují a peníze zatím ponechává v kapitole Všeobecná pokladní správa.
+Finanční krytí dohodnutého zvýšení má zajistit pozměňovací návrh místopředsedy parlamentního výboru pro finance a rozpočet Daniela Karase z vládní strany Směr. Ten počítá s valorizací platových tarifů o 8,4 procenta od 1. července příštího roku.
+Návrh výslovně zahrnuje pedagogické pracovníky, hasiče, záchranáře, policisty, příslušníky finanční správy, Slovenské informační služby, Sboru vězeňské a justiční stráže, Národního bezpečnostního úřadu a profesionální vojáky.
+Policisté mají dostat i příplatek
+Ministr vnitra Matúš Šutaj Eštok policistům navíc slibuje zvýšení rizikového příplatku o 150 eur (3 600 korun) měsíčně už od 1. ledna 2027. Příplatek se započítává také do výsluhových nároků.
+Podle ministra by lednové zvýšení příplatku a červencová valorizace měly běžnému policistovi dohromady přinést přibližně 350 eur (8 400 korun) měsíčně navíc. Nejde tedy o samostatné červencové zvýšení o tuto částku, ale o celkový dopad obou kroků.|E|
+|T|Šéf Anthropiku bral za rok „jen“ 18 milionů dolarů|D|07.10. 17:54|P|Před vstupem na burzu se poprvé ukázalo, kolik si šéf firmy za chatbotem Claude přijde. Dario Amodei, americký výzkumník, podnikatel a generální ředit...|X|Odměna převýšila 10,9 milionu dolarů šéfa Alphabetu, mateřské firmy Googlu, Sundara Pichaie. Zaostala ale za 35,5 milionu dolarů šéfa výrobce čipů Nvidie Jensena Huanga.
+U zakladatelů ale roční odměna často nehraje zásadní roli. Pokud se firmě daří a akcie rostou, mohou podle Courtneyho Yua, ředitele výzkumu společnosti Equilar, která analyzuje odměňování manažerů, „žít z bohatství, které už díky svému podílu mají“.
+Anthropic poslal už v červnu americkému úřadu pro cenné papíry důvěrný návrh dokumentů potřebných ke vstupu na burzu. Termín zatím není stanoven a závisí na situaci na trzích. Firma by při vstupu mohla dosáhnout ocenění přes dva biliony dolarů.
+Dario Amodei a jeho sestra Daniela, prezidentka Anthropiku, si v červenci zdvojnásobili roční plat na 1,4 milionu dolarů, tedy asi 30 milionů korun. Většinu odměn ale tvoří akcie a opce. Daniela díky nim loni získala celkem 16,4 milionu dolarů, tedy asi 355 milionů korun, napsala agentura Reuters.
+Správní rada jim letos přislíbila další akcie, část vázanou na jejich působení ve firmě a část na vstup na burzu. Kolik akcií Amodei vlastní, dokumenty neuvádějí. Zakladatelé se zavázali věnovat 80 procent svých podílů na dobročinnost.|E|
+|T|Na Vltavě a Labi platí ve Středočeském kraji stav nedostatku vody|D|07.10. 17:50|P|Ve Středočeském kraji platí od středy na řekách Vltava a Labe stav nedostatku vody. Rozhodla o tom krajská komise pro sucho. Kvůli dlouhodobě nepřízni...|X|Povolené odběry vody zatím zůstávají bez omezení, uvedly ve středeční tiskové zprávě zveřejněné na webu ministerstvo zemědělství, Povodí Vltavy a Středočeský kraj.
+„S ohledem na dlouhodobou nepříznivou hydrologickou situaci v povodí Vltavy, která způsobila i snížení hladin v přehradách Orlík a Slapy a s ohledem na výhledový nedostatek srážek, zasedala dnes (ve středu) Komise pro zvládání sucha a nedostatku vody Středočeského kraje,“ uvedly úřady ve zprávě.
+Komisi svolala hejtmanka Petra Pecková (STAN) na žádost Povodí Vltavy kvůli snížení minimálního odtoku v profilu Vrané, aby bylo možné co nejdéle nadlepšovat průtoky z Vltavské kaskády na dolním toku Vltavy a Labe na území Středočeského kraje.
+„V této části Středočeského kraje komise rozhodla o vyhlášení stavu nedostatku vody pro vodní tok Vltavy a Labe,“ napsali autoři zprávy.
+Kvůli suchu i předpovědím, které v nejbližší době nepředpokládají větší srážky, požádalo Povodí Vltavy komisi, aby odsouhlasila mimořádnou manipulaci na Vraném, která spočívá v možnosti snížení minimálního odtoku z 35 metrů krychlových za sekundu v případě potřeby až na 20 metrů krychlových až do 30. dubna 2027.
+„Účelem mimořádné manipulace je zpomalení snižování hladiny vody ve Slapech a případně i dále v Orlíku, do doby, než se hydrologická situace zlepší díky srážkám,“ vysvětlil úřad ve svém prohlášení.
+Současně s mimořádnou manipulací komise projednala i snížení minimálního zůstatkového průtoku ve vztahu k povoleným nakládáním s vodami na 20 m3/s. V profilu Praha Chuchle bude udržován minimální průtok Vltavy o hodnotě 24 m3/s.
+„Všechna povolení nakládání s vodami zatím zůstávají bez omezení,“ dodalo ministerstvo a další úřady s tím, že nakládání s vodami na dolním toku Vltavy a Labe může být nadále zajišťováno v plném rozsahu.
+V polovině září klesla hladina Slapské přehrady pod 267,5 metru nad mořem, a dostala se tak na úroveň stanovenou pro zimní období. Neobvykle brzký pokles způsobilo extrémní hydrologické sucho.|E|
+|T|Ukrajinský robot uvízl na cestě, zachránila ho babička na kole|D|07.10. 17:48|P|Babička na kole se stala hlavní hrdinkou záchrany ukrajinského vojenského robotického vozidla, které v Sumské oblasti poškodila ruská mina, na niž naj...|X|Jako nepohyblivé skončilo podle serveru Censor.NET ukrajinské vojenské robotické vozidlo, které během plnění bojového úkolu v Sumské oblasti najelo na ruskou minu. Armáda nasadila na jeho evakuaci další robotickou platformu, ale nepodařilo se jej na dálku připojit k odtahu, uvedli vojáci ze 71. první samostatné aeromobilní brigády 8. sboru výsadkových útočných sil.
+V tu chvíli projížděla po silnici, kde se ukrajinští dronaři marně snažili na dálku oba roboty spojit, místní žena na kole. Když viděla oba roboty, zastavila a pomohla připravit poškozené vozidlo na evakuaci. Funkční robot poté dokázal odtáhnout svého poškozeného „kolegu“ z nebezpečné zóny.
+Výsadkáři poděkovali babičce za její obrovskou odvahu na Facebooku.
+Jsme rádi, ale neriskujte, varují výsadkáři
+„Jsme upřímně hrdí na odvahu a ochotu této ženy pomoci. Navzdory jejímu hrdinství vás však vyzýváme, abyste se nevystavovali nebezpečí,“ uvedli. Oba stroje se podle nich vrátily na základnu, kdy ten poškozený opravili.
+Pozemní robotické komplexy, dálkově ovládaná vozidla, používá ukrajinská armáda například k bezpečné evakuaci zraněných a přepravě zásob pro pěchotu na frontových pozicích. Nasazení robotických systémů podle generálního štábu ukrajinské armády dokáže snížit v příslušných úsecích přední linie ztráty až o třetinu.
+Jeden z nich, pozemní robotický systém Ljut, je určen pro sledování a palebnou podporu, vyznačuje se vysokou manévrovatelností. Jeho tvůrci ho vybavili kulometem ráže 7,62 mm a senzory, které mu umožňují detekovat a zasahovat cíle ve dne i v noci.|E|
+|T|Evropa si připomněla oběti teroristů z Hamásu. Lidé se sešli i v Praze|D|07.10. 17:21|P|Německý kancléř Friedrich Merz, francouzský prezident Emmanuel Macron, britský premiér Andy Burnham či šéfka Evropské komise Ursula von der Leyenová v...|X|Německý kancléř Friedrich Merz, francouzský prezident Emmanuel Macron, britský premiér Andy Burnham či šéfka Evropské komise Ursula von der Leyenová ve středu u příležitosti třetího výročí teroristického útoku palestinského hnutí Hamás na Izrael slíbili bojovat proti antisemitismu a zasadit se o mírové soužití Izraelců a Palestinců. V řadě evropských měst se pak konaly vzpomínkové akce, například v Berlíně a Londýně. V Praze se sešlo dle odhadů několik set lidí. V Londýně se konal i pochod na podporu Palestinců, kde několik účastníků vyzvalo k intifádě, tedy k palestinskému povstání.
+Německý kancléř Merz slíbil pokračovat v boji proti antisemitismu v Německu, zároveň podpořil takzvané řešení dvou států, kdy by na Blízkém východě vedle sebe existovaly Izrael a nezávislý stát Palestinců. „Německo stojí pevně na straně Izraele. Naši izraelští přátelé si mohou být jistí, že takový zločin se již nikdy nestane,“ citoval Merze list The Guardian.
+Macron řekl, že Francie sdílí žal rodin obětí. „Nezapomínáme na jména a tváře,“ vyzval francouzský prezident, který několik obětí jmenoval. Dodal, že francouzský závazek bojovat proti antisemitismu a terorismu kdekoli a kdykoli a budovat mír a bezpečnost pro všechny trvá.
+Britský premiér Burnham na síti X napsal, že Británie vzpomíná na lidi zavražděné teroristy z Hamásu. „Dopad tohoto útoku nepociťuje jen Izrael, ale i židovské komunity po celém světě, které nadále nesou břímě tragických událostí toho dne,“ podotkl Burnham. Výslovně pak ujistil britskou židovskou komunitu, že násilí proti ní nebude tolerováno – ať se bude dít na ulicích, ve školách či na internetu. „Útok na Židy v Británii je útokem na nás všechny. Antisemitismus v této zemi nemá místo,“ zdůraznil.
+Šéfka Evropské komise von der Leyenová prohlásila, že Evropská unie stojí po boku těch, jejichž životy se po útoku „navždy změnily“. Zároveň poznamenala, že evropský blok je připraven přispět k přetvoření nynějšího křehkého příměří v trvalý mír založený na řešení v podobě dvou států.
+Připomínka v Berlíně
+Oběti teroristického útoku v Izraeli si ve středu na berlínském Bebelově náměstí v centru metropole připomněly stovky lidí, policie jich po zahájení piety napočítala asi 1700. Na shromáždění přišla řada lidí s izraelskými vlajkami. Agentura DPA uvedla, že akce se zúčastnili mimo jiné izraelský velvyslanec v zemi Ron Prosor či spolkový ministr vnitra Alexander Dobrindt.
+Místo je symbolické – nachází se zde památník nacistického pálení knih v květnu 1933. Tehdy zde studenti z nacistického studentského svazu za účasti řady univerzitních profesorů v plamenech zničili tisíce knih především židovských a levicových autorů.
+DPA poznamenala, že v Berlíně se konaly i další menší vzpomínkové akce – mimo jiné v Kreuzbergu nebo u někdejšího přechodu Checkpoint Charlie na hranici dříve rozdělující východní a západní sektor Berlína. I zde se sešly stovky lidí. U Braniborské brány vystavila německá židovská studentská unie dlouhý stůl s 500 prázdnými židlemi. Na stůl umístila fotografie obětí útoku. Večer pak Braniborskou bránu nasvítí projekce izraelské vlajky.
+Setkání v Praze
+Třetí výročí útoků palestinského teroristického hnutí Hamás na Izrael si ve středu v Praze na náměstí Jana Palacha připomnělo dle odhadů několik set lidí. Vzpomínkové setkání Nezapomeneme! uspořádala před Rudolfinem Česká společnost přátel Izraele.
+Účastníci akce si přišli podle organizátora připomenout oběti útoku a vyjádřit solidaritu s rodinami, jimž atak a následující válka změnily život. Mnozí měli v rukou izraelské vlajky. Zazněly vzpomínky, modlitby, varování před antisemitismem i díky za podporu českým občanům. Na akci trvající zhruba hodinu dohlíželo několik desítek policistů a členů antikonfliktního týmu.
+Tuzemské ministerstvo zahraničí ve středu odsoudilo pokusy dělat z teroristů oběti a z obětí viníky. Terorismus nelze omlouvat ani relativizovat, napsalo na síti X.
+Hamás podle české diplomacie 7. října 2023 rozpoutal v Izraeli barbarství, jehož oběťmi byli nevinní lidé. Ministr pro sport, prevenci a zdraví Boris Šťastný (Motoristé) na pietě zmínil, že židovský stát zažil hlubokou ránu, jeho obyvatelé se znovu vracejí na nohy. Česko při tom stojí Izraeli po boku, akcentoval. Památku obětí uctil i pražský primátor Bohuslav Svoboda (ODS).
+Připomínkové akce se během dne konají i v dalších evropských městech, mimo jiné i v Londýně, kde je organizují britská židovská sdružení. Jedna z nich se večer uskuteční u sídla britských premiérů v Downing Street.
+Pochod na podporu Palestinců
+V Londýně se rovněž konal studentský pochod na podporu Palestinců, kde se asi stovka účastníků dožadovala svobody pro Palestinu. Policie podle listu The Guardian uvedla, že na demonstraci zadržela pět lidí, kteří vyzývali k arabskému povstání.
+Britský ministr obrany Wes Streeting označil pochod za ostudný, ministryně školství Lucy Powelová zase vyzývala studenty k soucitu a k odložení akce na jiný den.
+Před třemi lety, 7. října 2023, Hamás a další ozbrojené palestinské skupiny přepadly jih Izraele. Útoky, při nichž ozbrojenci zabili na 1200 lidí a dalších 251 odvlekli do Pásma Gazy, byly nejkrvavější v izraelské historii.
+Následné izraelské bombardování a pozemní invaze do Pásma Gazy podle tamního ministerstva zdravotnictví kontrolovaného Hamásem zabily 74 tisíc lidí. Tyto údaje, které OSN považuje za spolehlivé, nerozlišují mezi civilisty a ozbrojenci, ale podle zahraničních nevládních organizací přes 80 procent obětí byli civilisté.|E|
+|T|Do obřího daňového podvodu jsou zapleteny české firmy, škoda je skoro pět miliard|D|07.10. 17:17|P|Gigantický daňový podvod se škodou přes 4,8 miliardy korun, do něhož jsou zapleteny české firmy, rozplétá Úřad evropského veřejného žalobce (EPPO) v O...|X|Podvodníky se podařilo kriminalistům odhalit během akce s názvem Záblesk. Podíl na ní měla i Národní centrála proti organizovanému zločinu (NCOZ).
+„Vyšetřování se zaměřilo na skupinu osob podezřelých z účasti na dlouhodobém zločineckém schématu zahrnujícím dovoz elektronických zařízení ze třetích zemí, včetně Hongkongu, Spojených arabských emirátů a Spojených států, do Evropské unie prostřednictvím společností se sídlem v Česku,“ informoval o případu EPPO.
+Tuzemské firmy následně deklarovaly dodávky zboží v rámci společenství subjektům registrovaným v Maďarsku, Polsku a na Slovensku.
+„Ty však nevykonávaly žádnou skutečnou ekonomickou činnost, zboží nepřevzaly a neprováděly žádné platby,“ stojí ve zprávě s tím, že zboží bylo ve skutečnosti přepraveno do skladů nacházejících se poblíž ukrajinských hranic. „Tam si ho vyzvedly jiné osoby, které s ním dále nakládaly, aniž by zaplatily splatnou DPH.“
+K trestné činnosti docházelo od roku 2017 až do května 2024. Všechny zapojené tuzemské firmy měly sídlo v Praze. Státní zástupce Vít Koupil z ostravského pracoviště EPPO pro Novinky uvedl, že jak čtyři obvinění, tak i čtyři s návrhem dohod o vině a trestu, jsou fyzické osoby. „Protože právnické osoby v době, kdy probíhalo trestní stíhání, už byly nečinné,“ objasnil.
+Na adresu pachatelů poznamenal, že šlo buď o osoby ovládající jednotlivé firmy, nebo o osoby, které poskytovaly účetní služby. Jeden z obviněných pak tzv. naháněl bílé koně a druhý byl jednatelem a prováděl spíše servisní práce.
+Podle EPPO jde co do výše škody o jeden z dosud největších případů podvodů s DPH v Česku. Čtveřice pachatelů je obžalována ze závažných daňových podvodů. V případě odsouzení jim hrozí až desetiletý pobyt za mřížemi a propadnutí majetku.
+U těch, kteří chtějí uzavřít se žalobcem dohodu o vině a trestu, hrozí ve třech případech tresty odnětí svobody pět až šest let a propadnutí majetku, jedna osoba může dostat podmíněný trest. „Kromě toho všem obžalovaným hrozí desetiletý zákaz podnikání,“ stojí ve zprávě EPPO.|E|
+|T|Všech 32 států NATO po osmi letech vyslalo vojenské představitele do Kyjeva|D|07.10. 17:17|P|Všech 32 členských států NATO vyslalo v úterý své vojenské představitele do Kyjeva. Vojenský výbor se na místo vrátil poprvé po osmi letech. S ukrajin...|X|Delegaci vedl předseda Vojenského výboru NATO admirál Giuseppe Cavo Dragone, který se v úterý také setkal s vrchním velitelem ukrajinských ozbrojených sil Mychajlem Drapatým. Návštěva navázala na jejich předchozí jednání na začátku roku, kde Dragone slíbil, že se výbor do Kyjeva vrátí.
+„Po osmileté přestávce se Vojenský výbor NATO vrátil do Kyjeva na oficiální návštěvu. A i když jsme tu možná fyzicky nebyli, Ukrajina byla vždy v našich myšlenkách, diskusích, rozhodnutích a následných krocích – každý den,“ uvedl podle United24 Dragone.
+Během jednání se představitelé NATO zaměřili na aktuální vojenské potřeby Ukrajiny a situaci na bojišti. Zároveň diskutovali o zkušenostech z války s Ruskem, které by NATO mohlo využít ke zlepšení vlastní připravenosti na současné i budoucí bezpečnostní hrozby.
+Dragone uvedl, že NATO chce také zjistit, jaké další kroky mohou členské státy podniknout na podporu Ukrajiny. Ukrajinské velení proto poskytlo delegaci aktuální informace o vývoji na frontě.
+Zástupci všech 32 členských zemí také navštívili Zeď paměti v Kyjevě, kde uctili ukrajinské vojáky padlé při obraně země.|E|
+|T|Podvod za 95 milionů. Vedení pacovské bioplynky mělo fixlovat s elektřinou|D|07.10. 17:15|P|Řadu let podle policie podváděli dva dnes už bývalí spolumajitelé pacovské bioplynové stanice se zelenými bonusy. Hospodářská kriminálka z Vysočiny př...|X|„Jedním ze dvou obžalovaných je šestačtyřicetiletý Luděk H. a druhou obžalovanou je osmačtyřicetiletá Pavlína N. Společně se trestné činnosti dopouštěli v době od února roku 2013 do srpna roku 2020 v Pacově,“ uvedla policejní mluvčí Dana Čírtková k případu, který má brzy zamířit před soud.
+Obvinění působili jako jednatelé společnosti BPS Pacov, v níž měli dohromady pětasedmdesátiprocentní obchodní podíl společnosti s ručením omezeným. „Z tohoto titulu fakticky ovládali společnost, mohli sami rozhodovat o jejím chodu a ovládali také její účetnictví,“ zmínila mluvčí.
+Bioplynová stanice je v provozu od roku 2011, vyrábí elektrickou a tepelnou energii. Jenže vykázaná čísla se sedm a půl roku lišila od skutečně vyprodukované elektřiny. Kriminalisté proto mluví o podvodném obohacení.
+„Oba obžalovaní (…) opakovaně uplatňovali neoprávněný nárok na vyplacení zeleného bonusu, tedy příplatku k tržní ceně elektrické energie, který náleží výrobci elektřiny z obnovitelných zdrojů,“ popsala Čírtková.
+Nadhodnocovali množství elektřiny
+Od ledna 2013 do července 2020 podle policie vykazovali obvinění v informačním systému operátora trhu s elektřinou v položce „lokální spotřeba elektřiny“ násobně vyšší množství vyprodukované energie, než zařízení na okraji pětitisícového města skutečně vyrobilo.
+„Deklarované množství elektrické energie vyprodukované a zároveň podle obviněných využité jako lokální spotřeba zcela zjevně neodpovídalo reálné výrobě a lokální spotřebě u takto dimenzovaných bioplynových stanic,“ poukázala mluvčí s tím, že se policie opírá také o znalecké posudky.|E|
+|T|Při požáru kuchyně v bytovém domě v Ostravě se popálil muž|D|07.10. 17:08|P|Vážné popáleniny na více než dvaceti procentech těla utrpěl 39letý muž při požáru bytu v nejvyšším patře šestipatrového domu v Ostravě-Porubě. Zasažen...|X|Informaci o požáru přijalo operační středisko hasičů ve středu v 9:37 hodin. Na místo vyjely tři profesionální jednotky hasičů, zdravotníci i policisté. „Na místě se nacházela jedna zraněná osoba, kterou si převzali záchranáři. Evakuace obyvatel z přilehlých bytů nebyla zapotřebí. Okolnostmi a příčinami vzniku požáru se nyní zabýváme ve spolupráci s hasiči,“ uvedla policejní mluvčí Eva Michalíková.
+Hasiči z bytu vyprostili 39letého muže a předali ho záchranářům. „Utrpěl popáleniny na více než dvaceti procentech tělesného povrchu na horní polovině těla, zasažené měl také dýchací cesty. Okamžitě byla zahájena kyslíková terapie a ke zklidnění pacienta záchranáři na nosní sliznici aplikovali léky tlumící bolest a vědomí,“ popsala mluvčí Zdravotnické záchranné služby Moravskoslezského kraje Jana Šedovičová.
+„Po ošetření popálenin byl muž v kritickém stavu transportován na popáleninové centrum Fakultní nemocnice Ostrava,“ dodala mluvčí.
+Požár, který zasáhl kuchyň bytu, hasiči zlikvidovali za třicet minut. „Jeho obyvatele hasiči zachránili a předali do péče zdravotníků. Škoda, kterou požár způsobil, byla vyšetřovatelem příčin požáru předběžně vyčíslena na 250 tisíc korun,“ popsala mluvčí hasičů Kamila Langerová.|E|
+|T|Miroslav Donutil: Vím, že mám příznivce od 5 do 90 let|D|07.10. 16:58|P|Za pár dnů se setká s tisíci diváky v pražské Lucerně. Miroslav Donutil se do tamních prostor vrací po dvaceti letech. Zájem o jeho vystoupení je tak ...|X|V Lucerně vystoupíte třikrát: 12., 13. a 14. října. Byl to váš nápad oslavit takto narozeniny?
+Vytvořil ho pan Tomáš Ságl, manažer, který mě k tomu doslova přemluvil a donutil. Měl jsem totiž pocit, že už bylo dost Luceren, 1996, 2006, jenže on řekl: „No právě, od té poslední uplynulo dvacet let.“ Tak jsem s tím po úvaze souhlasil. Načež on dodal: „Uděláme tři.“
+To je opravdu hodně.
+Mně to taky přišlo. Proto jsem reagoval: „Zbláznil jste se?“ Ujistil mě, že ne, ať tomu dám šanci.
+A pravdu měl on, je vyprodáno, až na pár lístků. Přitom kapacita Lucerny na podobnou akci je až dva a půl tisíce míst.
+Kolik lidí přesně se tam vejde, nevím. Jisté je, že vstupenek zbývá už jen málo… Ale zkusíme umělou inteligenci (sahá po mobilu a ptá se AI - pozn. red.). Tak ano, tvrdí, že je to až dva a půl tisíce míst, podle uspořádání.
+Budeme jí věřit. Jak bude váš večer vypadat?
+To vám řeknu poměrně přesně. Vyrazil jsem s ním už před časem po Česku i Slovensku. Vyzkoušel jsem si, co (ne)funguje. Tohle se mi v letech 1996 a 2006 nepodařilo, což byla škoda. Nyní mám to nejdůležitější hotové. Napsal jsem si své příběhy a příběhy mých vzácných kolegů z Národního divadla, i těch, kteří tam byli před námi, a i těch, kteří tam sice nebyli v angažmá, ale já jsem se s nimi tehdy potkával. Dal jsem vše dohromady, z čehož vznikla dvouhodinová záležitost. Pojednává o 25 letech mého působení v Národním divadle. Na konci večera chci dát prostor divákům k interakci. Dostanou prostor pro své dotazy.
+Ty dvě hodiny budou plynout v celku, anebo je rozdělí přestávka?
+Přestávka bude, pochopitelně. Musí být, dvě hodiny v celku by asi nikdo neuvítal.
+Máte scénář k podobné akci během večera před sebou?
+Mám s sebou poznámky, ale už je nepotřebuji, zaplať pánbůh… Jinak samotný scénář si napíšu předem. Následně z něj vyřazuji to, co se mi moc nehodí. Pak dbám na to, aby celek měl návaznost, aby v něm byly pointy a aby se lidé bavili.
+Budete na jevišti sám, anebo jste si pozval nějaké hosty?
+Nikoho jste si záměrně nepozval. V tom se letošní Lucerny liší od těch předešlých, kdy jsem hosty měl. Tentokrát tam budu sám. Vyprávím ucelený příběh s linkou od A až do Z, do nějž se v podstatě nic dalšího nehodí. Což jsme zjistili, když jsme uvažovali o hudebním čísle… Takže v tom, že budu v Lucerně na jevišti sám, není zpupnost ani namyšlenost. Je to má touha vypořádat se s časem, co mám, a během něj pobavit diváky.
+Prozradíte mi, čím začínáte?
+Mým vstupem do Národního divadla. S prvními setkáními s lidmi, kteří tam byli.
+I tam po vás zůstala výrazná stopa. Klasik Jiří Suchý vás nazval Klaunem z boží milosti, za výkon v roli Truffaldina v Goldoniho Sluhovi dvou pánů. Jak svůj um definujete vy?
+To raději nechávám na tak fundovaných lidech, jakými jsou lidé typu Jiřího Suchého. Od něj to zní krásně. Když se dozvíte něco takového, je to dojemné. On, který do humoru dělá celý život, ještě dodal, že plakal smíchy tak, že už si nesundával ani brýle, neboť to nemělo cenu… I proto nechávám hodnocení své práce na druhých. Samozřejmě, všechna vyjádření nejsou kladná. Každý má právo na svůj názor. Každý z nás má jiný vkus, každý z nás má jiné požadavky. A já se budu při svých večerech v Lucerně snažit, aby diváci odcházeli spokojení, pobavili se, zjistili třeba, že pan Suchý může mít pravdu.
+Mluví se o vás jako o baviči. Souhlasil byste s touto škatulkou?
+Já nevím, jestli tato kategorie ještě funguje. Mám pocit, že význam slova bavič postupem času vymizel. Navíc moc se to slovo nikomu z branže nelíbilo, i když mně toto označení bylo jedno. Zejména proto, že jsem hlavně herec. Herectvím se živím, je mojí profesí, mým posláním, je to můj život. A jestli u příležitosti herectví ještě dokážu lidem vyprávět příběh, a někdo mě proto nazve bavičem, proč ne?
+Výbornými baviči byli a jsou i další Moraváci, třeba Vladimír Menšík nebo Bolek Polívka. Je moravský humor jiný než český?
+Tohle se úplně jednoznačně definovat nedá. Každopádně veselí lidé jsou na Moravě, jsou ve Slezsku, jsou v Čechách, jsou na Slovensku, jsou v Americe, jsou v Itálii, jsou všude. Jenom je otázka, jak se kdo projevuje, jak to kdo cítí. Na Moravě patří smysl pro humor k životu. Odpověď na vaši otázku tak zní: stojí za ním moravská nátura. Na Moravě jsme veselí.|E|
+|T|Konec čekání na první hurikán? Isaias zesílí a zamíří k pobřeží USA|D|07.10. 16:54|P|V Mexickém zálivu začíná výrazně sílit tropická bouře Isaias. Podle prognóz by se mohl systém stát prvním atlantským hurikánem během zatím mimořádně s...|X|Devátá tropická deprese letošní sezóny se v noci na středu nacházela v Campečském zálivu, který je součástí Mexického zálivu. Vítr v ní dosahoval zhruba 60 kilometrů za hodinu. Ve středu ráno se stala tropickou bouří Isaias.
+Podle předpovědi Národního centra pro hurikány (NHC) bude systém postupovat severně od Yucatánského poloostrova a následně se stočí směrem k USA. Při cestě Mexickým zálivem bude dále zesilovat. V pátek by mohl dosáhnout síly hurikánu druhé kategorie.
+V noci na sobotu by pak měl zasáhnout pobřeží Spojených států zhruba v oblasti od východní Louisiany po západní Floridu. Zde se také očekávají největší dopady.
+Vítr by během vrcholu intenzity mohl dosahovat rychlosti kolem 160 kilometrů za hodinu. Hurikán by měl rovněž přinést intenzivní přívalové deště s lokálními úhrny až kolem 250 milimetrů. Očekávají se také vysoké vlny a riziko tornád. O víkendu postoupí systém dále do vnitrozemí a bude postupně slábnout.
+Becoming apparent tonight that #Isaias will be a major problem for many on the Gulf Coast.
+Hurricane force wind, storm surge, flooding rain, and even a Tornado outbreak on the back side appear likely. pic.twitter.com/UbhxuQF4b4
+— Brady Harris (@StormCat5_) October 7, 2026|E|
+|T|Trojice cizinců si podvodnými obchody přišla na 11,5 milionu. Hrozí jim osm let vězení|D|07.10. 16:54|P|Kriminalistům z oddělení kybernetické kriminality krajského policejního ředitelství v Olomouci se podařilo odhalit tři cizince ve věku 29, 33 a 37 let...|X|O peníze poškození přicházeli při nákupu speciálních výrobků, ale i v podvodných e-shopech zaměřených na prodej elektroniky či stavebního materiálu.
+Trestné činnosti se muži, kteří dosud nebyli trestaní, měli dopouštět od června 2023 do března minulého roku. Kriminalisté je již obvinili. Hrozí jim až osm let vězení.
+„Trestná činnost byla velmi sofistikovaná, pro své podvodné stránky si například vytvářeli kladné recenze, pro zákazníky měli i telefonickou podporu,“ informoval ve středu vedoucí oddělení kybernetické kriminality krajského policejního ředitelství v Olomouci Jiří Prečan.
+Nejprve dva cizinci ve věku 29 a 37 let založili v České republice tři podvodné e-shopy. Předstírali prodej různého zboží, kterým však nedisponovali. Nabízeli jak stavební materiál, sportovní zboží, tak i elektroniku. Podvodníkům naletělo téměř 300 zákazníků, škoda se vyšplhala na 5,5 milionu korun.
+Doporučovali kontakt sami na sebe
+Od loňska se ke dvojici podvodníků přidal třetí cizinec. Trojice loni 17. ledna založila na internetu falešný obchod, ve kterém nabízela polotovar ze specifického a špatně dostupného materiálu.
+„Následně se začali vydávat za jednu osobu, která oslovovala firmy a poptávala u nich vyrobení dílu z tohoto těžko dostupného polymeru. Po vytvoření objednávky pak doporučovali webové stránky, které nabízely tento polymer. Dávali tak kontakt na své podvržené stránky nabízející tento těžko dostupný materiál, kterým samozřejmě nedisponovali,“ uvedl policejní mluvčí Libor Hejtman.
+Následně firmy polymer objednaly a zaplatily. Nikdy jej však nedostaly, protože se jednalo o fiktivní zboží. Cílem podvodníků byl majetkový prospěch. Celkem od 17. ledna 2025 do 20. března 2025, tedy za dva měsíce, obelstili 51 firem, od kterých vylákali 6 milionů korun.
+Obviněné trojici hrozí za zločin podvodu spáchaného ve formě spolupachatelství tresty odnětí svobody od dvou do osmi let. „Devětadvacetiletý muž je stíhán vazebně, třiatřicetiletý muž je stíhán na svobodě a sedmatřicetiletý muž je v pátrání. Byl na něj vydán Evropský zatýkací rozkaz,“ doplnil policejní mluvčí.
+Nejčastější podvody, jak je odhalit a nenechat se okrást
+Policejní statistiky zaplavují v posledních měsících příběhy nešťastníků, kteří sedli na lep internetovým podvodníkům. Kyberšmejdi přitom používají pořád dokola stejné triky, jejichž prostřednictvím se snaží důvěřivce napálit a často i oškubat. Připravte se na ně a podívejte se, jak se nejčastějším podvodům na síti bránit.
+S falešnými e-shopy se roztrhl pytel
+Falešné e-shopy jsou v poslední době hitem kyberšmejdů, doslova se s nimi roztrhl pytel. Útočníci spoléhají nejčastěji na to, že lidé platí za zboží dopředu kartou, ze svých obětí tak vylákají peníze, ale nakonec nic nepošlou. Nemusí jim přitom jít jen o platbu za pár stovek. Když zadáte na podvodnou stránku údaje ke své platební kartě, mohou ji vysát klidně celou.|E|
+|T|Starlinky budou padat jako mouchy. Medvěděv vyhrožuje vesmírnou válkou|D|07.10. 16:48|P|Ruský exprezident a místopředseda bezpečnostní rady Dmitrij Medvěděv prohlásil, že v případě zničení ruských satelitů Rassvet propukne vesmírná válka,...|X|„Žádost toho kyjevského blbce ‚blokovat‘ ruské satelity Rassvet může znamenat jedině jejich zničení, což je jistá cesta k plnohodnotné vesmírné válce. Doufám, že si to USA uvědomí. Jinak budou satelity Starlink padat jako mouchy. Ve vesmíru je málo místa, takže je nutné chovat se k sobě navzájem zdvořile,“ napsal na síti X a na Telegramu Medvěděv.
+Zelenskyj podle serveru The New Voice of Ukraine, který cituje z prezidentova rozhovoru pro The Financial Times, uvedl, že Rusko urychluje práce na své vlastní satelitní síti s čínskou podporou.
+„Víme, že Čína pracuje na satelitech a na tom, aby pomohla Rusku vytvořit obdobu systému Starlink,“ řekl ukrajinský prezident. Podle něj by systém Rassvet mohl být zprovozněn „do konce tohoto roku nebo na začátku příštího“.
+Právě kvůli tomu Zelenskyj požádal Trumpa, aby uvalil sankce na ruské a čínské společnosti, které tohoto potenciálního konkurenta Starlinku vyrábí. Naposledy to nadnesl během setkání v New Yorku v rámci Valného shromáždění OSN.
+„Pokud do konce roku 2026 uvedou do provozu systém Rassvet, (Rusové) budou schopni v reálném čase útočit na ukrajinské cíle na našem území,“ uvedl Denys Sienik, zástupce ukrajinského velvyslance ve Washingtonu. „Pokud nebudou tyto subjekty sankcionovány, umožní to Rusku tento program skutečně realizovat, a to bude zásadní zlom,“ doplnil.
+První satelity již jsou na oběžné dráze
+Rassvet vyvíjí společnost Bureau 1440, která první várku 16 satelitů poslala na oběžnou dráhu ve druhé polovině března. Další várku 16 satelitů pak podle serveru Business Insider vypustila ve druhé polovině července.
+Agentura Reuters uvedla, že v následujících letech by se mělo dostat do vesmíru na 900 satelitů. Společnost Iks Holding, pod kterou Bureau 1440 patří, uvedla, že chce Rassvet dostat do provozu do roku 2027.
+Medvěděv je známý svými výhružkami západním zemím. Je také jedním z řady politiků či propagandistů, kteří otevřeně hrozí nasazením jaderných zbraní nebo konvenčními útoky na země Severoatlantické aliance. V minulosti také hrozil útokem na podniky, které vyrábějí drony pro Ukrajinu, a to včetně těch, které se nacházejí na území České republiky.|E|
+|T|Politiku, aktivismus i ega dejte stranou, vyzval Klempíř své kritiky z Frankfurtu|D|07.10. 16:43|P|Ministr kultury Oto Klempíř zareagoval na kritiku svého úterního vystoupení na Frankfurtském knižním veletrhu po svém. Ve středu všechny vyzval, aby a...|X|„Český stát investuje do podpory literatury stovky milionů korun a na tom se nic nemění. Jenže když jedeme reprezentovat Česko do zahraničí, měli bychom tam vézt českou kulturu, ne vlastní politické kampaně. Většina lidí očekává, že spisovatelé a umělci budou mluvit o své tvorbě, o české literatuře a o tom, co naše země dokáže nabídnout světu. Ne že promění prestižní mezinárodní akci v další dějiště domácích kulturních válek. Politika, aktivismus i osobní ega by v takové chvíli měly ustoupit stranou,“ napsal na svém facebookovém profilu ve středu odpoledne.
+Zdánlivě smířlivý tón ale přináší dost podstatných „ale“, a to hlavně jeho předešlé výroky pro ČTK, v nichž nechybí útok na českou tvář frankfurtské mise, Radku Denemarkovou.
+„Mě by zajímalo, kolik knih paní Denemarkové bolševici zakázali, kolikrát byla ve vyšetřovací vazbě, kolikrát ji někdo dusil takovým způsobem, že musela spolknout samu sebe a sklonit hlavu a být vláčena jako hadr na zemi, jako jsem byl já. To se jí, myslím, nikdy nestalo,“ uvedl v reakci na její proslov Klempíř.
+Máte dost peněz, vzkázal ministr
+Kritikům také vzkázal, že jeho resort dává literátům dost peněz „aby mohli absolvovat nejlepší světové eventy, aby mohli být vidět ve světě“, jak uvedla ČTK.
+Ve svém úterním proslovu pak Klempíř ještě mluvil o poselství literatury a také o riziku světa, ve kterém emoce přehluší smysl pro demokracii.
+„Literatura má podle mě mimo jiné otevírat prostor pro různé názory, kritiku i dialog,“ uvedl ministr kultury, jenž záhy po nástupu do funkce v prosinci 2025 zrušil tiskový odbor a jenž je opakovaně kritizován za to, že dostatečně nekomunikuje.
+Právě Denemarková frankfurtský veletrh svým proslovem zahájila. Uvedla v něm mimo jiné, že není v pořádku, že v současné české vládě sedí dva lidé, kteří spolupracovali se Státní bezpečností (StB). Tím druhým je vedle ministra Klempíře premiér Andrej Babiš (ANO).
+Zatímco prvně jmenovaný se ke spolupráci v 80. letech otevřeně, opakovaně přiznal, druhý ji popírá. Historici ovšem o Babišově spolupráci s StB nepochybují.|E|
+|T|Starbucks to zkouší se zmenšenými kavárnami|D|07.10. 16:35|P|Starbucks zkouší nový koncept menších kaváren, který mu má umožnit otevírat pobočky i tam, kde jsou prostory malé a nájmy vysoké. První nové provozovn...|X|Starbucks chce novými koncepty reagovat na měnící se způsob, jakým lidé jeho kavárny využívají, a zároveň nabídnout lepší prostředí svým zaměstnancům, napsala společnost tento týden na svých webových stránkách.
+Starbucks zatím otevřel šest kaváren nového typu, jejich přesnou rozlohu ale nezveřejnil. Portál Hoodline nicméně napsal, že jeden z nových prototypů počítá s 32 místy k sezení a drive-thru, tedy obsluhou zákazníků přímo z auta, přičemž náklady na výstavbu podniku mají být asi o 30 procent nižší než u standardní pobočky. Menší městské provozovny se pak mohou vejít na plochu necelých 93 metrů čtverečních.
+Řetězec se snaží napravit předchozí strategii, která kladla důraz především na rychlé vyzvedávání objednávek z mobilní aplikace. Z kaváren mizela pohodlná sedadla i elektrické zásuvky a vedení později připustilo, že některé provozovny působily příliš neosobně.
+Pod vedením šéfa Briana Niccola se proto Starbucks vrací ke konceptu kavárny jako „třetího místa“ mezi domovem a prací. V Severní Americe už firma upravila zhruba tisíc poboček a investuje do pohodlnějšího posezení či většího počtu zásuvek. Menší formát má tento přístup spojit s možností expandovat i v drahých centrech velkých měst.
+Řetězec v Severní Americe v posledních dvou letech zavřel stovky kaváren, nyní se jeho situace zlepšuje. Server CNN připomněl, že tržby stávajících amerických poboček se v posledním čtvrtletí vrátily k růstu a firma chystá otevření asi pěti tisíc nových provozoven.|E|
+|T|Zfetovaný bezdomovec se projížděl po Plzni kradeným autobusem a nedopadlo to dobře. Půjde do vězení|D|07.10. 16:24|P|Za loňskou prosincovou jízdu po Plzni kradeným autobusem půjde Jan Ždímera za mříže. Ve středu o tom pravomocně rozhodl Krajský soud v Plzni. „Obžalov...|X|Šestatřicetiletý bezdomovec si vyhlédl odstavený autobus zaparkovaný na Karlovarské třídě.
+„Nezjištěným způsobem otevřel přední uzamčené dveře a poté nalezenými klíčky autobus nastartoval. Jako řidič s ním vyjel na pozemní komunikaci, přičemž příslušné oprávnění nikdy nevlastnil,“ popsal státní zástupce.
+Z Karlovarské ulice pokračoval muž do Gerské, U Jam, Jesenické a vrátil se zpět do Gerské, odkud směřoval na Záluží. Během jízdy poškodil tři zaparkovaná auta.
+Jeho cesta nakonec skončila kousek za městem, kde sjel do příkopu. Protože se nemohl z autobusu dostat, vyprostili ho hasiči a poté předali zdravotníkům. Policie později upřesnila, že byl řidič zfetovaný.
+Šel se ohřát
+Ždímera, který žije na ulici, se soudního líčení nezúčastnil. „Do autobusu jsem se šel ohřát. U předních dveří byl takový čudlík, já za něj zatočil a dveře se otevřely. V zapalování byly zastrčené klíčky, otočil jsem s nimi a nic. Tak jsem ještě zmáčkl nějaký knoflík a motor se nastartoval,“ citovala soud výpověď obžalovaného muže z přípravného řízení. Ten se podle svých slov chtěl jen projet a pak autobus vrátit zpátky.
+„Do té doby jsem řídil jen dodávku. Ale na přístrojové desce to bylo všechno celkem slušně popsané, tak jsem se rozjel a pokračoval na konečnou tramvaje. Tam jsem odbočil do vedlejší ulice, kde jsem se chvíli motal. Nakonec jsem se otočil zpátky a vydal se z Plzně,“ popsal Ždímera policistům další sled událostí. Potvrdil také, že při manévrování v úzkých ulicích „štrejchnul nějaká vozidla“.
+„Nevím, jestli bylo náledí, ale sjel jsem mimo silnici do pangejtu. Ještě jsem se snažil autobus srovnat, ale jelo mi to pořád rovně. Po nárazu jsem omdlel, jen si pamatuji, jak mě sanitka vezla do nemocnice,“ dodal.|E|
+|T|Bývalou srílanskou první dámu zadrželi kvůli zneužití finančních darů pro dětskou nemocnici|D|07.10. 16:23|P|Bývalá srílanská první dáma Širanthi Radžapaksová byla ve středu zadržena kvůli obviněním, že charita, na kterou má vazby, zneužila finanční dary urče...|X|Třiasedmdesátiletá Radžapaksová byla ve středu zadržena v domě v Kolombu, kde žije se svým manželem, bývalým srílanským prezidentem Mahindou Radžapaksou. Bývalá první dáma se o pouhé dva dny dříve vrátila do země poté, co podstoupila léčbu v Singapuru, informuje BBC.
+Radžapaksová jakékoliv pochybení od propuknutí skandálu popírá a tvrdí, že k žádné zpronevěře peněz darovaných charitě Siriliya Savija nedošlo a nadále zůstávají na jejím účtu. U soudu již dříve podala petici, která měla jejímu zadržení zabránit, ale soudní slyšení v této věci se mělo konat až v pondělí.
+Exprezident Radžapaksa na Srí Lance vládl od roku 2005 do roku 2015. Značná část obyvatel jej vnímala jako hrdinu, protože během jeho prvního funkčního období rozdrcením povstalců z organizace Tamilští tygři skončila skoro třicet let dlouhá občanská válka. Radžapaksova rodina ale během jeho vlády zároveň zcela ovládla srílanskou politiku.
+Situace se změnila, když v roce 2022 v zemi kvůli vysoké inflaci a nedostatku paliva, potravin a léků vypukly protesty. Ty vedly k sesazení tehdejšího prezidenta, Radžapaksova bratra Gotabaji.
+Současná srílanská vláda prezidenta Anury Kumary posléze obnovila zaseklá vyšetřování různých korupčních případů, v nichž bylo zapleteno hned několik členů rodiny Radžapaksových. Nejstarší syn Mahindy a Širanthi Namal je v současnosti ve vazbě kvůli nákupu letadel za vlády jeho otce. Kvůli obvinění z korupce byl letos zadržen i jeho mladší bratr Jošitha.|E|
+|T|Konspirační teorie „Ukropolin“ proniká do polské politiky, upozorňuje expertka|D|07.10. 16:15|P|Konspirační teorie označovaná jako „Ukropolin“ se podle historičky Katarzyny Kwiatkowské-Moskalewiczové přesouvá z okrajových částí internetu do hlavn...|X|Konspirační teorie označovaná jako „Ukropolin“ se podle historičky Katarzyny Kwiatkowské-Moskalewiczové přesouvá z okrajových částí internetu do hlavního proudu polské politiky. Její kořeny přitom sahají až do carského Ruska.
+V rozhovoru pro Polskou tiskovou agenturu (PAP) označila Katarzyna Kwiatkowska-Moskalewiczová, analytička Institutu politického myšlení Gabriela Narutowicze, tento narativ za protiukrajinský, antisemitský a protielitářský. Podle ní se v polském politickém diskurzu objevuje stále častěji.
+Podle ní se od roku 2022 šířil v okrajových částech sociálních sítí a na letácích rozdávaných v ulicích. Do politického jazyka se pojem dostal poté, co ho začal používat Grzegorz Braun, předseda strany Konfederace.
+Teorie nepravdivě tvrdí, že se Židé, pro něž se Blízký východ stává stále nebezpečnějším, usadí na jihu Ukrajiny, zatímco vysídlení Ukrajinci zamíří na území podél Visly. Ukrajince konspirační teorie vykresluje jako nástroj „židovské lobby“ a celou polskou parlamentní politickou scénu obviňuje ze zrady národních zájmů ve prospěch „cizinců“, mimo jiné Německa, Spojených států a Velké Británie.
+Podobně jako jiné konspirační teorie i tato směšuje lži a polopravdy se skutečnými událostmi, v tomto případě s uprchlickou vlnou vyvolanou ruskou invazí na Ukrajinu v roce 2022, popsala analytička.
+„Podstatou tohoto nepravdivého příběhu je vyvolávání strachu, že polský národ zanikne nebo bude ovládnut cizinci,“ uvedla.
+Narativ se objevil i během Euromajdanu
+Kořeny této myšlenky podle ní sahají do počátku 20. století, kdy zastánci carského řádu vykreslovali Chazarskou říši, středověký stát, jehož elity přijaly judaismus, jako symbolického nepřítele „svaté Rusi“. Tento narativ byl podle ní později využíván i ve vnitropolitickém prostředí za sovětské éry a po roce 1989.
+Uvedla, že tento narativ byl následně využit proti ukrajinským protestům Euromajdanu v letech 2013–2014, kdy proruské kruhy vykreslovaly nové vedení v Kyjevě jako „cizí“ a tvrdily, že plánuje vytvoření nového státu na jihu země. Mezi Ukrajinci se však tato teorie neuchytila. S humorem přijali i související hanlivé označení „židobanderovci“ a nechávali si tisknout trička s nápisem „Jsem židobanderovec“.
+Kwiatkowska-Moskalewiczová, autorka zprávy věnované tomuto tématu, uvedla, že vychází výhradně z otevřených zdrojů a netvrdí, že celý proces přímo řídí Kreml. Podle ní však konceptuální analýza ukazuje na kořeny v carském Rusku a využívání této teorie jako politického nástroje se výrazně podobá tomu, co se dříve odehrávalo v Rusku a na Ukrajině po Majdanu.
+Podle ní se jazyk tohoto narativu „týden od týdne radikalizuje“. „Před deseti lety bychom takový jazyk považovali za surrealistický nebo za literární fikci. Dnes ho začínáme normalizovat,“ dodala.
+Článek od Polskie Radio, poprvé byl publikován 7. října 2026 v 15:00 (SELČ).
+Tento článek byl přeložen za pomoci umělé inteligence.|E|
+|T|Nechci se rozvádět, manžel mě vyžene z domu, stěžovala si žena Ústavnímu soudu. Marně|D|07.10. 16:12|P|Jako porušení svých základních lidských práv vnímala žena ze středních Čech rozvod, který po krátké době trvání manželství inicioval choť. Zastání se ...|X|Dvojice uzavřela manželství v roce 2022, ale už po dvou letech podal muž návrh na rozvod s tím, že manželství je rozvrácené a že s ženou už více než rok nevedou společnou domácnost. Žena se rozvádět nechtěla, přičemž poukazovala na svůj špatný zdravotní stav i invaliditu III. stupně. Justice přesto manželství rozvedla.
+Zapuzená žena se pak obrátila na Ústavní soud, aby zasáhl v její prospěch, neboť prý byla pošlapána její práva, zejména to na spravedlivý proces a rodinný život. Ve stížnosti argumentovala tím, že ji čeká operace a dlouhá rekonvalescence a posteskla si, že musela z domu skutečně odejít.
+„Soudy opomenuly skutečnost, že ji manžel verbálně i fyzicky napadal a byla z jeho strany dlouhodobě vystavena finanční deprivaci. Zachování manželství by jí naopak umožnilo vzhledem k její situaci udržet si adekvátní životní podmínky,“ stálo ve stížnosti.
+Závažná újma nehrozí
+Senát se soudcem zpravodajem Tomášem Langáškem ale označil stížnost za zjevně neopodstatněnou a upozornil, že Ústavní soud tu není od toho, aby přezkoumával běžné rozvody. Konstituční tribunál by mohl zakročit jen tehdy, pokud by soudní rozhodnutí bylo zcela extrémní a založeno na naprosté libovůli, což se v daném případě nestalo.
+„Stěžovatelce nehrozí rozvodem zvlášť závažná újma, jelikož není odkázána na péči manžela, ostatně spolu ani nesdílí domácnost. Má stabilní příjem k zajištění svých potřeb i potřeb dětí. Soudy přihlédly k tomu, že by mohla být po rozvodu vystěhována, přičemž ani v této situaci nepovažovaly následky rozvodu za natolik intenzivní, aby manželství nemohlo být rozvedeno,“ napsal Langášek do rozhodnutí, které soud v těchto dnech zveřejnil.|E|
+|T|Pavel se rozhodl už dávno. Maroko před volbami upřednostnil vědomě|D|07.10. 16:07|P|Prezident Petr Pavel udělal vědomé rozhodnutí, že místo účasti v komunálních volbách 9. a 10. října bude na dovolené v Maroku. Podle zdrojů Novinek ce...|X|Prezident odevzdá volební lístek v pátek 2. října a až poté odletí do Maroka. Tak si podle zdrojů Novinek z okolí Hradu Pavel představoval organizaci dovolené, když ji už loni plánoval.
+Od nového roku ale vstoupila v platnost novela zákona o volbách do zastupitelstev, která termín stanovila pevně na první celý říjnový týden, a tak hlasování proběhne až 9. a 10. října. V minulosti termín voleb určoval právě prezident, pouze s podmínkou, že se volby budou konat do 30 dnů od uplynutí konce mandátů zastupitelů.
+Že ale volby budou až v pozdějším datu, mohl Pavel vědět. Změna zákona totiž parlamentem prošla už v roce 2024 a on sám ji podepsal 22. března téhož roku. I když prezident už termín ovlivnit nemůže, volby oficiálně vyhlašuje, což se stalo letos koncem června.
+Rozhodnutí upřednostnit rally v Maroku před volbami podle informací redakce potvrdil už začátkem letošního roku, a to navzdory varováním z jeho okolí.
+„Prezident dnes odjel na soukromou zahraniční cestu. Vzhledem k pobytu v zahraničí se nezúčastní hlasování ve volbách do zastupitelstva obce Černouček. Prezidenta chyba v plánování mrzí,“ okomentovala v pátek prezidentská kancelář.
+Pavlovo rozhodnutí se ale na domácí scéně setkalo s kritikou politiků opozice i koalice nebo odborníků.
+Pavlová zřejmě taky na dovolené
+Minimálně část prezidentova týmu proto ještě ve středu pracovala s variantou, že se nakonec do Česka na volby vrátí, jak popsaly také Seznam Zprávy. Po poledni ale podle mluvčího Daniela Drakea platilo, že se Pavel vracet nebude. Ve svém prohlášení ale uvedl nejednoznačné „zatím“.
+Otazník zatím visí nad volební účastí první dámy Evy Pavlové. „Nemám v tomto k dispozici žádné informace,“ řekl Novinkám její mluvčí Petr Fučík. Nechtěl ani nijak komentovat, co má první dáma na programu. Podle dobře informovaného zdroje z prezidentova okolí je ale také ona na cestách a k volbám se nechystá. Podle informací iDnes.cz odjela Pavlová na Kanárské ostrovy.
+Pavel by se k práci měl vrátit v pondělí 19. října. Za normálních okolností by volil v Černoučku na Litoměřicku, kde má on i první dáma trvalé bydliště. V obci s asi třemi sty obyvatel se o místa v zastupitelstvu ucházejí lidé na dvou kandidátkách.
+Volby 2026: Senátní a komunální
+Volby 2026 proběhnou 9. a 10. října. Hlasovat se bude v senátních a komunálních volbách. 2. kolo senátních voleb se koná o týden později. Volební místnosti budou otevřeny v pátek od 14:00 do 22:00 a v sobotu od 8:00 do 14:00. Podívejte se na výsledky voleb a volební účast z minulých let i volební debaty a duely k volbám letošním. Kdo jsou kandidáti? A jaké jsou volby v ČR?
+Obce: Kandidáti | Výsledky 2022 | Systém | Primátor | Zastupitelstvo obce
+Senát: Kandidáti | Výsledky 2024 | Obvody | Systém | Senátní obvody | Senátoři|E|
+|T|Španělská řeka po deštích zčernala|D|07.10. 16:04|P|Silné deště na západě Španělska odplavily popel ze spálenišť po letních požárech do místních vodních toků a zdrojů pitné vody. V obci Casavieja v prov...|X|Černé zbarvení způsobily bahno a popel, které voda odnesla z oblastí spálených při červencových lesních požárech. Záběry agentury Reuters ukazují tmavou vodu protékající Casaviejou i místní obyvatele přicházející s barely k cisternám nebo pro zásoby balené vody.
+„Člověk si uvědomí, kolik vody potřebuje, až když ji nemá. Na pití, vaření, do koupelny, na všechno,“ popsal agentuře Reuters jeden z obyvatel Miguel Angel Pérez Sánchez.
+Problémy se přitom netýkají jen Casavieji. Podle deníku El País zasáhly potíže se zásobováním pitnou vodou také nedaleké obce Mijares a Piedralaves. Lijáky tam odnesly ze spálenišť velké množství popela, bahna a dalších sedimentů do potoků a vodních nádrží.
+Požárem zasažená půda je vůči přívalovým dešťům výrazně zranitelnější. Vegetace, která za běžných okolností zachytává část srážek a brání odnosu půdy, na spáleništích chybí. Voda proto rychle stéká po povrchu a strhává s sebou popel i zeminu do údolí.
+Španělsko letos v létě zasáhly rozsáhlé lesní požáry během období mimořádných veder. Současné problémy s vodou ukazují, že dopady rozsáhlých požárů nekončí uhašením posledních plamenů.|E|
+|T|Kdo zaplatil Koněvovu sochu u Dukly? K financování se nehlásí obec ani organizátoři|D|07.10. 15:56|P|Nejasnosti panují kolem sochy sovětského maršála Ivana Koněva, kterou před pár dny odhalili u slovenské obce Kružlová nedaleko Dukelského průsmyku. Ne...|X|O záměru postavit Koněvovi pomník hovořili už loni v květnu v Kremlu slovenský premiér Robert Fico a ruský prezident Vladimir Putin. Ten tehdy nabídl pomoc s jeho realizací.
+„Vím o vašem návrhu postavit ve vaší zemi památník maršálu Koněvovi. Je to ušlechtilá věc, jsme vděční. Kdybyste potřebovali jakoukoli pomoc, jsme připraveni,“ řekl Putin.
+O uplynulém víkendu byla betonová socha slavnostně odhalená v Údolí smrti u Dukly. Kolem toho, kdo všechno za projektem stojí a kdo ho platil, ale panují nejasnosti. Odhalení pomníku organizoval SZPB, který je napojený na státní rozpočet. Jeho představitelé však tvrdí, že sochu nefinancoval.
+Předseda svazu Jaroslav Demian Denník N odkázal s otázkami na místopředsedu Jána Rohára. Ten tvrdil, že organizace sice převzala nad projektem záštitu, ale výběr autora ani placení díla podle něj nezajišťovala. „To jsme my nedělali,“ odpověděl na otázku listu, kdo vybral zhotovitele a kdo sochu zaplatil.
+Na přímý dotaz ohledně financování uvedl: „Asi dobrovolníci, kteří na ni vybrali peníze.“ Podrobnosti prý ale nezná. Odmítl také, že by náklady hradil svaz. Stejně se vyjádřil i další místopředseda, poslanec za Směr Marián Kéry.
+Starosta Kružlové Adrián Gužo uvedl, že obec schválila místo, kde pomník stojí, na jeho vznik ale nepřispěla. Obec podle něj kontaktoval přímo autor sochy Slavomír Gibej, který pochází z nedalekého Svidníku. Radnice proti pomníku neměla námitky, a tak jeho umístění povolila. Starosta předpokládal, že podrobnosti o financování bude znát svaz protifašistických bojovníků a že peníze pocházely ze sbírky.|E|
+|T|Ruské školy vychovávají „piloty budoucnosti“ a připravují děti na válku|D|07.10. 15:00|P|Ruská společnost LIGA uvedla, že místo výstavby továrny na výrobu notebooků bude investovat do simulátorů řízení dronů pro studenty tamních škol. Činí...|X|Ruská společnost LIGA uvedla, že místo výstavby továrny na výrobu notebooků bude investovat do simulátorů řízení dronů pro studenty tamních škol. Činí tak v době, kdy Rusko vyčleňuje miliardy rublů na výuku bezpilotních technologií. Moskva navíc zvyšuje počet hodin týkajících se vojenské přípravy žáků. Podle poslance Viktora Vodolackého je „nutné děti připravovat ke střetu s NATO“. Kreml přitom pokračuje v plnohodnotné invazi proti Ukrajině a Alianci opakovaně hrozí jadernými zbraněmi.
+Jekatěrinburská společnost LIGA Group, která vyrábí interaktivní techniku a vyvíjí software, plánovala výstavbu továrny na výrobu notebooků, tabletů či takzvaných interaktivních kiosků – samostatných počítačových terminálů umístěných ve veřejných prostorech.
+Na konci srpna však generální ředitel firmy Alexej Ležnin oznámil, že projekt pozastavuje a místo toho bude společnost investovat do simulátorů řízení dronů určených pro studenty ruských škol, píše server Current Time (CT).
+„Ministerstvo školství zavedlo vyučovací hodiny (od osmé třídy), ve kterých se děti učí létat s bezpilotními leteckými prostředky. Softwarový produkt se instaluje na počítače v hodinách informatiky. K nim se připojuje joystick a helma pro virtuální realitu, prostřednictvím nichž se děti učí ovládat drony. Nyní se zabýváme vývojem softwarového produktu. Do konce roku plánujeme vydat první verzi,“ prohlásil Ležnin.
+Simulátory bezpilotních letounů nejsou prvním „školním projektem“ skupiny LIGA – ta nabízí například i software s názvem LIGA Patriot, který „posiluje vlasteneckého ducha u předškoláků, školáků a mládeže“. Produkt obsahuje bloky věnované symbolice Ruska, historii, ruskému vládci Vladimiru Putinovi, vojenskému výcviku a bezpečnosti státu.
+LIGA se aktivně účastní veřejných zakázek jakožto dodavatel, dosud s ní bylo uzavřeno 106 smluv v hodnotě 96 milionů rublů (přibližně 24,5 milionu korun). Mezi největší odběratele dle CT patří třeba Altajská pedagogická univerzita nebo Irkutská národní výzkumná technická univerzita.
+Učební osnovy
+Projekt LIGA se neobjevil „zčistajasna“, ale reagoval na poptávku státu. Do poloviny tohoto roku Rusko vyčlenilo miliardy rublů na výuku bezpilotních technologií, informuje CT. Aktivní vybavování škol drony probíhá od roku 2024. Tehdejší první místopředseda vlády Andrej Bělousov požadoval, aby byl vzdělávací program zaměřený na ovládání bezpilotních letadel „od 1. září (2024) plně zaveden ve školách, i těch vysokých, v celé zemi“.
+Od požadovaného data se v učebních plánech pro 7. až 9. třídu v rámci předmětu Práce (technologie) objevil blok věnovaný bezpilotním letounům, na tuto látku je vyhrazeno přibližně patnáct vyučovacích hodin. V sedmé třídě třináctiletým žákům vysvětlují, co jsou drony a kde se používají, popisuje CT. V deváté třídě se pak studenti mají učit, jak koordinovat let několika dronů.
+Od osmé do jedenácté třídy se vyučuje předmět „Základy bezpečnosti a obrany vlasti“, v němž už je řeč přímo o vojenských bezpilotních letounech, nikoliv dronech obecně. V desátém ročníku navíc studenti musí v rámci „Základů vojenské přípravy“ absolvovat lekci nazvanou „Bezpilotní letecké prostředky – efektivní prostředek v podmínkách bojových operací“. Žáci se tam dozvídají o bojovém nasazení dronů a leteckém průzkumu.
+Od 1. září tohoto roku rozdělilo ruské ministerstvo školství předmět „Základy bezpečnosti a obrany vlasti“ pro osmý a desátý ročník na dva povinné kurzy – „Ochranu života“ a „Základní vojenský výcvik“. Podle ministra školství Sergeje Kravcova je výuka založena na „praktických dovednostech, které žákům pomohou chránit se v domácnosti, ve městě, v přírodě i v digitálním prostoru a připraví je na uvědomělý přístup k bezpečnosti země“.
+Děti se kromě toho seznámí s vojenskou disciplínou a součástí výuky má být i samostatný blok věnovaný bezpilotním letounům právě s využitím simulátorů a virtuálních modelů.
+Podle serveru The Moscow Times se novými předměty v ruských školách počet hodin týkající se vojenské přípravy zvýší dva a půl krát. Poslanec Státní dumy Viktor Vodolackij tvrdí, že je nutné ruské děti připravovat ke střetu s NATO hned po základní škole. Rusko opakovaně Severoatlantické alianci vyhrožuje jadernými zbraněmi.
+Útraty škol
+Zmíněná jekatěrinburská skupina LIGA není jedinou, která smlouvy se školami uzavírá. Ruské vzdělávací instituce již několik let nakupují jak samotné drony, tak i výukové programy pro jejich ovládání, upozorňuje CT.
+Server Novaja gazeta se zabýval veřejnými zakázkami mateřských, středních a vysokých škol a vypočítal, že za čtyři roky plnohodnotné ruské invaze na Ukrajinu utratily tyto instituce celkem téměř šestnáct miliard rublů (asi čtyři miliardy korun) za bezpilotní letouny, sady pro výuku sestavování a ovládání dronů.
+Do roku 2022 vynakládaly ruské vzdělávací instituce na tyto účely podle CT přibližně 350 milionů rublů (asi 89,4 milionu korun) ročně. V roce 2022 bylo na nákup dronů vynaloženo dvakrát více – přibližně šest set milionů rublů (přibližně 153 milionů korun).
+Podle portálu Novaja gazeta byli hlavními dodavateli do škol tři společnosti – petrohradský Geoskan, MT-Integracija a Torgovyj dom „Prosvěšenije-Region“.
+Zacházení s drony
+Podoba lekce s bezpilotními letouny závisí na vybavení konkrétní školy. Pokud disponuje drony, uzavřenou letovou zónou a má vyškoleného učitele, mohou si žáci bezpilotní letouny sestavit a ovládat je. V případě, že výbavu nemají, metodické směrnice umožňují nahradit drony počítačovým simulátorem.
+Na simulátoru se děti učí startovat motory, vzlétat, vznášet se, otáčet se, navigovat a přistávat. V režimu FPV používají brýle a sledují obraz z kamery dronu z pohledu první osoby. V další fázi absolvují virtuální trať a sestavují skutečný aparát. V náročnějších programech dokonce pájejí kontakty a tisknou součástky na 3D tiskárně.
+Samotné létání s drony probíhá v tělocvičně nebo v samostatné místnosti. Třináctiletý Ajvaz Valejev se učil létat s dronem FPV více než rok. „Zpočátku to bylo velmi těžké, bál jsem se, že dron spadne a rozbije se. Pak to šlo snadněji a cítil jsem se jistěji,“ popsal Valejev, který je součástí dětského centra bezpilotních letounů.
+„Piloti budoucnosti“
+Speciální kroužky zaměřené na ovládání dronů se v Rusku začaly objevovat v roce 2024. Pro pilotní program bylo vybráno třicet regionů, v nichž mělo být zřízeno 523 školních kroužků či tříd a třicet center při středních odborných školách. Současný ministr obrany Bělousov prohlásil, že cílem úřadů je do roku 2030 připravit nejméně milion specialistů na bezpilotní letecké prostředky.
+Od roku 2024 v Rusku také probíhá šampionát „Piloti budoucnosti“, od letoška se ho můžou účastnit děti již od sedmi let. Organizátoři soutěže chtějí podle CT do soutěže přilákat až čtyřicet tisíc účastníků ze všech regionů země.
+Jeden z cílů letošního ročníku je „posílení vlastenecké výchovy“ dětí. Vedoucí projektů pobočky v Nižním Novgorodu Konstantin Desjatnikov označil tento šampionát za jeden z projektů, které žákům umožňují rozvíjet dovednosti pro budoucí kariéru v ozbrojených silách a „vyzkoušet si“ povolání operátora bezpilotního letounu.
+V severokavkazské Kabardsko-balkarské republice vedli v roce 2025 regionální kolo šampionátu příslušníci Rosgvardije – vnitřního vojska přímo podřízeného Putinovi. Dětem předvedli vzory zbraní a bezpilotních letounů a uspořádali pro ně teoretické i praktické lekce, píše CT.
+Ještě před zavedením kroužků, hodin a soutěží v oblasti bezpilotních letadel v dubnu 2023 Putin schválil výuku ovládání dronů pro žáky. „Jsem přesvědčen, že to jednak děti zaměstná užitečnou a zajímavou činností a odvede je od toho, čemu by se věnovat neměly. Za druhé, tato takzvaná včasná profesní orientace bude nakonec prospěšná i pro celou zemi,“ prohlásil tehdy šéf Kremlu.|E|
+|T|Maskovaní převaděči se násilně pokusili protlačit do Lotyšska migranty|D|07.10. 14:45|P|Tento týden se maskovaní, agresivní a ozbrojení převaděči z Běloruska pokusili dostat skupinu migrantů přes hranici do Lotyšska, uvedly v úterý lotyšs...|X|Tento týden se maskovaní, agresivní a ozbrojení převaděči z Běloruska pokusili dostat skupinu migrantů přes hranici do Lotyšska, uvedly v úterý lotyšské Národní ozbrojené síly (NBS).
+NBS informovaly, že se tento týden nejméně dvacetičlenná skupina migrantů pod vedením maskovaných převaděčů pokusila nelegálně překročit lotyšsko-běloruskou hranici. Vojáci NBS pokus o překročení hranice zmařili. Na rozdíl od řady předchozích incidentů však byla tentokrát provokace podle armády obzvlášť demonstrativní a agresivní.
+Převaděči byli podle prohlášení NBS ozbrojení, vyhrožovali příslušníkům lotyšských ozbrojených sil a aktivně migranty pobízeli a tlačili směrem do Lotyšska.
+Podle lotyšského ministra vnitra Janise Dombravy vstoupili několik hodin po incidentu maskovaní lidé na lotyšské území, poškodili rozvodnou skříň a odcizili bezpečnostní kamery. Ještě před příjezdem pohraniční stráže se vrátili na území Běloruska. „Bělorusko by mělo pochopit, že podobné incidenty mohou mít závažnější důsledky i pro něj samotné,“ uvedl ministr.
+Přibývá sabotáží IT infrastruktury
+Šéf lotyšské Státní pohraniční stráže Guntis Pujats agentuře LETA sdělil, že byly odcizeny dvě kamery určené k ostraze hranice. Dodal, že už probíhají nezbytné kroky k obnově poškozené infrastruktury.
+Uvedl, že maskovaní lidé nemuseli být příslušníky běloruských státních složek, ale členy organizovaného zločinu, kteří využívají vstřícného postoje běloruských úřadů k usnadňování přesunu migrantů. Dodal, že případů sabotáže infrastruktury informačních technologií přibylo. Plot na hranici je naopak poškozován zhruba o polovinu méně často než před rokem.
+Podle lotyšských ozbrojených sil tyto události potvrzují, že záměrné provokace a hybridní hrozby na lotyšsko-běloruské hranici budou pokračovat, přičemž nelegální migrace je využívána jako nástroj nátlaku na vnější hranici Lotyšska a zároveň Evropské unie a NATO. Pujats sdělil, že tento konkrétní incident potvrzuje přetrvávající vysoké napětí a pokračující sabotážní akce.
+Lotyšské ozbrojené síly tak budou i nadále podporovat Státní pohraniční stráž na lotyšsko-běloruské a lotyšsko-ruské hranici, aby společně reagovaly na výzvy spojené s nelegální migrací, provokacemi a dalšími hybridními hrozbami.
+Již dříve bylo oznámeno, že lotyšská Státní pohraniční stráž v pondělí zabránila 59 lidem v pokusu o nelegální překročení lotyšsko-běloruské hranice z běloruské strany. Celkem bylo letos v nelegálním překročení hranice zabráněno 11 925 lidem.
+Lotyšská vláda také prodloužila režim zvýšené ostrahy na hranici s Běloruskem do konce letošního roku. Opatření bylo zavedeno kvůli zvýšenému počtu pokusů o nelegální překročení hranice, který podle lotyšských úřadů vyvolává Bělorusko. Režim zvýšené kontroly platí ve městě Ludza a přilehlých obcích okresu Ludza, ve městě Kraslava a obcích okresu Kraslava, v okrese Augšdaugava, ve městě Daugavpils a v obci Kaunata v okrese Rezekne.
+Loni lotyšská Státní pohraniční stráž zabránila celkem 12 046 lidem v pokusu o nelegální překročení bělorusko-lotyšské hranice. Z humanitárních důvodů bylo na území Lotyšska vpuštěno 31 lidí. V roce 2024 pohraniční stráž zabránila nelegálnímu překročení bělorusko-lotyšské hranice 5388 lidem, zatímco 26 osob bylo do země vpuštěno z humanitárních důvodů.
+Článek od LSM English (Latvian Public Media), LETA, poprvé byl publikován 7. října 2026 06:48 (SELČ).
+Tento článek byl přeložen za pomoci umělé inteligence.|E|
+|T|Dnes by byla ve vězení nebo v emigraci, říká o zavražděné Politkovské novinářka Procházková|D|07.10. 13:28|P|Jako člověk byla velmi seriózní, působila jako morální ikona, řekla o ruské novinářce Anně Politkovské, zavražděné nájemným vrahem právě před 20 lety ...|X|Jako člověk byla velmi seriózní, působila jako morální ikona, řekla o ruské novinářce Anně Politkovské, zavražděné nájemným vrahem právě před 20 lety v Moskvě, novinářka Deníku N Petra Procházková. Obě se pravidelně potkávaly a pracovaly i společně na několika kauzách. „Byla vždy spíše takovým aktivistickým novinářem, lidská práva pro ni byla ústředním tématem,“ zmínila. Politkovská proslula reportážemi z čečenské války, kde mapovala válečné zločiny a porušování práv čečenských civilistů. Dlouhodobě kritizovala Kreml a jeho vládce Vladimira Putina. Dodnes zůstává nevyjasněno, kdo si její smrt objednal. Riziko své práce si uvědomovala, několikrát nám sdělila, že se ji pokusil někdo otrávit, uvedla Procházková. Soudí, že pokud by Politkovská dnes žila, byla by buď ve vězení, nebo v emigraci. „A možná by si říkala, jak to, že Putin, člověk, který způsobil tolik problémů a zla nejen své zemi, je stále u moci,“ dodala.
+VideoDnes by byla ve vězení nebo v emigraci, říká o zavražděné Politkovské novinářka Procházková
+před 4 hhodinami|Zdroj: ČT24
+Nahrávám video|E|
+|T|Únava i lhostejnost. Jak před volbami Izraelci vnímají pokračující válku v Gaze?|D|07.10. 13:17|P|Tři roky od útoků ze 7. října a dvacet dní do voleb: Izrael se nachází mezi historickými milníky, politickou krizí a bezpečnostními hrozbami. Komentát...|X|Tři roky od útoků ze 7. října a dvacet dní do voleb: Izrael se nachází mezi historickými milníky, politickou krizí a bezpečnostními hrozbami. Komentátor Českého rozhlasu Jan Fingerland ve videocastu zahraniční redakce ČT24 Za Horizont rozebírá neochotu k nezávislému vyšetřování, rozdělení izraelské společnosti i důsledky zmařeného teroristického útoku na letecké lince z Dubaje. Má Benjamin Netanjahu politickou budoucnost? A existuje ještě naděje na dlouhodobý mír? Ptá se Hana Scharffová.
+Podcast Za Horizont vychází každou středu na iVysílání a ve všech podcastových aplikacích.|E|
+|T|V Evropském parlamentu je socha nahého Trumpa|D|07.10. 12:50|P|V budově Evropského parlamentu ve Štrasburku byla v úterý odhalena pozlacená socha amerického prezidenta Donalda Trumpa. Satirické dílo dánského umělc...|X|V budově Evropského parlamentu ve Štrasburku byla v úterý odhalena pozlacená socha amerického prezidenta Donalda Trumpa. Satirické dílo dánského umělce Jense Galschiöta nazvané Oranžový mor zobrazuje zcela nahého obézního Trumpa sedícího na ramenou menšího, štíhlejšího muže. Umělce do prostor parlamentu, kde se tento týden koná plenární schůze, pozval dánský europoslanec Per Clausen z frakce Levice v Evropském parlamentu (GUE/NGL). Socha v parlamentu zůstane do čtvrtka.
+Socha i s piedestalem měří zhruba 2,5 metru a je odlita z bronzu. Pozlacen je nicméně pouze Trump držící v jedné ruce nestandardně dlouhou golfovou hůl a v ruce druhé váhu spravedlnosti. Na piedestalu díla známého také jako Král nespravedlnosti je smyšlený citát „Sedím na zádech člověka. Pod mým břemenem klesá. Udělám cokoli, abych mu pomohl. Kromě sestoupení z jeho zad“.
+Europoslanec Clausen prohlásil, že obavami z možné reakce Trumpa se netrápí. „Nemůžeme žít ve strachu a autocenzuře,“ cituje ho web jeho domovské strany Jednotná kandidátka – Rudo-zelení. Podle Clausena jsou lidé, kteří si myslí, že Trumpa je lepší neprovokovat, a proto by socha v parlamentu neměla být vystavena. „Pokud je někdo tak přecitlivělý, že nedokáže snést, že je tato socha vystavena v Evropském parlamentu, pak na světové scéně nemá co dělat,“ míní Clausen.
+Trump pod 23karátovým zlatem
+U sochy ve středu seděl její autor Galschiöt a zájemcům rozdával zmenšeniny skulptury vytisknuté pomocí 3D tiskárny. Umělec ČTK řekl, že loni vytvořená skulptura byla původně celá pouze bronzová a amerického prezidenta se rozhodl 23karátovým zlatem potáhnout až později. „Trump teď ohromně září,“ dodal.
+Socha byla v minulosti vystavena na klimatické konferenci COP30 v brazilském Belemu či na Mnichovské bezpečnostní konferenci. Podle Galschiöta Trump brání snahám o řešení problémů spojených s klimatickou změnou.|E|
+|T|Student na střední škole v Polsku nožem zranil devět lidí i sebe|D|07.10. 12:30|P|Na střední škole v Ostrolence na severovýchodě Polska ve středu jeden ze studentů zaútočil nožem. Zranil devět lidí a poranil také sám sebe. Nikdo nen...|X|Na střední škole v Ostrolence na severovýchodě Polska ve středu jeden ze studentů zaútočil nožem. Zranil devět lidí a poranil také sám sebe. Nikdo není v ohrožení života. Informují o tom polská média s odvoláním na místní úřady. Policie devatenáctiletého útočníka zadržela a prokuratura případ vyšetřuje jako pokus o vraždu, uvedla stanice TVN24. Motiv činu zatím není jasný.
+Informace o počtu zraněných se během dne měnily. Rozhlasová stanice RMF FM nejdříve informovala o sedmi, pak o devíti. „Zraněných je osm lidí, z toho pět nezletilých a tři dospělí,“ řekl v jednu chvíli RMF FM Adrian Stupski, zástupce hasičů v Ostrolence. Dodal, že zranění byli při vědomí a záchranáři je převezli do nemocnice. Měli hlavně řezné rány.
+Mazovský vojvoda Mariusz Frankowski později podle agentury PAP sdělil, že zraněných je deset lidí včetně pachatele, pěti studentů, dvou učitelů a dvou lidí, kteří se nacházeli poblíž. „Abychom ukončili spekulace, které se začínají objevovat v médiích: je to polský občan,“ dodal Frankowski, podle něhož podezřelý z útoku žije v Ostrolence a chodí do zmíněné školy.
+Útok během vyučování
+Podle Tomasze Žerańského z ostrolencké policie mladík zaútočil během vyučování. Útočil ve čtvrtém ročníku, uvedla TVN24. Potom ze školy utekl a policie ho dopadla na městské pláži u řeky Narew. Také on potřeboval lékařské ošetření. Motivy mladíkova jednání nejsou jasné.
+Policie v Mazovském vojvodství, ve kterém Ostrolenka leží, zveřejnila na sociální síti X částečně rozostřenou fotografii dotyčného v černém oblečení ležícího na zemi s rukama spoutanýma za zády. Policie rovněž zajistila batoh, který mladík při útěku odhodil, a předala ho pyrotechnikům.
+Starosta Ostrolenky Pawel Niewiadomski dříve během dne potvrdil, že na střední škole se stala „závažná událost s použitím ostrého nástroje“. Ujistil, že situace je pod kontrolou a na místě pracují záchranáři a policisté. Škola, kde se útok stal, byla uzavřena. Do dalších škol ve městě Niewiadomski zakázal vstupovat cizím lidem. Požádal také místní, kteří mají nějaké záznamy útoku, aby je nezveřejňovali na sociálních sítích.
+Útoky na polských školách jsou ojedinělé. V září ovšem polská policie zadržela třináctiletého chlapce podezřelého z plánování útoku, našla u něj nůž, připomněla agentura Reuters.|E|
 |T|Nobelovu cenu za chemii získali Francouz a Japonec|D|07.10. 12:06|P|Letošní Nobelovu cenu za chemii obdrželi francouzský chemik Henri B. Kagan a japonský chemik Kensó Soai. Ve středu to oznámila Královská švédská akade...|X|Zmínění dva odborníci z Japonska a Francie byli oceněni za „objev nelineárních efektů a autokatalýzy v asymetrické organické syntéze“.
 Jejich výzkum pomohl objasnit, jak lze při chemických reakcích řídit vznik molekul s určitou „rukou“ – tedy konkrétní prostorovou konfigurací – a jak může výsledný produkt poté podporovat vznik dalších molekul stejného typu.
 BREAKING NEWS
@@ -146,6 +617,19 @@ Stavební úřad provedl v areálu v polovině září kontrolu, protokol zatím
 Česká inspekce životního prostředí už ale pravomocně uložila společnosti ŠTOCHL GROUP invest pokutu 800 tisíc korun. Firma podle ní provozovala mobilní zařízení k úpravě a využívání odpadů v rozporu s vydaným povolením.
 „V Molitorově byly v letech 2023 a 2024 do mobilního zařízení systematicky přijímány stavební a demoliční odpady pocházející od více různých původců a z různých staveb,“ uvedla mluvčí inspekce Miriam Loužecká.
 Zařízení smělo odpad zpracovávat pouze dočasně u jeho původce a v rámci konkrétní stavby. Podle závěru inspekce však v Molitorově fakticky fungovalo jako stacionární provoz, pro který firma potřebné povolení neměla. Pokutu následně potvrdilo také Ministerstvo životního prostředí.|E|
+|T|WHO žádá informace o výskytu moru v Rusku. Podle Moskvy epidemie nehrozí|D|07.10. 10:56|P|Světová zdravotnická organizace (WHO) požádala ruské úřady o informace ohledně zpráv médií, že se v sibiřském ústavu pro boj proti moru nakazil další ...|X|Světová zdravotnická organizace (WHO) požádala ruské úřady o informace ohledně zpráv médií, že se v sibiřském ústavu pro boj proti moru nakazil další zaměstnanec. Laborantka ústavu podle ruských médií nedávno zemřela na plicní mor, zatímco ruské úřady výskyt moru popírají a tvrdí, že mladá žena podlehla zápalu plic nezjištěného původu. Ruský úřad pro ochranu spotřebitelů Rospotrebnadzor ve středu uvedl, že obyvatelé Irkutské oblasti na Sibiři nečelí žádnému epidemickému nebezpečí.
+„Preventivní a protiepidemická opatření byla zorganizována v plném rozsahu a pro obyvatele Irkutsku ani Irkutské oblasti neexistuje žádné epidemické riziko,“ uvedl Rospotrebnadzor v prohlášení.
+Úřad rovněž uvedl, že o situaci v Irkutské oblasti informoval Světovou zdravotnickou organizaci a že lékařské vyšetření lidí, kteří přišli s pracovnicí do kontaktu, ani laboratorní testy neprokázaly známky infekce či přítomnost nebezpečných patogenů.
+WHO předtím uvedla, že si od ruských úřadů vyžádala informace ohledně mediálních zpráv o druhém zaměstnanci laboratoře se zápalem plic neurčeného původu, jakož i další informace k objasnění příčiny těžké pneumonie a patogenu, který vedl k přijetí opatření v oblasti veřejného zdraví.
+Úřady v Irkutsku podle zpráv médií po smrti osmadvacetileté Darji Šipilovové uvalily karanténu na tři městské nemocnice, dětskou nemocnici a porodnici. Vzaly rovněž do izolace na dvě stovky lidí, kteří se zmíněnou laborantkou přišli do styku.
+WHO v úterý označila v souvislosti s podezřením na mor v Rusku ohrožení pro dotčenou zemi za nízké a pro Evropu za velmi nízké. Ruské úřady identifikovaly osoby, které byly v kontaktu se zesnulou laborantkou irkutského institutu pro boj s morem, a uvedly, že žádná z nich nemá příznaky nákazy. Mluvčí WHO Christian Lindmeier novinářům v úterý řekl, že ruské úřady, které dosud oficiálně nereagovaly na žádost WHO o informace, prověřují, zda příčinou úmrtí nebyl plicní mor.
+Americký tlak
+Ohledně poskytnutí dalších informací naléhají na Rusko také Spojené státy. Šéf americké diplomacie Marco Rubio vybídl ruské úřady k transparentnosti a americký prezident Donald Trump později uvedl, že bude se svým ruským protějškem Vladimirem Putinem o záležitosti hovořit, uvedla agentura AFP. „Ano, mám naplánovaný telefonát,“ řekl Trump novinářům v Bílém domě a dodal, že rozhovor se odehraje „velmi brzy“.
+Různé varianty morového onemocnění, včetně plicního moru, způsobují bakterie Yersinia pestis. Plicní mor patří podle Světové zdravotnické organizace mezi nejsmrtelnější infekční choroby. Může se šířit vzduchem mezi lidmi nebo se přenášet ze zvířat na člověka. Jeho příznaky jsou horečka, bolesti hlavy a obtížné dýchání. V Rusku od roku 2017 nezaznamenali žádný případ moru u lidí, napsal dříve server The Moscow Times.
+Reakce obyvatel Irkutsku
+Mimo Rusko vyvolaly zprávy o smrti laborantky zabývající se morem na Sibiři vlnu spekulací. V samotném Irkutsku lidé „působí nevzrušeně“, napsala ve středu agentura AFP.
+„Myslím, že kdyby to bylo opravdu vážné, všechno by už zastavili,“ řekl ve městě AFP muž, jenž neuvedl své jméno. „Zatím se zdá, že to nikoho skutečně nezajímá,“ dodal. Jiný Rus sdělil, že požádal své rodiče, aby přijali opatření, jako je mytí rukou, ale že věc nepovažuje za „vážnou hrozbu“.
+Někteří obyvatelé Irkutsku pochybují, zda laborantka vůbec zemřela na mor. „Nemyslím, že to byl skutečně mor,“ prohlásil jeden muž z města, který se také nepředstavil.|E|
 |T|Zastřelený plyšák, skleněná fotosyntéza i Havlova knihovna. Začíná Designblok|D|07.10. 10:54|P|Obří plyšový medvěd s revolverem leží v jednom z paláců na Výstavišti. Skleněné vázy Maxima Velčovského jsou součástí výstavy High Craft, která předst...|X|Další výstavy Designbloku jsou od 7. do 11. října ve Veletržním paláci, na Výstavišti nebo v Uměleckoprůmyslovém muzeu.
 Ústředním momentem výstavy Design pro Václava Havla je návrat jeho pracovny, kterou pro něj na počátku 90. let navrhl Bořek Šípek. Na Pražský hrad se vrací po více než 20 letech. Po demontáži pracovny v roce 2003 byl celý interiér uložen u soukromého sběratele.
 Pracovna, která patří k nejvýraznějším realizacím spojeným s Havlovým prezidentstvím, zahrnuje pracovní stůl, komodu a knihovnu, jež společně s vybranou židlí Cab od Maria Belliniho vytvořily prostředí, v němž Havel pracoval a odkud zazněla řada jeho novoročních projevů i dalších významných vystoupení.
@@ -214,6 +698,21 @@ Dřívější i aktuální námitky opozice vedení města odmítá. „V souvis
 Kromě vavřínů z mistrovství republiky jsou mladí karatisté úspěšní i v rámci Krajského poháru mládeže, kde o víkendu triumfovali v pěti kategoriích a celkem přivezli 14 medailí.
 „Tři naši závodníci byli vyhlášeni nejlepšími závodníky Plzeňského kraje za rok 2026,“ uvedl jeden z trenérů Jan Kaše.
 Podle něj je kromě sportovní stránky smyslem naučit děti sebeovládání, kázni a respektu k ostatním. „Aby také dokázali čelit agresorům,“ dodal Kaše.|E|
+|T|Většina francouzských středních škol obnovila po protestech výuku|D|07.10. 10:21|P|Po úterních rozsáhlých pouličních protestech studentů v celé Francii byla ve středu ve většině středních škol obnovena výuka, i když na některých míst...|X|Po úterních rozsáhlých pouličních protestech studentů v celé Francii byla ve středu ve většině středních škol obnovena výuka, i když na některých místech podle agentury AFP pokračují blokády. Ministr vnitra Laurent Nuňez ve středu oznámil, že používání zábleskových granátů policií bylo pozastaveno, přestože ještě v úterý obhajoval nasazení těchto prostředků proti demonstrantům jako přiměřené.
+Polovina školního dne má být na pokyn vlády vyhrazena diskusi o problémech studentů. Ti si stěžují například na nedostatek učitelů, špatné vybavení škol, přeplněnost tříd a přetíženost rozvrhů. Studentské svazy středoškoláků i vysokoškoláků vyzývají k dalším protestním pochodům v Paříži i v dalších městech ve čtvrtek.
+Některé školy dál nepracují
+Podle předběžných údajů ministerstva školství se ve středu ráno otevřelo 86 procent středních škol. Výuka však zůstala zcela či částečně přerušena na 528 středních školách, což ale představuje pokles o 41 procent oproti úterku, kdy proběhla celostátní mobilizace středoškoláků.
+Protestující blokují i ve středu některé školy v Paříži, například vchody do středních škol Hélène Boucherové a Voltaira. Barikáda postavená studenty podle zdroje AFP blokuje rovněž pařížskou vysokou školu Sciences Po.
+Zábleskové granáty dostaly stop
+Ministr vnitra Nuňez ve středu podle agentury AFP oznámil, že používání zábleskových granátů policií bylo pozastaveno. Kontroverzní prostředek ke krátkodobému ochromení demonstrantů se ocitl pod drobnohledem zejména poté, co tento týden přišel o ruku 15letý hoch, který granát zvedl ze země.
+Ministr přitom v úterý v rozhovoru s rozhlasovou stanicí France Inter použití policejních granátů a gumových projektilů k rozhánění masových shromáždění obhajoval. Tvrdil, že nasazení těchto prostředků je v případě nepokojů přiměřené a nelze zde hovořit o policejních represích.
+Inspekce a prokuratura vyšetřují některé činy policistů
+Zábleskové nebo také omračující či paralyzující granáty při detonaci vydávají oslňující záblesk a ohlušující zvuk. „Pozastavuji jejich používání při zásazích proti hnutí středoškoláků, dokud nebudou okolnosti tohoto incidentu zcela objasněny,“ uvedl nyní Nuňez ve vysílání rozhlasové stanice RTL. Ministr rovněž oznámil, že policejní inspekce dostala za úkol prošetřit 18 případů postupu policistů. Děje se tak na pozadí kritiky ze strany demonstrantů, kteří prostřednictvím hesel a transparentů odsuzují počínání příslušníků bezpečnostních složek a obviňují je z policejního násilí.
+Prokuratura v Pontoise v úterý oznámila, že stíhá policistu, který při zásahu proti studentské demonstraci ve městě Saint-Ouen-L'Aumone nedaleko Paříže vážně zranil omračujícím granátem čtrnáctiletého chlapce.
+Francouzský premiér Sébastien Lecornu tento týden ostře kritizoval násilnosti, které studentské protesty v posledních dnech doprovází. Z rozdmýchání střetů obvinil krajně levicovou stranu Nepodrobená Francie (LFI), jejíž představitelé na studentské demonstrace chodí. Ve středu večer se má podle AFP premiér, který se snaží uklidnit protestní hnutí středoškoláků, vyjádřit k situaci na středních školách a také k dalším ožehavým tématům, jako jsou ceny pohonných hmot, krize v zemědělství a finanční situace země.
+Klid zbraní před čtvrteční demonstrací, hlásí zpravodaj Šmíd
+Středa je na více místech ve znamení menších potyček mezi demonstranty a policisty, řekl v živém vstupu po 14. hodině zpravodaj ČT ve Francii Jan Šmíd. „Dnešní den je takovou přípravou na čtvrtek a také konsolidací sil. Prezident Emmanuel Macron jednal v úterý večer s několika ministry, premiér apeluje na ředitele škol, aby vyhlásili dva dny debat, na nichž by mohli studenti vyjádřit své pocity,“ rekapituloval. Na čtvrtek svolaly demonstraci odbory ve spolupráci se studenty – a to ještě před pokynem premiéra pro ředitele škol, aby se se studenty diskutovalo.
+Zpravodaj doplnil, že ke studentům se přidávají odbory a nespokojené skupiny z předměstí, které jsou zodpovědné za vlnu násilí a útoky na školní budovy či zapalování popelnic. Středu označil za jakýsi klid zbraní, ale připomněl ze svých zkušeností, že když už se ve Francii stávkuje, tak to „nikdy neskončí hned“. Připomněl, že v zemi nyní nejsou další stávky – a že Francouzi rádi stávkují – a studenti tak mohou čekat podporu od lidí, kteří využijí každou příležitost, aby mohli své protesty vůči vládě naprosto jasně demonstrovat. Šmíd tedy očekává, že minimálně tento týden akce pokračovat budou.|E|
 |T|Ruský agent se vykálel u finského poslance doma|D|07.10. 10:19|P|Ruské tajné služby nechaly u finského poslance Bena Zyskowicze doma v toaletě výkaly. Podle poslance se tím Moskva snaží zastrašit finské zákonodárce....|X|„Je to způsob, jakým ruská tajná služba dává najevo, že lidé jsou sledováni, a jakým se snaží vyvolat zmatek nebo obavy,“ cituje britský deník poslance, který našel v toaletě výkaly.
 Zpráva přišla několik dní poté, co Helsinky minulý týden informovaly o vloupání do domovů několika finských poslanců. Podle deníku The Guardian během vloupání nebylo nic odcizeno, pachatelé však zanechali drobné stopy po vloupání. Finská stanice Yle uvedla, že v domech například někdo někde nechal otevřené dveře nebo rozsvítil světlo.
 Premiér Petter Orpo uvedl, že je možné, že za vloupáním stojí cizí mocnosti. „Je to velmi možné. V současné době dost možné. Pokud se někdo snaží destabilizovat Finsko, náš pocit bezpečí, naši podporu například Ukrajiny, pak to má opačný efekt. Posiluje to naši jednotu,“ řekl Orpo.
@@ -353,6 +852,30 @@ Terčem útoku se stalo také Záporoží, kde byla podle náčelníka správy Z
 Mrtví a ranění jsou i ve městě Pryluky, uvedly úřady. Pryluky zasáhly ruské rakety, z nichž jedna dopadla na výškový obytný dům. Stalo se to ráno, kdy lidé ještě spali, napsal náčelník oblastní správy Vjačeslav Čaus na telegramu, kde také zveřejnil snímky z místa zásahu.
 Nejnovější údery přišly v den, kdy slaví 74. narozeniny ruský vládce Vladimir Putin, z jehož rozkazu ruští vojáci zahájili v únoru 2022 plnohodnotnou invazi na Ukrajinu.
 Ruské ministerstvo obrany ráno potvrdilo, že uskutečnilo masivní útoky na cíle v Kyjevě a dalších ukrajinských regionech. Zmínilo i zásahy cílů v Oděské oblasti či plavidel sloužících ukrajinským zájmům. Před masivním ruským úderem varoval v úterý ukrajinský prezident Volodymyr Zelenskyj. Odvolával se přitom na informace ukrajinské rozvědky.
+Hořící tanker u Soči
+Zelenskyj na síti X uvedl, že Ukrajinci během uplynulého dne zasáhli čtyři cíle, které podle Kyjeva pomáhají Rusku financovat a vést brutální válku – dvě ropná zařízení a cvičiště v Permské, Samarské a Astrachaňské oblasti. „Došlo i k odpovědi v Černém moři,“ sdělil.
+Nedaleko ruského černomořského letoviska Soči podle Moskvy hoří ropný tanker plující pod liberijskou vlajkou. Podle ministerstva obrany plavidlo napadly bezposádkové čluny. Posádka, kterou tvořilo 23 indických občanů, byla zachráněna a nikdo neutrpěl zranění, tvrdí ruští představitelé podle deníku Guardian.
+Hašení lodě ještě nezačalo – čeká se totiž na snížení intenzity požáru, aby se k němu mohla přiblížit záchranná plavidla. Úřady vyzvaly obyvatele, aby se vyhnuli plážím a nevětrali. Letovisko Soči totiž zahalil černý oblak kouře.
+Rusko a Ukrajina od začátku konfliktu útočí na komerční lodní dopravu v okolí Černého moře. Moskva nedávno zaútočila na lodě s obilím přepravující ukrajinské zboží poblíž pobřeží Rumunska, připomíná Guardian.
+Bulharský premiér Rumen Radev v úterý oznámil, že dvě obchodní plavidla byla zasažena drony při vůbec prvním úderu na lodní dopravu ve výlučné ekonomické zóně člena NATO v Černém moři.
+Ukrajina od února 2022 vzdoruje ruské invazi, jejíž součástí jsou i každodenní útoky drony, střelami či raketami po celé zemi. Ukrajina v sebeobraně podniká rovněž vzdušné údery na cíle v Rusku. Kyjev i Moskva tvrdí, že se zaměřují výhradně na vojenské cíle či na cíle související s armádou a vedením války.
+Při útocích ale umírají i civilisté. Drtivou většinu civilních obětí OSN zaznamenala na území kontrolovaném Kyjevem, na které útočí ruská armáda.|E|
+|T|Ruský útok na Pryluky zabil nejméně 18 lidí včetně dětí, upřesnil Kyjev|D|07.10. 03:04|P|Kyjevem v noci opět otřásly výbuchy poté, co Moskva zahájila další rozsáhlý raketový a dronový útok. Svědci mluví o desítce explozí, dva lidé zemřeli....|X|Kyjevem v noci opět otřásly výbuchy poté, co Moskva zahájila další rozsáhlý raketový a dronový útok. Svědci mluví o desítce explozí, dva lidé zemřeli. Zásahy hlásí i Dnipro, Záporoží či Kremenčuk. Při úderu na město Pryluky na severu země zahynulo 18 lidí včetně čtyř dětí, oznámily odpoledne úřady. Dřívější bilance obětí byla nižší. Moskva masivní útok potvrdila, mluví i o zásazích plavidel. Nedaleko Soči podle ní hoří ropný tanker. Ukrajina později oznámila, že v odvetě zasáhla ropná zařízení a polygony v Rusku.
+Reportéři deníku Kyiv Independent slyšeli několik výbuchů okolo 3:15 místního času (2:15 SELČ), poté, co ukrajinské letectvo varovalo před ruskými bombardéry Tu-95 blížícími se k hranicím. „Rakety dopadají jedna za druhou. Podle mě jde o nejméně deset až dvanáct výbuchů. V centru města je dost hlučno,“ popsal jeden z nich. Další novináři mluvili o úderech v okolí kyjevské Podilské čtvrti a plamenech s kouřem.
+Exploze byly znovu slyšet o dvě hodiny později, kolem 5:15 místního času, během druhé vlny raketových útoků. Brzy ráno místní úřady podle agentury Reuters uvedly, že útoky si vyžádaly nejméně dva mrtvé.
+Kyjevský starosta Vitalij Klyčko uvedl, že byl hlášen útok na blíže nespecifikovanou neobytnou oblast v Oboloňské čtvrti a že v Podilské čtvrti byly zasaženy skladové prostory. V Ševčenkivské a Darnycké čtvrti zase hořely úlomky raket. Celkový rozsah škod není zatím známý, napsal deník.
+„Otřáslo to vestibulem metra,“ uvedla zpravodajka
+Řada Ukrajinců se přes noc opět vydala do metra. „Kyjevané v posledních měsících chodí preventivně, ještě dřív, než je vyhlášený poplach, přenocovat do úkrytů nebo do metra. Když jsme kolem jedenácté večer dorazili na místo, už skoro celé metro bylo zaplněno, celé nástupiště, vedle schodů, všude byli lidé. Přijíždějí vagony metra, vystupují z toho lidé a mezi tím veprostřed jsou stany, karimatky, kde jsou lidé ve spacácích nebo pouze sedí na nějakých židlích a přečkávají noc. Opravdu to není něco pohodlného, co by člověk chtěl zažívat každý den,“ popsala zpravodajka ČT Ilona Zasidkovyčová.
+„První útoky jsme slyšeli kolem třetí ráno. To byly dopady balistických střel na metropoli. Otřáslo to vestibulem metra. Ty výbuchy byly opravdu silné, hlasité. Další výbuchy následovaly během rána,“ uvedla novinářka.
+Rusko proti Ukrajině v noci zaútočilo balistickými raketami, 48 střelami s plochou dráhou letu a 130 drony, tvrdí ukrajinské letectvo. Podle něj se podařilo zneškodnit pět raket, 39 střel a 117 dronů. Hlavními cíli útoku byly Kyjevská, Charkovská, Poltavská a Dněpropetrovská oblast. V Kyjevě pyrotechnici zneškodňují ruskou raketu, která nevybuchla, informovala policie.
+Útoky po celé zemi
+Nejméně osmnáct mrtvých včetně čtyř dětí je ve městě Pryluky v ukrajinské Černihivské oblasti, uvedly ukrajinské úřady. Dalších 55 lidí, včetně sedmi dětí, utrpělo zranění. Pryluky zasáhly ruské rakety, z nichž jedna dopadla na výškový obytný dům. Stalo se to ráno, kdy lidé ještě spali, napsal náčelník oblastní správy Vjačeslav Čaus na telegramu, kde také zveřejnil snímky z místa zásahu. Pátrací a záchranné operace na místě stále pokračují, informovalo pozdě odpoledne ukrajinské ministerstvo vnitra.
+O obětech informoval také ukrajinský prezident Volodymyr Zelenskyj. „Oleksandr, Kyrylo a Serhij, kterým byl pouhý rok. A osmiletý Maksym. Vyjadřuji soustrast všem rodinám a blízkým,“ napsal na síti X prezident s tím, že se stále pohřešují lidé.
+Samostatný letecký útok na Dnipro na jihovýchodě Ukrajiny poškodil průmyslový objekt, uvedl na telegramu bez dalších podrobností šéf regionální správy Oleksandr Hanža.
+Terčem útoku se stalo také Záporoží, kde byla podle náčelníka správy Záporožské oblasti Mychajla Semikina zasažena dopravní infrastruktura, v Kremenčuku v Poltavské oblasti zase bytové domy – dva lidé tam zemřeli, dalších sedm utrpělo zranění.
+„Člověk stojí uprostřed trosek a neví, kde začít. Přesně na to nepřítel spoléhá: že se budeme bát usnout, bát se pustit děti z dohledu, bát se plánovat budoucnost. Moc dobře vědí, co lidem způsobují,“ komentoval šéf vojenské správy Poltavské oblasti Vitalij Djakivnyč záběry škod v Kremenčuku.
+Nejnovější údery přišly v den, kdy slaví 74. narozeniny ruský vládce Vladimir Putin, z jehož rozkazu ruští vojáci zahájili v únoru 2022 plnohodnotnou invazi na Ukrajinu. Ruská vojska podle Zelenského podnikla „jeden z nejodpornějších útoků“ na Ukrajinu právě u příležitosti Putinových narozenin.
+Ruské ministerstvo obrany ráno potvrdilo, že uskutečnilo masivní útoky na cíle v Kyjevě a dalších ukrajinských regionech. Zmínilo i zásahy cílů v Oděské oblasti či plavidel sloužících ukrajinským zájmům. Před masivním ruským úderem varoval v úterý Zelenskyj. Odvolával se přitom na informace ukrajinské rozvědky.
 Hořící tanker u Soči
 Zelenskyj na síti X uvedl, že Ukrajinci během uplynulého dne zasáhli čtyři cíle, které podle Kyjeva pomáhají Rusku financovat a vést brutální válku – dvě ropná zařízení a cvičiště v Permské, Samarské a Astrachaňské oblasti. „Došlo i k odpovědi v Černém moři,“ sdělil.
 Nedaleko ruského černomořského letoviska Soči podle Moskvy hoří ropný tanker plující pod liberijskou vlajkou. Podle ministerstva obrany plavidlo napadly bezposádkové čluny. Posádka, kterou tvořilo 23 indických občanů, byla zachráněna a nikdo neutrpěl zranění, tvrdí ruští představitelé podle deníku Guardian.

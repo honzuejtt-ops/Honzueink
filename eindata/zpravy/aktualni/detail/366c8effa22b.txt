@@ -1,0 +1,23 @@
+Službu Double Counter využívají stovky tisíc serverů na Discordu k odhalování falešných účtů a útoků automatizovaných botů. Podle jejího provozovatele pronikli útočníci 4. října do systémů služby, odkud se jim podařilo zkopírovat data z databáze.
+Mezi potenciálně zasaženými údaji jsou identifikační čísla účtů na Discordu a uživatelská jména. U přibližně 27 milionů záznamů mohli hackeři získat také IP adresy a přibližné informace o poloze uživatelů. Podle společnosti navíc zkopírovali zhruba milion e-mailových adres.
+Podle serveru Dexerto útočníci odcizili přibližně 12 GB dat, přičemž získali pouze část záznamů obsahujících IP adresy. Přesný počet odcizených údajů však provozovatel nedokáže spolehlivě určit, a proto preventivně považuje všechny potenciálně zasažené záznamy za kompromitované.
+Hackeři ovládli i bota
+Únikem dat ale problémy neskončily. Kyberzločincům se podařilo získat také přístupový token bota, díky kterému nad ním dočasně převzali kontrolu.
+Nástroj, který měl pomáhat chránit uživatele, tak začal sloužit samotným útočníkům. Ti jeho prostřednictvím rozesílali pozvánky na cizí server na Discordu. Odkazy se objevily přibližně v 50 velkých komunitách.
+Hackeři navíc získali platební klíč, který následně zneužili k podvodným transakcím prostřednictvím samostatného účtu. Neoprávněné platby dosáhly celkové výše 7316 dolarů (přes 159 tisíc korun).
+Podle serveru Dexerto byly menší částky neoprávněně strženy také dvěma zákazníkům. Tyto platby však byly následně vráceny, takže zákazníkům nevznikla konečná finanční škoda.
+Napadena externí služba
+K útoku se vyjádřili podle listu Bild také zástupci Discordu. Zdůraznili, že hackeři nenapadli přímo jejich platformu, ale externí službu.
+„Jsme si vědomi bezpečnostního incidentu týkajícího se Double Counter, aplikace třetí strany dostupné na Discordu. Přestože nešlo o narušení zabezpečení samotného Discordu, zakázali jsme nové instalace této aplikace,“ uvedla společnost v prohlášení pro server Dexerto.
+Discord zároveň potvrdil, že s provozovatelem Double Counter spolupracuje na objasnění incidentu a podle výsledků vyšetřování může přijmout další opatření.
+Dobrou zprávou pro uživatele je, že jejich přihlašovací hesla by neměla být ohrožena. Double Counter je totiž vůbec neukládá. Totéž platí pro údaje o platebních kartách, které spravují externí poskytovatelé platebních služeb.
+Po odhalení útoku společnost zablokovala přístupy hackerů, změnila přístupové údaje a zavedla další ochranná opatření. Službu se podařilo znovu zprovoznit ještě tentýž den.
+Jak se bránit?
+Uživatelé sice nemohou zabránit zneužití údajů, které už hackeři získali, mohou ale výrazně snížit riziko dalších problémů. Klíčová je především obezřetnost vůči podezřelým zprávám a odkazům.
+- Neklikat na podezřelé odkazy. Útočníci ovládli bota, který rozesílal pozvánky na cizí server. Je proto vhodná zvýšená opatrnost i u zpráv, které vypadají důvěryhodně.
+- Zapnout dvoufázové ověřování (2FA). V nastavení Discordu lze aktivovat další ochranu přihlašování, ideálně prostřednictvím autentizační aplikace.
+- Dávat pozor na podvodné e-maily. Vzhledem k úniku e-mailových adres mohou útočníci rozesílat falešná upozornění na problémy s účtem nebo výzvy k ověření identity.
+- Zkontrolovat připojené aplikace. V nastavení Discordu je možné zkontrolovat autorizované aplikace a odebrat ty, které uživatel nepoznává nebo nepotřebuje.
+- Zvážit změnu hesla. Není bezprostředně nutná kvůli tomuto incidentu, protože Double Counter hesla neukládá. Pokud ale uživatel klikl na podezřelý odkaz a zadal přihlašovací údaje, měl by heslo okamžitě změnit.
+Nejčastější podvody, jak je odhalit a nenechat se okrást
+Policejní statistiky zaplavují v posledních měsících příběhy nešťastníků, kteří sedli na lep internetovým podvodníkům. Kyberšmejdi přitom používají pořád dokola stejné triky, jejichž prostřednictvím se snaží důvěřivce napálit a často i oškubat. Připravte se na ně a podívejte se, jak se nejčastějším podvodům na síti bránit.

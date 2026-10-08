@@ -1,0 +1,12 @@
+(Od našeho zpravodaje)
+Na první pohled může DGX Station připomínat výkonnou pracovní stanici. Uvnitř se ale skrývá technologie, kterou Nvidia vyvinula pro nejnáročnější výpočty umělé inteligence. Základem je superčip GB300 Grace Blackwell Ultra, jenž propojuje výkonný procesor s grafickou architekturou Blackwell.
+Výsledkem je zařízení, které má zvládat úlohy dosud spojované především s profesionálními servery. Vývojáři na něm mohou vytvářet a testovat pokročilé modely umělé inteligence, pracovat s obrovskými objemy dat nebo provozovat několik AI agentů současně. A to přímo ve své kanceláři, bez nutnosti všechny výpočty odesílat do cloudu.
+Nvidia stroj označuje jako „osobní superpočítač“. I když to nebývá u podobných systémů obvyklé, celý stroj může pracovat přímo pod operačním systémem Windows. Právě operační systém Microsoftu se kvůli lepšímu zabezpečení AI agentů značně proměnil, jak Novinky informovaly již v dřívějším článku.
+Na stole vypadá nenápadně, výkonem bere dech
+O schopnostech novinky nejlépe vypovídají čísla. DGX Station nabízí až 20 petaflops výpočetního výkonu pro AI při použití přesnosti FP4. To představuje až 20 biliard operací za sekundu v tomto specifickém typu výpočtů.
+Kdybyste takového výkonu chtěli dosáhnout pomocí běžných notebooků, potřebovali byste jich přinejmenším 400. V rámci některých specifických výpočtů dokonce až 500.
+Neméně působivá je paměť. Nvidia slibuje 748 GB koherentní paměti, kterou mohou využívat výpočetní komponenty systému. Díky tomu dokáže zařízení pracovat i s mimořádně rozsáhlými modely umělé inteligence, které by se do paměti běžného počítače jednoduše nevešly.
+Podle Nvidie zvládne DGX Station modely obsahující až bilion parametrů. Pro představu jde o systémy, jejichž nároky dalece přesahují možnosti běžných domácích počítačů, a to i těch určených pro náročné hráče.
+Výrobce počítá rovněž s provozem více než 32 AI agentů současně. Jeden může například analyzovat data, další připravovat programový kód a jiný zpracovávat dokumenty. Všechny přitom mohou využívat výkon jediného stroje.
+Superpočítač s Windows
+Zásadní novinkou je také spolupráce s Microsoftem. Nvidia totiž připravuje verzi DGX Station s operačním systémem Windows, díky níž budou moci firmy využívat extrémní výpočetní výkon v prostředí, které už dobře znají.

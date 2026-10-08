@@ -1,0 +1,5 @@
+Zásadní pro bezproblémové použití elektronických dokladů je aktualizace dat. Tu lze podle DIA provést až 48 hodin před návštěvou volební místnosti. V aplikaci se po spuštění a přihlášení objeví hláška, že je digitální doklad platný.
+„Doklad se při otevření aplikace s připojením k internetu aktualizuje automaticky a má obnovenou platnost 48 hodin. Pokud je výpis starší a telefon je bez připojení, aplikace na potřebu aktualizace sama upozorní,“ popsala DIA.
+Dostupnost aktualizace je případně možné zkontrolovat i v Google Play či App Store.
+Lidé by si měli zkontrolovat i přihlášení, ať už jde o biometrické údaje či PIN. Při chybě biometrického ověření, případně po třetím chybném zadání PIN, se aplikace zablokuje a lidé by museli projít znovu kompletním procesem registrace skrze prostředky Identity občana. Ministerstvo připravilo i videonávod.
+Při loňských volbách byl systém přetížen a problémy byly i s aktualizacemi eDokladů. Během prvních čtyř hodin tehdy úřady zaznamenaly 1,5 milionu pokusů o přihlášení, což vedlo k výpadkům. V reakci na to skončil tehdejší šéf DIA Martin Mesršmíd.

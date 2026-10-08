@@ -1,0 +1,14 @@
+Podle MIT, bývalého zaměstnavatele Hamiltonové, zemřela 30. září. Příčina jejího úmrtí nebyla zveřejněna, doplnila zpravodajská stanice CNN.
+V době, kdy označení jako softwarová inženýrka či počítačová vědkyně ještě nebyla běžně používaná, se Margaret Hamiltonová naučila programovat pod vedením uznávaného meteorologa z MIT.
+V programování se dále zdokonalovala v tamní laboratoři, kde vytvářela software schopný odhalovat nepřátelská letadla. Když institut získal od vesmírné agentury NASA zakázku na vývoj palubního softwaru pro řízení letu mise Apollo, Hamiltonová této příležitosti okamžitě využila.
+„Přitahovala mě jak samotná myšlenka, tak skutečnost, že něco takového ještě nikdo neudělal. Byla jsem první programátorkou, která se k týmu připojila, a první ženou, kterou přijali,“ řekla v roce 2019 listu The Guardian, který to nyní připomněl.
+“We had to find a way and we did. Looking back, we were the luckiest people in the world; there was no choice but to be pioneers.”  —Margaret Hamilton
+Rest in peace, Margaret. Your trailblazing work leading the development of the on-board flight software for the Apollo… pic.twitter.com/VyiuWokYiW
+— NASA History Office (@NASAhistory) October 8, 2026
+V roce 1969, několik minut předtím, než se měla kosmická loď Apollo 11 zapsat do dějin přistáním na povrchu Měsíce, začal palubní počítač vydávat poplach, který signalizoval problém.
+Přestože posádka musela rozhodovat, zda misi přerušit, kosmická loď pokračovala k fázi přistání. Software fungoval přesně tak, jak Hamiltonová a její kolegové zamýšleli.
+„Brzy se ukázalo, že software nejen všechny informoval o problému souvisejícím s hardwarem, ale zároveň jej kompenzoval – restartoval a znovu zaváděl úlohy s nejvyšší prioritou. Mechanismy detekce a zotavení po chybě tak přišly na pomoc,“ vysvětlila Hamiltonová.
+Obama: Neměli moc času, ale naštěstí měli Margaret
+Na tuto událost odkázal americký prezident Barack Obama v roce 2016, když jí udělil Prezidentskou medaili svobody. „Naši astronauti neměli mnoho času, ale naštěstí měli Margaret Hamiltonovou,“ prohlásil.
+Když Hamiltonová v rozhovoru pro MIT News v roce 2009 vzpomínala na misi Apollo, řekla následující: „Když se ohlédnu zpět, byli jsme nejšťastnějšími lidmi na světě. Prostě nezbývalo než být průkopníky. Na to, abychom byli začátečníky, nebyl čas.“
+Po Hamiltonové zůstala dcera, zeť, dva vnuci a čtyři pravnuci.

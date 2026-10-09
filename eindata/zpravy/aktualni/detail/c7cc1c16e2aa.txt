@@ -1,0 +1,32 @@
+Anketa Křišťálová Lupa – Cena českého Internetu letos vybírá ze 140 projektů v 15 kategoriích. Do soutěže poprvé vstupují AI projekt a Startup roku, jejichž vítěze určí odborná porota. Novinkou je také Cena studentské poroty ČVUT. Studenti budou vybírat z projektů nominovaných v kategoriích odborné poroty, s výjimkou Osobnosti roku.
+Nová AI kategorie přitom není přehlídkou jednoho typu technologií. Nominované projekty ukazují, jak rozdílné problémy se dnes pomocí AI řeší – od vývoje a infrastruktury přes specializované nástroje až po služby určené přímo koncovým uživatelům.
+Od vlastních modelů po infrastrukturu pro AI agenty
+BottleCap AI vyvíjí vlastní AI modely a zaměřuje se na efektivnější práci velkých jazykových modelů. Tým Tomáše Mikolova, Jaroslava Becka a Davida Herela stojí mimo jiné za řadou ThinkingCap, která se snaží dosahovat kvalitních výsledků s menším počtem výpočetních kroků.
+E2B vytváří bezpečné prostředí, ve kterém mohou AI agenti pracovat s kódem, daty a dalšími nástroji. Startup Václava Mlejnského a Tomáše Valenty uvádí, že jeho platforma už odbavila více než miliardu sandboxů.
+AI jako pomocník lékaře
+MAIA Labs – ColoMAIA II využívá AI při kolonoskopii. Systém v reálném čase upozorňuje na podezřelé nálezy a pomáhá také s dokumentací vyšetření. Podle výsledků multicentrické studie se 600 pacienty vedlo jeho použití k relativně o 38 procent vyšší míře detekce adenomů oproti standardní kolonoskopii. Systém má evropskou certifikaci podle MDR.
+AI proti deepfakeům
+Synhawk vyvíjí technologie pro rozpoznávání syntetického hlasu, zmanipulovaného videa a dalšího obsahu vytvořeného nebo upraveného pomocí AI. Jeho technologii využívá Vodafone ve službě Vodafone Verify, která pomáhá ověřovat fotografie, videa a hlasové zprávy.
+AI v průzkumu trhu
+Lakmoos využívá AI pro průzkum trhu. Jeho platforma pracuje se syntetickými respondenty a AI panely a umožňuje testovat otázky či hypotézy bez klasického náboru respondentů. Za projektem stojí Kamila Zahradníčková a Jan Polišenský.
+AI, která práci vykonává
+Duvo.ai staví AI agenty pro firemní provoz. Ti mohou na základě zadání v běžném jazyce provádět úkoly napříč systémy, jako jsou SAP, dodavatelské portály, e-mail nebo tabulky. Za projektem stojí Tomáš Čupr a Marek Paris.
+Na automatizaci firemních procesů se zaměřuje také Rossum.ai, český projekt založený trojicí AI výzkumníků Tomášem Gogarem, Petrem Baudišem a Tomášem Tuňysem. Vyvíjí technologii pro zpracování firemních dokumentů a automatizaci navazujících procesů. V květnu 2026 Rossum koupila společnost Coupa.
+AI pro český internet i každodenní práci
+Seznam Asistent propojuje AI se službami Seznamu a využívá mimo jiné data z vyhledávání, zpravodajství, Zboží.cz, Počasí.cz nebo Firmy.cz. Opírá se také o vlastní jazykové modely SeLLMa. Na jeho vývoji se podílejí mimo jiné Peter Pekarovič a Martin Kirschner. Beta verze je od května 2026 dostupná všem přihlášeným uživatelům.
+Uttero Daniela Gamrota nabízí hlasové diktování pro macOS. Řeč převádí na text a pomocí AI jej následně upravuje – například opravuje interpunkci, formátuje nebo překládá. Funguje online i offline.
+ČERNÁ.AI je platforma pro AI inovace a vzdělávání působící pod Černou kostkou v Moravskoslezském kraji. Propojuje firmy, akademiky, AI experty a další zájemce o umělou inteligenci, pořádá vzdělávací akce a podporuje projekty spojené s AI. Platformu vede Dalibor Mráz.
+Startupy mají letos vlastní kategorii
+Druhou novou kategorií odborné poroty je Startup roku. Nominováno je deset projektů: BottleCap AI, Carebot, E2B, Elin.ai, Grid.online, MAIA Labs – ColoMAIA II, PangeAI, Rossum.ai, TasteTown a VR Rescue. Některé z nich se tak objevují v obou nových kategoriích.
+Vedle internetové veřejnosti a odborné poroty letos dostávají poprvé vlastní prostor také studenti ČVUT. Jejich cena je součástí letošních novinek a její vítěz vzejde z projektů nominovaných v kategoriích odborné poroty, s výjimkou Osobnosti roku.
+Veřejnost vybírá v sedmi kategoriích
+Do hlasování se může zapojit i vy. Internetová veřejnost rozhoduje o vítězích v sedmi kategoriích:
+- Internetové obchodování
+- Nástroje a služby
+- Online video
+- Podcast roku
+- Zájmové weby
+- Zpravodajství a publicistika
+- Influencer
+Hlasování probíhá do 31. října 2026 prostřednictvím webu ankety Křišťálová Lupa. Slavnostní vyhlášení výsledků 21. ročníku se uskuteční 24. listopadu v prostorách ČVUT v Praze.
+Anketu Křišťálová Lupa 2026 – Cena českého Internetu pořádá server Lupa.cz, jehož provozovatelem je společnost Internet Info. Partnerem kategorie je Quantcom. Mediálními partnery jsou Cnews.cz, Euro.cz, Marketing Journal a MediaGuru.cz. Marketingovým partnerem je LCG New Media a produktovými partnery jsou EasyEvent a Vinařství Válka. Anketa probíhá za podpory ČVUT.

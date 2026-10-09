@@ -1,0 +1,14 @@
+Společnost OpenAI předložila celkem 377 nových objevů, které pokrývají širokou škálu témat, včetně algebry, teorie čísel, teoretické informatiky, matematické logiky a topologie, uvádí The New York Times (NYT).
+Aktuální uveřejnění navazuje na zářijové oznámení společnosti, že se jí podařilo vyřešit Navierovu-Stokesovu rovnici, která byla považována za natolik obtížnou, že za každé řešení byla vypsána odměna milion dolarů (20,8 milionu korun).
+We’re sharing a solution to the Navier-Stokes Millennium Prize Problem, one of the deepest problems at the frontier of mathematics.
+The proof was produced by a group of agents, using an OpenAI next-generation model significantly more capable than GPT-6 Astra.
+The problem… pic.twitter.com/8zol3BPTL4
+— OpenAI (@OpenAI) September 8, 2026
+Tento úspěch předvedl, čeho jsou nejmodernější modely umělé inteligence schopné, ale zároveň vyvolal otázky, zda systémy umělé inteligence společnosti OpenAI využívají kreativní myšlení, nebo pouze dokončují závěrečné kroky poté, co si vypůjčily nápady z prací lidských matematiků.
+Podle Tristana Buckmastera, matematika na Newyorské univerzitě, vyvstává otázka, zda matematici pracující s programy umělé inteligence nevědomky sami neposkytují informace, které následně AI umožní dostat se k nim a práci dokončit dříve.
+„Do budoucna je dost pravděpodobné, že se objeví řada výsledků, kde modely AI vezmou něčí rozdělanou práci a dokončí ji,“ uvedl Buckmaster.
+Stejně jako v případě Navierovy-Stokesovy rovnice byly i nově zveřejněné výsledky vypracovány pomocí pokročilého modelu AI, který společnost dosud nenabídla veřejnosti.
+Poradní skupina matematiků
+Před několika týdny OpenAI oznámila, že spolupracuje s poradní skupinou matematiků, která by měla poskytovat doporučení, jak by společnosti zabývající se AI měly matematikům sdělovat výsledky vygenerované umělou inteligencí. Skupina působí pod záštitou Institutu pro pokročilá studia na Princetonské univerzitě v New Jersey a je nezávislá na společnostech v oboru AI.
+Poradní sbor mimo jiné navrhl, aby byly zveřejněny všechny podněty pro agenty umělé inteligence a jejich myšlenkové postupy. V úterý večer vydal tento orgán prohlášení, v němž označil zveřejnění za „začátek, nikoli dokončení procesu lidského porozumění a začlenění této práce do matematických znalostí“.
+„Chceme vytvořit standardy a postupy, aby výsledky zveřejňované laboratořemi zabývajícími se umělou inteligencí byly srozumitelné pro matematiky a mohly přispět k pokroku v této oblasti,“ uvedla Melanie Woodová, matematička z Harvardovy univerzity a členka poradního výboru.

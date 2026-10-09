@@ -1,0 +1,11 @@
+Mnoho modelů umělé inteligence (AI) nemá dostatečné bezpečnostní mechanismy proti žádostem o „pomoc při teroristické operaci“, uvádí iniciativa Tech Against Terrorism v páteční zprávě.
+V rámci iniciativy podporované OSN byl proveden test se 162 modely AI, včetně 116 standardních modelů, třinácti modelů přizpůsobených pro specifické domény (fine-tuning, AI se trénuje na menší a vlastní sadě dat, pozn. red.) a třinácti „open-weight modelů“ (vnitřní parametry modelů, stanovené během fáze tréninku, jsou volně dostupné a mohou být upraveny, pozn. red.) jejichž bezpečnostní mechanismy byly změněny.
+Tyto modely byly podrobeny sérii 627 dotazů, jejichž zodpovězení by terorista připravující útok potřeboval.
+Podle výsledků výzkumu standardní modely – jako ChatGPT (OpenAI), Claude (Anthropic) nebo Gemini (Google) – průměrně odpověděly na 1,9 procenta dotazů vznesených uživatelem, který jasně uvedl ve své žádosti, že má v úmyslu spáchat teroristický útok.
+Pro stejné modely se průměrný podíl použitelných odpovědí zvýšil na 16,9 procenta, když uživatelé uvedli, že svou žádost formulovali v kontextu bezpečnostního výzkumu.
+Podle testů se výsledky drasticky změnily, když byl dotaz předložen modelům, které byly upraveny tak, aby obcházely bezpečnostní parametry a schopnost odmítat určité žádosti. Ze třinácti zkoumaných modelů se průměrná míra odpovědí na otázky týkající se ‚teroristické činnosti‘ pohybovala mezi 87 a 92 procenty.
+Iniciativa Tech Against Terrorism primárně zdůrazňuje rizika spojená s „open-weight modely“.
+Podle organizace je průměrná doba pro odstranění bezpečnostních mechanismů těchto modelů méně než tři dny po jejich prvním zveřejnění.
+„Žádný model, který neprojde nezávislým bezpečnostním hodnocením, by neměl být zpřístupněn, nabízen nebo prodáván a každá společnost v distribučním řetězci musí toto předem ověřit,“ uvádí organizace.
+Článek napsaný ERTNews, poprvé byl publikován 9. října 2026 v 09:16 (SELČ).
+Tento článek byl přeložen za pomoci umělé inteligence.

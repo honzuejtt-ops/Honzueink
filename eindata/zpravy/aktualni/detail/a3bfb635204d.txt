@@ -1,0 +1,24 @@
+Obvykle to nedělám, ale na úvod si dovolím „manažerské shrnutí“, abych neztratil čtenáře, kteří končí prvním odstavcem. Pokud je pro vás DNS protokol spíše výzva, ale přesto spravujete nějakou síť či DNS resolver, zkuste si jednoduchý test, který připravila firma Cloudflare.
+Obzvláště zbystřit byste měli pokud uvidíte nějaká červená políčka.
+Nicméně pro všechny jsem si připravil malé shrnutí velké události, ke které dojde 11. října 2026 a která bude mít (doufejme) vcelku minimální viditelný dopad. Zatím to bude podruhé v historii, kdy dojde k rotaci klíče podpisu kořenové zóny.
+Co to znamená? Správně nastavený DNS resolver by kdesi ve své konfiguraci měl mít tyto dva záznamy:
+. IN DS 20326 8 2 E06D44B80B8F1D39A95C0B0D7C65D08458E880409BBC683457104237C7F8EC8D
+. IN DS 38696 8 2 683D2D0ACB8C9B712A1948B27F741219298D0A450D612C483AF444A4C0FB2B16
+V současné době se pro podpis kořenové zóny používá klíč s ID 20326 (též označovaný jako KSK-2017), který byl vygenerován v říjnu 2016, publikován v červnu 2017 a začal být užíván před osmi lety 11. října 2018, kdy nahradil úplně první klíč označovaný jako KSK-2010.
+Nový klíč 38696, jež se též označuje jako KSK-2024, vlastně vůbec neměl vzniknout. Původní plán byl, že jako nový hlavní podepisovácí klíč kořenové zóny se bude využívat KSK-2023, jenž jsme vygenerovali v rámci ceremonie KSK číslo 49. Jenže v té době přišla i zpráva, že tehdy používaný hardware security modul (HSM) AEP Keyper od firmy Ultra Electronics již nadále nebude vyráběn a podporován.
+Proto byl původní plán zrušen a kolegové z IANA/PTI hledali náhradu za původní HSM. Tu našli v podobě HSM Luna USB 7 od společnosti Thales a poměrně rychle jej zařadili do služby. Nicméně KSK-2023 na starém hardwaru již nebylo možné přenést a tak tento klíč nebyl nikdy využit.
+Používání dvou HSM byť na přechodnou dobu pochopitelně přináší komplikace. Bylo nutné inicializovat nové přístupové tokeny pro zástupce komunity, kteří se o kořenovou zóny starají a každá ceremonie se tak kvůli tomu trochu protahuje.
+Vlastní klíč KSK-2024 jsme generovali na KSK ceremonii číslo 53. Klíč byl v zóně publikován 11. ledna 2025 a od té doby běžela lhůta pro správce DNS resolverů, aby tento klíč začali používat. No a tato lhůta končí tuto neděli, protože kořenová zóna začne poskytovat DNS záznamy, které již nový klíč vyžadují.
+Pokud tedy provozujete DNS resolver, ujistěte se, že se používá klíč KSK-2024/38696 a že tedy tato rotace bude pro vás bezvýpadková. Jak to otestovat? Na to myslí mechanismus v RFC 8509.
+Pokud se pokusíte vyhledat DNS label root-key-sentinel-is-ta-38696 v nějaké doméně, třeba hned v té kořenové, měli byste dostat odpověď NXDOMAIN. Naopak label root-key-sentinel-not-ta-38696 by měl vracet  SERVFAIL. Tedy názorně pro CZ.NIC ODVR:
+$ dig @odvr.nic.cz root-key-sentinel-is-ta-38696. A +noall +comments
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 10600
+;; flags: qr rd ra ad; QUERY: 1, ANSWER: 0, AUTHORITY: 1, ADDITIONAL: 1
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 1232
+$ dig @odvr.nic.cz root-key-sentinel-not-ta-38696. A +noall +comments
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: SERVFAIL, id: 40100
+;; flags: qr rd ra; QUERY: 1, ANSWER: 0, AUTHORITY: 0, ADDITIONAL: 0
+Uznávám, že výstupy nástroje dig nejsou právě čitelné, ale je vidět, že první dotaz projde (byť s odpovědí, že doména neexistuje) a druhý vrací SERVFAIL. Pokud váš DNS resolver vrací jakékoliv jiné hodnoty, něco je špatně. Buď nepodporuje mechanismus RFC 8509 nebo KSK-2024 nemá nebo případně vůbec nevaliduje. To vše by byly špatné zprávy.

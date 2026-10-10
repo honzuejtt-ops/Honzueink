@@ -10,7 +10,7 @@ Proto byl původní plán zrušen a kolegové z IANA/PTI hledali náhradu za pů
 Používání dvou HSM byť na přechodnou dobu pochopitelně přináší komplikace. Bylo nutné inicializovat nové přístupové tokeny pro zástupce komunity, kteří se o kořenovou zóny starají a každá ceremonie se tak kvůli tomu trochu protahuje.
 Vlastní klíč KSK-2024 jsme generovali na KSK ceremonii číslo 53. Klíč byl v zóně publikován 11. ledna 2025 a od té doby běžela lhůta pro správce DNS resolverů, aby tento klíč začali používat. No a tato lhůta končí tuto neděli, protože kořenová zóna začne poskytovat DNS záznamy, které již nový klíč vyžadují.
 Pokud tedy provozujete DNS resolver, ujistěte se, že se používá klíč KSK-2024/38696 a že tedy tato rotace bude pro vás bezvýpadková. Jak to otestovat? Na to myslí mechanismus v RFC 8509.
-Pokud se pokusíte vyhledat DNS label root-key-sentinel-is-ta-38696 v nějaké doméně, třeba hned v té kořenové, měli byste dostat odpověď NXDOMAIN. Naopak label root-key-sentinel-not-ta-38696 by měl vracet  SERVFAIL. Tedy názorně pro CZ.NIC ODVR:
+Pokud se pokusíte vyhledat DNS label root-key-sentinel-is-ta-38696 v nějaké doméně, třeba hned v té kořenové, měli byste dostat odpověď NXDOMAIN. Naopak label root-key-sentinel-not-ta-38696 by měl vracet SERVFAIL. Tedy názorně pro CZ.NIC ODVR:
 $ dig @odvr.nic.cz root-key-sentinel-is-ta-38696. A +noall +comments
 ;; Got answer:
 ;; ->>HEADER<<- opcode: QUERY, status: NXDOMAIN, id: 10600

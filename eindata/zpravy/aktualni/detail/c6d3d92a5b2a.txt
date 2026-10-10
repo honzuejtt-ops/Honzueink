@@ -1,0 +1,1 @@
+Dokumenty a Disk Google podporují Markdown. • Dokumenty ale neznají všechny formátovací funkce. • Po nahrání do úložiště už soubor aspoň nemusíte konvertovat.

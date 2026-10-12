@@ -1,0 +1,27 @@
+Počet kybernetických útoků roste napříč prakticky celým světem, vzdělávací sektor ale podle bezpečnostních expertů vyčnívá. Ještě před několika lety by přitom současná čísla působila jen těžko představitelně.
+„Sledujeme další nárůst útoků na vzdělávací sektor, který v srpnu zaznamenal bezprecedentních 5354 kybernetických útoků týdně v průměru na jednu organizaci, což je meziroční nárůst o 28 %. Podobný počet útoků byl přitom před několika málo lety zcela nemyslitelný,“ upozornil Tomáš Růžička, bezpečnostní expert Check Pointu.
+Školy a další vzdělávací organizace tak předstihly i veřejnou správu, která patřila mezi další nejčastěji napadaná odvětví.
+Vysoko se umístil také sektor pohostinství, cestovního ruchu a volného času s 3056 útoky týdně na jednu organizaci. Právě v této oblasti Check Point zaznamenal výrazný meziroční nárůst o 56 procent.
+Podle bezpečnostních expertů se kyberzločinci zaměřují na prostředí s velkým množstvím uživatelů a cennými daty, kde může narušení provozu okamžitě ovlivnit chod organizace.
+Útoků přibývá i v Česku
+Statistika týkající se vzdělávacích institucí je globální. Data Check Pointu nicméně ukazují, že výraznému tlaku hackerů čelí také organizace v České republice. Na jednu organizaci v naší domovině připadalo v srpnu v průměru 2679 kybernetických útoků týdně. Oproti stejnému období loňského roku je to o 23 procent více.
+„V České republice čelila každá společnost v průměru 2679 kyberútokům týdně, což je meziroční nárůst o 23 procent,“ konstatoval Růžička.
+Ještě vyšší čísla zaznamenal Check Point v Rusku, kde připadalo na jednu organizaci 3803 útoků týdně, a v Itálii s 2824 útoky. Portugalsko bylo se 2648 útoky prakticky na úrovni České republiky.
+V Rakousku bezpečnostní experti zaznamenali průměrně 2468 útoků týdně, v Polsku 1985 a v Německu 1834. Právě Německo ale zaznamenalo celosvětově vůbec největší meziroční nárůst – o 53 procent. Nejméně útoků v Evropě podle zprávy mířilo na organizace ve Finsku, kde jich bylo v průměru 1205 týdně.
+Celosvětově jedna organizace v srpnu čelila v průměru 2422 kybernetickým útokům týdně. Meziročně jde o nárůst o 22 procent, ve srovnání s letošním červencem pak o čtyři procenta.
+Nejčastější podvody, jak je odhalit a nenechat se okrást
+Policejní statistiky zaplavují v posledních měsících příběhy nešťastníků, kteří sedli na lep internetovým podvodníkům. Kyberšmejdi přitom používají pořád dokola stejné triky, jejichž prostřednictvím se snaží důvěřivce napálit a často i oškubat. Připravte se na ně a podívejte se, jak se nejčastějším podvodům na síti bránit.
+Phishing číhá v e-mailech
+Jedním z hlavních kanálů, který kyberzločinci k útokům používají, zůstává e-mail. Check Point v srpnu vyhodnotil jako phishingový každý 112. e-mail. V červenci připadal phishing na každý 128. e-mail.
+Většina podvodných zpráv se snažila dostat oběť na nebezpečnou stránku. Škodlivý odkaz obsahovalo 72 procent phishingových e-mailů, zatímco nebezpečnou přílohu mělo 14 procent zpráv.
+Útočníci přitom podle expertů přizpůsobují své návnady aktuálním událostem nebo běžným firemním procesům. Cílem může být například přesměrování uživatele na podvodnou stránku určenou ke krádeži přihlašovacích údajů nebo šíření škodlivého kódu.
+Přibývá i vydírání
+Rostoucí aktivita hackerů se neprojevuje pouze množstvím zaznamenaných útoků. Prudce přibývá také obětí ransomwaru. V srpnu bylo veřejně vydíráno 1042 obětí. To je téměř dvojnásobek proti srpnu loňského roku a zároveň o osm procent více než letos v červenci.
+Největší část obětí, 36 procent, připadala na podnikové služby. Následovala průmyslová výroba se 13 procenty a spotřební zboží a služby s 12 procenty.
+Vysoký podíl útoků na podnikové služby podle bezpečnostních expertů ukazuje, že se kyberzločinci zaměřují také na organizace stojící uprostřed rozsáhlejších dodavatelských řetězců. Jejich napadení totiž může ovlivnit provoz celé řady dalších společností.
+Nejaktivnější ransomwarovou skupinou byl podle zprávy v srpnu Qilin, kterému připadalo 15 procent zveřejněných útoků. Následovala skupina The Gentlemen s desetiprocentním podílem. Mezi tři nejaktivnější ransomwarové skupiny se vůbec poprvé dostala také Orova.
+Jak útočí vyděračské viry
+Na napadeném stroji dokážou vyděračské viry z rodiny ransomwaru udělat pěkný nepořádek. Nejprve zašifrují všechna data uložená na pevném disku. Za jejich zpřístupnění pak útočníci požadují výkupné, a to klidně i několik tisíc korun.
+Kyberzločinci se zpravidla snaží v majiteli napadeného stroje vzbudit dojem, že se ke svým souborům dostane po zaplacení pokuty. Ta byla údajně vyměřena za používání nelegálního softwaru apod. I proto jim celá řada lidí již výkupné zaplatila.
+Zaplatit zpravidla chtějí v bitcoinech, protože pohyby této virtuální měny se prakticky nedají vystopovat. A tím logicky ani nelegální aktivita počítačových pirátů.
+Ani po zaplacení výkupného se ale uživatelé ke svým datům nemusí dostat. Místo placení výkupného je totiž nutné virus z počítače odinstalovat. Zpřístupnit nezálohovaná data se už ale ve většině případů nepodaří.

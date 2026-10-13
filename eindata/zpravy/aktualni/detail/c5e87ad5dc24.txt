@@ -1,0 +1,21 @@
+Premiéru si odbyl také Apple HomeView – chytrý displej s hlasovou asistentkou Siri AI, který chce celou propojenou domácnost zastřešovat. O něm Novinky informovaly již dříve. U obrazovky na kuchyňské lince nebo na stěně ale ambice Applu nekončí. Nová řada má pokrýt dění před domem, přístup dovnitř i teplotu v jednotlivých místnostech.
+Apple přitom nespoléhá pouze na vlastní vývoj. Kamery a zámek připravil s LG Electronics, u termostatů se zapojila také společnost Schneider Electric. Všechno vybavení má spojovat jednoduché nastavení přes iPhone a ovládání prostřednictvím aplikace Domácnost nebo Siri.
+„Při vývoji jsme úzce spolupracovali s lídry na trhu, společnostmi LG Electronics a Schneider Electric, a postarali jsme se o to, aby všechno vybavení bezproblémově interagovalo s aplikací Domácnost. Ovládání je tak jednoduché, spolehlivé a diskrétní,“ uvedl Matthew Costello, viceprezident Applu pro vývoj hardwaru.
+Poslední odejde, dům se přepne
+Nejlépe záměr Applu ilustruje běžný odchod do práce. Uživatelé si mohou nastavit, aby po odchodu posledního člena domácnosti termostat upravil teplotu pro prázdný dům, dveře se zamkly a kamery začaly sledovat dění.
+Před návratem pak termostat začne regulovat teplotu. Chytrý zámek může při přiblížení člověka s kompatibilním iPhonem nebo Apple Watch a uloženým digitálním klíčem automaticky odemknout. Telefon přitom není nutné přikládat k zámku.
+Podobně lze propojit ranní činnosti. Scéna „Dobré ráno“ dokáže upravit teplotu, sklonit vnitřní kameru a pustit hudbu na HomePodu. Jednotlivé produkty tedy mohou fungovat samostatně, jejich hlavní přínos má ale spočívat ve spolupráci.
+Kamera se po návratu sklopí
+Právě vnitřní kamera LG Indoor Cam nabízí jeden z nejzajímavějších detailů nové řady. Když chce uživatel na dálku zkontrolovat domácnost, kamera upraví náklon. Jakmile se ale první člen rodiny vrátí domů, namíří na podlahu a přestane sledovat místnost.
+Její polohu lze změnit také ručně nebo přes aplikaci Domácnost. Uživatel tak může upravit záběr podle toho, co chce zkontrolovat.
+Pro venkovní prostory Apple a LG připravily kameru Outdoor Cam a model Floodlight Cam s reflektory. Obě nabízejí barevné noční vidění při slabém osvětlení. U druhé jmenované se světla automaticky aktivují při zaznamenání pohybu.
+Videozvonek LG Video Doorbell má rovnou dvě kamery. Horní snímá návštěvníka v rozlišení 2,5K, dolní nabízí Full HD záběr na prostor se zásilkami. Mezi oběma pohledy lze přepínat.
+Když někdo zazvoní, upozornění se zobrazí na iPhonu nebo iPadu a zvukový signál mohou přehrát také HomeView, HomePod či HomePod mini. S návštěvou si pak uživatel může promluvit a případně jí odemknout.
+Záznamy prohledá umělá inteligence
+Kamery dokážou rozpoznávat lidi, známé obličeje, zvířata, vozidla a zásilky. Pro chytré funkce využívají kompatibilní domácí centrálu, například HomeView, HomePod, HomePod mini nebo Apple TV 4K.
+S příslušným tarifem iCloud+ mají uživatelé přístup k desetidenní historii videozáznamů událostí. Nejde tedy o příslib nepřetržitého desetidenního záznamu. Samostatné předplatné pro kameru není potřeba, placený tarif iCloud+ však pro ukládání historie nutný je.
+V rámci vybraných tarifů Apple Intelligence automaticky vytváří popisy, které shrnují dění v záznamu. Uživatelé pak mohou videa vyhledávat pomocí přirozeného popisu. Tyto funkce vyžadují nastavení přes iPhone nebo iPad s aktivovanou Apple Intelligence a podporovanou domácí centrálu s aktuálním softwarem.
+Vestavěné úložiště umožňuje kamerám pokračovat v nahrávání i bez Wi-Fi. Živý obraz a aktivitu kamer lze sledovat v aplikaci Domácnost na iPhonu, iPadu, Macu, Apple TV 4K nebo HomeView.
+Dveře otevře i bez internetu
+Chytrý zámek LG Smart Deadbolt Lock využívá technologii ultraširokého pásma, díky které rozpozná vzdálenost kompatibilního zařízení od dveří. Vedle automatického odemykání nabídne také možnost přiložit telefon či hodinky, zadat PIN na číselníku nebo použít záložní fyzický klíč.
+Zámek pozná otevření a zavření dveří i pokus o manipulaci. Upozornit má také na situaci, kdy se dveře otevřou, přestože byly zamčené.

@@ -1,3 +1,315 @@
+|T|Ext4 i XMPP se stále rozvíjejí a AI pomáhá lékařům, zápisky z LinuxDays|D|12.10. 22:00|P|Na letošní konferenci LinuxDays se mluvilo o tom, že se komunikační protokol XMPP a souborový systém Ext4 stále rozvíjejí. AI může nejen škodit, ale m...|X|Daniel Gultsch: Jabber/XMPP: 25 let digitální nezávislosti
+Co se dozvíte v článku
+Digitální nezávislost byla před dvaceti lety jen buzzwordem a vlastně ještě nedávno o tom nikdo nepřemýšlel, dokud se nestaly ve světě některé nedávné změny. Open source je pro digitální suverenitu nutná podmínka, ale ne jediná.
+Nabízí nám ochranu proti spyware, ověřitelnou kryptografii a kód, který můžeme zkoumat a pochopit.
+Naopak nám open-source nezajistí ochrany proti vypnutí služby, sankcím, regionálnímu blokování a svévolným rozhodnutím operátorů. Suverenitu nám zajistí jen široká zaměnitelnost.
+Znamená to možnost kdykoliv změnit poskytovatele služeb i software na straně serveru či klienta. Kterýkoliv z dodavatelů může být kdykoliv vyměněn, ale stále musíme být schopni se domluvit s ostatními.
+Proto potřebujeme otevřené standardy. Otevřené API ale automaticky neznamená standard.
+Ke standardizaci slouží různé organizace (SDO, Standards Developing Organisations) jako ISO, IETF, W3C a podobně. Mezi známe standardy patří DNS, HTTP, JSON, TLS nebo SSH. Naopak standardem není třeba S3 (Simple Storage Service), což je jen široce přijímaná volná shoda mezi mnoha nezávislými stranami.
+XMPP je zkratka pro Extensible Messaging and Presence Protocol, který byl v prvních verzích standardizován už v roce 2004 a později rozšiřován. O standardizaci rozšíření se stará XMPP Standards Foundation (XSF), která má pravidla pro ochrany před tím, kdyby některá firma chtěla převzít kontrolu nad celým prostředím. Žádný člen se nesmí stát dominantním, aby byl schopen sám věci ovlivňovat.
+Zhruba před deseti lety došlo k velkému přechodu uživatelů komunikačních aplikací k mobilním telefonům. Tahle doba byla důležitá, protože v té době ztratilo XMPP spoustu uživatelů.
+Kvůli vylepšení provozu na mobilních sítích vzniklo rozšíření XEP-0198, které zajišťuje správu toku, potvrzování paketů a zotavení při změně sítě. Další rozšíření pak umožňuje například sledovat na serveru stav klientů, posílat zprávy na více zařízení, ukládat zprávy pro pozdější odeslání a distribuovat soubory několika odpojeným zařízením.
+Rozšíření XEP-0384 pak zavedlo end-to-end šifrování pomocí OMEMO, což je stejné šifrování, které používají aplikace jako WhatsApp a Signal. Řeší se tam i možnost posílat šifrované zprávy na více zařízení najednou.
+Vylepšen byl také šifrovaný transportní protokol používaný mezi klienty a servery, který má teď velmi širokou podporu mezi klienty.
+Byl zaznamenán útok na největší ruský server pro XMPP, který proběhl na serverech poskytovatelů Hetzner a Linode. Šlo o útok na úrovni poskytovatele, kdy byla unesena žádost pomocí protokolu ACME.
+Útočníkovi se tak podařilo získat platný certifikát od Let's Encrypt a mohl se tak vydávat za původní server. Stále není jasné, kdo za útokem stál, ale předpokládá se, že to byla nějaká státní organizace.
+XMPP se vylepšuje dále, nabízí například možnost synchronizace mezi několika klienty.
+Umožňuje to odesílateli oznámit, že zpráva byla přečtena.
+Kvůli soukromí je možné to vypnout, ve velkých skupinách to bývá často vypnuté. Další zmíněné rozšíření umí třeba informovat pisatele o časové zóně jeho kontaktu. Na některých klientech tak vidím, jestli ten člověk spí, protože je u něj zrovna noc.
+Do budoucna se připravuje šifrování pomocí Stanza v XEP-0420, které by mělo být výrazně robustnější. Už máme deset let zkušeností s provozem OMEMO.
+Chystají se také odpovědi na zprávy, které známe z jiných platforem. Podobně se pracuje na možnosti poslat více fotografií najednou, což jsou takové malé galerie v konverzacích. Pracujeme také na podpoře OAuth, aby bylo možné XMPP nasadit jednoduše v organizacích.
+Posun by měl proběhnout na XMPP Sprintu, který proběhle v listopadu v Londýně.
+Velkým plánem je XMPP 2.0, což je nový pokus dostat standard do IETF. Chceme aktualizovat základní sadu RFC a zkombinovat nejpopulárnější rozšíření do dalšího RFC.
+Základ byl už představen a diskutován na IETF 126 ve Vídni, další práce se připravují pro IETF 128 v Kuala Lumpur.
+Vyzkoušejte XMPP, stačí si vybrat vhodného klienta. V Linuxu to může být Dino, ve Windows Gajim, na Androidu Conversations a na iPhone třeba Monal. Poté musíte zvolit poskytovatele služby, což může být Conversations.im, providers.xmpp.net nebo nějaký místní třeba na univerzitě nebo v hackerspace. Pokud si chcete server provozovat sami, můžete nasadit Prosody nebo ejabberd. Většina distribucí je má zabalíčkované.
+Jan Kára: Ext4 – nové triky starého psa
+Souborový systém Ext2 vznikl v roce 1993 a byl inspirovaný souborovými systémy Minix a FFS z BSD. Diskový formát byl dobře navržený jako rozšiřitelný. Dodnes jsou formáty kompatibilní, dnešním jádrem si můžete připojit souborový systém z roku 1993.
+Na začátku souborového systému leží bitmapy, které ukazují právě používané vlastnosti.
+Jak rostly velikosti disků, zpomalovala se kontrola souborových systémů po nekorektním odpojení. Stalo se to neúnosným a začaly se implementovat vlastnosti jako žurnály.
+V roce 2001 vznikl souborový systém Ext3, který toho na disku změnil málo, ale došlo k velkému přepsání celé implementace v jádře.
+V roce 2006 pak vznikl Ext4, který přišel s novým formátem inodů. Protože to byla velká změna, vznikla kopie kódu na které se pracovalo, aby se nepoškodila data uživatelů.
+Jakmile pak byl nový kód ověřený a stabilní, mohl se kolem roku 2015 původní kód ext3 z jádra smazat.
+Souborový systém je rozdělen na alokační grupy, ve které je tabulka inodů pevné velikosti, bitmapa použitých bloků a bitmapa použitých inodů. Tabulka inodů a bitmapy nemusejí ležet nutně uvnitř grupy.
+Velikost blokové bitmapy omezuje velikost grupy – typické alokační grupy mají 128 MB.
+Inode je oblast velká obvykle 256 bajtů, která popisuje jeden objekt: adresář, soubor, link a podobně. Obsahuje informace jako velikost, práva, časy přístupu a modifikace a hlavně odkazy na datové bloky obsahující data příslušného objektu. Ve zbylém místě rezervovaném pro inode se ukládají rozšířené atributy.
+Ext4 přišel s novým způsobem uložení informací o datových blocích do B-stromu, kterému se říká extenty.
+Souborový systém Ext4 podporuje některé méně známé vlastnosti, které byly v přednášce představeny. V roce 2011 byla implementována vlastnosti bigalloc, která dovoluje alokovat místo na souborovém systému po velkých blocích. To umožňuje mít větší grupy a alokovat rychleji s menší režií.
+Naopak se více plýtvá místem pro malé soubory.
+Obvyklá velikost bloků je 4 KB na x86, protože jádro dlouho nepodporovalo jinou velikost bloku než jaká je velikost paměťové stránky. Na jiné architektuře si to můžete nakonfigurovat jinak, ale kvůli kompatibilitě se to příliš nepoužívalo.
+Od roku 2025 je podporována libovolná velikost bloku bez ohledu na velikost stránky. Oproti velkým alokačním clusterům to neplýtvá místem pro metadata. Nevýhodou ale je, že malé soubory zabírají více místa v keši a je zvýšená režie při malých čteních a zápisech.
+Moderní disky podporují atomický zápis delší než jeden sektor. Při výpadku napájení tak na disku uvidíte buď starý obsah nebo už nový obsah a nic mezi tím.
+Je možné tímto způsobem ukládat větší množství dat, od 4 KB až třeba pro 1 MB. Výhodné je to zejména pro databáze, které se snaží tímto způsobem také pracovat.
+Pokud databázi zaručíte atomické zápisy na úrovni disku, je možné odstranit dvojité zápisy a to vede až ke 30% navýšení výkonu. Pro direct IO přibyla podpora v roce 2025, ale jen do velikosti jednoho clusteru.
+Ext4 obvykle používá žurnál, aby se zajistila konzistence souborového systému i při nekorektním odpojení třeba při pádu systému. Každá logická operace se skládá z řady kroků, kterým se dohromady říká transakce. Do žurnálu se zapíše informace o blocích, které se budou měnit a jejich obsah.
+Po uložení všech změn se zapíše takzvaný „commit“, který říká, že transakce je úplná. Na pozadí pak začnete přepisovat změny ze žurnálu na správné pozice v souborovém systému.
+Při připojování souborového systému se žurnál projde a od nejstarších se data zapíší na svá místa, čímž získáme jistotu, že je souborový systém v konzistentním stavu.
+Souborový systém Ext4 může fungovat i v režimu bez žurnálu, podobně jako to dělal Ext2. Práce se žurnálem je náročná, pokud intenzivně pracujeme s metadaty, což nás stojí výkon disku.
+Vždy totiž musíme zapisovat dvakrát, nejdřív do žurnálu a pak znovu na finální pozici. Jsou ale situace, kdy o konzistenci nestojíme, například pokud je na disku uložená třeba jen keš. Souborový systém můžeme po výpadku zahodit a vytvořit ho znovu prázdný.
+Získáme tím asi 20 % výkonu při zápisech, což pro nás může být výhodnější varianta.
+Jádro nabízí volání fsync, které zajistí uložení dat na disk, aby byla skutečně dostupná po výpadku. Je nutné při tom zapsat všechna data pro soubor, zapsat do žurnálu transakci s novým obsahem metadatových bloků. Vždy je ale aktivní jen jedna transakce a fsync čeká na zápis i nesouvisejících dat. Pro některé typy zátěže spotřebuje zápis do žurnálu až dvě třetiny výkonu disku.
+Proto v roce 2020 vznikla nová vlastnost žurnálu fastcommit, která dovoluje při fsync zapsat jen zkrácenou transakci. Ta neobsahuje metadata, ale jen seznam logických operací, které proběhly od posledního commitu. Tím se výrazně snižuje množství dat, která je třeba zapsat do žurnálu.
+V roce 2017 byla implementována podpora velkých rozšířených atributů, které se využívají například při ACL, SELinuxu a dalších aplikacích. Obvykle je velikost dat omezena na malý kousek zbývajících dat v inode, případně vám souborový systém alokuje jeden blok. Jsou to maximálně čtyři kilobajty, kam se musí vše vejít. To je docela málo místa.
+Vlastnost ea_inode dovoluje alokovat skrytý inode a data uložit pomocí něj jako v souboru. Velikost atributu je pak omezena na 64 KB.
+V současné době dochází k přechodu implementace na VFS infrastrukturu iomap. V ideálním případě bude jediným pozorovatelným efektem snížení nároků na CPU pro některé druhy zátěže.
+Některé operace jsou už převedené, nejvíce práce bude se standardním buffero...|E|
+|T|WebGL: tvorba 3D grafiky a zobrazení 3D scén|D|12.10. 22:00|P|Už jsme si vysvětlili všechny důležité koncepty. Nastává tedy ideální čas pro to, abychom vykreslili první skutečnou 3D scénu. Začneme jednoduchým pří...|X|V předchozí trojici článků [1] [2] [3] jsme si popsali prakticky všechny důležité koncepty WebGL a OpenGL ES (zbývá ještě popsat texturování). Nyní je tedy ideální čas pro to, abychom si vykreslili první skutečnou 3D scénu.
+Začneme jednoduchým příkladem – zobrazením krychle reprezentované drátovým modelem (wireframe), tj. dvanácti úsečkami, které tvoří hrany krychle. 3D zobrazení bude realizováno v několika krocích:
+- Úprava vertex shaderu tak, aby akceptoval 3D souřadnice vrcholů úseček
+- Úprava polí/bufferů s koncovými body úseček: nyní budou obsahovat 3D souřadnice
+- Vylepšení vertex shaderu o vynásobení vstupního vektoru transformační maticí
+- Výpočet transformační matice umožňující rotaci krychle okolo dvou os
+- Úprava transformační matice: přidání výpočtu perspektivy
+Vertex shader akceptující souřadnice koncových bodů reprezentované 3D vektorem
+Prozatím jsme do vertex shaderu předávali koncové body úseček atd., které byly definovány v 2D ploše, tj. jednalo se o dvojici souřadnic (typ vec2). Vertex shader k těmto dvěma souřadnicím přidal nulovou z-ovou souřadnici a jedničkovou váhu (W):
+attribute vec2 position;
+attribute vec4 aColor;
+varying vec4 vColor;
+
+void main() {
+vColor = aColor;
+gl_Position = vec4(position, 0, 1);
+Nyní budeme muset do shaderu předávat pro každý koncový bod tři souřadnice (typ vec3), ke kterým shader přidá pouze váhu:
+attribute vec3 position;
+attribute vec4 aColor;
+varying vec4 vColor;
+
+void main() {
+vColor = aColor;
+gl_Position = vec4(position, 1);
+V praxi tak můžeme nadeklarovat pole vrcholů dvanácti úseček, které tvoří hrany 3D krychle:
+// omezeno tak, aby bylo možné později rotovat
+const min_x = -0.5
+const max_x = 0.5
+const min_y = min_x
+const max_y = max_x
+const min_z = min_x
+const max_z = max_x
+
+// souřadnice úseček
+const vertexes = [
+// přední stěna
+// x      y      z        x      y      z
+min_x, min_y, min_z,   max_x, min_y, min_z,
+min_x, max_y, min_z,   max_x, max_y, min_z,
+min_x, min_y, min_z,   min_x, max_y, min_z,
+max_x, min_y, min_z,   max_x, max_y, min_z,
+
+// zadní stěna
+// x      y      z        x      y      z
+min_x, min_y, max_z,   max_x, min_y, max_z,
+min_x, max_y, max_z,   max_x, max_y, max_z,
+min_x, min_y, max_z,   min_x, max_y, max_z,
+max_x, min_y, max_z,   max_x, max_y, max_z,
+
+// propojení přední a zadní stěny
+// x      y      z        x      y      z
+min_x, min_y, min_z,   min_x, min_y, max_z,
+min_x, max_y, min_z,   min_x, max_y, max_z,
+max_x, min_y, min_z,   max_x, min_y, max_z,
+max_x, max_x, min_z,   max_x, max_x, max_z,
+Nadeklarujeme i pole s barvami úseček (bude konstantní):
+// barvy koncových bodů úseček
+const colors = [
+// přední stěna
+0, 1, 0, 1,   0, 1, 0, 1,
+0, 1, 0, 1,   0, 1, 0, 1,
+0, 1, 0, 1,   0, 1, 0, 1,
+0, 1, 0, 1,   0, 1, 0, 1,
+
+// zadní stěna
+1, 0, 0, 1,   1, 0, 0, 1,
+1, 0, 0, 1,   1, 0, 0, 1,
+1, 0, 0, 1,   1, 0, 0, 1,
+1, 0, 0, 1,   1, 0, 0, 1,
+
+// propojení přední a zadní stěny
+1, 1, 0, 1,   1, 1, 0, 1,
+1, 1, 0, 1,   1, 1, 0, 1,
+1, 1, 0, 1,   1, 1, 0, 1,
+1, 1, 0, 1,   1, 1, 0, 1,
+Při specifikaci, jaké vrcholy se budou předávat do vertex shaderu, nesmíme zapomenout na to, že druhý parametr musí obsahovat hodnotu 3 a nikoli 2 (dtto pátý parametr):
+// seznam předávaný do vertex shaderu
+gl.vertexAttribPointer(p,
+3,                                // počet prvků v každém atributu
+gl.FLOAT,                         // typ prvků
+gl.FALSE,                         // data nejsou normalizována
+3*Float32Array.BYTES_PER_ELEMENT, // velikost vertexu v bajtech
+0                                 // offset
+gl.enableVertexAttribArray(p);
+Samotné vykreslení dvanácti úseček vypadá takto (hodnota 24 odpovídá 24 vrcholům):
+// vykreslení dvanácti úseček s předáním souřadnic a barev
+gl.drawArrays(gl.LINES, 0, 24);
+První demonstrační příklad: 3D krychle vykreslená do 2D plochy bez aplikace transformací
+Úplný zdrojový kód dnešního prvního demonstračního příkladu, který po svém spuštění ve webovém prohlížeči (otestovat je možné zde) vykreslí 3D krychli do 2D plochy (prozatím bez aplikace transformací typu rotace či aplikace perspektivy), vypadá následovně:
+const vertexShaderSource = `
+attribute vec3 position;
+attribute vec4 aColor;
+varying vec4 vColor;
+
+void main() {
+vColor = aColor;
+gl_Position = vec4(position, 1);
+
+const fragmentShaderSource = `
+precision mediump float;
+varying vec4 vColor;
+
+void main() {
+gl_FragColor = vColor;
+
+function print(message) {
+console.log(message);
+
+// reference na objekt představující kreslicí plátno umístěné na webové stránce
+const canvas = document.getElementById("web_gl_canvas");
+if (!canvas) {
+throw new Error("Canvas with id 'web_gl_canvas' not found");
+print("Canvas object retrieved");
+
+// vytvoření a získání kontextu WebGL (3D grafika)
+const gl = canvas.getContext("webgl");
+if (!gl) {
+throw new Error("WebGL is not supported or context creation failed");
+print("WebGL context created");
+
+// vytvoření vertex shaderu
+const vertexShader = gl.createShader(gl.VERTEX_SHADER);
+if (!vertexShader) {
+throw new Error("Failed to create vertex shader.");
+print("Vertex shader created");
+
+// překlad vertex shaderu
+gl.shaderSource(vertexShader, vertexShaderSource);
+gl.compileShader(vertexShader);
+if (!gl.getShaderParameter(vertexShader, gl.COMPILE_STATUS)) {
+const log = gl.getShaderInfoLog(vertexShader);
+gl.deleteShader(vertexShader);
+throw new Error(`Vertex shader compile failed: ${log}`);
+print("Vertex shader compiled");
+
+// vytvoření fragment shaderu
+const fragmentShader = gl.createShader(gl.FRAGMENT_SHADER);
+if (!fragmentShader) {
+throw new Error("Failed to create fragment shader.");
+print("Fragment shader created");
+
+// překlad fragment shaderu
+gl.shaderSource(fragmentShader, fragmentShaderSource);
+gl.compileShader(fragmentShader);
+if (!gl.getShaderParameter(fragmentShader, gl.COMPILE_STATUS)) {
+const log = gl.getShaderInfoLog(fragmentShader);
+gl.deleteShader(fragmentShader);
+throw new Error(`fragment shader compile failed: ${log}`);
+print("Fragment shader compiled");
+
+// registrace obou shaderů
+const program = gl.createProgram();
+if (!program) {
+throw new Error("Failed to create program.");
+print("Program created");
+
+gl.attachShader(program, vertexShader);
+gl.attachShader(program, fragmentShader);
+print("Shaders attached to the program");
+
+gl.linkProgram(program);
+if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
+const log = gl.getProgramInfoLog(program);
+gl.deleteProgram(program);
+throw new Error(`Program link failed: ${log}`);
+print("Program linked");
+
+// omezeno tak, aby bylo možné později rotovat
+const min_x = -0.5
+const max_x = 0.5
+const min_y = min_x
+const max_y = max_x
+const min_z = min_x
+const max_z = max_x
+
+// souřadnice úseček
+const vertexes = [
+// přední stěna
+// x      y      z        x      y      z
+min_x, min_y, min_z,   max_x, min_y, min_z,
+min_x, max_y, min_z,   max_x, max_y, min_z,
+min_x, min_y, min_z,   min_x, max_y, min_z,
+max_x, min_y, min_z,   max_x, max_y, min_z,
+
+// zadní stěna
+// x      y      z        x      y      z
+min_x, min_y, max_z,   max_x, min_y, max_z,
+min_x, max_y, max_z,   max_x, max_y, max_z,
+min_x, min_y, max_z,   min_x, max_y, max_z,
+max_x, min_y, max_z,   max_x, max_y, max_z,
+
+// propojení přední a zadní stěny
+// x      y      z        x      y      z
+min_x, min_y, min_z,   min_x, min_y, max_z,
+min_x, max_y, min_z,   min_x, max_y, max_z,
+max_x, min_y, min_z,   max_x, min_y, max_z,
+max_x, max_x, min_z,   max_x, max_x, max_z,
+
+// barvy koncových bodů úseček
+const colors = [
+// přední stěna
+0, 1, 0, 1,   0, 1, 0, 1,
+0, 1, 0, 1,   0, 1, 0, 1,
+0, 1, 0, 1,   0, 1, 0, 1,
+0, 1, 0, 1,   0, 1, 0, 1,
+
+// zadní stěna
+1, 0, 0, 1,   1, 0, 0, 1,
+1, 0, 0, 1,   1, 0, 0, 1,
+1, 0, 0, 1,   1, 0, 0, 1,
+1, 0, 0, 1,   1, 0, 0, 1,
+
+// propojení přední a zadní stěny
+1, 1, 0, 1,   1, 1, 0, 1,
+1, 1, 0, 1,   1, 1, 0, 1,
+1, 1, 0, 1,   1, 1, 0, 1,
+1, 1, 0, 1,   1, 1, 0, 1,
+
+// buffer, do kterého se překopírují souřadnice bodu
+const vertexBuffer = gl.createBuffer();
+if (!vertexBuffer) {
+throw new Error("Failed to create buffer.");
+print("Vertex buffer created");
+gl.bindBuffer(gl.ARRAY_BUFFER, vertexBuffer);
+
+const data = new Float32Array(vertexes);
+gl.bufferData(gl.ARRAY_BUFFER, data, gl.STATIC_DRAW);
+print("Vertex buffer filled-in by vertexes");
+
+// navázání na parametr předávaný do vertex shaderu
+const p = gl.getAttribLocation(program, "position");
+if (p === -1) {
+throw new Error("Attribute 'position' not found in shader program");
+print("Attribute 'position' found in shader program")
+
+// seznam předávaný do vertex shaderu
+gl.vertexAttribPointer(p,
+3,                                // počet prvků v každém atributu
+gl.FLOAT,                         // typ prvků
+gl.FALSE,                         // data nejsou normalizována
+3*Float32Array.BYTES_PER_ELEMENT, // velikost vertexu v bajtech
+0                                 // offset
+gl.enableVertexAttribArray(p);
+
+// barvový buffer
+const colorBuffer = gl.createBuffer();
+gl.bindBuffer(gl.ARRAY_BUFFER, colorBuffer);
+
+const cdata = new Float32Array(colors);
+gl.bufferData(gl.ARRAY_BUFFER, cdata, gl.STATIC_DRAW);
+
+const aColor = gl.getAttribLocation(program, "aColor");
+gl.enableVertexAttribArray(aColor);
+
+// seznam předávaný do vertex shaderu
+gl.vertexAttribPointer(aColor,
+4,                                // počet prvků v každém atributu
+gl...|E|
 |T|Útočníci rozpálili mrazáky ve stovkách francouzských obchodů až na 50 °C. Asi jim stačilo heslo z kalendáře|D|12.10. 19:45|P|Útočníci spustili odmrazování v mrazácích stovek francouzských supermarketů. • Zasáhli jednotky Danfoss se zastaralým firmwarem, dostupné z internetu....|X|Útočníci spustili odmrazování v mrazácích stovek francouzských supermarketů. • Zasáhli jednotky Danfoss se zastaralým firmwarem, dostupné z internetu. • Mrazák je dnes počítač připojený k síti a technika bez aktualizací je slabé místo.|E|
 |T|Sport je novou zbraní streamovacích služeb. Netflix má box, Disney+ Super Bowl a Apple Formuli 1|D|12.10. 18:15|P|Streamovací služby už dávno nejsou jen videotékami s filmy a seriály. Netflix vysílá box a americký fotbal, HBO Max nabídlo kompletní olympijské hry a...|X|Streamovací služby už dávno nejsou jen videotékami s filmy a seriály. Netflix vysílá box a americký fotbal, HBO Max nabídlo kompletní olympijské hry a české Oneplay staví velkou část své nabídky na sportovních právech. Nyní přicházejí další dvě novinky. Disney+ odvysílá příští Super Bowl a Apple ...|E|
 |T|iPhone povolí odstranit skoro všechny předinstalované aplikace. Google jen polovinu|D|12.10. 17:45|P|V Evropské unii lze z iPhonů vymazat téměř všechny předinstalované aplikace • Telefony se systémem Android obsahují výrazně více neodstranitelného bal...|X|V Evropské unii lze z iPhonů vymazat téměř všechny předinstalované aplikace • Telefony se systémem Android obsahují výrazně více neodstranitelného balastu • Předinstalované aplikace poměrně často agresivně sbírají uživatelská data|E|

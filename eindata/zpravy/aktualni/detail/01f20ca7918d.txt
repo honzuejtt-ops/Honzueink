@@ -1,0 +1,54 @@
+Daniel Gultsch: Jabber/XMPP: 25 let digitální nezávislosti
+Co se dozvíte v článku
+Digitální nezávislost byla před dvaceti lety jen buzzwordem a vlastně ještě nedávno o tom nikdo nepřemýšlel, dokud se nestaly ve světě některé nedávné změny. Open source je pro digitální suverenitu nutná podmínka, ale ne jediná.
+Nabízí nám ochranu proti spyware, ověřitelnou kryptografii a kód, který můžeme zkoumat a pochopit.
+Naopak nám open-source nezajistí ochrany proti vypnutí služby, sankcím, regionálnímu blokování a svévolným rozhodnutím operátorů. Suverenitu nám zajistí jen široká zaměnitelnost.
+Znamená to možnost kdykoliv změnit poskytovatele služeb i software na straně serveru či klienta. Kterýkoliv z dodavatelů může být kdykoliv vyměněn, ale stále musíme být schopni se domluvit s ostatními.
+Proto potřebujeme otevřené standardy. Otevřené API ale automaticky neznamená standard.
+Ke standardizaci slouží různé organizace (SDO, Standards Developing Organisations) jako ISO, IETF, W3C a podobně. Mezi známe standardy patří DNS, HTTP, JSON, TLS nebo SSH. Naopak standardem není třeba S3 (Simple Storage Service), což je jen široce přijímaná volná shoda mezi mnoha nezávislými stranami.
+XMPP je zkratka pro Extensible Messaging and Presence Protocol, který byl v prvních verzích standardizován už v roce 2004 a později rozšiřován. O standardizaci rozšíření se stará XMPP Standards Foundation (XSF), která má pravidla pro ochrany před tím, kdyby některá firma chtěla převzít kontrolu nad celým prostředím. Žádný člen se nesmí stát dominantním, aby byl schopen sám věci ovlivňovat.
+Zhruba před deseti lety došlo k velkému přechodu uživatelů komunikačních aplikací k mobilním telefonům. Tahle doba byla důležitá, protože v té době ztratilo XMPP spoustu uživatelů.
+Kvůli vylepšení provozu na mobilních sítích vzniklo rozšíření XEP-0198, které zajišťuje správu toku, potvrzování paketů a zotavení při změně sítě. Další rozšíření pak umožňuje například sledovat na serveru stav klientů, posílat zprávy na více zařízení, ukládat zprávy pro pozdější odeslání a distribuovat soubory několika odpojeným zařízením.
+Rozšíření XEP-0384 pak zavedlo end-to-end šifrování pomocí OMEMO, což je stejné šifrování, které používají aplikace jako WhatsApp a Signal. Řeší se tam i možnost posílat šifrované zprávy na více zařízení najednou.
+Vylepšen byl také šifrovaný transportní protokol používaný mezi klienty a servery, který má teď velmi širokou podporu mezi klienty.
+Byl zaznamenán útok na největší ruský server pro XMPP, který proběhl na serverech poskytovatelů Hetzner a Linode. Šlo o útok na úrovni poskytovatele, kdy byla unesena žádost pomocí protokolu ACME.
+Útočníkovi se tak podařilo získat platný certifikát od Let's Encrypt a mohl se tak vydávat za původní server. Stále není jasné, kdo za útokem stál, ale předpokládá se, že to byla nějaká státní organizace.
+XMPP se vylepšuje dále, nabízí například možnost synchronizace mezi několika klienty.
+Umožňuje to odesílateli oznámit, že zpráva byla přečtena.
+Kvůli soukromí je možné to vypnout, ve velkých skupinách to bývá často vypnuté. Další zmíněné rozšíření umí třeba informovat pisatele o časové zóně jeho kontaktu. Na některých klientech tak vidím, jestli ten člověk spí, protože je u něj zrovna noc.
+Do budoucna se připravuje šifrování pomocí Stanza v XEP-0420, které by mělo být výrazně robustnější. Už máme deset let zkušeností s provozem OMEMO.
+Chystají se také odpovědi na zprávy, které známe z jiných platforem. Podobně se pracuje na možnosti poslat více fotografií najednou, což jsou takové malé galerie v konverzacích. Pracujeme také na podpoře OAuth, aby bylo možné XMPP nasadit jednoduše v organizacích.
+Posun by měl proběhnout na XMPP Sprintu, který proběhle v listopadu v Londýně.
+Velkým plánem je XMPP 2.0, což je nový pokus dostat standard do IETF. Chceme aktualizovat základní sadu RFC a zkombinovat nejpopulárnější rozšíření do dalšího RFC.
+Základ byl už představen a diskutován na IETF 126 ve Vídni, další práce se připravují pro IETF 128 v Kuala Lumpur.
+Vyzkoušejte XMPP, stačí si vybrat vhodného klienta. V Linuxu to může být Dino, ve Windows Gajim, na Androidu Conversations a na iPhone třeba Monal. Poté musíte zvolit poskytovatele služby, což může být Conversations.im, providers.xmpp.net nebo nějaký místní třeba na univerzitě nebo v hackerspace. Pokud si chcete server provozovat sami, můžete nasadit Prosody nebo ejabberd. Většina distribucí je má zabalíčkované.
+Jan Kára: Ext4 – nové triky starého psa
+Souborový systém Ext2 vznikl v roce 1993 a byl inspirovaný souborovými systémy Minix a FFS z BSD. Diskový formát byl dobře navržený jako rozšiřitelný. Dodnes jsou formáty kompatibilní, dnešním jádrem si můžete připojit souborový systém z roku 1993.
+Na začátku souborového systému leží bitmapy, které ukazují právě používané vlastnosti.
+Jak rostly velikosti disků, zpomalovala se kontrola souborových systémů po nekorektním odpojení. Stalo se to neúnosným a začaly se implementovat vlastnosti jako žurnály.
+V roce 2001 vznikl souborový systém Ext3, který toho na disku změnil málo, ale došlo k velkému přepsání celé implementace v jádře.
+V roce 2006 pak vznikl Ext4, který přišel s novým formátem inodů. Protože to byla velká změna, vznikla kopie kódu na které se pracovalo, aby se nepoškodila data uživatelů.
+Jakmile pak byl nový kód ověřený a stabilní, mohl se kolem roku 2015 původní kód ext3 z jádra smazat.
+Souborový systém je rozdělen na alokační grupy, ve které je tabulka inodů pevné velikosti, bitmapa použitých bloků a bitmapa použitých inodů. Tabulka inodů a bitmapy nemusejí ležet nutně uvnitř grupy.
+Velikost blokové bitmapy omezuje velikost grupy – typické alokační grupy mají 128 MB.
+Inode je oblast velká obvykle 256 bajtů, která popisuje jeden objekt: adresář, soubor, link a podobně. Obsahuje informace jako velikost, práva, časy přístupu a modifikace a hlavně odkazy na datové bloky obsahující data příslušného objektu. Ve zbylém místě rezervovaném pro inode se ukládají rozšířené atributy.
+Ext4 přišel s novým způsobem uložení informací o datových blocích do B-stromu, kterému se říká extenty.
+Souborový systém Ext4 podporuje některé méně známé vlastnosti, které byly v přednášce představeny. V roce 2011 byla implementována vlastnosti bigalloc, která dovoluje alokovat místo na souborovém systému po velkých blocích. To umožňuje mít větší grupy a alokovat rychleji s menší režií.
+Naopak se více plýtvá místem pro malé soubory.
+Obvyklá velikost bloků je 4 KB na x86, protože jádro dlouho nepodporovalo jinou velikost bloku než jaká je velikost paměťové stránky. Na jiné architektuře si to můžete nakonfigurovat jinak, ale kvůli kompatibilitě se to příliš nepoužívalo.
+Od roku 2025 je podporována libovolná velikost bloku bez ohledu na velikost stránky. Oproti velkým alokačním clusterům to neplýtvá místem pro metadata. Nevýhodou ale je, že malé soubory zabírají více místa v keši a je zvýšená režie při malých čteních a zápisech.
+Moderní disky podporují atomický zápis delší než jeden sektor. Při výpadku napájení tak na disku uvidíte buď starý obsah nebo už nový obsah a nic mezi tím.
+Je možné tímto způsobem ukládat větší množství dat, od 4 KB až třeba pro 1 MB. Výhodné je to zejména pro databáze, které se snaží tímto způsobem také pracovat.
+Pokud databázi zaručíte atomické zápisy na úrovni disku, je možné odstranit dvojité zápisy a to vede až ke 30% navýšení výkonu. Pro direct IO přibyla podpora v roce 2025, ale jen do velikosti jednoho clusteru.
+Ext4 obvykle používá žurnál, aby se zajistila konzistence souborového systému i při nekorektním odpojení třeba při pádu systému. Každá logická operace se skládá z řady kroků, kterým se dohromady říká transakce. Do žurnálu se zapíše informace o blocích, které se budou měnit a jejich obsah.
+Po uložení všech změn se zapíše takzvaný „commit“, který říká, že transakce je úplná. Na pozadí pak začnete přepisovat změny ze žurnálu na správné pozice v souborovém systému.
+Při připojování souborového systému se žurnál projde a od nejstarších se data zapíší na svá místa, čímž získáme jistotu, že je souborový systém v konzistentním stavu.
+Souborový systém Ext4 může fungovat i v režimu bez žurnálu, podobně jako to dělal Ext2. Práce se žurnálem je náročná, pokud intenzivně pracujeme s metadaty, což nás stojí výkon disku.
+Vždy totiž musíme zapisovat dvakrát, nejdřív do žurnálu a pak znovu na finální pozici. Jsou ale situace, kdy o konzistenci nestojíme, například pokud je na disku uložená třeba jen keš. Souborový systém můžeme po výpadku zahodit a vytvořit ho znovu prázdný.
+Získáme tím asi 20 % výkonu při zápisech, což pro nás může být výhodnější varianta.
+Jádro nabízí volání fsync, které zajistí uložení dat na disk, aby byla skutečně dostupná po výpadku. Je nutné při tom zapsat všechna data pro soubor, zapsat do žurnálu transakci s novým obsahem metadatových bloků. Vždy je ale aktivní jen jedna transakce a fsync čeká na zápis i nesouvisejících dat. Pro některé typy zátěže spotřebuje zápis do žurnálu až dvě třetiny výkonu disku.
+Proto v roce 2020 vznikla nová vlastnost žurnálu fastcommit, která dovoluje při fsync zapsat jen zkrácenou transakci. Ta neobsahuje metadata, ale jen seznam logických operací, které proběhly od posledního commitu. Tím se výrazně snižuje množství dat, která je třeba zapsat do žurnálu.
+V roce 2017 byla implementována podpora velkých rozšířených atributů, které se využívají například při ACL, SELinuxu a dalších aplikacích. Obvykle je velikost dat omezena na malý kousek zbývajících dat v inode, případně vám souborový systém alokuje jeden blok. Jsou to maximálně čtyři kilobajty, kam se musí vše vejít. To je docela málo místa.
+Vlastnost ea_inode dovoluje alokovat skrytý inode a data uložit pomocí něj jako v souboru. Velikost atributu je pak omezena na 64 KB.
+V současné době dochází k přechodu implementace na VFS infrastrukturu iomap. V ideálním případě bude jediným pozorovatelným efektem snížení nároků na CPU pro některé druhy zátěže.
+Některé operace jsou už převedené, nejvíce práce bude se standardním buffero...

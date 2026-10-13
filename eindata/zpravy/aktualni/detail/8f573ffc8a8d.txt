@@ -1,0 +1,38 @@
+IceWarp vznikl v roce 2001 a sídlí v pražském Karlíně. Jeho software dnes používá zhruba 20 tisíc organizací po celém světě. Přibližně 40 procent zákazníků je z Asie, zbytek se zhruba rovným dílem dělí mezi Evropu a Ameriku. Například malajsijská vláda si IceWarp vybrala místo Microsoftu.
+Sama firma se přitom za konkurenta Microsoftu a Googlu neoznačuje. „Použila bych spíše slovo alternativa, nikoli konkurent,“ řekla letos v únoru provozní ředitelka Petra Novotná v rozhovoru pro náš sesterský web Lupa.cz. Zájem v Evropě podle ní roste hlavně kvůli důrazu na datovou nezávislost.
+Mezi zákazníky jsou i velké instituce. IceWarp používá chilská národní policie s 80 tisíci uživateli, v Česku například Fakultní nemocnice Bulovka (přes 3 500 uživatelů) nebo mlékárna Madeta (880 uživatelů). Co tedy IceWarp umí, že je ve světě tak oblíbený?
+Všechno v jednom okně
+IceWarp pokrývá vše, co dnešní kancelář potřebuje: e-mail, textový editor, tabulky, prezentace, týmový chat, videokonference, kalendář, kontakty, sdílení souborů a poznámky.
+Hlavní rozdíl oproti konkurenci je ve způsobu práce. Uživatel nepřepíná mezi samostatnými aplikacemi, vše běží v jednom prostředí. Může mít rozepsaných několik e-mailů, dokumentů nebo poznámek a jednoduše mezi nimi přecházet. Jednotlivé agendy jsou navíc dobře propojené – vložit dokument z úložiště do chatu je otázka jednoho kliknutí.
+Prostředí je čisté a přehledné, zvyknete si na něj rychle i jako dlouholetí uživatelé Microsoft Office. V profilu si lze nastavit motiv, barevné schéma a zobrazení jednotlivých částí, v nastavení pak podrobně upravit chování pošty, kalendáře nebo chatu.
+Dokumenty, chat a videokonference
+Dokumenty se ukládají do cloudu, kde je lze sdílet a upravovat společně s kolegy v reálném čase. Přehled nahraných souborů pomůže dohledat, kdy a na čem jste pracovali. Dokumenty jsou kompatibilní s formáty Microsoft Office.
+Týmový chat je v základní verzi textový, ve vyšších verzích nabízí HD videokonference až pro tisíc účastníků. Během hovoru lze přímo upravovat sdílené dokumenty nebo hlasovat o navržených změnách, což z porady dělá skutečnou pracovní schůzku.
+Desktop i mobil
+Desktopové řešení je k dispozici pro Windows i pro Mac. Obsahuje poštovního klienta, synchronizaci kalendáře, kontaktů, úkolů a poznámek. V e-mailech je navíc možnost si automaticky překládat text z jiných jazyků. Výhodou je práce offline. Změny se po připojení samy synchronizují se serverem.
+Mobilní aplikace zpřístupní poštu, kalendář, chat, videokonference i soubory. K dispozici je také synchronizace s Outlookem.
+IceWarp také nabízí propojení s ChatGPT. Administrátor rozhoduje, jak hluboká integrace bude: může ji úplně vypnout, propojit ji s placeným firemním účtem ChatGPT, nebo nechat zapnutí na uživatelích. Poslední varianta je nejrizikovější, protože se zaměstnanci mohou připojit k veřejné verzi a ohrozit firemní data. IceWarp sám do ChatGPT nic neposílá, přenos probíhá jen na pokyn uživatele.
+Cena a tarify
+IceWarp nabízí u cloudového řešení tři základní tarify: Core, Essential a Bussines. Nejlevnější je Core, který je možný si zřídit už od jednoho uživatele. Vyjde na 34 korun měsíčně, při roční platbě je to o tři koruny méně. Uživatel má k dispozici e-mailové uložiště 2 GB a celkem na uložišti 4 GB. Úroveň Bussines stojí 101 korun měsíčně (91 korun při roční platbě) a celkové uložiště až 1 TB. Pokud byste chtěli využívat řešení pro vlastní server, musíte napsat a ozve se vám zástupce firmy.
+Nejlevnější tarif Google Workspace s názvem Starter oproti tomu sice nabízí víc prostoru – až 30 GB na uživatele. Ale také je výrazně dražší. Bez slevy vyjde v přepočtu na 170 korun. Celkově je tak IceWarp výrazně levnější než konkurence. U firmy se 150 zaměstnanci může úspora dosáhnout až 100 tisíc korun ročně, u organizací s tisíci uživateli jde o miliony.
+Kde budou vaše data
+Při zakládání účtu si zákazník vybírá datové centrum. V Evropě jsou k dispozici Česko, Německo a Itálie, mimo ni USA, Indie, Jižní Afrika a Bahrajn.
+Na volbě záleží. U amerických poskytovatelů se k datům mohou na základě tamních zákonů dostat americké úřady, a to i když leží v evropských datacentrech. Volba evropského regionu u Microsoftu nebo Googlu tedy úplnou jistotu nedává.
+Kdo chce mít nad daty plnou kontrolu, může IceWarp provozovat na vlastním serveru. K dispozici jsou instalační obrazy pro VMware a Hyper-V, balíčky pro Red Hat Enterprise Linux 8 a 9 a pro Windows, pro testování také image pro Docker. Vlastní provoz ovšem znamená i starost o aktualizace, zálohy a zabezpečení.
+Bezpečnost zajišťuje šifrování TLS/SSL, vestavěný antispam a antivirus a dvoufázové ověření.
+Správa a migrace
+Administrace je přehledná, ale nabízí vše potřebné: správu kvót a licencí, aktivaci mobilních zařízení, členství ve skupinách, přehled o úložišti, provozu a stavu služeb. Větší firmy ocení synchronizaci s Active Directory. Administrátor má také přehled předplatného, fakturace a daňových dokladů.
+Přechod od jiného poskytovatele bývá největší překážkou. IceWarp má připravené migrační nástroje pro Microsoft 365 a Google Workspace, které přenesou domény, účty, e-maily, kontakty, kalendáře i soubory. Podporována je i migrace z Microsoft Exchange, Zimbry, Keria a dalších serverů. U větších instalací pomohou s nasazením technici IceWarpu.
+TIP: Podívejte se, jak IceWarp vypadá v naší videorecenzi
+Slabší stránkou může pro některé uživatele představovat v některých případech rychlost technické podpory. Dotazy mohou uživatelé pokládat prostřednictvím webového nástroje Live Support, který je součástí webu firmy, nebo v aplikaci IceWarp. Nástroj LiveSupport je kombinací chatu a e-mailu. Jde o to, že pokud není žádný operátor volný, musíte zanechat zprávu a někdo se vám zpět ozve. Firma na svých stránkách, že na zprávy v chatu obvykle podpora reaguje v řádu několika hodin. Maximální doba pro odpověď je 48 hodin, což může být dost dlouho, pokud chcete něco řešit urgentně. Samozřejmě ti, kteří si zaplatí ten nejlepší plán, dostanou rychlejší odpověď.
+Verdikt
+IceWarp je přehledná a výrazně levnější alternativa ke kancelářským balíkům amerických firem. Práci v jednom okně ocení ti, kdo neustále přepínají mezi poštou, dokumenty a kalendářem. Velkorysá úložiště a možnost mít data v Česku nebo na vlastním serveru jsou silné argumenty pro firmy i státní instituce. Za Microsoftem a Googlem zaostává hlavně v podpoře, množství doplňků a uhlazenosti desktopových aplikací.
+Klady
+- všechny agendy v jednom okně
+- zhruba o 40 % nižší cena
+- 200 GB na poštu a 1 TB na soubory pro každého uživatele
+- volba datového centra v EU i provoz na vlastním serveru
+- nástroje pro migraci z Microsoftu 365 a Google Workspace
+Zápory
+- pomalejší standardní podpora
+- užší nabídka doplňků a integrací

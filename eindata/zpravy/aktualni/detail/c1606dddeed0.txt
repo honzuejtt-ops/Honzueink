@@ -1,0 +1,25 @@
+Graf se na internetu objevil v neděli 11. října v souvislosti s ukrajinskými dronovými útoky na datová centra ruské společnosti Yandex. Podle doprovodných příspěvků měla aktivita na sociálních sítích spojená s německou stranou Alternativa pro Německo (AfD) po útocích dramaticky poklesnout. Obrázek naznačoval propad o 30 a následně dokonce o 56 procent.
+Graf sdílel například německý komunální politik Robin Schlingheider či český europoslanec Tomáš Zdechovský (KDU-ČSL). Krátce poté se už začaly rojit spekulace o tom, že se může jednat o výtvor AI. Koneckonců i Zdechovský pro Novinky později připustil, že měl původ grafu a jeho datový základ důkladněji prověřit.
+Zatím se nepodařilo jednoznačně prokázat, kdo obrázek vytvořil ani jakým způsobem. Podrobná analýza grafu však odhalila řadu nesrovnalostí, z nichž některé mohou naznačovat, že při jeho vzniku byla využita umělá inteligence. Co všechno je na grafu podezřelé?
+1. Označení: obsah vytvořený AI
+Jednu z nejvýraznějších indicií přinesl německý magazín Capital. Podle jeho zjištění byl příspěvek s grafem na sociální síti Threads označen upozorněním „KI-Inhalt“, tedy obsah vytvořený umělou inteligencí.
+Takové označení podporuje podezření, že při vzniku obrázku mohly být použity generativní nástroje. Samo o sobě ale není definitivním důkazem. Z označení totiž nelze určit, zda umělá inteligence vytvořila celý obrázek, nebo byla použita jen při jeho úpravách.
+2. Graf ukazuje údaje z budoucnosti
+Zřejmě nejzávažnější nesrovnalostí je časová osa. Graf se podle německých fact-checkerů šířil nejméně od 11. října, přesto jeho časová osa sahá až do 15. října 2026.
+Problém přitom nespočívá pouze v tom, že osa pokračuje do budoucnosti. Takové zobrazení může být u běžného grafu zcela legitimní. Podezřelé je, že křivka pokračuje i za datum zveřejnění a zachycuje hodnoty, které působí jako skutečně naměřená data. Nikde přitom není uvedeno, že by šlo o předpověď.
+Německý web RohText upozornil, že druhý výrazný propad na křivce podle rozložení časové osy připadá přibližně na 13. nebo 14. října. V době prvního zveřejnění grafu však tato data ještě nemohla existovat.
+Právě vytváření přesvědčivě vypadajících, ale časově nebo logicky nesmyslných údajů patří mezi možné chyby generativní AI. Stejně tak však může jít o lidskou manipulaci nebo neodborně sestavený graf.
+3. Nesedí rozestupy na osách
+Dalších chyb si všimli novináři německé veřejnoprávní stanice BR24. Podle jejich analýzy nejsou rozestupy mezi číselnými hodnotami na grafu konzistentní. Na svislé ose je například vzdálenost mezi hodnotami 2500 a 3000 menší než mezi dalšími hodnotami, přestože mají představovat stejně velké kroky po 500.
+Nesrovnalosti jsou také na vodorovné časové ose. Některé úseky, které mají představovat stejnou dobu, zabírají různě velký prostor. To je u standardně vytvořeného statistického grafu přinejmenším neobvyklé. Podobné chyby mohou vznikat při generování obrázků pomocí AI, která napodobuje vzhled grafu, aniž by správně dodržela matematické vztahy.
+4. Nikdo nedoložil, odkud pocházejí čísla
+Graf na první pohled působí jako výsledek podrobného statistického sledování. Obsahuje tříměsíční časovou řadu a výrazně vyznačené procentuální poklesy. Chybí však to nejdůležitější: zdroj dat.
+Není uvedena žádná výzkumná organizace, analytická služba ani odkaz na původní databázi. Neexistuje ani veřejně dohledatelný popis toho, jak byly hodnoty získány a jak se dospělo právě k poklesům o 30 a 56 procent. Bez těchto informací nelze čísla nezávisle přepočítat ani ověřit. Umělá inteligence dokáže vytvářet grafy s velmi věrohodným vzhledem a současně do nich dosazovat smyšlené hodnoty.
+Pokud se to potvrdí, je to výmluvné: ruská datacentra dostala zásah a aktivita kolem AfD na sítích prudce klesla. 📉
+Tolik řečí o německých vlastencích… a pak vypadne připojení z Ruska. 🤔🇷🇺 pic.twitter.com/fxxoanGbWA
+— Tomáš Zdechovský (@TomasZdechovsky) October 11, 2026
+Graf patrně jako vůbec první zveřejnil v neděli 11. října německý komunální politik za Zelené Robin Schlingheider. Ten dosud nedoložil, odkud graf získal ani kdo jej vytvořil. Německému magazínu Capital přitom přiznal, že si jeho správnost před zveřejněním neověřil. „Chtěl jsem, aby to byla pravda. Ale neměl jsem to takhle přebírat, aniž bych si to ověřil,“ uvedl.
+5. Graf neříká, co vlastně měří
+Přestože se obrázek začal šířit jako důkaz údajného ochromení proruských účtů podporujících AfD, samotný graf nic takového výslovně neuvádí. Jeho německý nadpis znamená „Denní aktivita za tři měsíce“. Jenže nikde není vysvětleno, o jakou aktivitu jde.
+Mohlo by jít o počet příspěvků, komentářů, reakcí nebo aktivních uživatelů. Není uvedeno ani to, zda se měření týká sítě X, Threads, Telegramu či jiné platformy. A především v samotném grafu chybí přímá vazba na AfD nebo na ruské propagandistické boty. Toto vysvětlení přidali až lidé, kteří obrázek sdíleli.
+Němečtí fact-checkeři proto upozorňují, že ani správně nakreslený graf s takto nejasnými údaji by nemohl dokazovat tvrzení, které jej doprovázelo.

@@ -1,0 +1,6 @@
+České videoherní studio Wube Software připravilo rozsáhlou kolekci modelů přímo z hry Factorio. Celkem 247 souborů ve formátu STL je zdarma dostupných na Printables, přičemž mezi modely najdete pásové dopravníky, truhly, líhně kousavců a mnoho dalšího.
+Od spontánního nápadu k vysoce přesným 3D modelům
+Nápad na tvorbu vznikl v roce 2024 při testování DLC Space Age, kdy zaměstnanec Wube Thomas Fearghall spontánně vymodeloval tvora Wrigglera ze hry. Asi po 20 minutách měl připravený model, který následně vytisknul na Prusa XL, avšak s ne úplně uspokojivým výsledkem.
+Problém spočíval v samotných herních podkladech. Factorio totiž využívá 2D izometrickou grafiku, takže řada skrytých částí objektů a jejich zadních ploch nemá potřebné detaily pro vytvoření kvalitního 3D modelu. Grafik Jarosław Kolmag se proto vrhnul na modelování od nuly.
+Výsledkem je kolekce 247 STL souborů, které si můžete zdarma stáhnout z Printables. Kromě nejrůznějších dopravníkových pásů, překladačů, truhel a pecí nechybějí ani líhně kousavců nebo postavy hráčů. Některé součásti lze navíc vzájemně propojovat, takže si můžete sestavit vlastní komplexní systémy podobné těm, které znáte přímo ze hry.
+zdroje: Blog Průša, Printables, Factorio

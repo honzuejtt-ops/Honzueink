@@ -1,0 +1,1 @@
+Audacity 4.0.1 řeší první nedodělky a opravuje mnoho chyb. • Vrací se exportování do více souborů najednou. • Klávesová zkratka W opět přehraje výběr.

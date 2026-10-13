@@ -1,0 +1,15 @@
+Jeden displej pro celou rodinu, který každému nabídne něco jiného. Tak si Apple představuje využití HomeView. Když se před něj postaví registrovaný uživatel, zařízení ho rozpozná a zobrazí jeho vlastní prostředí s vybranými aplikacemi a widgety. Takto dokáže rozlišit až šest lidí.
+„Apple HomeView je navržený tak, aby ho všichni členové domácnosti mohli používat přesně tak, jak potřebují,“ uvedl Greg Joswiak, senior viceprezident Applu pro globální marketing.
+Novinka kombinuje sedmipalcový displej, reproduktory a hlasovou asistentku Siri AI. Sloužit má jako společný přístup k zábavě, komunikaci i ovládání chytré domácnosti. Apple nabídne stolní provedení s kopulovitou reproduktorovou základnou i samostatnou variantu určenou na zeď.
+Zprávy neukáže každému
+Rozpoznávání obličeje nemá sloužit jen k pohodlnému přepínání mezi uživateli. Apple jej využívá také k ochraně osobního obsahu.
+Zprávy nebo kalendář se zobrazí pouze tehdy, když HomeView rozpozná registrovaného člověka a zároveň se poblíž nachází jeho spárovaný iPhone či iPad, který byl nedávno odemčen. Samotné postavení před obrazovku tedy k přečtení soukromých zpráv nestačí.
+Sdílená alba a hudbu naopak mohou využívat všichni členové domácnosti včetně návštěv. Když zařízení zrovna nikdo aktivně nepoužívá, může posloužit jako rámeček na fotografie nebo zobrazovat některý z nabízených ciferníků. Nechybí ani animovaný Snoopy, jehož scény reagují na denní dobu, počasí a sportovní události.
+HomeView přizpůsobuje rozhraní také vzdálenosti člověka. Z dálky ukazuje jednodušší přehled, zblízka nabídne více podrobností. U stolního modelu lze displej naklonit pomocí pantu.
+Siri dostává větší roli
+Hlavním pomocníkem má být Siri AI, nová generace hlasové asistentky založená na Apple Intelligence. Podle společnosti zvládá přirozenější rozhovory, má rozsáhlé znalosti o světě a rozumí tomu, co se právě děje na obrazovce. Apple ji bude nabízet v betaverzi.
+Po propojení s kompatibilním iPhonem nebo iPadem s aktivovanou Apple Intelligence může čerpat také z osobního kontextu. Například vyhledávat relevantní informace ve zprávách a kalendáři nebo pracovat s různými aplikacemi.
+Joswiak uvedl, že Siri AI „čerpá z osobního kontextu uživatelova iPhonu a pomáhá najít přesně to, co daný člověk hledá“. Konverzace zahájená doma u displeje navíc nemusí skončit odchodem z místnosti. Díky synchronizaci historie přes iCloud na ni půjde navázat například na iPhonu, iPadu nebo Macu.
+Konverzační schopnosti a znalosti Siri AI budou na HomeView dostupné i lidem, kteří nemají telefon či tablet s aktivovanou Apple Intelligence. Kompatibilní iPhone nebo iPad je však potřeba k nastavení zařízení a podpoře více uživatelů.
+Pomůže s večeří i kontrolou domu
+V kuchyni má HomeView převádět recepty z webu na podrobné pokyny, zobrazovat potřebné suroviny a umožnit ovládání minutek na dálku. Člověk tak může pokračovat ve vaření a se zařízením komunikovat hlasem.

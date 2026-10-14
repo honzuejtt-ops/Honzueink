@@ -1,0 +1,18 @@
+Na blížící se konec aktualizací upozorňovaly Novinky již v dubnu. Podle tehdejšího plánu měla letos v říjnu skončit i dočasná ochrana, která domácnostem umožnila zůstat u Windows 10 po ukončení běžné podpory.
+Posledním dnem spotřebitelského programu ESU měl být 13. říjen 2026. Od středy 14. října tak měly domácí počítače přijít i o tento přísun bezpečnostních oprav. Microsoft však harmonogram během léta změnil a termín posunul na 12. října 2027.
+Americký softwarový gigant prodloužení vysvětlil tím, že chce zákazníkům poskytnout více času k přechodu na nový počítač s Windows 11 při zachování bezpečnostních aktualizací.
+Další odklad
+Běžná podpora Windows 10 skončila přesně před rokem, 14. října 2025. Počítače se tím nestaly nefunkčními, Microsoft ale ukončil standardní poskytování systémových oprav a technické podpory.
+První záchranu představoval program ESU, tedy rozšířené bezpečnostní aktualizace. Domácnostem měl původně zajistit další rok záplat. Nyní desítky přečkaly i tento druhý plánovaný konec.
+Plnohodnotný návrat podpory to ovšem neznamená. ESU zahrnuje kritické a důležité bezpečnostní opravy, nikoli nové funkce, běžná vylepšení systému či standardní technickou podporu. Microsoft jej nadále představuje jako dočasné řešení před přechodem na novější platformu.
+V Česku aktualizace zdarma
+Pro domácí uživatele v Evropském hospodářském prostoru (EHP), včetně Česka, je možné získat ESU bez poplatku. Podmínkou je registrace prostřednictvím účtu Microsoft a jeho další používání k přihlašování do Windows.
+Kdo chce nadále používat místní účet, může zvolit jednorázově placenou variantu. Účet Microsoft však potřebuje také, a to k nákupu a registraci. Už zaregistrované počítače přejdou na nový termín automaticky. Kvůli prodloužení tedy není nutné znovu žádat ani opakovat registraci.
+Pro firmy a organizace platí jiný režim. Komerční program umožňuje pořizovat bezpečnostní aktualizace až po dobu tří let od ukončení běžné podpory, přičemž se předplatné hradí po jednotlivých letech. Letošní říjen tedy ani podle původních pravidel neznamenal konec všech možností aktualizování Windows 10.
+Jak ESU funguje, informuje Microsoft přímo na svých oficiálních stránkách.
+Jak získat aktualizace bezplatně?
+V první řadě je nutné mít na počítači nainstalovanou poslední verzi desítek s označením 22H2. Pokud máte některou ze starších verzí Windows 10, prodlouženou podporu nebudete moci využít. Ověřit si verzi Windows je možné v Nastavení v nabídce Systém, kde se ukrývá možnost O systému.
+Aktualizace budou fungovat pouze na strojích, na kterých jste přihlášeni účtem Microsoft. Pokud tedy desítky používáte pouze s lokálním uživatelem, bude nutné se zaregistrovat na stránkách amerického softwarového gigantu.
+Po splnění obou podmínek by se mělo v nabídce Windows Update objevit oznámení o programu ESU. Na něj je nutné kliknout a své zařízení do programu prodloužené podpory zaregistrovat.
+Přímo ve Windows Update se pak bude zobrazovat informace, že PC je registrováno v programu ESU. Díky tomu poznáte, že jste vše nastavili správně a že bezpečnostní aktualizace budou distribuovány o rok déle.
+Pokud se nabídka nezobrazí, případně budete mít s registrací počítače do programu ESU potíže, bude nutné se obrátit přímo na podporu společnosti Microsoft. To je možné i online.

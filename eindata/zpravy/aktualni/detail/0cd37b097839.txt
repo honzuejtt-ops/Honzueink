@@ -1,0 +1,5 @@
+Tuzemská jednička s elektronikou Alza má nově v nabídce několik serverů určených pro umělou inteligenci. Jejich cena se pohybuje mezi 15,5 až 16,8 milionu korun, přičemž ještě včera byly počítače skladem. Nyní u všech sestav svítí informace o tom, že objednávka je pouze poptávkou a nákup podléhá schválení dodavatele.
+Servery s čipy Nvidia B300
+Jde o čtyři konfigurace od tchajwanského Gigabyte, původně nabízené po dvou kusech. Každý server obsahuje osm grafických karet Nvidia B300 Blackwell Ultra SXM, dohromady s 2 160 GB paměti HBM3E (každá karta má 270 GB). V sestavě jsou také dva procesory Intel Xeon 6776P.
+Výkonné AI servery bývají kvůli vysoké poptávce obtížně dostupné a dodací lhůty se mohou protáhnout. Alza původně uváděla, že má kusy skladem. Během včerejšího odpoledne se však nabídka mezitím změnila.
+Firma má v sortimentu také vlastní servery AlzaSRVP AIBox s kartami RTX Pro 6000 Blackwell. Ty stojí v závislosti na konfiguraci od 2,2 do 5,5 milionu korun, aktuálně ale také nejsou skladem. Alza upozorňuje, že před přijetím objednávky ověřuje kupujícího, konečného uživatele, zemi dodání i samotný účel použití.

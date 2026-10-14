@@ -1,0 +1,50 @@
+Pro domácí osmibitové mikropočítače Atari bylo v době jejich největší slávy nabízeno relativně velké množství různých interpretrů programovacího jazyka BASIC (které navíc nebyly mezi sebou zcela kompatibilní). Tímto tématem jsme se již zabývali, takže si dnes uvedeme jen krátké shrnutí.
+Obrázek 1: Asi nejznámější obrazovka osmibitových mikropočítačů Atari: inicializovaný interpretr programovacího jazyka Atari BASIC.
+Autor: tisnik, podle licence: Rights Managed
+V první řadě se pochopitelně jedná o originální Atari BASIC, který byl součástí standardní ROM (8kB BASIC+16kB operační systém). V roce 1983 byl společností OSS (tu již dobře známe, vlastně na ni v oblasti vývojových nástrojů narážíme neustále) vydán dialekt BASICu pojmenovaný BASIC A+.
+O další rok později vydala společnost OSS interpret programovacího jazyka BASIC, který byl pojmenován BASIC XL, a to podle toho, že běžel na systémech Atari XL (s plnou RAM) a pochopitelně taktéž na Atari XE. Opět se jednalo o poměrně významné vylepšení a rozšíření možností původního BASICu, k dispozici byly i metody k urychlení výsledných (interpretovaných) programů.
+Obrázek 2: Úvodní obrazovka interpretru BASIC XE.
+Autor: tisnik, podle licence: Rights Managed
+V roce 1985 společnost OSS vydala BASIC XE, a to z toho důvodu, že byl podporován přístup do rozšířené paměti počítačů Atari 130 XE (celkem neuvěřitelných 128 kB RAM) – program bylo možné oddělit do dat, přičemž program byl umístěn ve druhé bance RAM. BASIC XE nabízel i rychlejší matematické operace a oproti BASICu XL nabízel i několik dalších vylepšení (ovšem ne mnoho).
+Obrázek 3: Nabídka nástrojů nabízených na disketě s Turbo BASICem XL.
+Autor: tisnik, podle licence: Rights Managed
+Dalším interpretrem programovacího jazyka BASIC je Atari Microsoft BASIC. Z několika pohledů se však jedná o dosti rozdílný interpret, než je tomu v (ideové) řadě Atari BASIC → BASIC A+ → BASIC XL → BASIC XE → Turbo BASIC. O rok později po vydání původního Atari Microsoft BASICu (1982) byla vydána jeho druhá verze s několika opravami a taktéž s několika novými příkazy..
+Obrázek 4: Inicializace interpretru Turbo BASICu XL.
+Autor: tisnik, podle licence: Rights Managed
+Zapomenout nesmíme na slavný Turbo BASIC XL (či jen Turbo BASIC), jehož autorem je známý Frank Ostrowski (tento programátor později vytvořil GFA BASIC pro osobní počítače Atari ST). Turbo BASIC téměř splňoval všechny sny BASICových programátorů – byl rychlejší než původní Atari BASIC, byl s Atari BASICem plně kompatibilní, díky programovému „odklápění“ ROM nabízel vývojářům prakticky stejné nebo i větší množství volné operační paměti (což působilo téměř magicky) a navíc Turbo BASIC obsahoval poměrně velké množství nových příkazů, ať již určených pro strukturované programování (nové typy programových smyček), tak i příkazy zjednodušující programátorovu každodenní činnost.
+Obrázek 5: Inicializace interpretru Turbo BASICu XL 2.11 doplněná o ovladač Turbo 2000.
+Autor: tisnik, podle licence: Rights Managed
+Nejnovějším BASICem navrženým a implementovaným pro domácí osmibitové mikropočítače Atari je Fast BASIC, jehož popisem se budeme zabývat dnes. Jedná se projekt, který je v mnoha ohledech odlišný od klasických BASICů. V první řadě namísto překladu zdrojového kódu do sekvence tokenů používá překladač do bajtkódu. To je koncept, který známe například z Pythonu, programovacího jazyka Lua, Javy atd. (ale i z původního Pascalu). Při běhu programu (tedy v runtime) je bajtkód konvertován na instrukce mikroprocesoru (což si ukážeme). Výsledek je ovšem v každém případě rychlejší, než interpretace tokenizovaného kódu a většinou je bajtkód i kratší, než kód tokenizovaný.
+Obrázek 6: Dnes popisovaný Fast Basic.
+Autor: tisnik, podle licence: Rights Managed
+Fast Basic se v několika ohledech odlišuje od většiny klasických interpretrů jazyka BASIC. Jedna změna je patrná na první pohled – zdrojové kódy programů nevyžadují zápis čísel řádků, což znamená, že programy psané ve Fast Basicu se spíše podobají skriptům psaným v jazyku Lua či Pythonu. To vede k nutnosti náhrady skoků realizovaných v klasických interpretrech BASICu příkazem GOTO za strukturované jazykové konstrukce – což znamená podmínky (rozvětvení) a různé varianty programových smyček (což je ostatně jen dobře a do značné míry to zamezuje vzniku „špagetového kódu“, kterým je BASIC nechvalně proslulý).
+Obrázek 7: Editor Fast Basicu (vidíme zde určitou inspiraci Emacsem).
+Autor: tisnik, podle licence: Rights Managed
+Druhá změna sice není na první pohled patrná, ale ovlivňuje způsob interpretace programů. Klasické BASICy prováděly tokenizaci zdrojového kódu na sekvenci tokenů ve stylu:
+10 LET A=42
+na (zhruba):
+číslo_řádku token_příkazu_let token_proměnná index_proměnné token_přiřazení token_čísla číslo
+Ovšem interpretace takto reprezentovaného programu je velmi pomalá. Fast Basic je z tohoto důvodu postaven na bajtkódu. Sice se stále (při překladu) emituje sekvence tokenů, ovšem ty mají význam instrukcí bajtkódu: uložení proměnné na zásobník, provedení určité aritmetické operace, porovnání hodnoty s nulou atd. Navíc verze Fast Basicu pro PC obsahuje i optimalizaci bajtkódu – náhradu sekvence instrukcí bajtkódu za kratší či rychlejší variantu. Výsledek je (většinou) kratší a současně je interpretace rychlejší. Fast Basic tak může být pro stejné algoritmy zhruba 1,5× až 2× rychlejší než Turbo Basic XL (a ten je cca 3× až 5× rychlejší, než Atari Basic).
+Mezi další vylepšení patří například podpora pro pole s osmibitovými a 16bitovými hodnotami, což je velmi praktické a pochopitelně to vede i k úsporám operační paměti. Taktéž je možné používat proměnné obsahující celá čísla a tím pádem obejít pomalé FP operace. Změnilo se i vývojové prostředí (pokud se využívá varianta Fast Basicu běžící přímo na Atari), protože se již nepoužívá klasický obrazovkový editor s čísly řádků, ale editor, který připomíná Vim – podporován je scrolling atd. (ostatně problematický či nepodporovaný scrolling popř. neexistence celoobrazovkového editoru je jedním z důvodů, proč byla čísla řádků vůbec do klasického BASICu původně zavedena).
+Obrázek 8: Takto vypadá editor Fast Basicu po inicializaci.
+Autor: tisnik, podle licence: Rights Managed
+Fast Basic existuje ve dvou variantách. První varianta je určena přímo pro provozování na osmibitových mikropočítačích Atari, což s sebou pochopitelně přináší určitá omezení. Této variantě se budeme věnovat později. Druhou variantu tvoří překladač, který je provozovatelný přímo na PC. To znamená, že vývoj (včetně editace a překladu) je prováděn na PC a výsledkem překladu jsou binární soubory ve formátu XEX popř. obrazy disket, které se spouští v emulátoru počítačů Atari popř. se ukládají na paměťová média používaná v reálných Atari. Obě varianty Fast Basicu lze získat z GitHub repositáře dostupného na adrese https://github.com/dmsc/fastbasic. Mimochodem: v tomto repositáři se nachází i zdrojové kódy assembleru ca65 a linkeru ld65. Nejedná se o náhodu, protože tyto dva nástroje jsou použity ve fázi překladu – i tu si pochopitelně popíšeme v navazujících kapitolách.
+Ukažme si nyní praktické použití překladače Fast Basicu. Překládat budeme klasický program typu „Hello, world!“, který ve variantě pro Fast Basic vypadá následovně:
+print "Hello, world!"
+Překlad tohoto zdrojového kódu se provede následovně:
+$ fastbasic hello_1.bas BAS compile 'hello_1.bas' to 'hello_1.asm' ASM assemble 'hello_1.asm' to 'hello_1.o' LINK hello_1.xex
+Výsledkem je soubor nazvaný hello_1.xex, jehož velikost je pouze 443 bajtů! Ano, to není žádná chyba: celý program i se svým runtime nedosahuje ani velikosti půl kilobajtu:
+$ ls -la hello_1.xex -rw-r--r--. 1 ptisnovs ptisnovs 443 Oct 11 20:50 hello_1.xex
+Výsledný program hello_1.xex je možné spustit v emulátoru osmibitových mikropočítačů Atari. Korektně se vypíše zpráva „Hello, world!“, ovšem poté program buď začne vypisovat BOOT ERROR nebo se vrátí do DOSu (nebo dokonce do Self Testu):
+Obrázek 9: První demonstrační příklad sice vypíše zprávu, ale potom skončí katastrofou.
+Autor: tisnik, podle licence: Rights Managed
+Abychom zabránili návratu do DOSu (který nemusí být načten do paměti) nebo „pádu“ do Self Testu, ukončíme zdrojový kód programu nekonečnou smyčkou DO-LOOP (takže ho vlastně neukončíme – program z této smyčky pochopitelně nikdy nevyskočí):
+print "Hello, world!" do loop
+Výsledek je již lepší (řízení se nevrátí do DOSu) a výsledný program je přitom prodloužen pouze o dva bajty!:
+Obrázek 10: Druhý demonstrační příklad s nekonečnou smyčkou.
+Autor: tisnik, podle licence: Rights Managed
+Překlad zdrojových kódů Fast Basicu probíhá v několika fázích:
+Ukažme si celý postup na jednoduchém demonstračním příkladu, v němž se nejprve přiřadí hodnoty do dvou proměnných x a y, provede se součet těchto proměnných s uložením výsledku součtu do proměnné z a konečně se obsah proměnné z vypíše na obrazovku. Fast Basic nevyžaduje deklaraci proměnných, takže celý příklad může vypadat následovně:
+x = 1 y = 2 z = x + y print z
+V případě, že při překladu použijeme přepínač -c, provede se pouze první fáze překladu z Fast Basicu do assembleru, což nám umožňuje prozkoumat, jak vlastně tento kód vypadá:
+; Imported symbols ; Exported symbols .export bytecode_start .include "target.inc" ; TOKENS: .importzp TOK_1 .importzp TOK_ADD_VAR .importzp TOK_BYTE .importzp TOK_BYTE_PUT .importzp TOK_END .importzp TOK_INT_STR .importzp TOK_PRINT_STR .importzp TOK_VAR_LOAD .importzp TOK_VAR_STORE ;----------------------------- ; Macro to get variable ID from name .import __HEAP_RUN__ .macro makevar name .byte <((.ident (.concat ("fb_var_", name)) - __HEAP_RUN__)/2) .endmacro ; Variables .segment "HEAP" .export fb_var_X fb_var_X: .res 2 ; word variable .export fb_var_Y fb_var_Y: .res 2 ; word variable .export fb_var_Z fb_var_Z: .res 2 ; word variable ;----------------------------- ; Bytecode .segment "BYTECODE" bytecode_start: @FastBasic_LINE_1: ; LINE 1 .byte TOK_1 .byte TOK_VAR_STORE makevar "X" @FastBasic_LINE_2: ; LINE 2 .byte TOK_BYTE .byte...

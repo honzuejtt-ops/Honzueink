@@ -1,0 +1,14 @@
+Televizory, vysavače či trouby připojené k internetu nabízejí řadu užitečných funkcí. Podle výzkumníků Anthropicu, kteří stojí za chatbotem Claude, ale mohou představovat také slabé místo zabezpečení domácnosti. Právě podobná zařízení by totiž mohla usnadnit šíření škodlivého softwaru využívajícího umělou inteligenci.
+V nově zveřejněné zprávě výzkumníci podle serveru CBS News upozornili, že malé modely AI mohou být jen „několik měsíců“ od chvíle, kdy zvládnou vytvářet vlastní kopie a šířit se mezi přístroji bez lidské kontroly.
+Výkonnější modely podle nich již dokážou provést celý proces replikace od začátku do konce. Menší modely by se na stejnou úroveň mohly dostat do konce letošního roku. Jde však o odhad výzkumníků.
+Vypnout je? To nebude snadné
+Hlavní problém spočívá v tom, že takto se šířící agenty by mohlo být obtížné zastavit. Pokud se dokážou samostatně množit a šířit mezi zařízeními, neexistuje podle společnosti Anthropic „žádné centrální místo, odkud by je bylo možné vypnout“.
+Takzvaní AI červi jsou typem škodlivého softwaru využívajícího umělou inteligenci. Kyberbezpečnostní společnost Palo Alto Networks uvádí, že se mohou rychle šířit napříč sítěmi a zařízeními a zároveň unikat odhalení.
+Cílem bude internet věcí
+Výzkumníci z Anthropicu upozorňují zejména na chytré přístroje, které se souhrnně označují zkratkou IoT (Internet of Things, česky internet věcí). Ty jsou schopny připojovat se na internet a komunikovat mezi sebou prostřednictvím této celosvětové počítačové sítě.
+Typicky jde například o zařízení, která umožňují sledování či ovládání některých funkcí na dálku. Připojit se k nim je možné prostřednictvím chytrého telefonu nebo počítačového tabletu přes internet, i když je uživatel na druhém konci planety.
+Celosvětovou počítačovou síť mohou tímto způsobem využívat nejrůznější rekordéry, meteorologické stanice, ale klidně také chytré žárovky, u kterých je možné upravovat teplotu světla.
+Zvykejme si
+V nejhorším scénáři by se podle zprávy Anthropicu mohl šířit celý roj AI agentů. Takto jsou označovány programy, které s využitím umělé inteligence spolupracují na dosažení společného cíle – v tomto případě útoků na konkrétní cíle.
+Výzkumníci zatím nedokážou určit, jakou podobu by takové útoky mohly mít. Jednu z možností přirovnávají k „digitální hlence“ – umělé inteligenci, která by se pomalu, ale vytrvale šířila mezi slabě zabezpečenými zařízeními a využívala jejich výpočetní výkon. Jeden model by mohl běžet i na několika propojených přístrojích současně.
+Dalším scénářem je výkonnější AI schopná pronikat do datových center. „Měli bychom usilovat o posílení zabezpečení našich systémů, abychom takovým replikátorům ztížili šíření. Zároveň bychom se ale měli připravit na svět, v němž se stanou trvalou součástí reality,“ napsali ve zprávě.

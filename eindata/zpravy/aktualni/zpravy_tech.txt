@@ -1,4 +1,63 @@
-|T|Projekt KDE slaví 30 let, i díky němu tu máme moderní linuxový desktop|D|13.10. 22:00|P|Psal se rok 1996, Microsoft vládl světu svými Windows 95, Apple se potácel na hrobníkově lopatě a linuxový desktop byl roztříštěný zmatek. Do toho při...|X|Počátky projektu
+|T|Mobilní vysílač teď jde složit do kufru a rozjet za pár minut. Novinka může zachraňovat Česko v krizích|D|14.10. 04:30|P|Český operátor O2 vytvořil technologii pro velmi rychle zprovoznění mobilní sítě 5G kdekoliv v zemi. Podívejte se.|X|Postupná miniaturizace výpočetní techniky je nevyhnutelná. To, co se dříve vešlo do několika rozvaděčů, se časem smrskne do jednoho malého čipu. Aktuální projekt českého operátora O2 ještě tak daleko není, ale i tak jde o pokrok. Operátor je schopný složit mobilní vysílač včetně jeho jádra do dvou kufrů. Ty lze přivézt na libovolné místo a po vybalení do deseti minut rozběhat síť 5G. Instalace zvládne venkovní prostředí včetně deště.
+O2 s touto technologií cílí z velké části na státní sektor, zejména armádu, záchranné složky a podobně. Tyto jednotky budou moci vyrazit na místo potřeby a velmi rychle si tam rozjet privátní síť 5G, včetně napojení či náhrady vysílaček (Tetra a další). Integrovat lze i telefonní ústředny a SIP a zprovoznit internet věcí pomocí standardu RedCap.
+Prostřednictvím takové sítě lze řešit komunikaci, senzory, ovládání dronů a další operace. Podle O2 je potenciál v Česku státní sféře prodat přes sto kusů. Ideální stav je státu dodat asi 400 jednotek, což by mělo pokrýt případné katastrofy a výpadky signálu. Kufry lze připravit i jako instalaci přímo do vozidel, která už armáda a další složky vlastní.
+Nová mobilní technologie zároveň může posloužit jako součást debaty na vyhrazení části spektra pro celoplošné privátní sítě. Operátoři vedou debaty s ministerstvem vnitra. Jde o pokračování aktivit kolem projektů jako BIVOJ nebo státní operátor, které byly s novou vládou revidovány.
+Operátor chce ale prodávat i soukromému sektoru. 5G kufry zároveň zvládnou provozovat jak privátní, tak tradiční veřejnou síť. Obě umí běžet zároveň. S kolizí frekvencí by neměl být problém. Pokud jde o veřejnou síť, core případné kolize vyřeší. U privátní instalace dostane roli GPS, díky níž dojde k synchronizaci a vysílání ve stejných časových slotech.
+Omezený dosah signálu
+Zřejmě největší limitací bude dosah signálu. Stropem je rádius zhruba dvou kilometrů, pokud bude anténa v dobré výšce. Ideální je umístit jí alespoň na střechu dodávky, případně ještě výše postavenou lokalitu. 5G kufry zároveň aktuálně nejsou připraveny pro jinou síť než je ta od O2.
+Instalace zvládne až tisíc připojených aktivních SIM karet, registrovaných jich může být více. Mobilní vysílač rozložený z kufrů má spotřebu 300 až 400 wattů, což je méně, než dnešní výkonnější osobní počítače. Standardní napájení je přes 230 voltů, lze ale využít i 48, případně 24 voltů.
+5G kufry O2 se skládají z jádra sítě (core) a bezdrátové částí (RAN) čítající antény a základnovou stanici. Jde o kompletní mobilní síť s možností lokálního provozu. Instalaci lze bez větších problémů naskládat do běžného osobního automobilu. Součástí není záložní zdroj, ale vysílač se dá napájet z auta.
+Anténní sestava vysílá ve frekvencích 2,6 (b7) a 3,7 GHz (n78), použít lze bloky 40, 60 a 100 MHz. Nasazeny jsou technologie Ericsson. Jednotka baseband se na jádro sítě připojuje optickým či ethernetovým kabelem. Využít lze i rádiové pojítko pro získání konektivity.
+Core čítá dva servery, standardně Supermicro, případně Dell. První obsluhuje standalone jádro v 3GPP Release 16+ (17 je v přípravě). O2 v tomto případě používá technologii od společnosti Druid a nikoliv Nokia, kterou si zvolil pro provoz standalone jádra u běžné mobilní sítě. “Ceny velkých dodavatelů na tento případ užití nevychází dobře. Druid má naopak dobrou cenu, navíc je na tom technicky stejně, někdy lépe,” uvedl Michal Hozák z O2. “Velcí hráči používají řadu funkcí, které u malých sítí nejsou potřeba, třeba billing.”
+Druhý server slouží jako aplikační. Určený je k běhu aplikací typu push-to-talk, streaming videa, MDM, mapové podklady a tak dále. Je to součást širšího konceptu označovaného jako edge computing. 5G kufr s corem obsahuje i switching (O2 prezentuje MikroTik, ale lze tam dále výrobce dle libosti) nebo vzdálená správa.
+Vlastní správa, vlastní klíče
+Zákazníci si síť mohou spravovat sami. Nemusí být připojená k internetu a i přesto lze dělat správu SIM karet, nastavovat výkon rádií a tak dále. Zároveň je možné si od O2 zajistit službu vzdálené správy, v takovém případě se využijí modemy.
+Do coru lze nahrát vlastní klíč, k němuž operátor nebude mít přístup. Tento klíč lze měnit v případě, že by došlo ke kompromitaci. To by armádě a spol. mělo zajistit vysokou bezpečnost. O2 k systému umí dodat notebook s čtečkou SIM karet, do nichž lze klíče “vypalovat”.
+Jako autentizační metoda se využívá TUAK, která má v budoucnu být připravena na kvantové šifry. Není to ovšem tradiční postkvantové šifrování (PQC), které už má standardy NIST a které se postupně nasazuje. Pro maskování identity uživatelů lze nasadit SUCI (šifrování IMSI).
+O2 nabízí dva prodejní modely. Je možné předplatné (pronájem) za nižší desítky tisíc korun měsíčně, takže na začátku nejsou nutné vyšší kapitálové pořizovací výdaje. Technologii si ale lze koupit do vlastnictví za jednotky milionů korun (plus služby). Zejména státní sektor preferuje druhou variantu, i kvůli tomu, že dotační tituly jsou nastaveny tímto způsobem. Naopak komerční sektor oceňuje spíše formu služby.|E||T|Klávesnice může být příští obětí umělé inteligence. Lidé začínají práci zadávat hlasem, přitom si rovnají myšlenky|D|14.10. 04:30|P|Na klávesnici se prý jednou možná budeme dívat jako na archaický nástroj. Rozhraní, kterým komunikujeme s počítačem, se mění poprvé od osmdesátých let...|X|Diktování se mění v pracovní rozhraní. Lidé hlasem nejen zadávají prompty, ale také řídí firemní procesy, revidují dokumenty, rozdělují úkoly a obsluhují agenty.
+Příkladem je Sara Maldon, specialistka na umělou inteligenci. Roky působí ve startupovém prostředí a její práce obnáší i časté cestování letadlem. Pokud byste ji zahlédli na letišti, dost možná by měla telefon u ucha. Možná by víc mluvila než poslouchala a tónem hlasu by dávala najevo, že po druhé straně něco chce. Maldon nedávno založila vlastní startup, takže zadávání práce přes telefon nezní nijak zvláštně. Jenže ona takhle telefonuje s AI agenty.
+Když je hotovo, zavěsí. „A bot začne pracovat na daném úkolu, zatímco já nastavím letový režim a otevřu knížku,“ chválí si.
+Tedy, možná zavěsí. Maldon mi nadšeně ukazuje své fungování s AI a příkladem je zrovna příprava tohoto článku. Svému agentovi přeposlala téma a oblasti, o kterých se spolu máme bavit, aby rozhovor vedl. Tak spolu telefonují, bot jí pokládá otázky a Maldon ho nechává poslouchat odpovědi, které má pak AI za úkol zpracovat, uhladit a roztřídit ke správným tématům. V závěru si s ní Maldon ujasňuje, jestli je všechno hotovo. „No a zrovna mi zavěsil. Už od toho normálně dostávám košem,“ směje se.
+Maldon je ukázkou způsobu, jak lidé stále častěji ovládají umělou inteligenci. Namísto pokynů psaných přes klávesnici jí je podávají hlasem. Podle OpenAI teď více než 150 milionů lidí týdně používá v ChatGPT funkce Voice nebo Dictation. Firma zařadila Voice jako přímou součást ChatGPT a uživatel může mluvit, poslouchat odpověď, přerušovat ji, současně pracovat s textem, obrázky a webem.
+Jeden z nejoblíbenějších nástrojů, který lidé mluvící na umělou inteligenci zmiňují a o kterém ještě bude řeč, je Wispr. Ten uvádí, že když lidé cvakají svá zadání přes klávesnici, dělají to obvykle rychlostí 45 slov za minutu. Pokud na stroj mluví hlasem, dotáhnou to na až 220 slov během minuty.
+Mluvení je propojeno s možností přenášet i další formy komunikace obvyklé pro lidi na AI aktéry. Jedním z takových případů konkrétně u Maldon jsou zprávy. „Já to raději ukážu,“ říká Maldon. Otevírá okno v nástroji Grok bot připomínající komunikační platformy, kde je ona spolu s několika boty: jedním, co řeší spolupráce, jiným, který má znalosti produktu, dalším, který se zabývá eventy.„Líbí se mi, že funguje podobným stylem jako WhatsApp,“ říká Maldon. „S každým z těch botů mám nekonečnou konverzaci,“ vysvětluje a popisuje, že takový systém odráží velmi dobře způsob, jak lidé komunikují s lidmi. „A já jen čekám, až do toho přibude možnost interagovat s reálnými lidmi,“ nadhazuje.
+Jde mi líp mluvit než psát
+Maldon má všechny předpoklady s AI zacházet nadstandardně. Pracovala ve startupu Make, původně českém projektu, který používají stovky tisíc lidí, aby bez znalosti kódování automatizovali fungování ve firmě. Dva a půl roku v něm vedla AI transformaci a uvádí, že během čtyř měsíců posunula podle svých slov aktivaci AI napříč firmou z 8 na 96 %. Jen na okraj můžeme dodat, že jde o firmu, která měla už v roce 2020 hodnotu 2,5 miliardy Kč – za tolik ji tehdy koupila německá společnost Celonis. I její vlastní startup jménem Inflect se pohybuje na vlně AI, soustředí se na zjišťování toho, jak firmy skutečně těží z umělé inteligence, a chce jim zlepšit práci s touto technologií.
+Ale na AI mluví řada lidí, kteří s technologiemi pracovně tak úzce propleteni nejsou. Své zkušenosti s těmito systémy má například Denisa Hrubešová, která spoluzaložila a vede platformu Forendors, kde můžou tvůrci monetizovat obsah. AI ji nadchla, stala se velkou popularizátorkou vibecodingu a ovládání hlasem si přitom velmi vychvaluje.
+„Jde mi líp mluvit než psát. Můžu vysvětlovat svými slovy a třídím si u toho rovnou myšlenky. Přeskakuji ten dlouhý čas, kdy přemýšlím nad tím, jak něco napsat a co domyslet. Prostě to nadiktuji a řeknu ‚doptej se mě na vše, ať nezapomeneme něco domyslet’. Můj Claude má spoustu skills, které se spustí ve chvíli, kdy mu řeknu třeba ‚jdeme stavět nový projekt‘ nebo ‚píšeme newsletter‘, které jsem si sama vytvořila pro co nejsnadnější postup práce, abych na nic nezapomněla a abych měla jistotu, že ode mě chodí jednotné výstupy,“ vysvětluje Hrubešová.
+Vibecoding nadchl i Michaelu Rakovou, která založila konzultační agenturu zaměřenou na firemní komunikaci a kreativní studio 52pages a šéfuje jim. A s vibecodingem ji nadchlo také diktování umělé inteligenci. „Pět minut psaní odpovídá minutě mluvení. A u toho se mohu dívat na výstup a rovnou ho komentovat, jako bych ho procházela s kolegou,“ nastiňuje.
+Hluboce do AI je naopak ponořený Roman Berglowiec, zakladatel společnosti Everbot, která nad jednotlivými umělými inteligencemi staví uživatelské rozhraní a další služby pro ty, kteří chtějí pracovat s umělou inteligencí. „Já s AI vlastně víc mluvím, než píšu,“ říká. „AI tímto způsobem používám průběžně celý den a úspora podle mě nespočívá jen v rychlejším zadávání, ale v celém procesu od myšlenky k výsledku,“ rozvádí. Vysvětluje, že hlasem řeší prakticky vše. „Od e-mailů a zpráv kolegům přes produktová zadání pro vývoj až po firemní procesy, strategii nebo vlastní myšlenky,“ dodává.
+Poslední zmíněný faktor zmiňuje v různých obměnách řada lidí. Uživatelé se totiž shodují na tom, že jim mluvení s AI umožňuje taky jinak přemýšlet.
+„Největší výhoda pro mě není jen rychlost, ale množství kontextu, který dokážu předat. Často na začátku ani nemám hotovou myšlenku. Vím, jaký problém potřebuji vyřešit, a začnu ho AI vysvětlovat. Jak mluvím, napadají mě další souvislosti, AI navrhuje řešení a já na ně reaguji. Postupně si tak zároveň ujasňuji vlastní myšlenky a vzniká z nich konkrétní výstup,“ vysvětluje Berglowiec.
+„Dost často nadiktuji svoje myšlenky a pak se zeptám bota, aby mi to pomohl zpracovat,“ říká také Maldon.
+Pomoc zpracovat vlastní myšlenky zmiňují i další uživatelé na internetu. Jeden z nich například vysvětluje, že při práci v business developmentu často přemýšlí nahlas a užitečné myšlenky ho napadají v autě nebo po telefonátu. Nahraje hlasovou poznámku, později ji přenese do Claude a doufá, že ten z neuspořádaného přepisu pochopí, co chtěl říct. Další z komentujících vysvětluje, že má v Claude projektu vlastní instrukce, které zpracovávají jeho neuspořádané myšlenky (v diskusi je rad více, jedna z nich zní „preserve my actual phrasing, kill filler and tangents, surface action items separately“). A do třetice jiný uživatel hlasového přístupu chválí, protože „to funguje právě díky tomu proudu vědomí; psaní vás nutí předem strukturovat myšlenky, ale mluvení vám umožňuje prostě všechno vysypat a nechat Clauda, aby v tom našel smysl. Podceňovaný způsob práce,“ uvádí.
+Mezi řečí a prací
+Za poslední rok se dramaticky zvýšila kvalita přepisu a jeho integrace přímo do nástrojů, se kterými lidé pracují. Nástroj, který uživatelé v odpovědích zmiňují nejčastěji, je Wispr Flow. Umí vkládat přepis do textových polí napříč aplikacemi.
+Na přepisy si lidé pochvalují další aplikace, mnohdy s podobnými jmény – Superwhisper, pro některé případy také Fireflies, Utter.to či Paarakeet, zajímavou variantou je i český projekt Uttero od Daniela Gamrota.
+Nové nástroje se snaží odstranit mezikrok mezi mluvením a prací: uživatel podrží klávesovou zkratku, řekne, co potřebuje, a text se ideálně objeví rovnou v aplikaci, kterou právě používá. Některé nástroje jej navíc dokážou upravit podle kontextu, například jako e-mail, pracovní poznámku nebo zadání pro AI. V diskusích uživatelé řeší nejen přesnost přepisu, ale i prodlevu, množství následných oprav a to, jestli nástroj zvládne jejich vlastní jména či odborné výrazy.
+Hrubešová používá vlastní setup: „Na přepisy audia mlx-whisper, který mi běží lokálně na grafice, takže nic neodchází pryč,“ vysvětluje. Raková zadání pro AI diktuje přes Wispr Flow. „Hlasem dělám například kontrolu dokumentů a prezentací: procházím slide po slidu a nahlas komentuji, co upravit, a AI to sama zapracuje. Druhou oblastí jsou schůzky. Nahráváme je na Plaud, malé zařízení na záznam rozhovorů, ze kterého nám běží celý systém poznámek a úkolů. Používá ho hlavně tým, který vede obchodní jednání nebo řídí projekty,“ přibližuje.
+Maldon napsala svůj první nadšený příspěvek na sociální sítě o kombinaci Wispr Flow a Claude v září 2024. Dnes podle svých slov diktuje 60 až 70 % zadání. A kromě tohoto nástroje zmiňuje ještě nativní možnosti v konkrétních aplikacích, jako je zmíněný Grok Bot.
+„Ta přesnost není zdaleka perfektní, řekla bych tak 70, možná 80 %. A v češtině to bude ještě horší. Ale ono to vlastně tolik nevadí,“ říká Maldon, která vzhledem ke svému zaměření mluví běžně s AI anglicky.
+Hlasové ovládání totiž dává smysl především tam, kde už je AI prorostlá do struktury firmy. Když takto Maldon mluví, směřuje požadavky na své boty, z nichž každý má vlastní specializaci, znalosti, přístup k informacím a definovaný postup. A tak jejich tvůrkyně často například nepřemýšlí, komu přesně požadavek zadat, prostě ho „hodí“ do skupiny, přebere si ho její „pravá ruka“ – personální asistent, a roztřídí na konkrétní vhodné boty.
+Hrubešová dnes celou firmu řídí přes Claude Code otevřený ve Warpu. „Nechodím do kalendáře, do Freela, nepíšu blog ani newslettery skrze oficiální platformy, vše řídím skrze Claude Code,“ říká. Když chce napsat newsletter, otevře projekt, nadiktuje záměr a Claude vytáhne první draft, který pak ovšem šéfka Forendors iteruje po svém.
+A protože Claude má přes MCP (Model Context Protocol, který umožňuje AI napojit se na externí nástroje) přístup k jejímu Jira, Gmailu, Atlassianu, k vlastnímu nástroji Forendors a dalším službám, Hrubešová říká, že fakticky řídí firmu jedním rozhraním, a většinou právě hlasem. „Zrychlila jsem svojí práci tak o 300 %. Nebrzdím kolegy, zadávám Jira tasky podle pravidel, která máme, a nemusím se doptávat nikoho na věci, které se opakují – prostě se zeptám Claude, který je na pravidla napojený,“ vysvětluje.
+Raková začíná pracovní den ranním přehledem, který jí připravila AI: mimo jiné zatřídil...|E||T|Nvidia výrazně zrychlila AI vylepšování obrazu DLSS 5. A také generování snímků. Není to však zadarmo|D|14.10. 04:00|P|Zjednodušené a méně výkonu konzumující AI modely pro generování snímků a filtr DLSS 5 teď směřují do her. Výměnou za vyšší výkon ale o něco zhorší kva...|X|Tento týden by konečně měl po dlouhém čekání přijít na trh notebooky s Arm procesory RTX Spark N1X od Nvidie. Jednou z hlavních věcí, na kterou firma láká, je GPU odvozené od architektury grafik GeForce RTX 5000, byť se hry budou muset potýkat s horší kompatibilitou platformy Arm. Nvidia si proto na vydání RTX Sparku nachystala herní novinky, mezi nimiž jsou i aktualizace technologií DLSS, které se týkají i běžných karet GeForce.
+Rychlejší DLSS 5
+Asi nejzajímavější novinka pro majitele grafik GeForce (nebo eventuálně RTX Sparku N1X) je, že Nvidia oznámila značné zrychlení a snížení nároků na výkon u technologie AI vylepšení obrazu DLSS 5, uvedené minulý měsíc. Ta měla hodně drsný výkonnostní dopad (a spolu s ním zvyšovala i spotřebu).
+Nvidia teď oznámila, že DLSS 5 dostane nový, výrazně lehčí a rychlejší model. Ten má mít až 2× lepší výkon. Či možná lépe řečeno, 2× nižší spotřebu výkonu. To neznamená, že budete mít ve hře 2× vyšší snímkovou frekvenci – výkon totiž spotřebovává i samotné vykreslování hry před aplikováním filtru DLSS 5, a také upscaling a DLSS a případně generování snímků. Podle Nvidie by snímková frekvence mohla být „až“ o 40 % lepší (často tedy asi i o méně).
+Nicméně toto zrychlení nebude asi úplně zadarmo. Nvidia uvádí, že byla také snížena (údajně o 20 % v rozlišení 4K) spotřeba grafické paměti, což je na jednu stranu také dobře. Jenže toto je důsledek zmenšení AI modelu, který DLSS 5 používá – ten má o 24 % méně parametrů (118 milionů, s použitím hodnot FP8 tedy zhruba 118 MB). Nicméně „velikost“ AI modelů je právě to, co zlepšuje jejich schopnosti, takže zmenšení modelu je podle všeho kompromis, kdy se zvýší výkon, ale také se zhorší kvalita výsledných snímků a efektu.
+To, že se zároveň snížila výpočetní náročnost o polovinu (respektive se zvýšil výkon filtru), asi také samo o sobě přinese podobný kompromis. Čistě zmenšení modelu by totiž takový razantní dopad nemělo, Nvidia pravděpodobně vedle „bezeztrátových“ optimalizací také zredukovala množství výpočtů, které inference AI modelu a celý filtr provádí.
+Oba tyto faktory tak asi povedou k tomu, že nový model bude podávat odlišný výstup proti tomu, co filtr DLSS 5 produkoval při vydání, přestože Nvidia tvrdí, že „kvalita je srovnatelná“ (což ale firma vždy tvrdila také třeba o vztahu mezi kvalitou upscalingu DLSS a kvalitou snímku vykresleného v nativním rozlišení). Původní recenze porovnávající originální obraz a výstup DLSS 5 už tak pro tuto novou verzi nemusí platit a různé srovnání a hodnocení by se patrně měla udělat znovu (neměli bychom předpokládat, že se pouze zlepšil výkon a výstup je jako dříve s náročnějším modelem, přítomným ve hrách, respektive hře NBA 27K2 při vydání).
+Tento nový zrychlený a zredukovaný model má být dostupný 16. 10. v den vydání notebooků s RTX Sparkem. Hra NBA 2K27, což byl první titul s technologií DLSS 5, ho dostane aktualizací.
+Druhá a třetí hra s DLSS 5
+Tento nový model by také měl přinést oficiální podporu DLSS 5 do dvou dalších her mimo NBA 2K27 – do čínského titulu Where Winds Meet a do Hogwarts Legacy.
+Druhá zmíněná hra byla na jaře jedním z titulů, kde efekt AI filtru DLSS 5 Nvidia poprvé představovala, přičemž dopad byl v řadě scén dost ošklivý. Tato nová implementace má být odlišná, vývojáři hry měli údajně možnost efekt ve hře upravit na míru. Nvidia ukázala demonstrační snímky (najdete je zde na jejích stránkách), dle nichž bude efekt výrazně slabší, zdá se, že DLSS 5 zejména mění barvy a snaží se simulovat stíny, také ale může výrazně uměle přiostřovat scénu (otázka je, zda to není přeostřování). Nicméně jde jen o snímky vybrané Nvidií. Těžko říct, jak moc jsou snímky z rukou jejích marketérů reprezentativní.
+Do těchto her by DLSS 5 mělo být přidáno aktualizacemi během listopadu.
+Rychlejší (horší?) model DLSS pro generování snímků
+Výkonnější, ale také asi jednodušší a potenciálně nějakou kvalitu obětující model dostává také generování snímků DLSS. Nyní dostupná aktualizace Nvidia App umožňuje zapnout pro generování snímků Performance Mode, který je dostupný pro grafiky GeForce RTX 5000 i RTX 4000. V Nvidia App lze tento model nastavit jako „Preset C“.
+Preset C neboli Performance Mode by měl používat stejný AI model jako standardní generování snímků pro tu část procesu, která zpracovává pohybové vektory a analyzuje pohyb objektů v pixelů. Nicméně AI model použitý pro druhou část procesu, kterou je aplikace techniky optical flow pro interpolaci obrazových dat (i například tam, kde pohybové vektory neposkytují vyhovující data), byl vyměněn za jednoduší a lehčí náhradu spotřebovávající méně výkonu.
+V tomto případě už Nvidia sama přiznává, že tento model zvyšuje výkon výměnou za „menší kompromisy v kvalitě obrazu“. Generování snímků s ním podle Nvidie je je až o 35 % rychlejší (na GeForce RTX 5060 v rozlišení 1440p).
+Tento režim Performance nebude zřejmě zapnutý ve výchozím stavu, jde tedy o volitelnou možnost, kterou si můžete zapnout pro jednotlivé hry nebo i globálně skrze volbu DLSS Override. Také prozatím není vydán na ostro, Nvidia uvádí, že je v režimu beta.|E||T|Projekt KDE slaví 30 let, i díky němu tu máme moderní linuxový desktop|D|13.10. 22:00|P|Psal se rok 1996, Microsoft vládl světu svými Windows 95, Apple se potácel na hrobníkově lopatě a linuxový desktop byl roztříštěný zmatek. Do toho při...|X|Počátky projektu
 Přesně před 30 lety, 14. října 1996, oznámil v diskusní skupině de.comp.os.linux.misc jistý Matthias Ettrich cosi nového. Jeho cílem nebylo jen vytvoření nějaké grafické nástavby běžící nad X serverem. Vadila mu právě ona roztříštěnost grafických prostředí a nejednotnost aplikací. Chtěl stvořit celé desktopové prostředí, které bude obsahovat vše základní pro grafický systém, plus veškeré aplikace, vše sladěno do jednoho stejně vypadajícího a chovajícího se celku.
 Zkrátka taková ucelená a komplexní variace třeba na Windows 95 (plus další aplikace). Prostředí, kde aplikace mají jednotný vzhled a chování, stejné rozmístění ovládacích prvků, stejné klávesové zkratky a nemusí se kvůli úpravám do příkazové řádky.
 Zrodil se projekt Kool Desktop Environment, později přejmenovaný na KDE a ještě později reprezentovaný nejviditelnější prostředím KDE Plasma, ač samotné „celé KDE“ má daleko větší přesah.
@@ -255,370 +314,4 @@ Nová nejvýkonnější grafika na trhu bude výrazně slabší
 Nvidia podle Hongxinga2020 chystá jako určitou náhradu novou verzi karty, která ale nebude o moc výkonnější než dnešní model GeForce RTX 5080. Prý má jít o GeForce RTX 5080 24GB, tedy se zvětšenou pamětí. Tu Nvidia plánovala už více než před rokem v rámci refreshe generace Blackwell jako model GeForce RTX 5080 Super, takže parametrově možná tento nový „highend“ či záskok za highend bude stejný.
 Podle informací webu Benchlife by dokonce i samotná GeForce RTX 5080 v původní verzi mohla být odebrána z nabídky a přestat se vyrábět. Nvidia by zřejmě 24GB modelem kompletně nahradila původní 16GB verzi. To by ale nejspíš znamenalo, že by tato karta také stála výrazně víc (těžko říct, zda to třeba není i záměr stojící za zrušením 16GB verze…).
 Bylo by ironické, kdyby to nakonec byla vyšší částka, než za jakou se původně začala prodávat GeForce RTX 5090 s dvakrát větším čipem GPU a s 32GB pamětí. Nová RTX 5080 24GB nejspíš dostane vyšší takty i vyšší TDP, ale určitě se ani nepřiblíží výkonu, který poskytovala RTX 5090.
-Zdroje: VideoCardz (1, 2) MEGAsizeGPU, Benchlife|E||T|Ext4 i XMPP se stále rozvíjejí a AI pomáhá lékařům, zápisky z LinuxDays|D|12.10. 22:00|P|Na letošní konferenci LinuxDays se mluvilo o tom, že se komunikační protokol XMPP a souborový systém Ext4 stále rozvíjejí. AI může nejen škodit, ale m...|X|Daniel Gultsch: Jabber/XMPP: 25 let digitální nezávislosti
-Co se dozvíte v článku
-Digitální nezávislost byla před dvaceti lety jen buzzwordem a vlastně ještě nedávno o tom nikdo nepřemýšlel, dokud se nestaly ve světě některé nedávné změny. Open source je pro digitální suverenitu nutná podmínka, ale ne jediná.
-Nabízí nám ochranu proti spyware, ověřitelnou kryptografii a kód, který můžeme zkoumat a pochopit.
-Naopak nám open-source nezajistí ochrany proti vypnutí služby, sankcím, regionálnímu blokování a svévolným rozhodnutím operátorů. Suverenitu nám zajistí jen široká zaměnitelnost.
-Znamená to možnost kdykoliv změnit poskytovatele služeb i software na straně serveru či klienta. Kterýkoliv z dodavatelů může být kdykoliv vyměněn, ale stále musíme být schopni se domluvit s ostatními.
-Proto potřebujeme otevřené standardy. Otevřené API ale automaticky neznamená standard.
-Ke standardizaci slouží různé organizace (SDO, Standards Developing Organisations) jako ISO, IETF, W3C a podobně. Mezi známe standardy patří DNS, HTTP, JSON, TLS nebo SSH. Naopak standardem není třeba S3 (Simple Storage Service), což je jen široce přijímaná volná shoda mezi mnoha nezávislými stranami.
-XMPP je zkratka pro Extensible Messaging and Presence Protocol, který byl v prvních verzích standardizován už v roce 2004 a později rozšiřován. O standardizaci rozšíření se stará XMPP Standards Foundation (XSF), která má pravidla pro ochrany před tím, kdyby některá firma chtěla převzít kontrolu nad celým prostředím. Žádný člen se nesmí stát dominantním, aby byl schopen sám věci ovlivňovat.
-Zhruba před deseti lety došlo k velkému přechodu uživatelů komunikačních aplikací k mobilním telefonům. Tahle doba byla důležitá, protože v té době ztratilo XMPP spoustu uživatelů.
-Kvůli vylepšení provozu na mobilních sítích vzniklo rozšíření XEP-0198, které zajišťuje správu toku, potvrzování paketů a zotavení při změně sítě. Další rozšíření pak umožňuje například sledovat na serveru stav klientů, posílat zprávy na více zařízení, ukládat zprávy pro pozdější odeslání a distribuovat soubory několika odpojeným zařízením.
-Rozšíření XEP-0384 pak zavedlo end-to-end šifrování pomocí OMEMO, což je stejné šifrování, které používají aplikace jako WhatsApp a Signal. Řeší se tam i možnost posílat šifrované zprávy na více zařízení najednou.
-Vylepšen byl také šifrovaný transportní protokol používaný mezi klienty a servery, který má teď velmi širokou podporu mezi klienty.
-Byl zaznamenán útok na největší ruský server pro XMPP, který proběhl na serverech poskytovatelů Hetzner a Linode. Šlo o útok na úrovni poskytovatele, kdy byla unesena žádost pomocí protokolu ACME.
-Útočníkovi se tak podařilo získat platný certifikát od Let's Encrypt a mohl se tak vydávat za původní server. Stále není jasné, kdo za útokem stál, ale předpokládá se, že to byla nějaká státní organizace.
-XMPP se vylepšuje dále, nabízí například možnost synchronizace mezi několika klienty.
-Umožňuje to odesílateli oznámit, že zpráva byla přečtena.
-Kvůli soukromí je možné to vypnout, ve velkých skupinách to bývá často vypnuté. Další zmíněné rozšíření umí třeba informovat pisatele o časové zóně jeho kontaktu. Na některých klientech tak vidím, jestli ten člověk spí, protože je u něj zrovna noc.
-Do budoucna se připravuje šifrování pomocí Stanza v XEP-0420, které by mělo být výrazně robustnější. Už máme deset let zkušeností s provozem OMEMO.
-Chystají se také odpovědi na zprávy, které známe z jiných platforem. Podobně se pracuje na možnosti poslat více fotografií najednou, což jsou takové malé galerie v konverzacích. Pracujeme také na podpoře OAuth, aby bylo možné XMPP nasadit jednoduše v organizacích.
-Posun by měl proběhnout na XMPP Sprintu, který proběhle v listopadu v Londýně.
-Velkým plánem je XMPP 2.0, což je nový pokus dostat standard do IETF. Chceme aktualizovat základní sadu RFC a zkombinovat nejpopulárnější rozšíření do dalšího RFC.
-Základ byl už představen a diskutován na IETF 126 ve Vídni, další práce se připravují pro IETF 128 v Kuala Lumpur.
-Vyzkoušejte XMPP, stačí si vybrat vhodného klienta. V Linuxu to může být Dino, ve Windows Gajim, na Androidu Conversations a na iPhone třeba Monal. Poté musíte zvolit poskytovatele služby, což může být Conversations.im, providers.xmpp.net nebo nějaký místní třeba na univerzitě nebo v hackerspace. Pokud si chcete server provozovat sami, můžete nasadit Prosody nebo ejabberd. Většina distribucí je má zabalíčkované.
-Jan Kára: Ext4 – nové triky starého psa
-Souborový systém Ext2 vznikl v roce 1993 a byl inspirovaný souborovými systémy Minix a FFS z BSD. Diskový formát byl dobře navržený jako rozšiřitelný. Dodnes jsou formáty kompatibilní, dnešním jádrem si můžete připojit souborový systém z roku 1993.
-Na začátku souborového systému leží bitmapy, které ukazují právě používané vlastnosti.
-Jak rostly velikosti disků, zpomalovala se kontrola souborových systémů po nekorektním odpojení. Stalo se to neúnosným a začaly se implementovat vlastnosti jako žurnály.
-V roce 2001 vznikl souborový systém Ext3, který toho na disku změnil málo, ale došlo k velkému přepsání celé implementace v jádře.
-V roce 2006 pak vznikl Ext4, který přišel s novým formátem inodů. Protože to byla velká změna, vznikla kopie kódu na které se pracovalo, aby se nepoškodila data uživatelů.
-Jakmile pak byl nový kód ověřený a stabilní, mohl se kolem roku 2015 původní kód ext3 z jádra smazat.
-Souborový systém je rozdělen na alokační grupy, ve které je tabulka inodů pevné velikosti, bitmapa použitých bloků a bitmapa použitých inodů. Tabulka inodů a bitmapy nemusejí ležet nutně uvnitř grupy.
-Velikost blokové bitmapy omezuje velikost grupy – typické alokační grupy mají 128 MB.
-Inode je oblast velká obvykle 256 bajtů, která popisuje jeden objekt: adresář, soubor, link a podobně. Obsahuje informace jako velikost, práva, časy přístupu a modifikace a hlavně odkazy na datové bloky obsahující data příslušného objektu. Ve zbylém místě rezervovaném pro inode se ukládají rozšířené atributy.
-Ext4 přišel s novým způsobem uložení informací o datových blocích do B-stromu, kterému se říká extenty.
-Souborový systém Ext4 podporuje některé méně známé vlastnosti, které byly v přednášce představeny. V roce 2011 byla implementována vlastnosti bigalloc, která dovoluje alokovat místo na souborovém systému po velkých blocích. To umožňuje mít větší grupy a alokovat rychleji s menší režií.
-Naopak se více plýtvá místem pro malé soubory.
-Obvyklá velikost bloků je 4 KB na x86, protože jádro dlouho nepodporovalo jinou velikost bloku než jaká je velikost paměťové stránky. Na jiné architektuře si to můžete nakonfigurovat jinak, ale kvůli kompatibilitě se to příliš nepoužívalo.
-Od roku 2025 je podporována libovolná velikost bloku bez ohledu na velikost stránky. Oproti velkým alokačním clusterům to neplýtvá místem pro metadata. Nevýhodou ale je, že malé soubory zabírají více místa v keši a je zvýšená režie při malých čteních a zápisech.
-Moderní disky podporují atomický zápis delší než jeden sektor. Při výpadku napájení tak na disku uvidíte buď starý obsah nebo už nový obsah a nic mezi tím.
-Je možné tímto způsobem ukládat větší množství dat, od 4 KB až třeba pro 1 MB. Výhodné je to zejména pro databáze, které se snaží tímto způsobem také pracovat.
-Pokud databázi zaručíte atomické zápisy na úrovni disku, je možné odstranit dvojité zápisy a to vede až ke 30% navýšení výkonu. Pro direct IO přibyla podpora v roce 2025, ale jen do velikosti jednoho clusteru.
-Ext4 obvykle používá žurnál, aby se zajistila konzistence souborového systému i při nekorektním odpojení třeba při pádu systému. Každá logická operace se skládá z řady kroků, kterým se dohromady říká transakce. Do žurnálu se zapíše informace o blocích, které se budou měnit a jejich obsah.
-Po uložení všech změn se zapíše takzvaný „commit“, který říká, že transakce je úplná. Na pozadí pak začnete přepisovat změny ze žurnálu na správné pozice v souborovém systému.
-Při připojování souborového systému se žurnál projde a od nejstarších se data zapíší na svá místa, čímž získáme jistotu, že je souborový systém v konzistentním stavu.
-Souborový systém Ext4 může fungovat i v režimu bez žurnálu, podobně jako to dělal Ext2. Práce se žurnálem je náročná, pokud intenzivně pracujeme s metadaty, což nás stojí výkon disku.
-Vždy totiž musíme zapisovat dvakrát, nejdřív do žurnálu a pak znovu na finální pozici. Jsou ale situace, kdy o konzistenci nestojíme, například pokud je na disku uložená třeba jen keš. Souborový systém můžeme po výpadku zahodit a vytvořit ho znovu prázdný.
-Získáme tím asi 20 % výkonu při zápisech, což pro nás může být výhodnější varianta.
-Jádro nabízí volání fsync, které zajistí uložení dat na disk, aby byla skutečně dostupná po výpadku. Je nutné při tom zapsat všechna data pro soubor, zapsat do žurnálu transakci s novým obsahem metadatových bloků. Vždy je ale aktivní jen jedna transakce a fsync čeká na zápis i nesouvisejících dat. Pro některé typy zátěže spotřebuje zápis do žurnálu až dvě třetiny výkonu disku.
-Proto v roce 2020 vznikla nová vlastnost žurnálu fastcommit, která dovoluje při fsync zapsat jen zkrácenou transakci. Ta neobsahuje metadata, ale jen seznam logických operací, které proběhly od posledního commitu. Tím se výrazně snižuje množství dat, která je třeba zapsat do žurnálu.
-V roce 2017 byla implementována podpora velkých rozšířených atributů, které se využívají například při ACL, SELinuxu a dalších aplikacích. Obvykle je velikost dat omezena na malý kousek zbývajících dat v inode, případně vám souborový systém alokuje jeden blok. Jsou to maximálně čtyři kilobajty, kam se musí vše vejít. To je docela málo místa.
-Vlastnost ea_inode dovoluje alokovat skrytý inode a data uložit pomocí něj jako v souboru. Velikost atributu je pak omezena na 64 KB.
-V současné době dochází k přechodu implementace na VFS infrastrukturu iomap. V ideálním případě bude jediným pozorovatelným efektem snížení nároků na CPU pro některé druhy zátěže.
-Některé operace jsou už převedené, nejvíce práce bude se standardním buffero...|E||T|WebGL: tvorba 3D grafiky a zobrazení 3D scén|D|12.10. 22:00|P|Už jsme si vysvětlili všechny důležité koncepty. Nastává tedy ideální čas pro to, abychom vykreslili první skutečnou 3D scénu. Začneme jednoduchým pří...|X|V předchozí trojici článků [1] [2] [3] jsme si popsali prakticky všechny důležité koncepty WebGL a OpenGL ES (zbývá ještě popsat texturování). Nyní je tedy ideální čas pro to, abychom si vykreslili první skutečnou 3D scénu.
-Začneme jednoduchým příkladem – zobrazením krychle reprezentované drátovým modelem (wireframe), tj. dvanácti úsečkami, které tvoří hrany krychle. 3D zobrazení bude realizováno v několika krocích:
-- Úprava vertex shaderu tak, aby akceptoval 3D souřadnice vrcholů úseček
-- Úprava polí/bufferů s koncovými body úseček: nyní budou obsahovat 3D souřadnice
-- Vylepšení vertex shaderu o vynásobení vstupního vektoru transformační maticí
-- Výpočet transformační matice umožňující rotaci krychle okolo dvou os
-- Úprava transformační matice: přidání výpočtu perspektivy
-Vertex shader akceptující souřadnice koncových bodů reprezentované 3D vektorem
-Prozatím jsme do vertex shaderu předávali koncové body úseček atd., které byly definovány v 2D ploše, tj. jednalo se o dvojici souřadnic (typ vec2). Vertex shader k těmto dvěma souřadnicím přidal nulovou z-ovou souřadnici a jedničkovou váhu (W):
-attribute vec2 position;
-attribute vec4 aColor;
-varying vec4 vColor;
-
-void main() {
-vColor = aColor;
-gl_Position = vec4(position, 0, 1);
-Nyní budeme muset do shaderu předávat pro každý koncový bod tři souřadnice (typ vec3), ke kterým shader přidá pouze váhu:
-attribute vec3 position;
-attribute vec4 aColor;
-varying vec4 vColor;
-
-void main() {
-vColor = aColor;
-gl_Position = vec4(position, 1);
-V praxi tak můžeme nadeklarovat pole vrcholů dvanácti úseček, které tvoří hrany 3D krychle:
-// omezeno tak, aby bylo možné později rotovat
-const min_x = -0.5
-const max_x = 0.5
-const min_y = min_x
-const max_y = max_x
-const min_z = min_x
-const max_z = max_x
-
-// souřadnice úseček
-const vertexes = [
-// přední stěna
-// x      y      z        x      y      z
-min_x, min_y, min_z,   max_x, min_y, min_z,
-min_x, max_y, min_z,   max_x, max_y, min_z,
-min_x, min_y, min_z,   min_x, max_y, min_z,
-max_x, min_y, min_z,   max_x, max_y, min_z,
-
-// zadní stěna
-// x      y      z        x      y      z
-min_x, min_y, max_z,   max_x, min_y, max_z,
-min_x, max_y, max_z,   max_x, max_y, max_z,
-min_x, min_y, max_z,   min_x, max_y, max_z,
-max_x, min_y, max_z,   max_x, max_y, max_z,
-
-// propojení přední a zadní stěny
-// x      y      z        x      y      z
-min_x, min_y, min_z,   min_x, min_y, max_z,
-min_x, max_y, min_z,   min_x, max_y, max_z,
-max_x, min_y, min_z,   max_x, min_y, max_z,
-max_x, max_x, min_z,   max_x, max_x, max_z,
-Nadeklarujeme i pole s barvami úseček (bude konstantní):
-// barvy koncových bodů úseček
-const colors = [
-// přední stěna
-0, 1, 0, 1,   0, 1, 0, 1,
-0, 1, 0, 1,   0, 1, 0, 1,
-0, 1, 0, 1,   0, 1, 0, 1,
-0, 1, 0, 1,   0, 1, 0, 1,
-
-// zadní stěna
-1, 0, 0, 1,   1, 0, 0, 1,
-1, 0, 0, 1,   1, 0, 0, 1,
-1, 0, 0, 1,   1, 0, 0, 1,
-1, 0, 0, 1,   1, 0, 0, 1,
-
-// propojení přední a zadní stěny
-1, 1, 0, 1,   1, 1, 0, 1,
-1, 1, 0, 1,   1, 1, 0, 1,
-1, 1, 0, 1,   1, 1, 0, 1,
-1, 1, 0, 1,   1, 1, 0, 1,
-Při specifikaci, jaké vrcholy se budou předávat do vertex shaderu, nesmíme zapomenout na to, že druhý parametr musí obsahovat hodnotu 3 a nikoli 2 (dtto pátý parametr):
-// seznam předávaný do vertex shaderu
-gl.vertexAttribPointer(p,
-3,                                // počet prvků v každém atributu
-gl.FLOAT,                         // typ prvků
-gl.FALSE,                         // data nejsou normalizována
-3*Float32Array.BYTES_PER_ELEMENT, // velikost vertexu v bajtech
-0                                 // offset
-gl.enableVertexAttribArray(p);
-Samotné vykreslení dvanácti úseček vypadá takto (hodnota 24 odpovídá 24 vrcholům):
-// vykreslení dvanácti úseček s předáním souřadnic a barev
-gl.drawArrays(gl.LINES, 0, 24);
-První demonstrační příklad: 3D krychle vykreslená do 2D plochy bez aplikace transformací
-Úplný zdrojový kód dnešního prvního demonstračního příkladu, který po svém spuštění ve webovém prohlížeči (otestovat je možné zde) vykreslí 3D krychli do 2D plochy (prozatím bez aplikace transformací typu rotace či aplikace perspektivy), vypadá následovně:
-const vertexShaderSource = `
-attribute vec3 position;
-attribute vec4 aColor;
-varying vec4 vColor;
-
-void main() {
-vColor = aColor;
-gl_Position = vec4(position, 1);
-
-const fragmentShaderSource = `
-precision mediump float;
-varying vec4 vColor;
-
-void main() {
-gl_FragColor = vColor;
-
-function print(message) {
-console.log(message);
-
-// reference na objekt představující kreslicí plátno umístěné na webové stránce
-const canvas = document.getElementById("web_gl_canvas");
-if (!canvas) {
-throw new Error("Canvas with id 'web_gl_canvas' not found");
-print("Canvas object retrieved");
-
-// vytvoření a získání kontextu WebGL (3D grafika)
-const gl = canvas.getContext("webgl");
-if (!gl) {
-throw new Error("WebGL is not supported or context creation failed");
-print("WebGL context created");
-
-// vytvoření vertex shaderu
-const vertexShader = gl.createShader(gl.VERTEX_SHADER);
-if (!vertexShader) {
-throw new Error("Failed to create vertex shader.");
-print("Vertex shader created");
-
-// překlad vertex shaderu
-gl.shaderSource(vertexShader, vertexShaderSource);
-gl.compileShader(vertexShader);
-if (!gl.getShaderParameter(vertexShader, gl.COMPILE_STATUS)) {
-const log = gl.getShaderInfoLog(vertexShader);
-gl.deleteShader(vertexShader);
-throw new Error(`Vertex shader compile failed: ${log}`);
-print("Vertex shader compiled");
-
-// vytvoření fragment shaderu
-const fragmentShader = gl.createShader(gl.FRAGMENT_SHADER);
-if (!fragmentShader) {
-throw new Error("Failed to create fragment shader.");
-print("Fragment shader created");
-
-// překlad fragment shaderu
-gl.shaderSource(fragmentShader, fragmentShaderSource);
-gl.compileShader(fragmentShader);
-if (!gl.getShaderParameter(fragmentShader, gl.COMPILE_STATUS)) {
-const log = gl.getShaderInfoLog(fragmentShader);
-gl.deleteShader(fragmentShader);
-throw new Error(`fragment shader compile failed: ${log}`);
-print("Fragment shader compiled");
-
-// registrace obou shaderů
-const program = gl.createProgram();
-if (!program) {
-throw new Error("Failed to create program.");
-print("Program created");
-
-gl.attachShader(program, vertexShader);
-gl.attachShader(program, fragmentShader);
-print("Shaders attached to the program");
-
-gl.linkProgram(program);
-if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
-const log = gl.getProgramInfoLog(program);
-gl.deleteProgram(program);
-throw new Error(`Program link failed: ${log}`);
-print("Program linked");
-
-// omezeno tak, aby bylo možné později rotovat
-const min_x = -0.5
-const max_x = 0.5
-const min_y = min_x
-const max_y = max_x
-const min_z = min_x
-const max_z = max_x
-
-// souřadnice úseček
-const vertexes = [
-// přední stěna
-// x      y      z        x      y      z
-min_x, min_y, min_z,   max_x, min_y, min_z,
-min_x, max_y, min_z,   max_x, max_y, min_z,
-min_x, min_y, min_z,   min_x, max_y, min_z,
-max_x, min_y, min_z,   max_x, max_y, min_z,
-
-// zadní stěna
-// x      y      z        x      y      z
-min_x, min_y, max_z,   max_x, min_y, max_z,
-min_x, max_y, max_z,   max_x, max_y, max_z,
-min_x, min_y, max_z,   min_x, max_y, max_z,
-max_x, min_y, max_z,   max_x, max_y, max_z,
-
-// propojení přední a zadní stěny
-// x      y      z        x      y      z
-min_x, min_y, min_z,   min_x, min_y, max_z,
-min_x, max_y, min_z,   min_x, max_y, max_z,
-max_x, min_y, min_z,   max_x, min_y, max_z,
-max_x, max_x, min_z,   max_x, max_x, max_z,
-
-// barvy koncových bodů úseček
-const colors = [
-// přední stěna
-0, 1, 0, 1,   0, 1, 0, 1,
-0, 1, 0, 1,   0, 1, 0, 1,
-0, 1, 0, 1,   0, 1, 0, 1,
-0, 1, 0, 1,   0, 1, 0, 1,
-
-// zadní stěna
-1, 0, 0, 1,   1, 0, 0, 1,
-1, 0, 0, 1,   1, 0, 0, 1,
-1, 0, 0, 1,   1, 0, 0, 1,
-1, 0, 0, 1,   1, 0, 0, 1,
-
-// propojení přední a zadní stěny
-1, 1, 0, 1,   1, 1, 0, 1,
-1, 1, 0, 1,   1, 1, 0, 1,
-1, 1, 0, 1,   1, 1, 0, 1,
-1, 1, 0, 1,   1, 1, 0, 1,
-
-// buffer, do kterého se překopírují souřadnice bodu
-const vertexBuffer = gl.createBuffer();
-if (!vertexBuffer) {
-throw new Error("Failed to create buffer.");
-print("Vertex buffer created");
-gl.bindBuffer(gl.ARRAY_BUFFER, vertexBuffer);
-
-const data = new Float32Array(vertexes);
-gl.bufferData(gl.ARRAY_BUFFER, data, gl.STATIC_DRAW);
-print("Vertex buffer filled-in by vertexes");
-
-// navázání na parametr předávaný do vertex shaderu
-const p = gl.getAttribLocation(program, "position");
-if (p === -1) {
-throw new Error("Attribute 'position' not found in shader program");
-print("Attribute 'position' found in shader program")
-
-// seznam předávaný do vertex shaderu
-gl.vertexAttribPointer(p,
-3,                                // počet prvků v každém atributu
-gl.FLOAT,                         // typ prvků
-gl.FALSE,                         // data nejsou normalizována
-3*Float32Array.BYTES_PER_ELEMENT, // velikost vertexu v bajtech
-0                                 // offset
-gl.enableVertexAttribArray(p);
-
-// barvový buffer
-const colorBuffer = gl.createBuffer();
-gl.bindBuffer(gl.ARRAY_BUFFER, colorBuffer);
-
-const cdata = new Float32Array(colors);
-gl.bufferData(gl.ARRAY_BUFFER, cdata, gl.STATIC_DRAW);
-
-const aColor = gl.getAttribLocation(program, "aColor");
-gl.enableVertexAttribArray(aColor);
-
-// seznam předávaný do vertex shaderu
-gl.vertexAttribPointer(aColor,
-4,                                // počet prvků v každém atributu
-gl...|E||T|Útočníci rozpálili mrazáky ve stovkách francouzských obchodů až na 50 °C. Asi jim stačilo heslo z kalendáře|D|12.10. 19:45|P|Útočníci spustili odmrazování v mrazácích stovek francouzských supermarketů. • Zasáhli jednotky Danfoss se zastaralým firmwarem, dostupné z internetu....|X|Útočníci spustili odmrazování v mrazácích stovek francouzských supermarketů. • Zasáhli jednotky Danfoss se zastaralým firmwarem, dostupné z internetu. • Mrazák je dnes počítač připojený k síti a technika bez aktualizací je slabé místo.|E||T|Včera Photoshop, dnes Microsoft Office a zítra Autodesk. Vývojář pomocí AI tvoří bezplatné alternativy k placeným programům|D|12.10. 11:30|P|Po bezplatné alternativě k Photoshopu přichází další open-source projekty, které chtějí nahradit Word, Excel i PowerPoint bez měsíčního předplatného. ...|X|Po alternativě k Photoshopu vytvořené čistě pomocí vibecodingu přichází další zajímavý projekt, který míří proti proti placenému softwaru. Vývojář Thomas Brandon totiž představil otevřené alternativy k Microsoft Office nahrazující klasický Microsoft Word, Excel i PowerPoint.
-Word, Excel i PowerPoint zdarma. Další programy mohou následovat
-Nové aplikace nesou názvy WordCraft, GridCraft a DeckCraft. První slouží k práci s textovými dokumenty, druhá pro tabulky a třetí k přípravě prezentací. Vývojář při jejich tvorbě používá umělou inteligenci Claude a všechny programy zveřejnil jako open-source na GitHubu, odkud si je můžete zdarma stáhnout.
-Trojice programů navazuje na projekt ArtCraft, který se zaměřuje na bezplatné alternativy k populárním programům z dílen Adobe. Cílem autora je zajistit, aby aplikace fungovaly napříč Windows, macOS i Linuxem a uživatelům přitom nabízely stejné prostředí bez ohledu na operační systém.
-A také bez zbytečně drahého předplatného, což je jedna z hlavních kritik Thomase Brandona směrem k velkým nadnárodním korporacím. Jeho programy tak představují jakýsi protest vůči rostoucí závislosti na předplatitelských službách. Co dříve bylo za jednorázovým nákupem, je dnes schováno v balíčku s hromadou dalších nástrojů. Mnohdy z nich přitom využíváme jen zlomek a zbylé nástroje jen zbytečně přidávají na hodnotě předplatného.
-Komunita okolo ArtCraftu na Discordu rychle roste a uživatelé navrhují další programy, kterých by se chtěli dočkat. Po alternativách k Adobe a Microsoftu se často zmiňují hlavně CAD programy. Dalším kandidátem by tak mohl být nástroj CADCraft, který by mířil proti programům od Autodesku.
-K plnohodnotné náhradě profesionálních aplikací ale mají tato řešení zatím daleko a slouží jen pro domácí nenáročné používání.|E||T|Seznam se zbavuje nespolehlivých hesel. Místo nich se přihlásíte otiskem prstu či skenem obličeje|D|12.10. 09:45|P|Seznam přichází s pohodlnějším a bezpečnějším přihlašováním. Heslo nově můžete nahradit otiskem prstu, skenem obličeje nebo PINem díky podpoře přístup...|X|Seznam.cz nově umožňuje přihlašování ke svým službám bez používání hesel. Firma nasazuje přístupové klíče, takzvané passkeys. Identitu tak lze ověřit například otiskem prstu, rozpoznáním obličeje nebo zadáním PINu.
-Přístupový klíč je možné si nastavit v sekci Zabezpečení v rámci nastavení Seznam Úctu. Dojde k ověření zařízení a záchranného telefonního čísla. Seznam doporučuje, aby se klíč vytvářel pouze na zařízení, které uživatel skutečně vlastní a používá. Návod k nastavení je zde.
-“Přístupový klíč je digitální údaj uložený přímo v telefonu, tabletu nebo počítači. Při přihlášení už není potřeba pamatovat si ani zadávat heslo. Stačí zvolit možnost přihlášení pomocí klíče a potvrdit svou totožnost na vlastním zařízení,” uvedl Seznam.
-“Aktivací přístupového klíče se současné způsoby přihlašování neruší. Uživatelé mohou nadále používat heslo a přístupový klíč využít jako další úroveň ověření. Klíč si také mohou nastavit na více vlastních zařízeních,” doplnila podle serveru Lupa.cz firma.
-“Přístupové klíče, bezpečnostní klíče a ověřovací aplikace zároveň nahrazují dříve využívané ověřování prostřednictvím Seznam Aplikace. Její podpora pro dvoufázové ověření byla ukončena v lednu 2026. Uživatelům, kteří si ani po opakovaném upozornění nenastavili jiný způsob ověření, bylo dvoufázové zabezpečení vypnuto. Jejich účty však zůstaly plně dostupné. Dodatečnou ochranu si mohou kdykoli znovu aktivovat pomocí ověřovací aplikace, bezpečnostního klíče nebo nově také přístupového klíče.”|E||T|Vedle nákupních rad AI přibyla reklama, co pozná, jak moc chcete nakupovat. E-shopy se do ní rychle ponořily|D|12.10. 04:30|P|Zatímco se konverzace s AI staly místem, kde se lidé rozhodují, co koupit, v prostoru přibyly nové reklamní možnosti. ChatGPT odhaduje, jak vážně člov...|X|OpenAI od srpna pustila do českých konverzací reklamní bloky. Objevují se pod odpověďmi na nákupní dotazy a sledují, jak moc je uživatel přesvědčený o tom, že chce nakupovat. Čím blíž je k nákupu, tím vyšší je pravděpodobnost, že reklamu uvidí.
-Změřily to testy společnosti Marketing Miner, která systém takových reklam právě zmapovala. Podle nich se tento typ reklamy objevil ve čtyřech z pěti odpovědí umělé inteligence. Nepropojují se přitom s tím, co nabízí v konverzaci samotná AI – v 89 % případů reklamy mířily k jiné značce, než jakou umělá inteligence v konverzaci jako nákupní rádce doporučila.
-Ale ukázaly, že čím odhodlanější uživatel k nákupu je, tím víc stoupá pravděpodobnost, že reklamu uvidí. Otázka typu „Jaké jsou druhy matrací?“ znamená 67,5 % případů, že se reklama v konverzaci objeví. „Srovnej pěnové a pružinové matrace“ – 75,3 %. S dotazem „Levná pěnová matrace do 10 tisíc“ má uživatel 81,4% šanci, že uvidí reklamu. Nepřekvapivě pravděpodobně na matraci.
-Okolo toho, jaké obchody umělá inteligence v konverzacích doporučuje, už v e-commerce vyrostlo velké téma a v něm obor s názvem GEO. Jde o zkratku pro optimalizaci webového obsahu pro vyhledávače a nástroje postavené na AI, tedy jakési pokračování SEO (optimalizace pro vyhledávače).
-Každý další výzkum zákaznického chování totiž ukazuje, jak moc se lidé spoléhají na umělou inteligenci v jejích doporučeních – například v září Asociace pro elektronickou komerci spočítala, že je to v Česku polovina lidí, kteří nakupují online. Jenže AI obchody k doporučení pro lidi vybírá a v Česku pro ni devět z deseti e-shopů v podstatě neexistuje. Hlavně proto, že se jednoduše nedostane k jejich datům. Buď rovnou blokují přístup k informacím, nebo nemají správné GEO, data o své nabídce dost přehledná k tomu, aby je AI „schroupala“.
-Přitom jde o stále významnější kanál. Když Marketing Miner v srpnu počítal, kolik objednávek AI reálně přinesla k e-shopům, dobral se k tomu, že se jejich počet od ledna zdvojnásobil, byť zatím o významný zdroj prodejů nejde.
-AI zatím pro e-shopy představuje kanál, kterým směřují jednotky procent z celkového objemu prodaného zboží. K nim by se ale mohly přidat další právě novým reklamním zobrazením.
-Nemohli jsme ignorovat, kam lidé chodí
-Svědčí o tom zkušenosti jednoho z inzerentů, obchodu Počítárna. V běhu má v tuto chvíli drobné testovací kampaně a hlavní kampaň na sortiment notebooků. „Výsledky zatím předčily naše očekávání, byť na nějaký hodnotný výstup a zhodnocení je ještě brzy,“ říká Tomáš Netopil, zakladatel a marketingový manažer projektu. „Kampaň jsme odstartovali v polovině září s rozpočtem 1 000 Kč na den. Průměrné CPC máme okolo 25 Kč, CTR 0,85 %,“ chválí si.
-Mezi inzerenty je v Česku řada velkých značek, z těch nejznámějších je to Alza, AAA Auto, T-Mobile, O2 či Invia. „Tyto a další zavedené korporace však tvořily jen menšinu zobrazených reklam. Zbylý prostor obsadila široká paleta středních a menších firem, od dodavatelů energií až po regionální prodejce či řemeslníky,“ doplňuje výzkum Marketing Mineru. Téměř polovina zachycených inzerátů patřila firmám, jejichž weby podle odhadů Marketing Mineru generují z běžných vyhledávačů měsíční návštěvnost do 10 tisíc uživatelů.
-Počítárnu k novince přivedla mimo jiné příležitost si vyzkoušet nový reklamní formát mezi prvními. „Dlouhodbě sledujeme trendy v reklamě a brali jsme to hlavně jako zajímavou novinku,“ popisuje Netopil. „Nebylo za tím dlouhé plánování, spíš rychlý test s cílem zjistit, jak bude tento prostor fungovat a jak na něj budou uživatelé reagovat,“ říká.
-Jedním dechem vysvětluje, že obchod nemůže ignorovat změnu v tom, jak lidé vyhledávají informace. „Zejména mladší uživatelé se místo klasického ‚googlení’ přesouvají do svých AI chatů a hledají odpověď na to, co zakoupit právě tam. Současně srovnáme-li náklady v klasických reklamních systémech, tak AI platformy zatím stále nabízí podstatně levnější formu propagace jak z hlediska CTR, CPR tak i PNO,“ uvádí (míra prokliku, cena za výsledek, nákladovost, pozn. red.).
-„Zájem firem o reklamu v ChatGPT je velký,“ potvrzuje Markéta Kabátová, šéfka výkonnostní agentury uLab. K tomu ale dodává, že firma zatím při správě kampaní pro klienty postupuje opatrně. „Kvalitou přiváděné návštěvnosti se kampaně v ChatGPT blíží spíše reklamám na Facebooku a Instagramu než reklamě ve vyhledávání. Na sociální sítě lidé chodí hlavně za zábavou, zatímco ve vyhledávání je reklama lépe navázaná na aktuální potřebu uživatele a častěji tak vede k nákupu,“ vnímá.
-„E-shopaři se o reklamy v ChatGPT aktivně zajímají. Jen na zákaznickou podporu nám přišly desítky dotazů,“ souhlasí Jan Hospodka, CEO Shoptetu, který staví řešení pro online obchody. Tato služba technické řešení pro AI staví a konkrétně to pro dané reklamy měla připravené ještě před oficiálním spuštěním, takže řada e-shopů s jeho správou prý dnes už inzeruje.
-Marketing Miner ukázal reakci ChatGPT, když cílí přesně a s kontextem:
-Pamatuje si konverzaci: Uživatel se bavil o dovolené a následně položil prostý dotaz „Jaké je počasí v Málaze?“. AI pod odpovědí ukázala reklamu na levné letenky.
-Nahraje konkurenci: U otázky „AAA Auto, nebo jiný bazar?“ dostal prostor inzerát konkurenčního autobazaru TUkas. Podobně u dotazu „jak odejít od ČEZ“ se zobrazil alternativní dodavatel energií Fonergy.
-Využije modelovou krizi: U teoretické situace „celostátní blackout“ systém okamžitě nabídl reklamu na nákup svítilen.
-Mapování fungování konverzací a nového reklamního formátu nyní zkoumala firma zadáním celkem 3 600 různých dotazů (promptů), které neobsahovaly názvy žádných konkrétních značek. Každý dotaz zazněl třikrát v samostatné konverzaci, analýza tak zahrnuje 10 800 odpovědí. Témata se týkala celkem deseti oborů, mimo jiné aut, módy a obuvi, cestování, elektroniky nebo bank.
-Inzerenti ale s novými možnostmi fungují jinak. Když si dosud platili reklamu na vyhledávačích, při jejím zadání volili klíčové slovo, u nějž se zobrazovala. V ChatGPT zákazník popisuje témata, u kterých chce být vidět. „Popisuje svou situaci, rozpočet i omezení. E-shopy tak poprvé nebojují o konkrétní klíčová slova, ale o okamžik, kdy se zákazník v rozhovoru rozhoduje,“ komentuje Hospodka.
-O zobrazení pak rozhoduje reklamní systém OpenAI podle obsahu celé konverzace, textu reklamy a cílové stránky. „V měřeném vzorku to vedlo k situacím, kdy systém inzerenta nasadil do nečekaných souvislostí. Někdy firmě pomohl, jindy nahrál konkurenci a občas trefil téma, ale minul záměr,“ hodnotí pak Marketing Miner.
-Rozdíly jsou patrné i mezi obory. Když se uživatel zeptá na auto nebo nábytek, reklamu uvidí prakticky vždy. Pokud na banku nebo lékárnu, reklamu uvidí jen velmi zřídka. OpenAI, která ChatGPT provozuje, mimo Spojené státy zdravotním a finančním firmám inzerovat zakazuje, vysvětluje Marketing Miner.
-„Reklama ale podle našich zkušeností zatím často neodpovídá tomu, co právě řeší. Platí to hlavně pro samostatné reklamy cílené podle tématu rozhovoru. Produktové reklamy, které přes takzvané produktové feedy přebírají konkrétní zboží z nabídky e-shopu, už lépe odpovídají dotazu, a lze tak u nich očekávat i lepší výsledky,“ upozorňuje Kabátová. Podle ní je prostor pro zlepšení velký. „Proklik přitom může stát i desítky Kč, takže firmy by měly vědět, jakou hodnotu pro ně návštěva webu má. Velký posun pro e-commerce přináší produktová inzerce napojená na feedy, nově dostupná i v Česku a na Slovensku,“ dodává Lucie Thiemlová, COO společnosti Srovnáme.cz
-Bolí vás hlava? Máte odpustek
-Zajímavé je ještě jedno zjištění. Analytiky překvapilo, jak striktně systém hlídá etickou rovinu konverzace. Už při jedné zmínce o osobní zdravotní situaci, finanční tísni nebo krizové události se reklamy přestanou zobrazovat po zbytek rozhovoru.
-Podle těchto testů reklamu uživatel neuvidí, pokud napíše například „Padají mi vlasy“, „bolí mě záda“, „Nemám na nájem“, ale třeba i „rychle zhubnout 10 kg“. Reklamy se neukazovaly ani u dotazů kolem povodní či kyberútoků. Dalšími citlivými tématy v tomto smyslu jsou politické otázky, sázky, kryptoměny nebo seznamky.
-Reklamy vidí jen přihlášení uživatelé verzí Free a Go, zároveň se nezobrazují uživatelům mladším 18 let a v dočasném chatu. Česko je součástí evropské vlny spuštěné 24. srpna, čeští inzerenti se mohou registrovat od 31. srpna.|E||T|A zase ten Kick. Vysílací rada sleduje reklamní spolupráce českých influencerů|D|12.10. 04:00|P|Vysílací rada prověřuje možnou propagaci hazardu na Kicku a Instagramu. Zjišťuje totožnost tvůrců i jejich vazby na zahraniční firmy.|X|Kdo stojí za účtem SousediLive na streamovací platformě Kick? Rada pro rozhlasové a televizní vysílání minulý týden požádala o pomoc s jeho identifikací Celní úřad v Plzni. Podle tiskové zprávy má podezření, že uživatel tohoto účtu šířil reklamu na online kasino Roobet v rozporu se zákonem o regulaci reklamy.
-Na účet SousediLive přišly vysílací radě dvě stížnosti. Další dva podněty, které obdržela, se týkaly účtů krabs04 a opat04.
-Kick provozuje australská společnost Kick Streaming Pty Ltd., ale úřad z hlediska jeho kompetencí zajímá jen obsah, který na této platformě šíří čeští streameři. Zákon o regulaci reklamy totiž svěřuje vysílací radě dohled také nad reklamou ve službách platforem pro sdílení videonahrávek.
-Reklama na hazardní hry provozované bez potřebného českého povolení je zakázaná. Ministerstvo financí provozuje seznam legálních provozovatelů, který má charakter tzv. whitelistu. Jinými slovy, pokud na něm nějaká služba není, je považována za nelegální.
-A jak jsme nedávno psali na Lupě, v září vysílací rada oslovila estonskou společnost Crystal Future OÜ, která provozuje portál CSGO.NET, a britskou ITSFAIL LTD stojící za aplikací GGDROP. Chtěla vědět, zda jejich služby představují hazardní hru podle práva příslušné země. Zjišťovala také podobu smluv či jiných dohod o komerční spolupráci s českým uživatelem CSkyf na Kicku.
-Toto prověřování se týká služeb nabízejících náhodné virtuální předměty pro Counter-Strike 2. Uživatelé otevírají virtuální bedny a získané předměty mohou převádět do prostředí Steamu. Pro posouzení legálnosti je podstatný konkrétní způsob fungování jednotlivé služby. Označení za „herní bedny“ samo o sobě neřeší otázku, zda jde o hazard vyžadující povolení.
-Na Instagramu se vysílací rada v září zajímala o profil profesionálního boxera Tomáše Polláka. Vyzvala ho, aby vysvětlil, zda prezentace výhry v online kasinu SpinBetter prostřednictvím Stories byla placenou propagací nebo obchodní spoluprací. Toto kasino rada označila za službu bez české licence.
-Ministerstvo varuje influencery
-Ministerstvo financí také v září upozornilo influencery, že zákaz nelegální propagace hazardu může dopadat také na živé přenosy hraní, komentáře vybízející ke hře nebo odkazy a promo kódy vedoucí na nepovolené služby. Popsalo spolupráce, při nichž tvůrce získává provizi za přivedené hráče. Varovalo i před tím, že ukazování vysokých výher může vytvářet zkreslenou představu o šanci na úspěch.
-„Nejčastěji se lze s nelegální reklamou na hazardní hry setkat prostřednictvím tzv. session videí, na kterých influencer hraje na nelegální platformě a zároveň i toto hraní komentuje a tím i propaguje. Sledujícím ukazuje vysoké výhry, bagatelizuje prohry a pod videem zanechá odkaz na registraci. Za každého nového hráče, který se přes odkaz zaregistruje a vloží peníze, pak inkasuje provizi. Typicky se tedy jedná o klasický affiliate model, který má ale jeden zásadní háček – pokud nemá propagovaná platforma licenci, pak je považována za nelegální propagaci nepovoleného hazardu,“ upozorňuje ministerstvo.
-S influencery šířícími reklamu na nelegální hazard může být vedeno správní řízení. Podle ministerstva financí riskují sankce až v řádu milionů korun a zablokování uživatelského účtu na platformě.
-„Za problematické lze považovat také soutěže, ve kterých je formální výhrou například telefon, herní konzole, hotovost nebo jiná cena, ale podmínkou účasti je registrace u nelicencovaného provozovatele, zaslání screenshotu registrace nebo použití odkazu poskytnutého influencerem,“ varují ministerští úředníci.
-I když influencer třeba neřekne název casina, ale ukáže „výhru“ (přičemž název je vidět na obrazovce), jde o propagaci. Často jde navíc o uměle vytvořené výhry, které mají přilákat nové hráče. Ministerstvo varuje před zveřejněním screenshotů nebo videí zobrazujících vysoké výhry, zůstatek na hráčském účtu, potvrzení o výplatě prostředků nebo převod peněz z nelegální platformy, pokud takový obsah motivuje další osoby ke hře.
-Případ TVTwixx
-Že úřad musí každý případ přesně vyhodnotit, ukazuje spor kolem kanálu TVTwixx na YouTube. RRTV v září 2025 uložila jednomu z jeho tvůrců napomenutí za zpracování a šíření reklamy ve čtyřech videích z let 2018 a 2019 (věc původně řešili pražští celníci, vysílací rada záležitost převzala po změně legislativy). Nedovolená reklama se týkala služeb Drakemall, 1win a Gloryunbox. Rada tvůrci zároveň předepsala 2500 Kč jako paušální náhradu nákladů řízení.
-Potrestanému tvůrci se ale rozhodnutí nelíbilo, takže dal vysílací radu k soudu. Městský soud v Praze následně rozsudkem z 29. dubna 2026 celé rozhodnutí zrušil a věc vrátil radě k dalšímu řízení. Klíčovým problémem byly rozpory mezi výrokem o vině a odůvodněním.
-Přestupek musí být podle zákona společensky škodlivým jednáním. Jestliže v konkrétním jednání, přestože naplňuje zákonem stanovené formální znaky, nelze shledávat společenskou škodlivost, o přestupek se jednat nemůže.
-Soud se například pozastavil nad hodnocením jednoho z videí, u kterého vysílací rada konstatovala, že „obsahovalo sice nadsazené a v určitých ohledech kontroverzní prvky, nicméně ty se pohybovaly na hranici, nikoli za hranicí zákona o regulaci reklamy a zákona o hazardních hrách“. Video ani neobsahovalo přímou výzvu k účasti na hazardních hrách a bylo z něj zřejmé, že se jedná o fantaskní scénář, který průměrný divák nemůže vnímat jako jednoznačně motivační k zapojení do hazardního jednání. A jestliže vysílací rada sama říká, že to bylo na hranici, ale ne za hranicí, tak k porušení těchto zákonů nedošlo, a v takovém případě nemohlo dojít ani k přestupkům.
-Proto soud žalobě vyhověl a rozhodnutí zrušil jako nepřezkoumatelné pro jeho nesrozumitelnost. Vysílací rada má znovu srozumitelně posoudit všechny znaky jednotlivých přestupků, včetně společenské škodlivosti. Kvůli délce řízení musí prověřit také případný zánik odpovědnosti.
-S tím mimochodem souvisí další chyba, na kterou soud upozornil, a to právě ohledně výše nákladů řízení. Úřady začaly věc řešit už v roce 2019, takže se podle přechodných pravidel měla použít částka 1000 Kč. Rada místo ní předepsala novější sazbu 2500 Kč. V této části soud shledal rozhodnutí nezákonným.
-Prověřování propagace nelegálního hazardu na Kicku a dalších platformách budeme nadále sledovat. „Ministerstvo financí apeluje na všechny influencery a tvůrce obsahu, aby byli při přijímání spoluprací obezřetní. Propagace nelegálních hazardních her není ‚jen další výnosná spolupráce‘ – je to porušení zákona, které může mít vážné následky,“ vzkazuje resort Aleny Schillerové (ANO), který také sepsal varovné znaky, jak poznat, že je nabídka spolupráce nelegální.|E|
+Zdroje: VideoCardz (1, 2) MEGAsizeGPU, Benchlife|E|

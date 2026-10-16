@@ -46,6 +46,54 @@ Recursing Ada je nepohodlná kniha. Nie preto, že útočí na populárnu ikonu,
 Pre dejiny informatiky je to zdravé. „Prvý program“ nie je relikvia. Je to text, ktorý sa dá čítať ako program. Keď sa program číta ako program, treba sa pýtať presne to, čo by sa pýtal každý dobrý debugger:
 Ak ho spustíme tak, ako je napísaný, dá správny výsledok?
 Odpoveď pri Note G nie je taká čistá, ako by legenda chcela. Práve preto sa oplatí Tredouxovu knihu čítať.|E|
+|T|Prekliatie Ady Lovelace: mýtus o prvej programátorke pod lupou|D|15.10. 22:00|P|Gavan Tredoux v knihe Recursing Ada ostro spochybňuje moderný obraz Ady Lovelaceovej ako prvej programátorky. Časť sporu však nie je kultúrna, ale tec...|X|Ada Lovelaceová patrí k najznámejším menám dejín výpočtovej techniky. V populárnom podaní je to „prvá programátorka“, autorka prvého algoritmu pre všeobecný počítací stroj a vizionárka, ktorá pochopila význam Babbageovho analytického stroja skôr než jej súčasníci. Tento obraz je silný, mediálne vďačný a kultúrne užitočný. Práve preto je nepríjemné, keď príde kniha, ktorá sa nepýta, či je príbeh pekný, ale či je pravdivý.
+Gavan L. Tredoux vo svojej knihe Recursing Ada: Charles Babbage, Byron’s Daughter and the Genesis of a Deception útočí priamo na jadro legendy. Kniha vyšla v roku 2026, má 472 strán a vydavateľom je organizácia spravujúca oficiálny a komplexný online digitálny archív venovaný životu, dielu a vedeckým publikáciám významného britského viktoriánskeho polyhistora Sira Francisa Galtona – webstránka galton.org; Hlavným vedeckým kurátorom pre galton.org je aj Tredoux, a preto ju uvádza ako prácu o „klamaní“ a modernej bájke okolo úlohy Ady Lovelaceovej.
+Tredouxova téza nie je iba životopisná. V článku The Ada Lovelace myth tvrdí, že Lovelaceová nezanechala pôvodné matematické výsledky, publikované matematické práce ani rukopisy s novou matematikou. Podľa neho je veľká časť jej vedeckej reputácie odvodená z jej účasti na anglickom preklade Menabreovej správy o Babbageovom analytickom stroji a zo sprievodných poznámok, najmä zo slávnej Note G.
+Najzaujímavejším zistením je, že Tredouxova kniha sa dá čítať ako historický code review. Nie ako spor o sochu Ady Lovelaceovej, ale ako otázka, či najznámejší „program“ 19. storočia obstojí, keď sa skontrolujú vstupy, premenné, znamienka, zlomky a výstup.
+Note G ako execution trace, nie moderný zdrojový kód
+Slávna Note G bola poslednou zo série poznámok A–G, ktoré Lovelaceová pripojila k anglickému prekladu Menabreovej správy o analytickom stroji. Jej cieľom bolo ukázať výpočet Bernoulliho čísel pomocou Babbageovho stroja. Pôvodný text sám hovorí, že k Note G je pripojený diagram a tabuľka s detailmi výpočtu pre B7, pričom hodnoty B1, B3 a B5 sa berú ako už známe.
+Nie je to program v dnešnom zmysle jazyka C, Python alebo Fortran. Je to skôr rozpis operácií pre stroj s premennými V1, V2, V3, … teda tabuľkový execution trace: vezmi hodnotu z tejto premennej, vykonaj s ňou aritmetickú operáciu, výsledok ulož inde, pokračuj ďalším riadkom. Analytický stroj mal pracovať so štyrmi základnými aritmetickými operáciami a s premennými uloženými v stĺpcoch diskov.
+Tradičný kompromis znie približne takto: Babbage dodal matematickú ideu a Lovelaceová ju prepísala do postupnosti inštrukcií pre stroj. Dokonca aj Babbage neskôr písal, že Bernoulliho časť ponúkol urobiť on, aby jej ušetril prácu, ale ona mu ju vrátila s odhalenou vážnou chybou.
+Lenže práve tu začína technický problém.
+Jedna chyba nestačí
+Najznámejšia chyba v Note G je prehodené delenie. V jednom riadku je zlomok obrátený: program počíta čosi ako V5/V4, hoci správny výpočet vyžaduje V4/V5.
+Stephen Wolfram vo svojej analýze uvádza, že vo vytlačenej podobe je na riadku 4 chyba, ale po jej oprave sa dá zostaviť moderná verzia výpočtu.
+Tredouxova kritika, ktorú rozvíja aj vo verejných komentároch k Note G, je ostrejšia: problém podľa neho nie je iba jeden preklep v riadku tabuľky. Ide o viacvrstvový problém, v ktorom sa mieša matematická formula, historická notácia Bernoulliho čísel, znamienková konvencia a samotný programový zápis.
+Kľúčový detail je v tom, že Lovelaceovej/Babbageova notácia B1, B3, B5, B7 nezodpovedá dnešným nepárnym Bernoulliho číslam. Zodpovedá dnešným nenulovým párnym hodnotám:
+V modernej podpísanej konvencii platí:
+Staršia tradícia „Bernoulliho“ však často pracovala s kladnými hodnotami:
+Ak teda text očakáva kladné Bernoulliho čísla, ale použitá rekurzia vedie k podpísaným hodnotám so striedajúcim sa znamienkom, nejde iba o typografickú chybu. Je to konflikt medzi matematickou špecifikáciou a implementáciou.
+Programátorsko-matematické okienko
+Moderná rekurzia Bernoulliho čísel sa dá zapísať napríklad takto:
+Pre m=8 dostaneme:
+Po dosadení
+vyjde:
+Ak však niekto očakáva historicky kladné Bernoulliho čísla, výsledkom má byť
+Programátor by povedal: špecifikácia a implementácia nepoužívajú tú istú dátovú konvenciu.
+V C sa dá jadro problému demonštrovať úplne jednoducho:
+int main(void) {
+double B2 =  1.0 / 6.0;
+double B4 = -1.0 / 30.0;
+double B6 =  1.0 / 42.0;
+double B8 = -1.0 / 30.0;
+printf("Modern signed B8: %f\n", B8);
+printf("Historical positive Bernoulli number: %f\n", B8 < 0 ? -B8 : B8);
+double V4 = 8.0;
+double V5 = 9.0;
+printf("Correct division V4/V5: %f\n", V4 / V5);
+printf("Wrong division   V5/V4: %f\n", V5 / V4);
+return 0;
+Tento kód nie je simuláciou Babbageovho stroja. Je to iba minimalistický testovací prípad. Ukazuje však pointu: ak je raz obrátené delenie alebo zamenená znamienková konvencia, program môže byť historicky fascinujúci, ale aritmeticky nesprávny.
+Mýtus, protimýtus a historické nuansy
+Tredouxova kniha je dôležitá práve tým, že núti čitateľa prestať opakovať kultúrne slogany. Na druhej strane treba dávať pozor, aby sa z oprávneného rozkladu mýtu nestal iba opačný mýtus.
+Thomas J. Misa vo svojej práci o Babbageovi, Lovelaceovej a Bernoulliho číslach upozorňuje, že zásluhy Lovelaceovej a Babbagea netreba chápať ako hru s nulovým súčtom. Uznáva definičné problémy pri označení Lovelaceovej za „prvú programátorku“, ale zároveň tvrdí, že vytvorila elementárnu postupnosť inštrukcií, teda algoritmus, na výpočet Bernoulliho čísel.
+To je rozumná opatrnosť. Lovelaceovú netreba ani zbožštiť, ani vymazať. Jej význam nemusí stáť na tom, že bola prvou programátorkou v modernom zmysle. Stačí, že jej text patril k najvplyvnejším raným vysvetleniam všeobecného výpočtu a že dokázal spojiť technickú mechaniku Babbageovho stroja s širšou predstavou symbolického spracovania.
+Tredoux však pridáva nevyhnutnú korekciu: ak sa historická sláva opiera o konkrétny technický artefakt, ten artefakt treba kontrolovať technicky. Nie pietne. Nie metaforicky. Technicky.
+Záverečný verdikt
+Recursing Ada je nepohodlná kniha. Nie preto, že útočí na populárnu ikonu, ale preto, že prenáša spor z roviny identity a symbolov do roviny dôkazov. V prípade Note G to znamená kontrolovať matematickú formulu, znamienka, premenné, operácie a výsledok.
+Pre dejiny informatiky je to zdravé. „Prvý program“ nie je relikvia. Je to text, ktorý sa dá čítať ako program. Keď sa program číta ako program, treba sa pýtať presne to, čo by sa pýtal každý dobrý debugger:
+Ak ho spustíme tak, ako je napísaný, dá správny výsledok?
+Odpoveď pri Note G nie je taká čistá, ako by legenda chcela. Práve preto sa oplatí Tredouxovu knihu čítať.|E|
 |T|Bringing GPT-Rosalind to academic research labs|D|15.10. 19:00|P|Introducing the Rosalind Academic Plan, offering eligible academic labs sponsored access to GPT-Rosalind and tools to advance life sciences research.|X|We’re introducing the Rosalind Academic Plan to help more academic scientists access GPT‑Rosalind, our dedicated life sciences model, which combines frontier reasoning with Rosalind workbench(opens in a new window) that enables specialized tool orchestration across medicinal chemistry, genomics, wet-lab assistance, and other scientific applications. Eligible labs can receive up to 30 Business Standard seats at no cost for up to 12 months, with access to GPT‑Rosalind subject to trusted-access approval.
 Academic research creates knowledge that entire fields build on. Work that begins with a fundamental question about biology can eventually change how we diagnose disease, develop medicines, or grow food. But those advances depend on scientists having the resources to explore ideas, test them, and share what they learn.
 Accelerating scientific discovery is central to OpenAI’s mission of ensuring that artificial general intelligence benefits all of humanity. With this plan, we’re investing in the scientists doing that foundational work—helping more labs combine their expertise and judgment with AI tools built for life sciences research.

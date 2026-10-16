@@ -1,0 +1,6 @@
+S příchodem GPT-6 Astra a dalších pokročilých AI modelů se prakticky roztrhl pytel s programy vytvořenými čistě pomocí vibecodingu. Minulý týden jsme psali o funkční alternativě Photostopu, začátkem tohoto týdne pak zase o bezplatných náhradách k placenému kancelářskému balíčku Microsoft Office.
+A nyní zde máme zajímavý počin od českého vývojáře Vladimíra Večeři. Jeho mapSTL.com je webový nástroj sloužící k vytvoření reliéfní 3D mapy, který si následně můžete stáhnout a vytisknout na 3D tiskárně. Podobných nástrojů na internetu najdete víc, mapSTL ale funguje překvapivě dobře a na rozdíl od mnoha jiných je úplně zdarma.
+Jakékoliv místo, které je na mapě
+Celý proces startuje výběrem lokality, kterou chcete vytisknout. V OpenStreetMaps vyberte oblast, měřítko, kvalitu generovaného terénu, množství barev a velikost. Čím menší oblast vyberete, tím detailnější dostanete výsledný model budov či pohoří.
+Na konci už stačí vybrat velikost trysky, výšku vrstvy a nechat nástroj pracovat. Výsledkem je 3D model (jedno či vícebarevný v závislosti na vaší volbě), který si můžete stáhnout ve formátu STL, případně jako 3MF, který zachová vámi vybrané barvy.
+Mimo mapSTL má Vladimír Večeřa v portfoliu i další nástroje, například povedený generátor krabiček nebo generátor rámečků a stojánků pro e-ink displeje. Obojí také zcela zdarma a na webu.

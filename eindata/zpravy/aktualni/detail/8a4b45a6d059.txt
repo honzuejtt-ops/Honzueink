@@ -1,0 +1,37 @@
+Novinky v Memtest86+ 9.0
+Ve čtvrtek vyšel oblíbený nástroj pro kontrolu paměti RAM Memtest86+ ve verzi 9.0. Mezi hlavní novinky patří podpora Aarch64 (ARM64). Je však potřeba UEFI firmware s podporou ACPI. Oficiálně jsou podporovány notebooky s Qualcomm Snapdragon X (například Microsoft Surface), Raspberry Pi 4 a 5 s neoficiálním UEFI a QEMU. Naopak zatím nefunguje Apple Mac s procesory ARM.
+Další novinkou je použití 128 a 256 bitových vektorů v SIMD testu číslo 5. Pro x86 se použije 128 bitů se SSE2 a 256 bitů s AVX2. Na ARM se použije 128 bitů s instrukcemi NEON a v případě architektury LongArch64 se použijí instrukce LASX.
+Test 9 byl přepracovaný a zatěžuje paměťový řadič i sběrnici. Je užitečný obzvlášť u nových DDR5 s ECC přímo na čipu (On-die ECC, bez In-band ECC, který kontroluje i přenos po sběrnici) , ale hodí se i u starších pamětí. Každé jádro si rozdělí kousek paměti na polovinu a do něj střídavě zapisuje náhodná data a čte. To vytvoří velký provoz v řadiči i na sběrnici. Při čtení samozřejmě probíhá kontrola dat. Výsledek tohoto testu se nepoužije pro BadRAM, protože většinou nejde o chybu určité adresy v paměti, ale spíše důsledek provozu v řadiči či na sběrnici. Test je podle autorů důležitý, proto jej nově zařadili jako test číslo 3.
+Je tu také nový Row Hammer test číslo 11, ten je ale ve výchozím stavu vypnutý. Opět nejde v tomto případě o chybu nějaké adresy, ale o zranitelnost celé RAM tímto druhem útoku. On-die ECC v DDR5 může tyto chyby v tichosti opravovat. Nově je také možné zapsat výsledky testu na USB, podporovaný je souborový systém FAT.
+UEFI na Raspberry Pi
+Raspberry Pi 4 a 5 nemají oficiální UEFI, ale existuje pro ně neoficiální podpora. Asi v nejlepším stavu je UEFI na Raspberry Pi 4. Na Raspberry Pi 5 je situace bohužel horší. Situaci shrnuje na svých stránkách FreeBSD. Je tu UEFI pro Raspberry Pi 5 stepping C1 a pak pro novější stepping D0.
+Postupujeme podle návodu na stránkách FreeBSD, tedy vezmeme SD kartu, naformátujeme jako FAT a nakopírujeme soubory z GitHubu. V případě stepping C1 je to jen obsah zip souboru. V případě stepping D0 je to obsah souboru zip a ještě následné přepsání souboru RPI_EFI.fd novějším.
+Moc pozitivně nepůsobí doporučení na stránce UEFI pro C1, kde se píše, že byste měli zvážit lépe podporovaný hardware a je přímo zmíněno UEFI pro Rockchip rk3588.
+Já mám Raspberry Pi 5 16 GB stepping D0, tak zvolím ten správný firmware, nakopíruji na kartu, spustím a objeví se malina.
+Dále se dostaneme libovolným tlačítkem. Patrně by bylo možné upravit nebo napsat skript startup.nsh, aby se startoval přímo soubor, který chcete. Ale jde to i ručně a to si ukážeme.
+Dále vybereme Boot Maintenance Manager
+Poté vybereme Boot from File
+Nyní vybereme zařízení, první je SD karta, druhé NVMe.
+Tady už máme dva soubory. První je Memtest86+ a druhý Memtest86. Jeden vybereme a pustíme. Jak ty soubory vytvoříme, se dozvíte v následujícím textu.
+Kompilace Memtest86+
+Já Memtest86+ zkoušel na Raspberry Pi ještě před jeho vydáním, takže jsem si binárku zkompiloval přímo ze zdrojáků na Raspberry Pi. Možná mají i předkompilované binárky, patrně by šel použít postup podobný jako popíšeme v kapitole Memtest86.
+Postup přeložení
+$ git clone https://github.com/memtest86plus/memtest86plus
+$ cd build/aarch64
+$ make
+Pak nás zajímá výsledný soubor mt86plus. Ten spustíme z UEFI a test pěkně běží
+Jeden celý test trvá na 16 GB paměti asi 5 hodin. Tu je výsledek po 9 hodinách, žádná chyba nebyla nalezena.
+Nevýhodou je, že UEFI nespustí větráček na vestavěném řízeném konektoru. Celé Raspberry se bude dost přehřívat a asi bude i snižovat frekvenci (thermal throttle). Naštěstí mám masivní pasivní chladič, ale ten byl po několika hodinách na dotyk velmi horký. Bez přídavného větráku nelze takovéto testování po dlouhou dobu doporučit. Je možné, že s řádným chlazením by doba testu byla kratší, protože by nedocházelo ke snižování frekvencí kvůli vysoké teplotě.
+Memtest86
+Existuje také nástroj Memtest86, kterým to vlastně v roce 1994 začalo. Program byl nejprve open source. Jeho autor Chris Brady program v letech 2000–2002 moc nevyvíjel a proto vznikl Memtest86+. Chris pak Memtest86 prodal v roce 2013 Passmarku, který jej nyní vyvíjí a prodává Pro verzi. Je tu však také verze zdarma (Free 11.7 build 1000). Memtest86 podporuje architekturu Aarch64 již od verze 9.0 z roku 2021. Dokonce údajně funguje i na Apple Mac s ARMem a jejich vydání v roce 2020 bylo patrně důvodem přidání architektury Aarch64. Mezi Memtest86+ a Memtest86 panuje určitá rivalita, ta má určitý pozitivní vliv na vývoj.
+Stáhneme si zip soubor verze free 11.7 build 1000. V zipu je memtest86-usb.img a v něm nás zajímá jediný soubor /EFI/BOOT/BOOTAA64.efi. Celý postup může být například
+$ sudo partx -a memtest86-usb.img
+$ sudo mount /dev/loop0p1 /mnt/tmp
+$ cp /mnt/tmp/EFI/BOOT/BOOTAA64.efi ~
+Soubor BOOTAA64.efi si dáme na SD kartu a nabootujeme.
+Memtest86 běží jen na jednom jádře ze čtyř. Je to prý známá chyba, kdy použité UEFI inicializuje jen jedno CPU. Kupodivu Memtest86+ mi běžel na čtyřech jádrech. Opět je potřeba počkat dost dlouhou dobu. Čtyři testy 16 GB RAM trvají okolo 12 hodin. Test neukázal žádnou chybu.
+Raspberry se opět zahřívalo, protože nejel větráček. Možná o trošku méně, než v případě Memtest86+, protože jelo jen jedno jádro. I tak to nemohu doporučit bez přídavného větráčku.
+Konečně můžeme testovat
+Nový Memtest86+ je možné použít pro Aarch64, pokud má podporu UEFI. Tím vlastně dohnal nesvobodný Memtest86, který má podporu pro Aarch64 již od roku 2021. Podpora UEFI pro SBC s ARM zatím není běžná bezproblémová. Otázka je, jestli se tyto nástroje mají mít v názvu 86, pokud podporují více architektur. Memtest86+ navíc podporuje LongArch64.
+Alternativně lze ke kontrole paměti použít nástroj memtester. Ten běží jako normální program pod operačním systémem. Nevýhoda tedy je, že neotestujete celou RAM, ale musíte nechat malou část pro OS. Program je také napsaný jen pro jedno jádro a testy nepoužívají SIMD, test tedy může trvat déle. Výhodou je, že podporuje prakticky všechny architektury, například PPC.
+(Zdroj: phoronix)

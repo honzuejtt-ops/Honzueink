@@ -14,6 +14,10 @@ Eligible labs receive:
 - Access to all commercially available frontier OpenAI models, subject to plan usage limits.
 - Access to GPT‑Rosalind following trusted-access approval.
 Research data shared through the Rosalind Academic Plan is not used to train our models by default.
+- Explore the plan See what’s included
+- Sign in + apply Tell us about your research and lab
+- Complete verification Share details and sign the agreement
+- Start research Use GPT‑Rosalind once access is active
 GPT‑Rosalind is a specialized life sciences model designed to support deeper reasoning on complex biological questions. Through trusted access, approved researchers can use it to investigate sensitive scientific questions within safeguards designed for legitimate research.
 Areas of research include:
 Drug and protein design

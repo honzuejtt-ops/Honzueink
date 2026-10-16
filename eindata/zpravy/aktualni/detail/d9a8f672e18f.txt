@@ -1,0 +1,11 @@
+„No, nevím, jestli to byl někdo, protože já jsem to nebyl. A nemyslím si, že to byl Elon. A pokud vím, je to stejné jako vždycky,“ odvětil Trump na novinářský dotaz, zda on nebo miliardář Elon Musk nedávno omezil přístup ukrajinské armády k technologii Starlink. Přesněji řečeno ukrajinská armáda využívá vojenské systémy Starshield, postavené na stejné technologii jako komerční Starlink.
+Ukrajinští představitelé ve chvíli rostoucího napětí mezi Trumpem a ukrajinským prezidentem Volodymyrem Zelenským ve středu oznámili, že Muskova firma SpaceX omezila provoz terminálů využívaných ukrajinskými silami, a narušila tak jejich operace. Majitel společnosti Elon Musk to pak odmítl s tím, že systém Starshield může omezit jen americká armáda či prezident Trump.
+O tom, že ukrajinským vojákům na frontě systém Starshield znovu začíná fungovat, informují tamní média s odvoláním na armádu ve čtvrtek. Zelenskyj v pátek v Bruselu řekl, že fungování satelitní komunikace od společnosti SpaceX na Ukrajině se sice zlepšilo, ale zatím nebylo plně obnoveno.
+Q: Was it you or was it Elon Musk who decided to temporarily pause Starlink access for the Ukrainian military?
+TRUMP: I don't know if it was anybody, because it wasn't me, and I don't think it was Elon pic.twitter.com/pH4hV2fbP2
+— Aaron Rupar (@atrupar) October 16, 2026
+Starshield versus Starlink
+Starshield je platforma, kterou společnost SpaceX začala vyvíjet pro vlády, zejména tu americkou. V roce 2023 nakoupil Pentagon pro ukrajinskou vládu terminály a služby Starshield.
+I když Starshield může využívat specializované a jinak vybavené satelity, hranice mezi Starlinkem a Starshieldem není zcela jasná.
+K používání služeb Starshield lze totiž používat klasické terminály Starlink a vojenské satelity mohou bez problémů zabezpečeně komunikovat i se satelity komerčními.
+Laicky řečeno, jde o odlišnou službu a software, který má ale stejný technologický základ a lze ho používat na stejných zařízeních.

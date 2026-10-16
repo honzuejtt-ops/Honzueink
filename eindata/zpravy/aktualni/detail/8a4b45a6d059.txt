@@ -14,11 +14,11 @@ Poté vybereme Boot from File
 Nyní vybereme zařízení, první je SD karta, druhé NVMe.
 Tady už máme dva soubory. První je Memtest86+ a druhý Memtest86. Jeden vybereme a pustíme. Jak ty soubory vytvoříme, se dozvíte v následujícím textu.
 Kompilace Memtest86+
-Já Memtest86+ zkoušel na Raspberry Pi ještě před jeho vydáním, takže jsem si binárku zkompiloval přímo ze zdrojáků na Raspberry Pi. Možná mají i předkompilované binárky, patrně by šel použít postup podobný jako popíšeme v kapitole Memtest86.
+Já Memtest86+ zkoušel na Raspberry Pi ještě před jeho vydáním, takže jsem si binárku zkompiloval přímo ze zdrojáků na Raspberry Pi. Možná mají i předkompilované binárky, patrně by šel použít postup podobný jako popíšeme v kapitole Memtest86. (Aktualizace: prošel jsem binární soubory vydané Memtest86+ 9.0, ale binárka pro Aarch64 jsem tam nenašel).
 Postup přeložení
-$ git clone https://github.com/memtest86plus/memtest86plus
-$ cd build/aarch64
-$ make
+$ git clone https://github.com/memtest86plus/memtest86plus
+$ cd memtest86plus/build/aarch64
+$ make
 Pak nás zajímá výsledný soubor mt86plus. Ten spustíme z UEFI a test pěkně běží
 Jeden celý test trvá na 16 GB paměti asi 5 hodin. Tu je výsledek po 9 hodinách, žádná chyba nebyla nalezena.
 Nevýhodou je, že UEFI nespustí větráček na vestavěném řízeném konektoru. Celé Raspberry se bude dost přehřívat a asi bude i snižovat frekvenci (thermal throttle). Naštěstí mám masivní pasivní chladič, ale ten byl po několika hodinách na dotyk velmi horký. Bez přídavného větráku nelze takovéto testování po dlouhou dobu doporučit. Je možné, že s řádným chlazením by doba testu byla kratší, protože by nedocházelo ke snižování frekvencí kvůli vysoké teplotě.

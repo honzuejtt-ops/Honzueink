@@ -1,0 +1,27 @@
+Pro léky nemusíte chodit sami, recept v mobilu nasdílíte komukoli, komu věříte
+Přístup k receptům v aplikaci eRecept můžete dát komukoli, komu věříte, a omezit, co uvidí. Funkce platí od listopadu 2023, lékový ústav ji uvádí i letos. Hodí se lidem s omezenou pohyblivostí i seniorům.
+Třeba paní, které otéká koleno a cesta do lékárny je pro ni dlouhá a bolestivá. Recept od lékaře má v telefonu. Nemusí volat dětem do jiného města ani čekat, až se jí uleví. Stačí zpřístupnit eRecept sousedce a ta léky vyzvedne místo ní.
+Sdílet recepty se dá s kýmkoliv, koho si člověk sám vybere. Týká se to i zdravotnických pomůcek, které lékař předepíše na elektronický poukaz zvaný ePoukaz. Tuhle možnost má aplikace eRecept od konce listopadu 2023. Platí to i dnes. V odborném bulletinu z února 2026 lékový ústav mezi funkcemi aplikace pořád uvádí možnost dát třetí osobě oprávnění ke sdílení údajů.
+Pomocníkem může být kdokoli blízký
+Zmocnit můžete dceru, syna nebo vnuka. Stejně dobře ale sousedku nebo pečovatelku, která za vámi chodí domů. Ústav sám uvádí, že služba pomůže třeba lidem s omezenou pohyblivostí nebo seniorům. Kdo bydlí daleko od rodičů, se tak může domluvit s někým z jejich okolí.
+Rodiče malých dětí to znají už déle. Od roku 2020 si můžou do aplikace přidat své nezletilé děti a mít jejich recept v telefonu hned, jak ho lékař vystaví.
+Pečovatelka nemusí vidět všechno
+Recepty jsou citlivá věc. Ne každý chce, aby cizí člověk viděl, jaké léky bere. Proto jde rozsah zmocnění omezit.
+Lékový ústav uvádí příklad: pečovatelka nebo ošetřovatel mají přístup jen k receptům, které ještě nikdo nevyzvedl a kterým neskončila platnost. K těm, které už byly vydané, se tak nedostanou.
+Zmocnění se navíc nastavuje na určitou dobu. Když pečovatelka chodí jen přes zimu, nemusí mít přístup napořád.
+Jak to v telefonu nastavit
+Nejdřív se přihlásíte do aplikace eRecept. Cest je několik: bankovní identita, MojeID, mobilní klíč eGovernmentu nebo eObčanka.
+💡 Zajímavost: Elektronický recept je dnes v Česku úplná samozřejmost. Jen za rok 2025 se jich v lékárnách vydalo 85 428 269.
+V aplikaci pak vyplníte, k čemu a na jak dlouho má druhý člověk přístup. Aplikace vytvoří přístupový kód a QR kód. Kód předáte tomu, kdo vám bude pomáhat. Ten k tomu potřebuje vlastní aplikaci eRecept a přihlášení například bankovní identitou. Na přijetí má podle tiskové zprávy z roku 2023 24 hodin: ve své aplikaci kód opíše nebo QR kód naskenuje.
+Zmocnění jde nastavit i na počítači ve webové aplikaci eRecept. Aplikace pak ukazuje přehled všech přijatých a udělených zmocnění.
+Kdo s mobilem nekamarádí, nemusí to vzdávat. Aplikace není jediná cesta. Zmocnění jde podat i formulářem přes datovou schránku, nebo na papíře s úředně ověřeným podpisem.
+Bez aplikace pomůže i přeposlaná zpráva
+Ne každý chce kvůli receptům instalovat novou aplikaci. Existuje i jednodušší cesta. Podle města Olomouc z roku 2020 může pacient přeposlat SMS s kódem eReceptu na jiné číslo a léky pak v lékárně vyzvedne i jiná osoba. Výjimkou mohou být podle informačního portálu třeba léky s omamnými a psychotropními látkami, u nich se raději zeptejte v lékárně. Jestli to vaše lékárna dělá stejně i dnes, je dobré si ověřit.
+Obě cesty se hodí hlavně starším lidem. Lidí ve věku 65 a více let žilo na konci roku 2025 v Česku 2,27 milionu. Je to téměř 21 % obyvatel.
+Kam zavolat, když si nevíte rady
+Pokud nastavení nejde nebo nevíte, kterou cestu zvolit, pomůže infolinka eReceptu na čísle 272 185 555. Volat můžete od pondělí do čtvrtka 7–17 hodin, v pátek 7–16 hodin (stav k 14. 10. 2026).
+Ověřeno z:
+- SÚKL — tisková zpráva „Novinka v eReceptu: Pacienti mohou zpřístupnit své eRecepty a ePoukazy rodině i pečovatelům“ (24. 11. 2023)
+- SÚKL — Farmakoterapeutické informace 3/2026, Systém eRecept (únor 2026)
+- SÚKL — portál ePreskripce, stránka pro pacienty (stav 14. 10. 2026)
+- Český statistický úřad — Počet, struktura a projekce obyvatel (stav k 31. 12. 2025, zveřejněno 18. 5. 2026)

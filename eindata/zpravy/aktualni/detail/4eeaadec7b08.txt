@@ -1,0 +1,1 @@
+Claude vyřešil starou záhadu tzv. seedů v digitálním podpisu ECDSA. • Čísla vytvořil generátor náhodných čísel spuštěný podle počítačových hodin. • ECDSA tím nikdo neprolomil, objev naopak snižuje podezření ze zadních vrátek.

@@ -1,0 +1,1 @@
+Ovládací panel pro grafické karty Nvidie už je minulostí, s novými ovladači se již nebude instalovat. Náhradou je aplikace Nvidia, pojďme si ji ukázat.

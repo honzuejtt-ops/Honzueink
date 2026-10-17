@@ -9,7 +9,8 @@ import re
 import time
 import hashlib
 import unicodedata
-from datetime import datetime, timedelta
+import calendar
+from datetime import datetime, timedelta, timezone, date
 
 # Normalizace titulku pro deduplikaci — bez diakritiky, interpunkce a velikosti písmen.
 def norm_titulek(t):
@@ -986,6 +987,339 @@ def stahni_jizdni_rady():
         f.write(datetime.now().strftime('%Y-%m-%d') + "\n")
 
 
+# ===================================================================
+# GOOGLE KALENDÁŘ — tajná iCal adresa → malý soubor pro zařízení
+# ===================================================================
+# Výstup (eindata/kalendar/kalendar.txt), jeden řádek = jedna událost v daném dni:
+#   RRRR-MM-DD|HH:MM|HH:MM|název|místo|popis
+# Prázdné časy = celodenní událost (nebo pokračování vícedenní akce).
+KALENDAR_HORIZONT_DNI = 45
+
+try:
+    from zoneinfo import ZoneInfo
+    _TZ_PRAHA = ZoneInfo('Europe/Prague')
+except Exception:
+    _TZ_PRAHA = None
+
+_DNY_ICS = {'MO': 0, 'TU': 1, 'WE': 2, 'TH': 3, 'FR': 4, 'SA': 5, 'SU': 6}
+
+
+def _ics_text(s):
+    return (s or '').replace('\\n', ' ').replace('\\N', ' ') \
+        .replace('\\,', ',').replace('\\;', ';').replace('\\\\', '\\')
+
+
+def _ocisti_hodnotu(s, maxlen):
+    s = re.sub(r'\s+', ' ', s or '').strip().replace('|', '/')
+    return s[:maxlen]
+
+
+def _den(x):
+    return x.date() if isinstance(x, datetime) else x
+
+
+def _klic_casu(x):
+    if x is None:
+        return ''
+    if isinstance(x, datetime):
+        if x.tzinfo is not None:
+            x = x.astimezone(timezone.utc)
+        return x.strftime('%Y%m%dT%H%M%S')
+    return x.strftime('%Y%m%d')
+
+
+def _ics_parsuj_dt(hodnota, parametry=''):
+    """Vrátí (datetime/date, celodenni). Časy převádí do Europe/Prague."""
+    h = (hodnota or '').strip()
+    try:
+        if 'T' in h:
+            dt = datetime.strptime(h[:15], '%Y%m%dT%H%M%S')
+            if h.endswith('Z'):
+                dt = dt.replace(tzinfo=timezone.utc)
+                if _TZ_PRAHA:
+                    dt = dt.astimezone(_TZ_PRAHA)
+                return dt, False
+            m = re.search(r'TZID=([^;:]+)', parametry or '', re.IGNORECASE)
+            if m and _TZ_PRAHA:
+                try:
+                    return dt.replace(tzinfo=ZoneInfo(m.group(1))).astimezone(_TZ_PRAHA), False
+                except Exception:
+                    pass
+            return (dt.replace(tzinfo=_TZ_PRAHA) if _TZ_PRAHA else dt), False
+        return datetime.strptime(h[:8], '%Y%m%d').date(), True
+    except Exception:
+        return None, False
+
+
+def _ics_rrule(text):
+    r = {}
+    for cast in (text or '').split(';'):
+        if '=' in cast:
+            k, v = cast.split('=', 1)
+            r[k.strip().upper()] = v.strip()
+    return r
+
+
+def _ics_vyskty(start, rrule, od, do):
+    """Výskyty události (včetně opakování) v rozmezí od–do."""
+    if start is None:
+        return []
+    je_dt = isinstance(start, datetime)
+    cas = start.timetz() if je_dt else None
+    zaklad = start.date() if je_dt else start
+    if not rrule:
+        return [start] if od <= zaklad <= do else []
+
+    freq = rrule.get('FREQ', '').upper()
+    interval = max(1, int(rrule.get('INTERVAL', '1') or '1'))
+    count = int(rrule['COUNT']) if str(rrule.get('COUNT', '')).isdigit() else None
+    until = None
+    if rrule.get('UNTIL'):
+        until, _ = _ics_parsuj_dt(rrule['UNTIL'], '')
+    until_den = _den(until) if until is not None else None
+
+    vysledek = []
+
+    def pridej(d):
+        if zaklad <= d <= do:
+            vysledek.append(datetime.combine(d, cas) if je_dt else d)
+
+    if freq == 'WEEKLY':
+        byday = rrule.get('BYDAY', '')
+        wds = sorted({_DNY_ICS[p[-2:]] for p in byday.split(',') if p[-2:] in _DNY_ICS})
+        if not wds:
+            wds = [zaklad.weekday()]
+        tyden0 = zaklad - timedelta(days=zaklad.weekday())
+        n = 0
+        for t in range(600):
+            tyden = tyden0 + timedelta(weeks=t * interval)
+            for wd in wds:
+                d = tyden + timedelta(days=wd)
+                if d < zaklad:
+                    continue
+                if until_den is not None and d > until_den:
+                    return vysledek
+                if count is not None and n >= count:
+                    return vysledek
+                if d > do:
+                    return vysledek
+                pridej(d)
+                n += 1
+        return vysledek
+
+    if freq == 'MONTHLY':
+        bymd = rrule.get('BYMONTHDAY', '')
+        dny = [int(x) for x in bymd.split(',') if x.isdigit()] or [zaklad.day]
+        # "2TU" = druhé úterý v měsíci, "-1FR" = poslední pátek
+        byday = rrule.get('BYDAY', '')
+        ord_wd, ord_n = None, 1
+        mday = re.match(r'^([+-]?\d+)?(MO|TU|WE|TH|FR|SA|SU)$', byday.split(',')[0]) if byday else None
+        if mday:
+            ord_wd = _DNY_ICS[mday.group(2)]
+            ord_n = int(mday.group(1)) if mday.group(1) else 1
+        n = 0
+        rok, mes = zaklad.year, zaklad.month
+        for _ in range(400):
+            kandidati = []
+            if ord_wd is not None:
+                if ord_n > 0:
+                    first = date(rok, mes, 1)
+                    delta = (ord_wd - first.weekday()) % 7
+                    kandidati = [first + timedelta(days=delta + 7 * (ord_n - 1))]
+                else:
+                    last = date(rok, mes, calendar.monthrange(rok, mes)[1])
+                    delta = (last.weekday() - ord_wd) % 7
+                    kandidati = [last - timedelta(days=delta + 7 * (-ord_n - 1))]
+                kandidati = [d for d in kandidati if d.month == mes]
+            else:
+                for dd in dny:
+                    try:
+                        kandidati.append(date(rok, mes, dd))
+                    except ValueError:
+                        pass
+            for d in sorted(kandidati):
+                if d < zaklad:
+                    continue
+                if until_den is not None and d > until_den:
+                    return vysledek
+                if count is not None and n >= count:
+                    return vysledek
+                if d > do:
+                    return vysledek
+                pridej(d)
+                n += 1
+            mes += interval
+            while mes > 12:
+                mes -= 12
+                rok += 1
+        return vysledek
+
+    if freq == 'YEARLY':
+        bym = rrule.get('BYMONTH', '')
+        bymd = rrule.get('BYMONTHDAY', '')
+        mes = int(bym.split(',')[0]) if bym.split(',')[0].isdigit() else zaklad.month
+        den = int(bymd.split(',')[0]) if bymd.split(',')[0].isdigit() else zaklad.day
+        n = 0
+        for t in range(200):
+            try:
+                d = date(zaklad.year + t * interval, mes, den)
+            except ValueError:
+                continue
+            if d < zaklad:
+                continue
+            if until_den is not None and d > until_den:
+                break
+            if count is not None and n >= count:
+                break
+            if d > do:
+                break
+            pridej(d)
+            n += 1
+        return vysledek
+
+    # DAILY (a výchozí případ)
+    d = zaklad
+    n = 0
+    for _ in range(5000):
+        if until_den is not None and d > until_den:
+            break
+        if count is not None and n >= count:
+            break
+        if d > do:
+            break
+        pridej(d)
+        n += 1
+        d += timedelta(days=interval)
+    return vysledek
+
+
+def stahni_kalendar():
+    """Stáhne tajnou iCal adresu Google kalendáře a vytvoří data pro zařízení."""
+    url = os.environ.get('KALENDAR_ICS_URL', '').strip()
+    if len(url) < 10:
+        print("  Kalendar: KALENDAR_ICS_URL neni nastavena, preskakuji.")
+        return
+
+    print("  Stahuji Google kalendar (iCal)...")
+    try:
+        r = get_with_retry(url, timeout=30)
+        r.raise_for_status()
+        text = r.text
+    except Exception as ex:
+        print(f"  Kalendar se nepovedlo stahnout: {ex}")
+        return
+
+    # Složení pokračovacích řádků (ICS je láme mezerou na začátku)
+    text = re.sub(r'\r?\n[ \t]', '', text)
+
+    udalosti = []
+    cur = None
+    for radek in text.splitlines():
+        radek = radek.rstrip('\r')
+        if radek == 'BEGIN:VEVENT':
+            cur = {}
+        elif radek == 'END:VEVENT':
+            if cur is not None:
+                udalosti.append(cur)
+            cur = None
+        elif cur is not None and ':' in radek:
+            levy, hodnota = radek.split(':', 1)
+            casti = levy.split(';')
+            cur.setdefault(casti[0].upper(), []).append((';'.join(casti[1:]), hodnota))
+
+    if not udalosti:
+        print("  Kalendar: zadne udalosti v ICS.")
+        return
+
+    dnes = datetime.now(_TZ_PRAHA).date() if _TZ_PRAHA else datetime.now().date()
+    od = dnes.replace(day=1)
+    do = dnes + timedelta(days=KALENDAR_HORIZONT_DNI)
+
+    # Přepisy opakovaných událostí (Google je posílá jako samostatné VEVENTy)
+    prekryty = set()
+    for ev in udalosti:
+        if 'RECURRENCE-ID' in ev and 'UID' in ev:
+            rid, _ = _ics_parsuj_dt(ev['RECURRENCE-ID'][0][1], ev['RECURRENCE-ID'][0][0])
+            if rid is not None:
+                prekryty.add((ev['UID'][0][1].strip(), _klic_casu(rid)))
+
+    radky = []
+    for ev in udalosti:
+        if 'DTSTART' not in ev:
+            continue
+        if 'STATUS' in ev and ev['STATUS'][0][1].strip().upper() == 'CANCELLED':
+            continue
+        start, celodenni = _ics_parsuj_dt(ev['DTSTART'][0][1], ev['DTSTART'][0][0])
+        if start is None:
+            continue
+        uid = ev['UID'][0][1].strip() if 'UID' in ev else ''
+
+        if 'DTEND' in ev:
+            konec, _ = _ics_parsuj_dt(ev['DTEND'][0][1], ev['DTEND'][0][0])
+        elif celodenni:
+            konec = start + timedelta(days=1)
+        else:
+            konec = start + timedelta(hours=1)
+        if konec is None or konec < start:
+            konec = start + (timedelta(days=1) if celodenni else timedelta(hours=1))
+
+        rrule = _ics_rrule(ev['RRULE'][0][1]) if 'RRULE' in ev else {}
+
+        vyjimky = set()
+        for params, hodnota in ev.get('EXDATE', []):
+            for jeden in hodnota.split(','):
+                x, _ = _ics_parsuj_dt(jeden, params)
+                if x is not None:
+                    vyjimky.add(_klic_casu(x))
+
+        nazev = _ocisti_hodnotu(_ics_text(ev['SUMMARY'][0][1]) if 'SUMMARY' in ev else '(bez nazvu)', 80)
+        misto = _ocisti_hodnotu(_ics_text(ev['LOCATION'][0][1]) if 'LOCATION' in ev else '', 40)
+        popis = _ocisti_hodnotu(_ics_text(ev['DESCRIPTION'][0][1]) if 'DESCRIPTION' in ev else '', 220)
+
+        delka = konec - start
+        for occ in _ics_vyskty(start, rrule, od, do):
+            klic = _klic_casu(occ)
+            if klic in vyjimky:
+                continue
+            if uid and (uid, klic) in prekryty:
+                continue
+
+            occ_konec = occ + delka
+            d0 = _den(occ)
+            if isinstance(occ, datetime):
+                d1 = (occ_konec - timedelta(microseconds=1)).date()
+                cas_od = occ.strftime('%H:%M')
+                cas_do = occ_konec.strftime('%H:%M')
+            else:
+                d1 = _den(occ_konec) - timedelta(days=1)
+                cas_od = cas_do = ''
+            if d1 < d0:
+                d1 = d0
+            if d1 > d0:
+                # vícedenní akce — konec se vztahuje až k poslednímu dni
+                cas_do = ''
+
+            d = d0
+            while d <= d1:
+                if d >= od and d <= do:
+                    # časy uvádíme jen u prvního dne
+                    radky.append((d.strftime('%Y-%m-%d'),
+                                  cas_od if d == d0 else '',
+                                  cas_do if d == d0 else '',
+                                  nazev, misto, popis))
+                d += timedelta(days=1)
+
+    radky.sort(key=lambda x: (x[0], x[1]))
+    radky = radky[:500]
+
+    kal_dir = os.path.join(SD_CESTA, 'kalendar')
+    os.makedirs(kal_dir, exist_ok=True)
+    with open(os.path.join(kal_dir, 'kalendar.txt'), 'w', encoding='utf-8') as f:
+        for r in radky:
+            f.write('|'.join(r) + '\n')
+    print(f"  Kalendar: {len(radky)} udalosti -> eindata/kalendar/kalendar.txt")
+
+
 if __name__ == "__main__":
     print("Spoustim stahovani z webu a RSS...")
 
@@ -1128,6 +1462,12 @@ if __name__ == "__main__":
         stahni_jizdni_rady()
     except Exception as ex:
         print(f"  Jizdni rady se nepovedlo vytvorit: {ex}")
+
+    # 6. Google kalendář (tajná iCal adresa)
+    try:
+        stahni_kalendar()
+    except Exception as ex:
+        print(f"  Kalendar se nepovedlo vytvorit: {ex}")
 
     print("Vsechno uspesne stazeno a ulozeno!")
     print(f"  Zpravy: {zpravy_dir}")

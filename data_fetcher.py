@@ -743,6 +743,196 @@ def oprav_existujici_archiv(archiv_dir):
                 for x in items_sorted:
                     f.write(x["blok"] + "\n")
 
+# ===================================================================
+# OFFLINE JÍZDNÍ ŘÁDY PID (GTFS) — jen vybrané linky a zastávky
+# ===================================================================
+JR_LINKY = [
+    ("7", "Otakarova"),
+    ("7", "Kavalírka"),
+    ("123", "Průchova"),
+    ("123", "Kavalírka"),
+]
+JR_GTFS_URL = "https://data.pid.cz/PID_GTFS.zip"
+
+
+def _jr_slug(s):
+    tab = str.maketrans("áčďéěíňóřšťúůýž", "acdeeinorstuuyz")
+    return s.lower().translate(tab).replace(" ", "_")
+
+
+def _velikonoce(rok):
+    # Anonymní gregoriánský algoritmus (Good Friday / Easter Monday)
+    a = rok % 19; b = rok // 100; c = rok % 100
+    d = b // 4; e = b % 4; f = (b + 8) // 25; g = (b - f + 1) // 3
+    h = (19 * a + b - d - g + 15) % 30
+    i = c // 4; k = c % 4
+    l = (32 + 2 * e + 2 * i - h - k) % 7
+    m = (a + 11 * h + 22 * l) // 451
+    mesic = (h + l - 7 * m + 114) // 31
+    den = ((h + l - 7 * m + 114) % 31) + 1
+    return datetime(rok, mesic, den)
+
+
+def _svatky_rok(rok):
+    e = _velikonoce(rok)
+    return [
+        datetime(rok, 1, 1), e - timedelta(days=2), e + timedelta(days=1),
+        datetime(rok, 5, 1), datetime(rok, 5, 8),
+        datetime(rok, 7, 5), datetime(rok, 7, 6),
+        datetime(rok, 9, 28), datetime(rok, 10, 28), datetime(rok, 11, 17),
+        datetime(rok, 12, 24), datetime(rok, 12, 25), datetime(rok, 12, 26),
+    ]
+
+
+def stahni_jizdni_rady():
+    """Stáhne GTFS PID a uloží malé offline jízdní řády pro vybrané zastávky."""
+    import zipfile
+    import io
+    import csv
+
+    jr_dir = os.path.join(SD_CESTA, 'jr')
+    os.makedirs(jr_dir, exist_ok=True)
+
+    print("  Stahuji GTFS PID (muze to chvilku trvat)...")
+    try:
+        r = requests.get(JR_GTFS_URL, timeout=180)
+        r.raise_for_status()
+        z = zipfile.ZipFile(io.BytesIO(r.content))
+    except Exception as ex:
+        print(f"  GTFS se nepovedlo stahnout: {ex}")
+        return
+
+    def rows(name):
+        with z.open(name) as f:
+            for r in csv.DictReader(io.TextIOWrapper(f, encoding='utf-8-sig')):
+                yield r
+
+    # kalendář → které dny služba jezdí (WD / SA / SU)
+    cal = {r['service_id']: r for r in rows('calendar.txt')}
+    cd = {(r['service_id'], r['date']): r['exception_type'] for r in rows('calendar_dates.txt')}
+
+    def aktivni_servisy(datum):
+        ds = datum.strftime('%Y%m%d')
+        den = ('monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday')[datum.weekday()]
+        s = set()
+        for sid, r in cal.items():
+            if r['start_date'] <= ds <= r['end_date'] and r[den] == '1':
+                s.add(sid)
+        for (sid, d), typ in cd.items():
+            if d == ds:
+                if typ == '1':
+                    s.add(sid)
+                else:
+                    s.discard(sid)
+        return s
+
+    # Reprezentativní den pro každý typ (bere ohled na svátky) — plán se pak
+    # negeneruje z více období najednou, takže v něm nejsou duplicitní časy.
+    svatky = set()
+    for rok in (datetime.now().year, datetime.now().year + 1):
+        svatky |= {d.strftime('%Y-%m-%d') for d in _svatky_rok(rok)}
+    rep = {}
+    dnes = datetime.now().date()
+    for i in range(15):
+        d = dnes + timedelta(days=i)
+        ds = d.strftime('%Y-%m-%d')
+        if d.weekday() < 5 and 'WD' not in rep and ds not in svatky:
+            rep['WD'] = d
+        if d.weekday() == 5 and 'SA' not in rep:
+            rep['SA'] = d
+        if d.weekday() == 6 and 'SU' not in rep:
+            rep['SU'] = d
+    aktiv = {ty: aktivni_servisy(d) for ty, d in rep.items()}
+
+    chtene_zastavky = {n for _, n in JR_LINKY}
+    stop_ids = {}                     # stop_id -> název zastávky
+    zastavky_ids = {}                 # název -> [stop_id, ...]
+    for r in rows('stops.txt'):
+        nm = r.get('stop_name', '')
+        if nm in chtene_zastavky:
+            stop_ids[r['stop_id']] = nm
+            zastavky_ids.setdefault(nm, []).append(r['stop_id'])
+
+    line_ids = {}                     # route_id -> číslo linky
+    for r in rows('routes.txt'):
+        sn = r.get('route_short_name', '')
+        if any(sn == l for l, _ in JR_LINKY):
+            line_ids[r['route_id']] = sn
+
+    trip_info = {}                    # trip_id -> (linka, service_id, direction_id, headsign)
+    for r in rows('trips.txt'):
+        if r['route_id'] in line_ids:
+            trip_info[r['trip_id']] = (line_ids[r['route_id']], r['service_id'],
+                                       r.get('direction_id', '0'), r.get('trip_headsign', ''))
+
+    # stop_times je velký → čteme po řádcích a bereme jen naše linky/zastávky
+    maxseq = {}
+    hits = []
+    for r in rows('stop_times.txt'):
+        tid = r['trip_id']
+        if tid not in trip_info:
+            continue
+        sq = int(r['stop_sequence'])
+        if sq > maxseq.get(tid, 0):
+            maxseq[tid] = sq
+        nm = stop_ids.get(r['stop_id'])
+        if nm:
+            hits.append((tid, nm, sq, r.get('departure_time') or r.get('arrival_time')))
+
+    groups = {}                       # (linka, zastávka, směr) -> hlavičky + časy
+    for tid, nm, sq, dep in hits:
+        if sq >= maxseq.get(tid, 0):
+            continue                  # poslední zastávka = jen výstup, ne odjezd
+        line, sid, di, headsign = trip_info[tid]
+        try:
+            h, m, s = map(int, dep.split(':'))
+        except ValueError:
+            continue
+        if h >= 24:
+            continue                  # po půlnoci vynecháme
+        key = (line, nm, di)
+        g = groups.setdefault(key, {'heads': {}, 'times': {'WD': set(), 'SA': set(), 'SU': set()}})
+        g['heads'][headsign] = g['heads'].get(headsign, 0) + 1
+        for ty, sset in aktiv.items():
+            if sid in sset:
+                g['times'][ty].add(f"{h:02d}:{m:02d}")
+
+    per_file = {}
+    for (line, nm, di), g in groups.items():
+        per_file.setdefault((line, nm), []).append((di, g))
+
+    nove_soubory = {'index.txt', 'svatky.txt'}
+    index_lines = []
+    poradi = {(l, s): i for i, (l, s) in enumerate(JR_LINKY)}
+    for (line, nm), lst in sorted(per_file.items(), key=lambda kv: poradi.get(kv[0], 99)):
+        fname = f"{line}_{_jr_slug(nm)}.txt"
+        nove_soubory.add(fname)
+        out = [f"# {line}|{nm}", f"# ids={','.join(zastavky_ids.get(nm, []))}"]
+        for di, g in sorted(lst):
+            hlavni = max(g['heads'].items(), key=lambda kv: kv[1])[0]
+            for ty in ('WD', 'SA', 'SU'):
+                casy = sorted(g['times'][ty])
+                out.append(f"{di}|{hlavni}|{ty}|" + " ".join(casy))
+        with open(os.path.join(jr_dir, fname), 'w', encoding='utf-8') as f:
+            f.write("\n".join(out) + "\n")
+        index_lines.append(f"{fname}|{line} {nm}")
+        print(f"  JR: {line} {nm} -> {fname}")
+
+    with open(os.path.join(jr_dir, 'index.txt'), 'w', encoding='utf-8') as f:
+        f.write("\n".join(index_lines) + "\n")
+
+    rok = datetime.now().year
+    with open(os.path.join(jr_dir, 'svatky.txt'), 'w', encoding='utf-8') as f:
+        for r in (rok, rok + 1):
+            for d in _svatky_rok(r):
+                f.write(d.strftime('%Y-%m-%d') + "\n")
+
+    # smazat staré soubory, které už nejsou v seznamu
+    for fn in os.listdir(jr_dir):
+        if fn.endswith('.txt') and fn not in nove_soubory:
+            os.remove(os.path.join(jr_dir, fn))
+
+
 if __name__ == "__main__":
     print("Spoustim stahovani z webu a RSS...")
 
@@ -878,6 +1068,13 @@ if __name__ == "__main__":
         f.write(stahni_sync_kurzy(kh_data, 15))
     with open(os.path.join(cache_dir, 'horoskop_latest.idx'), 'w', encoding='utf-8') as f: 
         f.write(datetime.now().strftime("%Y-%m-%d") + "\n" + h_data)
+
+    # 5. Offline jízdní řády PID (jen vybrané linky/zastávky)
+    print("Stahuji jízdní řády PID...")
+    try:
+        stahni_jizdni_rady()
+    except Exception as ex:
+        print(f"  Jizdni rady se nepovedlo vytvorit: {ex}")
 
     print("Vsechno uspesne stazeno a ulozeno!")
     print(f"  Zpravy: {zpravy_dir}")

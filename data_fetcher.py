@@ -753,6 +753,7 @@ JR_LINKY = [
     ("123", "Kavalírka", "0", "Šmukýřka"),      # z Kavalírky na Šmukýřku
 ]
 JR_GTFS_URL = "https://data.pid.cz/PID_GTFS.zip"
+JR_OBNOVA_DNI = 7     # GTFS PID má ~50 MB — generujeme nejvýš jednou za 7 dní
 
 
 def _jr_slug(s):
@@ -792,6 +793,19 @@ def stahni_jizdni_rady():
 
     jr_dir = os.path.join(SD_CESTA, 'jr')
     os.makedirs(jr_dir, exist_ok=True)
+
+    # Jízdní řády se mění jen zřídka — stahování 50MB GTFS přeskočíme,
+    # pokud byla data vygenerovaná v posledních JR_OBNOVA_DNI dnech.
+    znacka = os.path.join(jr_dir, 'aktualizace.txt')
+    if os.path.exists(znacka) and os.path.exists(os.path.join(jr_dir, 'index.txt')):
+        try:
+            with open(znacka, encoding='utf-8') as f:
+                posledni = datetime.strptime(f.read().strip(), '%Y-%m-%d').date()
+            if (datetime.now().date() - posledni).days < JR_OBNOVA_DNI:
+                print("  Jizdni rady jsou cerstve, GTFS se nestahuje.")
+                return
+        except ValueError:
+            pass
 
     print("  Stahuji GTFS PID (muze to chvilku trvat)...")
     try:
@@ -933,7 +947,7 @@ def stahni_jizdni_rady():
             continue                   # bereme jen požadovaný směr
         per_file.setdefault((line, nm), []).append((di, g))
 
-    nove_soubory = {'index.txt', 'svatky.txt'}
+    nove_soubory = {'index.txt', 'svatky.txt', 'aktualizace.txt', 'golemio_key.txt'}
     index_lines = []
     poradi = {(l, s): i for i, (l, s, _, _) in enumerate(JR_LINKY)}
     for (line, nm), lst in sorted(per_file.items(), key=lambda kv: poradi.get(kv[0], 99)):
@@ -965,6 +979,10 @@ def stahni_jizdni_rady():
     for fn in os.listdir(jr_dir):
         if fn.endswith('.txt') and fn not in nove_soubory:
             os.remove(os.path.join(jr_dir, fn))
+
+    # datum generování — podle něj se příště pozná, že se GTFS nemá stahovat
+    with open(znacka, 'w', encoding='utf-8') as f:
+        f.write(datetime.now().strftime('%Y-%m-%d') + "\n")
 
 
 if __name__ == "__main__":

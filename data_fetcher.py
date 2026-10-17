@@ -747,10 +747,10 @@ def oprav_existujici_archiv(archiv_dir):
 # OFFLINE JÍZDNÍ ŘÁDY PID (GTFS) — jen vybrané linky a zastávky
 # ===================================================================
 JR_LINKY = [
-    ("7", "Otakarova"),
-    ("7", "Kavalírka"),
-    ("123", "Průchova"),
-    ("123", "Kavalírka"),
+    ("7",   "Otakarova", "1", "Kotlářka"),      # z Otakarovy na Kotlářku
+    ("7",   "Kavalírka", "0", "Bílá labuť"),    # z Kavalírky do města
+    ("123", "Průchova",  "1", "Na Knížecí"),    # z Průchovy do města
+    ("123", "Kavalírka", "0", "Šmukýřka"),      # z Kavalírky na Šmukýřku
 ]
 JR_GTFS_URL = "https://data.pid.cz/PID_GTFS.zip"
 
@@ -844,7 +844,7 @@ def stahni_jizdni_rady():
             rep['SU'] = d
     aktiv = {ty: aktivni_servisy(d) for ty, d in rep.items()}
 
-    chtene_zastavky = {n for _, n in JR_LINKY}
+    chtene_zastavky = {s for _, s, _, _ in JR_LINKY}
     stop_ids = {}                     # stop_id -> název zastávky
     zastavky_ids = {}                 # název -> [stop_id, ...]
     for r in rows('stops.txt'):
@@ -856,7 +856,7 @@ def stahni_jizdni_rady():
     line_ids = {}                     # route_id -> číslo linky
     for r in rows('routes.txt'):
         sn = r.get('route_short_name', '')
-        if any(sn == l for l, _ in JR_LINKY):
+        if any(sn == l for l, _, _, _ in JR_LINKY):
             line_ids[r['route_id']] = sn
 
     trip_info = {}                    # trip_id -> (linka, service_id, direction_id, headsign)
@@ -877,10 +877,16 @@ def stahni_jizdni_rady():
             maxseq[tid] = sq
         nm = stop_ids.get(r['stop_id'])
         if nm:
-            hits.append((tid, nm, sq, r.get('departure_time') or r.get('arrival_time')))
+            hits.append((tid, nm, r['stop_id'], sq, r.get('departure_time') or r.get('arrival_time')))
 
-    groups = {}                       # (linka, zastávka, směr) -> hlavičky + časy
-    for tid, nm, sq, dep in hits:
+    # Jedna zastávka je v GTFS často rozdělená na víc nástupišť (platform)
+    # a spoj pak má v datech víc odjezdových časů lišících se o minutu.
+    # Pro každý spoj proto bereme jen jedno nástupiště — to, na kterém staví
+    # nejvíc spojů daného směru. Tím zmizí zdvojené časy.
+    per_trip = {}                     # (linka, zastávka, směr, trip_id) -> [(čas, stop_id)]
+    heads = {}                        # (linka, zastávka, směr) -> {headsign: počet}
+    platformy = {}                    # (linka, zastávka, směr) -> {stop_id: počet}
+    for tid, nm, stop_id, sq, dep in hits:
         if sq >= maxseq.get(tid, 0):
             continue                  # poslední zastávka = jen výstup, ne odjezd
         line, sid, di, headsign = trip_info[tid]
@@ -891,25 +897,53 @@ def stahni_jizdni_rady():
         if h >= 24:
             continue                  # po půlnoci vynecháme
         key = (line, nm, di)
-        g = groups.setdefault(key, {'heads': {}, 'times': {'WD': set(), 'SA': set(), 'SU': set()}})
-        g['heads'][headsign] = g['heads'].get(headsign, 0) + 1
+        per_trip.setdefault((key, tid), []).append((dep, stop_id))
+        heads.setdefault(key, {})
+        heads[key][headsign] = heads[key].get(headsign, 0) + 1
+        platformy.setdefault(key, {})
+        platformy[key][stop_id] = platformy[key].get(stop_id, 0) + 1
+
+    groups = {}                       # (linka, zastávka, směr) -> časy
+    for (key, tid), lst in per_trip.items():
+        line, nm, di = key
+        pref = max(platformy[key].items(), key=lambda kv: (kv[1], kv[0]))[0]
+        dep = None
+        for cas, pid in lst:
+            if pid == pref:
+                dep = cas
+                break
+        if dep is None:
+            dep = lst[0][0]
+        try:
+            h, m, s = map(int, dep.split(':'))
+        except ValueError:
+            continue
+        sid = trip_info[tid][1]
+        g = groups.setdefault(key, {'times': {'WD': set(), 'SA': set(), 'SU': set()}})
         for ty, sset in aktiv.items():
             if sid in sset:
                 g['times'][ty].add(f"{h:02d}:{m:02d}")
 
+    pozadovany = {(l, s): d for l, s, d, _ in JR_LINKY}
+    popisky = {(l, s): lab for l, s, _, lab in JR_LINKY}
+
     per_file = {}
     for (line, nm, di), g in groups.items():
+        if pozadovany.get((line, nm)) != di:
+            continue                   # bereme jen požadovaný směr
         per_file.setdefault((line, nm), []).append((di, g))
 
     nove_soubory = {'index.txt', 'svatky.txt'}
     index_lines = []
-    poradi = {(l, s): i for i, (l, s) in enumerate(JR_LINKY)}
+    poradi = {(l, s): i for i, (l, s, _, _) in enumerate(JR_LINKY)}
     for (line, nm), lst in sorted(per_file.items(), key=lambda kv: poradi.get(kv[0], 99)):
         fname = f"{line}_{_jr_slug(nm)}.txt"
         nove_soubory.add(fname)
-        out = [f"# {line}|{nm}", f"# ids={','.join(zastavky_ids.get(nm, []))}"]
+        ids_all = sorted({max(platformy[(line, nm, di)].items(), key=lambda kv: (kv[1], kv[0]))[0]
+                          for di, _ in lst})
+        out = [f"# {line}|{nm}", f"# ids={','.join(ids_all)}"]
         for di, g in sorted(lst):
-            hlavni = max(g['heads'].items(), key=lambda kv: kv[1])[0]
+            hlavni = popisky.get((line, nm), max(heads[(line, nm, di)].items(), key=lambda kv: kv[1])[0])
             for ty in ('WD', 'SA', 'SU'):
                 casy = sorted(g['times'][ty])
                 out.append(f"{di}|{hlavni}|{ty}|" + " ".join(casy))

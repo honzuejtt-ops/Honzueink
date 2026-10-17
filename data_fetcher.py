@@ -993,7 +993,7 @@ def stahni_jizdni_rady():
 # Výstup (eindata/kalendar/kalendar.txt), jeden řádek = jedna událost v daném dni:
 #   RRRR-MM-DD|HH:MM|HH:MM|název|místo|popis
 # Prázdné časy = celodenní událost (nebo pokračování vícedenní akce).
-KALENDAR_HORIZONT_DNI = 45
+KALENDAR_HORIZONT_DNI = 92   # ~3 měsíce dopředu
 
 try:
     from zoneinfo import ZoneInfo
@@ -1310,7 +1310,7 @@ def stahni_kalendar():
                 d += timedelta(days=1)
 
     radky.sort(key=lambda x: (x[0], x[1]))
-    radky = radky[:500]
+    radky = radky[:800]
 
     kal_dir = os.path.join(SD_CESTA, 'kalendar')
     os.makedirs(kal_dir, exist_ok=True)

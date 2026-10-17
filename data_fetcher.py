@@ -947,7 +947,8 @@ def stahni_jizdni_rady():
             continue                   # bereme jen požadovaný směr
         per_file.setdefault((line, nm), []).append((di, g))
 
-    nove_soubory = {'index.txt', 'svatky.txt', 'aktualizace.txt', 'golemio_key.txt'}
+    nove_soubory = {'index.txt', 'svatky.txt', 'aktualizace.txt',
+                    'golemio_key.txt', 'posledni_kontrola.txt'}
     index_lines = []
     poradi = {(l, s): i for i, (l, s, _, _) in enumerate(JR_LINKY)}
     for (line, nm), lst in sorted(per_file.items(), key=lambda kv: poradi.get(kv[0], 99)):

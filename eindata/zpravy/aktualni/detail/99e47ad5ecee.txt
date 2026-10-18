@@ -1,0 +1,7 @@
+Aby mohli humanoidi najít plné využití v oblastech, ve kterých se mají uplatnit, musí se dbát na bezpečnost jejich provozu, s čímž souvisí i schopnost reagovat na nenadálé situace – jako třeba vyhýbání se překážkám nebo pohybujícím se objektům.
+Výzkumníci pod vedením profesora Aarona Amese z Caltechu (Kalifornský technologický institut v USA) využili při testování různé funkce kontrolních bariér i matematická pravidla, která jim pomáhala upravovat pohyby robota podle toho, jaké nebezpečí detekoval.
+V prostředí pasadenské laboratoře testovali reakce robota tím, že na něj házeli míč. Testování probíhalo i venku v běžném prostředí, kde se pohybovali lidé nebo zvířata. V reakci na pohybující se objekty byl pak využit i tzv. LiDAR (laserový radar), který pomáhá skenovat okolí a vzdálenost různých objektů, což robotovi umožňuje reagovat na jejich pohyb a vyhýbat se jim.
+Tlak na vývoj humanoidů
+„Je velký tlak na vývoj humanoidních robotů. Z hlediska pohybu je úžasné, co všechno už dovedou. Pokud ale automatickou součástí nebude i otázka bezpečnosti, ztrácí to celé význam,“ uvedl pro agenturu AP profesor Ames.
+„Realita je taková, že k zajištění bezpečnosti potřebujete matematiku. Nemůžete použít učení k zaručení bezpečnosti, tečka. Matematika je dokonalá a popsatelná. Umožňuje vám poskytovat záruky,“ dodal profesor.
+Funkce kontrolních bariér testovala laboratoř podle Caltechu na dronech, čtyřnohých robotech i stíhačce F-16.

@@ -1,0 +1,1 @@
+Vyšel kancelářský balík OnlyOffice Desktop Editors 10.0. • Drobně zlepšil kompatibilitu s formáty od Microsoftu. • Přepracoval chatbot a otevírá se AI službám skrze MCP.

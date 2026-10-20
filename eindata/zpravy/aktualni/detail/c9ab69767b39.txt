@@ -1,0 +1,38 @@
+Stalo se vám někdy, že vám došlo místo třeba v kořenovém oddílu vaší linuxové instalace? Nebo, že byste chtěli experimentovat s jinou distribucí linuxového systému, ale chyběl vám předem vytvořený oddíl? Mně se to stalo nedávno.
+Protože ZFS používám na svých serverech již mnoho let, hledal jsem na internetu schůdný způsob, jak provést instalaci Linuxu přímo do souborového systému ZFS. Samotné používání ZFS v Debianu je velmi snadné. Stačí si přidat repozitář contrib a doinstalovat následující balíčky:
+sudo apt install linux-headers-$(uname -r)
+sudo apt install zfsutils-linux zfs-dkms
+Tímto způsobem se stáhnou moduly jádra s podporou ZFS a přeloží se pro aktuálně běžící jádro. Co se ale stane, pokud dojde k aktualizaci jádra někdy později? Nic se nerozbije, moduly se znovu přeloží pro aktualizovanou verzi jádra automaticky. Tedy jediné, co zbývá dořešit, je instalace Linuxu přímo na ZFS a bootování přímo ze ZFS. Linuxové instalátory ZFS z licenčních důvodů nepodporují a omezená je i podpora zavaděče GRUB pro ZFS, která neumožňuje plně využít výhod tohoto souborového systému.
+Jako řešení jsem našel projekt ZFSBootMenu. Startování Linuxu ze ZFS řeší vlastním zavaděčem, který je ve skutečnosti minimalistickou instalací Linuxu, která se spouští přímo z oddílu UEFI. Z toho důvodu obsahuje bezproblémovou podporu ZFS. Do vlastního obrazu ZFSBootMenu lze přidat například podporu sítě a SSH serveru. Pomocí ZFSBootMenu lze ZFS nejen startovat, ale i spravovat snapshoty a provádět základní údržbu.
+Instalaci jednotlivých distribucí na ZFS řeší projekt svými podrobnými návody. Jednotlivé instalace systému mohou být samostatné ZFS datasety a ZFSBootMenu mezi nimi umožňuje při startu vybírat. Díky snapshotům tak lze před větší aktualizací vytvořit návratový bod a v případě problémů nastartovat předchozí stav.
+Ruční instalace Debianu a zavaděče ZFSBootMenu
+Návody pro jednotlivé distribuce lze nalézt v levém menu domovské stránky ZFSBootMenu včetně návodu pro Debian.
+První krok je stažení živé distribuce Debianu, která musí být čerstvá, aby k použitému jádru bylo možné přeložit podporu ZFS. Po spuštění této živé distribuce z USB disku doporučuji jako první nainstalovat balíček openssh-server, abyste instalaci mohli provádět na dálku z počítače, na kterém jste zvyklí pracovat.
+apt update
+apt install openssh-server
+Přihlásíte se jako uživatel user, heslo živé distribuce je live. Poté se můžete stát rootem například příkazem sudo su. Dobrý nápad také může být v nastavení zakázat živému systému úsporný režim, aby vám během kopírování nebo instalace neusnul.
+V dalším kroku si doinstalujete podporu pro ZFS v Linuxu a potřebné nástroje. Rozdělíte disk, vytvoříte oddíl UEFI pro bootování, vytvoříte ZFS pool a nastavíte heslo pro šifrování a ZFS properties. Samotnou instalaci Debianu provedete nástrojem  debootstrap.
+Následně provedete chroot, kde změníte hostname a další identifikátory, nastavíte rootovské heslo, doinstalujete potřebné balíčky. Dodatečné operace, které jsem provedl nad rámec návodu, uvádím níže:
+apt install task-kde-desktop i3 firmware-linux firmware-misc-nonfree xserver-xorg-video-all mc vim screen htop openssh-server
+# věci pro wifi
+apt install firmware-iwlwifi wireless-tools wpasupplicant
+adduser user
+usermod -aG sudo user
+systemctl set-default graphical.target
+Instalace EFI aplikace ZFSBootMenu se provádí pouhým stažením z webu na patřičné místo do oddílu UEFI. Aby vám disk bootoval na všech počítačích a byl tedy přenositelný, přidejte navíc příkaz:
+cp /boot/efi/EFI/ZBM/VMLINUZ.EFI \
+/boot/efi/EFI/BOOT/BOOTX64.EFI
+Pokud jsou na disku i jiné operační systémy, třeba Windows, je třeba zkontrolovat a zvážit jestli soubor /boot/efi/EFI/BOOT/BOOTX64.EFI již existuje a jestli jej opravdu chcete nahradit zavaděčem ZFSBootMenu. Řešením může původní soubor jen přejmenovat, aby byla změna vratná.
+Nyní bude instalace bootovat i na počítačích, na kterých není uložen odkaz na VMLINUZ.EFI v UEFI NVRAM. Bohužel hlavní návod to neobsahuje, je to vysvětleno jako samostatné téma Portable ZFSBootMenu. Na možnost přesunu disku do jiného počítače, nebo ztracení obsahu NVRAM, je dobré se preventivně připravit.
+Výhody ZFS
+Nyní vás nejspíše napadá, že ta ruční instalace podle návodu je příliš zdlouhavá, a tak bude lepší se ZFS a ZFSBootMenu úplně vyhnout. Chci vám proto nabídnout jiný pohled na věc. Část příkazů v návodu je práce se ZFS, kterou je stejně dobré se naučit. Zbývající část, například operace v chrootu, by se vám mohla hodit, pokud se něco pokazí i v případech, že ZFS vůbec nepoužíváte.
+Umět instalaci či přesun systému provádět ručně se též hodí pro masové nasazení a například klonování a zálohování disků běžících systémů. Je tedy možné, že se ona časová investice bohatě vrátí. Pro jistotu chci připomenout jednotlivé podstatné výhody ZFS oproti nejčastěji používanému souborovému systému na Linuxu, tedy ext4.
+Při instalaci nemusím disk předem rozdělit na oddíly, každý ZFS dataset si bere tolik místa, kolik potřebuje ze svého jediného oddílu a datasety je možné libovolně vytvářet a mazat. Nemůže tak nastat později problém, že se zjistí, že jsem disk rozdělil nevhodně a tak někde dochází místo, nebo oddíl pro další možnou instalaci chybí.
+ZFS podporuje kompresi a lze očekávat úsporu asi třetinu místa na disku, tedy pokud většinu místa na disku nezabírají již jednou komprimované soubory jako jsou filmy, obrázky či zálohy.
+Mohu provést snapshot, který pak mohu zálohovat, mohu si z něj vzít třeba již smazaný soubor, nebo se „vrátit v čase“. Pokud bych například nebyl spokojen s novou verzí Debianu, např. kvůli novým potížím s hardwarem, mohu se vrátit ke své starší instalaci a to včetně původního domovského adresáře.
+Mohu provádět inkrementální zálohy. Tedy přenáší se jen změny od poslední zálohy, nikoli celá záloha. Tyto zálohy je možné dělat velmi rychle a efektivně. Nová záloha pak může trvat třeba jen několik vteřin.
+ZFS podporuje nativní šifrování datasetů. U šifrované instalace si ZFSBootMenu vyžádá heslo k odemčení před spuštěním. Lze provádět RAW zálohy (parametr -R nebo -w), v zašifrované podobě. V tomto případě je obsah záloh chráněn stejným šifrovacím klíčem jako hlavní souborový systém a pokud by se někdo nepovolaný dostal k záloze, data si nedokáže přečíst.
+ZFS má stabilní výkon, při dobrém nastavení a běžném provozu je plně srovnatelný s ostatními moderními souborovými systémy. ZFS lze doporučit i na servery, zvládne velkou zátěž, například od vysoce zatížených databázových systémů. Co se naučíte na svém pracovním počítači, můžete tak snadno použít i na serverech.
+Možné je použít SSD disk jen pro cache, magnetický disk pro samotná data a tím podstatně zvýšit rychlost práce s magnetickým diskem. ZFS také podporuje RAID a kontrolu integrity dat (scrub).
+Příště budeme klonovat
+V příštím článku se podíváme na to, jak naklonovat data z disku se ZFS a jak dostat Debian na disk souběžně s Windows.

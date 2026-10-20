@@ -1,3 +1,102 @@
+|T|Evropští operátoři se spojují, chtějí zdejší verzi Starlinku. Má přinést nezávislost na USA|D|20.10. 16:38|P|Čtyři největší evropští telekomunikační operátoři chtějí společně nabídnout mobilní spojení přes satelity. Deutsche Telekom (mateřská společnost v Čes...|X|Čtyři největší evropští telekomunikační operátoři chtějí společně nabídnout mobilní spojení přes satelity. Deutsche Telekom (mateřská společnost v Česku působícího T-Mobile), Orange, Telefónica a Vodafone podepsaly předběžnou dohodu o společné nabídce evropských frekvencí pro přímé spojení mobilů se satelity. Cílem je posílit evropskou technologickou nezávislost, vzniknout by mohla evropská alternativa ke Starlinku Elona Muska.
+Operátoři chtějí vybudovat pozemní infrastrukturu, samotné satelity má ale dodat partner, jehož výběr teprve proběhne. Projekt má zajistit pokrytí i v oblastech, kam běžné mobilní sítě nedosáhnou, a posílit odolnost evropských komunikačních sítí.
+„Iniciativa podporuje ambici Evropské komise posílit evropskou suverenitu, bezpečnost a odolnost kritické infrastruktury pro konektivitu,“ uvádějí firmy ve společném oznámení. Zároveň chtějí umožnit všem mobilním operátorům v Evropě nabízet satelitní služby (D2D) podle jejich slov za otevřených a nediskriminačních podmínek. Dohoda neuvádí žádné investice ani harmonogram.
+Ve hře je pásmo 2 GHz, které nyní využívají americké společnosti Viasat a EchoStar. Jejich licence vyprší příští rok. Evropská komise v květnu navrhla vyhradit toto pásmo evropským hráčům. Proti tomu se ohradily Spojené státy. Americký velvyslanec při EU minulý týden pohrozil evropským firmám tvrdou odvetou, pokud Unie od návrhu neustoupí. Plán kritizovala také společnost SpaceX s tím, že by mohl zhoršit satelitní připojení na Ukrajině, popisuje Financial Times. Prohlášení operátoři přitom zveřejňují krátce po problémech s připojením Starlinku na Ukrajině.|E|
+|T|Druhotné softwarové licence. Kdo by nechtěl legální Windows za stovku…|D|20.10. 15:45|P|Koupě originálního programového vybavení přímo od výrobce není jedinou možností, jak sehnat pro váš počítač legální software. Další možností je koupit...|X|Koupě originálního programového vybavení přímo od výrobce není jedinou možností, jak sehnat pro váš počítač legální software. Další možností je koupit licenci od toho, kdo ji už nepotřebuje nebo nevyužije. Můžete ušetřit nemalou částku, dávejte si ale pozor na podvodníky.|E|
+|T|Disney+ a 30 nejoblíbenějších filmů a seriálů v říjnu 2026. Na co se Češi nejvíc dívají|D|20.10. 15:15|P|Tyto filmy a seriály jsou teď na českém Disney+ nejoblíbenější. Nerozlišujeme žánr, stáří ani hodnocení na filmových webech. Jde o souhrnnou oblíbenos...|X|Tyto filmy a seriály jsou teď na českém Disney+ nejoblíbenější. Nerozlišujeme žánr, stáří ani hodnocení na filmových webech. Jde o souhrnnou oblíbenost za poslední týdny, kterou zjišťuje web FlixPatrol.|E|
+|T|Certifikační autoritě eMudhra unikly klíče, prohlížeče urychleně revokují|D|20.10. 15:00|P|Došlo k úniku soukromých klíčů osmi mezilehlých certifikátů certifikační autority eMudhra. Důvěřují jim kořenové programy Mozilly, Microsoftu, Apple a...|X|Co přesně uniklo?
+Certifikační autorita eMudhra oznámila kompromitaci soukromých klíčů osmi mezilehlých certifikátů. Jejich zneužití by mohlo umožnit vydávat podvodné certifikáty pro libovolné domény. Mozilla se o incidentu dozvěděla 17. října.
+Téhož dne Firefox a Chrome zablokovaly dotčené certifikáty ve svých úložištích pomocí revokačních mechanismů. Další platformy následně také začaly blokovat certifikáty nebo aktualizovat svá úložiště důvěryhodných certifikátů.
+Jak to víme?
+Zpráva zveřejněná k incidentu uvádí, že kompromitace byla útočníkem doložena tak, že podepsal stejnou zprávu soukromým klíčem všech osmi autorit. Ve zprávě stojí: We have a problem here – Wayne
+. Tento podepsaný důkaz byl zaslán správcům úložišť důvěryhodných kořenových certifikátů.
+Kdy se informace objevila?
+Mozilla uvedla, že se o problému dozvěděla v sobotu 17. října v 20:06 UTC od člena bezpečnostní komunity. Šlo o soukromé klíče spojené s osmi mezilehlými certifikáty eMudhra. Tyto klíče by mohly umožnit vystavit podvodné HTTPS certifikáty pro cizí weby.
+Mozilla následně zablokovala dotčené certifikáty ve Firefoxu prostřednictvím seznamu OneCRL, a to bez nutnosti, aby uživatelé instalovali aktualizaci nebo restartovali prohlížeč. Informace pak byla veřejnosti oznámena 20. října v 15 hodin středoevropského času.
+Jak reagují správci?
+Kompromitované certifikáty jsou tedy již od 17. října blokovány ve Firefoxu a Chrome, od 19. října pak na zařízeních firmy Apple a od 20. října v produktech Microsoftu.
+Mozilla 20. října oznámila také změnu v databázi důvěryhodných certifikátů NSS, která odstraňuje kořenový certifikát použitý k podpisu dotčených mezilehlých autorit. Tento krok má pomoci uživatelům a systémům, které nemají ochranu srovnatelnou s OneCRL. Může ale způsobit nedostupnost některých serverů, dokud nepřejdou na nové certifikační řetězce. Chrome oznámil obdobný plán odstranit příslušný kořen z Chrome Root Store.
+Mozilla uvedla, že nepředpokládá dopad na další certifikační autority. Vyšetřování příčiny kompromitace a koordinace s dalšími provozovateli kořenových úložišť stále pokračují.
+O jaké certifikáty šlo?
+Ne všech osm certifikátů sloužilo k vydávání HTTPS certifikátů. Chrome uvedl, že z osmi kompromitovaných podřízených autorit bylo šest určeno k vydávání TLS certifikátů a dvě k podepisování kódu.
+Byly klíče zneužity?
+Podle vyjádření tvůrců prohlížeče Chrome nebyly před zablokováním v Certificate Transparency objeveny žádné certifikáty, které by byly vystaveny kompromitovanými autoritami. Prohlížeče dnes vynucující dodání důkazu o zveřejnění všech důvěryhodných certifikátů. Pokud by si tedy útočník podepsal certifikáty k doménám tajně, stejně by je prohlížeče neuznaly.
+Jakého softwaru se problém týká?
+Problém se dotýká veškerých nástrojů, které pracují s certifikáty a ověřují jejich platnost včetně řetězce důvěry. Patří sem zejména webové prohlížeče, operační systémy a jejich úložiště důvěryhodných certifikátů, e-mailoví klienti a klienti pro VPN, bezpečnostní zařízení, serverový software i vývojářské a síťové knihovny či nejrůznější utility.
+Co mohou dělat uživatelé?
+Běžným uživatelům je doporučováno aktualizovat prohlížeč i operační systém na nejnovější verzi. Problém se může týkat také aplikací a vývojářských balíčků, které používají vlastní úložiště certifikátů. U některých platforem byly v době zveřejnění stránky aktualizace stále označeny jako čekající.
+Můžete si otestovat svůj prohlížeč na webu emudhra.we-have-a-problem.com, kde se vám přehledně zobrazí informace z pokusu o připojení k sadě serverů využívajících problematické certifikáty. Všechny výsledky by se měly zobrazit zeleně, což značí selhání připojení k těmto serverům. Po rozkliknutí můžete vyzkoušet, že váš prohlížeč nahlásil certifikát jako revokovaný a tudíž nedůvěryhodný.
+Co mají dělat vývojáři?
+Aktualizace už vydaly některé projekty vytvářející další software, který si spravuje vlastní úložiště důvěryhodných kořenových certifikátů. Následující tabulka shrnuje opravené verze s vyřazenými mezilehlými certifikáty.
+Co mohou dělat správci?
+Můžete jednoduše vyzkoušet, jak je na tom váš systém. Stačí kontaktovat některý z testovacích webů. Pokud vaše distribuce ještě nedostala aktualizaci, bez řečí se připojíte:
+$ curl https://dv-g3b-emudhra.we-have-a-problem.com/
+Your client successfully connected to the site. That's bad!
+Znamená to, že ještě nemáte v systému aktuální balíček ca-certificates. Pokud vám jej distributor ještě v aktualizaci nenabízí, můžete mezilehlé certifikáty odstranit ze systému ručně. Pracujte jako uživatel root.
+V Debianu a Ubuntu:
+# sed -i \
+-e 's|^mozilla/emSign_ECC_Root_CA_-_G3.crt|!&|' \
+-e 's|^mozilla/Comodo_AAA_Services_root.crt|!&|' \
+/etc/ca-certificates.conf && update-ca-certificates
+V Alpine Linuxu:
+# apk add ca-certificates &&
+# sed -i -e 's|^mozilla/emSign_ECC_Root_CA_-_G3.crt|!&|' \
+/etc/ca-certificates.conf && update-ca-certificates
+V distribucích Fedora, RHEL, CentOS Stream, Rocky Linux, AlmaLinux a Amazon Linux 2023:
+# d=/etc/pki/ca-trust/source/blocklist; [ -d $d ] || d=/etc/pki/ca-trust/source/blacklist
+# trust extract --overwrite --format=pem-bundle \
+--filter='pkcs11:object=Comodo%20AAA%20Services%20root;type=cert' \
+$d/Comodo_AAA_Services_root.pem &&
+# trust extract --overwrite --format=pem-bundle \
+--filter='pkcs11:object=emSign%20ECC%20Root%20CA%20-%20G3;type=cert' \
+$d/emSign_ECC_Root_CA_-_G3.pem &&
+# update-ca-trust
+V openSUSE a SLES:
+# d=/etc/pki/trust/blocklist; [ -d $d ] || d=/etc/pki/trust/blacklist
+# trust extract --format=pem-bundle \
+--filter='pkcs11:object=Comodo%20AAA%20Services%20root;type=cert' \
+$d/Comodo_AAA_Services_root.pem &&
+# trust extract --format=pem-bundle \
+--filter='pkcs11:object=emSign%20ECC%20Root%20CA%20-%20G3;type=cert' \
+$d/emSign_ECC_Root_CA_-_G3.pem &&
+# update-ca-certificates
+V Arch Linuxu:
+# trust extract --format=pem-bundle \
+--filter='pkcs11:object=emSign%20ECC%20Root%20CA%20-%20G3;type=cert' \
+/etc/ca-certificates/trust-source/blocklist/emSign_ECC_Root_CA_-_G3.pem &&
+# update-ca-trust
+V NixOS přidejte do konfigurace:
+security.pki.caCertificateBlacklist = [
+"Comodo AAA Services root"
+"emSign ECC Root CA - G3"
+"emSign Root CA - C1"
+"emSign ECC Root CA - C3"
+Výsledkem by následně měla být chyba při pokusu o načtení obsahu testovací stránky:
+# curl https://dv-g3b-emudhra.we-have-a-problem.com/
+curl: (60) SSL certificate problem: unable to get local issuer certificate
+More details here: https://curl.se/docs/sslcerts.html
+curl failed to verify the legitimacy of the server and therefore could not
+establish a secure connection to it. To learn more about this situation and
+how to fix it, please visit the webpage mentioned above.
+(Upozornil Ondřej Caletka.)|E|
+|T|Sbírali jste v létě na Mapy.com body v soutěži Bushman? Zajímavá místa na výlety tam zůstala|D|20.10. 14:45|P|Seznam.cz uspořádal ve spolupráci s obchodem Bushman prodávajícím outdoorové zboží soutěž, kde lidé museli navštěvovat vyznačená místa na mapě, čím zí...|X|Seznam.cz uspořádal ve spolupráci s obchodem Bushman prodávajícím outdoorové zboží soutěž, kde lidé museli navštěvovat vyznačená místa na mapě, čím získávali body. A kdo jich nasbíral nejvíce, mohl vyhrát určité ceny. Pro některé uživatele ale výhra nebyla tím primárním důvodem, proč se o soutěž ...|E|
+|T|Revolut má rozsáhlý výpadek. Nefungují platby ani převody, problém zřejmě začal u Googlu|D|20.10. 14:40|P|Revolut má od rána rozsáhlý výpadek. Klienti nemohou platit kartou, posílat peníze ani vybírat hotovost z bankomatů. Problémy zřejmě souvisejí s výpad...|X|Revolut má od rána rozsáhlý výpadek. Klienti nemohou platit kartou, posílat peníze ani vybírat hotovost z bankomatů. Problémy zřejmě souvisejí s výpadkem cloudových služeb Googlu v Londýně.
+Stavová stránka Revolutu v úterý odpoledne eviduje 30 služeb, které hodnotí jako částečně nedostupné. Vedle plateb, převodů a výběrů hotovosti se potíže týkají také přihlašování do aplikace, dobíjení karet, směny měn, obchodování s akciemi nebo zákaznické podpory. Problémy hlásí také firemní zákazníci Revolutu.
+„Můžeme potvrdit, že všechny peníze a data našich zákazníků jsou v bezpečí,“ uvádí Revolut na síti X. Firma podle svého vyjádření na odstranění problému pracuje od rána, nové údaje ale neposkytla.
+Výpadek Revolutu časově souvisí s problémy Google Cloud v londýnském regionu europe-west2, píše Reuters. Google zde hlásí zvýšenou chybovost a výpadky síťového připojení. Uvedl, že za incidentem stojí událost související s napájením. Podle zdroje agentury Reuters spolu problémy Googlu a Revolutu souvisejí.
+Výpadek zasahuje i další firmy. Potíže hlásí britské banky Lloyds a HSBC nebo doručovací společnosti Royal Mail a DPD.|E|
+|T|Starší hodinky Garmin dostaly funkci z nových modelů, ta jim ale zkrátila výdrž na polovinu. Takhle ji vypnete.|D|20.10. 13:59|P|Některé modely nově umí aktivovat hlasové ovládání povelem „OK Garmin“, režie je ale enormní. U některých se navíc funkce po aktualizaci zapíná bez vě...|X|Zářijové aktualizace modelů Fénix 8, Venu 4 a dalších přinesly možnost vyvolat hlasové ovládání bez stisknutí tlačítka. Hodinky čekají na vyslovení fráze „OK Garmin“ a následně poslouchají povel. Jak ale ukazují zkušenosti uživatelů na diskuzních fórech, funkce výrazně zkracuje výdrž na baterii. V některých případech se může jednat až o 50 %.
+Z patnácti dnů devět
+Jeden z majitelů modelu Forerunner 970 popsal zkrácení výdrže z původních 15 dnů na současných 9 při aktivní funkci. Když ji následně deaktivoval i s novou verzí systému se hodinky vrátily zpět k patnáctidenní výdrži na jedno nabití.
+Podobné zkušenosti mají uživatelé Fenixu 8. U varianty s 51mm pouzdrem a displejem AMOLED se po aktualizaci výdrž zkrátila z původních 16 na pouhých 8 dnů. Další majitel popsal pokles z 21 na 12 dnů. V některých těchto případech uživatelé otestovali reálnou výdrž, v jiných do diskuzí posílali pouze odhady výdrže, které Garmin na hodinkách nabízí. Je však neoddiskutovatelné, že k rapidnímu poklesu výdrže opravdu došlo.
+Nevyžádaná funkce
+Část uživatelů upozorňuje také na automatické zapnutí funkce po instalaci aktualizace (což se netýká všech podporovaných modelů). Pokud tedy majitel některého z podporovaných modelů začne zaznamenávat zkrácenou výdrž a zároveň neví o nové funkci, může nabýt dojmu závady či bugu.
+Pokud patříte k uživatelům, kterým se výdrž Garminů zkrátila, zamiřte do Nastavení hodinek > Systém > Hlas > OK Garmin. Tady lze funkci nepřetržitého naslouchání vypnout. Pokud se odhad nevrátí k dřívější hodnotě, je vhodné zkontrolovat také samostatnou hlasovou aktivaci Phone Assistant. Některým uživatelům pomohlo až vypnutí obou možností. Je třeba dodat, že deaktivací této funkce o hlasové ovládání nepřijdete, pouze jej bude třeba vyvolat stisknutím tlačítka.|E|
+|T|Nové využití pro vysloužilé lopatky z větrných turbín. Pomeleme je do betonu jako výztuž|D|20.10. 13:45|P|Staré větrné lopatky nahradí ocelové armatury v betonu a písek cementu • Tento ekologický postup dokáže výrazně snížit emise při vyztužování betonu • ...|X|Staré větrné lopatky nahradí ocelové armatury v betonu a písek cementu • Tento ekologický postup dokáže výrazně snížit emise při vyztužování betonu • Praktické testy i odborné studie potvrdily vysokou pevnost nových konstrukcí|E|
+|T|Garmin ukázal ultimátní cyklopočítač. Edge 1060 poslouchá na slovo, přidává fyzická tlačítka a nahradí powerbanku|D|20.10. 13:15|P||X||E|
+|T|Dotykový MacBook Pro, rychlejší iMac a iPad mini s OLEDem. Apple příští týden odhalí hromadu novinek|D|20.10. 12:45|P|Už to není tajemství. Apple a jeho marketingový ředitel Greg Joswiak lákají na další akci, která se uskuteční ve středu 28. října v 19:00 našeho času....|X|Už to není tajemství. Apple a jeho marketingový ředitel Greg Joswiak lákají na další akci, která se uskuteční ve středu 28. října v 19:00 našeho času. Pozvánka nese slogan Pro and tell a provází ji animace s firemním logem kresleným štětcem či prstem. Ono kreslení a slovo Pro bezpochyby odkazují k ...|E|
+|T|Revolut má rozsáhlý výpadek. Lidé nemohou zaplatit ani zjistit stav účtu|D|20.10. 12:00|P|Britská fintechová služba nabízející bankovní služby více než 70 milionů lidí v téměř padesáti zemích světa včetně ČR má velké problémy. Revolut od rá...|X|Britská fintechová služba nabízející bankovní služby více než 70 milionů lidí v téměř padesáti zemích světa včetně ČR má velké problémy. Revolut od rána hlásí v aplikaci „dočasné potíže“, přičemž na stavové stránce na webu ukazuje částečnou nedostupnost 30 různých služeb. Řadě lidí tak nefungují ...|E|
+|T|Plná paměť v mobilu. Proč mazání fotek nepomáhá a co vám tajně zabírá místo|D|20.10. 11:45|P|Místo mazání fotografií vyčistěte mezipaměť a zapomenuté soubory • Nejvíce paměti žerou sociální sítě, offline přehrávače a náročné hry • V nastavení ...|X|Místo mazání fotografií vyčistěte mezipaměť a zapomenuté soubory • Nejvíce paměti žerou sociální sítě, offline přehrávače a náročné hry • V nastavení aplikací smažte zbytečná data a v Galerii vysypte koš|E|
 |T|Zájem o iPhone Duo překvapi i samotný Apple. České e-shopy mají pořadníky, v Apple Store nejdřív v lednu|D|20.10. 11:09|P|Krátce po zahájení předobjednávek iPhonu Duo se doba dodání prodloužila až na leden. České e-shopy sice zatím ukazují páteční naskladnění, odesílat al...|X|Skládací iPhone Duo se začne prodávat tento pátek, zájemci bez předobjednávky budou mít ale jen malou šanci jej získat. Oficiální Apple Store aktuálně v Česku ukazuje lhůtu dodání až na konec ledna, stejně jako ve většině dalších zemí. E-shopy sice aktuálně počítají s pátečním zahájením prodejů, dají se ale předpokládat jen velmi omezené zásoby.
 Zájem překvapil i Apple
 Technologičtí komentátoři či youtubeři sice na první skládací iPhone pěli chválu, upozorňovali ale na vysokou cenu. V USA vyjde nejlevnější varianta na 1 999 dolarů, u nás je to 55 000 Kč a nebylo tak jisté, zda budou zájemci ochotni takto vysokou částku zaplatit. Ukázalo se ale, že minimálně v předobjednávkách zájem překvapil i Apple. Pro Financial Times krátce reagoval s tím, že poptávka je naprosto mimořádná a usilovně pracuje na nových dodávkách iPhonu Duo.
@@ -6,6 +105,16 @@ Na druhé straně je ale třeba dodat, že nemáme informace o tom, kolik měl A
 Optimistické e-shopy v Česku
 Velké české e-shopy zatím ukazují původní datum naskladnění 23. října. Pouze Datart uvádí, že iPhone Duo bude k dispozici až 20. ledna. Reálné dodání se ale bude lišit a v pátek si jej bude moci vyzvednout jen hrstka zájemců. Většina obchodů bude zákazníky odbavovat podle pořadníku, na což ostatně upozorňuje například Alza: „Z důvodu vysokého zájmu prosíme o trpělivost, zatímco pracujeme na naskladnění. Objednávky jsou odbavovány dle pořadníku, z něhož budete vyřazen, pokud objednávku zrušíte. Naše zákaznická podpora nemá žádné další informace o termínu naskladnění.“
 České e-shopy ani operátoři na pátek neplánují tradiční zahájení prodejů, při kterém by bylo možné iPhone zakoupit přímo na místě.|E|
+|T|Zájem o iPhone Duo překvapil i samotný Apple. České e-shopy mají pořadníky, v Apple Store nejdřív v lednu|D|20.10. 11:09|P|Krátce po zahájení předobjednávek iPhonu Duo se doba dodání prodloužila až na leden. České e-shopy sice zatím ukazují páteční naskladnění, odesílat al...|X|Skládací iPhone Duo se začne prodávat tento pátek, zájemci bez předobjednávky budou mít ale jen malou šanci jej získat. Oficiální Apple Store aktuálně v Česku ukazuje lhůtu dodání až na konec ledna, stejně jako ve většině dalších zemí. E-shopy sice aktuálně počítají s pátečním zahájením prodejů, dají se ale předpokládat jen velmi omezené zásoby.
+Zájem překvapil i Apple
+Technologičtí komentátoři či youtubeři sice na první skládací iPhone pěli chválu, upozorňovali ale na vysokou cenu. V USA vyjde nejlevnější varianta na 1 999 dolarů, u nás je to 55 000 Kč a nebylo tak jisté, zda budou zájemci ochotni takto vysokou částku zaplatit. Ukázalo se ale, že minimálně v předobjednávkách zájem překvapil i Apple. Pro Financial Times krátce reagoval s tím, že poptávka je naprosto mimořádná a usilovně pracuje na nových dodávkách iPhonu Duo.
+Ve Spojených státech začaly předobjednávky ráno v 5:00 pacifického času a během několika minut se začal rychle posouvat termín dodání až na současný leden. Mezitím uživatelé zaznamenávali výpadky aplikace Apple Store a spolehlivější byly objednávky přes web. Zajímavostí je, že zájem je enormní nejen o základní 256GB verzi, ale také o vyšší s kapacitami 512 GB, 1 TB a 2 TB. Nejdražší verze vyjde na 90 990 Kč.
+Na druhé straně je ale třeba dodat, že nemáme informace o tom, kolik měl Apple na start prodejů iPhonů přichystáno. V průběhu času se objevovaly zprávy o komplikacích při výrobě a jejím zpoždění.
+iPhone Duo si můžete koupit například zde.
+Optimistické e-shopy v Česku
+Velké české e-shopy zatím ukazují původní datum naskladnění 23. října. Pouze Datart uvádí, že iPhone Duo bude k dispozici až 20. ledna. Reálné dodání se ale bude lišit a v pátek si jej bude moci vyzvednout jen hrstka zájemců. Většina obchodů bude zákazníky odbavovat podle pořadníku, na což ostatně upozorňuje například Alza: „Z důvodu vysokého zájmu prosíme o trpělivost, zatímco pracujeme na naskladnění. Objednávky jsou odbavovány dle pořadníku, z něhož budete vyřazen, pokud objednávku zrušíte. Naše zákaznická podpora nemá žádné další informace o termínu naskladnění.“
+České e-shopy ani operátoři na pátek neplánují tradiční zahájení prodejů, při kterém by bylo možné iPhone zakoupit přímo na místě.
+Tento text obsahuje affiliate odkazy. Pokud se přes tyto odkazy na vybraných službách zaregistrujete, případně něco nakoupíte, získá z toho redakce malou provizi sloužící pro zajištění našeho fungování. Detaily o affiliate programech najdete zde.|E|
 |T|Spotify zpřísňuje sdílení rodinných tarifů. Lidé budou muset prokázat, že žijí na stejném místě|D|20.10. 10:45|P|Největší placená streamovací služba už roky bojuje se zneužíváním rodinného tarifu. Ten je určen jen členům jedné domácnosti, ale ve velkém jej lidé s...|X|Největší placená streamovací služba už roky bojuje se zneužíváním rodinného tarifu. Ten je určen jen členům jedné domácnosti, ale ve velkém jej lidé sdílejí, i když spolu nebydlí. V minulosti firma zvažovala, že bude uživatele hlídat pravidelným sledováním polohy pomocí GPS, ale nakonec od toho ...|E|
 |T|Stát hledá šéfa pro AI. „Otevřela se nejzajímavější AI pozice v Česku,“ láká vládní zmocněnec|D|20.10. 10:05|P|Česko hledá člověka, který pomůže dostat umělou inteligenci z pilotních projektů do běžného provozu napříč veřejnou správou. Státní podnik NAKIT vypsa...|X|Česko hledá člověka, který pomůže dostat umělou inteligenci z pilotních projektů do běžného provozu napříč veřejnou správou. Státní podnik NAKIT vypsal výběrové řízení na pozici Chief AI Officer, která kombinuje hluboké technické znalosti s řízením týmů, rozpočtů a spolupráce mezi institucemi.
 „Otevřela se nejzajímavější AI pozice v Česku,“ láká Lukáš Kačena, vládní zmocněnec pro AI. „Hledá se člověk, co umí vysvětlit vLLM, inference nebo data lineage. Zároveň ale uřídí hned několik úřadů,“ uvádí. Budoucí šéf má podle něj propojit práci jednotlivých institucí, budovat společné AI nástroje a rozšířit řešení, která zatím fungují jen v menších projektech.

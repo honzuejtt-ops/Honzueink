@@ -1,0 +1,75 @@
+Co přesně uniklo?
+Certifikační autorita eMudhra oznámila kompromitaci soukromých klíčů osmi mezilehlých certifikátů. Jejich zneužití by mohlo umožnit vydávat podvodné certifikáty pro libovolné domény. Mozilla se o incidentu dozvěděla 17. října.
+Téhož dne Firefox a Chrome zablokovaly dotčené certifikáty ve svých úložištích pomocí revokačních mechanismů. Další platformy následně také začaly blokovat certifikáty nebo aktualizovat svá úložiště důvěryhodných certifikátů.
+Jak to víme?
+Zpráva zveřejněná k incidentu uvádí, že kompromitace byla útočníkem doložena tak, že podepsal stejnou zprávu soukromým klíčem všech osmi autorit. Ve zprávě stojí: We have a problem here – Wayne
+. Tento podepsaný důkaz byl zaslán správcům úložišť důvěryhodných kořenových certifikátů.
+Kdy se informace objevila?
+Mozilla uvedla, že se o problému dozvěděla v sobotu 17. října v 20:06 UTC od člena bezpečnostní komunity. Šlo o soukromé klíče spojené s osmi mezilehlými certifikáty eMudhra. Tyto klíče by mohly umožnit vystavit podvodné HTTPS certifikáty pro cizí weby.
+Mozilla následně zablokovala dotčené certifikáty ve Firefoxu prostřednictvím seznamu OneCRL, a to bez nutnosti, aby uživatelé instalovali aktualizaci nebo restartovali prohlížeč. Informace pak byla veřejnosti oznámena 20. října v 15 hodin středoevropského času.
+Jak reagují správci?
+Kompromitované certifikáty jsou tedy již od 17. října blokovány ve Firefoxu a Chrome, od 19. října pak na zařízeních firmy Apple a od 20. října v produktech Microsoftu.
+Mozilla 20. října oznámila také změnu v databázi důvěryhodných certifikátů NSS, která odstraňuje kořenový certifikát použitý k podpisu dotčených mezilehlých autorit. Tento krok má pomoci uživatelům a systémům, které nemají ochranu srovnatelnou s OneCRL. Může ale způsobit nedostupnost některých serverů, dokud nepřejdou na nové certifikační řetězce. Chrome oznámil obdobný plán odstranit příslušný kořen z Chrome Root Store.
+Mozilla uvedla, že nepředpokládá dopad na další certifikační autority. Vyšetřování příčiny kompromitace a koordinace s dalšími provozovateli kořenových úložišť stále pokračují.
+O jaké certifikáty šlo?
+Ne všech osm certifikátů sloužilo k vydávání HTTPS certifikátů. Chrome uvedl, že z osmi kompromitovaných podřízených autorit bylo šest určeno k vydávání TLS certifikátů a dvě k podepisování kódu.
+Byly klíče zneužity?
+Podle vyjádření tvůrců prohlížeče Chrome nebyly před zablokováním v Certificate Transparency objeveny žádné certifikáty, které by byly vystaveny kompromitovanými autoritami. Prohlížeče dnes vynucující dodání důkazu o zveřejnění všech důvěryhodných certifikátů. Pokud by si tedy útočník podepsal certifikáty k doménám tajně, stejně by je prohlížeče neuznaly.
+Jakého softwaru se problém týká?
+Problém se dotýká veškerých nástrojů, které pracují s certifikáty a ověřují jejich platnost včetně řetězce důvěry. Patří sem zejména webové prohlížeče, operační systémy a jejich úložiště důvěryhodných certifikátů, e-mailoví klienti a klienti pro VPN, bezpečnostní zařízení, serverový software i vývojářské a síťové knihovny či nejrůznější utility.
+Co mohou dělat uživatelé?
+Běžným uživatelům je doporučováno aktualizovat prohlížeč i operační systém na nejnovější verzi. Problém se může týkat také aplikací a vývojářských balíčků, které používají vlastní úložiště certifikátů. U některých platforem byly v době zveřejnění stránky aktualizace stále označeny jako čekající.
+Můžete si otestovat svůj prohlížeč na webu emudhra.we-have-a-problem.com, kde se vám přehledně zobrazí informace z pokusu o připojení k sadě serverů využívajících problematické certifikáty. Všechny výsledky by se měly zobrazit zeleně, což značí selhání připojení k těmto serverům. Po rozkliknutí můžete vyzkoušet, že váš prohlížeč nahlásil certifikát jako revokovaný a tudíž nedůvěryhodný.
+Co mají dělat vývojáři?
+Aktualizace už vydaly některé projekty vytvářející další software, který si spravuje vlastní úložiště důvěryhodných kořenových certifikátů. Následující tabulka shrnuje opravené verze s vyřazenými mezilehlými certifikáty.
+Co mohou dělat správci?
+Můžete jednoduše vyzkoušet, jak je na tom váš systém. Stačí kontaktovat některý z testovacích webů. Pokud vaše distribuce ještě nedostala aktualizaci, bez řečí se připojíte:
+$ curl https://dv-g3b-emudhra.we-have-a-problem.com/
+Your client successfully connected to the site. That's bad!
+Znamená to, že ještě nemáte v systému aktuální balíček ca-certificates. Pokud vám jej distributor ještě v aktualizaci nenabízí, můžete mezilehlé certifikáty odstranit ze systému ručně. Pracujte jako uživatel root.
+V Debianu a Ubuntu:
+# sed -i \
+-e 's|^mozilla/emSign_ECC_Root_CA_-_G3.crt|!&|' \
+-e 's|^mozilla/Comodo_AAA_Services_root.crt|!&|' \
+/etc/ca-certificates.conf && update-ca-certificates
+V Alpine Linuxu:
+# apk add ca-certificates &&
+# sed -i -e 's|^mozilla/emSign_ECC_Root_CA_-_G3.crt|!&|' \
+/etc/ca-certificates.conf && update-ca-certificates
+V distribucích Fedora, RHEL, CentOS Stream, Rocky Linux, AlmaLinux a Amazon Linux 2023:
+# d=/etc/pki/ca-trust/source/blocklist; [ -d $d ] || d=/etc/pki/ca-trust/source/blacklist
+# trust extract --overwrite --format=pem-bundle \
+--filter='pkcs11:object=Comodo%20AAA%20Services%20root;type=cert' \
+$d/Comodo_AAA_Services_root.pem &&
+# trust extract --overwrite --format=pem-bundle \
+--filter='pkcs11:object=emSign%20ECC%20Root%20CA%20-%20G3;type=cert' \
+$d/emSign_ECC_Root_CA_-_G3.pem &&
+# update-ca-trust
+V openSUSE a SLES:
+# d=/etc/pki/trust/blocklist; [ -d $d ] || d=/etc/pki/trust/blacklist
+# trust extract --format=pem-bundle \
+--filter='pkcs11:object=Comodo%20AAA%20Services%20root;type=cert' \
+$d/Comodo_AAA_Services_root.pem &&
+# trust extract --format=pem-bundle \
+--filter='pkcs11:object=emSign%20ECC%20Root%20CA%20-%20G3;type=cert' \
+$d/emSign_ECC_Root_CA_-_G3.pem &&
+# update-ca-certificates
+V Arch Linuxu:
+# trust extract --format=pem-bundle \
+--filter='pkcs11:object=emSign%20ECC%20Root%20CA%20-%20G3;type=cert' \
+/etc/ca-certificates/trust-source/blocklist/emSign_ECC_Root_CA_-_G3.pem &&
+# update-ca-trust
+V NixOS přidejte do konfigurace:
+security.pki.caCertificateBlacklist = [
+"Comodo AAA Services root"
+"emSign ECC Root CA - G3"
+"emSign Root CA - C1"
+"emSign ECC Root CA - C3"
+Výsledkem by následně měla být chyba při pokusu o načtení obsahu testovací stránky:
+# curl https://dv-g3b-emudhra.we-have-a-problem.com/
+curl: (60) SSL certificate problem: unable to get local issuer certificate
+More details here: https://curl.se/docs/sslcerts.html
+curl failed to verify the legitimacy of the server and therefore could not
+establish a secure connection to it. To learn more about this situation and
+how to fix it, please visit the webpage mentioned above.
+(Upozornil Ondřej Caletka.)

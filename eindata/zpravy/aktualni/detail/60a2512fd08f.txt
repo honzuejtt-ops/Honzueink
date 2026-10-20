@@ -1,0 +1,5 @@
+Revolut má od rána rozsáhlý výpadek. Klienti nemohou platit kartou, posílat peníze ani vybírat hotovost z bankomatů. Problémy zřejmě souvisejí s výpadkem cloudových služeb Googlu v Londýně.
+Stavová stránka Revolutu v úterý odpoledne eviduje 30 služeb, které hodnotí jako částečně nedostupné. Vedle plateb, převodů a výběrů hotovosti se potíže týkají také přihlašování do aplikace, dobíjení karet, směny měn, obchodování s akciemi nebo zákaznické podpory. Problémy hlásí také firemní zákazníci Revolutu.
+„Můžeme potvrdit, že všechny peníze a data našich zákazníků jsou v bezpečí,“ uvádí Revolut na síti X. Firma podle svého vyjádření na odstranění problému pracuje od rána, nové údaje ale neposkytla.
+Výpadek Revolutu časově souvisí s problémy Google Cloud v londýnském regionu europe-west2, píše Reuters. Google zde hlásí zvýšenou chybovost a výpadky síťového připojení. Uvedl, že za incidentem stojí událost související s napájením. Podle zdroje agentury Reuters spolu problémy Googlu a Revolutu souvisejí.
+Výpadek zasahuje i další firmy. Potíže hlásí britské banky Lloyds a HSBC nebo doručovací společnosti Royal Mail a DPD.

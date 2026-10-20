@@ -1,0 +1,26 @@
+Ztraceného člověka může jednou najít dron, kterému stačí popsat, jak vypadá
+Podle zprávy Fakulty elektrotechnické ČVUT český tým v německé soutěži SPRIND ovládl disciplínu hledání zraněného. Celkově sice vyhráli Rakušané, pořadatel ale české řešení této úlohy ocenil jako výrazně nejlepší.
+Zadání znělo: najdi zraněného
+Nad leteckou základnou v bavorském Erdingu vzlétl dron, který nevěděl, kudy má letět. Psal se poslední srpnový týden a na finále tam přijely týmy z Německa a dalších evropských zemí. Dron nedostal žádnou předem naprogramovanou trasu, jen pokyn formulovaný tak, jak by ho řekl člověk. Měl najít zraněného člověka a donést mu zdravotnický balíček.
+Úkol ztěžovala pravidla. Dron nesměl používat GPS a po startu musel celou misi zvládnout sám, bez jakéhokoli zásahu pilota. Nikdo ho tedy nemohl dovést na místo ani mu poradit, kam se podívat.
+Zraněného představoval figurant, tedy člověk, který tu roli jen hrál. Ležel částečně ukrytý za budovou a opíral se o strom. Dron ho přesto objevil sám.
+Blízko neznamená dost blízko
+Ne všechno vyšlo napoprvé dokonale. Při druhém pokusu dron přistál na nedaleké střeše, tedy kousek od zraněného, ale pro pomoc prakticky mimo dosah. Podle zprávy ČVUT test ukázal, že robotu nestačí vědět, kam má doletět. Musí chápat i to, k čemu celá mise slouží.
+Zajímavé je, jak se takové chyby opravují. Když dron v jiné úloze zadání vyložil špatně, nikdo nemusel přepisovat program. Stačilo pokyn upřesnit další větou. Právě v tom je hlavní rozdíl proti běžným strojům: místo programátora stačí člověk, který umí srozumitelně říct, co chce.
+Úloha se záchranou patřila Čechům, celek Rakušanům
+Ve finále se utkalo sedm evropských týmů. V úloze hledání zraněného byl nejlepší tým z ČVUT. Organizátor soutěže z německé agentury pro průlomové inovace SPRIND podle zprávy ČVUT jeho práci popsal jako „výrazně nejlepší řešení disciplíny vyhledávání zraněné osoby“.
+Na závěrečné ukázce pro investory pak tuto disciplínu předváděly dva týmy. Opakovaně a bez jediné chyby ji podle ČVUT zvládl jen ten český. U techniky, která má jednou zachraňovat lidi, je to důležité: spolehlivost se ukáže teprve při opakování.
+💡 Zajímavost: Celá soutěž trvala čtrnáct měsíců a její rozpočet pro obě fáze přesáhl pět milionů eur.
+Celkovým vítězem soutěže se stal rakouský tým HERMES z Univerzity v Klagenfurtu. Český tým tak z Erdingu neodvezl hlavní trofej, ale přivezl prvenství v disciplíně hledání zraněného.
+Co by takový dron mohl dát záchranářům u nás
+Drony při pátrání po lidech už v Česku létají. Hasiči v Pardubickém kraji dostali na konci března dva nové stroje. Jeden z nich má termokameru a umělou inteligenci a najde uplatnění i při rozsáhlých pátracích akcích.
+Prototyp z ČVUT ukazuje, kam by se taková technika mohla posunout. Po startu by nepotřeboval pilota ani GPS. Člověk by mu jen řekl, co má udělat. Podle popisu v magazínu CzechCrunch by policista nebo záchranář zadal povel do tabletu, napsaný nebo vyslovený. Běžnými slovy by popsal, koho hledá a kde ho naposledy viděli. Systém má fungovat i při výpadku spojení. Dron se pak má přepnout na omezenější jazykový model, který běží přímo v něm.
+Tým už míří i k dalším situacím, kde jde o životy. Jeden z jeho členů uvedl, že tým nedávno získal velký národní projekt zaměřený na požáry v budovách, kde je prioritou najít a zachránit lidi.
+Kdy by mohl vzlétnout naostro
+K hasičům ani záchranářům se takový pomocník nedostane hned. Systém je zatím funkční prototyp a čeká ho další výzkum, testy spolehlivosti a certifikace. Teprve pak z něj může být hotový výrobek, který si záchranné sbory pořídí.
+Pořadatel soutěže je přesto optimistický. Podle SPRIND se samostatně létající drony pravděpodobně už za několik let uplatní při pátrání a záchraně, při dodávkách zboží i při hlídání důležité infrastruktury.
+Ověřeno z:
+- ČVUT, Fakulta elektrotechnická — Dron, který poslouchá na slovo, uspěl v soutěži SPRIND (2. 9. 2026)
+- SPRIND (německá Spolková agentura pro průlomové inovace) — Finále soutěže Fully Autonomous Flight 2.0 (2. 9. 2026)
+- CzechCrunch — České drony mají za úkol doručit jídlo i zachránit život (říjen 2026)
+- HZS Pardubického kraje — Nové drony s termokamerou (9. 4. 2026)

@@ -7,7 +7,7 @@ Zpráva zveřejněná k incidentu uvádí, že kompromitace byla útočníkem d
 Kdy se informace objevila?
 Mozilla uvedla, že se o problému dozvěděla v sobotu 17. října v 20:06 UTC od člena bezpečnostní komunity. Šlo o soukromé klíče spojené s osmi mezilehlými certifikáty eMudhra. Tyto klíče by mohly umožnit vystavit podvodné HTTPS certifikáty pro cizí weby.
 Mozilla následně zablokovala dotčené certifikáty ve Firefoxu prostřednictvím seznamu OneCRL, a to bez nutnosti, aby uživatelé instalovali aktualizaci nebo restartovali prohlížeč. Informace pak byla veřejnosti oznámena 20. října v 15 hodin středoevropského času.
-Jak reagují správci?
+Jak reagují tvůrci prohlížečů?
 Kompromitované certifikáty jsou tedy již od 17. října blokovány ve Firefoxu a Chrome, od 19. října pak na zařízeních firmy Apple a od 20. října v produktech Microsoftu.
 Mozilla 20. října oznámila také změnu v databázi důvěryhodných certifikátů NSS, která odstraňuje kořenový certifikát použitý k podpisu dotčených mezilehlých autorit. Tento krok má pomoci uživatelům a systémům, které nemají ochranu srovnatelnou s OneCRL. Může ale způsobit nedostupnost některých serverů, dokud nepřejdou na nové certifikační řetězce. Chrome oznámil obdobný plán odstranit příslušný kořen z Chrome Root Store.
 Mozilla uvedla, že nepředpokládá dopad na další certifikační autority. Vyšetřování příčiny kompromitace a koordinace s dalšími provozovateli kořenových úložišť stále pokračují.

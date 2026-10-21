@@ -7,7 +7,7 @@
 **Osobní e-paper zařízení pro zprávy, čtení, poslech a drobné hry.**
 
 [![Aktualizace dat](https://github.com/honzuejtt-ops/Honzueink/actions/workflows/update_data.yml/badge.svg)](https://github.com/honzuejtt-ops/Honzueink/actions/workflows/update_data.yml)
-[![Platforma](https://img.shields.io/badge/platforma-ESP32--S2-176B5B)](https://github.com/honzuejtt-ops/Honzueink)
+[![Platforma](https://img.shields.io/badge/platforma-ESP32--S3-176B5B)](https://github.com/honzuejtt-ops/Honzueink)
 [![Jazyk](https://img.shields.io/badge/jazyk-C%2B%2B%20%7C%20Python-355E8D)](https://github.com/honzuejtt-ops/Honzueink)
 
 </div>
@@ -32,7 +32,7 @@ Přesné možnosti závisí na nahrané verzi firmwaru a datech na SD kartě.
 | Část | Použití |
 | --- | --- |
 | Heltec Vision Master E290 | Základní deska a e-paper displej |
-| ESP32-S2 | Wi‑Fi a běh firmwaru |
+| ESP32-S3R8 | Wi‑Fi a běh firmwaru |
 | SD karta | Knihy, audio a lokální data |
 | LittleFS | Interní soubory a stav zařízení |
 | Arduino IDE | Kompilace a nahrání firmwaru |

@@ -31,9 +31,9 @@ Přesné možnosti závisí na nahrané verzi firmwaru a datech na SD kartě.
 
 | Část | Použití |
 | --- | --- |
-| Heltec Vision Master E290 | Základní deska a e-paper displej |
-| ESP32-S3R8 | Wi‑Fi a běh firmwaru |
-| SD karta | Knihy, audio a lokální data |
+| Heltec Vision Master E290 | Základní deska a 2,90″ černobílý e-paper displej (296 × 128 px) |
+| ESP32-S3R8 | MCU; deska podporuje Wi‑Fi a Bluetooth LE, LoRa modul je volitelný |
+| 16MB flash | Vlastní rozdělení paměti je v `partitions.csv` |\n| SD karta | Knihy, audio a lokální data |
 | LittleFS | Interní soubory a stav zařízení |
 | Arduino IDE | Kompilace a nahrání firmwaru |
 | Python 3.10+ | Příprava zpravodajských a doplňkových dat |

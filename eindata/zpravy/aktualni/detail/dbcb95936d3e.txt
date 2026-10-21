@@ -1,8 +1,8 @@
 Vývojáři PHP uvolnili aktualizace řešící dvě velmi závažné bezpečnostní chyby. Verze PHP 8.5.12, 8.4.27, 8.3.36 a 8.2.35 opravují dvě kritické chyby zabezpečení, které mohou umožnit neautorizované vzdálené spuštění kódu. Všem uživatelům PHP se důrazně doporučuje provést aktualizaci co nejdříve.
 Ohroženy jsou všechny instalace PHP zpracovávající webové požadavky, včetně PHP-FPM, Apache s mod_php, php-cgi,FrankenPHP a LiteSpeed. Za nejrizikovější vývojáři považují mod_php, u kterého byl předveden způsob zneužití, při němž může neautentizovaný požadavek spustit útok ještě před spuštěním jakéhokoli kódu aplikace.
 Jedná se o celkem dvě samostatné chyby:
-RCE prostřednictvím poškození způsobeného nedostatkem paměti (OOM), CVE-2026–109618 (GHSA-w8hw-w9fx-j79w): při nedostatku paměti může přerušit běh PHP v okamžiku, kdy jsou interní data požadavku inicializována pouze částečně. Při úklidu požadavku pak mohou být neplatná data považována za platná.
-RCE prostřednictvím zastaralého globálního stavu, CVE-2026–109619 (GHSA-6wmf-4rv5-p3rp): interní stav patřící požadavku může přetrvávat i poté, co byla uvolněna paměť, na které byl uložen. Následující požadavek zpracovávaný stejným pracovníkem může tento zastaralý stav použít dříve, než jej normální inicializace resetuje.
+RCE prostřednictvím poškození způsobeného nedostatkem paměti (OOM), CVE-2026–109618 (GHSA-w8hw-w9fx-j79w): při nedostatku paměti může být přerušen běh PHP v okamžiku, kdy jsou interní data požadavku inicializována pouze částečně. Při úklidu požadavku pak mohou být neplatná data považována za platná.
+RCE prostřednictvím zastaralého globálního stavu, CVE-2026–109619 (GHSA-6wmf-4rv5-p3rp): interní stav patřící požadavku může přetrvávat i poté, co byla uvolněna paměť, na které byl uložen. Následující požadavek zpracovávaný stejným procesem může tento zastaralý stav použít dříve, než jej normální inicializace resetuje.
 Zneužití už bylo předvedeno
 Po internetu koluje video, kde někdo předvádí nástroj pro zneužití nazvaný PHP2Shell. Konkrétně bylo ukázání spuštění kódu na webových serverech s těmito aplikacemi: WordPress 7.1.3, MediaWiki 1.46.2, phpBB 3.3.17, Magento 2.4.9, Joomla 6.2.0, Laravel 13.36.0, Laravel 8.83.29, Symphony 8.1.9, Drupal 11.4.10 a WHMCS 9.0.9. Všechny aplikace používají PHP a jsou v aktuálních verzích.
 Zasaženy jsou verze 5 až 8
@@ -19,7 +19,7 @@ Vývojáři zdůrazňují, že jediným správným a plnohodnotným řešením j
 - Odstraňte neplatná nebo zastaralá nastavení aplikovaná na jednotlivé požadavky, která generují diagnostické zprávy před inicializací. Skrytí diagnostiky pomocí error_reporting,display_errors nebo @ nepomůže.
 - Opravte fatální chyby a časové limity provádění, ke kterým má útočník přístup, včetně selhání v callbackách, zpracování nahrávání nebo importu a úklidu.
 Cloudflare už vidí pokusy o zneužívání chyb
-Společnost Cloudflare uvádí, že zaznamenává první pokusy o zneužití těchto chyb, a pro weby využívající její služby zavedla nouzová pravidla, která označuje za dočasné řešení do doby, než bude vydána oprava.
+Společnost Cloudflare uvádí, že zaznamenává první pokusy o zneužití těchto chyb, a pro weby využívající její služby zavedla nová filtrační pravidla, která označuje za dočasné řešení do doby, než bude vydána oprava.
 Dosud nebyl potvrzen žádný útok, veřejně šířený kód exploitu se neukázal jako funkční a žádná z těchto chyb není uvedena v katalogu známých zneužitých chyb agentury CISA. PHP zatím neupřesnilo, které verze jsou postiženy, která část PHP je zapojena ani zda nějaké nastavení riziko mění.
 PHP je všude
 PHP pohání velké množství webů a služeb. Kromě webů postavených na systémech WordPress, Drupal, Joomla nebo Magento může být součástí také hostingových platforem, ovládacích panelů či dodávaného softwaru. Organizace proto nemusí mít přehled o všech instalacích, které spravují nebo které jsou dostupné z internetu.

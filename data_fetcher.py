@@ -717,14 +717,14 @@ def stahni_zpravy_multi(zdroje, celkovy_limit=10, exclude_titulky=None):
             x_pos = blok.find("|X|")
             e_pos = blok.find("|E|", x_pos)
             text_clanku = blok[x_pos+3:e_pos]
-            perex_blok = blok[:x_pos+3] # |T|...|D|...|P|...|X|
+            metadata_blok = blok[:x_pos] # |T|...|D|...|P|...|M|zdroj
             
             # Uložíme text článku do samostatného souboru
             with open(os.path.join(detail_dir, f"{clanek_id}.txt"), 'w', encoding='utf-8') as f:
                 f.write(text_clanku)
             
             # Do indexu dáme jen metadata + ID místo celého textu
-            vysledny_index += f"{perex_blok}{clanek_id}|E|"
+            vysledny_index += f"{metadata_blok}|L|{len(text_clanku)}|X|{clanek_id}|E|"
             vysledna_data_all += blok # Necháme i All-in-one pro archiv
         except Exception:
             vysledna_data_all += blok
@@ -879,7 +879,7 @@ def oprav_existujici_archiv(archiv_dir):
     if not os.path.isdir(archiv_dir):
         return
 
-    soubory = ('zpravy_svet.txt', 'zpravy_cr.txt', 'zpravy_tech.txt', 'zpravy_pozitivni.txt', 'zpravy_kultura.txt', 'zpravy_kultura.txt')
+    soubory = ('zpravy_svet.txt', 'zpravy_cr.txt', 'zpravy_tech.txt', 'zpravy_pozitivni.txt', 'zpravy_kultura.txt')
     agregace = {s: {} for s in soubory}
 
     for den in os.listdir(archiv_dir):
@@ -1522,15 +1522,15 @@ if __name__ == "__main__":
     for d in (zpravy_dir, cache_dir, archiv_dir):
         os.makedirs(d, exist_ok=True)
 
-    # Odstranění dříve vygenerovaných souborů rubriky Akce.
+    # Rubrika Akce byla odstraněna. Odstraňujeme i její dříve vygenerované
+    # aktuální a archivní soubory, aby po další synchronizaci nezůstaly v repozitáři.
     odstranene_soubory = {"zpravy_akce.txt", "zpravy_akce.idx"}
     for koren in (zpravy_dir, archiv_dir):
         for cesta, _, soubory in os.walk(koren):
             for nazev in soubory:
                 if nazev in odstranene_soubory:
-                    stara_cesta = os.path.join(cesta, nazev)
-                    os.remove(stara_cesta)
-                    print(f"  Odstraněn starý soubor Akce: {os.path.relpath(stara_cesta, SD_CESTA)}")
+                    os.remove(os.path.join(cesta, nazev))
+                    print(f"  Odstraněna stará rubrika Akce: {os.path.relpath(os.path.join(cesta, nazev), SD_CESTA)}")
 
     # 1. Běžné zprávy a tech/ai — s cross-category deduplikací napříč všemi kategoriemi
     # Priorita: Svět > ČR > Tech > Kultura > Bulvár.
@@ -1569,10 +1569,10 @@ if __name__ == "__main__":
                 x_pos = blok.find("|X|")
                 e_pos = blok.find("|E|", x_pos)
                 text_clanku = blok[x_pos+3:e_pos]
-                perex_blok = blok[:x_pos+3]  # |T|...|D|...|P|...|X|
+                metadata_blok = blok[:x_pos]  # |T|...|D|...|P|...|M|zdroj
                 with open(os.path.join(detail_dir, f"{clanek_id}.txt"), 'w', encoding='utf-8') as f:
                     f.write(text_clanku)
-                novy_index += f"{perex_blok}{clanek_id}|E|"
+                novy_index += f"{metadata_blok}|L|{len(text_clanku)}|X|{clanek_id}|E|"
             except Exception:
                 novy_index += blok  # fallback
         svet_data = (novy_index, svet_filtrovany_text)

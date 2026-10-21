@@ -4,6 +4,12 @@ Téhož dne Firefox a Chrome zablokovaly dotčené certifikáty ve svých úlož
 Jak to víme?
 Zpráva zveřejněná k incidentu uvádí, že kompromitace byla útočníkem doložena tak, že podepsal stejnou zprávu soukromým klíčem všech osmi autorit. Ve zprávě stojí: We have a problem here – Wayne
 . Tento podepsaný důkaz byl zaslán správcům úložišť důvěryhodných kořenových certifikátů.
+Určitě unikly klíče?
+Klíče jsou obvykle u certifikačních autorit uloženy ve specializovaném zařízení zvaném HSM (Hardware Security Module). To se stará o celý životní cyklus klíčů, jejich bezpečné uložení i použití. Nemělo by tedy být možné klíče odněkud získat a třeba jednoduše zkopírovat z disku.
+Přesto skutečně unikly klíče a je možné je najít volně na internetu. Není o tom tedy pochyb, nedošlo jen k narušení bezpečnosti certifikační autority a podepsání jednoho dokumentu. Soukromé klíče mezilehlých certifikátů jsou skutečně venku.
+Jak mohly klíče uniknout?
+Následné analýzy odhalily, že klíče byly vytvořeny špatným postupem a jsou velice krátké. Jeden z certifikátů byl například podepsán soukromým klíčem o hodnotě „4“. Zní to jako vtip Randalla Munroa ze slavného komiksu XKCD, kde skutečně náhodné číslo čtyři vystupuje v díle 221. V tomto případě je to ale realita.
+Všechny klíče vycházejí z hodnot 4, 56, 66, 115, 155, 156, 230 a 237. Většina klíče tedy měla nulovou hodnotu, kromě posledního bajtu. Použit byl tedy jen jeden bajt entropie a kdokoliv mohl velmi snadno klíče zpětně odvodit na běžném počítači.
 Kdy se informace objevila?
 Mozilla uvedla, že se o problému dozvěděla v sobotu 17. října v 20:06 UTC od člena bezpečnostní komunity. Šlo o soukromé klíče spojené s osmi mezilehlými certifikáty eMudhra. Tyto klíče by mohly umožnit vystavit podvodné HTTPS certifikáty pro cizí weby.
 Mozilla následně zablokovala dotčené certifikáty ve Firefoxu prostřednictvím seznamu OneCRL, a to bez nutnosti, aby uživatelé instalovali aktualizaci nebo restartovali prohlížeč. Informace pak byla veřejnosti oznámena 20. října v 15 hodin středoevropského času.
@@ -72,4 +78,8 @@ More details here: https://curl.se/docs/sslcerts.html
 curl failed to verify the legitimacy of the server and therefore could not
 establish a secure connection to it. To learn more about this situation and
 how to fix it, please visit the webpage mentioned above.
+Jak se to celé mohlo stát?
+Certifikační autorita se k celému incidentu vyjádřila a tvrdí, že klíče byly skutečně vytvořeny a uložen v HSM, které odpovídá minimálně standardu FIPS 140–2 Level 3. Klíče byly vytvořeny stanadrdní cestou uvnitř HSM.
+Ovšem chyba v kódu vedla k tomu, že na zařízení byl vytvořen ještě druhý pár klíčů, který byl slabší. Tento druhý pár slabších klíčů byl omylem použit k vytvoření CSR (žádost o podpis), protože označení klíčů byla podobná. Výsledek byl podepsán kořenovým certifikátem.
+Důvodem přípravy těchto klíčůe byl export do datových center v USA a Evropě, který měl vyřešit otázky suverenity dat u některých zákazníků. S výjimkou jednoho však certifikáty nikdy nebyly provozně nasazeny do produkčního prostředí.
 (Upozornil Ondřej Caletka.)

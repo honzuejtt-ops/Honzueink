@@ -1,0 +1,18 @@
+Vývojáři PHP na problém upozornili v úterý. Obě zranitelnosti označili za kritické, na desetibodové stupnici závažnosti CVSS 4.0 získaly hodnocení 9,2. V ohrožení mohou být nejrůznější služby, od jednoduchých blogů přes firemní prezentace až po internetové obchody. PHP totiž patří k technologiím, které zajišťují fungování webů na serverech, aniž by o tom jejich návštěvníci museli vědět.
+„PHP je všude. Nenápadně pohání weby na WordPressu, Drupalu, Joomle a Magentu, platformy sdíleného hostingu, ovládací panely a spoustu softwaru, který ani neuvádí, že pod kapotou používá PHP,“ upozornila podle Reuters bezpečnostní společnost Huntress.
+Pro běžné návštěvníky nejde o chybu, kterou by vyřešili aktualizací prohlížeče nebo telefonu. Zabezpečení musí zajistit provozovatel služby. Uživatelé mohou pocítit především dočasnou nedostupnost stránek, v případě úspěšného napadení nezabezpečeného webu by ale mohla být ohrožena i jejich data.
+První útoky už přicházejí
+Podle evropského týmu pro reakci na kybernetické incidenty CERT-EU by chyby mohly umožnit vzdálené spuštění kódu bez přihlášení. Útočník by tak mohl přimět zranitelný server, aby vykonal jeho příkazy. Následkem by mohlo být napadení webu, změna jeho obsahu či krádež údajů, k nimž má dotčená aplikace přístup.
+Situaci komplikuje předčasný únik informací o zranitelnostech. Společnost Huntress uvedla, že podrobnosti pronikly na veřejnost ještě před koordinovaným zveřejněním a vydáním oprav.
+Technický ředitel společnosti Cloudflare Dane Knecht podle Reuters uvedl, že firma již zaznamenává první útoky. Společnost proto upravuje pravidla svých firewallů, které pomáhají škodlivý provoz blokovat.
+„Pozorujeme první útoky a upravujeme ochranná opatření podle toho, jak se objevují nové způsoby napadení. Jde pouze o dočasné řešení. Jakmile PHP vydá aktualizaci, nainstalujte ji,“ napsal Knecht na síti X.
+Zprávy o prvních pokusech o zneužití nicméně samy o sobě neznamenají, že odstavené služby byly napadeny. Instituce weby vypínají především preventivně.
+Odpojilo se i centrum kybernetické bezpečnosti
+K odstávkám přistoupily podle Reuters státní instituce v Nizozemsku a Finsku. Svůj web preventivně odpojilo dokonce i nizozemské Národní centrum kybernetické bezpečnosti (NCSC).
+Opatření se dotkla podle deníku Bild také německé Mohuče. Město dočasně vypnulo portál mainz.de a další internetové služby. Úřady však podle městské správy zůstaly dostupné telefonicky i e-mailem a předem sjednané návštěvy se měly uskutečnit podle plánu.
+Část webových stránek a centrálních služeb preventivně odstavila rovněž univerzita ve Freiburgu.
+Podobný postup doporučuje také CERT-EU. Organizace by podle něj měly vyhledat aplikace využívající PHP a připravit se na jejich okamžité zabezpečení. Pokud nelze opravu rychle nasadit, mají zvážit dočasné odpojení veřejně dostupných aplikací od internetu.
+Nápravu musí zajistit správci
+Provozovatelé webů a e-shopů by měli situaci řešit se svými správci nebo poskytovateli hostingu. Podstatná je aktualizace samotného PHP na serveru, nikoli pouze úprava obsahu stránek.
+Které verze PHP jsou ohrožené, mají vývojáři upřesnit při vydání oprav. Podle předběžného varování CERT-EU se chyby mohou týkat všech verzí od PHP 5. To ale neznamená, že útočníci dokážou napadnout každý web, který tuto technologii používá.
+Vývojáři už vydali aktualizace, které obě bezpečnostní chyby opravují. Provozovatelé webů je musí co nejrychleji nainstalovat, případně o to požádat firmu, která jim stránky spravuje. Samotné vydání opravy totiž nestačí – dokud ji správci nenasadí, mohou být weby dál ohrožené.

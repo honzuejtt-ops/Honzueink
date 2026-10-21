@@ -1,0 +1,6 @@
+Bezpečnostní firma Wiz odhalila dvě kritické chyby v programovacím jazyce PHP. Mají potenciál ohrozit bezpečnost většiny webových serverů používajících PHP ve verzi 5.4 a výše, které nenasadí aktualizaci. Před rizikem varoval i český Národní úřad pro kybernetickou a informační bezpečnost (NÚKIB).
+„Zranitelnosti mohou útočníkovi umožnit na dálku spustit vlastní kód na napadeném serveru bez předchozího přihlášení. Aktualizujte proto PHP co nejdříve na některou z opravených verzí,“ říká český úřad.
+Podle BBC úřady v některých zemích během dneška raději dočasně znepřístupnily své weby, aby neponechaly veřejně přístupné jejich neopravené verze.
+Problém dostal přezdívku PHP2Shell. Konkrétně se jedná o dvě zranitelnosti CVE-2026–109618 a CVE-2026–109619. Chyby jsou opraveny ve verzích PHP 8.5.12, 8.4.27, 8.3.36 a 8.2.35.
+Do detailu se zranitelnostem věnuje náš sesterský web Root.cz.
+Podle firmy Wiz zranitelnosti byly v kódu skryty déle než deset let a odhalila je analýza provedená prostřednictvím AI modelů. Firma používá vlastního AI agenta a využila také modely Gemini 4 Argon and GPT-5.6 Sol.

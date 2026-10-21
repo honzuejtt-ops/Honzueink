@@ -1,0 +1,3 @@
+„Cílem opatření je zajistit bezpečný provoz webových stránek. Po dobu odstávky nebudou stránky ani jejich obsah dostupné veřejnosti. Provoz bude obnoven po provedení doporučených bezpečnostních aktualizací,“ uvádí vládní webové stránky.
+Odstávka souvisí s kritickými bezpečnostními chybami v PHP, na kterém stojí množství internetových stránek a e-shopů.
+Ty by totiž mohly útočníkům umožnit ovládnout napadené weby a ukrást data. Kvůli chybám již vypnula webové stránky řada evropských institucí.

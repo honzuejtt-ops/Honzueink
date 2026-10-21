@@ -43,16 +43,16 @@ struct ArchivClanek;
 
 #include <time.h>
 
-#include "TextLine.h"
-#include "gamebook.h"
-#include "odhalovacka.h"
-#include "knihy.h"
-#include "generator.h"
-#include "slovnik.h"
-#include "fraze.h"
-#include "HryKviz.h" 
-#include "HryWyr.h"  
-#include "SDKnihovnaReader.h"
+#include "include/TextLine.h"
+#include "include/gamebook.h"
+#include "include/odhalovacka.h"
+#include "include/knihy.h"
+#include "include/generator.h"
+#include "include/slovnik.h"
+#include "include/fraze.h"
+#include "include/HryKviz.h" 
+#include "include/HryWyr.h"  
+#include "include/SDKnihovnaReader.h"
 
 // ===== SD KARTA — STAV =====
 bool sdReady = false; // true pokud SD karta funguje a /eindata/ je připravena

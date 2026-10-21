@@ -33,7 +33,8 @@ Přesné možnosti závisí na nahrané verzi firmwaru a datech na SD kartě.
 | --- | --- |
 | Heltec Vision Master E290 | Základní deska a 2,90″ černobílý e-paper displej (296 × 128 px) |
 | ESP32-S3R8 | MCU; deska podporuje Wi‑Fi a Bluetooth LE, LoRa modul je volitelný |
-| 16MB flash | Vlastní rozdělení paměti je v `partitions.csv` |\n| SD karta | Knihy, audio a lokální data |
+| 16MB flash | Vlastní rozdělení paměti je v `partitions.csv` |
+| SD karta | Knihy, audio a lokální data |
 | LittleFS | Interní soubory a stav zařízení |
 | Arduino IDE | Kompilace a nahrání firmwaru |
 | Python 3.10+ | Příprava zpravodajských a doplňkových dat |
@@ -47,7 +48,7 @@ Firmware používá knihovny pro e-paper grafiku, zvuk, JSON, QR kódy a webové
 ├── .github/workflows/update_data.yml   # plánovaná aktualizace dat
 ├── eindata/                            # data pro zařízení, generuje data_fetcher.py
 ├── honzueINK.ino                       # hlavní Arduino sketch
-├── *.h                                 # části firmwaru a obsahové moduly
+├── include/                            # hlavičkové soubory firmwaru (*.h)
 ├── data_fetcher.py                     # stažení, čištění a třídění článků
 ├── requirements.txt                    # Python závislosti skriptu
 └── partitions.csv                      # vlastní tabulka flash oddílů

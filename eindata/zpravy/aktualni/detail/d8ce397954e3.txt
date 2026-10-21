@@ -3,28 +3,3 @@ Browserový nástroj pro převod textu na hlas – generuje hlasové nahrávky p
 O nástroji
 Seed Audio AI je browserové pracovní prostředí pro tvorbu hlasových nahrávek z textových skriptů. Vložíte text, vyberete hlas z knihovny (filtrované podle jazyka, pohlaví a účelu), nastavíte tempo, emoce a způsob podání – a nástroj vygeneruje audio, které si můžete stáhnout nebo sdílet odkazem. Celý postup probíhá ve čtyřech krocích přímo v prohlížeči, bez nutnosti studia, mikrofonu nebo zvukového technika. Nástroj pokrývá běžné obsahové formáty: komentáře k videím pro YouTube a TikTok, úvody a epizody podcastů, naraci audioknih i hlasové podklady pro reklamní kampaně. Uložená nastavení hlasu a podání lze opakovaně používat napříč projekty, což usnadňuje konzistenci v sériích nebo reklamních kampaních. Vedle generátoru hlasu nabízí Seed Audio AI šest bezplatných hudebních nástrojů – například převod MP3 na MIDI, detekci BPM a tóniny, rozpoznávání akordů, rozdělení stop (stem splitter) nebo export MIDI do not. Na stránce je uvedena cena 99 $ (pravděpodobně kredit nebo plán pro tvorbu hlasu), bezplatná verze pro generování hlasu není v dostupných podkladech potvrzena. Bezplatné hudební nástroje jsou naopak výslovně označeny jako volně přístupné. Informace o API ani o open-source dostupnosti nejsou v podkladech uvedeny.
 Kategorie
-AI novinky do e-mailu
-Každý pátek 3 vybrané AI nástroje, prompt týdne a to nejdůležitější ze světa AI – přehledně, česky a bez balastu.
-Jeden z nejstarších pravidelných českých AI newsletterů.
-Podobné nástroje
-Hledáte alternativu k Seed Audio AI? Tady je 6 podobných nástrojů z kategorie Převod text-na-řeč.
-Fliki
-Freemium
-Fliki je AI generátor videí, který převádí text, scénáře nebo blogové příspěvky na videa s hlaso...
-Descript
-Freemium
-Descript je AI editor videa a podcastů, který umožňuje stříhat zvuk i video úpravou přepisu text...
-Mubert
-Freemium
-Generuje royalty-free hudbu pomocí AI z textových promptů nebo zadaných parametrů (nálada, délka...
-TTSMaker
-Zdarma
-Převádí text na mluvené slovo pomocí AI hlasů. TTSMaker je bezplatný online nástroj pro syntézu...
-Uberduck
-Placené
-Uberduck je platforma pro AI syntézu hlasu, která generuje řeč, zpěv a rap z textu a umožňuje kl...
-Eleven Labs
-Freemium
-Převádí text na přirozeně znějící řeč a klonuje hlasy pomocí AI. ElevenLabs je platforma pro syn...
-Další nástroje v kategorii Převod text-na-řeč
-Nezůstávejte jen u nejoblíbenějších – tohle jsou další nástroje z kategorie Převod text-na-řeč, které stojí za prohlédnutí.

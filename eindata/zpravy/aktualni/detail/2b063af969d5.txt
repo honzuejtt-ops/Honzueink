@@ -3,28 +3,3 @@ Překládá stránky mangy s rozpoznáváním textu v bublinách a zachováním 
 O nástroji
 AI Manga Translator zpracovává naskenované stránky mangy ve formátech JPG, PNG, WEBP nebo PDF (do 15 MB na soubor). Nástroj nejprve rozpozná text pomocí OCR přizpůsobeného vertikálnímu písmu, ruby znakům a překrývajícím se bublinám, poté jej přeloží a výsledek vloží zpět přímo do původních bublin – pozadí a rozvržení panelů zůstávají nedotčeny. Nové účty obdrží 10 kreditů zdarma bez nutnosti zadávat platební kartu. Každá přeložená stránka stojí 10 kreditů; za neúspěšné úlohy se kredity automaticky vrací. Platby probíhají přes Stripe a podporují karty Visa, Mastercard, American Express i řadu regionálních metod (Alipay, WeChat Pay, Klarna a další). Překlad lze zrušit kdykoli přímo v nastavení účtu. Nástroj podporuje překlad mezi více než desítkou jazyků, včetně angličtiny, čínštiny (zjednodušené i tradiční), japonštiny, korejštiny, španělštiny, francouzštiny, němčiny, portugalštiny, ruštiny, arabštiny, hindštiny, bengálštiny a malajštiny. Stav každé úlohy – od nahrání po stažení – lze sledovat v přehledu „Translation Tasks“. Úprava překladu po dokončení zatím není k dispozici.
 Kategorie
-AI novinky do e-mailu
-Každý pátek 3 vybrané AI nástroje, prompt týdne a to nejdůležitější ze světa AI – přehledně, česky a bez balastu.
-Jeden z nejstarších pravidelných českých AI newsletterů.
-Podobné nástroje
-Hledáte alternativu k AI Manga Translator? Tady je 6 podobných nástrojů z kategorie Titulky.
-Good Tape
-Freemium
-Good Tape je automatická transkripční služba, která umožňuje novinářům (a dalším) snadno převést...
-Auto Subtitle Generator
-Freemium
-Automaticky generuje titulky k videím na základě přepisu zvukové stopy. Je součástí platformy Si...
-Voxqube
-Cena na vyžádání
-Voxqube je AI služba pro automatický dabing a lokalizaci videí, která převádí mluvenou řeč na př...
-ChatGPT pro Youtube
-Freemium
-Generuje textová shrnutí YouTube videí přímo v prohlížeči jako rozšíření pro Chrome – bez nutnos...
-AnthemScore
-Freemium
-Převádí audio soubory (MP3, WAV) do notového zápisu pomocí AI. AnthemScore je desktopová aplikac...
-Motionbear
-Placené
-Motionbear je AI nástroj, který automaticky generuje titulky a přepisy pro video a audio obsah....
-Další nástroje v kategorii Titulky
-Nezůstávejte jen u nejoblíbenějších – tohle jsou další nástroje z kategorie Titulky, které stojí za prohlédnutí.

@@ -3,28 +3,3 @@ Komunitní open-source adresář s 8 900+ skills pro Claude, Codex a AI agenty �
 O nástroji
 AI Agent Skills je nezávislý, komunitně provozovaný adresář a marketplace pro objevování skills, Claude code šablon a pluginů určených pro Claude, Codex a další AI agenty. Katalog aktuálně eviduje 8 942 kurátorovaných skills od 1 046 GitHub maintainerů a snapshot adresáře se aktualizuje každou hodinu. Za posledních 7 dní přibylo 700 nových releases. Skills lze procházet podle kategorií – například prompt engineering, výzkum, browser a web, psaní, design a UI, generování kódu, integrace, produktivita nebo marketing. Každá položka odkazuje na zdrojový repozitář včetně kódu, licence a commitů; do adresáře se skill dostane až po automatizovaných quality checks. Instalace probíhá zpravidla jediným příkazem na příkazovém řádku. Projekt je označen jako open-source a není affiliován s Anthropic ani OpenAI. Bezplatná verze ani placené plány nejsou na webu uvedeny, stejně tak není zmíněno API.
 Kategorie
-AI novinky do e-mailu
-Každý pátek 3 vybrané AI nástroje, prompt týdne a to nejdůležitější ze světa AI – přehledně, česky a bez balastu.
-Jeden z nejstarších pravidelných českých AI newsletterů.
-Podobné nástroje
-Hledáte alternativu k AI Agent Skills? Tady je 6 podobných nástrojů z kategorie Vývojářské nástroje.
-Vectorizer AI
-Freemium
-Převádí rastrové obrázky PNG, JPG, GIF, BMP a WebP na vektorové formáty SVG, PDF, EPS a DXF pomo...
-Stable Diffusion
-Freemium
-Stability AI je platforma pro generování obrázků, videa a dalšího obsahu pomocí generativní AI,...
-Whisper
-Zdarma
-Převádí mluvenou řeč na text ve více než 90 jazycích. Whisper je open-source model od OpenAI tré...
-AI 만화 번역기
-Placeno kreditovým systémem – 1 kredit za model Manga/EagleEye, 2 kredity za model Ultra; konkrétní ceník neuveden.
-Online nástroj pro překlad textových bublin v manga a komiksových obrázcích pomocí AI – podporuj...
-Pinecone
-Freemium
-Pinecone je vektorová databáze jako služba, která umožňuje ukládat, spravovat a prohledávat vekt...
-Escape
-Neuvedeno
-Escape je AI-powered platforma pro ofenzivní bezpečnost, která automatizuje discovery, pentestin...
-Další nástroje v kategorii Vývojářské nástroje
-Nezůstávejte jen u nejoblíbenějších – tohle jsou další nástroje z kategorie Vývojářské nástroje, které stojí za prohlédnutí.

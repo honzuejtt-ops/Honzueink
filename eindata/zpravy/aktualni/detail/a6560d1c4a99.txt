@@ -3,28 +3,3 @@ Browserové studio pro tvorbu AI videí z textu nebo obrázku – s audiem, volb
 O nástroji
 WAN 3.0 Video je online studio pro generování krátkých videí pomocí umělé inteligence přímo v prohlížeči. Zadáte textový prompt nebo nahrajete výchozí snímek, zvolíte délku klipu a poměr stran (na šířku nebo na výšku pro Reels a Shorts) a stáhnete hotový soubor – včetně zvuku, pokud jej model vygeneruje. Před spuštěním generování vidíte přesný počet kreditů, které bude operace stát, takže náklady lze snadno plánovat. Nástroj podporuje několik režimů vstupu: text-to-video, image-to-video a referenční režim, kde lze přiložit více výchozích snímků pro zachování konzistence postav a prostředí napříč celým klipem. Pracovní plocha uchovává historii promptů a umožňuje spravovat kredity bez opuštění stránky. Platforma cílí na tvůrce obsahu, performance marketéry, e-commerce týmy i agentury, kteří potřebují rychle testovat různé varianty videí bez nutnosti fyzického natáčení. Bezplatná verze není v dostupných podkladech potvrzena – stránka zmiňuje uvítací kredity a roční plány se slevou 20 %, konkrétní ceny tarifů však důkaz neobsahuje.
 Kategorie
-AI novinky do e-mailu
-Každý pátek 3 vybrané AI nástroje, prompt týdne a to nejdůležitější ze světa AI – přehledně, česky a bez balastu.
-Jeden z nejstarších pravidelných českých AI newsletterů.
-Podobné nástroje
-Hledáte alternativu k WAN 3.0 Video? Tady je 6 podobných nástrojů z kategorie Video generátor.
-Fliki
-Freemium
-Fliki je AI generátor videí, který převádí text, scénáře nebo blogové příspěvky na videa s hlaso...
-Synthesia
-Freemium
-Synthesia je AI platforma pro tvorbu videí z textu s využitím AI avatarů a hlasového komentáře v...
-Pollinations
-Zdarma
-Pollinations chce diverzifikovat kreativitu a šířit ji prostřednictvím digitálních ekosystémů. A...
-Designs AI
-Placené
-Designs.ai je all-in-one AI platforma, která generuje obrázky, videa, texty, prezentace, audio a...
-Genmo AI
-Zdarma
-Genmo je výzkumná laboratoř, která vyvíjí AI modely pro generování videí. Její nástroj Mochi umo...
-DeepFaceLab
-Zdarma
-DeepFaceLab je open-source software pro tvorbu deepfake videí – záměnu obličejů ve videozáznamec...
-Další nástroje v kategorii Video generátor
-Nezůstávejte jen u nejoblíbenějších – tohle jsou další nástroje z kategorie Video generátor, které stojí za prohlédnutí.

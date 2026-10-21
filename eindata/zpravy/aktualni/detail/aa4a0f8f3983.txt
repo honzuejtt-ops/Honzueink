@@ -3,28 +3,3 @@ Nástroj pro čištění textu zkopírovaného z AI nástrojů – odstraňuje n
 O nástroji
 Clean Paste AI je nástroj určený redaktorům, copywriterům, vývojářům a agenturám, kteří pravidelně přenášejí text z AI chatbotů (ChatGPT, Claude, Gemini) do dokumentů, CMS nebo repozitářů. Bezplatné funkce – detekce neviditelných znaků a odstraňování Markdownu – běží přímo v prohlížeči bez odesílání textu na server. Nástroj rozpoznává přes 60 typů neviditelných kódových bodů, včetně mezer nulové šířky (U+200B), úzkých nezlomitelných mezer (U+202F) a značek pořadí bajtů. Vedle bezplatného lokálního skenování nabízí placená úroveň Pro funkce jako přepis textu pro odstranění statistických vodoznaků vložených přímo do volby slov a humanizaci textu pro přirozenější vyznění vět. Uživatel po vložení textu vidí přesný počet nalezených reziduí a může je jedním krokem odstranit nebo nechat text sémanticky přepsat. V době zveřejnění důkazu byla inzerována 50% sleva na roční plány. Nástroj podporuje více jazyků rozhraní (angličtina, němčina, francouzština, španělština, italština, japonština a další). Bezplatná verze nevyžaduje přihlášení ani registraci a podle dostupných informací nemá stanovený limit pro bezplatné nástroje.
 Kategorie
-AI novinky do e-mailu
-Každý pátek 3 vybrané AI nástroje, prompt týdne a to nejdůležitější ze světa AI – přehledně, česky a bez balastu.
-Jeden z nejstarších pravidelných českých AI newsletterů.
-Podobné nástroje
-Hledáte alternativu k Clean Paste AI? Tady je 6 podobných nástrojů z kategorie Psaní textů.
-GPT3 Playground
-Placené
-OpenAI Playground je webový nástroj pro interaktivní experimentování s modely OpenAI (GPT-4o, GP...
-Write My Essays AI
-Placené
-Academized je placená služba psaní akademických prací od lidských autorů, která vypracuje eseje,...
-LanguageTool
-Freemium
-Kontroluje gramatiku, pravopis a interpunkci v textech pomocí AI ve více než 30 jazycích. Nabízí...
-Good Tape
-Freemium
-Good Tape je automatická transkripční služba, která umožňuje novinářům (a dalším) snadno převést...
-Penelope AI
-Freemium
-Penelope AI je asistent pro psaní, který pomocí AI generuje, přepisuje, parafrázuje a shrnuje te...
-Detect GPT
-Zdarma
-Detekuje obsah generovaný umělou inteligencí na webových stránkách. DetectGPT je rozšíření pro C...
-Další nástroje v kategorii Psaní textů
-Nezůstávejte jen u nejoblíbenějších – tohle jsou další nástroje z kategorie Psaní textů, které stojí za prohlédnutí.

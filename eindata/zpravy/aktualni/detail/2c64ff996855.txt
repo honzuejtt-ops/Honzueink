@@ -3,28 +3,3 @@ Webové studio pro tvorbu krátkých AI videí s řízeným pohybem kamery – v
 O nástroji
 Kling 5 Studio je nezávislé webové prostředí pro generování krátkých videí pomocí umělé inteligence. Podporuje dva hlavní pracovní postupy: text-to-video a image-to-video, přičemž výchozím modelem je Kling 3.0 Turbo Pro. Výstupy mají délku 5 sekund a rozlišení 1080p, přičemž si můžete vybrat poměr stran 16:9 pro standardní zobrazení nebo 9:16 pro vertikální sociální sítě. Hlavní silnou stránkou nástroje je přesné řízení pohybu kamery prostřednictvím textových promptů – zadáte například přiblížení (push-in), orbitální záběr nebo sledovací shot a studio se postará o plynulý průjezd scénou při zachování vizuální kontinuity subjektu. Animovat lze jak textové popisy scény, tak statické obrázky či portréty. Nástroj je určen tvůrcům krátkého obsahu, performance marketérům, e-commerce týmům i indie herním studiím. Před každým generováním studio zobrazí přehlednou kalkulaci kreditů, takže víte, kolik generování bude stát. Kredity a historii generování spravujete na jednom místě. Bezplatná verze ani konkrétní ceny tarifů nejsou v dostupných podkladech uvedeny; web zmiňuje roční plány se slevou 20 %.
 Kategorie
-AI novinky do e-mailu
-Každý pátek 3 vybrané AI nástroje, prompt týdne a to nejdůležitější ze světa AI – přehledně, česky a bez balastu.
-Jeden z nejstarších pravidelných českých AI newsletterů.
-Podobné nástroje
-Hledáte alternativu k Kling 5 Studio? Tady je 6 podobných nástrojů z kategorie Video generátor.
-Fliki
-Freemium
-Fliki je AI generátor videí, který převádí text, scénáře nebo blogové příspěvky na videa s hlaso...
-Synthesia
-Freemium
-Synthesia je AI platforma pro tvorbu videí z textu s využitím AI avatarů a hlasového komentáře v...
-Pollinations
-Zdarma
-Pollinations chce diverzifikovat kreativitu a šířit ji prostřednictvím digitálních ekosystémů. A...
-Designs AI
-Placené
-Designs.ai je all-in-one AI platforma, která generuje obrázky, videa, texty, prezentace, audio a...
-Genmo AI
-Zdarma
-Genmo je výzkumná laboratoř, která vyvíjí AI modely pro generování videí. Její nástroj Mochi umo...
-DeepFaceLab
-Zdarma
-DeepFaceLab je open-source software pro tvorbu deepfake videí – záměnu obličejů ve videozáznamec...
-Další nástroje v kategorii Video generátor
-Nezůstávejte jen u nejoblíbenějších – tohle jsou další nástroje z kategorie Video generátor, které stojí za prohlédnutí.

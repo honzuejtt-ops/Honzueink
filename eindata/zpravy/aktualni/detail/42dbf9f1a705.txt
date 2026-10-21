@@ -9,7 +9,7 @@ Pro správce je důležité především to, že se popis týká zpracování na
 Ondřej Surý, který je správcem balíčků PHP pro Debian a další distribuce, nám potvrdil, že internetem se šíří informace o nastavení volby session.upload_progress.enabled. Podle jeho slov je ale takové opatření nesmyslné a jde zřejmě o chybný výplod AI.
 Správci by měli ověřit nastavení skutečně používané webovým serverem či PHP-FPM, sledovat oznámení svého poskytovatele a nasadit opravu, jakmile bude pro jejich prostředí dostupná.
 Zasaženy jsou verze 5 až 8
-Podle dostupných informací jsou zasaženy verze PHP 5, 6, 7 a 8. Zatím nevíme, které verze dostanou opravu, ale předpokládá se, že pouze ty v současnosti podporované: 8.2, 8.3, 8.4 a 8.5. Starší verze mohou ale dostat zpětnou opravu například od tvůrců jednotlivých linuxových distribucí.
+Podle dostupných informací jsou zasaženy verze PHP 5, 7 a 8. Zatím nevíme, které verze dostanou opravu, ale předpokládá se, že pouze ty v současnosti podporované: 8.2, 8.3, 8.4 a 8.5. Starší verze mohou ale dostat zpětnou opravu například od tvůrců jednotlivých linuxových distribucí.
 Na webu PHP jsou stále ještě zářijové verze 8.5.11, 8.4.26, 8.3.35 a 8.2.34. Čekáme na vydání oprav.
 PHP je všude
 PHP pohání velké množství webů a služeb. Kromě webů postavených na systémech WordPress, Drupal, Joomla nebo Magento může být součástí také hostingových platforem, ovládacích panelů či dodávaného softwaru. Organizace proto nemusí mít přehled o všech instalacích, které spravují nebo které jsou dostupné z internetu.

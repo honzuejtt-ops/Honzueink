@@ -3,28 +3,3 @@ BeadPattern převádí fotografie nebo textové popisy na tisknutelné vzory pro
 O nástroji
 BeadPattern je AI generátor vzorů pro korálkové tvoření, který zvládá dva způsoby práce: nahrajete vlastní fotografii, nebo zadáte textový popis a AI vygeneruje vzor v jednom z 25 stylů a ve vámi zvoleném poměru stran (1:1, 16:9 nebo 3:4). Výsledný vzor lze rovnou upravovat v online editoru bez nutnosti instalace čehokoli. Nástroj podporuje 5 barevných systémů značek – MARD, COCO, Artkal, Perler a Hama – a exportuje tisknutelné PDF (formát A4) s anotovanými barevnými kódy i nákupní seznam s přesným počtem korálků pro každou barvu. Vedle korálkových vzorů zvládne BeadPattern generovat i vzory pro křížkový steh: mapuje obrázek na nejbližší DMC barvy, přiřazuje symboly a automaticky počítá množství nití. Cenový model je freemium. Plán Starter je zdarma, ale omezuje rozlišení na 50 px na stranu, přidává vodoznak a dovoluje 3 stažení měsíčně. Plán Pro vychází přibližně na 2,49 USD měsíčně (při ročním účtování 29,90 USD/rok) a přináší rozlišení až 300 px, neomezená stažení bez vodoznaku, cloud sync a úložiště až 500 projektů. K dispozici je také jednorázový Lifetime plán se stejnými funkcemi jako Pro.
 Kategorie
-AI novinky do e-mailu
-Každý pátek 3 vybrané AI nástroje, prompt týdne a to nejdůležitější ze světa AI – přehledně, česky a bez balastu.
-Jeden z nejstarších pravidelných českých AI newsletterů.
-Podobné nástroje
-Hledáte alternativu k BeadPattern? Tady je 6 podobných nástrojů z kategorie Umění.
-Midjourney
-Placené
-Generuje obrázky a videa z textových promptů pomocí vlastních AI modelů s důrazem na uměleckou k...
-Playground AI
-Freemium
-Generuje grafické návrhy, loga, samolepky, plakáty a merch pomocí AI na základě textového popisu...
-NightCafe Studio
-Freemium
-Generuje obrázky a videa z textových promptů pomocí více AI modelů najednou. NightCafe Studio je...
-Draw AI
-Freemium
-Generuje obrázky z textu i z jiného obrázku a nabízí sadu AI nástrojů pro úpravu grafiky. Jde o...
-InvokeAI
-Zdarma
-InvokeAI je open-source nástroj pro generování a úpravu obrázků pomocí modelů Stable Diffusion,...
-Pixelicious
-Zdarma
-Převádí obrázky na pixelové umění s nastavitelnou mřížkou a barevnou paletou. Výsledky jsou vhod...
-Další nástroje v kategorii Umění
-Nezůstávejte jen u nejoblíbenějších – tohle jsou další nástroje z kategorie Umění, které stojí za prohlédnutí.

@@ -3,28 +3,3 @@ ClipTalk vytváří AI videa pro Instagram Reels, YouTube Shorts a TikTok – be
 O nástroji
 ClipTalk je AI nástroj pro tvorbu videí určený tvůrcům obsahu na sociálních sítích. Stačí zadat textový prompt a AI vygeneruje hotové video včetně skriptu, vizuálů, dabingu a titulků. Nástroj sleduje virální trendy ve vašem oboru, učí se, co je na nich úspěšné, a každý den připravuje nová videa pro váš kanál – vy jen rozhodnete, co zveřejníte. Součástí platformy je automatický střih podle vašich pokynů, přesné automatické titulky, vkládání B-roll záběrů a odstraňování ticha a výplňových slov jediným kliknutím. K dispozici je knihovna více než 140 prémiových AI hlasů a realistických postav ve více než 30 jazycích – od UGC tvůrců přes profesionály až po animované mluvící postavičky. Vlastní postavu lze vytvořit i z jediné fotografie. Editor nabízí plnou kreativní kontrolu: lze přidávat vlastní mediální soubory, odstraňovat pozadí nebo znovu generovat jednotlivé scény. Videa lze vytvářet také z produktů, webových stránek, fotografií či odkazů. Bezplatná verze ani cenové podmínky nejsou v dostupných podkladech uvedeny.
 Kategorie
-AI novinky do e-mailu
-Každý pátek 3 vybrané AI nástroje, prompt týdne a to nejdůležitější ze světa AI – přehledně, česky a bez balastu.
-Jeden z nejstarších pravidelných českých AI newsletterů.
-Podobné nástroje
-Hledáte alternativu k ClipTalk? Tady je 6 podobných nástrojů z kategorie Video generátor.
-Fliki
-Freemium
-Fliki je AI generátor videí, který převádí text, scénáře nebo blogové příspěvky na videa s hlaso...
-Synthesia
-Freemium
-Synthesia je AI platforma pro tvorbu videí z textu s využitím AI avatarů a hlasového komentáře v...
-Pollinations
-Zdarma
-Pollinations chce diverzifikovat kreativitu a šířit ji prostřednictvím digitálních ekosystémů. A...
-Designs AI
-Placené
-Designs.ai je all-in-one AI platforma, která generuje obrázky, videa, texty, prezentace, audio a...
-Genmo AI
-Zdarma
-Genmo je výzkumná laboratoř, která vyvíjí AI modely pro generování videí. Její nástroj Mochi umo...
-DeepFaceLab
-Zdarma
-DeepFaceLab je open-source software pro tvorbu deepfake videí – záměnu obličejů ve videozáznamec...
-Další nástroje v kategorii Video generátor
-Nezůstávejte jen u nejoblíbenějších – tohle jsou další nástroje z kategorie Video generátor, které stojí za prohlédnutí.

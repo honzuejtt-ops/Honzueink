@@ -3,28 +3,3 @@ Soukromá analýza proporcí obličeje z jedné fotografie – bezplatný náhle
 O nástroji
 FacialHarmonyAI provede analýzu symetrie a proporcí vašeho obličeje přímo v prohlížeči – fotografie se nenahrává do cloudu a zůstává na vašem zařízení. Z jednoho čelního snímku nástroj detekuje orientační body a vyhodnotí třetiny obličeje, rozestupy očí, vyvážení čelisti a poměry odvozené od zlatého řezu. Výsledkem je bezplatný náhled zahrnující celkový směr harmonie a hodnocení kvality fotografie, na jehož základě se můžete rozhodnout, zda chcete pokračovat dál. Plný „ateliérový“ report obsahuje 30 frontálních měření rozdělených do kategorií, popis silných stránek i oblastí k upřesnění, tipy ke stylingu a export do PDF. Cena za plný report je 9,99 USD jako jednorázová platba bez předplatného. Nástroj se záměrně vyhýbá veřejným žebříčkům a hodnotícím stupnicím – jde o informační studii proporcí, nikoli o lékařskou diagnózu ani chirurgický plán. Analýza probíhá ve čtyřech krocích: nahrání čelní fotografie s rovnoměrným osvětlením, lokální detekce orientačních bodů v prohlížeči, zobrazení bezplatného náhledu a volitelné odemčení plného reportu. Nástroj je určen komukoli, kdo chce lépe porozumět proporcím svého obličeje – například při výběru účesu, obrouček brýlí nebo nastavení osvětlení pro focení – bez tlaku virální kultury „ohodnoť mou tvář“.
 Kategorie
-AI novinky do e-mailu
-Každý pátek 3 vybrané AI nástroje, prompt týdne a to nejdůležitější ze světa AI – přehledně, česky a bez balastu.
-Jeden z nejstarších pravidelných českých AI newsletterů.
-Podobné nástroje
-Hledáte alternativu k FacialHarmonyAI? Tady je 6 podobných nástrojů z kategorie Zdravotní péče.
-Cradle
-Cena na vyžádání
-Cradle je AI platforma pro protein engineering, která generuje kandidátní proteiny a předpovídá...
-Woebot Health
-Zdarma
-Woebot Health je AI chatbot pro duševní zdraví, který vede uživatele konverzačními technikami vy...
-AI Doula
-Placené
-AI Doula je AI asistent, který poskytuje personalizovanou podporu těhotným ženám a čerstvým matk...
-Lavo AI
-Cena na vyžádání
-Lavo AI je plně autonomní robot pro tlakové mytí velkých venkovních ploch od společnosti Lucid B...
-Mindsum AI
-Zdarma
-Mindsum AI je konverzační chatbot pro podporu duševního zdraví, který poskytuje personalizované...
-Lunit
-Placené
-Lunit je medicínský AI software, který pomáhá lékařům v časné detekci rakoviny a precizní onkolo...
-Další nástroje v kategorii Zdravotní péče
-Nezůstávejte jen u nejoblíbenějších – tohle jsou další nástroje z kategorie Zdravotní péče, které stojí za prohlédnutí.

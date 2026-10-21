@@ -3,28 +3,3 @@ MiniMax H3 generuje 2K AI video se synchronizovaným zvukem z textu nebo obrázk
 O nástroji
 MiniMax H3 (Hailuo 3.0) je AI studio pro tvorbu krátkých filmových klipů v nativním rozlišení 2K se synchronizovaným zvukem. Podporuje tři základní režimy: text-to-video (popis scény, pohybu kamery, osvětlení a zvukových efektů), image-to-video (animace produktové fotografie nebo klíčového snímku) a reference-to-video, kde lze kombinovat až 9 obrázků, 3 videa a 3 zvukové reference v jedné generaci. Výstupem jsou stažitelné klipy vhodné pro reklamy, trailery, herní promo nebo sociální sítě. Studio na minimaxh3.art pracuje s kreditovým systémem – účet, kredity i fakturace jsou součástí jednoho SaaS prostředí. Generované klipy dosahují délky až 15 sekund, podporují poměry stran 16:9 i 9:16 a zvuk je synchronizován přímo při generování, takže odpadá ruční střih tichých fragmentů. Důraz je kladen na temporální konzistenci postav a prostředí napříč záběry díky funkci „identity lock“ a referenčnímu řízení pohybu. Rozhraní je dostupné v angličtině, čínštině, japonštině, němčině, francouzštině, italštině, španělštině a brazilské portugalštině. Při registraci je podle stránky nabízen 1 kredit (pokud je funkce aktivní), přičemž roční plán je inzerován se slevou 20 %. Bezplatná trvalá verze ani konkrétní ceny tarifů nejsou v dostupných podkladech uvedeny.
 Kategorie
-AI novinky do e-mailu
-Každý pátek 3 vybrané AI nástroje, prompt týdne a to nejdůležitější ze světa AI – přehledně, česky a bez balastu.
-Jeden z nejstarších pravidelných českých AI newsletterů.
-Podobné nástroje
-Hledáte alternativu k MiniMax H3 (Hailuo 3.0)? Tady je 6 podobných nástrojů z kategorie Video generátor.
-Fliki
-Freemium
-Fliki je AI generátor videí, který převádí text, scénáře nebo blogové příspěvky na videa s hlaso...
-Synthesia
-Freemium
-Synthesia je AI platforma pro tvorbu videí z textu s využitím AI avatarů a hlasového komentáře v...
-Pollinations
-Zdarma
-Pollinations chce diverzifikovat kreativitu a šířit ji prostřednictvím digitálních ekosystémů. A...
-Designs AI
-Placené
-Designs.ai je all-in-one AI platforma, která generuje obrázky, videa, texty, prezentace, audio a...
-Genmo AI
-Zdarma
-Genmo je výzkumná laboratoř, která vyvíjí AI modely pro generování videí. Její nástroj Mochi umo...
-DeepFaceLab
-Zdarma
-DeepFaceLab je open-source software pro tvorbu deepfake videí – záměnu obličejů ve videozáznamec...
-Další nástroje v kategorii Video generátor
-Nezůstávejte jen u nejoblíbenějších – tohle jsou další nástroje z kategorie Video generátor, které stojí za prohlédnutí.

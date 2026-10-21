@@ -3,28 +3,3 @@ Přepisuje audio a video soubory nebo veřejné odkazy do textu ve více než 20
 O nástroji
 VideoTranscriber je online nástroj pro přepis mluveného slova z audio a video souborů do prohledávatelného textu. Podporuje přes 20 formátů souborů (MP4, MOV, MP3, WAV, M4A a další), vkládání veřejných video odkazů i přímé nahrávání krátkých klipů přímo v prohlížeči. Nástroj zvládá více než 200 jazyků a nabízí automatické rozpoznávání jazyka. Veškerá práce probíhá v jednom pracovním prostoru, kde lze přepis prohledávat, upravovat a doplňovat o popisky mluvčích. Z přepisu lze generovat shrnutí, klíčové body, studijní poznámky, kapitoly nebo myšlenkovou mapu. Export je možný do formátů TXT, DOCX, SRT, VTT a CSV – titulkové soubory lze rovnou použít při střihu videa. Podle stránky nástroj dosud zpracoval přes 30 000 000 souborů a je využíván ve více než 190 zemích. Hodnocení uživatelů dosahuje 4,9 z 5. Typické případy užití zahrnují přepis schůzek a hovorů, výzkumné rozhovory, podcasty nebo hlasové poznámky. Podrobnosti o limitech souborů a cenách jsou uvedeny na samostatné stránce Pricing.
 Kategorie
-AI novinky do e-mailu
-Každý pátek 3 vybrané AI nástroje, prompt týdne a to nejdůležitější ze světa AI – přehledně, česky a bez balastu.
-Jeden z nejstarších pravidelných českých AI newsletterů.
-Podobné nástroje
-Hledáte alternativu k videotranscriber? Tady je 6 podobných nástrojů z kategorie Titulky.
-Good Tape
-Freemium
-Good Tape je automatická transkripční služba, která umožňuje novinářům (a dalším) snadno převést...
-Auto Subtitle Generator
-Freemium
-Automaticky generuje titulky k videím na základě přepisu zvukové stopy. Je součástí platformy Si...
-Voxqube
-Cena na vyžádání
-Voxqube je AI služba pro automatický dabing a lokalizaci videí, která převádí mluvenou řeč na př...
-ChatGPT pro Youtube
-Freemium
-Generuje textová shrnutí YouTube videí přímo v prohlížeči jako rozšíření pro Chrome – bez nutnos...
-AnthemScore
-Freemium
-Převádí audio soubory (MP3, WAV) do notového zápisu pomocí AI. AnthemScore je desktopová aplikac...
-Motionbear
-Placené
-Motionbear je AI nástroj, který automaticky generuje titulky a přepisy pro video a audio obsah....
-Další nástroje v kategorii Titulky
-Nezůstávejte jen u nejoblíbenějších – tohle jsou další nástroje z kategorie Titulky, které stojí za prohlédnutí.

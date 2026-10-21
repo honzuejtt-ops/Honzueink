@@ -3,28 +3,3 @@ Generátor videí, který z vaší fotky vytvoří 12sekundové meme video „Ti
 O nástroji
 Tip Toe AI vytváří krátká videa inspirovaná populárním tanečním meme „Tip Toeing in My Jordans“ se scénou ve stodole. Stačí nahrát fotku tanečníka (povinná, musí jít o dospělou osobu s jasně viditelným obličejem) a volitelně fotku druhé osoby jako pozorovatele – pokud druhou fotku nepřidáte, AI doplní fikční postavu pozorovatele automaticky. Podporované formáty jsou JPEG, PNG a WebP do velikosti 10 MB. Výsledkem je 12sekundové MP4 video v poměru stran 16:9 s pevně daným soundtrackem, bez možnosti volby jiné hudby. Cena činí 9,90 USD za jedno video jako jednorázová platba bez předplatného, platba probíhá přes Stripe. Pokud generování selže a poskytovatel potvrdí chybu, nástroj nabízí jeden další pokus zdarma; hotové video je ke stažení po dobu 7 dní od dokončení. Nástroj je určen pro zábavné vytváření personalizovaných meme videí a obsahuje i sekci komunitních ukázek od ostatních tvůrců. Rozhraní je v angličtině, podpora API ani open source varianta nejsou uvedeny.
 Kategorie
-AI novinky do e-mailu
-Každý pátek 3 vybrané AI nástroje, prompt týdne a to nejdůležitější ze světa AI – přehledně, česky a bez balastu.
-Jeden z nejstarších pravidelných českých AI newsletterů.
-Podobné nástroje
-Hledáte alternativu k Tip Toe AI? Tady je 6 podobných nástrojů z kategorie Video generátor.
-Fliki
-Freemium
-Fliki je AI generátor videí, který převádí text, scénáře nebo blogové příspěvky na videa s hlaso...
-Synthesia
-Freemium
-Synthesia je AI platforma pro tvorbu videí z textu s využitím AI avatarů a hlasového komentáře v...
-Pollinations
-Zdarma
-Pollinations chce diverzifikovat kreativitu a šířit ji prostřednictvím digitálních ekosystémů. A...
-Designs AI
-Placené
-Designs.ai je all-in-one AI platforma, která generuje obrázky, videa, texty, prezentace, audio a...
-Genmo AI
-Zdarma
-Genmo je výzkumná laboratoř, která vyvíjí AI modely pro generování videí. Její nástroj Mochi umo...
-DeepFaceLab
-Zdarma
-DeepFaceLab je open-source software pro tvorbu deepfake videí – záměnu obličejů ve videozáznamec...
-Další nástroje v kategorii Video generátor
-Nezůstávejte jen u nejoblíbenějších – tohle jsou další nástroje z kategorie Video generátor, které stojí za prohlédnutí.

@@ -3,28 +3,3 @@ Převede PDF, prezentace nebo poznámky do strukturovaného studijního průvodc
 O nástroji
 Study Guide Maker je AI nástroj pro studenty a učitele, který z nahraných souborů (PDF, PPTX, DOCX, TXT) nebo vloženého textu vytvoří kompletní studijní průvodce. Výstup obsahuje osnovu, klíčové pojmy, slovníček, procvičovací otázky a kartičky – přičemž každý bod je opatřen odkazem na konkrétní stránku nebo snímek zdrojového materiálu. Najednou lze nahrát až 3 soubory s celkovým rozsahem do 20 stránek v bezplatném režimu. Průvodce lze exportovat do PDF nebo Wordu v tiskové kvalitě, případně upravit v Google Docs. Kartičky je možné exportovat jako CSV soubor kompatibilní s aplikacemi Anki nebo Quizlet. Nástroj nabízí tři úrovně hloubky zpracování (rychlá, standardní, hluboká) a tři vzdělávací úrovně (střední škola, AP/IB, vysoká škola). Učitelský režim umožňuje vygenerovat pracovní list s doplňováním a samostatný klíč odpovědí – tato funkce je dostupná v placených plánech Student Plus a Student Pro. Bezplatný přístup nevyžaduje registraci ani vytvoření účtu a umožňuje vygenerovat až 2 průvodce denně. Soubory jsou zpracovány přímo v prohlížeči a nejsou ukládány na serveru. Pro náročnější využití jsou k dispozici placené plány (Starter, Exam, Semester a studentské tarify Plus/Pro).
 Kategorie
-AI novinky do e-mailu
-Každý pátek 3 vybrané AI nástroje, prompt týdne a to nejdůležitější ze světa AI – přehledně, česky a bez balastu.
-Jeden z nejstarších pravidelných českých AI newsletterů.
-Podobné nástroje
-Hledáte alternativu k Study Guide Maker? Tady je 6 podobných nástrojů z kategorie Vzdělávání.
-GPTZero
-Freemium
-Detektor textů od umělé inteligence — pozná obsah z ChatGPT, GPT-5, Claude i Gemini a odhalí i p...
-WolframAlpha
-Freemium
-Vypočítává odborné odpovědi na dotazy v přirozeném jazyce pomocí algoritmů, znalostní báze a AI...
-Humata AI
-Freemium
-Humata AI je nástroj pro analýzu dokumentů, který umožňuje klást otázky nad nahranými soubory a...
-Wisdolia
-Freemium
-Wisdolia (nově přejmenovaná na Jungle AI) je AI nástroj, který automaticky generuje studijní fla...
-Poe
-Freemium
-Poe je agregátorová AI platforma, která zpřístupňuje desítky předních AI modelů – GPT, Claude, G...
-Teach Anything
-Freemium
-Teach Anything je vzdělávací nástroj, který pomocí AI okamžitě generuje odpovědi na libovolné ot...
-Další nástroje v kategorii Vzdělávání
-Nezůstávejte jen u nejoblíbenějších – tohle jsou další nástroje z kategorie Vzdělávání, které stojí za prohlédnutí.

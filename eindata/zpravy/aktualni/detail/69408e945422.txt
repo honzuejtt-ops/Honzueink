@@ -1,3 +1,6 @@
 „Cílem opatření je zajistit bezpečný provoz webových stránek. Po dobu odstávky nebudou stránky ani jejich obsah dostupné veřejnosti. Provoz bude obnoven po provedení doporučených bezpečnostních aktualizací,“ uvádí vládní webové stránky.
 Odstávka souvisí s kritickými bezpečnostními chybami v PHP, na kterém stojí množství internetových stránek a e-shopů.
-Ty by totiž mohly útočníkům umožnit ovládnout napadené weby a ukrást data. Kvůli chybám již vypnula webové stránky řada evropských institucí.
+Ty by totiž mohly útočníkům umožnit ovládnout napadené weby a ukrást data. Kvůli chybám již vypnula webové stránky řada evropských institucí například v Nizozemsku a Finsku. Problém musí vyřešit provozovatelé webů tak, že je aktualizují na opravenou verzi. Uživatelům proto mohou být stránky nepřístupné.
+Kvůli bezpečnostním rizikům programovacího jazyka PHP odstavil dočasně některé své weby hydrometeorologický ústav. Na odstranění problémů pracuje.
+Před zranitelností PHP varovali vývojáři již v úterý. Českou vládu upozornil na nutnost oprav Národní úřad pro kybernetickou bezpečnost (NÚKIB), který zároveň apeloval na urychlenou aktualizaci.
+„Doporučení je aktualizovat okamžitě. Za potenciální indikátory kompromitace lze považovat například neobvyklé procesy spouštěné službami PHP, které mohou naznačovat pokus o zneužití zranitelnosti,“ varoval provozovatele.

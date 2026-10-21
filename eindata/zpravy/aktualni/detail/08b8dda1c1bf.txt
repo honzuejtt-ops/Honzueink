@@ -1,0 +1,30 @@
+AI Text Watermark Remover
+Nástroj pro čištění AI textů od neviditelných znaků, Markdown zbytků a přepis textu při vloženém vodoznaku.
+O nástroji
+AI Text Watermark Remover se zaměřuje na tři typy stop, které AI modely zanechávají v textu: neviditelné Unicode znaky (například nulové mezery U+200B nebo U+202F), Markdown formátování a statistické vodoznaky zakódované přímo do volby slov. Bezplatné nástroje pro detekci neviditelných znaků a čištění Markdown fungují přímo v prohlížeči bez nutnosti přihlášení a bez odesílání textu na server. Nástroj podporuje výstupy z Claude, ChatGPT, Gemini a dalších modelů. Bezplatný skener detekuje přes 60 typů neviditelných kódových bodů, zobrazí jejich počet a umožní přesné smazání bez přepisu vět. Markdown cleaner odstraní nadpisy, seznamy, uvozovky a zvýrazňovací značky do čistého prostého textu vhodného pro CMS nebo redakční systémy. Placená funkce Pro pak provede přepis zachovávající smysl textu v případech, kdy je vodoznak zakódován přímo do formulace – například u Claudova statistického vodoznaku v podobě vzoru výběru slov. Nástroj je určen především pro SEO a obsahové týmy, redaktory, agentury a technické autory, kteří potřebují sanitizovat AI výstupy před vložením do WordPressu, Webflow nebo jiných headless CMS. Stránka výslovně uvádí, že žádný nástroj nemůže zaručit obejití detektorů a výsledky se liší.
+Kategorie
+AI novinky do e-mailu
+Každý pátek 3 vybrané AI nástroje, prompt týdne a to nejdůležitější ze světa AI – přehledně, česky a bez balastu.
+Jeden z nejstarších pravidelných českých AI newsletterů.
+Podobné nástroje
+Hledáte alternativu k AI Text Watermark Remover? Tady je 6 podobných nástrojů z kategorie Psaní textů.
+GPT3 Playground
+Placené
+OpenAI Playground je webový nástroj pro interaktivní experimentování s modely OpenAI (GPT-4o, GP...
+Write My Essays AI
+Placené
+Academized je placená služba psaní akademických prací od lidských autorů, která vypracuje eseje,...
+LanguageTool
+Freemium
+Kontroluje gramatiku, pravopis a interpunkci v textech pomocí AI ve více než 30 jazycích. Nabízí...
+Good Tape
+Freemium
+Good Tape je automatická transkripční služba, která umožňuje novinářům (a dalším) snadno převést...
+Penelope AI
+Freemium
+Penelope AI je asistent pro psaní, který pomocí AI generuje, přepisuje, parafrázuje a shrnuje te...
+Detect GPT
+Zdarma
+Detekuje obsah generovaný umělou inteligencí na webových stránkách. DetectGPT je rozšíření pro C...
+Další nástroje v kategorii Psaní textů
+Nezůstávejte jen u nejoblíbenějších – tohle jsou další nástroje z kategorie Psaní textů, které stojí za prohlédnutí.

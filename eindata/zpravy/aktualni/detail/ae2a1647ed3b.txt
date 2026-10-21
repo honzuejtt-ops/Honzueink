@@ -1,0 +1,42 @@
+Dime Dime Baby AI
+Nástroj promění jednu fotografii na krátké AI taneční video inspirované trendem BbY WOW (Dime Dime Baby).
+O nástroji
+Dime Dime Baby AI je generátor videí, který z jedné nahrané fotografie (JPG, PNG nebo WebP, max. 10 MB) vytvoří krátké taneční video podle virálního trendu „Dime Dime Baby“ navazujícího na píseň BbY WOW od KAROL G, Judeline a rusowsky. Uživatel nahraje fotku sebe nebo svého mazlíčka, vybere prostředí tance (párty sál, garáž, taneční studio, zahradní párty, neonová podlaha nebo verze pro domácí mazlíčky) a může doplnit vlastní poznámky k choreografii. Výsledkem je MP4 video ve standardním nastavení 480p, 15 sekund, poměr stran 9:16. Služba negeneruje originální skladbu BbY WOW ani nevkládá uživatele do původního klipu – jde o novou AI interpretaci podle textového zadání tance (příchod, kousnutí do sladkého pečiva concha, pohled do kamery, odchod tanečním krokem). Zvuk trendové písně je třeba doplnit až dodatečně v aplikaci, kam uživatel video nahrává. Nástroj nepodporuje fotografie dětí, celebrit ani veřejně známých osob. Cena je 9,90 USD za jedno standardní 15sekundové video, případně 29 USD za balíček pěti videí. Platba je jednorázová bez předplatného a neúspěšné renderování se neúčtuje. Bezplatná verze ani zkušební doba nejsou v nabídce uvedeny.
+Klíčové vlastnosti
+- Generuje video z jedné nahrané fotografie
+- Výběr z šesti tanečních prostředí (párty sál, garáž, studio…)
+- Volitelné vlastní poznámky k choreografii
+- Výstup MP4 480p, 15 sekund, poměr 9:16
+Časté dotazy
+Co přesně nástroj vytvoří z mé fotky?
+Z jedné nahrané fotografie (JPG, PNG nebo WebP, max. 10 MB) vygeneruje krátké 15sekundové taneční video podle trendu Dime Dime Baby ve formátu MP4, 480p, 9:16. Jde o novou AI interpretaci tance, ne o vložení do originálního klipu.
+Kolik to stojí?
+Jedno standardní 15sekundové video stojí 9,90 USD, balíček pěti videí vyjde na 29 USD. Platí se jednorázově bez předplatného a neúspěšný render se neúčtuje.
+Pro koho je nástroj určen a jak začít?
+Stačí nahrát jednu jasnou fotku dospělé osoby nebo mazlíčka, vybrat taneční prostředí a případně doplnit poznámky ke choreografii. Nástroj nepodporuje fotky dětí, celebrit ani veřejně známých osob, hudbu BbY WOW je třeba doplnit dodatečně v jiné aplikaci.
+Kategorie
+AI novinky do e-mailu
+Každý pátek 3 vybrané AI nástroje, prompt týdne a to nejdůležitější ze světa AI – přehledně, česky a bez balastu.
+Jeden z nejstarších pravidelných českých AI newsletterů.
+Podobné nástroje
+Hledáte alternativu k Dime Dime Baby AI? Tady je 6 podobných nástrojů z kategorie Video generátor.
+Fliki
+Freemium
+Fliki je AI generátor videí, který převádí text, scénáře nebo blogové příspěvky na videa s hlaso...
+Synthesia
+Freemium
+Synthesia je AI platforma pro tvorbu videí z textu s využitím AI avatarů a hlasového komentáře v...
+Pollinations
+Zdarma
+Pollinations chce diverzifikovat kreativitu a šířit ji prostřednictvím digitálních ekosystémů. A...
+Designs AI
+Placené
+Designs.ai je all-in-one AI platforma, která generuje obrázky, videa, texty, prezentace, audio a...
+Genmo AI
+Zdarma
+Genmo je výzkumná laboratoř, která vyvíjí AI modely pro generování videí. Její nástroj Mochi umo...
+DeepFaceLab
+Zdarma
+DeepFaceLab je open-source software pro tvorbu deepfake videí – záměnu obličejů ve videozáznamec...
+Další nástroje v kategorii Video generátor
+Nezůstávejte jen u nejoblíbenějších – tohle jsou další nástroje z kategorie Video generátor, které stojí za prohlédnutí.

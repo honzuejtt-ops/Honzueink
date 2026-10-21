@@ -1,0 +1,42 @@
+AI Music Mastering
+Online masteringový nástroj pro nahrávky i AI generovanou hudbu s osmi zvukovými profily a bezplatným náhledem výsledku.
+O nástroji
+AI Music Mastering je webová aplikace pro automatický mastering dokončených mixů – ať už pocházejí z vlastního nahrávání, DAW, nebo z generátorů jako Suno či Udio. Po nahrání souboru (WAV, MP3, FLAC nebo AIFF, max. 200 MB a 10 minut) si vyberete jeden z osmi zvukových profilů: například „Universal“ pro vyvážený tón s jemnou kompresí, „Fire“ pro silnější basy a jasnější výšky, „Spatial“ pro širší stereo s nádechem reverbu nebo „Cinematic“ pro plnější nízké frekvence se saturací. Nahrání, výběr profilu, úprava intenzity a EQ i srovnání originálu s masterem jsou zdarma. Stažení výsledného souboru vyžaduje členství za 9,90 $ měsíčně. Členové mohou exportovat ve formátu 24bitového WAV, 16bitového WAV nebo MP3 o kvalitě 320 kbps, využívat mastering podle referenční skladby a prohlížet celou historii svých songů. Bezplatné účty vidí pouze poslední 3 uložené skladby, starší záznamy zůstávají uloženy a odemknou se s členstvím. Nástroj pracuje s audio-processingovými presety, nikoli s trénovaným AI modelem v tradičním slova smyslu – mastering upravuje tónovou rovnováhu, dynamiku a hlasitost celého mixu, ale neprovádí mixování jednotlivých stop, neopravuje texty ani neodstraňuje artefakty z AI generátorů. Rozhraní je dostupné v angličtině přímo v prohlížeči bez nutnosti instalace.
+Klíčové vlastnosti
+- osm zvukových profilů (Universal, Fire, Spatial, Cinematic a další)
+- náhled a srovnání originálu s masterem zdarma
+- úprava intenzity a EQ před exportem
+- mastering podle referenční skladby (pro členy)
+Časté dotazy
+Co nástroj AI Music Mastering umí?
+Automaticky vymasteruje nahraný mix pomocí jednoho z osmi zvukových profilů – upraví tónovou rovnováhu, dynamiku a hlasitost celé skladby. Jde o audio-processingové presety, nikoli o mixování jednotlivých stop.
+Kolik stojí AI Music Mastering?
+Nahrání, výběr profilu, úprava EQ i srovnání originálu s masterem jsou zdarma. Stažení hotového souboru a plná historie skladeb vyžadují členství za 9,90 $ měsíčně.
+Pro koho je nástroj vhodný a jak začít?
+Hodí se pro hudebníky, producenty i uživatele AI generátorů jako Suno či Udio, kteří chtějí dotáhnout hotový mix. Stačí nahrát soubor WAV, MP3, FLAC nebo AIFF, vybrat zvukový profil a poslechnout si náhled masteru zdarma.
+Kategorie
+AI novinky do e-mailu
+Každý pátek 3 vybrané AI nástroje, prompt týdne a to nejdůležitější ze světa AI – přehledně, česky a bez balastu.
+Jeden z nejstarších pravidelných českých AI newsletterů.
+Podobné nástroje
+Hledáte alternativu k AI Music Mastering? Tady je 6 podobných nástrojů z kategorie Hudba.
+AI Poem Generator
+Zdarma
+Generuje rýmované básně na libovolné téma zadané uživatelem. Nástroj je dostupný zdarma online b...
+Riffusion
+Freemium
+Google Flow Music je generativní AI platforma, která umožňuje vytvářet, remixovat a sdílet hudbu...
+Pollinations
+Zdarma
+Pollinations chce diverzifikovat kreativitu a šířit ji prostřednictvím digitálních ekosystémů. A...
+Boomy
+Freemium
+Generuje originální hudební skladby pomocí AI během několika sekund. Boomy je webová platforma,...
+AI Jingle Generator
+Freemium
+Generuje jingly, DJ dropy, station ID a podcastové intra pomocí AI hlasové syntézy a knihovny zv...
+Spot A Like
+Placené
+Generuje Spotify playlisty s podobnými skladbami na základě zadané písně nebo interpreta.
+Další nástroje v kategorii Hudba
+Nezůstávejte jen u nejoblíbenějších – tohle jsou další nástroje z kategorie Hudba, které stojí za prohlédnutí.

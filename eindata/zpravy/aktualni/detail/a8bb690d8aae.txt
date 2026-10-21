@@ -1,0 +1,42 @@
+Music Video AI
+AI generátor hudebních videí pro hudebníky – nahrajete píseň, popíšete náladu a nástroj vytvoří beat-synced video draft k doladění.
+O nástroji
+Music Video AI je generátor hudebních videí určený hudebníkům, producentům a tvůrcům obsahu. Stačí nahrát píseň a popsat náladu nebo styl, nástroj analyzuje rytmus a strukturu skladby a vygeneruje beat-synced video draft. K dispozici jsou tři způsoby práce: Agent (AI hudební režisér vedoucí tvorbu formou konverzace a scénického vedení), Workflow (krokové vytváření scén s nastavením stylu a timingu) a Editor (plná kontrola nad timeline, pořadím klipů a vizuálními detaily). Nástroj umí také vygenerovat hudbu podle zadané nálady, žánru a tempa, syntetizovat namluvení či dialogy ze scénáře a automaticky sladit vizuály s tempem skladby. Cenový model je freemium – lze začít zdarma („Start free“) a vyzkoušet základní workflow, konkrétní limity free verze ale nejsou v podkladech specifikovány. Placené tarify fungují na kreditovém systému s ročním fakturováním a slevou 20 %: Basic za 39,90 USD/měsíc, Pro za 69,90 USD/měsíc (cca 5–11 draftů měsíčně) a Creator za 159,90 USD/měsíc (cca 14–27 draftů měsíčně), ceny po slevě jsou nižší. Nástroj negarantuje komerční práva ke každému vygenerovanému nebo nahranému assetu – rozsah práv závisí na zvoleném plánu, vstupních materiálech a aktuálních podmínkách použití. Informace o API nebo open source řešení nejsou v dostupných podkladech uvedeny.
+Klíčové vlastnosti
+- Beat-synced video draft z nahrané písně
+- Tři režimy: Agent, Workflow a Editor
+- Generování hudby podle nálady, žánru a tempa
+- Syntéza namluvení a dialogů ze scénáře
+Časté dotazy
+Co Music Video AI přesně umí?
+Nahrajete píseň, popíšete náladu nebo styl a nástroj analyzuje rytmus a strukturu skladby a vygeneruje beat-synced video draft, který lze dál upravovat v Agentovi, Workflow nebo Editoru. Umí také vygenerovat hudbu podle zadané nálady a žánru a syntetizovat namluvení ze scénáře.
+Kolik Music Video AI stojí?
+Lze začít zdarma („Start free“), konkrétní limity free verze ale nejsou uvedené. Placené tarify fungují na kreditech s ročním fakturováním: Basic 39,90 USD/měsíc, Pro 69,90 USD/měsíc a Creator 159,90 USD/měsíc.
+Pro koho je nástroj určený a jak začít?
+Je určený hudebníkům, producentům a tvůrcům obsahu, kteří chtějí rychle vytvořit video k písni bez tradičního střihu. Stačí kliknout na „Start free“, nahrát skladbu a popsat požadovanou náladu či styl.
+Kategorie
+AI novinky do e-mailu
+Každý pátek 3 vybrané AI nástroje, prompt týdne a to nejdůležitější ze světa AI – přehledně, česky a bez balastu.
+Jeden z nejstarších pravidelných českých AI newsletterů.
+Podobné nástroje
+Hledáte alternativu k Music Video AI? Tady je 6 podobných nástrojů z kategorie Hudba.
+AI Poem Generator
+Zdarma
+Generuje rýmované básně na libovolné téma zadané uživatelem. Nástroj je dostupný zdarma online b...
+Riffusion
+Freemium
+Google Flow Music je generativní AI platforma, která umožňuje vytvářet, remixovat a sdílet hudbu...
+Pollinations
+Zdarma
+Pollinations chce diverzifikovat kreativitu a šířit ji prostřednictvím digitálních ekosystémů. A...
+Boomy
+Freemium
+Generuje originální hudební skladby pomocí AI během několika sekund. Boomy je webová platforma,...
+AI Jingle Generator
+Freemium
+Generuje jingly, DJ dropy, station ID a podcastové intra pomocí AI hlasové syntézy a knihovny zv...
+Spot A Like
+Placené
+Generuje Spotify playlisty s podobnými skladbami na základě zadané písně nebo interpreta.
+Další nástroje v kategorii Hudba
+Nezůstávejte jen u nejoblíbenějších – tohle jsou další nástroje z kategorie Hudba, které stojí za prohlédnutí.

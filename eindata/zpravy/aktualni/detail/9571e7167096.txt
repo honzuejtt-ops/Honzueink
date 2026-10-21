@@ -1,0 +1,30 @@
+MiniMax H4
+Webové studio pro generování stylizovaných video klipů s pohybem postav z textu nebo obrázků.
+O nástroji
+MiniMax H4 je nezávislé webové studio zaměřené na tvorbu krátkých animovaných klipů s důrazem na pohyb postav, výrazy obličeje a vizuální stylizaci. Pracovat lze ve dvou režimech – text-to-video a image-to-video – přičemž studio podporuje formáty 16:9, 9:16 i čtvercový výřez. Délka generovaného klipu a dostupné možnosti závisí na zvoleném modelu a plánu. Studio nabízí nástroje pro nácvik plného pohybu těla (skoky, otočky, gesta), jemných mikrovýrazů obličeje (pohyby obočí, směr pohledu, emoční přechody) a konzistentní stylizaci napříč anime, ilustračním nebo game-CG stylem. Před každým generováním zobrazí studio přesnou kalkulaci kreditů na základě zvoleného modelu, délky a rozlišení, takže víte cenu předem. Nástroj je určen animátorům, indie herním vývojářům, tvůrcům storyboardů, designérům pro sociální sítě i brand týmům, kteří chtějí rychle prototypovat pohybové sekvence postav bez nutnosti 3D rigování. Bezplatná verze není v dostupných podkladech uvedena; stránka zmiňuje uvítací kredity pro způsobilé účty a slevu 20 % na roční plány.
+Kategorie
+AI novinky do e-mailu
+Každý pátek 3 vybrané AI nástroje, prompt týdne a to nejdůležitější ze světa AI – přehledně, česky a bez balastu.
+Jeden z nejstarších pravidelných českých AI newsletterů.
+Podobné nástroje
+Hledáte alternativu k MiniMax H4? Tady je 6 podobných nástrojů z kategorie Video generátor.
+Fliki
+Freemium
+Fliki je AI generátor videí, který převádí text, scénáře nebo blogové příspěvky na videa s hlaso...
+Synthesia
+Freemium
+Synthesia je AI platforma pro tvorbu videí z textu s využitím AI avatarů a hlasového komentáře v...
+Pollinations
+Zdarma
+Pollinations chce diverzifikovat kreativitu a šířit ji prostřednictvím digitálních ekosystémů. A...
+Designs AI
+Placené
+Designs.ai je all-in-one AI platforma, která generuje obrázky, videa, texty, prezentace, audio a...
+Genmo AI
+Zdarma
+Genmo je výzkumná laboratoř, která vyvíjí AI modely pro generování videí. Její nástroj Mochi umo...
+DeepFaceLab
+Zdarma
+DeepFaceLab je open-source software pro tvorbu deepfake videí – záměnu obličejů ve videozáznamec...
+Další nástroje v kategorii Video generátor
+Nezůstávejte jen u nejoblíbenějších – tohle jsou další nástroje z kategorie Video generátor, které stojí za prohlédnutí.

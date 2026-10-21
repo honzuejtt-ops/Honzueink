@@ -1,0 +1,42 @@
+Veo 4
+Veo 4 je webové AI studio pro tvorbu krátkých videí z textu nebo obrázků s řízením kamery, osvětlení a zvuku.
+O nástroji
+Veo 4 je nezávislé multi-modelové webové studio na adrese veo4-video.art určené tvůrcům, kreativním agenturám, e-commerce značkám i filmovým vypravěčům. Umožňuje generovat krátké videoklipy z textových promptů nebo referenčních obrázků s přesným řízením pohybu kamery (tracking shot, push-in, nízký úhel), směru klíčového světla a atmosféry scény. Na podporovaných modelech lze zároveň generovat synchronizovaný ambientní zvuk, foley efekty nebo řeč přímo vedle vizuálu. Studio nabízí čtyři délky klipů (4, 6 nebo 8 sekund dle modelu), formáty 16:9 i 9:16 a workflow jak pro text-to-video, tak pro image-to-video. Před každým renderem zobrazí systém předem kalkulaci kreditů, takže víte přesnou cenu ještě před spuštěním generování. Historii generování, zůstatek kreditů i výstupy spravujete v jednom přehledném webovém rozhraní bez nutnosti instalace. Platforma je navržena pro rychlou iteraci – stačí upravit popis záběru, osvětlení nebo zvukového záměru a okamžitě zkontrolovat výsledek. Mezi typické použití patří tvorba storyboardů, testování vizuálních konceptů, animace produktových fotografií pro e-shopy nebo příprava cinematických předvizualizací. Bezplatná verze není v dostupných informacích uvedena; nástroj pracuje na kreditním modelu s možností ročního předplatného se slevou 20 %.
+Klíčové vlastnosti
+- Řízení pohybu kamery – tracking shot, push-in, nízký úhel
+- Nastavení směru klíčového světla a atmosféry scény
+- Synchronizovaný ambientní zvuk a foley na podporovaných modelech
+- Text-to-video i image-to-video workflow
+Časté dotazy
+Co Veo 4 umí vygenerovat?
+Krátké video klipy z textového promptu nebo referenčního obrázku s řízením pohybu kamery, osvětlení a volitelně i synchronizovaného zvuku. Klipy mají délku 4, 6 nebo 8 sekund podle zvoleného modelu a formát 16:9 nebo 9:16.
+Kolik Veo 4 stojí?
+Nástroj funguje na kreditním modelu, kdy systém zobrazí cenu v kreditech ještě před spuštěním renderu. K dispozici je roční předplatné se slevou 20 %, přesný ceník ale v podkladech uveden není.
+Pro koho je Veo 4 vhodný a jak začít?
+Je určen digitálním tvůrcům, kreativním agenturám, e-commerce značkám, režisérům i herním designérům pro storyboardy, testování konceptů a animaci produktových fotek. Stačí zadat text nebo nahrát obrázek přímo ve webovém rozhraní bez instalace.
+Kategorie
+AI novinky do e-mailu
+Každý pátek 3 vybrané AI nástroje, prompt týdne a to nejdůležitější ze světa AI – přehledně, česky a bez balastu.
+Jeden z nejstarších pravidelných českých AI newsletterů.
+Podobné nástroje
+Hledáte alternativu k Veo 4? Tady je 6 podobných nástrojů z kategorie Úprava videa.
+Descript
+Freemium
+Descript je AI editor videa a podcastů, který umožňuje stříhat zvuk i video úpravou přepisu text...
+Papercup
+Cena na vyžádání
+Papercup je AI platforma pro dabování a lokalizaci videí do více jazyků, která zachovává tón, te...
+Captions
+Freemium
+Captions je AI video editor, který automaticky generuje titulky, upravuje záběry a připravuje vi...
+Munch
+Freemium
+Převádí dlouhá videa na krátké klipy optimalizované pro sociální sítě. Munch automaticky identif...
+CAPTURELAB
+Freemium
+Capturelab je AI nástroj pro streamery, který automaticky detekuje a vystřihuje nejlepší herní m...
+Translate.video
+Placené
+Translate.video překládá videa do 75+ jazyků pomocí AI – automaticky generuje titulky, dabuje hl...
+Další nástroje v kategorii Úprava videa
+Nezůstávejte jen u nejoblíbenějších – tohle jsou další nástroje z kategorie Úprava videa, které stojí za prohlédnutí.

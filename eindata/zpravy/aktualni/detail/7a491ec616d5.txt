@@ -1,0 +1,30 @@
+Bank Statement Converter
+Online nástroj pro převod bankovních výpisů z PDF nebo obrázků do Excelu, CSV a JSON, jednotlivě i v dávce až 100 souborů.
+O nástroji
+Bank Statement Converter umožňuje nahrát jeden výpis nebo dávku až 100 souborů (PDF, JPG, PNG, WEBP, TIFF do 50 MB) a převést je do formátu Excel, CSV nebo JSON. Nástroj podporuje jednotlivé i hromadné zpracování z více souborů, složky nebo ZIP archivu a výsledky lze stáhnout samostatně, jako ZIP, nebo sloučené do jednoho Excel či CSV exportu se zdrojovými názvy souborů. Před stažením lze zkontrolovat náhled transakcí – normalizovaná data, popisy, debety, kredity, zůstatky a reference. Pokud výpis obsahuje průběžné zůstatky, nástroj ověřuje dostupnou aritmetiku debetů a kreditů a upozorní na případné nesrovnalosti (ověření do dvou centů, nejde o audit). Zpracovat lze i skenované nebo vyfocené výpisy, kvalita skenu ale ovlivňuje přesnost extrakce a výsledek je třeba zkontrolovat proti originálu. Nahraný soubor je odeslán přímo službě OpenRouter za účelem extrakce dat, aplikace sama kopii výpisu ani výsledku neukládá; platí zásady uchovávání dat poskytovatele OpenRouter. Podle zdroje je tato verze nástroje zdarma a nevyžaduje placený plán ani kredity.
+Kategorie
+AI novinky do e-mailu
+Každý pátek 3 vybrané AI nástroje, prompt týdne a to nejdůležitější ze světa AI – přehledně, česky a bez balastu.
+Jeden z nejstarších pravidelných českých AI newsletterů.
+Podobné nástroje
+Hledáte alternativu k Bank Statement Converter? Tady je 6 podobných nástrojů z kategorie Tabulky / Excel.
+Luminal
+Freemium
+Luminal je AI copilot pro práci s tabulkami, který čistí, transformuje a analyzuje data přirozen...
+Excel Formula Bot
+Freemium
+Převádí textové dotazy v přirozeném jazyce na vzorce pro Excel a Google Sheets a funguje jako AI...
+SheetAI.app
+Freemium
+SheetAI je doplněk pro Google Sheets, který umožňuje používat AI přímo ve spreadsheetech pomocí...
+Formula Generator
+Freemium
+Vzdělávací web, který učí, jak pomocí prompt engineeringu a ChatGPT generovat vzorce pro Excel a...
+DataDistillr
+Zkušební verze
+DataDistillr je enterprise platforma pro analýzu dat, která umožňuje dotazovat a spojovat data z...
+Tomsplanner
+9.95 $ / měs.
+Tomsplanner - Tvůj osobní asistent pro projektové plánování! S naší revoluční umělou inteligencí...
+Další nástroje v kategorii Tabulky / Excel
+Nezůstávejte jen u nejoblíbenějších – tohle jsou další nástroje z kategorie Tabulky / Excel, které stojí za prohlédnutí.

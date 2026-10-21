@@ -1,0 +1,30 @@
+Wan 4
+Wan 4 generuje krátké video klipy z textu nebo obrázků s podporou dvojjazyčných promptů a ovládáním více objektů ve scéně.
+O nástroji
+Wan 4 je nezávislé webové studio pro generování krátkých komerčních videí a kreativních projektů. Výchozím modelem je Wan 2.7 a studio podporuje režimy text-to-video i image-to-video. Prompty lze zadávat v angličtině nebo čínštině, přičemž studio umožňuje detailně řídit pohyb kamery – například orbitální otáčení, panoramatické záběry nebo přiblížení na produkt. Klipy lze generovat ve formátech 16:9, 9:16 i čtvercovém poměru stran, délka záběru dosahuje až 15 sekund v závislosti na zvoleném modelu a tarifu. Studio je navrženo především pro e-commerce týmy, digitální marketéry a tvůrce obsahu. Klíčovou funkcí je koordinace více objektů v jedné scéně – například ruka držící obal nebo láhev nalévající do sklenice – přičemž studio udržuje prostorovou konzistenci prvků i při pohybu kamery. K dispozici jsou také zvukové možnosti: ambientní zvuk, hlasové stopy a efekty u podporovaných modelů. Před každým generováním studio zobrazí předem vyčíslené kreditové náklady, takže vždy víte, kolik kredit spotřebujete. Kredity jsou dostupné formou předplatného nebo jako nevypršitelné kreditové balíčky. Roční plány nabízejí 20% úsporu oproti měsíčnímu předplatnému.
+Kategorie
+AI novinky do e-mailu
+Každý pátek 3 vybrané AI nástroje, prompt týdne a to nejdůležitější ze světa AI – přehledně, česky a bez balastu.
+Jeden z nejstarších pravidelných českých AI newsletterů.
+Podobné nástroje
+Hledáte alternativu k Wan 4? Tady je 6 podobných nástrojů z kategorie Video generátor.
+Fliki
+Freemium
+Fliki je AI generátor videí, který převádí text, scénáře nebo blogové příspěvky na videa s hlaso...
+Synthesia
+Freemium
+Synthesia je AI platforma pro tvorbu videí z textu s využitím AI avatarů a hlasového komentáře v...
+Pollinations
+Zdarma
+Pollinations chce diverzifikovat kreativitu a šířit ji prostřednictvím digitálních ekosystémů. A...
+Designs AI
+Placené
+Designs.ai je all-in-one AI platforma, která generuje obrázky, videa, texty, prezentace, audio a...
+Genmo AI
+Zdarma
+Genmo je výzkumná laboratoř, která vyvíjí AI modely pro generování videí. Její nástroj Mochi umo...
+DeepFaceLab
+Zdarma
+DeepFaceLab je open-source software pro tvorbu deepfake videí – záměnu obličejů ve videozáznamec...
+Další nástroje v kategorii Video generátor
+Nezůstávejte jen u nejoblíbenějších – tohle jsou další nástroje z kategorie Video generátor, které stojí za prohlédnutí.

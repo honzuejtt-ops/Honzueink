@@ -1,0 +1,30 @@
+PixelSniff
+Detektor AI obrázků, který po nahrání fotky během pár sekund určí pravděpodobnost (0–100 %), že byla vytvořena umělou inteligencí.
+O nástroji
+PixelSniff je nástroj pro kontrolu fotografií, zda nebyly vytvořeny nebo upraveny pomocí AI. Stačí nahrát obrázek ve formátu JPG, PNG, WebP nebo HEIC (až 50 MB) přetažením, vložením ze schránky nebo přes odkaz, přičemž je možné nahrát i více souborů najednou pro hromadnou kontrolu. Registrace ani přihlášení nejsou pro základní použití potřeba. Analýza probíhá pomocí více detekčních enginů současně, které hledají stopy po generátorech jako Midjourney, DALL·E, Stable Diffusion, Flux nebo Gemini, a nástroj dokáže upozornit i na deepfakes, prohozené obličeje či částečně AI dogenerované nebo retušované fotky. Výsledkem je jedno souhrnné skóre pravděpodobnosti AI původu s jasným verdiktem. Podrobnější report nabízí skóre jednotlivých enginů, AI heatmapu a zdůvodnění výsledku, přičemž je k dispozici i ukázkový vzorový report. Ke každému výsledku lze vytvořit soukromý nesdílený odkaz, který funguje jen pro lidi, kterým ho uživatel sám pošle, a jeho sdílení lze kdykoliv zastavit. Informace o konkrétní cenové politice v dostupném textu uvedeny nejsou.
+Kategorie
+AI novinky do e-mailu
+Každý pátek 3 vybrané AI nástroje, prompt týdne a to nejdůležitější ze světa AI – přehledně, česky a bez balastu.
+Jeden z nejstarších pravidelných českých AI newsletterů.
+Podobné nástroje
+Hledáte alternativu k PixelSniff? Tady je 6 podobných nástrojů z kategorie Detektor AI obsahu.
+GPTZero
+Freemium
+Detektor textů od umělé inteligence — pozná obsah z ChatGPT, GPT-5, Claude i Gemini a odhalí i p...
+AI Detector - Text Validator
+Freemium
+Detekuje AI-generovaný text a přepisuje ho do přirozeně znějící lidské podoby. Mobilní aplikace...
+Detect GPT
+Zdarma
+Detekuje obsah generovaný umělou inteligencí na webových stránkách. DetectGPT je rozšíření pro C...
+Truebees
+1.10 $
+Objevuj deepfake videa s pomocí Truebees! Chceš vědět, co je skutečné a co je jen umělá iluze? V...
+aicheck
+Zdarma
+Open-source CLI nástroj, který offline detekuje AI-generované obrázky, videa a audio pomocí anal...
+Illuminarty
+Freemium
+Illuminarty detekuje AI generovaný obsah – rozpoznává AI obrázky, deepfaky i texty a označuje ko...
+Další nástroje v kategorii Detektor AI obsahu
+Nezůstávejte jen u nejoblíbenějších – tohle jsou další nástroje z kategorie Detektor AI obsahu, které stojí za prohlédnutí.

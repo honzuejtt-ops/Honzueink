@@ -56,7 +56,6 @@ MEDIA_ALIASES = {
     "denikalarm.cz": "Alarm",
     "respekt.cz": "Resp",
     "denikn.cz": "N",
-    "kudyznudy.cz": "Kudy",
     "moviezone.cz": "MZone",
     "serialzone.cz": "SZone",
     "games.tiscali.cz": "Games",
@@ -229,23 +228,15 @@ def stahni_text_clanku(url, perex):
         return None
 
 # --- FUNKCE PRO ZPRÁVY (RSS/Atom) ---
-def _parse_rss_datum(item, event_mode=False):
+def _parse_rss_datum(item):
     """Vrátí datum RSS/Atom položky v pražském čase, nebo None."""
     from email.utils import parsedate_to_datetime
 
-    nazvy_udalosti = {
-        "startdate", "eventdate", "begindate", "datefrom", "start_date",
-        "event_date", "date_from",
-    }
     nazvy_bezne = {"pubdate", "published", "updated", "date"}
     datumove_elementy = [
         element for element in item.find_all()
-        if element.name and element.name.lower().split(":")[-1] in nazvy_udalosti | nazvy_bezne
+        if element.name and element.name.lower().split(":")[-1] in nazvy_bezne
     ]
-    if event_mode:
-        datumove_elementy.sort(
-            key=lambda element: element.name.lower().split(":")[-1] not in nazvy_udalosti
-        )
     for element in datumove_elementy:
         raw = element.get_text(" ", strip=True)
         if not raw:
@@ -263,7 +254,7 @@ def _parse_rss_datum(item, event_mode=False):
     return None
 
 
-def stahni_zpravy(rss_url, limit=15, vyzadovana_slova=(), exclude_titulky=None, event_mode=False):
+def stahni_zpravy(rss_url, limit=15, vyzadovana_slova=(), exclude_titulky=None):
     hlavicky = {"User-Agent": "Mozilla/5.0"}
     try:
         odpoved = get_with_retry(rss_url, headers=hlavicky, timeout=10, retries=3)
@@ -300,10 +291,10 @@ def stahni_zpravy(rss_url, limit=15, vyzadovana_slova=(), exclude_titulky=None, 
                 link_el = next((x for x in link_elements if je_alternativni_odkaz(x)), link_elements[0])
                 odkaz = link_el.get("href", "").strip() or link_el.get_text(" ", strip=True)
             odkaz = urljoin(rss_url, odkaz) if odkaz else ""
-            datum = _parse_rss_datum(item, event_mode=event_mode)
+            datum = _parse_rss_datum(item)
 
             # Nejprve zahodíme staré a duplicitní položky, teprve pak stahujeme HTML článku.
-            if not event_mode and (not datum or datum.date() != dnes):
+            if not datum or datum.date() != dnes:
                 continue
             if norm_titulek(titulek) in vyloucene:
                 continue
@@ -312,10 +303,6 @@ def stahni_zpravy(rss_url, limit=15, vyzadovana_slova=(), exclude_titulky=None, 
                 if not any(norm_titulek(slovo) in titulek_norm for slovo in vyzadovana_slova):
                     continue
 
-            # Některá kalendářová RSS nemají datum publikace. Kudy se proto
-            # neomezuje na den zprávy; při chybějícím datu použijeme den stažení.
-            if event_mode and datum is None:
-                datum = praha_now()
             if datum is None:
                 continue
             datum_cas = datum.strftime("%d.%m.%Y %H:%M")
@@ -329,11 +316,6 @@ def stahni_zpravy(rss_url, limit=15, vyzadovana_slova=(), exclude_titulky=None, 
             
             # Uložíme jen skutečně dostupný celý text; teaser/placený začátek přeskočíme.
             text_clanku = stahni_text_clanku(odkaz, perex) if odkaz else None
-            # Kalendářové RSS často obsahuje anotaci akce, ale neúplný či
-            # blokovaný HTML detail. Anotace je pro přehled akcí použitelný
-            # obsah, takže ji ponecháme jako náhradní text.
-            if event_mode and not text_clanku and len(perex) >= 20:
-                text_clanku = perex
             if not text_clanku:
                 continue
             vysledny_text += f"|T|{titulek}|D|{datum_cas}|P|{perex_kratky}|M|{media}|X|{text_clanku}|E|"
@@ -642,11 +624,10 @@ def stahni_horoskopy():
         res += f"|Z|{nazvy_cz[i]}|T|{text}|E|\n"
     return res
 
-def stahni_zpravy_multi(zdroje, celkovy_limit=10, exclude_titulky=None, event_mode=False):
+def stahni_zpravy_multi(zdroje, celkovy_limit=10, exclude_titulky=None):
     """Stáhne zprávy z více RSS zdrojů, deduplikuje podle titulku a zaloguje průběh.
     exclude_titulky: set titulků které se mají přeskočit (cross-category deduplikace).
-    Běžné aktuality obsahují jen dnešní články; event_mode povolí položky
-    kalendářových RSS bez omezení dne publikace.
+    Aktuality obsahují jen dnešní články.
     """
     vybrane = []  # (dt, titulek, blok)
     # Inicializujeme titulky rovnou s vyloučenými - porovnáváme normalizovaně
@@ -661,7 +642,7 @@ def stahni_zpravy_multi(zdroje, celkovy_limit=10, exclude_titulky=None, event_mo
         limit = min(limit_per_source, celkovy_limit, zakladni_kvota * 2)
         data = stahni_zpravy(
             rss_url, limit=limit, vyzadovana_slova=vyzadovana_slova,
-            exclude_titulky=titulky, event_mode=event_mode,
+            exclude_titulky=titulky,
         )
         bloky = extrahuj_bloky(data)
         pridano = 0
@@ -681,14 +662,14 @@ def stahni_zpravy_multi(zdroje, celkovy_limit=10, exclude_titulky=None, event_mo
                 duplikaty += 1
                 continue
             datum_raw = b["datum_raw"].strip()
-            if not datum_raw or (not event_mode and not re.search(r"(?:\d{4}-\d{2}-\d{2}|\d{1,2}\.\d{1,2}\.)", datum_raw)):
+            if not datum_raw or not re.search(r"(?:\d{4}-\d{2}-\d{2}|\d{1,2}\.\d{1,2}\.)", datum_raw):
                 continue
             dt = parse_datum_na_datetime(b["datum_raw"])
 
             # Aktuality jsou denní výběr, ne pohyblivé časové okno.
             # Při neznámém datu parsování vrací pražský dnešek; jinak musí
             # datum článku přesně odpovídat dnešnímu dni v Europe/Prague.
-            if not event_mode and dt.date() != praha_now().date():
+            if dt.date() != praha_now().date():
                 continue
             
             fronta.append((dt, titulek, b["blok"]))
@@ -898,7 +879,7 @@ def oprav_existujici_archiv(archiv_dir):
     if not os.path.isdir(archiv_dir):
         return
 
-    soubory = ('zpravy_svet.txt', 'zpravy_cr.txt', 'zpravy_tech.txt', 'zpravy_pozitivni.txt', 'zpravy_kultura.txt', 'zpravy_akce.txt')
+    soubory = ('zpravy_svet.txt', 'zpravy_cr.txt', 'zpravy_tech.txt', 'zpravy_pozitivni.txt', 'zpravy_kultura.txt', 'zpravy_kultura.txt')
     agregace = {s: {} for s in soubory}
 
     for den in os.listdir(archiv_dir):
@@ -1541,6 +1522,16 @@ if __name__ == "__main__":
     for d in (zpravy_dir, cache_dir, archiv_dir):
         os.makedirs(d, exist_ok=True)
 
+    # Odstranění dříve vygenerovaných souborů rubriky Akce.
+    odstranene_soubory = {"zpravy_akce.txt", "zpravy_akce.idx"}
+    for koren in (zpravy_dir, archiv_dir):
+        for cesta, _, soubory in os.walk(koren):
+            for nazev in soubory:
+                if nazev in odstranene_soubory:
+                    stara_cesta = os.path.join(cesta, nazev)
+                    os.remove(stara_cesta)
+                    print(f"  Odstraněn starý soubor Akce: {os.path.relpath(stara_cesta, SD_CESTA)}")
+
     # 1. Běžné zprávy a tech/ai — s cross-category deduplikací napříč všemi kategoriemi
     # Priorita: Svět > ČR > Tech > Kultura > Bulvár.
     
@@ -1624,15 +1615,6 @@ if __name__ == "__main__":
     print(f"  Kulturní zprávy: {len(kultura_titulky)} unikátních titulků")
     claimed = claimed | kultura_titulky
 
-    # Akce: samostatné kalendáře Kudy z nudy pro Prahu a Plzeňský kraj.
-    akce_data = stahni_zpravy_multi([
-        ("https://www.kudyznudy.cz/rss/events.aspx?region=1", 30),
-        ("https://www.kudyznudy.cz/rss/events.aspx?region=5", 30),
-    ], celkovy_limit=80, exclude_titulky=claimed, event_mode=True)
-    akce_titulky = {b["titulek"] for b in extrahuj_bloky(akce_data[1])}
-    print(f"  Akce Praha a Plzeň: {len(akce_titulky)} unikátních titulů")
-    claimed = claimed | akce_titulky
-
     # Bulvár: ponecháváme Pozitivní zprávy a české zdroje celebrit/reality show.
     pozit_data = stahni_zpravy_multi([
         ("https://pozitivni-zpravy.cz/feed/", 15),
@@ -1655,7 +1637,6 @@ if __name__ == "__main__":
         ('zpravy_tech.txt', tech_data),
         ('zpravy_pozitivni.txt', pozit_data),
         ('zpravy_kultura.txt', kultura_data),
-        ('zpravy_akce.txt', akce_data),
     ]:
         # Uložíme index (pro rychlé ESP32)
         idx_name = soubor.replace('.txt', '.idx')

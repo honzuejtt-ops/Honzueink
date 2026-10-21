@@ -73,12 +73,22 @@ def get_with_retry(url, headers=None, timeout=10, retries=3, backoff=1.2):
     last_err = None
     for attempt in range(retries):
         try:
-            return SESSION.get(url, headers=headers, timeout=timeout)
+            response = SESSION.get(url, headers=headers, timeout=timeout)
+            if response.status_code != 429 or attempt == retries - 1:
+                return response
+            try:
+                cekani = float(response.headers.get("Retry-After", ""))
+            except (TypeError, ValueError):
+                cekani = backoff * (attempt + 1)
+            response.close()
+            time.sleep(min(max(cekani, backoff), 30))
         except requests.RequestException as e:
             last_err = e
             if attempt < retries - 1:
                 time.sleep(backoff * (attempt + 1))
-    raise last_err
+    if last_err:
+        raise last_err
+    return response
 
 # --- ČIŠTĚNÍ TEXTU ČLÁNKU OD BALASTU ---
 # Řádky, které samy o sobě nic neznamenají (navigace, galerie, reklamy...)
@@ -223,7 +233,10 @@ def _parse_rss_datum(item, event_mode=False):
     """Vrátí datum RSS/Atom položky v pražském čase, nebo None."""
     from email.utils import parsedate_to_datetime
 
-    nazvy_udalosti = {"startdate", "eventdate", "begindate", "start_date", "event_date"}
+    nazvy_udalosti = {
+        "startdate", "eventdate", "begindate", "datefrom", "start_date",
+        "event_date", "date_from",
+    }
     nazvy_bezne = {"pubdate", "published", "updated", "date"}
     datumove_elementy = [
         element for element in item.find_all()
@@ -260,6 +273,11 @@ def stahni_zpravy(rss_url, limit=15, vyzadovana_slova=(), exclude_titulky=None, 
         
         vysledny_text = ""
         if not items: 
+            print(
+                f"  RSS bez položek {rss_url}: HTTP {odpoved.status_code}, "
+                f"Content-Type={odpoved.headers.get('Content-Type', '?')}, "
+                f"odpověď={odpoved.text[:180]!r}"
+            )
             return "|T|Žádné zprávy|D||P|Nebyly nalezeny.|X|Zkuste to později.|E|"
             
         media = kratky_nazev_media(rss_url)
@@ -311,6 +329,11 @@ def stahni_zpravy(rss_url, limit=15, vyzadovana_slova=(), exclude_titulky=None, 
             
             # Uložíme jen skutečně dostupný celý text; teaser/placený začátek přeskočíme.
             text_clanku = stahni_text_clanku(odkaz, perex) if odkaz else None
+            # Kalendářové RSS často obsahuje anotaci akce, ale neúplný či
+            # blokovaný HTML detail. Anotace je pro přehled akcí použitelný
+            # obsah, takže ji ponecháme jako náhradní text.
+            if event_mode and not text_clanku and len(perex) >= 20:
+                text_clanku = perex
             if not text_clanku:
                 continue
             vysledny_text += f"|T|{titulek}|D|{datum_cas}|P|{perex_kratky}|M|{media}|X|{text_clanku}|E|"
@@ -318,7 +341,8 @@ def stahni_zpravy(rss_url, limit=15, vyzadovana_slova=(), exclude_titulky=None, 
             vyloucene.add(norm_titulek(titulek))
             
         return vysledny_text
-    except Exception as e: 
+    except Exception as e:
+        print(f"  RSS chyba {rss_url}: {e}")
         return f"|T|Chyba|D||P|Něco se pokazilo.|X|{e}|E|"
 
 # --- FUNKCE PRO WEBY BEZ RSS (Refresher, Antiyoutuber atd.) ---
@@ -1603,7 +1627,7 @@ if __name__ == "__main__":
     # Akce: samostatné kalendáře Kudy z nudy pro Prahu a Plzeňský kraj.
     akce_data = stahni_zpravy_multi([
         ("https://www.kudyznudy.cz/rss/events.aspx?region=1", 30),
-        ("https://www.kudyznudy.cz/rss/events.aspx?region=4", 30),
+        ("https://www.kudyznudy.cz/rss/events.aspx?region=5", 30),
     ], celkovy_limit=80, exclude_titulky=claimed, event_mode=True)
     akce_titulky = {b["titulek"] for b in extrahuj_bloky(akce_data[1])}
     print(f"  Akce Praha a Plzeň: {len(akce_titulky)} unikátních titulů")

@@ -53,6 +53,7 @@ MEDIA_ALIASES = {
     "expres.cz": "Expres",
     "super.cz": "Super",
     "extra.cz": "Extra",
+    "seznamzpravy.cz": "SZ",
     "denikalarm.cz": "Alarm",
     "respekt.cz": "Resp",
     "denikn.cz": "N",
@@ -254,7 +255,24 @@ def _parse_rss_datum(item):
     return None
 
 
-def stahni_zpravy(rss_url, limit=15, vyzadovana_slova=(), exclude_titulky=None):
+def _rss_rubriky(item):
+    """Vrátí rubriky uvedené u položky RSS, včetně namespacovaných tagů."""
+    rubriky = []
+    for element in item.find_all():
+        if not element.name or element.name.lower().split(":")[-1] != "sections":
+            continue
+        for hodnota in element.find_all():
+            if hodnota.name and hodnota.name.lower().split(":")[-1] == "value":
+                text = hodnota.get_text(" ", strip=True)
+                if text:
+                    rubriky.append(text)
+    return rubriky
+
+
+def stahni_zpravy(
+    rss_url, limit=15, vyzadovana_slova=(), exclude_titulky=None,
+    vyzadovane_rubriky=(),
+):
     hlavicky = {"User-Agent": "Mozilla/5.0"}
     try:
         odpoved = get_with_retry(rss_url, headers=hlavicky, timeout=10, retries=3)
@@ -292,6 +310,12 @@ def stahni_zpravy(rss_url, limit=15, vyzadovana_slova=(), exclude_titulky=None):
                 odkaz = link_el.get("href", "").strip() or link_el.get_text(" ", strip=True)
             odkaz = urljoin(rss_url, odkaz) if odkaz else ""
             datum = _parse_rss_datum(item)
+
+            if vyzadovane_rubriky:
+                rubriky_norm = {norm_titulek(rubrika) for rubrika in _rss_rubriky(item)}
+                pozadovane_norm = {norm_titulek(rubrika) for rubrika in vyzadovane_rubriky}
+                if not rubriky_norm.intersection(pozadovane_norm):
+                    continue
 
             # Nejprve zahodíme staré a duplicitní položky, teprve pak stahujeme HTML článku.
             if not datum or datum.date() != dnes:
@@ -637,12 +661,13 @@ def stahni_zpravy_multi(zdroje, celkovy_limit=10, exclude_titulky=None):
     for zdroj in zdroje:
         rss_url, limit_per_source = zdroj[:2]
         vyzadovana_slova = tuple(norm_titulek(x) for x in zdroj[2]) if len(zdroj) > 2 else ()
+        vyzadovane_rubriky = tuple(zdroj[3]) if len(zdroj) > 3 else ()
         # Každý zdroj dostane šanci naplnit zhruba dvojnásobek férového podílu.
         # Přebytek rozdělíme v dalších kolech, pokud některé zdroje nabídnou málo.
         limit = min(limit_per_source, celkovy_limit, zakladni_kvota * 2)
         data = stahni_zpravy(
             rss_url, limit=limit, vyzadovana_slova=vyzadovana_slova,
-            exclude_titulky=titulky,
+            exclude_titulky=titulky, vyzadovane_rubriky=vyzadovane_rubriky,
         )
         bloky = extrahuj_bloky(data)
         pridano = 0
@@ -1538,6 +1563,7 @@ if __name__ == "__main__":
     svet_data = stahni_zpravy_multi([
         ("https://ct24.ceskatelevize.cz/rss/svet", 60),
         ("https://www.novinky.cz/rss/zahranicni", 60),
+        ("https://www.seznamzpravy.cz/rss", 20, (), ("Svět",)),
     ], celkovy_limit=100)
 
     svet_titulky = {b["titulek"] for b in extrahuj_bloky(svet_data[1])}
@@ -1546,6 +1572,7 @@ if __name__ == "__main__":
     cr_data = stahni_zpravy_multi([
         ("https://ct24.ceskatelevize.cz/rss/domaci", 60),
         ("https://www.novinky.cz/rss/domaci", 60),
+        ("https://www.seznamzpravy.cz/rss", 20, (), ("Domácí", "Život v Česku")),
     ], celkovy_limit=100, exclude_titulky=svet_titulky)
 
     # Obojsměrná deduplikace Svět↔ČR — nenecháme stejný článek ve dvou rubrikách
@@ -1592,6 +1619,8 @@ if __name__ == "__main__":
         ("https://www.svethardware.cz/rss", 25),
         ("https://digimanie.cz/rss/all", 12),
         ("https://blog.aditivni.cz/rss.xml", 10),
+        ("https://www.seznamzpravy.cz/rss", 20, (),
+         ("Tech", "Technologie", "Internet", "Umělá inteligence", "Návody")),
     ], celkovy_limit=100, exclude_titulky=claimed)
 
     tech_titulky = {b["titulek"] for b in extrahuj_bloky(tech_data[1])}
@@ -1610,6 +1639,7 @@ if __name__ == "__main__":
         ("https://denikn.cz/kultura/feed", 20),
         ("https://www.respekt.cz/api/rss?type=articles&unlocked=1", 20,
          ("film", "seriál", "divadlo", "kniha", "literatura", "kultura", "hudba", "výstava", "festival", "recenze")),
+        ("https://www.seznamzpravy.cz/rss", 20, (), ("Kultura",)),
     ], celkovy_limit=100, exclude_titulky=claimed)
     kultura_titulky = {b["titulek"] for b in extrahuj_bloky(kultura_data[1])}
     print(f"  Kulturní zprávy: {len(kultura_titulky)} unikátních titulků")
@@ -1622,6 +1652,7 @@ if __name__ == "__main__":
         ("https://servis.expres.cz/rss.aspx", 10),
         ("https://www.super.cz/rss", 8),
         ("https://www.extra.cz/rss", 5),
+        ("https://www.seznamzpravy.cz/rss", 20, (), ("Magazín", "Životní styl")),
     ], celkovy_limit=30, exclude_titulky=claimed)
 
     pozit_titulky = {b["titulek"] for b in extrahuj_bloky(pozit_data[1])}

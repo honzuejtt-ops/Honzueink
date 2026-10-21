@@ -1,3 +1,27 @@
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
 *.pyo
+.venv/
+venv/
+
+# Arduino and local build output
+/build/
+/cmake-build-*/
+/*.o
+/*.a
+*.elf
+*.bin
+*.hex
+
+# Local credentials and keys
+secrets.h
+*.local.h
+.env
+.env.*
+
+# Operating systems and editors
+.DS_Store
+Thumbs.db
+*.swp
+*.swo

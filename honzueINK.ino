@@ -43,16 +43,16 @@ struct ArchivClanek;
 
 #include <time.h>
 
-#include "include/TextLine.h"
-#include "include/gamebook.h"
-#include "include/odhalovacka.h"
-#include "include/knihy.h"
-#include "include/generator.h"
-#include "include/slovnik.h"
-#include "include/fraze.h"
-#include "include/HryKviz.h" 
-#include "include/HryWyr.h"  
-#include "include/SDKnihovnaReader.h"
+#include "TextLine.h"
+#include "gamebook.h"
+#include "odhalovacka.h"
+#include "knihy.h"
+#include "generator.h"
+#include "slovnik.h"
+#include "fraze.h"
+#include "HryKviz.h" 
+#include "HryWyr.h"  
+#include "SDKnihovnaReader.h"
 
 // ===== SD KARTA — STAV =====
 bool sdReady = false; // true pokud SD karta funguje a /eindata/ je připravena
@@ -71,6 +71,7 @@ String urlZpravySvet = urlBase + "eindata/zpravy/aktualni/zpravy_svet.txt";
 String urlZpravyCR   = urlBase + "eindata/zpravy/aktualni/zpravy_cr.txt";
 String urlTechAI     = urlBase + "eindata/zpravy/aktualni/zpravy_tech.txt";
 String urlZpravyPozitivni = urlBase + "eindata/zpravy/aktualni/zpravy_pozitivni.txt";
+String urlZpravyKultura = urlBase + "eindata/zpravy/aktualni/zpravy_kultura.txt";
 String urlPocasi     = urlBase + "eindata/cache/pocasi.txt";
 String urlKurzy      = urlBase + "eindata/cache/kurzy.txt";
 String urlHoroskop   = urlBase + "eindata/cache/horoskop.txt";
@@ -80,9 +81,10 @@ String urlZpravySvetIdx = urlBase + "eindata/zpravy/aktualni/zpravy_svet.idx";
 String urlZpravyCRIdx   = urlBase + "eindata/zpravy/aktualni/zpravy_cr.idx";
 String urlZpravyTechIdx = urlBase + "eindata/zpravy/aktualni/zpravy_tech.idx";
 String urlZpravyPozitivniIdx = urlBase + "eindata/zpravy/aktualni/zpravy_pozitivni.idx";
+String urlZpravyKulturaIdx = urlBase + "eindata/zpravy/aktualni/zpravy_kultura.idx";
 String urlZpravyDetail  = urlBase + "eindata/zpravy/aktualni/detail/";
 
-String stazenaDataSvet = ""; String stazenaDataCR = ""; String stazenaDataTech = ""; String stazenaDataPozitivni = "";
+String stazenaDataSvet = ""; String stazenaDataCR = ""; String stazenaDataTech = ""; String stazenaDataPozitivni = ""; String stazenaDataKultura = "";
 String stazenaDataPocasi = ""; String stazenaDataKurzy = "";
 String stazenaDataHoroskop = ""; String stazenaDataKurzyHistorie = "";
 
@@ -130,7 +132,7 @@ RTC_DATA_ATTR int  rtc_horoskopIdx     = 0;
 RTC_DATA_ATTR int  rtc_grafIdx         = 0;
 
 // ID článku = 12znakový hash z indexu (text se dotahuje až při otevření)
-struct Zprava { String uid; String titulek; String datum; String perex; String text; String id; };
+struct Zprava { String uid; String titulek; String datum; String perex; String text; String id; String medium; uint8_t rubrika; };
 Zprava aktualniZpravy[20]; int pocetZprav = 0; int clanekMenuIndex = 0;
 
 struct PocasiDen { String datum; int tMax; int tMin; String srazky; String ikona; int vitr; String vychod; String zapad; };
@@ -654,7 +656,11 @@ void nakresliStatusBar() {
 // ===== MENU DATA =====
 const int mainMenuCount = 9; String mainMenuItems[] = { "KNIHOVNA", "AKTUALITY", "HUDBA", "TOOLBOX", "SLOVNÍK", "GENERÁTOR", "HRY", "SD KARTA", "NASTAVENÍ" };
 const int aktualityCount = 7; String aktualityItems[] = { "Zprávy", "Světový čas", "Kurzy", "Počasí", "Horoskop", "Spoje", "Kalendář" };
-const int zpravyMenuCount = 5; String zpravyMenuItems[] = { "Ze světa", "Z ČR", "Technologie a AI", "Pozitivní zprávy", "Archiv" };
+const int zpravyKategorieCount = 5;
+const int zpravyForYouIndex = zpravyKategorieCount;
+const int zpravyArchivIndex = zpravyKategorieCount + 1;
+const int zpravyMenuCount = zpravyKategorieCount + 2;
+String zpravyMenuItems[] = { "Ze světa", "Z ČR", "Technologie a AI", "Bulvár", "Kultura", "For You", "Archiv" };
 // Dynamická knihovna — naplněna při vstupu do KNIHOVNA
 String dynamicKnihovnaItems[15];
 String dynamicKnihovnaFiles[15];
@@ -949,6 +955,7 @@ void ulozStazenaData() {
   ulozZpravuDoCache("cr", stazenaDataCR);
   ulozZpravuDoCache("tech", stazenaDataTech);
   ulozZpravuDoCache("poz", stazenaDataPozitivni);
+  ulozZpravuDoCache("kultura", stazenaDataKultura);
   ulozZpravuDoCache("poc", stazenaDataPocasi);
   ulozZpravuDoCache("kur", stazenaDataKurzy);
   ulozZpravuDoCache("horo", stazenaDataHoroskop);
@@ -1005,6 +1012,8 @@ void nactiStazenaData() {
   if (stazenaDataTech.length() == 0)  stazenaDataTech  = nactiSouborZCache("tech");
   stazenaDataPozitivni = nactiSouborZAktualni("zpravy_pozitivni.txt");
   if (stazenaDataPozitivni.length() == 0) stazenaDataPozitivni = nactiSouborZCache("poz");
+  stazenaDataKultura = nactiSouborZAktualni("zpravy_kultura.txt");
+  if (stazenaDataKultura.length() == 0) stazenaDataKultura = nactiSouborZCache("kultura");
 
   // Cache data (počasí, kurzy, horoskopy)
   stazenaDataPocasi        = nactiSouborZCache("poc");
@@ -2195,7 +2204,7 @@ int nactiVsechnyArchivniHashe(uint32_t* pole, int maxPole) {
       const char* fname = entry.name();
       const char* lastSlash = strrchr(fname, '/');
       if (lastSlash) fname = lastSlash + 1;
-      const char* soubory[] = { "zpravy_svet.txt", "zpravy_cr.txt", "zpravy_tech.txt", "zpravy_pozitivni.txt" };
+      const char* soubory[] = { "zpravy_svet.txt", "zpravy_cr.txt", "zpravy_tech.txt", "zpravy_pozitivni.txt", "zpravy_kultura.txt" };
       int pocetSouboru = sizeof(soubory) / sizeof(soubory[0]);
       for (int s = 0; s < pocetSouboru && count < maxPole; s++) {
         String cesta = String("/eindata/zpravy/archiv/") + fname + "/" + soubory[s];
@@ -2217,8 +2226,8 @@ struct ArchivClanek {
 };
 
 // Velké pomocné buffery mimo stack (ESP32 task stack je omezený).
-// 4000 = pokryje 7 dní × 4 rubriky × až 100 článků/den (serverový archiv).
-static const int MAX_HASH_GLOBAL = 4000;
+// 5000 = pokryje 7 dní × 5 rubrik × až 100 článků/den (serverový archiv).
+static const int MAX_HASH_GLOBAL = 5000;
 static const int MAX_MERGE_CLANKU_GLOBAL = 260;
 static uint32_t g_existHash[MAX_HASH_GLOBAL];
 
@@ -3041,9 +3050,36 @@ void oznacitJakoPrectenou(const String& uid) {
 // Aby šlo zobrazit všechny články (bez limitu 20) a seřadit je od nejnovějších,
 // držíme v paměti jen malý index (pozice + datum), ne celé texty.
 static const int MAX_CLANKU_INDEX = 400;
-struct ClanekIndex { long sortKey; int start; int len; };
+struct ClanekIndex { long sortKey; int start; int len; uint32_t delka; uint8_t rubrika; };
 static ClanekIndex g_idxAkt[MAX_CLANKU_INDEX];
 static int g_idxAktCount = 0;
+static ClanekIndex g_forYouIdx[MAX_CLANKU_INDEX];
+static bool g_forYouUsed[MAX_CLANKU_INDEX];
+static uint8_t g_rubrikaPriNacitani = 0;
+static uint8_t g_forYouRubrikaClanku = 0;
+static int g_forYouIdxCount = 0;
+static bool g_forYouView = false;
+static bool g_forYouNeedsRefresh = false;
+static const String* g_forYouSources[zpravyKategorieCount];
+
+// Odfiltruje i starší lokální cache. Aktuality jsou vždy jen pro dnešní
+// pražské datum; u RSS formátu d.m. se kontroluje den a měsíc, u ISO i rok.
+static bool _datumBlokuJeDnes(const String& raw, int start, int end, const struct tm& ti) {
+  int dS = raw.indexOf("|D|", start);
+  int pS = raw.indexOf("|P|", start);
+  if (dS >= end || pS >= end) return false;
+  if (dS < 0 || pS <= dS + 3) return false;
+  String datum = raw.substring(dS + 3, pS);
+  datum.trim();
+  int den = 0, mesic = 0, rok = 0;
+  if (sscanf(datum.c_str(), "%d-%d-%d", &rok, &mesic, &den) == 3)
+    return rok == ti.tm_year + 1900 && mesic == ti.tm_mon + 1 && den == ti.tm_mday;
+  if (sscanf(datum.c_str(), "%d.%d.%d", &den, &mesic, &rok) == 3)
+    return rok == ti.tm_year + 1900 && mesic == ti.tm_mon + 1 && den == ti.tm_mday;
+  if (sscanf(datum.c_str(), "%d.%d.", &den, &mesic) == 2)
+    return mesic == ti.tm_mon + 1 && den == ti.tm_mday;
+  return false;
+}
 
 // Naplní jednu položku aktualniZpravy[] z bloku |T|…|E|. Vrací true při úspěchu.
 static bool _naplnZpravuZBloku(const String& blok) {
@@ -3061,7 +3097,17 @@ static bool _naplnZpravuZBloku(const String& blok) {
     aktualniZpravy[pocetZprav].titulek = blok.substring(3, pS);
     aktualniZpravy[pocetZprav].datum = "";
   }
-  aktualniZpravy[pocetZprav].perex = blok.substring(pS + 3, xS);
+  int mS = blok.indexOf("|M|", pS + 3);
+  int lS = blok.indexOf("|L|", pS + 3);
+  int perexEnd = (mS > pS && mS < xS) ? mS : ((lS > pS && lS < xS) ? lS : xS);
+  aktualniZpravy[pocetZprav].perex = blok.substring(pS + 3, perexEnd);
+  if (mS >= 0 && mS < xS) {
+    int mediumEnd = (lS > mS && lS < xS) ? lS : xS;
+    aktualniZpravy[pocetZprav].medium = blok.substring(mS + 3, mediumEnd);
+    aktualniZpravy[pocetZprav].medium.trim();
+  } else {
+    aktualniZpravy[pocetZprav].medium = "";
+  }
   // Index zpráv má v |X| jen 12znakové ID článku (text se dotahuje až při
   // otevření). Archiv a plná data mají v |X| celý text článku.
   String xObsah = blok.substring(xS + 3, eE);
@@ -3069,6 +3115,7 @@ static bool _naplnZpravuZBloku(const String& blok) {
   aktualniZpravy[pocetZprav].id = jeId ? xObsah : String("");
   aktualniZpravy[pocetZprav].text = jeId ? String("") : xObsah;
   aktualniZpravy[pocetZprav].uid = uidZpravy(aktualniZpravy[pocetZprav].titulek, aktualniZpravy[pocetZprav].datum);
+  aktualniZpravy[pocetZprav].rubrika = g_forYouRubrikaClanku;
   pocetZprav++;
   return true;
 }
@@ -3077,6 +3124,8 @@ static bool _naplnZpravuZBloku(const String& blok) {
 // od nejnovějšího po nejstarší (podle data |D|).
 static void _postavIndexAktualit(const String& raw) {
   g_idxAktCount = 0;
+  struct tm dnes;
+  bool casJePlatny = getLocalTime(&dnes, 100);
   int pos = 0;
   while (pos < (int)raw.length() && g_idxAktCount < MAX_CLANKU_INDEX) {
     int tS = raw.indexOf("|T|", pos);
@@ -3084,12 +3133,22 @@ static void _postavIndexAktualit(const String& raw) {
     int eE = raw.indexOf("|E|", tS);
     if (eE < 0) break;
     eE += 3;
+    // Nezobrazovat v aktualitách starší články ani ze staré SD cache.
+    if (!casJePlatny || !_datumBlokuJeDnes(raw, tS, eE, dnes)) {
+      pos = eE;
+      continue;
+    }
     // Pro datum stačí začátek bloku (|T|…|D|…|P|) — nekopírujeme celý text
     int konec = raw.indexOf("|P|", tS);
     if (konec < 0 || konec > eE) konec = eE;
     g_idxAkt[g_idxAktCount].sortKey = _sortKeyZBloku(raw.substring(tS, konec + 3));
     g_idxAkt[g_idxAktCount].start = tS;
     g_idxAkt[g_idxAktCount].len = eE - tS;
+    int lS = raw.indexOf("|L|", tS);
+    int xS = raw.indexOf("|X|", tS);
+    g_idxAkt[g_idxAktCount].delka = (lS > 0 && xS > lS && xS < eE)
+      ? (uint32_t)raw.substring(lS + 3, xS).toInt() : 0;
+    g_idxAkt[g_idxAktCount].rubrika = g_rubrikaPriNacitani;
     g_idxAktCount++;
     pos = eE;
   }
@@ -3108,9 +3167,12 @@ static void _postavIndexAktualit(const String& raw) {
 // Načte stránku (max 20 článků) z raw textu v RAM podle offsetu.
 static void _nactiStrankuAktualit(int offset) {
   pocetZprav = 0;
-  if (!aktualniRawZdroj) return;
-  const String& raw = *aktualniRawZdroj;
+  if (!g_forYouView && !aktualniRawZdroj) return;
   for (int i = offset; i < g_idxAktCount && pocetZprav < 20; i++) {
+    const String& raw = g_forYouView
+      ? *g_forYouSources[g_idxAkt[i].rubrika]
+      : *aktualniRawZdroj;
+    g_forYouRubrikaClanku = g_idxAkt[i].rubrika;
     _naplnZpravuZBloku(raw.substring(g_idxAkt[i].start, g_idxAkt[i].start + g_idxAkt[i].len));
   }
 }
@@ -3118,8 +3180,10 @@ static void _nactiStrankuAktualit(int offset) {
 // Zobrazí seznam zpráv rubriky — načte index všech článků a první stránku.
 void parsujZpravy(const String& raw) {
   pocetZprav = 0;
+  g_forYouView = false;
   archivStranka = 0; archivCelkemClanku = 0; // aktuality mají vlastní stránkování
   aktualniRawZdroj = &raw;
+  g_rubrikaPriNacitani = (subMenuIndex >= 0 && subMenuIndex < zpravyKategorieCount) ? subMenuIndex : 0;
   _postavIndexAktualit(raw);
   aktualniStranka = 0;
   aktualniCelkemClanku = g_idxAktCount;
@@ -3130,6 +3194,136 @@ void parsujZpravy(const String& raw) {
     aktualniZpravy[0].uid = "chyba";
     pocetZprav = 1;
     aktualniCelkemClanku = 0;
+  }
+}
+
+// Sestaví dnešní osobní výběr bez kopírování velkých RSS textů do další String.
+// Každá rubrika je seřazená od nejnovějších a výběr mezi nimi se střídá.
+static void parsujForYou() {
+  g_forYouNeedsRefresh = false;
+  const String* zdroje[zpravyKategorieCount] = {
+    &stazenaDataSvet, &stazenaDataCR, &stazenaDataTech,
+    &stazenaDataPozitivni, &stazenaDataKultura
+  };
+  for (int r = 0; r < zpravyKategorieCount; r++) g_forYouSources[r] = zdroje[r];
+  g_forYouIdxCount = 0;
+  char dokoncenUid[32][9] = {{0}};
+  bool dokoncenPlatny[32] = {false};
+  Preferences prefs;
+  prefs.begin("honzueForYou", true);
+  for (int i = 0; i < 32; i++) {
+    char key[4]; snprintf(key, sizeof(key), "q%d", i);
+    String uid = prefs.getString(key, "");
+    if (uid.length() == 8) strncpy(dokoncenUid[i], uid.c_str(), sizeof(dokoncenUid[i]) - 1);
+    char doneKey[4]; snprintf(doneKey, sizeof(doneKey), "f%d", i);
+    dokoncenPlatny[i] = prefs.getBool(doneKey, false);
+  }
+
+  for (int r = 0; r < zpravyKategorieCount; r++) {
+    g_rubrikaPriNacitani = r;
+    _postavIndexAktualit(*zdroje[r]);
+    for (int i = 0; i < g_idxAktCount && g_forYouIdxCount < MAX_CLANKU_INDEX; i++) {
+      const String& raw = *zdroje[r];
+      int tS = g_idxAkt[i].start;
+      int dS = raw.indexOf("|D|", tS);
+      int pS = raw.indexOf("|P|", tS);
+      if (pS < 0) continue;
+      int titEnd = (dS > tS && dS < pS) ? dS : pS;
+      String titulek = raw.substring(tS + 3, titEnd);
+      String datum = (dS > tS && dS < pS) ? raw.substring(dS + 3, pS) : String("");
+      String uid = uidZpravy(titulek, datum);
+      bool uzDoporucen = false;
+      for (int q = 0; q < 32; q++) {
+        if (dokoncenPlatny[q] && strcmp(dokoncenUid[q], uid.c_str()) == 0) {
+          uzDoporucen = true;
+          break;
+        }
+      }
+      if (!uzDoporucen) g_forYouIdx[g_forYouIdxCount++] = g_idxAkt[i];
+    }
+  }
+
+  uint16_t zajem[zpravyKategorieCount];
+  for (int r = 0; r < zpravyKategorieCount; r++) {
+    char openedKey[4], completedKey[4];
+    snprintf(openedKey, sizeof(openedKey), "o%d", r);
+    snprintf(completedKey, sizeof(completedKey), "c%d", r);
+    uint16_t otevreno = prefs.getUShort(openedKey, 0);
+    uint16_t dokonceno = prefs.getUShort(completedKey, 0);
+    // Bayesovské vyhlazení: několik málo přečtených článků nezpůsobí prudký skok.
+    zajem[r] = (uint16_t)(((uint32_t)(dokonceno + 2) * 1000) / (otevreno + 6));
+  }
+  prefs.end();
+
+  int poradi[zpravyKategorieCount];
+  for (int r = 0; r < zpravyKategorieCount; r++) poradi[r] = r;
+  for (int i = 0; i < zpravyKategorieCount - 1; i++) {
+    int best = i;
+    for (int j = i + 1; j < zpravyKategorieCount; j++)
+      if (zajem[poradi[j]] > zajem[poradi[best]]) best = j;
+    if (best != i) { int t = poradi[i]; poradi[i] = poradi[best]; poradi[best] = t; }
+  }
+
+  memset(g_forYouUsed, 0, sizeof(g_forYouUsed));
+  int vystup = 0;
+  // Výběr používá váhu rubriky, ale nechává prostor i ostatním tématům.
+  // V jedné skupině 20 článků může jediná rubrika zabrat nejvýše osm míst.
+  while (vystup < g_forYouIdxCount) {
+    int zacatek = vystup;
+    uint8_t vybrano[zpravyKategorieCount] = {0};
+    while (vystup - zacatek < 20 && vystup < g_forYouIdxCount) {
+      int bestR = -1;
+      int bestIdx = -1;
+      for (int p = 0; p < zpravyKategorieCount; p++) {
+        int r = poradi[p];
+        if (vybrano[r] >= 8) continue;
+        int kandidat = -1;
+        for (int i = 0; i < g_forYouIdxCount; i++) {
+          if (g_forYouUsed[i] || g_forYouIdx[i].rubrika != r) continue;
+          if (kandidat < 0 || g_forYouIdx[i].delka > g_forYouIdx[kandidat].delka ||
+              (g_forYouIdx[i].delka == g_forYouIdx[kandidat].delka &&
+               g_forYouIdx[i].sortKey > g_forYouIdx[kandidat].sortKey)) kandidat = i;
+        }
+        if (kandidat < 0) continue;
+        // Poměr zájmu k již přiděleným místům vytváří vážené, prokládané pořadí.
+        if (bestR < 0 || (uint16_t)(zajem[r] + 1) * (vybrano[bestR] + 1) >
+                         (uint16_t)(zajem[bestR] + 1) * (vybrano[r] + 1)) {
+          bestR = r;
+          bestIdx = kandidat;
+        }
+      }
+      if (bestIdx >= 0) {
+        g_forYouUsed[bestIdx] = true;
+        vybrano[bestR]++;
+        g_idxAkt[vystup++] = g_forYouIdx[bestIdx];
+      } else {
+        // Pokud zbývají články jen z již naplněných rubrik, doplň nejnovější.
+        for (int i = 0; i < g_forYouIdxCount; i++) {
+          if (!g_forYouUsed[i]) {
+            g_forYouUsed[i] = true;
+            g_idxAkt[vystup++] = g_forYouIdx[i];
+            break;
+          }
+        }
+      }
+    }
+  }
+
+  g_idxAktCount = g_forYouIdxCount;
+  g_forYouView = true;
+  aktualniRawZdroj = nullptr;
+  archivStranka = 0; archivCelkemClanku = 0;
+  aktualniStranka = 0;
+  aktualniCelkemClanku = g_forYouIdxCount;
+  _nactiStrankuAktualit(0);
+  if (pocetZprav == 0) {
+    aktualniZpravy[0].titulek = "Zatím bez doporučení";
+    aktualniZpravy[0].datum = "";
+    aktualniZpravy[0].perex = "Přečti alespoň tři stránky několika článků. For You se podle toho začne učit.";
+    aktualniZpravy[0].text = "";
+    aktualniZpravy[0].uid = "for-you-empty";
+    aktualniZpravy[0].rubrika = 0;
+    pocetZprav = 1;
   }
 }
 
@@ -3203,6 +3397,7 @@ int parsujZpravyStrankuZeSouboru(const String& cesta, int offset) {
   if (!g) return celkem;
   uint8_t blk[512];
   int nacteno = 0;
+  g_forYouRubrikaClanku = (archivZpravySubIndex >= 0 && archivZpravySubIndex < zpravyKategorieCount) ? archivZpravySubIndex : 0;
   for (int i = offset; i < celkem && nacteno < 20; i++) {
     if (!g.seek(g_idxArch[i].offset)) break;
     String blok = "";
@@ -3638,13 +3833,13 @@ static String nactiTextZArchivu(const String& titulek) {
   if (!sdReady || titulek.length() == 0) return "";
   struct tm ti;
   if (!getLocalTime(&ti, 100)) return "";
-  const char* soubory[] = { "zpravy_svet.txt", "zpravy_cr.txt", "zpravy_tech.txt", "zpravy_pozitivni.txt" };
+  const char* soubory[] = { "zpravy_svet.txt", "zpravy_cr.txt", "zpravy_tech.txt", "zpravy_pozitivni.txt", "zpravy_kultura.txt" };
   for (int zpet = 0; zpet <= 2; zpet++) {
     time_t denT = mktime(&ti) - (time_t)zpet * 86400L;
     struct tm dtm; localtime_r(&denT, &dtm);
     char den[12]; strftime(den, sizeof(den), "%Y-%m-%d", &dtm);
     String slozka = String("/eindata/zpravy/archiv/") + den + "/";
-    for (int s = 0; s < 4; s++) {
+    for (int s = 0; s < (int)(sizeof(soubory) / sizeof(soubory[0])); s++) {
       File f = SD.open((slozka + soubory[s]).c_str());
       if (!f) continue;
       String blok = "";
@@ -3676,6 +3871,47 @@ static String nactiTextZArchivu(const String& titulek) {
   return "";
 }
 
+// Plná verze aktuální rubriky se stáhne při synchronizaci a uloží na SD.
+// Při otevření pak hledáme jen v jediném souboru, místo procházení až 15
+// archivních souborů. Čtení probíhá po blocích, takže celý soubor není v RAM.
+static String nactiTextZPlnychAktualit(const String& titulek, int rubrika) {
+  if (!sdReady || rubrika < 0 || rubrika >= zpravyKategorieCount || titulek.length() == 0) return "";
+  const char* soubory[] = { "zpravy_svet.txt", "zpravy_cr.txt", "zpravy_tech.txt", "zpravy_pozitivni.txt", "zpravy_kultura.txt" };
+  String cesta = String("/eindata/zpravy/aktualni/full/") + soubory[rubrika];
+  File f = SD.open(cesta.c_str());
+  if (!f) return "";
+  String buf;
+  uint8_t chunk[512];
+  while (f.available()) {
+    int n = f.read(chunk, sizeof(chunk));
+    if (n <= 0) break;
+    buf.concat((const char*)chunk, n);
+    while (true) {
+      int t = buf.indexOf("|T|");
+      if (t < 0) {
+        if (buf.length() > 3) buf = buf.substring(buf.length() - 3);
+        break;
+      }
+      int e = buf.indexOf("|E|", t);
+      if (e < 0) {
+        if (t > 0) buf = buf.substring(t);
+        break;
+      }
+      String blok = buf.substring(t, e + 3);
+      int d = blok.indexOf("|D|", 3), p = blok.indexOf("|P|", 3);
+      int titEnd = (d >= 0 && d < p) ? d : p;
+      if (titEnd > 3 && blok.substring(3, titEnd) == titulek) {
+        int x = blok.indexOf("|X|", p);
+        f.close();
+        return (x >= 0) ? blok.substring(x + 3, blok.indexOf("|E|", x)) : String("");
+      }
+      buf = buf.substring(e + 3);
+    }
+  }
+  f.close();
+  return "";
+}
+
 bool nactiDetailClanku(int idx) {
   if (idx < 0 || idx >= pocetZprav) return false;
   if (aktualniZpravy[idx].text.length() > 0) return true;   // text už je v paměti
@@ -3685,6 +3921,18 @@ bool nactiDetailClanku(int idx) {
   String cesta = String("/eindata/zpravy/aktualni/detail/") + id + ".txt";
   String txt = nactiTextZeSD(cesta);
   if (txt.length() > 20) { aktualniZpravy[idx].text = txt; return true; }
+
+  // Detailní cache se předvyplní z plného souboru staženého při synchronizaci.
+  // Tím zůstává otevření offline a odpadá pomalé prohledávání celého archivu.
+  if (!zpravyZArchivu && !zpravyZHledani) {
+    txt = nactiTextZPlnychAktualit(aktualniZpravy[idx].titulek, aktualniZpravy[idx].rubrika);
+    if (txt.length() > 20) {
+      _zajistiSlozku("/eindata/zpravy/aktualni/detail");
+      zapisTextNaSD(cesta, txt);
+      aktualniZpravy[idx].text = txt;
+      return true;
+    }
+  }
 
   // Plný text vezmeme z lokálního denního archivu (bez internetu) a uložíme
   // do cache, aby se příště četl přímo z detail souboru.
@@ -3776,7 +4024,7 @@ void stahniArchivZeServeru() {
   struct tm timeinfo;
   if (!getLocalTime(&timeinfo, 150)) return;
 
-  const char* soubory[] = { "zpravy_svet.txt", "zpravy_cr.txt", "zpravy_tech.txt", "zpravy_pozitivni.txt" };
+  const char* soubory[] = { "zpravy_svet.txt", "zpravy_cr.txt", "zpravy_tech.txt", "zpravy_pozitivni.txt", "zpravy_kultura.txt" };
   const int DNU_ZPET = 2; // dnes, včera, předevčírem — pokryje to i výpadek aktualizace
 
   // Načteme hashe celého lokálního archivu JEDNOU pro všechny soubory
@@ -3794,7 +4042,7 @@ void stahniArchivZeServeru() {
     char den[12];
     strftime(den, sizeof(den), "%Y-%m-%d", &denTm);
 
-    for (int s = 0; s < 4; s++) {
+    for (int s = 0; s < (int)(sizeof(soubory) / sizeof(soubory[0])); s++) {
       String url = urlBase + "eindata/zpravy/archiv/" + den + "/" + soubory[s];
       String klic = String(den) + "/" + soubory[s];
 
@@ -3869,13 +4117,13 @@ void aktualizovatDataNaPozadi(bool vynuceno) {
       // Uvolníme globální Stringy před stahováním — šetříme RAM pro HTTP+TLS
       // Na ESP32 Arduino: přiřazení prázdného String() uvolní interní buffer
       { String prazdny;
-        stazenaDataSvet = prazdny; stazenaDataCR = prazdny; stazenaDataTech = prazdny; stazenaDataPozitivni = prazdny;
+        stazenaDataSvet = prazdny; stazenaDataCR = prazdny; stazenaDataTech = prazdny; stazenaDataPozitivni = prazdny; stazenaDataKultura = prazdny;
         stazenaDataPocasi = prazdny; stazenaDataKurzy = prazdny;
         stazenaDataHoroskop = prazdny; stazenaDataKurzyHistorie = prazdny;
       }
 
       bool asponNecoSeStahlo = false;
-      int noveSvet = 0, noveCR = 0, noveTech = 0, novePozitivni = 0;
+      int noveSvet = 0, noveCR = 0, noveTech = 0, novePozitivni = 0, noveKultura = 0;
       String topTitulek = "";
       sharedClientInitialized = false; // Reset klienta pro čerstvé spojení
       sharedClient.stop(); // Zavřeme případné předchozí spojení
@@ -3887,12 +4135,21 @@ void aktualizovatDataNaPozadi(bool vynuceno) {
       {
         String oldRaw = nactiSouborZAktualni("zpravy_svet.txt");
         String tmp = stahniZpravyInkrementalne("Svet", urlZpravySvetIdx, urlZpravyDetail, oldRaw, noveSvet);
+        bool indexOk = tmp.length() > 20;
         if (tmp.length() <= 20) {
           tmp = stahniTextZUrl("Svet", urlZpravySvet);
           if (tmp.length() > 20) noveSvet = spocitejNoveZpravyVuciStarym(oldRaw, tmp);
         }
         if (tmp.length() > 20) {
           if (topTitulek.length() == 0) topTitulek = prvniTitulekZRaw(tmp);
+          String cestaFull = "/eindata/zpravy/aktualni/full/zpravy_svet.txt";
+          if (sdReady && (noveSvet > 0 || !SD.exists(cestaFull.c_str()))) {
+            String full = indexOk ? stahniTextZUrl("Svet-plny", urlZpravySvet) : tmp;
+            if (full.length() > 20) {
+              _zajistiSlozku("/eindata/zpravy/aktualni/full");
+              zapisTextNaSD(cestaFull, full);
+            }
+          }
           ulozZpravuDoCache("svet", tmp); ulozAktualniZpravuNaSD("zpravy_svet.txt", tmp);
           asponNecoSeStahlo = true;
         }
@@ -3902,6 +4159,7 @@ void aktualizovatDataNaPozadi(bool vynuceno) {
       {
         String oldRaw = nactiSouborZAktualni("zpravy_cr.txt");
         String tmp = stahniZpravyInkrementalne("CR", urlZpravyCRIdx, urlZpravyDetail, oldRaw, noveCR);
+        bool indexOk = tmp.length() > 20;
         if (tmp.length() <= 20) {
           tmp = stahniTextZUrl("CR", urlZpravyCR);
           if (tmp.length() > 20) noveCR = spocitejNoveZpravyVuciStarym(oldRaw, tmp);
@@ -3909,6 +4167,14 @@ void aktualizovatDataNaPozadi(bool vynuceno) {
         if (tmp.length() > 20) {
           String t0 = prvniTitulekZRaw(tmp);
           if (t0.length() > 0) topTitulek = t0;
+          String cestaFull = "/eindata/zpravy/aktualni/full/zpravy_cr.txt";
+          if (sdReady && (noveCR > 0 || !SD.exists(cestaFull.c_str()))) {
+            String full = indexOk ? stahniTextZUrl("CR-plny", urlZpravyCR) : tmp;
+            if (full.length() > 20) {
+              _zajistiSlozku("/eindata/zpravy/aktualni/full");
+              zapisTextNaSD(cestaFull, full);
+            }
+          }
           ulozZpravuDoCache("cr", tmp); ulozAktualniZpravuNaSD("zpravy_cr.txt", tmp);
           asponNecoSeStahlo = true;
         }
@@ -3918,26 +4184,67 @@ void aktualizovatDataNaPozadi(bool vynuceno) {
       {
         String oldRaw = nactiSouborZAktualni("zpravy_tech.txt");
         String tmp = stahniZpravyInkrementalne("Tech", urlZpravyTechIdx, urlZpravyDetail, oldRaw, noveTech);
+        bool indexOk = tmp.length() > 20;
         if (tmp.length() <= 20) {
           tmp = stahniTextZUrl("Tech", urlTechAI);
           if (tmp.length() > 20) noveTech = spocitejNoveZpravyVuciStarym(oldRaw, tmp);
         }
         if (tmp.length() > 20) {
+          String cestaFull = "/eindata/zpravy/aktualni/full/zpravy_tech.txt";
+          if (sdReady && (noveTech > 0 || !SD.exists(cestaFull.c_str()))) {
+            String full = indexOk ? stahniTextZUrl("Tech-plny", urlTechAI) : tmp;
+            if (full.length() > 20) {
+              _zajistiSlozku("/eindata/zpravy/aktualni/full");
+              zapisTextNaSD(cestaFull, full);
+            }
+          }
           ulozZpravuDoCache("tech", tmp); ulozAktualniZpravuNaSD("zpravy_tech.txt", tmp);
           asponNecoSeStahlo = true;
         }
       }
 
-      nakresliLoadScreen("Stahuji Pozitivní...", 50);
+      nakresliLoadScreen("Stahuji Bulvár...", 50);
       {
         String oldRaw = nactiSouborZAktualni("zpravy_pozitivni.txt");
-        String tmp = stahniZpravyInkrementalne("Pozitivni", urlZpravyPozitivniIdx, urlZpravyDetail, oldRaw, novePozitivni);
+        String tmp = stahniZpravyInkrementalne("Bulvar", urlZpravyPozitivniIdx, urlZpravyDetail, oldRaw, novePozitivni);
+        bool indexOk = tmp.length() > 20;
         if (tmp.length() <= 20) {
-          tmp = stahniTextZUrl("Pozitivni", urlZpravyPozitivni);
+          tmp = stahniTextZUrl("Bulvar", urlZpravyPozitivni);
           if (tmp.length() > 20) novePozitivni = spocitejNoveZpravyVuciStarym(oldRaw, tmp);
         }
         if (tmp.length() > 20) {
+          String cestaFull = "/eindata/zpravy/aktualni/full/zpravy_pozitivni.txt";
+          if (sdReady && (novePozitivni > 0 || !SD.exists(cestaFull.c_str()))) {
+            String full = indexOk ? stahniTextZUrl("Bulvar-plny", urlZpravyPozitivni) : tmp;
+            if (full.length() > 20) {
+              _zajistiSlozku("/eindata/zpravy/aktualni/full");
+              zapisTextNaSD(cestaFull, full);
+            }
+          }
           ulozZpravuDoCache("poz", tmp); ulozAktualniZpravuNaSD("zpravy_pozitivni.txt", tmp);
+          asponNecoSeStahlo = true;
+        }
+      }
+
+      nakresliLoadScreen("Stahuji Kulturu...", 52);
+      {
+        String oldRaw = nactiSouborZAktualni("zpravy_kultura.txt");
+        String tmp = stahniZpravyInkrementalne("Kultura", urlZpravyKulturaIdx, urlZpravyDetail, oldRaw, noveKultura);
+        bool indexOk = tmp.length() > 20;
+        if (tmp.length() <= 20) {
+          tmp = stahniTextZUrl("Kultura", urlZpravyKultura);
+          if (tmp.length() > 20) noveKultura = spocitejNoveZpravyVuciStarym(oldRaw, tmp);
+        }
+        if (tmp.length() > 20) {
+          String cestaFull = "/eindata/zpravy/aktualni/full/zpravy_kultura.txt";
+          if (sdReady && (noveKultura > 0 || !SD.exists(cestaFull.c_str()))) {
+            String full = indexOk ? stahniTextZUrl("Kultura-plny", urlZpravyKultura) : tmp;
+            if (full.length() > 20) {
+              _zajistiSlozku("/eindata/zpravy/aktualni/full");
+              zapisTextNaSD(cestaFull, full);
+            }
+          }
+          ulozZpravuDoCache("kultura", tmp); ulozAktualniZpravuNaSD("zpravy_kultura.txt", tmp);
           asponNecoSeStahlo = true;
         }
       }
@@ -4630,22 +4937,15 @@ void zobrazSeznamZprav() {
     celkemZprav = pocetZprav;
     pozice = clanekMenuIndex + 1;
   }
-  int pct = celkemZprav > 0 ? (pozice * 100 / celkemZprav) : 0;
   do {
     display.fillScreen(bgColor());
     u8g2Fonts.setFontMode(1);
     u8g2Fonts.setFont(getTitleFont()); u8g2Fonts.setForegroundColor(fgColor()); u8g2Fonts.setBackgroundColor(bgColor());
-    String t = "VÝBĚR (" + String(pozice) + "/" + String(celkemZprav) + ")  " + String(pct) + "%";
+    String t = "VÝBĚR (" + String(pozice) + "/" + String(celkemZprav) + ")";
     u8g2Fonts.setCursor(5, 18); u8g2Fonts.print(t.c_str());
     nakresliStatusBar();
     display.drawFastHLine(0, 23, display.width(), fgColor());
-    // ----- Progress bar (3 px vysoký, přes celou obrazovku) -----
-    int barX = 0, barY = 24, barW = display.width(), barH = 3;
-    display.drawRect(barX, barY, barW, barH, fgColor());
-    int fillW = barW > 4 ? (pct * (barW - 2)) / 100 : 0;
-    if (fillW > 0) display.fillRect(barX + 1, barY + 1, fillW, barH - 2, fgColor());
-
-    int y = 38; String tit = aktualniZpravy[clanekMenuIndex].titulek;
+    int y = 32; String tit = aktualniZpravy[clanekMenuIndex].titulek;
     bool nova = !zpravyZHledani && !jeZpravaPrectena(aktualniZpravy[clanekMenuIndex].uid);
     if (nova) tit = "+ " + tit;
     TextLine tLines[3]; int maxW = display.width() - 10;
@@ -4658,7 +4958,9 @@ void zobrazSeznamZprav() {
 
     if (aktualniZpravy[clanekMenuIndex].datum.length() > 0) {
       u8g2Fonts.setFont(getSmallFont());
-      String datumStr = aktualniZpravy[clanekMenuIndex].datum;
+      String datumStr = aktualniZpravy[clanekMenuIndex].medium;
+      if (datumStr.length() > 0 && aktualniZpravy[clanekMenuIndex].datum.length() > 0) datumStr += " · ";
+      datumStr += aktualniZpravy[clanekMenuIndex].datum;
       int dw = u8g2Fonts.getUTF8Width(datumStr.c_str());
       u8g2Fonts.setCursor(display.width() - dw - 5, 18);
       u8g2Fonts.print(datumStr.c_str());
@@ -4792,7 +5094,7 @@ static void _hledejVSouboruIdx(const String& cesta, uint8_t den, uint8_t rubrika
 // Načte stránku výsledků hledání (max 20 článků) podle offsetu.
 static void _nactiStrankuHledani(int offset) {
   pocetZprav = 0;
-  const char* soubory[] = { "zpravy_svet.txt", "zpravy_cr.txt", "zpravy_tech.txt", "zpravy_pozitivni.txt" };
+  const char* soubory[] = { "zpravy_svet.txt", "zpravy_cr.txt", "zpravy_tech.txt", "zpravy_pozitivni.txt", "zpravy_kultura.txt" };
   for (int i = offset; i < g_hledaniCount && pocetZprav < 20; i++) {
     const VysledekHledani& v = g_hledani[i];
     String blok = "";
@@ -4800,7 +5102,8 @@ static void _nactiStrankuHledani(int offset) {
       const String* raw = (v.rubrika == 0) ? &stazenaDataSvet
                         : (v.rubrika == 1) ? &stazenaDataCR
                         : (v.rubrika == 2) ? &stazenaDataTech
-                                           : &stazenaDataPozitivni;
+                        : (v.rubrika == 3) ? &stazenaDataPozitivni
+                        : &stazenaDataKultura;
       if (v.offset + v.len <= (uint32_t)raw->length())
         blok = raw->substring(v.offset, v.offset + v.len);
     } else if (v.den < g_hledaniDnu) {
@@ -4841,13 +5144,14 @@ void spustHledaniVArchivu() {
   _hledejVRam(stazenaDataCR, 1, q);
   _hledejVRam(stazenaDataTech, 2, q);
   _hledejVRam(stazenaDataPozitivni, 3, q);
+  _hledejVRam(stazenaDataKultura, 4, q);
 
   // 2) Všechny denní složky archivu na SD
   if (sdReady) {
     File archDir = SD.open("/eindata/zpravy/archiv");
     if (archDir && archDir.isDirectory()) {
-      const char* soubory[] = { "zpravy_svet.txt", "zpravy_cr.txt", "zpravy_tech.txt", "zpravy_pozitivni.txt" };
-      const int pocetSouboru = 4;
+  const char* soubory[] = { "zpravy_svet.txt", "zpravy_cr.txt", "zpravy_tech.txt", "zpravy_pozitivni.txt", "zpravy_kultura.txt" };
+      const int pocetSouboru = zpravyKategorieCount;
       File den = archDir.openNextFile();
       while (den && g_hledaniCount < MAX_HLEDANI) {
         if (den.isDirectory()) {
@@ -5117,6 +5421,62 @@ static void dtVykresli(const char* title) {
 void zobrazText(const char* title, const char* text) {
   dtNactiText((String("t:") + title).c_str(), text);
   dtVykresli(title);
+}
+
+static int zaznamenejOtevreniForYou(Preferences& prefs, const String& uid, uint8_t rubrika) {
+  if (uid.length() != 8 || rubrika >= zpravyKategorieCount) return -1;
+  for (int i = 0; i < 32; i++) {
+    char key[4]; snprintf(key, sizeof(key), "q%d", i);
+    if (prefs.getString(key, "") == uid) return i;
+  }
+
+  uint8_t slot = prefs.getUChar("next", 0) % 32;
+  char slotKey[4], doneKey[4];
+  snprintf(slotKey, sizeof(slotKey), "q%d", slot);
+  snprintf(doneKey, sizeof(doneKey), "f%d", slot);
+  prefs.putString(slotKey, uid);
+  prefs.putBool(doneKey, false);
+  prefs.putUChar("next", (slot + 1) % 32);
+
+  char openedKey[4]; snprintf(openedKey, sizeof(openedKey), "o%d", rubrika);
+  uint16_t opened = prefs.getUShort(openedKey, 0);
+  if (opened < 1000) prefs.putUShort(openedKey, opened + 1);
+  return slot;
+}
+
+static void zaznamenejOtevreniClanku() {
+  if (zpravyZHledani || clanekMenuIndex < 0 || clanekMenuIndex >= pocetZprav) return;
+  Preferences prefs;
+  if (!prefs.begin("honzueForYou", false)) return;
+  const Zprava& z = aktualniZpravy[clanekMenuIndex];
+  zaznamenejOtevreniForYou(prefs, z.uid, z.rubrika);
+  prefs.end();
+}
+
+// Za pozitivní signál se počítá až skutečné dosažení třetí stránky článku.
+// Profil zájmů zůstává v NVS zařízení; neukládají se do něj titulky ani texty.
+static void zaznamenejZajemZeCteni() {
+  if (appState != STATE_ZPRAVY_TEXT || zpravyZHledani || clanekMenuIndex < 0 || clanekMenuIndex >= pocetZprav) return;
+  int linesPerPage = getLinesPerPage();
+  if (linesPerPage <= 0 || textScrollPage < 2 || dtLineCount <= linesPerPage * 2) return;
+  const Zprava& z = aktualniZpravy[clanekMenuIndex];
+  if (z.uid.length() == 0 || z.rubrika >= zpravyKategorieCount) return;
+
+  Preferences prefs;
+  if (!prefs.begin("honzueForYou", false)) return;
+  int slot = zaznamenejOtevreniForYou(prefs, z.uid, z.rubrika);
+  if (slot >= 0) {
+    char doneKey[4]; snprintf(doneKey, sizeof(doneKey), "f%d", slot);
+    if (!prefs.getBool(doneKey, false)) {
+      prefs.putBool(doneKey, true);
+      char categoryKey[4]; snprintf(categoryKey, sizeof(categoryKey), "c%d", z.rubrika);
+      uint16_t score = prefs.getUShort(categoryKey, 0);
+      if (score < 1000) prefs.putUShort(categoryKey, score + 1);
+      if (subMenuIndex == zpravyForYouIndex && !zpravyZArchivu)
+        g_forYouNeedsRefresh = true;
+    }
+  }
+  prefs.end();
 }
 
 // Zobrazí knihu z knihovny. Obsah se ze SD čte jen při prvním otevření,
@@ -6555,7 +6915,25 @@ void goBack() {
     case STATE_KNIHOVNA_DETAIL: ulozPoziciKnihy(subMenuIndex, textScrollPage); appState = STATE_KNIHOVNA; zobrazSubMenu("KNIHOVNA", dynamicKnihovnaItems, dynamicKnihovnaCount, subMenuIndex, subScrollOffset); break;
     case STATE_KNIHOVNA: appState = STATE_MAIN_MENU; zobrazSubMenu("HLAVNÍ MENU", mainMenuItems, mainMenuCount, menuIndex, scrollOffset); break;
     
-    case STATE_ZPRAVY_TEXT: appState = STATE_ZPRAVY_SEZNAM; zobrazSeznamZprav(); break;
+    case STATE_ZPRAVY_TEXT:
+      if (subMenuIndex == zpravyForYouIndex && !zpravyZArchivu && !zpravyZHledani) {
+        int cilovyOffset = aktualniStranka * 20 + clanekMenuIndex;
+        appState = STATE_ZPRAVY_SEZNAM;
+        if (g_forYouNeedsRefresh) {
+          parsujForYou();
+          if (aktualniCelkemClanku > 0) {
+            int posledniStranka = (aktualniCelkemClanku - 1) / 20;
+            aktualniStranka = min(cilovyOffset / 20, posledniStranka);
+            _nactiStrankuAktualit(aktualniStranka * 20);
+            clanekMenuIndex = min(cilovyOffset % 20, max(0, pocetZprav - 1));
+          } else clanekMenuIndex = 0;
+        }
+        zobrazSeznamZprav();
+      } else {
+        appState = STATE_ZPRAVY_SEZNAM;
+        zobrazSeznamZprav();
+      }
+      break;
     case STATE_ZPRAVY_SEZNAM:
       clanekMenuIndex = 0;
       if (zpravyZHledani) {
@@ -6565,7 +6943,7 @@ void goBack() {
         zobrazSubMenu("ARCHIV ZPRÁV", archivDatumy, archivDatumCount, 0, 0);
       } else if (zpravyZArchivu) {
         appState = STATE_ARCHIV_ZPRAVY_MENU;
-        zobrazSubMenu(("ARCHIV: " + archivAktualniDatum).c_str(), zpravyMenuItems, 4, archivZpravySubIndex, archivZpravyScrollOffset);
+        zobrazSubMenu(("ARCHIV: " + archivAktualniDatum).c_str(), zpravyMenuItems, zpravyKategorieCount, archivZpravySubIndex, archivZpravyScrollOffset);
       } else {
         appState = STATE_ZPRAVY_MENU; zobrazSubMenu("ZPRÁVY", zpravyMenuItems, zpravyMenuCount, subMenuIndex, subScrollOffset);
       }
@@ -8801,6 +9179,12 @@ void setup() {
 
     Serial.print("Deep sleep wakeup — obnova stavu: "); Serial.println(rtc_appState);
 
+    // Uložený stav ze starší verze mohl mít vybranou už odstraněnou rubriku Akce.
+    if (appState == STATE_ZPRAVY_MENU && subMenuIndex >= zpravyMenuCount) {
+      subMenuIndex = zpravyArchivIndex;
+      subScrollOffset = 0;
+    }
+
     // Obnovit obrazovku dle uloženého stavu
     switch (appState) {
       case STATE_AKTUALITY:
@@ -8825,19 +9209,25 @@ void setup() {
       case STATE_ZPRAVY_MENU:
         zobrazSubMenu("ZPRÁVY", zpravyMenuItems, zpravyMenuCount, subMenuIndex, subScrollOffset); break;
       case STATE_ZPRAVY_SEZNAM:
-        // subMenuIndex nese kategorii: 0=svět, 1=ČR, 2=tech
+        // subMenuIndex nese kategorii zpráv; indexy 0–4 odpovídají rubrikám.
         zpravyZHledani = false;
         if      (subMenuIndex == 0) parsujZpravy(stazenaDataSvet);
         else if (subMenuIndex == 1) parsujZpravy(stazenaDataCR);
         else if (subMenuIndex == 2) parsujZpravy(stazenaDataTech);
-        else                        parsujZpravy(stazenaDataPozitivni);
+        else if (subMenuIndex == 3) parsujZpravy(stazenaDataPozitivni);
+        else if (subMenuIndex == 4) parsujZpravy(stazenaDataKultura);
+        else if (subMenuIndex == zpravyForYouIndex) parsujForYou();
+        else                        parsujZpravy(stazenaDataKultura);
         if (clanekMenuIndex >= pocetZprav) clanekMenuIndex = 0;
         zobrazSeznamZprav(); break;
       case STATE_ZPRAVY_TEXT:
         if      (subMenuIndex == 0) parsujZpravy(stazenaDataSvet);
         else if (subMenuIndex == 1) parsujZpravy(stazenaDataCR);
         else if (subMenuIndex == 2) parsujZpravy(stazenaDataTech);
-        else                        parsujZpravy(stazenaDataPozitivni);
+        else if (subMenuIndex == 3) parsujZpravy(stazenaDataPozitivni);
+        else if (subMenuIndex == 4) parsujZpravy(stazenaDataKultura);
+        else if (subMenuIndex == zpravyForYouIndex) parsujForYou();
+        else                        parsujZpravy(stazenaDataKultura);
         if (clanekMenuIndex >= pocetZprav) clanekMenuIndex = 0;
         nactiDetailClanku(clanekMenuIndex);
         if (aktualniZpravy[clanekMenuIndex].text.length() == 0)
@@ -9024,7 +9414,7 @@ void akceNahoru() {
       if (textScrollPage > 0) { textScrollPage--; zobrazText(sdTextViewTitle.c_str(), sdTextViewBuffer.c_str()); }
       break;
     case STATE_ARCHIV_DATUMY: menuUp(archivDatumIndex, archivDatumScrollOffset, archivDatumCount); zobrazSubMenu("ARCHIV ZPRÁV", archivDatumy, archivDatumCount, archivDatumIndex, archivDatumScrollOffset); break;
-    case STATE_ARCHIV_ZPRAVY_MENU: menuUp(archivZpravySubIndex, archivZpravyScrollOffset, 4); zobrazSubMenu(("ARCHIV: " + archivAktualniDatum).c_str(), zpravyMenuItems, 4, archivZpravySubIndex, archivZpravyScrollOffset); break;
+    case STATE_ARCHIV_ZPRAVY_MENU: menuUp(archivZpravySubIndex, archivZpravyScrollOffset, zpravyKategorieCount); zobrazSubMenu(("ARCHIV: " + archivAktualniDatum).c_str(), zpravyMenuItems, zpravyKategorieCount, archivZpravySubIndex, archivZpravyScrollOffset); break;
     case STATE_TOOLBOX: menuUp(subMenuIndex, subScrollOffset, toolboxCount); zobrazSubMenu("TOOLBOX", toolboxItems, toolboxCount, subMenuIndex, subScrollOffset); break;
     case STATE_CASOVAC:
       if (!casovacBezi && !casovacZvoni) { casovacMin--; if (casovacMin < 1) casovacMin = 180; zobrazCasovac(); }
@@ -9065,6 +9455,191 @@ void akceNahoru() {
   }
 }
 
+static void posunMenuHromadne(int& index, int& offset, int count, int delta) {
+  if (count <= 0) return;
+  int kroky = abs(delta);
+  for (int i = 0; i < kroky; i++) {
+    if (delta > 0) menuDown(index, offset, count);
+    else menuUp(index, offset, count);
+  }
+}
+
+// Posune seznam zpráv přes hranice stránek, ale vykreslení nechá až na konec.
+static void posunSeznamZpravHromadne(int delta) {
+  int kroky = abs(delta);
+  for (int i = 0; i < kroky && pocetZprav > 0; i++) {
+    if (delta > 0) {
+      if (zpravyZArchivu && clanekMenuIndex >= pocetZprav - 1 &&
+          (archivStranka + 1) * 20 < archivCelkemClanku) {
+        archivStranka++;
+        parsujZpravyStrankuZeSouboru(archivOtevrenySoubor, archivStranka * 20);
+        clanekMenuIndex = 0;
+      } else if (!zpravyZArchivu && !zpravyZHledani && clanekMenuIndex >= pocetZprav - 1 &&
+                 (aktualniStranka + 1) * 20 < aktualniCelkemClanku) {
+        aktualniStranka++;
+        _nactiStrankuAktualit(aktualniStranka * 20);
+        clanekMenuIndex = 0;
+      } else if (zpravyZHledani && clanekMenuIndex >= pocetZprav - 1 &&
+                 (hledaniStranka + 1) * 20 < hledaniCelkem) {
+        hledaniStranka++;
+        _nactiStrankuHledani(hledaniStranka * 20);
+        clanekMenuIndex = 0;
+      } else {
+        clanekMenuIndex = (clanekMenuIndex + 1) % pocetZprav;
+      }
+    } else {
+      if (zpravyZArchivu && clanekMenuIndex == 0 && archivStranka > 0) {
+        archivStranka--;
+        parsujZpravyStrankuZeSouboru(archivOtevrenySoubor, archivStranka * 20);
+        clanekMenuIndex = pocetZprav - 1;
+      } else if (!zpravyZArchivu && !zpravyZHledani && clanekMenuIndex == 0 && aktualniStranka > 0) {
+        aktualniStranka--;
+        _nactiStrankuAktualit(aktualniStranka * 20);
+        clanekMenuIndex = pocetZprav - 1;
+      } else if (zpravyZHledani && clanekMenuIndex == 0 && hledaniStranka > 0) {
+        hledaniStranka--;
+        _nactiStrankuHledani(hledaniStranka * 20);
+        clanekMenuIndex = pocetZprav - 1;
+      } else {
+        clanekMenuIndex = (clanekMenuIndex - 1 + pocetZprav) % pocetZprav;
+      }
+    }
+  }
+}
+
+// U běžných seznamů změníme výběr po všech nahraných impulzech a obnovíme
+// displej jen jednou. Jednotlivý pomalý krok zůstane okamžitý.
+static bool encoderPosunMenuHromadne(int delta) {
+  if (delta == 0) return true;
+  switch (appState) {
+    case STATE_ZPRAVY_SEZNAM:
+      posunSeznamZpravHromadne(delta);
+      nastavOblastPrekresleni(0, 0, display.width(), 110);
+      zobrazSeznamZprav();
+      return true;
+    case STATE_MAIN_MENU:
+      posunMenuHromadne(menuIndex, scrollOffset, mainMenuCount, delta);
+      zobrazSubMenu("HLAVNÍ MENU", mainMenuItems, mainMenuCount, menuIndex, scrollOffset); return true;
+    case STATE_KNIHOVNA:
+      posunMenuHromadne(subMenuIndex, subScrollOffset, dynamicKnihovnaCount, delta);
+      zobrazSubMenu("KNIHOVNA", dynamicKnihovnaItems, dynamicKnihovnaCount, subMenuIndex, subScrollOffset); return true;
+    case STATE_AKTUALITY:
+      posunMenuHromadne(subMenuIndex, subScrollOffset, aktualityCount, delta);
+      zobrazSubMenu("AKTUALITY", aktualityItems, aktualityCount, subMenuIndex, subScrollOffset); return true;
+    case STATE_KALENDAR_MENU:
+      posunMenuHromadne(subMenuIndex, subScrollOffset, kalendarMenuCount, delta);
+      zobrazSubMenu("KALENDÁŘ", kalendarMenuItems, kalendarMenuCount, subMenuIndex, subScrollOffset); return true;
+    case STATE_ZPRAVY_MENU:
+      posunMenuHromadne(subMenuIndex, subScrollOffset, zpravyMenuCount, delta);
+      zobrazSubMenu("ZPRÁVY", zpravyMenuItems, zpravyMenuCount, subMenuIndex, subScrollOffset); return true;
+    case STATE_ARCHIV_DATUMY:
+      posunMenuHromadne(archivDatumIndex, archivDatumScrollOffset, archivDatumCount, delta);
+      zobrazSubMenu("ARCHIV ZPRÁV", archivDatumy, archivDatumCount, archivDatumIndex, archivDatumScrollOffset); return true;
+    case STATE_ARCHIV_ZPRAVY_MENU:
+      posunMenuHromadne(archivZpravySubIndex, archivZpravyScrollOffset, zpravyKategorieCount, delta);
+      zobrazSubMenu(("ARCHIV: " + archivAktualniDatum).c_str(), zpravyMenuItems, zpravyKategorieCount, archivZpravySubIndex, archivZpravyScrollOffset); return true;
+    case STATE_HUDBA:
+      if (hudbaMenuCount() > 0) { posunMenuHromadne(subMenuIndex, subScrollOffset, hudbaMenuCount(), delta); zobrazHudbaSeznam(); }
+      return true;
+    case STATE_JR_SEZNAM:
+      if (jrCount > 0) { posunMenuHromadne(subMenuIndex, subScrollOffset, jrCount, delta); zobrazSubMenu("SPOJE", jrItems, jrCount, subMenuIndex, subScrollOffset); }
+      return true;
+    case STATE_TOOLBOX:
+      posunMenuHromadne(subMenuIndex, subScrollOffset, toolboxCount, delta);
+      zobrazSubMenu("TOOLBOX", toolboxItems, toolboxCount, subMenuIndex, subScrollOffset); return true;
+    case STATE_RECEPTY_SEZNAM:
+      if (receptyCount > 0) { posunMenuHromadne(subMenuIndex, subScrollOffset, receptyCount, delta); zobrazSubMenu("RECEPTY", receptyItems, receptyCount, subMenuIndex, subScrollOffset); }
+      return true;
+    case STATE_DIKTAFON_MENU:
+      posunMenuHromadne(subMenuIndex, subScrollOffset, diktafonMenuCount, delta);
+      zobrazSubMenu("DIKTAFON", diktafonMenuItems, diktafonMenuCount, subMenuIndex, subScrollOffset); return true;
+    case STATE_DIKTAFON_SEZNAM:
+      if (diktafonCount > 0) { posunMenuHromadne(subMenuIndex, subScrollOffset, diktafonCount, delta); zobrazSubMenu("DIKTAFON", diktafonItems, diktafonCount, subMenuIndex, subScrollOffset); }
+      return true;
+    case STATE_QR_MENU:
+      posunMenuHromadne(subMenuIndex, subScrollOffset, qrCount, delta);
+      zobrazSubMenu("QR KÓDY", qrItems, qrCount, subMenuIndex, subScrollOffset); return true;
+    case STATE_SLOVNIK:
+      posunMenuHromadne(subMenuIndex, subScrollOffset, slovnikLangCount, delta);
+      zobrazSubMenu("SLOVNÍK", slovnikLangNazvy, slovnikLangCount, subMenuIndex, subScrollOffset); return true;
+    case STATE_SLOVNIK_JAZYK:
+      posunMenuHromadne(subMenuIndex, subScrollOffset, slovnikCount, delta);
+      zobrazSubMenu("SLOVNÍK", slovnikItems, slovnikCount, subMenuIndex, subScrollOffset); return true;
+    case STATE_FRAZE_MENU:
+      posunMenuHromadne(subMenuIndex, subScrollOffset, frazeMenuCount, delta);
+      zobrazSubMenu("FRÁZE", frazeMenuItems, frazeMenuCount, subMenuIndex, subScrollOffset); return true;
+    case STATE_GENERATOR:
+      posunMenuHromadne(subMenuIndex, subScrollOffset, generatorCount, delta);
+      zobrazSubMenu("GENERÁTOR", generatorItems, generatorCount, subMenuIndex, subScrollOffset); return true;
+    case STATE_HRY:
+      posunMenuHromadne(subMenuIndex, subScrollOffset, hryCount, delta);
+      zobrazSubMenu("HRY", hryItems, hryCount, subMenuIndex, subScrollOffset); return true;
+    case STATE_GAMEBOOK_MENU:
+      posunMenuHromadne(subMenuIndex, subScrollOffset, dynamicGamebookCount, delta);
+      zobrazSubMenu("GAMEBOOK", dynamicGamebookItems, dynamicGamebookCount, subMenuIndex, subScrollOffset); return true;
+    case STATE_KOSTKY_VYBER:
+      posunMenuHromadne(subMenuIndex, subScrollOffset, kostkyCount, delta);
+      zobrazSubMenu("KOSTKY", kostkyItems, kostkyCount, subMenuIndex, subScrollOffset); return true;
+    case STATE_KVIZ_KATEGORIE:
+      posunMenuHromadne(kvizKatIdx, kvizKatScrollOffset, kvizKategoriiCount, delta);
+      zobrazSubMenu("KATEGORIE KVÍZU", kvizKategorieItems, kvizKategoriiCount, kvizKatIdx, kvizKatScrollOffset); return true;
+    case STATE_KVIZ_OBTIZNOST:
+      kvizObtIdx = (kvizObtIdx + delta % 3 + 3) % 3;
+      zobrazSubMenu("OBTÍŽNOST", kvizObtiznostItems, 3, kvizObtIdx, 0); return true;
+    case STATE_NASTAVENI:
+      posunMenuHromadne(subMenuIndex, subScrollOffset, nastaveniCount, delta);
+      zobrazSubMenu("NASTAVENÍ", nastaveniItems, nastaveniCount, subMenuIndex, subScrollOffset); return true;
+    case STATE_NASTAVENI_VZHLED:
+      posunMenuHromadne(subMenuIndex, subScrollOffset, vzhledCount, delta);
+      zobrazSubMenu("VZHLED", vzhledItems, vzhledCount, subMenuIndex, subScrollOffset); return true;
+    case STATE_NASTAVENI_AKTUALIZACE:
+      posunMenuHromadne(subMenuIndex, subScrollOffset, aktualizaceCount, delta);
+      zobrazSubMenu("AKTUALIZACE", aktualizaceItems, aktualizaceCount, subMenuIndex, subScrollOffset); return true;
+    case STATE_NASTAVENI_AUTOUSPANI:
+      posunMenuHromadne(subMenuIndex, subScrollOffset, autoSleepCount, delta);
+      zobrazSubMenu("AUTO USPANI", autoSleepItems, autoSleepCount, subMenuIndex, subScrollOffset); return true;
+    case STATE_NASTAVENI_WIFI:
+      posunMenuHromadne(subMenuIndex, subScrollOffset, wifiMenuCount, delta);
+      zobrazSubMenu("WIFI", wifiMenuItems, wifiMenuCount, subMenuIndex, subScrollOffset); return true;
+    case STATE_HOROSKOP_MENU:
+      if (horoskopCount > 0) {
+        horoskopMenuIndex = (horoskopMenuIndex + delta % horoskopCount + horoskopCount) % horoskopCount;
+        zobrazSubMenu("HOROSKOP", horoskopItems, horoskopCount, horoskopMenuIndex, 0);
+      }
+      return true;
+    case STATE_WIFI_SEZNAM:
+      if (wifiPocetSiti > 0) {
+        wifiSitIndex = (wifiSitIndex + delta % wifiPocetSiti + wifiPocetSiti) % wifiPocetSiti;
+        nastavOblastPrekresleni(0, 42, display.width(), 70);
+        zobrazWifiSeznam();
+      }
+      return true;
+    case STATE_SD_BROWSER:
+      if (sdEntryCount > 0) {
+        int visible = getVisibleMenuItems();
+        sdBrowserIndex = (sdBrowserIndex + delta % sdEntryCount + sdEntryCount) % sdEntryCount;
+        if (sdBrowserIndex < sdBrowserScrollOffset) sdBrowserScrollOffset = sdBrowserIndex;
+        if (sdBrowserIndex >= sdBrowserScrollOffset + visible) sdBrowserScrollOffset = sdBrowserIndex - visible + 1;
+        if (sdBrowserIndex == 0) sdBrowserScrollOffset = 0;
+        zobrazSDProhlizec();
+      }
+      return true;
+    default: return false;
+  }
+}
+
+void posunStranuClanku(int delta) {
+  if (dtLineCount <= 0 || delta == 0) return;
+  int radkuNaStranu = getLinesPerPage();
+  if (radkuNaStranu <= 0) return;
+  int maxStrana = (dtLineCount - 1) / radkuNaStranu;
+  int novaStrana = constrain(textScrollPage + delta, 0, maxStrana);
+  if (novaStrana == textScrollPage) return;
+  textScrollPage = novaStrana;
+  if (delta > 0) zaznamenejZajemZeCteni();
+  zobrazText(aktualniZpravy[clanekMenuIndex].titulek.c_str(), aktualniZpravy[clanekMenuIndex].text.c_str());
+}
+
 void obsluzEncoder() {
   int krok = encPozice / ENC_KROKY_NA_CVAK;
   // Při stisku kolečka se mechanika nepatrně pootočí → ignorovat kroky během
@@ -9079,6 +9654,14 @@ void obsluzEncoder() {
   lastUserActivityMs = millis();
   if (jeTestStav()) return;
   if (jeKlavesnice()) { klavesnicePosun(delta); return; }
+
+  // E-paper překreslení je blokující. Během něj ISR dál sbírá otočení,
+  // takže po návratu z vykreslení zpracujeme celý nasbíraný rozdíl najednou.
+  if (appState == STATE_ZPRAVY_TEXT) {
+    posunStranuClanku(delta);
+    return;
+  }
+  if (encoderPosunMenuHromadne(delta)) return;
 
   int n = (delta > 0) ? delta : -delta;
   for (int i = 0; i < n; i++) {
@@ -9105,6 +9688,13 @@ void obsluzEncoderTlacitko() {
 }
 
 void akceDotyk(int p) {   // 0=NAHORU, 1=DOLU, 2=DOLEVA, 3=DOPRAVA
+  if (appState == STATE_ZPRAVY_TEXT) {
+    if (p == 0) posunStranuClanku(-1);       // předchozí stránka
+    else if (p == 1) posunStranuClanku(1);   // další stránka
+    else if (p == 2) goBack();              // opustit článek
+    // Doprava zůstává volná pro pozdější funkci.
+    return;
+  }
   if (jeKlavesnice()) {
     // V klávesnici se D-padem jen pohybujeme po mřížce všemi směry.
     // (Potvrzení znaku zůstává na stisku encoderu / BTN21.)
@@ -9324,10 +9914,10 @@ void loop() {
             }
             nastavOblastPrekresleni(0, 0, display.width(), 110); zobrazSeznamZprav();
           } break;
-        case STATE_ZPRAVY_TEXT: textScrollPage++; zobrazText(aktualniZpravy[clanekMenuIndex].titulek.c_str(), aktualniZpravy[clanekMenuIndex].text.c_str()); break;
+        case STATE_ZPRAVY_TEXT: textScrollPage++; zaznamenejZajemZeCteni(); zobrazText(aktualniZpravy[clanekMenuIndex].titulek.c_str(), aktualniZpravy[clanekMenuIndex].text.c_str()); break;
         case STATE_SD_TEXT_VIEW: textScrollPage++; zobrazText(sdTextViewTitle.c_str(), sdTextViewBuffer.c_str()); break;
         case STATE_ARCHIV_DATUMY: menuDown(archivDatumIndex, archivDatumScrollOffset, archivDatumCount); zobrazSubMenu("ARCHIV ZPRÁV", archivDatumy, archivDatumCount, archivDatumIndex, archivDatumScrollOffset); break;
-        case STATE_ARCHIV_ZPRAVY_MENU: menuDown(archivZpravySubIndex, archivZpravyScrollOffset, 4); zobrazSubMenu(("ARCHIV: " + archivAktualniDatum).c_str(), zpravyMenuItems, 4, archivZpravySubIndex, archivZpravyScrollOffset); break;
+        case STATE_ARCHIV_ZPRAVY_MENU: menuDown(archivZpravySubIndex, archivZpravyScrollOffset, zpravyKategorieCount); zobrazSubMenu(("ARCHIV: " + archivAktualniDatum).c_str(), zpravyMenuItems, zpravyKategorieCount, archivZpravySubIndex, archivZpravyScrollOffset); break;
         case STATE_TOOLBOX: menuDown(subMenuIndex, subScrollOffset, toolboxCount); zobrazSubMenu("TOOLBOX", toolboxItems, toolboxCount, subMenuIndex, subScrollOffset); break;
         case STATE_RECEPTY_SEZNAM: if (receptyCount > 0) { menuDown(subMenuIndex, subScrollOffset, receptyCount); zobrazSubMenu("RECEPTY", receptyItems, receptyCount, subMenuIndex, subScrollOffset); } break;
         case STATE_RECEPT_DETAIL: receptStranka++; zobrazReceptDetail(); break;
@@ -9542,7 +10132,7 @@ void loop() {
 
         case STATE_ZPRAVY_MENU:
           clanekMenuIndex = 0;
-          if (subMenuIndex == 4) {
+          if (subMenuIndex == zpravyArchivIndex) {
             // Archiv zpráv — první položka je hledání, pak jednotlivé dny
             {
               int dnu = nactiArchivDatumy(archivDatumy + 1, 29);
@@ -9561,6 +10151,8 @@ void loop() {
             else if (subMenuIndex == 1) parsujZpravy(stazenaDataCR);
             else if (subMenuIndex == 2) parsujZpravy(stazenaDataTech);
             else if (subMenuIndex == 3) parsujZpravy(stazenaDataPozitivni);
+            else if (subMenuIndex == 4) parsujZpravy(stazenaDataKultura);
+            else if (subMenuIndex == zpravyForYouIndex) parsujForYou();
             zobrazSeznamZprav();
           }
           break;
@@ -9575,13 +10167,14 @@ void loop() {
             archivAktualniDatum = archivDatumy[archivDatumIndex];
             archivZpravySubIndex = 0; archivZpravyScrollOffset = 0;
             appState = STATE_ARCHIV_ZPRAVY_MENU;
-            zobrazSubMenu(("ARCHIV: " + archivAktualniDatum).c_str(), zpravyMenuItems, 4, 0, 0);
+            zobrazSubMenu(("ARCHIV: " + archivAktualniDatum).c_str(), zpravyMenuItems, zpravyKategorieCount, 0, 0);
           }
           break;
 
         case STATE_ARCHIV_ZPRAVY_MENU:
           {
-            const char* soubory[] = { "zpravy_svet.txt", "zpravy_cr.txt", "zpravy_tech.txt", "zpravy_pozitivni.txt" };
+            if (archivZpravySubIndex >= zpravyKategorieCount) archivZpravySubIndex = 0;
+            const char* soubory[] = { "zpravy_svet.txt", "zpravy_cr.txt", "zpravy_tech.txt", "zpravy_pozitivni.txt", "zpravy_kultura.txt" };
             archivOtevrenySoubor = String("/eindata/zpravy/archiv/") + archivAktualniDatum + "/" + soubory[archivZpravySubIndex];
             archivStranka = 0;
             archivCelkemClanku = parsujZpravyStrankuZeSouboru(archivOtevrenySoubor, 0);
@@ -9602,6 +10195,7 @@ void loop() {
 
         case STATE_ZPRAVY_SEZNAM:
           if (!zpravyZHledani) oznacitJakoPrectenou(aktualniZpravy[clanekMenuIndex].uid);
+          zaznamenejOtevreniClanku();
           // Plný text se dotahuje až při otevření článku (seznam je jen index)
           nactiDetailClanku(clanekMenuIndex);
           if (aktualniZpravy[clanekMenuIndex].text.length() == 0)

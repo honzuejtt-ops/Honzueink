@@ -12,7 +12,7 @@ import unicodedata
 import calendar
 from datetime import datetime, timedelta, timezone, date
 from zoneinfo import ZoneInfo
-from urllib.parse import urlparse
+from urllib.parse import urlparse, urljoin
 
 TZ_PRAHA = ZoneInfo("Europe/Prague")
 
@@ -134,16 +134,56 @@ def ocisti_text(t):
 # --- FUNKCE PRO VYTĚŽENÍ TEXTU PŘÍMO Z ČLÁNKU (Trafilatura) ---
 def stahni_text_clanku(url, perex):
     try:
-        stazeno = trafilatura.fetch_url(url)
-        if not stazeno:
+        odpoved = SESSION.get(
+            url,
+            headers={"User-Agent": "Mozilla/5.0 (compatible; HonzueINK/1.0)"},
+            timeout=(4, 10),
+        )
+        if odpoved.status_code != 200 or not odpoved.content:
             return None
+        stazeno = odpoved.text
         html_text = BeautifulSoup(stazeno, "html.parser").get_text(" ", strip=True).lower()
         obsah = trafilatura.extract(stazeno, include_comments=False, include_tables=False)
         
         if not obsah:
             return None
 
+        host = (urlparse(url).hostname or "").lower()
+        obsah = obsah.strip()
+
+        # EJAJ přidává na stránky katalogových nástrojů newsletter a celý blok
+        # doporučených produktů. Pokud extraktor zachytí jen tento společný
+        # obsah, článek raději přeskočíme, než abychom jej uložili jako zprávu.
+        if host == "ejaj.cz" or host.endswith(".ejaj.cz"):
+            radky = obsah.splitlines()
+            koncove_bloky = re.compile(
+                r"^\s*(AI novinky do e-mailu|Podobné nástroje|Podobne nastroje)\s*$",
+                re.IGNORECASE,
+            )
+            pozice = next((i for i, r in enumerate(radky) if koncove_bloky.match(r)), None)
+            if pozice is not None:
+                obsah = "\n".join(radky[:pozice]).strip()
+            # Typická stránka nástroje bez skutečného článku: kategorie,
+            # newsletter a SEO katalog podobných nástrojů.
+            if re.search(r"(?im)^\s*Kategorie\s*$", obsah) and len(obsah) < 500:
+                return None
+
+        # MovieZone může při nedostupném článku vrátit přihlašovací/registr.
+        # obrazovku. Jednotlivá slova mohou být legitimní, proto požadujeme
+        # několik charakteristických navigačních frází současně.
         obsah_maly = obsah.lower()
+        if host == "moviezone.cz" or host.endswith(".moviezone.cz"):
+            prihlasovaci_fraze = (
+                "komentovat a hodnotit filmy",
+                "sestavovat si žebříčky oblíbených filmů",
+                "zapomenuté heslo",
+                "přihlášení",
+                "registrace",
+                "soutěžit o filmové",
+            )
+            if sum(frase in obsah_maly for frase in prihlasovaci_fraze) >= 2:
+                return None
+
         paywall_klicova_slova = (
             "odemkněte článek", "odemknout článek", "přístup k prémiovým článkům",
             "číst ho můžeš jen s refresher+", "co se dozvíš po odemčení",
@@ -178,15 +218,45 @@ def stahni_text_clanku(url, perex):
     except Exception:
         return None
 
-# --- FUNKCE PRO ZPRÁVY (RSS) ---
-def stahni_zpravy(rss_url, limit=15, vyzadovana_slova=()):
+# --- FUNKCE PRO ZPRÁVY (RSS/Atom) ---
+def _parse_rss_datum(item, event_mode=False):
+    """Vrátí datum RSS/Atom položky v pražském čase, nebo None."""
     from email.utils import parsedate_to_datetime
+
+    nazvy_udalosti = {"startdate", "eventdate", "begindate", "start_date", "event_date"}
+    nazvy_bezne = {"pubdate", "published", "updated", "date"}
+    datumove_elementy = [
+        element for element in item.find_all()
+        if element.name and element.name.lower().split(":")[-1] in nazvy_udalosti | nazvy_bezne
+    ]
+    if event_mode:
+        datumove_elementy.sort(
+            key=lambda element: element.name.lower().split(":")[-1] not in nazvy_udalosti
+        )
+    for element in datumove_elementy:
+        raw = element.get_text(" ", strip=True)
+        if not raw:
+            continue
+        try:
+            dt = parsedate_to_datetime(raw)
+        except (TypeError, ValueError, OverflowError):
+            try:
+                dt = datetime.fromisoformat(raw.replace("Z", "+00:00"))
+            except ValueError:
+                continue
+        if dt.tzinfo is None:
+            dt = dt.replace(tzinfo=TZ_PRAHA)
+        return dt.astimezone(TZ_PRAHA)
+    return None
+
+
+def stahni_zpravy(rss_url, limit=15, vyzadovana_slova=(), exclude_titulky=None, event_mode=False):
     hlavicky = {"User-Agent": "Mozilla/5.0"}
     try:
         odpoved = get_with_retry(rss_url, headers=hlavicky, timeout=10, retries=3)
-        # Použijeme BeautifulSoup pro parsování XML — je mnohem tolerantnější k jmenným prostorům WP
+        odpoved.raise_for_status()
         soup = BeautifulSoup(odpoved.content, 'xml')
-        items = soup.find_all('item')
+        items = soup.find_all(["item", "entry"])
         
         vysledny_text = ""
         if not items: 
@@ -194,32 +264,46 @@ def stahni_zpravy(rss_url, limit=15, vyzadovana_slova=()):
             
         media = kratky_nazev_media(rss_url)
         pridano = 0
+        dnes = praha_now().date()
+        vyloucene = {norm_titulek(t) for t in (exclude_titulky or ())}
         for item in items:
             if pridano >= limit:
                 break
-            titulek = item.find('title').get_text().strip() if item.find('title') else "Bez titulku"
-            odkaz = item.find('link').get_text().strip() if item.find('link') else ""
+            title_el = item.find('title')
+            titulek = title_el.get_text(" ", strip=True) if title_el else "Bez titulku"
+            link_elements = item.find_all('link')
+            odkaz = ""
+            if link_elements:
+                def je_alternativni_odkaz(element):
+                    rel = element.get("rel") or []
+                    if isinstance(rel, str):
+                        rel = rel.split()
+                    return not rel or "alternate" in rel
+                link_el = next((x for x in link_elements if je_alternativni_odkaz(x)), link_elements[0])
+                odkaz = link_el.get("href", "").strip() or link_el.get_text(" ", strip=True)
+            odkaz = urljoin(rss_url, odkaz) if odkaz else ""
+            datum = _parse_rss_datum(item, event_mode=event_mode)
+
+            # Nejprve zahodíme staré a duplicitní položky, teprve pak stahujeme HTML článku.
+            if not event_mode and (not datum or datum.date() != dnes):
+                continue
+            if norm_titulek(titulek) in vyloucene:
+                continue
             if vyzadovana_slova:
                 titulek_norm = norm_titulek(titulek)
                 if not any(norm_titulek(slovo) in titulek_norm for slovo in vyzadovana_slova):
                     continue
 
-            # Datum
-            pub_date = item.find('pubDate')
-            datum_cas = ""
-            if pub_date and pub_date.get_text():
-                try:
-                    dt = parsedate_to_datetime(pub_date.get_text().strip())
-                    if dt.tzinfo is not None:
-                        dt = dt.astimezone(TZ_PRAHA)
-                    datum_cas = dt.strftime("%d.%-m. %H:%M")
-                except Exception:
-                    datum_cas = ""
-            else:
-                datum_cas = ""
+            # Některá kalendářová RSS nemají datum publikace. Kudy se proto
+            # neomezuje na den zprávy; při chybějícím datu použijeme den stažení.
+            if event_mode and datum is None:
+                datum = praha_now()
+            if datum is None:
+                continue
+            datum_cas = datum.strftime("%d.%m.%Y %H:%M")
 
             # Perex (description) — očištěný a zploštělý na jeden řádek
-            perex_el = item.find('description')
+            perex_el = item.find(['description', 'summary', 'content'])
             perex_raw = perex_el.get_text().strip() if perex_el else ""
             perex = ocisti_text(BeautifulSoup(perex_raw, "html.parser").get_text())
             perex = re.sub(r"\s+", " ", perex).strip()
@@ -231,6 +315,7 @@ def stahni_zpravy(rss_url, limit=15, vyzadovana_slova=()):
                 continue
             vysledny_text += f"|T|{titulek}|D|{datum_cas}|P|{perex_kratky}|M|{media}|X|{text_clanku}|E|"
             pridano += 1
+            vyloucene.add(norm_titulek(titulek))
             
         return vysledny_text
     except Exception as e: 
@@ -533,26 +618,31 @@ def stahni_horoskopy():
         res += f"|Z|{nazvy_cz[i]}|T|{text}|E|\n"
     return res
 
-def stahni_zpravy_multi(zdroje, celkovy_limit=10, exclude_titulky=None, max_age_days=1):
+def stahni_zpravy_multi(zdroje, celkovy_limit=10, exclude_titulky=None, event_mode=False):
     """Stáhne zprávy z více RSS zdrojů, deduplikuje podle titulku a zaloguje průběh.
     exclude_titulky: set titulků které se mají přeskočit (cross-category deduplikace).
-    Aktuality obsahují pouze články z dnešního kalendářního dne v pražském čase.
+    Běžné aktuality obsahují jen dnešní články; event_mode povolí položky
+    kalendářových RSS bez omezení dne publikace.
     """
     vybrane = []  # (dt, titulek, blok)
     # Inicializujeme titulky rovnou s vyloučenými - porovnáváme normalizovaně
     titulky = set(norm_titulek(t) for t in exclude_titulky) if exclude_titulky else set()
-    pocet_unikat = 0
+    fronty_zdroju = []
+    zakladni_kvota = max(1, (celkovy_limit + max(1, len(zdroje)) - 1) // max(1, len(zdroje)))
     for zdroj in zdroje:
         rss_url, limit_per_source = zdroj[:2]
         vyzadovana_slova = tuple(norm_titulek(x) for x in zdroj[2]) if len(zdroj) > 2 else ()
-        if pocet_unikat >= celkovy_limit:
-            break
-        zbyvajici = celkovy_limit - pocet_unikat
-        limit = min(limit_per_source, zbyvajici)
-        data = stahni_zpravy(rss_url, limit=limit, vyzadovana_slova=vyzadovana_slova)
+        # Každý zdroj dostane šanci naplnit zhruba dvojnásobek férového podílu.
+        # Přebytek rozdělíme v dalších kolech, pokud některé zdroje nabídnou málo.
+        limit = min(limit_per_source, celkovy_limit, zakladni_kvota * 2)
+        data = stahni_zpravy(
+            rss_url, limit=limit, vyzadovana_slova=vyzadovana_slova,
+            exclude_titulky=titulky, event_mode=event_mode,
+        )
         bloky = extrahuj_bloky(data)
         pridano = 0
         duplikaty = 0
+        fronta = []
         for b in bloky:
             titulek = b["titulek"]
             # Placeholder z neúspěšného zdroje nepatří mezi skutečné články
@@ -567,23 +657,36 @@ def stahni_zpravy_multi(zdroje, celkovy_limit=10, exclude_titulky=None, max_age_
                 duplikaty += 1
                 continue
             datum_raw = b["datum_raw"].strip()
-            if not datum_raw or not re.search(r"(?:\d{4}-\d{2}-\d{2}|\d{1,2}\.\d{1,2}\.)", datum_raw):
+            if not datum_raw or (not event_mode and not re.search(r"(?:\d{4}-\d{2}-\d{2}|\d{1,2}\.\d{1,2}\.)", datum_raw)):
                 continue
             dt = parse_datum_na_datetime(b["datum_raw"])
 
             # Aktuality jsou denní výběr, ne pohyblivé časové okno.
             # Při neznámém datu parsování vrací pražský dnešek; jinak musí
             # datum článku přesně odpovídat dnešnímu dni v Europe/Prague.
-            if dt.date() != praha_now().date():
+            if not event_mode and dt.date() != praha_now().date():
                 continue
             
-            vybrane.append((dt, titulek, b["blok"]))
+            fronta.append((dt, titulek, b["blok"]))
             titulky.add(t_klic)
             pridano += 1
-            pocet_unikat += 1
-            if pocet_unikat >= celkovy_limit:
-                break
+        fronta.sort(key=lambda x: x[0], reverse=True)
+        fronty_zdroju.append(fronta)
         print(f"  RSS {rss_url}: raw={len(bloky)} pridano={pridano} dup={duplikaty}")
+
+    # Nejdřív přidělíme každému zdroji stejnou základní kvótu, pak volná místa
+    # rozdělíme po jednom článku mezi zdroje, které mají další obsah.
+    for fronta in fronty_zdroju:
+        vybrane.extend(fronta[:zakladni_kvota])
+        del fronta[:zakladni_kvota]
+    while len(vybrane) < celkovy_limit:
+        pridano_kolo = False
+        for fronta in fronty_zdroju:
+            if fronta and len(vybrane) < celkovy_limit:
+                vybrane.append(fronta.pop(0))
+                pridano_kolo = True
+        if not pridano_kolo:
+            break
 
     vybrane.sort(key=lambda x: x[0], reverse=True)
 
@@ -1501,7 +1604,7 @@ if __name__ == "__main__":
     akce_data = stahni_zpravy_multi([
         ("https://www.kudyznudy.cz/rss/events.aspx?region=1", 30),
         ("https://www.kudyznudy.cz/rss/events.aspx?region=4", 30),
-    ], celkovy_limit=80, exclude_titulky=claimed)
+    ], celkovy_limit=80, exclude_titulky=claimed, event_mode=True)
     akce_titulky = {b["titulek"] for b in extrahuj_bloky(akce_data[1])}
     print(f"  Akce Praha a Plzeň: {len(akce_titulky)} unikátních titulů")
     claimed = claimed | akce_titulky
@@ -1513,7 +1616,7 @@ if __name__ == "__main__":
         ("https://servis.expres.cz/rss.aspx", 10),
         ("https://www.super.cz/rss", 8),
         ("https://www.extra.cz/rss", 5),
-    ], celkovy_limit=30, max_age_days=3, exclude_titulky=claimed)
+    ], celkovy_limit=30, exclude_titulky=claimed)
 
     pozit_titulky = {b["titulek"] for b in extrahuj_bloky(pozit_data[1])}
     print(f"  Bulvár: {len(pozit_titulky)} unikátních titulků")

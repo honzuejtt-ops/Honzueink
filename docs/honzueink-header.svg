@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="title desc">
+  <title id="title">HonzueINK — osobní e-paper čtečka</title>
+  <desc id="desc">Ilustrace e-paper zařízení se seznamem českých zpráv, knih a hudby.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#102b32"/>
+      <stop offset="1" stop-color="#1e5a50"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="170%">
+      <feDropShadow dx="0" dy="12" stdDeviation="12" flood-color="#071a1d" flood-opacity=".32"/>
+    </filter>
+  </defs>
+  <rect width="1200" height="340" rx="28" fill="url(#bg)"/>
+  <circle cx="1000" cy="64" r="170" fill="#8bb6a3" opacity=".10"/>
+  <circle cx="1074" cy="286" r="120" fill="#e4cf91" opacity=".10"/>
+  <g font-family="Segoe UI, Arial, sans-serif" fill="#f5f2e9">
+    <text x="72" y="113" font-size="20" font-weight="700" letter-spacing="4" fill="#c2d6c7">OSOBNÍ E-PAPER PROJEKT</text>
+    <text x="68" y="184" font-size="62" font-weight="750" letter-spacing="-2">HonzueINK</text>
+    <text x="72" y="227" font-size="23" fill="#d4e3d8">Zprávy · knihy · audio · hry</text>
+    <text x="72" y="280" font-size="16" fill="#b2cbbd">ESP32  /  Heltec Vision Master E290  /  Arduino</text>
+  </g>
+  <g filter="url(#shadow)" transform="translate(812 35) rotate(5 155 140)">
+    <rect x="20" y="4" width="286" height="288" rx="22" fill="#101719" stroke="#92a89c" stroke-width="2"/>
+    <rect x="37" y="22" width="252" height="250" rx="5" fill="#e8e6d9"/>
+    <rect x="52" y="38" width="52" height="7" rx="3.5" fill="#47796b"/>
+    <text x="52" y="69" font-family="Segoe UI, Arial, sans-serif" font-size="13" font-weight="700" fill="#253b35">AKTUÁLNÍ ZPRÁVY</text>
+    <path d="M52 82h220M52 145h220M52 207h220" stroke="#aeb8a9" stroke-width="1"/>
+    <g font-family="Segoe UI, Arial, sans-serif" fill="#293733">
+      <text x="52" y="105" font-size="11" font-weight="700">ČESKO</text>
+      <text x="52" y="123" font-size="13">Novinky z domova</text>
+      <text x="52" y="168" font-size="11" font-weight="700">TECH &amp; AI</text>
+      <text x="52" y="186" font-size="13">Nápady, které stojí za čtení</text>
+      <text x="52" y="230" font-size="11" font-weight="700">KNIHOVNA</text>
+      <text x="52" y="248" font-size="13">Pokračovat ve čtení…</text>
+    </g>
+    <circle cx="163" cy="283" r="3" fill="#71847a"/>
+  </g>
+</svg>

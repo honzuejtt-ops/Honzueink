@@ -1,0 +1,41 @@
+Už 22 let uběhlo od vydání první verze, Ubuntu 4.10 „Warty Warthog“. Děti, co se tehdy narodily, dnes možná dokončují matfyz a Canonical se nadále odklání od původního ideálu linuxové distribuce pro běžné lidi směrem do korporátu. To neberte jako kritiku, ale jako konstatování vlastností, které do Ubuntu i nyní s verzí 26.10 přicházejí.
+Ubuntu zraje do podoby distribuce, kterou budou milovat zejména podniky a firmy či státní úřady. Přitom si nadále zachovává svoji výbornou použitelnost i pro běžný domácí desktop. Ale pojďme se na novinky podívat nejdřív stručněji.
+Navazujeme dnes na zprávičku z minulého týdne o vydání Ubuntu 26.10 Stonking Stingray. Hlavní novinky této verze jsou následující:
+- jádro Linux 7.3
+- desktopové prostředí GNOME 51
+- už čistě na Waylandu, bez X.Org
+- App Center s podporou správy ovladačů a sjednocením pro DEB a Snap
+- PDF se skutečnými ručními podpisy
+- monitoring vytížení NPU (pro novější Ryzeny)
+- kompletní coreutils v Rustu
+- volitelně využití architektury x86–64-v3
+- dlaždicování oken (ve stylu jak to má třeba Zorin OS)
+- podpora FIDO2 loginu či webových loginů v GDM / podpora Microsoft Entra ID vč. MS Authenticator
+- vylepšení podpory pro čtečky otisků prstů
+- ikony portované pro GTK4
+- automatické vypnutí touchpadu po připojení myši
+- OOM zabíjející nejdřív aplikace, ne systémové služby
+- první oficiální obrazy pro RISC-V
+- dbus-broker namísto dbus-daemon (končí po 22 letech)
+- preview Myna, lokální AI pro speech-to-text
+- podpora do léta 2027 (9 měsíců)
+Snap starší než Flatpak
+Srdcem nového Ubuntu je tedy linuxové jádro verze 7.3. Ten přináší řadu báječných novinek, ocení jej majitelé prakticky všech běžných CPU a GPU, od AMD přes Intel až po Nvidii. Tedy včetně generace Intel Xe3 či posledních Radeonů. Ke GNOME 51 viz odkaz na náš přehledový článek výše.
+Canonical dále vylepšil softwarové centrum App Center, které nyní lépe servíruje aplikace uživateli, ať již chce jít spíše cestou DEB, nebo Snap. Nadále platí, že Ubuntu preferuje snapy, a to i za cenu absence Flatpaků v systému – Flatpak lze doinstalovat a přidat jeho podporu v GNOME Software, nicméně výchozí nastavení systému je nadále takové canonicalovské. To mimo jiné třeba v tuto chvíli znamená, že tak, kde Flathub už velmi dávno nabízí Darktable 5.6, ve Snapu má Canonical jen verzi 5.4.
+Zde tedy moje první výtka: když už je uživatel násilně držen na Snapech, bylo by hezké alespoň u hlavních aplikací všech kategorií držet nabídku nejnovějších verzí. Zde prostě Snapy narážejí na to, že zatímco na Flathub zabalíčkuje darktable kdokoli / přímo vývojáři, ve Snapu to dělá Canonical.
+Žít se s tím dá, případně si zprovoznit Flatpaky, ale tak trochu to připomíná křečovitost snah o Unity + Mir + Upstart, které nakonec kapitulovaly a dnes Ubuntu používá GNOME + Wayland + systemd.
+Přechod na rustové nástroje
+Uvidíme, nakolik kladně či záporně bude budoucí historie hodnotit přechod na rustovské nástroje, ať už jde o coreutils či cokoli dalšího. Zde je u Canonicalu jasný a nadále pokračující trend: zrustovatět vše, co lze, protože Rust tak nějak z principu řeší některé typy chyb, které kód v C/C++ obsahuje.
+Dále Canonical vylepšuje podporu pro podniky i o autentizační systémy Microsoftu, což možná ocení někteří desktopoví uživatelé, ale jistě admini ve firmách, institucích či úřadech.
+Potěší mnohé drobnější věci jako výše zmíněné vypínání touchpadu či lepší nastavení OOM, tedy chování systému v situacích nedostatku RAM. Stejně tak může GNOME rozšíření tiling assistant pro snadné uspořádání oken do dlaždic – známe třeba ze Zorin OS či Windows 11. Komu by toto vadilo, vypne věc snadno pomocí:
+$ gsettings set org.gnome.shell.extensions.tiling-assistant enable-layout-picker false
+Ze zajímavých technologií uvidíme, jak bude přijata a jak se bude dále vyvíjet postupná integrace některých AI nástrojů do Ubuntu. Tentokrát zde máme lokální AI Myna pro převod mluveného slova na text
+Hodnocení po dvou týdnech používání
+Velice stručně se zastavím u dojmů z letošní podzimní verze. Záměrně jsem si vyzkoušel na velmi starém PC, konkrétně Haswell stroji s Radeonem RX 580.
+Předně: všechno je velké a dlouho trvá. Instalační obraz má 6,5 GB, což na mém 20Mbit/s internetu je utrpení stáhnout. Stejně tak se takto velký obraz fakt dlouho zapisuje na levnou 16GB USB flashku. To vše proto, abych velmi dlouze instaloval systém, který se pak očividně dlouho spouští a i po přihlášení chvíli trvá, než si to celé sedne.
+Nevěřil bych, že toto lze s poměrně výkonným 8GB Radeonem s podporou v současném AMDGPU včetně posledních patchů od Timura Kristofa zažít, ale GNOME 51 v Ubuntu 26.10 po přihlášení, jak provádí takové ty malé animace horní a boční lišty, se prostě trošku cuká. Pak už se desktop stane celkem plynulým, nicméně toto je zvláštní.
+Zatím jsem nezkoušel žádnou jinou distribuci s GNOME 51, pouze tuším Mageiu 10 s GNOME 50, ale oproti GNOME 46 až 49 je zde viditelné zhoršení plynulosti. Nevím tedy, zdali to jde na bedra GNOME, nebo Ubuntu, nebo pouze čtyřjádrového Haswell CPU, ostatně je klidně možné, že ve chvíli, kdy čtete tyto řádky, už tento problém neexistuje.
+Co je otravné na pomalém internetu, jsou Snapy. Aktualizace trvají hodně dlouho, jsou datově velké. Nicméně narozdíl od Flatpaků nelze aktualizovat běžící aplikaci, tedy třeba Firefox.
+Kladně hodnotím vzhled systému, používaná písma Ubuntu jsou pěkně čitelná a celkově se po chvilce od přihlášení chová systém dostatečně svižně i na prehistorickém PC.
+Další varianty
+V této verzi Kubuntu staví na Plasmě řady 6.7, Xubuntu používá mírně aktualizované Xfce 4.20, Ubuntu Budgie sází na řadu 10.10 již běžící na Waylandu, Ubuntu Cinnamon má za základ Cinnamon 6.6.9, Ubuntu MATE konstatuje, že nemá všechny komponenty MATE v aktuálních verzích, Lubuntu přináší LXQt 2.4 a jako výchozí stále X.Org, byť je možnost testovat běh s Wayland kompozitorem Miriway, a nakonec tu máme Ubuntu Unity s Unity 7.7. či Ubuntu Kylin.

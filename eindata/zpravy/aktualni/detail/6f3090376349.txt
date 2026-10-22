@@ -1,0 +1,26 @@
+Propojte rodičům Záchranku s eReceptem a záchranáři uvidí jejich ověřené léky
+Když člověk v nouzi nedokáže říct, jaké léky bere, záchranáři to mohou vědět už cestou k němu. Aplikace Záchranka je umí načíst z eReceptu, pokud si to uživatel sám zapne.
+Někdy volající s operátorem nemůže mluvit vůbec a píše mu jen zprávy. Právě pro takové chvíle teď aplikace Záchranka umí poslat seznam léků za něj. A ne ten, který si kdysi někdo naťukal sám, ale ověřený.
+Pro rodiny, kde maminka nebo děda užívá několik léků denně, to může být velká úleva. Zapnout se to dá jednou a údaje se pak samy aktualizují při každém spuštění aplikace.
+Konec ručně psaného seznamu léků v telefonu
+Zdravotní profil si dosud uživatelé Záchranky vyplňovali sami a nikdo nemohl ověřit, jestli údaje sedí.
+Nově se profil v Záchrance může propojit s eReceptem. eRecept je státní systém elektronických receptů. Jeho součástí je takzvaný lékový záznam, tedy přehled receptů, které člověk dostal a vyzvedl v lékárně. Kdo propojení povolí, předá při tísňovém volání z aplikace kromě své polohy i ověřené zdravotní údaje, oznámil lékový ústav (SÚKL). Jde o léky, předepsané pomůcky a očkování.
+Údaje dostanou dispečeři záchranky rovnou do svého systému a mohou se dostat i k posádce, která už jede na místo. Záchranáři tak včas vědí, jaké léky má pacient předepsané a vydané. Podle ředitele ústavu mohou tato data „v kritických situacích, kdy jde především o čas a dostatek informací, významně přispět k rychlému rozhodování“.
+Zapnout to musí senior ve vlastním telefonu
+Funkce se nezapíná sama. Je potřeba ověřit se přes Identitu občana a pak udělit souhlas s propojením profilu s údaji z eReceptu. Když to děláte s rodiči, sedněte si k jejich telefonu, ne ke svému.
+Důvod je jednoduchý. Pokud voláte záchranku pro někoho jiného, údaje z vašeho zdravotního profilu se záchranné službě nepředávají. Seznam léků rodičů se tedy pošle, když z aplikace Záchranka volají oni sami ze svého telefonu.
+Pojistky jsou nastavené rozumně. Údaje zůstávají uložené v telefonu a operátorovi tísňové linky se pošlou až ve chvíli, kdy začne tísňové volání z aplikace. Při každém spuštění aplikace se přehled sám aktualizuje. A kdo si to rozmyslí, může souhlas kdykoli odvolat a údaje z profilu pak úplně zmizí.
+💡 Zajímavost: Aplikace Záchranka má už přes 4 miliony stažení a každý den přes ni volá záchrannou službu víc než 100 lidí.
+O tom, proč mít Záchranku v telefonu rodičů, jsme už psali. Propojení s eReceptem k tomu přidává hlavně jistotu, že seznam léků odpovídá skutečnosti.
+Co záchranáři uvidí, si můžete prohlédnout předem
+Záchranka nevymýšlí nic nového. Léky bere z lékového záznamu v eReceptu. A ten si může každý prohlédnout i sám.
+Stačí aplikace eRecept, která je pro chytré telefony zdarma, nebo její webová verze. Přihlášení je opět přes Identitu občana. V aplikaci uvidíte své elektronické recepty i lékovou historii. Je to dobrý způsob, jak si s rodiči v klidu projít, co přesně berou.
+Pro pečující dcery a syny je tu ještě jedna možnost. V eReceptu jde od listopadu 2023 zmocnit pečující osobu a senior sám určí, co jí zpřístupní, třeba jen recepty, které ještě nevyzvedl.
+Když hlas selže: SOS a „Nemohu mluvit“
+Záchranka umí ještě dvě věci, které se seniorům hodí znát. Po stisknutí tlačítka SOS se člověk rozhodne, jestli potřebuje zdravotní pomoc. Když ano, aplikace ho spojí s linkou 155, jinak s linkou 112.
+Pro chvíle, kdy mluvit nejde, je tu funkce „Nemohu mluvit“. Ta na zvolenou tísňovou linku pošle popis situace a polohu. K tomu připojí i jméno a telefonní číslo volajícího.
+Až budete příště u rodičů, projděte spolu v eReceptu, jaké léky v přehledu mají, a v Záchrance jim pomozte propojení zapnout. Záchranáři tak nebudou odkázáni jen na to, co člověk v krizi dokáže vyjmenovat.
+Ověřeno z:
+- Státní ústav pro kontrolu léčiv — tisková zpráva Aplikace Záchranka se propojuje s eReceptem (15. 10. 2026)
+- Zdravotnický deník — Záchranáři získají klíčové informace o vás rychleji (15. 10. 2026)
+- Advokátní deník / ČTK — K aplikaci Záchranka se připojili hasiči, zlepšila se funkce Nemohu mluvit (16. 12. 2025)

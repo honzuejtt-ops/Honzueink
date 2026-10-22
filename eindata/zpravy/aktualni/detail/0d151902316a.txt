@@ -1,0 +1,17 @@
+PromptToVisual
+Generátor a editor obrázků pomocí AI, který z textového zadání nebo referenční fotky vytvoří produktové scény, plakáty i jiné vizuály.
+O nástroji
+PromptToVisual je online studio pro generování a úpravu obrázků pomocí umělé inteligence. Nabízí devět obrazových modelů (např. Z-Image Turbo, Nano Banana 2 Lite, Qwen Image 3 Pro, GPT Image 2, Grok Imagine Image 2 nebo FLUX 3 Image), mezi kterými si uživatel vybere podle typu úkolu – od rychlých konceptů přes produktové fotografie až po editaci s zachováním konzistence postav. Nástroj umí doporučit vhodný model podle zadání, vylepšit prompt a generovat obrázky z textu nebo z nahrané referenční fotky (JPG, PNG, WEBP do 5 MB). Generování obrázků funguje na kreditovém systému, kdy cena za jeden obrázek se pohybuje od 2 do 6 kreditů podle zvoleného modelu. Nové účty získávají 4 zkušební kredity a otevření studia samotné kredity nespotřebovává. K dispozici jsou také dva bezplatné nástroje – spojování obrázků a jejich ořezávání. Výstupní formáty zahrnují čtvercový, portrétní i širokoúhlý poměr stran.
+Klíčové vlastnosti
+- Devět obrazových modelů pro různé účely
+- Automatické doporučení modelu podle zadání
+- Generování z textu i z referenční fotky
+- Vylepšení promptu před generováním
+Časté dotazy
+Co PromptToVisual umí vytvořit?
+Generuje a upravuje obrázky pomocí devíti AI modelů – od rychlých konceptů přes produktové fotografie až po plakáty s textem či editaci s zachováním konzistence postav. Lze zadat text nebo nahrát referenční fotku (JPG, PNG, WEBP do 5 MB).
+Kolik PromptToVisual stojí?
+Nástroj funguje na kreditech, kdy jeden obrázek stojí 2 až 6 kreditů podle zvoleného modelu. Otevření studia kredity nespotřebovává, placené plány lze zobrazit v sekci plánů.
+Jak začít a je k dispozici zdarma vyzkoušení?
+Nové účty dostanou 4 zkušební kredity zdarma, navíc jsou k dispozici dva bezplatné nástroje – spojování a ořezávání obrázků. Stačí se zaregistrovat a vybrat model podle typu úkolu.
+Kategorie

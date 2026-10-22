@@ -1,0 +1,21 @@
+Velké jazykové modely se rychle zlepšují, což má velký dopad na programování a softwarové inženýrství. V posledních týdnech se začaly objevovat klony tradičních aplikací. Nejvíce viditelné jsou různé mutace Photoshopu, často vytvořené za pár dní. Jde třeba o balík ArtCraft, ImageFlow a další. Jednou z celosvětově nejpopulárnějších alternativ k Photoshopu je už několik let česká služba Photopea, která běží v prohlížeči a v základní verzi je zdarma. Má miliony uživatelů a jde o práci jednoho člověka.
+Mohlo by se zdát, že Photopea je nyní díky nástupu AI kopií Photoshopu “na ráně”. Autor aplikace Ivan Kuckir ale uvádí, že žádné úbytky uživatelů nepozoruje. V rozhovoru pro Lupu nastínil i to, že AI klony zatím mají chyby nebo že sám k vývoji pomocí AI agentů přistupuje zdrženlivě.
+Kolik má Photopea uživatelů?
+Momentálně je Photopea spuštěná cca milionkrát denně. Někdo ji otevře pětkrát denně, někdo ji zase nechává otevřenou v prohlížeči klidně i měsíc.
+Kolik si jich platí prémiovou verzi?
+Přibližně pět tisíc lidí si teď platí Premium účet. (Měsíční předplatné začíná na pět eurech – poznámka redakce.)
+Pozorujete, že by klesal počet uživatelů Photopea s tím, jak se objevují pomocí AI vytvořené alternativy Photoshopu?
+Zatím nepozoruji, že by mi nějak klesal počet uživatelů. Poslední roky se drží na stejné úrovni.
+Jak hodnotíte aktuální kvalitu těchto AI konkurentů?
+Otestoval jsem jen několik programů a ačkoliv na první pohled vypadají velmi profesionálně, už po pár minutách lze vidět drobné chyby. AI modely se však rychle zlepšují a je možné, že za pár měsíců budou generovat software bez těchto chyb.
+Způsobuje tedy AI ve vaší branži nějaké zásadní vlny, které doposud nebyly k vidění?
+Nové vynálezy ve světě AI určitě mění celý obor. Poslední roky je to generování obsahu – mizí fotobanky, jelikož si lidé vygenerují cokoliv chtějí, téměř zadarmo. Nyní je tu vlna editorů fotek vyrobených pomocí AI.
+Může AI výhledově narušit současný zavedený trh pro Adobe, Photopea a další hráče?
+Pokud bude kdokoliv schopen vyrobit alternativu k drahému softwaru sám, během pár hodin, s minimálními náklady, určitě to navždy změní svět softwaru. Současné modely to podle mě nedokážou. Jejich výstup není dost kvalitní a je potřeba s nimi dlouho “mluvit”, obzvlášť pokud nejste programátor. Ale je možné, že v budoucnu budou mnohem lepší.
+Když to zjednoduším, odborník dříve nad něčím pracoval tisíc hodin, díky dnešní AI to je jen tři sta hodin. Otázkou je, zda s budoucí AI bude možné dosáhnout stejně kvalitního výsledku za tři hodiny místo tisíce a zda stejně dobrého výsledku bude moci dosáhnout i neodborník (člověk bez vzdělání).
+Jaká bude do budoucna pozice Photopea? A jaké v konkurenci AI zůstanou výhody?
+Photopea bude dále dostupná jako editor počítačové grafiky, který lze používat bez stahování, instalace a bez placení, na jakémkoliv zařízení. Je těžké zmínit výhody, jelikož je těžké odhadnout, co budou umět AI modely za rok nebo dva. Předpokládám, že pro lidi, kteří nemají peníze na AI, a lidi, kteří nikdy nepřešli na AI nástroje, budou programy jako Photopea stále aktuální.
+Plánujete nějaké zásadní změny?
+Nic velkého teď neplánuji, jelikož není jasné, čeho bude AI schopná za měsíc nebo za rok. Pomalu se učím používat existující AI nástroje a celkem mě to baví. Jsem opravdu zvědavý, co přijde v budoucnu.
+Používáte nyní při vývoji Photopea nějaké AI agenty či jiné programátorské postupy za využití AI?
+Jelikož velmi nerad čtu kód, který jsem nenapsal, bylo by nutné úplně změnit způsob vývoje. Musel bych přepnout z ruční práce s kódem na komunikaci s AI modelem, kterému bych psal požadavky a současnou verzi softwaru bych pokaždé nahradil novou, kterou mi dá AI agent, a která pro mě bude “černá skříňka” (nebudu zkoumat, co je uvnitř). Zatím jsem na tento styl práce nepřešel. Používám AI spíš na drobné programátorské úlohy, například napsání jedné funkce podle zadaných parametrů.

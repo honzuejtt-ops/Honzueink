@@ -1,0 +1,17 @@
+DocuMemory
+DocuMemory přes MCP protokol mění konverzace s AI (Claude, ChatGPT, Cursor) na sdílenou dokumentaci, kterou si přečte i jiný připojený AI nástroj.
+O nástroji
+DocuMemory řeší problém, kdy výsledky práce s AI zůstávají uzamčené v jednotlivých chatech a při přechodu mezi nástroji (např. z ChatGPT do Claude) se začíná od nuly. Stačí v konverzaci říct „save this to DocuMemory“ a AI z ní vytvoří dokument s rozhodnutím, důvodem a funkčním výsledkem. Takto vzniklé dokumenty i kratší záznamy faktů a pravidel („memories“) pak dokážou vyhledat a načíst další připojené nástroje – Claude, ChatGPT, Cursor, Windsurf či jiní MCP klienti – a dokumenty lze psát i ručně v dashboardu. Vyhledávání běží na PostgreSQL s pgvector a HNSW indexem, přičemž sémantická a fulltextová větev fungují nezávisle a výsledky se kombinují pomocí reciprocal rank fusion místo váženého součtu skóre. Každý dotaz je navázán na konkrétního přihlášeného uživatele, nástroj je popisován jako lokální-first se self-hosted možností nasazení a nabízí MCP endpoint s autorizací přes Bearer token. Nabízí se 15 bezplatných destilací bez nutnosti zadat kartu, po jejich vyčerpání následuje placené předplatné – přesná výše měsíční ceny v dostupných podkladech není jednoznačně potvrzená, proto ji neuvádíme. Rozhraní stránky i produktu je v angličtině, o tom, zda je nástroj open source, důkazy nic jistého nepotvrzují.
+Klíčové vlastnosti
+- Ukládání chatu jako dokumentace příkazem „save this to DocuMemory“
+- Sdílená paměť mezi Claude, ChatGPT, Cursor, Windsurf a dalšími MCP klienty
+- Kombinace sémantického a fulltextového vyhledávání přes reciprocal rank fusion
+- Krátké „memories“ s pravidly a fakty vedle delších dokumentů
+Časté dotazy
+Co přesně DocuMemory umí?
+Promění konverzace s AI nástroji (Claude, ChatGPT, Cursor a dalšími) na sdílenou dokumentaci – stačí říct „save this to DocuMemory“ a vznikne dokument s rozhodnutím, důvodem a výsledkem, který pak umí najít a načíst i jiný připojený AI nástroj.
+Kolik DocuMemory stojí?
+K dispozici je 15 bezplatných destilací bez nutnosti zadat platební kartu, po jejich vyčerpání následuje placené předplatné; přesná cena není v podkladech potvrzená.
+Pro koho je nástroj určený a jak začít?
+Hodí se vývojářům, IT a provozním týmům, analytikům, produktovým i podpůrným týmům – zkrátka komukoliv, kdo řeší věci s AI. Stačí začít zdarma a v konverzaci s podporovaným AI nástrojem říct, aby výsledek uložil do DocuMemory.
+Kategorie

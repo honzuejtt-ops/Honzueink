@@ -1,0 +1,5 @@
+Playable Notes
+Nástroj pro učitele klavíru, který z fotky nebo PDF notového zápisu vytvoří hratelnou verzi upravenou na úroveň žáka.
+O nástroji
+Playable Notes umožňuje učitelům klavíru naskenovat fotku, screenshot nebo PDF noty a během minuty nebo dvou ji převést do podoby skutečné partitury. Uživatel pak slovně zadá, co žák potřebuje – například „zjednoduš levou ruku“, „bez oktáv“ nebo „přepiš do C dur“ – a nástroj notový zápis podle toho upraví zhruba za minutu. Výsledná skladba se dá přehrát, přičemž se při hraní zvýrazňují jednotlivé noty, chybné noty lze kliknutím opravit a hotovou verzi vytisknout jako čisté PDF. Katalog obsahuje 321 klasických klavírních skladeb, nástroj je určen primárně pro učitele klavíru a slouží ke skenování, transpozici a zjednodušení notového zápisu podle úrovně studenta.
+Kategorie

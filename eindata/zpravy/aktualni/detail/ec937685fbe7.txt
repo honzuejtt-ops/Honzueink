@@ -1,0 +1,9 @@
+Dvě kritické zranitelnosti týkající se programovacího jazyku PHP byly oznámeny ve středu. Nacházejí se přímo v technologii, na které závisí fungování řady webových stránek, e-shopů či služeb pro provoz webů. Využívají ji také ovládací panely a řada komerčních programů.
+Útočníkům mohou chyby umožnit vzdáleně spouštět vlastní kód na zranitelném serveru, a to i bez přihlášení. Následkem může být krádež dat, napadení dalších systémů nebo výpadek služeb. Neznamená to však, že lze automaticky napadnout každý web používající PHP.
+„V České republice už snahu o zneužití PHP zranitelností zaznamenalo 12 % organizací,“ uvedl Jiří Kohout, bezpečnostní stratég společnosti Check Point pro střední a východní Evropu.
+Úspěšný útok na ČVUT
+Údaje nicméně zachycují pokusy o zneužití bezpečnostních chyb. Nelze z nich tedy vyvozovat, že se útočníkům podařilo do všech těchto organizací skutečně proniknout nebo jim odcizit data.
+V Česku již kybernetický útok na svou IT infrastrukturu potvrdilo České vysoké učení technické v Praze (ČVUT), jak Novinky informovaly již dříve. Univerzita jej spojila právě s celosvětovými pokusy napadat weby využívající PHP.
+Podle zveřejněného stanoviska se jí podařilo aktivní útok zastavit, některé systémy však preventivně odstavila. Konkrétní zneužitou chybu ani případný únik dat ve stanovisku neupřesnila.
+Společnost Cloudflare už hlásila v zahraničí i další pokusy o zneužití chyb.
+Některé instituce proto své stránky preventivně odpojily od internetu. Podle agentury Reuters se odstávky dotkly například státních institucí v Nizozemsku a Finsku, včetně nizozemského Národního centra kybernetické bezpečnosti.

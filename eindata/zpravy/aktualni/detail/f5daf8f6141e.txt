@@ -1,0 +1,44 @@
+Pravděpodobně v lednu po konci roku – i když překvapení nelze vyloučit – chystá Intel vydání nové generace procesorů pro desktop, Core Ultra 4000 Nova Lake. Ta by měla být výrazným pokrokem proti ne příliš dobře přijaté generaci Core Ultra 200 a přináší novou platformu LGA 1954, takže bude vyžadovat nové desky. Na internet se teď dostal seznam části modelů, které chystá firma Gigabyte, a vypadá to, že výrobci desek od Nova Lake čekají hodně.
+Desky pro Nova Lake – zatím jen ty luxusnější
+Web VideoCardz objevil v databázi zaregistrovaných produktových označení ruské databáze EEC 24 modelů desek, které má připravené firma Gigabyte, přičemž jsou to všechno modely založené na nejvyšší a nejdražší variantě čipsetu Z990. Mohlo by to znamenat, že při vydání procesorů budou nejdřív v nabídce jenom tyto nejvyšší modely a levnější desky přibudou později.
+O čipsetech platformy LGA 1954 pro desktopové procesory Nova Lake už máme detailní informace, dle nichž v této generaci Intel rozdělí čipsety s označením Z, které umožňují přetaktování a jsou obecně určené nadšencům a hráčům, na dvě kategorie: levnější Z970 a dražší Z990 s největší výbavou. Pro Nova Lake určitě vyjde i velké množství modelů založených na Z970, jejichž jména ještě nemáme. Modely Z990 mohou být cosi jako špička ledovce.
+Seznam desek můžete vidět níže. Firma chystá modely Aorus Z990 v různých již známých řadách ( Extreme, Master, Elite, Stealth), ale také nižší modely bez značky Aorus, jako Z990 „Eagle“, Gaming nebo „D“. A také několik modelů „Ice“, zřejmě v bílé barvě. Většina nabídky budou desky plného rozměru ATX, což dává u čipsetu Z990 s bohatou konektivitou linek PCI Express smysl. Ovšem Gigabyte vydá i tři mATX modely (soudě dle jejich jmen obsahujících označení Z990M) a jednu desku ve formátu Mini-ITX: Aorus Z990 I Pro.
+Uniklé modely Gigabyte s čipsetem Z990:
+- Aorus Z990 Xtreme
+- Aorus Z990 Master
+- Aorus Z990 Master Duo X
+- Aorus Z990 Master Ice
+- Aorus Z990 Pro
+- Aorus Z990 Pro Ice
+- Aorus Z990 Pro Duo X Ice
+- Aorus Z990 Elite WiFi 7
+- Aorus Z990 Elite WiFi 7 Ice
+- Aorus Z990 Pro Duo X WiFi 7
+- Aorus Stealth Duo X
+- Aorus Stealth Duo X Ice
+- Z990 Aero G
+- Z990 Aero Wood
+- Z990 Aero Dark Wood
+- Z990 Eagle WiFi 7
+- Z990 Eagle WiFi 7 Ice
+- Z990 Force Duo X WiFi 7
+- Z990 D WiFi 7
+- Z990 Gaming WiFi 7
+- Z990M DS3H WiFi 7
+- Aorus Z990M Elite WiFi 7
+- Aorus Z990M Elite WiFi 7 Ice
+- Aorus Z990 I Pro
+Z990 modelů je pozoruhodně hodně
+24 modelů desek je mimochodem víc, než má Gigabyte aktuálně na svém webu modelů pro procesory AMD s čipsetem X870E, který by se svou pozicí v nabídce asi dal přirovnat k čipsetu Z990. Pravda, toto přiřazení nemusí přesně reflektovat pozici těchto čipsetů v nabídkách obou firem. Vlajkové X870E desky asi hodně zájemců opomíjí ve prospěch modelů s nižším čipsetem a teprve uvidíme, zda to podobně bude i u Z990, nebo větší segmentace výbavy ze strany Intelu přiměje víc zákazníků vybírat u platformy LGA 1954 highendovou verzi platformy.
+Gigabyte má 23 desek s čipsetem Z890 pro procesory Arrow Lake do socketu LGA 1851. Ve srovnání s tím se zdá, že Nova Lake a platformě LGA 1954 věří o dost víc. Nástupcem Z890 bude totiž nejen čipset Z990, ale zároveň aspoň částečně i levnější čipset Z970, od nějž také určitě vznikne větší počet desek. Celkem by tak „Z“ modelů desek od Gigabyte mohl být možná i dvojnásobek.
+Část desek ASRocku
+Minulý měsíc uniklo také několik jmen desek chystaných ASRockem, také vše modely s čipsetem Z990. V případě této firmy je desek méně, jen šest. Nicméně nejde asi o celou nabídku, ASRock nakonec asi různých modelů pro Nova Lake vyprodukuje víc.
+Uniklé modely ASRock s čipsetem Z990:
+- ASRock Z990 Challenger WiFi
+- ASRock Z990 Challenger WiFi White
+- ASRock Z990 Pro RS
+- ASRock Z990 Steel Legend WiFi
+- ASRock Z990 Taichi Creator
+- ASRock Z990 Taichi White
+Jak už bylo zmíněno, dost možná Intel při vydání procesorů nejprve bude nabízet jen takovéto dražší modely a levnější desky s čipsety Z970 a B960 by mohly dorazit až o něco později. I nabídka procesorů Nova Lake pro desktop nejspíš bude v první vlně po uvedení omezená jen na 125W nadšenecké modely. Mainstreamovější modely s 65W TDP také nejspíš půjdou na trh až o něco později.
+Zdroje: VideoCardz, ComputerBase (1, 2)

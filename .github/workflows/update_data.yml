@@ -1,10 +1,16 @@
 name: Update E-paper Data
+run-name: Update E-paper Data${{ inputs.request_id && format(' ({0})', inputs.request_id) || '' }}
 
 on:
   schedule:
     - cron: '17 6,9,12,15,18,22 * * *'
       timezone: "Europe/Prague"
   workflow_dispatch:
+    inputs:
+      request_id:
+        description: "ID požadavku z HonzueINK"
+        required: false
+        type: string
 
 permissions:
   contents: write

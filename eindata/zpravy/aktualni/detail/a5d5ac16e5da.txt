@@ -1,0 +1,17 @@
+Vellm
+Vellm mění fotky lidí a mazlíčků na krátká AI videa podle trendů z TikToku a Reels, bez nutnosti psát prompt.
+O nástroji
+Vellm je webová aplikace, která z vašich fotografií vytvoří krátké AI video podle jednoho ze 108 šablonových trendů (tanec, vtipné duo, kinematografická scéna, zvířata či akce). Stačí vybrat šablonu, nahrát jednu až tři fotky podle požadavků a video ve 1080p vygeneruje model Seedance 2.5 od ByteDance – generování trvá obvykle 10–15 minut a odkaz na výsledek přijde e-mailem. Cena je postavená na kreditech: jedno video stojí 50 až 100 kreditů, balíčky kreditů začínají na 4,49 USD za 50 kreditů, při balíčku 600 kreditů (39,99 USD) vyjde video od 3,33 USD. Kredity nemají expiraci, účet pro jednorázový nákup není potřeba, volitelně lze zvolit i měsíční předplatné. Stažené video je bez vodoznaku, ale bez zvuku – hudbu je třeba přidat vlastní. Fotky se automaticky mažou po 7 dnech a videa po 30 dnech, proto je třeba výsledek stáhnout včas. Refundaci nevyužitého balíčku kreditů lze požádat do 7 dnů od nákupu. Bezplatná verze ani zkušební doba nejsou v důkazu uvedeny.
+Klíčové vlastnosti
+- 108 šablonových trendů z TikToku a Reels
+- generování z 1 až 3 fotek bez psaní promptu
+- video v 1080p přes model Seedance 2.5 od ByteDance
+- výsledek do 10–15 minut, odkaz e-mailem
+Časté dotazy
+Co přesně Vellm umí?
+Z vašich fotek vytvoří krátké AI video podle jednoho ze 108 šablonových trendů (tanec, vtipné duo, kinematografická scéna, zvířata či akce) bez nutnosti psát prompt. Video se generuje ve 1080p pomocí modelu Seedance 2.5 od ByteDance.
+Kolik stojí jedno video?
+Jedno video stojí 50 až 100 kreditů, balíčky kreditů začínají na 4,49 USD za 50 kreditů. Při balíčku 600 kreditů za 39,99 USD vyjde video od 3,33 USD, kredity nemají expiraci.
+Jak začít a pro koho je to vhodné?
+Stačí vybrat šablonu, nahrát jednu až tři fotky podle požadavků šablony a zaplatit kredity – účet pro jednorázový nákup není potřeba. Hodí se pro každého, kdo chce rychle vytvořit trendy video z fotky sebe nebo mazlíčka, generování trvá 10–15 minut a odkaz přijde e-mailem.
+Kategorie

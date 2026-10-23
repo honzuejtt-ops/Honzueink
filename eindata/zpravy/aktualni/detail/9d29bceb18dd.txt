@@ -1,0 +1,7 @@
+Od vydání Half-Life 2: Episode Two uplynulo 19 let a případný třetí díl je jednou z nejočekávanějších her. Čas od času se objevují spekulace o případném vývoji, ze strany Valve ale panuje urputné mlčení. To nyní možná nechtěně prolomil hudební skladatel Mike Morasky na konferenci GameSoundCon.
+Nechtěné prořeknutí
+Morasky mluvil společně se zvukovými designéry Davidem Feisem a Carlye Nyte o otevřeném a rozšiřitelném zvukovém systému enginu Source 2. Když se dostalo na otázku o počtu současně přehrávaných HDR zvuků, Morasky uvedl, že „jednotlivé projekty používají vlastní řešení. Deadlock má vlastní verzi HDR. HLX má vlastní verzi a tak dále.“
+Zatímco Deadlock je nový titul od Valve, o HLX toho moc nevíme. Historicky je ale tato zkratka spojována právě s třetím dílem Half-Life. Zmínka o HLX potom u spoluřečníků vyvolala tázavé pohledy.
+Stopy v kódu
+Označení HLX se v souborech her od Valve objevuje už delší dobu a datamineři si ho všímají takřka tři roky. Začátkem roku 2024 na něj upozornil nález v aktualizaci Counter-Strike 2, následně se objevil v aktualizaci Doty 2 a Deadlocku. A zatímco Half-Life: Alyx pro virtuální realitu neslo interní kódové označení HLVR, u HLX se proto logicky spekuluje o dalším díle Half-Life bez VR.
+Pozdvižení způsobil dataminer Tyler McVicker, který loni tvrdil, že se projekt aktuálně nachází v pokročilém stádiu vývoje, kdy lze již hru projít od začátku do konce. I v tomto případě byla zmiňována zkratka HLX. Nyní ji ale vůbec poprvé použil zaměstnanec Valve, čímž potvrdil, že se na titulu s tímto označením pracuje.

@@ -1,0 +1,30 @@
+Odborník na data Nick Berry analyzoval obří databázi více než 3,3 milionu čtyřmístných heslových kódů. Výsledek? Z celkových 10 000 možných kombinací (od 0000 do 9999) lidé dokola opakují ty samé vzorce.
+Pokud by lidé volili čísla zcela náhodně, každá kombinace by měla šanci na výskyt pouhých 0,01 %. Skutečnost je ale děsivá: Pouhých 20 nejčastějších PINů tvoří téměř 27 % všech používaných kódů! Zloději tak mají usnadněnou práci – při náhodném zadání nejběžnějších kombinací trefí správný PIN u každého čtvrtého člověka.
+TOP 10 nejhorších PIN kódů: Máte ho tam i vy?
+Na absolutním vrcholu žebříčku nejoblíbenějších (a tedy nejhorších) PINů vládne naprostá klasika. Hned první dvě kombinace používá přes 16 % populace!
+- 1234 (používá ho 10,7 % lidí – více než 1 ze 10!)
+- 1111 (6,0 %)
+- 0000 (1,9 %)
+- 1212 (1,2 %)
+- 7777 (0,7 %)
+- 1004 (0,6 %)
+- 2000 (0,6 %)
+- 4444 (0,5 %)
+- 2222 (0,5 %)
+- 6969 (0,5 %)
+Mezi další extrémně populární kód patří například 2580 (22. nejpoužívanější). Proč zrovna tato čísla? Když se podíváte na klávesnici telefonu nebo bankomatu, jde o přímou svislou čáru shora dolů.
+Past jménem rok narození
+Obrovské množství lidí si jako PIN nastavuje rok svého narození nebo významné výročí (např. 1984, 1992, 2001).
+Analýza ukázala, že VŠECHNY kombinace začínající čísly 19XX se umístily v nejhorší pětině celkového žebříčku. Pokud vám tedy zloděj ukradne peněženku i s doklady, první věc, kterou u bankomatu vyzkouší, bude právě rok vašeho narození z občanky.
+Podobná past jsou data ve formátu dne a měsíce (např. 1503 pro 15. března). V grafech je jasně vidět masivní nárůst kombinací, kde první dvě čísla nepřesahují 12 (měsíce) a druhé dvě čísla 31 (dny).
+Který PIN je statisticky „nejbezpečnější“?
+Analytikům se podařilo najít i úplný opak – tedy PIN kód, který se v databázi 3,4 milionu čísel objevil ze všech nejméně.
+Absolutně nejméně používaným PINem se stala kombinace: 8068
+Představuje méně než 0,0007 % všech případů.
+POZOR: Odborníci důrazně varují! Nenastavujte si nyní číslo 8068 jako svůj nový PIN. Jakmile se tato informace dostala na veřejnost, hrozí, že ji útočníci zařadí do svých seznamů zkoušených čísel hned na přední místa.
+Jak si vytvořit PIN, který zloděj neodhalí?
+Pokud jste v seznamu našli svůj kód, raději zaměřte do bankomatu nebo mobilního bankovnictví a změňte si ho. Držte se přitom jednoduchých pravidel:
+- Vyhněte se řadám a opakování: Zapomeňte na 1234, 4321, 1122 nebo 1010.
+- Nepoužívejte osobní data: Žádné roky narození, data svateb ani adresy. Zloděj z dokladů nebo vašich sociálních sítí tato data snadno zjistí.
+- Nekreslete vzorce na klávesnici: Kódy jako 2580 (čára dolů) nebo 1593 (úhlopříčka) jsou mezi útočníky velmi dobře známé.
+- Zvolte „nuda“ kombinaci: Nejlepší PIN je ten, který nemá žádný logický význam, netvoří na klávesnici obrazec a obsahuje namíchaná sudá a lichá čísla bez návaznosti (např. 7394 nebo 8438).

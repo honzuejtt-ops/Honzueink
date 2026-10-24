@@ -1,0 +1,17 @@
+Bulin 47 AI
+Nástroj promění nahranou portrétní fotografii ve street-freestylové video ve stylu Bulin 47, bez nutnosti instalace aplikace.
+O nástroji
+Bulin 47 AI je webový nástroj pro přeměnu jedné portrétní fotografie na krátké video v podobě street freestylu inspirovaného Bulin 47 a Kevin Wai. Technologie Seedance 2.5 nahradí hlavního performera v pevně daném originálním klipu podobou uživatele, přičemž zachovává původní scénu, dav i pohyby. Výsledkem je přibližně 15sekundové tiché video ve svislém formátu 9:16 v rozlišení 480p, které si uživatel stáhne a hudbu si poté přidá sám v jiné aplikaci (např. CapCut). Nástroj nenabízí bezplatnou verzi – funguje na jednorázové nákupy kreditových balíčků bez předplatného. Balíček Single za 6,90 USD obsahuje 1 video (20 kreditů), Five Pack za 29,90 USD nabízí 5 videí (100 kreditů) a Studio Pack za 99,90 USD poskytuje 20 videí (400 kreditů). Zakoupené kredity podle uvedených informací nikdy nevyprší a při potvrzeném selhání generování se vrací. Postup používání je třístupňový: nahrání jedné jasné portrétní fotografie, náhled původního klipu určujícího, kterého performera nahradí, a následné vygenerování videa za 20 kreditů. Stránka je v angličtině s možností přepnutí do dalších jazyků (arabština, čínština, francouzština, němčina, španělština), čeština mezi nimi uvedena není.
+Klíčové vlastnosti
+- Nahrazení performera ve fixním originálním klipu podobou uživatele
+- Video cca 15 sekund ve formátu 9:16, 480p
+- Pohání ho technologie Seedance 2.5
+- Tiché video ke stažení, hudba se přidává dodatečně v jiné appce
+Časté dotazy
+Co nástroj vlastně vytvoří z mé fotky?
+Z jedné portrétní fotografie vygeneruje přibližně 15sekundové tiché video 9:16 v rozlišení 480p, kde nahradí hlavního performera v původním street-freestylovém klipu vaší podobou, zatímco scéna, dav a pohyby zůstávají zachované.
+Kolik to stojí a je k dispozici bezplatná verze?
+Nástroj je pouze placený bez bezplatné verze – balíček Single za 6,90 USD obsahuje 1 video, Five Pack za 29,90 USD 5 videí a Studio Pack za 99,90 USD 20 videí, vždy formou jednorázového nákupu kreditů, které nevyprší.
+Jak začít a pro koho je nástroj vhodný?
+Stačí nahrát jednu jasnou portrétní fotografii bez sluneční brýlí, zkontrolovat náhled originálního klipu a vygenerovat video za 20 kreditů; hodí se pro tvorbu vtipných klipů, narozeninových přání nebo sdílení s přáteli.
+Kategorie

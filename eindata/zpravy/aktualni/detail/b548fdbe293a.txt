@@ -1,0 +1,17 @@
+AI Metadata Remover
+Nástroj pro odstranění EXIF, GPS a AI metadat (prompty, seed, workflow) z obrázků JPEG, PNG, WebP a PDF přímo v prohlížeči.
+O nástroji
+AI Metadata Remover slouží k odstraňování metadat z fotografií i obrázků vygenerovaných AI nástroji. Umí odstranit GPS polohu, údaje o fotoaparátu, datum a čas z fotek, a také prompty, seed, informace o modelu a celý workflow z obrázků vytvořených v ComfyUI, Stable Diffusion, InvokeAI, Midjourney, ChatGPT či Firefly. Podporuje i odstranění Content Credentials (C2PA), přičemž u SynthID značek (Gemini, Imagen) upozorňuje, že jsou zapsané přímo v pixelech a nelze je odstranit. Veškeré zpracování probíhá lokálně v prohlížeči – soubory se nikam nenahrávají, což lze ověřit v záložce sítě vývojářských nástrojů. Nástroj po vyčištění provede re-scan výsledné kopie, aby uživatel viděl, co přesně bylo odstraněno. Kromě obrázků umí vyčistit i PDF dokumenty (autor, datum vytvoření, skryté XMP) a nabízí hromadné zpracování s exportem do ZIP. Bezplatná verze umožňuje zpracovat až 3 obrázky na dávku (do 15 MB na obrázek, 30 MB na dávku) a maximálně 10 obrázků denně, bez nutnosti registrace nebo platební karty. Placená verze Pro za 4,99 USD měsíčně (při roční platbě 59,90 USD ročně) odstraňuje denní limit, přidává dávky až 25 obrázků, výběr celých složek a report o dávkovém zpracování vhodný ke sdílení.
+Klíčové vlastnosti
+- Odstranění GPS, EXIF a dat o fotoaparátu z fotek
+- Odstranění promptů, seedu, modelu a workflow z AI obrázků
+- Podpora ComfyUI, Stable Diffusion, InvokeAI, Midjourney, ChatGPT i Firefly
+- Zpracování čistě v prohlížeči bez nahrávání na server
+Časté dotazy
+Jaká data dokáže nástroj odstranit?
+Z fotek odstraní GPS polohu, údaje o fotoaparátu, datum a čas, z AI obrázků prompty, seed, model a celý workflow (ComfyUI, Stable Diffusion, Midjourney, ChatGPT aj.), umí vyčistit i Content Credentials (C2PA) a metadata v PDF. SynthID vodoznaky (Gemini, Imagen) odstranit nelze, protože jsou zapsané přímo v pixelech.
+Kolik to stojí?
+Základní verze je zdarma bez registrace, placená Pro verze vyjde na 4,99 USD měsíčně nebo 59,90 USD ročně a odstraňuje denní limity a přidává dávky až 25 obrázků.
+Jak nástroj začít používat?
+Stačí na webu nahrát až 3 obrázky nebo jedno PDF (přetažením, výběrem souboru nebo vložením ze schránky), nástroj zobrazí nalezená metadata, lokálně je odstraní a nabídne ke stažení přeskenovanou čistou kopii.
+Kategorie

@@ -1,0 +1,17 @@
+Unforgettable Car Trend
+AI generátor videí, který z jedné selfie vytvoří virální „24 car trend“ klip – vás i vybrané auto vloží do originální noční scény.
+O nástroji
+Unforgettable Car Trend je AI nástroj, který z jedné selfie vytvoří dvanáctisekundové video ve formátu 16:9 napodobující virální trend, při němž se ke kameře zvednou karty s čísly 2 a 4, obraz se „přešoupne“ a odhalí osobu stojící vedle vysněného auta. Uživatel vybere jedno z osmi přednastavených aut (např. červené italské supersportovní auto, matně černý luxusní off-road vůz nebo americký muscle car ze 60. let) nebo nahraje fotku vlastního vozu, zvolí kvalitu videa (480p, 720p nebo 1080p) a nahraje jasnou selfie dospělé osoby s celým viditelným obličejem. Výsledné video obsahuje původní zvukovou stopu trendu a je bez vodoznaku. Nástroj funguje na principu kreditů prodávaných v balíčcích, které podle dodaného ceníku nikdy nevyprší – nejmenší balíček 20 kreditů stojí 9,99 dolaru a jedno video v 480p rozlišení spotřebuje 10 kreditů, zatímco vyšší kvality (720p, 1080p) stojí 20, respektive 40 kreditů. Bezplatná verze není uvedena, platba probíhá přes Stripe a nevyužité kredity lze do sedmi dnů vrátit. Fotky zůstávají v prohlížeči po dobu 24 hodin před nahráním a hotová videa jsou uložena v historii po dobu 30 dnů; zpracování trvá obvykle několik minut a prochází automatickou bezpečnostní kontrolou.
+Klíčové vlastnosti
+- Osm přednastavených vozů nebo nahrání fotky vlastního auta
+- Výběr kvality videa 480p, 720p nebo 1080p
+- 12sekundové video ve formátu 16:9 bez vodoznaku
+- Zachovává originální zvukovou stopu a časování trendu
+Časté dotazy
+Co přesně nástroj vytvoří?
+Z jedné selfie vygeneruje 12sekundové video 16:9 napodobující virální „24 car trend“, kde se po zvednutí karet s čísly 2 a 4 obraz přešoupne a odhalí vás stojícího vedle vybraného vysněného auta i s originálním zvukem trendu.
+Kolik to stojí?
+Platí se kredity v balíčcích, které nikdy nevyprší – nejmenší balíček 20 kreditů stojí 9,99 dolaru, přičemž video v 480p spotřebuje 10 kreditů, 720p 20 kreditů a 1080p 40 kreditů.
+Jak mohu začít?
+Stačí vybrat jedno z osmi přednastavených aut nebo nahrát fotku vlastního vozu, zvolit kvalitu videa, nahrát jasnou selfie dospělé osoby s celým obličejem a po přihlášení potvrdit kreditovou cenu.
+Kategorie

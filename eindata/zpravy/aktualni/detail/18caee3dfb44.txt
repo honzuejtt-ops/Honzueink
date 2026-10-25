@@ -1,0 +1,17 @@
+HumanPen
+Humanizer AI textu přímo v souborech DOCX a PPTX, který zachovává formátování, citace i tabulky.
+O nástroji
+HumanPen přepisuje AI generovaný text přímo v dokumentech DOCX, PPTX a TXT bez omezení délky souboru, přičemž zachovává původní styly, odstavce, tabulky i číslování. Umožňuje importovat zprávu z Turnitinu nebo iThenticate a cíleně přepsat pouze pasáže označené jako AI text – platí se jen za skutečně přepsaná slova. Čísla, jednotky, vzorce, citace a terminologie zůstávají při přepisu nedotčené, nástroj nezavádí záměrné překlepy ani gramatické chyby. Kromě humanizace nabízí HumanPen i další nástroje pro práci s dokumenty: převod formátu citací (APA, MLA, Chicago, IEEE, GB/T 7714) v celém souboru najednou, zkrácení textu na cílový počet slov při zachování struktury a citací, a překlad souborů (PDF, Word, PowerPoint, Excel, EPUB, HTML) mezi čínštinou a angličtinou se zachováním rozvržení. Nástroj funguje na kreditovém systému, kde je zmíněna cena 1 dolar a registrace přináší 100 kreditů zdarma na vyzkoušení. Pokud po přepisu skóre detekce AI neklesne pod 20 %, je opakovaný přepis zbývajících pasáží zdarma. HumanPen nabízí integraci přes API, MCP i jako „skill“ pro AI agenty jako Claude Code, Codex nebo Cursor.
+Klíčové vlastnosti
+- Přepis AI textu přímo v DOCX, PPTX a TXT
+- Import reportu z Turnitinu nebo iThenticate pro cílený přepis
+- Zachování citací, vzorců, tabulek i číslování
+- Platba jen za skutečně přepsaná slova
+Časté dotazy
+Co přesně HumanPen umí?
+Přepisuje AI generovaný text přímo v souborech DOCX, PPTX a TXT bez omezení délky, přičemž zachovává původní styly, odstavce, tabulky, citace i vzorce. Dokáže také importovat report z Turnitinu nebo iThenticate a přepsat jen pasáže označené jako AI text.
+Kolik HumanPen stojí?
+Funguje na kreditovém systému, kde se platí jen za skutečně přepsaná slova (např. 1 000 slov stojí 100 kreditů). Registrace přináší 100 kreditů zdarma a pokud po přepisu skóre detekce neklesne pod 20 %, další kolo přepisu zbývajících pasáží je zdarma.
+Pro koho je HumanPen a jak začít?
+Hodí se pro studenty, akademiky i autory, kteří potřebují upravit AI generovaný text ve svých dokumentech tak, aby prošel detekcí, aniž by přišli o formátování a citace. Stačí se zaregistrovat, získat 100 kreditů zdarma a nahrát první soubor.
+Kategorie

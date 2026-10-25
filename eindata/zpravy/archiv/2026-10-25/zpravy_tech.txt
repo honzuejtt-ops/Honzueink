@@ -1,3 +1,153 @@
+|T|USA uvalila ban na čínský DeepSeek, nesmí do civilních vládních organizací|D|25.10.2026 08:00|P|Spojené státy uvalily další ban ve spojitosti s Čínou. Tentokrát jde o zákaz používání DeepSeeku v rámci civilních federálních organizací kvůli obavám...|M|SvětHW|X|Spojené státy uvalily další ban ve spojitosti s Čínou. Tentokrát jde o zákaz používání DeepSeeku v rámci civilních federálních organizací kvůli obavám z nedostatečné bezpečnosti.
+Boj mezi USA a Čínou pokračuje a máme tu další ban týkající se soupeření těchto dvou zemí. Americká vláda se totiž rozhodla přitvrdit pravidla pro používání čínských AI nástrojů v rámci státní správy. Ministerstvo vnitřní bezpečnosti (DHS) oznámilo zákaz využívání produktů od startupu DeepSeek ve všech federálních civilních agenturách. Ten se netýká pouze samotného chatbota, ale i jakéhokoli softwaru, který je postaven na modelech této společnosti. Agentury tedy mají povinnost tyto nástroje ze svých systémů odstranit a zastavit nákup nových.
+Pokud jde o důvody tohoto kroku, Washington se obává především o bezpečnost citlivých dat. Servery DeepSeeku jsou umístěny v Číně a jsou zde obavy, že je čínským státním orgánům poskytován rozsáhlý přístup k datům na těchto serverech. DHS v dokumentech uvádí, že modely představují několik hrozeb a varuje před možným přenosem dat do rukou čínské vlády. K tomu se přidávají i obavy z potenciálního malwaru a bezpečnostních chyb, přičemž výzkumníci již v minulosti našli kritické zranitelnosti v iOS aplikaci DeepSeeku.
+Zajímavostí je, že tato omezení neplatí např. pro Pentagon, který může nástroje nadále využívat. Ban se totiž týká jen civilních federálních agentur. V jejich případě existuje možnost požádat o výjimku, na což mají 60 dní od vydání banu.
+Reakce z Pekingu nebyla zrovna pozitivní a Čína obvinila USA z politizace technologií. Čína tvrdí, že USA zneužívá argumenty národní bezpečnosti pro protlačování svých vlastních firem. Přesto oba státy stále udržují komunikaci a v září se dokonce dohodly na vytvoření systému pro řešení AI incidentů. Ještě připomeňme, že před pár dny vyšla nejnovější verze DeepSeeku V4.1 Flash 1017, která výrazně překonává svého předchůdce, přitom patří stále k jedněm z nejlevnějších modelů na trhu.|E|
+|T|Video Text Remover AI|D|25.10.2026 07:22|P|Online nástroj pro odstranění vypáleného textu, titulků, loga nebo vodoznaku z vlastních video klipů přímo v prohlížeči.|M|EJAJ|X|Video Text Remover AI
+Online nástroj pro odstranění vypáleného textu, titulků, loga nebo vodoznaku z vlastních video klipů přímo v prohlížeči.
+O nástroji
+Video Text Remover AI umožňuje odstranit vypálený text z videa – staré titulky, ceny, data nebo názvy – aby bylo možné krátký klip znovu použít pro novou kampaň nebo jinou jazykovou verzi titulků. Uživatel v editoru označí oblast s textem a časový úsek, kdy se na obrazovce zobrazuje, nástroj pak danou část obrazu rekonstruuje. Práce probíhá s klipy do délky 60 sekund a velikosti 50 MB, video se nahrává na server až po stisknutí tlačítka pro odstranění textu. Nástroj nabízí až 2 zkušební spuštění po 15 sekundách zdarma, pro delší zpracování je nutné zakoupit kreditní balíček, ceny začínají na 4,90 USD. Určen je zejména pro tvůrce obsahu, marketingové týmy a lektory, kteří potřebují znovu využít existující záběry bez editovatelné textové vrstvy, například při aktualizaci produktových reklam, TikTok klipů, Reels nebo tutoriálů.
+Klíčové vlastnosti
+- Odstranění vypáleného textu, titulků, loga i vodoznaku
+- Ruční označení oblasti a časového úseku s textem
+- Zpracování klipů do 60 sekund a 50 MB
+- Náhled a úprava přímo v prohlížeči před nahráním
+Časté dotazy
+Co přesně Video Text Remover AI umí?
+Odstraní vypálený text z videa – staré titulky, ceny, data, loga nebo vodoznaky – a rekonstruuje obraz pod nimi, takže lze klip znovu použít pro novou kampaň nebo jazykovou verzi.
+Kolik nástroj stojí?
+K dispozici jsou 2 zkušební spuštění po 15 sekundách zdarma, pro delší zpracování je nutné zakoupit kreditní balíček s cenou od 4,90 USD.
+Pro koho je nástroj určený a jak začít?
+Je vhodný pro tvůrce obsahu, marketingové týmy a lektory, kteří chtějí znovu využít existující záběry bez editovatelné textové vrstvy; stačí nahrát klip, označit oblast s textem a časový úsek a spustit odstranění.
+Kategorie|E|
+|T|Bloom|D|25.10.2026 07:22|P|AI tutor, který z tématu nebo vlastních materiálů (PDF, text, Markdown) vytvoří osnovu a učí po jednotlivých lekcích přizpůsobených zpětné vazbě stude...|M|EJAJ|X|Bloom
+AI tutor, který z tématu nebo vlastních materiálů (PDF, text, Markdown) vytvoří osnovu a učí po jednotlivých lekcích přizpůsobených zpětné vazbě studenta.
+O nástroji
+Bloom je soukromý AI tutor inspirovaný konceptem „2 sigma problem“ psychologa Benjamina Blooma – snaží se napodobit efekt individuální výuky jeden na jednoho. Uživatel zadá téma nebo nahraje vlastní studijní materiály (PDF, text, Markdown) a nástroj z nich vytvoří osnovu k zvládnutí. Výuka probíhá po jednotlivých lekcích: lze označit konkrétní pasáž a zeptat se na ni, odpovědi se zobrazují přímo vedle textu a lze na ně navazovat dalšími dotazy. Po každé lekci uživatel vyplní zpětnou vazbu (co bylo jasné, co ne, co by chtěl probrat dál), podle které je napsána lekce následující. Mezi funkce patří také import projektových souborů a složek jako čitelných stránek zdarma, přičemž AI dotazy k nim jsou už zpoplatněny, dále citace zdrojů u PDF a Markdown souborů včetně čísel stránek, návrhy na navazující témata k učení a osobní přehled studia s kalendářem aktivity, sérií dnů studia a počtem přečtených lekcí a položených otázek. Cenový model je postaven na jednorázových kreditových balíčcích bez předplatného a automatického obnovování – nové účty dostávají 1000 kreditů zdarma platných 365 dní od registrace. Dále lze dokoupit balíčky Starter (3 577 kreditů za 4,90 USD), Standard (14 527 kreditů za 19,90 USD) nebo Pro (29 127 kreditů za 39,90 USD), přičemž zakoupené kredity platí 12 měsíců. Spotřeba kreditů se počítá podle skutečného využití tokenů modelu (1 kredit = 0,01 CNY), API ani otevřený zdrojový kód nejsou v dostupných informacích zmíněny.
+Klíčové vlastnosti
+- Osnova k zvládnutí tématu z textu nebo vlastních souborů
+- Zvýraznění pasáže a dotaz přímo k ní s odpovědí vedle textu
+- Lekce navazující na zpětnou vazbu a zvýrazněné pasáže
+- Citace zdrojů u PDF a Markdown včetně čísel stránek
+Časté dotazy
+Co přesně Bloom umí?
+Z tématu nebo nahraných materiálů (PDF, text, Markdown) vytvoří osnovu a učí po jednotlivých lekcích, které se přizpůsobují zvýrazněným pasážím, dotazům a zpětné vazbě studenta. Na konci osnovy připraví závěrečný test a shrnutí kurzu.
+Kolik Bloom stojí?
+Nový účet dostane 1000 kreditů zdarma platných 365 dní, import vlastních souborů jako čitelných stránek je zdarma vždy. Další kredity se kupují v balíčcích Starter (3 577 kreditů za 4,90 USD), Standard (14 527 kreditů za 19,90 USD) nebo Pro (29 127 kreditů za 39,90 USD), platné 12 měsíců, bez předplatného.
+Jak začít a pro koho je nástroj vhodný?
+Stačí se zaregistrovat bez karty, zadat téma nebo nahrát vlastní materiály a Bloom vygeneruje osnovu a první lekci. Hodí se pro samostudium studentů i kohokoli, kdo se chce systematicky naučit konkrétní téma vlastním tempem.
+Kategorie|E|
+|T|AI Metadata Cleaner|D|25.10.2026 07:22|P|Bezplatný nástroj pro odstranění EXIF, GPS, XMP, IPTC a C2PA metadat z fotek, videí a PDF přímo v prohlížeči.|M|EJAJ|X|AI Metadata Cleaner
+Bezplatný nástroj pro odstranění EXIF, GPS, XMP, IPTC a C2PA metadat z fotek, videí a PDF přímo v prohlížeči.
+O nástroji
+AI Metadata Cleaner slouží k odstranění skrytých metadat z fotografií, videí a PDF souborů – konkrétně EXIF dat o fotoaparátu, GPS souřadnic, polí XMP a IPTC a provenance/C2PA (JUMBF) kontejnerů. Zpracování probíhá lokálně v prohlížeči, soubory se nikam nenahrávají, což nástroj nabízí mimo jiné fotografům, prodejcům na tržištích (např. Etsy) a tvůrcům obsahu pro sociální sítě před publikováním. Nástroj podporuje formáty JPEG, PNG, WebP, AVIF, HEIC a Camera RAW (RAW se dekóduje lokálně pomocí knihovny libraw a exportuje jako čistý JPEG do velikosti 80 MB). K dispozici je bezplatné dávkové zpracování až 20 souborů najednou se stažením ve formátu ZIP, a to bez nutnosti registrace. Ve výchozím nastavení je zapnutá tzv. ochrana otisku (fingerprint protection), která do vyčištěných obrázků přidává jemný pixelový šum měnící percepční hash – tuto funkci lze vypnout nebo zvolit možnost zachování původních pixelů pro čištění pouze metadat. Nástroj podle popisu neprovádí odstranění značek SynthID ani kryptografickou validaci, pouze odstraňuje textové/kontejnerové značky.
+Klíčové vlastnosti
+- Odstraní EXIF, GPS, XMP, IPTC a C2PA/JUMBF metadata
+- Zpracování čistě lokálně v prohlížeči bez nahrávání souborů
+- Podpora JPEG, PNG, WebP, AVIF, HEIC a Camera RAW
+- Dávkové zpracování až 20 souborů se stažením v ZIP
+Časté dotazy
+Co přesně nástroj odstraňuje z fotek a dokumentů?
+Odstraňuje EXIF data o fotoaparátu, GPS souřadnice, pole XMP a IPTC a provenance/C2PA (JUMBF) kontejnery z fotek, videí a PDF. Neodstraňuje značky SynthID ani neprovádí kryptografickou validaci, jde čistě o strip textových/kontejnerových tagů.
+Kolik to stojí a je potřeba registrace?
+Nástroj je zdarma, dávkové zpracování až 20 souborů najednou se stažením v ZIP funguje bez nutnosti registrace či účtu.
+Pro koho je nástroj určený a jak začít?
+Hodí se pro fotografy, prodejce na tržištích jako Etsy a tvůrce obsahu pro sociální sítě před publikováním. Stačí na webu vybrat záložku Images, Video nebo PDF, nahrát soubory a stáhnout vyčištěnou verzi.
+Kategorie|E|
+|T|Lazurio|D|25.10.2026 07:21|P|Lazurio je koordinační vrstva, která propojuje firemní know-how, zaměstnance a AI nástroje do opakovatelných pracovních postupů.|M|EJAJ|X|Lazurio
+Lazurio je koordinační vrstva, která propojuje firemní know-how, zaměstnance a AI nástroje do opakovatelných pracovních postupů.
+O nástroji
+Lazurio je lokální pracovní systém, ve kterém lidé a AI spolupracují na firmách, projektech i osobní agendě – s odděleným přístupem k datům a kontrolou nad tím, co se z výstupů zveřejní. Nejde o nový AI model ani sdílené cloudové úložiště, ale o vrstvu propojující lidi, AI nástroje, repozitáře a aplikace pod jednou sadou pravidel, včetně napojení na běžnou agendu typu cenových nabídek v Excelu nebo poptávek z e-mailu. Nástroj je určen technickým zakladatelům, vývojářům a týmům, kteří chtějí s AI spolupracovat dlouhodobě a se skutečnými oprávněními v používaných službách, nikoliv jen nárazově přes jednotlivé AI nástroje. Z jednoho počítače lze spravovat více firem, projektů i osobních podkladů, aniž by se jejich data či oprávnění navzájem míchala. Web nabízí rezervaci demo verze, cena ani existence bezplatného tarifu však uvedeny nejsou. Rozhraní je dostupné v angličtině i češtině, informace o API nebo otevřeném zdrojovém kódu na stránce chybí.
+Klíčové vlastnosti
+- Oddělený přístup k datům pro firmy, projekty i osobní agendu
+- Propojení s AI nástroji, repozitáři a aplikacemi pod jednou sadou pravidel
+- Napojení na běžnou agendu – cenové nabídky v Excelu, poptávky z e-mailu
+- Správa více firem a projektů z jednoho počítače bez míchání dat
+Časté dotazy
+Co Lazurio vlastně dělá?
+Lazurio je koordinační vrstva propojující firemní know-how, zaměstnance a AI nástroje do opakovatelných pracovních postupů, včetně napojení na běžnou agendu jako cenové nabídky v Excelu nebo poptávky z e-mailu.
+Kolik Lazurio stojí?
+Cena na webu uvedena není, zájemci si mohou rezervovat demo verzi a podmínky řešit individuálně.
+Pro koho je Lazurio určené a jak začít?
+Je určeno technickým zakladatelům, vývojářům a týmům, kteří chtějí s AI spolupracovat dlouhodobě se skutečnými oprávněními ve svých službách. Začít lze rezervací demo verze na webu.
+Kategorie|E|
+|T|Halv|D|25.10.2026 07:21|P|Desktopová pracovní plocha pro AI coding agenty (Claude Code, Codex, Kimi, GLM) v jednom okně – lokální funkce zdarma, cloudové směrování modelů za 10...|M|EJAJ|X|Halv
+Desktopová pracovní plocha pro AI coding agenty (Claude Code, Codex, Kimi, GLM) v jednom okně – lokální funkce zdarma, cloudové směrování modelů za 10 $/měsíc.
+O nástroji
+Halv je open-source (Apache 2.0) desktopová aplikace pro macOS, Windows a Linux, která spojuje Claude Code, Codex, Kimi a GLM do jednoho rozhraní s živými panely a nativními terminály pro paralelní práci agentů. Základní, trvale bezplatná verze bez zkušební doby zahrnuje lokálně běžící nástroje: Crux (open-source index kódu pod MIT licencí pro hledání referencí a volání místo procházení souborů), filtrování výstupu příkazů a kompresi kontextu – vše běží přímo na počítači uživatele a nevyžaduje žádné předplatné Halv. Placená nadstavba Halv Cloud za 10 $/měsíc přidává směrování úkolů mezi modely: koordinační agent vyhodnotí náročnost úkolu a podle kalibrace na benchmarku SWE-rebench rozhodne, zda jej zpracuje levnější nebo výkonnější model, přičemž samotnou práci stále provádějí modely na vlastních předplatných uživatele (Claude, ChatGPT, Moonshot, Z.ai). Cloud verze dále ukládá historii úspor napříč zařízeními a umí rotovat mezi účty při vyčerpání limitu. Podle zveřejněného benchmarku (42 párovaných běhů na reálných repozitářích, 25 průchodů na větev) dosáhl Halv při stejném počtu úspěšných odpovědí o 57,1 % nižší náklady na model oproti samostatnému použití agenta. Nástroj je určen vývojářům a týmům, kteří pracují s více AI coding agenty najednou a chtějí snížit náklady na jejich provoz; stránka i dokumentace jsou pouze v angličtině.
+Klíčové vlastnosti
+- Jedno okno pro Claude Code, Codex, Kimi i GLM
+- Nativní terminály pro paralelní práci agentů
+- Open-source index kódu Crux pro rychlé hledání referencí
+- Filtrování výstupu příkazů a komprese kontextu lokálně
+Časté dotazy
+Co přesně Halv dělá?
+Halv je desktopová aplikace, která spojuje AI coding agenty Claude Code, Codex, Kimi a GLM do jednoho rozhraní s živými panely a terminály pro paralelní práci. Lokálně navíc nabízí index kódu Crux, filtrování výstupu a kompresi kontextu.
+Kolik Halv stojí?
+Základní desktopová aplikace s lokálními funkcemi je trvale zdarma bez zkušební doby. Placená nadstavba Halv Cloud za 10 $ měsíčně přidává chytré směrování úkolů mezi modely a sledování úspor.
+Pro koho je Halv určený a jak začít?
+Nástroj je určen vývojářům a týmům, kteří pracují s více AI coding agenty najednou a chtějí snížit náklady na jejich provoz. Stačí stáhnout open-source aplikaci pro macOS, Windows nebo Linux a připojit vlastní předplatná Claude, ChatGPT, Moonshot nebo Z.ai.
+Kategorie|E|
+|T|JeanPhil AI|D|25.10.2026 07:21|P|Nástroj, který z nahrané fotky vygeneruje krátké video ve stylu postavy „Jean Phil“ – boxující, v kavárně, tančící nebo v zahradě.|M|EJAJ|X|JeanPhil AI
+Nástroj, který z nahrané fotky vygeneruje krátké video ve stylu postavy „Jean Phil“ – boxující, v kavárně, tančící nebo v zahradě.
+O nástroji
+JeanPhil AI je nástroj pro přeměnu fotografie na krátké video s postavou inspirovanou internetovým charakterem Jean Phil. Uživatel nahraje jeden nebo dva portréty, vybere scénu (pouliční shadowboxing, terasa kavárny, tanec v růžovém obleku nebo komedie v zahradě) a zvolí orientaci 9:16 nebo 16:9. Výsledkem je 15sekundové video v rozlišení 720p s vlastní hudbou a ambientním zvukem, dostupné k přehrání přímo v prohlížeči bez nutnosti instalace aplikace. Ke generování se používají modely řady Seedance 2.0 (Standard, Mini Fast, Fast Pro), přičemž každé 15sekundové video spotřebuje 20 kreditů bez ohledu na zvolený model. Platba probíhá formou jednorázových balíčků kreditů bez předplatného – например balíček Single za 6,90 USD obsahuje 1 video (20 kreditů), Five Pack za 29,90 USD nabízí 5 videí (100 kreditů) a Studio Pack za 99,90 USD poskytuje 20 videí (400 kreditů). Zakoupené kredity podle uvedených informací nevypršují a v případě neúspěšného generování jsou vráceny. Fotografie se podle textu na stránce odesílají na server až v okamžiku samotného generování videa, do té doby se zobrazuje pouze lokální náhled. Nástroj zmiňuje napojení na externí video službu (Seedance) a je určen zejména tvůrcům krátkého obsahu pro sociální sítě, kteří chtějí vytvořit humorný nebo trendový klip s vlastní tváří v roli postavy Jean Phil.
+Klíčové vlastnosti
+- 4 scény: shadowboxing, kavárna, tanec v obleku, zahrada
+- 15sekundové video v rozlišení 720p s hudbou a zvukem
+- podpora jednoho nebo dvou portrétů ve videu
+- orientace 9:16 nebo 16:9 podle volby
+Časté dotazy
+Co nástroj JeanPhil AI vlastně umí?
+Z nahrané fotky vytvoří 15sekundové video v 720p, kde se vaše tvář objeví ve scéně inspirované postavou Jean Phil – například při pouličním shadowboxingu, v kavárně, při tanci v růžovém obleku nebo v zahradní komedii. Video obsahuje vlastní hudbu a ambientní zvuk a lze ho rovnou přehrát v prohlížeči.
+Kolik JeanPhil AI stojí?
+Platí se jednorázovými balíčky kreditů bez předplatného – balíček Single za 6,90 USD obsahuje 1 video, Five Pack za 29,90 USD nabízí 5 videí a Studio Pack za 99,90 USD poskytuje 20 videí. Každé 15sekundové video spotřebuje 20 kreditů a zakoupené kredity nevypršují.
+Pro koho je nástroj určený a jak začít?
+Je určen tvůrcům krátkého obsahu pro sociální sítě, kteří chtějí vytvořit humorný nebo trendový klip s vlastní tváří v roli Jean Phil. Stačí nahrát jeden nebo dva portréty, vybrat scénu a orientaci videa a po zakoupení kreditů video vygenerovat a stáhnout.
+Kategorie|E|
+|T|FrameComet|D|25.10.2026 07:21|P|Generátor AI videí, který ze dvou selfie fotek vytvoří 12sekundové rapové duo s beatem a textem na jméno postav.|M|EJAJ|X|FrameComet
+Generátor AI videí, který ze dvou selfie fotek vytvoří 12sekundové rapové duo s beatem a textem na jméno postav.
+O nástroji
+FrameComet je online generátor krátkých AI videí ve formátu 9:16, určený pro sdílení na TikToku, Reels nebo Shorts. Z jedné fotky každé osoby (nebo jedné společné) vytvoří 12sekundové video, ve kterém dvě postavy rapují na vybrané pódium – na výběr jsou čtyři scény (oranžová „Hotel Lobby“ budka, luxusní lobby, nahrávací studio nebo noční ulice). Text písně si nástroj vygeneruje podle zadaných jmen a volitelné příležitosti (narozeniny, výročí, přátelství apod.), video obsahuje beat a AI vokály synchronizované s pohybem rtů. Celý proces proběhne v prohlížeči bez nutnosti instalace – stačí nahrát fotky, vybrat scénu, kvalitu a téma a video se po vyrenderování uloží ve formátu MP4 bez vodoznaku. Standardní kvalita (720p, 12 s, 9:16) stojí 10 kreditů, přičemž kreditové balíčky začínají na 9,99 USD a kredity nemají expiraci. Pokud se render nezdaří, kredity se automaticky vrátí zpět. Kromě rapového dua nabízí FrameComet na stejné platformě i další efekty z fotek, například přeměnu na fotku v stylu 80. let, taneční video s kreslenou kopií sebe sama nebo cestovní scény s luxusním autem. Bezplatná verze není v důkazech uvedena, nástroj pracuje na principu platby za jednotlivá videa formou kreditů.
+Klíčové vlastnosti
+- 12sekundové rapové video ze dvou selfie fotek
+- čtyři scény: oranžová budka, lobby, studio, noc. ulice
+- AI vokály synchronizované s pohybem rtů
+- text písně podle jmen a zvolené příležitosti
+Časté dotazy
+Co FrameComet vlastně vytvoří?
+Z jedné fotky každé osoby (nebo jedné společné) vygeneruje 12sekundové svislé video 9:16, kde obě postavy rapují na vybraném pódiu s beatem a AI vokály synchronizovanými s pohybem rtů.
+Kolik to stojí?
+Standardní video v kvalitě 720p a délce 12 s stojí 10 kreditů, přičemž kreditové balíčky začínají na 9,99 USD a kredity nikdy neexpirují. Pokud se render nepovede, kredity se automaticky vrátí.
+Jak začít a pro koho je to vhodné?
+Stačí v prohlížeči nahrát ostré fotky čelem k fotoaparátu, vybrat scénu a případně zadat jména a příležitost (narozeniny, výročí, přátelství). Hodí se pro páry, kamarády i rodinu, kteří chtějí zábavné video na TikTok, Reels nebo Shorts.
+Kategorie|E|
+|T|HumanPen|D|25.10.2026 07:21|P|Humanizer AI textu přímo v souborech DOCX a PPTX, který zachovává formátování, citace i tabulky.|M|EJAJ|X|HumanPen
+Humanizer AI textu přímo v souborech DOCX a PPTX, který zachovává formátování, citace i tabulky.
+O nástroji
+HumanPen přepisuje AI generovaný text přímo v dokumentech DOCX, PPTX a TXT bez omezení délky souboru, přičemž zachovává původní styly, odstavce, tabulky i číslování. Umožňuje importovat zprávu z Turnitinu nebo iThenticate a cíleně přepsat pouze pasáže označené jako AI text – platí se jen za skutečně přepsaná slova. Čísla, jednotky, vzorce, citace a terminologie zůstávají při přepisu nedotčené, nástroj nezavádí záměrné překlepy ani gramatické chyby. Kromě humanizace nabízí HumanPen i další nástroje pro práci s dokumenty: převod formátu citací (APA, MLA, Chicago, IEEE, GB/T 7714) v celém souboru najednou, zkrácení textu na cílový počet slov při zachování struktury a citací, a překlad souborů (PDF, Word, PowerPoint, Excel, EPUB, HTML) mezi čínštinou a angličtinou se zachováním rozvržení. Nástroj funguje na kreditovém systému, kde je zmíněna cena 1 dolar a registrace přináší 100 kreditů zdarma na vyzkoušení. Pokud po přepisu skóre detekce AI neklesne pod 20 %, je opakovaný přepis zbývajících pasáží zdarma. HumanPen nabízí integraci přes API, MCP i jako „skill“ pro AI agenty jako Claude Code, Codex nebo Cursor.
+Klíčové vlastnosti
+- Přepis AI textu přímo v DOCX, PPTX a TXT
+- Import reportu z Turnitinu nebo iThenticate pro cílený přepis
+- Zachování citací, vzorců, tabulek i číslování
+- Platba jen za skutečně přepsaná slova
+Časté dotazy
+Co přesně HumanPen umí?
+Přepisuje AI generovaný text přímo v souborech DOCX, PPTX a TXT bez omezení délky, přičemž zachovává původní styly, odstavce, tabulky, citace i vzorce. Dokáže také importovat report z Turnitinu nebo iThenticate a přepsat jen pasáže označené jako AI text.
+Kolik HumanPen stojí?
+Funguje na kreditovém systému, kde se platí jen za skutečně přepsaná slova (např. 1 000 slov stojí 100 kreditů). Registrace přináší 100 kreditů zdarma a pokud po přepisu skóre detekce neklesne pod 20 %, další kolo přepisu zbývajících pasáží je zdarma.
+Pro koho je HumanPen a jak začít?
+Hodí se pro studenty, akademiky i autory, kteří potřebují upravit AI generovaný text ve svých dokumentech tak, aby prošel detekcí, aniž by přišli o formátování a citace. Stačí se zaregistrovat, získat 100 kreditů zdarma a nahrát první soubor.
+Kategorie|E|
+|T|Nová generace grafických karet Nvidia: Běžní hráči se k RTX 6000 možná dostanou až za tři roky|D|25.10.2026 07:00|P|Nová generace herních grafických karet od Nvidie má vyjít v roce 2028. Jenže to budou jen drahé nejvyšší modely, dostupnější karty jako GeForce RTX 60...|M|Cnews|X|Dopad aktuální mánie kolem AI a šílených cen pamětí na počítačové hry a hardware vypadá čím dál závažněji. Nedávno jsme psali, že podle různých uniklých informací nejspíš nová generace grafických karet od AMD i Nvidie přijde až v roce 2028 (s jednou možnou výjimkou u AMD). Avšak pro hráče bez naditých peněženek a kont to může být ještě horší. Nvidia by prý v roce 2028 mohla vydat jen dražší modely a levné karty mohou být ještě později.
+GeForce RTX 6060 až v roce 2029?
+Zprávy o tom, že grafické karty nové generace od Nvidie s architekturou Rubin, které by mohly nést označení GeForce RTX 6000 (toto jméno zatím není jisté, používáme ho pouze pracovně), přinesl nejprve leaker Kepler_L2. Poté se k nim ale přidal i Kopite7kimi na bývalém Twitteru, což je osoba s nejlepšími zdroji, pokud jde o plány Nvidie, takže informace od Keplera_L2 lze do jisté míry brát jako potvrzené. To zde uvádíme proto, že Kepler_L2 nyní přinesl další odhad termínů vydání, tentokrát pro levnější modely generace Rubin. Bohužel je to opět dost pesimistická informace.
+Padlo to v diskuzi konzoli PlayStation 6 na fóru NeoGAF. Podle Keplera_L2 je dost pravděpodobné, že v roce 2028 tato konzole nebude ještě mít proti sobě konkurenci levnějších grafik Nvidia z nové generace, ale nejspíš se pořád ještě bude měřit se staršími GeForce RTX 5000. Ačkoliv nějaké GeForce RTX 6000 vyjdou už v roce 2028, měly by to být nejprve jen nejdražší karty a podle Keplera_L2 je hodně pravděpodobné, že levnější modely jako GeForce RTX 6060 vyjdou až v roce 2029.
+Nvidia prakticky vždy uvádí karty postupně a v poslední době platilo, že první vlna grafik vycházející hned po premiéře nové architektury má jen dva nebo tři modely. V generaci Ada Lovelace to to byly GeForce RTX 4090, GeForce 4080 a „RTX 4080 12GB“ (poslední později zrušená a vydaná jako RTX 4070 Ti). Posledně v generaci GeForce RTX 5000 byly karty čtyři, ale končilo se modelem RTX 5070 a levnější karty RTX 5060 Ti a RTX 5060 vyšly o několik měsíců později.
+Podle Keplera_L2 nejspíš prodleva mezi nejvyššími herními modely generace GeForce RTX 6000 a dostupnějšími kartami jako například budoucí GeForce RTX 6060 (což je opět jen pracovní označení – jména, která tyto budoucí karty ponesou, zatím neznáme) bude relativně delší, než obvykle. A to proto, že nejspíš i v té době bude trvat stav, kdy Nvidia naráží na omezený objem výroby a vysokou poptávku po AI akcelerátorech, což bude limitovat její možnosti rozběhnout co nejširší výrobu nové generace herních GPU. A omezená tím může být i dostupnost součástek pro VRM, paměťových čipů a podobně.
+A v takové situaci je velká pravděpodobnost, že mainstreamové karty budou meškat déle, než je obvyklé, a že nějaký třeba šesti či sedmiměsíční odstup po vydání GeForce RTX 6090 či 6080 (či jak se bude highendový model jmenovat) už jejich dostupnost odsune do roku 2029.
+Nicméně tento pesimistický výhled je spíše odhad situace než „únik“ v tom smyslu, že by už nyní Nvidia měla takovéto datum zakroužkované v nějakém interním plánu. Je zde tedy šance, že se věci nebudou odvíjet až tak černě a tato předpověď se nevyplní. A protože se bavíme o době vzdálené zhruba dva roky, může se toho obecně ještě dost změnit.
+Zdroje: VideoCardz, Kepler_L2 (1, 2)|E|
 |T|HoneyKrisp pro Apple Vulkan dostává fork pro AI vývoj, systemd nasazuje Rust|D|25.10.2026 00:00|P|Týden v KDE a sezóna lovení bugů v Plasmě 6.8 naplno, týden v GNOME nejen o Webu a GTK, FFmpeg 9.1 připravující podporu kodéru APV Vulkan či Nvidia Op...|M|Root|X|Týden v KDE: sezóna lovení bugů v Plasmě 6.8 běží naplno
 Uplynulý týden v projektu KDE víceméně kopíroval jiné týdny po vydání nové verze. Lidé postupně aktualizovali na Plasmu 6.8 a začali objevovat spousty chyb, které se neukázaly v rámci beta testování. Dnešek je tak do značné, opravdu značné míry ve znamení oprav mířících do Plasmy 6.8.1 a 6.8.2.
 Stihlo se také několik novinek, primárně mířících do následné Plasmy 6.9. Jde například o podporu Wayland protokolu pro picture-in-picture (PiP) v kompozitoru KWin, nyní po rozsáhlém testování stabilním natolik, že se stává součástí nabídky Plasmy. Plasma si také nově pamatuje velikosti a pozice oken pro jednotlivá uspořádání obrazovek, tedy po odpojení a pozdějším opětovném připojení jedné z obrazovek vrátí Plasma okna tam, kde byla původně atp.

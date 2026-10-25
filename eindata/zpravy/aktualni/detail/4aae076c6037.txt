@@ -1,0 +1,17 @@
+JeanPhil AI
+Nástroj, který z nahrané fotky vygeneruje krátké video ve stylu postavy „Jean Phil“ – boxující, v kavárně, tančící nebo v zahradě.
+O nástroji
+JeanPhil AI je nástroj pro přeměnu fotografie na krátké video s postavou inspirovanou internetovým charakterem Jean Phil. Uživatel nahraje jeden nebo dva portréty, vybere scénu (pouliční shadowboxing, terasa kavárny, tanec v růžovém obleku nebo komedie v zahradě) a zvolí orientaci 9:16 nebo 16:9. Výsledkem je 15sekundové video v rozlišení 720p s vlastní hudbou a ambientním zvukem, dostupné k přehrání přímo v prohlížeči bez nutnosti instalace aplikace. Ke generování se používají modely řady Seedance 2.0 (Standard, Mini Fast, Fast Pro), přičemž každé 15sekundové video spotřebuje 20 kreditů bez ohledu na zvolený model. Platba probíhá formou jednorázových balíčků kreditů bez předplatného – например balíček Single za 6,90 USD obsahuje 1 video (20 kreditů), Five Pack za 29,90 USD nabízí 5 videí (100 kreditů) a Studio Pack za 99,90 USD poskytuje 20 videí (400 kreditů). Zakoupené kredity podle uvedených informací nevypršují a v případě neúspěšného generování jsou vráceny. Fotografie se podle textu na stránce odesílají na server až v okamžiku samotného generování videa, do té doby se zobrazuje pouze lokální náhled. Nástroj zmiňuje napojení na externí video službu (Seedance) a je určen zejména tvůrcům krátkého obsahu pro sociální sítě, kteří chtějí vytvořit humorný nebo trendový klip s vlastní tváří v roli postavy Jean Phil.
+Klíčové vlastnosti
+- 4 scény: shadowboxing, kavárna, tanec v obleku, zahrada
+- 15sekundové video v rozlišení 720p s hudbou a zvukem
+- podpora jednoho nebo dvou portrétů ve videu
+- orientace 9:16 nebo 16:9 podle volby
+Časté dotazy
+Co nástroj JeanPhil AI vlastně umí?
+Z nahrané fotky vytvoří 15sekundové video v 720p, kde se vaše tvář objeví ve scéně inspirované postavou Jean Phil – například při pouličním shadowboxingu, v kavárně, při tanci v růžovém obleku nebo v zahradní komedii. Video obsahuje vlastní hudbu a ambientní zvuk a lze ho rovnou přehrát v prohlížeči.
+Kolik JeanPhil AI stojí?
+Platí se jednorázovými balíčky kreditů bez předplatného – balíček Single za 6,90 USD obsahuje 1 video, Five Pack za 29,90 USD nabízí 5 videí a Studio Pack za 99,90 USD poskytuje 20 videí. Každé 15sekundové video spotřebuje 20 kreditů a zakoupené kredity nevypršují.
+Pro koho je nástroj určený a jak začít?
+Je určen tvůrcům krátkého obsahu pro sociální sítě, kteří chtějí vytvořit humorný nebo trendový klip s vlastní tváří v roli Jean Phil. Stačí nahrát jeden nebo dva portréty, vybrat scénu a orientaci videa a po zakoupení kreditů video vygenerovat a stáhnout.
+Kategorie

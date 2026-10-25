@@ -1,0 +1,17 @@
+AI Metadata Cleaner
+Bezplatný nástroj pro odstranění EXIF, GPS, XMP, IPTC a C2PA metadat z fotek, videí a PDF přímo v prohlížeči.
+O nástroji
+AI Metadata Cleaner slouží k odstranění skrytých metadat z fotografií, videí a PDF souborů – konkrétně EXIF dat o fotoaparátu, GPS souřadnic, polí XMP a IPTC a provenance/C2PA (JUMBF) kontejnerů. Zpracování probíhá lokálně v prohlížeči, soubory se nikam nenahrávají, což nástroj nabízí mimo jiné fotografům, prodejcům na tržištích (např. Etsy) a tvůrcům obsahu pro sociální sítě před publikováním. Nástroj podporuje formáty JPEG, PNG, WebP, AVIF, HEIC a Camera RAW (RAW se dekóduje lokálně pomocí knihovny libraw a exportuje jako čistý JPEG do velikosti 80 MB). K dispozici je bezplatné dávkové zpracování až 20 souborů najednou se stažením ve formátu ZIP, a to bez nutnosti registrace. Ve výchozím nastavení je zapnutá tzv. ochrana otisku (fingerprint protection), která do vyčištěných obrázků přidává jemný pixelový šum měnící percepční hash – tuto funkci lze vypnout nebo zvolit možnost zachování původních pixelů pro čištění pouze metadat. Nástroj podle popisu neprovádí odstranění značek SynthID ani kryptografickou validaci, pouze odstraňuje textové/kontejnerové značky.
+Klíčové vlastnosti
+- Odstraní EXIF, GPS, XMP, IPTC a C2PA/JUMBF metadata
+- Zpracování čistě lokálně v prohlížeči bez nahrávání souborů
+- Podpora JPEG, PNG, WebP, AVIF, HEIC a Camera RAW
+- Dávkové zpracování až 20 souborů se stažením v ZIP
+Časté dotazy
+Co přesně nástroj odstraňuje z fotek a dokumentů?
+Odstraňuje EXIF data o fotoaparátu, GPS souřadnice, pole XMP a IPTC a provenance/C2PA (JUMBF) kontejnery z fotek, videí a PDF. Neodstraňuje značky SynthID ani neprovádí kryptografickou validaci, jde čistě o strip textových/kontejnerových tagů.
+Kolik to stojí a je potřeba registrace?
+Nástroj je zdarma, dávkové zpracování až 20 souborů najednou se stažením v ZIP funguje bez nutnosti registrace či účtu.
+Pro koho je nástroj určený a jak začít?
+Hodí se pro fotografy, prodejce na tržištích jako Etsy a tvůrce obsahu pro sociální sítě před publikováním. Stačí na webu vybrat záložku Images, Video nebo PDF, nahrát soubory a stáhnout vyčištěnou verzi.
+Kategorie

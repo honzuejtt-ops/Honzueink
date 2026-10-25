@@ -1,0 +1,17 @@
+Lazurio
+Lazurio je koordinační vrstva, která propojuje firemní know-how, zaměstnance a AI nástroje do opakovatelných pracovních postupů.
+O nástroji
+Lazurio je lokální pracovní systém, ve kterém lidé a AI spolupracují na firmách, projektech i osobní agendě – s odděleným přístupem k datům a kontrolou nad tím, co se z výstupů zveřejní. Nejde o nový AI model ani sdílené cloudové úložiště, ale o vrstvu propojující lidi, AI nástroje, repozitáře a aplikace pod jednou sadou pravidel, včetně napojení na běžnou agendu typu cenových nabídek v Excelu nebo poptávek z e-mailu. Nástroj je určen technickým zakladatelům, vývojářům a týmům, kteří chtějí s AI spolupracovat dlouhodobě a se skutečnými oprávněními v používaných službách, nikoliv jen nárazově přes jednotlivé AI nástroje. Z jednoho počítače lze spravovat více firem, projektů i osobních podkladů, aniž by se jejich data či oprávnění navzájem míchala. Web nabízí rezervaci demo verze, cena ani existence bezplatného tarifu však uvedeny nejsou. Rozhraní je dostupné v angličtině i češtině, informace o API nebo otevřeném zdrojovém kódu na stránce chybí.
+Klíčové vlastnosti
+- Oddělený přístup k datům pro firmy, projekty i osobní agendu
+- Propojení s AI nástroji, repozitáři a aplikacemi pod jednou sadou pravidel
+- Napojení na běžnou agendu – cenové nabídky v Excelu, poptávky z e-mailu
+- Správa více firem a projektů z jednoho počítače bez míchání dat
+Časté dotazy
+Co Lazurio vlastně dělá?
+Lazurio je koordinační vrstva propojující firemní know-how, zaměstnance a AI nástroje do opakovatelných pracovních postupů, včetně napojení na běžnou agendu jako cenové nabídky v Excelu nebo poptávky z e-mailu.
+Kolik Lazurio stojí?
+Cena na webu uvedena není, zájemci si mohou rezervovat demo verzi a podmínky řešit individuálně.
+Pro koho je Lazurio určené a jak začít?
+Je určeno technickým zakladatelům, vývojářům a týmům, kteří chtějí s AI spolupracovat dlouhodobě se skutečnými oprávněními ve svých službách. Začít lze rezervací demo verze na webu.
+Kategorie

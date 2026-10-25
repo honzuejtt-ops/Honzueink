@@ -1,0 +1,17 @@
+Video Text Remover AI
+Online nástroj pro odstranění vypáleného textu, titulků, loga nebo vodoznaku z vlastních video klipů přímo v prohlížeči.
+O nástroji
+Video Text Remover AI umožňuje odstranit vypálený text z videa – staré titulky, ceny, data nebo názvy – aby bylo možné krátký klip znovu použít pro novou kampaň nebo jinou jazykovou verzi titulků. Uživatel v editoru označí oblast s textem a časový úsek, kdy se na obrazovce zobrazuje, nástroj pak danou část obrazu rekonstruuje. Práce probíhá s klipy do délky 60 sekund a velikosti 50 MB, video se nahrává na server až po stisknutí tlačítka pro odstranění textu. Nástroj nabízí až 2 zkušební spuštění po 15 sekundách zdarma, pro delší zpracování je nutné zakoupit kreditní balíček, ceny začínají na 4,90 USD. Určen je zejména pro tvůrce obsahu, marketingové týmy a lektory, kteří potřebují znovu využít existující záběry bez editovatelné textové vrstvy, například při aktualizaci produktových reklam, TikTok klipů, Reels nebo tutoriálů.
+Klíčové vlastnosti
+- Odstranění vypáleného textu, titulků, loga i vodoznaku
+- Ruční označení oblasti a časového úseku s textem
+- Zpracování klipů do 60 sekund a 50 MB
+- Náhled a úprava přímo v prohlížeči před nahráním
+Časté dotazy
+Co přesně Video Text Remover AI umí?
+Odstraní vypálený text z videa – staré titulky, ceny, data, loga nebo vodoznaky – a rekonstruuje obraz pod nimi, takže lze klip znovu použít pro novou kampaň nebo jazykovou verzi.
+Kolik nástroj stojí?
+K dispozici jsou 2 zkušební spuštění po 15 sekundách zdarma, pro delší zpracování je nutné zakoupit kreditní balíček s cenou od 4,90 USD.
+Pro koho je nástroj určený a jak začít?
+Je vhodný pro tvůrce obsahu, marketingové týmy a lektory, kteří chtějí znovu využít existující záběry bez editovatelné textové vrstvy; stačí nahrát klip, označit oblast s textem a časový úsek a spustit odstranění.
+Kategorie

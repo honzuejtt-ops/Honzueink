@@ -1,0 +1,17 @@
+Bloom
+AI tutor, který z tématu nebo vlastních materiálů (PDF, text, Markdown) vytvoří osnovu a učí po jednotlivých lekcích přizpůsobených zpětné vazbě studenta.
+O nástroji
+Bloom je soukromý AI tutor inspirovaný konceptem „2 sigma problem“ psychologa Benjamina Blooma – snaží se napodobit efekt individuální výuky jeden na jednoho. Uživatel zadá téma nebo nahraje vlastní studijní materiály (PDF, text, Markdown) a nástroj z nich vytvoří osnovu k zvládnutí. Výuka probíhá po jednotlivých lekcích: lze označit konkrétní pasáž a zeptat se na ni, odpovědi se zobrazují přímo vedle textu a lze na ně navazovat dalšími dotazy. Po každé lekci uživatel vyplní zpětnou vazbu (co bylo jasné, co ne, co by chtěl probrat dál), podle které je napsána lekce následující. Mezi funkce patří také import projektových souborů a složek jako čitelných stránek zdarma, přičemž AI dotazy k nim jsou už zpoplatněny, dále citace zdrojů u PDF a Markdown souborů včetně čísel stránek, návrhy na navazující témata k učení a osobní přehled studia s kalendářem aktivity, sérií dnů studia a počtem přečtených lekcí a položených otázek. Cenový model je postaven na jednorázových kreditových balíčcích bez předplatného a automatického obnovování – nové účty dostávají 1000 kreditů zdarma platných 365 dní od registrace. Dále lze dokoupit balíčky Starter (3 577 kreditů za 4,90 USD), Standard (14 527 kreditů za 19,90 USD) nebo Pro (29 127 kreditů za 39,90 USD), přičemž zakoupené kredity platí 12 měsíců. Spotřeba kreditů se počítá podle skutečného využití tokenů modelu (1 kredit = 0,01 CNY), API ani otevřený zdrojový kód nejsou v dostupných informacích zmíněny.
+Klíčové vlastnosti
+- Osnova k zvládnutí tématu z textu nebo vlastních souborů
+- Zvýraznění pasáže a dotaz přímo k ní s odpovědí vedle textu
+- Lekce navazující na zpětnou vazbu a zvýrazněné pasáže
+- Citace zdrojů u PDF a Markdown včetně čísel stránek
+Časté dotazy
+Co přesně Bloom umí?
+Z tématu nebo nahraných materiálů (PDF, text, Markdown) vytvoří osnovu a učí po jednotlivých lekcích, které se přizpůsobují zvýrazněným pasážím, dotazům a zpětné vazbě studenta. Na konci osnovy připraví závěrečný test a shrnutí kurzu.
+Kolik Bloom stojí?
+Nový účet dostane 1000 kreditů zdarma platných 365 dní, import vlastních souborů jako čitelných stránek je zdarma vždy. Další kredity se kupují v balíčcích Starter (3 577 kreditů za 4,90 USD), Standard (14 527 kreditů za 19,90 USD) nebo Pro (29 127 kreditů za 39,90 USD), platné 12 měsíců, bez předplatného.
+Jak začít a pro koho je nástroj vhodný?
+Stačí se zaregistrovat bez karty, zadat téma nebo nahrát vlastní materiály a Bloom vygeneruje osnovu a první lekci. Hodí se pro samostudium studentů i kohokoli, kdo se chce systematicky naučit konkrétní téma vlastním tempem.
+Kategorie

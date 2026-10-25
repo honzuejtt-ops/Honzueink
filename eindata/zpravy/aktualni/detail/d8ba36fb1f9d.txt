@@ -1,0 +1,17 @@
+Halv
+Desktopová pracovní plocha pro AI coding agenty (Claude Code, Codex, Kimi, GLM) v jednom okně – lokální funkce zdarma, cloudové směrování modelů za 10 $/měsíc.
+O nástroji
+Halv je open-source (Apache 2.0) desktopová aplikace pro macOS, Windows a Linux, která spojuje Claude Code, Codex, Kimi a GLM do jednoho rozhraní s živými panely a nativními terminály pro paralelní práci agentů. Základní, trvale bezplatná verze bez zkušební doby zahrnuje lokálně běžící nástroje: Crux (open-source index kódu pod MIT licencí pro hledání referencí a volání místo procházení souborů), filtrování výstupu příkazů a kompresi kontextu – vše běží přímo na počítači uživatele a nevyžaduje žádné předplatné Halv. Placená nadstavba Halv Cloud za 10 $/měsíc přidává směrování úkolů mezi modely: koordinační agent vyhodnotí náročnost úkolu a podle kalibrace na benchmarku SWE-rebench rozhodne, zda jej zpracuje levnější nebo výkonnější model, přičemž samotnou práci stále provádějí modely na vlastních předplatných uživatele (Claude, ChatGPT, Moonshot, Z.ai). Cloud verze dále ukládá historii úspor napříč zařízeními a umí rotovat mezi účty při vyčerpání limitu. Podle zveřejněného benchmarku (42 párovaných běhů na reálných repozitářích, 25 průchodů na větev) dosáhl Halv při stejném počtu úspěšných odpovědí o 57,1 % nižší náklady na model oproti samostatnému použití agenta. Nástroj je určen vývojářům a týmům, kteří pracují s více AI coding agenty najednou a chtějí snížit náklady na jejich provoz; stránka i dokumentace jsou pouze v angličtině.
+Klíčové vlastnosti
+- Jedno okno pro Claude Code, Codex, Kimi i GLM
+- Nativní terminály pro paralelní práci agentů
+- Open-source index kódu Crux pro rychlé hledání referencí
+- Filtrování výstupu příkazů a komprese kontextu lokálně
+Časté dotazy
+Co přesně Halv dělá?
+Halv je desktopová aplikace, která spojuje AI coding agenty Claude Code, Codex, Kimi a GLM do jednoho rozhraní s živými panely a terminály pro paralelní práci. Lokálně navíc nabízí index kódu Crux, filtrování výstupu a kompresi kontextu.
+Kolik Halv stojí?
+Základní desktopová aplikace s lokálními funkcemi je trvale zdarma bez zkušební doby. Placená nadstavba Halv Cloud za 10 $ měsíčně přidává chytré směrování úkolů mezi modely a sledování úspor.
+Pro koho je Halv určený a jak začít?
+Nástroj je určen vývojářům a týmům, kteří pracují s více AI coding agenty najednou a chtějí snížit náklady na jejich provoz. Stačí stáhnout open-source aplikaci pro macOS, Windows nebo Linux a připojit vlastní předplatná Claude, ChatGPT, Moonshot nebo Z.ai.
+Kategorie

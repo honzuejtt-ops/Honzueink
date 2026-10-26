@@ -1,0 +1,17 @@
+Ljapunov, Galuškin a Červoněnkis. Trojice pojmenovaná po vědcích tvoří důležitou součást výpočetního zázemí společnosti, které se přezdívá „ruský Google“. V říjnu se ale pozornost od jejich výkonu přesunula k mnohem základnější otázce: Přežily vůbec útoky?
+Yandex nyní tvrdí, že ano. V pondělí 26. října oznámil, že všechny tři superpočítače nechal odvézt. „Byly odvezeny z lokalit, kde se dosud nacházely, a nyní se instalují na nových výpočetních pracovištích,“ sdělila společnost serveru RBK.
+Přesun následuje po ukrajinských úderech na datová centra. Kam přesně stroje zamířily a kdy se znovu naplno rozběhnou, ruská firma neupřesnila.
+Nový domov pro umělou inteligenci
+Všechny tři stroje se na jedné adrese nesejdou, Yandex je podle svého vyjádření rozmístí na oddělených pracovištích. Každý představuje samostatný výpočetní celek, a tak mohou pracovat na různých místech.
+Po spuštění mají znovu pomáhat s provozem firemních služeb. „Budou se také nadále používat k trénování základních jazykových modelů,“ uvedla společnost podle serveru The Moscow Times.
+Nejvýkonnější Červoněnkis podle údajů Yandexu využívá 1592 grafických akcelerátorů Nvidia A100 a 199 terabajtů operační paměti. Jde o rozsáhlý systém navržený pro úlohy strojového učení.
+V listopadu 2021 mu patřilo 19. místo ve světovém žebříčku TOP500. Dnes už má před sebou mnohem více soupeřů: v letošním červnovém vydání skončil na 101. příčce. Pro vývoj umělé inteligence Yandexu však dál představuje důležité zázemí.
+Tři zásahy během několika dnů
+Důvod, proč se kolem superpočítačů objevilo tolik otazníků, sahá na začátek října. V noci ze 7. na 8. října zasáhly drony datové centrum v Sasovu v Rjazaňské oblasti jihovýchodně od Moskvy. V areálu vypukl požár a provoz se zastavil. Právě zde se nacházely Ljapunov a Červoněnkis.
+Následující den přišlo na řadu zařízení v Kalužské oblasti, kde útok vyřadil část infrastruktury. V neděli 11. října pak Yandex oznámil zásah centra ve Vladimirské oblasti východně od Moskvy. Také to muselo zcela přerušit provoz. Uvnitř přitom pracoval třetí superpočítač Galuškin.
+Během několika dnů tak útoky proběhly v obou lokalitách, v nichž měla firma své tři superpočítače.
+Zatímco v případě superpočítačů se čekalo na zprávy, další následky byly vidět téměř okamžitě. Výrazně utichli například boti, kteří pro Yandex procházejí internet, jak Novinky informovaly již dříve. Provoz se propadl na pouhých 0,4 procenta maxima z předchozích dvou týdnů.
+Tito roboti běžně pracují jako neúnavní digitální průzkumníci. Navštěvují stránky, hledají nové články a kontrolují, co se na webu změnilo. Díky tomu může vyhledávač nabízet čerstvé výsledky. Když průzkumníci přestanou chodit, aktualizace se mohou zadrhnout.
+Jak pracují superpočítače
+Superpočítače zabírají na rozdíl od běžných stolních počítačů celé budovy. Jsou sestaveny z tisíců procesorů a mají stejný výkon jako stovky běžných PC. To, co dokáže superpočítač spočítat za jediný den, by trvalo běžnému domácímu PC celý rok.
+Tomu odpovídá také jejich cena. Superpočítače jsou stejně drahé jako luxusně zařízené rodinné domy. Takto výkonné stroje zkoumají lidskou DNA, dešifrují tajné informace nebo počítají pohyb vesmíru.

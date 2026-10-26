@@ -1,0 +1,5 @@
+Spotify naskakuje na (ne)populární trend ověřování, zda lidé využívající rodinné předplatné skutečně žijí spolu na jedné adrese. Ověření bude probíhat přes QR kód a pokud se uživatelé včas neověří, přijde o výhody předplatného a na rok se nebude moci připojit k rodinnému ani Duo předplatnému.
+Za neověření adresy až roční zákaz
+Některým uživatelům se už zobrazuje výzva ke skenování QR kódu ze zařízení správce tarifu. Podle nápovědy Spotify musí oba lidé provést ověření osobně na jednom místě. Zda při ověření bude požadovat také přesnou geolokaci, zatím není nevíme.
+Na potvrzení stejné adresy mají uživatelé sedm dnů. Kdo lhůtu propásne, jeho účet přejde na bezplatný tarif a po dobu jednoho roku se nebude moci připojit k jinému rodinnému ani Duo předplatnému. Jedinou možností bude individuální tarif, který v Česku aktuálně stojí 185 korun měsíčně.
+Podmínka společné adresy platí už delší dobu, Spotify ji však dosud kontrolovalo jen omezeně. Ověřování tak může zkomplikovat život i rodinám, jejichž členové jsou dočasně jinde. Například studenti na kolejích nebo partneři často cestující za prací.

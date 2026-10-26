@@ -1,0 +1,17 @@
+NormalMapAI
+Bezplatný online generátor normálových map s živým 3D náhledem, který z fotky vytvoří normal, height, roughness i AO mapy přímo v prohlížeči.
+O nástroji
+NormalMapAI je bezplatný generátor normálových map běžící přímo v prohlížeči. Stačí nahrát fotku ve formátu JPG, PNG nebo WebP a nástroj okamžně vytvoří normal mapu ve formátu OpenGL nebo DirectX, kterou lze sledovat v živém 3D náhledu na kouli nebo soše pomocí WebGL2 shaderů. Podle důkazu zpracování probíhá lokálně v prohlížeči a fotky se nikam nenahrávají, což je vhodné i pro soukromé či firemní podklady. Kromě samotné normálové mapy nabízí nástroj rozšíření na kompletní sadu PBR map – height, roughness, ambient occlusion, metallic, specular, bump a curvature – a jejich export v jednom ZIP souboru připraveném pro konkrétní enginy jako Unity, Unreal, Godot nebo Blender (včetně balíčků ORM a MetallicSmoothness). Součástí je i sada doplňkových nástrojů: tvorba bezešvých textur, odstranění pozadí do průhledného PNG, úprava velikosti textur na mocninu dvou nebo převod height mapy na normal mapu a naopak. Nástroj je podle dostupných informací určen zejména pro tvorbu herních a 3D textur a je nabízen zdarma bez nutnosti registrace. Rozhraní je v angličtině, API ani open source řešení nejsou v dostupných podkladech zmíněny.
+Klíčové vlastnosti
+- Generuje normal, height, roughness, AO, metallic i specular mapu
+- Živý 3D náhled na kouli či soše s WebGL2 shadery
+- Export kompletní PBR sady v jednom ZIP pro Unity, Unreal, Godot, Blender
+- Tvorba bezešvých textur a odstranění pozadí do průhledného PNG
+Časté dotazy
+Co přesně NormalMapAI umí vytvořit?
+Z nahrané fotky ve formátu JPG, PNG nebo WebP vygeneruje normal mapu (OpenGL či DirectX) a volitelně i celou sadu PBR map – height, roughness, ambient occlusion, metallic, specular, bump a curvature. Výsledek lze sledovat v živém 3D náhledu a stáhnout jako ZIP připravený pro konkrétní herní engine.
+Kolik NormalMapAI stojí?
+Nástroj je zcela zdarma a nevyžaduje registraci ani kartu.
+Pro koho je nástroj vhodný a jak začít?
+Je určen zejména pro tvorbu herních a 3D textur, hodí se tedy pro herní vývojáře a 3D grafiky. Stačí otevřít web, přetáhnout fotku do prohlížeče a rovnou upravovat a exportovat vygenerované mapy.
+Kategorie

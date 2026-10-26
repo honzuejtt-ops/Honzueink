@@ -1,0 +1,17 @@
+Retypit
+Retypit upraví text přímo v obrázku (PNG, JPG, WebP do 20 MB) a zachová původní font, barvu i styl bez Photoshopu.
+O nástroji
+Retypit je online nástroj, který umožňuje upravit text přímo v obrázku bez nutnosti grafického editoru. Stačí nahrát soubor ve formátu PNG, JPG nebo WebP o velikosti do 20 MB – AI automaticky detekuje jednotlivé řádky textu, očísluje je a po kliknutí umožní přepsat jejich obsah. Výsledný text si zachovává původní font, barvu i vizuální styl, zatímco zbytek obrázku zůstává beze změny. Nástroj je určen především lidem bez zdrojového souboru nebo znalosti Photoshopu – hodí se například na úpravu screenshotů, plakátů nebo menu. Platby fungují na principu kreditů, které podle webu nikdy nevyprší – jde tedy o model placení za použití (pay-as-you-go), nikoli o klasické předplatné. Konkrétní výši cen ani počet případných bezplatných kreditů se z dostupných podkladů nepodařilo spolehlivě ověřit, proto je vhodné si aktuální ceník zkontrolovat přímo na webu. Informace o veřejném API ani o open-source licenci nebyly potvrzeny, rozhraní nástroje je v angličtině.
+Klíčové vlastnosti
+- Úprava textu přímo v obrázku bez Photoshopu
+- Automatická detekce a číslování řádků textu
+- Zachování původního fontu, barvy a stylu
+- Podpora formátů PNG, JPG a WebP do 20 MB
+Časté dotazy
+Co přesně Retypit umí?
+Nahrajete obrázek (PNG, JPG nebo WebP do 20 MB) a AI v něm detekuje jednotlivé řádky textu. Po kliknutí na řádek můžete jeho obsah přepsat, přičemž se zachová původní font, barva i styl textu.
+Kolik Retypit stojí?
+Platí se formou kreditů, které podle webu nikdy nevyprší – jde o model pay-as-you-go. Přesnou výši cen ani případné bezplatné kredity se z podkladů nepodařilo ověřit, proto je dobré zkontrolovat aktuální ceník na webu.
+Pro koho je Retypit vhodný a jak začít?
+Je určen lidem bez zdrojového souboru nebo znalosti grafického editoru, kteří potřebují upravit text ve screenshotu, plakátu nebo menu. Stačí nahrát obrázek na web a rovnou upravovat detekované řádky textu.
+Kategorie

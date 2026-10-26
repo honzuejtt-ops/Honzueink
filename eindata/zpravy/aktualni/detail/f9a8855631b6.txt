@@ -1,0 +1,17 @@
+10ML Perfume Finder
+Bezplatný MCP server a API s databází přes 6 000 parfémů pro Claude, ChatGPT a další AI asistenty, bez nutnosti API klíče.
+O nástroji
+10ML Perfume Finder je bezplatný MCP server a fragrance API postavený na 10ML Fragrance Index – databázi 6 019 parfémů od 249 parfumerních domů s pyramidami vůní, akordy, vůňovými rodinami a podobnými či alternativními vůněmi. Připojení funguje přes jednu URL adresu (https://mcp.10ml.com/mcp) bez API klíče a bez registrace, podporováno je Streamable HTTP. Nástroj nabízí podporu pro Claude (dostupné v adresáři konektorů), ChatGPT, Cursor, VS Code, Windsurf i Cline, a lze jej také spustit lokálně jako stdio server přes npm nebo PyPI. K dispozici je 15 read-only nástrojů (např. search_perfumes, get_perfume, compare_perfumes, find_similar_perfumes, recommend_perfumes, explain_note, suggest_layering nebo find_gift) spolu se 6 prompty a REST rozhraním s OpenAPI 3.1 dokumentací pro klienty mimo MCP. Obsah je dostupný v sedmnácti jazycích včetně češtiny a odkazuje na redakčně zpracované průvodce na 10ml.com. Podle benchmarku autorů (40 otázek, 20. října 2026) server odpověděl správně na 39 z 40 dotazů s mediánem odezvy 232 ms, vždy v jednom volání.
+Klíčové vlastnosti
+- Databáze 6 019 parfémů od 249 domů
+- 15 read-only nástrojů jako search_perfumes či compare_perfumes
+- Vyhledání podobných vůní a alternativ (dupes)
+- Pyramidy vůní, akordy a vůňové rodiny u každého parfému
+Časté dotazy
+Co přesně nástroj umí?
+Jde o MCP server a API s databází 6 019 parfémů, které umí hledat podobné vůně, srovnávat parfémy, vysvětlovat jednotlivé vonné noty, navrhovat vrstvení vůní nebo tipovat dárky – nabízí celkem 15 nástrojů a 6 promptů.
+Kolik to stojí?
+Nástroj je zcela zdarma, bez nutnosti API klíče a bez registrace.
+Jak začít a pro koho je nástroj určený?
+Stačí přidat URL https://mcp.10ml.com/mcp jako konektor v Claude, ChatGPT, Cursoru, VS Code, Windsurf nebo Cline, případně spustit lokálně přes npm či PyPI; hodí se pro každého, kdo chce najít parfém, alternativu nebo radu pomocí AI asistenta.
+Kategorie

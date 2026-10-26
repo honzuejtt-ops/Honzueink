@@ -1,0 +1,17 @@
+Vidmoat
+AI video editor, který na pokyn v chatu stříhá, titulkuje a graduje záběry na reálné časové ose, kterou lze dál ručně upravit.
+O nástroji
+Vidmoat je AI video editor založený na principu „delegujte, needitujte“. Uživatel nahraje záběry a slovně (napsáním nebo nadiktováním) zadá požadavek, například „udělej z toho poutavé video pro TikTok“ – agent nástroje poté sám přepne formát plátna na 9:16, přidá titulky synchronizované se zvukem, odstřihne ticho a aplikuje barevnou gradaci. Výsledek vzniká na reálné časové ose, kterou si lze kdykoli prohlédnout a ručně doladit, agent navíc ponechá beze změny vše, co uživatel v zadání nezmínil. Podle dostupných informací rozumí agent obsahu záběrů slovo od slova, plánuje vícekrokové úpravy a kontroluje vlastní práci. Nástroj nabízí bezplatný plán bez nutnosti zadávat platební kartu a registraci do 30 sekund, zmíněna je také možnost napojení přes API. Vidmoat je anglicky lokalizovaný nástroj (rozhraní lze strojově přeložit do mnoha jazyků přes Google Translate, včetně češtiny, ale překlad může obsahovat chyby) a jedná se o zahraniční produkt.
+Klíčové vlastnosti
+- Stříhá, titulkuje a graduje podle textového pokynu
+- Automaticky přepne formát plátna na 9:16 pro TikTok
+- Titulky synchronizované se zvukem
+- Automatické odstřižení tichých pasáží
+Časté dotazy
+Co Vidmoat vlastně umí?
+Na základě slovního zadání (psaného nebo nadiktovaného) agent sám sestříhá záběry, přidá titulky synchronizované se zvukem, odstřihne ticho, aplikuje barevnou gradaci a případně přeformátuje video třeba na 9:16 pro TikTok. Výsledek vznikne na reálné časové ose, kterou lze dál ručně upravit.
+Kolik Vidmoat stojí?
+Nástroj funguje na principu freemium, k dispozici je bezplatný plán bez nutnosti zadávat platební kartu. Konkrétní ceny placených plánů nejsou v podkladech uvedeny.
+Pro koho je Vidmoat a jak začít?
+Hodí se pro tvůrce videí, kteří chtějí ušetřit čas na stříhání a titulkování, například pro sociální sítě. Stačí se zdarma zaregistrovat (trvá asi 30 sekund), nahrát záběry a napsat nebo nadiktovat, co má agent udělat.
+Kategorie

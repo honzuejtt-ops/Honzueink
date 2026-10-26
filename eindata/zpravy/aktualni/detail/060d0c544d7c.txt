@@ -1,0 +1,17 @@
+Video Transcript
+Video Transcript převádí videa z TikToku, Instagramu a YouTube i nahrané soubory na upravitelný přepis s časovými značkami.
+O nástroji
+Video Transcript umožňuje vložit odkaz na TikTok, Instagram Reel či YouTube video, nebo nahrát vlastní audio či video soubor (MP4, MOV, WebM, MP3, M4A, WAV), a získat editovatelný přepis s reálnými časovými značkami. Časování vychází buď z titulků přiložených k videu, nebo z rozpoznávání řeči – pokud reálné časování není k dispozici, nástroj nabídne jen text bez vytváření titulkových souborů. Přepis lze procházet po řádcích, opravovat jednotlivá slova a přeskakovat na konkrétní moment ve videu, k dispozici je i volitelné označení jednotlivých mluvčích. Výstup je možné stáhnout jako SRT nebo VTT titulky pro editory typu CapCut či Premiere a YouTube, případně jako TXT nebo Markdown text. Import vlastních SRT/VTT titulků ke zpracování je zdarma a nevyužívá kredit. Před spuštěním přepisu nástroj zobrazí odhadovanou délku a počet minut, které úloha spotřebuje, a pokud se video nepodaří zpracovat, rezervované minuty se vrátí zpět. Nové účty dostávají jednorázově 10 minut zdarma. Dále jsou k dispozici placené měsíční tarify Starter za 9,90 $ (300 minut měsíčně), Pro za 19,90 $ (900 minut) a Studio za 39,90 $ (1800 minut), uvedené jako zaváděcí ceny se slevou 33 %. Nástroj zmiňuje API a plánované AI funkce typu shrnutí a odpovědí na otázky k videu.
+Klíčové vlastnosti
+- Přepis z TikToku, Instagramu, YouTube i nahraných souborů
+- Reálné časové značky z titulků nebo rozpoznávání řeči
+- Export do SRT, VTT, TXT nebo Markdown
+- Volitelné označení jednotlivých mluvčích
+Časté dotazy
+Co nástroj vlastně umí?
+Z odkazu na TikTok, Instagram Reel či YouTube video nebo z nahraného audio/video souboru vytvoří upravitelný přepis s časovými značkami, který lze editovat po řádcích a stáhnout jako titulky nebo text.
+Kolik to stojí?
+Nové účty dostanou jednorázově 10 minut zdarma, import vlastních SRT/VTT titulků je vždy zdarma. Placené tarify začínají na 9,90 $ měsíčně za 300 minut, dále 19,90 $ za 900 minut a 39,90 $ za 1800 minut.
+Jak začít a pro koho je nástroj určený?
+Stačí vložit odkaz na video nebo nahrát soubor, nástroj ukáže délku a potřebné minuty před spuštěním. Hodí se pro tvůrce obsahu, kteří chtějí titulky nebo chtějí přepis videa znovu využít jako text.
+Kategorie

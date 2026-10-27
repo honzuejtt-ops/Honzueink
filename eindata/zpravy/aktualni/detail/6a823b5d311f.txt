@@ -1,0 +1,14 @@
+Intel dohodu potvrdil, k ceně se však nevyjádřil. Transakce Intelu umožní nabízet kompletní řešení pro kvantové počítače, zahrnující jak hardware, tak software potřebný k provozu kvantových systémů.
+Akvizice také rozšíří nabídku Intelu o kvantové procesory, vedle centrálních a grafických procesorů, které už firma vyrábí.
+Společnost Classiq, která získala od investorů více než 200 milionů USD (4,3 miliardy korun), vyvíjí software usnadňující programování kvantových počítačů. Má zhruba 130 zaměstnanců.
+Zákazníky jsou BMW i AT&T
+Mezi zákazníky patří podle Bloombergu automobilka BMW a telekomunikační společnost AT&T, kterým firma Classiq poskytuje specializované nástroje využívající umělou inteligenci. Nástroje klientům pomáhají ověřovat, jak by mohli kvantové počítače využít ve svém podnikání.
+Firma Classiq by měla i po akvizici pokračovat ve vývoji softwaru, který umožňuje vytvářet programy použitelné na různých typech kvantových počítačů, včetně zařízení od konkurentů Intelu. Transakci ještě musejí schválit regulační orgány, dokončena by mohla být v první polovině příštího roku.
+Intel býval největším světovým výrobcem čipů. Nyní si chce zajistit, že nezmešká příležitosti v oblasti kvantové technologie, která představuje potenciálně velký trh pro polovodičový průmysl.
+Generální ředitel Lip-Bu Tan se snaží získat zpět pozice, které firma ztratila ve prospěch konkurentů v odvětví výpočetní techniky pro AI.
+Jak fungují kvantové počítače?
+Kvantové počítače představují neuvěřitelný průlom v oblasti výpočetních schopností a dle očekávání zcela změní způsob, jakým řešíme extrémně složité výpočetní problémy.
+Na rozdíl od tradičních počítačů, které pracují s binárními bity, kvantové počítače využívají tzv. qubity. Ty umožňují manipulovat s kvantovými jevy, jako je superpozice a kvantová provázanost. Tato jedinečná vlastnost jim umožňuje efektivně řešit problémy, které jsou pro klasické počítače příliš náročné.
+Mezi takové mohou patřit optimalizační úlohy pro řešení elektronické struktury nových materiálů, řízení dopravy či přístavů.
+V současnosti jsou identifikovány další možnosti uplatnění, které lze najít téměř ve všech vědeckých oblastech. Mimo jiné v automobilovém průmyslu, při vývoji nových elektrických baterií, v energetice, finančnictví, farmacii, kvantové chemii, kryptografii, ale také v kvantovém strojovém učení a mnoha dalších.
+Kvantové počítače mají potenciál dramaticky ovlivnit vědecký výzkum a technologický rozvoj ve všech oblastech, od fyziky a chemie po umělou inteligenci a bioinformatiku. Google se již dříve pochlubil, že jeho kvantový procesor Sycamore detekoval vzorce v řadách zdánlivě náhodných čísel za 200 vteřin, zatímco Summit od IBM by na stejný úkol potřeboval 10 000 let.

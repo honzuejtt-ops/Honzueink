@@ -1,0 +1,11 @@
+Nejdřív malý tablet s OLED displejem a odolností proti vodě, teď profesionální notebook s novým čipem. Zájemci o techniku mají co prohlížet ještě předtím, než se novináři vůbec usadí na chystané akci.
+Na středu 28. října americký technologický gigant svolal do Los Angeles setkání s médii nazvané Apple Experience. Heslem „Pro and tell“ naznačuje zaměření na zařízení pro náročnější zákazníky. Nejde ale o potvrzenou klasickou veřejně přenášenou keynote. Podle dosavadních informací má akce nabídnout také možnost vyzkoušet si nová zařízení.
+Která konkrétně? To firma zatím neoznámila. Spekuluje se mimo jiné o prvním MacBooku s dotykovou obrazovkou. Úterní premiéra běžného 14palcového MacBooku Pro s M6 tak otázku, co dalšího bude ve středu k vidění, ještě přiživila.
+Více síly pod známým víkem
+Hlavní změna nového MacBooku Pro se odehrála uvnitř. Čip M6 má 12 procesorových a 12 grafických jader, v obou případech o dvě více než předchozí M5. Apple slibuje až o 30 procent vyšší grafický výkon a až o čtvrtinu rychlejší zpracování vybraných úloh umělé inteligence.
+V praxi má novinka zrychlit například úpravy fotografií, práci s trojrozměrnou grafikou, střih videa nebo vývoj aplikací. Přínos záleží na konkrétním programu a činnosti. Uvedená čísla pocházejí z měření Applu, skutečný posun ukážou až nezávislé testy.
+„S výkonným čipem M6 posouváme výkon na další úroveň. Zrychlujeme procesor i grafiku a přidáváme ještě výkonnější možnosti pro umělou inteligenci přímo v zařízení,“ uvedla viceprezidentka Applu pro vývoj hardwaru Shelly Goldbergová.
+Základní sestava nabídne 16 GB jednotné paměti, kterou společně využívají procesor i grafika, a 1TB SSD. Paměť lze navýšit na 24 nebo 32 GB, úložiště až na 4 TB.
+Vlastní AI i bez odesílání dat
+Právě umělá inteligence patří k hlavním lákadlům nového čipu. Vedle akcelerátorů v grafických jádrech dostal M6 také dvojitý 16jádrový Neural Engine, tedy specializované jednotky pro výpočty spojené s AI.
+Nemusí přitom jít jen o funkce, které do systému přidává samotný Apple. Výkon se hodí také pro aplikace upravující fotografie či video nebo pro spouštění vlastních jazykových modelů přímo v notebooku.

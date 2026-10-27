@@ -1,0 +1,17 @@
+Proc-CLI
+CLI nástroj pro správu procesů na macOS, Linuxu a Windows – najde a ukončí proces podle portu, PID, jména nebo cesty.
+O nástroji
+Proc-CLI je sémantický nástroj příkazové řádky pro správu procesů, určený vývojářům a DevOps jako náhrada klasických příkazů lsof, ps aux | grep nebo kill. Umožňuje cílit procesy podle portu, PID, jména nebo cesty k souboru a podporuje příkazy jako list, info, ports, tree, watch, kill, freeze/thaw nebo orphans. Například příkaz „proc kill :3000“ ukončí proces naslouchající na portu 3000 (SIGKILL), přičemž se nejprve zeptá na potvrzení a volba --dry-run umožňuje náhled bez provedení akce. Nástroj je popisován jako „agent-friendly“ – každý příkaz dokáže vypsat výstup ve formátu JSON a používá konzistentní exit kódy (0 úspěch, 1 chyba, 2 nenalezeno, 3 odepřen přístup, 4 neplatný vstup), díky čemuž jej mohou využívat i AI coding agenti jako Claude Code, Codex, Cursor nebo Gemini CLI. Proc-CLI je napsaný v jazyce Rust, licencovaný pod MIT a jeho zdrojový kód je dostupný na GitHubu. Instalovat jej lze přes Homebrew, npm, cargo, Scoop, Nix nebo Docker, aktuální verze je 1.14.5. Jde o open source nástroj distribuovaný zdarma přes standardní balíčkovací manažery, žádné placené tarify nebyly v dostupných materiálech zmíněny.
+Klíčové vlastnosti
+- Cílení procesů podle portu, PID, jména nebo cesty
+- Příkazy list, info, ports, tree, watch, kill, freeze/thaw, orphans
+- Potvrzení před ukončením procesu a režim --dry-run pro náhled
+- JSON výstup a konzistentní exit kódy pro AI agenty
+Časté dotazy
+Co přesně Proc-CLI umí?
+Je to příkazová řádka pro správu procesů na macOS, Linuxu a Windows – najde a ukončí proces podle portu, PID, jména nebo cesty k souboru, zobrazí jeho rodičovský proces (tree) nebo ho dočasně zmrazí (freeze/thaw).
+Kolik Proc-CLI stojí?
+Je to open source nástroj pod MIT licencí, distribuovaný zdarma přes standardní balíčkovací manažery jako Homebrew, npm nebo cargo.
+Pro koho je Proc-CLI určený a jak začít?
+Je určený vývojářům a DevOps jako náhrada za lsof, ps aux | grep nebo kill, a díky JSON výstupu a exit kódům ho zvládnou používat i AI coding agenti jako Claude Code nebo Cursor. Stačí nástroj nainstalovat přes zvolený balíčkovací manažer a spustit příkaz, například „proc kill :3000“.
+Kategorie

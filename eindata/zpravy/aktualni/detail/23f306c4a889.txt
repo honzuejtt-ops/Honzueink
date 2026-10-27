@@ -1,0 +1,17 @@
+Pixelrope
+Pixelrope je AI generátor obrázků a videí s 13 předními modely (např. Nano Banana Pro, GPT Image 2.5, Seedance 2.5, Kling 4) v jednom kreditovém systému.
+O nástroji
+Pixelrope spojuje 13 vedoucích AI modelů pro generování obrázků a videí od Google, OpenAI, ByteDance, Krea, Black Forest Labs, Kling AI, Alibaba a MiniMax do jedné platformy s jednotným kreditovým zůstatkem. Mezi obrazové modely patří Nano Banana Pro, GPT Image 2.5, Nano Banana 2, Seedream 5, Krea V3 nebo FLUX 3 Klein, u videí lze využít Seedance 2.5, Seedance 2.0, Kling 4, Wan 3.0, FLUX 3 Max, FLUX 3 nebo MiniMax H3 Max. Jeden kredit odpovídá 0,01 USD z ceníkové ceny modelu, generování obrázků začíná na 1 kreditu (do 30 kreditů) a videa od 25 kreditů (až do 2 100 kreditů) podle modelu, délky a rozlišení – přesná cena se zobrazí před spuštěním. Nepovedené, zablokované nebo zrušené úlohy jsou automaticky plně vráceny na kredit. Nové účty získají po potvrzení e-mailu 30 kreditů zdarma bez nutnosti zadávat platební kartu, placené plány začínají na 19,99 USD měsíčně za 900 kreditů. Rozhraní je v angličtině.
+Klíčové vlastnosti
+- 13 obrazových a video modelů v jednom kreditu
+- Modely od Google, OpenAI, ByteDance, Kling AI a dalších
+- Obrázky od 1 kreditu, videa od 25 kreditů
+- Automatické vrácení kreditů za nepovedené úlohy
+Časté dotazy
+Co Pixelrope umí?
+Generuje obrázky a videa pomocí 13 předních AI modelů (Nano Banana Pro, GPT Image 2.5, Seedance 2.5, Kling 4 a dalších) v jednom kreditovém systému, vše z jednoho účtu.
+Kolik Pixelrope stojí?
+Obrázky stojí 1 až 30 kreditů, videa 25 až 2 100 kreditů podle modelu, délky a rozlišení; placené plány začínají na 19,99 USD měsíčně za 900 kreditů.
+Jak začít a pro koho je Pixelrope?
+Stačí si založit účet a potvrdit e-mail, čímž získáte 30 kreditů zdarma bez nutnosti zadávat kartu. Vhodné pro tvůrce obsahu, kteří chtějí vyzkoušet více AI modelů z jednoho místa.
+Kategorie

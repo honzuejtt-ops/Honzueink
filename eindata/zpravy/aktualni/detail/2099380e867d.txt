@@ -1,0 +1,14 @@
+Napsat chatbotu otázku a počkat na odpověď je dnes pro řadu lidí běžnou součástí dne. Meta ale sází na to, že příští krok bude podstatně zajímavější. Místo rady, jak něco udělat, dostaneme pomocníka, který se do práce rovnou pustí.
+Jmenuje se Muse a v plánech šéfa Mety Marka Zuckerberga má zásadní místo. Firma jej představila už v září. Nyní chce jeho možnosti dál rozvíjet a rozšiřovat spolupráci s Nvidií, na jejíž infrastruktuře modely a agenti Muse běží.
+Cílem je nabídnout „osobní superinteligenci“ miliardám uživatelů služeb Mety. Nejde tedy o premiéru nového asistenta, ale o další krok k tomu, aby podobní pomocníci zvládali více práce a mohlo je využívat stále více lidí.
+Od povídání k vyřizování
+„Prostřednictvím Muse přinášíme osobní superinteligenci všem. Těší nás, že můžeme dál spolupracovat s Nvidií a poskytovat miliardám lidí ty nejlepší osobní agenty a nejpokročilejší modely,“ uvedl Zuckerberg, zakladatel a generální ředitel Mety.
+Rozdíl mezi chatbotem a AI agentem se nejlépe ukáže na každodenních úkolech. Zatímco chatbot může poradit s organizací dne nebo připravit text zprávy, agent má s povolením uživatele pracovat přímo s příslušnými službami a jednotlivé kroky vykonávat.
+Podle agentury Reuters může Muse přistupovat k e-mailu, kalendáři i aplikacím pro platby, zdraví, nakupování a chytrou domácnost. Uživatelé přitom mohou udělený přístup kdykoliv odvolat.
+Muse, který Meta interně označuje jako Hatch, se podle Reuters inspiroval AI agentem OpenClaw s otevřeným zdrojovým kódem. Ambicí je propojit pomocníka se službami, které člověk používá, a umožnit mu plnit úkoly napříč nimi.
+Obavy z neomezené volnosti nejsou namístě. Meta uvádí, že před citlivými kroky, například odesláním e-mailu nebo uskutečněním nákupu, si Muse vyžádá souhlas člověka. Uživatel také určuje, ke kterým službám pomocníka připojí a jaká oprávnění mu poskytne.
+Muse podle Mety běží ve vlastním odděleném virtuálním počítači v cloudu. Lidé s ním mohou komunikovat prostřednictvím jeho aplikace nebo WhatsAppu. Při zářijovém představení firma oznámila zavádění v USA, termín dostupnosti v Česku není známý.
+Podobně budoucnost práce s počítači popisuje i šéf Nvidie Jensen Huang. „AI agenti představují nový způsob práce s počítači – software, který rozumí našim cílům, uvažuje, používá nástroje a plní úkoly za nás,“ uvedl zakladatel a generální ředitel společnosti.
+„Mění se tím způsob, jakým počítače používáme: od ovládání aplikací přecházíme ke spolupráci s inteligentními agenty,“ dodal.
+Výkonnější zázemí
+Aby takový pomocník mohl sloužit obrovskému počtu lidí, potřebuje odpovídající výpočetní zázemí. Meta a Nvidia proto chtějí společně optimalizovat trénování i provoz modelů Muse. Cílem je vyšší výkon a zároveň nižší celkové náklady.

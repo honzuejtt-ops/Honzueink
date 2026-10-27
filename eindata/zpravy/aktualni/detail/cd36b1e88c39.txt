@@ -1,0 +1,17 @@
+Chexlow
+Chexlow je AI nákupní asistent, který porovnává ceny, slevy a skladovou dostupnost produktů napříč internetovými obchody a butiky.
+O nástroji
+Chexlow pomáhá najít nejlepší ceny porovnáváním nabídek z více internetových obchodů a luxusních butiků najednou. Zákazník může popsat hledaný produkt a rozpočet v přirozenojazyčném AI rozhraní na chexlow.com/ai, které na základě toho navrhne vhodné produkty. Katalog pokrývá přes 294 000 produktů v kategoriích jako móda (přes 234 000 položek), domácnost a zahrada, krása a zdraví, sport a outdoor, potraviny nebo automotive, a na webu lze sledovat i aktuální propady cen u konkrétních položek včetně počtu obchodů, kde je produkt nabízen. Chexlow a web Housnap (zaměřený na domácí spotřebiče, počítače a elektroniku) jsou obchody provozované na jedné sdílené platformě stejným provozovatelem, nikoli nezávislé společnosti. Housnap u vybraných nabídek umožňuje nákup přímo na webu, jinak odkazy u prodejců vedou k dokončení nákupu přímo u daného obchodu – některé z těchto odkazů jsou affiliate, takže Chexlow z prokliku může získat provizi. Přístup k samotnému AI nákupnímu rozhraní je zdarma, ceny u jednotlivých produktů se liší podle prodejce. Ceny, dostupnost, doprava a regionální pokrytí se mezi obchody mohou lišit a nástroj negarantuje nejnižší cenu ani vhodnost nabízeného produktu. Z dostupných informací nevyplývá, že by Chexlow nabízel veřejné API nebo byl open source, rozhraní webu je v angličtině.
+Klíčové vlastnosti
+- Porovnání cen napříč internetovými obchody a butiky
+- Přirozenojazyčné AI vyhledávání produktů podle rozpočtu
+- Katalog přes 294 000 produktů v několika kategoriích
+- Sledování aktuálních cenových propadů u produktů
+Časté dotazy
+Co přesně Chexlow umí?
+Chexlow je AI nákupní asistent, který porovnává ceny, slevy a skladovou dostupnost produktů napříč internetovými obchody a luxusními butiky. Stačí popsat hledaný produkt a rozpočet v AI rozhraní na chexlow.com/ai a nástroj navrhne vhodné produkty z katalogu přes 294 000 položek.
+Kolik Chexlow stojí?
+Přístup k AI nákupnímu rozhraní je zdarma, samotné ceny produktů se ale liší podle konkrétního prodejce, u kterého nákup probíhá.
+Pro koho je Chexlow vhodný a jak začít?
+Je vhodný pro kohokoliv, kdo chce rychle porovnat ceny napříč módou, domácností, krásou, sportem nebo automotive kategoriemi – stačí zadat dotaz na chexlow.com/ai a proklikem dokončit nákup přímo u vybraného obchodu.
+Kategorie

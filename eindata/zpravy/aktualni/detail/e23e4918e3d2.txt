@@ -1,0 +1,17 @@
+UIPalooza
+Veřejná výzkumná galerie, kde lze porovnat, jak stejné zadání designu rozhraní zpracují různé AI modely jako GLM 5.2, Claude Code či Codex.
+O nástroji
+UIPalooza je volně přístupný výzkumný projekt, který srovnává „designový vkus“ AI modelů. Různým modelům zadá stejný brief a vedle sebe zobrazí výsledná rozhraní – desktopové i mobilní náhledy, dobu běhu a počet použitých tokenů. Aktuálně obsahuje 5 modelů a 6 dovedností (skills), přičemž výsledky lze filtrovat podle modelu, skillu i stavu (publikováno, s náhledem apod.) a vybrané návrhy porovnat vedle sebe. Každý běh probíhá v izolovaném prostředí s verzovaným zadáním, takže je možné zpětně dohledat, jaký model, agent a nastavení výsledek vytvořily. Kontroly se zaměřují na funkčnost a přístupnost (interakce v prohlížeči), samotné hodnocení designového vkusu je ale ponecháno na uživateli – nástroj dává „jen“ evidenci, ne žebříček kvality. Možnost nahrát vlastní brief a nechat si podle něj porovnat návrhy modelů zatím není spuštěna – web nabízí pouze registraci e-mailu pro early access k této funkci. Informace o cenách, API přístupu ani open source licenci nejsou na webu uvedeny, prohlížení galerie a výsledků je ale zdarma.
+Klíčové vlastnosti
+- Porovnání 5 AI modelů na stejném designovém zadání
+- Desktopové i mobilní náhledy vedle sebe
+- Filtrování podle modelu, dovednosti (skillu) a stavu výsledku
+- Zobrazení doby běhu a počtu použitých tokenů
+Časté dotazy
+Co UIPalooza vlastně umí?
+Zadá stejný designový brief různým AI modelům (např. GLM 5.2, Claude Code, Codex) a zobrazí jejich výsledná rozhraní vedle sebe včetně desktopových a mobilních náhledů, doby běhu a počtu tokenů.
+Kolik stojí používání UIPalooza?
+Prohlížení galerie a výsledků je zdarma, informace o placených plánech ani API přístupu web neuvádí.
+Jak mohu začít nástroj používat?
+Stačí otevřít web a procházet galerii srovnání modelů a skillů; možnost nahrát vlastní brief zatím není spuštěna, lze se jen zaregistrovat e-mailem pro early access.
+Kategorie

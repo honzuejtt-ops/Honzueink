@@ -1,0 +1,17 @@
+LTX-23 Video Studio
+Generátor AI videí z textu či obrázku na bázi modelu LTX-2.5 s multi-shot scénami, 4K HDR výstupem a synchronizovaným zvukem.
+O nástroji
+LTX-2.5 Video Studio je webová platforma pro generování videa z textového nebo obrazového promptu pomocí otevřeného modelu LTX-2.5. Nabízí nativní propojení více záběrů (multi-shot) se zachováním postav, prostředí a osvětlení napříč střihy, čistší a přirozenější pohyb díky novému dekodéru, automatické přizpůsobení délky klipu a generování ve vysokém rozlišení včetně 4K HDR a RAW workflow. Součástí jsou i hotové šablony promptů a návody k nastavení v ComfyUI. Služba funguje na měsíčním kreditovém předplatném: tarif Basic za 19,9 $/měsíc (100 kreditů, cca 20 videí v LTX-2.5 Fast), Standard za 39,9 $/měsíc (220 kreditů) a Pro za 89,9 $/měsíc (500 kreditů), vše s možností ročního předplatného se slevou až 33 %. Všechny tarify zahrnují text-to-video i image-to-video, synchronizovaný zvuk a rozlišení až 4K. Bezplatná verze není uvedena. Model je dostupný i jako open-weights řešení pro lokální nasazení, fine-tuning nebo spuštění na vlastním hardwaru, API ani propojení s API není v dostupných informacích zmíněno. Platforma je nezávislá a není spojena se společnostmi LTX ani Lightricks.
+Klíčové vlastnosti
+- Multi-shot scény se zachováním postav a osvětlení
+- 4K HDR výstup s RAW workflow pro barevné korekce
+- Synchronizovaný zvuk ke generovanému videu
+- Automatické přizpůsobení délky klipu akci
+Časté dotazy
+Co LTX-23 Video Studio přesně umí?
+Generuje video z textového nebo obrazového promptu pomocí modelu LTX-2.5, umí propojit více záběrů do souvislého příběhu se zachováním postav a osvětlení, automaticky volí délku klipu a nabízí výstup až ve 4K HDR se synchronizovaným zvukem.
+Kolik stojí používání nástroje?
+Služba je placená formou měsíčního kreditového předplatného: Basic za 19,9 $ (100 kreditů), Standard za 39,9 $ (220 kreditů) a Pro za 89,9 $ (500 kreditů), při ročním předplatném sleva až 33 %.
+Pro koho je nástroj vhodný a jak začít?
+Hodí se pro tvůrce videoobsahu od příležitostných projektů po vyšší objem produkce; stačí popsat scénu v promptu a vybrat tarif podle počtu potřebných videí, k dispozici jsou i hotové šablony promptů a návody pro ComfyUI.
+Kategorie

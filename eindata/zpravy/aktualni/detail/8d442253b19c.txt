@@ -1,0 +1,17 @@
+Lineora
+Mobilní aplikace pro iOS a Android, která z vlastních fotek vytváří omalovánky, kresby a pracovní listy k tisku.
+O nástroji
+Lineora je aplikace pro iOS a Android, která promění nahranou fotografii v umělecké dílo nebo tiskovou aktivitu. Uživatel si může vybrat z 59 stylů – například uhel, akvarel, anime, pixel art, olejomalbu, ukiyo-e nebo mandalu – a výsledek porovnat s původní fotkou. Kromě uměleckých stylů nabízí aplikace šest aktivit k vytištění: malování podle čísel, bludiště, puzzle, obtahování, mozaiku a hledání rozdílů, vše exportovatelné do PDF. Podle popisu aplikace lze kresby získat zdarma sledováním reklam, případně zakoupit kredity, které podle uvedených informací nevyprší a nejsou vázané na předplatné. Knihovnu vytvořených obrázků je možné přenést na jiné zařízení pomocí kódu pro obnovení. Rozhraní aplikace je dostupné v češtině.
+Klíčové vlastnosti
+- 59 výtvarných stylů (uhel, akvarel, anime, pixel art aj.)
+- 6 tiskových aktivit – bludiště, puzzle, mozaika, malování podle čísel
+- export hotových děl do PDF k tisku
+- přenos knihovny obrázků mezi zařízeními přes kód obnovení
+Časté dotazy
+Co přesně Lineora umí vytvořit z mé fotky?
+Z nahrané fotografie vytvoří umělecké dílo v jednom z 59 stylů (např. akvarel, anime, pixel art, mandala) nebo tiskovou aktivitu jako omalovánku, bludiště, puzzle či malování podle čísel, vše exportovatelné do PDF.
+Kolik Lineora stojí?
+Aplikace funguje na kredity, které lze získat zdarma sledováním reklam nebo dokoupit – zakoupené kredity nevyprší a nejsou vázané na žádné předplatné.
+Jak začít a přijdu o výtvory při výměně telefonu?
+Stačí stáhnout aplikaci z App Storu nebo Google Play a nahrát fotku; knihovnu vytvořených obrázků lze následně přenést na jiné zařízení pomocí kódu pro obnovení.
+Kategorie

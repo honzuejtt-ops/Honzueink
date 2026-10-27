@@ -1,0 +1,17 @@
+airapvideo
+Generátor promění dvě fotografie ve 10sekundové rapové video ve vertikálním formátu pro TikTok, Reels nebo Shorts.
+O nástroji
+Airapvideo je nástroj, který ze dvou portrétních fotografií vytvoří krátké rapové duo video. Nejprve odstraní pozadí obou fotografií a umístí obě osoby na společné pódium pomocí modelu Nano Banana, poté scénu animuje pomocí MiniMax H3 Max Turbo podle promptu zaměřeného na rapové vystoupení s pohyby hlavy a gesty. Přesná synchronizace rtů ani konkrétní skladba nejsou garantovány, protože závisí na výstupu video modelu. Výsledné video má pevnou délku 10 sekund ve vertikálním formátu 9:16 a je určeno ke stažení jako MP4 s audiem. Služba nevyžaduje přihlášení ani instalaci aplikace, nahrávání fotek je zdarma, kredity se čerpají až při generování videa a v případě neúspěšného renderu se kredity vrací zpět na účet. Platba probíhá formou jednorázových balíčků bez předplatného: Starter Pack za 9,9 USD za jedno video, Standard Pack za 19,9 USD za tři videa a Pro Pack za 29,9 USD za pět videí, přičemž jedno video stojí 440 kreditů. Bezplatná verze generování videa není k dispozici, API ani open source řešení nejsou zmíněny.
+Klíčové vlastnosti
+- Rozpoznání a vystřižení osob ze dvou fotek
+- Automatické umístění obou osob na společné pódium
+- Animace pomocí modelu MiniMax H3 Max Turbo
+- Výstup 10sekundové video 9:16 s hudbou a vokály
+Časté dotazy
+Co přesně airapvideo umí vytvořit?
+Ze dvou portrétních fotografií vytvoří 10sekundové rapové duo video ve vertikálním formátu 9:16 s automaticky vygenerovanou hudbou a vokály, vhodné pro TikTok, Reels nebo Shorts.
+Kolik airapvideo stojí?
+Platí se jednorázovými balíčky bez předplatného: Starter Pack 9,9 USD za jedno video, Standard Pack 19,9 USD za tři videa nebo Pro Pack 29,9 USD za pět videí, jedno video stojí 440 kreditů.
+Jak začít a pro koho je nástroj určený?
+Stačí nahrát dvě ostré portrétní fotografie bez nutnosti registrace, kliknout na Create a během 3–5 minut získat hotové MP4 video ke stažení; vhodné pro přátele, páry nebo rodinné video vtípky.
+Kategorie

@@ -1,0 +1,17 @@
+Grigora
+Grigora je AI nástroj pro tvorbu webů, e-shopů, blogů a newsletterů na základě textového popisu zadaného uživatelem.
+O nástroji
+Grigora je all-in-one CMS platforma, která umožňuje vytvořit web pouhým popisem představy – stačí napsat, jaký web má Grigora vybudovat, a nástroj navrhne design, který lze dále upravovat. Podporuje vznik online obchodů, webů pro místní podniky, newsletterů i portfolií. Služba nabízí 14denní bezplatnou zkušební dobu, poté je zpoplatněna od 12 USD měsíčně při roční fakturaci, s možností kdykoliv zrušit. Podle dostupných hodnocení dosahuje Grigora 4,6 bodu na G2 a 4,8 bodu na Trustpilotu a podle uváděných údajů na ní bylo publikováno již tisíce webů. Informace o API ani o otevřeném zdrojovém kódu nejsou k dispozici, nástroj je pouze v angličtině.
+Klíčové vlastnosti
+- Tvorba webu na základě textového popisu
+- Podpora e-shopů, webů firem, newsletterů i portfolií
+- AI návrh designu s možností dalších úprav
+- All-in-one CMS platforma pro správu webu
+Časté dotazy
+Co přesně Grigora umí vytvořit?
+Na základě textového popisu dokáže vygenerovat design webu, e-shopu, newsletteru nebo portfolia, který si uživatel dále upravuje.
+Kolik Grigora stojí?
+K dispozici je 14denní bezplatná zkušební doba, poté placené plány od 12 USD měsíčně při roční fakturaci, zrušit lze kdykoliv.
+Pro koho je Grigora vhodná a jak začít?
+Hodí se pro majitele malých firem, e-shopů i tvůrce obsahu, kteří chtějí web bez programování – stačí popsat představu a Grigora návrh webu vytvoří.
+Kategorie

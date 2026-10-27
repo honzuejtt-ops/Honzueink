@@ -1,0 +1,17 @@
+TubeTube
+AI generátor videí, který z textu písně nebo příběhu automaticky vytvoří hudbu, scény a sestříhané video.
+O nástroji
+TubeTube je nástroj pro tvorbu videí ze slov – stačí vložit text písně nebo příběh a systém napíše hudbu, vygeneruje osm i více scén, sesynchronizuje titulky se zvukem a vše sestříhá do hotového videa během přibližně 15 minut. K dispozici je 113 grafických stylů (např. Pixar-style 3D, watercolor storybook, claymation, anime pastel) a postavy zůstávají vizuálně konzistentní napříč scénami díky generování s kontextem předchozích záběrů. Nástroj umí pracovat i s vlastním nahraným MP3 souborem, ze kterého vytvoří coververzi videa. Proces je rozdělen do deseti kroků – od hudby přes storyboard, obrázky scén, animaci jednotlivých scén až po finální sestřih se zvukovou stopou. Podporováno je 14 generačních enginů včetně Kling 3 a Veo 3.1, přičemž uživatel vidí průběžný odhad spotřeby kreditů (hudba, obrázky, videa scén, náhledový obrázek, přepis) ještě před spuštěním generování. Výsledná videa lze stahovat ve formátu 16:9 a nástroj nabízí API pro vytváření a stahování videí přímo z kódu. Nový účet získá 1 000 kreditů zdarma ve většině zemí s platností 7 dní, bez nutnosti zadávat platební kartu. Dále jsou dostupné měsíční tarify se zahrnutými kredity, které lze kdykoliv dokoupit – platí se pouze za skutečně vyrobený obsah, cena se pohybuje od 0,01 USD za jednotku produkce.
+Klíčové vlastnosti
+- Generuje hudbu, scény a titulky z textu písně či příběhu
+- 113 grafických stylů včetně Pixar 3D a akvarelu
+- Konzistentní postavy napříč scénami díky kontextu
+- Podpora 14 generačních enginů (Kling 3, Veo 3.1)
+Časté dotazy
+Co TubeTube přesně umí vytvořit?
+Z vloženého textu písně nebo příběhu automaticky složí hudbu, vygeneruje osm i více scén v jednom z 113 grafických stylů a sestříhá je do hotového videa ve formátu 16:9 přibližně za 15 minut.
+Kolik TubeTube stojí?
+Nový účet získá ve většině zemí 1 000 kreditů zdarma na 7 dní bez nutnosti karty, dále jsou dostupné měsíční tarify se zahrnutými kredity a platí se jen za skutečně vyrobený obsah od 0,01 USD za jednotku produkce.
+Pro koho je TubeTube vhodný a jak začít?
+Hodí se pro tvůrce dětských písniček, pohádek, hudebních videí nebo YouTube obsahu – stačí vložit text nebo vlastní MP3, vybrat styl a nechat nástroj vygenerovat finální video.
+Kategorie

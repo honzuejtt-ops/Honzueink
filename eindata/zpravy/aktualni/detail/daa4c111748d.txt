@@ -1,0 +1,17 @@
+Doc2Form
+Nástroj pomocí AI (Gemini) převede PDF, Word dokument nebo naskenovaný formulář na nativní Google Formulář ve vašem Disku do 60 sekund.
+O nástroji
+Doc2Form umožňuje nahrát PDF (i naskenované), Word dokument nebo fotografii formuláře, případně popsat požadovaný formulář vlastními slovy. AI model Gemini z dokumentu rozpozná jednotlivé otázky, typy polí, možnosti odpovědí i rozdělení do sekcí a pomocí Google Forms API vytvoří odpovídající nativní Google Formulář přímo ve vašem Google Disku, kde jej lze dál upravovat, sdílet nebo propojit s Google Sheets. Nástroj je zaměřen i na hůře čitelné dokumenty – díky AI vidění zvládá i staré skeny či fotografie formulářů, což ocení například kliniky, agentury nebo úřady digitalizující papírové dokumenty. Nahrané soubory slouží pouze k extrakci struktury a poté jsou zahozeny, ukládá se jen název a odkaz na výsledný formulář, což je vhodné i pro citlivější dokumenty z HR, práva či zdravotnictví. První vytvořený formulář je zdarma bez nutnosti zadávat platební kartu, další formuláře se hradí formou kreditových balíčků od 5 dolarů za 10 formulářů, přičemž kredity nevyprší. Nástroj je dostupný i jako open source projekt na GitHubu, který lze zdarma provozovat samostatně přes Google Apps Script, a nabízí i API.
+Klíčové vlastnosti
+- Rozpozná otázky i typy polí z PDF, Wordu nebo fotky
+- AI vidění zvládne i staré skeny a fotografie formulářů
+- Vytvoří nativní Google Formulář přímo na Disku
+- Nahrané soubory se po extrakci zahodí, neukládají se
+Časté dotazy
+Co přesně Doc2Form umí?
+Nahrajete PDF (i naskenované), Word dokument nebo fotografii formuláře, případně popíšete formulář vlastními slovy, a AI model Gemini z toho během chvíle vytvoří nativní Google Formulář ve vašem Google Disku, který lze dál upravovat a propojit s Google Sheets.
+Kolik Doc2Form stojí?
+První vytvořený formulář je zdarma bez nutnosti zadávat platební kartu. Další formuláře se hradí kreditovými balíčky od 5 dolarů za 10 formulářů, přičemž kredity nikdy nevyprší a není potřeba předplatné.
+Pro koho je nástroj vhodný a jak začít?
+Hodí se třeba pro kliniky, agentury nebo úřady digitalizující papírové formuláře, i pro HR, právní nebo zdravotnické týmy, protože dokumenty se po zpracování nikde neukládají. Stačí se přihlásit přes Google účet a nahrát dokument.
+Kategorie

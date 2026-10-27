@@ -1,0 +1,17 @@
+state property meme
+Online generátor vytvoří z jedné fotky 11sekundové video ve stylu viral memu State Property s nově vygenerovaným dialogem.
+O nástroji
+State property meme je AI nástroj, který z jedné nahrané fotky (vaší, nebo vašeho psa či kočky) vytvoří krátké video navazující na viral meme State Property (Hit the Road Dude). Uživatel vybere jednu z šesti scén – pickup, veranda, traktor, golfový vozík, molo nebo ranč – nebo použije referenční klip pro vedení pohybu. Výsledné video trvá 11 sekund, je dostupné v rozlišení 480p nebo 720p a formátu 9:16 nebo 16:9, včetně nově syntetizovaného dialogu (nejde o klonování původního hlasu ani zvuku). Generování běží na modelu Seedance 2.0 Fast (případně Seedance 2 Mini) a před spuštěním se zobrazí odhad potřebných kreditů podle zvoleného modelu, rozlišení a vstupu. Platba probíhá formou jednorázových kreditových balíčků, nejlevnější začíná na 9,90 USD bez daně. Bezplatná verze není uvedena. Nástroj vyžaduje potvrzení, že nahraná fotka patří uživateli nebo autorizované dospělé osobě (18+), a zakazuje zneužití k napodobování veřejně známých osob či vytváření falešných potvrzení. Hotová videa lze stáhnout ve formátu MP4, přístup k mediálnímu odkazu má kdokoli, kdo jej obdrží, a smazání nahraných souborů je nutné řešit kontaktováním podpory.
+Klíčové vlastnosti
+- Vytvoří video z jedné nahrané fotky
+- Šest scén: pickup, veranda, traktor, golfový vozík, molo, ranč
+- Režim pro člověka, psa i kočku
+- Nově syntetizovaný dialog bez klonování hlasu
+Časté dotazy
+Co nástroj přesně umí?
+Z jedné fotky vytvoří 11sekundové video ve stylu viral memu State Property, kde postava (člověk, pes nebo kočka) dostane nově vygenerovaný dialog v jedné ze šesti scén, například u pickupu nebo na verandě.
+Kolik to stojí?
+Platí se jednorázovými kreditovými balíčky, nejlevnější začíná na 9,90 USD bez daně; bezplatná verze není k dispozici.
+Jak začít a pro koho je nástroj určen?
+Stačí nahrát jednu jasnou fotku sebe, autorizované dospělé osoby, psa nebo kočky, vybrat scénu a formát videa a potvrdit souhlas s podmínkami před spuštěním generování.
+Kategorie

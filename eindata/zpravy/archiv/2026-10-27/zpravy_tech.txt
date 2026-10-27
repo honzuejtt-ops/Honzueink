@@ -1,7 +1,197 @@
+|T|Amazon kupuje kvanta GPU Nvidia GB300, která mu leží ladem. Nemá elektřinu|D|27.10.2026 20:30|P|Problémů kolem AI je hodně. Nedostatek hardwaru je trvalý, ale ještě větším problémem je někdy nedostatek elektrické energie a další infrastruktury, j...|M|SvětHW|X|Problémů kolem AI je hodně. Nedostatek hardwaru je trvalý, ale ještě větším problémem je někdy nedostatek elektrické energie a další infrastruktury, jak ukazuje situace kolem Amazonu.
+Boj o vedení v oblasti umělé inteligence vyvolává docela zajímavé kroky a společnost Amazon se v tomto závodě rozhodla jít zvláštní cestou, i když svým způsobem pochopitelnou. AWS totiž v současnosti nakupuje hardware od Nvidie v takovém množství, že jej nestíhá ani pořádně instalovat.
+Podle interních zpráv firma využívá nový proces Early Rack Receipt, díky kterému získává serverové racky s akcelerátory Nvidia GB300 mnohem dříve, než je možné je vůbec pořádně instalovat a než je možné je plně zprovoznit.
+Problémem je, že řada amerických center sice má sice fyzický prostor pro nové racky, ale chybí jim dostatečná elektrická kapacita k jejich zapnutí a provozu. To vede k vzniku tzv. “dark GPU”, kdy drahý hardware v podstatě jen nehybně leží ve skladech a čeká, dokud není dokončena výstavba infrastruktury.
+Některé týmy uvnitř Amazonu si navíc stěžovaly, že nemají ani jasný časový plán, kdy se počítá s tím, že se tyto systémy konečně dostanou do provozu. Mluvčí společnosti tento postup brání jako nejlepší obchodní strategii, protože prioritou je zajistit si kapacitu dříve než konkurence. Pokud by se čekalo, až bude elektřina, pak by zase nemusely být ony akcelerátory (nemluvě o ceně).
+Tento přístup má však své negativní dopady i na finance firmy. Amazon totiž změnil svůj obvyklý postup a nyní platí miliardy USD dopředu. To výrazně zatěžuje cash flow, které se v druhém čtvrtletí poprvé od roku 2023 dostalo do mínusu a je pravděpodobné, že tu ještě nějakou dobu zůstane. Celkové výdaje společnosti mají letos dosáhnout zhruba 220 mld. USD, což je více než u jakéhokoli jiného konkurenta z Big Tech.
+Šéf firmy Andy Jassy však tento stav vnímá jako jednorázovou životní příležitost. Celý tento proces je v podstatě sázkou na to, že budoucí výnosy z AI výrazně převáží současné finanční náklady na skladování nevyužitých serverů s GB300.|E|
+|T|Ostuda krále umělé inteligence? Nvidia musela zhoršit výkon už vydaného GPU Rubin, nezvládá slíbené frekvence|D|27.10.2026 18:37|P|Nvidia má zřejmě problémy s 3nm GPU Rubin, svým nejnovějším akcelerátorem AI. Musela jim po vydání výrazně ubrat z frekvencí pamětí a konektivity NVLi...|M|Cnews|X|Nvidia je dominantním hráčem v AI byznysu, přinejmenším pokud jde o hardware, na kterém různé aplikace umělé inteligence běží, a obvykle se její vedení považuje za téměř neotřesitelné. Je tak překvapivé, že se jí teď zdá se přihodilo ne úplně malé zaškobrtnutí. Firma teď dodatečně výrazně zhoršila parametry svého nejnovějšího AI GPU – 3nm akcelerátoru Rubin. A to přesto, že dle vlastních slov ho firma vyrábí od května a už i dodává klientům.
+Nvidia zpětně zpomaluje Rubin
+O detailech AI akcelerátoru Rubin od Nvidie jsme psali v červenci, kdy firma GPU prezentovala na konferenci SIGGRAPH 2026. Ještě tehdy firma uváděla, že akcelerátor složený ze dvou výpočetních čipletů (a přídavných IO čipletů) dosahuje propustnosti pamětí 22 TB/s, přičemž jde o paměti HBM4 s celkem 8192bitovou sběrnicí. To by mělo znamenat efektivní přenosovou rychlost na jeden bit sběrnice 22 Gb/s.
+Tato plánovaná rychlost pamětí HBM4 byla výrazně vyšší, než jakou AMD používá u svého vlastního AI akcelerátoru Instinct MI455X, který sice dosahuje o něco vyšší propustnosti 23,3 TB/s, ale je to na o 50 % širší paměťové sběrnici (12 288 bitů, 12 pouzder HBM4), efektivní rychlost na jeden bit sběrnice by měla být jen cca 15,53 Gb/s.
+Nvidia ale potichu provedla změnu specifikací. Nyní už na svém webu uvádí horší specifikace, které snížily propustnost pamětí HBM4 na 19,2 TB/s. Je tedy o 12,7 % horší, než co Nvidia prezentovala ještě před pár měsíci, byť frekvence bude pořád vyšší, než efektivní frekvence používaná u GPU od AMD. Náskok Instinctu MI455X v celkové propustnosti pamětí se tímto zvýší na 21 %.
+Zajímavé na tom je, že tato změna přichází velmi pozdě. Podle Nvidie bylo GPU Rubin v sériové výrobě už 31. května letošního roku a tento podzim už ho dostávají klienti. Velcí zákazníci typu cloudových hyperscalerů ale dostávali dodávky ještě předtím. První vzorky dokonce měli klienti již v únoru. Na testování tedy bylo dost času, takže je zvláštní, že Nvidia parametry reviduje až teď – a tři měsíce po veřejném představení parametrů.
+Tyto změny se týkají jak samostatného GPU Rubin, tak i kombinace procesoru Vera a GPU Rubin (čemuž Nvidia říká „Vera Rubin Superchip“). A specifikace budou takto zhoršené i ve velkých AI kabinetech Nvidia Vera Rubin NVL72. Nejde tedy o to, že by byly oslabené parametry levnějších méně důležitých verzí, ale u vlajkových modelů by zůstaly zachované původní rychlejší specifikace.
+Nejen paměti, ale i NLink
+Jedno možné vysvětlení je, že Nvidia přecenila možnosti křemíku, který navrhla, a frekvence pamětí musely být zpomalené, protože s původně plánovanými takty nebyl akcelerátor stabilní nebo výtěžnost výroby není dostatečná, aby se s touto specifikací produkt dal prodávat. Ale to, že nakonec Rubin bude vyráběn a dodáván s pomalejší frekvencí pamětí HBM4, by se teoreticky dalo připsat i faktorům, za které Nvidia nemůže. Mohlo by to totiž být tak, že původně plánované hodnoty se nedaří dosáhnout na straně pamětí, které Nvidii dodávají Hynix, Micron nebo Samsung, takže se rychlost musí snížit, ale nebyla by to vina Nvidie.
+Nicméně ve specifikacích, které má Nvidia teď na svém webu, firma současně snížila i rychlost rozhraní NVLink pro komunikaci mezi GPU v systému. Celková propustnost rozhraní GPU Rubin měla být 3,6 TB/s, respektive 7,2 TB/s u komplexu Vera Rubin Superchip. Celý rack NVL72 měl mít souhrnnou propustnost 260 TB/s. Nově revidované specifikace toto redukují jen na 3 TB/s, 6 TB/s a 216 TB/s pro rack NVL72. Jde o redukci propustnosti o 16,7 %. Opět by to mělo být proto, že musela být snížena pracovní frekvence.
+Řadiče a PHY, na kterých frekvence dosažená rozhraním NVLink závisí, jsou už jen v režii Nvidie. Frekvence komunikace je omezená i kvalitou použité kabeláže nebo PCB sloužících pro propojení, ale to by asi nebyl důvod zhoršit specifikace čipu samotného. A mělo by to být řešitelné zkrácením vzdáleností či použitím kvalitnějších komponent. Tudíž by pomalejší NVLink asi měl spíše svědčit o tom, že návrh čipu Rubin nevyšel zcela podle původních ambicí Nvidie, případně že nastavila specifikace příliš ambiciózně na to, co dokáže 3nm výrobní proces TSMC opravdu vyrábět.
+Nvidia mimochodem také zhoršila specifikace jednoho ze svých serverů, systému HGX Rubin NVL8. U toho se také snížila kapacita paměti z 2,3 na 2,0 TB a propustnost klesla ze 176 TB/s na 130 TB/s. Vedle horších frekvencí tedy Nvidia i použité akcelerátory osekala. Firma zhoršila i slibované parametry výpočetního výkonu. Trénování s datovým typem NVFP4 má dosahovat 270 PFLOPS místo 280 PFLOPS slibovaných původně a výkon při použití FP6 či FP8 klesl z původně specifikovaných 140 na 130 PFLOPS.
+Zdroje: VideoCardz|E|
 |T|Apple řeší praskající displeje u nového skládacího iPhone Duo|D|27.10.2026 17:30|P|Apple přiznal problémy s praskajícím vnitřním displejem u nového modelu iPhone Duo. Podle firmy se závada týká jen malého počtu kusů a poškozené telef...|M|Digimanie|X|Apple přiznal problémy s praskajícím vnitřním displejem u nového modelu iPhone Duo. Podle firmy se závada týká jen malého počtu kusů a poškozené telefony vymění.
 První majitelé dlouho očekávaného skládacího smartphonu Apple iPhone Duo zažívají nepříjemné chvíle. Na sociálních sítích a fórech se začaly množit stížnosti na fatální mechanické poškození vnitřního ohebného panelu nového modelu iPhone Duo. Závada má podle uživatelů jasný scénář – při otevírání telefonu ucítí nečekaný odpor v pantu, po kterém následuje slyšitelné prasknutí a okamžité zničení choulostivého vnitřního displeje.
 Společnost Apple na množící se zprávy zareagovala oficiálním prohlášením pro server 9to5Mac. Technologický gigant existenci problému potvrdil, ovšem jedním dechem dodává, že závada zasáhla pouze velmi malý počet prodaných zařízení. Přesnou technologickou příčinu selhání pantu a následného poškození displeje výrobce nijak nekomentoval.
 Prozatímní řešení ze strany Applu je poměrně přímočaré. Postižení zákazníci mají co nejdříve kontaktovat podporu AppleCare, kde jim bude zničené zařízení vyměněno za nový kus. Hladká výměna je přitom to nejmenší, co mohou zklamaní uživatelé očekávat – cenovka revolučního iPhonu Duo totiž startuje na astronomických 2 299 eurech (zhruba 58 tisíc korun) za základní model.|E|
+|T|LTX-23 Video Studio|D|27.10.2026 17:18|P|Generátor AI videí z textu či obrázku na bázi modelu LTX-2.5 s multi-shot scénami, 4K HDR výstupem a synchronizovaným zvukem.|M|EJAJ|X|LTX-23 Video Studio
+Generátor AI videí z textu či obrázku na bázi modelu LTX-2.5 s multi-shot scénami, 4K HDR výstupem a synchronizovaným zvukem.
+O nástroji
+LTX-2.5 Video Studio je webová platforma pro generování videa z textového nebo obrazového promptu pomocí otevřeného modelu LTX-2.5. Nabízí nativní propojení více záběrů (multi-shot) se zachováním postav, prostředí a osvětlení napříč střihy, čistší a přirozenější pohyb díky novému dekodéru, automatické přizpůsobení délky klipu a generování ve vysokém rozlišení včetně 4K HDR a RAW workflow. Součástí jsou i hotové šablony promptů a návody k nastavení v ComfyUI. Služba funguje na měsíčním kreditovém předplatném: tarif Basic za 19,9 $/měsíc (100 kreditů, cca 20 videí v LTX-2.5 Fast), Standard za 39,9 $/měsíc (220 kreditů) a Pro za 89,9 $/měsíc (500 kreditů), vše s možností ročního předplatného se slevou až 33 %. Všechny tarify zahrnují text-to-video i image-to-video, synchronizovaný zvuk a rozlišení až 4K. Bezplatná verze není uvedena. Model je dostupný i jako open-weights řešení pro lokální nasazení, fine-tuning nebo spuštění na vlastním hardwaru, API ani propojení s API není v dostupných informacích zmíněno. Platforma je nezávislá a není spojena se společnostmi LTX ani Lightricks.
+Klíčové vlastnosti
+- Multi-shot scény se zachováním postav a osvětlení
+- 4K HDR výstup s RAW workflow pro barevné korekce
+- Synchronizovaný zvuk ke generovanému videu
+- Automatické přizpůsobení délky klipu akci
+Časté dotazy
+Co LTX-23 Video Studio přesně umí?
+Generuje video z textového nebo obrazového promptu pomocí modelu LTX-2.5, umí propojit více záběrů do souvislého příběhu se zachováním postav a osvětlení, automaticky volí délku klipu a nabízí výstup až ve 4K HDR se synchronizovaným zvukem.
+Kolik stojí používání nástroje?
+Služba je placená formou měsíčního kreditového předplatného: Basic za 19,9 $ (100 kreditů), Standard za 39,9 $ (220 kreditů) a Pro za 89,9 $ (500 kreditů), při ročním předplatném sleva až 33 %.
+Pro koho je nástroj vhodný a jak začít?
+Hodí se pro tvůrce videoobsahu od příležitostných projektů po vyšší objem produkce; stačí popsat scénu v promptu a vybrat tarif podle počtu potřebných videí, k dispozici jsou i hotové šablony promptů a návody pro ComfyUI.
+Kategorie|E|
+|T|UIPalooza|D|27.10.2026 17:18|P|Veřejná výzkumná galerie, kde lze porovnat, jak stejné zadání designu rozhraní zpracují různé AI modely jako GLM 5.2, Claude Code či Codex.|M|EJAJ|X|UIPalooza
+Veřejná výzkumná galerie, kde lze porovnat, jak stejné zadání designu rozhraní zpracují různé AI modely jako GLM 5.2, Claude Code či Codex.
+O nástroji
+UIPalooza je volně přístupný výzkumný projekt, který srovnává „designový vkus“ AI modelů. Různým modelům zadá stejný brief a vedle sebe zobrazí výsledná rozhraní – desktopové i mobilní náhledy, dobu běhu a počet použitých tokenů. Aktuálně obsahuje 5 modelů a 6 dovedností (skills), přičemž výsledky lze filtrovat podle modelu, skillu i stavu (publikováno, s náhledem apod.) a vybrané návrhy porovnat vedle sebe. Každý běh probíhá v izolovaném prostředí s verzovaným zadáním, takže je možné zpětně dohledat, jaký model, agent a nastavení výsledek vytvořily. Kontroly se zaměřují na funkčnost a přístupnost (interakce v prohlížeči), samotné hodnocení designového vkusu je ale ponecháno na uživateli – nástroj dává „jen“ evidenci, ne žebříček kvality. Možnost nahrát vlastní brief a nechat si podle něj porovnat návrhy modelů zatím není spuštěna – web nabízí pouze registraci e-mailu pro early access k této funkci. Informace o cenách, API přístupu ani open source licenci nejsou na webu uvedeny, prohlížení galerie a výsledků je ale zdarma.
+Klíčové vlastnosti
+- Porovnání 5 AI modelů na stejném designovém zadání
+- Desktopové i mobilní náhledy vedle sebe
+- Filtrování podle modelu, dovednosti (skillu) a stavu výsledku
+- Zobrazení doby běhu a počtu použitých tokenů
+Časté dotazy
+Co UIPalooza vlastně umí?
+Zadá stejný designový brief různým AI modelům (např. GLM 5.2, Claude Code, Codex) a zobrazí jejich výsledná rozhraní vedle sebe včetně desktopových a mobilních náhledů, doby běhu a počtu tokenů.
+Kolik stojí používání UIPalooza?
+Prohlížení galerie a výsledků je zdarma, informace o placených plánech ani API přístupu web neuvádí.
+Jak mohu začít nástroj používat?
+Stačí otevřít web a procházet galerii srovnání modelů a skillů; možnost nahrát vlastní brief zatím není spuštěna, lze se jen zaregistrovat e-mailem pro early access.
+Kategorie|E|
+|T|Seedream 5 AI|D|27.10.2026 17:12|P|Seedream 5 AI je online generátor a editor obrázků z textových promptů poháněný modelem ByteDance Seedream 5, s generováním za 2–5 sekund.|M|EJAJ|X|Seedream 5 AI
+Seedream 5 AI je online generátor a editor obrázků z textových promptů poháněný modelem ByteDance Seedream 5, s generováním za 2–5 sekund.
+O nástroji
+Seedream 5 AI umožňuje vytvářet obrázky z textového zadání nebo upravovat nahrané fotky pomocí chatových instrukcí v přirozeném jazyce. Nástroj podporuje nahrání referenčního obrázku (až 1 referenční snímek dle rozhraní), výběr poměru stran (1:1, 2:3, 3:2, 3:4, 4:3, 9:16, 16:9, 1:2, 2:1) a generování ve více formátech souborů (JPG, PNG, WEBP) do velikosti 10 MB. Výstupem je nativní rozlišení 2K s možností jednoklikového upscalu na 4K, což je vhodné pro tiskové a profesionální použití. Mezi zdůrazňované funkce patří konzistence postav napříč více obrázky (stejný obličej, vlasy, oblečení a výrazy), pokročilá fúze více obrázků a přenos stylu, dále funkce odstranění vodoznaku a soukromý režim generování. Mezi uváděné případy užití patří tvorba produktových fotografií pro e-shopy, restaurování starých či poškozených fotografií a tvorba konzistentních postav pro seriálový obsah nebo budování značky. Rozhraní je v angličtině a nabízí kredity pro generování (10 kreditů při registraci) s omezenou nabídkou slevy 50 % na roční plány, informace o konkrétní ceně ani o bezplatné verzi však nejsou v dostupných podkladech uvedeny.
+Klíčové vlastnosti
+- Generování obrázků z textu za 2–5 sekund
+- Editace nahraných fotek chatovými instrukcemi
+- Konzistence postav napříč více obrázky
+- Fúze více obrázků a přenos stylu
+Časté dotazy
+Co Seedream 5 AI umí?
+Generuje obrázky z textového zadání nebo upravuje nahrané fotky pomocí chatových instrukcí v přirozeném jazyce. Umí udržet konzistenci postav napříč více obrázky, kombinovat více snímků a přenášet styl, výstup lze upscalovat z 2K na 4K.
+Kolik Seedream 5 AI stojí?
+Konkrétní ceny ani podoba bezplatné verze nejsou v dostupných podkladech uvedeny, nástroj nabízí kredity pro generování a dočasnou slevu 50 % na roční plány.
+Pro koho je Seedream 5 AI vhodný a jak začít?
+Hodí se pro e-shopy na tvorbu produktových fotografií, pro restaurování starých fotek a pro tvorbu konzistentních postav v seriálovém či značkovém obsahu. Stačí zadat text nebo nahrát obrázek a kliknout na generování.
+Kategorie|E|
+|T|airapvideo|D|27.10.2026 17:12|P|Generátor promění dvě fotografie ve 10sekundové rapové video ve vertikálním formátu pro TikTok, Reels nebo Shorts.|M|EJAJ|X|airapvideo
+Generátor promění dvě fotografie ve 10sekundové rapové video ve vertikálním formátu pro TikTok, Reels nebo Shorts.
+O nástroji
+Airapvideo je nástroj, který ze dvou portrétních fotografií vytvoří krátké rapové duo video. Nejprve odstraní pozadí obou fotografií a umístí obě osoby na společné pódium pomocí modelu Nano Banana, poté scénu animuje pomocí MiniMax H3 Max Turbo podle promptu zaměřeného na rapové vystoupení s pohyby hlavy a gesty. Přesná synchronizace rtů ani konkrétní skladba nejsou garantovány, protože závisí na výstupu video modelu. Výsledné video má pevnou délku 10 sekund ve vertikálním formátu 9:16 a je určeno ke stažení jako MP4 s audiem. Služba nevyžaduje přihlášení ani instalaci aplikace, nahrávání fotek je zdarma, kredity se čerpají až při generování videa a v případě neúspěšného renderu se kredity vrací zpět na účet. Platba probíhá formou jednorázových balíčků bez předplatného: Starter Pack za 9,9 USD za jedno video, Standard Pack za 19,9 USD za tři videa a Pro Pack za 29,9 USD za pět videí, přičemž jedno video stojí 440 kreditů. Bezplatná verze generování videa není k dispozici, API ani open source řešení nejsou zmíněny.
+Klíčové vlastnosti
+- Rozpoznání a vystřižení osob ze dvou fotek
+- Automatické umístění obou osob na společné pódium
+- Animace pomocí modelu MiniMax H3 Max Turbo
+- Výstup 10sekundové video 9:16 s hudbou a vokály
+Časté dotazy
+Co přesně airapvideo umí vytvořit?
+Ze dvou portrétních fotografií vytvoří 10sekundové rapové duo video ve vertikálním formátu 9:16 s automaticky vygenerovanou hudbou a vokály, vhodné pro TikTok, Reels nebo Shorts.
+Kolik airapvideo stojí?
+Platí se jednorázovými balíčky bez předplatného: Starter Pack 9,9 USD za jedno video, Standard Pack 19,9 USD za tři videa nebo Pro Pack 29,9 USD za pět videí, jedno video stojí 440 kreditů.
+Jak začít a pro koho je nástroj určený?
+Stačí nahrát dvě ostré portrétní fotografie bez nutnosti registrace, kliknout na Create a během 3–5 minut získat hotové MP4 video ke stažení; vhodné pro přátele, páry nebo rodinné video vtípky.
+Kategorie|E|
+|T|Grigora|D|27.10.2026 17:12|P|Grigora je AI nástroj pro tvorbu webů, e-shopů, blogů a newsletterů na základě textového popisu zadaného uživatelem.|M|EJAJ|X|Grigora
+Grigora je AI nástroj pro tvorbu webů, e-shopů, blogů a newsletterů na základě textového popisu zadaného uživatelem.
+O nástroji
+Grigora je all-in-one CMS platforma, která umožňuje vytvořit web pouhým popisem představy – stačí napsat, jaký web má Grigora vybudovat, a nástroj navrhne design, který lze dále upravovat. Podporuje vznik online obchodů, webů pro místní podniky, newsletterů i portfolií. Služba nabízí 14denní bezplatnou zkušební dobu, poté je zpoplatněna od 12 USD měsíčně při roční fakturaci, s možností kdykoliv zrušit. Podle dostupných hodnocení dosahuje Grigora 4,6 bodu na G2 a 4,8 bodu na Trustpilotu a podle uváděných údajů na ní bylo publikováno již tisíce webů. Informace o API ani o otevřeném zdrojovém kódu nejsou k dispozici, nástroj je pouze v angličtině.
+Klíčové vlastnosti
+- Tvorba webu na základě textového popisu
+- Podpora e-shopů, webů firem, newsletterů i portfolií
+- AI návrh designu s možností dalších úprav
+- All-in-one CMS platforma pro správu webu
+Časté dotazy
+Co přesně Grigora umí vytvořit?
+Na základě textového popisu dokáže vygenerovat design webu, e-shopu, newsletteru nebo portfolia, který si uživatel dále upravuje.
+Kolik Grigora stojí?
+K dispozici je 14denní bezplatná zkušební doba, poté placené plány od 12 USD měsíčně při roční fakturaci, zrušit lze kdykoliv.
+Pro koho je Grigora vhodná a jak začít?
+Hodí se pro majitele malých firem, e-shopů i tvůrce obsahu, kteří chtějí web bez programování – stačí popsat představu a Grigora návrh webu vytvoří.
+Kategorie|E|
+|T|Doc2Form|D|27.10.2026 17:12|P|Nástroj pomocí AI (Gemini) převede PDF, Word dokument nebo naskenovaný formulář na nativní Google Formulář ve vašem Disku do 60 sekund.|M|EJAJ|X|Doc2Form
+Nástroj pomocí AI (Gemini) převede PDF, Word dokument nebo naskenovaný formulář na nativní Google Formulář ve vašem Disku do 60 sekund.
+O nástroji
+Doc2Form umožňuje nahrát PDF (i naskenované), Word dokument nebo fotografii formuláře, případně popsat požadovaný formulář vlastními slovy. AI model Gemini z dokumentu rozpozná jednotlivé otázky, typy polí, možnosti odpovědí i rozdělení do sekcí a pomocí Google Forms API vytvoří odpovídající nativní Google Formulář přímo ve vašem Google Disku, kde jej lze dál upravovat, sdílet nebo propojit s Google Sheets. Nástroj je zaměřen i na hůře čitelné dokumenty – díky AI vidění zvládá i staré skeny či fotografie formulářů, což ocení například kliniky, agentury nebo úřady digitalizující papírové dokumenty. Nahrané soubory slouží pouze k extrakci struktury a poté jsou zahozeny, ukládá se jen název a odkaz na výsledný formulář, což je vhodné i pro citlivější dokumenty z HR, práva či zdravotnictví. První vytvořený formulář je zdarma bez nutnosti zadávat platební kartu, další formuláře se hradí formou kreditových balíčků od 5 dolarů za 10 formulářů, přičemž kredity nevyprší. Nástroj je dostupný i jako open source projekt na GitHubu, který lze zdarma provozovat samostatně přes Google Apps Script, a nabízí i API.
+Klíčové vlastnosti
+- Rozpozná otázky i typy polí z PDF, Wordu nebo fotky
+- AI vidění zvládne i staré skeny a fotografie formulářů
+- Vytvoří nativní Google Formulář přímo na Disku
+- Nahrané soubory se po extrakci zahodí, neukládají se
+Časté dotazy
+Co přesně Doc2Form umí?
+Nahrajete PDF (i naskenované), Word dokument nebo fotografii formuláře, případně popíšete formulář vlastními slovy, a AI model Gemini z toho během chvíle vytvoří nativní Google Formulář ve vašem Google Disku, který lze dál upravovat a propojit s Google Sheets.
+Kolik Doc2Form stojí?
+První vytvořený formulář je zdarma bez nutnosti zadávat platební kartu. Další formuláře se hradí kreditovými balíčky od 5 dolarů za 10 formulářů, přičemž kredity nikdy nevyprší a není potřeba předplatné.
+Pro koho je nástroj vhodný a jak začít?
+Hodí se třeba pro kliniky, agentury nebo úřady digitalizující papírové formuláře, i pro HR, právní nebo zdravotnické týmy, protože dokumenty se po zpracování nikde neukládají. Stačí se přihlásit přes Google účet a nahrát dokument.
+Kategorie|E|
+|T|state property meme|D|27.10.2026 17:12|P|Online generátor vytvoří z jedné fotky 11sekundové video ve stylu viral memu State Property s nově vygenerovaným dialogem.|M|EJAJ|X|state property meme
+Online generátor vytvoří z jedné fotky 11sekundové video ve stylu viral memu State Property s nově vygenerovaným dialogem.
+O nástroji
+State property meme je AI nástroj, který z jedné nahrané fotky (vaší, nebo vašeho psa či kočky) vytvoří krátké video navazující na viral meme State Property (Hit the Road Dude). Uživatel vybere jednu z šesti scén – pickup, veranda, traktor, golfový vozík, molo nebo ranč – nebo použije referenční klip pro vedení pohybu. Výsledné video trvá 11 sekund, je dostupné v rozlišení 480p nebo 720p a formátu 9:16 nebo 16:9, včetně nově syntetizovaného dialogu (nejde o klonování původního hlasu ani zvuku). Generování běží na modelu Seedance 2.0 Fast (případně Seedance 2 Mini) a před spuštěním se zobrazí odhad potřebných kreditů podle zvoleného modelu, rozlišení a vstupu. Platba probíhá formou jednorázových kreditových balíčků, nejlevnější začíná na 9,90 USD bez daně. Bezplatná verze není uvedena. Nástroj vyžaduje potvrzení, že nahraná fotka patří uživateli nebo autorizované dospělé osobě (18+), a zakazuje zneužití k napodobování veřejně známých osob či vytváření falešných potvrzení. Hotová videa lze stáhnout ve formátu MP4, přístup k mediálnímu odkazu má kdokoli, kdo jej obdrží, a smazání nahraných souborů je nutné řešit kontaktováním podpory.
+Klíčové vlastnosti
+- Vytvoří video z jedné nahrané fotky
+- Šest scén: pickup, veranda, traktor, golfový vozík, molo, ranč
+- Režim pro člověka, psa i kočku
+- Nově syntetizovaný dialog bez klonování hlasu
+Časté dotazy
+Co nástroj přesně umí?
+Z jedné fotky vytvoří 11sekundové video ve stylu viral memu State Property, kde postava (člověk, pes nebo kočka) dostane nově vygenerovaný dialog v jedné ze šesti scén, například u pickupu nebo na verandě.
+Kolik to stojí?
+Platí se jednorázovými kreditovými balíčky, nejlevnější začíná na 9,90 USD bez daně; bezplatná verze není k dispozici.
+Jak začít a pro koho je nástroj určen?
+Stačí nahrát jednu jasnou fotku sebe, autorizované dospělé osoby, psa nebo kočky, vybrat scénu a formát videa a potvrdit souhlas s podmínkami před spuštěním generování.
+Kategorie|E|
+|T|TubeTube|D|27.10.2026 17:12|P|AI generátor videí, který z textu písně nebo příběhu automaticky vytvoří hudbu, scény a sestříhané video.|M|EJAJ|X|TubeTube
+AI generátor videí, který z textu písně nebo příběhu automaticky vytvoří hudbu, scény a sestříhané video.
+O nástroji
+TubeTube je nástroj pro tvorbu videí ze slov – stačí vložit text písně nebo příběh a systém napíše hudbu, vygeneruje osm i více scén, sesynchronizuje titulky se zvukem a vše sestříhá do hotového videa během přibližně 15 minut. K dispozici je 113 grafických stylů (např. Pixar-style 3D, watercolor storybook, claymation, anime pastel) a postavy zůstávají vizuálně konzistentní napříč scénami díky generování s kontextem předchozích záběrů. Nástroj umí pracovat i s vlastním nahraným MP3 souborem, ze kterého vytvoří coververzi videa. Proces je rozdělen do deseti kroků – od hudby přes storyboard, obrázky scén, animaci jednotlivých scén až po finální sestřih se zvukovou stopou. Podporováno je 14 generačních enginů včetně Kling 3 a Veo 3.1, přičemž uživatel vidí průběžný odhad spotřeby kreditů (hudba, obrázky, videa scén, náhledový obrázek, přepis) ještě před spuštěním generování. Výsledná videa lze stahovat ve formátu 16:9 a nástroj nabízí API pro vytváření a stahování videí přímo z kódu. Nový účet získá 1 000 kreditů zdarma ve většině zemí s platností 7 dní, bez nutnosti zadávat platební kartu. Dále jsou dostupné měsíční tarify se zahrnutými kredity, které lze kdykoliv dokoupit – platí se pouze za skutečně vyrobený obsah, cena se pohybuje od 0,01 USD za jednotku produkce.
+Klíčové vlastnosti
+- Generuje hudbu, scény a titulky z textu písně či příběhu
+- 113 grafických stylů včetně Pixar 3D a akvarelu
+- Konzistentní postavy napříč scénami díky kontextu
+- Podpora 14 generačních enginů (Kling 3, Veo 3.1)
+Časté dotazy
+Co TubeTube přesně umí vytvořit?
+Z vloženého textu písně nebo příběhu automaticky složí hudbu, vygeneruje osm i více scén v jednom z 113 grafických stylů a sestříhá je do hotového videa ve formátu 16:9 přibližně za 15 minut.
+Kolik TubeTube stojí?
+Nový účet získá ve většině zemí 1 000 kreditů zdarma na 7 dní bez nutnosti karty, dále jsou dostupné měsíční tarify se zahrnutými kredity a platí se jen za skutečně vyrobený obsah od 0,01 USD za jednotku produkce.
+Pro koho je TubeTube vhodný a jak začít?
+Hodí se pro tvůrce dětských písniček, pohádek, hudebních videí nebo YouTube obsahu – stačí vložit text nebo vlastní MP3, vybrat styl a nechat nástroj vygenerovat finální video.
+Kategorie|E|
+|T|Lineora|D|27.10.2026 17:12|P|Mobilní aplikace pro iOS a Android, která z vlastních fotek vytváří omalovánky, kresby a pracovní listy k tisku.|M|EJAJ|X|Lineora
+Mobilní aplikace pro iOS a Android, která z vlastních fotek vytváří omalovánky, kresby a pracovní listy k tisku.
+O nástroji
+Lineora je aplikace pro iOS a Android, která promění nahranou fotografii v umělecké dílo nebo tiskovou aktivitu. Uživatel si může vybrat z 59 stylů – například uhel, akvarel, anime, pixel art, olejomalbu, ukiyo-e nebo mandalu – a výsledek porovnat s původní fotkou. Kromě uměleckých stylů nabízí aplikace šest aktivit k vytištění: malování podle čísel, bludiště, puzzle, obtahování, mozaiku a hledání rozdílů, vše exportovatelné do PDF. Podle popisu aplikace lze kresby získat zdarma sledováním reklam, případně zakoupit kredity, které podle uvedených informací nevyprší a nejsou vázané na předplatné. Knihovnu vytvořených obrázků je možné přenést na jiné zařízení pomocí kódu pro obnovení. Rozhraní aplikace je dostupné v češtině.
+Klíčové vlastnosti
+- 59 výtvarných stylů (uhel, akvarel, anime, pixel art aj.)
+- 6 tiskových aktivit – bludiště, puzzle, mozaika, malování podle čísel
+- export hotových děl do PDF k tisku
+- přenos knihovny obrázků mezi zařízeními přes kód obnovení
+Časté dotazy
+Co přesně Lineora umí vytvořit z mé fotky?
+Z nahrané fotografie vytvoří umělecké dílo v jednom z 59 stylů (např. akvarel, anime, pixel art, mandala) nebo tiskovou aktivitu jako omalovánku, bludiště, puzzle či malování podle čísel, vše exportovatelné do PDF.
+Kolik Lineora stojí?
+Aplikace funguje na kredity, které lze získat zdarma sledováním reklam nebo dokoupit – zakoupené kredity nevyprší a nejsou vázané na žádné předplatné.
+Jak začít a přijdu o výtvory při výměně telefonu?
+Stačí stáhnout aplikaci z App Storu nebo Google Play a nahrát fotku; knihovnu vytvořených obrázků lze následně přenést na jiné zařízení pomocí kódu pro obnovení.
+Kategorie|E|
+|T|FlashCrafter Growth Brief|D|27.10.2026 17:12|P|Nástroj vytvoří pro místní firmy bezplatnou analýzu trhu, konkurence a online viditelnosti s konkrétními kroky k růstu.|M|EJAJ|X|FlashCrafter Growth Brief
+Nástroj vytvoří pro místní firmy bezplatnou analýzu trhu, konkurence a online viditelnosti s konkrétními kroky k růstu.
+O nástroji
+FlashCrafter Growth Brief je webová aplikace (briefs.flashcrafter.ai), která místním firmám ukazuje, jak vypadají jejich výsledky na Googlu a co dělat dál. Z veřejně dostupných dat sestaví tzv. Growth Brief – přehled lokální poptávky, konkurence, viditelnosti a reputace, doplněný o praktickou strategii kanálů a odhady s viditelně uvedenými předpoklady. Volitelně lze propojit vlastní účty Google Business Profile, Google Ads, Google Analytics a Google Search Console, aby brief zobrazoval i výkon těchto účtů; propojení je možné kdykoliv zrušit. Pro vytvoření reportu je nutné založit si účet, platební karta se nevyžaduje. První úvodní Growth Brief je zdarma pro každý ověřený účet a rozpoznanou firmu, opakované otevření stejného požadavku nevytváří duplicitní reporty. Vygenerovaný návrh je soukromý a přístupný jen přihlášeným oprávněným uživatelům; veřejně sdílitelným se stane až po samostatném schválení jako anonymní report s unikátní adresou. Produkt provozuje společnost Cald Solutions Inc. pod značkou FlashCrafter.
+Klíčové vlastnosti
+- Analýza lokální poptávky, konkurence a viditelnosti z veřejných dat
+- Volitelné propojení Google Business Profile, Ads, Analytics a Search Console
+- Praktická strategie marketingových kanálů na míru firmě
+- Odhady růstu s viditelně uvedenými předpoklady
+Časté dotazy
+Co přesně Growth Brief obsahuje?
+Report shrnuje lokální poptávku, konkurenci, viditelnost a reputaci firmy na Googlu, doplněné o praktickou strategii kanálů a odhady růstu s viditelnými předpoklady.
+Je Growth Brief opravdu zdarma?
+Ano, první úvodní Growth Brief je zdarma pro každý ověřený účet a rozpoznanou firmu, platební karta se nevyžaduje. Opakované otevření stejného požadavku nevytváří další zpoplatněné reporty.
+Jak začít a je report veřejný?
+Stačí si založit účet a vybrat svou firmu, draft se pak vygeneruje automaticky a je soukromý, přístupný jen přihlášeným oprávněným uživatelům. Veřejně sdílitelným se stane až po samostatném schválení jako anonymní report s unikátní adresou.
+Kategorie|E|
 |T|Apple řeší problém s ohebným displejem iPhonu Duo|D|27.10.2026 17:00|P|Společnost Apple má problém. U skládacích telefonů iPhone Duo se totiž v některých případech poškozuje displej, a to vždy na stejném místě.|M|SvětHW|X|Společnost Apple má problém. U skládacích telefonů iPhone Duo se totiž v některých případech poškozuje displej, a to vždy na stejném místě.
 Společnost Apple je docela známá tím, že sice nebývá tou první, kdo dodá danou novinku na trh, je ale zpravidla první, které to opravdu dobře funguje. S touto nadějí jsme čekali na nový iPhone Duo, který přišel s velkým zpožděním za konkurenčními telefony, nicméně jak se zdá, problémy se nevyhnuly ani Applu.
 Krátce po startu prodejů začaly sociální sítě zaplavovat fotografie prasklých vnitřních displejů. Uživatelé si stěžují na vertikální i horizontální linie vadných pixelů ve tvaru L, které se objevují právě v místě ohybu, což u některých majitelů doprovázelo i praskání a následné problémy s plynulým zavíráním telefonu. Apple sice přiznal, že problém se týká jen malého množství kusů, ale potvrdil, že se chyba objevila jak u zákazníků, tak dokonce i u vystavených kusů v obchodech. Společnost proto doporučuje postiženým uživatelům kontaktovat AppleCare za účelem výměny zařízení.

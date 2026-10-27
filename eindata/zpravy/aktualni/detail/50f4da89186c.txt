@@ -1,0 +1,17 @@
+Seedream 5 AI
+Seedream 5 AI je online generátor a editor obrázků z textových promptů poháněný modelem ByteDance Seedream 5, s generováním za 2–5 sekund.
+O nástroji
+Seedream 5 AI umožňuje vytvářet obrázky z textového zadání nebo upravovat nahrané fotky pomocí chatových instrukcí v přirozeném jazyce. Nástroj podporuje nahrání referenčního obrázku (až 1 referenční snímek dle rozhraní), výběr poměru stran (1:1, 2:3, 3:2, 3:4, 4:3, 9:16, 16:9, 1:2, 2:1) a generování ve více formátech souborů (JPG, PNG, WEBP) do velikosti 10 MB. Výstupem je nativní rozlišení 2K s možností jednoklikového upscalu na 4K, což je vhodné pro tiskové a profesionální použití. Mezi zdůrazňované funkce patří konzistence postav napříč více obrázky (stejný obličej, vlasy, oblečení a výrazy), pokročilá fúze více obrázků a přenos stylu, dále funkce odstranění vodoznaku a soukromý režim generování. Mezi uváděné případy užití patří tvorba produktových fotografií pro e-shopy, restaurování starých či poškozených fotografií a tvorba konzistentních postav pro seriálový obsah nebo budování značky. Rozhraní je v angličtině a nabízí kredity pro generování (10 kreditů při registraci) s omezenou nabídkou slevy 50 % na roční plány, informace o konkrétní ceně ani o bezplatné verzi však nejsou v dostupných podkladech uvedeny.
+Klíčové vlastnosti
+- Generování obrázků z textu za 2–5 sekund
+- Editace nahraných fotek chatovými instrukcemi
+- Konzistence postav napříč více obrázky
+- Fúze více obrázků a přenos stylu
+Časté dotazy
+Co Seedream 5 AI umí?
+Generuje obrázky z textového zadání nebo upravuje nahrané fotky pomocí chatových instrukcí v přirozeném jazyce. Umí udržet konzistenci postav napříč více obrázky, kombinovat více snímků a přenášet styl, výstup lze upscalovat z 2K na 4K.
+Kolik Seedream 5 AI stojí?
+Konkrétní ceny ani podoba bezplatné verze nejsou v dostupných podkladech uvedeny, nástroj nabízí kredity pro generování a dočasnou slevu 50 % na roční plány.
+Pro koho je Seedream 5 AI vhodný a jak začít?
+Hodí se pro e-shopy na tvorbu produktových fotografií, pro restaurování starých fotek a pro tvorbu konzistentních postav v seriálovém či značkovém obsahu. Stačí zadat text nebo nahrát obrázek a kliknout na generování.
+Kategorie

@@ -1,0 +1,63 @@
+Řekněme, že mám na svém pracovním počítači, pro své potřeby vyladěnou instalaci Debianu Trixie běžící na ZFS. Nyní bych chtěl instalaci naklonovat na svůj notebook, abych mohl pracovat i na cestách. Jaký bude postup?
+Postup klonování
+Na stroji, který chci klonovat, si vytvořím snapshoty.
+sudo zfs snapshot zroot/ROOT/debian@migration
+sudo zfs snapshot zroot/home@migration
+Na novém počítači, kam chci instalaci klonovat, začnu stejně jako při nové instalaci. Tedy nabootuji do aktuální živé distribuce Debianu a doinstaluji balíček openssh-server. Rozdělím disk, vytvořím oddíl pro EFI a ZFS pool s šifrovaným rootovským datasetem.
+Samotné klonování pak provedu na původním stroji příkazy:
+ssh user@192.168.0.135 'sudo zfs create -o mountpoint=none zroot/ROOT'
+sudo zfs send zroot/ROOT/debian@migration | ssh user@192.168.0.135 "sudo zfs receive -u zroot/ROOT/debian"
+sudo zfs send zroot/home@migration | ssh user@192.168.0.135 "sudo zfs receive -u zroot/home"
+Výchozí heslo živé distribuce Debianu je live. Pozor ale, pokud jste živý Debian restartovali, má stejná adresa nyní nové SSH klíče, a tak příkaz bez varování selže. Je třeba být schopen se přihlásit na user@192.168.0.135 i z uživatele root na hlavním stroji!
+Při kopírování se nepřenesou vlastnosti jednotlivých datasetů. Toho bychom sice mohli dosáhnout použitím parametru -p nebo -R, které u šifrovaných datasetů nelze použít bez parametru -w. Parametr -w ale použít nechceme, protože bychom pak nemohli zachovat jedno společné heslo pro všechny datasety.
+Vlastnosti jednotlivých datasetů tedy po přenosu na cílovém stroji nastavíme ručně příkazy:
+sudo zfs set mountpoint=/ zroot/ROOT/debian
+sudo zfs set canmount=noauto zroot/ROOT/debian
+sudo zfs set mountpoint=/home zroot/home
+sudo zpool set bootfs=zroot/ROOT/debian zroot
+Dále pokračujeme podle návodu, především stažením samotného ZFSBootMenu – samozřejmě s tím, že vynecháme instalaci Debianu a jeho balíčků, které byly přeneseny.
+Pro přenos na jiný hardware může být nutné doinstalovat balíčky s firmware pro Wi-Fi, ovladače GPU a podobně. Vždy je dobré změnit hostname, UUID UEFI diskového oddílu v /etc/fstab  a promazat hostitelské SSH klíče.
+ls -l /etc/ssh/ssh_host_*
+rm -f /etc/ssh/ssh_host_*
+ssh-keygen -A
+vim /etc/hostname
+vim /etc/hosts
+zgenhostid -f
+cat << EOF > /etc/fstab
+$( blkid | grep "$BOOT_DEVICE" | cut -d ' ' -f 2 ) /boot/efi vfat defaults 0 0
+EOF
+Klonování na notebook se zachováním Windows
+Svůj operační systém jsem si chtěl naklonovat i na svůj notebook Lenovo. Ale objevil jsem, že jsem tam nechal i zmenšený oddíl se systémem Windows. Ten jsem nikdy nepoužil, nechal jsem jej tam jen pro případ, že by mohlo být někdy v budoucnu třeba aktualizovat firmware notebooku. Rozdělování disku je v živém Debianu možné dělat též pomocí aplikace Gparted, kterou je možné si doinstalovat.
+Na prvním obrázku je vidět mé původní rozdělení disků. Oddíl 1 je UEFI fat32, ten zůstane sloužit svému účelu, jen do něj dokopíruji ZFSBootMenu. Oddíly 2 a 3 používají Windows. Na ostatních oddílech byl instalován starší Debian s šifrováním zvoleným během instalace.
+Tyto oddíly jsem odstranil a místo nich vytvořil nový oddíl pro ZFS. Jako souborový systém nového oddílu jsem zvolil „unformatted“, jelikož Gparted souborový systém ZFS nenabízí. Přesto takto vytvořený oddíl ukazuje Gparted jako ext4, což je možné ignorovat, protože ZFS se na oddíl stejně zapisuje až při vytváření zpoolu.
+Po provedených změnách ukazuje příkaz lsblk  tohle:
+lsblk
+NAME        MAJ:MIN RM   SIZE RO TYPE MOUNTPOINTS
+loop0         7:0    0   3.2G  1 loop /run/live/rootfs/filesystem.squashfs
+nvme0n1     259:0    0 953.9G  0 disk
+├─nvme0n1p1 259:1    0   260M  0 part
+├─nvme0n1p4 259:2    0 822.3G  0 part
+├─nvme0n1p2 259:5    0    16M  0 part
+└─nvme0n1p3 259:6    0 131.3G  0 part
+Jelikož se mění používané oddíly, budu muset změnit nastavení některých proměnných v návodu pro Debian. Hodnota pro BOOT_DEVICE zůstává stejná jak přednastaveno v návodu /dev/nvme0n1p1, ale POOL_DEVICE bude odkazovat na jiný oddíl – největší a nově vytvořený oddíl /dev/nvme0n1p4, který bezpečně poznám ve výstupu lsblk podle velikosti.
+Tedy upravím v návodu pro Debian řádek s hodnotou export POOL_PART=“2” na export POOL_PART=“4”. Vynechám rozdělování disku, vytváření UEFI oddílu a oddílu pro ZFS, které již existují. Vytvořím šifrovaný zpool a pokračuji stejným způsobem jako v návodu výše, při klonování systému na prázdný disk.
+Je možné naklonovat celý šifrovaný ZFS pool na jiný stroj?
+Provedl jsem následující pokus. Nejdříve jsem vytvořil snapshot rootovského datasetu včetně všech poddatasetů.
+sudo zfs snapshot -r zroot@migration_notebook
+Parametr -r znamená, že se vytvoří rekurzivně snapshoty i všech poddatasetů.
+Všechny tyto snapshoty se pokouším přenést na jiný stroj jediným příkazem tak, aby bylo zachováno vše včetně jména jednotlivých datasetů, vlastností a šifrování.
+Ale příkaz přenosu skončí chybou:
+sudo zfs send -Rw zroot@migration_notebook | ssh user@192.168.0.127 'sudo zfs receive zroot'
+user@192.168.0.127's password:
+cannot receive new filesystem stream: destination 'zroot' exists
+must specify -F to overwrite it
+Parametr -F ale není možné použít pro RAW přenos (s  -w).
+Pokud zroot na cílovém stroji odstraním, tak dostanu pro změnu jinou chybu:
+[xsouku04@deZFS1 ~]$ sudo zfs send -Rw zroot@migration_notebook | ssh user@192.168.0.127 'sudo zfs receive zroot'
+user@192.168.0.127's password:
+cannot receive new filesystem stream: destination 'zroot' does not exist
+Nepodařilo se mi přijít na to, jak tohle omezení obejít. Zjevně by bylo možné vše nakopírovat do jinak pojmenovaného datasetu, např. zroot/backup, ale mít na každém stroji jinou cestu k datasetům nechci.
+Pokud bych vynechal kopírování rootovského datasetu zroot, hrozí pak, že na novém disku bude sice stejné heslo, ale jiný šifrovací klíč, a data pak budou nečitelná?
+Raději jsem proto zvolil nepoužít parametr -w nebo -R pro RAW a raději přenášel data nešifrovaně a bez parametrů ZFS.
+Tedy zazálohovat celý šifrovaný ZFS pool umím, ale naklonovat jej tak, aby se od původního ničím nelišil, se mi nepodařilo. V tomto nemám stále plně jasno, pokud někdo ví jak to provést, prosím o komentář k článku.
+Samozřejmě pokud šifrování nepoužíváte, třeba protože se jedná o server, který je dobře fyzicky zabezpečen proti krádeži, budete mít situaci jednodušší a můžete používat parametry -p a -R bez omezení.

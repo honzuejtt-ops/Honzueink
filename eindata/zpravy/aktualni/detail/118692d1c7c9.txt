@@ -1,0 +1,17 @@
+Song Finder
+Rozpozná písničku z nahraného souboru, URL nebo živého záznamu z mikrofonu, zdarma a bez registrace.
+O nástroji
+Song Finder je webový nástroj pro rozpoznávání hudby, který funguje bez účtu a bez přihlašování. Uživatel může nahrát audio soubor (MP3, WAV, FLAC, MP4, M4A, OGG), vložit odkaz na médium nebo přímo nahrát zvuk pomocí mikrofonu. Rozpoznávání probíhá řetězově až přes tři nezávislé recognition enginy – pokud první nenajde shodu, automaticky se zkusí další, dokud se nenajde výsledek s názvem skladby, interpretem, obalem alba a případnými odkazy na poslech. Kromě samotného rozpoznání písně nabízí web i další nástroje: vyhledávání podle textu písně, vyhledávání podle nálady, zjištění BPM a tóniny skladby, hledání podobných skladeb, analýzu playlistu nebo generování DJ setu. Součástí jsou i lokální audio editory běžící přímo v prohlížeči – ekvalizér, úprava rychlosti a výšky tónu, ořez, sloučení stop, normalizace hlasitosti a redukce šumu, které mohou zlepšit úspěšnost rozpoznání u nekvalitních nahrávek. Podle webu se při samotném rozpoznávání do externí služby odesílá pouze zvolený zvukový klip nebo odkaz na médium, zatímco editační a analytické nástroje zpracovávají audio lokálně v prohlížeči. Služba je popsána jako plně zdarma bez nutnosti registrace, e-mailu či platební karty.
+Klíčové vlastnosti
+- Rozpoznání z nahraného souboru, URL nebo mikrofonu
+- Až tři recognition enginy zkoušené v řadě
+- Vyhledávání písně podle textu nebo nálady
+- Zjištění BPM, tóniny a žánru skladby
+Časté dotazy
+Co všechno Song Finder umí?
+Rozpozná píseň z nahraného souboru, URL nebo živého záznamu z mikrofonu pomocí až tří nezávislých recognition enginů. Kromě toho nabízí vyhledávání podle textu či nálady, zjištění BPM a tóniny, hledání podobných skladeb a lokální audio editory pro zlepšení kvality nahrávky.
+Kolik Song Finder stojí?
+Nástroj je plně zdarma bez nutnosti registrace, e-mailu či platební karty.
+Jak začnu píseň rozpoznávat?
+Stačí na webu nahrát audio soubor (MP3, WAV, FLAC, MP4, M4A, OGG), vložit odkaz na médium nebo nahrát zvuk mikrofonem a kliknout na rozpoznání – není třeba se nikam registrovat.
+Kategorie

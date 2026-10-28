@@ -1,0 +1,9 @@
+Na český trh vstupuje nová společnost zaměřená na umělou inteligenci, respektive její nasazení v praxi. Pochází z Islandu, jmenuje se Jónsbók a spadá do kategorie označované jako legaltech. Jde o AI poháněného asistenta pro právní výzkum, analýzu nebo psaní dokumentů.
+Jónsbók umožňuje dělat rešerše a analýzy legislativy. Indexuje kompletní právní řády vybraných zemí (zákony, prováděcí vyhlášky, judikaturu a rozhodnutí soudů). Uživatel se může ptát v běžném jazyce a systém vrátí odpověď podloženou přesnými citacemi z daného právního řádu.
+Dále zvládá generování a návrhy dokumentů. Pomáhá koncipovat smlouvy, právní podání nebo memoranda podle konkrétní judikatury a zavedené praxe.
+Umí také zpracovávat vlastní podklady. Uživatelé mohou nahrávat vlastní soubory (PDF, Word, e-maily a podobně) a nechat systém analyzovat konkrétní případy nebo smlouvy.
+Možná je integrace do tradičních softwarových nástrojů a služeb. Aplikace funguje přes webové rozhraní, případně jako doplněk pro Wordu a Outlooku.
+Jónsbók teď získal investici od fondů Crowdberry Capital a Leo Capital. Ta má kromě jiného sloužit k expanzi na zahraniční trhy, v první vlně je i Česko. Tuzemský trh má na starosti manažerka Petra Karkošová.
+Karkošová pro Lupu uvedla, že Jónsbók v Česku i na dalších trzích vychází z místního práva a jazyka. Pracovat zvládá se stovkami dokumentů současně.
+“Každá země má vlastní zákony, jazyk a právní praxi a věříme, že právní AI tuto skutečnost musí respektovat. Právě na tom jsme Jónsbók od začátku stavěli: na propojení pokročilé umělé inteligence s přesnými právními rešeršemi vycházejícími z místního práva,” doplnil Bjarni Bragi Jónsson, výkonný ředitel islandského startupu.
+Jónsbók spustil své služby v roce 2025. Firmu založili Bjarni Bragi Jónsson, Bjarni Benediktsson, Ágúst Gunnarsson a Thelma Christel Kristjánsdóttir.

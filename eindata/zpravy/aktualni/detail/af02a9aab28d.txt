@@ -1,0 +1,17 @@
+GenMusic
+GenMusic je AI generátor hudby, který z textového promptu nebo vlastních textů písně vytvoří písně, instrumentální skladby a podkresovou hudbu.
+O nástroji
+GenMusic umožňuje tvůrcům, marketérům i vývojářům generovat hudbu z jediného promptu – od celých písní přes instrumentální skladby až po podkresovou hudbu pro videa, podcasty nebo hry. Uživatel nastavuje žánr (např. cinematic, lo-fi, electronic, ambient, pop, game BGM), náladu, délku (10 sekund až 3 minuty) a BPM, případně může zadat vlastní texty písně a nechat vytvořit vokální demo. Nástroj funguje na kreditovém systému, kdy jedna generace stojí 20 kreditů a neúspěšné generování je vráceno. Výsledné skladby lze přehrát a stáhnout přímo v rozhraní. Podle uvedených cenových informací se jedná o placenou službu s cenou od 99 dolarů, bezplatná verze není v dostupných údajích uvedena. GenMusic je určen pro tvorbu hudby k YouTube videím, Shorts, podcastům, reklamám, herním prototypům i filmovým trailerům. Rozhraní je v angličtině a dostupnost API ani informace o otevřeném zdrojovém kódu nejsou uvedeny.
+Klíčové vlastnosti
+- Generování z textového promptu podle žánru, nálady a BPM
+- Proměna vlastních textů písně na vokální demo
+- Nastavitelná délka skladby od 10 sekund do 3 minut
+- Žánry cinematic, lo-fi, electronic, ambient, pop i game BGM
+Časté dotazy
+Co GenMusic umí vytvořit?
+Z textového promptu nebo vlastních textů písně vygeneruje celé skladby, instrumentální hudbu nebo podkresovou hudbu pro videa, podcasty a hry, podle zvoleného žánru, nálady, délky a BPM.
+Kolik GenMusic stojí?
+Jde o placenou službu s cenou od 99 dolarů, přičemž jedna generace stojí 20 kreditů a neúspěšné generování je vráceno. Bezplatná verze není uvedena.
+Pro koho je GenMusic určený a jak začít?
+Je určený tvůrcům, marketérům i vývojářům, kteří potřebují hudbu k YouTube videím, podcastům, reklamám, herním prototypům nebo trailerům – stačí popsat náladu, žánr a nechat vygenerovat skladbu.
+Kategorie

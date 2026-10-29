@@ -1,0 +1,27 @@
+Oběti falešného odkazu musí banka vrátit peníze hned, rozhodl soud EU
+Kdo zadá údaje na falešné stránce banky a podvodník mu vybere účet, má podle Soudního dvora EU dostat peníze zpět nejpozději do konce dalšího pracovního dne poté, co podvod bance nahlásí. I když banka tvrdí, že byl neopatrný.
+Podle soudu platí jednoduché pořadí: nejdřív peníze zpátky na účet, teprve potom případný spor o to, kdo za ztrátu může. Na rychlé vrácení má ale nárok jen ten, kdo podvod bance nahlásí bez zbytečného odkladu.
+Prodávala po internetu, přišla o 700 eur
+Spor začal v Polsku. Klientka tamní banky prodávala věc přes internet a podvodník jí poslal falešný odkaz. Ten vedl na stránku, která se vydávala za její banku, a ona tam zadala své přihlašovací údaje. Přišla tak zhruba o 700 eur.
+Hned druhý den podvod bance ohlásila. Banka jí přesto peníze odmítla vrátit s odůvodněním, že se chovala hrubě nedbale.
+Soudní dvůr EU 15. října řekl, že takový důvod k odmítnutí nestačí. Banka musí peníze vrátit hned, nejpozději do konce následujícího pracovního dne poté, co se o neschválené platbě dozví nebo jí ji klient oznámí. Výjimku soud připustil jedinou: když má banka důvodné podezření, že podvod spáchal sám klient, a své důvody oznámí příslušnému úřadu.
+Vrácené peníze nejsou konec sporu
+Rozsudek neznamená, že banka o peníze přichází nadobro. Pokud později dokáže, že klient porušil své povinnosti úmyslně nebo z hrubé nedbalosti, může po něm ztrátu vymáhat. Dokazovat to ale musí ona, ne klient.
+Podle italského ekonomického deníku evropské právo rozlišuje dvě věci: vrácení peněz a otázku, kdo nakonec ztrátu ponese. Pro okradeného člověka je ten rozdíl podstatný. Nemusí čekat bez peněz, než se spor vyřeší.
+Česko má stejnou lhůtu a výjimek víc
+Pro české klienty je rozsudek důležitý, protože domácí zákon o platebním styku počítá se stejným termínem. Podle jeho § 181 musí banka u platby, kterou klient neschválil, vrátit peníze neprodleně, nejpozději do konce následujícího pracovního dne. Zákon je účinný od 13. ledna 2018.
+Výjimku podobnou té unijní zná i český zákon. Lhůta pro vrácení nezačne běžet, dokud má banka důvod se domnívat, že klient jednal podvodně, a písemně to i s odůvodněním oznámí úřadu, který na banky dohlíží.
+💡 Zajímavost: Český zákon dovoluje neschválenou platbu nahlásit až do 13 měsíců od chvíle, kdy peníze odešly z účtu. Je to ale krajní mez, ne doba, na kterou se dá spoléhat.
+Český zákon má ale ještě jeden háček. Stejný paragraf bance dovoluje vrácení odmítnout, když ztrátu nese klient, například kvůli jeho hrubé nedbalosti. Právě takový důvod soud EU pro odmítnutí okamžitého vrácení neuznal. Platné znění českého zákona je starší než rozsudek. Rozhodnutí soudu EU tak jde pro klienty dál než doslovné znění českého zákona.
+Kdo nese ztrátu nakonec, řeší § 182. Zná takzvanou spoluúčast, tedy část ztráty, kterou klient zaplatí sám. Týká se případů, kdy někdo použije ztracenou nebo ukradenou kartu či jiný platební prostředek, případně ho zneužije. Klient pak doplatí nejvýš 50 eur. Pokud ale klient úmyslně nebo z hrubé nedbalosti porušil povinnosti při ochraně svých bezpečnostních prvků, může nést ztrátu v plném rozsahu. Jak se tato pravidla uplatní právě u falešných stránek, záleží na výkladu a případně na soudu. Potěšující je jiná část téhož paragrafu: ztrátu, která vznikla až po nahlášení, klient nenese, pokud nejednal podvodně.
+Když jste platbu potvrdili sami
+Rozsudek řeší případ, kdy platbu provedl podvodník s vyzrazenými údaji. Jiná situace nastává, když klient na pokyn falešného bankéře sám potvrdí převod, třeba na údajný „bezpečný účet“. Zákon považuje platbu za schválenou, jakmile k ní plátce dal souhlas. Pravidlo o okamžitém vrácení se podle platného znění zákona týká jen plateb, které klient neschválil.
+Jak posoudit souhlas, který podvodník vylákal lstí, to pravidlo samo neřeší. Neznamená to tedy, že takový klient automaticky nemá nárok. Postup je i tady stejný: hned volat banku a případ nahlásit policii.
+Co udělat hned, jak peníze zmizí
+Česká národní banka radí co nejdřív kontaktovat svou banku, oznámit zneužití a požádat o zablokování platebních prostředků. Případ je dobré nahlásit také Policii ČR.
+Čekat se nevyplácí. Soud EU i český zákon vážou rychlé vrácení na to, že klient platbu ohlásí bez zbytečného odkladu.
+Kdo se s bankou o vrácení pře, může se odkázat na rozsudek Soudního dvora EU ve věci C-70/25 z 15. října 2026.
+Ověřeno z:
+- Soudní dvůr EU — tisková zpráva č. 147/26 k rozsudku ve věci C-70/25 (15. 10. 2026)
+- Zákon č. 370/2017 Sb., o platebním styku — § 156, 181, 182 a 188 (znění platné od 1. 10. 2025)
+- Česká národní banka — Online podvody: chraňte své peníze (stav k 24. 10. 2026)

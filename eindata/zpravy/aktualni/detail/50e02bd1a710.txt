@@ -1,0 +1,17 @@
+Lovcad
+Lovcad převádí textový popis dílu na parametrický 3D CAD model se skutečnými rozměry, exportovatelný do STEP, STL a dalších formátů.
+O nástroji
+Lovcad je nástroj pro tvorbu CAD modelů z textu, který běží přímo v prohlížeči. Stačí popsat velikost a účel součástky běžnými slovy a nástroj vytvoří parametrický model se skutečnými rozměry v milimetrech. Parametry jako počet lopatek, tloušťku nebo průměr lze upravovat tažením posuvníků a model se okamžitě přepočítá bez nového AI požadavku. Výsledný model lze exportovat do deseti formátů včetně STEP, STL, 3MF, DXF, OBJ, FBX, GLB nebo SKP pro další práci v SolidWorks, Fusion 360, AutoCADu, SketchUpu, Blenderu či slicerech pro 3D tisk. Nástroj nabízí dva modelovací režimy – přesné strojírenské modelování s pravou geometrií (díry, zaoblení, závity) pro součástky a assembly, nebo volnější tvarové modelování pro mřížky, výřezy a sochařské tvary. Mezi další funkce patří nahrávání skic, fotografií nebo PDF výkresů jako referencí, import existujících STEP souborů pro navazování na stávající model, generování technických výkresů s pohledy a kótami, kontroly vhodnosti pro CNC obrábění, FDM tisk nebo vstřikování, a výpočet hmotnosti podle zadané hustoty materiálu. Podle dostupných informací stojí předplatné 20 dolarů měsíčně, přičemž nové účty po ověření e-mailu získají 100 trvalých kreditů.
+Klíčové vlastnosti
+- Parametrický model s reálnými rozměry v milimetrech
+- Export do deseti formátů včetně STEP, STL, 3MF a OBJ
+- Úprava parametrů posuvníky bez nového AI požadavku
+- Dva režimy: přesné strojírenské modelování i tvarové modelování
+Časté dotazy
+Co přesně Lovcad umí vytvořit?
+Z textového popisu vytvoří parametrický 3D CAD model se skutečnými rozměry, který lze upravovat tažením posuvníků (počet lopatek, tloušťka, průměr) a exportovat do formátů jako STEP, STL, 3MF nebo OBJ pro další práci v SolidWorks, Fusion 360, Blenderu či slicerech pro 3D tisk.
+Kolik Lovcad stojí?
+Podle dostupných informací stojí předplatné 20 dolarů měsíčně, přičemž nové účty po ověření e-mailu získají 100 trvalých kreditů zdarma.
+Pro koho je Lovcad vhodný a jak se začíná?
+Hodí se pro konstruktéry, hobby tvůrce i lidi bez CAD zkušeností, kteří potřebují rychle vytvořit strojírenský díl nebo tvarový objekt pro 3D tisk – stačí popsat díl běžnými slovy přímo v prohlížeči a model se vygeneruje okamžitě.
+Kategorie

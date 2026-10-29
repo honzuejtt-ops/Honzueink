@@ -1,0 +1,17 @@
+Genjutsu AI
+Generátor videí, který pomocí motion transferu přenese pohyb z referenčního videa na vaše vlastní fotky či postavy.
+O nástroji
+Genjutsu AI je video generátor pracující s modelem Genjutsu 1.0, který umí přenést pohyb z nahraného referenčního videa (formát MP4/MOV, délka 4–30 s) na vlastní postavy, produkty nebo oblečení. Uživatel nahraje referenční video a doplňující reference (až 20), případně zadá prompt – pokud prompt vypne, nástroj pracuje pouze s videem a referencemi. Výstupní rozlišení lze nastavit, k dispozici je volba 720p. Vygenerovaná videa jsou standardně veřejná a zobrazují se v sekci Community, kde lze procházet ukázky od ostatních uživatelů. Pro soukromá videa je podle popisu nástroje potřeba zakoupit kredity. Pro samotné generování je nutné se přihlásit.
+Klíčové vlastnosti
+- Přenos pohybu z referenčního videa na vlastní postavy
+- Podpora formátů MP4/MOV v délce 4–30 s
+- Až 20 doplňujících referencí (postavy, produkty, oblečení)
+- Volitelný textový prompt, lze zcela vypnout
+Časté dotazy
+Co přesně Genjutsu AI umí?
+Nahrajete referenční video a nástroj přenese jeho pohyb na vaši vlastní postavu, produkt nebo oblečení pomocí modelu Genjutsu 1.0. Lze přidat až 20 doplňujících referencí a volitelně i textový prompt, výstup je ve 720p.
+Kolik to stojí?
+Přesný ceník nástroj neuvádí, generování funguje na principu kreditů, které je potřeba zakoupit přes tlačítko „Get credits“.
+Jak začít a pro koho je to vhodné?
+Stačí se přihlásit, nahrát referenční video a vlastní fotky či postavy a spustit generování; hodí se pro tvůrce krátkých virálních videí a reklamního obsahu.
+Kategorie

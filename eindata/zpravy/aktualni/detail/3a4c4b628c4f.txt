@@ -1,0 +1,17 @@
+Seedance2
+AI generátor videí Seedance 2.0 tvoří kinematografická videa se synchronizovaným zvukem z textu nebo obrázku.
+O nástroji
+Seedance2 je AI nástroj pro generování videí poháněný modelem Seedance 2.0, který umí vytvářet video z textu i z obrázku (text-to-video, image-to-video). Nabízí nativní generování zvuku společně s videem – tedy synchronizovaný dialog, okolní zvuky a efekty bez nutnosti použití samostatných audio nástrojů, včetně lip-syncu na úrovni fonémů v osmi jazycích (angličtina, mandarínština, japonština, korejština, španělština, francouzština, němčina, portugalština). Uživatelé mohou nahrát až 30 referenčních obrázků pro zachování konzistence postav, kostýmů a stylu napříč záběry. Výstup podporuje rozlišení až 4K v šesti poměrech stran, fyzikálně přesné vykreslování (tekutiny, látky, kolize) a vícezáběrové vyprávění s přirozenými přechody o délce až 30 sekund. Průměrná doba generování je uváděna pod 8 minut. Nástroj nabízí bezplatné vyzkoušení bez nutnosti zadávat platební kartu, placené plány začínají na 19,90 $ měsíčně (resp. 9,90 $ měsíčně při ročním zúčtování), přičemž plán Basic zahrnuje 560 kreditů měsíčně. Trvale bezplatná verze podle dostupných informací není nabízena.
+Klíčové vlastnosti
+- Text-to-video i image-to-video generování
+- Nativní synchronizovaný zvuk včetně dialogů a efektů
+- Lip-sync na úrovni fonémů v 8 jazycích
+- Až 30 referenčních obrázků pro konzistenci postav
+Časté dotazy
+Co přesně Seedance2 umí vytvořit?
+Generuje kinematografická videa z textu nebo obrázku se synchronizovaným zvukem, dialogy a lip-syncem, fyzikálně přesným vykreslováním a vícezáběrovým vyprávěním až do 30 sekund v rozlišení až 4K.
+Kolik Seedance2 stojí?
+Zkušební verze je zdarma bez nutnosti zadávat platební kartu, placené plány začínají na 19,90 $ měsíčně (9,90 $ měsíčně při ročním zúčtování), plán Basic zahrnuje 560 kreditů měsíčně.
+Pro koho je nástroj vhodný a jak začít?
+Hodí se pro tvorbu krátkých filmů, reklam na produkty, lifestylových videí i obsahu pro sociální sítě – stačí zadat text nebo nahrát referenční obrázky a video vygenerovat během několika minut.
+Kategorie

@@ -1,0 +1,17 @@
+AI Image Live
+Nástroj na animaci statických obrázků do krátkých AI videí – portréty, produkty, umění i staré fotky s volbou typu pohybu.
+O nástroji
+AI Image Live umožňuje proměnit jeden statický obrázek v krátké AI video. Uživatel nahraje portrét, produktovou fotku, umělecké dílo nebo starou fotografii a zvolí směr pohybu – k dispozici jsou přednastavené styly jako jemné dýchání, úsměv, mrknutí, vlasy ve větru nebo pomalý pohyb kamery dopředu. Aktuálně jsou dostupné režimy „Animate“ (jemná animace z jednoho zdrojového obrázku) a „Cinematic“ (bohatší video se scénickým pohybem a kamerou), zatímco režimy „Talking Photo“ (mluvící fotka) a „Follow Motion“ (přenos pohybu z referenčního videa) jsou označeny jako připravované. Pracovní postup je čtyřkrokový: nahrání obrázku, výběr typu pohybu, kontrola ceny v kreditech před generováním a nakonec samotné vygenerování s možností stažení nebo úpravy další verze. Nástroj před odesláním generování vždy zobrazí přesný počet potřebných kreditů, takže uživatel vidí náklady dopředu. Dostupná je také historie generování pro návrat k předchozím verzím a porovnání výsledků. Platby fungují na kreditním systému s měsíčními plány nebo jednorázovými balíčky kreditů, bezplatná verze podle dostupných informací není nabízena. Informace o API, open-source řešení ani o podpoře českého rozhraní nejsou v materiálech uvedeny. Komerční využití vygenerovaných videí závisí na konkrétním tarifu a podmínkách poskytovatele generování.
+Klíčové vlastnosti
+- Animace z jediného statického obrázku
+- Přednastavené styly pohybu (dýchání, úsměv, mrknutí, vlasy ve větru)
+- Režim Cinematic s pohybem kamery
+- Zobrazení ceny v kreditech před generováním
+Časté dotazy
+Co AI Image Live umí?
+Promění jeden statický obrázek – portrét, produkt, umělecké dílo nebo starou fotku – v krátké AI video s vybraným typem pohybu, například jemným dýcháním, úsměvem nebo pomalým pohybem kamery.
+Kolik AI Image Live stojí?
+Nástroj funguje na kreditním systému s měsíčními plány nebo jednorázovými balíčky kreditů, přičemž přesný počet potřebných kreditů se zobrazí vždy před samotným generováním.
+Jak začít a pro koho je nástroj vhodný?
+Stačí nahrát obrázek, vybrat styl pohybu, zkontrolovat cenu v kreditech a vygenerovat video; hodí se pro práci s portréty, produktovými fotkami, uměním i starými fotografiemi.
+Kategorie

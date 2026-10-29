@@ -1,0 +1,17 @@
+RephraseAI
+RephraseAI přeformuluje věty, odstavce i e-maily tak, aby byly jasnější, profesionálnější nebo stručnější, se zachováním původního významu.
+O nástroji
+RephraseAI je online nástroj pro přeformulování textu, který využívá přes 10 000 uživatelů. Nabízí profily psaní – Akademický, Profesionální, Pracovní či Kreativní – a umožňuje samostatně nastavit míru formálnosti, složitosti, stručnosti a kreativity výstupu pomocí posuvníků. Kromě úpravy celého textu obsahuje i samostatné nástroje zaměřené na konkrétní úlohy: přeformulování věty, odstavce či jednotlivého slova, dále nástroj na přepis textu (rewriter), parafrázi a takzvaný AI humanizér pro úpravu textů, které působí strojově. Pokročilejší přepis nabízí režim označovaný jako SuperRephrase™. Nástroj má bezplatnou variantu omezenou na 3 přepsání měsíčně s limitem 3 000 znaků na jedno přepsání, včetně základní kontroly tónu a stylu. Placený tarif Pro za 29 USD měsíčně odemyká neomezený počet přepisů, limit 10 000 znaků na přepsání, neomezené využití SuperRephrase™ režimu a prioritní podporu; platby jsou zpracovávány přes Stripe. Informace o veřejném API nebo open-source licenci nebyly na webu nalezeny, rozhraní je dostupné pouze v angličtině.
+Klíčové vlastnosti
+- Profily psaní: Akademický, Profesionální, Pracovní, Kreativní
+- Posuvníky pro formálnost, složitost, stručnost a kreativitu
+- Samostatné nástroje na větu, odstavec i jedno slovo
+- AI humanizér pro polidštění strojového textu
+Časté dotazy
+Co přesně RephraseAI umí?
+Přeformuluje věty, odstavce i celé e-maily tak, aby byly jasnější, profesionálnější nebo stručnější, přičemž zachová původní význam. Nabízí profily psaní a posuvníky pro nastavení formálnosti, složitosti, stručnosti a kreativity výstupu.
+Kolik RephraseAI stojí?
+Zdarma lze provést 3 přepsání měsíčně s limitem 3 000 znaků na jedno přepsání. Placený tarif Pro za 29 USD měsíčně nabízí neomezené přepisy, limit 10 000 znaků, neomezený SuperRephrase™ režim a prioritní podporu.
+Pro koho je nástroj vhodný a jak začít?
+Hodí se pro studenty, pracovníky i tvůrce textů, kteří potřebují upravit tón nebo srozumitelnost psaní. Stačí vložit text na webu a vybrat profil nebo nastavit posuvníky, žádná instalace není potřeba.
+Kategorie

@@ -1,0 +1,17 @@
+HypeMigo AI Video Trends
+Nástroj na tvorbu AI videí z trendových šablon a memů – vyberte scénu, nahrajte fotky a vytvořte krátké video.
+O nástroji
+HypeMigo nabízí knihovnu připravených video šablon (tzv. scén) inspirovaných virálními trendy – tanečními výstupy, duety, vtipnými momenty i scénkami s mazlíčky. K dispozici je 16 šablon jako Crazy Frog, Hotel Lobby, Devil Wears Prada nebo Charme Dance, každá s uvedenou orientační délkou videa (např. 10–28 sekund) a poměrem stran (9:16, 16:9, 4:3 apod.). Uživatel vybere scénu, nahraje jednu nebo dvě fotografie (JPG/PNG/WebP do 10 MB) a nástroj vygeneruje výstupní video, typicky ve formátu 12 sekund, 480p s původním AI zvukem. Generování videa je vázané na kredity webu, zatímco procházení šablon a ukládání fotografického konceptu do lokálního konceptu je možné bez nahrávání fotek a bez spotřeby kreditů. Nástroj neuvádí API ani open source řešení a rozhraní je v angličtině.
+Klíčové vlastnosti
+- 16 šablon virálních trendů (tanec, memy, mazlíčci)
+- Generování z 1–2 nahraných fotek bez psaní promptů
+- Výstup 12 sekund, 480p, s AI zvukem
+- Poměry stran 9:16, 16:9 i 4:3 podle šablony
+Časté dotazy
+Co HypeMigo přesně umí vygenerovat?
+Z vybrané trendové šablony a jedné nebo dvou nahraných fotek vytvoří krátké AI video, typicky 12 sekund v 480p s původním AI zvukem, podle zvolené scény jako Crazy Frog nebo Hotel Lobby.
+Kolik to stojí a co je zdarma?
+Procházení šablon a uložení fotografického konceptu do lokálního konceptu je zdarma bez nahrávání fotek, samotné generování videa ale spotřebovává placené kredity.
+Jak začít a pro koho je nástroj určený?
+Stačí vybrat jednu z 16 scén, nahrát jednu nebo dvě fotky ve formátu JPG/PNG/WebP do 10 MB a nechat video vygenerovat – vhodné pro každého, kdo chce rychle vytvořit zábavné video bez psaní promptů.
+Kategorie

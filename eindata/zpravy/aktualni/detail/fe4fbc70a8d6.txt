@@ -1,0 +1,17 @@
+AiLoft
+AiLoft je AI studio pro generování a úpravu obrázků pomocí modelů GPT Image a Nano Banana během několika sekund.
+O nástroji
+AiLoft je nástroj zaměřený na generování, editaci a transformaci obrázků pomocí AI modelů, konkrétně GPT Image a Gemini (Nano Banana). Je určen tvůrcům obsahu, designérům, marketérům a firmám, které potřebují rychle vytvořit produktové fotky, plakáty, loga, ilustrace nebo bannery. Nástroj umožňuje poslat jeden prompt až čtyřem modelům najednou a porovnat výsledky vedle sebe, aby si uživatel vybral tu nejlepší variantu. K dispozici jsou modely GPT Image 2.5 Flare a Sunburst s ostrými detaily a přesným textem, GPT Image 2, a dále Nano Banana Pro a Nano Banana 2 pro fotorealistické obrázky a přesné úpravy. Součástí je i řada specializovaných generátorů – AI Product Photography Generator, AI Poster Generator, AI Illustration Generator, AI Website Image Generator, AI Logo Generator pro wordmarky a ikony aplikací, a AI YouTube Thumbnail Generator. Podle externí recenze (nepotvrzeno přímo na oficiálním webu) nabízí AiLoft při registraci kredity zdarma a jednorázové balíčky bez expirace se slevou až 20 %, a provoz probíhá přímo v prohlížeči bez nutnosti GPU nebo instalace.
+Klíčové vlastnosti
+- Souběžné odeslání promptu až 4 modelům najednou
+- Porovnání výsledků z různých modelů vedle sebe
+- Modely GPT Image 2.5 Flare a Sunburst s přesným textem
+- Nano Banana Pro a Nano Banana 2 pro fotorealistické úpravy
+Časté dotazy
+Co přesně AiLoft umí vygenerovat?
+Pomocí AI modelů GPT Image a Nano Banana dokáže vygenerovat a upravit obrázky jako produktové fotky, plakáty, loga, ilustrace, bannery nebo YouTube miniatury. Jeden prompt lze poslat až čtyřem modelům najednou a porovnat výsledky vedle sebe.
+Kolik AiLoft stojí?
+Přesné ceny nejsou na oficiálním webu potvrzeny. Podle externí recenze nabízí kredity zdarma při registraci a jednorázové balíčky bez expirace se slevou až 20 %.
+Pro koho je AiLoft určený a jak se začíná?
+Je určen tvůrcům obsahu, designérům, marketérům a firmám, které potřebují rychle vytvořit vizuální materiály. Stačí spustit nástroj v prohlížeči bez instalace či GPU a zadat prompt do zvoleného generátoru nebo modelu.
+Kategorie

@@ -1,0 +1,17 @@
+EarDub
+Rozšíření pro Chrome a Edge, které v reálném čase dabuje YouTube videa a online kurzy do zvoleného jazyka pomocí AI hlasů.
+O nástroji
+EarDub je rozšíření prohlížeče, které po spuštění YouTube videa dabuje obsah pomocí AI hlasu synchronizovaně s mluvčím, takže uživatel poslouchá místo čtení titulků. Nástroj čte existující titulky videa nebo, pokud titulky chybí, zvuk přehrávaný v bufferu, a překládá s ohledem na kontext – název, téma a scénu. Dabování nabízí 75 jazyků a více než 300 AI hlasů, přičemž každý jazyk obsahuje alespoň jeden mužský a jeden ženský hlas, u některých i regionální akcenty. Rozšíření funguje v Chromu a Edge a kromě YouTube dabuje i videa na platformách jako Udemy, Coursera nebo Bilibili. Na iPhonu, Firefoxu a Safari EarDub nefunguje, na Androidu je použitelný pouze ve Vivaldi. Nástroj je určen zejména lidem, kteří se učí z videí v jazyce, jemuž rozumí jen částečně – zakladatelům sledujícím zahraniční konferenční přednášky, studentům kurzů na Udemy či Coursera nebo divákům tutoriálů a rozhovorů na YouTube. Živé přenosy ani chráněný obsah EarDub nepodporuje a funguje pouze na desktopu. Dabování videí s titulky je dostupné i ve free plánu, který nabízí 30 minut denně (maximálně 180 minut měsíčně) a omezení na 3 videa denně do délky 60 minut, bez nutnosti zadávat platební kartu. Dabování videí bez titulků je vyhrazeno placeným plánům, jejichž konkrétní ceny ale důkaz neuvádí.
+Klíčové vlastnosti
+- Reálné dabování YouTube videí AI hlasem
+- 75 jazyků a přes 300 AI hlasů
+- Dabuje i kurzy na Udemy, Coursera, Bilibili
+- Funguje bez titulků přes zvuk z bufferu
+Časté dotazy
+Co přesně EarDub umí?
+EarDub je rozšíření do prohlížeče, které v reálném čase dabuje YouTube videa a online kurzy AI hlasem synchronizovaně s mluvčím, takže místo čtení titulků si uživatel obsah poslechne v jiném jazyce. Podporuje 75 jazyků a přes 300 AI hlasů, funguje i na Udemy, Coursera nebo Bilibili.
+Kolik EarDub stojí?
+Dabování videí s titulky je zdarma v rozsahu 30 minut denně (max. 180 minut měsíčně) a 3 videa denně do 60 minut bez nutnosti zadávat kartu. Dabování videí bez titulků vyžaduje placený plán, jehož konkrétní cena ale není v podkladech uvedena.
+Pro koho je EarDub vhodný a jak začít?
+Je určen lidem učícím se z videí v jazyce, kterému rozumí jen částečně – například studentům kurzů na Udemy či Coursera, zakladatelům sledujícím zahraniční přednášky nebo divákům YouTube tutoriálů. Stačí nainstalovat rozšíření do Chromu nebo Edge a spustit video.
+Kategorie

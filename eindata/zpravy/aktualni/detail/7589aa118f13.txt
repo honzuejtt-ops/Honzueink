@@ -1,0 +1,17 @@
+TermiGram
+TermiGram je SSH terminál a SFTP klient v Telegramu – spravujte servery, spouštějte příkazy a přesouvejte soubory z telefonu.
+O nástroji
+TermiGram integruje interaktivní SSH terminál a správce souborů SFTP přímo do Telegram Mini App. Umožňuje ukládat profily serverů, spouštět příkazy, spravovat vzdálené soubory a vytvářet opakovaně použitelné příkazové úryvky (snippets), vhodné pro vývojáře a správce VPS, kteří potřebují řídit server dostupný z internetu přímo z telefonu. Nástroj nabízí Guest Share Links pro dočasný a odvolatelný přístup a Full Share Links, díky nimž si příjemce vytvoří nezávislou kopii profilu. Uložené přihlašovací údaje jsou šifrované, volitelný Master Password přidává klientské šifrování a k dispozici jsou i nástroje pro práci se SSH klíči (vytváření, import, kontrola připojení). Automatické proxy směrování je součástí bez příplatku a vestavěná AI nápověda pomáhá s dotazy ohledně TermiGramu, SSH a Linuxu. Cenově nabízí pětidenní Welcome Trial se 3 profily serverů, 3 terminálovými relacemi, 3 SFTP pracovními prostory a 1 Cloud Terminal. Po jeho skončení pokračuje trvalá bezplatná verze s jedním profilem serveru, jedním terminálem a jedním SFTP pracovním prostorem, zatímco Cloud Terminal a vyšší kapacity vyžadují placený tarif.
+Klíčové vlastnosti
+- Interaktivní SSH terminál a SFTP správce souborů v Telegramu
+- Ukládání profilů serverů a opakovaně použitelné příkazové úryvky
+- Guest Share Links pro dočasný odvolatelný přístup ke serveru
+- Full Share Links pro vytvoření nezávislé kopie profilu
+Časté dotazy
+Co přesně TermiGram umožňuje?
+Je to SSH terminál a SFTP klient integrovaný do Telegram Mini App – lze spravovat servery, spouštět příkazy, přesouvat soubory a sdílet přístup pomocí Guest nebo Full Share Links přímo z telefonu.
+Kolik TermiGram stojí?
+Po pětidenním Welcome Trialu se 3 profily serverů a Cloud Terminalem přechází účet na trvalou bezplatnou verzi s 1 profilem, 1 terminálem a 1 SFTP prostorem; Cloud Terminal a vyšší kapacity vyžadují placený tarif.
+Pro koho je TermiGram vhodný a jak začít?
+Hodí se vývojářům a správcům VPS, kteří potřebují ovládat server z mobilu – stačí spustit Telegram Mini App, přidat profil serveru a lze rovnou spouštět příkazy nebo spravovat soubory.
+Kategorie

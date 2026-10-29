@@ -1,0 +1,17 @@
+img2threejs
+img2threejs převádí jeden obrázek na webově použitelný 3D model – textovaný GLB soubor s komponentou pro React Three Fiber i vanilla Three.js loaderem.
+O nástroji
+img2threejs je nástroj, který z referenčního obrázku vytvoří texturovaný 3D model pomocí tzv. Native Mesh pipeline. Ve standardním režimu stačí jedna fotografie a vznikne jeden výsledek za 3 kredity, v režimu vysoké kvality nástroj z více pohledů (přední, zadní a 2–4 další) vygeneruje tři kandidátní modely za 9 kreditů, ze kterých si uživatel vybere. Výstupem je kompletní balíček souborů: model.glb s LOD úrovněmi pro desktop i mobil a Meshopt kompresí, React komponenta Model.tsx pro React Three Fiber, vanilla loader ModelVanilla.ts využívající GLTFLoader, soubor materials.json s konfigurací kamery, světel a materiálů, a README se změřeným počtem trojúhelníků, draw callů a velikostí souboru. Nástroj dále nabízí beta funkci Editable Draft, která z jedné fotografie vytvoří TypeScript tovární funkci s pojmenovanými primitivními částmi (např. u vrtačky 17 částí), každá s vlastním materiálem, umožňující přebarvování, skrývání nebo animaci přímo v Three.js kódu bez nutnosti generovat mesh znovu – tato varianta stojí 1–15 kreditů, nebo je zdarma 5× denně. Projekt je zmiňován jako open-source skill.
+Klíčové vlastnosti
+- Z jedné fotky vytvoří texturovaný GLB model s LOD úrovněmi
+- Režim vysoké kvality generuje 3 kandidátní modely z více pohledů
+- Balíček obsahuje React komponentu i vanilla Three.js loader
+- Soubor materials.json s kamerou, světly a materiály
+Časté dotazy
+Co přesně img2threejs vygeneruje z mého obrázku?
+Nástroj z fotografie vytvoří texturovaný 3D model GLB s LOD úrovněmi pro desktop i mobil, k tomu React komponentu Model.tsx, vanilla loader ModelVanilla.ts, soubor materials.json a README se změřeným výkonem.
+Kolik stojí vytvoření 3D modelu?
+Standardní režim z jedné fotky stojí 3 kredity za jeden výsledek, režim vysoké kvality z více pohledů stojí 9 kreditů za tři kandidátní modely k výběru. Beta funkce Editable Draft stojí 1–15 kreditů, nebo je zdarma 5× denně.
+Pro koho je img2threejs vhodný a jak začít?
+Je určen vývojářům a tvůrcům webů, kteří potřebují rychle převést obrázek na 3D model použitelný v React Three Fiber nebo vanilla Three.js – stačí nahrát jednu fotografii a zvolit standardní nebo vysokou kvalitu.
+Kategorie

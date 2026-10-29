@@ -1,0 +1,17 @@
+HOL Guard
+Bezpečnostní nástroj pro AI agenty, který před spuštěním kontroluje rizikové akce jako mazání souborů, přístup k heslům nebo instalace balíčků.
+O nástroji
+HOL Guard je lokálně běžící kontrolní vrstva pro AI coding agenty (podporuje mimo jiné Claude Code, Codex, Cursor, OpenCode). Na podporovaných integracích dokáže před spuštěním akce rozhodnout „povolit, zeptat se, nebo zablokovat“ – například u destruktivních shellových příkazů (rm -rf), čtení uložených přihlašovacích údajů (~/.aws/credentials), instalací pluginů či změn MCP, nebo pokusů o odeslání dat mimo stroj (curl na cizí server). O každé akci si vede záznam, ke kterému se lze zpětně vrátit. Nástroj funguje bez účtu a bez internetu – vyhodnocování podporovaných akcí probíhá přímo na počítači uživatele a obsah souborů podle dodaného popisu nikam neodchází. Volitelně lze zapojit Guard Cloud, kam se synchronizuje jen stručný záznam o tom, co bylo povoleno nebo zablokováno (nikdy soubory, prompty či hesla). Instalace probíhá přes pipx a odinstalace je jednoduchá (hol-guard daemon stop, pipx uninstall hol-guard), bez trvale běžících procesů na pozadí. Dodaný popis zdůrazňuje, že Guard není kompletní ochranou proti prompt injection, není síťovým firewallem ani cloudovou MCP bránou, a že skenování pluginů není zárukou bezpečnosti. Podle stránky je používání zdarma „navždy“ na jednom počítači, bez uvedení konkrétní ceny případného rozšířeného tarifu.
+Klíčové vlastnosti
+- Kontrola rizikových akcí před spuštěním (povolit/zeptat se/blokovat)
+- Blokuje destruktivní shellové příkazy jako rm -rf
+- Chrání přístup k uloženým přihlašovacím údajům (~/.aws/credentials)
+- Kontroluje instalace pluginů a změny MCP
+Časté dotazy
+Co přesně HOL Guard dělá?
+Před spuštěním kontroluje rizikové akce AI coding agentů (Claude Code, Codex, Cursor, OpenCode) jako mazání souborů, čtení hesel, instalace balíčků nebo odesílání dat mimo stroj, a rozhodne, zda je povolit, zeptat se nebo zablokovat. Ke každé akci vede záznam, ke kterému se lze vrátit.
+Kolik HOL Guard stojí?
+Používání je zdarma „navždy“ na jednom počítači. Konkrétní cena případného rozšířeného tarifu není uvedena.
+Pro koho je nástroj a jak se spouští?
+Je určen pro uživatele AI coding agentů, kteří chtějí chránit svůj počítač před rizikovými akcemi. Instaluje se přes pipx a funguje lokálně bez účtu a bez internetu, odinstalace je jednoduchá (daemon stop, pipx uninstall).
+Kategorie

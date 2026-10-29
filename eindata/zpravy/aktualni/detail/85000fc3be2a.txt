@@ -1,0 +1,17 @@
+SciFig
+AI generátor vědeckých obrázků, grafů a diagramů pro výzkumníky – z textu, dat nebo náčrtu vytvoří editovatelnou ilustraci.
+O nástroji
+SciFig je nástroj pro tvorbu vědeckých obrázků, grafů a diagramů určený výzkumníkům. Nabízí tři pracovní prostory: Illustration pro vytváření vědeckých ilustrací z textu, náčrtu, PDF, fotografie nebo jiné předlohy, DataChart pro převod dat z CSV či Excelu na publikačně připravené grafy včetně statistických testů a export do PDF nebo EPS, a FlowChart pro tvorbu editovatelných vývojových diagramů a architektur s exportem do SVG či PPTX. Mezi konkrétní nástroje patří například generátor chemických struktur, tvůrce grafických abstraktů, generátor diagramů volného tělesa, tvůrce schémat zapojení, generátor Lewisových vzorců, diagramy struktury DNA nebo generátor Kaplan-Meierových křivek přežití. Výsledné obrázky lze upravovat ve Vector Canvas jako vrstvený editovatelný SVG soubor. Podle dostupných údajů je u produktu zmíněna cena od 1 dolaru a aktuálně probíhá slevová akce na placené plány a kreditové balíčky, které podle uvedených informací nikdy nevyprší. Zda existuje trvale bezplatná varianta, z dostupných údajů nevyplývá, informace o API nebo otevřeném zdrojovém kódu nejsou k dispozici a česká lokalizace není uvedena.
+Klíčové vlastnosti
+- Tři pracovní prostory: ilustrace, grafy a vývojové diagramy
+- Tvorba obrázků z textu, náčrtu, PDF nebo fotografie
+- Převod dat z CSV či Excelu na publikačně připravené grafy se statistickými testy
+- Export do PDF, EPS, SVG nebo PPTX
+Časté dotazy
+Co přesně SciFig umí vytvořit?
+SciFig generuje vědecké ilustrace z textu, náčrtu, PDF či fotografie, převádí data z CSV nebo Excelu na publikačně připravené grafy včetně statistických testů a vytváří editovatelné vývojové diagramy a architektury. Výsledky lze dále upravovat ve vrstveném SVG editoru Vector Canvas.
+Kolik SciFig stojí?
+Podle dostupných údajů ceny začínají od 1 dolaru a aktuálně probíhá slevová akce na placené plány a kreditové balíčky, které nikdy nevyprší. Přesný ceník ani existence trvale bezplatné varianty z podkladů nevyplývá.
+Pro koho je SciFig určen a jak začít?
+Nástroj je určen výzkumníkům, kteří potřebují rychle vytvořit vědecké obrázky, grafy nebo diagramy pro publikace a prezentace. Začít lze výběrem jednoho ze tří pracovních prostorů – Illustration, DataChart nebo FlowChart – podle typu vytvářeného výstupu.
+Kategorie

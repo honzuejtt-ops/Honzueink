@@ -1,0 +1,17 @@
+Best Robot Vacuum
+AI nástroj, který podle zadaného rozpočtu, typu podlah a přítomnosti domácích mazlíčků vybere tři nejvhodnější robotické vysavače z katalogu.
+O nástroji
+Best Robot Vacuum je webová aplikace, která na základě odpovědí uživatele (rozpočet, typ podlahy, přítomnost zvířat, případně preferovaná značka) nechá AI projít katalog čítající 224 modelů od 17 značek a vybere tři doporučení s cenovým rozpětím a odkazem na nákup. Doporučení vycházejí ze strukturovaných specifikací a z publikovaných recenzí čtyř zdrojů (RTINGS, Vacuum Wars, Tom's Guide a TechGearLab), nástroj uvádí, že neprodává sponzorovaná umístění v žebříčku. Kromě samotného párovacího nástroje nabízí web i tematické průvodce zaměřené na konkrétní situace – výběr vysavače pro psí a kočičí srst, pro koberce, pro tvrdé podlahy, pro dřevěné podlahy nebo kombinaci vysávání a mopování. Je zde i srovnávací tabulka parametrů jako sání, navigace, mopování či automatizace doku pro širší přehled před zúžením výběru. Z dostupných údajů není jasné, zda je samotné použití nástroje zpoplatněné; ceny uváděné na stránce se týkají doporučených vysavačů (např. pásmo 300–500 USD nebo 1200 USD a výše), nikoli přístupu k službě samotné.
+Klíčové vlastnosti
+- Výběr tří modelů ze 224 sledovaných produktů
+- Zohledňuje rozpočet, typ podlahy a přítomnost mazlíčků
+- Srovnává specifikace i recenze ze 4 nezávislých zdrojů
+- Tematické průvodce pro srst, koberce, tvrdé a dřevěné podlahy
+Časté dotazy
+Co nástroj přesně dělá?
+Na základě zadaného rozpočtu, typu podlah a přítomnosti domácích mazlíčků projde AI katalog 224 robotických vysavačů od 17 značek a vybere tři nejvhodnější modely s cenovým rozpětím a odkazem na nákup.
+Kolik stojí použití nástroje?
+Z dostupných podkladů není jasné, zda je samotné použití zpoplatněné; uváděné ceny (např. 300–500 USD nebo 1200 USD a výše) se týkají doporučených vysavačů, nikoli přístupu ke službě.
+Pro koho je nástroj vhodný a jak začít?
+Je určen každému, kdo řeší výběr robotického vysavače domů – stačí zadat rozpočet, typ podlahy, přítomnost zvířat a případně preferovanou značku a nástroj okamžitě nabídne tři konkrétní doporučení.
+Kategorie

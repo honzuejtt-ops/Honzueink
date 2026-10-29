@@ -1,4 +1,431 @@
-|T|Apple představil první dotykový MacBook Pro. V plné palbě stojí jako nová Kia, přesto mu chybí to nejzákladnější|D|29.10.2026 12:16|P|Pro dotyky upravil Apple systém macOS a přidal průstřel známý z iPhonů. Nejvyšší konfigurace šestnáctipalcové varianty s kompletním příslušenstvím a s...|M|Cnews|X|„Dotykové displeje nemohou být svislé, z ergonomického hlediska je to příšerné.“ Těmito slovy obhajoval 10. října 2010 Steve Jobs MacBooky bez dotykového displeje. Tehdy uváděl Mac OS X Lion a největším dotykovým displejem, který Apple nabízel, byl ten v iPadu první generace. O šestnáct let později si to již Apple nemyslí a představil MacBook Pro s dotykovým OLED displejem.
+|T|Fond napojený na zbrojařskou CSG je znovu aktivní, investuje do výrobce protidronových střel|D|29.10.2026 19:55|P|Český fond Tech Horizons, za nímž stojí mimo jiné zbrojařská skupina CSG Michala Strnada, vede investiční kolo za více než 20 milionů dolarů (skoro 50...|M|Lupa|X|Český fond Tech Horizons, za nímž stojí mimo jiné zbrojařská skupina CSG Michala Strnada, vede investiční kolo za více než 20 milionů dolarů (skoro 500 milionů Kč) do kanadské zbrojní technologické firmy North Vector Dynamics. Do kola se zapojuje také samotná CSG. Pro fond jde o další investici do firmy, kterou podpořil už na jaře, a zároveň o první oznámenou investici po několika měsících, kdy na veřejnosti nebyl vůbec aktivní.
+Tech Horizons vznikl jako Presto Tech Horizons ve spolupráci investorů z Presto Ventures a CSG. Letos v březnu policie zadržela zakladatele Presto Ventures Přemysla Rubeše. Podle tehdejšího vyjádření fondu se však Rubeš na řízení ani chodu nepodílel už od září 2025 a jeho zadržení nesouviselo s podnikáním. V březnu se fond přejmenoval na Tech Horizons. Odešla z něj mimo jiné partnerka Lucie Brešová a změny se dotkly také dalších členů původního týmu.
+Aktuální investice do North Vector Dynamics má podpořit výrobu a mimo jiné expanzi kanadského startupu do Evropy a Spojených států. Hlavním produktem firmy je interceptor CM-70 určený k ničení bezpilotních letounů. Podle firmy váží tři kilogramy, dosahuje rychlosti až 900 kilometrů za hodinu a kombinuje laserové navádění s naváděním pomocí umělé inteligence v závěrečné fázi letu.
+Investiční kolo firmu podle jejího oznámení oceňuje na více než 90 milionů dolarů. Účastnilo se ho několik kanadských investorů, mimo jiné přední fond One9.
+Tech Horizons zároveň nedávno oznámil další posilu, do investičního výboru nastoupil Martin Davis, který má přes 25 let zkušeností s technologiemi a investicemi. V minulosti vedl evropský fond Molten Ventures, spoluzaložil EDT Ventures zaměřený na pozdější investiční fáze technologických firem s duálním využitím a jedenáct let sloužil v britské armádě.|E||T|Žádné zákony na ochranu dětí online, dokud nebude společné evropské řešení, řekla Evropská komise|D|29.10.2026 18:30|P|Členské státy EU nemohou následujících 12 měsíců přijímat vlastní zákony na ochranu dětí v online prostoru. Evropská komise oficiálně oznámila, že na ...|M|Lupa|X|Členské státy EU nemohou následujících 12 měsíců přijímat vlastní zákony na ochranu dětí v online prostoru. Evropská komise oficiálně oznámila, že na tuto dobu pozastaví notifikační procesy, ve kterých státy musí určité zákony Komisi nejdříve nahlásit, aby se vyloučil jejich případný konflikt s evropskými pravidly.
+Komise svůj postup zdůvodnila tím, že nechce, aby byla evropská pravidla fragmentovaná. Sama totiž v září představila návrh nařízení EU Kids Act, který má ochranu dětí online upravit závazně pro všechny členské státy.
+„Nebudeme fragmetovat náš jednotný trh. Pokud bychom to připustili, platily by v různých zemích různé zákony a různé věkové hranice, a bylo by téměř nemožné pravidla vynucovat. Platformy by takto fragmentované normy nemohly dodržovat a nakonec bychom skončili bez ochrany dětí,“ řekl na tiskové konferenci mluvčí Komise Thomas Regnier.
+Než evropské nařízení začne platit, což se patrně nedá očekávat dřív než v roce 2028, bude Komise podle Regniera po online platformách důsledně vymáhat stávající povinnosti ukotvené v nařízení o digitálních službách (Digital Services Act, DSA).
+Než Komise svůj návrh představila, začaly některé evropské státy chystat své vlastní zákony. Nejdále došla Francie, která letos v červenci schválila vlastní normu zakazující dětem přístup na sociální sítě do 15 let. Zákon ale hned v srpnu narazil u francouzského ústavního soudu, který odmítl příliš obecnou povahu zákazu. Francouzská vláda poté oznámila, že zákon přepracuje.
+Svůj zákon navrhly také další státy EU, jako je Rakousko, Slovinsko, Itálie nebo Belgie.|E||T|BMW v Číně spustilo výrobu baterií pro i3. Ta ujela 1213 km na nabití|D|29.10.2026 18:00|P|Automobilka BMW spustila výrobu 6. generace akumulátorů v Číně. Poputují např. do i3, která zajela velmi pěkných 1213 km na jedno nabití.|M|SvětHW|X|Automobilka BMW spustila výrobu 6. generace akumulátorů v Číně. Poputují např. do i3, která zajela velmi pěkných 1213 km na jedno nabití.
+Automobilka BMW už vyrábí několik modelů Neue Klasse, které využívají akumulátory Gen 6. Ty se dosud vyráběly v Debrecíně a Irlbach-Straßkirchenu, nicméně nově byla spuštěna jejich produkce i v Shenyangu v Číně, kde BMW investovalo 10 miliard juanů do továrny o rozloze 240.000 m2.
+Pro čínský trh BMW dodává speciální model i3 50L s prodlouženým rozvorem 3005 mm. Infotainment využívá AI funkce od společností Alibaba a DeepSeek, zatímco asistenty řízení vyvíjela společnost Momenta. Schopnosti nového modelu pak BMW ukázalo v nedávném testu, který demonstroval dlouhý dojezd nejnovějšího modelu.
+Dojezd na jedno nabití je totiž pro mnoho uživatelů stále významným argumentem proti přechodu na elektromobilitu, nicméně když se chce, dá se dosáhnout mnohem vyšších čísel, než co napovídají papírové údaje. Každopádně taková jízda je obvykle plná ústupků a odříkání, s reálným provozem obvykle nemá mnoho společného, ačkoli sama o sobě probíhá v běžném provozu.
+Automobilka BMW s modelem i3 50L dosáhla v rámci testu dojezdu vzdálenosti 1213 km na jedno nabití. Pro představu, oficiální dojezd vozu dle cyklu CLTC činí cca 1000 km, takže testovací vůz dokázal překonat tovární čísla o přibližně 20 %, a to ještě podotkněme, že CLTC je velmi optimistická. Průměrná spotřeba během celého pokusu totiž činila pouhých 8,8 kWh na 100 km. Jen připomeňme, že nedávno byl překonán rekord v dojezdu elektromobilem Audi A6 Sportback e-tron s 94,9kWh akumulátorem, který zvládl 1338 km při ještě mnohem nižší spotřebě 7,09 kWh/100km.
+Jde o vůz, který využívá 800V architekturu. V této verzi je k dispozici akumulátor se 113,4 kWh, přičemž využívá novou generaci výše zmíněných velkých článků Gen 6, které nabízí o více než 20 % vyšší energetickou hustotu a dojezd. Rychlost nabíjení může stoupnout až o 30 %. Pomohl i koncept cell-to-pack, kdy jsou články integrovány přímo do pouzdra baterie bez tradičních modulů, což efektivněji využívá prostor.|E||T|Herní počítače od Dellu „ničí“ procesory. V bazarech kvůli tomu budou Ryzeny nefungující v jiných deskách|D|29.10.2026 17:56|P|Herní počítače Alienware od firmy Dell mají nebezpečnou vlastnost: Procesor, který do nich jednou dáte, už nikdy nebude fungovat v jiných PC nebo desk...|M|Cnews|X|Procesory AMD mají jednu nepříjemnou funkci. Bezpečnostní technologie PSB umožňuje uzamknout CPU tak, aby se nedalo použít v jiné základní desce, než v takové, jaká ho zamkla svým klíčem. Procesor pak typicky funguje jen ve stejném modelu PC stejné značky, jinde nenaběhne. A toto uzamčení je nevratné. Dříve se to dělo jen s procesory pro servery, Threadrippery a čipy Ryzen Pro, ale pozor: Dell podle všeho zamyká i CPU v herních počítačích.
+Pozor na počítače Alienware…
+Děje se to u herních počítačů Alienware, což kdysi byla samostatná značka, už dlouho je to ale součást americké společnosti Dell (jež je globálně třetím největším výrobcem počítačů po Lenovu a HP). Na to, že Dell začal tuto praktiku (tzv. „vendor lock“) používat, upozornil na Redditu uživatel s počítačem Alienware Area-51 osazeným grafickou kartou GeForce RTX 5090 a procesorem Ryzen 9 9950X3D. Jeho procesor při pokusu o instalaci do jiných základních desek nefunguje a uživateli bylo v servisu potvrzeno, že je zamčený.
+Zdá se, že na problémy s počítači Alienware už narazilo několik uživatelů, včetně jednoho, který kvůli otestování funkčnosti do počítače nainstaloval jiný procesor (Ryzen 9 9800X3D), než který byl dodán Dellem, a deska počítače i tento nový procesor zamkla a v podstatě znehodnotila. Nejde zřejmě ani o novou věc, zprávy o zamčených procesorech Ryzen lze najít i v souvislosti s počítači Aurora R10 této značky, patrně ale znalost tohoto problému ještě nevešla do obecného povědomí.
+Dejte si proto na Alienware velký pozor. Osobně bych doporučoval se koupi počítačů, které toto dělají, zcela vyhnout, pokud můžete. A při koupi PC od velkých OEM výrobců se snažit zjistit, zda dotyčné modely vendor lock u procesorů Ryzen neprovádějí.
+Velký problém pro druhý život hardwaru na bazarovém trhu
+Na problém se zamčenými procesory typicky můžete narazit při koupi bazarového procesoru Ryzen Pro, který byl vymontován z OEM počítače značky jako HP nebo Lenovo. Ty zamykají procesory Ryzen Pro ve svém firmwaru, což ale prodejce často neví a nastává problém, kdy prodaný procesor novému majiteli v jiné desce nefunguje. Takové CPU pak vypadá jako nefunkční, třebaže při instalaci zpět do OEM počítače dané značky a konkrétního správného typu by se rozběhly. Výrobci serverů také velmi často zamykají procesory Epyc a minimálně Lenovo zamykalo procesory Threadripper Pro ve svých pracovních stanicích.
+Pro sekundární využitelnost procesorů, když původní počítač přestane fungovat nebo je upgradován, jde o velký problém a silné negativum. Aby situace byla ještě horší, desky těchto počítačů bohužel zamknou i jakýkoliv procesor, který do nich nainstalujete jako upgrade.
+U procesorů Ryzen mimo řadu Pro, natož u herních X3D modelů, ale zatím nebylo toto znehodnocování „vendor lockem“ známo. Bohužel to znamená, že i u nich se nyní budete muset při koupi z druhé ruky obávat, že mohou být zamčené a tím pádem z velké části nepoužitelné. Přitom pro hráče byla doteď koupě bazarových procesorů dobrá možnost, jak ušetřit, protože mimo poškození přetaktováním byla CPU typicky hodně spolehlivou komponentou, která proti třeba deskám, HDD či SSD nebo grafickým kartám bývala relativně málokdy vadná. Zamykání procesorů bohužel bazarový trh teď bude čím dál víc zamořovat nefunkčním hardwarem, který je obtížné identifikovat.|E||T|Thermaltake Arcus 380 TG: Panoramatická skříň se zahnutým sklem|D|29.10.2026 16:00|P|Thermaltake uvedl skříň Arcus 380 TG ARGB. Nabízí zahnuté tvrzené sklo, pět předinstalovaných ARGB ventilátorů a podporu desek se zadními konektory.|M|SvětHW|X|Thermaltake uvedl skříň Arcus 380 TG ARGB. Nabízí zahnuté tvrzené sklo, pět předinstalovaných ARGB ventilátorů a podporu desek se zadními konektory.
+Společnost Thermaltake uvádí na trh novou počítačovou skříň Arcus 380 TG ARGB, která cílí na uživatele požadující maximální vizuální prezentaci svého hardwaru. Hlavním tahákem tohoto modelu formátu Mid Tower je jednodílný panel ze zahnutého tvrzeného skla, který plynule přechází z čelní na boční stranu a poskytuje tak ničím nerušený panoramatický výhled do interiéru. Čistý vzhled hlavní komory dále umocňuje oblíbená dvoukomorová konstrukce, jež elegantně odděluje klíčové komponenty od napájecího zdroje a kabeláže.
+Výrobce u této novinky nešetřil na chlazení a rovnou z výroby ji osadil pěti 120mm PWM ventilátory s efektním podsvícením Infinity ARGB. Tři z nich jsou typu Reverse a nacházejí se na pravé straně, kde slouží k nasávání čerstvého vzduchu, zatímco zbylé dva klasické ventilátory zajišťují odvod tepla v zadní části. Pro náročnější sestavy skříň celkově nabízí prostor až pro jedenáct 120mm ventilátorů a na její horní panel lze snadno uchytit radiátor vodního chlazení o velikosti až 360 mm (případně 280 mm).
+Z hlediska hardwarové kompatibility je skříň plně připravena na moderní trendy. Podporuje základní desky formátů Mini-ITX, Micro-ATX i ATX, a to včetně stále populárnějších modelů se zadními konektory (back-connect), které umožňují téměř absolutní skrytí všech rušivých kabelů. Vnitřní prostor bez problémů pojme masivní grafické karty o délce až 430 mm, pro něž je přímo v balení připraven podpěrný držák, a vzduchové chladiče procesoru s výškou do 160 mm.
+Nezapomnělo se ani na úložný prostor, kam lze nainstalovat jeden 3,5palcový pevný disk v kombinaci se dvěma 2,5palcovými SSD, případně lze využít pozice pro celkem tři 2,5palcová SSD. Přední I/O panel na horní hraně je vybaven rychlým konektorem USB 3.2 Gen 2 Type-C, dvojicí portů USB 3.0 a HD audio výstupy. Skříň se bude prodávat ve dvou barevných variantách – klasické černé a čistě bílé edici Snow.|E||T|Bambu Lab rozjel Black Friday: Na 3D tiskárně ušetříte až 350 eur, při větším odběru filamentů pak až 47 %|D|29.10.2026 15:34|P|Bambu Lab spustil Black Friday slevy na 3D tiskárny, filamenty a hromadu příslušenství. Ušetřit lze až 350 eur na tiskárně, filamenty jdou při hromadn...|M|Cnews|X|Po českém Průšovi představil svoji Black Friday nabídku i jeho velký konkurent Bambu Lab. Společnost láká na slevy 3D tiskáren, AMS, filamentů a hromadu dalšího. Slevy trvají do 1. prosince, pokud tak přemýšlíte od o rozšíření skladových zásob nebo pořízení nové tiskárny, může být nyní ten správný čas.
+Až 47 % dolů na filamenty
+Výčet slev začíná u filamentů, na které již tradičně platí, že čím více jich objednáte, tím výhodnější cenu dostanete. Například u klasického PLA se můžete dostat i na 9 € (okolo 220 korun) za cívku, pokud jich nakoupíte najednou více než 14 kusů. Podobně výhodně můžete i další materiály, nebo se mrknout na některé z nabízených balíčků. Zde jsou například s 40% slevou ABS-GF, TPU 95A HF nebo TPU kompatibilní s AMS.
+Zde tak může dávat smysl domluvit se například s kamarádem či kolegou z práce a doplnit si tak společně zásoby za výhodnější ceny.
+Sleva až 350 € na nákup 3D tiskárny
+Společnost zlevnila i vybrané 3D tiskárny ze své nabídky společně s příslušenstvím jako AMS 2 Pro, AMS HT, náhradní trysky, tiskové pláty a další. Z vybraných 3D tiskáren jsou zlevněné:
+Zlevněné jsou rovněž produkty z kategorie Maker’s Suppy a materiály jako dřevotřísky, překližky, korkové desky nebo barevné papíry pro 3D tiskárny vybavené řezacím laserem.|E||T|RephraseAI|D|29.10.2026 15:20|P|RephraseAI přeformuluje věty, odstavce i e-maily tak, aby byly jasnější, profesionálnější nebo stručnější, se zachováním původního významu.|M|EJAJ|X|RephraseAI
+RephraseAI přeformuluje věty, odstavce i e-maily tak, aby byly jasnější, profesionálnější nebo stručnější, se zachováním původního významu.
+O nástroji
+RephraseAI je online nástroj pro přeformulování textu, který využívá přes 10 000 uživatelů. Nabízí profily psaní – Akademický, Profesionální, Pracovní či Kreativní – a umožňuje samostatně nastavit míru formálnosti, složitosti, stručnosti a kreativity výstupu pomocí posuvníků. Kromě úpravy celého textu obsahuje i samostatné nástroje zaměřené na konkrétní úlohy: přeformulování věty, odstavce či jednotlivého slova, dále nástroj na přepis textu (rewriter), parafrázi a takzvaný AI humanizér pro úpravu textů, které působí strojově. Pokročilejší přepis nabízí režim označovaný jako SuperRephrase™. Nástroj má bezplatnou variantu omezenou na 3 přepsání měsíčně s limitem 3 000 znaků na jedno přepsání, včetně základní kontroly tónu a stylu. Placený tarif Pro za 29 USD měsíčně odemyká neomezený počet přepisů, limit 10 000 znaků na přepsání, neomezené využití SuperRephrase™ režimu a prioritní podporu; platby jsou zpracovávány přes Stripe. Informace o veřejném API nebo open-source licenci nebyly na webu nalezeny, rozhraní je dostupné pouze v angličtině.
+Klíčové vlastnosti
+- Profily psaní: Akademický, Profesionální, Pracovní, Kreativní
+- Posuvníky pro formálnost, složitost, stručnost a kreativitu
+- Samostatné nástroje na větu, odstavec i jedno slovo
+- AI humanizér pro polidštění strojového textu
+Časté dotazy
+Co přesně RephraseAI umí?
+Přeformuluje věty, odstavce i celé e-maily tak, aby byly jasnější, profesionálnější nebo stručnější, přičemž zachová původní význam. Nabízí profily psaní a posuvníky pro nastavení formálnosti, složitosti, stručnosti a kreativity výstupu.
+Kolik RephraseAI stojí?
+Zdarma lze provést 3 přepsání měsíčně s limitem 3 000 znaků na jedno přepsání. Placený tarif Pro za 29 USD měsíčně nabízí neomezené přepisy, limit 10 000 znaků, neomezený SuperRephrase™ režim a prioritní podporu.
+Pro koho je nástroj vhodný a jak začít?
+Hodí se pro studenty, pracovníky i tvůrce textů, kteří potřebují upravit tón nebo srozumitelnost psaní. Stačí vložit text na webu a vybrat profil nebo nastavit posuvníky, žádná instalace není potřeba.
+Kategorie|E||T|Ecommerce Data API|D|29.10.2026 15:20|P|API pro data z Amazonu zaměřené na výzkum produktů, klíčových slov a trhu, určené vývojářům a prodejcům.|M|EJAJ|X|Ecommerce Data API
+API pro data z Amazonu zaměřené na výzkum produktů, klíčových slov a trhu, určené vývojářům a prodejcům.
+O nástroji
+Ecommerce Data API poskytuje přístup k datům z Amazonu prostřednictvím jednotného REST rozhraní a MCP služby. K dispozici je 45 koncových bodů rozdělených do skupin podle zaměření – 12 pro data o produktech (detaily listingu, prodeje, recenze, historické trendy), 11 pro klíčová slova (vyhledávací dotazy, zpětná analýza traffic klíčových slov, ABA žebříčky, konverzní poměry), 14 pro analýzu trhu (velikost kategorií, koncentrace značek, cenová pásma, hodnocení a poptávkové trendy), dále API pro analýzu traffiku, globální databázi ochranných známek a rozpoznávání textu z obrázků. Po registraci získávají uživatelé 5 bezplatných API volání platných po dobu 3 dnů, poté je nutné vytvořit API klíč v uživatelském účtu. Klíče lze kdykoliv vytvářet i odvolávat, službu lze využívat i přes MCP pro napojení na AI agenty. Příkladem je dotaz na detail konkrétního ASIN, který vrací cenu, hodnocení, počet recenzí, prodejce, fulfillment metodu i varianty produktu. Dokumentace popisuje jednotné schéma odpovědí a autentizaci, systém zaznamenává spotřebu kreditů, chyby a výkon jednotlivých volání pro reporting využití. Nástroj je určen zejména prodejcům na Amazonu a vývojářům budujícím nástroje pro výběr produktů a automatizaci výzkumu.
+Klíčové vlastnosti
+- 45 koncových bodů pro produkty, klíčová slova a trh
+- Detail ASIN včetně ceny, hodnocení a variant
+- Zpětná analýza traffic klíčových slov a ABA žebříčky
+- Analýza velikosti kategorií a koncentrace značek
+Časté dotazy
+Co všechno Ecommerce Data API umí?
+Poskytuje 45 koncových bodů pro data z Amazonu – detaily produktů, prodeje a recenze, analýzu klíčových slov a traffic, tržní analýzy podle kategorií a značek, dále sledování traffiku, globální databázi ochranných známek a rozpoznávání textu z obrázků.
+Kolik Ecommerce Data API stojí?
+Po registraci získáte 5 bezplatných API volání platných 3 dny, poté je nutné vytvořit placený API klíč v účtu; konkrétní tarify nejsou v podkladech uvedeny.
+Pro koho je nástroj určený a jak začít?
+Je určen prodejcům na Amazonu a vývojářům tvořícím nástroje pro výzkum produktů a automatizaci. Stačí se zaregistrovat, vygenerovat API klíč a podle dokumentace volat vybrané koncové body nebo napojit službu přes MCP.
+Kategorie|E||T|Lovcad|D|29.10.2026 15:20|P|Lovcad převádí textový popis dílu na parametrický 3D CAD model se skutečnými rozměry, exportovatelný do STEP, STL a dalších formátů.|M|EJAJ|X|Lovcad
+Lovcad převádí textový popis dílu na parametrický 3D CAD model se skutečnými rozměry, exportovatelný do STEP, STL a dalších formátů.
+O nástroji
+Lovcad je nástroj pro tvorbu CAD modelů z textu, který běží přímo v prohlížeči. Stačí popsat velikost a účel součástky běžnými slovy a nástroj vytvoří parametrický model se skutečnými rozměry v milimetrech. Parametry jako počet lopatek, tloušťku nebo průměr lze upravovat tažením posuvníků a model se okamžitě přepočítá bez nového AI požadavku. Výsledný model lze exportovat do deseti formátů včetně STEP, STL, 3MF, DXF, OBJ, FBX, GLB nebo SKP pro další práci v SolidWorks, Fusion 360, AutoCADu, SketchUpu, Blenderu či slicerech pro 3D tisk. Nástroj nabízí dva modelovací režimy – přesné strojírenské modelování s pravou geometrií (díry, zaoblení, závity) pro součástky a assembly, nebo volnější tvarové modelování pro mřížky, výřezy a sochařské tvary. Mezi další funkce patří nahrávání skic, fotografií nebo PDF výkresů jako referencí, import existujících STEP souborů pro navazování na stávající model, generování technických výkresů s pohledy a kótami, kontroly vhodnosti pro CNC obrábění, FDM tisk nebo vstřikování, a výpočet hmotnosti podle zadané hustoty materiálu. Podle dostupných informací stojí předplatné 20 dolarů měsíčně, přičemž nové účty po ověření e-mailu získají 100 trvalých kreditů.
+Klíčové vlastnosti
+- Parametrický model s reálnými rozměry v milimetrech
+- Export do deseti formátů včetně STEP, STL, 3MF a OBJ
+- Úprava parametrů posuvníky bez nového AI požadavku
+- Dva režimy: přesné strojírenské modelování i tvarové modelování
+Časté dotazy
+Co přesně Lovcad umí vytvořit?
+Z textového popisu vytvoří parametrický 3D CAD model se skutečnými rozměry, který lze upravovat tažením posuvníků (počet lopatek, tloušťka, průměr) a exportovat do formátů jako STEP, STL, 3MF nebo OBJ pro další práci v SolidWorks, Fusion 360, Blenderu či slicerech pro 3D tisk.
+Kolik Lovcad stojí?
+Podle dostupných informací stojí předplatné 20 dolarů měsíčně, přičemž nové účty po ověření e-mailu získají 100 trvalých kreditů zdarma.
+Pro koho je Lovcad vhodný a jak se začíná?
+Hodí se pro konstruktéry, hobby tvůrce i lidi bez CAD zkušeností, kteří potřebují rychle vytvořit strojírenský díl nebo tvarový objekt pro 3D tisk – stačí popsat díl běžnými slovy přímo v prohlížeči a model se vygeneruje okamžitě.
+Kategorie|E||T|EarDub|D|29.10.2026 15:20|P|Rozšíření pro Chrome a Edge, které v reálném čase dabuje YouTube videa a online kurzy do zvoleného jazyka pomocí AI hlasů.|M|EJAJ|X|EarDub
+Rozšíření pro Chrome a Edge, které v reálném čase dabuje YouTube videa a online kurzy do zvoleného jazyka pomocí AI hlasů.
+O nástroji
+EarDub je rozšíření prohlížeče, které po spuštění YouTube videa dabuje obsah pomocí AI hlasu synchronizovaně s mluvčím, takže uživatel poslouchá místo čtení titulků. Nástroj čte existující titulky videa nebo, pokud titulky chybí, zvuk přehrávaný v bufferu, a překládá s ohledem na kontext – název, téma a scénu. Dabování nabízí 75 jazyků a více než 300 AI hlasů, přičemž každý jazyk obsahuje alespoň jeden mužský a jeden ženský hlas, u některých i regionální akcenty. Rozšíření funguje v Chromu a Edge a kromě YouTube dabuje i videa na platformách jako Udemy, Coursera nebo Bilibili. Na iPhonu, Firefoxu a Safari EarDub nefunguje, na Androidu je použitelný pouze ve Vivaldi. Nástroj je určen zejména lidem, kteří se učí z videí v jazyce, jemuž rozumí jen částečně – zakladatelům sledujícím zahraniční konferenční přednášky, studentům kurzů na Udemy či Coursera nebo divákům tutoriálů a rozhovorů na YouTube. Živé přenosy ani chráněný obsah EarDub nepodporuje a funguje pouze na desktopu. Dabování videí s titulky je dostupné i ve free plánu, který nabízí 30 minut denně (maximálně 180 minut měsíčně) a omezení na 3 videa denně do délky 60 minut, bez nutnosti zadávat platební kartu. Dabování videí bez titulků je vyhrazeno placeným plánům, jejichž konkrétní ceny ale důkaz neuvádí.
+Klíčové vlastnosti
+- Reálné dabování YouTube videí AI hlasem
+- 75 jazyků a přes 300 AI hlasů
+- Dabuje i kurzy na Udemy, Coursera, Bilibili
+- Funguje bez titulků přes zvuk z bufferu
+Časté dotazy
+Co přesně EarDub umí?
+EarDub je rozšíření do prohlížeče, které v reálném čase dabuje YouTube videa a online kurzy AI hlasem synchronizovaně s mluvčím, takže místo čtení titulků si uživatel obsah poslechne v jiném jazyce. Podporuje 75 jazyků a přes 300 AI hlasů, funguje i na Udemy, Coursera nebo Bilibili.
+Kolik EarDub stojí?
+Dabování videí s titulky je zdarma v rozsahu 30 minut denně (max. 180 minut měsíčně) a 3 videa denně do 60 minut bez nutnosti zadávat kartu. Dabování videí bez titulků vyžaduje placený plán, jehož konkrétní cena ale není v podkladech uvedena.
+Pro koho je EarDub vhodný a jak začít?
+Je určen lidem učícím se z videí v jazyce, kterému rozumí jen částečně – například studentům kurzů na Udemy či Coursera, zakladatelům sledujícím zahraniční přednášky nebo divákům YouTube tutoriálů. Stačí nainstalovat rozšíření do Chromu nebo Edge a spustit video.
+Kategorie|E||T|AiLoft|D|29.10.2026 15:20|P|AiLoft je AI studio pro generování a úpravu obrázků pomocí modelů GPT Image a Nano Banana během několika sekund.|M|EJAJ|X|AiLoft
+AiLoft je AI studio pro generování a úpravu obrázků pomocí modelů GPT Image a Nano Banana během několika sekund.
+O nástroji
+AiLoft je nástroj zaměřený na generování, editaci a transformaci obrázků pomocí AI modelů, konkrétně GPT Image a Gemini (Nano Banana). Je určen tvůrcům obsahu, designérům, marketérům a firmám, které potřebují rychle vytvořit produktové fotky, plakáty, loga, ilustrace nebo bannery. Nástroj umožňuje poslat jeden prompt až čtyřem modelům najednou a porovnat výsledky vedle sebe, aby si uživatel vybral tu nejlepší variantu. K dispozici jsou modely GPT Image 2.5 Flare a Sunburst s ostrými detaily a přesným textem, GPT Image 2, a dále Nano Banana Pro a Nano Banana 2 pro fotorealistické obrázky a přesné úpravy. Součástí je i řada specializovaných generátorů – AI Product Photography Generator, AI Poster Generator, AI Illustration Generator, AI Website Image Generator, AI Logo Generator pro wordmarky a ikony aplikací, a AI YouTube Thumbnail Generator. Podle externí recenze (nepotvrzeno přímo na oficiálním webu) nabízí AiLoft při registraci kredity zdarma a jednorázové balíčky bez expirace se slevou až 20 %, a provoz probíhá přímo v prohlížeči bez nutnosti GPU nebo instalace.
+Klíčové vlastnosti
+- Souběžné odeslání promptu až 4 modelům najednou
+- Porovnání výsledků z různých modelů vedle sebe
+- Modely GPT Image 2.5 Flare a Sunburst s přesným textem
+- Nano Banana Pro a Nano Banana 2 pro fotorealistické úpravy
+Časté dotazy
+Co přesně AiLoft umí vygenerovat?
+Pomocí AI modelů GPT Image a Nano Banana dokáže vygenerovat a upravit obrázky jako produktové fotky, plakáty, loga, ilustrace, bannery nebo YouTube miniatury. Jeden prompt lze poslat až čtyřem modelům najednou a porovnat výsledky vedle sebe.
+Kolik AiLoft stojí?
+Přesné ceny nejsou na oficiálním webu potvrzeny. Podle externí recenze nabízí kredity zdarma při registraci a jednorázové balíčky bez expirace se slevou až 20 %.
+Pro koho je AiLoft určený a jak se začíná?
+Je určen tvůrcům obsahu, designérům, marketérům a firmám, které potřebují rychle vytvořit vizuální materiály. Stačí spustit nástroj v prohlížeči bez instalace či GPU a zadat prompt do zvoleného generátoru nebo modelu.
+Kategorie|E||T|HypeMigo AI Video Trends|D|29.10.2026 15:20|P|Nástroj na tvorbu AI videí z trendových šablon a memů – vyberte scénu, nahrajte fotky a vytvořte krátké video.|M|EJAJ|X|HypeMigo AI Video Trends
+Nástroj na tvorbu AI videí z trendových šablon a memů – vyberte scénu, nahrajte fotky a vytvořte krátké video.
+O nástroji
+HypeMigo nabízí knihovnu připravených video šablon (tzv. scén) inspirovaných virálními trendy – tanečními výstupy, duety, vtipnými momenty i scénkami s mazlíčky. K dispozici je 16 šablon jako Crazy Frog, Hotel Lobby, Devil Wears Prada nebo Charme Dance, každá s uvedenou orientační délkou videa (např. 10–28 sekund) a poměrem stran (9:16, 16:9, 4:3 apod.). Uživatel vybere scénu, nahraje jednu nebo dvě fotografie (JPG/PNG/WebP do 10 MB) a nástroj vygeneruje výstupní video, typicky ve formátu 12 sekund, 480p s původním AI zvukem. Generování videa je vázané na kredity webu, zatímco procházení šablon a ukládání fotografického konceptu do lokálního konceptu je možné bez nahrávání fotek a bez spotřeby kreditů. Nástroj neuvádí API ani open source řešení a rozhraní je v angličtině.
+Klíčové vlastnosti
+- 16 šablon virálních trendů (tanec, memy, mazlíčci)
+- Generování z 1–2 nahraných fotek bez psaní promptů
+- Výstup 12 sekund, 480p, s AI zvukem
+- Poměry stran 9:16, 16:9 i 4:3 podle šablony
+Časté dotazy
+Co HypeMigo přesně umí vygenerovat?
+Z vybrané trendové šablony a jedné nebo dvou nahraných fotek vytvoří krátké AI video, typicky 12 sekund v 480p s původním AI zvukem, podle zvolené scény jako Crazy Frog nebo Hotel Lobby.
+Kolik to stojí a co je zdarma?
+Procházení šablon a uložení fotografického konceptu do lokálního konceptu je zdarma bez nahrávání fotek, samotné generování videa ale spotřebovává placené kredity.
+Jak začít a pro koho je nástroj určený?
+Stačí vybrat jednu z 16 scén, nahrát jednu nebo dvě fotky ve formátu JPG/PNG/WebP do 10 MB a nechat video vygenerovat – vhodné pro každého, kdo chce rychle vytvořit zábavné video bez psaní promptů.
+Kategorie|E||T|Alois – obchodní pomocník|D|29.10.2026 15:20|P|Alois hledá vhodné B2B firmy a připravuje osobní e-maily s nabídkou – vy je schválíte v Telegramu a odešlete.|M|EJAJ|X|Alois – obchodní pomocník
+Alois hledá vhodné B2B firmy a připravuje osobní e-maily s nabídkou – vy je schválíte v Telegramu a odešlete.
+O nástroji
+Alois je obchodní pomocník určený malým firmám, které nabízejí služby jiným firmám – například úklid, CNC výrobu nebo zakázkové služby. Nástroj za vás vyhledá potenciální zákazníky ve vašem regionu a ke každé firmě připraví konkrétní e-mail s vaší nabídkou včetně důvodu oslovení. Návrhy procházíte v soukromém chatu aplikace Telegram a každé odeslání sami schválíte – nic se neodešle bez vašeho vědomí. Zájemci si mohou bezplatně vyžádat ukázku: Alois připraví 3 konkrétní firmy s důvody výběru a 1 vzorový e-mail přímo pro vaše podnikání, aniž by cokoliv objednávali. Placená spolupráce začíná pilotem za 1 990 Kč na 14 dní, v jehož rámci dostanete 20 firem s hotovými e-maily, nastavení pro vaši firmu a zaškolení. Dobrovolné pokračování stojí 2 990 Kč za 30 dní a zahrnuje 60 dalších návrhů. Všechny ceny jsou konečné, bez ročního závazku. Služba je provozována česky a je určena pro jednu firmu, nabídku a e-mailovou schránku. Provozovatel otevřeně uvádí, že Alois nezaručuje získání zakázky – vybrané firmy jsou příležitosti k oslovení, jejichž skutečný zájem se teprve ověřuje odpovědí.
+Klíčové vlastnosti
+- Vyhledá vhodné B2B firmy podle oboru a regionu
+- Připraví konkrétní e-mail s nabídkou a důvodem oslovení
+- Schvalování návrhů v soukromém chatu Telegramu
+- Nic se neodešle bez vašeho schválení
+Časté dotazy
+Co přesně Alois umí?
+Najde vhodné firmy ve vašem regionu a ke každé připraví konkrétní e-mail s nabídkou a důvodem oslovení. Návrhy schvalujete v Telegramu a odešlou se až po vašem souhlasu.
+Kolik to stojí?
+Bezplatná ukázka obsahuje 3 firmy a 1 vzorový e-mail bez objednávky. Pilot na 14 dní s 20 návrhy stojí 1 990 Kč, pokračování na 30 dní s 60 návrhy pak 2 990 Kč.
+Pro koho je Alois a jak začít?
+Je určen malým firmám nabízejícím služby jiným firmám, například úklidu, CNC výrobě nebo zakázkové výrobě. Stačí poslat svůj web a zdarma dostanete ukázku tří firem a jednoho e-mailu.
+Kategorie|E||T|Seedance2|D|29.10.2026 15:20|P|AI generátor videí Seedance 2.0 tvoří kinematografická videa se synchronizovaným zvukem z textu nebo obrázku.|M|EJAJ|X|Seedance2
+AI generátor videí Seedance 2.0 tvoří kinematografická videa se synchronizovaným zvukem z textu nebo obrázku.
+O nástroji
+Seedance2 je AI nástroj pro generování videí poháněný modelem Seedance 2.0, který umí vytvářet video z textu i z obrázku (text-to-video, image-to-video). Nabízí nativní generování zvuku společně s videem – tedy synchronizovaný dialog, okolní zvuky a efekty bez nutnosti použití samostatných audio nástrojů, včetně lip-syncu na úrovni fonémů v osmi jazycích (angličtina, mandarínština, japonština, korejština, španělština, francouzština, němčina, portugalština). Uživatelé mohou nahrát až 30 referenčních obrázků pro zachování konzistence postav, kostýmů a stylu napříč záběry. Výstup podporuje rozlišení až 4K v šesti poměrech stran, fyzikálně přesné vykreslování (tekutiny, látky, kolize) a vícezáběrové vyprávění s přirozenými přechody o délce až 30 sekund. Průměrná doba generování je uváděna pod 8 minut. Nástroj nabízí bezplatné vyzkoušení bez nutnosti zadávat platební kartu, placené plány začínají na 19,90 $ měsíčně (resp. 9,90 $ měsíčně při ročním zúčtování), přičemž plán Basic zahrnuje 560 kreditů měsíčně. Trvale bezplatná verze podle dostupných informací není nabízena.
+Klíčové vlastnosti
+- Text-to-video i image-to-video generování
+- Nativní synchronizovaný zvuk včetně dialogů a efektů
+- Lip-sync na úrovni fonémů v 8 jazycích
+- Až 30 referenčních obrázků pro konzistenci postav
+Časté dotazy
+Co přesně Seedance2 umí vytvořit?
+Generuje kinematografická videa z textu nebo obrázku se synchronizovaným zvukem, dialogy a lip-syncem, fyzikálně přesným vykreslováním a vícezáběrovým vyprávěním až do 30 sekund v rozlišení až 4K.
+Kolik Seedance2 stojí?
+Zkušební verze je zdarma bez nutnosti zadávat platební kartu, placené plány začínají na 19,90 $ měsíčně (9,90 $ měsíčně při ročním zúčtování), plán Basic zahrnuje 560 kreditů měsíčně.
+Pro koho je nástroj vhodný a jak začít?
+Hodí se pro tvorbu krátkých filmů, reklam na produkty, lifestylových videí i obsahu pro sociální sítě – stačí zadat text nebo nahrát referenční obrázky a video vygenerovat během několika minut.
+Kategorie|E||T|img2threejs|D|29.10.2026 15:20|P|img2threejs převádí jeden obrázek na webově použitelný 3D model – textovaný GLB soubor s komponentou pro React Three Fiber i vanilla Three.js loaderem...|M|EJAJ|X|img2threejs
+img2threejs převádí jeden obrázek na webově použitelný 3D model – textovaný GLB soubor s komponentou pro React Three Fiber i vanilla Three.js loaderem.
+O nástroji
+img2threejs je nástroj, který z referenčního obrázku vytvoří texturovaný 3D model pomocí tzv. Native Mesh pipeline. Ve standardním režimu stačí jedna fotografie a vznikne jeden výsledek za 3 kredity, v režimu vysoké kvality nástroj z více pohledů (přední, zadní a 2–4 další) vygeneruje tři kandidátní modely za 9 kreditů, ze kterých si uživatel vybere. Výstupem je kompletní balíček souborů: model.glb s LOD úrovněmi pro desktop i mobil a Meshopt kompresí, React komponenta Model.tsx pro React Three Fiber, vanilla loader ModelVanilla.ts využívající GLTFLoader, soubor materials.json s konfigurací kamery, světel a materiálů, a README se změřeným počtem trojúhelníků, draw callů a velikostí souboru. Nástroj dále nabízí beta funkci Editable Draft, která z jedné fotografie vytvoří TypeScript tovární funkci s pojmenovanými primitivními částmi (např. u vrtačky 17 částí), každá s vlastním materiálem, umožňující přebarvování, skrývání nebo animaci přímo v Three.js kódu bez nutnosti generovat mesh znovu – tato varianta stojí 1–15 kreditů, nebo je zdarma 5× denně. Projekt je zmiňován jako open-source skill.
+Klíčové vlastnosti
+- Z jedné fotky vytvoří texturovaný GLB model s LOD úrovněmi
+- Režim vysoké kvality generuje 3 kandidátní modely z více pohledů
+- Balíček obsahuje React komponentu i vanilla Three.js loader
+- Soubor materials.json s kamerou, světly a materiály
+Časté dotazy
+Co přesně img2threejs vygeneruje z mého obrázku?
+Nástroj z fotografie vytvoří texturovaný 3D model GLB s LOD úrovněmi pro desktop i mobil, k tomu React komponentu Model.tsx, vanilla loader ModelVanilla.ts, soubor materials.json a README se změřeným výkonem.
+Kolik stojí vytvoření 3D modelu?
+Standardní režim z jedné fotky stojí 3 kredity za jeden výsledek, režim vysoké kvality z více pohledů stojí 9 kreditů za tři kandidátní modely k výběru. Beta funkce Editable Draft stojí 1–15 kreditů, nebo je zdarma 5× denně.
+Pro koho je img2threejs vhodný a jak začít?
+Je určen vývojářům a tvůrcům webů, kteří potřebují rychle převést obrázek na 3D model použitelný v React Three Fiber nebo vanilla Three.js – stačí nahrát jednu fotografii a zvolit standardní nebo vysokou kvalitu.
+Kategorie|E||T|PopNow|D|29.10.2026 15:20|P|PopNow je AI studio pro tvorbu videí, obrázků a hudby – z fotky nebo textu vytvoří video, reklamu, píseň nebo film.|M|EJAJ|X|PopNow
+PopNow je AI studio pro tvorbu videí, obrázků a hudby – z fotky nebo textu vytvoří video, reklamu, píseň nebo film.
+O nástroji
+PopNow je online AI studio zaměřené na tvorbu videí, obrázků a hudby. Nabízí přístup k předním AI modelům, přes 110 aplikací a více než 210 „viral“ efektů, pomocí kterých lze z fotky nebo jednoduchého textového zadání vytvořit video, obrázek, reklamu, píseň nebo celý film. Součástí nabídky jsou i sezónní šablony, například vánoční fotky nebo proměna do halloweenského kostýmu. Platforma funguje bez klasického předplatného, place se formou kreditů – jedna ukázková tvorba videa je v důkazu uvedena v ceně kolem 185 kreditů, tedy přibližně 0,185 dolaru. Bezplatná verze není v důkazu uvedena, takže nástroj je pravděpodobně placený na bázi kreditů. Rozhraní webu je v angličtině, informace o API ani o otevřeném zdrojovém kódu z dostupných podkladů nevyplývají.
+Klíčové vlastnosti
+- Přes 110 aplikací a 210 virálních efektů
+- Generování videí, obrázků, hudby i celých filmů
+- Tvorba z fotky nebo jednoduchého textového zadání
+- Sezónní šablony (vánoční fotky, halloweenský kostým)
+Časté dotazy
+Co všechno PopNow umí vytvořit?
+Z fotky nebo textového zadání vytvoří video, obrázek, reklamu, píseň nebo celý film pomocí přes 110 aplikací a 210 virálních efektů.
+Kolik PopNow stojí?
+Nástroj funguje bez předplatného na bázi kreditů – například jedna ukázková tvorba videa stojí přibližně 185 kreditů, tedy kolem 0,185 dolaru.
+Pro koho je PopNow určený a jak se začíná?
+Je určený komukoliv, kdo chce rychle vytvořit video, obrázek nebo hudbu z fotky či textu – stačí se zaregistrovat na webu a nahrát fotku nebo zadat text.
+Kategorie|E||T|BeatAPI|D|29.10.2026 15:20|P|BeatAPI propojí vaše AI agenty s předními modely až o 78 % levněji a více než 1 000 datovými API přes jediný klíč.|M|EJAJ|X|BeatAPI
+BeatAPI propojí vaše AI agenty s předními modely až o 78 % levněji a více než 1 000 datovými API přes jediný klíč.
+O nástroji
+BeatAPI je jednotné rozhraní určené vývojářům a tvůrcům AI agentů, kteří potřebují přístup k jazykovým modelům a datovým zdrojům bez nutnosti spravovat desítky různých klíčů. Přes jeden API klíč získáte přístup k předním modelům (včetně DeepSeek V4) za ceny až o 78 % nižší než u přímých poskytovatelů, a zároveň k více než 1 000 datovým API pokrývajícím oblasti jako webové vyhledávání nebo SEO data. Služba podporuje protokol MCP (Model Context Protocol) – agenta stačí nasměrovat na endpoint `https://beatapi.io/mcp` a ten si sám vyhledá dostupné schopnosti příkazem `beatapi capabilities search`. Kompatibilita s OpenAI klientem umožňuje jednoduchou integraci pouhou změnou `base_url` na `https://api.beatapi.io/v1`, takže přechod z jiných poskytovatelů je minimálně náročný. BeatAPI nabízí možnost vyzkoušet vybrané modely (DeepSeek V4 a JEV) zdarma, plnohodnotný bezplatný tarif však v dostupných podkladech uveden není – služba je primárně postavena na platbách podle skutečného využití. K dispozici je také nástroj příkazové řádky (`beatapi --help`) a přehled cen pro srovnání nákladů oproti přímému přístupu k modelům.
+Klíčové vlastnosti
+- Přístup k předním AI modelům přes jediný API klíč
+- Ceny modelů až o 78 % nižší než napřímo
+- Přes 1 000 datových API (web search, SEO data)
+- Podpora MCP protokolu přes endpoint beatapi.io/mcp
+Časté dotazy
+Co BeatAPI přesně umí?
+Sjednocuje přístup k předním jazykovým modelům (např. DeepSeek V4) a více než 1 000 datovým API pod jedním API klíčem, včetně podpory MCP protokolu pro AI agenty.
+Kolik BeatAPI stojí?
+Služba funguje na principu platby podle skutečného využití, ceny modelů jsou až o 78 % nižší než u přímých poskytovatelů. Vybrané modely jako DeepSeek V4 a JEV lze vyzkoušet zdarma.
+Pro koho je BeatAPI určené a jak začít?
+Je určené vývojářům a tvůrcům AI agentů – stačí získat API klíč a nahradit base_url za https://api.beatapi.io/v1 v OpenAI klientovi, případně nasměrovat agenta na endpoint /mcp.
+Kategorie|E||T|Digital Love Letter|D|29.10.2026 15:20|P|Online editor digitálních milostných dopisů s fotkami, hudbou a volitelným AI konceptem textu, psaní a náhled jsou zdarma.|M|EJAJ|X|Digital Love Letter
+Online editor digitálních milostných dopisů s fotkami, hudbou a volitelným AI konceptem textu, psaní a náhled jsou zdarma.
+O nástroji
+Digital Love Letter umožňuje vytvořit osobní digitální dopis s vlastním textem, až deseti fotografiemi (JPG, PNG nebo WebP, max. 10 MB) a odkazem na hudbu. Text lze napsat zcela sám, nebo využít AI, která podle zadaných údajů navrhne koncept čtyř textových částí – návrh je ale potřeba před odesláním zkontrolovat a případně upravit. Dopis se otevírá jako obálka s jednotlivými stránkami a lze jej volitelně zabezpečit heslem. Psaní, úpravy, AI asistence i náhled jsou podle webu zdarma. Zpřístupnění sdílení dopisu stojí 1 290 kreditů, všech 16 volitelných karet navíc 700 kreditů; balíčky kreditů vycházejí na 12,90 dolaru za 1 290 kreditů nebo 19,90 dolaru za 1 990 kreditů. Hotový dopis lze sdílet odkazem nebo QR kódem, úpravy po zpřístupnění už další kredity nestojí a odkaz pro úpravy zůstává oddělený od odkazu pro příjemce. Rozpracovaný dopis se ukládá v prohlížeči, takže je možné začít zdarma a dokončit jej později – vymazání dat prohlížeče ale rozpracovaný text může smazat. Nástroj je v angličtině, bez zmínky o API nebo otevřeném zdrojovém kódu, a je součástí širší řady podobných webů (např. I Love You Website nebo Open When Letters).
+Klíčové vlastnosti
+- Až 10 fotografií ve formátu JPG, PNG nebo WebP
+- AI návrh textu ve čtyřech částech ke kontrole
+- Volitelný odkaz na hudbu k dopisu
+- Sdílení odkazem nebo QR kódem
+Časté dotazy
+Co Digital Love Letter umí a je prohlížení zdarma?
+Umožňuje napsat digitální milostný dopis s vlastním textem nebo AI návrhem, přidat fotky, hudbu a heslo. Psaní, úpravy, AI asistence i náhled jsou zdarma.
+Kolik stojí odeslání dopisu?
+Zpřístupnění sdílení dopisu stojí 1 290 kreditů, všech 16 volitelných karet navíc 700 kreditů. Kredity se kupují v balíčcích za 12,90 USD (1 290 kreditů) nebo 19,90 USD (1 990 kreditů).
+Jak začít a je potřeba se registrovat?
+Stačí otevřít web, napsat text nebo použít AI návrh, přidat fotky a hudbu a dopis si zdarma prohlédnout. Platí se až za zpřístupnění sdílení, rozpracovaný dopis se mezitím ukládá v prohlížeči.
+Kategorie|E||T|Best Robot Vacuum|D|29.10.2026 15:20|P|AI nástroj, který podle zadaného rozpočtu, typu podlah a přítomnosti domácích mazlíčků vybere tři nejvhodnější robotické vysavače z katalogu.|M|EJAJ|X|Best Robot Vacuum
+AI nástroj, který podle zadaného rozpočtu, typu podlah a přítomnosti domácích mazlíčků vybere tři nejvhodnější robotické vysavače z katalogu.
+O nástroji
+Best Robot Vacuum je webová aplikace, která na základě odpovědí uživatele (rozpočet, typ podlahy, přítomnost zvířat, případně preferovaná značka) nechá AI projít katalog čítající 224 modelů od 17 značek a vybere tři doporučení s cenovým rozpětím a odkazem na nákup. Doporučení vycházejí ze strukturovaných specifikací a z publikovaných recenzí čtyř zdrojů (RTINGS, Vacuum Wars, Tom's Guide a TechGearLab), nástroj uvádí, že neprodává sponzorovaná umístění v žebříčku. Kromě samotného párovacího nástroje nabízí web i tematické průvodce zaměřené na konkrétní situace – výběr vysavače pro psí a kočičí srst, pro koberce, pro tvrdé podlahy, pro dřevěné podlahy nebo kombinaci vysávání a mopování. Je zde i srovnávací tabulka parametrů jako sání, navigace, mopování či automatizace doku pro širší přehled před zúžením výběru. Z dostupných údajů není jasné, zda je samotné použití nástroje zpoplatněné; ceny uváděné na stránce se týkají doporučených vysavačů (např. pásmo 300–500 USD nebo 1200 USD a výše), nikoli přístupu k službě samotné.
+Klíčové vlastnosti
+- Výběr tří modelů ze 224 sledovaných produktů
+- Zohledňuje rozpočet, typ podlahy a přítomnost mazlíčků
+- Srovnává specifikace i recenze ze 4 nezávislých zdrojů
+- Tematické průvodce pro srst, koberce, tvrdé a dřevěné podlahy
+Časté dotazy
+Co nástroj přesně dělá?
+Na základě zadaného rozpočtu, typu podlah a přítomnosti domácích mazlíčků projde AI katalog 224 robotických vysavačů od 17 značek a vybere tři nejvhodnější modely s cenovým rozpětím a odkazem na nákup.
+Kolik stojí použití nástroje?
+Z dostupných podkladů není jasné, zda je samotné použití zpoplatněné; uváděné ceny (např. 300–500 USD nebo 1200 USD a výše) se týkají doporučených vysavačů, nikoli přístupu ke službě.
+Pro koho je nástroj vhodný a jak začít?
+Je určen každému, kdo řeší výběr robotického vysavače domů – stačí zadat rozpočet, typ podlahy, přítomnost zvířat a případně preferovanou značku a nástroj okamžitě nabídne tři konkrétní doporučení.
+Kategorie|E||T|Opus 5.5 Video|D|29.10.2026 15:20|P|Generátor krátkých animovaných videí z promptu nebo odkazu na produkt – Claude Opus 5.5 napíše kód animace a prohlížeč vyrenderuje MP4.|M|EJAJ|X|Opus 5.5 Video
+Generátor krátkých animovaných videí z promptu nebo odkazu na produkt – Claude Opus 5.5 napíše kód animace a prohlížeč vyrenderuje MP4.
+O nástroji
+Opus 5.5 Video je nástroj pro tvorbu krátkých animovaných videí (10–30 s) bez psaní kódu. Stačí zadat větu, vložit vlastní reklamní text nebo odkaz na produkt a Claude Opus 5.5 naplánuje scény a napíše kód pro každý snímek – animaci následně vyrenderuje a zakóduje do MP4 přímo v prohlížeči uživatele. K dispozici jsou formáty 16:9, 1:1 a 9:16, výstup v rozlišení 1080p bez vodoznaku, a nástroj umí vygenerovat i hudbu a zvukové efekty, nahrát vlastní logo a fotky (až šest) nebo podporuje 18 jazyků. Nástroj nabízí dva styly – „Motion“ (kinetická typografie, grafy, moderní pohyb) a „Sketch“ (ručně kreslené scény) – a hodí se například na propagační reklamy, launch videa, vysvětlovací animace nebo zábavné gify s postavičkami. Úpravy videa lze dělat formou chatu („zvětši cenu“), přičemž Opus 5.5 upraví jen požadovanou část a zbytek zachová. Pokud generování videa selže, kredity se automaticky vrátí. Jde o nezávislý produkt, který není spojen s Anthropicem, nevyžaduje Claude předplatné a spotřeba zde nezapočítává do limitů Claude účtu; ceny začínají od 19 USD a bezplatná varianta generování není k dispozici.
+Klíčové vlastnosti
+- Claude Opus 5.5 napíše kód animace pro každý snímek
+- formáty 16:9, 1:1 a 9:16 v délce 10–30 s
+- generování hudby a zvukových efektů k videu
+- nahrání vlastního loga a až šesti fotek
+Časté dotazy
+Co přesně Opus 5.5 Video umí vytvořit?
+Z jedné věty, reklamního textu nebo odkazu na produkt naplánuje scény a vygeneruje krátké animované video (10–30 s) ve formátu 16:9, 1:1 nebo 9:16, včetně hudby a zvukových efektů, v 1080p bez vodoznaku.
+Kolik nástroj stojí a je k dispozici zdarma?
+Jde o placenou službu s cenami od 19 USD, bezplatná varianta generování videí není k dispozici.
+Potřebuji k používání předplatné Claude?
+Ne, jde o nezávislý produkt nespojený s Anthropicem – nevyžaduje Claude předplatné a spotřeba se nezapočítává do limitů Claude účtu, stačí si vytvořit účet na webu.
+Kategorie|E||T|TermiGram|D|29.10.2026 15:20|P|TermiGram je SSH terminál a SFTP klient v Telegramu – spravujte servery, spouštějte příkazy a přesouvejte soubory z telefonu.|M|EJAJ|X|TermiGram
+TermiGram je SSH terminál a SFTP klient v Telegramu – spravujte servery, spouštějte příkazy a přesouvejte soubory z telefonu.
+O nástroji
+TermiGram integruje interaktivní SSH terminál a správce souborů SFTP přímo do Telegram Mini App. Umožňuje ukládat profily serverů, spouštět příkazy, spravovat vzdálené soubory a vytvářet opakovaně použitelné příkazové úryvky (snippets), vhodné pro vývojáře a správce VPS, kteří potřebují řídit server dostupný z internetu přímo z telefonu. Nástroj nabízí Guest Share Links pro dočasný a odvolatelný přístup a Full Share Links, díky nimž si příjemce vytvoří nezávislou kopii profilu. Uložené přihlašovací údaje jsou šifrované, volitelný Master Password přidává klientské šifrování a k dispozici jsou i nástroje pro práci se SSH klíči (vytváření, import, kontrola připojení). Automatické proxy směrování je součástí bez příplatku a vestavěná AI nápověda pomáhá s dotazy ohledně TermiGramu, SSH a Linuxu. Cenově nabízí pětidenní Welcome Trial se 3 profily serverů, 3 terminálovými relacemi, 3 SFTP pracovními prostory a 1 Cloud Terminal. Po jeho skončení pokračuje trvalá bezplatná verze s jedním profilem serveru, jedním terminálem a jedním SFTP pracovním prostorem, zatímco Cloud Terminal a vyšší kapacity vyžadují placený tarif.
+Klíčové vlastnosti
+- Interaktivní SSH terminál a SFTP správce souborů v Telegramu
+- Ukládání profilů serverů a opakovaně použitelné příkazové úryvky
+- Guest Share Links pro dočasný odvolatelný přístup ke serveru
+- Full Share Links pro vytvoření nezávislé kopie profilu
+Časté dotazy
+Co přesně TermiGram umožňuje?
+Je to SSH terminál a SFTP klient integrovaný do Telegram Mini App – lze spravovat servery, spouštět příkazy, přesouvat soubory a sdílet přístup pomocí Guest nebo Full Share Links přímo z telefonu.
+Kolik TermiGram stojí?
+Po pětidenním Welcome Trialu se 3 profily serverů a Cloud Terminalem přechází účet na trvalou bezplatnou verzi s 1 profilem, 1 terminálem a 1 SFTP prostorem; Cloud Terminal a vyšší kapacity vyžadují placený tarif.
+Pro koho je TermiGram vhodný a jak začít?
+Hodí se vývojářům a správcům VPS, kteří potřebují ovládat server z mobilu – stačí spustit Telegram Mini App, přidat profil serveru a lze rovnou spouštět příkazy nebo spravovat soubory.
+Kategorie|E||T|RemoveVideoBG|D|29.10.2026 15:20|P|RemoveVideoBG pomocí AI odstraní pozadí z videa a odděluje osobu, produkt nebo postavu bez zelené obrazovky.|M|EJAJ|X|RemoveVideoBG
+RemoveVideoBG pomocí AI odstraní pozadí z videa a odděluje osobu, produkt nebo postavu bez zelené obrazovky.
+O nástroji
+RemoveVideoBG je nástroj pro automatické odstranění pozadí z video záznamů pomocí umělé inteligence. Stačí nahrát klip ve formátu MP4, MOV nebo WebM (maximální délka 180 sekund, rozlišení až 4K, velikost souboru do 100 MB) a AI oddělí prezentéra, produkt nebo postavu od původního pozadí, aniž by bylo potřeba zelené plátno nebo ruční maskování jednotlivých snímků. Výsledek lze stáhnout jako průhledné WebM video se skutečným alfa kanálem, nebo jako MP4/MOV na jednobarevném pozadí, připravené k dalšímu zpracování v editoru, na webu nebo v prezentacích. Podle webu nástroj funguje i s běžně natočeným materiálem bez zelené obrazovky, výsledný cutout lze opakovaně použít v různých projektech a kombinovat s různým pozadím. Nástroj je možné vyzkoušet zdarma bez vodoznaku, přímo v prohlížeči bez nutnosti instalace. Informace o placených tarifech nebo dalších omezeních bezplatné verze nejsou v dostupných podkladech uvedeny.
+Klíčové vlastnosti
+- Odstranění pozadí z videa bez zeleného plátna
+- Export jako průhledné WebM se skutečným alfa kanálem
+- Export jako MP4/MOV na jednobarevném pozadí
+- Podpora videí až do rozlišení 4K
+Časté dotazy
+Co přesně RemoveVideoBG umí?
+Nahrajete video (MP4, MOV nebo WebM) a AI automaticky oddělí osobu, produkt nebo postavu od pozadí bez nutnosti zeleného plátna či ručního maskování snímků. Výsledek stáhnete jako průhledné WebM s alfa kanálem nebo jako MP4/MOV na jednobarevném pozadí.
+Kolik RemoveVideoBG stojí?
+Nástroj lze vyzkoušet zdarma bez vodoznaku přímo v prohlížeči. Informace o placených tarifech nejsou v podkladech uvedeny.
+Pro koho je nástroj vhodný a jak začít?
+Hodí se pro tvůrce videí, prezentéry, e-shopy nebo autory 3D a herních postav, kteří potřebují oddělit subjekt od pozadí. Stačí nahrát klip do 180 sekund a 100 MB přímo na webu, bez registrace či instalace.
+Kategorie|E||T|AI Image Live|D|29.10.2026 15:20|P|Nástroj na animaci statických obrázků do krátkých AI videí – portréty, produkty, umění i staré fotky s volbou typu pohybu.|M|EJAJ|X|AI Image Live
+Nástroj na animaci statických obrázků do krátkých AI videí – portréty, produkty, umění i staré fotky s volbou typu pohybu.
+O nástroji
+AI Image Live umožňuje proměnit jeden statický obrázek v krátké AI video. Uživatel nahraje portrét, produktovou fotku, umělecké dílo nebo starou fotografii a zvolí směr pohybu – k dispozici jsou přednastavené styly jako jemné dýchání, úsměv, mrknutí, vlasy ve větru nebo pomalý pohyb kamery dopředu. Aktuálně jsou dostupné režimy „Animate“ (jemná animace z jednoho zdrojového obrázku) a „Cinematic“ (bohatší video se scénickým pohybem a kamerou), zatímco režimy „Talking Photo“ (mluvící fotka) a „Follow Motion“ (přenos pohybu z referenčního videa) jsou označeny jako připravované. Pracovní postup je čtyřkrokový: nahrání obrázku, výběr typu pohybu, kontrola ceny v kreditech před generováním a nakonec samotné vygenerování s možností stažení nebo úpravy další verze. Nástroj před odesláním generování vždy zobrazí přesný počet potřebných kreditů, takže uživatel vidí náklady dopředu. Dostupná je také historie generování pro návrat k předchozím verzím a porovnání výsledků. Platby fungují na kreditním systému s měsíčními plány nebo jednorázovými balíčky kreditů, bezplatná verze podle dostupných informací není nabízena. Informace o API, open-source řešení ani o podpoře českého rozhraní nejsou v materiálech uvedeny. Komerční využití vygenerovaných videí závisí na konkrétním tarifu a podmínkách poskytovatele generování.
+Klíčové vlastnosti
+- Animace z jediného statického obrázku
+- Přednastavené styly pohybu (dýchání, úsměv, mrknutí, vlasy ve větru)
+- Režim Cinematic s pohybem kamery
+- Zobrazení ceny v kreditech před generováním
+Časté dotazy
+Co AI Image Live umí?
+Promění jeden statický obrázek – portrét, produkt, umělecké dílo nebo starou fotku – v krátké AI video s vybraným typem pohybu, například jemným dýcháním, úsměvem nebo pomalým pohybem kamery.
+Kolik AI Image Live stojí?
+Nástroj funguje na kreditním systému s měsíčními plány nebo jednorázovými balíčky kreditů, přičemž přesný počet potřebných kreditů se zobrazí vždy před samotným generováním.
+Jak začít a pro koho je nástroj vhodný?
+Stačí nahrát obrázek, vybrat styl pohybu, zkontrolovat cenu v kreditech a vygenerovat video; hodí se pro práci s portréty, produktovými fotkami, uměním i starými fotografiemi.
+Kategorie|E||T|QNAP QTS 6.1 Beta přináší snazší instalaci, vyšší bezpečnost a více AI|D|29.10.2026 15:00|P|QNAP představuje pro své NASy novou verzi operačního systému QTS 6.1 Beta. Ta vylepšuje bezpečnost a máme tu také nové AI funkce.|M|SvětHW|X|QNAP představuje pro své NASy novou verzi operačního systému QTS 6.1 Beta. Ta vylepšuje bezpečnost a máme tu také nové AI funkce.
+Operační systém QTS od společnosti QNAP pro její NASy se dočkal nové betaverze, která nese název QTS 6.1 Beta. Ta přináší několik vylepšení zaměřených především na intuitivnější ovládání a zvýšení bezpečnosti dat. Mezi hlavní novinky patří přepracované uživatelské rozhraní se zjednodušenými nabídkami a ikonami, což má za cíl snížit náročnost práce se systémem.
+První spuštění nyní probíhá pomocí průvodce krok za krokem a k dispozici je přehledový panel na jedné obrazovce, který zobrazuje stav procesoru, paměti, teplotu i kapacitu úložiště. Rozložení těchto karet lze synchronizovat mezi různými zařízeními prostřednictvím QNAP účtu.
+Pokud jde o bezpečnost, systém nově podporuje přihlašování bez hesla pomocí technologie FIDO2 Passkey. Uživatelé tak mohou využít např. bezpečnostní klíče YubiKey nebo integrovaná ověření jako Touch ID a Windows Hello, což výrazně zvyšuje odolnost proti phishingu. V případě zálohování přináší Snapshot Replica možnost navázat na přerušené zálohování. Systém tedy nezačíná proces od začátku, nicméně pokračuje od místa přerušení, což šetří čas i propustnost. Celý systém je nyní postaven na novém jádře Linux 6.6, které zajišťuje vyšší stabilitu při vysoké zátěži a lepší kompatibilitu s novou generací hardwaru.
+Zajímavostí je integrace AI funkcí prostřednictvím nového AI Service Center. Uživatelé si mohou vybrat, zda budou modely provozovat lokálně na NASu nebo v cloudu. V aplikaci Qsirch je nyní možné vyhledávat soubory pomocí popisů v přirozeném jazyce a nástroj QuAgent umožňuje konverzačně kontrolovat stav systému nebo plánovat rozložení úložné kapacity.
+Pro uživatele s grafickou kartou Intel Arc Pro B70 je nově k dispozici sledování teploty, vytížení i využití grafické paměti přímo v Ovládacím panelu. Nová verze operačního systému QTS 6.1 je dostupná v Centru stahování.|E||T|Genjutsu AI|D|29.10.2026 14:10|P|Generátor videí, který pomocí motion transferu přenese pohyb z referenčního videa na vaše vlastní fotky či postavy.|M|EJAJ|X|Genjutsu AI
+Generátor videí, který pomocí motion transferu přenese pohyb z referenčního videa na vaše vlastní fotky či postavy.
+O nástroji
+Genjutsu AI je video generátor pracující s modelem Genjutsu 1.0, který umí přenést pohyb z nahraného referenčního videa (formát MP4/MOV, délka 4–30 s) na vlastní postavy, produkty nebo oblečení. Uživatel nahraje referenční video a doplňující reference (až 20), případně zadá prompt – pokud prompt vypne, nástroj pracuje pouze s videem a referencemi. Výstupní rozlišení lze nastavit, k dispozici je volba 720p. Vygenerovaná videa jsou standardně veřejná a zobrazují se v sekci Community, kde lze procházet ukázky od ostatních uživatelů. Pro soukromá videa je podle popisu nástroje potřeba zakoupit kredity. Pro samotné generování je nutné se přihlásit.
+Klíčové vlastnosti
+- Přenos pohybu z referenčního videa na vlastní postavy
+- Podpora formátů MP4/MOV v délce 4–30 s
+- Až 20 doplňujících referencí (postavy, produkty, oblečení)
+- Volitelný textový prompt, lze zcela vypnout
+Časté dotazy
+Co přesně Genjutsu AI umí?
+Nahrajete referenční video a nástroj přenese jeho pohyb na vaši vlastní postavu, produkt nebo oblečení pomocí modelu Genjutsu 1.0. Lze přidat až 20 doplňujících referencí a volitelně i textový prompt, výstup je ve 720p.
+Kolik to stojí?
+Přesný ceník nástroj neuvádí, generování funguje na principu kreditů, které je potřeba zakoupit přes tlačítko „Get credits“.
+Jak začít a pro koho je to vhodné?
+Stačí se přihlásit, nahrát referenční video a vlastní fotky či postavy a spustit generování; hodí se pro tvůrce krátkých virálních videí a reklamního obsahu.
+Kategorie|E||T|RapDuo|D|29.10.2026 14:10|P|RapDuo je webová AI aplikace, která ze dvou nahraných fotografií vytvoří rapové hudební video pro dvě osoby.|M|EJAJ|X|RapDuo
+RapDuo je webová AI aplikace, která ze dvou nahraných fotografií vytvoří rapové hudební video pro dvě osoby.
+O nástroji
+RapDuo je webový nástroj, jehož hlavní funkcí je vygenerovat rapové hudební video na základě dvou nahraných fotografií – web ho prezentuje sloganem „Two photos. One unforgettable duo.“. Výsledkem je dvou-osobní video ve stylu rapové skladby, přičemž jedna z nabízených variant je popisována jako „Hotel Lobby“ styl spojený s teplou oranžovou barevnou náladou. Informace o ceně, dostupnosti bezplatné verze, konkrétním ceníku ani o délce či formátu výstupního videa nejsou z dostupného obsahu webu ověřitelné, proto tyto údaje v popisu neuvádíme. Pro přesné podmínky použití a případné poplatky je třeba nahlédnout přímo na stránky rapduo.io.
+Klíčové vlastnosti
+- Generování videa ze dvou nahraných fotografií
+- Výstup ve stylu rapové hudební skladby
+- Dvou-osobní duo video
+- Varianta stylu „Hotel Lobby“ s oranžovou náladou
+Časté dotazy
+Co RapDuo vlastně vytvoří?
+Z dvou nahraných fotografií vygeneruje rapové hudební video pro dvě osoby, například ve stylu „Hotel Lobby“ s teplou oranžovou náladou.
+Kolik RapDuo stojí?
+Z webu nelze ověřit konkrétní ceník ani existenci bezplatné verze, podmínky je třeba zjistit přímo na rapduo.io.
+Jak se s RapDuo začíná?
+Stačí nahrát dvě fotografie a nástroj z nich vytvoří společné rapové video, podrobný postup nabízí přímo web rapduo.io.
+Kategorie|E||T|DecorViz|D|29.10.2026 14:10|P|DecorViz umožňuje nahrát fotku pokoje a fotku nábytku a během pár vteřin zobrazí fotorealistickou vizualizaci, jak kus nábytku bude vypadat ve vašem p...|M|EJAJ|X|DecorViz
+DecorViz umožňuje nahrát fotku pokoje a fotku nábytku a během pár vteřin zobrazí fotorealistickou vizualizaci, jak kus nábytku bude vypadat ve vašem prostoru.
+O nástroji
+DecorViz je nástroj pro vizualizaci nábytku a dekorací v reálném interiéru. Stačí nahrát fotku vlastního pokoje a fotku produktu (např. z IKEA, Wayfair, Amazonu nebo jiného obchodu) a nástroj během několika sekund vygeneruje fotorealistický náhled s realistickým osvětlením, stíny a perspektivou. Funguje přímo v prohlížeči bez nutnosti skenování místnosti nebo instalace aplikace. Kromě jednoduchého nahrazení jednoho kusu nábytku nabízí DecorViz režim Canvas, ve kterém lze do jedné fotky pokoje umístit až čtyři produkty (klidně z různých obchodů), každý samostatně posunout, zvětšit, otočit nebo oříznout, a nástroj následně vykreslí celou scénu jako jednu realistickou fotku. Projekt lze uložit a později v něm vyměnit jednotlivé kusy nábytku za nové. Nástroj je určen zejména lidem, kteří chystají rekonstrukci bydlení, nakupují nábytek online nebo si pronajímají byt a nechtějí riskovat nevhodnou koupi. Podle webu nabízí bezplatnou zkušební verzi bez nutnosti zadávat platební kartu, placené tarify jsou uvedeny jako orientační částka 2 dolary, konkrétní podmínky předplatného ale v textu nejsou podrobně specifikovány.
+Klíčové vlastnosti
+- Vizualizace nábytku z fotky pokoje za pár vteřin
+- Režim Canvas pro až 4 produkty v jedné scéně
+- Posun, zvětšení, otočení a oříznutí každého produktu
+- Funguje s fotkami z IKEA, Wayfair, Amazonu i jiných obchodů
+Časté dotazy
+Co DecorViz umí?
+Nahrajete fotku svého pokoje a fotku nábytku (třeba z IKEA, Wayfair nebo Amazonu) a nástroj během pár vteřin vygeneruje fotorealistickou vizualizaci s realistickým osvětlením, stíny a perspektivou. V režimu Canvas lze do jedné scény umístit až čtyři produkty najednou.
+Kolik DecorViz stojí?
+Nástroj nabízí bezplatnou zkušební verzi bez nutnosti zadat platební kartu. Placené tarify web zmiňuje orientačně od 2 dolarů, přesné podmínky předplatného ale nejsou podrobně specifikované.
+Pro koho je DecorViz vhodný a jak začít?
+Hodí se lidem chystajícím rekonstrukci, nákup nábytku online nebo nájemníkům, kteří si chtějí ověřit, zda kus nábytku bude v prostoru vypadat dobře. Stačí spustit bezplatnou zkušební verzi na webu a nahrát fotku pokoje a produktu.
+Kategorie|E||T|HOL Guard|D|29.10.2026 14:10|P|Bezpečnostní nástroj pro AI agenty, který před spuštěním kontroluje rizikové akce jako mazání souborů, přístup k heslům nebo instalace balíčků.|M|EJAJ|X|HOL Guard
+Bezpečnostní nástroj pro AI agenty, který před spuštěním kontroluje rizikové akce jako mazání souborů, přístup k heslům nebo instalace balíčků.
+O nástroji
+HOL Guard je lokálně běžící kontrolní vrstva pro AI coding agenty (podporuje mimo jiné Claude Code, Codex, Cursor, OpenCode). Na podporovaných integracích dokáže před spuštěním akce rozhodnout „povolit, zeptat se, nebo zablokovat“ – například u destruktivních shellových příkazů (rm -rf), čtení uložených přihlašovacích údajů (~/.aws/credentials), instalací pluginů či změn MCP, nebo pokusů o odeslání dat mimo stroj (curl na cizí server). O každé akci si vede záznam, ke kterému se lze zpětně vrátit. Nástroj funguje bez účtu a bez internetu – vyhodnocování podporovaných akcí probíhá přímo na počítači uživatele a obsah souborů podle dodaného popisu nikam neodchází. Volitelně lze zapojit Guard Cloud, kam se synchronizuje jen stručný záznam o tom, co bylo povoleno nebo zablokováno (nikdy soubory, prompty či hesla). Instalace probíhá přes pipx a odinstalace je jednoduchá (hol-guard daemon stop, pipx uninstall hol-guard), bez trvale běžících procesů na pozadí. Dodaný popis zdůrazňuje, že Guard není kompletní ochranou proti prompt injection, není síťovým firewallem ani cloudovou MCP bránou, a že skenování pluginů není zárukou bezpečnosti. Podle stránky je používání zdarma „navždy“ na jednom počítači, bez uvedení konkrétní ceny případného rozšířeného tarifu.
+Klíčové vlastnosti
+- Kontrola rizikových akcí před spuštěním (povolit/zeptat se/blokovat)
+- Blokuje destruktivní shellové příkazy jako rm -rf
+- Chrání přístup k uloženým přihlašovacím údajům (~/.aws/credentials)
+- Kontroluje instalace pluginů a změny MCP
+Časté dotazy
+Co přesně HOL Guard dělá?
+Před spuštěním kontroluje rizikové akce AI coding agentů (Claude Code, Codex, Cursor, OpenCode) jako mazání souborů, čtení hesel, instalace balíčků nebo odesílání dat mimo stroj, a rozhodne, zda je povolit, zeptat se nebo zablokovat. Ke každé akci vede záznam, ke kterému se lze vrátit.
+Kolik HOL Guard stojí?
+Používání je zdarma „navždy“ na jednom počítači. Konkrétní cena případného rozšířeného tarifu není uvedena.
+Pro koho je nástroj a jak se spouští?
+Je určen pro uživatele AI coding agentů, kteří chtějí chránit svůj počítač před rizikovými akcemi. Instaluje se přes pipx a funguje lokálně bez účtu a bez internetu, odinstalace je jednoduchá (daemon stop, pipx uninstall).
+Kategorie|E||T|Companions Fan|D|29.10.2026 14:10|P|Nezávislý fanouškovský web o aplikaci Animates, nikoli samostatný AI nástroj. Přináší novinky, FAQ a tipy k AI společníkům z komunity.|M|EJAJ|X|Companions Fan
+Nezávislý fanouškovský web o aplikaci Animates, nikoli samostatný AI nástroj. Přináší novinky, FAQ a tipy k AI společníkům z komunity.
+O nástroji
+Companions Fan není AI nástroj, ale nezávislý fanouškovský web věnovaný aplikaci Animates od Animation Inc. Provozovatelé výslovně uvádějí, že nejsou Animation Inc. a nenabízejí žádný vlastní produkt – obsah skládají z veřejných zdrojů (především oficiálního Discordu) a ze zkušeností komunity. Web obsahuje přehled novinek a aktualizací jednotlivých verzí aplikace Animates (např. Android, Windows, iOS/macOS), přehled AI společníků dostupných v aplikaci (Yuki, Nixie, Karat, Benny, Jareth, Ani, Mika, Valentine), galerii fanartu a komunitní fórum s diskusemi. U jednotlivých zpráv je uvedeno, zda jde o potvrzený zdroj. Jako informační a komunitní web nemá vlastní cenový model ani placené tarify – přístup k novinkám a fóru je volně dostupný, registrace a přihlášení slouží pouze k zapojení do komunity. Rozhraní webu je v češtině.
+Klíčové vlastnosti
+- Novinky a changelogy verzí aplikace Animates
+- Přehled AI společníků (Yuki, Nixie, Karat, Benny a další)
+- Galerie fanartu od komunity
+- Komunitní fórum s diskusemi o Animates
+Časté dotazy
+Je Companions Fan oficiální aplikace Animates?
+Ne, jde o nezávislý fanouškovský web, který není provozován Animation Inc. Obsah vychází z veřejných zdrojů, především oficiálního Discordu, a ze zkušeností komunity.
+Kolik stojí používání webu Companions Fan?
+Web nemá vlastní cenový model ani placené tarify, protože nejde o samostatný produkt, ale o informační a komunitní stránku o aplikaci Animates.
+Pro koho je web určený a jak začít?
+Je určený fanouškům a uživatelům aplikace Animates, kteří chtějí sledovat novinky, číst o jednotlivých AI společnících nebo diskutovat na fóru. Stačí si volně prohlížet obsah, případně se zaregistrovat a přihlásit kvůli zapojení do komunity.
+Kategorie|E||T|RapDirector|D|29.10.2026 14:10|P|RapDirector vytváří z vaší fotky a rapové nahrávky krátké AI video se synchronizací rtů na 10sekundovou sloku nebo refrén.|M|EJAJ|X|RapDirector
+RapDirector vytváří z vaší fotky a rapové nahrávky krátké AI video se synchronizací rtů na 10sekundovou sloku nebo refrén.
+O nástroji
+RapDirector je AI generátor rapových videí – stačí nahrát svou fotku a rapovou nahrávku, vybrat desetisekundovou sloku nebo refrén a nástroj z nich vytvoří lip-sync video s vaším původním zvukem. Výsledné video tak kombinuje nahranou fotografii s pohybem úst synchronizovaným na dodanou hudbu. Součástí webu je inspirační knihovna ukázkových rapových videí a hudebních vizuálů, u kterých lze otevřít použitý prompt a upravit si ho podle vlastní potřeby. Přihlášení uživatelé získávají kredity (uvedeno „Get 200 credits“ a „Daily credits“), které slouží k vygenerování videí, lze je zakoupit i dokoupit přes nabídku „Get more credits“ – konkrétní ceny ani přesný systém kreditů ale na stránce uvedeny nejsou. Nástroj vyžaduje přihlášení a funguje v anglickém jazykovém prostředí, přepínač na jiný jazyk na stránce nalezen nebyl. Informace o API nebo open-source variantě nejsou k dispozici.
+Klíčové vlastnosti
+- Lip-sync video z fotky a rapové nahrávky
+- Generování 10sekundové sloky nebo refrénu
+- Zachování původního zvuku nahrávky
+- Inspirační knihovna šablon s prompty
+Časté dotazy
+Co přesně RapDirector umí vytvořit?
+Z nahrané fotky a rapové nahrávky vytvoří krátké desetisekundové video, kde postava na fotce synchronizovaně pohybuje rty podle dodaného zvuku.
+Kolik RapDirector stojí?
+Po přihlášení uživatel získá kredity (např. nabídka „Get 200 credits“ a denní kredity), které se spotřebovávají na generování videí, přičemž další kredity lze dokoupit – konkrétní ceník ale na webu uveden není.
+Jak začít a pro koho je nástroj určený?
+Stačí se přihlásit, nahrát vlastní fotku a rapovou nahrávku, vybrat sloku nebo refrén a nechat vygenerovat lip-sync video – vhodné pro rappery i tvůrce hudebních vizuálů, kteří chtějí rychle ukázku svého flow.
+Kategorie|E||T|SciFig|D|29.10.2026 14:10|P|AI generátor vědeckých obrázků, grafů a diagramů pro výzkumníky – z textu, dat nebo náčrtu vytvoří editovatelnou ilustraci.|M|EJAJ|X|SciFig
+AI generátor vědeckých obrázků, grafů a diagramů pro výzkumníky – z textu, dat nebo náčrtu vytvoří editovatelnou ilustraci.
+O nástroji
+SciFig je nástroj pro tvorbu vědeckých obrázků, grafů a diagramů určený výzkumníkům. Nabízí tři pracovní prostory: Illustration pro vytváření vědeckých ilustrací z textu, náčrtu, PDF, fotografie nebo jiné předlohy, DataChart pro převod dat z CSV či Excelu na publikačně připravené grafy včetně statistických testů a export do PDF nebo EPS, a FlowChart pro tvorbu editovatelných vývojových diagramů a architektur s exportem do SVG či PPTX. Mezi konkrétní nástroje patří například generátor chemických struktur, tvůrce grafických abstraktů, generátor diagramů volného tělesa, tvůrce schémat zapojení, generátor Lewisových vzorců, diagramy struktury DNA nebo generátor Kaplan-Meierových křivek přežití. Výsledné obrázky lze upravovat ve Vector Canvas jako vrstvený editovatelný SVG soubor. Podle dostupných údajů je u produktu zmíněna cena od 1 dolaru a aktuálně probíhá slevová akce na placené plány a kreditové balíčky, které podle uvedených informací nikdy nevyprší. Zda existuje trvale bezplatná varianta, z dostupných údajů nevyplývá, informace o API nebo otevřeném zdrojovém kódu nejsou k dispozici a česká lokalizace není uvedena.
+Klíčové vlastnosti
+- Tři pracovní prostory: ilustrace, grafy a vývojové diagramy
+- Tvorba obrázků z textu, náčrtu, PDF nebo fotografie
+- Převod dat z CSV či Excelu na publikačně připravené grafy se statistickými testy
+- Export do PDF, EPS, SVG nebo PPTX
+Časté dotazy
+Co přesně SciFig umí vytvořit?
+SciFig generuje vědecké ilustrace z textu, náčrtu, PDF či fotografie, převádí data z CSV nebo Excelu na publikačně připravené grafy včetně statistických testů a vytváří editovatelné vývojové diagramy a architektury. Výsledky lze dále upravovat ve vrstveném SVG editoru Vector Canvas.
+Kolik SciFig stojí?
+Podle dostupných údajů ceny začínají od 1 dolaru a aktuálně probíhá slevová akce na placené plány a kreditové balíčky, které nikdy nevyprší. Přesný ceník ani existence trvale bezplatné varianty z podkladů nevyplývá.
+Pro koho je SciFig určen a jak začít?
+Nástroj je určen výzkumníkům, kteří potřebují rychle vytvořit vědecké obrázky, grafy nebo diagramy pro publikace a prezentace. Začít lze výběrem jednoho ze tří pracovních prostorů – Illustration, DataChart nebo FlowChart – podle typu vytvářeného výstupu.
+Kategorie|E||T|Zaměstnanci českého jednorožce založili odbory. Reagují i na propouštění kvůli AI a chtějí kolektivní smlouvu|D|29.10.2026 14:09|P|Jeden z tuzemských jednorožců, tedy firem s hodnotou nad miliardu dolarů, má novinku, která u technologických startupů nebývá příliš k vidění. Zaměstn...|M|Lupa|X|Jeden z tuzemských jednorožců, tedy firem s hodnotou nad miliardu dolarů, má novinku, která u technologických startupů nebývá příliš k vidění. Zaměstnanci softwarové společnosti Mews založili odbory. Stalo se tak krátce po té, co Mews oznámila propouštění zhruba 15 procent z celkového počtu 1 350 zaměstnanců. Oficiálně kvůli změnám, které přináší umělá inteligence.
+Odbory v české centrále Mews vznikly jako součást organizace ICT Union. Ta už má pod sebou odbory v devíti technologických firmách. V minulosti jsme na Lupě psali o linuxové a open source firmě SUSE, dále jde o podniky Infosys, DHL ITS, Microsoft, Red Hat, Moravia IT, Expedia a Vendavo.
+“Odborová organizace v Mews vznikla pro zaměstnance Mews v ČR a společně s nimi. Funguje a je financována nezávisle na zaměstnavateli. Díky tomu vytváří bezpečný prostor, kde můžeme otevřeně mluvit o tom, co nás trápí, a společně usilovat o pracovní podmínky, které odpovídají našim představám,” shrnuli zaměstnanci Mews.
+Odbory v Mews chtějí vyjednat závaznou kolektivní smlouvu, sdílet s vedením zkušenosti, obavy a nápady, budovat podpůrnou komunitu napříč týmy, zejména v období změn, komunikovat se zahraničními kolegy a zajistit, aby byl hlas odborů slyšet před přijetím rozhodnutí týkajících se lidí. “A abychom byli informováni o propouštění, reorganizacích a změnách pracovních podmínek a mohli se k nim vyjádřit,” uvedly odbory Mews.
+Zakladatel Mews Richard Valtr pro Lupu sdělil, že se lidé v Mews vždy mohli otevřeně ozvat, že je to zakotvené ve firemních zásadách a že se toho firma vždy držela.
+“Víme, že část našich kolegů v Česku založila odbory, a věřím, že nám to pomůže k ještě lepší domluvě a spolupráci. Vždycky jsem si myslel, že čím víc se lidé do dění ve firmě zapojí, tím lépe pro ně. Těším se proto na jejich promyšlené návrhy, jak Mews dál zlepšovat,” doplnil Valtr.
+Tržní hodnota Mews je 2,5 miliardy dolarů, asi 52 miliard korun. Startup naposledy získal 300 milionů dolar, více než šest miliard korun. Prostředky se mimo jiné používají na akvizice západních konkurentů, Mews už koupila čtrnáct firem. Mews buduje cloudový software pro hotely a pohostinství. Nedávno také získal platební licenci licenci v Evropské unii.|E||T|Apple představil první dotykový MacBook Pro. V plné palbě stojí jako nová Kia, přesto mu chybí to nejzákladnější|D|29.10.2026 12:16|P|Pro dotyky upravil Apple systém macOS a přidal průstřel známý z iPhonů. Nejvyšší konfigurace šestnáctipalcové varianty s kompletním příslušenstvím a s...|M|Cnews|X|„Dotykové displeje nemohou být svislé, z ergonomického hlediska je to příšerné.“ Těmito slovy obhajoval 10. října 2010 Steve Jobs MacBooky bez dotykového displeje. Tehdy uváděl Mac OS X Lion a největším dotykovým displejem, který Apple nabízel, byl ten v iPadu první generace. O šestnáct let později si to již Apple nemyslí a představil MacBook Pro s dotykovým OLED displejem.
 Poprvé s OLEDem
 Apple svůj panel nazval PROLED XDR a použil dvě samosvítící OLED vrstvy. Oproti dosavadnímu LCD s podsvícením Mini LED se tak mimo jiné zbavil halo efektu – světelné záře kolem jasných objektů na tmavém pozadí. Trvale udržitelný jas po celé ploše zůstává na 1 000 nitech a na menších plochách se ve špičce dostane až na 2 000 nitů. Mimo jiné tak bude perfektně čitelný i na ostrém slunci, k čemuž pomůže i volitelná matná nanotextura. Variabilní frekvence označovaná ProMotion nabízí rozsah 10–120 Hz. Pokrytí prostoru Rec. 2020 přesahuje 80 %.
 Největší rozruch samozřejmě způsobuje podpora dotyků, kterým musely být přizpůsobeny i panty víka, které musí snášet tlak na displej při dotykovém ovládání. Z prvních videí je zřejmé, že je velmi pevný. Dotykům byl přizpůsoben i samotný macOS, který například zvětšuje některé prvky po prvním dotyku (např. semafor pro ovládání oken) a některé prvky dostaly větší rozestupy. Přibyla nová gesta pro organizaci oken nebo rychlý přechod mezi obrazovkami. Pokud někdo bude chtít ve větší míře používat dotykové ovládání, bude se hodit celoobrazovkový režim, který doposud většina uživatelů ignorovala.

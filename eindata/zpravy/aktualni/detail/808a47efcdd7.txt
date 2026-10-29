@@ -1,0 +1,17 @@
+PopNow
+PopNow je AI studio pro tvorbu videí, obrázků a hudby – z fotky nebo textu vytvoří video, reklamu, píseň nebo film.
+O nástroji
+PopNow je online AI studio zaměřené na tvorbu videí, obrázků a hudby. Nabízí přístup k předním AI modelům, přes 110 aplikací a více než 210 „viral“ efektů, pomocí kterých lze z fotky nebo jednoduchého textového zadání vytvořit video, obrázek, reklamu, píseň nebo celý film. Součástí nabídky jsou i sezónní šablony, například vánoční fotky nebo proměna do halloweenského kostýmu. Platforma funguje bez klasického předplatného, place se formou kreditů – jedna ukázková tvorba videa je v důkazu uvedena v ceně kolem 185 kreditů, tedy přibližně 0,185 dolaru. Bezplatná verze není v důkazu uvedena, takže nástroj je pravděpodobně placený na bázi kreditů. Rozhraní webu je v angličtině, informace o API ani o otevřeném zdrojovém kódu z dostupných podkladů nevyplývají.
+Klíčové vlastnosti
+- Přes 110 aplikací a 210 virálních efektů
+- Generování videí, obrázků, hudby i celých filmů
+- Tvorba z fotky nebo jednoduchého textového zadání
+- Sezónní šablony (vánoční fotky, halloweenský kostým)
+Časté dotazy
+Co všechno PopNow umí vytvořit?
+Z fotky nebo textového zadání vytvoří video, obrázek, reklamu, píseň nebo celý film pomocí přes 110 aplikací a 210 virálních efektů.
+Kolik PopNow stojí?
+Nástroj funguje bez předplatného na bázi kreditů – například jedna ukázková tvorba videa stojí přibližně 185 kreditů, tedy kolem 0,185 dolaru.
+Pro koho je PopNow určený a jak se začíná?
+Je určený komukoliv, kdo chce rychle vytvořit video, obrázek nebo hudbu z fotky či textu – stačí se zaregistrovat na webu a nahrát fotku nebo zadat text.
+Kategorie

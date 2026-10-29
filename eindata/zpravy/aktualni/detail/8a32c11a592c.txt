@@ -1,0 +1,17 @@
+RapDirector
+RapDirector vytváří z vaší fotky a rapové nahrávky krátké AI video se synchronizací rtů na 10sekundovou sloku nebo refrén.
+O nástroji
+RapDirector je AI generátor rapových videí – stačí nahrát svou fotku a rapovou nahrávku, vybrat desetisekundovou sloku nebo refrén a nástroj z nich vytvoří lip-sync video s vaším původním zvukem. Výsledné video tak kombinuje nahranou fotografii s pohybem úst synchronizovaným na dodanou hudbu. Součástí webu je inspirační knihovna ukázkových rapových videí a hudebních vizuálů, u kterých lze otevřít použitý prompt a upravit si ho podle vlastní potřeby. Přihlášení uživatelé získávají kredity (uvedeno „Get 200 credits“ a „Daily credits“), které slouží k vygenerování videí, lze je zakoupit i dokoupit přes nabídku „Get more credits“ – konkrétní ceny ani přesný systém kreditů ale na stránce uvedeny nejsou. Nástroj vyžaduje přihlášení a funguje v anglickém jazykovém prostředí, přepínač na jiný jazyk na stránce nalezen nebyl. Informace o API nebo open-source variantě nejsou k dispozici.
+Klíčové vlastnosti
+- Lip-sync video z fotky a rapové nahrávky
+- Generování 10sekundové sloky nebo refrénu
+- Zachování původního zvuku nahrávky
+- Inspirační knihovna šablon s prompty
+Časté dotazy
+Co přesně RapDirector umí vytvořit?
+Z nahrané fotky a rapové nahrávky vytvoří krátké desetisekundové video, kde postava na fotce synchronizovaně pohybuje rty podle dodaného zvuku.
+Kolik RapDirector stojí?
+Po přihlášení uživatel získá kredity (např. nabídka „Get 200 credits“ a denní kredity), které se spotřebovávají na generování videí, přičemž další kredity lze dokoupit – konkrétní ceník ale na webu uveden není.
+Jak začít a pro koho je nástroj určený?
+Stačí se přihlásit, nahrát vlastní fotku a rapovou nahrávku, vybrat sloku nebo refrén a nechat vygenerovat lip-sync video – vhodné pro rappery i tvůrce hudebních vizuálů, kteří chtějí rychle ukázku svého flow.
+Kategorie

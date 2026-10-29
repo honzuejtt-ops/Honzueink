@@ -1,0 +1,17 @@
+Opus 5.5 Video
+Generátor krátkých animovaných videí z promptu nebo odkazu na produkt – Claude Opus 5.5 napíše kód animace a prohlížeč vyrenderuje MP4.
+O nástroji
+Opus 5.5 Video je nástroj pro tvorbu krátkých animovaných videí (10–30 s) bez psaní kódu. Stačí zadat větu, vložit vlastní reklamní text nebo odkaz na produkt a Claude Opus 5.5 naplánuje scény a napíše kód pro každý snímek – animaci následně vyrenderuje a zakóduje do MP4 přímo v prohlížeči uživatele. K dispozici jsou formáty 16:9, 1:1 a 9:16, výstup v rozlišení 1080p bez vodoznaku, a nástroj umí vygenerovat i hudbu a zvukové efekty, nahrát vlastní logo a fotky (až šest) nebo podporuje 18 jazyků. Nástroj nabízí dva styly – „Motion“ (kinetická typografie, grafy, moderní pohyb) a „Sketch“ (ručně kreslené scény) – a hodí se například na propagační reklamy, launch videa, vysvětlovací animace nebo zábavné gify s postavičkami. Úpravy videa lze dělat formou chatu („zvětši cenu“), přičemž Opus 5.5 upraví jen požadovanou část a zbytek zachová. Pokud generování videa selže, kredity se automaticky vrátí. Jde o nezávislý produkt, který není spojen s Anthropicem, nevyžaduje Claude předplatné a spotřeba zde nezapočítává do limitů Claude účtu; ceny začínají od 19 USD a bezplatná varianta generování není k dispozici.
+Klíčové vlastnosti
+- Claude Opus 5.5 napíše kód animace pro každý snímek
+- formáty 16:9, 1:1 a 9:16 v délce 10–30 s
+- generování hudby a zvukových efektů k videu
+- nahrání vlastního loga a až šesti fotek
+Časté dotazy
+Co přesně Opus 5.5 Video umí vytvořit?
+Z jedné věty, reklamního textu nebo odkazu na produkt naplánuje scény a vygeneruje krátké animované video (10–30 s) ve formátu 16:9, 1:1 nebo 9:16, včetně hudby a zvukových efektů, v 1080p bez vodoznaku.
+Kolik nástroj stojí a je k dispozici zdarma?
+Jde o placenou službu s cenami od 19 USD, bezplatná varianta generování videí není k dispozici.
+Potřebuji k používání předplatné Claude?
+Ne, jde o nezávislý produkt nespojený s Anthropicem – nevyžaduje Claude předplatné a spotřeba se nezapočítává do limitů Claude účtu, stačí si vytvořit účet na webu.
+Kategorie

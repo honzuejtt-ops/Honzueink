@@ -1,0 +1,17 @@
+DecorViz
+DecorViz umožňuje nahrát fotku pokoje a fotku nábytku a během pár vteřin zobrazí fotorealistickou vizualizaci, jak kus nábytku bude vypadat ve vašem prostoru.
+O nástroji
+DecorViz je nástroj pro vizualizaci nábytku a dekorací v reálném interiéru. Stačí nahrát fotku vlastního pokoje a fotku produktu (např. z IKEA, Wayfair, Amazonu nebo jiného obchodu) a nástroj během několika sekund vygeneruje fotorealistický náhled s realistickým osvětlením, stíny a perspektivou. Funguje přímo v prohlížeči bez nutnosti skenování místnosti nebo instalace aplikace. Kromě jednoduchého nahrazení jednoho kusu nábytku nabízí DecorViz režim Canvas, ve kterém lze do jedné fotky pokoje umístit až čtyři produkty (klidně z různých obchodů), každý samostatně posunout, zvětšit, otočit nebo oříznout, a nástroj následně vykreslí celou scénu jako jednu realistickou fotku. Projekt lze uložit a později v něm vyměnit jednotlivé kusy nábytku za nové. Nástroj je určen zejména lidem, kteří chystají rekonstrukci bydlení, nakupují nábytek online nebo si pronajímají byt a nechtějí riskovat nevhodnou koupi. Podle webu nabízí bezplatnou zkušební verzi bez nutnosti zadávat platební kartu, placené tarify jsou uvedeny jako orientační částka 2 dolary, konkrétní podmínky předplatného ale v textu nejsou podrobně specifikovány.
+Klíčové vlastnosti
+- Vizualizace nábytku z fotky pokoje za pár vteřin
+- Režim Canvas pro až 4 produkty v jedné scéně
+- Posun, zvětšení, otočení a oříznutí každého produktu
+- Funguje s fotkami z IKEA, Wayfair, Amazonu i jiných obchodů
+Časté dotazy
+Co DecorViz umí?
+Nahrajete fotku svého pokoje a fotku nábytku (třeba z IKEA, Wayfair nebo Amazonu) a nástroj během pár vteřin vygeneruje fotorealistickou vizualizaci s realistickým osvětlením, stíny a perspektivou. V režimu Canvas lze do jedné scény umístit až čtyři produkty najednou.
+Kolik DecorViz stojí?
+Nástroj nabízí bezplatnou zkušební verzi bez nutnosti zadat platební kartu. Placené tarify web zmiňuje orientačně od 2 dolarů, přesné podmínky předplatného ale nejsou podrobně specifikované.
+Pro koho je DecorViz vhodný a jak začít?
+Hodí se lidem chystajícím rekonstrukci, nákup nábytku online nebo nájemníkům, kteří si chtějí ověřit, zda kus nábytku bude v prostoru vypadat dobře. Stačí spustit bezplatnou zkušební verzi na webu a nahrát fotku pokoje a produktu.
+Kategorie

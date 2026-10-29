@@ -1,0 +1,17 @@
+Ecommerce Data API
+API pro data z Amazonu zaměřené na výzkum produktů, klíčových slov a trhu, určené vývojářům a prodejcům.
+O nástroji
+Ecommerce Data API poskytuje přístup k datům z Amazonu prostřednictvím jednotného REST rozhraní a MCP služby. K dispozici je 45 koncových bodů rozdělených do skupin podle zaměření – 12 pro data o produktech (detaily listingu, prodeje, recenze, historické trendy), 11 pro klíčová slova (vyhledávací dotazy, zpětná analýza traffic klíčových slov, ABA žebříčky, konverzní poměry), 14 pro analýzu trhu (velikost kategorií, koncentrace značek, cenová pásma, hodnocení a poptávkové trendy), dále API pro analýzu traffiku, globální databázi ochranných známek a rozpoznávání textu z obrázků. Po registraci získávají uživatelé 5 bezplatných API volání platných po dobu 3 dnů, poté je nutné vytvořit API klíč v uživatelském účtu. Klíče lze kdykoliv vytvářet i odvolávat, službu lze využívat i přes MCP pro napojení na AI agenty. Příkladem je dotaz na detail konkrétního ASIN, který vrací cenu, hodnocení, počet recenzí, prodejce, fulfillment metodu i varianty produktu. Dokumentace popisuje jednotné schéma odpovědí a autentizaci, systém zaznamenává spotřebu kreditů, chyby a výkon jednotlivých volání pro reporting využití. Nástroj je určen zejména prodejcům na Amazonu a vývojářům budujícím nástroje pro výběr produktů a automatizaci výzkumu.
+Klíčové vlastnosti
+- 45 koncových bodů pro produkty, klíčová slova a trh
+- Detail ASIN včetně ceny, hodnocení a variant
+- Zpětná analýza traffic klíčových slov a ABA žebříčky
+- Analýza velikosti kategorií a koncentrace značek
+Časté dotazy
+Co všechno Ecommerce Data API umí?
+Poskytuje 45 koncových bodů pro data z Amazonu – detaily produktů, prodeje a recenze, analýzu klíčových slov a traffic, tržní analýzy podle kategorií a značek, dále sledování traffiku, globální databázi ochranných známek a rozpoznávání textu z obrázků.
+Kolik Ecommerce Data API stojí?
+Po registraci získáte 5 bezplatných API volání platných 3 dny, poté je nutné vytvořit placený API klíč v účtu; konkrétní tarify nejsou v podkladech uvedeny.
+Pro koho je nástroj určený a jak začít?
+Je určen prodejcům na Amazonu a vývojářům tvořícím nástroje pro výzkum produktů a automatizaci. Stačí se zaregistrovat, vygenerovat API klíč a podle dokumentace volat vybrané koncové body nebo napojit službu přes MCP.
+Kategorie

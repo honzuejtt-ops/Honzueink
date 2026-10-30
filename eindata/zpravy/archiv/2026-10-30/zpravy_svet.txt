@@ -1,0 +1,10 @@
+|T|Práce s AI ovlivňuje kognitivní zdatnost lidí. Stačí k tomu pár minut|D|30.10.2026 00:41|P|Používání umělé inteligence je dnes běžnou součástí pracovní náplně. Má šetřit čas při zpracování informací nebo pomáhat řešit náročnější úkoly. Přito...|M|Novinky|X|Řada experimentů ukazuje, že se lidé již po krátké době používání nástrojů umělé inteligence stávají méně soustředěnými a schopnými vytrvat v náročných úkolech. Podle nejnovější studie k tomu dokonce stačí i pouhých deset minut.
+Vědci stojící za průzkumem toto zjištění považují za pozoruhodné.
+„Je to jednoduché – pokud si zvykneme, že nám umělá inteligence dává odpovědi během několika sekund, pak se nám mnohem rychleji jeví vlastní hledání odpovědí jako pomalé a neefektivní. Zároveň se tak vytrácí pocit tzv. produktivního boje, který nám pomáhá se prosadit,“ uvádí se v průzkumu.
+Bez umělé inteligence jsou lidé často ztraceni
+„Jako lidstvo jsme vytvořili AI systémy, aby nám byly užitečné. Ale opravdu jsou užitečné způsobem, který nám pomáhá?“ položil si v rámci průzkumu otázku Brian Christian z Kalifornské univerzity v americkém Berkeley.
+„Ironicky jsme ukázali na to, že nám pomáhá způsobem, který nepomáhá,“ dodal pro server Independent.
+V průběhu studie vědci oslovili 1222 dobrovolníků, pro které sestavili řadu různých testů. V prvním testu bylo 354 lidí rozděleno do dvou skupin, obě dostaly k řešení 15 základních úkolů se zlomky. Jen jedna z nich ale mohla využívat AI, konkrétně ChatGPT.
+Po 12 splněných úkolech byl skupině s AI přístup odepřen. Jak se ukázalo, s možností využívat ChatGPT byla tato skupina v řešení poměrně logicky rychlejší; jakmile jí ale byl přístup odepřen, téměř okamžitě se objevila chybovost a neschopnost úkoly dořešit.
+Podobný experiment proběhl na vzorku dalších 667 účastníků, ovšem s trochu jinými úkoly. I tady uživatelé umělé inteligence po jejím odebrání začali výrazně chybovat a měli problém s dokončením úkolů. Někteří je rovnou vzdali.
+V poslední části výzkumu se zbylých 201 účastníků věnovalo porozumění textu podobnému tomu, s nímž se setkávají uchazeči při přijímacích zkouškách na univerzity. Výsledky byly opět velmi podobné.|E|

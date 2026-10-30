@@ -1,0 +1,17 @@
+FoxPhone
+FoxPhone poskytuje cloudová Android zařízení na ARM serverech s nativním Android 15, ovladatelná přes prohlížeč nebo klienty pro Windows, macOS, Android a iOS.
+O nástroji
+FoxPhone je cloudová platforma nabízející vzdálená Android zařízení běžící na reálném ARM hardwaru v datacentru s nativním prostředím Android 15. Každé zařízení má vlastní device fingerprint a vlastní IP adresu, takže aktivita na jednom telefonu zůstává oddělená od ostatních – to se hodí pro správu více účtů, marketing, e-commerce nebo testování aplikací. Platforma poskytuje nativní podporu ADB a je plně kompatibilní s automatizačními frameworky jako Appium a UIAutomator, díky čemuž ji lze nasadit i pro AI agenty pracující s reálným mobilním prostředím ve velkém měřítku. Pro současnou správu více zařízení obsahuje FoxPhone synchronizovanou kontrolu, kdy jedno zařízení funguje jako hlavní okno a ostatní vybraná zařízení opakují jeho akce. Cenotvorba je založená na spotřebě – platí se za zařízení a skutečný čas využití, s cenami od 0,99 USD za den a bez skrytých poplatků. Bezplatná verze ani konkrétní informace o API nejsou v dostupných podkladech uvedeny, rozhraní webu je v angličtině.
+Klíčové vlastnosti
+- Reálný ARM hardware s nativním Android 15
+- Vlastní device fingerprint a IP adresa pro každé zařízení
+- Ovládání přes prohlížeč nebo klienty Windows, macOS, Android, iOS
+- Nativní podpora ADB a kompatibilita s Appium a UIAutomator
+Časté dotazy
+Co přesně FoxPhone nabízí?
+Vzdálená Android zařízení běžící na reálném ARM hardwaru v datacentru s nativním Android 15, každé s vlastním fingerprintem a IP adresou, ovladatelná z prohlížeče nebo desktopových a mobilních klientů.
+Kolik FoxPhone stojí?
+Platí se za zařízení a skutečný čas využití, ceny začínají od 0,99 USD za den bez skrytých poplatků.
+Pro koho je FoxPhone vhodný a jak začít?
+Hodí se pro správu více účtů, marketing, e-commerce, testování aplikací i AI agenty díky podpoře ADB, Appium a UIAutomator; stačí zaregistrovat se na webu a vybrat zařízení.
+Kategorie

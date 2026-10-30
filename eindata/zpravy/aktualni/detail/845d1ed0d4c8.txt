@@ -1,0 +1,22 @@
+Zařízení chytré domácnosti se mohou stát terčem kybernetických útoků, při nichž útočníci převezmou jejich kontrolu nebo získají neoprávněný přístup k údajům uživatelů, varovala polská státní agentura zaměřená na kybernetickou a digitální bezpečnost.
+Na konci loňského roku bylo celosvětově k takzvanému internetu věcí (IoT), síti vzájemně propojených zařízení, připojeno 21,1 miliardy přístrojů, uvedl ve zprávě Národní výzkumný ústav (NASK).
+Podle zprávy zveřejněné tento týden by se měl jejich počet během pěti let zvýšit na 39 miliard a do deseti let překročit 50 miliard.
+Zpráva s názvem Urządzenia IoT w domu (česky Zařízení IoT v domácnosti) Jak je bezpečně používat? se zaměřuje na zabezpečení zařízení chytré domácnosti vybavených technologiemi, které umožňují vzdálené ovládání, komunikaci s dalšími zařízeními a automatizaci každodenních úkolů.
+Jedním z příkladů je chytrá rychlovarná konvice připojená k internetu, kterou lze na dálku zapnout a nastavit ohřev vody na zvolenou teplotu, přidal příklad NASK.
+NASK definoval IoT jako síť vzájemně propojených zařízení, která mohou shromažďovat data, vyměňovat si informace a komunikovat prostřednictvím internetu nebo jiných komunikačních sítí.
+Tyto systémy lze využít k automatizaci každodenních úkolů, dálkovému ovládání spotřebičů a vytváření propojených systémů chytré domácnosti.
+Zpráva ale varuje, že nedostatečně zabezpečená zařízení se mohou stát snadným terčem kybernetických útoků.
+„Zabezpečení zařízení internetu věcí v domácnosti je především o ochraně nás samotných jako uživatelů,“ zdůraznila v prohlášení Katarzyna Grabowska, vedoucí specialistka na vzdělávání a informování v NASK a spoluautorka zprávy.
+„Používání technologií vyžaduje zodpovědný přístup. Naše chování a rozhodnutí představují první linii obrany proti hrozbám,“ dodala.
+Mezi hrozby uvedené ve zprávě patří převzetí kontroly nad zařízením, například získání přístupu k záběrům z kamery; odhalení uspořádání domácnosti, například prostřednictvím mapy uložené robotickým vysavačem; a získání přístupu k údajům uživatelů – například k souborům uloženým v počítači.
+Anna Felknerová, další spoluautorka zprávy a ředitelka oddělení výzkumu kybernetické bezpečnosti v NASK, řekla, že zabezpečení chytré domácnosti „začíná ještě před nákupem zařízení“.
+„Je vhodné ověřit, jaké údaje bude zařízení shromažďovat, zda výrobce poskytuje aktualizace a jak reaguje na zjištěné bezpečnostní zranitelnosti,“ vyjmenovala Felknerová.
+Zpráva doporučuje před nákupem zařízení ověřit, zda nemá známé bezpečnostní zranitelnosti.
+Jednou z možností je vyhledat přístroj ve veřejně dostupné databázi známých zranitelností Common Vulnerabilities and Exposures (CVE).
+Spotřebitelé si také mohou přečíst recenze od lidí, kteří dotyčné zařízení již používali, a prostudovat pokyny výrobce, kde najdou informace o zabezpečení.
+Autoři analýzy také doporučují ověřit informace o aktualizacích softwaru, technické podpoře a případném servisu.
+Před připojením zařízení by si uživatelé měli také zkontrolovat nastavení své Wi-Fi sítě, včetně změny názvu sítě a hesla a ověření bezpečnostního standardu, například zda síť podporuje standard WPA3.
+Zpráva také doporučuje oddělení sítí – tedy oddělit zařízení internetu věcí od počítačů a telefonů.
+Při likvidaci přístroje odborníci doporučují obnovit tovární nastavení, odebrat zařízení z účtu u výrobce a odpojit ho od domácí sítě a dalších aplikací, do kterých bylo přidáno.
+Článek od Polskie Radio, poprvé byl publikován 28. října 2026 v 11:45 (SEČ).
+Tento článek byl přeložen za pomoci umělé inteligence.

@@ -1,0 +1,17 @@
+Uptown Funk AI
+Z nahraných fotek vytvoří 15sekundové hudební video s tancem na píseň Uptown Funk a originálním soundtrackem.
+O nástroji
+Uptown Funk AI promění fotky uživatele do krátkého hudebního videa – stačí nahrát jasnou fotku hlavní postavy, volitelně přidat fotky dalších lidí (až 9 celkem) a nástroj vytvoří přibližně 15sekundové MP4 video v rozlišení 480p a poměru stran 16:9 s původním soundtrackem k písni Uptown Funk. Tanec, pouliční scéna i pohyby kamery jsou již připravené, takže není potřeba nahrávat ani editovat vlastní video. Video je generováno pomocí modelu Seedance 2.5. Nástroj je vhodný pro fanoušky písně, pozvánky na party nebo lehké marketingové experimenty – pro kohokoli, kdo chce mít svůj obličej v rozpoznatelném hudebním momentu. Fotky by měly mít rozměry 300–6000 px a maximální velikost 8 MB, přičemž na jednu fotku připadá jedna osoba. Vytvoření jednoho videa stojí 9,90 USD (až 255 kreditů), bez nutnosti předplatného, k dispozici jsou ale i kreditní balíčky a předplatná. Bezplatná verze není uvedena. Provozovatelem je nezávislé video studio uptownfunkai.com, API ani open-source řešení nebylo na webu zmíněno.
+Klíčové vlastnosti
+- Generuje cca 15sekundové MP4 video z nahraných fotek
+- Až 9 osob v jednom videu, každá na vlastní fotce
+- Výstup v rozlišení 480p, poměr stran 16:9
+- Originální soundtrack písně Uptown Funk
+Časté dotazy
+Co přesně Uptown Funk AI vytvoří?
+Z nahraných fotek vygeneruje přibližně 15sekundové hudební video, kde postavy tančí na píseň Uptown Funk v připravené pouliční scéně s původním soundtrackem.
+Kolik to stojí?
+Vytvoření jednoho videa stojí 9,90 USD (až 255 kreditů) bez nutnosti předplatného, k dispozici jsou i kreditní balíčky a předplatná.
+Jak začít a co nástroj potřebuje?
+Stačí nahrát jasnou fotku hlavní postavy (volitelně i fotky dalších lidí, max. 9 celkem), fotky by měly mít 300–6000 px a maximálně 8 MB.
+Kategorie

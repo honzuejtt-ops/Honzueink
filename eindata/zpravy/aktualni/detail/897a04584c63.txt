@@ -1,0 +1,17 @@
+ChatGiraffe
+ChatGiraffe je AI finanční asistent, který přes chat (WeChat, Apple Messages, Telegram) zaznamenává výdaje a pomáhá sledovat rozpočet.
+O nástroji
+ChatGiraffe funguje jako chatovací AI asistent pro evidenci výdajů – stačí napsat, kolik jste utratili, a nástroj záznam automaticky zařadí a zpracuje pro přehled financí. Přihlásit se lze přes Google, Facebook, Apple nebo e-mail s přihlašovacím kódem, komunikace probíhá v aplikacích jako WhatsApp, WeChat, Apple Messages nebo Telegram (podpora WhatsAppu je dle webu teprve připravována). Data jsou podle popisu nástroje uložena s využitím několika šifrovacích technologií a přístupná pouze uživateli. Nástroj nabízí dva tarify: Free plán zdarma za 0 USD měsíčně se základní AI podporou, zabezpečeným úložištěm a základní datovou analýzou, a Pro plán za 9,99 USD měsíčně, který zvyšuje limit na 500 AI konverzací měsíčně, odemyká pokročilé kategorie a analýzy a přidává prioritní zákaznickou podporu. Rozhraní je anglické, o API ani open-source řešení se důkazy nezmiňují.
+Klíčové vlastnosti
+- Zaznamenání výdajů přes chat v Telegramu, WeChatu nebo Apple Messages
+- Automatické zařazení výdajů do kategorií
+- Přihlášení přes Google, Facebook, Apple nebo e-mailový kód
+- Data chráněná vícenásobným šifrováním
+Časté dotazy
+Jak ChatGiraffe sleduje výdaje?
+Stačí napsat do chatu (např. v Telegramu, WeChatu nebo Apple Messages), kolik jste utratili, a AI záznam automaticky zařadí do kategorie a zpracuje pro přehled financí.
+Kolik ChatGiraffe stojí?
+Free plán je zdarma a nabízí základní AI podporu, zabezpečené úložiště a základní analýzu dat. Pro plán za 9,99 USD měsíčně přidává 500 AI konverzací měsíčně, pokročilé kategorie a analýzy i prioritní podporu.
+Jak začít nástroj používat?
+Stačí se přihlásit přes Google, Facebook, Apple nebo e-mailem s přihlašovacím kódem a zvolit si aplikaci pro chatování (WeChat, Apple Messages nebo Telegram), WhatsApp bude přidán později.
+Kategorie

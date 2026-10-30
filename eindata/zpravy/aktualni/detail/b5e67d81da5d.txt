@@ -1,0 +1,17 @@
+Seamlessify
+Nástroj na tvorbu bezešvých (seamless) opakujících se vzorů z obrázků, s možností AI generování a exportu v dávce.
+O nástroji
+Seamlessify je webový nástroj určený k vytváření bezešvých, dlaždicovatelných vzorů a textur. Umožňuje nahrát vlastní obrázky (PNG, JPG, WEBP, až 100 souborů nebo 500 MB) a pomocí prohlížečového zpracování je spojit, prolnout viditelné švy a exportovat jako PNG, JPG nebo hromadně jako ZIP archiv. Zpracování probíhá přímo v prohlížeči, takže data zůstávají soukromá a nevyžaduje registraci. Kromě přímého skládání obrázků nabízí nástroj i volitelné AI generování nových vzorů pomocí modelů Z-Image a Ideogram, a to buď z referenčního obrázku, nebo textového promptu. Lze nastavit poměr stran (1:1, 3:4, 4:3, 16:9, 9:16) i režim dlaždicování (horizontální, vertikální nebo oba směry). Vygenerované obrázky se po 30 dnech automaticky mažou. Základní prohlížečové zpracování je zdarma bez registrace, AI generování funguje na kreditový systém – po ověření e-mailu obdrží uživatel 2 kredity zdarma. Placené tarify začínají na 9,99 USD měsíčně (100 AI kreditů) a sahají až po 39,99 USD měsíčně (600 kreditů) pro profesionální objemové zpracování, přičemž měsíční kredity se nepřevádějí do dalšího období.
+Klíčové vlastnosti
+- Prolnutí viditelných švů pomocí edge-aware blendingu
+- Kontrola opakování vzoru v náhledu 3×3 dlaždic
+- Hromadné zpracování až 100 obrázků najednou
+- Export do PNG, JPG nebo ZIP archivu
+Časté dotazy
+Co přesně Seamlessify umí?
+Spojí nahrané obrázky do bezešvého opakujícího se vzoru, prolne viditelné švy a umožní kontrolu opakování v náhledu 3×3. Volitelně dokáže nový vzor i vygenerovat pomocí AI (Z-Image nebo Ideogram) z textu či referenčního obrázku a exportovat PNG, JPG nebo hromadně jako ZIP.
+Kolik Seamlessify stojí?
+Základní skládání a export obrázků v prohlížeči je zdarma bez registrace. AI generování funguje na kredity – po ověření e-mailu 2 kredity zdarma, placené tarify pak od 9,99 USD/měsíc (100 kreditů) do 39,99 USD/měsíc (600 kreditů), měsíční kredity se nepřevádějí dál.
+Pro koho je nástroj vhodný a jak začít?
+Hodí se pro tvůrce textur a grafiky (např. pro tisk na textil, tapety či web), kteří potřebují rychle vyrobit bezešvé vzory bez Photoshopu. Stačí nahrát obrázek (PNG, JPG, WEBP) nebo zadat AI prompt a během tří kroků – nahrát, prolnout, exportovat – je vzor hotový.
+Kategorie

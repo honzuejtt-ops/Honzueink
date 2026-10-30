@@ -1,0 +1,17 @@
+Super Resolution
+AI nástroj pro zvětšování fotografií a anime ilustrací z JPG, PNG či WebP až 16× s výstupem ve formátu PNG.
+O nástroji
+Super Resolution je online nástroj na zvětšování obrázků pomocí AI. Po nahrání souboru ve formátu JPG, PNG nebo WebP (do 20 MB) si uživatel vybere režim Photo pro portréty, produktové fotky či snímky obrazovky, nebo režim Anime pro ilustrace, manga a herní grafiku. Lze zvolit zvětšovací faktor 2×, 4×, 8× nebo 16×, výsledek se stahuje jako PNG a může dosáhnout až 64 megapixelů. K dispozici je volitelné vylepšení obličejů určené pro portréty a skupinové fotografie, které vyžaduje zakoupené kredity. Před každým zvětšením nástroj zobrazí cenu v kreditech, takže uživatel vidí náklady ještě před spuštěním. Původní soubor zůstává zachován beze změny a zvětšený výsledek se ukládá jako samostatný soubor. Nástroj je dostupný zdarma ke spuštění, přičemž bezplatné denní výsledky obsahují vodoznak, zatímco placené výsledky jsou bez vodoznaku. Ověřené účty získávají denní kredity zdarma. Služba funguje přímo v prohlížeči a přizpůsobuje se zobrazení na notebooku, tabletu i mobilním telefonu.
+Klíčové vlastnosti
+- Zvětšení 2×, 4×, 8× nebo 16× z JPG, PNG či WebP
+- Režimy Photo a Anime podle typu obrázku
+- Volitelné vylepšení obličejů u portrétů a skupinových fotek
+- Výstup PNG až do 64 megapixelů
+Časté dotazy
+Co nástroj Super Resolution umí?
+Zvětšuje fotografie i anime ilustrace z JPG, PNG nebo WebP až 16× a stahuje výsledek jako PNG o velikosti až 64 megapixelů. K dispozici jsou režimy Photo a Anime a volitelné vylepšení obličejů pro portréty.
+Kolik Super Resolution stojí?
+Nástroj lze spustit zdarma, ale bezplatné denní výsledky obsahují vodoznak. Placené výsledky jsou bez vodoznaku a cena v kreditech se zobrazí ještě před spuštěním zvětšení.
+Pro koho je Super Resolution vhodný a jak začít?
+Hodí se pro každého, kdo potřebuje zvětšit portréty, produktové fotky, snímky obrazovky nebo anime a manga ilustrace. Stačí nahrát soubor do 20 MB v prohlížeči, vybrat režim a faktor zvětšení a stáhnout výsledek.
+Kategorie

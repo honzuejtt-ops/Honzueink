@@ -1,0 +1,17 @@
+SVGMaker
+Online nástroj, který z textového zadání vygeneruje vektorovou grafiku SVG nebo vektorizuje nahraný obrázek PNG, JPG či WebP.
+O nástroji
+SVGMaker umožňuje vytvořit vektorový soubor SVG dvěma způsoby – buď popisem motivu v textovém promptu, kdy AI vygeneruje skutečnou vektorovou grafiku s cestami, výplněmi a skupinami, nebo nahráním existujícího obrázku (PNG, JPG, WebP), který nástroj převede na vektor přímo v prohlížeči. Výsledné soubory lze otevřít a upravovat v libovolném editoru, protože jde o reálný SVG kód, ne o rastrový obrázek s příponou .svg. Nástroj zvládá přes 15 exportních formátů – kromě běžných PNG, JPG, WebP, PDF nebo favicon i formáty pro specializované použití, jako je STL pro 3D tisk nebo DXF pro laserové řezání a CNC obrábění. Formátová konverze probíhá přímo v zařízení uživatele, je zdarma a nevyžaduje registraci ani nahrávání souborů na server. Generování pomocí AI naopak vyžaduje přihlášený účet a spotřebovává kredity, přičemž cena se zobrazí ještě před potvrzením akce.
+Klíčové vlastnosti
+- Generování SVG z textového popisu pomocí AI
+- Vektorizace nahraného PNG, JPG nebo WebP
+- Přes 15 exportních formátů včetně STL a DXF
+- Formátová konverze probíhá přímo v prohlížeči bez nahrávání na server
+Časté dotazy
+Co SVGMaker umí vytvořit?
+Nástroj generuje vektorovou grafiku SVG podle textového zadání pomocí AI, nebo vektorizuje nahraný obrázek PNG, JPG či WebP. Výsledkem je skutečný SVG soubor s cestami, výplněmi a skupinami, který lze upravovat v libovolném editoru.
+Kolik stojí používání SVGMaker?
+Formátová konverze (např. SVG do PNG, JPG, PDF) probíhá přímo v prohlížeči, je zdarma a nevyžaduje registraci. Generování pomocí AI vyžaduje přihlášený účet a spotřebovává kredity, přičemž cena se zobrazí před potvrzením akce.
+Jak s nástrojem začít?
+Stačí popsat požadovaný motiv textem nebo nahrát existující obrázek, vybrat výstupní formát a vygenerovat výsledek ke stažení. Bezplatné konverze fungují bez instalace přímo v zařízení.
+Kategorie

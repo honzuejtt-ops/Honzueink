@@ -1,0 +1,17 @@
+Dola AI
+AI studio pro generování a úpravu obrázků, videí a 3D scén s doplňkovými nástroji na dokumenty, tabulky a prezentace.
+O nástroji
+Dola AI je webové kreativní studio, které v jednom účtu spojuje generování a úpravu obrázků, videí, zvuku a 3D objektů. Nabízí nástroje jako text na obrázek, text na video, odstranění pozadí, face swap, lip sync, zvětšení videa nebo generátor produktových fotografií, přičemž využívá řadu AI modelů (např. MiniMax, Hailuo, Seedance, Veo, Kling nebo GPT Image). Pro 3D scény je použit World Labs Marble, zvuk a objekty generuje Fal. Kromě kreativních funkcí obsahuje Dola AI i kancelářské moduly FilmCraft, PhotoCraft, PdfCraft, WordCraft, GridCraft a DeckCraft pro editaci videa, fotek, PDF, textových dokumentů, tabulek a prezentací. Manuální úpravy a ukládání projektů nespotřebovávají generační kredity, naopak neúspěšné úlohy kredity vracejí. Platforma funguje na kreditovém systému s měsíčními plány Lite za 29,90 USD (600 kreditů), Standard za 49,90 USD (1 500 kreditů), Pro za 99,90 USD (3 600 kreditů) a Max za 199,90 USD (8 000 kreditů). Roční varianty vycházejí podle webu přibližně o 50 % levněji než měsíční platby, dostupné jsou i jednorázové kreditové balíčky od Starter za 39,90 USD (800 kreditů). Bezplatná verze není uvedena.
+Klíčové vlastnosti
+- Generování a úprava obrázků, videí, zvuku a 3D scén v jednom studiu
+- Face swap, lip sync a zvětšení (upscale) videa
+- Generátor produktových fotografií pro e-commerce
+- Odstranění a změna pozadí u obrázků i videí
+Časté dotazy
+Co všechno Dola AI umí vygenerovat?
+Dola AI generuje a upravuje obrázky, videa, zvuk i 3D scény pomocí modelů jako MiniMax, Hailuo, Seedance, Veo, Kling nebo GPT Image a navíc nabízí nástroje na úpravu PDF, dokumentů, tabulek a prezentací.
+Kolik Dola AI stojí?
+Platí se měsíčním kreditovým plánem: Lite za 29,90 USD (600 kreditů), Standard za 49,90 USD (1 500 kreditů), Pro za 99,90 USD (3 600 kreditů) nebo Max za 199,90 USD (8 000 kreditů), roční platba vychází zhruba o 50 % levněji.
+Jak Dola AI začít používat a je nutné platit hned?
+Platforma funguje čistě na předplatném nebo jednorázových kreditových balíčcích (např. Starter za 39,90 USD za 800 kreditů), bezplatná verze není k dispozici.
+Kategorie

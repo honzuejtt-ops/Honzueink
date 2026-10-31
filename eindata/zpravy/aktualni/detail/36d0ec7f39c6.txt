@@ -1,0 +1,17 @@
+MrKeyword
+SEO nástroj pro malé firmy a agentury – výzkum klíčových slov, sledování pozic, audity webu a data z Search Console.
+O nástroji
+MrKeyword je SEO workspace, který spojuje výzkum klíčových slov, sledování pozic, audity webu a reporting na jednom místě. Data čerpá ze Search Console, PageSpeed Insights a Bing Webmaster Tools a umí sledovat i Core Web Vitals, zpětné odkazy nebo odhad návštěvnosti libovolného webu. Součástí je i funkce AI visibility, která ukazuje, zda vás jako značku zmiňují ChatGPT, Gemini, Claude a Perplexity. Novinkou je MCP server, díky kterému lze SEO data propojit přímo s Claude nebo Cursor a ptát se asistenta na vlastní čísla z Search Console, crawlů a reportů – nabízí 27 nástrojů a 4 předpřipravené prompty, přístup je ve výchozím nastavení pouze pro čtení. K dispozici je také SEO Data API s 500 kredity zdarma měsíčně pro vlastní integrace. Free plán je trvale zdarma bez nutnosti zadávat platební kartu, zahrnuje jeden web, 25 sledovaných klíčových slov, audity do 100 stránek měsíčně a 10 živých vyhledávání klíčových slov. Placené plány začínají na 10 dolarech měsíčně (nebo 100 dolarech ročně se dvěma měsíci zdarma) a přidávají AI audity, briefy a rozšířenou AI search visibility.
+Klíčové vlastnosti
+- Výzkum klíčových slov z reálných vyhledávání
+- Sledování pozic klíčových slov v čase
+- Audity webu s detekcí technických chyb
+- Data ze Search Console, PageSpeed Insights a Bing Webmaster Tools
+Časté dotazy
+Co MrKeyword umí?
+Spojuje výzkum klíčových slov, sledování pozic, audity webu a reporting na jednom místě, s daty ze Search Console, PageSpeed Insights a Bing Webmaster Tools. Navíc nabízí AI visibility a MCP server pro propojení s Claude nebo Cursor.
+Kolik MrKeyword stojí?
+Free plán je trvale zdarma bez karty a zahrnuje jeden web, 25 sledovaných klíčových slov a audity do 100 stránek měsíčně. Placené plány začínají na 10 dolarech měsíčně nebo 100 dolarech ročně.
+Jak začít používat MrKeyword?
+Stačí se zaregistrovat zdarma bez platební karty a připojit svoji Google Search Console property, přístup je pouze pro čtení. Poté lze procházet data, hledat klíčová slova a sledovat doporučené opravy.
+Kategorie

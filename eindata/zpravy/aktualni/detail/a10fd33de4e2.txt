@@ -1,0 +1,17 @@
+ArtCraft
+ArtCraft je webové studio pro editaci obrázků, skládání 2D/3D scén a tvorbu videí z textových promptů a referenčních obrázků.
+O nástroji
+ArtCraft spojuje editaci obrázků, kompozici scény, časovou osu videa a referenční tabule do jednoho prohlížečového pracovního prostoru. Nabízí funkce jako Canvas Image Editing, Text to Image a Prompted Image Editing, kde lze využít obrazové vstupy k vedení výsledného generování. Umožňuje také proměnit obrázek na 3D objekt, který lze polohovat a otáčet, nebo animovat obrázek do videa s výběrem z více video modelů. Nástroj cílí na umělce, designéry a filmaře. Cenově funguje na kreditním systému – AI generování, AI editace a trénink postav kredity spotřebovávají, zatímco manuální editace a ukládání projektů jsou zdarma. Placené tarify podle ceníku jsou Basic za 10 dolarů měsíčně (nebo 8 dolarů při ročním placení) za 1000 kreditů, Pro za 35 dolarů měsíčně za 3750 kreditů a Max za 60 dolarů měsíčně za 6600 kreditů. Uživatelé mohou také použít vlastní API klíče (např. pro Midjourney nebo Sora) a kreditní systém tak obejít. Kód ArtCraftu je dostupný na GitHubu (storytold/artcraft) pod dvojí licencí, nástroj je tedy open source. Česká lokalizace rozhraní není v podkladech uvedena.
+Klíčové vlastnosti
+- Editace obrázků přímo na plátně (Canvas)
+- Generování obrázků z textového promptu
+- Úprava obrázků pomocí referenčních snímků
+- Převod 2D obrázku na polohovatelný 3D objekt
+Časté dotazy
+Co přesně ArtCraft umí?
+Spojuje editaci obrázků, skládání 2D/3D scén, časovou osu videa a referenční tabule do jednoho prohlížečového nástroje. Umí generovat obrázky z textu, upravovat je podle referenčních snímků, měnit obrázek na 3D objekt nebo animovat ho do videa.
+Kolik ArtCraft stojí?
+Funguje na kreditech – manuální editace a ukládání projektů jsou zdarma, AI generování a trénink postav kredity spotřebovávají. Placené tarify jsou Basic za 10 $/měsíc (1000 kreditů), Pro za 35 $/měsíc (3750 kreditů) a Max za 60 $/měsíc (6600 kreditů).
+Pro koho je ArtCraft určený a jak začít?
+Nástroj cílí na umělce, designéry a filmaře, kteří chtějí v jednom prohlížečovém prostoru editovat obrázky i tvořit videa. Začít lze na webu artcraft.tools, kód je navíc otevřený na GitHubu (storytold/artcraft).
+Kategorie

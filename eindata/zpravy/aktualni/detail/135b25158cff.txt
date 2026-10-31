@@ -1,0 +1,17 @@
+Lyriclip
+Lyriclip automaticky vytváří lyric videa z nahrané písně a textu, kde se text zobrazuje v rytmu zpěvu.
+O nástroji
+Lyriclip je nástroj pro automatické vytváření lyric videí z vlastní písně. Stačí nahrát hotový zvukový soubor a vložit text písně – software rozpozná slova a umístí je na hudbu ve stylu, který odpovídá skladbě (např. paper cut, comiks, pixel art, sandart, akvarel, vyšívání nebo synthwave). Výsledkem je video ve formátu 16:9 připravené na YouTube. Služba podporuje písně v 18 jazycích, mimo jiné v angličtině, španělštině, francouzštině, němčině, italštině, polštině, maďarštině, švédštině i češtině a slovenštině, a další jazyky mají postupně přibývat. Před objednáním lze stáhnout bezplatný náhled v délce 12 až 15 sekund, přičemž je možné vyzkoušet až tři různé verze stylu zdarma. Cena činí 29 USD za jednu píseň, platba je jednorázová a zahrnuje finální video v rozlišení 1080p bez vodoznaku, s odkazem ke stažení platným 90 dní. V ceně jsou zahrnuty dvě bezplatné opravy textu s překreslením videa a bezplatné předělání v případě chyby na straně nástroje. Vertikální formát 9:16 a čtvercový 1:1 jsou podle webu teprve plánovány.
+Klíčové vlastnosti
+- Automatické rozpoznání slov a sesazení s rytmem zpěvu
+- Styly videa: paper cut, comiks, pixel art, sandart, akvarel, vyšívání, synthwave
+- Podpora 18 jazyků včetně češtiny a slovenštiny
+- Výstup ve formátu 16:9 v rozlišení 1080p bez vodoznaku
+Časté dotazy
+Co přesně Lyriclip vytvoří?
+Z nahrané písně a textu automaticky vygeneruje lyric video ve formátu 16:9, kde se slova zobrazují přesně v rytmu zpěvu, ve stylu odpovídajícím hudbě (např. comiks, akvarel nebo synthwave).
+Kolik Lyriclip stojí?
+Jedna píseň stojí 29 USD jednorázově, v ceně je finální video v 1080p bez vodoznaku s odkazem ke stažení platným 90 dní, včetně dvou bezplatných oprav textu.
+Jak začít a je možné to vyzkoušet zdarma?
+Stačí nahrát hotový zvukový soubor a text písně, vybrat styl a zdarma si stáhnout 12–15sekundový náhled; zkusit lze až tři různé verze stylu bez platby karty.
+Kategorie

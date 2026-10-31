@@ -1,0 +1,17 @@
+Jev Agent
+API pro typovaná AI rozhodnutí – volby, skóre podle rubriky a ano/ne otázky s pravděpodobností, bez generování textu.
+O nástroji
+Jev Agent je nezávislý, neoficiální průvodce k modelu Jev od TypeSafe AI, označovanému jako „System One“ model: místo psaní textu odpovídá na typované otázky rozhodnutím a pravděpodobností. Na jeden požadavek lze poslat libovolný stav a více otázek najednou – volbu z možností, skóre podle rubriky (0 až n-1), nebo ano/ne s mírou jistoty 0–1. Podle ukázek na stránce trvá zpracování deseti otázek přibližně stejně dlouho jako jedné, typická odezva se pohybuje kolem 68–630 ms podle složitosti dotazu. Nástroj je určen pro nasazení v produkčních pipeline, ne pro psaní prózy či kódu – typickými případy jsou směrování podpůrních tiketů, výběr nástroje pro agenta, moderování obsahu, klasifikace phishingu, reranking RAG pasáží, scoring leadů nebo validace CSV dat. API je dostupné přes cURL, Python i TypeScript na endpointu jev-agent.com/api/v1/systemone. Na webu lze model vyzkoušet přímo v prohlížeči bez klíče a registrace (živý playground s reálnými voláními), pro vlastní data je pak potřeba API klíč, který se podle stránky vydává okamžitě bez čekací listiny a bez platební karty. Cena jednotlivých volání se podle uvedených příkladů pohybuje v řádu tisícin až setin dolaru (např. 0,0000137 USD za jedno volání, 0,11 USD za 3000 položek), jde tedy o placenou službu účtovanou za spotřebu (kredity), nikoli o trvale bezplatný tarif. Přesné ceníky, limity a verze modelu (jev-latest, jev-preview, jev-1.13.0) odkazuje stránka na oficiální model card u TypeSafe AI. Implementace je uzavřené API bez otevřených vah a bez možnosti self-hostingu.
+Klíčové vlastnosti
+- Typová rozhodnutí: volba, skóre podle rubriky nebo ano/ne s pravděpodobností
+- Více otázek v jednom požadavku, bez navýšení doby odezvy
+- Odezva přibližně 68–630 ms podle složitosti dotazu
+- API přes cURL, Python i TypeScript na jednom endpointu
+Časté dotazy
+Co přesně Jev Agent umí?
+Jde o API, které na typované otázky odpovídá rozhodnutím a pravděpodobností, ne textem – vybírá z možností, hodnotí podle rubriky nebo odpovídá ano/ne s mírou jistoty. Používá se například pro směrování tiketů, výběr nástroje pro agenta, moderování obsahu nebo scoring leadů.
+Kolik to stojí?
+Platí se za spotřebu podle počtu volání, cena jednoho volání se podle příkladů na webu pohybuje v řádu tisícin až setin dolaru (např. 0,0000137 USD za volání nebo 0,11 USD za 3000 položek).
+Jak mohu začít?
+Model lze vyzkoušet přímo v prohlížeči bez registrace a klíče v živém playgroundu; pro práci s vlastními daty stačí získat API klíč, který se vydává okamžitě bez čekací listiny a bez platební karty.
+Kategorie

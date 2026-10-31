@@ -1,0 +1,17 @@
+Image to Video 2.0
+Nástroj promění nahraný obrázek v krátké AI video pomocí textového popisu pohybu kamery a scény.
+O nástroji
+Image to Video 2.0 umožňuje nahrát jeden obrázek, případně první a poslední snímek nebo referenční obrázky, a pomocí textového promptu popsat pohyb kamery, scény či atmosféru. Výsledkem je krátký video klip ve formátu 4, 6 nebo 8 sekund v rozlišení 720p, vhodný pro produktové ukázky, reklamy, sociální sítě nebo kreativní testy. K dispozici jsou tři generační režimy – Lite, Fast a Quality – lišící se spotřebou kreditů (30, 60 a 250 kreditů) i podporovanými vstupy. Nástroj nabízí poměr stran 16:9, 9:16 nebo automatický výběr a export bez vodoznaku. Nové uživatele čeká 30 kreditů zdarma na vyzkoušení, samotná placená verze ale začíná u balíčku Creator za 16,58 $ měsíčně (při ročním placení) s 4 800 kredity, tedy přibližně 160 videi. Vyšší tarify Studio, Scale a Enterprise nabízejí více kreditů, prioritní frontu nebo dedikovanou podporu. Nástroj také zmiňuje API a při neúspěšné generaci jsou kredity automaticky vráceny.
+Klíčové vlastnosti
+- Vstup: jeden obrázek, první/poslední snímek nebo reference
+- Video 4, 6 nebo 8 sekund v 720p
+- Tři režimy Lite, Fast, Quality dle kreditů
+- Poměr stran 16:9, 9:16 nebo automatický
+Časté dotazy
+Co nástroj umí a jak funguje?
+Nahrajete obrázek (případně první a poslední snímek nebo referenční obrázky) a textovým promptem popíšete pohyb kamery, scény a atmosféru. Nástroj z toho vygeneruje krátké video v délce 4, 6 nebo 8 sekund v rozlišení 720p.
+Kolik Image to Video 2.0 stojí?
+Nové účty dostanou 30 kreditů zdarma na vyzkoušení. Placené balíčky začínají plánem Creator za 16,58 $ měsíčně (roční platba) se 4 800 kredity, tedy přibližně 160 videi, vyšší tarify Studio, Scale a Enterprise nabízejí více kreditů a prioritní frontu.
+Pro koho je nástroj vhodný a jak začít?
+Hodí se tvůrcům, e-shopům i týmům na produktové ukázky, reklamy nebo obsah pro sociální sítě – stačí nahrát obrázek, napsat prompt popisující pohyb a vygenerovat klip, který se uloží do Assets.
+Kategorie

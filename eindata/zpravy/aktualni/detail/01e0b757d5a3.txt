@@ -1,0 +1,17 @@
+Doc2X
+Doc2X převádí PDF a obrázky do Wordu, Markdownu, LaTeXu nebo Excelu s rozpoznáním textu, vzorců a tabulek.
+O nástroji
+Doc2X je online pracovní prostor, který po nahrání PDF nebo obrázku rozpozná text, vzorce a tabulky a převede dokument do pěti cílových formátů: Word, Markdown, LaTeX, Excel nebo prostý text. Při převodu do Wordu lze zachovat původní rozvržení stránky, export do Markdownu zahrnuje i doprovodné obrázky a export do LaTeXu nabízí stažení ZIP souboru s TeX soubory a obrázky pro editory jako Overleaf. Nástroj umí také rozpoznat tabulky v PDF nebo obrázcích a exportovat je do Excelu, kde každá rozpoznaná tabulka tvoří samostatný list. Pro náročnější úkoly je k dispozici rozpoznávání komplexních matic, lineární algebry, ručně psaných vzorců i otočených či sloučených tabulek, a také funkce pro AI konverzaci nad více dokumenty, korektury a sestavování testových otázek. Doc2X dále nabízí překlad PDF nebo Word dokumentů, který na rozdíl od běžných překladačů zachovává strukturu vzorců a tabulek, a zásuvný modul pro Zotero. Webová služba kombinuje bezplatné nástroje se zkušebním přístupem a placeným členstvím s kredity, API je zpoplatněné samostatně podle využití a vyžaduje vlastní API klíč. Rozhraní webu je v čínštině.
+Klíčové vlastnosti
+- Export do Wordu, Markdownu, LaTeXu, Excelu i prostého textu
+- Zachování původního rozvržení stránky při převodu do Wordu
+- Export do Markdownu včetně doprovodných obrázků
+- Export tabulek do Excelu s každou tabulkou na samostatném listu
+Časté dotazy
+Co přesně Doc2X umí?
+Rozpozná text, vzorce a tabulky v PDF nebo obrázku a převede dokument do Wordu, Markdownu, LaTeXu, Excelu nebo prostého textu. Zvládá i rozpoznávání otočených a sloučených tabulek, ručně psaných vzorců a nabízí AI konverzaci nad více dokumenty.
+Kolik Doc2X stojí?
+Služba kombinuje bezplatné nástroje se zkušebním přístupem a placeným členstvím na bázi kreditů; API se platí samostatně podle využití a vyžaduje vlastní API klíč.
+Jak s nástrojem začít?
+Stačí nahrát PDF nebo obrázek do online pracovního prostoru, zkontrolovat rozpoznaný text, vzorce a tabulky a poté exportovat do zvoleného formátu podle typu úkolu.
+Kategorie

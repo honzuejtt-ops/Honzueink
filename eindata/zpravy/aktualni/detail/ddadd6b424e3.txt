@@ -1,0 +1,17 @@
+VideoTextRemover
+Online nástroj na odstranění vypáleného textu z videa pomocí AI – titulků, popisků i časových razítek z MP4 nebo MOV.
+O nástroji
+VideoTextRemover odstraňuje vypálený text z videa, například titulky, popisky, nadpisy nebo časová razítka, a místo něj dopočítá, co by se podle AI nacházelo za textem, aby záběr vypadal nedotčený. Nahrává se MP4 nebo MOV soubor do velikosti 500 MB a délky 10 minut, výstup je dostupný až v rozlišení 1080p. Výsledky se po zpracování uchovávají po dobu 7 dní. K dispozici jsou tři režimy: „Select area“ pro statický text na jednom místě (uživatel kreslí ohraničující boxy, max. 6), „Subtitles“ pro klasické titulky pohybující se po obrazovce a „All text“, který odstraní veškerý text včetně nadpisů a popisků najednou. Zpracování probíhá na pozadí a trvá přibližně 10 minut i déle, výsledek se objeví v sekci „Recent tasks“. Model funguje nejlépe u malého textu na čistém a stabilním pozadí, naopak si neporadí s velkým textem přes celý záběr, rušným pohyblivým pozadím nebo pohybujícím se textem. Podle důkazů je zpoplatnění na bázi kreditů za sekundu zpracovaného videa (přibližně 0,03 USD), po přihlášení přes Google je k dispozici 30 bezplatných sekund měsíčně.
+Klíčové vlastnosti
+- Tři režimy: Select area, Subtitles, All text
+- Odstraní titulky, popisky, nadpisy i časová razítka
+- Podpora MP4/MOV do 500 MB a 10 minut
+- Výstup až v rozlišení 1080p
+Časté dotazy
+Co přesně VideoTextRemover umí?
+Odstraní vypálený text z videa – titulky, popisky, nadpisy nebo časová razítka – a místo něj dopočítá pomocí AI, co by se nacházelo za textem, aby záběr vypadal nedotčený. Funguje nejlépe na malém textu na klidném, čistém pozadí.
+Kolik to stojí?
+Platí se v kreditech podle délky zpracovaného videa, přibližně 0,03 USD za sekundu. Po přihlášení přes Google dostanete 30 sekund zdarma každý měsíc.
+Jak začnu a pro koho je nástroj vhodný?
+Stačí nahrát MP4 nebo MOV soubor (max. 500 MB, 10 minut), vybrat režim a část videa ke zpracování – výsledek se objeví do cca 10 minut v sekci „Recent tasks“. Hodí se například na mluvené videopříspěvky, produktové reklamy nebo titulky k filmům.
+Kategorie

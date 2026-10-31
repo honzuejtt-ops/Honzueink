@@ -1,0 +1,165 @@
+|T|Lomography uvedlo Petzval Métamorphose 35 f/1.8 s nastavitelným bokehem|D|31.10.2026 08:30|P|V nabídce objektivů značky Lomography se objevila novinka Petzval Métamorphose 35 f/1.8. Ta umožňuje nastavit bokeh na několik různých charakterů.|M|Digimanie|X|V nabídce objektivů značky Lomography se objevila novinka Petzval Métamorphose 35 f/1.8. Ta umožňuje nastavit bokeh na několik různých charakterů.
+Lomography rozšiřuje svou řadu historií inspirovaných skel o nový model Joseph Petzval Métamorphose 35mm f/1.8. Jde o speciální kreativní objektiv určený pro full frame bezzrcadlovky s bajonety Sony E, Canon RF nebo Nikon Z. Novinka staví na tradičním designu Petzval, který je známý svým charakteristickým kruhovým rozostřením, nicméně v tomto případě je to ještě rozšířené o možnosti ovládání efektu přímo v objektivu.
+Hlavním prvkem je speciální kroužek pro ovládání bokeh efektu, který nabízí sedm různých úrovní. Při nejvyšší hodnotě vzniká silný optický warp efekt, který přitahuje pozornost k velmi ostrému středu snímku. Naopak nejnižší úroveň přináší pozvolné změkčení okrajů s efekty připomínajícími mýdlové bubliny. Focus-coupling eliminuje posun zaostření při změně úrovně bokeh efektu, což je důležité zejména pro video
+Světelnost novinky činí F1,8 a irisová clona podporuje rozsah až do F22. Optická konstrukce se skládá ze 6 členů v 5 skupinách. Zaostřování je plně manuální s mechanismem helikoidu o chodu 180°a nejkratší zaostřovací vzdálenost činí 35 cm. V případě práce s blízkými objekty vzniká specifický efekt kombinující točení i natahování rozostřených ploch.
+Tělo objektivu je vyrobeno z anodizovaného hliníku a disponuje závitem pro filtry o průměru 67 mm. Pro profesionální využití jsou kroužky clony i ostření vybaveny vroubkováním pro kompatibilitu s follow-focus systémy a je tu i závit pro stativ (¼").
+K dispozici je také možnost použití speciálních zadních clonových flitrů s různými výřezy, např. ve tvaru srdce, hvězdy nebo sněhové vločky, které dále modifikují vzhled bokehu. Cena novinky byla stanovena na 549 USD a první dodávky by měly začít v prosinci.|E|
+|T|Doc2X|D|31.10.2026 07:23|P|Doc2X převádí PDF a obrázky do Wordu, Markdownu, LaTeXu nebo Excelu s rozpoznáním textu, vzorců a tabulek.|M|EJAJ|X|Doc2X
+Doc2X převádí PDF a obrázky do Wordu, Markdownu, LaTeXu nebo Excelu s rozpoznáním textu, vzorců a tabulek.
+O nástroji
+Doc2X je online pracovní prostor, který po nahrání PDF nebo obrázku rozpozná text, vzorce a tabulky a převede dokument do pěti cílových formátů: Word, Markdown, LaTeX, Excel nebo prostý text. Při převodu do Wordu lze zachovat původní rozvržení stránky, export do Markdownu zahrnuje i doprovodné obrázky a export do LaTeXu nabízí stažení ZIP souboru s TeX soubory a obrázky pro editory jako Overleaf. Nástroj umí také rozpoznat tabulky v PDF nebo obrázcích a exportovat je do Excelu, kde každá rozpoznaná tabulka tvoří samostatný list. Pro náročnější úkoly je k dispozici rozpoznávání komplexních matic, lineární algebry, ručně psaných vzorců i otočených či sloučených tabulek, a také funkce pro AI konverzaci nad více dokumenty, korektury a sestavování testových otázek. Doc2X dále nabízí překlad PDF nebo Word dokumentů, který na rozdíl od běžných překladačů zachovává strukturu vzorců a tabulek, a zásuvný modul pro Zotero. Webová služba kombinuje bezplatné nástroje se zkušebním přístupem a placeným členstvím s kredity, API je zpoplatněné samostatně podle využití a vyžaduje vlastní API klíč. Rozhraní webu je v čínštině.
+Klíčové vlastnosti
+- Export do Wordu, Markdownu, LaTeXu, Excelu i prostého textu
+- Zachování původního rozvržení stránky při převodu do Wordu
+- Export do Markdownu včetně doprovodných obrázků
+- Export tabulek do Excelu s každou tabulkou na samostatném listu
+Časté dotazy
+Co přesně Doc2X umí?
+Rozpozná text, vzorce a tabulky v PDF nebo obrázku a převede dokument do Wordu, Markdownu, LaTeXu, Excelu nebo prostého textu. Zvládá i rozpoznávání otočených a sloučených tabulek, ručně psaných vzorců a nabízí AI konverzaci nad více dokumenty.
+Kolik Doc2X stojí?
+Služba kombinuje bezplatné nástroje se zkušebním přístupem a placeným členstvím na bázi kreditů; API se platí samostatně podle využití a vyžaduje vlastní API klíč.
+Jak s nástrojem začít?
+Stačí nahrát PDF nebo obrázek do online pracovního prostoru, zkontrolovat rozpoznaný text, vzorce a tabulky a poté exportovat do zvoleného formátu podle typu úkolu.
+Kategorie|E|
+|T|Jev Agent|D|31.10.2026 07:23|P|API pro typovaná AI rozhodnutí – volby, skóre podle rubriky a ano/ne otázky s pravděpodobností, bez generování textu.|M|EJAJ|X|Jev Agent
+API pro typovaná AI rozhodnutí – volby, skóre podle rubriky a ano/ne otázky s pravděpodobností, bez generování textu.
+O nástroji
+Jev Agent je nezávislý, neoficiální průvodce k modelu Jev od TypeSafe AI, označovanému jako „System One“ model: místo psaní textu odpovídá na typované otázky rozhodnutím a pravděpodobností. Na jeden požadavek lze poslat libovolný stav a více otázek najednou – volbu z možností, skóre podle rubriky (0 až n-1), nebo ano/ne s mírou jistoty 0–1. Podle ukázek na stránce trvá zpracování deseti otázek přibližně stejně dlouho jako jedné, typická odezva se pohybuje kolem 68–630 ms podle složitosti dotazu. Nástroj je určen pro nasazení v produkčních pipeline, ne pro psaní prózy či kódu – typickými případy jsou směrování podpůrních tiketů, výběr nástroje pro agenta, moderování obsahu, klasifikace phishingu, reranking RAG pasáží, scoring leadů nebo validace CSV dat. API je dostupné přes cURL, Python i TypeScript na endpointu jev-agent.com/api/v1/systemone. Na webu lze model vyzkoušet přímo v prohlížeči bez klíče a registrace (živý playground s reálnými voláními), pro vlastní data je pak potřeba API klíč, který se podle stránky vydává okamžitě bez čekací listiny a bez platební karty. Cena jednotlivých volání se podle uvedených příkladů pohybuje v řádu tisícin až setin dolaru (např. 0,0000137 USD za jedno volání, 0,11 USD za 3000 položek), jde tedy o placenou službu účtovanou za spotřebu (kredity), nikoli o trvale bezplatný tarif. Přesné ceníky, limity a verze modelu (jev-latest, jev-preview, jev-1.13.0) odkazuje stránka na oficiální model card u TypeSafe AI. Implementace je uzavřené API bez otevřených vah a bez možnosti self-hostingu.
+Klíčové vlastnosti
+- Typová rozhodnutí: volba, skóre podle rubriky nebo ano/ne s pravděpodobností
+- Více otázek v jednom požadavku, bez navýšení doby odezvy
+- Odezva přibližně 68–630 ms podle složitosti dotazu
+- API přes cURL, Python i TypeScript na jednom endpointu
+Časté dotazy
+Co přesně Jev Agent umí?
+Jde o API, které na typované otázky odpovídá rozhodnutím a pravděpodobností, ne textem – vybírá z možností, hodnotí podle rubriky nebo odpovídá ano/ne s mírou jistoty. Používá se například pro směrování tiketů, výběr nástroje pro agenta, moderování obsahu nebo scoring leadů.
+Kolik to stojí?
+Platí se za spotřebu podle počtu volání, cena jednoho volání se podle příkladů na webu pohybuje v řádu tisícin až setin dolaru (např. 0,0000137 USD za volání nebo 0,11 USD za 3000 položek).
+Jak mohu začít?
+Model lze vyzkoušet přímo v prohlížeči bez registrace a klíče v živém playgroundu; pro práci s vlastními daty stačí získat API klíč, který se vydává okamžitě bez čekací listiny a bez platební karty.
+Kategorie|E|
+|T|Arsaze|D|31.10.2026 07:23|P|AI video editor, který upravuje reálnou timeline podle slovních pokynů nebo pomocí AI agentů jako Claude, ChatGPT či Grok.|M|EJAJ|X|Arsaze
+AI video editor, který upravuje reálnou timeline podle slovních pokynů nebo pomocí AI agentů jako Claude, ChatGPT či Grok.
+O nástroji
+Arsaze je AI-nativní video editor určený pro editory, tvůrce obsahu i postprodukční týmy, který funguje podobně jako Cursor pro programování – jen místo kódu upravuje video. Uživatel může zadávat střihy v přirozeném jazyce, upravovat video jako textový přepis (smazání slova = střih v záznamu) nebo editovat ručně na multi-track timeline. Každá úprava se přehraje živě a je verzovaná, takže ji lze kdykoliv vrátit zpět. Mezi funkce patří automatické titulky s časováním slov, odstranění ticha a slovních vycpávek, barevná korekce (křivky, HSL, LUT), zvukové nástroje (izolace hlasu, redukce šumu, ducking), generování obrázků, videa, hlasu a hudby přímo do timeline, sledování pohybu, odstranění pozadí a export do formátů pro DaVinci Resolve nebo Premiere Pro. Funkce Tab navrhuje další úpravu podle vzoru předchozí akce a je dostupná i ve free plánu. Nástroj nabízí také API/MCP rozhraní pro napojení vlastních AI agentů s autentizací OAuth 2.1. Aplikace je dostupná pro Windows, Mac, Linux a jako webová verze. Cenové plány zahrnují Free (zdarma, plný editor bez vodoznaku), Basic, Pro a Studio s měsíčním poplatkem v indických rupiích a Enterprise na vyžádání. Produkt je uzavřeného zdrojového kódu, veřejně dostupná je pouze dokumentace k MCP rozhraní.
+Klíčové vlastnosti
+- Střih podle přirozeného jazyka nebo textového přepisu
+- Automatické titulky s časováním jednotlivých slov
+- Odstranění ticha a slovních vycpávek jedním krokem
+- Barevná korekce pomocí křivek, HSL a LUT
+Časté dotazy
+Co přesně Arsaze umí?
+Je to AI video editor s reálnou multi-track timeline, kterou lze upravovat ručně, textem (smazání slova = střih) nebo pomocí AI agentů jako Claude či ChatGPT. Zvládá automatické titulky, odstranění ticha, barevnou korekci, zvukové nástroje i generování obsahu přímo do timeline.
+Kolik Arsaze stojí?
+Základní plán Free je zdarma a nabízí plný editor bez vodoznaku včetně funkce Tab. Dále jsou k dispozici placené plány Basic, Pro a Studio s měsíčním poplatkem v indických rupiích a Enterprise na vyžádání.
+Pro koho je Arsaze určené a jak začít?
+Je určené pro video editory, tvůrce obsahu a postprodukční týmy. Stačí si zdarma stáhnout aplikaci pro Windows, Mac, Linux nebo použít webovou verzi bez nutnosti karty, případně vyzkoušet demo přímo na webu.
+Kategorie|E|
+|T|VideoTextRemover|D|31.10.2026 07:22|P|Online nástroj na odstranění vypáleného textu z videa pomocí AI – titulků, popisků i časových razítek z MP4 nebo MOV.|M|EJAJ|X|VideoTextRemover
+Online nástroj na odstranění vypáleného textu z videa pomocí AI – titulků, popisků i časových razítek z MP4 nebo MOV.
+O nástroji
+VideoTextRemover odstraňuje vypálený text z videa, například titulky, popisky, nadpisy nebo časová razítka, a místo něj dopočítá, co by se podle AI nacházelo za textem, aby záběr vypadal nedotčený. Nahrává se MP4 nebo MOV soubor do velikosti 500 MB a délky 10 minut, výstup je dostupný až v rozlišení 1080p. Výsledky se po zpracování uchovávají po dobu 7 dní. K dispozici jsou tři režimy: „Select area“ pro statický text na jednom místě (uživatel kreslí ohraničující boxy, max. 6), „Subtitles“ pro klasické titulky pohybující se po obrazovce a „All text“, který odstraní veškerý text včetně nadpisů a popisků najednou. Zpracování probíhá na pozadí a trvá přibližně 10 minut i déle, výsledek se objeví v sekci „Recent tasks“. Model funguje nejlépe u malého textu na čistém a stabilním pozadí, naopak si neporadí s velkým textem přes celý záběr, rušným pohyblivým pozadím nebo pohybujícím se textem. Podle důkazů je zpoplatnění na bázi kreditů za sekundu zpracovaného videa (přibližně 0,03 USD), po přihlášení přes Google je k dispozici 30 bezplatných sekund měsíčně.
+Klíčové vlastnosti
+- Tři režimy: Select area, Subtitles, All text
+- Odstraní titulky, popisky, nadpisy i časová razítka
+- Podpora MP4/MOV do 500 MB a 10 minut
+- Výstup až v rozlišení 1080p
+Časté dotazy
+Co přesně VideoTextRemover umí?
+Odstraní vypálený text z videa – titulky, popisky, nadpisy nebo časová razítka – a místo něj dopočítá pomocí AI, co by se nacházelo za textem, aby záběr vypadal nedotčený. Funguje nejlépe na malém textu na klidném, čistém pozadí.
+Kolik to stojí?
+Platí se v kreditech podle délky zpracovaného videa, přibližně 0,03 USD za sekundu. Po přihlášení přes Google dostanete 30 sekund zdarma každý měsíc.
+Jak začnu a pro koho je nástroj vhodný?
+Stačí nahrát MP4 nebo MOV soubor (max. 500 MB, 10 minut), vybrat režim a část videa ke zpracování – výsledek se objeví do cca 10 minut v sekci „Recent tasks“. Hodí se například na mluvené videopříspěvky, produktové reklamy nebo titulky k filmům.
+Kategorie|E|
+|T|Video 2 URL|D|31.10.2026 07:22|P|Bezplatný online nástroj pro převod videa na URL – nahrajte MP4, MOV nebo WebM do 50 MB bez registrace a získejte odkaz.|M|EJAJ|X|Video 2 URL
+Bezplatný online nástroj pro převod videa na URL – nahrajte MP4, MOV nebo WebM do 50 MB bez registrace a získejte odkaz.
+O nástroji
+Video 2 URL je jednoduchá webová aplikace, která z nahraného videa vytvoří sdílitelnou URL adresu. Podporuje formáty MP4, MOV a WebM do velikosti 50 MB na soubor, nevyžaduje registraci ani vytvoření účtu. Hosté mohou nahrát až 5 videí denně a mají k dispozici celkem 100 MB úložiště, videa zůstávají veřejně dostupná a uložená po dobu sedmi dní. Po nahrání souboru nástroj nabídne výsledek ve třech podobách: přímou URL adresu, Markdown odkaz nebo HTML embed kód s video elementem. Soubor se ukládá v původním formátu bez překódování, komprese nebo přidání vodoznaku, takže zachovává původní kvalitu i nároky na přehrávání. Výsledný odkaz lze použít v e-mailech, zprávách, dokumentech, issue reportech nebo jako zdroj pro vlastní video přehrávač na webové stránce, pokud podporuje vlastní HTML. Nástroj je určen pro rychlé jednorázové sdílení krátkých klipů, například ukázek produktu, záznamů chyb pro vývojáře nebo krátkých lekcí a návodů. Protože jde o přímý odkaz na soubor, nejde o alternativu k YouTube nebo Vimeu – pole omezená pouze na tyto platformy odkaz nepřijmou. Nástroj soubor pouze ukládá a nepřevádí kodeky, takže nevyřeší případnou nekompatibilitu přehrávání na cílovém zařízení.
+Klíčové vlastnosti
+- Podporuje MP4, MOV a WebM do 50 MB
+- Bez registrace, nahrání jako host
+- Výstup jako přímá URL, Markdown nebo HTML embed
+- Ukládá soubor beze změny kvality a bez vodoznaku
+Časté dotazy
+Co nástroj přesně umí?
+Z nahraného videa ve formátu MP4, MOV nebo WebM vytvoří sdílitelnou URL adresu, kterou lze použít jako přímý odkaz, Markdown link nebo HTML embed kód.
+Kolik to stojí a jaké jsou limity?
+Nástroj je zdarma bez nutnosti registrace, hosté mohou nahrát až 5 videí denně do celkové velikosti 100 MB, jednotlivý soubor max. 50 MB, videa zůstávají dostupná 7 dní.
+Pro koho je nástroj určený a jak začít?
+Hodí se pro rychlé jednorázové sdílení krátkých klipů, například produktových ukázek, bug reportů pro vývojáře nebo krátkých návodů – stačí vybrat video, nahrát ho a zkopírovat vygenerovaný odkaz.
+Kategorie|E|
+|T|Lyriclip|D|31.10.2026 07:22|P|Lyriclip automaticky vytváří lyric videa z nahrané písně a textu, kde se text zobrazuje v rytmu zpěvu.|M|EJAJ|X|Lyriclip
+Lyriclip automaticky vytváří lyric videa z nahrané písně a textu, kde se text zobrazuje v rytmu zpěvu.
+O nástroji
+Lyriclip je nástroj pro automatické vytváření lyric videí z vlastní písně. Stačí nahrát hotový zvukový soubor a vložit text písně – software rozpozná slova a umístí je na hudbu ve stylu, který odpovídá skladbě (např. paper cut, comiks, pixel art, sandart, akvarel, vyšívání nebo synthwave). Výsledkem je video ve formátu 16:9 připravené na YouTube. Služba podporuje písně v 18 jazycích, mimo jiné v angličtině, španělštině, francouzštině, němčině, italštině, polštině, maďarštině, švédštině i češtině a slovenštině, a další jazyky mají postupně přibývat. Před objednáním lze stáhnout bezplatný náhled v délce 12 až 15 sekund, přičemž je možné vyzkoušet až tři různé verze stylu zdarma. Cena činí 29 USD za jednu píseň, platba je jednorázová a zahrnuje finální video v rozlišení 1080p bez vodoznaku, s odkazem ke stažení platným 90 dní. V ceně jsou zahrnuty dvě bezplatné opravy textu s překreslením videa a bezplatné předělání v případě chyby na straně nástroje. Vertikální formát 9:16 a čtvercový 1:1 jsou podle webu teprve plánovány.
+Klíčové vlastnosti
+- Automatické rozpoznání slov a sesazení s rytmem zpěvu
+- Styly videa: paper cut, comiks, pixel art, sandart, akvarel, vyšívání, synthwave
+- Podpora 18 jazyků včetně češtiny a slovenštiny
+- Výstup ve formátu 16:9 v rozlišení 1080p bez vodoznaku
+Časté dotazy
+Co přesně Lyriclip vytvoří?
+Z nahrané písně a textu automaticky vygeneruje lyric video ve formátu 16:9, kde se slova zobrazují přesně v rytmu zpěvu, ve stylu odpovídajícím hudbě (např. comiks, akvarel nebo synthwave).
+Kolik Lyriclip stojí?
+Jedna píseň stojí 29 USD jednorázově, v ceně je finální video v 1080p bez vodoznaku s odkazem ke stažení platným 90 dní, včetně dvou bezplatných oprav textu.
+Jak začít a je možné to vyzkoušet zdarma?
+Stačí nahrát hotový zvukový soubor a text písně, vybrat styl a zdarma si stáhnout 12–15sekundový náhled; zkusit lze až tři různé verze stylu bez platby karty.
+Kategorie|E|
+|T|MrKeyword|D|31.10.2026 07:22|P|SEO nástroj pro malé firmy a agentury – výzkum klíčových slov, sledování pozic, audity webu a data z Search Console.|M|EJAJ|X|MrKeyword
+SEO nástroj pro malé firmy a agentury – výzkum klíčových slov, sledování pozic, audity webu a data z Search Console.
+O nástroji
+MrKeyword je SEO workspace, který spojuje výzkum klíčových slov, sledování pozic, audity webu a reporting na jednom místě. Data čerpá ze Search Console, PageSpeed Insights a Bing Webmaster Tools a umí sledovat i Core Web Vitals, zpětné odkazy nebo odhad návštěvnosti libovolného webu. Součástí je i funkce AI visibility, která ukazuje, zda vás jako značku zmiňují ChatGPT, Gemini, Claude a Perplexity. Novinkou je MCP server, díky kterému lze SEO data propojit přímo s Claude nebo Cursor a ptát se asistenta na vlastní čísla z Search Console, crawlů a reportů – nabízí 27 nástrojů a 4 předpřipravené prompty, přístup je ve výchozím nastavení pouze pro čtení. K dispozici je také SEO Data API s 500 kredity zdarma měsíčně pro vlastní integrace. Free plán je trvale zdarma bez nutnosti zadávat platební kartu, zahrnuje jeden web, 25 sledovaných klíčových slov, audity do 100 stránek měsíčně a 10 živých vyhledávání klíčových slov. Placené plány začínají na 10 dolarech měsíčně (nebo 100 dolarech ročně se dvěma měsíci zdarma) a přidávají AI audity, briefy a rozšířenou AI search visibility.
+Klíčové vlastnosti
+- Výzkum klíčových slov z reálných vyhledávání
+- Sledování pozic klíčových slov v čase
+- Audity webu s detekcí technických chyb
+- Data ze Search Console, PageSpeed Insights a Bing Webmaster Tools
+Časté dotazy
+Co MrKeyword umí?
+Spojuje výzkum klíčových slov, sledování pozic, audity webu a reporting na jednom místě, s daty ze Search Console, PageSpeed Insights a Bing Webmaster Tools. Navíc nabízí AI visibility a MCP server pro propojení s Claude nebo Cursor.
+Kolik MrKeyword stojí?
+Free plán je trvale zdarma bez karty a zahrnuje jeden web, 25 sledovaných klíčových slov a audity do 100 stránek měsíčně. Placené plány začínají na 10 dolarech měsíčně nebo 100 dolarech ročně.
+Jak začít používat MrKeyword?
+Stačí se zaregistrovat zdarma bez platební karty a připojit svoji Google Search Console property, přístup je pouze pro čtení. Poté lze procházet data, hledat klíčová slova a sledovat doporučené opravy.
+Kategorie|E|
+|T|Image to Video 2.0|D|31.10.2026 07:22|P|Nástroj promění nahraný obrázek v krátké AI video pomocí textového popisu pohybu kamery a scény.|M|EJAJ|X|Image to Video 2.0
+Nástroj promění nahraný obrázek v krátké AI video pomocí textového popisu pohybu kamery a scény.
+O nástroji
+Image to Video 2.0 umožňuje nahrát jeden obrázek, případně první a poslední snímek nebo referenční obrázky, a pomocí textového promptu popsat pohyb kamery, scény či atmosféru. Výsledkem je krátký video klip ve formátu 4, 6 nebo 8 sekund v rozlišení 720p, vhodný pro produktové ukázky, reklamy, sociální sítě nebo kreativní testy. K dispozici jsou tři generační režimy – Lite, Fast a Quality – lišící se spotřebou kreditů (30, 60 a 250 kreditů) i podporovanými vstupy. Nástroj nabízí poměr stran 16:9, 9:16 nebo automatický výběr a export bez vodoznaku. Nové uživatele čeká 30 kreditů zdarma na vyzkoušení, samotná placená verze ale začíná u balíčku Creator za 16,58 $ měsíčně (při ročním placení) s 4 800 kredity, tedy přibližně 160 videi. Vyšší tarify Studio, Scale a Enterprise nabízejí více kreditů, prioritní frontu nebo dedikovanou podporu. Nástroj také zmiňuje API a při neúspěšné generaci jsou kredity automaticky vráceny.
+Klíčové vlastnosti
+- Vstup: jeden obrázek, první/poslední snímek nebo reference
+- Video 4, 6 nebo 8 sekund v 720p
+- Tři režimy Lite, Fast, Quality dle kreditů
+- Poměr stran 16:9, 9:16 nebo automatický
+Časté dotazy
+Co nástroj umí a jak funguje?
+Nahrajete obrázek (případně první a poslední snímek nebo referenční obrázky) a textovým promptem popíšete pohyb kamery, scény a atmosféru. Nástroj z toho vygeneruje krátké video v délce 4, 6 nebo 8 sekund v rozlišení 720p.
+Kolik Image to Video 2.0 stojí?
+Nové účty dostanou 30 kreditů zdarma na vyzkoušení. Placené balíčky začínají plánem Creator za 16,58 $ měsíčně (roční platba) se 4 800 kredity, tedy přibližně 160 videi, vyšší tarify Studio, Scale a Enterprise nabízejí více kreditů a prioritní frontu.
+Pro koho je nástroj vhodný a jak začít?
+Hodí se tvůrcům, e-shopům i týmům na produktové ukázky, reklamy nebo obsah pro sociální sítě – stačí nahrát obrázek, napsat prompt popisující pohyb a vygenerovat klip, který se uloží do Assets.
+Kategorie|E|
+|T|ArtCraft|D|31.10.2026 07:21|P|ArtCraft je webové studio pro editaci obrázků, skládání 2D/3D scén a tvorbu videí z textových promptů a referenčních obrázků.|M|EJAJ|X|ArtCraft
+ArtCraft je webové studio pro editaci obrázků, skládání 2D/3D scén a tvorbu videí z textových promptů a referenčních obrázků.
+O nástroji
+ArtCraft spojuje editaci obrázků, kompozici scény, časovou osu videa a referenční tabule do jednoho prohlížečového pracovního prostoru. Nabízí funkce jako Canvas Image Editing, Text to Image a Prompted Image Editing, kde lze využít obrazové vstupy k vedení výsledného generování. Umožňuje také proměnit obrázek na 3D objekt, který lze polohovat a otáčet, nebo animovat obrázek do videa s výběrem z více video modelů. Nástroj cílí na umělce, designéry a filmaře. Cenově funguje na kreditním systému – AI generování, AI editace a trénink postav kredity spotřebovávají, zatímco manuální editace a ukládání projektů jsou zdarma. Placené tarify podle ceníku jsou Basic za 10 dolarů měsíčně (nebo 8 dolarů při ročním placení) za 1000 kreditů, Pro za 35 dolarů měsíčně za 3750 kreditů a Max za 60 dolarů měsíčně za 6600 kreditů. Uživatelé mohou také použít vlastní API klíče (např. pro Midjourney nebo Sora) a kreditní systém tak obejít. Kód ArtCraftu je dostupný na GitHubu (storytold/artcraft) pod dvojí licencí, nástroj je tedy open source. Česká lokalizace rozhraní není v podkladech uvedena.
+Klíčové vlastnosti
+- Editace obrázků přímo na plátně (Canvas)
+- Generování obrázků z textového promptu
+- Úprava obrázků pomocí referenčních snímků
+- Převod 2D obrázku na polohovatelný 3D objekt
+Časté dotazy
+Co přesně ArtCraft umí?
+Spojuje editaci obrázků, skládání 2D/3D scén, časovou osu videa a referenční tabule do jednoho prohlížečového nástroje. Umí generovat obrázky z textu, upravovat je podle referenčních snímků, měnit obrázek na 3D objekt nebo animovat ho do videa.
+Kolik ArtCraft stojí?
+Funguje na kreditech – manuální editace a ukládání projektů jsou zdarma, AI generování a trénink postav kredity spotřebovávají. Placené tarify jsou Basic za 10 $/měsíc (1000 kreditů), Pro za 35 $/měsíc (3750 kreditů) a Max za 60 $/měsíc (6600 kreditů).
+Pro koho je ArtCraft určený a jak začít?
+Nástroj cílí na umělce, designéry a filmaře, kteří chtějí v jednom prohlížečovém prostoru editovat obrázky i tvořit videa. Začít lze na webu artcraft.tools, kód je navíc otevřený na GitHubu (storytold/artcraft).
+Kategorie|E|
+|T|Cooler Master uvádí zlatavé PC MasterFrame 400 Mesh Gold|D|31.10.2026 06:30|P|Společnost Cooler Master uvedla na trh speciální PC MasterFrame 400 Mesh Gold. Přináší vysoký herní výkon a luxusní zlatavý design.|M|SvětHW|X|Společnost Cooler Master uvedla na trh speciální PC MasterFrame 400 Mesh Gold. Přináší vysoký herní výkon a luxusní zlatavý design.
+Design se v počítačovém hardwaru stává stále důležitější. Společnost Cooler Master proto nyní představuje limitované edice produktů v zlatém provedení, konkrétně počítač MasterFrame 400 Mesh Gold a chladič MasterLiquid Atmos II Pro Gold.
+MasterFrame 400 Mesh Gold disponuje předním panelem z pěnové zlaté mřížky a přináší luxusní kovový vzhled. Kompaktní skříň podporuje základní desky formátu Micro-ATX a Mini-ITX, přičemž vnitřní prostor pojme grafické karty o délce až 390 mm. V základu je zde instalován 140mm hliníkový ventilátor. Co se týče chlazení, skříň umožňuje osadit až devět ventilátorů a nahoře podporuje radiátor vodního chlazení až do velikosti 360 mm.
+V USA bude tato skříň dostupná výhradně v rámci kompletních sestav od META PCs v konfiguracích Alchemist s RTX 5080 nebo Flamel s RTX 5090, obě vybavené procesorem AMD Ryzen 7 9800X3D a 32 GB RAM DDR5-6000 od Kingstonu (řada Fury). Bude mít 2TB SSD Samsung 9100 Pro a operační systém Windows 11 Home. Cena činí 4899 USD za verzi s GeForce RTX 5080 a 8499 USD za variantu s RTX 5090.
+Další novinkou je vodní chladič MasterLiquid Atmos II Pro Gold, který bude vyroben v limitovaném nákladu pouze 1999 kusů, přičemž každý kus bude mít své unikátní sériové číslo. Srdcem systému je vylepšená dvoukomorová pumpa G9B V2 s měděnou základnou a nízkým profilem, která dosahuje 3400±300 rpm při hlučnosti do 25 dB(A). K 360mm hliníkovému radiátoru jsou připojeny tři hliníkové ventilátory MasterFan A120 Gold s maximálními otáčkami 2300 rpm, průtokem vzduchu 80,69 CFM a statickým tlakem 6,1 mmH2O. Hlučnost ventilátorů činí 29,7 dB(A).
+Zajímavostí jsou vyměnitelné magnetické kryty pumpy, mezi nimiž lze volit například variantu 3D Mesh Gold. K dispozici je i speciální kryt s VRM ventilátorem, který dokáže snížit teploty v oblasti napájení základní desky až o 13 °C. Chladič podporuje širokou škálu patic, konkrétně Intel LGA 1851, 1700, 1200 a 115x, stejně jako AMD AM5 a AM4 s offsetovým držákem pro lepší pozici nad nejteplejšími částmi CPU. Na chladič je poskytována 6letá záruka a cena byla stanovena na 199,99 USD.|E|

@@ -1,0 +1,17 @@
+Video 2 URL
+Bezplatný online nástroj pro převod videa na URL – nahrajte MP4, MOV nebo WebM do 50 MB bez registrace a získejte odkaz.
+O nástroji
+Video 2 URL je jednoduchá webová aplikace, která z nahraného videa vytvoří sdílitelnou URL adresu. Podporuje formáty MP4, MOV a WebM do velikosti 50 MB na soubor, nevyžaduje registraci ani vytvoření účtu. Hosté mohou nahrát až 5 videí denně a mají k dispozici celkem 100 MB úložiště, videa zůstávají veřejně dostupná a uložená po dobu sedmi dní. Po nahrání souboru nástroj nabídne výsledek ve třech podobách: přímou URL adresu, Markdown odkaz nebo HTML embed kód s video elementem. Soubor se ukládá v původním formátu bez překódování, komprese nebo přidání vodoznaku, takže zachovává původní kvalitu i nároky na přehrávání. Výsledný odkaz lze použít v e-mailech, zprávách, dokumentech, issue reportech nebo jako zdroj pro vlastní video přehrávač na webové stránce, pokud podporuje vlastní HTML. Nástroj je určen pro rychlé jednorázové sdílení krátkých klipů, například ukázek produktu, záznamů chyb pro vývojáře nebo krátkých lekcí a návodů. Protože jde o přímý odkaz na soubor, nejde o alternativu k YouTube nebo Vimeu – pole omezená pouze na tyto platformy odkaz nepřijmou. Nástroj soubor pouze ukládá a nepřevádí kodeky, takže nevyřeší případnou nekompatibilitu přehrávání na cílovém zařízení.
+Klíčové vlastnosti
+- Podporuje MP4, MOV a WebM do 50 MB
+- Bez registrace, nahrání jako host
+- Výstup jako přímá URL, Markdown nebo HTML embed
+- Ukládá soubor beze změny kvality a bez vodoznaku
+Časté dotazy
+Co nástroj přesně umí?
+Z nahraného videa ve formátu MP4, MOV nebo WebM vytvoří sdílitelnou URL adresu, kterou lze použít jako přímý odkaz, Markdown link nebo HTML embed kód.
+Kolik to stojí a jaké jsou limity?
+Nástroj je zdarma bez nutnosti registrace, hosté mohou nahrát až 5 videí denně do celkové velikosti 100 MB, jednotlivý soubor max. 50 MB, videa zůstávají dostupná 7 dní.
+Pro koho je nástroj určený a jak začít?
+Hodí se pro rychlé jednorázové sdílení krátkých klipů, například produktových ukázek, bug reportů pro vývojáře nebo krátkých návodů – stačí vybrat video, nahrát ho a zkopírovat vygenerovaný odkaz.
+Kategorie

@@ -1,0 +1,17 @@
+Arsaze
+AI video editor, který upravuje reálnou timeline podle slovních pokynů nebo pomocí AI agentů jako Claude, ChatGPT či Grok.
+O nástroji
+Arsaze je AI-nativní video editor určený pro editory, tvůrce obsahu i postprodukční týmy, který funguje podobně jako Cursor pro programování – jen místo kódu upravuje video. Uživatel může zadávat střihy v přirozeném jazyce, upravovat video jako textový přepis (smazání slova = střih v záznamu) nebo editovat ručně na multi-track timeline. Každá úprava se přehraje živě a je verzovaná, takže ji lze kdykoliv vrátit zpět. Mezi funkce patří automatické titulky s časováním slov, odstranění ticha a slovních vycpávek, barevná korekce (křivky, HSL, LUT), zvukové nástroje (izolace hlasu, redukce šumu, ducking), generování obrázků, videa, hlasu a hudby přímo do timeline, sledování pohybu, odstranění pozadí a export do formátů pro DaVinci Resolve nebo Premiere Pro. Funkce Tab navrhuje další úpravu podle vzoru předchozí akce a je dostupná i ve free plánu. Nástroj nabízí také API/MCP rozhraní pro napojení vlastních AI agentů s autentizací OAuth 2.1. Aplikace je dostupná pro Windows, Mac, Linux a jako webová verze. Cenové plány zahrnují Free (zdarma, plný editor bez vodoznaku), Basic, Pro a Studio s měsíčním poplatkem v indických rupiích a Enterprise na vyžádání. Produkt je uzavřeného zdrojového kódu, veřejně dostupná je pouze dokumentace k MCP rozhraní.
+Klíčové vlastnosti
+- Střih podle přirozeného jazyka nebo textového přepisu
+- Automatické titulky s časováním jednotlivých slov
+- Odstranění ticha a slovních vycpávek jedním krokem
+- Barevná korekce pomocí křivek, HSL a LUT
+Časté dotazy
+Co přesně Arsaze umí?
+Je to AI video editor s reálnou multi-track timeline, kterou lze upravovat ručně, textem (smazání slova = střih) nebo pomocí AI agentů jako Claude či ChatGPT. Zvládá automatické titulky, odstranění ticha, barevnou korekci, zvukové nástroje i generování obsahu přímo do timeline.
+Kolik Arsaze stojí?
+Základní plán Free je zdarma a nabízí plný editor bez vodoznaku včetně funkce Tab. Dále jsou k dispozici placené plány Basic, Pro a Studio s měsíčním poplatkem v indických rupiích a Enterprise na vyžádání.
+Pro koho je Arsaze určené a jak začít?
+Je určené pro video editory, tvůrce obsahu a postprodukční týmy. Stačí si zdarma stáhnout aplikaci pro Windows, Mac, Linux nebo použít webovou verzi bez nutnosti karty, případně vyzkoušet demo přímo na webu.
+Kategorie

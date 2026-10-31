@@ -1,0 +1,17 @@
+Transly
+Transly je aplikace pro překlad zpráv, mluveného slova i videí mezi mnoha jazyky, dostupná pro iPhone, macOS a Android.
+O nástroji
+Transly je komplexní nástroj pro automatický překlad, který funguje přímo v klávesnici telefonu, umožňuje živý hlasový překlad konverzací a překládá i zvuk napříč aplikacemi nebo v lokálních videích. Podporuje hlavní světové jazyky, včetně angličtiny, čínštiny, japonštiny či španělštiny, a je určen pro komunikaci se zahraničními partnery, přáteli i při cestování. Aplikace nabízí několik režimů použití: psaní v jednom jazyce s automatickým překladem do druhého přímo při psaní zpráv, simultánní hlasový překlad obousměrných rozhovorů zobrazený v reálném čase na obrazovce a překlad titulků ve videích, například krátkých klipech nebo tutoriálech. Transly je k dispozici jako aplikace pro App Store, macOS a Google Play. Informace o ceně nebo případné bezplatné verzi nejsou v dostupných podkladech uvedeny, stejně jako podpora API nebo otevřený zdrojový kód. Rozhraní aplikace je v angličtině, lokalizace do češtiny není doložena.
+Klíčové vlastnosti
+- Překlad přímo v klávesnici telefonu při psaní zpráv
+- Simultánní hlasový překlad obousměrných rozhovorů v reálném čase
+- Překlad zvuku a titulků napříč aplikacemi i v lokálních videích
+- Podpora hlavních světových jazyků (angličtina, čínština, japonština, španělština)
+Časté dotazy
+Co přesně Transly umí?
+Transly překládá psané zprávy přímo v klávesnici telefonu, umožňuje živý hlasový překlad konverzací zobrazený na obrazovce v reálném čase a překládá titulky ve videích, například krátkých klipech nebo tutoriálech.
+Kolik Transly stojí?
+Informace o ceně ani o případné bezplatné verzi nejsou v dostupných podkladech uvedeny.
+Pro koho je Transly určené a jak začít?
+Je určené pro komunikaci se zahraničními partnery, přáteli i pro cestování; aplikaci lze stáhnout z App Store, Google Play nebo jako aplikaci pro macOS.
+Kategorie

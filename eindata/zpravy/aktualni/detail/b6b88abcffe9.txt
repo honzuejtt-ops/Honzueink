@@ -1,0 +1,17 @@
+LawAsked
+LawAsked odpovídá na reálné právní dotazy srozumitelným jazykem a každou odpověď podkládá citací konkrétního zákona.
+O nástroji
+LawAsked je nástroj, který poskytuje odpovědi na právní otázky formulované běžným jazykem, přičemž každá odpověď odkazuje na konkrétní zákonné ustanovení, z něhož vychází. Pro každou podporovanou zemi existuje samostatná verze stránky, postavená na místní legislativě dané země. Nástroj aktuálně pokrývá 12 zemí, mezi nimi Austrálii, Rakousko, Kanadu, Francii, Německo, Japonsko, Nizozemsko, Norsko, Španělsko, Švédsko, Spojené království a Spojené státy. Některé další země jsou podle webu označeny jako „již brzy“ a otevřou se, jakmile bude k dispozici jejich oficiální legislativa. Uživatel si na úvodní stránce vybere svou zemi a poté může položit právní otázku. Informace o cenách, dostupnosti API ani o tom, zda je nástroj open source, nejsou na webu uvedeny. Rozhraní je v angličtině, žádná čeština zmíněna není.
+Klíčové vlastnosti
+- Odpovědi na právní dotazy v běžném jazyce
+- Každá odpověď podložena citací konkrétního zákona
+- Samostatná verze webu pro každou zemi
+- Pokrývá 12 zemí včetně USA, UK, Německa či Francie
+Časté dotazy
+Co přesně LawAsked umí?
+Odpovídá na právní otázky položené běžným jazykem a ke každé odpovědi uvádí konkrétní zákonné ustanovení, ze kterého vychází.
+Kolik LawAsked stojí?
+Informace o cenách nejsou na webu uvedeny.
+Pro koho je nástroj určen a jak začít?
+Je určen komukoli, kdo potřebuje rychlou orientaci v právních otázkách – stačí si na úvodní stránce vybrat svou zemi a položit dotaz.
+Kategorie

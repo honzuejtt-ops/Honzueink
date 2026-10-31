@@ -1,0 +1,17 @@
+Corgi
+Terminálový multiplexer pro vývojáře, který organizuje workspace s AI agenty i běžnými shell relacemi a zobrazuje využití zdrojů naživo.
+O nástroji
+Corgi je terminálový multiplexer určený vývojářům, kteří pracují s AI coding agenty – funguje jako alternativa k tmux, ale s podporou moderních terminálových funkcí. Nástroj sám organizuje workspace za uživatele a zobrazuje živé využití zdrojů (resource usage) na úrovni jednotlivých workspaců. Mezi klíčové funkce patří podpora vkládání obrázků (⌘V) přímo do terminálu, a to i přes SSH připojení, klikatelné odkazy a zobrazení obrázků v terminálu. Tato funkce pro vkládání obrázků přes SSH vyžaduje Ghostty Nightly. Nástroj je navržen jako hackovatelný – lze ho ovládat z libovolného terminálu a příkazem corgi --skill naučit agenty s ním pracovat. Instalace probíhá jedním příkazem (curl | bash) a je podporována na macOS, Linuxu a WSL. Podle třetí strany je Corgi napsán v Rustu, nachází se ve fázi Alfa a je vydán pod licencí MIT jako open source projekt. Informace o cenovém modelu nebo veřejném API nejsou na oficiálním webu uvedeny.
+Klíčové vlastnosti
+- Vkládání obrázků do terminálu (⌘V), i přes SSH
+- Živé zobrazení využití zdrojů podle workspace
+- Organizace AI agentů i shell relací v jednom multiplexeru
+- Klikatelné odkazy a náhled obrázků v terminálu
+Časté dotazy
+Co přesně Corgi dělá?
+Je to terminálový multiplexer (alternativa k tmux) pro vývojáře pracující s AI coding agenty – organizuje workspace, zobrazuje živé využití zdrojů a podporuje moderní funkce jako vkládání obrázků přímo do terminálu, i přes SSH.
+Kolik Corgi stojí?
+Informace o cenovém modelu nejsou na oficiálním webu uvedeny.
+Pro koho je Corgi určený a jak začít?
+Je určený vývojářům používajícím AI coding agenty na macOS, Linuxu nebo WSL. Stačí spustit instalační příkaz curl -fsSL https://corgi.computer/install.sh | bash.
+Kategorie

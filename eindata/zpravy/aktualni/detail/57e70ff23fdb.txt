@@ -1,0 +1,17 @@
+Image to Image AI
+Online nástroj pro úpravu a generování obrázků z obrázku nebo textového zadání, včetně stylizace do anime a rozšíření videa.
+O nástroji
+Image to Image AI je webová platforma pro editaci a generování obrázků pomocí umělé inteligence. Uživatel může nahrát obrázek a popsat požadovanou změnu, nebo zadat textový prompt pro vytvoření zcela nového vizuálu. Platforma nabízí sadu zaměřených nástrojů – zvětšování rozlišení (ImgUpscaler), editor fotografií, převod fotky do anime stylu a „uncrop“ pro rozšíření kompozice obrázku. Kromě statických obrázků platforma umožňuje i tvorbu videa, konkrétně přeměnu textu na video a obrázku na video, s využitím modelů řady Veo. Podle stránky je cílovou skupinou marketingové týmy, zakladatelé firem, agentury a tvůrci obsahu, kteří výstupy využívají pro sociální sítě, e-shopy či prezentaci produktů. Nástroj zobrazuje nabídku „Get 30 credits For Free“, z textu však není zřejmé, za jakých podmínek lze kredity získat ani zda existuje trvale bezplatná varianta, proto cenový model nelze z dostupných podkladů jednoznačně určit. Informace o API či otevřeném zdrojovém kódu nejsou na stránce uvedeny.
+Klíčové vlastnosti
+- Úprava obrázku podle textového popisu změny
+- Generování obrázků z textového promptu
+- Zvětšování rozlišení obrázků (ImgUpscaler)
+- Převod fotografie do anime stylu
+Časté dotazy
+Co všechno Image to Image AI umí?
+Nástroj umožňuje upravovat nahrané obrázky podle textového zadání, generovat nové vizuály z promptu, zvětšovat rozlišení, převádět fotky do anime stylu, rozšiřovat kompozici obrázku (uncrop) a také vytvářet videa z textu či obrázku pomocí modelů řady Veo.
+Kolik stojí používání nástroje?
+Stránka nabízí získání 30 kreditů zdarma, ale podmínky jejich získání ani případný trvalý bezplatný plán nejsou z podkladů jasné, takže přesný cenový model nelze uvést.
+Pro koho je nástroj určený a jak začít?
+Je určen marketingovým týmům, zakladatelům firem, agenturám a tvůrcům obsahu pro produktové vizuály, sociální sítě a e-shopy. Stačí vybrat konkrétní nástroj, nahrát obrázek nebo zadat prompt a vygenerovaný výsledek exportovat.
+Kategorie

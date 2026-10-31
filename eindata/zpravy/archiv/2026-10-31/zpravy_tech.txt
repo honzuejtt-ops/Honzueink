@@ -1,3 +1,336 @@
+|T|Kultovní Need for Speed Underground 2 ožívá v prohlížeči. Závodit můžete zdarma a s přáteli|D|31.10.2026 13:30|P|Fanouškovský projekt Underground 2 Revived přináší Need for Speed Underground 2 zdarma do prohlížeče. Nabízí kariéru, ukládání postupu i online závody...|M|Cnews|X|Díky moderním technologiím a neutuchající podpoře fanoušků si v prohlížeči můžete zahrát legendární Need for Speed Underground 2 z roku 2004. Jediné co potřebujete, je prohlížeč s podporou WebGPU.
+Na silnice Bayview i s kamarády
+K hraní není potřeba registrace nebo stahování instalačních souborů do počítače. Fanouškovský port stačí spustit jednoduše na odkaze www.nfsu2.xyz. Hratelná je jak příběhová kampaň, tak i multiplayerový režim. Zahrát si můžete dokonce i s kamarády zvolením názvu vaší party.
+Hra obsahuje lokální ukládání herního pokroku do prohlížeče. Kdo chce mít jistotu, že o svůj save nepřijde, může využít cloudové ukládání nebo si svoji zálohu rovnou stáhnout do počítače.
+S ostatními hráči můžete komunikovat buď skrze textový chat, nebo jedním z osmi klaksonů. Pro hraní stačí mít pouze prohlížeč s podporou WebGPU, jako je například Google Chrome, Apple Safari, Firefox nebo Microsoft Edge. Projekt vznikl bez podpory EA.|E|
+|T|CATL uvádí 513kWh výměnné akumulátory pro e-trucky se 77kWh pevnou baterií|D|31.10.2026 13:00|P|Společnost CATL přichází na čínský trh se zajímavým konceptem vyměnitelných akumulátorů pro elektrická nákladní auta. Jsou totiž doplněné o pevně vest...|M|SvětHW|X|Společnost CATL přichází na čínský trh se zajímavým konceptem vyměnitelných akumulátorů pro elektrická nákladní auta. Jsou totiž doplněné o pevně vestavěný akumulátor.
+Elektrifikace těžké nákladní dopravy je komplikovanou záležitostí, který má problémy ve vysokých cenách akumulátorů a zdlouhavým doplňováním energie, i když to se dá řešit v rámci povinných bezpečnostních přestávek. I to má ale problém v nedostatečné infrastruktuře (ne všude je dostatečně rychlá nabíječka, spíše skoro nikde).
+Čínský společnost CATL se pokouší tyto problémy vyřešit novým systémem Dual-Electric Range Extender, který kombinuje výměnné akumulátorové baterie s permanentně instalovaným akumulátorem. Cílem je optimalizovat využití energie, snížit provozní náklady pro dopravní firmy a prodloužit dojezd.
+Jde o architekturu typu 1+X, kde hlavní standardizovaný akumulátor slouží k rychlé výměně v síti stanic QIJI, zatímco doplňková trvalá baterie za kabinou zůstává jako rezerva.
+Tato konfigurace zajímavým způsobem řeší psychologii řidičů a efektivitu vybíjení. V běžných systémech s výměnnou baterií řidiči často vyhledávají stanici už při stavu nabití kolem 30 %, aby eliminovali riziko úplného vybití akumulátoru, což znamená, že značná část pronajaté kapacity zůstává nevyužitá. Díky pevnému rezervnímu akumulátoru se ale vybíjení hlavní baterie může zvýšit z cca 70 % na cca 95 %. Řidič tak může vyrazit k výměně až při stavu nabití kolem 5 %, neboť má stále k dispozici rezervní akumulátor za kabinou řidiče. Při 5% stavu výměnného akumulátoru plynule převezme napájení rezervní akumulátor během několika milisekund.
+K dispozici jsou dvě velikosti hlavních modulů, přičemž typ 260# se 432 kWh je určen pro vozy s rozvorem 3,8 metru a typ 300# s 513 kWh pro vozy s rozvorem 4,2 metru. Pevná rezervní baterie pojme 77 kWh (vystačí tak na 60-75 km), a systém tak dosahuje celkových 509 kWh nebo 590 kWh.
+Pokud jde o infrastrukturu, CATL rozšiřuje svou síť QIJI, která umožňuje výměnu akumulátoru za pouhých 5 minut. Nové stanice je navíc možné postavit za 5 dní. Výrobce plánuje do konce letošního roku provozovat 900 takových stanic, v příštím roce by to mělo narůst na 2 000 stanic s dlouhodobým cílem dosáhnout 10 000 bodů po celé Číně.|E|
+|T|AI-built browser games, collected in one place|D|31.10.2026 12:08|P|Katalog více než 700 prohlížečových her vytvořených pomocí AI (GPT, Claude, Gemini aj.), tříděných podle žánru, modelu i zařízení.|M|EJAJ|X|AI-built browser games, collected in one place
+Katalog více než 700 prohlížečových her vytvořených pomocí AI (GPT, Claude, Gemini aj.), tříděných podle žánru, modelu i zařízení.
+O nástroji
+Playground je kurátorská sbírka nezávislých her vytvořených s pomocí AI, které jsou hratelné přímo v prohlížeči. Aktuálně obsahuje přes 700 her a nabízí procházení podle žánru, podle použitého AI modelu (například GPT, Claude nebo Gemini) i podle typu zařízení, na kterém se dá hrát; u některých titulů je navíc vyznačena podpora ovladače. Funkce „Three at random“ nabídne tři náhodné hry pro ty, kdo neví, co hledat. Tvůrci mohou přidat vlastní hru zdarma přes formulář „Submit your game“, přičemž každá zaslaná hra prochází před zveřejněním recenzní frontou. Playground slouží jako rozcestník s odkazy na hry hostované jinde, nikoli jako místo, kde jsou hry přímo spuštěné. Procházení katalogu a hraní her je zdarma a nevyžaduje registraci. Provozovatel si pouze dobrovolně říká o drobný finanční příspěvek (tip ve výši £3) na podporu provozu webu, placení není nutné ani pro hráče, ani pro tvůrce přidávající hru. Stránka je k dispozici v angličtině.
+Kategorie|E|
+|T|Portable|D|31.10.2026 12:07|P|Protokol pro AI agenty jednající jménem uživatele – řeší oprávnění, schválení podmínek dohody a sledování stavu dodávky práce.|M|EJAJ|X|Portable
+Protokol pro AI agenty jednající jménem uživatele – řeší oprávnění, schválení podmínek dohody a sledování stavu dodávky práce.
+O nástroji
+Covenant (Agentic Agreements Protocol) je určen situacím, kdy AI agent jedná jménem člověka či firmy a je potřeba mít jasno, kdo smí co schválit, jaká přesná verze podmínek (cena, termín, rozsah) byla odsouhlasena a co ještě zbývá dodat. Agentovi lze přidělit roli a rozpočtový limit – při jeho překročení nástroj vyžaduje další schválení a změna ceny nebo termínu si vynutí novou akceptaci dohody. Dále se vede záznam o dodávce, kontrole, opravách a nevyřízených závazcích, takže kupující, dodavatel i kontrolor mají společný podklad i při použití různých nástrojů. Vyzkoušet lze bezplatné demo přímo v prohlížeči se simulovanými účastníky a čtyřmi ukázkovými scénáři – delegovaný nákup v rámci limitu, koordinace více stran, porovnání nabídek a řešení sporu kolem dodávky – bez reálných plateb. Plná implementace s napojením na platební a obchodní systémy, trhy, aukce či týmové hlasování je zatím ve vývoji a nabízí se formou early access pro vývojáře a týmy, kteří projekt kontaktují přímo s popisem své potřeby. Dokumentace je veřejně dostupná (project brief, developer walkthrough, agent quickstart, task-catalog snapshot) včetně licenčního souboru dokumentace. Konkrétní cenové podmínky pro produkční nasazení v dostupných zdrojích uvedeny nejsou. Nástroj je určen primárně vývojářům a platformám budujícím agentní služby, rozhraní je v angličtině.
+Kategorie|E|
+|T|agent-marketplace|D|31.10.2026 12:07|P|CLI nástroj pro sdílení AI agent zdrojů (skills, commands, subagenty, MCP servery) napříč týmy a vývojářskými nástroji.|M|EJAJ|X|agent-marketplace
+CLI nástroj pro sdílení AI agent zdrojů (skills, commands, subagenty, MCP servery) napříč týmy a vývojářskými nástroji.
+O nástroji
+Agent Marketplace je command-line nástroj vytvořený inženýry společnosti Adyen, který umožňuje sdílet AI agent resources napříč týmy, repozitáři a různými vývojářskými nástroji. Resource může být skill, command, subagent, hook nebo MCP server – nástroj je čte z registrů (Git repozitářů nebo lokálních složek) či z hostovaných Marketplaces a zapisuje je v nativním formátu pro každý cílený nástroj. Mezi podporované cíle patří Factory Droid, Claude Code, Cursor, Windsurf, Gemini CLI, Devin CLI, Codex a OpenCode. Nástroj je určen zejména pro platform engineering týmy, které spravují sdílené vývojářské nástroje ve firmě – publikují resource jednou místo opakovaného psaní instrukcí pro každý nástroj zvlášť. Ostatní uživatelé pak mohou potřebné resources vyhledávat z terminálu, v interaktivním prohlížeči nebo pomocí příkazu search. CLI nabízí příkazy init, install, sync a status; konfigurace se ukládá do souboru .agents/config.yaml a commituje se spolu s .agents/lock.yaml, takže každý clone získá stejné soubory, a sync --check lze využít v CI ke kontrole driftu. Technicky jde o jediný Go binární soubor pro macOS a Linux bez runtime závislostí. Je to open source projekt vytvořený inženýry Adyen, nejde však o oficiální produkt společnosti. Informace o cenách nejsou v dostupných podkladech uvedeny.
+Kategorie|E|
+|T|FilmCraft|D|31.10.2026 12:03|P|Webová platforma kombinující open-source video editor s AI nástroji pro generování a úpravu videí i obrázků z textu nebo snímků.|M|EJAJ|X|FilmCraft
+Webová platforma kombinující open-source video editor s AI nástroji pro generování a úpravu videí i obrázků z textu nebo snímků.
+O nástroji
+FilmCraft je webová pracovní plocha postavená na open-source editačním enginu FilmCraft, napsaném v Rustu, který napodobuje pracovní postup Adobe Premiere Pro bez použití kódu Adobe (kód je dostupný na GitHubu pod účtem VulcanEon). Samotný editor nabízí korekční nástroje, křivky a barevné nástroje pro úpravu nálady záběru. Vedle editoru nástroj zpřístupňuje sadu AI funkcí pro práci s videem – mj. AI Video Generator, Text to Video, Image to Video, Video to Video, AI Video Extender, Upscaler, Face Swap, Lip Sync nebo Talking Photo. K dispozici jsou i nástroje pro práci s obrázky, jako Text to Image, Image to Image, AI Object Remover, AI Background Remover, AI Headshot Generator nebo AI Product Image Generator. Platforma umožňuje vytvoření účtu, díky kterému zůstávají dokončené výsledky uloženy a propojeny s uživatelským profilem. Informace o cenových tarifech nejsou z dostupných podkladů patrné.
+Klíčové vlastnosti
+- Open-source editační engine napsaný v Rustu
+- Korekční nástroje, křivky a barevné úpravy záběru
+- AI generování videa z textu i obrázku
+- Nástroje Video to Video, Extender a Upscaler
+Časté dotazy
+Co FilmCraft umí?
+Kombinuje open-source video editor s AI nástroji pro generování a úpravu videí i obrázků – например z textu na video, z obrázku na video, face swap, lip sync nebo upscaling. Editor sám nabízí korekční nástroje, křivky a barevné úpravy záběru.
+Kolik FilmCraft stojí?
+Z dostupných podkladů nejsou informace o cenových tarifech patrné.
+Jak s FilmCraft začít?
+Stačí si na webu vytvořit účet, díky kterému zůstanou dokončené výsledky uloženy a propojeny s uživatelským profilem.
+Kategorie|E|
+|T|MuseMate|D|31.10.2026 12:03|P|MuseMate je AI generátor hudebních videí pro nezávislé hudebníky – z písně vytvoří videoklip, Spotify Canvas smyčku i obal alba.|M|EJAJ|X|MuseMate
+MuseMate je AI generátor hudebních videí pro nezávislé hudebníky – z písně vytvoří videoklip, Spotify Canvas smyčku i obal alba.
+O nástroji
+MuseMate je nástroj zaměřený na nezávislé hudebníky, kteří potřebují vizuální doprovod ke své hudbě. Stačí nahrát skladbu nebo zadat odkaz na píseň a napsat, jak má video působit – AI napíše storyboard podle textu písně, vygeneruje jednotlivé scény a sestříhá je na rytmus do výsledného videa v délce 15 až 60 sekund. Výstupy lze vytvářet v poměrech 16:9, 9:16 i 1:1, takže jsou vhodné pro YouTube, Reels, Shorts i TikTok. Kromě hudebních videí nástroj umí z obalu alba vytvořit animovanou vertikální smyčku pro Spotify Canvas a nabízí i samostatný generátor obalů alb bez nutnosti grafického softwaru. Součástí je i Performance model, který dokáže namodelovat zpívající postavu podle textu písně. Generování funguje na kreditovém systému – scény typu „Performance“ stojí 1 060 kreditů, standardní scény 30 kreditů, přičemž cenu v kreditech vidíte ještě předtím, než se video začne vytvářet. Bezplatná varianta ani konkrétní ceny plánů nejsou v dostupných podkladech uvedeny.
+Klíčové vlastnosti
+- Tvorba videoklipu z nahrané skladby nebo odkazu na píseň
+- Storyboard generovaný podle textu písně
+- Sestřih scén na rytmus v délce 15–60 sekund
+- Animovaná smyčka obalu alba pro Spotify Canvas
+Časté dotazy
+Co MuseMate přesně umí vytvořit?
+Z nahrané písně nebo odkazu vygeneruje AI videoklip sestříhaný na rytmus, animovanou smyčku obalu alba pro Spotify Canvas a samostatný obal alba – vše v poměrech 16:9, 9:16 i 1:1.
+Kolik MuseMate stojí?
+Generování funguje na kreditovém systému – standardní scéna stojí 30 kreditů, scéna s Performance modelem 1 060 kreditů, cenu vidíte předem. Konkrétní ceny plánů ani bezplatná varianta nejsou v podkladech uvedeny.
+Pro koho je MuseMate a jak se začíná?
+Je určen nezávislým hudebníkům, kteří potřebují vizuál ke svému vydání – stačí nahrát skladbu nebo vložit odkaz na ni, popsat, jak má video působit, a AI napíše storyboard a vygeneruje scény.
+Kategorie|E|
+|T|ADRs for AI|D|31.10.2026 12:03|P|Git repo šablona, VS Code rozšíření s MCP serverem a iOS aplikace pro zachycení rozhodnutí a jejich zdůvodnění ze spolupráce s AI formou ADR záznamů.|M|EJAJ|X|ADRs for AI
+Git repo šablona, VS Code rozšíření s MCP serverem a iOS aplikace pro zachycení rozhodnutí a jejich zdůvodnění ze spolupráce s AI formou ADR záznamů.
+O nástroji
+ADRs4AI řeší problém, že při běžné spolupráci s AI asistentem se veškeré uvažování, zvažované varianty a důvody rozhodnutí po skončení konverzace ztratí. Nástroj nabízí git repo template se šablonami ADR záznamů, direktivami a „inbox protokolem“ – uživatel nadiktuje nebo napíše myšlenky do „seedu“ a AI je rozčlení do strukturovaných záznamů (### QST) obsahujících otázku, zvažované možnosti, doporučení AI se zdůvodněním a mírou jistoty, a nakonec lidské rozhodnutí (accept/override). Otevřené otázky lze dohledat jednoduchým grep příkazem v docs/adr/. Součástí je VS Code rozšíření (dostupné i na Open VSX) se stromovým zobrazením otevřených otázek, diagnostikou chybně formátovaných záznamů, deep linky a MCP serverem, přes který mohou záznam dotazovat AI agenti. Dále je k dispozici iOS aplikace (App Store) umožňující procházet otevřené otázky projektu na mobilu a jedním klepnutím schvalovat odpovědi, které se rovnou zapíší jako commit. Autoři zdůrazňují, že nejde o archivaci transkriptů, vektorovou databázi „paměti“ ani orchestrační platformu, ale o uchování rozhodnutí a jejich zdůvodnění. Nástroj je v angličtině, cena ani dostupnost bezplatné verze nejsou v podkladech uvedeny.
+Klíčové vlastnosti
+- Git repo šablona s ADR a seed šablonami pro zachycení rozhodnutí
+- VS Code rozšíření se stromovým zobrazením otevřených otázek
+- MCP server pro dotazování záznamů AI agenty
+- Diagnostika chybně formátovaných ADR záznamů přímo v editoru
+Časté dotazy
+Co přesně ADRs4AI dělá?
+Zachycuje uvažování, zvažované varianty a zdůvodnění rozhodnutí ze spolupráce s AI formou strukturovaných ADR záznamů, místo aby se po skončení konverzace ztratily.
+Kolik ADRs4AI stojí?
+Cenové informace nejsou v podkladech uvedeny.
+Jak s nástrojem začít?
+Stačí vytvořit vlastní repozitář z git šablony, nadiktovat nebo napsat myšlenky do „seedu“ a AI je rozčlení do ADR záznamů; otázky pak lze schvalovat přes VS Code rozšíření nebo iOS aplikaci.
+Kategorie|E|
+|T|Skillstore|D|31.10.2026 12:03|P|Skillstore je prohledávatelná knihovna expertních postupů (skills) pro AI agenty Claude Code a Codex, napojitelná přes MCP bez nutnosti účtu.|M|EJAJ|X|Skillstore
+Skillstore je prohledávatelná knihovna expertních postupů (skills) pro AI agenty Claude Code a Codex, napojitelná přes MCP bez nutnosti účtu.
+O nástroji
+Skillstore poskytuje AI kódovacím agentům (Claude Code, Codex) konkrétní, spustitelné postupy místo obecných rad – funkce find_skill najde relevantní metodu podle zadaného úkolu, get_skill ji stáhne a rate_skill zaznamená, zda fungovala. Knihovna obsahuje přibližně 600 komunitních skills vedle kurátorovaných postupů, dodávaných ze zdrojových repozitářů pod vlastními licencemi. Veřejnou knihovnu lze vyzkoušet bez registrace u Skillstore, stačí existující účet u Claude Code nebo Codex. Mezi veřejnými skills jsou například „SwiftUI Pro“ od Paula Hudsona pro stavbu obrazovek v SwiftUI, „React Native skills“ od Vercelu pro plynulé scrollování, „Backend patterns“ od Affaana Mustafy pro pomalé databázové dotazy nebo „Security and hardening“ od Addyho Osmaniho pro bezpečnostní kontroly. Na demonstračním příkladu s fiktivním invoice API tento poslední skill odhalil chybějící kontrolu vlastnictví zdroje, díky níž mohl přihlášený uživatel číst fakturu jiné organizace; po opravě prošly všechny čtyři testované kontroly. Týmy mohou do knihovny přidávat vlastní interní postupy a sdílet je s vybranými kolegy, pro soukromou knihovnu je pak účet u Skillstore nutný. Vzdálený přístup funguje přes Streamable HTTP na adrese skillstore-jk.fly.dev/mcp/library bez nutnosti klíče. Stránka je v angličtině a žádné ceny ani placené plány nejsou v dostupném textu uvedeny.
+Klíčové vlastnosti
+- Vyhledání postupu podle úkolu funkcí find_skill
+- Stažení konkrétního postupu funkcí get_skill
+- Hodnocení úspěšnosti postupu funkcí rate_skill
+- Přibližně 600 komunitních skills od autorů jako Paul Hudson či Addy Osmani
+Časté dotazy
+Co přesně Skillstore umí?
+Je to prohledávatelná knihovna expertních postupů (skills) pro AI agenty Claude Code a Codex – agent najde relevantní metodu podle úkolu (find_skill), stáhne ji (get_skill) a zaznamená, zda fungovala (rate_skill).
+Kolik Skillstore stojí?
+V dostupných podkladech nejsou uvedeny žádné ceny ani placené plány.
+Jak mohu začít používat veřejnou knihovnu?
+Veřejnou knihovnu lze vyzkoušet bez registrace u Skillstore, stačí mít existující účet u Claude Code nebo Codex a připojit se přes MCP na adrese skillstore-jk.fly.dev/mcp/library.
+Kategorie|E|
+|T|Palomino|D|31.10.2026 12:03|P|Mac aplikace napsaná v Rustu, která umožňuje spouštět a sledovat agenty Claude Code, Codex a Pi vedle sebe v jednom okně.|M|EJAJ|X|Palomino
+Mac aplikace napsaná v Rustu, která umožňuje spouštět a sledovat agenty Claude Code, Codex a Pi vedle sebe v jednom okně.
+O nástroji
+Palomino je nativní aplikace pro macOS napsaná v Rustu, určená vývojářům pracujícím s AI kódovacími agenty. Umožňuje spustit Claude Code, Codex a Pi současně vedle sebe v jednom okně, přičemž rozhraní je renderováno na GPU a kombinuje terminály, prohlížeč a soubory na jedné obrazovce. Podle webu podporuje neomezený počet workspace, agentů a panelů – omezením je pouze výkon konkrétního Macu. Aplikaci lze stáhnout přímo nebo nainstalovat pomocí instalačního příkazu, přičemž založení účtu není vyžadováno. Web zmiňuje i dostupnost modelu GPT-6.1 Terra v rámci Palomina a možnost zapsat se do waitlistu pro Windows a Linux, pro které aplikace zatím není k dispozici. Palomino je nabízeno jako bezplatné, placený tarif ani omezení funkcí nejsou v dostupných podkladech zmíněny. Informace o tom, zda jde o beta nebo stabilní verzi, o verzovacím či update cyklu, ani podrobnosti o API pro vývojáře třetích stran nejsou z dostupných zdrojů dohledatelné.
+Klíčové vlastnosti
+- Spuštění Claude Code, Codex a Pi vedle sebe
+- Neomezený počet workspace, agentů a panelů
+- Rozhraní renderované na GPU pro plynulý chod
+- Kombinace terminálů, prohlížeče a souborů v jednom okně
+Časté dotazy
+Co přesně Palomino umí?
+Palomino je macOS aplikace napsaná v Rustu, která umožňuje spouštět a sledovat AI kódovací agenty Claude Code, Codex a Pi vedle sebe v jednom okně, přičemž kombinuje terminály, prohlížeč a soubory na jedné obrazovce renderované na GPU.
+Kolik Palomino stojí?
+Palomino je nabízeno zdarma, s neomezeným počtem workspace, agentů a panelů – jediným limitem je výkon vašeho Macu. Placený tarif ani omezení funkcí nejsou v podkladech zmíněny.
+Pro koho je Palomino určené a jak začít?
+Je určeno vývojářům pracujícím s AI kódovacími agenty na macOS. Stačí aplikaci stáhnout přímo nebo nainstalovat pomocí instalačního příkazu, založení účtu není potřeba; pro Windows a Linux je zatím jen waitlist.
+Kategorie|E|
+|T|Handwired|D|31.10.2026 12:03|P|Experimentální open-source nástroj, který převádí běžný JavaScript kód na neuronovou síť bez nutnosti trénování.|M|EJAJ|X|Handwired
+Experimentální open-source nástroj, který převádí běžný JavaScript kód na neuronovou síť bez nutnosti trénování.
+O nástroji
+Handwired je experimentální projekt od Chenga Lou (bývalý člen React core týmu), který transformuje regulérní JavaScript kód – včetně podmínek, cyklů a stavu – na neuronovou síť postavenou na maticovém násobení a ReLU operacích nad desetinnými čísly. Výsledný program je přesný a zároveň plně diferencovatelný, takže váhy není třeba trénovat, protože jsou zapsány ručně, ale lze je kdykoliv „odmrazit“ a doladit standardním backpropem. Nástroj slouží především vývojářům a výzkumníkům zajímajícím se o průnik běžného programování a diferencovatelných výpočtů. Operace sčítání, násobení a ReLU se slučují do jedné velké maticové operace, která běží buď přímo v JavaScriptu, nebo přes WebGPU pro masivní paralelizaci. Mezi ukázkové demo aplikace patří mini desktopové OS běžící na 9 909 vahách napříč 130 vrstvami renderované do běžného DOM, trénovatelná fotogalerie a vyhledávání v 100 000 JSON dokumentech. Handwired je open-source projekt napsaný v TypeScriptu, dostupný pod MIT licencí na GitHubu (repozitář chenglou/handwired), spouští se lokálně pomocí bun. Jde o volně dostupné demo bez zmínky o placeném modelu či komerčním API.
+Klíčové vlastnosti
+- Převádí podmínky, cykly a stav na maticové operace
+- Váhy zapsané ručně bez nutnosti trénování
+- Lze odmrazit váhy a doladit backpropem
+- Běží v JavaScriptu nebo přes WebGPU pro paralelizaci
+Časté dotazy
+Co přesně Handwired umí?
+Převádí běžný JavaScript kód (podmínky, cykly, stav) na neuronovou síť postavenou na maticovém násobení a ReLU operacích, aniž by bylo nutné síť trénovat – výsledek je přesný a zároveň plně diferencovatelný.
+Kolik Handwired stojí?
+Jde o zdarma dostupný open-source projekt pod MIT licencí bez placeného modelu či komerčního API.
+Pro koho je Handwired určený a jak začít?
+Je určen vývojářům a výzkumníkům zajímajícím se o propojení běžného programování s diferencovatelnými výpočty – stačí stáhnout repozitář chenglou/handwired z GitHubu a spustit ho lokálně pomocí bun.
+Kategorie|E|
+|T|Sketch Stadium|D|31.10.2026 12:03|P|Sketch Stadium je hra typu Pictionary pro AI agenty, kteří se střídavě kreslí a hádají tajné slovo pomocí SVG.|M|EJAJ|X|Sketch Stadium
+Sketch Stadium je hra typu Pictionary pro AI agenty, kteří se střídavě kreslí a hádají tajné slovo pomocí SVG.
+O nástroji
+Sketch Stadium je hra pro AI agenty (Claude Code, Codex, Cursor, ChatGPT a další), kteří se připojí přes MCP (Model Context Protocol) a hrají obdobu Pictionary – jeden agent kreslí tajné slovo pomocí podmnožiny SVG, zatímco ostatní hádají. Připojení probíhá příkazem jako `claude mcp add --transport http sketch-stadium https://sketch.wakeshift.ai/mcp`, obdobné příkazy existují pro Codex, Copilot i OpenClaw. Hra funguje na bodovém systému: snadné nápovědy se počítají za 1 bod, střední za 2 a těžké za 3 body. Veřejná místnost zobrazuje živý průběh aktuální hry včetně žebříčku a historie hádání za posledních 20 kol. Nástroj vznikl jako technická ukázka Wakeshift, cross-harness SDK pro posílání push notifikací AI agentům, který je dostupný jako open source SDK pro Go a Python na GitHubu. Konkrétní ceník nebyl na stránce uveden, Sketch Stadium slouží primárně jako demonstrace možností Wakeshift SDK a MCP integrace pro vývojáře pracující s AI agenty.
+Klíčové vlastnosti
+- AI agenti se připojují přes MCP protokol
+- kreslení tajného slova podmnožinou SVG
+- bodový systém podle obtížnosti nápovědy (1–3 body)
+- veřejná místnost s živým průběhem a žebříčkem
+Časté dotazy
+Co přesně Sketch Stadium umí?
+Jde o hru typu Pictionary pro AI agenty – jeden agent kreslí tajné slovo pomocí SVG a ostatní agenti ho hádají, body se udělují podle obtížnosti nápovědy.
+Kolik stojí používání Sketch Stadium?
+Konkrétní ceník není na stránce uveden, nástroj slouží primárně jako technická ukázka Wakeshift SDK a MCP integrace.
+Jak se mohu zapojit a pro koho je nástroj určen?
+Je určen vývojářům pracujícím s AI agenty – stačí agenta připojit příkazem typu „claude mcp add --transport http sketch-stadium https://sketch.wakeshift.ai/mcp“.
+Kategorie|E|
+|T|Image to Image AI|D|31.10.2026 12:03|P|Online nástroj pro úpravu a generování obrázků z obrázku nebo textového zadání, včetně stylizace do anime a rozšíření videa.|M|EJAJ|X|Image to Image AI
+Online nástroj pro úpravu a generování obrázků z obrázku nebo textového zadání, včetně stylizace do anime a rozšíření videa.
+O nástroji
+Image to Image AI je webová platforma pro editaci a generování obrázků pomocí umělé inteligence. Uživatel může nahrát obrázek a popsat požadovanou změnu, nebo zadat textový prompt pro vytvoření zcela nového vizuálu. Platforma nabízí sadu zaměřených nástrojů – zvětšování rozlišení (ImgUpscaler), editor fotografií, převod fotky do anime stylu a „uncrop“ pro rozšíření kompozice obrázku. Kromě statických obrázků platforma umožňuje i tvorbu videa, konkrétně přeměnu textu na video a obrázku na video, s využitím modelů řady Veo. Podle stránky je cílovou skupinou marketingové týmy, zakladatelé firem, agentury a tvůrci obsahu, kteří výstupy využívají pro sociální sítě, e-shopy či prezentaci produktů. Nástroj zobrazuje nabídku „Get 30 credits For Free“, z textu však není zřejmé, za jakých podmínek lze kredity získat ani zda existuje trvale bezplatná varianta, proto cenový model nelze z dostupných podkladů jednoznačně určit. Informace o API či otevřeném zdrojovém kódu nejsou na stránce uvedeny.
+Klíčové vlastnosti
+- Úprava obrázku podle textového popisu změny
+- Generování obrázků z textového promptu
+- Zvětšování rozlišení obrázků (ImgUpscaler)
+- Převod fotografie do anime stylu
+Časté dotazy
+Co všechno Image to Image AI umí?
+Nástroj umožňuje upravovat nahrané obrázky podle textového zadání, generovat nové vizuály z promptu, zvětšovat rozlišení, převádět fotky do anime stylu, rozšiřovat kompozici obrázku (uncrop) a také vytvářet videa z textu či obrázku pomocí modelů řady Veo.
+Kolik stojí používání nástroje?
+Stránka nabízí získání 30 kreditů zdarma, ale podmínky jejich získání ani případný trvalý bezplatný plán nejsou z podkladů jasné, takže přesný cenový model nelze uvést.
+Pro koho je nástroj určený a jak začít?
+Je určen marketingovým týmům, zakladatelům firem, agenturám a tvůrcům obsahu pro produktové vizuály, sociální sítě a e-shopy. Stačí vybrat konkrétní nástroj, nahrát obrázek nebo zadat prompt a vygenerovaný výsledek exportovat.
+Kategorie|E|
+|T|Milamo|D|31.10.2026 12:03|P|Milamo vytváří originální lyric video na míru vaší písni – scény vznikají přímo z textu skladby, bez šablon.|M|EJAJ|X|Milamo
+Milamo vytváří originální lyric video na míru vaší písni – scény vznikají přímo z textu skladby, bez šablon.
+O nástroji
+Milamo je nástroj, který z textu a stylu konkrétní písně vytvoří unikátní lyric video. Nepoužívá předpřipravené šablony – obrázky vznikají přímo ze slov písně, písmo je navrženo do scény a pohyb kopíruje zpěv a rytmus skladby. Služba podporuje vícero jazyků textů, mezi ukázkami na webu jsou videa v angličtině, španělštině, portugalštině, němčině, hebrejštině, nizozemštině, polštině, maďarštině, finštině, švédštině, rumunštině, dánštině a italštině. Cena je 249 USD za jednu píseň, jde o jednorázovou platbu bez předplatného (případně s místní daní). V ceně je zahrnuto 5 kol revizí, pokud zákazník chce ve videu něco upravit. Chystá se také vertikální verze ve formátu 9:16 pro Reels, Stories a TikTok. Podle webu bude objednávání brzy spuštěno – v tuto chvíli je možné zhlédnout ukázkové video a vzorky hotových klipů, případně nechat e-mail pro upozornění na spuštění plateb. Bezplatná verze ani zkušební varianta nejsou uvedeny.
+Klíčové vlastnosti
+- Scény generované přímo z textu písně, bez šablon
+- Písmo navržené do scény podle stylu skladby
+- Pohyb videa kopíruje zpěv a rytmus
+- Podpora vícero jazyků textů (angličtina, španělština, němčina a další)
+Časté dotazy
+Co přesně Milamo vytvoří?
+Z textu a stylu konkrétní písně vygeneruje originální lyric video – obrázky vznikají přímo ze slov, písmo je navržené do scény a pohyb kopíruje zpěv a rytmus skladby. Nepoužívají se žádné předpřipravené šablony.
+Kolik Milamo stojí?
+Jednorázová platba 249 USD za jednu píseň (případně plus místní daň), bez předplatného. V ceně je zahrnuto 5 kol revizí pro úpravy videa.
+Jak začít a pro koho je to určené?
+Nástroj je pro hudebníky, kteří chtějí originální lyric video ke své písni. Objednávání teprve spouští – zatím lze zhlédnout ukázkové video a vzorky, nebo nechat e-mail pro upozornění na spuštění plateb.
+Kategorie|E|
+|T|Corgi|D|31.10.2026 12:03|P|Terminálový multiplexer pro vývojáře, který organizuje workspace s AI agenty i běžnými shell relacemi a zobrazuje využití zdrojů naživo.|M|EJAJ|X|Corgi
+Terminálový multiplexer pro vývojáře, který organizuje workspace s AI agenty i běžnými shell relacemi a zobrazuje využití zdrojů naživo.
+O nástroji
+Corgi je terminálový multiplexer určený vývojářům, kteří pracují s AI coding agenty – funguje jako alternativa k tmux, ale s podporou moderních terminálových funkcí. Nástroj sám organizuje workspace za uživatele a zobrazuje živé využití zdrojů (resource usage) na úrovni jednotlivých workspaců. Mezi klíčové funkce patří podpora vkládání obrázků (⌘V) přímo do terminálu, a to i přes SSH připojení, klikatelné odkazy a zobrazení obrázků v terminálu. Tato funkce pro vkládání obrázků přes SSH vyžaduje Ghostty Nightly. Nástroj je navržen jako hackovatelný – lze ho ovládat z libovolného terminálu a příkazem corgi --skill naučit agenty s ním pracovat. Instalace probíhá jedním příkazem (curl | bash) a je podporována na macOS, Linuxu a WSL. Podle třetí strany je Corgi napsán v Rustu, nachází se ve fázi Alfa a je vydán pod licencí MIT jako open source projekt. Informace o cenovém modelu nebo veřejném API nejsou na oficiálním webu uvedeny.
+Klíčové vlastnosti
+- Vkládání obrázků do terminálu (⌘V), i přes SSH
+- Živé zobrazení využití zdrojů podle workspace
+- Organizace AI agentů i shell relací v jednom multiplexeru
+- Klikatelné odkazy a náhled obrázků v terminálu
+Časté dotazy
+Co přesně Corgi dělá?
+Je to terminálový multiplexer (alternativa k tmux) pro vývojáře pracující s AI coding agenty – organizuje workspace, zobrazuje živé využití zdrojů a podporuje moderní funkce jako vkládání obrázků přímo do terminálu, i přes SSH.
+Kolik Corgi stojí?
+Informace o cenovém modelu nejsou na oficiálním webu uvedeny.
+Pro koho je Corgi určený a jak začít?
+Je určený vývojářům používajícím AI coding agenty na macOS, Linuxu nebo WSL. Stačí spustit instalační příkaz curl -fsSL https://corgi.computer/install.sh | bash.
+Kategorie|E|
+|T|Trama|D|31.10.2026 12:03|P|Rozšíření do VS Code, které vede AI agenta omp při úpravách kódu podle mapy aplikace a každou změnu nechá nejdřív schválit vývojářem.|M|EJAJ|X|Trama
+Rozšíření do VS Code, které vede AI agenta omp při úpravách kódu podle mapy aplikace a každou změnu nechá nejdřív schválit vývojářem.
+O nástroji
+Trama udržuje vedle kódu „mapu aplikace“ v podobě Markdown souborů ve složce .trama/, zobrazenou jako diagram. AI agent si před psaním kódu mapu přečte a každou navrhovanou změnu předloží jako Proposal (návrh), který musí vývojář schválit, než agent začne cokoliv implementovat. Celý proces probíhá v pěti krocích: popsání požadavku, zodpovězení doplňujících otázek agenta, schválení návrhu, spuštění jednotlivých úkolů (Tasks) a řešení tzv. Driftů – situací, kdy se kód a mapa rozejdou a vývojář rozhoduje, která verze je správná. Nástroj je striktně vyhraněný: funguje pouze jako rozšíření pro VS Code 1.106 nebo novější a podporuje jen agenta omp – jiné editory ani agenty nepodporuje. Běží na Linuxu (x64), macOS (Apple silicon) a ve verzi preview na Windows (x64), kde instalátor trama.exe není podepsaný, takže SmartScreen nebo antivirus může při prvním spuštění zobrazit varování. Pro týmové použití je navíc potřeba GitHub CLI (gh). Instalace probíhá přes VS Code Marketplace nebo stažením .vsix souboru z Releases.
+Klíčové vlastnosti
+- Mapa aplikace jako Markdown soubory ve složce .trama/
+- Vizualizace mapy formou diagramu
+- Změny kódu jako Proposal čekající na schválení
+- Doplňující otázky agenta s doporučenou odpovědí
+Časté dotazy
+Co přesně Trama dělá?
+Trama vede AI agenta omp při úpravách kódu podle „mapy aplikace“ uložené jako Markdown v .trama/ a každou navrhovanou změnu (Proposal) nechá nejdřív schválit vývojářem, než se začne implementovat.
+Kolik Trama stojí?
+Z podkladů není cena uvedena.
+Jak s Tramou začít a pro koho je určená?
+Je určená vývojářům pracujícím ve VS Code 1.106 nebo novějším s agentem omp – nainstaluje se z VS Code Marketplace nebo stažením .vsix souboru z Releases a spuštěním příkazu Extensions: Install from VSIX.
+Kategorie|E|
+|T|OMOPHub|D|31.10.2026 12:03|P|REST API pro vyhledávání a mapování zdravotnických kódů napříč SNOMED CT, ICD-10, LOINC a RxNorm bez nutnosti vlastní databáze.|M|EJAJ|X|OMOPHub
+REST API pro vyhledávání a mapování zdravotnických kódů napříč SNOMED CT, ICD-10, LOINC a RxNorm bez nutnosti vlastní databáze.
+O nástroji
+OMOPHub je hostovaná API služba pro práci s lékařskou terminologií postavená na OHDSI OMOP vokabulářích. Umožňuje vyhledávat, mapovat a propojovat více než 11 milionů konceptů napříč 120+ vokabuláři, včetně SNOMED CT, ICD-10-CM, ICD-10-PCS, LOINC, RxNorm, HCPCS, NDC, Read Codes a MeSH. Nástroj je synchronizován s oficiálními vydáními OHDSI ATHENA, takže poskytuje aktuální terminologická data bez nutnosti stahovat a spravovat vlastní databázi. Vývojáři mohou využít připravené SDK pro Python, R a TypeScript s typovou podporou a automatickým doplňováním. API podporuje i propojení FHIR zdrojů s OMOP standardem, mapování napříč vokabuláři a dávkové zpracování pro ETL pipeline. K dispozici je také MCP server pro integraci s AI agenty, kteří mohou přes nástroje jako search_concepts nebo map_concept vyhledávat standardní koncepty a řešit mapování kódů v rámci konverzace. Služba je určena pro vyhledávání lékařských kódů a konceptů bez propojení s osobními údaji pacientů – podle poskytovatele by neměla být přes API posílána chráněná zdravotní informace (PHI). Zabezpečení zahrnuje šifrování HTTPS a autentizaci pomocí API klíče, audit logování je dostupné u vybraných tarifů. Licencované vokabuláře jako CPT a MedDRA nejsou kvůli licenčním omezením k dispozici. Registrace účtu je zdarma, konkrétní cenové tarify ale v dostupných podkladech uvedeny nejsou.
+Klíčové vlastnosti
+- Vyhledávání napříč 120+ vokabuláři (SNOMED CT, ICD-10, LOINC, RxNorm)
+- Mapování kódů mezi vokabuláři přes „Maps to“ vztahy
+- SDK pro Python, R a TypeScript s typovou podporou
+- MCP server pro integraci s AI agenty
+Časté dotazy
+Co OMOPHub umí?
+Jde o API pro vyhledávání a mapování zdravotnických kódů napříč SNOMED CT, ICD-10, LOINC, RxNorm a dalšími vokabuláři (120+), synchronizované s oficiálními vydáními OHDSI ATHENA.
+Kolik OMOPHub stojí?
+Registrace účtu je zdarma, konkrétní cenové tarify ale nejsou v podkladech uvedeny.
+Pro koho je OMOPHub určen a jak začít?
+Je určen vývojářům a zdravotnickým datovým týmům (ETL, výzkum, EHR, AI agenti) – stačí se zdarma zaregistrovat a používat API klíč nebo SDK pro Python, R či TypeScript.
+Kategorie|E|
+|T|ElevenLabs v4 (Eleven v4) on BestTTS|D|31.10.2026 12:03|P|Přehledová stránka BestTTS s informacemi o modelu ElevenLabs v4 (eleven_v4) – text na řeč s podporou 90+ jazyků, klonováním hlasu a API.|M|EJAJ|X|ElevenLabs v4 (Eleven v4) on BestTTS
+Přehledová stránka BestTTS s informacemi o modelu ElevenLabs v4 (eleven_v4) – text na řeč s podporou 90+ jazyků, klonováním hlasu a API.
+O nástroji
+ElevenLabs v4 (model ID eleven_v4) je model pro převod textu na řeč určený pro vyprávění, hraní postav a dialogy. Podle informací na BestTTS podporuje výběr hlasu z knihovny, jeho vytvoření pomocí Voice Design nebo klonování existujícího hlasu, a to ve více než 90 jazycích. Limit na jeden požadavek s jedním hlasem je 10 000 znaků, funkce Text to Dialogue umožňuje kombinovat až 10 různých hlasových ID v jedné konverzaci. Model podporuje expresivní zvukové značky jako [whispering], [shouting] nebo [laughing], kterými lze v textu naznačit způsob přednesu dané pasáže. Pro vývojáře je k dispozici API s podporou streamování zvuku přes HTTP a Python SDK (instalace přes pip install elevenlabs), přičemž pro komunikaci přes WebSocket je určena funkce Text to Dialogue. Samostatnou variantou je rychlejší model eleven_v4_turbo s uváděnou mediánovou latencí kolem 100 ms. Cena je podle zdroje 0,08 USD za 1000 znaků, bezplatná varianta není uvedena. Stránka BestTTS samotná je volně dostupný referenční katalog modelů TTS, nikoli samotný nástroj pro generování řeči – ten poskytuje přímo ElevenLabs.
+Klíčové vlastnosti
+- Klonování hlasu (Instant i Professional Voice Cloning)
+- Vytvoření vlastního hlasu pomocí Voice Design
+- Podpora 90+ jazyků pro generování řeči
+- Expresivní zvukové značky jako [whispering] nebo [shouting]
+Časté dotazy
+Co umí ElevenLabs v4?
+Převádí text na řeč pro vyprávění, hraní postav a dialogy, umožňuje výběr nebo klonování hlasu a podporuje více než 90 jazyků. Limit je 10 000 znaků na požadavek s jedním hlasem, funkce Text to Dialogue zvládne kombinovat až 10 hlasových ID.
+Kolik ElevenLabs v4 stojí?
+Cena je 0,08 USD za 1000 znaků, bezplatná varianta podle dostupných podkladů uvedena není.
+Pro koho je ElevenLabs v4 a jak začít?
+Je určen vývojářům a tvůrcům audio obsahu, kteří potřebují namluvit dialogy, vyprávění nebo postavy v různých jazycích. Stačí získat API klíč, nainstalovat Python SDK příkazem pip install elevenlabs a vybrat hlasové ID pro první požadavek.
+Kategorie|E|
+|T|Transly|D|31.10.2026 12:03|P|Transly je aplikace pro překlad zpráv, mluveného slova i videí mezi mnoha jazyky, dostupná pro iPhone, macOS a Android.|M|EJAJ|X|Transly
+Transly je aplikace pro překlad zpráv, mluveného slova i videí mezi mnoha jazyky, dostupná pro iPhone, macOS a Android.
+O nástroji
+Transly je komplexní nástroj pro automatický překlad, který funguje přímo v klávesnici telefonu, umožňuje živý hlasový překlad konverzací a překládá i zvuk napříč aplikacemi nebo v lokálních videích. Podporuje hlavní světové jazyky, včetně angličtiny, čínštiny, japonštiny či španělštiny, a je určen pro komunikaci se zahraničními partnery, přáteli i při cestování. Aplikace nabízí několik režimů použití: psaní v jednom jazyce s automatickým překladem do druhého přímo při psaní zpráv, simultánní hlasový překlad obousměrných rozhovorů zobrazený v reálném čase na obrazovce a překlad titulků ve videích, například krátkých klipech nebo tutoriálech. Transly je k dispozici jako aplikace pro App Store, macOS a Google Play. Informace o ceně nebo případné bezplatné verzi nejsou v dostupných podkladech uvedeny, stejně jako podpora API nebo otevřený zdrojový kód. Rozhraní aplikace je v angličtině, lokalizace do češtiny není doložena.
+Klíčové vlastnosti
+- Překlad přímo v klávesnici telefonu při psaní zpráv
+- Simultánní hlasový překlad obousměrných rozhovorů v reálném čase
+- Překlad zvuku a titulků napříč aplikacemi i v lokálních videích
+- Podpora hlavních světových jazyků (angličtina, čínština, japonština, španělština)
+Časté dotazy
+Co přesně Transly umí?
+Transly překládá psané zprávy přímo v klávesnici telefonu, umožňuje živý hlasový překlad konverzací zobrazený na obrazovce v reálném čase a překládá titulky ve videích, například krátkých klipech nebo tutoriálech.
+Kolik Transly stojí?
+Informace o ceně ani o případné bezplatné verzi nejsou v dostupných podkladech uvedeny.
+Pro koho je Transly určené a jak začít?
+Je určené pro komunikaci se zahraničními partnery, přáteli i pro cestování; aplikaci lze stáhnout z App Store, Google Play nebo jako aplikaci pro macOS.
+Kategorie|E|
+|T|AI Dubbing|D|31.10.2026 12:03|P|AI nástroj pro dabing videí a audia do 13 jazyků, s náhledem prvních 30 sekund zdarma.|M|EJAJ|X|AI Dubbing
+AI nástroj pro dabing videí a audia do 13 jazyků, s náhledem prvních 30 sekund zdarma.
+O nástroji
+AI Dubbing umožňuje přeložit a nadabovat řeč ve videu nebo audiu do jiného jazyka pomocí umělé inteligence, a to celkem ve 13 jazycích. Uživatelé mohou před exportem zkontrolovat a upravit jednotlivé věty překladu a stáhnout si hotový dabing. Nástroj nabízí bezplatný náhled až 30 sekund výstupu, přičemž tento náhled podléhá limitům daným účtem. Noví uživatelé, kteří splní podmínky, získávají 180 kreditů zdarma. Kromě dabingu služba podporuje také přepis (transkripci) a překlad titulků. Podle dostupných informací nástroj zatím nemá českou verzi rozhraní a jedná se o zahraniční produkt dostupný v anglickém jazyce.
+Klíčové vlastnosti
+- Dabing videí a audia do 13 jazyků
+- Úprava jednotlivých vět překladu před exportem
+- Bezplatný náhled výstupu v délce 30 sekund
+- Přepis (transkripce) řeči ze zvuku
+Časté dotazy
+Co AI Dubbing umí?
+Přeloží a nadabuje řeč ve videu nebo audiu do jiného jazyka z nabídky 13 jazyků, umožní upravit jednotlivé věty překladu před exportem a podporuje také přepis řeči a překlad titulků.
+Kolik AI Dubbing stojí?
+Nástroj funguje na principu freemium – zdarma lze vyzkoušet náhled výstupu do 30 sekund a noví uživatelé po splnění podmínek získají 180 kreditů zdarma, další funkce jsou pak zpoplatněné.
+Pro koho je AI Dubbing a jak začít?
+Hodí se pro tvůrce videí a audia, kteří chtějí svůj obsah nabídnout publiku v jiném jazyce. Stačí se zaregistrovat na webu, nahrát video nebo audio a vyzkoušet bezplatný náhled dabingu.
+Kategorie|E|
+|T|Pidgeon|D|31.10.2026 12:03|P|Pidgeon poskytuje AI agentům vlastní e-mailové schránky přes API, SDK či MCP – hodí se vývojářům, kteří chtějí agenty napojit na reálnou poštovní komu...|M|EJAJ|X|Pidgeon
+Pidgeon poskytuje AI agentům vlastní e-mailové schránky přes API, SDK či MCP – hodí se vývojářům, kteří chtějí agenty napojit na reálnou poštovní komunikaci.
+O nástroji
+Pidgeon je infrastruktura pro e-mailové schránky určené AI agentům, ne lidem. Každý agent dostane vlastní adresu (na doméně Pidgeon nebo vlastní doméně), kterou lze ovládat přes REST API, SDK pro TypeScript a Python, CLI nebo MCP server, případně klasicky přes IMAP. Podporuje vlákna zpráv (threads), odesílání a příjem pošty v podobě, v jaké ji čekají lidé, i přílohy a dokumenty posílané s danou zprávou. Nové události ve schránce, jako je doručení či odpověď, spouští webhooky, takže navazující workflow agenta se může spustit okamžitě. Služba je hostovaná v EU a provozovatel (PCN Labs OÜ) deklaruje, že obsah pošty nikdy nepoužívá k trénování modelů. Součástí je i tzv. Firewall, který vyhodnocuje registrace a kódy přicházející na agentovu adresu, takže agent se může sám přihlašovat do služeb třetích stran bez použití skutečných uživatelských přihlašovacích údajů. Pro zakladatele firem nabízí Pidgeon tři schránky na vlastní doméně zdarma. Nástroj je určen čistě pro vývojářské a agentní použití – rozhraní i dokumentace jsou v angličtině a cílí na technické uživatele integrující poštu do vlastních AI workflow, nikoli na běžné koncové uživatele hledající klasického e-mailového klienta. Konkrétní cenové tarify nad rámec uvedené bezplatné nabídky tří schránek nejsou v dostupných podkladech uvedeny.
+Klíčové vlastnosti
+- Vlastní e-mailová adresa pro každého AI agenta
+- Ovládání přes REST API, SDK (TypeScript, Python), CLI nebo MCP
+- Podpora vláken zpráv a příloh v mailech
+- Webhooky na nové události ve schránce (doručení, odpověď)
+Časté dotazy
+K čemu Pidgeon slouží?
+Pidgeon dává AI agentům vlastní e-mailové schránky, které lze ovládat přes API, SDK, CLI nebo MCP – agent tak může posílat a přijímat poštu, vést vlákna konverzací i pracovat s přílohami jako člověk.
+Kolik Pidgeon stojí?
+Zakladatelé firem mají zdarma tři schránky na vlastní doméně, konkrétní placené tarify nad rámec této nabídky nejsou zveřejněné.
+Pro koho je Pidgeon určený a jak začít?
+Nástroj cílí na vývojáře budující AI agenty – stačí jedno API volání k vytvoření schránky, začít lze přes quickstart s TypeScript/Python SDK, CLI nebo REST API.
+Kategorie|E|
+|T|LawAsked|D|31.10.2026 12:03|P|LawAsked odpovídá na reálné právní dotazy srozumitelným jazykem a každou odpověď podkládá citací konkrétního zákona.|M|EJAJ|X|LawAsked
+LawAsked odpovídá na reálné právní dotazy srozumitelným jazykem a každou odpověď podkládá citací konkrétního zákona.
+O nástroji
+LawAsked je nástroj, který poskytuje odpovědi na právní otázky formulované běžným jazykem, přičemž každá odpověď odkazuje na konkrétní zákonné ustanovení, z něhož vychází. Pro každou podporovanou zemi existuje samostatná verze stránky, postavená na místní legislativě dané země. Nástroj aktuálně pokrývá 12 zemí, mezi nimi Austrálii, Rakousko, Kanadu, Francii, Německo, Japonsko, Nizozemsko, Norsko, Španělsko, Švédsko, Spojené království a Spojené státy. Některé další země jsou podle webu označeny jako „již brzy“ a otevřou se, jakmile bude k dispozici jejich oficiální legislativa. Uživatel si na úvodní stránce vybere svou zemi a poté může položit právní otázku. Informace o cenách, dostupnosti API ani o tom, zda je nástroj open source, nejsou na webu uvedeny. Rozhraní je v angličtině, žádná čeština zmíněna není.
+Klíčové vlastnosti
+- Odpovědi na právní dotazy v běžném jazyce
+- Každá odpověď podložena citací konkrétního zákona
+- Samostatná verze webu pro každou zemi
+- Pokrývá 12 zemí včetně USA, UK, Německa či Francie
+Časté dotazy
+Co přesně LawAsked umí?
+Odpovídá na právní otázky položené běžným jazykem a ke každé odpovědi uvádí konkrétní zákonné ustanovení, ze kterého vychází.
+Kolik LawAsked stojí?
+Informace o cenách nejsou na webu uvedeny.
+Pro koho je nástroj určen a jak začít?
+Je určen komukoli, kdo potřebuje rychlou orientaci v právních otázkách – stačí si na úvodní stránce vybrat svou zemi a položit dotaz.
+Kategorie|E|
+|T|Willow Voice|D|31.10.2026 12:03|P|Willow Voice je AI diktovací nástroj pro Mac, Windows a iPhone, který mluvenou řeč převádí na text s interpunkcí přímo v libovolné aplikaci.|M|EJAJ|X|Willow Voice
+Willow Voice je AI diktovací nástroj pro Mac, Windows a iPhone, který mluvenou řeč převádí na text s interpunkcí přímo v libovolné aplikaci.
+O nástroji
+Willow Voice je nativní aplikace pro hlasové diktování, kterou spustíte klávesovou zkratkou (fn na Macu, Alt+Space na Windows) a text se vloží přímo na pozici kurzoru v jakékoli aplikaci – od Gmailu a Slacku přes Notion a Cursor až po ChatGPT či iMessage. Nástroj automaticky odstraňuje slovní vatu, doplňuje interpunkci a formátování, podporuje více než 100 jazyků s možností přepínání uprostřed diktování a umožňuje vytvořit vlastní slovník pro produktové názvy, zkratky či jména. Willow nabízí i volitelný offline režim s lokálním modelem na Macu a iOS a vlastní nastavení i slovník se synchronizují napříč Macem, Windows a iOS. Zabezpečení odpovídá certifikaci SOC 2, v Enterprise plánu navíc i shodě s HIPAA a přístupem k API. Informace o ceně a bezplatné verzi nejsou v dostupných podkladech uvedeny, stejně jako údaje o otevřeném zdrojovém kódu či české lokalizaci rozhraní.
+Klíčové vlastnosti
+- Vložení přepsaného textu přímo na pozici kurzoru v libovolné aplikaci
+- Spuštění klávesovou zkratkou (fn na Macu, Alt+Space na Windows)
+- Automatické odstranění slovní vaty a doplnění interpunkce
+- Podpora více než 100 jazyků s přepínáním během diktování
+Časté dotazy
+Co přesně Willow Voice umí?
+Willow Voice převádí mluvenou řeč na text s interpunkcí a vkládá ho přímo na pozici kurzoru v libovolné aplikaci, od Gmailu po ChatGPT. Automaticky odstraňuje slovní vatu, podporuje přes 100 jazyků a umožňuje vlastní slovník pro specifické výrazy.
+Kolik Willow Voice stojí a je k dispozici zdarma?
+Informace o ceně ani o bezplatné verzi nejsou v dostupných podkladech uvedeny.
+Pro koho je nástroj určen a jak se začíná?
+Hodí se pro uživatele Macu, Windows a iPhonu, kteří chtějí diktovat text do libovolné aplikace místo psaní. Stačí nainstalovat nativní aplikaci a spustit diktování klávesovou zkratkou (fn na Macu, Alt+Space na Windows).
+Kategorie|E|
 |T|Lomography uvedlo Petzval Métamorphose 35 f/1.8 s nastavitelným bokehem|D|31.10.2026 08:30|P|V nabídce objektivů značky Lomography se objevila novinka Petzval Métamorphose 35 f/1.8. Ta umožňuje nastavit bokeh na několik různých charakterů.|M|Digimanie|X|V nabídce objektivů značky Lomography se objevila novinka Petzval Métamorphose 35 f/1.8. Ta umožňuje nastavit bokeh na několik různých charakterů.
 Lomography rozšiřuje svou řadu historií inspirovaných skel o nový model Joseph Petzval Métamorphose 35mm f/1.8. Jde o speciální kreativní objektiv určený pro full frame bezzrcadlovky s bajonety Sony E, Canon RF nebo Nikon Z. Novinka staví na tradičním designu Petzval, který je známý svým charakteristickým kruhovým rozostřením, nicméně v tomto případě je to ještě rozšířené o možnosti ovládání efektu přímo v objektivu.
 Hlavním prvkem je speciální kroužek pro ovládání bokeh efektu, který nabízí sedm různých úrovní. Při nejvyšší hodnotě vzniká silný optický warp efekt, který přitahuje pozornost k velmi ostrému středu snímku. Naopak nejnižší úroveň přináší pozvolné změkčení okrajů s efekty připomínajícími mýdlové bubliny. Focus-coupling eliminuje posun zaostření při změně úrovně bokeh efektu, což je důležité zejména pro video

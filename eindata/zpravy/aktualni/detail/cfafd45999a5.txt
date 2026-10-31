@@ -1,0 +1,17 @@
+MuseMate
+MuseMate je AI generátor hudebních videí pro nezávislé hudebníky – z písně vytvoří videoklip, Spotify Canvas smyčku i obal alba.
+O nástroji
+MuseMate je nástroj zaměřený na nezávislé hudebníky, kteří potřebují vizuální doprovod ke své hudbě. Stačí nahrát skladbu nebo zadat odkaz na píseň a napsat, jak má video působit – AI napíše storyboard podle textu písně, vygeneruje jednotlivé scény a sestříhá je na rytmus do výsledného videa v délce 15 až 60 sekund. Výstupy lze vytvářet v poměrech 16:9, 9:16 i 1:1, takže jsou vhodné pro YouTube, Reels, Shorts i TikTok. Kromě hudebních videí nástroj umí z obalu alba vytvořit animovanou vertikální smyčku pro Spotify Canvas a nabízí i samostatný generátor obalů alb bez nutnosti grafického softwaru. Součástí je i Performance model, který dokáže namodelovat zpívající postavu podle textu písně. Generování funguje na kreditovém systému – scény typu „Performance“ stojí 1 060 kreditů, standardní scény 30 kreditů, přičemž cenu v kreditech vidíte ještě předtím, než se video začne vytvářet. Bezplatná varianta ani konkrétní ceny plánů nejsou v dostupných podkladech uvedeny.
+Klíčové vlastnosti
+- Tvorba videoklipu z nahrané skladby nebo odkazu na píseň
+- Storyboard generovaný podle textu písně
+- Sestřih scén na rytmus v délce 15–60 sekund
+- Animovaná smyčka obalu alba pro Spotify Canvas
+Časté dotazy
+Co MuseMate přesně umí vytvořit?
+Z nahrané písně nebo odkazu vygeneruje AI videoklip sestříhaný na rytmus, animovanou smyčku obalu alba pro Spotify Canvas a samostatný obal alba – vše v poměrech 16:9, 9:16 i 1:1.
+Kolik MuseMate stojí?
+Generování funguje na kreditovém systému – standardní scéna stojí 30 kreditů, scéna s Performance modelem 1 060 kreditů, cenu vidíte předem. Konkrétní ceny plánů ani bezplatná varianta nejsou v podkladech uvedeny.
+Pro koho je MuseMate a jak se začíná?
+Je určen nezávislým hudebníkům, kteří potřebují vizuál ke svému vydání – stačí nahrát skladbu nebo vložit odkaz na ni, popsat, jak má video působit, a AI napíše storyboard a vygeneruje scény.
+Kategorie

@@ -1,0 +1,17 @@
+Willow Voice
+Willow Voice je AI diktovací nástroj pro Mac, Windows a iPhone, který mluvenou řeč převádí na text s interpunkcí přímo v libovolné aplikaci.
+O nástroji
+Willow Voice je nativní aplikace pro hlasové diktování, kterou spustíte klávesovou zkratkou (fn na Macu, Alt+Space na Windows) a text se vloží přímo na pozici kurzoru v jakékoli aplikaci – od Gmailu a Slacku přes Notion a Cursor až po ChatGPT či iMessage. Nástroj automaticky odstraňuje slovní vatu, doplňuje interpunkci a formátování, podporuje více než 100 jazyků s možností přepínání uprostřed diktování a umožňuje vytvořit vlastní slovník pro produktové názvy, zkratky či jména. Willow nabízí i volitelný offline režim s lokálním modelem na Macu a iOS a vlastní nastavení i slovník se synchronizují napříč Macem, Windows a iOS. Zabezpečení odpovídá certifikaci SOC 2, v Enterprise plánu navíc i shodě s HIPAA a přístupem k API. Informace o ceně a bezplatné verzi nejsou v dostupných podkladech uvedeny, stejně jako údaje o otevřeném zdrojovém kódu či české lokalizaci rozhraní.
+Klíčové vlastnosti
+- Vložení přepsaného textu přímo na pozici kurzoru v libovolné aplikaci
+- Spuštění klávesovou zkratkou (fn na Macu, Alt+Space na Windows)
+- Automatické odstranění slovní vaty a doplnění interpunkce
+- Podpora více než 100 jazyků s přepínáním během diktování
+Časté dotazy
+Co přesně Willow Voice umí?
+Willow Voice převádí mluvenou řeč na text s interpunkcí a vkládá ho přímo na pozici kurzoru v libovolné aplikaci, od Gmailu po ChatGPT. Automaticky odstraňuje slovní vatu, podporuje přes 100 jazyků a umožňuje vlastní slovník pro specifické výrazy.
+Kolik Willow Voice stojí a je k dispozici zdarma?
+Informace o ceně ani o bezplatné verzi nejsou v dostupných podkladech uvedeny.
+Pro koho je nástroj určen a jak se začíná?
+Hodí se pro uživatele Macu, Windows a iPhonu, kteří chtějí diktovat text do libovolné aplikace místo psaní. Stačí nainstalovat nativní aplikaci a spustit diktování klávesovou zkratkou (fn na Macu, Alt+Space na Windows).
+Kategorie

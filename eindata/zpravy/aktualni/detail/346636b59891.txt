@@ -1,0 +1,17 @@
+ADRs for AI
+Git repo šablona, VS Code rozšíření s MCP serverem a iOS aplikace pro zachycení rozhodnutí a jejich zdůvodnění ze spolupráce s AI formou ADR záznamů.
+O nástroji
+ADRs4AI řeší problém, že při běžné spolupráci s AI asistentem se veškeré uvažování, zvažované varianty a důvody rozhodnutí po skončení konverzace ztratí. Nástroj nabízí git repo template se šablonami ADR záznamů, direktivami a „inbox protokolem“ – uživatel nadiktuje nebo napíše myšlenky do „seedu“ a AI je rozčlení do strukturovaných záznamů (### QST) obsahujících otázku, zvažované možnosti, doporučení AI se zdůvodněním a mírou jistoty, a nakonec lidské rozhodnutí (accept/override). Otevřené otázky lze dohledat jednoduchým grep příkazem v docs/adr/. Součástí je VS Code rozšíření (dostupné i na Open VSX) se stromovým zobrazením otevřených otázek, diagnostikou chybně formátovaných záznamů, deep linky a MCP serverem, přes který mohou záznam dotazovat AI agenti. Dále je k dispozici iOS aplikace (App Store) umožňující procházet otevřené otázky projektu na mobilu a jedním klepnutím schvalovat odpovědi, které se rovnou zapíší jako commit. Autoři zdůrazňují, že nejde o archivaci transkriptů, vektorovou databázi „paměti“ ani orchestrační platformu, ale o uchování rozhodnutí a jejich zdůvodnění. Nástroj je v angličtině, cena ani dostupnost bezplatné verze nejsou v podkladech uvedeny.
+Klíčové vlastnosti
+- Git repo šablona s ADR a seed šablonami pro zachycení rozhodnutí
+- VS Code rozšíření se stromovým zobrazením otevřených otázek
+- MCP server pro dotazování záznamů AI agenty
+- Diagnostika chybně formátovaných ADR záznamů přímo v editoru
+Časté dotazy
+Co přesně ADRs4AI dělá?
+Zachycuje uvažování, zvažované varianty a zdůvodnění rozhodnutí ze spolupráce s AI formou strukturovaných ADR záznamů, místo aby se po skončení konverzace ztratily.
+Kolik ADRs4AI stojí?
+Cenové informace nejsou v podkladech uvedeny.
+Jak s nástrojem začít?
+Stačí vytvořit vlastní repozitář z git šablony, nadiktovat nebo napsat myšlenky do „seedu“ a AI je rozčlení do ADR záznamů; otázky pak lze schvalovat přes VS Code rozšíření nebo iOS aplikaci.
+Kategorie

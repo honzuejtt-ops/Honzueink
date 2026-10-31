@@ -1,0 +1,17 @@
+ElevenLabs v4 (Eleven v4) on BestTTS
+Přehledová stránka BestTTS s informacemi o modelu ElevenLabs v4 (eleven_v4) – text na řeč s podporou 90+ jazyků, klonováním hlasu a API.
+O nástroji
+ElevenLabs v4 (model ID eleven_v4) je model pro převod textu na řeč určený pro vyprávění, hraní postav a dialogy. Podle informací na BestTTS podporuje výběr hlasu z knihovny, jeho vytvoření pomocí Voice Design nebo klonování existujícího hlasu, a to ve více než 90 jazycích. Limit na jeden požadavek s jedním hlasem je 10 000 znaků, funkce Text to Dialogue umožňuje kombinovat až 10 různých hlasových ID v jedné konverzaci. Model podporuje expresivní zvukové značky jako [whispering], [shouting] nebo [laughing], kterými lze v textu naznačit způsob přednesu dané pasáže. Pro vývojáře je k dispozici API s podporou streamování zvuku přes HTTP a Python SDK (instalace přes pip install elevenlabs), přičemž pro komunikaci přes WebSocket je určena funkce Text to Dialogue. Samostatnou variantou je rychlejší model eleven_v4_turbo s uváděnou mediánovou latencí kolem 100 ms. Cena je podle zdroje 0,08 USD za 1000 znaků, bezplatná varianta není uvedena. Stránka BestTTS samotná je volně dostupný referenční katalog modelů TTS, nikoli samotný nástroj pro generování řeči – ten poskytuje přímo ElevenLabs.
+Klíčové vlastnosti
+- Klonování hlasu (Instant i Professional Voice Cloning)
+- Vytvoření vlastního hlasu pomocí Voice Design
+- Podpora 90+ jazyků pro generování řeči
+- Expresivní zvukové značky jako [whispering] nebo [shouting]
+Časté dotazy
+Co umí ElevenLabs v4?
+Převádí text na řeč pro vyprávění, hraní postav a dialogy, umožňuje výběr nebo klonování hlasu a podporuje více než 90 jazyků. Limit je 10 000 znaků na požadavek s jedním hlasem, funkce Text to Dialogue zvládne kombinovat až 10 hlasových ID.
+Kolik ElevenLabs v4 stojí?
+Cena je 0,08 USD za 1000 znaků, bezplatná varianta podle dostupných podkladů uvedena není.
+Pro koho je ElevenLabs v4 a jak začít?
+Je určen vývojářům a tvůrcům audio obsahu, kteří potřebují namluvit dialogy, vyprávění nebo postavy v různých jazycích. Stačí získat API klíč, nainstalovat Python SDK příkazem pip install elevenlabs a vybrat hlasové ID pro první požadavek.
+Kategorie

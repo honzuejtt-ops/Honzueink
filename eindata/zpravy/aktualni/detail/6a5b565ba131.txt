@@ -1,0 +1,5 @@
+AI-built browser games, collected in one place
+Katalog více než 700 prohlížečových her vytvořených pomocí AI (GPT, Claude, Gemini aj.), tříděných podle žánru, modelu i zařízení.
+O nástroji
+Playground je kurátorská sbírka nezávislých her vytvořených s pomocí AI, které jsou hratelné přímo v prohlížeči. Aktuálně obsahuje přes 700 her a nabízí procházení podle žánru, podle použitého AI modelu (například GPT, Claude nebo Gemini) i podle typu zařízení, na kterém se dá hrát; u některých titulů je navíc vyznačena podpora ovladače. Funkce „Three at random“ nabídne tři náhodné hry pro ty, kdo neví, co hledat. Tvůrci mohou přidat vlastní hru zdarma přes formulář „Submit your game“, přičemž každá zaslaná hra prochází před zveřejněním recenzní frontou. Playground slouží jako rozcestník s odkazy na hry hostované jinde, nikoli jako místo, kde jsou hry přímo spuštěné. Procházení katalogu a hraní her je zdarma a nevyžaduje registraci. Provozovatel si pouze dobrovolně říká o drobný finanční příspěvek (tip ve výši £3) na podporu provozu webu, placení není nutné ani pro hráče, ani pro tvůrce přidávající hru. Stránka je k dispozici v angličtině.
+Kategorie

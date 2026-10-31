@@ -1,0 +1,17 @@
+OMOPHub
+REST API pro vyhledávání a mapování zdravotnických kódů napříč SNOMED CT, ICD-10, LOINC a RxNorm bez nutnosti vlastní databáze.
+O nástroji
+OMOPHub je hostovaná API služba pro práci s lékařskou terminologií postavená na OHDSI OMOP vokabulářích. Umožňuje vyhledávat, mapovat a propojovat více než 11 milionů konceptů napříč 120+ vokabuláři, včetně SNOMED CT, ICD-10-CM, ICD-10-PCS, LOINC, RxNorm, HCPCS, NDC, Read Codes a MeSH. Nástroj je synchronizován s oficiálními vydáními OHDSI ATHENA, takže poskytuje aktuální terminologická data bez nutnosti stahovat a spravovat vlastní databázi. Vývojáři mohou využít připravené SDK pro Python, R a TypeScript s typovou podporou a automatickým doplňováním. API podporuje i propojení FHIR zdrojů s OMOP standardem, mapování napříč vokabuláři a dávkové zpracování pro ETL pipeline. K dispozici je také MCP server pro integraci s AI agenty, kteří mohou přes nástroje jako search_concepts nebo map_concept vyhledávat standardní koncepty a řešit mapování kódů v rámci konverzace. Služba je určena pro vyhledávání lékařských kódů a konceptů bez propojení s osobními údaji pacientů – podle poskytovatele by neměla být přes API posílána chráněná zdravotní informace (PHI). Zabezpečení zahrnuje šifrování HTTPS a autentizaci pomocí API klíče, audit logování je dostupné u vybraných tarifů. Licencované vokabuláře jako CPT a MedDRA nejsou kvůli licenčním omezením k dispozici. Registrace účtu je zdarma, konkrétní cenové tarify ale v dostupných podkladech uvedeny nejsou.
+Klíčové vlastnosti
+- Vyhledávání napříč 120+ vokabuláři (SNOMED CT, ICD-10, LOINC, RxNorm)
+- Mapování kódů mezi vokabuláři přes „Maps to“ vztahy
+- SDK pro Python, R a TypeScript s typovou podporou
+- MCP server pro integraci s AI agenty
+Časté dotazy
+Co OMOPHub umí?
+Jde o API pro vyhledávání a mapování zdravotnických kódů napříč SNOMED CT, ICD-10, LOINC, RxNorm a dalšími vokabuláři (120+), synchronizované s oficiálními vydáními OHDSI ATHENA.
+Kolik OMOPHub stojí?
+Registrace účtu je zdarma, konkrétní cenové tarify ale nejsou v podkladech uvedeny.
+Pro koho je OMOPHub určen a jak začít?
+Je určen vývojářům a zdravotnickým datovým týmům (ETL, výzkum, EHR, AI agenti) – stačí se zdarma zaregistrovat a používat API klíč nebo SDK pro Python, R či TypeScript.
+Kategorie

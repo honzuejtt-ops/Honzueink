@@ -1,0 +1,17 @@
+Trama
+Rozšíření do VS Code, které vede AI agenta omp při úpravách kódu podle mapy aplikace a každou změnu nechá nejdřív schválit vývojářem.
+O nástroji
+Trama udržuje vedle kódu „mapu aplikace“ v podobě Markdown souborů ve složce .trama/, zobrazenou jako diagram. AI agent si před psaním kódu mapu přečte a každou navrhovanou změnu předloží jako Proposal (návrh), který musí vývojář schválit, než agent začne cokoliv implementovat. Celý proces probíhá v pěti krocích: popsání požadavku, zodpovězení doplňujících otázek agenta, schválení návrhu, spuštění jednotlivých úkolů (Tasks) a řešení tzv. Driftů – situací, kdy se kód a mapa rozejdou a vývojář rozhoduje, která verze je správná. Nástroj je striktně vyhraněný: funguje pouze jako rozšíření pro VS Code 1.106 nebo novější a podporuje jen agenta omp – jiné editory ani agenty nepodporuje. Běží na Linuxu (x64), macOS (Apple silicon) a ve verzi preview na Windows (x64), kde instalátor trama.exe není podepsaný, takže SmartScreen nebo antivirus může při prvním spuštění zobrazit varování. Pro týmové použití je navíc potřeba GitHub CLI (gh). Instalace probíhá přes VS Code Marketplace nebo stažením .vsix souboru z Releases.
+Klíčové vlastnosti
+- Mapa aplikace jako Markdown soubory ve složce .trama/
+- Vizualizace mapy formou diagramu
+- Změny kódu jako Proposal čekající na schválení
+- Doplňující otázky agenta s doporučenou odpovědí
+Časté dotazy
+Co přesně Trama dělá?
+Trama vede AI agenta omp při úpravách kódu podle „mapy aplikace“ uložené jako Markdown v .trama/ a každou navrhovanou změnu (Proposal) nechá nejdřív schválit vývojářem, než se začne implementovat.
+Kolik Trama stojí?
+Z podkladů není cena uvedena.
+Jak s Tramou začít a pro koho je určená?
+Je určená vývojářům pracujícím ve VS Code 1.106 nebo novějším s agentem omp – nainstaluje se z VS Code Marketplace nebo stažením .vsix souboru z Releases a spuštěním příkazu Extensions: Install from VSIX.
+Kategorie

@@ -1,0 +1,17 @@
+Palomino
+Mac aplikace napsaná v Rustu, která umožňuje spouštět a sledovat agenty Claude Code, Codex a Pi vedle sebe v jednom okně.
+O nástroji
+Palomino je nativní aplikace pro macOS napsaná v Rustu, určená vývojářům pracujícím s AI kódovacími agenty. Umožňuje spustit Claude Code, Codex a Pi současně vedle sebe v jednom okně, přičemž rozhraní je renderováno na GPU a kombinuje terminály, prohlížeč a soubory na jedné obrazovce. Podle webu podporuje neomezený počet workspace, agentů a panelů – omezením je pouze výkon konkrétního Macu. Aplikaci lze stáhnout přímo nebo nainstalovat pomocí instalačního příkazu, přičemž založení účtu není vyžadováno. Web zmiňuje i dostupnost modelu GPT-6.1 Terra v rámci Palomina a možnost zapsat se do waitlistu pro Windows a Linux, pro které aplikace zatím není k dispozici. Palomino je nabízeno jako bezplatné, placený tarif ani omezení funkcí nejsou v dostupných podkladech zmíněny. Informace o tom, zda jde o beta nebo stabilní verzi, o verzovacím či update cyklu, ani podrobnosti o API pro vývojáře třetích stran nejsou z dostupných zdrojů dohledatelné.
+Klíčové vlastnosti
+- Spuštění Claude Code, Codex a Pi vedle sebe
+- Neomezený počet workspace, agentů a panelů
+- Rozhraní renderované na GPU pro plynulý chod
+- Kombinace terminálů, prohlížeče a souborů v jednom okně
+Časté dotazy
+Co přesně Palomino umí?
+Palomino je macOS aplikace napsaná v Rustu, která umožňuje spouštět a sledovat AI kódovací agenty Claude Code, Codex a Pi vedle sebe v jednom okně, přičemž kombinuje terminály, prohlížeč a soubory na jedné obrazovce renderované na GPU.
+Kolik Palomino stojí?
+Palomino je nabízeno zdarma, s neomezeným počtem workspace, agentů a panelů – jediným limitem je výkon vašeho Macu. Placený tarif ani omezení funkcí nejsou v podkladech zmíněny.
+Pro koho je Palomino určené a jak začít?
+Je určeno vývojářům pracujícím s AI kódovacími agenty na macOS. Stačí aplikaci stáhnout přímo nebo nainstalovat pomocí instalačního příkazu, založení účtu není potřeba; pro Windows a Linux je zatím jen waitlist.
+Kategorie

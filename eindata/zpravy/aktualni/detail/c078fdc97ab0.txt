@@ -1,0 +1,17 @@
+Handwired
+Experimentální open-source nástroj, který převádí běžný JavaScript kód na neuronovou síť bez nutnosti trénování.
+O nástroji
+Handwired je experimentální projekt od Chenga Lou (bývalý člen React core týmu), který transformuje regulérní JavaScript kód – včetně podmínek, cyklů a stavu – na neuronovou síť postavenou na maticovém násobení a ReLU operacích nad desetinnými čísly. Výsledný program je přesný a zároveň plně diferencovatelný, takže váhy není třeba trénovat, protože jsou zapsány ručně, ale lze je kdykoliv „odmrazit“ a doladit standardním backpropem. Nástroj slouží především vývojářům a výzkumníkům zajímajícím se o průnik běžného programování a diferencovatelných výpočtů. Operace sčítání, násobení a ReLU se slučují do jedné velké maticové operace, která běží buď přímo v JavaScriptu, nebo přes WebGPU pro masivní paralelizaci. Mezi ukázkové demo aplikace patří mini desktopové OS běžící na 9 909 vahách napříč 130 vrstvami renderované do běžného DOM, trénovatelná fotogalerie a vyhledávání v 100 000 JSON dokumentech. Handwired je open-source projekt napsaný v TypeScriptu, dostupný pod MIT licencí na GitHubu (repozitář chenglou/handwired), spouští se lokálně pomocí bun. Jde o volně dostupné demo bez zmínky o placeném modelu či komerčním API.
+Klíčové vlastnosti
+- Převádí podmínky, cykly a stav na maticové operace
+- Váhy zapsané ručně bez nutnosti trénování
+- Lze odmrazit váhy a doladit backpropem
+- Běží v JavaScriptu nebo přes WebGPU pro paralelizaci
+Časté dotazy
+Co přesně Handwired umí?
+Převádí běžný JavaScript kód (podmínky, cykly, stav) na neuronovou síť postavenou na maticovém násobení a ReLU operacích, aniž by bylo nutné síť trénovat – výsledek je přesný a zároveň plně diferencovatelný.
+Kolik Handwired stojí?
+Jde o zdarma dostupný open-source projekt pod MIT licencí bez placeného modelu či komerčního API.
+Pro koho je Handwired určený a jak začít?
+Je určen vývojářům a výzkumníkům zajímajícím se o propojení běžného programování s diferencovatelnými výpočty – stačí stáhnout repozitář chenglou/handwired z GitHubu a spustit ho lokálně pomocí bun.
+Kategorie

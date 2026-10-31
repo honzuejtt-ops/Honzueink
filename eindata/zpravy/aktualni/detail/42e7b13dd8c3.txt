@@ -1,0 +1,17 @@
+Skillstore
+Skillstore je prohledávatelná knihovna expertních postupů (skills) pro AI agenty Claude Code a Codex, napojitelná přes MCP bez nutnosti účtu.
+O nástroji
+Skillstore poskytuje AI kódovacím agentům (Claude Code, Codex) konkrétní, spustitelné postupy místo obecných rad – funkce find_skill najde relevantní metodu podle zadaného úkolu, get_skill ji stáhne a rate_skill zaznamená, zda fungovala. Knihovna obsahuje přibližně 600 komunitních skills vedle kurátorovaných postupů, dodávaných ze zdrojových repozitářů pod vlastními licencemi. Veřejnou knihovnu lze vyzkoušet bez registrace u Skillstore, stačí existující účet u Claude Code nebo Codex. Mezi veřejnými skills jsou například „SwiftUI Pro“ od Paula Hudsona pro stavbu obrazovek v SwiftUI, „React Native skills“ od Vercelu pro plynulé scrollování, „Backend patterns“ od Affaana Mustafy pro pomalé databázové dotazy nebo „Security and hardening“ od Addyho Osmaniho pro bezpečnostní kontroly. Na demonstračním příkladu s fiktivním invoice API tento poslední skill odhalil chybějící kontrolu vlastnictví zdroje, díky níž mohl přihlášený uživatel číst fakturu jiné organizace; po opravě prošly všechny čtyři testované kontroly. Týmy mohou do knihovny přidávat vlastní interní postupy a sdílet je s vybranými kolegy, pro soukromou knihovnu je pak účet u Skillstore nutný. Vzdálený přístup funguje přes Streamable HTTP na adrese skillstore-jk.fly.dev/mcp/library bez nutnosti klíče. Stránka je v angličtině a žádné ceny ani placené plány nejsou v dostupném textu uvedeny.
+Klíčové vlastnosti
+- Vyhledání postupu podle úkolu funkcí find_skill
+- Stažení konkrétního postupu funkcí get_skill
+- Hodnocení úspěšnosti postupu funkcí rate_skill
+- Přibližně 600 komunitních skills od autorů jako Paul Hudson či Addy Osmani
+Časté dotazy
+Co přesně Skillstore umí?
+Je to prohledávatelná knihovna expertních postupů (skills) pro AI agenty Claude Code a Codex – agent najde relevantní metodu podle úkolu (find_skill), stáhne ji (get_skill) a zaznamená, zda fungovala (rate_skill).
+Kolik Skillstore stojí?
+V dostupných podkladech nejsou uvedeny žádné ceny ani placené plány.
+Jak mohu začít používat veřejnou knihovnu?
+Veřejnou knihovnu lze vyzkoušet bez registrace u Skillstore, stačí mít existující účet u Claude Code nebo Codex a připojit se přes MCP na adrese skillstore-jk.fly.dev/mcp/library.
+Kategorie

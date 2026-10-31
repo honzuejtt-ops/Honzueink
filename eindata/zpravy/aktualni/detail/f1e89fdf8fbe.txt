@@ -1,0 +1,17 @@
+Pidgeon
+Pidgeon poskytuje AI agentům vlastní e-mailové schránky přes API, SDK či MCP – hodí se vývojářům, kteří chtějí agenty napojit na reálnou poštovní komunikaci.
+O nástroji
+Pidgeon je infrastruktura pro e-mailové schránky určené AI agentům, ne lidem. Každý agent dostane vlastní adresu (na doméně Pidgeon nebo vlastní doméně), kterou lze ovládat přes REST API, SDK pro TypeScript a Python, CLI nebo MCP server, případně klasicky přes IMAP. Podporuje vlákna zpráv (threads), odesílání a příjem pošty v podobě, v jaké ji čekají lidé, i přílohy a dokumenty posílané s danou zprávou. Nové události ve schránce, jako je doručení či odpověď, spouští webhooky, takže navazující workflow agenta se může spustit okamžitě. Služba je hostovaná v EU a provozovatel (PCN Labs OÜ) deklaruje, že obsah pošty nikdy nepoužívá k trénování modelů. Součástí je i tzv. Firewall, který vyhodnocuje registrace a kódy přicházející na agentovu adresu, takže agent se může sám přihlašovat do služeb třetích stran bez použití skutečných uživatelských přihlašovacích údajů. Pro zakladatele firem nabízí Pidgeon tři schránky na vlastní doméně zdarma. Nástroj je určen čistě pro vývojářské a agentní použití – rozhraní i dokumentace jsou v angličtině a cílí na technické uživatele integrující poštu do vlastních AI workflow, nikoli na běžné koncové uživatele hledající klasického e-mailového klienta. Konkrétní cenové tarify nad rámec uvedené bezplatné nabídky tří schránek nejsou v dostupných podkladech uvedeny.
+Klíčové vlastnosti
+- Vlastní e-mailová adresa pro každého AI agenta
+- Ovládání přes REST API, SDK (TypeScript, Python), CLI nebo MCP
+- Podpora vláken zpráv a příloh v mailech
+- Webhooky na nové události ve schránce (doručení, odpověď)
+Časté dotazy
+K čemu Pidgeon slouží?
+Pidgeon dává AI agentům vlastní e-mailové schránky, které lze ovládat přes API, SDK, CLI nebo MCP – agent tak může posílat a přijímat poštu, vést vlákna konverzací i pracovat s přílohami jako člověk.
+Kolik Pidgeon stojí?
+Zakladatelé firem mají zdarma tři schránky na vlastní doméně, konkrétní placené tarify nad rámec této nabídky nejsou zveřejněné.
+Pro koho je Pidgeon určený a jak začít?
+Nástroj cílí na vývojáře budující AI agenty – stačí jedno API volání k vytvoření schránky, začít lze přes quickstart s TypeScript/Python SDK, CLI nebo REST API.
+Kategorie

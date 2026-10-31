@@ -1,0 +1,17 @@
+FilmCraft
+Webová platforma kombinující open-source video editor s AI nástroji pro generování a úpravu videí i obrázků z textu nebo snímků.
+O nástroji
+FilmCraft je webová pracovní plocha postavená na open-source editačním enginu FilmCraft, napsaném v Rustu, který napodobuje pracovní postup Adobe Premiere Pro bez použití kódu Adobe (kód je dostupný na GitHubu pod účtem VulcanEon). Samotný editor nabízí korekční nástroje, křivky a barevné nástroje pro úpravu nálady záběru. Vedle editoru nástroj zpřístupňuje sadu AI funkcí pro práci s videem – mj. AI Video Generator, Text to Video, Image to Video, Video to Video, AI Video Extender, Upscaler, Face Swap, Lip Sync nebo Talking Photo. K dispozici jsou i nástroje pro práci s obrázky, jako Text to Image, Image to Image, AI Object Remover, AI Background Remover, AI Headshot Generator nebo AI Product Image Generator. Platforma umožňuje vytvoření účtu, díky kterému zůstávají dokončené výsledky uloženy a propojeny s uživatelským profilem. Informace o cenových tarifech nejsou z dostupných podkladů patrné.
+Klíčové vlastnosti
+- Open-source editační engine napsaný v Rustu
+- Korekční nástroje, křivky a barevné úpravy záběru
+- AI generování videa z textu i obrázku
+- Nástroje Video to Video, Extender a Upscaler
+Časté dotazy
+Co FilmCraft umí?
+Kombinuje open-source video editor s AI nástroji pro generování a úpravu videí i obrázků – например z textu na video, z obrázku na video, face swap, lip sync nebo upscaling. Editor sám nabízí korekční nástroje, křivky a barevné úpravy záběru.
+Kolik FilmCraft stojí?
+Z dostupných podkladů nejsou informace o cenových tarifech patrné.
+Jak s FilmCraft začít?
+Stačí si na webu vytvořit účet, díky kterému zůstanou dokončené výsledky uloženy a propojeny s uživatelským profilem.
+Kategorie

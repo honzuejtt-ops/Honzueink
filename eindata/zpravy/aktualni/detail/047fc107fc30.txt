@@ -1,0 +1,5 @@
+Díky moderním technologiím a neutuchající podpoře fanoušků si v prohlížeči můžete zahrát legendární Need for Speed Underground 2 z roku 2004. Jediné co potřebujete, je prohlížeč s podporou WebGPU.
+Na silnice Bayview i s kamarády
+K hraní není potřeba registrace nebo stahování instalačních souborů do počítače. Fanouškovský port stačí spustit jednoduše na odkaze www.nfsu2.xyz. Hratelná je jak příběhová kampaň, tak i multiplayerový režim. Zahrát si můžete dokonce i s kamarády zvolením názvu vaší party.
+Hra obsahuje lokální ukládání herního pokroku do prohlížeče. Kdo chce mít jistotu, že o svůj save nepřijde, může využít cloudové ukládání nebo si svoji zálohu rovnou stáhnout do počítače.
+S ostatními hráči můžete komunikovat buď skrze textový chat, nebo jedním z osmi klaksonů. Pro hraní stačí mít pouze prohlížeč s podporou WebGPU, jako je například Google Chrome, Apple Safari, Firefox nebo Microsoft Edge. Projekt vznikl bez podpory EA.

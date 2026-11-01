@@ -1,0 +1,32 @@
+Přeplatek u půjčky 10 000 Kč na půl roku má být nejvýš 4 400 Kč
+Podle novely, kterou schválil Senát, má od února 2027 dostat cena půjček strop. Běžná půjčka smí stát nejvýš 48 % ročně, u malých do 20 000 Kč se hlídá celkový přeplatek. Chybí podpis prezidenta.
+Strop má dvě podoby. U většiny půjček hlídá zákon RPSN, tedy roční cenu půjčky i se všemi poplatky. Dnes by smělo jít nejvýš o 48 %.
+Malé krátké půjčky mají jiné pravidlo. Procenta se u nich nehlídají, zákon hlídá celkovou částku, kterou člověk přeplatí. Počítá se do ní i pevný paušál 2 000 Kč. Kdo si třeba půjčí 10 000 Kč na půl roku, při dnešní sazbě vrátí nejvýš 14 400 Kč. Kvůli paušálu je to víc, než by odpovídalo 48 % ročně.
+Takovou ochranu přináší novela zákona o spotřebitelském úvěru. Sněmovna ji schválila v září a Senát 21. října. Účinná má být od 1. února 2027.
+Jak se strop počítá
+Strop se netýká samotného úroku. Hlídá RPSN, tedy číslo, které ukáže, kolik půjčka stojí za rok i se vším, co se k úroku přidá.
+Výpočet stojí na repo sazbě. To je základní sazba, kterou Česká národní banka ovlivňuje cenu peněz v zemi. RPSN nesmí při sjednání přesáhnout čtyřnásobek součtu repo sazby a osmi procentních bodů. Zkráceně: (repo sazba + 8) × 4.
+Do výpočtu se bere sazba z prvního dne pololetí, v němž se smlouva sjednává, nejméně však čtyři procenta. Dnes je repo sazba 3,75 %. Počítá se tedy se spodní hranicí a strop vychází na 48 %. Zvedne-li ČNB sazbu nad čtyři procenta, strop vzroste.
+Malé půjčky: počítá se celá cena
+Za malou půjčku zákon považuje úvěr do 20 000 Kč, který se splácí nejvýš 12 měsíců. Procenta se u ní nehlídají. Zastropují se rovnou celkové náklady, tedy to, o kolik člověk může přeplatit.
+Strop se skládá z paušálu 2 000 Kč a z částky podle výše a délky půjčky. U zmíněných 10 000 Kč na půl roku to dělá dohromady nejvýš 4 400 Kč nákladů při dnešní sazbě. Výsledek je pro dlužníka srozumitelný. Ví předem, jaká je nejvyšší cena, kterou může zaplatit.
+Pozor na opakované půjčky. Kdo si od téhož poskytovatele půjčí během 12 měsíců podruhé, má strop bez paušálu 2 000 Kč. Neplatí to, když se druhá půjčka sjedná aspoň měsíc po splacení předchozí.
+Co když věřitel strop překročí
+Dosud se o přiměřené ceně rozhodovalo hlavně zpětně, často až u soudu. Soudy přitom za nepřiměřené považovaly úroky zhruba od 40 do 60 %. Nově má být hranice jasná už ve chvíli, kdy se smlouva podepisuje.
+💡 Zajímavost: Při stropu RPSN 48 % může být samotná úroková sazba bez dalších poplatků nejvýš asi 40 %, spočítal analytik organizace Člověk v tísni.
+Kdo strop poruší, přijde o sjednanou cenu úvěru. Nárok bude mít jen na úrok odvozený od repo sazby platné v den podpisu smlouvy.
+Co z toho plyne při podpisu: v nabídce i ve smlouvě je dobré najít údaj RPSN. U půjčky, která není malá, by neměl přesáhnout 48 %. U malé krátké půjčky se vyplatí sečíst, kolik se celkem vrací, a porovnat to se stropem nákladů.
+Zůstává i další pojistka. Úvěr nesmí dostat člověk, který ho objektivně nezvládne splácet. Pokud ho přesto dostane, vrátí podle Ministerstva financí jen vypůjčenou částku, bez úroků a poplatků.
+Reklama a dluhy: co se ještě mění
+Reklama na půjčky má nést jasné varování „Pozor! Půjčit si peníze stojí peníze“ nebo sdělení se stejným významem. Nesmí také naznačovat, že úvěr člověku zlepší finanční situaci.
+Novela myslí i na chvíle, kdy splácení začne drhnout. Věřitel pak má ve vhodných situacích nabídnout přiměřené řešení, třeba odklad splátek, nový splátkový kalendář nebo delší dobu splatnosti. Klient má zároveň dostat informaci o dostupném dluhovém poradenství.
+Úleva čeká i lidi, kteří prodělali rakovinu. U pojištění k půjčce, která není na bydlení, k nemoci pojišťovna nesmí přihlížet, pokud od ukončení léčby uplynulo aspoň sedm let. Říká se tomu právo být zapomenut.
+Co zůstává mimo a kdy to začne
+Strop RPSN se netýká úvěrů na bydlení. Mimo zůstávají i půjčky sjednané na IČO, které ve skutečnosti neslouží k podnikání. Zákon o spotřebitelském úvěru se na ně nevztahuje.
+Ne všichni novelu vítají bez výhrad. Nebankovní poskytovatelé varují, že část domácností po změně legální malou půjčku nezíská a může hledat peníze mimo regulovaný trh.
+Zákon nyní čeká na podpis prezidenta. Pokud ho podepíše, mají nová pravidla platit od 1. února 2027. Kdo pak bude podepisovat smlouvu o půjčce, může si strop zkontrolovat sám. U běžné půjčky podle RPSN, u malé podle celkové částky, kterou vrací.
+Ověřeno z:
+- Poslanecká sněmovna — text novely zákona o spotřebitelském úvěru, sněmovní tisk 145 (schváleno 11. 9. 2026, Senát 21. 10. 2026)
+- Ministerstvo financí — tisková zpráva ke schválení novely Sněmovnou (11. 9. 2026)
+- Česká národní banka — rozhodnutí bankovní rady o repo sazbě (18. 6. 2026)
+- Banky.cz — Nová pravidla pro půjčky: strop RPSN, bonita i reklama (23. 10. 2026)

@@ -1,0 +1,17 @@
+TaleScene
+AI generátor videa, který z krátkého příběhu vytvoří storyboard a ozvučený vícescénový film se stejnou postavou ve všech záběrech.
+O nástroji
+TaleScene přemění napsaný text (stačí 2–3 věty v libovolném jazyce) na scénář, storyboard a následně ozvučený film s více scénami, přičemž zachovává konzistentní vzhled postav napříč záběry. Uživatel zadá krátký příběh nebo si vybere z ukázkových příkladů a nástroj vygeneruje animatik se záběry, které lze jednotlivě přehrát. Scénář a storyboard jsou podle webu zdarma a po registraci uživatel získá 20 kreditů bez nutnosti zadávat platební kartu. Pro vyrenderování finálního ozvučeného videa jsou potřeba placené kredity, balíčky začínají na 19,90 USD. Z dostupných informací není zřejmé, zda nástroj nabízí API ani zda je k dispozici jako open source. Rozhraní je v angličtině, česká lokalizace není uvedena.
+Klíčové vlastnosti
+- Text na scénář, storyboard a ozvučený film
+- Konzistentní vzhled postavy ve všech záběrech
+- Vícescénový animatik s jednotlivě přehratelnými záběry
+- Vstup v libovolném jazyce, stačí 2–3 věty
+Časté dotazy
+Co TaleScene umí?
+Z krátkého textu (2–3 věty) vytvoří scénář, storyboard a následně ozvučený vícescénový film se stejnou postavou ve všech záběrech.
+Kolik TaleScene stojí?
+Scénář a storyboard jsou zdarma, po registraci bez karty uživatel získá 20 kreditů. Finální ozvučené video vyžaduje placené kredity, balíčky začínají na 19,90 USD.
+Jak začít a pro koho je nástroj určený?
+Stačí napsat krátký příběh nebo vybrat z ukázkových příkladů a nástroj vygeneruje storyboard zdarma; hodí se pro tvůrce, kteří chtějí rychle vizualizovat příběh jako video.
+Kategorie

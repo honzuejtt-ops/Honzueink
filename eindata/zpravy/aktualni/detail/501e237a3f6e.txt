@@ -1,0 +1,17 @@
+Eidora
+Eidora je AI studio pro generování a úpravu obrázků a tvorbu krátkých videí z 37 modelů (GPT Image 2.5, Nano Banana Pro, Kling 3 aj.).
+O nástroji
+Eidora umožňuje generovat obrázky, upravovat fotky a vytvářet krátká videa ze slov nebo obrázků. K dispozici je 37 modelů – například GPT Image 2.5, Nano Banana Pro, Seedream 5, FLUX Kontext, Ideogram 3, Kling 3, Seedance 2.5 nebo MiniMax H3 – mezi kterými lze přepínat jedním klepnutím, přičemž se zachová zadaný prompt i obrázky. Nástroje pokrývají portréty, produktové fotky i vizuální efekty, nabízeny jsou také tzv. virální trendy jako 7 Pose AI nebo AI Christmas Photo Trend. Fungování je založeno na kreditech: počet potřebných kreditů se zobrazí ještě před spuštěním podle zvoleného modelu, počtu obrázků a délky videa, bez pozdějšího dodatečného účtování. Při selhání generování se kredity vrací automaticky, obvykle ihned, nejpozději do 24 hodin. Registrace je zdarma a přináší 6 kreditů, noví uživatelé si mohou jednorázově dokoupit 40 kreditů za 1,99 USD, kreditové balíčky pak začínají na 4,99 USD za 100 kreditů. Výsledky z neplatícího účtu obsahují watermark eidora.io, po zakoupení plánu nebo kreditů jsou bez watermarku i zpětně. Nahraná fotka a výsledky zůstávají v historii soukromé, Eidora obsah neprodává ani jej nevyužívá k trénování modelů.
+Klíčové vlastnosti
+- 37 AI modelů přepínatelných jedním klepnutím
+- Generování obrázků i krátkých videí z textu nebo fotky
+- Úprava fotek a vizuální efekty včetně produktových fotek
+- Náhled počtu potřebných kreditů před spuštěním
+Časté dotazy
+Co přesně Eidora umí?
+Eidora umožňuje generovat a upravovat obrázky a vytvářet krátká videa ze slov nebo fotek pomocí 37 modelů, například GPT Image 2.5, Nano Banana Pro nebo Kling 3. Pokrývá portréty, produktové fotky i virální trendy jako AI Christmas Photo Trend.
+Kolik Eidora stojí?
+Registrace je zdarma a přináší 6 kreditů, noví uživatelé mohou jednorázově dokoupit 40 kreditů za 1,99 USD. Kreditové balíčky dále začínají na 4,99 USD za 100 kreditů.
+Pro koho je Eidora vhodná a jak začít?
+Hodí se pro každého, kdo chce rychle generovat nebo upravovat obrázky a videa bez znalosti konkrétního AI modelu – stačí se zdarma zaregistrovat a získat 6 kreditů na vyzkoušení.
+Kategorie

@@ -1,0 +1,17 @@
+Comicory
+AI generátor komiksů, který promění napsaný příběh v komiksové panely, mangu nebo webtoon se stálými postavami.
+O nástroji
+Comicory je online nástroj pro tvorbu komiksů pomocí umělé inteligence. Uživatel napíše příběh, vybere si vizuální styl (například Comic Book, Manga, Anime, Webtoon, Cyberpunk nebo Pixel Art) a nástroj z textu vygeneruje scénář, obsazení postav a stránky rozdělené do panelů. Důraz je kladen na konzistenci vzhledu postav a prostředí napříč jednotlivými panely komiksu. Hotový komiks lze exportovat ve formátech PDF, PNG nebo ZIP, panely jsou editovatelné. Vyzkoušet nástroj lze zdarma díky 10 úvodním kreditům bez nutnosti zadávat platební kartu, tento balíček zahrnuje scénář a čtyřpanelový komiks s jednou postavou a jednou lokací. Pro další tvorbu jsou dostupné placené balíčky kreditů, ceny začínají na 4,99 dolaru.
+Klíčové vlastnosti
+- Generování komiksu z napsaného příběhu
+- Výběr stylu: Comic Book, Manga, Anime, Webtoon, Cyberpunk, Pixel Art aj.
+- Konzistentní vzhled postav a prostředí napříč panely
+- Automatické vytvoření scénáře a obsazení postav
+Časté dotazy
+Co přesně Comicory umí vytvořit?
+Z napsaného příběhu vygeneruje scénář, obsazení postav a stránky komiksu rozdělené do panelů ve zvoleném vizuálním stylu, například manga, webtoon nebo cyberpunk. Výsledný komiks lze stáhnout jako PDF, PNG nebo ZIP a jednotlivé panely lze dál upravovat.
+Kolik Comicory stojí?
+Vyzkoušet nástroj lze zdarma díky 10 úvodním kreditům bez nutnosti zadat platební kartu. Pro další tvorbu jsou k dispozici placené balíčky kreditů s cenou od 4,99 dolaru.
+Pro koho je Comicory vhodné a jak začít?
+Hodí se pro každého, kdo chce rychle převést vlastní příběh do podoby komiksu, mangy nebo webtoonu bez kreslení. Stačí napsat příběh, vybrat styl a nástroj automaticky vygenerovat scénář i panely.
+Kategorie

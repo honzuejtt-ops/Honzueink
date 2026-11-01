@@ -1,0 +1,20 @@
+Dva bratři postavili jako studenti aplikaci na přijímačky na vysokou
+Šimon Zavadil se dostal na práva jako pátý z 2 500 uchazečů. Se starším bratrem Štěpánem pak v roce 2022 postavili aplikaci Revio, aby další uchazeči měli všechno na jednom místě, popsali bratři redakci.
+#studenti#vzdělávání#aplikace#škola
+Když se Šimon Zavadil v roce 2022 jako maturant z gymnázia chystal na práva, narazil na problém. Oficiální učebnice základů společenských věd od Scia, které přijímací testy pořádá, podle bratrů odpovídá na méně než polovinu otázek z testu. Ostatní učebnice a doporučená literatura zase člověka zahltí, protože u testů záleží jen na určité části učiva. Přijímačky na práva mají pověstnou obtížnost, a tak Šimon sbíral údaje z minulých let a psal si vlastní materiály.
+Jeho starší bratr Štěpán byl tou dobou ve druhém ročníku vývoje softwaru na vysoké škole a programoval zhruba od patnácti let. Role si rozdělili přirozeně: Šimon psal obsah, Štěpán aplikaci naprogramoval. Pustili se do toho začátkem roku 2022 a chtěli to stihnout do nového školního roku. Na podzim už byla první verze v obchodech s aplikacemi pro iPhone i Android. Dostala jméno Revio.
+Devět měsíců vlastním nákladem
+Vývoj první verze trval asi devět měsíců a bratři si ho platili sami. Nebyla to brigáda ani povinnost a na to, že by se jim práce někdy vrátila, se dívali spíš skepticky. Podle autorů aplikaci postavili celou bez pomoci umělé inteligence. „Pokud chcete projekt dotáhnout do konce, je potřeba na tom pracovat i v těch chvílích, kdy se člověku prostě nechce,“ říkají. Vzdát to nechtěli. „Oba jsme určitě zažili slabší chvíle, ve kterých jsme se dokázali vzájemně podržet,“ dodávají. V roce 2025 aplikaci přeprogramovali úplně od začátku.
+Jak se aplikace změnila: vlevo první verze z roku 2022, vpravo verze přeprogramovaná v roce 2025. Foto: Revio
+Video z chodby
+Zásadní roli podle autorů hraje doporučování: komu aplikace pomohla, řekl o ní kamarádům a mladším spolužákům. Uživatelů bylo podle grafu autorů na začátku roku 2024 zhruba 6 000, v lednu 2026 přibližně 28 000 a letos v říjnu přes 40 000. Kromě budoucích právníků se z ní učí i zájemci o psychologii, žurnalistiku nebo Policejní akademii. Ozvalo se i několik gymnázií, která ji chtěla zařadit do výuky.
+💡 Zajímavost: Na tři ze čtyř právnických fakult se podle autorů přijímá přes takzvané Scio testy. Výsledek se udává v percentilu, který podle Scia říká, kolik procent ostatních uchazečů člověk svým výsledkem předstihl. Každá fakulta ho ještě násobí jinými čísly, proto má aplikace i kalkulačku.
+Celkový počet uživatelů aplikace od podzimu 2022 podle autorů. Foto: Revio
+Jeden ze sledujících bratrům poslal video ze školy, kde se zrovna psaly testy. Na chodbě se hlouček studentů společně učil z jejich aplikace. Jiní posílají své výsledky. Někdo hlásí percentil 98 nebo 99, jiný začíná na dvacítce a ptá se, jak se zlepšit. Nedávno se ozval i jeden z prvních uživatelů. Kdysi se z Revia učil na přijímačky na bakalářský obor a teď se k němu vrátil před přijímačkami na magisterský obor.
+Testová otázka z dědického práva v aplikaci. Foto: Revio
+Aplikace má dnes podle webu 394 výukových textů a přes šest tisíc testových otázek a podle autorů se bez problémů uživí. Mladým lidem s vlastním nápadem bratři radí dvě věci. Nejdřív si ověřit, jestli by projekt sami využili a jestli řeší problém víc lidí. A pak vytrvat, protože „málokterý dobrý projekt se vybuduje za týden“.
+Ověřeno z:
+- Revio — písemné odpovědi autorů aplikace pro redakci (říjen 2026)
+- Revio — údaje o počtu uživatelů, článků a otázek (stav k 31. 10. 2026)
+- Scio — Výsledek a percentil (stav k 31. 10. 2026)
+- Obchodní rejstřík — Stemond s.r.o. (zapsáno 14. 6. 2022)

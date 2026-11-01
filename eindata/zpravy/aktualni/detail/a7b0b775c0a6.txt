@@ -1,0 +1,17 @@
+PawGroove
+Webová aplikace, která z jedné fotky psa vytvoří krátké AI video – psa „rozhýbe“ podle vybrané šablony tance nebo sváteční scény.
+O nástroji
+PawGroove umožňuje nahrát jednu fotografii psa (JPG, PNG nebo WebP do 10 MB) a vybrat z 11 šablon, například taneční trio psů, kung-fu psa, retro vánoční film nebo psa s tanečníky v pozadí. Z fotky vznikne vertikální video, které u většiny šablon trvá přibližně 10 sekund, u šablony Hi pouze asi 5 sekund. Videa jsou generována bez zvuku a u podporovaných šablon je možné po vytvoření volitelně přidat hudbu PawGroove, ať už hned nebo později v sekci „My videos“. Nový účet získá 10 uvítacích kreditů, což odpovídá jednomu klipu zdarma (10 kreditů = 1 klip). Pro další videa je k dispozici jednorázový nákup kreditových balíčků – například balíček za 4,99 USD za 5 klipů nebo 9,99 USD za 12 klipů, bez nutnosti předplatného. Pokud se generování videa nezdaří, kredity se automaticky vrátí na účet. Nástroj je nezávislý a neoficiální, neposkytuje práva k hudbě a upozorňuje, že AI může zkreslit tlapy nebo ocas psa.
+Klíčové vlastnosti
+- 11 šablon – taneční trio, kung-fu, retro vánoční scéna
+- Vertikální video z jedné fotky psa, cca 10 sekund
+- Volitelné přidání hudby po vygenerování videa
+- Nahrání fotky JPG, PNG nebo WebP do 10 MB
+Časté dotazy
+Co PawGroove přesně umí?
+Z jedné nahrané fotky psa vytvoří krátké AI video, ve kterém se pes „rozhýbe“ podle zvolené šablony – například taneční trio, kung-fu nebo retro vánoční scéna. Video je vertikální, obvykle trvá kolem 10 sekund a lze k němu následně přidat hudbu.
+Kolik PawGroove stojí?
+Nový účet dostane 10 uvítacích kreditů na jedno video zdarma. Další klipy se kupují jednorázově v balíčcích, například 5 klipů za 4,99 USD nebo 12 klipů za 9,99 USD, bez předplatného.
+Jak začít a pro koho je nástroj určený?
+Stačí nahrát fotku svého psa (JPG, PNG nebo WebP do 10 MB), vybrat jednu z 11 šablon a video vygenerovat přímo v prohlížeči bez instalace aplikace. Je určen majitelům psů, kteří chtějí rychle vytvořit zábavné video ke sdílení.
+Kategorie

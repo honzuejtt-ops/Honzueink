@@ -1,0 +1,17 @@
+agent-qa
+AI agent pro testování webových, Android a iOS aplikací v přirozeném jazyce, určený pro vývojáře a kódující agenty.
+O nástroji
+agent-qa je AI testovací agent od vostride, který umožňuje testovat webové, Android i iOS aplikace zadáváním pokynů v běžné angličtině. Nástroj si buduje trvalou paměť (memidex) z ověřených průběhů testů, opakovaně využívá osvědčené postupy a přizpůsobuje se změnám v testované aplikaci – při selhání dílčí akce dokáže znovu prozkoumat rozhraní a zkusit jinou cestu v rámci stejného běhu. Projekt je dostupný na GitHubu, kde má 904 hvězdiček, a podle uváděných výsledků se umístil na prvním místě v benchmarku AndroidWorld. Nástroj je zaměřen na vývojářské týmy a kódující agenty, kteří k němu přistupují přes CLI, MCP a Skills, zatímco lidé mohou výsledky a důkazy kontrolovat v přehledovém dashboardu se sekcemi Runs, Tests, Hooks, Suites, Memory, Insights a Config. Instalace probíhá příkazem „npm install -D agent-qa“ a inicializace „npx agent-qa init“, MCP server lze spustit lokálně přes stdio. Samotné CLI je dostupné zdarma, podle dohledaných faktů však nejde o volně dostupnou komerční nabídku bez placených prvků – k provozu je navíc potřeba počítat s náklady na použitý AI model a infrastrukturu, bezplatná plnohodnotná varianta v podkladech potvrzena není. Harness nástroje je open source, zatímco testy, konfigurace, hooks, paměť a logika sad zůstávají verzovaným kódem v rámci projektu. Licencováno je pod FSL-1.1-ALv2 s plánovaným přechodem na Apache 2.0 v budoucnu, provoz vyžaduje Node.js 24+ a TypeScript. Rozhraní nástroje i dokumentace jsou v angličtině.
+Klíčové vlastnosti
+- Testování webů i Android/iOS aplikací přirozeným jazykem
+- Trvalá paměť (memidex) z ověřených průběhů testů
+- Automatické hledání alternativní cesty při selhání kroku
+- Přístup přes CLI, MCP server i Skills pro kódující agenty
+Časté dotazy
+Co agent-qa umí?
+Je to AI testovací agent, který na základě pokynů v běžné angličtině testuje webové, Android i iOS aplikace, buduje si paměť z ověřených testů a při selhání kroku zkouší jinou cestu v rámci stejného běhu.
+Kolik agent-qa stojí?
+Samotné CLI lze nainstalovat a používat zdarma příkazem „npm install -D agent-qa“, ale provoz vyžaduje vlastní AI model a infrastrukturu, takže nejde o kompletně bezplatné řešení bez nákladů.
+Pro koho je agent-qa určený a jak začít?
+Je určen vývojářským týmům a kódujícím agentům – stačí spustit „npx agent-qa init“, propojit MCP server lokálně přes stdio a výsledky testů pak sledovat v přehledovém dashboardu.
+Kategorie

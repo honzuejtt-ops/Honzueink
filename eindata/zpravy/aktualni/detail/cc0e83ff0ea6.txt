@@ -1,0 +1,7 @@
+Díky pokročilým AI agentům dnes lidé pomocí vibecodingu tvoří vlastní hry, alternativy k populárním programům a nyní už i vlastní operační systémy. Německý vývojář Max Robert Mühlbronner vytvořil od základu vlastní operační systém NULLos, který míří na počítače s architekturou x86_64 a firmwarem UEFI.
+Vlastní systém s uzavřeným zdrojovým kódem
+NULLos je napsaný v jazyce C a zahrnuje vlastní zavaděč, jádro i překladač CC, který se postupně stává samostatně použitelným. Aktuální verze 0.3.1 startuje do jednoduchého příkazového řádku, přičemž vývojář do systému přenesl přibližně 300 příkazů a na dalších zhruba 100 ještě pracuje. K práci zatím používá knihovnu libc, sám ale chystá vlastní náhradu.
+Zatímco jiné „AI coded“ aplikace bývají většinou open-source, NULLos je pravým opakem. Autor záměrně nezveřejňuje zdrojové kódy z důvodu obav o bezpečnost.
+„Zdrojový kód zůstává uzavřený a systém vyvíjí jediná osoba. Vnímám to jako bezpečnostní rozhodnutí: jedna osoba, do které se nelze infiltrovat, místo týmu, od kterého může unikat kód nebo kde lze najít a zneužít zranitelnosti dříve, než budou opraveny.“ říká podle webu Phoronix autor.
+Pokud si chcete systém vyzkoušet, více informací a instalační soubory najdete na oficiálním webu projektu. Mimo NULLos stojí Mühlbronner za dalšími projekty, jako je Störlab, Flimmer nebo TV-Zapper.
+zdroje: NULLos.de, Phoronix.com, Root.cz, muehlbronner.de

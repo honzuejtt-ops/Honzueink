@@ -1,0 +1,25 @@
+Falešnou SMS o dluhu na sociálním poznáte podle adresy odkazu
+SMS o „nedoplatku na sociálním pojištění“ s odkazem na cizí web jsou podvod, varuje Česká správa sociálního zabezpečení. Poznáte je podle adresy odkazu. Na odkaz neklikejte. Podezřelou zprávu pak podle policie můžete nahlásit přeposláním na číslo 7726.
+„Při kontrole evidence sociálního pojištění byl u Vás zjištěn evidovaný nedoplatek.“ Pod touhle větou je odkaz na adresu eportal-cssz-cz.casa. Kdo takovou zprávu dostane, nemá přes ten odkaz nic platit ani vyplňovat. Neposlal ji úřad, ale lidé, kteří se za něj vydávají. Úřad před takovými zprávami varoval už dvakrát, 16. září a 8. října.
+Pět vteřin stačí: podívejte se na adresu odkazu, ale neklikejte na něj. Jestli opravdu něco dlužíte, ověříte jen na oficiálních stránkách úřadu. Níž najdete, jak zprávu poznat, kam ji nahlásit a co dělat, kdybyste už zadali své údaje.
+Jak SMS vypadá
+Úřad zatím popsal dvě podoby zprávy. První je ta s nedoplatkem z úvodu. Druhá tvrdí, že vaše příspěvky za čtvrtletí „mají nepřesný základ nebo nejsou plně vyúčtovány“. Aby to znělo naléhavě, přidává hrozbu poplatků za pozdní platbu. Obě zprávy se tváří úředně a obě vás posílají na odkaz.
+Odkaz ve zprávě ale nevede na stránky úřadu. Cílem může být získat vaše osobní, přihlašovací nebo platební údaje. Podobné pokusy se pravidelně opakují, a tak se vyplatí znát je dopředu.
+Na co si dát pozor
+Adresa není úřední. Úřad používá cssz.gov.cz a pro svůj ePortál adresu eportal.cssz.cz. Falešná adresa eportal-cssz-cz.casa se té pravé jen podobá. Místo teček má pomlčky a končí úplně jinak. Pro srovnání stačí je dát pod sebe. Pravá: eportal.cssz.cz. Falešná: eportal-cssz-cz.casa. Každý odkaz bez oficiální adresy úřadu je podezřelý.
+Odkaz je zkrácený. Když adresa začíná třeba bit.ly, jde o takzvanou zkracovací službu. Ta z dlouhé adresy udělá krátkou. Úřad i takové odkazy označuje za podezřelé.
+Chce vaše údaje. Kdybyste na stránku přece jen přišli, nevyplňujte tam žádné osobní, přihlašovací ani platební údaje. Právě o ně může podvodníkům jít.
+💡 Zajímavost: Web panprokoukl.cz myslí i na starší generaci. Má pro ni vlastní průvodkyni, babičku Prokouklovou.
+Co udělat, když přijde
+Na zprávu neodpovídejte a na odkaz neklikejte. Tak to radí přímo úřad. Kdo si chce ověřit, jestli opravdu něco dluží, ať jde jen na oficiální adresy cssz.gov.cz nebo eportal.cssz.cz. Odkaz ze zprávy k tomu nikdy nepoužívejte.
+Podobné podvodné SMS radí policie nahlásit operátorovi přeposláním na jednotnou linku 7726.
+Když si nejste jistí, jestli je zpráva pravá, pomůže web panprokoukl.cz, který doporučuje policie. Doručenou SMS nebo e-mail na něm můžete nechat posoudit. Celé je to anonymní. Nahrajte tam jen obrázek ve formátu JPG nebo PNG, na kterém není nic citlivého.
+Policie také radí varovat své okolí. Pošlete tenhle návod rodičům, prarodičům nebo sousedům. Hodí se každému, kdo má mobil, bez ohledu na věk. Stačí si zapamatovat dvě úřední adresy a číslo 7726.
+A když jste už údaje zadali
+I tehdy se dá jednat. Pokud jste na falešné stránce zadali své údaje, ihned kontaktujte svou banku a postupujte podle jejích pokynů. Při podezření na podvod úřad radí obrátit se také na Policii České republiky.
+Ověřeno z:
+- Česká správa sociálního zabezpečení — Upozornění na podvodné SMS zprávy vydávající se za ČSSZ (8. 10. 2026)
+- Česká správa sociálního zabezpečení — Upozornění na podvodné SMS zprávy (16. 9. 2026)
+- Policie ČR — Policie ČR varuje před rostoucí vlnou kybernetických podvodů (6. 9. 2025)
+- ČTK / Echo24 — Policie varuje před novou vlnou podvodných SMS (24. 4. 2026)
+- panprokoukl.cz — Pan Prokoukl (web, který doporučuje Policie ČR)

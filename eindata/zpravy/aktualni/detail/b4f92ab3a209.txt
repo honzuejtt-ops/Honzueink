@@ -1,0 +1,17 @@
+reAPI
+Jednotné API rozhraní pro přístup k předním AI modelům pro obrázky, video, chat i kód s automatickým failoverem a uptime 99,96 %.
+O nástroji
+reAPI je agregátor AI modelů, který nabízí jediný endpoint pro přístup k řadě špičkových modelů pro generování obrázků, videa, textu i kódu. Mezi dostupné modely patří například GPT Image 2.5, Seedance 2.5, GLM-5.2, Kimi K3, Seedream 5.0 Pro nebo Nano Banana Pro, přičemž ceny se pohybují od 0,005 USD za obrázek až po 3 USD za milion tokenů v případě modelu Kimi K3. Služba průběžně monitoruje zdraví jednotlivých poskytovatelů, jejich latenci a zatížení, a každý požadavek automaticky směruje na variantu, která nejpravděpodobněji odpoví nejrychleji a bez chyby. Pokud zvolený vendor selže uprostřed zpracování, další volání se automaticky přesměruje jinam, takže aplikace výpadek nezaznamená. Uptime služby je udáván na 99,96 %. Podle poskytovatele nejsou těla požadavků ani výstupy modelů nikde ukládána – uchovávají se pouze metadata pro účely fakturace a auditu, konkrétně název modelu, počet tokenů, latence, stavový kód a identifikátor klíče. Nástroj je určen primárně vývojářům integrujícím AI funkce do vlastních aplikací prostřednictvím API, český překlad rozhraní není uveden.
+Klíčové vlastnosti
+- Jeden endpoint pro obrázky, video, text i kód
+- Automatický failover při výpadku vendora
+- Průběžné monitorování latence a zátěže poskytovatelů
+- Uptime 99,96 %
+Časté dotazy
+Co přesně reAPI dělá s každým požadavkem?
+reAPI podle názvu modelu v požadavku vybere poskytovatele s nejlepší aktuální dostupností, latencí a zátěží a na něj volání nasměruje. Pokud zvolený vendor selže uprostřed zpracování, další volání se automaticky přesměruje jinam, takže aplikace výpadek nezaznamená.
+Kolik reAPI stojí?
+Ceny se liší podle modelu – od 0,005 USD za obrázek (GPT Image 2) po 3 USD za milion tokenů u Kimi K3, video od 0,033 USD za sekundu.
+Pro koho je reAPI určené a jak začít?
+Nástroj je určen vývojářům, kteří chtějí integrovat AI funkce (obrázky, video, text, kód) do vlastních aplikací přes jediné API rozhraní místo integrace jednotlivých poskytovatelů zvlášť.
+Kategorie

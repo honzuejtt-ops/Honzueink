@@ -1,0 +1,17 @@
+SoftSync AI
+All-in-one AI CRM pro rostoucí týmy, který automaticky sbírá poznámky ze schůzek, e-maily a navazující kroky na jednom místě.
+O nástroji
+SoftSync je all-in-one CRM s AI asistentem, který má nahradit ruční zadávání dat – e-maily, rezervační stránku, zapisovač poznámek ze schůzek i tabulky spojuje do jediné aplikace. Nástroj funguje jako sada pomocníků (např. vyhledávání kontaktů přes databázi leadů a rozšíření do Chrome, automatické navazování komunikace e-mailem či SMS, správa rezervačních stránek, zápis ze schůzek a odesílání návrhů k podpisu), které se starají o jednotlivé kroky prodejního procesu a reportují do centrálního CRM. Podle webu nástroj již využívají tisíce uživatelů. Cena začíná na 29 dolarech, bezplatná verze dostupná není. Informace o API ani open source variantě nejsou k dispozici.
+Klíčové vlastnosti
+- Automatický zápis poznámek ze schůzek
+- Vyhledávání kontaktů přes databázi leadů a Chrome rozšíření
+- Automatické navazování komunikace e-mailem a SMS
+- Správa rezervačních stránek pro domlouvání schůzek
+Časté dotazy
+Co SoftSync přesně umí?
+Jde o all-in-one CRM s AI asistentem, který automaticky sbírá poznámky ze schůzek, e-maily i navazující kroky na jedno místo a nahrazuje tak ruční zadávání dat mezi nástroji jako e-mail, rezervační stránka, zapisovač poznámek a tabulky.
+Kolik SoftSync stojí?
+Cena začíná na 29 dolarech měsíčně, bezplatná verze není k dispozici.
+Pro koho je SoftSync vhodný a jak začít?
+Nástroj je určený rostoucím týmům, které chtějí spravovat prodejní proces v jedné aplikaci; začít lze přes tlačítko „Get Started“ nebo objednáním ukázky na webu.
+Kategorie

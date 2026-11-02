@@ -1,0 +1,17 @@
+ReelTada
+ReelTada promění jednu nebo dvě fotky ve vertikální video pomocí AI šablon pro TikTok, Reels a Shorts.
+O nástroji
+ReelTada je nástroj pro tvorbu krátkých vertikálních videí z fotografií. Nabízí 118 hotových AI video šablon odpovídajících aktuálním trendům na TikToku, Instagram Reels a YouTube Shorts – stačí nahrát jednu nebo dvě fotky a vybrat šablonu, podle níž se video vygeneruje ve čtyřkrokovém procesu (výběr trendu, nahrání fotky, generování videa, stažení). Platba funguje na principu jednorázových kreditových balíčků bez předplatného. Standardní šablona stojí 10 kreditů, balíčky Starter (10 kreditů), Creator (40 kreditů) a Studio (90 kreditů) vycházejí v přepočtu přibližně na 6,89, 22,89 a 46,89 USD. Kredity se nekupují formou automaticky se obnovujícího předplatného a při neúspěšném generování se vrací zpět na účet. Složitější šablony, jako je 37sekundové video s lip-syncem, spotřebují až 30 kreditů najednou. Rozhraní v češtině není uvedeno, API ani open source přístup nejsou zmíněny.
+Klíčové vlastnosti
+- 118 hotových AI video šablon podle trendů
+- generování z jedné nebo dvou fotek
+- čtyřkrokový proces: trend, foto, generování, stažení
+- šablony pro TikTok, Reels i YouTube Shorts
+Časté dotazy
+Co ReelTada umí?
+Z jedné nebo dvou nahraných fotek vygeneruje vertikální video podle jedné z 118 trendy šablon pro TikTok, Instagram Reels nebo YouTube Shorts.
+Kolik ReelTada stojí?
+Platí se jednorázovými kreditovými balíčky bez předplatného – Starter 10 kreditů za 6,89 USD, Creator 40 kreditů za 22,89 USD a Studio 90 kreditů za 46,89 USD, standardní video stojí 10 kreditů.
+Jak začít s ReelTada?
+Stačí vybrat šablonu podle trendu, nahrát fotku, nechat vygenerovat video a stáhnout hotový výsledek – žádná bezplatná verze není k dispozici, je nutné zakoupit kreditový balíček.
+Kategorie

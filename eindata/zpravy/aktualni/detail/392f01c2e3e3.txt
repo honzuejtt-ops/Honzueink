@@ -1,0 +1,13 @@
+Najít správný předpis a ověřit, zda žadatel splnil všechny podmínky. Právě s touto částí úřednické práce má v Abú Dhabí pomáhat umělá inteligence. Dostává tak úkol, který sahá dál než odpovídání na dotazy občanů.
+Základem je převést vybraná pravidla a předpisy do strojově čitelné podoby. Systémy využívající AI pak mohou úředníkům pomáhat kontrolovat, zda jsou příslušné požadavky splněné, například při vyřizování povolení a osvědčení.
+Iniciativa dostala název Machine-Readable Government (MRG), tedy strojově čitelná veřejná správa. Vláda Abú Dhabí ji spustila společně s OpenAI – americkým technologickým gigantem, který stojí za ChatGPT.
+První zkouška u dovozu potravin
+Nezůstává přitom jen u plánů. Podle oficiálního oznámení už první pilotní projekt běží v ostrém provozu u Úřadu Abú Dhabí pro zemědělství a bezpečnost potravin (ADAFSA). Zaměřuje se na dovoz potravin.
+Důležitou součástí systému má být možnost jeho postup zkontrolovat. U každého posouzení musí být dohledatelné konkrétní pravidlo, z něhož AI vycházela. Úředníci si ponechávají dohled i odpovědnost za konečné rozhodnutí. Technologie jim tedy poskytuje podklady, rozhodování nepřebírá.
+Jak velkou pomoc představuje v praxi, zatím z oznámení zjistit nelze. Abú Dhabí přesto míří vysoko. Chce podle svého vyjádření vybudovat první veřejnou správu na světě, která bude od základu plně postavená na umělé inteligenci. Projekt s dovozem potravin je jedním z kroků tímto směrem.
+O spolupráci hovořil generální ředitel OpenAI Sam Altman s korunním princem Abú Dhabí Chálidem bin Muhammadem bin Zájidem Ál Nahjánem. Ten následně přihlížel podpisu čtyř dohod, které vedle veřejné správy zahrnují také energetiku a investice.
+„Jsme hrdí na to, že můžeme podporovat ambice SAE, založené na společném závazku k bezpečnosti, dostupnosti a odpovědným inovacím,“ uvedl Altman.
+Data do USA necestují
+Výpočty modelů pro úřední systém probíhají přímo ve Spojených arabských emirátech, na grafických procesorech v tamních datových centrech. Data se tedy vůbec nedostanou na americké servery společnosti. Celou iniciativu vede úřad DGE, který v Abú Dhabí zajišťuje podporu fungování veřejné správy.
+Úřady jsou jen jednou částí širší spolupráce. Energetická společnost ADNOC má technologie OpenAI využívat ve svém provozu i při investičním a obchodním rozhodování. Na projektu spolupracuje také Inception42, dceřiná firma skupiny G42.
+Investiční společnost Mubadala zase uzavřela s Inception42 a OpenAI dohodu o využití AI při analýzách, hledání investičních příležitostí a hodnocení rizik. Další dohoda mezi Inception42 a OpenAI počítá s pětiletou spoluprací při zavádění pokročilé umělé inteligence do veřejné správy, podniků a vzdělávání v SAE.

@@ -13,7 +13,7 @@ Rozdělená administrativa
 Server Axios s odkazem na své zdroje uvádí, že členové Trumpovy administrativy jsou v názoru na obnovení útoků rozděleni. Ministři obrany a zahraničí Pete Hegseth a Marco Rubio jsou pro, viceprezident J. D. Vance spolu s Trumpovými mírovými vyjednavači Stevem Witkoffem a Jaredem Kushnerem jsou proti.
 Katar se snaží vyjednat dohodu a je v neustálém kontaktu s Teheránem a Washingtonem. Teherán nicméně odmítá všechny návrhy, podle nichž se musí obohacování uranu vzdát.
 Trump podle Axiosu koncem minulého týdne telefonicky hovořil s izraelským premiérem Benjaminem Netanjahuem. Ten naléhal na úder proti Íránu, prezident ale ještě není rozhodnutý.
-Trh s ropou už na zprávy o možném obnovení útoků reaguje zvýšením cen. Cena severomořské ropy Brent už v pátek překonala 117 dolarů za barel, americká lehká ropa West Texas Intermediate (WTI) se přehoupla přes 104 dolarů za barel.
+Trh s ropou reagoval v pondělí na zprávy o jednáních prostřednictvím Kataru poklesem cen. Americká lehká ropa West Texas Intermediate (WTI) stála necelých 98 dolarů za barel. Severomořská ropa Brent se pohybovala kolem 107 dolarů za barel. Pokud by ale USA a Izrael zaútočily, trend bude opačný.
 Reportáž z Izraele
 Podle finančního analytika Petra Lajska ze společnosti Purple Trading je trh velmi citlivý na každou zprávu z Blízkého východu.
 „Od začátku července přidala ropa Brent téměř 60 procent a ceny se dostaly na nejvyšší úroveň od konce dubna. Tak prudký růst ale nebyl způsoben pouze výpadky dodávek z Blízkého východu,“ řekl Seznam Zprávám.
@@ -22,3 +22,4 @@ Podle finančního analytika Petra Lajska ze společnosti Purple Trading je trh 
 Američané jsou před úterními volbami do Kongresu nespokojeni s vysokými cenami pohonných hmot, které vzrostly po začátku války proti Íránu letos 28. února.
 Právě nespokojenost s válkou a drahou naftou může mít za následek prohru republikánů ve volbách. Opoziční Demokratická strana si naopak dělá naděje na zisk většiny křesel ve Sněmovně reprezentantů i v Senátu.
 To by Trumpovi v následujících dvou letech komplikovalo některá rozhodnutí; v zahraniční politice se ale na postoj Kongresu tolik ohlížet nemusí.
+Aktualizace: Přidali jsme aktuální pondělní ceny ropy.

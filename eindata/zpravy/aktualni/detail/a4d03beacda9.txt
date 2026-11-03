@@ -1,0 +1,17 @@
+Ozil Goal AI
+Z jedné fotky vytvoří AI video, ve kterém jste vy sami skórujete slavný gól Mesuta Özila z roku 2016 proti Ludogorets.
+O nástroji
+Ozil Goal AI je nástroj zaměřený na trend krátkých videí, který vznikl na podzim 2026: uživatelé si nechají AI vygenerovat vlastní verzi legendárního gólu Mesuta Özila za Arsenal proti Ludogorets Razgrad z 1. listopadu 2016. Stačí nahrát jednu fotografii (JPG, PNG nebo WebP, do 30 MB) a AI zachová brankáře, obránce, stadion i kameru, zatímco osoba z fotky hraje roli střelce v oblečení, ve kterém je na snímku vyfocená. Žádný prompt ani aplikace není potřeba, výstupem je vertikální MP4 video se zvukem v poměru 9:16. K dispozici je volba délky 5, 10 nebo 15 sekund (celých 15 s zachycuje celou akci včetně blafáku a zakončení) a několik AI modelů – od nejlevnějšího Seedance 2.0 Mini až po Seedance 2.5 či MiniMax H3, s rozlišením 480p, 720p nebo až 1080p u dražších modelů. Platí se formou kreditů za hotové video, nikoli paušálně; neúspěšné generování je automaticky vráceno. Cenový model je postaven na jednorázových balíčcích kreditů bez předplatného, které podle uvedených údajů nikdy nevyprší. Po registraci získá uživatel 3 kredity zdarma, dále lze dokoupit balíček za 5 dolarů (17 kreditů) nebo větší balíčky od 14,99 dolaru (250 kreditů) po 69,99 dolaru (1400 kreditů). Videa vytvořená před první platbou nesou pohyblivé vodoznak ozilaigoal.com, který zmizí po jakémkoli nákupu. Dostupnost rozhraní v češtině ani API přístup nejsou v dostupných informacích zmíněny.
+Klíčové vlastnosti
+- Z jedné fotky vytvoří AI video gólu Özila
+- Zachová brankáře, obránce, stadion i kameru
+- Délka videa 5, 10 nebo 15 sekund
+- Výstup jako vertikální MP4 se zvukem 9:16
+Časté dotazy
+Co přesně Ozil Goal AI vytvoří?
+Z jedné nahrané fotky vygeneruje krátké AI video, ve kterém osoba z fotky skóruje slavný gól Mesuta Özila za Arsenal proti Ludogorets z roku 2016, a to v oblečení, ve kterém je na fotce. AI zachová brankáře, obránce, stadion i kameru, výstupem je vertikální MP4 video se zvukem v poměru 9:16.
+Kolik to stojí?
+Platí se jednorázovými balíčky kreditů bez předplatného, které nikdy nevyprší – od 5 dolarů za 17 kreditů po 69,99 dolaru za 1400 kreditů. Po registraci dostane uživatel 3 kredity zdarma, výchozí video (15 s, 480p) stojí 17 kreditů.
+Pro koho je nástroj a jak začít?
+Je určen komukoliv, kdo chce zkusit virální trend krátkých videí na TikToku, Reels nebo Shorts – stačí nahrát jednu fotku s jasně viditelnou tváří a oblečením, zvolit délku a model videa a během pár minut stáhnout hotové video.
+Kategorie

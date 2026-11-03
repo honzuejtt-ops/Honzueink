@@ -1,0 +1,17 @@
+LearnCast AI
+AI simulátor ústních zkoušek a generátor studijních podcastů z vlastních poznámek, slajdů nebo fotek tabule.
+O nástroji
+LearnCast AI promění nahrané poznámky, slajdy nebo fotku tabule v podcastovou epizodu, která látku vysvětluje místo pouhého shrnutí. Následně AI zkoušející klade otázky k danému materiálu, reaguje doplňujícími dotazy a odpovědi bodově hodnotí – podle ukázky z rozhraní například u ústní zkoušky z daňového práva, kde systém upozorní na chybějící klíčový bod odpovědi a položí navazující otázku. Odpovídat lze psaním i mluveným slovem. Z nahraného PDF souboru (v příkladu 84stránkové přednáškové poznámky) nebo sady slajdů vzniknou kratší epizody v řádu minut, které si uživatel může poslechnout, projít jako přehled klíčových bodů a poté se z nich nechat vyzkoušet. První zkušební simulace je podle webu zdarma bez nutnosti zadávat platební kartu, informace o dalších cenových tarifech ani o API nebo open source variantě nejsou k dispozici. Rozhraní nástroje je v angličtině.
+Klíčové vlastnosti
+- Generuje podcastovou epizodu z PDF poznámek, slajdů nebo fotky tabule
+- AI zkoušející klade doplňující otázky k materiálu
+- Bodové hodnocení odpovědí s upozorněním na chybějící body
+- Odpovídání psaním i mluveným slovem
+Časté dotazy
+Co přesně LearnCast AI umí?
+Z nahraných poznámek, slajdů nebo fotky tabule vytvoří podcastovou epizodu vysvětlující látku a následně formou ústní zkoušky klade otázky, reaguje doplňujícími dotazy a odpovědi bodově hodnotí.
+Kolik LearnCast AI stojí?
+První zkušební simulace je zdarma bez nutnosti zadat platební kartu, informace o dalších placených tarifech nejsou na webu uvedeny.
+Jak mohu začít nástroj používat?
+Stačí nahrát PDF poznámky, slajdy nebo fotku tabule a do 30 sekund lze spustit první bezplatnou zkušební simulaci ústní zkoušky.
+Kategorie

@@ -1,0 +1,17 @@
+Rumpelstiltskin AI Video Generator
+Nástroj promění dvě fotky ve virální taneční meme „Rumpelstiltskin tiptoe“: vytvoří 12sekundové video 16:9 se zvukem, bez nutnosti promptu.
+O nástroji
+Rumpelstiltskin AI Video Generator vytvoří z dvou nahraných fotografií krátké video podle populárního mem videa, kde jedna postava přichází po špičkách, zatíná prst na rty a tančí, zatímco druhá postava reaguje zakrytím úst. Stačí nahrát dvě fotky (JPG, PNG nebo WebP) s jednou osobou na každé – pokud má uživatel jen jednu fotku, může použít stejnou dvakrát a hrát obě role. Výsledkem je 12sekundové MP4 video ve formátu 16:9 s připojeným mem soundtrackem, bez nutnosti psát prompt nebo video dále upravovat. Uživatel si může vybrat mezi modely Seedance 2.5 (výchozí, rozlišení 480p až 1080p) a MiniMax H3 (720p). Cena se pohybuje od 99 do 397 kreditů podle zvoleného modelu a rozlišení a je zobrazena před generováním. Videa vytvořená před první platbou obsahují pohyblivý vodoznak, který lze odstranit jakýmkoliv nákupem kreditů; v případě neúspěšného generování jsou kredity automaticky vráceny. Platba probíhá formou jednorázových kreditových balíčků od 9 dolarů, bez předplatného. Nástroj nepodporuje vertikální formát 9:16 ani zvířata na fotkách – pouze jedna reálná osoba na snímek. Rozhraní je v angličtině.
+Klíčové vlastnosti
+- Vytvoří 12sekundové MP4 video 16:9 ze dvou fotek
+- Volba modelu Seedance 2.5 (480p–1080p) nebo MiniMax H3 (720p)
+- Hotové video obsahuje mem soundtrack bez úprav
+- Generování bez nutnosti psát prompt
+Časté dotazy
+Co nástroj přesně vytvoří?
+Z dvou nahraných fotek (jedna osoba na snímek) vygeneruje 12sekundové video 16:9 podle virálního mem tance „Rumpelstiltskin tiptoe“, kde první fotka tančí po špičkách a druhá reaguje zakrytím úst. Video má přiložený mem soundtrack a nevyžaduje žádné úpravy.
+Kolik to stojí?
+Platí se jednorázovými kreditovými balíčky od 9 dolarů bez předplatného. Samotné video stojí 99 až 397 kreditů podle zvoleného modelu a rozlišení, cena se zobrazí před generováním.
+Jak začít a pro koho je nástroj určený?
+Stačí nahrát dvě fotky (JPG, PNG nebo WebP) s jasně viditelnou tváří, vybrat model a rozlišení a kliknout na generování – vhodné pro kohokoliv, kdo chce rychle vytvořit virální meme video bez znalosti promptování či střihu.
+Kategorie

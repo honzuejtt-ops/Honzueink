@@ -1,0 +1,17 @@
+Unforgettable Car AI
+Vytvoří 15sekundové video TikTok trendu „Unforgettable car“ z jedné selfie fotky – bez nutnosti vlastnit auto nebo cokoliv natáčet.
+O nástroji
+Unforgettable Car AI generuje klip napodobující populární TikTok a Reels trend z roku 2017 (píseň „Unforgettable“ od French Montany a Swae Lee), kdy osoba drží karty s čísly 2 a 4, přejede rukou přes objektiv a za ní se objeví auto. Stačí nahrát jednu selfie fotku (viditelný obličej a ramena), vybrat jedno ze tří přednastavených aut nebo nahrát fotku vlastního vozu, zvolit jednu ze šesti barevných kombinací karet a kvalitu videa. Výsledný klip má 15 sekund, poměr stran 16:9 a je vygenerován pomocí modelu Seedance 2.5, bez vodoznaku. Platba funguje na kreditní bázi bez předplatného – kredity platí 365 dní a strhávají se až při spuštění generování, při neúspěchu se automaticky vrací. Balíček Single Reveal stojí 9,90 $ za 170 kreditů (jedno video v 480p), Starter Pack 19,90 $ za 510 kreditů a Creator Pack 49,90 $ za 1 800 kreditů s nejnižší cenou za kredit. Cena videa roste s kvalitou: 480p spotřebuje 167 kreditů, 720p 362 kreditů a 1080p 633 kreditů. Bezplatná verze ani API nejsou uvedeny, nástroj běží přímo v mobilním prohlížeči bez nutnosti instalace aplikace.
+Klíčové vlastnosti
+- Vygeneruje klip z jedné selfie fotky bez natáčení
+- Tři přednastavená auta nebo nahrání vlastní fotky vozu
+- Šest barevných kombinací karet 2 a 4
+- Volba kvality 480p, 720p nebo 1080p
+Časté dotazy
+Co přesně Unforgettable Car AI vytvoří?
+Z jedné selfie fotky vygeneruje 15sekundové video napodobující TikTok trend „Unforgettable car“ – držíte karty s čísly 2 a 4, přejedete rukou přes objektiv a za vámi se objeví auto. Nemusíte nic natáčet ani vlastnit auto.
+Kolik stojí jedno video?
+Platí se kredity bez předplatného: balíček Single Reveal za 9,90 $ dá 170 kreditů, což stačí na jedno video v 480p (167 kreditů). Vyšší kvalita stojí víc kreditů – 720p 362 a 1080p 633 kreditů.
+Je nástroj zdarma a jak začít?
+Bezplatná verze ani kredity zdarma nejsou nabízeny. Stačí se přihlásit, nahrát selfie fotku s viditelným obličejem a rameny, vybrat auto, barvy karet a kvalitu videa a spustit generování přímo v mobilním prohlížeči.
+Kategorie

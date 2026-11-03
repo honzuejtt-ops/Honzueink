@@ -1,0 +1,17 @@
+Consistent-Character-AI
+Generátor AI obrázků a videí se stejnou postavou napříč scénami, bez nutnosti LoRA trénování.
+O nástroji
+Consistent-Character-AI je nástroj pro tvorbu obrázků a videí, ve kterých si postava zachovává stejnou tvář napříč různými scénami, outfity a styly. Funguje na základě textového popisu nebo nahraného referenčního obrázku, přičemž AI zamkne klíčové rysy obličeje z jedné reference a reprodukuje je v dalších výstupech. K dispozici je také nástroj pro lip sync, který z portrétu a audio stopy vytvoří mluvící video, a animace obrázků s promptovaným pohybem. Mezi funkce patří knihovna postav pro opětovné použití bez nového nahrávání, podpora scén s až pěti referenčními obrázky pro vícero postav, osm a více uměleckých stylů (anime, fotorealismus, akvarel, pixel art a další) a vývojářské API pro integraci do vlastních aplikací či her. Nové účty získávají 4 kredity zdarma, přičemž standardní obrázek postavy stojí 2 kredity. Podle dostupných informací cena začíná na 15 dolarech, bezplatná varianta bez omezení uvedena není – jde o freemium model s kredity po registraci. Nástroj nevyžaduje trénování LoRA modelu ani práci v ComfyUI, celý proces tvorby probíhá přes webovou aplikaci.
+Klíčové vlastnosti
+- Zámek obličejových rysů z jedné reference
+- Scény až s pěti referenčními obrázky postav
+- Lip sync z portrétu a audio stopy
+- Osm a více uměleckých stylů (anime, foto, akvarel...)
+Časté dotazy
+Co přesně Consistent-Character-AI umí?
+Vytváří obrázky i videa, kde si postava zachovává stejnou tvář napříč scénami, outfity a styly, a to buď z textového popisu, nebo z nahraného referenčního obrázku. Umí také lip sync z portrétu a audio stopy a animaci obrázků s pohybem.
+Kolik to stojí a je k dispozici zdarma varianta?
+Nové účty dostanou 4 kredity zdarma bez nutnosti karty, standardní obrázek postavy stojí 2 kredity. Placené plány začínají na 15 dolarech.
+Pro koho je nástroj vhodný a jak se začíná?
+Hodí se pro tvorbu komiksů, webtoonů, firemních maskotů, storyboardů či herních assetů. Stačí nahrát referenční obrázek nebo zvolit postavu z knihovny, vybrat styl a popsat scénu – bez ComfyUI nebo LoRA trénování.
+Kategorie

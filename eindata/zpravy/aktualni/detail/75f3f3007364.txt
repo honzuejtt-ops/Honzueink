@@ -1,0 +1,17 @@
+Gas Station Dance AI
+Generátor vytvoří z 1–3 fotek virální 15sekundové video „gas station dance“ se třemi záběry, hudbou a bez nutnosti psát prompt.
+O nástroji
+Gas Station Dance AI je webový generátor, který ze zadaných fotografií vytvoří patnáctisekundové video napodobující virální trend „gas station dance“: tanec na čerpací stanici, selfie v chůzi a vystoupení z auta. Stačí nahrát jednu až tři fotky (JPG, PNG nebo WebP, 300–6000 px, do 30 MB) – každá odpovídá jednomu ze tří záběrů – a nástroj zachová původní pohyby, střihy i hudbu. Výstupem je MP4 ve formátu 9:16 nebo 16:9 v rozlišení 480p, 720p nebo 1080p podle zvoleného modelu (Seedance 2.0 Mini, Fast, Pro nebo 2.5). Cena se odvíjí od kreditů: nejlevnější varianta (Seedance 2.0 Mini, 480p) stojí 11 kreditů, tedy přibližně 0,88 USD, zatímco nejdražší (Seedance 2.5, 1080p) vyjde na 301 kreditů (kolem 24 USD). Při registraci uživatel získá 11 kreditů zdarma, což pokryje jedno video v základní kvalitě; při neúspěšném generování se kredity vracejí automaticky. Nástroj běží přímo v prohlížeči bez nutnosti instalace, funguje na iPhonu, Androidu, Chromebooku i PC a nevyžaduje žádné psaní promptů ani znalost video editace.
+Klíčové vlastnosti
+- Napodobí trend tanec na čerpací stanici ze tří fotek
+- Žádný prompt, jen nahrání fotografií do tří pozic
+- Zachová původní pohyby, střihy i hudbu
+- Výstup v 9:16 nebo 16:9, 480p až 1080p
+Časté dotazy
+Co přesně Gas Station Dance AI vytvoří?
+Z jedné až tří nahraných fotek vygeneruje 15sekundové video napodobující virální trend „gas station dance“ – tanec u pumpy, selfie v chůzi a vystoupení z auta, se zachovanými pohyby, střihy i původní hudbou.
+Kolik to stojí?
+Platí se kredity podle modelu a rozlišení: nejlevnější video (Seedance 2.0 Mini, 480p) vyjde na 11 kreditů (asi 0,88 USD), nejdražší (Seedance 2.5, 1080p) na 301 kreditů (asi 24 USD).
+Jak začít a je potřeba něco umět?
+Stačí nahrát jednu až tři ostré fotky z čela (JPG, PNG nebo WebP, 300–6000 px, do 30 MB), vybrat model a rozlišení a spustit generování – psaní promptu ani video editace není potřeba, nástroj běží v prohlížeči na mobilu i počítači.
+Kategorie

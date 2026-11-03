@@ -1,0 +1,17 @@
+RoadsterVideo
+Generátor AI videí, který z vaší fotky vozidla vytvoří krátký klip s rampovým flipem Tesla Roadsteru nebo jinou kaskadérskou šablonou.
+O nástroji
+RoadsterVideo je nezávislý nástroj pro tvorbu krátkých AI videí inspirovaných kaskadérským předvedením druhé generace Tesla Roadster z 15. října 2026. Nabízí 20 připravených šablon (rampový flip, útěk v dopravě, zastavení policií a další), do kterých stačí nahrát fotku vozidla, osoby nebo mazlíčka – auto si přitom zachová vlastní karoserii a nedostává přidaná kola ani raketové trysky. Výsledkem je MP4 video v délce 6–17 sekund, v poměrech 3:4, 4:3, 9:16, 16:9 nebo 1:1 a rozlišení 480p až 1080p, bez vodoznaku stránky; šablony běžící na modelu Seedance 2.5 generují i vlastní zvuk. Cena začíná na 7 kreditech (přibližně 0,35 USD) za video, platí se jednorázovými balíčky kreditů bez předplatného a neúspěšná generace je plně vrácena. Nástroj zmiňuje možnost vyzkoušet jednu šablonu z uvítacích kreditů zdarma, úplně bezplatná verze však uvedena není. Nejde o oficiální produkt Tesly ani SpaceX a všechna vytvořená videa jsou výslovně fiktivní.
+Klíčové vlastnosti
+- 20 šablon kaskadérských scén (rampový flip, útěk, zátah)
+- Vlastní vozidlo, osoba nebo mazlíček z nahrané fotky
+- Auto si zachová karoserii bez přidaných kol či trysek
+- Výstup MP4 6–17 s, poměry 3:4 až 16:9, 480p–1080p
+Časté dotazy
+Co RoadsterVideo vlastně umí?
+Z nahrané fotky vozidla, osoby nebo mazlíčka vytvoří krátké AI video podle jedné z 20 kaskadérských šablon, například rampový flip inspirovaný předvedením Tesla Roadsteru. Objekt si zachová vlastní podobu, model mu nepřidává kola ani trysky.
+Kolik to stojí?
+Platí se jednorázovými balíčky kreditů bez předplatného, video začíná na 7 kreditech (přibližně 0,35 USD). Pokud generování selže, kredity se plně vrátí.
+Je k dispozici zdarma a pro koho je nástroj?
+Uvítací kredity po registraci mohou pokrýt jednu Mini šablonu v 480p, plně bezplatná verze ale uvedena není. Hodí se pro každého, kdo chce vyzkoušet fiktivní kaskadérské video se svým autem či jiným objektem bez psaní promptu.
+Kategorie

@@ -1,0 +1,17 @@
+Opus 5.5 Video Generator
+Online generátor videí, který z textového promptu nechá Claude Opus 5.5 naplánovat, naprogramovat a vykreslit 1080p MP4 s hudbou.
+O nástroji
+Opus 5.5 Video Generator je webová aplikace, která promění textový popis videa v hotové 1080p MP4. Stačí zadat brief, vybrat délku (15, 30 nebo 60 sekund), formát (16:9, 9:16 nebo 1:1) a zvuk (hudba, voiceover nebo ticho) – Claude Opus 5.5 pak video naplánuje jako storyboard, napíše animační kód (Canvas, SVG, GSAP, p5.js nebo three.js) a sám kontroluje náhledové snímky. Celý proces, včetně plánování a psaní kódu, uživatel sleduje přímo v rozhraní, výsledné snímky se vykreslí na serveru a zakódují do MP4 v rozlišení 1080p při 30 fps. Nástroj umožňuje nahrát až 15 obrázků (JPG, PNG nebo WebP, max. 10 MB) jako podklady – loga, produktové fotky nebo screenshoty, které Opus při tvorbě videa zohlední. Platí se formou kreditů, které se účtují až za skutečně vytvořené video (cena od 2 dolarů), a nepovedené video je vráceno. Instalace ani API klíč nejsou potřeba, generování probíhá přímo v prohlížeči.
+Klíčové vlastnosti
+- Vytváří storyboard a animační kód z textového promptu
+- Délka videa 15, 30 nebo 60 sekund
+- Formáty 16:9, 9:16 a 1:1
+- Hudba, voiceover nebo tiché video
+Časté dotazy
+Co přesně Opus 5.5 Video Generator umí?
+Z textového popisu videa Claude Opus 5.5 naplánuje storyboard, napíše animační kód (Canvas, SVG, GSAP, p5.js nebo three.js) a sám kontroluje náhledové snímky, které se pak vykreslí a zakódují do 1080p MP4 s hudbou nebo voiceoverem.
+Kolik to stojí?
+Platí se formou kreditů, které se účtují až za skutečně vytvořené video, cena začíná od 2 dolarů za video; pokud se video nepovede, je vráceno.
+Jak začnu a pro koho je nástroj určený?
+Stačí v prohlížeči zadat brief, vybrat délku, formát a zvuk a případně nahrát až 15 podkladových obrázků – hodí se pro tvorbu produktových videí, vysvětlujících animací či obsahu na sociální sítě bez instalace nebo API klíče.
+Kategorie

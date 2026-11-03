@@ -1,0 +1,17 @@
+Remove Text
+AI nástroj pro odstranění textu, nápisů a bublin z fotografií přímo v prohlížeči, s AI rekonstrukcí pozadí.
+O nástroji
+Remove Text je online nástroj, který z nahraných obrázků (JPG, PNG nebo WebP do 10 MB) odstraňuje text – uživatel si může zvolit odstranění veškerého detekovaného textu, nebo jen textu v bublinách (např. u komiksů a manga stránek). Nástroj kombinuje ruční editor pro jednoduché plochy s AI rekonstrukcí pozadí pro složitější scény, kdy se okolní textury a barvy dopočítávají pomocí tzv. inpaintingu. Výsledek je nutné před stažením zkontrolovat, protože u bledšího, zakřiveného nebo stylizovaného textu může detekce selhat a u složitých textur se mohou objevit artefakty. Service nabízí dávkové zpracování až 10 obrázků najednou a nové uživatele po registraci odměňuje 3 kredity zdarma, které ale generují pouze náhledy s vodoznakem. Placená verze pracuje na principu pay-as-you-go, konkrétní cena v nahlédnutém obsahu uvádí částku 9 dolarů. Nástroj je určen výhradně na úpravu obrázků, ke kterým má uživatel vlastnická práva nebo oprávnění k editaci – odstranění vodoznaku, loga či autorského označení neznamená získání práv k cizímu materiálu. Rozhraní funguje čistě v angličtině a celý proces proběhne ve třech krocích: nahrání obrázku, automatická detekce textu pomocí AI a následné stažení vyčištěného výsledku po kontrole okrajů a pozadí. API ani open source varianta nejsou v dostupných podkladech zmíněny.
+Klíčové vlastnosti
+- Odstranění veškerého textu nebo jen textu v bublinách
+- Dávkové zpracování až 10 obrázků najednou
+- AI rekonstrukce pozadí pomocí inpaintingu
+- Ruční editor pro jednoduché plochy v prohlížeči
+Časté dotazy
+Co přesně Remove Text umí?
+Z nahraného obrázku odstraní veškerý detekovaný text nebo jen text v bublinách (např. u komiksů a manga), přičemž okolí dopočítá pomocí AI rekonstrukce pozadí. Výsledek je nutné před stažením zkontrolovat, zejména u bledšího, zakřiveného nebo stylizovaného textu.
+Kolik Remove Text stojí?
+Nástroj funguje na principu pay-as-you-go, v dostupném obsahu je uvedena částka 9 dolarů. Po registraci získá uživatel 3 kredity zdarma, ty ale slouží jen k náhledům s vodoznakem.
+Jak začít a pro koho je nástroj určený?
+Stačí se zaregistrovat, nahrát vlastní obrázek nebo obrázek, k jehož úpravě má uživatel oprávnění, a projít třemi kroky: nahrání, automatickou detekci textu a stažení vyčištěného výsledku po kontrole okrajů a pozadí.
+Kategorie

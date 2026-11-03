@@ -1,0 +1,17 @@
+Web2Post AI
+AI nástroj, který z webové stránky firmy automaticky vytvoří hotové příspěvky pro Instagram, LinkedIn, Facebook a X.
+O nástroji
+Web2Post AI funguje tak, že do něj uživatel zadá URL adresu webu – nástroj projde až 200 stránek, extrahuje z nich barvy značky, tonalitu komunikace a obsah, a z těchto podkladů během krátké chvíle vygeneruje hotové příspěvky pro čtyři platformy najednou: Instagram, LinkedIn, Facebook a X. Pokud firma vlastní web nemá, lze místo toho projít AI interview s deseti adaptivními otázkami, na jehož základě si nástroj sestaví profil značky. Součástí nabídky je i plánování obsahu na 365 dní dopředu, včetně rotace obsahových pilířů a sezónních témat, a takzvaná Storyline Engine, která umí propojit 3 až 7 příspěvků do série s dramatickým obloukem namísto jednotlivých izolovaných postů. Podle dostupných informací je k dispozici 14denní zkušební období bez nutnosti zadávat platební kartu, placená verze zdarma uvedena není. Rozhraní nástroje je v němčině, dostupnost API ani informace o otevřeném zdrojovém kódu nejsou z dostupných podkladů patrné.
+Klíčové vlastnosti
+- Analýza webu až 200 stránek pro extrakci značky
+- Generování postů pro Instagram, LinkedIn, Facebook a X najednou
+- AI interview s 10 otázkami místo webu
+- Plánování obsahu na 365 dní dopředu
+Časté dotazy
+Co přesně Web2Post AI umí vytvořit?
+Z URL adresy webu nebo z AI interview vytvoří během pár sekund hotové příspěvky pro Instagram, LinkedIn, Facebook a X, včetně plánu obsahu na 365 dní a propojených sérií příspěvků pomocí Storyline Engine.
+Kolik Web2Post AI stojí?
+K dispozici je 14denní zkušební období zdarma bez nutnosti zadávat platební kartu, informace o cenách placené verze nejsou z podkladů patrné.
+Jak se Web2Post AI začíná používat?
+Stačí zadat URL adresu firemního webu, nástroj jej analyzuje a do 60 sekund vygeneruje hotové příspěvky; pokud web nemá, lze místo toho absolvovat AI interview s deseti otázkami.
+Kategorie

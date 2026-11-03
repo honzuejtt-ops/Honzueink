@@ -1,0 +1,17 @@
+TrapWrap
+Nástroj promění jednu fotku ve vertikální AI rapové video podle vybrané šablony, připravené pro TikTok nebo Reels.
+O nástroji
+TrapWrap umožňuje vytvořit AI rapové video z jedné fotografie – stačí nahrát portrét, vybrat jednu z 15 šablon pohybových klipů (např. Quavo, Curtis Roach nebo Central Cee) a model vygeneruje video, ve kterém uživatel „předvádí“ stejnou choreografii, timing i kameru jako originální klip. Výsledek je ve formátu 9:16, takže je rovnou připravený pro TikTok, Reels nebo Shorts, a stahuje se jako MP4 bez vodoznaku. Zpracování funguje na kreditním systému: cena se odvíjí od zvoleného rozlišení (480p, 720p nebo 1080p), přičemž vyšší rozlišení stojí více kreditů za stejnou délku klipu. Kredity lze dokoupit jednorázově nebo si pořídit měsíční předplatné, přičemž nevyužité kredity nepropadají a v případě neúspěšného renderu se vrací zpět na účet. Nahrané fotografie jsou podle uvedených informací ukládány soukromě a automaticky smazány 7 dní po nahrání. Nástroj vyžaduje jasnou fotografii jedné osoby čelem ke kameře s rovnoměrným osvětlením, bez slunečních brýlí či masek, ve formátu JPG, PNG nebo WebP do 10 MB. Bezplatná verze není uvedena a rozhraní je v angličtině.
+Klíčové vlastnosti
+- Vytvoří video z jedné nahrané fotografie
+- 15 šablon pohybových klipů ke stažení
+- Výstup 9:16 pro TikTok, Reels a Shorts
+- Export MP4 bez vodoznaku
+Časté dotazy
+Jak nástroj funguje?
+Nahrajete jednu jasnou fotografii čelem ke kameře, vyberete jednu z 15 šablon (např. Quavo nebo Curtis Roach) a model vygeneruje vertikální video, kde opakujete stejnou choreografii a kameru jako originál.
+Kolik to stojí?
+Funguje na kreditech podle zvoleného rozlišení – 480p stojí 20 kreditů, 720p 40 kreditů a 1080p 120 kreditů za celý 20sekundový klip. Kredity lze dokoupit jednorázově nebo formou měsíčního předplatného.
+Pro koho je TrapWrap vhodný a jak začít?
+Je určen tvůrcům obsahu, kteří chtějí rychle naskočit na trend AI rapových videí bez tance a natáčení. Stačí nahrát fotku ve formátu JPG, PNG nebo WebP do 10 MB, vybrat šablonu a rozlišení a video vygenerovat.
+Kategorie

@@ -1,0 +1,17 @@
+ConsistentCharacterAI
+Generátor konzistentních AI postav – z jedné referenční fotky vytvoří stejnou postavu v různých pózách, výrazech a scénách.
+O nástroji
+ConsistentCharacterAI je nástroj pro tvorbu konzistentních postav pomocí umělé inteligence. Z jedné referenční fotografie dokáže vygenerovat stejnou postavu v různých pózách, výrazech tváře a scénách při zachování její identity napříč jednotlivými obrázky. Využití najde především u tvorby storybooků, komiksů a dalších kreativních projektů, kde je potřeba, aby postava vypadala konzistentně napříč více výstupy – ať už jde o herní postavy, 3D styl nebo anime postavy. Nástroj nabízí vyzkoušení zdarma formou prvního vygenerovaného obrázku postavy bez nutnosti zadávat platební kartu. Informace o dalších cenových úrovních ani o API nejsou v dostupných materiálech uvedeny.
+Klíčové vlastnosti
+- Generování postavy z jedné referenční fotky
+- Zachování identity napříč různými pózami
+- Různé výrazy tváře a scény u stejné postavy
+- Podpora herních, 3D a anime stylů postav
+Časté dotazy
+Co ConsistentCharacterAI vlastně umí?
+Z jedné referenční fotografie vygeneruje stejnou postavu v různých pózách, výrazech tváře a scénách při zachování její identity. Hodí se například na storybooky, komiksy, herní nebo anime postavy.
+Kolik ConsistentCharacterAI stojí?
+První vygenerovaný obrázek postavy je zdarma bez nutnosti zadávat platební kartu. Informace o dalších cenových úrovních nejsou v dostupných materiálech uvedeny.
+Jak začít nástroj používat?
+Stačí nahrát jednu referenční fotku postavy a nechat si vygenerovat první obrázek zdarma bez registrace platební karty.
+Kategorie

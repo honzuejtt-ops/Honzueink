@@ -1,0 +1,17 @@
+Tesla Roadster AI
+Generátor AI videí, který z jedné fotky vytvoří rampový flip, únik z dopravní zácpy nebo zastavení policií ve stylu Tesla Roadster.
+O nástroji
+Tesla Roadster AI je nástroj pro tvorbu krátkých AI videí inspirovaných rampovým skokem Tesla Roadsteru. Stačí nahrát jednu fotku auta, hračky nebo jiného objektu a nástroj vygeneruje 15sekundové video, jak objekt vyjíždí na rampu, provede přemet ve vzduchu a dopadne na kola. Kromě toho nabízí šablony „únik z dopravní zácpy“ (10 s) a „zastavení policií“ (12 s), kde ve videu figuruje uživatel nebo jeho mazlíček. Výchozím a nejlevnějším modelem je Seedance 2.0 Mini v rozlišení 480p, k dispozici je ale i kvalitnější Seedance 2.5 v 1080p. Cena se odvíjí od šablony, modelu a rozlišení – podle důkazu stojí první video 4,99 USD bez nutnosti předplatného, konkrétní šablony pak vycházejí v rozmezí přibližně 0,55 až 17,39 USD podle zvoleného modelu a kvality. Videa jsou bez vodoznaku a při neúspěšném vygenerování se platba automaticky vrací. Výstupem je MP4 soubor se zvukovými efekty odpovídajícími dané šabloně (např. zvuk kaskadérského kousku u rampového flipu). Nástroj je v angličtině a je určen zejména pro vytváření otevřeně fiktivních AI videí odkazujících na reálnou premiéru Tesla Roadsteru z října 2026.
+Klíčové vlastnosti
+- Z jedné fotky vytvoří 15s video rampového flipu
+- Šablony úniku z dopravní zácpy a zastavení policií
+- Výběr modelu Seedance 2.0 Mini nebo kvalitnější 2.5
+- Rozlišení 480p, 720p nebo 1080p podle ceny
+Časté dotazy
+Co přesně Tesla Roadster AI umí vytvořit?
+Z jedné nahrané fotky auta, hračky nebo jiného objektu vygeneruje krátké AI video – buď 15sekundový rampový flip, nebo 10sekundový únik z dopravní zácpy či 12sekundové zastavení policií s vámi nebo mazlíčkem ve videu.
+Kolik stojí vygenerování videa?
+Nástroj funguje na kredity bez předplatného, první video stojí 4,99 USD; podle zvolené šablony, modelu a rozlišení se cena jednotlivých videí pohybuje přibližně od 0,55 do 17,39 USD.
+Jak začít a pro koho je nástroj určen?
+Stačí vybrat šablonu, nahrát jednu fotku (objekt nebo řidiče), zvolit poměr stran, model a rozlišení a spustit generování. Je určen komukoli, kdo chce vytvořit zábavné a otevřeně fiktivní AI video inspirované premiérou Tesla Roadsteru.
+Kategorie

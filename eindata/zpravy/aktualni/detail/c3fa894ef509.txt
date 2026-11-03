@@ -1,0 +1,12 @@
+Bambu Lab právě představil novou 3D tiskárnu, která má být odpovědí na dříve představený systém INDX od českého Průši. Zatímco Průša má maximálně 8 trysek, nová Bambu Lab H3C přichází s hned 9, přičemž jejich výměnu zvládne za méně než 4 sekundy.
+9 trysek s aktivním předehříváním
+Nově oznámená 3D tiskárna disponuje systémem 9 samostatných trysek, přičemž každá z nich má své aktivní předehřívání. Při tisku je tak jedna tryska v tiskové hlavě, zatímco druhá se předehřívá v moment, kdy se chystá výměna. Díky tomu je tiskárna schopná celý proces mezi koncem tisku jednoho materiálu a začátku dalšího zvládnout za 6 sekund. Samotná výměna tryska pak trvá jen 3,4 sekund.
+Pokud vám 9 barev (či materiálů) nestačí, můžete si přikoupit rozbočovač a zapojit klasická AMS známá z jiných 3D tiskáren. Celkově tak můžete na Bambu Lab H3C tisknout z až 24 cívek najednou.
+Bambu Lab H3C má extruder vybavený technologií FlexFeed, což je (do „lidštiny“ přeloženo) podpora filamentů o průměru 1,75 a 2,85 mm bez nutnosti manuálního zásahu. To se hodí například při tisku měkkého TPU, které má větší objemový průtok.
+Stejně jako ostatní 3D tiskárny Bambu Lab řady H, i zde nechybí podpora volitelných nástrojů pro řezání, vypalování nebo kreslení. U H3C však můžete tyto procesy vzájemně kombinovat. V jednom projektu tak můžete chvíli tisknout, následně vypalovat a pak znovu tisknout. Vše automaticky bez nutnosti manuálního přepínání.
+Novou 3D tiskárnu už blíže prozkoumal i YouTubový kanál Adam Savage's Tested:
+Nové AMS 3H pojme až 9 cívek
+Součástí nové 3D tiskárny je zabudovaný systém AMS 3H, který pojme celkem 9 cívek filamentu a podporuje automatické načítání filamentů skrze RFID čipy umístěné v cívkách. Podobně jako v AMS 2 Pro, i zde najdete integrovanou sušičku s teplotami až 85 °C, ovšem jen na dvou pozicích.
+Tiskárna jako taková disponuje tiskovou plochou 330 × 320 × 325 mm, teplotou trysky až 350 °C, vyhříváním podložky do 120 °C a komory do 65 °C. Co se rychlostí týče, tiskárna si poradí s rychlostí až 1 400 mm/s a akcelerací 25,000 mm/s².
+Ceny začínají od 61 tisíc
+Novou 3D tiskárnu Bambu Lab H3C si můžete už nyní koupit na webu Bambu Lab. Ceny startují na 2 499 eurech (asi 61 tisíc) za H3C Combo, za 80 eur navíc dostanete sadu základních CMYKW filamentů a za cenu 2 789 eur (asi 67 tisíc) dostanete ke všemu výše zmíněnému navíc ještě skříňku pro úschovu filamentů nebo tiskových plátů.

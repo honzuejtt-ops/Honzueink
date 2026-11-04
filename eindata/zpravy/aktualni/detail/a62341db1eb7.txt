@@ -1,0 +1,17 @@
+ImagesV2
+Online generátor obrázků z textu postavený na modelu GPT Image 2 s důrazem na fotorealismus a ostrý text v obrázku.
+O nástroji
+ImagesV2 je webová služba pro generování obrázků pomocí modelu GPT Image 2 (podle textu na stránce aktuálně i GPT Image 2.5). Nabízí fotorealistické výstupy s důrazem na čitelný a ostrý text přímo v obrázku, export do transparentního PNG, SVG a 4K rozlišení. Po registraci uživatel získá 3 kredity zdarma na první obrázek, přičemž není potřeba účet u OpenAI ani ChatGPT Plus. Nástroj nabízí kurátorské příklady a hotové šablony promptů pro různá odvětví – například bannery a produktové vizuály pro e-shopy, plakáty a klíčové vizuály pro eventy a značky, nebo sociální vizuály pro tvůrce obsahu. Uživatel si může vybrat existující příklad a upravit ho vlastním zadáním místo psaní promptu od nuly. Z dostupných informací nevyplývá, že by nástroj nabízel plně bezplatnou verzi – po vyčerpání úvodních kreditů zdarma je patrně nutná platba, přesná cena ani tarify ale v podkladech uvedeny nejsou. Rozhraní je v angličtině, API ani open source řešení nejsou zmíněny.
+Klíčové vlastnosti
+- Generování obrázků modelem GPT Image 2 (GPT Image 2.5)
+- Důraz na fotorealismus a ostrý text v obrázku
+- Export do transparentního PNG, SVG a 4K rozlišení
+- Hotové šablony promptů pro e-shopy, eventy a sociální sítě
+Časté dotazy
+Co ImagesV2 umí?
+Generuje fotorealistické obrázky z textu pomocí modelu GPT Image 2 s důrazem na ostrý a čitelný text v obrázku. Výstup lze exportovat jako transparentní PNG, SVG nebo ve 4K rozlišení.
+Kolik ImagesV2 stojí?
+Po registraci uživatel dostane 3 kredity zdarma na první obrázek, přesné ceny dalších kreditů ani tarify nejsou v podkladech uvedeny.
+Pro koho je ImagesV2 vhodný a jak začít?
+Hodí se pro tvůrce bannerů a produktových vizuálů pro e-shopy, plakátů pro eventy či sociálních vizuálů pro tvůrce obsahu. Stačí se zaregistrovat bez potřeby účtu OpenAI či ChatGPT Plus a vybrat si hotovou šablonu promptu nebo napsat vlastní zadání.
+Kategorie

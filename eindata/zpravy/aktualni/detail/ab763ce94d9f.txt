@@ -1,0 +1,17 @@
+FloorAI
+AI generátor půdorysů, který z popisu, skicy, fotky nebo PDF vytvoří za minutu čistý, popsaný plán s možností editace.
+O nástroji
+FloorAI umí vytvořit půdorys bytu nebo domu několika způsoby – buď z textového popisu prostoru (např. počet ložnic, otevřená kuchyně), nebo překreslením nahraného náčrtu, fotografie či PDF dokumentu, včetně starých zažloutlých geodetických zaměření nebo ručně kreslených skic na milimetrový papír. Nabízí šest stylů kresby – 2D marketingový plán, 2D barevný plán, 2.5D axonometrii, 3D pohled shora, 3D perspektivu i 2D technický plán, přičemž vygenerovaný výsledek lze následně upravovat: posouvat stěny, přejmenovávat místnosti nebo přidávat nábytek, aniž by bylo nutné celý plán generovat znovu. Součástí nástroje je také samostatný bezplatný editor pro kreslení půdorysů od nuly bez nutnosti registrace, s podporou exportu do formátu DXF. Nástroj dále umí z hotového layoutu vytvořit animovanou prezentaci ve stylu letu dronem nebo proměny z prázdného prostoru na zařízený, vhodnou pro inzerci nemovitostí nebo sociální sítě. Generování samotného plánu lze vyzkoušet zdarma bez nutnosti zadávat platební kartu, podrobnosti o placených tarifech nebo API nejsou v dostupných informacích uvedeny.
+Klíčové vlastnosti
+- Generování půdorysu z textového popisu místností
+- Překreslení nahraného náčrtu, fotky nebo PDF
+- Šest stylů kresby včetně 2D, 2.5D a 3D
+- Editace stěn, místností a nábytku bez nového generování
+Časté dotazy
+Co přesně FloorAI umí vytvořit?
+Z textového popisu, skicy, fotky nebo PDF vygeneruje za minutu půdorys v jednom ze šesti stylů (2D, 2.5D, 3D), který lze dál upravovat – posouvat stěny, přejmenovávat místnosti nebo přidávat nábytek.
+Kolik FloorAI stojí?
+Podrobnosti o placených tarifech nejsou zveřejněné, generování plánu si ale lze vyzkoušet zdarma bez zadání platební karty.
+Pro koho je nástroj vhodný a jak začít?
+Hodí se pro realitní makléře, architekty i majitele nemovitostí, kteří potřebují rychle vizualizovat dispozici – stačí nahrát skicu, fotku nebo popsat prostor a nástroj vygeneruje editovatelný plán.
+Kategorie

@@ -1,0 +1,17 @@
+Vecbase Say
+Vecbase Say převádí mluvenou řeč na upravený text přímo v e-mailech, zprávách a dokumentech na Macu a iPhonu.
+O nástroji
+Vecbase Say je nástroj pro hlasové psaní, který vloží text přímo do pole, kde právě pracujete, bez kopírování mezi aplikacemi. Na Macu stačí stisknout zkratku a mluvit, na iPhonu se přepne na klávesnici Say a klepne na mikrofon (podpora iPhonu se připravuje). Aplikace automaticky odstraňuje výplňová slova, doplňuje interpunkci a respektuje vyslovené opravy, díky čemuž je po diktování potřeba méně úprav textu. Say umožňuje nastavit vlastní slovník jmen a odborných termínů a také zvolit jiný výstupní jazyk, takže lze mluvit v jednom jazyce a text se zapíše přeložený do druhého. Zpracování řeči probíhá online, uložení historie vstupů je volitelné a při zapnutí se uchovává maximálně 30 dní s možností smazání v aplikaci. Na Macu je dostupná verze pro macOS 13 a novější. Bezplatný účet zahrnuje 2000 slov měsíčně, členství Vecbase Club pak nabízí neomezený hlasový vstup – jde tedy o nástroj s bezplatnou i placenou variantou.
+Klíčové vlastnosti
+- Vkládá text přímo do pole bez kopírování
+- Odstraňuje výplňová slova a doplňuje interpunkci
+- Respektuje vyslovené opravy textu
+- Vlastní slovník jmen a odborných termínů
+Časté dotazy
+Čím se Say liší od běžného diktování?
+Say odstraňuje výplňová slova, doplňuje interpunkci a respektuje jasně vyslovené opravy. Lze si přidat vlastní slovník jmen a odborných termínů nebo zvolit jiný výstupní jazyk, než ve kterém mluvíte.
+Kolik Say stojí?
+Bezplatný účet zahrnuje 2000 slov měsíčně zdarma. Členství Vecbase Club pak nabízí neomezený hlasový vstup za roční poplatek.
+Jak začít a na jakých zařízeních Say funguje?
+Say pro Mac si stáhnete a nainstalujete (vyžaduje macOS 13 a novější), poté stačí stisknout zkratku a mluvit přímo do pole, kde pracujete. Verze pro iPhone s klávesnicí Say se připravuje.
+Kategorie

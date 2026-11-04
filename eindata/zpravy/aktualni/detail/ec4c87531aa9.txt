@@ -1,0 +1,17 @@
+XCrawl
+API pro AI web scraping – extrakce strukturovaných dat (JSON, Markdown) z libovolných webových stránek pro vývojáře a automatizaci.
+O nástroji
+XCrawl je API nástroj určený pro extrakci dat z webových stránek, který výstup převádí do strukturovaného formátu JSON nebo čistého Markdownu vhodného pro AI agenty a automatizační workflow. Nabízí několik funkcí – Scrape API, Crawl API a SERP API – pro získávání dat, procházení webů i vyhledávání ve výsledcích vyhledávačů. Součástí služby jsou automaticky rotující globální rezidenční proxy, které pomáhají s obcházením blokací při scrapingu, a možnost pořizovat headless screenshoty stránek. Nástroj je určen primárně vývojářům a je dostupný přes API. Podle dostupných informací lze vyzkoušet bezplatnou zkušební verzi bez nutnosti zadávat platební kartu, nicméně trvale bezplatný tarif uveden není.
+Klíčové vlastnosti
+- Scrape API, Crawl API a SERP API v jednom nástroji
+- výstup ve formátu JSON nebo čistého Markdownu
+- automaticky rotující globální rezidenční proxy
+- pořizování headless screenshotů stránek
+Časté dotazy
+Co XCrawl přesně umí?
+Převádí obsah libovolných webových stránek do strukturovaného JSON nebo čistého Markdownu pomocí Scrape, Crawl a SERP API, včetně obcházení blokací přes rotující rezidenční proxy a pořizování screenshotů.
+Kolik XCrawl stojí?
+Nástroj nabízí bezplatnou zkušební verzi bez nutnosti zadávat platební kartu, trvale bezplatný tarif ani konkrétní ceny placených plánů ale nejsou uvedeny.
+Pro koho je XCrawl určen a jak začít?
+Je určen primárně vývojářům a automatizačním workflow, kteří potřebují data z webu pro AI agenty; stačí se zaregistrovat a spustit bezplatnou zkušební verzi bez karty.
+Kategorie

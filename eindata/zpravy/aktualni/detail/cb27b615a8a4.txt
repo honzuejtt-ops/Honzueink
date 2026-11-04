@@ -1,0 +1,17 @@
+Phrase
+AI zapisovatel poznámek ze schůzek, přednášek a hlasových memo pro iPhone, iPad, Mac a Apple Watch.
+O nástroji
+Phrase je aplikace, která z nahraného hovoru, přednášky nebo hlasové poznámky vytvoří editovatelný zápis: shrnutí, přijatá rozhodnutí a úkoly s vlastníky a termíny. Nahrávka zůstává připojená k poznámce, takže lze kliknutím na řádek přehrát přesně tu část zvuku, ze které text vznikl. Do poznámek lze vkládat i zvuk, video, PDF nebo fotografie a výsledek funguje jako blokový editor s nadpisy, zvýrazněním, kódem, vzorci a diagramy (matematické vzorce kreslí open-source nástroj SwaTex). Aplikace automaticky rozpozná přes 100 jazyků i při přepínání jazyka v rámci jedné schůzky. Do schůzky se nepřipojuje žádný bot a nahrávání nevyžaduje vytvoření účtu – poznámky zůstávají na zařízení, do cloudu se posílá jen zvuk ke zpracování. Aplikaci lze stáhnout zdarma, placený tarif Pro navíc přidává synchronizaci přes vlastní iCloud mezi iPhonem, iPadem a Macem, automatické přidávání úkolů do Připomínek, návrh e-mailu s shrnutím a převod poznámky na prezentaci nebo kvíz. Konkrétní cena tarifu Pro ani přesný rozsah omezení bezplatné verze nejsou v dostupných podkladech uvedeny.
+Klíčové vlastnosti
+- Přepis nahrávky na shrnutí, rozhodnutí a úkoly
+- Nahrávka zůstává připojená, přehrání kliknutím na řádek
+- Vkládání zvuku, videa, PDF i fotografií do poznámek
+- Rozpoznání přes 100 jazyků i při přepínání v hovoru
+Časté dotazy
+Co přesně Phrase umí vytvořit z nahrávky?
+Z nahraného hovoru, přednášky nebo hlasové poznámky vytvoří editovatelný zápis se shrnutím, přijatými rozhodnutími a úkoly s vlastníky a termíny, přičemž nahrávka zůstává propojená s textem pro zpětné přehrání.
+Kolik Phrase stojí?
+Aplikaci lze stáhnout a používat zdarma bez nutnosti registrace, placený tarif Pro přidává iCloud synchronizaci mezi zařízeními, automatické úkoly v Připomínkách a návrh e-mailu se shrnutím. Konkrétní cena tarifu Pro není v podkladech uvedena.
+Pro koho je Phrase vhodný a jak začít?
+Hodí se pro schůzky, přednášky, rozhovory i hlasové poznámky bez nutnosti připojovat bota do hovoru. Stačí stáhnout aplikaci pro iPhone, iPad, Mac nebo Apple Watch a začít nahrávat.
+Kategorie

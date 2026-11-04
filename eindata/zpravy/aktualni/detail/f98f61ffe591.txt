@@ -1,0 +1,17 @@
+Tok Live Recorder
+Tok Live Recorder nahrává TikTok LIVE streamy přímo v prohlížeči a po skončení nabídne ke stažení MP4 v původní kvalitě bez vodoznaku.
+O nástroji
+Tok Live Recorder umožňuje nahrát jakýkoliv veřejný TikTok LIVE stream bez instalace aplikace – stačí vložit odkaz na probíhající vysílání nebo zadat jméno tvůrce a nástroj nahrává na vlastních serverech, takže nahrávání pokračuje i po zavření karty nebo uzamčení telefonu. Výsledné video je dostupné jako MP4 v originálním rozlišení streamu, bez vodoznaku a bez komentářů či dárkových bannerů, přičemž soubor bývá podle uvedených statistik připravený ke stažení přibližně za 6 sekund po skončení nahrávání. Nástroj nabízí také automatické nahrávání – po přidání tvůrce kontroluje jeho stav každých 5 minut a jakmile spustí LIVE, nahrávání začne samo i bez zapnutého telefonu, s následným odesláním odkazu na MP4 e-mailem. Podle zmíněných dat se tak v prvním říjnovém období automaticky nahrálo 465 vysílání pro uživatele, kteří streamy sledovat nemohli. Bezplatná verze umožňuje jedno nahrávání denně po přihlášení přes Google, automatické sledování jednoho tvůrce a uchování nahrávek po dobu 3 dní; placený tarif Pro stojí 9,99 USD měsíčně a rozšiřuje limity na více tvůrců a delší uložení nahrávek. Fungovat má v jakémkoliv prohlížeči na iPhonu, Androidu i počítači, přičemž existuje i open-source CLI verze dostupná na GitHubu.
+Klíčové vlastnosti
+- Nahrávání probíhá na serverech, pokračuje po zavření karty
+- Automatické sledování tvůrce a spuštění nahrávání při LIVE
+- MP4 v originální kvalitě bez vodoznaku a bannerů
+- Soubor připraven ke stažení přibližně za 6 sekund
+Časté dotazy
+Co přesně Tok Live Recorder umí?
+Nahraje jakýkoliv veřejný TikTok LIVE stream bez instalace aplikace – stačí vložit odkaz nebo jméno tvůrce a nahrávání běží na serverech nástroje i po zavření prohlížeče. Výsledkem je MP4 v originální kvalitě bez vodoznaku, komentářů a dárkových bannerů.
+Kolik Tok Live Recorder stojí?
+Základní verze je zdarma s jedním nahráváním denně po přihlášení přes Google. Placený tarif Pro za 9,99 USD měsíčně nabízí sledování více tvůrců a delší uložení nahrávek.
+Pro koho je nástroj vhodný a jak začít?
+Hodí se pro fanoušky tvůrců, kteří chtějí zachytit LIVE vysílání, i když je zrovna nemohou sledovat. Stačí vložit odkaz na probíhající LIVE nebo nastavit automatické nahrávání pro konkrétního tvůrce a počkat na e-mail s odkazem na hotové video.
+Kategorie

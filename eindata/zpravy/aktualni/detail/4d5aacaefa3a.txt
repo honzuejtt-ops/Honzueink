@@ -1,0 +1,17 @@
+Yenpo
+Nativní Mac aplikace pro čtení a revizi kódu, který píše AI agent (Claude Code, Codex, Cursor) ve vašem projektu.
+O nástroji
+Yenpo je nativní aplikace pro macOS (Apple silicon i Intel, macOS 14+), která slouží k prohlížení a revizi kódu generovaného AI agenty. Otevře kořen git repozitáře, ve kterém agent pracuje, a v sekci Local Changes zobrazí vše, co se změnilo od posledního commitu, včetně diffu a nových souborů. Je možné porovnávat i jednotlivé commity nebo větve (například větev agenta proti main) v režimu určeném jen ke čtení. Aplikace nabízí navigaci v kódu přes lokální jazykové servery (definice, reference, volání funkcí) pro jazyky Swift, Rust, C, C++, Objective-C, Python, JavaScript, TypeScript a Go – rust-analyzer dokáže Yenpo nainstalovat sama, ostatní servery se berou z Xcode nebo PATH. Volitelně lze zapojit AI Reader, který na položenou otázku k vybrané části kódu odpoví s odkazy na konkrétní řádky zdrojového souboru; k jeho použití je potřeba vlastní připojení k AI poskytovateli, jehož podmínky používání se na odeslaný kód a dotaz vztahují. Prohlížení souborů, vyhledávání a navigace v kódu podle textu funguje bez nutnosti účtu u jakéhokoli poskytovatele modelu – ten je potřeba jen pro volitelný AI Reader. Aktuální stabilní verze je 1.0.6.
+Klíčové vlastnosti
+- Diff a nové soubory od posledního commitu v sekci Local Changes
+- Porovnání jednotlivých commitů i větví v režimu jen pro čtení
+- Navigace v kódu přes lokální jazykové servery (definice, reference, volání)
+- Podpora Swift, Rust, C, C++, Objective-C, Python, JavaScript, TypeScript a Go
+Časté dotazy
+Co přesně Yenpo umí?
+Yenpo je nativní Mac aplikace, která otevře git repozitář vašeho AI agenta a zobrazí diff změn od posledního commitu, umožní porovnat commity či větve a procházet kód pomocí jazykových serverů (definice, reference, volání funkcí). Volitelně lze zapojit AI Reader, který odpoví na dotazy ke kódu s odkazy na konkrétní řádky.
+Kolik Yenpo stojí?
+Cenový model aplikace není z dostupných podkladů znám.
+Potřebuji k používání Yenpo účet u AI poskytovatele?
+Ne. Prohlížení lokálních změn, porovnání commitů a větví, vyhledávání a navigace v kódu podle jazykových serverů fungují bez jakéhokoli účtu u AI poskytovatele. Vlastní připojení k AI je potřeba jen pro volitelný AI Reader.
+Kategorie

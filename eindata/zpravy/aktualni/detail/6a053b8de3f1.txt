@@ -1,0 +1,17 @@
+GMapsScraper.AI
+Nástroj pro hromadné scrapování firemních dat z Google Maps – e-maily, telefony, hodnocení i recenze, export do CSV/JSON.
+O nástroji
+GMapsScraper.AI je cloudový nástroj, který podle zadaných klíčových slov vyhledává firmy na Google Maps a extrahuje jejich data – název, adresu, telefonní číslo, e-mail (pokud je dostupný), web, odkazy na sociální sítě, hodnocení, počet recenzí a otevírací dobu. Výsledky lze stáhnout ve formátu CSV nebo JSON, což se hodí pro import do CRM, lead generation nebo tržní výzkum. Zpracování keywordů probíhá paralelně v cloudu, díky čemuž jsou výsledky hotové během minut. Služba nabízí i API pro napojení na vlastní workflow. Systém funguje na kreditech – spotřebovávají se podle počtu vrácených výsledků, přičemž bezplatný plán zahrnuje 1 000 kreditů měsíčně. Placené tarify nabízejí vyšší kvóty a prioritní zpracování, k dispozici jsou i jednorázové dokupy kreditů. Podle výrobce nástroj využívá přes 7 500 firem a databáze obsahuje přes 50 milionů míst.
+Klíčové vlastnosti
+- Hromadné vyhledávání podle více klíčových slov najednou
+- Extrakce e-mailů, telefonů, webů a sociálních sítí
+- Export výsledků do CSV nebo JSON
+- Paralelní zpracování v cloudu – výsledky za minuty
+Časté dotazy
+Co přesně GMapsScraper.AI umí získat z Google Maps?
+Nástroj extrahuje název firmy, adresu, telefon, e-mail (je-li dostupný), web, odkazy na sociální sítě, hodnocení, počet recenzí a otevírací dobu. Výsledky lze stáhnout v CSV nebo JSON pro import do CRM či analýzu.
+Kolik GMapsScraper.AI stojí a jak funguje systém kreditů?
+Služba běží na kreditech, které se spotřebovávají podle počtu vrácených výsledků. Zdarma je 1 000 kreditů měsíčně, placené tarify nabízejí vyšší kvóty, prioritní zpracování a lze dokoupit kredity jednorázově.
+Pro koho je nástroj určený a jak začít?
+Hodí se pro lead generation agentury, marketéry, SEO specialisty i realitní analytiky sbírající firemní data ve velkém. Stačí zadat klíčová slova do formuláře na webu a spustit scrapování zdarma bez nutnosti platební karty.
+Kategorie

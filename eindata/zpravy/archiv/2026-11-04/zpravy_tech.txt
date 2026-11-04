@@ -1,3 +1,462 @@
+|T|Ceny grafických karet od Nvidie stoupnou až o několik tisíc. Může to být už v řádu dnů|D|04.11.2026 20:24|P|K pár dní starým zprávám z Asie, dle nichž budou zdražovat grafiky Radeon, se bohužel „přidává“ i Nvidia. Dle asijských zdrojů se značné zdražení chys...|M|Cnews|X|Už jsme o tento týden informovali o zprávách, dle nichž budou tento měsíc zdražovat grafické karty Radeon. Bohužel pro hráče se zdá, že u grafik od AMD to nezůstane. Prakticky vzápětí přicházejí zprávy také o chystaném zvyšování cen GPU od konkurence. Nárůst cen tak bude obecný a hráči shánějící grafickou kartu se mu nebudou moci vyhnout. Hlavním faktorem těchto zdražování by v obou případech měl být boom AI, který masivně zdražuje paměti.
+Tato informace se stejně jako zprávy o chystaném zdražování Radeonů objevily na fóru Board Channels, kde se často dají najít úniky z prostředí asijských výrobců hardwaru. Podle Board Channels chystají výrobci karet také na probíhající měsíc (listopad) navýšení cen grafik Nvidia na čínském trhu. Jedním z těchto výrobců je firma Colorful, která prodává karty hlavně na vnitřním čínském trhu a která údajně už ceny zvýšila. Další značka Galax, která je aktivní i na globální trhu, údajně ceny zvýší příští týden.
+V tomto případě tedy zpráva neříká to, že přímo Nvidia zvýšila ceny GPU a/nebo pamětí GDDR6 či GDDR7 pro výrobce karet, ani že jde o zdražení globální. Je ale pravděpodobné, že výrobci karet ceny zvedají kvůli tomu, že se jim zvyšují náklady, což ovlivňuje celý trh globálně a je pravděpodobné, že navýšení ceny pamětí i v tomto případě provádí i sama Nvidia, takže se objeví u všech výrobců karet, kteří ho víceméně přenesou dál do ceny grafik pro koncové zákazníky. A jelikož v Asii už zdražování začalo, může se u nás projevit hodně rychle.
+Stovky až tisíce navíc za drahé, ale i ty levnější karty
+Největší zdražení nastává u grafik GeForce RTX 5090D V2, která by se měla přestat úplně vyrábět, jelikož Nvidia údajně ukončila dodávky čipu GB202 pro spotřebitelské grafické karty. Colorful, případně Nvidia mohou zvyšovat cenu posledních šarží v podstatě jen proto, aby maximálně vytěžili kupující, kteří si rozeberou poslední kusy karty, u nichž je zaručeno, že se vyprodají. Colorful údajně cenu zvedne o 2200–3300 čínských jüanů, což odpovídá okolo 7 až 11 tisíc Kč.
+Zdražené ale mají být i grafiky GeForce RTX 5080, a to o 2500–2800 jüanů (8–9 tisíc Kč). I zde může být důvodem to, že Nvidia prý ukončuje dodávky čipů. Nvidia totiž prý utlumuje výrobu dosavadní 16GB verze karty, ale zároveň ještě nebyla zahájena výroba modelů GeForce RTX 5080 24GB, které mají příští rok přijít jako náhrada. Karta se tak může vyprodávat, což může vést ke značné inflaci v cenách u posledních 16GB kusů (a potenciálně prvních šaržích 24GB modelů, až přijdou na trh).
+Na globálním trhu už kvůli tomu karty GeForce RTX 5080 zdražily na částky přesahující dvojnásobek původní doporučené ceny (1000 $). U nás ještě situace tak daleko nezašla, největší český eshop Alza má teď nejlevnější kartu za 46 tisíc Kč, zatímco původní doporučená cena byla 29 999 Kč. Avšak kurz koruny byl tehdy o desetinu slabší. Se zahrnutím tohoto faktoru vychází zdražení proti původní doporučené ceně na +70 %.
+Mírnější, ale stále nepříjemné zdražení se očekává u GeForce RTX 5070 Ti a GeForce RTX 5070. První má zdražit o 1000 jüanů (něco přes tři tisíce Kč), druhá o 600–900 jüanů (2000–3000 Kč).
+Zdražení se týká i levnějších modelů: GeForce RTX 5060 Ti zdraží o 250–400 jüanů (800–1300 Kč) v případě 16GB verze a 100–250 jüanů (300–800 Kč) v případě 8GB modelu. GeForce RTX 5060 půjde nahoru o 150–200 jüanů (okolo 500–650 Kč).
+Jde o ceny pro Čínu včetně tamní daně z přidané hodnoty, jež by měla být nižší (13 %) než obvyklá evropská. Pokud by se stejné nárůsty cen přenesly i k nám, byly by proto asi o několik procent vyšší právě kvůli vyšší sazbě DPH.
+Toto bohužel asi není poslední zdražení grafických karet pro herní počítače. Dokud bude trvat „hype“ v sektoru umělé inteligence a investice do budování datacenter, které jsou jím motivované v očekávání budoucích zisků, ceny pamětí (a asi i samotných čipů GPU) půjdou nahoru. Saturování poptávky po čipech DRAM se v nejbližší době nečeká, takže je možné, že postupné zvyšování cen může pokračovat i celý rok 2027 a možná i dál. A výjimečné nemusí být ani takovéto zvyšování cen každý měsíc.|E|
+|T|Windows 11 nyní i s 8GB RAM o 20-40 % svižnější|D|04.11.2026 20:00|P|Microsoft přichází s aktualizovanou verzí operačního systému Windows 11, která by měla lépe fungovat i s pouhými 8 GB RAM.|M|SvětHW|X|Microsoft přichází s aktualizovanou verzí operačního systému Windows 11, která by měla lépe fungovat i s pouhými 8 GB RAM.
+Operační systém Microsoft Windows 11 bude nově o něco úspornějším a svižnějším systémem. Jeho paměťové nároky dosud vytvářely potřebu docela velkého množství RAM. V době, kdy jsou ceny operačních pamětí kvůli AI a paměťové krizi velmi vysoké, se Microsoft rozhodl zaměřit na optimalizaci systému pro slabší konfigurace s menší pamětí. Pavan Davuluri, viceprezident divize Windows a zařízení, oznámil vylepšení, která mají výrazně změnit pocit z práce na počítačích s pouhými 8 GB RAM. Podle interních testů Microsoftu je systém nyní až o 20 % více responzivní a multitasking je díky přineseným změnám až o 40 % rychlejší.
+Klíčem k vyššímu výkonu je především efektivnější práce s pamětí a vylepšená komprese dat. Windows nyní dokáže udržet až 2 GB aktivních dat přímo v RAM místo toho, aby je přesouval do pomalejší virtuální paměti na disku. To znamená, že aplikace nebo karty v prohlížeči, které uživatel nechal otevřené, budou mít při návratu mnohem menší tendenci se znovu načítat ze swapovacího souboru, budou se muset akorát dekomprimovat. Systém navíc dává prioritu aktuální činnosti uživatele a omezuje procesy na pozadí, jako je např. indexování, což se projevuje rychlejším spouštěním Startu, Nastavení nebo Průzkumníka.
+Úsporu okolo 900 MB přinesly optimalizace v prohlížeči Edge i v balíku Microsoft 365. Widgety se nyní načítají až v momentě jejich otevření, což ušetří zhruba 200 MB RAM. Prohlížeč Edge navíc nově uspává neaktivní karty již po 15 minutách, zatímco dříve to bylo standardně po 2 hodinách.
+Microsoft přiznává, že stroje s 16 GB nebo 32 GB RAM budou z hlediska výkonu stále lepší, nicméně cílem bylo umožnit plnohodnotnou práci i na základních konfiguracích. Pro získání těchto vylepšení je nutné aktualizovat Windows 11 na verzi 26H2, build 26300.9818 nebo novější.|E|
+|T|Tok Live Recorder|D|04.11.2026 18:09|P|Tok Live Recorder nahrává TikTok LIVE streamy přímo v prohlížeči a po skončení nabídne ke stažení MP4 v původní kvalitě bez vodoznaku.|M|EJAJ|X|Tok Live Recorder
+Tok Live Recorder nahrává TikTok LIVE streamy přímo v prohlížeči a po skončení nabídne ke stažení MP4 v původní kvalitě bez vodoznaku.
+O nástroji
+Tok Live Recorder umožňuje nahrát jakýkoliv veřejný TikTok LIVE stream bez instalace aplikace – stačí vložit odkaz na probíhající vysílání nebo zadat jméno tvůrce a nástroj nahrává na vlastních serverech, takže nahrávání pokračuje i po zavření karty nebo uzamčení telefonu. Výsledné video je dostupné jako MP4 v originálním rozlišení streamu, bez vodoznaku a bez komentářů či dárkových bannerů, přičemž soubor bývá podle uvedených statistik připravený ke stažení přibližně za 6 sekund po skončení nahrávání. Nástroj nabízí také automatické nahrávání – po přidání tvůrce kontroluje jeho stav každých 5 minut a jakmile spustí LIVE, nahrávání začne samo i bez zapnutého telefonu, s následným odesláním odkazu na MP4 e-mailem. Podle zmíněných dat se tak v prvním říjnovém období automaticky nahrálo 465 vysílání pro uživatele, kteří streamy sledovat nemohli. Bezplatná verze umožňuje jedno nahrávání denně po přihlášení přes Google, automatické sledování jednoho tvůrce a uchování nahrávek po dobu 3 dní; placený tarif Pro stojí 9,99 USD měsíčně a rozšiřuje limity na více tvůrců a delší uložení nahrávek. Fungovat má v jakémkoliv prohlížeči na iPhonu, Androidu i počítači, přičemž existuje i open-source CLI verze dostupná na GitHubu.
+Klíčové vlastnosti
+- Nahrávání probíhá na serverech, pokračuje po zavření karty
+- Automatické sledování tvůrce a spuštění nahrávání při LIVE
+- MP4 v originální kvalitě bez vodoznaku a bannerů
+- Soubor připraven ke stažení přibližně za 6 sekund
+Časté dotazy
+Co přesně Tok Live Recorder umí?
+Nahraje jakýkoliv veřejný TikTok LIVE stream bez instalace aplikace – stačí vložit odkaz nebo jméno tvůrce a nahrávání běží na serverech nástroje i po zavření prohlížeče. Výsledkem je MP4 v originální kvalitě bez vodoznaku, komentářů a dárkových bannerů.
+Kolik Tok Live Recorder stojí?
+Základní verze je zdarma s jedním nahráváním denně po přihlášení přes Google. Placený tarif Pro za 9,99 USD měsíčně nabízí sledování více tvůrců a delší uložení nahrávek.
+Pro koho je nástroj vhodný a jak začít?
+Hodí se pro fanoušky tvůrců, kteří chtějí zachytit LIVE vysílání, i když je zrovna nemohou sledovat. Stačí vložit odkaz na probíhající LIVE nebo nastavit automatické nahrávání pro konkrétního tvůrce a počkat na e-mail s odkazem na hotové video.
+Kategorie|E|
+|T|Zmienka|D|04.11.2026 18:09|P|Zmienka ověří, zda AI asistenti jako Gemini doporučí vaši firmu, když ji zákazník hledá ve vašem městě.|M|EJAJ|X|Zmienka
+Zmienka ověří, zda AI asistenti jako Gemini doporučí vaši firmu, když ji zákazník hledá ve vašem městě.
+O nástroji
+Zmienka je nástroj, který zjišťuje, jak si vaše firma stojí ve výsledcích AI vyhledávání. Po zadání webu stránky otestují, zda AI asistenti při dotazu na konkrétní službu ve vašem městě zmíní právě váš podnik, a výsledek doplní o datum testu a použité zdroje. Podle webu je k dispozici bezplatný test, placené varianty pak vycházejí z ceny uvedené na stránce (90 €). Rozhraní nástroje je ve slovenštině. Z dostupných informací není jasné, zda nástroj nabízí API nebo zda jde o open source řešení – tyto údaje web neuvádí.
+Klíčové vlastnosti
+- Test, zda AI asistenti doporučí vaši firmu
+- Ověření pro konkrétní službu a město
+- Výsledek doplněný o datum testu
+- Uvedení zdrojů, ze kterých AI čerpala
+Časté dotazy
+Co přesně Zmienka zjistí?
+Nástroj ověří, zda AI asistenti jako Gemini při dotazu na konkrétní službu ve vašem městě doporučí právě váš podnik, a výsledek doplní o datum testu a použité zdroje.
+Kolik Zmienka stojí?
+K dispozici je bezplatný test, placené varianty pak vycházejí z ceny 90 € uvedené na stránce.
+Jak začít nástroj používat?
+Stačí na webu zadat adresu vaší firemní stránky a spustit bezplatný test, který prověří viditelnost u AI asistentů.
+Kategorie|E|
+|T|Yenpo|D|04.11.2026 18:09|P|Nativní Mac aplikace pro čtení a revizi kódu, který píše AI agent (Claude Code, Codex, Cursor) ve vašem projektu.|M|EJAJ|X|Yenpo
+Nativní Mac aplikace pro čtení a revizi kódu, který píše AI agent (Claude Code, Codex, Cursor) ve vašem projektu.
+O nástroji
+Yenpo je nativní aplikace pro macOS (Apple silicon i Intel, macOS 14+), která slouží k prohlížení a revizi kódu generovaného AI agenty. Otevře kořen git repozitáře, ve kterém agent pracuje, a v sekci Local Changes zobrazí vše, co se změnilo od posledního commitu, včetně diffu a nových souborů. Je možné porovnávat i jednotlivé commity nebo větve (například větev agenta proti main) v režimu určeném jen ke čtení. Aplikace nabízí navigaci v kódu přes lokální jazykové servery (definice, reference, volání funkcí) pro jazyky Swift, Rust, C, C++, Objective-C, Python, JavaScript, TypeScript a Go – rust-analyzer dokáže Yenpo nainstalovat sama, ostatní servery se berou z Xcode nebo PATH. Volitelně lze zapojit AI Reader, který na položenou otázku k vybrané části kódu odpoví s odkazy na konkrétní řádky zdrojového souboru; k jeho použití je potřeba vlastní připojení k AI poskytovateli, jehož podmínky používání se na odeslaný kód a dotaz vztahují. Prohlížení souborů, vyhledávání a navigace v kódu podle textu funguje bez nutnosti účtu u jakéhokoli poskytovatele modelu – ten je potřeba jen pro volitelný AI Reader. Aktuální stabilní verze je 1.0.6.
+Klíčové vlastnosti
+- Diff a nové soubory od posledního commitu v sekci Local Changes
+- Porovnání jednotlivých commitů i větví v režimu jen pro čtení
+- Navigace v kódu přes lokální jazykové servery (definice, reference, volání)
+- Podpora Swift, Rust, C, C++, Objective-C, Python, JavaScript, TypeScript a Go
+Časté dotazy
+Co přesně Yenpo umí?
+Yenpo je nativní Mac aplikace, která otevře git repozitář vašeho AI agenta a zobrazí diff změn od posledního commitu, umožní porovnat commity či větve a procházet kód pomocí jazykových serverů (definice, reference, volání funkcí). Volitelně lze zapojit AI Reader, který odpoví na dotazy ke kódu s odkazy na konkrétní řádky.
+Kolik Yenpo stojí?
+Cenový model aplikace není z dostupných podkladů znám.
+Potřebuji k používání Yenpo účet u AI poskytovatele?
+Ne. Prohlížení lokálních změn, porovnání commitů a větví, vyhledávání a navigace v kódu podle jazykových serverů fungují bez jakéhokoli účtu u AI poskytovatele. Vlastní připojení k AI je potřeba jen pro volitelný AI Reader.
+Kategorie|E|
+|T|Hotel Lobby AI Video Generator|D|04.11.2026 18:09|P|Z dvou nahraných fotek vygeneruje video napodobující trend „Hotel Lobby AI“ – obě osoby v oranžové COLORS kabince u mikrofonu.|M|EJAJ|X|Hotel Lobby AI Video Generator
+Z dvou nahraných fotek vygeneruje video napodobující trend „Hotel Lobby AI“ – obě osoby v oranžové COLORS kabince u mikrofonu.
+O nástroji
+Hotel Lobby AI Video Generator vytvoří krátké video ve stylu virálního trendu „Hotel Lobby“ (Quavo & Takeoff, A COLORS SHOW) jen z dvou nahraných fotografií – žádný textový prompt ani zelené plátno není potřeba. Fotka první osoby se umístí na levou stranu scény, druhá na pravou, a nástroj doplní oranžovou kabinku, visetící mikrofon i pohyby obou postav podle originálního klipu, včetně původní hudby. Délku videa lze zvolit 5, 10 nebo 15 sekund, k dispozici jsou modely Seedance 2.0 (Mini, Fast, 2.5) ve výstupu 720p a MiniMax H3 i v 1080p. Systém funguje na kreditech, přičemž přesná cena se zobrazí ještě před generováním a neúspěšné pokusy jsou automaticky vráceny. Nové účty mohou získat až 10 úvodních kreditů platných 3 dny, což nestačí ani na nejlevnější 5sekundové video (od 12 kreditů), proto je potřeba dokoupit kredity – jednorázový balíček za 5 dolarů přidává 24 kreditů, dostačujících na 10sekundové video v modelu Seedance 2.0 Mini. Bezplatně vygenerovaná videa obsahují malý vodoznak aihotellobby.net, který zmizí po jakékoliv platbě. Hotové video je ve formátu MP4 v poměru 16:9, připravené ke sdílení na TikToku, Instagram Reels nebo YouTube Shorts.
+Klíčové vlastnosti
+- Video z pouhých dvou nahraných fotek bez promptu
+- Napodobí originální klip „Hotel Lobby“ s oranžovou kabinkou
+- Délka videa 5, 10 nebo 15 sekund
+- Modely Seedance 2.0 a MiniMax H3 ve 720p či 1080p
+Časté dotazy
+Co přesně nástroj vytvoří z mých fotek?
+Z dvou nahraných fotografií vygeneruje krátké video, kde se obě osoby objeví v oranžové kabince u mikrofonu podle trendu „Hotel Lobby“, včetně původní hudby a pohybů z originálního klipu.
+Kolik to stojí?
+Systém funguje na kreditech, nejlevnější 5sekundové video stojí od 12 kreditů a cena se zobrazí před generováním. Balíček za 5 dolarů přidává 24 kreditů, což stačí na 10sekundové video v modelu Seedance 2.0 Mini.
+Jak začít a je to zdarma?
+Stačí nahrát jednu jasnou fotku na osobu, zvolit délku videa a stisknout generování. Nové účty dostanou až 10 úvodních kreditů na 3 dny, to ale nepokryje ani nejlevnější video, takže je potřeba dokoupit kredity.
+Kategorie|E|
+|T|FloorAI|D|04.11.2026 18:09|P|AI generátor půdorysů, který z popisu, skicy, fotky nebo PDF vytvoří za minutu čistý, popsaný plán s možností editace.|M|EJAJ|X|FloorAI
+AI generátor půdorysů, který z popisu, skicy, fotky nebo PDF vytvoří za minutu čistý, popsaný plán s možností editace.
+O nástroji
+FloorAI umí vytvořit půdorys bytu nebo domu několika způsoby – buď z textového popisu prostoru (např. počet ložnic, otevřená kuchyně), nebo překreslením nahraného náčrtu, fotografie či PDF dokumentu, včetně starých zažloutlých geodetických zaměření nebo ručně kreslených skic na milimetrový papír. Nabízí šest stylů kresby – 2D marketingový plán, 2D barevný plán, 2.5D axonometrii, 3D pohled shora, 3D perspektivu i 2D technický plán, přičemž vygenerovaný výsledek lze následně upravovat: posouvat stěny, přejmenovávat místnosti nebo přidávat nábytek, aniž by bylo nutné celý plán generovat znovu. Součástí nástroje je také samostatný bezplatný editor pro kreslení půdorysů od nuly bez nutnosti registrace, s podporou exportu do formátu DXF. Nástroj dále umí z hotového layoutu vytvořit animovanou prezentaci ve stylu letu dronem nebo proměny z prázdného prostoru na zařízený, vhodnou pro inzerci nemovitostí nebo sociální sítě. Generování samotného plánu lze vyzkoušet zdarma bez nutnosti zadávat platební kartu, podrobnosti o placených tarifech nebo API nejsou v dostupných informacích uvedeny.
+Klíčové vlastnosti
+- Generování půdorysu z textového popisu místností
+- Překreslení nahraného náčrtu, fotky nebo PDF
+- Šest stylů kresby včetně 2D, 2.5D a 3D
+- Editace stěn, místností a nábytku bez nového generování
+Časté dotazy
+Co přesně FloorAI umí vytvořit?
+Z textového popisu, skicy, fotky nebo PDF vygeneruje za minutu půdorys v jednom ze šesti stylů (2D, 2.5D, 3D), který lze dál upravovat – posouvat stěny, přejmenovávat místnosti nebo přidávat nábytek.
+Kolik FloorAI stojí?
+Podrobnosti o placených tarifech nejsou zveřejněné, generování plánu si ale lze vyzkoušet zdarma bez zadání platební karty.
+Pro koho je nástroj vhodný a jak začít?
+Hodí se pro realitní makléře, architekty i majitele nemovitostí, kteří potřebují rychle vizualizovat dispozici – stačí nahrát skicu, fotku nebo popsat prostor a nástroj vygeneruje editovatelný plán.
+Kategorie|E|
+|T|Taijora|D|04.11.2026 18:09|P|Bezplatná kalkulačka čínského horoskopu Bazi (Čtyři pilíře osudu) s pravým slunečním časem a AI interpretací.|M|EJAJ|X|Taijora
+Bezplatná kalkulačka čínského horoskopu Bazi (Čtyři pilíře osudu) s pravým slunečním časem a AI interpretací.
+O nástroji
+Taijora je nástroj pro výpočet Bazi natálního horoskopu (Four Pillars) založený na tradici Shenxiao a astronomických algoritmech pravého slunečního času. Uživatel zadá datum, čas a místo narození (solární nebo lunární kalendář, pohlaví) a nástroj vytvoří deterministický výpočet s přesným určením slunečních period a půlnočních hranic na vteřiny, aby se předešlo chybám v pilířích. Výsledný graf obsahuje čtyři pilíře (rok, měsíc, den, hodina) s hlavními, vedlejšími a zbytkovými skrytými nebeskými kmeny, Deset bohů, Nayin a Shensha hvězdy. AI analýza kombinuje více tradičních škol – určování „užitečných bohů“ pomocí substance-function mechaniky a hodnocení příznivých/nepříznivých prvků podle síly, klimatu a vyvažovacích pravidel – a doplňuje ji fyziognomií a ústními mnemotechnikami pro hlubší výklad. Podle dostupných údajů jde o bezplatnou kalkulačku bez zmínky o API či otevřeném zdrojovém kódu. Rozhraní stránky je v angličtině, česká lokalizace není uvedena.
+Klíčové vlastnosti
+- Čtyři pilíře osudu s hlavními i skrytými nebeskými kmeny
+- Pravý sluneční čas na vteřiny přesný
+- Deset bohů, Nayin a Shensha hvězdy v grafu
+- AI interpretace kombinující více tradičních škol
+Časté dotazy
+Co přesně Taijora počítá?
+Taijora vytvoří natální Bazi graf (Four Pillars) se čtyřmi pilíři roku, měsíce, dne a hodiny, včetně skrytých kmenů, Deseti bohů, Nayin a Shensha hvězd, a doplní jej AI interpretací podle tradice Shenxiao.
+Kolik Taijora stojí?
+Podle dostupných údajů jde o bezplatnou kalkulačku, konkrétní cenový model ale není na webu specifikován.
+Jak se s Taijora začíná?
+Stačí zadat datum, čas a místo narození (solární nebo lunární kalendář) a pohlaví, nástroj poté automaticky vypočítá deterministický graf a nabídne hlubší AI analýzu.
+Kategorie|E|
+|T|Wan AI|D|04.11.2026 18:09|P|Wan AI je online generátor videí, který z textových promptů nebo obrázků vytváří videa a voiceovery pro marketing, e-shopy i sociální sítě.|M|EJAJ|X|Wan AI
+Wan AI je online generátor videí, který z textových promptů nebo obrázků vytváří videa a voiceovery pro marketing, e-shopy i sociální sítě.
+O nástroji
+Wan AI je platforma pro generování videí pomocí umělé inteligence, která umožňuje vytvářet videa z textových promptů (text-to-video) nebo z obrázků (image-to-video) včetně voiceoveru. Nástroj nabízí bezplatnou standardní ukázku bez nutnosti zadávat platební kartu, konkrétně jeden free standard preview s 20 kredity. Pro náročnější použití je k dispozici verze Pro s HD výstupem, delšími klipy a pokročilými tvůrčími kontrolami. K dispozici jsou různé modelové workflow – Wan 2.5 Pro, Wan 2.6 Pro, Wan 2.7 Pro a připravovaný Wan 3.0 Preview zaměřený na 4K video, vícestřihovou režii, ovládání kamery a synchronizaci zvuku. Nástroj je určen pro tvorbu marketingových videí, produktových demo klipů, reklam na sociální sítě i filmových scén pro YouTube. Uživatel zadá prompt nebo nahraje obrázek (PNG, JPG nebo WebP do 8 MB, případně veřejnou URL adresu), vybere vhodný workflow a vygenerované video může rovnou použít pro marketing nebo kreativní storytelling.
+Klíčové vlastnosti
+- Generování videí z textu i z obrázků
+- Automatický voiceover k videím
+- Nahrání referenčního obrázku PNG, JPG nebo WebP do 8 MB
+- Více modelových workflow Wan 2.5 až 2.7 Pro
+Časté dotazy
+Co přesně Wan AI umí vygenerovat?
+Z textového promptu nebo nahraného obrázku vytvoří video včetně voiceoveru, vhodné pro marketingové klipy, produktová videa, reklamy na sociální sítě nebo filmové scény.
+Kolik Wan AI stojí?
+Základní vyzkoušení je zdarma bez nutnosti zadávat kartu, pro HD výstup, delší klipy a pokročilé kontroly je určena placená verze Pro.
+Jak začít a pro koho je nástroj určený?
+Stačí zadat textový prompt nebo nahrát obrázek (případně veřejnou URL), vybrat workflow jako Wan 2.5, 2.6 nebo 2.7 Pro a vygenerovat video; hodí se pro marketéry, e-shopy i tvůrce obsahu na sociální sítě.
+Kategorie|E|
+|T|Avatiko|D|04.11.2026 18:09|P|Avatiko vytvoří AI influencera z vlastní postavy a vloží ji do videí podle nahraného referenčního klipu nebo odkazu.|M|EJAJ|X|Avatiko
+Avatiko vytvoří AI influencera z vlastní postavy a vloží ji do videí podle nahraného referenčního klipu nebo odkazu.
+O nástroji
+Avatiko umožňuje jednou vytvořit AI postavu – zvolit obličej, účes, outfit a styl – a tuto postavu pak použít v různých videích. Uživatel nahraje referenční video nebo vloží odkaz (např. na TikTok) a nástroj vygeneruje stejné video s danou AI postavou namísto originálního herce. Podle popisu na webu lze tímto způsobem vytvořit scény jako ranní rutina, vaření v kuchyni, předvedení produktu nebo procházka v uličním stylu, přičemž postava si ve všech klipech zachovává stejný vzhled. Informace o ceně, případné bezplatné verzi, API přístupu ani otevřeném zdrojovém kódu nejsou z dostupných podkladů ověřitelné, proto je zde neuvádíme.
+Klíčové vlastnosti
+- Vytvoření vlastní AI postavy (obličej, účes, outfit, styl)
+- Vložení postavy do videa podle referenčního klipu
+- Import videa přes odkaz, např. z TikToku
+- Zachování stejného vzhledu napříč různými scénami
+Časté dotazy
+Co přesně Avatiko umí?
+Avatiko vytvoří vlastní AI postavu podle zvoleného vzhledu a vloží ji do videa podle nahraného referenčního klipu nebo odkazu, například z TikToku, přičemž postava si zachová stejný vzhled ve všech scénách.
+Kolik Avatiko stojí?
+Konkrétní ceník ani podrobnosti o placených plánech nejsou z dostupných podkladů ověřitelné.
+Jak začít Avatiko používat?
+Stačí si vytvořit AI postavu výběrem obličeje, účesu, outfitu a stylu, poté nahrát referenční video nebo vložit odkaz a nástroj vygeneruje nové video s touto postavou.
+Kategorie|E|
+|T|RouteMux|D|04.11.2026 18:09|P|RouteMux je AI brána s jedním API klíčem a rozhraním kompatibilním s OpenAI, přes kterou voláte modely mnoha poskytovatelů a platíte jen úspěšné požad...|M|EJAJ|X|RouteMux
+RouteMux je AI brána s jedním API klíčem a rozhraním kompatibilním s OpenAI, přes kterou voláte modely mnoha poskytovatelů a platíte jen úspěšné požadavky.
+O nástroji
+RouteMux je takzvaná AI brána pro vývojáře. Místo samostatných účtů a klíčů u každého poskytovatele používáte jeden klíč a jeden endpoint kompatibilní s OpenAI, takže stačí zachovat SDK, které už máte, a změnit adresu. Přes bránu jdou modely od OpenAI, Anthropicu, Googlu, xAI, DeepSeeku, Qwenu, MiniMaxu, Moonshotu a dalších, a to pro text, obrázky i video. Hlavní důraz klade služba na spolehlivost: požadavky má rozložené na více redundantních tras, a když jedna selže, přepne na další. Účtují se jen požadavky, které uspějí. V konzoli najdete přehled spotřeby, logy požadavků, úspěšnost a latenci. Platí se podle spotřeby bez předplatného a bez placení za uživatele, dobití kreditu začíná na 10 dolarech a nevyčerpaný zůstatek lze podle webu kdykoli vybrat. Ceny jednotlivých modelů uvádí ceník přímo na webu.
+Klíčové vlastnosti
+- Jeden API klíč pro více poskytovatelů modelů
+- Rozhraní kompatibilní s OpenAI SDK
+- Podpora textu, obrázků i videa
+- Automatické přepnutí na redundantní trasu při selhání
+Časté dotazy
+Jaké modely lze přes RouteMux volat?
+Přes jednotné API lze volat modely od OpenAI, Anthropicu, Googlu, xAI, DeepSeeku, Qwenu, MiniMaxu, Moonshotu a dalších poskytovatelů, a to pro text, obrázky i video.
+Kolik RouteMux stojí?
+Platí se podle skutečné spotřeby bez předplatného, účtují se jen úspěšné požadavky a ceny jednotlivých modelů najdete v ceníku na webu. Dobití kreditu začíná na 10 dolarech a nevyčerpaný zůstatek lze kdykoli vybrat.
+Pro koho je RouteMux určený a jak začít?
+Je určen vývojářům, kteří chtějí místo samostatných účtů u každého poskytovatele používat jeden API klíč a endpoint kompatibilní s OpenAI. Stačí v existujícím SDK změnit adresu endpointu a dobít kredit.
+Kategorie|E|
+|T|Phrase|D|04.11.2026 18:09|P|AI zapisovatel poznámek ze schůzek, přednášek a hlasových memo pro iPhone, iPad, Mac a Apple Watch.|M|EJAJ|X|Phrase
+AI zapisovatel poznámek ze schůzek, přednášek a hlasových memo pro iPhone, iPad, Mac a Apple Watch.
+O nástroji
+Phrase je aplikace, která z nahraného hovoru, přednášky nebo hlasové poznámky vytvoří editovatelný zápis: shrnutí, přijatá rozhodnutí a úkoly s vlastníky a termíny. Nahrávka zůstává připojená k poznámce, takže lze kliknutím na řádek přehrát přesně tu část zvuku, ze které text vznikl. Do poznámek lze vkládat i zvuk, video, PDF nebo fotografie a výsledek funguje jako blokový editor s nadpisy, zvýrazněním, kódem, vzorci a diagramy (matematické vzorce kreslí open-source nástroj SwaTex). Aplikace automaticky rozpozná přes 100 jazyků i při přepínání jazyka v rámci jedné schůzky. Do schůzky se nepřipojuje žádný bot a nahrávání nevyžaduje vytvoření účtu – poznámky zůstávají na zařízení, do cloudu se posílá jen zvuk ke zpracování. Aplikaci lze stáhnout zdarma, placený tarif Pro navíc přidává synchronizaci přes vlastní iCloud mezi iPhonem, iPadem a Macem, automatické přidávání úkolů do Připomínek, návrh e-mailu s shrnutím a převod poznámky na prezentaci nebo kvíz. Konkrétní cena tarifu Pro ani přesný rozsah omezení bezplatné verze nejsou v dostupných podkladech uvedeny.
+Klíčové vlastnosti
+- Přepis nahrávky na shrnutí, rozhodnutí a úkoly
+- Nahrávka zůstává připojená, přehrání kliknutím na řádek
+- Vkládání zvuku, videa, PDF i fotografií do poznámek
+- Rozpoznání přes 100 jazyků i při přepínání v hovoru
+Časté dotazy
+Co přesně Phrase umí vytvořit z nahrávky?
+Z nahraného hovoru, přednášky nebo hlasové poznámky vytvoří editovatelný zápis se shrnutím, přijatými rozhodnutími a úkoly s vlastníky a termíny, přičemž nahrávka zůstává propojená s textem pro zpětné přehrání.
+Kolik Phrase stojí?
+Aplikaci lze stáhnout a používat zdarma bez nutnosti registrace, placený tarif Pro přidává iCloud synchronizaci mezi zařízeními, automatické úkoly v Připomínkách a návrh e-mailu se shrnutím. Konkrétní cena tarifu Pro není v podkladech uvedena.
+Pro koho je Phrase vhodný a jak začít?
+Hodí se pro schůzky, přednášky, rozhovory i hlasové poznámky bez nutnosti připojovat bota do hovoru. Stačí stáhnout aplikaci pro iPhone, iPad, Mac nebo Apple Watch a začít nahrávat.
+Kategorie|E|
+|T|Consistent Character AI ORG|D|04.11.2026 18:09|P|Generátor AI postav, které zůstávají rozpoznatelné napříč scénami, outfity i videi podle referenčního obrázku.|M|EJAJ|X|Consistent Character AI ORG
+Generátor AI postav, které zůstávají rozpoznatelné napříč scénami, outfity i videi podle referenčního obrázku.
+O nástroji
+Consistent Character AI je generátor obrázků a videí, který pomocí referenčního obrázku a textového promptu udržuje stejnou podobu a identitu postavy napříč různými scénami, outfity a pózami. Nástroj je určen pro storyboardy, grafické novely, krátká videa a marketingové koncepty – uživatel nahraje referenční obrázek, zvolí styl (od anime po fotorealismus) a vygeneruje scény, které lze následně proměnit ve video pomocí funkce animace obrázků. Mezi funkce patří historie generování, kontrola poměru stran výstupu, hotové pracovní příklady s promptem a poměrem stran k úpravě, a zobrazení kreditů i jejich ceny ještě před spuštěním generování. Registrace nevyžaduje platební kartu. Provoz je založen na kreditovém systému – aktuální zůstatek a cena akce se zobrazují předem, dostupné workflow se může lišit podle účtu a tarifu. Konkrétní cenové podmínky ani limity bezplatné verze nejsou v dostupných informacích blíže specifikovány. API ani open source řešení nejsou zmíněny, rozhraní je v angličtině.
+Klíčové vlastnosti
+- Zachování podoby postavy podle referenčního obrázku
+- Styly od anime po fotorealismus
+- Animace vygenerovaných obrázků do videa
+- Historie generování pro návrat k předchozím výstupům
+Časté dotazy
+Co nástroj umí?
+Z referenčního obrázku a textového promptu vytváří scény, outfity a pózy se stejnou rozpoznatelnou postavou, kterou lze následně animovat do videa.
+Kolik to stojí?
+Provoz je na kreditovém systému, kde se cena akce a aktuální zůstatek zobrazují před spuštěním generování; konkrétní ceník není v podkladech uveden.
+Jak začít a pro koho je nástroj určen?
+Stačí nahrát referenční obrázek, popsat scénu a kliknout na generování – registrace nevyžaduje platební kartu. Hodí se pro storyboardy, grafické novely, krátká videa a marketingové koncepty.
+Kategorie|E|
+|T|EmailWish|D|04.11.2026 18:09|P|All-in-one e-mailová marketingová platforma pro e-commerce obchody, která automatizuje e-maily, popupy, recenze a chat na jednom místě.|M|EJAJ|X|EmailWish
+All-in-one e-mailová marketingová platforma pro e-commerce obchody, která automatizuje e-maily, popupy, recenze a chat na jednom místě.
+O nástroji
+EmailWish je all-in-one e-mailová automatizační platforma určená majitelům e-commerce obchodů, a to jak začátečníkům, tak pokročilým uživatelům. Nástroj kombinuje e-mail, newslettery, recenze, chat a popupy v jedné platformě pro sběr leadů, zapojení zákazníků a zvýšení konverzí. Mezi klíčové funkce patří předpřipravené flows jako Abandoned Cart Series, Review Request Series, After Review Email Series, Welcome Subscriber Series, Chat Transcript, Order Thank you Email, Order Fulfilled Email nebo Popup Series. Uživatelé si navíc mohou vytvářet vlastní flows pomocí Email Builderu a Email Flow builderu a nástroj umí sbírat fotorecenze s automatickým follow-up e-mailem na základě zpětné vazby. Cenově jde o předplatitelský model se startovní cenou od 27 $ měsíčně, na Shopify App Store je ale dostupná jako free to install aplikace. API přístup EmailWish aktuálně neposkytuje a informace o open-source charakteru nejsou dostupné. Firma Emailwish LTD. sídlí v Sai Wan na Hong Kong Islandu.
+Klíčové vlastnosti
+- Předpřipravené flows (Abandoned Cart, Welcome Series)
+- Automatické sbírání fotorecenzí se follow-up e-mailem
+- Email Builder a Email Flow Builder pro vlastní automatizace
+- Popupy pro sběr leadů
+Časté dotazy
+Co všechno EmailWish umí?
+Kombinuje e-mailový marketing, newslettery, recenze, chat a popupy v jedné platformě. Obsahuje předpřipravené automatizace jako Abandoned Cart Series, Welcome Subscriber Series nebo Review Request Series a umožňuje stavět i vlastní flows.
+Kolik EmailWish stojí?
+Placené plány začínají od 27 $ měsíčně, na Shopify App Store je ale dostupná jako free to install aplikace.
+Pro koho je EmailWish vhodný a jak začít?
+Je určen majitelům e-commerce obchodů, ať už začátečníkům nebo pokročilým uživatelům, a nejsnazší start je přes instalaci aplikace na Shopify App Store.
+Kategorie|E|
+|T|PromptGather|D|04.11.2026 18:09|P|Generátor AI videí a obrázků s knihovnou promptů a přístupem k modelům jako Veo 3, Kling či Nano Banana.|M|EJAJ|X|PromptGather
+Generátor AI videí a obrázků s knihovnou promptů a přístupem k modelům jako Veo 3, Kling či Nano Banana.
+O nástroji
+PromptGather je online nástroj pro tvorbu AI videí a obrázků, který nabízí přeměnu textu na video i obrázek a také přeměnu existujícího obrázku na video nebo jiný obrázek. Uživatelé mají přístup k řadě AI modelů, například Seedance, Veo 3, Kling, Wan, GPT Image, Nano Banana nebo Flux, a mohou procházet rozsáhlou knihovnu promptů roztříděnou podle modelů a kategorií (video, obrázky, tagy). Součástí nástroje jsou i speciální efekty, například AI líbání, objímání, oživení fotografie, taneční animace, výměna obličejů, návrh interiéru místnosti, přeměna fotky na skicu nebo odstranění vodoznaku z obrázků. Po registraci získají uživatelé 30 kreditů zdarma a dalších 10 kreditů denně po dobu prvních 7 dní, což umožňuje vygenerovat až 2 videa nebo 15 obrázků bez nutnosti zadávat platební kartu. Výstupy lze podle uvedených informací použít i komerčně bez licenčních poplatků. Podrobnosti o placených tarifech nad rámec úvodních kreditů nejsou v dostupných informacích uvedeny.
+Klíčové vlastnosti
+- Text na video i text na obrázek
+- Obrázek na video nebo na jiný obrázek
+- Přístup k modelům Veo 3, Kling, Seedance, Nano Banana, Flux
+- Knihovna promptů tříděná podle modelů a kategorií
+Časté dotazy
+Co PromptGather umí?
+Generuje AI videa a obrázky z textu i z existujících obrázků pomocí modelů jako Veo 3, Kling, Seedance, Nano Banana nebo Flux, a nabízí i speciální efekty jako AI líbání, výměnu obličejů nebo návrh interiéru.
+Kolik PromptGather stojí?
+Po registraci získáte 30 kreditů zdarma a dalších 10 kreditů denně po dobu prvních 7 dní (až 100 kreditů), bez nutnosti zadávat platební kartu. Podrobnosti o placených tarifech nad rámec úvodních kreditů nejsou uvedeny.
+Pro koho je PromptGather vhodný a jak začít?
+Je vhodný pro tvůrce obsahu, kteří chtějí rychle vytvářet AI videa a obrázky pro komerční použití. Stačí se zaregistrovat přes Google účet nebo e-mailem a ihned začít generovat s úvodními kredity.
+Kategorie|E|
+|T|Uncracked City|D|04.11.2026 18:09|P|Detektivní hra zasazená do reálných měst, kde uživatelé vyslýchají podezřelé ovládané AI modelem a odhalují lháře.|M|EJAJ|X|Uncracked City
+Detektivní hra zasazená do reálných měst, kde uživatelé vyslýchají podezřelé ovládané AI modelem a odhalují lháře.
+O nástroji
+Uncracked City je detektivní hra, v níž uživatelé prohledávají lokace v reálných městech, hledají indicie a kladou vlastní otázky (psané i mluvené) podezřelým. Podezřelé postavy odpovídají hlasem díky AI modelu (LLM) a některé z nich lžou – úkolem je konfrontovat lež s nalezeným důkazem a sepsat report, na což jsou k dispozici maximálně tři pokusy. Hra obsahuje pět tréninkových úrovní (Paříž, Rio de Janeiro, Marrákeš, Tokio, Sydney) a dále „skutečné“ případy ve městech jako Benátky, Lisabon, Edinburgh, Amsterdam, Cusco, Soul, Kapské Město nebo New York. U těchto případů hra zobrazuje, kolik hráčů je již vyřešilo – u většiny zatím nikdo. Po vyřešení případu se dané město otiskne do virtuálního pasu hráče a hra je dostupná v šesti jazycích, přičemž se hraje bez nutnosti zakládat účet. Konkrétní cenový model ani informace o API nebo open-source statusu nejsou na webu uvedeny, proto je cena označena jako neznámá.
+Klíčové vlastnosti
+- Výslechy podezřelých ovládaných AI hlasem
+- Otázky lze psát i mluvit v šesti jazycích
+- Prohledávání lokací v reálných městech
+- Konfrontace lži s nalezeným důkazem
+Časté dotazy
+Co přesně hráč v Uncracked City dělá?
+Hráč prohledává lokace v reálném městě, hledá indicie a klade vlastní otázky (psané i mluvené) podezřelým, kteří odpovídají hlasem díky AI modelu. Úkolem je odhalit lháře, konfrontovat ho s důkazem a sepsat report na maximálně tři pokusy.
+Kolik Uncracked City stojí?
+Konkrétní cenový model není na webu uveden, cena je tedy neznámá.
+Pro koho je hra určená a jak se začíná?
+Hra je určená fanouškům detektivek a zahádek v reálných městech; začíná se pěti tréninkovými úrovněmi (Paříž, Rio de Janeiro, Marrákeš, Tokio, Sydney) a poté následují skutečné případy jako Benátky či New York, hraje se bez založení účtu.
+Kategorie|E|
+|T|GMapsScraper.AI|D|04.11.2026 18:09|P|Nástroj pro hromadné scrapování firemních dat z Google Maps – e-maily, telefony, hodnocení i recenze, export do CSV/JSON.|M|EJAJ|X|GMapsScraper.AI
+Nástroj pro hromadné scrapování firemních dat z Google Maps – e-maily, telefony, hodnocení i recenze, export do CSV/JSON.
+O nástroji
+GMapsScraper.AI je cloudový nástroj, který podle zadaných klíčových slov vyhledává firmy na Google Maps a extrahuje jejich data – název, adresu, telefonní číslo, e-mail (pokud je dostupný), web, odkazy na sociální sítě, hodnocení, počet recenzí a otevírací dobu. Výsledky lze stáhnout ve formátu CSV nebo JSON, což se hodí pro import do CRM, lead generation nebo tržní výzkum. Zpracování keywordů probíhá paralelně v cloudu, díky čemuž jsou výsledky hotové během minut. Služba nabízí i API pro napojení na vlastní workflow. Systém funguje na kreditech – spotřebovávají se podle počtu vrácených výsledků, přičemž bezplatný plán zahrnuje 1 000 kreditů měsíčně. Placené tarify nabízejí vyšší kvóty a prioritní zpracování, k dispozici jsou i jednorázové dokupy kreditů. Podle výrobce nástroj využívá přes 7 500 firem a databáze obsahuje přes 50 milionů míst.
+Klíčové vlastnosti
+- Hromadné vyhledávání podle více klíčových slov najednou
+- Extrakce e-mailů, telefonů, webů a sociálních sítí
+- Export výsledků do CSV nebo JSON
+- Paralelní zpracování v cloudu – výsledky za minuty
+Časté dotazy
+Co přesně GMapsScraper.AI umí získat z Google Maps?
+Nástroj extrahuje název firmy, adresu, telefon, e-mail (je-li dostupný), web, odkazy na sociální sítě, hodnocení, počet recenzí a otevírací dobu. Výsledky lze stáhnout v CSV nebo JSON pro import do CRM či analýzu.
+Kolik GMapsScraper.AI stojí a jak funguje systém kreditů?
+Služba běží na kreditech, které se spotřebovávají podle počtu vrácených výsledků. Zdarma je 1 000 kreditů měsíčně, placené tarify nabízejí vyšší kvóty, prioritní zpracování a lze dokoupit kredity jednorázově.
+Pro koho je nástroj určený a jak začít?
+Hodí se pro lead generation agentury, marketéry, SEO specialisty i realitní analytiky sbírající firemní data ve velkém. Stačí zadat klíčová slova do formuláře na webu a spustit scrapování zdarma bez nutnosti platební karty.
+Kategorie|E|
+|T|ImagesV2|D|04.11.2026 18:09|P|Online generátor obrázků z textu postavený na modelu GPT Image 2 s důrazem na fotorealismus a ostrý text v obrázku.|M|EJAJ|X|ImagesV2
+Online generátor obrázků z textu postavený na modelu GPT Image 2 s důrazem na fotorealismus a ostrý text v obrázku.
+O nástroji
+ImagesV2 je webová služba pro generování obrázků pomocí modelu GPT Image 2 (podle textu na stránce aktuálně i GPT Image 2.5). Nabízí fotorealistické výstupy s důrazem na čitelný a ostrý text přímo v obrázku, export do transparentního PNG, SVG a 4K rozlišení. Po registraci uživatel získá 3 kredity zdarma na první obrázek, přičemž není potřeba účet u OpenAI ani ChatGPT Plus. Nástroj nabízí kurátorské příklady a hotové šablony promptů pro různá odvětví – například bannery a produktové vizuály pro e-shopy, plakáty a klíčové vizuály pro eventy a značky, nebo sociální vizuály pro tvůrce obsahu. Uživatel si může vybrat existující příklad a upravit ho vlastním zadáním místo psaní promptu od nuly. Z dostupných informací nevyplývá, že by nástroj nabízel plně bezplatnou verzi – po vyčerpání úvodních kreditů zdarma je patrně nutná platba, přesná cena ani tarify ale v podkladech uvedeny nejsou. Rozhraní je v angličtině, API ani open source řešení nejsou zmíněny.
+Klíčové vlastnosti
+- Generování obrázků modelem GPT Image 2 (GPT Image 2.5)
+- Důraz na fotorealismus a ostrý text v obrázku
+- Export do transparentního PNG, SVG a 4K rozlišení
+- Hotové šablony promptů pro e-shopy, eventy a sociální sítě
+Časté dotazy
+Co ImagesV2 umí?
+Generuje fotorealistické obrázky z textu pomocí modelu GPT Image 2 s důrazem na ostrý a čitelný text v obrázku. Výstup lze exportovat jako transparentní PNG, SVG nebo ve 4K rozlišení.
+Kolik ImagesV2 stojí?
+Po registraci uživatel dostane 3 kredity zdarma na první obrázek, přesné ceny dalších kreditů ani tarify nejsou v podkladech uvedeny.
+Pro koho je ImagesV2 vhodný a jak začít?
+Hodí se pro tvůrce bannerů a produktových vizuálů pro e-shopy, plakátů pro eventy či sociálních vizuálů pro tvůrce obsahu. Stačí se zaregistrovat bez potřeby účtu OpenAI či ChatGPT Plus a vybrat si hotovou šablonu promptu nebo napsat vlastní zadání.
+Kategorie|E|
+|T|Image to Layers AI|D|04.11.2026 18:09|P|Nástroj pomocí AI rozdělí jeden obrázek na samostatné průhledné PNG vrstvy – subjekt, pozadí i jednotlivé objekty.|M|EJAJ|X|Image to Layers AI
+Nástroj pomocí AI rozdělí jeden obrázek na samostatné průhledné PNG vrstvy – subjekt, pozadí i jednotlivé objekty.
+O nástroji
+Image to Layers AI umožňuje nahrát JPG, PNG nebo WebP soubor (do 10 MB) a nechat ho umělou inteligencí rozdělit na vrstvy podle zadaného počtu (2 až 17) nebo podle vlastního textového popisu, co se má oddělit. K dispozici jsou dva modely, Flash a Pro, a volba výstupního rozlišení 1K, 1,5K nebo 2K – podle zvoleného nastavení se liší i spotřeba kreditů (Flash 10 kreditů za vrstvu, Pro 12 nebo 24 podle rozlišení). Výsledkem jsou skutečné RGBA vrstvy s alfa kanálem bez zubatých okrajů, které lze po poskládání znovu složit do původního obrázku. Hotové vrstvy je možné stáhnout jednotlivě jako PNG/WebP nebo jako celý balík, případně exportovat jako PSD přímo pro Photoshop, Figma či After Effects. Kromě rozdělování obrázků nabízí web i řadu dalších souvisejících nástrojů, například oddělování vrstev postav, odstranění textu či pozadí nebo generování obrázků z promptu.
+Klíčové vlastnosti
+- Rozdělení obrázku na 2 až 17 vrstev
+- Volba modelu Flash nebo Pro a rozlišení 1K/1,5K/2K
+- Vlastní textový prompt pro určení, co oddělit
+- Skutečné RGBA PNG vrstvy s alfa kanálem bez zubatých okrajů
+Časté dotazy
+Co přesně nástroj umí?
+Nahraje se obrázek (JPG, PNG nebo WebP do 10 MB) a AI ho rozdělí na samostatné průhledné vrstvy – subjekt, pozadí i jednotlivé objekty – podle zadaného počtu vrstev nebo textového popisu.
+Kolik to stojí?
+Platí se za každou vrácenou vrstvu formou kreditů – model Flash stojí 10 kreditů za vrstvu, Pro 12 kreditů při rozlišení 1K/1,5K nebo 24 kreditů při 2K.
+Pro koho je nástroj určený a jak se začíná?
+Hodí se pro grafiky, ilustrátory a tvůrce pracující s Photoshopem, Figma nebo After Effects – stačí nahrát obrázek, zvolit model, rozlišení a počet vrstev (případně popsat, co oddělit) a během minuty stáhnout hotové PNG nebo PSD vrstvy.
+Kategorie|E|
+|T|Rayopix|D|04.11.2026 18:09|P|Online nástroj, který z fotek s virálním „matcha“ TikTok filtrem pomocí AI rekonstruuje přirozenou barvu a texturu snímku.|M|EJAJ|X|Rayopix
+Online nástroj, který z fotek s virálním „matcha“ TikTok filtrem pomocí AI rekonstruuje přirozenou barvu a texturu snímku.
+O nástroji
+Rayopix je webová aplikace zaměřená na odstranění „matcha“ filtru z fotografií – populárního efektu z TikToku, který převádí fotky do zeleného tekutého „art“ stylu. Uživatel nahraje jeden obrázek (JPG, PNG nebo WebP, max. 10 MB), zvolí poměr stran (Auto, 1:1, 4:3, 3:4, 16:9, 9:16) a rozlišení výstupu (1K, 2K, 4K). AI model následně znovu vygeneruje přirozenou barvu, texturu kůže, vlasů, oblečení a pozadí, přičemž se snaží zachovat viditelnou pozici postavy, kompozici a rozvržení scény. Výsledek je podle popisu AI rekonstrukcí, nikoliv obnovením skrytých původních pixelů – jemné detaily obličeje, drobný text, loga nebo přesné vzory oblečení se tak mohou lišit od originálu. Jedno zpracování stojí 3 kredity, ukázkové generování je zdarma, ale pro zpracování vlastního obrázku je nutné se přihlásit. Nástroj zpracovává pouze statické fotografie, u videí z TikToku doporučuje nejprve exportovat ostrý snímek z klipu. Rayopix nabízí interaktivní porovnání před/po pomocí posuvníku a FAQ sekci vysvětlující rozdíl mezi klasickou barevnou korekcí a AI rekonstrukcí. Informace o cenovém modelu mimo kreditový systém a případné bezplatné verzi pro vlastní obrázky nejsou v dostupných podkladech uvedeny.
+Klíčové vlastnosti
+- Odstraňuje zelený TikTok „matcha“ filtr z fotek
+- AI rekonstrukce barvy, textury kůže, vlasů i pozadí
+- Zachovává pozici postavy a kompozici scény
+- Výstup v rozlišení 1K, 2K nebo 4K
+Časté dotazy
+Co přesně Rayopix dělá s fotkou?
+Z fotky s „matcha“ efektem z TikToku AI znovu vygeneruje přirozenou barvu a texturu kůže, vlasů, oblečení i pozadí, přičemž se snaží zachovat viditelnou pozici postavy a kompozici scény. Nejde o obnovení skrytých pixelů, ale o AI rekonstrukci, takže jemné detaily obličeje, text nebo vzory se mohou lišit od originálu.
+Kolik to stojí?
+Zpracování jednoho obrázku stojí 3 kredity. Ukázkové generování na vzorových fotkách je zdarma, ale pro zpracování vlastního obrázku je nutné se přihlásit.
+Pro koho je Rayopix vhodný a jak začít?
+Hodí se pro každého, kdo má uloženou fotku se „zelenou“ matcha úpravou a chce ji vrátit do přirozeného vzhledu – nejlépe funguje na selfie, portréty, páry, zvířata nebo produktové fotky. Stačí nahrát obrázek (JPG, PNG, WebP do 10 MB), zvolit poměr stran a rozlišení a nechat AI vygenerovat rekonstrukci.
+Kategorie|E|
+|T|Vecbase Say|D|04.11.2026 18:09|P|Vecbase Say převádí mluvenou řeč na upravený text přímo v e-mailech, zprávách a dokumentech na Macu a iPhonu.|M|EJAJ|X|Vecbase Say
+Vecbase Say převádí mluvenou řeč na upravený text přímo v e-mailech, zprávách a dokumentech na Macu a iPhonu.
+O nástroji
+Vecbase Say je nástroj pro hlasové psaní, který vloží text přímo do pole, kde právě pracujete, bez kopírování mezi aplikacemi. Na Macu stačí stisknout zkratku a mluvit, na iPhonu se přepne na klávesnici Say a klepne na mikrofon (podpora iPhonu se připravuje). Aplikace automaticky odstraňuje výplňová slova, doplňuje interpunkci a respektuje vyslovené opravy, díky čemuž je po diktování potřeba méně úprav textu. Say umožňuje nastavit vlastní slovník jmen a odborných termínů a také zvolit jiný výstupní jazyk, takže lze mluvit v jednom jazyce a text se zapíše přeložený do druhého. Zpracování řeči probíhá online, uložení historie vstupů je volitelné a při zapnutí se uchovává maximálně 30 dní s možností smazání v aplikaci. Na Macu je dostupná verze pro macOS 13 a novější. Bezplatný účet zahrnuje 2000 slov měsíčně, členství Vecbase Club pak nabízí neomezený hlasový vstup – jde tedy o nástroj s bezplatnou i placenou variantou.
+Klíčové vlastnosti
+- Vkládá text přímo do pole bez kopírování
+- Odstraňuje výplňová slova a doplňuje interpunkci
+- Respektuje vyslovené opravy textu
+- Vlastní slovník jmen a odborných termínů
+Časté dotazy
+Čím se Say liší od běžného diktování?
+Say odstraňuje výplňová slova, doplňuje interpunkci a respektuje jasně vyslovené opravy. Lze si přidat vlastní slovník jmen a odborných termínů nebo zvolit jiný výstupní jazyk, než ve kterém mluvíte.
+Kolik Say stojí?
+Bezplatný účet zahrnuje 2000 slov měsíčně zdarma. Členství Vecbase Club pak nabízí neomezený hlasový vstup za roční poplatek.
+Jak začít a na jakých zařízeních Say funguje?
+Say pro Mac si stáhnete a nainstalujete (vyžaduje macOS 13 a novější), poté stačí stisknout zkratku a mluvit přímo do pole, kde pracujete. Verze pro iPhone s klávesnicí Say se připravuje.
+Kategorie|E|
+|T|TryH3|D|04.11.2026 18:09|P|Generátor AI videí pro virální trendy ze sociálních sítí – stačí nahrát fotku a vybrat šablonu trendu.|M|EJAJ|X|TryH3
+Generátor AI videí pro virální trendy ze sociálních sítí – stačí nahrát fotku a vybrat šablonu trendu.
+O nástroji
+TryH3 je nástroj pro tvorbu AI videí založených na aktuálně populárních trendech ze sociálních sítí. Uživatel nahraje vlastní fotku a vybere jednu z nabízených šablon (např. taneční výzvy, memy nebo virální scénky), nástroj pak vygeneruje video s odpovídajícím originálním zvukem. Nabídka obsahuje desítky předpřipravených trend šablon, mezi nimiž lze vybírat podle aktuální popularity. Kromě režimu „fotka do trendu“ nástroj umožňuje i generování videa z textového promptu, a to s využitím modelů MiniMax H3 nebo Seedance. K dispozici jsou také funkce pro úpravu videa a jeho prodloužení (video extension), takže lze pracovat jak s hotovými klipy, tak vytvářet obsah od začátku. Z dodaných údajů nevyplývá, že by nástroj nabízel bezplatnou verzi, ani není zmíněno API či open source řešení. Rozhraní je v angličtině, informace o cenách nejsou v dostupných podkladech uvedeny.
+Klíčové vlastnosti
+- Generování videa z nahrané fotky podle trend šablony
+- Desítky předpřipravených virálních šablon (tance, memy, scénky)
+- Generování videa z textového promptu (MiniMax H3, Seedance)
+- Funkce pro úpravu videa
+Časté dotazy
+Co přesně TryH3 umí?
+Nahrajete vlastní fotku, vyberete trend šablonu (např. taneční výzvu nebo mem) a nástroj z ní vygeneruje video s originálním zvukem. Dá se také generovat video přímo z textového promptu pomocí modelů MiniMax H3 nebo Seedance, případně existující video upravit či prodloužit.
+Kolik TryH3 stojí?
+Z dostupných podkladů není cena ani existence bezplatné verze uvedena.
+Pro koho je TryH3 vhodný a jak začít?
+Je určen tvůrcům obsahu pro sociální sítě, kteří chtějí rychle zkusit aktuální virální trend – stačí se přihlásit, nahrát fotku a vybrat jednu z desítek šablon.
+Kategorie|E|
+|T|AI Object Remover|D|04.11.2026 18:09|P|Online nástroj pro odstranění nežádoucích objektů, lidí, textu, vodoznaků nebo samolepek z fotek pomocí štětce a AI.|M|EJAJ|X|AI Object Remover
+Online nástroj pro odstranění nežádoucích objektů, lidí, textu, vodoznaků nebo samolepek z fotek pomocí štětce a AI.
+O nástroji
+AI Object Remover je webová aplikace pro úpravu fotografií přímo v prohlížeči bez nutnosti instalace softwaru. Uživatel nahraje fotku ve formátu JPG, PNG nebo WebP (do 10 MB) a štětcem označí, co chce odstranit – lidi, objekty, text, vodoznaky nebo emoji a samolepky. AI následně přemaluje pozadí v označené oblasti. Nástroj nabízí tři režimy úpravy: Standard (lokální oprava za 1 kredit), Precision a Pro (kompletně přepracovaná fotka za 2 kredity). Před samotnou úpravou lze porovnat výsledek „před a po“ a zkontrolovat detaily, výsledná fotka se stahuje jako PNG bez přidaného vodoznaku. Placení funguje formou jednorázového nákupu kreditů bez předplatného – balíček Starter s 10 kredity stojí 4,99 USD a kredity platí po dobu jednoho roku. Bezplatná verze podle dostupných informací není k dispozici, API ani open source řešení nejsou zmíněny.
+Klíčové vlastnosti
+- Odstranění lidí, objektů, textu, vodoznaků i samolepek štětcem
+- Tři režimy úprav: Standard, Precision a Pro
+- Porovnání výsledku před a po úpravě
+- Úprava přímo v prohlížeči bez instalace softwaru
+Časté dotazy
+Co přesně AI Object Remover umí odstranit z fotky?
+Nástroj dokáže odstranit nežádoucí lidi, objekty, text, vodoznaky i emoji a samolepky z fotografie – stačí je označit štětcem a AI přemaluje dané místo tak, aby zapadlo do pozadí.
+Kolik stojí používání AI Object Remover?
+Platí se jednorázovým nákupem kreditů bez předplatného, například balíček Starter s 10 kredity vyjde na 4,99 USD a kredity jsou platné po dobu jednoho roku. Standardní úprava stojí 1 kredit, režim Pro s kompletním přepracováním fotky 2 kredity.
+Je k dispozici bezplatná verze a jak nástroj začít používat?
+Bezplatná verze podle dostupných informací není k dispozici. Stačí nahrát fotku ve formátu JPG, PNG nebo WebP do 10 MB, štětcem označit, co chcete odstranit, přihlásit se a úpravu spustit za kredity.
+Kategorie|E|
+|T|XCrawl|D|04.11.2026 18:09|P|API pro AI web scraping – extrakce strukturovaných dat (JSON, Markdown) z libovolných webových stránek pro vývojáře a automatizaci.|M|EJAJ|X|XCrawl
+API pro AI web scraping – extrakce strukturovaných dat (JSON, Markdown) z libovolných webových stránek pro vývojáře a automatizaci.
+O nástroji
+XCrawl je API nástroj určený pro extrakci dat z webových stránek, který výstup převádí do strukturovaného formátu JSON nebo čistého Markdownu vhodného pro AI agenty a automatizační workflow. Nabízí několik funkcí – Scrape API, Crawl API a SERP API – pro získávání dat, procházení webů i vyhledávání ve výsledcích vyhledávačů. Součástí služby jsou automaticky rotující globální rezidenční proxy, které pomáhají s obcházením blokací při scrapingu, a možnost pořizovat headless screenshoty stránek. Nástroj je určen primárně vývojářům a je dostupný přes API. Podle dostupných informací lze vyzkoušet bezplatnou zkušební verzi bez nutnosti zadávat platební kartu, nicméně trvale bezplatný tarif uveden není.
+Klíčové vlastnosti
+- Scrape API, Crawl API a SERP API v jednom nástroji
+- výstup ve formátu JSON nebo čistého Markdownu
+- automaticky rotující globální rezidenční proxy
+- pořizování headless screenshotů stránek
+Časté dotazy
+Co XCrawl přesně umí?
+Převádí obsah libovolných webových stránek do strukturovaného JSON nebo čistého Markdownu pomocí Scrape, Crawl a SERP API, včetně obcházení blokací přes rotující rezidenční proxy a pořizování screenshotů.
+Kolik XCrawl stojí?
+Nástroj nabízí bezplatnou zkušební verzi bez nutnosti zadávat platební kartu, trvale bezplatný tarif ani konkrétní ceny placených plánů ale nejsou uvedeny.
+Pro koho je XCrawl určen a jak začít?
+Je určen primárně vývojářům a automatizačním workflow, kteří potřebují data z webu pro AI agenty; stačí se zaregistrovat a spustit bezplatnou zkušební verzi bez karty.
+Kategorie|E|
+|T|RazFit|D|04.11.2026 18:09|P|Domácí tréninková aplikace s mikro cvičeními na 1 až 10 minut bez vybavení, vedená AI trenéry.|M|EJAJ|X|RazFit
+Domácí tréninková aplikace s mikro cvičeními na 1 až 10 minut bez vybavení, vedená AI trenéry.
+O nástroji
+RazFit je domácí tréninková aplikace zaměřená na vytížené lidi, kteří nemají čas na dlouhé posilovny ani cvičení. Nabízí tzv. mikro tréninky v délce 1 až 10 minut, které jsou postavené na cvicích s vlastní vahou těla, takže není potřeba žádné vybavení. Cvičení v aplikaci vedou AI trenéři, kteří uživatele provádějí jednotlivými tréninkovými bloky. Podle dostupných informací je nástroj určen primárně pro mobilní zařízení. Z dostupných podkladů nevyplývá, že by aplikace nabízela bezplatnou verzi, a konkrétní cena ani další podmínky použití nejsou v podkladech uvedeny.
+Klíčové vlastnosti
+- Mikro tréninky v délce 1 až 10 minut
+- Cvičení bez nutnosti vybavení
+- Cviky s vlastní vahou těla
+- Vedení formou AI trenérů
+Časté dotazy
+Co přesně RazFit nabízí?
+RazFit je domácí tréninková aplikace s krátkými mikro tréninky od 1 do 10 minut, postavenými na cvicích s vlastní vahou těla bez potřeby vybavení. Cvičení vedou AI trenéři.
+Kolik RazFit stojí?
+Z dostupných podkladů nevyplývá konkrétní cena ani to, zda aplikace nabízí bezplatnou verzi.
+Pro koho je RazFit vhodný a jak začít?
+Aplikace je určena vytíženým lidem, kteří nemají čas na dlouhé posilovny ani klasické cvičení, a lze ji používat primárně na mobilním zařízení.
+Kategorie|E|
+|T|nanobanana 2.1|D|04.11.2026 18:09|P|Nanobanana 2.1 je online generátor a editor obrázků s AI, který z textu vytváří fotky až ve 4K a umí spojit až 14 referenčních snímků.|M|EJAJ|X|nanobanana 2.1
+Nanobanana 2.1 je online generátor a editor obrázků s AI, který z textu vytváří fotky až ve 4K a umí spojit až 14 referenčních snímků.
+O nástroji
+Nanobanana 2.1 je webové rozhraní postavené na modelu gemini-nano-banana-2.1 z rodiny Gemini 3 (Flash tier). Umožňuje generovat obrázky z textu v rozlišení 1K, 2K nebo 4K, provádět přesné lokální úpravy fotek (např. přebarvení zdi, odstranění objektu), umísťovat produkty do nových scén při zachování jejich tvaru a popisků, vykreslovat čitelný text na cedulích či plakátech a kombinovat až 14 referenčních obrázků do jedné scény při zachování konzistentního vzhledu postav. K dispozici je 14 poměrů stran od 1:8 po 8:1 a práce probíhá přímo v prohlížeči bez nutnosti API klíče, kódu nebo grafické karty, i když API je dle webu zmiňováno jako možnost. Nástroj je určen zejména pro e-shopy (lifestylové fotky produktů, packshoty, bannery), tvůrce sociálního obsahu (formáty 9:16 a 4:5 s čitelnými nadpisy), marketéry a agentury (kampaně od formátu 8:1 po 21:9) i designéry a pedagogy (mood boardy, infografiky, mapy). První generovaný obrázek je zdarma jako zkušební (Nano Banana 2 Lite, 1K), další generování se už platí z kreditů – generování 1K obrázku stojí 25 kreditů, 2K 35 kreditů a 4K 75 kreditů, plus 2 kredity za každý referenční obrázek. Kredity lze koupit jednorázově v balíčcích od 9,90 USD (800 kreditů) přes 29,90 USD (2 600 kreditů) až po 69,90 USD (6 990 kreditů), přičemž neúspěšné generování je automaticky vráceno. Web je v angličtině a neuvádí český překlad ani open-source licenci.
+Klíčové vlastnosti
+- Generování z textu v rozlišení 1K, 2K i 4K
+- Spojení až 14 referenčních obrázků do jedné scény
+- Přesné lokální úpravy (přebarvení, odstranění objektu)
+- Umístění produktu do nové scény se zachováním tvaru a popisků
+Časté dotazy
+Co Nanobanana 2.1 umí?
+Generuje obrázky z textu až ve 4K, umí lokálně upravovat fotky, umísťovat produkty do nových scén, vykreslovat čitelný text a spojit až 14 referenčních obrázků se zachováním konzistentních postav.
+Kolik stojí používání nástroje?
+První obrázek v 1K je zdarma jako zkouška, poté se platí kredity – 25 kreditů za 1K, 35 za 2K a 75 za 4K obrázek, plus 2 kredity za každý referenční obrázek. Kredity se kupují v balíčcích od 9,90 USD za 800 kreditů.
+Jak začít a pro koho je nástroj určen?
+Stačí napsat prompt, případně přidat referenční obrázky, vybrat poměr stran a rozlišení přímo v prohlížeči bez registrace API nebo grafické karty. Hodí se pro e-shopy, tvůrce sociálního obsahu, marketéry i designéry.
+Kategorie|E|
+|T|Seriály na výšku za mince. Český MovixBox odstartuje 11. listopadu|D|04.11.2026 18:07|P|Nová česká streamovací služba MovixBox se zaměří na seriály natáčené na výšku pro mobilní telefony, s epizodami dlouhými přibližně jednu až dvě minuty...|M|Lupa|X|Nová česká streamovací služba MovixBox se zaměří na seriály natáčené na výšku pro mobilní telefony, s epizodami dlouhými přibližně jednu až dvě minuty. Za projektem stojí producenti Michal Deus a Miro Mráz.
+Podle tiskové zprávy bude aplikace zdarma ke stažení v obchodech App Store a Google Play. Jednotlivé epizody si diváci odemknou za virtuální mince, jejichž balíčky budou stát od 29 korun. Měsíční předplatné od 119 korun zahrne pravidelný příděl mincí, další půjde dokupovat. Předplatné se podle podmínek služby automaticky obnovuje. Počet mincí v balíčcích ani cenu odemčení jedné epizody společnost v tiskové zprávě neupřesnila.
+Od startu platformy ve středu 11. listopadu bude dostupný komediální seriál Jarmilin svět s Denisou Pfauserovou. Krátce poté mají následovat romantické Tajemné vzkazy s Ha Thanh Špetlíkovou, Petrem Vojnarem a Barborou Jánovou. V oznámené nabídce je také partnerské drama Poslední noc před svatbou s Denisou Veronikou Kubíkovou a Radovanem Klučkou.
+Vedle hraných seriálů platforma chystá kulinářský pořad Jídelna Pavla Býčka, dokumentární CzeXperiment a animovanou sérii 100 dní po rozchodu vytvořenou s využitím umělé inteligence. Domácí produkci doplní dabovaná zahraniční tvorba. Termíny premiér jednotlivých titulů chce provozovatel postupně zveřejňovat v aplikaci a na sociálních sítích.
+Od prosince se má do spolupráce zapojit Vodafone. Zákazníci jeho televizní služby získají prostřednictvím slevového kódu zvýhodněné předplatné MovixBoxu. Úvodní epizody budou moci zdarma sledovat přímo ve Vodafone TV. Výši slevy tisková zpráva neuvádí.
+MovixBox původně plánoval spuštění během letošního léta. Vstupuje do segmentu krátkých seriálů pro mobilní obrazovky, jejichž jednotlivé díly obvykle končí napínavým momentem, který má diváka přimět ke sledování další epizody.|E|
+|T|Hackeři zaútočili na mrazáky po Evropě, rozpálily je i na 50 °C|D|04.11.2026 17:40|P|Mrazáky v supermarketech připojené k internetu se opětovně staly terčem hackerských útoků. V několika evropských zemích hackeři zničili zboží za milio...|M|SvětHW|X|Mrazáky v supermarketech připojené k internetu se opětovně staly terčem hackerských útoků. V několika evropských zemích hackeři zničili zboží za miliony.
+Kybernetické útoky jsou realitou i v podobě zneužití běžných IoT zařízení. Nedávné incidenty v evropských supermarketech ukázaly, že i chladicí systémy mohou být obětí útoků, které způsobí nemalé škody. Útočníci totiž vzdáleně změnili nastavení lednic a mrazáků, které přepnuli do režimu rozmrazování, případně do režimů vytápění, v některých případech až na teplotu 50 °C. To vedlo k následnému zničení obrovského množství potravin.
+K incidentům došlo v několika evropských zemích, mezi nimiž jsou např. Belgie, Lucembursko, Irsko, Nizozemsko, Švédsko, Finsko a Estonsko. Zasaženy byly řetězce jako Delhaize, Carrefour, Coop nebo SuperValu. V jednom z belgických obchodů Delhaize byly ztráty odhadovány na 100.000 EUR, nicméně celkové škody po podobném útoku ve Francii z října se pohybovaly v desítkách milionů eur. Zaměstnanci obchodů si problémů často všimli až s velkým zpožděním, protože útoky probíhaly v noci a první zprávy o nesprávných hodnotách se k manažerům dostaly až v pozdní noci nebo nad ránem, kdy bylo zboží již zkažené.
+Šlo především o zranitelnosti v systémech dánské firmy Danfoss. Bezpečnostní výzkumníci z firmy Claroty už dříve varovali před problémy v jejich firmwarech, které umožňovaly velmi jednoduchým způsobem převzít kontrolu nad mrazákem. Přístupové jméno admin není zrovna bezpečné, a i když se heslo automaticky měnilo každým dnem, tím bylo aktuální datum. U mnoha zařízení navíc dávno skončila podpora a nelze je aktualizovat, takže zůstávají nadále zranitelné. Kdo za útoky stojí, není jasné.|E|
+|T|Canal+ a SledováníTV do konce listopadu odemykají vybrané placené stanice|D|04.11.2026 17:29|P|Canal+ (dříve Skylink) zpřístupňuje svým zákazníkům bez příplatku pět televizních stanic. Aplikace SledováníTV nabízí po celý listopad dokumentární Sp...|M|Lupa|X|Canal+ (dříve Skylink) zpřístupňuje svým zákazníkům bez příplatku pět televizních stanic. Aplikace SledováníTV nabízí po celý listopad dokumentární Spektrum a filmovou Joj Cinema bez ohledu na předplacený balíček.
+Zákazníci Canal+ mohou do 30. listopadu sledovat stanice Canal+, Canal+ Drama, Canal+ Crime, Canal+ Classics a Spektrum. Podle provozovatele se nabídka vztahuje také na klienty s původními balíčky Skylinku. Platí pro satelitní příjem i sledování v aplikacích Canal+ a Skylink Live TV.
+Stejnou pětici programů zpřístupňuje také sesterská služba FreeSat. Její zákazníci je mohou přijímat ze satelitu Astra na pozici 23,5 stupně východně nebo prostřednictvím internetové televize Skylink Live TV.
+Platforma SledováníTV zařadila Spektrum a Joj Cinema na celý listopad do všech svých balíčků. Spektrum uvede například 14. listopadu dokument Rok na Zemi: rok 2024 z vesmíru, který zachycuje události pomocí satelitních záběrů. Joj Cinema odvysílá 15. listopadu ve své premiéře rodinný film Malý velký pes.
+Hlavní kanál Canal+ nabídne 6. listopadu českou komedii Bardotky a od 19. listopadu seriál S.W.A.T. Exiles. Canal+ Drama zařadí 11. listopadu komedii Matky. V listopadovém programu Canal+ Crime jsou filmy Miki a Říkají mi Lars, Canal+ Classics uvede 20. listopadu komedii Prci, prci, prcičky. Na Spektru začne ve stejný den dokumentární série V sázce je život o práci lékařů, záchranářů a hasičů.
+Volné vysílání čtyř nových stanic Canal+ navazuje na říjnové přejmenování Skylinku a rozšíření jeho nabídky. Provozovatel už při jejich spuštění 22. října oznámil, že je stávajícím zákazníkům zpřístupní bez příplatku do konce listopadu. U satelitních přijímačů s funkcí automatického ladění FastScan probíhá zařazení automaticky, ostatní zařízení vyžadují ruční naladění.
+Technické parametry pro satelitní příjem na Canal+ a FreeSat:|E|
+|T|Infrastrukturní Vantage Towers hlásí vyšší tržby a 67 nových základnových stanic, postavit chce 300 dalších|D|04.11.2026 15:14|P|Česká pobočka Vantage Towers, která provozuje základnové stanice pro operátora Vodafone, hlásí za loňský rok (účetní období od dubna 2025 do března 20...|M|Lupa|X|Česká pobočka Vantage Towers, která provozuje základnové stanice pro operátora Vodafone, hlásí za loňský rok (účetní období od dubna 2025 do března 2026) tržby ve výši 1,795 miliardy Kč (o rok dříve 1,761 miliardy Kč) a výslednou ztrátu po zdanění ve výši 271 milionů Kč (před rokem 296 milionů Kč). Vyplývá to z výroční zprávy zveřejněné v obchodním rejstříku.
+Ztráta je podle firmy způsobena investicemi do rozšíření sítě. „Tyto investice jsou součástí víceletého investičního plánu zaměřeného na rozšíření portfolia o více než 400 lokalit v horizontu šesti let, jehož realizace se úspěšně blíží dokončení. Na konci roku byl zároveň zasmluvněn nový investiční program, který předpokládá výstavbu nejméně 300 dalších základnových stanic v následujících šesti letech, se zaměřením zejména na lokality s nedostatečným pokrytím mobilním signálem,“ komentuje ve zprávě generální ředitel a jednatel společnosti Jiří Švarc.
+Ve výroční zprávě firma říká, že loni v Česku postavila 67 nových základnových stanic (celkem jich momentálně má 4265), které pokrývají více než 85 % populace ČR. Přibližně tři čtvrtiny tvoří střešní instalace ve městech (RTT), zbytek stožáry „na zelené louce“ (Ground Based Towers, GBT).
+„Téměř třetina GBT lokalit je sdílena více zákazníky, s průměrným poměrem využití 1,3×. U RTT lokalit však zůstává významný potenciál pro další sdílení a růst,“ dodává Švarc.
+Vodafone vyčlenil svou pasivní infrastrukturu do samostatné firmy v roce 2000. Konkurenční T-mobile následně udělal obdobný krok, když založil společnost T-Mobile Infra CZ. O2 využívá infrastrukturu společnosti CETIN, která patří do stejné vlastnické skupiny.|E|
+|T|Sousedovic kočka má smůlu. Chytrá kočičí dvířka Flappie je nově rozpozná díky Cat ID, stejně jako lidi Face ID|D|04.11.2026 15:01|P|Chytrá dvířka Flappie dostala kočičí Face ID, které podle testů rozpozná vlastní kočku v 97 % případů. Jak vlastně Cat ID funguje?|M|Cnews|X|Víte, co je Face ID? Nejspíš ano. Ale věděli jste, že existuje také Cat ID? Švýcarský startup Flappie představil loni chytrá kočičí dvířka, která brání kočkám nosit domů myši a ptáky. Její tvůrci zároveň oznámili, že pracují na rozpoznávají koček podle obličeje. Nyní je Cat ID dostupná všem a výsledky ukazují, že dřívka spolehlivě rozpoznají vaši kočku od cizích.
+Úspěšnost 96 % nechat cizí kočku venku
+Flappie se představil a začal prodávat už v roce 2025. V květnu téhož roku firma oznámila také Cat ID, tedy rozpoznávání koček podle jejich vzhledu. Po více jak roce vývoje a testování teď míří funkce do dvířek, které podle firmy využívá přes 3 000 domácností.
+Mezitím proběhlo testování, jehož výsledky vypadají slibně. Při téměř 10 000 návštěvách potvrzených majiteli rozpoznal systém správně 97 ze 100 vlastních koček. Cizí kočky podle zveřejněných údajů udržel venku v 96 ze 100 případů.
+Rozpoznávání funguje pomocí umělé inteligence, která běží přímo ve dvířkách, nikoli v cloudu někde na cizím serveru. Kamera při rozpoznávání převede obličej kočky na jakýsi „digitální otisk prstu“, s pomocí AI ho porovná s kočkami v domácnosti a přímo v zařízení se rozhodne, jestli dvířka otevře či nikoliv.
+„Umělá inteligence běží přímo ve dvířkách, ne v cloudu. Cat ID proto funguje, i kdydž je u zadních dveří slabá Wi-Fi.“ říká spoluzakladatel a technický ředitel Oliver Widler. Pokud si dvířka nejsou jistá, ponechají se otevřená a vám přijde oznámení v aplikaci.
+Dvířka se prodávají přímo na webu společnosti za cenu 479 eur (lehce přes 11 tisíc korun), s 22 eurovým poštovným se pak dostáváme lehce přes 12 tisíc korun. Je ale nutné počítat s clem a DPH|E|
+|T|Mzdy v IT už nerostou plošně a rozdíly se zvětšují. Experti na AI berou až 150 tisíc, testeři i 40|D|04.11.2026 14:22|P|Dřív běžný plošný růst mezd v IT už se nekoná, uvádí průzkum společností Grafton Recruitment a Gi Group. Zatímco specialisté na umělou inteligenci, cl...|M|Lupa|X|Dřív běžný plošný růst mezd v IT už se nekoná, uvádí průzkum společností Grafton Recruitment a Gi Group. Zatímco specialisté na umělou inteligenci, cloud nebo kybernetickou bezpečnost si mohou přijít na více než 100 tisíc Kč měsíčně, některé tradiční IT profese stagnují a jejich ohodnocení začíná jen kolem 40 tisíc. Firmy navíc omezují nábor juniorů a stále častěji přehodnocují, jaké činnosti už dokážou automatizovat, uvádí firmy.
+Nejlépe placenou pozicí v IT zůstávají ředitelé technologických oddělení typu CIO a CTO. V Praze mohou jejich mzdy dosáhnout až 250 tisíc Kč měsíčně, v Jihomoravském kraji 220 tisíc. Vysoko se drží také experti na umělou inteligenci. Inženýři strojového učení, specialisté na velké jazykové modely nebo vývojáři AI/ML si můžou v hlavním městě vydělat až 150 tisíc Kč, spodní hranice mzdového rozpětí u nich přitom neklesá pod 95 tisíc. „Nabídka pracovních příležitostí v oblasti AI se zatím soustřeďuje především do Prahy, Jihomoravského a Moravskoslezského kraje, v budoucnu očekáváme jejich rozšíření i do dalších regionů,“ říká Eliška Smržová, ředitelka divize Grafton Recruitment.
+Vyšší mzdy nabízejí také některé specializace v kybernetické bezpečnosti a cloudových technologiích. Například konzultant IT bezpečnosti si v Praze může vydělat až 130 tisíc korun (ve Zlínském kraji pozice začíná na 55 tisících Kč), architekt Salesforce až 160 tisíc. Přes 100 tisíc se dostávají také zkušení odborníci na SAP, DevOps nebo cloudová prostředí AWS a Azure.
+Na opačném konci žebříčku jsou manuální testeři, jejichž mzdy v některých regionech začínají na 40 tisících Kč. Podobně jsou na tom techničtí pracovníci podpory nebo IT administrátoři. Méně atraktivní jsou také některé dříve žádané vývojářské specializace, například PHP, JavaScript nebo frontendový vývoj.
+Rutinnější úkoly podle společností častěji přebírá automatizace a umělá inteligence a uchazeči jsou proto podle průzkumu ochotnější přistupovat na kompromisy v požadované mzdě, práci z domova nebo formě spolupráce.
+Výrazné rozdíly přetrvávají také mezi regiony. Vývojář v jazyce C# si může v Praze a Středočeském kraji vydělat až 135 tisíc Kč měsíčně, ve Zlínském kraji je horní hranice rozpětí 70 tisíc.|E|
 |T|Váš mobilní operátor může brzy hlídat nebe. Takhle chce Ericsson pomocí vysílačů odhalovat drony|D|04.11.2026 13:07|P|Technologie ISAC využívá odrazů mobilního signálu od letících objektů, mimo jiné dronů. V budoucnu mohou 6G stožáry chránit celá území nebo jednorázov...|M|Cnews|X|Ochrana proti dronům se týká nejen válečných konfliktů, ale i civilní infrastruktury, jako jsou elektrárny, letiště nebo státní hranice. Základním stavebním kamenem jsou technologie pro detekci dronů, které využívají několik konceptů. Nyní se mezi ně přidává Ericsson, který chce drony a další nízko letící cíle detekovat pomocí mobilních sítí.
 Odrazy mobilního signálu
 Systém ISAC (Integrated Sensing and Communication), který firma nedávno představila, využívá infrastrukturu mobilních sítí – nejen samotné stožáry, ale i samotné vysílače. V tzv. multistatické architektuře je vysílání a příjem rádiových vln rozložen mezi několik stanovišť. Ty využívají stejného principu jako běžnější radary, tedy odraz rádiových vln od překážek ve vzduchu, v tomto případě dronů. Odražený signál zachytí nejen původní stanice, ale i další v okolí ve vzdálenosti až několik jednotek kilometrů.

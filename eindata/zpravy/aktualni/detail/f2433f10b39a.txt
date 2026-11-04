@@ -1,0 +1,17 @@
+Taijora
+Bezplatná kalkulačka čínského horoskopu Bazi (Čtyři pilíře osudu) s pravým slunečním časem a AI interpretací.
+O nástroji
+Taijora je nástroj pro výpočet Bazi natálního horoskopu (Four Pillars) založený na tradici Shenxiao a astronomických algoritmech pravého slunečního času. Uživatel zadá datum, čas a místo narození (solární nebo lunární kalendář, pohlaví) a nástroj vytvoří deterministický výpočet s přesným určením slunečních period a půlnočních hranic na vteřiny, aby se předešlo chybám v pilířích. Výsledný graf obsahuje čtyři pilíře (rok, měsíc, den, hodina) s hlavními, vedlejšími a zbytkovými skrytými nebeskými kmeny, Deset bohů, Nayin a Shensha hvězdy. AI analýza kombinuje více tradičních škol – určování „užitečných bohů“ pomocí substance-function mechaniky a hodnocení příznivých/nepříznivých prvků podle síly, klimatu a vyvažovacích pravidel – a doplňuje ji fyziognomií a ústními mnemotechnikami pro hlubší výklad. Podle dostupných údajů jde o bezplatnou kalkulačku bez zmínky o API či otevřeném zdrojovém kódu. Rozhraní stránky je v angličtině, česká lokalizace není uvedena.
+Klíčové vlastnosti
+- Čtyři pilíře osudu s hlavními i skrytými nebeskými kmeny
+- Pravý sluneční čas na vteřiny přesný
+- Deset bohů, Nayin a Shensha hvězdy v grafu
+- AI interpretace kombinující více tradičních škol
+Časté dotazy
+Co přesně Taijora počítá?
+Taijora vytvoří natální Bazi graf (Four Pillars) se čtyřmi pilíři roku, měsíce, dne a hodiny, včetně skrytých kmenů, Deseti bohů, Nayin a Shensha hvězd, a doplní jej AI interpretací podle tradice Shenxiao.
+Kolik Taijora stojí?
+Podle dostupných údajů jde o bezplatnou kalkulačku, konkrétní cenový model ale není na webu specifikován.
+Jak se s Taijora začíná?
+Stačí zadat datum, čas a místo narození (solární nebo lunární kalendář) a pohlaví, nástroj poté automaticky vypočítá deterministický graf a nabídne hlubší AI analýzu.
+Kategorie

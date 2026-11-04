@@ -1,0 +1,17 @@
+Uncracked City
+Detektivní hra zasazená do reálných měst, kde uživatelé vyslýchají podezřelé ovládané AI modelem a odhalují lháře.
+O nástroji
+Uncracked City je detektivní hra, v níž uživatelé prohledávají lokace v reálných městech, hledají indicie a kladou vlastní otázky (psané i mluvené) podezřelým. Podezřelé postavy odpovídají hlasem díky AI modelu (LLM) a některé z nich lžou – úkolem je konfrontovat lež s nalezeným důkazem a sepsat report, na což jsou k dispozici maximálně tři pokusy. Hra obsahuje pět tréninkových úrovní (Paříž, Rio de Janeiro, Marrákeš, Tokio, Sydney) a dále „skutečné“ případy ve městech jako Benátky, Lisabon, Edinburgh, Amsterdam, Cusco, Soul, Kapské Město nebo New York. U těchto případů hra zobrazuje, kolik hráčů je již vyřešilo – u většiny zatím nikdo. Po vyřešení případu se dané město otiskne do virtuálního pasu hráče a hra je dostupná v šesti jazycích, přičemž se hraje bez nutnosti zakládat účet. Konkrétní cenový model ani informace o API nebo open-source statusu nejsou na webu uvedeny, proto je cena označena jako neznámá.
+Klíčové vlastnosti
+- Výslechy podezřelých ovládaných AI hlasem
+- Otázky lze psát i mluvit v šesti jazycích
+- Prohledávání lokací v reálných městech
+- Konfrontace lži s nalezeným důkazem
+Časté dotazy
+Co přesně hráč v Uncracked City dělá?
+Hráč prohledává lokace v reálném městě, hledá indicie a klade vlastní otázky (psané i mluvené) podezřelým, kteří odpovídají hlasem díky AI modelu. Úkolem je odhalit lháře, konfrontovat ho s důkazem a sepsat report na maximálně tři pokusy.
+Kolik Uncracked City stojí?
+Konkrétní cenový model není na webu uveden, cena je tedy neznámá.
+Pro koho je hra určená a jak se začíná?
+Hra je určená fanouškům detektivek a zahádek v reálných městech; začíná se pěti tréninkovými úrovněmi (Paříž, Rio de Janeiro, Marrákeš, Tokio, Sydney) a poté následují skutečné případy jako Benátky či New York, hraje se bez založení účtu.
+Kategorie

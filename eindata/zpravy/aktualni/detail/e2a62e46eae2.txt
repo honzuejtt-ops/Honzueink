@@ -1,0 +1,17 @@
+Consistent Character AI ORG
+Generátor AI postav, které zůstávají rozpoznatelné napříč scénami, outfity i videi podle referenčního obrázku.
+O nástroji
+Consistent Character AI je generátor obrázků a videí, který pomocí referenčního obrázku a textového promptu udržuje stejnou podobu a identitu postavy napříč různými scénami, outfity a pózami. Nástroj je určen pro storyboardy, grafické novely, krátká videa a marketingové koncepty – uživatel nahraje referenční obrázek, zvolí styl (od anime po fotorealismus) a vygeneruje scény, které lze následně proměnit ve video pomocí funkce animace obrázků. Mezi funkce patří historie generování, kontrola poměru stran výstupu, hotové pracovní příklady s promptem a poměrem stran k úpravě, a zobrazení kreditů i jejich ceny ještě před spuštěním generování. Registrace nevyžaduje platební kartu. Provoz je založen na kreditovém systému – aktuální zůstatek a cena akce se zobrazují předem, dostupné workflow se může lišit podle účtu a tarifu. Konkrétní cenové podmínky ani limity bezplatné verze nejsou v dostupných informacích blíže specifikovány. API ani open source řešení nejsou zmíněny, rozhraní je v angličtině.
+Klíčové vlastnosti
+- Zachování podoby postavy podle referenčního obrázku
+- Styly od anime po fotorealismus
+- Animace vygenerovaných obrázků do videa
+- Historie generování pro návrat k předchozím výstupům
+Časté dotazy
+Co nástroj umí?
+Z referenčního obrázku a textového promptu vytváří scény, outfity a pózy se stejnou rozpoznatelnou postavou, kterou lze následně animovat do videa.
+Kolik to stojí?
+Provoz je na kreditovém systému, kde se cena akce a aktuální zůstatek zobrazují před spuštěním generování; konkrétní ceník není v podkladech uveden.
+Jak začít a pro koho je nástroj určen?
+Stačí nahrát referenční obrázek, popsat scénu a kliknout na generování – registrace nevyžaduje platební kartu. Hodí se pro storyboardy, grafické novely, krátká videa a marketingové koncepty.
+Kategorie

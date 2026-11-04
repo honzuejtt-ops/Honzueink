@@ -1,0 +1,17 @@
+Wan AI
+Wan AI je online generátor videí, který z textových promptů nebo obrázků vytváří videa a voiceovery pro marketing, e-shopy i sociální sítě.
+O nástroji
+Wan AI je platforma pro generování videí pomocí umělé inteligence, která umožňuje vytvářet videa z textových promptů (text-to-video) nebo z obrázků (image-to-video) včetně voiceoveru. Nástroj nabízí bezplatnou standardní ukázku bez nutnosti zadávat platební kartu, konkrétně jeden free standard preview s 20 kredity. Pro náročnější použití je k dispozici verze Pro s HD výstupem, delšími klipy a pokročilými tvůrčími kontrolami. K dispozici jsou různé modelové workflow – Wan 2.5 Pro, Wan 2.6 Pro, Wan 2.7 Pro a připravovaný Wan 3.0 Preview zaměřený na 4K video, vícestřihovou režii, ovládání kamery a synchronizaci zvuku. Nástroj je určen pro tvorbu marketingových videí, produktových demo klipů, reklam na sociální sítě i filmových scén pro YouTube. Uživatel zadá prompt nebo nahraje obrázek (PNG, JPG nebo WebP do 8 MB, případně veřejnou URL adresu), vybere vhodný workflow a vygenerované video může rovnou použít pro marketing nebo kreativní storytelling.
+Klíčové vlastnosti
+- Generování videí z textu i z obrázků
+- Automatický voiceover k videím
+- Nahrání referenčního obrázku PNG, JPG nebo WebP do 8 MB
+- Více modelových workflow Wan 2.5 až 2.7 Pro
+Časté dotazy
+Co přesně Wan AI umí vygenerovat?
+Z textového promptu nebo nahraného obrázku vytvoří video včetně voiceoveru, vhodné pro marketingové klipy, produktová videa, reklamy na sociální sítě nebo filmové scény.
+Kolik Wan AI stojí?
+Základní vyzkoušení je zdarma bez nutnosti zadávat kartu, pro HD výstup, delší klipy a pokročilé kontroly je určena placená verze Pro.
+Jak začít a pro koho je nástroj určený?
+Stačí zadat textový prompt nebo nahrát obrázek (případně veřejnou URL), vybrat workflow jako Wan 2.5, 2.6 nebo 2.7 Pro a vygenerovat video; hodí se pro marketéry, e-shopy i tvůrce obsahu na sociální sítě.
+Kategorie

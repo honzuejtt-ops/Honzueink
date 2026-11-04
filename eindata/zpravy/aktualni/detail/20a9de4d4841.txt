@@ -1,0 +1,17 @@
+Image to Layers AI
+Nástroj pomocí AI rozdělí jeden obrázek na samostatné průhledné PNG vrstvy – subjekt, pozadí i jednotlivé objekty.
+O nástroji
+Image to Layers AI umožňuje nahrát JPG, PNG nebo WebP soubor (do 10 MB) a nechat ho umělou inteligencí rozdělit na vrstvy podle zadaného počtu (2 až 17) nebo podle vlastního textového popisu, co se má oddělit. K dispozici jsou dva modely, Flash a Pro, a volba výstupního rozlišení 1K, 1,5K nebo 2K – podle zvoleného nastavení se liší i spotřeba kreditů (Flash 10 kreditů za vrstvu, Pro 12 nebo 24 podle rozlišení). Výsledkem jsou skutečné RGBA vrstvy s alfa kanálem bez zubatých okrajů, které lze po poskládání znovu složit do původního obrázku. Hotové vrstvy je možné stáhnout jednotlivě jako PNG/WebP nebo jako celý balík, případně exportovat jako PSD přímo pro Photoshop, Figma či After Effects. Kromě rozdělování obrázků nabízí web i řadu dalších souvisejících nástrojů, například oddělování vrstev postav, odstranění textu či pozadí nebo generování obrázků z promptu.
+Klíčové vlastnosti
+- Rozdělení obrázku na 2 až 17 vrstev
+- Volba modelu Flash nebo Pro a rozlišení 1K/1,5K/2K
+- Vlastní textový prompt pro určení, co oddělit
+- Skutečné RGBA PNG vrstvy s alfa kanálem bez zubatých okrajů
+Časté dotazy
+Co přesně nástroj umí?
+Nahraje se obrázek (JPG, PNG nebo WebP do 10 MB) a AI ho rozdělí na samostatné průhledné vrstvy – subjekt, pozadí i jednotlivé objekty – podle zadaného počtu vrstev nebo textového popisu.
+Kolik to stojí?
+Platí se za každou vrácenou vrstvu formou kreditů – model Flash stojí 10 kreditů za vrstvu, Pro 12 kreditů při rozlišení 1K/1,5K nebo 24 kreditů při 2K.
+Pro koho je nástroj určený a jak se začíná?
+Hodí se pro grafiky, ilustrátory a tvůrce pracující s Photoshopem, Figma nebo After Effects – stačí nahrát obrázek, zvolit model, rozlišení a počet vrstev (případně popsat, co oddělit) a během minuty stáhnout hotové PNG nebo PSD vrstvy.
+Kategorie

@@ -1,0 +1,17 @@
+nanobanana 2.1
+Nanobanana 2.1 je online generátor a editor obrázků s AI, který z textu vytváří fotky až ve 4K a umí spojit až 14 referenčních snímků.
+O nástroji
+Nanobanana 2.1 je webové rozhraní postavené na modelu gemini-nano-banana-2.1 z rodiny Gemini 3 (Flash tier). Umožňuje generovat obrázky z textu v rozlišení 1K, 2K nebo 4K, provádět přesné lokální úpravy fotek (např. přebarvení zdi, odstranění objektu), umísťovat produkty do nových scén při zachování jejich tvaru a popisků, vykreslovat čitelný text na cedulích či plakátech a kombinovat až 14 referenčních obrázků do jedné scény při zachování konzistentního vzhledu postav. K dispozici je 14 poměrů stran od 1:8 po 8:1 a práce probíhá přímo v prohlížeči bez nutnosti API klíče, kódu nebo grafické karty, i když API je dle webu zmiňováno jako možnost. Nástroj je určen zejména pro e-shopy (lifestylové fotky produktů, packshoty, bannery), tvůrce sociálního obsahu (formáty 9:16 a 4:5 s čitelnými nadpisy), marketéry a agentury (kampaně od formátu 8:1 po 21:9) i designéry a pedagogy (mood boardy, infografiky, mapy). První generovaný obrázek je zdarma jako zkušební (Nano Banana 2 Lite, 1K), další generování se už platí z kreditů – generování 1K obrázku stojí 25 kreditů, 2K 35 kreditů a 4K 75 kreditů, plus 2 kredity za každý referenční obrázek. Kredity lze koupit jednorázově v balíčcích od 9,90 USD (800 kreditů) přes 29,90 USD (2 600 kreditů) až po 69,90 USD (6 990 kreditů), přičemž neúspěšné generování je automaticky vráceno. Web je v angličtině a neuvádí český překlad ani open-source licenci.
+Klíčové vlastnosti
+- Generování z textu v rozlišení 1K, 2K i 4K
+- Spojení až 14 referenčních obrázků do jedné scény
+- Přesné lokální úpravy (přebarvení, odstranění objektu)
+- Umístění produktu do nové scény se zachováním tvaru a popisků
+Časté dotazy
+Co Nanobanana 2.1 umí?
+Generuje obrázky z textu až ve 4K, umí lokálně upravovat fotky, umísťovat produkty do nových scén, vykreslovat čitelný text a spojit až 14 referenčních obrázků se zachováním konzistentních postav.
+Kolik stojí používání nástroje?
+První obrázek v 1K je zdarma jako zkouška, poté se platí kredity – 25 kreditů za 1K, 35 za 2K a 75 za 4K obrázek, plus 2 kredity za každý referenční obrázek. Kredity se kupují v balíčcích od 9,90 USD za 800 kreditů.
+Jak začít a pro koho je nástroj určen?
+Stačí napsat prompt, případně přidat referenční obrázky, vybrat poměr stran a rozlišení přímo v prohlížeči bez registrace API nebo grafické karty. Hodí se pro e-shopy, tvůrce sociálního obsahu, marketéry i designéry.
+Kategorie

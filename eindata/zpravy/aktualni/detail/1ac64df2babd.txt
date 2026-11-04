@@ -1,0 +1,17 @@
+Hotel Lobby AI Video Generator
+Z dvou nahraných fotek vygeneruje video napodobující trend „Hotel Lobby AI“ – obě osoby v oranžové COLORS kabince u mikrofonu.
+O nástroji
+Hotel Lobby AI Video Generator vytvoří krátké video ve stylu virálního trendu „Hotel Lobby“ (Quavo & Takeoff, A COLORS SHOW) jen z dvou nahraných fotografií – žádný textový prompt ani zelené plátno není potřeba. Fotka první osoby se umístí na levou stranu scény, druhá na pravou, a nástroj doplní oranžovou kabinku, visetící mikrofon i pohyby obou postav podle originálního klipu, včetně původní hudby. Délku videa lze zvolit 5, 10 nebo 15 sekund, k dispozici jsou modely Seedance 2.0 (Mini, Fast, 2.5) ve výstupu 720p a MiniMax H3 i v 1080p. Systém funguje na kreditech, přičemž přesná cena se zobrazí ještě před generováním a neúspěšné pokusy jsou automaticky vráceny. Nové účty mohou získat až 10 úvodních kreditů platných 3 dny, což nestačí ani na nejlevnější 5sekundové video (od 12 kreditů), proto je potřeba dokoupit kredity – jednorázový balíček za 5 dolarů přidává 24 kreditů, dostačujících na 10sekundové video v modelu Seedance 2.0 Mini. Bezplatně vygenerovaná videa obsahují malý vodoznak aihotellobby.net, který zmizí po jakékoliv platbě. Hotové video je ve formátu MP4 v poměru 16:9, připravené ke sdílení na TikToku, Instagram Reels nebo YouTube Shorts.
+Klíčové vlastnosti
+- Video z pouhých dvou nahraných fotek bez promptu
+- Napodobí originální klip „Hotel Lobby“ s oranžovou kabinkou
+- Délka videa 5, 10 nebo 15 sekund
+- Modely Seedance 2.0 a MiniMax H3 ve 720p či 1080p
+Časté dotazy
+Co přesně nástroj vytvoří z mých fotek?
+Z dvou nahraných fotografií vygeneruje krátké video, kde se obě osoby objeví v oranžové kabince u mikrofonu podle trendu „Hotel Lobby“, včetně původní hudby a pohybů z originálního klipu.
+Kolik to stojí?
+Systém funguje na kreditech, nejlevnější 5sekundové video stojí od 12 kreditů a cena se zobrazí před generováním. Balíček za 5 dolarů přidává 24 kreditů, což stačí na 10sekundové video v modelu Seedance 2.0 Mini.
+Jak začít a je to zdarma?
+Stačí nahrát jednu jasnou fotku na osobu, zvolit délku videa a stisknout generování. Nové účty dostanou až 10 úvodních kreditů na 3 dny, to ale nepokryje ani nejlevnější video, takže je potřeba dokoupit kredity.
+Kategorie

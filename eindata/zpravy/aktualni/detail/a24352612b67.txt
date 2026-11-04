@@ -1,0 +1,17 @@
+Rayopix
+Online nástroj, který z fotek s virálním „matcha“ TikTok filtrem pomocí AI rekonstruuje přirozenou barvu a texturu snímku.
+O nástroji
+Rayopix je webová aplikace zaměřená na odstranění „matcha“ filtru z fotografií – populárního efektu z TikToku, který převádí fotky do zeleného tekutého „art“ stylu. Uživatel nahraje jeden obrázek (JPG, PNG nebo WebP, max. 10 MB), zvolí poměr stran (Auto, 1:1, 4:3, 3:4, 16:9, 9:16) a rozlišení výstupu (1K, 2K, 4K). AI model následně znovu vygeneruje přirozenou barvu, texturu kůže, vlasů, oblečení a pozadí, přičemž se snaží zachovat viditelnou pozici postavy, kompozici a rozvržení scény. Výsledek je podle popisu AI rekonstrukcí, nikoliv obnovením skrytých původních pixelů – jemné detaily obličeje, drobný text, loga nebo přesné vzory oblečení se tak mohou lišit od originálu. Jedno zpracování stojí 3 kredity, ukázkové generování je zdarma, ale pro zpracování vlastního obrázku je nutné se přihlásit. Nástroj zpracovává pouze statické fotografie, u videí z TikToku doporučuje nejprve exportovat ostrý snímek z klipu. Rayopix nabízí interaktivní porovnání před/po pomocí posuvníku a FAQ sekci vysvětlující rozdíl mezi klasickou barevnou korekcí a AI rekonstrukcí. Informace o cenovém modelu mimo kreditový systém a případné bezplatné verzi pro vlastní obrázky nejsou v dostupných podkladech uvedeny.
+Klíčové vlastnosti
+- Odstraňuje zelený TikTok „matcha“ filtr z fotek
+- AI rekonstrukce barvy, textury kůže, vlasů i pozadí
+- Zachovává pozici postavy a kompozici scény
+- Výstup v rozlišení 1K, 2K nebo 4K
+Časté dotazy
+Co přesně Rayopix dělá s fotkou?
+Z fotky s „matcha“ efektem z TikToku AI znovu vygeneruje přirozenou barvu a texturu kůže, vlasů, oblečení i pozadí, přičemž se snaží zachovat viditelnou pozici postavy a kompozici scény. Nejde o obnovení skrytých pixelů, ale o AI rekonstrukci, takže jemné detaily obličeje, text nebo vzory se mohou lišit od originálu.
+Kolik to stojí?
+Zpracování jednoho obrázku stojí 3 kredity. Ukázkové generování na vzorových fotkách je zdarma, ale pro zpracování vlastního obrázku je nutné se přihlásit.
+Pro koho je Rayopix vhodný a jak začít?
+Hodí se pro každého, kdo má uloženou fotku se „zelenou“ matcha úpravou a chce ji vrátit do přirozeného vzhledu – nejlépe funguje na selfie, portréty, páry, zvířata nebo produktové fotky. Stačí nahrát obrázek (JPG, PNG, WebP do 10 MB), zvolit poměr stran a rozlišení a nechat AI vygenerovat rekonstrukci.
+Kategorie

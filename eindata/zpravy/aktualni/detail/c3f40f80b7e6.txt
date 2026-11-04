@@ -1,0 +1,17 @@
+EmailWish
+All-in-one e-mailová marketingová platforma pro e-commerce obchody, která automatizuje e-maily, popupy, recenze a chat na jednom místě.
+O nástroji
+EmailWish je all-in-one e-mailová automatizační platforma určená majitelům e-commerce obchodů, a to jak začátečníkům, tak pokročilým uživatelům. Nástroj kombinuje e-mail, newslettery, recenze, chat a popupy v jedné platformě pro sběr leadů, zapojení zákazníků a zvýšení konverzí. Mezi klíčové funkce patří předpřipravené flows jako Abandoned Cart Series, Review Request Series, After Review Email Series, Welcome Subscriber Series, Chat Transcript, Order Thank you Email, Order Fulfilled Email nebo Popup Series. Uživatelé si navíc mohou vytvářet vlastní flows pomocí Email Builderu a Email Flow builderu a nástroj umí sbírat fotorecenze s automatickým follow-up e-mailem na základě zpětné vazby. Cenově jde o předplatitelský model se startovní cenou od 27 $ měsíčně, na Shopify App Store je ale dostupná jako free to install aplikace. API přístup EmailWish aktuálně neposkytuje a informace o open-source charakteru nejsou dostupné. Firma Emailwish LTD. sídlí v Sai Wan na Hong Kong Islandu.
+Klíčové vlastnosti
+- Předpřipravené flows (Abandoned Cart, Welcome Series)
+- Automatické sbírání fotorecenzí se follow-up e-mailem
+- Email Builder a Email Flow Builder pro vlastní automatizace
+- Popupy pro sběr leadů
+Časté dotazy
+Co všechno EmailWish umí?
+Kombinuje e-mailový marketing, newslettery, recenze, chat a popupy v jedné platformě. Obsahuje předpřipravené automatizace jako Abandoned Cart Series, Welcome Subscriber Series nebo Review Request Series a umožňuje stavět i vlastní flows.
+Kolik EmailWish stojí?
+Placené plány začínají od 27 $ měsíčně, na Shopify App Store je ale dostupná jako free to install aplikace.
+Pro koho je EmailWish vhodný a jak začít?
+Je určen majitelům e-commerce obchodů, ať už začátečníkům nebo pokročilým uživatelům, a nejsnazší start je přes instalaci aplikace na Shopify App Store.
+Kategorie

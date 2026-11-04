@@ -1,0 +1,17 @@
+Zmienka
+Zmienka ověří, zda AI asistenti jako Gemini doporučí vaši firmu, když ji zákazník hledá ve vašem městě.
+O nástroji
+Zmienka je nástroj, který zjišťuje, jak si vaše firma stojí ve výsledcích AI vyhledávání. Po zadání webu stránky otestují, zda AI asistenti při dotazu na konkrétní službu ve vašem městě zmíní právě váš podnik, a výsledek doplní o datum testu a použité zdroje. Podle webu je k dispozici bezplatný test, placené varianty pak vycházejí z ceny uvedené na stránce (90 €). Rozhraní nástroje je ve slovenštině. Z dostupných informací není jasné, zda nástroj nabízí API nebo zda jde o open source řešení – tyto údaje web neuvádí.
+Klíčové vlastnosti
+- Test, zda AI asistenti doporučí vaši firmu
+- Ověření pro konkrétní službu a město
+- Výsledek doplněný o datum testu
+- Uvedení zdrojů, ze kterých AI čerpala
+Časté dotazy
+Co přesně Zmienka zjistí?
+Nástroj ověří, zda AI asistenti jako Gemini při dotazu na konkrétní službu ve vašem městě doporučí právě váš podnik, a výsledek doplní o datum testu a použité zdroje.
+Kolik Zmienka stojí?
+K dispozici je bezplatný test, placené varianty pak vycházejí z ceny 90 € uvedené na stránce.
+Jak začít nástroj používat?
+Stačí na webu zadat adresu vaší firemní stránky a spustit bezplatný test, který prověří viditelnost u AI asistentů.
+Kategorie

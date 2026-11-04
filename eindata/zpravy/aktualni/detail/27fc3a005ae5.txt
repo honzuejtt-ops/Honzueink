@@ -1,0 +1,17 @@
+AI Object Remover
+Online nástroj pro odstranění nežádoucích objektů, lidí, textu, vodoznaků nebo samolepek z fotek pomocí štětce a AI.
+O nástroji
+AI Object Remover je webová aplikace pro úpravu fotografií přímo v prohlížeči bez nutnosti instalace softwaru. Uživatel nahraje fotku ve formátu JPG, PNG nebo WebP (do 10 MB) a štětcem označí, co chce odstranit – lidi, objekty, text, vodoznaky nebo emoji a samolepky. AI následně přemaluje pozadí v označené oblasti. Nástroj nabízí tři režimy úpravy: Standard (lokální oprava za 1 kredit), Precision a Pro (kompletně přepracovaná fotka za 2 kredity). Před samotnou úpravou lze porovnat výsledek „před a po“ a zkontrolovat detaily, výsledná fotka se stahuje jako PNG bez přidaného vodoznaku. Placení funguje formou jednorázového nákupu kreditů bez předplatného – balíček Starter s 10 kredity stojí 4,99 USD a kredity platí po dobu jednoho roku. Bezplatná verze podle dostupných informací není k dispozici, API ani open source řešení nejsou zmíněny.
+Klíčové vlastnosti
+- Odstranění lidí, objektů, textu, vodoznaků i samolepek štětcem
+- Tři režimy úprav: Standard, Precision a Pro
+- Porovnání výsledku před a po úpravě
+- Úprava přímo v prohlížeči bez instalace softwaru
+Časté dotazy
+Co přesně AI Object Remover umí odstranit z fotky?
+Nástroj dokáže odstranit nežádoucí lidi, objekty, text, vodoznaky i emoji a samolepky z fotografie – stačí je označit štětcem a AI přemaluje dané místo tak, aby zapadlo do pozadí.
+Kolik stojí používání AI Object Remover?
+Platí se jednorázovým nákupem kreditů bez předplatného, například balíček Starter s 10 kredity vyjde na 4,99 USD a kredity jsou platné po dobu jednoho roku. Standardní úprava stojí 1 kredit, režim Pro s kompletním přepracováním fotky 2 kredity.
+Je k dispozici bezplatná verze a jak nástroj začít používat?
+Bezplatná verze podle dostupných informací není k dispozici. Stačí nahrát fotku ve formátu JPG, PNG nebo WebP do 10 MB, štětcem označit, co chcete odstranit, přihlásit se a úpravu spustit za kredity.
+Kategorie

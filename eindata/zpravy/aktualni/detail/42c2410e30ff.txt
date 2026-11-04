@@ -1,0 +1,17 @@
+TryH3
+Generátor AI videí pro virální trendy ze sociálních sítí – stačí nahrát fotku a vybrat šablonu trendu.
+O nástroji
+TryH3 je nástroj pro tvorbu AI videí založených na aktuálně populárních trendech ze sociálních sítí. Uživatel nahraje vlastní fotku a vybere jednu z nabízených šablon (např. taneční výzvy, memy nebo virální scénky), nástroj pak vygeneruje video s odpovídajícím originálním zvukem. Nabídka obsahuje desítky předpřipravených trend šablon, mezi nimiž lze vybírat podle aktuální popularity. Kromě režimu „fotka do trendu“ nástroj umožňuje i generování videa z textového promptu, a to s využitím modelů MiniMax H3 nebo Seedance. K dispozici jsou také funkce pro úpravu videa a jeho prodloužení (video extension), takže lze pracovat jak s hotovými klipy, tak vytvářet obsah od začátku. Z dodaných údajů nevyplývá, že by nástroj nabízel bezplatnou verzi, ani není zmíněno API či open source řešení. Rozhraní je v angličtině, informace o cenách nejsou v dostupných podkladech uvedeny.
+Klíčové vlastnosti
+- Generování videa z nahrané fotky podle trend šablony
+- Desítky předpřipravených virálních šablon (tance, memy, scénky)
+- Generování videa z textového promptu (MiniMax H3, Seedance)
+- Funkce pro úpravu videa
+Časté dotazy
+Co přesně TryH3 umí?
+Nahrajete vlastní fotku, vyberete trend šablonu (např. taneční výzvu nebo mem) a nástroj z ní vygeneruje video s originálním zvukem. Dá se také generovat video přímo z textového promptu pomocí modelů MiniMax H3 nebo Seedance, případně existující video upravit či prodloužit.
+Kolik TryH3 stojí?
+Z dostupných podkladů není cena ani existence bezplatné verze uvedena.
+Pro koho je TryH3 vhodný a jak začít?
+Je určen tvůrcům obsahu pro sociální sítě, kteří chtějí rychle zkusit aktuální virální trend – stačí se přihlásit, nahrát fotku a vybrat jednu z desítek šablon.
+Kategorie

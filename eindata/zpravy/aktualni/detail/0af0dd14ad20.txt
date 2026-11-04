@@ -1,0 +1,17 @@
+Avatiko
+Avatiko vytvoří AI influencera z vlastní postavy a vloží ji do videí podle nahraného referenčního klipu nebo odkazu.
+O nástroji
+Avatiko umožňuje jednou vytvořit AI postavu – zvolit obličej, účes, outfit a styl – a tuto postavu pak použít v různých videích. Uživatel nahraje referenční video nebo vloží odkaz (např. na TikTok) a nástroj vygeneruje stejné video s danou AI postavou namísto originálního herce. Podle popisu na webu lze tímto způsobem vytvořit scény jako ranní rutina, vaření v kuchyni, předvedení produktu nebo procházka v uličním stylu, přičemž postava si ve všech klipech zachovává stejný vzhled. Informace o ceně, případné bezplatné verzi, API přístupu ani otevřeném zdrojovém kódu nejsou z dostupných podkladů ověřitelné, proto je zde neuvádíme.
+Klíčové vlastnosti
+- Vytvoření vlastní AI postavy (obličej, účes, outfit, styl)
+- Vložení postavy do videa podle referenčního klipu
+- Import videa přes odkaz, např. z TikToku
+- Zachování stejného vzhledu napříč různými scénami
+Časté dotazy
+Co přesně Avatiko umí?
+Avatiko vytvoří vlastní AI postavu podle zvoleného vzhledu a vloží ji do videa podle nahraného referenčního klipu nebo odkazu, například z TikToku, přičemž postava si zachová stejný vzhled ve všech scénách.
+Kolik Avatiko stojí?
+Konkrétní ceník ani podrobnosti o placených plánech nejsou z dostupných podkladů ověřitelné.
+Jak začít Avatiko používat?
+Stačí si vytvořit AI postavu výběrem obličeje, účesu, outfitu a stylu, poté nahrát referenční video nebo vložit odkaz a nástroj vygeneruje nové video s touto postavou.
+Kategorie

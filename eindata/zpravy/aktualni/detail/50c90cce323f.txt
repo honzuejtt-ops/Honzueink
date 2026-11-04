@@ -1,0 +1,17 @@
+PromptGather
+Generátor AI videí a obrázků s knihovnou promptů a přístupem k modelům jako Veo 3, Kling či Nano Banana.
+O nástroji
+PromptGather je online nástroj pro tvorbu AI videí a obrázků, který nabízí přeměnu textu na video i obrázek a také přeměnu existujícího obrázku na video nebo jiný obrázek. Uživatelé mají přístup k řadě AI modelů, například Seedance, Veo 3, Kling, Wan, GPT Image, Nano Banana nebo Flux, a mohou procházet rozsáhlou knihovnu promptů roztříděnou podle modelů a kategorií (video, obrázky, tagy). Součástí nástroje jsou i speciální efekty, například AI líbání, objímání, oživení fotografie, taneční animace, výměna obličejů, návrh interiéru místnosti, přeměna fotky na skicu nebo odstranění vodoznaku z obrázků. Po registraci získají uživatelé 30 kreditů zdarma a dalších 10 kreditů denně po dobu prvních 7 dní, což umožňuje vygenerovat až 2 videa nebo 15 obrázků bez nutnosti zadávat platební kartu. Výstupy lze podle uvedených informací použít i komerčně bez licenčních poplatků. Podrobnosti o placených tarifech nad rámec úvodních kreditů nejsou v dostupných informacích uvedeny.
+Klíčové vlastnosti
+- Text na video i text na obrázek
+- Obrázek na video nebo na jiný obrázek
+- Přístup k modelům Veo 3, Kling, Seedance, Nano Banana, Flux
+- Knihovna promptů tříděná podle modelů a kategorií
+Časté dotazy
+Co PromptGather umí?
+Generuje AI videa a obrázky z textu i z existujících obrázků pomocí modelů jako Veo 3, Kling, Seedance, Nano Banana nebo Flux, a nabízí i speciální efekty jako AI líbání, výměnu obličejů nebo návrh interiéru.
+Kolik PromptGather stojí?
+Po registraci získáte 30 kreditů zdarma a dalších 10 kreditů denně po dobu prvních 7 dní (až 100 kreditů), bez nutnosti zadávat platební kartu. Podrobnosti o placených tarifech nad rámec úvodních kreditů nejsou uvedeny.
+Pro koho je PromptGather vhodný a jak začít?
+Je vhodný pro tvůrce obsahu, kteří chtějí rychle vytvářet AI videa a obrázky pro komerční použití. Stačí se zaregistrovat přes Google účet nebo e-mailem a ihned začít generovat s úvodními kredity.
+Kategorie

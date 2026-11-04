@@ -1,0 +1,17 @@
+RouteMux
+RouteMux je AI brána s jedním API klíčem a rozhraním kompatibilním s OpenAI, přes kterou voláte modely mnoha poskytovatelů a platíte jen úspěšné požadavky.
+O nástroji
+RouteMux je takzvaná AI brána pro vývojáře. Místo samostatných účtů a klíčů u každého poskytovatele používáte jeden klíč a jeden endpoint kompatibilní s OpenAI, takže stačí zachovat SDK, které už máte, a změnit adresu. Přes bránu jdou modely od OpenAI, Anthropicu, Googlu, xAI, DeepSeeku, Qwenu, MiniMaxu, Moonshotu a dalších, a to pro text, obrázky i video. Hlavní důraz klade služba na spolehlivost: požadavky má rozložené na více redundantních tras, a když jedna selže, přepne na další. Účtují se jen požadavky, které uspějí. V konzoli najdete přehled spotřeby, logy požadavků, úspěšnost a latenci. Platí se podle spotřeby bez předplatného a bez placení za uživatele, dobití kreditu začíná na 10 dolarech a nevyčerpaný zůstatek lze podle webu kdykoli vybrat. Ceny jednotlivých modelů uvádí ceník přímo na webu.
+Klíčové vlastnosti
+- Jeden API klíč pro více poskytovatelů modelů
+- Rozhraní kompatibilní s OpenAI SDK
+- Podpora textu, obrázků i videa
+- Automatické přepnutí na redundantní trasu při selhání
+Časté dotazy
+Jaké modely lze přes RouteMux volat?
+Přes jednotné API lze volat modely od OpenAI, Anthropicu, Googlu, xAI, DeepSeeku, Qwenu, MiniMaxu, Moonshotu a dalších poskytovatelů, a to pro text, obrázky i video.
+Kolik RouteMux stojí?
+Platí se podle skutečné spotřeby bez předplatného, účtují se jen úspěšné požadavky a ceny jednotlivých modelů najdete v ceníku na webu. Dobití kreditu začíná na 10 dolarech a nevyčerpaný zůstatek lze kdykoli vybrat.
+Pro koho je RouteMux určený a jak začít?
+Je určen vývojářům, kteří chtějí místo samostatných účtů u každého poskytovatele používat jeden API klíč a endpoint kompatibilní s OpenAI. Stačí v existujícím SDK změnit adresu endpointu a dobít kredit.
+Kategorie

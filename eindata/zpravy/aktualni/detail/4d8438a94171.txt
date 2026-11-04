@@ -1,0 +1,44 @@
+Přecházíme na ZFS
+Řekněme, že chci přeinstalovat další notebook na novější Debian na ZFS. Předtím než disk smažu, potřebuji data na něm uložená zazálohovat. Naprostá většina veškerých nastavení a dat uživatelů jsou v podadresáři adresáře  /home/. Jednou z výjimek je uložení jmen a hesel ke známým Wi-Fi sítím a týká se to také spojení VPN. Ty se ukládají do adresáře  /etc/NetworkManager/.
+Abych mohl i tato data snadno zálohovat, provedu nejdříve jejich lokální zálohu do souboru .tar v domovském adresáři:
+sudo tar -C /etc/NetworkManager -czf ~/networkmanager-connections.tar.gz system-connections
+Nyní se přesunu na počítač, kde mi již ZFS funguje a vytvořím si dataset pro tuhle zálohu:
+zfs create -o mountpoint=/backup_notebook -o compression=zstd-9 zroot/backup_notebook
+Jelikož se jedná jen o zálohu, ze které se nebude moc často číst, mohu zvolit lepší kompresi. V systému se mi nyní objeví nový adresář /backup_notebook, který představuje nový dataset.
+Že v systému přibyl nový dataset mohu ověřit pomocí příkazu  zfs list.
+Samotnou zálohu adresáře /home/ provedu pomocí rsync, jelikož na tom notebooku ještě ZFS není. Příkaz použiji na počítači se ZFS, kam chci zálohovat.
+sudo rsync -aHAXSdv --numeric-ids --one-file-system --exclude='lost+found' --exclude='.cache' user@192.168.0.127:/home/ /backup_notebook/
+Po dokončení zálohy zkontroluji obsazení disku.
+zfs list
+NAME                    USED  AVAIL  REFER  MOUNTPOINT
+zroot                   155G   768G   192K  none
+zroot/ROOT             16.8G   768G   192K  none
+zroot/ROOT/debian      11.9G   768G  8.90G  /
+zroot/ROOT/debian2     4.91G   768G  4.91G  /
+zroot/backup_notebook  50.0G   768G  50.0G  /backup_notebook
+zroot/home             87.8G   768G  70.4G  /home
+Vidím, že na notebooku data oddílu /home, který jsme zálohovali, zabírají zhruba 70 GB, v ZFS díky kompresi jen 50 GB. Nyní mohu obsah disku notebooku smazat a mohu na něj nainstalovat nebo naklonovat Debian používající ZFS.
+Přenášíme zálohu
+Po dokončení na něj mohu zkopírovat zpět dataset s původní zálohou.
+sudo zfs send zroot/backup_notebook@migration_notebook | ssh user@192.168.0.127 "sudo zfs receive -o mountpoint=/backup_notebook -o compression=zstd-9 zroot/backup_notebook"
+Jelikož zfs send v případě, že se posílají původně zašifrovaná data, neumí poslat vlastnosti, nastavuji je v části zfs receive. Kdybych parametry komprese nastavil až po přenosu, neměla by již žádný vliv a použila by se běžná komprese, což by znamenalo, že záloha by zabrala zhruba o 10 GB více místa na disku.
+S každým startem živé distribuce se hostitelské SSH klíče znovu vygenerují a přihlášení pak může tiše selhávat s tím, že někdo vyměnil stroj, na který se snažíte přihlásit. Před provedením příkazu se přesvědčte, že se na druhý stroj můžete dostat i z uživatele root na stroji, ze kterého se hlásíte.
+Moje nová instalace Debianu vyžaduje vždy po použití sudo zadání hesla, což znemožňuje použít sudo před příkazem zfs receive, jelikož heslo na dálku zadat nelze.
+Pro jednorázový přenos mohu problém obejít dočasným potlačením nutnosti zadávat heslo při  sudo.
+Na notebooku provedu:
+sudo sh -c 'echo "user ALL=(ALL:ALL) NOPASSWD: ALL" > /etc/sudoers.d/nopasswd-temp'
+sudo chmod 440 /etc/sudoers.d/nopasswd-temp
+Možné je také sudo bez hesla povolit jen pro příkaz zfs receive, což by mohlo být dostatečně bezpečné jako trvalé řešení.
+Pro zrušení této změny provedu:
+sudo rm /etc/sudoers.d/nopasswd-temp
+Přesun nastavení
+Na notebooku mohu nyní postupně přesouvat různá nastavení z původního disku podle potřeby. Například mohu obnovit automatické připojování do různých Wi-Fi sítí pomocí:
+sudo tar -C /etc/NetworkManager -xzf /backup_notebook/user/networkmanager-connections.tar.gz
+sudo chmod 600 /etc/NetworkManager/system-connections/*
+sudo systemctl restart NetworkManager
+Třeba nastavení Firefoxu a Thunderbirdu obnovím následovně:
+rm -rf ~/.thunderbird && cp -a /backup_notebook/user/.thunderbird ~/
+rm -rf ~/.mozilla && cp -a /backup_notebook/user/.mozilla ~/
+Starou zálohu mohu pro jistotu na disku nechat i několik let, abych si byl jistý, že jsem nezapomněl nic důležitého přenést. Až bude jisté, že ji nepotřebuji, nebo jakmile mi začne docházet místo na disku, prostě tohle místo uvolním příkazem:
+zfs destroy zroot/backup_notebook
+Stejný příkaz mohu nechat provést jak na stolním počítači, tak na samotném notebooku.

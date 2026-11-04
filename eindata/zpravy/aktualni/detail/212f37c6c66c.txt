@@ -1,0 +1,17 @@
+EarA
+Neoficiální aplikace pro sluchátka Nothing a CMF. Přináší na Linuxovou funkce, které jinak nabízí jen mobilní aplikace od výrobce: stav baterie pro levé sluchátko, pravé sluchátko i nabíjecí pouzdro, ovládání aktivního potlačení šumu, režimu průhlednosti a poslechových režimů, nastavení basů a ekvalizéru, přemapování gest, detekci nasazení do uší, test správného uložení špuntů a funkci najít sluchátka.
+Kromě přehrávání hudby přes lze přepnout i do režimu mikrofonu headsetu. Kompletně ověřena je podpora pro Nothing Ear, u CMF Buds 2 jsou otestovány baterie, poslechové režimy, EQ a audio, další modely čekají na otestování komunitou. Linux je primární platformou, nativní verze pro macOS a Windows jsou v plánu.
+github.com/oneydef/EarA-linux, 0.5.3
+Gelly
+Nativní, odlehčený hudební přehrávač pro Linux určený pro vlastní streamovací servery Jellyfin a Navidrome. Není to samostatný přehrávač – dokud ho nepřipojíte k serveru, nezobrazí žádnou hudbu. Po připojení nabízí procházení knihovny přes zobrazení alb, informace o umělci, playlisty a skladby s možností řazení. Oblíbená funkce „play similar" vybere podobnou hudbu k vybrané skladbě, albu či umělci.
+Přehrávač umí zobrazit texty skladeb včetně synchronizace po řádcích, přehrávání bez mezer, oblíbené skladby i volby jako kompaktní režim, vypnutí vizuálních efektů a zabránění uspání systému během přehrávání. Pokročilé funkce jako úpravy metadat, řídicí panel Jellyfin nebo pluginy je nutné řešit na straně samotného serveru.
+flathub.org/en-GB/apps/io.m51.Gelly, 2.0.0
+Kwi
+Experimentální terminálový emulátor pro desktopové prostředí KDE Plasma. Hlavním důvodem jeho vzniku je technické omezení stávajícího terminálu Konsole, výchozího terminálu KDE, který je téměř 30 let starý a stále se opírá o starší UI toolkit QWidget s vykreslováním na procesoru – zatímco novější software KDE, včetně samotného Plasmy, používá Qt Quick s akcelerací přes GPU.
+Kwi tento novější přístup využívá: jeho vykreslování pohání Qt Scene Graph běžící na Vulkanu nebo OpenGL, což má zajistit až 3–35krát rychlejší vykreslování než Konsole. Dále slibuje vylepšené vykreslování textu v terminálu, správnou podporu zlomkového škálování na Waylandu a lepší integraci systémového barevného schéma Plasmy včetně živých změn.
+Stalwart
+Poštovní server napsaný v Rustu, který po pěti letech vývoje dospěl k první stabilní verzi 1.0. Jde o all-in-one e-mailové řešení podporující SMTP, IMAP, POP3 a JMAP, rozšířené i o kalendáře, kontakty a sdílení souborů přes CalDAV, CardDAV a WebDAV.
+V benchmarku porazil Stalwart kombinaci Postfix/Dovecot v 35 z 38 srovnání – například zvládl 5 445 příchozích SMTP zpráv za sekundu oproti 723 u Postfixu. Nově umí indexovat obsah dokumentů (PDF, Office, EPUB), podporuje post-kvantové DKIM2 podpisy a rozšířené OAuth/OpenID Connect.
+stalw.art. 1.0
+Blbinka
+Existuje spousta projektů, které se snaží Linux vzhledově přiblížit operačním systému od Microsoftu. Za mě je tento asi nejlepší.

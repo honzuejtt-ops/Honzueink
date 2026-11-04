@@ -1,5 +1,5 @@
 EarA
-Neoficiální aplikace pro sluchátka Nothing a CMF. Přináší na Linuxovou funkce, které jinak nabízí jen mobilní aplikace od výrobce: stav baterie pro levé sluchátko, pravé sluchátko i nabíjecí pouzdro, ovládání aktivního potlačení šumu, režimu průhlednosti a poslechových režimů, nastavení basů a ekvalizéru, přemapování gest, detekci nasazení do uší, test správného uložení špuntů a funkci najít sluchátka.
+Neoficiální aplikace pro sluchátka Nothing a CMF. Přináší na Linux funkce, které jinak nabízí jen mobilní aplikace od výrobce: stav baterie pro levé sluchátko, pravé sluchátko i nabíjecí pouzdro, ovládání aktivního potlačení šumu, režimu průhlednosti a poslechových režimů, nastavení basů a ekvalizéru, přemapování gest, detekci nasazení do uší, test správného uložení špuntů a funkci najít sluchátka.
 Kromě přehrávání hudby přes lze přepnout i do režimu mikrofonu headsetu. Kompletně ověřena je podpora pro Nothing Ear, u CMF Buds 2 jsou otestovány baterie, poslechové režimy, EQ a audio, další modely čekají na otestování komunitou. Linux je primární platformou, nativní verze pro macOS a Windows jsou v plánu.
 github.com/oneydef/EarA-linux, 0.5.3
 Gelly

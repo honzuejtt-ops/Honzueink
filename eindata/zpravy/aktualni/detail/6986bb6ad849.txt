@@ -1,0 +1,5 @@
+Novinka se týká enyaqů vyrobených od začátku produkce až do konce roku 2023. Po aktualizaci na software verze 3.9 získají možnost ručně aktivovat předehřev akumulátoru před rychlým nabíjením. Aktuální verzi softwaru mohou uživatelé zjistit například v aplikaci MyŠkoda.
+Právě teplota baterie má zásadní vliv na rychlost dobíjení, zejména během chladných měsíců. Předehřátý akumulátor dokáže po připojení k rychlonabíječce využít vyšší nabíjecí výkon prakticky okamžitě, což může výrazně zkrátit čekání.
+Funkce se aktivuje přímo v menu nabíjení infotainmentu. Výrobce doporučuje spustit předehřev přibližně 45 minut před plánovaným nabíjením. Zahřátí baterie na ideální provozní teplotu obvykle zabere 30 až 40 minut.
+Aktualizace se má postupně dostat zhruba do 200 tisíc vozů. Škoda ji bude uvolňovat ve vlnách prostřednictvím vzdálených aktualizací softwaru.
+Novější enyaqy se softwarem generace 4 umějí předehřev spustit automaticky při navigování k nabíjecí stanici. U starších vozů půjde zatím o ručně aktivovanou funkci, přesto představuje citelné zlepšení uživatelského komfortu při cestování v zimě.

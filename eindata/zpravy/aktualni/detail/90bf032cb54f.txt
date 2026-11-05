@@ -1,0 +1,19 @@
+Digitální loupež řeší francouzská bankovní skupina Crédit Mutuel Arkéa. Útočníci dokázali z jejího vlastního účtu odesílat peníze do jiných bank. V souvislosti s útokem se hovoří o 118 milionech eur, tedy o miliardách korun. Banka přesnou částku nepotvrdila, připustila však, že řádově odpovídá. Peníze klientů podle jejího vyjádření zasaženy nebyly.
+Banka o útoku informovala ve středu 4. listopadu. Jakmile podezřelé operace odhalila, dočasně pozastavila některé transakce, aby zabránila dalším podvodným převodům. Pro zákazníky to znamenalo zpoždění některých plateb.
+„Tento incident nemá žádný dopad na jejich prostředky a způsobil pouze zpoždění při provedení některých převodů,“ ujistila skupina klienty v prohlášení. Provoz začala obnovovat ve středu dopoledne po kontrolách a zavedení dalších bezpečnostních opatření.
+Cesta vedla přes dodavatele
+V doplňujícím vyjádření Arkéa popsala také cestu, kterou útočníci využili. Do banky se dostali přes platformu jednoho z jejích externích poskytovatelů služeb, jehož totožnost banka nezveřejnila. Odmítla přitom informace, že vstupním bodem byla její internetová banka Fortuneo.
+Pachatelé následně použili vlastní účet Arkéa k převodům do dalších bankovních institucí. Tyto transakce jim podle jejího vyjádření mohly umožnit směnit peníze za kryptoměny na specializovaných platformách. Přes účty klientů nepostupovali.
+Konečná ztráta zatím vyčíslena není. Část prostředků se podařilo zablokovat a banka podniká další kroky k jejich získání zpět. Výsledná škoda tak může být nižší než objem podvodných převodů.
+Podle banky je incident pod kontrolou a neohrožuje její finanční zdraví ani stabilitu. Její týmy dál vyhodnocují následky a posilují zabezpečení.
+Obavy klientů mohou zneužít podvodníci
+Zákazníky banka zároveň vyzvala k obezřetnosti. Po oznámení útoku totiž mohou přijít podvodné zprávy, které budou chtít zneužít jejich obavy a vylákat z nich citlivé údaje.
+Arkéa proto varuje před předáváním přihlašovacích údajů, hesel, čísel platebních karet i potvrzovacích kódů ze SMS. Pokud zákazník pochybuje o pravosti zprávy, má se obrátit přímo na svého bankovního poradce.
+Crédit Mutuel Arkéa sdružuje regionální bankovní sítě v Bretani a na jihozápadě Francie i přibližně čtyři desítky specializovaných dceřiných společností, mezi nimi Fortuneo. Podle údajů v tiskové zprávě zaměstnává přes 12 tisíc lidí a obsluhuje více než 5,8 milionu klientů a členů družstva.
+Co mohou klienti banky nyní dělat?
+- Sledovat oficiální informace. Zprávy o provozu banky ověřujte v její aplikaci nebo na oficiálním webu, který otevřete přímo.
+- Neklikat na odkazy v nečekaných zprávách. Výzva k „zabezpečení účtu po útoku“ může vést na podvodnou stránku.
+- Nesdělovat hesla ani ověřovací kódy. Nikomu nepředávejte přihlašovací údaje, číslo karty ani potvrzovací kódy ze SMS.
+- Ověřovat nečekané telefonáty. Pokud vám někdo volá kvůli útoku a požaduje zásah do účtu, zavěste a kontaktujte banku na známém oficiálním čísle.
+- Zkontrolovat pohyby na účtu. Neznámou platbu ihned řešte s bankou. U opožděného převodu nejprve ověřte jeho stav, než jej zadáte znovu.
+- Při vyzrazení údajů jednat okamžitě. Pokud jste zadali údaje na podezřelém webu nebo někomu sdělili potvrzovací kód, bezodkladně kontaktujte banku a domluvte potřebné zabezpečení účtu.

@@ -1,0 +1,17 @@
+Qwen Image 2.1
+Online studio pro generování a úpravu obrázků pomocí Qwen Image 2.1 – podporuje transparentní RGBA výstupy a více referenčních obrázků.
+O nástroji
+Qwen Image 2.1 Guide & Prompt Studio je nezávislá platforma umožňující přihlášeným uživatelům odesílat textové prompty do nakonfigurované služby Qwen Image a generovat tak nové obrázky nebo upravovat ty stávající. Studio nabízí náhled jedné lokální reference pro úpravu – podle dokumentace samotného modelu Qwen Image 2.1 je ale možné pracovat až s deseti referenčními obrázky pro kompozici více objektů. Model Qwen Image 2.1 je postaven na 7B vizuální generační komponentě a přináší nativní podporu transparentních RGBA obrázků, což je využitelné pro nálepky, produktové výřezy nebo ikony. Oficiální dokumentace modelu zmiňuje také vylepšenou typografii a detailnější zpracování portrétů. Součástí webu je galerie sedmi vizuálních ukázek (fotografie, concept art, úpravy) sloužících jako ilustrace stylu, nikoli jako reálné výstupy z promptů uživatelů. Nástroj je v angličtině a cena začíná na 9,90 USD, bezplatná varianta není uvedena.
+Klíčové vlastnosti
+- Transparentní RGBA výstupy pro nálepky a výřezy
+- Podpora až deseti referenčních obrázků pro kompozici
+- Náhled jedné lokální reference přímo ve studiu
+- Editace podle pojmenované změny a zachování zbytku scény
+Časté dotazy
+Co nástroj umí?
+Umožňuje přihlášeným uživatelům odesílat textové prompty do služby Qwen Image 2.1 a generovat nebo upravovat obrázky, včetně transparentních RGBA výstupů a kompozic z více referenčních obrázků.
+Kolik Qwen Image 2.1 stojí?
+Jedná se o placenou službu, cena začíná na 9,90 USD, bezplatná varianta není uvedena.
+Pro koho je nástroj vhodný a jak začít?
+Je vhodný pro tvůrce potřebující generovat scény, upravovat fotky nebo vytvářet transparentní produktové výřezy a nálepky; stačí se přihlásit a zadat textový prompt přímo ve studiu.
+Kategorie

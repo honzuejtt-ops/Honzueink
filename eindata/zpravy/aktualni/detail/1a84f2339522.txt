@@ -1,0 +1,17 @@
+Tunenoodle
+AI generátor hudby, který promění text, texty písně nebo zpívanou melodii v hotovou skladbu. Obsahuje i volně dostupné audio nástroje běžící v prohlížeči.
+O nástroji
+Tunenoodle je nástroj pro tvorbu AI hudby, který dokáže přeměnit nápad, napsaný text písně nebo nahranou melodii (např. broukání) na plnohodnotnou skladbu. Uživatel si může zvolit styl hudby, poslechnout si náhled a dále skladbu upravovat či rozšiřovat. K dispozici je také galerie ukázek stylů, kde lze vybrat oblíbený zvuk a použít jeho prompt jako výchozí bod pro vlastní tvorbu. Kromě generování hudby nabízí web sadu doplňkových audio nástrojů, které fungují přímo v prohlížeči bez nutnosti přihlášení nebo kreditů – patří mezi ně například nástroje pro práci s BPM, akordy, rychlostí nebo reverbem. Stránka také umožňuje zdarma a bez účtu vytvořit koláž (tzv. nine grid) z alb, plakátů nebo vlastních fotografií. Generování písní pomocí AI funguje na principu kreditů, které se zobrazují před potvrzením akce, přesná cena ani konkrétní tarify však nejsou v dostupných informacích uvedeny. Rozhraní webu je v angličtině s možností přepnutí do dalších jazyků, čeština mezi nimi uvedena není.
+Klíčové vlastnosti
+- Generování skladby z textu, textu písně nebo broukané melodie
+- Výběr hudebního stylu s možností náhledu
+- Galerie ukázek stylů s promptem jako výchozí bod
+- Volně dostupné audio nástroje na BPM, akordy, rychlost a reverb
+Časté dotazy
+Co Tunenoodle umí?
+Promění nápad, napsaný text písně nebo nahranou melodii (např. broukání) na hotovou skladbu, kterou si můžete poslechnout a dále upravovat. Navíc nabízí volně dostupné audio nástroje v prohlížeči, například pro práci s BPM, akordy nebo reverbem.
+Kolik to stojí?
+Generování písní funguje na principu kreditů, jejichž počet se zobrazí před potvrzením akce. Přesné ceny ani konkrétní tarify nejsou v dostupných informacích uvedeny.
+Jak začít a pro koho je nástroj určený?
+Stačí napsat popis písně nebo text, zvolit styl a nechat vygenerovat skladbu – vhodné je i inspirovat se galerií ukázek stylů. Doplňkové audio nástroje a tvorbu koláže lze využít zcela zdarma bez přihlášení.
+Kategorie

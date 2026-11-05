@@ -1,0 +1,17 @@
+RaoMusic
+AI generátor hudby, který z textového popisu nebo textu písně vytvoří celou skladbu se zpěvem přibližně za minutu.
+O nástroji
+RaoMusic je AI nástroj pro tvorbu hudby, který ze slovního popisu nálady, žánru nebo scény, případně z vlastních textů písně, vygeneruje kompletní skladbu – vokály, nástroje, melodii i mastering – přibližně za jednu minutu. Kromě zpívaných skladeb umí vytvořit i instrumentální hudbu bez vokálů, například pro YouTube videa, hry, podcasty nebo reklamy, a nabízí také generování zvukových efektů. Nástroj pracuje se 7 různými AI modely a podle popisu zvládá přes 20 hudebních stylů a 10 jazyků. Bezplatný účet získává 50 kreditů měsíčně bez nutnosti předplatného a bez automatického obnovování plateb. Podle uvedených informací lze skladby vytvořené na free plánu, včetně těch se zpěvem, používat i komerčně (monetizovaná videa na YouTube, reklamy, zakázková práce) díky royalty-free licenci zahrnuté i ve zdarma dostupné verzi. Rozhraní nástroje je v angličtině, informace o API či open-source řešení nejsou k dispozici.
+Klíčové vlastnosti
+- Vygeneruje celou skladbu se zpěvem za minutu
+- Tvorba i instrumentální hudby bez vokálů
+- Generování zvukových efektů
+- Podpora 7 AI modelů a přes 20 hudebních stylů
+Časté dotazy
+Co RaoMusic umí vytvořit?
+Z textového popisu nálady, žánru nebo scény, případně z vlastních textů písně, vygeneruje kompletní skladbu včetně vokálů, nástrojů, melodie a masteringu přibližně za minutu. Umí také vytvořit čistě instrumentální hudbu a zvukové efekty.
+Kolik RaoMusic stojí a lze skladby použít komerčně?
+Bezplatný účet získává 50 kreditů měsíčně bez nutnosti předplatného a bez automatického obnovování plateb. Skladby vytvořené na free plánu, včetně těch se zpěvem, lze díky royalty-free licenci používat i komerčně, například v monetizovaných YouTube videích nebo reklamách.
+Pro koho je RaoMusic vhodný a jak začít?
+Je vhodný pro kohokoliv, kdo chce rychle vytvořit hudbu bez hudebních dovedností – od tvůrců YouTube videí po podcasty, hry nebo reklamy. Stačí napsat textový popis nebo vložit text písně a nástroj do minuty vygeneruje hotovou skladbu.
+Kategorie

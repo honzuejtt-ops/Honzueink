@@ -1,0 +1,17 @@
+Recto
+Vizuální návrhové plátno pro AI coding agenty jako Claude Code, Codex nebo Cursor, kde designéři a vývojáři tvoří UI, 3D a animace.
+O nástroji
+Recto je nativní desktopová aplikace pro Windows, Mac a Linux, která funguje jako vizuální canvas propojený s AI coding agenty. Místo přepínání mezi terminálem, prohlížečem a prompty vidí uživatel výsledky práce agenta přímo na plátně a může je okamžitě upravovat – přesouvat prvky, měnit je ručně nebo zadat agentovi nový pokyn, aniž by Recto opustil. Nástroj automaticky detekuje nainstalované coding agenty v počítači a umožňuje pracovat s nástroji jako Claude Code, Codex, Cursor nebo OpenCode v rámci jednoho workspace. Mezi funkce patří tvorba UI (webů, landing pages, dashboardů), práce se 3D prvky a animacemi, import existujícího webového designu k editaci a centrální správa design systému (barvy, typografie, spacing, komponenty) pro každý projekt. Výstupem je design postavený na HTML a CSS, což usnadňuje jeho export a další použití mimo Recto. Podle dostupných informací je Recto možné zdarma stáhnout, podrobnosti o placených tarifech ani API nebyly na webu nalezeny.
+Klíčové vlastnosti
+- Vizuální canvas propojený s AI coding agenty
+- Automatická detekce nainstalovaných agentů (Claude Code, Codex, Cursor)
+- Přímé úpravy prvků myší bez opuštění aplikace
+- Tvorba UI, 3D prvků a animací na jednom plátně
+Časté dotazy
+Co přesně Recto umí?
+Recto je vizuální plátno propojené s AI coding agenty jako Claude Code, Codex nebo Cursor, kde designéři a vývojáři sledují výsledky agenta přímo na canvasu a mohou je rovnou upravovat – přesouvat prvky, měnit je ručně nebo zadat agentovi nový pokyn.
+Kolik Recto stojí?
+Recto je možné zdarma stáhnout jako desktopovou aplikaci pro Windows, Mac a Linux. Podrobnosti o placených tarifech nebyly na webu nalezeny.
+Pro koho je Recto určené a jak začít?
+Nástroj je určený designérům a vývojářům pracujícím s AI coding agenty na tvorbě UI, 3D a animací. Stačí si aplikaci stáhnout – Recto automaticky detekuje nainstalované agenty v počítači a propojí je s pracovním prostorem.
+Kategorie

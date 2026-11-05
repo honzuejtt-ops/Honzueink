@@ -1,0 +1,17 @@
+Bicep Heart AI Video Generator
+Z jedné fotografie vytvoří sedmivteřinové video s pózou „Bicep Heart“ pro TikTok, Reels a Shorts.
+O nástroji
+Bicep Heart AI Video Generator je nástroj, který z jedné poloportrétní fotografie (viditelný obličej a obě paže) vytvoří sedmivteřinové video bez zvuku, ve kterém postava provede pózu „Bicep Heart“ – uchopí druhou paži, předvede flex bicepsu a volnou rukou vytvoří srdce. K dispozici jsou dvě šablony pohybu (Classic Pose a Pet Pose), výstup lze zvolit v poměru stran 9:16, 1:1 nebo 16:9 a v rozlišení 768P nebo 2K, výsledné video je bez vodoznaku. Generování funguje na principu kreditů – vytvoření klipu v rozlišení 768P stojí 5 kreditů, přesná cena se zobrazí před spuštěním generování a při neúspěšném výstupu se kredity vrací. Nahrávat lze fotografie ve formátu JPG, PNG nebo WebP do velikosti 10 MB. Nástroj je v angličtině, podle dostupných informací nemá bezplatnou variantu a jeden z uvedených tarifů je za 6,99 dolaru; o existenci API ani open source verzi důkazy nehovoří.
+Klíčové vlastnosti
+- Ze sedmivteřinové pózy „Bicep Heart“ z jedné fotky
+- Dvě šablony pohybu: Classic Pose a Pet Pose
+- Výstup v poměru 9:16, 1:1 nebo 16:9
+- Rozlišení 768P nebo 2K bez vodoznaku
+Časté dotazy
+Co nástroj přesně vytvoří?
+Z jedné poloportrétní fotografie (obličej a obě paže musí být vidět) vygeneruje sedmivteřinové video bez zvuku, kde postava provede pózu „Bicep Heart“ – uchopí druhou paži, předvede flex bicepsu a volnou rukou vytvoří srdce. Na výběr jsou dvě šablony pohybu, Classic Pose a Pet Pose.
+Kolik to stojí?
+Nástroj funguje na kreditech, vytvoření klipu v rozlišení 768P stojí 5 kreditů a přesná cena se zobrazí před spuštěním generování. Jeden z tarifů vyjde na 6,99 dolaru, bezplatná varianta podle dostupných informací není k dispozici.
+Jak mám začít a pro koho je nástroj určený?
+Stačí nahrát poloportrétní fotku ve formátu JPG, PNG nebo WebP do 10 MB, vybrat šablonu pózy, poměr stran a rozlišení a spustit generování. Je určený hlavně tvůrcům krátkého videoobsahu pro TikTok, Reels a Shorts, kteří chtějí rychle zkusit trendovou pózu.
+Kategorie

@@ -1,0 +1,17 @@
+BeardStyles
+Nahrajte fotku a AI vám vytvoří náhled, jak budete vypadat se strniskem, kozí bradkou nebo plným plnovousem.
+O nástroji
+BeardStyles je online nástroj pro náhled účesu vousů pomocí umělé inteligence. Po nahrání fotografie si můžete vyzkoušet vybraný styl – nabízí se 23 variant vousů včetně stubble, goatee, full beard, Van Dyke, Balbo nebo circle beard – a před reálným zastřižením tak uvidíte přibližný výsledek. Generování náhledů probíhá přes Google Nano Banana 2 prostřednictvím Replicate. Vytvoření náhledu vyžaduje registraci účtu. Nové účty dostávají jednorázově 3 bezplatné generování, stažené obrázky z tohoto bezplatného limitu však obsahují vodoznak. Pro další generování nebo stažení bez vodoznaku je potřeba zvolit placený tarif, konkrétní ceny ale v dostupných podkladech uvedeny nejsou. Kromě samotného generátoru nabízí web i textové průvodce jednotlivými styly vousů s popisem údržby, vhodného tvaru obličeje a nároků na úpravu – například u goatee je uvedena střední náročnost údržby, u Van Dyke pak vysoká kvůli nutnosti udržovat oddělené sekce bradky a kníru.
+Klíčové vlastnosti
+- 23 variant vousů k vyzkoušení (stubble, goatee, plnovous aj.)
+- Náhled vygenerovaný z vlastní nahrané fotky
+- Generování přes Google Nano Banana 2 (Replicate)
+- Textoví průvodci stylem s nároky na údržbu a tvarem obličeje
+Časté dotazy
+Co přesně BeardStyles umí?
+Po nahrání fotografie vygeneruje AI náhled, jak byste vypadali s vybraným stylem vousů – na výběr je 23 variant jako stubble, goatee, full beard, Van Dyke, Balbo nebo circle beard.
+Kolik to stojí?
+Nové účty dostanou jednorázově 3 bezplatná generování, stažené obrázky z nich ale mají vodoznak. Pro další generování nebo stažení bez vodoznaku je nutný placený tarif, konkrétní ceny ale nejsou v podkladech uvedené.
+Jak začít a pro koho je nástroj určen?
+Stačí si založit účet, nahrát fotku a vybrat styl vousů z nabídky – hodí se pro každého, kdo chce před reálným zastřižením zjistit, jak by mu daný vousový styl slušel.
+Kategorie

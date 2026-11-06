@@ -1,0 +1,17 @@
+Beket AI
+Beket AI sleduje, jak o vaší firmě mluví ChatGPT, Gemini, Perplexity, Copilot a Google AI, a navrhuje, co opravit.
+O nástroji
+Beket AI je platforma pro AI search visibility (AEO/GEO), která zjišťuje, co o vaší firmě říkají odpovědi šesti AI enginů – ChatGPT, Gemini, Perplexity, Microsoft Copilot, Google AI Overviews a Google AI Mode. Nástroj položí enginům reálné dotazy, které by mohli pokládat vaši zákazníci, a porovná odpovědi se skutečnými fakty o firmě. Výstupem je skóre, přehled problematických odpovědí (chybějící zmínky, špatné údaje jako otevírací doba, doporučení konkurence) a seznam oprav, přičemž technické úpravy na webu lze provést jedním kliknutím. Volný audit zahrnuje 25 promptů napříč 3 enginy zdarma bez nutnosti zadávat platební kartu. Placený tarif Pro za 49 USD měsíčně na web nabízí denní monitoring, 50 promptů, generování až 300 obsahových položek měsíčně, API přístup a napojení na AI agenty přes MCP. Tarif Agency za 245 USD měsíčně je určen pro agentury spravující pět a více webů a přidává white-label reporty. Nástroj je určen firmám, agenturám, neziskovým organizacím i veřejné správě a byl postaven týmem s PhD v informatice a zkušenostmi ze startupů podpořených YC, a16z a Accel.
+Klíčové vlastnosti
+- Sledování odpovědí ChatGPT, Gemini, Perplexity, Copilotu a Google AI
+- Porovnání odpovědí AI se skutečnými fakty o firmě
+- Skóre viditelnosti a přehled chybných či chybějících zmínek
+- Denní monitoring změn v odpovědích AI enginů
+Časté dotazy
+Co přesně Beket AI umí?
+Pokládá šesti AI enginům (ChatGPT, Gemini, Perplexity, Copilot, Google AI Overviews, Google AI Mode) reálné dotazy zákazníků, porovná odpovědi se skutečnými fakty o firmě a vytvoří seznam oprav – od chybějících zmínek po špatné údaje jako otevírací dobu. Technické úpravy na webu lze provést jedním kliknutím.
+Kolik Beket AI stojí?
+Jednorázový audit s 25 prompty a 3 enginy je zdarma bez platební karty. Tarif Pro za 49 USD měsíčně na web přidává denní monitoring, 50 promptů a API přístup, Agency za 245 USD měsíčně je pro agentury s pěti a více weby.
+Pro koho je Beket AI určený a jak začít?
+Je určený firmám, agenturám, neziskovým organizacím i veřejné správě. Stačí zadat web, trhy a jazyky a spustit bezplatný audit, který trvá asi 5 minut.
+Kategorie

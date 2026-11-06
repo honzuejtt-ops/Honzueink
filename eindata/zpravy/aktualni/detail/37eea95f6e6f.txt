@@ -1,0 +1,17 @@
+Repostit Clips
+Repostit Clips automaticky vybírá a hodnotí nejsilnější momenty z YouTube videí a vytváří z nich vertikální klipy pro TikTok, Reels a Shorts.
+O nástroji
+Repostit Clips funguje tak, že uživatel vloží odkaz na YouTube video – podcast, rozhovor, webinář nebo livestream – a nástroj automaticky najde nejsilnější momenty, nastříhá je na vertikální klipy ve formátu 1080 × 1920 a každému klipu přiřadí skóre, podle kterého lze poznat, co publikovat jako první. Hranice klipů lze upravit i ručně v manuálním editoru. Exportované klipy jsou bez vodoznaku a jsou přizpůsobené rozměrům jednotlivých aplikací, včetně přenesení popisků a hashtagů. Součástí nástroje je i kalendář pro plánování, kde lze klip poslat na konkrétní den a propojenou síť a sledovat stav od „K publikaci“ po „Publikováno“ ve dvoutýdenním přehledu. Každý účet má k dispozici zdarma zpracování 10 videí nebo 100 minut, poté se přechází na placené plány účtované podle minut – Basic za 8,25 $/měsíc (300 minut), Pro za 16,58 $/měsíc (700 minut) a Premium za 41,58 $/měsíc (1 500 minut), ceny jsou uvedeny jako roční. Rozhraní nástroje je v angličtině, o české lokalizaci ani o API či open source variantě důkazy nejsou k dispozici.
+Klíčové vlastnosti
+- Automatický výběr nejsilnějších momentů z videa
+- Skóre u každého klipu podle síly momentu
+- Ruční editor pro úpravu začátku a konce klipu
+- Export ve vertikálním formátu 1080 × 1920 bez vodoznaku
+Časté dotazy
+Co přesně Repostit Clips umí?
+Z vloženého YouTube videa – podcastu, rozhovoru, webináře nebo livestreamu – automaticky najde nejsilnější momenty, nastříhá je na vertikální klipy pro TikTok, Reels a Shorts a každému přiřadí skóre. Hranice klipů lze upravit i ručně v editoru.
+Kolik Repostit Clips stojí?
+Každý účet má zdarma 10 videí nebo 100 minut zpracování. Dál se platí podle minut: Basic 8,25 $/měsíc za 300 minut, Pro 16,58 $/měsíc za 700 minut a Premium 41,58 $/měsíc za 1 500 minut (roční ceny).
+Jak začít a pro koho je nástroj určený?
+Stačí vložit odkaz na YouTube video a nástroj automaticky vytvoří klipy se skóre, které lze naplánovat v kalendáři. Hodí se pro tvůrce podcastů, rozhovorů a webinářů, kteří chtějí z dlouhého videa rychle získat krátké klipy na sociální sítě.
+Kategorie

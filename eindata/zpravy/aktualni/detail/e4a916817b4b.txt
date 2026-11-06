@@ -1,0 +1,5 @@
+Tiny Desk AI
+AI video generátor, který z 1–5 fotografií vytvoří parodický videoklip ve stylu virálního memu Tiny Desk s originálním zvukem.
+O nástroji
+Tiny Desk AI vytváří krátká parodická videa inspirovaná virálním memem „Tiny Desk“ – stačí nahrát jednu fotografii pro nahrazení hlavního zpěváka, nebo pět fotografií dospělých osob se souhlasem pro vytvoření celé pětičlenné kapely. Výstupem je 18sekundové vertikální video ve formátu 9:16 MP4 s originální zvukovou stopou performance, určené pro sdílení na TikToku, Instagram Reels nebo YouTube Shorts. Nástroj funguje na placené bázi formou kreditů: jedno video vychází přibližně na 9,98 dolaru, balíček tří videí na 24,99 dolaru a deset videí na 59,99 dolaru (ceny se mírně liší podle konkrétní varianty stránky). Jde o nezávislý fanouškovský projekt, který není oficiálně spojen s NPR Music ani s interprety z původního virálního klipu. Veřejné API ani open-source řešení nejsou u nástroje k dispozici – jedná se o komerční webovou aplikaci postavenou na pokročilém AI video modelu, přičemž jeden ze zdrojů zmiňuje technologii Seedance 2.5 od ByteDance.
+Kategorie

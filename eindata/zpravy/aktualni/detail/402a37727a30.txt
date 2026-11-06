@@ -1,0 +1,17 @@
+Striptu
+Striptu propojuje platby ze Stripe s fakturačními systémy (Fakturownia.pl, iFirma, wFirma, inFakt, KSeF) a po každé platbě automaticky vystaví fakturu.
+O nástroji
+Striptu je nástroj pro automatizaci fakturace plateb přijatých přes Stripe. Po připojení účtu automaticky vytváří a odesílá faktury do účetních a fakturačních systémů jako Fakturownia.pl, iFirma, wFirma, inFakt nebo přímo do polského Krajowego Systemu e-Faktur (KSeF). Podle webu je podporováno přes 150 dalších nástrojů, se kterými lze integraci využít, například Substack, Kajabi, Podia, MailerLite, Lovable či Replit. Nastavení probíhá v několika krocích – založení účtu, vygenerování API klíče ke Stripe, propojení s fakturačním systémem a spuštění automatizace. Prvních 10 transakcí lze podle webu vyzkoušet zdarma, poté je proces plně automatizovaný a transakce se nemusí ručně importovat ani fakturovat jednotlivě. Web uvádí přes 100 registrovaných uživatelů, více než 10 000 zpracovaných transakcí a 150+ denních automatických synchronizací dat. Nástroj disponuje API a je určen především firmám a podnikatelům v Polsku, kteří potřebují propojit platby ze Stripe s legislativně vyžadovaným fakturačním systémem.
+Klíčové vlastnosti
+- Automatické vystavení faktury po každé platbě ze Stripe
+- Propojení s Fakturownia.pl, iFirma, wFirma, inFakt a KSeF
+- Přímé napojení na Krajowy System e-Faktur (KSeF)
+- Podpora 150+ nástrojů jako Substack, Kajabi, Podia či MailerLite
+Časté dotazy
+Co přesně Striptu dělá?
+Propojuje platby přijaté přes Stripe s fakturačními a účetními systémy (Fakturownia.pl, iFirma, wFirma, inFakt, KSeF) a po každé platbě automaticky vystaví a odešle fakturu, takže se transakce nemusí ručně importovat ani fakturovat jednotlivě.
+Kolik Striptu stojí?
+Prvních 10 transakcí lze vyzkoušet zdarma, poté je nutné přejít na placený plán pro plnou automatizaci fakturace.
+Pro koho je Striptu určeno a jak začít?
+Je určeno firmám a podnikatelům v Polsku, kteří potřebují propojit Stripe s legislativně vyžadovaným fakturačním systémem. Stačí založit účet, vygenerovat API klíč ke Stripe, propojit fakturační systém a spustit automatizaci.
+Kategorie

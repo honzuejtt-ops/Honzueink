@@ -1,0 +1,17 @@
+LurkAPI
+LurkAPI přes API a MCP server poskytuje čistá JSON data z 16 sociálních a jiných platforem – příspěvky, reklamy i profily pro AI asistenty i vývojáře.
+O nástroji
+LurkAPI získává veřejná data ze sociálních sítí a dalších zdrojů jediným GET požadavkem a vrací je jako čistý JSON – příspěvky, profily, komentáře, přepisy videí i reklamy. Pokrývá 16 platforem s 88 endpointy: Facebook (včetně knihovny reklam), LinkedIn (reklamy i nabídky práce), TikTok (videa, reklamy, hashtagy), Reddit, YouTube, X, Instagram, Threads, Bluesky, Truth Social, Telegram, Snapchat, dále Google News, Google Maps, Google Ads a eBay. Nástroj lze přes MCP protokol připojit do Claude, ChatGPT, Cursoru, VS Code nebo Claude Code – po jednorázovém nastavení pak AI odpovídá na dotazy s aktuálními daty, nikoli jen z paměti modelu. Přihlášení probíhá přes OAuth v prohlížeči nebo pomocí API klíče. Autoři uvádějí průměrnou odezvu 1,19 sekundy za posledních 7 dní oproti 3,12 sekundy u konkurenčního ScrapeCreators. Vyzkoušet lze zdarma bez registrace s 5 pokusy denně. Nový účet navíc získává 100 kreditů zdarma bez nutnosti zadat platební kartu, většina volání stojí 1 kredit a další používání je zpoplatněné podle spotřeby bez předplatného. Repozitář s pluginem a skills pro Claude Code je pod licencí MIT, samotný server LurkAPI je closed source.
+Klíčové vlastnosti
+- 88 endpointů napříč 16 platformami
+- čistý JSON jedním GET požadavkem
+- pokrývá Facebook, TikTok, LinkedIn, Reddit, YouTube a další
+- připojení přes MCP do Claude, ChatGPT, Cursoru i VS Code
+Časté dotazy
+Co přesně LurkAPI umí stáhnout?
+Vrací veřejná data ze 16 platforem jako příspěvky, profily, komentáře, přepisy videí i reklamy – například Facebook ad library, LinkedIn nabídky práce, TikTok videa a hashtagy, Reddit, YouTube nebo eBay nabídky.
+Kolik LurkAPI stojí?
+Vyzkoušet lze zdarma bez registrace (5 pokusů denně), nový účet dostane 100 kreditů zdarma bez karty a dál se platí podle spotřeby – většina volání stojí 1 kredit, bez předplatného.
+Jak začít a pro koho je nástroj určen?
+Je určen vývojářům i uživatelům AI asistentů – stačí získat API klíč nebo připojit MCP server do Claude, ChatGPT, Cursoru či VS Code, poté AI odpovídá s aktuálními daty místo jen z paměti modelu.
+Kategorie

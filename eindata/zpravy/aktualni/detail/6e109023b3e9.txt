@@ -1,0 +1,17 @@
+ZombieTrend AI
+Online generátor videí, který ze dvou nahraných fotografií vytvoří čtyřfázový „zombie“ milostný příběh se zvukem ve formátu 9:16.
+O nástroji
+ZombieTrend AI je webová aplikace postavená na trendu „zombie hug“ z TikToku, Instagram Reels a YouTube Shorts. Uživatel nahraje dvě fotografie – osobu, která přežila, a osobu, která se proměnila v zombie – vybere vzpomínku (např. svatební den, pláž při západu slunce nebo piknik) a délku klipu (8, 12 nebo 15 sekund). Nástroj poté vygeneruje scénu pomocí GPT Image 2 a natočí celý čtyřfázový příběh (míření, poznání, objetí, vzpomínka) v jednom souvislém klipu pomocí Seedance 2.0 včetně zvuku. Před zaplacením je k dispozici bezplatný náhled scény s vodoznakem bez nutnosti registrace, teprve finální klip bez vodoznaku a se zvukem je zpoplatněn – podle dostupných informací od 5 dolarů. Hotové video je ve formátu 9:16 MP4, bez instalace aplikace, funguje přímo v prohlížeči na mobilu i počítači. Nástroj nabízí také vrácení kreditů, pokud se generování nezdaří. Na stránce je uveden i textový prompt se čtyřfázovou strukturou pro ty, kdo chtějí stejný efekt vyzkoušet v jiných nástrojích jako Dreamina, Kling nebo Veo. Informace o API nebo otevřeném zdrojovém kódu nejsou uvedeny, nástroj je pouze v angličtině.
+Klíčové vlastnosti
+- Generuje čtyřfázový příběh z pouhých dvou fotografií
+- Scéna přes GPT Image 2, video přes Seedance 2.0 se zvukem
+- Výstup 9:16 MP4 bez vodoznaku a bez instalace
+- Volba délky klipu 8, 12 nebo 15 sekund
+Časté dotazy
+Co ZombieTrend AI přesně vytvoří?
+Ze dvou nahraných fotografií – přeživší osoby a osoby proměněné v zombie – vygeneruje čtyřfázový milostný příběh (míření, poznání, objetí, vzpomínka) jako jeden souvislý klip se zvukem ve formátu 9:16.
+Kolik ZombieTrend AI stojí?
+Náhled scény s vodoznakem je zdarma bez registrace, finální klip bez vodoznaku a se zvukem je zpoplatněn podle dostupných informací od 5 dolarů, cena se liší podle zvolené délky klipu.
+Jak začnu video vytvářet?
+Nahrajete dvě fotografie (JPG, PNG nebo WebP do 10 MB), vyberete vzpomínku a délku klipu 8, 12 nebo 15 sekund, nejprve zdarma uvidíte náhled scény a poté si necháte vygenerovat finální video se zvukem.
+Kategorie

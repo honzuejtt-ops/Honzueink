@@ -1,0 +1,17 @@
+Nico
+Hlasový agent pro Mac: podržíte klávesu ⌘, nahlas zadáte úkol (e-mail, PDF do tabulky, úklid plochy) a Nico ho provede přímo ve vašich aplikacích.
+O nástroji
+Nico je desktopová aplikace pro Mac fungující jako osobní agent ovládaný hlasem: podržíte pravou klávesu ⌘, nahlas řeknete, co potřebujete, a pustíte – není třeba nic psát ani přepínat okna. Dokáže přečíst a zodpovědět e-mail, převést obsah PDF do tabulky, uklidit soubory na ploše (s možností vrátit vše zpět příkazem „undo“), napsat dokument z poznámek, pracovat ve vlastním prohlížeči nebo přes rozšíření v Chrome (kde používá vaše přihlášení i síť) a hlídat weby, e-maily nebo kalendář, přičemž sama upozorní, když se objeví něco důležitého. Nico si také pamatuje plány, termíny a lidi, o kterých jste mluvili, a připomene je ve vhodnou chvíli. Podle výrobce nástroj neběží v cloudu, ale přímo na Macu uživatele – servery Nico prý nevidí, co agent (tzv. Worker) čte nebo zapisuje. Pro samotné zpracování úkolů využívá AI předplatné, které už uživatel má, konkrétně modely jako ChatGPT nebo Claude. Úkoly mohou trvat déle, zařadit se do fronty a po restartu aplikace pokračovat tam, kde skončily. Architektura je postavena na dvou agentech – jeden komunikuje s uživatelem, druhý („Worker“) úkoly vykonává na pozadí v sandboxu a před každou akcí (např. odesláním e-mailu nebo platbou) čeká na potvrzení. Aplikace je určena pro Mac s čipem Apple Silicon a macOS 15.4 nebo novějším, rozhraní je v angličtině. Z dostupných informací vyplývá, že existuje bezplatná varianta, placené detaily ceny ale nejsou v podkladech jednoznačně doloženy, proto je uvedena jako freemium s opatrností vůči konkrétním částkám. Nástroj zmiňuje open-source komponentu „pi“ (agentí jádro dostupné na GitHubu) a podporu API i rozšíření do Chrome.
+Klíčové vlastnosti
+- Ovládání hlasem podržením klávesy ⌘ bez psaní
+- Čtení a odpovídání na e-maily přímo z aplikace
+- Převod obsahu PDF nebo screenshotu do tabulky či dokumentu
+- Úklid souborů na ploše s možností příkazu „undo“
+Časté dotazy
+Co přesně Nico umí?
+Nico je hlasový agent pro Mac, kterému nahlas zadáte úkol – přečte a zodpoví e-mail, převede PDF do tabulky, uklidí plochu nebo napíše dokument z poznámek, vše přímo ve vašich aplikacích.
+Kolik Nico stojí?
+Aplikaci lze zdarma stáhnout a běží na AI předplatném, které už uživatel má (ChatGPT nebo Claude), detaily případných placených funkcí Nico ale nejsou jednoznačně uvedeny.
+Pro koho je Nico a jak začít?
+Je určen uživatelům Macu s čipem Apple Silicon a macOS 15.4 nebo novějším, kteří chtějí ovládat úkoly hlasem; stačí aplikaci stáhnout, podržet pravou klávesu ⌘ a nahlas říct, co potřebují.
+Kategorie

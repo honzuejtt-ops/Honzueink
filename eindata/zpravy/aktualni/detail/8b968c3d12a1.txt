@@ -1,0 +1,27 @@
+Březnový sníh přitáhne těžiště Země o 3 milimetry k severnímu pólu
+Těžiště celé planety se každý rok o několik milimetrů pohupuje sem a tam. Podle nového měření americké NASA je ten výkyv zhruba poloviční oproti odhadům z doby před osmi lety.
+V březnu napadne v Severní Americe a v Evropě s Asií tolik sněhu, že se kvůli němu posune těžiště celé Země asi o 3 milimetry k severnímu pólu. Země totiž není tvrdá skleněná kulička. Pod tíhou vody, ledu a vzduchu se neustále trochu prohýbá a přelévá.
+Těžiště si stačí představit jako bod, ve kterém je hmota celé planety v rovnováze. Kdyby byla Země tvrdá a neměnná, leželo by přesně v jejím geometrickém středu. Takhle se ale vůči němu během roku pohupuje sem a tam o několik milimetrů. Tým Donalda Arguse z JPL tenhle tanec změřil přesněji než dosavadní metody.
+Březen patří sněhu, duben Amazonii
+Sněhu je na severní polokouli nejvíc právě v březnu, a tehdy taky nejsilněji táhne těžiště k severu – o zmíněné 3 milimetry.
+O měsíc později přebírá roli déšť. V dubnu je nejvíc vody v povodí Amazonky v Jižní Americe. Tahle obrovská masa vody přitáhne těžiště o 2,2 milimetru směrem k Jižní Americe.
+Nejsou to dva kroky jednoho a téhož posunu. Každý z nich je samostatný tah, který přichází v jiném měsíci a míří jiným směrem. A jde o pohyb vůči středu: měří se, o kolik se těžiště vzdálí od geometrického středu planety, ne že by se Země někam stěhovala.
+Výkyv o polovinu menší, než se myslelo
+Nejzajímavější výsledek studie je ale celková velikost tohoto ročního pohupování. Podle Donalda Arguse je dnešní odhad zhruba poloviční oproti dřívějšímu. Studie vyšla letos v odborném časopise Geophysical Journal International.
+Rozdíl vysvětluje lepší metoda. Dřív se tenhle pohyb počítal hlavně ze stanic, které laserem měří vzdálenost k družicím. Jenže tyto stanice nejsou po světě rozmístěné rovnoměrně. Nová metoda k nim přidává GPS a dráhy několika družic, které létají nízko nad Zemí. Výpočet tak stojí na mnohem pestřejší sadě měření.
+Druhé zlepšení se týká samotné země pod stanicemi. Tíha vody a ledu totiž prohýbá zemskou kůru, a ta s sebou bere i měřicí stanice, které na ní stojí. Nový výpočet s tímhle prohýbáním počítá.
+💡 Zajímavost: Jak těžké bylo tenhle pohyb změřit, ukazují dva poslední mezinárodní odhady z let 2017 a 2023: lišily se o 7 milimetrů, tedy skoro tolik, kolik měří samotný pohyb.
+Proč na pár milimetrech záleží
+Pro běžný život vypadají milimetry jako drobnost. Pro družice ale ne. Měřicí stanice stojí na zemské kůře, kdežto družice obíhají kolem těžiště celé Země i s jejím ovzduším a vodou. Kdo chce mít přesná data z vesmíru, musí rozdíl mezi těmito dvěma body znát.
+Jasně je to vidět na měření hladiny moří. Když se roční pohupování těžiště nezapočítá, vychází odhad, jak rychle moře stoupá, pokaždé trochu vedle – podle jedné ze studií o 0,14 milimetru za rok. Týká se to měření, která porovnávají hladinu po dvouletých úsecích.
+Nejblíž ke každodennímu životu je takzvaný referenční systém. Zjednodušeně jde o mezinárodně dohodnutou „kostru“ souřadnic, na které stojí GPS i mapy. Její výchozí bod, od kterého se všechno měří, je ukotvený právě v těžišti planety. Postarají se o to speciální družice, na které se ze Země míří laserem.
+Stopa vede do Ondřejova
+Na této kostře pracují i Češi. Geodetická observatoř Pecný v Ondřejově u Prahy patří mezi pracoviště, která zpracovávají data pro jednu z mezinárodních služeb. Observatoř naplno přispěla k výpočtu verze kostry označené rokem 2020, jejíž výchozí bod je navázaný na těžiště Země.
+Bez tohoto ukotvení by podle odborné studie nešlo zkoumat děje, které se týkají celé planety. Nové měření z NASA tak míří do oblasti, kde má svůj podíl i česká věda.
+Spoluautor studie Felix Landerer z JPL vysvětluje, proč se vědci drobnými pohyby vůbec zabývají. Díky nim podle něj půjde sestavit lepší referenční systémy, které nakonec pomohou mapování i navigaci. Užitek sahá od lodní dopravy až po zemědělství, které se řídí přesnou polohou na poli.
+Ověřeno z:
+- NASA Jet Propulsion Laboratory — tisková zpráva o měření těžiště Země (16. 9. 2026)
+- Geophysical Journal International — Argus a kol., sezónní oscilace těžiště a geometrického středu Země (2026)
+- Geophysical Journal International — studie o pohybu těžiště Země a hladině moří (2021)
+- Journal of Geodesy — laserové družice a referenční systém ITRF (2025)
+- International DORIS Service — příspěvek Geodetické observatoře Pecný k ITRF2020 (2022)

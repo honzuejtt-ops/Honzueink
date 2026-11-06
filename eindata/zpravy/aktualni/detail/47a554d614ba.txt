@@ -1,0 +1,29 @@
+Japonci mají rekordní internet, celý Netflix by stáhli za vteřinu
+Japonští vědci přenesli rekordních 1,02 petabitu dat za sekundu. Takovou rychlostí by se podle výpočtu amerického technologického webu stáhl celý Netflix zhruba za vteřinu.
+Proti internetu, který máme doma, je to úplně jiná liga. Co vlákno přenese za jedinou sekundu, to by průměrná česká přípojka posílala celé měsíce. A rekordní vlákno přitom není o nic tlustší než ta, která se používají dnes.
+Rekord loni na jaře oznámil japonský Národní ústav informačních a komunikačních technologií (NICT) a sám ho označil za světový. Data poslal na vzdálenost 1 808 kilometrů. A co je vlastně petabit? Obří jednotka, do které se vejde miliarda megabitů. Právě v megabitech se přitom měří rychlost domácího internetu.
+Víc než celé Japonsko dohromady
+Aby si lidé dokázali tu rychlost představit, japonští vědci ji sami přirovnali k vlastní zemi. Jediné vlákno by uneslo zhruba 26krát víc dat, než kolik si v listopadu 2024 dohromady stahovali všichni Japonci připojení k pevnému internetu.
+Jinými slovy: celý japonský pevný internet by se do jednoho takového vlákna vešel s obrovskou rezervou.
+Rychleji, a hlavně mnohem dál
+Japonci rychlost nehonili poprvé. Dřívější vlákno stejného typu zvládlo dokonce 1,7 petabitu za sekundu, jenže jen na 63,5 kilometru. Nová verze poslala data skoro třicetkrát dál.
+Právě v tom je síla rekordu. Obrovská rychlost na krátkou vzdálenost je jedna věc. Udržet ji na vzdálenost přes 1 800 kilometrů je něco úplně jiného.
+Celý Netflix během jediného okamžiku
+Americký technologický web BGR si to přepočítal na filmy a seriály. Vyšel z odhadu, že Netflix nabízel na konci roku 2023 asi 18 000 titulů a každý zabere kolem 7 gigabajtů. Dohromady to dělá zhruba 123 terabajtů.
+Proč najednou terabajty? Rychlost internetu se počítá v bitech, velikost souborů v bajtech. Jeden bajt má osm bitů, takže japonské vlákno přenese za sekundu asi 127,5 terabajtu. Celý katalog by se jím tedy stáhl přibližně za vteřinu. K podobnému závěru došel i americký web PCWorld, podle kterého by to šlo dokonce za necelou sekundu.
+💡 Zajímavost: Skleněné rekordní vlákno má průměr jen 0,125 milimetru, a přesto by uneslo 26krát víc dat než všichni Japonci s pevným internetem dohromady.
+A co český internet?
+Průměrné pevné připojení v Česku mělo podle měření z roku 2023 rychlost 88,4 megabitu za sekundu, uvedl Český telekomunikační úřad. Japonský rekord je proti tomu zhruba 11,5milionkrát rychlejší. To není překlep. Co vlákno zvládne za jedinou sekundu, to by průměrná česká přípojka posílala víc než čtyři měsíce.
+Podobně to vychází i za oceánem. Průměrná rychlost amerického pevného internetu byla začátkem roku 2025 kolem 290 megabitů za sekundu. Japonské vlákno je podle britského webu TechRadar víc než 3,5milionkrát rychlejší.
+Stejně tenké jako dnešní vlákna
+Možná nejlepší zpráva celého pokusu se skrývá v tloušťce. Vlákno má běžný průměr 0,125 milimetru, stejný jako vlákna, která se používají dnes. Japonský ústav to ve své tiskové zprávě výslovně zdůrazňuje.
+Rozdíl je uvnitř. Běžné vlákno má jedno jádro, rekordní jich má rovnou 19. Navenek je ale stejně tenké.
+Co bude dál
+Podle britského oborového webu ISPreview rekord přibližuje technologii k využití na dálkových spojeních, třeba mezi státy. Domácí internet se tím hned nezmění. Japonský ústav chce technologii dál vylepšovat a prozkoumat, jak ji využít v praxi. Žádný termín zatím neuvedl.
+Stejný tým mezitím letos poslal data ještě mnohem dál, na vzdálenost 8 610 kilometrů, která odpovídá cestě přes Atlantik. Rychlost byla nižší, ale v kombinaci rychlosti a vzdálenosti jde podle vědců o nejlepší výsledek, jakého kdy optické vlákno dosáhlo.
+Vědci tak ukázali, že obrovské rychlosti na dlouhé vzdálenosti nemusejí čekat na úplně jiná vlákna. Stačí vlákno dnešní tloušťky, jen s chytřejším vnitřkem.
+Ověřeno z:
+- NICT (japonský Národní ústav informačních a komunikačních technologií) — tisková zpráva o světovém rekordu 1,02 Pb/s (29. 5. 2025)
+- Journal of Lightwave Technology / TU Eindhoven — přenos 434,6 Tb/s na 8 610 km (2026)
+- Český telekomunikační úřad — průměrná rychlost pevného internetu, 2. čtvrtletí 2023
+- BGR — výpočet velikosti katalogu Netflixu (2025)

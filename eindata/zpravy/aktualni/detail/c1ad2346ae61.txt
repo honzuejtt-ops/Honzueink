@@ -1,0 +1,17 @@
+styleLatex
+Online konvertor, který z PDF, fotografií, ručně psaných poznámek nebo souborů Word vytvoří upravitelný zdrojový kód LaTeX.
+O nástroji
+styleLatex převádí dokumenty, které nejsou v LaTeXu, na odpovídající zdrojový kód. Na vstupu může být PDF, fotografie tabule, screenshot nebo stránka ručně psaných poznámek, na výstupu pak kód se sekcemi, seznamy, větami (theorem) a sázenou matematikou. Rovnice jsou zapsány pomocí balíčku amsmath (zlomky, integrály, matice, číslované rovnice) a tabulky jako kód tabular s pravítky z balíčku booktabs. Obrázky a grafy uvnitř stránky jsou automaticky ořezány a přiloženy v .zip souboru vedle .tex souboru, a to až osm na stránku. Nástroj umí konverzi i opačným směrem – LaTeX lze převést do Wordu (pomocí nástroje Pandoc, přičemž rovnice zůstávají editovatelné jako nativní Word rovnice), do HTML, Markdownu nebo Typstu, případně jednotlivou rovnici vykreslit jako PNG obrázek. Každá stránka, kterou nástroj vytvoří, je zkompilována přes XeLaTeX a v případě chyby automaticky opravena podle chybového logu, takže výsledný kód by měl jít rovnou zkompilovat. Znaky, které nelze s jistotou přečíst, jsou označeny jako „[unreadable]“ místo toho, aby si je nástroj domyslel. Podle webu je řada konverzí zdarma – tabulky z Excelu lze převést přímo v prohlížeči, LaTeX do Wordu je zdarma po přihlášení a nástroje pro Markdown, HTML a Typst nevyžadují účet. Konverze celých stránek z PDF, fotografií a souborů Word funguje na kredity (jeden kredit na stránku), přičemž stránky, jejichž konverze selže, jsou vráceny. Konkrétní ceník placeného tarifu ani API nejsou v dostupných podkladech uvedeny.
+Klíčové vlastnosti
+- Převod PDF, fotek, ručních poznámek i Wordu do LaTeXu
+- Rovnice v amsmath (zlomky, integrály, matice, číslované vzorce)
+- Tabulky jako tabular kód s pravítky booktabs a multirow buňkami
+- Automatické kompilování přes XeLaTeX a oprava chyb z logu
+Časté dotazy
+Co přesně nástroj umí převést do LaTeXu?
+Umí zkonvertovat PDF, fotku tabule nebo poznámek, screenshot i soubor Word na zdrojový kód LaTeX se sekcemi, seznamy, větami a sázenou matematikou. Rovnice jdou přes amsmath a tabulky jako tabular s booktabs, obrázky se ořežou a přiloží v .zip.
+Kolik stojí konverze a je něco zdarma?
+Převod Excel tabulek do LaTeXu, LaTeX do Wordu po přihlášení a nástroje pro Markdown, HTML a Typst jsou zdarma bez účtu. Konverze celých stránek z PDF, fotek a Wordu funguje na kredity (1 kredit = 1 stránka), přičemž neúspěšné stránky jsou vráceny; konkrétní ceník placeného tarifu web neuvádí.
+Jak se s nástrojem začíná?
+Stačí nahrát PDF, obrázek, ručně psané poznámky nebo soubor Word (případně vložit screenshot Ctrl+V), vybrat stránky a spustit konverzi. Výsledný kód lze upravit, zkompilovat a stáhnout jako .tex, PDF, Word nebo .zip s obrázky.
+Kategorie

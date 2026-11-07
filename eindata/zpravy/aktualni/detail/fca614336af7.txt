@@ -1,0 +1,5 @@
+Bambu Lab tento týden představil novou 3D tiskárnu H3C. Má devět trysek a systém Swaptek, který umožňuje během jednoho tisku používat trysky s různým průměrem. Jak to nyní vypadá, tato technologie nezůstane exkluzivní jen pro novinku. Společnost ji plánuje přidat i do starších tiskáren.
+Dočkají se Bambu Lab H2D, H2C a X2D
+Podle blogového příspěvku dostanou podporu kontinuálního tisku s tryskami různých průměrů tři již dříve představené modely. Konkrétně jde o Bambu Lab H2D, Bambu Lab H2C a letos představený Bambu Lab X2D.
+Kdy aktualizace dorazí, záleží na tom, jestli při tisku používáte Filament Track Switch pro automatické přepínání mezi AMS jednotkami:
+Termíny jsou zatím pouze orientační. Podle společnosti totiž nejde o jednoduchou úpravu. Jelikož je každá tiskárna postavená jinak než nová Bambu Lab H3C, bude potřeba tuto funkci odladit pro každý model zvlášť.

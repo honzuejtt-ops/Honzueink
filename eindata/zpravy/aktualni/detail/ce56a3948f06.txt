@@ -1,0 +1,17 @@
+Weft
+Weft je AI správce úkolů s kanbanovou nástěnkou, který propojuje ChatGPT, Claude, Cursor a Codex přes MCP pro samostatné zakladatele a malé týmy.
+O nástroji
+Weft funguje jako sdílená nástěnka (Backlog, Todo, Doing, Done) mezi uživatelem a jeho AI nástroji. Úkoly lze zakládat přímo z konverzace s ChatGPT, Claudem, Cursorem nebo Codexem – AI je rozloží, pracuje na nich a následně podá zprávu o stavu, takže informace se neztrácí mezi jednotlivými chaty. Propojení funguje přes MCP (Model Context Protocol) a podle webu nástroj spolupracuje s více než 30 dalšími AI nástroji, je také živě dostupný v adresáři aplikací ChatGPT. Práce je organizována formou sprintů ve stylu Scrumban – časově ohraničené sprinty s kanbanovým tokem úkolů bez zbytečných ceremonií. K dispozici jsou nativní aplikace pro App Store a Google Play, celé rozhraní je v češtině. Bezplatná varianta nabízí 50 úkolů a 200 volání AI měsíčně bez nutnosti zadávat platební kartu, placený tarif začíná na 44 Kč.
+Klíčové vlastnosti
+- Sdílená kanbanová nástěnka pro uživatele a AI nástroje
+- Propojení s ChatGPT, Claude, Cursorem a Codexem přes MCP
+- Zakládání úkolů přímo z konverzace s AI
+- Organizace práce formou sprintů ve stylu Scrumban
+Časté dotazy
+Co přesně Weft umí?
+Weft je sdílená nástěnka (Backlog, Todo, Doing, Done), na které může zakládat a plnit úkoly přímo vaše AI – ChatGPT, Claude, Cursor nebo Codex přes MCP. AI úkoly rozloží, pracuje na nich a následně podá zprávu o stavu, takže informace se neztrácí mezi jednotlivými chaty.
+Kolik Weft stojí?
+Bezplatná varianta nabízí 50 úkolů a 200 volání AI měsíčně bez nutnosti zadávat platební kartu, placený tarif začíná na 44 Kč.
+Pro koho je Weft a jak začít?
+Je určen samostatným zakladatelům a malým týmům, kteří pracují s více AI nástroji najednou. Stačí se zaregistrovat, propojit AI nástroj přes OAuth a úkoly pak zadávat běžnou konverzací.
+Kategorie

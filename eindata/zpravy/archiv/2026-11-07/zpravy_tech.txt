@@ -1,0 +1,54 @@
+|T|Hrůza! Některé materiály pro 3D tisk jsou „toxičtější, než se myslelo“…|D|07.11.2026 12:00|P|Co zjistili vědci z Lékařské fakulty UK v Plzni, proč běžný test nemusí stačit a z čeho si raději netisknout vykrajovátka ani náramek na každý den?|M|Aditivní|X|TÃ©ma seÂ dostalo tÅeba iÂ doÂ UdÃ¡lostÃ ÄT. Je to opravdu takovÃ© drama?
+PÅi 3DÂ tisku si uÅ¾ roky klademe prozaiÄtÄjÅ¡Ã otÃ¡zky: Äeho seÂ ten vÃ½tisk bude dotÃ½kat aÂ jak dlouho? AÂ promÃtne seÂ to do vÃ½bÄru materiÃ¡lu aÂ postupu vÃ½roby? PrÃ¡vÄ vÂ tom Äasto vidÃm rozdÃl mezi hobby aÂ profi pÅÃstupem.
+Co tedy zjistili vÄdci zÂ LÃ©kaÅskÃ© fakulty UK vÂ Plzni? HotovÃ© vÃ½tisky aÂ lidskÃ© koÅ¾nÃ buÅky sdÃlely vÂ laboratoÅi kultivaÄnÃ mÃ©dium. UÂ jednoho bÃlÃ©ho pruÅ¾nÃ©ho filamentu TPU 98A zÅ¯stal vÃ½sledek bÄÅ¾nÃ©ho testu Å¾ivotaschopnosti nad pouÅ¾Ãvanou hranicÃ. PodrobnÄjÅ¡Ã mÄÅenÃ ale poÂ tÃ½dnu ukÃ¡zalo, Å¾e mitochondriÃ¡lnÃ respirace spojenÃ¡ sÂ tvorbou ATP klesla vÂ pÅepoÄtu naÂ buÅku pÅibliÅ¾nÄ oÂ 88 % oproti kontrole.
+To je naÂ studii zajÃmavÃ©. BÄÅ¾nÃ½ test mÅ¯Å¾e pÅehlÃ©dnout vÃ½raznou poruchu fungovÃ¡nÃ bunÄk. VÄdci zaznamenali odliÅ¡nÃ© zmÄny iÂ uÂ konkrÃ©tnÃch vzorkÅ¯ PETG, PC aÂ PP. JakÃ© riziko pÅedstavuje nÃ¡ramek noÅ¡enÃ½ naÂ neporuÅ¡enÃ© kÅ¯Å¾i, zÅ¯stÃ¡vÃ¡ otevÅenÃ©.
+UÅ¾ tucet let lidem kolem hobby 3DÂ tisku opakuji:
+- VykrajovÃ¡tka naÂ vÃ¡noÄnÃ cukrovÃ si zÂ bÄÅ¾nÃ©ho filamentu radÄji netisknÄte. Pokud chcete vlastnÃ tvar, ovÄÅte si, Å¾e je pro styk sÂ tÄstem materiÃ¡l (bez barviv) vhodnÃ½. AÂ pouÅ¾ijte ho max. naÂ jedno vykrajovÃ¡nÃ. (Byli iÂ tacÃ experti, kteÅÃ si naÂ nÄ udÄlali e-shop aÂ styk sÂ potravinami vÅ¯bec neÅeÅ¡ili.)
+- ZÂ bÄÅ¾nÃ©ho probarvenÃ©ho TPU bych si nedÄlal nÃ¡ramek, kterÃ½ budu nosit naÂ kÅ¯Å¾i den zaÂ dnem. UÂ takovÃ©ho dÃlu chci mÃt podklady pro konkrÃ©tnÃ materiÃ¡l aÂ dÃ©lku kontaktu. (Fakt si nechcete uhnat alergickou reakci.)
+ProÄ bychom vÂ praxi pÅiplÃ¡celi zaÂ drahÃ© biokompatibilnÃ materiÃ¡ly aÂ poÅizovali tiskÃ¡rny, kterÃ© sÂ nimi umÄjÃ pracovat?
+TÅeba u pryskyÅic Formlabs BioMed Clear aÂ BioMed Durable vÃ½robce doklÃ¡dÃ¡ biokompatibilitu sprÃ¡vnÄ zpracovanÃ½ch vÃ½tiskÅ¯ pro kontakt seÂ sliznicÃ nebo pokoÅ¾kou delÅ¡Ã neÅ¾ 30 dnÃ. UÂ obou uvÃ¡dÃ iÂ ovÄÅenÃ© metody sterilizace (vÄetnÄ pÃ¡ry). UÅ¾ samotnÃ¡ pryskyÅice stojÃ stovky eur zaÂ litr. KÂ tomu patÅÃ kompatibilnÃ tiskÃ¡rna aÂ pÅedepsanÃ½ postup tisku, mytÃ aÂ vytvrzenÃ. Leze to doÂ penÄz. VÂ cenÄ materiÃ¡lu jsou ale iÂ zkouÅ¡ky aÂ dokumentace, oÂ kterÃ© seÂ mÅ¯Å¾u pÅi vÃ½bÄru opÅÃt.
+KdyÅ¾ vybÃrÃ¡m materiÃ¡l na pÅÃpravek doÂ provozu, ÅeÅ¡Ãm hlavnÄ to, co musÃ vydrÅ¾et. UÂ dÃlu, kterÃ½ mÃ¡ nÄkdo nosit kaÅ¾dÃ½ den naÂ tÄle, seÂ ptÃ¡m iÂ naÂ to, co oÂ nÄm vÃme poÂ tÃ½dnech kontaktu.
+Tuhle otÃ¡zku jsme si kladli dÃ¡vno pÅedtÃm, neÅ¾ seÂ dostala doÂ titulkÅ¯. AÂ jestli kvÅ¯li tÃ© reportÃ¡Å¾i nÄkdo zaÄne ÅeÅ¡it, zÂ Äeho si tiskne nÃ¡ramek nebo vykrajovÃ¡tko, tÃm lÃp.|E|
+|T|První díl Oddílu B překročil na Oneplay milion diváků, uvedl Reitler|D|07.11.2026 08:19|P|Jednotlivé epizody vězeňského seriálu Oddíl B vidělo na Oneplay přes 700 tisíc diváků. První díl už podle ředitele vývoje obsahu televize Nova Michala...|M|Lupa|X|Jednotlivé epizody vězeňského seriálu Oddíl B vidělo na Oneplay přes 700 tisíc diváků. První díl už podle ředitele vývoje obsahu televize Nova Michala Reitlera výrazně překonal milionovou hranici. Nova tak výjimečně zveřejnila konkrétní údaje o sledovanosti své původní tvorby na této platformě.
+Metodiku výpočtu však Reitler ve svém příspěvku na LinkedInu neupřesnil. Není tak zřejmé, jak dlouhé sledování se do údaje započítává ani jak platforma rozlišuje jednotlivé diváky. Čísla proto nelze bez dalšího srovnávat s běžně publikovanou průměrnou televizní sledovaností.
+Reitler zároveň popsal pochybnosti, které uvedení seriálu provázely. Vedení zvažovalo, zda diváky neodradí výrazné zastoupení neherců, horší srozumitelnost dialogů, vulgarita nebo celková tíživost prostředí. Obávalo se také, zda přijetí seriálu neovlivní rasismus části českého publika. Podle Reitlera se původně zamýšlená komedie během vzniku posouvala k podstatně tíživějšímu příběhu.
+Desetidílný Oddíl B vznikl ve spolupráci Jana Prušinovského a Petra Kolečka, tvůrců seriálů Okresní přebor a Most!. Oneplay jej uvádí od 9. října, nové epizody přidává každý pátek. Příběh sleduje dvacetiletého Davida Broulíka v podání Tadeáše Moravce, který nastupuje do vězení. Námět vychází mimo jiné z vězeňských zkušeností Zdeňka Godly, jenž v seriálu také hraje.|E|
+|T|Nemusíte kupovat novou 3D tiskárnu. Bambu Lab dá skvělou funkci z nové H3C i starším modelům|D|07.11.2026 08:00|P|Kontinuální tisk trysek s různými průměry z nové Bambu Lab H3C dostanou i starší 3D tiskárny. První z nich už dokonce letos v listopadu.|M|Cnews|X|Bambu Lab tento týden představil novou 3D tiskárnu H3C. Má devět trysek a systém Swaptek, který umožňuje během jednoho tisku používat trysky s různým průměrem. Jak to nyní vypadá, tato technologie nezůstane exkluzivní jen pro novinku. Společnost ji plánuje přidat i do starších tiskáren.
+Dočkají se Bambu Lab H2D, H2C a X2D
+Podle blogového příspěvku dostanou podporu kontinuálního tisku s tryskami různých průměrů tři již dříve představené modely. Konkrétně jde o Bambu Lab H2D, Bambu Lab H2C a letos představený Bambu Lab X2D.
+Kdy aktualizace dorazí, záleží na tom, jestli při tisku používáte Filament Track Switch pro automatické přepínání mezi AMS jednotkami:
+Termíny jsou zatím pouze orientační. Podle společnosti totiž nejde o jednoduchou úpravu. Jelikož je každá tiskárna postavená jinak než nová Bambu Lab H3C, bude potřeba tuto funkci odladit pro každý model zvlášť.|E|
+|T|styleLatex|D|07.11.2026 07:22|P|Online konvertor, který z PDF, fotografií, ručně psaných poznámek nebo souborů Word vytvoří upravitelný zdrojový kód LaTeX.|M|EJAJ|X|styleLatex
+Online konvertor, který z PDF, fotografií, ručně psaných poznámek nebo souborů Word vytvoří upravitelný zdrojový kód LaTeX.
+O nástroji
+styleLatex převádí dokumenty, které nejsou v LaTeXu, na odpovídající zdrojový kód. Na vstupu může být PDF, fotografie tabule, screenshot nebo stránka ručně psaných poznámek, na výstupu pak kód se sekcemi, seznamy, větami (theorem) a sázenou matematikou. Rovnice jsou zapsány pomocí balíčku amsmath (zlomky, integrály, matice, číslované rovnice) a tabulky jako kód tabular s pravítky z balíčku booktabs. Obrázky a grafy uvnitř stránky jsou automaticky ořezány a přiloženy v .zip souboru vedle .tex souboru, a to až osm na stránku. Nástroj umí konverzi i opačným směrem – LaTeX lze převést do Wordu (pomocí nástroje Pandoc, přičemž rovnice zůstávají editovatelné jako nativní Word rovnice), do HTML, Markdownu nebo Typstu, případně jednotlivou rovnici vykreslit jako PNG obrázek. Každá stránka, kterou nástroj vytvoří, je zkompilována přes XeLaTeX a v případě chyby automaticky opravena podle chybového logu, takže výsledný kód by měl jít rovnou zkompilovat. Znaky, které nelze s jistotou přečíst, jsou označeny jako „[unreadable]“ místo toho, aby si je nástroj domyslel. Podle webu je řada konverzí zdarma – tabulky z Excelu lze převést přímo v prohlížeči, LaTeX do Wordu je zdarma po přihlášení a nástroje pro Markdown, HTML a Typst nevyžadují účet. Konverze celých stránek z PDF, fotografií a souborů Word funguje na kredity (jeden kredit na stránku), přičemž stránky, jejichž konverze selže, jsou vráceny. Konkrétní ceník placeného tarifu ani API nejsou v dostupných podkladech uvedeny.
+Klíčové vlastnosti
+- Převod PDF, fotek, ručních poznámek i Wordu do LaTeXu
+- Rovnice v amsmath (zlomky, integrály, matice, číslované vzorce)
+- Tabulky jako tabular kód s pravítky booktabs a multirow buňkami
+- Automatické kompilování přes XeLaTeX a oprava chyb z logu
+Časté dotazy
+Co přesně nástroj umí převést do LaTeXu?
+Umí zkonvertovat PDF, fotku tabule nebo poznámek, screenshot i soubor Word na zdrojový kód LaTeX se sekcemi, seznamy, větami a sázenou matematikou. Rovnice jdou přes amsmath a tabulky jako tabular s booktabs, obrázky se ořežou a přiloží v .zip.
+Kolik stojí konverze a je něco zdarma?
+Převod Excel tabulek do LaTeXu, LaTeX do Wordu po přihlášení a nástroje pro Markdown, HTML a Typst jsou zdarma bez účtu. Konverze celých stránek z PDF, fotek a Wordu funguje na kredity (1 kredit = 1 stránka), přičemž neúspěšné stránky jsou vráceny; konkrétní ceník placeného tarifu web neuvádí.
+Jak se s nástrojem začíná?
+Stačí nahrát PDF, obrázek, ručně psané poznámky nebo soubor Word (případně vložit screenshot Ctrl+V), vybrat stránky a spustit konverzi. Výsledný kód lze upravit, zkompilovat a stáhnout jako .tex, PDF, Word nebo .zip s obrázky.
+Kategorie|E|
+|T|Weft|D|07.11.2026 07:22|P|Weft je AI správce úkolů s kanbanovou nástěnkou, který propojuje ChatGPT, Claude, Cursor a Codex přes MCP pro samostatné zakladatele a malé týmy.|M|EJAJ|X|Weft
+Weft je AI správce úkolů s kanbanovou nástěnkou, který propojuje ChatGPT, Claude, Cursor a Codex přes MCP pro samostatné zakladatele a malé týmy.
+O nástroji
+Weft funguje jako sdílená nástěnka (Backlog, Todo, Doing, Done) mezi uživatelem a jeho AI nástroji. Úkoly lze zakládat přímo z konverzace s ChatGPT, Claudem, Cursorem nebo Codexem – AI je rozloží, pracuje na nich a následně podá zprávu o stavu, takže informace se neztrácí mezi jednotlivými chaty. Propojení funguje přes MCP (Model Context Protocol) a podle webu nástroj spolupracuje s více než 30 dalšími AI nástroji, je také živě dostupný v adresáři aplikací ChatGPT. Práce je organizována formou sprintů ve stylu Scrumban – časově ohraničené sprinty s kanbanovým tokem úkolů bez zbytečných ceremonií. K dispozici jsou nativní aplikace pro App Store a Google Play, celé rozhraní je v češtině. Bezplatná varianta nabízí 50 úkolů a 200 volání AI měsíčně bez nutnosti zadávat platební kartu, placený tarif začíná na 44 Kč.
+Klíčové vlastnosti
+- Sdílená kanbanová nástěnka pro uživatele a AI nástroje
+- Propojení s ChatGPT, Claude, Cursorem a Codexem přes MCP
+- Zakládání úkolů přímo z konverzace s AI
+- Organizace práce formou sprintů ve stylu Scrumban
+Časté dotazy
+Co přesně Weft umí?
+Weft je sdílená nástěnka (Backlog, Todo, Doing, Done), na které může zakládat a plnit úkoly přímo vaše AI – ChatGPT, Claude, Cursor nebo Codex přes MCP. AI úkoly rozloží, pracuje na nich a následně podá zprávu o stavu, takže informace se neztrácí mezi jednotlivými chaty.
+Kolik Weft stojí?
+Bezplatná varianta nabízí 50 úkolů a 200 volání AI měsíčně bez nutnosti zadávat platební kartu, placený tarif začíná na 44 Kč.
+Pro koho je Weft a jak začít?
+Je určen samostatným zakladatelům a malým týmům, kteří pracují s více AI nástroji najednou. Stačí se zaregistrovat, propojit AI nástroj přes OAuth a úkoly pak zadávat běžnou konverzací.
+Kategorie|E|

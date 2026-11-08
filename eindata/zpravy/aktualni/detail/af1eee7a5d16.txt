@@ -1,0 +1,12 @@
+Projekt anglické Univerzity v Southamptonu se nejprve zaměřil na trénování umělé inteligence, která byla následně schopna zpracovat zhruba 100 tisíc ručně psaných záznamů pocházejících z doby od 16. do 18. století. Ty byly převzaty z pergamenových knih vázaných v kůži uložených v Národním archivu Spojeného království.
+Díky nim se podařilo vědcům zjistit, jak se Británie prostřednictvím styků s Evropou postupně rozrostla v impérium. Zmapovat se díky tomu povedlo několik set let britské námořní historie.
+Šlo o velmi náročný úkol, který se právě díky umělé inteligenci velmi urychlil, uvedl pro BBC historik a výzkumník Craig Lambert.
+Evropa byla důležitější, než se myslelo
+Umělá inteligence se mimo jiné naučila rozpoznat historické písmo mořeplavců. Vědci se tak podrobněji dozvěděli, „kdo s kým a čím obchodoval, kde a kdy“.
+Mezi zásadní položky obchodu zkoumané doby patřilo například uhlí, pšenice, vlna, víno, ale také hračky nebo tzv. benátská melasa, o které se tradovalo, že vyléčí jakoukoli nemoc.
+Z obsáhlých dat se také povedlo zjistit, že Evropa byla pro Británii mnohem důležitější, než se dříve myslelo. Zároveň byla díky tomu popsána dnes již neexistující města a také přístavy, které byly v tehdejším námořním obchodě klíčové.
+Někdy jen dokončí závěrečné kroky
+Stále lepší modely umělé inteligence pomáhají lidem odhalovat historii, ale také třeba řešit matematické úlohy, se kterými si dlouhé roky nevěděli rady.
+V září společnost OpenAI oznámila, že se jejím AI agentům podařilo vyřešit tzv. Navierovu-Stokesovu rovnici, která byla dlouho považována za natolik obtížnou, že za každé řešení byla vypsána odměna milion dolarů (cca 20,8 milionu korun).
+Tento úspěch jasně ukázal, čeho jsou nejmodernější modely umělé inteligence schopné, zároveň ale vyvolal otázky, zda systémy umělé inteligence využívají kreativní myšlení, nebo pouze dokončují závěrečné kroky poté, co si vypůjčily nápady z prací lidských autorů, a to nejen matematiků.
+„Je dost pravděpodobné, že v budoucnu se objeví řada výsledků, kde modely AI vezmou něčí rozdělanou práci a dokončí ji,“ uvedl k tomu Tristan Buckmaster, matematik na Newyorské univerzitě.

@@ -1,0 +1,17 @@
+RemoveBGNoise
+Online AI nástroj pro odstranění hluku z pozadí v audio a video nahrávkách – čistí hum, vítr, dopravní ruch i šum hlasu.
+O nástroji
+RemoveBGNoise je bezplatný online nástroj, který pomocí AI modelu rozpoznává lidský hlas a odstraňuje veškerý ostatní zvuk na pozadí – dopravní ruch, vítr, elektrický hum, syčení, hluk ventilátoru či šum v místnosti. Funguje přímo v prohlížeči bez nutnosti instalace softwaru, stačí nahrát soubor, zvolit sílu čištění (Balanced nebo Max) a porovnat výsledek s originálem před stažením. Podporuje audio formáty MP3, WAV, M4A, AAC, FLAC, OGG, OPUS a video formáty MP4, MOV, WEBM, MKV, AVI, M4V. U videa se mění pouze zvuková stopa, obraz zůstává beze změny a bez nového kódování. Bezplatný plán nabízí 15 minut zpracování, soubory do 10 minut délky a maximálně 200 MB. Zpracování trvá přibližně 30 sekund na tříminutový klip, výsledky neobsahují vodoznak a nahrané soubory jsou automaticky smazány po 24 hodinách, přičemž nejsou používány k trénování AI. Nástroj je určen pro podcasty, vlogy, rozhovory, nahrávky schůzek v Zoomu či Teams a další mluvené nahrávky, u kterých potřebuje uživatel odstranit rušivé zvuky pozadí a zachovat čistý hlas.
+Klíčové vlastnosti
+- Rozpoznání lidského hlasu a odstranění ostatního zvuku
+- Volba síly čištění Balanced nebo Max
+- Podpora audio formátů MP3, WAV, M4A, AAC, FLAC, OGG, OPUS
+- Podpora video formátů MP4, MOV, WEBM, MKV, AVI, M4V
+Časté dotazy
+Jaký hluk dokáže RemoveBGNoise odstranit?
+Odstraňuje dopravní ruch, vítr, elektrický hum, syčení, hluk ventilátoru i šum v místnosti, zatímco zachovává lidský hlas. U videa se mění pouze zvuková stopa, obraz zůstává beze změny.
+Kolik RemoveBGNoise stojí?
+Nástroj nabízí bezplatný plán s 15 minutami zpracování, soubory do 10 minut délky a 200 MB, bez vodoznaku.
+Pro koho je nástroj určený a jak začít?
+Hodí se pro podcasty, vlogy, rozhovory i nahrávky ze Zoomu nebo Teams – stačí nahrát soubor do prohlížeče, zvolit sílu čištění Balanced nebo Max a stáhnout výsledek, bez instalace software.
+Kategorie

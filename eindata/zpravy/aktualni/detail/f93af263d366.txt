@@ -1,0 +1,17 @@
+Pavo AI Video
+Generátor AI meme videí z vašich fotek a trendy šablon – vytvářejte klipy pro TikTok, Reels nebo Shorts přímo v prohlížeči.
+O nástroji
+Pavo AI Video je generátor meme videí postavený na trendy video šablonách. Uživatel si vybere ukázkový klip (např. taneční výzvu, hudební moment nebo komediální scénu), nahraje vlastní fotku – svou, zvířete nebo produktu – a nástroj do připraveného promptu dosadí nový motiv. Výsledkem jsou krátká videa určená pro TikTok, Instagram Reels nebo YouTube Shorts. Celý proces probíhá přímo v prohlížeči: stačí zvolit šablonu tlačítkem „Recreate“, nahrát jasnou fotku subjektu a podle potřeby upravit prompt (jiný pohyb, úhel kamery nebo prostředí). Před samotným generováním nástroj zobrazí odhad ceny podle zvoleného modelu, délky a rozlišení (k dispozici 480p, 720p a 1080p); u nepovedených renderů se kredity vracejí zpět. Katalog nabízí desítky hotových šablon, například taneční nebo komediální scény, a umožňuje personalizovat videa pro přátele, páry, rodinu, domácí mazlíčky nebo sportovní highlighty. Podle zjištěných informací je k dispozici bezplatná varianta a ceny začínají přibližně od 9,90 USD; rozhraní je v angličtině, API ani open source řešení zmíněno není.
+Klíčové vlastnosti
+- Desítky hotových video šablon (tanec, komedie, hudba)
+- Nahrání vlastní fotky osoby, zvířete nebo produktu
+- Úprava promptu pro jiný pohyb, úhel kamery či prostředí
+- Výběr rozlišení 480p, 720p nebo 1080p
+Časté dotazy
+Co Pavo AI Video umí vytvořit?
+Generuje krátká meme videa podle trendy šablon – stačí vybrat ukázkový klip, nahrát vlastní fotku a nástroj do připraveného promptu dosadí nový motiv. Výsledkem jsou klipy pro TikTok, Instagram Reels nebo YouTube Shorts.
+Kolik Pavo AI Video stojí?
+K dispozici je bezplatná varianta a placené plány začínají přibližně od 9,90 USD. Cena se odvíjí od zvoleného modelu, délky a rozlišení videa (480p, 720p, 1080p), přičemž odhad ceny vidíte ještě před generováním.
+Jak začít a pro koho je nástroj určený?
+Stačí v galerii vybrat šablonu tlačítkem „Recreate“, nahrát jasnou fotku subjektu (osoby, zvířete nebo produktu) a případně upravit prompt. Hodí se pro kohokoli, kdo chce rychle vytvořit virální meme video bez střihačských dovedností.
+Kategorie

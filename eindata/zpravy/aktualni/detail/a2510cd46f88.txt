@@ -1,0 +1,17 @@
+Kinovi
+Jedno API pro generování videa, obrázků a zvuku pomocí AI modelů, placené formou kreditů podle skutečné spotřeby.
+O nástroji
+Kinovi je platforma s API, která sjednocuje přístup k velkému množství AI modelů pro generování videa, obrázků a zvuku – mimo jiné Seedance 2.5, Seedance 2.0, Wan 3.0, Seedream 5.0 Pro, GPT Image 2, Midjourney V8 nebo Nano Banana Pro. Místo integrace jednotlivých modelů a nástrojů (např. ComfyOne grafů) nabízí jedno rozhraní s přehlednými ID modelů a sazbami, takže vývojáři mohou pracovat s více poskytovateli (ByteDance, Alibaba, OpenAI, Midjourney, x-ai, Google) přes jediné API. Platí se formou kreditů podle skutečné spotřeby („pay-as-you-go“), přičemž u konkrétních modelů je uvedena jednotková cena – například Seedance 2.5 vychází na 0,1197 USD za sekundu videa, což je podle srovnání na webu o desítky procent levnější než u konkurenčního poskytovatele Fal.ai. Stejný kreditní zůstatek lze využít i ve studiové verzi nástroje, pokud uživatel nechce pracovat přímo přes API. Služba je určena především vývojářům a technickým uživatelům, kteří chtějí AI modely integrovat do vlastních aplikací bez nutnosti psát propojovací kód pro každý model zvlášť. Dokumentace obsahuje příklady použití a k dispozici je i přístup přes Discord a GitHub.
+Klíčové vlastnosti
+- Jedno API pro video, obrázky i zvuk od více poskytovatelů
+- Přístup k modelům Seedance 2.5, Wan 3.0, Seedream 5.0 Pro, Midjourney V8 a dalším
+- Platba formou kreditů podle skutečné spotřeby (pay-as-you-go)
+- Studiové rozhraní se stejným kreditem jako API
+Časté dotazy
+Co přesně Kinovi umí?
+Kinovi nabízí jedno API, přes které lze volat desítky AI modelů pro generování videa, obrázků a zvuku (např. Seedance 2.5, Wan 3.0, Midjourney V8, GPT Image 2) bez nutnosti integrovat každého poskytovatele zvlášť.
+Kolik Kinovi stojí?
+Platí se formou kreditů podle skutečné spotřeby – například Seedance 2.5 vychází na 0,1197 USD za sekundu videa, což je podle srovnání na webu o desítky procent levnější než u Fal.ai.
+Pro koho je Kinovi určené a jak začít?
+Služba je určena hlavně vývojářům a technickým uživatelům, kteří chtějí AI modely integrovat do vlastních aplikací; stačí se zaregistrovat přes dashboard a použít dokumentaci s příklady, případně využít podporu na Discordu a GitHubu.
+Kategorie

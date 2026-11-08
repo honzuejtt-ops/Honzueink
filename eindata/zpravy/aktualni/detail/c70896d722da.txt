@@ -1,0 +1,17 @@
+PavoAI
+Generátor AI videí a obrázků z textového zadání s modely Seedance 2.0, Wan 2.7, Nano Banana 2 a Seedream 4.
+O nástroji
+PavoAI je webový nástroj pro tvorbu krátkých videí a obrázků z textového promptu. Pro video nabízí modely Seedance 2.0 a Wan 2.7 s délkou klipu od 5 do 15 sekund, poměrem stran 16:9, 9:16 nebo 1:1 a kvalitou 720p či 1080p. Pro obrázky jsou k dispozici modely Nano Banana 2 (kvalita 1K, 2K nebo 4K) a Seedream 4 s nastavením poměru stran a kvality. Generování funguje na principu kreditů, jejichž počet se odvíjí od zvoleného modelu, délky a kvality výstupu – podle dostupných informací stojí například jedno video v rychlém režimu 7 960 kreditů. Bezplatná varianta není uvedena, nástroj nabízí jednorázový nákup kreditového balíčku od 9,90 USD nebo předplatné. Hotové výstupy je potřeba stáhnout ihned, protože výsledky hosta jsou dostupné pouze na dané stránce a doručení e-mailem je dočasně nedostupné. Rozhraní je v angličtině a informace o API ani open-source řešení nejsou k dispozici. Nástroj je určen pro rychlé prototypování scén, produktových konceptů, reklamních nápadů či atmosférických smyček, které si uživatel následně může stáhnout a dopracovat v jiných editačních nástrojích.
+Klíčové vlastnosti
+- Text-to-video modely Seedance 2.0 a Wan 2.7 (5–15 s)
+- Text-to-image modely Nano Banana 2 a Seedream 4 (až 4K)
+- Volba poměru stran 16:9, 9:16 nebo 1:1
+- Kvalita výstupu 720p nebo 1080p u videí
+Časté dotazy
+Co PavoAI umí vygenerovat?
+Z textového promptu vytvoří krátké video (5–15 s) pomocí modelů Seedance 2.0 nebo Wan 2.7, případně obrázek pomocí Nano Banana 2 nebo Seedream 4 s volbou poměru stran a kvality.
+Kolik PavoAI stojí?
+Generování funguje na kreditech, jejichž spotřeba závisí na modelu, délce a kvalitě – například jedno video v rychlém režimu stojí 7 960 kreditů. Nástroj nabízí jednorázový balíček kreditů od 9,90 USD nebo předplatné, bezplatná varianta uvedena není.
+Pro koho je PavoAI vhodný a jak začít?
+Hodí se pro rychlé prototypování scén, produktových konceptů, reklamních nápadů či atmosférických smyček. Stačí vybrat formát (video/obrázek), model, kvalitu a poměr stran, napsat prompt a vygenerovat výsledek za kredity, který je nutné ihned stáhnout.
+Kategorie

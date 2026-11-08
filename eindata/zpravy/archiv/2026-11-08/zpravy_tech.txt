@@ -1,3 +1,131 @@
+|T|Konference OpenAlt 2026 očima fotografů|D|08.11.2026 10:30|P|O víkendu 7. a 8. listopadu probíhá 21. ročník tradiční brněnské konference OpenAlt. Desítky přednášek, stánky, otevřený hardware, svobodný software a...|M|Root|X|Fotogalerie: OpenAlt 2026 sobota
+Fotogalerie: OpenAlt 2026 sobota
+Didaktik Gama
+JetKVM Mini
+Nintendo Switch 2: hry
+Ubuntu 26.10 Stonking Stingray
+Nintendo Switch 2: prostředí
+Vzhled pro Debian Trixie
+Konference OpenAlt 2026 očima fotografů
+Asahi Linux a Fallout: New Vegas, spousta oprav v Plasmě
+Linuxové jádro 7.4 bude největší aktualizací v historii projektu
+Didaktik Gama: legendární slovenské Spectrum ze Skalice
+Lua v roli skriptovacího jazyka pro WWW stránky: projekt Fengari
+Souborový systém ZFS: přechod a běžná práce s daty
+Matěj Mudra|E|
+|T|Záchrana pro starší počítače: Windows 11 už zase stačí 8 GB RAM, optimalizace jim vrací svižnost a výkon|D|08.11.2026 09:56|P|Microsoftu se povedlo výrazně snížit náročnost Windows na operační paměť, z které boom umělé inteligence udělal luxusní zboží. Speciálně na starších (...|M|Cnews|X|Jednou z výhrad proti Windows je náročnost na hardware a pomalost na starších či levnějších počítačích. Microsoft na to před rokem zareagoval slibem, že se na zrychlení a zeštíhlení Windows 11 zaměří. Mezi nimi bylo i to, aby Windows potřebovaly méně drahocenné RAM a lépe fungovaly na PC s 8 GB paměti. Microsoft se teď pochlubil výsledky těchto optimalizací a tvrdí, že výkon a použitelnost 8GB počítačů se o hodně zlepšily.
+O různých optimalizacích náročnosti a výkonu Windows 11, které Microsoft prezentoval, už jsme psali minule. Firma teď ale publikovala víc informací speciálně na téma toho, jak zapracovala na tom, aby se daly normálně používat počítače s malou 8GB pamětí, která se teď kvůli AI šílenství zase začala prosazovat jako standard.
+Rychlejší a responzivnější systém Windows má být poznat i na počítačích s 8GB pamětí
+Počítače s 8GB pamětí také mají být responzivnější a svižnější při práci – práce s vyhledáváním, nabídkou Start, otevírání kontextových menu pravým tlačítkem myši, otevírání nástroje snímek obrazovky a Průzkumníka (správce souborů) má být na takovýchto počítačích o 20 % rychlejší – toto zrychlení Microsoft slibuje obecně všem počítačům s aktuální verzí Windows 11 proti o rok starší verzi, o čemž už jsme psali. Nyní v novém blogu k tomu zvlášť potvrzuje, že to platí nejen pro dražší a více obdařená PC, ale i pro levné a starší stroje s 8GB pamětí.
+Podle Microsoftu se má systém lépe chovat, i když je zatížen více různými aplikacemi. Při multitaskingu, kdy máte méně volných prostředků, protože je už konzumují běžící programy, má být výkon na počítačích s 8GB „až o 40 %“ lepší než dřív. Toto Microsoft naměřil v situaci, kdy na PC s 8GB RAM ve Windows 11 otevřete 20 záložek v prohlížeči Edge, Outlook, Průzkumník, 4K video a velké soubory ve Wordu, PowerPointu a Excelu. Aktuální Windows 11 to zvládnou dokončit o 40 % rychleji než verze z ledna letošního roku.
+Důvod, proč je zlepšení větší než ono obecné zrychlení svižnosti systému, by měl tkvět v tom, že nezatížený systém s prázdnou RAM ani předtím neměl nějaké velké problémy, kdežto se zabranou pamětí už jsou předpoklady k tomu, aby systém byl pomalejší a línější, takže je víc prostoru ke zlepšení. Doufejme, že oněch uváděných až 40 % bude opravdu poznat.
+Počítač, na kterém Microsoft měřil v testech různá čísla, s nimiž se jeho blog ohání, je HP OmniBook 3 s procesorem Arm (Qualcomm Snapdragon X Plus s 8 jádry) a samozřejmě 8GB konfigurací RAM. Počítač tedy nemá žádné samostatné GPU, které by vlastní pamětí mohlo využití hlavní RAM trochu ulehčit.
+Zdrojem těchto zlepšení je mimo jiné, že Windows pozastavují služby či procesy běžící na pozadí, zatímco uživatel aktivně pracuje, například různé aktualizace nebo indexování souborů na disku. Toto by mělo být poznat hlavně po nastartování počítače, kdy normálně Windows spouštějí hodně různých služeb, které mohly slabší a starší procesory na čas dost zahltit.
+Microsoft uvádí, že také zapracoval na rychlosti spouštění některých vlastních aplikací. Pokud používáte k prohlížení internetu Edge, měl by prohlížeč startovat až o 33 % rychleji. Microsoft Teams má startovat až o 20 % díky novému (v červnu přidanému) režimu efektivity, který je automaticky zapnutý na počítačích s 8GB pamětí a snižuje spotřebu hardwarových prostředků. Tento režim také může automaticky snižovat rozlišení videa, aby zabránil sekání přenosu a zajistil plynulé audio na slabších počítačích. Zlepšená má také být i responzivnost programu. Microsoft má k optimalizacím v aplikaci Teams zvláštní blog zde.
+Míň zabrané, víc volné paměti
+I samotné využití, respektive spotřeba paměti RAM mají být zlepšené. Má to být dílem optimalizací aplikací a součástí Windows, dílem vylepšenou správou paměti ze strany systému. Měli byste to už sami vidět – nebo přesněji řečeno, viděli byste to, pokud byste teď na počítači měli starou verzi Windows 11 z ledna a mohli ji přímo porovnat s tou novou aktuální (verze 26H2, sestavení 26300.9818).
+Microsoft uvádí, že při testech multi-taskingu na 8GB počítači, kdy běží Windows 11 s prohlížečem Edge a aplikacemi Microsoft 365, je spotřeba paměti (tzv. „potvrzená velikost“) nyní až o 900 MB nižší, než byla v lednu. Aplikace Microsoft 365 neboli postaru Office z toho vykazují snížení spotřeby paměti o zhruba 360 MB (mělo by asi jít o Word, PowerPoint, Excel a Outlook v součtu při současném spuštění všech čtyř).
+Již minule jsme psali o zlepšení v součásti Widgets, která zabírá o 200 MB méně, když není otevřená. K tomu byla vylepšená spotřeba paměti v Edge například tím, že na počítačích s 8GB pamětí se neaktivní záložky uspí už po 15 minutách místo po dvou hodinách (což bylo dřívější chování).
+Podle testů systém opravdu „žere“ méně RAM
+Zdá se, že Microsoft o těchto optimalizacích Windows nekecá, jelikož zlepšení už potvrdily i nějaké testy. Web Windows Central zkoušel Windows 25H2 a aktuální 26H2 na notebooku Acer Swift Air 14 s procesorem Intel Core 5 320 a 8 GB paměti. V zabrané paměti naměřil hned po startu systému poměrně velký rozdíl – 4,1 GB využité a 3,5 GB volné paměti po startu proti 5,3 GB využitým a 2,3 GB volným u rok staré verze systému.
+Nicméně chování bylo lepší i při běhu různých aplikací. S 10 záložkami v Edge, Wordem, Slackem a Spotify byla zabraná paměť 6,6 GB a volná 1018 MB proti 7,0 GB a 563 MB u starší verze systému. Také potvrzená paměť (která zahrnuje i data, která jsou ve stránkovacím souboru na SSD místo v RAM) o dost klesla – z 11,5 GB na jen 9,1 GB.
+Při těžším testu s 20 záložkami v Edge a navíc k předchozím programům ještě Excelem, Průzkumníkem, aplikací Fotografie a GIMPem a Microsoft Store stoupl rozdíl v potvrzené velikosti paměti včetně stránkovacího souboru na 14,7 GB u starších Windows proti jen 9,8 GB u nové verze. Zabraná RAM byla 6,8 GB místo 7,3 GB a volná 764 MB místo 352 MB (zde jsou podobná čísla jako u předchozího méně náročného scénáře, protože víc fyzické RAM počítač už nemá a další otevřené programy navíc jdou na úkor swapování do stránkovacího souboru, které je vidět na velikosti potvrzené paměti). Nová verze Windows díky optimalizacím také měla výrazně menší stránkovací soubor na SSD (celková RAM + stránkovací soubor dosáhly jen 10,4 GB proti až 15,2 GB u verze 25H2).
+Další zlepšení jsou v přípravě
+Microsoft uvádí, že pracuje na dalších optimalizacích, které by měly náročnost Windows 11 dál snížit. Firma chce přepsat některé součásti tak, aby používaly sdílené komponenty, které tak budou v paměti jen jednou a ušetří tím zabranou kapacitu, pokud všechny spustíte najednou. Má jít například o vyhledávání, widgety, aplikace OneDrive a Fotografie. Microsoft také pracuje na tom, aby se různé součásti Windows rychleji spouštěly a také spotřebovávaly méně paměti (vylepšeno by to mělo být u Průzkumníka, Poznámkového bloku, Malování a vyhledávání).
+Změny mají být i v používání komprese paměti, které má být chytřejší a efektivnější. Microsoft také pracuje s výrobci počítačů na optimalizaci ovladačů a a firmwaru, aby si různý hardware nerezervoval více z kapacity paměti, než potřebuje, a s různými externími vývojáři softwaru na optimalizaci jejich aplikací pro Windows. To se údajně už povedlo s aplikací Whatsapp pro Windows, jejíž spotřeba paměti prý byla snížena o dvojciferná procenta.
+Toto vše samozřejmě neznamená, že už nebude třeba mít víc paměti a 8 GB bude stačit všem a na všechno. Nadále jde o kompromisní specifikaci, jejíž trvalé používání u nových počítačů je dost nešťastné a zkrátí nejspíš jejich dlouhodobou využitelnost (a to platí i u slavného MacBooku Neo, jakkoli se Apple snaží předstírat, že se ho problém netýká a jeho malá kapacita RAM magicky zvládne cokoli). Znamená to však, že pokud máte jen takto malou paměť, bude teď váš počítač fungovat líp. Smyslem těchto optimalizací je, aby se taková PC dala používat co nejdéle a pořád zvládla o nejvíc různých využití.
+8 GB RAM je ale bohužel kvůli mánii v sektoru AI a s ním spojeným nedostatkem čipů RAM (a současně také čipů NAND potřebných pro SSD) skutečnost, se kterou se ještě na několik let budeme muset smířit. Je proto víc než dobře, že se Microsoft na optimalizace Windows 11 zaměřil. I proto, že to nepomůže jen novým počítačům, ale i starším sestavám a notebookům, které teď řada lidí bude muset používat déle a déle, jelikož nové počítače se výrazně prodražily.
+Zdroje: Microsoft, Windows Central|E|
+|T|TSMC A14 bude mít 7,5krát vyšší výrobní kapacitu než Intel se 14A|D|08.11.2026 08:50|P|Intel možná dotáhl na TSMC v technologické úrovni svých výrobních procesů, ale s výrobními kapacitami je na tom podstatně hůř.|M|SvětHW|X|Intel možná dotáhl na TSMC v technologické úrovni svých výrobních procesů, ale s výrobními kapacitami je na tom podstatně hůř.
+Souboj o nejpokročilejší výrobní procesy čipů pokračuje a nyní se pozornost upírá i na TSMC A14, nejen Intel 14A, o kterém byla v poslední době řeč hned několikrát. Podle dostupných zpráv by měla společnost zahájit velkosériovou produkci pomocí tohoto 1,4nm procesu v první polovině roku 2028, přičemž ověřovací produkce je plánována už na druhou polovinu roku 2027. Výroba by měla probíhat primárně v továrnách Baoshan Fab 20 a Central Taiwan Science Park Fab 25.
+TSMC by v případě tohoto procesu mělo mít proti Intelu zásadní náskok v jednom velmi důležitém parametru, a to je výrobní kapacita, která by v roce 2028 mohla být až 7,5krát vyšší než u konkurenčního procesu Intel 14A. To je zásadní, protože problémem Intelu už není technologické zaostávání (některé nejmodernější technologie zavedl do výroby dokonce jako první), ale právě neschopnost pomocí nových procesů vyrobit dostatek čipů.
+Proces A14 přinese 2. generaci tranzistorů GAAFET a novou architekturu NanoFlex Pro. To vše by mělo zajistit nárůst hustoty tranzistorů o více než 20 % oproti procesu N2. Pokud jde o výkon, TSMC očekává zvýšení frekvence čipů o 10-15 % při stejné spotřebě. V případě spotřeby by mohl proces A14 při stejném výkonu snížit nároky na energii o 25-30 % oproti N2.
+TSMC plánuje po 8letech poprvé opět zmenšit SRAM buňky. Cílem je dostat velikost z 0,021 µm2 na 0,017 µm2, což by znamenalo nejvyšší hustotu SRAM na světě a technologický náskok před Intelem i Samsungem.|E|
+|T|Kinovi|D|08.11.2026 07:22|P|Jedno API pro generování videa, obrázků a zvuku pomocí AI modelů, placené formou kreditů podle skutečné spotřeby.|M|EJAJ|X|Kinovi
+Jedno API pro generování videa, obrázků a zvuku pomocí AI modelů, placené formou kreditů podle skutečné spotřeby.
+O nástroji
+Kinovi je platforma s API, která sjednocuje přístup k velkému množství AI modelů pro generování videa, obrázků a zvuku – mimo jiné Seedance 2.5, Seedance 2.0, Wan 3.0, Seedream 5.0 Pro, GPT Image 2, Midjourney V8 nebo Nano Banana Pro. Místo integrace jednotlivých modelů a nástrojů (např. ComfyOne grafů) nabízí jedno rozhraní s přehlednými ID modelů a sazbami, takže vývojáři mohou pracovat s více poskytovateli (ByteDance, Alibaba, OpenAI, Midjourney, x-ai, Google) přes jediné API. Platí se formou kreditů podle skutečné spotřeby („pay-as-you-go“), přičemž u konkrétních modelů je uvedena jednotková cena – například Seedance 2.5 vychází na 0,1197 USD za sekundu videa, což je podle srovnání na webu o desítky procent levnější než u konkurenčního poskytovatele Fal.ai. Stejný kreditní zůstatek lze využít i ve studiové verzi nástroje, pokud uživatel nechce pracovat přímo přes API. Služba je určena především vývojářům a technickým uživatelům, kteří chtějí AI modely integrovat do vlastních aplikací bez nutnosti psát propojovací kód pro každý model zvlášť. Dokumentace obsahuje příklady použití a k dispozici je i přístup přes Discord a GitHub.
+Klíčové vlastnosti
+- Jedno API pro video, obrázky i zvuk od více poskytovatelů
+- Přístup k modelům Seedance 2.5, Wan 3.0, Seedream 5.0 Pro, Midjourney V8 a dalším
+- Platba formou kreditů podle skutečné spotřeby (pay-as-you-go)
+- Studiové rozhraní se stejným kreditem jako API
+Časté dotazy
+Co přesně Kinovi umí?
+Kinovi nabízí jedno API, přes které lze volat desítky AI modelů pro generování videa, obrázků a zvuku (např. Seedance 2.5, Wan 3.0, Midjourney V8, GPT Image 2) bez nutnosti integrovat každého poskytovatele zvlášť.
+Kolik Kinovi stojí?
+Platí se formou kreditů podle skutečné spotřeby – například Seedance 2.5 vychází na 0,1197 USD za sekundu videa, což je podle srovnání na webu o desítky procent levnější než u Fal.ai.
+Pro koho je Kinovi určené a jak začít?
+Služba je určena hlavně vývojářům a technickým uživatelům, kteří chtějí AI modely integrovat do vlastních aplikací; stačí se zaregistrovat přes dashboard a použít dokumentaci s příklady, případně využít podporu na Discordu a GitHubu.
+Kategorie|E|
+|T|PavoAI|D|08.11.2026 07:22|P|Generátor AI videí a obrázků z textového zadání s modely Seedance 2.0, Wan 2.7, Nano Banana 2 a Seedream 4.|M|EJAJ|X|PavoAI
+Generátor AI videí a obrázků z textového zadání s modely Seedance 2.0, Wan 2.7, Nano Banana 2 a Seedream 4.
+O nástroji
+PavoAI je webový nástroj pro tvorbu krátkých videí a obrázků z textového promptu. Pro video nabízí modely Seedance 2.0 a Wan 2.7 s délkou klipu od 5 do 15 sekund, poměrem stran 16:9, 9:16 nebo 1:1 a kvalitou 720p či 1080p. Pro obrázky jsou k dispozici modely Nano Banana 2 (kvalita 1K, 2K nebo 4K) a Seedream 4 s nastavením poměru stran a kvality. Generování funguje na principu kreditů, jejichž počet se odvíjí od zvoleného modelu, délky a kvality výstupu – podle dostupných informací stojí například jedno video v rychlém režimu 7 960 kreditů. Bezplatná varianta není uvedena, nástroj nabízí jednorázový nákup kreditového balíčku od 9,90 USD nebo předplatné. Hotové výstupy je potřeba stáhnout ihned, protože výsledky hosta jsou dostupné pouze na dané stránce a doručení e-mailem je dočasně nedostupné. Rozhraní je v angličtině a informace o API ani open-source řešení nejsou k dispozici. Nástroj je určen pro rychlé prototypování scén, produktových konceptů, reklamních nápadů či atmosférických smyček, které si uživatel následně může stáhnout a dopracovat v jiných editačních nástrojích.
+Klíčové vlastnosti
+- Text-to-video modely Seedance 2.0 a Wan 2.7 (5–15 s)
+- Text-to-image modely Nano Banana 2 a Seedream 4 (až 4K)
+- Volba poměru stran 16:9, 9:16 nebo 1:1
+- Kvalita výstupu 720p nebo 1080p u videí
+Časté dotazy
+Co PavoAI umí vygenerovat?
+Z textového promptu vytvoří krátké video (5–15 s) pomocí modelů Seedance 2.0 nebo Wan 2.7, případně obrázek pomocí Nano Banana 2 nebo Seedream 4 s volbou poměru stran a kvality.
+Kolik PavoAI stojí?
+Generování funguje na kreditech, jejichž spotřeba závisí na modelu, délce a kvalitě – například jedno video v rychlém režimu stojí 7 960 kreditů. Nástroj nabízí jednorázový balíček kreditů od 9,90 USD nebo předplatné, bezplatná varianta uvedena není.
+Pro koho je PavoAI vhodný a jak začít?
+Hodí se pro rychlé prototypování scén, produktových konceptů, reklamních nápadů či atmosférických smyček. Stačí vybrat formát (video/obrázek), model, kvalitu a poměr stran, napsat prompt a vygenerovat výsledek za kredity, který je nutné ihned stáhnout.
+Kategorie|E|
+|T|Pavo AI Video|D|08.11.2026 07:22|P|Generátor AI meme videí z vašich fotek a trendy šablon – vytvářejte klipy pro TikTok, Reels nebo Shorts přímo v prohlížeči.|M|EJAJ|X|Pavo AI Video
+Generátor AI meme videí z vašich fotek a trendy šablon – vytvářejte klipy pro TikTok, Reels nebo Shorts přímo v prohlížeči.
+O nástroji
+Pavo AI Video je generátor meme videí postavený na trendy video šablonách. Uživatel si vybere ukázkový klip (např. taneční výzvu, hudební moment nebo komediální scénu), nahraje vlastní fotku – svou, zvířete nebo produktu – a nástroj do připraveného promptu dosadí nový motiv. Výsledkem jsou krátká videa určená pro TikTok, Instagram Reels nebo YouTube Shorts. Celý proces probíhá přímo v prohlížeči: stačí zvolit šablonu tlačítkem „Recreate“, nahrát jasnou fotku subjektu a podle potřeby upravit prompt (jiný pohyb, úhel kamery nebo prostředí). Před samotným generováním nástroj zobrazí odhad ceny podle zvoleného modelu, délky a rozlišení (k dispozici 480p, 720p a 1080p); u nepovedených renderů se kredity vracejí zpět. Katalog nabízí desítky hotových šablon, například taneční nebo komediální scény, a umožňuje personalizovat videa pro přátele, páry, rodinu, domácí mazlíčky nebo sportovní highlighty. Podle zjištěných informací je k dispozici bezplatná varianta a ceny začínají přibližně od 9,90 USD; rozhraní je v angličtině, API ani open source řešení zmíněno není.
+Klíčové vlastnosti
+- Desítky hotových video šablon (tanec, komedie, hudba)
+- Nahrání vlastní fotky osoby, zvířete nebo produktu
+- Úprava promptu pro jiný pohyb, úhel kamery či prostředí
+- Výběr rozlišení 480p, 720p nebo 1080p
+Časté dotazy
+Co Pavo AI Video umí vytvořit?
+Generuje krátká meme videa podle trendy šablon – stačí vybrat ukázkový klip, nahrát vlastní fotku a nástroj do připraveného promptu dosadí nový motiv. Výsledkem jsou klipy pro TikTok, Instagram Reels nebo YouTube Shorts.
+Kolik Pavo AI Video stojí?
+K dispozici je bezplatná varianta a placené plány začínají přibližně od 9,90 USD. Cena se odvíjí od zvoleného modelu, délky a rozlišení videa (480p, 720p, 1080p), přičemž odhad ceny vidíte ještě před generováním.
+Jak začít a pro koho je nástroj určený?
+Stačí v galerii vybrat šablonu tlačítkem „Recreate“, nahrát jasnou fotku subjektu (osoby, zvířete nebo produktu) a případně upravit prompt. Hodí se pro kohokoli, kdo chce rychle vytvořit virální meme video bez střihačských dovedností.
+Kategorie|E|
+|T|Image Combiner|D|08.11.2026 07:22|P|AI nástroj spojí dva nahrané obrázky do jednoho se sladěným osvětlením a perspektivou – pro osoby, produkty i zvířata.|M|EJAJ|X|Image Combiner
+AI nástroj spojí dva nahrané obrázky do jednoho se sladěným osvětlením a perspektivou – pro osoby, produkty i zvířata.
+O nástroji
+Image Combiner umožňuje nahrát dva samostatné obrázky (JPG, PNG nebo WebP) a pomocí AI je spojit do jedné přirozeně vypadající scény. Uživatel buď popíše, jak má výsledek vypadat, nebo zvolí hotovou šablonu, například Couple Photo (spojení dvou portrétů do společné fotky), Product in Scene (vložení produktu do lifestylové scény) nebo You + Your Pet (společná fotka s domácím mazlíčkem). Výsledný obrázek je hotový během 10–60 sekund, přičemž AI se snaží zachovat věrnost obličejů a sladit osvětlení, perspektivu i barvy obou vstupních snímků. Nástroj nabízí při registraci 3 kredity zdarma a výsledné obrázky jsou bez vodoznaku. Mezi další scénáře použití patří také cestovatelské fotky (umístění osoby do scenérie památky) nebo kreativní přenos stylu mezi obrázky. Pokud se generování nepodaří, kredit je podle webu automaticky vrácen.
+Klíčové vlastnosti
+- Spojí dva nahrané obrázky (JPG, PNG, WebP) do jedné scény
+- Hotové šablony: Couple Photo, Product in Scene, You + Your Pet
+- Výsledek za 10–60 sekund
+- Zachovává věrnost obličejů a sladí osvětlení i perspektivu
+Časté dotazy
+Co přesně Image Combiner umí?
+Spojí dva samostatně nahrané obrázky do jedné přirozené scény – podle vlastního popisu nebo hotové šablony jako Couple Photo, Product in Scene či You + Your Pet. AI přitom sladí osvětlení, perspektivu a barvy obou snímků a zachová podobu obličejů.
+Kolik to stojí a je nástroj zdarma?
+Při registraci dostanete 3 kredity zdarma bez nutnosti platební karty, výsledné obrázky jsou bez vodoznaku. Pokud se generování nepovede, kredit se automaticky vrátí.
+Jak začít a pro koho je nástroj určený?
+Stačí nahrát dva obrázky, popsat požadovaný výsledek nebo zvolit šablonu a do minuty stáhnout hotovou kombinaci. Hodí se pro páry, chovatele zvířat, e-shopy i cestovatele, kteří chtějí vložit sebe do fotky památky.
+Kategorie|E|
+|T|RemoveBGNoise|D|08.11.2026 07:22|P|Online AI nástroj pro odstranění hluku z pozadí v audio a video nahrávkách – čistí hum, vítr, dopravní ruch i šum hlasu.|M|EJAJ|X|RemoveBGNoise
+Online AI nástroj pro odstranění hluku z pozadí v audio a video nahrávkách – čistí hum, vítr, dopravní ruch i šum hlasu.
+O nástroji
+RemoveBGNoise je bezplatný online nástroj, který pomocí AI modelu rozpoznává lidský hlas a odstraňuje veškerý ostatní zvuk na pozadí – dopravní ruch, vítr, elektrický hum, syčení, hluk ventilátoru či šum v místnosti. Funguje přímo v prohlížeči bez nutnosti instalace softwaru, stačí nahrát soubor, zvolit sílu čištění (Balanced nebo Max) a porovnat výsledek s originálem před stažením. Podporuje audio formáty MP3, WAV, M4A, AAC, FLAC, OGG, OPUS a video formáty MP4, MOV, WEBM, MKV, AVI, M4V. U videa se mění pouze zvuková stopa, obraz zůstává beze změny a bez nového kódování. Bezplatný plán nabízí 15 minut zpracování, soubory do 10 minut délky a maximálně 200 MB. Zpracování trvá přibližně 30 sekund na tříminutový klip, výsledky neobsahují vodoznak a nahrané soubory jsou automaticky smazány po 24 hodinách, přičemž nejsou používány k trénování AI. Nástroj je určen pro podcasty, vlogy, rozhovory, nahrávky schůzek v Zoomu či Teams a další mluvené nahrávky, u kterých potřebuje uživatel odstranit rušivé zvuky pozadí a zachovat čistý hlas.
+Klíčové vlastnosti
+- Rozpoznání lidského hlasu a odstranění ostatního zvuku
+- Volba síly čištění Balanced nebo Max
+- Podpora audio formátů MP3, WAV, M4A, AAC, FLAC, OGG, OPUS
+- Podpora video formátů MP4, MOV, WEBM, MKV, AVI, M4V
+Časté dotazy
+Jaký hluk dokáže RemoveBGNoise odstranit?
+Odstraňuje dopravní ruch, vítr, elektrický hum, syčení, hluk ventilátoru i šum v místnosti, zatímco zachovává lidský hlas. U videa se mění pouze zvuková stopa, obraz zůstává beze změny.
+Kolik RemoveBGNoise stojí?
+Nástroj nabízí bezplatný plán s 15 minutami zpracování, soubory do 10 minut délky a 200 MB, bez vodoznaku.
+Pro koho je nástroj určený a jak začít?
+Hodí se pro podcasty, vlogy, rozhovory i nahrávky ze Zoomu nebo Teams – stačí nahrát soubor do prohlížeče, zvolit sílu čištění Balanced nebo Max a stáhnout výsledek, bez instalace software.
+Kategorie|E|
 |T|Asahi Linux a Fallout: New Vegas, spousta oprav v Plasmě|D|08.11.2026 00:00|P|Řada oprav pro zvukový subsystém jádra ve verzi 7.4 řeší problémy spousty notebooků se sluchátky či mikrofony, na Apple M1 a M2 poběží více her, budou...|M|Root|X|Týden v KDE: Plasma 6.9 s dalšími novinkami
 Plasma 6.9 dostala tento týden nový plugin pro wallpaper dne, který používá jako pozadí plochy obrázky od Davida Revoye. Nově lze také vybrat umístění, kde se objeví OSD popupy a vyvolá-li uživatel systemd-ask-password --no-tty u systemd 257 či novějšího, objeví se mu hezký KDE dialog pro zadání hesla. Integrace prohlížeče do Plasmy nově podporuje také prohlížeč Glide.
 To vše jsou novinky Plasmy 6.9 v tomto týdnu, vše ostatní jsou buď vylepšení UI, nebo opravy chyb. Hlásí opět Nate Graham a John Veness.

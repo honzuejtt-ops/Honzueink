@@ -1,0 +1,17 @@
+Image Combiner
+AI nástroj spojí dva nahrané obrázky do jednoho se sladěným osvětlením a perspektivou – pro osoby, produkty i zvířata.
+O nástroji
+Image Combiner umožňuje nahrát dva samostatné obrázky (JPG, PNG nebo WebP) a pomocí AI je spojit do jedné přirozeně vypadající scény. Uživatel buď popíše, jak má výsledek vypadat, nebo zvolí hotovou šablonu, například Couple Photo (spojení dvou portrétů do společné fotky), Product in Scene (vložení produktu do lifestylové scény) nebo You + Your Pet (společná fotka s domácím mazlíčkem). Výsledný obrázek je hotový během 10–60 sekund, přičemž AI se snaží zachovat věrnost obličejů a sladit osvětlení, perspektivu i barvy obou vstupních snímků. Nástroj nabízí při registraci 3 kredity zdarma a výsledné obrázky jsou bez vodoznaku. Mezi další scénáře použití patří také cestovatelské fotky (umístění osoby do scenérie památky) nebo kreativní přenos stylu mezi obrázky. Pokud se generování nepodaří, kredit je podle webu automaticky vrácen.
+Klíčové vlastnosti
+- Spojí dva nahrané obrázky (JPG, PNG, WebP) do jedné scény
+- Hotové šablony: Couple Photo, Product in Scene, You + Your Pet
+- Výsledek za 10–60 sekund
+- Zachovává věrnost obličejů a sladí osvětlení i perspektivu
+Časté dotazy
+Co přesně Image Combiner umí?
+Spojí dva samostatně nahrané obrázky do jedné přirozené scény – podle vlastního popisu nebo hotové šablony jako Couple Photo, Product in Scene či You + Your Pet. AI přitom sladí osvětlení, perspektivu a barvy obou snímků a zachová podobu obličejů.
+Kolik to stojí a je nástroj zdarma?
+Při registraci dostanete 3 kredity zdarma bez nutnosti platební karty, výsledné obrázky jsou bez vodoznaku. Pokud se generování nepovede, kredit se automaticky vrátí.
+Jak začít a pro koho je nástroj určený?
+Stačí nahrát dva obrázky, popsat požadovaný výsledek nebo zvolit šablonu a do minuty stáhnout hotovou kombinaci. Hodí se pro páry, chovatele zvířat, e-shopy i cestovatele, kteří chtějí vložit sebe do fotky památky.
+Kategorie

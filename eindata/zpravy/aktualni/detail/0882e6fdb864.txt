@@ -1,0 +1,17 @@
+MicelAI
+MycelAI je online audit webu, který prověří jeho připravenost pro vyhledávače i AI asistenty jako ChatGPT či Perplexity a doporučí konkrétní kroky k nápravě.
+O nástroji
+MycelAI provede automatizovaný audit webu – stačí zadat adresu webu a e-mail, nástroj projde vzorek až pěti veřejných stránek a vyhodnotí jejich srozumitelnost pro vyhledávače i AI. Výsledkem je skóre „síly podhoubí“ od 0 do 10, přehled problémů (chybějící titulky, opakující se popisy, slabá navigace, nefunkční stránky, viditelnost ve vyhledávání či důvěryhodnost webu) a doporučení, co opravit jako první. Odkaz na hotový audit přijde e-mailem. Základní audit je zdarma a zahrnuje jednostránkový PDF souhrn se skóre a třemi hlavními riziky, bez nutnosti zadávat platební kartu. Kdo chce jít do hloubky, může dokoupit kompletní GEO balíček za 1 399 Kč včetně DPH, který odemkne hloubkovou analýzu se sedmi soubory návrhů pro programátora, kontrolu přístupnosti pro AI agenty, prověření zdrojů autority a export nefunkčních adres do CSV. Z jedné IP adresy lze spustit nejvýše tři audity za hodinu, platba je jednorázová za jeden audit a nástroj pouze čte veřejně dostupné stránky, žádné úpravy na webu sám neprovádí.
+Klíčové vlastnosti
+- Skóre „síly podhoubí“ od 0 do 10
+- Průzkum vzorku až 5 veřejných stránek
+- Kontrola titulků, popisů a navigace webu
+- Export nefunkčních adres do CSV
+Časté dotazy
+Co MycelAI vlastně zjistí?
+Projde vzorek až 5 veřejných stránek vašeho webu a vyhodnotí jejich srozumitelnost pro vyhledávače i AI – ukáže skóre 0–10, chybějící titulky, slabou navigaci, nefunkční stránky i důvěryhodnost webu a doporučí, co opravit jako první.
+Kolik analýza stojí?
+Základní audit s jednostránkovým PDF souhrnem je zdarma bez nutnosti zadávat kartu. Kompletní GEO balíček s hloubkovou analýzou stojí 1 399 Kč včetně DPH jako jednorázová platba za jeden audit.
+Jak audit spustím a změní něco na mém webu?
+Stačí zadat adresu webu a e-mail, odkaz na hotový audit pak přijde e-mailem. Nástroj pouze čte veřejně dostupné stránky a žádné úpravy na webu sám neprovádí – opravy děláte vy nebo váš správce webu.
+Kategorie

@@ -1,0 +1,17 @@
+Parťák na web
+Český AI chatbot pro firemní web a e-shop, který odpovídá jen z podkladů firmy, ukáže místo na stránce a umí i sám kliknout nebo vyplnit formulář.
+O nástroji
+Parťák na web je český AI asistent (chatbot) od firmy AI Ajťák s.r.o., určený pro firemní weby a e-shopy. Odpovídá návštěvníkům výhradně z podkladů dané firmy, u odpovědi ukáže zdroj (např. konkrétní položku v ceníku) a dokáže návštěvníkovi rovnou zvýraznit místo na stránce. Díky funkci Web Control umí také sám kliknout, posunout stránku nebo vyplnit kontaktní formulář – odeslání formuláře nebo vložení do košíku ale vždy potvrzuje sám návštěvník. Nástroj nabízí čtyři tarify: bezplatný Start (25 konverzací měsíčně, 100 stránek ve znalostní bázi, 1 osoba v administraci, 30denní historie rozhovorů), dále placené tarify Asistent (790 Kč/měsíc, 500 konverzací, 60 minut hlasových hovorů), Růst (1 590 Kč/měsíc, 1 200 konverzací, 120 minut hlasových hovorů, základní analytika co lidé hledají a kde odcházejí) a Optimalizace (2 990 Kč/měsíc, 2 500 konverzací, 300 minut hlasových hovorů, pokročilá analytika včetně cest návštěvníků a kohort). Vyšší tarify přidávají i obchodní cíle, pravidelné reporty a návrhy na vylepšení webu. Vyzkoušení je možné bez registrace a bez karty – stačí zadat adresu webu a Parťák si jej sám přečte a připraví ukázku odpovědí přímo na něm. Rozhraní nástroje je v češtině a je určeno primárně pro český trh.
+Klíčové vlastnosti
+- Odpovídá výhradně z podkladů firmy bez halucinací
+- U odpovědi ukáže zdroj a zvýrazní místo na stránce
+- Web Control – sám klikne, posune stránku nebo vyplní formulář
+- Odeslání formuláře nebo vložení do košíku potvrzuje návštěvník
+Časté dotazy
+Co přesně Parťák na web umí?
+Je to český AI chatbot, který odpovídá návštěvníkům webu jen z podkladů firmy, u odpovědi ukáže zdroj a zvýrazní místo na stránce. Pomocí Web Control dokáže i sám kliknout, posunout stránku nebo vyplnit kontaktní formulář, odeslání ale vždy potvrzuje návštěvník.
+Kolik Parťák na web stojí?
+Tarif Start je zdarma (25 konverzací měsíčně, 100 stránek ve znalostní bázi). Placené tarify začínají na 790 Kč/měsíc za 500 konverzací, dále 1 590 Kč/měsíc a 2 990 Kč/měsíc s vyšším počtem konverzací a pokročilejší analytikou.
+Jak Parťáka na web vyzkouším?
+Stačí na webu partaknaweb.cz zadat adresu vlastního webu bez registrace a bez karty – Parťák si stránky sám přečte a během pár minut připraví ukázku odpovědí přímo na nich.
+Kategorie

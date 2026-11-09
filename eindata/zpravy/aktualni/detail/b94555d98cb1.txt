@@ -1,0 +1,17 @@
+objekto.io
+Objekto je AI nástroj pro 3D tisk: popíšete předmět textem nebo fotkou, AI navrhne 3D model po dílech a firma ho vyrobí a doručí.
+O nástroji
+Objekto je AI nástroj pro 3D tisk: popíšete předmět (pár slovy, fotkou nebo náčrtem), AI navrhne 3D model díl po dílu, ověří u každého dílu tisknutelnost, zobrazí rozložený pohled a návod k sestavení, a objekt pak vyrobí průmyslová 3D tisková dílna a doručí jej zákazníkovi. K dispozici jsou materiály jako PETG, PA12 (SLS i MJF), pryskyřice SLA nebo mosaz. Registrace je zdarma a bez platební karty – nový uživatel dostane 2 500 kreditů, což podle webu stačí na vytvoření prvního objektu o 2 až 4 dílech. Po vyčerpání startovních kreditů se další výroba platí, ceny se pohybují v jednotkách až desítkách eur za kus (např. hračka autíčko za 11,39 € při objednávce 10 kusů, liška jako figurka za 7,19 €). Doručení je aktuálně uvedeno jen pro Francii.
+Klíčové vlastnosti
+- Návrh 3D modelu z textu, fotky nebo náčrtu
+- Rozdělení velkých objektů na díly s tiskovými spoji
+- Kontrola tisknutelnosti (tloušťka stěny, rozměry, otvory)
+- Rozložený pohled a návod k sestavení v PDF
+Časté dotazy
+Co přesně Objekto umí?
+Podle popisu předmětu (text, fotka nebo náčrt) AI navrhne 3D model rozdělený na díly, ověří u každého dílu tisknutelnost, zobrazí rozložený pohled s návodem na sestavení a hotový objekt vyrobí a doručí průmyslová 3D tisková dílna.
+Kolik to stojí?
+Registrace je zdarma bez platební karty a nový uživatel dostane 2 500 kreditů, které stačí na první objekt o 2 až 4 dílech. Další výroba se pak platí v jednotkách až desítkách eur za kus, např. autíčko za 11,39 € při objednávce 10 kusů.
+Pro koho je Objekto vhodné a jak začít?
+Je pro kohokoli, kdo chce vyrobit vlastní předmět bez znalosti 3D modelování – stačí napsat pár slov, přidat fotku nebo náčrt a nechat AI navrhnout díly. Doručení je aktuálně uvedeno jen pro Francii.
+Kategorie

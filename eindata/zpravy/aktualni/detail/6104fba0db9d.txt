@@ -1,0 +1,17 @@
+Socialfy
+Česká aplikace, která z mobilního videa automaticky vystřihne hotový reel s titulky, grafikou a popiskem. Hodí se pro realitní makléře i firmy.
+O nástroji
+Socialfy je česká webová aplikace pro automatický střih videí na reely. Po nahrání videa z mobilu nástroj vystřihne pauzy a přeřeknutí, rozdělí delší záznam na jednotlivé reely, přidá titulky, pohyblivou grafiku, náhledový obrázek a napíše popisek s hashtagy. Styl střihu lze upravovat obyčejnou větou (např. tempo, velikost titulků, závěrečnou výzvu) a nástroj si nastavení pamatuje pro další videa. Hotové video jde publikovat jedním kliknutím na YouTube a LinkedIn, případně naplánovat v kalendáři; podpora Instagramu a Facebooku se připravuje. Střih obvykle trvá 5–10 minut od nahrání videa. Služba nabízí 7 dní zkušební verze zdarma s možností zpracovat až 5 videí, bez nutnosti stříhat či natáčet profesionálně. Placené tarify začínají na 990 Kč měsíčně + DPH za 7 reelů (tarif Start), přes 1 990 Kč měsíčně za 20 reelů (Profi) až po 3 490 Kč měsíčně za 50 reelů (Max), s možností roční platby se dvěma měsíci zdarma. Prvních 10 klientů má první měsíc za poloviční cenu. Provozovatelem je firma Marketing Reality s.r.o.
+Klíčové vlastnosti
+- Automatické vystřihnutí pauz a přeřeknutí
+- Rozdělení dlouhého záznamu na více reelů
+- Titulky a pohyblivá grafika jedním kliknutím
+- Popisek s hashtagy a náhledový obrázek
+Časté dotazy
+Co přesně Socialfy dělá?
+Z videa natočeného na mobil vytvoří krátké video na výšku – vystřihne pauzy, přeřeknutí a „eee“, přidá titulky, náhledový obrázek a napíše popisek s hashtagy. Video pak zkontrolujete, obyčejnou větou napíšete úpravy a schválíte ho.
+Kolik to stojí a musím umět stříhat?
+Stříhat ani natáčet profesionálně umět nemusíte, stačí mluvit do kamery telefonu. Tarify začínají na 990 Kč měsíčně + DPH za 7 reelů, až po 3 490 Kč měsíčně za 50 reelů, s možností roční platby se dvěma měsíci zdarma.
+Jak začít a jak dlouho střih trvá?
+Stačí nahrát video z mobilu, zbytek udělá aplikace za 5–10 minut, o hotovém videu přijde e‑mail. Vyzkoušet lze 7 dní zdarma, až 5 videí, bez nutnosti zadávat platební kartu.
+Kategorie

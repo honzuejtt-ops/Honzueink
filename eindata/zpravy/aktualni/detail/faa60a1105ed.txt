@@ -1,0 +1,4 @@
+„Cílem je zpravidla kyberšpionáž zaměřená na státní instituce, nevládní organizace i vybrané soukromé společnosti či jednotlivce. Nelze však vyloučit ani pokusy o destruktivní kybernetické útoky,“ varoval NÚKIB.
+Podle úřadu ruští hackeři nespoléhají pouze na technicky pokročilé nástroje, ale často využívají známé zranitelnosti, slabě zabezpečené účty a zařízení nebo nepozornost uživatelů.
+Výslovně zmínili například obyčejný phishing skrze podvržené e-maily či odkazy, který vede k získání přístupových údajů.
+„Dalším způsobem je zneužívání zranitelností v běžně používaném softwaru a zařízeních dostupných z internetu,“ uvedl NÚKIB, podle něhož se útočníci snaží využívat i nově objevené zranitelnosti. Je proto třeba dbát na včasné aktualizace.

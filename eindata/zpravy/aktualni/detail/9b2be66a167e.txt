@@ -1,0 +1,17 @@
+Wondertake
+Wondertake převádí obrázky (JPG, PNG, WebP) na krátká AI videa v MP4 pomocí volitelného textového popisu pohybu.
+O nástroji
+Wondertake je webový nástroj pro přeměnu statických fotografií na krátká videa pomocí AI. Stačí nahrát obrázek ve formátu JPG, JPEG, PNG nebo WebP (do 10 MB, min. 256×256 px), volitelně popsat požadovaný pohyb a nástroj vygeneruje náhled klipu přímo v prohlížeči. Hotové video lze stáhnout jako MP4. Generování vyžaduje přihlášení přes Google, bez něj lze pouze procházet ukázky a ceník. Nástroj funguje na kreditním systému – způsobilí noví uživatelé získají jednorázově 12 kreditů, se kterými lze vytvořit videa s vodoznakem. Pro čistý export bez vodoznaku a v rozlišení 1080p je k dispozici placený tarif Pro za 19 USD měsíčně. Podle dokumentace nástroj zpracovává nahrané obrázky přes úložiště Cloudflare R2 a samotné generování videa probíhá pomocí modelu od Kie.ai.
+Klíčové vlastnosti
+- Nahrání JPG, PNG nebo WebP do 10 MB
+- Volitelný textový popis pohybu
+- Náhled vygenerovaného klipu přímo v prohlížeči
+- Export videa jako MP4 ke stažení
+Časté dotazy
+Co Wondertake umí?
+Převede nahraný obrázek na krátké AI video – stačí popsat požadovaný pohyb (nebo nechat prázdné pro AI pohyb) a nástroj vygeneruje náhled klipu, který lze stáhnout jako MP4.
+Kolik Wondertake stojí?
+Noví způsobilí uživatelé dostanou jednorázově 12 kreditů na videa s vodoznakem zdarma, placený tarif Pro za 19 USD měsíčně pak nabízí export bez vodoznaku v 1080p.
+Jak začít a pro koho je nástroj určený?
+Stačí se přihlásit přes Google účet, nahrát obrázek (JPG/PNG/WebP do 10 MB) a volitelně popsat pohyb – vhodné pro tvůrce krátkých video klipů z fotek bez nutnosti video editace.
+Kategorie

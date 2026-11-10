@@ -1,0 +1,17 @@
+InstaGridMaker
+Nástroj rozdělí jednu fotku na 3 až 18 dlaždic pro Instagram profil ve formátu 3:4, 4:5 nebo 1:1, vše přímo v prohlížeči.
+O nástroji
+InstaGridMaker zpracovává fotky přímo v prohlížeči uživatele – soubory se nikam nenahrávají a zůstávají na zařízení. Nástroj rozdělí jednu fotografii na 1 až 6 řad dlaždic (3 až 18 dílků) s pevnou šířkou tří sloupců, aby se jednotlivé kousky vždy spojily do souvislého obrázku na profilu. Podporované vstupní formáty jsou JPG, PNG, WebP a HEIC, export probíhá jako JPG nebo PNG dlaždice o rozměru 1080 × 1440 px (3:4), případně ve formátu 4:5 nebo 1:1, vše stažitelné jako ZIP s očíslovanými soubory podle pořadí publikování. Základní použití pro jednu fotku je zdarma a bez vodoznaku, bez nutnosti přihlášení. Dávkové zpracování více fotek najednou (3 fotky po přihlášení zdarma, až 50 fotek v placené verzi Pro) a odstranění vlastního vodoznaku z exportů jsou vázány na placené tarify. Součástí je i AI zvětšení fotek s omezeným počtem použití – jedno zdarma po přihlášení, 200 měsíčně v placeném plánu. Nástroj dále obsahuje posuzovací checklist pro správné pořadí publikování příspěvků (první dlaždice vpravo dole, poslední vlevo nahoře) a upozornění na dostatečné rozlišení zdrojové fotky, aby výsledné dlaždice nebyly rozmazané.
+Klíčové vlastnosti
+- Rozdělení fotky na 3 až 18 dlaždic
+- Zpracování přímo v prohlížeči bez nahrávání na server
+- Export ve formátu 3:4, 4:5 nebo 1:1
+- Podpora JPG, PNG, WebP a HEIC
+Časté dotazy
+Co InstaGridMaker přesně umí?
+Rozdělí jednu fotku na 3 až 18 dlaždic pro Instagram profil ve formátu 3:4, 4:5 nebo 1:1, vše zpracované přímo v prohlížeči bez nahrávání na server. Dlaždice si stáhnete jako ZIP s očíslovanými soubory podle pořadí publikování.
+Kolik InstaGridMaker stojí?
+Zpracování jedné fotky je zdarma bez vodoznaku a bez přihlášení. Dávkové zpracování více fotek (3 zdarma po přihlášení, až 50 v Pro) a odstranění vlastního vodoznaku jsou součástí placených plánů.
+Jak začít a pro koho je nástroj vhodný?
+Stačí nahrát fotku přímo do editoru, zvolit počet řad a tvar dlaždic a stáhnout výsledný ZIP – hodí se pro tvůrce obsahu i firmy, které chtějí publikovat propracovanou mřížku na Instagram profilu.
+Kategorie

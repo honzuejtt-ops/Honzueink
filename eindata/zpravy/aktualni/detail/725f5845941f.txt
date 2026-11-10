@@ -1,0 +1,11 @@
+„Každá nová verze modelu Claude přímo urychluje vývoj té následující,“ popisuje princip explozivního vývoje AI Anthropic v dokumentu k plánovanému vstupu na burzu, který zveřejnila americká Komise pro cenné papíry a burzy (SEC).
+Představit si to můžeme jako tým konstruktérů, který si vyrobí schopného pomocníka. Ten mu urychlí stavbu ještě lepšího pomocníka, s nímž zase zvládne složitější práci. Jednotlivá zlepšení se tak mohou postupně násobit.
+Anthropic tento postup označuje jako uzavírání smyčky. Claude už podle firmy pomáhá s experimenty, trénovacími daty, programováním i bezpečnostními prověrkami.
+Nepokořená hranice. Zatím…
+V podání pro SEC firma navíc upozorňuje, že budoucí modely mohou velmi brzy naplnit její vlastní definici „dramaticky zrychleného pokroku přičitatelného AI“. Žádný ze současných systémů zatím za překračující tuto hranici neoznačila.
+Nejde přitom jen o vzdálené sliby. Organizace Model Evaluation and Threat Research (METR) dostala přístup k interním údajům Anthropicu a od 12. srpna do 29. října zkoumala, jak AI ovlivňuje jeho výzkum.
+Ve zprávě zveřejněné na začátku listopadu odhaduje, že schopnosti modelů u dobře vymezených úloh se zlepšují přibližně dvakrát rychleji než v období od března 2024 do října 2025. Zjednodušeně: ve sledovaných testech firma za poslední rok dosáhla pokroku, který jí dříve zabral přibližně dva roky.
+Číslo ale není přesným měřením celého vývoje. METR zdůrazňuje značnou nejistotu a připouští, že skutečné zrychlení může být blíže 1,3násobku i trojnásobku. Většinu současného zrychlení podle něj pravděpodobně způsobuje využívání AI, především jako pomocníka lidských výzkumníků.
+„Nezjistili jsme žádná jasná úzká hrdla,“ píší výzkumníci o překážkách, které by bránily dalšímu zrychlování. Zároveň upozorňují, že některé mohli přehlédnout.
+S veřejnou kontrolou je problém
+Možnost veřejné kontroly má navíc omezení. Anthropic nechal z veřejné zprávy odstranit většinu důkazů, které METR považovalo za nejvýznamnější pro své závěry. Firma argumentovala ochranou důvěrných informací, jež by mohly urychlit vývoj konkurence.

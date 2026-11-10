@@ -1,0 +1,17 @@
+ABrush
+ABrush je plugin do Adobe Photoshopu, který přímo ve vašem pracovním prostoru generuje, upravuje a zvětšuje obrázky pomocí 23+ AI modelů.
+O nástroji
+ABrush je AI nástroj integrovaný přímo do Adobe Photoshopu, určený umělcům a grafikům, kteří nechtějí přepínat mezi Photoshopem a samostatnými AI službami. Plugin umožňuje generovat více variant obrázků v různých modelech (Stable Diffusion, Flux, Gwen Image a dalších), upravovat pouze vybrané části, doladit detaily ručně a ukládat historii generování i přednastavení (presety) pro opakované použití. Mezi hlavní funkce patří podpora ControlNet, IP-Adapter/References, LoRA stylů, historie generování a sdílení presetů, to vše ve třech variantách uživatelského rozhraní. Podle poskytovatele si uživatelé zachovávají vlastnictví všech vygenerovaných obrázků a data nejsou používána k trénování modelů, což má zajistit soukromí pro komerční projekty. Z dostupných informací vyplývá, že nástroj je placený (nejnižší uváděná cena je 1 USD), bezplatná verze není uvedena. Webové stránky nezmiňují API ani to, že by šlo o open source řešení, a rozhraní je v angličtině a ukrajinštině, čeština uvedena není.
+Klíčové vlastnosti
+- Generování ve 23+ AI modelech (Stable Diffusion, Flux, Gwen Image)
+- Úpravy jen vybraných částí obrázku přímo v Photoshopu
+- Podpora ControlNet a IP-Adapter/References
+- LoRA styly pro vlastní vzhled generování
+Časté dotazy
+Co přesně ABrush umí?
+Je to plugin do Adobe Photoshopu, který přímo ve vašem pracovním prostoru generuje, upravuje a zvětšuje obrázky pomocí 23+ AI modelů jako Stable Diffusion, Flux nebo Gwen Image, včetně podpory ControlNet, LoRA stylů a historie generování.
+Kolik ABrush stojí?
+Nástroj je placený, nejnižší uváděná cena je 1 USD, bezplatná verze není na webu zmíněna.
+Pro koho je ABrush určený a jak začít?
+Je určen umělcům a grafikům pracujícím v Adobe Photoshopu, kteří chtějí generovat a upravovat obrázky bez přepínání do samostatných AI nástrojů; stačí si plugin nainstalovat přes Adobe Creative Cloud a vyzkoušet demo.
+Kategorie

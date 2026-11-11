@@ -1,0 +1,17 @@
+ArchVizr
+ArchVizr promění nahraný architektonický výkres (SketchUp, Revit nebo CAD export) ve fotorealistický render zhruba do 20 sekund.
+O nástroji
+ArchVizr je nástroj určený architektům, studentům architektury i menším studiím, který z nahraného podkladu – ručního náčrtu, hidden-line exportu, screenshotu modelu nebo fotografie – vygeneruje fotorealistický render. Podle výrobce zůstává zachována geometrie i kamera původního výkresu a AI přidává pouze materiály a osvětlení. Lze vytvářet exteriérové, interiérové i krajinné renderingy ve stejné paletě, včetně variant fasád (cihla, corten, cedr, beton) nebo různého osvětlení (zlatá hodina, zataženo, noc). Nástroj umí generovat i sadu více pohledů z jednoho uploadu a nabízí volbu rychlejšího nebo kvalitnějšího zpracování včetně upscalu. Webová stránka zmiňuje „první render zdarma“ a dále placené tarify od 14,99 USD měsíčně, bližší podmínky bezplatné verze (limit rozlišení, počet renderů měsíčně) ale v dostupných podkladech uvedeny nejsou. Instalace pluginu ani CAD licence není potřeba, nástroj funguje přímo v prohlížeči. Informace o API přístupu ani o otevřeném zdrojovém kódu nejsou k dispozici. Rozhraní je v angličtině, čeština zmíněna není. Nástroj je určen primárně pro prezentace a diskuzi nad návrhem, nikoliv pro tvorbu prováděcí dokumentace.
+Klíčové vlastnosti
+- Zachovává geometrii i kameru původního výkresu
+- Render z náčrtu, hidden-line exportu nebo screenshotu modelu
+- Varianty fasád (cihla, corten, cedr, beton)
+- Volba osvětlení (zlatá hodina, zataženo, noc)
+Časté dotazy
+Co ArchVizr umí vytvořit z nahraného výkresu?
+Z nahraného náčrtu, hidden-line exportu, screenshotu modelu nebo fotografie vygeneruje fotorealistický render exteriéru, interiéru i krajiny zhruba do 20 sekund, přičemž zachová geometrii i kameru originálu.
+Kolik ArchVizr stojí?
+První render je zdarma, placené tarify začínají od 14,99 USD měsíčně; přesné limity bezplatné verze nejsou zveřejněny.
+Pro koho je nástroj určený a jak začít?
+Je určen architektům, studentům architektury i menším studiím pro prezentace a diskuzi nad návrhem – stačí nahrát výkres přímo na webu bez instalace pluginu nebo CAD licence.
+Kategorie

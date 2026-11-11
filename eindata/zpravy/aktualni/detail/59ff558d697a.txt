@@ -1,0 +1,26 @@
+Dům, kde jste vyrůstali, můžete hledat na leteckých snímcích z 50. let
+Rodnou vesnici, ulici nebo dům z dob dědečků si můžete prohlédnout z výšky. Zeměměřický úřad postupně zveřejňuje na webu letecké snímky z 50. let, kdy republiku poprvé celostátně mapovali z letadla.
+Pražský Prosek a Vysočany si v archivu můžete shora porovnat v roce 1938 a v roce 1953. Tuhle dvojici leteckých snímků uvádí Zeměměřický úřad ve svém katalogu jako ukázku toho, co jeho archiv uchovává. Podobně se dá hledat i obec, ulice nebo dům, kde jste vyrůstali, a obrázek pak poslat rodičům nebo sourozencům.
+Republika vyfocená shora
+Snímky z 50. let nevznikly pro radost – pořizovali je ministerstvo obrany a jeho předchůdci. Šlo o mapy: v letech 1951–1957 se letecké snímkování poprvé ve větším rozsahu použilo pro celostátní mapování republiky v měřítku 1:25 000. Jeden centimetr na takové mapě odpovídá 250 metrům v krajině. Podle vojenských geografů bylo postupně nasnímkováno 97 % území. Šanci najít svůj kraj tak má skoro každý.
+Originály se dodnes uchovávají v původní, nedigitální podobě ve vojenském archivu v Dobrušce. Zeměměřický úřad je postupně skenuje. Podle úřadu jde celkem zhruba o 770 000 snímků. Nejstarší jsou z roku 1936, nejmladší z roku 2002. Zpřístupňují se podle toho, jak skenování pokračuje. Ne každá obec a ne každý rok proto musí být online hned.
+Hledání v aplikaci Archiv
+Snímky se prohlížejí ve webové aplikaci Archiv na stránkách Zeměměřického úřadu. Nic se neinstaluje, stačí obyčejný internetový prohlížeč. Aplikace ale ukáže jen snímky, které už úřad naskenoval a zveřejnil, takže vaše obec nebo hledaný rok tam zatím být nemusí.
+Jak se v ní hledá, popsal úřad na odborné prezentaci v roce 2020. Vybírá se rok snímkování a mapa ukáže středy snímků nad zadaným místem nebo oblastí. Střed snímku je zjednodušeně bod, nad kterým letadlo fotku pořídilo. Jako podkladovou mapu lze zvolit dnešní leteckou mapu republiky, nebo archivní. Dnešní letecká mapa v podkladu pomůže trefit správné místo, třeba podle kostela nebo návsi. Aplikace se od té doby mohla v detailech změnit, takže podoba obrazovky nemusí přesně sedět.
+Když vaše obec v archivu ještě není
+Pokud snímek z vašeho místa zatím zveřejněný není, dá se objednat. Dosud nepublikované snímky úřad skenuje na zakázku podle lokality a roku a za poplatek. Objednávky přijímá e-mailem na adrese zu-obchod@cuzk.gov.cz. Do zprávy se hodí napsat obec i rok, o který máte zájem, protože úřad skenuje právě podle lokality a roku. Na cenu se vyplatí zeptat předem.
+Letecká mapa vytvořená pro soupis znečištěných míst
+Kromě jednotlivých snímků existuje i souvislá letecká mapa celé republiky z 50. let. Odborně se jí říká historická ortofotomapa, tedy mapa složená z leteckých snímků. Vznikla ze snímků prvního plošného celostátního leteckého snímkování z 50. let pro agenturu životního prostředí CENIA.
+💡 Zajímavost: Mapy stabilního katastru se kreslily v měřítku 1:2880, takže jeden centimetr na mapě odpovídá necelým 29 metrům v krajině.
+Ani ona nevznikla kvůli nostalgii. Byla podkladem pro celostátní soupis znečištěných míst. Agentura ji podle svých údajů nabízí k volnému použití, jen je třeba uvést autory (licence CC BY 4.0).
+Ještě starší pohled: mapy pro císaře
+Aplikace Archiv ukrývá i mnohem starší poklad. Jsou to mapy stabilního katastru, tedy evidence pozemků, kterou založil císařský patent v roce 1817. Archiv uchovává ručně kreslené a kolorované originální mapy všech katastrálních území. K nim vznikly ručně kolorované tisky určené do Vídně, takzvané císařské povinné otisky. Katastrální území je zhruba obec nebo její část, takže svou mapu má prakticky každé místo v zemi.
+Právě tyto otisky jsou na webu úřadu zdarma k prohlížení od října 2006. Dnes je najdete také v aplikaci Archiv, která v listopadu 2020 nahradila starší prohlížeč archivních map.
+Hledání je ideální společná zábava pro víc generací. Starší členové rodiny poznají, kde stál který dům, kudy vedla cesta do školy nebo kde bývalo pole. Mladší zase obslouží počítač a hotový obrázek pošlou dál.
+V jedné aplikaci tak lze najít obec na mapě pro císaře, a pokud už je snímek naskenovaný, i na letecké fotografii z 50. let. Začít můžete svou obcí v aplikaci Archiv. Když tam snímek z 50. let ještě není, úřad ho na objednávku naskenuje.
+Ověřeno z:
+- Zeměměřický úřad — Ústřední archiv zeměměřictví a katastru, aplikace Archiv (platné 10. 11. 2026)
+- Zeměměřický úřad — Katalog produkce 2026
+- ČÚZK — metadata Letecký měřický snímek, Geoportál (14. 9. 2026)
+- CENIA — Historická ortofotomapa 50. let, metadatový záznam (15. 10. 2026)
+- Geografická služba AČR — Vojenský geografický obzor 1/2018

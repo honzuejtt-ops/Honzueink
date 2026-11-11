@@ -1,0 +1,17 @@
+Fluxtail
+Centralizovaná správa logů s MCP, díky níž mohou AI nástroje jako Codex, Claude Code nebo Gemini CLI prohledávat a diagnostikovat logy přímo z chatu.
+O nástroji
+Fluxtail je nástroj pro centralizovanou správu logů, který přes hostovaný MCP server propojuje aplikační logy s AI nástroji (Codex, Claude Code, Gemini CLI nebo VS Code s Copilotem). Umožňuje vyhledávat v logách, zkoumat chybové vzory, porovnávat aktivitu v čase a diagnostikovat chybějící logy či stav přijímačů. Přístup probíhá přes OAuth po schválení k jednomu účtu Fluxtail, navrhované změny se aplikují až po potvrzení a nové zdroje typu S3/ALB se vytváří jako neaktivní. Kromě práce přes AI nástroje nabízí Fluxtail i prohlížečové rozhraní Live Tail pro přímé sledování logů a správu streamů, přijímačů a zdrojů (podporováno je například nastavení AWS ALB logů z S3). Přihlašovací údaje AWS se zadávají pouze v prohlížeči v nastavení, nikdy v rámci MCP požadavku či chatu. Ceník nabízí plán Starter za 19 USD měsíčně s 10 GB uložených logů a 30denní retencí a plán Pro za 49 USD měsíčně s 50 GB logů a 90denní retencí, oba s pevnou cenou bez poplatků za překročení. K dispozici je 14denní zkušební období bez nutnosti zadávat platební kartu.
+Klíčové vlastnosti
+- Vyhledávání v logách přímo z AI chatu přes MCP
+- Diagnostika chybějících logů a stavu přijímačů
+- Porovnání aktivity a chybových vzorů v čase
+- Prohlížečové rozhraní Live Tail pro sledování logů naživo
+Časté dotazy
+Co přesně Fluxtail umí?
+Propojuje aplikační logy s AI nástroji jako Codex, Claude Code, Gemini CLI nebo VS Code s Copilotem přes hostovaný MCP server – umožňuje vyhledávat v logách, zkoumat chybové vzory, porovnávat aktivitu v čase a diagnostikovat chybějící logy či stav přijímačů. Kromě toho nabízí i prohlížečové rozhraní Live Tail pro přímé sledování logů.
+Kolik Fluxtail stojí?
+Plán Starter vyjde na 19 USD měsíčně (10 GB logů, 30denní retence) a plán Pro na 49 USD měsíčně (50 GB logů, 90denní retence), obě varianty s pevnou cenou bez poplatků za překročení limitu.
+Jak začít a pro koho je nástroj určený?
+Stačí si založit účet a spustit 14denní zkušební období bez nutnosti zadávat platební kartu, poté připojit svůj AI nástroj (např. Codex CLI) přes OAuth přihlášení. Je určený pro vývojářské týmy, které chtějí diagnostikovat a procházet logy přímo z AI asistenta.
+Kategorie

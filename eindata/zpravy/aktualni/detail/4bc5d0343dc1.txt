@@ -1,0 +1,57 @@
+Změřili jsme rychlost dvou stovek státních webů a mile nás překvapilo, že většina webů úřadů je v pořádku. Problémové weby jsou ale často ty, které lidé potřebují nejvíc: volby, informace o povodních nebo obchodní rejstřík.
+Nejpomalejším státním webem je Regionální informační servis a Vodohospodářský portál. Mezi hříšníky paradoxně patří i Ministerstvo životního prostředí.
+I ve státní správě to ale jde dělat velmi dobře. Takový Senát nebo NÚKIB (Národní úřad pro kybernetickou a informační bezpečnost) mají rychlost webu lepší než leckterý komerční projekt.
+Data ke studii jsou dostupná online, včetně metodiky. V tomto článku se podíváme na ta nejzajímavější čísla.
+Metodika & jak jsme měřili?
+- Data: Chrome UX Report (CrUX) od Googlu, tedy skuteční návštěvníci v prohlížeči Chrome. Období 28 dní kumulativně k 20. 10. 2026.
+- Vzorek: 213 webů státní správy ze seznamu index.csgov.cz. V žebříčku jsou jen weby, které mají v CrUX dost dat a tedy větší návštěvnost..
+- Skóre SPS (0–100) počítáme ze tří metrik Core Web Vitals (LCP, INP, CLS) na mobilu i na počítači. LCP říká, jak rychle se objeví hlavní obsah. INP, jak rychle stránka reaguje na kliknutí. CLS, jestli při načítání neposkakuje. Doporučené maximální hodnoty metrik Core Web Vitals: LCP do 2,5 s, INP do 200 ms, CLS do 0,1. Google hodnotí 75. percentil všech návštěv.
+Státní weby nejsou tak pomalé, ale u některých přijdete o nervy
+Služby státu se stěhují na web, a tak platí, že na úřadech se dnes čím dál méně čeká u přepážky a čím dál víc u počítače nebo na mobilu. Zároveň platí, že právě rychlost webu silně ovlivňuje uživatelskou zkušenost, v tomto případě zkušenost občana s úřadem nebo institucí.
+Pro naši studii jsme použili data od skutečných uživatelů prohlížeče Chrome, která zveřejňuje Google. Z nich počítáme vlastní skóre rychlosti, kde nula je nejhorší a 100 bodů je maximální skóre.
+Více než polovina námi měřených státních webů má skóre 90 a víc, to je ta dobrá zpráva. Ta špatná se schovává na konci žebříčku. Devatenáct webů úřadů má skóre 25 a méně. Pojďme se na některé z pomalých státních webů podívat.
+Volby: palec, který trefí vedle
+Web volby.gov.cz je hlavní volební výstup státu. Se skóre rychlosti 24 ale patří k nejhorším státním webům. Pomalý web to přitom paradoxně není. Hlavní obsah se na mobilu objeví za 1,5 sekundy, přičemž Google doporučuje udržet se do 2,5 sekundy. Problém je s velmi nehezkým vykreslováním a poskakováním obsahu.
+Představte si ale, že je volební den a vy jdete tento web otevřít na telefonu. Při vykreslování stránky se vám web ale několikrát překreslí, layout stránky i odkazy se hýbou. Nejspíš tak palcem trefíte úplně něco jiného, než jste původně chtěli. Protivnou úřednici zde nahradil nehezký efekt zvaný „layout shift“, který dnes umíme změřit metrikou CLS. Ta u tohoto volebního webu vychází mnohonásobně hůř, než jak zní doporučení.
+Vykreslovací galeje jsou docela dobře vidět na obrázku, ale schválně si to někdy zkuste přímo na volebním webu.
+Povodňový portál: čekat dlouho v nepravou chvíli
+Představte si teď jinou situaci. Prší už třetí den. Řeka za domem stoupá a vy v autě nebo ve vlaku zjišťujete, zda je to pro váš dům problém nebo ne.
+Portál voda.gov.cz je státní „předpovědní a informační servis“ pro všechno, co se v Česku týká vody. A taky je to druhý nejpomalejší ze všech námi měřených státních webů.
+Hlavní obsah se na mobilu objeví až za 7,6 sekundy. To je třikrát déle, než je rozumné maximum pro metriku rychlosti načtení (LCP), která toto měří. Z dat a našich testů víme, že u čtvrtiny uživatelů je to ještě výrazně pomalejší, protože v datech ukazujeme 75. percentil.
+A pozor, tohle platí pro běžné dny. Při povodni web otevírají tisíce lidí najednou, na mobilu a na přetížené síti. Načítání pak může trvat i desítky vteřin. To už jsou možná dvě naštvané úřednice během jednoho dne.
+Obchodní rejstřík: klikáte a nic
+Nastíníme teď jinou situaci – před podpisem smlouvy si v práci chcete prověřit nového dodavatele. Otevřete or.justice.cz, ťuknete na výpis a nic se neděje. Ťuknete znovu.
+Obchodní rejstřík se načte rychle, hlavní obsah je na mobilu vidět za 0,7 sekundy. To je super výkon. Na kliknutí ale reaguje pomalu. Metrika INP (čas od kliknutí po vykonání) má na mobilu 303 milisekund, rozumný limit je pak 200. Z pohledu odezvy patří rejstřík mezi deset nejhorších státních webů. Na počítači přitom reaguje bez problémů.
+Podobně je na tom i Evidence skutečných majitelů (esm.justice.cz) a další rejstříky pod webem Justice.cz. To by stálo za trošku optimalizace.
+Nejrychlejší a nejpomalejší weby úřadů
+Pojďme se nyní podívat na ty celkově nejrychlejší a nejpomalejší. Senat.cz je rychlejší než leckeré komerční weby.
+A ten největší hlemýžď mezi weby státní správy? Regionální informační servis (risy.cz).
+Tři nejrychlejší státní weby:
+- Senát (senat.cz) – skóre 99
+- Národní úřad pro kybernetickou a informační bezpečnost (nukib.gov.cz) – skóre 99
+- Přehled očkovacích a odběrových míst (ockoreport.uzis.cz) – skóre 99
+Rychlostí se tyto weby vyrovnají nejlepším e-shopům, respektive je v mnohém předstihnou, což můžete vidět na výsledkové listině loňských PageSpeed.ONE Awards. Nejrychlejší web měl loni skóre rychlosti na úrovni 97 bodů.
+Na druhou stranu – weby úřadů patří ke statičtějším obsahovým webů, bez složitých funkcionalit a bez velkého množství externího měření. Takže jejich rychlost by vždy měla být vysoká, protože je daleko jednodušší toho dosáhnout.
+Tři nejpomalejší státní weby:
+- Regionální informační servis (risy.cz) – skóre 10
+- Vodohospodářský informační portál VODA (voda.gov.cz) – skóre 17
+- Seznamy druhů taxonomických skupin (portal23.nature.cz) – skóre 21
+Vítězové a poražení v kategoriích
+Weby úřadů a státní správy jsme po potřeby studie rozdělili do menších kategorií. Takže známe nejrychlejší a nejpomalejší weby ministerstev, krajů, vysokých škol nebo i politických stran.
+Ministerstvo životního prostředí a jeho uhlíková stopa
+Mezi ministerstvy je poslední Ministerstvo životního prostředí se skóre 25. Na mobilu hlavně poskakuje (CLS 0,29), ale špatná je i celková rychlost a tím pádem i její vliv na životní prostředí.
+Pomalý web není jen otázka trpělivosti. Každý zbytečný kilobajt se musí zpracovat na serveru a přenést a zpracovat v telefonu každého návštěvníka.
+Výsledkem je pro Ministerstvo životního prostředí nelichotivé skóre F v testu vlivu provozu webu na produkci CO₂.
+Web MŽP na každých 10 000 views stránky spotřebuje podle odhadů 88 kWh energie. To je stejně CO2 jako 7 300 plných nabití běžného smartphonu.
+Proč mají státní weby v rychlosti občas tak velké manko?
+Z praxe vím, jak to obvykle chodí. Web se vysoutěží, spustí a pak už ho nikdo nezměří. Jenže úpravy se dále dějí a mají tendenci web zpomalovat. To platí vždy.
+Nemluvě o dalších vlivech moderního webu, jako postupném přidávání komponent třetích stran nebo provozu botů AI služeb. Bez monitoringu o problému často nevědí ani autoři nebo správci webu.
+Druhý důvod jsou mobily. Lidé dnes řeší stát hlavně z telefonu. Weby se ale pořád ladí na monitoru v kanceláři. Na počítači projdou limity Googlu všechna ministerstva. Na mobilu jen devět ze čtrnácti.
+Třetí důvod pak může být nedostatečné řešení zákonem. Zákon o přístupnosti státu ukládá, aby jeho weby byly přístupné. Rychlost ale zatím bohužel neřeší. Jeden z uživatelů sítě X to  vtipně okomentoval následovně:
+„Podle §106 má stát na odpověď 15 dnů, tak se to asi týká i webové odezvy.“
+Jak se to dá změnit?
+Weby Senátu, NÚKIB nebo města Brno ukazují, že i weby státní správy mohou mít co do rychlosti špičkovou kvalitu. A nemusí to být zase tak drahé, stačí se zaměřit na efektivní úpravy správným směrem.
+- Přidat rychlost webu mezi hlavní ukazatele toho, jak dobře web plní své cíle.
+- Měřit weby neustále. Data od skutečných uživatelů dává Google k dispozici zdarma.
+- Opravit poskakování, které mají stránky státní správy společně. Často jde o drobnost: chybějící rozměry u obrázků nebo nerezervované místo pro banner.
+Celý žebříček státních webů najdete na PageSpeed.ONE. Najděte si tam svůj úřad, kraj nebo školu. A napište nám, který státní web zdržuje vás.

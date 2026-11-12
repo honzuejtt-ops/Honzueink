@@ -1,0 +1,17 @@
+Moises App
+Moises je aplikace pro hudebníky, která pomocí AI odděluje vokály a nástroje z libovolné skladby, rozpoznává akordy a tempo a umožňuje vytvářet vlastní remixy nebo cvičná podkladová videa.
+O nástroji
+Nástroj se hodí hudebníkům, kapelám i učitelům hry na nástroj, kteří chtějí nahrávku rozdělit na jednotlivé stopy (vokály, bicí, basa, kytara, klávesy) a pracovat s nimi samostatně – ztišit konkrétní part, zpomalit tempo pro nácvik nebo si vytvořit instrumentální verzi pro zpěv. Po nahrání skladby (z knihovny nebo veřejné URL) AI rozdělí track na 2, 4 nebo 5 stop a zároveň detekuje beat a akordy. Funkce Chord Finder zobrazuje akordy synchronizovaně s přehrávanou skladbou ve třech úrovních obtížnosti (Easy, Medium, Advanced), umí transponovat tóninu i exportovat akordový list jako webový odkaz, iReal Pro nebo MusicXML soubor pro kapelu. Součástí je i Moises Studio pro společnou práci na skladbě v reálném čase přímo v prohlížeči bez nutnosti instalace, a nástroj na nahrávání videa s kvalitním zvukem pro sdílení performance na sociálních sítích. Aplikace je dostupná jako web, desktopová aplikace i mobilní aplikace pro iOS a Android, a byla oceněna např. Apple iPad App of the Year 2024 a Microsoft Store Awards 2025. Rozhraní je pouze v angličtině, nabízí bezplatný start (free plán/free trial u některých funkcí), placené možnosti nejsou v dodaných podkladech blíže specifikovány.
+Klíčové vlastnosti
+- Oddělení skladby na 2 až 27 stop
+- Rozpoznání akordů ve třech úrovních obtížnosti
+- Export akordů do iReal Pro nebo MusicXML
+- Moises Studio pro spolupráci v reálném čase v prohlížeči
+Časté dotazy
+Co přesně Moises umí?
+Pomocí AI rozdělí nahranou skladbu na jednotlivé stopy (vokály, bicí, basa, kytara, klávesy a další), rozpozná akordy i tempo a umožňuje part ztišit, zpomalit nebo transponovat pro nácvik či remix.
+Kolik Moises stojí?
+Aplikace nabízí bezplatný start a free trial u některých funkcí, konkrétní ceny placených plánů nejsou v podkladech uvedeny.
+Pro koho je Moises vhodný a jak začít?
+Hodí se hudebníkům, kapelám i učitelům hry na nástroj – stačí nahrát skladbu z knihovny nebo veřejné URL na webu, v desktopové aplikaci nebo mobilní appce pro iOS a Android.
+Kategorie

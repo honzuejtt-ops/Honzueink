@@ -1,0 +1,17 @@
+Ordemio
+AI agent pro zákaznickou podporu SaaS/tech firem, který se napojí na Intercom, Zendesk, Freshdesk, Slack či Discord a automaticky zodpovídá až 70 % běžných dotazů zákazníků.
+O nástroji
+Ordemio je AI asistent zákaznické podpory určený především SaaS a technologickým firmám. Čerpá znalosti z více než 25 zdrojů (help centrum, web, soubory, Google Docs, YouTube i API dokumentace) a odpovídá ve 95+ jazycích v tónu a stylu firmy. Umí provádět akce přímo v účtu zákazníka přes API či MCP servery, předává konverzaci lidskému agentovi s plným kontextem a lze ho propojit s přes 5000 aplikacemi. Nasazení zvládne i netechnický support tým během zhruba 60 minut bez nutnosti kódování. Nástroj se dá vložit do helpdesku, live chatu, Discordu, Slacku nebo e-mailových tiketů a nabízí i analytiku konverzací s přehledem témat dotazů a denními reporty. Cenový model je postaven na platbě $0,10 za zodpovězený dotaz, k dispozici je 14denní bezplatná zkušební verze. Webová stránka je pouze v angličtině.
+Klíčové vlastnosti
+- Napojení na Intercom, Zendesk, Freshdesk, Slack i Discord
+- Čerpá znalosti z 25+ zdrojů včetně API dokumentace
+- Odpovídá ve 95+ jazycích v tónu firmy
+- Provádí akce v účtu zákazníka přes API či MCP servery
+Časté dotazy
+Co Ordemio umí?
+Jde o AI agenta zákaznické podpory, který se napojí na helpdesky jako Intercom, Zendesk či Freshdesk a automaticky zodpoví až 70 % běžných dotazů zákazníků ve 95+ jazycích, případně předá konverzaci člověku s plným kontextem.
+Kolik Ordemio stojí?
+Platí se $0,10 za každý zodpovězený dotaz, k dispozici je 14denní bezplatná zkušební verze bez nutnosti kódování.
+Pro koho je Ordemio vhodné a jak začít?
+Je určeno především SaaS a technologickým firmám a nasadit ho zvládne i netechnický support tým zhruba za 60 minut bez kódování – stačí spustit 14denní bezplatnou zkušební verzi na webu.
+Kategorie

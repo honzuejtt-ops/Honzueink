@@ -1,0 +1,17 @@
+Kartiv
+Kartiv generuje pomocí AI produktové fotky a videa pro e-shopy (Etsy, eCommerce) a marketingové agentury, bez nutnosti grafických dovedností.
+O nástroji
+Kartiv je určen majitelům online obchodů a marketingovým agenturám, kteří potřebují rychle vytvářet produktové vizuály – fotky i videa ve 3D a animaci – bez fotografa či grafika. Uživatel nahraje fotky a brand assets a nástroj z nich pomocí AI vygeneruje varianty vizuálů; k dispozici je průvodce „Wizard“ pro jednoduché generování bez psaní promptů, nebo pokročilejší „Prompt“ režim pro přesnější kontrolu. Funkce „Immersive Products“ vytváří 3D reprezentace produktů a „Block Editing“ umožňuje upravovat vizuály po částech. Nástroj má také speciální balíčky cílené na prodejce na Etsy. Ceny jsou nastavené podle počtu generování a produktů: Basic plán za $17/měsíc (75 generování, 3 produkty, 2 projekty, pouze stahování obrázků), Pro plán za $41/měsíc (300 generování, 25 produktů, neomezené projekty, stahování obrázků i 50 videí měsíčně) a Enterprise plán s individuální cenou pro agentury (vlastní manažer účtu, prioritní podpora). Na stránce se objevují i alternativní ceny $25/mo a $65/mo, pravděpodobně jako roční varianta. Ke všem placeným plánům je k dispozici 7denní zkušební období.
+Klíčové vlastnosti
+- Generování produktových fotek a videí z nahraných snímků
+- Průvodce „Wizard“ pro generování bez psaní promptů
+- Pokročilý „Prompt“ režim pro přesnou kontrolu výstupu
+- 3D reprezentace produktů přes „Immersive Products“
+Časté dotazy
+Co přesně Kartiv umí vytvořit?
+Z nahraných fotek a brand assets vygeneruje pomocí AI varianty produktových fotek i videí, včetně 3D reprezentací produktů a úprav po částech.
+Kolik Kartiv stojí?
+Basic plán vyjde na $17/měsíc (75 generování, 3 produkty, 2 projekty, jen stahování obrázků), Pro plán na $41/měsíc (300 generování, 25 produktů, neomezené projekty, i 50 videí měsíčně), pro agentury je k dispozici Enterprise plán s individuální cenou.
+Pro koho je Kartiv určený a jak začít?
+Je určen majitelům e-shopů (včetně Etsy) a marketingovým agenturám bez grafika či fotografa – stačí nahrát fotky produktu a brand assets a vyzkoušet nástroj v 7denní zkušební verzi u všech placených plánů.
+Kategorie

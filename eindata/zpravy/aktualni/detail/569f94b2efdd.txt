@@ -1,0 +1,17 @@
+Neighborbrite
+Nástroj pro návrh zahrady podle fotky – stačí nahrát snímek pozemku, vybrat styl a AI vygeneruje vizualizaci úprav. Hodí se majitelům domů, kteří si chtějí zdarma udělat představu o přestavbě zahrady bez najímání zahradního architekta.
+O nástroji
+Neighborbrite funguje na principu nahrání fotky vlastního dvora nebo zahrady, výběru stylu (např. Cottage, Modern, Desert) nebo popisu vlastní představy textem, po čemž AI vygeneruje návrh úpravy prostoru. V nástroji jsou dílčí funkce jako Magic edit (úprava konkrétní části obrázku podle promptu), Add elements (výběr z více než 5000 rostlin, pergol, ohnišť, plotů a vodních prvků), Erase elements (odstranění objektu z fotky kliknutím) nebo Identify plants (rozpoznání rostlin na fotce včetně názvu druhu a množství). Základní použití je zdarma – nahrání fotky, výběr stylu a získání inspirace. Pokročilejší funkce jako popis vlastní vize textem, Magic edit, přidávání/mazání prvků nebo identifikace rostlin jsou označené jako „Pro“, funkce jako tisk ve vysokém rozlišení nebo automatické vylepšení fotky patří do úrovně „Business“ – jde tedy o placené rozšíření nad rámec free verze. Nástroj nabízí i možnost objednat si profesionální návrh od zahradního architekta včetně plánů použitelných pro stavební povolení nebo schválení HOA. Dostupný je jako web i iOS aplikace, komunita čítá přes 850 tisíc registrovaných uživatelů ve 170+ zemích.
+Klíčové vlastnosti
+- Vizualizace zahrady podle nahrané fotky
+- Výběr stylu nebo popis vize textem
+- Magic edit pro úpravu konkrétní části obrázku
+- Přidávání prvků z 5000+ rostlin a doplňků
+Časté dotazy
+Co Neighborbrite umí?
+Stačí nahrát fotku zahrady, vybrat styl (např. Cottage, Modern, Desert) nebo popsat vlastní představu textem a AI vygeneruje návrh úpravy. Pokročilé funkce umožňují upravovat konkrétní části fotky, přidávat či mazat prvky nebo rozpoznávat rostliny.
+Kolik Neighborbrite stojí?
+Základní použití (nahrání fotky, výběr stylu, inspirace) je zdarma. Pokročilé funkce jako Magic edit, přidávání prvků nebo popis vize textem jsou v placené úrovni Pro, tisk ve vysokém rozlišení a automatické vylepšení fotky patří do úrovně Business.
+Pro koho je nástroj vhodný a jak začít?
+Je určen majitelům domů, kteří chtějí zdarma získat představu o přestavbě zahrady bez najímání zahradního architekta. Stačí nahrát fotku pozemku a vybrat styl – nástroj je dostupný přes web i iOS aplikaci bez nutnosti instalace.
+Kategorie

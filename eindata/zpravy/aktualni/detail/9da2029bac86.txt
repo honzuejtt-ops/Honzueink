@@ -1,0 +1,17 @@
+PromptAtlas
+Knihovna pro ukládání, třídění a opakované použití promptů – hodí se lidem, kteří pořád dokola přepisují stejné zadání pro AI a ztrácejí je mezi chaty, poznámkami a Slackem.
+O nástroji
+PromptAtlas řeší konkrétní problém: prompty roztroušené v historii chatů, poznámkových aplikacích a Slack zprávách. Prompty lze třídit do složek podle projektů a doplnit barevnými tagy (jeden prompt tak může patřit pod klienta i pod #seo zároveň). Proměnlivé části promptu se zapisují jako {proměnné}, při použití se doplní a hotový text se zkopíruje jedním kliknutím. Každé uložení automaticky vytváří historii verzí, takže je možné se vrátit k dřívější funkční variantě. Vyhledávání prohledává najednou názvy, text promptů i tagy, a lze skočit rovnou na tag napsáním #seo. Nástroj funguje offline, dá se nainstalovat jako aplikace do telefonu a celou knihovnu lze kdykoliv exportovat nebo importovat ve formátech JSON, Markdown či CSV (včetně historie verzí). Jednotlivé prompty lze sdílet veřejným odkazem nebo zveřejnit v komunitním feedu Explore. Samotný PromptAtlas prompty jen ukládá a spravuje jako text – pro reálné spouštění promptů přímo v nástroji je potřeba vlastní API klíč (OpenAI, Anthropic, Google nebo Mistral), přičemž volání API si uživatel platí přímo u daného poskytovatele zvlášť. Cena je €6,90 měsíčně nebo €69,90 ročně (fakturováno jednorázově na rok), vše v jedné sazbě bez omezených tarifů.
+Klíčové vlastnosti
+- Složky a barevné tagy pro třídění promptů
+- Proměnné v {závorkách} doplnitelné při použití
+- Automatická historie verzí u každého uložení
+- Vyhledávání v názvech, textu i tazích najednou
+Časté dotazy
+Co PromptAtlas přesně umí?
+Ukládá a třídí prompty do složek s tagy, umožňuje proměnné части promptu doplnit při použití a uchovává historii všech předchozích verzí. Prohledává najednou názvy, text i tagy a prompty lze sdílet odkazem nebo exportovat do JSON, Markdown či CSV.
+Kolik PromptAtlas stojí?
+€6,90 měsíčně nebo €69,90 ročně (fakturováno jednorázově na rok), vše v jedné sazbě se všemi funkcemi. Spouštění promptů přímo v nástroji vyžaduje vlastní API klíč, který si uživatel platí zvlášť u poskytovatele.
+Pro koho je nástroj vhodný a jak začít?
+Hodí se lidem, kteří opakovaně přepisují stejné zadání pro AI a ztrácejí prompty mezi chaty, poznámkami a Slackem. Stačí se zaregistrovat, prompty uložit do knihovny a případně připojit vlastní API klíč pro přímé spouštění.
+Kategorie

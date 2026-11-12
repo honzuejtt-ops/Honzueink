@@ -1,0 +1,17 @@
+Kerlig
+Kerlig je nativní AI psací asistent pro macOS, který pomáhá rychleji psát e-maily, Slack zprávy a Jira tickety ve vlastním tónu, opravovat text před odesláním a chatovat s dokumenty přímo z libovolné aplikace přes klávesovou zkratku.
+O nástroji
+Kerlig je aplikace pro Mac (Apple Silicon i Intel, macOS 12+), která integruje AI psaní přímo do systémového workflow – pomocí globální zkratky (⌥+mezerník) lze kdekoli opravit gramatiku, zkrátit text, shrnout obsah, napsat odpověď na Slacku nebo e-mail v požadovaném tónu, aniž by uživatel musel přepínat do prohlížeče a ChatGPT. Umí pracovat s přílohami (dokumenty, obrázky, webové stránky, e-knihy), nabízí vestavěné i vlastní akce/presety, Agentic Mode s podporou MCP serverů pro propojení s Notion, Linear, Slack, GitHub a dalšími nástroji, a tzv. Deep Research pro víceúrokové zkoumání pomocí reasoning modelů. Podporuje přes 350 AI modelů (OpenAI, Anthropic, Google, Groq, OpenRouter) s vlastním API klíčem, včetně lokálních modelů (Apple Foundation Models, Ollama, LM Studio) – zprávy se posílají přímo poskytovatelům a lokálně se ukládají zašifrované na Macu. Nástroj je placený bez předplatného – jde o jednorázový nákup licence plus náklady na tokeny podle použitého modelu. Basic licence (1 Mac) stojí 25 $ (běžně 49 $), Pro licence (2 Macy) 40 $ (běžně 79 $) a Team licence pro 10 Maců s nasazením přes CLI 297 $, vše s 14denní garancí vrácení peněz. Podle výpovědí uživatelů (designéři, podcasteři, vývojáři) oceňují zejména rychlost a to, že nemusí přepínat kontext mezi aplikacemi a prohlížečem. Aplikace je dostupná pouze pro macOS a stránka i rozhraní jsou v angličtině.
+Klíčové vlastnosti
+- Globální zkratka ⌥+mezerník v jakékoli aplikaci
+- Chat s přílohami – dokumenty, obrázky, weby, e-knihy
+- Agentic Mode s MCP propojením na Notion, Linear, Slack, GitHub
+- Deep Research s reasoning modely pro víceúrokové zkoumání
+Časté dotazy
+Co přesně Kerlig umí?
+Kerlig je nativní AI asistent pro Mac, který kdekoli v systému pomocí klávesové zkratky opraví gramatiku, zkrátí nebo shrne text, napíše e-mail či Slack zprávu v požadovaném tónu a umí chatovat i s přílohami jako dokumenty nebo obrázky.
+Kolik Kerlig stojí?
+Jde o jednorázovou licenci bez předplatného: Basic pro 1 Mac za 25 $, Pro pro 2 Macy za 40 $ a Team licence pro 10 Maců za 297 $, k tomu se platí náklady na tokeny podle zvoleného AI modelu. Vše má 14denní garanci vrácení peněz.
+Pro koho je Kerlig vhodný a jak začít?
+Hodí se pro uživatele Maců, kteří často píšou e-maily, Slack zprávy nebo Jira tickety a chtějí to dělat rychleji bez přepínání do prohlížeče – stačí nainstalovat aplikaci (Apple Silicon i Intel, macOS 12+) a propojit ji s vlastním API klíčem k AI modelu.
+Kategorie

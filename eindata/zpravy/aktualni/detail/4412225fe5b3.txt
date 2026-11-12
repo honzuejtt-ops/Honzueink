@@ -1,0 +1,17 @@
+AI Agent
+No-code platforma pro tvorbu AI agentů, kteří za tým automatizují opakující se práci – od výzkumu přes reporty až po vyřizování ticketů – a pracují v jednom workspace společně s chatem, automatizacemi, tabulkami i dokumenty.
+O nástroji
+AI Agent je určen firmám a týmům, které chtějí přenést rutinní práci (sledování metrik, přípravu reportů, auditů, draftů textů, zakládání úkolů) na AI agenty místo ručního přepínání mezi chatem, automatizacemi, tabulkami a dokumenty. Agenti se napojují na existující nástroje (přes integrace typu Slack, Zapier, API a přes 1000+ aplikací), čerpají z firemních dokumentů a dat (tzv. Company Brain propojující např. Shopify, Stripe, Google Analytics, Notion, Gmail) a umí navrhovat tickety, sledovat ukazatele typu churn nebo připravovat týdenní přehledy výkonu bez nutnosti trénování. Nástroj funguje jako vizuální builder, kde lze skládat agenty z instrukcí, modelů, paměti, znalostí, dovedností a napojených nástrojů, případně je seskupovat do „squads“ nebo nastavit jako opakující se „autopiloty“ s plánovaným spouštěním a schvalovacími kroky. Cílí jak na jednotlivce a menší týmy, tak na větší firmy s potřebou centrální správy, SSO a auditní stopy. Ceny začínají na 40 USD/měsíc (plán Start, omezení na 2 projekty, 5 naplánovaných úloh denně, 2 souběžné běhy workflow), týmový plán Teams vychází na 79 USD/uživatel/měsíc a zahrnuje centrální fakturaci, sdílený kontext a SSO; pro firmy je k dispozici Enterprise plán s cenou na dotaz a individuálním rozsahem. Rozhraní je pouze v angličtině.
+Klíčové vlastnosti
+- Vizuální no-code builder pro skládání AI agentů
+- Napojení na 1000+ aplikací přes integrace a API
+- Company Brain čerpající ze Shopify, Stripe, Google Analytics, Notion, Gmail
+- Seskupování agentů do „squads“ a opakující se „autopiloty“
+Časté dotazy
+Co přesně AI Agent umí?
+Vytváří AI agenty, kteří automatizují rutinní práci – sledují metriky jako churn, připravují týdenní reporty, navrhují tickety nebo tvoří drafty textů, a to díky napojení na firemní nástroje a dokumenty.
+Kolik AI Agent stojí?
+Plán Start od 40 USD/měsíc (2 projekty, 5 naplánovaných úloh denně, 2 souběžné běhy workflow), Teams 79 USD/uživatel/měsíc se sdíleným kontextem a SSO, Enterprise na dotaz.
+Pro koho je AI Agent vhodný a jak začít?
+Je určen jednotlivcům, menším týmům i větším firmám, které chtějí přenést opakující se práci na agenty místo ručního přepínání mezi aplikacemi; start je možný rovnou z webu přes tlačítko „Get started“.
+Kategorie

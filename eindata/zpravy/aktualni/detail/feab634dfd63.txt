@@ -1,0 +1,17 @@
+HubSpot Breeze Assistant
+AI asistent zabudovaný přímo do HubSpot CRM, který pomáhá prodejním, marketingovým a servisním týmům rychleji připravovat e-maily, reporty, kampaně a odpovědi na základě dat z CRM.
+O nástroji
+ChatSpot (dnes součást HubSpotu pod názvem Breeze Assistant) je AI asistent integrovaný přímo do platformy HubSpot. Na rozdíl od obecných AI chatbotů čerpá odpovědi z vlastních CRM dat, záznamů o zákaznících a znalostní báze HubSpotu, takže výstupy jsou přizpůsobené konkrétní roli uživatele a aktuální práci na obchodních případech. Nástroj umí pomáhat s přípravou na schůzky a follow-upy, psaním personalizovaného prodejního oslovení, analýzou a predikcí obchodního pipeline, nebo vytvářením návrhů, reportů a stránek z CRM dat. Kromě chatového rozhraní umožňuje bez psaní kódu stavět vlastní AI agenty a automatizované workflow podle popisu v běžném jazyce, které pak lze volat přímo z konverzace. Podle uváděných čísel pomáhá týmům v průměru uzavřít 2,7x více obchodů, vytvořit 4x více leadů a vyřešit o 31 % více servisních tiketů na obsluhujícího pracovníka za měsíc. Nástroj využívá přes 306 000 zákazníků HubSpotu po celém světě. Základní verze Breeze Assistant je dostupná zdarma v rámci HubSpotu, další funkce a nástroje (např. Data Hub) nabízejí 14denní zkušební verzi a placené plány v řádu desítek až tisíců dolarů podle rozsahu a počtu uživatelů. Rozhraní i veškerý obsah je pouze v angličtině.
+Klíčové vlastnosti
+- Čerpá odpovědi přímo z CRM dat a záznamů o zákaznících
+- Příprava na schůzky a automatické follow-upy
+- Psaní personalizovaného prodejního oslovení
+- Analýza a predikce obchodního pipeline
+Časté dotazy
+Co Breeze Assistant umí?
+Je to AI asistent zabudovaný v HubSpot CRM, který pomáhá připravovat e-maily, reporty a kampaně, analyzovat pipeline a bez psaní kódu vytvářet vlastní AI agenty a automatizované workflow podle popisu v běžném jazyce.
+Kolik HubSpot Breeze Assistant stojí?
+Základní verze je dostupná zdarma v rámci HubSpotu, další nástroje jako Data Hub nabízejí 14denní zkušební verzi a placené plány v řádu desítek až tisíců dolarů podle rozsahu a počtu uživatelů.
+Pro koho je nástroj určený a jak začít?
+Je určen prodejním, marketingovým a servisním týmům využívajícím HubSpot CRM, kde pomáhá uzavírat v průměru 2,7x více obchodů a vytvářet 4x více leadů. Stačí mít účet HubSpot a asistenta aktivovat přímo v platformě.
+Kategorie

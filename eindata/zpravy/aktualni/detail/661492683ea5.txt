@@ -1,0 +1,17 @@
+On-Page.ai
+On-Page.ai je SEO nástroj pro optimalizaci obsahu webu tak, aby lépe uspěl ve vyhledávání Google a zároveň se zvýšila šance, že ho budou citovat AI nástroje jako ChatGPT či Gemini. Hodí se majitelům webů a SEO týmům, kteří chtějí sledovat konkrétní skóre obsahu proti konkurenci a cíleně ho vylepšovat.
+O nástroji
+Nástroj nabízí tři hlavní moduly: On-Page Scans pro skenování stránek a porovnání s konkurencí, AI Optimizer pro optimalizaci na proven ranking faktory a Stealth Writer pro psaní textů ve stylu „Helpful Content“ (včetně obrázků, informačního přínosu a výzev k akci). AI Optimizer počítá souhrnné Content Score ze 7 dimenzí (Intent Coverage, Title Score, AI Quotability, Precision, Freshness, Authority) a titulek hodnotí panelem 5 AI modelů, které ho porovnávají s konkurencí formou barevného semaforu. Dále měří tzv. Sourceability Score (pravděpodobnost, že AI model bude obsah citovat), Freshness Factor (stáří obsahu vs. konkurence na první stránce výsledků) a nabízí Intent Score, který rozkládá hledaný záměr na konkrétní otázky a ukazuje pokrytí odpovědí v procentech s možností obsah rovnou upravit ve vestavěném editoru. Z textu stránky je zřejmé zaměření na „vysoce konkurenční trhy“ a kombinaci klasického Google SEO s optimalizací pro AI vyhledávání/odpovědi. Dostupná je i funkce Well Researched Assets – vytvoření rešeršních podkladů (např. srovnávací tabulky, grafy, citované zdroje) k publikaci pod vlastním jménem. Nástroj je pouze v angličtině a nabízí registraci zdarma bez nutnosti platební karty, placené plány se pak pohybují v rozmezí přibližně $199–$1999/měsíc podle uvedeného ceníku.
+Klíčové vlastnosti
+- Content Score ze 7 dimenzí obsahu
+- Sourceability Score pro citovatelnost AI modely
+- Freshness Factor porovnávající stáří obsahu s konkurencí
+- Intent Score s pokrytím odpovědí v procentech
+Časté dotazy
+Co On-Page.ai konkrétně umí?
+Skenuje stránky a porovnává je s konkurencí (On-Page Scans), optimalizuje obsah na ověřené ranking faktory pomocí Content Score ze 7 dimenzí (AI Optimizer) a píše texty ve stylu „Helpful Content“ včetně obrázků a výzev k akci (Stealth Writer). Navíc měří Sourceability Score, tedy šanci, že obsah bude citovat AI jako ChatGPT či Gemini.
+Kolik On-Page.ai stojí?
+Registrace je zdarma bez nutnosti zadávat platební kartu, placené plány se pak pohybují přibližně od $199 do $1999 měsíčně podle zvoleného rozsahu.
+Pro koho je nástroj vhodný a jak začít?
+Hodí se majitelům webů a SEO týmům působícím na vysoce konkurenčních trzích, kteří chtějí sledovat konkrétní skóre obsahu proti konkurenci. Stačí se zdarma zaregistrovat na webu a začít skenováním stránek.
+Kategorie

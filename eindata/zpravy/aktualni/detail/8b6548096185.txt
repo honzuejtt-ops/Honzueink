@@ -1,0 +1,17 @@
+Referent
+AI nástroj pro správu advokátní praxe, který automatizuje intake klientů, třídění e-mailů do spisů, přípravu prvních verzí dokumentů, hlídání lhůt, přípravu fakturace a follow-upy – vhodný pro samostatné advokáty i menší advokátní kanceláře.
+O nástroji
+Referent (Magic Documents) je AI-native software pro řízení advokátní praxe, který funguje jako „systém akce“ místo klasického systému záznamů – AI agenti místo pouhého ukládání dat aktivně vykonávají provozní úkony kanceláře. Konkrétně zajišťuje: příjem klienta přes intake odkaz s automatickým prověřením a založením spisu (matter), automatické třídění příchozích e-mailů a příloh k příslušnému spisu, přípravu prvních verzí odpovědí, dopisů a dokumentů z kontextu spisu, sledování soudních termínů, lhůt a promlčecích dob s upozorněním, automatické vedení časových záznamů a sestavení faktur (hodinová i paušální sazba) a generování follow-up zpráv (upomínky plateb, check-iny s klienty, žádosti o recenze). Nástroj je postaven na principu, že žádná kritická akce (odeslání, založení do spisu, vyúčtování) se neprovede bez schválení advokátem – každá akce agenta je logována a auditovatelná. Data jsou uložena v per-firmě šifrovaných, izolovaných workspace, firma je nepoužívá k trénování AI modelů a nesdílí je mezi zákazníky; šifrování AES-256 v klidu a TLS 1.2+ při přenosu, příprava na certifikace SOC 2 a ISO 27001. Nástroj vyvíjí tým AI Lawtech (autoři produktu AI Lawyer) se sídlem v Polsku, cílený na trh US advokátních kanceláří (solo advokáti, menší kanceláře, s plánovaným rozšířením pro velké firmy „Big Law“ - označeno jako „Soon“). Stránka je pouze v angličtině, cena ani konkrétní tarify nejsou v dostupném textu uvedeny.
+Klíčové vlastnosti
+- Automatický intake klientů přes odkaz s prověřením
+- Třídění příchozích e-mailů a příloh ke spisu
+- Příprava prvních verzí dopisů a dokumentů
+- Hlídání soudních lhůt a promlčecích dob
+Časté dotazy
+Co přesně Referent umí?
+Jde o AI systém pro řízení advokátní praxe, který automatizuje intake klientů, třídí e-maily do spisů, připravuje první verze dokumentů, hlídá lhůty, vede časové záznamy a fakturaci a posílá follow-upy klientům.
+Kolik Referent stojí?
+Cena ani konkrétní tarify nejsou veřejně uvedeny, pro nabídku je nutné kontaktovat tým přímo přes web.
+Pro koho je nástroj určený a jak začít?
+Je určen samostatným advokátům a menším advokátním kancelářím v USA, rozšíření pro velké firmy se teprve chystá; začíná se kontaktováním týmu přes web referent.law.
+Kategorie

@@ -1,0 +1,17 @@
+Spiral
+Spiral je AI psací nástroj, který se naučí váš osobní nebo firemní styl psaní (ze vzorků textu, brand dokumentů nebo propojených kanálů) a podle něj generuje návrhy copy, příspěvků na sociální sítě, newsletterů či prezentací. Hodí se jednotlivým autorům i marketingovým týmům, kteří potřebují konzistentní „brand voice“ napříč kanály.
+O nástroji
+Na rozdíl od obecných AI asistentů typu ChatGPT nebo Claude, které píšou „svým“ stylem, Spiral staví na tzv. Style Engine – analyzuje jazykové vzorce uživatele (délku vět, slovní zásobu, interpunkci) pomocí principů stylometrie a aplikuje je na každý vygenerovaný text. Uživatel do něj nahraje vzorky vlastního psaní, brand dokumenty nebo propojí sociální kanály, a nástroj z nich postaví styl, který může používat i celý tým. Funguje jako psací partner v reálném čase s editační zpětnou vazbou a dá se napojit přes MCP/API na nástroje jako Claude Code, Cursor nebo ChatGPT, takže i AI agent pak píše „hlasem“ uživatele místo generické AI. Cenově jde o tři varianty: Personal za 15 $/měsíc (pro jednoho autora, základní limity používání), Team za 25 $/uživatele/měsíc (vyšší limity, sdílené pracovní prostory, vhodné pro AI-native startupy a agentury) a balíček Every Bundle za 30 $/měsíc, který kromě Spiralu zahrnuje i další nástroje Every (Cora na e-maily, Monologue na hlas, Sparkle na soubory, Proof na dokumenty) a přístup ke kurzům a textům Every. Nástroj je čistě v angličtině, bez české lokalizace, a jde o placenou službu bez zmíněné bezplatné varianty.
+Klíčové vlastnosti
+- Analýza stylu ze vzorků textu i propojených kanálů
+- Sdílené brandové styly pro celý tým
+- Psaní v reálném čase s editační zpětnou vazbou
+- Napojení přes MCP/API na Claude Code, Cursor či ChatGPT
+Časté dotazy
+Jak Spiral pozná můj styl psaní?
+Nahrajete vzorky vlastního textu, brand dokumenty nebo propojíte sociální kanály a Spiral pomocí stylometrie (analýza délky vět, interpunkce, slovní zásoby) vytvoří styl, který pak aplikuje na nové texty.
+Kolik Spiral stojí?
+Varianta Personal je 15 $/měsíc pro jednoho autora, Team 25 $/uživatele/měsíc se sdílenými prostory pro týmy, a Every Bundle 30 $/měsíc zahrnuje Spiral plus další nástroje Every (Cora, Monologue, Sparkle, Proof) a kurzy.
+Pro koho je Spiral vhodný a jak začít?
+Hodí se jednotlivým autorům i marketingovým týmům, kteří chtějí konzistentní brand voice napříč kanály – stačí nahrát vzorky psaní nebo propojit kanály a začít psát v dashboardu.
+Kategorie

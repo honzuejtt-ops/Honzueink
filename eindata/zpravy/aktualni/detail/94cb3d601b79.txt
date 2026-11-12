@@ -1,0 +1,17 @@
+Hugging Face
+Hugging Face je platforma a knihovna pro strojové učení, kde si lze stáhnout, nasadit nebo natrénovat modely (přes 2 miliony) a najít datasety i hotové AI aplikace (Spaces). Hodí se vývojářům a ML inženýrům, kteří chtějí modely zkoušet lokálně, integrovat přes API nebo je sdílet s komunitou.
+O nástroji
+Hugging Face funguje jako centrální úložiště (Hub) pro open-source modely, datasety a interaktivní ukázky aplikací (Spaces), kde komunita sdílí a verzuje svou práci podobně jako na Gitu. K dispozici jsou knihovny jako Transformers, Diffusers, Datasets nebo Tokenizers pro Python i JavaScript (Transformers.js pro běh modelů přímo v prohlížeči), dále CLI nástroje a Python/JS klienti pro napojení na Hub. Pro nasazení modelů do provozu nabízí Inference Providers (přístup ke 200 000+ modelům přes 10+ partnerů), dedikované Inference Endpoints na vlastní infrastruktuře a GPU výpočetní zdroje na vyžádání od 0 Kč, s placeným tarifem Dedicated inference od 0,033 $/hodinu. Platforma má i firemní (Team & Enterprise) a PRO nabídku s transparentním objemovým ceníkem; v textu se objevuje i cena 9 $ u PRO plánu, bez bližšího rozpisu, co přesně zahrnuje. Je to nástroj primárně pro technicky zdatné uživatele – vývojáře, datové vědce a výzkumníky v ML, nikoli pro běžné koncové uživatele hledající hotovou aplikaci. Rozhraní i dokumentace jsou v angličtině.
+Klíčové vlastnosti
+- Přes 2 miliony stažitelných a trénovatelných modelů
+- Hub pro sdílení a verzování modelů, datasetů a aplikací (Spaces)
+- Knihovny Transformers, Diffusers, Datasets a Tokenizers pro Python i JS
+- Transformers.js pro běh modelů přímo v prohlížeči
+Časté dotazy
+Co přesně Hugging Face umí?
+Je to platforma a knihovna pro strojové učení, kde si můžete stáhnout, nasadit nebo natrénovat přes 2 miliony modelů, pracovat s datasety a zkoušet hotové AI aplikace (Spaces) sdílené komunitou.
+Kolik Hugging Face stojí?
+GPU výpočetní zdroje jsou dostupné od 0 Kč, placené Dedicated inference vychází od 0,033 $/hodinu a existuje i PRO plán s cenou 9 $, firmy mají samostatný Team & Enterprise ceník.
+Pro koho je Hugging Face vhodný a jak začít?
+Je určen vývojářům, datovým vědcům a výzkumníkům v ML – stačí si vytvořit účet, prohlédnout modely, datasety nebo Spaces a modely zkoušet lokálně, přes API nebo nasadit na vlastní infrastrukturu.
+Kategorie

@@ -1,0 +1,17 @@
+Cliplama
+Cliplama vytváří z textového popisu krátká „faceless“ videa (bez tváře mluvčího) s hudbou, titulky a AI hlasem, určená hlavně pro TikTok a YouTube Shorts. Hodí se tvůrcům, kteří chtějí automatizovat produkci a plánování videí pro sociální sítě bez natáčení vlastního obsahu.
+O nástroji
+Cliplama funguje na principu text-to-video: uživatel popíše video textem, vybere styl hlasu (včetně hlasů ElevenLabs) a nástroj vygeneruje krátké video s obrázky, přechody, hudbou na pozadí a titulky. Videa lze rovnou plánovat a publikovat na TikTok, podpora YouTube je avizována jako „brzy“. Podle FAQ se videa měří v kreditech – 1 kredit odpovídá krátkému videu do 1 minuty, 2 kredity videu 2-3 minuty a 3 kredity videu 4-6 minut. Ceník obsahuje čtyři varianty: zdarma plán za $0/měsíc (1 video, bez nutnosti kreditní karty), Basic za $19/měsíc (25 kreditů), Creator za $39/měsíc (60 kreditů, označen jako nejoblíbenější) a Pro za $59/měsíc (150 kreditů). Všechny placené i free plány zahrnují plánování videí, stahování bez vodoznaku a AI hudbu na pozadí, vyšší tarify navíc Auto Shorts a hlasy ElevenLabs. Kredity lze také dokoupit jednorázově (15 za $19, 30 za $39, 60 za $59). Stránka je pouze v angličtině.
+Klíčové vlastnosti
+- Text-to-video generování krátkých videí bez tváře
+- AI hlasy včetně hlasů ElevenLabs
+- Automatické titulky a hudba na pozadí
+- Plánování a publikování videí na TikTok
+Časté dotazy
+Co přesně Cliplama umí?
+Z textového popisu vygeneruje krátké „faceless“ video s obrázky, přechody, AI hlasem, hudbou na pozadí a titulky, vhodné pro TikTok a YouTube Shorts. Hotové video lze rovnou naplánovat a publikovat na TikTok, podpora YouTube je avizována jako „brzy“.
+Kolik Cliplama stojí?
+Zdarma plán za $0/měsíc nabízí 1 video bez nutnosti kreditní karty, placené tarify začínají na $19/měsíc (Basic, 25 kreditů), přes Creator za $39/měsíc (60 kreditů) až po Pro za $59/měsíc (150 kreditů). Kredity lze také dokoupit jednorázově.
+Pro koho je nástroj vhodný a jak začít?
+Hodí se tvůrcům obsahu, kteří chtějí automatizovat produkci a plánování videí pro sociální sítě bez natáčení. Stačí si založit zdarma účet, popsat video textem a vybrat styl hlasu.
+Kategorie

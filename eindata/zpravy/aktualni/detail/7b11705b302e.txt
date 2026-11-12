@@ -1,0 +1,17 @@
+GetBotz
+GetBotz automaticky publikuje SEO články na blog (WordPress, Shopify, Ghost, Webflow) bez zásahu uživatele – od výběru klíčových slov po indexaci v Google.
+O nástroji
+GetBotz se hodí majitelům blogů, e-shopů nebo firemních webů, kteří chtějí mít pravidelný obsah bez vlastního psaní a správy. Nástroj si po zadání informací o firmě a cílové skupině sám najde klíčová slova pomocí SEO dat, vymyslí témata článků, dopíše aktuální statistiky, vygeneruje text pomocí GPT-4, doplní obrázek, SEO meta tagy, interní prolinkování a článek rovnou odešle k indexaci v Google Search Console. Propojuje se s WordPress, Shopify, Ghost nebo Webflow. Ceny se liší podle frekvence publikování: plán Lite ($12/měsíc, resp. $24 bez slevy) přidává 1 článek obden, Startup ($24/měsíc) 1 článek denně a automatické interní odkazy, Growth ($49/měsíc) 3 články denně. Pro agentury je k dispozici partnerský program se slevou 30 % při 5+ blozích a bílé označení (reseller) od $1500/měsíc. K dispozici je bezplatná zkušební verze bez nutnosti zadávat platební kartu. Podporováno je přes 40 jazyků. Nástroj je plně v angličtině a cílí spíše na menší týmy či jednotlivce, kteří chtějí nahradit content agenturu nebo ruční psaní blogu automatizovaným procesem místo pouhého generování textu na vyžádání.
+Klíčové vlastnosti
+- Automatický výběr klíčových slov ze SEO dat
+- Generování témat článků podle dat Google
+- Doplnění aktuálních statistik a novinek k tématu
+- Psaní článků pomocí GPT-4 v lidském stylu
+Časté dotazy
+Co přesně GetBotz umí?
+Nástroj sám najde klíčová slova, vymyslí téma, napíše článek pomocí GPT-4, doplní obrázek, SEO meta tagy a interní odkazy a rovnou ho odešle k indexaci v Google. Propojuje se s WordPress, Shopify, Ghost nebo Webflow.
+Kolik GetBotz stojí?
+Plán Lite vyjde na $12/měsíc za 1 článek obden, Startup na $24/měsíc za 1 článek denně a Growth na $49/měsíc za 3 články denně. Pro agentury je k dispozici reseller program od $1500/měsíc.
+Pro koho je GetBotz vhodný a jak začít?
+Hodí se majitelům blogů, e-shopů či firemních webů, kteří chtějí pravidelný obsah bez vlastního psaní. Stačí popsat firmu a cílovou skupinu, propojit blog a zbytek automatizace zařídí nástroj – vyzkoušet lze zdarma bez karty.
+Kategorie

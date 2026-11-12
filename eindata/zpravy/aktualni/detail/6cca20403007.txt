@@ -1,0 +1,17 @@
+Infography
+Infography promění blogový příspěvek, PDF nebo jen zadané téma v hotový editovatelný infografický design během pár sekund – hodí se bloggerům, content marketerům a týmům, kteří potřebují pravidelně publikovat vizuály bez grafika.
+O nástroji
+Nástroj funguje tak, že vložíte URL blogu, nahrajete PDF/DOCX/XLSX/CSV nebo napíšete téma – AI z obsahu vytáhne klíčové body a postaví kompletní infografiku s rozvržením, ikonami a typografií. Výstup není zamčený obrázek, ale skutečný design soubor otevřený v editoru, takže lze upravit každý textový prvek, barvu i element. Podporováno je přes 100 jazyků včetně korektního zobrazení textu v latince, RTL i CJK písmech, což bývá u konkurenčních AI generátorů obrázků problém (text často vychází rozpadlý). Pro vývojáře a agentury je k dispozici REST API (zatím v beta verzi, každý request stojí 1 kredit) a integrace s Make.com, díky čemuž lze automatizovat tvorbu infografik z nových blogových příspěvků a jejich automatické publikování na sociální sítě. Cena je řešena jako jednorázová platba bez automatického obnovování: týdenní neomezený přístup za 3 USD, nebo roční za 49 USD. Stránka i celé rozhraní jsou pouze v angličtině.
+Klíčové vlastnosti
+- Generování infografiky z URL blogu, PDF nebo tématu
+- Výstup jako plně editovatelný design, ne zamčený obrázek
+- Podpora přes 100 jazyků včetně RTL a CJK písem
+- Vícestránkové série s exportem do PDF
+Časté dotazy
+Co přesně Infography umí vytvořit?
+Z vloženého URL blogu, nahraného PDF/DOCX/XLSX/CSV nebo zadaného tématu vytvoří během pár sekund kompletní editovatelnou infografiku s rozvržením, ikonami a typografií, kterou lze dál upravovat v editoru.
+Kolik Infography stojí?
+Jde o jednorázovou platbu bez automatického obnovování – týdenní neomezený přístup za 3 USD, nebo roční přístup za 49 USD.
+Pro koho je nástroj určený a jak začít?
+Hodí se bloggerům, content marketerům a agenturám, kteří potřebují pravidelně publikovat vizuály bez grafika – stačí vložit odkaz, nahrát soubor nebo napsat téma a výstup pak doladit v built-in editoru.
+Kategorie

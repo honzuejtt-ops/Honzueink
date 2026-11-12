@@ -1,0 +1,17 @@
+Vidu
+Vidu je AI nástroj pro generování videí z textu, obrázků nebo referenčních klipů, vhodný pro tvůrce sociálního obsahu, reklam a 2D animací.
+O nástroji
+Vidu umožňuje vytvářet videa z textového zadání, obrázků nebo referenčních videí – podporuje funkce jako Reference to Video, Storyboard nebo Character References, které podle uživatelů šetří čas při skládání scén a animaci postav. Nástroj se zaměřuje na výraznou mimiku a plynulé pohyby postav, což oceňují tvůrci 2D animací a anime stylu, i na rychlou generaci videa v reálném čase (Off-Peak Mode pro více experimentování). Systém funguje na kreditech – uživatel dostane po registraci zkušební kredity, další lze získat předplatným, denním přihlašováním nebo účastí v komunitních akcích. Předplatné přes Stripe se automaticky obnovuje a strhává platby měsíčně nebo ročně, refundace nejsou poskytovány. Z referencí uživatelů (japonských i anglických) je patrné, že nástroj využívají jak začínající tvůrci AI videí, tak profesionální animátoři a studia.
+Klíčové vlastnosti
+- Generování videa z textu, obrázku nebo referenčního klipu
+- Reference to Video pro zachování postav a stylu
+- Storyboard pro skládání scén
+- Character References pro konzistentní vzhled postav
+Časté dotazy
+Co přesně Vidu umí vygenerovat?
+Vidu vytváří videa z textového zadání, obrázků nebo referenčních klipů, včetně funkcí Reference to Video, Storyboard a Character References pro skládání scén a konzistentní postavy.
+Kolik Vidu stojí?
+Nástroj funguje na kreditovém systému – po registraci dostanete zkušební kredity zdarma, další lze získat předplatným přes Stripe (měsíčně nebo ročně), denním přihlašováním nebo účastí v komunitních akcích. Refundace se neposkytují.
+Pro koho je Vidu vhodné a jak začít?
+Hodí se jak pro začínající tvůrce AI videí, tak pro profesionální animátory a studia zaměřená na 2D animace, anime styl nebo reklamní obsah. Stačí se zaregistrovat a vyzkoušet zkušební kredity přímo na webu.
+Kategorie

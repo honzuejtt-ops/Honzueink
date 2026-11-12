@@ -1,0 +1,17 @@
+Steerable Motion
+Sada vlastních ComfyUI uzlů a workflow pro tvorbu videa „travelling“ mezi sadou obrázků – hodí se lidem, kteří už pracují v ComfyUI a chtějí generovat plynulé přechody/animace z více vstupních snímků pomocí Wan (VACE) nebo AnimateDiff (IP-Adapter + SparseCtrl).
+O nástroji
+Steerable Motion je open-source nástroj pro ComfyUI, který umožňuje „steerovat“ video mezi dávkami vstupních obrázků. Nabízí dva přístupy: Wan, kde se pomocí VACE vytvářejí kotevní (anchor) snímky a návaznosti mezi předchozími obrázky, které se nakonec spojí do výsledného videa, a AnimateDiff, kde se kombinuje IP-Adapter se SparseCtrl pro cestování mezi obrázky. Pro AnimateDiff přístup je k dispozici 5 předpřipravených základních workflow s odlišným chováním pohybu – Smooth n' Steady (plynulý pohyb, dobrý startovní bod), Rad Attack (nejrealističtější pohyb), Slurshy Realistiche a Chocky Realistiche (realistické, ale s různou mírou blokovitosti) a Liquidy Loop (plynulý a tekutý pohyb). Rozdíly mezi workflow plynou hlavně z nastavení IPA konfigurace a použitého základního modelu. Jde o technický nástroj pro pokročilé uživatele ComfyUI – vyžaduje instalaci ComfyUI a Comfy Manageru, stažení chybějících vlastních uzlů a modelů přes „Install Missing Custom Nodes“. Nástroj je self-hosted a open-source, repozitář je na GitHubu. Dokumentace a rozhraní jsou pouze v angličtině.
+Klíčové vlastnosti
+- Dávkové cestování mezi více vstupními obrázky
+- Podpora Wan (VACE) i AnimateDiff workflow
+- 5 předpřipravených workflow s odlišným charakterem pohybu
+- Kombinace IP-Adapter se SparseCtrl pro přechody
+Časté dotazy
+Co Steerable Motion umí?
+Vytváří „travelling“ video mezi sadou vstupních obrázků pomocí vlastních ComfyUI uzlů – buď přes Wan (VACE) s kotevními snímky, nebo přes AnimateDiff s IP-Adapterem a SparseCtrl, přičemž je k dispozici 5 předpřipravených workflow s různým charakterem pohybu.
+Kolik to stojí?
+Nástroj je zdarma a open-source, provozuje se self-hosted ve vlastním ComfyUI.
+Pro koho je nástroj vhodný a jak začít?
+Je určen pokročilým uživatelům ComfyUI – stačí nainstalovat ComfyUI a Comfy Manager a přes „Install Missing Custom Nodes“ doplnit chybějící uzly a modely.
+Kategorie

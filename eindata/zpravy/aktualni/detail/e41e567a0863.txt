@@ -1,0 +1,17 @@
+Bricks
+Bricks promění nahraný CSV, Excel nebo PDF soubor s daty automaticky v hotový dashboard s grafy a tabulkami – hodí se pro firmy a týmy (finance, HR, prodej, zdravotnictví), které chtějí reporty bez ruční práce v Excelu nebo bez nasazení BI nástroje jako Tableau či Power BI.
+O nástroji
+Bricks je AI nástroj zaměřený na tvorbu dashboardů a reportů z vlastních dat. Stačí nahrát soubor ve formátu CSV, Excel nebo PDF a nástroj sám vygeneruje grafy, tabulky a přehledy bez nutnosti ručně stavět vizualizace nebo ovládat pokročilé vzorce. Oproti Excelu odpadá manuální formátování, oproti Canvě zvládá i větší množství dat, a na rozdíl od Tableau či Power BI nevyžaduje školení ani složité nastavení. Dashboardy lze interaktivně filtrovat, jedním klikem obnovit po nahrání nových dat a znovu použít jako šablony. Nástroj kombinuje tabulky, dashboardy a prezentace (slides) v jednom prostředí a umožňuje týmovou spolupráci v reálném čase (komentáře, společné úpravy). Ovládání probíhá i formou AI promptů v přirozeném jazyce – zadáním textového pokynu lze nechat AI vytvořit graf, upravit vizualizaci nebo získat datový insight. Cenově je k dispozici bezplatný plán s 20 AI zprávami měsíčně pro týmy do 3 lidí. Placené varianty jsou Premium za 25 $/měsíc na uživatele (200 AI zpráv, neomezené dashboardy, týmy do 200 lidí) a Pro za 100 $/měsíc na uživatele (neomezené AI zprávy, prioritní podpora). Pro velké firmy existuje Enterprise plán na vyžádání. Rozhraní nástroje je pouze v angličtině.
+Klíčové vlastnosti
+- Automatické vygenerování dashboardu z CSV, Excelu nebo PDF
+- Tvorba grafů a vizualizací pomocí AI promptů v přirozeném jazyce
+- Interaktivní filtrování a jedním klikem obnovení dat
+- Spojuje tabulky, dashboardy a prezentace v jednom prostředí
+Časté dotazy
+Co Bricks přesně umí?
+Po nahrání souboru CSV, Excel nebo PDF automaticky vytvoří dashboard s grafy a tabulkami, který lze interaktivně filtrovat a ovládat pomocí AI promptů v přirozeném jazyce.
+Kolik Bricks stojí?
+Zdarma je plán s 20 AI zprávami měsíčně pro týmy do 3 lidí, placené varianty začínají na 25 $/měsíc (Premium, 200 AI zpráv) a 100 $/měsíc (Pro, neomezené AI zprávy), pro velké firmy je k dispozici Enterprise na vyžádání.
+Pro koho je Bricks vhodný a jak začít?
+Hodí se pro firmy a týmy z financí, HR, prodeje či zdravotnictví, které chtějí reporty bez ruční práce v Excelu nebo nasazení BI nástroje. Stačí se zaregistrovat zdarma a nahrát vlastní data.
+Kategorie

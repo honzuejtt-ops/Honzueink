@@ -1,0 +1,17 @@
+RobinReach
+Nástroj pro plánování a publikování příspěvků na sociální sítě (LinkedIn, X, Instagram, TikTok, Facebook a další), který lze ovládat přímo přes Claude, ChatGPT nebo Codex pomocí MCP serveru – AI tak za vás napíše, naplánuje a zveřejní celotýdenní obsah.
+O nástroji
+RobinReach je platforma pro správu sociálních sítí, jejíž hlavní odlišností je vlastní MCP server – AI asistent (Claude, ChatGPT, Codex nebo jiný MCP-kompatibilní nástroj) tak může přímo přes chat naplánovat obsahový kalendář, napsat posty na míru jednotlivým sítím, vygenerovat obrázky a hromadně naplánovat zveřejnění na 13 sítích (LinkedIn, X, Instagram, TikTok, Facebook, Threads, Pinterest, Bluesky, Mastodon, YouTube aj.) – uživatel jen schvaluje. Kromě toho nabízí sjednocený inbox pro komentáře a DM (včetně automatizace odpovědí na klíčová slova), reporty a přehled nejlepšího času pro publikování, automatické přebírání obsahu z RSS feedů, a volně dostupnou „bio“ stránku s odkazy, která se automaticky plní novými posty. Cenově nabízí zdarma plán Seed (2 profily, 20 postů měsíčně), placené plány Sprout ($9/měsíc, resp. $8,25/měsíc při roční platbě), Bloom ($24, resp. $16,58/měsíc) a další vyšší tarify s AI kredity na generování postů a obrázků (např. 200 postů a 20 obrázků měsíčně u Bloom), přičemž MCP/API přístup pro napojení AI je dostupný až od plánu Bloom výše. Placené plány lze vyzkoušet v 7denní zkušební verzi (vyžaduje kartu). Stránka i rozhraní jsou pouze v angličtině, o lokalizaci do češtiny ani o původu firmy z ČR důkazy nesvědčí.
+Klíčové vlastnosti
+- MCP server pro ovládání z Claude, ChatGPT nebo Codex
+- Hromadné plánování postů na 13 sítí najednou
+- Sjednocený inbox pro komentáře, DM a recenze
+- Automatické odpovědi na komentáře přes Auto DM
+Časté dotazy
+Co přesně RobinReach umí?
+Plánuje a publikuje příspěvky na LinkedIn, X, Instagram, TikTok, Facebook a dalších sítích, umí je ovládat přímo z Claude, ChatGPT nebo Codex přes MCP server, generovat texty i obrázky pomocí AI a spravuje sjednocený inbox pro komentáře a zprávy.
+Kolik RobinReach stojí?
+Zdarma je plán Seed pro 2 profily a 20 postů měsíčně, placené plány začínají na Sprout ($9/měsíc) a Bloom ($24/měsíc), přičemž napojení AI přes MCP/API je dostupné až od Bloom výše. Placené plány lze vyzkoušet v 7denní trial verzi, která vyžaduje kartu.
+Pro koho je RobinReach vhodný a jak začít?
+Hodí se pro jednotlivce i týmy spravující více sociálních sítí, kteří chtějí obsah plánovat a publikovat přímo přes AI asistenta v chatu. Stačí se zaregistrovat na webu a propojit sítě, případně AI nástroj (Claude, ChatGPT, Codex) přes MCP.
+Kategorie

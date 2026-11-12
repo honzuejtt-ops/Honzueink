@@ -1,0 +1,17 @@
+Shiken
+Nástroj pro nahrávání a přepis schůzek, který z nich automaticky vytváří poznámky, AI roleplaye, kurzy, kvízy nebo prezentace – hodí se firmám pro zaškolování, sales týmům na trénink prodejních rozhovorů a manažerům na koučink zaměstnanců.
+O nástroji
+Shiken zaznamenává schůzky (přes kalendář, bez bota, živé audio) nebo přijme nahraný dokument, PDF či YouTube odkaz a z tohoto zdroje dokáže jedním klikem vygenerovat shrnutí, AI roleplay scénáře, sales proposaly, slide decky, kurzy nebo kvízové otázky. Součástí je i AI koučink – zpětná vazba na projev, hledání napříč poznámkami ze všech schůzek a sdílení výstupů do CRM, Slacku, Teams nebo sdílených složek. Samostatnou funkcí jsou AI agenti, kteří fungují přímo ve Slacku nebo Teams a nabízejí koučink „ve flow práce“ – například připomenutí před náročným 1:1 pohovorem nebo nudge k naplnění cílů na základě firemní znalostní báze. Nástroj cílí na tři různé skupiny uživatelů: jednotlivce využívající ho jako osobní nahrávač schůzek a studijní nástroj (Learner), tvůrce kurzů a komunit prodávající obsah (Creator), a firmy nasazující ho plošně se SSO a SCORM podporou (Enterprise). Mezi uváděné scénáře použití patří firemní vyjednávání, koučink manažerů při hodnocení výkonu, nácvik rozhovorů ve zdravotnictví nebo trénink zaměstnanců v maloobchodu a hotelnictví. Ceny se pohybují od bezplatného plánu (nahrávač schůzek zdarma navždy) přes Learner Plus za cca 20 GBP/měsíc a Pro za 40 GBP/měsíc, až po Creator a Team tarify v řádu stovek GBP měsíčně; Enterprise plán je na dotaz s cenou dle počtu uživatelů. Stránka je celá v angličtině, žádná zmínka o české lokalizaci se v textu neobjevuje.
+Klíčové vlastnosti
+- Nahrávání schůzek přes kalendář bez nutnosti bota
+- Příjem dokumentů, PDF i YouTube odkazů jako zdroje
+- Jedním klikem generuje shrnutí, kvízy, slide decky i kurzy
+- AI roleplaye pro nácvik prodejních a pracovních rozhovorů
+Časté dotazy
+Co přesně Shiken umí vytvořit ze schůzky?
+Ze záznamu schůzky, dokumentu, PDF nebo YouTube videa dokáže jedním klikem vygenerovat shrnutí, AI roleplay scénáře, sales proposaly, slide decky, kurzy nebo kvízové otázky.
+Kolik Shiken stojí?
+Základní nahrávač schůzek je zdarma navždy, Learner Plus vyjde na cca 20 GBP/měsíc, Pro na 40 GBP/měsíc, Creator a Team tarify jsou v řádu stovek GBP měsíčně a Enterprise je na dotaz podle počtu uživatelů.
+Pro koho je Shiken určen a jak začít?
+Hodí se jednotlivcům jako osobní nahrávač a studijní nástroj, tvůrcům kurzů prodávajícím obsah i firmám nasazujícím ho plošně se SSO a SCORM podporou – stačí se zdarma zaregistrovat na webu.
+Kategorie

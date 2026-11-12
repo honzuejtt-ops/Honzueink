@@ -1,0 +1,17 @@
+Paraphrasing Tool
+Online nástroj na přepisování textu do jiného stylu pomocí AI, vhodný pro studenty i profesionály, kteří potřebují rychle upravit tón nebo srozumitelnost textu.
+O nástroji
+Paraphrasing Tool přepisuje vložený text pomocí AI do různých stylů – mimo zdarma dostupných režimů Standard, Fluency, Humanizer a Simplify nabízí po odemčení prémiových režimů i Creative, Academic, Shorten, Expand nebo Rephraser, případně vlastní (Custom) režim. Kromě psaného textu lze zpracovat i nahrávku řeči (speech to text) nebo extrahovat text z obrázku a následně jej parafrázovat. U výstupu lze dodatečně měnit tón (Formal, Casual, Professional, Witty). Nástroj podporuje desítky jazyků včetně češtiny, ale rozhraní stránky i veškeré popisky jsou pouze v angličtině. Základní režimy jsou dostupné zdarma, pokročilé styly (Creative, Academic, Shorten, Expand, Rephraser, Custom) je potřeba odemknout formou placeného přístupu, u kterého je uvedena 48hodinová garance vrácení peněz.
+Klíčové vlastnosti
+- Styly Standard, Fluency, Humanizer a Simplify zdarma
+- Prémiové režimy Creative, Academic, Shorten, Expand, Rephraser a Custom
+- Přepis nahrávky řeči (speech to text) na text
+- Extrakce textu z obrázku před parafrází
+Časté dotazy
+Co nástroj umí?
+Přepisuje vložený text do jiného stylu pomocí AI – zdarma nabízí režimy Standard, Fluency, Humanizer a Simplify, po odemčení i Creative, Academic, Shorten, Expand, Rephraser nebo vlastní Custom styl. Umí zpracovat i nahrávku řeči nebo text z obrázku a dodatečně upravit tón výstupu.
+Kolik to stojí?
+Základní režimy jsou zdarma, pokročilé styly je nutné odemknout placeným přístupem, ke kterému je přiložena 48hodinová garance vrácení peněz.
+Pro koho je nástroj vhodný a jak začít?
+Je určen studentům i profesionálům, kteří potřebují rychle upravit tón nebo srozumitelnost textu – stačí text vložit do online nástroje a zvolit požadovaný styl přepisu.
+Kategorie

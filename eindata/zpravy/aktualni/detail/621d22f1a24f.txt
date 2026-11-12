@@ -1,0 +1,17 @@
+Verisoul
+Platforma pro firmy, které potřebují automaticky odhalovat falešné účty, boty a podvodníky při registraci uživatelů. Hodí se vývojářům a provozovatelům SaaS, herních a marketplace platforem, kteří chtějí blokovat fake signupy bez nutnosti CAPTCHA.
+O nástroji
+Verisoul je nástroj pro detekci podvodů a falešných účtů, určený především vývojářům a bezpečnostním týmům firem provozujících online platformy (SaaS, hry, marketplace, finanční služby, telekomunikace). Kombinuje device fingerprinting, propojování účtů (account linking), analýzu e-mailů, detekci proxy/VPN, geolokaci a rozpoznávání botů a AI agentů, to vše dostupné přes API a konfigurovatelné rozhodovací pravidla bez nutnosti zásahu vývojářů do kódu. Mezi konkrétní funkce patří grafické propojování účtů podle shody prohlížeče, zařízení, sítě a e-mailu, kontrola pracovních/dočasných e-mailových adres, analýza stovek vlastností zařízení pro odhad rizika, geoblokace pro dodržování compliance požadavků a doplňkové ověření přes Face Match nebo telefonní verifikaci. Podle uvedených případových studií firma Clay díky nástroji ušetřila 175 000 USD a získala 150 000 USD navíc blokováním falešných účtů, herní studio Laguna Games jej používá proti farmení a podvádění botů. Nástroj nabízí bezplatné vyzkoušení na 30 dní, poté je zpoplatněn (konkrétní ceníkové plány nejsou na stránce uvedeny, k dispozici je i demo a kontakt na obchodní tým). Stránka je pouze v angličtině, jde o zahraniční (nikoli český) produkt zaměřený na firemní/enterprise zákazníky s technickým API integračním přístupem.
+Klíčové vlastnosti
+- Grafické propojování účtů podle zařízení, sítě a e-mailu
+- Detekce botů a AI agentů při registraci
+- Analýza stovek vlastností zařízení pro odhad rizika
+- Detekce proxy a VPN připojení
+Časté dotazy
+Co přesně Verisoul umí odhalit?
+Odhaluje falešné a duplicitní účty, boty, AI agenty i podvodníky při registraci pomocí device fingerprintingu, propojování účtů, analýzy e-mailů, detekce proxy/VPN a geolokace.
+Kolik Verisoul stojí?
+Konkrétní ceníkové plány nejsou veřejně uvedené, k dispozici je 30denní bezplatné vyzkoušení, poté je nástroj placený a cenu je nutné domluvit s obchodním týmem.
+Pro koho je Verisoul vhodný a jak začít?
+Je určen vývojářům a bezpečnostním týmům SaaS, herních, marketplace a finančních platforem, kteří integrují ochranu proti fake účtům přes API; začít lze přes demo nebo kontakt na obchodní tým.
+Kategorie

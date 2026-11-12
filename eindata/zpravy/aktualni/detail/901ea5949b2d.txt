@@ -1,0 +1,17 @@
+Refact.ai
+Autonomní AI coding agent pro vývojáře, který přímo v IDE plánuje a provádí úkoly nad celým repozitářem – od generování kódu přes debugování až po úpravy podle architektury projektu.
+O nástroji
+Refact.ai je open-source AI agent pro programování, který funguje jako plugin do IDE. Umí autonomně rozložit zadaný úkol na kroky, prohledat a analyzovat celý repozitář kvůli kontextu, a napojit se na GitHub, databáze nebo CI/CD pipeline. Kromě agenta nabízí i in-IDE chat s kontextem 32k tokenů pro dotazy, úpravy a generování kódu v přirozeném jazyce, a autocompletion poháněný modelem Qwen2.5-Coder s využitím RAG, který navrhuje další řádky nebo funkce na základě projektu. Podporuje přes 25 programovacích jazyků. Nástroj je možné nasadit on-premise, jako SaaS nebo na AWS, což oceňují firmy chránící svá data – agent se navíc dokáže učit z firemní dokumentace a kódu a budovat si znalostní bázi pro tým. Bezplatná verze nabízí omezené denní použití autonomního agenta a chat s 32k kontextem, placené plány začínají od 10 USD. Celá stránka i dokumentace jsou pouze v angličtině.
+Klíčové vlastnosti
+- Autonomní agent plánuje a provádí úkoly nad celým repozitářem
+- In-IDE chat s kontextem 32k tokenů
+- Autocompletion s modelem Qwen2.5-Coder a RAG
+- Napojení na GitHub, databáze a CI/CD pipeline
+Časté dotazy
+Co přesně Refact.ai umí?
+Je to autonomní AI coding agent v IDE, který rozloží zadaný úkol na kroky, prohledá celý repozitář kvůli kontextu a sám generuje, upravuje a debuguje kód. Umí se napojit na GitHub, databáze i CI/CD pipeline a navrhuje další řádky kódu pomocí autocompletion.
+Kolik Refact.ai stojí?
+Bezplatná verze nabízí omezené denní použití autonomního agenta a chat s 32k kontextem. Placené plány začínají od 10 USD měsíčně.
+Pro koho je Refact.ai vhodný a jak začít?
+Hodí se pro vývojáře a firmy, které chtějí agenta integrovat přímo do IDE, případně nasadit on-premise kvůli ochraně dat. Stačí nainstalovat plugin do IDE a popsat úkol, agent naplánuje a provede zbytek.
+Kategorie

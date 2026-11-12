@@ -1,0 +1,17 @@
+MyShell
+MyShell slouží k proměně běžné selfie fotky v portréty, filtry a krátká videa v desítkách stylů (studio, kresba, móda) a dále k tvorbě AI agentů a Telegram botů bez programování.
+O nástroji
+Nástroj je zaměřený na dvě hlavní oblasti. První je AI Portrait Studio, kde z jedné fotky vygenerujete profesionální headshoty, umělecké styly (glitch, pixel art, sepia), módní úpravy (účesy, make-up, cosplay) nebo aktuálně populární filtry jako Dad AI Portrait nebo Yearbook Photo Generator – katalog nabízí přes 200 stylů rozdělených do kategorií Professional, Artistic, Fashion a Trending, generování trvá sekundy a je zdarma. Druhou částí je ShellAgent, open-source framework pro stavbu AI agentů bez kódu – pomocí propojování bloků (States) lze sestavit workflow, exportovat ho jako JSON a nasadit přes MyShell Workshop. Příklady z praxe zahrnují stavbu Telegram botů jedinou větou (např. YouTube/Instagram downloader nebo audio extractor) jako alternativu k n8n, bez nutnosti API klíčů. Stránka je celá v angličtině, registrace ani přihlášení nejsou z dostupného textu zřejmé jako povinné pro vyzkoušení základních funkcí. Hotové agenty lze sdílet a nabízet v MyShell AI Agent Store.
+Klíčové vlastnosti
+- Přes 200 stylů portrétů a filtrů z jedné selfie
+- Kategorie Professional, Artistic, Fashion a Trending
+- Generování portrétu trvá jen pár sekund
+- Stavba AI agentů bez kódu propojováním bloků (States)
+Časté dotazy
+Co MyShell umí?
+Z jedné selfie vytvoří profesionální headshoty, umělecké a módní filtry nebo trendy styly jako Yearbook Photo Generator, a zároveň umožňuje bez programování postavit AI agenty či Telegram boty pomocí frameworku ShellAgent.
+Kolik MyShell stojí?
+Generování portrétů a filtrů z fotky je zdarma, podrobnosti o placených funkcích pro pokročilé agenty nejsou na stránce uvedené.
+Pro koho je MyShell vhodný a jak začít?
+Hodí se pro kohokoli, kdo chce rychle proměnit fotku ve stylový portrét, i pro tvůrce, kteří chtějí bez kódu postavit AI agenta nebo Telegram bota – stačí otevřít web a vybrat styl nebo šablonu agenta.
+Kategorie

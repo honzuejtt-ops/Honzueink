@@ -1,0 +1,17 @@
+Supermemory
+Supermemory je paměťová infrastruktura pro AI agenty a asistenty (Claude, Cursor, Grok, ChatGPT) – ukládá konverzace, soubory a URL jako propojené „memories“ a vrací je jako kontext, aby agent nezapomínal mezi relacemi. Hodí se vývojářům, kteří stavějí AI aplikace a potřebují nahradit RAG nebo ruční správu kontextu.
+O nástroji
+Supermemory funguje jako engine pro dlouhodobou paměť a průběžné učení AI agentů – přes API, pluginy nebo MCP. Místo ukládání syrových dokumentů extrahuje z chatů, souborů, URL či dat z Drive atomické „fakty“ (např. „Alex pracuje ve Stripe jako PM“), propojuje je do grafu v čase a podle potřeby je doplňuje, aktualizuje nebo zapomíná. Výsledkem má být rychlejší odezva a nižší spotřeba tokenů oproti klasickému RAG (podle reference jednoho zákazníka pokles z 40s na 12s a úspora 40-50 % tokenů). Nástroj se instaluje jako plugin do Cursoru (vyžaduje Node.js), případně se připojuje přes API klíč nebo integraci se Slackem. Lze jej provozovat i v air-gapped prostředí, ve vlastním datacentru nebo VPC, což míří na enterprise zákazníky s nároky na bezpečnost (SOC 2, HIPAA BAA, self-hosted varianta v plánu Scale). Ceník je postaven na kreditech zahrnutých v každém plánu: Free (0 $/měsíc, 5 $ kreditů), Pro (19 $/měsíc, 20 $ kreditů, 3 team seaty), Max (100 $/měsíc, 130 $ kreditů, Gmail konektor) a Scale (399 $/měsíc, 600 $ kreditů, S3/web crawler konektory, neomezené seaty). Pro větší nasazení je k dispozici Enterprise s individuální cenou. Celá stránka a dokumentace jsou pouze v angličtině.
+Klíčové vlastnosti
+- Extrahuje atomické fakty z chatů, souborů a URL
+- Propojuje fakta do vektorového grafu v čase
+- Automaticky doplňuje, aktualizuje i zapomíná paměť
+- Plugin pro Cursor, API i MCP integrace
+Časté dotazy
+Co přesně Supermemory dělá?
+Ukládá konverzace, soubory a URL jako propojené „memories“ a vrací je AI agentům jako kontext, takže si pamatují informace mezi relacemi místo klasického RAG.
+Kolik Supermemory stojí?
+Free plán zdarma s kredity 5 $, Pro 19 $/měsíc (20 $ kreditů), Max 100 $/měsíc (130 $ kreditů), Scale 399 $/měsíc (600 $ kreditů) a Enterprise na vyžádání.
+Pro koho je Supermemory vhodné a jak začít?
+Je určeno vývojářům AI aplikací a firmám s nároky na bezpečnost (SOC 2, HIPAA), kteří potřebují trvalou paměť pro agenty; stačí nainstalovat plugin do Cursoru, použít API klíč nebo MCP.
+Kategorie

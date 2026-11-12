@@ -1,0 +1,17 @@
+Anura
+Anura změří z 30sekundového videoselfie přes 100 zdravotních parametrů (tep, dech, krevní tlak, rizika diabetu, hypertenze apod.) – hodí se firmám do wellness aplikací, telemedicíny nebo kiosků, ne jako náhrada lékařského vyšetření.
+O nástroji
+Anura je kontaktní bezdotyková technologie od kanadské firmy NuraLogix, která pomocí kamery telefonu nebo počítače analyzuje obličej uživatele a během 30 sekund vypočítá desítky zdravotních a wellness ukazatelů – tepovou a dechovou frekvenci, systolický i diastolický krevní tlak, nepravidelný srdeční rytmus, BMI, index tělesného tvaru, biologický věk pleti, ale i odhady rizik jako cukrovka 2. typu, mrtvice, hypertenze, vysoký cholesterol či ztučnělá játra. Zahrnuje i index mentálního stresu a dotazník na úzkost a depresi. Měření tepu a dechu má schválení FDA, ostatní parametry jsou deklarovány jako informativní a wellness nástroje, nikoli diagnostika. Nástroj je určen primárně firmám a vývojářům – nabízí se jako mobilní SDK (iOS/Android), hotová Enterprise mobilní aplikace, webová služba integrovatelná do pár dní, desktopové SDK (Windows, macOS, Linux) i telehealth platforma pro průběžné měření vitálních funkcí během videohovoru. Pro koncové uživatele existuje odlehčená verze Anura Lite, plná verze se získává přes demo s obchodním zástupcem, takže konkrétní ceník není veřejně uveden.
+Klíčové vlastnosti
+- Měření tepu a dechu z 30sekundového videoselfie
+- Odhad krevního tlaku a nepravidelného srdečního rytmu
+- Rizikové skóre pro diabetes, mrtvici, hypertenzi a další
+- Index mentálního stresu a dotazník na úzkost a depresi
+Časté dotazy
+Co přesně Anura dokáže změřit?
+Z 30sekundového videoselfie vypočítá přes 100 parametrů – tep, dechovou frekvenci, krevní tlak, BMI i rizika jako cukrovka 2. typu, mrtvice či hypertenze. Oficiálně FDA schváleny jsou pouze tep a dechová frekvence, zbytek jsou informativní wellness odhady, ne diagnostika.
+Kolik Anura stojí?
+Ceník není veřejně uveden, plnou verzi firma nabízí po domluvě přes demo s obchodním zástupcem. Zdarma je k vyzkoušení odlehčená verze Anura Lite s omezeným počtem funkcí.
+Pro koho je Anura určena a jak začít?
+Je určena firmám a vývojářům pro integraci do wellness aplikací, telemedicíny nebo kiosků, a to formou mobilního či desktopového SDK, hotové aplikace nebo telehealth platformy. Koncový uživatel si může nejprve vyzkoušet odlehčenou verzi Anura Lite, firmy si plnou verzi domlouvají přes demo.
+Kategorie

@@ -1,0 +1,17 @@
+Palazzo
+Palazzo nabízí AI virtuální staging interiérů a vizualizaci nábytku z reálného katalogu – hodí se realitním makléřům, kteří chtějí za 60 sekund z fotky prázdného pokoje udělat zařízený interiér, a nábytkářským značkám, které chtějí ukázat zákazníkům svůj katalog přímo v jejich pokoji s možností nákupu.
+O nástroji
+Nástroj funguje na principu „jedna fotka dovnitř, hotový pokoj ven“ – nahrajete snímek prázdné nebo neaktuální místnosti a Palazzo do minuty vygeneruje fotorealistickou verzi se zařízením. Klíčový rozdíl oproti běžným AI nástrojům na design interiérů je v tom, že nábytek v obrázku není vymyšlený – jde o reálné produkty s konkrétním SKU a cenou, které si kupující může rovnou koupit (prokliknout do e-shopu). To cílí jednak na realitní makléře a kanceláře (produkt Spaces), jednak na nábytkářské značky a výrobce, kteří chtějí zákazníkům ukázat svůj katalog v jejich vlastním pokoji a prodávat celé sestavy (produkty Showcase a Studio). Ceny pro realitní segment jsou veřejné: Starter (sólo agent) 50 $/měsíc za neomezený staging, Growth (tým do 10 agentů) 349 $/měsíc, Pro (tým do 25 agentů) 750 $/měsíc, Scale (enterprise brokerage) na vyžádání. Multifamily a developerské projekty se cení individuálně podle budovy/projektu, ne na obrázek ani na kredity. Solo agenti mohou vyzkoušet Starter plán zdarma bez kreditní karty, vyšší plány a produkty Showcase/Studio začínají demem s obchodním týmem. Nástroj je plně v angličtině a nejde o český produkt – web ani rozhraní neuvádí žádnou lokalizaci. Firmu založili Raffi Holzer (dříve zakladatel Avvir, prodáno Hexagonu) a tenistka Venus Williams, která se podílí na designérské stránce produktu.
+Klíčové vlastnosti
+- Staging prázdné místnosti do 60 sekund z jedné fotky
+- Nábytek je reálný – konkrétní SKU, cena a prokliknutí do e-shopu
+- Žádné 3D modely ani CAD soubory, stačí fotky z katalogu
+- Stylist doporučí celou sestavu nábytku k vybranému kusu
+Časté dotazy
+Co Palazzo přesně umí?
+Nahrajete fotku prázdné nebo neaktuální místnosti a Palazzo do 60 sekund vygeneruje fotorealistický zařízený pokoj s reálným nábytkem, který má konkrétní SKU, cenu a jde rovnou koupit.
+Kolik Palazzo stojí?
+Pro realitní segment (Spaces) jsou ceny veřejné: Starter 50 $/měsíc pro sólo agenta, Growth 349 $/měsíc pro tým do 10 agentů, Pro 750 $/měsíc pro tým do 25 agentů, Scale na vyžádání. Produkty Showcase a Studio pro nábytkářské značky se řeší individuální nabídkou po demu.
+Pro koho je Palazzo a jak začít?
+Hodí se realitním makléřům a kancelářím pro virtuální staging listingů a nábytkářským značkám pro shoppable vizualizaci katalogu a produktovou fotografii. Sólo agenti mohou vyzkoušet Starter plán zdarma bez karty, ostatní začínají demem s obchodním týmem.
+Kategorie

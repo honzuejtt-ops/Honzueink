@@ -1,0 +1,17 @@
+Vocalist.ai
+Vocalist.ai slouží k úpravě zpěvu v hudební produkci – mění tón hlasu podle natrénovaných zpěváků, opravuje intonaci a odděluje vokály od instrumentálu. Hodí se songwriterům, kteří si potřebují poslechnout topline v jiném hlase, i producentům a remixerům, kteří potřebují rychle čisté stemy nebo doladěný vokál.
+O nástroji
+Nástroj nabízí tři samostatné funkce: Transform převádí nahraný vokál do podoby jednoho z licencovaných zpěváků/rapperů, Tune zajišťuje AI korekci výšky tónu (jemnou i tvrdě tuned efekt) a Split rozděluje mix na vokální a instrumentální stopu, případně odstraní reverb. Všechny tři nástroje lze použít nezávisle na sobě nebo v kombinaci v rámci jednoho pracovního postupu. Hlasové modely jsou podle výrobce natrénované na smluvně zajištěných zpěvácích, kteří se podílí na výnosech (Fairly Trained modely), a výstupy z placeného plánu jsou royalty-free pro komerční využití. Cenový model je postavený na kreditech – Transform má neomezené náhledy zdarma, kredity se platí pouze za stažení transformovaného zvuku (1 kredit = 1 minuta), zatímco Tune a Split mají neomezené stahování bez kreditů ve všech placených plánech. Nevyužité kredity se převádí do dalšího měsíce, pokud předplatné trvá. K dispozici je 7denní zkušební verze s 10 kredity na Transform, ovšem výstupy z trialu jsou určené jen pro evaluaci, ne pro komerční vydání – pro komerční použití je nutný placený plán.
+Klíčové vlastnosti
+- Transformace vokálu do podoby licencovaného zpěváka/rappera
+- AI korekce intonace s jemným i tvrdě tuned efektem
+- Rozdělení mixu na vokální a instrumentální stopu
+- Odstranění reverbu z nahrávky
+Časté dotazy
+Co přesně Vocalist.ai umí?
+Nabízí tři nástroje: Transform mění hlas na jednoho z licencovaných zpěváků, Tune opravuje intonaci vokálu a Split odděluje vokál od instrumentálu, případně odstraní reverb. Lze je použít samostatně i v kombinaci.
+Kolik to stojí a co je zdarma?
+Transform nabízí neomezené náhledy zdarma, platí se jen za stažení (1 kredit = 1 minuta), zatímco Tune a Split mají neomezené stahování bez kreditů v placených plánech. K dispozici je 7denní zkušební verze s 10 kredity na Transform, ale výstupy z ní slouží jen k evaluaci, ne ke komerčnímu vydání.
+Pro koho je nástroj určený a jak začít?
+Hodí se songwriterům, kteří chtějí slyšet topline v jiném hlase, i producentům a remixerům potřebujícím čisté stemy nebo doladěný vokál. Začít lze přes 7denní free trial, pro komerční využití je nutný placený plán.
+Kategorie

@@ -1,0 +1,17 @@
+CoverDesign AI
+Nástroj pro nezávislé autory, kteří si chtějí sami vytvořit obálku knihy pomocí AI – stačí vyplnit krátký brief (titul, žánr, nálada) a nástroj vygeneruje návrhy obálek během pár sekund.
+O nástroji
+CoverDesignAI je generátor obálek knih cílený na indie autory a vydavatele, kteří nechtějí čekat na grafika. Po vyplnění kreativního briefu (titul, žánr, nálada, symboly) AI vygeneruje sadu konceptů obálek, a to jak 2D grafiky pro tisk, tak 3D mockupy pro prezentaci na webu – mezi oběma formáty lze libovolně převádět. Hotové návrhy lze stáhnout jako webové JPG nebo tiskové PNG v archivu. Nástroj nabízí i pokročilé doladění návrhů: úpravy textovým příkazem („zvětši titulek o 20 %“, „změň barvu na matnou černou“), maskování konkrétní oblasti obrázku, přenesení barevné palety z nahraného obrázku, napodobení fontu podle vzoru nebo vytvoření série obálek v jednotném stylu podle předchozího návrhu. K dispozici je také knihovna inspirace (beta) pro autory, kteří nemají jasnou představu. Platba funguje na principu kreditů bez expirace – balíček Pro Pack za 9,99 $ obsahuje 30 kreditů (až 30 návrhů, 15 úprav, 15 konverzí 2D/3D), balíček Mega Pack za 24,99 $ nabízí 90 kreditů za výhodnější cenu na kredit. Nový uživatel dostává 5 kreditů zdarma bez nutnosti zadat platební kartu. Stránka je pouze v angličtině.
+Klíčové vlastnosti
+- Generování obálky z briefu (titul, žánr, nálada)
+- 2D grafika pro tisk i 3D mockupy na web
+- Vzájemná konverze mezi 2D a 3D formátem
+- Úpravy textovým příkazem i maskováním oblasti
+Časté dotazy
+Co nástroj CoverDesignAI umí?
+Z vyplněného briefu (titul, žánr, nálada, symboly) vygeneruje návrhy obálek knih, a to jako 2D grafiku pro tisk i 3D mockupy pro web, s možností dalších úprav textovým příkazem, maskováním nebo podle nahraného vzoru.
+Kolik CoverDesignAI stojí?
+Funguje na kreditech bez expirace – Pro Pack za 9,99 $ obsahuje 30 kreditů (až 30 návrhů), Mega Pack za 24,99 $ nabízí 90 kreditů za výhodnější cenu za kredit.
+Jak začít a pro koho je nástroj určený?
+Je určený indie autorům a vydavatelům, kteří nechtějí čekat na grafika – stačí se zaregistrovat a nový uživatel dostane 5 kreditů zdarma bez nutnosti zadat platební kartu.
+Kategorie

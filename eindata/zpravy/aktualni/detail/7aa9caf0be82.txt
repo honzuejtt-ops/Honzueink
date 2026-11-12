@@ -1,0 +1,17 @@
+Pikzels
+Nástroj na tvorbu a vylepšování YouTube miniatur pomocí AI – hodí se youtuberům, kteří chtějí zvýšit míru prokliku (CTR) bez grafika.
+O nástroji
+Pikzels je AI generátor miniatur zaměřený výhradně na YouTube. Miniaturu lze vytvořit z textového popisu (Prompt-to-Thumbnail), nebo vložením odkazu na existující video, jehož vizuální styl nástroj napodobí a přizpůsobí vlastnímu obsahu (Recreate). Úpravy se dělají jednoduchými textovými poznámkami bez nutnosti grafických dovedností. Funkce Pikzels Score ohodnotí nahranou miniaturu a titulek podle virality, srozumitelnosti, nápadu, zvědavosti a emoce, a One-Click Fix pak automaticky upraví slabá místa. Uživatel si také může nahrát 3 fotky sebe a vytvořit „Personu“ pro opakované použití své podoby na miniaturách bez focení, nebo nahrát 3 miniatury a uložit si vlastní vizuální styl pro konzistentní vzhled napříč videi. Nástroj umí pracovat v libovolném jazyce zadávání promptů. Placené plány začínají u varianty Premium za 40 $/měsíc (28 $/měsíc při roční platbě, tj. 336 $ ročně) s 18 000 kredity, kde vytvoření jedné miniatury stojí 10–20 kreditů, trénink persony 10 kreditů a trénink stylu 50 kreditů. Web je čistě anglický, bez zmínky o české lokalizaci.
+Klíčové vlastnosti
+- Tvorba miniatury z textového popisu (Prompt-to-Thumbnail)
+- Napodobení stylu existujícího videa (Recreate)
+- Úpravy miniatury pomocí textových poznámek
+- Hodnocení miniatury a titulku (Pikzels Score) podle virality a emoce
+Časté dotazy
+Co přesně Pikzels umí?
+Vytváří a vylepšuje YouTube miniatury – buď z textového popisu, nebo podle stylu existujícího videa. Miniaturu lze upravovat textovými poznámkami, nechat ohodnotit nástrojem Pikzels Score a slabá místa opravit jedním kliknutím.
+Kolik Pikzels stojí?
+Placené plány začínají u varianty Premium za 40 $/měsíc (28 $/měsíc při roční platbě) s 18 000 kredity, kde jedna miniatura stojí 10–20 kreditů.
+Pro koho je Pikzels vhodný a jak začít?
+Je určený youtuberům, kteří chtějí zvýšit prokliky bez grafika – stačí zadat prompt nebo vložit odkaz na video, jehož styl má nástroj napodobit, případně si nahrát vlastní fotky pro Personu.
+Kategorie

@@ -1,0 +1,17 @@
+Runday
+AI agent (Alice) pro firmy, který na webu i přes WhatsApp/SMS/Messenger aktivně oslovuje potenciální zákazníky, kvalifikuje je a rovnou jim domlouvá schůzku v kalendáři obchodníka.
+O nástroji
+Runday je B2B nástroj na automatizaci obchodního procesu pomocí AI agenta jménem Alice. Agent vyhledává a oslovuje potenciální zákazníky hyper-personalizovanými zprávami na základě jejich sociálních profilů a firemních dat, odpovídá na dotazy návštěvníků webu podle nahraných obchodních materiálů a propojuje se s kalendářem a CRM, aby zvládl rovnou domluvit a připomenout schůzku. Umí také přebírat zákaznickou podporu – podle dokladů zvládne odpovědět na většinu běžných dotazů a eskaluje jen složitější případy na člověka. Agent se nastavuje přes jednoduchý Google Sheets spreadsheet (úprava textů, tlačítek, loga, pozadí), bez nutnosti programování. Komunikace probíhá přes web, SMS, WhatsApp či Messenger, ve vyšších plánech i LinkedIn. Platby od zákazníků lze vybírat napojením na Stripe, pro vyšší tarify je k dispozici i CRM integrace, video avatary nebo rozpoznávání hlasu. Nástroj je rozdělen do čtyř placených plánů (Starter, Professional, Growth, Enterprise), které se liší počtem zpracovaných leadů měsíčně, počtem kampaní a rozsahem integrací (např. napojení na Meta/Google Ads, custom API). Ceny nejsou veřejně uvedené – k objednání je nutné kontaktovat obchodní tým („Talk to Sales“). Cílovka jsou menší i větší firmy, které chtějí automatizovat prospecting, kvalifikaci leadů a rezervace schůzek napříč více komunikačními kanály. Rozhraní i veškerá dokumentace jsou pouze v angličtině.
+Klíčové vlastnosti
+- Vyhledává a oslovuje leady hyper-personalizovanými zprávami
+- Odpovídá návštěvníkům webu podle nahraných obchodních materiálů
+- Domlouvá schůzky přímo do kalendáře obchodníka
+- Propojení s CRM a kalendáři, připomínky schůzek
+Časté dotazy
+Co přesně Runday umí?
+AI agent Alice vyhledává a oslovuje potenciální zákazníky personalizovanými zprávami, kvalifikuje je, odpovídá na dotazy podle vašich materiálů a rovnou domlouvá schůzky v kalendáři obchodníka. Zvládne také převzít zákaznickou podporu a eskalovat složitější případy na člověka.
+Kolik Runday stojí?
+Ceny nejsou veřejně uvedené – nástroj nabízí čtyři plány (Starter, Professional, Growth, Enterprise) lišící se počtem leadů a integrací, k objednání je nutné kontaktovat obchodní tým přes „Talk to Sales“.
+Pro koho je Runday vhodný a jak začít?
+Je určen menším i větším firmám, které chtějí automatizovat prospecting, kvalifikaci leadů a rezervace schůzek napříč více kanály. Nastavení probíhá bez programování přes jednoduchý Google Sheets spreadsheet, start je ale podmíněn kontaktováním obchodního týmu.
+Kategorie

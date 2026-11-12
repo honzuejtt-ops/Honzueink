@@ -1,3 +1,450 @@
+|T|Nothing odhalil design svého prvního AI zařízení bez displeje|D|12.11.2026 21:00|P|Šéf společnosti Nothing, Carl Pei, ukázal podobu chystaného produktu zaměřeného na umělou inteligenci. Zařízení sází na hlas a obejde se zcela bez obr...|M|Digimanie|X|Šéf společnosti Nothing, Carl Pei, ukázal podobu chystaného produktu zaměřeného na umělou inteligenci. Zařízení sází na hlas a obejde se zcela bez obrazovky.
+Společnost Nothing se chystá vstoupit na trh s dedikovaným hardwarem pro umělou inteligenci. Její ředitel Carl Pei na sociální síti X zveřejnil krátké video, které vůbec poprvé ukazuje kompletní design tohoto očekávaného zařízení. Novinka se zcela obejde bez displeje a sází na minimalistické kovové tělo z broušeného materiálu se zaoblenými hranami.
+Přední straně dominuje velké fyzické tlačítko s červenou tečkou, které bude podle všeho sloužit k aktivaci hlasového nahrávání. Vizuální zpětnou vazbu obstarají pouze dva podlouhlé LED indikátory svítící oranžovou a zelenou barvou. Carl Pei odhalení designu doprovodil heslem „Kontext nežije v chatovacím okně“. Tím jasně naznačil, že hlavní předností chystaného AI asistenta bude schopnost pamatovat si širší souvislosti a vést s uživatelem přirozené, plynulé konverzace bez nutnosti sledovat text na obrazovce.
+Přesný název, cenu ani detailní hardwarové specifikace zatím výrobce tají. Oficiální představení tohoto netradičního kapesního společníka je však naplánováno již na příští měsíc.|E|
+|T|Nepřátelé musí spolupracovat: Intel a AMD společně vyvinuli nové x86 instrukce ACE v2 a AVX10.3|D|12.11.2026 18:30|P|Nová rozšíření pro budoucí x86 procesory od AMD a Intelu přinesou vyšší výkon v umělé inteligenci, ale snad i pro další oblasti programů, které by moh...|M|Cnews|X|Zřejmě je to tím, jak se Intel i AMD dostávají pod větší tlak konkurence procesorů Arm od různých výrobců, ale před dvěma lety obě firmy překvapivě uzavřely spojenectví v konsorciu x86 Ecosystem Advisory Group. Zatímco dřív se Intel snažil z nových rozšíření instrukční sady dělat nástroj proti konkurenci (AMD), do budoucna firmy chtějí novinky vyvíjet společně. Teď oznámily nové budoucí instrukce spolu a právě v tomto konsorciu.
+Na webu x86 Ecosystem Advisory Group se koncem října objevil dokument se specifikacemi příští generace rozšíření procesorů x86, pod nímž je jako autor podepsáno už jen konsorcium, nikoliv jeho jednotliví členové. Tento dokument specifikuje nová rozšíření ACE v2 a AVX10.3. Obě by tedy měla být inkrementálními přídavky.
+ACE v2
+První rozšíří instrukce ACE, které byly odhalené nedávno a zatím je ještě žádné CPU neumí (u AMD je má podporovat architektura Zen 7). ACE jsou instrukce pracující s maticemi, které budou primárně užitečné pro různé výpočty umělé inteligence. Jde tedy o obdobu dřívějších instrukcí AMX v procesorech Intel a jednotek SME v procesorech Arm.
+ACE v2 by zdá se mělo rozšiřovat schopnosti práce s 8bitovými datovými typy a zřejmě i se 4bitovými formáty MX FP4 a MX INT4, což by mělo mít užitečnost skutečně jen pro AI. Nicméně přidané jsou i operace pracující s běžnou jednoduchou přesností FP32 a také s dvojitou přesností FP64. Takže ACE v2 by mohlo být použitelné i pro obecnější numerické a vědecké výpočty v HPC aplikacích, pokud umí využít operace outer product, které rozšíření ACE s maticovými registry provádí.
+Rozšíření také přidává některé nové instrukce pro správu maticových registrů a BSR (block scale registru).
+AVX10.3
+Druhé rozšíření pak bude přídavkem k AVX-512, AVX10.1 a AVX10.2. Nové přídavky zahrnují instrukce pro konverze číselných hodnot do 8bitových a také do 4bitových formátů se sníženou přesností, které (jak už bylo zmíněno) používají operace umělé inteligence. Toto rozšíření je přidáno celkem logicky proto, aby procesory měly instrukce, kterými si připraví např. FP8 a FP4 data, jež pak budou používat k výpočtům s instrukcemi ACE v2.
+Rozšíření ACE bylo od začátku navrženo tak, aby se doplňovalo s využitím instrukcí AVX10, které lze používat pro přípravu a zpracování vstupních dat, takže s rozšířením schopností ACE teď Intel a AMD logicky také přidávají odpovídající funkcionalitu do instrukcí AVX10. Konverze na hodnoty FP4, INT4 nebo FP8 a INT8 fungují s různými formáty 16bitových jako vstupem, například FP16 či BFloat16.
+Pochopitelně se přitom používají 512bitové SIMD registry pro vysokou propustnost těchto výpočtů, ale použít lze i menší registry. Operace mohou použít jen jeden vstupní registr, nebo dva, jelikož například při konverzi FP16 na FP8 se celkově 512bitový vstup (32 hodnot FP16) zmenší na 256 bitů (32 hodnot FP8).
+BMM
+Součástí rozšíření AVX10.3 jsou také instrukce Bit Matrix Multiply BMM či přesněji AVX10_BMM. Jde ovšem o součást volitelnou. Přítomnost BMM není přímo implikována podporou AVX10.3 a software si podporu musí zjistit zvlášť.
+Tyto instrukce provádí maticové násobení (respektive operaci multiply-accumulate, která funguje jako XOR redukce nebo OR redukce) nad maticemi o 16 × 16 hodnotách, kde jednotlivé hodnoty jsou 1bitové (0 nebo 1). Mělo by jít o rozšíření instrukcí GFNI, které pracovaly s 8×8bitovými maticemi. Při použití 512bitových registrů (ZMM) instrukce BMM provedou dvě tyto nezávislé operace najednou, jelikož do těchto registrů se vejdou dvě sady vstupů.
+Součástí rozšíření BMM je také instrukce VBITREV. Ta podporuje práci se 128bitovými, 256bitovými i 512bitovými registry a dělá to, že v každém bajtu vstupu otočí pořadí bitů. Lze použít maskový registr pro ovládání toho, které bajty zpracovat.
+Bude využití mimo servery a AI?
+Zmiňovali jsme, že většina těchto instrukcí je evidentně míněna zejména pro použití v různých AI aplikacích, které nyní jak se říká hýbou světem – s možnou výhradou rozšíření ACE o 32bitové a 64bitové výpočty. Instrukce pro bitovou manipulaci by mohly mít různé obecnější využití, ale dost možná také hlavně vr specializovaných operacích a při ruční optimalizaci a vektorizaci kódu.
+Nicméně je možné, že využití pro AI instrukce by mohly mít i hry. V těch se umělá inteligence využívá ve grafice, kde typicky běží na GPU, ale akcelerace na jádrech procesoru pomocí instrukcí ACE by mohla být výhodnější třeba pro ovládání nepřátel nebo dalších postav.
+Zatím není známo, v kterých generacích procesorů od AMD a Intelu by se tyto novinky mohly objevit.
+Harmonizace instrukčních rozšíření mezi Intelem a AMD
+Už předchozí práce x86 Ecosystem Advisory Group by měla přinést sladění instrukčních rozšíření a schopností procesorů Intel a AMD. Firmy se v něm dohodly na tom, že v budoucnu se stanou standardem zmíněná SIMD rozšíření AVX10 a maticové rozšíření ACE a dále technologie FRED modernizující práci s přerušeními a rozšíření pro tagování paměti (ChkTag).
+Tato harmonizace neprobíhá jen tak, že AMD dostane instrukce, které vyvinul Intel. Velká změna je v tom, že to začíná fungovat i druhým směrem. Zdá se, že maticové rozšíření ACE bylo zřejmě iniciováno AMD a je hlavně jeho dílem, místo aby bylo jako standard přijato už vydané a částečně odlišné rozšíření AMX od Intelu. Intel také opustil myšlenku, že AVX10 bude primárně 256bitové rozšíření s pouze volitelnou 512bitovou podporou; místo toho bude AVX10 povinně 512bitové, takže bude plně kompatibilní s AVX-512.
+Intel také opustil technologii x86S (i když v tomto případě není jasné, zda kvůli odporu AMD). Zatím není jasné, zda bude standardizováno rozšíření APX. Některé zprávy hovořily o tom, že ano. Zatím to však není jasné, objevují se názory, že standardem se stane až nějaká jeho pozdější revize a nikoliv první verze, kterou nyní budou podporovat procesory Intel Core Ultra 5000 (Nova Lake).|E|
+|T|Allegro má v Česku, na Slovensku a v Maďarsku 5,7 milionu zákazníků. Nakupují častěji než loni|D|12.11.2026 17:02|P|Polské online tržiště Allegro napočítalo v Česku, na Slovensku a v Maďarsku dohromady 5,7 milionu aktivních zákazníků. Podle údajů firmy ve třetím čtv...|M|Lupa|X|Polské online tržiště Allegro napočítalo v Česku, na Slovensku a v Maďarsku dohromady 5,7 milionu aktivních zákazníků. Podle údajů firmy ve třetím čtvrtletí roku nakupovali o 23 % častěji než před rokem. Hodnota prodaného zboží (GMV) na těchto třech mezinárodních tržištích se meziročně více než zdvojnásobila.
+Česko je pro skupinu největším trhem po Polsku. Allegro uvádí, že v regionu oslovuje přes čtvrtinu zákazníků e-commerce a jeho aplikace jsou nejstahovanějšími nákupními aplikacemi na Google Play. Konkrétní čísla za jednotlivé země ale nezveřejňuje.
+Celá skupina zvýšila ve třetím čtvrtletí konsolidované tržby na 3,4 miliardy zlotých (necelých 19 miliard Kč). Konkrétně z provozu na českém, slovenském a maďarském trhu firma konsolidované tržby posunula téměř na dvojnásobek, v přepočtu na necelých 1,1 miliardy Kč. Na těchto trzích ale skupina stále vykazuje ztrátu, její upravená EBITDA byla v přepočtu minus 571 milionů korun. Na provozní nulu se má tato část podnikání dostat během roku 2029.
+Firma nicméně pro letošek zvýšila celoroční výhled. Tržby se podle ní mají dostat až k 76 miliardám Kč a na konci roku by podle výpočtů skupiny měla hodnota prodaného zboží proti loňsku vystoupat o 15–16 %.
+Tržiště aktivně cílí na tuzemské obchodníky mimo jiné prostřednictvím integrace se Shoptetem, která online obchodům umožňuje zapojit prodej na polském tržišti přímo z administrace e-shopu. Firma investovala i do AI nákupního asistenta, ten měl mít celkově na všech trzích ve třetím čtvrtletí 1,7 milionu uživatelů. Ti, kteří přes něj přicházejí k produktům, mají vykazovat více než dvojnásobnou konverzi oproti běžnému průměru platformy.|E|
+|T|Apple a Samsung prý chystají ještě větší skládací telefony|D|12.11.2026 17:00|P|Podle nejnovějších úniků pracují giganti Samsung i Apple na podstatně zvětšených verzích svých současných ohebných smartphonů. Nové modely by mohly do...|M|Digimanie|X|Podle nejnovějších úniků pracují giganti Samsung i Apple na podstatně zvětšených verzích svých současných ohebných smartphonů. Nové modely by mohly dorazit v příštím roce.
+Na trhu se v současnosti už pevně etablovaly skládací modely s širším poměrem stran, jako jsou Samsung Galaxy Z Fold8 a iPhone Duo. Podle nejnovějších zpráv od informátora na sociální síti X však obě společnosti připravují pro rok 2027 jejich ještě rozměrnější varianty. Teoreticky by se tak proti sobě na trhu mohla postavit zařízení s předpokládaným označením Galaxy Z Fold9 Plus a iPhone Duo 2 Plus. Jelikož ohebné panely oběma konkurentům pravděpodobně dodává divize Samsung Display, dává souběžný vývoj větších úhlopříček obou značek smysl.
+Experti však upozorňují na možný ergonomický problém spojený s dalším zvětšováním. Pokud by si nové modely s přídomkem „Plus“ zachovaly poměr stran současných generací, jejich vnější displeje by se mohly rozšířit natolik, že by jejich pohodlné ovládání jednou rukou bylo prakticky nemožné. Vzhledem k tomu, že informace pochází zatím pouze z jediného nepotvrzeného zdroje, je nutné k ní přistupovat s rezervou.|E|
+|T|Hero|D|12.11.2026 15:42|P|Mobilní aplikace, která z jedné fotky věci na prodej vytvoří popis, odhadne cenu a listing rovnou vystaví na eBay a Facebook Marketplace. Hodí se zejm...|M|EJAJ|X|Hero
+Mobilní aplikace, která z jedné fotky věci na prodej vytvoří popis, odhadne cenu a listing rovnou vystaví na eBay a Facebook Marketplace. Hodí se zejména přeprodejcům (resellerům), kteří potřebují rychle naskladnit a vystavit větší počet položek.
+O nástroji
+Hero funguje tak, že uživatel vyfotí předmět mobilem a AI z fotky rozpozná produkt, značku, kategorii a stav, navrhne prodejní cenu na základě porovnání s dalšími inzeráty a sama napíše titulek a popis. Hotový inzerát pak aplikace cross-postne na eBay a Facebook Marketplace, díky čemuž podle uváděných recenzí zkrácení doby vystavení jedné položky z desítek minut na řádově sekundy až minuty. Umí také z jedné fotky vygenerovat sadu dalších čistých produktových fotek (např. odstranit nevhodné pozadí) - šest fotek z jednoho skenu. Nástroj je placený, žádná bezplatná varianta není zmíněná - placené plány začínají na 10 USD/měsíc (10 vystavených položek, 1 sada AI fotek měsíčně), přes 20 USD/měsíc (30 položek, 5 sad fotek) a 30 USD/měsíc (bez limitu na počet vystavení, 15 sad fotek), až po firemní plán za 199 USD/měsíc se sdíleným inventářem pro 3 uživatele, importem až 10 000 řádků měsíčně a prioritní podporou. Všechny placené plány zahrnují neomezené kontroly cen. Pro vývojáře a firmy je k dispozici i API/MCP přístup, který umožňuje napojit agenty nebo aplikace na automatizované vystavování a oceňování zboží. Stránka je celá v angličtině a cílí na trh USA (eBay, Facebook Marketplace), o českém trhu ani jazyce není v textu zmínka.
+Klíčové vlastnosti
+- Z fotky rozpozná produkt, značku, kategorii a stav
+- Navrhne prodejní cenu podle srovnatelných inzerátů
+- Automaticky napíše titulek a popis
+- Cross-posting inzerátu na eBay a Facebook Marketplace
+Časté dotazy
+Co přesně Hero umí?
+Z jedné fotky předmětu rozpozná produkt, značku a stav, navrhne cenu, napíše popis a rovnou vystaví inzerát na eBay i Facebook Marketplace. Umí také z fotky vytvořit sadu 6 čistých produktových fotek.
+Kolik Hero stojí?
+Nástroj je placený bez bezplatné varianty – plány začínají na 10 USD/měsíc (10 položek, 1 sada fotek), pokračují přes 20 a 30 USD/měsíc až po firemní plán za 199 USD/měsíc se sdíleným inventářem a prioritní podporou.
+Pro koho je Hero vhodný a jak začít?
+Hodí se zejména přeprodejcům (resellerům), kteří potřebují rychle naskladnit a vystavit větší počet položek na eBay a Facebook Marketplace; stačí vyfotit předmět mobilem a aplikace zbytek zařídí sama.
+Kategorie|E|
+|T|Zed|D|12.11.2026 15:42|P|Zed je open-source textový editor a IDE psané v Rustu, zaměřené na rychlost a kolaborativní programování v reálném čase včetně AI asistentů.|M|EJAJ|X|Zed
+Zed je open-source textový editor a IDE psané v Rustu, zaměřené na rychlost a kolaborativní programování v reálném čase včetně AI asistentů.
+O nástroji
+Zed je editor kódu od tvůrců Atomu a Tree-sitter, postavený na vlastním GPUI frameworku pro vykreslování, díky čemuž cílí na maximální výkon (web prezentuje projekt jako „nejrychlejší IDE na světě“). Hodí se programátorům, kteří chtějí rychlý, odezvě-přívětivý editor s podporou AI funkcí, přičemž AI je podle webu volitelná („AI optional“) - lze tedy editor používat i bez ní. Firma zároveň vyvíjí nový projekt Delta, popsaný jako „multiplayer prostředí pro programování s agenty“ postavené na DeltaDB, což naznačuje silný důraz na kolaborativní vývoj více lidí i AI agentů nad stejným kódem současně. Zed je open source a je k dispozici ke stažení, projekt stojí za ním tým bývalých vývojářů Atomu a Tree-sitter.
+Klíčové vlastnosti
+- Vlastní GPUI framework pro maximální výkon vykreslování
+- Kolaborativní programování v reálném čase (multiplayer)
+- Volitelná AI asistence přímo v editoru
+- Open-source, k dispozici zdarma ke stažení
+Časté dotazy
+Co Zed vlastně umí?
+Zed je rychlý open-source textový editor a IDE psaný v Rustu, který umožňuje kolaborativní programování v reálném čase a volitelně i AI asistenci přímo v editoru.
+Kolik Zed stojí?
+Zed je open-source projekt a je k dispozici ke stažení, z podkladů nevyplývá konkrétní cenový model ani placené tarify.
+Pro koho je Zed vhodný a jak začít?
+Hodí se programátorům, kteří chtějí rychlý a odezvě-přívětivý editor s možností týmové spolupráce nad kódem; stačí si editor stáhnout z webu zed.dev.
+Kategorie|E|
+|T|CoverDesign AI|D|12.11.2026 15:42|P|Nástroj pro nezávislé autory, kteří si chtějí sami vytvořit obálku knihy pomocí AI – stačí vyplnit krátký brief (titul, žánr, nálada) a nástroj vygene...|M|EJAJ|X|CoverDesign AI
+Nástroj pro nezávislé autory, kteří si chtějí sami vytvořit obálku knihy pomocí AI – stačí vyplnit krátký brief (titul, žánr, nálada) a nástroj vygeneruje návrhy obálek během pár sekund.
+O nástroji
+CoverDesignAI je generátor obálek knih cílený na indie autory a vydavatele, kteří nechtějí čekat na grafika. Po vyplnění kreativního briefu (titul, žánr, nálada, symboly) AI vygeneruje sadu konceptů obálek, a to jak 2D grafiky pro tisk, tak 3D mockupy pro prezentaci na webu – mezi oběma formáty lze libovolně převádět. Hotové návrhy lze stáhnout jako webové JPG nebo tiskové PNG v archivu. Nástroj nabízí i pokročilé doladění návrhů: úpravy textovým příkazem („zvětši titulek o 20 %“, „změň barvu na matnou černou“), maskování konkrétní oblasti obrázku, přenesení barevné palety z nahraného obrázku, napodobení fontu podle vzoru nebo vytvoření série obálek v jednotném stylu podle předchozího návrhu. K dispozici je také knihovna inspirace (beta) pro autory, kteří nemají jasnou představu. Platba funguje na principu kreditů bez expirace – balíček Pro Pack za 9,99 $ obsahuje 30 kreditů (až 30 návrhů, 15 úprav, 15 konverzí 2D/3D), balíček Mega Pack za 24,99 $ nabízí 90 kreditů za výhodnější cenu na kredit. Nový uživatel dostává 5 kreditů zdarma bez nutnosti zadat platební kartu. Stránka je pouze v angličtině.
+Klíčové vlastnosti
+- Generování obálky z briefu (titul, žánr, nálada)
+- 2D grafika pro tisk i 3D mockupy na web
+- Vzájemná konverze mezi 2D a 3D formátem
+- Úpravy textovým příkazem i maskováním oblasti
+Časté dotazy
+Co nástroj CoverDesignAI umí?
+Z vyplněného briefu (titul, žánr, nálada, symboly) vygeneruje návrhy obálek knih, a to jako 2D grafiku pro tisk i 3D mockupy pro web, s možností dalších úprav textovým příkazem, maskováním nebo podle nahraného vzoru.
+Kolik CoverDesignAI stojí?
+Funguje na kreditech bez expirace – Pro Pack za 9,99 $ obsahuje 30 kreditů (až 30 návrhů), Mega Pack za 24,99 $ nabízí 90 kreditů za výhodnější cenu za kredit.
+Jak začít a pro koho je nástroj určený?
+Je určený indie autorům a vydavatelům, kteří nechtějí čekat na grafika – stačí se zaregistrovat a nový uživatel dostane 5 kreditů zdarma bez nutnosti zadat platební kartu.
+Kategorie|E|
+|T|Dashworks|D|12.11.2026 15:42|P|AI asistent, který odpovídá na firemní otázky tím, že v reálném čase prohledává propojené nástroje (Slack, Notion, Jira, Google Drive aj.) a dává odpo...|M|EJAJ|X|Dashworks
+AI asistent, který odpovídá na firemní otázky tím, že v reálném čase prohledává propojené nástroje (Slack, Notion, Jira, Google Drive aj.) a dává odpovědi s odkazy na zdroje. Hodí se týmům podpory, produktovým manažerům a dalším, kteří tráví čas hledáním informací roztroušených napříč aplikacemi.
+O nástroji
+Dashworks funguje jako vrstva nad firemními nástroji – propojí se se Slackem, Notion, Dropboxem, Confluence, Jirou, GitHubem, Zendeskem, Teams a dalšími, a umožní zaměstnancům klást dotazy v přirozeném jazyce místo manuálního prohledávání dokumentů a konverzací. Na rozdíl od klasického enterprise search, který si data duplikuje (a tím vzniká zpoždění synchronizace a bezpečnostní riziko), Dashworks podle svého popisu vyhledává živě bez kopírování dat, takže se nastavuje během minut a respektuje aktuální přístupová oprávnění (ACL) okamžitě. Každá odpověď obsahuje odkazy na zdrojové dokumenty, aby šlo ověřit, odkud informace pochází. Využití cílí na support týmy (rychlejší odpovědi zákazníkům), produktové manažery (psaní dokumentace, analýza zpětné vazby uživatelů) a sales týmy (rychlejší uzavírání obchodů díky okamžitým odpovědím). Nabízí Slackbota, browser extension, vlastní bota a workflow šablony, které lze sdílet v týmu. Cena je $12/uživatel/měsíc (Team plán, měsíční platba, $10 při roční platbě) bez minima uživatelů, Business plán od $15/uživatel/měsíc (min. 10 licencí) s vlastními boty a výběrem LLM modelů, Enterprise plán na vyžádání s SSO, SCIM a API přístupem. K dispozici je 14denní zkušební verze bez nutnosti zadávat platební kartu. Stránka je pouze v angličtině.
+Klíčové vlastnosti
+- Živé prohledávání propojených aplikací bez indexace dat
+- Odpovědi s odkazy na zdrojové dokumenty
+- Slackbot a browser extension pro rychlé dotazy
+- Vlastní přizpůsobitelní AI boti pro různé týmy
+Časté dotazy
+Co přesně Dashworks umí?
+Prohledává v reálném čase propojené firemní nástroje jako Slack, Notion, Jira či Google Drive a na dotazy v přirozeném jazyce odpovídá s odkazy na zdrojové dokumenty, aniž by data kopíroval.
+Kolik Dashworks stojí?
+Team plán vyjde na $12/uživatel/měsíc (nebo $10 při roční platbě) bez minima uživatelů, Business plán od $15/uživatel/měsíc vyžaduje minimálně 10 licencí a Enterprise je na vyžádání.
+Pro koho je Dashworks vhodný a jak začít?
+Hodí se support týmům, produktovým manažerům i sales týmům, kteří tráví čas hledáním informací napříč aplikacemi. Lze vyzkoušet 14denní zkušební verzi bez nutnosti zadávat platební kartu.
+Kategorie|E|
+|T|CogBias AI|D|12.11.2026 15:42|P|CogBias AI pomáhá odhalit zkreslující formulace v průzkumových a dotazníkových otázkách (vedoucí otázky, rámcování, sociální žádoucnost apod.) a navrh...|M|EJAJ|X|CogBias AI
+CogBias AI pomáhá odhalit zkreslující formulace v průzkumových a dotazníkových otázkách (vedoucí otázky, rámcování, sociální žádoucnost apod.) a navrhne jejich přepracování tak, aby data z průzkumů byla přesnější.
+O nástroji
+Nástroj je určený pro tvůrce dotazníků, výzkumníky a produktové týmy, kteří potřebují ověřit, že jejich survey otázky nejsou zkreslené kognitivními předsudky. Detekuje šest typů zkreslení – leading question bias, framing effect, confirmation bias, social desirability bias, loaded language a double-barreled questions – a ke každé otázce nabídne vylepšenou alternativu. Funguje na principu pipeline: vstupní text otázky se porovná s databází typů zkreslení, vygenerují se kandidátní hypotézy, proběhne víceúrovňové skórování a validace konzistence, a výstupem je seřazené doporučení s upravenou formulací. Podle vlastního výzkumu autorů bylo přibližně o 70 % více otázek zodpovězeno přesněji při použití CogBias oproti tradičním formulacím. Nástroj je v angličtině a nabízí čtyři cenové úrovně: Individual/Student za 20 USD/měsíc se základní detekcí a rephrasing funkcí a e-mailovou podporou, dále Startup, Enterprise a Academic plány na vyžádání (Contact us), které přidávají spolupráci více uživatelů, reporty, integrace do workflow či prioritní podporu pro výzkum. Deklarují ochranu dat (šifrování TLS, nezáznam dat pro trénink modelů, připravenost na SOC 2 a GDPR).
+Klíčové vlastnosti
+- Detekce šesti typů zkreslení otázek (leading, framing, confirmation, social desirability, loaded language, double-barreled)
+- Automatický návrh přepracované formulace otázky
+- Víceúrovňové skórování a validace konzistence návrhů
+- Seřazený výstup doporučení podle relevance
+Časté dotazy
+Co přesně CogBias AI umí?
+Analyzuje formulace průzkumových otázek, detekuje šest typů kognitivního zkreslení (např. vedoucí otázky, rámcování, sociální žádoucnost) a ke každé problematické otázce navrhne přepracovanou, přesnější verzi.
+Kolik CogBias AI stojí?
+Plán Individual/Student vyjde na 20 USD měsíčně a zahrnuje základní detekci, rephrasing a e-mailovou podporu. Plány Startup, Enterprise a Academic s rozšířenými funkcemi (spolupráce, reporty, integrace) jsou na vyžádání po kontaktování prodeje.
+Pro koho je nástroj určený a jak začít?
+Je určen tvůrcům dotazníků, výzkumníkům a produktovým týmům, kteří chtějí ověřit, že jejich otázky nejsou zkreslené. Začít lze objednáním dema přes web nebo volbou placeného plánu podle velikosti týmu.
+Kategorie|E|
+|T|HealthKey|D|12.11.2026 15:42|P|Nástroj pro týmy klinických studií, který pomocí AI prohledává data v EHR a najde pacienty splňující kritéria zařazení do studie. Hodí se výzkumným ce...|M|EJAJ|X|HealthKey
+Nástroj pro týmy klinických studií, který pomocí AI prohledává data v EHR a najde pacienty splňující kritéria zařazení do studie. Hodí se výzkumným centrům a koordinátorům studií, kteří chtějí urychlit nábor pacientů a snížit počet screening failures.
+O nástroji
+HealthKey se napojí na nemocniční systém EHR a na základě zadaných inkluzních a exkluzních kritérií studie pomocí AI projde záznamy pacientů a najde ty, kteří by mohli splňovat podmínky pro zařazení do klinické studie. Výsledné shody s doloženými údaji ze zdravotní dokumentace pak výzkumný tým dostává do dashboardu, kde je může ručně ověřit a kvalifikovat. Nasazení má podle webu trvat zhruba týden a systém je popisován jako HIPAA compliant. Cenový model je postaven na success fee za pacienta – bez počátečních nákladů, platí se jen při úspěšném zařazení pacienta do studie. V rámci aktuální nabídky (platné do 30. 11. 2026, omezené na 20 nových pracovišť za čtvrtletí) je zdarma implementace (hodnota 15 000 $), nastavení protokolu pro 5 studií (5 000 $) a prémiová podpora (2 500 $). Nástroj je určen primárně pro provozovatele a koordinátory klinických studií v nemocnicích a výzkumných centrech, nikoliv pro jednotlivé pacienty.
+Klíčové vlastnosti
+- Napojení na nemocniční systém EHR
+- AI vyhledávání pacientů podle kritérií studie
+- Kontrola inkluzních a exkluzních kritérií
+- Dashboard s doloženými shodami pro ruční ověření
+Časté dotazy
+Co HealthKey přesně dělá?
+Napojí se na nemocniční EHR systém a pomocí AI prohledá záznamy pacientů podle zadaných inkluzních a exkluzních kritérií klinické studie. Nalezené shody s doloženými údaji ze zdravotní dokumentace dostane výzkumný tým do dashboardu k ruční kontrole a kvalifikaci.
+Kolik HealthKey stojí?
+Platí se formou success fee za každého úspěšně zařazeného pacienta, bez počátečních nákladů. V aktuální nabídce (platné do 30. 11. 2026, omezené na 20 pracovišť za čtvrtletí) je navíc zdarma implementace, nastavení protokolu pro 5 studií a prémiová podpora.
+Pro koho je HealthKey určen a jak začít?
+Je určen výzkumným centrům a koordinátorům klinických studií v nemocnicích, ne jednotlivým pacientům. Nasazení trvá podle webu zhruba týden, zájemci kontaktují poskytovatele kvůli napojení na EHR a nastavení konkrétní studie.
+Kategorie|E|
+|T|Refact.ai|D|12.11.2026 15:42|P|Autonomní AI coding agent pro vývojáře, který přímo v IDE plánuje a provádí úkoly nad celým repozitářem – od generování kódu přes debugování až po úpr...|M|EJAJ|X|Refact.ai
+Autonomní AI coding agent pro vývojáře, který přímo v IDE plánuje a provádí úkoly nad celým repozitářem – od generování kódu přes debugování až po úpravy podle architektury projektu.
+O nástroji
+Refact.ai je open-source AI agent pro programování, který funguje jako plugin do IDE. Umí autonomně rozložit zadaný úkol na kroky, prohledat a analyzovat celý repozitář kvůli kontextu, a napojit se na GitHub, databáze nebo CI/CD pipeline. Kromě agenta nabízí i in-IDE chat s kontextem 32k tokenů pro dotazy, úpravy a generování kódu v přirozeném jazyce, a autocompletion poháněný modelem Qwen2.5-Coder s využitím RAG, který navrhuje další řádky nebo funkce na základě projektu. Podporuje přes 25 programovacích jazyků. Nástroj je možné nasadit on-premise, jako SaaS nebo na AWS, což oceňují firmy chránící svá data – agent se navíc dokáže učit z firemní dokumentace a kódu a budovat si znalostní bázi pro tým. Bezplatná verze nabízí omezené denní použití autonomního agenta a chat s 32k kontextem, placené plány začínají od 10 USD. Celá stránka i dokumentace jsou pouze v angličtině.
+Klíčové vlastnosti
+- Autonomní agent plánuje a provádí úkoly nad celým repozitářem
+- In-IDE chat s kontextem 32k tokenů
+- Autocompletion s modelem Qwen2.5-Coder a RAG
+- Napojení na GitHub, databáze a CI/CD pipeline
+Časté dotazy
+Co přesně Refact.ai umí?
+Je to autonomní AI coding agent v IDE, který rozloží zadaný úkol na kroky, prohledá celý repozitář kvůli kontextu a sám generuje, upravuje a debuguje kód. Umí se napojit na GitHub, databáze i CI/CD pipeline a navrhuje další řádky kódu pomocí autocompletion.
+Kolik Refact.ai stojí?
+Bezplatná verze nabízí omezené denní použití autonomního agenta a chat s 32k kontextem. Placené plány začínají od 10 USD měsíčně.
+Pro koho je Refact.ai vhodný a jak začít?
+Hodí se pro vývojáře a firmy, které chtějí agenta integrovat přímo do IDE, případně nasadit on-premise kvůli ochraně dat. Stačí nainstalovat plugin do IDE a popsat úkol, agent naplánuje a provede zbytek.
+Kategorie|E|
+|T|Picsi.AI|D|12.11.2026 15:42|P|Picsi.AI slouží k záměně obličejů ve fotkách, videích a GIFech pomocí AI (face swap), a to na webu, v Discordu, na iPhonu/iPadu i Macu. Hodí se lidem,...|M|EJAJ|X|Picsi.AI
+Picsi.AI slouží k záměně obličejů ve fotkách, videích a GIFech pomocí AI (face swap), a to na webu, v Discordu, na iPhonu/iPadu i Macu. Hodí se lidem, kteří chtějí rychle vytvořit vtipné nebo kreativní záměny tváří, streamovat live face swap přes kameru, nebo pracovat se záměnami přímo v Photoshopu.
+O nástroji
+Picsi.AI je nástroj postavený na technologii InsightFace (INSwapper), který umí nahradit obličej na fotce, ve videu nebo GIFu za obličej z nahraného snímku – stačí nahrát čistou fotku obličeje zepředu, vybrat scénu a výsledek stáhnout během pár sekund. Kromě klasické záměny v obrázcích podporuje i živé snímání přes kameru (LiveCam) na iOS a macOS, screen capture na Macu, záměnu až 4 obličejů v jedné fotografii a funkci PersonaMagic Canvas pro tvorbu nových scén se zachováním identity osoby. K dispozici je také Discord bot, Chrome rozšíření pro záměnu obličejů přímo na webu a plugin do Adobe Photoshopu (jen pro platící uživatele). Zdarma lze využívat 10 kreditů denně s omezeními – výstupy z mobilní aplikace mají opakující se vodoznak, živé nahrávky a export videa jsou omezené na 5 sekund a GIFy na 2 sekundy/200 snímků. Placené plány odstraňují vodoznak a prodlužují limity: Basic za 9,99 $/měsíc (200 kreditů denně, videa a GIFy, komerční využití výsledků), Pro za 19,99 $/měsíc (400 kreditů denně, delší videa až 20 minut na Macu) a Ultra za 34,99 $/měsíc. Rozhraní i veškerý obsah stránky jsou pouze v angličtině, nástroj nemá českou lokalizaci ani zjevnou vazbu na Česko.
+Klíčové vlastnosti
+- Záměna obličeje ve fotce, videu i GIFu
+- Záměna až 4 obličejů v jedné fotografii
+- Živé snímání přes kameru na iOS a macOS
+- PersonaMagic Canvas pro nové scény se zachováním identity
+Časté dotazy
+Co přesně Picsi.AI umí?
+Nahradí obličej na fotce, ve videu nebo GIFu za obličej z nahraného snímku – stačí nahrát čistou fotku zepředu, vybrat scénu a výsledek stáhnout během pár sekund. Podporuje i živé snímání přes kameru, záměnu více obličejů najednou a práci v Photoshopu či Discordu.
+Kolik Picsi.AI stojí?
+Zdarma je 10 kreditů denně s omezeními (vodoznak, kratší videa a GIFy). Placené plány odstraňují vodoznak a zvyšují limity: Basic 9,99 $/měsíc, Pro 19,99 $/měsíc a Ultra 34,99 $/měsíc.
+Pro koho je Picsi.AI vhodné a jak začít?
+Hodí se pro lidi, kteří chtějí rychle vytvořit vtipné nebo kreativní záměny tváří, streamovat live face swap, nebo pracovat se záměnami v Photoshopu. Stačí nahrát fotku obličeje a vybrat scénu na webu, v appce nebo přes Discord bota.
+Kategorie|E|
+|T|Pikzels|D|12.11.2026 15:42|P|Nástroj na tvorbu a vylepšování YouTube miniatur pomocí AI – hodí se youtuberům, kteří chtějí zvýšit míru prokliku (CTR) bez grafika.|M|EJAJ|X|Pikzels
+Nástroj na tvorbu a vylepšování YouTube miniatur pomocí AI – hodí se youtuberům, kteří chtějí zvýšit míru prokliku (CTR) bez grafika.
+O nástroji
+Pikzels je AI generátor miniatur zaměřený výhradně na YouTube. Miniaturu lze vytvořit z textového popisu (Prompt-to-Thumbnail), nebo vložením odkazu na existující video, jehož vizuální styl nástroj napodobí a přizpůsobí vlastnímu obsahu (Recreate). Úpravy se dělají jednoduchými textovými poznámkami bez nutnosti grafických dovedností. Funkce Pikzels Score ohodnotí nahranou miniaturu a titulek podle virality, srozumitelnosti, nápadu, zvědavosti a emoce, a One-Click Fix pak automaticky upraví slabá místa. Uživatel si také může nahrát 3 fotky sebe a vytvořit „Personu“ pro opakované použití své podoby na miniaturách bez focení, nebo nahrát 3 miniatury a uložit si vlastní vizuální styl pro konzistentní vzhled napříč videi. Nástroj umí pracovat v libovolném jazyce zadávání promptů. Placené plány začínají u varianty Premium za 40 $/měsíc (28 $/měsíc při roční platbě, tj. 336 $ ročně) s 18 000 kredity, kde vytvoření jedné miniatury stojí 10–20 kreditů, trénink persony 10 kreditů a trénink stylu 50 kreditů. Web je čistě anglický, bez zmínky o české lokalizaci.
+Klíčové vlastnosti
+- Tvorba miniatury z textového popisu (Prompt-to-Thumbnail)
+- Napodobení stylu existujícího videa (Recreate)
+- Úpravy miniatury pomocí textových poznámek
+- Hodnocení miniatury a titulku (Pikzels Score) podle virality a emoce
+Časté dotazy
+Co přesně Pikzels umí?
+Vytváří a vylepšuje YouTube miniatury – buď z textového popisu, nebo podle stylu existujícího videa. Miniaturu lze upravovat textovými poznámkami, nechat ohodnotit nástrojem Pikzels Score a slabá místa opravit jedním kliknutím.
+Kolik Pikzels stojí?
+Placené plány začínají u varianty Premium za 40 $/měsíc (28 $/měsíc při roční platbě) s 18 000 kredity, kde jedna miniatura stojí 10–20 kreditů.
+Pro koho je Pikzels vhodný a jak začít?
+Je určený youtuberům, kteří chtějí zvýšit prokliky bez grafika – stačí zadat prompt nebo vložit odkaz na video, jehož styl má nástroj napodobit, případně si nahrát vlastní fotky pro Personu.
+Kategorie|E|
+|T|Screenloop|D|12.11.2026 15:42|P|AI nástroj pro náborové (recruiting) týmy, který spojuje ATS, AI poznámkovač z pohovorů a automatizaci – nahrazuje více samostatných nástrojů používan...|M|EJAJ|X|Screenloop
+AI nástroj pro náborové (recruiting) týmy, který spojuje ATS, AI poznámkovač z pohovorů a automatizaci – nahrazuje více samostatných nástrojů používaných při náboru.
+O nástroji
+Screenloop je AI-native applicant tracking systém (ATS) určený in-house náborovým týmům ve startupech, SME a rostoucích firmách. Kromě klasické evidence pozic a kandidátů nabízí AI Notetaker na pohovorech, hodnocení kandidátů podle definovaných kvalifikací (např. jazyk, vedení, vzdělání, zkušenosti, soft skills), přehledy výkonu náboru (počet uchazečů, obsazenost pozic, průměrná doba na obsazení, míra průchodu jednotlivými fázemi) a správu pracovních workflow (phone screen, technické kolo, panel, finále, nabídka). Součástí platformy jsou i doplňkové moduly: Pulse pro anonymizované průzkumy spokojenosti kandidátů a hiring manažerů v průběhu náboru (s vlastními dotazníky a šablonami), a automatizované referencování – sběr referencí od doporučujících osob do 48 hodin s uváděnou 97% úspěšností dokončení, analýza soft skills, sebehodnocení kandidátů a generování reportů pro hiring manažery včetně podkladů pro onboarding. Nástroj je určen primárně týmům zodpovědným za nábor (recruiteři, hiring manažeři, interviewers) spíše než jednotlivcům. Stránka je pouze v angličtině a přístup k funkcím vyžaduje rezervaci dema přes formulář „Book Demo“ – přesné ceny nejsou na stránce uvedeny.
+Klíčové vlastnosti
+- AI Notetaker automaticky zapisuje průběh pohovoru
+- Hodnocení kandidátů podle definovaných kvalifikací
+- Přehledy obsazenosti pozic a doby náboru
+- Správa workflow náboru (screen, technické kolo, panel, nabídka)
+Časté dotazy
+Co přesně Screenloop umí?
+Je to AI-native ATS pro nábor, který eviduje pozice a kandidáty, automaticky zapisuje poznámky z pohovorů, hodnotí kandidáty podle definovaných kritérií a nabízí přehledy výkonu náboru i automatizované referencování.
+Kolik Screenloop stojí?
+Ceny nejsou na webu zveřejněné, zájemci musí kontaktovat prodejní tým přes rezervaci dema („Book Demo“).
+Pro koho je Screenloop určen a jak začít?
+Je určen in-house náborovým týmům – recruiterům, hiring manažerům a interviewerům ve startupech, SME a rostoucích firmách. Začít lze rezervací dema přes formulář na webu.
+Kategorie|E|
+|T|Vocalist.ai|D|12.11.2026 15:42|P|Vocalist.ai slouží k úpravě zpěvu v hudební produkci – mění tón hlasu podle natrénovaných zpěváků, opravuje intonaci a odděluje vokály od instrumentál...|M|EJAJ|X|Vocalist.ai
+Vocalist.ai slouží k úpravě zpěvu v hudební produkci – mění tón hlasu podle natrénovaných zpěváků, opravuje intonaci a odděluje vokály od instrumentálu. Hodí se songwriterům, kteří si potřebují poslechnout topline v jiném hlase, i producentům a remixerům, kteří potřebují rychle čisté stemy nebo doladěný vokál.
+O nástroji
+Nástroj nabízí tři samostatné funkce: Transform převádí nahraný vokál do podoby jednoho z licencovaných zpěváků/rapperů, Tune zajišťuje AI korekci výšky tónu (jemnou i tvrdě tuned efekt) a Split rozděluje mix na vokální a instrumentální stopu, případně odstraní reverb. Všechny tři nástroje lze použít nezávisle na sobě nebo v kombinaci v rámci jednoho pracovního postupu. Hlasové modely jsou podle výrobce natrénované na smluvně zajištěných zpěvácích, kteří se podílí na výnosech (Fairly Trained modely), a výstupy z placeného plánu jsou royalty-free pro komerční využití. Cenový model je postavený na kreditech – Transform má neomezené náhledy zdarma, kredity se platí pouze za stažení transformovaného zvuku (1 kredit = 1 minuta), zatímco Tune a Split mají neomezené stahování bez kreditů ve všech placených plánech. Nevyužité kredity se převádí do dalšího měsíce, pokud předplatné trvá. K dispozici je 7denní zkušební verze s 10 kredity na Transform, ovšem výstupy z trialu jsou určené jen pro evaluaci, ne pro komerční vydání – pro komerční použití je nutný placený plán.
+Klíčové vlastnosti
+- Transformace vokálu do podoby licencovaného zpěváka/rappera
+- AI korekce intonace s jemným i tvrdě tuned efektem
+- Rozdělení mixu na vokální a instrumentální stopu
+- Odstranění reverbu z nahrávky
+Časté dotazy
+Co přesně Vocalist.ai umí?
+Nabízí tři nástroje: Transform mění hlas na jednoho z licencovaných zpěváků, Tune opravuje intonaci vokálu a Split odděluje vokál od instrumentálu, případně odstraní reverb. Lze je použít samostatně i v kombinaci.
+Kolik to stojí a co je zdarma?
+Transform nabízí neomezené náhledy zdarma, platí se jen za stažení (1 kredit = 1 minuta), zatímco Tune a Split mají neomezené stahování bez kreditů v placených plánech. K dispozici je 7denní zkušební verze s 10 kredity na Transform, ale výstupy z ní slouží jen k evaluaci, ne ke komerčnímu vydání.
+Pro koho je nástroj určený a jak začít?
+Hodí se songwriterům, kteří chtějí slyšet topline v jiném hlase, i producentům a remixerům potřebujícím čisté stemy nebo doladěný vokál. Začít lze přes 7denní free trial, pro komerční využití je nutný placený plán.
+Kategorie|E|
+|T|Koroverse|D|12.11.2026 15:42|P|Koroverse je AI nástroj pro tvorbu fikčních světů, postav a sledování kontinuity příběhu – hodí se spisovatelům, herním mistrům tabletop RPG a tvůrcům...|M|EJAJ|X|Koroverse
+Koroverse je AI nástroj pro tvorbu fikčních světů, postav a sledování kontinuity příběhu – hodí se spisovatelům, herním mistrům tabletop RPG a tvůrcům her, kteří potřebují udržet konzistentní lore napříč rozsáhlým příběhem.
+O nástroji
+Nástroj nabízí šest hlavních funkcí: generování světa z krátkého popisu (geografie, frakce, historie, fyzikální/magická pravidla), tvorbu postav s propojenými backstory a vztahy, správu lore formou propojeného znalostního grafu, AI kontrolu kontinuity příběhu (upozorní například na ztracený meč ze tří kapitol zpět nebo zničené město, které se znovu objeví), podporu přes 200 žánrových šablon (sci-fi, fantasy, noir, cosmic horror a další) a export do PDF/Markdown se sdílením v reálném čase. Cenově je dostupná varianta Explorer zdarma navždy (1 svět, 50 postav, základní generování, komunitní šablony, bez nutnosti platební karty). Plán Creator za 9 $/měsíc přidává neomezené postavy, pokročilou AI kontinuitu, export a prioritní frontu generování. Plán Studio za 29 $/měsíc nabízí neomezené světy, real-time spolupráci, API přístup, SSO a vlastní dotrénování AI – u tohoto plánu je potřeba kontaktovat obchodní oddělení. K dispozici je i roční platba se slevou a 50% sleva pro studenty a učitele. Nástroj je celý v angličtině (stránka i rozhraní), žádná lokalizace do češtiny není zmíněna. Za platformou stojí malý tým (Koroverse Labs) založený v Austinu v Texasu v roce 2023, bez vazby na Česko.
+Klíčové vlastnosti
+- Generování světa z krátkého popisu (geografie, frakce, historie, pravidla)
+- Tvorba postav s provázanými backstory a vztahy
+- Znalostní graf pro správu lore a timeline
+- AI kontrola kontinuity odhalí rozpory v ději
+Časté dotazy
+Co přesně Koroverse umí?
+Pomocí AI vygeneruje z krátkého popisu celý fikční svět včetně postav, frakcí, timeline a lore, a hlídá, aby vše zůstalo vzájemně konzistentní.
+Kolik Koroverse stojí?
+Plán Explorer je zdarma navždy (1 svět, 50 postav, bez karty). Creator vyjde na 9 $/měsíc, Studio s neomezenými světy a API na 29 $/měsíc, k dispozici je i roční platba se slevou.
+Pro koho je nástroj vhodný a jak začít?
+Hodí se spisovatelům, herním mistrům RPG i tvůrcům her – stačí popsat koncept světa a Koroverse rovnou vygeneruje mapu, postavy i frakce, začít lze zdarma bez platební karty.
+Kategorie|E|
+|T|Zing AI|D|12.11.2026 15:42|P|Mobilní aplikace (iPhone, Apple Watch) pro domácí i posilovnové tréninky s AI trenérem, který pomocí kamery telefonu sleduje techniku cviků a odhaduje...|M|EJAJ|X|Zing AI
+Mobilní aplikace (iPhone, Apple Watch) pro domácí i posilovnové tréninky s AI trenérem, který pomocí kamery telefonu sleduje techniku cviků a odhaduje tělesné složení z fotek. Hodí se lidem, kteří chtějí personalizovaný tréninkový plán bez osobního trenéra.
+O nástroji
+Zing AI je fitness aplikace pro iPhone s podporou Apple Watch, která generuje tréninkové plány z databáze téměř 500 cviků (síla, HIIT, strečink, regenerace) podle zadaného času, cíle a aktuální úrovně zjištěné Fitness a Flexibility testem. Funkce Zing Vision využívá kameru telefonu k real-time sledování pohybu a zpětné vazbě na techniku, zatímco AI Body Scan odhaduje tělesný tuk a svalovou hmotu z fotek (fotky jsou podle výrobce po analýze smazány). Aplikace denně sbírá údaje o náladě, energii a spánku a podle nich upravuje plán, integruje se s Apple Health/HealthKit a sleduje únavu svalů napříč tréninky. Aplikace je zdarma ke stažení s nákupy v aplikaci – uvedené ceny předplatného se pohybují v rozmezí 18,99–59,99 USD (různé délky předplatného), je nabízena zkušební verze. Rozhraní je anglické (plus dalších pár jazyků), česká lokalizace není doložena. Jde o čistě mobilní produkt (iPhone, Apple Watch), bez webové verze.
+Klíčové vlastnosti
+- Real-time sledování techniky cviků kamerou (Zing Vision)
+- AI Body Scan odhadne tělesný tuk a svalovou hmotu z fotek
+- Databáze téměř 500 cviků (síla, HIIT, strečink, regenerace)
+- Denní sledování nálady, energie a spánku s úpravou plánu
+Časté dotazy
+Co Zing AI umí?
+Aplikace vytváří personalizované tréninkové plány z téměř 500 cviků, pomocí kamery telefonu sleduje v reálném čase techniku provedení (Zing Vision) a odhaduje tělesné složení z fotek (AI Body Scan). Denně se ptá na náladu, energii a spánek a podle toho plán upravuje.
+Kolik Zing AI stojí?
+Aplikace je zdarma ke stažení, placené předplatné se pohybuje mezi 18,99–59,99 USD podle délky období, k dispozici je i zkušební verze.
+Pro koho je Zing AI vhodný a jak začít?
+Hodí se lidem, kteří chtějí domácí nebo posilovnový trénink s AI trenérem bez nutnosti osobního kouče. Stačí stáhnout aplikaci z App Store na iPhone (podporuje i Apple Watch), absolvovat Fitness a Flexibility test a nechat si vygenerovat plán.
+Kategorie|E|
+|T|Runday|D|12.11.2026 15:42|P|AI agent (Alice) pro firmy, který na webu i přes WhatsApp/SMS/Messenger aktivně oslovuje potenciální zákazníky, kvalifikuje je a rovnou jim domlouvá s...|M|EJAJ|X|Runday
+AI agent (Alice) pro firmy, který na webu i přes WhatsApp/SMS/Messenger aktivně oslovuje potenciální zákazníky, kvalifikuje je a rovnou jim domlouvá schůzku v kalendáři obchodníka.
+O nástroji
+Runday je B2B nástroj na automatizaci obchodního procesu pomocí AI agenta jménem Alice. Agent vyhledává a oslovuje potenciální zákazníky hyper-personalizovanými zprávami na základě jejich sociálních profilů a firemních dat, odpovídá na dotazy návštěvníků webu podle nahraných obchodních materiálů a propojuje se s kalendářem a CRM, aby zvládl rovnou domluvit a připomenout schůzku. Umí také přebírat zákaznickou podporu – podle dokladů zvládne odpovědět na většinu běžných dotazů a eskaluje jen složitější případy na člověka. Agent se nastavuje přes jednoduchý Google Sheets spreadsheet (úprava textů, tlačítek, loga, pozadí), bez nutnosti programování. Komunikace probíhá přes web, SMS, WhatsApp či Messenger, ve vyšších plánech i LinkedIn. Platby od zákazníků lze vybírat napojením na Stripe, pro vyšší tarify je k dispozici i CRM integrace, video avatary nebo rozpoznávání hlasu. Nástroj je rozdělen do čtyř placených plánů (Starter, Professional, Growth, Enterprise), které se liší počtem zpracovaných leadů měsíčně, počtem kampaní a rozsahem integrací (např. napojení na Meta/Google Ads, custom API). Ceny nejsou veřejně uvedené – k objednání je nutné kontaktovat obchodní tým („Talk to Sales“). Cílovka jsou menší i větší firmy, které chtějí automatizovat prospecting, kvalifikaci leadů a rezervace schůzek napříč více komunikačními kanály. Rozhraní i veškerá dokumentace jsou pouze v angličtině.
+Klíčové vlastnosti
+- Vyhledává a oslovuje leady hyper-personalizovanými zprávami
+- Odpovídá návštěvníkům webu podle nahraných obchodních materiálů
+- Domlouvá schůzky přímo do kalendáře obchodníka
+- Propojení s CRM a kalendáři, připomínky schůzek
+Časté dotazy
+Co přesně Runday umí?
+AI agent Alice vyhledává a oslovuje potenciální zákazníky personalizovanými zprávami, kvalifikuje je, odpovídá na dotazy podle vašich materiálů a rovnou domlouvá schůzky v kalendáři obchodníka. Zvládne také převzít zákaznickou podporu a eskalovat složitější případy na člověka.
+Kolik Runday stojí?
+Ceny nejsou veřejně uvedené – nástroj nabízí čtyři plány (Starter, Professional, Growth, Enterprise) lišící se počtem leadů a integrací, k objednání je nutné kontaktovat obchodní tým přes „Talk to Sales“.
+Pro koho je Runday vhodný a jak začít?
+Je určen menším i větším firmám, které chtějí automatizovat prospecting, kvalifikaci leadů a rezervace schůzek napříč více kanály. Nastavení probíhá bez programování přes jednoduchý Google Sheets spreadsheet, start je ale podmíněn kontaktováním obchodního týmu.
+Kategorie|E|
+|T|Showrunner|D|12.11.2026 15:42|P|Platforma pro tvorbu a sledování AI generovaných seriálů a filmů – uživatel si vytvoří vlastní svět s postavami a epizodami, nebo remixuje existující ...|M|EJAJ|X|Showrunner
+Platforma pro tvorbu a sledování AI generovaných seriálů a filmů – uživatel si vytvoří vlastní svět s postavami a epizodami, nebo remixuje existující show jiných tvůrců.
+O nástroji
+Showrunner je zaměřen na serializovaný AI obsah, ne na krátká klipová videa – důraz je kladen na kontinuitu napříč epizodami, trvalé postavy a rozvíjející se „canon“ světa. Tvorbu lze zahájit z YouTube odkazu, nahráním vlastního videa, vytvořením scény nebo kombinací více scén; postavy si lze upravit podle vzhledu a hlasu a následně je používat napříč díly. Hotové show jdou publikovat, diváci je mohou sledovat, remixovat nebo psát další epizody, zatímco původní autor si drží kanonickou kontrolu nad světem. Nástroj obsahuje i ekonomický model – pokud fanoušci platí za remixování cizího světa, odměna jde zpět tvůrci původního díla, a úspěšné show mohou být kurátorsky zařazeny do sítě Showrunner vedle dalších populárních projektů. Platforma pořádá i komunitní soutěže (např. soutěž v univerzu Gossip Goblin s odměnou 20 000 USD) a má komunitu na Discordu. Aktuálně je dostupná přes web, chystá se iOS aplikace (zatím jen pro USA, „Coming Soon“). Stránka i rozhraní jsou pouze v angličtině.
+Klíčové vlastnosti
+- Tvorba vlastního světa s trvalými postavami a epizodami
+- Remixování cizích show při zachování kanonické kontroly autora
+- Start z YouTube odkazu, vlastního videa nebo scény
+- Úprava vzhledu a hlasu postav napříč díly
+Časté dotazy
+Co Showrunner umí?
+Umožňuje vytvořit vlastní seriál nebo film s AI generovanými postavami a epizodami, případně remixovat existující show jiných tvůrců se zachováním kontinuity a kanonu světa.
+Kolik Showrunner stojí?
+Ceník není na webu uveden, platforma ale obsahuje ekonomický model, kde fanoušci mohou platit za remixování cizích světů a odměna jde zpět původnímu tvůrci.
+Pro koho je Showrunner a jak začít?
+Je určen tvůrcům i divákům AI seriálů – stačí se přihlásit na webu a vytvořit show z YouTube odkazu, vlastního videa nebo scény; brzy přibude i iOS aplikace (zatím jen pro USA).
+Kategorie|E|
+|T|Palazzo|D|12.11.2026 15:42|P|Palazzo nabízí AI virtuální staging interiérů a vizualizaci nábytku z reálného katalogu – hodí se realitním makléřům, kteří chtějí za 60 sekund z fotk...|M|EJAJ|X|Palazzo
+Palazzo nabízí AI virtuální staging interiérů a vizualizaci nábytku z reálného katalogu – hodí se realitním makléřům, kteří chtějí za 60 sekund z fotky prázdného pokoje udělat zařízený interiér, a nábytkářským značkám, které chtějí ukázat zákazníkům svůj katalog přímo v jejich pokoji s možností nákupu.
+O nástroji
+Nástroj funguje na principu „jedna fotka dovnitř, hotový pokoj ven“ – nahrajete snímek prázdné nebo neaktuální místnosti a Palazzo do minuty vygeneruje fotorealistickou verzi se zařízením. Klíčový rozdíl oproti běžným AI nástrojům na design interiérů je v tom, že nábytek v obrázku není vymyšlený – jde o reálné produkty s konkrétním SKU a cenou, které si kupující může rovnou koupit (prokliknout do e-shopu). To cílí jednak na realitní makléře a kanceláře (produkt Spaces), jednak na nábytkářské značky a výrobce, kteří chtějí zákazníkům ukázat svůj katalog v jejich vlastním pokoji a prodávat celé sestavy (produkty Showcase a Studio). Ceny pro realitní segment jsou veřejné: Starter (sólo agent) 50 $/měsíc za neomezený staging, Growth (tým do 10 agentů) 349 $/měsíc, Pro (tým do 25 agentů) 750 $/měsíc, Scale (enterprise brokerage) na vyžádání. Multifamily a developerské projekty se cení individuálně podle budovy/projektu, ne na obrázek ani na kredity. Solo agenti mohou vyzkoušet Starter plán zdarma bez kreditní karty, vyšší plány a produkty Showcase/Studio začínají demem s obchodním týmem. Nástroj je plně v angličtině a nejde o český produkt – web ani rozhraní neuvádí žádnou lokalizaci. Firmu založili Raffi Holzer (dříve zakladatel Avvir, prodáno Hexagonu) a tenistka Venus Williams, která se podílí na designérské stránce produktu.
+Klíčové vlastnosti
+- Staging prázdné místnosti do 60 sekund z jedné fotky
+- Nábytek je reálný – konkrétní SKU, cena a prokliknutí do e-shopu
+- Žádné 3D modely ani CAD soubory, stačí fotky z katalogu
+- Stylist doporučí celou sestavu nábytku k vybranému kusu
+Časté dotazy
+Co Palazzo přesně umí?
+Nahrajete fotku prázdné nebo neaktuální místnosti a Palazzo do 60 sekund vygeneruje fotorealistický zařízený pokoj s reálným nábytkem, který má konkrétní SKU, cenu a jde rovnou koupit.
+Kolik Palazzo stojí?
+Pro realitní segment (Spaces) jsou ceny veřejné: Starter 50 $/měsíc pro sólo agenta, Growth 349 $/měsíc pro tým do 10 agentů, Pro 750 $/měsíc pro tým do 25 agentů, Scale na vyžádání. Produkty Showcase a Studio pro nábytkářské značky se řeší individuální nabídkou po demu.
+Pro koho je Palazzo a jak začít?
+Hodí se realitním makléřům a kancelářím pro virtuální staging listingů a nábytkářským značkám pro shoppable vizualizaci katalogu a produktovou fotografii. Sólo agenti mohou vyzkoušet Starter plán zdarma bez karty, ostatní začínají demem s obchodním týmem.
+Kategorie|E|
+|T|Jessica - Better Speech|D|12.11.2026 15:42|P|Jessica je AI asistentka pro řečovou terapii, dostupná 24/7, která mezi sezeními s licencovaným logopedem pomocí rozpoznávání řeči a jazykových modelů...|M|EJAJ|X|Jessica - Better Speech
+Jessica je AI asistentka pro řečovou terapii, dostupná 24/7, která mezi sezeními s licencovaným logopedem pomocí rozpoznávání řeči a jazykových modelů vyhodnocuje výslovnost a dává zpětnou vazbu. Hodí se lidem (nebo rodičům dětí) procházejícím terapii v rámci Better Speech, kteří chtějí procvičovat i mimo placené sezení s terapeutem.
+O nástroji
+Jessica není samostatný placený nástroj, ale doplňková AI funkce v rámci platformy Better Speech pro online řečovou terapii. Pomocí rozpoznávání řeči a velkých jazykových modelů analyzuje uživatelovu výslovnost, identifikuje problémy a poskytuje zpětnou vazbu na procvičovaná cvičení kdykoliv mezi pravidelnými sezeními s lidským logopedem. K dispozici je přes zařízení s výběrem avatara a je součástí balíčku, ne samostatná placená služba. Samotný program Better Speech, jehož je Jessica součástí, stojí 79,95 $/týden (fakturováno 319,80 $ každé 4 týdny) a zahrnuje 4 týdenní individuální sezení s licencovaným terapeutem plus neomezený přístup ke cvičením (kde Jessica pomáhá s procvičováním). Službu lze hradit i přes pojištění nebo HSA/FSA karty, k dispozici je i finanční pomoc pro ty, kdo si terapii nemohou dovolit. Stránka je pouze v angličtině a cílí na americký trh (zmínka o Medicare, HSA/FSA, Zoom sezeních).
+Klíčové vlastnosti
+- Vyhodnocování výslovnosti pomocí rozpoznávání řeči
+- Zpětná vazba na procvičovaná cvičení kdykoliv 24/7
+- Dostupná mezi sezeními s licencovaným logopedem
+- Výběr avatara pro komunikaci s AI asistentkou
+Časté dotazy
+Co přesně Jessica umí?
+Jessica je AI asistentka, která pomocí rozpoznávání řeči a jazykových modelů vyhodnocuje výslovnost uživatele, identifikuje problémy a dává zpětnou vazbu na procvičovaná cvičení kdykoliv mezi sezeními s lidským terapeutem.
+Kolik Jessica stojí?
+Jessica není samostatně placená – je součástí programu Better Speech, který stojí 79,95 $/týden (fakturace 319,80 $ každé 4 týdny) a zahrnuje 4 týdenní sezení s terapeutem plus neomezené procvičování s Jessicou.
+Pro koho je Jessica vhodná a jak začít?
+Je určená klientům (nebo rodičům dětí) v řečové terapii Better Speech, kteří chtějí procvičovat i mimo placená sezení. Začíná se zapsáním do programu Better Speech, platbu lze řešit i přes pojištění nebo HSA/FSA kartu.
+Kategorie|E|
+|T|Anura|D|12.11.2026 15:42|P|Anura změří z 30sekundového videoselfie přes 100 zdravotních parametrů (tep, dech, krevní tlak, rizika diabetu, hypertenze apod.) – hodí se firmám do ...|M|EJAJ|X|Anura
+Anura změří z 30sekundového videoselfie přes 100 zdravotních parametrů (tep, dech, krevní tlak, rizika diabetu, hypertenze apod.) – hodí se firmám do wellness aplikací, telemedicíny nebo kiosků, ne jako náhrada lékařského vyšetření.
+O nástroji
+Anura je kontaktní bezdotyková technologie od kanadské firmy NuraLogix, která pomocí kamery telefonu nebo počítače analyzuje obličej uživatele a během 30 sekund vypočítá desítky zdravotních a wellness ukazatelů – tepovou a dechovou frekvenci, systolický i diastolický krevní tlak, nepravidelný srdeční rytmus, BMI, index tělesného tvaru, biologický věk pleti, ale i odhady rizik jako cukrovka 2. typu, mrtvice, hypertenze, vysoký cholesterol či ztučnělá játra. Zahrnuje i index mentálního stresu a dotazník na úzkost a depresi. Měření tepu a dechu má schválení FDA, ostatní parametry jsou deklarovány jako informativní a wellness nástroje, nikoli diagnostika. Nástroj je určen primárně firmám a vývojářům – nabízí se jako mobilní SDK (iOS/Android), hotová Enterprise mobilní aplikace, webová služba integrovatelná do pár dní, desktopové SDK (Windows, macOS, Linux) i telehealth platforma pro průběžné měření vitálních funkcí během videohovoru. Pro koncové uživatele existuje odlehčená verze Anura Lite, plná verze se získává přes demo s obchodním zástupcem, takže konkrétní ceník není veřejně uveden.
+Klíčové vlastnosti
+- Měření tepu a dechu z 30sekundového videoselfie
+- Odhad krevního tlaku a nepravidelného srdečního rytmu
+- Rizikové skóre pro diabetes, mrtvici, hypertenzi a další
+- Index mentálního stresu a dotazník na úzkost a depresi
+Časté dotazy
+Co přesně Anura dokáže změřit?
+Z 30sekundového videoselfie vypočítá přes 100 parametrů – tep, dechovou frekvenci, krevní tlak, BMI i rizika jako cukrovka 2. typu, mrtvice či hypertenze. Oficiálně FDA schváleny jsou pouze tep a dechová frekvence, zbytek jsou informativní wellness odhady, ne diagnostika.
+Kolik Anura stojí?
+Ceník není veřejně uveden, plnou verzi firma nabízí po domluvě přes demo s obchodním zástupcem. Zdarma je k vyzkoušení odlehčená verze Anura Lite s omezeným počtem funkcí.
+Pro koho je Anura určena a jak začít?
+Je určena firmám a vývojářům pro integraci do wellness aplikací, telemedicíny nebo kiosků, a to formou mobilního či desktopového SDK, hotové aplikace nebo telehealth platformy. Koncový uživatel si může nejprve vyzkoušet odlehčenou verzi Anura Lite, firmy si plnou verzi domlouvají přes demo.
+Kategorie|E|
+|T|Saima|D|12.11.2026 15:42|P|Saima upravuje rychlost přehrávání videí na YouTube a Coursera podle vašeho tempa chápání, odstraňuje ticho a umožňuje si k videu psát a sdílet poznám...|M|EJAJ|X|Saima
+Saima upravuje rychlost přehrávání videí na YouTube a Coursera podle vašeho tempa chápání, odstraňuje ticho a umožňuje si k videu psát a sdílet poznámky. Hodí se studentům a týmům, kteří chtějí z videí vytěžit víc za kratší čas.
+O nástroji
+Saima je AI nástroj, který automaticky přizpůsobuje rychlost přehrávání videa individuálnímu tempu porozumění diváka – podle slov za minutu. Kromě toho umí odstranit prázdná ticha ve videu (skip silence) a vyrovnat hlasitost mluvčího (voice booster), takže se uživatel může soustředit jen na podstatný obsah bez rušivých přestávek. Funguje přímo na platformách jako YouTube nebo Coursera jedním kliknutím. Nástroj umožňuje také psát poznámky přímo k videu a sdílet je s ostatními pro společnou diskuzi a spolupráci, což se hodí týmům nebo studijním skupinám. Saima nabízí samostatná řešení pro osobní použití, vzdělávací instituce (s akademickými slevami) a firmy (enterprise verze s pokročilým zabezpečením, neomezeným počtem licencí a centralizovanou správou účtů). Ceny fungují na principu plánů – je dostupný free plán s omezenými funkcemi bez nutnosti zadávat platební kartu, placený Premium plán s měsíční i roční platbou (první měsíc zdarma jako zkušební období) a enterprise řešení na vyžádání u obchodního týmu. Stránka je pouze v angličtině.
+Klíčové vlastnosti
+- Přizpůsobí rychlost videa tempu porozumění (slova za minutu)
+- Odstraňuje ticho a prázdné pauzy ve videu
+- Vyrovnává hlasitost mluvčího (voice booster)
+- Poznámky přímo k videu s exportem do PDF
+Časté dotazy
+Co přesně Saima umí?
+Saima automaticky upraví rychlost přehrávání videa podle vašeho tempa porozumění, odstraní prázdná ticha, vyrovná hlasitost mluvčího a umožní psát a sdílet poznámky přímo k videu na YouTube nebo Coursera.
+Kolik Saima stojí?
+Je dostupný free plán bez nutnosti zadávat platební kartu, placený Premium plán (měsíčně nebo ročně, první měsíc zdarma) a enterprise řešení na vyžádání u obchodního týmu.
+Pro koho je Saima vhodná a jak začít?
+Hodí se studentům, vzdělávacím institucím i firemním týmům, které chtějí z videí vytěžit víc za kratší čas – stačí si zdarma nainstalovat rozšíření bez zadání karty.
+Kategorie|E|
+|T|HeyQuin|D|12.11.2026 15:42|P|AI asistent pro finanční poradce a podobné profese, který automaticky zapisuje poznámky z jednání, aktualizuje CRM (Salesforce, HubSpot, Wealthbox, Re...|M|EJAJ|X|HeyQuin
+AI asistent pro finanční poradce a podobné profese, který automaticky zapisuje poznámky z jednání, aktualizuje CRM (Salesforce, HubSpot, Wealthbox, Redtail, Pipedrive) a vyřizuje e-mailovou komunikaci a plánování schůzek.
+O nástroji
+HeyQuin se hodí hlavně poradcům a profesionálům, kteří tráví čas administrativou kolem klientských vztahů – zapisováním poznámek z jednání, ručním doplňováním CRM a vyřizováním rutinní e-mailové komunikace. Nástroj si po napojení na CRM sám osvojí zavedené konvence firmy (tagování, pojmenování, strukturu polí) a z poznámek, schůzek a e-mailů automaticky doplňuje záznamy, takže CRM zůstává aktuální bez ručního zásahu. Dále umí shrnout poznámky z jednání, rozeslat navazující e-maily, navrhnout odpovědi v poště k odsouhlasení, najít volný termín schůzky a odeslat pozvánky i připomínky e-mailem a SMS. Obsahuje i funkci vyhledávání napříč propojenými nástroji (CRM, e-mail, dokumenty), kde lze položit otázku jako kolegovi a dostat odpověď i s odkazem na zdroj – lze ovládat i ze Slacku nebo mobilu. Cena začíná na 49 USD/měsíc (neomezený počet uživatelů v rámci plánu), k dispozici je 14denní zkušební verze zdarma; pro větší nasazení nabízí firma individuální Enterprise řešení na dotaz. Stránka je pouze v angličtině.
+Klíčové vlastnosti
+- Automatický zápis poznámek z jednání do CRM
+- Rozesílání navazujících e-mailů po schůzce
+- Návrhy odpovědí v poště ke schválení
+- Hledání volného termínu a rozesílání pozvánek e-mailem i SMS
+Časté dotazy
+Co přesně HeyQuin umí?
+Zapisuje poznámky z jednání, aktualizuje CRM (Salesforce, HubSpot, Wealthbox, Redtail, Pipedrive), navrhuje odpovědi na e-maily, najde volný termín schůzky a rozešle pozvánky i připomínky e-mailem a SMS.
+Kolik HeyQuin stojí?
+Cena začíná na 49 USD/měsíc s neomezeným počtem uživatelů v rámci plánu, k dispozici je 14denní zkušební verze zdarma a pro větší firmy individuální Enterprise plán na dotaz.
+Pro koho je HeyQuin vhodný a jak začít?
+Hodí se finančním poradcům a podobným profesím, kteří řeší administrativu kolem klientů – stačí propojit CRM, e-mail a kalendář a nástroj se sám naučí zavedené konvence firmy.
+Kategorie|E|
+|T|MyShell|D|12.11.2026 15:42|P|MyShell slouží k proměně běžné selfie fotky v portréty, filtry a krátká videa v desítkách stylů (studio, kresba, móda) a dále k tvorbě AI agentů a Tel...|M|EJAJ|X|MyShell
+MyShell slouží k proměně běžné selfie fotky v portréty, filtry a krátká videa v desítkách stylů (studio, kresba, móda) a dále k tvorbě AI agentů a Telegram botů bez programování.
+O nástroji
+Nástroj je zaměřený na dvě hlavní oblasti. První je AI Portrait Studio, kde z jedné fotky vygenerujete profesionální headshoty, umělecké styly (glitch, pixel art, sepia), módní úpravy (účesy, make-up, cosplay) nebo aktuálně populární filtry jako Dad AI Portrait nebo Yearbook Photo Generator – katalog nabízí přes 200 stylů rozdělených do kategorií Professional, Artistic, Fashion a Trending, generování trvá sekundy a je zdarma. Druhou částí je ShellAgent, open-source framework pro stavbu AI agentů bez kódu – pomocí propojování bloků (States) lze sestavit workflow, exportovat ho jako JSON a nasadit přes MyShell Workshop. Příklady z praxe zahrnují stavbu Telegram botů jedinou větou (např. YouTube/Instagram downloader nebo audio extractor) jako alternativu k n8n, bez nutnosti API klíčů. Stránka je celá v angličtině, registrace ani přihlášení nejsou z dostupného textu zřejmé jako povinné pro vyzkoušení základních funkcí. Hotové agenty lze sdílet a nabízet v MyShell AI Agent Store.
+Klíčové vlastnosti
+- Přes 200 stylů portrétů a filtrů z jedné selfie
+- Kategorie Professional, Artistic, Fashion a Trending
+- Generování portrétu trvá jen pár sekund
+- Stavba AI agentů bez kódu propojováním bloků (States)
+Časté dotazy
+Co MyShell umí?
+Z jedné selfie vytvoří profesionální headshoty, umělecké a módní filtry nebo trendy styly jako Yearbook Photo Generator, a zároveň umožňuje bez programování postavit AI agenty či Telegram boty pomocí frameworku ShellAgent.
+Kolik MyShell stojí?
+Generování portrétů a filtrů z fotky je zdarma, podrobnosti o placených funkcích pro pokročilé agenty nejsou na stránce uvedené.
+Pro koho je MyShell vhodný a jak začít?
+Hodí se pro kohokoli, kdo chce rychle proměnit fotku ve stylový portrét, i pro tvůrce, kteří chtějí bez kódu postavit AI agenta nebo Telegram bota – stačí otevřít web a vybrat styl nebo šablonu agenta.
+Kategorie|E|
+|T|Supermemory|D|12.11.2026 15:42|P|Supermemory je paměťová infrastruktura pro AI agenty a asistenty (Claude, Cursor, Grok, ChatGPT) – ukládá konverzace, soubory a URL jako propojené „me...|M|EJAJ|X|Supermemory
+Supermemory je paměťová infrastruktura pro AI agenty a asistenty (Claude, Cursor, Grok, ChatGPT) – ukládá konverzace, soubory a URL jako propojené „memories“ a vrací je jako kontext, aby agent nezapomínal mezi relacemi. Hodí se vývojářům, kteří stavějí AI aplikace a potřebují nahradit RAG nebo ruční správu kontextu.
+O nástroji
+Supermemory funguje jako engine pro dlouhodobou paměť a průběžné učení AI agentů – přes API, pluginy nebo MCP. Místo ukládání syrových dokumentů extrahuje z chatů, souborů, URL či dat z Drive atomické „fakty“ (např. „Alex pracuje ve Stripe jako PM“), propojuje je do grafu v čase a podle potřeby je doplňuje, aktualizuje nebo zapomíná. Výsledkem má být rychlejší odezva a nižší spotřeba tokenů oproti klasickému RAG (podle reference jednoho zákazníka pokles z 40s na 12s a úspora 40-50 % tokenů). Nástroj se instaluje jako plugin do Cursoru (vyžaduje Node.js), případně se připojuje přes API klíč nebo integraci se Slackem. Lze jej provozovat i v air-gapped prostředí, ve vlastním datacentru nebo VPC, což míří na enterprise zákazníky s nároky na bezpečnost (SOC 2, HIPAA BAA, self-hosted varianta v plánu Scale). Ceník je postaven na kreditech zahrnutých v každém plánu: Free (0 $/měsíc, 5 $ kreditů), Pro (19 $/měsíc, 20 $ kreditů, 3 team seaty), Max (100 $/měsíc, 130 $ kreditů, Gmail konektor) a Scale (399 $/měsíc, 600 $ kreditů, S3/web crawler konektory, neomezené seaty). Pro větší nasazení je k dispozici Enterprise s individuální cenou. Celá stránka a dokumentace jsou pouze v angličtině.
+Klíčové vlastnosti
+- Extrahuje atomické fakty z chatů, souborů a URL
+- Propojuje fakta do vektorového grafu v čase
+- Automaticky doplňuje, aktualizuje i zapomíná paměť
+- Plugin pro Cursor, API i MCP integrace
+Časté dotazy
+Co přesně Supermemory dělá?
+Ukládá konverzace, soubory a URL jako propojené „memories“ a vrací je AI agentům jako kontext, takže si pamatují informace mezi relacemi místo klasického RAG.
+Kolik Supermemory stojí?
+Free plán zdarma s kredity 5 $, Pro 19 $/měsíc (20 $ kreditů), Max 100 $/měsíc (130 $ kreditů), Scale 399 $/měsíc (600 $ kreditů) a Enterprise na vyžádání.
+Pro koho je Supermemory vhodné a jak začít?
+Je určeno vývojářům AI aplikací a firmám s nároky na bezpečnost (SOC 2, HIPAA), kteří potřebují trvalou paměť pro agenty; stačí nainstalovat plugin do Cursoru, použít API klíč nebo MCP.
+Kategorie|E|
+|T|SmartScripter|D|12.11.2026 15:42|P|SmartScripter generuje funkční skripty (Excel VBA, Python, Bash, PowerShell, SQL a další) z obyčejného slovního popisu úkolu – hodí se lidem, kteří ne...|M|EJAJ|X|SmartScripter
+SmartScripter generuje funkční skripty (Excel VBA, Python, Bash, PowerShell, SQL a další) z obyčejného slovního popisu úkolu – hodí se lidem, kteří neumí programovat, ale potřebují automatizovat práci v Excelu, administrativě nebo příkazové řádce.
+O nástroji
+Nástroj funguje jednoduše: do textového pole napíšete, co má skript dělat (např. „Spočítej všechny buňky ve sloupci A“), a SmartScripter vygeneruje hotový kód včetně stručného vysvětlení, jak ho spustit. Podporuje Excel VBA, Google Apps Script, JavaScript, React.js, Bash, PowerShell, SQL, Python a v placené verzi i Ruby, C#, Perl, TypeScript nebo Go. Volná varianta nabízí 3 generování skriptů zdarma bez nutnosti zadávat platební kartu, s automatickým ukládáním generovaných skriptů. Placený Premium plán za 4 $/měsíc odstraňuje reklamy a dává neomezený počet generování plus přístup ke všem jazykům a budoucím novinkám. Cílovkou jsou podle popisu na stránce lidé z financí, marketingu, IT a administrativy, kteří potřebují zautomatizovat práci s tabulkami, opakující se úkoly nebo jednoduché skriptování bez hlubší znalosti programování. Stránka je celá v angličtině.
+Klíčové vlastnosti
+- Generování skriptů ze slovního popisu úkolu
+- Podpora Excel VBA, Python, Bash, PowerShell, SQL a dalších
+- Automatické ukládání vygenerovaných skriptů
+- Vysvětlení kódu a návod na spuštění
+Časté dotazy
+Co přesně SmartScripter umí?
+Z obyčejného slovního popisu úkolu (např. „spočítej buňky ve sloupci A“) vygeneruje funkční skript v Excel VBA, Pythonu, Bashi, PowerShellu, SQL a dalších jazycích, včetně stručného vysvětlení, jak ho spustit.
+Kolik SmartScripter stojí?
+Zdarma lze vygenerovat 3 skripty bez nutnosti zadávat platební kartu, Premium plán za 4 $/měsíc nabízí neomezené generování, odstranění reklam a přístup ke všem jazykům včetně Ruby, C#, Perl, TypeScript nebo Go.
+Pro koho je SmartScripter vhodný a jak začít?
+Je určen lidem z financí, marketingu, IT a administrativy, kteří potřebují automatizovat práci v Excelu nebo příkazové řádce bez znalosti programování – stačí se zaregistrovat a napsat, co má skript dělat.
+Kategorie|E|
+|T|Nuvio|D|12.11.2026 15:42|P|Nuvio je AI účetní software pro zakladatele a malé firmy, který automatizuje fakturaci, evidenci výdajů a párování plateb a zároveň nabízí navazující ...|M|EJAJ|X|Nuvio
+Nuvio je AI účetní software pro zakladatele a malé firmy, který automatizuje fakturaci, evidenci výdajů a párování plateb a zároveň nabízí navazující účetní a daňové služby od skutečného účetního.
+O nástroji
+Nuvio spojuje AI nástroj pro denní finanční administrativu s lidskou účetní podporou. Aplikace automaticky skenuje faktury a účtenky, kategorizuje výdaje, párovaním AI sesouhlasuje platby (např. výplaty ze Stripe s fakturami) a sama posílá upomínky na nezaplacené faktury. Uživatel se může na finance ptát přes AI asistenta a nemusí čekat na odpověď účetního, případně nástroj propojit s ChatGPT, Claude, Grok Bot či jiným agentem podporujícím MCP, a má k dispozici i veřejné REST API (limit 1000 požadavků/hodinu na firmu, bez hromadných operací). Nabídka je rozdělena do tří plánů: „App Only“ za 55 $/měsíc (jen software – fakturace, sledování plateb, AI skenování a reconciliace, analytika, 10 propojených bankovních účtů, 100GB úložiště, 5000 kreditů na AI asistenta, bez účetních a daňových služeb), „App & Bookkeeping“ za 249 $/měsíc (navíc měsíční vedení účetnictví, podání DPH/sales tax a přístup k účetnímu přes telefon a Slack) a „Bookkeeping + Tax“ za 549 $/měsíc (plný servis včetně podání korporátní daně z příjmu a poradenství). Ke všem plánům je 14denní zkušební období zdarma bez nutnosti zadávat kartu. Nástroj je určen primárně pro menší firmy a zakladatele v anglicky mluvících zemích (ceny v USD, zmínky o sales tax/GST/HST, VAT), stránka i rozhraní jsou pouze v angličtině, bez náznaku české lokalizace nebo vazby na ČR.
+Klíčové vlastnosti
+- AI skenování faktur a účtenek s kategorizací výdajů
+- AI párování plateb s fakturami (např. výplaty ze Stripe)
+- Automatické upomínky na nezaplacené faktury
+- AI asistent pro dotazy na finance v reálném čase
+Časté dotazy
+Co přesně Nuvio umí?
+Automatizuje fakturaci, skenování a kategorizaci výdajů, AI párování plateb s fakturami a posílá upomínky na nezaplacené faktury. Na finance se lze ptát přes AI asistenta, který funguje i napojený na ChatGPT, Claude či Grok Bot.
+Kolik Nuvio stojí?
+Plán „App Only“ (jen software) stojí 55 $/měsíc, „App & Bookkeeping“ (software + vedení účetnictví a podání DPH) 249 $/měsíc a „Bookkeeping + Tax“ (plný servis včetně korporátní daně) 549 $/měsíc. Všechny plány mají 14denní zkušební období zdarma bez nutnosti zadat kartu.
+Pro koho je Nuvio určené a jak začít?
+Je určené zakladatelům a malým firmám, primárně v anglicky mluvících zemích. Začít lze přes tlačítko „Start for Free“ na webu bez nutnosti zadat platební kartu, případně si lze rezervovat 15minutové demo.
+Kategorie|E|
+|T|Jensen Huang odstoupil. Šéfa firmy NVIDIA připravila o kariéru aféra s údajnou čínskou špionkou|D|12.11.2026 15:07|P|Dosud zdánlivě neotřesitelná pozice spoluzakladatele firmy NVIDIA se zhroutila během několika dní po odhalení jeho nemanželského vztahu. Nevěra ale ne...|M|Lupa|X|Jensen Huang po 33 letech končí ve funkci šéfa jedné z nejcennějších světových firem NVIDIA. Společnost to oznámila po zasedání představenstva. Huang podle oficiální zprávy odstoupil i z představenstva, a to s okamžitou platností. V čele firmy ho nahradila dosavadní výkonná viceprezidentka a finanční ředitelka NVIDIA Colette Kress. Má fungovat jako dočasná výkonná ředitelka, dokud firma nevybere nového CEO.
+Huangova pozice se stala neudržitelnou po odhalení, že udržoval nemanželský vztah s čínskou podnikatelkou Alice Huang (Huang Le). Americké tajné služby ji podezírají ze špionáže pro čínské tajné služby.
+Kromě sbírání informací měla teď už bývalého šéfa NVIDIA manipulovat, aby pomohl prosadit vývoz čipů pro trénování umělé inteligence do Číny. USA totiž před několika lety vyhlásily embargo na export nejvýkonnějších čipových technologií do této země.
+Podle amerického denínku New York Times udržoval Huang vztah i s další ženou. Mělo jít o manažerku, která byla jeho přímou podřízenou.
+Představenstvo firmy NVIDIA v oficiálním oznámení o Huangově odstoupení neuvádí žádné konkrétní důvody. Společnost mu poděkovala za zásadní přínos k tomu, že se NVIDIA stala nejvlivnější technologickou firmou na světě. Na příští týden má NVIDIA naplánované zveřejnění svých hospodářských výsledků za první čtvrtletí.|E|
 |T|PromptAtlas|D|12.11.2026 13:21|P|Knihovna pro ukládání, třídění a opakované použití promptů – hodí se lidem, kteří pořád dokola přepisují stejné zadání pro AI a ztrácejí je mezi chaty...|M|EJAJ|X|PromptAtlas
 Knihovna pro ukládání, třídění a opakované použití promptů – hodí se lidem, kteří pořád dokola přepisují stejné zadání pro AI a ztrácejí je mezi chaty, poznámkami a Slackem.
 O nástroji

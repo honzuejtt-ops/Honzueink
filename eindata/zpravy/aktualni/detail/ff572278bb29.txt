@@ -1,0 +1,17 @@
+Picsi.AI
+Picsi.AI slouží k záměně obličejů ve fotkách, videích a GIFech pomocí AI (face swap), a to na webu, v Discordu, na iPhonu/iPadu i Macu. Hodí se lidem, kteří chtějí rychle vytvořit vtipné nebo kreativní záměny tváří, streamovat live face swap přes kameru, nebo pracovat se záměnami přímo v Photoshopu.
+O nástroji
+Picsi.AI je nástroj postavený na technologii InsightFace (INSwapper), který umí nahradit obličej na fotce, ve videu nebo GIFu za obličej z nahraného snímku – stačí nahrát čistou fotku obličeje zepředu, vybrat scénu a výsledek stáhnout během pár sekund. Kromě klasické záměny v obrázcích podporuje i živé snímání přes kameru (LiveCam) na iOS a macOS, screen capture na Macu, záměnu až 4 obličejů v jedné fotografii a funkci PersonaMagic Canvas pro tvorbu nových scén se zachováním identity osoby. K dispozici je také Discord bot, Chrome rozšíření pro záměnu obličejů přímo na webu a plugin do Adobe Photoshopu (jen pro platící uživatele). Zdarma lze využívat 10 kreditů denně s omezeními – výstupy z mobilní aplikace mají opakující se vodoznak, živé nahrávky a export videa jsou omezené na 5 sekund a GIFy na 2 sekundy/200 snímků. Placené plány odstraňují vodoznak a prodlužují limity: Basic za 9,99 $/měsíc (200 kreditů denně, videa a GIFy, komerční využití výsledků), Pro za 19,99 $/měsíc (400 kreditů denně, delší videa až 20 minut na Macu) a Ultra za 34,99 $/měsíc. Rozhraní i veškerý obsah stránky jsou pouze v angličtině, nástroj nemá českou lokalizaci ani zjevnou vazbu na Česko.
+Klíčové vlastnosti
+- Záměna obličeje ve fotce, videu i GIFu
+- Záměna až 4 obličejů v jedné fotografii
+- Živé snímání přes kameru na iOS a macOS
+- PersonaMagic Canvas pro nové scény se zachováním identity
+Časté dotazy
+Co přesně Picsi.AI umí?
+Nahradí obličej na fotce, ve videu nebo GIFu za obličej z nahraného snímku – stačí nahrát čistou fotku zepředu, vybrat scénu a výsledek stáhnout během pár sekund. Podporuje i živé snímání přes kameru, záměnu více obličejů najednou a práci v Photoshopu či Discordu.
+Kolik Picsi.AI stojí?
+Zdarma je 10 kreditů denně s omezeními (vodoznak, kratší videa a GIFy). Placené plány odstraňují vodoznak a zvyšují limity: Basic 9,99 $/měsíc, Pro 19,99 $/měsíc a Ultra 34,99 $/měsíc.
+Pro koho je Picsi.AI vhodné a jak začít?
+Hodí se pro lidi, kteří chtějí rychle vytvořit vtipné nebo kreativní záměny tváří, streamovat live face swap, nebo pracovat se záměnami v Photoshopu. Stačí nahrát fotku obličeje a vybrat scénu na webu, v appce nebo přes Discord bota.
+Kategorie

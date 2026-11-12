@@ -1,0 +1,17 @@
+Nuvio
+Nuvio je AI účetní software pro zakladatele a malé firmy, který automatizuje fakturaci, evidenci výdajů a párování plateb a zároveň nabízí navazující účetní a daňové služby od skutečného účetního.
+O nástroji
+Nuvio spojuje AI nástroj pro denní finanční administrativu s lidskou účetní podporou. Aplikace automaticky skenuje faktury a účtenky, kategorizuje výdaje, párovaním AI sesouhlasuje platby (např. výplaty ze Stripe s fakturami) a sama posílá upomínky na nezaplacené faktury. Uživatel se může na finance ptát přes AI asistenta a nemusí čekat na odpověď účetního, případně nástroj propojit s ChatGPT, Claude, Grok Bot či jiným agentem podporujícím MCP, a má k dispozici i veřejné REST API (limit 1000 požadavků/hodinu na firmu, bez hromadných operací). Nabídka je rozdělena do tří plánů: „App Only“ za 55 $/měsíc (jen software – fakturace, sledování plateb, AI skenování a reconciliace, analytika, 10 propojených bankovních účtů, 100GB úložiště, 5000 kreditů na AI asistenta, bez účetních a daňových služeb), „App & Bookkeeping“ za 249 $/měsíc (navíc měsíční vedení účetnictví, podání DPH/sales tax a přístup k účetnímu přes telefon a Slack) a „Bookkeeping + Tax“ za 549 $/měsíc (plný servis včetně podání korporátní daně z příjmu a poradenství). Ke všem plánům je 14denní zkušební období zdarma bez nutnosti zadávat kartu. Nástroj je určen primárně pro menší firmy a zakladatele v anglicky mluvících zemích (ceny v USD, zmínky o sales tax/GST/HST, VAT), stránka i rozhraní jsou pouze v angličtině, bez náznaku české lokalizace nebo vazby na ČR.
+Klíčové vlastnosti
+- AI skenování faktur a účtenek s kategorizací výdajů
+- AI párování plateb s fakturami (např. výplaty ze Stripe)
+- Automatické upomínky na nezaplacené faktury
+- AI asistent pro dotazy na finance v reálném čase
+Časté dotazy
+Co přesně Nuvio umí?
+Automatizuje fakturaci, skenování a kategorizaci výdajů, AI párování plateb s fakturami a posílá upomínky na nezaplacené faktury. Na finance se lze ptát přes AI asistenta, který funguje i napojený na ChatGPT, Claude či Grok Bot.
+Kolik Nuvio stojí?
+Plán „App Only“ (jen software) stojí 55 $/měsíc, „App & Bookkeeping“ (software + vedení účetnictví a podání DPH) 249 $/měsíc a „Bookkeeping + Tax“ (plný servis včetně korporátní daně) 549 $/měsíc. Všechny plány mají 14denní zkušební období zdarma bez nutnosti zadat kartu.
+Pro koho je Nuvio určené a jak začít?
+Je určené zakladatelům a malým firmám, primárně v anglicky mluvících zemích. Začít lze přes tlačítko „Start for Free“ na webu bez nutnosti zadat platební kartu, případně si lze rezervovat 15minutové demo.
+Kategorie

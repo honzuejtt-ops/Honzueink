@@ -1,0 +1,17 @@
+Zed
+Zed je open-source textový editor a IDE psané v Rustu, zaměřené na rychlost a kolaborativní programování v reálném čase včetně AI asistentů.
+O nástroji
+Zed je editor kódu od tvůrců Atomu a Tree-sitter, postavený na vlastním GPUI frameworku pro vykreslování, díky čemuž cílí na maximální výkon (web prezentuje projekt jako „nejrychlejší IDE na světě“). Hodí se programátorům, kteří chtějí rychlý, odezvě-přívětivý editor s podporou AI funkcí, přičemž AI je podle webu volitelná („AI optional“) - lze tedy editor používat i bez ní. Firma zároveň vyvíjí nový projekt Delta, popsaný jako „multiplayer prostředí pro programování s agenty“ postavené na DeltaDB, což naznačuje silný důraz na kolaborativní vývoj více lidí i AI agentů nad stejným kódem současně. Zed je open source a je k dispozici ke stažení, projekt stojí za ním tým bývalých vývojářů Atomu a Tree-sitter.
+Klíčové vlastnosti
+- Vlastní GPUI framework pro maximální výkon vykreslování
+- Kolaborativní programování v reálném čase (multiplayer)
+- Volitelná AI asistence přímo v editoru
+- Open-source, k dispozici zdarma ke stažení
+Časté dotazy
+Co Zed vlastně umí?
+Zed je rychlý open-source textový editor a IDE psaný v Rustu, který umožňuje kolaborativní programování v reálném čase a volitelně i AI asistenci přímo v editoru.
+Kolik Zed stojí?
+Zed je open-source projekt a je k dispozici ke stažení, z podkladů nevyplývá konkrétní cenový model ani placené tarify.
+Pro koho je Zed vhodný a jak začít?
+Hodí se programátorům, kteří chtějí rychlý a odezvě-přívětivý editor s možností týmové spolupráce nad kódem; stačí si editor stáhnout z webu zed.dev.
+Kategorie

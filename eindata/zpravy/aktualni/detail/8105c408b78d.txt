@@ -1,0 +1,17 @@
+Přestože mají potíže celosvětový dosah, nejde o úplný blackout služeb Microsoftu. Část uživatelů je může dál běžně používat. Dostupnost se liší podle konkrétní služby i zákazníka.
+Stížností začalo podle serveru The Verge prudce přibývat krátce před 19. hodinou SEČ. Uživatelé se nemohli dostat do e-mailových schránek, potíže zasáhly webovou verzi Outlooku i aplikace.
+Krátce po 19. hodině Downdetector evidoval více než 130 tisíc hlášení problémů s Outlookem. Právě tento server uživatelé napříč světem hojně využívají k tomu, aby upozornili ostatní na nedostupnost nějaké konkrétní webové služby.
+Microsoft podle AP uvedl, že některé servery selhaly při automatických kontrolách a staly se nedostupnými, čímž přetížily zbývající infrastrukturu. Firma testuje opravu, termín úplné obnovy zatím neoznámila.
+Problémy mají i školy v Česku
+Služby Microsoftu využívají firmy, úřady a další organizace, ale také školy. Výpadek tak mohou pocítit i lidé, kteří se přihlašují do pracovní či školní pošty pod vlastní doménou organizace. Jejich schránky totiž mohou běžet právě na infrastruktuře amerického gigantu a být nyní zcela nedostupné. Novinky si problémy s přístupem ke školní poště ověřily u jednoho pražského gymnázia.
+Microsoft nejprve oznámil, že prověřuje problémy s přístupem ke schránkám Exchange Online v americkém regionu. Tato služba zajišťuje firemní a školní elektronickou poštu v rámci Microsoftu 365.
+Později však firma připustila širší dosah. „Potvrdili jsme, že problém může ovlivnit připojení ke službám Microsoft 365 u uživatelů v kterémkoli regionu,“ uvedla společnost podle serveru My San Antonio.
+Hlášení přicházela také z Brazílie, kde potíže popisovala místní média. Vedle e-mailu se objevily stížnosti i na další nástroje. Agentura AP zaznamenala tisíce hlášení problémů s komunikátorem Teams, asistentem Copilot a dalšími službami Microsoftu 365.
+U komunikátoru Teams se přitom situace během posledních dvou hodin měnila. Microsoft oznámil odstranění dřívějšího problému v Severní Americe, část uživatelů však podle AP potíže s připojením hlásila dál. Rozsah nedostupnosti jednotlivých aplikací se tak lišil.
+Pro firmy může podobný výpadek znamenat komplikace při komunikaci se zákazníky i mezi kolegy. Zatímco v Česku už byl večer, v Americe se problémy objevily během pracovního dne.
+Anketa
+Microsoft odlehčuje serverům
+„Část infrastruktury se v několika regionech potýká se zvýšeným zatížením,“ uvedl Microsoft podle serveru The Verge. To podle firmy pravděpodobně přispívá k chybám připojení.
+Technici přerozdělovali provoz, odváděli další požadavky z postižené infrastruktury a restartovali servery. Současně zjišťovali, zda zatížení způsobilo větší množství požadavků, nebo změna jejich směrování. Definitivní příčina zatím nebyla objasněna.
+Brazilský server UOL popisoval problémy v Outlooku na webu, počítačích i mobilních telefonech. Uživatelé hlásili obtíže s přístupem do schránek a odesíláním zpráv.
+Přechod z aplikace do prohlížeče proto nemusí být řešením. Microsoft potvrdil, že potíže zasahují více způsobů připojení ke schránkám Exchange Online.

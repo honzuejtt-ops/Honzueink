@@ -1,0 +1,16 @@
+Astronomové vytvořili simulaci, která přibližuje, jak mohl vesmír vypadat během prvních dvou miliard let své existence.
+Vizualizace prováděné na superpočítačích pomáhají zaplnit mezery v poznání rané historie kosmu, napsaly americká stanice CNN nebo deník The New York Times.
+Modelace se zároveň porovnává se skutečnými pozorováními dalekohledů, jako je například teleskop Jamese Webba (JWST).
+Jeden z dosud nejpodrobnějších modelů raného vesmíru, který vytvořil mezinárodní tým, byl publikován ve vědeckém časopise Monthly Notices of the Royal Astronomical Society.
+Simulace Lumina rekonstruuje, jak první hvězdy a černé díry poháněly proces reionizace a tím umožnily, aby vesmírem mohlo procházet světlo.
+Po velkém třesku ultrafialové záření z těchto prvních zdrojů světla odtrhávalo elektrony od atomů vodíku. Díky tomu mohlo světlo cestovat na větší vzdálenosti a změnil se také způsob, jakým vznikaly galaxie.
+Světlu trvá určitou dobu, než urazí vzdálenost vesmírem. Výkonné dalekohledy ho tak dokážou zachytit ve vzdálené galaxii v podobě, jakou měly před miliardami let.
+Zkoumání tak dlouhého úseku kosmické historie však vyžaduje simulace s podobně rozsáhlým záběrem. Právě zde je prostor pro Luminu.
+Jednou z jejích nejslibnějších vlastností je obrovský rozsah. Pokrývá více než stokrát větší prostor než předchozí modelace, uvedl pro CNN hlavní autor Oliver Zier z Institutu pro teorii a výpočty při Centru pro astrofyziku Harvardovy univerzity a Smithsonova institutu v Cambridge ve státě Massachusetts.
+„Máme k dispozici kosmologický objem, v němž můžeme pozorovat tuto kosmickou síť a sledovat, jak jsou galaxie seskupeny. Zároveň dokážeme rozlišit jednotlivé galaxie,“ rozebírá vědec schopnosti Luminy zachytit obrovské rozměry vesmíru a jeho složité detaily.
+Pro představu: Simulace pokrývá oblast o rozměrech přibližně 1,5 miliardy světelných let v každém směru. Naše Mléčná dráha má podle NASA průměr přibližně 100 tisíc světelných let.
+Vytvoření tohoto rozsáhlého modelu trvalo téměř tři roky, a to s pomocí více než 15 tisíc grafických procesorů superpočítače Frontier v Národní laboratoři Oak Ridge, které poskytly potřebný výpočetní výkon.
+Lumina zatím nebyla plně zpřístupněna veřejnosti. Publikovaná videa ukazují, jak rozsáhlý vesmír ve skutečnosti je. Přibližuje jednotlivé galaxie a následně se vzdaluje, aby bylo vidět, jak nepatrné jsou ve srovnání s ostatními objekty v kosmu.
+Simulaci lze také využít k ověřování teorií o vývoji vesmíru. Vědci mohou porovnávat scénář raného vesmíru vytvořený v modelu s pozorováními vesmírných dalekohledů. Pokud se výsledky shodují, mohou vědci získat větší jistotu ve svých teoriích.
+„Je ale ve skutečnosti zajímavější, když se neshodují. Znamená to totiž, že v našem modelu něco chybí, což nám může napovědět, jaké fyzikální zákonitosti jsme dosud nezohlednili,“ řekl Zier.
+Takové nesrovnalosti by mohly nabídnout vodítka k pochopení vesmíru, který vědci dosud plně neprozkoumali.

@@ -1,0 +1,17 @@
+Zing AI
+Mobilní aplikace (iPhone, Apple Watch) pro domácí i posilovnové tréninky s AI trenérem, který pomocí kamery telefonu sleduje techniku cviků a odhaduje tělesné složení z fotek. Hodí se lidem, kteří chtějí personalizovaný tréninkový plán bez osobního trenéra.
+O nástroji
+Zing AI je fitness aplikace pro iPhone s podporou Apple Watch, která generuje tréninkové plány z databáze téměř 500 cviků (síla, HIIT, strečink, regenerace) podle zadaného času, cíle a aktuální úrovně zjištěné Fitness a Flexibility testem. Funkce Zing Vision využívá kameru telefonu k real-time sledování pohybu a zpětné vazbě na techniku, zatímco AI Body Scan odhaduje tělesný tuk a svalovou hmotu z fotek (fotky jsou podle výrobce po analýze smazány). Aplikace denně sbírá údaje o náladě, energii a spánku a podle nich upravuje plán, integruje se s Apple Health/HealthKit a sleduje únavu svalů napříč tréninky. Aplikace je zdarma ke stažení s nákupy v aplikaci – uvedené ceny předplatného se pohybují v rozmezí 18,99–59,99 USD (různé délky předplatného), je nabízena zkušební verze. Rozhraní je anglické (plus dalších pár jazyků), česká lokalizace není doložena. Jde o čistě mobilní produkt (iPhone, Apple Watch), bez webové verze.
+Klíčové vlastnosti
+- Real-time sledování techniky cviků kamerou (Zing Vision)
+- AI Body Scan odhadne tělesný tuk a svalovou hmotu z fotek
+- Databáze téměř 500 cviků (síla, HIIT, strečink, regenerace)
+- Denní sledování nálady, energie a spánku s úpravou plánu
+Časté dotazy
+Co Zing AI umí?
+Aplikace vytváří personalizované tréninkové plány z téměř 500 cviků, pomocí kamery telefonu sleduje v reálném čase techniku provedení (Zing Vision) a odhaduje tělesné složení z fotek (AI Body Scan). Denně se ptá na náladu, energii a spánek a podle toho plán upravuje.
+Kolik Zing AI stojí?
+Aplikace je zdarma ke stažení, placené předplatné se pohybuje mezi 18,99–59,99 USD podle délky období, k dispozici je i zkušební verze.
+Pro koho je Zing AI vhodný a jak začít?
+Hodí se lidem, kteří chtějí domácí nebo posilovnový trénink s AI trenérem bez nutnosti osobního kouče. Stačí stáhnout aplikaci z App Store na iPhone (podporuje i Apple Watch), absolvovat Fitness a Flexibility test a nechat si vygenerovat plán.
+Kategorie

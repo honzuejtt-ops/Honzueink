@@ -1,0 +1,17 @@
+CogBias AI
+CogBias AI pomáhá odhalit zkreslující formulace v průzkumových a dotazníkových otázkách (vedoucí otázky, rámcování, sociální žádoucnost apod.) a navrhne jejich přepracování tak, aby data z průzkumů byla přesnější.
+O nástroji
+Nástroj je určený pro tvůrce dotazníků, výzkumníky a produktové týmy, kteří potřebují ověřit, že jejich survey otázky nejsou zkreslené kognitivními předsudky. Detekuje šest typů zkreslení – leading question bias, framing effect, confirmation bias, social desirability bias, loaded language a double-barreled questions – a ke každé otázce nabídne vylepšenou alternativu. Funguje na principu pipeline: vstupní text otázky se porovná s databází typů zkreslení, vygenerují se kandidátní hypotézy, proběhne víceúrovňové skórování a validace konzistence, a výstupem je seřazené doporučení s upravenou formulací. Podle vlastního výzkumu autorů bylo přibližně o 70 % více otázek zodpovězeno přesněji při použití CogBias oproti tradičním formulacím. Nástroj je v angličtině a nabízí čtyři cenové úrovně: Individual/Student za 20 USD/měsíc se základní detekcí a rephrasing funkcí a e-mailovou podporou, dále Startup, Enterprise a Academic plány na vyžádání (Contact us), které přidávají spolupráci více uživatelů, reporty, integrace do workflow či prioritní podporu pro výzkum. Deklarují ochranu dat (šifrování TLS, nezáznam dat pro trénink modelů, připravenost na SOC 2 a GDPR).
+Klíčové vlastnosti
+- Detekce šesti typů zkreslení otázek (leading, framing, confirmation, social desirability, loaded language, double-barreled)
+- Automatický návrh přepracované formulace otázky
+- Víceúrovňové skórování a validace konzistence návrhů
+- Seřazený výstup doporučení podle relevance
+Časté dotazy
+Co přesně CogBias AI umí?
+Analyzuje formulace průzkumových otázek, detekuje šest typů kognitivního zkreslení (např. vedoucí otázky, rámcování, sociální žádoucnost) a ke každé problematické otázce navrhne přepracovanou, přesnější verzi.
+Kolik CogBias AI stojí?
+Plán Individual/Student vyjde na 20 USD měsíčně a zahrnuje základní detekci, rephrasing a e-mailovou podporu. Plány Startup, Enterprise a Academic s rozšířenými funkcemi (spolupráce, reporty, integrace) jsou na vyžádání po kontaktování prodeje.
+Pro koho je nástroj určený a jak začít?
+Je určen tvůrcům dotazníků, výzkumníkům a produktovým týmům, kteří chtějí ověřit, že jejich otázky nejsou zkreslené. Začít lze objednáním dema přes web nebo volbou placeného plánu podle velikosti týmu.
+Kategorie

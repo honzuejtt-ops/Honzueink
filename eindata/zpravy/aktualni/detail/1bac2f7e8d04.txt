@@ -1,0 +1,17 @@
+Koroverse
+Koroverse je AI nástroj pro tvorbu fikčních světů, postav a sledování kontinuity příběhu – hodí se spisovatelům, herním mistrům tabletop RPG a tvůrcům her, kteří potřebují udržet konzistentní lore napříč rozsáhlým příběhem.
+O nástroji
+Nástroj nabízí šest hlavních funkcí: generování světa z krátkého popisu (geografie, frakce, historie, fyzikální/magická pravidla), tvorbu postav s propojenými backstory a vztahy, správu lore formou propojeného znalostního grafu, AI kontrolu kontinuity příběhu (upozorní například na ztracený meč ze tří kapitol zpět nebo zničené město, které se znovu objeví), podporu přes 200 žánrových šablon (sci-fi, fantasy, noir, cosmic horror a další) a export do PDF/Markdown se sdílením v reálném čase. Cenově je dostupná varianta Explorer zdarma navždy (1 svět, 50 postav, základní generování, komunitní šablony, bez nutnosti platební karty). Plán Creator za 9 $/měsíc přidává neomezené postavy, pokročilou AI kontinuitu, export a prioritní frontu generování. Plán Studio za 29 $/měsíc nabízí neomezené světy, real-time spolupráci, API přístup, SSO a vlastní dotrénování AI – u tohoto plánu je potřeba kontaktovat obchodní oddělení. K dispozici je i roční platba se slevou a 50% sleva pro studenty a učitele. Nástroj je celý v angličtině (stránka i rozhraní), žádná lokalizace do češtiny není zmíněna. Za platformou stojí malý tým (Koroverse Labs) založený v Austinu v Texasu v roce 2023, bez vazby na Česko.
+Klíčové vlastnosti
+- Generování světa z krátkého popisu (geografie, frakce, historie, pravidla)
+- Tvorba postav s provázanými backstory a vztahy
+- Znalostní graf pro správu lore a timeline
+- AI kontrola kontinuity odhalí rozpory v ději
+Časté dotazy
+Co přesně Koroverse umí?
+Pomocí AI vygeneruje z krátkého popisu celý fikční svět včetně postav, frakcí, timeline a lore, a hlídá, aby vše zůstalo vzájemně konzistentní.
+Kolik Koroverse stojí?
+Plán Explorer je zdarma navždy (1 svět, 50 postav, bez karty). Creator vyjde na 9 $/měsíc, Studio s neomezenými světy a API na 29 $/měsíc, k dispozici je i roční platba se slevou.
+Pro koho je nástroj vhodný a jak začít?
+Hodí se spisovatelům, herním mistrům RPG i tvůrcům her – stačí popsat koncept světa a Koroverse rovnou vygeneruje mapu, postavy i frakce, začít lze zdarma bez platební karty.
+Kategorie

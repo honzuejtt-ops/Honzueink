@@ -1,0 +1,17 @@
+Saima
+Saima upravuje rychlost přehrávání videí na YouTube a Coursera podle vašeho tempa chápání, odstraňuje ticho a umožňuje si k videu psát a sdílet poznámky. Hodí se studentům a týmům, kteří chtějí z videí vytěžit víc za kratší čas.
+O nástroji
+Saima je AI nástroj, který automaticky přizpůsobuje rychlost přehrávání videa individuálnímu tempu porozumění diváka – podle slov za minutu. Kromě toho umí odstranit prázdná ticha ve videu (skip silence) a vyrovnat hlasitost mluvčího (voice booster), takže se uživatel může soustředit jen na podstatný obsah bez rušivých přestávek. Funguje přímo na platformách jako YouTube nebo Coursera jedním kliknutím. Nástroj umožňuje také psát poznámky přímo k videu a sdílet je s ostatními pro společnou diskuzi a spolupráci, což se hodí týmům nebo studijním skupinám. Saima nabízí samostatná řešení pro osobní použití, vzdělávací instituce (s akademickými slevami) a firmy (enterprise verze s pokročilým zabezpečením, neomezeným počtem licencí a centralizovanou správou účtů). Ceny fungují na principu plánů – je dostupný free plán s omezenými funkcemi bez nutnosti zadávat platební kartu, placený Premium plán s měsíční i roční platbou (první měsíc zdarma jako zkušební období) a enterprise řešení na vyžádání u obchodního týmu. Stránka je pouze v angličtině.
+Klíčové vlastnosti
+- Přizpůsobí rychlost videa tempu porozumění (slova za minutu)
+- Odstraňuje ticho a prázdné pauzy ve videu
+- Vyrovnává hlasitost mluvčího (voice booster)
+- Poznámky přímo k videu s exportem do PDF
+Časté dotazy
+Co přesně Saima umí?
+Saima automaticky upraví rychlost přehrávání videa podle vašeho tempa porozumění, odstraní prázdná ticha, vyrovná hlasitost mluvčího a umožní psát a sdílet poznámky přímo k videu na YouTube nebo Coursera.
+Kolik Saima stojí?
+Je dostupný free plán bez nutnosti zadávat platební kartu, placený Premium plán (měsíčně nebo ročně, první měsíc zdarma) a enterprise řešení na vyžádání u obchodního týmu.
+Pro koho je Saima vhodná a jak začít?
+Hodí se studentům, vzdělávacím institucím i firemním týmům, které chtějí z videí vytěžit víc za kratší čas – stačí si zdarma nainstalovat rozšíření bez zadání karty.
+Kategorie

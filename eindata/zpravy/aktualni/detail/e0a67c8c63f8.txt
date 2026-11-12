@@ -1,0 +1,17 @@
+Hero
+Mobilní aplikace, která z jedné fotky věci na prodej vytvoří popis, odhadne cenu a listing rovnou vystaví na eBay a Facebook Marketplace. Hodí se zejména přeprodejcům (resellerům), kteří potřebují rychle naskladnit a vystavit větší počet položek.
+O nástroji
+Hero funguje tak, že uživatel vyfotí předmět mobilem a AI z fotky rozpozná produkt, značku, kategorii a stav, navrhne prodejní cenu na základě porovnání s dalšími inzeráty a sama napíše titulek a popis. Hotový inzerát pak aplikace cross-postne na eBay a Facebook Marketplace, díky čemuž podle uváděných recenzí zkrácení doby vystavení jedné položky z desítek minut na řádově sekundy až minuty. Umí také z jedné fotky vygenerovat sadu dalších čistých produktových fotek (např. odstranit nevhodné pozadí) - šest fotek z jednoho skenu. Nástroj je placený, žádná bezplatná varianta není zmíněná - placené plány začínají na 10 USD/měsíc (10 vystavených položek, 1 sada AI fotek měsíčně), přes 20 USD/měsíc (30 položek, 5 sad fotek) a 30 USD/měsíc (bez limitu na počet vystavení, 15 sad fotek), až po firemní plán za 199 USD/měsíc se sdíleným inventářem pro 3 uživatele, importem až 10 000 řádků měsíčně a prioritní podporou. Všechny placené plány zahrnují neomezené kontroly cen. Pro vývojáře a firmy je k dispozici i API/MCP přístup, který umožňuje napojit agenty nebo aplikace na automatizované vystavování a oceňování zboží. Stránka je celá v angličtině a cílí na trh USA (eBay, Facebook Marketplace), o českém trhu ani jazyce není v textu zmínka.
+Klíčové vlastnosti
+- Z fotky rozpozná produkt, značku, kategorii a stav
+- Navrhne prodejní cenu podle srovnatelných inzerátů
+- Automaticky napíše titulek a popis
+- Cross-posting inzerátu na eBay a Facebook Marketplace
+Časté dotazy
+Co přesně Hero umí?
+Z jedné fotky předmětu rozpozná produkt, značku a stav, navrhne cenu, napíše popis a rovnou vystaví inzerát na eBay i Facebook Marketplace. Umí také z fotky vytvořit sadu 6 čistých produktových fotek.
+Kolik Hero stojí?
+Nástroj je placený bez bezplatné varianty – plány začínají na 10 USD/měsíc (10 položek, 1 sada fotek), pokračují přes 20 a 30 USD/měsíc až po firemní plán za 199 USD/měsíc se sdíleným inventářem a prioritní podporou.
+Pro koho je Hero vhodný a jak začít?
+Hodí se zejména přeprodejcům (resellerům), kteří potřebují rychle naskladnit a vystavit větší počet položek na eBay a Facebook Marketplace; stačí vyfotit předmět mobilem a aplikace zbytek zařídí sama.
+Kategorie

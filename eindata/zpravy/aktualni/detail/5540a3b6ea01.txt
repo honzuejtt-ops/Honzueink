@@ -1,0 +1,17 @@
+Jessica - Better Speech
+Jessica je AI asistentka pro řečovou terapii, dostupná 24/7, která mezi sezeními s licencovaným logopedem pomocí rozpoznávání řeči a jazykových modelů vyhodnocuje výslovnost a dává zpětnou vazbu. Hodí se lidem (nebo rodičům dětí) procházejícím terapii v rámci Better Speech, kteří chtějí procvičovat i mimo placené sezení s terapeutem.
+O nástroji
+Jessica není samostatný placený nástroj, ale doplňková AI funkce v rámci platformy Better Speech pro online řečovou terapii. Pomocí rozpoznávání řeči a velkých jazykových modelů analyzuje uživatelovu výslovnost, identifikuje problémy a poskytuje zpětnou vazbu na procvičovaná cvičení kdykoliv mezi pravidelnými sezeními s lidským logopedem. K dispozici je přes zařízení s výběrem avatara a je součástí balíčku, ne samostatná placená služba. Samotný program Better Speech, jehož je Jessica součástí, stojí 79,95 $/týden (fakturováno 319,80 $ každé 4 týdny) a zahrnuje 4 týdenní individuální sezení s licencovaným terapeutem plus neomezený přístup ke cvičením (kde Jessica pomáhá s procvičováním). Službu lze hradit i přes pojištění nebo HSA/FSA karty, k dispozici je i finanční pomoc pro ty, kdo si terapii nemohou dovolit. Stránka je pouze v angličtině a cílí na americký trh (zmínka o Medicare, HSA/FSA, Zoom sezeních).
+Klíčové vlastnosti
+- Vyhodnocování výslovnosti pomocí rozpoznávání řeči
+- Zpětná vazba na procvičovaná cvičení kdykoliv 24/7
+- Dostupná mezi sezeními s licencovaným logopedem
+- Výběr avatara pro komunikaci s AI asistentkou
+Časté dotazy
+Co přesně Jessica umí?
+Jessica je AI asistentka, která pomocí rozpoznávání řeči a jazykových modelů vyhodnocuje výslovnost uživatele, identifikuje problémy a dává zpětnou vazbu na procvičovaná cvičení kdykoliv mezi sezeními s lidským terapeutem.
+Kolik Jessica stojí?
+Jessica není samostatně placená – je součástí programu Better Speech, který stojí 79,95 $/týden (fakturace 319,80 $ každé 4 týdny) a zahrnuje 4 týdenní sezení s terapeutem plus neomezené procvičování s Jessicou.
+Pro koho je Jessica vhodná a jak začít?
+Je určená klientům (nebo rodičům dětí) v řečové terapii Better Speech, kteří chtějí procvičovat i mimo placená sezení. Začíná se zapsáním do programu Better Speech, platbu lze řešit i přes pojištění nebo HSA/FSA kartu.
+Kategorie

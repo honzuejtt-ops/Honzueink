@@ -1,0 +1,17 @@
+Dashworks
+AI asistent, který odpovídá na firemní otázky tím, že v reálném čase prohledává propojené nástroje (Slack, Notion, Jira, Google Drive aj.) a dává odpovědi s odkazy na zdroje. Hodí se týmům podpory, produktovým manažerům a dalším, kteří tráví čas hledáním informací roztroušených napříč aplikacemi.
+O nástroji
+Dashworks funguje jako vrstva nad firemními nástroji – propojí se se Slackem, Notion, Dropboxem, Confluence, Jirou, GitHubem, Zendeskem, Teams a dalšími, a umožní zaměstnancům klást dotazy v přirozeném jazyce místo manuálního prohledávání dokumentů a konverzací. Na rozdíl od klasického enterprise search, který si data duplikuje (a tím vzniká zpoždění synchronizace a bezpečnostní riziko), Dashworks podle svého popisu vyhledává živě bez kopírování dat, takže se nastavuje během minut a respektuje aktuální přístupová oprávnění (ACL) okamžitě. Každá odpověď obsahuje odkazy na zdrojové dokumenty, aby šlo ověřit, odkud informace pochází. Využití cílí na support týmy (rychlejší odpovědi zákazníkům), produktové manažery (psaní dokumentace, analýza zpětné vazby uživatelů) a sales týmy (rychlejší uzavírání obchodů díky okamžitým odpovědím). Nabízí Slackbota, browser extension, vlastní bota a workflow šablony, které lze sdílet v týmu. Cena je $12/uživatel/měsíc (Team plán, měsíční platba, $10 při roční platbě) bez minima uživatelů, Business plán od $15/uživatel/měsíc (min. 10 licencí) s vlastními boty a výběrem LLM modelů, Enterprise plán na vyžádání s SSO, SCIM a API přístupem. K dispozici je 14denní zkušební verze bez nutnosti zadávat platební kartu. Stránka je pouze v angličtině.
+Klíčové vlastnosti
+- Živé prohledávání propojených aplikací bez indexace dat
+- Odpovědi s odkazy na zdrojové dokumenty
+- Slackbot a browser extension pro rychlé dotazy
+- Vlastní přizpůsobitelní AI boti pro různé týmy
+Časté dotazy
+Co přesně Dashworks umí?
+Prohledává v reálném čase propojené firemní nástroje jako Slack, Notion, Jira či Google Drive a na dotazy v přirozeném jazyce odpovídá s odkazy na zdrojové dokumenty, aniž by data kopíroval.
+Kolik Dashworks stojí?
+Team plán vyjde na $12/uživatel/měsíc (nebo $10 při roční platbě) bez minima uživatelů, Business plán od $15/uživatel/měsíc vyžaduje minimálně 10 licencí a Enterprise je na vyžádání.
+Pro koho je Dashworks vhodný a jak začít?
+Hodí se support týmům, produktovým manažerům i sales týmům, kteří tráví čas hledáním informací napříč aplikacemi. Lze vyzkoušet 14denní zkušební verzi bez nutnosti zadávat platební kartu.
+Kategorie

@@ -1,0 +1,17 @@
+Screenloop
+AI nástroj pro náborové (recruiting) týmy, který spojuje ATS, AI poznámkovač z pohovorů a automatizaci – nahrazuje více samostatných nástrojů používaných při náboru.
+O nástroji
+Screenloop je AI-native applicant tracking systém (ATS) určený in-house náborovým týmům ve startupech, SME a rostoucích firmách. Kromě klasické evidence pozic a kandidátů nabízí AI Notetaker na pohovorech, hodnocení kandidátů podle definovaných kvalifikací (např. jazyk, vedení, vzdělání, zkušenosti, soft skills), přehledy výkonu náboru (počet uchazečů, obsazenost pozic, průměrná doba na obsazení, míra průchodu jednotlivými fázemi) a správu pracovních workflow (phone screen, technické kolo, panel, finále, nabídka). Součástí platformy jsou i doplňkové moduly: Pulse pro anonymizované průzkumy spokojenosti kandidátů a hiring manažerů v průběhu náboru (s vlastními dotazníky a šablonami), a automatizované referencování – sběr referencí od doporučujících osob do 48 hodin s uváděnou 97% úspěšností dokončení, analýza soft skills, sebehodnocení kandidátů a generování reportů pro hiring manažery včetně podkladů pro onboarding. Nástroj je určen primárně týmům zodpovědným za nábor (recruiteři, hiring manažeři, interviewers) spíše než jednotlivcům. Stránka je pouze v angličtině a přístup k funkcím vyžaduje rezervaci dema přes formulář „Book Demo“ – přesné ceny nejsou na stránce uvedeny.
+Klíčové vlastnosti
+- AI Notetaker automaticky zapisuje průběh pohovoru
+- Hodnocení kandidátů podle definovaných kvalifikací
+- Přehledy obsazenosti pozic a doby náboru
+- Správa workflow náboru (screen, technické kolo, panel, nabídka)
+Časté dotazy
+Co přesně Screenloop umí?
+Je to AI-native ATS pro nábor, který eviduje pozice a kandidáty, automaticky zapisuje poznámky z pohovorů, hodnotí kandidáty podle definovaných kritérií a nabízí přehledy výkonu náboru i automatizované referencování.
+Kolik Screenloop stojí?
+Ceny nejsou na webu zveřejněné, zájemci musí kontaktovat prodejní tým přes rezervaci dema („Book Demo“).
+Pro koho je Screenloop určen a jak začít?
+Je určen in-house náborovým týmům – recruiterům, hiring manažerům a interviewerům ve startupech, SME a rostoucích firmách. Začít lze rezervací dema přes formulář na webu.
+Kategorie

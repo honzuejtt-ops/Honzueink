@@ -1,0 +1,17 @@
+Showrunner
+Platforma pro tvorbu a sledování AI generovaných seriálů a filmů – uživatel si vytvoří vlastní svět s postavami a epizodami, nebo remixuje existující show jiných tvůrců.
+O nástroji
+Showrunner je zaměřen na serializovaný AI obsah, ne na krátká klipová videa – důraz je kladen na kontinuitu napříč epizodami, trvalé postavy a rozvíjející se „canon“ světa. Tvorbu lze zahájit z YouTube odkazu, nahráním vlastního videa, vytvořením scény nebo kombinací více scén; postavy si lze upravit podle vzhledu a hlasu a následně je používat napříč díly. Hotové show jdou publikovat, diváci je mohou sledovat, remixovat nebo psát další epizody, zatímco původní autor si drží kanonickou kontrolu nad světem. Nástroj obsahuje i ekonomický model – pokud fanoušci platí za remixování cizího světa, odměna jde zpět tvůrci původního díla, a úspěšné show mohou být kurátorsky zařazeny do sítě Showrunner vedle dalších populárních projektů. Platforma pořádá i komunitní soutěže (např. soutěž v univerzu Gossip Goblin s odměnou 20 000 USD) a má komunitu na Discordu. Aktuálně je dostupná přes web, chystá se iOS aplikace (zatím jen pro USA, „Coming Soon“). Stránka i rozhraní jsou pouze v angličtině.
+Klíčové vlastnosti
+- Tvorba vlastního světa s trvalými postavami a epizodami
+- Remixování cizích show při zachování kanonické kontroly autora
+- Start z YouTube odkazu, vlastního videa nebo scény
+- Úprava vzhledu a hlasu postav napříč díly
+Časté dotazy
+Co Showrunner umí?
+Umožňuje vytvořit vlastní seriál nebo film s AI generovanými postavami a epizodami, případně remixovat existující show jiných tvůrců se zachováním kontinuity a kanonu světa.
+Kolik Showrunner stojí?
+Ceník není na webu uveden, platforma ale obsahuje ekonomický model, kde fanoušci mohou platit za remixování cizích světů a odměna jde zpět původnímu tvůrci.
+Pro koho je Showrunner a jak začít?
+Je určen tvůrcům i divákům AI seriálů – stačí se přihlásit na webu a vytvořit show z YouTube odkazu, vlastního videa nebo scény; brzy přibude i iOS aplikace (zatím jen pro USA).
+Kategorie

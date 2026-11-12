@@ -1,0 +1,17 @@
+HealthKey
+Nástroj pro týmy klinických studií, který pomocí AI prohledává data v EHR a najde pacienty splňující kritéria zařazení do studie. Hodí se výzkumným centrům a koordinátorům studií, kteří chtějí urychlit nábor pacientů a snížit počet screening failures.
+O nástroji
+HealthKey se napojí na nemocniční systém EHR a na základě zadaných inkluzních a exkluzních kritérií studie pomocí AI projde záznamy pacientů a najde ty, kteří by mohli splňovat podmínky pro zařazení do klinické studie. Výsledné shody s doloženými údaji ze zdravotní dokumentace pak výzkumný tým dostává do dashboardu, kde je může ručně ověřit a kvalifikovat. Nasazení má podle webu trvat zhruba týden a systém je popisován jako HIPAA compliant. Cenový model je postaven na success fee za pacienta – bez počátečních nákladů, platí se jen při úspěšném zařazení pacienta do studie. V rámci aktuální nabídky (platné do 30. 11. 2026, omezené na 20 nových pracovišť za čtvrtletí) je zdarma implementace (hodnota 15 000 $), nastavení protokolu pro 5 studií (5 000 $) a prémiová podpora (2 500 $). Nástroj je určen primárně pro provozovatele a koordinátory klinických studií v nemocnicích a výzkumných centrech, nikoliv pro jednotlivé pacienty.
+Klíčové vlastnosti
+- Napojení na nemocniční systém EHR
+- AI vyhledávání pacientů podle kritérií studie
+- Kontrola inkluzních a exkluzních kritérií
+- Dashboard s doloženými shodami pro ruční ověření
+Časté dotazy
+Co HealthKey přesně dělá?
+Napojí se na nemocniční EHR systém a pomocí AI prohledá záznamy pacientů podle zadaných inkluzních a exkluzních kritérií klinické studie. Nalezené shody s doloženými údaji ze zdravotní dokumentace dostane výzkumný tým do dashboardu k ruční kontrole a kvalifikaci.
+Kolik HealthKey stojí?
+Platí se formou success fee za každého úspěšně zařazeného pacienta, bez počátečních nákladů. V aktuální nabídce (platné do 30. 11. 2026, omezené na 20 pracovišť za čtvrtletí) je navíc zdarma implementace, nastavení protokolu pro 5 studií a prémiová podpora.
+Pro koho je HealthKey určen a jak začít?
+Je určen výzkumným centrům a koordinátorům klinických studií v nemocnicích, ne jednotlivým pacientům. Nasazení trvá podle webu zhruba týden, zájemci kontaktují poskytovatele kvůli napojení na EHR a nastavení konkrétní studie.
+Kategorie

@@ -1,0 +1,17 @@
+SmartScripter
+SmartScripter generuje funkční skripty (Excel VBA, Python, Bash, PowerShell, SQL a další) z obyčejného slovního popisu úkolu – hodí se lidem, kteří neumí programovat, ale potřebují automatizovat práci v Excelu, administrativě nebo příkazové řádce.
+O nástroji
+Nástroj funguje jednoduše: do textového pole napíšete, co má skript dělat (např. „Spočítej všechny buňky ve sloupci A“), a SmartScripter vygeneruje hotový kód včetně stručného vysvětlení, jak ho spustit. Podporuje Excel VBA, Google Apps Script, JavaScript, React.js, Bash, PowerShell, SQL, Python a v placené verzi i Ruby, C#, Perl, TypeScript nebo Go. Volná varianta nabízí 3 generování skriptů zdarma bez nutnosti zadávat platební kartu, s automatickým ukládáním generovaných skriptů. Placený Premium plán za 4 $/měsíc odstraňuje reklamy a dává neomezený počet generování plus přístup ke všem jazykům a budoucím novinkám. Cílovkou jsou podle popisu na stránce lidé z financí, marketingu, IT a administrativy, kteří potřebují zautomatizovat práci s tabulkami, opakující se úkoly nebo jednoduché skriptování bez hlubší znalosti programování. Stránka je celá v angličtině.
+Klíčové vlastnosti
+- Generování skriptů ze slovního popisu úkolu
+- Podpora Excel VBA, Python, Bash, PowerShell, SQL a dalších
+- Automatické ukládání vygenerovaných skriptů
+- Vysvětlení kódu a návod na spuštění
+Časté dotazy
+Co přesně SmartScripter umí?
+Z obyčejného slovního popisu úkolu (např. „spočítej buňky ve sloupci A“) vygeneruje funkční skript v Excel VBA, Pythonu, Bashi, PowerShellu, SQL a dalších jazycích, včetně stručného vysvětlení, jak ho spustit.
+Kolik SmartScripter stojí?
+Zdarma lze vygenerovat 3 skripty bez nutnosti zadávat platební kartu, Premium plán za 4 $/měsíc nabízí neomezené generování, odstranění reklam a přístup ke všem jazykům včetně Ruby, C#, Perl, TypeScript nebo Go.
+Pro koho je SmartScripter vhodný a jak začít?
+Je určen lidem z financí, marketingu, IT a administrativy, kteří potřebují automatizovat práci v Excelu nebo příkazové řádce bez znalosti programování – stačí se zaregistrovat a napsat, co má skript dělat.
+Kategorie

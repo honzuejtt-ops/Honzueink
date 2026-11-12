@@ -1,0 +1,17 @@
+HeyQuin
+AI asistent pro finanční poradce a podobné profese, který automaticky zapisuje poznámky z jednání, aktualizuje CRM (Salesforce, HubSpot, Wealthbox, Redtail, Pipedrive) a vyřizuje e-mailovou komunikaci a plánování schůzek.
+O nástroji
+HeyQuin se hodí hlavně poradcům a profesionálům, kteří tráví čas administrativou kolem klientských vztahů – zapisováním poznámek z jednání, ručním doplňováním CRM a vyřizováním rutinní e-mailové komunikace. Nástroj si po napojení na CRM sám osvojí zavedené konvence firmy (tagování, pojmenování, strukturu polí) a z poznámek, schůzek a e-mailů automaticky doplňuje záznamy, takže CRM zůstává aktuální bez ručního zásahu. Dále umí shrnout poznámky z jednání, rozeslat navazující e-maily, navrhnout odpovědi v poště k odsouhlasení, najít volný termín schůzky a odeslat pozvánky i připomínky e-mailem a SMS. Obsahuje i funkci vyhledávání napříč propojenými nástroji (CRM, e-mail, dokumenty), kde lze položit otázku jako kolegovi a dostat odpověď i s odkazem na zdroj – lze ovládat i ze Slacku nebo mobilu. Cena začíná na 49 USD/měsíc (neomezený počet uživatelů v rámci plánu), k dispozici je 14denní zkušební verze zdarma; pro větší nasazení nabízí firma individuální Enterprise řešení na dotaz. Stránka je pouze v angličtině.
+Klíčové vlastnosti
+- Automatický zápis poznámek z jednání do CRM
+- Rozesílání navazujících e-mailů po schůzce
+- Návrhy odpovědí v poště ke schválení
+- Hledání volného termínu a rozesílání pozvánek e-mailem i SMS
+Časté dotazy
+Co přesně HeyQuin umí?
+Zapisuje poznámky z jednání, aktualizuje CRM (Salesforce, HubSpot, Wealthbox, Redtail, Pipedrive), navrhuje odpovědi na e-maily, najde volný termín schůzky a rozešle pozvánky i připomínky e-mailem a SMS.
+Kolik HeyQuin stojí?
+Cena začíná na 49 USD/měsíc s neomezeným počtem uživatelů v rámci plánu, k dispozici je 14denní zkušební verze zdarma a pro větší firmy individuální Enterprise plán na dotaz.
+Pro koho je HeyQuin vhodný a jak začít?
+Hodí se finančním poradcům a podobným profesím, kteří řeší administrativu kolem klientů – stačí propojit CRM, e-mail a kalendář a nástroj se sám naučí zavedené konvence firmy.
+Kategorie

@@ -1,0 +1,13 @@
+Podle agentury Bloomberg se v šanghajském datovém centru nacházely servery vybavené vyspělými čipy Nvidia H800, H100 a H200. Některé z nich byly původně prodány firmě Aperia Cloud Services v Singapuru, která patřila mezi oficiální partnery Nvidie.
+Z dokumentů čínských úřadů však vyplývá, že hardware nakonec skončil u společnosti Shanghai Longteng Intelligent Computing, kterou Huangová před lety založila.
+Konkrétně šlo o 22 serverů od amerického výrobce Dell vybavených čipy H800. Jejich prodej do Číny Spojené státy omezily už v roce 2023.
+Bloomberg ověřil výrobní čísla zařízení u osoby obeznámené s původním obchodem. Ta potvrdila, že odběratelem Dellu byla singapurská Aperia.
+Čínská společnost použila techniku instalovanou v Šanghaji jako zástavu při financování v lednu 2025. Příslušné dokumenty odevzdala do databáze spravované institucí napojenou na čínskou centrální banku.
+Součástí zástavy bylo celkem 193 serverů v hodnotě 485 milionů jüanů (zhruba 1,6 miliardy Kč).
+Vedle zařízení od Dellu dokumenty uvádějí 52 serverů amerického výrobce Super Micro Computer s čipy Nvidia H100 nebo H200. Také jejich vývoz do Číny vyžaduje americké povolení. Dalších 119 serverů pocházelo od tchajwanské společnosti Gigabyte. Z dostupných údajů nebylo možné jednoznačně určit, jakými čipy byly vybaveny.
+Dokumenty podle Bloombergu navíc ukazují, že firma pořídila i další výpočetní techniku. Jen během května a června 2024 instalovala do datového centra servery za 747 milionů jüanů (přibližně 2,5 miliardy Kč). Jejich přesné modely ani dodavatelé však uvedeni nebyli.
+Výrobci tvrdí, že pravidla dodrželi
+Dell uvedl, že se společností Aperia ukončil veškerý prodej i podporu v únoru 2025 kvůli podezření na neoprávněné přesměrování dodávek. Ve stejném měsíci singapurské úřady zatkly šéfa Aperie kvůli obvinění z podvodů vůči dodavatelům serverů. Vinu odmítl.
+Super Micro sdělila, že identifikovaná zařízení prodala v souladu s americkými vývozními předpisy. Zároveň popřela, že by čipy dodávala některé z čínských společností propojených s datovým centrem.
+Nvidia se k novým zjištěním odmítla vyjádřit. Už dříve uvedla, že Aperia v době zatčení svého šéfa nebyla aktivním zákazníkem a odstranila ji ze seznamu oficiálních partnerů.
+Samotné dokumenty neprokazují, kdo přesně zakázané technologie do Číny převezl, ani zda se na jejich získání Huangová osobně podílela.

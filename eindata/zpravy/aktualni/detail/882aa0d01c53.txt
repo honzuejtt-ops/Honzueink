@@ -1,0 +1,8 @@
+Anthropic během pátku řešil dva samostatné incidenty. Už v 10:58 českého času začal vyšetřovat problémy s přihlašováním do Claude. Tento incident uzavřel ve 12:58.
+Další komplikace firma oznámila ve 14:09. Tentokrát zasáhly vedle webu a mobilních aplikací také programovací nástroj Claude Code a rozhraní API, prostřednictvím kterého využívají umělou inteligenci další aplikace.
+Dopady pocítily také automatizované úlohy. Anthropic během incidentu upozornil, že naplánované úkoly mohou nabírat zpoždění přes dvě hodiny a některá spuštění byla vynechána.
+V 16:38 společnost oznámila vyřešení hlavního odpoledního incidentu. API a Claude Code již podle stavového přehledu fungují normálně.
+Přestože firma incident uzavřela, celkový stavový přehled nadále označuje claude.ai a Claude Cowork jako služby se zhoršeným provozem. Důvod tohoto rozdílu stránka nevysvětluje.
+Problémy Microsoftu
+Vedle toho pokračují komplikace s propojením na Microsoft 365 a s Claude pro Outlook. Ty podle Anthropicu souvisejí s výpadkem služeb Microsoftu. Propojení se postupně zotavuje, některá vyhledávání v SharePointu ale stále končí chybou.
+Příčinu hlavního výpadku ani počet zasažených uživatelů Anthropic na stavové stránce neuvedl.

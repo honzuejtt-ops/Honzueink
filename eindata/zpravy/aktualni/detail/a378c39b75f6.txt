@@ -1,0 +1,4 @@
+Americká softwarová společnost Microsoft po pátečním celodenním výpadku obnovila funkčnost všech svých služeb. Oznámila to v sobotu na síti X.
+Výpadek zasáhl jak domácnosti, tak firmy a státní úřady, a to po celém světě včetně Česka. Microsoft už v pátek uvedl, že nic nenasvědčuje tomu, že by šlo o kybernetický útok nebo počínání umělé inteligence (AI).
+Příčinou problémů měla být chyba vzniklá při dřívějším rozšíření kapacity sítě, která se projevila až po nedávné změně v síti.
+Vzhledem k rozsahu výpadku společnost obnovovala služby postupně a průběžně ověřovala jejich stabilitu. Po uzavření vyšetřování firma zveřejní podrobnou zprávu o incidentu.

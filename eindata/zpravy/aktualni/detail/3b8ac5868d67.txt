@@ -1,0 +1,28 @@
+Na nepříjemnou dohru upozornil magazín WIRED. Jeho autor Christopher Null už žádost o kompenzaci sám podal. Při vydání článku měl zatím potvrzení o jejím přijetí, na výsledek čekal.
+Podobnou možnost mají i další firemní zákazníci. Microsoft se jim ve smlouvách zavazuje k určité dostupnosti placených služeb. Když slib nesplní, mohou za stanovených podmínek získat část poplatku zpět ve formě kreditu.
+Za výpadek pětistovka?
+Rozdíl mezi kompenzací a skutečnou ztrátou nejlépe ukáže jednoduchý příklad. Představme si firmu, která za dotčenou službu platí tisíc korun měsíčně a všem jejím uživatelům služba celý den nefungovala.
+Pokud by služba po zbytek třicetidenního měsíce fungovala bez výpadků, znamenalo by to dostupnost přibližně 96,67 procenta. Podle zveřejněných sazeb pro dostupnost poštovní služby Exchange Online by to odpovídalo kreditu ve výši poloviny příslušného měsíčního poplatku. V tomto modelovém případě pěti stovkám.
+Kolik mezitím firma ztratila času nebo obchodních příležitostí, se do tohoto výpočtu nepromítá. Microsoft v podmínkách uvádí, že kredity nenahrazují ušlé příjmy, provozní náklady ani nepřímé ztráty.
+Zveřejněná smlouva o úrovni služeb, známá jako SLA, u Exchange Online stanovuje kredit 25 procent při měsíční dostupnosti pod 99,9 procenta, polovinu pod 99 procent a celý příslušný měsíční poplatek pod 95 procent. Rozhoduje konkrétní smlouva a skutečný dopad na uživatele, nikoli jen délka globálního incidentu.
+Ani uvedená pětistovka tedy není příslibem pro každého zákazníka. Kredit se uplatňuje na poplatky za službu, automatická platba na bankovní účet z toho neplyne.
+Anketa
+Ztracené hodiny kredit nespraví
+Právě na tuto slabinu upozornila také profesní organizace Australian Computer Society (ACS). Podle jejího šéfa Prinse Ralstona případné kredity nenahradí malému podniku ztracené dopoledne obchodování.
+ACS se přitom nespokojila s čekáním na opravu. Vyzvala k přezkumu závislosti australských institucí na jednotlivých dodavatelích technologií a požaduje lepší komunikaci při podobných incidentech. Chce také posoudit, zda smlouvy dávají zákazníkům přiměřenou možnost nápravy, když služby selžou.
+Následky navíc nemusely znamenat úplné zastavení provozu. Někde se pracovalo dál, jen pomaleji a s náhradním řešením.
+Takovou cestu zvolil Euronext, provozovatel velkých evropských burz. Když některé jeho týmy nemohly přijímat e-maily, vyzval firmy, jejichž cenné papíry se na jeho trzích obchodují, aby naléhavé záležitosti řešily telefonicky. Podle Reuters šlo i o pozastavení obchodování nebo oznámení významných vlastnických podílů na burze v Oslu.
+Samotné trhy podle společnosti fungovaly normálně, uvedl The Wall Street Journal. Kolem nich se ale muselo více telefonovat. Euronext následně Reuters ujistil, že má dostatečnou kapacitu zvládnout zvýšené množství práce i opatření pro ověřování totožnosti volajících.
+Bez žádosti to nepůjde
+Zákazníkům, kteří chtějí smluvní kompenzaci uplatnit, nestačí čekat. Podpoře musí doložit, kdy a jak dlouho jim služby nefungovaly, koho se potíže týkaly a jaké chyby se objevovaly. Obecné oznámení výpadku samo o sobě podle SLA nárok nedokládá.
+Pro tyto listopadové nároky stanovují zveřejněné podmínky lhůtu do 31. prosince. Vždy je potřeba ověřit vlastní smlouvu; bezplatné služby uvedený režim nepokrývá.
+Microsoft se za výpadek omluvil a přislíbil podrobnou zprávu. Podle jeho vysvětlení se po změně v síti projevila chyba vzniklá při dřívějším rozšiřování kapacity. Nešlo podle něj o kybernetický útok ani činnost AI.
+Úplné obnovení služeb firma oznámila v sobotu. Žádosti o kompenzace však zákazníci mohli podávat už během výpadku, jak ukazuje i případ autora magazínu WIRED.
+Kolik výpadek celkem stál, zatím není spolehlivě vyčísleno.
+Kolaps serverů Microsoftu v kostce:
+- Kdy: Začal ve čtvrtek 12. listopadu. Úplné obnovení služeb Microsoft oznámil v sobotu 14. listopadu. Potíže trvaly přes 24 hodin.
+- Rozsah: Hlášení přicházela ze 74 zemí a území včetně Česka. Nešlo o úplný výpadek všech služeb pro všechny uživatele.
+- Zasažené služby: Především pošta Exchange Online a Outlook, ale také některé navázané funkce Teams, Copilotu a dalších nástrojů Microsoftu 365.
+- Příčina: Podle Microsoftu se po změně v síti projevila chyba vzniklá při dřívějším rozšiřování její kapacity. Firma uvedla, že nešlo o kyberútok ani zásah AI.
+- Dopady v Česku: Potíže hlásilo ministerstvo financí i pražské letiště. Novinky ověřily nedostupnost školní pošty u jednoho pražského gymnázia.
+- Dopady ve světě: Výpadek narušil komunikaci úřadů, škol, zdravotnických zařízení i firem. Euronext odkázal firmy na telefon, samotné burzovní obchodování pokračovalo.

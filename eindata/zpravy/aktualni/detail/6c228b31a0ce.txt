@@ -1,0 +1,16 @@
+Euronext provozuje mimo jiné burzy v Paříži, Amsterdamu a Miláně. Při mnohahodinovém výpadku cloudových služeb Microsoftu ale musel část komunikace s firmami převést na telefon.
+„Týmy Euronextu zajišťující korporátní události a přijímání cenných papírů k obchodování aktuálně zaznamenávají výpadek e-mailové komunikace a nemohou přijímat e-maily,“ uvedla společnost podle agentury Reuters.
+Výzva se týkala i citlivých záležitostí, například pozastavení obchodování nebo oznamování významných vlastnických podílů na burze v Oslu. Firmy a jejich zástupci měli v naléhavých případech zavolat příslušnému burzovnímu operátorovi.
+Telefon místo doručené pošty
+Přesun komunikace na telefon ale přinesl také otázku, jak bezpečně ověřit, kdo na druhém konci linky skutečně volá.
+Mluvčí Euronextu následně Reuters ujistila, že společnost používá odpovídající opatření k ověřování totožnosti zástupců firem i ochraně důvěrnosti komunikace. Dodala, že tým má dostatečnou kapacitu zvládnout zvýšené množství práce.
+Nešlo o zastavení burzovních trhů. Podle listu The Wall Street Journal Euronext uvedl, že trhy fungují normálně. Také jeho divize Euronext Securities v pátek oznámila, že její systémy pracují standardně, a upozornila pouze na možné zpoždění e-mailů.
+Případ tak ukázal méně nápadný dopad rozsáhlého výpadku: hlavní systémy mohou dál běžet, ale komunikaci kolem nich musí převzít náhradní kanál. V tomto případě obyčejný telefon.
+Microsoft v sobotu oznámil úplné obnovení postižených služeb. Potíže, které začaly ve čtvrtek, trvaly přes 24 hodin.
+Kolaps serverů Microsoftu v kostce:
+- Kdy: Začal ve čtvrtek 12. listopadu. Úplné obnovení služeb Microsoft oznámil v sobotu 14. listopadu. Potíže trvaly přes 24 hodin.
+- Rozsah: Hlášení přicházela ze 74 zemí a území včetně Česka. Nešlo o úplný výpadek všech služeb pro všechny uživatele.
+- Zasažené služby: Především pošta Exchange Online a Outlook, ale také některé navázané funkce Teams, Copilotu a dalších nástrojů Microsoftu 365.
+- Příčina: Podle Microsoftu se po změně v síti projevila chyba vzniklá při dřívějším rozšiřování její kapacity. Firma uvedla, že nešlo o kyberútok ani zásah AI.
+- Dopady v Česku: Potíže hlásilo ministerstvo financí i pražské letiště. Novinky ověřily nedostupnost školní pošty u jednoho pražského gymnázia.
+- Dopady ve světě: Výpadek narušil komunikaci úřadů, škol, zdravotnických zařízení i firem. Euronext odkázal firmy na telefon, samotné burzovní obchodování pokračovalo.

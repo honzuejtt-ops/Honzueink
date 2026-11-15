@@ -1,0 +1,18 @@
+Gödelovy zápisníky nejsou četbou na několik večerů. Šestnáct sešitů z počátku 40. let obsahuje 1009 hustě popsaných stran matematiky a logiky. Porozumět jim znamená překonat hned dvě překážky: přečíst dávný způsob zápisu a následně pochopit úvahy člověka, který zásadně změnil svůj obor.
+Právě o to se snaží finský logik Jan von Plato z Helsinské univerzity, který se systematickému studiu Gödelových poznámek věnuje od roku 2017. Matematické porozumění materiálu však podle něj postupovalo přibližně tempem jedné stránky týdně.
+Letos v září zapojil do práce AI model Claude. Předložil mu lidské přepisy, své knihy i odbornou literaturu. Během několika dnů získal přibližně 650stránkový rozbor, který bylo nutné kontrolovat stránku po stránce.
+„Byl jsem ohromen. Tyto sešity obsahují nejen desítky výsledků, které předjímají poznatky známé až ze 70. a 80. let, ale také 14 témat z logiky, která nebyla dále zkoumána,“ řekl von Plato britskému deníku The Guardian. „Gödel byl daleko před svou dobou,“ dodal.
+Ani génius neměl vždy pravdu
+Claude vybral 663 matematických tvrzení, k nimž Gödel zaznamenal důkaz, jeho náčrt nebo alespoň představu, jak je dokázat. Podle von Plata při kontrole v programu Coq přibližně 400 obstálo v uvedené podobě, 200 potřebovalo úpravy a 50 bylo chybných. Výzkumník uváděl zaokrouhlené počty.
+Rozdíl mezi hotovým důkazem a rozpracovanou myšlenkou je přitom podstatný. Soukromý zápisník zachycuje cestu k výsledku — včetně odboček a slepých uliček. Každé nalezené tvrzení proto nelze automaticky vydávat za dokončený objev.
+Také případná matematická správnost výsledku je jiná otázka než jeho historické autorství. U rekonstrukcí je potřeba rozlišit, co už obsahovaly původní poznámky a co doplnilo jejich dnešní zpracování. Není tedy namístě všechna nalezená tvrzení označit za nové Gödelovy objevy.
+Anketa
+Poklady se objevovaly už před AI
+Výzkumníci přitom nečekali na příchod umělé inteligence se založenýma rukama. V rámci projektu GODELIANA postupně přepisovali, překládali a vydávali Gödelovy texty, aby se k nim mohli dostat další odborníci.
+Závěrečná zpráva projektu pro Evropskou komisi za období končící v srpnu 2024 uvádí pět vydaných knih, šestou v tisku a téměř dvacet odborných článků vydaných nebo přijatých do tisku. Knihu Results on Foundations z roku 2023 popisuje jako bohatý soubor převážně dosud neznámých výsledků, z nichž některé už našly využití v současné logice.
+Letošní práce s AI tak navazuje na roky odborného úsilí. Právě lidské přepisy zpřístupnily obtížný materiál počítačové analýze.
+Z Brna mezi největší myslitele
+Gödel se narodil v Brně a v roce 1924 odešel studovat do Vídně. Už v roce 1931 publikoval dvě věty o neúplnosti, které ho zařadily mezi nejvýznamnější myslitele 20. století.
+Jeho práce pomohla nasměrovat výzkum k formálním jazykům a algoritmické vyčíslitelnosti – základům, na nichž později vyrostla informatika.
+V roce 1940 se s manželkou přestěhoval do amerického Princetonu. Po zásadních pracích ze 30. let publikoval už jen několik odborných článků. Rozsáhlá pozůstalost však ukazuje, proč nelze množství vydaných textů zaměňovat za množství myšlenek, kterými se zabýval.
+Více než osmdesát let staré zápisníky tak stále mají co nabídnout. Teprve další výzkum ukáže, které myšlenky mají především historickou hodnotu a které mohou posunout i dnešní matematiku.

@@ -1,0 +1,25 @@
+Kde mají váš předepsaný lék s omezenou dostupností, ukáže eRecept
+Když vám lékař předepíše lék, který Státní ústav pro kontrolu léčiv označil příznakem omezené dostupnosti, nemusíte obvolávat lékárny. Aplikace v mobilu vám ukáže 20 nejbližších, které ho mají.
+U každé lékárny je vidět i množství předepsaného léku, které tam mají. Mapa funguje od června 2024. Mapu uvidí každý, komu lékař takový lék předepíše.
+Mapa místo obvolávání lékáren
+Smysl celé funkce je prostý. Nemocný už nemusí obcházet ani obtelefonovávat desítky lékáren s dotazem, jestli lék zrovna mají.
+Mapa se řídí polohou nebo poštovním směrovacím číslem. Najdete ji v pacientské aplikaci eRecept, kterou si lze stáhnout do mobilu. Informace o dostupnosti může při předepisování vidět i váš lékař.
+Možnost vznikla díky novele zákona o léčivech. Že funkce platí i letos, potvrzuje květnový odborný přehled lékového ústavu.
+Proč lékárny vědí, co mají na skladě
+U léků, které mají příznak „omezená dostupnost“, musí distributoři i lékárny hlásit stav zásob každý den. Hlásí tedy nejen lékárna u vás na rohu, ale i firmy, které léky do lékáren rozvážejí.
+Takový lék je navíc chráněn před vývozem do zahraničí, aby se jeho nedostatek u nás ještě nezhoršil.
+Z těchto hlášení čerpá i lékař. Když předepisuje lék s omezenou dostupností, ukáže se mu, jak je na tom lék v lékárnách v okolí zadané adresy nebo souřadnic místa. Může tak předepsat lék, který je pro pacienta dostupný.
+💡 Zajímavost: Příznak „omezená dostupnost“ nedostane lék jen tak. SÚKL ho může zapnout, když má lék nahlášené přerušení nebo konec dodávek a zároveň má stanovenou maximální cenu nebo úhradu z pojištění.
+Jak to vypadá v praxi, ukázalo ministerstvo zdravotnictví v červenci 2026 u tamoxifenu, kdy pacientkám radilo ověřit si dostupnost přes aplikaci eRecept. Připomnělo přitom, že právě příznak omezené dostupnosti jim umožňuje zjistit, jak je na tom lék v jednotlivých lékárnách.
+Na co si dát pozor
+Mapa má svá omezení a vyplatí se je znát. Neukazuje se u všech léků, ale jen u těch s příznakem „omezená dostupnost“. A uvidí ji jen ten pacient, kterému lékař takový lék předepsal. Ostatní lidé mapu neuvidí.
+Údaje nejsou vždy úplně čerstvé. Zásoba v lékárně vychází zpravidla z hlášení z konce předchozího pracovního dne. U každého údaje je proto uvedeno datum a čas poslední aktualizace. Podle něj poznáte, jak je informace stará.
+Mapa také ukazuje jen místa, kde lék mají. Když je ho málo, nejbližší taková lékárna může být desítky kilometrů daleko. I to je ale užitečná informace: člověk ví hned, kam se vydat, a nemusí zkoušet jednu lékárnu po druhé.
+Když lék z receptu nikde blízko nemají
+Pokud je lék z receptu mezi těmi s omezenou dostupností, podívejte se do aplikace eRecept. Mapa vám ukáže lékárny, které ho mají, i s množstvím.
+Když ho nemají nikde blízko, můžete se zeptat lékaře. Při předepisování vidí, kde je lék k dostání, a může předepsat lék, který je pro pacienta dostupný.
+Ověřeno z:
+- SÚKL — Farmakoterapeutické informace 5/2026 (květen 2026)
+- Ministerstvo zdravotnictví — tisková zpráva k dostupnosti tamoxifenu (14. 7. 2026)
+- Deník — Aplikace eRecept má nově mapu lékáren (4. 6. 2024)
+- Novinky — Do které lékárny nejezdit? (2. 6. 2024)

@@ -1,0 +1,18 @@
+Kdo ve čtvrtek večer sledoval americký graf nedostupnosti Outlooku, viděl prudký vzestup a vrchol kolem 138 tisíc hlášení. Už to naznačovalo rozsáhlý problém. Už během pátku přitom Downdetector evidoval přes 7,4 milionu hlášení z celého světa.
+Obě čísla zachycují něco jiného. První označuje nejvyšší hodnotu amerického přehledu Outlooku, druhé součet hlášení problémů se službami Microsoftu napříč světem za sledované období. Nejde tedy o nárůst ze 138 tisíc na 7,4 milionu postižených lidí.
+Počet zasažených uživatelů z těchto údajů určit nelze.
+Téměř dvacet tisíc hlášení za minutu
+Podrobnější pohled nabídl server PCMag, který citoval analytika Ookly Luka Kehoea. Podle něj četnost hlášení vyvrcholila ve čtvrtek v 19:25 středoevropského času. Dosáhla 19 650 za minutu, více než patnáctisetnásobku běžné úrovně.
+Ani téměř o 23 hodin později nebyl klid. Downdetector stále zaznamenával přibližně 930 hlášení za minutu, tedy více než osmdesátinásobek obvyklého počtu. Zhruba polovina z tehdy evidovaných více než 7,4 milionu hlášení pocházela ze Spojených států. Přes tisíc jich však zaznamenalo také více než 90 zemí a území.
+Výpadek tak postupně zasahoval další pracovní rána. Jak podle Reuters upozornila Ookla, další vlny hlášení přicházely s nástupem zaměstnanců do práce v Asii a Evropě. Potíže, které začaly během amerického pracovního dne, čekaly na lidi i po příchodu do kanceláří na jiných kontinentech.
+Miliony hlášení nejsou miliony lidí
+Údaje Downdetectoru je potřeba číst jako ukazatel rozsahu hlášených problémů, nikoli jako přesné sčítání zasažených lidí. Ne každý uživatel své potíže nahlásí. Ani milionový součet proto neříká, kolika lidem služby skutečně nefungovaly.
+Problémy navíc neznamenaly úplné vypnutí všeho, co Microsoft provozuje. Firma uvedla, že incident zasáhl funkce navázané na Exchange Online, tedy cloudovou službu pro elektronickou poštu a kalendáře. Aplikace, které na postižených funkcích nezávisely, mohly dál fungovat.
+Milionová čísla přesto dokládají, jak daleko se následky technického problému rozšířily. Za prudce rostoucími hodnotami byly nedostupné schránky, narušená pracovní komunikace a lidé, kteří místo běžného začátku dne hledali, jak se vůbec spojit s kolegy.
+Kolaps serverů Microsoftu v kostce:
+- Kdy: Začal ve čtvrtek 12. listopadu. Úplné obnovení služeb Microsoft oznámil v sobotu 14. listopadu. Potíže trvaly přes 24 hodin.
+- Rozsah: Hlášení přicházela ze 74 zemí a území včetně Česka. Nešlo o úplný výpadek všech služeb pro všechny uživatele.
+- Zasažené služby: Především pošta Exchange Online a Outlook, ale také některé navázané funkce Teams, Copilotu a dalších nástrojů Microsoftu 365.
+- Příčina: Podle Microsoftu se po změně v síti projevila chyba vzniklá při dřívějším rozšiřování její kapacity. Firma uvedla, že nešlo o kyberútok ani zásah AI.
+- Dopady v Česku: Potíže hlásilo ministerstvo financí i pražské letiště. Novinky ověřily nedostupnost školní pošty u jednoho pražského gymnázia.
+- Dopady ve světě: Výpadek narušil komunikaci úřadů, škol, zdravotnických zařízení i firem. Euronext odkázal firmy na telefon, samotné burzovní obchodování pokračovalo.

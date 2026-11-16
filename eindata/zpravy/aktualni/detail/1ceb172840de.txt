@@ -1,0 +1,26 @@
+Vědci z Lékařské fakulty v Plzni Univerzity Karlovy (LFP UK) zjistili, že některé materiály pro 3D jsou toxické pro lidskou kůži. Během několika let otestovali celkem 16 běžně prodávaných filamentů různých značek a zjistili, že při dlouhodobém používání škodí lidským buňkám nejvíce hlavně měkké flexi materiály.
+Ohebné filamenty jako zdroj ekzému nebo svědění
+Výzkum českých vědců vyvrací dnes ještě stále rozšířenou představu o domácím 3D tisku. Ti zkoumali, jak jsou na tom plastové struny z hlediska bezpečnosti při dlouhodobém styku s lidskou kůží. Výsledky pak byly publikovány v odborném časopise Scientific Reports z vydavatelství Nature.
+Vzorky vytiskli na běžné stolní tiskárně Prusa MK3S a vystavili je kulturám kožních buněk. Materiál se buněk přímo nedotýkal, ležel jen vedle nich. Stav buněk kontrolovali po 24 hodinách v průběhu jednoho týdne.
+Testování proběhlo na celkem 16 filamentech různých výrobců a materiálů:
+- Fillamentum Extrafill Crystal Clear PLA,
+- Fillamentum Extrafill Trafic White PLA,
+- Fillamentum Extrafill Trafic Black PLA,
+- Fillamentum Extrafill Natural PLA,
+- Fillamentum HG100 Extrafill Natural CPE,
+- Fillamentum Extrafill Black ABS,
+- Fillamentum Extrafill Natural ASA,
+- Fillamentum Extrafill Natural ABS,
+- Fillamentum Extrafill Transparent ABS,
+- Fillamentum A98 Traffic White FLEX/TPU,
+- Fillamentum Natural PC-ABS,
+- Prusament Jet Black PLA,
+- Prusament PETG Jet Black PETG,
+- Prusament Blend PC,
+- Smartfill Medical ABS,
+- Verbatim PP Transparent PP.
+Nejhůře v testu dopadlo ohebné TPU. Po sedmi dnech měly buňky abnormálně změněný tvar a objevily se v nich vakuoly. Jejich metabolická životaschopnost klesla o zhruba 17 %, fluorescence o 16 %, běžné mitochondriální dýchání o téměř 59 % a schopnost buněčného dýchání vázaného na ATP o téměř 88 %. Zajímavé je i to, že testované „medicínské“ ABS od firmy Smartfill dopadlo v dlouhodobém ukazateli zdraví buněk hůře než běžné ABS.
+Co tisknout a čemu se raději vyvarovat?
+Podle odborného webu Fabbaloo studie neukazuje, že by běžné krátké zacházení s výtisky z 3D tiskáren bylo nebezpečné. Opatrnost je ale na místě při dlouhodobém kontaktu s kůží. O toxicitě nerozhoduje jen druh polymeru, ale i konkrétní složení, které ale výrobci ne vždy zveřejňují. Z výzkumu ve většině případů vychází jako nejnebezpečnější materiál TPU.
+Závěr je tak podle vědců jasný. Z PETG ani ohebných flexi materiálů (typicky TPU) by se neměly tisknout věci, které jsou v dlouhodobém kontaktu s kůží. Například náramky, přívěsky, prsteny, řemínky hodinek a podobně. Stejné varování platí pro předměty, které se dávají do úst nebo slouží k přípravě jídla, jako jsou například vykrajovátka nebo plastové příbory.
+Lidé by se rovněž měli vyvarovat levným filamentům z asijských e-shopů s mnohdy pochybnou kvalitou a ideálně u každého materiálu kontrolovat bezpečností list a certifikace. Najdete je obvykle přímo u daného produktu. Například český Průša má u všech filamentů tyto dokumenty v zápatí každého filamentu.

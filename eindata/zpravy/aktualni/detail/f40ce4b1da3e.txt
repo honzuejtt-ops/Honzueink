@@ -1,0 +1,5 @@
+Vývojář Jan Zhor, který je známý domovskou obrazovkou BIG Launcher pro Android, vydal další zajímavý projekt. Jmenuje se Minimapa, je zdarma a ve webovém prohlížeči nebo androidovské aplikaci umožňuje prohlížení modelu České republiky včetně všemožných detailů. Celé to připomíná strategické hry typu Transport Tycoon.
+“Minimapa je hravá 3D krajina, ve které každý kopec, les, řeka i vesnice stojí tam, kde doopravdy jsou. Je v ní vidět každý dům a přes 1 800 staveb, od hradů po rozhledny a horské chaty,” informuje tvůrce. Celkem jde o více než šest milionů budov, skoro 18,5 tisíce značených tras, silnice a podobně. Po mapě jezdí dopravní prostředky a nad zajímavými objekty lze dělat přelety.
+Z Minimapy je si exportovat data ve formátu GPX a naplánovat si tak výlet. Součástí je deník s razítky pro objevování.
+Minimapa je postavena podle skutečných fotek. Používají se data z Overture Maps a OpenStreetMap a dále informace z ČÚZK a Waymarked Trails.
+Aplikace je ve 3D a umožňuje natáčení nebo přibližování. Implementováno je střídání počasí, které si lze upravit, nebo nechat zobrazovat aktuální situaci.

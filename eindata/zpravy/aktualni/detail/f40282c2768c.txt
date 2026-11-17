@@ -1,0 +1,27 @@
+Kdo žil ve vašem domě před sto lety, můžete zjistit online
+Moravský zemský archiv zveřejnil všechny dochované sčítací archy z let 1857 až 1921, asi 3,6 milionu snímků. Pokrývají jižní Moravu, Zlínsko a Vysočinu, Brno má vlastní archiv města. Své sbírky na internetu mají i jižní Čechy a Praha.
+V roce 1921 se u každého obyvatele domu zapisovalo jméno, datum a místo narození a povolání. Arch prozradí i to, jestli člověk uměl číst a psát a odkdy v obci bydlel. K nalezení vlastního domu stačí znát obec a číslo popisné. Do badatelny kvůli tomu chodit nemusíte.
+Takhle vypadá sčítací arch z roku 1921, tento je z Kolína. Foto: Neznámý autor (SOkA Kolín) / Wikimedia Commons, volné dílo
+Nejdřív číslo popisné, pak obec a rok
+V aplikaci Moravského zemského archivu se nehledá podle jména, ale podle místa. Proto se vyplatí začít číslem popisným domu. Zjistíte ho zdarma a bez registrace v Nahlížení do katastru nemovitostí.
+Pak otevřete aplikaci Moravského zemského archivu a zadejte obec, případně její část nebo osadu. Výběr můžete zúžit podle ulice a roku sčítání, nabídka většinou pokrývá sedm sčítání z let 1857 až 1921. Výsledkem jsou sady snímků popsané obcí, rokem a rozsahem čísel popisných, například čísla 1 až 59. Vyberete sadu, do které patří váš dům, kliknete na tlačítko Zobrazit a listujete, dokud ho nenajdete.
+Co v aplikaci chybí, se podle archivu do dnešních dnů nedochovalo. Do digitalizace se zapojilo všech 15 okresních pracovišť Moravského zemského archivu, od Znojma a Břeclavi přes Zlín a Vsetín až po Jihlavu, Havlíčkův Brod a Pelhřimov. Výjimkou je Brno: archy pro město a jeho části zveřejňuje Archiv města Brna.
+Co se dozvíte z archu
+Z archu z roku 1921 se kromě rodiště dozvíte, v jakém poměru byl člověk k majiteli bytu: jestli šlo o příbuzného, nebo o někoho jiného. Arch se ptal i na to, čím se dotyčný živil 16. července 1914. Zapisovalo se také náboženské vyznání.
+Starší archy se obsahem liší. Kolonka o tom, kdo umí číst a psát, přibyla až v roce 1880.
+Pravidelné sčítání po deseti letech zavedl zákon z 29. března 1869, a proto se za první moderní sčítání považuje právě to z roku 1869.
+💡 Zajímavost: Archy ze sčítání, které Moravský zemský archiv digitalizoval, zabírají v regálech 710 běžných metrů.
+Kdo už si podobně hledal dům, kde vyrůstal, na leteckých snímcích z 50. let, může teď k budově přidat i lidi, kteří v ní bydleli.
+Jižní Čechy a Praha mají vlastní sbírky
+Státní oblastní archiv v Třeboni zpřístupnil archy z let 1857 až 1921 zdarma v aplikaci DigiArchiv. Podle přednášky z roku 2015 šlo o téměř 1,1 milionu snímků ze sedmi okresních archivů, mimo jiné z Českých Budějovic, Českého Krumlova, Písku a Tábora.
+Archiv hlavního města Prahy má na internetu archy ze sčítání v letech 1869, 1880 a 1890, chybí jen část Žižkova. Na jeho webu je navíc i část Soupisu pražského obyvatelstva, který zachycuje lidi žijící v tehdejší Praze v letech 1830 až 1949.
+V ostatních krajích je nejlepší se zeptat přímo v archivu, pod který obec spadá.
+Mladší archy a kopie snímků
+Archy ze sčítání od roku 1930 leží v Národním archivu v Praze. Kopie z let 1930 až 1950 se dají získat na žádost přes formulář. Je potřeba znát přesnou adresu z doby sčítání včetně čísla popisného a přiložit plnou moc nebo doklad o příbuzenství s hledanou osobou, případně doložit její úmrtí. Nahlédnout do konkrétního archu lze zdarma přes Národní digitální badatelnu, kde je digitální obsah dostupný po přihlášení.
+Aplikace moravského archivu slouží jen k prohlížení, kopii snímku ale archiv poskytne za poplatek podle sazebníku. Při tak velkém množství snímků se mohou ojediněle objevit chyby, třeba chybějící arch nebo přehozené pořadí. Takovou chybu je možné nahlásit archivu přes kontaktní formulář.
+Ověřeno z:
+- Moravský zemský archiv v Brně – Sčítací operáty 1857–1921, aplikace a nápověda (stav listopad 2026)
+- Český statistický úřad – Obsah sčítání lidu 1921
+- Archiv hlavního města Prahy – Sčítání lidu a soupisy obyvatelstva (stav listopad 2026)
+- Národní archiv – Žádost o kopie operátů ze sčítání 1930–1950 a Národní digitální badatelna (stav listopad 2026)
+- Historická sčítání lidu v jihočeských archivech a jejich digitalizace (přednáška, 2015)

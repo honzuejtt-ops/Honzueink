@@ -1,0 +1,17 @@
+Beelzebub
+Bezpečnostní framework napsaný v jazyce Go, který umožňuje vytvářet takzvané honeypoty – falešné síťové služby a systémy sloužící jako návnada pro potenciální útočníky. Podporuje simulaci služeb SSH, HTTP, TCP, Telnet nebo databází a umožňuje jejich chování definovat pomocí jednoduchých konfiguračních souborů YAML.
+Zajímavou funkcí je využití jazykových modelů (LLM), díky nimž mohou falešné systémy dynamicky reagovat na příkazy a požadavky útočníků, místo aby nabízely pouze předem připravené odpovědi. Framework zaznamenává průběh interakcí, příkazy i další informace o pokusech o napadení a podporuje integraci s Prometheem, RabbitMQ, Dockerem a Kubernetes. Využití najde především při bezpečnostním výzkumu, testování infrastruktury a analýze kybernetických hrozeb.
+github.com/beelzebub-labs/beelzebub, 3.10.0
+CrossMacro
+Multiplatformní aplikace pro nahrávání, úpravu a přehrávání maker pro myš a klávesnici. Umožňuje zaznamenávat pohyby myši, kliknutí i stisky kláves a následně je automaticky opakovat, včetně nastavení počtu opakování, prodlev a rychlosti přehrávání v rozsahu 0,1× až 10×.
+Součástí je editor maker s možností úprav jednotlivých akcí, podpora globálních klávesových zkratek, automatického doplňování textu a plánování úloh. Makra lze ukládat do vlastních souborů a aplikaci ovládat také z příkazové řádky nebo bez grafického rozhraní. Je napsán v jazyce C#, podporuje Linux, Windows a macOS.
+github.com/alper-han/CrossMacro, 1.5.3
+Kitesurf
+Odlehčené vykreslovací jádro webového prohlížeče vyvinuté společností Cloudflare, určené především pro automatizaci webových úloh a práci AI agentů. Na rozdíl od klasických prohlížečů nevyužívá Chromium ani kompletní instanci prohlížeče, ale jednotlivé komponenty napsané v jazyce Rust a zkompilované do WebAssembly.
+Dokáže načítat webové stránky, zpracovávat HTML a CSS, spouštět JavaScript a pořizovat snímky vykreslených stránek, přičemž klade důraz na nízkou spotřebu systémových prostředků. Podporuje také Chrome DevTools Protocol, takže jej lze propojit s existujícími automatizačními nástroji, například Puppeteerem. Projekt je zatím v experimentální fázi aktivního vývoje.
+PhotoPrism
+Platforma pro správu, organizaci a sdílení fotografií a videí, kterou lze provozovat na vlastním serveru nebo v privátním cloudu. Využívá technologie umělé inteligence k automatickému rozpoznávání obsahu snímků, jejich označování a rozpoznávání obličejů. Nabízí pokročilé vyhledávání podle místa pořízení, barev, rozlišení nebo dalších metadat, podporuje širokou škálu obrazových formátů včetně RAW a dokáže pracovat také s videi.
+Nechybí automatické rozpoznávání duplicit, geografické mapy, tvorba alb ani synchronizace fotografií z mobilních zařízení prostřednictvím aplikace PhotoSync. Uživatelské rozhraní je dostupné jako progresivní webová aplikace (PWA), takže knihovnu lze pohodlně procházet z počítače, tabletu i telefonu.
+github.com/photoprism/photoprism, 261029
+Blbinka
+Na seznam zakázaných slov se dnes už může dostat cokoli. Vedle hanlivého označení pro černocha i docela nečekané věci.

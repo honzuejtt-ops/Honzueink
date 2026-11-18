@@ -1,0 +1,5 @@
+Českým internetem dnes protekl rekordní počet dat. Tuzemský nezávislý internetový uzel NIX.CZ, v rámci něhož si operátoři, poskytovatelé internetu, webových služeb a podobně vyměňují data, pokořil hranici čtyř terabitů za sekundu (4 Tb/s). NIX už se k tomu párkrát přiblížil, dnes po osmé hodině večerní se to konečně podařilo.
+Za pokořením mety čtyř terabitů za sekundu je očekávaná hra Grand Theft Auto 6 (GTA 6). Ta bude hráčům k dispozici na konzolích PlayStation 5 a Xbox Series X a S po půlnoci. Autoři nicméně umožnili takzvaný preload, kdy bylo možné si více než 200 GB dat stáhnout s předstihem, díky čemuž je možné po půlnoci hned začít hrát.
+„Je velice pravděpodobné, že k překonání 4 Tb/s přispělo plánované uvedení hry GTA 6 na trh,“ řekl Lupě Adam Golecký, ředitel NIXu.
+Zájem o předstažení je po celém světě obrovský. Evropský internetový uzel DE-CIX ve Frankfurtu například zaznamenal rekordních 22,3 terabitu za sekundu.
+V minulosti se často nejvyšší čísla překonávala v rámci významných sportovních přenosů, typicky u mistrovství světa v hokeji, kdy Češi streamovali zápasy reprezentace přes internet.

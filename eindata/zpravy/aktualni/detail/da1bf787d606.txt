@@ -1,0 +1,25 @@
+Nejpoužívanější hesla v Česku patří mezi ta nejméně bezpečná. Je to trend, který se nedaří zlomit, i když probíhá postupná osvěta. NordPass a NordLayer Intelligence zveřejnily statistiku, podle níž nadále Češi nejvíce používají snadno prolomitelná hesla “admin” a “123456”.
+Dvacet nejpoužívanějších hesel vypadá takto:
+- admin
+- 123456
+- maminka123
+- Heslo1234
+- Asdfg121
+- ladislav
+- djkiller
+- 123456789
+- kocicak1
+- 258852
+- 12345
+- 1234
+- 12345678
+- maruska
+- Student123
+- navratilova
+- 12345678910
+- heslo
+- qwert123
+- heslo123
+Heslo “123456” je nejpoužívanějším i celosvětově, následují “admin” a “12345678”. Pomocí hesla “123456” se například nedávno podařilo útočníkům dostat do dánského Centrálního registru obyvatel.
+“Ve srovnání s loňskem výzkumníci zaznamenali další nárůst používání speciálních znaků – v celosvětovém žebříčku je obsahuje 39 hesel oproti loňským 32. Většina z nich je bohužel stále jednoduchá, například Admin@123 nebo P@ssw0rd,” upozornila NordPass.
+“Výzkumníci také narazili na několik výchozích hesel k routerům, zejména ALC#FGU a adminHW. Jsou natolik rozšířená, že se dostala i do celosvětového žebříčku, konkrétně na 116. a 118. místo. To znamená, že nespočet routerů a zařízení internetu věcí (IoT) v Česku i ve zbytku světa je velmi zranitelných vůči útočníkům,” dodala NordPass.

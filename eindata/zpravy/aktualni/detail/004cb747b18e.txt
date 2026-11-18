@@ -1,0 +1,10 @@
+Na Kickstarteru se objevil zajímavý kus hardwaru, který má potenciál zamíchat s multinástrojovým 3D tiskem. Společnost InfiMech představila dvojici 3D tiskáren MX a MX Pro, které nabídnou až 8 tiskových hlav a cenu začínající na 369 dolarech, v přepočtu asi 8 tisíc korun.
+Šest nebo osm tiskových hlav
+3D tiskárny InfiMech MX a InfiMech MX Pro patří mezi CoreXY stroje, které jdou naproti aktuálnímu trendu toolchangerů. Základní model MX má 6 tiskových hlav, dražší MX Pro pak nabízí hned 8.
+Podle výrobce si obě tiskárny poradí jak s multibarevným tiskem, tak i s tiskem kombinujícím více materiálů. Tiskové hlavy mají indukční ohřev, tiskárny automatickou kalibraci a v případě dražší verze Pro také vyhřívanou komoru pro náročnější materiály.
+InfiMech MX má tiskovou plochu 220 × 220 × 220 mm, zakrytovaná dražší verze Pro potom 300 × 300 × 300 mm. Tiskárny mají sdílet stejnou tiskovou rychlost 300 mm/s a akceleraci až 20 000 mm/s².
+Nejpodivuhodnější jsou ceny
+Co je na tiskárnách nejpodivuhodnější, jsou samotné ceny. Šestihlavou InfiMech MX lze pořídit skrze Kickstarterovou kampaň za 2 815 hongkongských dolarů, tedy v přepočtu asi 359 amerických dolarů a na naše necelých 8 tisíc korun (ano, čtete správně).
+Zakrytovaná InfiMech MX Pro s osmi tiskovými hlavami pak vyjde aktuálně na 5 010 hongkongských dolarů, tedy 639 amerických dolarů nebo lehce přes 14 tisíc korun. Cena tak vypadá až podezřele nízko v porovnání s konkurencí.
+Naposledy představené Bambu Lab H3C s devíti hlavami vyjde na 61 tisíc korun, sestavená Prusa Core One+ (Gen 2) s osmihlavovým INDX systémem stojí 54 tisíc korun, Sovol M1D se sedmi hlavami vychází na 31 tisíc korun. Doposud nejlevnější úspěšný crowdfundingová 3D tiskárna Snapmaker U1 s 4 tiskovými hlavami nyní stojí lehce přes 15 tisíc korun.
+Bude tak zajímavé sledovat, jak si tato nová značka povede a zdali se jí podaří srazit cenu dosavadních multitool 3D tiskáren.

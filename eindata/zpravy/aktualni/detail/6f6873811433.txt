@@ -1,0 +1,32 @@
+Důchody jsou si v krajích blíž než mzdy, porovnejte svůj okres
+Penzista v Praze bere podle České správy sociálního zabezpečení jen o desetinu víc než penzista na Karlovarsku, přitom výplaty v práci se mezi stejnými kraji liší zhruba o polovinu. Důchody jsou si v Česku mnohem blíž než mzdy.
+#důchodci#senioři#peníze#statistika
+Na konci roku 2025 bral penzista v Praze v průměru 22 211 korun, na Karlovarsku 20 187. Rozdíl tedy dělá 2 024 korun měsíčně. Devět krajů mezi nimi, od Plzeňska po Ústecko, leží na jedné hromádce: od nejvyššího po nejnižší je to jen 230 korun. Kdo bydlí v některém z nich, bere v průměru skoro stejně jako lidé v ostatních osmi.
+Žebříček krajů od Prahy po Karlovarsko
+Čísla v žebříčku udávají průměrný starobní důchod lidí, kteří nepobírají současně žádný jiný důchod, podle tabulky ČSSZ k 31. 12. 2025.
+Kraje se podle průměrného starobního důchodu seřadily takto:
+- Praha: 22 211 Kč
+- Středočeský kraj: 21 388 Kč
+- Moravskoslezský kraj: 21 160 Kč
+- devět prostředních krajů: od 20 967 do 20 737 Kč
+- Olomoucký kraj: 20 607 Kč
+- Karlovarský kraj: 20 187 Kč
+Nad celostátním průměrem jsou jen tři kraje: Praha, Středočeský a Moravskoslezský. Všechny ostatní jsou pod ním, ale většinou jen těsně. Největší skok v žebříčku je hned na začátku: Praha má před druhým Středočeským krajem náskok přes osm set korun.
+Hůř vychází dvojice na konci. Olomoucký kraj zaostává za nejnižším krajem prostřední skupiny o 130 korun. Karlovarský kraj je poslední a od Prahy ho dělí přes dva tisíce korun. Poslední místo Karlovarska potvrzuje ve svém krajském přehledu i Český statistický úřad. Částky má trochu jiné, uvádí plné starobní důchody, Karlovarsko je ale i u něj poslední.
+Prostřední skupina: devět krajů skoro stejně
+Nejpočetnější část žebříčku tvoří devět krajů od Plzeňského po Ústecký. Plzeňský kraj má v čele této skupiny průměr 20 967 korun. Ústecký kraj na jejím konci má o pouhých 230 korun méně.
+Hned za Plzeňskem následují Jihočeský a Jihomoravský kraj, oba těsně pod 21 tisíci. Královéhradecký kraj, Vysočina a Zlínský kraj jsou od nich vzdálené nejvýš o 35 korun. Pardubický a Liberecký kraj mají 20 856 a 20 844 korun.
+Ať tedy důchodce bydlí na jihu Čech, na Vysočině, ve Zlíně nebo v Liberci, průměr v jeho kraji se od ostatních z této skupiny liší nejvýš o 230 korun. Celé rozpětí skupiny je přitom menší než samotný skok mezi Prahou a Středočeským krajem.
+Důchody jsou si blíž než mzdy
+Mezi kraji se mnohem víc liší výdělky lidí v práci. Průměrná hrubá mzda v Praze byla v roce 2025 podle Českého statistického úřadu 62 723 korun. V Karlovarském kraji, který měl nejnižší mzdy, to bylo 42 049 korun.
+Pražské mzdy jsou tedy zhruba o polovinu vyšší, kdežto u důchodů je náskok Prahy před Karlovarskem jen asi desetina. Pro představu: celostátní průměrná mzda byla za celý rok 2025 podle stejného úřadu 49 215 korun.
+Ještě větší rozdíl než mezi kraji ukazuje tabulka důchodů mezi muži a ženami. Muži měli na konci roku 2025 průměrný starobní důchod 22 347 korun. Ženy dostávaly v průměru o necelé dva a půl tisíce méně, tedy víc, než kolik dělí Prahu od Karlovarska.
+Jak si najít svůj okres
+Kraj je jen hrubý průměr. Správa sociálního zabezpečení zveřejňuje celou tabulku po jednotlivých okresech ke stažení, jako soubor pro Excel i jako PDF, na stránce Důchodová statistika.
+Tabulka ukazuje i okresní extrémy. Mimo Prahu má nejvyšší průměr okres Praha-západ, a to 22 092 korun. Hlavnímu městu se tím skoro vyrovná, chybí mu jen něco přes sto korun. Nejníž ze všech okresů je Jeseník s průměrem 19 656 korun.
+Vedle řádků za muže a ženy dohromady má tabulka i samostatné oddíly za muže a za ženy. Kdo chce vědět, jak si jeho důchod stojí vůči okolí, najde v ní řádek svého okresu a porovná ho s tím, co mu chodí na účet. Stejně snadno se dají porovnat i sousední okresy uvnitř jednoho kraje.
+Ověřeno z:
+- Česká správa sociálního zabezpečení – Průměrná výše sólo důchodů v okresech a krajích ČR (stav k 31. 12. 2025)
+- Česká správa sociálního zabezpečení – Důchodová statistika (stav k 31. 12. 2025)
+- Český statistický úřad – Průměrná hrubá měsíční mzda ve 4. čtvrtletí 2025 (rok 2025)
+- Český statistický úřad, krajská správa Karlovarského kraje – V roce 2025 měl Karlovarský kraj nejnižší důchody i vysoký podíl předčasných penzí (22. 6. 2026)

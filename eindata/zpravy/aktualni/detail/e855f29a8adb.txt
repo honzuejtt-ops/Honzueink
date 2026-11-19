@@ -1,0 +1,28 @@
+Zavřít nefunkční aplikaci a otevřít jinou. To bývá první reakce, když počítač nebo telefon odmítá spolupracovat. Při rozsáhlém výpadku ale takový postup nemusí pomoci. Jiná ikona na displeji totiž ještě neznamená jiného poskytovatele v pozadí.
+Ve čtvrtek 12. listopadu to připomněly problémy Microsoftu. Vedle Outlooku zasáhly také Teams a další součásti jeho nabídky. Úplné obnovení služeb společnost oznámila v sobotu 14. listopadu. Nešlo přitom o úplné vypnutí všeho, co firma provozuje – dostupnost se lišila podle služby a zákazníka.
+Výpadek se navíc nezastavil u aplikací s logem Microsoftu. OpenAI i Anthropic hlásily problémy s propojením svých nástrojů se službami Microsoftu 365. Hlášené problémy se týkaly právě tohoto propojení, nikoli plošné nedostupnosti služeb OpenAI a Anthropicu.
+Pro uživatele je to důležitý rozdíl, ale také názorná ukázka propojeného světa. Ani přechod k produktu jiné společnosti nemusí pomoci, pokud se jeho konkrétní funkce spoléhá na právě nefunkční službu.
+Různé weby, společná cesta
+Podobnou zkušenost přinesly výpadky Cloudflaru v listopadu a prosinci loňského roku. Tato společnost stojí v pozadí mnoha webů: pomáhá zprostředkovat jejich provoz, urychlovat načítání a chránit je před útoky. Návštěvník přitom často ani neví, že přes její infrastrukturu ke stránce přistupuje.
+Když se problém objeví právě v této společné vrstvě, nemusí být chyba v samotném e-shopu, zpravodajském serveru nebo jiné navštěvované stránce. Jejich vlastní systémy mohou fungovat, ale uživatel se k nim přesto nedostane.
+„Globální výpadek Cloudflaru ukazuje, jak silně je dnešní internet závislý na několika málo technologických hráčích. Když má problém jeden z nich, dopady jsou okamžité a celosvětové. Od e-shopů přes bankovní aplikace až po interní firemní systémy,“ uvedl už v loňském článku Novinek datový ředitel Creative Dock Adam Hanka.
+Tehdy komentoval výpadek Cloudflaru. Jeho popis ale vystihuje také obecnější problém společných dodavatelů: jednotlivé služby vypadají samostatně, část jejich fungování však závisí na stejném místě.
+„Neselhal každý zvlášť, ale narušena a nefunkční byla jedna vrstva, na kterou se všichni spoléhali,“ popsal tehdejší situaci bezpečnostní expert Jiří Kohout ze společnosti Check Point.
+Nemusejí přijít hackeři
+Rozsáhlé potíže přitom nemusí způsobit útočník. Cloudflare ve své zprávě o výpadku z 18. listopadu 2025 uvedl, že problém spustila změna oprávnění v databázovém systému. Ta vedla k vytvoření příliš velkého souboru pro systém rozpoznávající automatizovaný provoz. Soubor se rozšířil po síti a software zajišťující směrování provozu při jeho zpracování selhával.
+Další incident přišel už 5. prosince. Podle vlastního rozboru Cloudflaru trval přibližně 25 minut a zasáhl část zákazníků odpovídající asi 28 procentům webového provozu obsluhovaného společností. Nešlo o 28 procent celého internetu. Ani tento výpadek podle firmy nezpůsobil kybernetický útok, ale změny prováděné při nasazování ochrany proti softwarové zranitelnosti.
+Cloudflare a Microsoft plní odlišné úlohy a jejich incidenty měly různé příčiny. Spojuje je však způsob, jakým se následky šíří: chyba u společného poskytovatele dokáže současně narušit práci mnoha jinak nezávislých organizací.
+Anketa
+Záloha musí být skutečně dostupná
+Pro firmu proto nestačí mít seznam krizových kontaktů, pokud je uložený jen v nedostupné schránce. Podobně nepomůže návod pro případ výpadku, ke kterému se zaměstnanci dostanou pouze přes nefunkční firemní portál.
+Právě plán, jak pracovat bez e-mailu či Teams, zdůraznil po výpadku Microsoftu odborník Andrew Cullen z Univerzity v Melbourne pro australskou ABC. Jeho kolega Toby Murray zároveň upozornil, že vlastní alternativy vyžadují investice a údržbu. Pro řadu organizací může být cloud levnější a často i bezpečnější než samostatný provoz.
+Smyslem tedy není po každém výpadku přesunout všechno na vlastní servery. Důležité je vědět, které činnosti závisejí na jednom poskytovateli, co bez nich přestane fungovat a jak dlouho organizace vydrží čekat na opravu.
+„Pro firmy je to důležité připomenutí, že robustní digitální infrastruktura musí počítat s redundancí a záložními řešeními,“ upozornil Hanka už při loňských potížích Cloudflaru.
+Od velkého listopadového výpadku Cloudflaru uplynul rok. Kolaps Microsoftu ale znovu připomněl stejnou slabinu: příliš mnoho každodenních činností závisí na několika společných poskytovatelích. Jejich služby nám usnadňují práci i život, při rozsáhlé poruše se však tato provázanost obrací proti nám. Internetový svět tak zůstává křehký i tam, kde všechno obvykle funguje na jediné kliknutí.
+Kolaps serverů Microsoftu v kostce:
+- Kdy: Začal ve čtvrtek 12. listopadu. Úplné obnovení služeb Microsoft oznámil v sobotu 14. listopadu. Potíže trvaly přes 24 hodin.
+- Rozsah: Hlášení přicházela ze 74 zemí a území včetně Česka. Nešlo o úplný výpadek všech služeb pro všechny uživatele.
+- Zasažené služby: Především pošta Exchange Online a Outlook, ale také některé navázané funkce Teams, Copilotu a dalších nástrojů Microsoftu 365.
+- Příčina: Podle Microsoftu se po změně v síti projevila chyba vzniklá při dřívějším rozšiřování její kapacity. Firma uvedla, že nešlo o kyberútok ani zásah AI.
+- Dopady v Česku: Potíže hlásilo ministerstvo financí i pražské letiště. Novinky ověřily nedostupnost školní pošty u jednoho pražského gymnázia.
+- Dopady ve světě: Výpadek narušil komunikaci úřadů, škol, zdravotnických zařízení i firem. Euronext odkázal firmy na telefon, samotné burzovní obchodování pokračovalo.

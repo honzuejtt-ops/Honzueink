@@ -1,0 +1,17 @@
+Klient nevyšumí
+Follow-up asistent pro freelancery a malé B2B podnikatele, který k rozpracovaným klientským příležitostem navrhne další krok a jeho načasování.
+O nástroji
+Klient nevyšumí je follow-up asistent určený freelancerům, konzultantům a malým agenturám, kteří své obchodní příležitosti řeší bez CRM. Uživatel popíše situaci (napíše, nadiktuje nebo vloží screenshot komunikace) a aplikace navrhne jeden konkrétní další krok – například kontaktovat klienta, počkat, nebo nejprve něco interně ověřit – včetně doporučeného termínu. V přehledu „Dnes“ pak vidí, které případy aktuálně potřebují pozornost, a každý klient může mít více samostatných příležitostí, takže uzavření jedné nemá vliv na ostatní. Nástroj umí také připravit návrh follow-up e-mailu v češtině, angličtině nebo němčině, který si uživatel upraví a zkopíruje – zprávy ale sám neodesílá a nepropojuje se s Gmailem ani žádným CRM systémem. Každý AI návrh je nutné před uložením zkontrolovat, protože situaci může vyhodnotit nepřesně. K dispozici je demo bez registrace pro vyzkoušení funkčnosti. Aktuálně běží tzv. Founding pilot za 390 Kč jako jednorázová platba za 30denní přístup bez automatického obnovení, určený výhradně podnikatelům pořizujícím službu pro svou činnost. Po aktivaci účtu se zřizuje samostatné oddělené prostředí a přístupové instrukce přijdou e-mailem; po skončení pilotu se přístup automaticky zablokuje a data zůstávají uložena dalších 30 dní pro případné pokračování.
+Klíčové vlastnosti
+- Návrh dalšího kroku a doporučeného termínu ze situace
+- Vstup textem, diktováním nebo screenshotem komunikace
+- Přehled „Dnes“ s případy vyžadujícími pozornost
+- Jeden klient může mít více samostatných příležitostí
+Časté dotazy
+Co přesně Klient nevyšumí umí?
+Po popsání situace (textem, diktátem nebo screenshotem) navrhne jeden konkrétní další krok a jeho termín – například kontaktovat klienta, počkat nebo si něco interně ověřit. Umí také připravit návrh follow-up e-mailu v češtině, angličtině nebo němčině, ale sám nic neodesílá ani se nepropojuje s CRM či Gmailem.
+Kolik to stojí?
+Aktuálně běží Founding pilot za 390 Kč jako jednorázová platba za 30denní přístup bez automatického obnovení. Po skončení pilotu se přístup zablokuje a data zůstávají uložena dalších 30 dní pro případné pokračování.
+Pro koho je nástroj a jak začít?
+Je určen výhradně freelancerům, konzultantům a malým agenturám, kteří službu pořizují pro svou podnikatelskou činnost a řeší obchodní příležitosti bez CRM. Začít lze vyzkoušením dema bez registrace nebo zakoupením Founding pilotu, po jehož aktivaci přijdou přístupové instrukce e-mailem.
+Kategorie

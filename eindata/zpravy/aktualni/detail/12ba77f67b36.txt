@@ -1,0 +1,13 @@
+GTA VI je venku a přestože češtinu zatím oficiálně nenabízí, hru si minimálně s českými titulky můžete užít. Slouží k tomu open-source aplikace PlayCaption, která rozpozná anglický text z obrazu hry a automaticky jej překryje českým překladem.
+Jailbreak konzole ani zásah do samotné hry není třeba, stačí jen kompatibilní televize s Android TV nebo Google TV (například Sony, TCL, Philips a další). Překlad je možný také pro Samsung televize se systémem Tizen a LG s webOS, kde je zapotřebí další nastavení a Android telefon či tablet.
+Jak nastavit české titulky přes PlayCaption
+- Na GitHubu PlayCaption v sekci Releases stáhněte nejnovější instalační APK soubor. Název se může měnit, v době psaní návodu je to PlayCaption-0.22.apk.
+- Aplikaci nainstalujte do vaší Android TV nebo Google TV, a to buď skrze prohlížeč, nebo instalační APK soubor přenesením do paměti televize přes USB flash disk (bude zapotřebí povolit instalaci z neznámých zdrojů).
+- V PlayCaption zvolte češtinu a konzoli, na které hrajete.
+- Podle pokynů na obrazovce připojte konzoli přes vzdálené hraní. U PlayStationu je využívána knihovna Chiaki, u Xboxu komunitní vzdálené streamování.
+- Až se připojení podaří, zapněte v PlayCaption zobrazování překladu a v nastavení GTA VI mějte zapnuté anglické titulky.
+Pokud jste udělali všechny kroky správně, bude aplikace rozpoznávat text a automaticky přes HDMI posílat český překlad bez ztráty obrazové kvality hry.
+Trochu těžší to mají lidé se Samsung televizemi se systémem Tizen, kteří musejí obejít přísnější zabezpečení. Pro ně připravil podrobný návod Michael Šubák z webu estranger.eu. Pro televize LG se systémem webOS je zapotřebí dalšího zařízení s Androidem a samotná funkčnost je pak experimentální. Návod na zprovoznění najdete zde:
+Překlad není dokonalý, ale funguje
+Počítejte s tím, že PlayCaption je beta a jak samotní autoři varují, není zárukou dokonalého překladu. Ten může být lehce opožděný, jelikož při online překladu se rozpoznaný text odesílá neoficiální překladové službě Googlu, kterou autoři nemají pod kontrolou. K dispozici je lokální překlad, který však vyžaduje stažení jazykového modelu.
+Aplikace je zdarma pod licencí GNU AGPLv3. Jde o nezávislý projekt bez oficiální podpory Sony, Rockstaru nebo Microsoftu. Přesto může být zajímavou volbou pro ty, kteří si chtějí zahrát GTA VI v mateřském jazyce a nechtějí čekat na oficiální překlad.

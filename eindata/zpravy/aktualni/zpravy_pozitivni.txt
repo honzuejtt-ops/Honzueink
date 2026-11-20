@@ -1,8 +1,358 @@
-|T|Meteorologové odhalili předpověď na pátek: Česko zasáhne vydatný déšť, silný vítr i sníh|D|20.11.2026 00:11|P|Pátek 20. listopadu přinese do Česka převážně zataženou oblohu, občasný déšť a čerstvý vítr s nárazy kolem 55 km/h. Zatímco na jižní Moravě vystoupají...|M|Blesk|X|Dnešní pátek 20. listopadu 2026 se ponese ve znamení zamračeného a deštivého počasí, které výrazně rozdělí jednotlivé regiony republiky. Vyplývá to z aktuální předpovědi Českého hydrometeorologického ústavu (ČHMÚ).
-Přes den zataženo s deštěm, na horách začne sněžit
-Ráno a dopoledne naváže na oblačnou až zataženou noc, během níž se zejména v Čechách místy vyskytuje déšť nebo přeháňky s úhrny 0 až 3 mm, na horách v Čechách místy kolem 10 mm. Ranní minima klesnou na 8 až 4 °C, v 1000 metrech na horách bude kolem 3 °C. Přes den zůstane převážně zataženo s občasným deštěm nebo přeháňkami, jen na jižní Moravě se srážky objeví pouze místy.
-„Postupně na severozápadě a severu v polohách nad 900 m budou srážky přecházet ve smíšené nebo sněhové,“ uvádějí meteorologové ČHMÚ. Nad 1000 metrů napadne 0 až 5 centimetrů nového sněhu. Celodenní úhrny srážek dosáhnou 0 až 10 mm, na horách v Čechách však spadne 10 až 20 mm. Nejvyšší odpolední teploty vystoupají na 6 až 10 °C, na jižní Moravě až na 13 °C, zatímco v 1000 metrech na horách zůstanou kolem 3 °C.
-Večerní ochlazení a čerstvý vítr
-Večer a v noci na sobotu se od severu začne ochlazovat a minima klesnou na +3 až -2 °C, na jihovýchodě území zůstanou kolem 4 °C. Po celý dnešní den bude foukat čerstvý jihozápadní až západní vítr o rychlosti 4 až 8 m/s, místy s nárazy kolem 15 m/s (55 km/h), který se v severní polovině Čech později změní na mírný severní o rychlosti 2 až 5 m/s.
-Pozor na silnicích a výhled na sobotu
-Řidiči by měli počítat se zhoršenou viditelností v dešti, silnějšími bočními nárazy větru na otevřených úsecích a na horských silnicích na severu a severozápadě se sněhem. Tlak vzduchu vykazuje mírný vzestup a rozptylové podmínky jsou velmi dobré. V sobotu od severu srážky ustanou, hranice sněžení ale klesne nad 600 metrů a denní maxima dosáhnou jen 4 až 9 °C.|E|
+|T|Flashback: Nepříjemné chvíle Nely Slovákové! Po brutální nehodě se podruhé narodila, Petra Němcová oznámila těhotenství|D|20.11.2026 14:22|P|Po týdnu je tu další díl pořadu Flashback, ve kterém si připomínáme zajímavé kauzy ze světa českého showbyznysu. A i dnes nás čeká pořádně nabitá nálo...|M|Super|X|Po týdnu je tu další díl pořadu Flashback, ve kterém si připomínáme zajímavé kauzy ze světa českého showbyznysu. A i dnes nás čeká pořádně nabitá nálož vzpomínek!
+Píše se listopad roku 2022. Nela Slováková (36) tehdy bourala. Během cesty ze slovenských Nových Zámků do Brna totiž měla vážnou autonehodu. Její vůz po prudkém brzdění nezvládl zastavit a skončil v kamionu. Nela následně popsala děsivé okolnosti celé nehody.
+Tehdy vyrazila kolem sedmé hodiny ráno od svého tehdejšího partnera, hokejisty Lukáše Kozáka. K nehodě došlo nedaleko českých hranic. Krátce po nehodě zavolala svému partnerovi. Ten okamžitě přerušil trénink a vyrazil za ní. Jak později přiznal, když se o havárii dozvěděl, udělalo se mu natolik zle, že dokonce zvracel. O svou tehdejší partnerku měl totiž obrovský strach.
+Před sedmi lety překvapila fanoušky topmodelka Petra Němcová (47) krásnou novinkou. Tehdy totiž čekala svého prvního potomka a na sociálních sítích se pochlubila vůbec první fotografií s těhotenským bříškem. Na Instagramu zveřejnila snímek se svými nejbližšími – manželem Benem a dvěma psími parťáky. Petra na fotografii pózovala v plavkách, ve kterých krásně vyniklo její rostoucí bříško. Nastávající tatínek ho navíc s širokým úsměvem něžně hladil. Dnes už víme, že se manželé dočkali syna, kterému dali jméno Bodhi.
+A pamatujete si na šok, který prožila herečka a zpěvačka Bára Mottlová (40)? Co přesně se tehdy stalo? Nejen to, ale i další pikantní momenty z českého showbyznysu si připomeňte v novém díle pořadu Flashback s moderátorem Ondřejem Kočím ve videu nahoře.|E||T|Srážka vlaků v Praze: Na hlavním nádraží zavedou kvůli bezpečnosti „systém čtyř očí“|D|20.11.2026 14:15|P|Od prosince budou při odjezdu vlaku z pražského hlavního nádraží kontrolovat to, zda odjezdová návěstidla ukazují volnou dopravní cestu, dva lidé, ved...|M|Blesk|X|Jednání komise se zúčastnili zástupci ministerstva, Správy železnic, Drážního úřadu, Drážní inspekce a dopravců. Před Vánoci se komise sejde znovu, aby vyhodnotila situaci na hlavním nádraží a vytipovala další stanice, kde by mělo být takzvané pravidlo čtyř očí od 1. ledna zavedeno. Konkrétní stanice, kde bude nutné zavést systém kontroly dvěma lidmi nebo jinou formu nezávislé kontroly, komise vytipuje na dalším jednání v prosinci. Zaměří se především na místa s předpokládaným vyšším rizikem, řekl ministr.
+Radek Šafránek z Drážního úřadu (DÚ) uvedl, že úřad do konce listopadu vydá bezpečnostní nařízení, kterým dopravcům uloží posílit podporu strojvedoucích při odjezdu vlaků. Podle závěrů páteční komise by dopravci také měli zpřísnit pravidla pro používání soukromých mobilních telefonů ve službě.
+Správa železnic podle generálního ředitele Tomáše Tótha bude také aktivně informovat strojvedoucí o mimořádnostech v provozu, například o neobvyklém křižování vlaků. Podle Tótha mají strojvedoucí již nyní možnost ověřit si u dispečera, zda mají volnou cestu, pokud si nejsou jistí.
+Zabezpečovací systém
+Komise se zabývala také zabezpečením hlavního nádraží evropským zabezpečovacím systémem ETCS. Ten by tam měl být podle dosavadních plánů zaveden od roku 2030. Správa železnic nyní prověří, zda by bylo možné v roce 2029 zahájit takzvaný smíšený provoz, při kterém by zabezpečovač využívala pouze vozidla jím vybavená, zatímco ostatní by mohla jezdit dosavadním způsobem.
+Instalaci zabezpečovače nelze podle Tótha zavést dříve kvůli nutnosti koordinovat výluky v pražském železničním uzlu a zajistit dostatečnou kapacitu dalších nádraží, zejména na Smíchově a na Masarykově nádraží, které teď stavbaři modernizují.
+Ředitelka Českých drah (ČD) Lenka Hamplová uvedla, že s doporučeními komise souhlasí a věří, že mohou přispět ke zvýšení bezpečnosti. ČD budou také řešit to, jakým způsobem strojvedoucí využívají svoje soukromá elektronická zařízení ve službě. Podle Hamplové je otázka, jakým způsobem více rozlišit pracovní a soukromé zařízení a jeho umístění v kabině. Možnost zavedení systému kontroly dvěma lidmi u nákladních vlaků bude podle Hamplové předmětem dalších jednání.
+Co se stalo
+Dva osobní vlaky Českých drah (ČD) se v úterý ráno čelně srazily v nižší rychlosti na mostě nad Seifertovou ulicí v Praze 3, jeden jel do Milovic a druhý z Mladé Boleslavi. Při nehodě se zranilo 46 lidí, čtyři z nich těžce. Mezi zraněnými bylo 16 cizinců. Drážní inspekce v den nehody škodu vyčíslila na více než 16 milionů korun.
+Policie nehodu prověřuje pro podezření ze spáchání trestného činu obecného ohrožení z nedbalosti. V případě prokázání viny za něj může hrozit až osm let vězení. Bednárik v úterý řekl, že jeden z vlaků zřejmě projel návěstidlo zakazující jízdu.|E||T|Rozsvítil v ložnici, dostal „céres", tak družku ubodal! 13 let vězení pro prchlivého Stanislava|D|20.11.2026 14:12|P|Plné hádek a ponižování bylo soužití postaršího páru v rodinném domě v Třanovicích na Frýdecko-Místecku. Skončilo vraždou partnerky (†66) kvůli banali...|M|Blesk|X|Loni v prosinci skončil nesoulad mezi partnery krveprolitím. Opilý Stanislav rozsvítil světlo v ložnici ve chvíli, kdy už družka, také pod vlivem, ležela v posteli. Muži sprostě vynadala.
+„To bylo zřejmě onou pověstnou poslední kapkou. Obžalovaný zašel do kuchyně pro nůž a ženě velkou intenzitou zasadil dvě hluboké rány do hrudníku. Ty mimo jiné probodly plíci a cévy v osrdečníku. Žena zemřela na krvácivý šok,“ řekl státní zástupce Vít Legerský a žádal pro agresora 15 let ve vězení.
+Prohlásil vinu
+Obžalovaný před senátem krajského soudu v Ostravě nezapíral. Protože dohodu o vině a trestu zprvu odmítl a žalobce druhou nenabídl, rozhodl se jasný případ neprotahovat. „Prohlašuji vinu,“ uvedl.
+Vše se tak chýlilo k brzkému vyhlášení verdiktu, ten si přišli do soudní síně vyslechnout i tři synové zavražděné ženy a syn souzeného. Senát nakonec útočníka poslal na 13 let do basy se zvýšenou ostrahou. Muž i státní zástupce rozsudek přijali.
+Nedokázal se zabít
+Když si po činu Stanislav uvědomil, co právě udělal, vztáhl nůž i na sebe. Pořezal se na rukou a krku, ale jen lehce. Zranění nebyla vážná. Nakonec sám zavolal na tísňovou linku. Zprvu nebyl schopen výslechu, obvinění z vraždy se „dočkal“ až později vzhledem k jeho fyzickému i psychickému stavu.
+Stanislav Tydlitát byl ve svém okolí známý jako ne právě vyrovnaný muž s výbuchy agresivity. Tu v něm navíc posiloval alkohol. V minulosti byl několikrát trestaný. Na dotaz kolikrát jen pokrčil rameny. „Už nevím. Několikrát,“ odpověděl soudkyni. „Máte deset záznamů v trestním rejstříku,“ připomněla mu.
+VIDEO: Nejdříve zabila chladnokrevně manžela, později i přítele. Hlava se našla ve vlaku, tělo v peci.|E||T|Průšová a spol. ve spodním prádle: To je pohled!|D|20.11.2026 14:06|P|Letenský zámeček v Praze hostil ve čtvrtek večer velké pokoukání hlavně pro pány. Ve spodním prádle od Heleny Konarovské (69) z Le Chaton zazářily na ...|M|Blesk|X|Ačkoliv jsou to „veteránky", na mole jim to díky stále perfektním postavám velmi slušelo. Všechny modelky ale kvůli přehlídce pořádně na svých křivkách zamakaly. „Když se předvádí spodní prádlo, tak se člověk musí lépe připravit. Dobře se stravovat, chodit více do posilovny," popsala Blesku Katka Průšová. Ta se objevila nejen na mole, ale měla také na starosti výběr modelek a celou produkci módní show.
+„Pro Helenku jsem začala předvádět v 18 letech. Máme spolu krásné vztahy, já si jí moc vážím. Když mi letos v únoru zavolala, byl to šok. Nemyslela jsem si, že ve svých 42 letech budu předvádět spodní prádlo," popsala dále Miss ČR 2002. „Kromě staré gardy jsme potřebovaly přehlídku omladit, tak jsem zapojila Missky od Táni Makarenko a musím přiznat, že jsme si všechny holky sedly. Nejstarší modelce bylo 48, nemladší 17," prozradila nám dále Kateřina.
+Ve spodním prádle se na mole objevili i pánové, mezi nimi např. Muž roku 2011 Michal Gajdošech. S ním se Průšová zná z přehlídek Osmanyho Laffity (63), proto si ho mimo jiné pro módní show v Letenském zámečku vybrala.|E||T|Meteorologové zveřejnili předpověď na víkend. Teploty se propadnou a na některých místech i nasněží|D|20.11.2026 14:00|P|Od pátečního odpoledne do neděle 22. listopadu čeká Česko výrazné ochlazení, které ukončí doznívající déšť a přinese vyjasnění i noční mrazy až -4 °C....|M|Blesk|X|Nadcházející víkend nabídne v Česku dvě zcela odlišné tváře počasí. Zatímco jeho úvod bude ještě ve znamení deště, silného větru a sychravého podzimu, během soboty od severu dorazí výrazné ochlazení. To sice přinese protrhávání oblačnosti a slunečné chvíle, zároveň ale srazí noční teploty pod bod mrazu a sněhové vločky se objeví i ve středních polohách.
+Sychravý pátek se silným větrem a sněhem
+Páteční odpoledne a večer ještě ponesou podzimní, sychravý ráz. Podle předpovědi Českého hydrometeorologického ústavu (ČHMÚ) zůstane v pátek převážně zataženo s občasným deštěm nebo přeháňkami, na jižní Moravě se srážky objeví jen místy. Během dne naprší od 0 do 10 milimetrů, na horách v Čechách však spadne 10 až 20 milimetrů. Na severozápadě a severu budou srážky v polohách nad 900 metrů postupně přecházet ve smíšené nebo sněhové, přičemž nad 1000 metrů napadne až 5 centimetrů nového sněhu. Dojem z pátečního podvečera zhorší čerstvý jihozápadní až západní vítr o rychlosti 4 až 8 m/s, který v nárazech dosáhne kolem 15 m/s, tedy přibližně 55 km/h. Denní maxima vystoupají na 6 až 10 °C, na jižní Moravě až na 13 °C.
+Sobota: Výrazný obrat a trhávání oblačnosti
+V sobotu nastane výrazný obrat. Ráno bude ještě převážně zataženo a na většině území zaprší, během dne ale dorazí od severu změna. „Od severu čekáme postupně polojasno až jasno, odpoledne přechodně až oblačno a přeháňky se vyskytnou jen ojediněle, na horách na severozápadě a severu místy,“ uvádí ČHMÚ. Od severu budou srážky postupně nad 600 metrů sněhové a nad 700 metrů připadnou 0 až 3 centimetry nového sněhu. Celkové srážky dosáhnou 0 až 5 milimetrů, na Šumavě až 10 milimetrů. Noční teploty klesnou na +3 až -2 °C, v jihovýchodní polovině území zůstanou kolem 4 °C. Odpoledne naměříme 4 až 9 °C a vítr zeslábne na slabý až mírný severozápadní o rychlosti 2 až 6 m/s.
+Neděle přinese mrazivé ráno i slunce
+Neděle přinese nejchladnější, ale zpočátku slunečné počasí vhodnější pro kratší procházky než pro horské túry bez zimní výbavy. Převládne jasno až polojasno, na severu bude oblačnost zvětšená a zejména na horách se místy objeví přeháňky, které budou už od poloh nad 400 metrů sněhové. Napadnout mohou 0 až 2 centimetry nového sněhu při srážkovém úhrnu do 2 milimetrů. Odpoledne začne oblačnosti přibývat i v jižní polovině Česka. Ranní teploty spadnou na +1 až -4 °C a denní maxima se zastaví jen na 1 až 6 °C. Vítr zůstane slabý, o rychlosti 1 až 4 m/s.
+Pozor na namrzající silnice, chladno vydrží i v pondělí
+Za ochlazením stojí příliv studeného vzduchu od severu při vzestupu tlaku, díky němuž se oblačnost protrhá, ale noční vyjasnění podpoří pokles teplot pod bod mrazu. Řidiči by proto měli v sobotu i v neděli ráno počítat s rizikem namrzajících silnic po předchozím dešti, zejména ve vyšších polohách a na horách. Chladný charakter počasí navíc nepoleví ani na začátku nového týdne – v pondělí zůstanou denní maxima jen mezi -1 a +3 °C, na jihu Moravy až +5 °C.
+Nezapomeňte proto sledovat aktuální denní předpovědi na našem webu a radaru Blesku, ať vás změna počasí nepřekvapí.|E||T|Macinkovy hokejové „mužatky“: Rasismus a neonacismus, odsuzuje ho ruské ministerstvo|D|20.11.2026 13:51|P|Jako rasistický a neonacistický označila mluvčí ruského ministerstva zahraničí Marija Zacharovová výrok českého ministra zahraničí Petra Macinky, kter...|M|Blesk|X|Macinkovy hokejové „mužatky“: Rasismus a neonacismus, odsuzuje ho ruské ministerstvo
+Jako rasistický a neonacistický označila mluvčí ruského ministerstva zahraničí Marija Zacharovová výrok českého ministra zahraničí Petra Macinky, který nedávno nazval ruské družstvo juniorských hokejistek mužatkami. Macinka je podle ní nadutý, přestože není žádnou hvězdou, a bojí se žen.
+Macinka na začátku měsíce v souvislosti s jednáním o startu ruských hráček na ostravském mistrovství světa kategorie do 18 let v lednu 2027 označil hokej za „mužský sport“ a uvedl, že feministky budou muset přežít akci „bez ruských mužatek“. Za svůj výrok se později omluvil s tím, že jako o mužatkách hovořil pouze o ruských hráčkách, nikoliv o českých.
+„Řekl, že to není o Češkách, ale o cizinkách. Rozhodl se, že svou genderovou předpojatost napraví otevřeným rasismem a neonacismem,“ komentovala Zacharovová Macinkovu omluvu. „Normální, že? Český ministr zahraničí v roce 2026,“ dodala.
+Sportovní arbitrážní soud na konci října rozhodl, že se ruské týmy s okamžitou platností mohou účastnit hokejových šampionátů. Několik zemí, včetně Česka, Finska nebo Lotyšska, uvedlo, že trvají na vyloučení ruské reprezentace, která byla z mezinárodních soutěží vyloučena po zahájení ruské invaze na Ukrajinu v roce 2022, dokud válka neskončí. Ministr vnitra ve středu oznámil, že ruským sportovcům nebude umožněn vstup na území České republiky.|E||T|Záhadný výbuch na zahradě v Tisové! Dům má patřit starostovi|D|20.11.2026 13:48|P|Na zahradě u rodinného domu v Tisové na Tachovsku došlo v noci na pátek k výbuchu! Nikdo nebyl zraněn, policie věc vyšetřuje pro podezření z nedovolen...|M|Blesk|X|„Zabýváme se oznámeným výbuchem na zahradě u rodinného domu v obci Tisová na Tachovsku, ke kterému mělo dojít po půlnoci. V důsledku výbuchu nebyl nikdo zraněn, došlo k poškození částí domu a zahrady,“ uvedla krajská policejní mluvčí Pavla Burešová.
+Vážně poškozená byla fasáda. Má jít o dům starosty. „Nebudu se k tomu vyjadřovat," uvedl starosta Stanislav Fišer pro Blesk.cz.
+Vyšetřovatelé podle ní k zjišťování okolností a zajištění stop přivolali také policejního pyrotechnika a balistika. Zatím zjišťují, kdo výbuch způsobil. „Po důkladném ohledání místa činu budou zajištěné kriminalistické stopy podrobeny dalším expertizám a zkoumáním,“ uvedla policie.
+Pomoci s objasněním případu mohou také případní svědci, kteří se třeba kolem místa události v noci pohybovali nebo jeli v autě a něco natočili na palubní kameru. Ohlásit se mohou na linku 158.
+VIDEO: Požár a výbuch propanbutanové láhve zničil roubenku se stodolou ve Frýdlantu nad Ostravicí. (2024)|E||T|Když Felix sexy blondýnu, tak ona líbačku! Po Slováčkovi na premiéře se odvázala i Dáda. A budete zírat!|D|20.11.2026 13:46|P|Herečka Dagmar Patrasová si po delší době vyrazila do společnosti a dala o sobě vědět. Královna dětských srdcí navštívila pražské Muzeum fantastických...|M|Super|X|Herečka Dagmar Patrasová (70) si po delší době vyrazila do společnosti a dala o sobě vědět. Královna dětských srdcí navštívila pražské Muzeum fantastických iluzí, kde se pořádně odvázala. Nechala se sevřít obří gorilou, líbala čerta a zapózovala dokonce v obřím půllitru piva.
+Před objektivy fotografů se ochotně předváděla a s chutí se pouštěla do nejrůznějších bláznivých póz. Nechala se například zvěčnit v tlamě obří gorily, zapózovala mezi čerty a jednoho z pekelníků se dokonce pokusila políbit. Nevynechala ani obří půllitr nebo trezor plný peněz.
+Soudě podle její dobré nálady si z neobvyklého odpoledne odnesla spoustu veselých zážitků. Bylo hezké po dlouhé době vidět Dádu zase ve formě, v dobré náladě a usmívající se na všechny strany.
+To její manžel Felix Slováček (83) si pro změnu nenechal ujít obnovené představení Draculy, kam dorazil bez Dády s tím, že se jí tam nechtělo. Společně se zpěvačkou Nikolou Ďuricovou si představení užil a domů odjel po boku pohledné blondýnky Martiny, která mu dělala společnost už v minulosti. Čas tak Felix a Dáda zjevně tráví každý po svém.|E||T|Petr Pavel na severní Moravě: Focení, bezlepkový frgál a „přepadení“ od dětí!|D|20.11.2026 13:39|P|V Novém Jičíně se hlava státu setkala s vedením města, poté má Petr Pavel zamířit do Olomouckého kraje. V Uničově debatoval se studenty a ve Šternberk...|M|Blesk|X|Petr Pavel na severní Moravě: Focení, bezlepkový frgál a „přepadení“ od dětí!
+V Novém Jičíně se hlava státu setkala s vedením města, poté má Petr Pavel zamířit do Olomouckého kraje. V Uničově debatoval se studenty a ve Šternberku navštíví místní akční skupinu. Hlavním tématem cesty jsou pracovní příležitosti, bydlení a podmínky pro život mladých lidí v regionech.
+Prezident Petr Pavel s manželkou Evou pokračují v pátek v dvoudenní pracovní cestě po severní Moravě. Prezidentovi začal dnešní program návštěvou Nového Jičína. Ještě před vstupem na radnici se na něj slétli příznivci. Začal tedy autogramiádou a focením.  Na náměstí ho dokonce „přepadla“ skupina školkových  dětí, které mířily na plavání a prezidentovi si nezapomněly postěžovat, že voda v bazénu je vážně studená!
+Ve čtvrtek prezident jednal s rektory univerzit, navštívil záchrannou stanici v Bartošovicích a vojenský podnik v Šenově u Nového Jičína.
+Novojičínský dárek? Samozřejmě klobouk
+Páteční program Pavel zahájil jednáním s vedením Nového Jičína. Tamní starosta Jiří Klein (hnutí Náš Nový Jičín) se funkce ujal teprve před deseti dny.
+„Vyšlo to opravdu zajímavě. Je pro nás velká čest přivítat na radnici pana prezidenta,“ uvedl Klein. Na stole prezidenta přivítaly dva velké koláče s jeho podobiznou. Frgály - valašská specialita - byly překvapivě bezlepkové
+S prezidentem jednal o městských projektech, možnostech jejich financování i problémech spojených s odchodem mladých lidí z regionu.
+Řeč přišla také na dárek, který by si Pavel mohl z Nového Jičína odvézt. „Asi nikoho nepřekvapí, že to například bude klobouk. Však jsme městem klobouků,“ připomněl starosta zdejší firmu Tonak.
+Za studenty do Olomouckého kraje
+Po jednání v Novém Jičíně prezident zamíří do Olomouckého kraje. V Uničově ho debatoval se studenty Střední průmyslové školy a Středního odborného učiliště.
+Následně se přesune do Šternberka, kde navštíví místní akční skupinu MAS Šternbersko. Páteční program zakončí tiskovým brífinkem na šternberské radnici.
+Hlavním tématem dvoudenní návštěvy jsou podmínky pro život mladých lidí v regionech. Prezident se zajímá především o dostupnost pracovních míst, bydlení, vzdělání a služeb, které mohou mladé lidi motivovat, aby v kraji zůstali nebo se do něj po studiích vrátili.
+Moravskoslezský kraj byl přitom v březnu 2023 prvním regionem, který Pavel po svém zvolení prezidentem navštívil. Do kraje se vrátil také po ničivých povodních v roce 2024 a při další návštěvě loni. Letos v září se zúčastnil zahájení Dnů NATO na letišti v Mošnově.|E||T|Dívka (17) vypadla z auta: Má zlomenou lebku! Své jméno si nepamatuje|D|20.11.2026 13:30|P|Adrenalinová zábava se proměnila v horor. Američanka Elexis se během automobilové kratochvíle ve Washingtonu vezla v jedoucím autě vykloněná ze střešn...|M|Blesk|X|Dívka (17) vypadla z auta: Má zlomenou lebku! Své jméno si nepamatuje
+Adrenalinová zábava se proměnila v horor. Američanka Elexis se během automobilové kratochvíle ve Washingtonu vezla v jedoucím autě vykloněná ze střešního okénka. Při prudké zatáčce ji vůz vymrštil na asfalt. Dívka utrpěla zlomeninu lebky a tři vážná krvácení do mozku.
+Její matka Alicha L. popsala hrůzné okamžiky v rozhovoru pro místní televizní stanici KGW. „Stála uvnitř auta a během jízdy se napůl vykláněla ze střešního okénka,“ uvedla. Při prudké zatáčce ji vůz vymrštil ven. „Dopadla přímo na hlavu a utrpěla zlomeninu lebky a tři vážná krvácení do mozku,“ popsala matka.
+Její současný stav je hrozivý. Když na krátkou chvíli nabude vědomí, bývá zmatená. Nedokáže si vybavit ani základní informace, včetně vlastního jména.
+Zbytečný risk
+Elexis přitom podle své matky nikdy nebyla bezhlavou teenagerkou. Naopak patřila mezi velmi dobré studentky a usilovně pracovala na tom, aby dokončila školu s vyznamenáním.
+„Tvrdě pracovala, aby odmaturovala s vyznamenáním,“ uvedla Alicha. Podle ní podobné riskování vůbec neodpovídalo povaze její dcery. Domnívá se proto, že ji k nebezpečnému chování mohla povzbudit její nová kamarádka.
+Rodina nicméně netrvá na potrestání mladé řidičky. Podle blízkých obě dívky udělaly vážnou chybu, jejíž následky jsou nyní tragické.
+Léčba stojí majland
+Kromě obav o život a zdraví dcery musí rodina řešit také vysoké náklady na zdravotní péči. Ve Spojených státech může léčba podobně závažných zranění vyjít na více než 2,5 milionu korun.
+Na pomoc Elexis proto blízcí založili veřejnou sbírku na platformě GoFundMe. Doufají, že jim lidé pomohou zvládnout náročné období a zajistit dívce potřebnou léčbu i následnou rehabilitaci.|E||T|Batulková podporuje snachu Sandevu: Odsoudila porotu StarDance|D|20.11.2026 13:06|P|Nízké hodnocení výkonů Sary Prachař Sandevy (29) a jejího tanečníka Daniela Makovce (25) vytočilo i Danu Batulkovou (68). Má pocit, že porota StarDanc...|M|Blesk|X|Dana vyhrála třetí řadu StarDance, a tak není jen běžným pozorovatelem oblíbené taneční show. Navíc je teď jednou z účinkujících její snacha Sara Prachař Sandeva.
+„Když je čas, tak chodím na přenosy a jednou jsem měla malou roli v tanečním čísle Sary a Daniela. Oba jsou neuvěřitelně šikovní a talentovaní. Nemám pocit, že by se kolo od kola zlepšovali, oni jsou opravdu dobří,“ řekla Blesku Batulková, kterou velmi mrzí, že manželku jejího syna Jakuba Prachaře (43) leckdy porota hodnotí nízkými body.
+„Jako štvalo mě to a někdy mi to dokonce přišlo až zaujaté. Nemůže někdo, kdo je vyložený tank na tom parketu, dostat víc bodů než Sara s Danem, což se tam, myslím, stalo. Říkám si, to snad ani nemůže být pravda a proč se to takhle hrotí. Sara je nesporně velmi talentovaná, ladná a Dan moc šikovný,“ svěřila se herečka.
+„Porota by měla být nestranná a hodnotit odborně. Ano, vytknout věci, to tak musí být, ale i dodat energii, elán a nadšení pro ta další kola. To je myslím jejich úkol,“ dodala Dana, která společně s kolegou Ondřejem Pavelkou (71) pokřtila knihu prof. MUDr. Jana Martínka, Ph.D. Rozhovory gastroenterologie a hepatologie|E||T|35 let bez Freddieho Mercuryho: Výstava v Budapešti ukazuje jeho poklady za miliony|D|20.11.2026 13:00|P|Letos uplyne 24. listopadu 35 let od smrti legendárního Freddieho Mercuryho. Jeho odkaz si fanoušci připomínají nejen na pražském srazu Vzpomínka na Q...|M|Blesk|X|Navštívila jsem v Budapešti výstavu věnovanou legendárnímu Freddiemu Mercurymu a odvezla si zážitek, který zdaleka přesahuje běžnou prohlídku muzea. Výstava je naprosto jedinečná svou interaktivitou, spoustu věcí si zde člověk může osahat, poslechnout, nebo dokonce očichat. Nejvíce mě osobně nadchly ikonické kostýmy a Freddieho osobní předměty. O zákulisí celé expozice jsem navíc měla možnost vyzpovídat přímo jejího organizátora a majitele sbírky, sběratele Tomáše Hykla.
+Zpívat karaoke a vyzkoušet Freddieho účes
+Jak už jsem zmínila, výstava netrpí žádnou muzejní nudou. Pokud bych měla vypíchnout zážitky a detaily, které mě osobně bavily úplně nejvíc, byl by to tento mix:
+- Karaoke zóna: Kdo by odolal možnosti vzít do ruky mikrofon a od plic si zazpívat nesmrtelné hity jako Radio Ga Ga, We Are the Champions nebo Under Pressure?
+- Virtuální kadeřnictví: Skvělá zábava! Mohla jsem si tu interaktivně vyzkoušet, jak by mi na hlavě seděly ikonické Freddieho účesy.
+- Příběhy z pohovky: Úžasný detail, který vás vtáhne do Freddieho soukromí. Posloucháte tu vyprávění jeho přátel, kteří barvitě vzpomínají na jeho legendární večírky.
+- Deskové hry: Věděli jste, jak se členové Queen bavili v zákulisí nebo na turné? Na výstavě jsou k vidění deskovky, které kapela sama hrála.
+- Kočičí sekce: Freddie své kočky bezmezně miloval a výstava na ně nezapomíná. Příběhy jeho čtyřnohých společníků mě naprosto dostaly.
+- Tajemství kostýmů: Nejde jen o to, že vidíte kus oblečení. U každého kostýmu se dozvíte fascinující příběh, který se za ním skrývá.
+A to je opravdu jen zlomek. Výstava skrývá tolik dalších drobných překvapení a detailů, že si je v té záplavě dojmů ani nedokážu všechny vybavit, zaručuji ale, že je tam neustále co objevovat.
+Emoce mají přednost před kostýmy
+Zatímco běžného návštěvníka na první pohled upoutají extravagantní pódiové outfity, pro samotného organizátora výstavy leží těžiště jinde. „Jsem fanda už od dětství a ty věci dlouhodobě sbírám. Kostým je sice zajímavý pro většinu lidí, ale pro mě osobně mají mnohem vyšší hodnotu věci osobního rázu, které nesou nějakou emocionální stopu,“ prozradil Hykel.
+Jako příklad uvádí japonskou sekci, kde je k vidění nízký stůl a starožitné japonské porcelánové misky. Právě z těch Freddie jí ve své posteli na vůbec poslední pořízené fotografii.
+Ikona, která nesledovala trendy, ale udávala je
+Freddie Mercury byl módní ikonou, v osobním životě i na pódiu ale preferoval především pohodlí. V osmdesátých letech například s oblibou kombinoval formální oblek s teniskami Converse. Jeho pódiovou klasikou se staly lehké boty značky Adidas, které mu poskytovaly maximální komfort, skvělý kontakt s pódiem a měly protiskluzovou podrážku. K tomu často stačily už jen ikonické džíny a bílé tílko.
+Exponáty za miliony liber a originály z Garden Lodge
+Hodnota vystavených předmětů je ohromující. Celkové pojištění výstavy se šplhá na 5,5 milionu liber.
+- Nejdražší exponát: Mezi nejcennější položky (v hodnotě zhruba 6 650 000 Kč) patří materiály k operní části Bohemian Rhapsody a relikvie spojené s vystoupením v holandské BBC Top of the Pops z roku 1974 (na fotce vlevo)
+- Autenticita: Všechny vystavené věci jsou originály, s jedinou výjimkou - kalhot, které musely být dodány k doplnění jednoho z kostýmů.
+- Nábytek z Freddieho domu: K vidění je mimo jiné originální nábytek z Mercuryho londýnského sídla Garden Lodge nebo jeho parfémy.
+Největší část výstavy tvoří předměty ze soukromé sbírky projektu World of Freddie, která patří českému sběrateli a je největší soukromou sbírkou svého druhu na světě. Menší část exponátů pak zapůjčili sběratelé z celého světa, kteří se rozhodli své kousky výstavě propůjčit, a to bez nároku na honorář.
+Jejich motivace je prostá: účastí na takto prestižním projektu se vystavené předměty na sběratelském trhu dále zhodnocují. „To, k čemu se člověk může přiblížit a čeho se může přímo dotknout, je ale samozřejmě replika, na originály z Garden Lodge se posadit nedá,“ upřesňuje organizátor.
+Výstava prodloužena a exkluzivní zážitky
+Příprava takto rozsáhlé expozice trvala 3 roky a 2 měsíce. Kvůli obrovskému zájmu je nyní výstava prodloužena až do konce dubna.
+Pro ty největší fanoušky navíc organizátoři připravili exkluzivní akce:
+- Prohlídky v češtině: Komentované prohlídky přizpůsobené česky mluvícím návštěvníkům
+- VIP termíny v zavírací dny: Exkluzivní zážitek, který jde daleko za hranice běžné návštěvy. V prodeji zbývají už jen poslední 3 termíny a kapacita je striktně omezena na 60 osob (maximálně 20 lidí na jeden termín). Návštěvníci dostanou možnost vzít si v rukavičkách do rukou originální kostýmy a další předměty z Garden Lodge a vyfotit se s nimi.
+- Sběratelský artefakt: Každý, kdo si tento dražší VIP balíček objedná, si navíc domů odnese skutečný poklad. Získáte totiž exkluzivní možnost vlastnit formou sběratelského předmětu kousek přímo z domova Freddieho Mercuryho (co přesně to je, si ale pochopitelně necháme jako překvapení!).
+Vzpomínka na Queen v Praze: Dorazí Freddieho bodyguard i muž, kterého nahradil
+A pokud byste výlet do Budapešti náhodou neplánovali, podzimní uctění Freddieho památky si můžete skvěle užít i v Česku. Právě k nadcházejícímu 35. výročí jeho úmrtí se v sobotu 21. listopadu koná v pražském prostoru Next Zone akce Vzpomínka na Queen 2026. Bude to vynikající příležitost potkat se s dalšími fanoušky a poslechnout si exkluzivní hosty (mimo jiné právě i Tomáše Hykla, který o budapešťské výstavě přijede popovídat, či Freddieho bývalého bodyguarda Terryho Giddingse). Ideální tečka za podzimem plným vzpomínek na jednu z největších legend hudební historie.|E||T|Miley Cyrus se má o víkendu vdávat! Po Hemsworthovi si vezme tohoto vlasatého rockera|D|20.11.2026 12:57|P|Miley Cyrus se podle informací zahraničních serverů chystá během nadcházejícího víkendu podruhé vdát, a to za svého o pět let mladšího snoubence Maxxe...|M|Super|X|Miley Cyrus (33) se podle informací zahraničních serverů chystá během nadcházejícího víkendu podruhé vdát, a to za svého o pět let mladšího snoubence Maxxe Moranda. Dvojice by si měla říct ‚ano‘ rok od zásnub na utajeném místě v jižní Kalifornii, další podrobnosti se ovšem daří držet v tajnosti.
+Zpěvačka, která si nově nechává říkat pouze Miley, naznačila, že se chystá projít svatební uličkou, již minulý měsíc, když svého snoubence přivedla na pódium v Hollywood Bowl, kde společně zazpívali píseň Let’s Get Married (Pojďme se vzít) z jejího desátého studiového alba Bass Persuades. Zda právě tento song pomohl ‚pošťouchnout‘ mladého rockera k činům, není známo, Miley mu ovšem dala jasně najevo, že by k manželství s ním byla svolná.
+Pro Miley by se jednalo o druhou cestu k oltáři. V letech 2018 až 2020 byla v bouřlivém svazku s hercem Liamem Hemsworthem, s nímž se scházela a zase rozcházela dlouhých deset let.
+S Morandem se Cyrus zasnoubila loni po čtyřech letech vztahu, jenž je o poznání klidnější než v předchozím případě. Maxx před zpěvačkou poklekl s diamantovým zásnubním prstenem Jacquie Aiche za 150 tisíc dolarů (3,3 milionu korun) během jejich cesty po Asii a Miley to prý vůbec nečekala. „Není snadné mě překvapit, protože mám ráda pod kontrolou každou situaci, ale úplně jsem se tomu podala,“ prohlásila tehdy Miley v pořadu Good Morning America.|E||T|Nostalgické vzpomínky a emoční pračka: Na Draculu vyrazil i starší syn skladatele Karla Svobody s manželkou a sestrou|D|20.11.2026 12:20|P|Bylo mu třináct, když viděl nejslavnější divadelní dílo svého táty Karla Svobody poprvé. Režisér a filmový producent Petr Klein Svoboda byl i mezi hos...|M|Super|X|Bylo mu třináct, když viděl nejslavnější divadelní dílo svého táty Karla Svobody (†68) poprvé. Režisér a filmový producent Petr Klein Svoboda byl i mezi hosty slavnostní premiéry obnovené verze muzikálu Dracula po jednatřiceti letech.
+Starší skladatelův syn se objevil ve společnosti po dlouhé době v doprovodu své manželky Lucie. Nechyběla ani jeho starší sestra Jana Wallace Svobodová. „Těším se na toto zpracování a jsem zvědavý, jak to autoři tentokrát pojali,“ řekl Super.cz ještě před začátkem.
+Dracula měl už mnoho jevištních podob i hereckých a pěveckých alternací, všechny ale možná ani neviděl. „Vůbec si to nedokážu vybavit, ale víc než patnáctkrát to asi nebude. Ale to poprvé se z mého pohledu nedá zapomenout. Bylo mi tenkrát třináct let a byl to velký zážitek. Vzpomínám v tom nejlepším na původní skvadru, včetně režiséra Bednárika, pana Borovce a famózního Richarda Hese,“ uvedl.
+Dracula je pro něj i velmi emotivním zážitkem. „Pro mě je Dracula vždycky plný nostalgie. Někdy se mi na něj právě ani nechce jít, protože vím, že to pro mě bude emoční pračka a zase se mi vybaví spousta vzpomínek. I proto těmi návštěvami spíš šetřím,“ uzavřel.|E||T|Michelin rozdal české hvězdy. Čtyři restaurace jsou nové, Papilio obhájilo dvě|D|20.11.2026 10:59|P|Michelin vyhlásil české vítěze. Dvě hvězdy zůstávají restauraci Papilio Jana Knedly ve Vysokém Újezdě, jednu získalo 12 podniků. Čtyři z nich jsou v p...|M|SZ|X|Česká gastronomie má za sebou druhé celostátní hodnocení průvodce Michelin. Prestižní žebříček letos rozšířil český výběr z loňských 79 na 109 restaurací. Vedle jedné dvouhvězdičkové a 12 jednohvězdičkových restaurací udělil také 27 ocenění Bib Gourmand, které vyzdvihuje podniky nabízející kvalitní jídlo za přiměřenou cenu. Dalších 69 restaurací zařadil mezi doporučené.
+Zatímco všichni loňští držitelé michelinských hvězd si ocenění udrželi, v kategorii Bib Gourmand se seznam proměnil. Ocenění letos neobhájil pražský Výčep a Perk Restaurant v Šumperku.
+Čtyři nové jednohvězdičkové podniky se nacházejí v Praze. Jsou jimi Reason, Salabka, Taro a Zlatá Praha. Všechny ostatní jednohvězdičkové restaurace si ocenění udržely. Dvě hvězdy obhájilo Papilio šéfkuchaře Jana Knedly ve Vysokém Újezdě.
+„Budu upřímná, velmi jsme v letošní hvězdu doufali. A to, že jsme ji letos konečně dostali, byl neskutečně nádherný dárek. Se šéfkuchařem Petrem Kuncem totiž zrovna slavíme desetileté výročí v restauraci,“ přiznává dojatá generální manažerka nově oceněné restaurace Salabka Gabriela Kunc Lacherová.
+„Naši inspektoři jsou obzvlášť nadšeni rostoucím rozmachem české gastronomie, který pozorují napříč celou zemí. Stojí za ním poptávka po kvalitě a skutečné odbornosti i ochota přijímat inovace. Zatímco ceny zůstávají velmi příznivé, rozvoj české gastronomie se opírá o pozoruhodné a osobité koncepty i velkou rozmanitost kulinářských stylů. Tento výrazný pokrok je patrný také mimo Prahu, mimo jiné díky silnému zastoupení místních hostů vedle turistů,“ uvedl Gwendal Poullennec, mezinárodní ředitel Michelin Guide.
+Kdo získal michelinské hvězdy
+Kdo získal michelinské hvězdy
+Dvě hvězdy si udržel Restaurant Papilio ve Vysokém Újezdě. Jednu hvězdu má nově 12 podniků:
+Dvě michelinské hvězdy
+- Jan Knedla – Restaurant Papilio – Vysoký Újezd
+Jedna michelinská hvězda
+- Oldřich Sahajdák – La Degustation Bohême Bourgeoise – Praha
+- Petr Kunc – Salabka – Praha (nově)
+- Radek Kašpárek – Field – Praha
+- Otto Vašák – Restaurant Essens – Hlohovec u Břeclavi
+- Martin Štangl – Štangl – Praha
+- Christian Chu – Levitate – Praha
+- Július Löffler – La Villa – Zlín
+- Matteo De Carli – Casa De Carli – Praha
+- Maroš Jambor – Zlatá Praha – Praha (nově)
+- Jan Horák – Reason – Praha (nově)
+- Přemek Forejt – Entrée – Olomouc
+- Khanh Ta – Taro – Praha (nově)
+Bib Gourmand: dobré jídlo za rozumnou cenu
+Ocenění Bib Gourmand letos získalo 27 restaurací, z toho 11 nově. Michelin jím vyzdvihuje podniky, které nabízejí kvalitní kuchyni za přiměřenou cenu. Nejde tedy o nižší stupeň michelinské hvězdy, ale o samostatné ocenění s vlastním zaměřením.
+Bib Gourmand 2026
+- Atelier bar & bistro – Brno
+- Soyshi – Brno (nově)
+- Valoria – Brno
+- Dvůr Perlová voda – Budyně nad Ohří
+- Miura – Čeladná
+- Zámek Kvasetice – Havlíčkův Brod (nově)
+- APRI – Havraníky (nově)
+- Chateau Petit – Hlohovec (nově)
+- Šatlava – Hradec Králové
+Co michelinská hvězda znamená
+Michelinské hvězdy se udělují restauracím, nikoli jednotlivým šéfkuchařům. Jedna hvězda znamená velmi dobrou kuchyni, kvůli které stojí za to se zastavit. Dvě hvězdy označují podnik, kvůli němuž se vyplatí zajížďka, tři hvězdy pak restauraci, za kterou stojí za to podniknout zvláštní cestu.
+Inspektoři posuzují především kvalitu surovin, zvládnutí kuchařských technik, harmonii chutí, osobitost kuchyně a konzistenci. Hvězda tedy není oceněním interiéru, obsluhy nebo celkové atmosféry restaurace, ale především toho, co host dostane na talíř.
+Hvězda může restauraci změnit
+Co může michelinské ocenění pro podnik znamenat, ukazuje zkušenost Jana Knedly z Papilia. Po loňském zisku dvou hvězd se restaurace dostala do hledáčku zahraničních návštěvníků. „Otevře průvodce, vidí dvě hvězdy a restauraci si zařadí do programu své cesty,“ popsal Knedla v rozhovoru pro Seznam Zprávy. Zájem hostů podle něj po ocenění výrazně vzrostl a rezervační systém se krátce po vyhlášení zaplnil na první čtvrtletí roku.
+Podobně vnímá Michelin také Martin Štangl, jehož stejnojmenná restaurace letos jednu hvězdu obhájila. Už před loňským vyhlášením říkal, že jeho hlavním cílem je, aby restauraci lidé rádi navštěvovali a aby byla přínosem české gastronomii. „Jestli to bude s michelinskou hvězdou, nebo bez ní, je už vedlejší,“ uvedl v rozhovoru. Zároveň ale uznal, že Michelin může restauraci pomoci její cíle naplnit.
+Ne každý úspěšný podnik se však do výběru dostane. Příkladem je pražská restaurace El Camino Davida Böhma, která má v gastronomické komunitě velmi dobré jméno a dlouhodobě se těší uznání mezi hosty i profesionály. Přesto se loni do michelinského průvodce nedostala.
+Böhm v rozhovoru pro Seznam Zprávy popsal, že ho rozhodnutí přimělo pochybovat o vlastní práci. „V první třetině letošního roku po vyhlášení jsme měli o 25 až 30 procent klientů méně,“ uvedl. Zároveň zdůraznil, že ho zkušenost nakonec přiměla k bilanci a k novému potvrzení, že ho práce stále baví. Letošní ročník přinesl pro El Camino alespoň částečné zadostiučinění: Restaurace se nově objevila mezi podniky doporučenými michelinským průvodcem.
+Naopak restaurace Reason získala hvězdu už rok a kousek po svém otevření. „Radši jsem se pořád držel v tom, že nic nečekám, abych nebyl zklamaný. Ale přiznám se, že noc před vyhlášením se mi o Michelinu už i zdálo,“ říká šéfkuchař a spolumajitel Jan Horák.
+Zastihli jsme ho zrovna na cestě do Lucemburska, kde se účastní Světového poháru ve vaření jako zástupce Česka v porotě. „Dnešní ocenění je pro mě trochu hořkosladké, protože nemůžu být v restauraci. Chtěl bych tam být se svými kolegy. Díky patří hlavně celému našemu týmu, se kterým jsme od loňské otvíračky odvedli obrovský kus práce. Bez nich bych to nedokázal,“ vysvětluje Horák.
+Michelin tak může být pro restauraci významným marketingovým a reputačním impulzem, ale také zdrojem velkých očekávání. A především nejde o jedinou známku kvality, podle níž se vyplatí vybírat, kam vyrazit na večeři.
+Od motoristů ke gurmánům
+Příběh jednoho z nejvlivnějších gastronomických průvodců světa začal překvapivě daleko od kuchyně. V roce 1900 ho ve Francii vydali bratři André a Édouard Michelinovi, zakladatelé stejnojmenné pneumatikářské firmy. Jednoduše totiž chtěli dostat lidi za volant a na cesty.
+Spočítali si, že čím víc budou lidé jezdit, tím víc budou potřebovat pneumatiky. Do příručky proto zařadili praktické rady pro motoristy, mapy, čerpací stanice i tipy, kde se cestou najíst a přespat. Zkrátka něco jako předchůdce navigace, cestovatelského blogu a gastroprůvodce v jednom. První hodnocení hvězdami přišlo v roce 1926 a z pneumatikářského marketingového nápadu se tak během let stala značka, jejíž verdikt dnes dokáže restauraci změnit život.
+Dalších 69 restaurací Michelin doporučuje
+Vedle hvězd a Bib Gourmand zařadil průvodce dalších 69 restaurací do kategorie MICHELIN-recommended. Jde o podniky, které inspektoři doporučují navštívit, přestože nezískaly hvězdu ani ocenění Bib Gourmand.
+Restaurace doporučené průvodcem Michelin
+- Borgo Agnese – Brno
+- Element – Brno
+- Hatsu Restaurant – Brno (nově)
+- Kohout na víně – Brno (nově)
+- Maneko – Brno (nově)
+- Pavillon Steak House – Brno
+- Prime Steak – Brno
+- Cattaleya – Čeladná
+- Bistro Filištínská – Chrudim (nově)
+Článek postupně aktualizujeme o vyjádření šéfkuchařů.|E||T|Nejsme na to pyšní, ani se za to nestydíme! Martha Issová poprvé o synovi, který byl dříve dcerou Františkou|D|20.11.2026 10:51|P|Herečka Martha Issová se otevřeně rozpovídala o tom, jak se vyrovnávala s tím, že se její starší potomek Jay, dříve známý jako Františka, identifikuje...|M|Super|X|Herečka Martha Issová (45) se otevřeně rozpovídala o tom, jak se vyrovnávala s tím, že se její starší potomek Jay, dříve známý jako Františka, identifikuje jako chlapec. Přiznala nejen to, že to pro ni nebylo jednoduché, ale také prozradila, jak celou věc přijal manžel, režisér David Ondříček.
+Jay se nejprve svěřil své mamince. „Z nějakého důvodu se to Jay styděl víc říct tátovi. Ale já jsem Davidovi vděčná za to, jak k tomu přistoupil,“ svěřila se Martha pro Blesk s tím, že David se to dozvěděl o něco později během společné procházky.
+„Kecala bych, kdybych řekla, že to pro mě bylo jako chleba s máslem. Víte, že ta situace pro to dítě nebude jednoduchá, nejen jak to společnost přijme, ale co on sám ve vztahu k sobě bude muset překonávat. Den po dni se s tím učíte žít,“ uvedla Martha, která to se svým manželem zkrátka vnímá jako fakt a realitu.
+„My jsme si to nevybrali, nejsme na to pyšní, ani se za to nestydíme. Je to prostě realita,“ vysvětlila herečka, která už svého staršího potomka oslovuje v mužském rodě a jeho rozhodnutí naprosto respektuje.
+Zároveň doufá, že sdílením jejich příběhu může být nějakým způsobem nápomocná i pro ostatní rodiny, které si procházejí podobnou situací.
+„Myslím si, že k tomu našemu ‚coming outu‘ vedlo i to, že rodin, které tenhle příběh žijí, je hodně. A z vlastní zkušenosti vím, jak mi pomáhá, když si můžu vyměnit zkušenosti. Nebylo to ale bez rozmyslu a nebylo to bez Jayova posvěcení,“ ujistila Martha Issová na závěr.|E||T|Konec se skrýváním soukromí: Sagvan Tofi vyrazil na premiéru nejen s partnerkou, ale i s dcerou. Je to prý pěkná čertice|D|20.11.2026 09:58|P|Svoje soukromí si vždy pečlivě střežil a to, že má dlouhodobou partnerku, věděli dlouho jen jeho nejbližší. Informace, že je i tátou, byly neveřejné j...|M|Super|X|Svoje soukromí si vždy pečlivě střežil a to, že má dlouhodobou partnerku, věděli dlouho jen jeho nejbližší. Informace, že je i tátou, byly neveřejné ještě podstatně déle. Po šedesátce ale i věčný „kamarád do deště“ vyměknul. Sagvan Tofi se pochlubil dcerou.
+Sagi dorazil na premiéru nové verze muzikálu Dracula do Hudebního divadla odděleně od žen svého života. Zatímco jeho partnerka Ála s dcerou Satine pózovaly v přízemí ve foyer společně s exmanželkou Romana Vojtka Terezou a jejím dvojčetem Kristýnou, zpěvák a muzikálový producent seděl na balkóně.
+O přestávce už se ale všichni sešli a Tofi se snad poprvé nechal vyfotit se svojí rodinou. Bylo vidět, že na dceru, která je mu podobná jako by mu z oka vypadla, je patřičně pyšný. V elegantním černém outfitu jí to opravdu slušelo.
+Satine je šestnáct a zdědila prý nejen tatínkovy rysy, ale i bouřlivou povahu, takže se mají rodiče ještě na co těšit. Říkají jí čertice a zatím její energii krotí pravidelné lekce tenisu, díky nimž má mladinká slečna štíhlou a vypracovanou figuru.|E||T|Tomáš Třeštík chodí s krásnou lékařkou estetiky! Už jsem byl jejím pacientem, přiznal fotograf|D|20.11.2026 09:15|P|Tomáš Třeštík je už nějakou dobu šťastně zadaný s půvabnou Evou, která je lékařka estetické medicíny. Když jsme se s fotografem potkali, tak se nabídl...|M|Super|X|Tomáš Třeštík je už nějakou dobu šťastně zadaný s půvabnou Evou, která je lékařka estetické medicíny. Když jsme se s fotografem potkali, tak se nabídla otázka, zda už i on sám využil služeb své partnerky a nechal se například nějak vylepšit.
+„Ne, já jsem připravený stárnout tak, jak to přijde, ale byl jsem u ní asi před čtrnácti dny s prstem. Tak mi to vylaserovala a opravila, což nebyla estetická záležitost. Takže ano, už jsem byl jejím pacientem,“ prozradil Super.cz s úsměvem.
+„Chvíli po tom, co jsme se poznali, mi zkontrolovala pihy,“ dodal s tím, že žádné vylepšení neplánuje. „Zatím se nechystám nic podstupovat, prsa už si taky nechám asi svoje,“ zavtipkoval.
+Mít po svém boku lékařku má však své výhody. Eva totiž dokáže poradit nejen s estetikou, ale také s běžnými zdravotními problémy. „V tomto je to skvělá. Děti za ní chodí, když se jim třeba objeví nějaký pupínek. Ona to pak vážně vyzkoumá, poradí mastičku, děti si to namažou a jsou v klidu. V tomto směru je to super,“ pochvaloval si Tomáš Třeštík, se kterým jsme se potkali při natáčení talk show 7 pádů Honzy Dědka, kde přišla řeč také na jeho nový počin, knihu Balkonovky.|E||T|Katie Price v bikinách vyvolala zděšení: Vršek jak na melouny, spodek XXXS|D|20.11.2026 08:54|P|Jedním ze základních parametrů krásy je souměrnost, a to pochopitelně neplatí pouze pro obličej, ale také u postavy. Katie Price je ovšem dozajista ji...|M|Super|X|Jedním ze základních parametrů krásy je souměrnost, a to pochopitelně neplatí pouze pro obličej, ale také u postavy. Katie Price (48) je ovšem dozajista jiného názoru a razí myšlenku spíše co nejextrémnějšího poprsí a nejužšího zbytku těla. Pojem ‚štíhlá s velkými prsy‘ u ní tak dostává úplně nové rozměry, jak bylo zřejmé i z jejích nedávno sdílených fotografií na sociálních sítích.
+Bývalá glamour modelka se před několika dny opět vydala do Dubaje, tentokrát ovšem ne primárně za svým stále ještě manželem Leem Andrewsem, nýbrž kvůli další sérii estetických zákroků. Ve svém podcastu The Katie Price Show ovšem potvrdila, že se tam s Andrewsem, s nímž se momentálně rozvádí, plánuje setkat.
+Aby bylo co dát na sítě, v hotelovém pokoji se Katie svlékla do spodního prádla, udělala si pár selfie v odrazu zrcadla a snímky ‚postla‘ do světa. Katie tak fanouškům poskytla detailní pohled na svá tetování i enormní ňadra v kontrastu s uzoučkými boky a tenkýma nohama.
+A jak pětinásobná maminka slíbila, tak také udělala. O víkendu byla s Andrewsem spatřena v dubajském plážovém klubu a na diskotéce pod širým nebem. Podle britských médií k sobě měli velmi blízko a společně tančili, což vyvolalo spekulace o jejich usmíření.
+Pár se vzal začátkem letošního roku v Dubaji po rekordně krátké známosti. Již v září Price podala žádost o rozvod a vztah ukončila přes textové zprávy poté, co vyšly najevo Andrewsovy finanční podvody a dluhy. Již dávno předtím přitom Katie před tímto samozvaným milionářem varovaly jeho bývalé partnerky.|E||T|První adventní trhy už běží. Kam letos vyrazit za koledami a vůní svařáku?|D|20.11.2026 07:20|P|Vánoční trhy už stojí v Brně a ve Vídni, Ostrava se přidá 21. listopadu, Drážďany 25. a hlavní pražské trhy 28. listopadu.|M|PozZpr|X|První adventní trhy už běží. Kam letos vyrazit za koledami a vůní svařáku?
+Vánoční trhy už stojí v Brně a ve Vídni, Ostrava se přidá 21. listopadu, Drážďany 25. a hlavní pražské trhy 28. listopadu. Podle oficiálních stránek a portálu Kudy z nudy vydrží hlavní trhy v Praze i Ostravě do 6. ledna 2027.
+Kdo nechce čekat, může vyrazit hned do Brna nebo do Vídně. Ostatní města se přidají postupně, v pořadí, v jakém je najdete níž.
+Už teď: Vídeň a Brno
+Nejdřív začala Vídeň. Trh u zámku Schönbrunn je otevřený od 6. listopadu a vydrží až do 6. ledna 2027. Před vídeňskou radnicí na Rathausplatzu se prodává od 13. listopadu do 26. prosince 2026. U zámku Belvedere se navíc 20. listopadu otevře K&K vánoční trh, který potrvá do 31. prosince 2026.
+Ve stejný den jako trh u vídeňské radnice otevřely i Vánoce Brno. Na Zelném trhu stojí přes sto stánků. Víc než polovina z nich nabízí rukodělné výrobky od řemeslníků a lidí, kteří udržují lidové tradice.
+V parku na Moravském náměstí nejde přehlédnout 33 metrů vysoké vyhlídkové kolo. Pod ním je kluziště s půjčovnou bruslí, které se otevírá 24. listopadu. Na Kapucínském náměstí pak stojí téměř 50 metrů dlouhý vánoční vláček s historickou lokomotivou a do některých vagónků se dá vstoupit.
+Ostrava od 21. listopadu: betlémy na hradě a rozsvícení stromu
+Ostravské trhy začínají v sobotu 21. listopadu a potrvají až do 6. ledna 2027. Zhruba o týden později přibude další program.
+Na Slezskoostravském hradě začne v pátek 27. listopadu výstava betlémů pro malé i velké, otevřená do 6. ledna 2027. Její významnou část tvoří kolekce 14 betlémů z Třebechovic pod Orebem.
+V sobotu 28. listopadu se slavnostně rozsvítí vánoční strom na Masarykově náměstí. Ve stejný den se otevře i vánoční kluziště na náměstí Dr. Beneše a bruslení je tam zdarma.
+💡 Zajímavost: Striezelmarkt je podle oficiálních stránek nejstarším vánočním trhem v Německu a letos se koná jeho 592. ročník.
+Drážďany od 25. listopadu: světla se zapnou v 16 hodin
+Drážďanský Striezelmarkt na náměstí Altmarkt začíná ve středu 25. listopadu a potrvá do 24. prosince 2026. Otevření má pevný čas: v 16 hodin se zapnou světla a prodejci začnou prodávat v 16.30. Kdo chce zahájení vidět, měl by tedy dorazit už odpoledne.
+Podle oficiálních stránek trhu tam najdete přes 200 prodejců. Na výlet po Vánocích se Drážďany nehodí: trh končí na Štědrý den.
+Hlavní pražské trhy od 28. listopadu: dvě náměstí denně do 22 hodin
+Pražské vánoční trhy na Staroměstském a Václavském náměstí se otevřou v sobotu 28. listopadu a poběží až do 6. ledna 2027. Otevřeno mají denně od 10 do 22 hodin. Ze všech pěti míst otevírají hlavní pražské trhy jako poslední, zato patří k těm, které vydrží nejdéle.
+Kde je otevřeno o svátcích a po nich
+Kdo chce na trhy až o Vánocích, musí počítat s kratší otevírací dobou. Na Václavském náměstí jsou stánky na Štědrý den otevřené od 10 do 14 hodin. Na Boží hod i na Štěpána, tedy 25. a 26. prosince, se tam prodává od 12 do 22 hodin.
+Po svátcích se výběr zúží. Vídeňská radnice zavírá 26. prosince. Do 6. ledna 2027 vydrží Praha, Ostrava i trh u zámku Schönbrunn.
+Na ostravském kluzišti na náměstí Dr. Beneše se dá bruslit zdarma až do 1. ledna 2027.
+Ověřeno z:
+- Pražské vánoční trhy (trhypraha.cz) – termíny trhů 2026/2027
+- Vánoce Brno – oficiální stránky trhů (platí pro 2026)
+- Kudy z nudy (CzechTourism) – Ostravské Vánoce 2026
+- Statutární město Drážďany – 592. Dresdner Striezelmarkt 2026
+- Vienna Tourist Board – vánoční trhy ve Vídni 2026|E||T|Osvědčené rady před prvními mrazy: Jak správně připravit levanduli a další bylinky na zimu|D|20.11.2026 07:12|P|Levanduli a bylinkám v zimě víc než chlad škodí mokro.|M|PozZpr|X|Osvědčené rady před prvními mrazy: Jak správně připravit levanduli a další bylinky na zimu
+Levanduli a bylinkám v zimě víc než chlad škodí mokro. Podle britské zahradnické společnosti RHS i českých zahradnických poraden jim pomůže propustná půda, v nádobách suché místo a lehký kryt z větviček jehličnanů. Nůžky počkají do jara.
+Levandule pochází z teplého Středomoří. Potřebuje hodně slunce a půdu, ze které voda rychle odteče. Na zimu jí proto nejvíc pomůže, když kolem kořenů nebude stát voda.
+Levandule v záhonu: hlavně propustná půda
+Levandule úzkolistá a její kříženci patří podle britské zahradnické společnosti RHS k nejodolnějším levandulím. Bývají mrazuvzdorné a v propustné půdě je lze nechat přes zimu venku. Kdo má v záhonu právě tuhle levanduli, nemusí ji na zimu nikam stěhovat.
+Zahradnické zdroje se liší v tom, čím rostliny přikrýt. Deník radí na podzim přihrnout k levanduli chvojí, tedy ustřižené větvičky jehličnanů, nebo vrstvu listí. Starší zahradnická poradna z roku 2010 listí naopak nedoporučuje, protože zadržuje příliš vody a bylinky by pod ním mohly snadno uhnít. Kdo chce mít jistotu, sáhne po chvojí, které je vzdušnější.
+Levandule v květináči potřebuje suché místo
+V nádobě je to jinak. Rostliny v květináčích jsou na mráz vždycky citlivější, protože jejich kořeny jsou hůř izolované než v zemi.
+RHS proto radí držet nádoby s levandulí v zimě spíš v suchu, aby na ně nepršelo příliš. Hodí se neohřívaný skleník nebo místo u paty zdi, kam tolik nedoprší. Zahradníci mu říkají dešťový stín.
+Tymián, šalvěj a dobromysl pod chvojím
+Chvojí neposlouží jen levanduli. Podle starší zahradnické poradny z roku 2010 se s ním dají přikrýt i další bylinky, které rostou venku: dobromysl, šalvěj a tymián.
+Pro čerstvě koupené a vysazené trsy, u kterých si nejste jistí, jestli zimu zvládnou, poradna doporučuje i netkanou textilii, tedy lehkou zahradní tkaninu.
+Rozmarýn zimuje v chladu a na světle
+Rozmarýn u nás zimu venku nezvládne. Pěstuje se proto ve velkém květináči a na zimu se stěhuje na chladnější místo do domu nebo do zimní zahrady. Po přenesení dovnitř ho očistěte a postavte na světlé místo.
+💡 Zajímavost: Ne každá levandule je stejně otužilá. Některé druhy z jižního Španělska nebo Kanárských ostrovů venku přes zimu nepřežijí.
+Bylinky přenesené dovnitř se zalévají jen velmi střídmě. Zima je pro ně klidové období, kdy rostlina odpočívá a skoro neroste. Velká konev na ně v zimě nepatří.
+Nehnojit a nůžky nechat do jara
+Od září se levandule už nehnojí. Hnojiva s dusíkem totiž rostlinu ženou do měkkých nových výhonů, které v zimě snadno pomrznou.
+Se stříháním je to podobné. RHS radí levanduli zastřihnout jednou ročně, na konci léta hned po odkvětu. Hlavní jarní řez podle Deníku přichází, jakmile pominou nejhorší mrazy, zpravidla od konce března do poloviny dubna. Před zimou tak žádný řez nepřipadá a nůžky mohou zatím odpočívat.
+Při každém stříhání platí jedno pravidlo. Nikdy se nestříhá do starých zdřevnatělých větví, protože z nich levandule nové výhony špatně vyhání.
+Než přijdou mrazy, stačí tři kroky
+Nejdřív zkontrolujte, jestli levandule v záhonu nestojí v mokru. Půda, ze které voda rychle odteče, je pro ni základ. Pak ji můžete volně přikrýt chvojím.
+Potom přesuňte květináče s levandulí k patě zdi nebo do neohřívaného skleníku, kde na ně tolik neprší.
+Nakonec odneste rozmarýn do chladnější světlé místnosti v domě a zalévejte ho jen málo. Na jaře, od konce března, pak přijde řada na nůžky.
+Ověřeno z:
+- RHS (Royal Horticultural Society) – Lavender growing guide
+- Novinky.cz – Zahrada před zimou, zahradní poradna (28. 11. 2010)
+- Novinky.cz – Bylinky na zahradě (rozmarýn není zimovzdorný)
+- Deník.cz – Letní řez levandule (2026)|E||T|Malé gesto, které zachraňuje životy. Před jízdou v mrazu zaklepejte na kapotu|D|20.11.2026 07:01|P|Kočky se v zimě ohřívají u motoru. Před startem radí britská organizace RSPCA ťuknout na kapotu a mrknout ke kolům.|M|PozZpr|X|Malé gesto, které zachraňuje životy. Před jízdou v mrazu zaklepejte na kapotu
+Kočky se v zimě ohřívají u motoru. Před startem radí britská organizace RSPCA ťuknout na kapotu a mrknout ke kolům.
+Hlasité kňourání z motoru uslyšel v dubnu 2018 muž v Přerově, když přišel k autu. Kdo kočku objeví až po nastartování, může ji vážně zranit. Jak to dopadá, ukazuje příběh kočky Saffy níž.
+Kňourání v Přerově, kocour v Jablonci
+Hasiči z Přerova sundali kryt motoru a sací potrubí. Pak už to šlo rychle. Unavené zvíře šetrně vytáhli, bez nutných razantních postupů a bez poškození techniky.
+Jiný zásah, v září 2026 v Jablonci nad Nisou, skončil šťastně. Kocour se tam v neděli dostal do motorového prostoru auta a sám už ven nemohl. Hasiči ho opatrně a bezpečně vyprostili. Po krátkém dobrodružství se v pořádku vrátil ke svému majiteli.
+Hladce to ale nejde vždy. V roce 2022 řešili pražští hasiči kočku v motoru auta v Košické ulici. Když se ji snažili zachránit, utekla do motoru jiného auta a později někam pryč.
+Proč si kočky vybírají motor
+Odpověď je prostá: teplo. Kočky ho v chladném počasí vyhledávají a prostor u motoru patří k jejich oblíbeným místům, píše Pražský deník. S klesající teplotou lezou pod kapoty a do podběhů kol, aby se ohřály od motoru a pneumatik, vysvětluje britský útulek Battersea.
+Z kočičího pohledu to dává smysl. Čerstvě odstavený motor jí může připadat jako bezpečné a útulné místo ke spánku, říká veterinářka britské charity PDSA. V chladných měsících se podle ní takové nehody opravdu stávají.
+Saffy z Bradfordu chodí po třech
+Jak to může dopadnout, ukazuje kočka Saffy z britského Bradfordu. V listopadu 2019 jí uvízla noha v řemeni motoru a veterináři ji museli amputovat. Charita PDSA kvůli tomu varovala řidiče.
+💡 Zajímavost: Nehoda v ní přesto zanechala stopu: Saffy se bojí aut a podle zprávy PDSA z ledna 2020 zůstává většinou doma.
+Saffy se schovala pod kapotu auta souseda a ten nastartoval, aniž věděl, že tam je. Majitelka vypráví, že soused kočku uslyšel křičet, motor hned vypnul a otevřel kapotu, kde ji našel zamotanou a v bolestech. Teprve mechanik ji z motoru dostal.
+Příběh má i lepší pokračování. Saffy se podle zprávy z ledna 2020 plně zotavila a na třech nohách to zvládá dobře.
+Klepnutí, kola, teprve pak start
+Kočka se může schovat pod kapotou i v podběhu kola. Proto RSPCA radí před nastartováním ťuknout na kapotu a obhlédnout kola a pneumatiky.
+Kdo má čas, může podle odborníků, které cituje Pražský deník, motor před jízdou rovnou zkontrolovat. Když spěchá, ať aspoň pořádně zaklepe na kapotu u motoru. Řadu plachých koček to vyžene.
+Pod auto a do podběhů kol se podle PDSA vyplatí podívat hlavně tehdy, když auto jelo v posledních hodinách a motor může být ještě teplý.
+Pozor i na nemrznoucí kapalinu
+Kočkám v zimě škodí u aut i nemrznoucí kapalina. Útulek Battersea upozorňuje, že když ji kočka spolkne, může na to zemřít. Potíž je, že jí kapalina chutná. RSPCA v radách pro venkovní a toulavé kočky doporučuje nemrznoucí kapalinu ani posypovou sůl nepoužívat, aby se kočky neotrávily.
+Ověřeno z:
+- RSPCA – Cold weather care for cats (zimní rady pro majitele koček)
+- Battersea – Winter cat care
+- PDSA – tisková zpráva o kočce Saffy (20. 1. 2020)
+- HZS Olomouckého kraje – zpráva o zásahu v Přerově (duben 2018)
+- Pražský deník – Hasiči vyháněli kočku z motoru (1. 12. 2022)
+- Jablonecký deník – Kocour uvízl v motoru auta (7. 9. 2026)|E||T|Praha, Brno i Písek mají ve vesmíru planetku, vaše město možná také|D|20.11.2026 06:50|P|Po Praze, Plzni, Telči nebo Terezínu se jmenuje kus vesmíru. Vybrali jsme 17 českých měst s planetkou z katalogu Kleťské observatoře a ukážeme, jak na...|M|PozZpr|X|Praha, Brno i Písek mají ve vesmíru planetku, vaše město možná také
+Po Praze, Plzni, Telči nebo Terezínu se jmenuje kus vesmíru. Vybrali jsme 17 českých měst s planetkou z katalogu Kleťské observatoře a ukážeme, jak najít to své.
+#vesmír#astronomie#města#planeta
+Písek nemusíte hledat jen na mapě. Jeho jméno nese i planetka číslo 2672. A rozhodně není sama: českých měst je mezi planetkami tolik, že se do jednoho článku nevejdou. Vybrali jsme jich 17, v katalogu ale čekají i další, třeba Jindřichův Hradec.
+Všechna pocházejí z katalogu observatoře Kleť. Když jsme ho v listopadu 2026 procházeli, měl 1 042 očíslovaných planetek, které se na Kleti objevily.
+Pět měst hned na začátku seznamu
+Nejnižší číslo z celého výběru má Praha: 2367. Hned za ní jsou Plzeň s číslem 2613 a Písek s 2672. Český Krumlov má 2747, Brno 2889. Všech pět jmen tak najdete mezi prvními čtyřiceti řádky katalogu, který planetky řadí podle čísla.
+Dalších dvanáct měst od Třeboně po Třebíč
+Ostatní vybraná města musíte v katalogu hledat o kus dál. Třeboň má planetku 3735, Turnov 4054 a Telč 5894. Pelhřimov nese číslo 7532 a Příbram 9884. Přes hranici deseti tisíc se jako první z výběru dostaly České Budějovice s číslem 11134.
+Prachatice dostaly planetku 15890, Terezín 17608 a Strakonice 18531. Litomyšl má číslo 26328 a Kroměříž 31238. Nejvyšší číslo ze všech sedmnácti, 48638, patří Třebíči.
+💡 Zajímavost: Planetku Praha objevil na Kleti A. Mrkos 8. ledna 1981. Slunce oběhne jednou za 1 200 dní, tedy zhruba za 3,3 roku.
+Kdo je u jmen zapsaný jako objevitel
+U Prahy, Českého Krumlova, Brna, Telče a Turnova je v katalogu zapsaný A. Mrkos. U Českých Budějovic, Příbrami, Strakonic, Prachatic a Litomyšle stojí dvojice M. Tichý a Z. Moravec. Plzeň patří L. Brožkovi, Písek J. Květoňovi a Třeboň Z. Vávrové. Zbylá čtyři města jsou zapsaná na M. Tichého, u Kroměříže spolu s J. Tichou.
+Jak najít planetku svého města
+Ověřit své město zvládne každý v databázi jmen planetek z Kleti. Do vyhledávacího pole začněte psát název, klidně i s háčky a čárkami. Jakmile napíšete tři písmena, ukážou se výsledky samy.
+Pozor na zápis jmen: Jindřichův Hradec je v katalogu psaný jako „Jindřichůvhradec“. Hledejte proto začátek názvu, ne celé jméno. Když nic nenajdete, planetka se jménem vašeho města v katalogu Kleti možná není.
+Ověřeno z:
+- Observatoř Kleť – katalog planetek objevených na Kleti (stav 16. 11. 2026)
+- NASA/JPL – Small-Body Database, planetka 2367 Praha
+- Observatoř Kleť – databáze jmen planetek|E||T|Běžný důchod zůstává bez daně. Odvody se týkají až částek nad 74 700 korun|D|20.11.2026 06:40|P|Hranici, do které je důchod bez daně, určuje zákon o daních z příjmů a letos leží na 67 200 Kč měsíčně.|M|PozZpr|X|Běžný důchod zůstává bez daně. Odvody se týkají až částek nad 74 700 korun
+Hranici, do které je důchod bez daně, určuje zákon o daních z příjmů a letos leží na 67 200 Kč měsíčně. Průměrný starobní důchod bude po lednovém zvýšení 22 196 Kč, takže běžných důchodců se daň z důchodu netýká.
+#senioři#důchodci#peníze#zákon
+Ta hranice ale není pevná částka. Platí pro pravidelně vyplácený důchod a každý rok se posouvá spolu s minimální mzdou, tedy nejnižší výplatou, kterou smí zaměstnavatel dát za plný úvazek.
+Kolik důchodu zůstane bez daně
+Zjednodušeně řečeno: bez daně je důchod, který měsíčně nepřesáhne tři minimální mzdy. Zákon to počítá za celý rok, tedy 36 minimálních mezd platných k 1. lednu, a kdo pobírá víc důchodů, sčítá je dohromady.
+Od ledna 2027 vzroste minimální mzda na 24 900 Kč měsíčně. Vláda to schválila letos v září a ministerstvo práce zvýšení zveřejnilo ve Sbírce zákonů.
+Tři takové mzdy dávají dohromady 74 700 Kč. Do té částky měsíčně je tedy od ledna důchod bez daně. Příplatky a příspěvky k důchodu podle jiných předpisů se do ní navíc nepočítají.
+O kolik se strop zvedá proti letošku
+Letos je minimální mzda 22 400 Kč, takže hranice leží na 67 200 Kč měsíčně. Od ledna se tedy posune o 7 500 Kč výš.
+Pro běžného důchodce se tím v peněžence nic nemění. Daň z důchodu letos neplatí a nebude ji platit ani příští rok. Změna jen ukazuje, jak daleko je ta hranice od skutečných důchodů.
+Průměrný důchod je od hranice daleko
+Průměrný starobní důchod bude po lednovém zvýšení činit 22 196 Kč měsíčně. Proti letošku si polepší o 304 Kč měsíčně.
+Hranice daně je víc než třikrát výš, než kolik bere průměrný důchodce. Důchod, který by na ni dosáhl, je zcela výjimečný.
+💡 Zajímavost: Za celý rok může být od ledna bez daně důchod až 896 400 Kč. Letos je to 806 400 Kč, tedy o 90 000 Kč méně.
+Pozor jen na jednu věc. Do součtu se počítají všechny důchody z důchodového pojištění, a to i důchod ze zahraničního povinného pojištění stejného druhu. Kdo pobírá penzi z ciziny, udělá dobře, když si podrobnosti ověří na finančním úřadu. I tak ale zůstane většina lidí hluboko pod stropem.
+Pojištění se z důchodu neplatí vůbec
+Daň není jediná srážka, kterou znají lidé z výplaty. Ze mzdy se odvádí také sociální a zdravotní pojištění. Ze státního důchodu se ale neplatí ani jedno, a to nikdy.
+Z běžného důchodu tak neubírá nic ani pojištění, ani daň.
+Výdělek vedle důchodu se daní běžně
+Hranice 74 700 Kč chrání jen samotný důchod. Kdo si k němu přivydělává, ať už zaměstnáním, nebo podnikáním, platí z tohoto výdělku daň jako kdokoli jiný. Zvláštní daňová úleva pro důchodce tu není.
+I pracující důchodce ale může uplatnit slevu na poplatníka, tedy částku, o kterou si daň snižuje každý, kdo ji platí.
+Celé znění pravidla najdete v zákoně o daních z příjmů v části o příjmech osvobozených od daně.
+Ověřeno z:
+- Zákon č. 586/1992 Sb., o daních z příjmů, § 4 odst. 1 písm. g) (znění platné v roce 2026 i od 1. 1. 2027)
+- Sdělení MPSV č. 171/2026 Sb. – minimální mzda pro rok 2027 (platí od 1. 1. 2027)
+- MPSV – valorizace důchodů od ledna 2027 (tisková zpráva)
+- MPSV – minimální mzda od 1. 1. 2026|E||T|Naskočilo vám penále u pojišťovny? Stačí včas požádat a výrazně ho snížíte|D|20.11.2026 06:10|P|Lidé, kteří platili zdravotní pojištění pozdě nebo vůbec, mohou pojišťovnu požádat o snížení, nebo i prominutí narostlého penále. Do 30 000 Kč o žádos...|M|PozZpr|X|Naskočilo vám penále u pojišťovny? Stačí včas požádat a výrazně ho snížíte
+Lidé, kteří platili zdravotní pojištění pozdě nebo vůbec, mohou pojišťovnu požádat o snížení, nebo i prominutí narostlého penále. Do 30 000 Kč o žádosti rozhoduje sama pojišťovna. Lhůta bývá krátká, někdy jen osm dní, připomíná VZP.
+Špatně opsaný variabilní symbol. Nebo peníze, které místo vlastní pojišťovny omylem odešly na účet jiné zdravotní pojišťovny. Kvůli takové drobnosti může narůst nečekané penále. Právě tyhle chyby ale patří k tomu, co pojišťovna při žádosti o úlevu bere v potaz. Úřední název celé věci zní „odstranění tvrdosti zákona“. Prakticky jde o prosbu, aby penále nebylo v plné výši.
+Jak se k žádosti stavět, shrnul Zdravotnický deník podle informací VZP. Hlavní věc na úvod: jde o výjimku, ne o automat. Každou žádost pojišťovna posuzuje zvlášť a výsledek není dopředu jistý.
+Co pojišťovna při rozhodování bere v úvahu
+Kromě chyb při placení pojišťovna zvažuje i to, v jaké životní situaci žadatel je. Počítá se se zdravotními, sociálními i finančními obtížemi. Může jít třeba o nemoc nebo o ztrátu práce, kvůli které peníze chvíli chyběly.
+Velkou roli hraje i to, jak člověk platil dřív. Větší šanci obvykle mají ti, kdo dlouhá léta platili řádně a pochybili jen jednou.
+Kdo o žádosti rozhodne, záleží na výši penále. Pravidla stanoví zákon o veřejném zdravotním pojištění a platí stejně pro všechny zdravotní pojišťovny. Penále do 30 000 Kč posoudí sama pojišťovna, přičemž se počítá jeho výše ke dni, kdy jí žádost dorazí. O vyšší částce rozhoduje rozhodčí orgán pojišťovny.
+Kolik času na žádost máte
+Tady se vyplatí nečekat. Lhůta se liší podle toho, jakým dokumentem pojišťovna penále vyčíslila.
+Nejméně času dává výkaz nedoplatků. Žádost je potřeba podat do osmi dnů od jeho doručení. U platebního výměru je na to 15 dní od doručení. Osm dní uteče rychle, takže den, kdy výkaz nebo výměr přišel, si raději poznamenejte.
+Volněji je to u vyúčtování. Když je penále uvedené jen v něm, zákon žádnou lhůtu nestanoví a žádost lze podat kdykoli. A kdo má nové okolnosti, které bez vlastní viny nemohl uplatnit dřív, může žádat až do tří let od chvíle, kdy platební výměr nabyl právní moci.
+💡 Zajímavost: O prominutí penále může požádat i dědic, a to bez jakéhokoli časového omezení.
+Na odpověď se pak obvykle čeká do 30 dnů od doručení žádosti. U mimořádně složitých případů se lhůta může protáhnout až na 60 dnů.
+Co do žádosti napsat
+Žádost má jasně popsat tři věci: jak dluh vznikl, jaké okolnosti k němu vedly a proč by plné penále bylo právě v tomto případě nepřiměřeně tvrdé. Jedna obecná věta „prosím o prominutí“ tohle nepopíše.
+Slova je dobré podložit papíry. K žádosti se vyplatí přiložit doklady, které popsané potíže potvrzují, například lékařské zprávy nebo potvrzení o ztrátě zaměstnání.
+Podat ji jde u VZP několika způsoby: písemně, ústně do protokolu nebo elektronicky přes datovou schránku. Než se do psaní pustíte, vyplatí se ověřit, jaké platby pojišťovna skutečně eviduje. Pojištěnci VZP si přehled svých plateb najdou v aplikaci Moje VZP.
+Co od žádosti nečekat
+Zákon to říká výslovně: na prominutí penále není právní nárok. Pojišťovna tedy prominout smí, ale nemusí. Žádost je šance, ne jistota.
+Prominout jde penále, ne samotné pojistné. Dlužné pojistné je potřeba zaplatit. Pokud do dne rozhodnutí není zaplacené všechno splatné pojistné, pojišťovna žádosti vyhovět nemůže. Stejně to platí, když byl na plátce podán insolvenční návrh nebo když vstoupil do likvidace. Kdo chce mít naději na úlevu, měl by proto nejdřív srovnat samotný dluh.
+Počítat je třeba i s tím, že rozhodnutí je konečné. Odvolat se proti němu nelze. Tím spíš se vyplatí napsat žádost poctivě a úplně hned napoprvé, s popisem situace i s doklady.
+Ověřeno z:
+- Zdravotnický deník – Nezaplatili jste včas pojištění a narůstá vám penále? (26. 10. 2026, tisková zpráva VZP)
+- Zákon č. 48/1997 Sb. o veřejném zdravotním pojištění – § 53a (znění platné k 31. 10. 2026)
+- VZP – Odstranění tvrdosti (stránka platná k 31. 10. 2026)|E||T|Nový pavilon a bezpečné zázemí pro zraněná zvířata. V Pavlově se postarají i o vlka|D|20.11.2026 06:01|P|Nový pavilon záchranné stanice na Vysočině má šestnáct voliér a samostatné místnosti pro mláďata. Podívat se do něj může každý v sobotu 21. listopadu,...|M|PozZpr|X|Nový pavilon a bezpečné zázemí pro zraněná zvířata. V Pavlově se postarají i o vlka
+Nový pavilon záchranné stanice na Vysočině má šestnáct voliér a samostatné místnosti pro mláďata. Podívat se do něj může každý v sobotu 21. listopadu, píše Havlíčkobrodský deník.
+#zvířata#záchrana#ochrana zvířat
+„Když se k nám dostane třeba sražený vlk, máme možnost ho umístit, aniž bychom se museli bát, že uteče nebo že se cokoliv stane,“ říká ředitel stanice Zbyšek Karafiát. Nový Pavilon Aleše Tomana má být podle něj „taková samostatná záchranná stanice v záchranné stanici“.
+Zachráněné zvíře v něm většinou projde celou cestou na jednom místě: vyšetření a ošetření, karanténa a podle stavu i rehabilitační voliéra. Až se zotaví, vrátí se do přírody, pokud to jde. Složitější případy, například zvířata se zlomeninami, ale nejprve zamíří na kliniku v Ledči nad Sázavou. Pro stanici je nový pavilon podle ředitele zlomový okamžik.
+Voliéra, ze které neuteče ani vlk
+Pavilon má šestnáct voliér, ta největší měří 70 metrů čtverečních. Původní voliéry z devadesátých let už dnešním bezpečnostním standardům nevyhovují. Dvě nové jsou zabezpečené i pro větší šelmy, třeba vlka nebo lišku. Ne aby tu zůstaly natrvalo, jen na dobu léčení.
+Pavilon Aleše Tomana během stavby. Foto: Stanice Pavlov
+Úlevu přinese pavilon i mláďatům. Dosud se všechna nově příchozí držela v jedné místnosti, a když se mezi nimi objeví infekce, může to být problém. V pavilonu budou mít na odchov samostatné místnosti.
+Rezerva na roky dopředu
+Stanice dřív přijímala stovky pacientů ročně. Dnes je to kolem dvou tisíc. Zvířat přibývá i proto, že lidé stanici znají a častěji se na ni obracejí. Nové zázemí jí umožní zvládnout až šest tisíc zvířat za rok.
+Tolik jich ale hned nepřijme. „Neznamená to, že od příštího roku budeme přijímat šest tisíc živočichů,“ upozorňuje ředitel. Stanice počítá s tím, že zvířat každý rok přibude zhruba o stovku nebo dvě. Nová kapacita by jí tak měla vystačit na deset až patnáct let.
+💡 Zajímavost: Pavlov je jednou z 34 stanic Národní sítě záchranných stanic, které dohromady každý rok ošetří zhruba 40 000 zvířat.
+Přes zimu patří pavilon ježkům
+Naplno má pavilon fungovat ideálně v březnu. Přes zimu v něm ale najdou místo ježci, netopýři a další zvířata. Když bude ježků v jedné místnosti víc, postará se o čerstvý vzduch větrací zařízení.
+Kdo na zahradě narazí na ježka a není si jistý jeho stavem, má podle záchranářů nejdřív zavolat do spádové stanice, ještě než ho odchytí. Samotné zvážení na kuchyňské váze o jeho stavu všechno neřekne. A mléko mu nikdy nedávejte: ježek neumí štěpit laktózu a dostal by z něj těžký průjem.
+Na Havlíčkobrodsku, Jihlavsku nebo Třebíčsku pomůže právě Pavlov na telefonu 734 309 798.
+Pomoc má smysl. Ježek západní je od října 2024 veden na mezinárodním Červeném seznamu jako téměř ohrožený druh. Na zahradě mu pomůžete, když necháte průchody mezi ploty, před sečením zkontrolujete trávu a jezírko nebo bazén opatříte šikmým výlezem.
+Pamětní deska a sobotní prohlídka
+Pavilon ponese jméno Aleše Tomana. Ten stál u zrodu stanice a patnáct let ji vedl. Stanice ho chce připomenout i pamětní deskou.
+Na sobotní otevření 21. listopadu může přijít i veřejnost. Areál bude přístupný od 12 do 15 hodin, slavnostní zahájení začne ve 13 hodin. Na programu je komentovaná prohlídka nového zázemí i doprovodné aktivity.
+Ověřeno z:
+- Havlíčkobrodský deník – Ježci, netopýři i sražený vlk. V Pavlově mají nové místo pro záchranu zvířat (5. 11. 2026)
+- Stanice Pavlov – pozvánka na otevření Pavilonu Aleše Tomana (29. 10. 2026)
+- Národní síť záchranných stanic (ČSOP) – Kuchyňská váha na ježky nestačí (2026)
+- Národní síť záchranných stanic – Stanice Pavlov, kontakty|E|

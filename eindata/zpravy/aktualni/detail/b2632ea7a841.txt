@@ -1,0 +1,17 @@
+LobbyClip
+LobbyClip vytvoří z dvou fotografií krátké AI video duo ve scéně hotelové haly, vhodné pro přátele, páry i mazlíčky.
+O nástroji
+LobbyClip je generátor krátkých AI videí, který ze dvou nahraných fotografií (zvlášť pro levého a pravého „performera“) vytvoří video duo v jedné z připravených scén – například v oranžové místnosti s visícím mikrofonem, v mramorovém lobby po setmění nebo v neonovém studiu. K dispozici je i varianta pro zvířata, jako je liška s pandou červenou nebo kočičí duo. Výsledné video lze nastavit v délce 1–15 sekund (výchozí 10 s), v poměru stran 9:16, 16:9 nebo 1:1, a stáhnout jako MP4 v rozlišení 480p nebo 720p. Cena je stanovena za jednotlivé video: 480p vyjde na 4,99 USD, 720p na 8,99 USD, bez nutnosti předplatného. Uživatelé přihlášení přes Google účet mohou jednou za život vyzkoušet bezplatně tříssekundové video v 480p, ale pouze v denním časovém okně 16:00–10:00 (pekingského času UTC+8) a dle dostupnosti služby. Nástroj je dostupný v angličtině, čínštině, španělštině, portugalštině a francouzštině, čeština v rozhraní uvedena není, API ani otevřený zdrojový kód se v podkladech neuvádí.
+Klíčové vlastnosti
+- Video ze dvou fotografií zvlášť pro levého a pravého performera
+- Sedm scén včetně variant pro zvířata
+- Délka videa nastavitelná 1–15 sekund
+- Poměr stran 9:16, 16:9 nebo 1:1
+Časté dotazy
+Co LobbyClip vlastně vytvoří?
+Z dvou nahraných fotografií vygeneruje krátké AI video duo v jedné z připravených scén, například v hotelové hale, oranžové místnosti s mikrofonem nebo v neonovém studiu – včetně variant pro zvířata.
+Kolik to stojí?
+Platí se za jednotlivé video bez předplatného: 480p vyjde na 4,99 USD a 720p na 8,99 USD, cena je stejná bez ohledu na zvolenou délku videa.
+Jak mohu začít a je něco zdarma?
+Stačí se přihlásit přes Google účet – jednou za život lze zdarma vyzkoušet tříssekundové video v 480p, ale pouze v denním okně 16:00–10:00 pekingského času a podle dostupnosti služby.
+Kategorie

@@ -1,0 +1,17 @@
+No Scrubs AI
+Nástroj promění fotku uživatele a až dvou přátel v 16sekundové AI hudební video inspirované klipem „No Scrubs“ od TLC.
+O nástroji
+No Scrubs AI je webový nástroj, který z nahrané fotografie (hlavní role uprostřed) a volitelně dalších dvou fotek přátel (po stranách) vygeneruje krátké hudební video v délce přibližně 16 sekund, ve formátu 4:3 a kvalitě 720p, včetně hudby. Prázdnou pozici po straně obsadí originální fiktivní performer. Generování vyžaduje přihlášení a potvrzení, že všechny zobrazené osoby jsou dospělé a souhlasily s použitím svých fotek; nahrané fotky se po 24 hodinách mažou, hotové video zůstává ke stažení 30 dní. Platba probíhá formou jednorázového nákupu kreditů bez předplatného: jedno video stojí 6,99 USD, balíček tří videí 19,99 USD a pěti videí 29 USD, přičemž kredity nikdy nevyprší. Pokud generování selže se známou chybou, kredit se automaticky vrátí; v nejasných případech je požadavek předán k ručnímu přezkoumání. Nástroj je nezávislým projektem bez propojení se skupinou TLC nebo držiteli práv k písni.
+Klíčové vlastnosti
+- Video z 1–3 fotek (uživatel a až dva přátelé)
+- Délka cca 16 sekund ve formátu 4:3, 720p
+- Zahrnutá hudba v klipu
+- Prázdnou pozici doplní fiktivní AI performer
+Časté dotazy
+Co přesně No Scrubs AI umí?
+Z nahrané fotky uživatele a až dvou přátel vytvoří cca 16sekundové AI hudební video inspirované klipem „No Scrubs“ od TLC, včetně hudby. Prázdnou pozici po straně obsadí fiktivní AI performer.
+Kolik stojí vytvoření videa?
+Platí se jednorázově kredity bez předplatného: jedno video 6,99 USD, balíček tří videí 19,99 USD a pěti videí 29 USD, kredity nikdy nevyprší.
+Jak začít a pro koho je nástroj určený?
+Stačí se přihlásit, nahrát vlastní fotku (volitelně i fotky přátel) a potvrdit, že všechny osoby jsou dospělé a souhlasily s použitím fotek. Nástroj je určený komukoliv, kdo chce bez editačních zkušeností vyzkoušet AI hudební video v retro stylu.
+Kategorie

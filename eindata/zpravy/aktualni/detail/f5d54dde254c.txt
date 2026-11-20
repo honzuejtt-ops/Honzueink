@@ -1,0 +1,17 @@
+AIVideoFree
+Generátor AI videí z textu nebo fotek s přístupem ke 12 video modelům (např. Seedance, Kling, Veo) bez vodoznaku.
+O nástroji
+AIVideoFree je nástroj pro tvorbu AI videí, který po registraci nabízí bezplatné kredity použitelné u všech 12 video modelů a 10 obrazových modelů, včetně Seedance, Kling a Veo. Podle poskytnutých informací se registrace neváže na zadání platební karty a výše úvodních kreditů závisí na zemi uživatele. Výsledná videa jsou generována bez vodoznaku, a to i při využití bezplatných kreditů, a kredity podle uvedených informací nikdy nevyprší. Nástroj umožňuje i komerční využití vygenerovaného obsahu v reklamách či produktech, a to jak u videí vytvořených z bezplatných, tak placených kreditů. Mezi konkrétní funkce patří oživení fotografie do pohybu, vyzkoušení nového vzhledu/outfitu na základě jedné fotky, vytvoření produktové reklamy nebo nalezení „celebrity dvojníka“. Cena generování se odvíjí od zvoleného modelu a zobrazuje se předem – například model Seedance 2.5 (videa až 30 sekund) i Kling 3.0 stojí 15 kreditů za generování. Platba probíhá nákupem kreditového balíčku, předplatné není povinné, ale je k dispozici jako volitelná možnost.
+Klíčové vlastnosti
+- Přístup ke 12 video a 10 obrazovým modelům
+- Generování videí bez vodoznaku i z free kreditů
+- Kredity nikdy nevyprší
+- Oživení fotky do pohybu nebo nového outfitu
+Časté dotazy
+Co AIVideoFree umí vytvořit?
+Generuje AI videa z textu nebo fotek pomocí 12 video modelů (např. Seedance, Kling, Veo) a 10 obrazových modelů, včetně oživení fotografie, vyzkoušení nového outfitu, produktové reklamy nebo hledání celebrity dvojníka.
+Kolik AIVideoFree stojí?
+Po registraci dostanete bezplatné kredity bez nutnosti karty, jejichž výše závisí na zemi; další kredity se dokupují v balíčcích, například generování videa v Seedance 2.5 nebo Kling 3.0 stojí 15 kreditů. Předplatné je volitelné, nikoli povinné.
+Pro koho je nástroj vhodný a jak začít?
+Hodí se pro tvůrce obsahu i firmy, které chtějí vytvářet videa pro reklamu nebo produkty bez vodoznaku a s možností komerčního využití. Stačí se zaregistrovat a získat bezplatné kredity, žádná karta se nevyžaduje.
+Kategorie

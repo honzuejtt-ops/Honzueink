@@ -1,0 +1,12 @@
+Státní IT podnik NAKIT společně s americkou společností Qualcomm otestoval technologii 5G Sidelink. Ta umožňuje přímou komunikaci mezi mobilními zařízeními (device-to-device) bez závislosti na infrastruktuře mobilní sítě.
+Qualcomm je jedním z nejvýznamnějších dodavatelů technologií a duševního vlastnictví pro mobilní komunikaci. Známý je svými čipy a procesory s chytrých telefonech nebo 5G modemy, ale jeho portfolio je mnohem širší a pokrývá i sítě.
+5G Sidelink je zatím ve fázi prototypů a testů. První komerčně dostupná zařízení se mají objevit koncem příštího roku.
+NAKIT se o technologii zajímá, protože je IT dodavatelem ministerstva vnitra, pod něhož spadají i policie, hasiči nebo záchranáři. Komunikace zařízení bez závislosti na síti patří mezi požadavky těchto složek (PPDR) při přechodu ze stávajících úzkopásmových systémů TETRA/TETRAPOL na moderní širokopásmové systémy kritické komunikace postavené na LTE a 5G.
+Testování v areálu Centra sportu ministerstva vnitra (OLYMP) zahrnovalo následující:
+- Prototypové řešení využívající externí testovací modul připojený k běžnému chytrému telefonu LTE/5G prostřednictvím USB-C.
+- Provoz v kmitočtovém rozsahu 2 300 až 2 310 MHz (n40/TDD) s šířkou kanálu 10 MHz a standardním vysílacím výkonem 200 mW.
+- Spolehlivou a srozumitelnou hlasovou komunikaci Push-to-Talk (PTT) na vzdálenost několika stovek metrů při přímé viditelnosti, a to jak v režimu přímé komunikace, tak v režimu retranslace (relay).
+Qualcomm poskytl přístroj Qualcomm Snapdragon SDX75 Evaluation Kit, který obsahuje čip Snapdragon X75 s podporou 3GPP Release 17 v pásmech Sub-6 GHz a mmWave.
+“Do plnohodnotného provozního nasazení zbývá ještě řada kroků, ale po letech čekání se tato dlouho očekávaná schopnost konečně dostává do fáze praktického ověřování v terénu,” shrnul NAKIT.
+“Pro budoucí provozní nasazení bude důležitá také evropská harmonizace vhodného rádiového spektra. Dostupnost kmitočtů pod jeden GHz, možnost využití vyšších vysílacích výkonů (HPUE), optimalizovaných anténních systémů a vhodně navržených scénářů použití by mohly významně zlepšit dosah a spolehlivost komunikace v náročných provozních podmínkách,” doplnil státní podnik.
+Zajímavou novinku pro bezpečnostní a další složky nyní nabízí také O2, které umí složit 5G vysílač včetně samostatného jádra do dvou kufrů:

@@ -1,0 +1,17 @@
+Hostly
+AI recepční v chatu na vašem webu, která odpovídá návštěvníkům schválenými informacemi o cenách, hodinách a službách.
+O nástroji
+Hostly je chatovací asistent umístěný přímo na webu podniku, který odpovídá návštěvníkům na otázky týkající se hodin, cen nebo služeb, a to výhradně na základě informací, které podnik předem napsal a schválil. Pokud odpověď neznáte z poskytnutých podkladů, nástroj si ji nevymýšlí, ale nabídne kontakt na člověka nebo telefon. Odpovídá v jazyce, ve kterém návštěvník píše, okno chatu podporuje 27 jazyků včetně češtiny. Tým má přístup k panelu, kde vidí každou konverzaci a může kdykoliv převzít vlákno a psát místo AI. Po zapnutí rezervací chat nabízí pouze volné termíny z připojeného kalendáře (Hostly nebo Beauty Calendar), platby lze volitelně zpracovat přes Stripe se zálohou od 1 % do 100 %. Instalace vyžaduje vložení jednoho skriptového tagu do webu, funguje na platformách jako WordPress, Shopify nebo Wix. Cena začíná od 29,90 € měsíčně včetně DPH v tarifu Pult, k dispozici je 7denní zkušební doba vyžadující kartu, během níž se nic nestrhává.
+Klíčové vlastnosti
+- Odpovídá jen schválenými informacemi o cenách a hodinách
+- Pokud odpověď nezná, nabídne kontakt na člověka
+- Podpora chatu ve 27 jazycích včetně češtiny
+- Panel pro tým s přehledem všech konverzací a možností převzít vlákno
+Časté dotazy
+Co přesně Hostly umí?
+Je to chatovací recepční přímo na webu, která odpovídá návštěvníkům na dotazy o hodinách, cenách a službách pomocí informací, jež podnik předem napsal a schválil. Telefon nezvedá, odpovídá pouze písemně v chatu.
+Kolik Hostly stojí?
+Cena začíná od 29,90 € měsíčně včetně DPH v tarifu Pult, další tarify (Recepce, Sál, Sídlo) a platba podle spotřeby jsou uvedené na stránce s cenami.
+Jak začít a pro koho je to vhodné?
+Stačí založit účet, napsat schválené informace a vložit jeden skriptový tag do webu (funguje na WordPressu, Shopify i Wixu). K dispozici je 7denní zkouška s kartou, během které se nic nestrhává.
+Kategorie

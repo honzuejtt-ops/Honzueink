@@ -1,0 +1,17 @@
+Saypix
+AI editor fotek, kde stačí slovně popsat požadovanou změnu a nástroj ji během pár sekund provede přímo v prohlížeči.
+O nástroji
+Saypix je online AI editor obrázků, který funguje na principu jednoduchého textového zadání: nahrajete fotku (podporuje JPG, PNG, HEIC, WEBP, RAW a další formáty) a napíšete, co se má na snímku změnit – není potřeba pracovat s maskami ani vrstvami. Nástroj umí měnit pozadí, odstraňovat lidi či objekty z fotky, opravovat staré a poškrábané fotografie, upravovat produktové snímky na čistém pozadí, měnit umělecký styl obrázku nebo roční období a světlo na scéně. Každá úprava se ukládá jako samostatný krok s vlastním odkazem, takže je možné se kdykoliv vrátit k libovolnému kroku nebo k původní fotce a pokračovat dál – funguje tedy i tlačítko zpět a sdílení odkazů. Výsledný obrázek lze stáhnout bez vodoznaku a neúspěšné úpravy jsou vráceny formou kreditu zpět. Saypix nabízí na výběr ze dvou AI modelů: výchozí Nano Banana 2.1 od Googlu (1 kredit za úpravu, lepší zachování obličejů a detailů) a GPT Image 2.6 od OpenAI (2 kredity za úpravu, volnější přepracování, ale pomalejší a může měnit obličeje). První úprava je dostupná bez založení účtu, cena začíná na 4,99 $, podle dostupných informací nejde o zcela bezplatný nástroj. Nástroj je dostupný pouze v angličtině a nabízí API.
+Klíčové vlastnosti
+- Úpravy fotek textovým popisem bez masek a vrstev
+- Odstranění lidí nebo objektů s přirozeným doplněním pozadí
+- Oprava a kolorování starých poškrábaných fotografií
+- Krokové úpravy s možností vrátit se k libovolné verzi
+Časté dotazy
+Co přesně Saypix umí s fotkou?
+Stačí slovně popsat požadovanou změnu a nástroj během pár sekund upraví pozadí, odstraní lidi či objekty, opraví staré fotky, změní styl, roční období nebo upraví produktové snímky na čistém pozadí.
+Kolik Saypix stojí?
+Cena začíná na 4,99 $, přičemž úprava modelem Nano Banana 2.1 stojí 1 kredit a náročnější GPT Image 2.6 stojí 2 kredity za úpravu.
+Jak začít a je potřeba se registrovat?
+První úprava je dostupná bez založení účtu, stačí nahrát fotku a napsat požadovanou změnu; po registraci nástroj obvykle přidá další kredity zdarma.
+Kategorie

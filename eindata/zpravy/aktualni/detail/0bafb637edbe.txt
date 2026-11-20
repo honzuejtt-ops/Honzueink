@@ -1,0 +1,17 @@
+CADCraft
+CADCraft je bezplatný open-source 2D CAD editor psaný v Rustu, určený pro architekty, inženýry i AI agenty ovládající kreslení přes MCP a JSON.
+O nástroji
+CADCraft je open-source aplikace pro počítačem podporované kreslení (CAD), která znovu vytváří AutoCAD-styl práce – příkazovou řádku s příkazy jako LINE, CIRCLE, OFFSET nebo TRIM, object snapy, polární sledování a opakování posledního příkazu. Projekt vznikl jako clean-room implementace v Rustu pod týmem ArtCraft a je dostupný pod licencí MIT nebo Apache-2.0, zdrojový kód je veřejný na GitHubu. Aktuální verze je v0.18.0 a nástroj je v aktivním vývoji. Samotný editor je zdarma a bez nutnosti registrace, k dispozici je pro Windows, macOS, Linux, FreeBSD i jako webová (WebAssembly) verze. Podporuje práci se soubory DWG, DXF, PDF, SVG a PNG, vrstvy, asociativní kóty, multileadery, tabulky, šrafování a layouty pro tisk v měřítku. Volitelně je nabízen placený plán CADCraft Online Pro s cloudovým ukládáním výkresů, historií verzí a sdílenými odkazy za 4,9 USD měsíčně nebo 29 USD ročně. Zvláštností CADCraftu je zaměření na automatizaci a AI agenty – každý příkaz a nástroj v menu lze ovládat i programově. Agent může psát do příkazové řádky jako člověk, posílat strukturovaný JSON, kontrolovat kresbu pomocí dotazů na entity a vykreslovat náhledy výsledku. K dispozici je MCP server, JSON řídicí kanál a bezhlavé CLI pro dávkové zpracování a konverzi souborů DWG/DXF do SVG nebo PNG, například v CI pipeline.
+Klíčové vlastnosti
+- Příkazová řádka s klasickými příkazy LINE, CIRCLE, OFFSET, TRIM
+- Object snapy, polární sledování a opakování posledního příkazu
+- Podpora DWG, DXF, PDF, SVG a PNG souborů
+- Vrstvy, asociativní kóty, multileadery, tabulky a šrafování
+Časté dotazy
+Co CADCraft umí a pro koho je určený?
+Je to 2D CAD editor ve stylu AutoCADu s příkazovou řádkou, object snapy a vrstvami, určený architektům, inženýrům, studentům i AI agentům, kteří kreslení ovládají přes MCP nebo JSON.
+Kolik CADCraft stojí?
+Samotný editor je zdarma a open-source bez nutnosti registrace. Volitelně lze doplatit za CADCraft Online Pro s cloudovým úložištěm, historií verzí a sdílenými odkazy za 4,9 USD měsíčně nebo 29 USD ročně.
+Jak s CADCraftem začít?
+Stačí nástroj zdarma stáhnout pro Windows, macOS, Linux nebo FreeBSD, případně použít webovou verzi přes WebAssembly přímo v prohlížeči bez instalace.
+Kategorie

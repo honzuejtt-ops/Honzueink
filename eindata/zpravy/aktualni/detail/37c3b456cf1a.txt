@@ -1,0 +1,17 @@
+South Park Character Maker
+Webový editor avatarů ve stylu South Park – upravte vlasy, oblečení, výraz a pozadí a stáhněte jako PNG nebo SVG.
+O nástroji
+South Park Character Maker je nástroj pro tvorbu karikaturních avatarů v papírovém stylu inspirovaném seriálem South Park. V browserovém editoru lze vybrat výchozí postavu (например horský, skateboardový nebo cestovatelský typ) a následně upravovat vlasy, odstín pleti, oblečení, výraz obličeje i pozadí v živém náhledu. Hotový výsledek je možné stáhnout jako PNG v rozlišení 1024 px nebo jako editovatelné SVG, a to bez nutnosti registrace. Kromě ručního editoru nabízí stránka i AI studio, kde lze z textového popisu nebo nahrané fotografie vygenerovat originální postavu ve stejném stylu – tato funkce však vyžaduje vytvoření účtu a kredity, jejichž cena je zobrazena před každým generováním. Samotný builder pro ruční úpravu postav je dostupný zdarma bez účtu, zatímco AI generování je zpoplatněno formou kreditů.
+Klíčové vlastnosti
+- Výběr výchozí postavy (horský, skateboardový, cestovatelský typ)
+- Úprava vlasů, odstínu pleti, oblečení, výrazu a pozadí
+- Živý náhled změn v browserovém editoru
+- Export do PNG 1024 px nebo editovatelného SVG
+Časté dotazy
+Co nástroj umí?
+Umožňuje v browserovém editoru upravit vlasy, pleť, oblečení, výraz i pozadí karikaturní postavy ve stylu South Park a stáhnout ji jako PNG nebo SVG. Navíc nabízí AI studio pro generování originální postavy z textového popisu nebo nahrané fotografie.
+Kolik to stojí?
+Ruční editor postav je zdarma bez nutnosti registrace. AI generování z textu nebo fotky vyžaduje účet a kredity, jejichž cena se zobrazí před každým generováním.
+Jak začít a pro koho je nástroj určený?
+Stačí otevřít stránku, vybrat výchozí postavu (horskou, skateboardovou nebo cestovatelskou) a upravovat detaily v živém náhledu bez registrace. Pro AI generování z fotky či popisu je potřeba si založit účet.
+Kategorie

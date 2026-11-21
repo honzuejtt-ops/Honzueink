@@ -1,0 +1,17 @@
+Concrete Calculator
+Bezplatná kalkulačka betonu pro výpočet kubatury, počtu pytlů a ceny materiálu pro šest typů tvarů bez nutnosti registrace.
+O nástroji
+Concrete Calculator je online nástroj pro odhad množství betonu potřebného na konkrétní stavební projekt. Uživatel zvolí jeden ze šesti tvarů – deska, zeď, sloup, trubka, schody nebo rampa – zadá rozměry v imperiálních nebo metrických jednotkách a nástroj průběžně přepočítává objem v kubických yardech, krychlových stopách i metrech krychlových. K dispozici je interaktivní 3D náhled, který se podle zadaných rozměrů mění v reálném čase. Nástroj dále přepočítává potřebný objem na celé pytle betonové směsi (např. QUIKRETE) podle zvolené hmotnosti pytle nebo vlastního výtěžku, případně na objednávku připraveného betonu (ready-mix) včetně zaokrouhlení na dodavatelské přírůstky. Volitelně lze zadat cenu za pytel nebo za kubický metr/yard a získat tak odhad nákladů na materiál – bez dopravy, čerpání, práce či daně. Výsledky lze sdílet odkazem, vytisknout, zkopírovat nebo stáhnout jako textový soubor. Podle webu je kalkulačka zdarma a nevyžaduje založení účtu. Stránka je v angličtině a obsahuje i podrobný rozpad výpočtu krok za krokem, včetně použitých vzorců a převodních koeficientů, takže uživatel může zkontrolovat, jak nástroj k výslednému číslu dospěl.
+Klíčové vlastnosti
+- Výpočet pro šest tvarů – deska, zeď, sloup, trubka, schody, rampa
+- Interaktivní 3D náhled měnící se podle zadaných rozměrů
+- Přepočet na celé pytle betonu podle hmotnosti nebo vlastního výtěžku
+- Odhad objednávky ready-mix betonu se zaokrouhlením na dodavatelské přírůstky
+Časté dotazy
+Co přesně Concrete Calculator umí spočítat?
+Podle zvoleného tvaru (deska, zeď, sloup, trubka, schody, rampa) a zadaných rozměrů spočítá potřebný objem betonu v kubických yardech, stopách i metrech, přepočítá ho na celé pytle směsi nebo na objednávku ready-mix betonu a volitelně odhadne cenu materiálu.
+Kolik stojí používání kalkulačky?
+Nástroj je zcela zdarma a nevyžaduje založení účtu ani přihlášení.
+Pro koho je nástroj určen a jak se začíná?
+Hodí se pro kutily i profesionály plánující betonáž – stačí vybrat tvar, zadat rozměry v imperiálních nebo metrických jednotkách a výsledek se počítá průběžně, bez registrace.
+Kategorie

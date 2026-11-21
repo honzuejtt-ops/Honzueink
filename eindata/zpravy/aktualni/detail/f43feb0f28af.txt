@@ -1,0 +1,17 @@
+RapVideo
+RapVideo vytváří krátká AI rapová videa z fotografií postav – stačí jedna nebo dvě fotky a popis scény.
+O nástroji
+RapVideo mění fotografie postav na krátkou rapovou videoperformance. Stačí nahrát jednu fotku pro sólo nebo dvě pro duo, popsat scénu a téma v promptu – AI pak vygeneruje rapové vokály i beat. Alternativně lze nahrát vlastní nahrávku verše či hooku (doporučená délka 5–15 sekund), kterou nástroj použije jako podklad pro slova a rytmus, zatímco prompt popisuje scénu, gesta a kameru. Výstupem je video ve formátu 9:16 vhodné pro sdílení na sociálních sítích. Nástroj nabízí ukázkové prompty (např. duo ve studiu, sólo na střeše za soumraku, nebo postava v tradičním oděvu rapující v moderním studiu) a FAQ sekci s radami pro zlepšení lip-sync, výběr fotografie i přípravu zvuku. Platba probíhá na principu kreditů bez předplatného – jednorázový nákup balíčku (např. Starter za 9,90 USD za 150 kreditů), přičemž cena za generování se zobrazuje před odesláním podle zvoleného modelu, délky a nastavení. Bezplatná varianta není v důkazu uvedena.
+Klíčové vlastnosti
+- Generování z 1 fotky (sólo) nebo 2 fotek (duo)
+- AI vytvoří rapové vokály i beat z promptu
+- Možnost nahrát vlastní verš či hook (5–15 s)
+- Výstup ve formátu 9:16 pro sociální sítě
+Časté dotazy
+Co RapVideo vlastně umí?
+Z jedné nebo dvou fotografií postav vytvoří krátké rapové video – buď AI vygeneruje vokály a beat podle vašeho popisu, nebo použije vámi nahranou nahrávku verše jako podklad pro slova a rytmus.
+Kolik RapVideo stojí?
+Platí se jednorázovým nákupem kreditů bez předplatného, například balíček Starter za 9,90 USD za 150 kreditů; přesná cena generování se zobrazí před odesláním podle zvoleného modelu a délky.
+Jak začít s tvorbou prvního videa?
+Nahrajte jednu fotku pro sólo nebo dvě pro duo, do promptu popište scénu a téma (nebo nahrajte vlastní rapovou nahrávku), zkontrolujte cenu v kreditech a klikněte na Generate.
+Kategorie

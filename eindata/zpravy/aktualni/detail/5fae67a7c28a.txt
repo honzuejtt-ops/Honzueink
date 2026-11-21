@@ -1,0 +1,17 @@
+DuoPlus
+Cloudová platforma reálných Android telefonů pro hromadnou správu účtů na sociálních sítích a TikToku, ovladatelná přes prohlížeč i klienta.
+O nástroji
+DuoPlus je placená cloudová služba nabízející virtuální Android zařízení na reálných ARM čipech (podpora Android 10, 11, 12 a 15) pro hromadnou správu účtů na sociálních sítích, TikToku a dalších platformách. Nástroj umožňuje jednomu uživateli ovládat desítky cloudových telefonů z jednoho počítače – bez nutnosti kupovat fyzické mobily, bez omezení počtu zařízení a bez nutnosti stahovat klienta (funguje přes PC i mobilní prohlížeč). Mezi klíčové funkce patří simulace GPS polohy a SIM karet pro více než 150 zemí, hromadná instalace a spouštění aplikací, přepínání prostředí jedním kliknutím („reskin“) pro oddělení zařízení od sebe a sdílení cloudových zařízení mezi více uživateli v týmu. K dispozici je také AI Agent ovládající aplikace v cloud telefonech (klepání, vkládání textu, swipe) a integrace přes oficiální API a ADB příkazy. Cílem je snížit riziko propojení a zablokování účtů při správě více profilů z jednoho místa, například pro živé prodeje, reklamu nebo krátká videa. Jde o placenou službu s modelem kombinujícím poplatky za zařízení a za dobu běhu, k dispozici je bezplatná konzultace, nikoli však trvalý bezplatný tarif produktu. Nástroj není open source, nabízí ale REST API, ADB přístup a správu proxy.
+Klíčové vlastnosti
+- Reálná ARM Android zařízení (Android 10/11/12/15)
+- Simulace GPS a SIM karet pro 150+ zemí
+- Hromadná instalace, odinstalace a spouštění aplikací
+- Přepnutí prostředí jedním kliknutím (reskin)
+Časté dotazy
+Co DuoPlus přesně umí?
+Nabízí cloudová Android zařízení na reálných ARM čipech, díky kterým lze z jednoho počítače ovládat desítky účtů na sociálních sítích a TikToku, simulovat GPS a SIM karty ve 150+ zemích a hromadně spravovat aplikace.
+Kolik DuoPlus stojí?
+Jde o placenou službu s cenou kombinující poplatek za zařízení a dobu běhu; trvalý bezplatný tarif neexistuje, ale je k dispozici bezplatná konzultace.
+Pro koho je DuoPlus určen a jak začít?
+Je určen pro provozovatele živých prodejů, reklamy a krátkých videí spravující více účtů najednou – stačí navštívit web a domluvit si bezplatnou konzultaci nebo kontaktovat tým přes Telegram.
+Kategorie

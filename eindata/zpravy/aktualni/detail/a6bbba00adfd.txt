@@ -1,0 +1,17 @@
+Dividend Calculator
+Kalkulačka pro odhad dividendového příjmu, která porovnává reinvestici (DRIP) a výplatu hotovosti bez nutnosti účtu.
+O nástroji
+Dividend Calculator je webový nástroj pro odhad dividendového příjmu a růstu investice. Umožňuje zadat počáteční investici, pravidelné měsíční příspěvky, dividendový výnos a dobu růstu (1–50 let), přičemž dividendy lze vyplácet měsíčně, čtvrtletně, pololetně nebo ročně. Lze volit mezi zadáním částky nebo počtu vlastněných akcií, ceny akcie a dividendy na akcii. Nástroj porovnává scénář reinvestování dividend (DRIP) s variantou výběru dividend jako hotovosti, zobrazuje roční rozpis v tabulce i grafu a umožňuje uložit a porovnat až tři plány přímo v prohlížeči – data se podle popisu neodesílají na server. K dispozici jsou i doplňující nastavení jako růst ceny akcie, růst dividendy, daň z dividend a inflace, která jsou standardně nastavena na nulu. Výsledky lze exportovat jako CSV nebo sdílet odkazem na scénář. Podle zdroje jde o bezplatnou kalkulačku, která nevyžaduje účet ani propojení s brokerem a pracuje s ručně zadanými předpoklady, nikoli s živými tržními daty.
+Klíčové vlastnosti
+- Porovnání reinvestice dividend (DRIP) a výplaty hotovosti
+- Volba zadání částkou nebo počtem akcií a cenou
+- Roční rozpis v tabulce i grafu
+- Uložení a porovnání až 3 plánů v prohlížeči
+Časté dotazy
+Co kalkulačka přesně počítá?
+Odhaduje vývoj dividendového příjmu a hodnoty investice na základě zadaných předpokladů – počáteční investice, měsíčních příspěvků, dividendového výnosu a doby růstu 1–50 let. Porovnává scénář reinvestování dividend (DRIP) s variantou výplaty dividend jako hotovosti.
+Kolik stojí používání nástroje?
+Nástroj je zdarma, nevyžaduje účet, propojení s brokerem ani placené předplatné.
+Pro koho je kalkulačka vhodná a jak začít?
+Je určena začátečníkům v dividendovém investování i zkušenějším investorům plánujícím budoucí příjem. Stačí zadat vlastní čísla do výchozích ukázkových hodnot v režimu „By amount“ nebo přepnout na zadání podle počtu akcií.
+Kategorie

@@ -1,0 +1,17 @@
+Atli
+Atli je MCP konektor pro Claude, ChatGPT, Gemini i Muse, který v chatu najde, koupí a pomůže nainstalovat cestovní eSIM pro přes 200 zemí.
+O nástroji
+Atli funguje jako konektor (MCP server na adrese https://mcp.heyatli.com), který po přidání do AI asistenta umožní vyřešit mobilní data na cesty přímo v chatu – stačí napsat destinaci a délku pobytu, například pro 10denní pobyt v Japonsku asistent nabídne plán s neomezenými daty nebo standardní variantu, u obou v místní měně. Asistent dále poradí, zda konkrétní telefon (např. iPhone 15 Pro) eSIM podporuje, po výběru plánu pošle bezpečný platební odkaz (platbu kartou zpracovává Stripe, číslo karty se k asistentovi ani k Atli nedostane) a následně v chatu poskytne instalační návod s QR kódem i kódem pro ruční zadání. Konektor funguje v Claude, ChatGPT, Gemini, Muse a dalších nástrojích podporujících vzdálené MCP servery, včetně Claude Code, Cursor a VS Code. Přidání konektoru má ale u některých asistentů podmínky: ChatGPT vyžaduje zapnutý vývojářský režim, který je dostupný jen s placeným plánem, Gemini pak vyžaduje osobní účet Google s předplatným Google AI Pro nebo Ultra. Samotné přidání Atli je zdarma, platí se pouze za zvolený eSIM plán; nakupovat lze i jako host bez založení účtu, přihlášení ale umožní mít koupené eSIM dostupné napříč různými chaty a sledovat zbývající data nebo dokoupit objem.
+Klíčové vlastnosti
+- Vyhledání eSIM plánů pro přes 200 zemí v chatu
+- Kontrola kompatibility konkrétního telefonu s eSIM
+- Platba přes zabezpečený odkaz zpracovaný Stripe
+- Instalační návod s QR kódem i kódem pro ruční zadání
+Časté dotazy
+Co Atli konkrétně umí?
+Atli je MCP konektor, který v chatu najde eSIM plány pro danou destinaci a délku pobytu, poradí s kompatibilitou telefonu, pošle platební odkaz a následně poskytne návod na instalaci s QR kódem.
+Kolik Atli stojí?
+Přidání konektoru do AI asistenta je zdarma, platí se pouze za vybraný eSIM plán v místní měně podle destinace a délky pobytu.
+Jak s Atli začít?
+Stačí zkopírovat adresu https://mcp.heyatli.com a přidat ji jako konektor do Claude, ChatGPT, Gemini, Muse nebo jiného nástroje podporujícího vzdálené MCP servery, poté lze nakupovat i bez účtu jako host.
+Kategorie

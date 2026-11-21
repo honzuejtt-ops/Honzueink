@@ -1,0 +1,3 @@
+„Domnívám se, že jsem ve spolupráci s Claudem objevil důkaz Riemannovy hypotézy,“ napsal Alpöge. Na svém webu přitom zveřejnil čtyřstránkovou poznámku a 14 archivů zdrojového kódu v jazyce Lean 4 (239 MB, 175 187 souborů — v čitelné podobě přes čtvrt milionu stran).
+„Žádný text důkazu v podobě odborného článku srozumitelného lidským čtenářům však zatím nebyl zveřejněn,“ upozornil web AIWeekly s tím, že například uznávaný matematik Andrew Granville označil Alpögeho čtyřstránkový nástin důkazu za „zmatečný“.
+Riemannovu hypotézu poprvé formuloval v roce 1859 matematik Bernhard Riemann. Tvrdí, že rozmístění prvočísel na číselné ose, které se na první pohled jeví jako náhodné, se ve skutečnosti řídí složitým a smysluplným řádem, podotkl k tomu web Scientific American.

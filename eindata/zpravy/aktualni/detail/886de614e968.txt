@@ -1,0 +1,17 @@
+Tancky AI
+Tancky AI upravuje fotografie podle textového zadání – mění styl, pozadí nebo oblečení a přitom zachovává podobu osoby či produktu.
+O nástroji
+Tancky AI je online nástroj pro úpravu obrázků pomocí textových příkazů (image to image AI). Uživatel nahraje fotografii, skicu nebo produktový snímek (JPG, PNG či WebP do 16 MB, až 6 obrázků najednou) a popíše požadovanou změnu – například jinou kulisu, styl, oblečení nebo barvu vlasů. Nástroj zachovává klíčové prvky, jako jsou rysy obličeje, tvar produktu nebo kompozice místnosti, zatímco přepracovává zbytek podle zadání. K dispozici jsou modely GPT Image 2.5/2.6 a Nano Banana v několika verzích. Součástí je i vestavěný editor umožňující zvětšení rozlišení, odstranění nebo výměnu pozadí, rozšíření záběru a mazání objektů přímo na výsledném obrázku bez nutnosti nového nahrávání. Nové účty získávají úvodní kredity zdarma, neúspěšné generování je automaticky vráceno a obrázky vytvořené v rámci předplatného nebo placených kreditů jsou bez vodoznaku. Rozhraní je v angličtině.
+Klíčové vlastnosti
+- Úprava fotek podle textového popisu změny
+- Modely GPT Image 2.5/2.6 a Nano Banana v několika verzích
+- Zachování obličeje, produktu i kompozice scény
+- Vestavěný editor: zvětšení rozlišení, výměna pozadí, mazání objektů
+Časté dotazy
+Co přesně Tancky AI umí?
+Upraví nahranou fotografii, skicu nebo produktový snímek podle textového zadání – změní styl, pozadí, oblečení nebo barvu vlasů, přitom zachová obličej, tvar produktu nebo kompozici místnosti. Výsledek lze dál upravit vestavěným editorem (zvětšení rozlišení, výměna pozadí, mazání objektů).
+Kolik Tancky AI stojí?
+Nástroj funguje na principu kreditů s freemium modelem – nové účty získají úvodní kredity zdarma, obrázky bez vodoznaku jsou k dispozici v rámci předplatného nebo placených kreditů.
+Jak začít a pro koho je nástroj určený?
+Stačí nahrát fotografii ve formátu JPG, PNG nebo WebP a slovy popsat požadovanou změnu, nic se neinstaluje. Hodí se pro úpravu portrétů, produktových fotek i interiérů – od proměny skic po vylepšení fotek z mobilu.
+Kategorie

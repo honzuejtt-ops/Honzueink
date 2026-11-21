@@ -1,0 +1,33 @@
+Jaké bylo počasí v den vašeho narození? Teplotu i srážky zjistíte zdarma a hned
+Kdo se narodil mezi lety 1784 a 2025, si může zdarma dohledat, jaká teplota byla ten den v Praze. Stačí stáhnout tabulku s měřeními z pražského Klementina a v ní najít správné datum.
+#Praha#rodina#zajímavost#senioři
+Na Štědrý den 1975 byla v pražském Klementinu průměrná teplota 3,0 °C. Stejný údaj si můžete najít pro den svého narození, ale také pro narozeniny babičky, dědy, dětí nebo vnoučat. Denní teploty z této stanice dává státní Český hydrometeorologický ústav (ČHMÚ) volně ke stažení.
+Co se o svém dni dozvíte
+Pro každý den najdete tři hlavní údaje. Průměrná teplota dne má v datech zkratku T. Nejvyšší teplota dne je TMA, nejnižší TMI. Všechno je ve stupních Celsia.
+V souboru s průměrem jsou navíc teploty ze tří časů dne, označené 06:00, 13:00 a 20:00. Uvidíte tak, jak se ten den měnila teplota.
+Návod krok za krokem
+Nejde o aplikaci, kam zadáte datum a hned vyskočí výsledek. Data jsou uložená jako tabulka v obyčejném textovém souboru, kde jsou jednotlivé údaje oddělené čárkami. Najít v nich svůj den ale zvládne každý, kdo umí v počítači otevřít soubor.
+- Otevřete adresář otevřených dat ČHMÚ s denními teplotami.
+- V adresáři je mnoho souborů, na stránce proto hledejte označení 11514. Klikněte na soubor dly-0-203-0-11514-T.csv, který obsahuje teploty. Uloží se do počítače a má asi 18 MB.
+- Otevřete ho nejlépe v obyčejném textovém editoru. Ten soubor jen zobrazí a nic v něm nepřepíše.
+- Spusťte hledání (klávesy Ctrl+F, na počítačích Apple Cmd+F) a napište datum ve tvaru rok-měsíc-den, třeba 1960-06-15. Najde se několik řádků, denní průměr je na řádku se zkratkou AVG.
+- Nejvyšší a nejnižší teplotu dne najdete stejným postupem v souborech, které končí -TMA.csv a -TMI.csv. I tam je teplota číslo hned za datem.
+Nalezený řádek vypadá takto: 0-203-0-11514,T,AVG,1960-06-15T00:00Z,15.7,,0.0,. Teplota je číslo hned za datem, zbytek řádku jsou technické údaje. Desetinná místa odděluje tečka, takže 15.7 znamená 15,7 °C.
+Tři ukázkové dny
+Když si údaje ze všech tří souborů přepíšete na papír, mohou vypadat třeba takhle:
+💡 Zajímavost: V datech do konce roku 2025 je nejvyšší naměřená teplota 37,8 °C z 27. července 1983. Nejnižší je −27,6 °C z 1. března 1785.
+- 15. června 1960: průměr 15,7 °C, nejvýš 20,4 °C, nejníž 13,1 °C
+- 24. prosince 1975: průměr 3,0 °C, nejvýš 6,0 °C, nejníž 1,5 °C
+- 1. ledna 2000: průměr 2,0 °C, nejvýš 3,1 °C, nejníž 0,9 °C
+Stejně si můžete sepsat data narození celé rodiny a ke každému dopsat tři teploty. Pokud chcete vědět i to, co se ten den psalo v novinách, podívejte se na článek Co psaly noviny v den narození.
+Měření, které běží přes 250 let
+Na hvězdárně v Klementinu začali pravidelně měřit počasí už v roce 1752. Za začátek teplotní řady se ale považuje až rok 1775. Podle odborného textu v časopisu Živa se tu teplota a tlak vzduchu měří každý den, a to několikrát. Měří se dodnes, už přes 250 let.
+Řada tak dál roste o nové dny. Říjen 2026 se mezi všemi říjny od začátku měření zařadil na 31. až 33. nejteplejší místo.
+Na co myslet u starých záznamů
+Údaje z Klementina ovlivňuje mimo jiné poloha stanice v samém středu města. Úplně bez mezer je řada až od 1. ledna 1784. Původní starší záznamy mají podle ČHMÚ mezery. Klementinská řada také není nejstarší v Evropě.
+Poslední den v souboru je 31. prosinec 2025. Dny z roku 2026 v něm nejsou, takže letos narozená vnoučata tam nenajdete.
+Ověřeno z:
+- Český hydrometeorologický ústav – Historická stanice Klementinum (stránka ČHMÚ)
+- Český hydrometeorologický ústav – otevřená data, denní teploty stanice Praha-Klementinum (data do 31. 12. 2025)
+- Český hydrometeorologický ústav – Umístění října 2026 v 252leté klementinské teplotní řadě
+- Akademie věd ČR, časopis Živa – Kdy začala meteorologická měření v Klementinu (2025)

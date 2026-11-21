@@ -1,0 +1,17 @@
+BrandPatrol
+BrandPatrol sleduje placené vyhledávání a odhaluje affiliate partnery i hijackery, kteří licitují na vaše brandové klíčová slova.
+O nástroji
+BrandPatrol skenuje veřejné výsledky placeného vyhledávání na brandová klíčová slova a jejich varianty napříč zvolenými regiony a zařízeními. U každé nalezené reklamy sleduje celý přesměrovací řetězec zpět k affiliate ID – pokud ID najde, jde o bidding v rámci vlastního partnerského programu, pokud ne, identita inzerenta se dohledá z veřejného registru transparentnosti reklam a případ je veden jako hijacker. Nástroj nepožaduje přístup k reklamním účtům, affiliate platformě ani CRM a nesbírá žádná zákaznická data – pracuje výhradně s veřejně dostupnými daty. Každý případ před odesláním kontroluje člověk, výsledkem je evidence-grade report s časovým razítkem, který putuje do vašeho týmu k dalšímu řešení (BrandPatrol sám nepodává stížnosti ani nekontaktuje třetí strany). Příklad z praxe uvádí 200 vyhledávacích sweepů, 734 zaznamenaných reklam a 40 vyfiltrovaných případů (9 hijackerů, 31 brand bidderů) sledovaných ve třech zemích. Ceník není na webu uveden, funguje na bázi poptávkové nabídky („Get a quote“) a je možné kdykoliv zrušit nebo pozastavit bez vázanosti. Zmiňuje se API.
+Klíčové vlastnosti
+- Sleduje placené vyhledávání na brandová klíčová slova
+- Dohledá affiliate ID v přesměrovacím řetězci
+- Identifikuje hijackery z registru transparentnosti reklam
+- Nepotřebuje přístup k ad účtům ani CRM
+Časté dotazy
+Co přesně BrandPatrol dělá?
+Skenuje veřejné výsledky placeného vyhledávání na vaše brandové klíčové slovo a jeho varianty, sleduje přesměrovací řetězec každé reklamy a rozlišuje, zda jde o affiliate partnera z vašeho programu (má affiliate ID), nebo o neznámého hijackera (dohledaného z veřejného registru transparentnosti reklam). Výsledkem je evidence-grade report s časovým razítkem pro váš tým.
+Kolik BrandPatrol stojí?
+Ceník není veřejně zveřejněn, cena se řeší individuální poptávkou přes formulář „Get a quote“. Službu lze kdykoliv zrušit nebo pozastavit bez vázanosti.
+Pro koho je nástroj a jak se začíná?
+Je určen firmám a agenturám, které chtějí ochránit svůj affiliate program a brandové kampaně před bidováním na vlastní jméno. Začíná se vyžádáním cenové nabídky, nástroj nevyžaduje přístup k reklamním účtům, affiliate platformě ani CRM.
+Kategorie

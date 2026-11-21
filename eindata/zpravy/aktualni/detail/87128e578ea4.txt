@@ -1,0 +1,17 @@
+AI Pet Meme
+Generátor vytvoří z jedné fotky kočky nebo psa krátké AI meme video – tančící, zpívající nebo mluvící mazlíček se zvukem.
+O nástroji
+AI Pet Meme je online generátor, který z nahrané fotografie psa či kočky vytvoří krátké vertikální video ve formátu 9:16 se zvukem. Nabízí šest šablon – tanec, zpěv, mluvení, reakci, proměnu (glow-up) a více než 20 předpřipravených stylů (vibe presets), přičemž každý preset obsahuje hotový animační prompt zahrnující choreografii, kameru, scénu i zvuk. Uživatel může prompt libovolně upravovat, vybrat délku klipu (5, 8, 10 nebo 15 sekund), rozlišení (480p nebo 720p) a různé poměry stran. Výstupem je MP4 video, které se generuje přibližně jednu až dvě minuty. Ke generování se používají kredity, jedno video stojí 2 kredity. Podle ceníku nástroj nabízí placený tarif od 6,99 USD, bezplatná verze není v dostupných informacích uvedena. Nástroj nemá českou lokalizaci ani zmínku o API nebo otevřeném zdrojovém kódu.
+Klíčové vlastnosti
+- Šest šablon: tanec, zpěv, mluvení, reakce, proměna (glow-up)
+- Více než 20 předpřipravených stylů s hotovým animačním promptem
+- Volitelná délka klipu 5, 8, 10 nebo 15 sekund
+- Rozlišení 480p nebo 720p a různé poměry stran
+Časté dotazy
+Co AI Pet Meme vlastně umí?
+Z jedné nahrané fotky psa nebo kočky vytvoří krátké video, ve kterém mazlíček tančí, zpívá, mluví nebo reaguje – včetně lip syncu a zvuku, podle zvolené šablony či stylu.
+Kolik to stojí?
+Generování funguje na kredity, jedno video stojí 2 kredity (5s klip), delší klipy více; placený tarif začíná na 6,99 USD. Nové účty dostanou 2 kredity zdarma, což stačí na jedno 5s video v 480p.
+Jak začít a pro koho je nástroj určený?
+Stačí nahrát jasnou fotku svého psa nebo kočky, vybrat šablonu, délku a styl videa a nechat generátor vytvořit animaci – vhodné pro kohokoliv, kdo chce rychle vytvořit vtipné meme video ze svého mazlíčka.
+Kategorie

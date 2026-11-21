@@ -1,0 +1,17 @@
+Dog Age Calculator
+Bezplatná kalkulačka převádí psí věk na lidské roky podle velikostního tarifu psa, bez nutnosti registrace.
+O nástroji
+Dog Age Calculator je webová kalkulačka, která přepočítává věk psa na lidský ekvivalent. Vychází z publikovaného věkového grafu AKC (American Kennel Club) a mezi jednotlivými narozeninovými hodnotami počítá lineární interpolací, takže zohledňuje i měsíce navíc. Uživatel zadá věk v letech a měsících nebo datum narození a zvolí dospělou velikost psa (malá, střední, velká, obří), protože graf má pro každou velikost odlišné hodnoty. Nástroj umí i opačný převod z lidských let na psí a nabízí tabulku s hodnotami pro věk 1 až 16 let u všech čtyř velikostních kategorií. K výsledku zobrazuje graf průběhu stárnutí a vysvětlení výpočtu („Jak jsme k číslu došli“). Celý výpočet probíhá přímo v prohlížeči uživatele, sdílený odkaz s výsledkem pak obsahuje zadané vstupy. Podle textu na stránce je kalkulačka zdarma a nevyžaduje založení účtu. Jde o edukační odhad založený na chartu AKC, nikoli o biologický test skutečného stáří psa – autoři to v popisu explicitně zdůrazňují jako omezení metody.
+Klíčové vlastnosti
+- Výpočet podle velikostního grafu AKC
+- Lineární interpolace mezi jednotlivými měsíci
+- Zadání věkem i datem narození
+- Opačný převod z lidských let na psí
+Časté dotazy
+Jak kalkulačka počítá psí věk na lidský?
+Vychází z publikovaného věkového grafu AKC (American Kennel Club) podle velikosti psa a mezi jednotlivými narozeninovými hodnotami počítá lineární interpolací, aby zohlednila i měsíce navíc.
+Kolik stojí použití nástroje?
+Nástroj je zdarma a nevyžaduje registraci ani založení účtu.
+Pro koho je kalkulačka vhodná a jak začít?
+Je určená majitelům psů, kteří chtějí zjistit přibližný lidský ekvivalent věku svého psa; stačí zadat věk nebo datum narození a vybrat dospělou velikost psa (malá, střední, velká, obří).
+Kategorie

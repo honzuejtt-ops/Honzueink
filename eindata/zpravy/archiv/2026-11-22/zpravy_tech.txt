@@ -1,3 +1,65 @@
+|T|Fujifilm instax Square 2 na českém trhu od 2.690 Kč|D|22.11.2026 13:00|P|Dalším novým instantním fotoaparátem společnosti Fujifilm je instax Square 2. Ten fotí na čtvercové filmy o velikosti 62×62 mm.|M|Digimanie|X|Dalším novým instantním fotoaparátem společnosti Fujifilm je instax Square 2. Ten fotí na čtvercové filmy o velikosti 62×62 mm.
+Rodina populárních instantních fotoaparátů společnosti Fujifilm získala nový přírůstek. Model instax Square 2 aktualizuje nabídku přístrojů pro čtvercový formát a přináší inovované více zaoblené, hladší tělo a novou funkcí Mood Filter Switch. Tento přepínač umožňuje uživateli volit mezi třemi barevnými tóny, teplým, studeným nebo klasickým vzhledem instax filmů. Páčkou na objektivu se před čočky vloží barevný filtr, který pak mění onen nádech snímku. K dispozici je také automatická expozice a automatické řízení blesku, což zjednodušuje ovládání při focení za různých světelných podmínek.
+Fotoaparát používá čtvercový instantní film o rozměrech 62×62 mm, který se vyvíjí přibližně 90 sekund v závislosti na teplotě okolí. Objektiv se skládá ze 2 členů ve 2 skupinách, má reálnou ohniskovou vzdálenost 65,75 mm a světelnost F12,6. Hledáček je typu invertovaný Galiley s 0,4× zvětšením. Pro ostření jsou k dispozici tři režimy, tedy Standard, Landscape a Close-up, přičemž v makro režimu zaostřuje přístroj od 0,3 do 0,5 metru, ve standardním od 0,5 metru do 3 metrů a v krajinném režimu pak od 3 metrů dál. Blesk dosvítí do vzdálenosti 2,2 metru a jeho doba nabíjení je zhruba 7,5 sekundy. Závěrka podporuje expoziční časy od 1/400 až do 1/2 sekundy.
+O napájení se starají čtyři AA baterie, které by měly vystačit na pořízení zhruba 30 balíčků filmů po 10 snímcích. Rozměry fotoaparátu činí 139×119,5×71 mm a váží 450 gramů bez baterií. Pro snadnější kompozici selfie snímků je na přední straně umístěno malé zrcátko. Fujifilm zároveň představil nový instantní film instax Square Soft Haze, který díky nižší saturaci a kontrastu vytváří jemnější vzhled.
+Novinka bude dostupná v barvách Slate Blue, Misty White a Brick Red. Cena přístroje byla stanovena na 2 690 Kč. Nový film Soft Haze pak vyjde na 299 Kč za balení 10 snímků.|E|
+|T|Drahé DDR5 ovlivňují prodeje CPU u Amazonu: AM5 klesá, Arrow Lake padá|D|22.11.2026 09:30|P|Výrazně vyšší ceny DDR5 pamětí negativně ovlivňují prodeje procesorů, které je podporují. Obrovský pád v tomto zažívá Intel se svými Arrow Lake, které...|M|SvětHW|X|Výrazně vyšší ceny DDR5 pamětí negativně ovlivňují prodeje procesorů, které je podporují. Obrovský pád v tomto zažívá Intel se svými Arrow Lake, které se u Amazonu téměř neprodávají.
+Kanál TechEpiphany se nám postaral o další zajímavé statistiky. Na sociální síti X totiž zveřejnil rozdíly prodejů procesorů na americkém Amazonu mezi srpnem a říjnem 2026. Jde tu vidět pokles zájmu, za což mohou především zdražující se okolní komponenty. S cenami procesorů není problém, to je např. s pamětmi a SSD.
+Celkový počet prodaných procesorů klesl o 5,1 % z 36,55 na 34,7 tisíc, zhruba stejně klesla i tržba, a to o 5,2 % z 11,4 na 10,8 mil. USD. Společnosti AMD se dařilo navzdory poklesu prodaných kusů. Z původních 28 750 procesorů se dostala na 28 200 kusů (-1,9 %) a její tržní podíl navzdory tomuto poklesu vzrostl ze 78,7 % na 81,3 %. Naproti tomu Intel zde klesl o 16,7 % ze 7 800 na 6 500 kusů a jeho tržní podíl je nyní oněch zbývajících 18,7 %.
+Zajímavé je to, jak se přesouvá zájem uživatelů k procesorům na starších platformách, které využívají ještě DDR4 paměti. Např. AMD si u AM4 polepšilo o 12 % z 11 700 na 13 100 kusů, přičemž ještě výraznější nárůst zaznamenal Intel se svými procesory Raptor Lake Refresh. Tady se rostlo rovnou o 50 % ze 3 000 na 4 500 kusů, což je dokonce více i v počtu kusů a ne jen procentech.
+Úplně opačná situace je u platforem pro DDR5. AMD s AM5 kleslo ještě relativně mírně ze 17 050 na 15 010 kusů (-11,4 %) a procesorů pro AM5 se tak stále prodalo více než pro AM4. V případě Intelu je to ale obrovský pád o 76,5 %. Konkrétně ze 4 050 procesorů Arrow Lake se jich v říjnu prodalo jen 950 kusů.
+Pokud jde o ceny pamětí, tak např. 16 GB DDR4 začíná na 3 400 Kč, zatímco 16 GB DDR5 je až od 7 800 Kč. V případě 32 GB DDR4 začínáme na 6 400 Kč, u 32GB DDR5 jsme na 13 600 Kč. V obou případech je to více než dvojnásobek.|E|
+|T|Roth IRA Calculator|D|22.11.2026 07:24|P|Kalkulačka Roth IRA pro odhad budoucí hodnoty penzijního spoření, ověření nároku na příspěvky a srovnání Roth vs. Traditional IRA podle amerických pra...|M|EJAJ|X|Roth IRA Calculator
+Kalkulačka Roth IRA pro odhad budoucí hodnoty penzijního spoření, ověření nároku na příspěvky a srovnání Roth vs. Traditional IRA podle amerických pravidel.
+O nástroji
+Roth IRA Calculator je bezplatný online nástroj určený lidem v USA, kteří plánují spoření na důchod prostřednictvím Roth IRA. Po zadání aktuálního věku, věku odchodu do důchodu, výše zůstatku, roční výše příspěvku a očekávaného ročního výnosu nástroj spočítá odhadovaný zůstatek při odchodu do důchodu, a to jak v nominální hodnotě, tak očištěný o inflaci (s možností přepnutí), včetně ročního rozpisu příspěvků a úroků. Součástí je i kontrola způsobilosti k příspěvkům – podle daňového stavu, upraveného hrubého příjmu (MAGI) a věku nástroj určí, kolik lze podle aktuálních limitů IRS pro rok 2026 maximálně vložit (7 500 USD ročně, resp. 8 600 USD od 50 let věku), včetně zohlednění příjmových pásem pro postupné snižování limitu. Dále nabízí srovnání Roth IRA s Traditional IRA (zahrnuje reinvestici daňové úspory) a se zdanitelným makléřským účtem. Nástroj je na webu označen jako bezplatný, bez zmínky o placené verzi, API nebo otevřeném zdrojovém kódu. Výsledky slouží pouze pro vzdělávací účely a výrobce doporučuje konzultaci s finančním poradcem, jelikož skutečné výnosy se mohou lišit.
+Klíčové vlastnosti
+- Projekce zůstatku Roth IRA při odchodu do důchodu
+- Přepínač nominální a inflačně očištěné hodnoty
+- Kontrola způsobilosti podle MAGI a daňového statusu
+- Srovnání Roth vs. Traditional IRA s reinvesticí daňové úspory
+Časté dotazy
+Co kalkulačka přesně počítá?
+Odhadne budoucí zůstatek na Roth IRA podle věku, příspěvků a očekávaného výnosu, ověří nárok na příspěvky podle příjmu a porovná Roth IRA s Traditional IRA nebo zdanitelným účtem.
+Kolik kalkulačka stojí?
+Nástroj je zcela zdarma, bez zmínky o placené verzi nebo registraci.
+Pro koho je nástroj určen a jak začít?
+Je určen lidem v USA plánujícím spoření na důchod přes Roth IRA – stačí zadat věk, zůstatek, příspěvek a výnos a kalkulačka okamžitě přepočítá odhad i pravidla IRS pro rok 2026.
+Kategorie|E|
+|T|LaTeX Table Generator|D|22.11.2026 07:23|P|Nástroj generuje LaTeX kód tabulek z vložených dat z Excelu, CSV nebo staré LaTeX tabulky, včetně kontroly, zda se vejdou do sloupců IEEE či ACM.|M|EJAJ|X|LaTeX Table Generator
+Nástroj generuje LaTeX kód tabulek z vložených dat z Excelu, CSV nebo staré LaTeX tabulky, včetně kontroly, zda se vejdou do sloupců IEEE či ACM.
+O nástroji
+LaTeX Table Generator umožňuje vložit data ze schránky (tabulkový procesor, CSV nebo starý tabular kód) a automaticky z nich vygeneruje LaTeX kód tabulky ve formátu booktabs, včetně výpisu potřebných balíčků. Nástroj nabízí úpravy přímo v rozhraní – sloučení a rozdělení buněk, přidávání a mazání řádků či sloupců, zarovnání desetinných čísel, zvýraznění nejlepšího výsledku tučně nebo stínování střídavých řádků. Součástí je i kontrola šířky tabulky vůči konkrétní sazbě dokumentu – nástroj odhadne, zda se tabulka vejde do jednoho či dvou sloupců u tříd jako article, IEEEtran (conference) nebo acmart sigconf, a uvede odpovídající šířku v bodech (pt). Lze nastavit typ čar (booktabs, všechny ohraničení, pouze řádkové/sloupcové čáry), umístění a popisek tabulky, prostředí (table, table*, sidewaystable, longtable) i velikost písma (\\small, \\footnotesize, \\scriptsize). Výsledkem je buď samotný kód tabulky, nebo kompletní ukázkový dokument připravený ke zkopírování do LaTeXu. Podle dostupných informací je nástroj zdarma, bez zmínky o placené verzi, API nebo otevřeném zdrojovém kódu. Rozhraní je v angličtině.
+Klíčové vlastnosti
+- Import dat ze schránky, CSV nebo starého tabular kódu
+- Kontrola šířky tabulky pro article, IEEEtran či acmart sigconf
+- Sloučení a rozdělení buněk, přidávání řádků a sloupců
+- Zvýraznění nejlepšího výsledku tučně a zarovnání desetinných čísel
+Časté dotazy
+Co přesně LaTeX Table Generator umí?
+Z vložených dat z Excelu, CSV nebo staré LaTeX tabulky vygeneruje čistý LaTeX kód ve formátu booktabs, včetně výpisu potřebných balíčků. Navíc zkontroluje, zda se tabulka vejde do sloupce u tříd article, IEEEtran nebo acmart sigconf.
+Kolik nástroj stojí?
+Nástroj je zdarma, bez zmínky o placené verzi nebo API.
+Pro koho je nástroj určen a jak se začíná?
+Je určen pro autory vědeckých a technických dokumentů v LaTeXu – stačí vložit data ze schránky nebo použít Import a tabulku pak upravit přímo v rozhraní (sloučení buněk, zvýraznění, zarovnání).
+Kategorie|E|
+|T|Sudoku Printable Generator|D|22.11.2026 07:22|P|Generátor sudoku pro tisk vytváří neomezené množství puzzlů ve formátu PDF v různých obtížnostech a velikostech mřížky bez nutnosti registrace.|M|EJAJ|X|Sudoku Printable Generator
+Generátor sudoku pro tisk vytváří neomezené množství puzzlů ve formátu PDF v různých obtížnostech a velikostech mřížky bez nutnosti registrace.
+O nástroji
+Sudoku Printable Generator umožňuje vytvářet sudoku puzzly přímo v prohlížeči a stáhnout je jako PDF nebo rovnou vytisknout. K dispozici jsou mřížky 4×4, 6×6, 9×9 i 16×16 (beta, bez garance jedinečného řešení), čtyři úrovně obtížnosti (Easy, Medium, Hard, Evil) a výběr z šesti formátů papíru včetně A4, Letter či A3. Puzzly lze generovat jednotlivě nebo v sadách až po 24 kusů na jedno stažení. Nástroj nabízí také variantní typy sudoku – diagonální, killer a samurai sudoku – a volitelné přiložení klíče s odpověďmi na samostatné stránce. Pro mladší řešitele jsou určené jednodušší 4×4 a 6×6 mřížky, zatímco starší žáci mohou využít klasické 9×9 mřížky v jednodušších obtížnostech. Generátor je dostupný bez registrace a podle dostupných informací je zdarma.
+Klíčové vlastnosti
+- Mřížky 4×4, 6×6, 9×9 i 16×16 (beta)
+- Čtyři úrovně obtížnosti od Easy po Evil
+- Varianty diagonal, killer a samurai sudoku
+- Generování až 24 puzzlů na jedno stažení
+Časté dotazy
+Jaké typy sudoku umí generátor vytvořit?
+Nabízí klasické mřížky 4×4, 6×6, 9×9 a 16×16 (beta), čtyři úrovně obtížnosti od Easy po Evil a variantní typy jako diagonální, killer a samurai sudoku.
+Kolik stojí používání generátoru?
+Nástroj je podle dostupných informací zdarma a funguje bez nutnosti registrace.
+Pro koho je generátor vhodný a jak začít?
+Hodí se pro děti i starší žáky díky jednodušším 4×4 a 6×6 mřížkám i klasickým 9×9 puzzlům – stačí zvolit obtížnost, velikost mřížky a formát papíru a puzzle rovnou stáhnout jako PDF nebo vytisknout.
+Kategorie|E|
 |T|Libreboot po měsíci končí s anti-AI politikou, FFmpeg 9.1 s řadou vylepšení|D|22.11.2026 00:00|P|Týden v KDE přináší nejen lépe animovaný KRunner, týden v GNOME zase rozšíření pro indikaci činnosti disků. Do jádra verze 7.5 přibyla podpora senzorů...|M|Root|X|Týden v KDE: lépe animovaný KRunner
 Vysloveně novinek je tento týden v KDE minimum, jde spíše o různá vylepšení a opravy chyb. Tak předně se zbavme toho, co je pro našince celkem nepodstatné (krom univerzitních studentů příslušných oborů): přibyla podpora zobrazování různých znaků v sw klávesnici pro jazyk japonský, čínský a korejský. Objeví se v Plasmě 6.9.
 Plasma 6.8.4 přinese v rámci zmíněných vylepšení například řešení problému s poblikávajícím a poskakujícím dialogem KRunneru ve chvíli, kdy se objevuje, widget sítí už nebude nabízet připojení k Wi-Fi pomocí QR kódu na systémech, kde není přítomen Wi-Fi adaptér.

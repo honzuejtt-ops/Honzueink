@@ -1,0 +1,17 @@
+LaTeX Table Generator
+Nástroj generuje LaTeX kód tabulek z vložených dat z Excelu, CSV nebo staré LaTeX tabulky, včetně kontroly, zda se vejdou do sloupců IEEE či ACM.
+O nástroji
+LaTeX Table Generator umožňuje vložit data ze schránky (tabulkový procesor, CSV nebo starý tabular kód) a automaticky z nich vygeneruje LaTeX kód tabulky ve formátu booktabs, včetně výpisu potřebných balíčků. Nástroj nabízí úpravy přímo v rozhraní – sloučení a rozdělení buněk, přidávání a mazání řádků či sloupců, zarovnání desetinných čísel, zvýraznění nejlepšího výsledku tučně nebo stínování střídavých řádků. Součástí je i kontrola šířky tabulky vůči konkrétní sazbě dokumentu – nástroj odhadne, zda se tabulka vejde do jednoho či dvou sloupců u tříd jako article, IEEEtran (conference) nebo acmart sigconf, a uvede odpovídající šířku v bodech (pt). Lze nastavit typ čar (booktabs, všechny ohraničení, pouze řádkové/sloupcové čáry), umístění a popisek tabulky, prostředí (table, table*, sidewaystable, longtable) i velikost písma (\\small, \\footnotesize, \\scriptsize). Výsledkem je buď samotný kód tabulky, nebo kompletní ukázkový dokument připravený ke zkopírování do LaTeXu. Podle dostupných informací je nástroj zdarma, bez zmínky o placené verzi, API nebo otevřeném zdrojovém kódu. Rozhraní je v angličtině.
+Klíčové vlastnosti
+- Import dat ze schránky, CSV nebo starého tabular kódu
+- Kontrola šířky tabulky pro article, IEEEtran či acmart sigconf
+- Sloučení a rozdělení buněk, přidávání řádků a sloupců
+- Zvýraznění nejlepšího výsledku tučně a zarovnání desetinných čísel
+Časté dotazy
+Co přesně LaTeX Table Generator umí?
+Z vložených dat z Excelu, CSV nebo staré LaTeX tabulky vygeneruje čistý LaTeX kód ve formátu booktabs, včetně výpisu potřebných balíčků. Navíc zkontroluje, zda se tabulka vejde do sloupce u tříd article, IEEEtran nebo acmart sigconf.
+Kolik nástroj stojí?
+Nástroj je zdarma, bez zmínky o placené verzi nebo API.
+Pro koho je nástroj určen a jak se začíná?
+Je určen pro autory vědeckých a technických dokumentů v LaTeXu – stačí vložit data ze schránky nebo použít Import a tabulku pak upravit přímo v rozhraní (sloučení buněk, zvýraznění, zarovnání).
+Kategorie

@@ -1,0 +1,25 @@
+Vesmír jako na dlani. Nejpodrobnější mapa Mléčné dráhy s miliardami hvězd vyjde už 2. prosince
+Ve středu 2. prosince 2026 zveřejní Evropská kosmická agentura ESA nejpodrobnější mapu Mléčné dráhy, přes dvě miliardy hvězd a jiných těles. Odhalení půjde sledovat v přímém přenosu.
+Data nasbírala sonda Gaia. U každého bodu na mapě zjistila, kde přesně je, jak je daleko, jakou má barvu a jak se pohybuje. Mapu ESA odhalí 2. prosince 2026 a podívat se může kdokoli.
+Kolik je na mapě hvězd
+V číslech se dá snadno zamotat, proto stručně. ESA zveřejní údaje o všech zdrojích, tedy hvězdách a jiných objektech, které sonda zpracovala. Celkem jich je asi 2,8 miliardy. Hlavní tabulka obsahuje jen ty s kvalitním měřením polohy i jasu, a těch je zhruba 2 miliardy. ESA tentokrát zveřejní i údaje o zdrojích, které na hlavní tabulku nestačily.
+Proč je letošní vydání největší
+Sonda Gaia sbírala data dlouhodobě a výsledky se zveřejňují postupně. Teď přichází čtvrté velké vydání dat, odborně označované DR4. Stojí na pěti a půl roku pozorování, tedy na skoro dvakrát delší době než předchozí vydání DR3.
+Ještě víc je vidět rozdíl v objemu. Data DR4 mají podle ESA zhruba 400 terabajtů. Předchozí vydání mělo 10 terabajtů.
+Co všechno vydání obsahuje
+Poprvé vyjdou všechny plánované druhy dat za celé sledované období, včetně jednotlivých měření pozorovaných objektů. Vědci tak uvidí nejen výsledné hodnoty, ale i pozorování, ze kterých se počítají.
+Do vydání patří také samostatná tabulka pro tělesa naší sluneční soustavy. Nejde tedy jen o vzdálené hvězdy, ale i o naše bližší sousedy.
+💡 Zajímavost: Nové vydání je zhruba čtyřicetkrát větší než to předchozí: 400 terabajtů proti 10.
+Jak se podívat ve středu 2. prosince
+Archiv sondy Gaia bude kvůli přípravám od středy 25. listopadu 2026 mimo provoz. Znovu se otevře s novými daty ve středu 2. prosince 2026 přesně ve 12:00 SEČ.
+Pro většinu lidí bude zajímavější veřejná akce. ESA ji pořádá týž den od 14:45 do 16:30 SEČ pro širokou veřejnost, mluvit se bude anglicky. Přenos je otevřený všem na ESA WebTV, takže stačí počítač nebo telefon s internetem.
+Odvážnější mohou zkusit přímo archiv. Hledat v něm lze i bez registrace, dotazy pak mají jen časový limit a omezený počet výsledků.
+Čeští vědci v mezinárodním týmu
+Data ze sondy nezpracovává jediná laboratoř. Stará se o ně mezinárodní konsorcium DPAC, tedy sdružení vědeckých pracovišť z řady zemí. Na seznamu zapojených pracovišť je Astronomický ústav Akademie věd ČR i Ústav teoretické fyziky Univerzity Karlovy.
+Co bude dál
+Po čtvrtém vydání přijde ještě jedno. Páté vydání, označované DR5, nevyjde dřív než koncem roku 2030. Bude vycházet z celých 10,5 roku pozorování, tedy skoro z dvojnásobku doby, na které stojí DR4.
+Ověřeno z:
+- ESA Gaia (Cosmos) – Gaia DR4 content (stav ke dni 14. 9. 2026)
+- ESA Gaia (Cosmos) – Gaia news 2026 a Gaia DR4 events (zprávy ze dne 25. 9., 8. 10. a 30. 10. 2026)
+- Lohrmann Observatory, TU Dresden – Save the date: Gaia Data Release 4 on December 2, 2026 (13. 10. 2026)
+- ESA Gaia (Cosmos) – List of Institutes involved in DPAC

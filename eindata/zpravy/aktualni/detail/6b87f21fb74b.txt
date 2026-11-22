@@ -1,0 +1,17 @@
+Roth IRA Calculator
+Kalkulačka Roth IRA pro odhad budoucí hodnoty penzijního spoření, ověření nároku na příspěvky a srovnání Roth vs. Traditional IRA podle amerických pravidel.
+O nástroji
+Roth IRA Calculator je bezplatný online nástroj určený lidem v USA, kteří plánují spoření na důchod prostřednictvím Roth IRA. Po zadání aktuálního věku, věku odchodu do důchodu, výše zůstatku, roční výše příspěvku a očekávaného ročního výnosu nástroj spočítá odhadovaný zůstatek při odchodu do důchodu, a to jak v nominální hodnotě, tak očištěný o inflaci (s možností přepnutí), včetně ročního rozpisu příspěvků a úroků. Součástí je i kontrola způsobilosti k příspěvkům – podle daňového stavu, upraveného hrubého příjmu (MAGI) a věku nástroj určí, kolik lze podle aktuálních limitů IRS pro rok 2026 maximálně vložit (7 500 USD ročně, resp. 8 600 USD od 50 let věku), včetně zohlednění příjmových pásem pro postupné snižování limitu. Dále nabízí srovnání Roth IRA s Traditional IRA (zahrnuje reinvestici daňové úspory) a se zdanitelným makléřským účtem. Nástroj je na webu označen jako bezplatný, bez zmínky o placené verzi, API nebo otevřeném zdrojovém kódu. Výsledky slouží pouze pro vzdělávací účely a výrobce doporučuje konzultaci s finančním poradcem, jelikož skutečné výnosy se mohou lišit.
+Klíčové vlastnosti
+- Projekce zůstatku Roth IRA při odchodu do důchodu
+- Přepínač nominální a inflačně očištěné hodnoty
+- Kontrola způsobilosti podle MAGI a daňového statusu
+- Srovnání Roth vs. Traditional IRA s reinvesticí daňové úspory
+Časté dotazy
+Co kalkulačka přesně počítá?
+Odhadne budoucí zůstatek na Roth IRA podle věku, příspěvků a očekávaného výnosu, ověří nárok na příspěvky podle příjmu a porovná Roth IRA s Traditional IRA nebo zdanitelným účtem.
+Kolik kalkulačka stojí?
+Nástroj je zcela zdarma, bez zmínky o placené verzi nebo registraci.
+Pro koho je nástroj určen a jak začít?
+Je určen lidem v USA plánujícím spoření na důchod přes Roth IRA – stačí zadat věk, zůstatek, příspěvek a výnos a kalkulačka okamžitě přepočítá odhad i pravidla IRS pro rok 2026.
+Kategorie

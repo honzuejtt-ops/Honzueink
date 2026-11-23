@@ -1,0 +1,22 @@
+Technologie se jmenuje ACR (Automatic Content Recognition – automatické rozpoznávání obsahu). U některých televizorů, například značky Samsung, systém podle materiálů pro inzerenty vyhodnocuje obrazovku dvakrát za sekundu, tedy 7 200krát za hodinu. Jiní výrobci, jako třeba LG, zase analyzují zvukovou stopu.
+Žádná kamera v obýváku, ale digitální otisk
+Neznamená to, že by televize fotila váš pokoj nebo posílala cizím lidem snímky obrazovky s vašimi hesly. Funguje to jinak: přístroj si vezme jen matematický „otisk“ pixelů na displeji nebo zvuku a bleskově ho porovná s databází známých filmů, seriálů, videoher a reklam. Systém tak s naprostou přesností ví, na jaký pořad se díváte i jestli jste zrovna nepřepnuli reklamu.
+Studie britské University College London navíc ukázala, že funkce u některých modelů běží i ve chvíli, kdy televizi používáte jen jako monitor – třeba když přes HDMI kabel připojíte herní konzoli PlayStation nebo notebook.
+Proč to televize dělá a je to vůbec legální?
+Důvod je čistě finanční. Dnešní chytré televize se prodávají s minimální marží, někdy skoro za výrobní cenu. Výrobci na nich vydělávají až po prodeji – právě prodejem dat o divácích a zobrazováním reklamy v menu televize. Hodnota tohoto trhu má letos dosáhnout neuvěřitelných 5,45 miliardy dolarů. Oficiálně přitom značky tvrdí, že funkce slouží jen k lepšímu doporučování pořadů a optimalizaci obrazu.
+Souhlas jste dali při prvním zapnutí
+V Evropské unii je toto sledování zcela legální, protože jste k tomu sami dali souhlas. Výrobci ho totiž šikovně schovají do úvodního průvodce při úplně prvním zapnutí nové televize. Člověk se chce co nejdříve dívat, tak bez čtení odkliká „Souhlasím se vším“. (Když to americký výrobce Vizio v roce 2017 dělal bez souhlasu diváků, dostal pokutu 2,2 milionu dolarů).
+Jak se reklama z televize dostane do vašeho mobilu
+Data neputují k hackerům, ale do obřího reklamního průmyslu – k vlastním reklamním divizím výrobců (např. Samsung Ads, LG Ad Solutions), datovým zprostředkovatelům (např. Samba TV u značky Sony) a televizním stanicím.
+Inzerenti je využívají k tomu, aby propojili vaši televizi s mobilem přes domácí Wi-Fi. Když televize přes IP adresu zjistí, že jste dokoukali reklamu na nové auto nebo dovolenou, za pár minut na vás stejná nabídka vyskočí na Facebooku nebo v prohlížeči na telefonu.
+Jak sběr dat vypnout: Návod podle značek
+Podle zjištění novinářů z organizace The Markup to výrobci neusnadňují – u některých značek musíte kliknout až 37krát, než se k vypnutí dostanete. Funkce se navíc u každé značky jmenuje jinak, aby to na první pohled netrklo. Kde ji v menu (v sekci Nastavení) najdete?
+- SAMSUNG: Běžte do Nastavení → Obecné a soukromí (Privacy Choices) → Podmínky a zásady. Tady vypněte položku Viewing Information Services. Doporučuje se vypnout i personalizované reklamy (Interest-Based Advertisements).
+- LG: Otevřete Nastavení → Obecné → Systém → Další nastavení. Funkci zde najdete pod názvem Live Plus – přepněte ji na „Vypnuto“.
+- SONY: V nastavení systému hledejte položku Samba Interactive TV a deaktivujte ji.
+- HISENSE: V pokročilém nastavení systému (Advanced System) vypněte funkci Enhanced Viewing (nebo ACR).
+- TCL (Roku): V sekci Soukromí zrušte zaškrtnutí u položky Smart TV experience (Use info from TV inputs).
+Pozor! Někdy ani vypnutí v menu nestačí
+Čerstvé testy výzkumníků z americké Northeastern University z roku 2026 ukázaly, že zatímco u značek LG nebo Sony odesílání dat po vypnutí v menu skutečně ustalo, u některých modelů Samsung televizor odesílal síťová data dál i přes zákaz.
+Jak mít stoprocentní jistotu?
+Pokud chcete mít nad svým soukromím absolutní kontrolu, existuje jediné neprůstřelné řešení: odpojte televizi úplně od internetu (zrušte Wi-Fi i síťový kabel) a používejte ji jen jako obyčejnou obrazovku pro set-top box nebo chytrou krabičku (například Apple TV či Chromecast). Bez připojení k síti totiž televize nemá jak nasbíraná data odeslat.

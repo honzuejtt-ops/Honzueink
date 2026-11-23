@@ -1,0 +1,31 @@
+Fotografie, které stojí za to uchovat, mohou ztrácet na kvalitě kvůli šumu, neostrým detailům nebo výraznému ořezu, který omezuje možnosti tisku ve větším formátu. S Aiarty můžete takové snímky dále upravovat a vylepšovat v návaznosti na svůj běžný fotografický workflow.
+Aiarty Image Enhancer kombinuje redukci šumu, doostření, zvětšování rozlišení a volitelnou obnovu detailů obličeje v jedné desktopové aplikaci. Veškeré zpracování fotografií probíhá lokálně, bez nutnosti nahrávat soubory do cloudu nebo využívat kredity. Po aktivaci licence a stažení potřebných AI modelů můžete fotografie vylepšovat i offline.
+Black Friday nabídka: Doživotní licence za 79 USD až pro 3 počítače
+Získejte doživotní licenci za speciální Black Friday cenu 79 USD (sleva 49 %). Licence zahrnuje:
+- Doživotní licenci až pro 3 počítače s Windows nebo až 3 počítače Mac.
+- Doživotní aktualizace zdarma a možnost osobního i komerčního využití.
+- Jednorázovou platbu bez opakovaných poplatků za předplatné.
+- 30denní záruku vrácení peněz.
+Redukce šumu a zvýraznění jemných detailů
+Fotografie pořízené za slabého osvětlení často trpí šumem, který je patrný zejména na obloze, ve stínech a v jemných texturách. Aiarty pomáhá šum potlačit a zároveň zlepšit vykreslení detailů v listech, architektuře, pokožce i vlasech.
+Dokáže také vylepšit mírně neostré portréty a fotografie divoké zvěře. V náhledu porovnávejte zejména oči, hrany a drobné textury, abyste našli správnou rovnováhu mezi ostrostí a přirozeným vzhledem.
+Zvětšete oříznuté fotografie pro zobrazení na obrazovce i tisk
+Při výraznějším ořezu zůstává pro výsledný snímek méně pixelů. Zvětšení pomocí AI může pomoci připravit takovou fotografii pro zobrazení na větší obrazovce nebo tisk ve větším formátu a současně zlepšit vzhled jemných detailů.
+Aiarty podporuje zvětšení až 8×. Maximální výstupní rozlišení dosahuje 32K ve Windows a 16K na Macu. Dostupné možnosti zvětšení se liší podle použitého AI modelu. Zvolte výstupní velikost podle účelu použití a výsledek vždy zkontrolujte při velikosti, v jaké bude fotografie skutečně zobrazena nebo vytištěna.
+Mějte intenzitu vylepšení pod kontrolou
+Pomocí posuvníku intenzity můžete nastavit rovnováhu mezi ostrostí a zachováním přirozených textur. To je důležité zejména u srsti, peří, pokožky a vlasů. Níže uvedené srovnání ukazuje stejnou fotografii při dvou různých úrovních vylepšení.
+Vyberte AI model podle typu fotografie
+Začít s Aiarty Image Enhancer je snadné. Nemusíte procházet složitá nastavení ani vybírat z desítek modelů. U fotografií pořízených fotoaparátem můžete začít s modelem Real-Photo nebo More-Detail GAN v3 a následně upravit intenzitu vylepšení podle konkrétního snímku.
+- Real-Photo: Přirozeně vypadající detaily pro portréty, krajiny a produktové fotografie.
+- More-Detail GAN v3: Zvýraznění jemných detailů pokožky, vlasů, srsti a peří.
+- AIGCsmooth v3: Vyhlazení textur u obrázků vytvořených AI, anime a ilustrací.
+Další informace najdete v průvodci AI modely a nastavením Aiarty.
+Další nástroje pro váš fotografický workflow
+Kromě vylepšování kvality obrazu nabízí Aiarty také nástroje pro retušování, úpravy a další zpracování fotografií.
+- Face Restoration: Obnova detailů obličeje u portrétů v nízké kvalitě. Intenzitu obnovy lze upravit a jednotlivé obličeje vybrat samostatně.
+- AI Eraser: Odstranění nežádoucích objektů a rušivých prvků ze snímku.
+- Quick Edit: Úprava barev, ořezávání a otáčení fotografií nebo převod SDR snímků do HDR.
+- Lightroom Classic Workflow: Odešlete fotografie z Lightroom Classic do Aiarty k vylepšení a poté je exportujte zpět pro další úpravy.
+Doživotní licence jako součást vašeho fotografického workflow
+Začněte fotografií se šumem, mírně neostrým portrétem nebo výrazně oříznutým snímkem, který chcete vytisknout ve větším formátu. Vyzkoušejte Aiarty na vlastních fotografiích a posuďte, jak výsledky zapadnou do vašeho pracovního postupu.
+Využijte slevu 49 % a získejte doživotní licenci za 79 USD v rámci Black Friday nabídky!

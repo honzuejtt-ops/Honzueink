@@ -1,0 +1,9 @@
+To Do je přehledným seznamem úkolů, který vsadil na minimalistický vzhled, ale přesto nabízí dostatek funkcí včetně synchronizace. I proto šlo o jednu z voleb pro uživatele, kteří nevyžadují složitější platformy, jako je Trello. Teď ale Microsoft oznámil, že aplikace přestane v červnu 2027 fungovat. K dispozici je na Windows, Macu, iPhonech i Androidu.
+Microsoft jako alternativu uvádí aplikaci Planner, do které snad půjde úkoly z To Do přenést. Háček je v tom, že Planner pro osobní účty Microsoft není dostupný. Týká se to i předplatitelů Microsoft 365 Personal a Family. Spustit jej tedy lze jen s firemním nebo školním účtem. Jde tedy o další případ toho, kdy Microsoft zabíjí další dobře fungující aplikaci a nahrazuje ji nedostupnou nebo méně kvalitní alternativou.
+Export bez importu
+Pro firemní a školní účty se v Planneru od prosince rozšíří přepracovaná stránka Moje úkoly. Stávající úkoly a seznamy se do ní sice automaticky nepřesunou, zůstanou na ní ale viditelné jen do konce června 2027.
+Microsoft slibuje nástroj pro export dat, jeho termín ani formát ale zatím neprozradil. Sám přitom upozorňuje, že exportovaná data nemusí jít načíst do Planneru ani do jiné aplikace. Na firemním fóru navrhla Susie Tinker přímo z Microsoftu krkolomný přesun úkolů přes Copilot nebo Cowork. To se velké části uživatelů v diskuzi nezamlouvá – už jen kvůli nahrávání potenciálně citlivých dat do chatbotů.
+Wunderlist a déjà vu
+To Do původně vzniklo z Wunderlistu, který Microsoft koupil v roce 2015 podle odhadů za 100 až 200 milionů dolarů a v roce 2020 původní aplikaci zrušil. Jde tak o další povedený nástroj, který padl za oběť nesmyslnému úklidu mezi funkčními produkty Microsoftu. Nedávno takto firma pohřbila Poštu a Kalendář ve Windows. Zklamání veřejně vyjádřil i Brad Silverberg, bývalý šéf vývoje Windows 95.
+Konce To Do samozřejmě využívá k propagaci konkurence, především aplikace Todoist a Superlist od původního zakladatele Wunderlistu.
+Zdroje: Microsoft

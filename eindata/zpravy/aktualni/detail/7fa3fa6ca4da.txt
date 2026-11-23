@@ -24,9 +24,14 @@ Ke zrychlení oproti původnímu bpezip výrazně přispívá jeden společný m
 Některé texty stále lépe zabalí původní BPE. Pro moje použití ale zvítězila kombinace malé knihovny, rychlého zpracování a rozumné úspory místa.
 Trochu nepraktické mi na tom přijde (jestli jsem to pochopil dobře), že komprimovaná data nejspíš půjde přečíst jen se stejnou verzí modelu. Takže pokud by uživatel v budoucnu chtěl přejít na nový, lepší model, bude potřeba veškerá data rozbalit a znovu uložit s novou kompresí nebo udržovat dvě verze a podle hlavičky vybrat tu správnou pro dekompresi.
 V některých případech to nemusí být nutně problém (např. pokud jsou data v centrální databázi a není jich ukrutně moc), jindy to může být dost nepraktické (např. data s neomezenou trvanlivostí, uložené na klientských zařízeních).
+Podobný přístup využívá i zstd při použití slovníků - natrénujete na podobných datech a slovník pak používáte pro efektivnějí kompresi - https://github.com/meta/zstd#the-case-for-small-data-compression
+Nevím ale, jaký by v tomhle případě byl overhead na hlavičku a jak byto fungovalo v Javascriptu.
+Chápu to dobře, že podstatou myšlenky je distribuce předgenerovaného slovníku, který pak nemusí být součástí komprimovaných dat a tím šetří objem?
+Chápu to dobře, že podstatou myšlenky je distribuce předgenerovaného slovníku, který pak nemusí být součástí komprimovaných dat a tím šetří objem?
+Chápu to stejně a překvapilo mne, že to není uvedené přímo v zápisku. Běžné komprimační algoritmy a formáty vytvářejí slovník v průběhu komprese konkrétních dat a slovník je pak součástí komprimovaných dat. ProbZip vytvořil ten slovník na trénovacích datech, je tedy jednotný pro všechny komprese/dekomprese a nemusí tudíž být součástí komprimovaných dat. Akorát by tam asi měla být nějaká identifikace toho slovníku, když v budoucnosti vznikne jiný slovník, aby bylo možné určit, který slovník byl pro kompresi využit.
 Tomáš je autorem několika více či méně známých projektů jak z oblasti operačních systémů, tak internetu. V současnosti samozvaný expert na Linux, Bash, PHP a MySQL.
-Přečteno 47 052×
-Přečteno 27 472×
-Přečteno 22 437×
-Přečteno 21 285×
-Přečteno 15 538×
+Přečteno 47 086×
+Přečteno 27 491×
+Přečteno 22 446×
+Přečteno 21 309×
+Přečteno 15 539×

@@ -1,0 +1,32 @@
+V minulém článku jsem představil bpezip, knihovnu pro kompresi krátkých textů (především doručovacích adres) v JavaScriptu. Od té doby jsem vyzkoušel jiný přístup. Nová verze se jmenuje ProbZip a celý soubor včetně natrénovaného modelu má necelých 255 KiB, tedy 10x méně, a funguje asi 100x rychleji.
+Běží přímo v prohlížeči i v Node.js, bez dalších knihoven. Hodí se například pro adresy, názvy míst a další krátké řetězce, které chceme ukládat jednotlivě.
+Základní myšlenka je jednoduchá: to, co se v textu objevuje často, zapíšeme úsporněji než něco neobvyklého.
+Představte si napovídání slov na telefonu. Když napíšete začátek slova, telefon nabídne pravděpodobné pokračování. ProbZip využívá podobnou znalost, ale pro úsporný zápis textu. Podívá se na několik předchozích znaků a zjistí, která pokračování bývají běžná.
+Pokud následuje očekávaný znak, jeho zápis zabere málo místa. Neobvyklý znak potřebuje místa více. Za celý text se tyto drobné úspory nasčítají.
+A odkud kompresor ví, co je běžné? Z trénování na názvech míst, ulic a dalších adresních textech. Současná verze využila přibližně dva miliony řetězců z veřejných zdrojů. Z nich vznikly tabulky popisující obvyklé kombinace znaků. Právě těmto tabulkám říkám model.
+Princip hezky vysvětluje video od 3Blue1Brown: čím předvídatelnější text je, tím méně místa potřebujeme k jeho zápisu. ProbZip tuto myšlenku využívá při kompresi krátkých řetězců.
+Model je už součástí knihovny. Nemusí se přibalovat ke každé adrese ani stahovat během používání.
+Při dekompresi se celý postup obrátí. Dekompresor má stejný model a zná stejná pravidla zápisu. Z komprimovaných dat přečte první znak, potom druhý a postupně obnoví celý text. Již obnovené znaky mu pomáhají určit, jak má číst další.
+Původní text se obnoví přesně. Pravděpodobnosti pouze určují, jak úsporně se informace zapíše. I nečekaný znak je ve výstupu jednoznačně zaznamenaný. Pokud ho model vůbec nezná, uloží se jeho číselná hodnota.
+Díky tomu funguje ProbZip také s češtinou, čínštinou, japonštinou, thajštinou nebo emoji. Úspora se ovšem liší podle toho, jak dobře model zná daný typ textu.
+Například tato adresa:
+Tomáš Konečný, Lesní 14, 739 81 Bystřice nad Olší má v UTF-8 57 bajtů. ProbZip ji uloží do 38 bajtů, včetně potřebné hlavičky. Ušetří tedy třetinu místa.
+Použití v prohlížeči vypadá takto:
+<script src="probzip.js"></script>
+<script>
+const text = 'Tomáš Konečný, Lesní 14, 739 81 Bystřice nad Olší';
+const packed = ProbZip.encode(text);
+const restored = ProbZip.decode(packed);
+console.log(packed.length); // 38 bajtů
+console.log(restored);      // původní text
+</script> Výsledek komprese je pole bajtů. Pokud se některý text zmenšit nepodaří, knihovna ho může uložit přímo. V nejhorším případě tak přidá pouze jeden bajt.
+Ke zrychlení oproti původnímu bpezip výrazně přispívá jeden společný model. Starší verze při automatickém výběru zkoušela mnoho slovníků pro různé země. ProbZip tuto práci nepotřebuje a připravený model používá opakovaně.
+Některé texty stále lépe zabalí původní BPE. Pro moje použití ale zvítězila kombinace malé knihovny, rychlého zpracování a rozumné úspory místa.
+Trochu nepraktické mi na tom přijde (jestli jsem to pochopil dobře), že komprimovaná data nejspíš půjde přečíst jen se stejnou verzí modelu. Takže pokud by uživatel v budoucnu chtěl přejít na nový, lepší model, bude potřeba veškerá data rozbalit a znovu uložit s novou kompresí nebo udržovat dvě verze a podle hlavičky vybrat tu správnou pro dekompresi.
+V některých případech to nemusí být nutně problém (např. pokud jsou data v centrální databázi a není jich ukrutně moc), jindy to může být dost nepraktické (např. data s neomezenou trvanlivostí, uložené na klientských zařízeních).
+Tomáš je autorem několika více či méně známých projektů jak z oblasti operačních systémů, tak internetu. V současnosti samozvaný expert na Linux, Bash, PHP a MySQL.
+Přečteno 47 052×
+Přečteno 27 472×
+Přečteno 22 437×
+Přečteno 21 285×
+Přečteno 15 538×

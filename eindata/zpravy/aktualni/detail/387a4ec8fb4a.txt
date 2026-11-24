@@ -1,0 +1,14 @@
+„Řešíme to s dodavatelem webu,“ reagoval na dotaz Novinek Kotrba s tím, že detaily inspekce sdělí až později.
+Na podezřelé chování internetových stránek státního úřadu upozornil v úterý jeden z uživatelů Redditu. Další diskutující následně potvrdili, že se setkali se stejným problémem.
+„Hele, potvrzuju, že se mi to děje! Vypadá to na infikovaný WordPress. Je potřeba to ČOIce nahlásit,“ reagoval jeden z diskutujících.
+Přesměrování se podle zjištění uživatelů aktivovalo v případě, že měl návštěvník mezi podporovanými jazyky internetového prohlížeče nastavenou japonštinu. Běžní čeští uživatelé tak vůbec nemuseli zaznamenat, že se na stránkách děje něco nekalého.
+Problém se měl týkat mimo jiné stránky elektronické podatelny ČOI. Zahraniční e-shop, na který byli návštěvníci přesměrováváni, měl nabízet například napodobeniny hodinek.
+„Kvalitní smysl pro humor přesměrovávat web ČOIky na shop s padělky,“ glosoval incident autor původního příspěvku na Redditu. Ten podle svých slov na problém upozornil také pracovníky inspekce.
+Skryté přesměrování
+Selektivní přesměrování návštěvníků je jednou z metod, které kyberzločinci využívají, aby jejich počínání zůstalo co nejdéle neodhaleno. Správcům napadených stránek se totiž může web zobrazovat zcela normálně, zatímco vybrané skupiny návštěvníků jsou přesměrovávány jinam.
+Útočníci se tímto způsobem mohou snažit zneužít důvěryhodnost zavedených internetových stránek k propagaci vlastních obchodů či ke zlepšení jejich pozice ve výsledcích internetových vyhledávačů.
+Jakým způsobem se hackerům podařilo web inspekce napadnout a jak dlouho přesměrování fungovalo, zatím není jasné. Inspekce dosud neupřesnila ani to, zda mohly být ohroženy osobní údaje spotřebitelů, kteří s ní prostřednictvím webu komunikovali.
+Inspekce sama proti padělkům bojuje
+Česká obchodní inspekce pravidelně varuje spotřebitele před rizikovými internetovými obchody a zaměřuje se také na potírání prodeje padělaného zboží.
+Jen ve třetím čtvrtletí letošního roku zajistili inspektoři 12 623 kusů padělků, jejichž hodnota v odhadovaných cenách originálů dosahovala bezmála 35 milionů korun. Za celý loňský rok pak ČOI zajistila téměř 22 tisíc padělků v hodnotě přesahující 82,5 milionu korun v odhadovaných cenách originálů.
+Hackerský útok navíc vyšel najevo v období předvánočních nákupů, jen několik dní před nákupním svátkem Black Friday, který letos připadá na pátek 27. listopadu. Právě v souvislosti s touto slevovou akcí přitom inspekce nabádá zákazníky ke zvýšené obezřetnosti při nakupování.

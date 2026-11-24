@@ -1,0 +1,31 @@
+Podvodné zprávy, které se snaží z lidí vylákat peníze, nejsou ničím novým. V tomto případě mají ale kyberzločinci v rukou mimořádně silnou zbraň – vědí o svých potenciálních obětech věci, které by za normálních okolností měli znát pouze hoteliéři či provozovatelé rezervačních systémů.
+Mohou tak například oslovit člověka jménem, uvést správný termín jeho dovolené i název hotelu, ve kterém se chystá bydlet. Když následně požádají o uhrazení zálohy na pobyt, nemusí taková výzva vzbudit vůbec žádné podezření.
+Štýrská policie přitom v poslední době eviduje stále více oznámení v souvislosti s podobnými podvody. Zločinci se své oběti snaží kontaktovat prostřednictvím e-mailů, SMS zpráv i populární komunikační aplikace WhatsApp.
+„Dosud neznámí pachatelé tyto konkrétní údaje cíleně využívají, aby vzbudili důvěru,“ uvedli podle serveru Heute rakouští policisté v úterním varování.
+Odkazy připojené ke zprávám přitom směřují na podvržené internetové stránky. Ty mohou připomínat například web hotelu, rezervačního portálu či platební brány. Ve skutečnosti však slouží ke krádeži citlivých platebních a přihlašovacích údajů.
+Namísto zaplacení zálohy na zimní dovolenou tak mohou lidé přijít o peníze ze svého bankovního účtu.
+V hledáčku i oblíbená lyžařská střediska
+Aktuálnímu varování předcházela série kybernetických útoků, které v uplynulých týdnech zasáhly rakouský cestovní ruch. Už na konci října informovala rakouská veřejnoprávní stanice ORF o krádeži údajů klientů turistických organizací v Tyrolsku, Salcbursku a Štýrsku.
+A nešlo rozhodně o žádné zapadlé kouty Rakouska. Mezi zasaženými oblastmi figurovala například známá lyžařská střediska Ischgl, Serfaus, Stubai, Seefeld či St. Anton am Arlberg.
+Jen v Tyrolsku se incident mohl dotknout zhruba 1700 podniků působících v cestovním ruchu. V Salcbursku bylo podle tehdejších zjištění ORF zasaženo 97 ubytovacích zařízení. Mezi dotčenými oblastmi byly například Flachau, Hochkönig, Gasteinertal či Altenmarkt-Zauchensee.
+V případě Štýrska se hovořilo o údajích zhruba tří tisíc turistů.
+Anketa
+Hackeři se podle dosavadních zjištění dostali ke jménům, adresám, kontaktním údajům a informacím o plánovaných pobytech. Údaje o platebních kartách či bankovních účtech v rámci tohoto incidentu podle dostupných informací odcizeny nebyly.
+Právě ty se ale mohou zločinci nyní snažit získat prostřednictvím podvodných zpráv.
+Společnost Feratel, která pro turistické organizace zajišťuje rezervační systémy, tehdy uvedla, že útočníci získali přístup prostřednictvím jednoho z partnerů. Bezpečnostní mezera již podle firmy byla odstraněna.
+To ale nic nemění na tom, že jednou odcizené údaje mohou zločinci zneužívat ještě dlouhé měsíce po samotném kybernetickém útoku.
+Další útok přišel v listopadu
+Na začátku listopadu se navíc terčem kybernetického útoku stala také infrastruktura využívaná rakouskou technologickou společností Incert, která pro podniky v cestovním ruchu zajišťuje mimo jiné prodej dárkových poukazů prostřednictvím internetu.
+Před možným únikem osobních údajů v souvislosti s tímto incidentem varovala své zákazníky například turistická organizace v oblíbeném lyžařském regionu Schladming-Dachstein, upozornil rakouský deník Der Standard.
+Samotná společnost Incert odhalila neoprávněný přístup k serverům svého poskytovatele hostingu 5. listopadu. Okolnosti útoku nadále vyšetřuje ve spolupráci s externími bezpečnostními experty.
+Štýrští policisté ve svém úterním varování konkrétní společnosti nejmenovali. Rostoucí počet podvodných zpráv však dávají do souvislosti právě s pravděpodobnými úniky dat z turistických organizací a hotelových řetězců v uplynulých týdnech.
+Přesný počet poškozených ani celkovou výši způsobených škod policie zatím nezveřejnila.
+Jak nenaletět podvodníkům při rezervaci dovolené
+- Nevěřte zprávám jen proto, že obsahují správné údaje. Podvodníci mohou znát vaše jméno, termín pobytu, název hotelu i další podrobnosti o rezervaci.
+- Neklikejte na odkazy ve zprávách. Oficiální stránky hotelu či rezervačního portálu si vždy otevřete sami prostřednictvím internetového prohlížeče nebo oficiální aplikace.
+- Nenechte se zatlačit do kouta. Výhrůžky okamžitým zrušením rezervace či požadavky na rychlé zaplacení zálohy patří mezi oblíbené triky podvodníků.
+- Nezadávejte znovu údaje o platební kartě na základě nevyžádané výzvy. Obzvláště obezřetní buďte v případě, že jste již za ubytování zaplatili nebo poskytli údaje o kartě při rezervaci.
+- Ověřujte si požadavky přímo u hoteliérů. V případě pochybností kontaktujte ubytovací zařízení prostřednictvím oficiálních kontaktů, nikoliv těch uvedených v podezřelé zprávě.
+- Pokud naletíte, jednejte okamžitě. Kontaktujte svou banku, nechte zablokovat ohroženou platební kartu a případ oznamte policii. Nečekejte, až vám z účtu začnou mizet peníze.
+Podobné podvody řeší i čeští policisté
+Obezřetní by nicméně měli být lidé bez ohledu na to, kde se chystají trávit dovolenou. S velmi podobnými podvody se totiž setkávají také čeští kriminalisté.

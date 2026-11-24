@@ -1,0 +1,8 @@
+Bambu Lab představil další novou 3D tiskárnu. Tentokrát se jedná o model P3C využívající systém Swaptek, který firma poprvé představila u nedávno oznámeného Bambu Lab H3C, o kterém jsme psali. Novinka zvládá tisk až se sedmi nástroji a součástí je úložný systém AMS 3P pro sedm cívek filamentu.
+Swaptek mění materiál za 3,4 sekundy
+Systém Swaptek zde funguje stejně jako v případě Bambu Lab H3C. Každá tryska může nést odlišný materiál a její výměna trvá jen 3,4 sekundy, od konce tisku jedné barvy/materiálu do začátku další je to pak jen asi 6 sekund. Společnost slibuje také podporu míchání barev CMYKW, kdy z pěti základních barev dokáže tiskárna vrstvením vytvářet široké spektrum odstínů.
+Bambu Lab P3C se dodává s pěti tiskovými nástroji s tryskami o průměru 0,4 mm, další dva sloty zůstávají volné. Lze je využít například na měkké TPU, trysky jiné velikosti nebo doplňky pro řezání, kreslení nebo ražbu. Extruder FlexFeed má podle Bambu Lab podporovat filamenty s průměrem 1,75 i 2,85 mm, což umožní tisk i měkkého TPU s tvrdostí 75A.
+Nové AMS 3P pojme až sedm cívek, přičemž každá z nich má vlastní systém vedení. Volitelný modul pak umožňuje aktivní sušení až do 75 °C. Pokud je potřeba, můžete připojit další AMS a zvýšit celkový počet cívek až na 22.
+Tiskárna nabízí automatickou kalibraci, klasické AI funkce, tiskovou plochu 256 × 256 × 260 mm, maximální teplotu trysky 300 °C a vyhřívání podložky do 110 °C. Aktivní výhřev komory zde chybí.
+Levný toolchanger už v lednu
+Nově oznámenou tiskárnu Bambu Lab P3C je možné už nyní předobjednat na oficiálním e-shopu, přičemž ceny startují na na 1 149 eurech, tedy asi 28 tisících korunách. Datum odeslání je plánováno začátkem ledna příštího roku.

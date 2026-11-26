@@ -1,0 +1,24 @@
+Od 18. února 2027 se v Evropské unii začne uplatňovat článek 11 nařízení o bateriích a odpadních bateriích (EU) 2023/1542. Výrobci, kteří prodávají zařízení se zabudovanou přenosnou baterií, tak musí zajistit, aby si ji uživatel mohl kdykoliv během životnosti výrobku sám vyndat a vyměnit. Povinnost se týká celé baterie, nikoliv jednotlivých článků. Na zařízení, která už jsou v prodeji, se pravidla zpětně nevztahují.
+Žádný návrat k odklápěcím krytům
+Neznamená to ale, že by se telefony vracely s odnímatelným zadním krytem. Nařízení lepidla jako taková nezakazuje. Baterii musí jít vyjmout komerčně dostupným nářadím a speciální nástroje jsou přípustné jen tehdy, když je výrobce přibalí zdarma. K demontáži naopak nesmí být potřeba značkové nástroje, teplo ani rozpouštědla. Výrobci tak mohou sáhnout po šroubcích, zacvakávacích mechanismech nebo vytahovacích lepicích páskách. K výrobku navíc musí přiložit návod k výměně, který musí zůstat trvale dostupný i online.
+Náhradní baterie musí být k dispozici nejméně pět let od uvedení poslední jednotky modelu na trh, a to za přiměřenou cenu pro servisy i koncové uživatele. Software přitom nesmí bránit výměně za jinou kompatibilní baterii.
+Odolné telefony mohou zůstat zalepené
+U chytrých telefonů a tabletů ale hraje roli i nařízení o ekodesignu (EU) 2023/1670, které platí už od 20. června 2025. To vyžaduje, aby baterie vydržela alespoň 800 cyklů s 80 % zbývající kapacity. Náhradní baterie navíc musí výrobce dodávat nejméně sedm let od ukončení prodeje modelu.
+Zároveň ale nabízí výjimku. Baterii smí výrobce poskytovat pouze odborným opravnám, pokud splní tři podmínky najednou:
+- po 500 cyklech zůstane baterii alespoň 83 % kapacity,
+- vydrží 1 000 cyklů s minimálně 80 % kapacity,
+- telefon má krytí IP67.
+Řada odolných vlajkových telefonů si tak zalepenou konstrukci nejspíš ponechá.
+Hodinky, hračky i kuchyňské teploměry na výjimku
+Seznam výjimek se mezitím rozrostl. Komise 14. července přijala nařízení v přenesené pravomoci (EU) 2026/1770, které vyšlo v Úředním věstníku 22. října a v platnost vstoupilo 11. listopadu. Výjimka se týká těchto zařízení:
+- nositelná elektronika, která je příliš malá na bezpečnou výměnu baterie nebo má utěsněné pouzdro,
+- elektrické hračky, a to do 31. července 2030,
+- bezdrátové teploměrové sondy pro přípravu jídla,
+- zařízení do prostředí s nebezpečím výbuchu,
+- dávkovače léků nošené na těle,
+- telematické jednotky na střechách zemědělských a stavebních strojů.
+Baterii v nich ale stále musí umět vyměnit nezávislý odborník.
+Výrobci už reagují
+Nová pravidla se už promítají do konkrétních produktů. Nintendo začalo v Evropě prodávat upravenou Switch 2. K baterii se dostanete po sundání zadního krytu, který drží běžné křížové šroubky nezakryté samolepkami, a odpadá i kovové stínění. Kapacita přitom klesla zhruba o 1 %, z 5 220 na 5 172 mAh. Podle iFixitu Nintendo zároveň po polovině února 2027 stáhne z evropských obchodů osm starších produktů.
+Vyměnitelnou baterii mají také nové Kindly, které Amazon představil 1. října. Stránka podpory Amazonu ji uvádí u modelů Kindle (2026), Kindle Aluminum (2026) a Amazon Kids Kindle (2026). V bezpečnostních informacích ale Amazon doporučuje nechat výměnu na kvalifikovaném servisu. Zda se vyměnitelné baterie dostanou i do zařízení mimo EU, záleží na výrobcích. Nintendo například nabídne vyměnitelné baterie pouze u evropských verzí.
+zdroje: Úřední věstník Evropské Unie (1, 2, 3), Evropská komise, iFixit, Smhn

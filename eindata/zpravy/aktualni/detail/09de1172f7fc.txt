@@ -1,0 +1,11 @@
+Z App Store zmizela aplikace Talkie – program umožňující tvorbu a komunikaci s AI společníky. Firma Apple aplikaci odstranila v reakci na informace v médiích o sexuálně laděných zprávách, které chatboti posílali mladistvým.
+Například server ABC popisuje situaci, kdy se jejich adresátkou stala dvanáctiletá dívka. V dalším případě účet registrovaný jako 14letá osoba v jiné aplikaci – Character․AI – podle newyorské státní zástupkyně získal přístup k uměle generované sexuální roleplay a instrukcím k výrobě zbraní.
+Talkie při registraci neověřuje věk dostatečně
+Character․AI čelí v souvislosti s nevhodnými interakcemi s nezletilými několika obžalobám. Podle jednoho z obvinění je odpovědná za sebevraždu náctiletého chlapce, píše CNN s tím, že v říjnu firma vyhlásila bankrot.
+Obě aplikace hodnotil App Store i Google Play jako vhodnou až od 18 let. Talkie ale věk při registraci podle Reuters dostatečně neověřuje – pro používání aplikace stačí zvolit věkovou kategorii.
+Jde o další z případů problematické interakce mezi umělou inteligencí a nezletilými – loni podobný případ odhalila americká spotřebitelská organizace. Zjistila, že výrobek plyšového medvídka, který komunikoval skrze reproduktor, neměl problém explicitně probírat sexuální témata nebo se bavit o nelegálních drogách. Výrobce tehdy dočasně stáhl všechny své robo-plyšáky z nabídky, aby provedl audit.
+Cílem je poskytovat uživatelům „vztah“
+Virtuální AI společníci se od nástrojů, jako jsou například ChatGPT, Gemini nebo Claude, liší hlavně zaměřením. Pro společníky není primárním cílem pomáhat s úkoly, ale poskytovat uživatelům „vztah“ a interakce podobné těm lidským.
+Společníky si může uživatel navrhnout, upravit podle svých představ nebo začít komunikovat s nějakým již existujícím.
+Aplikace Talkie měla podle čínské výzkumné společnosti Unique v říjnu zhruba jedenáct milionů aktivních uživatelů. V App Store a na Google Play je aplikací nabízejících AI společníky více.
+Aplikace Talkie vydělává na reklamách. Ty pravidelně přerušují konverzaci prostřednictvím vyskakujících oken. Pokud se chce uživatel obchodních sdělení zbavit, existuje možnost zaplatit předplatné. Program rovněž umožňuje nakoupit si herní měnu za reálné peníze, prostřednictvím které uživatel může například generovat obrázky.

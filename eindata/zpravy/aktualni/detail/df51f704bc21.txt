@@ -1,0 +1,183 @@
+Kategorizace IP adresy
+Co se dozvíte v článku
+V minulém článku jsme skončili implementací povinné funkce new_ctx() traitu ProxyHttp, která nám posloužila k vytvoření instance našeho per-request kontextu a naplnění výchozími hodnotami.
+Na konci budeme mít jednoduchou proxy, která:
+- zjistí IP adresu klienta,
+- zařadí ji do jedné z definovaných zón,
+- výsledek uloží do kontextu požadavku,
+- a před odesláním požadavku na upstream přidá HTTP hlavičku  X-Zone.
+Samotnou klasifikaci provedeme ve fázi request_filter(). Pingora tuto fázi doporučuje mimo jiné pro validaci požadavku, rate limiting a naplnění či validaci kontextu.
+Poznámka: Jednotlivé fáze podrobněji popisuje dokumentace projektu Pingora.
+Veškerý kód se vztahuje k Pingoře 0.8.1 a Rustu 1.97.1. Testy proběhly na Ubuntu 24.04.
+Implementace bude následující:
+async fn request_filter(
+&self,
+session: &mut Session,
+ctx: &mut Self::CTX,
+) -> Result {
+let socket_addr = match session.client_addr() {
+Some(addr) => addr,
+None => {
+println!("No client address found, treating as Zone Unknown");
+return Ok(false);
+let client_ip = match socket_addr.as_inet() {
+Some(inet) => inet.ip(),
+None => {
+println!("Client address is not an IP socket, treating as Zone Unknown");
+return Ok(false);
+// Zone::from() zatím neexistuje, doplníme jej dále v článku.
+ctx.zone = Zone::from(client_ip);
+Ok(false)
+Důležitá je zde návratová hodnota request_filter(). Dokumentace Cloudflare její význam popisuje následovně:
+„If the user already sent a response to this request, an Ok(true) should be returned so that the proxy would exit. The proxy continues to the next phases when Ok(false) is returned.“
+Prakticky tedy máme tři možnosti:
+- Ok(true) — odpověď klientovi jsme již odeslali a další zpracování požadavku se má ukončit,
+- Ok(false) — požadavek pokračuje do dalších fází proxy,
+- Err(...) — při zpracování nastala chyba a Pingora přejde do svého error flow, mimo jiné přes fail_to_proxy().
+Musíme tedy vrátit Ok(false), protože zpracování pokračuje dalšími callbacky, kde chceme vybrat upstream (upstream_peer()) a také přidat hlavičku X-Zone (callback  upstream_request_filter()).
+Získání klientské IP adresy
+Prvním krokem klasifikace požadavku je určení sítě, ze které klient přichází.
+Nejprve pomocí session.client_addr() získáme adresu klienta reprezentovanou typem SocketAddr  — viz let socket_addr = match session.client_addr(). Metoda client_addr() vrací Option obsahující obecný typ SocketAddr používaný Pingorou. Nejde o std::net::SocketAddr  ze standardní knihovny — Pingora tímto typem abstrahuje různé druhy socketových adres.
+Poznámka: Na první pohled může být matoucí, že client_addr() není přímo metoda proxy vrstvy Session (viz dokumentace), kterou dostáváme v callbacku request_filter(). Pingora zde ale používá Rust trait Deref a zpřístupňuje metody vnitřní downstream session přímo na objektu session. Proto můžeme psát jednoduše session.client_addr() místo toho, abychom museli explicitně sahat do vnitřního session objektu.
+Proto také nemůžeme rovnou předpokládat, že máme IP socket. Pomocí as_inet() nejprve zjistíme, zda jde o internetovou adresu, a teprve potom metodou ip() získáme samotnou IP adresu.
+Pokud client_addr() vrátí None, případně pokud adresa není typu Inet, klasifikaci přeskočíme a v kontextu ponecháme výchozí hodnotu  Zone::Unknown.
+Poznámka: V reálném nasazení nemusí client_addr() představovat adresu skutečného klienta. Pokud před Pingorou stojí další proxy nebo load balancer, může vracet jeho adresu. Skutečnou klientskou IP pak obvykle určujeme například X-Forwarded-For, ovšem pouze pokud známe topologii infrastruktury a důvěřujeme proxy, která tuto hlavičku nastavuje. Tento problém v našem demonstračním příkladu neřešíme a pracujeme přímo s client_addr().
+Výsledkem je proměnnáclient_ip obsahující IP adresu typu core::net::IpAddr. Informace o typu je zde důležitá, protože ji budeme potřebovat pro samotnou implementaci rozhodovacího algoritmu.
+Konverze IpAddr → Zone
+Poslední částí klasifikace je převod z IP na náš typ Zone.
+Mohli bychom napsat pomocnou metodu k našemu typu Zone v bloku impl jako například:
+impl Zone {
+fn get_zone_from_ip(ip_addr: IpAddr) -> Self {
+Rust pro tento typ převodu nabízí idiomatičtější obecné rozhraní v podobě From.
+V našem případě jsme se rozhodli, že převod vždy skončí nějakou hodnotou Zone a každá hodnota IpAddr má definovaný výsledek. Konverze tedy nemůže selhat, a proto zde můžeme použít  From
+impl From for Zone {
+fn from(ip: IpAddr) -> Zone {
+match ip {
+IpAddr::V4(ipv4) => {
+if ipv4.is_loopback() {
+Zone::Localhost
+} else if POD_NET.contains(&ipv4) {
+Zone::PodNet
+} else if ipv4.is_private() {
+Zone::Private
+} else {
+Zone::Public
+IpAddr::V6(_) => Zone::Unknown,
+Pořadí podmínek zde není náhodné. Síť Kubernetes podů 10.244.0.0/16 zároveň spadá do privátního IPv4 prostoru. Kontrolu POD_NET.contains() proto musíme provést před obecnější kontrolou ipv4.is_private(). V opačném případě bychom adresy podů vždy klasifikovali jako  Private.
+Pro práci se síťovými rozsahy použijeme crate ipnet a typ  Ipv4Net:
+use ipnet::Ipv4Net;
+Síť Kubernetes podů si pro účely našeho příkladu nadefinujeme přímo v programu:
+static POD_NET: LazyLock =
+LazyLock::new(|| "10.244.0.0/16".parse().unwrap());
+V produkční aplikaci bychom tuto hodnotu pravděpodobně načítali z konfigurace nebo získávali jiným způsobem z prostředí. Pro demonstrační program nám ale pevná hodnota postačí.
+Proč zde používáme LazyLock?
+Hodnotu chceme mít dostupnou po celou dobu běhu programu, ale současně ji potřebujeme nejprve převést z textové reprezentace "10.244.0.0/16" na typ Ipv4Net.LazyLock umožňuje tuto inicializaci provést při prvním použití a pouze jednou. Je to také pohodlný způsob, jak jednorázově parsovat staticky zadaný CIDR.
+Členství adresy v síti pak ověříme pomocí:
+POD_NET.contains(&ipv4)
+Po implementaci From se samotná klasifikace v request_filter()  zredukuje na jediný řádek:
+ctx.zone = Zone::from(client_ip);
+Stejnou konverzi bychom díky implementaci From mohli zapsat také pomocí  Into:
+ctx.zone = client_ip.into();
+Kontext je tedy naplněný a můžeme pokračovat k další části flow. Tou je přidání hlavičky X-Zone do HTTP requestu, který odchází na upstream.
+Přidání hlavičky a přeposlání na backend
+V rámci flow je nejvhodnější hlavičky odcházející na upstream přidávat v trait metodě upstream_request_filter(), tedy těsně před tím, než požadavek skutečně odejde na backend. Funkce upstream_request_filter() dostává mutable referenci na RequestHeader, tedy požadavek připravený k odeslání na upstream.
+async fn upstream_request_filter(&self,
+session: &mut Session,
+upstream_request: &mut RequestHeader,
+ctx: &mut Self::CTX,
+) -> Result<()>
+Pozor!RequestHeader zde není ve významu HTTP hlaviček, ale head části requestu a obsahuje mimo jiné třeba URI, HTTP verzi, HTTP metodu a mapu HTTP hlaviček.
+Důležitým detailem je mutable reference na RequestHeader. Díky ní můžeme požadavek před odesláním na upstream upravit — například přidat, změnit nebo odstranit HTTP hlavičky.
+Podle dokumentace má typ RequestHeader metodu insert_header() se dvěma parametry name a value. Její parametry jsou definovány pomocí trait bounds, takže signatura může na první pohled působit trochu nezvykle.
+pub fn insert_header(&mut self,
+name: impl IntoCaseHeaderName,
+value: impl TryInto
+Pro náš příklad stačí vědět, že jako název i hodnotu hlavičky můžeme použít řetězce, takže celá implementace upstream_request_filter() může být překvapivě jednoduchá:
+async fn upstream_request_filter(&self,
+_session: &mut Session,
+upstream_request: &mut RequestHeader,
+ctx: &mut Self::CTX,
+) -> Result<()>
+upstream_request.insert_header("X-Zone", ctx.zone.to_string())?;
+Ok(())
+Hodnotu Zone ještě potřebujeme převést na textovou reprezentaci použitelnou jako hodnota HTTP hlavičky. Proto pro náš enum implementujeme standardní trait Display:
+impl Display for Zone {
+fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
+let zone_str = match self {
+Zone::Localhost => "Localhost",
+Zone::Private => "Private",
+Zone::Public => "Public",
+Zone::PodNet => "PodNet",
+Zone::Unknown => "Unknown",
+write!(f, "{}", zone_str)
+Díky implementaci Display je pro typ automaticky dostupný také trait ToString, takže můžeme jednoduše použít  ctx.zone.to_string().
+Všimněme si také operátoru ?. Převod hodnoty na HeaderValue může skončit chybou a insert_header() proto vrací Result. Protože upstream_request_filter() rovněž vrací Result, můžeme případnou chybu pomocí ? jednoduše propagovat do request flow Pingory.
+Tím je celé request flow hotové:
+Na relativně jednoduchém příkladu tak používáme kontext přesně k účelu, pro který je určen: přenášíme stav konkrétního requestu mezi jednotlivými fázemi proxy.
+Testujeme!
+Pro testování klasifikací využijeme IP aliasy nad loopback zařízením. Trochu oříšek bude zóna Public. V našem jednoduchém klasifikátoru do ní spadnou IPv4 adresy, které nejsou loopback, PodNet ani private; nemusí tedy jít nutně o globálně routovatelné adresy.
+Naštěstí však existuje TEST-NET-2 neboli 198.51.100.0/24, který je určen právě pro účely takových testů. Vybereme si tedy jednu IP z tohoto rozsahu a přidáme ji jako alias na lo. Dále přidáme aliasy pro privátní rozsah a budeme simulovat i rozsah v rámci pod network. Následující příkazy pustíme pod rootem nebo přes sudo:
+ip addr add 198.51.100.10/32 dev lo
+ip addr add 10.244.0.10/32 dev lo
+ip addr add 192.168.0.10/32 dev lo
+Pro demonstraci si ukážeme pouze test zón Public, PodNet a Private. Protože všechny testovací adresy přidáme jako lokální aliasy a pomocí curl --interface je explicitně použijeme jako zdrojovou adresu spojení, můžeme jednotlivé zóny simulovat bez dalších síťových namespace nebo veth párů.
+Dále spustíme jednoduchý testovací „backend“:
+$ while true ; do  echo -e "HTTP/1.1 200 OK\n\n $(date)" | nc -N -lp 8080  ; done
+V druhém terminálu spustíme naši proxy:
+$ cargo run
+Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.40s
+Running `target/debug/lb-with-ctx`
+Nyní můžeme jednotlivé adresy otestovat pomocí nástroje  curl:
+$ curl http://127.0.0.1:8000 --interface 198.51.100.10 -v
+*   Trying 127.0.0.1:8000...
+* Name '198.51.100.10' family 2 resolved to '198.51.100.10' family 2
+* Local port: 0
+* Connected to 127.0.0.1 (127.0.0.1) port 8000
+> GET / HTTP/1.1
+> Host: 127.0.0.1:8000
+< HTTP/1.1 200 OK
+$ curl http://127.0.0.1:8000 --interface 10.244.0.10 -v
+*   Trying 127.0.0.1:8000...
+* Name '10.244.0.10' family 2 resolved to '10.244.0.10' family 2
+* Local port: 0
+* Connected to 127.0.0.1 (127.0.0.1) port 8000
+> GET / HTTP/1.1
+> Host: 127.0.0.1:8000
+< HTTP/1.1 200 OK
+$ curl http://127.0.0.1:8000 --interface 192.168.0.10 -v
+*   Trying 127.0.0.1:8000...
+* Name '192.168.0.10' family 2 resolved to '192.168.0.10' family 2
+* Local port: 0
+* Connected to 127.0.0.1 (127.0.0.1) port 8000
+> GET / HTTP/1.1
+> Host: 127.0.0.1:8000
+< HTTP/1.1 200 OK
+Na backendu pak u jednotlivých requestů uvidíme hlavičku X-Zone s očekávanou hodnotou:
+$ while true ; do  echo -e "HTTP/1.1 200 OK\n\n $(date)" | nc -N -lp 8080  ; done
+GET / HTTP/1.1
+Host: 127.0.0.1:8000
+User-Agent: curl/8.5.0
+Accept: */*
+X-Zone: Public
+GET / HTTP/1.1
+Host: 127.0.0.1:8000
+User-Agent: curl/8.5.0
+Accept: */*
+X-Zone: PodNet
+GET / HTTP/1.1
+Host: 127.0.0.1:8000
+User-Agent: curl/8.5.0
+Accept: */*
+X-Zone: Private
+V logu proxy vidíme tyto záznamy:
+$ cargo run
+Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.23s
+Running `target/debug/lb-with-ctx`
+upstream peer is: Backend { addr: Inet(127.0.0.1:8080), weight: 1, ext: {} }, zone is: Public
+upstream peer is: Backend { addr: Inet(127.0.0.1:8080), weight: 1, ext: {} }, zone is: PodNet
+upstream peer is: Backend { addr: Inet(127.0.0.1:8080), weight: 1, ext: {} }, zone is: Private
+Poznámka: v minulém díle jsme zmínili IPv6, která padá do zóny Unknown. Abychom skutečně mohli otestovat i primitivní IPv6 klasifikaci, musíme přidat listener tohoto protokolu (týká se pouze downstream spojení) v rámci funkce main() voláním funkce  lb.add_tcp("[::1]:8000");
+Shrnutí
+Proxy tedy IP adresu klienta správně klasifikuje, výsledek uloží do kontextu a v pozdější fázi jej použije při úpravě požadavku odcházejícího na upstream.
+Současně jsme si na jednom malém příkladu ukázali několik obecných principů, ke kterým se při psaní proxy v Pingoře budeme opakovaně vracet: práci s jednotlivými fázemi request flow, předávání per-request stavu pomocí CTX, idiomatické převody typů pomocí From a propagaci chyb operátorem  ?.
+Kompletní kód je k dispozici na GitHubu a adresáři 03-zone-classification

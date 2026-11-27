@@ -1,0 +1,17 @@
+NewYouGo
+NewYouGo je AI studio pro generování a úpravu obrázků, videí a hudby z textového promptu nebo referenčního snímku.
+O nástroji
+NewYouGo spojuje v jednom rozhraní generování obrázků, videa a hudby pomocí umělé inteligence. K dispozici jsou modely jako Nano Banana 2.1 (generování a úprava obrázků až do 4K), FLUX 3 Max pro převod textu i obrázku na video s volitelným zvukem, Seedance 2 Fast a Kling 3.0 pro video, nebo ACE Step 1.5 a Minimax Music 2.5 pro hudbu. Doplňkové nástroje zahrnují odstranění pozadí (včetně hromadného), zvětšování obrázků a vlastní LoRA styly. Po přihlášení nástroj nabízí 20 obrázků z modelu FLUX.1 Schnell denně zdarma. Placené tarify začínají na 9,90 USD měsíčně za plán Starter s 2 000 kredity, které lze čerpat přibližně na 1 000 obrázků Z-Image, 200 obrázků Fast Flux, 200 sekund videa LTX-2 nebo hudbu z ACE Step. Při roční platbě je možná sleva až 20 %, k dispozici je i komerční licence. Nástroj je určen tvůrcům, vypravěčům i firmám – od produktových fotografií a brandových kampaní přes vizuály pro krátké filmy až po hudbu a soundtracky. Rozhraní je v angličtině s možností přepnutí do čínštiny, španělštiny, francouzštiny a němčiny, česká lokalizace není uvedena.
+Klíčové vlastnosti
+- Generování obrázků až do 4K (Nano Banana 2.1)
+- Text i obrázek na video s volitelným zvukem (FLUX 3 Max)
+- Generování hudby a soundtracků (ACE Step, Minimax Music)
+- Hromadné odstranění pozadí a zvětšování obrázků
+Časté dotazy
+Co všechno NewYouGo umí vygenerovat?
+Obrázky, videa i hudbu z textového promptu nebo referenčního obrázku – včetně úprav fotek, odstranění pozadí, zvětšování a vlastních LoRA stylů.
+Kolik NewYouGo stojí?
+Zdarma je 20 obrázků z modelu FLUX.1 Schnell denně po přihlášení. Placený plán Starter začíná na 9,90 USD měsíčně za 2 000 kreditů, s možnou slevou až 20 % při roční platbě.
+Pro koho je NewYouGo určeno a jak začít?
+Je pro tvůrce, vypravěče i firmy – od produktových fotografií přes vizuály pro krátké filmy po hudbu. Stačí se přihlásit a začít generovat obrázky zdarma, poté případně přejít na placený tarif.
+Kategorie

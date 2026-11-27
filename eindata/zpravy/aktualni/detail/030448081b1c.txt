@@ -1,0 +1,17 @@
+SonaFact
+Přepis audia a videa na text ve 100 jazycích s rozlišením mluvčích, AI zápisy z jednání a titulky s překladem.
+O nástroji
+SonaFact přepisuje nahrávky hovorů, schůzek a videí na text ve 100 jazycích, přičemž automaticky rozpoznává jazyk a u 32 jazyků (včetně češtiny, angličtiny, němčiny či francouzštiny) nabízí časování na úrovni jednotlivých slov. Nástroj umí rozlišit jednotlivé mluvčí a z přepisu vytvořit AI zápis s rozhodnutími, riziky a úkoly – každý bod zápisu přitom odkazuje na konkrétní okamžik v původní nahrávce, takže lze jedním kliknutím ověřit, co přesně zaznělo. Hodinová schůzka se podle popisu zpracuje obvykle do čtvrthodiny. Dále nabízí export titulků (SRT, vypálené titulky), přepis do formátů DOCX, PDF, Premiere XML, EDL, MAXQDA či NVivo a hodnocení obchodních hovorů a hovorů podpory. Nahrávky jsou podle uvedených informací zpracovávány a šifrovány v rámci EU. Tarif Free umožňuje zdarma a bez platební karty zpracovat tři soubory denně, každý v délce až 30 minut. Placené tarify začínají u varianty Starter za 9 USD měsíčně (20 hodin měsíčně, soubory do 3 hodin), následuje Pro za 15 USD měsíčně (60 hodin, soubory do 6 hodin) a Studio pro týmy za 39 USD měsíčně (300 hodin měsíčně, soubory do 10 hodin, 40 AI úloh denně). Při roční platbě je uvedena sleva 33 %, platby zpracovává Dodo Payments.
+Klíčové vlastnosti
+- Rozlišení mluvčích v přepisu
+- Časování na úrovni slov u 32 jazyků
+- AI zápis s rozhodnutími, riziky a úkoly
+- Odkaz na okamžik v nahrávce u každého bodu zápisu
+Časté dotazy
+Co přesně SonaFact umí?
+Přepíše audio nebo video na text ve 100 jazycích s rozlišením mluvčích, z přepisu vytvoří AI zápis s rozhodnutími, riziky a úkoly, kde každý bod odkazuje na konkrétní okamžik v nahrávce. Umí také exportovat titulky s překladem a hodnotit obchodní hovory či hovory podpory.
+Kolik SonaFact stojí?
+Tarif Free je zdarma bez karty (3 soubory denně do 30 minut). Placené tarify začínají u Starteru za 9 USD/měsíc, Pro za 15 USD/měsíc a Studio pro týmy za 39 USD/měsíc, při roční platbě je sleva 33 %.
+Jak začít a pro koho je nástroj určený?
+Stačí se zaregistrovat přes Google nebo e-mail bez platební karty a nahrát soubor nebo nahrávat přímo v prohlížeči. Hodí se pro týmy řešící schůzky, obchodní hovory, podporu i přepis rozhovorů nebo videí.
+Kategorie

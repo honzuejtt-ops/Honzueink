@@ -1,0 +1,17 @@
+Peptide Dosage Calculator
+Bezplatná kalkulačka pro přepočet dávky peptidu na mililitry a jednotky U-100 injekční stříkačky, bez nutnosti registrace.
+O nástroji
+Peptide Dosage Calculator je webový nástroj, který převádí zadané hodnoty – množství peptidu ve flakonu, celkový objem roztoku a cílovou dávku – na výslednou koncentraci, objem v mililitrech a odpovídající počet jednotek na stříkačce U-100. Výpočet lze provést i opačným směrem (z objemu na dávku) a podporuje zadání již známé koncentrace. Nástroj zobrazuje kompletní postup výpočtu (koncentrace = hmotnost ÷ objem, objem dávky = cílová hmotnost ÷ koncentrace) i konverzní tabulku pro zadanou koncentraci, kterou lze stáhnout jako CSV. Podle textu na stránce je výpočet zdarma, bez nutnosti registrace, a probíhá přímo v prohlížeči uživatele („calculated on your device“), takže zadaná data neopouští zařízení. Uživatel si může uložit až 30 výpočtů v rámci prohlížeče, exportovat je jako záložní JSON soubor nebo stáhnout obrázek výsledku ve formátu PNG. Nástroj výslovně uvádí, že nejde o doporučení dávkování, pouze o matematický přepočet na základě zadaných údajů z etikety přípravku. Autor nástroje je v patičce uveden jako „Peptide Developer“, informace o API či otevřeném zdrojovém kódu v dostupném textu chybí. Rozhraní je v angličtině, česká lokalizace není dostupná.
+Klíčové vlastnosti
+- Přepočet mg na mL a jednotky U-100 stříkačky
+- Výpočet oběma směry – z dávky i z objemu
+- Podpora zadání již známé koncentrace
+- Konverzní tabulka ke stažení jako CSV
+Časté dotazy
+Co přesně kalkulačka počítá?
+Z množství peptidu ve flakonu, objemu roztoku a cílové dávky spočítá koncentraci, objem dávky v mililitrech a odpovídající počet jednotek na U-100 stříkačce. Nástroj zobrazuje i kompletní postup výpočtu a konverzní tabulku ke stažení.
+Kolik to stojí?
+Nástroj je zcela zdarma a nevyžaduje registraci ani zadávání platebních údajů.
+Pro koho je nástroj určený a jak začít?
+Je určený komukoliv, kdo potřebuje přepočítat dávku peptidu podle údajů z etikety přípravku na stříkačku U-100; stačí zadat hmotnost ve flakonu, objem roztoku a cílovou dávku přímo na webu bez instalace. Nástroj ale neposkytuje doporučení dávkování, pouze matematický přepočet.
+Kategorie

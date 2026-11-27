@@ -1,0 +1,17 @@
+Auteo
+Auteo je online AI studio pro generování videí a obrázků z textového promptu, určené marketérům a tvůrcům obsahu.
+O nástroji
+Auteo je kreativní sada postavená na umělé inteligenci, zaměřená na generování videa a obrázků z jednoho promptu či referenčního obrázku, bez přepínání mezi samostatnými nástroji. Pro video nabízí výběr z více modelů – Seedance 2.5 pro klipy až 30 sekund v rozlišení do 1080p, MiniMax H3 pro 2K video s nativním stereo zvukem nebo Seedance 2.0 pro kinematografický pohyb s výstupem až ve 4K. Pro obrázky jsou k dispozici modely GPT Image 2, Nano Banana 2.1 nebo Seedream 5.0 Pro, které podle popisu zvládají přesný text v obrázku i logicky konzistentní kompozice. Generování hudby je na webu uvedeno jako připravovaná funkce, zatím tedy není dostupná. Nástroj funguje na kreditovém systému – každá generace spotřebuje kredity a vlastní API klíč není potřeba. Bezplatný plán nabízí 3,5 kreditu měsíčně, až 1 obrázek v 1K rozlišení a jednu paralelní úlohu. Placené tarify zahrnují Lite (300 kreditů za cca 10–15 USD měsíčně) a Pro (800 kreditů za cca 14,50–29 USD měsíčně), oba s prioritní frontou, bez vodoznaku a s komerční licencí; k dispozici je i jednorázový kreditový balíček Small Pack. Rozhraní je v angličtině, o české lokalizaci, veřejném API pro vývojáře ani otevřeném zdrojovém kódu nejsou v dostupných podkladech žádné zmínky.
+Klíčové vlastnosti
+- Generování videa a obrázků z jednoho promptu bez přepínání nástrojů
+- Výběr z více video modelů – Seedance 2.5, MiniMax H3, Seedance 2.0
+- Video klipy až 30 sekund v rozlišení do 1080p nebo 4K
+- Obrázkové modely GPT Image 2, Nano Banana 2.1, Seedream 5.0 Pro
+Časté dotazy
+Co přesně Auteo umí vygenerovat?
+Auteo generuje video a obrázky z textového promptu nebo referenčního obrázku, s výběrem z několika AI modelů pro různou kvalitu a délku výstupu. Hudba je zatím jen připravovaná funkce, není dostupná.
+Kolik Auteo stojí?
+Zdarma je k dispozici omezený plán s 3,5 kreditu měsíčně. Placené tarify jsou Lite (300 kreditů za cca 10–15 USD/měs) a Pro (800 kreditů za cca 14,50–29 USD/měs), oba bez vodoznaku s komerční licencí.
+Pro koho je Auteo vhodné a jak začít?
+Nástroj je určen marketérům a tvůrcům obsahu, kteří chtějí rychle vytvářet video a obrázky z nápadu bez přepínání mezi aplikacemi. Stačí zadat prompt nebo referenční obrázek a vybrat model na webu auteo.ai.
+Kategorie

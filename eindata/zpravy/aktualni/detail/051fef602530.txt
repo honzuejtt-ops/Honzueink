@@ -1,0 +1,17 @@
+GMBPoster
+GMBPoster pomocí AI automaticky píše a publikuje příspěvky na firemní profil Google (Google Business Profile) a odpovídá na recenze.
+O nástroji
+GMBPoster je nástroj určený majitelům místních podniků a agenturám, kteří potřebují pravidelně publikovat na svůj profil Google Business Profile (dříve Google My Business), aniž by museli texty psát sami. Umělá inteligence (kombinace GPT-4o a Perplexity) generuje příspěvky přizpůsobené oboru podnikání – nástroj uvádí rozpoznání 52 typů profesí – a k textům umí vytvářet i realistické fotografie pomocí DALL-E 3 nebo analyzovat nahrané obrázky. Příspěvky lze naplánovat hromadně v dávkách 30, 60 nebo 90 najednou, nastavit jako opakující se a nechat publikovat automaticky podle kalendáře. Od vyššího tarifu nástroj dokáže také automaticky odpovídat na zákaznické recenze na Googlu a nabízí analytiku zobrazení, kliknutí a zapojení. Propojení s fiefkou funguje přes oficiální Google Business Profile API, takže podle popisu nehrozí riziko pozastavení profilu kvůli scrapingu. K dispozici je REST API a správa více uživatelů pro agentury spravující desítky profilů. Cena začíná na 29 € bez DPH měsíčně za tarif Starter s jedním profilem a 30 příspěvky měsíčně, vyšší tarify (Pro, Agency, Enterprise) nabízejí více profilů, odpovědi na recenze, API a týmový přístup až po neomezený počet příspěvků za 600 € měsíčně. K dispozici je 7denní zkušební verze zdarma bez nutnosti zadávat platební kartu. Rozhraní nástroje je ve francouzštině.
+Klíčové vlastnosti
+- Generování příspěvků podle 52 typů profesí
+- Tvorba fotek přes DALL-E 3 nebo analýza nahraných obrázků
+- Hromadné plánování 30, 60 nebo 90 příspěvků naráz
+- Opakující se příspěvky podle kalendáře
+Časté dotazy
+Co GMBPoster přesně umí?
+AI (GPT-4o a Perplexity) píše příspěvky na míru oboru podnikání, umí k nim vytvořit i realistické fotky přes DALL-E 3, naplánovat je hromadně na týdny dopředu a od vyššího tarifu i automaticky odpovídat na recenze a nabízet analytiku.
+Kolik GMBPoster stojí?
+Tarif Starter začíná na 29 € bez DPH měsíčně za jeden profil a 30 příspěvků, vyšší tarify (Pro, Agency, Enterprise) přidávají odpovědi na recenze, API a týmový přístup až po neomezené příspěvky za 600 € měsíčně.
+Pro koho je nástroj a jak začít?
+Je určen majitelům místních podniků a agenturám spravujícím více profilů Google Business Profile. Stačí vytvořit účet, propojit fiškaru Google přes oficiální API a vyzkoušet 7 dní zdarma bez nutnosti zadávat platební kartu.
+Kategorie

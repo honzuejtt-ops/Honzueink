@@ -1,0 +1,17 @@
+Asphalt Calculator
+Bezplatná kalkulačka spočítá tuny asfaltu, počet náklaďáků a cenu materiálu podle rozměrů a hutněné hloubky plochy.
+O nástroji
+Asphalt Calculator je webový nástroj pro výpočet množství asfaltové směsi potřebné na příjezdové cesty, parkoviště nebo pruhy. Na základě délky, šířky a hutněné hloubky plochy spočítá objem a následně hmotnost v tunách (nebo metrických tunách), přičemž u každého výsledku zobrazuje použitou hustotu směsi. Podporuje více tvarů plochy (obdélník, kruh, trojúhelník, nebo zadanou plochu přímo), možnost přidat více částí plochy s různou hloubkou a přepínání mezi imperiálními a metrickými jednotkami. Nástroj umožňuje zvolit hustotu směsi z předvolených hodnot (145 lb/ft³, 110 lb/yd² na palec podle DOT pravidla, 149,8 lb/ft³ odpovídající 2 400 kg/m³) nebo zadat vlastní hodnotu, případně využít maximální teoretickou hustotu (Gmm) z vlastního návrhu směsi. Dále počítá počet nákladních vozů potřebných k rozvozu materiálu podle zadané kapacity vozu a při zadání ceny za tunu vyčíslí i celkové náklady na materiál. Z dodaných údajů vyplývá, že nástroj je zdarma dostupný bez registrace, nenabízí API ani není uveden jako open-source. Rozhraní je v angličtině, o české verzi není v dostupných podkladech zmínka.
+Klíčové vlastnosti
+- Výpočet tun asfaltu podle délky, šířky a hloubky
+- Podpora obdélníku, kruhu, trojúhelníku i vlastní plochy
+- Více částí plochy s rozdílnou hloubkou v jednom výpočtu
+- Volba hustoty směsi nebo zadání vlastní hodnoty Gmm
+Časté dotazy
+Co přesně kalkulačka spočítá?
+Podle délky, šířky a hutněné hloubky plochy spočítá objem a hmotnost asfaltu v tunách, k tomu počet nákladních vozů potřebných k rozvozu a při zadání ceny za tunu i celkové náklady na materiál.
+Kolik stojí používání nástroje?
+Nástroj je zdarma dostupný bez registrace.
+Pro koho je kalkulačka určená a jak se používá?
+Hodí se pro plánování asfaltování příjezdových cest, parkovišť nebo pruhů – stačí zadat rozměry plochy, zvolit tvar a hutněnou hloubku, případně vybrat hustotu směsi nebo zadat vlastní Gmm hodnotu.
+Kategorie

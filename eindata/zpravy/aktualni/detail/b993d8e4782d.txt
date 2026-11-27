@@ -1,0 +1,17 @@
+Blank Calendar
+Generátor prázdného kalendáře na rok 2026 pro tisk v prohlížeči – vyplňte dny přímo online a stáhněte jako PDF, PNG nebo SVG bez registrace.
+O nástroji
+Blank Calendar je webový nástroj pro vytvoření tiskového kalendáře na rok 2026, datovaného nebo nedatovaného. Uživatel si může zvolit začátek týdne (neděle, pondělí nebo sobota), formát papíru (Letter, A4, A5, Legal, Tabloid nebo A3) a orientaci na výšku či na šířku. Před tiskem lze kliknout na jednotlivé dny a napsat do nich poznámky, narozeniny nebo směny – text zůstává uložený v prohlížeči a propíše se do výsledného souboru. Nástroj nabízí několik stylů políček pro dny: prázdné, linkované, tečkovaný rastr nebo jemnou mřížku, a lze přidat sloupec na poznámky, čísla týdnů nebo zvýraznění víkendů. Dostupné jsou i svátky pro patnáct zemí, které se vytisknou přímo v políčkách datovaného kalendáře. Hotový kalendář jde stáhnout jako vektorové PDF připravené k tisku ve skutečné velikosti (100 %), 300 dpi PNG nebo SVG, a to i jako celoroční soubor s až 24 měsíci na jednotlivých stránkách. Podle webu je služba zdarma bez nutnosti registrace nebo zadávání e-mailu, soubor se generuje přímo v prohlížeči a nikam se nenahrává. Autoři povolují osobní, školní i kancelářské použití, prodej nebo další šíření souborů ale není dovoleno. Rozhraní nástroje je v angličtině.
+Klíčové vlastnosti
+- Volba začátku týdne – neděle, pondělí nebo sobota
+- Šest formátů papíru od A5 po A3 i Tabloid
+- Vyplnění dnů poznámkami přímo v prohlížeči před tiskem
+- Styly políček: prázdné, linkované, tečkovaný rastr nebo mřížka
+Časté dotazy
+Co Blank Calendar umí?
+Vytvoří tiskový kalendář na rok 2026, datovaný i nedatovaný, s možností volby začátku týdne, formátu papíru a stylu políček. Dny lze před tiskem vyplnit poznámkami a stáhnout jako PDF, PNG nebo SVG.
+Kolik stojí Blank Calendar?
+Nástroj je zcela zdarma, bez nutnosti registrace nebo zadávání e-mailu, a výsledný soubor neobsahuje vodoznak.
+Jak začít s tvorbou kalendáře?
+Stačí na webu zvolit dataci, začátek týdne, formát papíru a styl políček, kliknutím do dnů doplnit poznámky a kalendář rovnou stáhnout – vše se generuje přímo v prohlížeči bez nahrávání na server.
+Kategorie

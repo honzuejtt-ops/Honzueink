@@ -1,0 +1,17 @@
+Free Image to Video
+Nástroj promění nahranou fotku ve video se zvukem, první klip bez registrace, bez omezení na placeném plánu.
+O nástroji
+Free Image to Video je online nástroj, který z jedné fotografie vytvoří krátké video doplněné zvukem. Stačí nahrát portrét, fotku domácího mazlíčka, produktový snímek nebo starou rodinnou fotografii, popsat, co se má ve videu hýbat a co by mělo být slyšet, a stáhnout výsledný klip. Videa se generují pomocí modelu MiniMax H3. První video lze vytvořit zcela bez registrace a bez zadávání platební karty, v rozlišení 480p a délce 4 sekundy. Po založení bezplatného účtu lze pokračovat bez denního omezení počtu klipů ve stejné kvalitě. Placený plán pak podle důkazu umožňuje delší a ostřejší videa (MiniMax H3 v 768p až do 15 sekund) bez měsíčního limitu, přičemž cena je uvedena od 16,90 USD. Všechny vygenerované klipy obsahují zvuk přímo v souboru a nejsou opatřeny vodoznakem; nástroj nepovoluje nahrávání obsahu pro dospělé ani explicitního materiálu.
+Klíčové vlastnosti
+- Vytvoření videa se zvukem z jedné fotografie
+- První klip bez registrace a bez karty
+- Model MiniMax H3 pro generování videa
+- Bezplatný účet bez denního limitu klipů
+Časté dotazy
+Co nástroj umí?
+Z nahrané fotografie (portrét, mazlíček, produkt, rodinný snímek) vytvoří krátké video se zvukem pomocí modelu MiniMax H3, stačí popsat, co se má hýbat a co by mělo být slyšet.
+Kolik to stojí?
+První video je zdarma bez registrace v 480p a délce 4 sekundy, po založení účtu lze pokračovat bez denního omezení; placený plán od 16,90 USD nabízí delší videa až 15 sekund v 768p bez měsíčního limitu.
+Jak začít?
+Stačí nahrát fotku na web a stisknout tlačítko pro vygenerování videa, žádný účet ani platební karta nejsou na začátku potřeba.
+Kategorie

@@ -1,0 +1,17 @@
+EU AI Act Classifier
+Placená služba, která na základě dotazníku o vašem AI systému vypracuje písemnou zprávu o klasifikaci rizika podle EU AI Act.
+O nástroji
+Nástroj funguje formou krátkého dotazníku (asi 30 otázek v 8 sekcích) o tom, co váš AI systém dělá, kdo jej používá a kde se prodává. Na základě odpovědí tým vypracuje a e-mailem doručí zprávu, která zařadí systém do jedné ze čtyř rizikových kategorií podle EU AI Act – zakázané, vysoce rizikové, omezené nebo minimální riziko – včetně odůvodnění, mapování konkrétních povinností (dokumentace, logování, lidský dohled, posouzení shody, transparentnost), termínů a odhadu penalizačního rizika. Součástí je i krokový akční plán v jednoduché angličtině a samostatná pozornost je věnována AI agentům, kteří jednají autonomně. Klasifikační zpráva stojí 49 USD, dodání do 3 pracovních dnů, s 30denní garancí vrácení peněz. Volitelně lze přikoupit službu „AI Act Watch“ za 19 USD měsíčně, která zprávu průběžně aktualizuje podle vývoje legislativy a posílá upozornění na termíny. Nástroj výslovně uvádí, že nejde o právní poradenství, ale o technickou předklasifikaci, a lze si prohlédnout ukázkovou zprávu před zaplacením.
+Klíčové vlastnosti
+- Dotazník s cca 30 otázkami v 8 sekcích
+- Zařazení do jedné ze 4 rizikových kategorií EU AI Act
+- Mapování povinností: dokumentace, logování, lidský dohled
+- Odhad termínů a penalizačního rizika
+Časté dotazy
+Co přesně obsahuje klasifikační zpráva?
+Zařazení vašeho AI systému do jedné ze čtyř rizikových kategorií (zakázané, vysoce rizikové, omezené, minimální) s odůvodněním, mapování konkrétních povinností jako dokumentace, logování či lidský dohled, přehled termínů, odhad penalizačního rizika a krokový akční plán v jednoduché angličtině.
+Kolik to stojí a jak rychle zprávu dostanu?
+Zpráva stojí 49 USD a je doručena e-mailem do 3 pracovních dnů, s 30denní garancí vrácení peněz. Volitelně lze přikoupit službu AI Act Watch za 19 USD měsíčně na průběžné sledování změn legislativy.
+Jak začít a pro koho je nástroj určen?
+Stačí vyplnit krátký dotazník o tom, co váš AI systém dělá, kdo jej používá a kde se prodává – trvá to asi deset minut a vše probíhá e-mailem bez telefonátů. Hodí se pro firmy prodávající AI produkty v Evropě, včetně těch s autonomními AI agenty.
+Kategorie

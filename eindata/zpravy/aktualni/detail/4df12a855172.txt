@@ -1,0 +1,17 @@
+Zapmatte
+Online nástroj odstraní zelené pozadí z videa a vrátí průhledný WebM, alfa masku nebo MP4 s novým pozadím; prvních 10 sekund zdarma, bez registrace.
+O nástroji
+Zapmatte odstraňuje green screen z nahraných videí (MP4, MOV, WebM) o délce do 3 minut. Zpracování probíhá ve třech krocích – AI matting pro měkké hrany vlasů a prstů, keyování barvy pozadí a odstranění zeleného nádechu (spill) ze světla odraženého na pokožce či vlasech. Výstupem jsou čtyři soubory: ProRes 4444 MOV s plnou průhledností pro Premiere Pro, After Effects, Final Cut Pro či DaVinci Resolve, menší transparentní WebM pro OBS a web, alfa maska ve formátu MP4 a při výběru pozadí i hotové MP4 s barvou nebo obrázkem na pozadí. Služba funguje na principu plateb za sekundu zpracovaného videa, nejde o měsíční předplatné. Prvních 10 sekund videa je zdarma, poté se platí z jednorázově zakoupených kreditů – balíček 60 kreditů za 4,99 USD (přibližně 0,083 USD za sekundu), 150 kreditů za 9,99 USD (0,067 USD/s) nebo 400 kreditů za 19,99 USD. Režim „Fine edges“ za 2 kredity na sekundu zlepšuje vykreslení vlasů, ale je pomalejší. Nástroj rozpoznává i modré nebo tyrkysové pozadí, zelené oblečení či předměty v záběru však způsobují skvrny nebo prosvítání.
+Klíčové vlastnosti
+- AI matting pro měkké hrany vlasů a prstů
+- odstranění zeleného nádechu (spill) z pokožky
+- výstup ProRes 4444, WebM, alfa maska i MP4
+- podpora zeleného i modrého/tyrkysového pozadí
+Časté dotazy
+Co přesně Zapmatte umí?
+Odstraní zelené (nebo modré) pozadí z nahraného videa a vrátí čtyři soubory – průhledné ProRes 4444 MOV, menší WebM, alfa masku a volitelně MP4 s novým pozadím. AI matting zajistí měkké hrany vlasů a prstů a zároveň odstraní zelený nádech ze světla odraženého na kůži.
+Kolik to stojí?
+Prvních 10 sekund videa je zdarma bez registrace, dál se platí z jednorázově koupených kreditů – například 60 kreditů za 4,99 USD (cca 0,083 USD/s) nebo 400 kreditů za 19,99 USD. Režim „Fine edges“ stojí dvojnásobek kreditů za sekundu.
+Pro koho je Zapmatte vhodný a jak začít?
+Hodí se pro tvůrce videí, streamery a editory, kteří potřebují rychle zpracovat green screen záběry pro Premiere, After Effects, DaVinci Resolve, CapCut nebo OBS. Stačí nahrát video na webu bez registrace a vybrat požadovaný výstup.
+Kategorie

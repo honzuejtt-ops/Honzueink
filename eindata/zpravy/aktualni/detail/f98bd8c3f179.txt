@@ -1,0 +1,17 @@
+Sensitivity Converter
+Převádí citlivost myši mezi FPS hrami (CS2, VALORANT, Fortnite, Apex Legends, Overwatch 2 a dalšími) tak, aby zůstala zachována stejná fyzická dráha otočení.
+O nástroji
+Převádí citlivost myši mezi FPS hrami tak, aby zůstala stejná fyzická dráha otočení (cm/360 i in/360). Uživatel zadá zdrojovou hru, DPI a citlivost a nástroj dopočítá odpovídající nastavení pro cílovou hru. Podporuje mimo jiné CS2, VALORANT, Fortnite, Apex Legends a Overwatch 2, zobrazuje eDPI a umožňuje zadat vlastní yaw hodnotu pro hry, které nejsou v seznamu profilů. Součástí nástroje jsou i pokročilé funkce: přepočet FOV mezi konvencemi (vertikální, diagonální, horizontální při 4:3), doladění citlivosti pro přiblížení (ADS) na základě vlastního měření scope a kalibrace lineární škály pro neznámé hry pomocí naměřené citlivosti a vzdálenosti otočení. Nastavení lze uložit v prohlížeči, sdílet odkazem nebo exportovat jako report ke stažení či tisku. Výsledky mají nastavitelnou přesnost zobrazení (3, 5 nebo 8 desetinných míst), přičemž zobrazovací zaokrouhlení neovlivňuje samotný výpočet. Nástroj se na webu označuje jako bezplatný převodník citlivosti. Je zmíněn jako open source a dostupný i jako zdrojový kód na GitHubu. Rozhraní je v angličtině, API ani česká lokalizace nejsou uvedeny.
+Klíčové vlastnosti
+- Zachování stejné fyzické dráhy otočení (cm/360, in/360)
+- Podpora CS2, VALORANT, Fortnite, Apex Legends, Overwatch 2
+- Vlastní yaw hodnota pro nepodporované hry
+- Přepočet FOV mezi konvencemi (vertikální, diagonální, horizontální)
+Časté dotazy
+Co přesně Sensitivity Converter umí?
+Převede citlivost myši ze zdrojové FPS hry do cílové tak, aby zůstala zachována stejná fyzická dráha otočení (cm/360 i in/360), a zároveň zobrazí eDPI. Umí také přepočítat FOV mezi konvencemi, doladit citlivost pro ADS podle vlastního měření a kalibrovat yaw pro hry, které nejsou v seznamu.
+Kolik stojí používání nástroje?
+Nástroj je zdarma, je open source a jeho zdrojový kód je dostupný na GitHubu.
+Jak začít a pro koho je nástroj určen?
+Stačí zadat zdrojovou hru, DPI a citlivost, vybrat cílovou hru a nástroj okamžitě dopočítá odpovídající nastavení. Je určen hráčům FPS her, kteří chtějí při přechodu mezi hrami zachovat stejný pocit z ovládání myši.
+Kategorie

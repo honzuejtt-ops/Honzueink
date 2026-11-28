@@ -1,0 +1,17 @@
+AgentCheck
+AgentCheck testuje veřejný chat vašeho AI chatbota a odhalí, co skutečně slibuje zákazníkům – od CyberShield.
+O nástroji
+AgentCheck prochází veřejný chat vašeho chatbota stejně jako běžný zákazník – nejprve s obyčejnými dotazy, poté s otravnými a tlačícími otázkami – a zaznamenává přesně to, co bot odpovídá. Kontroluje, zda bot nedává slevy či sliby, které firma nikdy neschválila, zda neprozrazuje údaje jiných zákazníků nebo interní poznámky, zda se ceny a podmínky shodují s webem, zda zůstává slušný i na drzé dotazy a zda se nezasekává ve smyčkách odpovědí. Výsledkem je písemná zpráva v běžné angličtině, bez nutnosti poskytnout hesla, telefonáty nebo přístup ke kódu. Služba nabízí tři varianty: jednorázový AgentCheck Audit za 149 dolarů (kontrola pravidel a úniku informací, porovnání cen s webem, písemná zpráva), AgentCheck Full Audit za 299 dolarů (hlubší kontrola všech pěti oblastí plus revize nastavení – připojení, uložení API klíčů, limity a logování – s plánem oprav a bezplatnou opakovanou kontrolou do 30 dnů) a měsíční Agent Guard za 49 dolarů, který pravidelně opakuje kontroly veřejného chatu a upozorňuje na změny v odpovědích bota po aktualizacích. Nástroj je zmiňován s podporou API a ceny jsou pevné bez skrytého účtování podle hodin. Bezplatná verze auditu není v nabídce uvedena, dostupný je pouze zmíněný bezplatný mini-scanner jako vstupní bod před placeným auditem. Nástroj je určen firmám, které provozují AI chatboty nebo agenty a chtějí ověřit, co jejich bot skutečně říká zákazníkům a jaká rizika z toho plynou.
+Klíčové vlastnosti
+- Testuje veřejný chat jako běžný zákazník
+- Odhaluje neschválené slevy a sliby bota
+- Kontroluje únik dat jiných zákazníků
+- Porovnává ceny a podmínky bota s webem
+Časté dotazy
+Co přesně AgentCheck kontroluje?
+Projde veřejný chat vašeho bota jako zákazník – nejprve běžnými dotazy, pak otravnými a tlačícími – a ověří, zda nedává neschválené slevy, neprozrazuje cizí data, zda ceny sedí s webem a zda se nezasekává ve smyčkách. Full Audit navíc prověří propojení, uložení API klíčů, limity a logování.
+Kolik AgentCheck stojí?
+Jednorázový Audit vyjde na 149 dolarů, Full Audit na 299 dolarů (s plánem oprav a bezplatnou opakovanou kontrolou do 30 dnů) a měsíční Agent Guard na 49 dolarů za pravidelné opakování kontrol. Ceny jsou pevné, bez účtování podle hodin.
+Pro koho je AgentCheck a jak začít?
+Je určen firmám provozujícím AI chatboty či agenty, které chtějí vědět, co bot skutečně slibuje zákazníkům. Stačí zadat veřejný chat bota, nejsou potřeba hesla ani přístup ke kódu, k dispozici je i bezplatný mini-scanner jako úvodní krok.
+Kategorie

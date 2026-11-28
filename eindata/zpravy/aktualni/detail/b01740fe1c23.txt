@@ -1,0 +1,17 @@
+OmniaKey
+API brána nabízející jedním klíčem přístup k modelům GPT, Claude, Gemini i generátorům obrázků, videa a hudby s platbou podle spotřeby.
+O nástroji
+OmniaKey je API rozhraní pro vývojáře a AI aplikace, které pod jedním předplaceným klíčem zpřístupňuje velké množství modelů od různých poskytovatelů – mimo jiné OpenAI, Anthropic, Google, xAI, Alibaba Cloud, DeepSeek, Moonshot AI, MiniMax, Tencent Hunyuan, Midjourney, ByteDance (Kling, Seedance) nebo Suno. Rozhraní je kompatibilní s OpenAI API (endpoint api.omniakey.com/v1), takže lze snadno volat jak jazykové modely (např. GPT-6 Astra, Claude Opus 5, Gemini 3.1 Pro Preview s kontextem až 1M tokenů), tak generátory obrázků (Midjourney, GPT-Image 2.6 Flare, Nano Banana 2.1), videa (ByteDance Seedance 2.5) nebo hudby. Platí se podle skutečné spotřeby bez nutnosti vázat platební kartu – ceny jsou uvedeny transparentně u jednotlivých modelů, např. textové modely od cca 0,8–1,4 USD za milion vstupních tokenů, generování obrázku od 0,019 USD za kus a video od cca 0,11 USD za sekundu. Bezplatná varianta není v nabídce uvedena, jde o předplacený kredit s cenami za jednotlivá volání API.
+Klíčové vlastnosti
+- Jeden API klíč pro GPT, Claude, Gemini i další modely
+- Kompatibilní s OpenAI API (endpoint api.omniakey.com/v1)
+- Generování obrázků, videa i hudby přes stejné rozhraní
+- Platba podle skutečné spotřeby bez vázání karty
+Časté dotazy
+Co OmniaKey umí?
+Jde o API bránu, která pod jedním předplaceným klíčem zpřístupňuje jazykové modely (GPT, Claude, Gemini a další) i generátory obrázků, videa a hudby, přičemž rozhraní je kompatibilní s OpenAI API.
+Kolik OmniaKey stojí?
+Platí se podle spotřeby bez nutnosti vázat kartu, např. textové modely od cca 0,8–1,4 USD za milion vstupních tokenů, obrázek od 0,019 USD za kus a video od cca 0,11 USD za sekundu.
+Pro koho je OmniaKey určen a jak začít?
+Je určen vývojářům a AI aplikacím, kteří chtějí jedním klíčem volat více poskytovatelů modelů najednou; stačí si vytvořit API klíč, dobít kredit a volat endpoint api.omniakey.com/v1.
+Kategorie

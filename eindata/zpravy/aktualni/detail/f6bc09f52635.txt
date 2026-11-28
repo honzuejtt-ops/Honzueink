@@ -1,0 +1,27 @@
+Prevenci vám pohlídá aplikace Moje VZP, ukáže i poslední prohlídku
+Aplikace Moje VZP sama upozorní klienty pojišťovny, že je čas na preventivní prohlídku nebo screening, oznámila VZP 9. listopadu. Papírový dopis dál dostane, kdo aplikaci nevyužívá.
+#zdraví#prevence#mobilní aplikace#technologie
+Mobil cinkne a na displeji se objeví zpráva, že je čas jít k lékaři. Konec dohadům, jestli jste na prohlídce byli letos, nebo už předloni. Aplikace Moje VZP nově zve na preventivní prohlídky a podle věku i na některá screeningová vyšetření, která hradí veřejné zdravotní pojištění, uvedla VZP v tiskové zprávě. Screening je preventivní vyšetření třeba na rakovinu prsu nebo tlustého střeva. Podle VZP ji využívá přes 3,2 milionu klientů a je jedničkou mezi zdravotnickými aplikacemi v Česku.
+Kdo aplikaci nevyužívá, o nic nepřijde: papírový dopis dostane dál.
+Zjistěte, jak upozornění vypadá
+Na displeji se objeví upozornění s doporučením jít k lékaři nebo na screening, takzvaná push notifikace. Zároveň klientovi přijde e-mail, že v aplikaci čeká nová zpráva. Kdo chce, může si zasílání notifikací a e-mailů k prevenci a screeningům zase vypnout.
+Aplikace se ozve, až od poslední prohlídky uplyne doporučená doba. U praktika jsou to podle VZP například dva roky. Pozvánky mají podle ředitele VZP Ivana Duškova mířit na konkrétní věkové skupiny.
+Zaregistrujte se online nebo s průkazem
+Do aplikace se můžete registrovat online například přes bankovní identitu nebo Identitu občana. Podle VZP to trvá jen několik minut a zpřístupnění účtu proběhne okamžitě.
+Kdo tuhle cestu nechce, zvolí registrační formulář. Připraví si tři věci: průkaz pojištěnce, e-mailovou adresu a mobilní telefon. Po vyplnění formuláře mu přijde na uvedenou kontaktní adresu doporučenou poštou aktivační klíč, a to přibližně do 14 dnů. Obě cesty popisuje VZP v tiskové zprávě.
+Podívejte se, kdy jste byli naposledy u lékaře
+Kromě pozvánek umí aplikace ukázat, kdy jste naposledy byli na preventivní prohlídce u praktického lékaře, zubaře nebo gynekologa, včetně data, kdy ji lékař pojišťovně vykázal.
+Intervaly prohlídek shrnuje server Vitalia.cz. Podle něj se k praktikovi chodí bezplatně jednou za dva roky. Ke gynekologovi a k zubaři pak každý rok.
+💡 Zajímavost: Podle Vitalie aplikace zobrazuje i termín screeningu děložního hrdla, který se týká žen už od 15 let.
+Aplikace dává i přehled screeningových vyšetření, na která máte nárok, včetně jejich aktuálního stavu a možností dalšího absolvování.
+Nastavte si upozornění
+Upozornění na screeningová vyšetření si můžete nastavit e-mailem nebo push notifikacemi v mobilní aplikaci. Podle Vitalie by si ale ten, kdo chce notifikace dostávat, měl v aplikaci ověřit, zda jsou povolené. Stačí otevřít aplikaci a zkontrolovat nastavení.
+Počítejte s omezeními
+Aplikace je šikovná, ale všechno zatím neumí. Je fér to říct předem.
+Výsledky testů a vyšetření v ní neuvidíte, jen to, kdy jste na nich byli. Podle Vitalie z 13. listopadu aplikace zatím zobrazuje tři screeningové programy z osmi. Jde o rakovinu prsu od 45 let, rakovinu děložního hrdla od 15 let a rakovinu tlustého střeva a konečníku od 45 do 74 let. Ukazuje navíc jen vyšetření, která zaplatila pojišťovna, takže třeba mamografii za vlastní peníze v přehledu nenajdete.
+Podle Vitalie přicházejí údaje se zpožděním až tří měsíců. Když jste u lékaře byli nedávno a v aplikaci to zatím chybí, datum poslední prevence nebo screeningu si tam můžete zadat sami. Pojišťovna ho později nahradí informací od lékaře.
+Objednat se přes aplikaci k lékaři zatím nejde. Ředitel VZP Ivan Duškov mluví o tom, že dalším krokem by mohlo být napojení objednávkových systémů, aby se člověk po upozornění mohl na screening rovnou objednat. Zatím je to ale jen plán. Na prohlídku se tedy objednáte u svého lékaře jako dosud.
+Ověřeno z:
+- VZP ČR – tisková zpráva Aplikace Moje VZP zve nově na preventivní prohlídky i screening (9. 11. 2026)
+- VZP ČR – Co nabízí aplikace Moje VZP (stažené 21. 11. 2026)
+- Vitalia.cz – Aplikace VZP už zve na prevenci a screening (13. 11. 2026)

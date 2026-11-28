@@ -1,0 +1,17 @@
+EzRemove.pl
+Polský AI nástroj pro úpravu fotek a videí: odstranění pozadí, vodoznaků, magická guma a 4K vylepšení kvality.
+O nástroji
+EzRemove.pl je polské online AI studio zaměřené na úpravu fotografií a videí. Nabízí automatické odstranění pozadí (průhledné PNG nebo bílé pozadí pro Allegro), odstranění vodoznaků z fotek i videí (včetně TikToku), „magickou gumu“ na odstranění rušivých prvků z fotek a zvýšení rozlišení snímků na 4K (2× nebo 4× zvětšení). Zpracování probíhá podle uváděných údajů během několika sekund s automatickou detekcí pomocí AI. Export je k dispozici ve formátech PNG (s alfa kanálem) a JPG bez vodoznaku. Platba funguje na kreditní bázi bez předplatného – jednorázové balíčky začínají od 10 USD a nevyužité kredity nevyprší. Nově registrovaní uživatelé získají 3 kredity zdarma na vyzkoušení, odstranění pozadí stojí 1 kredit. Rozhraní je v polštině, čeština uvedena není.
+Klíčové vlastnosti
+- Odstranění pozadí s průhledným PNG nebo bílým pozadím pro Allegro
+- Odstranění vodoznaků z fotek i videí (TikTok)
+- Magická guma na rušivé prvky ve fotce
+- Zvýšení rozlišení na 4K (2× nebo 4× zvětšení)
+Časté dotazy
+Co všechno EzRemove.pl umí?
+Jde o online AI studio na úpravu fotek a videí: automatické odstranění pozadí (průhledné PNG nebo bílé pozadí pro Allegro), odstranění vodoznaků z fotek i videí, magickou gumu na rušivé prvky a zvýšení rozlišení snímků na 4K.
+Kolik to stojí a je k dispozici verze zdarma?
+Platí se kreditním systémem bez předplatného, jednorázové balíčky začínají od 10 USD a nevyužité kredity nevyprší. Noví uživatelé dostanou 3 kredity zdarma, odstranění pozadí stojí 1 kredit.
+Pro koho je nástroj vhodný a jak začít?
+Hodí se zejména pro prodejce (např. na Allegu) a tvůrce obsahu, kteří potřebují rychle upravit produktové fotky či video. Stačí se zaregistrovat, získat 3 kredity zdarma a nahrát fotku nebo video přímo na webu.
+Kategorie

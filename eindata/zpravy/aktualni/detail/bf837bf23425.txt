@@ -1,0 +1,17 @@
+AI Rap Video Forge
+Vytvoří krátké AI rapové video ze dvou nahraných fotek a textového promptu podle zvolené šablony.
+O nástroji
+AI Rap Video Forge umožňuje nahrát dvě fotografie (JPG nebo PNG, max. 10 MB) a na jejich základě vygenerovat krátké rapové video ve vertikálním formátu 9:16. Uživatel vybere šablonu scény – například studio s pomerančovým pozadím, neonovou pouliční scénu, střešní terasu nebo variantu s domácím mazlíčkem – doplní vlastní příběh do promptu a zvolí délku videa 5, 10 nebo 15 sekund. Výsledné video lze před stažením zkontrolovat v náhledu. Služba funguje na systému jednorázových kreditů bez předplatného. Balíček Basic za 9,90 USD obsahuje 30 kreditů, Pro za 19,90 USD nabízí 70 kreditů a Studio za 29,90 USD zahrnuje 110 kreditů, přičemž kredity nevyprší a v případě neúspěšného generování videa se vrací zpět. Bezplatná verze podle dostupných informací není k dispozici.
+Klíčové vlastnosti
+- Generování videa ze dvou nahraných fotek
+- Vertikální formát 9:16 pro sociální sítě
+- Výběr šablon – studio, neonová ulice, střecha, zvíře
+- Délka videa 5, 10 nebo 15 sekund na výběr
+Časté dotazy
+Co přesně AI Rap Video Forge umí?
+Z dvou nahraných fotek a textového promptu vygeneruje krátké rapové video podle zvolené šablony, například studio s pomerančovým pozadím nebo neonovou pouliční scénu. Video je ve vertikálním formátu 9:16 a lze zvolit délku 5, 10 nebo 15 sekund.
+Kolik AI Rap Video Forge stojí?
+Služba funguje na jednorázových kreditech bez předplatného – balíček Basic za 9,90 USD obsahuje 30 kreditů, Pro za 19,90 USD 70 kreditů a Studio za 29,90 USD 110 kreditů. Kredity nevyprší a při neúspěšném generování se vrací zpět.
+Jak začít a pro koho je nástroj vhodný?
+Stačí nahrát dvě jasné fotky (JPG nebo PNG, max. 10 MB), vybrat šablonu scény, doplnit vlastní příběh do promptu a zvolit délku videa. Hodí se pro každého, kdo chce vytvořit originální personalizované rapové video pro sebe, dvojici nebo i domácího mazlíčka.
+Kategorie

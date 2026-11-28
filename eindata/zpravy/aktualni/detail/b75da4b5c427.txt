@@ -1,0 +1,17 @@
+Optofriend
+Optofriend generuje z přepisu YouTube videa SEO optimalizované názvy, popisy, klíčová slova, hashtagy a časové značky kapitol.
+O nástroji
+Optofriend je nástroj pro optimalizaci YouTube videí pomocí AI, který pracuje přímo s obsahem přepisu (transkriptu) videa. Systém extrahuje data z videa, vytvoří strukturovaný přepis z titulků nebo AI transkripce, analyzuje témata a strukturu obsahu a následně generuje návrhy optimalizovaných názvů, SEO popisů, sad klíčových slov, časových značek kapitol a hashtagů. Výstupy jsou podle popisu validovány proti zdrojovému obsahu, aby se předešlo nepřesným SEO návrhům. Mezi dostupné nástroje patří generátor titulků, popisů, tagů, časových značek, přepisů i nápadů na videa, doplněné o bezplatné pomůcky jako extraktor tagů, vyhledávač ID videa nebo kalkulačku výdělků. Nástroj nabízí bezplatný tarif s 100 kredity měsíčně a připojením jednoho kanálu, placený tarif Plus za 15 USD měsíčně (1 500 kreditů, až 2 kanály) a tarif Pro za 39 USD měsíčně (5 000 kreditů, až 10 kanálů). Rozhraní je v angličtině, dostupné je i v dalších jazycích jako němčina, španělština či polština, čeština uvedena není.
+Klíčové vlastnosti
+- Generování názvů, popisů a klíčových slov z přepisu videa
+- Automatické časové značky kapitol
+- Generátor hashtagů a nápadů na videa
+- Validace výstupů proti zdrojovému obsahu proti halucinacím
+Časté dotazy
+Co přesně Optofriend umí vygenerovat z videa?
+Z přepisu YouTube videa vytvoří SEO optimalizované názvy, popisy, klíčová slova, hashtagy a časové značky kapitol, vše validované proti obsahu videa.
+Kolik Optofriend stojí?
+Základní tarif je zdarma se 100 kredity měsíčně a 1 kanálem, tarif Plus vyjde na 15 USD měsíčně (1 500 kreditů, 2 kanály) a tarif Pro na 39 USD měsíčně (5 000 kreditů, 10 kanálů).
+Pro koho je nástroj určený a jak začít?
+Je určený YouTuberům a tvůrcům obsahu, kteří chtějí zlepšit SEO svých videí; stačí se zaregistrovat zdarma a připojit kanál bez nutnosti platit kartou.
+Kategorie

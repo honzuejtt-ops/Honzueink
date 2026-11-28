@@ -1,0 +1,17 @@
+Lightscale AI
+AI builder, který podle slovního popisu vytvoří firemní aplikaci (CRM, e-shop, evidence) se zabezpečeným přihlášením a správou přístupů.
+O nástroji
+Lightscale AI umožňuje popsat potřebnou firemní aplikaci – například CRM, e-shop nebo evidenci docházky – a nástroj ji podle zadání vygeneruje. Vytvářet a upravovat aplikaci lze začít z vlastního popisu, nahraného Excel souboru nebo z připravené šablony. Aplikace obsahuje vestavěné zabezpečené přihlášení (heslo, passkey, 2FA) a kontrolu přístupu, data se při každé úpravě migrují a zachovávají. Technologicky stojí nástroj na vlastním jazyce AIL (AI Language), do kterého jsou přímo zabudovaná pravidla přístupu, práce s osobními údaji a ukládání záznamů; kompilátor pak generuje přihlášení, databázi i migrace. Firma sídlí ve švýcarském Zugu, hosting probíhá ve Švýcarsku a aplikace zpracovávající osobní údaje dostávají dokumentaci ke GDPR a švýcarskému FADP. Zdrojový kód lze exportovat jako React+Node, .NET nebo Java. Tvorba a úpravy aplikace jsou zdarma bez kreditů a bez poplatku za jednotlivé prompty. První aplikace je hostovaná zdarma bez časového omezení, hosting dalších aplikací nebo stažení zdrojového kódu stojí 50 CHF měsíčně za projekt. Informace o veřejném API ani o open-source licenci se na webu nepodařilo dohledat.
+Klíčové vlastnosti
+- Generování aplikace z popisu, Excelu nebo šablony
+- Zabezpečené přihlášení s heslem, passkey a 2FA
+- Automatická migrace dat při každé úpravě
+- Export zdrojového kódu jako React+Node, .NET nebo Java
+Časté dotazy
+Co Lightscale AI umí vytvořit?
+Podle slovního popisu, nahraného Excelu nebo šablony vygeneruje firemní aplikaci jako CRM, e-shop nebo evidenci docházky, včetně zabezpečeného přihlášení a správy přístupů.
+Kolik Lightscale AI stojí?
+Tvorba a úpravy aplikace jsou zdarma bez kreditů a poplatků za prompty, první aplikace je hostovaná zdarma natrvalo. Hosting dalších aplikací nebo stažení zdrojového kódu stojí 50 CHF měsíčně za projekt.
+Jak začít s Lightscale AI?
+Stačí popsat potřebnou aplikaci, nahrát Excel nebo vybrat šablonu a nástroj aplikaci vygeneruje, kterou pak lze dál upravovat a hostovat zdarma.
+Kategorie

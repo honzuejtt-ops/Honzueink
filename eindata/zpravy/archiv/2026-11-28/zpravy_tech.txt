@@ -1,1 +1,217 @@
-|T|Žádné zprávy|D||P|Nebyly nalezeny.|X|Zkuste to později.|E|
+|T|Čínský AI model GLM-5.4 přináší architekturu Loop Transformer|D|28.11.2026 14:00|P|Čínské AI laboratoře překotně vyvíjí nové modely a dalším z nich je GLM-5.4 od Z.ai. Tento model přináší novou architekturu Loop Transformer.|M|SvětHW|X|Čínské AI laboratoře překotně vyvíjí nové modely a dalším z nich je GLM-5.4 od Z.ai. Tento model přináší novou architekturu Loop Transformer.
+AI společnosti v Číně se kvůli omezeným výpočetním kapacitám (což je také dáno banem vývozu výkonných AI čipů z USA) stále častěji orientují na netradiční architektury modelů. Společnost Z.ai proto představila svůj nový vlajkový model GLM-5.4, který využívá novou architekturu Loop Transformer. Namísto klasického lineárního průchodu daty model v rámci jednoho tokenu vykoná blok 28 vrstev základního modelu GLM-5 dvakrát. Tímto způsobem dokáže LLM hlouběji uvažovat bez nutnosti zvyšovat počet parametrů, takže dosahuje úrovně inteligence srovnatelné s modely o velikosti 2 až 3 bilionů parametrů. Základní model, který se opakuje, má přitom 750 miliard parametrů.
+Z hlediska výkonu a rychlosti Z.ai implementovalo několik optimalizací, aby dvojnásobné procházení vrstev nezpomalilo běh modelu. Model využívá sdílenou KV cache, která pracuje na principu klouzavého okna, takže druhý průchod nebere 2krát tolik paměti, ale pouze prostor tohoto okna odpovídající zhruba jednomu průchodu. GLM-5.4 dosahuje v době nízkého zatížení serverů rychlosti až 200 tokenů za sekundu, zatímco při provozu ve špičce se pohybuje mezi 70 a 80 tokeny za sekundu.
+Zajímavostí je také to, že počet generovaných výstupních tokenů u náročných benchmarků klesl o 10 až 14 % díky nižšímu počtu tokenů spojených s přemýšlením. Výsledkem je vyšší efektivita, nicméně model má stále tendenci se někdy zacyklit v procesech sebeopravování, což sice zvyšuje přesnost, ale prodlužuje čas odpovědi. Schopnosti modelu by měly být dostatečné na to, aby dokázal vytvářet modely v CADu, počítačové hry (viz úvodní foto) nebo interaktivní 3D scény.
+K dispozici je zatím přes chatovací rozhraní Z.ai a specializovaný plán GLM Coding, přičemž API volání bude dostupné v blízké době (tam je stále maximem GLM-5.3). Společnost plánuje v budoucnu vydat i menší varianty modelu o velikostech 1B, 4B a 30B a následně zveřejnit váhy samotného modelu po dokončení bezpečnostních úprav.|E|
+|T|Žádné zprávy|D|28.11. 12:00|P|Nebyly nalezeny.|X|Zkuste to později.|E|
+|T|Další aplikace logují gigabajty na SSD, tentokrát Razer 7.1 Surround Sound|D|28.11.2026 11:20|P|Po kauze ovladačů AMD a Nvidia nyní bude mnoho lidí kontrolovat, jak moc logovacích záznamů zapisují nejrůznější aplikace. Nyní se mluví o Razeru.|M|SvětHW|X|Po kauze ovladačů AMD a Nvidia nyní bude mnoho lidí kontrolovat, jak moc logovacích záznamů zapisují nejrůznější aplikace. Nyní se mluví o Razeru.
+Nedávno se rozhořela menší kauza kolem ovladačů AMD a Nvidie, které kvůli chybám zapisovaly na úložiště více dat, než by při běžných podmínkách měly. Dá se očekávat, že nyní budou lidé kontrolovat, jak to s tím zápisem vlastně je. Nebude asi překvapivé, když se nyní podobná zkoumání objeví i u jiných aplikací, přičemž první takovou obětí zvýšeného zájmu se stala utilita Razer 7.1 Surround Sound.
+V praxi se to projevuje tak, že proces rzappengine.exe neustále zapisuje data na disk i v situacích, kdy je aplikace v naprostém klidu. Rychlost těchto zápisů se pohybuje mezi 0,6 MB/s a 1 MB/s. Pokud uživatel přes aplikaci přehrává audio, hodnota stoupá k 1 MB/s a poté neklesá až do restartu programu. Jeden z uživatelů na Redditu například zaznamenal zápis 3,2 GB dat za zhruba hodinu.
+Pro většinu moderních SSD s vysokým TBW by tyto hodnoty neměly být ani zdaleka kritické, nicméně trvalý zápis v řádu megabajtů za sekundu může mít u menších SSD (např. 256 GB) v dlouhodobém horizontu mírný negativní vliv na jejich životnost. Otázkou tedy je, zda je pro aplikaci tohoto typu opravdu nutné zapisovat takové množství dat a během hodiny vytvořit 3GB logovací soubor. Pokud by se uživatel rozhodl logovací podproces Razeru zastavit, celá aplikace přestane fungovat.|E|
+|T|EzRemove.pl|D|28.11.2026 07:22|P|Polský AI nástroj pro úpravu fotek a videí: odstranění pozadí, vodoznaků, magická guma a 4K vylepšení kvality.|M|EJAJ|X|EzRemove.pl
+Polský AI nástroj pro úpravu fotek a videí: odstranění pozadí, vodoznaků, magická guma a 4K vylepšení kvality.
+O nástroji
+EzRemove.pl je polské online AI studio zaměřené na úpravu fotografií a videí. Nabízí automatické odstranění pozadí (průhledné PNG nebo bílé pozadí pro Allegro), odstranění vodoznaků z fotek i videí (včetně TikToku), „magickou gumu“ na odstranění rušivých prvků z fotek a zvýšení rozlišení snímků na 4K (2× nebo 4× zvětšení). Zpracování probíhá podle uváděných údajů během několika sekund s automatickou detekcí pomocí AI. Export je k dispozici ve formátech PNG (s alfa kanálem) a JPG bez vodoznaku. Platba funguje na kreditní bázi bez předplatného – jednorázové balíčky začínají od 10 USD a nevyužité kredity nevyprší. Nově registrovaní uživatelé získají 3 kredity zdarma na vyzkoušení, odstranění pozadí stojí 1 kredit. Rozhraní je v polštině, čeština uvedena není.
+Klíčové vlastnosti
+- Odstranění pozadí s průhledným PNG nebo bílým pozadím pro Allegro
+- Odstranění vodoznaků z fotek i videí (TikTok)
+- Magická guma na rušivé prvky ve fotce
+- Zvýšení rozlišení na 4K (2× nebo 4× zvětšení)
+Časté dotazy
+Co všechno EzRemove.pl umí?
+Jde o online AI studio na úpravu fotek a videí: automatické odstranění pozadí (průhledné PNG nebo bílé pozadí pro Allegro), odstranění vodoznaků z fotek i videí, magickou gumu na rušivé prvky a zvýšení rozlišení snímků na 4K.
+Kolik to stojí a je k dispozici verze zdarma?
+Platí se kreditním systémem bez předplatného, jednorázové balíčky začínají od 10 USD a nevyužité kredity nevyprší. Noví uživatelé dostanou 3 kredity zdarma, odstranění pozadí stojí 1 kredit.
+Pro koho je nástroj vhodný a jak začít?
+Hodí se zejména pro prodejce (např. na Allegu) a tvůrce obsahu, kteří potřebují rychle upravit produktové fotky či video. Stačí se zaregistrovat, získat 3 kredity zdarma a nahrát fotku nebo video přímo na webu.
+Kategorie|E|
+|T|Lightscale AI|D|28.11.2026 07:22|P|AI builder, který podle slovního popisu vytvoří firemní aplikaci (CRM, e-shop, evidence) se zabezpečeným přihlášením a správou přístupů.|M|EJAJ|X|Lightscale AI
+AI builder, který podle slovního popisu vytvoří firemní aplikaci (CRM, e-shop, evidence) se zabezpečeným přihlášením a správou přístupů.
+O nástroji
+Lightscale AI umožňuje popsat potřebnou firemní aplikaci – například CRM, e-shop nebo evidenci docházky – a nástroj ji podle zadání vygeneruje. Vytvářet a upravovat aplikaci lze začít z vlastního popisu, nahraného Excel souboru nebo z připravené šablony. Aplikace obsahuje vestavěné zabezpečené přihlášení (heslo, passkey, 2FA) a kontrolu přístupu, data se při každé úpravě migrují a zachovávají. Technologicky stojí nástroj na vlastním jazyce AIL (AI Language), do kterého jsou přímo zabudovaná pravidla přístupu, práce s osobními údaji a ukládání záznamů; kompilátor pak generuje přihlášení, databázi i migrace. Firma sídlí ve švýcarském Zugu, hosting probíhá ve Švýcarsku a aplikace zpracovávající osobní údaje dostávají dokumentaci ke GDPR a švýcarskému FADP. Zdrojový kód lze exportovat jako React+Node, .NET nebo Java. Tvorba a úpravy aplikace jsou zdarma bez kreditů a bez poplatku za jednotlivé prompty. První aplikace je hostovaná zdarma bez časového omezení, hosting dalších aplikací nebo stažení zdrojového kódu stojí 50 CHF měsíčně za projekt. Informace o veřejném API ani o open-source licenci se na webu nepodařilo dohledat.
+Klíčové vlastnosti
+- Generování aplikace z popisu, Excelu nebo šablony
+- Zabezpečené přihlášení s heslem, passkey a 2FA
+- Automatická migrace dat při každé úpravě
+- Export zdrojového kódu jako React+Node, .NET nebo Java
+Časté dotazy
+Co Lightscale AI umí vytvořit?
+Podle slovního popisu, nahraného Excelu nebo šablony vygeneruje firemní aplikaci jako CRM, e-shop nebo evidenci docházky, včetně zabezpečeného přihlášení a správy přístupů.
+Kolik Lightscale AI stojí?
+Tvorba a úpravy aplikace jsou zdarma bez kreditů a poplatků za prompty, první aplikace je hostovaná zdarma natrvalo. Hosting dalších aplikací nebo stažení zdrojového kódu stojí 50 CHF měsíčně za projekt.
+Jak začít s Lightscale AI?
+Stačí popsat potřebnou aplikaci, nahrát Excel nebo vybrat šablonu a nástroj aplikaci vygeneruje, kterou pak lze dál upravovat a hostovat zdarma.
+Kategorie|E|
+|T|freeaiapi.ai|D|28.11.2026 07:22|P|Jednotné API rozhraní pro GPT, Claude, Gemini, DeepSeek a Qwen – kompatibilní s OpenAI SDK, s cenami až o 30 % nižšími než oficiální.|M|EJAJ|X|freeaiapi.ai
+Jednotné API rozhraní pro GPT, Claude, Gemini, DeepSeek a Qwen – kompatibilní s OpenAI SDK, s cenami až o 30 % nižšími než oficiální.
+O nástroji
+freeaiapi.ai nabízí jeden API klíč pro přístup ke 181 modelům od různých poskytovatelů, mezi nimi GPT, Claude, Gemini, DeepSeek a Qwen. Rozhraní je plně kompatibilní s OpenAI SDK, stačí změnit base URL a API klíč a stávající kód funguje beze změny. Podporován je i formát Anthropic Messages pro nástroje jako Claude Code, Cline, Cursor nebo OpenCode, včetně streamování odpovědí. Ceny jednotlivých modelů jsou podle důkazu až o 30 % nižší než oficiální ceníky poskytovatelů, konkrétní srovnání je uvedeno u každého modelu (např. claude-opus-5-5 za 2,80 USD/14,00 USD za milion vstupních/výstupních tokenů oproti oficiálním 4,00 USD/20,00 USD). Po registraci lze propojením Telegramu a připojením ke kanálu získat kredit 1 USD zdarma bez nutnosti zadávat platební kartu, poté se platí za token z předplaceného zůstatku. Služba je nezávislým API gatewayem a není afiliovaná s OpenAI, Anthropic ani Google.
+Klíčové vlastnosti
+- Jeden API klíč pro 181 modelů od různých poskytovatelů
+- Plná kompatibilita s OpenAI SDK a Chat Completions API
+- Podpora formátu Anthropic Messages pro Claude Code, Cline, Cursor
+- Streamování odpovědí v reálném čase
+Časté dotazy
+Co nástroj umí?
+Poskytuje jeden API klíč pro přístup ke 181 modelům (GPT, Claude, Gemini, DeepSeek, Qwen) přes rozhraní kompatibilní s OpenAI SDK, stačí změnit base URL a existující kód funguje beze změny.
+Kolik to stojí?
+Platí se za token z předplaceného zůstatku, ceny jsou až o 30 % nižší než oficiální ceníky poskytovatelů (např. claude-opus-5-5 za 2,80 USD/14,00 USD za milion vstupních/výstupních tokenů místo 4,00 USD/20,00 USD).
+Jak začít a je to zdarma?
+Po registraci bez karty stačí propojit Telegram a připojit se ke kanálu – tím se odemkne kredit 1 USD zdarma, poté lze vygenerovat API klíč a začít posílat požadavky.
+Kategorie|E|
+|T|NotGPT|D|28.11.2026 07:22|P|NotGPT je mobilní aplikace, která odhaduje pravděpodobnost, že text nebo obrázek vznikl pomocí AI, a umí AI text přepsat tak, aby zněl přirozeněji.|M|EJAJ|X|NotGPT
+NotGPT je mobilní aplikace, která odhaduje pravděpodobnost, že text nebo obrázek vznikl pomocí AI, a umí AI text přepsat tak, aby zněl přirozeněji.
+O nástroji
+NotGPT je aplikace pro iOS a Android zaměřená na detekci AI obsahu. U textu (eseje, články, e-maily, motivační dopisy) zobrazí procentuální pravděpodobnost, že jde o AI-generovaný text, úroveň spolehlivosti odhadu (vysoká, střední, nízká) a rozdělení na AI, lidský a smíšený podíl. U obrázků nahraných z knihovny nebo pořízených fotoaparátem (JPG, PNG, WebP) nabídne odhad pravděpodobnosti, že vznikly pomocí nástrojů jako Midjourney, DALL·E nebo Stable Diffusion. Součástí aplikace je funkce Humanize, která přepíše text ve třech úrovních intenzity – Light, Medium nebo Strong – tak, aby méně připomínal strojově generovaný text, přičemž se snaží zachovat původní význam. Po přepsání lze text znovu zkontrolovat jedním klepnutím. Aplikace ukládá historii předchozích kontrol k účtu, kterou lze kdykoliv smazat. Podle popisu aplikace jsou k dispozici dvě bezplatné kontroly denně bez nutnosti zadávat platební kartu. Autoři upozorňují, že žádný detektor AI obsahu není stoprocentně přesný a výsledek je třeba chápat jako signál, nikoli jako důkaz – formální, silně upravený nebo nerodilý text může skórovat vyšší pravděpodobnost AI generování, než odpovídá realitě.
+Klíčové vlastnosti
+- Procentuální odhad pravděpodobnosti AI textu
+- Úroveň spolehlivosti odhadu (vysoká/střední/nízká)
+- Rozdělení na AI, lidský a smíšený podíl
+- Detekce AI u obrázků (Midjourney, DALL·E, Stable Diffusion)
+Časté dotazy
+Co přesně NotGPT umí?
+Odhadne pravděpodobnost, že text nebo obrázek vznikl pomocí AI, zobrazí míru spolehlivosti odhadu a rozdělení na AI/lidský/smíšený podíl. U textu navíc umí funkce Humanize přepsat obsah tak, aby zněl přirozeněji, a to ve třech úrovních intenzity.
+Kolik NotGPT stojí?
+Aplikace nabízí 2 bezplatné kontroly denně bez nutnosti zadávat platební kartu, podrobnosti o placených variantách nejsou z podkladů jasné.
+Pro koho je NotGPT určený a jak začít?
+Hodí se studentům, učitelům, copywriterům i náborářům, kteří chtějí ověřit text nebo obrázek před odevzdáním či publikováním. Stačí stáhnout aplikaci pro iOS nebo Android a vložit text nebo nahrát obrázek.
+Kategorie|E|
+|T|AI Rap Video Forge|D|28.11.2026 07:22|P|Vytvoří krátké AI rapové video ze dvou nahraných fotek a textového promptu podle zvolené šablony.|M|EJAJ|X|AI Rap Video Forge
+Vytvoří krátké AI rapové video ze dvou nahraných fotek a textového promptu podle zvolené šablony.
+O nástroji
+AI Rap Video Forge umožňuje nahrát dvě fotografie (JPG nebo PNG, max. 10 MB) a na jejich základě vygenerovat krátké rapové video ve vertikálním formátu 9:16. Uživatel vybere šablonu scény – například studio s pomerančovým pozadím, neonovou pouliční scénu, střešní terasu nebo variantu s domácím mazlíčkem – doplní vlastní příběh do promptu a zvolí délku videa 5, 10 nebo 15 sekund. Výsledné video lze před stažením zkontrolovat v náhledu. Služba funguje na systému jednorázových kreditů bez předplatného. Balíček Basic za 9,90 USD obsahuje 30 kreditů, Pro za 19,90 USD nabízí 70 kreditů a Studio za 29,90 USD zahrnuje 110 kreditů, přičemž kredity nevyprší a v případě neúspěšného generování videa se vrací zpět. Bezplatná verze podle dostupných informací není k dispozici.
+Klíčové vlastnosti
+- Generování videa ze dvou nahraných fotek
+- Vertikální formát 9:16 pro sociální sítě
+- Výběr šablon – studio, neonová ulice, střecha, zvíře
+- Délka videa 5, 10 nebo 15 sekund na výběr
+Časté dotazy
+Co přesně AI Rap Video Forge umí?
+Z dvou nahraných fotek a textového promptu vygeneruje krátké rapové video podle zvolené šablony, například studio s pomerančovým pozadím nebo neonovou pouliční scénu. Video je ve vertikálním formátu 9:16 a lze zvolit délku 5, 10 nebo 15 sekund.
+Kolik AI Rap Video Forge stojí?
+Služba funguje na jednorázových kreditech bez předplatného – balíček Basic za 9,90 USD obsahuje 30 kreditů, Pro za 19,90 USD 70 kreditů a Studio za 29,90 USD 110 kreditů. Kredity nevyprší a při neúspěšném generování se vrací zpět.
+Jak začít a pro koho je nástroj vhodný?
+Stačí nahrát dvě jasné fotky (JPG nebo PNG, max. 10 MB), vybrat šablonu scény, doplnit vlastní příběh do promptu a zvolit délku videa. Hodí se pro každého, kdo chce vytvořit originální personalizované rapové video pro sebe, dvojici nebo i domácího mazlíčka.
+Kategorie|E|
+|T|Optofriend|D|28.11.2026 07:22|P|Optofriend generuje z přepisu YouTube videa SEO optimalizované názvy, popisy, klíčová slova, hashtagy a časové značky kapitol.|M|EJAJ|X|Optofriend
+Optofriend generuje z přepisu YouTube videa SEO optimalizované názvy, popisy, klíčová slova, hashtagy a časové značky kapitol.
+O nástroji
+Optofriend je nástroj pro optimalizaci YouTube videí pomocí AI, který pracuje přímo s obsahem přepisu (transkriptu) videa. Systém extrahuje data z videa, vytvoří strukturovaný přepis z titulků nebo AI transkripce, analyzuje témata a strukturu obsahu a následně generuje návrhy optimalizovaných názvů, SEO popisů, sad klíčových slov, časových značek kapitol a hashtagů. Výstupy jsou podle popisu validovány proti zdrojovému obsahu, aby se předešlo nepřesným SEO návrhům. Mezi dostupné nástroje patří generátor titulků, popisů, tagů, časových značek, přepisů i nápadů na videa, doplněné o bezplatné pomůcky jako extraktor tagů, vyhledávač ID videa nebo kalkulačku výdělků. Nástroj nabízí bezplatný tarif s 100 kredity měsíčně a připojením jednoho kanálu, placený tarif Plus za 15 USD měsíčně (1 500 kreditů, až 2 kanály) a tarif Pro za 39 USD měsíčně (5 000 kreditů, až 10 kanálů). Rozhraní je v angličtině, dostupné je i v dalších jazycích jako němčina, španělština či polština, čeština uvedena není.
+Klíčové vlastnosti
+- Generování názvů, popisů a klíčových slov z přepisu videa
+- Automatické časové značky kapitol
+- Generátor hashtagů a nápadů na videa
+- Validace výstupů proti zdrojovému obsahu proti halucinacím
+Časté dotazy
+Co přesně Optofriend umí vygenerovat z videa?
+Z přepisu YouTube videa vytvoří SEO optimalizované názvy, popisy, klíčová slova, hashtagy a časové značky kapitol, vše validované proti obsahu videa.
+Kolik Optofriend stojí?
+Základní tarif je zdarma se 100 kredity měsíčně a 1 kanálem, tarif Plus vyjde na 15 USD měsíčně (1 500 kreditů, 2 kanály) a tarif Pro na 39 USD měsíčně (5 000 kreditů, 10 kanálů).
+Pro koho je nástroj určený a jak začít?
+Je určený YouTuberům a tvůrcům obsahu, kteří chtějí zlepšit SEO svých videí; stačí se zaregistrovat zdarma a připojit kanál bez nutnosti platit kartou.
+Kategorie|E|
+|T|AiryNight|D|28.11.2026 07:22|P|Mobilní aplikace, která nahrává a analyzuje zvuky noci přímo v telefonu a odhaduje úseky pravděpodobného chrápání bez nutnosti účtu.|M|EJAJ|X|AiryNight
+Mobilní aplikace, která nahrává a analyzuje zvuky noci přímo v telefonu a odhaduje úseky pravděpodobného chrápání bez nutnosti účtu.
+O nástroji
+AiryNight je aplikace pro Android (verze 8 a novější), která slouží k analýze nocí a sledování chrápání. Zaznamenává zvuky během spánku a vyhodnocuje je přímo v telefonu – žádný zvuk se neposílá na server ani se neodesílá přes internet. Uživatel vidí ranní souhrn s dobou záznamu, úseky pravděpodobného chrápání a skóre chrápání, které umožňuje porovnávat jednotlivé noci mezi sebou, ne stanovit index apnoe. Aplikace nabízí deník, do kterého lze zapisovat vyzkoušená řešení a okolnosti večera, a následně porovnávat vliv návyků na výsledky. Export dat je ve formátu CSV nebo JSON zdarma, zpráva ve formátu PDF je součástí placeného Premium plánu. Úryvky zvuku se automaticky mažou po 7 dnech v bezplatné verzi, v Premium po 30 či 90 dnech nebo podle zvoleného období, přičemž souhrn noci zůstává zachován. Základní funkce fungují bez registrace účtu, stažení aplikace z Google Play je zdarma a Premium lze vyzkoušet na 14 dní zdarma bez nutnosti zadat kartu. Verze pro iPhone zatím čeká na schválení v App Store. Aplikace výslovně neslouží k diagnostice spánkové apnoe – jde pouze o orientační odhad pro srovnávání vlastních nocí, nikoli o zdravotnický nástroj.
+Klíčové vlastnosti
+- Analýza zvuku chrápání přímo v telefonu bez odesílání na server
+- Ranní souhrn s dobou záznamu a skóre chrápání
+- Deník návyků a vyzkoušených řešení pro porovnání nocí
+- Export dat do CSV nebo JSON zdarma, PDF zpráva v Premium
+Časté dotazy
+Pomůže mi AiryNight sledovat chrápání?
+Aplikace rozpoznává zvuky podobné chrápání a umožňuje porovnávat záznamy z noci na noc, včetně souvislosti se zapsanými návyky v deníku. Jde o orientační odhad, žádný individuální výsledek není zaručen.
+Kolik AiryNight stojí?
+Stažení aplikace a základní funkce jsou zdarma, export dat v CSV/JSON je také zdarma. Premium plán (PDF zprávy, delší uchování úryvků) lze vyzkoušet 14 dní zdarma bez zadání karty.
+Potřebuji si vytvořit účet nebo je aplikace vhodná pro diagnostiku apnoe?
+Účet není potřeba, základní funkce fungují bez něj. Aplikace ale neslouží k diagnostice spánkové apnoe, pouze k orientačnímu porovnávání vlastních nocí – s obavami o dýchání je třeba se obrátit na zdravotníka.
+Kategorie|E|
+|T|OmniaKey|D|28.11.2026 07:22|P|API brána nabízející jedním klíčem přístup k modelům GPT, Claude, Gemini i generátorům obrázků, videa a hudby s platbou podle spotřeby.|M|EJAJ|X|OmniaKey
+API brána nabízející jedním klíčem přístup k modelům GPT, Claude, Gemini i generátorům obrázků, videa a hudby s platbou podle spotřeby.
+O nástroji
+OmniaKey je API rozhraní pro vývojáře a AI aplikace, které pod jedním předplaceným klíčem zpřístupňuje velké množství modelů od různých poskytovatelů – mimo jiné OpenAI, Anthropic, Google, xAI, Alibaba Cloud, DeepSeek, Moonshot AI, MiniMax, Tencent Hunyuan, Midjourney, ByteDance (Kling, Seedance) nebo Suno. Rozhraní je kompatibilní s OpenAI API (endpoint api.omniakey.com/v1), takže lze snadno volat jak jazykové modely (např. GPT-6 Astra, Claude Opus 5, Gemini 3.1 Pro Preview s kontextem až 1M tokenů), tak generátory obrázků (Midjourney, GPT-Image 2.6 Flare, Nano Banana 2.1), videa (ByteDance Seedance 2.5) nebo hudby. Platí se podle skutečné spotřeby bez nutnosti vázat platební kartu – ceny jsou uvedeny transparentně u jednotlivých modelů, např. textové modely od cca 0,8–1,4 USD za milion vstupních tokenů, generování obrázku od 0,019 USD za kus a video od cca 0,11 USD za sekundu. Bezplatná varianta není v nabídce uvedena, jde o předplacený kredit s cenami za jednotlivá volání API.
+Klíčové vlastnosti
+- Jeden API klíč pro GPT, Claude, Gemini i další modely
+- Kompatibilní s OpenAI API (endpoint api.omniakey.com/v1)
+- Generování obrázků, videa i hudby přes stejné rozhraní
+- Platba podle skutečné spotřeby bez vázání karty
+Časté dotazy
+Co OmniaKey umí?
+Jde o API bránu, která pod jedním předplaceným klíčem zpřístupňuje jazykové modely (GPT, Claude, Gemini a další) i generátory obrázků, videa a hudby, přičemž rozhraní je kompatibilní s OpenAI API.
+Kolik OmniaKey stojí?
+Platí se podle spotřeby bez nutnosti vázat kartu, např. textové modely od cca 0,8–1,4 USD za milion vstupních tokenů, obrázek od 0,019 USD za kus a video od cca 0,11 USD za sekundu.
+Pro koho je OmniaKey určen a jak začít?
+Je určen vývojářům a AI aplikacím, kteří chtějí jedním klíčem volat více poskytovatelů modelů najednou; stačí si vytvořit API klíč, dobít kredit a volat endpoint api.omniakey.com/v1.
+Kategorie|E|
+|T|Knit Chart Maker|D|28.11.2026 07:22|P|Bezplatný online nástroj pro tvorbu pletařských barevných vzorů (Fair Isle, Nordic), bez nutnosti registrace.|M|EJAJ|X|Knit Chart Maker
+Bezplatný online nástroj pro tvorbu pletařských barevných vzorů (Fair Isle, Nordic), bez nutnosti registrace.
+O nástroji
+Knit Chart Maker je bezplatný nástroj pro tvorbu pletařských barevných vzorů (colorwork), zaměřený na Fair Isle, Nordic a stranded pletení. Vzor lze kreslit přímo ve studiu pomocí tužky, výplně, čar nebo obdélníků, případně vytvořit z fotografie, kterou nástroj přizpůsobí zadané hustotě pletení. Náhled zobrazuje vzor přetažený přes skutečnou přízi – k dispozici je 103 odstínů ze 4 řad přízí, od jemné příze typu fingering až po tvídovou Aran. Studio obsahuje i kontrolu kontrastu barev a kontrolu délky float stehů s nastavitelným limitem. Vzory lze navrhnout až do velikosti 400×400 stehů s využitím až 40 barev příze, každá s vlastním symbolem. K dispozici jsou nástroje pro výběr, kopírování, zrcadlení i otáčení částí vzoru, náhled plochého i kruhového (yoke) provedení. Hotový návrh lze exportovat jako PNG (jak chart, tak náhled látky), CSV, TXT, indexované BMP nebo JSON. Nástroj funguje přímo v prohlížeči bez nutnosti registrace, data se ukládají lokálně v prohlížeči a návrh lze sdílet pomocí odkazu. K dispozici jsou také hotové šablony vzorů (např. sobi, liška, sněhové vločky) a sekce s návody na čtení grafů, pletení Fair Isle, zachytávání floatů nebo pletení copánků (kabelů).
+Klíčové vlastnosti
+- Kreslení tužkou, výplní, čarami či obdélníky
+- Převod fotografie na vzor podle hustoty pletení
+- Náhled na 103 odstínech ze 4 řad přízí
+- Kontrola kontrastu barev a délky float stehů
+Časté dotazy
+Co Knit Chart Maker umí?
+Umožňuje nakreslit nebo z fotografie vytvořit barevný pletařský vzor (Fair Isle, Nordic), zobrazit ho na reálné přízi a zkontrolovat kontrast barev i délku floatů. Hotový návrh lze exportovat jako PNG, CSV, TXT, BMP nebo JSON.
+Kolik stojí používání nástroje?
+Nástroj je zcela zdarma, bez zkušební verze, vodoznaku i denních limitů.
+Jak začít a pro koho je nástroj určen?
+Stačí otevřít studio v prohlížeči bez registrace – lze začít od prázdného plátna, fotografie nebo některé z hotových šablon (soby, lišky, sněhové vločky aj.), vhodné pro pletařky navrhující barevné vzory.
+Kategorie|E|
+|T|DoubleProof|D|28.11.2026 07:22|P|Služba na ověřování podezřelých zpráv, hovorů a souborů proti podvodům a AI deepfakes, s lidskou kontrolou a placeným nastavením ochrany pro rodinu.|M|EJAJ|X|DoubleProof
+Služba na ověřování podezřelých zpráv, hovorů a souborů proti podvodům a AI deepfakes, s lidskou kontrolou a placeným nastavením ochrany pro rodinu.
+O nástroji
+DoubleProof nabízí bezplatný Scam Analyzer, do kterého lze vložit podezřelý text, e-mail nebo přepis hlasové zprávy a získat okamžité vyhodnocení rizikových signálů. Za 29 dolarů za kontrolu (nebo 79 dolarů za 5 kontrol, případně 12,99 dolaru měsíčně v rodinném plánu) poskytuje službu Verdict, kde lidský hodnotitel spolu s automatickými detektory posoudí konkrétní zprávu, hovor nebo fakturu ještě předtím, než uživatel pošle peníze. Za 179 dolarů (plus 79 dolarů za druhou domácnost) nabízí tým DoubleProof i asistovanou instalaci ochrany „Family Scam-Shield Setup“ formou živého hovoru, během kterého nastaví blokování podvodných hovorů, bankovní upozornění, zmrazení úvěru, správce hesel s dvoufázovým ověřením a rodinné kódové slovo. Doplňkově lze za 49 dolarů za obchod (nebo v balíčcích Creator Pack 149 dolarů a Creator Pro 249 dolarů ročně) nechat ověřit a podepsat vlastní fotografie, videa či dokumenty jako prokazatelně originální, včetně veřejné ověřovací stránky a PDF certifikátu. Samostatná mobilní aplikace se šesti ochrannými moduly (např. analýza hlasové stopy, rodinná síť upozornění nebo chráněný režim pro seniory) je podle webu zatím ve vývoji a není dostupná ke koupi – reálně fungují jen bezplatný analyzátor, playbook a placené služby Verdict, Scam-Shield Setup a Verified Original.
+Klíčové vlastnosti
+- Bezplatný Scam Analyzer pro texty a přepisy hovorů
+- Lidské ověření zprávy nebo faktury před platbou (Verdict)
+- Asistovaná instalace rodinné ochrany přes živý hovor
+- Ověření a podpis originálních fotek, videí a dokumentů
+Časté dotazy
+Co DoubleProof vlastně dělá?
+Ověřuje podezřelé zprávy, hovory, faktury a soubory, zda nejde o podvod nebo AI deepfake – kombinací automatických detektorů a lidského hodnotitele, než pošlete peníze nebo uvěříte výzvě.
+Kolik to stojí?
+Scam Analyzer je zdarma, jednotlivý lidský Verdict stojí 29 dolarů (5 kontrol za 79 dolarů, rodinný plán 12,99 dolaru měsíčně), asistovaná instalace rodinné ochrany 179 dolarů a ověření originálních souborů 49 dolarů za obchod.
+Pro koho je služba vhodná a jak začít?
+Hodí se pro rodiny chránící starší příbuzné před podvody i pro prodejce a tvůrce, kteří chtějí ověřit pravost svých souborů. Začít lze bezplatným vložením podezřelé zprávy do Scam Analyzeru.
+Kategorie|E|
+|T|AgentCheck|D|28.11.2026 07:22|P|AgentCheck testuje veřejný chat vašeho AI chatbota a odhalí, co skutečně slibuje zákazníkům – od CyberShield.|M|EJAJ|X|AgentCheck
+AgentCheck testuje veřejný chat vašeho AI chatbota a odhalí, co skutečně slibuje zákazníkům – od CyberShield.
+O nástroji
+AgentCheck prochází veřejný chat vašeho chatbota stejně jako běžný zákazník – nejprve s obyčejnými dotazy, poté s otravnými a tlačícími otázkami – a zaznamenává přesně to, co bot odpovídá. Kontroluje, zda bot nedává slevy či sliby, které firma nikdy neschválila, zda neprozrazuje údaje jiných zákazníků nebo interní poznámky, zda se ceny a podmínky shodují s webem, zda zůstává slušný i na drzé dotazy a zda se nezasekává ve smyčkách odpovědí. Výsledkem je písemná zpráva v běžné angličtině, bez nutnosti poskytnout hesla, telefonáty nebo přístup ke kódu. Služba nabízí tři varianty: jednorázový AgentCheck Audit za 149 dolarů (kontrola pravidel a úniku informací, porovnání cen s webem, písemná zpráva), AgentCheck Full Audit za 299 dolarů (hlubší kontrola všech pěti oblastí plus revize nastavení – připojení, uložení API klíčů, limity a logování – s plánem oprav a bezplatnou opakovanou kontrolou do 30 dnů) a měsíční Agent Guard za 49 dolarů, který pravidelně opakuje kontroly veřejného chatu a upozorňuje na změny v odpovědích bota po aktualizacích. Nástroj je zmiňován s podporou API a ceny jsou pevné bez skrytého účtování podle hodin. Bezplatná verze auditu není v nabídce uvedena, dostupný je pouze zmíněný bezplatný mini-scanner jako vstupní bod před placeným auditem. Nástroj je určen firmám, které provozují AI chatboty nebo agenty a chtějí ověřit, co jejich bot skutečně říká zákazníkům a jaká rizika z toho plynou.
+Klíčové vlastnosti
+- Testuje veřejný chat jako běžný zákazník
+- Odhaluje neschválené slevy a sliby bota
+- Kontroluje únik dat jiných zákazníků
+- Porovnává ceny a podmínky bota s webem
+Časté dotazy
+Co přesně AgentCheck kontroluje?
+Projde veřejný chat vašeho bota jako zákazník – nejprve běžnými dotazy, pak otravnými a tlačícími – a ověří, zda nedává neschválené slevy, neprozrazuje cizí data, zda ceny sedí s webem a zda se nezasekává ve smyčkách. Full Audit navíc prověří propojení, uložení API klíčů, limity a logování.
+Kolik AgentCheck stojí?
+Jednorázový Audit vyjde na 149 dolarů, Full Audit na 299 dolarů (s plánem oprav a bezplatnou opakovanou kontrolou do 30 dnů) a měsíční Agent Guard na 49 dolarů za pravidelné opakování kontrol. Ceny jsou pevné, bez účtování podle hodin.
+Pro koho je AgentCheck a jak začít?
+Je určen firmám provozujícím AI chatboty či agenty, které chtějí vědět, co bot skutečně slibuje zákazníkům. Stačí zadat veřejný chat bota, nejsou potřeba hesla ani přístup ke kódu, k dispozici je i bezplatný mini-scanner jako úvodní krok.
+Kategorie|E|
+|T|„It’s a UNIX system!“ Proč slavná scéna z Jurského parku, které se všichni smějí, není filmový nesmysl|D|28.11.2026 07:00|P|Scéna, ve které Lex prolétá barevnou krajinou souborů a hlásí, že tenhle Unix zná, slouží už přes třicet let jako ukázka hollywoodských nesmyslů o poč...|M|Cnews|X|Ke konci prvního Jurského parku drží Alan Grant a Ellie Sattlerová dveře velínu, do kterých se z druhé strany opírá velociraptor. Zámky po sabotáži programátora Dennise Nedryho nefungují. Dospívající Lex usedne k počítači, na monitoru se rozprostře krajina plná modrých kvádrů, nad kterou se dá létat, a ona vyhrkne „It’s a UNIX system! I know this!“. Za pár vteřin najde ovládání zámků a dveře se zamknou.
+Pro řadu diváků z oboru se ta chvíle stala symbolem filmového hackování: místo příkazové řádky barevné 3D kvádry a dítě, které cizí systém ovládne za minutu. Jenže právě tohle rozhraní si filmaři nevymysleli. A když se podíváte na celý velín, zjistíte, že skutečné techniky je v něm víc, než by člověk čekal. Vymyšlené věci se schovávají jinde.
+Krajina, ve které je adresář podstavcem
+Program se jmenoval fsn, celým názvem File System Navigator, a ve firmě Silicon Graphics (SGI) ho vytvořili Joel Tesler a Steve Strasnick. Zkratka se vyslovovala jako anglické „fusion“. Běžel na pracovních stanicích SGI s IRIXem, unixovým systémem této firmy, takže Lexina věta sedí: na obrazovce opravdu je Unix. Že se v něm vyzná, film naznačil už dřív, když se Lex sama označila za hackerku. V Crichtonově románu přitom s počítači zachází její bratr Tim.
+Místo seznamu názvů fsn vykreslil souborový systém jako krajinu. Každý adresář má podobu podstavce, jehož výška odpovídá tomu, kolik dohromady zabírají soubory uvnitř. Na podstavci stojí kvádry jednotlivých souborů, čím větší soubor, tím vyšší kvádr, a barva prozrazuje, jak je soubor starý. Adresáře spojují dráty, po kterých se dá přeletět do podadresáře. Uživatel tak na první pohled vidí, kde jsou uloženy objemné nebo staré soubory, a k vybranému místu doletí myší. Lex ve filmu nejdřív otevře adresář /usr a potom přistane u položky Visitors.Center, ve které najde ovládání zámků.
+Hotový produkt z fsn nikdy nebyl. Silicon Graphics ho popisovala jako pokus, jak se pohybovat v „informační krajině“, a ne jako náhradu běžného správce souborů Workspace. Kdo měl stanici s IRIXem 4.0.1 nebo novějším a doporučených aspoň 16 MB paměti, mohl si program zdarma stáhnout z firemního FTP serveru. Slávu z filmu firma později využila a na své stránce s freewarem lákala na fsn titulkem „YOU SAW IT IN JURASSIC PARK!“.
+Velín za víc než milion dolarů
+Software tedy existoval. Běžel ale na stroji, který je v záběru? Abychom na to odpověděli, je potřeba se nejdřív rozhlédnout po celém velínu. Silicon Graphics zapůjčila filmařům techniku za 875 tisíc dolarů a Apple za dalších 350 tisíc, dohromady přes 1,2 milionu dolarů v tehdejších cenách.
+Na Nedryho stole stojí dva Macintoshe Quadra 700 s procesorem Motorola 68040 na 25 MHz, tedy výkonné Macy z roku 1991. Na zemi vedle stolu je SGI Crimson, skříň z roku 1992 s procesorem MIPS R4000 nebo R4400 a až 256 MB paměti. Patřila k nejsilnějším grafickým stanicím, jaké šlo koupit, a na stůl se nevešla. Hlavní inženýr parku Ray Arnold má vedle sebe další Quadru a menší SGI Indigo s procesorem R4000. V přívěsu na vykopávkách mají Alan Grant a Ellie Sattlerová přenosný PowerBook 100.
+Jeden stroj na Nedryho stole předběhl dobu. Kapesní počítač Motorola Envoy se začal prodávat až v únoru 1995, zatímco film se natáčel od srpna do listopadu 1992. Ve velínu proto leží designový prototyp, ne kus z obchodu.
+V pozadí velínu blikají červenými diodami vysoké černé skříně superpočítače Connection Machine CM-5 od firmy Thinking Machines. CM-5 byl skutečný stroj z roku 1991, poskládaný z mnoha uzlů, z nichž každý měl procesor SPARC, čtyři vektorové jednotky a 32 MB paměti. Nedry se ve filmu chlubí, že takových superpočítačů propojil osm. Ve studiu ale stály jen prázdné skříně se světelnými panely, jejichž diody blikaly náhodným vzorem. Spolu s prototypem Envoy to byly jediné kusy ve velínu, které skutečnými počítači nebyly.
+Co na monitorech běželo doopravdy
+Většina toho, co se na obrazovkách děje, se nepočítala naživo. Čtyřčlenný tým grafika Michaela Backese připravoval animace půl roku a ukládal je na disky. Vedle dekorace vznikla provizorní místnost plná počítačů SGI a Apple, a když z place přišel rádiem pokyn, tým poslal příslušnou grafiku na správný monitor. Obraz vedl do velínu po dlouhých kabelech, takže stroj pod monitorem často vůbec nebyl ten, který obraz vytvářel.
+Tak vznikl hurikán, který se na Arnoldově obrazovce blíží k ostrovu. Vykreslil ho program Earthwatch, který používali televizní meteorologové; animaci přehrával plynule, ale vypočítat ji musel předem. Nedryho videohovor s mužem na lodi je nahraný klip, který Mac jen přehrává. A posměšná animace, ve které malý Nedry vrtí prstem a opakuje „Ah ah ah, you didn’t say the magic word“, je předem připravená grafika, ne odpověď skutečného bezpečnostního systému.
+U Lexiny scény je situace o něco složitější. Bývalý zaměstnanec SGI vzpomíná, že Crimson se během natáčení vůbec nezapínal, protože byl na place moc hlučný. Pokud to platí, fsn ve scéně běžel na jiném stroji a Crimson vedle stolu zůstal vypnutou kulisou. Program samotný ale byl skutečný, stejně jako kód, který Nedry prochází na Macu: jde o opravdový výpis pro klasický Mac OS se systémovými voláními, ne o náhodné znaky.
+Jedna potíž se ale týkala všech obrazovek, ať ukazovaly cokoli. Filmová kamera snímá 24 políček za sekundu, zatímco obrazovka s katodovou trubicí kreslí obraz řádek po řádku vlastním tempem. Když se ta dvě tempa neshodují, paprsek během jednoho políčka přejede některou část obrazovky méně často než zbytek a kamera tu část zachytí tmavší. Protože se nesoulad s každým políčkem posouvá, přes monitor ve výsledném záběru pomalu putuje tmavý pruh. Monitory proto bylo nutné s kamerou sladit a v titulcích má tahle práce vlastní řádek s názvem 24 Frame Computer Sync.
+Proč nad soubory dodnes nelétáme
+Pokus SGI zůstal pokusem. Na konci devadesátých let napsal Daniel Richard G. pro Linux a další unixové systémy klon fsn s názvem fsv, jehož kód je otevřený pod licencí LGPL. Původní kód se od roku 2001 nemění, ale aktualizovaná verze se dá sestavit i na dnešních systémech s OpenGL, takže nad vlastním diskem si může zaletět každý.
+Myšlenka, že velikost obrazce odpovídá velikosti souborů, přežila hlavně v ploché podobě. Analyzátory disku jako WinDirStat rozkreslí obsah disku do obdélníků, jejichž plocha odpovídá obsazenému místu. Proti fsn mají dvě výhody: celý disk je vidět najednou a nic se neschovává za vyšším kvádrem. Když člověk navíc ví, který soubor hledá, cestu napíše rychleji, než k němu doletí.
+Scéna, ze které si diváci tak rádi utahují, nakonec patří k nejpravdivějším počítačovým momentům filmu. Na obrazovce byl skutečný Unix, program si mohl stáhnout každý majitel stanice SGI a dítě, které u počítačů SGI vyrůstalo, mohlo fsn opravdu znát. Vymyšlené nebo předem připravené byly jiné věci: prstem vrtící Nedry místo bezpečnostního systému, hurikán z hotové animace a superpočítač, který jen blikal.|E|

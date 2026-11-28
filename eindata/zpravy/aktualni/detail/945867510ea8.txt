@@ -1,0 +1,17 @@
+Knit Chart Maker
+Bezplatný online nástroj pro tvorbu pletařských barevných vzorů (Fair Isle, Nordic), bez nutnosti registrace.
+O nástroji
+Knit Chart Maker je bezplatný nástroj pro tvorbu pletařských barevných vzorů (colorwork), zaměřený na Fair Isle, Nordic a stranded pletení. Vzor lze kreslit přímo ve studiu pomocí tužky, výplně, čar nebo obdélníků, případně vytvořit z fotografie, kterou nástroj přizpůsobí zadané hustotě pletení. Náhled zobrazuje vzor přetažený přes skutečnou přízi – k dispozici je 103 odstínů ze 4 řad přízí, od jemné příze typu fingering až po tvídovou Aran. Studio obsahuje i kontrolu kontrastu barev a kontrolu délky float stehů s nastavitelným limitem. Vzory lze navrhnout až do velikosti 400×400 stehů s využitím až 40 barev příze, každá s vlastním symbolem. K dispozici jsou nástroje pro výběr, kopírování, zrcadlení i otáčení částí vzoru, náhled plochého i kruhového (yoke) provedení. Hotový návrh lze exportovat jako PNG (jak chart, tak náhled látky), CSV, TXT, indexované BMP nebo JSON. Nástroj funguje přímo v prohlížeči bez nutnosti registrace, data se ukládají lokálně v prohlížeči a návrh lze sdílet pomocí odkazu. K dispozici jsou také hotové šablony vzorů (např. sobi, liška, sněhové vločky) a sekce s návody na čtení grafů, pletení Fair Isle, zachytávání floatů nebo pletení copánků (kabelů).
+Klíčové vlastnosti
+- Kreslení tužkou, výplní, čarami či obdélníky
+- Převod fotografie na vzor podle hustoty pletení
+- Náhled na 103 odstínech ze 4 řad přízí
+- Kontrola kontrastu barev a délky float stehů
+Časté dotazy
+Co Knit Chart Maker umí?
+Umožňuje nakreslit nebo z fotografie vytvořit barevný pletařský vzor (Fair Isle, Nordic), zobrazit ho na reálné přízi a zkontrolovat kontrast barev i délku floatů. Hotový návrh lze exportovat jako PNG, CSV, TXT, BMP nebo JSON.
+Kolik stojí používání nástroje?
+Nástroj je zcela zdarma, bez zkušební verze, vodoznaku i denních limitů.
+Jak začít a pro koho je nástroj určen?
+Stačí otevřít studio v prohlížeči bez registrace – lze začít od prázdného plátna, fotografie nebo některé z hotových šablon (soby, lišky, sněhové vločky aj.), vhodné pro pletařky navrhující barevné vzory.
+Kategorie

@@ -1,0 +1,17 @@
+NotGPT
+NotGPT je mobilní aplikace, která odhaduje pravděpodobnost, že text nebo obrázek vznikl pomocí AI, a umí AI text přepsat tak, aby zněl přirozeněji.
+O nástroji
+NotGPT je aplikace pro iOS a Android zaměřená na detekci AI obsahu. U textu (eseje, články, e-maily, motivační dopisy) zobrazí procentuální pravděpodobnost, že jde o AI-generovaný text, úroveň spolehlivosti odhadu (vysoká, střední, nízká) a rozdělení na AI, lidský a smíšený podíl. U obrázků nahraných z knihovny nebo pořízených fotoaparátem (JPG, PNG, WebP) nabídne odhad pravděpodobnosti, že vznikly pomocí nástrojů jako Midjourney, DALL·E nebo Stable Diffusion. Součástí aplikace je funkce Humanize, která přepíše text ve třech úrovních intenzity – Light, Medium nebo Strong – tak, aby méně připomínal strojově generovaný text, přičemž se snaží zachovat původní význam. Po přepsání lze text znovu zkontrolovat jedním klepnutím. Aplikace ukládá historii předchozích kontrol k účtu, kterou lze kdykoliv smazat. Podle popisu aplikace jsou k dispozici dvě bezplatné kontroly denně bez nutnosti zadávat platební kartu. Autoři upozorňují, že žádný detektor AI obsahu není stoprocentně přesný a výsledek je třeba chápat jako signál, nikoli jako důkaz – formální, silně upravený nebo nerodilý text může skórovat vyšší pravděpodobnost AI generování, než odpovídá realitě.
+Klíčové vlastnosti
+- Procentuální odhad pravděpodobnosti AI textu
+- Úroveň spolehlivosti odhadu (vysoká/střední/nízká)
+- Rozdělení na AI, lidský a smíšený podíl
+- Detekce AI u obrázků (Midjourney, DALL·E, Stable Diffusion)
+Časté dotazy
+Co přesně NotGPT umí?
+Odhadne pravděpodobnost, že text nebo obrázek vznikl pomocí AI, zobrazí míru spolehlivosti odhadu a rozdělení na AI/lidský/smíšený podíl. U textu navíc umí funkce Humanize přepsat obsah tak, aby zněl přirozeněji, a to ve třech úrovních intenzity.
+Kolik NotGPT stojí?
+Aplikace nabízí 2 bezplatné kontroly denně bez nutnosti zadávat platební kartu, podrobnosti o placených variantách nejsou z podkladů jasné.
+Pro koho je NotGPT určený a jak začít?
+Hodí se studentům, učitelům, copywriterům i náborářům, kteří chtějí ověřit text nebo obrázek před odevzdáním či publikováním. Stačí stáhnout aplikaci pro iOS nebo Android a vložit text nebo nahrát obrázek.
+Kategorie

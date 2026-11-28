@@ -1,0 +1,17 @@
+AiryNight
+Mobilní aplikace, která nahrává a analyzuje zvuky noci přímo v telefonu a odhaduje úseky pravděpodobného chrápání bez nutnosti účtu.
+O nástroji
+AiryNight je aplikace pro Android (verze 8 a novější), která slouží k analýze nocí a sledování chrápání. Zaznamenává zvuky během spánku a vyhodnocuje je přímo v telefonu – žádný zvuk se neposílá na server ani se neodesílá přes internet. Uživatel vidí ranní souhrn s dobou záznamu, úseky pravděpodobného chrápání a skóre chrápání, které umožňuje porovnávat jednotlivé noci mezi sebou, ne stanovit index apnoe. Aplikace nabízí deník, do kterého lze zapisovat vyzkoušená řešení a okolnosti večera, a následně porovnávat vliv návyků na výsledky. Export dat je ve formátu CSV nebo JSON zdarma, zpráva ve formátu PDF je součástí placeného Premium plánu. Úryvky zvuku se automaticky mažou po 7 dnech v bezplatné verzi, v Premium po 30 či 90 dnech nebo podle zvoleného období, přičemž souhrn noci zůstává zachován. Základní funkce fungují bez registrace účtu, stažení aplikace z Google Play je zdarma a Premium lze vyzkoušet na 14 dní zdarma bez nutnosti zadat kartu. Verze pro iPhone zatím čeká na schválení v App Store. Aplikace výslovně neslouží k diagnostice spánkové apnoe – jde pouze o orientační odhad pro srovnávání vlastních nocí, nikoli o zdravotnický nástroj.
+Klíčové vlastnosti
+- Analýza zvuku chrápání přímo v telefonu bez odesílání na server
+- Ranní souhrn s dobou záznamu a skóre chrápání
+- Deník návyků a vyzkoušených řešení pro porovnání nocí
+- Export dat do CSV nebo JSON zdarma, PDF zpráva v Premium
+Časté dotazy
+Pomůže mi AiryNight sledovat chrápání?
+Aplikace rozpoznává zvuky podobné chrápání a umožňuje porovnávat záznamy z noci na noc, včetně souvislosti se zapsanými návyky v deníku. Jde o orientační odhad, žádný individuální výsledek není zaručen.
+Kolik AiryNight stojí?
+Stažení aplikace a základní funkce jsou zdarma, export dat v CSV/JSON je také zdarma. Premium plán (PDF zprávy, delší uchování úryvků) lze vyzkoušet 14 dní zdarma bez zadání karty.
+Potřebuji si vytvořit účet nebo je aplikace vhodná pro diagnostiku apnoe?
+Účet není potřeba, základní funkce fungují bez něj. Aplikace ale neslouží k diagnostice spánkové apnoe, pouze k orientačnímu porovnávání vlastních nocí – s obavami o dýchání je třeba se obrátit na zdravotníka.
+Kategorie

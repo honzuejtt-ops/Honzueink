@@ -1,0 +1,17 @@
+freeaiapi.ai
+Jednotné API rozhraní pro GPT, Claude, Gemini, DeepSeek a Qwen – kompatibilní s OpenAI SDK, s cenami až o 30 % nižšími než oficiální.
+O nástroji
+freeaiapi.ai nabízí jeden API klíč pro přístup ke 181 modelům od různých poskytovatelů, mezi nimi GPT, Claude, Gemini, DeepSeek a Qwen. Rozhraní je plně kompatibilní s OpenAI SDK, stačí změnit base URL a API klíč a stávající kód funguje beze změny. Podporován je i formát Anthropic Messages pro nástroje jako Claude Code, Cline, Cursor nebo OpenCode, včetně streamování odpovědí. Ceny jednotlivých modelů jsou podle důkazu až o 30 % nižší než oficiální ceníky poskytovatelů, konkrétní srovnání je uvedeno u každého modelu (např. claude-opus-5-5 za 2,80 USD/14,00 USD za milion vstupních/výstupních tokenů oproti oficiálním 4,00 USD/20,00 USD). Po registraci lze propojením Telegramu a připojením ke kanálu získat kredit 1 USD zdarma bez nutnosti zadávat platební kartu, poté se platí za token z předplaceného zůstatku. Služba je nezávislým API gatewayem a není afiliovaná s OpenAI, Anthropic ani Google.
+Klíčové vlastnosti
+- Jeden API klíč pro 181 modelů od různých poskytovatelů
+- Plná kompatibilita s OpenAI SDK a Chat Completions API
+- Podpora formátu Anthropic Messages pro Claude Code, Cline, Cursor
+- Streamování odpovědí v reálném čase
+Časté dotazy
+Co nástroj umí?
+Poskytuje jeden API klíč pro přístup ke 181 modelům (GPT, Claude, Gemini, DeepSeek, Qwen) přes rozhraní kompatibilní s OpenAI SDK, stačí změnit base URL a existující kód funguje beze změny.
+Kolik to stojí?
+Platí se za token z předplaceného zůstatku, ceny jsou až o 30 % nižší než oficiální ceníky poskytovatelů (např. claude-opus-5-5 za 2,80 USD/14,00 USD za milion vstupních/výstupních tokenů místo 4,00 USD/20,00 USD).
+Jak začít a je to zdarma?
+Po registraci bez karty stačí propojit Telegram a připojit se ke kanálu – tím se odemkne kredit 1 USD zdarma, poté lze vygenerovat API klíč a začít posílat požadavky.
+Kategorie

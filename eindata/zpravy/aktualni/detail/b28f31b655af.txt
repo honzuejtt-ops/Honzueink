@@ -1,0 +1,17 @@
+DoubleProof
+Služba na ověřování podezřelých zpráv, hovorů a souborů proti podvodům a AI deepfakes, s lidskou kontrolou a placeným nastavením ochrany pro rodinu.
+O nástroji
+DoubleProof nabízí bezplatný Scam Analyzer, do kterého lze vložit podezřelý text, e-mail nebo přepis hlasové zprávy a získat okamžité vyhodnocení rizikových signálů. Za 29 dolarů za kontrolu (nebo 79 dolarů za 5 kontrol, případně 12,99 dolaru měsíčně v rodinném plánu) poskytuje službu Verdict, kde lidský hodnotitel spolu s automatickými detektory posoudí konkrétní zprávu, hovor nebo fakturu ještě předtím, než uživatel pošle peníze. Za 179 dolarů (plus 79 dolarů za druhou domácnost) nabízí tým DoubleProof i asistovanou instalaci ochrany „Family Scam-Shield Setup“ formou živého hovoru, během kterého nastaví blokování podvodných hovorů, bankovní upozornění, zmrazení úvěru, správce hesel s dvoufázovým ověřením a rodinné kódové slovo. Doplňkově lze za 49 dolarů za obchod (nebo v balíčcích Creator Pack 149 dolarů a Creator Pro 249 dolarů ročně) nechat ověřit a podepsat vlastní fotografie, videa či dokumenty jako prokazatelně originální, včetně veřejné ověřovací stránky a PDF certifikátu. Samostatná mobilní aplikace se šesti ochrannými moduly (např. analýza hlasové stopy, rodinná síť upozornění nebo chráněný režim pro seniory) je podle webu zatím ve vývoji a není dostupná ke koupi – reálně fungují jen bezplatný analyzátor, playbook a placené služby Verdict, Scam-Shield Setup a Verified Original.
+Klíčové vlastnosti
+- Bezplatný Scam Analyzer pro texty a přepisy hovorů
+- Lidské ověření zprávy nebo faktury před platbou (Verdict)
+- Asistovaná instalace rodinné ochrany přes živý hovor
+- Ověření a podpis originálních fotek, videí a dokumentů
+Časté dotazy
+Co DoubleProof vlastně dělá?
+Ověřuje podezřelé zprávy, hovory, faktury a soubory, zda nejde o podvod nebo AI deepfake – kombinací automatických detektorů a lidského hodnotitele, než pošlete peníze nebo uvěříte výzvě.
+Kolik to stojí?
+Scam Analyzer je zdarma, jednotlivý lidský Verdict stojí 29 dolarů (5 kontrol za 79 dolarů, rodinný plán 12,99 dolaru měsíčně), asistovaná instalace rodinné ochrany 179 dolarů a ověření originálních souborů 49 dolarů za obchod.
+Pro koho je služba vhodná a jak začít?
+Hodí se pro rodiny chránící starší příbuzné před podvody i pro prodejce a tvůrce, kteří chtějí ověřit pravost svých souborů. Začít lze bezplatným vložením podezřelé zprávy do Scam Analyzeru.
+Kategorie
